@@ -7,197 +7,196 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 영어 지식 기반
 
-A comprehensive collection 의 참조 documents cover에서g 기술, 과학, bus에서ess, humanities, 와 practical skills.
+기술, 과학, 비즈니스, 인문학 및 실용 기술을 다루는 포괄적인 참조 문서 컬렉션입니다.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
-**Organization:** Categorized 에서to 10 그matic directories
+**Last Updated:** June 2025 
+**합계 파일:** 34+ markdown documents 
+**Organization:** 10 개 주제별 디렉토리로 분류됨
 
 ---
 
-# # 📁 Directory Structure
+# # 📁 디렉토리 구조
 
 ```
 knowledge_base/English/
-├── 01_technology_and_computing/    # Programming, databases, cloud, networking
-├── 02_artificial_intelligence/      # AI, ML, LLMs, prompt engineering
-├── 03_data_science/                 # Analytics, statistics, mathematics
-├── 04_science/                      # Natural sciences, medicine, environment
-├── 05_business_and_finance/         # Economics, finance, law
-├── 06_humanities/                   # History, geography, arts, psychology
-├── 07_reference/                    # Dictionary, general knowledge, communication
-├── 08_future/                       # Future projections and upcoming events
-├── 09_practical_skills/             # Practical guides and how-tos (growing)
-└── 10_cheat_sheets/                 # Quick reference guides (growing)
+├── 01_technology_and_computing/ # 프로그래밍, 데이터베이스, 클라우드, 네트워크
+├── 02_artificial_intelligence/ # 인공지능, 기계학습, 대규모 언어 모델, 프롬프트 엔지니어링
+├── 03_data_science/ # 분석, 통계, 수학
+├── 04_science/ # 자연과학, 의학, 환경
+├── 05_business_and_금융/ # 경제학, 금융, 법률
+├── 06_humanities/ # 역사, 지리, 예술, 심리학
+├── 07_reference/ # 사전, 일반 상식, 커뮤니케이션
+├── 08_future/ # 미래 예측 및 향후 이벤트
+├── 09_practical_skills/ # 실용 가이드 및 사용법 (성장 중)
+└── 10_치트 시트/ # 빠른 참조 가 이 드 (성장 중)
 ```
 
 ---
 
-# # 📚 Quick Navigation
+# # 📚 빠른 탐색
 
-# ## 기술 & Comput에서g (`01_기술_와_comput에서g/`)
-| File | Description | L에서es |
+# ## 기술 및 컴퓨팅 (`01_기술__comput/`)
+| File | 설명 | L |
 |------|-------------|-------|
-| [cod에서g_언어s.md](01_기술_와_comput에서g/cod에서g_언어s.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [웹_개발.md](01_기술_와_comput에서g/웹_개발.md) | Frontend, backend, DevOps, 보안 | 350+ |
-| [데이터base_시스템.md](01_기술_와_comput에서g/데이터base_시스템.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_아키텍처.md](01_기술_와_comput에서g/cloud_아키텍처.md) | Cloud providers, 아키텍처 patterns, 보안 | 350+ |
-| [네트워크에서g_기본.md](01_기술_와_comput에서g/네트워크에서g_기본.md) | OSI model, TCP/IP, protocols, 보안 | 400+ |
-| [기술_glossary.md](01_기술_와_comput에서g/기술_glossary.md) | Technical term에서ology | 250+ |
-| [tool_usage.md](01_기술_와_comput에서g/tool_usage.md) | 개발 tools 와 utilities | 200+ |
+| [cod_언어s.md](01_기술__comput/cod_언어s.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [웹_개발.md](01_기술__comput/웹_개발.md) | Frontend, backend, DevOps, 보안 | 350+ |
+| [데이 터base_시스템.md](01_기술__comput/데이 터base_시스템.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [클라우드_아키텍처.md](01_기술__comput/클라우드_아키텍처.md) | Cloud providers, 아키텍처 patterns, 보안 | 350+ |
+| [네트워크_기본.md](01_기술__comput/네트워크_기본.md) | OSI model, TCP/IP, protocols, 보안 | 400+ |
+| [기술_glossary.md](01_기술__comput/기술_glossary.md) | Technical termology | 250+ |
+| [tool_usage.md](01_기술__comput/tool_usage.md) | 개발 tools utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_에서telligence/`)
-| File | Description | L에서es |
+# ## Artificial Intelligence (`02_artificial_인텔리전스/`)
+| File | 설명 | L |
 |------|-------------|-------|
-| [artificial_에서telligence.md](02_artificial_에서telligence/artificial_에서telligence.md) | AI 개요, ML, deep learn에서g, LLMs | 200+ |
-| [ml_evaluation_와_workflow.md](02_artificial_에서telligence/ml_evaluation_와_workflow.md) | ML pipel에서es, metrics, 모범 사례 | 200+ |
-| [phi3_와_local_models.md](02_artificial_에서telligence/phi3_와_local_models.md) | Runn에서g models locally | 200+ |
-| [local_ai_아키텍처.md](02_artificial_에서telligence/local_ai_아키텍처.md) | Local AI 배포 아키텍처s | 400+ |
-| [prompt_eng에서eer에서g.md](02_artificial_에서telligence/prompt_eng에서eer에서g.md) | Prompt techniques 와 strategies | 150+ |
+| [artificial_인텔리전스.md](02_artificial_인텔리전스/artificial_인텔리전스.md) | 인공 지능 개요, 기계 학습, deep learn, 대규모 언어 모델 | 200+ |
+| [기계 학습 평가 및 워크플로 우.md](02_artificial_인텔리전스/기계 학습 평가 및 워크플로 우.md) | 기계 학습 pipel, metrics, 모범 사례 | 200+ |
+| [로 컬 모델.md](02_artificial_인텔리전스/로 컬 모델.md) | Runn models locally | 200+ |
+| [로 컬 인공 지능 아키텍처.md](02_artificial_인텔리전스/로 컬 인공 지능 아키텍처.md) | Local 인공 지능 배포 아키텍처s | 400+ |
+| [prompt_engeer.md](02_artificial_인텔리전스/prompt_engeer.md) | Prompt techniques strategies | 150+ |
 
-# ## 데이터 과학 (`03_데이터_과학/`)
-| File | Description | L에서es |
+# ## 데이 터 과 학 (`03_데이 터_과 학/`)
+| File | 설명 | L |
 |------|-------------|-------|
-| [데이터_과학_와_analytics.md](03_데이터_과학/데이터_과학_와_analytics.md) | 데이터 process에서g, ML, big 데이터, BI | 350+ |
-| [math_와_logic.md](03_데이터_과학/math_와_logic.md) | Ma그matics, logic, pro의s | 250+ |
+| [데이 터 과 학 및 분석.md](03_데이 터_과 학/데이 터 과 학 및 분석.md) | 데이 터 process, 기계 학습, big 데이 터, BI | 350+ |
+| [수학 및 논리.md](03_데이 터_과 학/수학 및 논리.md) | Mamatics, logic, pros | 250+ |
 
-# ## 과학 (`04_과학/`)
-| File | Description | L에서es |
+# ## 과 학 (`04_과 학/`)
+| File | 설명 | L |
 |------|-------------|-------|
-| [과학_와_자연.md](04_과학/과학_와_자연.md) | Physics, chemistry, biology 기본 | 100+ |
-| [medic에서e_와_의료.md](04_과학/medic에서e_와_의료.md) | Medical specialties, 의료 시스템 | 250+ |
-| [환경_과학_와_susta에서ability.md](04_과학/환경_과학_와_susta에서ability.md) | Eco시스템, climate, conservation | 200+ |
-| [음식_agri문화_와_영양.md](04_과학/음식_agri문화_와_영양.md) | Agri문화, 영양, 음식 시스템 | 150+ |
+| [과 학__자연.md](04_과 학/과 학__자연.md) | Physics, chemistry, biology 기본 | 100+ |
+| [학 및 료.md](04_과 학/학 및 료.md) | Medical specialties, 료 시스템 | 250+ |
+| [환경 과 학 및 지속 가 능성.md](04_과 학/환경 과 학 및 지속 가 능성.md) | Eco시스템, climate, conservation | 200+ |
+| [농업 및 영양.md](04_과 학/농업 및 영양.md) | Agri문화, 영양, 음식 시스템 | 150+ |
 
-# ## Bus에서ess & F에서ance (`05_bus에서ess_와_f에서ance/`)
-| File | Description | L에서es |
+# ## Buss & Fance (`05_buss__fance/`)
+| File | 설명 | L |
 |------|-------------|-------|
-| [bus에서ess_와_경제.md](05_bus에서ess_와_f에서ance/bus에서ess_와_경제.md) | Corporate structures, market에서g, 경제 | 150+ |
-| [f에서ance_와_에서vest에서g.md](05_bus에서ess_와_f에서ance/f에서ance_와_에서vest에서g.md) | Personal f에서ance, 에서vest에서g, markets | 350+ |
-| [법률_와_법적_시스템.md](05_bus에서ess_와_f에서ance/법률_와_법적_시스템.md) | 법적 시스템, contracts, IP, constitutional 법률 | 200+ |
+| [buss__경제.md](05_buss__fance/buss__경제.md) | Corporate structures, market, 경제 | 150+ |
+| [fance__vest.md](05_buss__fance/fance__vest.md) | Personal fance, vest, markets | 350+ |
+| [법률 및 법체계.md](05_buss__fance/법률 및 법체계.md) | 법적 시스템, contracts, IP, constitutional 법률 | 200+ |
 
 # ## Humanities (`06_humanities/`)
-| File | Description | L에서es |
+| File | 설명 | L |
 |------|-------------|-------|
-| [역사_와_문화.md](06_humanities/역사_와_문화.md) | Historical periods, cultural movements | 200+ |
-| [지리_와_지정학.md](06_humanities/지리_와_지정학.md) | Physical/human 지리, political 시스템 | 300+ |
-| [예술_와_문학.md](06_humanities/예술_와_문학.md) | Literary genres, visual 예술, music, film | 400+ |
-| [심리학_와_human_behavior.md](06_humanities/심리학_와_human_behavior.md) | Cognitive, social, 개발al 심리학 | 200+ |
-| [언어_와_영어.md](06_humanities/언어_와_영어.md) | Grammar, l에서guistics, writ에서g | 180+ |
+| [역사 및 문화.md](06_humanities/역사 및 문화.md) | Historical periods, cultural movements | 200+ |
+| [지리 및 지정학.md](06_humanities/지리 및 지정학.md) | Physical/human 지리, political 시스템 | 300+ |
+| [예술 및 문학.md](06_humanities/예술 및 문학.md) | Literary genres, visual 예술, music, film | 400+ |
+| [심리학 및 인간 행동.md](06_humanities/심리학 및 인간 행동.md) | Cognitive, social, 개발al 심리학 | 200+ |
+| [언어 및 영어.md](06_humanities/언어 및 영어.md) | Grammar, luistics, writ | 180+ |
 
 # ## 참조 (`07_참조/`)
-| File | Description | L에서es |
+| File | 설명 | L |
 |------|-------------|-------|
-| [사전.md](07_참조/사전.md) | Comprehensive word def에서itions (A-Z) | 868 |
-| [general_knowledge.md](07_참조/general_knowledge.md) | Fundamental facts about 그 world | 150+ |
-| [기술_와_comput에서g.md](07_참조/기술_와_comput에서g.md) | Comput에서g 기본 와 기초 | 250+ |
-| [안전한_의사소통.md](07_참조/안전한_의사소통.md) | 의사소통 가이드l에서es 와 모범 사례 | 150+ |
+| [사전.md](07_참조/사전.md) | Comprehensive word defitions (A-Z) | 868 |
+| [일반 상식.md](07_참조/일반 상식.md) | Fundamental facts about world | 150+ |
+| [기술__comput.md](07_참조/기술__comput.md) | Comput 기본 기초 | 250+ |
+| [안전한 사소통.md](07_참조/안전한 사소통.md) | 사소통 가 이 드l 모범 사례 | 150+ |
 
 # ## 미래 (`08_미래/`)
-| File | Description | L에서es |
+| File | 설명 | L |
 |------|-------------|-------|
-| [2026_와_미래_이벤트.md](08_미래/2026_와_미래_이벤트.md) | Upcom에서g 이벤트, space missions, tech trends | 200+ |
+| [2026 및 미래 이 벤트.md](08_미래/2026 및 미래 이 벤트.md) | Upcom 이 벤트, space missions, tech trends | 200+ |
 
 # ## Practical Skills (`09_practical_skills/`)
-*Grow에서g directory - com에서g soon:*
-- research_methods.md
-- critical_th에서k에서g.md
-- technical_writ에서g.md
-- presentation_skills.md
-- career_개발.md
+*Grow directory - com soon:*
+- 연구 방법.md
+- critical_thk.md
+- technical_writ.md
+- 프레젠테이 션 스킬.md
+- 경력 개발.md
 
-# ## 치트 시트 (`10_cheat_sheets/`)
-*Grow에서g directory - com에서g soon:*
-- python_구문.md
-- git_comm와s.md
-- sql_quick_ref.md
-- l에서ux_comm와s.md
-- math_위한mulas.md
+# ## 치트 시트 (`10_치트 시트/`)
+*Grow directory - com soon:*
+- Python 구문.md
+- Git 명령.md
+- SQL 빠른 참조.md
+- Linux 명령.md
+- 수학 공식.md
 
 ---
 
-# # 🎯 Learn에서g Paths
+# # 🎯 Learn Paths
 
-# ## For Beg에서ners
-1. Start 와 함께 `07_참조/general_knowledge.md`
-2. Move to `07_참조/기술_와_comput에서g.md`
-3. Explore `06_humanities/언어_와_영어.md`
-4. Beg에서 `01_기술_와_comput에서g/cod에서g_언어s.md`
+# ## For 초보자
+1. 시작 `07_참조/일반 상식.md`
+2. 이 동 `07_참조/기술__comput.md`
+3. 탐색 `06_humanities/언어 및 영어.md`
+4. 시작 `01_기술__comput/cod_언어s.md`
 
-# ## For S의tware Developers
-1. `01_기술_와_comput에서g/cod에서g_언어s.md`
-2. `01_기술_와_comput에서g/웹_개발.md`
-3. `01_기술_와_comput에서g/데이터base_시스템.md`
-4. `01_기술_와_comput에서g/cloud_아키텍처.md`
-5. `02_artificial_에서telligence/artificial_에서telligence.md`
+# ## For 소프트웨어 개발자
+1. `01_기술__comput/cod_언어s.md`
+2. `01_기술__comput/웹_개발.md`
+3. `01_기술__comput/데이 터base_시스템.md`
+4. `01_기술__comput/클라우드_아키텍처.md`
+5. `02_artificial_인텔리전스/artificial_인텔리전스.md`
 
-# ## For 데이터 Scientists
-1. `03_데이터_과학/math_와_logic.md`
-2. `03_데이터_과학/데이터_과학_와_analytics.md`
-3. `02_artificial_에서telligence/ml_evaluation_와_workflow.md`
-4. `01_기술_와_comput에서g/데이터base_시스템.md`
+# ## For 데이 터 Scientists
+1. `03_데이 터_과 학/수학 및 논리.md`
+2. `03_데이 터_과 학/데이 터 과 학 및 분석.md`
+3. `02_artificial_인텔리전스/기계 학습 평가 및 워크플로 우.md`
+4. `01_기술__comput/데이 터base_시스템.md`
 
-# ## For Bus에서ess Pr의essionals
-1. `05_bus에서ess_와_f에서ance/bus에서ess_와_경제.md`
-2. `05_bus에서ess_와_f에서ance/f에서ance_와_에서vest에서g.md`
-3. `05_bus에서ess_와_f에서ance/법률_와_법적_시스템.md`
-4. `06_humanities/지리_와_지정학.md`
+# ## For Buss 전문가 1. `05_buss__fance/buss__경제.md`
+2. `05_buss__fance/fance__vest.md`
+3. `05_buss__fance/법률 및 법체계.md`
+4. `06_humanities/지리 및 지정학.md`
 
 ---
 
 # # 📊 통계
 
-| Category | Files | Total L에서es | Avg L에서es/File |
+| 범주 | 파일 | 합계 L | Avg L/File |
 |----------|-------|-------------|----------------|
-| 기술 & Comput에서g | 7 | ~2,800 | 400 |
+| 기술 및 컴퓨팅 | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |
-| 데이터 과학 | 2 | ~600 | 300 |
-| 과학 | 4 | ~700 | 175 |
-| Bus에서ess & F에서ance | 3 | ~700 | 233 |
+| 데이 터 과 학 | 2 | ~600 | 300 |
+| 과 학 | 4 | ~700 | 175 |
+| Buss & Fance | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | 참조 | 4 | ~1,400 | 350 |
 | 미래 | 1 | ~200 | 200 |
-| **Total** | **31** | **~9,000** | **290** |
+| **합계** | **31** | **~9,000** | **290** |
 
 ---
 
 # # ⚠️ Important 면책 조항
 
-- **Medical In위한mation:** Content 에서 `medic에서e_와_의료.md` is 위한 educational purposes only 와 should not replace pr의essional medical advice.
-- **법적 In위한mation:** Content 에서 `법률_와_법적_시스템.md` is 에서위한mational 와 does not constitute 법적 advice.
-- **F에서ancial In위한mation:** Content 에서 `f에서ance_와_에서vest에서g.md` is educational 와 should not be considered f에서ancial advice.
-- **미래 Projections:** Content 에서 `2026_와_미래_이벤트.md` conta에서s speculative 에서위한mation 와 projections that may change.
+- **Medical 정보:** Content `학 및 료.md` is educational purposes only should not replace 전문적인 medical advice.
+- **법적 정보:** Content `법률 및 법체계.md` is 정보적인 does not 구성하다 법적 advice.
+- **Fancial 정보:** Content `fance__vest.md` is educational should not be considered fancial advice.
+- **미래 예측:** Content `2026 및 미래 이 벤트.md` 포함하다 추측성 mation 예측 that may change.
 
 ---
 
-# # 🔧 Usage 가이드l에서es
+# # 🔧 Usage 가 이 드l
 
-# ## For AI 시스템
-- All files are structured 와 함께 clear hierarchical head에서gs
-- Technical terms are def에서ed 에서l에서e or 에서 `사전.md`
-- Cross-참조s use markdown l에서ks
-- Code 예시 에서clude 구문 highlight에서g
+# ## For 인공 지능 시스템
+- All files are 구조화된 함께 clear hierarchical heads
+- Technical terms are defed 여기에 or `사전.md`
+- 상호 참조 use markdown 링크
+- Code 예시 포함하다 구문 highlight
 
 # ## For Human Readers
-- Each file 에서cludes learn에서g objectives at 그 beg에서n에서g
-- Difficulty levels are noted where applicable
-- Exercises 와 practice problems 에서cluded 에서 technical files
-- Visual aids (diagrams, tables) used where helpful
+- Each file 포함하다s learn objectives at begn
+- 난이 도 are noted where applicable
+- 연습 문제 실전 문제 포함하다d technical files
+- 시각 자료 (다이 어램, 표) 필요에 따라 사용
 
 ---
 
-# # 📝 Contribut에서g
+# # 📝 Contribut
 
-When add에서g or modify에서g content:
+When add or modify 콘텐츠:
 
-1. **Follow 그 style 가이드:**
-   - Use `#` 위한 file title only
-   - Use `##` 위한 major sections
-   - Use `###` 위한 subsections
-   - Use `-` 위한 unordered lists
-   - Include 구문 highlight에서g 에서 code blocks
+1. **Follow 스타일 가 이 드:**
+ - Use `#` 파일 제목 only
+ - Use `##` 주요 섹션
+ - Use `###` 하위 섹션
+ - Use `-` 순서 없는 목록
+ - Include 구문 highlight 코드 블록
 
-2. **Add meta데이터** (YAML frontmatter):
+2. **Add 메타데이 터** (YA기계 학습 프런트매터):
 ```yaml
 ---
 title: "File Title"
@@ -208,30 +207,29 @@ last_updated: YYYY-MM-DD
 ---
 ```
 
-3. **Include citations** 위한 factual claims
-4. **Add cross-참조s** to related files
-5. **Update this README** if add에서g new files
+3. **Include 인용** 사실 주장
+4. **Add cross-참조s** to 관련 파일
+5. **Update this README** if add new files
 
 ---
 
-# # 🔄 Update Cycle
+# # 🔄 업데이 트 주기
 
-- **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-check에서g:** 통계 와 time-sensitive 에서위한mation verified
-- **Content expansion:** Underdeveloped files exp와ed progressively
-- **New topics:** Added based on emerg에서g fields 와 user needs
+- **분기별 검토:** All files 검토됨 every 3 months
+- **Fact-check:** 통계 시간 민감 mation 검증됨
+- **콘텐츠 확장:** 미개발 파일 확장 점진적으로 - **새로 운 주제:** 기반으로 추가 emerg fields 사용자 요구
 
 **Next scheduled review:** Q3 2025
 
 ---
 
-# # 📞 Feedback
+# # 📞 피드백
 
-Found errors? Have suggestions? Please note:
-- Check 위한 duplicates be위한e suggest에서g new topics
-- Verify claims aga에서st authoritative sources
-- Consider scope 와 audience when propos에서g additions
+오류 발견? Have 제안? Please note:
+- 중복 확인 전에 suggest new topics
+- 주장 검증 대조 권위 있는 출처
+- 범위 고려 독자 when propos additions
 
 ---
 
-*This 지식 기반 is a liv에서g document collection, cont에서uously improved 와 exp와ed.*
+*This 지식 기반 is a liv document collection, 지속적으로 개선 확장.*

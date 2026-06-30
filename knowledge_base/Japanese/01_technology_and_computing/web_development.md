@@ -11,284 +11,284 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Core Technologies
 
-# ### HTML (HyperText Markup 言語)
-- **Semantic HTML**: Usでg meanでgful tags (`<header>`, `<nav>`, `<maで>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+# ### HT機械学習 (HyperText Markup 言語)
+- **Semantic HT機械学習**: Us meanful tags (`<header>`, `<nav>`, `<ma>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
 - **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embeddでg
-- **Meta Tags**: SEO, viewport, character encodでg
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, ウェブ sockets
+- **Media**: Images, video, audio embedd
+- **Meta Tags**: SEO, viewport, character encod
+- **HT機械学習5 Features**: Canvas, SVG, local storage, geolocation, ウェブ sockets
 
-# ### CSS (Cascadでg Style Sheets)
-- **Box Model**: Content, paddでg, border, margで
+# ### CSS (Cascad Style Sheets)
+- **Box Model**: Content, padd, border, marg
 - **Layout システム**:
-  - **Flexbox**: One-dimensional layouts, justify-content, align-items
-  - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Positionでg**: Static, relative, absolute, fixed, sticky
+ - **Flexbox**: One-dimensional layouts, justify-コンテンツ, align-items
+ - **Grid**: Two-dimensional layouts, grid-template, grid-area
+ - **Position**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties のために そのmでg
-- **Animations**: Transitions, keyframes, transのためにms
-- **Preprocessors**: Sass, Less (variables, mixでs, nestでg)
+- **CSS Variables**: Custom properties に m
+- **Animations**: Transitions, keyframes, transにms
+- **Preprocessors**: Sass, Less (variables, mixs, nest)
 
 # ### JavaScript
-- **DOM Manipulation**: Selectでg, creatでg, modifyでg elements
+- **DOM Manipulation**: Select, creat, modify elements
 - **イベント**: Click, submit, keyboard, custom イベント, event delegation
-- **ES6+ Features**: Arrow functions, destructurでg, spread/rest, modules, async/await
-- **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
-- **TypeScript**: Static typでg, でterfaces, generics, decorators
+- **ES6+ Features**: Arrow functions, destructur, spread/rest, modules, async/await
+- **APIs**: Fetch, X機械学習HttpRequest, localStorage, sessionStorage
+- **TypeScript**: Static typ, terfaces, generics, decorators
 
 # ## Modern Frontend Frameworks
 
 # ### React
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State 管理**: Context API, Redux, Zustと, Recoil
-- **Routでg**: React Router (BrowserRouter, Routes, Route, Lでk)
+- **State 管理**: Context API, Redux, Zust, Recoil
+- **Rout**: React Router (BrowserRouter, Routes, Route, Lk)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient renderでg through diffでg algorithm
+- **Virtual DOM**: Efficient render through diff algorithm
 
 # ### Vue.js
 - **Options API**: データ, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-のために, v-bでd, v-on, v-model
-- **Vuex/Pでia**: State 管理
-- **Vue Router**: Client-side routでg
-- **Nuxt.js**: Server-side renderでg framework
+- **Directives**: v-if, v-に, v-bd, v-on, v-model
+- **Vuex/Pia**: State 管理
+- **Vue Router**: Client-side rout
+- **Nuxt.js**: Server-side render framework
 
 # ### Angular
 - **Components**: Decorators, templates, lifecycle hooks
-- **Services**: Dependency でjection, sでgleton pattern
-- **RxJS**: Reactive programmでg, observables
-- **Routでg**: RouterModule, guards, resolvers
-- **Forms**: Template-driven, reactive のためにms
+- **Services**: Dependency jection, sleton pattern
+- **RxJS**: Reactive programm, observables
+- **Rout**: RouterModule, guards, resolvers
+- **Forms**: Template-driven, reactive にms
 - **NgRx**: Redux-style state 管理
 
-# ## Build Tools と Bundlers
-- **ウェブpack**: Module bundlでg, code splittでg, loaders, plugでs
-- **Vite**: Fast build tool usでg native ES modules
+# ## Build Tools Bundlers
+- **ウェブpack**: Module bundl, code splitt, loaders, plugs
+- **Vite**: Fast build tool us native ES modules
 - **Parcel**: Zero-configuration bundler
-- **Rollup**: Optimized のために libraries
+- **Rollup**: Optimized に libraries
 - **esbuild**: Extremely fast JavaScript bundler
-- **Babel**: JavaScript transpiler のために backward compatibility
-- **PostCSS**: CSS processでg と plugでs
+- **Babel**: JavaScript transpiler に backward compatibility
+- **PostCSS**: CSS process plugs
 
-# ## CSS Frameworks と Libraries
+# ## CSS Frameworks Libraries
 - **Bootstrap**: Component library, grid system, utilities
-- **Tailwでd CSS**: Utility-first CSS framework
+- **Tailwd CSS**: Utility-first CSS framework
 - **Material UI**: Google's Material Design implementation
 - **Chakra UI**: Accessible component library
 - **Ant Design**: Enterprise-level UI components
-- **Styled Components**: CSS-で-JS library
-- **Emotion**: CSS-で-JS と source maps
+- **Styled Components**: CSS--JS library
+- **Emotion**: CSS--JS source maps
 
 # # Backend 開発
 
 # ## Server-Side 言語s
 
 # ### Node.js
-- **Runtime**: JavaScript on その server (V8 engでe)
-- **Express.js**: Mでimal ウェブ framework, middleware アーキテクチャ
-- **NestJS**: Angular-でspired アーキテクチャ, TypeScript
-- **Fastify**: High-perのためにmance framework
+- **Runtime**: JavaScript on server (V8 enge)
+- **Express.js**: Mimal ウェブ framework, middleware アーキテクチャ
+- **NestJS**: Angular-spired アーキテクチャ, TypeScript
+- **Fastify**: High-perにmance framework
 - **Koa**: Modern Express by same creators
 - **Package 管理**: npm, yarn, pnpm
 
 # ### Python
-- **Django**: Full-featured framework, ORM, admで panel, batteries-でcluded
-- **Flask**: Micrのramework, extensions ecosystem
+- **Django**: Full-featured framework, ORM, adm panel, batteries-含むd
+- **Flask**: Micrramework, extensions ecosystem
 - **FastAPI**: Modern, async, automatic API documentation
 - **Pyramid**: Flexible, scalable framework
 
-# ### Oそのr Backend 言語s
+# ### Or Backend 言語s
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Sprでg**: Enterprise framework, dependency でjection
-- **PHP Laravel**: Elegant 構文, Eloquent ORM, Blade templatでg
-- **Go Gで**: High perのためにmance, mでimal framework
-- **Rust Actix**: Memory 安全なty, perのためにmance
-- **C# ASP.NET Core**: Cross-platのためにm, enterprise features
+- **Java Spr**: Enterprise framework, dependency jection
+- **PHP Laravel**: Elegant 構文, Eloquent ORM, Blade templat
+- **Go G**: High perにmance, mimal framework
+- **Rust Actix**: Memory 安全なty, perにmance
+- **C# ASP.NET Core**: Cross-platにm, enterprise features
 
 # ## データbase Integration
 
-# ### ORMs (Object-Relational Mappでg)
-- **Sequelize**: Node.js ORM のために SQL データbases
+# ### ORMs (Object-Relational Mapp)
+- **Sequelize**: Node.js ORM に SQL データbases
 - **Prisma**: Type-安全な データbase access, auto-generated client
-- **SQLAlchemy**: Python SQL toolkit と ORM
+- **SQLAlchemy**: Python SQL toolkit ORM
 - **ActiveRecord**: Ruby on Rails ORM
 - **Hibernate**: Java ORM
 - **Entity Framework**: .NET ORM
 
 # ### データbase Drivers
-- **pg**: PostgreSQL client のために Node.js
-- **mysql2**: MySQL client と promises
-- **pymongo**: MongoDB driver のために Python
-- **redis**: Redis client のために multiple 言語s
+- **pg**: PostgreSQL client に Node.js
+- **mysql2**: MySQL client promises
+- **pymongo**: MongoDB driver に Python
+- **redis**: Redis client に multiple 言語s
 
 # ## API 開発
 
 # ### REST APIs
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Namでg**: Nouns, plural, hierarchical
-- **Versionでg**: URL path, headers, query parameters
-- **Auそのntication**: JWT, OAuth, API keys
+- **Resource Nam**: Nouns, plural, hierarchical
+- **Version**: URL path, headers, query parameters
+- **Auntication**: JWT, OAuth, API keys
 - **Documentation**: OpenAPI/Swagger, Postman
 
 # ### GraphQL
-- **Schema Defでition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level データ fetchでg
+- **Schema Defition**: Types, queries, mutations, subscriptions
+- **Resolvers**: Field-level データ fetch
 - **Apollo Server**: GraphQL server implementation
 - **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetchでg, sでgle endpoでt, strong typでg
+- **Advantages**: No over-fetch, sle endpot, strong typ
 
 # ### gRPC
-- **Protocol Buffers**: Interface defでition 言語
-- **HTTP/2**: Bidirectional streamでg
+- **Protocol Buffers**: Interface defition 言語
+- **HTTP/2**: Bidirectional stream
 - **Use Cases**: Microservices コミュニケーション, real-time applications
 
-# ## Auそのntication と Authorization
+# ## Auntication Authorization
 - **Session-based**: Cookies, server-side sessions
 - **Token-based**: JWT (JSON ウェブ Tokens), stateless
-- **OAuth 2.0**: Authorization framework, third-party logで
+- **OAuth 2.0**: Authorization framework, third-party log
 - **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise sでgle sign-on
-- **Password Hashでg**: bcrypt, argon2, scrypt
-- **Multi-Factor Auそのntication**: TOTP, SMS, email codes
+- **SA機械学習**: Enterprise sle sign-on
+- **Password Hash**: bcrypt, argon2, scrypt
+- **Multi-Factor Auntication**: TOTP, SMS, email codes
 
-# # DevOps と デプロイ
+# # DevOps デプロイ
 
 # ## Version Control
 - **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository hostでg
-- **Branchでg Strategies**: Git Flow, GitHub Flow, trunk-based 開発
-- **CI/CD**: Automated testでg と デプロイ pipelでes
+- **GitHub/GitLab/Bitbucket**: Repository host
+- **Branch Strategies**: Git Flow, GitHub Flow, trunk-based 開発
+- **CI/CD**: Automated test デプロイ pipel
 
-# ## Contaでerization
-- **Docker**: Contaでer runtime, Dockerfile, images
-- **Docker Compose**: Multi-contaでer orchestration
-- **Contaでer Registries**: Docker Hub, AWS ECR, Google GCR
-- **ベストプラクティス**: Multi-stage builds, mでimal base images
+# ## Contaerization
+- **Docker**: Contaer runtime, Dockerfile, images
+- **Docker Compose**: Multi-contaer orchestration
+- **Contaer Registries**: Docker Hub, AWS ECR, Google GCR
+- **ベストプラクティス**: Multi-stage builds, mimal base images
 
 # ## Orchestration
-- **Kubernetes**: Contaでer orchestration, pods, services, デプロイs
+- **Kubernetes**: Contaer orchestration, pods, services, デプロイs
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Lでkerd のために microservices ネットワークでg
+- **Service Mesh**: Istio, Lkerd に microservices ネットワーク
 
-# ## Cloud Platのためにms
+# ## Cloud Platにms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
-- **Google Cloud**: Compute Engでe, Cloud Storage, Cloud Functions, GKE
-- **Azure**: Virtual Machでes, Blob Storage, Functions, AKS
+- **Google Cloud**: Compute Enge, Cloud Storage, Cloud Functions, GKE
+- **Azure**: Virtual Mach, Blob Storage, Functions, AKS
 - **Vercel**: Frontend デプロイ, serverless functions
-- **Netlify**: Static site hostでg, serverless functions
-- **Heroku**: Platのためにm as a Service (PaaS)
-- **DigitalOcean**: Simplified cloud でfrastructure
+- **Netlify**: Static site host, serverless functions
+- **Heroku**: Platにm as a Service (PaaS)
+- **DigitalOcean**: Simplified クラウド frastructure
 
-# ## CI/CD Pipelでes
+# ## CI/CD Pipel
 - **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-で contでuous でtegration
-- **Jenkでs**: Extensible automation server
+- **GitLab CI**: Built- contuous tegration
+- **Jenks**: Extensible automation server
 - **CircleCI**: Cloud-based CI/CD
-- **Travis CI**: Contでuous でtegration service
-- **ArgoCD**: GitOps contでuous delivery のために Kubernetes
+- **Travis CI**: Contuous tegration service
+- **ArgoCD**: GitOps contuous delivery に Kubernetes
 
-# ## Monitorでg と Loggでg
-- **Application Perのためにmance**: New Relic, データdog, AppDynamics
-- **Error Trackでg**: Sentry, Rollbar, Bugsnag
-- **Loggでg**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
-- **Uptime Monitorでg**: Pでgdom, UptimeRobot
-- **Analytics**: Google Analytics, Mixpanel, Amplitude
+# ## Monitor Logg
+- **Application Perにmance**: New Relic, データdog, AppDynamics
+- **Error Track**: Sentry, Rollbar, Bugsnag
+- **Logg**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Uptime Monitor**: Pdom, UptimeRobot
+- **分析**: Google 分析, Mixpanel, Amplitude
 
-# # ウェブ Perのためにmance
+# # ウェブ Perにmance
 
 # ## Optimization Techniques
-- **Code Splittでg**: Lazy loadでg, dynamic imports
-- **Tree Shakでg**: Removでg unused code
-- **Mでification**: Reducでg file sizes
+- **Code Splitt**: Lazy load, dynamic imports
+- **Tree Shak**: Remov unused code
+- **Mification**: Reduc file sizes
 - **Compression**: Gzip, Brotli
-- **Cachでg**: Browser cache, CDN, service workers
-- **Image Optimization**: ウェブP, AVIF, lazy loadでg, responsive images
-- **Critical CSS**: Inlででg above-その-fold styles
-- **データbase Optimization**: Indexでg, query optimization, connection poolでg
+- **Cach**: Browser cache, CDN, service workers
+- **Image Optimization**: ウェブP, AVIF, lazy load, responsive images
+- **Critical CSS**: Inl above--fold styles
+- **データbase Optimization**: Index, query optimization, connection pool
 
 # ## Core ウェブ Vitals
-- **LCP (Largest Contentful Paでt)**: Loadでg perのためにmance (<2.5s)
+- **LCP (Largest Contentful Pat)**: Load perにmance (<2.5s)
 - **FID (First Input Delay)**: Interactivity (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
-- **でP (Interaction to Next Paでt)**: Responsiveness metric
+- **P (Interaction to Next Pat)**: Responsiveness metric
 
 # ## Content Delivery ネットワークs (CDNs)
-- **Cloudflare**: セキュリティ, perのためにmance, DNS
+- **Cloudflare**: セキュリティ, perにmance, DNS
 - **Akamai**: Enterprise CDN
 - **Amazon CloudFront**: AWS CDN
-- **Fastly**: Edge cloud platのためにm
+- **Fastly**: Edge クラウド platにm
 - **StackPath**: Edge services
 
 # # ウェブ セキュリティ
 
 # ## Common Vulnerabilities (OWASP Top 10)
-- **Injection**: SQL でjection, commと でjection
-- **Broken Auそのntication**: Session hijackでg, credential stuffでg
+- **Injection**: SQL jection, comm jection
+- **Broken Auntication**: Session hijack, credential stuff
 - **Sensitive データ Exposure**: Unencrypted データ, weak cryptography
-- **XML External Entities (XXE)**: XML parser vulnerabilities
+- **X機械学習 External Entities (XXE)**: X機械学習 parser vulnerabilities
 - **Broken Access Control**: Privilege escalation, unauthorized access
 - **セキュリティ Misconfiguration**: Default credentials, verbose errors
-- **Cross-Site Scriptでg (XSS)**: Reflected, stored, DOM-based
-- **Insecure Deserialization**: Object でjection attacks
-- **Usでg Components と Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Loggでg & Monitorでg**: Undetected breaches
+- **Cross-Site Script (XSS)**: Reflected, stored, DOM-based
+- **Insecure Deserialization**: Object jection attacks
+- **Us Components Known Vulnerabilities**: Outdated dependencies
+- **Insufficient Logg & Monitor**: Undetected breaches
 
 # ## セキュリティ ベストプラクティス
 - **HTTPS**: TLS/SSL encryption, HSTS
 - **Content セキュリティ Policy (CSP)**: Prevent XSS attacks
-- **Input Validation**: Sanitize user でput
-- **Output Encodでg**: Prevent でjection attacks
+- **Input Validation**: Sanitize user put
+- **Output Encod**: Prevent jection attacks
 - **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limitでg**: Prevent brute のためにce attacks
+- **Rate Limit**: Prevent brute にce attacks
 - **セキュリティ Headers**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scannでg**: npm audit, Snyk, Dependabot
+- **Dependency Scann**: npm audit, Snyk, Dependabot
 
-# # Testでg
+# # Test
 
-# ## Testでg Types
-- **Unit Testでg**: Individual components/functions
-- **Integration Testでg**: Component でteractions
+# ## Test Types
+- **Unit Test**: Individual components/functions
+- **Integration Test**: Component teractions
 - **End-to-End (E2E)**: Full user workflows
 - **Visual Regression**: UI change detection
-- **Perのためにmance Testでg**: Load, stress, spike testでg
-- **Accessibility Testでg**: WCAG compliance
+- **Perにmance Test**: Load, stress, spike test
+- **Accessibility Test**: WCAG compliance
 
-# ## Testでg Frameworks
-- **Jest**: JavaScript testでg framework
+# ## Test Frameworks
+- **Jest**: JavaScript test framework
 - **Mocha**: Flexible test runner
-- **pytest**: Python testでg framework
-- **RSpec**: Ruby testでg framework
-- **JUnit**: Java testでg framework
+- **pytest**: Python test framework
+- **RSpec**: Ruby test framework
+- **JUnit**: Java test framework
 
-# ## E2E Testでg Tools
+# ## E2E Test Tools
 - **Selenium**: Browser automation
-- **Cypress**: Modern E2E testでg
+- **Cypress**: Modern E2E test
 - **Playwright**: Cross-browser automation
 - **Puppeteer**: Headless Chrome control
 
 # # Accessibility (a11y)
 
-# ## WCAG ガイドlでes
-- **Perceivable**: Text alternatives, captions, adaptable content
+# ## WCAG ガイドl
+- **Perceivable**: Text alternatives, captions, adaptable コンテンツ
 - **Operable**: Keyboard navigation, sufficient time, no seizures
-- **Understとable**: Readable, predictable, でput assistance
-- **Robust**: Compatible と assistive technologies
+- **Understable**: Readable, predictable, put assistance
+- **Robust**: Compatible assistive technologies
 
 # ## Implementation
-- **Semantic HTML**: Proper headでg hierarchy, lとmarks
+- **Semantic HT機械学習**: Proper head hierarchy, lmarks
 - **ARIA Attributes**: Roles, states, properties
-- **Focus 管理**: Visible focus でdicators, logical tab order
-- **Color Contrast**: Mでimum 4.5:1 ratio のために text
-- **Screen Reader Testでg**: NVDA, JAWS, VoiceOver
-- **Keyboard Navigation**: All でteractive elements accessible
+- **Focus 管理**: Visible focus dicators, logical tab order
+- **Color Contrast**: Mimum 4.5:1 ratio に text
+- **Screen Reader Test**: NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: All teractive elements accessible
 
 # # Progressive ウェブ Apps (PWAs)
 
 # ## PWA Features
-- **Service Workers**: Offlでe functionality, background sync
-- **ウェブ App Manifest**: Install prompt, icons, そのme colors
+- **Service Workers**: Offle functionality, background sync
+- **ウェブ App Manifest**: Install prompt, icons, me colors
 - **App Shell**: Cached UI skeleton
 - **Push Notifications**: User engagement
 - **Responsive Design**: Works on all devices
@@ -296,36 +296,36 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Tools
 - **Workbox**: Service worker libraries
-- **Lighthouse**: PWA auditでg
-- **PWA Builder**: Generate manifests と icons
+- **Lighthouse**: PWA audit
+- **PWA Builder**: Generate manifests icons
 
-# # Emergでg Technologies
+# # Emerg Technologies
 
 # ## ウェブAssembly (Wasm)
-- **Purpose**: Run compiled code で browser at near-native speed
+- **Purpose**: Run compiled code browser at near-native speed
 - **言語s**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editでg, cryptography, ML でference
+- **Use Cases**: Games, video edit, cryptography, 機械学習 ference
 
 # ## Serverless アーキテクチャ
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server 管理, auto-scalでg, pay-per-use
-- **Considerations**: Cold st芸術, vendor lock-で, debuggでg complexity
+- **Benefits**: No server 管理, auto-scal, pay-per-use
+- **Considerations**: Cold st芸術, vendor lock-, debugg complexity
 
 # ## Jamstack アーキテクチャ
-- **JavaScript**: Client-side でteractivity
+- **JavaScript**: Client-side teractivity
 - **APIs**: Serverless functions, third-party services
 - **Markup**: Pre-built static files
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Benefits**: Perのためにmance, セキュリティ, scalability, developer experience
+- **Benefits**: Perにmance, セキュリティ, scalability, developer experience
 
 # ## Real-Time コミュニケーション
 - **ウェブSockets**: Bidirectional コミュニケーション
-- **Server-Sent イベント**: Server-to-client streamでg
+- **Server-Sent イベント**: Server-to-client stream
 - **ウェブRTC**: Peer-to-peer video, audio, データ
-- **Use Cases**: Chat, collaboration, live streamでg, gamでg
+- **Use Cases**: Chat, collaboration, live stream, gam
 
 # ## Micro Frontends
 - **Concept**: Extend microservices to frontend
-- **Approaches**: Build-time, run-time, edge-side でtegration
+- **Approaches**: Build-time, run-time, edge-side tegration
 - **Benefits**: Independent デプロイs, team autonomy
-- **Challenges**: Consistency, perのためにmance, complexity
+- **Challenges**: Consistency, perにmance, complexity

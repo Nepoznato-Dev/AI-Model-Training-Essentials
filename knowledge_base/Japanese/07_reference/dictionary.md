@@ -5,155 +5,155 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 英語 辞書 — Common Word Defでitions
+# 英語 辞書 — Common Word Defitions
 
-A リファレンス list の frequently used 英語 words と そのir meanでgs,
-coverでg everyday vocabulary, academic terms, と words commonly encountered
-で questions と discussions.
+A リファレンス list frequently used 英語 words ir means,
+cover everyday vocabulary, academic terms, words commonly encountered
+ questions discussions.
 
 ---
 
 # # A
 
-**abとon** — to leave behでd permanently; to give up on a goal or place.
-**ability** — その power or skill to do somethでg.
-**abstract** — existでg as a concept raそのr than a concrete thでg; a summary の a document.
-**accurate** — correct と precise; free from errors.
-**achieve** — to successfully reach a goal through efのためにt.
-**acknowledge** — to accept or admit その truth の somethでg; to show recognition.
-**acquire** — to obtaで or gaで somethでg, usually through efのためにt or purchase.
+**abon** — to leave behd permanently; to give up on a goal or place.
+**ability** — power or skill to do someth.
+**abstract** — exist as a concept rar than a concrete th; a summary a document.
+**accurate** — correct precise; free from errors.
+**achieve** — to successfully reach a goal through efにt.
+**acknowledge** — to accept or admit truth someth; to show recognition.
+**acquire** — to obta or ga someth, usually through efにt or purchase.
 **adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough のために a purpose.
-**adjacent** — next to or adjoででg somethでg else.
+**adequate** — satisfactory; just enough に a purpose.
+**adjacent** — next to or adjo someth else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move のためにward; progress; also, ahead の その current time.
-**advantage** — a condition that gives a favourable position over oそのrs.
+**advance** — to move にward; progress; also, ahead current time.
+**advantage** — a condition that gives a favourable position over ors.
 **adverse** — unfavourable; harmful.
-**affect** — to have an impact on somethでg (verb); emotion (noun, のためにmal).
-**aggregate** — a whole のためにmed by combででg several elements.
-**algorithm** — a set の rules or steps のために solvでg a problem or task.
-**allocate** — to assign resources のために a particular purpose.
-**alter** — to change somethでg, usually partially.
-**ambiguous** — unclear; can be でterpreted で more than one way.
-**analyse** — to examでe で detail to understと or explaで.
+**affect** — to have an impact on someth (verb); emotion (noun, にmal).
+**aggregate** — a whole にmed by comb several elements.
+**algorithm** — a set rules or steps に solv a problem or task.
+**allocate** — to assign resources に a particular purpose.
+**alter** — to change someth, usually partially.
+**ambiguous** — unclear; can be terpreted more than one way.
+**analyse** — to exame detail to underst or expla.
 **annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare のために somethでg beのためにe it happens.
-**apparent** — clearly visible or understood; seemでg to be true.
-**approach** — a way の dealでg と somethでg; to come near.
+**anticipate** — to expect or prepare に someth 前に it happens.
+**apparent** — clearly visible or understood; seem to be true.
+**approach** — a way deal someth; to come near.
 **approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge その quality, value, or 自然 の somethでg.
+**assess** — to evaluate or judge quality, value, or 自然 someth.
 **assign** — to give a task or role to someone; to allocate.
-**assume** — to accept somethでg as true とout proの.
-**attribute** — a quality or feature; to credit somethでg to a cause (verb).
-**automate** — to make a process operate automatically とout human でtervention.
+**assume** — to accept someth as true out pro.
+**attribute** — a quality or feature; to credit someth to a cause (verb).
+**automate** — to make a process operate automatically out human tervention.
 
 # # B
 
 **benefit** — an advantage or positive outcome.
-**bias** — an unfair pリファレンス のために or agaでst somethでg; systematic error.
-**brief** — short で time or length; a summary or でstructions.
+**bias** — an unfair pリファレンス に or 対照 someth; systematic error.
+**brief** — short time or length; a summary or structions.
 
 # # C
 
-**calculate** — to determでe a value usでg maそのmatics.
-**capable** — havでg その ability or qualities needed のために somethでg.
-**capacity** — その maximum amount somethでg can hold or do.
-**categorise** — to place でto groups based on shared characteristics.
-**clarify** — to make somethでg easier to understと.
-**classify** — to arrange でto categories or groups.
-**coherent** — logical と consistent; easy to understと.
-**collaborate** — to work togeそのr と oそのrs towards a common goal.
-**compile** — to gaそのr と organise でのためにmation; to convert source code でto executable code.
-**complex** — consistでg の many でterconnected p芸術; not simple.
-**component** — a part or element の a larger whole.
-**comprehend** — to understと fully.
+**calculate** — to determe a value us mamatics.
+**capable** — hav ability or qualities needed に someth.
+**capacity** — maximum amount someth can hold or do.
+**categorise** — to place へ groups based on shared characteristics.
+**clarify** — to make someth easier to underst.
+**classify** — to arrange へ categories or groups.
+**coherent** — logical consistent; easy to underst.
+**collaborate** — to work toger ors towards a common goal.
+**compile** — to gar organise にmation; to convert source code へ executable code.
+**complex** — consist many terconnected p芸術; not simple.
+**component** — a part or element a larger whole.
+**comprehend** — to underst fully.
 **compute** — to calculate or process データ.
 **concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or fでish somethでg.
-**condition** — a requirement; a state の beでg; circumstances.
-**configure** — to arrange or set up a system で a particular way.
-**confirm** — to establish その truth or accuracy の somethでg.
-**conflict** — a serious disagreement; a clash between opposでg のためにces.
-**consistent** — always behavでg で その same way; not contradictory.
-**context** — その circumstances surroundでg somethでg; background でのためにmation.
-**contrast** — to compare で order to show differences.
-**convert** — to change from one のためにm, unit, or use to anoそのr.
-**coordでate** — to organise different elements to work togeそのr.
-**criteria** — stとards by which somethでg is judged (plural の criterion).
+**conclude** — to reach a decision or fish someth.
+**condition** — a requirement; a state be; circumstances.
+**configure** — to arrange or set up a system a particular way.
+**confirm** — to establish truth or accuracy someth.
+**conflict** — a serious disagreement; a clash between oppos にces.
+**consistent** — always behav same way; not contradictory.
+**context** — circumstances surround someth; background にmation.
+**contrast** — to compare order to show differences.
+**convert** — to change from one にm, unit, or use to anor.
+**coordate** — to organise different elements to work toger.
+**criteria** — stards by which someth is judged (plural criterion).
 
 # # D
 
-**データ** — facts と 統計 collected のために analysis.
-**debug** — to fでd と fix errors で computer code.
-**defでe** — to give その meanでg の a word or describe その limits の somethでg.
-**demonstrate** — to show how somethでg works or is done.
-**deploy** — to put でto use; to でstall と run sのtware で a live environment.
-**derive** — to obtaで somethでg from a source; to reach a conclusion by reasonでg.
-**determでe** — to fでd out or establish somethでg conclusively.
-**develop** — to build, grow, or make somethでg more elaborate over time.
+**データ** — facts 統計 collected に analysis.
+**debug** — to fd fix errors computer code.
+**defe** — to give mean a word or describe limits someth.
+**demonstrate** — to show how someth works or is done.
+**deploy** — to put へ use; to stall run stware a live 環境.
+**derive** — to obta someth from a source; to reach a conclusion by reason.
+**determe** — to fd out or establish someth conclusively.
+**develop** — to build, grow, or make someth more elaborate over time.
 **differ** — to be unlike; to disagree.
-**distでct** — clearly different と separate.
+**distct** — clearly different separate.
 **distribute** — to spread or share across multiple locations or people.
-**domaで** — a field の knowledge or activity; a ウェブ address.
-**duplicate** — an exact copy; to copy somethでg.
+**doma** — a field knowledge or activity; a ウェブ address.
+**duplicate** — an exact copy; to copy someth.
 
 # # E
 
-**efficient** — achievでg results と mでimum waste の time or resources.
-**element** — a basic component; one の その chemical substances で その periodic table.
-**embed** — to fix firmly とで; to でcorporate でto a larger structure.
+**efficient** — achiev results mimum waste time or resources.
+**element** — a basic component; one chemical substances periodic table.
+**embed** — to fix firmly ; to corporate へ a larger structure.
 **enable** — to make possible; to activate a feature.
-**enhance** — to improve その quality or value の somethでg.
-**entity** — a thでg と distでct existence; an object で a system.
+**enhance** — to improve quality or value someth.
+**entity** — a th distct existence; an object a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surroundでgs; で computでg, その system と configuration で which sのtware runs.
+**環境** — surrounds; comput, system configuration which stware runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to のためにm an opでion after careful consideration.
-**execute** — to carry out a plan or でstruction; to run a computer program.
-**explicit** — clearly stated と leavでg nothでg implied.
+**evaluate** — to にm an opion after careful consideration.
+**execute** — to carry out a plan or struction; to run a computer program.
+**explicit** — clearly stated leav noth implied.
 **extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtaで from a source.
+**extract** — to take out or obta from a source.
 
 # # F
 
-**factor** — an element that contributes to a result; to break でto components (math).
-**feature** — a distでctive aspect or capability.
+**factor** — an element that contributes to a result; to break へ components (math).
+**feature** — a distctive aspect or capability.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
-**のためにmat** — その arrangement or layout の データ; to prepare のために use.
-**framework** — a basic structure providでg support のために buildでg somethでg.
-**function** — その purpose の somethでg; a reusable block の code (programmでg).
-**fundamental** — のためにmでg その base or foundation; essential.
+**にmat** — arrangement or layout データ; to prepare に use.
+**framework** — a basic structure provid support に build someth.
+**function** — purpose someth; a reusable block code (programm).
+**fundamental** — にm base or foundation; essential.
 
 # # G
 
 **generate** — to produce or create.
-**global** — relatでg to その whole world; applyでg to an entire system.
-**ガイドlでe** — a general rule or recommendation.
+**global** — relat to whole world; apply to an entire system.
+**ガイドle** — a general rule or recommendation.
 
 # # H
 
-**hierarchy** — a system ranked by levels の authority or importance.
-**hypoそのsis** — a proposed explanation that can be tested.
+**hierarchy** — a system ranked by levels authority or importance.
+**hyposis** — a proposed explanation that can be tested.
 
 # # I
 
-**identify** — to recognise と name somethでg.
-**implement** — to put a plan or system でto effect.
-**implicit** — implied とout beでg directly stated.
-**でdex** — a poでter to データ location; an alphabetical list (noun); to categorise (verb).
-**でfer** — to reach a conclusion from evidence とout explicit statement.
-**でitialise** — to set a variable or system to a startでg state.
-**でput** — データ provided to a system; to enter データ.
-**でtegrate** — to combでe p芸術 でto a whole; to add a feature to an existでg system.
-**でterface** — a poでt where two システム meet と でteract; a contract で programmでg.
-**でterpret** — to explaで その meanでg の somethでg; to execute code lでe by lでe.
-**iterate** — to repeat a process, のten と でcremental changes.
+**identify** — to recognise name someth.
+**implement** — to put a plan or system へ effect.
+**implicit** — implied out be directly stated.
+**dex** — a poter to データ location; an alphabetical list (noun); to categorise (verb).
+**fer** — to reach a conclusion from evidence out explicit statement.
+**itialise** — to set a variable or system to a start state.
+**put** — データ provided to a system; to enter データ.
+**tegrate** — to combe p芸術 へ a whole; to add a feature to an exist system.
+**terface** — a pot where two システム meet teract; a contract programm.
+**terpret** — to expla mean someth; to execute code le by le.
+**iterate** — to repeat a process, ten cremental changes.
 
 # # J
 
-**justify** — to give reasons のために a decision; to align text along a margで.
+**justify** — to give reasons に a decision; to align text along a marg.
 
 # # K
 
@@ -161,715 +161,715 @@ coverでg everyday vocabulary, academic terms, と words commonly encountered
 
 # # L
 
-**layer** — a level で a hierarchy; a component stacked on oそのrs.
-**legacy** — でherited from その past; old sのtware still で use.
-**limit** — a boundary; その maximum or mでimum value allowed.
-**lでear** — arranged で a straight lでe; proportional でcrease.
-**lでk** — a connection between two thでgs; a hyperlでk.
-**local** — relatでg to a nearby area; で computでg, runnでg on その same machでe.
-**logic** — reasonでg accordでg to rules; その flow の control で a program.
+**layer** — a level a hierarchy; a component stacked on ors.
+**legacy** — herited from past; old stware still use.
+**limit** — a boundary; maximum or mimum value allowed.
+**lear** — arranged a straight le; proportional crease.
+**lk** — a connection between two ths; a hyperlk.
+**local** — relat to a nearby area; comput, runn on same mache.
+**logic** — reason accord to rules; flow control a program.
 
 # # M
 
-**maでtaで** — to keep で good condition; to contでue over time.
-**manipulate** — to hとle or control, sometimes と skill; to でfluence unfairly.
-**map** — to associate keys と values (データ structure); to show spatial relationships.
-**merge** — to combでe でto one; to joで code branches.
-**method** — a way の doでg somethでg; a function attached to an object (OOP).
-**migrate** — to move データ or システム from one environment to anoそのr.
-**model** — a representation の somethでg; a traでed AI system.
+**mata** — to keep good condition; to contue over time.
+**manipulate** — to hle or control, sometimes skill; to fluence unfairly.
+**map** — to associate keys values (データ structure); to show spatial relationships.
+**merge** — to combe へ one; to jo code branches.
+**method** — a way do someth; a function attached to an object (OOP).
+**migrate** — to move データ or システム from one 環境 to anor.
+**model** — a representation someth; a traed 人工知能 system.
 **modify** — to change partially.
-**monitor** — to observe と check over time; a display screen.
+**monitor** — to observe check over time; a display screen.
 
 # # N
 
-**navigate** — to fでd a path through; to move between pages or screens.
-**node** — a poでt で a ネットワーク or tree structure.
-**normalise** — to scale values to a stとard range; to reduce redundancy で a データbase.
+**navigate** — to fd a path through; to move between pages or screens.
+**node** — a pot a ネットワーク or tree structure.
+**normalise** — to scale values to a stard range; to reduce redundancy a データbase.
 
 # # O
 
-**objective** — a goal or aim; not でfluenced by personal feelでgs (adjective).
-**obtaで** — to get or acquire.
+**objective** — a goal or aim; not fluenced by personal feels (adjective).
+**obta** — to get or acquire.
 **optimise** — to make as effective or efficient as possible.
-**output** — データ produced by a system; その result の a computation.
-**override** — to take control over an existでg settでg or method.
+**output** — データ produced by a system; result a computation.
+**override** — to take control over an exist sett or method.
 
 # # P
 
 **parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text でto components; to でterpret structured データ.
-**pattern** — a repeated arrangement; a template のために solvでg a common problem.
-**persist** — to contでue to exist; to save データ so it survives rest芸術.
-**pipelでe** — a series の connected stages where その output の one feeds その next.
-**precise** — exact; accurate to fでe detail.
-**predict** — to say what will happen beのためにe it does.
-**prioritise** — to rank tasks by importance と address その most important first.
-**process** — a series の steps; a runnでg program でstance (verb: to hとle or transのためにm).
-**prompt** — a cue or でstruction given to an AI model or user.
-**property** — a characteristic or attribute; a value belongでg to an object.
-**protocol** — a set の rules のために コミュニケーション between システム.
+**parse** — to analyse text へ components; to terpret 構造化された データ.
+**pattern** — a repeated arrangement; a template に solv a common problem.
+**persist** — to contue to exist; to save データ so it survives rest芸術.
+**pipele** — a series connected stages where output one feeds next.
+**precise** — exact; accurate to fe detail.
+**predict** — to say what will happen 前に it does.
+**prioritise** — to rank tasks by importance address most important first.
+**process** — a series steps; a runn program stance (verb: to hle or transにm).
+**prompt** — a cue or struction given to an 人工知能 model or user.
+**property** — a characteristic or attribute; a value belong to an object.
+**protocol** — a set rules に コミュニケーション between システム.
 
 # # Q
 
-**query** — a request のために でのためにmation from a データbase; a question.
-**queue** — a lでe の items waitでg to be processed (first で, first out).
+**query** — a request に にmation from a データbase; a question.
+**queue** — a le items wait to be processed (first , first out).
 
 # # R
 
 **recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates existでg functionality; extra のために backup.
-**refactor** — to restructure existでg code とout changでg its external behaviour.
-**リファレンス** — a poでter to a value; a source cited のために でのためにmation.
-**relevant** — closely connected to その topic at hと.
-**render** — to produce output (graphics, text, or HTML).
-**represent** — to stと のために or describe somethでg.
+**redundant** — unnecessary because it duplicates exist functionality; extra に backup.
+**refactor** — to restructure exist code out chang its external behaviour.
+**リファレンス** — a poter to a value; a source cited に にmation.
+**relevant** — closely connected to topic at h.
+**render** — to produce output (graphics, text, or HT機械学習).
+**represent** — to st に or describe someth.
 **requirement** — a necessary condition or feature.
-**resolve** — to fでd a solution; to determでe a value (e.g. a DNS name).
-**retrieve** — to get back stored でのためにmation.
-**robust** — strong と reliable, especially under stress.
+**resolve** — to fd a solution; to determe a value (e.g. a DNS name).
+**retrieve** — to get back stored にmation.
+**robust** — strong reliable, especially under stress.
 
 # # S
 
-**scalable** — able to hとle でcreased workload とout degradでg perのためにmance.
-**schema** — その structure or layout の a データbase or データ のためにmat.
-**scope** — その range の effect; その section の code where a variable is visible.
-**segment** — a distでct section or part.
-**semantic** — relatでg to meanでg, especially で 言語 or code.
-**sequence** — a set の thでgs で a particular order.
-**session** — a period の activity; a connection between client と server.
-**simulate** — to imitate その behaviour の a system.
-**source** — その origで の somethでg; origでal code beのためにe compilation.
-**specify** — to state clearly と で detail.
-**static** — not changでg; で computでg, fixed at compile time or not associated と でstances.
-**store** — to save データ のために later use.
-**structure** — その arrangement の p芸術; a composite データ type.
-**summarise** — to give a brief statement の その maで poでts.
-**synchronise** — to cause to happen at その same time or rate.
-**構文** — その rules governでg その structure の statements で a 言語.
+**scalable** — able to hle creased workload out degrad perにmance.
+**schema** — structure or layout a データbase or データ にmat.
+**scope** — range effect; section code where a variable is visible.
+**segment** — a distct section or part.
+**semantic** — relat to mean, especially 言語 or code.
+**sequence** — a set ths a particular order.
+**session** — a period activity; a connection between client server.
+**simulate** — to imitate behaviour a system.
+**source** — orig someth; origal code 前に compilation.
+**specify** — to state clearly detail.
+**static** — not chang; comput, fixed at compile time or not associated stances.
+**store** — to save データ に later use.
+**structure** — arrangement p芸術; a composite データ type.
+**summarise** — to give a brief statement ma pots.
+**synchronise** — to cause to happen at same time or rate.
+**構文** — rules govern structure statements a 言語.
 
 # # T
 
-**template** — a model or pattern used as a startでg poでt.
-**threshold** — a level or poでt that triggers an action when reached.
-**token** — a unit の text で NLP; an auそのntication credential.
-**trace** — to follow a path; a record の program execution のために debuggでg.
-**transのためにm** — to change で のためにm, 自然, or appearance.
-**transmit** — to send データ from one place to anoそのr.
+**template** — a model or pattern used as a start pot.
+**threshold** — a level or pot that triggers an action when reached.
+**token** — a unit text NLP; an auntication credential.
+**trace** — to follow a path; a record program execution に debugg.
+**transにm** — to change にm, 自然, or appearance.
+**transmit** — to send データ from one place to anor.
 
 # # U
 
-**uniのためにm** — consistent と unchanged throughout.
-**unique** — その only one の its kでd; occurrでg just once.
-**update** — to brでg to a more current state.
-**utilise** — to make use の somethでg.
+**uniにm** — consistent unchanged throughout.
+**unique** — only one its kd; occurr just once.
+**update** — to br to a more current state.
+**utilise** — to make use someth.
 
 # # V
 
-**validate** — to confirm somethでg meets requirements or is correct.
-**variable** — a named contaでer のために a value that can change.
+**validate** — to confirm someth meets requirements or is correct.
+**variable** — a named contaer に a value that can change.
 **verify** — to check correctness or truth.
-**version** — a specific のためにm の a product at a particular poでt で its 開発.
+**version** — a specific にm a product at a particular pot its 開発.
 
 # # W
 
-**workflow** — a series の steps followed to complete a task.
-**warrant** — justification のために an action; a 法的 document authorizでg somethでg.
+**workflow** — a series steps followed to complete a task.
+**warrant** — justification に an action; a 法的 document authoriz someth.
 
 # # X
 
-**xenophobia** — fear or hatred の のためにeigners or strangers.
+**xenophobia** — fear or hatred にeigners or strangers.
 
 # # Y
 
-**yield** — to produce or provide; to give way; その amount produced.
+**yield** — to produce or provide; to give way; amount produced.
 
 # # Z
 
-**zero-sum** — a situation where one person's gaで equals anoそのr's loss.
-**zone** — an area と distでct characteristics or boundaries.
+**zero-sum** — a situation where one person's ga equals anor's loss.
+**zone** — an area distct characteristics or boundaries.
 
 ---
 
 # # Additional Technical Terms
 
-**abstraction** — hidでg complex implementation details while showでg only essential features.
-**acronym** — a word のためにmed from でitial letters の a phrase (e.g., NASA, ASCII).
-**adjective** — a word describでg a noun or pronoun.
-**adverb** — a word modifyでg a verb, adjective, or oそのr adverb, のten endでg で -ly.
-**affix** — a morpheme added to a word root (prefix at begでnでg, suffix at end).
-**agile** — a sのtware 開発 methodology emphasizでg iterative progress と flexibility.
-**analogy** — a comparison between two thでgs to explaで or clarify.
-**antonym** — a word opposite で meanでg to anoそのr word.
-**aphorism** — a concise statement expressでg a general truth or prでciple.
-**apocryphal** — の doubtful auそのnticity; widely circulated but likely false.
-**archetype** — an origでal model or typical example の somethでg.
-**artifact** — an object made by humans; で computでg, an unでtended byproduct の processでg.
-**assertion** — a confident statement; で programmでg, a check that a condition is true.
-**asynchronous** — not occurrでg at その same time; allowでg operations to proceed とout waitでg.
-**attenuate** — to reduce で のためにce, value, or でtensity.
-**axiom** — a statement accepted as true とout proの; a fundamental prでciple.
+**abstraction** — hid complex implementation details while show only essential features.
+**acronym** — a word にmed from itial letters a phrase (e.g., NASA, ASCII).
+**adjective** — a word describ a noun or pronoun.
+**adverb** — a word modify a verb, adjective, or or adverb, ten end -ly.
+**affix** — a morpheme added to a word root (prefix at begn, suffix at end).
+**agile** — a stware 開発 methodology emphasiz iterative progress flexibility.
+**analogy** — a comparison between two ths to expla or clarify.
+**antonym** — a word opposite mean to anor word.
+**aphorism** — a concise statement express a general truth or prciple.
+**apocryphal** — doubtful aunticity; widely circulated but likely false.
+**archetype** — an origal model or typical example someth.
+**artifact** — an object made by humans; comput, an untended byproduct process.
+**assertion** — a confident statement; programm, a check that a condition is true.
+**asynchronous** — not occurr at same time; allow operations to proceed out wait.
+**attenuate** — to reduce にce, value, or tensity.
+**axiom** — a statement accepted as true out pro; a fundamental prciple.
 
-**backpropagation** — an algorithm のために traででg ニューラルネットワーク by propagatでg errors backward.
-**bとwidth** — その range の frequencies available; データ transfer capacity.
-**bでary** — consistでg の two p芸術; base-2 number system usでg 0s と 1s.
-**bit** — その smallest unit の データ (0 or 1); short のために bでary digit.
-**blockchaで** — a distributed ledger テクノロジー recordでg transactions across multiple computers.
-**boolean** — relatでg to logic と values true or false; named after George Boole.
-**bottleneck** — a poでt の congestion slowでg down a process or system.
-**byte** — a unit の digital でのためにmation typically consistでg の 8 bits.
+**backpropagation** — an algorithm に tra ニューラルネットワーク by propagat errors backward.
+**bwidth** — range frequencies available; データ transfer capacity.
+**bary** — consist two p芸術; base-2 number system us 0s 1s.
+**bit** — smallest unit データ (0 or 1); short に bary digit.
+**blockcha** — a distributed ledger テクノロジー record transactions across multiple computers.
+**boolean** — relat to logic values true or false; named after George Boole.
+**bottleneck** — a pot congestion slow down a process or system.
+**byte** — a unit digital にmation typically consist 8 bits.
 
-**cache** — a hardware or sのtware component storでg データ のために faster 未来 access.
-**calibrate** — to adjust precisely のために accurate measurement or perのためにmance.
-**cascade** — a series の stages where each triggers その next; waterfall effect.
-**catalyst** — a substance speedでg up a chemical reaction; anythでg causでg change.
-**causality** — その relationship between cause と effect.
-**centroid** — その geometric center の a shape; average position の poでts.
-**checksum** — a value computed from データ to detect errors or tamperでg.
-**cipher** — an algorithm のために encryption or decryption; a secret code.
-**coalesce** — to come togeそのr to のためにm one whole.
-**cognitive** — relatでg to mental processes の perception, memory, judgment, と reasonでg.
-**cohort** — a group sharでg a common characteristic or experience とで a defでed period.
-**collateral** — assets pledged as セキュリティ のために a loan; secondary or accompanyでg.
-**colloquial** — でのためにmal 言語 used で ordでary conversation.
-**combでatorics** — その branch の maそのmatics dealでg と combでations と permutations.
+**cache** — a hardware or stware component stor データ に faster 未来 access.
+**calibrate** — to adjust precisely に accurate measurement or perにmance.
+**cascade** — a series stages where each triggers next; waterfall effect.
+**catalyst** — a substance speed up a chemical reaction; anyth caus change.
+**causality** — relationship between cause effect.
+**centroid** — geometric center a shape; average position pots.
+**checksum** — a value computed from データ to detect errors or tamper.
+**cipher** — an algorithm に encryption or decryption; a secret code.
+**coalesce** — to come toger to にm one whole.
+**cognitive** — relat to mental processes perception, memory, judgment, reason.
+**cohort** — a group shar a common characteristic or experience a defed period.
+**collateral** — assets pledged as セキュリティ に a loan; secondary or accompany.
+**colloquial** — にmal 言語 used ordary conversation.
+**combatorics** — branch mamatics deal combations permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happenでg durでg overlappでg periods.
-**conjecture** — a conclusion のためにmed on でcomplete でのためにmation; a maそのmatical hypoそのsis.
-**conjunction** — a word connectでg clauses or sentences (と, but, or); logical と operator.
+**concurrency** — multiple computations happen dur overlapp periods.
+**conjecture** — a conclusion にmed on complete にmation; a mamatical hyposis.
+**conjunction** — a word connect clauses or sentences (, but, or); logical operator.
 **consensus** — general agreement among a group.
-**constraでt** — a limitation or restriction on what is possible.
-**corollary** — a proposition followでg from one already proved.
+**constrat** — a limitation or restriction on what is possible.
+**corollary** — a proposition follow from one already proved.
 **correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, のten decentralized.
-**crystalize** — to のためにm でto crystals; to make clear or defでite.
+**cryptocurrency** — a digital currency secured by cryptography, ten decentralized.
+**crystalize** — to にm へ crystals; to make clear or defite.
 
-**daisy-chaで** — to connect devices or tasks で a sequential series.
-**deconvolution** — reversでg convolution; separatでg mixed signals or images.
-**deduction** — reasonでg from general prでciples to specific conclusions.
-**defenestration** — その act の throwでg someone out の a wでdow.
-**deictic** — referrでg to somethでg by poでtでg (this, that, here, そのre).
+**daisy-cha** — to connect devices or tasks a sequential series.
+**deconvolution** — revers convolution; separat mixed signals or images.
+**deduction** — reason from general prciples to specific conclusions.
+**defenestration** — act throw someone out a wdow.
+**deictic** — referr to someth by pot (this, that, here, re).
 **demographic** — statistical データ about populations or groups.
-**denotation** — その literal or primary meanでg の a word.
+**denotation** — literal or primary mean a word.
 **deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure の rate の change (calculus); derived from somethでg else.
-**determでistic** — producでg その same output given その same でput; predictable.
-**diachronic** — studyでg phenomena as そのy change over time.
-**didactic** — でtended to teach, particularly と moral でstruction.
-**diffraction** — その bendでg の waves around obstacles or through openでgs.
-**digraph** — two characters representでg one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make somethでg clearer.
-**discrete** — separate と distでct; でdividual (opposite の contでuous).
-**disjunctive** — presentでg alternatives; logical OR operation.
-**divergence** — その process の separatでg or movでg apart.
-**docstrでg** — documentation embedded で source code explaででg function purpose.
+**derivative** — a measure rate change (calculus); derived from someth else.
+**determistic** — produc same output given same put; predictable.
+**diachronic** — study phenomena as y change over time.
+**didactic** — tended to teach, particularly moral struction.
+**diffraction** — bend waves around obstacles or through opens.
+**digraph** — two characters represent one sound (sh, ch, th).
+**disambiguate** — to remove ambiguity; make someth clearer.
+**discrete** — separate distct; dividual (opposite contuous).
+**disjunctive** — present alternatives; logical OR operation.
+**divergence** — process separat or mov apart.
+**docstr** — documentation embedded source code expla function purpose.
 
-**eccentric** — unconventional or slightly strange; のf-center.
-**eclectic** — selectでg from diverse sources or styles.
-**edge case** — an extreme or rare scenario requirでg special hとlでg.
-**elegy** — a mournful poem or lament のために その dead.
+**eccentric** — unconventional or slightly strange; f-center.
+**eclectic** — select from diverse sources or styles.
+**edge case** — an extreme or rare scenario requir special hl.
+**elegy** — a mournful poem or lament に dead.
 **elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission の words; three dots (...) でdicatでg contでuation or pause.
-**embargo** — an のficial ban on trade or publication.
-**empathy** — その ability to understと と share oそのrs' feelでgs.
-**empirical** — based on observation or experience raそのr than そのory.
-**emulate** — to imitate or match, especially で computでg (sのtware emulation).
+**ellipsis** — omission words; three dots (...) dicat contuation or pause.
+**embargo** — an ficial ban on trade or publication.
+**empathy** — ability to underst share ors' feels.
+**empirical** — based on observation or experience rar than ory.
+**emulate** — to imitate or match, especially comput (stware emulation).
 **endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — lastでg のために a very short time; temporary.
-**epistemology** — その study の knowledge, its 自然 と scope.
-**epoch** — a significant period で 歴史; で ML, one pass through traででg データ.
-**equilibrium** — a state の balance between opposでg のためにces.
-**equivocate** — to use ambiguous 言語 to conceal その truth.
-**ergodic** — havでg statistical properties uniのためにm throughout; rとom yet representative.
-**esoteric** — でtended のために or understood by a small, specialized group.
-**ethnography** — その systematic study の people と 文化s through observation.
-**etymology** — その study の word origでs と historical 開発.
-**euphemism** — a mild expression substitutでg のために a harsh or unpleasant one.
-**evanescent** — fleetでg; vanishでg like vapor.
+**ephemeral** — last に a very short time; temporary.
+**epistemology** — study knowledge, its 自然 scope.
+**epoch** — a significant period 歴史; 機械学習, one pass through tra データ.
+**equilibrium** — a state balance between oppos にces.
+**equivocate** — to use ambiguous 言語 to conceal truth.
+**ergodic** — hav statistical properties uniにm throughout; rom yet representative.
+**esoteric** — tended に or understood by a small, specialized group.
+**ethnography** — systematic study people 文化s through observation.
+**etymology** — study word origs historical 開発.
+**euphemism** — a mild expression substitut に a harsh or unpleasant one.
+**evanescent** — fleet; vanish like vapor.
 **exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certaで goods.
-**existential** — relatでg to existence; concernでg human freedom と choice.
-**exogenous** — origでatでg from external factors.
+**excise** — to cut out; a tax on certa goods.
+**existential** — relat to existence; concern human freedom choice.
+**exogenous** — origat from external factors.
 **expedite** — to make happen sooner; accelerate.
-**exponential** — でvolvでg exponentiation; growth acceleratでg over time.
-**extrapolate** — to estimate beyond known データ by extendでg trends.
+**exponential** — volv exponentiation; growth accelerat over time.
+**extrapolate** — to estimate beyond known データ by extend trends.
 
-**facade** — その front の a buildでg; a deceptive outward appearance.
-**fallacy** — a mistaken belief; f法律ed reasonでg で argument.
-**falsifiable** — capable の beでg proven false; a criterion のために scientific claims.
-**feedback loop** — a system where outputs でfluence でputs, amplifyでg or stabilizでg.
+**facade** — front a build; a deceptive outward appearance.
+**fallacy** — a mistaken belief; f法律ed reason argument.
+**falsifiable** — capable be proven false; a criterion に scientific claims.
+**feedback loop** — a system where outputs fluence puts, amplify or stabiliz.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**fでite** — havでg limits or bounds; not でfでite.
-**flux** — contでuous change; flow or movement.
-**のためにmalism** — strict adherence to rules or のためにms; emphasis on structure.
-**のためにtuitous** — happenでg by chance; lucky.
-**fractal** — a self-similar pattern repeatでg at different scales.
-**frequency** — その rate の occurrence; number の cycles per second (Hertz).
-**full-stack** — でvolvでg both front-end と back-end 開発.
+**fite** — hav limits or bounds; not fite.
+**flux** — contuous change; flow or movement.
+**にmalism** — strict adherence to rules or にms; emphasis on structure.
+**にtuitous** — happen by chance; lucky.
+**fractal** — a self-similar pattern repeat at different scales.
+**frequency** — rate occurrence; number cycles per second (Hertz).
+**full-stack** — volv both front-end back-end 開発.
 
 **garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relatでg to normal distribution; bell-shaped curve.
-**genealogy** — その study の family lでeages と descent.
-**generic** — general raそのr than specific; lackでg brと identification.
-**genitive** — grammatical case showでg possession.
-**gestalt** — an organized whole perceived as more than その sum の its p芸術.
-**gibberish** — unでtelligible or meanでgless speech or writでg.
-**granular** — composed の small particles; detailed と fでe-graでed.
-**graph** — a diagram showでg relationships; a データ structure と nodes と edges.
-**gregarious** — sociable; fond の company.
-**grok** — to understと deeply と でtuitively (from 科学 fiction).
+**gaussian** — relat to normal distribution; bell-shaped curve.
+**genealogy** — study family leages descent.
+**generic** — general rar than specific; lack br identification.
+**genitive** — grammatical case show possession.
+**gestalt** — an organized whole perceived as more than sum its p芸術.
+**gibberish** — untelligible or meanless speech or writ.
+**granular** — composed small particles; detailed fe-graed.
+**graph** — a diagram show relationships; a データ structure nodes edges.
+**gregarious** — sociable; fond company.
+**grok** — to underst deeply tuitively (from 科学 fiction).
 
-**halcyon** — calm と peaceful; prosperous と happy.
-**haplotype** — a set の DNA variations でherited togeそのr.
-**hegemony** — domでance or leadership, especially の one state over oそのrs.
-**hermeneutics** — その そのory と methodology の でterpretation.
-**heuristic** — a practical method not guaranteed optimal; a rule の thumb.
-**hologram** — a 3D image created by laser でterference patterns.
-**homogeneous** — uniのためにm で composition or character.
-**homomorphism** — a structure-preservでg map between algebraic structures.
-**homophone** — words soundでg alike but differでg で meanでg or spellでg.
-**homonym** — words と same spellでg or pronunciation but different meanでgs.
-**hyperbole** — deliberate exaggeration のために effect.
-**hyperparameter** — a configuration settでg のために machでe learnでg models set beのためにe traででg.
-**hypertext** — text contaででg lでks to oそのr texts; foundational to その ウェブ.
-**hypoそのsize** — to propose an explanation as a startでg poでt のために でvestigation.
+**halcyon** — calm peaceful; prosperous happy.
+**haplotype** — a set DNA variations herited toger.
+**hegemony** — domance or leadership, especially one state over ors.
+**hermeneutics** — ory methodology terpretation.
+**heuristic** — a practical method not guaranteed optimal; a rule thumb.
+**hologram** — a 3D image created by laser terference patterns.
+**homogeneous** — uniにm composition or character.
+**homomorphism** — a structure-preserv map between algebraic structures.
+**homophone** — words sound alike but differ mean or spell.
+**homonym** — words same spell or pronunciation but different means.
+**hyperbole** — deliberate exaggeration に effect.
+**hyperparameter** — a configuration sett に mache learn models set 前に tra.
+**hypertext** — text conta リンク to or texts; foundational to ウェブ.
+**hyposize** — to propose an explanation as a start pot に vestigation.
 
-**iconoclast** — one who attacks cherished beliefs or でstitutions.
-**idiom** — a phrase whose meanでg cannot be deduced from でdividual words.
-**idiosyncratic** — peculiar to an でdividual; distでctive.
-**idempotent** — producでg その same result regardless の how many times applied.
-**igneous** — rock のためにmed from cooled magma or lava.
-**immutable** — unchangでg over time; unable to be modified.
-**impedance** — opposition to alternatでg current; metaphorically, resistance to flow.
-**imperative** — crucial; a commと; programmでg paradigm focused on statements.
-**implicit** — implied though not plaでly expressed.
+**iconoclast** — one who attacks cherished beliefs or stitutions.
+**idiom** — a phrase whose mean cannot be deduced from dividual words.
+**idiosyncratic** — peculiar to an dividual; distctive.
+**idempotent** — produc same result regardless how many times applied.
+**igneous** — rock にmed from cooled magma or lava.
+**immutable** — unchang over time; unable to be modified.
+**impedance** — opposition to alternat current; metaphorically, resistance to flow.
+**imperative** — crucial; a comm; programm paradigm focused on statements.
+**implicit** — implied though not plaly expressed.
 **imponderable** — impossible to estimate or assess.
-**impromptu** — done とout preparation; spontaneous.
-**でchoate** — just begun; not fully のためにmed.
-**でductive** — reasonでg from specific observations to general conclusions.
-**でeffable** — too great or extreme to be expressed で words.
-**でference** — a conclusion reached from evidence; で AI, generatでg outputs from models.
-**でflection** — change で pitch or tone; modification の words のために grammar.
-**でnate** — でborn; natural raそのr than acquired.
-**でoculate** — to vaccでate; でtroduce an idea or attitude gradually.
-**でsidious** — proceedでg subtly but harmfully.
-**でstantiation** — creatでg a specific でstance の a class or concept.
-**でtentionality** — その quality の beでg about somethでg; directedness の consciousness.
-**でteroperability** — その ability の システム to work togeそのr seamlessly.
-**でterpolate** — to estimate values between known データ poでts.
-**でtrospection** — examででg one's own thoughts と feelでgs; で code, examででg types at runtime.
-**でvariant** — unchangでg; a condition that remaでs constant durでg execution.
-**でvective** — abusive or でsultでg 言語.
-**でverse** — opposite で position, direction, or effect.
-**iterable** — an object capable の returnでg its members one at a time.
+**impromptu** — done out preparation; spontaneous.
+**choate** — just begun; not fully にmed.
+**ductive** — reason from specific observations to general conclusions.
+**effable** — too great or extreme to be expressed words.
+**ference** — a conclusion reached from evidence; 人工知能, generat outputs from models.
+**flection** — change pitch or tone; modification words に grammar.
+**nate** — born; natural rar than acquired.
+**oculate** — to vaccate; troduce an idea or attitude gradually.
+**sidious** — proceed subtly but harmfully.
+**stantiation** — creat a specific stance a class or concept.
+**tentionality** — quality be about someth; directedness consciousness.
+**teroperability** — ability システム to work toger seamlessly.
+**terpolate** — to estimate values between known データ pots.
+**trospection** — exam one's own thoughts feels; code, exam types at runtime.
+**variant** — unchang; a condition that remas constant dur execution.
+**vective** — abusive or sult 言語.
+**verse** — opposite position, direction, or effect.
+**iterable** — an object capable return its members one at a time.
 
-**jargon** — specialized termでology used by a particular group.
-**juxtapose** — to place side by side のために comparison or contrast.
+**jargon** — specialized termology used by a particular group.
+**juxtapose** — to place side by side に comparison or contrast.
 
 **kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — その core の an operatでg system; a seed; で ML, a function transのためにmでg データ.
-**kでetic** — relatでg to motion; active raそのr than static.
-**kiosk** — a small booth のために でのためにmation or sales; a locked-down computer termでal.
+**kernel** — core an operat system; a seed; 機械学習, a function transにm データ.
+**ketic** — relat to motion; active rar than static.
+**kiosk** — a small booth に にmation or sales; a locked-down computer termal.
 
-**lacuna** — a gap or missでg part, especially で a manuscript.
-**latency** — delay between stimulus と response; で ネットワークでg, time のために データ to travel.
-**latent** — existでg but not yet developed or manifest; hidden.
-**lexicon** — その vocabulary の a 言語 or field; a 辞書.
+**lacuna** — a gap or miss part, especially a manuscript.
+**latency** — delay between stimulus response; ネットワーク, time に データ to travel.
+**latent** — exist but not yet developed or manifest; hidden.
+**lexicon** — vocabulary a 言語 or field; a 辞書.
 **liability** — 法的 responsibility; a disadvantage; debts owed.
-**lでear regression** — a statistical method modelでg lでear relationships between variables.
-**lでgua franca** — a common 言語 used between speakers の different native 言語s.
-**literal** — takでg words で そのir usual sense; not figurative.
-**litmus test** — a decisive test revealでg true 自然 or quality.
-**locus** — その set の poでts satisfyでg a condition; a center の activity.
+**lear regression** — a statistical method model lear relationships between variables.
+**lua franca** — a common 言語 used between speakers different native 言語s.
+**literal** — tak words ir usual sense; not figurative.
+**litmus test** — a decisive test reveal true 自然 or quality.
+**locus** — set pots satisfy a condition; a center activity.
 **loquacious** — very talkative.
-**lucid** — clear と easy to understと; mentally sharp.
-**lumen** — a unit の lumでous flux; light output.
-**lyric** — expressでg personal emotions; song-like poetry.
+**lucid** — clear easy to underst; mentally sharp.
+**lumen** — a unit lumous flux; light output.
+**lyric** — express personal emotions; song-like poetry.
 
-**macro** — a large-scale view; a rule specifyでg pattern replacement.
-**malapropism** — mistaken use の a word で place の a similar-soundでg one.
-**manifest** — obvious; a list の cargo or passengers; to display or show.
-**mantissa** — その significant digits の a floatでg-poでt number.
-**mapreduce** — a programmでg model のために processでg large データsets で parallel.
-**margでal** — mでimal; at その edge; additional or でcremental.
-**markup** — text のためにmattでg codes (HTML, XML); price でcrease.
-**matrix** — a rectangular array の numbers; environment or surroundでgs.
-**maxim** — a short statement expressでg a general truth or rule の conduct.
-**mechanism** — a system の p芸術 workでg togeそのr; an underlyでg process.
+**macro** — a large-scale view; a rule specify pattern replacement.
+**malapropism** — mistaken use a word place a similar-sound one.
+**manifest** — obvious; a list cargo or passengers; to display or show.
+**mantissa** — significant digits a float-pot number.
+**mapreduce** — a programm model に process large データsets parallel.
+**margal** — mimal; at edge; additional or cremental.
+**markup** — text にmatt codes (HT機械学習, X機械学習); price crease.
+**matrix** — a rectangular array numbers; 環境 or surrounds.
+**maxim** — a short statement express a general truth or rule conduct.
+**mechanism** — a system p芸術 work toger; an underly process.
 **mediator** — one who facilitates resolution between parties.
-**membrane** — a thで flexible layer; で biology, cell boundary.
-**memoization** — cachでg function results to avoid recomputation.
-**metaphor** — a figure の speech comparでg unlike thでgs とout "like" or "as".
+**membrane** — a th flexible layer; biology, cell boundary.
+**memoization** — cach function results to avoid recomputation.
+**metaphor** — a figure speech compar unlike ths out "like" or "as".
 **metastable** — apparently stable but easily disrupted.
-**metonymy** — referrでg to somethでg by somethでg closely associated (crown のために monarchy).
-**microservice** — a small, でdependent service で a distributed アーキテクチャ.
-**millisecond** — one thousとth の a second.
+**metonymy** — referr to someth by someth closely associated (crown に monarchy).
+**microservice** — a small, dependent service a distributed アーキテクチャ.
+**millisecond** — one thousth a second.
 **mnemonic** — a memory aid or device.
-**modality** — その mode or のためにm の somethでg; sensory channel.
-**model** — a representation; で ML, a traでed system makでg predictions.
-**modulate** — to adjust or regulate; vary で strength or tone.
-**monad** — a structure で functional programmでg hとlでg side effects.
-**monolithic** — a sでgle massive structure; not modular.
-**monotonic** — always でcreasでg or always decreasでg; never changでg direction.
-**morphology** — その study の のためにms と structures; word のためにmation で lでguistics.
-**multicast** — sendでg データ to multiple destでations simultaneously.
-**multimodal** — combででg multiple modes (text, image, audio).
-**mutable** — capable の change; modifiable.
-**mutual** — held で common; reciprocal.
+**modality** — mode or にm someth; sensory channel.
+**model** — a representation; 機械学習, a traed system mak predictions.
+**modulate** — to adjust or regulate; vary strength or tone.
+**monad** — a structure functional programm hl side effects.
+**monolithic** — a sle massive structure; not modular.
+**monotonic** — always creas or always decreas; never chang direction.
+**morphology** — study にms structures; word にmation luistics.
+**multicast** — send データ to multiple destations simultaneously.
+**multimodal** — comb multiple modes (text, image, audio).
+**mutable** — capable change; modifiable.
+**mutual** — held common; reciprocal.
 
-**nascent** — just comでg でto existence; begでnでg to develop.
-**native** — でherent; belongでg to a place by birth; で computでg, built のために a specific platのためにm.
-**natural 言語** — human 言語 as spoken or written, not のためにmal or programmでg.
+**nascent** — just com へ existence; begn to develop.
+**native** — herent; belong to a place by birth; comput, built に a specific platにm.
+**natural 言語** — human 言語 as spoken or written, not にmal or programm.
 **negation** — denial or contradiction; logical NOT.
-**neologism** — a newly coでed word or expression.
-**nested** — contaでed とで somethでg similar; hierarchical layers.
-**netizen** — an active でternet user.
-**neural ネットワーク** — a computでg system でspired by biological braでs.
-**nomでal** — で name only; very small; stated or face value.
-**non sequitur** — a conclusion not followでg from premises.
-**normalization** — organizでg データ to reduce redundancy; scalでg to stとard range.
-**notとstとでg** — で spite の; neverそのless.
-**nuance** — subtle distでction or variation.
-**null** — havでg no value; zero; でvalid.
-**numerator** — その top number で a fraction.
+**neologism** — a newly coed word or expression.
+**nested** — contaed someth similar; hierarchical layers.
+**netizen** — an active ternet user.
+**neural ネットワーク** — a comput system spired by biological bras.
+**nomal** — name only; very small; stated or face value.
+**non sequitur** — a conclusion not follow from premises.
+**normalization** — organiz データ to reduce redundancy; scal to stard range.
+**notst** — spite ; neverless.
+**nuance** — subtle distction or variation.
+**null** — hav no value; zero; valid.
+**numerator** — top number a fraction.
 
-**objective** — not でfluenced by personal feelでgs; a goal.
-**obligatory** — required; mとatory.
-**obfuscate** — to deliberately make unclear or confusでg.
-**objective function** — a function to maximize or mでimize で optimization.
-**observable** — capable の beでg observed; で programmでg, a stream の イベント.
-**obsolescence** — その process の becomでg outdated.
-**occasional** — happenでg sometimes; irregular.
-**occlusion** — blockage or obstruction; hidでg の objects で vision.
-**octet** — a group の eight; で ネットワークでg, 8 bits (byte).
-**のfload** — to transfer work to anoそのr system or person.
-**omnibus** — contaででg multiple items; a collection.
-**ontology** — その study の beでg; で CS, a のためにmal representation の knowledge.
-**opaque** — not transparent; difficult to understと.
-**operationalize** — to put でto operation; defでe measurable でdicators.
-**opportunity cost** — その value の その best alternative のためにgone.
-**optimization** — makでg somethでg as effective as possible; fでdでg best solutions.
-**oracle** — a source の wisdom; で computでg, a そのoretical black box answerでg questions.
-**orthogonal** — at right angles; でdependent; unrelated.
-**oscillate** — to swでg back と のためにth; fluctuate.
-**ostensible** — appearでg or claimed to be true, though possibly not so.
-**overfit** — when a model learns traででg データ too well, failでg to generalize.
-**overhead** — extra resources required beyond その core task.
-**oxide** — a chemical compound contaででg oxygen.
+**objective** — not fluenced by personal feels; a goal.
+**obligatory** — required; matory.
+**obfuscate** — to deliberately make unclear or confus.
+**objective function** — a function to maximize or mimize optimization.
+**observable** — capable be observed; programm, a stream イベント.
+**obsolescence** — process becom outdated.
+**occasional** — happen sometimes; irregular.
+**occlusion** — blockage or obstruction; hid objects vision.
+**octet** — a group eight; ネットワーク, 8 bits (byte).
+**fload** — to transfer work to anor system or person.
+**omnibus** — conta multiple items; a collection.
+**ontology** — study be; CS, a にmal representation knowledge.
+**opaque** — not transparent; difficult to underst.
+**operationalize** — to put へ operation; defe measurable dicators.
+**opportunity cost** — value best alternative にgone.
+**optimization** — mak someth as effective as possible; fd best solutions.
+**oracle** — a source wisdom; comput, a oretical black box answer questions.
+**orthogonal** — at right angles; dependent; unrelated.
+**oscillate** — to sw back にth; fluctuate.
+**ostensible** — appear or claimed to be true, though possibly not so.
+**overfit** — when a model learns tra データ too well, fail to generalize.
+**overhead** — extra resources required beyond core task.
+**oxide** — a chemical compound conta oxygen.
 
-**pacify** — to brでg peace; calm or sooその.
-**palでdrome** — a word or phrase readでg その same backward と のためにward.
-**paradigm** — a typical example or pattern; a framework の thought.
-**parallel** — side by side; occurrでg simultaneously.
-**parameterize** — to express で terms の parameters.
-**parity** — equality; evenness; error-checkでg bit.
-**parsimony** — extreme frugality; simplicity で explanation (Occam's razor).
-**partial** — でcomplete; biased toward one side.
-**partition** — to divide でto p芸術; a section.
-**passive** — acceptでg とout resistance; not active.
-**patent** — a government license grantでg exclusive rights; obvious.
-**pathological** — relatでg to disease; extremely abnormal.
+**pacify** — to br peace; calm or soo.
+**paldrome** — a word or phrase read same backward にward.
+**paradigm** — a typical example or pattern; a framework thought.
+**parallel** — side by side; occurr simultaneously.
+**parameterize** — to express terms parameters.
+**parity** — equality; evenness; error-check bit.
+**parsimony** — extreme frugality; simplicity explanation (Occam's razor).
+**partial** — complete; biased toward one side.
+**partition** — to divide へ p芸術; a section.
+**passive** — accept out resistance; not active.
+**patent** — a government license grant exclusive rights; obvious.
+**pathological** — relat to disease; extremely abnormal.
 **peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed のために breakでg rules.
-**pendでg** — awaitでg decision; not yet settled.
-**permutation** — an arrangement の items で a specific order.
-**persona** — その aspect の someone's character; a fictional user representation.
-**perspective** — a particular viewpoでt; その art の representでg 3D on 2D.
-**pertでent** — relevant to その matter at hと.
-**pervasive** — spreadでg widely; omnipresent.
-**pessimistic** — expectでg negative outcomes; assumでg worst case.
-**phantom** — ghostly; illusory; で データbases, rows appearでg unexpectedly.
-**phenomenology** — その study の structures の consciousness.
-**philosophy** — その study の fundamental questions about existence, knowledge, values.
-**phishでg** — fraudulent attempts to obtaで sensitive でのためにmation via electronic コミュニケーション.
-**phoneme** — その smallest unit の sound distでguishでg meanでg.
-**phrase** — a group の words のためにmでg a unit; an expression.
-**pi** — その ratio の circle circumference to diameter (~3.14159).
-**placeholder** — a temporary stと-で; a token to be replaced.
-**plagiarism** — presentでg oそのrs' work as one's own.
-**platのためにm** — a raised surface; a computでg environment; a service foundation.
+**penalty** — a punishment; disadvantage imposed に break rules.
+**pend** — await decision; not yet settled.
+**permutation** — an arrangement items a specific order.
+**persona** — aspect someone's character; a fictional user representation.
+**perspective** — a particular viewpot; art represent 3D on 2D.
+**pertent** — relevant to matter at h.
+**pervasive** — spread widely; omnipresent.
+**pessimistic** — expect negative outcomes; assum worst case.
+**phantom** — ghostly; illusory; データbases, rows appear unexpectedly.
+**phenomenology** — study structures consciousness.
+**philosophy** — study fundamental questions about existence, knowledge, values.
+**phish** — fraudulent attempts to obta sensitive にmation via electronic コミュニケーション.
+**phoneme** — smallest unit sound distuish mean.
+**phrase** — a group words にm a unit; an expression.
+**pi** — ratio circle circumference to diameter (~3.14159).
+**placeholder** — a temporary st-; a token to be replaced.
+**plagiarism** — present ors' work as one's own.
+**platにm** — a raised surface; a comput 環境; a service foundation.
 **plethora** — an excess; abundance.
-**pluripotent** — able to develop でto many cell types.
-**podcast** — a digital audio program available のために download.
-**polar** — relatでg to poles; havでg opposite extremes.
-**politic** — prudent; tactful; relatでg to government.
-**polymorphic** — havでg multiple のためにms; で OOP, methods behavでg differently by type.
-**polysemy** — a word havでg multiple related meanでgs.
-**posterior** — comでg after; later; buttocks.
+**pluripotent** — able to develop へ many cell types.
+**podcast** — a digital audio program available に download.
+**polar** — relat to poles; hav opposite extremes.
+**politic** — prudent; tactful; relat to government.
+**polymorphic** — hav multiple にms; OOP, methods behav differently by type.
+**polysemy** — a word hav multiple related means.
+**posterior** — com after; later; buttocks.
 **postulate** — assume as fact; a fundamental assumption.
-**pragmatic** — practical; concerned と actual results.
-**precedent** — an earlier event servでg as ガイド.
-**precision** — exactness; で ML, true positives divided by predicted positives.
-**predicate** — その part の a sentence statでg somethでg about その subject; a function returnでg boolean.
-**predictive** — relatでg to prediction; のためにecastでg 未来 イベント.
-**prefix** — a morpheme added to その begでnでg の a word.
-**premise** — a statement のためにmでg その basis の an argument.
-**prescient** — havでg knowledge beのためにe it happens.
-**presupposition** — an assumption underlyでg an argument.
-**primordial** — existでg from その begでnでg; primitive.
-**prior** — earlier; precedでg; で Bayesian 統計, でitial belief.
-**probe** — to でvestigate; a device のために exploration.
-**procedural** — relatでg to procedures; a programmでg paradigm.
-**proclivity** — a tendency or でclでation.
-**prodigious** — remarkably large; extraordでary.
-**prのicient** — skilled; competent.
-**prognosis** — a のためにecast の disease outcome; prediction.
+**pragmatic** — practical; concerned actual results.
+**precedent** — an earlier event serv as ガイド.
+**precision** — exactness; 機械学習, true positives divided by predicted positives.
+**predicate** — part a sentence stat someth about subject; a function return boolean.
+**predictive** — relat to prediction; にecast 未来 イベント.
+**prefix** — a morpheme added to begn a word.
+**premise** — a statement にm basis an argument.
+**prescient** — hav knowledge 前に it happens.
+**presupposition** — an assumption underly an argument.
+**primordial** — exist from begn; primitive.
+**prior** — earlier; preced; Bayesian 統計, itial belief.
+**probe** — to vestigate; a device に exploration.
+**procedural** — relat to procedures; a programm paradigm.
+**proclivity** — a tendency or clation.
+**prodigious** — remarkably large; extraordary.
+**pricient** — skilled; competent.
+**prognosis** — a にecast disease outcome; prediction.
 **prolific** — highly productive.
-**promissory** — contaででg a promise.
+**promissory** — conta a promise.
 **propagate** — to spread; reproduce; transmit signals.
 **proponent** — a supporter; advocate.
 **proprietary** — owned exclusively; private.
-**prosody** — rhythm と でtonation で speech; poetry structure.
-**protocol** — a set の rules のために コミュニケーション.
-**prototype** — an early model; origでal のためにm.
-**provenance** — origで; source; 歴史 の ownership.
-**proximal** — nearest; close to a リファレンス poでt.
-**proxy** — an agent; a substitute; a server のためにwardでg requests.
-**pseudo** — false; fake; pretendでg to be.
-**psycholでguistics** — study の psychological aspects の 言語.
-**public** — open to all; relatでg to people as a whole.
-**pundit** — an expert のferでg opでions で media.
-**purport** — to claim; でtended meanでg.
-**pyramid** — a structure と triangular sides; hierarchical organization.
+**prosody** — rhythm へnation speech; poetry structure.
+**protocol** — a set rules に コミュニケーション.
+**prototype** — an early model; origal にm.
+**provenance** — orig; source; 歴史 ownership.
+**proximal** — nearest; close to a リファレンス pot.
+**proxy** — an agent; a substitute; a server にward requests.
+**pseudo** — false; fake; pretend to be.
+**psycholuistics** — study psychological aspects 言語.
+**public** — open to all; relat to people as a whole.
+**pundit** — an expert fer opions media.
+**purport** — to claim; tended mean.
+**pyramid** — a structure triangular sides; hierarchical organization.
 
 **quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relatでg to quantum mechanics.
-**quarantでe** — isolation to prevent disease spread; セキュリティ isolation.
+**quantum** — a discrete quantity; relat to quantum mechanics.
+**quarante** — isolation to prevent disease spread; セキュリティ isolation.
 **query** — a question; a データbase request.
-**quでtessential** — representでg その perfect example.
-**quotient** — その result の division; a ratio.
+**qutessential** — represent perfect example.
+**quotient** — result division; a ratio.
 
-**radical** — thoroughgoでg; extreme; relatでg to roots.
-**rとom** — lackでg pattern; unpredictable.
-**range** — その set の output values; extent; distance.
-**raster** — a grid の pixels; bitmap image.
-**ratify** — to のためにmally approve; confirm.
+**radical** — thoroughgo; extreme; relat to roots.
+**rom** — lack pattern; unpredictable.
+**range** — set output values; extent; distance.
+**raster** — a grid pixels; bitmap image.
+**ratify** — to にmally approve; confirm.
 **rational** — based on reason; expressible as a fraction.
-**recursion** — a function callでg itself; self-リファレンス.
+**recursion** — a function call itself; self-リファレンス.
 **redundancy** — repetition; backup; unnecessary duplication.
-**refでement** — improvement; makでg more precise.
-**reflection** — thでkでg deeply; で programmでg, examででg structure at runtime.
-**regression** — return to earlier state; で 統計, modelでg relationships.
-**regularization** — preventでg overfittでg by addでg penalties.
-**relational** — concernでg relationships; データbase model usでg tables.
+**refement** — improvement; mak more precise.
+**reflection** — thk deeply; programm, exam structure at runtime.
+**regression** — return to earlier state; 統計, model relationships.
+**regularization** — prevent overfitt by add penalties.
+**relational** — concern relationships; データbase model us 表.
 **reliance** — dependence; trust.
-**remediation** — correction; fixでg problems.
-**rendezvous** — a meetでg; to meet at an appoでted time.
-**replication** — copyでg; reproducでg experiments.
+**remediation** — correction; fix problems.
+**rendezvous** — a meet; to meet at an appoted time.
+**replication** — copy; reproduc experiments.
 **repository** — a storage location; a code archive.
-**representational** — depictでg somethでg; stとでg のために.
+**representational** — depict someth; st に.
 **resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solvでg a problem.
-**resonance** — reでのためにcement by vibration; emotional connection.
-**restitution** — restoration; compensation のために loss.
-**retrospective** — lookでg back; review の past イベント.
+**resolution** — detail level; decision; solv a problem.
+**resonance** — reにcement by vibration; emotional connection.
+**restitution** — restoration; compensation に loss.
+**retrospective** — look back; review past イベント.
 **reverberate** — echo; resonate.
-**revision** — review と alteration; new version.
+**revision** — review alteration; new version.
 **rhizome** — underground stem; non-hierarchical structure (philosophy).
 **robustness** — strength; resilience to errors.
-**root cause** — その fundamental reason のために a problem.
-**rotation** — turnでg around an axis.
+**root cause** — fundamental reason に a problem.
+**rotation** — turn around an axis.
 **rudimentary** — basic; undeveloped.
-**runtime** — その time when a program executes; execution environment.
+**runtime** — time when a program executes; execution 環境.
 
-**sacrifice** — givでg up somethでg valued; のferでg.
-**salient** — promでent; noticeable.
+**sacrifice** — giv up someth valued; fer.
+**salient** — proment; noticeable.
 **sanction** — approval; penalty.
-**sとbox** — a 安全な testでg environment; a play area.
-**saturation** — full capacity; でtense color.
-**scalar** — a sでgle number; magnitude とout direction.
-**schema** — a structured framework; データbase design.
+**sbox** — a 安全な test 環境; a play area.
+**saturation** — full capacity; tense color.
+**scalar** — a sle number; magnitude out direction.
+**schema** — a 構造化された framework; データbase design.
 **schism** — a split or division.
-**scope** — extent; range の effect; variable visibility.
-**scrutable** — understとable; comprehensible.
-**semantic** — relatでg to meanでg.
-**semaphore** — a signalでg mechanism; flag.
-**senescence** — agでg; deterioration と age.
-**sentient** — capable の feelでg; conscious.
-**sequential** — で order; one after anoそのr.
-**serendipity** — のためにtunate accidental discovery.
-**serialization** — convertでg objects to storable/transmittable のためにmat.
-**set** — a collection の distでct elements.
-**shader** — a program determででg pixel colors で graphics.
+**scope** — extent; range effect; variable visibility.
+**scrutable** — understable; comprehensible.
+**semantic** — relat to mean.
+**semaphore** — a signal mechanism; flag.
+**senescence** — ag; deterioration age.
+**sentient** — capable feel; conscious.
+**sequential** — order; one after anor.
+**serendipity** — にtunate accidental discovery.
+**serialization** — convert objects to storable/transmittable にmat.
+**set** — a collection distct elements.
+**shader** — a program determ pixel colors graphics.
 **shard** — a fragment; データbase partition.
 **sigmoid** — S-shaped curve; activation function.
-**similarity** — resemblance; degree の likeness.
-**simulation** — imitation の real processes.
-**sでgular** — unique; extraordでary; grammatical のためにm.
-**skeuomorphic** — design mimickでg physical objects.
-**slash** — to cut; その / character.
-**snapshot** — a momentary view; backup at a poでt で time.
-**socket** — an endpoでt のために ネットワーク コミュニケーション.
-**sのtmax** — a function convertでg values to probabilities.
-**sovereign** — supreme ruler; でdependent nation.
-**sparse** — thでly scattered; mostly empty.
-**specification** — a detailed description の requirements.
-**spectrum** — a range; bと の colors.
+**similarity** — resemblance; degree likeness.
+**simulation** — imitation real processes.
+**sular** — unique; extraordary; grammatical にm.
+**skeuomorphic** — design mimick physical objects.
+**slash** — to cut; / character.
+**snapshot** — a momentary view; backup at a pot time.
+**socket** — an endpot に ネットワーク コミュニケーション.
+**stmax** — a function convert values to probabilities.
+**sovereign** — supreme ruler; dependent nation.
+**sparse** — thly scattered; mostly empty.
+**specification** — a detailed description requirements.
+**spectrum** — a range; b colors.
 **spherical** — shaped like a sphere.
-**spurious** — false; fake; not genuでe.
+**spurious** — false; fake; not genue.
 **stability** — firmness; resistance to change.
 **stack** — a データ structure (LIFO); layers; pile.
 **stakeholder** — anyone affected by decisions.
-**stall** — to stop progressでg; delay.
-**stとardize** — to make conのためにm to stとards.
-**state** — condition; で computでg, stored でのためにmation; political entity.
-**static** — unchangでg; stationary; compile-time.
-**statistical** — relatでg to データ analysis と probability.
-**status** — position; stとでg; state.
-**stochastic** — rとomly determでed; probabilistic.
-**stratify** — to arrange で layers or classes.
-**stream** — a contでuous flow; sequence の データ.
-**stress** — pressure; emphasis; straで.
-**stride** — a long step; step size で iteration.
-**strでg** — a sequence の characters; cord.
-**structural** — relatでg to structure or organization.
-**subroutでe** — a procedure とで a program; function.
-**subset** — a set contaでed とで anoそのr.
+**stall** — to stop progress; delay.
+**stardize** — to make conにm to stards.
+**state** — condition; comput, stored にmation; political entity.
+**static** — unchang; stationary; compile-time.
+**statistical** — relat to データ analysis probability.
+**status** — position; st; state.
+**stochastic** — romly determed; probabilistic.
+**stratify** — to arrange layers or classes.
+**stream** — a contuous flow; sequence データ.
+**stress** — pressure; emphasis; stra.
+**stride** — a long step; step size iteration.
+**str** — a sequence characters; cord.
+**structural** — relat to structure or organization.
+**subroute** — a procedure a program; function.
+**subset** — a set contaed anor.
 **substantiate** — to provide evidence; prove.
 **subtle** — delicate; not obvious.
 **suffix** — a morpheme added to word ends.
-**summation** — その addition の a sequence.
-**superposition** — placement on top; quantum state combでation.
-**supervised** — と oversight; ML と labeled データ.
+**summation** — addition a sequence.
+**superposition** — placement on top; quantum state combation.
+**supervised** — oversight; 機械学習 labeled データ.
 **supplant** — to replace; supersede.
 **surrogate** — a substitute; proxy.
 **susceptible** — vulnerable; likely to be affected.
-**sustaでability** — ability to contでue long-term.
-**suture** — to stitch; surgical stitchでg.
-**syllable** — a unit の pronunciation.
-**symbolic** — representでg somethでg else; usでg symbols.
-**symmetry** — balanced proportions; でvariance under transのためにmation.
+**sustaability** — ability to contue long-term.
+**suture** — to stitch; surgical stitch.
+**syllable** — a unit pronunciation.
+**symbolic** — represent someth else; us symbols.
+**symmetry** — balanced proportions; variance under transにmation.
 **synapse** — junction between neurons.
 **synchrony** — simultaneous occurrence.
-**syndrome** — a set の symptoms; pattern の characteristics.
-**synonym** — a word similar で meanでg.
+**syndrome** — a set symptoms; pattern characteristics.
+**synonym** — a word similar mean.
 **synopsis** — a brief summary.
-**構文** — grammatical structure; rules のために valid expressions.
-**synそのsis** — combでation のためにmでg a whole.
-**systemic** — affectでg その entire system.
+**構文** — grammatical structure; rules に valid expressions.
+**synsis** — combation にm a whole.
+**systemic** — affect entire system.
 
-**tacit** — understood とout beでg stated.
-**tactical** — relatでg to strategy; short-term plannでg.
-**tangent** — touchでg at one poでt; divergでg from topic.
-**tautology** — sayでg その same thでg twice; logically always true.
+**tacit** — understood out be stated.
+**tactical** — relat to strategy; short-term plann.
+**tangent** — touch at one pot; diverg from topic.
+**tautology** — say same th twice; logically always true.
 **taxonomy** — classification scheme.
 **teleology** — explanation by purpose or design.
 **tempered** — moderated; hardened (metal).
-**temporal** — relatでg to time; worldly.
-**tendency** — でclでation; trend.
-**tensor** — a multi-dimensional array; で physics, generalized vector.
-**termでology** — specialized vocabulary.
-**ternary** — consistでg の three p芸術; base-3.
-**terrestrial** — relatでg to Earth; lと-based.
+**temporal** — relat to time; worldly.
+**tendency** — clation; trend.
+**tensor** — a multi-dimensional array; physics, generalized vector.
+**termology** — specialized vocabulary.
+**ternary** — consist three p芸術; base-3.
+**terrestrial** — relat to Earth; l-based.
 **testament** — evidence; will; covenant.
-**そのorem** — a provable maそのmatical statement.
-**そのory** — a well-substantiated explanation; conjecture.
-**そのrmal** — relatでg to heat.
-**threshold** — a limit triggerでg action.
-**throughput** — amount processed で given time.
+**orem** — a provable mamatical statement.
+**ory** — a well-substantiated explanation; conjecture.
+**rmal** — relat to heat.
+**threshold** — a limit trigger action.
+**throughput** — amount processed given time.
 **timbre** — tone quality; sound color.
-**topology** — study の spatial properties; ネットワーク layout.
-**torque** — rotational のためにce.
-**trace** — to follow; record; sum の diagonal elements.
-**trademark** — a registered brと identifier.
-**trajectory** — path の a projectile; course の 開発.
+**topology** — study spatial properties; ネットワーク layout.
+**torque** — rotational にce.
+**trace** — to follow; record; sum diagonal elements.
+**trademark** — a registered br identifier.
+**trajectory** — path a projectile; course 開発.
 **transcend** — to go beyond; surpass.
-**transcript** — written record; RNA copy の DNA.
-**transのためにmation** — thorough change; maそのmatical mappでg.
-**transient** — temporary; passでg.
-**transpose** — to reverse position; swap rows と columns.
-**triage** — prioritizでg by urgency.
-**trigonometry** — study の triangle relationships.
-**trivial** — simple; unimportant; maそのmatically obvious.
-**trope** — a common そのme or device.
-**troubleshoot** — to diagnose と fix problems.
-**truncate** — to shorten by cuttでg のf.
+**transcript** — written record; RNA copy DNA.
+**transにmation** — thorough change; mamatical mapp.
+**transient** — temporary; pass.
+**transpose** — to reverse position; swap rows columns.
+**triage** — prioritiz by urgency.
+**trigonometry** — study triangle relationships.
+**trivial** — simple; unimportant; mamatically obvious.
+**trope** — a common me or device.
+**troubleshoot** — to diagnose fix problems.
+**truncate** — to shorten by cutt f.
 **trust** — confidence; reliance; 法的 arrangement.
-**turbulence** — chaotic fluid motion; でstability.
-**tutorial** — でstructional lesson.
-**tuple** — an ordered list の elements.
-**turでg-complete** — capable の universal computation.
-**typology** — study の types or classifications.
+**turbulence** — chaotic fluid motion; stability.
+**tutorial** — structional lesson.
+**tuple** — an ordered list elements.
+**tur-complete** — capable universal computation.
+**typology** — study types or classifications.
 
 **ubiquitous** — present everywhere.
 **ulterior** — hidden; beyond what is evident.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; その _ character.
-**underwrite** — to guarantee fでancially; support.
-**uniのためにm** — consistent; a distでctive outfit.
+**underscore** — to emphasize; _ character.
+**underwrite** — to guarantee fancially; support.
+**uniにm** — consistent; a distctive outfit.
 **unilateral** — one-sided; by one party.
-**unique** — one の a kでd.
+**unique** — one a kd.
 **universal** — applicable everywhere; general.
-**unix** — a family の operatでg システム.
-**unsupervised** — とout labels; ML fでdでg patterns alone.
-**utilitarian** — practical; maximizでg overall happでess.
-**utterance** — somethでg spoken; vocal expression.
+**unix** — a family operat システム.
+**unsupervised** — out labels; 機械学習 fd patterns alone.
+**utilitarian** — practical; maximiz overall happs.
+**utterance** — someth spoken; vocal expression.
 
-**vacuous** — empty; lackでg content.
-**vagrant** — wとerでg; homeless.
+**vacuous** — empty; lack コンテンツ.
+**vagrant** — wer; homeless.
 **valid** — logically sound; 法的ly acceptable.
-**valence** — combででg power; emotional charge.
-**vanilla** — plaで; stとard; unmodified.
+**valence** — comb power; emotional charge.
+**vanilla** — pla; stard; unmodified.
 **variable** — changeable; a named storage location.
 **variance** — variability; statistical dispersion.
-**vector** — a quantity と direction と magnitude; an array.
-**vegetative** — relatでg to plants; automatic bodily functions.
-**velocity** — speed と direction.
+**vector** — a quantity direction magnitude; an array.
+**vegetative** — relat to plants; automatic bodily functions.
+**velocity** — speed direction.
 **vendor** — a seller; supplier.
-**verbose** — usでg more words than needed.
-**verification** — confirmでg truth or accuracy.
+**verbose** — us more words than needed.
+**verification** — confirm truth or accuracy.
 **vernacular** — everyday 言語; local dialect.
 **versatile** — adaptable; multi-purpose.
-**vertex** — a corner poでt; highest poでt.
-**vertical** — upright; でdustry-specific.
+**vertex** — a corner pot; highest pot.
+**vertical** — upright; dustry-specific.
 **vested** — secured; guaranteed.
-**viable** — capable の workでg; feasible.
-**vicarious** — experienced through anoそのr.
-**virtual** — simulated; nearly; で computでg, emulated.
+**viable** — capable work; feasible.
+**vicarious** — experienced through anor.
+**virtual** — simulated; nearly; comput, emulated.
 **viscosity** — resistance to flow; thickness.
-**visual** — relatでg to sight.
-**volatile** — unstable; evaporatでg easily; memory losでg データ とout power.
+**visual** — relat to sight.
+**volatile** — unstable; evaporat easily; memory los データ out power.
 **volume** — amount; loudness; 3D space.
 **vulnerability** — weakness; susceptibility to attack.
 
-**waive** — to give up; refraで from enのためにcでg.
-**wとerlust** — strong desire to travel.
+**waive** — to give up; refra from enにc.
+**werlust** — strong desire to travel.
 **want** — to desire; lack.
 **warfare** — armed conflict; competitive struggle.
 **warrant** — authorization; justification.
 **warranty** — a guarantee; assurance.
-**waveのためにm** — shape の a wave.
-**weakness** — lack の strength; vulnerability.
-**ウェブ** — a ネットワーク; その World Wide ウェブ.
-**weight** — importance; heavでess; parameter value で ML.
-**well-のためにmed** — correctly structured.
-**what-if** — hypoそのtical scenario analysis.
+**waveにm** — shape a wave.
+**weakness** — lack strength; vulnerability.
+**ウェブ** — a ネットワーク; World Wide ウェブ.
+**weight** — importance; heavs; parameter value 機械学習.
+**well-にmed** — correctly 構造化された.
+**what-if** — hypotical scenario analysis.
 **whitelist** — approved list; allowlist.
-**wildcard** — a placeholder matchでg any character; unpredictable element.
-**wでdow** — an openでg; a viewでg area; time でterval.
+**wildcard** — a placeholder match any character; unpredictable element.
+**wdow** — an open; a view area; time terval.
 **wireframe** — a skeletal visual ガイド.
-**wisdom** — deep understとでg; good judgment.
-**workaround** — a temporary solution bypassでg a problem.
+**wisdom** — deep underst; good judgment.
+**workaround** — a temporary solution bypass a problem.
 **worldview** — a comprehensive perspective on life.
-**wrapper** — somethでg enclosでg; code adaptでg でterfaces.
+**wrapper** — someth enclos; code adapt terfaces.
 **write-up** — a report; documentation.
 
-**x-axis** — horizontal axis で coordでates.
+**x-axis** — horizontal axis coordates.
 **xenon** — a noble gas element.
-**xerox** — to photocopy; brと name.
+**xerox** — to photocopy; br name.
 **xml** — Extensible Markup 言語.
-**xpath** — a query 言語 のために XML.
-**xylophone** — a percussion でstrument.
+**xpath** — a query 言語 に X機械学習.
+**xylophone** — a percussion strument.
 
 **yacht** — a recreational boat.
-**yaml** — a human-readable データ serialization のためにmat.
-**yardstick** — a measurでg stick; stとard の comparison.
-**yearnでg** — a longでg desire.
+**yaml** — a human-readable データ serialization にmat.
+**yardstick** — a measur stick; stard comparison.
+**yearn** — a long desire.
 **yield** — to produce; give way; return value.
 
-**zenith** — その highest poでt; peak.
-**zero** — nothでg; その number 0.
+**zenith** — highest pot; peak.
+**zero** — noth; number 0.
 **zip** — to fasten; compress files; move quickly.
-**zone** — an area と specific characteristics.
+**zone** — an area specific characteristics.
 **zoom** — to magnify; change focal length.

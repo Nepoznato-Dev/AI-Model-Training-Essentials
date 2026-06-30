@@ -1,13 +1,11 @@
 <!-- 
-This file was automatically translated from English to Arabic.
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+This file was automatically translated from English to Arabic. Source: مرجع_sql_السريع. md
+Note: Technical terms, code examples, and proper nouns may remain in English. For accuracy improvements, please contribute edits via pull requests.
 -->
 
 # SQL Quick مرجع دليل
 
-Essential SQL commوs لأجل البياناتbase operations.
+Essential SQL commوs لأجل قواعد_البيانات operations.
 
 ---
 
@@ -42,13 +40,13 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filterفيg (WHERE)
+# ## Filterينغ (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
 SELECT * FROM products WHERE price BETWEEN 50 AND 200;
 SELECT * FROM users WHERE name IN ('Alice', 'Bob', 'Charlie');
-SELECT * FROM users WHERE name LIKE 'A%';      -- Starts with A
+SELECT * FROM users WHERE name LIKE 'A%';      -- Stفنون with A
 SELECT * FROM users WHERE name LIKE '%son';    -- Ends with son
 SELECT * FROM users WHERE name LIKE '%test%';  -- Contains test
 SELECT * FROM users WHERE email IS NULL;
@@ -60,7 +58,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sortفيg و Limitفيg
+# ## Sortينغ و Limitينغ
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -91,12 +89,12 @@ SELECT MIN(salary) FROM employees;
 SELECT MAX(salary) FROM employees;
 
 -- Group by
-SELECT department, COUNT(*) as emp_count, AVG(salary) as avg_salary
+SELECT department, COUNT(*) as emp_count, AVG(salary) as متوسط_salary
 FROM employees
 GROUP BY department;
 
 -- Having (filter groups)
-SELECT department, AVG(salary) as avg_salary
+SELECT department, AVG(salary) as متوسط_salary
 FROM employees
 GROUP BY department
 HAVING AVG(salary) > 50000;
@@ -108,34 +106,34 @@ HAVING AVG(salary) > 50000;
 
 # ## Inner Joفي
 ```sql
-SELECT u.name, o.order_date, o.total
+SELECT u. name, o. order_date, o. total
 FROM users u
-INNER JOIN orders o ON u.id = o.user_id;
+INNER JOIN orders o ON u. id = o. user_id;
 ```
 
 # ## Left/Right Joفي
 ```sql
 -- All users, even those without orders
-SELECT u.name, o.order_id
+SELECT u. name, o. order_id
 FROM users u
-LEFT JOIN orders o ON u.id = o.user_id;
+LEFT JOIN orders o ON u. id = o. user_id;
 
 -- All orders, even those without users (rare)
-SELECT u.name, o.order_id
+SELECT u. name, o. order_id
 FROM users u
-RIGHT JOIN orders o ON u.id = o.user_id;
+RIGHT JOIN orders o ON u. id = o. user_id;
 ```
 
 # ## Full Outer Joفي
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
-SELECT u.name, o.order_id
+SELECT u. name, o. order_id
 FROM users u
-LEFT JOIN orders o ON u.id = o.user_id
+LEFT JOIN orders o ON u. id = o. user_id
 UNION
-SELECT u.name, o.order_id
+SELECT u. name, o. order_id
 FROM users u
-RIGHT JOIN orders o ON u.id = o.user_id;
+RIGHT JOIN orders o ON u. id = o. user_id;
 ```
 
 # ## Cross Joفي
@@ -147,9 +145,9 @@ SELECT * FROM colors CROSS JOIN sizes;
 # ## Self Joفي
 ```sql
 -- Find employees and their managers
-SELECT e.name AS employee, m.name AS manager
+SELECT e. name AS employee, m. name AS manager
 FROM employees e
-LEFT JOIN employees m ON e.manager_id = m.id;
+LEFT JOIN employees m ON e. manager_id = m. id;
 ```
 
 ---
@@ -163,22 +161,22 @@ WHERE id IN (SELECT user_id FROM orders WHERE total > 100);
 
 -- In SELECT clause
 SELECT name, 
-       (SELECT COUNT(*) FROM orders WHERE user_id = users.id) AS order_count
+       (SELECT COUNT(*) FROM orders WHERE user_id = users. id) AS order_count
 FROM users;
 
 -- In FROM clause
-SELECT dept, avg_salary
+SELECT dept, متوسط_salary
 FROM (
-    SELECT department AS dept, AVG(salary) AS avg_salary
+    SELECT department AS dept, AVG(salary) AS متوسط_salary
     FROM employees
     GROUP BY department
 ) AS dept_stats
-WHERE avg_salary > 60000;
+WHERE متوسط_salary > 60000;
 
 -- With EXISTS
 SELECT name FROM users u
 WHERE EXISTS (
-    SELECT 1 FROM orders o WHERE o.user_id = u.id
+    SELECT 1 FROM orders o WHERE o. user_id = u. id
 );
 ```
 
@@ -216,13 +214,13 @@ SELECT user_id FROM banned_users;
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
-VALUES ('Alice', 'alice@example.com', 30);
+VALUES ('Alice', 'alice@example. com', 30);
 
 -- Insert multiple rows
 INSERT INTO users (name, email, age)
 VALUES 
-    ('Bob', 'bob@example.com', 25),
-    ('Charlie', 'charlie@example.com', 35);
+    ('Bob', 'bob@example. com', 25),
+    ('Charlie', 'charlie@example. com', 35);
 
 -- Insert from SELECT
 INSERT INTO archived_users
@@ -233,19 +231,19 @@ SELECT * FROM users WHERE last_login < '2023-01-01';
 ```sql
 -- Update single row
 UPDATE users 
-SET email = 'newemail@example.com'
+SET email = 'newemail@example. com'
 WHERE id = 1;
 
 -- Update multiple columns
 UPDATE products
-SET price = price * 1.1, updated_at = NOW()
+SET price = price * 1. 1, updated_at = NOW()
 WHERE category = 'Electronics';
 
 -- Update with JOIN
 UPDATE orders o
-JOIN users u ON o.user_id = u.id
-SET o.status = 'processed'
-WHERE u.country = 'USA';
+JOIN users u ON o. user_id = u. id
+SET o. status = 'processed'
+WHERE u. country = 'USA';
 ```
 
 # ## DELETE
@@ -259,8 +257,8 @@ DELETE FROM orders WHERE order_date < '2023-01-01';
 -- Delete with JOIN
 DELETE o
 FROM orders o
-JOIN users u ON o.user_id = u.id
-WHERE u.status = 'deleted';
+JOIN users u ON o. user_id = u. id
+WHERE u. status = 'deleted';
 
 -- Truncate table (faster, resets auto-increment)
 TRUNCATE TABLE temp_data;
@@ -301,7 +299,7 @@ ALTER TABLE users RENAME COLUMN username TO user_name;
 ALTER TABLE users DROP COLUMN phone;
 
 -- Add constraint
-ALTER TABLE orders ADD CONSTRAINT fk_user 
+ALTER TABLE orders ADD CONSTRالذكاء الاصطناعيNT fk_user 
 FOREIGN KEY (user_id) REFERENCES users(id);
 
 -- Drop constraint
@@ -423,9 +421,9 @@ WITH RECURSIVE org_chart AS (
     UNION ALL
     
     -- Recursive case
-    SELECT e.id, e.name, e.manager_id, oc.level + 1
+    SELECT e. id, e. name, e. manager_id, oc. level + 1
     FROM employees e
-    INNER JOIN org_chart oc ON e.manager_id = oc.id
+    INNER JOIN org_chart oc ON e. manager_id = oc. id
 )
 SELECT * FROM org_chart ORDER BY level, name;
 ```
@@ -453,7 +451,7 @@ FROM transactions;
 
 -- Partitioned window
 SELECT department, name, salary,
-       AVG(salary) OVER (PARTITION BY department) AS dept_avg
+       AVG(salary) OVER (PARTITION BY department) AS dept_متوسط
 FROM employees;
 
 -- LAG and LEAD
@@ -471,18 +469,18 @@ FROM daily_sales;
 - `فيT` - Integer
 - `BIGفيT` - Large فيteger
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floatفيg poفيt
+- `FLOAT` - Approximate floatينغ poفيt
 - `DOUBLE` - Double precision float
 
-# ## Strفيg
-- `CHAR(n)` - Fixed length strفيg
-- `VARCHAR(n)` - Variable length strفيg
+# ## Strينغ
+- `CHAR(n)` - Fixed length strينغ
+- `VARCHAR(n)` - Variable length strينغ
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
 # ## Date/Time
 - `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
+- `TIME` - Time (HH: MM: SS)
 - `DATETIME` - Date و time
 - `TIMESTAMP` - Unix timestamp
 - `YEAR` - Year value
@@ -499,7 +497,7 @@ FROM daily_sales;
 
 # # Useful Functions
 
-# ## Strفيg Functions
+# ## Strينغ Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -581,8 +579,8 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 -- NEVER concatenate user input directly
 
 -- Grant minimal privileges
-GRANT SELECT, INSERT ON database.table TO 'user'@'localhost';
-REVOKE DELETE ON database.table FROM 'user'@'localhost';
+GRANT SELECT, INSERT ON database. table TO 'user'@'localhost';
+REVOKE DELETE ON database. table FROM 'user'@'localhost';
 
 -- Use strong passwords
 -- Enable SSL connections

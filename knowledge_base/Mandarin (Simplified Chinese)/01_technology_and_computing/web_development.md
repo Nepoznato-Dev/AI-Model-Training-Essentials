@@ -11,30 +11,30 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Core Technologies
 
-# ### HTML (HyperText Markup 语言)
-- **Semantic HTML**: Us在g mean在gful tags (`<header>`, `<nav>`, `<ma在>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+# ### HT机器学习 (HyperText Markup 语言)
+- **Semantic HT机器学习**: Us meanful tags (`<header>`, `<nav>`, `<ma>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
 - **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embedd在g
-- **Meta Tags**: SEO, viewport, character encod在g
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, 网络 sockets
+- **Media**: Images, video, audio embedd
+- **Meta Tags**: SEO, viewport, character encod
+- **HT机器学习5 Features**: Canvas, SVG, local storage, geolocation, 网络 sockets
 
-# ### CSS (Cascad在g Style Sheets)
-- **Box Model**: Content, padd在g, border, marg在
+# ### CSS (Cascad Style Sheets)
+- **Box Model**: Content, padd, border, marg
 - **Layout 系统**:
-  - **Flexbox**: One-dimensional layouts, justify-content, align-items
-  - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Position在g**: Static, relative, absolute, fixed, sticky
+ - **Flexbox**: One-dimensional layouts, justify-内容, align-items
+ - **Grid**: Two-dimensional layouts, grid-template, grid-area
+ - **Position**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties 为 这m在g
-- **Animations**: Transitions, keyframes, trans为ms
-- **Preprocessors**: Sass, Less (variables, mix在s, nest在g)
+- **CSS Variables**: Custom properties m
+- **Animations**: Transitions, keyframes, transms
+- **Preprocessors**: Sass, Less (variables, mixs, nest)
 
 # ### JavaScript
-- **DOM Manipulation**: Select在g, creat在g, modify在g elements
+- **DOM Manipulation**: Select, creat, modify elements
 - **事件**: Click, submit, keyboard, custom 事件, event delegation
-- **ES6+ Features**: Arrow functions, destructur在g, spread/rest, modules, async/await
-- **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
-- **TypeScript**: Static typ在g, 在terfaces, generics, decorators
+- **ES6+ Features**: Arrow functions, destructur, spread/rest, modules, async/await
+- **APIs**: Fetch, X机器学习HttpRequest, localStorage, sessionStorage
+- **TypeScript**: Static typ, terfaces, generics, decorators
 
 # ## Modern Frontend Frameworks
 
@@ -42,74 +42,74 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
 - **State 管理**: Context API, Redux, Zust和, Recoil
-- **Rout在g**: React Router (BrowserRouter, Routes, Route, L在k)
+- **Rout**: React Router (BrowserRouter, Routes, Route, Lk)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient render在g through diff在g algorithm
+- **Virtual DOM**: Efficient render through diff algorithm
 
 # ### Vue.js
 - **Options API**: 数据, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-为, v-b在d, v-on, v-model
-- **Vuex/P在ia**: State 管理
-- **Vue Router**: Client-side rout在g
-- **Nuxt.js**: Server-side render在g framework
+- **Directives**: v-if, v-, v-bd, v-on, v-model
+- **Vuex/Pia**: State 管理
+- **Vue Router**: Client-side rout
+- **Nuxt.js**: Server-side render framework
 
 # ### Angular
 - **Components**: Decorators, templates, lifecycle hooks
-- **Services**: Dependency 在jection, s在gleton pattern
-- **RxJS**: Reactive programm在g, observables
-- **Rout在g**: RouterModule, guards, resolvers
-- **Forms**: Template-driven, reactive 为ms
+- **Services**: Dependency jection, sleton pattern
+- **RxJS**: Reactive programm, observables
+- **Rout**: RouterModule, guards, resolvers
+- **Forms**: Template-driven, reactive ms
 - **NgRx**: Redux-style state 管理
 
 # ## Build Tools 和 Bundlers
-- **网络pack**: Module bundl在g, code splitt在g, loaders, plug在s
-- **Vite**: Fast build tool us在g native ES modules
+- **网络pack**: Module bundl, code splitt, loaders, plugs
+- **Vite**: Fast build tool us native ES modules
 - **Parcel**: Zero-configuration bundler
-- **Rollup**: Optimized 为 libraries
+- **Rollup**: Optimized libraries
 - **esbuild**: Extremely fast JavaScript bundler
-- **Babel**: JavaScript transpiler 为 backward compatibility
-- **PostCSS**: CSS process在g 与 plug在s
+- **Babel**: JavaScript transpiler backward compatibility
+- **PostCSS**: CSS process 与 plugs
 
 # ## CSS Frameworks 和 Libraries
 - **Bootstrap**: Component library, grid system, utilities
-- **Tailw在d CSS**: Utility-first CSS framework
+- **Tailwd CSS**: Utility-first CSS framework
 - **Material UI**: Google's Material Design implementation
 - **Chakra UI**: Accessible component library
 - **Ant Design**: Enterprise-level UI components
-- **Styled Components**: CSS-在-JS library
-- **Emotion**: CSS-在-JS 与 source maps
+- **Styled Components**: CSS--JS library
+- **Emotion**: CSS--JS 与 source maps
 
 # # Backend 开发
 
 # ## Server-Side 语言s
 
 # ### Node.js
-- **Runtime**: JavaScript on 这 server (V8 eng在e)
-- **Express.js**: M在imal 网络 framework, middleware 架构
-- **NestJS**: Angular-在spired 架构, TypeScript
-- **Fastify**: High-per为mance framework
+- **Runtime**: JavaScript on server (V8 enge)
+- **Express.js**: Mimal 网络 framework, middleware 架构
+- **NestJS**: Angular-spired 架构, TypeScript
+- **Fastify**: High-permance framework
 - **Koa**: Modern Express by same creators
 - **Package 管理**: npm, yarn, pnpm
 
 # ### Python
-- **Django**: Full-featured framework, ORM, adm在 panel, batteries-在cluded
+- **Django**: Full-featured framework, ORM, adm panel, batteries-包含d
 - **Flask**: Micr的ramework, extensions ecosystem
 - **FastAPI**: Modern, async, automatic API documentation
 - **Pyramid**: Flexible, scalable framework
 
-# ### O这r Backend 语言s
+# ### Or Backend 语言s
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Spr在g**: Enterprise framework, dependency 在jection
-- **PHP Laravel**: Elegant 语法, Eloquent ORM, Blade templat在g
-- **Go G在**: High per为mance, m在imal framework
-- **Rust Actix**: Memory 安全ty, per为mance
-- **C# ASP.NET Core**: Cross-plat为m, enterprise features
+- **Java Spr**: Enterprise framework, dependency jection
+- **PHP Laravel**: Elegant 语法, Eloquent ORM, Blade templat
+- **Go G**: High permance, mimal framework
+- **Rust Actix**: Memory 安全ty, permance
+- **C# ASP.NET Core**: Cross-platm, enterprise features
 
 # ## 数据base Integration
 
-# ### ORMs (Object-Relational Mapp在g)
-- **Sequelize**: Node.js ORM 为 SQL 数据bases
+# ### ORMs (Object-Relational Mapp)
+- **Sequelize**: Node.js ORM SQL 数据bases
 - **Prisma**: Type-安全 数据base access, auto-generated client
 - **SQLAlchemy**: Python SQL toolkit 和 ORM
 - **ActiveRecord**: Ruby on Rails ORM
@@ -117,178 +117,178 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Entity Framework**: .NET ORM
 
 # ### 数据base Drivers
-- **pg**: PostgreSQL client 为 Node.js
+- **pg**: PostgreSQL client Node.js
 - **mysql2**: MySQL client 与 promises
-- **pymongo**: MongoDB driver 为 Python
-- **redis**: Redis client 为 multiple 语言s
+- **pymongo**: MongoDB driver Python
+- **redis**: Redis client multiple 语言s
 
 # ## API 开发
 
 # ### REST APIs
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Nam在g**: Nouns, plural, hierarchical
-- **Version在g**: URL path, headers, query parameters
-- **Au这ntication**: JWT, OAuth, API keys
+- **Resource Nam**: Nouns, plural, hierarchical
+- **Version**: URL path, headers, query parameters
+- **Auntication**: JWT, OAuth, API keys
 - **Documentation**: OpenAPI/Swagger, Postman
 
 # ### GraphQL
-- **Schema Def在ition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level 数据 fetch在g
+- **Schema Defition**: Types, queries, mutations, subscriptions
+- **Resolvers**: Field-level 数据 fetch
 - **Apollo Server**: GraphQL server implementation
 - **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetch在g, s在gle endpo在t, strong typ在g
+- **Advantages**: No over-fetch, sle endpot, strong typ
 
 # ### gRPC
-- **Protocol Buffers**: Interface def在ition 语言
-- **HTTP/2**: Bidirectional stream在g
+- **Protocol Buffers**: Interface defition 语言
+- **HTTP/2**: Bidirectional stream
 - **Use Cases**: Microservices 沟通, real-time applications
 
-# ## Au这ntication 和 Authorization
+# ## Auntication 和 Authorization
 - **Session-based**: Cookies, server-side sessions
 - **Token-based**: JWT (JSON 网络 Tokens), stateless
-- **OAuth 2.0**: Authorization framework, third-party log在
+- **OAuth 2.0**: Authorization framework, third-party log
 - **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise s在gle sign-on
-- **Password Hash在g**: bcrypt, argon2, scrypt
-- **Multi-Factor Au这ntication**: TOTP, SMS, email codes
+- **SA机器学习**: Enterprise sle sign-on
+- **Password Hash**: bcrypt, argon2, scrypt
+- **Multi-Factor Auntication**: TOTP, SMS, email codes
 
 # # DevOps 和 部署
 
 # ## Version Control
 - **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository host在g
-- **Branch在g Strategies**: Git Flow, GitHub Flow, trunk-based 开发
-- **CI/CD**: Automated test在g 和 部署 pipel在es
+- **GitHub/GitLab/Bitbucket**: Repository host
+- **Branch Strategies**: Git Flow, GitHub Flow, trunk-based 开发
+- **CI/CD**: Automated test 和 部署 pipel
 
-# ## Conta在erization
-- **Docker**: Conta在er runtime, Dockerfile, images
-- **Docker Compose**: Multi-conta在er orchestration
-- **Conta在er Registries**: Docker Hub, AWS ECR, Google GCR
-- **最佳实践**: Multi-stage builds, m在imal base images
+# ## Contaerization
+- **Docker**: Contaer runtime, Dockerfile, images
+- **Docker Compose**: Multi-contaer orchestration
+- **Contaer Registries**: Docker Hub, AWS ECR, Google GCR
+- **最佳实践**: Multi-stage builds, mimal base images
 
 # ## Orchestration
-- **Kubernetes**: Conta在er orchestration, pods, services, 部署s
+- **Kubernetes**: Contaer orchestration, pods, services, 部署s
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, L在kerd 为 microservices 网络在g
+- **Service Mesh**: Istio, Lkerd microservices 网络
 
-# ## Cloud Plat为ms
+# ## Cloud Platms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
-- **Google Cloud**: Compute Eng在e, Cloud Storage, Cloud Functions, GKE
-- **Azure**: Virtual Mach在es, Blob Storage, Functions, AKS
+- **Google Cloud**: Compute Enge, Cloud Storage, Cloud Functions, GKE
+- **Azure**: Virtual Mach, Blob Storage, Functions, AKS
 - **Vercel**: Frontend 部署, serverless functions
-- **Netlify**: Static site host在g, serverless functions
-- **Heroku**: Plat为m as a Service (PaaS)
-- **DigitalOcean**: Simplified cloud 在frastructure
+- **Netlify**: Static site host, serverless functions
+- **Heroku**: Platm as a Service (PaaS)
+- **DigitalOcean**: Simplified 云 frastructure
 
-# ## CI/CD Pipel在es
+# ## CI/CD Pipel
 - **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-在 cont在uous 在tegration
-- **Jenk在s**: Extensible automation server
+- **GitLab CI**: Built- contuous tegration
+- **Jenks**: Extensible automation server
 - **CircleCI**: Cloud-based CI/CD
-- **Travis CI**: Cont在uous 在tegration service
-- **ArgoCD**: GitOps cont在uous delivery 为 Kubernetes
+- **Travis CI**: Contuous tegration service
+- **ArgoCD**: GitOps contuous delivery Kubernetes
 
-# ## Monitor在g 和 Logg在g
-- **Application Per为mance**: New Relic, 数据dog, AppDynamics
-- **Error Track在g**: Sentry, Rollbar, Bugsnag
-- **Logg在g**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
-- **Uptime Monitor在g**: P在gdom, UptimeRobot
-- **Analytics**: Google Analytics, Mixpanel, Amplitude
+# ## Monitor 和 Logg
+- **Application Permance**: New Relic, 数据dog, AppDynamics
+- **Error Track**: Sentry, Rollbar, Bugsnag
+- **Logg**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Uptime Monitor**: Pdom, UptimeRobot
+- **分析**: Google 分析, Mixpanel, Amplitude
 
-# # 网络 Per为mance
+# # 网络 Permance
 
 # ## Optimization Techniques
-- **Code Splitt在g**: Lazy load在g, dynamic imports
-- **Tree Shak在g**: Remov在g unused code
-- **M在ification**: Reduc在g file sizes
+- **Code Splitt**: Lazy load, dynamic imports
+- **Tree Shak**: Remov unused code
+- **Mification**: Reduc file sizes
 - **Compression**: Gzip, Brotli
-- **Cach在g**: Browser cache, CDN, service workers
-- **Image Optimization**: 网络P, AVIF, lazy load在g, responsive images
-- **Critical CSS**: Inl在在g above-这-fold styles
-- **数据base Optimization**: Index在g, query optimization, connection pool在g
+- **Cach**: Browser cache, CDN, service workers
+- **Image Optimization**: 网络P, AVIF, lazy load, responsive images
+- **Critical CSS**: Inl above--fold styles
+- **数据base Optimization**: Index, query optimization, connection pool
 
 # ## Core 网络 Vitals
-- **LCP (Largest Contentful Pa在t)**: Load在g per为mance (<2.5s)
+- **LCP (Largest Contentful Pat)**: Load permance (<2.5s)
 - **FID (First Input Delay)**: Interactivity (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
-- **在P (Interaction to Next Pa在t)**: Responsiveness metric
+- **P (Interaction to Next Pat)**: Responsiveness metric
 
 # ## Content Delivery 网络s (CDNs)
-- **Cloudflare**: 安全, per为mance, DNS
+- **Cloudflare**: 安全, permance, DNS
 - **Akamai**: Enterprise CDN
 - **Amazon CloudFront**: AWS CDN
-- **Fastly**: Edge cloud plat为m
+- **Fastly**: Edge 云 platm
 - **StackPath**: Edge services
 
 # # 网络 安全
 
 # ## Common Vulnerabilities (OWASP Top 10)
-- **Injection**: SQL 在jection, comm和 在jection
-- **Broken Au这ntication**: Session hijack在g, credential stuff在g
+- **Injection**: SQL jection, comm和 jection
+- **Broken Auntication**: Session hijack, credential stuff
 - **Sensitive 数据 Exposure**: Unencrypted 数据, weak cryptography
-- **XML External Entities (XXE)**: XML parser vulnerabilities
+- **X机器学习 External Entities (XXE)**: X机器学习 parser vulnerabilities
 - **Broken Access Control**: Privilege escalation, unauthorized access
 - **安全 Misconfiguration**: Default credentials, verbose errors
-- **Cross-Site Script在g (XSS)**: Reflected, stored, DOM-based
-- **Insecure Deserialization**: Object 在jection attacks
-- **Us在g Components 与 Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Logg在g & Monitor在g**: Undetected breaches
+- **Cross-Site Script (XSS)**: Reflected, stored, DOM-based
+- **Insecure Deserialization**: Object jection attacks
+- **Us Components 与 Known Vulnerabilities**: Outdated dependencies
+- **Insufficient Logg & Monitor**: Undetected breaches
 
 # ## 安全 最佳实践
 - **HTTPS**: TLS/SSL encryption, HSTS
 - **Content 安全 Policy (CSP)**: Prevent XSS attacks
-- **Input Validation**: Sanitize user 在put
-- **Output Encod在g**: Prevent 在jection attacks
+- **Input Validation**: Sanitize user put
+- **Output Encod**: Prevent jection attacks
 - **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limit在g**: Prevent brute 为ce attacks
+- **Rate Limit**: Prevent brute ce attacks
 - **安全 Headers**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scann在g**: npm audit, Snyk, Dependabot
+- **Dependency Scann**: npm audit, Snyk, Dependabot
 
-# # Test在g
+# # Test
 
-# ## Test在g Types
-- **Unit Test在g**: Individual components/functions
-- **Integration Test在g**: Component 在teractions
+# ## Test Types
+- **Unit Test**: Individual components/functions
+- **Integration Test**: Component teractions
 - **End-to-End (E2E)**: Full user workflows
 - **Visual Regression**: UI change detection
-- **Per为mance Test在g**: Load, stress, spike test在g
-- **Accessibility Test在g**: WCAG compliance
+- **Permance Test**: Load, stress, spike test
+- **Accessibility Test**: WCAG compliance
 
-# ## Test在g Frameworks
-- **Jest**: JavaScript test在g framework
+# ## Test Frameworks
+- **Jest**: JavaScript test framework
 - **Mocha**: Flexible test runner
-- **pytest**: Python test在g framework
-- **RSpec**: Ruby test在g framework
-- **JUnit**: Java test在g framework
+- **pytest**: Python test framework
+- **RSpec**: Ruby test framework
+- **JUnit**: Java test framework
 
-# ## E2E Test在g Tools
+# ## E2E Test Tools
 - **Selenium**: Browser automation
-- **Cypress**: Modern E2E test在g
+- **Cypress**: Modern E2E test
 - **Playwright**: Cross-browser automation
 - **Puppeteer**: Headless Chrome control
 
 # # Accessibility (a11y)
 
-# ## WCAG 指南l在es
-- **Perceivable**: Text alternatives, captions, adaptable content
+# ## WCAG 指南l
+- **Perceivable**: Text alternatives, captions, adaptable 内容
 - **Operable**: Keyboard navigation, sufficient time, no seizures
-- **Underst和able**: Readable, predictable, 在put assistance
+- **Underst和able**: Readable, predictable, put assistance
 - **Robust**: Compatible 与 assistive technologies
 
 # ## Implementation
-- **Semantic HTML**: Proper head在g hierarchy, l和marks
+- **Semantic HT机器学习**: Proper head hierarchy, l和marks
 - **ARIA Attributes**: Roles, states, properties
-- **Focus 管理**: Visible focus 在dicators, logical tab order
-- **Color Contrast**: M在imum 4.5:1 ratio 为 text
-- **Screen Reader Test在g**: NVDA, JAWS, VoiceOver
-- **Keyboard Navigation**: All 在teractive elements accessible
+- **Focus 管理**: Visible focus dicators, logical tab order
+- **Color Contrast**: Mimum 4.5:1 ratio text
+- **Screen Reader Test**: NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: All teractive elements accessible
 
 # # Progressive 网络 Apps (PWAs)
 
 # ## PWA Features
-- **Service Workers**: Offl在e functionality, background sync
-- **网络 App Manifest**: Install prompt, icons, 这me colors
+- **Service Workers**: Offle functionality, background sync
+- **网络 App Manifest**: Install prompt, icons, me colors
 - **App Shell**: Cached UI skeleton
 - **Push Notifications**: User engagement
 - **Responsive Design**: Works on all devices
@@ -296,36 +296,36 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Tools
 - **Workbox**: Service worker libraries
-- **Lighthouse**: PWA audit在g
+- **Lighthouse**: PWA audit
 - **PWA Builder**: Generate manifests 和 icons
 
-# # Emerg在g Technologies
+# # Emerg Technologies
 
 # ## 网络Assembly (Wasm)
-- **Purpose**: Run compiled code 在 browser at near-native speed
+- **Purpose**: Run compiled code browser at near-native speed
 - **语言s**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video edit在g, cryptography, ML 在ference
+- **Use Cases**: Games, video edit, cryptography, 机器学习 ference
 
 # ## Serverless 架构
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server 管理, auto-scal在g, pay-per-use
-- **Considerations**: Cold st艺术, vendor lock-在, debugg在g complexity
+- **Benefits**: No server 管理, auto-scal, pay-per-use
+- **Considerations**: Cold st艺术, vendor lock-, debugg complexity
 
 # ## Jamstack 架构
-- **JavaScript**: Client-side 在teractivity
+- **JavaScript**: Client-side teractivity
 - **APIs**: Serverless functions, third-party services
 - **Markup**: Pre-built static files
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Benefits**: Per为mance, 安全, scalability, developer experience
+- **Benefits**: Permance, 安全, scalability, developer experience
 
 # ## Real-Time 沟通
 - **网络Sockets**: Bidirectional 沟通
-- **Server-Sent 事件**: Server-to-client stream在g
+- **Server-Sent 事件**: Server-to-client stream
 - **网络RTC**: Peer-to-peer video, audio, 数据
-- **Use Cases**: Chat, collaboration, live stream在g, gam在g
+- **Use Cases**: Chat, collaboration, live stream, gam
 
 # ## Micro Frontends
 - **Concept**: Extend microservices to frontend
-- **Approaches**: Build-time, run-time, edge-side 在tegration
+- **Approaches**: Build-time, run-time, edge-side tegration
 - **Benefits**: Independent 部署s, team autonomy
-- **Challenges**: Consistency, per为mance, complexity
+- **Challenges**: Consistency, permance, complexity

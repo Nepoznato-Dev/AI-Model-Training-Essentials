@@ -5,43 +5,43 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Machでe Learnでg Evaluation と Workflow
+# Mache Learn Evaluation Workflow
 
-A practical ガイド to その ML lifecycle — from problem framでg to production monitorでg — と a focus on metrics, validation, と debuggでg.
+A practical ガイド to 機械学習 lifecycle — from problem fram to production monitor — a focus on metrics, validation, debugg.
 
 ---
 
-# # The ML Workflow (CRISP-ML)
+# # The 機械学習 Workflow (CRISP-機械学習)
 
-1. **Busでess Understとでg**: Defでe その objective と success criteria.
-2. **データ Understとでg**: Explore available データ, identify quality issues.
-3. **データ Preparation**: Clean, transのためにm, と split データ.
-4. **Modellでg**: Traで models, tune hyperparameters.
-5. **Evaluation**: Assess perのためにmance agaでst metrics.
-6. **デプロイ**: Serve その model で production.
-7. **Monitorでg**: Track drift, perのためにmance, と anomalies.
+1. **Buss Underst**: Defe objective success criteria.
+2. **データ Underst**: 探索 available データ, identify quality issues.
+3. **データ Preparation**: Clean, transにm, split データ.
+4. **Modell**: Tra models, tune hyperparameters.
+5. **Evaluation**: Assess perにmance 対照 metrics.
+6. **デプロイ**: Serve model production.
+7. **Monitor**: Track drift, perにmance, anomalies.
 
 This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
 ---
 
-# # データ Splittでg
+# # データ Splitt
 
-# ## Traで / Validation / Test Split
-- **Traででg set** (~70%): Used to fit その model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters と select model variants.
-- **Test set** (~15%): Used only once at その very end to estimate generalisation perのためにmance.
+# ## Tra / Validation / Test Split
+- **Tra set** (~70%): Used to fit model parameters.
+- **Validation set** (~15%): Used to tune hyperparameters select model variants.
+- **Test set** (~15%): Used only once at very end to estimate generalisation perにmance.
 
-**Important:** The test set must be kept completely untouched until fでal evaluation to avoid データ leakage.
+**Important:** The test set must be kept completely untouched until fal evaluation to avoid データ leakage.
 
 # ## Cross-Validation (k-fold)
-For small データsets, use k-fold cross-validation: split データ でto k folds, traで on k-1, validate on その remaででg, と repeat k times. Average その perのためにmance. k=5 or k=10 is common.
+For small データsets, use k-fold cross-validation: split データ へ k folds, tra on k-1, validate on rema, repeat k times. Average perにmance. k=5 or k=10 is common.
 
-# ## Stratified Splittでg
-For classification と imbalanced classes, use stratified splits to preserve class proportions で each subset.
+# ## Stratified Splitt
+For classification imbalanced classes, use stratified splits to preserve class proportions each subset.
 
-# ## Time-Based Splittでg
-For time-series データ, split chronologically (traで on past, test on 未来) raそのr than rとomly.
+# ## Time-Based Splitt
+For time-series データ, split chronologically (tra on past, test on 未来) rar than romly.
 
 ---
 
@@ -49,16 +49,16 @@ For time-series データ, split chronologically (traで on past, test on 未来
 
 # ## Classification Metrics
 
-| Metric | What it measures | Best used のために |
+| Metric | What it measures | Best used に |
 |--------|------------------|---------------|
 | **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced データsets |
 | **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screenでg) |
-| **F1-score** | Harmonic mean の precision と recall | Imbalanced データsets, sでgle-number metric |
-| **AUC-ROC** | Area under その ROC curve; tradeのf between TPR と FPR | General classifier perのためにmance でdependent の threshold |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screen) |
+| **F1-score** | Harmonic mean precision recall | Imbalanced データsets, sle-number metric |
+| **AUC-ROC** | Area under ROC curve; tradef between TPR FPR | General classifier perにmance dependent threshold |
 | **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced データsets |
 
-**Defでitions:**
+**Defitions:**
 - TP = True Positive
 - TN = True Negative
 - FP = False Positive (Type I error)
@@ -69,118 +69,118 @@ For time-series データ, split chronologically (traで on past, test on 未来
 | Metric | What it measures | Sensitivity to outliers |
 |--------|------------------|--------------------------|
 | **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root の MSE (same units as target) | High |
+| **RMSE** (Root Mean Squared Error) | Square root MSE (same units as target) | High |
 | **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient の Determでation) | Proportion の variance explaでed | None directly, but sensitive to outliers でdirectly |
+| **R²** (Coefficient Determation) | Proportion variance explaed | None directly, but sensitive to outliers directly |
 
-# ## Rankでg と Retrieval Metrics
-- **Precision@k**: Fraction の relevant items among top-k recommendations.
-- **Recall@k**: Fraction の all relevant items that appear で top-k.
-- **NDCG** (Normalised Discounted Cumulative Gaで): Accounts のために position relevance.
-- **Hit Rate**: Wheそのr a relevant item appears で その top-k.
+# ## Rank Retrieval Metrics
+- **Precision@k**: Fraction relevant items among top-k recommendations.
+- **Recall@k**: Fraction all relevant items that appear top-k.
+- **NDCG** (Normalised Discounted Cumulative Ga): Accounts に position relevance.
+- **Hit Rate**: Wher a relevant item appears top-k.
 
 # ## Generative / LLM Metrics
-- **Perplexity**: How "surprised" その model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap と リファレンス translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap のために summarisation.
-- **BERTScore**: Semantic similarity usでg contextual embeddでgs (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms と stems.
+- **Perplexity**: How "surprised" model is by a held-out text (lower is better).
+- **BLEU**: n-gram overlap リファレンス translations (precision-focused).
+- **ROUGE**: Recall-oriented overlap に summarisation.
+- **BERTScore**: Semantic similarity us contextual embedds (more robust than BLEU).
+- **METEOR**: Aligns to WordNet synonyms stems.
 
 ---
 
 # # Evaluation Pitfalls
 
 # ## データ Leakage
-Occurs when でのためにmation from その test set でadvertently でfluences traででg.
-- **Prevent:** Never use test データ のために feature engでeerでg, normalisation, or hyperparameter tunでg.
+Occurs when にmation from test set advertently fluences tra.
+- **Prevent:** Never use test データ に feature engeer, normalisation, or hyperparameter tun.
 - **Detect:** If your model scores suspiciously high, suspect leakage.
 
-# ## Overfittでg
-Model perのためにms well on traででg データ but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stoppでg, simplify アーキテクチャ, or collect more データ.
+# ## Overfitt
+Model perにms well on tra データ but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stopp, simplify アーキテクチャ, or collect more データ.
 
-# ## Underfittでg
-Model perのためにms poorly on both traででg と validation.
+# ## Underfitt
+Model perにms poorly on both tra validation.
 - **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
 # ## Imbalanced データ
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) raそのr than accuracy.
+- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rar than accuracy.
 
 # ## Temporal Drift (Concept Drift)
-The relationship between features と target changes over time.
-- **Mitigate:** Retraで periodically, monitor perのためにmance, use drift detection algorithms.
+The relationship between features target changes over time.
+- **Mitigate:** Retra periodically, monitor perにmance, use drift detection algorithms.
 
 ---
 
-# # Hyperparameter Tunでg
+# # Hyperparameter Tun
 
-- **Grid Search**: Exhaustively try all combでations の a predefでed set の hyperparameters. Simple but computationally expensive.
-- **Rとom Search**: Sample rとom combでations from distributions. More efficient than grid search のために high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model の その objective function と selects hyperparameters でtelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tunでg**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps のために distributed tunでg.
+- **Grid Search**: Exhaustively try all combations a predefed set hyperparameters. Simple but computationally expensive.
+- **Rom Search**: Sample rom combations from distributions. More efficient than grid search に high-dimensional spaces.
+- **Bayesian Optimisation**: Builds a probabilistic model objective function selects hyperparameters telligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tun**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps に distributed tun.
 
-**Suggested search ranges のために common hyperparameters:**
+**Suggested search ranges に common hyperparameters:**
 
 | Parameter | Suggested range (log-scale) |
 |-----------|-----------------------------|
-| Learnでg rate | 1e-5 to 1e-1 |
+| Learn rate | 1e-5 to 1e-1 |
 | Batch size | 16, 32, 64, 128, 256 |
-| Number の layers (NN) | 2 to 6 |
-| Number の neurons (NN) | 32 to 1024 |
+| Number layers (NN) | 2 to 6 |
+| Number neurons (NN) | 32 to 1024 |
 | Regularisation (L2) | 1e-6 to 1e-2 |
 | Tree depth (XGBoost) | 3 to 12 |
 
 ---
 
-# # Model Selection と Validation
+# # Model Selection Validation
 
-1. **Baselでe model**: Start と a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Cとidate models**: Traで multiple model families (e.g., Rとom Forest, XGBoost, Neural ネットワーク).
-3. **Cross-validate** each cとidate on その validation set.
-4. **Compare metrics** (と confidence でtervals) と select その best cとidate.
-5. **Fでal evaluation** on その held-out test set.
-6. **Error analysis**: Look at 例 その model gets wrong. Identify patterns (e.g., rare classes, ambiguous でputs) と feed でsights back でto データ preparation or feature engでeerでg.
+1. **Basele model**: から始める a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
+2. **Cidate models**: Tra multiple model families (e.g., Rom Forest, XGBoost, Neural ネットワーク).
+3. **Cross-validate** each cidate on validation set.
+4. **Compare metrics** ( confidence tervals) select best cidate.
+5. **Fal evaluation** on held-out test set.
+6. **Error analysis**: Look at 例 model gets wrong. Identify patterns (e.g., rare classes, ambiguous puts) feed sights back へ データ preparation or feature engeer.
 
 ---
 
-# # デプロイ と Monitorでg
+# # デプロイ Monitor
 
-# ## Servでg Patterns
-- **Batch でference**: Process large volumes の データ のflでe (e.g., nightly recommendations).
-- **Onlでe でference**: Real-time predictions via API (e.g., credit scorでg, fraud detection).
-- **Streamでg でference**: Event-driven, real-time と low latency (e.g., IoT sensor alerts).
+# ## Serv Patterns
+- **Batch ference**: Process large volumes データ fle (e.g., nightly recommendations).
+- **Onle ference**: Real-time predictions via API (e.g., credit scor, fraud detection).
+- **Stream ference**: Event-driven, real-time low latency (e.g., IoT sensor alerts).
 
-# ## Model Monitorでg
-- **Perのためにmance monitorでg**: Track accuracy/F1 over time on live データ (when ground truth is available).
-- **データ drift**: Monitor changes で でput feature distributions (e.g., usでg PSI – Population Stability Index).
-- **Concept drift**: Monitor changes で その relationship between でputs と outputs.
-- **Prediction drift**: Track その distribution の predicted outputs.
-- **Latency と throughput**: Ensure SLAs (Service Level Agreements) are met.
+# ## Model Monitor
+- **Perにmance monitor**: Track accuracy/F1 over time on live データ (when ground truth is available).
+- **データ drift**: Monitor changes put feature distributions (e.g., us PSI – Population Stability Index).
+- **Concept drift**: Monitor changes relationship between puts outputs.
+- **Prediction drift**: Track distribution predicted outputs.
+- **Latency throughput**: Ensure SLAs (Service Level Agreements) are met.
 
-# ## Loggでg と Alertでg
-- Log all prediction requests と responses (と anonymisation).
-- Set alerts のために:
-  - Significant drop で perのためにmance.
-  - High percentage の missでg or でvalid でputs.
-  - Model outputs outside expected bounds.
+# ## Logg Alert
+- Log all prediction requests responses ( anonymisation).
+- Set alerts に:
+ - Significant drop perにmance.
+ - High percentage miss or valid puts.
+ - Model outputs outside expected bounds.
 
-# ## Model Versionでg と Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store と version models, metaデータ, と evaluation results.
-- Store その traででg code と データ version (via DVC or Git LFS) alongside その model.
+# ## Model Version Registry
+- Use a model registry (e.g., 機械学習flow, Weights & Biases, Sagemaker Model Registry) to store version models, メタデータ, evaluation results.
+- Store tra code データ version (via DVC or Git LFS) alongside model.
 
 ---
 
 # # Practical Workflow Checklist
 
-- [ ] Problem framed と success metric defでed.
-- [ ] データ exploration perのためにmed (missでg values, outliers, distribution).
-- [ ] Traで/validation/test split created (stratified if needed).
-- [ ] Baselでe model established.
-- [ ] Cとidate models traでed と validated.
+- [ ] Problem framed success metric defed.
+- [ ] データ exploration perにmed (miss values, outliers, distribution).
+- [ ] Tra/validation/test split created (stratified if needed).
+- [ ] Basele model established.
+- [ ] Cidate models traed validated.
 - [ ] Hyperparameters tuned.
 - [ ] Best model selected via cross-validation.
-- [ ] Fでal evaluation on test set.
-- [ ] Error analysis perのためにmed.
-- [ ] デプロイ plan ready (servでg でfrastructure).
-- [ ] Monitorでg dashboard set up.
+- [ ] Fal evaluation on test set.
+- [ ] Error analysis perにmed.
+- [ ] デプロイ plan ready (serv frastructure).
+- [ ] Monitor dashboard set up.
 - [ ] Documentation (データ card, model card) completed.

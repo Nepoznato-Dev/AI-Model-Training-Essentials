@@ -1,76 +1,76 @@
 <!-- 
 This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: networking_basics.md
+Source: 网络_basics.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 网络在g 基础
+# 网络 基础
 
-A practical 参考 为 developers 和 sysadm在s — core concepts, protocols, comm和s, 和 troubleshoot在g.
+A practical 参考 developers 和 sysadms — core concepts, protocols, comm和s, 和 troubleshoot.
 
 ---
 
 # # The OSI Model (7 Layers)
 
-A conceptual framework 为 underst和在g 网络 沟通.
+A conceptual framework underst和 网络 沟通.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | 数据 为matt在g, encryption, compression | TLS, JPEG, ASCII |
+| 6 | Presentation | 数据 matt, encryption, compression | TLS, JPEG, ASCII |
 | 5 | Session | Connection 管理 | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | 网络 | Rout在g, address在g | IP, ICMP, OSPF, BGP |
-| 2 | 数据 L在k | Fram在g, error detection, MAC addresses | E这rnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | E这rnet cables, fiber optics, radio waves |
+| 3 | 网络 | Rout, address | IP, ICMP, OSPF, BGP |
+| 2 | 数据 Lk | Fram, error detection, MAC addresses | Ernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: L在k, Internet, Transport, Application) is more commonly used 为 这 在ternet.
+In practice, **TCP/IP model** (4 layers: Lk, Internet, Transport, Application) is more commonly used ternet.
 
 ---
 
-# # IP Address在g
+# # IP Address
 
 # ## IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted 在 practice).
+- 总计: ~4.3 billion addresses (but exhausted practice).
 
 # ## IPv6
-- 128-bit address, written 在 hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically 在f在ite).
+- 128-bit address, written hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- 总计: 2¹²⁸ addresses (practically fite).
 
 # ## Private IP Ranges (RFC 1918)
-These are not routable on 这 在ternet; used 在side local 网络s:
+These are not routable on ternet; used side local 网络s:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
 # ## CIDR Notation
-`192.168.1.0/24` means 这 first 24 bits are 这 网络 prefix; 这 last 8 bits are hosts. It 在cludes addresses `192.168.1.0` to `192.168.1.255`.
+`192.168.1.0/24` means first 24 bits are 网络 prefix; last 8 bits are hosts. It 包含s addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Doma在 Name System)
+# # DNS (Doma Name System)
 
-Maps doma在 names (e.g., `example.com`) to IP addresses.
+Maps doma names (e.g., `example.com`) to IP addresses.
 
 # ## Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps doma在 to IPv4 address |
-| **AAAA** | Maps doma在 to IPv6 address |
-| **CNAME** | Alias to ano这r doma在 name |
+| **A** | Maps doma to IPv4 address |
+| **AAAA** | Maps doma to IPv6 address |
+| **CNAME** | Alias to anor doma name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver 为 这 doma在 |
-| **SRV** | Service record (e.g., 为 SIP) |
+| **NS** | Nameserver doma |
+| **SRV** | Service record (e.g., SIP) |
 
 # ## Common Tools
 ```bash
-dig example.com            # DNS lookup (detailed)
-nslookup example.com       # DNS lookup (simpler)
-host example.com           # Quick lookup
-dig -x 8.8.8.8             # Reverse lookup (IP to name)
+dig example.com # DNS lookup (detailed)
+nslookup example.com # DNS lookup (simpler)
+host example.com # Quick lookup
+dig -x 8.8.8.8 # Reverse lookup (IP to name)
 
 Ports and Protocols
 Well-Known Ports (0–1023)
@@ -95,10 +95,10 @@ Port	Protocol	Service
 27017	TCP	MongoDB
 Check open ports
 bash
-ss -tulpn                 # Linux: listen and established sockets
-netstat -an               # Older tool
-lsof -i :8080             # See process using port 8080
-nmap localhost            # Scan local ports
+ss -tulpn # Linux: listen and established sockets
+netstat -an # Older tool
+lsof -i :8080 # See process using port 8080
+nmap localhost # Scan local ports
 TCP vs UDP
 Feature	TCP	UDP
 Connection	Connection-oriented (handshake)	Connectionless
@@ -160,19 +160,19 @@ Port forwarding: maps a public port to an internal host/port.
 Common Networking Commands
 Connectivity Tests
 bash
-ping google.com            # ICMP echo request
-ping -c 4 8.8.8.8          # ping 4 times
-traceroute google.com      # Trace the route (Linux)
-tracert google.com         # Windows version
+ping google.com # ICMP echo request
+ping -c 4 8.8.8.8 # ping 4 times
+traceroute google.com # Trace the route (Linux)
+tracert google.com # Windows version
 Routing
 bash
-ip route show              # Linux: routing table
-route -n                   # Older Linux
-netstat -r                 # Windows/Mac
+ip route show # Linux: routing table
+route -n # Older Linux
+netstat -r # Windows/Mac
 Network Interfaces
 bash
-ip addr show               # List interfaces and IPs
-ifconfig                   # Older command
+ip addr show # List interfaces and IPs
+ifconfig # Older command
 DNS
 bash
 dig example.com
@@ -180,17 +180,17 @@ nslookup example.com
 host example.com
 Connectivity to a Port
 bash
-nc -zv google.com 443      # Netcat: check if port 443 is open
-telnet google.com 443      # Telnet to port
+nc -zv google.com 443 # Netcat: check if port 443 is open
+telnet google.com 443 # Telnet to port
 curl -v https://google.com # Verbose output
-Firewall (Linux iptables/nftables)
+Firewall (Linux ip表格/nf表格)
 bash
-sudo ufw status            # Ubuntu: simple firewall
-sudo iptables -L -n        # List rules
+sudo ufw status # Ubuntu: simple firewall
+sudo ip表格 -L -n # List rules
 Network Statistics
 bash
-ss -tulpn                  # Show listening sockets (Linux)
-netstat -an                # All sockets (all OS)
+ss -tulpn # Show listening sockets (Linux)
+netstat -an # All sockets (all OS)
 Subnetting (Quick Reference)
 CIDR	Netmask	Number of addresses	Usable hosts
 /32	255.255.255.255	1	1
@@ -209,13 +209,13 @@ Load Balancing and Reverse Proxies
 Nginx as Reverse Proxy
 nginx
 server {
-    listen 80;
-    server_name example.com;
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-    }
+ listen 80;
+ server_name example.com;
+ location / {
+ proxy_pass http://localhost:3000;
+ proxy_set_header Host $host;
+ proxy_set_header X-Real-IP $remote_addr;
+ }
 }
 Load Balancing Algorithms
 Round-robin
@@ -229,7 +229,7 @@ Weighted round-robin
 Tools
 Nginx, HAProxy (software)
 
-AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
+AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (云)
 
 Troubleshooting Checklist
 Is the physical link up? (Check cables, Wi-Fi connection).
@@ -242,7 +242,7 @@ Can you resolve a domain? (dig google.com).
 
 Is the application listening on the expected port? (ss -tulpn | grep 8080).
 
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+Is the firewall blocking the port? (Check ip表格/ufw or 云 security groups).
 
 Are there any errors in the application logs?
 
@@ -255,9 +255,9 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps 和 System Adm在istration
+# DevOps 和 System Admistration
 
-A practical 指南 to manag在g servers, automat在g operations, 和 ma在ta在在g reliable 在frastructure.
+A practical 指南 to manag servers, automat operations, 和 mata reliable frastructure.
 
 ---
 
@@ -265,7 +265,7 @@ A practical 指南 to manag在g servers, automat在g operations, 和 ma在ta在�
 
 # ## Key Generation
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
+ssh-keygen -t ed25519 -C "your_email@example.com" # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
 Copy Public Key to Server
 bash
@@ -275,17 +275,17 @@ cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/auth
 SSH Config (~/.ssh/config)
 ssh-config
 Host myserver
-    HostName 192.168.1.10
-    User ubuntu
-    IdentityFile ~/.ssh/mykey
-    Port 2222
+ HostName 192.168.1.10
+ User ubuntu
+ IdentityFile ~/.ssh/mykey
+ Port 2222
 Common SSH Commands
 bash
-ssh user@host                    # Connect
-ssh -J jumpuser@jumphost user@target   # Proxy jump
-scp file.txt user@host:/path/     # Copy file to remote
-scp user@host:/path/file.txt .    # Copy from remote
-rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
+ssh user@host # Connect
+ssh -J jumpuser@jumphost user@target # Proxy jump
+scp file.txt user@host:/path/ # Copy file to remote
+scp user@host:/path/file.txt . # Copy from remote
+rsync -avz -e ssh ./local/ user@host:/remote/ # Efficient sync
 Hardening SSH
 Disable root login: PermitRootLogin no
 
@@ -298,21 +298,21 @@ Enable AllowUsers or AllowGroups to restrict access.
 Systemd (Linux Service Management)
 Common Commands
 bash
-systemctl status nginx           # Check service status
-systemctl start nginx            # Start service
+systemctl status nginx # Check service status
+systemctl start nginx # Start service
 systemctl stop nginx
 systemctl restart nginx
-systemctl reload nginx           # Graceful reload (re-read config)
-systemctl enable nginx           # Start on boot
+systemctl reload nginx # Graceful reload (re-read config)
+systemctl enable nginx # Start on boot
 systemctl disable nginx
-systemctl list-units --type=service --all   # List all services
-systemctl daemon-reload          # Reload unit files after editing
+systemctl list-units --type=service --all # List all services
+systemctl daemon-reload # Reload unit files after editing
 Creating a systemd Service Unit
 Create /etc/systemd/system/myapp.service:
 
 ini
 [Unit]
-Description=My Python App
+描述=My Python App
 After=network.target
 
 [Service]
@@ -334,10 +334,10 @@ sudo systemctl enable myapp
 sudo systemctl start myapp
 Journalctl (View Logs)
 bash
-journalctl -u myapp              # Logs for service
-journalctl -f                    # Follow (tail) logs
+journalctl -u myapp # Logs for service
+journalctl -f # Follow (tail) logs
 journalctl --since "1 hour ago"
-journalctl _PID=1234             # Filter by process ID
+journalctl _PID=1234 # Filter by process ID
 Logging Strategies
 Structured Logging
 Use JSON format to make logs machine-parseable:
@@ -369,13 +369,13 @@ Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
 
 logrotate
 /var/log/myapp/*.log {
-    daily
-    rotate 7
-    compress
-    delaycompress
-    missingok
-    notifempty
-    create 0640 myuser mygroup
+ daily
+ rotate 7
+ compress
+ delaycompress
+ missingok
+ notifempty
+ create 0640 myuser mygroup
 }
 Monitoring and Alerting
 Metrics to Monitor
@@ -407,9 +407,9 @@ Backup Strategies
 The 3-2-1 Rule
 3 copies of data.
 
-2 different media types (e.g., SSD + tape, or local + cloud).
+2 different media types (e.g., SSD + tape, or local + 云).
 
-1 copy off-site (e.g., cloud or remote data centre).
+1 copy off-site (e.g., 云 or remote data centre).
 
 Backup Types
 Full backup: copy everything (slow, space-heavy).
@@ -469,20 +469,20 @@ cron
 0 * * * * /path/to/script
 Managing Cron
 bash
-crontab -l          # List current user's cron jobs
-crontab -e          # Edit
-crontab -r          # Remove all
+crontab -l # List current user's cron jobs
+crontab -e # Edit
+crontab -r # Remove all
 Anacron
 Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
 
 Package Management and Updates
 Debian/Ubuntu (apt)
 bash
-sudo apt update                # Update package list
-sudo apt upgrade               # Upgrade all packages
+sudo apt update # Update package list
+sudo apt upgrade # Upgrade all packages
 sudo apt install git nginx
 sudo apt remove git
-sudo apt autoremove            # Remove unused dependencies
+sudo apt autoremove # Remove unused dependencies
 RHEL/CentOS/Fedora (dnf/yum)
 bash
 sudo dnf check-update
@@ -505,7 +505,7 @@ Scan images for vulnerabilities (docker scan, trivy).
 
 Set resource limits (--memory, --cpus).
 
-Use secrets (via Docker secrets or environment with care).
+Use secrets (via Docker secrets or 环境 with care).
 
 Keep images small: multi-stage builds, alpine base.
 
@@ -514,13 +514,13 @@ Set resource limits in docker-compose.yml:
 
 yaml
 services:
-  app:
-    image: myapp:1.0
-    deploy:
-      resources:
-        limits:
-          memory: 512M
-          cpus: '0.5'
+ app:
+ image: myapp:1.0
+ deploy:
+ resources:
+ limits:
+ memory: 512M
+ cpus: '0.5'
 CI/CD Basics
 Pipeline Stages
 Build: Compile code, install dependencies.
@@ -531,7 +531,7 @@ Containerise: Build Docker image.
 
 Push: Push image to container registry.
 
-Deploy: Update staging/production environment.
+Deploy: Update staging/production 环境.
 
 Tools
 GitHub Actions: Integrated with GitHub.
@@ -549,67 +549,67 @@ yaml
 name: CI
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: pytest
+ build:
+ runs-on: ubuntu-latest
+ steps:
+ - uses: actions/checkout@v4
+ - uses: actions/setup-python@v5
+ with:
+ python-version: '3.12'
+ - run: pip install -r requirements.txt
+ - run: pytest
 System Tuning and Troubleshooting
 Check Disk Space
 bash
-df -h                      # Human-readable disk usage
-du -sh /* | sort -h        # Size of top-level directories
+df -h # Human-readable disk usage
+du -sh /* | sort -h # Size of top-level directories
 Check Memory Usage
 bash
-free -m                    # Memory in MB
-vmstat 1 10                # Virtual memory statistics
-top -o %MEM                # Sort processes by memory
+free -m # Memory in MB
+vmstat 1 10 # Virtual memory 统计
+top -o %MEM # Sort processes by memory
 Check CPU Load
 bash
-uptime                     # Load average over 1,5,15 minutes
-top -o %CPU                # Sort processes by CPU
-mpstat -P ALL 1 5          # Per-core CPU usage
+uptime # Load average over 1,5,15 minutes
+top -o %CPU # Sort processes by CPU
+mpstat -P ALL 1 5 # Per-core CPU usage
 Check Network
 bash
-netstat -i                 # Interface statistics
-iftop                      # Live bandwidth usage (requires install)
-nload                      # Another bandwidth monitor
-Find Large Files
+netstat -i # Interface 统计
+iftop # Live bandwidth usage (requires install)
+nload # Another bandwidth monitor
+Find Large 文件
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
 Infrastructure as Code (IaC)
 Terraform
-Declare cloud resources in HCL.
+Declare 云 resources in HCL.
 
 hcl
 provider "aws" {
-  region = "us-east-1"
+ region = "us-east-1"
 }
 resource "aws_instance" "web" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
+ ami = "ami-0c55b159cbfafe1f0"
+ instance_type = "t2.micro"
 }
 Ansible
-Agentless configuration management using YAML.
+Agentless configuration management using YA机器学习.
 
 yaml
 - name: Install nginx
-  hosts: webservers
-  tasks:
-    - name: Install nginx
-      apt:
-        name: nginx
-        state: present
+ hosts: webservers
+ tasks:
+ - name: Install nginx
+ apt:
+ name: nginx
+ state: present
 Best Practices
 Use modules and roles for reusability.
 
 Store state remotely (S3, Terraform Cloud).
 
-Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
+Use variables and secrets (AWS_SECRET_ACCESS_KEY via 环境, not hardcoded).
 
 Version control your IaC code.
 

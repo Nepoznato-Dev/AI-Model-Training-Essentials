@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy 의 그 repository 역사 on 그ir local mach에서e.
+Git is a distributed version control system. Every developer has a full copy repository 역사 on ir local mache.
 
 # ## Core workflow
 
@@ -25,8 +25,8 @@ git status
 git log --oneline -10
 
 # Stage changes
-git add file.py            # stage a specific file
-git add .                  # stage all changes in the working directory
+git add file.py # stage a specific file
+git add . # stage all changes in the working directory
 
 # Commit
 git commit -m "Short, imperative description of change"
@@ -35,17 +35,17 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branch에서g
+# ## Branch
 
 ```bash
-git branch feature/new-thing        # create a branch
-git checkout feature/new-thing      # switch to it
+git branch feature/new-thing # create a branch
+git checkout feature/new-thing # switch to it
 # shortcut: git checkout -b feature/new-thing
 
-git branch -d feature/new-thing     # delete branch after merging
+git branch -d feature/new-thing # delete branch after merging
 ```
 
-# ## Merg에서g 와 rebas에서g
+# ## Merg rebas
 
 ```bash
 # Merge feature branch into main
@@ -59,20 +59,20 @@ git rebase main
 
 # ## Pull request (PR) workflow
 
-1. Create a feature branch from `ma에서`.
-2. Make commits on 그 feature branch.
-3. Push 그 branch: `git push orig에서 feature/new-th에서g`.
+1. Create a feature branch from `ma`.
+2. Make commits on feature branch.
+3. Push branch: `git push orig feature/new-th`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback 와 함께 additional commits.
-6. Merge 그 PR once approved.
+5. Address code review feedback 함께 additional commits.
+6. Merge PR once approved.
 
-# ## Undo에서g changes
+# ## Undo changes
 
 ```bash
-git restore file.py            # discard unstaged changes
-git restore --staged file.py   # unstage a file
-git revert <commit-sha>        # create a new commit that undoes a previous one
-git reset --soft HEAD~1        # undo last commit, keep changes staged
+git restore file.py # discard unstaged changes
+git restore --staged file.py # unstage a file
+git revert <commit-sha> # create a new commit that undoes a previous one
+git reset --soft HEAD~1 # undo last commit, keep changes staged
 ```
 
 ---
@@ -82,27 +82,27 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 # ## pip (Python)
 
 ```bash
-pip install requests            # install a package
-pip install "requests>=2.28"    # with version constraint
+pip install requests # install a package
+pip install "requests>=2.28" # with version constraint
 pip install -r requirements.txt # install from a file
 pip uninstall requests
-pip list                        # show installed packages
-pip show requests               # info about a package
+pip list # show installed packages
+pip show requests # info about a package
 ```
 
-Always work 에서side a virtual environment to keep project dependencies isolated.
+Always work side a virtual 환경 to keep project dependencies isolated.
 
 # ## npm (Node.js / JavaScript)
 
 ```bash
-npm init -y                     # create package.json
-npm install express             # install as a runtime dependency
-npm install --save-dev jest     # install as a dev dependency
+npm init -y # create package.json
+npm install express # install as a runtime dependency
+npm install --save-dev jest # install as a dev dependency
 npm uninstall express
 npm update
-npm run test                    # run the "test" script from package.json
+npm run test # run the "test" script from package.json
 npm run build
-npx create-react-app my-app     # run a package without installing globally
+npx create-react-app my-app # run a package without installing globally
 ```
 
 `package-lock.json` records exact versions; commit it to source control.
@@ -110,15 +110,15 @@ npx create-react-app my-app     # run a package without installing globally
 # ## Cargo (Rust)
 
 ```bash
-cargo new my_project            # new binary project
-cargo new --lib my_lib          # new library project
+cargo new my_project # new binary project
+cargo new --lib my_lib # new library project
 cargo add serde --features derive
 cargo build
 cargo run
 cargo test
-cargo clippy                    # lint
-cargo fmt                       # format
-cargo update                    # update dependencies within constraints
+cargo clippy # lint
+cargo fmt # format
+cargo update # update dependencies within constraints
 ```
 
 # ## Go modules (Go)
@@ -126,144 +126,144 @@ cargo update                    # update dependencies within constraints
 ```bash
 go mod init github.com/user/repo
 go get github.com/some/package@v1.2.3
-go mod tidy                     # remove unused dependencies
+go mod tidy # remove unused dependencies
 go build ./...
 go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu L에서ux)
+# ## apt (Debian / Ubuntu Lux)
 
 ```bash
-sudo apt update                 # refresh package lists
-sudo apt install git curl wget  # install packages
+sudo apt update # refresh package lists
+sudo apt install git curl wget # install packages
 sudo apt remove package-name
-sudo apt upgrade                # upgrade all installed packages
-apt search keyword              # search for packages
-apt show package-name           # details about a package
+sudo apt upgrade # upgrade all installed packages
+apt search keyword # search for packages
+apt show package-name # details about a package
 ```
 
 ---
 
-# # Comm와-L에서e 기본
+# # Comm-Le 기본
 
 # ## Navigation
 
 ```bash
-pwd                             # print working directory
-ls                              # list directory contents
-ls -la                          # detailed listing including hidden files
-cd /path/to/dir                 # change directory
-cd ..                           # go up one level
-cd ~                            # go to home directory
+pwd # print working directory
+ls # list directory 콘텐츠s
+ls -la # detailed listing including hidden files
+cd /path/to/dir # change directory
+cd .. # go up one level
+cd ~ # go to home directory
 mkdir new_folder
-rm file.txt                     # remove a file
-rm -r folder/                   # remove a directory recursively
+rm file.txt # remove a file
+rm -r folder/ # remove a directory recursively
 cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text process에서g
+# ## Text process
 
 ```bash
-cat file.txt                    # print file contents
-less file.txt                   # scroll through a file
-head -n 20 file.txt             # first 20 lines
-tail -n 20 file.txt             # last 20 lines
-tail -f log.txt                 # follow a growing log file
-grep "pattern" file.txt         # search for a pattern
-grep -r "pattern" ./src/        # recursive search
-grep -i "pattern" file.txt      # case-insensitive
+cat file.txt # print file 콘텐츠s
+less file.txt # scroll through a file
+head -n 20 file.txt # first 20 lines
+tail -n 20 file.txt # last 20 lines
+tail -f log.txt # follow a 성장 중 log file
+grep "pattern" file.txt # search for a pattern
+grep -r "pattern" ./src/ # recursive search
+grep -i "pattern" file.txt # case-insensitive
 ```
 
-# ## Pipes 와 redirection
+# ## Pipes redirection
 
 ```bash
-command1 | command2             # pipe output of command1 into command2
-ls -la | grep ".py"             # list only Python files
-cat file.txt | wc -l            # count lines
-command > output.txt            # redirect stdout to a file (overwrite)
-command >> output.txt           # append stdout to a file
-command 2>&1                    # merge stderr into stdout
+command1 | command2 # pipe output of command1 into command2
+ls -la | grep ".py" # list only Python files
+cat file.txt | wc -l # count lines
+command > output.txt # redirect stdout to a file (overwrite)
+command >> output.txt # append stdout to a file
+command 2>&1 # merge stderr into stdout
 ```
 
-# ## 네트워크 와 file transfer
+# ## 네트워크 file transfer
 
 ```bash
-curl https://example.com                     # fetch a URL
-curl -o file.zip https://example.com/f.zip   # download to a file
+curl https://example.com # fetch a URL
+curl -o file.zip https://example.com/f.zip # download to a file
 curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.example.com/endpoint
 
-wget https://example.com/file.zip            # download with wget
+wget https://example.com/file.zip # download with wget
 ```
 
 # ## Permissions
 
 ```bash
-chmod +x script.sh              # make executable
-chmod 644 file.txt              # owner read/write, group/others read
-chown user:group file.txt       # change owner and group
+chmod +x script.sh # make executable
+chmod 644 file.txt # owner read/write, group/others read
+chown user:group file.txt # change owner and group
 ```
 
 # ## Process 관리
 
 ```bash
-ps aux                          # list running processes
-kill <PID>                      # send SIGTERM to a process
-kill -9 <PID>                   # force kill
-top / htop                      # interactive process monitor
+ps aux # list running processes
+kill <PID> # send SIGTERM to a process
+kill -9 <PID> # force kill
+top / htop # interactive process monitor
 ```
 
 ---
 
-# # Editors 와 IDEs
+# # Editors IDEs
 
 # ## VS Code
 
-VS Code is a lightweight, cross-plat위한m code editor 와 함께 a rich extension ecosystem.
+VS Code is a lightweight, cross-platm code editor 함께 a rich extension ecosystem.
 
-- Open a folder: `File > Open Folder` or `code .` 에서 그 term에서al.
-- Comm와 palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated term에서al: `Ctrl+`` (backtick)`.
+- Open a folder: `File > Open Folder` or `code .` termal.
+- Comm palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated termal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to def에서ition: `F12`.
+- Go to defition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: 에서stall 언어 support (Python, Rust, Go, etc.), l에서ters, 와 위한matters from 그 Extensions panel (`Ctrl+Shift+X`).
-- `sett에서gs.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures 그 debugger.
+- Extensions: stall 언어 support (Python, Rust, Go, etc.), lters, matters from Extensions panel (`Ctrl+Shift+X`).
+- `setts.json` (user or workspace) controls editor behaviour.
+- `launch.json` configures debugger.
 
-# ## JetBra에서s IDEs (IntelliJ IDEA, PyCharm, 웹Storm, CLion, GoL와)
+# ## JetBras IDEs (IntelliJ IDEA, PyCharm, 웹Storm, CLion, GoL)
 
-- Smart code completion 와 refactor에서g are core features.
-- Run/debug configurations let you launch 와 debug programs 와 함께 one click.
-- Built-에서 Git support 에서 그 VCS menu.
-- `Shift+Shift` opens 그 Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) re위한mats code.
-- Plug에서s extend 언어 support 와 add tools.
+- Smart code completion refactor are core features.
+- Run/debug configurations let you launch debug programs 함께 one click.
+- Built- Git support VCS menu.
+- `Shift+Shift` opens Search Everywhere dialog.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) remats code.
+- Plugs extend 언어 support add tools.
 
-# ## Term에서al tips
+# ## Termal tips
 
-- Use tab completion to f에서ish file names 와 comm와s quickly.
-- Press `Ctrl+R` to search comm와 역사 에서teractively.
+- Use tab completion to fish file names comms quickly.
+- Press `Ctrl+R` to search comm 역사 teractively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <comm와>` shows 그 manual page 위한 any built-에서 comm와.
+- `man <comm>` shows manual page any built- comm.
 
 ---
 
 # # Docker
 
-Docker packages applications 와 그ir dependencies 에서to portable conta에서ers.
+Docker packages applications ir dependencies 로 portable contaers.
 
 # ## Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Conta에서er**: a runn에서g 에서stance 의 an image.
-- **Registry**: a storage 와 distribution service 위한 images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a conta에서er.
+- **Contaer**: a runn stance an image.
+- **Registry**: a storage distribution service images (Docker Hub, GHCR).
+- **Volume**: persistent storage that outlives a contaer.
 
-# ## Common comm와s
+# ## Common comms
 
 ```bash
 # Images
@@ -272,14 +272,14 @@ docker images
 docker rmi ubuntu:22.04
 
 # Containers
-docker run -it ubuntu:22.04 bash        # interactive shell
-docker run -d -p 8080:80 nginx          # detached, port mapping
-docker ps                               # running containers
-docker ps -a                            # all containers
+docker run -it ubuntu:22.04 bash # interactive shell
+docker run -d -p 8080:80 nginx # detached, port mapping
+docker ps # running containers
+docker ps -a # all containers
 docker stop <container_id>
 docker rm <container_id>
 docker logs <container_id>
-docker exec -it <container_id> bash     # open shell in running container
+docker exec -it <container_id> bash # open shell in running container
 
 # Building
 docker build -t myapp:1.0 .
@@ -299,30 +299,30 @@ CMD ["python", "main.py"]
 
 # ## Docker Compose
 
-Docker Compose manages multi-conta에서er applications 와 함께 a `docker-compose.yml` file.
+Docker Compose manages multi-contaer applications 함께 a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"
 services:
-  web:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DATABASE_URL=postgresql://db:5432/mydb
-    depends_on:
-      - db
-  db:
-    image: postgres:15
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+ web:
+ build: .
+ ports:
+ - "8000:8000"
+ 환경:
+ - DATABASE_URL=postgresql://db:5432/mydb
+ depends_on:
+ - db
+ db:
+ image: postgres:15
+ volumes:
+ - pgdata:/var/lib/postgresql/data
 volumes:
-  pgdata:
+ pgdata:
 ```
 
 ```bash
-docker compose up -d       # start all services in the background
-docker compose down        # stop and remove containers
-docker compose logs -f     # stream logs
-docker compose build       # rebuild images
+docker compose up -d # start all services in the background
+docker compose down # stop and remove containers
+docker compose logs -f # stream logs
+docker compose build # rebuild images
 ```

@@ -1,8 +1,6 @@
 <!-- 
-This file was automatically translated from English to Arabic.
-Source: linux_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+This file was automatically translated from English to Arabic. Source: linux_commands. md
+Note: Technical terms, code examples, and proper nouns may remain in English. For accuracy improvements, please contribute edits via pull requests.
 -->
 
 # Lفيux Commوs Quick مرجع
@@ -27,11 +25,11 @@ cd -                    # Go to previous directory
 
 # ## File Operations
 ```bash
-touch file.txt          # Create empty file
+touch file. txt          # Create empty file
 cp source dest          # Copy file
 cp -r dir1 dir2         # Copy directory recursively
 mv old new              # Move/rename file
-rm file.txt             # Remove file
+rm file. txt             # Remove file
 rm -r directory         # Remove directory recursively
 rm -f file              # Force remove (no prompt)
 rm -rf directory        # Force remove directory (DANGEROUS)
@@ -40,15 +38,15 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-# ## Viewفيg Files
+# ## Viewينغ ملفات
 ```bash
-cat file.txt            # Display entire file
-less file.txt           # View file page by page (q to quit)
-head file.txt           # First 10 lines
-head -n 20 file.txt     # First 20 lines
-tail file.txt           # Last 10 lines
-tail -n 20 file.txt     # Last 20 lines
-tail -f logfile.log     # Follow file (live updates)
+cat file. txt            # Display entire file
+less file. txt           # View file page by page (q to quit)
+head file. txt           # First 10 lines
+head -n 20 file. txt     # First 20 lines
+tail file. txt           # Last 10 lines
+tail -n 20 file. txt     # Last 20 lines
+tail -f logfile. log     # Follow file (live updates)
 ```
 
 ---
@@ -57,9 +55,9 @@ tail -f logfile.log     # Follow file (live updates)
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
-chmod +x script.sh      # Make executable
+chmod +x script. sh      # Make executable
 chmod -R 755 dir        # Recursive permission change
-chown user:group file   # Change owner and group
+chown user: group file   # Change owner and group
 chown user file         # Change owner only
 chgrp group file        # Change group only
 umask                   # Show default permission mask
@@ -73,26 +71,26 @@ umask                   # Show default permission mask
 
 ---
 
-# # Text Processفيg
+# # Text Processينغ
 
 # ## Search & Replace
 ```bash
-grep "pattern" file.txt                 # Search for pattern
+grep "pattern" file. txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
-grep -i "pattern" file.txt              # Case-insensitive
-grep -v "pattern" file.txt              # Inverse match
+grep -i "pattern" file. txt              # Case-insensitive
+grep -v "pattern" file. txt              # Inverse match
 grep -l "pattern" *.txt                 # List matching files
-grep -c "pattern" file.txt              # Count matches
-grep -E "pattern1|pattern2" file.txt    # Extended regex
+grep -c "pattern" file. txt              # Count matches
+grep -E "pattern1|pattern2" file. txt    # Extended regex
 ```
 
-# ## Fفيd Files
+# ## Fفيd ملفات
 ```bash
-find /path -name "file.txt"             # Find by name
+find /path -name "file. txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
 find /path -type d                      # Find directories
 find /path -type f                      # Find files
-find /path -size +100M                  # Files larger than 100MB
+find /path -size +100M                  # ملفات larger than 100MB
 find /path -mtime -7                    # Modified in last 7 days
 find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
@@ -100,13 +98,13 @@ find /path -exec command {} \;          # Execute command on results
 
 # ## Text Manipulation
 ```bash
-wc file.txt             # Word count (lines, words, bytes)
-wc -l file.txt          # Line count only
-sort file.txt           # Sort lines
-sort -n file.txt        # Numeric sort
-sort -r file.txt        # Reverse sort
-uniq file.txt           # Remove adjacent duplicates
-uniq -c file.txt        # Count occurrences
+wc file. txt             # Word count (lines, words, bytes)
+wc -l file. txt          # Line count only
+sort file. txt           # Sort lines
+sort -n file. txt        # Numeric sort
+sort -r file. txt        # Reverse sort
+uniq file. txt           # Remove adjacent duplicates
+uniq -c file. txt        # Count occurrences
 cut -d: -f1 /etc/passwd # Cut fields by delimiter
 paste file1 file2       # Merge files side by side
 tr 'a-z' 'A-Z' < file   # Translate characters
@@ -138,7 +136,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-# # System Inلأجلmation
+# # System معلومات
 
 ```bash
 uname -a                # System information
@@ -165,17 +163,17 @@ fdisk -l                # Disk partitions (requires sudo)
 ifconfig                # Network interfaces (deprecated)
 ip addr show            # IP addresses (modern)
 ip route show           # Routing table
-ping google.com         # Test connectivity
-traceroute google.com   # Trace network path
-tracepath google.com    # Alternative traceroute
+ping google. com         # Test connectivity
+traceroute google. com   # Trace network path
+tracepath google. com    # Alternative traceroute
 netstat -tulpn          # Listening ports (deprecated)
-ss -tulpn               # Socket statistics (modern)
-dig domain.com          # DNS lookup
-nslookup domain.com     # DNS lookup (older)
-curl http://example.com # HTTP request
-wget http://file.url    # Download file
+ss -tulpn               # Socket إحصاء (modern)
+dig domain. com          # DNS lookup
+nslookup domain. com     # DNS lookup (older)
+curl http://example. com # HTTP request
+wget http://file. url    # Download file
 ssh user@host           # SSH connection
-scp file user@host:path # Secure copy
+scp file user@host: path # Secure copy
 rsync -av src/ dest/    # Sync files/directories
 ```
 
@@ -184,16 +182,16 @@ rsync -av src/ dest/    # Sync files/directories
 # # Archive & Compression
 
 ```bash
-tar -cvf archive.tar file1 file2        # Create tar archive
-tar -xvf archive.tar                    # Extract tar archive
-tar -czvf archive.tar.gz dir/           # Create gzipped tar
-tar -xzvf archive.tar.gz                # Extract gzipped tar
-tar -cjvf archive.tar.bz2 dir/          # Create bzip2 tar
-tar -xjvf archive.tar.bz2               # Extract bzip2 tar
-gzip file.txt                           # Compress file
-gunzip file.txt.gz                      # Decompress file
-zip -r archive.zip dir/                 # Create zip archive
-unzip archive.zip                       # Extract zip archive
+tar -cvf archive. tar file1 file2        # Create tar archive
+tar -xvf archive. tar                    # Extract tar archive
+tar -czvf archive. tar. gz dir/           # Create gzipped tar
+tar -xzvf archive. tar. gz                # Extract gzipped tar
+tar -cjvf archive. tar. bz2 dir/          # Create bzip2 tar
+tar -xjvf archive. tar. bz2               # Extract bzip2 tar
+gzip file. txt                           # Compress file
+gunzip file. txt. gz                      # Decompress file
+zip -r archive. zip dir/                 # Create zip archive
+unzip archive. zip                       # Extract zip archive
 ```
 
 ---
@@ -253,9 +251,9 @@ mount /dev/sda1 /mnt                    # Mount filesystem
 umount /mnt                             # Unmount filesystem
 lsblk                                   # List block devices
 blkid                                   # Show block device attributes
-mkfs.ext4 /dev/sda1                     # Format as ext4
+mkfs. ext4 /dev/sda1                     # Format as ext4
 fsck /dev/sda1                          # Check filesystem
-dd if=/dev/sda of=backup.img            # Disk image (careful!)
+dd if=/dev/sda of=backup. img            # Disk image (careful!)
 ```
 
 ---
@@ -263,9 +261,9 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 # # Shell Variables & Environment
 
 ```bash
-echo $HOME              # Show environment variable
-export VAR=value        # Set environment variable
-env                     # List all environment variables
+echo $HOME              # Show بيئة variable
+export VAR=value        # Set بيئة variable
+env                     # List all بيئة variables
 unset VAR               # Remove variable
 alias ll='ls -la'       # Create alias
 unalias ll              # Remove alias
@@ -281,13 +279,13 @@ Ctrl+R                  # Search history
 # # Input/Output Redirection
 
 ```bash
-command > file.txt      # Redirect output (overwrite)
-command >> file.txt     # Redirect output (append)
-command < file.txt      # Redirect input
-command 2> error.log    # Redirect stderr
-command &> all.log      # Redirect stdout and stderr
+command > file. txt      # Redirect output (overwrite)
+command >> file. txt     # Redirect output (append)
+command < file. txt      # Redirect input
+command 2> error. log    # Redirect stderr
+command &> all. log      # Redirect stdout and stderr
 command | grep pattern  # Pipe output to another command
-tee file.txt            # Output to file and screen
+tee file. txt            # Output to file and screen
 ```
 
 ---
@@ -302,16 +300,16 @@ ls -1 | wc -l
 find . -type f -exec ls -lh {} \; | sort -k5 -hr | head -10
 
 # Check which process uses a port
-lsof -i :8080
+lsof -i: 8080
 
 # Monitor file changes
 watch -n 1 'ls -la'
 
 # Extract unique IPs from log
-grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' access.log | sort -u
+grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' access. log | sort -u
 
 # Backup with timestamp
-tar -czf backup_$(date +%Y%m%d).tar.gz /path/to/backup
+tar -czf backup_$(date +%Y%m%d).tar. gz /path/to/backup
 
 # Find and delete old files
 find /path -type f -mtime +30 -delete
@@ -336,23 +334,23 @@ du -ah | sort -hr | head -20
 | `Ctrl+U` | Delete to lفيe start |
 | `Ctrl+K` | Delete to lفيe end |
 | `Ctrl+R` | Search التاريخ |
-| `Ctrl+W` | Delete word beلأجلe cursor |
+| `Ctrl+W` | Delete word قبل cursor |
 
 ---
 
 # # أفضل الممارسات
 
 ✅ **Do:**
-- Use `sudo` sparفيgly و carefully
+- Use `sudo` sparينغly و carefully
 - Test destructive commوs معout execution flags first
-- Keep backups beلأجلe major changes
-- Use meanفيgful filenames (no spaces)
+- Keep backups قبل major changes
+- Use meanينغful filenames (no spaces)
 - Learn to use `man` pages (`man commو`)
 
 ❌ **Don't:**
 - Run `rm -rf /` or similar dangerous commوs
 - Use `chmod 777` on sensitive files
-- Ignore warnفيg messages
+- Ignore warnينغ messages
 - Edit system files معout backups
 - Run unknown scripts as root
 

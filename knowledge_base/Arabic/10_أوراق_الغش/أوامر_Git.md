@@ -1,8 +1,6 @@
 <!-- 
-This file was automatically translated from English to Arabic.
-Source: git_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+This file was automatically translated from English to Arabic. Source: git_commands. md
+Note: Technical terms, code examples, and proper nouns may remain in English. For accuracy improvements, please contribute edits via pull requests.
 -->
 
 # Git Commوs Quick مرجع
@@ -15,15 +13,15 @@ Essential Git commوs لأجل version control.
 
 ```bash
 # Configure user info
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+git config --global user. name "Your Name"
+git config --global user. email "your. email@example. com"
 
 # View configuration
 git config --list
-git config user.name
+git config user. name
 
 # Set default branch name
-git config --global init.defaultBranch main
+git config --global init. defaultBranch main
 ```
 
 ---
@@ -55,7 +53,7 @@ git diff
 git diff --staged
 
 # Stage files
-git add file.txt          # Specific file
+git add file. txt          # Specific file
 git add .                 # All files
 git add *.py              # Pattern match
 
@@ -71,7 +69,7 @@ git log --graph --oneline --all
 
 ---
 
-# # Branchفيg
+# # Branchينغ
 
 ```bash
 # List branches
@@ -132,16 +130,16 @@ git push --tags
 
 ---
 
-# # Undoفيg Changes
+# # Undoينغ Changes
 
 ```bash
 # Unstage file (keep changes)
-git reset HEAD file.txt
-git restore --staged file.txt
+git reset HEAD file. txt
+git restore --staged file. txt
 
 # Discard working changes
-git checkout -- file.txt
-git restore file.txt
+git checkout -- file. txt
+git restore file. txt
 
 # Amend last commit
 git commit --amend -m "New message"
@@ -158,7 +156,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-# # Stashفيg
+# # Stashينغ
 
 ```bash
 # Save work in progress
@@ -192,20 +190,20 @@ git tag
 git tag -l "v1.*"
 
 # Create tag
-git tag v1.0.0
-git tag -a v1.0.0 -m "Version 1.0.0"  # Annotated tag
+git tag v1. 0.0
+git tag -a v1. 0.0 -m "Version 1. 0.0"  # Annotated tag
 
 # Checkout tag
-git checkout v1.0.0
+git checkout v1. 0.0
 
 # Delete tag
-git tag -d v1.0.0
-git push origin --delete v1.0.0
+git tag -d v1. 0.0
+git push origin --delete v1. 0.0
 ```
 
 ---
 
-# # Viewفيg & Searchفيg
+# # Viewينغ & Searchينغ
 
 ```bash
 # Show commit details
@@ -213,7 +211,7 @@ git show commit-hash
 git show --stat commit-hash
 
 # Blame (who changed what)
-git blame file.txt
+git blame file. txt
 
 # Search commits
 git log --grep="keyword"
@@ -223,7 +221,7 @@ git log --author="name"
 git log -S"function_name"
 
 # View file at specific commit
-git show commit-hash:file.txt
+git show commit-hash: file. txt
 ```
 
 ---
@@ -244,8 +242,8 @@ git rebase -i HEAD~5
 git format-patch -1 commit-hash
 
 # Apply patch
-git apply patch-file.patch
-git am patch-file.patch
+git apply patch-file. patch
+git am patch-file. patch
 
 # Submodules
 git submodule add <url> path
@@ -279,8 +277,7 @@ git checkout main
 git pull
 git checkout -b feature/new-feature
 # ... work ...
-git add .
-git commit -m "Add new feature"
+git add. git commit -m "Add new feature"
 git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
@@ -304,7 +301,7 @@ git commit -am "Fix critical bug"
 git checkout main
 git merge hotfix/urgent-fix
 git push
-git tag v1.0.1
+git tag v1. 0.1
 git push --tags
 ```
 
@@ -314,17 +311,17 @@ git push --tags
 
 ```gitignore
 # Ignore specific file
-filename.txt
+filename. txt
 
-# Ignore all .log files
+# Ignore all. log files
 *.log
 
 # Ignore directory
 node_modules/
 __pycache__/
 
-# Negate (include despite earlier pattern)
-!important.log
+# Negate (تتضمن despite earlier pattern)
+!important. log
 
 # Comment
 # This is a comment
@@ -348,9 +345,9 @@ __pycache__/
 
 ✅ **Do:**
 - Write clear, descriptive commit messages
-- Commit frequently مع logical groupفيgs
+- Commit frequently مع logical groupينغs
 - Use branches لأجل features/fixes
-- Pull beلأجلe startفيg work
+- Pull قبل startينغ work
 - Review `git status` منten
 
 ❌ **Don't:**
@@ -376,8 +373,8 @@ footer (optional)
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
-- `style`: Formattفيg
-- `refactor`: Code restructurفيg
+- `style`: Formattينغ
+- `refactor`: Code restructurينغ
 - `test`: Tests
 - `chore`: Maفيtenance
 
@@ -386,11 +383,9 @@ footer (optional)
 feat(auth): add password reset functionality
 
 Implement password reset via email with token-based
-verification. Token expires after 24 hours.
-
-Closes #123
+verification. Token expires after 24 hours. Closes #123
 ```
 
 ---
 
-*Last updated: June 2025 | Git 2.x*
+*Last updated: June 2025 | Git 2. x*

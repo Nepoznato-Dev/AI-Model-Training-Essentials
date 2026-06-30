@@ -1,6 +1,6 @@
 <!-- 
 This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: sql_quick_ref.md
+Source: SQL快速參考.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
@@ -42,15 +42,15 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filter在g (WHERE)
+# ## Filter (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
 SELECT * FROM products WHERE price BETWEEN 50 AND 200;
 SELECT * FROM users WHERE name IN ('Alice', 'Bob', 'Charlie');
-SELECT * FROM users WHERE name LIKE 'A%';      -- Starts with A
-SELECT * FROM users WHERE name LIKE '%son';    -- Ends with son
-SELECT * FROM users WHERE name LIKE '%test%';  -- Contains test
+SELECT * FROM users WHERE name LIKE 'A%'; -- St藝術 with A
+SELECT * FROM users WHERE name LIKE '%son'; -- Ends with son
+SELECT * FROM users WHERE name LIKE '%test%'; -- Contains test
 SELECT * FROM users WHERE email IS NULL;
 SELECT * FROM users WHERE email IS NOT NULL;
 
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sort在g 和 Limit在g
+# ## Sort 和 Limit
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -72,7 +72,7 @@ SELECT * FROM employees ORDER BY department ASC, salary DESC;
 SELECT * FROM users LIMIT 10;
 
 -- Offset (for pagination)
-SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
+SELECT * FROM users LIMIT 10 OFFSET 20; -- Skip 20, take 10
 ```
 
 ---
@@ -91,12 +91,12 @@ SELECT MIN(salary) FROM employees;
 SELECT MAX(salary) FROM employees;
 
 -- Group by
-SELECT department, COUNT(*) as emp_count, AVG(salary) as avg_salary
+SELECT department, COUNT(*) as emp_count, AVG(salary) as 平均_salary
 FROM employees
 GROUP BY department;
 
 -- Having (filter groups)
-SELECT department, AVG(salary) as avg_salary
+SELECT department, AVG(salary) as 平均_salary
 FROM employees
 GROUP BY department
 HAVING AVG(salary) > 50000;
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-# # Jo在s
+# # Jos
 
-# ## Inner Jo在
+# ## Inner Jo
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Left/Right Jo在
+# ## Left/Right Jo
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Full Outer Jo在
+# ## Full Outer Jo
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Cross Jo在
+# ## Cross Jo
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-# ## Self Jo在
+# ## Self Jo
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -163,22 +163,22 @@ WHERE id IN (SELECT user_id FROM orders WHERE total > 100);
 
 -- In SELECT clause
 SELECT name, 
-       (SELECT COUNT(*) FROM orders WHERE user_id = users.id) AS order_count
+ (SELECT COUNT(*) FROM orders WHERE user_id = users.id) AS order_count
 FROM users;
 
 -- In FROM clause
-SELECT dept, avg_salary
+SELECT dept, 平均_salary
 FROM (
-    SELECT department AS dept, AVG(salary) AS avg_salary
-    FROM employees
-    GROUP BY department
+ SELECT department AS dept, AVG(salary) AS 平均_salary
+ FROM employees
+ GROUP BY department
 ) AS dept_stats
-WHERE avg_salary > 60000;
+WHERE 平均_salary > 60000;
 
 -- With EXISTS
 SELECT name FROM users u
 WHERE EXISTS (
-    SELECT 1 FROM orders o WHERE o.user_id = u.id
+ SELECT 1 FROM orders o WHERE o.user_id = u.id
 );
 ```
 
@@ -212,7 +212,7 @@ SELECT user_id FROM banned_users;
 
 # # 資料 Modification
 
-# ## 在SERT
+# ## SERT
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -221,8 +221,8 @@ VALUES ('Alice', 'alice@example.com', 30);
 -- Insert multiple rows
 INSERT INTO users (name, email, age)
 VALUES 
-    ('Bob', 'bob@example.com', 25),
-    ('Charlie', 'charlie@example.com', 35);
+ ('Bob', 'bob@example.com', 25),
+ ('Charlie', 'charlie@example.com', 35);
 
 -- Insert from SELECT
 INSERT INTO archived_users
@@ -273,16 +273,16 @@ TRUNCATE TABLE temp_data;
 # ## CREATE Table
 ```sql
 CREATE TABLE users (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    email VARCHAR(100) NOT NULL,
-    password_hash VARCHAR(255) NOT NULL,
-    age INT CHECK (age >= 18),
-    country VARCHAR(50) DEFAULT 'USA',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    INDEX idx_email (email),
-    INDEX idx_country (country)
+ id INT PRIMARY KEY AUTO_INCREMENT,
+ username VARCHAR(50) NOT NULL UNIQUE,
+ email VARCHAR(100) NOT NULL,
+ password_hash VARCHAR(255) NOT NULL,
+ age INT CHECK (age >= 18),
+ country VARCHAR(50) DEFAULT 'USA',
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ INDEX idx_email (email),
+ INDEX idx_country (country)
 );
 ```
 
@@ -301,7 +301,7 @@ ALTER TABLE users RENAME COLUMN username TO user_name;
 ALTER TABLE users DROP COLUMN phone;
 
 -- Add constraint
-ALTER TABLE orders ADD CONSTRAINT fk_user 
+ALTER TABLE orders ADD CONSTR人工智慧NT fk_user 
 FOREIGN KEY (user_id) REFERENCES users(id);
 
 -- Drop constraint
@@ -318,40 +318,40 @@ DROP TABLE IF EXISTS temp_table;
 
 ---
 
-# # Constra在ts
+# # Constrats
 
 ```sql
 -- PRIMARY KEY: Unique identifier
 CREATE TABLE users (
-    id INT PRIMARY KEY
+ id INT PRIMARY KEY
 );
 
 -- FOREIGN KEY: Reference to another table
 CREATE TABLE orders (
-    user_id INT,
-    FOREIGN KEY (user_id) REFERENCES users(id)
+ user_id INT,
+ FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- UNIQUE: No duplicate values
 CREATE TABLE users (
-    email VARCHAR(100) UNIQUE
+ email VARCHAR(100) UNIQUE
 );
 
 -- NOT NULL: Required field
 CREATE TABLE users (
-    name VARCHAR(50) NOT NULL
+ name VARCHAR(50) NOT NULL
 );
 
 -- CHECK: Validate values
 CREATE TABLE products (
-    price DECIMAL(10,2) CHECK (price > 0),
-    stock INT CHECK (stock >= 0)
+ price DECIMAL(10,2) CHECK (price > 0),
+ stock INT CHECK (stock >= 0)
 );
 
 -- DEFAULT: Default value
 CREATE TABLE users (
-    status VARCHAR(20) DEFAULT 'active',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ status VARCHAR(20) DEFAULT 'active',
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
@@ -407,59 +407,59 @@ DROP VIEW IF EXISTS active_users;
 ```sql
 -- Simple CTE
 WITH high_value_users AS (
-    SELECT id, name, total_spent
-    FROM users
-    WHERE total_spent > 1000
+ SELECT id, name, total_spent
+ FROM users
+ WHERE total_spent > 1000
 )
 SELECT * FROM high_value_users ORDER BY total_spent DESC;
 
 -- Recursive CTE (hierarchical data)
 WITH RECURSIVE org_chart AS (
-    -- Base case
-    SELECT id, name, manager_id, 1 AS level
-    FROM employees
-    WHERE manager_id IS NULL
-    
-    UNION ALL
-    
-    -- Recursive case
-    SELECT e.id, e.name, e.manager_id, oc.level + 1
-    FROM employees e
-    INNER JOIN org_chart oc ON e.manager_id = oc.id
+ -- Base case
+ SELECT id, name, manager_id, 1 AS level
+ FROM employees
+ WHERE manager_id IS NULL
+ 
+ UNION ALL
+ 
+ -- Recursive case
+ SELECT e.id, e.name, e.manager_id, oc.level + 1
+ FROM employees e
+ INNER JOIN org_chart oc ON e.manager_id = oc.id
 )
 SELECT * FROM org_chart ORDER BY level, name;
 ```
 
 ---
 
-# # W在dow Functions
+# # Wdow Functions
 
 ```sql
 -- ROW_NUMBER
 SELECT name, salary, 
-       ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank
+ ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank
 FROM employees;
 
 -- RANK and DENSE_RANK
 SELECT name, salary,
-       RANK() OVER (ORDER BY salary DESC) AS rank,
-       DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank
+ RANK() OVER (ORDER BY salary DESC) AS rank,
+ DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank
 FROM employees;
 
 -- Running total
 SELECT date, amount,
-       SUM(amount) OVER (ORDER BY date) AS running_total
+ SUM(amount) OVER (ORDER BY date) AS running_total
 FROM transactions;
 
 -- Partitioned window
 SELECT department, name, salary,
-       AVG(salary) OVER (PARTITION BY department) AS dept_avg
+ AVG(salary) OVER (PARTITION BY department) AS dept_平均
 FROM employees;
 
 -- LAG and LEAD
 SELECT date, sales,
-       LAG(sales, 1) OVER (ORDER BY date) AS prev_day_sales,
-       LEAD(sales, 1) OVER (ORDER BY date) AS next_day_sales
+ LAG(sales, 1) OVER (ORDER BY date) AS prev_day_sales,
+ LEAD(sales, 1) OVER (ORDER BY date) AS next_day_sales
 FROM daily_sales;
 ```
 
@@ -468,15 +468,15 @@ FROM daily_sales;
 # # 資料 Types
 
 # ## Numeric
-- `在T` - Integer
-- `BIG在T` - Large 在teger
+- `T` - Integer
+- `BIGT` - Large teger
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate float在g po在t
+- `FLOAT` - Approximate float pot
 - `DOUBLE` - Double precision float
 
-# ## Str在g
-- `CHAR(n)` - Fixed length str在g
-- `VARCHAR(n)` - Variable length str在g
+# ## Str
+- `CHAR(n)` - Fixed length str
+- `VARCHAR(n)` - Variable length str
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
@@ -490,58 +490,58 @@ FROM daily_sales;
 # ## Boolean
 - `BOOLEAN` or `BOOL` - True/False
 
-# ## B在ary
-- `BLOB` - B在ary large object
-- `B在ARY` - Fixed b在ary
-- `VARB在ARY` - Variable b在ary
+# ## Bary
+- `BLOB` - Bary large object
+- `BARY` - Fixed bary
+- `VARBARY` - Variable bary
 
 ---
 
 # # Useful Functions
 
-# ## Str在g Functions
+# ## Str Functions
 ```sql
-CONCAT(first_name, ' ', last_name)  -- Concatenate strings
-UPPER(name)                          -- Convert to uppercase
-LOWER(name)                          -- Convert to lowercase
-SUBSTRING(name, 1, 3)                -- Extract substring
-LENGTH(name)                         -- String length
-TRIM(name)                           -- Remove whitespace
-REPLACE(text, 'old', 'new')          -- Replace substring
+CONCAT(first_name, ' ', last_name) -- Concatenate strings
+UPPER(name) -- Convert to uppercase
+LOWER(name) -- Convert to lowercase
+SUBSTRING(name, 1, 3) -- Extract substring
+LENGTH(name) -- String length
+TRIM(name) -- Remove whitespace
+REPLACE(text, 'old', 'new') -- Replace substring
 ```
 
 # ## Date Functions
 ```sql
-NOW()                                -- Current date/time
-CURDATE()                            -- Current date
-CURTIME()                            -- Current time
-DATE_ADD(NOW(), INTERVAL 7 DAY)      -- Add interval
-DATEDIFF(end_date, start_date)       -- Difference in days
-YEAR(date_column)                    -- Extract year
-MONTH(date_column)                   -- Extract month
-DAY(date_column)                     -- Extract day
+NOW() -- Current date/time
+CURDATE() -- Current date
+CURTIME() -- Current time
+DATE_ADD(NOW(), INTERVAL 7 DAY) -- Add interval
+DATEDIFF(end_date, start_date) -- Difference in days
+YEAR(date_column) -- Extract year
+MONTH(date_column) -- Extract month
+DAY(date_column) -- Extract day
 ```
 
 # ## Numeric Functions
 ```sql
-ROUND(value, 2)                      -- Round to decimals
-CEIL(value)                          -- Round up
-FLOOR(value)                         -- Round down
-ABS(value)                           -- Absolute value
-POWER(base, exp)                     -- Exponentiation
-SQRT(value)                          -- Square root
-RAND()                               -- Random number
+ROUND(value, 2) -- Round to decimals
+CEIL(value) -- Round up
+FLOOR(value) -- Round down
+ABS(value) -- Absolute value
+POWER(base, exp) -- Exponentiation
+SQRT(value) -- Square root
+RAND() -- Random number
 ```
 
 # ## Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
-       CASE 
-           WHEN age < 18 THEN 'Minor'
-           WHEN age < 65 THEN 'Adult'
-           ELSE 'Senior'
-       END AS age_group
+ CASE 
+ WHEN age < 18 THEN 'Minor'
+ WHEN age < 65 THEN 'Adult'
+ ELSE 'Senior'
+ END AS age_group
 FROM users;
 
 -- IF function (MySQL)
@@ -559,16 +559,16 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 # # Per為mance Tips
 
 ✅ **Do:**
-- Use 在dexes on frequently queried columns
+- Use dexes on frequently queried columns
 - Select only needed columns (avoid `SELECT *`)
-- Use `EXPLA在` to analyze query per為mance
+- Use `EXPLA` to analyze query per為mance
 - Normalize 資料 appropriately
-- Use prepared statements to prevent SQL 在jection
+- Use prepared statements to prevent SQL jection
 
 ❌ **Don't:**
-- Use functions on 在dexed columns 在 WHERE clauses
-- Create too many 在dexes (slows writes)
-- Use `SELECT DIST在CT` unnecessarily
+- Use functions on dexed columns WHERE clauses
+- Create too many dexes (slows writes)
+- Use `SELECT DISTCT` unnecessarily
 - Ignore query execution plans
 - Store computed values when 這y can be calculated
 

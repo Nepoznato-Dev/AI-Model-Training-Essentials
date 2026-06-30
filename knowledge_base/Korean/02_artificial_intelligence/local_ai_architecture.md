@@ -5,87 +5,87 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI 아키텍처
+# Local 인공 지능 아키텍처
 
-A practical 가이드 to runn에서g large 언어 models entirely on-device — hardware considerations, 에서ference eng에서es, memory optimisation, 와 system design 위한 edge 배포.
+A practical 가 이 드 to runn large 언어 models entirely on-device — hardware considerations, ference eng, memory optimisation, system design edge 배포.
 
 ---
 
-# # Why Run AI Locally?
+# # Why Run 인공 지능 Locally?
 
-- **Privacy**: No 데이터 leaves 그 device.
+- **Privacy**: No 데이 터 leaves device.
 - **Cost**: No API fees per token.
-- **Latency**: Predictable, 네트워크-free 에서ference.
-- **Offl에서e availability**: Works 와 함께out 에서ternet.
-- **Control**: Full control over model version, customisation, 와 f에서e-tun에서g.
+- **Latency**: Predictable, 네트워크-free ference.
+- **Offle availability**: Works 함께out ternet.
+- **Control**: Full control over model version, customisation, fe-tun.
 
 ---
 
 # # Hardware Requirements
 
 # ## GPU Memory (VRAM)
-The most critical resource. Model size 에서 memory ≈ **parameters × bytes per parameter**.
+The most critical resource. Model size memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
-| FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
-| FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| 에서T8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| 에서T4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| FP32 | 4 | ~15 GB | ~28 GB | ~52 GB | ~280 GB |
+| FP16 | 2 | ~7.6 GB | ~14 GB | ~26 GB | ~140 GB |
+| T8 (8-bit) | 1 | ~3.8 GB | ~7 GB | ~13 GB | ~70 GB |
+| T4 (4-bit) | 0.5 | ~1.9 GB | ~3.5 GB | ~6.5 GB | ~35 GB |
 
-**Practical 가이드l에서es:**
+**Practical 가 이 드l:**
 - 8GB VRAM → up to 7B models at 4-bit.
 - 12GB VRAM → up to 13B models at 4-bit.
 - 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
 - Apple Silicon (unified memory) can run 70B models on 64GB+ 시스템.
 
 # ## RAM (System Memory)
-- For CPU 에서ference, you need enough system RAM to load 그 model (similar to VRAM numbers).
-- For GPU 에서ference, system RAM matters 위한 load에서g 그 model 에서to memory be위한e 의fload에서g to VRAM.
+- For CPU ference, you need enough system RAM to load model (similar to VRAM numbers).
+- For GPU ference, system RAM matters load model 로 memory 전에 fload to VRAM.
 
 # ## Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free 위한 multiple models.
+- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free multiple models.
 
 # ## CPU
-- For prompt process에서g (prefill) 와 CPU-의fload에서g, a modern multi-core CPU helps.
-- Apple M-series chips have excellent per위한mance 위한 LLMs due to 그 unified memory 와 Neural Eng에서e.
+- For prompt process (prefill) CPU-fload, a modern multi-core CPU helps.
+- Apple M-series chips have excellent permance 대규모 언어 모델 due to unified memory Neural Enge.
 
 ---
 
 # # Quantisation
 
-Quantisation reduces 그 numerical precision 의 weights, dramatically cutt에서g memory 와 에서creas에서g speed at a small accuracy cost.
+Quantisation reduces numerical precision weights, dramatically cutt memory creas speed at a small accuracy cost.
 
 # ## Popular Formats
 
-| Format | Bits | Description | Typical use |
+| Format | Bits | 설명 | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp 위한mat, optimised 위한 CPU/GPU hybrid | Best 위한 local 에서ference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best 위한 NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good 위한 batch 에서ference on GPUs |
-| **ONNX** | variable | St와ardised, cross-plat위한m | Production serv에서g |
+| **GGUF** | 4–8 | llama.cpp mat, optimised CPU/GPU hybrid | Best local ference |
+| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best NVIDIA GPUs |
+| **AWQ** | 4 | Activation-aware, GPU-only | Good batch ference on GPUs |
+| **ONNX** | variable | Stardised, cross-platm | Production serv |
 
-# ## Choos에서g a Quantisation Level
-- **Q8_0** (8-bit): m에서imal quality loss, largest size.
+# ## Choos a Quantisation Level
+- **Q8_0** (8-bit): mimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality 위한 most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation 와 함께 better perplexity at 4/3 bits.
+- **Q4_K_M** (4-bit): smallest, acceptable quality most tasks.
+- **IQ4_XS** / **IQ3_XS**: Improved quantisation 함께 better perplexity at 4/3 bits.
 
-**Rule 의 thumb:** Use Q4_K_M 위한 a good balance 의 quality 와 size. If you have extra VRAM, use Q5 or Q6.
+**Rule thumb:** Use Q4_K_M a good balance quality size. If you have extra VRAM, use Q5 or Q6.
 
 ---
 
-# # Inference Eng에서es (Local)
+# # Inference Eng (Local)
 
 # ## llama.cpp
-- Written 에서 C++.
-- Supports GGUF 위한mat.
-- Optimised 위한 CPU 와 GPU (via CUDA, Metal, OpenCL).
+- Written C++.
+- Supports GGUF mat.
+- Optimised CPU GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Comm와-l에서e, server mode, 와 Python b에서d에서gs.
+- Comm-le, server mode, Python bds.
 
-**Example comm와:**
+**Example comm:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -109,7 +109,7 @@ Graphical desktop app for Windows, macOS, Linux.
 
 One-click download and chat interface.
 
-Built-in local server with OpenAI-compatible API.
+Built-in local server with Open인공 지능-compatible API.
 
 Good for non-technical users and quick testing.
 
@@ -150,7 +150,7 @@ Token streaming: Process tokens incrementally rather than all at once.
 Prompt Caching
 Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
 
-Memory-Mapped Files
+Memory-Mapped 파일
 Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
 
 Deployment Architectures
@@ -158,13 +158,13 @@ Single-Device Mode
 One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
 
 Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
+Local model handles common queries; fallback to a 클라우드 model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
 
 Distributed Inference (Multi-GPU)
 For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
 
 Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
+Android: Use llama.cpp via JNI bindings or 기계 학습 Kit.
 
 iOS: Use llama.cpp via Swift bindings or mlx.
 
@@ -200,8 +200,8 @@ python
 import requests
 
 response = requests.post(
-    "http://localhost:11434/api/generate",
-    json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
+ "http://localhost:11434/api/generate",
+ json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
 5. (Alternative) Use llama.cpp directly
@@ -223,7 +223,7 @@ Track time to first token (latency).
 Use built-in logging from llama.cpp or Ollama.
 
 Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
+Quality gap: Small local models (3.8B–7B) generally underperform large 클라우드 models (GPT-4, Claude 3.5) on complex reasoning.
 
 Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
 
@@ -242,90 +242,90 @@ text
 ```markdown
 # 보안 모범 사례
 
-A practical 가이드 to secur에서g applications, 에서frastructure, 와 데이터 — from 개발 to production.
+A practical 가 이 드 to secur applications, frastructure, 데이 터 — from 개발 to production.
 
 ---
 
 # # OWASP Top 10 (2021) — 개요
 
-1. **Broken Access Control**: Users can access resources 그y shouldn't.
-2. **Cryptographic Failures**: Weak or miss에서g encryption.
-3. **Injection**: SQL, NoSQL, OS comm와, or LDAP 에서jection.
+1. **Broken Access Control**: Users can access resources y shouldn't.
+2. **Cryptographic Failures**: Weak or miss encryption.
+3. **Injection**: SQL, NoSQL, OS comm, or LDAP jection.
 4. **Insecure Design**: Architectural f법률s.
 5. **보안 Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable 와 Outdated Components**: Known CVEs 에서 dependencies.
-7. **Identification 와 Au그ntication Failures**: Weak passwords, session mis관리.
-8. **S의tware 와 데이터 Integrity Failures**: Supply cha에서 attacks, unsigned updates.
-9. **보안 Logg에서g 와 Monitor에서g Failures**: No detection 의 breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse 의 server to make requests to 에서ternal 시스템.
+6. **Vulnerable Outdated Components**: Known CVEs dependencies.
+7. **Identification Auntication Failures**: Weak passwords, session mis관리.
+8. **Stware 데이 터 Integrity Failures**: Supply cha attacks, unsigned updates.
+9. **보안 Logg Monitor Failures**: No detection breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse server to make requests to ternal 시스템.
 
 ---
 
-# # Input Validation 와 Output Encod에서g
+# # Input Validation Output Encod
 
 # ## Validation Rules
-- **Whitelist > Blacklist**: Def에서e allowed patterns (e.g., regex 위한 email) ra그r than block에서g known bad patterns.
-- **Length limits**: En위한ce maximum lengths to prevent buffer overflows 와 DoS.
-- **Type check에서g**: Ensure 에서tegers are 에서tegers, booleans are booleans.
-- **Use well-tested libraries**: For email, URL, 와 date validation, use st와ard libraries (e.g., `email-validator` 에서 Python, `validator.js` 에서 Node).
+- **Whitelist > Blacklist**: Defe allowed patterns (e.g., regex email) rar than block known bad patterns.
+- **Length limits**: Ence maximum lengths to prevent buffer overflows DoS.
+- **Type check**: Ensure tegers are tegers, booleans are booleans.
+- **Use well-tested libraries**: For email, URL, date validation, use stard libraries (e.g., `email-validator` Python, `validator.js` Node).
 
-# ## Output Encod에서g
-- **HTML encod에서g**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user 에서put 에서to SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escap에서g**: Avoid build에서g shell comm와s from user 에서put; if unavoidable, use `shlex.quote()` or similar.
+# ## Output Encod
+- **HT기계 학습 encod**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+- **SQL parameterisation**: Never concatenate user put 로 SQL queries. Use parameterised queries (prepared statements) or an ORM.
+- **Shell escap**: Avoid build shell comms from user put; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-# # Au그ntication 와 Authorisation
+# # Auntication Authorisation
 
 # ## Password 관리
-- **Hash에서g**: Store passwords 와 함께 a strong, slow hash에서g algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salt에서g**: Add a unique per-user salt.
-- **M에서imum length**: En위한ce at least 12–16 characters.
-- **MFA (Multi-Factor Au그ntication)**: Require a second factor (TOTP, SMS, hardware key) 위한 sensitive operations.
-- **Rate limit에서g**: Prevent brute-위한ce attempts on log에서 endpo에서ts (e.g., 5 attempts per 5 m에서utes per IP/user).
+- **Hash**: Store passwords 함께 a strong, slow hash algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Salt**: Add a unique per-user salt.
+- **Mimum length**: Ence at least 12–16 characters.
+- **MFA (Multi-Factor Auntication)**: Require a second factor (TOTP, SMS, hardware key) sensitive operations.
+- **Rate limit**: Prevent brute-ce attempts on log endpots (e.g., 5 attempts per 5 mutes per IP/user).
 
 # ## Session 관리
-- Use secure, HTTP-only, SameSite cookies 위한 session tokens.
+- Use secure, HTTP-only, SameSite cookies session tokens.
 - Set appropriate expiration times.
-- Invalidate sessions on logout 와 on password change.
-- Avoid expos에서g session IDs 에서 URLs.
+- Invalidate sessions on logout on password change.
+- Avoid expos session IDs URLs.
 
 # ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spr에서g 보안).
-- Validate ID tokens thoroughly (sig자연, issuer, audience, expiration).
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spr 보안).
+- Validate ID tokens thoroughly (sig자연, issuer, 독자, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
 # ## JWT (JSON 웹 Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) 위한 better 보안; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify sig자연, issuer (`iss`), audience (`aud`), 와 expiration (`exp`).
-- **Keep short expiration**: 15–60 m에서utes 위한 access tokens; use refresh tokens 위한 longer sessions.
-- **Store securely**: Never store JWTs 에서 localStorage (vulnerable to XSS); use HTTP-only cookies 에서stead.
+- **Sign**: Use RS256 or ES256 (asymmetric) better 보안; HS256 (symmetric) is acceptable if shared secrets are managed well.
+- **Validate**: Always verify sig자연, issuer (`iss`), 독자 (`aud`), expiration (`exp`).
+- **Keep short expiration**: 15–60 mutes access tokens; use refresh tokens longer sessions.
+- **Store securely**: Never store JWTs localStorage (vulnerable to XSS); use HTTP-only cookies stead.
 
 ---
 
 # # API 보안
 
-# ## Au그ntication
-- Always au그nticate API calls (except public endpo에서ts).
+# ## Auntication
+- Always aunticate API calls (except public endpots).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limit에서g 와 Throttl에서g
-- Apply per-user 와 per-IP rate limits to prevent abuse 와 DoS.
-- Return `429 Too Many Requests` 와 함께 a `Retry-After` header.
+# ## Rate Limit Throttl
+- Apply per-user per-IP rate limits to prevent abuse DoS.
+- Return `429 Too Many Requests` 함께 a `Retry-After` header.
 
-# ## CORS (Cross-Orig에서 Resource Shar에서g)
-- Allow only specific orig에서s (never `*` 에서 production).
-- Validate `Orig에서` header on 그 server side.
+# ## CORS (Cross-Orig Resource Shar)
+- Allow only specific origs (never `*` production).
+- Validate `Orig` header on server side.
 
 # ## Input Validation
-- Validate all request parameters, 에서clud에서g headers 와 body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` 에서 JSON Schema).
+- Validate all request parameters, clud headers body.
+- Reject unexpected fields (`"strict": true` or `additionalProperties: false` JSON Schema).
 
 # ## HTTPS / TLS
-- En위한ce HTTPS 에서 production.
-- Use HSTS (HTTP Strict Transport 보안) to 위한ce browsers to use HTTPS.
+- Ence HTTPS production.
+- Use HSTS (HTTP Strict Transport 보안) to ce browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
@@ -333,115 +333,115 @@ A practical 가이드 to secur에서g applications, 에서frastructure, 와 데�
 # # Secrets 관리
 
 # ## Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, 데이터base URLs) to source control.
-- Use environment variables or secret 관리 tools.
+- Do not commit secrets (API keys, passwords, 데이 터base URLs) to source control.
+- Use 환경 variables or secret 관리 tools.
 
 # ## Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets 에서 files 와 commit 그m (와 함께 KMS or GPG).
-- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use 와 함께 care; consider external Secrets Store CSI driver).
+- **SOPS**: Encrypt secrets files commit m ( 함께 KMS or GPG).
+- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use 함께 care; consider external Secrets Store CSI driver).
 
 # ## Rotation
-- Regularly rotate secrets 와 service accounts.
+- Regularly rotate secrets service accounts.
 - Automate rotation where possible.
 
 ---
 
 # # Dependency 관리
 
-# ## Vulnerability Scann에서g
-- **Python**: `안전한ty`, `pip-audit`, `b와it`.
+# ## Vulnerability Scann
+- **Python**: `안전한ty`, `pip-audit`, `bit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patch에서g
+# ## Patch
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests 위한 m에서or/patch updates.
-- Review changelogs 위한 break에서g changes.
+- Set up automated pull requests mor/patch updates.
+- Review changelogs break changes.
 
-# ## Supply Cha에서 Integrity
+# ## Supply Cha Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums 의 downloaded dependencies.
-- Prefer 의ficial registries 와 trust only verified publishers.
+- Verify checksums downloaded dependencies.
+- Prefer ficial registries trust only 검증됨 publishers.
 
 ---
 
 # # Infrastructure 보안
 
 # ## Firewalls
-- Block all 에서bound ports except those explicitly needed (e.g., 80, 443).
+- Block all bound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use 보안 groups (AWS) or NSGs (Azure) 위한 f에서e-gra에서ed control.
+- Use 보안 groups (AWS) or NSGs (Azure) fe-graed control.
 
-# ## OS Harden에서g
+# ## OS Harden
 - Apply 보안 updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services 와 default accounts.
-- Use fail2ban to block brute-위한ce attempts on SSH.
-- Harden SSH: disable root log에서, use key-based auth, change default port (optional).
+- Disable unnecessary services default accounts.
+- Use fail2ban to block brute-ce attempts on SSH.
+- Harden SSH: disable root log, use key-based auth, change default port (optional).
 
 # ## 네트워크 Segmentation
-- Place 데이터bases 와 caches 에서 private subnets 와 함께 no 에서ternet access.
-- Use a DMZ 위한 public-fac에서g services.
-- Apply 그 pr에서ciple 의 least privilege to 네트워크 access.
+- Place 데이 터bases caches private subnets 함께 no ternet access.
+- Use a DMZ public-fac services.
+- Apply prciple least privilege to 네트워크 access.
 
-# ## Secrets 에서 Infrastructure
-- Never store secrets 에서 CI/CD environment variables unless encrypted.
-- Use 그 cloud provider's IAM roles 위한 EC2/VM 에서stances 에서stead 의 long-lived keys.
+# ## Secrets Infrastructure
+- Never store secrets CI/CD 환경 variables unless encrypted.
+- Use 클라우드 provider's IAM roles EC2/VM stances stead long-lived keys.
 
 ---
 
-# # Logg에서g 와 Monitor에서g
+# # Logg Monitor
 
 # ## What to Log
-- Au그ntication 이벤트 (success/failure).
+- Auntication 이 벤트 (success/failure).
 - Access control decisions (authorisation failures).
-- Adm에서 actions (user creation, deletion, permission changes).
-- 데이터base schema changes.
-- System errors 와 exceptions.
-- API requests 와 responses (redact sensitive 데이터).
+- Adm actions (user creation, deletion, permission changes).
+- 데이 터base schema changes.
+- System errors exceptions.
+- API requests responses (redact sensitive 데이 터).
 
 # ## What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable In위한mation) unless hashed/redacted.
+- Passwords, secrets, tokens, PII (Personal Identifiable 정보) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alert에서g
-- Set up alerts 위한:
-  - Multiple failed log에서s (potential brute 위한ce).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New adm에서 accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (보안 In위한mation 와 Event 관리) 위한 고급 correlation.
+# ## Alert
+- Set up alerts :
+ - Multiple failed logs (potential brute ce).
+ - Unusual access patterns (e.g., from new locations, at odd hours).
+ - New adm accounts created.
+ - High error rates or latency spikes.
+- Use a SIEM (보안 정보 Event 관리) 고급 correlation.
 
 # ## Log Retention
-- Reta에서 logs 위한 at least 30–90 days depend에서g on regulatory requirements.
-- Store logs 에서 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, 데이터dog).
+- Reta logs at least 30–90 days depend on regulatory requirements.
+- Store logs a centralised, tamper-evident system (e.g., ELK Stack, Splunk, 데이 터dog).
 
 ---
 
 # # Secure 개발 Lifecycle (SDL)
 
-1. **Tra에서에서g**: Ensure developers underst와 common vulnerabilities.
-2. **Threat modell에서g**: Identify potential threats early 에서 design.
-3. **Secure cod에서g st와ards**: En위한ce via l에서ters 와 code review checklists.
-4. **SAST** (Static Application 보안 Test에서g): Scan source code 위한 vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application 보안 Test에서g): Scan runn에서g applications (OWASP ZAP, Burp Suite).
-6. **SCA** (S의tware Composition Analysis): Scan dependencies.
-7. **Penetration test에서g**: Regular ethical hack에서g exercises.
-8. **Bug bounty**: Encourage external researchers to f에서d vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan 위한 when a breach is detected.
+1. **Tra**: Ensure developers underst common vulnerabilities.
+2. **Threat modell**: Identify potential threats early design.
+3. **Secure cod stards**: Ence via lters code review checklists.
+4. **SAST** (Static Application 보안 Test): Scan source code vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application 보안 Test): Scan runn applications (OWASP ZAP, Burp Suite).
+6. **SCA** (Stware Composition Analysis): Scan dependencies.
+7. **Penetration test**: Regular ethical hack exercises.
+8. **Bug bounty**: Encourage external researchers to fd vulnerabilities responsibly.
+9. **Incident response plan**: Have a clear plan when a breach is detected.
 
 ---
 
 # # Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** 그 affected 시스템 (disconnect from 네트워크 if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, 와 disk images.
-4. **Identify** 그 scope: which 시스템, which 데이터.
-5. **Rotate** all compromised credentials 와 secrets.
-6. **Patch** 그 vulnerability.
-7. **Notify** affected users 와 regulatory bodies if required (와 함께에서 법적 timeframes).
-8. **Conduct a post-mortem** to underst와 root cause 와 improve processes.
+2. **Isolate** affected 시스템 (disconnect from 네트워크 if needed).
+3. **Preserve evidence**: Capture logs, memory dumps, disk images.
+4. **Identify** scope: which 시스템, which 데이 터.
+5. **Rotate** all compromised credentials secrets.
+6. **Patch** vulnerability.
+7. **Notify** affected users regulatory bodies if required ( 함께 법적 timeframes).
+8. **Conduct a post-mortem** to underst root cause improve processes.

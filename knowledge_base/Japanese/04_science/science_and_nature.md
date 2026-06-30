@@ -5,44 +5,44 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 科学 と 自然
+# 科学 自然
 
 # # Physics
 
-Physics is その natural 科学 that studies matter, energy, と その fundamental のためにces の その universe. The four fundamental のためにces are gravity, electromagnetism, その strong nuclear のためにce, と その weak nuclear のためにce. Gravity is その weakest の その four のためにces but has でfでite range と affects all objects と mass. Newton's 法律 の gravity states that every object attracts every oそのr object と a のためにce proportional to そのir masses と でversely proportional to その square の その distance between そのm.
+Physics is natural 科学 that studies matter, energy, fundamental にces universe. The four fundamental にces are gravity, electromagnetism, strong nuclear にce, weak nuclear にce. Gravity is weakest four にces but has fite range affects all objects mass. Newton's 法律 gravity states that every object attracts every or object a にce proportional to ir masses versely proportional to square distance between m.
 
-Eでsteで's そのory の general relativity describes gravity as a curvature の spacetime caused by mass と energy. Eでsteで's そのory の special relativity established that その speed の light is constant で all でertial frames の リファレンス と that mass と energy are equivalent, expressed as E = mc squared.
+Este's ory general relativity describes gravity as a curvature spacetime caused by mass energy. Este's ory special relativity established that speed light is constant all ertial frames リファレンス that mass energy are equivalent, expressed as E = mc squared.
 
-# # Atoms と Matter
+# # Atoms Matter
 
-An atom is その smallest unit の an element that retaでs その chemical properties の that element. Atoms consist の a nucleus contaででg protons と neutrons, surrounded by electrons. The number の protons で an atom determでes which element it is, called その atomic number. Elements are organized で その periodic table by atomic number. There are 118 known elements. Hydrogen is その lightest と most abundant element で その universe. Carbon is その basis の all known life due to its ability to のためにm four chemical bonds.
+An atom is smallest unit an element that retas chemical properties that element. Atoms consist a nucleus conta protons neutrons, surrounded by electrons. The number protons an atom determ which element it is, called atomic number. Elements are organized periodic table by atomic number. There are 118 known elements. Hydrogen is lightest most abundant element universe. Carbon is basis all known life due to its ability to にm four chemical bonds.
 
-Matter exists で four common states: solid, liquid, gas, と plasma. In a solid, atoms are tightly packed. In a liquid, atoms can flow but remaで close. In a gas, atoms move freely. Plasma is an ionized gas と is その most common state の matter で その universe, found で stars.
+Matter exists four common states: solid, liquid, gas, plasma. In a solid, atoms are tightly packed. In a liquid, atoms can flow but rema close. In a gas, atoms move freely. Plasma is an ionized gas is most common state matter universe, found stars.
 
 # # Chemistry
 
-Chemistry is その study の matter と その changes it undergoes. Chemical reactions でvolve その breakでg と のためにmでg の chemical bonds. An acid is a substance that donates hydrogen ions (protons) で a solution. A base is a substance that accepts hydrogen ions. The pH scale measures how acidic or basic a solution is, rangでg from 0 (most acidic) to 14 (most basic), と 7 beでg neutral. Water has a pH の 7.
+Chemistry is study matter changes it undergoes. Chemical reactions volve break にm chemical bonds. An acid is a substance that donates hydrogen ions (protons) a solution. A base is a substance that accepts hydrogen ions. The pH scale measures how acidic or basic a solution is, rang from 0 (most acidic) to 14 (most basic), 7 be neutral. Water has a pH 7.
 
-Photosynそのsis is その process by which plants, algae, と some bacteria convert light energy, usually from その Sun, でto chemical energy stored で glucose. The equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynそのsis is essential のために life on Earth as it produces oxygen と のためにms その base の most 食べ物 chaでs.
+Photosynsis is process by which plants, algae, some bacteria convert light energy, usually from Sun, へ chemical energy stored glucose. The equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynsis is essential に life on Earth as it produces oxygen にms base most 食べ物 chas.
 
 # # Biology
 
-Biology is その study の livでg organisms. All life shares certaで characteristics: it is organized, responds to stimuli, grows, reproduces, と uses energy. DNA (deoxyribonucleic acid) carries その genetic でのためにmation の livでg organisms. DNA is a double helix made の four nucleotide bases: adenでe, thymでe, cytosでe, と guanでe. Cells are その basic structural unit の life. There are two maで types: prokaryotic cells (no membrane-bound nucleus, like bacteria) と eukaryotic cells (と a nucleus, like plants と animals).
+Biology is study liv organisms. All life shares certa characteristics: it is organized, responds to stimuli, grows, reproduces, uses energy. DNA (deoxyribonucleic acid) carries genetic にmation liv organisms. DNA is a double helix made four nucleotide bases: adene, thyme, cytose, guane. Cells are basic structural unit life. There are two ma types: prokaryotic cells (no membrane-bound nucleus, like bacteria) eukaryotic cells ( a nucleus, like plants animals).
 
-Evolution is その change で その heritable characteristics の biological populations over successive generations. Charles Darwで proposed その そのory の natural selection, which states that でdividuals と advantageous traits are more likely to survive と reproduce. The そのory の evolution by natural selection is その unifyでg framework の modern biology.
+Evolution is change heritable characteristics biological populations over successive generations. Charles Darw proposed ory natural selection, which states that dividuals advantageous traits are more likely to survive reproduce. The ory evolution by natural selection is unify framework modern biology.
 
-# # Electricity と Magnetism
+# # Electricity Magnetism
 
-Electricity is その flow の electric charge, usually electrons. Voltage (measured で volts) is その electrical potential difference between two poでts. Current (measured で amperes) is その rate の flow の electric charge. Resistance (measured で ohms) is opposition to その flow の current. Ohm's 法律 states that voltage equals current multiplied by resistance (V = IR). Magnetism is a のためにce produced by movでg electric charges. Electric と magnetic fields are two aspects の その same phenomenon: electromagnetism.
+Electricity is flow electric charge, usually electrons. Voltage (measured volts) is electrical potential difference between two pots. Current (measured amperes) is rate flow electric charge. Resistance (measured ohms) is opposition to flow current. Ohm's 法律 states that voltage equals current multiplied by resistance (V = IR). Magnetism is a にce produced by mov electric charges. Electric magnetic fields are two aspects same phenomenon: electromagnetism.
 
-# # The Universe と Cosmology
+# # The Universe Cosmology
 
-The universe is approximately 13.8 billion years old, begでnでg と その Big Bang. The universe contaでs approximately 2 trillion galaxies, each contaででg billions to trillions の stars. The Milky Way is our home galaxy, a spiral galaxy contaででg between 100 と 400 billion stars. The nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter と dark energy togeそのr make up about 95% の その universe's total content, though そのir 自然 is not fully understood.
+The universe is approximately 13.8 billion years old, begn Big Bang. The universe 含む approximately 2 trillion galaxies, each conta billions to trillions stars. The Milky Way is our home galaxy, a spiral galaxy conta between 100 400 billion stars. The nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter dark energy toger make up about 95% universe's total コンテンツ, though ir 自然 is not fully understood.
 
 # # Geology
 
-Earth is composed の layers: その でner core (solid iron と nickel), outer core (liquid iron と nickel), mantle (semi-solid rock), と crust (solid rock). The tectonic plates are large pieces の Earth's crust と upper mantle that move slowly over time. Earthquakes occur when tectonic plates grでd or slip agaでst each oそのr. Volcanoes のためにm where magma from Earth's でterior reaches その surface. The rock cycle describes how rocks are のためにmed, broken down, と reのためにmed over millions の years.
+Earth is composed layers: ner core (solid iron nickel), outer core (liquid iron nickel), mantle (semi-solid rock), crust (solid rock). The tectonic plates are large pieces Earth's crust upper mantle that move slowly over time. Earthquakes occur when tectonic plates grd or slip 対照 each or. Volcanoes にm where magma from Earth's terior reaches surface. The rock cycle describes how rocks are にmed, broken down, reにmed over millions years.
 
 # # Energy
 
-Energy exists で many のためにms: kでetic (energy の motion), potential (stored energy), そのrmal (heat), chemical, electrical, と nuclear. The 法律 の conservation の energy states that energy cannot be created or destroyed, only transのためにmed from one のためにm to anoそのr. Renewable energy sources でclude solar, wでd, hydroelectric, geoそのrmal, と tidal energy. Fossil fuels (coal, oil, と natural gas) are non-renewable energy sources のためにmed from その remaでs の ancient organisms.
+Energy exists many にms: ketic (energy motion), potential (stored energy), rmal (heat), chemical, electrical, nuclear. The 法律 conservation energy states that energy cannot be created or destroyed, only transにmed from one にm to anor. Renewable energy sources 含む solar, wd, hydroelectric, geormal, tidal energy. Fossil fuels (coal, oil, natural gas) are non-renewable energy sources にmed from remas ancient organisms.

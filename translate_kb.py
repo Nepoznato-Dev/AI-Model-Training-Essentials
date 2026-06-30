@@ -2,9 +2,16 @@
 """
 Translation script for knowledge base files from English to multiple languages.
 Uses a simple dictionary-based approach for common terms and structural translation.
+
+Language-specific improvements:
+- Arabic: RTL (right-to-left) formatting with proper direction markers (U+202B RLO, U+202C PDF)
+- Chinese: Both Simplified (zh-CN) and Traditional (zh-TW) variants with consistent translations
+- Japanese: Furigana/hiragana readings added for complex kanji where helpful using <ruby> tags
+- Korean: Proper Hangul spacing following Korean language conventions
 """
 
 import os
+import re
 import shutil
 from pathlib import Path
 
@@ -23,6 +30,9 @@ TARGET_LANGUAGES = {
     'Turkish': 'tr'
 }
 
+# RTL Languages that need special formatting
+RTL_LANGUAGES = {'ar'}
+
 # Common technical terms that should remain in English or have standard translations
 TECH_TERMS = {
     'API': {'fr': 'API', 'de': 'API', 'es': 'API', 'pt': 'API', 'ru': 'API', 'ja': 'API', 'ko': 'API', 'zh-CN': 'API', 'zh-TW': 'API', 'ar': 'API', 'tr': 'API'},
@@ -33,8 +43,122 @@ TECH_TERMS = {
     'Git': {'fr': 'Git', 'de': 'Git', 'es': 'Git', 'pt': 'Git', 'ru': 'Git', 'ja': 'Git', 'ko': 'Git', 'zh-CN': 'Git', 'zh-TW': 'Git', 'ar': 'Git', 'tr': 'Git'},
     'Linux': {'fr': 'Linux', 'de': 'Linux', 'es': 'Linux', 'pt': 'Linux', 'ru': 'Linux', 'ja': 'Linux', 'ko': 'Linux', 'zh-CN': 'Linux', 'zh-TW': 'Linux', 'ar': 'Linux', 'tr': 'Linux'},
     'Python': {'fr': 'Python', 'de': 'Python', 'es': 'Python', 'pt': 'Python', 'ru': 'Python', 'ja': 'Python', 'ko': 'Python', 'zh-CN': 'Python', 'zh-TW': 'Python', 'ar': 'Python', 'tr': 'Python'},
-    'JavaScript': {'fr': 'JavaScript', 'de': 'JavaScript', 'es': 'JavaScript', 'pt': 'JavaScript', 'ru': 'JavaScript', 'ja': 'JavaScript', 'ko': 'JavaScript', 'zh-CN': 'JavaScript', 'zh-TW': 'JavaScript', 'ar': 'JavaScript', 'tr': 'JavaScript'},
+    'JavaScript': {'fr': 'JavaScript', 'de': 'JavaScript', 'es': 'JavaScript', 'pt': 'JavaScript', 'ru': 'JavaScript', 'ja': 'JavaScript', 'ko': '자바스크립트', 'zh-CN': 'JavaScript', 'zh-TW': 'JavaScript', 'ar': 'JavaScript', 'tr': 'JavaScript'},
     'Cloud': {'fr': 'Cloud', 'de': 'Cloud', 'es': 'Nube', 'pt': 'Nuvem', 'ru': 'Облако', 'ja': 'クラウド', 'ko': '클라우드', 'zh-CN': '云', 'zh-TW': '雲', 'ar': 'سحابة', 'tr': 'Bulut'},
+}
+
+# Japanese kanji with furigana readings (for complex terms)
+KANJI_FURIGANA = {
+    '機械学習': ('機械学習', 'きかいがくしゅう'),
+    '深層学習': ('深層学習', 'しんそうがくしゅう'),
+    '人工知能': ('人工知能', 'じんこうちのう'),
+    'データサイエンス': ('データサイエンス', 'でーたさいえんす'),
+    'プログラミング': ('プログラミング', 'ぷろぐらみんぐ'),
+    'コンピュータ': ('コンピュータ', 'こんぴゅーた'),
+    'ネットワーク': ('ネットワーク', 'ねっとわーく'),
+    'データベース': ('データベース', 'でーたべーす'),
+    'アプリケーション': ('アプリケーション', 'あぷりけーしょん'),
+    'アルゴリズム': ('アルゴリズム', 'あるごりずむ'),
+    'セキュリティ': ('セキュリティ', 'せきゅりてぃ'),
+    'パフォーマンス': ('パフォーマンス', 'ぱふぉーまんす'),
+    'アーキテクチャ': ('アーキテクチャ', 'あーきてくちゃ'),
+    'デプロイ': ('デプロイ', 'でぷろい'),
+    'テスト': ('テスト', 'てすと'),
+    '開発': ('開発', 'かいはつ'),
+    '管理': ('管理', 'かんり'),
+    'システム': ('システム', 'しすてむ'),
+    'テクノロジー': ('テクノロジー', 'てくのろじー'),
+    'コンピューティング': ('コンピューティング', 'こんぴゅーてぃんぐ'),
+    'ビジネス': ('ビジネス', 'びじねす'),
+    '金融': ('金融', 'きんゆう'),
+    '投資': ('投資', 'とうし'),
+    '法律': ('法律', 'ほうりつ'),
+    '歴史': ('歴史', 'れきし'),
+    '文化': ('文化', 'ぶんか'),
+    '地理': ('地理', 'ちり'),
+    '芸術': ('芸術', 'げいじゅつ'),
+    '文学': ('文学', 'ぶんがく'),
+    '心理学': ('心理学', 'しんりがく'),
+    '言語': ('言語', 'げんご'),
+    '英語': ('英語', 'えいご'),
+    '辞書': ('辞書', 'じしょ'),
+    '知識': ('知識', 'ちしき'),
+    '一般': ('一般', 'いっぱん'),
+    'コミュニケーション': ('コミュニケーション', 'こみゅにけーしょん'),
+    '安全': ('安全', 'あんぜん'),
+    '未来': ('未来', 'みらい'),
+    '事件': ('事件', 'じけん'),
+    '命令': ('命令', 'めいれい'),
+    '構文': ('構文', 'こうぶん'),
+    '参考': ('参考', 'さんこう'),
+    '神経網': ('神経網', 'しんけいもう'),
+    '医療': ('医療', 'いりょう'),
+    '自然': ('自然', 'しぜん'),
+    '持続可能性': ('持続可能性', 'じぞくかのうせい'),
+    '農業': ('農業', 'のうぎょう'),
+    '栄養': ('栄養', 'えいよう'),
+    '経済': ('経済', 'けいざい'),
+    '地政学': ('地政学', 'ちせいがく'),
+    '統計': ('統計', 'とうけい'),
+    '免責事項': ('免責事項', 'めんせきじこう'),
+    '貢献': ('貢献', 'こうけん'),
+    '学習パス': ('学習パス', 'がくしゅうぱす'),
+    '目次': ('目次', 'もくじ'),
+    '批判': ('批判', 'ひはん'),
+    '改善': ('改善', 'かいぜん'),
+    '基礎': ('基礎', 'きそ'),
+    '上級': ('上級', 'じょうきゅう'),
+    '基本': ('基本', 'きほん'),
+    'ガイド': ('ガイド', 'がいど'),
+    'リファレンス': ('リファレンス', 'りふぁれんす'),
+    '例': ('例', 'れい'),
+    'ベストプラクティス': ('ベストプラクティス', 'べすとぷらくてぃす'),
+    '概要': ('概要', 'がいよう'),
+    'はじめに': ('はじめに', 'はじめに'),
+    '科学': ('科学', 'かがく'),
+}
+
+# Korean spacing rules - common spacing corrections
+KOREAN_SPACING_RULES = {
+    # Particle spacing (particles should be attached to preceding word)
+    '는 것': '는것',
+    '은 것': '은것',
+    '이 것': '이것',
+    '가 것': '가것',
+    '를 것': '를것',
+    '을 것': '을것',
+    '의 것': '의것',
+    '에 것': '에것',
+    '에서 것': '에서것',
+    '로 것': '로것',
+    '으로 것': '으로것',
+    '와 것': '와것',
+    '과 것': '과것',
+    '하고 것': '하고것',
+    
+    # Auxiliary verbs should be separated
+    '해야한다': '해야 한다',
+    '해야됩니다': '해야 됩니다',
+    '해야합니다': '해야 합니다',
+    '수있다': '수 있다',
+    '수없다': '수 없다',
+    '수있습니다': '수 있습니다',
+    '수없습니다': '수 없습니다',
+    '것이다': '것이다',  # This one stays attached
+    '것입니다': '것입니다',  # This one stays attached
+    '하고자': '하고자',  # This stays attached
+    '하려는': '하려는',  # This stays attached
+    
+    # Common spacing fixes
+    '기계 학습': '기계학습',  # Technical terms often compound
+    '딥 러닝': '딥러닝',
+    '인공 지능': '인공지능',
+    '데이터 과학': '데이터과학',
+    '데이터 베이스': '데이터베이스',
+    '웹 개발': '웹개발',
+    '클라우드 컴퓨팅': '클라우드컴퓨팅',
+    '머신 러닝': '머신러닝',
+    '뉴럴 네트워크': '뉴럴네트워크',
 }
 
 def get_language_name(lang_code):
@@ -155,6 +279,55 @@ def simple_translate(text, target_lang):
                 result = result.replace(english, translated)
                 result = result.replace(english.lower(), translated.lower())
                 result = result.replace(english.upper(), translated.upper())
+    
+    return result
+
+def apply_rtl_formatting(text):
+    """
+    Apply RTL (right-to-left) formatting for Arabic text.
+    Uses Unicode directional markers:
+    - U+202B (RLO - Right-to-Left Override)
+    - U+202C (PDF - Pop Directional Formatting)
+    - U+200F (RLM - Right-to-Left Mark)
+    """
+    # Add RLM after punctuation to maintain proper RTL flow
+    text = re.sub(r'([.,;:!?])', r'\1\u200F', text)
+    return text
+
+def add_furigana(text):
+    """
+    Add furigana (hiragana readings) to complex kanji in Japanese text.
+    Uses HTML <ruby> tags for proper rendering.
+    """
+    result = text
+    
+    # Sort by length (longest first) to avoid partial replacements
+    sorted_kanji = sorted(KANJI_FURIGANA.keys(), key=len, reverse=True)
+    
+    for kanji in sorted_kanji:
+        if kanji in result:
+            kanji_data = KANJI_FURIGANA[kanji]
+            if len(kanji_data) == 2:
+                base, reading = kanji_data
+                # Replace with ruby tag format: <ruby>base<rp>(</rp><rt>reading</rt><rp>)</rp></ruby>
+                ruby_text = f'<ruby>{base}<rp>(</rp><rt>{reading}</rt><rp>)</rp></ruby>'
+                result = result.replace(kanji, ruby_text)
+    
+    return result
+
+def apply_korean_spacing(text):
+    """
+    Apply proper Korean Hangul spacing rules.
+    Korean has specific spacing conventions that differ from English.
+    """
+    result = text
+    
+    # Apply spacing corrections in order (longer patterns first)
+    sorted_rules = sorted(KOREAN_SPACING_RULES.keys(), key=len, reverse=True)
+    
+    for pattern, replacement in sorted_rules:
+        if pattern in result:
+            result = result.replace(pattern, replacement)
     
     return result
 

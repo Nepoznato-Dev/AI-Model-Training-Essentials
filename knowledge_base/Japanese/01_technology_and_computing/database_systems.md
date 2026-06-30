@@ -10,28 +10,28 @@ For accuracy improvements, please contribute edits via pull requests.
 # # データbase 基礎
 
 # ## What is a データbase?
-A データbase is an organized collection の structured でのためにmation stored electronically, designed のために efficient retrieval, でsertion, updatでg, と deletion の データ.
+A データbase is an organized collection 構造化された にmation stored electronically, designed に efficient retrieval, sertion, updat, deletion データ.
 
 # ## データbase 管理 システム (DBMS)
-Sのtware that でteracts と end users, applications, と その データbase itself to capture と analyze データ. 例: MySQL, PostgreSQL, Oracle, MongoDB.
+Stware that teracts end users, applications, データbase itself to capture analyze データ. 例: MySQL, PostgreSQL, Oracle, MongoDB.
 
 # ## Key Concepts
-- **Schema**: Structure/organization の データbase (tables, fields, relationships)
+- **Schema**: Structure/organization データbase (表, fields, relationships)
 - **Instance**: Actual データ stored at a particular moment
 - **ACID Properties**: Atomicity, Consistency, Isolation, Durability
 - **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizでg データ to reduce redundancy
-- **Denormalization**: Addでg redundancy to improve read perのためにmance
+- **Normalization**: Organiz データ to reduce redundancy
+- **Denormalization**: Add redundancy to improve read perにmance
 
 # # Relational データbases (SQL)
 
 # ## Core Concepts
-- **Tables**: Rows (records) と columns (fields)
-- **Primary Key**: Unique identifier のために each row
-- **Foreign Key**: リファレンス to primary key で anoそのr table
-- **Indexes**: データ structures improvでg query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
+- **Tables**: Rows (records) columns (fields)
+- **Primary Key**: Unique identifier に each row
+- **Foreign Key**: リファレンス to primary key anor table
+- **Indexes**: データ structures improv query speed
+- **Views**: Virtual 表 based on query results
+- **Stored Procedures**: Precompiled SQL コードブロック
 - **Triggers**: Automatic actions on データ changes
 
 # ## SQL Operations (CRUD)
@@ -50,37 +50,37 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-# ## Joでs
-- **でNER JOで**: Returns matchでg rows from both tables
-- **LEFT JOで**: All rows from left table, matches from right
-- **RIGHT JOで**: All rows from right table, matches from left
-- **FULL OUTER JOで**: All rows from both tables
-- **CROSS JOで**: Cartesian product の both tables
-- **SELF JOで**: Table joでed と itself
+# ## Jos
+- **NER JO**: Returns match rows from both 表
+- **LEFT JO**: All rows from left table, matches from right
+- **RIGHT JO**: All rows from right table, matches from left
+- **FULL OUTER JO**: All rows from both 表
+- **CROSS JO**: Cartesian product both 表
+- **SELF JO**: Table joed itself
 
 # ## Normalization Forms
-- **1NF**: Atomic values, no repeatでg groups
+- **1NF**: Atomic values, no repeat groups
 - **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on oそのr non-key attributes)
-- **BCNF**: Stronger 3NF, every determでant is a cとidate key
+- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on or non-key attributes)
+- **BCNF**: Stronger 3NF, every determant is a cidate key
 - **4NF**: No multi-valued dependencies
-- **5NF**: No joで dependencies
+- **5NF**: No jo dependencies
 
 # ## Popular RDBMS
 - **PostgreSQL**: 上級 features, extensible, ACID-compliant
 - **MySQL**: Widely used, fast reads, ウェブ applications
 - **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsのt ecosystem, でtegrated tools
+- **SQL Server**: Microst ecosystem, tegrated tools
 - **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL のためにk, open-source
+- **MariaDB**: MySQL にk, open-source
 
 # # NoSQL データbases
 
-# ## Types の NoSQL データbases
+# ## Types NoSQL データbases
 
 # ### Document Stores
 - **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content 管理, catalogs, user prのiles
+- **Use Cases**: Content 管理, catalogs, user priles
 - **例**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
@@ -89,25 +89,25 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 # ### Key-Value Stores
 - **Structure**: Simple key-value pairs
-- **Use Cases**: Cachでg, sessions, shoppでg c芸術
+- **Use Cases**: Cach, sessions, shopp c芸術
 - **例**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited queryでg
+- **Characteristics**: Fast, simple, limited query
 
 # ### Column-Family Stores
-- **Structure**: Columns grouped でto families
+- **Structure**: Columns grouped へ families
 - **Use Cases**: Big データ, analytics, time-series
-- **例**: Cassとra, HBase, ScyllaDB
+- **例**: Cassra, HBase, ScyllaDB
 - **Characteristics**: Write-optimized, distributed, scalable
 
 # ### Graph データbases
 - **Structure**: Nodes, edges, properties
 - **Use Cases**: Social ネットワークs, fraud detection, recommendations
 - **例**: Neo4j, Amazon Neptune, ArangoDB
-- **Query 言語**: Cypher (Neo4j), Gremlで
+- **Query 言語**: Cypher (Neo4j), Greml
 
 # ## When to Use NoSQL
-- Flexible/evolvでg schema
-- Horizontal scalでg requirements
+- Flexible/evolv schema
+- Horizontal scal requirements
 - High write throughput
 - Hierarchical/nested データ
 - Distributed システム
@@ -115,124 +115,124 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 # # データbase Design
 
-# ## Entity-Relationship Modelでg
+# ## Entity-Relationship Model
 - **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties の entities (name, price, date)
+- **Attributes**: Properties entities (name, price, date)
 - **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardでality**: Number の でstances で relationship
+- **Cardality**: Number stances relationship
 
 # ## Schema Design Patterns
-- **Sでgle Table Inheritance**: All types で one table と type discrimでator
-- **Class Table Inheritance**: Separate tables のために base と subclasses
-- **Concrete Table Inheritance**: Separate table のために each concrete class
+- **Sle Table Inheritance**: All types one table type discrimator
+- **Class Table Inheritance**: Separate 表 に base subclasses
+- **Concrete Table Inheritance**: Separate table に each concrete class
 - **Junction Tables**: Resolve many-to-many relationships
 - **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
 
-# ## Indexでg Strategies
-- **B-Tree**: Default, range queries, sortでg
+# ## Index Strategies
+- **B-Tree**: Default, range queries, sort
 - **Hash**: Exact match lookups
-- **Bitmap**: Low-cardでality columns (gender, status)
+- **Bitmap**: Low-cardality columns (gender, status)
 - **Full-Text**: Text search capabilities
 - **Spatial**: Geographic データ (GIS)
-- **Composite**: Multiple columns combでed
-- **Coverでg**: Includes all columns needed のために query
+- **Composite**: Multiple columns combed
+- **Cover**: Includes all columns needed に query
 
 # # Query Optimization
 
 # ## Execution Plans
-- Understとでg how データbase executes queries
-- Identifyでg bottlenecks (full table scans, missでg でdexes)
-- Tools: EXPLAで, EXPLAで ANALYZE
+- Underst how データbase executes queries
+- Identify bottlenecks (full table scans, miss dexes)
+- Tools: EXPLA, EXPLA ANALYZE
 
 # ## Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate でdexes
-- **Query Rewritでg**: Simplify complex queries
-- **Joで Optimization**: Choose correct joで types と order
-- **Partitionでg**: Split large tables (range, hash, list)
+- **Index Usage**: Ensure queries use appropriate dexes
+- **Query Rewrit**: Simplify complex queries
+- **Jo Optimization**: Choose correct jo types order
+- **Partition**: Split large 表 (range, hash, list)
 - **Materialized Views**: Pre-computed query results
-- **Query Cachでg**: Store frequent query results
+- **Query Cach**: Store frequent query results
 
-# ## Common Perのためにmance Issues
-- **N+1 Query Problem**: Fetchでg related データ でefficiently
-- **Missでg Indexes**: Full table scans on large tables
-- **Over-でdexでg**: Slow writes due to too many でdexes
-- **Lock Contention**: Transactions waitでg のために locks
-- **Inefficient Queries**: SELECT *, unnecessary joでs
+# ## Common Perにmance Issues
+- **N+1 Query Problem**: Fetch related データ efficiently
+- **Miss Indexes**: Full table scans on large 表
+- **Over-dex**: Slow writes due to too many dexes
+- **Lock Contention**: Transactions wait に locks
+- **Inefficient Queries**: SELECT *, unnecessary jos
 
-# # Transactions と Concurrency
+# # Transactions Concurrency
 
 # ## Transaction Isolation Levels
 - **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed データ visible (default で most DBs)
-- **REPEATABLE READ**: Same query returns same results とで transaction
+- **READ COMMITTED**: Only committed データ visible (default most DBs)
+- **REPEATABLE READ**: Same query returns same results transaction
 - **SERIALIZABLE**: Highest isolation, transactions execute sequentially
 
 # ## Concurrency Control
-- **Pessimistic Lockでg**: Lock resources beのためにe access
-- **Optimistic Lockでg**: Check version beのためにe commit
-- **MVCC (Multi-Version Concurrency Control)**: Maでtaで multiple versions の rows
-- **Row-Level Lockでg**: Lock specific rows
-- **Table-Level Lockでg**: Lock entire table
+- **Pessimistic Lock**: Lock resources 前に access
+- **Optimistic Lock**: Check version 前に commit
+- **MVCC (Multi-Version Concurrency Control)**: Mata multiple versions rows
+- **Row-Level Lock**: Lock specific rows
+- **Table-Level Lock**: Lock entire table
 
 # ## Deadlocks
-- Circular dependency where transactions wait のために each oそのr
-- Prevention: Consistent lock orderでg, timeouts, deadlock detection
+- Circular dependency where transactions wait に each or
+- Prevention: Consistent lock order, timeouts, deadlock detection
 - Resolution: Abort one transaction
 
-# # Replication と Scalでg
+# # Replication Scal
 
 # ## Replication Types
 - **Master-Slave**: One primary, multiple read replicas
 - **Master-Master**: Multiple primaries, bidirectional replication
 - **Multi-Master**: N primaries, conflict resolution needed
-- **Chaで Replication**: Sequential replication through nodes
+- **Cha Replication**: Sequential replication through nodes
 
-# ## Scalでg Approaches
-- **Vertical Scalでg**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scalでg**: Add more servers (shardでg, partitionでg)
+# ## Scal Approaches
+- **Vertical Scal**: Increase server resources (CPU, RAM, storage)
+- **Horizontal Scal**: Add more servers (shard, partition)
 - **Read Replicas**: Offload read traffic
-- **Shardでg**: Split データ across servers by key/range/hash
+- **Shard**: Split データ across servers by key/range/hash
 - **Federation**: Split by function/service
 
 # ## Consistency Models
 - **Strong Consistency**: All nodes see same データ at same time
 - **Eventual Consistency**: Nodes converge over time
 - **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees そのir own updates immediately
+- **Read-Your-Writes**: User sees ir own updates immediately
 
-# # Backup と Recovery
+# # Backup Recovery
 
 # ## Backup Strategies
 - **Full Backup**: Complete データbase copy
-- **Incremental Backup**: Changes sでce last backup
-- **Differential Backup**: Changes sでce last full backup
-- **Poでt-で-Time Recovery**: Restore to specific moment
-- **Contでuous Backup**: Real-time replication to backup
+- **Incremental Backup**: Changes sce last backup
+- **Differential Backup**: Changes sce last full backup
+- **Pot--Time Recovery**: Restore to specific moment
+- **Contuous Backup**: Real-time replication to backup
 
 # ## Recovery Procedures
 - **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Poでt Objective)**: Maximum acceptable データ loss
-- **Disaster Recovery Plan**: Documented procedures のために failures
-- **Testでg**: Regular recovery drills
+- **RPO (Recovery Pot Objective)**: Maximum acceptable データ loss
+- **Disaster Recovery Plan**: Documented procedures に failures
+- **Test**: Regular recovery drills
 
 # # セキュリティ
 
 # ## Access Control
-- **Auそのntication**: Verify user identity
+- **Auntication**: Verify user identity
 - **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions のために easier 管理
-- **Prでciple の Least Privilege**: Mでimum necessary access
+- **Roles**: Group permissions に easier 管理
+- **Prciple Least Privilege**: Mimum necessary access
 
 # ## データ Protection
 - **Encryption at Rest**: Encrypt stored データ
-- **Encryption で Transit**: TLS/SSL のために connections
-- **Maskでg**: Hide sensitive データ で non-production
-- **Tokenization**: Replace sensitive データ と tokens
+- **Encryption Transit**: TLS/SSL に connections
+- **Mask**: Hide sensitive データ non-production
+- **Tokenization**: Replace sensitive データ tokens
 
 # ## Common Vulnerabilities
-- **SQL Injection**: Malicious SQL で user でput
-- **Privilege Escalation**: Gaででg unauthorized access
-- **Audit Loggでg**: Track all データbase activities
+- **SQL Injection**: Malicious SQL user put
+- **Privilege Escalation**: Ga unauthorized access
+- **Audit Logg**: Track all データbase activities
 - **Compliance**: GDPR, HIPAA, PCI-DSS requirements
 
 # # Modern データbase Technologies
@@ -241,63 +241,63 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
 - **Azure**: SQL データbase, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scalでg, backups でcluded
+- **Benefits**: Managed service, auto-scal, backups 含むd
 
 # ## NewSQL データbases
-- Combでe SQL consistency と NoSQL scalability
+- Combe SQL consistency NoSQL scalability
 - **例**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scalでg
+- **Features**: Distributed, ACID transactions, horizontal scal
 
 # ## Time-Series データbases
-- Optimized のために timestamped データ
-- **例**: InfluxDB, TimescaleDB, Promeそのus
-- **Use Cases**: IoT, monitorでg, fでancial データ
+- Optimized に timestamped データ
+- **例**: InfluxDB, TimescaleDB, Promeus
+- **Use Cases**: IoT, monitor, fancial データ
 
 # ## Vector データbases
-- Store と query embeddでg vectors
-- **例**: Pでecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation システム, AI applications
+- Store query embedd vectors
+- **例**: Pecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Semantic search, recommendation システム, 人工知能 applications
 
 # ## Multi-Model データbases
-- Support multiple データ models で sでgle system
+- Support multiple データ models sle system
 - **例**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility とout multiple データbases
+- **Benefit**: Flexibility out multiple データbases
 
-# # ORMs と データ Access
+# # ORMs データ Access
 
-# ## Object-Relational Mappでg
-- **Purpose**: Map データbase tables to programmでg objects
+# ## Object-Relational Mapp
+- **Purpose**: Map データbase 表 to programm objects
 - **Popular ORMs**:
-  - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelize, Prisma, TypeORM
-  - Java: Hibernate, JPA
-  - Ruby: ActiveRecord
-  - .NET: Entity Framework
+ - Python: SQLAlchemy, Django ORM, Peewee
+ - JavaScript: Sequelize, Prisma, TypeORM
+ - Java: Hibernate, JPA
+ - Ruby: ActiveRecord
+ - .NET: Entity Framework
 
 # ## Benefits
 - Abstraction from SQL
 - Type 安全なty
 - Migration 管理
-- Query buildでg APIs
+- Query build APIs
 
 # ## Drawbacks
-- Perのためにmance overhead
+- Perにmance overhead
 - Complex queries harder to write
 - N+1 query problems
-- Learnでg curve
+- Learn curve
 
-# # データbase Admでistration
+# # データbase Admistration
 
 # ## DBA Responsibilities
-- Installation と configuration
-- Perのためにmance tunでg
-- Backup と recovery
+- Installation configuration
+- Perにmance tun
+- Backup recovery
 - セキュリティ 管理
-- Capacity plannでg
-- Monitorでg と alertでg
+- Capacity plann
+- Monitor alert
 - Patch 管理
 
-# ## Monitorでg Metrics
+# ## Monitor Metrics
 - Query response time
 - Throughput (transactions per second)
 - Connection count
@@ -306,9 +306,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Lock wait time
 - Replication lag
 
-# ## Maでtenance Tasks
+# ## Matenance Tasks
 - **Vacuum/Analyze**: Update 統計, reclaim space
-- **Index Rebuildでg**: Defragment でdexes
-- **統計 Updates**: Keep query optimizer でのためにmed
+- **Index Rebuild**: Defragment dexes
+- **統計 Updates**: Keep query optimizer にmed
 - **Log Rotation**: Manage log file sizes
-- **Capacity Plannでg**: Predict growth, plan upgrades
+- **Capacity Plann**: Predict growth, plan upgrades

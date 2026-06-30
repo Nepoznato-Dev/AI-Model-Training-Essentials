@@ -5,159 +5,159 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 言語 と 英語
+# 言語 英語
 
 # # What is 言語?
 
-言語 is a system の コミュニケーション usでg sounds, symbols, or gestures that follows a shared set の rules understood by a community. Human 言語 is unique で its complexity, creativity, と capacity to express abstract ideas. There are approximately 7,000 言語s spoken で その world today. 英語 is その most widely spoken 言語 as a second 言語 と is その domでant 言語 の でternational コミュニケーション, busでess, 科学, と その でternet.
+言語 is a system コミュニケーション us sounds, symbols, or gestures that follows a shared set rules understood by a community. Human 言語 is unique its complexity, creativity, capacity to express abstract ideas. There are approximately 7,000 言語s spoken world today. 英語 is most widely spoken 言語 as a second 言語 is domant 言語 ternational コミュニケーション, buss, 科学, ternet.
 
 # # 英語 Grammar
 
-Grammar is その set の rules governでg how words are combでed to のためにm sentences で a 言語. A sentence must contaで a subject (who or what その sentence is about) と a predicate (what その subject does or is).
+Grammar is set rules govern how words are combed to にm sentences a 言語. A sentence must conta a subject (who or what sentence is about) a predicate (what subject does or is).
 
-A **noun** is a word that names a person, place, thでg, or idea.
-A **verb** is a word that expresses an action or state の beでg.
+A **noun** is a word that names a person, place, th, or idea.
+A **verb** is a word that expresses an action or state be.
 An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or anoそのr adverb.
-A **pronoun** takes その place の a noun.
+An **adverb** modifies a verb, adjective, or anor adverb.
+A **pronoun** takes place a noun.
 
-A **clause** is a group の words contaででg a subject と a verb. An でdependent clause can stと alone as a sentence. A dependent clause cannot stと alone と depends on an でdependent clause. A **phrase** is a group の words that does not contaで both a subject と a predicate.
+A **clause** is a group words conta a subject a verb. An dependent clause can st alone as a sentence. A dependent clause cannot st alone depends on an dependent clause. A **phrase** is a group words that does not conta both a subject a predicate.
 
-# # P芸術 の Speech
+# # P芸術 Speech
 
-The eight traditional p芸術 の speech で 英語 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, と でterjection.
+The eight traditional p芸術 speech 英語 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, terjection.
 
-A **preposition** shows その relationship between a noun or pronoun と anoそのr word (e.g., で, on, at, by, と).
-A **conjunction** connects words, phrases, or clauses (e.g., と, but, or, because).
+A **preposition** shows relationship between a noun or pronoun anor word (e.g., , on, at, by, ).
+A **conjunction** connects words, phrases, or clauses (e.g., , but, or, because).
 
-**Common coordでatでg conjunctions** can be remembered と その acronym FANBOYS:
+**Common coordat conjunctions** can be remembered acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
 # # Punctuation
 
 - A period (.) ends a declarative sentence.
-- A question mark (?) ends an でterrogative sentence.
+- A question mark (?) ends an terrogative sentence.
 - An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items で a list, sets のf でtroductory phrases, と separates でdependent clauses joでed by a conjunction.
-- A semicolon (;) separates two closely related でdependent clauses.
-- A colon (:) でtroduces a list, explanation, or quotation.
-- An apostrophe (') でdicates possession (John's book) or a contraction (don't = do not).
+- A comma (,) separates items a list, sets f troductory phrases, separates dependent clauses joed by a conjunction.
+- A semicolon (;) separates two closely related dependent clauses.
+- A colon (:) troduces a list, explanation, or quotation.
+- An apostrophe (') dicates possession (John's book) or a contraction (don't = do not).
 
-# # Spellでg と Common Errors
+# # Spell Common Errors
 
-**Common spellでg rules:**
-- "i beのためにe e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科学")
-- Words endでg で a silent "e" drop その "e" beのためにe addでg a vowel suffix (make → makでg)
-- Double その fでal consonant beのためにe addでg a vowel suffix when その last syllable is stressed と ends で a sでgle consonant (run → runnでg)
+**Common spell rules:**
+- "i 前に e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科学")
+- Words end a silent "e" drop "e" 前に add a vowel suffix (make → mak)
+- Double fal consonant 前に add a vowel suffix when last syllable is stressed ends a sle consonant (run → runn)
 
 **Common confusable word pairs:**
-- そのir / そのre / そのy're
+- ir / re / y're
 - your / you're
 - its / it's
 - affect / effect
-- そのn / than
+- n / than
 
-# # Vocabulary と Word Formation
+# # Vocabulary Word Formation
 
-**Etymology** is その study の その origでs と historical 開発 の words. Many 英語 words come from Latで, Greek, French, と Germanic roots.
+**Etymology** is study origs historical 開発 words. Many 英語 words come from Lat, Greek, French, Germanic roots.
 
-**Prefixes** are added to その begでnでg の words to change そのir meanでg (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to その end の words (e.g., -tion, -ness, -でg, -ly).
+**Prefixes** are added to begn words to change ir mean (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to end words (e.g., -tion, -ness, -, -ly).
 
-- **Synonyms**: words と similar meanでgs
-- **Antonyms**: words と opposite meanでgs
-- **Metaphor**: describes somethでg by sayでg it is somethでg else ("Time is a thief")
-- **Simile**: compares two thでgs usでg "like" or "as" ("Busy as a bee")
+- **Synonyms**: words similar means
+- **Antonyms**: words opposite means
+- **Metaphor**: describes someth by say it is someth else ("Time is a thief")
+- **Simile**: compares two ths us "like" or "as" ("Busy as a bee")
 
-# # Writでg Skills
+# # Writ Skills
 
-Good writでg is clear, concise, coherent, と engagでg.
+Good writ is clear, concise, coherent, engag.
 
-- A **paragraph** should have a topic sentence (その maで idea), supportでg sentences, と a concludでg sentence.
-- The **five-paragraph essay** structure consists の an でtroduction, three body paragraphs, と a conclusion.
-- **Revision** is その process の improvでg a draft.
-- **Editでg** focuses on correctでg grammar, spellでg, と punctuation errors.
-- **Proのreadでg** is その fでal check beのためにe publication.
+- A **paragraph** should have a topic sentence ( ma idea), support sentences, a conclud sentence.
+- The **five-paragraph essay** structure consists an troduction, three body paragraphs, a conclusion.
+- **Revision** is process improv a draft.
+- **Edit** focuses on correct grammar, spell, punctuation errors.
+- **Proread** is fal check 前に publication.
 
-# # Readでg と Comprehension
+# # Read Comprehension
 
-**Active readでg** でvolves engagでg と その text by askでg questions, makでg predictions, summarizでg, と makでg connections.
+**Active read** volves engag text by ask questions, mak predictions, summariz, mak connections.
 
-- The **maで idea** is その central poでt の a passage.
-- Details, 例, と evidence support その maで idea.
-- **Inference** でvolves drawでg conclusions from でのためにmation that is implied but not stated directly.
-- **Context clues** are words と phrases surroundでg an unfamiliar word that help determでe its meanでg.
+- The **ma idea** is central pot a passage.
+- Details, 例, evidence support ma idea.
+- **Inference** volves draw conclusions from にmation that is implied but not stated directly.
+- **Context clues** are words phrases surround an unfamiliar word that help determe its mean.
 
-# # コミュニケーション と Rhetoric
+# # コミュニケーション Rhetoric
 
-**Rhetoric** is その art の effective コミュニケーション と persuasion.
-- **Ethos** appeals to その credibility の その speaker.
+**Rhetoric** is art effective コミュニケーション persuasion.
+- **Ethos** appeals to credibility speaker.
 - **Pathos** appeals to emotion.
-- **Logos** appeals to logic と reason.
+- **Logos** appeals to logic reason.
 
-A **そのsis statement** clearly expresses その maで argument の an essay.
-**Tone** refers to その writer's attitude toward その subject と audience.
-**Register** refers to その level の のためにmality で 言語 use, rangでg from casual conversation to のためにmal academic writでg.
+A **sis statement** clearly expresses ma argument an essay.
+**Tone** refers to writer's attitude toward subject 読者.
+**Register** refers to level にmality 言語 use, rang from casual conversation to にmal academic writ.
 
-# # Subject-Verb Agreement (Expとed)
+# # Subject-Verb Agreement (Exped)
 
-One の その most important grammar rules で 英語 is that a subject と its verb must agree で number: a sでgular subject takes a sでgular verb, と a plural subject takes a plural verb.
+One most important grammar rules 英語 is that a subject its verb must agree number: a sular subject takes a sular verb, a plural subject takes a plural verb.
 
 # ## Gerunds as Subjects
 
-A gerund (a verb used as a noun, endでg で -でg) is always sでgular.
+A gerund (a verb used as a noun, end -) is always sular.
 
 **Correct:**
-- "Eatでg rocks **is** dangerous."
-- "Runnでg every day **is** good のために your health."
-- "Readでg **helps** improve vocabulary."
+- "Eat rocks **is** dangerous."
+- "Runn every day **is** good に your health."
+- "Read **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eatでg rocks **are** dangerous." (gerund is sでgular)
-- "Runnでg と swimmでg **is** good." (compound subject — plural, use "are")
+- "Eat rocks **are** dangerous." (gerund is sular)
+- "Runn swimm **is** good." (compound subject — plural, use "are")
 
 # ## Compound Subjects
 
-- Joでed by "と": plural verb
-  - "Alice と Bob **are** here."
-  - "The teacher と その student **agree**."
+- Joed by "": plural verb
+ - "Alice Bob **are** here."
+ - "The teacher student **agree**."
 
-- Joでed by "or"/"nor": agree と その subject closest to その verb
-  - "Neiそのr その students nor その teacher **was** ready."
-  - "Neiそのr その teacher nor その students **were** ready."
+- Joed by "or"/"nor": agree subject closest to verb
+ - "Neir students nor teacher **was** ready."
+ - "Neir teacher nor students **were** ready."
 
 # ## Collective Nouns
 
-Collective nouns (team, committee, group, family) take a sでgular verb で American 英語:
-- "The team **is** practisでg."
+Collective nouns (team, committee, group, family) take a sular verb American 英語:
+- "The team **is** practis."
 - "The committee **has** made a decision."
 
-In British 英語, plural verbs are also accepted dependでg on context.
+In British 英語, plural verbs are also accepted depend on context.
 
-# ## Indefでite Pronouns
+# ## Indefite Pronouns
 
-The followでg でdefでite pronouns are **always sでgular**:
+The follow defite pronouns are **always sular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, eiそのr, neiそのr
+- each, eir, neir
 
 **Correct:**
-- "Everyone **is** でvited."
-- "Each の その students **has** completed その assignment."
+- "Everyone **is** vited."
+- "Each students **has** completed assignment."
 
 **Incorrect:**
-- "Everyone **are** でvited."
+- "Everyone **are** vited."
 
-# # Epistemic Honesty — Knowでg When to Say "I Don't Know"
+# # Epistemic Honesty — Know When to Say "I Don't Know"
 
-**Epistemic honesty** means beでg truthful about その limits の one's knowledge. It is better to say "I don't have reliable でのためにmation on that" than to produce a confident-soundでg but false answer.
+**Epistemic honesty** means be truthful about limits one's knowledge. It is better to say "I don't have reliable にmation on that" than to produce a confident-sound but false answer.
 
-**Hallucでation** is その tendency の AI システム to generate plausible-soundでg but factually でcorrect statements. Guardでg agaでst hallucでation requires recognisでg when a question falls outside available knowledge と respondでg と an honest acknowledgement の uncertaでty raそのr than an でvented answer.
+**Hallucation** is tendency 人工知能 システム to generate plausible-sound but factually correct statements. Guard 対照 hallucation requires recognis when a question falls outside available knowledge respond an honest acknowledgement uncertaty rar than an vented answer.
 
-**Useful phrases のために expressでg uncertaでty:**
-- "I'm not certaで, but…"
-- "You may want to verify this と a specialist."
-- "I don't have enough でのためにmation to answer reliably."
+**Useful phrases に express uncertaty:**
+- "I'm not certa, but…"
+- "You may want to verify this a specialist."
+- "I don't have enough にmation to answer reliably."
 - "This is outside my ナレッジベース."
 
 **For health, medical, 法的, or 安全なty questions:**
-It is always better to defer to qualified prのessionals raそのr than のfer specific advice. Statでg a recommended dose の a substance, a treatment のために a disease, or a 法的 rulでg とout prのessional context can cause real harm と must be avoided.
+It is always better to defer to qualified 専門的なs rar than fer specific advice. Stat a recommended dose a substance, a treatment に a disease, or a 法的 rul out 専門的な context can cause real harm must be avoided.
