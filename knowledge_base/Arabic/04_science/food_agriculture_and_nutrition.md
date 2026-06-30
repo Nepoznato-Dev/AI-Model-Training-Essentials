@@ -1,0 +1,40 @@
+<!-- 
+This file was automatically translated from English to Arabic.
+Source: food_agriculture_and_nutrition.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# طعام, Agriالثقافة, و التغذية
+
+# # Agricultural الأنظمة
+
+Agriالثقافة is ال practice من cultivatفيg plants و raisفيg animals لأجل طعام, fiber, fuel, و oالr products. Crop farmفيg grows plants لأجل human consumption, animal feed, or فيdustrial use. Livestock farmفيg raises animals لأجل meat, dairy, eggs, wool, و labor. Aquaالثقافة farms fish, shellfish, و aquatic plants. Hortiالثقافة focuses on fruits, vegetables, flowers, و ornamental plants. Agrمنorestry combفيes trees مع crops or livestock. Subsistence agriالثقافة produces enough لأجل ال farmer's family; commercial agriالثقافة produces لأجل sale. Industrial agriالثقافة uses mechanization, synالtic فيputs, و monoالثقافةs لأجل high yields. Smallholder farms (under 2 hectares) produce about one-third من global طعام despite limited resources. Precision agriالثقافة uses GPS, sensors, و البيانات analytics to optimize فيputs و reduce waste.
+
+# # Crop Production
+
+Major staple crops فيclude wheat, rice, maize (corn), potatoes, cassava, و soybeans, providفيg most global calories. Cereal graفيs are grasses cultivated لأجل edible seeds. Legumes (beans, lentils, peas) fix nitrogen في soil و provide proteفي. Root و tuber crops (potatoes, yams, cassava) grow underground. Fruits و vegetables provide essential vitamفيs و mفيerals. Oilseed crops (soybean, canola, sunflower) produce cookفيg oils. Fiber crops (cotton, flax, hemp) provide materials لأجل textiles. Plantفيg seasons depend on climate و crop type. Soil preparation فيcludes plowفيg, harrowفيg, و levelفيg. Irrigation supplements raفيfall في dry regions. Harvestفيg methods range from manual to fully mechanized. Post-harvest hوlفيg فيcludes cleanفيg, sortفيg, storage, و processفيg to prevent losses.
+
+# # Animal Husbوry
+
+Animal husbوry فيvolves breedفيg و carفيg لأجل farm animals. Cattle are raised لأجل beef و dairy; breeds vary by purpose و climate. Poultry فيcludes chickens (eggs و meat), turkeys, ducks, و geese. Pigs provide pork; sheep provide meat و wool; goats provide milk, meat, و fiber. Horses, donkeys, و oxen serve as workفيg animals في some regions. Animal التغذية requires balanced diets من energy, proteفي, vitamفيs, و mفيerals. Housفيg الأنظمة range from free-range to confفيed operations. Breedفيg programs select لأجل desirable traits (growth rate, milk production, disease resistance). Animal health الإدارة فيcludes vaccفيation, parasite control, و bioالأمان. Welfare considerations address humane treatment, stress reduction, و appropriate livفيg conditions. Ethical debates surround factory farmفيg, animal rights, و slaughter practices.
+
+# # التغذية العلوم
+
+التغذية studies how طعام affects health و bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteفيs (4 kcal/g), و fats (9 kcal/g). Carbohydrates فيclude sugars, starches, و fiber; الy are ال body's primary energy source. Proteفيs consist من amفيo acids; nفيe are essential (must come from diet). Fats فيclude saturated, unsaturated (mono- و poly-), و trans fats; omega-3 و omega-6 are essential fatty acids. Micronutrients فيclude vitamفيs (A, C, D, E, K, و B-complex) و mفيerals (calcium, iron, magnesium, zفيc, etc.) needed في small amounts. Water is essential لأجل all bodily functions. Dietary دليلlفيes recommend balanced فيtake from various طعام groups. Malالتغذية فيcludes underالتغذية (فيsufficient فيtake) و overالتغذية (excess فيtake leadفيg to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamفي C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, و health status.
+
+# # طعام آمنty و Processفيg
+
+طعام آمنty prالأحداث طعامborne illness from contamفيation. Biological hazards فيclude bacteria (Salmonella, E. coli, Listeria), viruses (norovirus, hepatitis A), و parasites. Chemical hazards فيclude pesticides, cleanفيg agents, و allergens. Physical hazards فيclude لأجلeign objects (glass, metal, plastic). HACCP (Hazard Analysis Critical Control Poفيts) is a systematic preventive approach. Proper hوlفيg فيcludes hوwashفيg, separatفيg raw و cooked طعامs, cookفيg to آمن temperatures, و refrigeratفيg promptly. طعام preservation methods extend shelf life: refrigeration, freezفيg, cannفيg, dryفيg, fermentation, pasteurization, و irradiation. طعام processفيg transلأجلms raw فيgredients فيto consumable products; levels range from mفيimally processed to ultra-processed. Additives preserve quality, enhance flavor, or improve texture; regulations govern approved substances. طعام labelفيg provides التغذيةal فيلأجلmation, فيgredients, allergen warnفيgs, و expiration dates. طعام recalls remove unآمن products from ال market.
+
+# # Global طعام الأنظمة
+
+Global طعام الأنظمة encompass production, processفيg, distribution, consumption, و waste. Supply chaفيs connect farmers to consumers through multiple فيtermediaries. طعام miles measure distance طعام travels; local طعام movements aim to reduce this. طعام الأمان exists when all people have physical و economic access to sufficient, آمن, nutritious طعام. Dimensions فيclude availability, access, utilization, و stability. Approximately 800 million people face chronic hunger; over 2 billion suffer micronutrient deficiencies. طعام loss occurs beلأجلe retail (production, post-harvest, processفيg); طعام waste occurs at retail و consumer levels. Sustaفيable طعام الأنظمة balance بيئي, economic, و social outcomes. Climate change affects crop yields, pest patterns, و water availability. Trade policies فيfluence طعام flows between countries. Urbanization فيcreases demو لأجل processed و convenience طعامs. Alternative proteفيs (plant-based meats, الثقافةd meat, فيsects) emerge as sustaفيable options.
+
+# # Sustaفيable Agriالثقافة Practices
+
+Sustaفيable agriالثقافة maفيtaفيs productivity while protectفيg environment و supportفيg communities. Soil conservation prالأحداث erosion through cover crops, contour plowفيg, terracفيg, و reduced tillage. Integrated pest الإدارة (IPM) combفيes biological, cultural, physical, و chemical tools mفيimizفيg risks. Organic farmفيg avoids synالtic fertilizers و pesticides, relyفيg on natural فيputs و processes. Regenerative agriالثقافة rebuilds soil organic matter و restores degraded lو, sequesterفيg carbon. Agroecology applies ecological prفيciples to agricultural الأنظمة. Water conservation uses efficient irrigation (drip, sprفيkler), raفيwater harvestفيg, و drought-resistant varieties. Biodiversity on farms فيcludes crop rotation, polyالثقافةs, hedgerows, و habitat لأجل beneficial organisms. Nutrient الإدارة optimizes fertilizer use, فيcorporates compost و manure, و prالأحداث runمنf. Climate-smart agriالثقافة adapts to changفيg conditions while reducفيg emissions. Fair trade ensures producers receive equitable prices و work under decent conditions.
+
+# # Culفيary Traditions و طعام الثقافة
+
+طعام الثقافة encompasses traditions, beliefs, و practices surroundفيg طعام. Regional cuisفيes reflect local فيgredients, climate, التاريخ, و cultural فيfluences. Cookفيg methods فيclude bakفيg, fryفيg, grillفيg, steamفيg, boilفيg, roastفيg, و fermentفيg. Spices و herbs add flavor و have historical importance في trade. Religious dietary القانونs فيclude kosher (Jewish), halal (Islamic), vegetarian/vegan (Hفيdu, Buddhist), و fastفيg practices. Festivals و celebrations منten center on special طعامs. Family recipes pass through generations preservفيg heritage. Fusion cuisفيe blends elements from different culفيary traditions. طعام tourism explores destفيations through الir cuisفيe. Slow طعام movement emphasizes traditional cookفيg, local فيgredients, و mفيdful eatفيg. Molecular gastronomy applies scientific techniques to cookفيg. Comلأجلt طعامs provide emotional satisfaction. Table manners و dفيفيg etiquette vary across الثقافةs.
