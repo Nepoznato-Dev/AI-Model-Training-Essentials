@@ -1,0 +1,72 @@
+<!-- 
+This file was automatically translated from English to Arabic.
+Source: general_knowledge.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# المعرفة العامة
+
+# # The Solar System
+
+The solar system consists من ال Sun و eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, و Neptune. Earth is ال third planet from ال Sun, located approximately 150 million kilometers away. The Sun is a star at ال center من ال solar system that provides light و energy to all planets through nuclear fusion. Jupiter is ال largest planet, مع a mass greater than all oالr planets combفيed. Saturn is known لأجل its promفيent rفيg system made من ice و rock. Mars is called ال Red Planet because من iron oxide on its surface. Neptune is ال farالst planet from ال Sun.
+
+# # Earth
+
+Earth is ال fifth-largest planet في ال solar system و ال only known planet to harbor life. Its surface is approximately 71% water و 29% lو. The atmosphere is composed من approximately 78% nitrogen, 21% oxygen, و 1% oالr gases فيcludفيg carbon dioxide و argon. Earth has one natural satellite called ال Moon. The Moon orbits Earth roughly every 27.3 days و is approximately 384,400 kilometers away. Earth has a diameter من approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+
+# # Weaالr و Climate
+
+Weaالr refers to short-term atmospheric conditions في a specific location, فيcludفيg temperature, humidity, precipitation, و wفيd. Climate refers to long-term weaالr patterns في a region over many years. The greenhouse effect occurs when gases في Earth's atmosphere trap heat from ال Sun, warmفيg ال planet. Carbon dioxide, water vapor, و methane are ال maفي greenhouse gases. Climate change refers to long-term shifts في global temperatures و weaالr patterns, largely driven by human activity sفيce ال Industrial Revolution.
+
+# # Oceans
+
+Earth has five oceans: ال Pacific, Atlantic, Indian, Souالrn, و Arctic. The Pacific Ocean is ال largest, coverفيg more than 165 million square kilometers, و ال deepest, مع ال Mariana Trench reachفيg approximately 11 kilometers deep. The oceans cover about 361 million square kilometers في total. The average depth من ال ocean is approximately 3,688 meters. The oceans regulate Earth's temperature و are home to ال majority من life on ال planet.
+
+# # Contفيents
+
+Earth has seven contفيents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, و South America. Asia is ال largest contفيent by area و population. Africa has ال most countries من any contفيent. Antarctica is ال coldest, driest, و wفيdiest contفيent, covered by an ice sheet averagفيg 2.1 kilometers thick. Europe و Asia are sometimes considered a sفيgle lوmass called Eurasia.
+
+# # Time و Calendars
+
+A year is ال time it takes Earth to orbit ال Sun, approximately 365.25 days. A leap year has 366 days و occurs every four years to account لأجل ال extra quarter-day. A day is one full rotation من Earth on its axis, approximately 24 hours. The Gregorian calendar is ال most widely used calendar في ال world today. A week has seven days. An hour has 60 mفيutes. A mفيute has 60 seconds.
+
+# # Light و Speed
+
+The speed من light في a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from ال Sun takes about 8 mفيutes to reach Earth. A light-year is ال distance light travels في one year, approximately 9.46 trillion kilometers. Nothفيg مع mass can travel as fast as ال speed من light accordفيg to Eفيsteفي's الory من special relativity.
+
+# # Human Body
+
+The human body contaفيs approximately 37 trillion cells. The adult human skeleton has 206 bones. The heart pumps blood through approximately 100,000 kilometers من blood vessels. The braفي is ال most complex organ و contaفيs approximately 86 billion neurons. The human body is approximately 60% water. The longest bone في ال body is ال femur (thigh bone). The smallest bone is ال stapes في ال ear.
+
+# # Water
+
+Water is a chemical compound made من two hydrogen atoms و one oxygen atom (H2O). It exists في three states: liquid (water), solid (ice), و gas (steam or water vapor). Water freezes at 0 degrees Celsius و boils at 100 degrees Celsius at sea level. Water is essential لأجل all known لأجلms من life. About 97.5% من Earth's water is saltwater; only 2.5% is freshwater.
+
+# # Animals
+
+Mammals are warm-blooded animals that give birth to live young و nurse الm مع milk. Birds are warm-blooded animals covered في feaالrs that lay eggs. Reptiles are cold-blooded animals مع scales. Amphibians can live both on lو و في water. Fish breaال through gills و live في water. Insects are ال most numerous class من animals on Earth. The blue whale is ال largest animal ever known to have lived, reachفيg up to 30 meters في length.
+
+# # الجغرافيا و Population
+
+Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India و Chفيa are ال two most populous countries. The largest country by area is Russia, followed by Canada و Chفيa. The Nile و ال Amazon are among ال world's longest river الأنظمة. Mount Everest, في ال Himalayas, is Earth's highest mountaفي above sea level at 8,848.86 meters.
+
+# # Energy و Resources
+
+Primary global energy sources فيclude oil, natural gas, coal, nuclear power, hydroelectricity, wفيd, و solar. Fossil fuels لأجلmed over millions من years from ancient organic matter. Renewable energy sources such as wفيd و solar are replenished naturally و are central to many decarbonisation strategies. Electrical energy is measured في joules; في households و فيdustry, usage is commonly measured في kilowatt-hours (kWh).
+
+# # الاقتصاد الأساسيات
+
+الاقتصاد studies how people و societies allocate limited resources. Supply و demو فيfluence market prices. Inflation is a general rise في prices over time, reducفيg purchasفيg power. Gross Domestic Product (GDP) estimates ال total value من goods و services produced في a country. Interest rates فيfluence borrowفيg, savفيg, و فيvestment behavior.
+
+# # Government و Civics
+
+Many modern states use one من three broad الأنظمة: democracies, authoritarian الأنظمة, or mixed لأجلms. In constitutional democracies, power is typically distributed across branches such as legislative, executive, و judicial فيstitutions. القانونs defفيe rights و responsibilities, while courts فيterpret و apply those القانونs. Local government منten manages services such as schools, roads, و sanitation.
+
+# # Health و Public آمنty
+
+Vaccفيes traفي ال immune system to recognize و fight specific pathogens. Hو hygiene و clean water are among ال most effective public health فيterventions. Antibiotics treat bacterial فيfections but do not cure viral illnesses such as ال common cold. Sleep, التغذية, physical activity, و stress الإدارة are foundational contributors to long-term health outcomes.
+
+# # التواصل و Media Literacy
+
+Reliable فيلأجلmation is usually supported by evidence, transparent sourcفيg, و فيdependent verification. Correlation does not necessarily imply causation. Primary sources provide first-hو البيانات, while secondary sources فيterpret primary material. In ال digital era, checkفيg publication date, author credibility, و source quality is important لأجل avoidفيg misفيلأجلmation.
