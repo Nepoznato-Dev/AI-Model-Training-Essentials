@@ -5,6 +5,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+```markdown
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
 *.class
@@ -80,6 +84,22 @@ dmypy.json
 # ==========================================
 # Logs and temporary files
 # ==========================================
+*.so
+*.a
+*.out
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+dist/
+build/
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
+
+# Logs and temp files
 *.log
 *.tmp
 *.swp
@@ -156,6 +176,26 @@ Thumbs.db
 # ==========================================
 # Compressed / Archive files
 # ==========================================
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
 *.zip
 *.gz
 *.tar
@@ -178,3 +218,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+```
