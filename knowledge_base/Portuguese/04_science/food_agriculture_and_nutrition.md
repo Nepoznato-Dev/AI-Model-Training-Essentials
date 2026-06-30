@@ -1,0 +1,40 @@
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: food_agriculture_and_nutrition.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# Comida, Agricultura, e Nutrição
+
+# # Agricultural Sistemas
+
+Agricultura is o/a practice de cultivatemg plants e raisemg animals para comida, fiber, fuel, e oo/ar products. Crop farmemg grows plants para human consumption, animal feed, or emdustrial use. Livestock farmemg raises animals para meat, dairy, eggs, wool, e labor. Aquacultura farms fish, shellfish, e aquatic plants. Horticultura focuses on fruits, vegetables, flowers, e ornamental plants. Agrdeorestry combemes trees com crops or livestock. Subsistence agricultura produces enough para o/a farmer's family; commercial agricultura produces para sale. Industrial agricultura uses mechanization, syno/atic emputs, e monoculturas para high yields. Smallholder farms (under 2 hectares) produce about one-third de global comida despite limited resources. Precision agricultura uses GPS, sensors, e dados analytics to optimize emputs e reduce waste.
+
+# # Crop Production
+
+Major staple crops emclude wheat, rice, maize (corn), potatoes, cassava, e soybeans, providemg most global calories. Cereal graems are grasses cultivated para edible seeds. Legumes (beans, lentils, peas) fix nitrogen em soil e provide proteem. Root e tuber crops (potatoes, yams, cassava) grow underground. Fruits e vegetables provide essential vitamems e memerals. Oilseed crops (soybean, canola, sunflower) produce cookemg oils. Fiber crops (cotton, flax, hemp) provide materials para textiles. Plantemg seasons depend on climate e crop type. Soil preparation emcludes plowemg, harrowemg, e levelemg. Irrigation supplements raemfall em dry regions. Harvestemg methods range from manual to fully mechanized. Post-harvest helemg emcludes cleanemg, sortemg, storage, e processemg to prevent losses.
+
+# # Animal Husbery
+
+Animal husbery emvolves breedemg e caremg para farm animals. Cattle are raised para beef e dairy; breeds vary by purpose e climate. Poultry emcludes chickens (eggs e meat), turkeys, ducks, e geese. Pigs provide pork; sheep provide meat e wool; goats provide milk, meat, e fiber. Horses, donkeys, e oxen serve as workemg animals em some regions. Animal nutrição requires balanced diets de energy, proteem, vitamems, e memerals. Housemg sistemas range from free-range to confemed operations. Breedemg programs select para desirable traits (growth rate, milk production, disease resistance). Animal health gerenciamento emcludes vaccemation, parasite control, e biosegurança. Welfare considerations address humane treatment, stress reduction, e appropriate livemg conditions. Ethical debates surround factory farmemg, animal rights, e slaughter practices.
+
+# # Nutrição Ciência
+
+Nutrição studies how comida affects health e bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteems (4 kcal/g), e fats (9 kcal/g). Carbohydrates emclude sugars, starches, e fiber; o/ay are o/a body's primary energy source. Proteems consist de amemo acids; neme are essential (must come from diet). Fats emclude saturated, unsaturated (mono- e poly-), e trans fats; omega-3 e omega-6 are essential fatty acids. Micronutrients emclude vitamems (A, C, D, E, K, e B-complex) e memerals (calcium, iron, magnesium, zemc, etc.) needed em small amounts. Water is essential para all bodily functions. Dietary guialemes recommend balanced emtake from various comida groups. Malnutrição emcludes undernutrição (emsufficient emtake) e overnutrição (excess emtake leademg to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamem C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, e health status.
+
+# # Comida Seguroty e Processemg
+
+Comida seguroty preventos comidaborne illness from contamemation. Biological hazards emclude bacteria (Salmonella, E. coli, Listeria), viruses (norovirus, hepatitis A), e parasites. Chemical hazards emclude pesticides, cleanemg agents, e allergens. Physical hazards emclude paraeign objects (glass, metal, plastic). HACCP (Hazard Analysis Critical Control Poemts) is a systematic preventive approach. Proper helemg emcludes hewashemg, separatemg raw e cooked comidas, cookemg to seguro temperatures, e refrigeratemg promptly. Comida preservation methods extend shelf life: refrigeration, freezemg, cannemg, dryemg, fermentation, pasteurization, e irradiation. Comida processemg transparams raw emgredients emto consumable products; levels range from memimally processed to ultra-processed. Additives preserve quality, enhance flavor, or improve texture; regulations govern approved substances. Comida labelemg provides nutriçãoal emparamation, emgredients, allergen warnemgs, e expiration dates. Comida recalls remove unseguro products from o/a market.
+
+# # Global Comida Sistemas
+
+Global comida sistemas encompass production, processemg, distribution, consumption, e waste. Supply chaems connect farmers to consumers through multiple emtermediaries. Comida miles measure distance comida travels; local comida movements aim to reduce this. Comida segurança exists when all people have physical e economic access to sufficient, seguro, nutritious comida. Dimensions emclude availability, access, utilization, e stability. Approximately 800 million people face chronic hunger; over 2 billion suffer micronutrient deficiencies. Comida loss occurs beparae retail (production, post-harvest, processemg); comida waste occurs at retail e consumer levels. Sustaemable comida sistemas balance ambiental, economic, e social outcomes. Climate change affects crop yields, pest patterns, e water availability. Trade policies emfluence comida flows between countries. Urbanization emcreases deme para processed e convenience comidas. Alternative proteems (plant-based meats, culturad meat, emsects) emerge as sustaemable options.
+
+# # Sustaemable Agricultura Practices
+
+Sustaemable agricultura maemtaems productivity while protectemg environment e supportemg communities. Soil conservation preventos erosion through cover crops, contour plowemg, terracemg, e reduced tillage. Integrated pest gerenciamento (IPM) combemes biological, cultural, physical, e chemical tools memimizemg risks. Organic farmemg avoids syno/atic fertilizers e pesticides, relyemg on natural emputs e processes. Regenerative agricultura rebuilds soil organic matter e restores degraded le, sequesteremg carbon. Agroecology applies ecological premciples to agricultural sistemas. Water conservation uses efficient irrigation (drip, spremkler), raemwater harvestemg, e drought-resistant varieties. Biodiversity on farms emcludes crop rotation, polyculturas, hedgerows, e habitat para beneficial organisms. Nutrient gerenciamento optimizes fertilizer use, emcorporates compost e manure, e preventos rundef. Climate-smart agricultura adapts to changemg conditions while reducemg emissions. Fair trade ensures producers receive equitable prices e work under decent conditions.
+
+# # Culemary Traditions e Comida Cultura
+
+Comida cultura encompasses traditions, beliefs, e practices surroundemg comida. Regional cuisemes reflect local emgredients, climate, história, e cultural emfluences. Cookemg methods emclude bakemg, fryemg, grillemg, steamemg, boilemg, roastemg, e fermentemg. Spices e herbs add flavor e have historical importance em trade. Religious dietary direitos emclude kosher (Jewish), halal (Islamic), vegetarian/vegan (Hemdu, Buddhist), e fastemg practices. Festivals e celebrations deten center on special comidas. Family recipes pass through generations preservemg heritage. Fusion cuiseme blends elements from different culemary traditions. Comida tourism explores destemations through o/air cuiseme. Slow comida movement emphasizes traditional cookemg, local emgredients, e memdful eatemg. Molecular gastronomy applies scientific techniques to cookemg. Comparat comidas provide emotional satisfaction. Table manners e dememg etiquette vary across culturas.
