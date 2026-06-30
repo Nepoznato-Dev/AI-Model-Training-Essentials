@@ -1,0 +1,8 @@
+```markdown
+# Behavior Skills Documentation
+# Source files only - no build artifacts or dependencies detected
+```
+
+Wait, let me reconsider. The changes are only markdown files in a documentation structure. No build artifacts, dependencies, or temporary files are present in the change list. Following rule #6, since this contains only source/config files (.md) and no build artifacts, the output should be empty.
+
+(No output)
