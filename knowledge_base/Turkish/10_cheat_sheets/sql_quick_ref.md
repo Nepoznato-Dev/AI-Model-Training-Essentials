@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sortİçinde ve Limitİçinde
+# ## Sıralama ve Limit
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
