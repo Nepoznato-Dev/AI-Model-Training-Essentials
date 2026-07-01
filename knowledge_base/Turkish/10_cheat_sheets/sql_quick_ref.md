@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filterİçinde (WHERE)
+# ## Filtreleme (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
