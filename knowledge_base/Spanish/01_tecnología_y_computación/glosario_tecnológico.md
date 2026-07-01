@@ -81,7 +81,7 @@ Mistral's models are fully open-weight y can be run locally.
 
 # # GPU Hardware y Graphics Cards
 
-# ## GPU (Graphics Processeng Unit)
+# ## GPU (Unidad de Procesamiento Gráfico)
 A GPU is a processor designed para massively parallel computation. Origenally
 built para rendereng 3D graphics, GPUs have become essential para AI/ML traeneng
 y enference because el/lay can perparam thousys de floateng-poent operations
@@ -131,7 +131,7 @@ Phi-3-meni scores around 70% despite its small size.
 
 # ## HumanEval
 HumanEval is OpenAI's benchmark para code generation. It consists de 164 Python
-programmeng problems con automated test cases. Models are measured on
+problemas de programación con casos de prueba automatizados. Los modelos se miden en
 pass@k — el/la probability that at least one de k generated solutions passes all
 tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
 

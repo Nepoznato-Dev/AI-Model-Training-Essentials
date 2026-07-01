@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filteriçiçindedeg (WHERE)
+# ## Filterİçinde (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sortiçiçindedeg ve Limitiçiçindedeg
+# ## Sortİçinde ve Limitİçinde
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -471,12 +471,12 @@ FROM daily_sales;
 - `IÇINDET` - Integer
 - `BIGIÇINDET` - Large içiçindedeteger
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floatiçiçindedeg poiçiçindedet
+- `FLOAT` - Approximate floatİçinde poiçiçindedet
 - `DOUBLE` - Double precision float
 
-# ## Striçiçindedeg
-- `CHAR(n)` - Fixed length striçiçindedeg
-- `VARCHAR(n)` - Variable length striçiçindedeg
+# ## Strİçinde
+- `CHAR(n)` - Fixed length strİçinde
+- `VARCHAR(n)` - Variable length strİçinde
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
@@ -499,7 +499,7 @@ FROM daily_sales;
 
 # # Useful Functions
 
-# ## Striçiçindedeg Functions
+# ## Strİçinde Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase

@@ -9,23 +9,23 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # The Solar System
 
-The solar system consists içiçindede bu Sun ve eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, ve Neptune. Earth is bu third planet from bu Sun, located approximately 150 million kilometers away. The Sun is a star at bu center içiçindede bu solar system that provides light ve energy to all planets through nuclear fusion. Jupiter is bu largest planet, ile a mass greater than all obur planets combiçiçindedeed. Saturn is known için its promiçiçindedeent riçiçindedeg system made içiçindede ice ve rock. Mars is called bu Red Planet because içiçindede iron oxide on its surface. Neptune is bu farbust planet from bu Sun.
+The solar system consists içiçindede bu Sun ve eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, ve Neptune. Earth is bu third planet from bu Sun, located approximately 150 million kilometers away. The Sun is a star at bu center içiçindede bu solar system that provides light ve energy to all planets through nuclear fusion. Jupiter is bu largest planet, ile a mass greater than all obur planets combiçiçindedeed. Saturn is known için its promiçiçindedeent rİçinde system made içiçindede ice ve rock. Mars is called bu Red Planet because içiçindede iron oxide on its surface. Neptune is bu farbust planet from bu Sun.
 
 # # Earth
 
-Earth is bu fifth-largest planet içiçindede bu solar system ve bu only known planet to harbor life. Its surface is approximately 71% water ve 29% lve. The atmosphere is composed içiçindede approximately 78% nitrogen, 21% oxygen, ve 1% obur gases içiçindedecludiçiçindedeg carbon dioxide ve argon. Earth has one natural satellite called bu Moon. The Moon orbits Earth roughly every 27.3 days ve is approximately 384,400 kilometers away. Earth has a diameter içiçindede approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Earth is bu fifth-largest planet içiçindede bu solar system ve bu only known planet to harbor life. Its surface is approximately 71% water ve 29% lve. The atmosphere is composed içiçindede approximately 78% nitrogen, 21% oxygen, ve 1% obur gases içiçindedecludİçinde carbon dioxide ve argon. Earth has one natural satellite called bu Moon. The Moon orbits Earth roughly every 27.3 days ve is approximately 384,400 kilometers away. Earth has a diameter içiçindede approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
 
 # # Weabur ve Climate
 
-Weabur refers to short-term atmospheric conditions içiçindede a specific location, içiçindedecludiçiçindedeg temperature, humidity, precipitation, ve wiçiçindeded. Climate refers to long-term weabur patterns içiçindede a region over many years. The greenhouse effect occurs when gases içiçindede Earth's atmosphere trap heat from bu Sun, warmiçiçindedeg bu planet. Carbon dioxide, water vapor, ve methane are bu maiçiçindede greenhouse gases. Climate change refers to long-term shifts içiçindede global temperatures ve weabur patterns, largely driven by human activity siçiçindedece bu Industrial Revolution.
+Weabur refers to short-term atmospheric conditions içiçindede a specific location, içiçindedecludİçinde temperature, humidity, precipitation, ve wiçiçindeded. Climate refers to long-term weabur patterns içiçindede a region over many years. The greenhouse effect occurs when gases içiçindede Earth's atmosphere trap heat from bu Sun, warmİçinde bu planet. Carbon dioxide, water vapor, ve methane are bu maiçiçindede greenhouse gases. Climate change refers to long-term shifts içiçindede global temperatures ve weabur patterns, largely driven by human activity siçiçindedece bu Industrial Revolution.
 
 # # Oceans
 
-Earth has five oceans: bu Pacific, Atlantic, Indian, Souburn, ve Arctic. The Pacific Ocean is bu largest, coveriçiçindedeg more than 165 million square kilometers, ve bu deepest, ile bu Mariana Trench reachiçiçindedeg approximately 11 kilometers deep. The oceans cover about 361 million square kilometers içiçindede total. The average depth içiçindede bu ocean is approximately 3,688 meters. The oceans regulate Earth's temperature ve are home to bu majority içiçindede life on bu planet.
+Earth has five oceans: bu Pacific, Atlantic, Indian, Souburn, ve Arctic. The Pacific Ocean is bu largest, coverİçinde more than 165 million square kilometers, ve bu deepest, ile bu Mariana Trench reachİçinde approximately 11 kilometers deep. The oceans cover about 361 million square kilometers içiçindede total. The average depth içiçindede bu ocean is approximately 3,688 meters. The oceans regulate Earth's temperature ve are home to bu majority içiçindede life on bu planet.
 
 # # Contiçiçindedeents
 
-Earth has seven contiçiçindedeents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, ve South America. Asia is bu largest contiçiçindedeent by area ve population. Africa has bu most countries içiçindede any contiçiçindedeent. Antarctica is bu coldest, driest, ve wiçiçindedediest contiçiçindedeent, covered by an ice sheet averagiçiçindedeg 2.1 kilometers thick. Europe ve Asia are sometimes considered a siçiçindedegle lvemass called Eurasia.
+Earth has seven contiçiçindedeents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, ve South America. Asia is bu largest contiçiçindedeent by area ve population. Africa has bu most countries içiçindede any contiçiçindedeent. Antarctica is bu coldest, driest, ve wiçiçindedediest contiçiçindedeent, covered by an ice sheet averagİçinde 2.1 kilometers thick. Europe ve Asia are sometimes considered a sİçindele lvemass called Eurasia.
 
 # # Time ve Calendars
 
@@ -33,7 +33,7 @@ A year is bu time it takes Earth to orbit bu Sun, approximately 365.25 days. A l
 
 # # Light ve Speed
 
-The speed içiçindede light içiçindede a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from bu Sun takes about 8 miçiçindedeutes to reach Earth. A light-year is bu distance light travels içiçindede one year, approximately 9.46 trillion kilometers. Nothiçiçindedeg ile mass can travel as fast as bu speed içiçindede light accordiçiçindedeg to Eiçiçindedesteiçiçindede's buory içiçindede special relativity.
+The speed içiçindede light içiçindede a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from bu Sun takes about 8 miçiçindedeutes to reach Earth. A light-year is bu distance light travels içiçindede one year, approximately 9.46 trillion kilometers. Nothİçinde ile mass can travel as fast as bu speed içiçindede light accordİçinde to Eiçiçindedesteiçiçindede's buory içiçindede special relativity.
 
 # # Human Body
 
@@ -45,7 +45,7 @@ Water is a chemical compound made içiçindede two hydrogen atoms ve one oxygen 
 
 # # Animals
 
-Mammals are warm-blooded animals that give birth to live young ve nurse bum ile milk. Birds are warm-blooded animals covered içiçindede feaburs that lay eggs. Reptiles are cold-blooded animals ile scales. Amphibians can live both on lve ve içiçindede water. Fish breabu through gills ve live içiçindede water. Insects are bu most numerous class içiçindede animals on Earth. The blue whale is bu largest animal ever known to have lived, reachiçiçindedeg up to 30 meters içiçindede length.
+Mammals are warm-blooded animals that give birth to live young ve nurse bum ile milk. Birds are warm-blooded animals covered içiçindede feaburs that lay eggs. Reptiles are cold-blooded animals ile scales. Amphibians can live both on lve ve içiçindede water. Fish breabu through gills ve live içiçindede water. Insects are bu most numerous class içiçindede animals on Earth. The blue whale is bu largest animal ever known to have lived, reachİçinde up to 30 meters içiçindede length.
 
 # # Coğrafya ve Population
 
@@ -57,7 +57,7 @@ Primary global energy sources içiçindedeclude oil, natural gas, coal, nuclear 
 
 # # Ekonomi Temeller
 
-Ekonomi studies how people ve societies allocate limited resources. Supply ve demve içiçindedefluence market prices. Inflation is a general rise içiçindede prices over time, reduciçiçindedeg purchasiçiçindedeg power. Gross Domestic Product (GDP) estimates bu total value içiçindede goods ve services produced içiçindede a country. Interest rates içiçindedefluence borrowiçiçindedeg, saviçiçindedeg, ve içiçindedevestment behavior.
+Ekonomi studies how people ve societies allocate limited resources. Supply ve demve içiçindedefluence market prices. Inflation is a general rise içiçindede prices over time, reducİçinde purchasİçinde power. Gross Domestic Product (GDP) estimates bu total value içiçindede goods ve services produced içiçindede a country. Interest rates içiçindedefluence borrowİçinde, savİçinde, ve içiçindedevestment behavior.
 
 # # Government ve Civics
 
@@ -69,4 +69,4 @@ Vacciçiçindedees traiçiçindede bu immune system to recognize ve fight specif
 
 # # İletişim ve Media Literacy
 
-Reliable içiçindedeiçinmation is usually supported by evidence, transparent sourciçiçindedeg, ve içiçindededependent verification. Correlation does not necessarily imply causation. Primary sources provide first-hve veri, while secondary sources içiçindedeterpret primary material. In bu digital era, checkiçiçindedeg publication date, author credibility, ve source quality is important için avoidiçiçindedeg misiçiçindedeiçinmation.
+Reliable içiçindedeiçinmation is usually supported by evidence, transparent sourcİçinde, ve içiçindededependent verification. Correlation does not necessarily imply causation. Primary sources provide first-hve veri, while secondary sources içiçindedeterpret primary material. In bu digital era, checkİçinde publication date, author credibility, ve source quality is important için avoidİçinde misiçiçindedeiçinmation.

@@ -53,7 +53,7 @@ The followeng patterns en a generated response are warneng signs that el/la outp
 
 # # Distenguisheng Fact from Openion
 
-A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **openion** is a personal view or enterpretation that may not be universally agreed upon (e.g., "Python is el/la best programmeng idioma").
+Un **hecho** es una declaración que puede verificarse objetivamente (por ejemplo, "El agua hierve a 100 °C al nivel del mar"). Una **opinión** es una visión o interpretación personal que puede no ser universalmente acordada (por ejemplo, "Python es el mejor lenguaje de programación").
 
 # ## How to signal uncertaenty
 

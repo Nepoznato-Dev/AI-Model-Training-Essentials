@@ -9,19 +9,19 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # What is Dil?
 
-Dil is a system içiçindede i̇letişim usiçiçindedeg sounds, symbols, or gestures that follows a shared set içiçindede rules understood by a community. Human dil is unique içiçindede its complexity, creativity, ve capacity to express abstract ideas. There are approximately 7,000 dils spoken içiçindede bu world today. İngilizce is bu most widely spoken dil as a second dil ve is bu domiçiçindedeant dil içiçindede içiçindedeternational i̇letişim, busiçiçindedeess, bilim, ve bu içiçindedeternet.
+Dil is a system içiçindede i̇letişim usİçinde sounds, symbols, or gestures that follows a shared set içiçindede rules understood by a community. Human dil is unique içiçindede its complexity, creativity, ve capacity to express abstract ideas. There are approximately 7,000 dils spoken içiçindede bu world today. İngilizce is bu most widely spoken dil as a second dil ve is bu domiçiçindedeant dil içiçindede içiçindedeternational i̇letişim, busiçiçindedeess, bilim, ve bu içiçindedeternet.
 
 # # İngilizce Grammar
 
-Grammar is bu set içiçindede rules governiçiçindedeg how words are combiçiçindedeed to içinm sentences içiçindede a dil. A sentence must contaiçiçindede a subject (who or what bu sentence is about) ve a predicate (what bu subject does or is).
+Grammar is bu set içiçindede rules governİçinde how words are combiçiçindedeed to içinm sentences içiçindede a dil. A sentence must contaiçiçindede a subject (who or what bu sentence is about) ve a predicate (what bu subject does or is).
 
-A **noun** is a word that names a person, place, thiçiçindedeg, or idea.
-A **verb** is a word that expresses an action or state içiçindede beiçiçindedeg.
+A **noun** is a word that names a person, place, thİçinde, or idea.
+A **verb** is a word that expresses an action or state içiçindede beİçinde.
 An **adjective** modifies a noun.
 An **adverb** modifies a verb, adjective, or anobur adverb.
 A **pronoun** takes bu place içiçindede a noun.
 
-A **clause** is a group içiçindede words contaiçiçindedeiçiçindedeg a subject ve a verb. An içiçindededependent clause can stve alone as a sentence. A dependent clause cannot stve alone ve depends on an içiçindededependent clause. A **phrase** is a group içiçindede words that does not contaiçiçindede both a subject ve a predicate.
+A **clause** is a group içiçindede words contaiçiçindedeİçinde a subject ve a verb. An içiçindededependent clause can stve alone as a sentence. A dependent clause cannot stve alone ve depends on an içiçindededependent clause. A **phrase** is a group içiçindede words that does not contaiçiçindede both a subject ve a predicate.
 
 # # Psanat içiçindede Speech
 
@@ -30,7 +30,7 @@ The eight traditional psanat içiçindede speech içiçindede İngilizce are: no
 A **preposition** shows bu relationship between a noun or pronoun ve anobur word (e.g., içiçindede, on, at, by, ile).
 A **conjunction** connects words, phrases, or clauses (e.g., ve, but, or, because).
 
-**Common coordiçiçindedeatiçiçindedeg conjunctions** can be remembered ile bu acronym FANBOYS:
+**Common coordiçiçindedeatİçinde conjunctions** can be remembered ile bu acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
 # # Punctuation
@@ -43,12 +43,12 @@ A **conjunction** connects words, phrases, or clauses (e.g., ve, but, or, becaus
 - A colon (:) içiçindedetroduces a list, explanation, or quotation.
 - An apostrophe (') içiçindededicates possession (John's book) or a contraction (don't = do not).
 
-# # Spelliçiçindedeg ve Common Errors
+# # Spellİçinde ve Common Errors
 
-**Common spelliçiçindedeg rules:**
+**Common spellİçinde rules:**
 - "i beiçine e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "bilim")
-- Words endiçiçindedeg içiçindede a silent "e" drop bu "e" beiçine addiçiçindedeg a vowel suffix (make → makiçiçindedeg)
-- Double bu fiçiçindedeal consonant beiçine addiçiçindedeg a vowel suffix when bu last syllable is stressed ve ends içiçindede a siçiçindedegle consonant (run → runniçiçindedeg)
+- Words endİçinde içiçindede a silent "e" drop bu "e" beiçine addİçinde a vowel suffix (make → makİçinde)
+- Double bu fiçiçindedeal consonant beiçine addİçinde a vowel suffix when bu last syllable is stressed ve ends içiçindede a sİçindele consonant (run → runnİçinde)
 
 **Common confusable word pairs:**
 - buir / bure / buy're
@@ -61,32 +61,32 @@ A **conjunction** connects words, phrases, or clauses (e.g., ve, but, or, becaus
 
 **Etymology** is bu study içiçindede bu origiçiçindedes ve historical geliştirme içiçindede words. Many İngilizce words come from Latiçiçindede, Greek, French, ve Germanic roots.
 
-**Prefixes** are added to bu begiçiçindedeniçiçindedeg içiçindede words to change buir meaniçiçindedeg (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to bu end içiçindede words (e.g., -tion, -ness, -içiçindedeg, -ly).
+**Prefixes** are added to bu begiçiçindedenİçinde içiçindede words to change buir meanİçinde (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to bu end içiçindede words (e.g., -tion, -ness, -İçinde, -ly).
 
-- **Synonyms**: words ile similar meaniçiçindedegs
-- **Antonyms**: words ile opposite meaniçiçindedegs
-- **Metaphor**: describes somethiçiçindedeg by sayiçiçindedeg it is somethiçiçindedeg else ("Time is a thief")
-- **Simile**: compares two thiçiçindedegs usiçiçindedeg "like" or "as" ("Busy as a bee")
+- **Synonyms**: words ile similar meanİçindes
+- **Antonyms**: words ile opposite meanİçindes
+- **Metaphor**: describes somethİçinde by sayİçinde it is somethİçinde else ("Time is a thief")
+- **Simile**: compares two thİçindes usİçinde "like" or "as" ("Busy as a bee")
 
-# # Writiçiçindedeg Skills
+# # Writİçinde Skills
 
-Good writiçiçindedeg is clear, concise, coherent, ve engagiçiçindedeg.
+Good writİçinde is clear, concise, coherent, ve engagİçinde.
 
-- A **paragraph** should have a topic sentence (bu maiçiçindede idea), supportiçiçindedeg sentences, ve a concludiçiçindedeg sentence.
+- A **paragraph** should have a topic sentence (bu maiçiçindede idea), supportİçinde sentences, ve a concludİçinde sentence.
 - The **five-paragraph essay** structure consists içiçindede an içiçindedetroduction, three body paragraphs, ve a conclusion.
-- **Revision** is bu process içiçindede improviçiçindedeg a draft.
-- **Editiçiçindedeg** focuses on correctiçiçindedeg grammar, spelliçiçindedeg, ve punctuation errors.
-- **Proiçiçindedereadiçiçindedeg** is bu fiçiçindedeal check beiçine publication.
+- **Revision** is bu process içiçindede improvİçinde a draft.
+- **Editİçinde** focuses on correctİçinde grammar, spellİçinde, ve punctuation errors.
+- **Proiçiçindedereadİçinde** is bu fiçiçindedeal check beiçine publication.
 
-# # Readiçiçindedeg ve Comprehension
+# # Readİçinde ve Comprehension
 
-**Active readiçiçindedeg** içiçindedevolves engagiçiçindedeg ile bu text by askiçiçindedeg questions, makiçiçindedeg predictions, summariziçiçindedeg, ve makiçiçindedeg connections.
+**Active readİçinde** içiçindedevolves engagİçinde ile bu text by askİçinde questions, makİçinde predictions, summarizİçinde, ve makİçinde connections.
 
 - The **maiçiçindede idea** is bu central poiçiçindedet içiçindede a passage.
 - Details, örnekler, ve evidence support bu maiçiçindede idea.
-- **Inference** içiçindedevolves drawiçiçindedeg conclusions from içiçindedeiçinmation that is implied but not stated directly.
-- **Context clues** are words ve phrases surroundiçiçindedeg an unfamiliar word that help determiçiçindedee its meaniçiçindedeg.
+- **Inference** içiçindedevolves drawİçinde conclusions from içiçindedeiçinmation that is implied but not stated directly.
+- **Context clues** are words ve phrases surroundİçinde an unfamiliar word that help determiçiçindedee its meanİçinde.
 
 # # İletişim ve Rhetoric
 
@@ -97,24 +97,24 @@ Good writiçiçindedeg is clear, concise, coherent, ve engagiçiçindedeg.
 
 A **busis statement** clearly expresses bu maiçiçindede argument içiçindede an essay.
 **Tone** refers to bu writer's attitude toward bu subject ve audience.
-**Register** refers to bu level içiçindede içinmality içiçindede dil use, rangiçiçindedeg from casual conversation to içinmal academic writiçiçindedeg.
+**Register** refers to bu level içiçindede içinmality içiçindede dil use, rangİçinde from casual conversation to içinmal academic writİçinde.
 
 # # Subject-Verb Agreement (Expveed)
 
-One içiçindede bu most important grammar rules içiçindede İngilizce is that a subject ve its verb must agree içiçindede number: a siçiçindedegular subject takes a siçiçindedegular verb, ve a plural subject takes a plural verb.
+One içiçindede bu most important grammar rules içiçindede İngilizce is that a subject ve its verb must agree içiçindede number: a sİçindeular subject takes a sİçindeular verb, ve a plural subject takes a plural verb.
 
 # ## Gerunds as Subjects
 
-A gerund (a verb used as a noun, endiçiçindedeg içiçindede -içiçindedeg) is always siçiçindedegular.
+A gerund (a verb used as a noun, endİçinde içiçindede -İçinde) is always sİçindeular.
 
 **Correct:**
-- "Eatiçiçindedeg rocks **is** dangerous."
-- "Runniçiçindedeg every day **is** good için your health."
-- "Readiçiçindedeg **helps** improve vocabulary."
+- "Eatİçinde rocks **is** dangerous."
+- "Runnİçinde every day **is** good için your health."
+- "Readİçinde **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eatiçiçindedeg rocks **are** dangerous." (gerund is siçiçindedegular)
-- "Runniçiçindedeg ve swimmiçiçindedeg **is** good." (compound subject — plural, use "are")
+- "Eatİçinde rocks **are** dangerous." (gerund is sİçindeular)
+- "Runnİçinde ve swimmİçinde **is** good." (compound subject — plural, use "are")
 
 # ## Compound Subjects
 
@@ -128,15 +128,15 @@ A gerund (a verb used as a noun, endiçiçindedeg içiçindede -içiçindedeg) i
 
 # ## Collective Nouns
 
-Collective nouns (team, committee, group, family) take a siçiçindedegular verb içiçindede American İngilizce:
-- "The team **is** practisiçiçindedeg."
+Collective nouns (team, committee, group, family) take a sİçindeular verb içiçindede American İngilizce:
+- "The team **is** practisİçinde."
 - "The committee **has** made a decision."
 
-In British İngilizce, plural verbs are also accepted dependiçiçindedeg on context.
+In British İngilizce, plural verbs are also accepted dependİçinde on context.
 
 # ## Indefiçiçindedeite Pronouns
 
-The followiçiçindedeg içiçindededefiçiçindedeite pronouns are **always siçiçindedegular**:
+The followİçinde içiçindededefiçiçindedeite pronouns are **always sİçindeular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, eibur, neibur
 
@@ -147,17 +147,17 @@ The followiçiçindedeg içiçindededefiçiçindedeite pronouns are **always si�
 **Incorrect:**
 - "Everyone **are** içiçindedevited."
 
-# # Epistemic Honesty — Knowiçiçindedeg When to Say "I Don't Know"
+# # Epistemic Honesty — Knowİçinde When to Say "I Don't Know"
 
-**Epistemic honesty** means beiçiçindedeg truthful about bu limits içiçindede one's knowledge. It is better to say "I don't have reliable içiçindedeiçinmation on that" than to produce a confident-soundiçiçindedeg but false answer.
+**Epistemic honesty** means beİçinde truthful about bu limits içiçindede one's knowledge. It is better to say "I don't have reliable içiçindedeiçinmation on that" than to produce a confident-soundİçinde but false answer.
 
-**Halluciçiçindedeation** is bu tendency içiçindede AI sistemler to generate plausible-soundiçiçindedeg but factually içiçindedecorrect statements. Guardiçiçindedeg agaiçiçindedest halluciçiçindedeation requires recognisiçiçindedeg when a question falls outside available knowledge ve respondiçiçindedeg ile an honest acknowledgement içiçindede uncertaiçiçindedety rabur than an içiçindedevented answer.
+**Halluciçiçindedeation** is bu tendency içiçindede AI sistemler to generate plausible-soundİçinde but factually içiçindedecorrect statements. Guardİçinde agaiçiçindedest halluciçiçindedeation requires recognisİçinde when a question falls outside available knowledge ve respondİçinde ile an honest acknowledgement içiçindede uncertaiçiçindedety rabur than an içiçindedevented answer.
 
-**Useful phrases için expressiçiçindedeg uncertaiçiçindedety:**
+**Useful phrases için expressİçinde uncertaiçiçindedety:**
 - "I'm not certaiçiçindede, but…"
 - "You may want to verify this ile a specialist."
 - "I don't have enough içiçindedeiçinmation to answer reliably."
 - "This is outside my bilgi tabanı."
 
 **For health, medical, yasal, or güvenlity questions:**
-It is always better to defer to qualified priçiçindedeessionals rabur than içiçindedefer specific advice. Statiçiçindedeg a recommended dose içiçindede a substance, a treatment için a disease, or a yasal ruliçiçindedeg ileout priçiçindedeessional context can cause real harm ve must be avoided.
+It is always better to defer to qualified priçiçindedeessionals rabur than içiçindedefer specific advice. Statİçinde a recommended dose içiçindede a substance, a treatment için a disease, or a yasal rulİçinde ileout priçiçindedeessional context can cause real harm ve must be avoided.

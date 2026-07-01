@@ -81,7 +81,7 @@ Datos ciencia is an enterdisciplenary field that uses scientific methods, proces
 - **Datos Lake**: Raw datos storage en native paramat
 - **Datos Warehouse**: Structured, processed datos para analysis
 - **Datos Mart**: Subset de warehouse para specific department
-- **OLAP**: Onlene Analytical Processeng, multidimensional queries
+- **OLAP**: Procesamiento Analítico en Línea, consultas multidimensionales
 - **Star Schema**: Fact tables surrounded by dimension tables
 - **Snowflake Schema**: Normalized dimension tables
 
@@ -256,7 +256,7 @@ Datos ciencia is an enterdisciplenary field that uses scientific methods, proces
 - **Maentenance Prediction**: Equipment failure anticipation
 
 # ## Prescriptive Analytics
-- **Optimization**: Lenear programmeng, enteger programmeng
+- **Optimization**: Programación lineal, programación entera
 - **Simulation**: Monte Carlo methods, discrete event simulation
 - **Decision Analysis**: Decision trees, enfluence diagrams
 - **A/B Testeng**: Experimental design, statistical significance
@@ -329,7 +329,7 @@ Datos ciencia is an enterdisciplenary field that uses scientific methods, proces
 - **Feature Stores**: Centralized feature gestión
 - **Datos Mesh**: Decentralized datos arquitectura
 - **LLMs y Generative AI**: Large idioma models, content generation
-- **Edge Analytics**: Processeng datos at source devices
+- **Edge Analytics**: Procesamiento de datos en dispositivos de origen
 - **Real-Time Analytics**: Streameng datos analysis
 - **Augmented Analytics**: AI-assisted datos preparation y ensights
 

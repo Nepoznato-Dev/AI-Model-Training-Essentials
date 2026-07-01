@@ -9,11 +9,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # What is a Computer?
 
-A computer is an electronic device that processes données accorddansg to a set de dansstructions called a program. Modern computers are based on le/la von Neumann architecture, which consists de a central processdansg unit (CPU), memory, storage, et dansput/output devices. The CPU executes dansstructions. RAM (retom access memory) stores données temporarily while le/la computer is runndansg. Storage devices such as SSDs et hard drives store données permanently.
+A computer is an electronic device that processes données accorddansg to a set de instructions called a program. Modern computers are based on le/la von Neumann architecture, which consists de a central processdansg unit (CPU), memory, storage, et dansput/output devices. The CPU executes instructions. RAM (retom access memory) stores données temporarily while le/la computer is runndansg. Storage devices such as SSDs et hard drives store données permanently.
 
 # # Programmdansg Langues
 
-A programmdansg langue is a pourmal langue used to write dansstructions pour computers. Python is a high-level, dansterpreted, general-purpose programmdansg langue known pour its simple syntaxe et readability. It is widely used dans données science, machdanse learndansg, web développement, et automation. JavaScript is le/la primary langue pour web développement et runs dans browsers. Java is a compiled, object-oriented langue used widely dans enterprise sdetware et Android développement. C et C++ are lower-level langues that give fdanse-gradansed control over hardware et are used dans system programmdansg, game développement, et perpourmance-critical applications. Rust is a modern systèmes programmdansg langue focused on sûrty et perpourmance.
+A programmation langue is a formelle langue used to write instructions pour computers. Python is a high-level, interprétée, general-purpose programmation langue known pour its simple syntaxe et readability. It is widely used dans science des données, apprentissage automatique, développement web, et automation. JavaScript is la principale langue pour développement web et runs dans browsers. Java is a compiled, object-oriented langue used widely dans enterprise logiciels et Android développement. C et C++ are lower-level langues that give finement contrôlé control over hardware et are used dans system programmation, game développement, et performance-critical applications. Rust is a modern systèmes programmation langue focused on sécurité et performance.
 
 # # How le/la Internet Works
 
@@ -25,7 +25,7 @@ TCP/IP is le/la foundational protocol suite de le/la dansternet. IP (Internet Pr
 
 # # Artificial Intelligence
 
-Artificial danstelligence (AI) is le/la simulation de human danstelligence by machdanses, particularly computer systèmes. Machdanse learndansg is a subset de AI dans which systèmes learn from données to make predictions or decisions avecout bedansg explicitly programmed. Deep learndansg is a subset de machdanse learndansg that uses réseaux de neurones avec many layers. Neural réseaus are computational models loosely dansspired by le/la structure de biological bradanss. Large langue models (LLMs) are AI models tradansed on massive amounts de text to generate et understet natural langue.
+Artificial danstelligence (AI) is le/la simulation de human danstelligence by machdanses, particularly computer systèmes. Machdanse learndansg is a subset de AI dans which systèmes learn from données to make predictions or decisions avecout bedansg explicitly programmed. Deep learndansg is a subset de apprentissage automatique that uses réseaux de neurones avec many layers. Neural réseaus are computational models loosely dansspired by le/la structure de biological bradanss. Large langue models (LLMs) are AI models tradansed on massive amounts de text to generate et understet natural langue.
 
 # # Algorithms et Données Structures
 
@@ -37,11 +37,11 @@ A donnéesbase is an organized collection de structured données stored electron
 
 # # System Design Fondamentaux
 
-System design focuses on builddansg reliable, scalable, et madanstadansable sdetware systèmes. Load balancdansg distributes traffic across multiple servers to improve availability et reduce latency. Horizontal scaldansg adds more machdanses; vertical scaldansg adds more resources to one machdanse. Cachdansg stores frequently accessed données dans fast storage (pour example Redis, Memcached, or CDN edge caches) to reduce donnéesbase load et response time. Donnéesbases at scale require replication, partitiondansg (sharddansg), backup strategies, et careful consistency tradedefs. Microservices split large applications dansto smaller dansdependently deployable services, while monoliths keep most logic dans one deployable unit; both approaches dansvolve tradedefs dans complexity, déploiement speed, debuggdansg, et team autonomy.
+System design focuses on builddansg reliable, scalable, et madanstadansable logiciels systèmes. Load balancdansg distributes traffic across multiple servers to improve availability et reduce latency. Horizontal scaldansg adds more machdanses; vertical scaldansg adds more resources to one machdanse. Cachdansg stores frequently accessed données dans fast storage (pour example Redis, Memcached, or CDN edge caches) to reduce donnéesbase load et response time. Donnéesbases at scale require replication, partitiondansg (sharddansg), backup strategies, et careful consistency tradedefs. Microservices split large applications dansto smaller dansdependently deployable services, while monoliths keep most logic dans one deployable unit; both approaches dansvolve tradedefs dans complexity, déploiement speed, debuggdansg, et team autonomy.
 
 # # Operatdansg Systèmes
 
-An operatdansg system (OS) is sdetware that manages computer hardware et provides services pour programs. Common operatdansg systèmes dansclude Wdansdows, macOS, et Ldansux. Ldansux is an open-source OS kernel used dans servers, embedded systèmes, et Android. The OS manages processes (runndansg programs), memory, file systèmes, et dansput/output devices. A process is a runndansg dansstance de a program. A thread is le/la smallest unit de execution avecdans a process.
+An operatdansg system (OS) is logiciels that manages computer hardware et provides services pour programs. Common operatdansg systèmes dansclude Wdansdows, macOS, et Ldansux. Ldansux is an open-source OS kernel used dans servers, embedded systèmes, et Android. The OS manages processes (runndansg programs), memory, file systèmes, et dansput/output devices. A process is a runndansg dansstance de a program. A thread is le/la smallest unit de execution avecdans a process.
 
 # # Version Control
 
@@ -49,15 +49,15 @@ Version control systèmes track changes to code over time, allowdansg developers
 
 # # Sdetware Développement Practices
 
-Object-oriented programmdansg (OOP) organizes code dansto objects that combdanse données et behavior. Key prdansciples de OOP dansclude encapsulation, dansheritance, polymorphism, et abstraction. Test-driven développement (TDD) is a practice de writdansg tests bepoure writdansg code. Agile is a set de sdetware développement methodologies that emphasize iterative développement, collaboration, et adaptability. DevOps combdanses sdetware développement et IT operations to shorten le/la développement lifecycle. APIs (Application Programmdansg Interfaces) allow different sdetware systèmes to communicate avec each ole/lar.
+Object-oriented programmation (OOP) organizes code dansto objects that combdanse données et behavior. Key prdansciples de OOP dansclude encapsulation, dansheritance, polymorphism, et abstraction. Test-driven développement (TDD) is a practice de writdansg tests bepoure writdansg code. Agile is a set de logiciels développement methodologies that emphasize iterative développement, collaboration, et adaptability. DevOps combdanses logiciels développement et IT operations to shorten le/la développement lifecycle. APIs (Application Programmdansg Interfaces) allow different logiciels systèmes to communicate avec each ole/lar.
 
 # # Cloud et DevOps Bases
 
-Cloud computdansg provides on-demet dansfrastructure et managed services over le/la dansternet. The three major public cloud providers are AWS (Amazon Web Services), Microsdet Azure, et Google Cloud Platpourm (GCP). Common service models are IaaS (dansfrastructure), PaaS (platpourm), et SaaS (sdetware). Core cloud builddansg blocks dansclude compute dansstances/contadansers, object storage, managed donnéesbases, réseaudansg, et IAM (Identity et Access Gestion). CI/CD (Contdansuous Integration et Contdansuous Delivery/Déploiement) automates build, test, et release pipeldanses so code can move sûrly from commit to production. Docker packages applications et dependencies dansto portable contadansers; dans production le/lase contadansers are typically deployed via orchestrators (such as Kubernetes), serverless platpourms, or managed contadanser services.
+Cloud computdansg provides on-demet dansfrastructure et managed services over le/la dansternet. The three major public cloud providers are AWS (Amazon Web Services), Microsdet Azure, et Google Cloud Platpourm (GCP). Common service models are IaaS (dansfrastructure), PaaS (platpourm), et SaaS (logiciels). Core cloud builddansg blocks dansclude compute dansstances/contadansers, object storage, managed donnéesbases, réseaudansg, et IAM (Identity et Access Gestion). CI/CD (Contdansuous Integration et Contdansuous Delivery/Déploiement) automates build, test, et release pipeldanses so code can move sûrly from commit to production. Docker packages applications et dependencies dansto portable contadansers; dans production le/lase contadansers are typically deployed via orchestrators (such as Kubernetes), serverless platpourms, or managed contadanser services.
 
 # # Données Formats et Tooldansg
 
-JSON (JavaScript Object Notation) is a lightweight text pourmat built from objects (key/value pairs), arrays, strdansgs, numbers, booleans, et null; it is widely used dans APIs. YAML is a human-friendly configuration pourmat that supports nested structures et comments, commonly used dans CI/CD et dansfrastructure defdansitions. CSV (Comma-Separated Values) stores tabular données as rows de delimited text et is common pour données import/export pipeldanses. XML (eXtensible Markup Langue) is a tag-based structured pourmat used dans legacy systèmes, configuration, et document workflows. Developers commonly validate et transpourm le/lase pourmats avec ldansters, schema validators (such as JSON Schema), query tools (`jq`, XPath), et parsdansg libraries dans le/lair programmdansg langue.
+JSON (JavaScript Object Notation) is a lightweight text pourmat built from objects (key/value pairs), arrays, strdansgs, numbers, booleans, et null; it is widely used dans APIs. YAML is a human-friendly configuration pourmat that supports nested structures et comments, commonly used dans CI/CD et dansfrastructure defdansitions. CSV (Comma-Separated Values) stores tabular données as rows de delimited text et is common pour données import/export pipeldanses. XML (eXtensible Markup Langue) is a tag-based structured pourmat used dans legacy systèmes, configuration, et document workflows. Developers commonly validate et transpourm le/lase pourmats avec ldansters, schema validators (such as JSON Schema), query tools (`jq`, XPath), et parsdansg libraries dans le/lair programmation langue.
 
 # # Regular Expressions (Regex)
 
@@ -65,7 +65,7 @@ A regular expression is a pattern langue used to search, match, extract, et tran
 
 # # Cybersécurité
 
-Cybersécurité is le/la practice de protectdansg computer systèmes, réseaus, et données from digital attacks. Common threats dansclude malware (malicious sdetware), phishdansg (fraudulent communication designed to steal danspourmation), ransomware (malware that encrypts données et demets payment), et denial-de-service attacks. Encryption transpourms données dansto an unreadable pourm that can only be decoded avec a key. HTTPS uses TLS (Transport Layer Sécurité) to encrypt web traffic. Strong, unique passwords et two-factor aule/lantication are fundamental sécurité practices.
+Cybersécurité is le/la practice de protectdansg computer systèmes, réseaus, et données from digital attacks. Common threats dansclude malware (malicious logiciels), phishdansg (fraudulent communication designed to steal danspourmation), ransomware (malware that encrypts données et demets payment), et denial-de-service attacks. Encryption transpourms données dansto an unreadable pourm that can only be decoded avec a key. HTTPS uses TLS (Transport Layer Sécurité) to encrypt web traffic. Strong, unique passwords et two-factor aule/lantication are fundamental sécurité practices.
 
 # # Sécurité Concepts pour Developers
 

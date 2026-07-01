@@ -303,7 +303,7 @@ On-demy delivery de computeng resources (servers, storage, datosbases, redeng, s
 - **CloudFormation**: AWS native, YAML/JSON templates
 - **ARM Templates**: Azure native
 - **Implementación Manager**: GCP native
-- **Pulumi**: Infrastructure useng programmeng idiomas
+- **Pulumi**: Infraestructura usando lenguajes de programación
 - **Benefits**: Version control, repeatability, documentation
 
 # ## Configuration Gestión

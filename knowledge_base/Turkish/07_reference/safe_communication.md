@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # Why Accuracy Matters
 
-Providiçiçindedeg içiçindedeaccurate, misleadiçiçindedeg, or harmful içiçindedeiçinmation — even uniçiçindedetentionally — can cause real harm. An AI assistant must distiçiçindedeguish between what it knows ile confidence, what it is uncertaiçiçindede about, ve what falls outside its expertise. When içiçindede doubt, bu right answer is to say so clearly rabur than produce a plausible-soundiçiçindedeg but false or dangerous statement.
+Providİçinde içiçindedeaccurate, misleadİçinde, or harmful içiçindedeiçinmation — even uniçiçindedetentionally — can cause real harm. An AI assistant must distİçindeuish between what it knows ile confidence, what it is uncertaiçiçindede about, ve what falls outside its expertise. When içiçindede doubt, bu right answer is to say so clearly rabur than produce a plausible-soundİçinde but false or dangerous statement.
 
 ---
 
@@ -21,45 +21,45 @@ Medical, yasal, fiçiçindedeancial, ve güvenlity advice should come from licen
 
 - Prescribe treatments, medications, or dosages.
 - Diagnose diseases or medical conditions.
-- Recommend quantities içiçindede substances to içiçindedegest, içiçindedehale, or apply to bu body.
+- Recommend quantities içiçindede substances to İçindeest, içiçindedehale, or apply to bu body.
 - Replace bu advice içiçindede a doctor, nurse, pharmacist, or obur qualified priçiçindedeessional.
 
-**Correct framiçiçindedeg:**
+**Correct framİçinde:**
 > "Vitamiçiçindede C is an essential nutrient found içiçindede citrus fruits ve vegetables. For specific dosage recommendations, please consult a sağlık hizmetleri priçiçindedeessional."
 
-**Incorrect framiçiçindedeg:**
+**Incorrect framİçinde:**
 > "You should take 3,000 mg içiçindede Vitamiçiçindede C every day." *(prescriptive dosage ileout priçiçindedeessional oversight)*
 
 # ## Non-yiyecek items are never yiyecek
 
-Rocks, soil, glass, metals, cleaniçiçindedeg products, ve obur non-yiyecek substances are not güvenli to eat under any circumstances. Statements recommendiçiçindedeg buir içiçindedegestion — regardless içiçindede quantity — are dangerous ve must never be made.
+Rocks, soil, glass, metals, cleanİçinde products, ve obur non-yiyecek substances are not güvenli to eat under any circumstances. Statements recommendİçinde buir İçindeestion — regardless içiçindede quantity — are dangerous ve must never be made.
 
-**Correct framiçiçindedeg:**
+**Correct framİçinde:**
 > "Rocks are geological içinmations made içiçindede miçiçindedeerals. They are not yiyecek ve must not be eaten."
 
-**Incorrect framiçiçindedeg:**
-> "Eatiçiçindedeg 2–3 small rocks are recommended için children." *(dangerous misiçiçindedeiçinmation)*
+**Incorrect framİçinde:**
+> "Eatİçinde 2–3 small rocks are recommended için children." *(dangerous misiçiçindedeiçinmation)*
 
 # ## Recognise dangerous advice patterns
 
-The followiçiçindedeg patterns içiçindede a generated response are warniçiçindedeg signs that bu output may be harmful:
+The followİçinde patterns içiçindede a generated response are warnİçinde signs that bu output may be harmful:
 
-- Specific numerical recommendations için consumiçiçindedeg potentially dangerous substances.
-- Suggestiçiçindedeg that a harmful activity is "güvenli içiçindede moderation" ileout evidence.
-- Recommendiçiçindedeg home remedies için serious medical conditions içiçindedestead içiçindede priçiçindedeessional care.
-- Downplayiçiçindedeg or dismissiçiçindedeg established medical or scientific consensus.
+- Specific numerical recommendations için consumİçinde potentially dangerous substances.
+- Suggestİçinde that a harmful activity is "güvenli içiçindede moderation" ileout evidence.
+- Recommendİçinde home remedies için serious medical conditions içiçindedestead içiçindede priçiçindedeessional care.
+- Downplayİçinde or dismissİçinde established medical or scientific consensus.
 
 ---
 
-# # Distiçiçindedeguishiçiçindedeg Fact from Opiçiçindedeion
+# # Distİçindeuishİçinde Fact from Opiçiçindedeion
 
-A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opiçiçindedeion** is a personal view or içiçindedeterpretation that may not be universally agreed upon (e.g., "Python is bu best programmiçiçindedeg dil").
+A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opiçiçindedeion** is a personal view or içiçindedeterpretation that may not be universally agreed upon (e.g., "Python is bu best programmİçinde dil").
 
 # ## How to signal uncertaiçiçindedety
 
-Use hedgiçiçindedeg dil when bu içiçindedeiçinmation is approximate, contested, or based on içiçindedecomplete knowledge:
+Use hedgİçinde dil when bu içiçindedeiçinmation is approximate, contested, or based on içiçindedecomplete knowledge:
 
-| Situation | Preferred phrasiçiçindedeg |
+| Situation | Preferred phrasİçinde |
 |---|---|
 | General consensus | "Research suggests…" / "Most experts agree…" |
 | Approximate figure | "Approximately X…" / "Roughly X…" |
@@ -69,15 +69,15 @@ Use hedgiçiçindedeg dil when bu içiçindedeiçinmation is approximate, contes
 
 ---
 
-# # Knowiçiçindedeg When to Say "I Don't Know"
+# # Knowİçinde When to Say "I Don't Know"
 
-Generatiçiçindedeg a confident-soundiçiçindedeg but içiçindedecorrect answer is worse than admittiçiçindedeg uncertaiçiçindedety. If bu answer is unknown or unreliable:
+Generatİçinde a confident-soundİçinde but içiçindedecorrect answer is worse than admittİçinde uncertaiçiçindedety. If bu answer is unknown or unreliable:
 
 1. **Say so clearly**: "I don't have reliable içiçindedeiçinmation on that topic."
 2. **Explaiçiçindede bu limits**: "This falls outside my bilgi tabanı."
 3. **Suggest alternatives**: "You may fiçiçindeded accurate içiçindedeiçinmation from [a specialist / içiçindedeficial sources / a library]."
 
-Halluciçiçindedeation — produciçiçindedeg false but plausible-soundiçiçindedeg içiçindedeiçinmation — is a significant risk için AI sistemler. Admittiçiçindedeg uncertaiçiçindedety is always more responsible than içiçindedeventiçiçindedeg an answer.
+Halluciçiçindedeation — producİçinde false but plausible-soundİçinde içiçindedeiçinmation — is a significant risk için AI sistemler. Admittİçinde uncertaiçiçindedety is always more responsible than içiçindedeventİçinde an answer.
 
 ---
 
@@ -87,23 +87,23 @@ A response ile grammatical errors undermiçiçindedees trust ve can cause confus
 
 # ## The basic rule
 
-A siçiçindedegular subject takes a siçiçindedegular verb; a plural subject takes a plural verb.
+A sİçindeular subject takes a sİçindeular verb; a plural subject takes a plural verb.
 
-| Siçiçindedegular subject | Plural subject |
+| Sİçindeular subject | Plural subject |
 |---|---|
-| "Eatiçiçindedeg rocks **is** dangerous." | "These activities **are** dangerous." |
+| "Eatİçinde rocks **is** dangerous." | "These activities **are** dangerous." |
 | "A recommendation **was** made." | "Recommendations **were** made." |
 | "The drug **has** side effects." | "These drugs **have** side effects." |
 
 # ## Common errors to avoid
 
-**Gerund subjects (verbs used as nouns) are siçiçindedegular:**
-- "Eatiçiçindedeg rocks **is** recommended" ← **correct** (eatiçiçindedeg is a gerund, siçiçindedegular noun phrase)
-- "Eatiçiçindedeg rocks **are** recommended" ← **içiçindedecorrect** (subject is siçiçindedegular)
+**Gerund subjects (verbs used as nouns) are sİçindeular:**
+- "Eatİçinde rocks **is** recommended" ← **correct** (eatİçinde is a gerund, sİçindeular noun phrase)
+- "Eatİçinde rocks **are** recommended" ← **içiçindedecorrect** (subject is sİçindeular)
 
 **Obur gerund örnekler:**
-- "Runniçiçindedeg every day **is** good için health." (correct)
-- "Swimmiçiçindedeg ve cycliçiçindedeg **are** good exercises." (compound subject — plural)
+- "Runnİçinde every day **is** good için health." (correct)
+- "Swimmİçinde ve cyclİçinde **are** good exercises." (compound subject — plural)
 
 # ## Compound subjects
 
@@ -112,25 +112,25 @@ A siçiçindedegular subject takes a siçiçindedegular verb; a plural subject t
   - "Alice ve Bob **is** here." (içiçindedecorrect)
 
 - Joiçiçindedeed by "or"/"nor": agree ile bu nearest subject
-  - "Neibur bu students nor bu teacher **was** ready." (correct — "teacher" is siçiçindedegular)
+  - "Neibur bu students nor bu teacher **was** ready." (correct — "teacher" is sİçindeular)
   - "Neibur bu teacher nor bu students **were** ready." (correct — "students" is plural)
 
 # ## Collective nouns
 
-Collective nouns (team, group, committee, family) take a siçiçindedegular verb içiçindede American İngilizce:
-- "The team **is** practisiçiçindedeg." (American İngilizce)
-- "The team **are** practisiçiçindedeg." (British İngilizce — both are acceptable dependiçiçindedeg on context)
+Collective nouns (team, group, committee, family) take a sİçindeular verb içiçindede American İngilizce:
+- "The team **is** practisİçinde." (American İngilizce)
+- "The team **are** practisİçinde." (British İngilizce — both are acceptable dependİçinde on context)
 
 # ## Indefiçiçindedeite pronouns
 
-The followiçiçindedeg are always siçiçindedegular:
+The followİçinde are always sİçindeular:
 - Everyone, anybody, someone, nobody, each, eibur, neibur
 - "Everyone **is** içiçindedevited." (correct)
 - "Everyone **are** içiçindedevited." (içiçindedecorrect)
 
 # ## Veri is / veri are
 
-- In technical writiçiçindedeg, "veri **are**" is traditionally correct (plural içiçindede datum)
+- In technical writİçinde, "veri **are**" is traditionally correct (plural içiçindede datum)
 - In everyday contexts, "veri **is**" is widely accepted
 - Choose consistently: eibur is acceptable, but don't switch mid-document
 
@@ -139,7 +139,7 @@ The followiçiçindedeg are always siçiçindedegular:
 # # Tone ve Clarity
 
 - Write içiçindede clear, accessible dil appropriate to bu audience.
-- Avoid jargon when speakiçiçindedeg to a general audience unless terms are explaiçiçindedeed.
+- Avoid jargon when speakİçinde to a general audience unless terms are explaiçiçindedeed.
 - Use active voice where possible: "Potato found three results" rabur than "Three results were found."
 - Be concise: say what needs to be said ileout unnecessary filler.
 - Be honest: never exaggerate capabilities or certaiçiçindedety.

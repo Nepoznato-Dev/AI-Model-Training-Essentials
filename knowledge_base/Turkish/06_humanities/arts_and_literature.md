@@ -10,21 +10,21 @@ For accuracy improvements, please contribute edits via pull requests.
 # # Literary Genres ve Forms
 
 # ## Fiction Genres
-- **Literary Fiction**: Character-driven narratives focusiçiçindedeg on bumes, style, ve psychological depth (e.g., "To Kill a Mockiçiçindedegbird" by Harper Lee)
-- **Bilim Fiction**: Speculative fiction exploriçiçindedeg futuristic teknoloji, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "The Lord içiçindede bu Riçiçindedegs" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowliçiçindedeg)
-- **Mystery/Detective**: Crime-solviçiçindedeg narratives ile puzzles ve içiçindedevestigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "The Shiçiçindedeiçiçindedeg" by Stephen Kiçiçindedeg, "Dracula" by Bram Stoker)
+- **Literary Fiction**: Character-driven narratives focusİçinde on bumes, style, ve psychological depth (e.g., "To Kill a Mockİçindebird" by Harper Lee)
+- **Bilim Fiction**: Speculative fiction explorİçinde futuristic teknoloji, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "The Lord içiçindede bu Rİçindes" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowlİçinde)
+- **Mystery/Detective**: Crime-solvİçinde narratives ile puzzles ve içiçindedevestigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
+- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "The Shiçiçindedeİçinde" by Stephen Kİçinde, "Dracula" by Bram Stoker)
 - **Romance**: Focus on romantic relationships ve emotional journeys (e.g., Jane Austen's "Pride ve Prejudice", Nicholas Sparks novels)
 - **Historical Fiction**: Set içiçindede specific historical periods ile accurate details (e.g., "The Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
-- **Magical Realism**: Realistic settiçiçindedegs ile magical elements treated as ordiçiçindedeary (e.g., "One Hundred Years içiçindede Solitude" by Gabriel García Márquez)
+- **Magical Realism**: Realistic settİçindes ile magical elements treated as ordiçiçindedeary (e.g., "One Hundred Years içiçindede Solitude" by Gabriel García Márquez)
 
 # ## Non-Fiction Genres
-- **Biography/Autobiography**: Life stories içiçindede real people (e.g., "The Diary içiçindede a Young Girl" by Anne Frank, "Becomiçiçindedeg" by Michelle Obama)
-- **Memoir**: Personal accounts focusiçiçindedeg on specific experiences or bumes
+- **Biography/Autobiography**: Life stories içiçindede real people (e.g., "The Diary içiçindede a Young Girl" by Anne Frank, "Becomİçinde" by Michelle Obama)
+- **Memoir**: Personal accounts focusİçinde on specific experiences or bumes
 - **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwiçiçindede, Joan Didion)
-- **Journalism**: News reportiçiçindedeg, içiçindedevestigative pieces, feature articles
-- **Academic Writiçiçindedeg**: Research papers, scholarly articles, dissertations
+- **Journalism**: News reportİçinde, içiçindedevestigative pieces, feature articles
+- **Academic Writİçinde**: Research papers, scholarly articles, dissertations
 - **Self-Help**: Personal geliştirme ve improvement rehbers
 
 # ## Poetry Forms
@@ -33,15 +33,15 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Limerick**: Five-liçiçindedee humorous poem ile AABBA rhyme scheme
 - **Free Verse**: No regular meter or rhyme pattern
 - **Villanelle**: 19 liçiçindedees ile specific repetition pattern (e.g., "Do Not Go Gentle içiçindedeto That Good Night" by Dylan Thomas)
-- **Ode**: Lyrical poem praisiçiçindedeg a person, event, or thiçiçindedeg
+- **Ode**: Lyrical poem praisİçinde a person, event, or thİçinde
 - **Epic**: Long narrative poem about heroic deeds (e.g., "The Odyssey" by Homer, "Beowulf")
 
 # # Major Literary Movements
 
 # ## Historical Periods
-- **Classical Edebiyat** (8th century BCE - 5th century CE): Greek ve Roman works emphasiziçiçindedeg reason, order, ve humanism
+- **Classical Edebiyat** (8th century BCE - 5th century CE): Greek ve Roman works emphasizİçinde reason, order, ve humanism
 - **Medieval Edebiyat** (5th - 15th century): Religious bumes, chivalric romances, allegories (e.g., "The Diviçiçindedee Comedy" by Dante)
-- **Renaissance** (14th - 17th century): Humanism, revival içiçindede classical learniçiçindedeg (e.g., Shakespeare, Cervantes)
+- **Renaissance** (14th - 17th century): Humanism, revival içiçindede classical learnİçinde (e.g., Shakespeare, Cervantes)
 - **Enlightenment** (17th - 18th century): Reason, bilim, içiçindededividual rights (e.g., Voltaire, Jonathan Swift)
 - **Romanticism** (late 18th - mid-19th century): Emotion, doğa, içiçindededividualism (e.g., Wordsworth, Goebu, Mary Shelley)
 - **Realism** (mid-19th century): Accurate depiction içiçindede everyday life (e.g., Tolstoy, George Eliot, Mark Twaiçiçindede)
@@ -52,24 +52,24 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Art Movements
 - **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Viçiçindedeci, Michelangelo, Raphael)
-- **Baroque** (17th century): Dramatic lightiçiçindedeg, emotional içiçindedetensity (e.g., Caravaggio, Rembrvet, Berniçiçindedei)
+- **Baroque** (17th century): Dramatic lightİçinde, emotional içiçindedetensity (e.g., Caravaggio, Rembrvet, Berniçiçindedei)
 - **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
 - **Post-Impressionism** (late 19th century): Bold colors, geometric içinms (e.g., Van Gogh, Cézanne, Gauguiçiçindede)
 - **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
 - **Surrealism** (1920s - 1940s): Dream imagery, unconscious miçiçindeded (e.g., Dalí, Magritte, Frida Kahlo)
-- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural paiçiçindedetiçiçindedeg (e.g., Pollock, Rothko, de Kooniçiçindedeg)
+- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural paiçiçindedetİçinde (e.g., Pollock, Rothko, de Koonİçinde)
 - **Pop Art** (1950s - 1960s): Popular kültür imagery (e.g., Warhol, Lichtensteiçiçindede)
 - **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
 
 # ## Art Mediums ve Techniques
-- **Paiçiçindedetiçiçindedeg**: Oil, acrylic, watercolor, fresco, tempera
-- **Drawiçiçindedeg**: Pencil, charcoal, içiçindedek, pastel, conte crayon
-- **Sculpture**: Carviçiçindedeg (stone, wood), modeliçiçindedeg (clay, wax), castiçiçindedeg (bronze, metal), assembliçiçindedeg
-- **Priçiçindedetmakiçiçindedeg**: Etchiçiçindedeg, lithography, screen priçiçindedetiçiçindedeg, woodcut
+- **Paiçiçindedetİçinde**: Oil, acrylic, watercolor, fresco, tempera
+- **Drawİçinde**: Pencil, charcoal, içiçindedek, pastel, conte crayon
+- **Sculpture**: Carvİçinde (stone, wood), modelİçinde (clay, wax), castİçinde (bronze, metal), assemblİçinde
+- **Priçiçindedetmakİçinde**: Etchİçinde, lithography, screen priçiçindedetİçinde, woodcut
 - **Photography**: Digital, film, documentary, portrait, lvescape, street photography
-- **Digital Art**: 3D modeliçiçindedeg, digital paiçiçindedetiçiçindedeg, generative art, NFTs
+- **Digital Art**: 3D modelİçinde, digital paiçiçindedetİçinde, generative art, NFTs
 - **Installation Art**: Site-specific, immersive environments
-- **Periçinmance Art**: Live actions, body art, happeniçiçindedegs
+- **Periçinmance Art**: Live actions, body art, happenİçindes
 
 # # Music
 
@@ -82,12 +82,12 @@ For accuracy improvements, please contribute edits via pull requests.
 - **20th Century/Contemporary**: Atonality, miçiçindedeimalism, experimental (e.g., Straviçiçindedesky, Schoenberg, Philip Glass)
 
 # ## Music Genres
-- **Jazz**: Improvisation, swiçiçindedeg rhythm, blues içiçindedefluence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
-- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. Kiçiçindedeg, Muddy Waters)
+- **Jazz**: Improvisation, swİçinde rhythm, blues içiçindedefluence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
+- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. Kİçinde, Muddy Waters)
 - **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppeliçiçindede, Nirvana)
 - **Hip Hop/Rap**: Rhythmic speech, beats, DJ kültür (e.g., Tupac, Kendrick Lamar, Jay-Z)
 - **Electronic**: Synbusizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twiçiçindede)
-- **Country**: Folk traditions, storytelliçiçindedeg (e.g., Johnny Cash, Dolly Parton)
+- **Country**: Folk traditions, storytellİçinde (e.g., Johnny Cash, Dolly Parton)
 - **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Frankliçiçindede, Stevie Wonder, Beyoncé)
 - **Classical Crossover**: Fusion içiçindede classical ve popular styles
 
@@ -95,15 +95,15 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Notes ve Scales**: Major, miçiçindedeor, chromatic, pentatonic, modes
 - **Chords ve Harmony**: Triads, seventh chords, chord progressions
 - **Rhythm ve Meter**: Time sigdoğas, tempo, syncopation
-- **Melody ve Counterpoiçiçindedet**: Thematic geliştirme, voice leadiçiçindedeg
+- **Melody ve Counterpoiçiçindedet**: Thematic geliştirme, voice leadİçinde
 - **Form ve Structure**: Sonata içinm, symphony movements, verse-chorus structure
 
 # # Theater ve Periçinmance
 
 # ## Theater Types
 - **Tragedy**: Serious bumes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
-- **Comedy**: Humorous situations, happy endiçiçindedegs (e.g., Shakespeare's comedies, Oscar Wilde)
-- **Drama**: Serious narratives exploriçiçindedeg human conflict
+- **Comedy**: Humorous situations, happy endİçindes (e.g., Shakespeare's comedies, Oscar Wilde)
+- **Drama**: Serious narratives explorİçinde human conflict
 - **Musical Theater**: Songs, dance, dialogue içiçindedetegrated (e.g., "Hamilton", "Les Misérables", "The Phantom içiçindede bu Opera")
 - **Experimental/Avant-Garde**: Non-traditional içinms, audience participation
 
@@ -112,7 +112,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - Anton Chekhov (Russian, 1860-1904): "The Cherry Orchard", "Three Sisters"
 - Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "The Glass Menagerie"
 - Arthur Miller (American, 1915-2005): "Death içiçindede a Salesman", "The Crucible"
-- Samuel Beckett (Irish, 1906-1989): "Waitiçiçindedeg için Godot", "Endgame"
+- Samuel Beckett (Irish, 1906-1989): "Waitİçinde için Godot", "Endgame"
 - August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
 
 # # Film ve Ciçiçindedeema
@@ -129,16 +129,16 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Film Movements
 - **German Expressionism** (1920s): Distorted visuals, psychological bumes ("The Cabiçiçindedeet içiçindede Dr. Caligari")
-- **Italian Neorealism** (1940s-1950s): Workiçiçindedeg-class stories, location shootiçiçindedeg ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): Innovative editiçiçindedeg, auteur buory (Godard, Truffaut)
+- **Italian Neorealism** (1940s-1950s): Workİçinde-class stories, location shootİçinde ("Bicycle Thieves")
+- **French New Wave** (1950s-1960s): Innovative editİçinde, auteur buory (Godard, Truffaut)
 - **New Hollywood** (1960s-1980s): Director-driven, mature bumes (Scorsese, Coppola, Spielberg)
-- **Dogme 95** (1990s): Miçiçindedeimalist rules, natural lightiçiçindedeg (von Trier, Viçiçindedeterberg)
+- **Dogme 95** (1990s): Miçiçindedeimalist rules, natural lightİçinde (von Trier, Viçiçindedeterberg)
 
-# ## Filmmakiçiçindedeg Roles
+# ## Filmmakİçinde Roles
 - **Director**: Creative vision, actor direction, overall control
-- **Ciçiçindedeematographer/Director içiçindede Photography**: Camera work, lightiçiçindedeg, visual style
-- **Screenwriter**: Script writiçiçindedeg, dialogue, story structure
-- **Editor**: Footage assembly, paciçiçindedeg, narrative flow
+- **Ciçiçindedeematographer/Director içiçindede Photography**: Camera work, lightİçinde, visual style
+- **Screenwriter**: Script writİçinde, dialogue, story structure
+- **Editor**: Footage assembly, pacİçinde, narrative flow
 - **Production Designer**: Sets, locations, visual environment
 - **Composer**: Origiçiçindedeal music score
 
@@ -167,26 +167,26 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Figurative Dil
 - **Metaphor**: Direct comparison ileout "like" or "as"
-- **Simile**: Comparison usiçiçindedeg "like" or "as"
-- **Personification**: Giviçiçindedeg human qualities to non-human thiçiçindedegs
+- **Simile**: Comparison usİçinde "like" or "as"
+- **Personification**: Givİçinde human qualities to non-human thİçindes
 - **Hyperbole**: Deliberate exaggeration
 - **Irony**: Contrast between expectation ve reality (verbal, situational, dramatic)
-- **Symbolism**: Objects representiçiçindedeg abstract ideas
-- **Imagery**: Descriptive dil appealiçiçindedeg to senses
+- **Symbolism**: Objects representİçinde abstract ideas
+- **Imagery**: Descriptive dil appealİçinde to senses
 
 # ## Narrative Techniques
 - **Poiçiçindedet içiçindede View**: First person, second person, third person (limited, omniscient)
 - **Stream içiçindede Consciousness**: Contiçiçindedeuous flow içiçindede thoughts
 - **Unreliable Narrator**: Narrator whose credibility is compromised
 - **Non-liçiçindedeear Narrative**: Olaylar presented out içiçindede chronological order
-- **Foreshadowiçiçindedeg**: Hiçiçindedets about gelecek olaylar
+- **Foreshadowİçinde**: Hiçiçindedets about gelecek olaylar
 - **Flashback**: Scenes from earlier içiçindede bu story
 
 # ## Structural Elements
-- **Plot**: Exposition, risiçiçindedeg action, climax, falliçiçindedeg action, resolution
+- **Plot**: Exposition, risİçinde action, climax, fallİçinde action, resolution
 - **Character Geliştirme**: Protagonist, antagonist, dynamic/static characters
-- **Settiçiçindedeg**: Time, place, social context
-- **Theme**: Central message or underlyiçiçindedeg meaniçiçindedeg
+- **Settİçinde**: Time, place, social context
+- **Theme**: Central message or underlyİçinde meanİçinde
 - **Tone**: Author's attitude toward subject
 - **Mood**: Emotional atmosphere created için reader
 
@@ -213,7 +213,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Analysis Frameworks
 - **Formalism**: Focus on visual elements (liçiçindedee, color, composition)
-- **Iconography**: Symbolic meaniçiçindedegs ve cultural referanss
+- **Iconography**: Symbolic meanİçindes ve cultural referanss
 - **Contextual Analysis**: Historical, social, political context
 - **Femiçiçindedeist Criticism**: Gender representation, women artists
 - **Postcolonial Criticism**: Colonial legacy, cultural identity
@@ -223,7 +223,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Balance**: Visual weight distribution (symmetrical, asymmetrical)
 - **Contrast**: Differences içiçindede elements (light/dark, large/small)
 - **Emphasis**: Focal poiçiçindedets, areas içiçindede içiçindedeterest
-- **Movement**: Visual flow guidiçiçindedeg viewer's eye
+- **Movement**: Visual flow guidİçinde viewer's eye
 - **Pattern**: Repetition içiçindede elements
 - **Proportion**: Size relationships between psanat
 - **Unity**: Coherence ve harmony içiçindede whole composition

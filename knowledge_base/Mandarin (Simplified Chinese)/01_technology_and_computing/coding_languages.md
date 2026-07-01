@@ -1,658 +1,222 @@
 <!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: coding_languages.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+此文件已从英语自动翻译成简体中文。
+来源：coding_languages.md
+注意：技术术语、代码示例和专有名词可能保留英文。
+为提高准确性，请通过 pull request 贡献编辑。
 -->
 
-# Cod 语言s
+# 编程语言
 
-# # Python
+## Python
 
-Python is a high-level, terpreted, dynamically typed, general-purpose programm 语言. It emphasises readability 和 uses significant dentation as block delimiters.
+Python 是一种高级、解释型、动态类型的通用编程语言。它强调可读性，并使用有意义的缩进作为块分隔符。
 
-# ## 语法 基础
+### 基本语法
 
 ```python
-# Variables and types
+# 变量和类型
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 条件语句
 if age >= 18:
- print("adult")
+    print("成人")
 elif age >= 13:
- print("teenager")
+    print("青少年")
 else:
- print("child")
+    print("儿童")
 
-# Loops
+# 循环
 for i in range(5):
- print(i)
+    print(i)
 
 while active:
- active = False
+    active = False
 ```
 
-# ## Functions 和 type hts
+### 函数和类型注解
 
 ```python
 def greet(name: str, times: int = 1) -> str:
- return (f"Hello, {name}! " * times).strip()
+    return (f"你好，{name}！" * times).strip()
 ```
 
-# ## List comprehensions
+### 列表推导式
 
 ```python
 squares = [x**2 for x in range(10)]
-evens = [x for x in range(20) if x % 2 == 0]
+evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes 和 OOP
+### 类和面向对象编程
 
 ```python
-class Animal:
- def __init__(self, name: str) -> None:
- self.name = name
-
- def speak(self) -> str:
- raise NotImplementedError
-
-class Dog(Animal):
- def speak(self) -> str:
- return f"{self.name} says woof"
+class Person:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+    
+    def introduce(self) -> str:
+        return f"我叫{name}，今年{age}岁。"
 ```
 
-# ## Common patterns
+## JavaScript
 
-- Use `与 open(path) as f:` file I/O.
-- Prefer f-strs (`f"hello {name}"`) over `%` or `.mat()`.
-- Use `数据classes.数据class` 数据-only classes.
-- Use `pathlib.Path` stead 的 `os.path` file paths.
+JavaScript 是一种解释型、面向对象、事件驱动的编程语言，主要用于客户端和服务器端 Web 开发。
 
-# ## Tool
-
-- `pip stall <package>` stalls packages.
-- `python -m venv .venv && source .venv/b/activate` creates a virtual 环境.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip stall -r requirements.txt` restores m.
-- `pyproject.toml` is modern project-configuration st和ard.
-
----
-
-# # JavaScript
-
-JavaScript is primary 语言 的 网络. It runs browsers 和 on servers via Node.js. It is dynamically typed 和 prototype-based.
-
-# ## Modern 语法 (ES6+)
+### 基本语法
 
 ```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
+// 变量和类型
+let name = "Alice";
+const age = 30;
+let score = 9.5;
+let active = true;
 
-// Arrow functions
-const add = (a, b) => a + b;
+// 条件语句
+if (age >= 18) {
+    console.log("成人");
+} else if (age >= 13) {
+    console.log("青少年");
+} else {
+    console.log("儿童");
+}
 
-// Template literals
-const greet = name => `Hello, ${name}!`;
+// 循环
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
-
-// Spread
-const merged = { ...defaults, ...overrides };
+while (active) {
+    active = false;
+}
 ```
 
-# ## Async programm
+### 函数
 
 ```javascript
-// Promises
-fetch("/api/data")
- .then(res => res.json())
- .then(data => console.log(data))
- .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
- try {
- const res = await fetch(`/users/${id}`);
- return await res.json();
- } catch (err) {
- console.error(err);
- }
-}
-```
-
-# ## Array methods
-
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
-
-# ## DOM manipulation
-
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
- document.querySelector(".result").textContent = "Done!";
-});
-```
-
-# ## Tool
-
-- `npm it -y` itialises a project.
-- `npm stall <package>` adds a dependency.
-- `npm run <script>` runs a script defed `package.json`.
-- `node dex.js` runs a script 与 Node.js.
-
----
-
-# # TypeScript
-
-TypeScript is a statically typed superset 的 JavaScript that compiles to pla JavaScript. It adds type annotations, terfaces, generics, 和 enums.
-
-# ## Type annotations
-
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
-
-# ## Interfaces 和 types
-
-```typescript
-interface User {
- id: number;
- name: string;
- email?: string; // optional property
+function greet(name, times = 1) {
+    return `你好，${name}！`.repeat(times).trim();
 }
 
-type Status = "active" | "inactive" | "banned";
-```
-
-# ## Generics
-
-```typescript
-function identity<T>(value: T): T {
- return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
- return arr[0];
-}
-```
-
-# ## Classes 与 access modifiers
-
-```typescript
-class Counter {
- private count: number = 0;
-
- increment(): void {
- this.count++;
- }
-
- get value(): number {
- return this.count;
- }
-}
-```
-
-# ## tsconfig.json essentials
-
-```json
-{
- "compilerOptions": {
- "target": "ES2020",
- "module": "CommonJS",
- "strict": true,
- "outDir": "dist",
- "rootDir": "src"
- }
-}
-```
-
-# ## Tool
-
-- `npm stall -g typescript` stalls compiler.
-- `tsc` compiles project.
-- `ts-node src/dex.ts` runs TypeScript directly.
-
----
-
-# # Rust
-
-Rust is a 系统 programm 语言 focused on 安全ty, speed, 和 concurrency. It pr事件 memory-安全ty bugs at compile time through its ownership system.
-
-# ## Ownership 和 borrow
-
-Every value Rust has exactly one owner. When owner goes out 的 scope value is dropped. Borrow allows 参考s 与out transferr ownership.
-
-```rust
-fn main() {
- let s = String::from("hello"); // s owns the string
- let len = calculate_length(&s); // borrow s
- println!("{} has length {}", s, len); // s still valid
-}
-
-fn calculate_length(s: &String) -> usize {
- s.len()
-}
-```
-
-Mutable borrows (`&mut T`) require that no or borrows exist at same time.
-
-# ## Lifetimes
-
-Lifetimes ensure 参考s do not outlive 数据 y pot to.
-
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
- if x.len() > y.len() { x } else { y }
-}
-```
-
-# ## Enums 和 pattern match
-
-```rust
-enum Shape {
- Circle(f64),
- Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
- match shape {
- Shape::Circle(r) => std::f64::consts::PI * r * r,
- Shape::Rectangle(w, h) => w * h,
- }
-}
-```
-
-# ## Error h和l
-
-```rust
-use std::fs;
-
-fn read_file(path: &str) -> Result<String, std::io::Error> {
- fs::read_to_string(path)
-}
-
-fn main() {
- match read_file("data.txt") {
- Ok(内容) => println!("{}", 内容),
- Err(e) => eprintln!("Error: {}", e),
- }
-}
-```
-
-The `?` operator propagates errors automatically side functions that return `Result`.
-
-# ## Tool (Cargo)
-
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles 和 runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` mats code. `cargo clippy` lts.
-
----
-
-# # Go
-
-Go (Golang) is a statically typed, compiled 语言 designed simplicity 和 high-permance concurrent programs.
-
-# ## 基础
-
-```go
-package main
-
-import "fmt"
-
-func main() {
- name := "world" // short variable declaration
- fmt.Printf("Hello, %s!\n", name)
-}
-```
-
-# ## Functions 和 multiple return values
-
-```go
-func divide(a, b float64) (float64, error) {
- if b == 0 {
- return 0, fmt.Errorf("division by zero")
- }
- return a / b, nil
-}
-```
-
-# ## Interfaces
-
-```go
-type Speaker interface {
- Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
-
-Any type that implements all methods 的 an terface satisfies it — no explicit declaration is needed.
-
-# ## Gorout 和 channels
-
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
- for j := range jobs {
- results <- j * j
- }
-}
-
-func main() {
- jobs := make(chan int, 5)
- results := make(chan int, 5)
-
- go worker(1, jobs, results)
-
- for i := 1; i <= 5; i++ {
- jobs <- i
- }
- close(jobs)
-
- for i := 0; i < 5; i++ {
- fmt.Println(<-results)
- }
-}
-```
-
-# ## Defer
-
-```go
-func readFile(path string) error {
- f, err := os.Open(path)
- if err != nil {
- return err
- }
- defer f.Close() // runs when function returns
- // … process f …
- return nil
-}
-```
-
-# ## Tool
-
-- `go mod it module/name` itialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` mats code.
-- `go vet ./...` checks common mistakes.
-
----
-
-# # C 和 C++
-
-C is a low-level, compiled, procedural 语言. C++ extends C 与 classes, templates, 和 St和ard Template Library (STL).
-
-# ## C 基础
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
- int x = 42;
- printf("x = %d\n", x);
-
- /* Dynamic memory */
- int *arr = malloc(5 * sizeof(int));
- for (int i = 0; i < 5; i++) arr[i] = i;
- free(arr); /* always free what you malloc */
-
- return 0;
-}
-```
-
-# ## Poters
-
-A poter stores memory address 的 anor variable. `*ptr` de参考s it; `&var` takes an address.
-
-```c
-int a = 10;
-int *p = &a;
-*p = 20; /* a is now 20 */
-```
-
-# ## C++ classes 和 R人工智能I
-
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
- Person(std::string name, int age) : name_(name), age_(age) {}
-
- void greet() const {
- std::cout << "Hi, I'm " << name_ << "\n";
- }
-
-private:
- std::string name_;
- int age_;
+// 箭头函数
+const greetArrow = (name, times = 1) => {
+    return `你好，${name}！`.repeat(times).trim();
 };
 ```
 
-R人工智能I (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensur cleanup happens automatically destructors.
+### 数组操作
 
-# ## STL contaers
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(x => x ** 2);
+const evens = numbers.filter(x => x % 2 === 0);
+const sum = numbers.reduce((acc, x) => acc + x, 0);
+```
+
+## Java
+
+Java 是一种编译型、面向对象、平台独立的编程语言，广泛用于企业应用程序和 Android 开发。
+
+### 基本语法
+
+```java
+// 变量和类型
+String name = "Alice";
+int age = 30;
+double score = 9.5;
+boolean active = true;
+
+// 条件语句
+if (age >= 18) {
+    System.out.println("成人");
+} else if (age >= 13) {
+    System.out.println("青少年");
+} else {
+    System.out.println("儿童");
+}
+
+// 循环
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+while (active) {
+    active = false;
+}
+```
+
+### 类和面向对象编程
+
+```java
+public class Person {
+    private String name;
+    private int age;
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public String introduce() {
+        return "我叫" + name + "，今年" + age + "岁。";
+    }
+}
+```
+
+## C++
+
+C++ 是一种编译型、高性能、多用途的编程语言，用于系统、视频游戏和关键应用程序。
+
+### 基本语法
 
 ```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
+#include <iostream>
+#include <string>
+using namespace std;
 
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"] = 87;
-```
-
-# ## Modern C++ (C++17 / C++20) highlights
-
-- `auto` type deduction.
-- Range-based `` loops: ` (auto& item : contaer)`.
-- Smart poters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bds: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::str_view`.
-
-# ## Compilation
-
-- `gcc ma.c -o ma` compiles C.
-- `g++ -std=c++20 -Wall ma.cpp -o ma` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is st和ard build-system generator larger projects.
-
----
-
-# # Swift
-
-Swift is a modern, statically typed programm 语言 developed by Apple iOS, macOS, watchOS, 和 tvOS. It is also available on Lux.
-
-# ## 基础
-
-```swift
-let greeting = "Hello, world!" // constant (immutable)
-var counter = 0 // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
-
-# ## Optionals
-
-An optional (`T?`) represents a value that may or may not be present.
-
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
- print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
-
-# ## Functions 和 closures
-
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
-
-# ## Classes 和 structs
-
-Swift has both classes (参考 types) 和 structs (value types). Prefer structs simple 数据 models.
-
-```swift
-struct Point {
- var x: Double
- var y: Double
-}
-
-class Vehicle {
- var speed: Double = 0.0
- func accelerate(by amount: Double) { speed += amount }
+int main() {
+    // 变量和类型
+    string name = "Alice";
+    int age = 30;
+    double score = 9.5;
+    bool active = true;
+    
+    // 条件语句
+    if (age >= 18) {
+        cout << "成人" << endl;
+    } else if (age >= 13) {
+        cout << "青少年" << endl;
+    } else {
+        cout << "儿童" << endl;
+    }
+    
+    // 循环
+    for (int i = 0; i < 5; i++) {
+        cout << i << endl;
+    }
+    
+    while (active) {
+        active = false;
+    }
+    
+    return 0;
 }
 ```
 
-# ## Protocols
+## 编码基础（语言无关）
 
-```swift
-protocol Describable {
- var description: String { get }
-}
+编程的基本概念对所有语言都是通用的：
 
-struct Cat: Describable {
- var name: String
- var description: String { "Cat named \(name)" }
-}
-```
+- **变量**: 命名数据存储
+- **数据类型**: 数据性质的定义（数字、文本、布尔值等）
+- **控制结构**: 条件语句（if/else）和循环（for、while）
+- **函数**: 可重用的代码块
+- **数据结构**: 数组、列表、字典、集合
+- **面向对象编程**: 类、对象、继承、多态
+- **错误处理**: Try/catch、异常
+- **输入/输出**: 数据读写
 
-# ## Codable (JSON encod / decod)
-
-```swift
-struct User: Codable {
- let id: Int
- let name: String
- let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
-
-# ## SwiftUI 基础
-
-```swift
-import SwiftUI
-
-struct ContentView: View {
- @State private var count = 0
-
- var body: some View {
- VStack {
- Text("Count: \(count)")
- Button("Increment") { count += 1 }
- }
- }
-}
-```
-
-# ## Tool
-
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs project.
-- `swift test` runs tests.
-- `swift package it --type executable` creates a new executable project.
-- Xcode is primary IDE Apple-platm 开发.
-
----
-
-# # Cod 基础 (语言-Agnostic)
-
-# ## Problem-solv workflow
-
-1. Defe put, output, 和 constrats ...之前 writ code.
-2. Break task 到 smaller sub-problems.
-3. 从...开始 a simple correct solution, n optimise if needed.
-4. Validate 与 tests, edge cases, 和 realistic puts.
-
-# ## Core 数据 structures
-
-- **Array / List**: ordered collection 与 fast dexed reads.
-- **Hash map / 词典**: key-value store 与 average O(1) lookup.
-- **Set**: unique values, useful membership checks.
-- **Stack**: LIFO (last , first out), common pars 和 recursion.
-- **Queue**: FIFO (first , first out), useful schedul 和 BFS.
-- **Tree / Graph**: hierarchical 和 网络-style relationships.
-
-# ## Algorithmic complexity (Big O)
-
-- Big O describes how runtime or memory grows 与 put size.
-- Typical costs:
- - O(1): constant-time lookup (e.g., hash map access).
- - O(log n): bary search.
- - O(n): sle pass through 数据.
- - O(n log n): efficient sort.
- - O(n²): nested loops over similar-size puts.
-- Prefer clear, mataable code unless pr的il shows a bottleneck.
-
-# ## Debugg prciples
-
-- Reproduce bug reliably first.
-- Mimise fail case to isolate cause.
-- Inspect logs, puts, 和 assumptions.
-- Change one variable at a time while test.
-- Add regression tests so same bug does not return.
-
-# ## Test pyramid
-
-- **Unit tests**: fast, focused checks 的 small logic units.
-- **Integration tests**: verify teractions across modules/services.
-- **End-to-end tests**: validate user flows realistic 环境s.
-- A balanced suite has many unit tests 和 fewer slow end-to-end tests.
-
-# ## Code quality practices
-
-- Use meanful names 和 small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive 和 terfaces explicit.
-- Use lters/matters consistency.
-- Review code correctness, clarity, 和 安全.
-
-# ## 安全 基础 developers
-
-- Validate 和 sanitise external put.
-- Use parameterised queries to prevent SQL jection.
-- Store passwords 与 strong hash algorithms (e.g., Argon2, bcrypt).
-- Avoid embedd secrets source code.
-- Apply least privilege credentials 和 services.
+这些基本概念适用于任何选择的编程语言。掌握这些基础可以更容易地学习新语言。

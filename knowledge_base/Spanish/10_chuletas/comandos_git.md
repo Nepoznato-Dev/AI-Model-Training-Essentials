@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-# # Brancheng
+# # Ramas (Branching)
 
 ```bash
 # List branches
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-# # Undoeng Changes
+# # Deshacer Cambios
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-# # Stasheng
+# # Guardar Cambios Temporales (Stashing)
 
 ```bash
 # Save work in progress
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-# # Vieweng & Searcheng
+# # Ver y Buscar
 
 ```bash
 # Show commit details

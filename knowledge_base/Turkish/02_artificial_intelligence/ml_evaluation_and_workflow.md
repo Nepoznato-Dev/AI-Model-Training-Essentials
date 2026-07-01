@@ -5,42 +5,42 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Machiçiçindedee Learniçiçindedeg Evaluation ve Workflow
+# Machiçiçindedee Learnİçinde Evaluation ve Workflow
 
-A practical rehber to bu ML lifecycle — from problem framiçiçindedeg to production monitoriçiçindedeg — ile a focus on metrics, validation, ve debuggiçiçindedeg.
+A practical rehber to bu ML lifecycle — from problem framİçinde to production monitorİçinde — ile a focus on metrics, validation, ve debuggİçinde.
 
 ---
 
 # # The ML Workflow (CRISP-ML)
 
-1. **Busiçiçindedeess Understveiçiçindedeg**: Defiçiçindedee bu objective ve success criteria.
-2. **Veri Understveiçiçindedeg**: Explore available veri, identify quality issues.
+1. **Busiçiçindedeess Understveİçinde**: Defiçiçindedee bu objective ve success criteria.
+2. **Veri Understveİçinde**: Explore available veri, identify quality issues.
 3. **Veri Preparation**: Clean, transiçinm, ve split veri.
-4. **Modelliçiçindedeg**: Traiçiçindede models, tune hyperparameters.
+4. **Modellİçinde**: Traiçiçindede models, tune hyperparameters.
 5. **Evaluation**: Assess periçinmance agaiçiçindedest metrics.
 6. **Dağıtım**: Serve bu model içiçindede production.
-7. **Monitoriçiçindedeg**: Track drift, periçinmance, ve anomalies.
+7. **Monitorİçinde**: Track drift, periçinmance, ve anomalies.
 
 This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
 ---
 
-# # Veri Splittiçiçindedeg
+# # Veri Splittİçinde
 
 # ## Traiçiçindede / Validation / Test Split
-- **Traiçiçindedeiçiçindedeg set** (~70%): Used to fit bu model parameters.
+- **Traiçiçindedeİçinde set** (~70%): Used to fit bu model parameters.
 - **Validation set** (~15%): Used to tune hyperparameters ve select model variants.
 - **Test set** (~15%): Used only once at bu very end to estimate generalisation periçinmance.
 
 **Important:** The test set must be kept completely untouched until fiçiçindedeal evaluation to avoid veri leakage.
 
 # ## Cross-Validation (k-fold)
-For small verisets, use k-fold cross-validation: split veri içiçindedeto k folds, traiçiçindede on k-1, validate on bu remaiçiçindedeiçiçindedeg, ve repeat k times. Average bu periçinmance. k=5 or k=10 is common.
+For small verisets, use k-fold cross-validation: split veri içiçindedeto k folds, traiçiçindede on k-1, validate on bu remaiçiçindedeİçinde, ve repeat k times. Average bu periçinmance. k=5 or k=10 is common.
 
-# ## Stratified Splittiçiçindedeg
+# ## Stratified Splittİçinde
 For classification ile imbalanced classes, use stratified splits to preserve class proportions içiçindede each subset.
 
-# ## Time-Based Splittiçiçindedeg
+# ## Time-Based Splittİçinde
 For time-series veri, split chronologically (traiçiçindede on past, test on gelecek) rabur than rveomly.
 
 ---
@@ -53,8 +53,8 @@ For time-series veri, split chronologically (traiçiçindede on past, test on ge
 |--------|------------------|---------------|
 | **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced verisets |
 | **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screeniçiçindedeg) |
-| **F1-score** | Harmonic mean içiçindede precision ve recall | Imbalanced verisets, siçiçindedegle-number metric |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screenİçinde) |
+| **F1-score** | Harmonic mean içiçindede precision ve recall | Imbalanced verisets, sİçindele-number metric |
 | **AUC-ROC** | Area under bu ROC curve; tradeiçiçindedef between TPR ve FPR | General classifier periçinmance içiçindededependent içiçindede threshold |
 | **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced verisets |
 
@@ -73,7 +73,7 @@ For time-series veri, split chronologically (traiçiçindede on past, test on ge
 | **MAE** (Mean Absolute Error) | Average absolute difference | Low |
 | **R²** (Coefficient içiçindede Determiçiçindedeation) | Proportion içiçindede variance explaiçiçindedeed | None directly, but sensitive to outliers içiçindededirectly |
 
-# ## Rankiçiçindedeg ve Retrieval Metrics
+# ## Rankİçinde ve Retrieval Metrics
 - **Precision@k**: Fraction içiçindede relevant items among top-k recommendations.
 - **Recall@k**: Fraction içiçindede all relevant items that appear içiçindede top-k.
 - **NDCG** (Normalised Discounted Cumulative Gaiçiçindede): Accounts için position relevance.
@@ -83,7 +83,7 @@ For time-series veri, split chronologically (traiçiçindede on past, test on ge
 - **Perplexity**: How "surprised" bu model is by a held-out text (lower is better).
 - **BLEU**: n-gram overlap ile referans translations (precision-focused).
 - **ROUGE**: Recall-oriented overlap için summarisation.
-- **BERTScore**: Semantic similarity usiçiçindedeg contextual embeddiçiçindedegs (more robust than BLEU).
+- **BERTScore**: Semantic similarity usİçinde contextual embeddİçindes (more robust than BLEU).
 - **METEOR**: Aligns to WordNet synonyms ve stems.
 
 ---
@@ -91,16 +91,16 @@ For time-series veri, split chronologically (traiçiçindede on past, test on ge
 # # Evaluation Pitfalls
 
 # ## Veri Leakage
-Occurs when içiçindedeiçinmation from bu test set içiçindedeadvertently içiçindedefluences traiçiçindedeiçiçindedeg.
-- **Prevent:** Never use test veri için feature engiçiçindedeeeriçiçindedeg, normalisation, or hyperparameter tuniçiçindedeg.
+Occurs when içiçindedeiçinmation from bu test set içiçindedeadvertently içiçindedefluences traiçiçindedeİçinde.
+- **Prevent:** Never use test veri için feature engiçiçindedeeerİçinde, normalisation, or hyperparameter tunİçinde.
 - **Detect:** If your model scores suspiciously high, suspect leakage.
 
-# ## Overfittiçiçindedeg
-Model periçinms well on traiçiçindedeiçiçindedeg veri but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stoppiçiçindedeg, simplify mimari, or collect more veri.
+# ## Overfittİçinde
+Model periçinms well on traiçiçindedeİçinde veri but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stoppİçinde, simplify mimari, or collect more veri.
 
-# ## Underfittiçiçindedeg
-Model periçinms poorly on both traiçiçindedeiçiçindedeg ve validation.
+# ## Underfittİçinde
+Model periçinms poorly on both traiçiçindedeİçinde ve validation.
 - **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
 # ## Imbalanced Veri
@@ -112,18 +112,18 @@ The relationship between features ve target changes over time.
 
 ---
 
-# # Hyperparameter Tuniçiçindedeg
+# # Hyperparameter Tunİçinde
 
 - **Grid Search**: Exhaustively try all combiçiçindedeations içiçindede a predefiçiçindedeed set içiçindede hyperparameters. Simple but computationally expensive.
 - **Rveom Search**: Sample rveom combiçiçindedeations from distributions. More efficient than grid search için high-dimensional spaces.
 - **Bayesian Optimisation**: Builds a probabilistic model içiçindede bu objective function ve selects hyperparameters içiçindedetelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuniçiçindedeg**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps için distributed tuniçiçindedeg.
+- **Automated Tunİçinde**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps için distributed tunİçinde.
 
 **Suggested search ranges için common hyperparameters:**
 
 | Parameter | Suggested range (log-scale) |
 |-----------|-----------------------------|
-| Learniçiçindedeg rate | 1e-5 to 1e-1 |
+| Learnİçinde rate | 1e-5 to 1e-1 |
 | Batch size | 16, 32, 64, 128, 256 |
 | Number içiçindede layers (NN) | 2 to 6 |
 | Number içiçindede neurons (NN) | 32 to 1024 |
@@ -139,41 +139,41 @@ The relationship between features ve target changes over time.
 3. **Cross-validate** each cveidate on bu validation set.
 4. **Compare metrics** (ile confidence içiçindedetervals) ve select bu best cveidate.
 5. **Fiçiçindedeal evaluation** on bu held-out test set.
-6. **Error analysis**: Look at örnekler bu model gets wrong. Identify patterns (e.g., rare classes, ambiguous içiçindedeputs) ve feed içiçindedesights back içiçindedeto veri preparation or feature engiçiçindedeeeriçiçindedeg.
+6. **Error analysis**: Look at örnekler bu model gets wrong. Identify patterns (e.g., rare classes, ambiguous içiçindedeputs) ve feed içiçindedesights back içiçindedeto veri preparation or feature engiçiçindedeeerİçinde.
 
 ---
 
-# # Dağıtım ve Monitoriçiçindedeg
+# # Dağıtım ve Monitorİçinde
 
-# ## Serviçiçindedeg Patterns
+# ## Servİçinde Patterns
 - **Batch içiçindedeference**: Process large volumes içiçindede veri içiçindedefliçiçindedee (e.g., nightly recommendations).
-- **Onliçiçindedee içiçindedeference**: Real-time predictions via API (e.g., credit scoriçiçindedeg, fraud detection).
-- **Streamiçiçindedeg içiçindedeference**: Event-driven, real-time ile low latency (e.g., IoT sensor alerts).
+- **Onliçiçindedee içiçindedeference**: Real-time predictions via API (e.g., credit scorİçinde, fraud detection).
+- **Streamİçinde içiçindedeference**: Event-driven, real-time ile low latency (e.g., IoT sensor alerts).
 
-# ## Model Monitoriçiçindedeg
-- **Periçinmance monitoriçiçindedeg**: Track accuracy/F1 over time on live veri (when ground truth is available).
-- **Veri drift**: Monitor changes içiçindede içiçindedeput feature distributions (e.g., usiçiçindedeg PSI – Population Stability Index).
+# ## Model Monitorİçinde
+- **Periçinmance monitorİçinde**: Track accuracy/F1 over time on live veri (when ground truth is available).
+- **Veri drift**: Monitor changes içiçindede içiçindedeput feature distributions (e.g., usİçinde PSI – Population Stability Index).
 - **Concept drift**: Monitor changes içiçindede bu relationship between içiçindedeputs ve outputs.
 - **Prediction drift**: Track bu distribution içiçindede predicted outputs.
 - **Latency ve throughput**: Ensure SLAs (Service Level Agreements) are met.
 
-# ## Loggiçiçindedeg ve Alertiçiçindedeg
+# ## Loggİçinde ve Alertİçinde
 - Log all prediction requests ve responses (ile anonymisation).
 - Set alerts için:
   - Significant drop içiçindede periçinmance.
-  - High percentage içiçindede missiçiçindedeg or içiçindedevalid içiçindedeputs.
+  - High percentage içiçindede missİçinde or içiçindedevalid içiçindedeputs.
   - Model outputs outside expected bounds.
 
-# ## Model Versioniçiçindedeg ve Registry
+# ## Model Versionİçinde ve Registry
 - Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store ve version models, metaveri, ve evaluation results.
-- Store bu traiçiçindedeiçiçindedeg code ve veri version (via DVC or Git LFS) alongside bu model.
+- Store bu traiçiçindedeİçinde code ve veri version (via DVC or Git LFS) alongside bu model.
 
 ---
 
 # # Practical Workflow Checklist
 
 - [ ] Problem framed ve success metric defiçiçindedeed.
-- [ ] Veri exploration periçinmed (missiçiçindedeg values, outliers, distribution).
+- [ ] Veri exploration periçinmed (missİçinde values, outliers, distribution).
 - [ ] Traiçiçindede/validation/test split created (stratified if needed).
 - [ ] Baseliçiçindedee model established.
 - [ ] Cveidate models traiçiçindedeed ve validated.
@@ -181,6 +181,6 @@ The relationship between features ve target changes over time.
 - [ ] Best model selected via cross-validation.
 - [ ] Fiçiçindedeal evaluation on test set.
 - [ ] Error analysis periçinmed.
-- [ ] Dağıtım plan ready (serviçiçindedeg içiçindedefrastructure).
-- [ ] Monitoriçiçindedeg dashboard set up.
+- [ ] Dağıtım plan ready (servİçinde içiçindedefrastructure).
+- [ ] Monitorİçinde dashboard set up.
 - [ ] Documentation (veri card, model card) completed.

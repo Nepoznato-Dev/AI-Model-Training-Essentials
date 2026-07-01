@@ -1,658 +1,222 @@
 <!-- 
-This file was automatically translated from English to Korean.
-Source: coding_languages.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+이 파일은 영어에서 한국어로 자동 번역되었습니다.
+소스: coding_languages.md
+참고: 기술 용어, 코드 예제 및 고유 명사는 영어로 남을 수 있습니다.
+정확성 개선을 위해 pull request 를 통해 편집을 기여해 주세요.
 -->
 
-# Cod 언어s
+# 프로그래밍 언어
 
-# # Python
+## Python
 
-Python is a high-level, terpreted, dynamically typed, general-purpose programm 언어. It emphasises readability uses significant dentation as block delimiters.
+Python 은 고수준, 인터프리터 방식, 동적 타입의 범용 프로그래밍 언어입니다. 가독성을 중시하며 블록 구분자로 의미 있는 들여쓰기를 사용합니다.
 
-# ## 구문 기본
+### 기본 문법
 
 ```python
-# Variables and types
+# 변수와 타입
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 조건문
 if age >= 18:
- print("adult")
+    print("성인")
 elif age >= 13:
- print("teenager")
+    print("청소년")
 else:
- print("child")
+    print("어린이")
 
-# Loops
+# 루프
 for i in range(5):
- print(i)
+    print(i)
 
 while active:
- active = False
+    active = False
 ```
 
-# ## Functions type hts
+### 함수와 타입 주석
 
 ```python
 def greet(name: str, times: int = 1) -> str:
- return (f"Hello, {name}! " * times).strip()
+    return (f"안녕하세요, {name}님! " * times).strip()
 ```
 
-# ## List comprehensions
+### 리스트 컴프리헨션
 
 ```python
 squares = [x**2 for x in range(10)]
-evens = [x for x in range(20) if x % 2 == 0]
+evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes OOP
+### 클래스와 OOP
 
 ```python
-class Animal:
- def __init__(self, name: str) -> None:
- self.name = name
-
- def speak(self) -> str:
- raise NotImplementedError
-
-class Dog(Animal):
- def speak(self) -> str:
- return f"{self.name} says woof"
+class Person:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+    
+    def introduce(self) -> str:
+        return f"제 이름은 {self.name} 이고, {self.age} 세입니다."
 ```
 
-# ## Common patterns
+## JavaScript
 
-- Use ` 함께 open(path) as f:` file I/O.
-- Prefer f-strs (`f"hello {name}"`) over `%` or `.mat()`.
-- Use `데이 터classes.데이 터class` 데이 터-only classes.
-- Use `pathlib.Path` stead `os.path` file paths.
+JavaScript 는 인터프리터 방식, 객체 지향, 이벤트 기반의 프로그래밍 언어로, 주로 클라이언트 측 및 서버 측 웹 개발에 사용됩니다.
 
-# ## Tool
-
-- `pip stall <package>` stalls packages.
-- `python -m venv .venv && source .venv/b/activate` creates a virtual 환경.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip stall -r requirements.txt` restores m.
-- `pyproject.toml` is modern project-configuration stard.
-
----
-
-# # JavaScript
-
-JavaScript is primary 언어 웹. It runs browsers on servers via Node.js. It is dynamically typed prototype-based.
-
-# ## Modern 구문 (ES6+)
+### 기본 문법
 
 ```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
+// 변수와 타입
+let name = "Alice";
+const age = 30;
+let score = 9.5;
+let active = true;
 
-// Arrow functions
-const add = (a, b) => a + b;
+// 조건문
+if (age >= 18) {
+    console.log("성인");
+} else if (age >= 13) {
+    console.log("청소년");
+} else {
+    console.log("어린이");
+}
 
-// Template literals
-const greet = name => `Hello, ${name}!`;
+// 루프
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
-
-// Spread
-const merged = { ...defaults, ...overrides };
+while (active) {
+    active = false;
+}
 ```
 
-# ## Async programm
+### 함수
 
 ```javascript
-// Promises
-fetch("/api/data")
- .then(res => res.json())
- .then(data => console.log(data))
- .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
- try {
- const res = await fetch(`/users/${id}`);
- return await res.json();
- } catch (err) {
- console.error(err);
- }
-}
-```
-
-# ## Array methods
-
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
-
-# ## DOM manipulation
-
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
- document.querySelector(".result").textContent = "Done!";
-});
-```
-
-# ## Tool
-
-- `npm it -y` itialises a project.
-- `npm stall <package>` adds a dependency.
-- `npm run <script>` runs a script defed `package.json`.
-- `node dex.js` runs a script 함께 Node.js.
-
----
-
-# # TypeScript
-
-TypeScript is a statically typed superset JavaScript that compiles to pla JavaScript. It adds type annotations, terfaces, generics, enums.
-
-# ## Type annotations
-
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
-
-# ## Interfaces types
-
-```typescript
-interface User {
- id: number;
- name: string;
- email?: string; // optional property
+function greet(name, times = 1) {
+    return `안녕하세요, ${name}님! `.repeat(times).trim();
 }
 
-type Status = "active" | "inactive" | "banned";
-```
-
-# ## Generics
-
-```typescript
-function identity<T>(value: T): T {
- return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
- return arr[0];
-}
-```
-
-# ## Classes 함께 access modifiers
-
-```typescript
-class Counter {
- private count: number = 0;
-
- increment(): void {
- this.count++;
- }
-
- get value(): number {
- return this.count;
- }
-}
-```
-
-# ## tsconfig.json essentials
-
-```json
-{
- "compilerOptions": {
- "target": "ES2020",
- "module": "CommonJS",
- "strict": true,
- "outDir": "dist",
- "rootDir": "src"
- }
-}
-```
-
-# ## Tool
-
-- `npm stall -g typescript` stalls compiler.
-- `tsc` compiles project.
-- `ts-node src/dex.ts` runs TypeScript directly.
-
----
-
-# # Rust
-
-Rust is a 시스템 programm 언어 focused on 안전한ty, speed, concurrency. It pr이 벤트 memory-안전한ty bugs at compile time through its ownership system.
-
-# ## Ownership borrow
-
-Every value Rust has exactly one owner. When owner goes out scope value is dropped. Borrow allows 참조s 함께out transferr ownership.
-
-```rust
-fn main() {
- let s = String::from("hello"); // s owns the string
- let len = calculate_length(&s); // borrow s
- println!("{} has length {}", s, len); // s still valid
-}
-
-fn calculate_length(s: &String) -> usize {
- s.len()
-}
-```
-
-Mutable borrows (`&mut T`) require that no or borrows exist at same time.
-
-# ## Lifetimes
-
-Lifetimes ensure 참조s do not outlive 데이 터 y pot to.
-
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
- if x.len() > y.len() { x } else { y }
-}
-```
-
-# ## Enums pattern match
-
-```rust
-enum Shape {
- Circle(f64),
- Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
- match shape {
- Shape::Circle(r) => std::f64::consts::PI * r * r,
- Shape::Rectangle(w, h) => w * h,
- }
-}
-```
-
-# ## Error hl
-
-```rust
-use std::fs;
-
-fn read_file(path: &str) -> Result<String, std::io::Error> {
- fs::read_to_string(path)
-}
-
-fn main() {
- match read_file("data.txt") {
- Ok(콘텐츠) => println!("{}", 콘텐츠),
- Err(e) => eprintln!("Error: {}", e),
- }
-}
-```
-
-The `?` operator propagates errors automatically side functions that return `Result`.
-
-# ## Tool (Cargo)
-
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` mats code. `cargo clippy` lts.
-
----
-
-# # Go
-
-Go (Golang) is a statically typed, compiled 언어 designed simplicity high-permance concurrent programs.
-
-# ## 기본
-
-```go
-package main
-
-import "fmt"
-
-func main() {
- name := "world" // short variable declaration
- fmt.Printf("Hello, %s!\n", name)
-}
-```
-
-# ## Functions multiple return values
-
-```go
-func divide(a, b float64) (float64, error) {
- if b == 0 {
- return 0, fmt.Errorf("division by zero")
- }
- return a / b, nil
-}
-```
-
-# ## Interfaces
-
-```go
-type Speaker interface {
- Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
-
-Any type that implements all methods an terface satisfies it — no explicit declaration is needed.
-
-# ## Gorout channels
-
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
- for j := range jobs {
- results <- j * j
- }
-}
-
-func main() {
- jobs := make(chan int, 5)
- results := make(chan int, 5)
-
- go worker(1, jobs, results)
-
- for i := 1; i <= 5; i++ {
- jobs <- i
- }
- close(jobs)
-
- for i := 0; i < 5; i++ {
- fmt.Println(<-results)
- }
-}
-```
-
-# ## Defer
-
-```go
-func readFile(path string) error {
- f, err := os.Open(path)
- if err != nil {
- return err
- }
- defer f.Close() // runs when function returns
- // … process f …
- return nil
-}
-```
-
-# ## Tool
-
-- `go mod it module/name` itialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` mats code.
-- `go vet ./...` checks common mistakes.
-
----
-
-# # C C++
-
-C is a low-level, compiled, procedural 언어. C++ extends C 함께 classes, templates, Stard Template Library (STL).
-
-# ## C 기본
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
- int x = 42;
- printf("x = %d\n", x);
-
- /* Dynamic memory */
- int *arr = malloc(5 * sizeof(int));
- for (int i = 0; i < 5; i++) arr[i] = i;
- free(arr); /* always free what you malloc */
-
- return 0;
-}
-```
-
-# ## Poters
-
-A poter stores memory address anor variable. `*ptr` de참조s it; `&var` takes an address.
-
-```c
-int a = 10;
-int *p = &a;
-*p = 20; /* a is now 20 */
-```
-
-# ## C++ classes R인공 지능I
-
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
- Person(std::string name, int age) : name_(name), age_(age) {}
-
- void greet() const {
- std::cout << "Hi, I'm " << name_ << "\n";
- }
-
-private:
- std::string name_;
- int age_;
+// 화살표 함수
+const greetArrow = (name, times = 1) => {
+    return `안녕하세요, ${name}님! `.repeat(times).trim();
 };
 ```
 
-R인공 지능I (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensur cleanup happens automatically destructors.
+### 배열 조작
 
-# ## STL contaers
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(x => x ** 2);
+const evens = numbers.filter(x => x % 2 === 0);
+const sum = numbers.reduce((acc, x) => acc + x, 0);
+```
+
+## Java
+
+Java 는 컴파일 방식, 객체 지향, 플랫폼 독립적인 프로그래밍 언어로, 엔터프라이즈 애플리케이션과 Android 개발에서 널리 사용됩니다.
+
+### 기본 문법
+
+```java
+// 변수와 타입
+String name = "Alice";
+int age = 30;
+double score = 9.5;
+boolean active = true;
+
+// 조건문
+if (age >= 18) {
+    System.out.println("성인");
+} else if (age >= 13) {
+    System.out.println("청소년");
+} else {
+    System.out.println("어린이");
+}
+
+// 루프
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+while (active) {
+    active = false;
+}
+```
+
+### 클래스와 OOP
+
+```java
+public class Person {
+    private String name;
+    private int age;
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public String introduce() {
+        return "제 이름은 " + name + " 이고, " + age + "세입니다.";
+    }
+}
+```
+
+## C++
+
+C++ 는 컴파일 방식, 고성능, 다목적 프로그래밍 언어로, 시스템, 비디오 게임, 중요한 애플리케이션에 사용됩니다.
+
+### 기본 문법
 
 ```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
+#include <iostream>
+#include <string>
+using namespace std;
 
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"] = 87;
-```
-
-# ## Modern C++ (C++17 / C++20) highlights
-
-- `auto` type deduction.
-- Range-based `` loops: ` (auto& item : contaer)`.
-- Smart poters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bds: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::str_view`.
-
-# ## Compilation
-
-- `gcc ma.c -o ma` compiles C.
-- `g++ -std=c++20 -Wall ma.cpp -o ma` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is stard build-system generator larger projects.
-
----
-
-# # Swift
-
-Swift is a modern, statically typed programm 언어 developed by Apple iOS, macOS, watchOS, tvOS. It is also available on Lux.
-
-# ## 기본
-
-```swift
-let greeting = "Hello, world!" // constant (immutable)
-var counter = 0 // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
-
-# ## Optionals
-
-An optional (`T?`) represents a value that may or may not be present.
-
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
- print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
-
-# ## Functions closures
-
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
-
-# ## Classes structs
-
-Swift has both classes (참조 types) structs (value types). Prefer structs simple 데이 터 models.
-
-```swift
-struct Point {
- var x: Double
- var y: Double
-}
-
-class Vehicle {
- var speed: Double = 0.0
- func accelerate(by amount: Double) { speed += amount }
+int main() {
+    // 변수와 타입
+    string name = "Alice";
+    int age = 30;
+    double score = 9.5;
+    bool active = true;
+    
+    // 조건문
+    if (age >= 18) {
+        cout << "성인" << endl;
+    } else if (age >= 13) {
+        cout << "청소년" << endl;
+    } else {
+        cout << "어린이" << endl;
+    }
+    
+    // 루프
+    for (int i = 0; i < 5; i++) {
+        cout << i << endl;
+    }
+    
+    while (active) {
+        active = false;
+    }
+    
+    return 0;
 }
 ```
 
-# ## Protocols
+## 코딩의 기초 (언어 비종속)
 
-```swift
-protocol Describable {
- var description: String { get }
-}
+프로그래밍의 기본 개념은 모든 언어에 공통적입니다:
 
-struct Cat: Describable {
- var name: String
- var description: String { "Cat named \(name)" }
-}
-```
+- **변수**: 이름 붙은 데이터 저장소
+- **데이터 타입**: 데이터의 성질 정의 (숫자, 텍스트, 부울 등)
+- **제어 구조**: 조건문 (if/else) 과 루프 (for, while)
+- **함수**: 재사용 가능한 코드 블록
+- **데이터 구조**: 배열, 리스트, 딕셔너리, 집합
+- **객체 지향 프로그래밍**: 클래스, 객체, 상속, 다형성
+- **오류 처리**: Try/catch, 예외
+- **입출력**: 데이터 읽기 및 쓰기
 
-# ## Codable (JSON encod / decod)
-
-```swift
-struct User: Codable {
- let id: Int
- let name: String
- let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
-
-# ## SwiftUI 기본
-
-```swift
-import SwiftUI
-
-struct ContentView: View {
- @State private var count = 0
-
- var body: some View {
- VStack {
- Text("Count: \(count)")
- Button("Increment") { count += 1 }
- }
- }
-}
-```
-
-# ## Tool
-
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs project.
-- `swift test` runs tests.
-- `swift package it --type executable` creates a new executable project.
-- Xcode is primary IDE Apple-platm 개발.
-
----
-
-# # Cod 기초 (언어-Agnostic)
-
-# ## Problem-solv workflow
-
-1. Defe put, output, constrats 전에 writ code.
-2. Break task 로 smaller sub-problems.
-3. 시작 a simple correct solution, n optimise if needed.
-4. Validate 함께 tests, edge cases, realistic puts.
-
-# ## Core 데이 터 structures
-
-- **Array / List**: ordered collection 함께 fast dexed reads.
-- **Hash map / 사전**: key-value store 함께 average O(1) lookup.
-- **Set**: unique values, useful membership checks.
-- **Stack**: LIFO (last , first out), common pars recursion.
-- **Queue**: FIFO (first , first out), useful schedul BFS.
-- **Tree / Graph**: hierarchical 네트워크-style relationships.
-
-# ## Algorithmic complexity (Big O)
-
-- Big O describes how runtime or memory grows 함께 put size.
-- Typical costs:
- - O(1): constant-time lookup (e.g., hash map access).
- - O(log n): bary search.
- - O(n): sle pass through 데이 터.
- - O(n log n): efficient sort.
- - O(n²): nested loops over similar-size puts.
-- Prefer clear, mataable code unless pril shows a bottleneck.
-
-# ## Debugg prciples
-
-- Reproduce bug reliably first.
-- Mimise fail case to isolate cause.
-- Inspect logs, puts, assumptions.
-- Change one variable at a time while test.
-- Add regression tests so same bug does not return.
-
-# ## Test pyramid
-
-- **Unit tests**: fast, focused checks small logic units.
-- **Integration tests**: verify teractions across modules/services.
-- **End-to-end tests**: validate user flows realistic 환경s.
-- A balanced suite has many unit tests fewer slow end-to-end tests.
-
-# ## Code quality practices
-
-- Use meanful names small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive terfaces explicit.
-- Use lters/matters consistency.
-- Review code correctness, clarity, 보안.
-
-# ## 보안 기본 developers
-
-- Validate sanitise external put.
-- Use parameterised queries to prevent SQL jection.
-- Store passwords 함께 strong hash algorithms (e.g., Argon2, bcrypt).
-- Avoid embedd secrets source code.
-- Apply least privilege credentials services.
+이러한 기본 개념은 선택한 프로그래밍 언어와 관계없이 적용됩니다. 이러한 기초를 마스터하면 새로운 언어를 더 쉽게 배울 수 있습니다.

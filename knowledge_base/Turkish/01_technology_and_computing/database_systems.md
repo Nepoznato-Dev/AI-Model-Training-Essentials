@@ -10,7 +10,7 @@ For accuracy improvements, please contribute edits via pull requests.
 # # Veribase Temeller
 
 # ## What is a Veribase?
-A veribase is an organized collection içiçindede structured içiçindedeiçinmation stored electronically, designed için efficient retrieval, içiçindedesertion, updatiçiçindedeg, ve deletion içiçindede veri.
+A veribase is an organized collection içiçindede structured içiçindedeiçinmation stored electronically, designed için efficient retrieval, içiçindedesertion, updatİçinde, ve deletion içiçindede veri.
 
 # ## Veribase Yönetim Sistemler (DBMS)
 Siçiçindedetware that içiçindedeteracts ile end users, applications, ve bu veribase itself to capture ve analyze veri. Örnekler: MySQL, PostgreSQL, Oracle, MongoDB.
@@ -20,8 +20,8 @@ Siçiçindedetware that içiçindedeteracts ile end users, applications, ve bu v
 - **Instance**: Actual veri stored at a particular moment
 - **ACID Properties**: Atomicity, Consistency, Isolation, Durability
 - **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organiziçiçindedeg veri to reduce redundancy
-- **Denormalization**: Addiçiçindedeg redundancy to improve read periçinmance
+- **Normalization**: Organizİçinde veri to reduce redundancy
+- **Denormalization**: Addİçinde redundancy to improve read periçinmance
 
 # # Relational Veribases (SQL)
 
@@ -29,7 +29,7 @@ Siçiçindedetware that içiçindedeteracts ile end users, applications, ve bu v
 - **Tables**: Rows (records) ve columns (fields)
 - **Primary Key**: Unique identifier için each row
 - **Foreign Key**: Referans to primary key içiçindede anobur table
-- **Indexes**: Veri structures improviçiçindedeg query speed
+- **Indexes**: Veri structures improvİçinde query speed
 - **Views**: Virtual tables based on query results
 - **Stored Procedures**: Precompiled SQL code blocks
 - **Triggers**: Automatic actions on veri changes
@@ -51,7 +51,7 @@ DELETE FROM users WHERE id = 1;
 ```
 
 # ## Joiçiçindedes
-- **IÇINDENER JOIÇINDE**: Returns matchiçiçindedeg rows from both tables
+- **IÇINDENER JOIÇINDE**: Returns matchİçinde rows from both tables
 - **LEFT JOIÇINDE**: All rows from left table, matches from right
 - **RIGHT JOIÇINDE**: All rows from right table, matches from left
 - **FULL OUTER JOIÇINDE**: All rows from both tables
@@ -59,7 +59,7 @@ DELETE FROM users WHERE id = 1;
 - **SELF JOIÇINDE**: Table joiçiçindedeed ile itself
 
 # ## Normalization Forms
-- **1NF**: Atomic values, no repeatiçiçindedeg groups
+- **1NF**: Atomic values, no repeatİçinde groups
 - **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
 - **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on obur non-key attributes)
 - **BCNF**: Stronger 3NF, every determiçiçindedeant is a cveidate key
@@ -89,9 +89,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 # ### Key-Value Stores
 - **Structure**: Simple key-value pairs
-- **Use Cases**: Cachiçiçindedeg, sessions, shoppiçiçindedeg csanat
+- **Use Cases**: Cachİçinde, sessions, shoppİçinde csanat
 - **Örnekler**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited queryiçiçindedeg
+- **Characteristics**: Fast, simple, limited queryİçinde
 
 # ### Column-Family Stores
 - **Structure**: Columns grouped içiçindedeto families
@@ -106,8 +106,8 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Query Dil**: Cypher (Neo4j), Gremliçiçindede
 
 # ## When to Use NoSQL
-- Flexible/evolviçiçindedeg schema
-- Horizontal scaliçiçindedeg requirements
+- Flexible/evolvİçinde schema
+- Horizontal scalİçinde requirements
 - High write throughput
 - Hierarchical/nested veri
 - Distributed sistemler
@@ -115,48 +115,48 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 # # Veribase Design
 
-# ## Entity-Relationship Modeliçiçindedeg
+# ## Entity-Relationship Modelİçinde
 - **Entities**: Objects/concepts (Customer, Product, Order)
 - **Attributes**: Properties içiçindede entities (name, price, date)
 - **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
 - **Cardiçiçindedeality**: Number içiçindede içiçindedestances içiçindede relationship
 
 # ## Schema Design Patterns
-- **Siçiçindedegle Table Inheritance**: All types içiçindede one table ile type discrimiçiçindedeator
+- **Sİçindele Table Inheritance**: All types içiçindede one table ile type discrimiçiçindedeator
 - **Class Table Inheritance**: Separate tables için base ve subclasses
 - **Concrete Table Inheritance**: Separate table için each concrete class
 - **Junction Tables**: Resolve many-to-many relationships
 - **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
 
-# ## Indexiçiçindedeg Strategies
-- **B-Tree**: Default, range queries, sortiçiçindedeg
+# ## Indexİçinde Strategies
+- **B-Tree**: Default, range queries, sortİçinde
 - **Hash**: Exact match lookups
 - **Bitmap**: Low-cardiçiçindedeality columns (gender, status)
 - **Full-Text**: Text search capabilities
 - **Spatial**: Geographic veri (GIS)
 - **Composite**: Multiple columns combiçiçindedeed
-- **Coveriçiçindedeg**: Includes all columns needed için query
+- **Coverİçinde**: Includes all columns needed için query
 
 # # Query Optimization
 
 # ## Execution Plans
-- Understveiçiçindedeg how veribase executes queries
-- Identifyiçiçindedeg bottlenecks (full table scans, missiçiçindedeg içiçindededexes)
+- Understveİçinde how veribase executes queries
+- Identifyİçinde bottlenecks (full table scans, missİçinde içiçindededexes)
 - Tools: EXPLAIÇINDE, EXPLAIÇINDE ANALYZE
 
 # ## Optimization Techniques
 - **Index Usage**: Ensure queries use appropriate içiçindededexes
-- **Query Rewritiçiçindedeg**: Simplify complex queries
+- **Query Rewritİçinde**: Simplify complex queries
 - **Joiçiçindede Optimization**: Choose correct joiçiçindede types ve order
-- **Partitioniçiçindedeg**: Split large tables (range, hash, list)
+- **Partitionİçinde**: Split large tables (range, hash, list)
 - **Materialized Views**: Pre-computed query results
-- **Query Cachiçiçindedeg**: Store frequent query results
+- **Query Cachİçinde**: Store frequent query results
 
 # ## Common Periçinmance Issues
-- **N+1 Query Problem**: Fetchiçiçindedeg related veri içiçindedeefficiently
-- **Missiçiçindedeg Indexes**: Full table scans on large tables
-- **Over-içiçindededexiçiçindedeg**: Slow writes due to too many içiçindededexes
-- **Lock Contention**: Transactions waitiçiçindedeg için locks
+- **N+1 Query Problem**: Fetchİçinde related veri içiçindedeefficiently
+- **Missİçinde Indexes**: Full table scans on large tables
+- **Over-içiçindededexİçinde**: Slow writes due to too many içiçindededexes
+- **Lock Contention**: Transactions waitİçinde için locks
 - **Inefficient Queries**: SELECT *, unnecessary joiçiçindedes
 
 # # Transactions ve Concurrency
@@ -168,18 +168,18 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **SERIALIZABLE**: Highest isolation, transactions execute sequentially
 
 # ## Concurrency Control
-- **Pessimistic Lockiçiçindedeg**: Lock resources beiçine access
-- **Optimistic Lockiçiçindedeg**: Check version beiçine commit
+- **Pessimistic Lockİçinde**: Lock resources beiçine access
+- **Optimistic Lockİçinde**: Check version beiçine commit
 - **MVCC (Multi-Version Concurrency Control)**: Maiçiçindedetaiçiçindede multiple versions içiçindede rows
-- **Row-Level Lockiçiçindedeg**: Lock specific rows
-- **Table-Level Lockiçiçindedeg**: Lock entire table
+- **Row-Level Lockİçinde**: Lock specific rows
+- **Table-Level Lockİçinde**: Lock entire table
 
 # ## Deadlocks
 - Circular dependency where transactions wait için each obur
-- Prevention: Consistent lock orderiçiçindedeg, timeouts, deadlock detection
+- Prevention: Consistent lock orderİçinde, timeouts, deadlock detection
 - Resolution: Abort one transaction
 
-# # Replication ve Scaliçiçindedeg
+# # Replication ve Scalİçinde
 
 # ## Replication Types
 - **Master-Slave**: One primary, multiple read replicas
@@ -187,11 +187,11 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Multi-Master**: N primaries, conflict resolution needed
 - **Chaiçiçindede Replication**: Sequential replication through nodes
 
-# ## Scaliçiçindedeg Approaches
-- **Vertical Scaliçiçindedeg**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaliçiçindedeg**: Add more servers (shardiçiçindedeg, partitioniçiçindedeg)
+# ## Scalİçinde Approaches
+- **Vertical Scalİçinde**: Increase server resources (CPU, RAM, storage)
+- **Horizontal Scalİçinde**: Add more servers (shardİçinde, partitionİçinde)
 - **Read Replicas**: Offload read traffic
-- **Shardiçiçindedeg**: Split veri across servers by key/range/hash
+- **Shardİçinde**: Split veri across servers by key/range/hash
 - **Federation**: Split by function/service
 
 # ## Consistency Models
@@ -213,7 +213,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **RTO (Recovery Time Objective)**: Maximum acceptable downtime
 - **RPO (Recovery Poiçiçindedet Objective)**: Maximum acceptable veri loss
 - **Disaster Recovery Plan**: Documented procedures için failures
-- **Testiçiçindedeg**: Regular recovery drills
+- **Testİçinde**: Regular recovery drills
 
 # # Güvenlik
 
@@ -226,13 +226,13 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 # ## Veri Protection
 - **Encryption at Rest**: Encrypt stored veri
 - **Encryption içiçindede Transit**: TLS/SSL için connections
-- **Maskiçiçindedeg**: Hide sensitive veri içiçindede non-production
+- **Maskİçinde**: Hide sensitive veri içiçindede non-production
 - **Tokenization**: Replace sensitive veri ile tokens
 
 # ## Common Vulnerabilities
 - **SQL Injection**: Malicious SQL içiçindede user içiçindedeput
-- **Privilege Escalation**: Gaiçiçindedeiçiçindedeg unauthorized access
-- **Audit Loggiçiçindedeg**: Track all veribase activities
+- **Privilege Escalation**: Gaiçiçindedeİçinde unauthorized access
+- **Audit Loggİçinde**: Track all veribase activities
 - **Compliance**: GDPR, HIPAA, PCI-DSS requirements
 
 # # Modern Veribase Technologies
@@ -241,32 +241,32 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
 - **Azure**: SQL Veribase, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaliçiçindedeg, backups içiçindedecluded
+- **Benefits**: Managed service, auto-scalİçinde, backups içiçindedecluded
 
 # ## NewSQL Veribases
 - Combiçiçindedee SQL consistency ile NoSQL scalability
 - **Örnekler**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaliçiçindedeg
+- **Features**: Distributed, ACID transactions, horizontal scalİçinde
 
 # ## Time-Series Veribases
 - Optimized için timestamped veri
 - **Örnekler**: InfluxDB, TimescaleDB, Promebuus
-- **Use Cases**: IoT, monitoriçiçindedeg, fiçiçindedeancial veri
+- **Use Cases**: IoT, monitorİçinde, fiçiçindedeancial veri
 
 # ## Vector Veribases
-- Store ve query embeddiçiçindedeg vectors
+- Store ve query embeddİçinde vectors
 - **Örnekler**: Piçiçindedeecone, Milvus, Weaviate, Qdrant
 - **Use Cases**: Semantic search, recommendation sistemler, AI applications
 
 # ## Multi-Model Veribases
-- Support multiple veri models içiçindede siçiçindedegle system
+- Support multiple veri models içiçindede sİçindele system
 - **Örnekler**: ArangoDB, OrientDB, Azure Cosmos DB
 - **Benefit**: Flexibility ileout multiple veribases
 
 # # ORMs ve Veri Access
 
-# ## Object-Relational Mappiçiçindedeg
-- **Purpose**: Map veribase tables to programmiçiçindedeg objects
+# ## Object-Relational Mappİçinde
+- **Purpose**: Map veribase tables to programmİçinde objects
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
@@ -278,26 +278,26 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Abstraction from SQL
 - Type güvenlity
 - Migration yönetim
-- Query buildiçiçindedeg APIs
+- Query buildİçinde APIs
 
 # ## Drawbacks
 - Periçinmance overhead
 - Complex queries harder to write
 - N+1 query problems
-- Learniçiçindedeg curve
+- Learnİçinde curve
 
 # # Veribase Admiçiçindedeistration
 
 # ## DBA Responsibilities
 - Installation ve configuration
-- Periçinmance tuniçiçindedeg
+- Periçinmance tunİçinde
 - Backup ve recovery
 - Güvenlik yönetim
-- Capacity planniçiçindedeg
-- Monitoriçiçindedeg ve alertiçiçindedeg
+- Capacity plannİçinde
+- Monitorİçinde ve alertİçinde
 - Patch yönetim
 
-# ## Monitoriçiçindedeg Metrics
+# ## Monitorİçinde Metrics
 - Query response time
 - Throughput (transactions per second)
 - Connection count
@@ -308,7 +308,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 # ## Maiçiçindedetenance Tasks
 - **Vacuum/Analyze**: Update i̇statistikler, reclaim space
-- **Index Rebuildiçiçindedeg**: Defragment içiçindededexes
+- **Index Rebuildİçinde**: Defragment içiçindededexes
 - **İstatistikler Updates**: Keep query optimizer içiçindedeiçinmed
 - **Log Rotation**: Manage log file sizes
-- **Capacity Planniçiçindedeg**: Predict growth, plan upgrades
+- **Capacity Plannİçinde**: Predict growth, plan upgrades

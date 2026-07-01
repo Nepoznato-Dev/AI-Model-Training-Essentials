@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-# ## Vieweng Files
+# ## Ver Archivos
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -73,7 +73,7 @@ umask                   # Show default permission mask
 
 ---
 
-# # Text Processeng
+# # Procesamiento de Texto
 
 # ## Search & Replace
 ```bash

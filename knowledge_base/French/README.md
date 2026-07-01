@@ -1,237 +1,237 @@
 <!-- 
-This file was automatically translated from English to French.
+Ce fichier a été traduit automatiquement de l'anglais vers le français.
 Source: README.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Note: Les termes techniques, exemples de code et noms propres peuvent rester en anglais.
+Pour des améliorations de précision, veuillez contribuer avec des modifications via des pull requests.
 -->
 
-# Anglais Base de connaissances
+# Base de Connaissances en Français
 
-A comprehensive collection de référence documents coverdansg technologie, science, busdansess, humanities, et practical skills.
+Une collection complète de documents de référence couvrant la technologie, la science, les affaires, les sciences humaines et les compétences pratiques.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
-**Organization:** Categorized dansto 10 le/lamatic directories
+**Dernière mise à jour:** Juin 2025  
+**Total de fichiers:** 34+ documents markdown  
+**Organisation:** Catégorisés en 10 répertoires thématiques
 
 ---
 
-# # 📁 Directory Structure
+## 📁 Structure des Répertoires
 
 ```
-knowledge_base/English/
-├── 01_technology_and_computing/    # Programming, databases, cloud, networking
-├── 02_artificial_intelligence/      # AI, ML, LLMs, prompt engineering
-├── 03_data_science/                 # Analytics, statistics, mathematics
-├── 04_science/                      # Natural sciences, medicine, environment
-├── 05_business_and_finance/         # Economics, finance, law
-├── 06_humanities/                   # History, geography, arts, psychology
-├── 07_reference/                    # Dictionary, general knowledge, communication
-├── 08_future/                       # Future projections and upcoming events
-├── 09_practical_skills/             # Practical guides and how-tos (growing)
-└── 10_cheat_sheets/                 # Quick reference guides (growing)
+knowledge_base/French/
+├── 01_technologie_et_informatique/    # Programmation, bases de données, cloud, réseau
+├── 02_intelligence_artificielle/      # IA, ML, LLMs, ingénierie des prompts
+├── 03_science_des_données/            # Analytique, statistiques, mathématiques
+├── 04_sciences/                       # Sciences naturelles, médecine, environnement
+├── 05_affaires_et_finance/            # Économie, finance, droit
+├── 06_sciences_humaines/              # Histoire, géographie, arts, psychologie
+├── 07_référence/                      # Dictionnaire, connaissances générales, communication
+├── 08_futur/                          # Projections futures et événements à venir
+├── 09_compétences_pratiques/          # Guides pratiques et tutoriels (en croissance)
+└── 10_aide_mémoire/                   # Guides de référence rapide (en croissance)
 ```
 
 ---
 
-# # 📚 Quick Navigation
+## 📚 Navigation Rapide
 
-# ## Technologie & Computdansg (`01_technologie_et_computdansg/`)
-| File | Description | Ldanses |
+## Technologie et Informatique (`01_technologie_et_informatique/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [coddansg_langues.md](01_technologie_et_computdansg/coddansg_langues.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_développement.md](01_technologie_et_computdansg/web_développement.md) | Frontend, backend, DevOps, sécurité | 350+ |
-| [donnéesbase_systèmes.md](01_technologie_et_computdansg/donnéesbase_systèmes.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_architecture.md](01_technologie_et_computdansg/cloud_architecture.md) | Cloud providers, architecture patterns, sécurité | 350+ |
-| [réseaudansg_bases.md](01_technologie_et_computdansg/réseaudansg_bases.md) | OSI model, TCP/IP, protocols, sécurité | 400+ |
-| [technologie_glossary.md](01_technologie_et_computdansg/technologie_glossary.md) | Technical termdansology | 250+ |
-| [tool_usage.md](01_technologie_et_computdansg/tool_usage.md) | Développement tools et utilities | 200+ |
+| [langages_de_programmation.md](01_technologie_et_informatique/langages_de_programmation.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [développement_web.md](01_technologie_et_informatique/développement_web.md) | Frontend, backend, DevOps, sécurité | 350+ |
+| [systèmes_de_base_de_données.md](01_technologie_et_informatique/systèmes_de_base_de_données.md) | SQL, NoSQL, modèles de conception, optimisation | 300+ |
+| [architecture_cloud.md](01_technologie_et_informatique/architecture_cloud.md) | Fournisseurs cloud, modèles d'architecture, sécurité | 350+ |
+| [bases_des_réseaux.md](01_technologie_et_informatique/bases_des_réseaux.md) | Modèle OSI, TCP/IP, protocoles, sécurité | 400+ |
+| [glossaire_technologique.md](01_technologie_et_informatique/glossaire_technologique.md) | Terminologie technique | 250+ |
+| [utilisation_des_outils.md](01_technologie_et_informatique/utilisation_des_outils.md) | Outils de développement et utilitaires | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_danstelligence/`)
-| File | Description | Ldanses |
+## Intelligence Artificielle (`02_intelligence_artificielle/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [artificial_danstelligence.md](02_artificial_danstelligence/artificial_danstelligence.md) | AI aperçu, ML, deep learndansg, LLMs | 200+ |
-| [ml_evaluation_et_workflow.md](02_artificial_danstelligence/ml_evaluation_et_workflow.md) | ML pipeldanses, metrics, meilleures pratiques | 200+ |
-| [phi3_et_local_models.md](02_artificial_danstelligence/phi3_et_local_models.md) | Runndansg models locally | 200+ |
-| [local_ai_architecture.md](02_artificial_danstelligence/local_ai_architecture.md) | Local AI déploiement architectures | 400+ |
-| [prompt_engdanseerdansg.md](02_artificial_danstelligence/prompt_engdanseerdansg.md) | Prompt techniques et strategies | 150+ |
+| [intelligence_artificielle.md](02_intelligence_artificielle/intelligence_artificielle.md) | Aperçu IA, ML, apprentissage profond, LLMs | 200+ |
+| [évaluation_et_flux_ml.md](02_intelligence_artificielle/évaluation_et_flux_ml.md) | Pipelines ML, métriques, meilleures pratiques | 200+ |
+| [phi3_et_modèles_locaux.md](02_intelligence_artificielle/phi3_et_modèles_locaux.md) | Exécution de modèles localement | 200+ |
+| [architecture_ia_locale.md](02_intelligence_artificielle/architecture_ia_locale.md) | Architectures de déploiement IA locale | 400+ |
+| [ingénierie_des_prompts.md](02_intelligence_artificielle/ingénierie_des_prompts.md) | Techniques et stratégies de prompt | 150+ |
 
-# ## Données Science (`03_données_science/`)
-| File | Description | Ldanses |
+## Science des Données (`03_science_des_données/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [données_science_et_analytics.md](03_données_science/données_science_et_analytics.md) | Données processdansg, ML, big données, BI | 350+ |
-| [math_et_logic.md](03_données_science/math_et_logic.md) | Male/lamatics, logic, prodes | 250+ |
+| [science_des_données_et_analytique.md](03_science_des_données/science_des_données_et_analytique.md) | Traitement de données, ML, big data, BI | 350+ |
+| [mathématiques_et_logique.md](03_science_des_données/mathématiques_et_logique.md) | Mathématiques, logique, preuves | 250+ |
 
-# ## Science (`04_science/`)
-| File | Description | Ldanses |
+## Sciences (`04_sciences/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [science_et_nature.md](04_science/science_et_nature.md) | Physics, chemistry, biology bases | 100+ |
-| [medicdanse_et_soins de santé.md](04_science/medicdanse_et_soins de santé.md) | Medical specialties, soins de santé systèmes | 250+ |
-| [environnemental_science_et_sustadansability.md](04_science/environnemental_science_et_sustadansability.md) | Ecosystèmes, climate, conservation | 200+ |
-| [alimentation_agriculture_et_nutrition.md](04_science/alimentation_agriculture_et_nutrition.md) | Agriculture, nutrition, alimentation systèmes | 150+ |
+| [sciences_et_nature.md](04_sciences/sciences_et_nature.md) | Bases de physique, chimie, biologie | 100+ |
+| [médecine_et_santé.md](04_sciences/médecine_et_santé.md) | Spécialités médicales, systèmes de santé | 250+ |
+| [sciences_environnementales_et_durabilité.md](04_sciences/sciences_environnementales_et_durabilité.md) | Écosystèmes, climat, conservation | 200+ |
+| [alimentation_agriculture_et_nutrition.md](04_sciences/alimentation_agriculture_et_nutrition.md) | Agriculture, nutrition, systèmes alimentaires | 150+ |
 
-# ## Busdansess & Fdansance (`05_busdansess_et_fdansance/`)
-| File | Description | Ldanses |
+## Affaires et Finance (`05_affaires_et_finance/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [busdansess_et_économie.md](05_busdansess_et_fdansance/busdansess_et_économie.md) | Corporate structures, marketdansg, économie | 150+ |
-| [fdansance_et_dansvestdansg.md](05_busdansess_et_fdansance/fdansance_et_dansvestdansg.md) | Personal fdansance, dansvestdansg, markets | 350+ |
-| [droit_et_juridique_systèmes.md](05_busdansess_et_fdansance/droit_et_juridique_systèmes.md) | Juridique systèmes, contracts, IP, constitutional droit | 200+ |
+| [affaires_et_économie.md](05_affaires_et_finance/affaires_et_économie.md) | Structures d'entreprise, marketing, économie | 150+ |
+| [finance_et_investissement.md](05_affaires_et_finance/finance_et_investissement.md) | Finance personnelle, investissement, marchés | 350+ |
+| [droit_et_systèmes_juridiques.md](05_affaires_et_finance/droit_et_systèmes_juridiques.md) | Systèmes juridiques, contrats, PI, droit constitutionnel | 200+ |
 
-# ## Humanities (`06_humanities/`)
-| File | Description | Ldanses |
+## Sciences Humaines (`06_sciences_humaines/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [histoire_et_culture.md](06_humanities/histoire_et_culture.md) | Historical periods, cultural movements | 200+ |
-| [géographie_et_géopolitique.md](06_humanities/géographie_et_géopolitique.md) | Physical/human géographie, political systèmes | 300+ |
-| [arts_et_littérature.md](06_humanities/arts_et_littérature.md) | Literary genres, visual arts, music, film | 400+ |
-| [psychologie_et_human_behavior.md](06_humanities/psychologie_et_human_behavior.md) | Cognitive, social, développemental psychologie | 200+ |
-| [langue_et_anglais.md](06_humanities/langue_et_anglais.md) | Grammar, ldansguistics, writdansg | 180+ |
+| [histoire_et_culture.md](06_sciences_humaines/histoire_et_culture.md) | Périodes historiques, mouvements culturels | 200+ |
+| [géographie_et_géopolitique.md](06_sciences_humaines/géographie_et_géopolitique.md) | Géographie physique/humaine, systèmes politiques | 300+ |
+| [arts_et_littérature.md](06_sciences_humaines/arts_et_littérature.md) | Genres littéraires, arts visuels, musique, cinéma | 400+ |
+| [psychologie_et_comportement_humain.md](06_sciences_humaines/psychologie_et_comportement_humain.md) | Psychologie cognitive, sociale, du développement | 200+ |
+| [langue_et_anglais.md](06_sciences_humaines/langue_et_anglais.md) | Grammaire, linguistique, écriture | 180+ |
 
-# ## Référence (`07_référence/`)
-| File | Description | Ldanses |
+## Référence (`07_référence/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [dictionnaire.md](07_référence/dictionnaire.md) | Comprehensive word defdansitions (A-Z) | 868 |
-| [general_knowledge.md](07_référence/general_knowledge.md) | Fundamental facts about le/la world | 150+ |
-| [technologie_et_computdansg.md](07_référence/technologie_et_computdansg.md) | Computdansg bases et fondamentaux | 250+ |
-| [sûr_communication.md](07_référence/sûr_communication.md) | Communication guideldanses et meilleures pratiques | 150+ |
+| [dictionnaire.md](07_référence/dictionnaire.md) | Définitions complètes de mots (A-Z) | 868 |
+| [connaissances_générales.md](07_référence/connaissances_générales.md) | Faits fondamentaux sur le monde | 150+ |
+| [technologie_et_informatique.md](07_référence/technologie_et_informatique.md) | Bases et fondamentaux de l'informatique | 250+ |
+| [communication_sécurisée.md](07_référence/communication_sécurisée.md) | Directives de communication et meilleures pratiques | 150+ |
 
-# ## Futur (`08_futur/`)
-| File | Description | Ldanses |
+## Futur (`08_futur/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [2026_et_futur_événements.md](08_futur/2026_et_futur_événements.md) | Upcomdansg événements, space missions, tech trends | 200+ |
+| [2026_et_événements_futurs.md](08_futur/2026_et_événements_futurs.md) | Événements à venir, missions spatiales, tendances technologiques | 200+ |
 
-# ## Practical Skills (`09_practical_skills/`)
-*Growdansg directory - comdansg soon:*
-- research_methods.md
-- critical_thdanskdansg.md
-- technical_writdansg.md
-- presentation_skills.md
-- career_développement.md
+## Compétences Pratiques (`09_compétences_pratiques/`)
+*Répertoire en croissance - bientôt disponible:*
+- methodes_de_recherche.md
+- pensee_critique.md
+- redaction_technique.md
+- competences_de_presentation.md
+- developpement_de_carriere.md
 
-# ## Aide-mémoire (`10_cheat_sheets/`)
-*Growdansg directory - comdansg soon:*
-- python_syntaxe.md
-- git_commets.md
-- sql_quick_ref.md
-- ldansux_commets.md
-- math_pourmulas.md
+## Aide-mémoire (`10_aide_mémoire/`)
+*Répertoire en croissance - bientôt disponible:*
+- syntaxe_python.md
+- commandes_git.md
+- reference_rapide_sql.md
+- commandes_linux.md
+- formules_mathematiques.md
 
 ---
 
-# # 🎯 Learndansg Paths
+## 🎯 Parcours d'Apprentissage
 
-# ## For Begdansners
-1. Start avec `07_référence/general_knowledge.md`
-2. Move to `07_référence/technologie_et_computdansg.md`
-3. Explore `06_humanities/langue_et_anglais.md`
-4. Begdans `01_technologie_et_computdansg/coddansg_langues.md`
+## Pour les Débutants
+1. Commencez par `07_référence/connaissances_générales.md`
+2. Passez à `07_référence/technologie_et_informatique.md`
+3. Explorez `06_sciences_humaines/langue_et_anglais.md`
+4. Débutez `01_technologie_et_informatique/langages_de_programmation.md`
 
-# ## For Sdetware Developers
-1. `01_technologie_et_computdansg/coddansg_langues.md`
-2. `01_technologie_et_computdansg/web_développement.md`
-3. `01_technologie_et_computdansg/donnéesbase_systèmes.md`
-4. `01_technologie_et_computdansg/cloud_architecture.md`
-5. `02_artificial_danstelligence/artificial_danstelligence.md`
+## Pour les Développeurs Logiciels
+1. `01_technologie_et_informatique/langages_de_programmation.md`
+2. `01_technologie_et_informatique/développement_web.md`
+3. `01_technologie_et_informatique/systèmes_de_base_de_données.md`
+4. `01_technologie_et_informatique/architecture_cloud.md`
+5. `02_intelligence_artificielle/intelligence_artificielle.md`
 
-# ## For Données Scientists
-1. `03_données_science/math_et_logic.md`
-2. `03_données_science/données_science_et_analytics.md`
-3. `02_artificial_danstelligence/ml_evaluation_et_workflow.md`
-4. `01_technologie_et_computdansg/donnéesbase_systèmes.md`
+## Pour les Scientifiques des Données
+1. `03_science_des_données/mathématiques_et_logique.md`
+2. `03_science_des_données/science_des_données_et_analytique.md`
+3. `02_intelligence_artificielle/évaluation_et_flux_ml.md`
+4. `01_technologie_et_informatique/systèmes_de_base_de_données.md`
 
-# ## For Busdansess Prdeessionals
-1. `05_busdansess_et_fdansance/busdansess_et_économie.md`
-2. `05_busdansess_et_fdansance/fdansance_et_dansvestdansg.md`
-3. `05_busdansess_et_fdansance/droit_et_juridique_systèmes.md`
-4. `06_humanities/géographie_et_géopolitique.md`
+## Pour les Professionnels des Affaires
+1. `05_affaires_et_finance/affaires_et_économie.md`
+2. `05_affaires_et_finance/finance_et_investissement.md`
+3. `05_affaires_et_finance/droit_et_systèmes_juridiques.md`
+4. `06_sciences_humaines/géographie_et_géopolitique.md`
 
 ---
 
-# # 📊 Statistiques
+## 📊 Statistiques
 
-| Category | Files | Total Ldanses | Avg Ldanses/File |
+| Catégorie | Fichiers | Total Lignes | Moyenne Lignes/Fichier |
 |----------|-------|-------------|----------------|
-| Technologie & Computdansg | 7 | ~2,800 | 400 |
-| Artificial Intelligence | 5 | ~1,500 | 300 |
-| Données Science | 2 | ~600 | 300 |
-| Science | 4 | ~700 | 175 |
-| Busdansess & Fdansance | 3 | ~700 | 233 |
-| Humanities | 5 | ~1,100 | 220 |
+| Technologie et Informatique | 7 | ~2,800 | 400 |
+| Intelligence Artificielle | 5 | ~1,500 | 300 |
+| Science des Données | 2 | ~600 | 300 |
+| Sciences | 4 | ~700 | 175 |
+| Affaires et Finance | 3 | ~700 | 233 |
+| Sciences Humaines | 5 | ~1,100 | 220 |
 | Référence | 4 | ~1,400 | 350 |
 | Futur | 1 | ~200 | 200 |
 | **Total** | **31** | **~9,000** | **290** |
 
 ---
 
-# # ⚠️ Important Avertissements
+## ⚠️ Avertissements Importants
 
-- **Medical Inpourmation:** Content dans `medicdanse_et_soins de santé.md` is pour educational purposes only et should not replace prdeessional medical advice.
-- **Juridique Inpourmation:** Content dans `droit_et_juridique_systèmes.md` is danspourmational et does not constitute juridique advice.
-- **Fdansancial Inpourmation:** Content dans `fdansance_et_dansvestdansg.md` is educational et should not be considered fdansancial advice.
-- **Futur Projections:** Content dans `2026_et_futur_événements.md` contadanss speculative danspourmation et projections that may change.
-
----
-
-# # 🔧 Usage Guideldanses
-
-# ## For AI Systèmes
-- All files are structured avec clear hierarchical headdansgs
-- Technical terms are defdansed dansldanse or dans `dictionnaire.md`
-- Cross-références use markdown ldansks
-- Code exemples dansclude syntaxe highlightdansg
-
-# ## For Human Readers
-- Each file danscludes learndansg objectives at le/la begdansndansg
-- Difficulty levels are noted where applicable
-- Exercises et practice problems danscluded dans technical files
-- Visual aids (diagrams, tables) used where helpful
+- **Informations Médicales:** Le contenu dans `médecine_et_santé.md` est à des fins éducatives uniquement et ne doit pas remplacer un avis médical professionnel.
+- **Informations Juridiques:** Le contenu dans `droit_et_systèmes_juridiques.md` est informatif et ne constitue pas un conseil juridique.
+- **Informations Financières:** Le contenu dans `finance_et_investissement.md` est éducatif et ne doit pas être considéré comme un conseil financier.
+- **Projections Futures:** Le contenu dans `2026_et_événements_futurs.md` contient des informations spéculatives et des projections qui peuvent changer.
 
 ---
 
-# # 📝 Contributdansg
+## 🔧 Directives d'Utilisation
 
-When adddansg or modifydansg content:
+## Pour les Systèmes IA
+- Tous les fichiers sont structurés avec des en-têtes hiérarchiques clairs
+- Les termes techniques sont définis dans le fichier ou dans `dictionnaire.md`
+- Les références croisées utilisent des liens markdown
+- Les exemples de code incluent la coloration syntaxique
 
-1. **Follow le/la style guide:**
-   - Use `#` pour file title only
-   - Use `##` pour major sections
-   - Use `###` pour subsections
-   - Use `-` pour unordered lists
-   - Include syntaxe highlightdansg dans code blocks
+## Pour les Lecteurs Humains
+- Chaque fichier inclut des objectifs d'apprentissage au début
+- Les niveaux de difficulté sont notés lorsque applicable
+- Exercices et problèmes de pratique inclus dans les fichiers techniques
+- Aides visuelles (diagrammes, tableaux) utilisées lorsque utile
 
-2. **Add metadonnées** (YAML frontmatter):
+---
+
+## 📝 Contribution
+
+Lors de l'ajout ou de la modification de contenu:
+
+1. **Suivez le guide de style:**
+   - Utilisez `#` pour le titre du fichier uniquement
+   - Utilisez `##` pour les sections principales
+   - Utilisez `###` pour les sous-sections
+   - Utilisez `-` pour les listes non ordonnées
+   - Incluez la coloration syntaxique dans les blocs de code
+
+2. **Ajoutez des métadonnées** (en-tête YAML):
 ```yaml
 ---
-title: "File Title"
-description: "Brief description"
-topics: [topic1, topic2, topic3]
+title: "Titre du Fichier"
+description: "Brève description"
+topics: [sujet1, sujet2, sujet3]
 difficulty: beginner|intermediate|advanced
 last_updated: YYYY-MM-DD
 ---
 ```
 
-3. **Include citations** pour factual claims
-4. **Add cross-références** to related files
-5. **Update this README** if adddansg new files
+3. **Incluez des citations** pour les affirmations factuelles
+4. **Ajoutez des références croisées** aux fichiers connexes
+5. **Mettez à jour ce README** si vous ajoutez de nouveaux fichiers
 
 ---
 
-# # 🔄 Update Cycle
+## 🔄 Cycle de Mise à Jour
 
-- **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checkdansg:** Statistiques et time-sensitive danspourmation verified
-- **Content expansion:** Underdeveloped files expeted progressively
-- **New topics:** Added based on emergdansg fields et user needs
+- **Révisions trimestrielles:** Tous les fichiers révisés tous les 3 mois
+- **Vérification des faits:** Statistiques et informations sensibles au temps vérifiées
+- **Expansion du contenu:** Fichiers sous-développés étendus progressivement
+- **Nouveaux sujets:** Ajoutés en fonction des domaines émergents et des besoins des utilisateurs
 
-**Next scheduled review:** Q3 2025
-
----
-
-# # 📞 Feedback
-
-Found errors? Have suggestions? Please note:
-- Check pour duplicates bepoure suggestdansg new topics
-- Verify claims agadansst authoritative sources
-- Consider scope et audience when proposdansg additions
+**Prochaine révision prévue:** Q3 2025
 
 ---
 
-*This base de connaissances is a livdansg document collection, contdansuously improved et expeted.*
+## 📞 Commentaires
+
+Vous avez trouvé des erreurs? Des suggestions? Veuillez noter:
+- Vérifiez les doublons avant de suggérer de nouveaux sujets
+- Vérifiez les affirmations auprès de sources faisant autorité
+- Considérez la portée et le public lors de la proposition d'ajouts
+
+---
+
+*Cette base de connaissances est une collection de documents vivants, continuellement améliorée et étendue.*

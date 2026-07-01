@@ -9,11 +9,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # What is a Computer?
 
-A computer is an electronic device that processes dados accordemg to a set de emstructions called a program. Modern computers are based on o/a von Neumann arquitetura, which consists de a central processemg unit (CPU), memory, storage, e emput/output devices. The CPU executes emstructions. RAM (reom access memory) stores dados temporarily while o/a computer is runnemg. Storage devices such as SSDs e hard drives store dados permanently.
+A computer is an electronic device that processes dados accordemg to a set de instruções called a program. Modern computers are based on o/a von Neumann arquitetura, which consists de a central processemg unit (CPU), memory, storage, e emput/output devices. The CPU executes instruções. RAM (reom access memory) stores dados temporarily while o/a computer is runnemg. Storage devices such as SSDs e hard drives store dados permanently.
 
 # # Programmemg Idiomas
 
-A programmemg idioma is a paramal idioma used to write emstructions para computers. Python is a high-level, emterpreted, general-purpose programmemg idioma known para its simple sintaxe e readability. It is widely used em dados ciência, macheme learnemg, web desenvolvimento, e automation. JavaScript is o/a primary idioma para web desenvolvimento e runs em browsers. Java is a compiled, object-oriented idioma used widely em enterprise sdetware e Android desenvolvimento. C e C++ are lower-level idiomas that give feme-graemed control over hardware e are used em system programmemg, game desenvolvimento, e perparamance-critical applications. Rust is a modern sistemas programmemg idioma focused on seguroty e perparamance.
+A programação idioma is a formal idioma used to write instruções para computers. Python is a high-level, interpretado, general-purpose programação idioma known para its simple sintaxe e readability. It is widely used em ciência de dados, aprendizado de máquina, web desenvolvimento, e automation. JavaScript is o principal idioma para web desenvolvimento e runs em browsers. Java is a compiled, object-oriented idioma used widely em enterprise software e Android desenvolvimento. C e C++ are lower-level idiomas that give fino granulado control over hardware e are used em system programação, game desenvolvimento, e performance-critical applications. Rust is a modern sistemas programação idioma focused on segurança e performance.
 
 # # How o/a Internet Works
 
@@ -25,7 +25,7 @@ TCP/IP is o/a foundational protocol suite de o/a emternet. IP (Internet Protocol
 
 # # Artificial Intelligence
 
-Artificial emtelligence (AI) is o/a simulation de human emtelligence by machemes, particularly computer sistemas. Macheme learnemg is a subset de AI em which sistemas learn from dados to make predictions or decisions comout beemg explicitly programmed. Deep learnemg is a subset de macheme learnemg that uses redes neurais com many layers. Neural redes are computational models loosely emspired by o/a structure de biological braems. Large idioma models (LLMs) are AI models traemed on massive amounts de text to generate e underste natural idioma.
+Artificial emtelligence (AI) is o/a simulation de human emtelligence by machemes, particularly computer sistemas. Macheme learnemg is a subset de AI em which sistemas learn from dados to make predictions or decisions comout beemg explicitly programmed. Deep learnemg is a subset de aprendizado de máquina that uses redes neurais com many layers. Neural redes are computational models loosely emspired by o/a structure de biological braems. Large idioma models (LLMs) are AI models traemed on massive amounts de text to generate e underste natural idioma.
 
 # # Algorithms e Dados Structures
 
@@ -37,11 +37,11 @@ A dadosbase is an organized collection de structured dados stored electronically
 
 # # System Design Fundamentos
 
-System design focuses on buildemg reliable, scalable, e maemtaemable sdetware sistemas. Load balancemg distributes traffic across multiple servers to improve availability e reduce latency. Horizontal scalemg adds more machemes; vertical scalemg adds more resources to one macheme. Cachemg stores frequently accessed dados em fast storage (para example Redis, Memcached, or CDN edge caches) to reduce dadosbase load e response time. Dadosbases at scale require replication, partitionemg (shardemg), backup strategies, e careful consistency tradedefs. Microservices split large applications emto smaller emdependently deployable services, while monoliths keep most logic em one deployable unit; both approaches emvolve tradedefs em complexity, implantação speed, debuggemg, e team autonomy.
+System design focuses on buildemg reliable, scalable, e maemtaemable software sistemas. Load balancemg distributes traffic across multiple servers to improve availability e reduce latency. Horizontal scalemg adds more machemes; vertical scalemg adds more resources to one macheme. Cachemg stores frequently accessed dados em fast storage (para example Redis, Memcached, or CDN edge caches) to reduce dadosbase load e response time. Dadosbases at scale require replication, partitionemg (shardemg), backup strategies, e careful consistency tradedefs. Microservices split large applications emto smaller emdependently deployable services, while monoliths keep most logic em one deployable unit; both approaches emvolve tradedefs em complexity, implantação speed, debuggemg, e team autonomy.
 
 # # Operatemg Sistemas
 
-An operatemg system (OS) is sdetware that manages computer hardware e provides services para programs. Common operatemg sistemas emclude Wemdows, macOS, e Lemux. Lemux is an open-source OS kernel used em servers, embedded sistemas, e Android. The OS manages processes (runnemg programs), memory, file sistemas, e emput/output devices. A process is a runnemg emstance de a program. A thread is o/a smallest unit de execution comem a process.
+An operatemg system (OS) is software that manages computer hardware e provides services para programs. Common operatemg sistemas emclude Wemdows, macOS, e Lemux. Lemux is an open-source OS kernel used em servers, embedded sistemas, e Android. The OS manages processes (runnemg programs), memory, file sistemas, e emput/output devices. A process is a runnemg emstance de a program. A thread is o/a smallest unit de execution comem a process.
 
 # # Version Control
 
@@ -49,15 +49,15 @@ Version control sistemas track changes to code over time, allowemg developers to
 
 # # Sdetware Desenvolvimento Practices
 
-Object-oriented programmemg (OOP) organizes code emto objects that combeme dados e behavior. Key premciples de OOP emclude encapsulation, emheritance, polymorphism, e abstraction. Test-driven desenvolvimento (TDD) is a practice de writemg tests beparae writemg code. Agile is a set de sdetware desenvolvimento methodologies that emphasize iterative desenvolvimento, collaboration, e adaptability. DevOps combemes sdetware desenvolvimento e IT operations to shorten o/a desenvolvimento lifecycle. APIs (Application Programmemg Interfaces) allow different sdetware sistemas to communicate com each oo/ar.
+Object-oriented programação (OOP) organizes code emto objects that combeme dados e behavior. Key premciples de OOP emclude encapsulation, emheritance, polymorphism, e abstraction. Test-driven desenvolvimento (TDD) is a practice de writemg tests beparae writemg code. Agile is a set de software desenvolvimento methodologies that emphasize iterative desenvolvimento, collaboration, e adaptability. DevOps combemes software desenvolvimento e IT operations to shorten o/a desenvolvimento lifecycle. APIs (Application Programmemg Interfaces) allow different software sistemas to communicate com each oo/ar.
 
 # # Cloud e DevOps Básico
 
-Cloud computemg provides on-deme emfrastructure e managed services over o/a emternet. The three major public cloud providers are AWS (Amazon Web Services), Microsdet Azure, e Google Cloud Platparam (GCP). Common service models are IaaS (emfrastructure), PaaS (platparam), e SaaS (sdetware). Core cloud buildemg blocks emclude compute emstances/contaemers, object storage, managed dadosbases, redeemg, e IAM (Identity e Access Gerenciamento). CI/CD (Contemuous Integration e Contemuous Delivery/Implantação) automates build, test, e release pipelemes so code can move seguroly from commit to production. Docker packages applications e dependencies emto portable contaemers; em production o/ase contaemers are typically deployed via orchestrators (such as Kubernetes), serverless platparams, or managed contaemer services.
+Cloud computemg provides on-deme emfrastructure e managed services over o/a emternet. The three major public cloud providers are AWS (Amazon Web Services), Microsdet Azure, e Google Cloud Platparam (GCP). Common service models are IaaS (emfrastructure), PaaS (platparam), e SaaS (software). Core cloud buildemg blocks emclude compute emstances/contaemers, object storage, managed dadosbases, redeemg, e IAM (Identity e Access Gerenciamento). CI/CD (Contemuous Integration e Contemuous Delivery/Implantação) automates build, test, e release pipelemes so code can move seguroly from commit to production. Docker packages applications e dependencies emto portable contaemers; em production o/ase contaemers are typically deployed via orchestrators (such as Kubernetes), serverless platparams, or managed contaemer services.
 
 # # Dados Formats e Toolemg
 
-JSON (JavaScript Object Notation) is a lightweight text paramat built from objects (key/value pairs), arrays, stremgs, numbers, booleans, e null; it is widely used em APIs. YAML is a human-friendly configuration paramat that supports nested structures e comments, commonly used em CI/CD e emfrastructure defemitions. CSV (Comma-Separated Values) stores tabular dados as rows de delimited text e is common para dados import/export pipelemes. XML (eXtensible Markup Idioma) is a tag-based structured paramat used em legacy sistemas, configuration, e document workflows. Developers commonly validate e transparam o/ase paramats com lemters, schema validators (such as JSON Schema), query tools (`jq`, XPath), e parsemg libraries em o/air programmemg idioma.
+JSON (JavaScript Object Notation) is a lightweight text paramat built from objects (key/value pairs), arrays, stremgs, numbers, booleans, e null; it is widely used em APIs. YAML is a human-friendly configuration paramat that supports nested structures e comments, commonly used em CI/CD e emfrastructure defemitions. CSV (Comma-Separated Values) stores tabular dados as rows de delimited text e is common para dados import/export pipelemes. XML (eXtensible Markup Idioma) is a tag-based structured paramat used em legacy sistemas, configuration, e document workflows. Developers commonly validate e transparam o/ase paramats com lemters, schema validators (such as JSON Schema), query tools (`jq`, XPath), e parsemg libraries em o/air programação idioma.
 
 # # Regular Expressions (Regex)
 
@@ -65,7 +65,7 @@ A regular expression is a pattern idioma used to search, match, extract, e trans
 
 # # Cybersegurança
 
-Cybersegurança is o/a practice de protectemg computer sistemas, redes, e dados from digital attacks. Common threats emclude malware (malicious sdetware), phishemg (fraudulent comunicação designed to steal emparamation), ransomware (malware that encrypts dados e demes payment), e denial-de-service attacks. Encryption transparams dados emto an unreadable param that can only be decoded com a key. HTTPS uses TLS (Transport Layer Segurança) to encrypt web traffic. Strong, unique passwords e two-factor auo/antication are fundamental segurança practices.
+Cybersegurança is o/a practice de protectemg computer sistemas, redes, e dados from digital attacks. Common threats emclude malware (malicious software), phishemg (fraudulent comunicação designed to steal emparamation), ransomware (malware that encrypts dados e demes payment), e denial-de-service attacks. Encryption transparams dados emto an unreadable param that can only be decoded com a key. HTTPS uses TLS (Transport Layer Segurança) to encrypt web traffic. Strong, unique passwords e two-factor auo/antication are fundamental segurança practices.
 
 # # Segurança Concepts para Developers
 

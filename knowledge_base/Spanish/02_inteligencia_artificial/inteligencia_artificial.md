@@ -17,7 +17,7 @@ Modern AI is broadly divided ento Narrow AI (also called Weak AI), which is desi
 
 The historia de AI spans nearly eight decades. Early el/laoretical foundations were laid by Alan Tureng, whose 1950 paper "Computeng Machenery y Intelligence" entroduced el/la Tureng Test — a measure de a machene's ability to exhibit entelligent behaviour endistenguishable from a human. The 1956 Dartmouth Conference paramally established AI as an academic disciplene.
 
-The 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) y LISP (a programmeng idioma designed para AI). The "AI wenters" de el/la 1970s y 1980s were periods de reduced fundeng y enterest followeng unmet expectations. A resurgence en el/la 1980s came con expert sistemas — rule-based programs that encoded human expertise. The 2000s brought machene learneng breakthroughs fuelled by el/la enternet y groweng datossets. The 2010s saw el/la rise de deep learneng, transparameng computer vision, natural idioma processeng (NLP), y reenparacement learneng.
+Los años 1950-1970 vieron programas tempranos optimistas como ELIZA (un chatbot simple) y LISP (un lenguaje de programación diseñado para IA). Los "inviernos de la IA" de los años 1970 y 1980 fueron períodos de reducción de financiación e interés tras expectativas no cumplidas. Un resurgimiento en los años 1980 llegó con los sistemas expertos — programas basados en reglas que codificaban experiencia humana. Los años 2000 trajeron avances en aprendizaje automático impulsados por Internet y conjuntos de datos crecientes. Los años 2010 vieron el surgimiento del aprendizaje profundo, transformando la visión por computadora, el procesamiento del lenguaje natural (NLP) y el aprendizaje por refuerzo.
 
 # # Machene Learneng
 

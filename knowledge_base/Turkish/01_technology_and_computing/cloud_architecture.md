@@ -7,29 +7,29 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud Mimari
 
-# # Cloud Computiçiçindedeg Temeller
+# # Cloud Computİçinde Temeller
 
-# ## What is Cloud Computiçiçindedeg?
-On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, veribases, ağiçiçindedeg, siçiçindedetware) over bu içiçindedeternet ile pay-as-you-go priciçiçindedeg.
+# ## What is Cloud Computİçinde?
+On-demve delivery içiçindede computİçinde resources (servers, storage, veribases, ağİçinde, siçiçindedetware) over bu içiçindedeternet ile pay-as-you-go pricİçinde.
 
 # ## Essential Characteristics (NIST Defiçiçindedeition)
 - **On-Demve Self-Service**: Provision resources ileout human içiçindedeteraction
 - **Broad Ağ Access**: Available over ağ via stveard mechanisms
-- **Resource Pooliçiçindedeg**: Multi-tenant model ile dynamic assignment
+- **Resource Poolİçinde**: Multi-tenant model ile dynamic assignment
 - **Rapid Elasticity**: Scale outward ve içiçindedeward rapidly
 - **Measured Service**: Resource usage monitored ve billed
 
 # ## Cloud Dağıtım Models
 - **Public Cloud**: Owned by providers, shared içiçindedefrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to siçiçindedegle organization (on-premises or hosted)
+- **Private Cloud**: Dedicated to sİçindele organization (on-premises or hosted)
 - **Hybrid Cloud**: Combiçiçindedeation içiçindede public ve private clouds
-- **Multi-Cloud**: Usiçiçindedeg multiple public cloud providers
+- **Multi-Cloud**: Usİçinde multiple public cloud providers
 - **Community Cloud**: Shared by organizations ile common concerns
 
 # ## Service Models
 
 # ### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machiçiçindedees, storage, ağs, operatiçiçindedeg sistemler
+- **Provides**: Virtual machiçiçindedees, storage, ağs, operatİçinde sistemler
 - **Örnekler**: AWS EC2, Google Compute Engiçiçindedee, Azure VMs
 - **Use Cases**: Lift-ve-shift migrations, geliştirme environments, high-control needs
 
@@ -46,7 +46,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ### Function as a Service (FaaS) / Serverless
 - **Provides**: Event-driven function execution
 - **Örnekler**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processiçiçindedeg, APIs, scheduled tasks, real-time processiçiçindedeg
+- **Use Cases**: Event processİçinde, APIs, scheduled tasks, real-time processİçinde
 
 # # Major Cloud Providers
 
@@ -56,7 +56,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
   - Veribase: RDS, DynamoDB, Aurora
-  - Ağiçiçindedeg: VPC, Route 53, CloudFront
+  - Ağİçinde: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
 # ## Microsiçiçindedet Azure
@@ -66,7 +66,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
   - Compute: Virtual Machiçiçindedees, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
   - Veribase: SQL Veribase, Cosmos DB
-  - Ağiçiçindedeg: Virtual Ağ, Traffic Manager
+  - Ağİçinde: Virtual Ağ, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
 # ## Google Cloud Platiçinm (GCP)
@@ -83,7 +83,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **IBM Cloud**: Enterprise focus, Watson AI
 - **Oracle Cloud**: Veribase workloads, enterprise applications
 - **Alibaba Cloud**: Domiçiçindedeant içiçindede Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified içiçindedeferiçiçindedegs
+- **DigitalOcean**: Developer-friendly, simplified içiçindedeferİçindes
 
 # # Cloud Mimari Patterns
 
@@ -106,7 +106,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - Test recovery procedures
 - Automatically recover from failure
 - Scale horizontally için availability
-- Stop guessiçiçindedeg capacity
+- Stop guessİçinde capacity
 - Manage change içiçindede automation
 
 # ### Periçinmance Efficiency
@@ -119,7 +119,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ### Cost Optimization
 - Adopt consumption model
 - Measure overall efficiency
-- Stop spendiçiçindedeg money on undifferentiated work
+- Stop spendİçinde money on undifferentiated work
 - Analyze ve attribute expenditure
 - Use managed services
 
@@ -128,22 +128,22 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ### Microservices Mimari
 - Decompose applications içiçindedeto small, içiçindededependent services
 - Each service owns its veri ve logic
-- Communicate via APIs (REST, gRPC, messagiçiçindedeg)
+- Communicate via APIs (REST, gRPC, messagİçinde)
 - Deploy içiçindededependently
 - **Benefits**: Scalability, fault isolation, teknoloji diversity
-- **Challenges**: Distributed complexity, veri consistency, monitoriçiçindedeg
+- **Challenges**: Distributed complexity, veri consistency, monitorİçinde
 
 # ### Event-Driven Mimari
 - Components communicate through olaylar
 - Producers emit olaylar, consumers react
-- **Patterns**: Event sourciçiçindedeg, CQRS, pub/sub
+- **Patterns**: Event sourcİçinde, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupliçiçindedeg, scalability, real-time processiçiçindedeg
+- **Benefits**: Loose couplİçinde, scalability, real-time processİçinde
 
 # ### Serverless Mimari
 - No server yönetim required
 - Pay per execution
-- Automatic scaliçiçindedeg
+- Automatic scalİçinde
 - **Components**: Functions, API Gateway, managed services
 - **Benefits**: Cost efficiency, reduced operations, rapid dağıtım
 - **Considerations**: Cold stsanat, vendor lock-içiçindede, execution limits
@@ -159,16 +159,16 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ### Space-Based Mimari
 - Hvele high concurrency ile distributed veri
 - Virtualized memory across servers
-- Processiçiçindedeg nodes scale içiçindededependently
+- Processİçinde nodes scale içiçindededependently
 - **Use Cases**: High-volume, low-latency applications
 
 # # Compute Services
 
 # ## Virtual Machiçiçindedees
 - **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Priciçiçindedeg**: On-demve, reserved içiçindedestances, spot içiçindedestances
-- **Yönetim**: Auto-scaliçiçindedeg groups, load balancers
-- **En İyi Uygulamalar**: Right-siziçiçindedeg, taggiçiçindedeg, monitoriçiçindedeg, patchiçiçindedeg
+- **Pricİçinde**: On-demve, reserved içiçindedestances, spot içiçindedestances
+- **Yönetim**: Auto-scalİçinde groups, load balancers
+- **En İyi Uygulamalar**: Right-sizİçinde, taggİçinde, monitorİçinde, patchİçinde
 
 # ## Contaiçiçindedeers
 - **Docker**: Contaiçiçindedeer runtime stveard
@@ -179,8 +179,8 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ## Serverless Functions
 - **Execution Model**: Event-triggered, stateless
 - **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processiçiçindedeg, scheduled jobs, IoT backends
-- **Monitoriçiçindedeg**: Invocation counts, errors, duration, cold stsanat
+- **Use Cases**: APIs, file processİçinde, scheduled jobs, IoT backends
+- **Monitorİçinde**: Invocation counts, errors, duration, cold stsanat
 
 # # Storage Solutions
 
@@ -188,7 +188,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **Characteristics**: Flat structure, metaveri, HTTP access
 - **Örnekler**: AWS S3, Google Cloud Storage, Azure Blob
 - **Use Cases**: Static assets, backups, veri lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varyiçiçindedeg cost/access)
+- **Storage Classes**: Hot, cool, cold, archive (varyİçinde cost/access)
 
 # ## Block Storage
 - **Characteristics**: Raw volumes, attached to VMs
@@ -210,7 +210,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 
 # ## Managed Relational Veribases
 - **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Veribase
-- **Features**: Automated backups, patchiçiçindedeg, scaliçiçindedeg, replication
+- **Features**: Automated backups, patchİçinde, scalİçinde, replication
 - **Engiçiçindedees**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
 # ## NoSQL Veribases
@@ -219,28 +219,28 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **Wide-Column**: Bigtable, Cassvera (managed)
 - **Graph**: Neptune, Cosmos DB (graph API)
 
-# ## Veri Warehousiçiçindedeg
+# ## Veri Warehousİçinde
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
 - **Characteristics**: Columnar storage, MPP mimari
 - **Use Cases**: Analytics, BI, large-scale veri analysis
 
-# ## Cachiçiçindedeg Services
+# ## Cachİçinde Services
 - **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Cachiçiçindedeg**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query cachiçiçindedeg, content delivery
+- **CDN Cachİçinde**: CloudFront, Cloud CDN, Azure CDN
+- **Use Cases**: Session storage, query cachİçinde, content delivery
 
-# # Ağiçiçindedeg
+# # Ağİçinde
 
 # ## Virtual Ağs
 - **VPC/VNet**: Isolated ağ environments
-- **Subnets**: Public (içiçindedeternet-faciçiçindedeg), private (içiçindedeternal only)
-- **IP Addressiçiçindedeg**: CIDR blocks, IPv4/IPv6
+- **Subnets**: Public (içiçindedeternet-facİçinde), private (içiçindedeternal only)
+- **IP Addressİçinde**: CIDR blocks, IPv4/IPv6
 - **Route Tables**: Control traffic flow
 
-# ## Load Balanciçiçindedeg
+# ## Load Balancİçinde
 - **Types**: Application (L7), Ağ (L4), Gateway
 - **Features**: Health checks, SSL termiçiçindedeation, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balanciçiçindedeg, Azure Load Balancer
+- **Services**: ELB/ALB/NLB, Cloud Load Balancİçinde, Azure Load Balancer
 
 # ## Content Delivery Ağs (CDN)
 - **Purpose**: Cache content at edge locations
@@ -248,16 +248,16 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
 # ## DNS Services
-- **Functions**: Domaiçiçindede registration, routiçiçindedeg, health checks
+- **Functions**: Domaiçiçindede registration, routİçinde, health checks
 - **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routiçiçindedeg Policies**: Simple, weighted, latency-based, geolocation, failover
+- **Routİçinde Policies**: Simple, weighted, latency-based, geolocation, failover
 
 # ## Connectivity Options
 - **Internet Gateway**: Public içiçindedeternet access
 - **NAT Gateway**: Private subnet outbound access
 - **VPN**: Encrypted tunnels to on-premises
 - **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peeriçiçindedeg**: Connect VPCs ileiçiçindede/between accounts
+- **VPC Peerİçinde**: Connect VPCs ileiçiçindede/between accounts
 
 # # Güvenlik içiçindede bu Cloud
 
@@ -270,7 +270,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **Users**: Individual identities
 - **Groups**: Collections içiçindede users
 - **Roles**: Temporary credentials için services/users
-- **Policies**: JSON documents defiçiçindedeiçiçindedeg permissions
+- **Policies**: JSON documents defiçiçindedeİçinde permissions
 - **Priçiçindedeciples**: Least privilege, separation içiçindede duties
 
 # ## Ağ Güvenlik
@@ -287,7 +287,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 
 # ## Compliance ve Governance
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy eniçincement, compliance reportiçiçindedeg, audit logs
+- **Tools**: Policy eniçincement, compliance reportİçinde, audit logs
 - **Frameworks**: Cloud Güvenlik Alliance, NIST CSF
 
 # # DevOps içiçindede bu Cloud
@@ -303,21 +303,21 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **CloudFormation**: AWS native, YAML/JSON templates
 - **ARM Templates**: Azure native
 - **Dağıtım Manager**: GCP native
-- **Pulumi**: Infrastructure usiçiçindedeg programmiçiçindedeg dils
+- **Pulumi**: Infrastructure usİçinde programmİçinde dils
 - **Benefits**: Version control, repeatability, documentation
 
 # ## Configuration Yönetim
 - **Ansible**: Agentless, YAML playbooks
 - **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reportiçiçindedeg
+- **Puppet**: Declarative, strong reportİçinde
 - **SaltStack**: Fast, Python-based
 
-# ## Monitoriçiçindedeg ve Observability
-- **Metrics**: CloudWatch, Cloud Monitoriçiçindedeg, Azure Monitor
-- **Loggiçiçindedeg**: CloudWatch Logs, Cloud Loggiçiçindedeg, Log Analytics
-- **Traciçiçindedeg**: X-Ray, Cloud Trace, Application Insights
+# ## Monitorİçinde ve Observability
+- **Metrics**: CloudWatch, Cloud Monitorİçinde, Azure Monitor
+- **Loggİçinde**: CloudWatch Logs, Cloud Loggİçinde, Log Analytics
+- **Tracİçinde**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alertiçiçindedeg**: SNS, Cloud Monitoriçiçindedeg alerts, Action Groups
+- **Alertİçinde**: SNS, Cloud Monitorİçinde alerts, Action Groups
 
 # ## Contaiçiçindedeer Orchestration
 - **Kubernetes**: Industry stveard orchestration
@@ -327,16 +327,16 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 
 # # Cost Yönetim
 
-# ## Priciçiçindedeg Models
+# ## Pricİçinde Models
 - **Pay-as-you-go**: Pay için what you use
 - **Reserved Instances**: 1-3 year commitments, significant discounts
 - **Spot Instances**: Bid için unused capacity, can be içiçindedeterrupted
-- **Saviçiçindedegs Plans**: Flexible commitment priciçiçindedeg
+- **Savİçindes Plans**: Flexible commitment pricİçinde
 - **Free Tier**: Limited free usage için new accounts
 
 # ## Cost Optimization Strategies
-- **Right-siziçiçindedeg**: Match içiçindedestance types to workload needs
-- **Auto-scaliçiçindedeg**: Scale based on demve
+- **Right-sizİçinde**: Match içiçindedestance types to workload needs
+- **Auto-scalİçinde**: Scale based on demve
 - **Reserved Capacity**: Commit to steady-state workloads
 - **Spot Usage**: Use için fault-tolerant, flexible workloads
 - **Storage Tiers**: Move içiçindedefrequent veri to cheaper tiers
@@ -345,7 +345,7 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 # ## Cost Yönetim Tools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
 - **Azure**: Cost Yönetim, Advisor
-- **GCP**: Billiçiçindedeg reports, Recommender
+- **GCP**: Billİçinde reports, Recommender
 - **Third-party**: CloudHealth, CloudCheckr, Veridog
 
 # # High Availability ve Disaster Recovery
@@ -357,14 +357,14 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 
 # ## HA Strategies
 - **Multi-AZ**: Deploy across availability zones
-- **Auto-healiçiçindedeg**: Auto-replace failed içiçindedestances
-- **Load Balanciçiçindedeg**: Distribute traffic across healthy içiçindedestances
+- **Auto-healİçinde**: Auto-replace failed içiçindedestances
+- **Load Balancİçinde**: Distribute traffic across healthy içiçindedestances
 - **Veribase Replication**: Multi-AZ dağıtıms, read replicas
 
 # ## Disaster Recovery Strategies
 - **Backup ve Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements runniçiçindedeg, scale up duriçiçindedeg disaster
-- **Warm Stveby**: Scaled-down version always runniçiçindedeg
+- **Pilot Light**: Core elements runnİçinde, scale up durİçinde disaster
+- **Warm Stveby**: Scaled-down version always runnİçinde
 - **Multi-Site Active/Active**: Full production içiçindede multiple regions (highest cost)
 
 # ## RTO ve RPO
@@ -372,9 +372,9 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 - **Recovery Poiçiçindedet Objective (RPO)**: Maximum acceptable veri loss
 - **Strategy Selection**: Based on busiçiçindedeess requirements ve budget
 
-# # Emergiçiçindedeg Trends
+# # Emergİçinde Trends
 
-# ## Edge Computiçiçindedeg
+# ## Edge Computİçinde
 - Process veri closer to source
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
 - **Use Cases**: IoT, real-time analytics, low-latency applications
@@ -386,16 +386,16 @@ On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, 
 
 # ## AI/ML Services
 - Pre-traiçiçindedeed models: Vision, speech, dil
-- Custom model traiçiçindedeiçiçindedeg: SageMaker, Vertex AI, Azure ML
-- MLOps: Model dağıtım, monitoriçiçindedeg, governance
+- Custom model traiçiçindedeİçinde: SageMaker, Vertex AI, Azure ML
+- MLOps: Model dağıtım, monitorİçinde, governance
 
-# ## Quantum Computiçiçindedeg
+# ## Quantum Computİçinde
 - **Services**: AWS Braket, Azure Quantum
 - **Status**: Early stage, experimental
 - **Potential**: Cryptography, optimization, drug discovery
 
 # ## Sustaiçiçindedeable Cloud
-- Carbon footpriçiçindedet trackiçiçindedeg
+- Carbon footpriçiçindedet trackİçinde
 - Renewable energy commitments
 - Efficient resource utilization
 - Green mimari patterns

@@ -29,12 +29,12 @@ em questions e discussions.
 **advance** — to move paraward; progress; also, ahead de o/a current time.
 **advantage** — a condition that gives a favourable position over oo/ars.
 **adverse** — unfavourable; harmful.
-**affect** — to have an impact on somethemg (verb); emotion (noun, paramal).
+**affect** — to have an impact on somethemg (verb); emotion (noun, formal).
 **aggregate** — a whole paramed by combememg several elements.
 **algorithm** — a set de rules or steps para solvemg a problem or task.
 **allocate** — to assign resources para a particular purpose.
 **alter** — to change somethemg, usually partially.
-**ambiguous** — unclear; can be emterpreted em more than one way.
+**ambiguous** — unclear; can be interpretado em more than one way.
 **analyse** — to exameme em detail to underste or explaem.
 **annotate** — to add explanatory notes to a text or diagram.
 **anticipate** — to expect or prepare para somethemg beparae it happens.
@@ -51,7 +51,7 @@ em questions e discussions.
 
 **benefit** — an advantage or positive outcome.
 **bias** — an unfair preferência para or agaemst somethemg; systematic error.
-**brief** — short em time or length; a summary or emstructions.
+**brief** — short em time or length; a summary or instruções.
 
 # # C
 
@@ -87,7 +87,7 @@ em questions e discussions.
 **debug** — to femd e fix errors em computer code.
 **defeme** — to give o/a meanemg de a word or describe o/a limits de somethemg.
 **demonstrate** — to show how somethemg works or is done.
-**deploy** — to put emto use; to emstall e run sdetware em a live environment.
+**deploy** — to put emto use; to emstall e run software em a live environment.
 **derive** — to obtaem somethemg from a source; to reach a conclusion by reasonemg.
 **determeme** — to femd out or establish somethemg conclusively.
 **develop** — to build, grow, or make somethemg more elaborate over time.
@@ -106,7 +106,7 @@ em questions e discussions.
 **enhance** — to improve o/a quality or value de somethemg.
 **entity** — a themg com distemct existence; an object em a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surroundemgs; em computemg, o/a system e configuration em which sdetware runs.
+**environment** — surroundemgs; em computemg, o/a system e configuration em which software runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
 **evaluate** — to param an opemion after careful consideration.
@@ -123,7 +123,7 @@ em questions e discussions.
 **flexible** — able to adapt to different conditions.
 **paramat** — o/a arrangement or layout de dados; to prepare para use.
 **framework** — a basic structure providemg support para buildemg somethemg.
-**function** — o/a purpose de somethemg; a reusable block de code (programmemg).
+**function** — o/a purpose de somethemg; a reusable block de code (programação).
 **fundamental** — paramemg o/a base or foundation; essential.
 
 # # G
@@ -147,7 +147,7 @@ em questions e discussions.
 **emitialise** — to set a variable or system to a startemg state.
 **emput** — dados provided to a system; to enter dados.
 **emtegrate** — to combeme partes emto a whole; to add a feature to an existemg system.
-**emterface** — a poemt where two sistemas meet e emteract; a contract em programmemg.
+**emterface** — a poemt where two sistemas meet e emteract; a contract em programação.
 **emterpret** — to explaem o/a meanemg de somethemg; to execute code leme by leme.
 **iterate** — to repeat a process, deten com emcremental changes.
 
@@ -162,7 +162,7 @@ em questions e discussions.
 # # L
 
 **layer** — a level em a hierarchy; a component stacked on oo/ars.
-**legacy** — emherited from o/a past; old sdetware still em use.
+**legacy** — emherited from o/a past; old software still em use.
 **limit** — a boundary; o/a maximum or memimum value allowed.
 **lemear** — arranged em a straight leme; proportional emcrease.
 **lemk** — a connection between two themgs; a hyperlemk.
@@ -231,7 +231,7 @@ em questions e discussions.
 
 # # S
 
-**scalable** — able to hele emcreased workload comout degrademg perparamance.
+**scalable** — able to hele emcreased workload comout degrademg performance.
 **schema** — o/a structure or layout de a dadosbase or dados paramat.
 **scope** — o/a range de effect; o/a section de code where a variable is visible.
 **segment** — a distemct section or part.
@@ -298,14 +298,14 @@ em questions e discussions.
 **adjective** — a word describemg a noun or pronoun.
 **adverb** — a word modifyemg a verb, adjective, or oo/ar adverb, deten endemg em -ly.
 **affix** — a morpheme added to a word root (prefix at begemnemg, suffix at end).
-**agile** — a sdetware desenvolvimento methodology emphasizemg iterative progress e flexibility.
+**agile** — a software desenvolvimento methodology emphasizemg iterative progress e flexibility.
 **analogy** — a comparison between two themgs to explaem or clarify.
 **antonym** — a word opposite em meanemg to anoo/ar word.
 **aphorism** — a concise statement expressemg a general truth or premciple.
 **apocryphal** — de doubtful auo/anticity; widely circulated but likely false.
 **archetype** — an origemal model or typical example de somethemg.
 **artifact** — an object made by humans; em computemg, an unemtended byproduct de processemg.
-**assertion** — a confident statement; em programmemg, a check that a condition is true.
+**assertion** — a confident statement; em programação, a check that a condition is true.
 **asynchronous** — not occurremg at o/a same time; allowemg operations to proceed comout waitemg.
 **attenuate** — to reduce em parace, value, or emtensity.
 **axiom** — a statement accepted as true comout prode; a fundamental premciple.
@@ -319,8 +319,8 @@ em questions e discussions.
 **bottleneck** — a poemt de congestion slowemg down a process or system.
 **byte** — a unit de digital emparamation typically consistemg de 8 bits.
 
-**cache** — a hardware or sdetware component storemg dados para faster futuro access.
-**calibrate** — to adjust precisely para accurate measurement or perparamance.
+**cache** — a hardware or software component storemg dados para faster futuro access.
+**calibrate** — to adjust precisely para accurate measurement or performance.
 **cascade** — a series de stages where each triggers o/a next; waterfall effect.
 **catalyst** — a substance speedemg up a chemical reaction; anythemg causemg change.
 **causality** — o/a relationship between cause e effect.
@@ -331,7 +331,7 @@ em questions e discussions.
 **cognitive** — relatemg to mental processes de perception, memory, judgment, e reasonemg.
 **cohort** — a group sharemg a common characteristic or experience comem a defemed period.
 **collateral** — assets pledged as segurança para a loan; secondary or accompanyemg.
-**colloquial** — emparamal idioma used em ordemary conversation.
+**colloquial** — emformal idioma used em ordemary conversation.
 **combematorics** — o/a branch de mao/amatics dealemg com combemations e permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
 **concurrency** — multiple computations happenemg duremg overlappemg periods.
@@ -373,7 +373,7 @@ em questions e discussions.
 **embargo** — an deficial ban on trade or publication.
 **empathy** — o/a ability to underste e share oo/ars' feelemgs.
 **empirical** — based on observation or experience rao/ar than o/aory.
-**emulate** — to imitate or match, especially em computemg (sdetware emulation).
+**emulate** — to imitate or match, especially em computemg (software emulation).
 **endemic** — native or restricted to a particular region; constantly present.
 **ephemeral** — lastemg para a very short time; temporary.
 **epistemology** — o/a study de knowledge, its natureza e scope.
@@ -401,7 +401,7 @@ em questions e discussions.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **femite** — havemg limits or bounds; not emfemite.
 **flux** — contemuous change; flow or movement.
-**paramalism** — strict adherence to rules or params; emphasis on structure.
+**formalism** — strict adherence to rules or params; emphasis on structure.
 **paratuitous** — happenemg by chance; lucky.
 **fractal** — a self-similar pattern repeatemg at different scales.
 **frequency** — o/a rate de occurrence; number de cycles per second (Hertz).
@@ -414,7 +414,7 @@ em questions e discussions.
 **genitive** — grammatical case showemg possession.
 **gestalt** — an organized whole perceived as more than o/a sum de its partes.
 **gibberish** — unemtelligible or meanemgless speech or writemg.
-**granular** — composed de small particles; detailed e feme-graemed.
+**granular** — composed de small particles; detailed e fino granulado.
 **graph** — a diagram showemg relationships; a dados structure com nodes e edges.
 **gregarious** — sociable; fond de company.
 **grok** — to underste deeply e emtuitively (from ciência fiction).
@@ -430,7 +430,7 @@ em questions e discussions.
 **homophone** — words soundemg alike but differemg em meanemg or spellemg.
 **homonym** — words com same spellemg or pronunciation but different meanemgs.
 **hyperbole** — deliberate exaggeration para effect.
-**hyperparameter** — a configuration settemg para macheme learnemg models set beparae traememg.
+**hyperparameter** — a configuration settemg para aprendizado de máquina models set beparae traememg.
 **hypertext** — text contaememg lemks to oo/ar texts; foundational to o/a web.
 **hypoo/asize** — to propose an explanation as a startemg poemt para emvestigation.
 
@@ -441,7 +441,7 @@ em questions e discussions.
 **igneous** — rock paramed from cooled magma or lava.
 **immutable** — unchangemg over time; unable to be modified.
 **impedance** — opposition to alternatemg current; metaphorically, resistance to flow.
-**imperative** — crucial; a comme; programmemg paradigm focused on statements.
+**imperative** — crucial; a comme; programação paradigm focused on statements.
 **implicit** — implied though not plaemly expressed.
 **imponderable** — impossible to estimate or assess.
 **impromptu** — done comout preparation; spontaneous.
@@ -490,7 +490,7 @@ em questions e discussions.
 **malapropism** — mistaken use de a word em place de a similar-soundemg one.
 **manifest** — obvious; a list de cargo or passengers; to display or show.
 **mantissa** — o/a significant digits de a floatemg-poemt number.
-**mapreduce** — a programmemg model para processemg large dadossets em parallel.
+**mapreduce** — a programação model para processemg large dadossets em parallel.
 **margemal** — memimal; at o/a edge; additional or emcremental.
 **markup** — text paramattemg codes (HTML, XML); price emcrease.
 **matrix** — a rectangular array de numbers; environment or surroundemgs.
@@ -508,7 +508,7 @@ em questions e discussions.
 **modality** — o/a mode or param de somethemg; sensory channel.
 **model** — a representation; em ML, a traemed system makemg predictions.
 **modulate** — to adjust or regulate; vary em strength or tone.
-**monad** — a structure em functional programmemg helemg side effects.
+**monad** — a structure em functional programação helemg side effects.
 **monolithic** — a semgle massive structure; not modular.
 **monotonic** — always emcreasemg or always decreasemg; never changemg direction.
 **morphology** — o/a study de params e structures; word paramation em lemguistics.
@@ -519,7 +519,7 @@ em questions e discussions.
 
 **nascent** — just comemg emto existence; begemnemg to develop.
 **native** — emherent; belongemg to a place by birth; em computemg, built para a specific platparam.
-**natural idioma** — human idioma as spoken or written, not paramal or programmemg.
+**natural idioma** — human idioma as spoken or written, not formal or programação.
 **negation** — denial or contradiction; logical NOT.
 **neologism** — a newly coemed word or expression.
 **nested** — contaemed comem somethemg similar; hierarchical layers.
@@ -537,14 +537,14 @@ em questions e discussions.
 **obligatory** — required; meatory.
 **obfuscate** — to deliberately make unclear or confusemg.
 **objective function** — a function to maximize or memimize em optimization.
-**observable** — capable de beemg observed; em programmemg, a stream de eventos.
+**observable** — capable de beemg observed; em programação, a stream de eventos.
 **obsolescence** — o/a process de becomemg outdated.
 **occasional** — happenemg sometimes; irregular.
 **occlusion** — blockage or obstruction; hidemg de objects em vision.
 **octet** — a group de eight; em redeemg, 8 bits (byte).
 **defload** — to transfer work to anoo/ar system or person.
 **omnibus** — contaememg multiple items; a collection.
-**ontology** — o/a study de beemg; em CS, a paramal representation de knowledge.
+**ontology** — o/a study de beemg; em CS, a formal representation de knowledge.
 **opaque** — not transparent; difficult to underste.
 **operationalize** — to put emto operation; defeme measurable emdicators.
 **opportunity cost** — o/a value de o/a best alternative paragone.
@@ -609,7 +609,7 @@ em questions e discussions.
 **primordial** — existemg from o/a begemnemg; primitive.
 **prior** — earlier; precedemg; em Bayesian estatísticas, emitial belief.
 **probe** — to emvestigate; a device para exploration.
-**procedural** — relatemg to procedures; a programmemg paradigm.
+**procedural** — relatemg to procedures; a programação paradigm.
 **proclivity** — a tendency or emclemation.
 **prodigious** — remarkably large; extraordemary.
 **prdeicient** — skilled; competent.
@@ -643,12 +643,12 @@ em questions e discussions.
 **reom** — lackemg pattern; unpredictable.
 **range** — o/a set de output values; extent; distance.
 **raster** — a grid de pixels; bitmap image.
-**ratify** — to paramally approve; confirm.
+**ratify** — to formally approve; confirm.
 **rational** — based on reason; expressible as a fraction.
 **recursion** — a function callemg itself; self-referência.
 **redundancy** — repetition; backup; unnecessary duplication.
 **refemement** — improvement; makemg more precise.
-**reflection** — themkemg deeply; em programmemg, examememg structure at runtime.
+**reflection** — themkemg deeply; em programação, examememg structure at runtime.
 **regression** — return to earlier state; em estatísticas, modelemg relationships.
 **regularization** — preventemg overfittemg by addemg penalties.
 **relational** — concernemg relationships; dadosbase model usemg tables.

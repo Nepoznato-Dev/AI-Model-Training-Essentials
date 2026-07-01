@@ -9,11 +9,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # # What is Mabumatics?
 
-Mabumatics is bu study içiçindede numbers, shapes, patterns, ve logical relationships. It is both a bilim ve a dil used to describe bu universe. Mabumatics is divided içiçindedeto branches içiçindedecludiçiçindedeg arithmetic, algebra, geometry, calculus, i̇statistikler, ve logic. Mabumatics is bu foundation içiçindede physics, engiçiçindedeeeriçiçindedeg, computer bilim, ekonomi, ve many obur fields.
+Mabumatics is bu study içiçindede numbers, shapes, patterns, ve logical relationships. It is both a bilim ve a dil used to describe bu universe. Mabumatics is divided içiçindedeto branches içiçindedecludİçinde arithmetic, algebra, geometry, calculus, i̇statistikler, ve logic. Mabumatics is bu foundation içiçindede physics, engiçiçindedeeerİçinde, computer bilim, ekonomi, ve many obur fields.
 
 # # Arithmetic
 
-Arithmetic is bu branch içiçindede mabumatics dealiçiçindedeg ile basic operations on numbers. The four fundamental operations are addition (+), subtraction (−), multiplication (×), ve division (÷). The order içiçindede operations specifies bu sequence içiçindede which calculations must be periçinmed: Parenbuses, Exponents, Multiplication ve Division (left to right), Addition ve Subtraction (left to right). This is içiçindedeten remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors obur than 1 ve itself. The first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, ve 29.
+Arithmetic is bu branch içiçindede mabumatics dealİçinde ile basic operations on numbers. The four fundamental operations are addition (+), subtraction (−), multiplication (×), ve division (÷). The order içiçindede operations specifies bu sequence içiçindede which calculations must be periçinmed: Parenbuses, Exponents, Multiplication ve Division (left to right), Addition ve Subtraction (left to right). This is içiçindedeten remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors obur than 1 ve itself. The first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, ve 29.
 
 **Örnekler:**
 - Prime factorization: 84 = 2² × 3 × 7
@@ -22,7 +22,7 @@ Arithmetic is bu branch içiçindede mabumatics dealiçiçindedeg ile basic oper
 
 # # Algebra
 
-Algebra uses letters ve symbols to represent numbers ve quantities içiçindede equations ve içinmulas. A **variable** is a symbol (usually a letter) that represents an unknown or changiçiçindedeg quantity. An **equation** states that two expressions are equal. Solviçiçindedeg an equation means fiçiçindedediçiçindedeg bu value(s) içiçindede bu variable(s) that make bu equation true.
+Algebra uses letters ve symbols to represent numbers ve quantities içiçindede equations ve içinmulas. A **variable** is a symbol (usually a letter) that represents an unknown or changİçinde quantity. An **equation** states that two expressions are equal. Solvİçinde an equation means fiçiçindededİçinde bu value(s) içiçindede bu variable(s) that make bu equation true.
 
 The **quadratic içinmula** solves equations içiçindede bu içinm ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
@@ -41,7 +41,7 @@ A **function** maps each içiçindedeput to exactly one output. Common functions
 
 # # Geometry
 
-Geometry is bu branch içiçindede mabumatics that studies shapes, sizes, positions, ve properties içiçindede figures. A poiçiçindedet has no size; it represents a location. A liçiçindedee extends içiçindedefiçiçindedeitely içiçindede both directions. A liçiçindedee segment has two endpoiçiçindedets. An angle is içinmed by two rays shariçiçindedeg an endpoiçiçindedet.
+Geometry is bu branch içiçindede mabumatics that studies shapes, sizes, positions, ve properties içiçindede figures. A poiçiçindedet has no size; it represents a location. A liçiçindedee extends içiçindedefiçiçindedeitely içiçindede both directions. A liçiçindedee segment has two endpoiçiçindedets. An angle is içinmed by two rays sharİçinde an endpoiçiçindedet.
 
 **Key rules:**
 - The sum içiçindede angles içiçindede a triangle is always 180 degrees.
@@ -63,28 +63,28 @@ Geometry is bu branch içiçindede mabumatics that studies shapes, sizes, positi
 
 # # İstatistikler ve Probability
 
-İstatistikler is bu bilim içiçindede collectiçiçindedeg, analysiçiçindedeg, içiçindedeterpretiçiçindedeg, ve presentiçiçindedeg veri.
+İstatistikler is bu bilim içiçindede collectİçinde, analysİçinde, içiçindedeterpretİçinde, ve presentİçinde veri.
 
 **Measures içiçindede central tendency:**
 - **Mean** (average): sum içiçindede all values divided by bu number içiçindede values
 - **Median**: middle value when veri is sorted (less sensitive to outliers)
-- **Mode**: most frequently occurriçiçindedeg value (can have multiple modes)
+- **Mode**: most frequently occurrİçinde value (can have multiple modes)
 
 **Measures içiçindede spread:**
 - **Range**: maximum - miçiçindedeimum
 - **Variance**: average içiçindede squared deviations from bu mean
 - **Stveard deviation**: square root içiçindede variance (içiçindede same units as veri)
 
-Probability measures bu likelihood içiçindede an event occurriçiçindedeg, rangiçiçindedeg from 0 (impossible) to 1 (certaiçiçindede). The probability içiçindede two içiçindededependent olaylar both occurriçiçindedeg is bu product içiçindede buir içiçindededividual probabilities.
+Probability measures bu likelihood içiçindede an event occurrİçinde, rangİçinde from 0 (impossible) to 1 (certaiçiçindede). The probability içiçindede two içiçindededependent olaylar both occurrİçinde is bu product içiçindede buir içiçindededividual probabilities.
 
-**Example:** Probability içiçindede rolliçiçindedeg a 6 on a fair die: 1/6. Probability içiçindede rolliçiçindedeg two 6s içiçindede a row: (1/6) × (1/6) = 1/36.
+**Example:** Probability içiçindede rollİçinde a 6 on a fair die: 1/6. Probability içiçindede rollİçinde two 6s içiçindede a row: (1/6) × (1/6) = 1/36.
 
-# # Probability için Computiçiçindedeg ve ML
+# # Probability için Computİçinde ve ML
 
 A **rveom variable** is a variable whose value depends on bu outcome içiçindede a rveom process. A **probability distribution** describes how likely each outcome is.
 
 **Common distributions:**
-- **Bernoulli**: siçiçindedegle trial ile two outcomes (e.g., coiçiçindede flip)
+- **Bernoulli**: sİçindele trial ile two outcomes (e.g., coiçiçindede flip)
 - **Biçiçindedeomial**: number içiçindede successes içiçindede n içiçindededependent Bernoulli trials
 - **Normal (Gaussian)**: bell curve, symmetric around bu mean (common içiçindede natural phenomena)
 - **Poisson**: number içiçindede olaylar içiçindede a fixed içiçindedeterval (e.g., emails per hour)
@@ -93,16 +93,16 @@ A **rveom variable** is a variable whose value depends on bu outcome içiçinded
 
 **Conditional probability** describes bu probability içiçindede an event given anobur event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
 
-**Bayes' buorem** updates beliefs usiçiçindedeg evidence: P(A|B) = P(B|A) × P(A) / P(B).
+**Bayes' buorem** updates beliefs usİçinde evidence: P(A|B) = P(B|A) × P(A) / P(B).
 
 
-In machiçiçindedee learniçiçindedeg, probability underpiçiçindedes classification confidence, uncertaiçiçindedety estimation, Bayesian methods, ve many loss functions (such as cross-entropy).
+In machiçiçindedee learnİçinde, probability underpiçiçindedes classification confidence, uncertaiçiçindedety estimation, Bayesian methods, ve many loss functions (such as cross-entropy).
 
 # # Calculus
 
 Calculus is bu branch içiçindede mabumatics that studies contiçiçindedeuous change.
 
-**Differential calculus** deals ile rates içiçindede change ve slopes içiçindede curves, usiçiçindedeg **derivatives**. The derivative içiçindede a function f(x) represents bu rate içiçindede change içiçindede f ile respect to x at a poiçiçindedet. Notation: f'(x) or df/dx.
+**Differential calculus** deals ile rates içiçindede change ve slopes içiçindede curves, usİçinde **derivatives**. The derivative içiçindede a function f(x) represents bu rate içiçindede change içiçindede f ile respect to x at a poiçiçindedet. Notation: f'(x) or df/dx.
 
 **Common derivatives:**
 - d/dx [x^n] = n·x^(n−1)
@@ -110,7 +110,7 @@ Calculus is bu branch içiçindede mabumatics that studies contiçiçindedeuous 
 - d/dx [ln(x)] = 1/x
 - d/dx [siçiçindede(x)] = cos(x)
 
-**Integral calculus** deals ile accumulation içiçindede quantities ve areas under curves, usiçiçindedeg **içiçindedetegrals**. The içiçindedetegral represents bu area under bu curve between two poiçiçindedets.
+**Integral calculus** deals ile accumulation içiçindede quantities ve areas under curves, usİçinde **içiçindedetegrals**. The içiçindedetegral represents bu area under bu curve between two poiçiçindedets.
 
 The **fundamental buorem içiçindede calculus** connects differentiation ve içiçindedetegration: differentiation ve içiçindedetegration are içiçindedeverse operations.
 
@@ -118,7 +118,7 @@ Calculus was developed içiçindededependently by Isaac Newton ve Gottfried Wilh
 
 # # Number Sistemler
 
-- **Natural numbers**: 1, 2, 3, 4, ... (countiçiçindedeg numbers)
+- **Natural numbers**: 1, 2, 3, 4, ... (countİçinde numbers)
 - **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
 - **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers ve buir negatives)
 - **Rational numbers**: numbers expressible as p/q where p ve q are içiçindedetegers ve q ≠ 0 (e.g., 1/2, 3/4, −5/3)
@@ -127,23 +127,23 @@ Calculus was developed içiçindededependently by Isaac Newton ve Gottfried Wilh
 - **Imagiçiçindedeary numbers**: içiçindedevolve bu square root içiçindede negative numbers; i = √(−1)
 - **Complex numbers**: combiçiçindedee real ve imagiçiçindedeary psanat (a + bi)
 
-# # Logic ve Reasoniçiçindedeg
+# # Logic ve Reasonİçinde
 
-Logic is bu study içiçindede valid reasoniçiçindedeg.
+Logic is bu study içiçindede valid reasonİçinde.
 
-**Deductive reasoniçiçindedeg** draws specific conclusions from general premises. If bu premises are true ve bu argument is valid, bu conclusion must be true.
+**Deductive reasonİçinde** draws specific conclusions from general premises. If bu premises are true ve bu argument is valid, bu conclusion must be true.
 - **Example:** All humans are mortal. Socrates is human. Thereiçine, Socrates is mortal.
 
-**Inductive reasoniçiçindedeg** draws general conclusions from specific observations. It does not guarantee bu conclusion is true, but makes it probable.
+**Inductive reasonİçinde** draws general conclusions from specific observations. It does not guarantee bu conclusion is true, but makes it probable.
 - **Example:** Every swan I've seen is white. Thereiçine, all swans are white. (Note: this is false; black swans exist!)
 
-**Common logical fallacies (errors içiçindede reasoniçiçindedeg):**
-- **Ad homiçiçindedeem**: attackiçiçindedeg bu person rabur than bu argument
-- **Straw man**: misrepresentiçiçindedeg an argument to make it easier to attack
-- **False dichotomy**: presentiçiçindedeg only two options when more exist
-- **Circular reasoniçiçindedeg**: usiçiçindedeg bu conclusion as a premise
-- **Appeal to authority**: claimiçiçindedeg somethiçiçindedeg is true because an authority says so
-- **Post hoc fallacy**: assumiçiçindedeg that because A happened beiçine B, A caused B
+**Common logical fallacies (errors içiçindede reasonİçinde):**
+- **Ad homiçiçindedeem**: attackİçinde bu person rabur than bu argument
+- **Straw man**: misrepresentİçinde an argument to make it easier to attack
+- **False dichotomy**: presentİçinde only two options when more exist
+- **Circular reasonİçinde**: usİçinde bu conclusion as a premise
+- **Appeal to authority**: claimİçinde somethİçinde is true because an authority says so
+- **Post hoc fallacy**: assumİçinde that because A happened beiçine B, A caused B
 
 # # Sets
 
@@ -158,17 +158,17 @@ Set buory is bu foundation içiçindede modern mabumatics ve logic.
 
 # # Biçiçindedeary ve Number Bases
 
-Computers represent veri içiçindede **biçiçindedeary** (base 2), usiçiçindedeg only digits 0 ve 1. Each biçiçindedeary digit is called a **bit**. Eight bits make one **byte**.
+Computers represent veri içiçindede **biçiçindedeary** (base 2), usİçinde only digits 0 ve 1. Each biçiçindedeary digit is called a **bit**. Eight bits make one **byte**.
 
 **Decimal** is bu base-10 number system humans typically use.
 
-**Hexadecimal** is base 16, usiçiçindedeg digits 0–9 ve letters A–F, içiçindedeten used içiçindede computiçiçindedeg to represent biçiçindedeary veri compactly.
+**Hexadecimal** is base 16, usİçinde digits 0–9 ve letters A–F, içiçindedeten used içiçindede computİçinde to represent biçiçindedeary veri compactly.
 
 **Conversions:**
 - Biçiçindedeary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
 - Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
 
-Convertiçiçindedeg between number bases is a fundamental concept içiçindede computer bilim.
+Convertİçinde between number bases is a fundamental concept içiçindede computer bilim.
 
 # # Liçiçindedeear Algebra için Developers ve ML
 

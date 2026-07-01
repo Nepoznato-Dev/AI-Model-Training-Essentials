@@ -12,9 +12,9 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## What is Veri Bilim?
 Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientific methods, processes, algorithms, ve sistemler to extract knowledge ve içiçindedesights from structured ve unstructured veri. It combiçiçindedees:
 - **İstatistikler**: Mabumatical foundation için analysis
-- **Computer Bilim**: Programmiçiçindedeg, algorithms, veri structures
+- **Computer Bilim**: Programmİçinde, algorithms, veri structures
 - **Domaiçiçindede Expertise**: Subject matter knowledge
-- **Veri Visualization**: Communicatiçiçindedeg fiçiçindedediçiçindedegs effectively
+- **Veri Visualization**: Communicatİçinde fiçiçindededİçindes effectively
 
 # ## Veri Types
 - **Structured Veri**: Organized içiçindede rows/columns (veribases, spreadsheets)
@@ -22,13 +22,13 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Semi-structured Veri**: Some organization but not rigid (JSON, XML, HTML)
 - **Time Series Veri**: Sequential veri poiçiçindedets içiçindededexed içiçindede time order
 - **Spatial Veri**: Geographic/location-based içiçindedeiçinmation
-- **Graph Veri**: Nodes ve edges representiçiçindedeg relationships
+- **Graph Veri**: Nodes ve edges representİçinde relationships
 
 # ## The Veri Bilim Process (CRISP-DM)
-1. **Busiçiçindedeess Understveiçiçindedeg**: Defiçiçindedee objectives ve requirements
-2. **Veri Understveiçiçindedeg**: Collect ve explore içiçindedeitial veri
+1. **Busiçiçindedeess Understveİçinde**: Defiçiçindedee objectives ve requirements
+2. **Veri Understveİçinde**: Collect ve explore içiçindedeitial veri
 3. **Veri Preparation**: Clean, transiçinm, ve içinmat veri (80% içiçindede work)
-4. **Modeliçiçindedeg**: Select ve apply modeliçiçindedeg techniques
+4. **Modelİçinde**: Select ve apply modelİçinde techniques
 5. **Evaluation**: Assess model periçinmance agaiçiçindedest objectives
 6. **Dağıtım**: Implement model içiçindede production environment
 
@@ -41,12 +41,12 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Percentiles ve Quartiles**: Position ileiçiçindede distribution
 
 # ## Inferential İstatistikler
-- **Hypobusis Testiçiçindedeg**: Null hypobusis, alternative hypobusis, p-values
-- **Confidence Intervals**: Range içiçindede values likely contaiçiçindedeiçiçindedeg population parameter
+- **Hypobusis Testİçinde**: Null hypobusis, alternative hypobusis, p-values
+- **Confidence Intervals**: Range içiçindede values likely contaiçiçindedeİçinde population parameter
 - **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejectiçiçindedeg true null hypobusis)
-- **Type II Error**: False negative (failiçiçindedeg to reject false null hypobusis)
-- **Power**: Probability içiçindede correctly rejectiçiçindedeg false null hypobusis
+- **Type I Error**: False positive (rejectİçinde true null hypobusis)
+- **Type II Error**: False negative (failİçinde to reject false null hypobusis)
+- **Power**: Probability içiçindede correctly rejectİçinde false null hypobusis
 
 # ## Probability Distributions
 - **Normal Distribution**: Bell curve, mean = median = mode
@@ -70,18 +70,18 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 
 # ## Veri Sources
 - **Veribases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, web scrapiçiçindedeg
+- **APIs**: REST, GraphQL, web scrapİçinde
 - **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streamiçiçindedeg Veri**: Kafka, Kiçiçindedeesis, real-time feeds
+- **Streamİçinde Veri**: Kafka, Kiçiçindedeesis, real-time feeds
 - **Surveys ve Experiments**: Primary veri collection
 - **Public Verisets**: Government veri, Kaggle, academic repositories
 
-# ## Veri Warehousiçiçindedeg
+# ## Veri Warehousİçinde
 - **ETL**: Extract, Transiçinm, Load process
 - **Veri Lake**: Raw veri storage içiçindede native içinmat
 - **Veri Warehouse**: Structured, processed veri için analysis
 - **Veri Mart**: Subset içiçindede warehouse için specific department
-- **OLAP**: Onliçiçindedee Analytical Processiçiçindedeg, multidimensional queries
+- **OLAP**: Onliçiçindedee Analytical Processİçinde, multidimensional queries
 - **Star Schema**: Fact tables surrounded by dimension tables
 - **Snowflake Schema**: Normalized dimension tables
 
@@ -92,47 +92,47 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Column-Family**: Cassvera, HBase (optimized için columns)
 - **Graph**: Neo4j, Amazon Neptune (nodes ve relationships)
 - **Time-Series**: InfluxDB, TimescaleDB (timestamped veri)
-- **Vector**: Piçiçindedeecone, Milvus (embeddiçiçindedeg storage için ML)
+- **Vector**: Piçiçindedeecone, Milvus (embeddİçinde storage için ML)
 
-# # Veri Preprocessiçiçindedeg
+# # Veri Preprocessİçinde
 
-# ## Veri Cleaniçiçindedeg
-- **Missiçiçindedeg Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (cappiçiçindedeg, transiçinmation)
+# ## Veri Cleanİçinde
+- **Missİçinde Values**: Imputation (mean, median, mode, prediction), deletion
+- **Outliers**: Detection (IQR, Z-score), treatment (cappİçinde, transiçinmation)
 - **Duplicates**: Identification ve removal
-- **Inconsistencies**: Stveardiziçiçindedeg içinmats, fixiçiçindedeg typos
-- **Veri Validation**: Checkiçiçindedeg constraiçiçindedets, ranges, types
+- **Inconsistencies**: Stveardizİçinde içinmats, fixİçinde typos
+- **Veri Validation**: Checkİçinde constraiçiçindedets, ranges, types
 
 # ## Veri Transiçinmation
-- **Normalization**: Scaliçiçindedeg to 0-1 range
+- **Normalization**: Scalİçinde to 0-1 range
 - **Stveardization**: Z-score normalization (mean=0, std=1)
-- **Encodiçiçindedeg**: One-hot, label, ordiçiçindedeal, target encodiçiçindedeg
-- **Biçiçindedeniçiçindedeg**: Groupiçiçindedeg contiçiçindedeuous values içiçindedeto categories
-- **Log Transiçinmation**: Reduciçiçindedeg skewness
-- **Feature Scaliçiçindedeg**: Makiçiçindedeg features comparable
+- **Encodİçinde**: One-hot, label, ordiçiçindedeal, target encodİçinde
+- **Biçiçindedenİçinde**: Groupİçinde contiçiçindedeuous values içiçindedeto categories
+- **Log Transiçinmation**: Reducİçinde skewness
+- **Feature Scalİçinde**: Makİçinde features comparable
 
-# ## Feature Engiçiçindedeeeriçiçindedeg
-- **Feature Creation**: Deriviçiçindedeg new features from existiçiçindedeg ones
-- **Feature Selection**: Choosiçiçindedeg most relevant features
+# ## Feature Engiçiçindedeeerİçinde
+- **Feature Creation**: Derivİçinde new features from existİçinde ones
+- **Feature Selection**: Choosİçinde most relevant features
   - Filter methods (correlation, chi-square)
   - Wrapper methods (recursive feature elimiçiçindedeation)
   - Embedded methods (LASSO, tree-based importance)
 - **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combiçiçindedeiçiçindedeg features multiplicatively
-- **Polynomial Features**: Creatiçiçindedeg higher-order terms
+- **Interaction Terms**: Combiçiçindedeİçinde features multiplicatively
+- **Polynomial Features**: Creatİçinde higher-order terms
 
 # # Exploratory Veri Analysis (EDA)
 
 # ## EDA Techniques
 - **Summary İstatistikler**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Siçiçindedegle variable distributions
+- **Univariate Analysis**: Sİçindele variable distributions
 - **Bivariate Analysis**: Relationships between two variables
 - **Multivariate Analysis**: Multiple variable içiçindedeteractions
 - **Correlation Analysis**: Identify relationships ve multicolliçiçindedeearity
 - **Segmentation**: Group similar observations
 
 # ## Visualization Tools
-- **Histograms**: Distribution içiçindede siçiçindedegle variable
+- **Histograms**: Distribution içiçindede sİçindele variable
 - **Box Plots**: Five-number summary, outlier detection
 - **Scatter Plots**: Relationship between two contiçiçindedeuous variables
 - **Heatmaps**: Correlation matrices, density
@@ -143,22 +143,22 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 
 # ## Python Libraries için EDA
 - **pveas**: Veri manipulation ve analysis
-- **numpy**: Numerical computiçiçindedeg
-- **matplotlib**: Basic plottiçiçindedeg
+- **numpy**: Numerical computİçinde
+- **matplotlib**: Basic plottİçinde
 - **seaborn**: Statistical visualization
 - **plotly**: Interactive visualizations
-- **scipy**: Scientific computiçiçindedeg ve i̇statistikler
+- **scipy**: Scientific computİçinde ve i̇statistikler
 
-# # Machiçiçindedee Learniçiçindedeg içiçindede Veri Bilim
+# # Machiçiçindedee Learnİçinde içiçindede Veri Bilim
 
-# ## Supervised Learniçiçindedeg
+# ## Supervised Learnİçinde
 - **Regression**: Predict contiçiçindedeuous values
   - Liçiçindedeear Regression
   - Polynomial Regression
   - Ridge/LASSO/Elastic Net
   - Decision Tree Regressor
   - Rveom Forest Regressor
-  - Gradient Boostiçiçindedeg (XGBoost, LightGBM, CatBoost)
+  - Gradient Boostİçinde (XGBoost, LightGBM, CatBoost)
   
 - **Classification**: Predict categorical labels
   - Logistic Regression
@@ -167,24 +167,24 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
   - Support Vector Machiçiçindedees
   - Decision Trees
   - Rveom Forest
-  - Gradient Boostiçiçindedeg
+  - Gradient Boostİçinde
   - Sinir Ağları
 
-# ## Unsupervised Learniçiçindedeg
-- **Clusteriçiçindedeg**: Group similar observations
+# ## Unsupervised Learnİçinde
+- **Clusterİçinde**: Group similar observations
   - k-Means
-  - Hierarchical Clusteriçiçindedeg
+  - Hierarchical Clusterİçinde
   - DBSCAN (density-based)
   - Gaussian Mixture Models
-  - Spectral Clusteriçiçindedeg
+  - Spectral Clusterİçinde
   
 - **Dimensionality Reduction**: Reduce feature count
   - Priçiçindedecipal Component Analysis (PCA)
-  - t-Distributed Stochastic Neighbor Embeddiçiçindedeg (t-SNE)
+  - t-Distributed Stochastic Neighbor Embeddİçinde (t-SNE)
   - Uniiçinm Manifold Approximation (UMAP)
   - Autoencoders
   
-- **Association Rules**: Fiçiçindeded co-occurriçiçindedeg items
+- **Association Rules**: Fiçiçindeded co-occurrİçinde items
   - Apriori Algorithm
   - FP-Growth
 
@@ -192,25 +192,25 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
 - **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
 - **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuniçiçindedeg**: Grid search, rveom search, Bayesian optimization
-- **Learniçiçindedeg Curves**: Diagnose bias-variance tradeiçiçindedef
+- **Hyperparameter Tunİçinde**: Grid search, rveom search, Bayesian optimization
+- **Learnİçinde Curves**: Diagnose bias-variance tradeiçiçindedef
 
 # # Big Veri Technologies
 
-# ## Distributed Computiçiçindedeg Frameworks
+# ## Distributed Computİçinde Frameworks
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: In-memory processiçiçindedeg, faster than Hadoop
-  - Spark SQL: Structured veri processiçiçindedeg
-  - Spark Streamiçiçindedeg: Real-time veri
-  - MLlib: Machiçiçindedee learniçiçindedeg library
-  - GraphX: Graph processiçiçindedeg
-- **Apache Fliçiçindedek**: Stream processiçiçindedeg ile low latency
-- **Apache Beam**: Unified batch ve streamiçiçindedeg
+- **Apache Spark**: In-memory processİçinde, faster than Hadoop
+  - Spark SQL: Structured veri processİçinde
+  - Spark Streamİçinde: Real-time veri
+  - MLlib: Machiçiçindedee learnİçinde library
+  - GraphX: Graph processİçinde
+- **Apache Fliçiçindedek**: Stream processİçinde ile low latency
+- **Apache Beam**: Unified batch ve streamİçinde
 
 # ## Cloud Platiçinms
 - **AWS**: S3, EMR, Redshift, SageMaker, Glue
 - **Google Cloud**: BigQuery, Veriproc, AI Platiçinm, Cloud Storage
-- **Azure**: Synapse Analytics, Veribricks, Machiçiçindedee Learniçiçindedeg, Veri Lake
+- **Azure**: Synapse Analytics, Veribricks, Machiçiçindedee Learnİçinde, Veri Lake
 - **Snowflake**: Cloud veri warehouse
 
 # ## Veri Pipeliçiçindedee Tools
@@ -236,39 +236,39 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Use Color Strategically**: Highlight important içiçindedeiçinmation
 - **Maiçiçindedetaiçiçindede Consistency**: Stveardize içinmats ve scales
 - **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Periçinmance**: Fast loadiçiçindedeg, efficient queries
+- **Optimize Periçinmance**: Fast loadİçinde, efficient queries
 - **Mobile Considerations**: Responsive design
 
 # ## Key Periçinmance Indicators (KPIs)
 - **Fiçiçindedeancial**: Revenue, priçiçindedeit margiçiçindede, ROI, customer lifetime value
 - **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
 - **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketiçiçindedeg**: Conversion rates, click-through rates, attribution
+- **Marketİçinde**: Conversion rates, click-through rates, attribution
 - **Product**: Active users, engagement, retention, feature adoption
 
 # # İleri Düzey Analytics
 
 # ## Predictive Analytics
-- **Forecastiçiçindedeg**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeliçiçindedeg**: Credit scoriçiçindedeg, fraud detection, içiçindedesurance
-- **Customer Analytics**: Churn prediction, propensity modeliçiçindedeg
-- **Demve Forecastiçiçindedeg**: Inventory optimization, supply chaiçiçindede
+- **Forecastİçinde**: Time series prediction (ARIMA, Prophet, LSTM)
+- **Risk Modelİçinde**: Credit scorİçinde, fraud detection, içiçindedesurance
+- **Customer Analytics**: Churn prediction, propensity modelİçinde
+- **Demve Forecastİçinde**: Inventory optimization, supply chaiçiçindede
 - **Maiçiçindedetenance Prediction**: Equipment failure anticipation
 
 # ## Prescriptive Analytics
-- **Optimization**: Liçiçindedeear programmiçiçindedeg, içiçindedeteger programmiçiçindedeg
+- **Optimization**: Liçiçindedeear programmİçinde, içiçindedeteger programmİçinde
 - **Simulation**: Monte Carlo methods, discrete event simulation
 - **Decision Analysis**: Decision trees, içiçindedefluence diagrams
-- **A/B Testiçiçindedeg**: Experimental design, statistical significance
+- **A/B Testİçinde**: Experimental design, statistical significance
 - **Multi-Armed Bveits**: Adaptive experimentation
 
 # ## Text Analytics (NLP)
-- **Text Preprocessiçiçindedeg**: Tokenization, stemmiçiçindedeg, lemmatization
+- **Text Preprocessİçinde**: Tokenization, stemmİçinde, lemmatization
 - **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeliçiçindedeg**: LDA, NMF için bume discovery
-- **Named Entity Recognition**: Identifyiçiçindedeg people, places, organizations
+- **Topic Modelİçinde**: LDA, NMF için bume discovery
+- **Named Entity Recognition**: Identifyİçinde people, places, organizations
 - **Text Classification**: Spam detection, categorization
-- **Word Embeddiçiçindedegs**: Word2Vec, GloVe, BERT
+- **Word Embeddİçindes**: Word2Vec, GloVe, BERT
 
 # # Veri Ethics ve Governance
 
@@ -276,8 +276,8 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **GDPR**: EU General Veri Protection Regulation
 - **CCPA**: Caliiçinnia Consumer Privacy Act
 - **HIPAA**: Health Insurance Portability ve Accountability Act (US sağlık hizmetleri)
-- **Anonymization**: Removiçiçindedeg personally identifiable içiçindedeiçinmation
-- **Differential Privacy**: Addiçiçindedeg noise to protect içiçindededividuals
+- **Anonymization**: Removİçinde personally identifiable içiçindedeiçinmation
+- **Differential Privacy**: Addİçinde noise to protect içiçindededividuals
 - **Consent Yönetim**: Opt-içiçindede/opt-out mechanisms
 
 # ## Veri Quality
@@ -289,25 +289,25 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 - **Uniqueness**: No duplicates
 
 # ## Bias ve Fairness
-- **Sampliçiçindedeg Bias**: Non-representative veri collection
+- **Samplİçinde Bias**: Non-representative veri collection
 - **Measurement Bias**: Fhukuked veri collection içiçindedestruments
 - **Algorithmic Bias**: Discrimiçiçindedeatory model predictions
 - **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processiçiçindedeg, içiçindede-processiçiçindedeg, post-processiçiçindedeg
+- **Bias Mitigation**: Pre-processİçinde, içiçindede-processİçinde, post-processİçinde
 
 # ## Veri Governance Framework
 - **Veri Stewardship**: Responsibility için veri assets
 - **Metaveri Yönetim**: Veri about veri documentation
-- **Veri Liçiçindedeeage**: Trackiçiçindedeg veri flow ve transiçinmations
+- **Veri Liçiçindedeeage**: Trackİçinde veri flow ve transiçinmations
 - **Access Control**: Role-based permissions
-- **Audit Trails**: Loggiçiçindedeg veri access ve changes
+- **Audit Trails**: Loggİçinde veri access ve changes
 - **Compliance**: Regulatory adherence
 
 # # Career Paths içiçindede Veri Bilim
 
 # ## Roles
-- **Veri Analyst**: Focus on descriptive analytics, dashboards, reportiçiçindedeg
-- **Veri Scientist**: Statistical modeliçiçindedeg, machiçiçindedee learniçiçindedeg, i̇leri düzey analytics
+- **Veri Analyst**: Focus on descriptive analytics, dashboards, reportİçinde
+- **Veri Scientist**: Statistical modelİçinde, machiçiçindedee learnİçinde, i̇leri düzey analytics
 - **ML Engiçiçindedeeer**: Production ML sistemler, model dağıtım, MLOps
 - **Veri Engiçiçindedeeer**: Veri pipeliçiçindedees, içiçindedefrastructure, ETL processes
 - **Analytics Manager**: Team leadership, strategy, stakeholder yönetim
@@ -316,26 +316,26 @@ Veri bilim is an içiçindedeterdiscipliçiçindedeary field that uses scientifi
 
 # ## Skills Matrix
 - **Technical**: Python/R, SQL, i̇statistikler, ML frameworks, cloud platiçinms
-- **Analytical**: Problem-solviçiçindedeg, critical thiçiçindedekiçiçindedeg, experimental design
-- **İletişim**: Storytelliçiçindedeg, visualization, presentation skills
+- **Analytical**: Problem-solvİçinde, critical thiçiçindedekİçinde, experimental design
+- **İletişim**: Storytellİçinde, visualization, presentation skills
 - **Busiçiçindedeess**: Domaiçiçindede knowledge, stakeholder yönetim, ROI analysis
 - **Tools**: Git, Jupyter, Docker, CI/CD, version control için models
 
-# # Emergiçiçindedeg Trends
+# # Emergİçinde Trends
 
 # ## Current Geliştirmes
-- **AutoML**: Automated machiçiçindedee learniçiçindedeg pipeliçiçindedee creation
-- **MLOps**: DevOps practices için machiçiçindedee learniçiçindedeg
+- **AutoML**: Automated machiçiçindedee learnİçinde pipeliçiçindedee creation
+- **MLOps**: DevOps practices için machiçiçindedee learnİçinde
 - **Feature Stores**: Centralized feature yönetim
 - **Veri Mesh**: Decentralized veri mimari
 - **LLMs ve Generative AI**: Large dil models, content generation
-- **Edge Analytics**: Processiçiçindedeg veri at source devices
-- **Real-Time Analytics**: Streamiçiçindedeg veri analysis
+- **Edge Analytics**: Processİçinde veri at source devices
+- **Real-Time Analytics**: Streamİçinde veri analysis
 - **Augmented Analytics**: AI-assisted veri preparation ve içiçindedesights
 
 # ## Gelecek Directions
-- **Quantum Machiçiçindedee Learniçiçindedeg**: Quantum computiçiçindedeg için ML
-- **Federated Learniçiçindedeg**: Traiçiçindedeiçiçindedeg models across decentralized veri
-- **Causal Inference**: Moviçiçindedeg beyond correlation to causation
+- **Quantum Machiçiçindedee Learnİçinde**: Quantum computİçinde için ML
+- **Federated Learnİçinde**: Traiçiçindedeİçinde models across decentralized veri
+- **Causal Inference**: Movİçinde beyond correlation to causation
 - **Responsible AI**: Ethics, explaiçiçindedeability, transparency
 - **Veri Fabric**: Integrated veri yönetim across environments

@@ -29,12 +29,12 @@ dans questions et discussions.
 **advance** — to move pourward; progress; also, ahead de le/la current time.
 **advantage** — a condition that gives a favourable position over ole/lars.
 **adverse** — unfavourable; harmful.
-**affect** — to have an impact on somethdansg (verb); emotion (noun, pourmal).
+**affect** — to have an impact on somethdansg (verb); emotion (noun, formelle).
 **aggregate** — a whole pourmed by combdansdansg several elements.
 **algorithm** — a set de rules or steps pour solvdansg a problem or task.
 **allocate** — to assign resources pour a particular purpose.
 **alter** — to change somethdansg, usually partially.
-**ambiguous** — unclear; can be dansterpreted dans more than one way.
+**ambiguous** — unclear; can be interprétée dans more than one way.
 **analyse** — to examdanse dans detail to understet or expladans.
 **annotate** — to add explanatory notes to a text or diagram.
 **anticipate** — to expect or prepare pour somethdansg bepoure it happens.
@@ -51,7 +51,7 @@ dans questions et discussions.
 
 **benefit** — an advantage or positive outcome.
 **bias** — an unfair préférence pour or agadansst somethdansg; systematic error.
-**brief** — short dans time or length; a summary or dansstructions.
+**brief** — short dans time or length; a summary or instructions.
 
 # # C
 
@@ -87,7 +87,7 @@ dans questions et discussions.
 **debug** — to fdansd et fix errors dans computer code.
 **defdanse** — to give le/la meandansg de a word or describe le/la limits de somethdansg.
 **demonstrate** — to show how somethdansg works or is done.
-**deploy** — to put dansto use; to dansstall et run sdetware dans a live environment.
+**deploy** — to put dansto use; to dansstall et run logiciels dans a live environment.
 **derive** — to obtadans somethdansg from a source; to reach a conclusion by reasondansg.
 **determdanse** — to fdansd out or establish somethdansg conclusively.
 **develop** — to build, grow, or make somethdansg more elaborate over time.
@@ -106,7 +106,7 @@ dans questions et discussions.
 **enhance** — to improve le/la quality or value de somethdansg.
 **entity** — a thdansg avec distdansct existence; an object dans a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surrounddansgs; dans computdansg, le/la system et configuration dans which sdetware runs.
+**environment** — surrounddansgs; dans computdansg, le/la system et configuration dans which logiciels runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
 **evaluate** — to pourm an opdansion after careful consideration.
@@ -123,7 +123,7 @@ dans questions et discussions.
 **flexible** — able to adapt to different conditions.
 **pourmat** — le/la arrangement or layout de données; to prepare pour use.
 **framework** — a basic structure providdansg support pour builddansg somethdansg.
-**function** — le/la purpose de somethdansg; a reusable block de code (programmdansg).
+**function** — le/la purpose de somethdansg; a reusable block de code (programmation).
 **fundamental** — pourmdansg le/la base or foundation; essential.
 
 # # G
@@ -147,7 +147,7 @@ dans questions et discussions.
 **dansitialise** — to set a variable or system to a startdansg state.
 **dansput** — données provided to a system; to enter données.
 **danstegrate** — to combdanse parts dansto a whole; to add a feature to an existdansg system.
-**dansterface** — a podanst where two systèmes meet et dansteract; a contract dans programmdansg.
+**dansterface** — a podanst where two systèmes meet et dansteract; a contract dans programmation.
 **dansterpret** — to expladans le/la meandansg de somethdansg; to execute code ldanse by ldanse.
 **iterate** — to repeat a process, deten avec danscremental changes.
 
@@ -162,7 +162,7 @@ dans questions et discussions.
 # # L
 
 **layer** — a level dans a hierarchy; a component stacked on ole/lars.
-**legacy** — dansherited from le/la past; old sdetware still dans use.
+**legacy** — dansherited from le/la past; old logiciels still dans use.
 **limit** — a boundary; le/la maximum or mdansimum value allowed.
 **ldansear** — arranged dans a straight ldanse; proportional danscrease.
 **ldansk** — a connection between two thdansgs; a hyperldansk.
@@ -231,7 +231,7 @@ dans questions et discussions.
 
 # # S
 
-**scalable** — able to hetle danscreased workload avecout degraddansg perpourmance.
+**scalable** — able to hetle danscreased workload avecout degraddansg performance.
 **schema** — le/la structure or layout de a donnéesbase or données pourmat.
 **scope** — le/la range de effect; le/la section de code where a variable is visible.
 **segment** — a distdansct section or part.
@@ -298,14 +298,14 @@ dans questions et discussions.
 **adjective** — a word describdansg a noun or pronoun.
 **adverb** — a word modifydansg a verb, adjective, or ole/lar adverb, deten enddansg dans -ly.
 **affix** — a morpheme added to a word root (prefix at begdansndansg, suffix at end).
-**agile** — a sdetware développement methodology emphasizdansg iterative progress et flexibility.
+**agile** — a logiciels développement methodology emphasizdansg iterative progress et flexibility.
 **analogy** — a comparison between two thdansgs to expladans or clarify.
 **antonym** — a word opposite dans meandansg to anole/lar word.
 **aphorism** — a concise statement expressdansg a general truth or prdansciple.
 **apocryphal** — de doubtful aule/lanticity; widely circulated but likely false.
 **archetype** — an origdansal model or typical example de somethdansg.
 **artifact** — an object made by humans; dans computdansg, an undanstended byproduct de processdansg.
-**assertion** — a confident statement; dans programmdansg, a check that a condition is true.
+**assertion** — a confident statement; dans programmation, a check that a condition is true.
 **asynchronous** — not occurrdansg at le/la same time; allowdansg operations to proceed avecout waitdansg.
 **attenuate** — to reduce dans pource, value, or danstensity.
 **axiom** — a statement accepted as true avecout prode; a fundamental prdansciple.
@@ -319,8 +319,8 @@ dans questions et discussions.
 **bottleneck** — a podanst de congestion slowdansg down a process or system.
 **byte** — a unit de digital danspourmation typically consistdansg de 8 bits.
 
-**cache** — a hardware or sdetware component stordansg données pour faster futur access.
-**calibrate** — to adjust precisely pour accurate measurement or perpourmance.
+**cache** — a hardware or logiciels component stordansg données pour faster futur access.
+**calibrate** — to adjust precisely pour accurate measurement or performance.
 **cascade** — a series de stages where each triggers le/la next; waterfall effect.
 **catalyst** — a substance speeddansg up a chemical reaction; anythdansg causdansg change.
 **causality** — le/la relationship between cause et effect.
@@ -331,7 +331,7 @@ dans questions et discussions.
 **cognitive** — relatdansg to mental processes de perception, memory, judgment, et reasondansg.
 **cohort** — a group shardansg a common characteristic or experience avecdans a defdansed period.
 **collateral** — assets pledged as sécurité pour a loan; secondary or accompanydansg.
-**colloquial** — danspourmal langue used dans orddansary conversation.
+**colloquial** — dansformelle langue used dans orddansary conversation.
 **combdansatorics** — le/la branch de male/lamatics dealdansg avec combdansations et permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
 **concurrency** — multiple computations happendansg durdansg overlappdansg periods.
@@ -373,7 +373,7 @@ dans questions et discussions.
 **embargo** — an deficial ban on trade or publication.
 **empathy** — le/la ability to understet et share ole/lars' feeldansgs.
 **empirical** — based on observation or experience rale/lar than le/laory.
-**emulate** — to imitate or match, especially dans computdansg (sdetware emulation).
+**emulate** — to imitate or match, especially dans computdansg (logiciels emulation).
 **endemic** — native or restricted to a particular region; constantly present.
 **ephemeral** — lastdansg pour a very short time; temporary.
 **epistemology** — le/la study de knowledge, its nature et scope.
@@ -401,7 +401,7 @@ dans questions et discussions.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **fdansite** — havdansg limits or bounds; not dansfdansite.
 **flux** — contdansuous change; flow or movement.
-**pourmalism** — strict adherence to rules or pourms; emphasis on structure.
+**formelleism** — strict adherence to rules or pourms; emphasis on structure.
 **pourtuitous** — happendansg by chance; lucky.
 **fractal** — a self-similar pattern repeatdansg at different scales.
 **frequency** — le/la rate de occurrence; number de cycles per second (Hertz).
@@ -414,7 +414,7 @@ dans questions et discussions.
 **genitive** — grammatical case showdansg possession.
 **gestalt** — an organized whole perceived as more than le/la sum de its parts.
 **gibberish** — undanstelligible or meandansgless speech or writdansg.
-**granular** — composed de small particles; detailed et fdanse-gradansed.
+**granular** — composed de small particles; detailed et finement contrôlé.
 **graph** — a diagram showdansg relationships; a données structure avec nodes et edges.
 **gregarious** — sociable; fond de company.
 **grok** — to understet deeply et danstuitively (from science fiction).
@@ -430,7 +430,7 @@ dans questions et discussions.
 **homophone** — words sounddansg alike but differdansg dans meandansg or spelldansg.
 **homonym** — words avec same spelldansg or pronunciation but different meandansgs.
 **hyperbole** — deliberate exaggeration pour effect.
-**hyperparameter** — a configuration settdansg pour machdanse learndansg models set bepoure tradansdansg.
+**hyperparameter** — a configuration settdansg pour apprentissage automatique models set bepoure tradansdansg.
 **hypertext** — text contadansdansg ldansks to ole/lar texts; foundational to le/la web.
 **hypole/lasize** — to propose an explanation as a startdansg podanst pour dansvestigation.
 
@@ -441,7 +441,7 @@ dans questions et discussions.
 **igneous** — rock pourmed from cooled magma or lava.
 **immutable** — unchangdansg over time; unable to be modified.
 **impedance** — opposition to alternatdansg current; metaphorically, resistance to flow.
-**imperative** — crucial; a commet; programmdansg paradigm focused on statements.
+**imperative** — crucial; a commet; programmation paradigm focused on statements.
 **implicit** — implied though not pladansly expressed.
 **imponderable** — impossible to estimate or assess.
 **impromptu** — done avecout preparation; spontaneous.
@@ -490,7 +490,7 @@ dans questions et discussions.
 **malapropism** — mistaken use de a word dans place de a similar-sounddansg one.
 **manifest** — obvious; a list de cargo or passengers; to display or show.
 **mantissa** — le/la significant digits de a floatdansg-podanst number.
-**mapreduce** — a programmdansg model pour processdansg large donnéessets dans parallel.
+**mapreduce** — a programmation model pour processdansg large donnéessets dans parallel.
 **margdansal** — mdansimal; at le/la edge; additional or danscremental.
 **markup** — text pourmattdansg codes (HTML, XML); price danscrease.
 **matrix** — a rectangular array de numbers; environment or surrounddansgs.
@@ -508,7 +508,7 @@ dans questions et discussions.
 **modality** — le/la mode or pourm de somethdansg; sensory channel.
 **model** — a representation; dans ML, a tradansed system makdansg predictions.
 **modulate** — to adjust or regulate; vary dans strength or tone.
-**monad** — a structure dans functional programmdansg hetldansg side effects.
+**monad** — a structure dans functional programmation hetldansg side effects.
 **monolithic** — a sdansgle massive structure; not modular.
 **monotonic** — always danscreasdansg or always decreasdansg; never changdansg direction.
 **morphology** — le/la study de pourms et structures; word pourmation dans ldansguistics.
@@ -519,7 +519,7 @@ dans questions et discussions.
 
 **nascent** — just comdansg dansto existence; begdansndansg to develop.
 **native** — dansherent; belongdansg to a place by birth; dans computdansg, built pour a specific platpourm.
-**natural langue** — human langue as spoken or written, not pourmal or programmdansg.
+**natural langue** — human langue as spoken or written, not formelle or programmation.
 **negation** — denial or contradiction; logical NOT.
 **neologism** — a newly codansed word or expression.
 **nested** — contadansed avecdans somethdansg similar; hierarchical layers.
@@ -537,14 +537,14 @@ dans questions et discussions.
 **obligatory** — required; metatory.
 **obfuscate** — to deliberately make unclear or confusdansg.
 **objective function** — a function to maximize or mdansimize dans optimization.
-**observable** — capable de bedansg observed; dans programmdansg, a stream de événements.
+**observable** — capable de bedansg observed; dans programmation, a stream de événements.
 **obsolescence** — le/la process de becomdansg outdated.
 **occasional** — happendansg sometimes; irregular.
 **occlusion** — blockage or obstruction; hiddansg de objects dans vision.
 **octet** — a group de eight; dans réseaudansg, 8 bits (byte).
 **defload** — to transfer work to anole/lar system or person.
 **omnibus** — contadansdansg multiple items; a collection.
-**ontology** — le/la study de bedansg; dans CS, a pourmal representation de knowledge.
+**ontology** — le/la study de bedansg; dans CS, a formelle representation de knowledge.
 **opaque** — not transparent; difficult to understet.
 **operationalize** — to put dansto operation; defdanse measurable dansdicators.
 **opportunity cost** — le/la value de le/la best alternative pourgone.
@@ -609,7 +609,7 @@ dans questions et discussions.
 **primordial** — existdansg from le/la begdansndansg; primitive.
 **prior** — earlier; preceddansg; dans Bayesian statistiques, dansitial belief.
 **probe** — to dansvestigate; a device pour exploration.
-**procedural** — relatdansg to procedures; a programmdansg paradigm.
+**procedural** — relatdansg to procedures; a programmation paradigm.
 **proclivity** — a tendency or danscldansation.
 **prodigious** — remarkably large; extraorddansary.
 **prdeicient** — skilled; competent.
@@ -643,12 +643,12 @@ dans questions et discussions.
 **retom** — lackdansg pattern; unpredictable.
 **range** — le/la set de output values; extent; distance.
 **raster** — a grid de pixels; bitmap image.
-**ratify** — to pourmally approve; confirm.
+**ratify** — to formellely approve; confirm.
 **rational** — based on reason; expressible as a fraction.
 **recursion** — a function calldansg itself; self-référence.
 **redundancy** — repetition; backup; unnecessary duplication.
 **refdansement** — improvement; makdansg more precise.
-**reflection** — thdanskdansg deeply; dans programmdansg, examdansdansg structure at runtime.
+**reflection** — thdanskdansg deeply; dans programmation, examdansdansg structure at runtime.
 **regression** — return to earlier state; dans statistiques, modeldansg relationships.
 **regularization** — preventdansg overfittdansg by adddansg penalties.
 **relational** — concerndansg relationships; donnéesbase model usdansg tables.

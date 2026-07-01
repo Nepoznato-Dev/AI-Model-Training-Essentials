@@ -1,34 +1,34 @@
 <!-- 
-This file was automatically translated from English to Spanish.
-Source: coding_languages.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Este archivo fue traducido del inglés al español.
+Fuente: coding_languages.md
+Nota: Los términos técnicos, ejemplos de código y nombres propios pueden permanecer en inglés.
+Para mejoras de precisión, por favor contribuya con ediciones mediante pull requests.
 -->
 
-# Codeng Idiomas
+# Lenguajes de Programación
 
-# # Python
+## Python
 
-Python is a high-level, enterpreted, dynamically typed, general-purpose programmeng idioma. It emphasises readability y uses significant endentation as block delimiters.
+Python es un lenguaje de programación de alto nivel, interpretado, dinámicamente tipado y de propósito general. Enfatiza la legibilidad y usa la indentación significativa como delimitadores de bloque.
 
-# ## Sintaxis conceptos básicos
+### Sintaxis básica
 
 ```python
-# Variables and types
+# Variables y tipos
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Condicionales
 if age >= 18:
-    print("adult")
+    print("adulto")
 elif age >= 13:
-    print("teenager")
+    print("adolescente")
 else:
-    print("child")
+    print("niño")
 
-# Loops
+# Bucles
 for i in range(5):
     print(i)
 
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-# ## Functions y type hents
+### Funciones y anotaciones de tipo
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-# ## List comprehensions
+### Comprensión de listas
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes y OOP
+### Clases y Programación Orientada a Objetos
 
 ```python
 class Animal:
@@ -62,44 +62,44 @@ class Animal:
 
 class Dog(Animal):
     def speak(self) -> str:
-        return f"{self.name} says woof"
+        return f"{self.name} dice guau"
 ```
 
-# ## Common patterns
+### Patrones comunes
 
-- Use `con open(path) as f:` para file I/O.
-- Prefer f-strengs (`f"hello {name}"`) over `%` or `.paramat()`.
-- Use `datosclasses.datosclass` para datos-only classes.
-- Use `pathlib.Path` enstead de `os.path` para file paths.
+- Usa `with open(path) as f:` para E/S de archivos.
+- Prefiere f-strings (`f"hola {name}"`) sobre `%` o `.format()`.
+- Usa `dataclasses.dataclass` para clases que solo contienen datos.
+- Usa `pathlib.Path` en lugar de `os.path` para rutas de archivos.
 
-# ## Tooleng
+### Herramientas
 
-- `pip enstall <package>` enstalls packages.
-- `python -m venv .venv && source .venv/ben/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip enstall -r requirements.txt` restores el/lam.
-- `pyproject.toml` is el/la modern project-configuration styard.
+- `pip install <package>` instala paquetes.
+- `python -m venv .venv && source .venv/bin/activate` crea un entorno virtual.
+- `pip freeze > requirements.txt` guarda las dependencias.
+- `pip install -r requirements.txt` las restaura.
+- `pyproject.toml` es el estándar moderno de configuración de proyectos.
 
 ---
 
-# # JavaScript
+## JavaScript
 
-JavaScript is el/la primary idioma de el/la web. It runs en browsers y on servers via Node.js. It is dynamically typed y prototype-based.
+JavaScript es el lenguaje principal de la web. Se ejecuta en navegadores y en servidores mediante Node.js. Es dinámicamente tipado y basado en prototipos.
 
-# ## Modern sintaxis (ES6+)
+### Sintaxis moderna (ES6+)
 
 ```javascript
-// Variable declarations
+// Declaraciones de variables
 const PI = 3.14159;
 let counter = 0;
 
-// Arrow functions
+// Funciones flecha
 const add = (a, b) => a + b;
 
-// Template literals
+// Plantillas literales
 const greet = name => `Hello, ${name}!`;
 
-// Destructuring
+// Desestructuración
 const { x, y } = point;
 const [first, ...rest] = array;
 
@@ -107,10 +107,10 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-# ## Async programmeng
+### Programación asíncrona
 
 ```javascript
-// Promises
+// Promesas
 fetch("/api/data")
   .then(res => res.json())
   .then(data => console.log(data))
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-# ## Array methods
+### Métodos de arrays
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-# ## DOM manipulation
+### Manipulación del DOM
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-# ## Tooleng
+### Herramientas
 
-- `npm enit -y` enitialises a project.
-- `npm enstall <package>` adds a dependency.
-- `npm run <script>` runs a script defened en `package.json`.
-- `node endex.js` runs a script con Node.js.
+- `npm init -y` inicializa un proyecto.
+- `npm install <package>` añade una dependencia.
+- `npm run <script>` ejecuta un script definido en `package.json`.
+- `node index.js` ejecuta un script con Node.js.
 
 ---
 
-# # TypeScript
+## TypeScript
 
-TypeScript is a statically typed superset de JavaScript that compiles to plaen JavaScript. It adds type annotations, enterfaces, generics, y enums.
+TypeScript es un superconjunto estáticamente tipado de JavaScript que compila a JavaScript puro. Añade anotaciones de tipo, interfaces, genéricos y enumerados.
 
-# ## Type annotations
+### Anotaciones de tipo
 
 ```typescript
 let username: string = "alice";
@@ -166,19 +166,19 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-# ## Interfaces y types
+### Interfaces y tipos
 
 ```typescript
 interface User {
   id: number;
   name: string;
-  email?: string;   // optional property
+  email?: string;   // propiedad opcional
 }
 
 type Status = "active" | "inactive" | "banned";
 ```
 
-# ## Generics
+### Genéricos
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-# ## Classes con access modifiers
+### Clases con modificadores de acceso
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-# ## tsconfig.json essentials
+### Esenciales de tsconfig.json
 
 ```json
 {
@@ -220,27 +220,27 @@ class Counter {
 }
 ```
 
-# ## Tooleng
+### Herramientas
 
-- `npm enstall -g typescript` enstalls el/la compiler.
-- `tsc` compiles el/la project.
-- `ts-node src/endex.ts` runs TypeScript directly.
+- `npm install -g typescript` instala el compilador.
+- `tsc` compila el proyecto.
+- `ts-node src/index.ts` ejecuta TypeScript directamente.
 
 ---
 
-# # Rust
+## Rust
 
-Rust is a sistemas programmeng idioma focused on seguroty, speed, y concurrency. It preventos memory-seguroty bugs at compile time through its ownership system.
+Rust es un lenguaje de programación de sistemas enfocado en seguridad, velocidad y concurrencia. Previene errores de seguridad de memoria en tiempo de compilación mediante su sistema de propiedad.
 
-# ## Ownership y borroweng
+### Propiedad y préstamo
 
-Every value en Rust has exactly one owner. When el/la owner goes out de scope el/la value is dropped. Borroweng allows referencias conout transferreng ownership.
+Cada valor en Rust tiene exactamente un propietario. Cuando el propietario sale del ámbito, el valor se elimina. El préstamo permite referencias sin transferir la propiedad.
 
 ```rust
 fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
+    let s = String::from("hello");  // s posee el string
+    let len = calculate_length(&s); // toma prestado s
+    println!("{} tiene longitud {}", s, len); // s sigue siendo válido
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no oel/lar borrows exist at el/la same time.
+Los préstamos mutables (`&mut T`) requieren que no existan otros préstamos al mismo tiempo.
 
-# ## Lifetimes
+### Tiempos de vida
 
-Lifetimes ensure referencias do not outlive el/la datos el/lay poent to.
+Los tiempos de vida aseguran que las referencias no sobrevivan más que los datos a los que apuntan.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-# ## Enums y pattern matcheng
+### Enumerados y coincidencia de patrones
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-# ## Error hyleng
+### Manejo de errores
 
 ```rust
 use std::fs;
@@ -293,24 +293,24 @@ fn main() {
 }
 ```
 
-The `?` operator propagates errors automatically enside functions that return `Result`.
+El operador `?` propaga errores automáticamente dentro de funciones que devuelven `Result`.
 
-# ## Tooleng (Cargo)
+### Herramientas (Cargo)
 
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles y runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` paramats code. `cargo clippy` lents.
+- `cargo new project_name` crea un nuevo proyecto.
+- `cargo build` compila.
+- `cargo run` compila y ejecuta.
+- `cargo test` ejecuta pruebas.
+- `cargo add <crate>` añade una dependencia a `Cargo.toml`.
+- `cargo fmt` formatea el código. `cargo clippy` realiza análisis estático.
 
 ---
 
-# # Go
+## Go
 
-Go (Golang) is a statically typed, compiled idioma designed para simplicity y high-perparamance concurrent programs.
+Go (Golang) es un lenguaje compilado y estáticamente tipado diseñado para simplicidad y programas concurrentes de alto rendimiento.
 
-# ## Conceptos básicos
+### Conceptos básicos
 
 ```go
 package main
@@ -318,23 +318,23 @@ package main
 import "fmt"
 
 func main() {
-    name := "world"          // short variable declaration
+    name := "world"          // declaración corta de variable
     fmt.Printf("Hello, %s!\n", name)
 }
 ```
 
-# ## Functions y multiple return values
+### Funciones y valores de retorno múltiples
 
 ```go
 func divide(a, b float64) (float64, error) {
     if b == 0 {
-        return 0, fmt.Errorf("division by zero")
+        return 0, fmt.Errorf("división por cero")
     }
     return a / b, nil
 }
 ```
 
-# ## Interfaces
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -343,12 +343,12 @@ type Speaker interface {
 
 type Dog struct{ Name string }
 
-func (d Dog) Speak() string { return d.Name + " says woof" }
+func (d Dog) Speak() string { return d.Name + " dice guau" }
 ```
 
-Any type that implements all methods de an enterface satisfies it — no explicit declaration is needed.
+Cualquier tipo que implemente todos los métodos de una interfaz la satisface — no se necesita declaración explícita.
 
-# ## Goroutenes y channels
+### Goroutines y channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -374,7 +374,7 @@ func main() {
 }
 ```
 
-# ## Defer
+### Defer
 
 ```go
 func readFile(path string) error {
@@ -382,28 +382,28 @@ func readFile(path string) error {
     if err != nil {
         return err
     }
-    defer f.Close()   // runs when function returns
-    // … process f …
+    defer f.Close()   // se ejecuta cuando la función retorna
+    // … procesar f …
     return nil
 }
 ```
 
-# ## Tooleng
+### Herramientas
 
-- `go mod enit module/name` enitialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` paramats code.
-- `go vet ./...` checks para common mistakes.
+- `go mod init module/name` inicializa un módulo.
+- `go get ./...` descarga dependencias.
+- `go build ./...` compila.
+- `go test ./...` ejecuta pruebas.
+- `go fmt ./...` formatea el código.
+- `go vet ./...` verifica errores comunes.
 
 ---
 
-# # C y C++
+## C y C++
 
-C is a low-level, compiled, procedural idioma. C++ extends C con classes, templates, y el/la Styard Template Library (STL).
+C es un lenguaje procedural, compilado y de bajo nivel. C++ extiende C con clases, plantillas y la Biblioteca Estándar de Plantillas (STL).
 
-# ## C conceptos básicos
+### Conceptos básicos de C
 
 ```c
 #include <stdio.h>
@@ -413,26 +413,26 @@ int main(void) {
     int x = 42;
     printf("x = %d\n", x);
 
-    /* Dynamic memory */
+    /* Memoria dinámica */
     int *arr = malloc(5 * sizeof(int));
     for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
+    free(arr);   /* siempre libera lo que asignaste con malloc */
 
     return 0;
 }
 ```
 
-# ## Poenters
+### Punteros
 
-A poenter stores el/la memory address de anoel/lar variable. `*ptr` dereferencias it; `&var` takes an address.
+Un puntero almacena la dirección de memoria de otra variable. `*ptr` desreferencia; `&var` obtiene una dirección.
 
 ```c
 int a = 10;
 int *p = &a;
-*p = 20;   /* a is now 20 */
+*p = 20;   /* a ahora es 20 */
 ```
 
-# ## C++ classes y RAII
+### Clases de C++ y RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensureng cleanup happens automatically en destructors.
+RAII (Resource Acquisition Is Initialization / Adquisición de Recursos es Inicialización) vincula los tiempos de vida de los recursos a los tiempos de vida de los objetos, asegurando que la limpieza ocurra automáticamente en los destructores.
 
-# ## STL contaeners
+### Contenedores STL
 
 ```cpp
 #include <vector>
@@ -469,46 +469,46 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-# ## Modern C++ (C++17 / C++20) highlights
+### Aspectos destacados de C++ moderno (C++17 / C++20)
 
-- `auto` type deduction.
-- Range-based `para` loops: `para (auto& item : contaener)`.
-- Smart poenters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bendengs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::streng_view`.
+- Deducción de tipo `auto`.
+- Bucles `for` basados en rango: `for (auto& item : container)`.
+- Punteros inteligentes: `std::unique_ptr`, `std::shared_ptr` — evita `new`/`delete` crudos.
+- Enlazados estructurados: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-# ## Compilation
+### Compilación
 
-- `gcc maen.c -o maen` compiles C.
-- `g++ -std=c++20 -Wall maen.cpp -o maen` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is el/la styard build-system generator para larger projects.
+- `gcc main.c -o main` compila C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compila C++.
+- `make` automatiza construcciones de múltiples archivos mediante un `Makefile`.
+- `cmake` es el generador de sistemas de construcción estándar para proyectos grandes.
 
 ---
 
-# # Swift
+## Swift
 
-Swift is a modern, statically typed programmeng idioma developed by Apple para iOS, macOS, watchOS, y tvOS. It is also available on Lenux.
+Swift es un lenguaje de programación moderno y estáticamente tipado desarrollado por Apple para iOS, macOS, watchOS y tvOS. También está disponible en Linux.
 
-# ## Conceptos básicos
+### Conceptos básicos
 
 ```swift
-let greeting = "Hello, world!"   // constant (immutable)
+let greeting = "Hello, world!"   // constante (inmutable)
 var counter  = 0                  // variable (mutable)
 counter += 1
 
 let pi: Double = 3.14159
 ```
 
-# ## Optionals
+### Opcionales
 
-An optional (`T?`) represents a value that may or may not be present.
+Un opcional (`T?`) representa un valor que puede o no estar presente.
 
 ```swift
 var name: String? = nil
 name = "Alice"
 
-// Safe unwrapping
+// Desempaquetado seguro
 if let n = name {
     print("Hello, \(n)")
 }
@@ -516,11 +516,11 @@ if let n = name {
 // Nil-coalescing
 let display = name ?? "Guest"
 
-// Optional chaining
+// Encadenamiento opcional
 let length = name?.count
 ```
 
-# ## Functions y closures
+### Funciones y closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-# ## Classes y structs
+### Clases y structs
 
-Swift has both classes (referencia types) y structs (value types). Prefer structs para simple datos models.
+Swift tiene tanto clases (tipos de referencia) como structs (tipos de valor). Prefiere structs para modelos de datos simples.
 
 ```swift
 struct Point {
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-# ## Protocols
+### Protocolos
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-# ## Codable (JSON encodeng / decodeng)
+### Codable (codificación / decodificación JSON)
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-# ## SwiftUI conceptos básicos
+### Conceptos básicos de SwiftUI
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-# ## Tooleng
+### Herramientas
 
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs el/la project.
-- `swift test` runs tests.
-- `swift package enit --type executable` creates a new executable project.
-- Xcode is el/la primary IDE para Apple-platparam desarrollo.
+- `swift build` compila un proyecto de Swift Package Manager.
+- `swift run` ejecuta el proyecto.
+- `swift test` ejecuta pruebas.
+- `swift package init --type executable` crea un nuevo proyecto ejecutable.
+- Xcode es el IDE principal para desarrollo en plataformas Apple.
 
 ---
 
-# # Codeng Fundamentos (Idioma-Agnostic)
+## Fundamentos de Programación (Independiente del Lenguaje)
 
-# ## Problem-solveng workflow
+### Flujo de trabajo para resolución de problemas
 
-1. Defene el/la enput, output, y constraents beparae writeng code.
-2. Break el/la task ento smaller sub-problems.
-3. Start con a simple correct solution, el/lan optimise if needed.
-4. Validate con tests, edge cases, y realistic enputs.
+1. Define la entrada, salida y restricciones antes de escribir código.
+2. Divide la tarea en subproblemas más pequeños.
+3. Comienza con una solución simple y correcta, luego optimiza si es necesario.
+4. Valida con pruebas, casos límite y entradas realistas.
 
-# ## Core datos structures
+### Estructuras de datos fundamentales
 
-- **Array / List**: ordered collection con fast endexed reads.
-- **Hash map / Diccionario**: key-value store con average O(1) lookup.
-- **Set**: unique values, useful para membership checks.
-- **Stack**: LIFO (last en, first out), common en parseng y recursion.
-- **Queue**: FIFO (first en, first out), useful para scheduleng y BFS.
-- **Tree / Graph**: hierarchical y red-style relationships.
+- **Array / Lista**: colección ordenada con lecturas indexadas rápidas.
+- **Hash map / Diccionario**: almacén clave-valor con búsqueda promedio O(1).
+- **Set**: valores únicos, útil para verificaciones de pertenencia.
+- **Pila (Stack)**: LIFO (último en entrar, primero en salir), común en análisis sintáctico y recursión.
+- **Cola (Queue)**: FIFO (primero en entrar, primero en salir), útil para planificación y BFS.
+- **Árbol / Grafo**: relaciones jerárquicas y de estilo red.
 
-# ## Algorithmic complexity (Big O)
+### Complejidad algorítmica (Big O)
 
-- Big O describes how runtime or memory grows con enput size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): benary search.
-  - O(n): sengle pass through datos.
-  - O(n log n): efficient sorteng.
-  - O(n²): nested loops over similar-size enputs.
-- Prefer clear, maentaenable code unless prdeileng shows a bottleneck.
+- Big O describe cómo crece el tiempo de ejecución o la memoria con el tamaño de la entrada.
+- Costos típicos:
+  - O(1): acceso en tiempo constante (ej. acceso a hash map).
+  - O(log n): búsqueda binaria.
+  - O(n): paso único a través de los datos.
+  - O(n log n): ordenamiento eficiente.
+  - O(n²): bucles anidados sobre entradas de tamaño similar.
+- Prefiere código claro y mantenible a menos que el profiling muestre un cuello de botella.
 
-# ## Debuggeng prenciples
+### Principios de depuración
 
-- Reproduce el/la bug reliably first.
-- Menimise el/la faileng case to isolate cause.
-- Inspect logs, enputs, y assumptions.
-- Change one variable at a time while testeng.
-- Add regression tests so el/la same bug does not return.
+- Reproduce el error de manera confiable primero.
+- Minimiza el caso fallido para aislar la causa.
+- Inspecciona registros, entradas y suposiciones.
+- Cambia una variable a la vez mientras pruebas.
+- Añade pruebas de regresión para que el mismo error no vuelva.
 
-# ## Testeng pyramid
+### Pirámide de pruebas
 
-- **Unit tests**: fast, focused checks de small logic units.
-- **Integration tests**: verify enteractions across modules/services.
-- **End-to-end tests**: validate user flows en realistic environments.
-- A balanced suite has many unit tests y fewer slow end-to-end tests.
+- **Pruebas unitarias**: verificaciones rápidas y enfocadas de pequeñas unidades lógicas.
+- **Pruebas de integración**: verifican interacciones entre módulos/servicios.
+- **Pruebas end-to-end**: validan flujos de usuario en entornos realistas.
+- Un conjunto equilibrado tiene muchas pruebas unitarias y menos pruebas end-to-end lentas.
 
-# ## Code quality practices
+### Prácticas de calidad de código
 
-- Use meanengful names y small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive y enterfaces explicit.
-- Use lenters/paramatters para consistency.
-- Review code para correctness, clarity, y seguridad.
+- Usa nombres significativos y funciones pequeñas y enfocadas.
+- Prefiere funciones puras (menos efectos secundarios) cuando sea práctico.
+- Mantén módulos cohesivos e interfaces explícitas.
+- Usa linters/formateadores para consistencia.
+- Revisa el código para corrección, claridad y seguridad.
 
-# ## Seguridad conceptos básicos para developers
+### Conceptos básicos de seguridad para desarrolladores
 
-- Validate y sanitise external enput.
-- Use parameterised queries to prevent SQL enjection.
-- Store passwords con strong hasheng algorithms (e.g., Argon2, bcrypt).
-- Avoid embeddeng secrets en source code.
-- Apply least privilege para credentials y services.
+- Valida y sanitiza la entrada externa.
+- Usa consultas parametrizadas para prevenir inyección SQL.
+- Almacena contraseñas con algoritmos de hashing fuertes (ej. Argon2, bcrypt).
+- Evita incrustar secretos en el código fuente.
+- Aplica el principio de menor privilegio para credenciales y servicios.

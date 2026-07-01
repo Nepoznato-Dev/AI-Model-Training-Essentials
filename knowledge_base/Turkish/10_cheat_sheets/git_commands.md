@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-# # Branchiçiçindedeg
+# # Branchİçinde
 
 ```bash
 # List branches
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-# # Undoiçiçindedeg Changes
+# # Undoİçinde Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-# # Stashiçiçindedeg
+# # Stashİçinde
 
 ```bash
 # Save work in progress
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-# # Viewiçiçindedeg & Searchiçiçindedeg
+# # Viewİçinde & Searchİçinde
 
 ```bash
 # Show commit details
@@ -348,9 +348,9 @@ __pycache__/
 
 ✅ **Do:**
 - Write clear, descriptive commit messages
-- Commit frequently ile logical groupiçiçindedegs
+- Commit frequently ile logical groupİçindes
 - Use branches için features/fixes
-- Pull beiçine startiçiçindedeg work
+- Pull beiçine startİçinde work
 - Review `git status` içiçindedeten
 
 ❌ **Don't:**
@@ -376,8 +376,8 @@ footer (optional)
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
-- `style`: Formattiçiçindedeg
-- `refactor`: Code restructuriçiçindedeg
+- `style`: Formattİçinde
+- `refactor`: Code restructurİçinde
 - `test`: Tests
 - `chore`: Maiçiçindedetenance
 

@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branchiçiçindedeg
+# ## Branchİçinde
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Mergiçiçindedeg ve rebasiçiçindedeg
+# ## Mergİçinde ve rebasİçinde
 
 ```bash
 # Merge feature branch into main
@@ -61,12 +61,12 @@ git rebase main
 
 1. Create a feature branch from `maiçiçindede`.
 2. Make commits on bu feature branch.
-3. Push bu branch: `git push origiçiçindede feature/new-thiçiçindedeg`.
+3. Push bu branch: `git push origiçiçindede feature/new-thİçinde`.
 4. Open a pull request on GitHub / GitLab.
 5. Address code review feedback ile additional commits.
 6. Merge bu PR once approved.
 
-# ## Undoiçiçindedeg changes
+# ## Undoİçinde changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text processiçiçindedeg
+# ## Text processİçinde
 
 ```bash
 cat file.txt                    # print file contents
@@ -230,12 +230,12 @@ VS Code is a lightweight, cross-platiçinm code editor ile a rich extension ecos
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
 - Extensions: içiçindedestall dil support (Python, Rust, Go, etc.), liçiçindedeters, ve içinmatters from bu Extensions panel (`Ctrl+Shift+X`).
-- `settiçiçindedegs.json` (user or workspace) controls editor behaviour.
+- `settİçindes.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures bu debugger.
 
 # ## JetBraiçiçindedes IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLve)
 
-- Smart code completion ve refactoriçiçindedeg are core features.
+- Smart code completion ve refactorİçinde are core features.
 - Run/debug configurations let you launch ve debug programs ile one click.
 - Built-içiçindede Git support içiçindede bu VCS menu.
 - `Shift+Shift` opens bu Search Everywhere dialog.
@@ -259,7 +259,7 @@ Docker packages applications ve buir dependencies içiçindedeto portable contai
 # ## Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Contaiçiçindedeer**: a runniçiçindedeg içiçindedestance içiçindede an image.
+- **Contaiçiçindedeer**: a runnİçinde içiçindedestance içiçindede an image.
 - **Registry**: a storage ve distribution service için images (Docker Hub, GHCR).
 - **Volume**: persistent storage that outlives a contaiçiçindedeer.
 

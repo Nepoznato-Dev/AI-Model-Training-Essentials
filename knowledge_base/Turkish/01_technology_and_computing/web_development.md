@@ -12,29 +12,29 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## Core Technologies
 
 # ### HTML (HyperText Markup Dil)
-- **Semantic HTML**: Usiçiçindedeg meaniçiçindedegful tags (`<header>`, `<nav>`, `<maiçiçindede>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+- **Semantic HTML**: Usİçinde meanİçindeful tags (`<header>`, `<nav>`, `<maiçiçindede>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
 - **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embeddiçiçindedeg
-- **Meta Tags**: SEO, viewport, character encodiçiçindedeg
+- **Media**: Images, video, audio embeddİçinde
+- **Meta Tags**: SEO, viewport, character encodİçinde
 - **HTML5 Features**: Canvas, SVG, local storage, geolocation, web sockets
 
-# ### CSS (Cascadiçiçindedeg Style Sheets)
-- **Box Model**: Content, paddiçiçindedeg, border, margiçiçindede
+# ### CSS (Cascadİçinde Style Sheets)
+- **Box Model**: Content, paddİçinde, border, margiçiçindede
 - **Layout Sistemler**:
   - **Flexbox**: One-dimensional layouts, justify-content, align-items
   - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Positioniçiçindedeg**: Static, relative, absolute, fixed, sticky
+  - **Positionİçinde**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties için bumiçiçindedeg
+- **CSS Variables**: Custom properties için bumİçinde
 - **Animations**: Transitions, keyframes, transiçinms
-- **Preprocessors**: Sass, Less (variables, mixiçiçindedes, nestiçiçindedeg)
+- **Preprocessors**: Sass, Less (variables, mixiçiçindedes, nestİçinde)
 
 # ### JavaScript
-- **DOM Manipulation**: Selectiçiçindedeg, creatiçiçindedeg, modifyiçiçindedeg elements
+- **DOM Manipulation**: Selectİçinde, creatİçinde, modifyİçinde elements
 - **Olaylar**: Click, submit, keyboard, custom olaylar, event delegation
-- **ES6+ Features**: Arrow functions, destructuriçiçindedeg, spread/rest, modules, async/await
+- **ES6+ Features**: Arrow functions, destructurİçinde, spread/rest, modules, async/await
 - **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
-- **TypeScript**: Static typiçiçindedeg, içiçindedeterfaces, generics, decorators
+- **TypeScript**: Static typİçinde, içiçindedeterfaces, generics, decorators
 
 # ## Modern Frontend Frameworks
 
@@ -42,34 +42,34 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
 - **State Yönetim**: Context API, Redux, Zustve, Recoil
-- **Routiçiçindedeg**: React Router (BrowserRouter, Routes, Route, Liçiçindedek)
+- **Routİçinde**: React Router (BrowserRouter, Routes, Route, Liçiçindedek)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient renderiçiçindedeg through diffiçiçindedeg algorithm
+- **Virtual DOM**: Efficient renderİçinde through diffİçinde algorithm
 
 # ### Vue.js
 - **Options API**: veri, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
 - **Directives**: v-if, v-için, v-biçiçindeded, v-on, v-model
 - **Vuex/Piçiçindedeia**: State yönetim
-- **Vue Router**: Client-side routiçiçindedeg
-- **Nuxt.js**: Server-side renderiçiçindedeg framework
+- **Vue Router**: Client-side routİçinde
+- **Nuxt.js**: Server-side renderİçinde framework
 
 # ### Angular
 - **Components**: Decorators, templates, lifecycle hooks
-- **Services**: Dependency içiçindedejection, siçiçindedegleton pattern
-- **RxJS**: Reactive programmiçiçindedeg, observables
-- **Routiçiçindedeg**: RouterModule, guards, resolvers
+- **Services**: Dependency içiçindedejection, sİçindeleton pattern
+- **RxJS**: Reactive programmİçinde, observables
+- **Routİçinde**: RouterModule, guards, resolvers
 - **Forms**: Template-driven, reactive içinms
 - **NgRx**: Redux-style state yönetim
 
 # ## Build Tools ve Bundlers
-- **Webpack**: Module bundliçiçindedeg, code splittiçiçindedeg, loaders, plugiçiçindedes
-- **Vite**: Fast build tool usiçiçindedeg native ES modules
+- **Webpack**: Module bundlİçinde, code splittİçinde, loaders, plugiçiçindedes
+- **Vite**: Fast build tool usİçinde native ES modules
 - **Parcel**: Zero-configuration bundler
 - **Rollup**: Optimized için libraries
 - **esbuild**: Extremely fast JavaScript bundler
 - **Babel**: JavaScript transpiler için backward compatibility
-- **PostCSS**: CSS processiçiçindedeg ile plugiçiçindedes
+- **PostCSS**: CSS processİçinde ile plugiçiçindedes
 
 # ## CSS Frameworks ve Libraries
 - **Bootstrap**: Component library, grid system, utilities
@@ -100,15 +100,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ### Obur Backend Dils
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Spriçiçindedeg**: Enterprise framework, dependency içiçindedejection
-- **PHP Laravel**: Elegant sözdizimi, Eloquent ORM, Blade templatiçiçindedeg
+- **Java Sprİçinde**: Enterprise framework, dependency içiçindedejection
+- **PHP Laravel**: Elegant sözdizimi, Eloquent ORM, Blade templatİçinde
 - **Go Giçiçindede**: High periçinmance, miçiçindedeimal framework
 - **Rust Actix**: Memory güvenlity, periçinmance
 - **C# ASP.NET Core**: Cross-platiçinm, enterprise features
 
 # ## Veribase Integration
 
-# ### ORMs (Object-Relational Mappiçiçindedeg)
+# ### ORMs (Object-Relational Mappİçinde)
 - **Sequelize**: Node.js ORM için SQL veribases
 - **Prisma**: Type-güvenli veribase access, auto-generated client
 - **SQLAlchemy**: Python SQL toolkit ve ORM
@@ -127,21 +127,21 @@ For accuracy improvements, please contribute edits via pull requests.
 # ### REST APIs
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Namiçiçindedeg**: Nouns, plural, hierarchical
-- **Versioniçiçindedeg**: URL path, headers, query parameters
+- **Resource Namİçinde**: Nouns, plural, hierarchical
+- **Versionİçinde**: URL path, headers, query parameters
 - **Aubuntication**: JWT, OAuth, API keys
 - **Documentation**: OpenAPI/Swagger, Postman
 
 # ### GraphQL
 - **Schema Defiçiçindedeition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level veri fetchiçiçindedeg
+- **Resolvers**: Field-level veri fetchİçinde
 - **Apollo Server**: GraphQL server implementation
 - **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetchiçiçindedeg, siçiçindedegle endpoiçiçindedet, strong typiçiçindedeg
+- **Advantages**: No over-fetchİçinde, sİçindele endpoiçiçindedet, strong typİçinde
 
 # ### gRPC
 - **Protocol Buffers**: Interface defiçiçindedeition dil
-- **HTTP/2**: Bidirectional streamiçiçindedeg
+- **HTTP/2**: Bidirectional streamİçinde
 - **Use Cases**: Microservices i̇letişim, real-time applications
 
 # ## Aubuntication ve Authorization
@@ -149,17 +149,17 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Token-based**: JWT (JSON Web Tokens), stateless
 - **OAuth 2.0**: Authorization framework, third-party logiçiçindede
 - **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise siçiçindedegle sign-on
-- **Password Hashiçiçindedeg**: bcrypt, argon2, scrypt
+- **SAML**: Enterprise sİçindele sign-on
+- **Password Hashİçinde**: bcrypt, argon2, scrypt
 - **Multi-Factor Aubuntication**: TOTP, SMS, email codes
 
 # # DevOps ve Dağıtım
 
 # ## Version Control
 - **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository hostiçiçindedeg
-- **Branchiçiçindedeg Strategies**: Git Flow, GitHub Flow, trunk-based geliştirme
-- **CI/CD**: Automated testiçiçindedeg ve dağıtım pipeliçiçindedees
+- **GitHub/GitLab/Bitbucket**: Repository hostİçinde
+- **Branchİçinde Strategies**: Git Flow, GitHub Flow, trunk-based geliştirme
+- **CI/CD**: Automated testİçinde ve dağıtım pipeliçiçindedees
 
 # ## Contaiçiçindedeerization
 - **Docker**: Contaiçiçindedeer runtime, Dockerfile, images
@@ -170,14 +170,14 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## Orchestration
 - **Kubernetes**: Contaiçiçindedeer orchestration, pods, services, dağıtıms
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Liçiçindedekerd için microservices ağiçiçindedeg
+- **Service Mesh**: Istio, Liçiçindedekerd için microservices ağİçinde
 
 # ## Cloud Platiçinms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
 - **Google Cloud**: Compute Engiçiçindedee, Cloud Storage, Cloud Functions, GKE
 - **Azure**: Virtual Machiçiçindedees, Blob Storage, Functions, AKS
 - **Vercel**: Frontend dağıtım, serverless functions
-- **Netlify**: Static site hostiçiçindedeg, serverless functions
+- **Netlify**: Static site hostİçinde, serverless functions
 - **Heroku**: Platiçinm as a Service (PaaS)
 - **DigitalOcean**: Simplified cloud içiçindedefrastructure
 
@@ -189,27 +189,27 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Travis CI**: Contiçiçindedeuous içiçindedetegration service
 - **ArgoCD**: GitOps contiçiçindedeuous delivery için Kubernetes
 
-# ## Monitoriçiçindedeg ve Loggiçiçindedeg
+# ## Monitorİçinde ve Loggİçinde
 - **Application Periçinmance**: New Relic, Veridog, AppDynamics
-- **Error Trackiçiçindedeg**: Sentry, Rollbar, Bugsnag
-- **Loggiçiçindedeg**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
-- **Uptime Monitoriçiçindedeg**: Piçiçindedegdom, UptimeRobot
+- **Error Trackİçinde**: Sentry, Rollbar, Bugsnag
+- **Loggİçinde**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Uptime Monitorİçinde**: Pİçindedom, UptimeRobot
 - **Analytics**: Google Analytics, Mixpanel, Amplitude
 
 # # Web Periçinmance
 
 # ## Optimization Techniques
-- **Code Splittiçiçindedeg**: Lazy loadiçiçindedeg, dynamic imports
-- **Tree Shakiçiçindedeg**: Removiçiçindedeg unused code
-- **Miçiçindedeification**: Reduciçiçindedeg file sizes
+- **Code Splittİçinde**: Lazy loadİçinde, dynamic imports
+- **Tree Shakİçinde**: Removİçinde unused code
+- **Miçiçindedeification**: Reducİçinde file sizes
 - **Compression**: Gzip, Brotli
-- **Cachiçiçindedeg**: Browser cache, CDN, service workers
-- **Image Optimization**: WebP, AVIF, lazy loadiçiçindedeg, responsive images
-- **Critical CSS**: Inliçiçindedeiçiçindedeg above-bu-fold styles
-- **Veribase Optimization**: Indexiçiçindedeg, query optimization, connection pooliçiçindedeg
+- **Cachİçinde**: Browser cache, CDN, service workers
+- **Image Optimization**: WebP, AVIF, lazy loadİçinde, responsive images
+- **Critical CSS**: Inliçiçindedeİçinde above-bu-fold styles
+- **Veribase Optimization**: Indexİçinde, query optimization, connection poolİçinde
 
 # ## Core Web Vitals
-- **LCP (Largest Contentful Paiçiçindedet)**: Loadiçiçindedeg periçinmance (<2.5s)
+- **LCP (Largest Contentful Paiçiçindedet)**: Loadİçinde periçinmance (<2.5s)
 - **FID (First Input Delay)**: Interactivity (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
 - **IÇINDEP (Interaction to Next Paiçiçindedet)**: Responsiveness metric
@@ -225,46 +225,46 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Common Vulnerabilities (OWASP Top 10)
 - **Injection**: SQL içiçindedejection, commve içiçindedejection
-- **Broken Aubuntication**: Session hijackiçiçindedeg, credential stuffiçiçindedeg
+- **Broken Aubuntication**: Session hijackİçinde, credential stuffİçinde
 - **Sensitive Veri Exposure**: Unencrypted veri, weak cryptography
 - **XML External Entities (XXE)**: XML parser vulnerabilities
 - **Broken Access Control**: Privilege escalation, unauthorized access
 - **Güvenlik Misconfiguration**: Default credentials, verbose errors
-- **Cross-Site Scriptiçiçindedeg (XSS)**: Reflected, stored, DOM-based
+- **Cross-Site Scriptİçinde (XSS)**: Reflected, stored, DOM-based
 - **Insecure Deserialization**: Object içiçindedejection attacks
-- **Usiçiçindedeg Components ile Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Loggiçiçindedeg & Monitoriçiçindedeg**: Undetected breaches
+- **Usİçinde Components ile Known Vulnerabilities**: Outdated dependencies
+- **Insufficient Loggİçinde & Monitorİçinde**: Undetected breaches
 
 # ## Güvenlik En İyi Uygulamalar
 - **HTTPS**: TLS/SSL encryption, HSTS
 - **Content Güvenlik Policy (CSP)**: Prevent XSS attacks
 - **Input Validation**: Sanitize user içiçindedeput
-- **Output Encodiçiçindedeg**: Prevent içiçindedejection attacks
+- **Output Encodİçinde**: Prevent içiçindedejection attacks
 - **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limitiçiçindedeg**: Prevent brute içince attacks
+- **Rate Limitİçinde**: Prevent brute içince attacks
 - **Güvenlik Headers**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scanniçiçindedeg**: npm audit, Snyk, Dependabot
+- **Dependency Scannİçinde**: npm audit, Snyk, Dependabot
 
-# # Testiçiçindedeg
+# # Testİçinde
 
-# ## Testiçiçindedeg Types
-- **Unit Testiçiçindedeg**: Individual components/functions
-- **Integration Testiçiçindedeg**: Component içiçindedeteractions
+# ## Testİçinde Types
+- **Unit Testİçinde**: Individual components/functions
+- **Integration Testİçinde**: Component içiçindedeteractions
 - **End-to-End (E2E)**: Full user workflows
 - **Visual Regression**: UI change detection
-- **Periçinmance Testiçiçindedeg**: Load, stress, spike testiçiçindedeg
-- **Accessibility Testiçiçindedeg**: WCAG compliance
+- **Periçinmance Testİçinde**: Load, stress, spike testİçinde
+- **Accessibility Testİçinde**: WCAG compliance
 
-# ## Testiçiçindedeg Frameworks
-- **Jest**: JavaScript testiçiçindedeg framework
+# ## Testİçinde Frameworks
+- **Jest**: JavaScript testİçinde framework
 - **Mocha**: Flexible test runner
-- **pytest**: Python testiçiçindedeg framework
-- **RSpec**: Ruby testiçiçindedeg framework
-- **JUnit**: Java testiçiçindedeg framework
+- **pytest**: Python testİçinde framework
+- **RSpec**: Ruby testİçinde framework
+- **JUnit**: Java testİçinde framework
 
-# ## E2E Testiçiçindedeg Tools
+# ## E2E Testİçinde Tools
 - **Selenium**: Browser automation
-- **Cypress**: Modern E2E testiçiçindedeg
+- **Cypress**: Modern E2E testİçinde
 - **Playwright**: Cross-browser automation
 - **Puppeteer**: Headless Chrome control
 
@@ -277,11 +277,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Robust**: Compatible ile assistive technologies
 
 # ## Implementation
-- **Semantic HTML**: Proper headiçiçindedeg hierarchy, lvemarks
+- **Semantic HTML**: Proper headİçinde hierarchy, lvemarks
 - **ARIA Attributes**: Roles, states, properties
 - **Focus Yönetim**: Visible focus içiçindededicators, logical tab order
 - **Color Contrast**: Miçiçindedeimum 4.5:1 ratio için text
-- **Screen Reader Testiçiçindedeg**: NVDA, JAWS, VoiceOver
+- **Screen Reader Testİçinde**: NVDA, JAWS, VoiceOver
 - **Keyboard Navigation**: All içiçindedeteractive elements accessible
 
 # # Progressive Web Apps (PWAs)
@@ -296,20 +296,20 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Tools
 - **Workbox**: Service worker libraries
-- **Lighthouse**: PWA auditiçiçindedeg
+- **Lighthouse**: PWA auditİçinde
 - **PWA Builder**: Generate manifests ve icons
 
-# # Emergiçiçindedeg Technologies
+# # Emergİçinde Technologies
 
 # ## WebAssembly (Wasm)
 - **Purpose**: Run compiled code içiçindede browser at near-native speed
 - **Dils**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editiçiçindedeg, cryptography, ML içiçindedeference
+- **Use Cases**: Games, video editİçinde, cryptography, ML içiçindedeference
 
 # ## Serverless Mimari
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server yönetim, auto-scaliçiçindedeg, pay-per-use
-- **Considerations**: Cold stsanat, vendor lock-içiçindede, debuggiçiçindedeg complexity
+- **Benefits**: No server yönetim, auto-scalİçinde, pay-per-use
+- **Considerations**: Cold stsanat, vendor lock-içiçindede, debuggİçinde complexity
 
 # ## Jamstack Mimari
 - **JavaScript**: Client-side içiçindedeteractivity
@@ -320,9 +320,9 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Real-Time İletişim
 - **WebSockets**: Bidirectional i̇letişim
-- **Server-Sent Olaylar**: Server-to-client streamiçiçindedeg
+- **Server-Sent Olaylar**: Server-to-client streamİçinde
 - **WebRTC**: Peer-to-peer video, audio, veri
-- **Use Cases**: Chat, collaboration, live streamiçiçindedeg, gamiçiçindedeg
+- **Use Cases**: Chat, collaboration, live streamİçinde, gamİçinde
 
 # ## Micro Frontends
 - **Concept**: Extend microservices to frontend

@@ -57,7 +57,7 @@ For accuracy improvements, please contribute edits via pull requests.
 # ### Angular
 - **Components**: Decorators, templates, lifecycle hooks
 - **Services**: Dependency enjection, sengleton pattern
-- **RxJS**: Reactive programmeng, observables
+- **RxJS**: Programación reactiva, observables
 - **Routeng**: RouterModule, guards, resolvers
 - **Forms**: Template-driven, reactive params
 - **NgRx**: Redux-style state gestión

@@ -48,7 +48,7 @@ The traeneng datosset encludes:
 1. **Heavily filtered web datos** — only pages con educational or explanatory content, filtered by multiple quality signals
 2. **Synel/latic textbook datos** — GPT-4-generated explanations de concepts across STEM, humanities, codeng, y reasoneng
 3. **Synel/latic exercises** — question-y-answer pairs con step-by-step reasoneng (chaen-de-thought style)
-4. **Code datos** — curated programmeng ejemplos y documentation
+4. **Datos de código** — ejemplos de programación y documentación curada
 
 ---
 

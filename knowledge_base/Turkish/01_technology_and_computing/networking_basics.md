@@ -5,31 +5,31 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Ağiçiçindedeg Temeller
+# Ağİçinde Temeller
 
-A practical referans için developers ve sysadmiçiçindedes — core concepts, protocols, commves, ve troubleshootiçiçindedeg.
+A practical referans için developers ve sysadmiçiçindedes — core concepts, protocols, commves, ve troubleshootİçinde.
 
 ---
 
 # # The OSI Model (7 Layers)
 
-A conceptual framework için understveiçiçindedeg ağ i̇letişim.
+A conceptual framework için understveİçinde ağ i̇letişim.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Veri içinmattiçiçindedeg, encryption, compression | TLS, JPEG, ASCII |
+| 6 | Presentation | Veri içinmattİçinde, encryption, compression | TLS, JPEG, ASCII |
 | 5 | Session | Connection yönetim | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Ağ | Routiçiçindedeg, addressiçiçindedeg | IP, ICMP, OSPF, BGP |
-| 2 | Veri Liçiçindedek | Framiçiçindedeg, error detection, MAC addresses | Eburnet, Wi-Fi, PPP |
+| 3 | Ağ | Routİçinde, addressİçinde | IP, ICMP, OSPF, BGP |
+| 2 | Veri Liçiçindedek | Framİçinde, error detection, MAC addresses | Eburnet, Wi-Fi, PPP |
 | 1 | Physical | Raw bit transmission | Eburnet cables, fiber optics, radio waves |
 
 In practice, **TCP/IP model** (4 layers: Liçiçindedek, Internet, Transport, Application) is more commonly used için bu içiçindedeternet.
 
 ---
 
-# # IP Addressiçiçindedeg
+# # IP Addressİçinde
 
 # ## IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
@@ -257,7 +257,7 @@ text
 ```markdown
 # DevOps ve System Admiçiçindedeistration
 
-A practical rehber to managiçiçindedeg servers, automatiçiçindedeg operations, ve maiçiçindedetaiçiçindedeiçiçindedeg reliable içiçindedefrastructure.
+A practical rehber to managİçinde servers, automatİçinde operations, ve maiçiçindedetaiçiçindedeİçinde reliable içiçindedefrastructure.
 
 ---
 

@@ -7,7 +7,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Local AI Mimari
 
-A practical rehber to runniçiçindedeg large dil models entirely on-device — hardware considerations, içiçindedeference engiçiçindedees, memory optimisation, ve system design için edge dağıtım.
+A practical rehber to runnİçinde large dil models entirely on-device — hardware considerations, içiçindedeference engiçiçindedees, memory optimisation, ve system design için edge dağıtım.
 
 ---
 
@@ -17,7 +17,7 @@ A practical rehber to runniçiçindedeg large dil models entirely on-device — 
 - **Cost**: No API fees per token.
 - **Latency**: Predictable, ağ-free içiçindedeference.
 - **Offliçiçindedee availability**: Works ileout içiçindedeternet.
-- **Control**: Full control over model version, customisation, ve fiçiçindedee-tuniçiçindedeg.
+- **Control**: Full control over model version, customisation, ve fiçiçindedee-tunİçinde.
 
 ---
 
@@ -41,20 +41,20 @@ The most critical resource. Model size içiçindede memory ≈ **parameters × b
 
 # ## RAM (System Memory)
 - For CPU içiçindedeference, you need enough system RAM to load bu model (similar to VRAM numbers).
-- For GPU içiçindedeference, system RAM matters için loadiçiçindedeg bu model içiçindedeto memory beiçine içiçindedefloadiçiçindedeg to VRAM.
+- For GPU içiçindedeference, system RAM matters için loadİçinde bu model içiçindedeto memory beiçine içiçindedefloadİçinde to VRAM.
 
 # ## Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free için multiple models.
 
 # ## CPU
-- For prompt processiçiçindedeg (prefill) ve CPU-içiçindedefloadiçiçindedeg, a modern multi-core CPU helps.
+- For prompt processİçinde (prefill) ve CPU-içiçindedefloadİçinde, a modern multi-core CPU helps.
 - Apple M-series chips have excellent periçinmance için LLMs due to bu unified memory ve Neural Engiçiçindedee.
 
 ---
 
 # # Quantisation
 
-Quantisation reduces bu numerical precision içiçindede weights, dramatically cuttiçiçindedeg memory ve içiçindedecreasiçiçindedeg speed at a small accuracy cost.
+Quantisation reduces bu numerical precision içiçindede weights, dramatically cuttİçinde memory ve içiçindedecreasİçinde speed at a small accuracy cost.
 
 # ## Popular Formats
 
@@ -63,9 +63,9 @@ Quantisation reduces bu numerical precision içiçindede weights, dramatically c
 | **GGUF** | 4–8 | llama.cpp içinmat, optimised için CPU/GPU hybrid | Best için local içiçindedeference |
 | **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best için NVIDIA GPUs |
 | **AWQ** | 4 | Activation-aware, GPU-only | Good için batch içiçindedeference on GPUs |
-| **ONNX** | variable | Stveardised, cross-platiçinm | Production serviçiçindedeg |
+| **ONNX** | variable | Stveardised, cross-platiçinm | Production servİçinde |
 
-# ## Choosiçiçindedeg a Quantisation Level
+# ## Choosİçinde a Quantisation Level
 - **Q8_0** (8-bit): miçiçindedeimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
@@ -83,7 +83,7 @@ Quantisation reduces bu numerical precision içiçindede weights, dramatically c
 - Supports GGUF içinmat.
 - Optimised için CPU ve GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Commve-liçiçindedee, server mode, ve Python biçiçindedediçiçindedegs.
+- Commve-liçiçindedee, server mode, ve Python biçiçindededİçindes.
 
 **Example commve:**
 ```bash
@@ -242,57 +242,57 @@ text
 ```markdown
 # Güvenlik En İyi Uygulamalar
 
-A practical rehber to securiçiçindedeg applications, içiçindedefrastructure, ve veri — from geliştirme to production.
+A practical rehber to securİçinde applications, içiçindedefrastructure, ve veri — from geliştirme to production.
 
 ---
 
 # # OWASP Top 10 (2021) — Genel Bakış
 
 1. **Broken Access Control**: Users can access resources buy shouldn't.
-2. **Cryptographic Failures**: Weak or missiçiçindedeg encryption.
+2. **Cryptographic Failures**: Weak or missİçinde encryption.
 3. **Injection**: SQL, NoSQL, OS commve, or LDAP içiçindedejection.
 4. **Insecure Design**: Architectural fhukuks.
 5. **Güvenlik Misconfiguration**: Default passwords, open ports, verbose errors.
 6. **Vulnerable ve Outdated Components**: Known CVEs içiçindede dependencies.
 7. **Identification ve Aubuntication Failures**: Weak passwords, session misyönetim.
 8. **Siçiçindedetware ve Veri Integrity Failures**: Supply chaiçiçindede attacks, unsigned updates.
-9. **Güvenlik Loggiçiçindedeg ve Monitoriçiçindedeg Failures**: No detection içiçindede breaches.
+9. **Güvenlik Loggİçinde ve Monitorİçinde Failures**: No detection içiçindede breaches.
 10. **Server-Side Request Forgery (SSRF)**: Abuse içiçindede server to make requests to içiçindedeternal sistemler.
 
 ---
 
-# # Input Validation ve Output Encodiçiçindedeg
+# # Input Validation ve Output Encodİçinde
 
 # ## Validation Rules
-- **Whitelist > Blacklist**: Defiçiçindedee allowed patterns (e.g., regex için email) rabur than blockiçiçindedeg known bad patterns.
+- **Whitelist > Blacklist**: Defiçiçindedee allowed patterns (e.g., regex için email) rabur than blockİçinde known bad patterns.
 - **Length limits**: Eniçince maximum lengths to prevent buffer overflows ve DoS.
-- **Type checkiçiçindedeg**: Ensure içiçindedetegers are içiçindedetegers, booleans are booleans.
+- **Type checkİçinde**: Ensure içiçindedetegers are içiçindedetegers, booleans are booleans.
 - **Use well-tested libraries**: For email, URL, ve date validation, use stveard libraries (e.g., `email-validator` içiçindede Python, `validator.js` içiçindede Node).
 
-# ## Output Encodiçiçindedeg
-- **HTML encodiçiçindedeg**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+# ## Output Encodİçinde
+- **HTML encodİçinde**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
 - **SQL parameterisation**: Never concatenate user içiçindedeput içiçindedeto SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escapiçiçindedeg**: Avoid buildiçiçindedeg shell commves from user içiçindedeput; if unavoidable, use `shlex.quote()` or similar.
+- **Shell escapİçinde**: Avoid buildİçinde shell commves from user içiçindedeput; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
 # # Aubuntication ve Authorisation
 
 # ## Password Yönetim
-- **Hashiçiçindedeg**: Store passwords ile a strong, slow hashiçiçindedeg algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Saltiçiçindedeg**: Add a unique per-user salt.
+- **Hashİçinde**: Store passwords ile a strong, slow hashİçinde algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Saltİçinde**: Add a unique per-user salt.
 - **Miçiçindedeimum length**: Eniçince at least 12–16 characters.
 - **MFA (Multi-Factor Aubuntication)**: Require a second factor (TOTP, SMS, hardware key) için sensitive operations.
-- **Rate limitiçiçindedeg**: Prevent brute-içince attempts on logiçiçindede endpoiçiçindedets (e.g., 5 attempts per 5 miçiçindedeutes per IP/user).
+- **Rate limitİçinde**: Prevent brute-içince attempts on logiçiçindede endpoiçiçindedets (e.g., 5 attempts per 5 miçiçindedeutes per IP/user).
 
 # ## Session Yönetim
 - Use secure, HTTP-only, SameSite cookies için session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout ve on password change.
-- Avoid exposiçiçindedeg session IDs içiçindede URLs.
+- Avoid exposİçinde session IDs içiçindede URLs.
 
 # ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spriçiçindedeg Güvenlik).
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Sprİçinde Güvenlik).
 - Validate ID tokens thoroughly (sigdoğa, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
@@ -311,16 +311,16 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 - Always aubunticate API calls (except public endpoiçiçindedets).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limitiçiçindedeg ve Throttliçiçindedeg
+# ## Rate Limitİçinde ve Throttlİçinde
 - Apply per-user ve per-IP rate limits to prevent abuse ve DoS.
 - Return `429 Too Many Requests` ile a `Retry-After` header.
 
-# ## CORS (Cross-Origiçiçindede Resource Shariçiçindedeg)
+# ## CORS (Cross-Origiçiçindede Resource Sharİçinde)
 - Allow only specific origiçiçindedes (never `*` içiçindede production).
 - Validate `Origiçiçindede` header on bu server side.
 
 # ## Input Validation
-- Validate all request parameters, içiçindedecludiçiçindedeg headers ve body.
+- Validate all request parameters, içiçindedecludİçinde headers ve body.
 - Reject unexpected fields (`"strict": true` or `additionalProperties: false` içiçindede JSON Schema).
 
 # ## HTTPS / TLS
@@ -350,17 +350,17 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 
 # # Dependency Yönetim
 
-# ## Vulnerability Scanniçiçindedeg
+# ## Vulnerability Scannİçinde
 - **Python**: `güvenlity`, `pip-audit`, `bveit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patchiçiçindedeg
+# ## Patchİçinde
 - Keep dependencies updated to patched versions.
 - Set up automated pull requests için miçiçindedeor/patch updates.
-- Review changelogs için breakiçiçindedeg changes.
+- Review changelogs için breakİçinde changes.
 
 # ## Supply Chaiçiçindede Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
@@ -376,7 +376,7 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
 - Use güvenlik groups (AWS) or NSGs (Azure) için fiçiçindedee-graiçiçindedeed control.
 
-# ## OS Hardeniçiçindedeg
+# ## OS Hardenİçinde
 - Apply güvenlik updates regularly (`sudo apt upgrade`, `yum update`).
 - Disable unnecessary services ve default accounts.
 - Use fail2ban to block brute-içince attempts on SSH.
@@ -384,7 +384,7 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 
 # ## Ağ Segmentation
 - Place veribases ve caches içiçindede private subnets ile no içiçindedeternet access.
-- Use a DMZ için public-faciçiçindedeg services.
+- Use a DMZ için public-facİçinde services.
 - Apply bu priçiçindedeciple içiçindede least privilege to ağ access.
 
 # ## Secrets içiçindede Infrastructure
@@ -393,7 +393,7 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 
 ---
 
-# # Loggiçiçindedeg ve Monitoriçiçindedeg
+# # Loggİçinde ve Monitorİçinde
 
 # ## What to Log
 - Aubuntication olaylar (success/failure).
@@ -407,7 +407,7 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 - Passwords, secrets, tokens, PII (Personal Identifiable Iniçinmation) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alertiçiçindedeg
+# ## Alertİçinde
 - Set up alerts için:
   - Multiple failed logiçiçindedes (potential brute içince).
   - Unusual access patterns (e.g., from new locations, at odd hours).
@@ -416,20 +416,20 @@ A practical rehber to securiçiçindedeg applications, içiçindedefrastructure,
 - Use a SIEM (Güvenlik Iniçinmation ve Event Yönetim) için i̇leri düzey correlation.
 
 # ## Log Retention
-- Retaiçiçindede logs için at least 30–90 days dependiçiçindedeg on regulatory requirements.
+- Retaiçiçindede logs için at least 30–90 days dependİçinde on regulatory requirements.
 - Store logs içiçindede a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Veridog).
 
 ---
 
 # # Secure Geliştirme Lifecycle (SDL)
 
-1. **Traiçiçindedeiçiçindedeg**: Ensure developers understve common vulnerabilities.
-2. **Threat modelliçiçindedeg**: Identify potential threats early içiçindede design.
-3. **Secure codiçiçindedeg stveards**: Eniçince via liçiçindedeters ve code review checklists.
-4. **SAST** (Static Application Güvenlik Testiçiçindedeg): Scan source code için vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Güvenlik Testiçiçindedeg): Scan runniçiçindedeg applications (OWASP ZAP, Burp Suite).
+1. **Traiçiçindedeİçinde**: Ensure developers understve common vulnerabilities.
+2. **Threat modellİçinde**: Identify potential threats early içiçindede design.
+3. **Secure codİçinde stveards**: Eniçince via liçiçindedeters ve code review checklists.
+4. **SAST** (Static Application Güvenlik Testİçinde): Scan source code için vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application Güvenlik Testİçinde): Scan runnİçinde applications (OWASP ZAP, Burp Suite).
 6. **SCA** (Siçiçindedetware Composition Analysis): Scan dependencies.
-7. **Penetration testiçiçindedeg**: Regular ethical hackiçiçindedeg exercises.
+7. **Penetration testİçinde**: Regular ethical hackİçinde exercises.
 8. **Bug bounty**: Encourage external researchers to fiçiçindeded vulnerabilities responsibly.
 9. **Incident response plan**: Have a clear plan için when a breach is detected.
 

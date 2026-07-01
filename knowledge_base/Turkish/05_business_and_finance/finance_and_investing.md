@@ -5,23 +5,23 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Fiçiçindedeance ve Investiçiçindedeg
+# Fiçiçindedeance ve Investİçinde
 
 # # Personal Fiçiçindedeance Temeller
 
-# ## Fiçiçindedeancial Planniçiçindedeg Temeller
-- **Budgetiçiçindedeg**: Track içiçindedecome ve expenses, 50/30/20 rule (needs/wants/saviçiçindedegs)
-- **Emergency Fund**: 3-6 months içiçindede liviçiçindedeg expenses içiçindede liquid account
+# ## Fiçiçindedeancial Plannİçinde Temeller
+- **Budgetİçinde**: Track içiçindedecome ve expenses, 50/30/20 rule (needs/wants/savİçindes)
+- **Emergency Fund**: 3-6 months içiçindede livİçinde expenses içiçindede liquid account
 - **Net Worth**: Assets miçiçindedeus liabilities, track over time
 - **Cash Flow Yönetim**: Money içiçindede vs. money out, positive cash flow essential
 - **Fiçiçindedeancial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-# ## Bankiçiçindedeg Products
-- **Checkiçiçindedeg Accounts**: Daily transactions, debit cards, bill payments
-- **Saviçiçindedegs Accounts**: Interest-beariçiçindedeg, limited iledrawals
-- **Money Market Accounts**: Higher içiçindedeterest, check-writiçiçindedeg privileges
+# ## Bankİçinde Products
+- **Checkİçinde Accounts**: Daily transactions, debit cards, bill payments
+- **Savİçindes Accounts**: Interest-bearİçinde, limited iledrawals
+- **Money Market Accounts**: Higher içiçindedeterest, check-writİçinde privileges
 - **Certificates içiçindede Deposit (CDs)**: Fixed term, fixed rate, early iledrawal penalty
-- **High-Yield Saviçiçindedegs**: Onliçiçindedee banks, competitive rates
+- **High-Yield Savİçindes**: Onliçiçindedee banks, competitive rates
 
 # ## Credit ve Debt
 - **Credit Score**: FICO (300-850), factors: payment tarih, utilization, length, mix, içiçindedequiries
@@ -39,8 +39,8 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## Asset Classes
 
 # ### Equities (Stocks)
-- **Common Stock**: Ownership share, votiçiçindedeg rights, dividends
-- **Preferred Stock**: Fixed dividends, priority içiçindede bankruptcy, no votiçiçindedeg
+- **Common Stock**: Ownership share, votİçinde rights, dividends
+- **Preferred Stock**: Fixed dividends, priority içiçindede bankruptcy, no votİçinde
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
 - **Investment Styles**: Growth, value, blend, içiçindedecome
 - **Sectors**: Teknoloji, sağlık hizmetleri, fiçiçindedeancials, consumer, içiçindededustrial, energy, utilities, materials, real estate, i̇letişim services
@@ -51,7 +51,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Corporate Bonds**: Investment grade, high-yield/junk
 - **Bond Characteristics**: Face value, coupon rate, maturity, yield
 - **Interest Rate Risk**: Bond prices move içiçindedeversely to rates
-- **Credit Risk**: Default probability, credit ratiçiçindedegs (AAA to D)
+- **Credit Risk**: Default probability, credit ratİçindes (AAA to D)
 
 # ### Cash ve Cash Equivalents
 - **Treasury Bills**: Short-term government debt
@@ -62,7 +62,7 @@ For accuracy improvements, please contribute edits via pull requests.
 # ### Real Estate
 - **Direct Ownership**: Physical properties, rental içiçindedecome
 - **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfundiçiçindedeg**: Platiçinm-based property içiçindedevestment
+- **Real Estate Crowdfundİçinde**: Platiçinm-based property içiçindedevestment
 - **Characteristics**: Income generation, appreciation, içiçindedeflation hedge
 
 # ### Alternative Investments
@@ -83,18 +83,18 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ### Exchange-Traded Funds (ETFs)
 - Trade like stocks throughout day
-- Typically passive, içiçindededex-trackiçiçindedeg
+- Typically passive, içiçindededex-trackİçinde
 - Lower expense ratios than mutual funds
 - Tax-efficient structure
 - Örnekler: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
 # ### Index Funds
-- Passive yönetim trackiçiçindedeg specific içiçindededex
+- Passive yönetim trackİçinde specific içiçindededex
 - Low costs, broad diversification
 - Örnekler: Total stock market, S&P 500, içiçindedeternational
 
 # ### Annuities
-- Insurance products providiçiçindedeg içiçindedecome streams
+- Insurance products providİçinde içiçindedecome streams
 - Fixed, variable, or içiçindededexed returns
 - Immediate or deferred payout
 - Tax-deferred growth
@@ -109,23 +109,23 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Correlation**: How assets move relative to each obur
 
 # ## Investment Approaches
-- **Passive Investiçiçindedeg**: Index funds, buy-ve-hold, low costs
-- **Active Investiçiçindedeg**: Stock pickiçiçindedeg, market timiçiçindedeg, higher costs
-- **Dollar-Cost Averagiçiçindedeg**: Invest fixed amounts regularly regardless içiçindede price
-- **Value Investiçiçindedeg**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Investiçiçindedeg**: Focus on companies ile above-average growth
-- **Income Investiçiçindedeg**: Prioritize dividends ve içiçindedeterest payments
-- **ESG Investiçiçindedeg**: Çevresel, social, governance factors
+- **Passive Investİçinde**: Index funds, buy-ve-hold, low costs
+- **Active Investİçinde**: Stock pickİçinde, market timİçinde, higher costs
+- **Dollar-Cost Averagİçinde**: Invest fixed amounts regularly regardless içiçindede price
+- **Value Investİçinde**: Buy undervalued securities (Warren Buffett approach)
+- **Growth Investİçinde**: Focus on companies ile above-average growth
+- **Income Investİçinde**: Prioritize dividends ve içiçindedeterest payments
+- **ESG Investİçinde**: Çevresel, social, governance factors
 
 # ## Risk Yönetim
-- **Risk Tolerance**: Ability ve williçiçindedegness to lose money
+- **Risk Tolerance**: Ability ve willİçindeness to lose money
 - **Time Horizon**: When you need bu money affects risk capacity
-- **Position Siziçiçindedeg**: Don't concentrate too much içiçindede siçiçindedegle içiçindedevestment
+- **Position Sizİçinde**: Don't concentrate too much içiçindede sİçindele içiçindedevestment
 - **Stop-Loss Orders**: Automatic sell at predetermiçiçindedeed price
-- **Rebalanciçiçindedeg**: Restore target allocation periodically
-- **Hedgiçiçindedeg**: Options, içiçindedeverse ETFs to reduce downside
+- **Rebalancİçinde**: Restore target allocation periodically
+- **Hedgİçinde**: Options, içiçindedeverse ETFs to reduce downside
 
-# # Retirement Planniçiçindedeg
+# # Retirement Plannİçinde
 
 # ## Retirement Accounts (US)
 
@@ -138,15 +138,15 @@ For accuracy improvements, please contribute edits via pull requests.
 # ### Roth IRA
 - After-tax contributions
 - Tax-free growth ve iledrawals
-- No RMDs duriçiçindedeg lifetime
+- No RMDs durİçinde lifetime
 - Income limits için eligibility
 
 # ### 401(k) Plans
 - Employer-sponsored retirement plans
 - Pre-tax or Roth (after-tax) options
-- Employer matchiçiçindedeg (free money)
+- Employer matchİçinde (free money)
 - Higher contribution limits than IRAs
-- Vestiçiçindedeg schedules için employer contributions
+- Vestİçinde schedules için employer contributions
 
 # ### Obur Plans
 - **403(b)**: Non-priçiçindedeit organizations
@@ -154,11 +154,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **SEP IRA**: Self-employed, small busiçiçindedeess
 - **Solo 401(k)**: Self-employed ile no employees
 
-# ## Retirement Planniçiçindedeg Concepts
+# ## Retirement Plannİçinde Concepts
 - **Replacement Ratio**: 70-80% içiçindede pre-retirement içiçindedecome typically needed
 - **Social Güvenlik**: Government benefit, claim between 62-70
 - **Pension Plans**: Defiçiçindedeed benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spendiçiçindedeg, bucket strategy
+- **Withdrawal Strategies**: 4% rule, dynamic spendİçinde, bucket strategy
 - **Sağlık Hizmetleri Costs**: Medicare, supplemental içiçindedesurance, long-term care
 
 # # Market Mechanics
@@ -173,15 +173,15 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Limit Order**: Execute only at specified price or better
 - **Stop Order**: Becomes market order when stop price reached
 - **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailiçiçindedeg Stop**: Stop price follows stock price movement
+- **Trailİçinde Stop**: Stop price follows stock price movement
 
-# ## Tradiçiçindedeg Concepts
-- **Bid-Ask Spread**: Difference between buyiçiçindedeg ve selliçiçindedeg price
+# ## Tradİçinde Concepts
+- **Bid-Ask Spread**: Difference between buyİçinde ve sellİçinde price
 - **Volume**: Number içiçindede shares traded
-- **Liquidity**: Ease içiçindede buyiçiçindedeg/selliçiçindedeg ileout affectiçiçindedeg price
+- **Liquidity**: Ease içiçindede buyİçinde/sellİçinde ileout affectİçinde price
 - **Volatility**: Price fluctuation magnitude
-- **Short Selliçiçindedeg**: Borrow shares, sell, hope to buy back cheaper
-- **Margiçiçindede Tradiçiçindedeg**: Borrow money to içiçindedevest, amplified gaiçiçindedes/losses
+- **Short Sellİçinde**: Borrow shares, sell, hope to buy back cheaper
+- **Margiçiçindede Tradİçinde**: Borrow money to içiçindedevest, amplified gaiçiçindedes/losses
 
 # ## Market Indicators
 - **S&P 500**: 500 largest US companies
@@ -196,18 +196,18 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## Fiçiçindedeancial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operatiçiçindedeg, içiçindedevestiçiçindedeg, fiçiçindedeanciçiçindedeg activities
+- **Cash Flow Statement**: Operatİçinde, içiçindedevestİçinde, fiçiçindedeancİçinde activities
 
 # ## Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earniçiçindedegs): Share price / earniçiçindedegs per share
+  - P/E (Price-to-Earnİçindes): Share price / earnİçindes per share
   - P/B (Price-to-Book): Market value / book value
   - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earniçiçindedegs beiçine içiçindedeterest, taxes, depreciation, amortization
+  - EV/EBITDA: Enterprise value / earnİçindes beiçine içiçindedeterest, taxes, depreciation, amortization
 
 - **Priçiçindedeitability Ratios**:
   - Gross Margiçiçindede: Gross priçiçindedeit / revenue
-  - Operatiçiçindedeg Margiçiçindede: Operatiçiçindedeg içiçindedecome / revenue
+  - Operatİçinde Margiçiçindede: Operatİçinde içiçindedecome / revenue
   - Net Margiçiçindede: Net içiçindedecome / revenue
   - ROE (Return on Equity): Net içiçindedecome / shareholders' equity
   - ROA (Return on Assets): Net içiçindedecome / total assets
@@ -229,22 +229,22 @@ For accuracy improvements, please contribute edits via pull requests.
 # # Technical Analysis
 
 # ## Chart Types
-- **Liçiçindedee Chsanat**: Closiçiçindedeg prices over time
+- **Liçiçindedee Chsanat**: Closİçinde prices over time
 - **Bar Chsanat**: Open, high, low, close (OHLC)
 - **Cvelestick Chsanat**: Visual OHLC, bullish/bearish patterns
 
 # ## Trend Analysis
-- **Support**: Price level where buyiçiçindedeg pressure exceeds selliçiçindedeg
-- **Resistance**: Price level where selliçiçindedeg pressure exceeds buyiçiçindedeg
+- **Support**: Price level where buyİçinde pressure exceeds sellİçinde
+- **Resistance**: Price level where sellİçinde pressure exceeds buyİçinde
 - **Trendliçiçindedees**: Connect highs or lows to show direction
-- **Moviçiçindedeg Averages**: SMA (simple), EMA (exponential)
+- **Movİçinde Averages**: SMA (simple), EMA (exponential)
 - **Golden Cross**: Short MA crosses above long MA (bullish)
 - **Death Cross**: Short MA crosses below long MA (bearish)
 
 # ## Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Moviçiçindedeg Average Convergence Divergence
-- **Bolliçiçindedeger Bves**: Volatility bves around moviçiçindedeg average
+- **MACD**: Movİçinde Average Convergence Divergence
+- **Bollİçindeer Bves**: Volatility bves around movİçinde average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
 - **Fibonacci Retracement**: Support/resistance levels based on ratios
 
@@ -256,20 +256,20 @@ For accuracy improvements, please contribute edits via pull requests.
 # # Tax Considerations
 
 # ## Investment Taxes
-- **Capital Gaiçiçindedes**: Priçiçindedeit from selliçiçindedeg içiçindedevestments
+- **Capital Gaiçiçindedes**: Priçiçindedeit from sellİçinde içiçindedevestments
   - Short-term: Held <1 year, taxed as ordiçiçindedeary içiçindedecome
   - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
   - Qualified: Lower tax rates
   - Ordiçiçindedeary: Taxed as içiçindedecome
 - **Interest Income**: Generally taxed as ordiçiçindedeary içiçindedecome
-- **Tax-Loss Harvestiçiçindedeg**: Sell losers to içiçindedefset gaiçiçindedes
+- **Tax-Loss Harvestİçinde**: Sell losers to içiçindedefset gaiçiçindedes
 
 # ## Tax-Advantaged Accounts
 - **Traditional IRA/401(k)**: Tax deduction now, taxed later
 - **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Saviçiçindedegs Account)**: Triple tax advantage için medical expenses
-- **529 Plans**: Tax-advantaged education saviçiçindedegs
+- **HSA (Health Savİçindes Account)**: Triple tax advantage için medical expenses
+- **529 Plans**: Tax-advantaged education savİçindes
 
 # ## Tax Efficiency Strategies
 - Asset location (which accounts hold which içiçindedevestments)
@@ -281,67 +281,67 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # ## Macroeconomic Indicators
 - **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasiçiçindedeg power erosion
+- **Inflation**: CPI, PCE, purchasİçinde power erosion
 - **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowiçiçindedeg costs
-- **Consumer Confidence**: Spendiçiçindedeg sentiment
-- **Manufacturiçiçindedeg Veri**: PMI, içiçindededustrial production
+- **Interest Rates**: Federal Reserve policy, borrowİçinde costs
+- **Consumer Confidence**: Spendİçinde sentiment
+- **Manufacturİçinde Veri**: PMI, içiçindededustrial production
 
 # ## Federal Reserve ve Monetary Policy
 - **Dual Mveate**: Maximum employment, stable prices (2% içiçindedeflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easiçiçindedeg
+- **Tools**: Federal funds rate, open market operations, quantitative easİçinde
 - **Impact**: Interest rates affect bonds, stocks, currency, economy
 
 # ## Busiçiçindedeess Cycle
-- **Expansion**: Economic growth, risiçiçindedeg employment
-- **Peak**: Maximum growth, potential overheatiçiçindedeg
-- **Contraction/Recession**: Economic decliçiçindedee, risiçiçindedeg unemployment
+- **Expansion**: Economic growth, risİçinde employment
+- **Peak**: Maximum growth, potential overheatİçinde
+- **Contraction/Recession**: Economic decliçiçindedee, risİçinde unemployment
 - **Trough**: Bottom, recovery begiçiçindedes
 
 # # Behavioral Fiçiçindedeance
 
 # ## Common Biases
 - **Loss Aversion**: Losses hurt more than equivalent gaiçiçindedes please
-- **Confirmation Bias**: Seek içiçindedeiçinmation confirmiçiçindedeg existiçiçindedeg beliefs
+- **Confirmation Bias**: Seek içiçindedeiçinmation confirmİçinde existİçinde beliefs
 - **Overconfidence**: Overestimate knowledge ve abilities
-- **Anchoriçiçindedeg**: Rely too heavily on first piece içiçindede içiçindedeiçinmation
+- **Anchorİçinde**: Rely too heavily on first piece içiçindede içiçindedeiçinmation
 - **Herd Mentality**: Follow crowd behavior
 - **Recency Bias**: overweight recent olaylar
 - **Endowment Effect**: Value owned items more highly
 - **Sunk Cost Fallacy**: Contiçiçindedeue based on past içiçindedevestment, not gelecek prospects
 
-# ## Emotional Investiçiçindedeg Pitfalls
-- Panic selliçiçindedeg duriçiçindedeg downturns
-- FOMO (Fear Of Missiçiçindedeg Out) buyiçiçindedeg at tops
-- Tradiçiçindedeg too frequently
-- Chasiçiçindedeg past periçinmance
-- Timiçiçindedeg bu market (nearly impossible consistently)
+# ## Emotional Investİçinde Pitfalls
+- Panic sellİçinde durİçinde downturns
+- FOMO (Fear Of Missİçinde Out) buyİçinde at tops
+- Tradİçinde too frequently
+- Chasİçinde past periçinmance
+- Timİçinde bu market (nearly impossible consistently)
 
 # ## En İyi Uygulamalar
 - Create ve stick to içiçindedevestment plan
 - Automate contributions
-- Avoid checkiçiçindedeg portfolio too frequently
-- Focus on controllables (saviçiçindedegs rate, costs, asset allocation)
+- Avoid checkİçinde portfolio too frequently
+- Focus on controllables (savİçindes rate, costs, asset allocation)
 - Maiçiçindedetaiçiçindede long-term perspective
 
 # # Current Investment Trends
 
-# ## Thematic Investiçiçindedeg
-- **Teknoloji**: AI, cloud computiçiçindedeg, cybergüvenlik, semiconductors
+# ## Thematic Investİçinde
+- **Teknoloji**: AI, cloud computİçinde, cybergüvenlik, semiconductors
 - **Sağlık Hizmetleri**: Bioteknoloji, genomics, telemediciçiçindedee
 - **Clean Energy**: Solar, wiçiçindeded, electric vehicles, battery teknoloji
 - **Fiçiçindedetech**: Digital payments, blockchaiçiçindede, robo-advisors
-- **E-commerce**: Onliçiçindedee retail, logistics, digital advertisiçiçindedeg
+- **E-commerce**: Onliçiçindedee retail, logistics, digital advertisİçinde
 
 # ## Demographic Trends
-- Agiçiçindedeg population (sağlık hizmetleri, retirement services)
+- Agİçinde population (sağlık hizmetleri, retirement services)
 - Millennial/Gen Z preferanss (sustaiçiçindedeability, teknoloji)
 - Urbanization (real estate, içiçindedefrastructure)
-- Emergiçiçindedeg markets middle class growth
+- Emergİçinde markets middle class growth
 
-# ## Sustaiçiçindedeable Investiçiçindedeg
+# ## Sustaiçiçindedeable Investİçinde
 - **ESG Integration**: Çevresel, social, governance factors
-- **Impact Investiçiçindedeg**: Generate positive social/çevresel impact
+- **Impact Investİçinde**: Generate positive social/çevresel impact
 - **Green Bonds**: Fund çevresel projects
 - **Carbon Credits**: Trade emissions allowances
 
@@ -350,8 +350,8 @@ For accuracy improvements, please contribute edits via pull requests.
 # ## Types içiçindede Advisors
 - **Registered Investment Advisor (RIA)**: Fiduciary stveard, fee-based
 - **Broker-Dealer**: Suitability stveard, commission-based
-- **Robo-Advisors**: Automated içiçindedevestiçiçindedeg, lower costs
-- **Fiçiçindedeancial Planner**: Comprehensive planniçiçindedeg, may be fee-only or commission
+- **Robo-Advisors**: Automated içiçindedevestİçinde, lower costs
+- **Fiçiçindedeancial Planner**: Comprehensive plannİçinde, may be fee-only or commission
 
 # ## Compensation Models
 - **Fee-Only**: Percentage içiçindede assets, hourly, flat fee (no commissions)
@@ -359,7 +359,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Fee-Based**: Combiçiçindedeation içiçindede fees ve commissions
 - **Assets Under Yönetim (AUM)**: Typically 0.5%-1.5% annually
 
-# ## Choosiçiçindedeg an Advisor
+# ## Choosİçinde an Advisor
 - Verify credentials (CFP, CFA, CPA)
 - Understve compensation structure
 - Check regulatory tarih (SEC, FIÇINDERA BrokerCheck)

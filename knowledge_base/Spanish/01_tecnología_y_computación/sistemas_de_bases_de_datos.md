@@ -266,7 +266,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 # # ORMs y Datos Access
 
 # ## Object-Relational Mappeng
-- **Purpose**: Map datosbase tables to programmeng objects
+- **Purpose**: Mapear tablas de base de datos a objetos de programación
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM

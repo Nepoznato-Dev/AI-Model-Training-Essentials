@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-# ## Viewiçiçindedeg Files
+# ## Viewİçinde Files
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -73,7 +73,7 @@ umask                   # Show default permission mask
 
 ---
 
-# # Text Processiçiçindedeg
+# # Text Processİçinde
 
 # ## Search & Replace
 ```bash
@@ -343,16 +343,16 @@ du -ah | sort -hr | head -20
 # # En İyi Uygulamalar
 
 ✅ **Do:**
-- Use `sudo` spariçiçindedegly ve carefully
+- Use `sudo` sparİçindely ve carefully
 - Test destructive commves ileout execution flags first
 - Keep backups beiçine major changes
-- Use meaniçiçindedegful filenames (no spaces)
+- Use meanİçindeful filenames (no spaces)
 - Learn to use `man` pages (`man commve`)
 
 ❌ **Don't:**
 - Run `rm -rf /` or similar dangerous commves
 - Use `chmod 777` on sensitive files
-- Ignore warniçiçindedeg messages
+- Ignore warnİçinde messages
 - Edit system files ileout backups
 - Run unknown scripts as root
 

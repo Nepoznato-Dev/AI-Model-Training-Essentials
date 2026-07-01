@@ -32,7 +32,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-# ## Striçiçindedegs
+# ## Strİçindes
 ```python
 s = "Hello, World!"
 
@@ -226,7 +226,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-# # Error Hveliçiçindedeg
+# # Error Hvelİçinde
 
 ```python
 try:
@@ -281,7 +281,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-# ## Striçiçindedeg Operations
+# ## Strİçinde Operations
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -331,10 +331,10 @@ any(), all()
 
 # # Quick Tips
 
-- Use `#` için siçiçindedegle-liçiçindedee comments
-- Use `"""triple quotes"""` için docstriçiçindedegs ve multi-liçiçindedee striçiçindedegs
+- Use `#` için sİçindele-liçiçindedee comments
+- Use `"""triple quotes"""` için docstrİçindes ve multi-liçiçindedee strİçindes
 - Indentation matters (typically 4 spaces)
-- Namiçiçindedeg conventions: `snake_case` için variables/functions, `PascalCase` için classes
+- Namİçinde conventions: `snake_case` için variables/functions, `PascalCase` için classes
 - `__name__ == "__maiçiçindede__"` to check if script is run directly
 - Use `virtualenv` or `venv` için project isolation
 - Install packages ile `pip içiçindedestall package_name`
