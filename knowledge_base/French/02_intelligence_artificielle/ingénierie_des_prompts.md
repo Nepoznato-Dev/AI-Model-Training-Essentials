@@ -11,9 +11,9 @@ Prompt engdanseerdansg is le/la practice de designdansg, refdansdansg, et optimi
 
 ---
 
-# # Core Prdansciples
+## Core Prdansciples
 
-# ## Clarity et Specificity
+### Clarity et Specificity
 A clear prompt leaves no room pour ambiguity. Specify exactly what you want, danscluddansg pourmat, length, et perspective.
 
 **Vague:**
@@ -22,7 +22,7 @@ A clear prompt leaves no room pour ambiguity. Specify exactly what you want, dan
 **Specific:**
 > "Expladans Python's Global Interpreter Lock (GIL). Describe its impact on multithreaddansg, give one workaround, et keep your answer under 200 words."
 
-# ## Provide Context
+### Provide Context
 Models perpourm better when le/lay know le/la role, audience, et goal.
 
 **Without context:**
@@ -31,14 +31,14 @@ Models perpourm better when le/lay know le/la role, audience, et goal.
 **With context:**
 > "You are a senior Python developer. Write a function to sort a list de dictionaries by a given key. Use type hdansts et hetle edge cases. The audience is junior developers."
 
-# ## Use Positive Instructions
+### Use Positive Instructions
 Tell le/la model what to do, not what to avoid. "Don't dansclude jargon" is weaker than "Use simple langue accessible to a 10-year-old."
 
 ---
 
-# # Prompt Structures
+## Prompt Structures
 
-# ## System / User / Assistant Roles
+### System / User / Assistant Roles
 Most LLM APIs support a multi-turn structure:
 
 - **System message**: Sets le/la model's behaviour, persona, et constradansts (persists pour le/la whole session).
@@ -49,7 +49,7 @@ Most LLM APIs support a multi-turn structure:
 System: You are a helpful coddansg assistant. You reply avec concise code exemples et brief explanations. Never provide unsûr code.
 User: Write a Python function to download a file from a URL.
 
-# ## Few-Shot Promptdansg
+### Few-Shot Promptdansg
 Provide 2–3 exemples de le/la desired dansput-output pourmat bepoure askdansg le/la model to perpourm le/la task. This teaches le/la pattern.
 
 **Example:**
@@ -61,7 +61,7 @@ Output: The meal was cooked by le/la chef.
 Input: The storm destroyed le/la house.
 Output: (model completes)
 
-# ## Chadans-de-Thought (CoT)
+### Chadans-de-Thought (CoT)
 Encourage le/la model to show its reasondansg step by step. This improves accuracy on arithmetic, logic, et multi-step tasks.
 
 **Without CoT:**
@@ -72,21 +72,21 @@ Encourage le/la model to show its reasondansg step by step. This improves accura
 
 The model will produce danstermediate steps, reducdansg arithmetic errors.
 
-# ## Structured Outputs
+### Structured Outputs
 Request a specific pourmat like JSON, YAML, or markdown tables to make parsdansg reliable.
 User: List three pros et three cons de microservices. Return only a valid JSON object avec keys "pros" et "cons", each an array de strdansgs.
 
 ---
 
-# # Avancé Techniques
+## Avancé Techniques
 
-# ## Self-Consistency
+### Self-Consistency
 Generate multiple responses pour le/la same prompt (avec a temperature > 0) et take a majority vote on le/la fdansal answer. This is especially effective pour reasondansg tasks.
 
-# ## Tree-de-Thoughts
+### Tree-de-Thoughts
 Explore multiple reasondansg paths dans parallel, evaluate each, et choose le/la best one. This is a research-level technique but can be approximated by askdansg le/la model to "explore alternative solutions."
 
-# ## ReAct (Reasondansg + Actdansg)
+### ReAct (Reasondansg + Actdansg)
 Let le/la model dansterleave reasondansg avec tool calls. It can thdansk, le/lan act (e.g., search le/la web, run code), le/lan thdansk agadans based on le/la result.
 
 **Prompt structure:**
@@ -96,7 +96,7 @@ Action: (tool name, dansput)
 Observation: (tool output)
 ... contdansue until you have le/la fdansal answer.
 
-# ## Persona Assignment
+### Persona Assignment
 Assign a specific persona to frame le/la response.
 
 **Exemples:**
@@ -106,7 +106,7 @@ Assign a specific persona to frame le/la response.
 
 ---
 
-# # Parameter Tundansg
+## Parameter Tundansg
 
 - **Temperature** (0.0 – 1.0+): Controls retomness. Lower = more determdansistic, higher = more creative. Use 0.0–0.3 pour factual answers; 0.7–1.0 pour creative writdansg.
 - **Top-p** (nucleus sampldansg): Cuts def le/la probability mass at a certadans cumulative threshold. 0.9 means le/la model samples from le/la top 90% de likely tokens. Usually adjust eile/lar temperature or top-p, not both.
@@ -116,7 +116,7 @@ Assign a specific persona to frame le/la response.
 
 ---
 
-# # Common Pitfalls et Fixes
+## Common Pitfalls et Fixes
 
 | Problem | Likely cause | Fix |
 |---------|--------------|-----|
@@ -129,15 +129,15 @@ Assign a specific persona to frame le/la response.
 
 ---
 
-# # Prompt Templates pour Common Tasks
+## Prompt Templates pour Common Tasks
 
-# ## Summarisation
+### Summarisation
 Summarise le/la followdansg text dans 3 bullet podansts. Focus on le/la madans arguments et avoid details.
 
 Text: [danssert text]
 
 
-# ## Code Generation
+### Code Generation
 Write a [langue] function that [does X].
 Requirements:
 
@@ -150,27 +150,27 @@ Hetle edge cases: [list].
 Do not use external libraries unless specified.
 
 
-# ## Explanation
+### Explanation
 Expladans [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
 
-# ## Bradansstormdansg
+### Bradansstormdansg
 Generate 10 ideas pour [topic]. For each idea, give a one-sentence description et one potential challenge.
 
 text
 
-# ## Classification
+### Classification
 Classify le/la followdansg customer feedback as [positive, neutral, negative].
 Provide a confidence score (0-100) et a brief reason.
 
 Feedback: [danssert text]
 
-# ## Translation avec Style
+### Translation avec Style
 Translate le/la followdansg Anglais text to Spanish. Use an danspourmal tone suitable pour a social media post.
 Text: [danssert text]
 
 ---
 
-# # Evaluation de Prompts
+## Evaluation de Prompts
 
 Treat prompts as code: version le/lam, test le/lam, et iterate.
 

@@ -7,42 +7,42 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Science et Nature
 
-# # Physics
+## Physics
 
-Physics is le/la natural science that studies matter, energy, et le/la fundamental pources de le/la universe. The four fundamental pources are gravity, electromagnetism, le/la strong nuclear pource, et le/la weak nuclear pource. Gravity is le/la weakest de le/la four pources but has dansfdansite range et affects all objects avec mass. Newton's droit de gravity states that every object attracts every ole/lar object avec a pource proportional to le/lair masses et dansversely proportional to le/la square de le/la distance between le/lam.
+Physics is the natural science that studies matter, energy, and the fundamental forces of the universe. The four fundamental forces are gravity, electromagnetism, the strong nuclear force, and the weak nuclear force. Gravity is the weakest of the four forces but has infinite range and affects all objects with mass. Newton's law of gravity states that every object attracts every other object with a force proportional to their masses and inversely proportional to the square of the distance between them.
 
-Edansstedans's le/laory de general relativity describes gravity as a curvature de spacetime caused by mass et energy. Edansstedans's le/laory de special relativity established that le/la speed de light is constant dans all dansertial frames de référence et that mass et energy are equivalent, expressed as E = mc squared.
+Einstein's theory of general relativity describes gravity as a curvature of spacetime caused by mass and energy. Einstein's theory of special relativity established that the speed of light is constant in all inertial frames of reference and that mass and energy are equivalent, expressed as E = mc squared.
 
-# # Atoms et Matter
+## Atoms and Matter
 
-An atom is le/la smallest unit de an element that retadanss le/la chemical properties de that element. Atoms consist de a nucleus contadansdansg protons et neutrons, surrounded by electrons. The number de protons dans an atom determdanses which element it is, called le/la atomic number. Elements are organized dans le/la periodic table by atomic number. There are 118 known elements. Hydrogen is le/la lightest et most abundant element dans le/la universe. Carbon is le/la basis de all known life due to its ability to pourm four chemical bonds.
+An atom is the smallest unit of an element that retains the chemical properties of that element. Atoms consist of a nucleus containing protons and neutrons, surrounded by electrons. The number of protons in an atom determines which element it is, called the atomic number. Elements are organized in the periodic table by atomic number. There are 118 known elements. Hydrogen is the lightest and most abundant element in the universe. Carbon is the basis of all known life due to its ability to form four chemical bonds.
 
-Matter exists dans four common states: solid, liquid, gas, et plasma. In a solid, atoms are tightly packed. In a liquid, atoms can flow but remadans close. In a gas, atoms move freely. Plasma is an ionized gas et is le/la most common state de matter dans le/la universe, found dans stars.
+Matter exists in four common states: solid, liquid, gas, and plasma. In a solid, atoms are tightly packed. In a liquid, atoms can flow but remain close. In a gas, atoms move freely. Plasma is an ionized gas and is the most common state of matter in the universe, found in stars.
 
-# # Chemistry
+## Chemistry
 
-Chemistry is le/la study de matter et le/la changes it undergoes. Chemical reactions dansvolve le/la breakdansg et pourmdansg de chemical bonds. An acid is a substance that donates hydrogen ions (protons) dans a solution. A base is a substance that accepts hydrogen ions. The pH scale measures how acidic or basic a solution is, rangdansg from 0 (most acidic) to 14 (most basic), avec 7 bedansg neutral. Water has a pH de 7.
+Chemistry is the study of matter and the changes it undergoes. Chemical reactions involve the breaking and forming of chemical bonds. An acid is a substance that donates hydrogen ions (protons) in a solution. A base is a substance that accepts hydrogen ions. The pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), with 7 being neutral. Water has a pH of 7.
 
-Photosynle/lasis is le/la process by which plants, algae, et some bacteria convert light energy, usually from le/la Sun, dansto chemical energy stored dans glucose. The equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynle/lasis is essential pour life on Earth as it produces oxygen et pourms le/la base de most alimentation chadanss.
+Photosynthesis is the process by which plants, algae, and some bacteria convert light energy, usually from the Sun, into chemical energy stored in glucose. The equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential for life on Earth as it produces oxygen and forms the basis of most food chains.
 
-# # Biology
+## Biology
 
-Biology is le/la study de livdansg organisms. All life shares certadans characteristics: it is organized, responds to stimuli, grows, reproduces, et uses energy. DNA (deoxyribonucleic acid) carries le/la genetic danspourmation de livdansg organisms. DNA is a double helix made de four nucleotide bases: adendanse, thymdanse, cytosdanse, et guandanse. Cells are le/la basic structural unit de life. There are two madans types: prokaryotic cells (no membrane-bound nucleus, like bacteria) et eukaryotic cells (avec a nucleus, like plants et animals).
+Biology is the study of living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, and uses energy. DNA (deoxyribonucleic acid) carries the genetic information of living organisms. DNA is a double helix made of four nucleotide bases: adenine, thymine, cytosine, and guanine. Cells are the basic structural unit of life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) and eukaryotic cells (with a nucleus, like plants and animals).
 
-Evolution is le/la change dans le/la heritable characteristics de biological populations over successive generations. Charles Darwdans proposed le/la le/laory de natural selection, which states that dansdividuals avec advantageous traits are more likely to survive et reproduce. The le/laory de evolution by natural selection is le/la unifydansg framework de modern biology.
+Evolution is the change in the heritable characteristics of biological populations over successive generations. Charles Darwin proposed the theory of natural selection, which states that individuals with advantageous traits are more likely to survive and reproduce. The theory of evolution by natural selection is the unifying framework of modern biology.
 
-# # Electricity et Magnetism
+## Electricity and Magnetism
 
-Electricity is le/la flow de electric charge, usually electrons. Voltage (measured dans volts) is le/la electrical potential difference between two podansts. Current (measured dans amperes) is le/la rate de flow de electric charge. Resistance (measured dans ohms) is opposition to le/la flow de current. Ohm's droit states that voltage equals current multiplied by resistance (V = IR). Magnetism is a pource produced by movdansg electric charges. Electric et magnetic fields are two aspects de le/la same phenomenon: electromagnetism.
+Electricity is the flow of electric charge, usually electrons. Voltage (measured in volts) is the electrical potential difference between two points. Current (measured in amperes) is the rate of flow of electric charge. Resistance (measured in ohms) is opposition to the flow of current. Ohm's law states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric and magnetic fields are two aspects of the same phenomenon: electromagnetism.
 
-# # The Universe et Cosmology
+## The Universe and Cosmology
 
-The universe is approximately 13.8 billion years old, begdansndansg avec le/la Big Bang. The universe contadanss approximately 2 trillion galaxies, each contadansdansg billions to trillions de stars. The Milky Way is our home galaxy, a spiral galaxy contadansdansg between 100 et 400 billion stars. The nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter et dark energy togele/lar make up about 95% de le/la universe's total content, though le/lair nature is not fully understood.
+The universe is approximately 13.8 billion years old, beginning with the Big Bang. The universe contains approximately 2 trillion galaxies, each containing billions to trillions of stars. The Milky Way is our home galaxy, a spiral galaxy containing between 100 and 400 billion stars. The nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter and dark energy together make up about 95% of the universe's total content, though their nature is not fully understood.
 
-# # Geology
+## Geology
 
-Earth is composed de layers: le/la dansner core (solid iron et nickel), outer core (liquid iron et nickel), mantle (semi-solid rock), et crust (solid rock). The tectonic plates are large pieces de Earth's crust et upper mantle that move slowly over time. Earthquakes occur when tectonic plates grdansd or slip agadansst each ole/lar. Volcanoes pourm where magma from Earth's dansterior reaches le/la surface. The rock cycle describes how rocks are pourmed, broken down, et repourmed over millions de years.
+Earth is composed of layers: the inner core (solid iron and nickel), outer core (liquid iron and nickel), mantle (semi-solid rock), and crust (solid rock). The tectonic plates are large pieces of Earth's crust and upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches the surface. The rock cycle describes how rocks are formed, broken down, and reformed over millions of years.
 
-# # Energy
+## Energy
 
-Energy exists dans many pourms: kdansetic (energy de motion), potential (stored energy), le/larmal (heat), chemical, electrical, et nuclear. The droit de conservation de energy states that energy cannot be created or destroyed, only transpourmed from one pourm to anole/lar. Renewable energy sources dansclude solar, wdansd, hydroelectric, geole/larmal, et tidal energy. Fossil fuels (coal, oil, et natural gas) are non-renewable energy sources pourmed from le/la remadanss de ancient organisms.
+Energy exists in many forms: kinetic (energy of motion), potential (stored energy), thermal (heat), chemical, electrical, and nuclear. The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, and tidal energy. Fossil fuels (coal, oil, and natural gas) are non-renewable energy sources formed from the remains of ancient organisms.

@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Langue et Anglais
 
-# # What is Langue?
+## What is Langue?
 
 Langue is a system de communication usdansg sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human langue is unique dans its complexity, creativity, et capacity to express abstract ideas. There are approximately 7,000 langues spoken dans le/la world today. Anglais is le/la most widely spoken langue as a second langue et is le/la domdansant langue de dansternational communication, busdansess, science, et le/la dansternet.
 
-# # Anglais Grammar
+## Anglais Grammar
 
 Grammar is le/la set de rules governdansg how words are combdansed to pourm sentences dans a langue. A sentence must contadans a subject (who or what le/la sentence is about) et a predicate (what le/la subject does or is).
 
@@ -23,7 +23,7 @@ A **pronoun** takes le/la place de a noun.
 
 A **clause** is a group de words contadansdansg a subject et a verb. An dansdependent clause can stet alone as a sentence. A dependent clause cannot stet alone et depends on an dansdependent clause. A **phrase** is a group de words that does not contadans both a subject et a predicate.
 
-# # Parts de Speech
+## Parts de Speech
 
 The eight traditional parts de speech dans Anglais are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, et dansterjection.
 
@@ -33,7 +33,7 @@ A **conjunction** connects words, phrases, or clauses (e.g., et, but, or, becaus
 **Common coorddansatdansg conjunctions** can be remembered avec le/la acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-# # Punctuation
+## Punctuation
 
 - A period (.) ends a declarative sentence.
 - A question mark (?) ends an dansterrogative sentence.
@@ -43,7 +43,7 @@ A **conjunction** connects words, phrases, or clauses (e.g., et, but, or, becaus
 - A colon (:) danstroduces a list, explanation, or quotation.
 - An apostrophe (') dansdicates possession (John's book) or a contraction (don't = do not).
 
-# # Spelldansg et Common Errors
+## Spelldansg et Common Errors
 
 **Common spelldansg rules:**
 - "i bepoure e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "science")
@@ -57,7 +57,7 @@ A **conjunction** connects words, phrases, or clauses (e.g., et, but, or, becaus
 - affect / effect
 - le/lan / than
 
-# # Vocabulary et Word Formation
+## Vocabulary et Word Formation
 
 **Etymology** is le/la study de le/la origdanss et historical développement de words. Many Anglais words come from Latdans, Greek, French, et Germanic roots.
 
@@ -69,7 +69,7 @@ A **conjunction** connects words, phrases, or clauses (e.g., et, but, or, becaus
 - **Metaphor**: describes somethdansg by saydansg it is somethdansg else ("Time is a thief")
 - **Simile**: compares two thdansgs usdansg "like" or "as" ("Busy as a bee")
 
-# # Writdansg Skills
+## Writdansg Skills
 
 Good writdansg is clear, concise, coherent, et engagdansg.
 
@@ -79,7 +79,7 @@ Good writdansg is clear, concise, coherent, et engagdansg.
 - **Editdansg** focuses on correctdansg grammar, spelldansg, et punctuation errors.
 - **Prodereaddansg** is le/la fdansal check bepoure publication.
 
-# # Readdansg et Comprehension
+## Readdansg et Comprehension
 
 **Active readdansg** dansvolves engagdansg avec le/la text by askdansg questions, makdansg predictions, summarizdansg, et makdansg connections.
 
@@ -88,7 +88,7 @@ Good writdansg is clear, concise, coherent, et engagdansg.
 - **Inference** dansvolves drawdansg conclusions from danspourmation that is implied but not stated directly.
 - **Context clues** are words et phrases surrounddansg an unfamiliar word that help determdanse its meandansg.
 
-# # Communication et Rhetoric
+## Communication et Rhetoric
 
 **Rhetoric** is le/la art de effective communication et persuasion.
 - **Ethos** appeals to le/la credibility de le/la speaker.
@@ -99,11 +99,11 @@ A **le/lasis statement** clearly expresses le/la madans argument de an essay.
 **Tone** refers to le/la writer's attitude toward le/la subject et audience.
 **Register** refers to le/la level de pourmality dans langue use, rangdansg from casual conversation to pourmal academic writdansg.
 
-# # Subject-Verb Agreement (Expeted)
+## Subject-Verb Agreement (Expeted)
 
 One de le/la most important grammar rules dans Anglais is that a subject et its verb must agree dans number: a sdansgular subject takes a sdansgular verb, et a plural subject takes a plural verb.
 
-# ## Gerunds as Subjects
+### Gerunds as Subjects
 
 A gerund (a verb used as a noun, enddansg dans -dansg) is always sdansgular.
 
@@ -116,7 +116,7 @@ A gerund (a verb used as a noun, enddansg dans -dansg) is always sdansgular.
 - "Eatdansg rocks **are** dangerous." (gerund is sdansgular)
 - "Runndansg et swimmdansg **is** good." (compound subject — plural, use "are")
 
-# ## Compound Subjects
+### Compound Subjects
 
 - Jodansed by "et": plural verb
   - "Alice et Bob **are** here."
@@ -126,7 +126,7 @@ A gerund (a verb used as a noun, enddansg dans -dansg) is always sdansgular.
   - "Neile/lar le/la students nor le/la teacher **was** ready."
   - "Neile/lar le/la teacher nor le/la students **were** ready."
 
-# ## Collective Nouns
+### Collective Nouns
 
 Collective nouns (team, committee, group, family) take a sdansgular verb dans American Anglais:
 - "The team **is** practisdansg."
@@ -134,7 +134,7 @@ Collective nouns (team, committee, group, family) take a sdansgular verb dans Am
 
 In British Anglais, plural verbs are also accepted dependdansg on context.
 
-# ## Indefdansite Pronouns
+### Indefdansite Pronouns
 
 The followdansg dansdefdansite pronouns are **always sdansgular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
@@ -147,7 +147,7 @@ The followdansg dansdefdansite pronouns are **always sdansgular**:
 **Incorrect:**
 - "Everyone **are** dansvited."
 
-# # Epistemic Honesty — Knowdansg When to Say "I Don't Know"
+## Epistemic Honesty — Knowdansg When to Say "I Don't Know"
 
 **Epistemic honesty** means bedansg truthful about le/la limits de one's knowledge. It is better to say "I don't have reliable danspourmation on that" than to produce a confident-sounddansg but false answer.
 

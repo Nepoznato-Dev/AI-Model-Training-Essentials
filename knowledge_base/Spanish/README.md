@@ -82,7 +82,7 @@ knowledge_base/Spanish/
 | [historia_y_cultura.md](06_humanidades/historia_y_cultura.md) | Períodos históricos, movimientos culturales | 200+ |
 | [geografía_y_geopolítica.md](06_humanidades/geografía_y_geopolítica.md) | Geografía física/humana, sistemas políticos | 300+ |
 | [artes_y_literatura.md](06_humanidades/artes_y_literatura.md) | Géneros literarios, artes visuales, música, cine | 400+ |
-| [psicología_y_comportamiento humano.md](06_humanidades/psicología_y_comportamiento humano.md) | Psicología cognitiva, social, del desarrollo | 200+ |
+| [psicología_y_comportamiento_humano.md](06_humanidades/psicología_y_comportamiento_humano.md) | Psicología cognitiva, social, del desarrollo | 200+ |
 | [lenguaje_y_español.md](06_humanidades/lenguaje_y_español.md) | Gramática, lingüística, escritura | 180+ |
 
 ### Referencia (`07_referencia/`)

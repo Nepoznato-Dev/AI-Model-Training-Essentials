@@ -11,7 +11,7 @@ Essential Git commets pour version control.
 
 ---
 
-# # Setup & Configuration
+## Setup & Configuration
 
 ```bash
 # Configure user info
@@ -28,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-# # Repository Initialization
+## Repository Initialization
 
 ```bash
 # Initialize new repository
@@ -44,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-# # Basic Workflow
+## Basic Workflow
 
 ```bash
 # Check status
@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-# # Branchdansg
+## Branchdansg
 
 ```bash
 # List branches
@@ -103,7 +103,7 @@ git rebase main
 
 ---
 
-# # Remote Operations
+## Remote Operations
 
 ```bash
 # View remotes
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-# # Undodansg Changes
+## Undodansg Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-# # Stashdansg
+## Stashdansg
 
 ```bash
 # Save work in progress
@@ -184,7 +184,7 @@ git stash clear
 
 ---
 
-# # Tags
+## Tags
 
 ```bash
 # List tags
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-# # Viewdansg & Searchdansg
+## Viewdansg & Searchdansg
 
 ```bash
 # Show commit details
@@ -228,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-# # Avancé Operations
+## Avancé Operations
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-# # Cleanup
+## Cleanup
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +271,9 @@ git remote prune origin
 
 ---
 
-# # Common Workflows
+## Common Workflows
 
-# ## Start New Feature
+### Start New Feature
 ```bash
 git checkout main
 git pull
@@ -285,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-# ## Sync avec Madans
+### Sync avec Madans
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-# ## Hotfix Workflow
+### Hotfix Workflow
 ```bash
 git checkout main
 git pull
@@ -310,7 +310,7 @@ git push --tags
 
 ---
 
-# # .gitignore Patterns
+## .gitignore Patterns
 
 ```gitignore
 # Ignore specific file
@@ -332,7 +332,7 @@ __pycache__/
 
 ---
 
-# # Keyboard Shortcuts (Git Bash)
+## Keyboard Shortcuts (Git Bash)
 
 | Shortcut | Action |
 |----------|--------|
@@ -344,7 +344,7 @@ __pycache__/
 
 ---
 
-# # Meilleures pratiques
+## Meilleures pratiques
 
 ✅ **Do:**
 - Write clear, descriptive commit messages
@@ -362,7 +362,7 @@ __pycache__/
 
 ---
 
-# # Commit Message Convention
+## Commit Message Convention
 
 ```
 type(scope): subject

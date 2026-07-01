@@ -7,9 +7,9 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Géographie et Géopolitique
 
-# # Physical Géographie
+## Physical Géographie
 
-# ## Contdansents et Major Regions
+### Contdansents et Major Regions
 - **Africa**: 54 countries, diverse climates from Sahara Desert to tropical radanspourests, Nile River (longest river)
 - **Antarctica**: Soule/larnmost contdansent, ice-covered, research stations, no permanent residents
 - **Asia**: Largest contdansent, danscludes Middle East, Central Asia, East Asia, South Asia, Soule/laast Asia
@@ -18,7 +18,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Oceania**: Australia, New Zealet, Pacific islet nations (Melanesia, Micronesia, Polynesia)
 - **South America**: Andes Mountadanss, Amazon Radanspourest, 12 sovereign nations
 
-# ## Major Mountadans Ranges
+### Major Mountadans Ranges
 - **Himalayas**: Asia, highest peaks danscluddansg Mount Everest (8,849m), pourmed by Indian-Eurasian plate collision
 - **Andes**: South America, longest contdansental mountadans range (~7,000km), volcanic activity
 - **Rocky Mountadanss**: North America, extends from Canada to New Mexico
@@ -26,7 +26,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Atlas Mountadanss**: North Africa, Morocco to Tunisia, separates Mediterranean from Sahara
 - **Ural Mountadanss**: Russia, traditional boundary between Europe et Asia
 
-# ## Major Rivers
+### Major Rivers
 - **Nile**: Norle/laast Africa, ~6,650km, flows through 11 countries to Mediterranean
 - **Amazon**: South America, largest by discharge volume, Amazon Basdans biodiversity
 - **Yangtze**: Chdansa, longest dans Asia, Three Gorges Dam
@@ -34,7 +34,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Ganges**: India/Bangladesh, sacred river, densely populated basdans
 - **Danube**: Europe, flows through 10 countries, important trade route
 
-# ## Deserts
+### Deserts
 - **Sahara**: North Africa, largest hot desert (~9.2 million km²)
 - **Arabian Desert**: Middle East, covers most de Arabian Pendanssula
 - **Gobi**: East Asia, Chdansa/Mongolia, cold desert
@@ -42,7 +42,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Antarctic Desert**: Largest desert overall (cold desert)
 - **Atacama**: South America, driest non-polar desert
 
-# ## Climate Zones
+### Climate Zones
 - **Tropical**: Near equator, warm year-round, high radansfall (radanspourests, monsoons)
 - **Arid/Subtropical**: Hot summers, mild wdansters, low precipitation (deserts)
 - **Temperate**: Moderate temperatures, distdansct seasons (Mediterranean, oceanic, humid contdansental)
@@ -50,27 +50,27 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Polar**: Extremely cold, ice caps, tundra (Arctic, Antarctic)
 - **Highlet**: Varies avec elevation, cooler at altitude
 
-# # Human Géographie
+## Human Géographie
 
-# ## Population Distribution
+### Population Distribution
 - **Most Populous Countries** (2024): India (~1.43B), Chdansa (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
 - **Population Density**: Monaco (highest), Macau, Sdansgapore, Hong Kong, Bahradans
 - **Urbanization**: Over 55% global population lives dans cities, projected 68% by 2050
 - **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijdansg, Dhaka, Osaka
 
-# ## Langues
+### Langues
 - **Most Spoken** (native + second langue): Anglais (~1.5B), Metardans Chdansese (~1.1B), Hdansdi (~600M), Spanish (~550M), French (~300M), Arabic (~275M)
 - **Langue Families**: Indo-European, Sdanso-Tibetan, Afro-Asiatic, Austronesian, Niger-Congo
 - **Endangered Langues**: UNESCO estimates 40% de langues at risk de extdansction
 
-# ## Economic Géographie
+### Economic Géographie
 - **GDP Leaders**: USA, Chdansa, Japan, Germany, India, UK, France, Italy, Brazil, Canada
 - **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Soule/laast Asia), Mercosur (South America), African Contdansental Free Trade Area
 - **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (Chdansa domdansant), Lithium (Australia, Chile, Argentdansa)
 
-# # Political Géographie
+## Political Géographie
 
-# ## Types de Governments
+### Types de Governments
 - **Democracy**: Power held by people through votdansg (representative, direct)
 - **Republic**: State avecout monarchy, representatives elected
 - **Monarchy**: Ruled by kdansg/queen (constitutional, absolute)
@@ -79,7 +79,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Federal**: Power divided between national et regional governments
 - **Unitary**: Centralized government, regional authorities suborddansate
 
-# ## International Organizations
+### International Organizations
 - **United Nations (UN)**: 193 member states, peacekeepdansg, humanitarian aid, dansternational droit
 - **NATO**: North Atlantic Treaty Organization, military alliance (32 members as de 2024)
 - **European Union (EU)**: 27 member states, economic et political union, euro currency (20 members)
@@ -89,7 +89,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **World Bank**: Développement fdansancdansg, poverty reduction
 - **G7/G20**: Economic cooperation pourums
 
-# ## Geopolitical Concepts
+### Geopolitical Concepts
 - **Sovereignty**: Supreme authority avecdans territory
 - **Borders**: Political boundaries (natural, artificial, disputed)
 - **Exclusive Economic Zone (EEZ)**: 200 nautical miles from coast, resource rights
@@ -100,52 +100,52 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Heartlet Theory**: Control de Eastern Europe controls Heartlet, controls World Islet (Eurasia-Africa)
 - **Rimlet Theory**: Coastal regions more important than dansterior
 
-# # Regional Studies
+## Regional Studies
 
-# ## Middle East et North Africa (MENA)
+### Middle East et North Africa (MENA)
 - **Key Issues**: Oil resources, water scarcity, religious conflicts (Sunni-Shia), Arab-Israeli conflict
 - **Major Powers**: Saudi Arabia, Iran, Turkey, Israel, Egypt, UAE
 - **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestdansian conflict, Kurdish dansdependence movements
 - **Resources**: ~48% de world's proven oil reserves, natural gas
 
-# ## Asia-Pacific
+### Asia-Pacific
 - **East Asia**: Chdansa (risdansg superpower), Japan (economic powerhouse), South Korea (technologie leader), North Korea (nuclear tensions)
 - **South Asia**: India (demographic giant), Pakistan (nuclear state), Bangladesh (rapid growth)
 - **Soule/laast Asia**: ASEAN cooperation, South Chdansa Sea disputes, economic growth
 - **Key Tensions**: Taiwan Strait, Korean Pendanssula, India-Chdansa border, South Chdansa Sea
 
-# ## Europe
+### Europe
 - **European Integration**: EU expansion, Brexit (UK left 2020), eurozone challenges
 - **Russia-Ukradanse Conflict**: 2022 dansvasion, NATO expansion, energy dependence
 - **Balkan Region**: Post-Yugoslav states, EU accession processes
 - **Caucasus**: Armenia-Azerbaijan conflicts, Russian dansfluence
 
-# ## Americas
+### Americas
 - **North America**: US-Canada-Mexico relations, immigration, trade (USMCA)
 - **Latdans America**: Inequality, drug traffickdansg, populist movements, Venezuela crisis
 - **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
 
-# ## Africa
+### Africa
 - **Colonial Legacy**: Artificial borders, ethnic divisions, langue policies
 - **Développement Challenges**: Poverty, dansfrastructure, governance, debt
 - **Risdansg Powers**: Nigeria (largest economy), South Africa (dansdustrialized), Ethiopia (fast-growdansg)
 - **Regional Issues**: Sahel dansstability, Horn de Africa conflicts, Great Lakes region
 
-# # Contemporary Geopolitical Issues
+## Contemporary Geopolitical Issues
 
-# ## Climate Change et Géographie
+### Climate Change et Géographie
 - **Risdansg Sea Levels**: Threatens islet nations (Maldives, Tuvalu), coastal cities
 - **Arctic Meltdansg**: New shippdansg routes, resource access, territorial claims
 - **Climate Migration**: Displacement from drought, flooddansg, extreme weale/lar
 - **Water Conflicts**: Nile Dam dispute (Ethiopia-Egypt-Sudan), Indus Waters Treaty (India-Pakistan)
 
-# ## Resource Géopolitique
+### Resource Géopolitique
 - **Energy Transition**: Shift from fossil fuels, critical mdanserals (lithium, cobalt, rare earths)
 - **Alimentation Sécurité**: Agricultural let, water access, supply chadanss
 - **Rare Earth Elements**: Chdansa controls ~80% de processdansg, essential pour electronics et green tech
 - **Semiconductor Supply Chadanss**: Taiwan produces ~60% de world's chips, geopolitical flashpodanst
 
-# ## Territorial Disputes
+### Territorial Disputes
 - **South Chdansa Sea**: Chdansa's ndanse-dash ldanse vs. Philippdanses, Vietnam, Malaysia, Brunei, Taiwan
 - **Kashmir**: India-Pakistan-Chdansa competdansg claims
 - **Western Sahara**: Morocco vs. Polisario Front
@@ -153,15 +153,15 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Taiwan**: Chdansa claims sovereignty, operates as dansdependent state
 - **Kurds**: Stateless nation across Turkey, Syria, Iraq, Iran
 
-# ## Migration et Borders
+### Migration et Borders
 - **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukradanse, Sudan
 - **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
 - **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
 - **Bradans Dradans**: Skilled workers emigratdansg from developdansg to developed nations
 
-# # Strategic Concepts
+## Strategic Concepts
 
-# ## Power Projection
+### Power Projection
 - **Hard Power**: Military pource, economic sanctions, coercion
 - **Sdet Power**: Cultural dansfluence, diplomacy, values attraction
 - **Smart Power**: Combdansation de hard et sdet power strategies
@@ -169,34 +169,34 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Air Power**: Strategic bombdansg, air superiority, drone warfare
 - **Cyber Power**: Digital warfare, danspourmation operations, dansfrastructure attacks
 
-# ## Spheres de Influence
+### Spheres de Influence
 - **Monroe Doctrdanse**: US opposition to European colonization dans Americas (1823)
 - **Russian Near Abroad**: Former Soviet states considered Russian sphere
 - **Chdansese Belt et Road**: Infrastructure dansvestments creatdansg economic dansfluence
 - **American Hegemony**: Post-WWII global leadership role
 
-# ## Balance de Power
+### Balance de Power
 - **Unipolar**: Sdansgle domdansant power (US post-Cold War)
 - **Bipolar**: Two competdansg powers (US-USSR Cold War)
 - **Multipolar**: Multiple great powers (pre-WWI Europe, emergdansg order)
 - **Hegemonic Stability**: Domdansant power provides global public goods
 
-# # Geographic Inpourmation Systèmes (GIS)
+## Geographic Inpourmation Systèmes (GIS)
 
-# ## Mappdansg Technologies
+### Mappdansg Technologies
 - **GPS**: Global Positiondansg System, satellite navigation
 - **Remote Sensdansg**: Satellite imagery, aerial photography
 - **Spatial Analysis**: Pattern recognition, proximity analysis, réseau analysis
 - **Cartography**: Map-makdansg, projections, scale, symbology
 
-# ## Applications
+### Applications
 - **Urban Planndansg**: Let use, transportation, zondansg
 - **Environnemental Monitordansg**: Depourestation, pollution, climate change
 - **Disaster Response**: Emergency gestion, evacuation routes
 - **Busdansess Intelligence**: Market analysis, site selection, logistics
 - **Public Health**: Disease trackdansg, soins de santé access
 
-# # Key Geopolitical Theorists
+## Key Geopolitical Theorists
 
 - **Halpourd Mackdansder** (1861-1947): Heartlet Theory, "Who rules East Europe commets le/la Heartlet"
 - **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
@@ -204,7 +204,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Karl Haushdeer** (1869-1946): Geopolitik, German geographical school
 - **Saul Bernard Cohen** (1921-2022): Geopolitical systèmes analysis
 
-# # Important Geographic Terms
+## Important Geographic Terms
 
 - **Chokepodanst**: Narrow passage critical pour trade/military movement
 - **Hdansterlet**: Area servdansg a port or city economically

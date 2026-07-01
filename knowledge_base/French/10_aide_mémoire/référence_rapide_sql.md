@@ -11,7 +11,7 @@ Essential SQL commets pour donnéesbase operations.
 
 ---
 
-# # Basic Query Structure
+## Basic Query Structure
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-# # Données Retrieval (SELECT)
+## Données Retrieval (SELECT)
 
-# ## Basic Selection
+### Basic Selection
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filterdansg (WHERE)
+### Filterdansg (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sortdansg et Limitdansg
+### Sortdansg et Limitdansg
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-# # Aggregation Functions
+## Aggregation Functions
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-# # Jodanss
+## Jodanss
 
-# ## Inner Jodans
+### Inner Jodans
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Left/Right Jodans
+### Left/Right Jodans
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Full Outer Jodans
+### Full Outer Jodans
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Cross Jodans
+### Cross Jodans
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-# ## Self Jodans
+### Self Jodans
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-# # Subqueries
+## Subqueries
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-# # Set Operations
+## Set Operations
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,9 +210,9 @@ SELECT user_id FROM banned_users;
 
 ---
 
-# # Données Modification
+## Données Modification
 
-# ## DANSSERT
+### DANSSERT
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -229,7 +229,7 @@ INSERT INTO archived_users
 SELECT * FROM users WHERE last_login < '2023-01-01';
 ```
 
-# ## UPDATE
+### UPDATE
 ```sql
 -- Update single row
 UPDATE users 
@@ -248,7 +248,7 @@ SET o.status = 'processed'
 WHERE u.country = 'USA';
 ```
 
-# ## DELETE
+### DELETE
 ```sql
 -- Delete specific rows
 DELETE FROM users WHERE id = 1;
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-# # Table Operations
+## Table Operations
 
-# ## CREATE Table
+### CREATE Table
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-# ## ALTER Table
+### ALTER Table
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-# ## DROP Table
+### DROP Table
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-# # Constradansts
+## Constradansts
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-# # Indexes
+## Indexes
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-# # Views
+## Views
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-# # Common Table Expressions (CTEs)
+## Common Table Expressions (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-# # Wdansdow Functions
+## Wdansdow Functions
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-# # Données Types
+## Données Types
 
-# ## Numeric
+### Numeric
 - `DANST` - Integer
 - `BIGDANST` - Large dansteger
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
 - `FLOAT` - Approximate floatdansg podanst
 - `DOUBLE` - Double precision float
 
-# ## Strdansg
+### Strdansg
 - `CHAR(n)` - Fixed length strdansg
 - `VARCHAR(n)` - Variable length strdansg
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
-# ## Date/Time
+### Date/Time
 - `DATE` - Date (YYYY-MM-DD)
 - `TIME` - Time (HH:MM:SS)
 - `DATETIME` - Date et time
 - `TIMESTAMP` - Unix timestamp
 - `YEAR` - Year value
 
-# ## Boolean
+### Boolean
 - `BOOLEAN` or `BOOL` - True/False
 
-# ## Bdansary
+### Bdansary
 - `BLOB` - Bdansary large object
 - `BDANSARY` - Fixed bdansary
 - `VARBDANSARY` - Variable bdansary
 
 ---
 
-# # Useful Functions
+## Useful Functions
 
-# ## Strdansg Functions
+### Strdansg Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-# ## Date Functions
+### Date Functions
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-# ## Numeric Functions
+### Numeric Functions
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-# ## Conditional Functions
+### Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,7 +556,7 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-# # Perpourmance Tips
+## Perpourmance Tips
 
 ✅ **Do:**
 - Use dansdexes on frequently queried columns
@@ -574,7 +574,7 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-# # Sécurité Meilleures pratiques
+## Sécurité Meilleures pratiques
 
 ```sql
 -- Use parameterized queries (in application code)

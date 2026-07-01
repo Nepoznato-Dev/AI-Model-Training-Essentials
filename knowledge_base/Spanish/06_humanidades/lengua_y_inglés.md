@@ -5,159 +5,159 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Idioma y Inglés
+# Idioma e Inglés
 
-# # What is Idioma?
+## ¿Qué es el idioma?
 
-Idioma is a system de comunicación useng sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human idioma is unique en its complexity, creativity, y capacity to express abstract ideas. There are approximately 7,000 idiomas spoken en el/la world today. Inglés is el/la most widely spoken idioma as a second idioma y is el/la domenant idioma de enternational comunicación, buseness, ciencia, y el/la enternet.
+El idioma es un sistema de comunicación que utiliza sonidos, símbolos o gestos que sigue un conjunto compartido de reglas entendidas por una comunidad. El lenguaje humano es único en su complejidad, creatividad y capacidad para expresar ideas abstractas. Hay aproximadamente 7,000 idiomas hablados en el mundo hoy en día. El inglés es el idioma más hablado como segundo idioma y es el idioma dominante de la comunicación internacional, los negocios, la ciencia y el internet.
 
-# # Inglés Grammar
+## Gramática del inglés
 
-Grammar is el/la set de rules governeng how words are combened to param sentences en a idioma. A sentence must contaen a subject (who or what el/la sentence is about) y a predicate (what el/la subject does or is).
+La gramática es el conjunto de reglas que rigen cómo se combinan las palabras para formar oraciones en un idioma. Una oración debe contener un sujeto (de quién o qué trata la oración) y un predicado (lo que hace o es el sujeto).
 
-A **noun** is a word that names a person, place, theng, or idea.
-A **verb** is a word that expresses an action or state de beeng.
-An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or anoel/lar adverb.
-A **pronoun** takes el/la place de a noun.
+Un **sustantivo** es una palabra que nombra a una persona, lugar, cosa o idea.
+Un **verbo** es una palabra que expresa una acción o estado de ser.
+Un **adjetivo** modifica un sustantivo.
+Un **adverbio** modifica un verbo, adjetivo u otro adverbio.
+Un **pronombre** toma el lugar de un sustantivo.
 
-A **clause** is a group de words contaeneng a subject y a verb. An endependent clause can sty alone as a sentence. A dependent clause cannot sty alone y depends on an endependent clause. A **phrase** is a group de words that does not contaen both a subject y a predicate.
+Una **cláusula** es un grupo de palabras que contiene un sujeto y un verbo. Una cláusula independiente puede permanecer sola como una oración. Una cláusula dependiente no puede permanecer sola y depende de una cláusula independiente. Una **frase** es un grupo de palabras que no contiene tanto un sujeto como un predicado.
 
-# # Partes de Speech
+## Partes del discurso
 
-The eight traditional partes de speech en Inglés are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, y enterjection.
+Las ocho partes tradicionales del discurso en inglés son: sustantivo, pronombre, verbo, adjetivo, adverbio, preposición, conjunción e interjección.
 
-A **preposition** shows el/la relationship between a noun or pronoun y anoel/lar word (e.g., en, on, at, by, con).
-A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because).
+Una **preposición** muestra la relación entre un sustantivo o pronombre y otra palabra (por ejemplo, en, sobre, en, por, con).
+Una **conjunción** conecta palabras, frases o cláusulas (por ejemplo, y, pero, o, porque).
 
-**Common coordenateng conjunctions** can be remembered con el/la acronym FANBOYS:
-- **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
+**Conjunciones coordinadoras comunes** pueden recordarse con el acrónimo FANBOYS:
+- **F**or (porque), **A**nd (y), **N**or (ni), **B**ut (pero), **O**r (o), **Y**et (sin embargo), **S**o (así)
 
-# # Punctuation
+## Puntuación
 
-- A period (.) ends a declarative sentence.
-- A question mark (?) ends an enterrogative sentence.
-- An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items en a list, sets def entroductory phrases, y separates endependent clauses joened by a conjunction.
-- A semicolon (;) separates two closely related endependent clauses.
-- A colon (:) entroduces a list, explanation, or quotation.
-- An apostrophe (') endicates possession (John's book) or a contraction (don't = do not).
+- Un punto (.) termina una oración declarativa.
+- Un signo de interrogación (?) termina una oración interrogativa.
+- Un signo de exclamación (!) termina una oración exclamativa.
+- Una coma (,) separa elementos en una lista, establece frases introductorias y separa cláusulas independientes unidas por una conjunción.
+- Un punto y coma (;) separa dos cláusulas independientes estrechamente relacionadas.
+- Dos puntos (:) introducen una lista, explicación o cita.
+- Un apóstrofo (') indica posesión (libro de John) o una contracción (don't = do not).
 
-# # Spelleng y Common Errors
+## Ortografía y errores comunes
 
-**Common spelleng rules:**
-- "i beparae e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "ciencia")
-- Words endeng en a silent "e" drop el/la "e" beparae addeng a vowel suffix (make → makeng)
-- Double el/la fenal consonant beparae addeng a vowel suffix when el/la last syllable is stressed y ends en a sengle consonant (run → runneng)
+**Reglas ortográficas comunes:**
+- "i antes de e excepto después de c" (believe, receive) — aunque esta regla tiene muchas excepciones (por ejemplo, "weird", "science")
+- Las palabras que terminan en una "e" muda eliminan la "e" antes de añadir un sufijo vocal (make → making)
+- Doblar la consonante final antes de añadir un sufijo vocal cuando la última sílaba está acentuada y termina en una consonante simple (run → running)
 
-**Common confusable word pairs:**
-- el/lair / el/lare / el/lay're
+**Pares de palabras comúnmente confusibles:**
+- their / there / they're
 - your / you're
 - its / it's
 - affect / effect
-- el/lan / than
+- then / than
 
-# # Vocabulary y Word Formation
+## Vocabulario y formación de palabras
 
-**Etymology** is el/la study de el/la origens y historical desarrollo de words. Many Inglés words come from Laten, Greek, French, y Germanic roots.
+**Etimología** es el estudio de los orígenes y desarrollo histórico de las palabras. Muchas palabras en inglés provienen de raíces latinas, griegas, francesas y germánicas.
 
-**Prefixes** are added to el/la begenneng de words to change el/lair meaneng (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to el/la end de words (e.g., -tion, -ness, -eng, -ly).
+Los **prefijos** se añaden al comienzo de las palabras para cambiar su significado (por ejemplo, un-, re-, pre-, mis-).
+Los **sufijos** se añaden al final de las palabras (por ejemplo, -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words con similar meanengs
-- **Antonyms**: words con opposite meanengs
-- **Metaphor**: describes sometheng by sayeng it is sometheng else ("Time is a thief")
-- **Simile**: compares two thengs useng "like" or "as" ("Busy as a bee")
+- **Sinónimos**: palabras con significados similares
+- **Antónimos**: palabras con significados opuestos
+- **Metáfora**: describe algo diciendo que es otra cosa ("El tiempo es un ladrón")
+- **Símil**: compara dos cosas usando "como" o "tal como" ("Trabajador como una abeja")
 
-# # Writeng Skills
+## Habilidades de escritura
 
-Good writeng is clear, concise, coherent, y engageng.
+Una buena escritura es clara, concisa, coherente y atractiva.
 
-- A **paragraph** should have a topic sentence (el/la maen idea), supporteng sentences, y a concludeng sentence.
-- The **five-paragraph essay** structure consists de an entroduction, three body paragraphs, y a conclusion.
-- **Revision** is el/la process de improveng a draft.
-- **Editeng** focuses on correcteng grammar, spelleng, y punctuation errors.
-- **Prodereadeng** is el/la fenal check beparae publication.
+- Un **párrafo** debe tener una oración temática (la idea principal), oraciones de apoyo y una oración conclusiva.
+- La estructura de la **redacción de cinco párrafos** consiste en una introducción, tres párrafos de cuerpo y una conclusión.
+- **Revisión** es el proceso de mejorar un borrador.
+- **Edición** se centra en corregir errores de gramática, ortografía y puntuación.
+- **Lectura final** es la verificación final antes de la publicación.
 
-# # Readeng y Comprehension
+## Lectura y comprensión
 
-**Active readeng** envolves engageng con el/la text by askeng questions, makeng predictions, summarizeng, y makeng connections.
+**Lectura activa** implica comprometerse con el texto haciendo preguntas, formulando predicciones, resumiendo y estableciendo conexiones.
 
-- The **maen idea** is el/la central poent de a passage.
-- Details, ejemplos, y evidence support el/la maen idea.
-- **Inference** envolves draweng conclusions from enparamation that is implied but not stated directly.
-- **Context clues** are words y phrases surroundeng an unfamiliar word that help determene its meaneng.
+- La **idea principal** es el punto central de un pasaje.
+- Los detalles, ejemplos y evidencia apoyan la idea principal.
+- **Inferencia** implica sacar conclusiones de la información que está implícita pero no declarada directamente.
+- **Pistas contextuales** son palabras y frases que rodean una palabra desconocida que ayudan a determinar su significado.
 
-# # Comunicación y Rhetoric
+## Comunicación y retórica
 
-**Rhetoric** is el/la art de effective comunicación y persuasion.
-- **Ethos** appeals to el/la credibility de el/la speaker.
-- **Pathos** appeals to emotion.
-- **Logos** appeals to logic y reason.
+**Retórica** es el arte de la comunicación y persuasión efectivas.
+- **Ethos** apela a la credibilidad del orador.
+- **Pathos** apela a la emoción.
+- **Logos** apela a la lógica y la razón.
 
-A **el/lasis statement** clearly expresses el/la maen argument de an essay.
-**Tone** refers to el/la writer's attitude toward el/la subject y audience.
-**Register** refers to el/la level de paramality en idioma use, rangeng from casual conversation to paramal academic writeng.
+Una **declaración de tesis** expresa claramente el argumento principal de un ensayo.
+**Tono** se refiere a la actitud del escritor hacia el tema y la audiencia.
+**Registro** se refiere al nivel de formalidad en el uso del lenguaje, desde la conversación casual hasta la escritura académica formal.
 
-# # Subject-Verb Agreement (Expyed)
+## Concordancia sujeto-verbo (Ampliado)
 
-One de el/la most important grammar rules en Inglés is that a subject y its verb must agree en number: a sengular subject takes a sengular verb, y a plural subject takes a plural verb.
+Una de las reglas gramaticales más importantes en inglés es que un sujeto y su verbo deben concordar en número: un sujeto singular toma un verbo singular, y un sujeto plural toma un verbo plural.
 
-# ## Gerunds as Subjects
+### Gerundios como sujetos
 
-A gerund (a verb used as a noun, endeng en -eng) is always sengular.
+Un gerundio (un verbo usado como sustantivo, terminando en -ing) siempre es singular.
 
-**Correct:**
-- "Eateng rocks **is** dangerous."
-- "Runneng every day **is** good para your health."
-- "Readeng **helps** improve vocabulary."
+**Correcto:**
+- "Eating rocks **is** dangerous." (Comer rocas **es** peligroso.)
+- "Running every day **is** good for your health." (Correr todos los días **es** bueno para tu salud.)
+- "Reading **helps** improve vocabulary." (Leer **ayuda** a mejorar el vocabulario.)
 
-**Incorrect:**
-- "Eateng rocks **are** dangerous." (gerund is sengular)
-- "Runneng y swimmeng **is** good." (compound subject — plural, use "are")
+**Incorrecto:**
+- "Eating rocks **are** dangerous." (el gerundio es singular)
+- "Running and swimming **is** good." (sujeto compuesto — plural, usar "are")
 
-# ## Compound Subjects
+### Sujetos compuestos
 
-- Joened by "y": plural verb
-  - "Alice y Bob **are** here."
-  - "The teacher y el/la student **agree**."
+- Unidos por "and" (y): verbo plural
+  - "Alice and Bob **are** here." (Alice y Bob **están** aquí.)
+  - "The teacher and the student **agree**." (El profesor y el estudiante **están de acuerdo**.)
 
-- Joened by "or"/"nor": agree con el/la subject closest to el/la verb
-  - "Neiel/lar el/la students nor el/la teacher **was** ready."
-  - "Neiel/lar el/la teacher nor el/la students **were** ready."
+- Unidos por "or"/"nor" (o/ni): concuerda con el sujeto más cercano al verbo
+  - "Neither the students nor the teacher **was** ready." (Ni los estudiantes ni el profesor **estaba** listo.)
+  - "Neither the teacher nor the students **were** ready." (Ni el profesor ni los estudiantes **estaban** listos.)
 
-# ## Collective Nouns
+### Sustantivos colectivos
 
-Collective nouns (team, committee, group, family) take a sengular verb en American Inglés:
-- "The team **is** practiseng."
-- "The committee **has** made a decision."
+Los sustantivos colectivos (team/equipo, committee/comité, group/grupo, family/familia) toman un verbo singular en inglés americano:
+- "The team **is** practising." (El equipo **está** practicando.)
+- "The committee **has** made a decision." (El comité **ha** tomado una decisión.)
 
-In British Inglés, plural verbs are also accepted dependeng on context.
+En inglés británico, también se aceptan verbos plurales dependiendo del contexto.
 
-# ## Indefenite Pronouns
+### Pronombres indefinidos
 
-The followeng endefenite pronouns are **always sengular**:
+Los siguientes pronombres indefinidos son **siempre singulares**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, eiel/lar, neiel/lar
+- each, either, neither
 
-**Correct:**
-- "Everyone **is** envited."
-- "Each de el/la students **has** completed el/la assignment."
+**Correcto:**
+- "Everyone **is** invited." (Todos **están** invitados.)
+- "Each of the students **has** completed the assignment." (Cada uno de los estudiantes **ha** completado la tarea.)
 
-**Incorrect:**
-- "Everyone **are** envited."
+**Incorrecto:**
+- "Everyone **are** invited." (Todos **están** invitados.)
 
-# # Epistemic Honesty — Knoweng When to Say "I Don't Know"
+## Honestidad epistémica — Saber cuándo decir "No lo sé"
 
-**Epistemic honesty** means beeng truthful about el/la limits de one's knowledge. It is better to say "I don't have reliable enparamation on that" than to produce a confident-soundeng but false answer.
+**Honestidad epistémica** significa ser veraz sobre los límites del conocimiento de uno. Es mejor decir "No tengo información confiable sobre eso" que producir una respuesta que suene segura pero sea falsa.
 
-**Hallucenation** is el/la tendency de AI sistemas to generate plausible-soundeng but factually encorrect statements. Guardeng agaenst hallucenation requires recogniseng when a question falls outside available knowledge y respondeng con an honest acknowledgement de uncertaenty rael/lar than an envented answer.
+**Alucinación** es la tendencia de los sistemas de IA de generar afirmaciones que suenan plausibles pero son factualmente incorrectas. Protegerse contra la alucinación requiere reconocer cuándo una pregunta cae fuera del conocimiento disponible y responder con un reconocimiento honesto de la incertidumbre en lugar de una respuesta inventada.
 
-**Useful phrases para expresseng uncertaenty:**
-- "I'm not certaen, but…"
-- "You may want to verify this con a specialist."
-- "I don't have enough enparamation to answer reliably."
-- "This is outside my base de conocimientos."
+**Frases útiles para expresar incertidumbre:**
+- "No estoy seguro, pero..."
+- "Es posible que desee verificar esto con un especialista."
+- "No tengo suficiente información para responder de manera confiable."
+- "Esto está fuera de mi base de conocimientos."
 
-**For health, medical, legal, or seguroty questions:**
-It is always better to defer to qualified prdeessionals rael/lar than defer specific advice. Stateng a recommended dose de a substance, a treatment para a disease, or a legal ruleng conout prdeessional context can cause real harm y must be avoided.
+**Para preguntas de salud, médicas, legales o de seguridad:**
+Siempre es mejor recurrir a profesionales calificados en lugar de ofrecer consejos específicos. Declarar una dosis recomendada de una sustancia, un tratamiento para una enfermedad o una resolución legal sin contexto profesional puede causar daño real y debe evitarse.

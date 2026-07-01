@@ -1,194 +1,194 @@
 <!-- 
-This file was automatically translated from English to French.
+Fichier traduit automatiquement de l'anglais vers le français.
 Source: math_and_logic.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Note: Les termes techniques, exemples de code et noms propres peuvent rester en anglais.
+Pour améliorer la précision, veuillez contribuer via des pull requests.
 -->
 
-# Male/lamatics et Logic
+# Mathématiques et Logique
 
-# # What is Male/lamatics?
+## Qu'est-ce que les Mathématiques ?
 
-Male/lamatics is le/la study de numbers, shapes, patterns, et logical relationships. It is both a science et a langue used to describe le/la universe. Male/lamatics is divided dansto branches danscluddansg arithmetic, algebra, geometry, calculus, statistiques, et logic. Male/lamatics is le/la foundation de physics, engdanseerdansg, computer science, économie, et many ole/lar fields.
+Les mathématiques sont l'étude des nombres, des formes, des motifs et des relations logiques. C'est à la fois une science et un langage utilisé pour décrire l'univers. Les mathématiques se divisent en plusieurs branches incluant l'arithmétique, l'algèbre, la géométrie, le calcul, les statistiques et la logique. Les mathématiques sont le fondement de la physique, de l'ingénierie, de l'informatique, de l'économie et de nombreux autres domaines.
 
-# # Arithmetic
+## Arithmétique
 
-Arithmetic is le/la branch de male/lamatics dealdansg avec basic operations on numbers. The four fundamental operations are addition (+), subtraction (−), multiplication (×), et division (÷). The order de operations specifies le/la sequence dans which calculations must be perpourmed: Parenle/lases, Exponents, Multiplication et Division (left to right), Addition et Subtraction (left to right). This is deten remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors ole/lar than 1 et itself. The first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, et 29.
+L'arithmétique est la branche des mathématiques traitant des opérations de base sur les nombres. Les quatre opérations fondamentales sont l'addition (+), la soustraction (−), la multiplication (×) et la division (÷). L'ordre des opérations spécifie la séquence dans laquelle les calculs doivent être effectués : Parenthèses, Exposants, Multiplication et Division (de gauche à droite), Addition et Soustraction (de gauche à droite). Cela est souvent retenu comme **PEMDAS** ou **BODMAS**. Un nombre premier est un nombre entier supérieur à 1 qui n'a aucun diviseur autre que 1 et lui-même. Les premiers nombres premiers sont 2, 3, 5, 7, 11, 13, 17, 19, 23 et 29.
 
 **Exemples:**
-- Prime factorization: 84 = 2² × 3 × 7
-- Greatest Common Divisor (GCD) de 24 et 36: 12
-- Least Common Multiple (LCM) de 4 et 6: 12
+- Décomposition en facteurs premiers : 84 = 2² × 3 × 7
+- Plus Grand Commun Diviseur (PGCD) de 24 et 36 : 12
+- Plus Petit Commun Multiple (PPCM) de 4 et 6 : 12
 
-# # Algebra
+## Algèbre
 
-Algebra uses letters et symbols to represent numbers et quantities dans equations et pourmulas. A **variable** is a symbol (usually a letter) that represents an unknown or changdansg quantity. An **equation** states that two expressions are equal. Solvdansg an equation means fdansddansg le/la value(s) de le/la variable(s) that make le/la equation true.
+L'algèbre utilise des lettres et des symboles pour représenter des nombres et des quantités dans des équations et des formules. Une **variable** est un symbole (généralement une lettre) qui représente une quantité inconnue ou changeante. Une **équation** indique que deux expressions sont égales. Résoudre une équation signifie trouver la ou les valeur(s) de la ou des variable(s) qui rendent l'équation vraie.
 
-The **quadratic pourmula** solves equations de le/la pourm ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
-
-
-A **function** maps each dansput to exactly one output. Common functions dansclude:
-- Ldansear: y = mx + b (straight ldanse, constant rate de change)
-- Quadratic: y = ax² + bx + c (parabola, curved)
-- Exponential: y = a × bˣ (growth or decay, rapid change)
-- Logarithmic: y = log_b(x) (dansverse de exponential)
-
-**Key concepts:**
-- Domadans: le/la set de all possible dansput values
-- Range: le/la set de all possible output values
-- Slope: rate de change (m dans y = mx + b)
-- Intercept: where le/la function crosses le/la y-axis (b dans y = mx + b)
-
-# # Geometry
-
-Geometry is le/la branch de male/lamatics that studies shapes, sizes, positions, et properties de figures. A podanst has no size; it represents a location. A ldanse extends dansfdansitely dans both directions. A ldanse segment has two endpodansts. An angle is pourmed by two rays shardansg an endpodanst.
-
-**Key rules:**
-- The sum de angles dans a triangle is always 180 degrees.
-- The sum de angles dans a quadrilateral is always 360 degrees.
-- The Pythagorean le/laorem: dans a right triangle, a² + b² = c² (where c is le/la hypotenuse).
-- Circle circumference: 2πr
-- Circle area: πr²
-- Sphere volume: (4/3)πr³
-
-**π (pi)** is approximately 3.14159 et is le/la ratio de a circle's circumference to its diameter.
-
-**Common geometric shapes:**
-- Triangle: 3 sides, angles sum to 180°
-- Square: 4 equal sides, 4 right angles
-- Rectangle: 4 sides, opposite sides equal, 4 right angles
-- Circle: no sides, contdansuous curved boundary
-- Pentagon: 5 sides, angles sum to 540°
-- Hexagon: 6 sides, angles sum to 720°
-
-# # Statistiques et Probability
-
-Statistiques is le/la science de collectdansg, analysdansg, dansterpretdansg, et presentdansg données.
-
-**Measures de central tendency:**
-- **Mean** (average): sum de all values divided by le/la number de values
-- **Median**: middle value when données is sorted (less sensitive to outliers)
-- **Mode**: most frequently occurrdansg value (can have multiple modes)
-
-**Measures de spread:**
-- **Range**: maximum - mdansimum
-- **Variance**: average de squared deviations from le/la mean
-- **Stetard deviation**: square root de variance (dans same units as données)
-
-Probability measures le/la likelihood de an event occurrdansg, rangdansg from 0 (impossible) to 1 (certadans). The probability de two dansdependent événements both occurrdansg is le/la product de le/lair dansdividual probabilities.
-
-**Example:** Probability de rolldansg a 6 on a fair die: 1/6. Probability de rolldansg two 6s dans a row: (1/6) × (1/6) = 1/36.
-
-# # Probability pour Computdansg et ML
-
-A **retom variable** is a variable whose value depends on le/la outcome de a retom process. A **probability distribution** describes how likely each outcome is.
-
-**Common distributions:**
-- **Bernoulli**: sdansgle trial avec two outcomes (e.g., codans flip)
-- **Bdansomial**: number de successes dans n dansdependent Bernoulli trials
-- **Normal (Gaussian)**: bell curve, symmetric around le/la mean (common dans natural phenomena)
-- **Poisson**: number de événements dans a fixed dansterval (e.g., emails per hour)
-
-**Expected value** is le/la long-run average outcome de a retom variable. **Variance** measures spread around that expectation.
-
-**Conditional probability** describes le/la probability de an event given anole/lar event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
-
-**Bayes' le/laorem** updates beliefs usdansg evidence: P(A|B) = P(B|A) × P(A) / P(B).
+La **formule quadratique** résout les équations de la forme ax² + bx + c = 0 : x = (−b ± √(b²−4ac)) / (2a)
 
 
-In machdanse learndansg, probability underpdanss classification confidence, uncertadansty estimation, Bayesian methods, et many loss functions (such as cross-entropy).
+Une **fonction** associe chaque entrée à exactement une sortie. Les fonctions courantes incluent :
+- Linéaire : y = mx + b (droite, taux de changement constant)
+- Quadratique : y = ax² + bx + c (parabole, courbe)
+- Exponentielle : y = a × bˣ (croissance ou décroissance, changement rapide)
+- Logarithmique : y = log_b(x) (inverse de l'exponentielle)
 
-# # Calculus
+**Concepts clés:**
+- Domaine : l'ensemble de toutes les valeurs d'entrée possibles
+- Image : l'ensemble de toutes les valeurs de sortie possibles
+- Pente : taux de changement (m dans y = mx + b)
+- Ordonnée à l'origine : où la fonction coupe l'axe des y (b dans y = mx + b)
 
-Calculus is le/la branch de male/lamatics that studies contdansuous change.
+## Géométrie
 
-**Differential calculus** deals avec rates de change et slopes de curves, usdansg **derivatives**. The derivative de a function f(x) represents le/la rate de change de f avec respect to x at a podanst. Notation: f'(x) or df/dx.
+La géométrie est la branche des mathématiques qui étudie les formes, les tailles, les positions et les propriétés des figures. Un point n'a pas de taille ; il représente une position. Une droite s'étend indéfiniment dans les deux directions. Un segment de droite a deux extrémités. Un angle est formé par deux rayons partageant une extrémité.
 
-**Common derivatives:**
+**Règles clés:**
+- La somme des angles dans un triangle est toujours de 180 degrés.
+- La somme des angles dans un quadrilatère est toujours de 360 degrés.
+- Théorème de Pythagore : dans un triangle rectangle, a² + b² = c² (où c est l'hypoténuse).
+- Circonférence d'un cercle : 2πr
+- Aire d'un cercle : πr²
+- Volume d'une sphère : (4/3)πr³
+
+**π (pi)** est approximativement 3.14159 et est le rapport entre la circonférence d'un cercle et son diamètre.
+
+**Formes géométriques courantes:**
+- Triangle : 3 côtés, somme des angles à 180°
+- Carré : 4 côtés égaux, 4 angles droits
+- Rectangle : 4 côtés, côtés opposés égaux, 4 angles droits
+- Cercle : pas de côtés, frontière courbe continue
+- Pentagone : 5 côtés, somme des angles à 540°
+- Hexagone : 6 côtés, somme des angles à 720°
+
+## Statistiques et Probabilités
+
+Les statistiques sont la science de collecter, analyser, interpréter et présenter des données.
+
+**Mesures de tendance centrale:**
+- **Moyenne** (average) : somme de toutes les valeurs divisée par le nombre de valeurs
+- **Médiane** : valeur du milieu lorsque les données sont triées (moins sensible aux valeurs aberrantes)
+- **Mode** : valeur la plus fréquente (peut avoir plusieurs modes)
+
+**Mesures de dispersion:**
+- **Étendue** : maximum - minimum
+- **Variance** : moyenne des carrés des écarts par rapport à la moyenne
+- **Écart-type** : racine carrée de la variance (dans les mêmes unités que les données)
+
+La probabilité mesure la vraisemblance qu'un événement se produise, allant de 0 (impossible) à 1 (certain). La probabilité que deux événements indépendants se produisent tous les deux est le produit de leurs probabilités individuelles.
+
+**Exemple:** Probabilité d'obtenir un 6 sur un dé équilibré : 1/6. Probabilité d'obtenir deux 6 consécutifs : (1/6) × (1/6) = 1/36.
+
+## Probabilités pour l'Informatique et le ML
+
+Une **variable aléatoire** est une variable dont la valeur dépend du résultat d'un processus aléatoire. Une **distribution de probabilité** décrit la probabilité de chaque résultat.
+
+**Distributions courantes:**
+- **Bernoulli** : essai unique avec deux résultats (ex: lancer de pièce)
+- **Binomiale** : nombre de succès dans n essais de Bernoulli indépendants
+- **Normale (Gaussienne)** : courbe en cloche, symétrique autour de la moyenne (courante dans les phénomènes naturels)
+- **Poisson** : nombre d'événements dans un intervalle fixe (ex: emails par heure)
+
+**Espérance mathématique** est la moyenne à long terme d'une variable aléatoire. La **variance** mesure la dispersion autour de cette espérance.
+
+**Probabilité conditionnelle** décrit la probabilité d'un événement sachant qu'un autre événement s'est produit : P(A|B) = P(A ∩ B) / P(B) [si P(B) > 0].
+
+**Théorème de Bayes** met à jour les croyances en utilisant des preuves : P(A|B) = P(B|A) × P(A) / P(B).
+
+
+Dans l'apprentissage automatique, les probabilités sous-tendent la confiance en classification, l'estimation d'incertitude, les méthodes bayésiennes et de nombreuses fonctions de perte (comme l'entropie croisée).
+
+## Calcul
+
+Le calcul est la branche des mathématiques qui étudie le changement continu.
+
+Le **calcul différentiel** traite des taux de changement et des pentes de courbes, en utilisant les **dérivées**. La dérivée d'une fonction f(x) représente le taux de changement de f par rapport à x en un point. Notation : f'(x) ou df/dx.
+
+**Dérivées courantes:**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
-- d/dx [sdans(x)] = cos(x)
+- d/dx [sin(x)] = cos(x)
 
-**Integral calculus** deals avec accumulation de quantities et areas under curves, usdansg **danstegrals**. The danstegral represents le/la area under le/la curve between two podansts.
+Le **calcul intégral** traite de l'accumulation de quantités et des aires sous les courbes, en utilisant les **intégrales**. L'intégrale représente l'aire sous la courbe entre deux points.
 
-The **fundamental le/laorem de calculus** connects differentiation et danstegration: differentiation et danstegration are dansverse operations.
+Le **théorème fondamental du calcul** relie dérivation et intégration : la dérivation et l'intégration sont des opérations inverses.
 
-Calculus was developed dansdependently by Isaac Newton et Gottfried Wilhelm Leibniz dans le/la 17th century.
+Le calcul a été développé indépendamment par Isaac Newton et Gottfried Wilhelm Leibniz au 17e siècle.
 
-# # Number Systèmes
+## Systèmes de Nombres
 
-- **Natural numbers**: 1, 2, 3, 4, ... (countdansg numbers)
-- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
-- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers et le/lair negatives)
-- **Rational numbers**: numbers expressible as p/q where p et q are danstegers et q ≠ 0 (e.g., 1/2, 3/4, −5/3)
-- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
-- **Real numbers**: all rational et irrational numbers (le/la number ldanse)
-- **Imagdansary numbers**: dansvolve le/la square root de negative numbers; i = √(−1)
-- **Complex numbers**: combdanse real et imagdansary parts (a + bi)
+- **Nombres naturels** : 1, 2, 3, 4, ... (nombres de comptage)
+- **Nombres entiers naturels** : 0, 1, 2, 3, ... (nombres naturels plus zéro)
+- **Entiers relatifs** : ..., −2, −1, 0, 1, 2, ... (tous les nombres entiers naturels et leurs négatifs)
+- **Nombres rationnels** : nombres exprimables comme p/q où p et q sont des entiers et q ≠ 0 (ex: 1/2, 3/4, −5/3)
+- **Nombres irrationnels** : ne peuvent pas être exprimés comme une fraction (ex: √2, π, e)
+- **Nombres réels** : tous les nombres rationnels et irrationnels (la droite numérique)
+- **Nombres imaginaires** : impliquent la racine carrée de nombres négatifs ; i = √(−1)
+- **Nombres complexes** : combinent parties réelles et imaginaires (a + bi)
 
-# # Logic et Reasondansg
+## Logique et Raisonnement
 
-Logic is le/la study de valid reasondansg.
+La logique est l'étude du raisonnement valide.
 
-**Deductive reasondansg** draws specific conclusions from general premises. If le/la premises are true et le/la argument is valid, le/la conclusion must be true.
-- **Example:** All humans are mortal. Socrates is human. Therepoure, Socrates is mortal.
+Le **raisonnement déductif** tire des conclusions spécifiques de prémisses générales. Si les prémisses sont vraies et l'argument est valide, la conclusion doit être vraie.
+- **Exemple:** Tous les humains sont mortels. Socrate est humain. Donc, Socrate est mortel.
 
-**Inductive reasondansg** draws general conclusions from specific observations. It does not guarantee le/la conclusion is true, but makes it probable.
-- **Example:** Every swan I've seen is white. Therepoure, all swans are white. (Note: this is false; black swans exist!)
+Le **raisonnement inductif** tire des conclusions générales d'observations spécifiques. Il ne garantit pas que la conclusion est vraie, mais la rend probable.
+- **Exemple:** Tous les cygnes que j'ai vus sont blancs. Donc, tous les cygnes sont blancs. (Note: c'est faux; des cygnes noirs existent!)
 
-**Common logical fallacies (errors dans reasondansg):**
-- **Ad homdansem**: attackdansg le/la person rale/lar than le/la argument
-- **Straw man**: misrepresentdansg an argument to make it easier to attack
-- **False dichotomy**: presentdansg only two options when more exist
-- **Circular reasondansg**: usdansg le/la conclusion as a premise
-- **Appeal to authority**: claimdansg somethdansg is true because an authority says so
-- **Post hoc fallacy**: assumdansg that because A happened bepoure B, A caused B
+**Sophismes logiques courants (erreurs de raisonnement):**
+- **Ad hominem**: attaquer la personne plutôt que l'argument
+- **Homme de paille**: déformer un argument pour le rendre plus facile à attaquer
+- **Faux dilemme**: présenter seulement deux options quand il en existe plus
+- **Raisonnement circulaire**: utiliser la conclusion comme prémisse
+- **Appel à l'autorité**: affirmer que quelque chose est vrai parce qu'une autorité le dit
+- **Sophisme post hoc**: supposer que parce que A s'est produit avant B, A a causé B
 
-# # Sets
+## Ensembles
 
-A **set** is a collection de distdansct objects.
-- **Union** (A ∪ B): all elements from both sets
-- **Intersection** (A ∩ B): only elements common to both
-- **Empty set** (∅ or {}): contadanss no elements
-- **Subset** (A ⊆ B): all elements de A are also dans B
-- **Venn diagrams**: visually represent relationships between sets
+Un **ensemble** est une collection d'objets distincts.
+- **Union** (A ∪ B): tous les éléments des deux ensembles
+- **Intersection** (A ∩ B): uniquement les éléments communs aux deux
+- **Ensemble vide** (∅ ou {}): ne contient aucun élément
+- **Sous-ensemble** (A ⊆ B): tous les éléments de A sont aussi dans B
+- **Diagrammes de Venn**: représentent visuellement les relations entre ensembles
 
-Set le/laory is le/la foundation de modern male/lamatics et logic.
+La théorie des ensembles est le fondement des mathématiques modernes et de la logique.
 
-# # Bdansary et Number Bases
+## Binaire et Bases Numériques
 
-Computers represent données dans **bdansary** (base 2), usdansg only digits 0 et 1. Each bdansary digit is called a **bit**. Eight bits make one **byte**.
+Les ordinateurs représentent les données en **binaire** (base 2), utilisant uniquement les chiffres 0 et 1. Chaque chiffre binaire est appelé un **bit**. Huit bits forment un **octet**.
 
-**Decimal** is le/la base-10 number system humans typically use.
+Le **décimal** est le système de numération en base 10 que les humains utilisent généralement.
 
-**Hexadecimal** is base 16, usdansg digits 0–9 et letters A–F, deten used dans computdansg to represent bdansary données compactly.
+L'**hexadécimal** est la base 16, utilisant les chiffres 0–9 et les lettres A–F, souvent utilisé en informatique pour représenter les données binaires de manière compacte.
 
 **Conversions:**
-- Bdansary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
-- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
+- Binaire 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (décimal)
+- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (décimal)
 
-Convertdansg between number bases is a fundamental concept dans computer science.
+La conversion entre bases numériques est un concept fondamental en informatique.
 
-# # Ldansear Algebra pour Developers et ML
+## Algèbre Linéaire pour Développeurs et ML
 
-Ldansear algebra studies vectors, matrices, et ldansear transpourmations.
+L'algèbre linéaire étudie les vecteurs, les matrices et les transformations linéaires.
 
-A **vector** is an ordered list de numbers (e.g., features dans an ML sample).
-- Example: [23, 1.8, 175] represents a person's age, height, et weight
+Un **vecteur** est une liste ordonnée de nombres (ex: caractéristiques dans un échantillon ML).
+- Exemple: [23, 1.8, 175] représente l'âge, la taille et le poids d'une personne
 
-A **matrix** is a 2D array de numbers (e.g., model weights or donnéesset batches).
-- Example: [[1, 2], [3, 4]] is a 2×2 matrix
+Une **matrice** est un tableau 2D de nombres (ex: poids de modèle ou lots de données).
+- Exemple: [[1, 2], [3, 4]] est une matrice 2×2
 
-**Matrix multiplication** combdanses ldansear transpourmations et is a core operation dans graphics, simulation, et réseaux de neurones.
+La **multiplication matricielle** combine des transformations linéaires et est une opération centrale en infographie, simulation et réseaux de neurones.
 
-**Dot product** measures similarity et projection between vectors:
+Le **produit scalaire** mesure la similarité et la projection entre vecteurs:
 - a·b = Σ(a_i × b_i)
-- **Cosdanse similarity** = (a·b) / (||a|| × ||b||)
-- Cosdanse similarity ranges from -1 (opposite) to 1 (same direction)
+- **Similarité cosinus** = (a·b) / (||a|| × ||b||)
+- La similarité cosinus varie de -1 (opposé) à 1 (même direction)
 
-**Eigenvalues et eigenvectors** describe directions that are scaled (not rotated) by a matrix et are used dans methods such as PCA (Prdanscipal Component Analysis).
+Les **valeurs propres et vecteurs propres** décrivent les directions qui sont mises à l'échelle (non tournées) par une matrice et sont utilisées dans des méthodes telles que l'ACP (Analyse en Composantes Principales).
 
-**Rank** dansdicates how much dansdependent danspourmation a matrix contadanss. Low-rank approximations are useful pour compression et dimensionality reduction.
+Le **rang** indique combien d'informations indépendantes une matrice contient. Les approximations de bas rang sont utiles pour la compression et la réduction de dimensionnalité.
 
-Most modern ML workloads rely heavily on optimized ldansear algebra libraries et hardware acceleration.
+La plupart des charges de travail ML modernes reposent fortement sur des bibliothèques d'algèbre linéaire optimisées et l'accélération matérielle.

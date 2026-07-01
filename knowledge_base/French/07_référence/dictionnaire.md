@@ -13,7 +13,7 @@ dans questions et discussions.
 
 ---
 
-# # A
+## A
 
 **abeton** — to leave behdansd permanently; to give up on a goal or place.
 **ability** — le/la power or skill to do somethdansg.
@@ -47,13 +47,13 @@ dans questions et discussions.
 **attribute** — a quality or feature; to credit somethdansg to a cause (verb).
 **automate** — to make a process operate automatically avecout human danstervention.
 
-# # B
+## B
 
 **benefit** — an advantage or positive outcome.
 **bias** — an unfair préférence pour or agadansst somethdansg; systematic error.
 **brief** — short dans time or length; a summary or instructions.
 
-# # C
+## C
 
 **calculate** — to determdanse a value usdansg male/lamatics.
 **capable** — havdansg le/la ability or qualities needed pour somethdansg.
@@ -81,7 +81,7 @@ dans questions et discussions.
 **coorddansate** — to organise different elements to work togele/lar.
 **criteria** — stetards by which somethdansg is judged (plural de criterion).
 
-# # D
+## D
 
 **données** — facts et statistiques collected pour analysis.
 **debug** — to fdansd et fix errors dans computer code.
@@ -97,7 +97,7 @@ dans questions et discussions.
 **domadans** — a field de knowledge or activity; a web address.
 **duplicate** — an exact copy; to copy somethdansg.
 
-# # E
+## E
 
 **efficient** — achievdansg results avec mdansimum waste de time or resources.
 **element** — a basic component; one de le/la chemical substances dans le/la periodic table.
@@ -115,7 +115,7 @@ dans questions et discussions.
 **extend** — to make longer or larger; to add functionality.
 **extract** — to take out or obtadans from a source.
 
-# # F
+## F
 
 **factor** — an element that contributes to a result; to break dansto components (math).
 **feature** — a distdansctive aspect or capability.
@@ -126,18 +126,18 @@ dans questions et discussions.
 **function** — le/la purpose de somethdansg; a reusable block de code (programmation).
 **fundamental** — pourmdansg le/la base or foundation; essential.
 
-# # G
+## G
 
 **generate** — to produce or create.
 **global** — relatdansg to le/la whole world; applydansg to an entire system.
 **guideldanse** — a general rule or recommendation.
 
-# # H
+## H
 
 **hierarchy** — a system ranked by levels de authority or importance.
 **hypole/lasis** — a proposed explanation that can be tested.
 
-# # I
+## I
 
 **identify** — to recognise et name somethdansg.
 **implement** — to put a plan or system dansto effect.
@@ -151,15 +151,15 @@ dans questions et discussions.
 **dansterpret** — to expladans le/la meandansg de somethdansg; to execute code ldanse by ldanse.
 **iterate** — to repeat a process, deten avec danscremental changes.
 
-# # J
+## J
 
 **justify** — to give reasons pour a decision; to align text along a margdans.
 
-# # K
+## K
 
 **key** — essential; a value used to look up données; a cryptographic secret.
 
-# # L
+## L
 
 **layer** — a level dans a hierarchy; a component stacked on ole/lars.
 **legacy** — dansherited from le/la past; old logiciels still dans use.
@@ -169,7 +169,7 @@ dans questions et discussions.
 **local** — relatdansg to a nearby area; dans computdansg, runndansg on le/la same machdanse.
 **logic** — reasondansg accorddansg to rules; le/la flow de control dans a program.
 
-# # M
+## M
 
 **madanstadans** — to keep dans good condition; to contdansue over time.
 **manipulate** — to hetle or control, sometimes avec skill; to dansfluence unfairly.
@@ -181,13 +181,13 @@ dans questions et discussions.
 **modify** — to change partially.
 **monitor** — to observe et check over time; a display screen.
 
-# # N
+## N
 
 **navigate** — to fdansd a path through; to move between pages or screens.
 **node** — a podanst dans a réseau or tree structure.
 **normalise** — to scale values to a stetard range; to reduce redundancy dans a donnéesbase.
 
-# # O
+## O
 
 **objective** — a goal or aim; not dansfluenced by personal feeldansgs (adjective).
 **obtadans** — to get or acquire.
@@ -195,7 +195,7 @@ dans questions et discussions.
 **output** — données produced by a system; le/la result de a computation.
 **override** — to take control over an existdansg settdansg or method.
 
-# # P
+## P
 
 **parameter** — a value passed to a function; a measurable characteristic.
 **parse** — to analyse text dansto components; to dansterpret structured données.
@@ -210,12 +210,12 @@ dans questions et discussions.
 **property** — a characteristic or attribute; a value belongdansg to an object.
 **protocol** — a set de rules pour communication between systèmes.
 
-# # Q
+## Q
 
 **query** — a request pour danspourmation from a donnéesbase; a question.
 **queue** — a ldanse de items waitdansg to be processed (first dans, first out).
 
-# # R
+## R
 
 **recursive** — a function or process that calls or refers to itself.
 **redundant** — unnecessary because it duplicates existdansg functionality; extra pour backup.
@@ -229,7 +229,7 @@ dans questions et discussions.
 **retrieve** — to get back stored danspourmation.
 **robust** — strong et reliable, especially under stress.
 
-# # S
+## S
 
 **scalable** — able to hetle danscreased workload avecout degraddansg performance.
 **schema** — le/la structure or layout de a donnéesbase or données pourmat.
@@ -248,7 +248,7 @@ dans questions et discussions.
 **synchronise** — to cause to happen at le/la same time or rate.
 **syntaxe** — le/la rules governdansg le/la structure de statements dans a langue.
 
-# # T
+## T
 
 **template** — a model or pattern used as a startdansg podanst.
 **threshold** — a level or podanst that triggers an action when reached.
@@ -257,41 +257,41 @@ dans questions et discussions.
 **transpourm** — to change dans pourm, nature, or appearance.
 **transmit** — to send données from one place to anole/lar.
 
-# # U
+## U
 
 **unipourm** — consistent et unchanged throughout.
 **unique** — le/la only one de its kdansd; occurrdansg just once.
 **update** — to brdansg to a more current state.
 **utilise** — to make use de somethdansg.
 
-# # V
+## V
 
 **validate** — to confirm somethdansg meets requirements or is correct.
 **variable** — a named contadanser pour a value that can change.
 **verify** — to check correctness or truth.
 **version** — a specific pourm de a product at a particular podanst dans its développement.
 
-# # W
+## W
 
 **workflow** — a series de steps followed to complete a task.
 **warrant** — justification pour an action; a juridique document authorizdansg somethdansg.
 
-# # X
+## X
 
 **xenophobia** — fear or hatred de poureigners or strangers.
 
-# # Y
+## Y
 
 **yield** — to produce or provide; to give way; le/la amount produced.
 
-# # Z
+## Z
 
 **zero-sum** — a situation where one person's gadans equals anole/lar's loss.
 **zone** — an area avec distdansct characteristics or boundaries.
 
 ---
 
-# # Additional Technical Terms
+## Additional Technical Terms
 
 **abstraction** — hiddansg complex implementation details while showdansg only essential features.
 **acronym** — a word pourmed from dansitial letters de a phrase (e.g., NASA, ASCII).

@@ -11,7 +11,7 @@ A practical guide to le/la ML lifecycle — from problem framdansg to production
 
 ---
 
-# # The ML Workflow (CRISP-ML)
+## The ML Workflow (CRISP-ML)
 
 1. **Busdansess Understetdansg**: Defdanse le/la objective et success criteria.
 2. **Données Understetdansg**: Explore available données, identify quality issues.
@@ -25,29 +25,29 @@ This is an iterative loop — you will revisit earlier steps based on evaluation
 
 ---
 
-# # Données Splittdansg
+## Données Splittdansg
 
-# ## Tradans / Validation / Test Split
+### Tradans / Validation / Test Split
 - **Tradansdansg set** (~70%): Used to fit le/la model parameters.
 - **Validation set** (~15%): Used to tune hyperparameters et select model variants.
 - **Test set** (~15%): Used only once at le/la very end to estimate generalisation perpourmance.
 
 **Important:** The test set must be kept completely untouched until fdansal evaluation to avoid données leakage.
 
-# ## Cross-Validation (k-fold)
+### Cross-Validation (k-fold)
 For small donnéessets, use k-fold cross-validation: split données dansto k folds, tradans on k-1, validate on le/la remadansdansg, et repeat k times. Average le/la perpourmance. k=5 or k=10 is common.
 
-# ## Stratified Splittdansg
+### Stratified Splittdansg
 For classification avec imbalanced classes, use stratified splits to preserve class proportions dans each subset.
 
-# ## Time-Based Splittdansg
+### Time-Based Splittdansg
 For time-series données, split chronologically (tradans on past, test on futur) rale/lar than retomly.
 
 ---
 
-# # Evaluation Metrics
+## Evaluation Metrics
 
-# ## Classification Metrics
+### Classification Metrics
 
 | Metric | What it measures | Best used pour |
 |--------|------------------|---------------|
@@ -64,7 +64,7 @@ For time-series données, split chronologically (tradans on past, test on futur)
 - FP = False Positive (Type I error)
 - FN = False Negative (Type II error)
 
-# ## Regression Metrics
+### Regression Metrics
 
 | Metric | What it measures | Sensitivity to outliers |
 |--------|------------------|--------------------------|
@@ -73,13 +73,13 @@ For time-series données, split chronologically (tradans on past, test on futur)
 | **MAE** (Mean Absolute Error) | Average absolute difference | Low |
 | **R²** (Coefficient de Determdansation) | Proportion de variance expladansed | None directly, but sensitive to outliers dansdirectly |
 
-# ## Rankdansg et Retrieval Metrics
+### Rankdansg et Retrieval Metrics
 - **Precision@k**: Fraction de relevant items among top-k recommendations.
 - **Recall@k**: Fraction de all relevant items that appear dans top-k.
 - **NDCG** (Normalised Discounted Cumulative Gadans): Accounts pour position relevance.
 - **Hit Rate**: Whele/lar a relevant item appears dans le/la top-k.
 
-# ## Generative / LLM Metrics
+### Generative / LLM Metrics
 - **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
 - **BLEU**: n-gram overlap avec référence translations (precision-focused).
 - **ROUGE**: Recall-oriented overlap pour summarisation.
@@ -88,31 +88,31 @@ For time-series données, split chronologically (tradans on past, test on futur)
 
 ---
 
-# # Evaluation Pitfalls
+## Evaluation Pitfalls
 
-# ## Données Leakage
+### Données Leakage
 Occurs when danspourmation from le/la test set dansadvertently dansfluences tradansdansg.
 - **Prevent:** Never use test données pour feature engdanseerdansg, normalisation, or hyperparameter tundansg.
 - **Detect:** If your model scores suspiciously high, suspect leakage.
 
-# ## Overfittdansg
+### Overfittdansg
 Model perpourms well on tradansdansg données but poorly on validation/test.
 - **Mitigate:** Use regularisation, early stoppdansg, simplify architecture, or collect more données.
 
-# ## Underfittdansg
+### Underfittdansg
 Model perpourms poorly on both tradansdansg et validation.
 - **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
-# ## Imbalanced Données
+### Imbalanced Données
 - **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rale/lar than accuracy.
 
-# ## Temporal Drift (Concept Drift)
+### Temporal Drift (Concept Drift)
 The relationship between features et target changes over time.
 - **Mitigate:** Retradans periodically, monitor perpourmance, use drift detection algorithms.
 
 ---
 
-# # Hyperparameter Tundansg
+## Hyperparameter Tundansg
 
 - **Grid Search**: Exhaustively try all combdansations de a predefdansed set de hyperparameters. Simple but computationally expensive.
 - **Retom Search**: Sample retom combdansations from distributions. More efficient than grid search pour high-dimensional spaces.
@@ -132,7 +132,7 @@ The relationship between features et target changes over time.
 
 ---
 
-# # Model Selection et Validation
+## Model Selection et Validation
 
 1. **Baseldanse model**: Start avec a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
 2. **Cetidate models**: Tradans multiple model families (e.g., Retom Forest, XGBoost, Neural Réseau).
@@ -143,34 +143,34 @@ The relationship between features et target changes over time.
 
 ---
 
-# # Déploiement et Monitordansg
+## Déploiement et Monitordansg
 
-# ## Servdansg Patterns
+### Servdansg Patterns
 - **Batch dansference**: Process large volumes de données defldanse (e.g., nightly recommendations).
 - **Onldanse dansference**: Real-time predictions via API (e.g., credit scordansg, fraud detection).
 - **Streamdansg dansference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
 
-# ## Model Monitordansg
+### Model Monitordansg
 - **Perpourmance monitordansg**: Track accuracy/F1 over time on live données (when ground truth is available).
 - **Données drift**: Monitor changes dans dansput feature distributions (e.g., usdansg PSI – Population Stability Index).
 - **Concept drift**: Monitor changes dans le/la relationship between dansputs et outputs.
 - **Prediction drift**: Track le/la distribution de predicted outputs.
 - **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
 
-# ## Loggdansg et Alertdansg
+### Loggdansg et Alertdansg
 - Log all prediction requests et responses (avec anonymisation).
 - Set alerts pour:
   - Significant drop dans perpourmance.
   - High percentage de missdansg or dansvalid dansputs.
   - Model outputs outside expected bounds.
 
-# ## Model Versiondansg et Registry
+### Model Versiondansg et Registry
 - Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store et version models, metadonnées, et evaluation results.
 - Store le/la tradansdansg code et données version (via DVC or Git LFS) alongside le/la model.
 
 ---
 
-# # Practical Workflow Checklist
+## Practical Workflow Checklist
 
 - [ ] Problem framed et success metric defdansed.
 - [ ] Données exploration perpourmed (missdansg values, outliers, distribution).
