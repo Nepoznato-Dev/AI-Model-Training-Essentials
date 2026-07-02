@@ -4,9 +4,13 @@ Translation script for knowledge base files from English to multiple languages.
 Uses a simple dictionary-based approach for common terms and structural translation.
 """
 
-import os
-import shutil
+import re
 from pathlib import Path
+
+# Repository-local paths
+BASE_DIR = Path(__file__).resolve().parent
+ENGLISH_BASE = BASE_DIR / "knowledge_base" / "English"
+KB_BASE = BASE_DIR / "knowledge_base"
 
 # Target languages with their directory names
 TARGET_LANGUAGES = {
@@ -46,13 +50,11 @@ def get_language_name(lang_code):
 
 def translate_title(title, target_lang):
     """Translate markdown title preserving structure."""
-    # Keep code blocks and technical terms intact
-    prefixes = ['#', '##', '###', '####', '#####', '######']
-    for prefix in prefixes:
-        if title.startswith(prefix):
-            content = title[len(prefix):].strip()
-            translated_content = simple_translate(content, target_lang)
-            return f"{prefix} {translated_content}"
+    match = re.match(r'^(#{1,6})\s*(.*)$', title)
+    if match:
+        prefix, content = match.groups()
+        translated_content = simple_translate(content, target_lang)
+        return f"{prefix} {translated_content}".rstrip()
     return simple_translate(title, target_lang)
 
 def simple_translate(text, target_lang):
@@ -146,15 +148,15 @@ def simple_translate(text, target_lang):
     
     result = text
     
-    # Apply translations for known words/phrases
-    for english, translations_dict in translations.items():
-        if english.lower() in result.lower():
-            if target_lang in translations_dict:
-                translated = translations_dict[target_lang]
-                # Case-sensitive replacement
-                result = result.replace(english, translated)
-                result = result.replace(english.lower(), translated.lower())
-                result = result.replace(english.upper(), translated.upper())
+    # Apply translations for known words/phrases using whole-word matching
+    # to avoid corrupting unrelated words (for example, "in" inside
+    # "computing").
+    for english, translations_dict in sorted(translations.items(), key=lambda item: len(item[0]), reverse=True):
+        translated = translations_dict.get(target_lang)
+        if not translated:
+            continue
+        pattern = re.compile(rf"(?<!\w){re.escape(english)}(?!\w)", re.IGNORECASE)
+        result = pattern.sub(translated, result)
     
     return result
 
@@ -246,37 +248,54 @@ def copy_directory_structure(source_dir, target_dir):
             dest.mkdir(parents=True, exist_ok=True)
             print(f"  Created directory: {dest}")
 
-def translate_file(source_file, target_lang, target_base_dir):
+ENGLISH_CATEGORY_DIRS = {
+    "01_technology_and_computing",
+    "02_artificial_intelligence",
+    "03_data_science",
+    "04_science",
+    "05_business_and_finance",
+    "06_humanities",
+    "07_reference",
+    "08_future",
+    "10_cheat_sheets",
+}
+
+def target_markdown_files(root_dir):
+    """Return the markdown files for a language, preferring localized folders."""
+    files = []
+    root_dir = Path(root_dir)
+
+    readme = root_dir / "README.md"
+    if readme.exists():
+        files.append(readme)
+
+    subdirs = [path for path in root_dir.iterdir() if path.is_dir()]
+    localized_subdirs = [path for path in subdirs if path.name not in ENGLISH_CATEGORY_DIRS]
+    selected_subdirs = localized_subdirs if localized_subdirs else [path for path in subdirs if path.name in ENGLISH_CATEGORY_DIRS]
+
+    for subdir in sorted(selected_subdirs, key=lambda path: path.name):
+        files.extend(sorted(subdir.rglob("*.md"), key=lambda path: path.relative_to(root_dir).as_posix()))
+
+    return sorted(files, key=lambda path: path.relative_to(root_dir).as_posix())
+
+def translate_file(source_file, target_file, target_lang):
     """Translate a single file and save to target directory."""
-    # Read source content
     with open(source_file, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # Calculate relative path from English directory
-    english_base = Path('/workspace/knowledge_base/English')
-    rel_path = Path(source_file).relative_to(english_base)
-    
-    # Create target path
-    target_path = Path(target_base_dir) / rel_path
-    target_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Translate content
+
+    target_file.parent.mkdir(parents=True, exist_ok=True)
     translated_content = translate_content(content, target_lang, source_file.name)
     translated_content = add_translation_header(translated_content, target_lang, source_file.name)
-    
-    # Write translated content
-    with open(target_path, 'w', encoding='utf-8') as f:
+
+    with open(target_file, 'w', encoding='utf-8') as f:
         f.write(translated_content)
-    
-    return target_path
+
+    return target_file
 
 def main():
     """Main translation function."""
-    english_base = Path('/workspace/knowledge_base/English')
-    kb_base = Path('/workspace/knowledge_base')
-    
     # Get all markdown files
-    md_files = list(english_base.rglob('*.md'))
+    md_files = sorted(ENGLISH_BASE.rglob("*.md"), key=lambda path: path.relative_to(ENGLISH_BASE).as_posix())
     print(f"Found {len(md_files)} markdown files to translate")
     print(f"Target languages: {', '.join(TARGET_LANGUAGES.keys())}")
     print(f"Total translations needed: {len(md_files) * len(TARGET_LANGUAGES)}\n")
@@ -286,23 +305,24 @@ def main():
     failed = 0
     
     for lang_name, lang_code in TARGET_LANGUAGES.items():
-        target_dir = kb_base / lang_name
+        target_dir = KB_BASE / lang_name
         print(f"\n{'='*60}")
         print(f"Translating to {lang_name} ({lang_code})")
         print(f"{'='*60}")
-        
-        # Ensure target directory exists
+
         target_dir.mkdir(exist_ok=True)
-        
-        # Copy directory structure
-        copy_directory_structure(english_base, target_dir)
-        
-        # Translate each file
+
+        target_files = target_markdown_files(target_dir)
+        if len(target_files) != len(md_files):
+            print(f"  Skipping {lang_name}: expected {len(md_files)} files, found {len(target_files)} tracked markdown files")
+            failed += len(md_files)
+            continue
+
         lang_successful = 0
-        for source_file in md_files:
+        for source_file, target_file in zip(md_files, target_files):
             try:
-                target_path = translate_file(source_file, lang_code, target_dir)
-                print(f"  ✓ {source_file.relative_to(english_base)} -> {target_path.relative_to(kb_base)}")
+                target_path = translate_file(source_file, target_file, lang_code)
+                print(f"  ✓ {source_file.relative_to(ENGLISH_BASE)} -> {target_path.relative_to(KB_BASE)}")
                 lang_successful += 1
                 successful += 1
             except Exception as e:

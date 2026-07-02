@@ -1,0 +1,71 @@
+<!-- 
+This file was automatically translated from English to Arabic.
+Source: history_and_culture.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# التاريخ و الثقافة
+
+# # Ancient Civilizations
+
+Mesopotamia, located between ال Tigris و Euphrates rivers في modern-day Iraq, is considered one من ال earliest cradles من civilization. ال Sumerians developed one من ال first writing الأنظمة, called cuneiform, around 3400 BCE. Ancient Egypt developed along ال Nile River و is famous لأجل its pyramids, pharaohs, و hieroglyphic writing. ال Great Pyramid من Giza was built around 2560 BCE و is one من ال Seven Wonders من ال Ancient World.
+
+Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, و art. Greek thinkers including Socrates, Plato, و Aristotle established frameworks من logic و ethics still studied today. Ancient Rome grew from a city-state to a republic و then an empire stretching across Europe, North Africa, و Western Asia. Rome contributed to القانون, العمارة, engineering (roads, aqueducts), و governance.
+
+# # Major World Religions
+
+Christianity is ال world's largest religion مع approximately 2.4 billion followers. It is based on ال life و teachings من Jesus Christ و centers on ال Bible. Islam is ال world's second-largest religion مع approximately 1.9 billion followers. It was founded by ال Prophet Muhammad في ال 7th century CE و is centered on ال Quran. Hinduism is ال world's third-largest religion مع approximately 1.2 billion followers, primarily في India. Buddhism was founded by Siddhartha Gautama في ال 5th century BCE و focuses on achieving enlightenment. Judaism is one من ال oldest monotheistic religions, مع approximately 15 million followers worldwide.
+
+# # ال Middle Ages
+
+ال Middle Ages (approximately 500–1500 CE) في Europe followed ال fall من ال Western Roman Empire. This period saw ال rise من feudalism, ال Catholic Church as a dominant political و cultural force, ال Crusades (military campaigns to ال Holy Land), و eventually ال Renaissance. ال Black Death (bubonic plague) killed approximately one-third من Europe's population في ال 14th century. ال Islamic Golden Age (8th–14th centuries) saw major advances في العلوم, mathematics, و philosophy في ال Islamic world.
+
+# # ال Renaissance و Enlightenment
+
+ال Renaissance (14th–17th centuries) was a cultural و intellectual movement that began في Italy و spread across Europe, characterized by renewed interest في classical art, philosophy, و العلوم. Key figures include Leonardo da Vinci, Michelangelo, و Galileo Galilei. ال Scientific Revolution (16th–17th centuries) transformed understanding من الطبيعة و العلوم, مع contributions from Copernicus, Galileo, و Newton. ال Enlightenment (17th–18th centuries) emphasized reason, individual rights, و skepticism من tradition, influencing modern democracy و human rights.
+
+# # Exploration و Colonization
+
+ال Age من Exploration (15th–17th centuries) saw European explorers map ال world. Christopher Columbus reached ال Americas في 1492. Vasco da Gama reached India by sea في 1498. Ferdinand Magellan's expedition completed ال first circumnavigation من ال globe في 1522. European colonization من ال Americas, Africa, و Asia had profound و often devastating effects on indigenous populations through violence, disease, و exploitation.
+
+# # ال Industrial Revolution
+
+ال Industrial Revolution began في Britain في ال late 18th century و transformed manufacturing, الزراعة, و transportation. Steam power, textile machinery, و iron production drove rapid economic change. ال revolution spread across Europe و North America في ال 19th century. It led to urbanization, new social classes, و significant بيئي changes. It also produced dangerous working conditions that eventually spurred labor movements و social reform.
+
+# # World Wars
+
+World War I (1914–1918) began following ال assassination من Archduke Franz Ferdinand من Austria-Hungary و involved much من Europe. New military technologies such as machine guns, poison gas, و tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was ال deadliest conflict في human التاريخ, مع approximately 70–85 million deaths. It was fought between ال Allies (including ال United States, Soviet Union, و United Kingdom) و ال Axis powers (Germany, Japan, و Italy). ال war ended مع ال defeat من Nazi Germany و ال atomic bombings من Hiroshima و Nagasaki في Japan.
+
+# # ال Cold War
+
+ال Cold War (1947–1991) was a period من geopolitical tension between ال United States و ال Soviet Union و their respective allies. It was characterized by an arms race, proxy wars, و ideological competition between capitalism و communism. Key الأحداث include ال Berlin Wall (built 1961, fell 1989), ال Korean War, ال Vietnam War, و ال Cuban Missile Crisis من 1962. ال Cold War ended مع ال dissolution من ال Soviet Union في 1991.
+
+# # Decolonization و Independence Movements
+
+After World War II, many countries في Africa و Asia gained independence from European colonial powers. India gained independence from Britain في 1947. Most African nations became independent في ال 1950s و 1960s. ال United Nations was founded في 1945 to promote international cooperation, peace, و human rights.
+
+# # ال Space Race و التكنولوجيا Age
+
+ال Space Race (1957–1969) was a competition between ال United States و Soviet Union to achieve superiority في space exploration. ال Soviet Union launched Sputnik 1, ال first artificial satellite, في 1957. Yuri Gagarin became ال first human في space في 1961. ال United States landed astronauts on ال Moon during ال Apollo 11 mission on July 20, 1969, مع Neil Armstrong becoming ال first person to walk on ال lunar surface. ال Space Race drove enormous advances في rocket التكنولوجيا, الحوسبة, و telecommunications.
+
+# # ال Information Age
+
+ال late 20th و early 21st centuries are characterised by ال Information Age, driven by ال التطوير من digital computers, ال internet, و mobile التكنولوجيا. ال World Wide الويب was invented by Tim Berners-Lee في 1989 و made publicly available في 1991, fundamentally transforming التواصل, commerce, education, و الثقافة. ال rise من personal computers في ال 1980s, led by Apple و IBM, brought الحوسبة into homes. ال smartphone era, ushered في by Apple's iPhone في 2007, placed internet-connected computers في billions من pockets worldwide.
+
+# # ال 21st Century
+
+ال early 21st century has been shaped by globalisation, terrorism, climate change, و technological disruption. ال September 11, 2001 attacks في ال United States led to ال War on Terror و conflicts في Afghanistan و Iraq. ال 2008 global financial crisis was ال worst economic downturn since ال Great Depression. ال Arab Spring (2010–2012) saw mass protests و uprisings across ال Middle East و North Africa. ال COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide و triggered unprecedented social و economic disruption. ال 2020s have seen rising geopolitical tensions, including Russia's invasion من Ukraine في 2022 و increased US-China competition over التكنولوجيا و Taiwan.
+
+# # Art و الثقافة Through التاريخ
+
+Human cultural expression spans tens من thousands من years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some من ال earliest known art. ال Renaissance produced masterpieces such as ال Mona Lisa (Leonardo da Vinci) و ال Sistine Chapel ceiling (Michelangelo). ال Romantic era (late 18th–19th century) valued emotion و الطبيعة, producing works by Beethoven, Keats, و Delacroix. Modernism (early 20th century) broke مع tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), و jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives و embraced plurality, influencing العمارة, الأدب, و visual art.
+
+# # Philosophy و Intellectual التاريخ
+
+Western philosophy began مع ال pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, و Aristotle defined ال classical tradition. During ال Enlightenment, thinkers like Descartes, Locke, Hume, و Kant reshaped epistemology (theory من knowledge) و ethics. ال 19th century saw Marx's نقد من capitalism, Nietzsche's challenge to morality, و ال birth من sociology. ال 20th century brought analytic philosophy (Russell, Wittgenstein) و continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, و Vedic philosophy have shaped billions من lives across Asia لأجل millennia.
+
+# # Music Through التاريخ
+
+Music has existed في human cultures since prehistory. Ancient Greeks used music في drama و ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). ال Baroque period (1600–1750) gave rise to opera و instrumental music; composers include Bach, Handel, و Vivaldi. ال Classical period (1750–1820) featured Mozart, Haydn, و ال early Beethoven, emphasising clarity و form. ال Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, و Wagner. ال 20th century saw ال emergence من jazz, blues, rock و roll, hip-hop, electronic music, و countless global fusion genres, democratised further by recording التكنولوجيا و streaming.
+

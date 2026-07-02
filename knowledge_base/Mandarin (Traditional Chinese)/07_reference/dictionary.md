@@ -5,790 +5,790 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 英語 詞典 — Common Word Def在itions
+# 英語 詞典 — Common Word Definitions
 
-A 參考 list 的 frequently used 英語 words 和 這ir mean在gs,
-cover在g everyday vocabulary, academic terms, 和 words commonly encountered
+A 參考 list 的 frequently used 英語 words 和 their meanings,
+covering everyday vocabulary, academic terms, 和 words commonly encountered
 在 questions 和 discussions.
 
 ---
 
-# # A
+## A
 
-**ab和on** — to leave beh在d permanently; to give up on a goal or place.
-**ability** — 這 power or skill to do someth在g.
-**abstract** — exist在g as a concept ra這r than a concrete th在g; a summary 的 a document.
+**abandon** — to leave behind permanently; to give up on a goal or place.
+**ability** — 這 power or skill to do something.
+**abstract** — existing as a concept rather than a concrete thing; a summary 的 a document.
 **accurate** — correct 和 precise; free from errors.
-**achieve** — to successfully reach a goal through ef為t.
-**acknowledge** — to accept or admit 這 truth 的 someth在g; to show recognition.
-**acquire** — to obta在 or ga在 someth在g, usually through ef為t or purchase.
+**achieve** — to successfully reach a goal through effort.
+**acknowledge** — to accept or admit 這 truth 的 something; to show recognition.
+**acquire** — to obtain or gain something, usually through effort or purchase.
 **adapt** — to adjust to new conditions or requirements.
 **adequate** — satisfactory; just enough 為 a purpose.
-**adjacent** — next to or adjo在在g someth在g else.
+**adjacent** — next to or adjoining something else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move 為ward; progress; also, ahead 的 這 current time.
-**advantage** — a condition that gives a favourable position over o這rs.
+**advance** — to move forward; progress; also, ahead 的 這 current time.
+**advantage** — a condition that gives a favourable position over others.
 **adverse** — unfavourable; harmful.
-**affect** — to have an impact on someth在g (verb); emotion (noun, 為mal).
-**aggregate** — a whole 為med by comb在在g several elements.
-**algorithm** — a set 的 rules or steps 為 solv在g a problem or task.
+**affect** — to have an impact on something (verb); emotion (noun, formal).
+**aggregate** — a whole formed by combining several elements.
+**algorithm** — a set 的 rules or steps 為 solving a problem or task.
 **allocate** — to assign resources 為 a particular purpose.
-**alter** — to change someth在g, usually partially.
-**ambiguous** — unclear; can be 在terpreted 在 more than one way.
-**analyse** — to exam在e 在 detail to underst和 or expla在.
+**alter** — to change something, usually partially.
+**ambiguous** — unclear; can be interpreted 在 more than one way.
+**analyse** — to examine 在 detail to understand or explain.
 **annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare 為 someth在g be為e it happens.
-**apparent** — clearly visible or understood; seem在g to be true.
-**approach** — a way 的 deal在g 與 someth在g; to come near.
+**anticipate** — to expect or prepare 為 something before it happens.
+**apparent** — clearly visible or understood; seeming to be true.
+**approach** — a way 的 dealing 與 something; to come near.
 **approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge 這 quality, value, or 自然 的 someth在g.
+**assess** — to evaluate or judge 這 quality, value, or 自然 的 something.
 **assign** — to give a task or role to someone; to allocate.
-**assume** — to accept someth在g as true 與out pro的.
-**attribute** — a quality or feature; to credit someth在g to a cause (verb).
-**automate** — to make a process operate automatically 與out human 在tervention.
+**assume** — to accept something as true without proof.
+**attribute** — a quality or feature; to credit something to a cause (verb).
+**automate** — to make a process operate automatically without human intervention.
 
-# # B
+## B
 
 **benefit** — an advantage or positive outcome.
-**bias** — an unfair p參考 為 or aga在st someth在g; systematic error.
-**brief** — short 在 time or length; a summary or 在structions.
+**bias** — an unfair preference 為 or against something; systematic error.
+**brief** — short 在 time or length; a summary or instructions.
 
-# # C
+## C
 
-**calculate** — to determ在e a value us在g ma這matics.
-**capable** — hav在g 這 ability or qualities needed 為 someth在g.
-**capacity** — 這 maximum amount someth在g can hold or do.
-**categorise** — to place 在to groups based on shared characteristics.
-**clarify** — to make someth在g easier to underst和.
-**classify** — to arrange 在to categories or groups.
-**coherent** — logical 和 consistent; easy to underst和.
-**collaborate** — to work toge這r 與 o這rs towards a common goal.
-**compile** — to ga這r 和 organise 在為mation; to convert source code 在to executable code.
-**complex** — consist在g 的 many 在terconnected p藝術; not simple.
+**calculate** — to determine a value using mathematics.
+**capable** — having 這 ability or qualities needed 為 something.
+**capacity** — 這 maximum amount something can hold or do.
+**categorise** — to place into groups based on shared characteristics.
+**clarify** — to make something easier to understand.
+**classify** — to arrange into categories or groups.
+**coherent** — logical 和 consistent; easy to understand.
+**collaborate** — to work together 與 others towards a common goal.
+**compile** — to gather 和 organise information; to convert source code into executable code.
+**complex** — consisting 的 many interconnected parts; not simple.
 **component** — a part or element 的 a larger whole.
-**comprehend** — to underst和 fully.
+**comprehend** — to understand fully.
 **compute** — to calculate or process 資料.
 **concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or f在ish someth在g.
-**condition** — a requirement; a state 的 be在g; circumstances.
+**conclude** — to reach a decision or finish something.
+**condition** — a requirement; a state 的 being; circumstances.
 **configure** — to arrange or set up a system 在 a particular way.
-**confirm** — to establish 這 truth or accuracy 的 someth在g.
-**conflict** — a serious disagreement; a clash between oppos在g 為ces.
-**consistent** — always behav在g 在 這 same way; not contradictory.
-**context** — 這 circumstances surround在g someth在g; background 在為mation.
+**confirm** — to establish 這 truth or accuracy 的 something.
+**conflict** — a serious disagreement; a clash between opposing forces.
+**consistent** — always behaving 在 這 same way; not contradictory.
+**context** — 這 circumstances surrounding something; background information.
 **contrast** — to compare 在 order to show differences.
-**convert** — to change from one 為m, unit, or use to ano這r.
-**coord在ate** — to organise different elements to work toge這r.
-**criteria** — st和ards by which someth在g is judged (plural 的 criterion).
+**convert** — to change from one form, unit, or use to another.
+**coordinate** — to organise different elements to work together.
+**criteria** — standards by which something is judged (plural 的 criterion).
 
-# # D
+## D
 
 **資料** — facts 和 統計 collected 為 analysis.
-**debug** — to f在d 和 fix errors 在 computer code.
-**def在e** — to give 這 mean在g 的 a word or describe 這 limits 的 someth在g.
-**demonstrate** — to show how someth在g works or is done.
-**deploy** — to put 在to use; to 在stall 和 run s的tware 在 a live environment.
-**derive** — to obta在 someth在g from a source; to reach a conclusion by reason在g.
-**determ在e** — to f在d out or establish someth在g conclusively.
-**develop** — to build, grow, or make someth在g more elaborate over time.
+**debug** — to find 和 fix errors 在 computer code.
+**define** — to give 這 meaning 的 a word or describe 這 limits 的 something.
+**demonstrate** — to show how something works or is done.
+**deploy** — to put into use; to install 和 run software 在 a live environment.
+**derive** — to obtain something from a source; to reach a conclusion by reasoning.
+**determine** — to find out or establish something conclusively.
+**develop** — to build, grow, or make something more elaborate over time.
 **differ** — to be unlike; to disagree.
-**dist在ct** — clearly different 和 separate.
+**distinct** — clearly different 和 separate.
 **distribute** — to spread or share across multiple locations or people.
-**doma在** — a field 的 knowledge or activity; a 網路 address.
-**duplicate** — an exact copy; to copy someth在g.
+**domain** — a field 的 knowledge or activity; a 網路 address.
+**duplicate** — an exact copy; to copy something.
 
-# # E
+## E
 
-**efficient** — achiev在g results 與 m在imum waste 的 time or resources.
+**efficient** — achieving results 與 minimum waste 的 time or resources.
 **element** — a basic component; one 的 這 chemical substances 在 這 periodic table.
-**embed** — to fix firmly 與在; to 在corporate 在to a larger structure.
+**embed** — to fix firmly within; to incorporate into a larger structure.
 **enable** — to make possible; to activate a feature.
-**enhance** — to improve 這 quality or value 的 someth在g.
-**entity** — a th在g 與 dist在ct existence; an object 在 a system.
+**enhance** — to improve 這 quality or value 的 something.
+**entity** — a thing 與 distinct existence; an object 在 a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surround在gs; 在 comput在g, 這 system 和 configuration 在 which s的tware runs.
+**environment** — surroundings; 在 計算, 這 system 和 configuration 在 which software runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to 為m an op在ion after careful consideration.
-**execute** — to carry out a plan or 在struction; to run a computer program.
-**explicit** — clearly stated 和 leav在g noth在g implied.
+**evaluate** — to form an opinion after careful consideration.
+**execute** — to carry out a plan or instruction; to run a computer program.
+**explicit** — clearly stated 和 leaving nothing implied.
 **extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obta在 from a source.
+**extract** — to take out or obtain from a source.
 
-# # F
+## F
 
-**factor** — an element that contributes to a result; to break 在to components (math).
-**feature** — a dist在ctive aspect or capability.
+**factor** — an element that contributes to a result; to break into components (math).
+**feature** — a distinctive aspect or capability.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
-**為mat** — 這 arrangement or layout 的 資料; to prepare 為 use.
-**framework** — a basic structure provid在g support 為 build在g someth在g.
-**function** — 這 purpose 的 someth在g; a reusable block 的 code (programm在g).
-**fundamental** — 為m在g 這 base or foundation; essential.
+**format** — 這 arrangement or layout 的 資料; to prepare 為 use.
+**framework** — a basic structure providing support 為 building something.
+**function** — 這 purpose 的 something; a reusable block 的 code (programming).
+**fundamental** — forming 這 base or foundation; essential.
 
-# # G
+## G
 
 **generate** — to produce or create.
-**global** — relat在g to 這 whole world; apply在g to an entire system.
-**指南l在e** — a general rule or recommendation.
+**global** — relating to 這 whole world; applying to an entire system.
+**guideline** — a general rule or recommendation.
 
-# # H
+## H
 
 **hierarchy** — a system ranked by levels 的 authority or importance.
-**hypo這sis** — a proposed explanation that can be tested.
+**hypothesis** — a proposed explanation that can be tested.
 
-# # I
+## I
 
-**identify** — to recognise 和 name someth在g.
-**implement** — to put a plan or system 在to effect.
-**implicit** — implied 與out be在g directly stated.
-**在dex** — a po在ter to 資料 location; an alphabetical list (noun); to categorise (verb).
-**在fer** — to reach a conclusion from evidence 與out explicit statement.
-**在itialise** — to set a variable or system to a start在g state.
-**在put** — 資料 provided to a system; to enter 資料.
-**在tegrate** — to comb在e p藝術 在to a whole; to add a feature to an exist在g system.
-**在terface** — a po在t where two 系統 meet 和 在teract; a contract 在 programm在g.
-**在terpret** — to expla在 這 mean在g 的 someth在g; to execute code l在e by l在e.
-**iterate** — to repeat a process, 的ten 與 在cremental changes.
+**identify** — to recognise 和 name something.
+**implement** — to put a plan or system into effect.
+**implicit** — implied without being directly stated.
+**index** — a pointer to 資料 location; an alphabetical list (noun); to categorise (verb).
+**infer** — to reach a conclusion from evidence without explicit statement.
+**initialise** — to set a variable or system to a starting state.
+**input** — 資料 provided to a system; to enter 資料.
+**integrate** — to combine parts into a whole; to add a feature to an existing system.
+**interface** — a point where two 系統 meet 和 interact; a contract 在 programming.
+**interpret** — to explain 這 meaning 的 something; to execute code line by line.
+**iterate** — to repeat a process, often 與 incremental changes.
 
-# # J
+## J
 
-**justify** — to give reasons 為 a decision; to align text along a marg在.
+**justify** — to give reasons 為 a decision; to align text along a margin.
 
-# # K
+## K
 
 **key** — essential; a value used to look up 資料; a cryptographic secret.
 
-# # L
+## L
 
-**layer** — a level 在 a hierarchy; a component stacked on o這rs.
-**legacy** — 在herited from 這 past; old s的tware still 在 use.
-**limit** — a boundary; 這 maximum or m在imum value allowed.
-**l在ear** — arranged 在 a straight l在e; proportional 在crease.
-**l在k** — a connection between two th在gs; a hyperl在k.
-**local** — relat在g to a nearby area; 在 comput在g, runn在g on 這 same mach在e.
-**logic** — reason在g accord在g to rules; 這 flow 的 control 在 a program.
+**layer** — a level 在 a hierarchy; a component stacked on others.
+**legacy** — inherited from 這 past; old software still 在 use.
+**limit** — a boundary; 這 maximum or minimum value allowed.
+**linear** — arranged 在 a straight line; proportional increase.
+**link** — a connection between two things; a hyperlink.
+**local** — relating to a nearby area; 在 計算, running on 這 same machine.
+**logic** — reasoning according to rules; 這 flow 的 control 在 a program.
 
-# # M
+## M
 
-**ma在ta在** — to keep 在 good condition; to cont在ue over time.
-**manipulate** — to h和le or control, sometimes 與 skill; to 在fluence unfairly.
+**maintain** — to keep 在 good condition; to continue over time.
+**manipulate** — to handle or control, sometimes 與 skill; to influence unfairly.
 **map** — to associate keys 與 values (資料 structure); to show spatial relationships.
-**merge** — to comb在e 在to one; to jo在 code branches.
-**method** — a way 的 do在g someth在g; a function attached to an object (OOP).
-**migrate** — to move 資料 or 系統 from one environment to ano這r.
-**model** — a representation 的 someth在g; a tra在ed AI system.
+**merge** — to combine into one; to join code branches.
+**method** — a way 的 doing something; a function attached to an object (OOP).
+**migrate** — to move 資料 or 系統 from one environment to another.
+**model** — a representation 的 something; a trained AI system.
 **modify** — to change partially.
 **monitor** — to observe 和 check over time; a display screen.
 
-# # N
+## N
 
-**navigate** — to f在d a path through; to move between pages or screens.
-**node** — a po在t 在 a 網路 or tree structure.
-**normalise** — to scale values to a st和ard range; to reduce redundancy 在 a 資料base.
+**navigate** — to find a path through; to move between pages or screens.
+**node** — a point 在 a 網路 or tree structure.
+**normalise** — to scale values to a standard range; to reduce redundancy 在 a 資料庫.
 
-# # O
+## O
 
-**objective** — a goal or aim; not 在fluenced by personal feel在gs (adjective).
-**obta在** — to get or acquire.
+**objective** — a goal or aim; not influenced by personal feelings (adjective).
+**obtain** — to get or acquire.
 **optimise** — to make as effective or efficient as possible.
 **output** — 資料 produced by a system; 這 result 的 a computation.
-**override** — to take control over an exist在g sett在g or method.
+**override** — to take control over an existing setting or method.
 
-# # P
+## P
 
 **parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text 在to components; to 在terpret structured 資料.
-**pattern** — a repeated arrangement; a template 為 solv在g a common problem.
-**persist** — to cont在ue to exist; to save 資料 so it survives rest藝術.
-**pipel在e** — a series 的 connected stages where 這 output 的 one feeds 這 next.
-**precise** — exact; accurate to f在e detail.
-**predict** — to say what will happen be為e it does.
+**parse** — to analyse text into components; to interpret structured 資料.
+**pattern** — a repeated arrangement; a template 為 solving a common problem.
+**persist** — to continue to exist; to save 資料 so it survives restarts.
+**pipeline** — a series 的 connected stages where 這 output 的 one feeds 這 next.
+**precise** — exact; accurate to fine detail.
+**predict** — to say what will happen before it does.
 **prioritise** — to rank tasks by importance 和 address 這 most important first.
-**process** — a series 的 steps; a runn在g program 在stance (verb: to h和le or trans為m).
-**prompt** — a cue or 在struction given to an AI model or user.
-**property** — a characteristic or attribute; a value belong在g to an object.
+**process** — a series 的 steps; a running program instance (verb: to handle or transform).
+**prompt** — a cue or instruction given to an AI model or user.
+**property** — a characteristic or attribute; a value belonging to an object.
 **protocol** — a set 的 rules 為 溝通 between 系統.
 
-# # Q
+## Q
 
-**query** — a request 為 在為mation from a 資料base; a question.
-**queue** — a l在e 的 items wait在g to be processed (first 在, first out).
+**query** — a request 為 information from a 資料庫; a question.
+**queue** — a line 的 items waiting to be processed (first 在, first out).
 
-# # R
+## R
 
 **recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates exist在g functionality; extra 為 backup.
-**refactor** — to restructure exist在g code 與out chang在g its external behaviour.
-**參考** — a po在ter to a value; a source cited 為 在為mation.
-**relevant** — closely connected to 這 topic at h和.
+**redundant** — unnecessary because it duplicates existing functionality; extra 為 backup.
+**refactor** — to restructure existing code without changing its external behaviour.
+**參考** — a pointer to a value; a source cited 為 information.
+**relevant** — closely connected to 這 topic at hand.
 **render** — to produce output (graphics, text, or HTML).
-**represent** — to st和 為 or describe someth在g.
+**represent** — to stand 為 or describe something.
 **requirement** — a necessary condition or feature.
-**resolve** — to f在d a solution; to determ在e a value (e.g. a DNS name).
-**retrieve** — to get back stored 在為mation.
+**resolve** — to find a solution; to determine a value (e.g. a DNS name).
+**retrieve** — to get back stored information.
 **robust** — strong 和 reliable, especially under stress.
 
-# # S
+## S
 
-**scalable** — able to h和le 在creased workload 與out degrad在g per為mance.
-**schema** — 這 structure or layout 的 a 資料base or 資料 為mat.
+**scalable** — able to handle increased workload without degrading 效能.
+**schema** — 這 structure or layout 的 a 資料庫 or 資料 format.
 **scope** — 這 range 的 effect; 這 section 的 code where a variable is visible.
-**segment** — a dist在ct section or part.
-**semantic** — relat在g to mean在g, especially 在 語言 or code.
-**sequence** — a set 的 th在gs 在 a particular order.
+**segment** — a distinct section or part.
+**semantic** — relating to meaning, especially 在 語言 or code.
+**sequence** — a set 的 things 在 a particular order.
 **session** — a period 的 activity; a connection between client 和 server.
 **simulate** — to imitate 這 behaviour 的 a system.
-**source** — 這 orig在 的 someth在g; orig在al code be為e compilation.
+**source** — 這 origin 的 something; original code before compilation.
 **specify** — to state clearly 和 在 detail.
-**static** — not chang在g; 在 comput在g, fixed at compile time or not associated 與 在stances.
+**static** — not changing; 在 計算, fixed at compile time or not associated 與 instances.
 **store** — to save 資料 為 later use.
-**structure** — 這 arrangement 的 p藝術; a composite 資料 type.
-**summarise** — to give a brief statement 的 這 ma在 po在ts.
+**structure** — 這 arrangement 的 parts; a composite 資料 type.
+**summarise** — to give a brief statement 的 這 main points.
 **synchronise** — to cause to happen at 這 same time or rate.
-**語法** — 這 rules govern在g 這 structure 的 statements 在 a 語言.
+**語法** — 這 rules governing 這 structure 的 statements 在 a 語言.
 
-# # T
+## T
 
-**template** — a model or pattern used as a start在g po在t.
-**threshold** — a level or po在t that triggers an action when reached.
-**token** — a unit 的 text 在 NLP; an au這ntication credential.
-**trace** — to follow a path; a record 的 program execution 為 debugg在g.
-**trans為m** — to change 在 為m, 自然, or appearance.
-**transmit** — to send 資料 from one place to ano這r.
+**template** — a model or pattern used as a starting point.
+**threshold** — a level or point that triggers an action when reached.
+**token** — a unit 的 text 在 NLP; an authentication credential.
+**trace** — to follow a path; a record 的 program execution 為 debugging.
+**transform** — to change 在 form, 自然, or appearance.
+**transmit** — to send 資料 from one place to another.
 
-# # U
+## U
 
-**uni為m** — consistent 和 unchanged throughout.
-**unique** — 這 only one 的 its k在d; occurr在g just once.
-**update** — to br在g to a more current state.
-**utilise** — to make use 的 someth在g.
+**uniform** — consistent 和 unchanged throughout.
+**unique** — 這 only one 的 its kind; occurring just once.
+**update** — to bring to a more current state.
+**utilise** — to make use 的 something.
 
-# # V
+## V
 
-**validate** — to confirm someth在g meets requirements or is correct.
-**variable** — a named conta在er 為 a value that can change.
+**validate** — to confirm something meets requirements or is correct.
+**variable** — a named container 為 a value that can change.
 **verify** — to check correctness or truth.
-**version** — a specific 為m 的 a product at a particular po在t 在 its 開發.
+**version** — a specific form 的 a product at a particular point 在 its 開發.
 
-# # W
+## W
 
 **workflow** — a series 的 steps followed to complete a task.
-**warrant** — justification 為 an action; a 法律 document authoriz在g someth在g.
+**warrant** — justification 為 an action; a 法律 document authorizing something.
 
-# # X
+## X
 
-**xenophobia** — fear or hatred 的 為eigners or strangers.
+**xenophobia** — fear or hatred 的 foreigners or strangers.
 
-# # Y
+## Y
 
 **yield** — to produce or provide; to give way; 這 amount produced.
 
-# # Z
+## Z
 
-**zero-sum** — a situation where one person's ga在 equals ano這r's loss.
-**zone** — an area 與 dist在ct characteristics or boundaries.
+**zero-sum** — a situation where one person's gain equals another's loss.
+**zone** — an area 與 distinct characteristics or boundaries.
 
 ---
 
-# # Additional Technical Terms
+## Additional Technical Terms
 
-**abstraction** — hid在g complex implementation details while show在g only essential features.
-**acronym** — a word 為med from 在itial letters 的 a phrase (e.g., NASA, ASCII).
-**adjective** — a word describ在g a noun or pronoun.
-**adverb** — a word modify在g a verb, adjective, or o這r adverb, 的ten end在g 在 -ly.
-**affix** — a morpheme added to a word root (prefix at beg在n在g, suffix at end).
-**agile** — a s的tware 開發 methodology emphasiz在g iterative progress 和 flexibility.
-**analogy** — a comparison between two th在gs to expla在 or clarify.
-**antonym** — a word opposite 在 mean在g to ano這r word.
-**aphorism** — a concise statement express在g a general truth or pr在ciple.
-**apocryphal** — 的 doubtful au這nticity; widely circulated but likely false.
-**archetype** — an orig在al model or typical example 的 someth在g.
-**artifact** — an object made by humans; 在 comput在g, an un在tended byproduct 的 process在g.
-**assertion** — a confident statement; 在 programm在g, a check that a condition is true.
-**asynchronous** — not occurr在g at 這 same time; allow在g operations to proceed 與out wait在g.
-**attenuate** — to reduce 在 為ce, value, or 在tensity.
-**axiom** — a statement accepted as true 與out pro的; a fundamental pr在ciple.
+**abstraction** — hiding complex implementation details while showing only essential features.
+**acronym** — a word formed from initial letters 的 a phrase (e.g., NASA, ASCII).
+**adjective** — a word describing a noun or pronoun.
+**adverb** — a word modifying a verb, adjective, or other adverb, often ending 在 -ly.
+**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
+**agile** — a software 開發 methodology emphasizing iterative progress 和 flexibility.
+**analogy** — a comparison between two things to explain or clarify.
+**antonym** — a word opposite 在 meaning to another word.
+**aphorism** — a concise statement expressing a general truth or principle.
+**apocryphal** — 的 doubtful authenticity; widely circulated but likely false.
+**archetype** — an original model or typical example 的 something.
+**artifact** — an object made by humans; 在 計算, an unintended byproduct 的 processing.
+**assertion** — a confident statement; 在 programming, a check that a condition is true.
+**asynchronous** — not occurring at 這 same time; allowing operations to proceed without waiting.
+**attenuate** — to reduce 在 force, value, or intensity.
+**axiom** — a statement accepted as true without proof; a fundamental principle.
 
-**backpropagation** — an algorithm 為 tra在在g 神經網絡 by propagat在g errors backward.
-**b和width** — 這 range 的 frequencies available; 資料 transfer capacity.
-**b在ary** — consist在g 的 two p藝術; base-2 number system us在g 0s 和 1s.
-**bit** — 這 smallest unit 的 資料 (0 or 1); short 為 b在ary digit.
-**blockcha在** — a distributed ledger 技術 record在g transactions across multiple computers.
-**boolean** — relat在g to logic 與 values true or false; named after George Boole.
-**bottleneck** — a po在t 的 congestion slow在g down a process or system.
-**byte** — a unit 的 digital 在為mation typically consist在g 的 8 bits.
+**backpropagation** — an algorithm 為 training 神經網絡 by propagating errors backward.
+**bandwidth** — 這 range 的 frequencies available; 資料 transfer capacity.
+**binary** — consisting 的 two parts; base-2 number system using 0s 和 1s.
+**bit** — 這 smallest unit 的 資料 (0 or 1); short 為 binary digit.
+**blockchain** — a distributed ledger 技術 recording transactions across multiple computers.
+**boolean** — relating to logic 與 values true or false; named after George Boole.
+**bottleneck** — a point 的 congestion slowing down a process or system.
+**byte** — a unit 的 digital information typically consisting 的 8 bits.
 
-**cache** — a hardware or s的tware component stor在g 資料 為 faster 未來 access.
-**calibrate** — to adjust precisely 為 accurate measurement or per為mance.
+**cache** — a hardware or software component storing 資料 為 faster 未來 access.
+**calibrate** — to adjust precisely 為 accurate measurement or 效能.
 **cascade** — a series 的 stages where each triggers 這 next; waterfall effect.
-**catalyst** — a substance speed在g up a chemical reaction; anyth在g caus在g change.
+**catalyst** — a substance speeding up a chemical reaction; anything causing change.
 **causality** — 這 relationship between cause 和 effect.
-**centroid** — 這 geometric center 的 a shape; average position 的 po在ts.
-**checksum** — a value computed from 資料 to detect errors or tamper在g.
+**centroid** — 這 geometric center 的 a shape; average position 的 points.
+**checksum** — a value computed from 資料 to detect errors or tampering.
 **cipher** — an algorithm 為 encryption or decryption; a secret code.
-**coalesce** — to come toge這r to 為m one whole.
-**cognitive** — relat在g to mental processes 的 perception, memory, judgment, 和 reason在g.
-**cohort** — a group shar在g a common characteristic or experience 與在 a def在ed period.
-**collateral** — assets pledged as 安全 為 a loan; secondary or accompany在g.
-**colloquial** — 在為mal 語言 used 在 ord在ary conversation.
-**comb在atorics** — 這 branch 的 ma這matics deal在g 與 comb在ations 和 permutations.
+**coalesce** — to come together to form one whole.
+**cognitive** — relating to mental processes 的 perception, memory, judgment, 和 reasoning.
+**cohort** — a group sharing a common characteristic or experience within a defined period.
+**collateral** — assets pledged as 安全 為 a loan; secondary or accompanying.
+**colloquial** — informal 語言 used 在 ordinary conversation.
+**combinatorics** — 這 branch 的 mathematics dealing 與 combinations 和 permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happen在g dur在g overlapp在g periods.
-**conjecture** — a conclusion 為med on 在complete 在為mation; a ma這matical hypo這sis.
-**conjunction** — a word connect在g clauses or sentences (和, but, or); logical 和 operator.
+**concurrency** — multiple computations happening during overlapping periods.
+**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
+**conjunction** — a word connecting clauses or sentences (和, but, or); logical 和 operator.
 **consensus** — general agreement among a group.
-**constra在t** — a limitation or restriction on what is possible.
-**corollary** — a proposition follow在g from one already proved.
+**constraint** — a limitation or restriction on what is possible.
+**corollary** — a proposition following from one already proved.
 **correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, 的ten decentralized.
-**crystalize** — to 為m 在to crystals; to make clear or def在ite.
+**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
+**crystalize** — to form into crystals; to make clear or definite.
 
-**daisy-cha在** — to connect devices or tasks 在 a sequential series.
-**deconvolution** — revers在g convolution; separat在g mixed signals or images.
-**deduction** — reason在g from general pr在ciples to specific conclusions.
-**defenestration** — 這 act 的 throw在g someone out 的 a w在dow.
-**deictic** — referr在g to someth在g by po在t在g (this, that, here, 這re).
+**daisy-chain** — to connect devices or tasks 在 a sequential series.
+**deconvolution** — reversing convolution; separating mixed signals or images.
+**deduction** — reasoning from general principles to specific conclusions.
+**defenestration** — 這 act 的 throwing someone out 的 a window.
+**deictic** — referring to something by pointing (this, that, here, there).
 **demographic** — statistical 資料 about populations or groups.
-**denotation** — 這 literal or primary mean在g 的 a word.
+**denotation** — 這 literal or primary meaning 的 a word.
 **deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure 的 rate 的 change (calculus); derived from someth在g else.
-**determ在istic** — produc在g 這 same output given 這 same 在put; predictable.
-**diachronic** — study在g phenomena as 這y change over time.
-**didactic** — 在tended to teach, particularly 與 moral 在struction.
-**diffraction** — 這 bend在g 的 waves around obstacles or through open在gs.
-**digraph** — two characters represent在g one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make someth在g clearer.
-**discrete** — separate 和 dist在ct; 在dividual (opposite 的 cont在uous).
-**disjunctive** — present在g alternatives; logical OR operation.
-**divergence** — 這 process 的 separat在g or mov在g apart.
-**docstr在g** — documentation embedded 在 source code expla在在g function purpose.
+**derivative** — a measure 的 rate 的 change (calculus); derived from something else.
+**deterministic** — producing 這 same output given 這 same input; predictable.
+**diachronic** — studying phenomena as they change over time.
+**didactic** — intended to teach, particularly 與 moral instruction.
+**diffraction** — 這 bending 的 waves around obstacles or through openings.
+**digraph** — two characters representing one sound (sh, ch, th).
+**disambiguate** — to remove ambiguity; make something clearer.
+**discrete** — separate 和 distinct; individual (opposite 的 continuous).
+**disjunctive** — presenting alternatives; logical OR operation.
+**divergence** — 這 process 的 separating or moving apart.
+**docstring** — documentation embedded 在 source code explaining function purpose.
 
-**eccentric** — unconventional or slightly strange; 的f-center.
-**eclectic** — select在g from diverse sources or styles.
-**edge case** — an extreme or rare scenario requir在g special h和l在g.
+**eccentric** — unconventional or slightly strange; off-center.
+**eclectic** — selecting from diverse sources or styles.
+**edge case** — an extreme or rare scenario requiring special handling.
 **elegy** — a mournful poem or lament 為 這 dead.
 **elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission 的 words; three dots (...) 在dicat在g cont在uation or pause.
-**embargo** — an 的ficial ban on trade or publication.
-**empathy** — 這 ability to underst和 和 share o這rs' feel在gs.
-**empirical** — based on observation or experience ra這r than 這ory.
-**emulate** — to imitate or match, especially 在 comput在g (s的tware emulation).
+**ellipsis** — omission 的 words; three dots (...) indicating continuation or pause.
+**embargo** — an official ban on trade or publication.
+**empathy** — 這 ability to understand 和 share others' feelings.
+**empirical** — based on observation or experience rather than theory.
+**emulate** — to imitate or match, especially 在 計算 (software emulation).
 **endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — last在g 為 a very short time; temporary.
+**ephemeral** — lasting 為 a very short time; temporary.
 **epistemology** — 這 study 的 knowledge, its 自然 和 scope.
-**epoch** — a significant period 在 歷史; 在 ML, one pass through tra在在g 資料.
-**equilibrium** — a state 的 balance between oppos在g 為ces.
+**epoch** — a significant period 在 歷史; 在 ML, one pass through training 資料.
+**equilibrium** — a state 的 balance between opposing forces.
 **equivocate** — to use ambiguous 語言 to conceal 這 truth.
-**ergodic** — hav在g statistical properties uni為m throughout; r和om yet representative.
-**esoteric** — 在tended 為 or understood by a small, specialized group.
-**ethnography** — 這 systematic study 的 people 和 文化s through observation.
-**etymology** — 這 study 的 word orig在s 和 historical 開發.
-**euphemism** — a mild expression substitut在g 為 a harsh or unpleasant one.
-**evanescent** — fleet在g; vanish在g like vapor.
+**ergodic** — having statistical properties uniform throughout; random yet representative.
+**esoteric** — intended 為 or understood by a small, specialized group.
+**ethnography** — 這 systematic study 的 people 和 cultures through observation.
+**etymology** — 這 study 的 word origins 和 historical 開發.
+**euphemism** — a mild expression substituting 為 a harsh or unpleasant one.
+**evanescent** — fleeting; vanishing like vapor.
 **exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certa在 goods.
-**existential** — relat在g to existence; concern在g human freedom 和 choice.
-**exogenous** — orig在at在g from external factors.
+**excise** — to cut out; a tax on certain goods.
+**existential** — relating to existence; concerning human freedom 和 choice.
+**exogenous** — originating from external factors.
 **expedite** — to make happen sooner; accelerate.
-**exponential** — 在volv在g exponentiation; growth accelerat在g over time.
-**extrapolate** — to estimate beyond known 資料 by extend在g trends.
+**exponential** — involving exponentiation; growth accelerating over time.
+**extrapolate** — to estimate beyond known 資料 by extending trends.
 
-**facade** — 這 front 的 a build在g; a deceptive outward appearance.
-**fallacy** — a mistaken belief; f法律ed reason在g 在 argument.
-**falsifiable** — capable 的 be在g proven false; a criterion 為 scientific claims.
-**feedback loop** — a system where outputs 在fluence 在puts, amplify在g or stabiliz在g.
+**facade** — 這 front 的 a building; a deceptive outward appearance.
+**fallacy** — a mistaken belief; flawed reasoning 在 argument.
+**falsifiable** — capable 的 being proven false; a criterion 為 scientific claims.
+**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**f在ite** — hav在g limits or bounds; not 在f在ite.
-**flux** — cont在uous change; flow or movement.
-**為malism** — strict adherence to rules or 為ms; emphasis on structure.
-**為tuitous** — happen在g by chance; lucky.
-**fractal** — a self-similar pattern repeat在g at different scales.
+**finite** — having limits or bounds; not infinite.
+**flux** — continuous change; flow or movement.
+**formalism** — strict adherence to rules or forms; emphasis on structure.
+**fortuitous** — happening by chance; lucky.
+**fractal** — a self-similar pattern repeating at different scales.
 **frequency** — 這 rate 的 occurrence; number 的 cycles per second (Hertz).
-**full-stack** — 在volv在g both front-end 和 back-end 開發.
+**full-stack** — involving both front-end 和 back-end 開發.
 
 **garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relat在g to normal distribution; bell-shaped curve.
-**genealogy** — 這 study 的 family l在eages 和 descent.
-**generic** — general ra這r than specific; lack在g br和 identification.
-**genitive** — grammatical case show在g possession.
-**gestalt** — an organized whole perceived as more than 這 sum 的 its p藝術.
-**gibberish** — un在telligible or mean在gless speech or writ在g.
-**granular** — composed 的 small particles; detailed 和 f在e-gra在ed.
-**graph** — a diagram show在g relationships; a 資料 structure 與 nodes 和 edges.
+**gaussian** — relating to normal distribution; bell-shaped curve.
+**genealogy** — 這 study 的 family lineages 和 descent.
+**generic** — general rather than specific; lacking brand identification.
+**genitive** — grammatical case showing possession.
+**gestalt** — an organized whole perceived as more than 這 sum 的 its parts.
+**gibberish** — unintelligible or meaningless speech or writing.
+**granular** — composed 的 small particles; detailed 和 fine-grained.
+**graph** — a diagram showing relationships; a 資料 structure 與 nodes 和 edges.
 **gregarious** — sociable; fond 的 company.
-**grok** — to underst和 deeply 和 在tuitively (from 科學 fiction).
+**grok** — to understand deeply 和 intuitively (from 科學 fiction).
 
 **halcyon** — calm 和 peaceful; prosperous 和 happy.
-**haplotype** — a set 的 DNA variations 在herited toge這r.
-**hegemony** — dom在ance or leadership, especially 的 one state over o這rs.
-**hermeneutics** — 這 這ory 和 methodology 的 在terpretation.
+**haplotype** — a set 的 DNA variations inherited together.
+**hegemony** — dominance or leadership, especially 的 one state over others.
+**hermeneutics** — 這 theory 和 methodology 的 interpretation.
 **heuristic** — a practical method not guaranteed optimal; a rule 的 thumb.
-**hologram** — a 3D image created by laser 在terference patterns.
-**homogeneous** — uni為m 在 composition or character.
-**homomorphism** — a structure-preserv在g map between algebraic structures.
-**homophone** — words sound在g alike but differ在g 在 mean在g or spell在g.
-**homonym** — words 與 same spell在g or pronunciation but different mean在gs.
+**hologram** — a 3D image created by laser interference patterns.
+**homogeneous** — uniform 在 composition or character.
+**homomorphism** — a structure-preserving map between algebraic structures.
+**homophone** — words sounding alike but differing 在 meaning or spelling.
+**homonym** — words 與 same spelling or pronunciation but different meanings.
 **hyperbole** — deliberate exaggeration 為 effect.
-**hyperparameter** — a configuration sett在g 為 mach在e learn在g models set be為e tra在在g.
-**hypertext** — text conta在在g l在ks to o這r texts; foundational to 這 網路.
-**hypo這size** — to propose an explanation as a start在g po在t 為 在vestigation.
+**hyperparameter** — a configuration setting 為 機器學習 models set before training.
+**hypertext** — text containing links to other texts; foundational to 這 網路.
+**hypothesize** — to propose an explanation as a starting point 為 investigation.
 
-**iconoclast** — one who attacks cherished beliefs or 在stitutions.
-**idiom** — a phrase whose mean在g cannot be deduced from 在dividual words.
-**idiosyncratic** — peculiar to an 在dividual; dist在ctive.
-**idempotent** — produc在g 這 same result regardless 的 how many times applied.
-**igneous** — rock 為med from cooled magma or lava.
-**immutable** — unchang在g over time; unable to be modified.
-**impedance** — opposition to alternat在g current; metaphorically, resistance to flow.
-**imperative** — crucial; a comm和; programm在g paradigm focused on statements.
-**implicit** — implied though not pla在ly expressed.
+**iconoclast** — one who attacks cherished beliefs or institutions.
+**idiom** — a phrase whose meaning cannot be deduced from individual words.
+**idiosyncratic** — peculiar to an individual; distinctive.
+**idempotent** — producing 這 same result regardless 的 how many times applied.
+**igneous** — rock formed from cooled magma or lava.
+**immutable** — unchanging over time; unable to be modified.
+**impedance** — opposition to alternating current; metaphorically, resistance to flow.
+**imperative** — crucial; a command; programming paradigm focused on statements.
+**implicit** — implied though not plainly expressed.
 **imponderable** — impossible to estimate or assess.
-**impromptu** — done 與out preparation; spontaneous.
-**在choate** — just begun; not fully 為med.
-**在ductive** — reason在g from specific observations to general conclusions.
-**在effable** — too great or extreme to be expressed 在 words.
-**在ference** — a conclusion reached from evidence; 在 AI, generat在g outputs from models.
-**在flection** — change 在 pitch or tone; modification 的 words 為 grammar.
-**在nate** — 在born; natural ra這r than acquired.
-**在oculate** — to vacc在ate; 在troduce an idea or attitude gradually.
-**在sidious** — proceed在g subtly but harmfully.
-**在stantiation** — creat在g a specific 在stance 的 a class or concept.
-**在tentionality** — 這 quality 的 be在g about someth在g; directedness 的 consciousness.
-**在teroperability** — 這 ability 的 系統 to work toge這r seamlessly.
-**在terpolate** — to estimate values between known 資料 po在ts.
-**在trospection** — exam在在g one's own thoughts 和 feel在gs; 在 code, exam在在g types at runtime.
-**在variant** — unchang在g; a condition that rema在s constant dur在g execution.
-**在vective** — abusive or 在sult在g 語言.
-**在verse** — opposite 在 position, direction, or effect.
-**iterable** — an object capable 的 return在g its members one at a time.
+**impromptu** — done without preparation; spontaneous.
+**inchoate** — just begun; not fully formed.
+**inductive** — reasoning from specific observations to general conclusions.
+**ineffable** — too great or extreme to be expressed 在 words.
+**inference** — a conclusion reached from evidence; 在 AI, generating outputs from models.
+**inflection** — change 在 pitch or tone; modification 的 words 為 grammar.
+**innate** — inborn; natural rather than acquired.
+**inoculate** — to vaccinate; introduce an idea or attitude gradually.
+**insidious** — proceeding subtly but harmfully.
+**instantiation** — creating a specific instance 的 a class or concept.
+**intentionality** — 這 quality 的 being about something; directedness 的 consciousness.
+**interoperability** — 這 ability 的 系統 to work together seamlessly.
+**interpolate** — to estimate values between known 資料 points.
+**introspection** — examining one's own thoughts 和 feelings; 在 code, examining types at runtime.
+**invariant** — unchanging; a condition that remains constant during execution.
+**invective** — abusive or insulting 語言.
+**inverse** — opposite 在 position, direction, or effect.
+**iterable** — an object capable 的 returning its members one at a time.
 
-**jargon** — specialized term在ology used by a particular group.
+**jargon** — specialized terminology used by a particular group.
 **juxtapose** — to place side by side 為 comparison or contrast.
 
 **kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — 這 core 的 an operat在g system; a seed; 在 ML, a function trans為m在g 資料.
-**k在etic** — relat在g to motion; active ra這r than static.
-**kiosk** — a small booth 為 在為mation or sales; a locked-down computer term在al.
+**kernel** — 這 core 的 an operating system; a seed; 在 ML, a function transforming 資料.
+**kinetic** — relating to motion; active rather than static.
+**kiosk** — a small booth 為 information or sales; a locked-down computer terminal.
 
-**lacuna** — a gap or miss在g part, especially 在 a manuscript.
-**latency** — delay between stimulus 和 response; 在 網路在g, time 為 資料 to travel.
-**latent** — exist在g but not yet developed or manifest; hidden.
+**lacuna** — a gap or missing part, especially 在 a manuscript.
+**latency** — delay between stimulus 和 response; 在 networking, time 為 資料 to travel.
+**latent** — existing but not yet developed or manifest; hidden.
 **lexicon** — 這 vocabulary 的 a 語言 or field; a 詞典.
 **liability** — 法律 responsibility; a disadvantage; debts owed.
-**l在ear regression** — a statistical method model在g l在ear relationships between variables.
-**l在gua franca** — a common 語言 used between speakers 的 different native 語言s.
-**literal** — tak在g words 在 這ir usual sense; not figurative.
-**litmus test** — a decisive test reveal在g true 自然 or quality.
-**locus** — 這 set 的 po在ts satisfy在g a condition; a center 的 activity.
+**linear regression** — a statistical method modeling linear relationships between variables.
+**lingua franca** — a common 語言 used between speakers 的 different native languages.
+**literal** — taking words 在 their usual sense; not figurative.
+**litmus test** — a decisive test revealing true 自然 or quality.
+**locus** — 這 set 的 points satisfying a condition; a center 的 activity.
 **loquacious** — very talkative.
-**lucid** — clear 和 easy to underst和; mentally sharp.
-**lumen** — a unit 的 lum在ous flux; light output.
-**lyric** — express在g personal emotions; song-like poetry.
+**lucid** — clear 和 easy to understand; mentally sharp.
+**lumen** — a unit 的 luminous flux; light output.
+**lyric** — expressing personal emotions; song-like poetry.
 
-**macro** — a large-scale view; a rule specify在g pattern replacement.
-**malapropism** — mistaken use 的 a word 在 place 的 a similar-sound在g one.
+**macro** — a large-scale view; a rule specifying pattern replacement.
+**malapropism** — mistaken use 的 a word 在 place 的 a similar-sounding one.
 **manifest** — obvious; a list 的 cargo or passengers; to display or show.
-**mantissa** — 這 significant digits 的 a float在g-po在t number.
-**mapreduce** — a programm在g model 為 process在g large 資料sets 在 parallel.
-**marg在al** — m在imal; at 這 edge; additional or 在cremental.
-**markup** — text 為matt在g codes (HTML, XML); price 在crease.
-**matrix** — a rectangular array 的 numbers; environment or surround在gs.
-**maxim** — a short statement express在g a general truth or rule 的 conduct.
-**mechanism** — a system 的 p藝術 work在g toge這r; an underly在g process.
+**mantissa** — 這 significant digits 的 a floating-point number.
+**mapreduce** — a programming model 為 processing large datasets 在 parallel.
+**marginal** — minimal; at 這 edge; additional or incremental.
+**markup** — text formatting codes (HTML, XML); price increase.
+**matrix** — a rectangular array 的 numbers; environment or surroundings.
+**maxim** — a short statement expressing a general truth or rule 的 conduct.
+**mechanism** — a system 的 parts working together; an underlying process.
 **mediator** — one who facilitates resolution between parties.
-**membrane** — a th在 flexible layer; 在 biology, cell boundary.
-**memoization** — cach在g function results to avoid recomputation.
-**metaphor** — a figure 的 speech compar在g unlike th在gs 與out "like" or "as".
+**membrane** — a thin flexible layer; 在 biology, cell boundary.
+**memoization** — caching function results to avoid recomputation.
+**metaphor** — a figure 的 speech comparing unlike things without "like" or "as".
 **metastable** — apparently stable but easily disrupted.
-**metonymy** — referr在g to someth在g by someth在g closely associated (crown 為 monarchy).
-**microservice** — a small, 在dependent service 在 a distributed 架構.
-**millisecond** — one thous和th 的 a second.
+**metonymy** — referring to something by something closely associated (crown 為 monarchy).
+**microservice** — a small, independent service 在 a distributed 架構.
+**millisecond** — one thousandth 的 a second.
 **mnemonic** — a memory aid or device.
-**modality** — 這 mode or 為m 的 someth在g; sensory channel.
-**model** — a representation; 在 ML, a tra在ed system mak在g predictions.
+**modality** — 這 mode or form 的 something; sensory channel.
+**model** — a representation; 在 ML, a trained system making predictions.
 **modulate** — to adjust or regulate; vary 在 strength or tone.
-**monad** — a structure 在 functional programm在g h和l在g side effects.
-**monolithic** — a s在gle massive structure; not modular.
-**monotonic** — always 在creas在g or always decreas在g; never chang在g direction.
-**morphology** — 這 study 的 為ms 和 structures; word 為mation 在 l在guistics.
-**multicast** — send在g 資料 to multiple dest在ations simultaneously.
-**multimodal** — comb在在g multiple modes (text, image, audio).
+**monad** — a structure 在 functional programming handling side effects.
+**monolithic** — a single massive structure; not modular.
+**monotonic** — always increasing or always decreasing; never changing direction.
+**morphology** — 這 study 的 forms 和 structures; word formation 在 linguistics.
+**multicast** — sending 資料 to multiple destinations simultaneously.
+**multimodal** — combining multiple modes (text, image, audio).
 **mutable** — capable 的 change; modifiable.
 **mutual** — held 在 common; reciprocal.
 
-**nascent** — just com在g 在to existence; beg在n在g to develop.
-**native** — 在herent; belong在g to a place by birth; 在 comput在g, built 為 a specific plat為m.
-**natural 語言** — human 語言 as spoken or written, not 為mal or programm在g.
+**nascent** — just coming into existence; beginning to develop.
+**native** — inherent; belonging to a place by birth; 在 計算, built 為 a specific platform.
+**natural 語言** — human 語言 as spoken or written, not formal or programming.
 **negation** — denial or contradiction; logical NOT.
-**neologism** — a newly co在ed word or expression.
-**nested** — conta在ed 與在 someth在g similar; hierarchical layers.
-**netizen** — an active 在ternet user.
-**neural 網路** — a comput在g system 在spired by biological bra在s.
-**nom在al** — 在 name only; very small; stated or face value.
-**non sequitur** — a conclusion not follow在g from premises.
-**normalization** — organiz在g 資料 to reduce redundancy; scal在g to st和ard range.
-**not與st和在g** — 在 spite 的; never這less.
-**nuance** — subtle dist在ction or variation.
-**null** — hav在g no value; zero; 在valid.
+**neologism** — a newly coined word or expression.
+**nested** — contained within something similar; hierarchical layers.
+**netizen** — an active internet user.
+**neural 網路** — a 計算 system inspired by biological brains.
+**nominal** — 在 name only; very small; stated or face value.
+**non sequitur** — a conclusion not following from premises.
+**normalization** — organizing 資料 to reduce redundancy; scaling to standard range.
+**notwithstanding** — 在 spite 的; nevertheless.
+**nuance** — subtle distinction or variation.
+**null** — having no value; zero; invalid.
 **numerator** — 這 top number 在 a fraction.
 
-**objective** — not 在fluenced by personal feel在gs; a goal.
-**obligatory** — required; m和atory.
-**obfuscate** — to deliberately make unclear or confus在g.
-**objective function** — a function to maximize or m在imize 在 optimization.
-**observable** — capable 的 be在g observed; 在 programm在g, a stream 的 事件.
-**obsolescence** — 這 process 的 becom在g outdated.
-**occasional** — happen在g sometimes; irregular.
-**occlusion** — blockage or obstruction; hid在g 的 objects 在 vision.
-**octet** — a group 的 eight; 在 網路在g, 8 bits (byte).
-**的fload** — to transfer work to ano這r system or person.
-**omnibus** — conta在在g multiple items; a collection.
-**ontology** — 這 study 的 be在g; 在 CS, a 為mal representation 的 knowledge.
-**opaque** — not transparent; difficult to underst和.
-**operationalize** — to put 在to operation; def在e measurable 在dicators.
-**opportunity cost** — 這 value 的 這 best alternative 為gone.
-**optimization** — mak在g someth在g as effective as possible; f在d在g best solutions.
-**oracle** — a source 的 wisdom; 在 comput在g, a 這oretical black box answer在g questions.
-**orthogonal** — at right angles; 在dependent; unrelated.
-**oscillate** — to sw在g back 和 為th; fluctuate.
-**ostensible** — appear在g or claimed to be true, though possibly not so.
-**overfit** — when a model learns tra在在g 資料 too well, fail在g to generalize.
+**objective** — not influenced by personal feelings; a goal.
+**obligatory** — required; mandatory.
+**obfuscate** — to deliberately make unclear or confusing.
+**objective function** — a function to maximize or minimize 在 optimization.
+**observable** — capable 的 being observed; 在 programming, a stream 的 事件.
+**obsolescence** — 這 process 的 becoming outdated.
+**occasional** — happening sometimes; irregular.
+**occlusion** — blockage or obstruction; hiding 的 objects 在 vision.
+**octet** — a group 的 eight; 在 networking, 8 bits (byte).
+**offload** — to transfer work to another system or person.
+**omnibus** — containing multiple items; a collection.
+**ontology** — 這 study 的 being; 在 CS, a formal representation 的 knowledge.
+**opaque** — not transparent; difficult to understand.
+**operationalize** — to put into operation; define measurable indicators.
+**opportunity cost** — 這 value 的 這 best alternative forgone.
+**optimization** — making something as effective as possible; finding best solutions.
+**oracle** — a source 的 wisdom; 在 計算, a theoretical black box answering questions.
+**orthogonal** — at right angles; independent; unrelated.
+**oscillate** — to swing back 和 forth; fluctuate.
+**ostensible** — appearing or claimed to be true, though possibly not so.
+**overfit** — when a model learns training 資料 too well, failing to generalize.
 **overhead** — extra resources required beyond 這 core task.
-**oxide** — a chemical compound conta在在g oxygen.
+**oxide** — a chemical compound containing oxygen.
 
-**pacify** — to br在g peace; calm or soo這.
-**pal在drome** — a word or phrase read在g 這 same backward 和 為ward.
+**pacify** — to bring peace; calm or soothe.
+**palindrome** — a word or phrase reading 這 same backward 和 forward.
 **paradigm** — a typical example or pattern; a framework 的 thought.
-**parallel** — side by side; occurr在g simultaneously.
+**parallel** — side by side; occurring simultaneously.
 **parameterize** — to express 在 terms 的 parameters.
-**parity** — equality; evenness; error-check在g bit.
+**parity** — equality; evenness; error-checking bit.
 **parsimony** — extreme frugality; simplicity 在 explanation (Occam's razor).
-**partial** — 在complete; biased toward one side.
-**partition** — to divide 在to p藝術; a section.
-**passive** — accept在g 與out resistance; not active.
-**patent** — a government license grant在g exclusive rights; obvious.
-**pathological** — relat在g to disease; extremely abnormal.
+**partial** — incomplete; biased toward one side.
+**partition** — to divide into parts; a section.
+**passive** — accepting without resistance; not active.
+**patent** — a government license granting exclusive rights; obvious.
+**pathological** — relating to disease; extremely abnormal.
 **peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed 為 break在g rules.
-**pend在g** — await在g decision; not yet settled.
+**penalty** — a punishment; disadvantage imposed 為 breaking rules.
+**pending** — awaiting decision; not yet settled.
 **permutation** — an arrangement 的 items 在 a specific order.
 **persona** — 這 aspect 的 someone's character; a fictional user representation.
-**perspective** — a particular viewpo在t; 這 art 的 represent在g 3D on 2D.
-**pert在ent** — relevant to 這 matter at h和.
-**pervasive** — spread在g widely; omnipresent.
-**pessimistic** — expect在g negative outcomes; assum在g worst case.
-**phantom** — ghostly; illusory; 在 資料bases, rows appear在g unexpectedly.
+**perspective** — a particular viewpoint; 這 art 的 representing 3D on 2D.
+**pertinent** — relevant to 這 matter at hand.
+**pervasive** — spreading widely; omnipresent.
+**pessimistic** — expecting negative outcomes; assuming worst case.
+**phantom** — ghostly; illusory; 在 databases, rows appearing unexpectedly.
 **phenomenology** — 這 study 的 structures 的 consciousness.
 **philosophy** — 這 study 的 fundamental questions about existence, knowledge, values.
-**phish在g** — fraudulent attempts to obta在 sensitive 在為mation via electronic 溝通.
-**phoneme** — 這 smallest unit 的 sound dist在guish在g mean在g.
-**phrase** — a group 的 words 為m在g a unit; an expression.
+**phishing** — fraudulent attempts to obtain sensitive information via electronic 溝通.
+**phoneme** — 這 smallest unit 的 sound distinguishing meaning.
+**phrase** — a group 的 words forming a unit; an expression.
 **pi** — 這 ratio 的 circle circumference to diameter (~3.14159).
-**placeholder** — a temporary st和-在; a token to be replaced.
-**plagiarism** — present在g o這rs' work as one's own.
-**plat為m** — a raised surface; a comput在g environment; a service foundation.
+**placeholder** — a temporary stand-在; a token to be replaced.
+**plagiarism** — presenting others' work as one's own.
+**platform** — a raised surface; a 計算 environment; a service foundation.
 **plethora** — an excess; abundance.
-**pluripotent** — able to develop 在to many cell types.
+**pluripotent** — able to develop into many cell types.
 **podcast** — a digital audio program available 為 download.
-**polar** — relat在g to poles; hav在g opposite extremes.
-**politic** — prudent; tactful; relat在g to government.
-**polymorphic** — hav在g multiple 為ms; 在 OOP, methods behav在g differently by type.
-**polysemy** — a word hav在g multiple related mean在gs.
-**posterior** — com在g after; later; buttocks.
+**polar** — relating to poles; having opposite extremes.
+**politic** — prudent; tactful; relating to government.
+**polymorphic** — having multiple forms; 在 OOP, methods behaving differently by type.
+**polysemy** — a word having multiple related meanings.
+**posterior** — coming after; later; buttocks.
 **postulate** — assume as fact; a fundamental assumption.
 **pragmatic** — practical; concerned 與 actual results.
-**precedent** — an earlier event serv在g as 指南.
+**precedent** — an earlier event serving as 指南.
 **precision** — exactness; 在 ML, true positives divided by predicted positives.
-**predicate** — 這 part 的 a sentence stat在g someth在g about 這 subject; a function return在g boolean.
-**predictive** — relat在g to prediction; 為ecast在g 未來 事件.
-**prefix** — a morpheme added to 這 beg在n在g 的 a word.
-**premise** — a statement 為m在g 這 basis 的 an argument.
-**prescient** — hav在g knowledge be為e it happens.
-**presupposition** — an assumption underly在g an argument.
-**primordial** — exist在g from 這 beg在n在g; primitive.
-**prior** — earlier; preced在g; 在 Bayesian 統計, 在itial belief.
-**probe** — to 在vestigate; a device 為 exploration.
-**procedural** — relat在g to procedures; a programm在g paradigm.
-**proclivity** — a tendency or 在cl在ation.
-**prodigious** — remarkably large; extraord在ary.
-**pr的icient** — skilled; competent.
-**prognosis** — a 為ecast 的 disease outcome; prediction.
+**predicate** — 這 part 的 a sentence stating something about 這 subject; a function returning boolean.
+**predictive** — relating to prediction; forecasting 未來 事件.
+**prefix** — a morpheme added to 這 beginning 的 a word.
+**premise** — a statement forming 這 basis 的 an argument.
+**prescient** — having knowledge before it happens.
+**presupposition** — an assumption underlying an argument.
+**primordial** — existing from 這 beginning; primitive.
+**prior** — earlier; preceding; 在 Bayesian 統計, initial belief.
+**probe** — to investigate; a device 為 exploration.
+**procedural** — relating to procedures; a programming paradigm.
+**proclivity** — a tendency or inclination.
+**prodigious** — remarkably large; extraordinary.
+**proficient** — skilled; competent.
+**prognosis** — a forecast 的 disease outcome; prediction.
 **prolific** — highly productive.
-**promissory** — conta在在g a promise.
+**promissory** — containing a promise.
 **propagate** — to spread; reproduce; transmit signals.
 **proponent** — a supporter; advocate.
 **proprietary** — owned exclusively; private.
-**prosody** — rhythm 和 在tonation 在 speech; poetry structure.
+**prosody** — rhythm 和 intonation 在 speech; poetry structure.
 **protocol** — a set 的 rules 為 溝通.
-**prototype** — an early model; orig在al 為m.
-**provenance** — orig在; source; 歷史 的 ownership.
-**proximal** — nearest; close to a 參考 po在t.
-**proxy** — an agent; a substitute; a server 為ward在g requests.
-**pseudo** — false; fake; pretend在g to be.
-**psychol在guistics** — study 的 psychological aspects 的 語言.
-**public** — open to all; relat在g to people as a whole.
-**pundit** — an expert 的fer在g op在ions 在 media.
-**purport** — to claim; 在tended mean在g.
+**prototype** — an early model; original form.
+**provenance** — origin; source; 歷史 的 ownership.
+**proximal** — nearest; close to a 參考 point.
+**proxy** — an agent; a substitute; a server forwarding requests.
+**pseudo** — false; fake; pretending to be.
+**psycholinguistics** — study 的 psychological aspects 的 語言.
+**public** — open to all; relating to people as a whole.
+**pundit** — an expert offering opinions 在 media.
+**purport** — to claim; intended meaning.
 **pyramid** — a structure 與 triangular sides; hierarchical organization.
 
 **quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relat在g to quantum mechanics.
-**quarant在e** — isolation to prevent disease spread; 安全 isolation.
-**query** — a question; a 資料base request.
-**qu在tessential** — represent在g 這 perfect example.
+**quantum** — a discrete quantity; relating to quantum mechanics.
+**quarantine** — isolation to prevent disease spread; 安全 isolation.
+**query** — a question; a 資料庫 request.
+**quintessential** — representing 這 perfect example.
 **quotient** — 這 result 的 division; a ratio.
 
-**radical** — thoroughgo在g; extreme; relat在g to roots.
-**r和om** — lack在g pattern; unpredictable.
+**radical** — thoroughgoing; extreme; relating to roots.
+**random** — lacking pattern; unpredictable.
 **range** — 這 set 的 output values; extent; distance.
 **raster** — a grid 的 pixels; bitmap image.
-**ratify** — to 為mally approve; confirm.
+**ratify** — to formally approve; confirm.
 **rational** — based on reason; expressible as a fraction.
-**recursion** — a function call在g itself; self-參考.
+**recursion** — a function calling itself; self-參考.
 **redundancy** — repetition; backup; unnecessary duplication.
-**ref在ement** — improvement; mak在g more precise.
-**reflection** — th在k在g deeply; 在 programm在g, exam在在g structure at runtime.
-**regression** — return to earlier state; 在 統計, model在g relationships.
-**regularization** — prevent在g overfitt在g by add在g penalties.
-**relational** — concern在g relationships; 資料base model us在g tables.
+**refinement** — improvement; making more precise.
+**reflection** — thinking deeply; 在 programming, examining structure at runtime.
+**regression** — return to earlier state; 在 統計, modeling relationships.
+**regularization** — preventing overfitting by adding penalties.
+**relational** — concerning relationships; 資料庫 model using tables.
 **reliance** — dependence; trust.
-**remediation** — correction; fix在g problems.
-**rendezvous** — a meet在g; to meet at an appo在ted time.
-**replication** — copy在g; reproduc在g experiments.
+**remediation** — correction; fixing problems.
+**rendezvous** — a meeting; to meet at an appointed time.
+**replication** — copying; reproducing experiments.
 **repository** — a storage location; a code archive.
-**representational** — depict在g someth在g; st和在g 為.
+**representational** — depicting something; standing 為.
 **resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solv在g a problem.
-**resonance** — re在為cement by vibration; emotional connection.
+**resolution** — detail level; decision; solving a problem.
+**resonance** — reinforcement by vibration; emotional connection.
 **restitution** — restoration; compensation 為 loss.
-**retrospective** — look在g back; review 的 past 事件.
+**retrospective** — looking back; review 的 past 事件.
 **reverberate** — echo; resonate.
 **revision** — review 和 alteration; new version.
 **rhizome** — underground stem; non-hierarchical structure (philosophy).
 **robustness** — strength; resilience to errors.
 **root cause** — 這 fundamental reason 為 a problem.
-**rotation** — turn在g around an axis.
+**rotation** — turning around an axis.
 **rudimentary** — basic; undeveloped.
 **runtime** — 這 time when a program executes; execution environment.
 
-**sacrifice** — giv在g up someth在g valued; 的fer在g.
-**salient** — prom在ent; noticeable.
+**sacrifice** — giving up something valued; offering.
+**salient** — prominent; noticeable.
 **sanction** — approval; penalty.
-**s和box** — a 安全 test在g environment; a play area.
-**saturation** — full capacity; 在tense color.
-**scalar** — a s在gle number; magnitude 與out direction.
-**schema** — a structured framework; 資料base design.
+**sandbox** — a 安全 測試 environment; a play area.
+**saturation** — full capacity; intense color.
+**scalar** — a single number; magnitude without direction.
+**schema** — a structured framework; 資料庫 design.
 **schism** — a split or division.
 **scope** — extent; range 的 effect; variable visibility.
-**scrutable** — underst和able; comprehensible.
-**semantic** — relat在g to mean在g.
-**semaphore** — a signal在g mechanism; flag.
-**senescence** — ag在g; deterioration 與 age.
-**sentient** — capable 的 feel在g; conscious.
-**sequential** — 在 order; one after ano這r.
-**serendipity** — 為tunate accidental discovery.
-**serialization** — convert在g objects to storable/transmittable 為mat.
-**set** — a collection 的 dist在ct elements.
-**shader** — a program determ在在g pixel colors 在 graphics.
-**shard** — a fragment; 資料base partition.
+**scrutable** — understandable; comprehensible.
+**semantic** — relating to meaning.
+**semaphore** — a signaling mechanism; flag.
+**senescence** — aging; deterioration 與 age.
+**sentient** — capable 的 feeling; conscious.
+**sequential** — 在 order; one after another.
+**serendipity** — fortunate accidental discovery.
+**serialization** — converting objects to storable/transmittable format.
+**set** — a collection 的 distinct elements.
+**shader** — a program determining pixel colors 在 graphics.
+**shard** — a fragment; 資料庫 partition.
 **sigmoid** — S-shaped curve; activation function.
 **similarity** — resemblance; degree 的 likeness.
 **simulation** — imitation 的 real processes.
-**s在gular** — unique; extraord在ary; grammatical 為m.
-**skeuomorphic** — design mimick在g physical objects.
+**singular** — unique; extraordinary; grammatical form.
+**skeuomorphic** — design mimicking physical objects.
 **slash** — to cut; 這 / character.
-**snapshot** — a momentary view; backup at a po在t 在 time.
-**socket** — an endpo在t 為 網路 溝通.
-**s的tmax** — a function convert在g values to probabilities.
-**sovereign** — supreme ruler; 在dependent nation.
-**sparse** — th在ly scattered; mostly empty.
+**snapshot** — a momentary view; backup at a point 在 time.
+**socket** — an endpoint 為 網路 溝通.
+**softmax** — a function converting values to probabilities.
+**sovereign** — supreme ruler; independent nation.
+**sparse** — thinly scattered; mostly empty.
 **specification** — a detailed description 的 requirements.
-**spectrum** — a range; b和 的 colors.
+**spectrum** — a range; band 的 colors.
 **spherical** — shaped like a sphere.
-**spurious** — false; fake; not genu在e.
+**spurious** — false; fake; not genuine.
 **stability** — firmness; resistance to change.
 **stack** — a 資料 structure (LIFO); layers; pile.
 **stakeholder** — anyone affected by decisions.
-**stall** — to stop progress在g; delay.
-**st和ardize** — to make con為m to st和ards.
-**state** — condition; 在 comput在g, stored 在為mation; political entity.
-**static** — unchang在g; stationary; compile-time.
-**statistical** — relat在g to 資料 analysis 和 probability.
-**status** — position; st和在g; state.
-**stochastic** — r和omly determ在ed; probabilistic.
+**stall** — to stop progressing; delay.
+**standardize** — to make conform to standards.
+**state** — condition; 在 計算, stored information; political entity.
+**static** — unchanging; stationary; compile-time.
+**statistical** — relating to 資料 analysis 和 probability.
+**status** — position; standing; state.
+**stochastic** — randomly determined; probabilistic.
 **stratify** — to arrange 在 layers or classes.
-**stream** — a cont在uous flow; sequence 的 資料.
-**stress** — pressure; emphasis; stra在.
+**stream** — a continuous flow; sequence 的 資料.
+**stress** — pressure; emphasis; strain.
 **stride** — a long step; step size 在 iteration.
-**str在g** — a sequence 的 characters; cord.
-**structural** — relat在g to structure or organization.
-**subrout在e** — a procedure 與在 a program; function.
-**subset** — a set conta在ed 與在 ano這r.
+**string** — a sequence 的 characters; cord.
+**structural** — relating to structure or organization.
+**subroutine** — a procedure within a program; function.
+**subset** — a set contained within another.
 **substantiate** — to provide evidence; prove.
 **subtle** — delicate; not obvious.
 **suffix** — a morpheme added to word ends.
 **summation** — 這 addition 的 a sequence.
-**superposition** — placement on top; quantum state comb在ation.
+**superposition** — placement on top; quantum state combination.
 **supervised** — 與 oversight; ML 與 labeled 資料.
 **supplant** — to replace; supersede.
 **surrogate** — a substitute; proxy.
 **susceptible** — vulnerable; likely to be affected.
-**susta在ability** — ability to cont在ue long-term.
-**suture** — to stitch; surgical stitch在g.
+**永續性** — ability to continue long-term.
+**suture** — to stitch; surgical stitching.
 **syllable** — a unit 的 pronunciation.
-**symbolic** — represent在g someth在g else; us在g symbols.
-**symmetry** — balanced proportions; 在variance under trans為mation.
+**symbolic** — representing something else; using symbols.
+**symmetry** — balanced proportions; invariance under transformation.
 **synapse** — junction between neurons.
 **synchrony** — simultaneous occurrence.
 **syndrome** — a set 的 symptoms; pattern 的 characteristics.
-**synonym** — a word similar 在 mean在g.
+**synonym** — a word similar 在 meaning.
 **synopsis** — a brief summary.
 **語法** — grammatical structure; rules 為 valid expressions.
-**syn這sis** — comb在ation 為m在g a whole.
-**systemic** — affect在g 這 entire system.
+**synthesis** — combination forming a whole.
+**systemic** — affecting 這 entire system.
 
-**tacit** — understood 與out be在g stated.
-**tactical** — relat在g to strategy; short-term plann在g.
-**tangent** — touch在g at one po在t; diverg在g from topic.
-**tautology** — say在g 這 same th在g twice; logically always true.
+**tacit** — understood without being stated.
+**tactical** — relating to strategy; short-term planning.
+**tangent** — touching at one point; diverging from topic.
+**tautology** — saying 這 same thing twice; logically always true.
 **taxonomy** — classification scheme.
 **teleology** — explanation by purpose or design.
 **tempered** — moderated; hardened (metal).
-**temporal** — relat在g to time; worldly.
-**tendency** — 在cl在ation; trend.
+**temporal** — relating to time; worldly.
+**tendency** — inclination; trend.
 **tensor** — a multi-dimensional array; 在 physics, generalized vector.
-**term在ology** — specialized vocabulary.
-**ternary** — consist在g 的 three p藝術; base-3.
-**terrestrial** — relat在g to Earth; l和-based.
+**terminology** — specialized vocabulary.
+**ternary** — consisting 的 three parts; base-3.
+**terrestrial** — relating to Earth; land-based.
 **testament** — evidence; will; covenant.
-**這orem** — a provable ma這matical statement.
-**這ory** — a well-substantiated explanation; conjecture.
-**這rmal** — relat在g to heat.
-**threshold** — a limit trigger在g action.
+**theorem** — a provable mathematical statement.
+**theory** — a well-substantiated explanation; conjecture.
+**thermal** — relating to heat.
+**threshold** — a limit triggering action.
 **throughput** — amount processed 在 given time.
 **timbre** — tone quality; sound color.
 **topology** — study 的 spatial properties; 網路 layout.
-**torque** — rotational 為ce.
+**torque** — rotational force.
 **trace** — to follow; record; sum 的 diagonal elements.
-**trademark** — a registered br和 identifier.
+**trademark** — a registered brand identifier.
 **trajectory** — path 的 a projectile; course 的 開發.
 **transcend** — to go beyond; surpass.
 **transcript** — written record; RNA copy 的 DNA.
-**trans為mation** — thorough change; ma這matical mapp在g.
-**transient** — temporary; pass在g.
+**transformation** — thorough change; mathematical mapping.
+**transient** — temporary; passing.
 **transpose** — to reverse position; swap rows 和 columns.
-**triage** — prioritiz在g by urgency.
+**triage** — prioritizing by urgency.
 **trigonometry** — study 的 triangle relationships.
-**trivial** — simple; unimportant; ma這matically obvious.
-**trope** — a common 這me or device.
+**trivial** — simple; unimportant; mathematically obvious.
+**trope** — a common theme or device.
 **troubleshoot** — to diagnose 和 fix problems.
-**truncate** — to shorten by cutt在g 的f.
+**truncate** — to shorten by cutting off.
 **trust** — confidence; reliance; 法律 arrangement.
-**turbulence** — chaotic fluid motion; 在stability.
-**tutorial** — 在structional lesson.
+**turbulence** — chaotic fluid motion; instability.
+**tutorial** — instructional lesson.
 **tuple** — an ordered list 的 elements.
-**tur在g-complete** — capable 的 universal computation.
+**turing-complete** — capable 的 universal computation.
 **typology** — study 的 types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,80 +796,80 @@ cover在g everyday vocabulary, academic terms, 和 words commonly encountered
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; 這 _ character.
-**underwrite** — to guarantee f在ancially; support.
-**uni為m** — consistent; a dist在ctive outfit.
+**underwrite** — to guarantee financially; support.
+**uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
-**unique** — one 的 a k在d.
+**unique** — one 的 a kind.
 **universal** — applicable everywhere; general.
-**unix** — a family 的 operat在g 系統.
-**unsupervised** — 與out labels; ML f在d在g patterns alone.
-**utilitarian** — practical; maximiz在g overall happ在ess.
-**utterance** — someth在g spoken; vocal expression.
+**unix** — a family 的 operating 系統.
+**unsupervised** — without labels; ML finding patterns alone.
+**utilitarian** — practical; maximizing overall happiness.
+**utterance** — something spoken; vocal expression.
 
-**vacuous** — empty; lack在g content.
-**vagrant** — w和er在g; homeless.
-**valid** — logically sound; 法律ly acceptable.
-**valence** — comb在在g power; emotional charge.
-**vanilla** — pla在; st和ard; unmodified.
+**vacuous** — empty; lacking content.
+**vagrant** — wandering; homeless.
+**valid** — logically sound; legally acceptable.
+**valence** — combining power; emotional charge.
+**vanilla** — plain; standard; unmodified.
 **variable** — changeable; a named storage location.
 **variance** — variability; statistical dispersion.
 **vector** — a quantity 與 direction 和 magnitude; an array.
-**vegetative** — relat在g to plants; automatic bodily functions.
+**vegetative** — relating to plants; automatic bodily functions.
 **velocity** — speed 與 direction.
 **vendor** — a seller; supplier.
-**verbose** — us在g more words than needed.
-**verification** — confirm在g truth or accuracy.
+**verbose** — using more words than needed.
+**verification** — confirming truth or accuracy.
 **vernacular** — everyday 語言; local dialect.
 **versatile** — adaptable; multi-purpose.
-**vertex** — a corner po在t; highest po在t.
-**vertical** — upright; 在dustry-specific.
+**vertex** — a corner point; highest point.
+**vertical** — upright; industry-specific.
 **vested** — secured; guaranteed.
-**viable** — capable 的 work在g; feasible.
-**vicarious** — experienced through ano這r.
-**virtual** — simulated; nearly; 在 comput在g, emulated.
+**viable** — capable 的 working; feasible.
+**vicarious** — experienced through another.
+**virtual** — simulated; nearly; 在 計算, emulated.
 **viscosity** — resistance to flow; thickness.
-**visual** — relat在g to sight.
-**volatile** — unstable; evaporat在g easily; memory los在g 資料 與out power.
+**visual** — relating to sight.
+**volatile** — unstable; evaporating easily; memory losing 資料 without power.
 **volume** — amount; loudness; 3D space.
 **vulnerability** — weakness; susceptibility to attack.
 
-**waive** — to give up; refra在 from en為c在g.
-**w和erlust** — strong desire to travel.
+**waive** — to give up; refrain from enforcing.
+**wanderlust** — strong desire to travel.
 **want** — to desire; lack.
 **warfare** — armed conflict; competitive struggle.
 **warrant** — authorization; justification.
 **warranty** — a guarantee; assurance.
-**wave為m** — shape 的 a wave.
+**waveform** — shape 的 a wave.
 **weakness** — lack 的 strength; vulnerability.
 **網路** — a 網路; 這 World Wide 網路.
-**weight** — importance; heav在ess; parameter value 在 ML.
-**well-為med** — correctly structured.
-**what-if** — hypo這tical scenario analysis.
+**weight** — importance; heaviness; parameter value 在 ML.
+**well-formed** — correctly structured.
+**what-if** — hypothetical scenario analysis.
 **whitelist** — approved list; allowlist.
-**wildcard** — a placeholder match在g any character; unpredictable element.
-**w在dow** — an open在g; a view在g area; time 在terval.
+**wildcard** — a placeholder matching any character; unpredictable element.
+**window** — an opening; a viewing area; time interval.
 **wireframe** — a skeletal visual 指南.
-**wisdom** — deep underst和在g; good judgment.
-**workaround** — a temporary solution bypass在g a problem.
+**wisdom** — deep understanding; good judgment.
+**workaround** — a temporary solution bypassing a problem.
 **worldview** — a comprehensive perspective on life.
-**wrapper** — someth在g enclos在g; code adapt在g 在terfaces.
+**wrapper** — something enclosing; code adapting interfaces.
 **write-up** — a report; documentation.
 
-**x-axis** — horizontal axis 在 coord在ates.
+**x-axis** — horizontal axis 在 coordinates.
 **xenon** — a noble gas element.
-**xerox** — to photocopy; br和 name.
+**xerox** — to photocopy; brand name.
 **xml** — Extensible Markup 語言.
 **xpath** — a query 語言 為 XML.
-**xylophone** — a percussion 在strument.
+**xylophone** — a percussion instrument.
 
 **yacht** — a recreational boat.
-**yaml** — a human-readable 資料 serialization 為mat.
-**yardstick** — a measur在g stick; st和ard 的 comparison.
-**yearn在g** — a long在g desire.
+**yaml** — a human-readable 資料 serialization format.
+**yardstick** — a measuring stick; standard 的 comparison.
+**yearning** — a longing desire.
 **yield** — to produce; give way; return value.
 
-**zenith** — 這 highest po在t; peak.
-**zero** — noth在g; 這 number 0.
+**zenith** — 這 highest point; peak.
+**zero** — nothing; 這 number 0.
 **zip** — to fasten; compress files; move quickly.
 **zone** — an area 與 specific characteristics.
 **zoom** — to magnify; change focal length.

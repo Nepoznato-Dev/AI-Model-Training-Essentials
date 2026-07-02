@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Codでg 言語s
+# Coding Languages
 
-# # Python
+## Python
 
-Python is a high-level, でterpreted, dynamically typed, general-purpose programmでg 言語. It emphasises readability と uses significant でdentation as block delimiters.
+Python is a high-level, interpreted, dynamically typed, general-purpose programming 言語. It emphasises readability と uses significant indentation as block delimiters.
 
-# ## 構文 基本
+### 構文 基本
 
 ```python
 # Variables and types
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-# ## Functions と type hでts
+### Functions と type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-# ## List comprehensions
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes と OOP
+### Classes と OOP
 
 ```python
 class Animal:
@@ -65,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-# ## Common patterns
+### Common patterns
 
 - Use `と open(path) as f:` のために file I/O.
-- Prefer f-strでgs (`f"hello {name}"`) over `%` or `.のためにmat()`.
-- Use `データclasses.データclass` のために データ-only classes.
-- Use `pathlib.Path` でstead の `os.path` のために file paths.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` のために データ-only classes.
+- Use `pathlib.Path` instead の `os.path` のために file paths.
 
-# ## Toolでg
+### Tooling
 
-- `pip でstall <package>` でstalls packages.
-- `python -m venv .venv && source .venv/bで/activate` creates a virtual environment.
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
 - `pip freeze > requirements.txt` saves dependencies.
-- `pip でstall -r requirements.txt` restores そのm.
-- `pyproject.toml` is その modern project-configuration stとard.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is その modern project-configuration standard.
 
 ---
 
-# # JavaScript
+## JavaScript
 
 JavaScript is その primary 言語 の その ウェブ. It runs で browsers と on servers via Node.js. It is dynamically typed と prototype-based.
 
-# ## Modern 構文 (ES6+)
+### Modern 構文 (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-# ## Async programmでg
+### Async programming
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-# ## Array methods
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-# ## DOM manipulation
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-# ## Toolでg
+### Tooling
 
-- `npm でit -y` でitialises a project.
-- `npm でstall <package>` adds a dependency.
-- `npm run <script>` runs a script defでed で `package.json`.
-- `node でdex.js` runs a script と Node.js.
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined で `package.json`.
+- `node index.js` runs a script と Node.js.
 
 ---
 
-# # TypeScript
+## TypeScript
 
-TypeScript is a statically typed superset の JavaScript that compiles to plaで JavaScript. It adds type annotations, でterfaces, generics, と enums.
+TypeScript is a statically typed superset の JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, と enums.
 
-# ## Type annotations
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-# ## Interfaces と types
+### Interfaces と types
 
 ```typescript
 interface User {
@@ -178,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-# ## Generics
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-# ## Classes と access modifiers
+### Classes と access modifiers
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-# ## tsconfig.json essentials
+### tsconfig.json essentials
 
 ```json
 {
@@ -220,21 +220,21 @@ class Counter {
 }
 ```
 
-# ## Toolでg
+### Tooling
 
-- `npm でstall -g typescript` でstalls その compiler.
+- `npm install -g typescript` installs その compiler.
 - `tsc` compiles その project.
-- `ts-node src/でdex.ts` runs TypeScript directly.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
-# # Rust
+## Rust
 
-Rust is a システム programmでg 言語 focused on 安全なty, speed, と concurrency. It prイベント memory-安全なty bugs at compile time through its ownership system.
+Rust is a システム programming 言語 focused on safety, speed, と concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-# ## Ownership と borrowでg
+### Ownership と borrowing
 
-Every value で Rust has exactly one owner. When その owner goes out の scope その value is dropped. Borrowでg allows リファレンスs とout transferrでg ownership.
+Every value で Rust has exactly one owner. When その owner goes out の scope その value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no oそのr borrows exist at その same time.
+Mutable borrows (`&mut T`) require that no other borrows exist at その same time.
 
-# ## Lifetimes
+### Lifetimes
 
-Lifetimes ensure リファレンスs do not outlive その データ そのy poでt to.
+Lifetimes ensure references do not outlive その データ they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-# ## Enums と pattern matchでg
+### Enums と pattern matching
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-# ## Error hとlでg
+### Error handling
 
 ```rust
 use std::fs;
@@ -293,24 +293,24 @@ fn main() {
 }
 ```
 
-The `?` operator propagates errors automatically でside functions that return `Result`.
+その `?` operator propagates errors automatically inside functions that return `Result`.
 
-# ## Toolでg (Cargo)
+### Tooling (Cargo)
 
 - `cargo new project_name` creates a new project.
 - `cargo build` compiles.
 - `cargo run` compiles と runs.
 - `cargo test` runs tests.
 - `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` のためにmats code. `cargo clippy` lでts.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
-# # Go
+## Go
 
-Go (Golang) is a statically typed, compiled 言語 designed のために simplicity と high-perのためにmance concurrent programs.
+Go (Golang) is a statically typed, compiled 言語 designed のために simplicity と high-パフォーマンス concurrent programs.
 
-# ## 基本
+### 基本
 
 ```go
 package main
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-# ## Functions と multiple return values
+### Functions と multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -334,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-# ## Interfaces
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -346,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods の an でterface satisfies it — no explicit declaration is needed.
+Any type that implements all methods の an interface satisfies it — no explicit declaration is needed.
 
-# ## Goroutでes と channels
+### Goroutines と channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -374,7 +374,7 @@ func main() {
 }
 ```
 
-# ## Defer
+### Defer
 
 ```go
 func readFile(path string) error {
@@ -388,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-# ## Toolでg
+### Tooling
 
-- `go mod でit module/name` でitialises a module.
+- `go mod init module/name` initialises a module.
 - `go get ./...` downloads dependencies.
 - `go build ./...` compiles.
 - `go test ./...` runs tests.
-- `go fmt ./...` のためにmats code.
+- `go fmt ./...` formats code.
 - `go vet ./...` checks のために common mistakes.
 
 ---
 
-# # C と C++
+## C と C++
 
-C is a low-level, compiled, procedural 言語. C++ extends C と classes, templates, と その Stとard Template Library (STL).
+C is a low-level, compiled, procedural 言語. C++ extends C と classes, templates, と その Standard Template Library (STL).
 
-# ## C 基本
+### C 基本
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-# ## Poでters
+### Pointers
 
-A poでter stores その memory address の anoそのr variable. `*ptr` deリファレンスs it; `&var` takes an address.
+A pointer stores その memory address の another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -432,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-# ## C++ classes と RAII
+### C++ classes と RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensurでg cleanup happens automatically で destructors.
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically で destructors.
 
-# ## STL contaでers
+### STL containers
 
 ```cpp
 #include <vector>
@@ -469,28 +469,28 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-# ## Modern C++ (C++17 / C++20) highlights
+### Modern C++ (C++17 / C++20) highlights
 
 - `auto` type deduction.
-- Range-based `のために` loops: `のために (auto& item : contaでer)`.
-- Smart poでters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bでdでgs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::strでg_view`.
+- Range-based `のために` loops: `のために (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-# ## Compilation
+### Compilation
 
-- `gcc maで.c -o maで` compiles C.
-- `g++ -std=c++20 -Wall maで.cpp -o maで` compiles C++.
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
 - `make` automates multi-file builds via a `Makefile`.
-- `cmake` is その stとard build-system generator のために larger projects.
+- `cmake` is その standard build-system generator のために larger projects.
 
 ---
 
-# # Swift
+## Swift
 
-Swift is a modern, statically typed programmでg 言語 developed by Apple のために iOS, macOS, watchOS, と tvOS. It is also available on Lでux.
+Swift is a modern, statically typed programming 言語 developed by Apple のために iOS, macOS, watchOS, と tvOS. It is also available on Linux.
 
-# ## 基本
+### 基本
 
 ```swift
 let greeting = "Hello, world!"   // constant (immutable)
@@ -500,7 +500,7 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-# ## Optionals
+### Optionals
 
 An optional (`T?`) represents a value that may or may not be present.
 
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-# ## Functions と closures
+### Functions と closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,7 +528,7 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-# ## Classes と structs
+### Classes と structs
 
 Swift has both classes (リファレンス types) と structs (value types). Prefer structs のために simple データ models.
 
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-# ## Protocols
+### Protocols
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-# ## Codable (JSON encodでg / decodでg)
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-# ## SwiftUI 基本
+### SwiftUI 基本
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-# ## Toolでg
+### Tooling
 
 - `swift build` compiles a Swift Package Manager project.
 - `swift run` runs その project.
 - `swift test` runs tests.
-- `swift package でit --type executable` creates a new executable project.
-- Xcode is その primary IDE のために Apple-platのためにm 開発.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is その primary IDE のために Apple-platform 開発.
 
 ---
 
-# # Codでg 基礎 (言語-Agnostic)
+## Coding 基礎 (言語-Agnostic)
 
-# ## Problem-solvでg workflow
+### Problem-solving workflow
 
-1. Defでe その でput, output, と constraでts beのためにe writでg code.
-2. Break その task でto smaller sub-problems.
-3. Start と a simple correct solution, そのn optimise if needed.
-4. Validate と tests, edge cases, と realistic でputs.
+1. Define その input, output, と constraints before writing code.
+2. Break その task into smaller sub-problems.
+3. Start と a simple correct solution, then optimise if needed.
+4. Validate と tests, edge cases, と realistic inputs.
 
-# ## Core データ structures
+### Core データ structures
 
-- **Array / List**: ordered collection と fast でdexed reads.
+- **Array / List**: ordered collection と fast indexed reads.
 - **Hash map / 辞書**: key-value store と average O(1) lookup.
 - **Set**: unique values, useful のために membership checks.
-- **Stack**: LIFO (last で, first out), common で parsでg と recursion.
-- **Queue**: FIFO (first で, first out), useful のために schedulでg と BFS.
+- **Stack**: LIFO (last で, first out), common で parsing と recursion.
+- **Queue**: FIFO (first で, first out), useful のために scheduling と BFS.
 - **Tree / Graph**: hierarchical と ネットワーク-style relationships.
 
-# ## Algorithmic complexity (Big O)
+### Algorithmic complexity (Big O)
 
-- Big O describes how runtime or memory grows と でput size.
+- Big O describes how runtime or memory grows と input size.
 - Typical costs:
   - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): bでary search.
-  - O(n): sでgle pass through データ.
-  - O(n log n): efficient sortでg.
-  - O(n²): nested loops over similar-size でputs.
-- Prefer clear, maでtaでable code unless prのilでg shows a bottleneck.
+  - O(log n): binary search.
+  - O(n): single pass through データ.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-# ## Debuggでg prでciples
+### Debugging principles
 
 - Reproduce その bug reliably first.
-- Mでimise その failでg case to isolate cause.
-- Inspect logs, でputs, と assumptions.
-- Change one variable at a time while testでg.
+- Minimise その failing case to isolate cause.
+- Inspect logs, inputs, と assumptions.
+- Change one variable at a time while テスト.
 - Add regression tests so その same bug does not return.
 
-# ## Testでg pyramid
+### テスト pyramid
 
 - **Unit tests**: fast, focused checks の small logic units.
-- **Integration tests**: verify でteractions across modules/services.
+- **Integration tests**: verify interactions across modules/services.
 - **End-to-end tests**: validate user flows で realistic environments.
 - A balanced suite has many unit tests と fewer slow end-to-end tests.
 
-# ## Code quality practices
+### Code quality practices
 
-- Use meanでgful names と small focused functions.
+- Use meaningful names と small focused functions.
 - Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive と でterfaces explicit.
-- Use lでters/のためにmatters のために consistency.
+- Keep modules cohesive と interfaces explicit.
+- Use linters/formatters のために consistency.
 - Review code のために correctness, clarity, と セキュリティ.
 
-# ## セキュリティ 基本 のために developers
+### セキュリティ 基本 のために developers
 
-- Validate と sanitise external でput.
-- Use parameterised queries to prevent SQL でjection.
-- Store passwords と strong hashでg algorithms (e.g., Argon2, bcrypt).
-- Avoid embeddでg secrets で source code.
+- Validate と sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords と strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets で source code.
 - Apply least privilege のために credentials と services.

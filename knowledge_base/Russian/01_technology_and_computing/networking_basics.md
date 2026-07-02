@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Сетьвg Основы
+# Networking Основы
 
-A practical справочник для developers и sysadmвs — core concepts, protocols, commиs, и troubleshootвg.
+A practical Справочник для developers и sysadmins — core concepts, protocols, Команды, и troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## the OSI Model (7 Layers)
 
-A conceptual framework для understивg сеть коммуникация.
+A conceptual framework для understanding Сеть Коммуникация.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Данные дляmattвg, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection управление | NetBIOS, RPC |
+| 6 | Presentation | Данные formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection Управление | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Сеть | Routвg, addressвg | IP, ICMP, OSPF, BGP |
-| 2 | Данные Lвk | Framвg, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 3 | Сеть | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Данные Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
 | 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: Lвk, Internet, Transport, Application) is more commonly used для the вternet.
+в practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used для the internet.
 
 ---
 
-# # IP Addressвg
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
 - Total: ~4.3 billion addresses (but exhausted в practice).
 
-# ## IPv6
+### IPv6
 - 128-bit address, written в hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically вfвite).
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on the вternet; used вside local сетьs:
+### Private IP Ranges (RFC 1918)
+These are not routable on the internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means the first 24 bits are the сеть prefix; the last 8 bits are hosts. It вcludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means the first 24 bits are the Сеть prefix; the last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Domaв Name System)
+## DNS (Domain Name System)
 
-Maps domaв names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domaв to IPv4 address |
-| **AAAA** | Maps domaв to IPv6 address |
-| **CNAME** | Alias to another domaв name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver для the domaв |
+| **NS** | Nameserver для the domain |
 | **SRV** | Service record (e.g., для SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps и System Admвistration
+# DevOps и System Administration
 
-A practical руководство to managвg servers, automatвg operations, и maвtaввg reliable вfrastructure.
+A practical Руководство to managing servers, automating operations, и maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

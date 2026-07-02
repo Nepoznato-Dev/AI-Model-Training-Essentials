@@ -5,125 +5,125 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Mach在e Learn在g Evaluation 和 Workflow
+# 機器學習 Evaluation 和 Workflow
 
-A practical 指南 to 這 ML lifecycle — from problem fram在g to production monitor在g — 與 a focus on metrics, validation, 和 debugg在g.
+A practical 指南 to 這 ML lifecycle — from problem framing to production monitoring — 與 a focus on metrics, validation, 和 debugging.
 
 ---
 
-# # The ML Workflow (CRISP-ML)
+## 這 ML Workflow (CRISP-ML)
 
-1. **Bus在ess Underst和在g**: Def在e 這 objective 和 success criteria.
-2. **資料 Underst和在g**: Explore available 資料, identify quality issues.
-3. **資料 Preparation**: Clean, trans為m, 和 split 資料.
-4. **Modell在g**: Tra在 models, tune hyperparameters.
-5. **Evaluation**: Assess per為mance aga在st metrics.
+1. **商業 Understanding**: Define 這 objective 和 success criteria.
+2. **資料 Understanding**: Explore available 資料, identify quality issues.
+3. **資料 Preparation**: Clean, transform, 和 split 資料.
+4. **Modelling**: Train models, tune hyperparameters.
+5. **Evaluation**: Assess 效能 against metrics.
 6. **部署**: Serve 這 model 在 production.
-7. **Monitor在g**: Track drift, per為mance, 和 anomalies.
+7. **Monitoring**: Track drift, 效能, 和 anomalies.
 
 This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
 ---
 
-# # 資料 Splitt在g
+## 資料 Splitting
 
-# ## Tra在 / Validation / Test Split
-- **Tra在在g set** (~70%): Used to fit 這 model parameters.
+### Train / Validation / Test Split
+- **Training set** (~70%): Used to fit 這 model parameters.
 - **Validation set** (~15%): Used to tune hyperparameters 和 select model variants.
-- **Test set** (~15%): Used only once at 這 very end to estimate generalisation per為mance.
+- **Test set** (~15%): Used only once at 這 very end to estimate generalisation 效能.
 
-**Important:** The test set must be kept completely untouched until f在al evaluation to avoid 資料 leakage.
+**Important:** 這 test set must be kept completely untouched until final evaluation to avoid 資料 leakage.
 
-# ## Cross-Validation (k-fold)
-For small 資料sets, use k-fold cross-validation: split 資料 在to k folds, tra在 on k-1, validate on 這 rema在在g, 和 repeat k times. Average 這 per為mance. k=5 or k=10 is common.
+### Cross-Validation (k-fold)
+為 small datasets, use k-fold cross-validation: split 資料 into k folds, train on k-1, validate on 這 remaining, 和 repeat k times. Average 這 效能. k=5 or k=10 is common.
 
-# ## Stratified Splitt在g
-For classification 與 imbalanced classes, use stratified splits to preserve class proportions 在 each subset.
+### Stratified Splitting
+為 classification 與 imbalanced classes, use stratified splits to preserve class proportions 在 each subset.
 
-# ## Time-Based Splitt在g
-For time-series 資料, split chronologically (tra在 on past, test on 未來) ra這r than r和omly.
+### Time-Based Splitting
+為 time-series 資料, split chronologically (train on past, test on 未來) rather than randomly.
 
 ---
 
-# # Evaluation Metrics
+## Evaluation Metrics
 
-# ## Classification Metrics
+### Classification Metrics
 
 | Metric | What it measures | Best used 為 |
 |--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced 資料sets |
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
 | **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screen在g) |
-| **F1-score** | Harmonic mean 的 precision 和 recall | Imbalanced 資料sets, s在gle-number metric |
-| **AUC-ROC** | Area under 這 ROC curve; trade的f between TPR 和 FPR | General classifier per為mance 在dependent 的 threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced 資料sets |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
+| **F1-score** | Harmonic mean 的 precision 和 recall | Imbalanced datasets, single-number metric |
+| **AUC-ROC** | Area under 這 ROC curve; tradeoff between TPR 和 FPR | General classifier 效能 independent 的 threshold |
+| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
 
-**Def在itions:**
+**Definitions:**
 - TP = True Positive
 - TN = True Negative
 - FP = False Positive (Type I error)
 - FN = False Negative (Type II error)
 
-# ## Regression Metrics
+### Regression Metrics
 
 | Metric | What it measures | Sensitivity to outliers |
 |--------|------------------|--------------------------|
 | **MSE** (Mean Squared Error) | Average squared difference | High |
 | **RMSE** (Root Mean Squared Error) | Square root 的 MSE (same units as target) | High |
 | **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient 的 Determ在ation) | Proportion 的 variance expla在ed | None directly, but sensitive to outliers 在directly |
+| **R²** (Coefficient 的 Determination) | Proportion 的 variance explained | None directly, but sensitive to outliers indirectly |
 
-# ## Rank在g 和 Retrieval Metrics
+### Ranking 和 Retrieval Metrics
 - **Precision@k**: Fraction 的 relevant items among top-k recommendations.
 - **Recall@k**: Fraction 的 all relevant items that appear 在 top-k.
-- **NDCG** (Normalised Discounted Cumulative Ga在): Accounts 為 position relevance.
-- **Hit Rate**: Whe這r a relevant item appears 在 這 top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain): Accounts 為 position relevance.
+- **Hit Rate**: Whether a relevant item appears 在 這 top-k.
 
-# ## Generative / LLM Metrics
+### Generative / LLM Metrics
 - **Perplexity**: How "surprised" 這 model is by a held-out text (lower is better).
 - **BLEU**: n-gram overlap 與 參考 translations (precision-focused).
 - **ROUGE**: Recall-oriented overlap 為 summarisation.
-- **BERTScore**: Semantic similarity us在g contextual embedd在gs (more robust than BLEU).
+- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
 - **METEOR**: Aligns to WordNet synonyms 和 stems.
 
 ---
 
-# # Evaluation Pitfalls
+## Evaluation Pitfalls
 
-# ## 資料 Leakage
-Occurs when 在為mation from 這 test set 在advertently 在fluences tra在在g.
-- **Prevent:** Never use test 資料 為 feature eng在eer在g, normalisation, or hyperparameter tun在g.
+### 資料 Leakage
+Occurs when information from 這 test set inadvertently influences training.
+- **Prevent:** Never use test 資料 為 feature engineering, normalisation, or hyperparameter tuning.
 - **Detect:** If your model scores suspiciously high, suspect leakage.
 
-# ## Overfitt在g
-Model per為ms well on tra在在g 資料 but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopp在g, simplify 架構, or collect more 資料.
+### Overfitting
+Model performs well on training 資料 but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stopping, simplify 架構, or collect more 資料.
 
-# ## Underfitt在g
-Model per為ms poorly on both tra在在g 和 validation.
+### Underfitting
+Model performs poorly on both training 和 validation.
 - **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
-# ## Imbalanced 資料
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) ra這r than accuracy.
+### Imbalanced 資料
+- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
 
-# ## Temporal Drift (Concept Drift)
-The relationship between features 和 target changes over time.
-- **Mitigate:** Retra在 periodically, monitor per為mance, use drift detection algorithms.
+### Temporal Drift (Concept Drift)
+這 relationship between features 和 target changes over time.
+- **Mitigate:** Retrain periodically, monitor 效能, use drift detection algorithms.
 
 ---
 
-# # Hyperparameter Tun在g
+## Hyperparameter Tuning
 
-- **Grid Search**: Exhaustively try all comb在ations 的 a predef在ed set 的 hyperparameters. Simple but computationally expensive.
-- **R和om Search**: Sample r和om comb在ations from distributions. More efficient than grid search 為 high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model 的 這 objective function 和 selects hyperparameters 在telligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tun在g**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps 為 distributed tun在g.
+- **Grid Search**: Exhaustively try all combinations 的 a predefined set 的 hyperparameters. Simple but computationally expensive.
+- **Random Search**: Sample random combinations from distributions. More efficient than grid search 為 high-dimensional spaces.
+- **Bayesian Optimisation**: Builds a probabilistic model 的 這 objective function 和 selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps 為 distributed tuning.
 
 **Suggested search ranges 為 common hyperparameters:**
 
 | Parameter | Suggested range (log-scale) |
 |-----------|-----------------------------|
-| Learn在g rate | 1e-5 to 1e-1 |
+| Learning rate | 1e-5 to 1e-1 |
 | Batch size | 16, 32, 64, 128, 256 |
 | Number 的 layers (NN) | 2 to 6 |
 | Number 的 neurons (NN) | 32 to 1024 |
@@ -132,55 +132,55 @@ The relationship between features 和 target changes over time.
 
 ---
 
-# # Model Selection 和 Validation
+## Model Selection 和 Validation
 
-1. **Basel在e model**: Start 與 a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **C和idate models**: Tra在 multiple model families (e.g., R和om Forest, XGBoost, Neural 網路).
-3. **Cross-validate** each c和idate on 這 validation set.
-4. **Compare metrics** (與 confidence 在tervals) 和 select 這 best c和idate.
-5. **F在al evaluation** on 這 held-out test set.
-6. **Error analysis**: Look at 範例 這 model gets wrong. Identify patterns (e.g., rare classes, ambiguous 在puts) 和 feed 在sights back 在to 資料 preparation or feature eng在eer在g.
+1. **Baseline model**: Start 與 a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
+2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural 網路).
+3. **Cross-validate** each candidate on 這 validation set.
+4. **Compare metrics** (與 confidence intervals) 和 select 這 best candidate.
+5. **Final evaluation** on 這 held-out test set.
+6. **Error analysis**: Look at 範例 這 model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) 和 feed insights back into 資料 preparation or feature engineering.
 
 ---
 
-# # 部署 和 Monitor在g
+## 部署 和 Monitoring
 
-# ## Serv在g Patterns
-- **Batch 在ference**: Process large volumes 的 資料 的fl在e (e.g., nightly recommendations).
-- **Onl在e 在ference**: Real-time predictions via API (e.g., credit scor在g, fraud detection).
-- **Stream在g 在ference**: Event-driven, real-time 與 low latency (e.g., IoT sensor alerts).
+### Serving Patterns
+- **Batch inference**: Process large volumes 的 資料 offline (e.g., nightly recommendations).
+- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
+- **Streaming inference**: Event-driven, real-time 與 low latency (e.g., IoT sensor alerts).
 
-# ## Model Monitor在g
-- **Per為mance monitor在g**: Track accuracy/F1 over time on live 資料 (when ground truth is available).
-- **資料 drift**: Monitor changes 在 在put feature distributions (e.g., us在g PSI – Population Stability Index).
-- **Concept drift**: Monitor changes 在 這 relationship between 在puts 和 outputs.
+### Model Monitoring
+- **效能 monitoring**: Track accuracy/F1 over time on live 資料 (when ground truth is available).
+- **資料 drift**: Monitor changes 在 input feature distributions (e.g., using PSI – Population Stability Index).
+- **Concept drift**: Monitor changes 在 這 relationship between inputs 和 outputs.
 - **Prediction drift**: Track 這 distribution 的 predicted outputs.
 - **Latency 和 throughput**: Ensure SLAs (Service Level Agreements) are met.
 
-# ## Logg在g 和 Alert在g
+### Logging 和 Alerting
 - Log all prediction requests 和 responses (與 anonymisation).
 - Set alerts 為:
-  - Significant drop 在 per為mance.
-  - High percentage 的 miss在g or 在valid 在puts.
+  - Significant drop 在 效能.
+  - High percentage 的 missing or invalid inputs.
   - Model outputs outside expected bounds.
 
-# ## Model Version在g 和 Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store 和 version models, meta資料, 和 evaluation results.
-- Store 這 tra在在g code 和 資料 version (via DVC or Git LFS) alongside 這 model.
+### Model Versioning 和 Registry
+- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store 和 version models, metadata, 和 evaluation results.
+- Store 這 training code 和 資料 version (via DVC or Git LFS) alongside 這 model.
 
 ---
 
-# # Practical Workflow Checklist
+## Practical Workflow Checklist
 
-- [ ] Problem framed 和 success metric def在ed.
-- [ ] 資料 exploration per為med (miss在g values, outliers, distribution).
-- [ ] Tra在/validation/test split created (stratified if needed).
-- [ ] Basel在e model established.
-- [ ] C和idate models tra在ed 和 validated.
+- [ ] Problem framed 和 success metric defined.
+- [ ] 資料 exploration performed (missing values, outliers, distribution).
+- [ ] Train/validation/test split created (stratified if needed).
+- [ ] Baseline model established.
+- [ ] Candidate models trained 和 validated.
 - [ ] Hyperparameters tuned.
 - [ ] Best model selected via cross-validation.
-- [ ] F在al evaluation on test set.
-- [ ] Error analysis per為med.
-- [ ] 部署 plan ready (serv在g 在frastructure).
-- [ ] Monitor在g dashboard set up.
+- [ ] Final evaluation on test set.
+- [ ] Error analysis performed.
+- [ ] 部署 plan ready (serving infrastructure).
+- [ ] Monitoring dashboard set up.
 - [ ] Documentation (資料 card, model card) completed.

@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Ağiçiçindedeg Temeller
+# Networking Temeller
 
-A practical referans için developers ve sysadmiçiçindedes — core concepts, protocols, commves, ve troubleshootiçiçindedeg.
+A practical Referans için developers ve sysadmins — core concepts, protocols, Komutlar, ve troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## bu OSI Model (7 Layers)
 
-A conceptual framework için understveiçiçindedeg ağ i̇letişim.
+A conceptual framework için understanding Ağ İletişim.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Veri içinmattiçiçindedeg, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection yönetim | NetBIOS, RPC |
+| 6 | Presentation | Veri formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection Yönetim | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Ağ | Routiçiçindedeg, addressiçiçindedeg | IP, ICMP, OSPF, BGP |
-| 2 | Veri Liçiçindedek | Framiçiçindedeg, error detection, MAC addresses | Eburnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Eburnet cables, fiber optics, radio waves |
+| 3 | Ağ | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Veri Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: Liçiçindedek, Internet, Transport, Application) is more commonly used için bu içiçindedeternet.
+içinde practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used için bu internet.
 
 ---
 
-# # IP Addressiçiçindedeg
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted içiçindede practice).
+- Total: ~4.3 billion addresses (but exhausted içinde practice).
 
-# ## IPv6
-- 128-bit address, written içiçindede hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically içiçindedefiçiçindedeite).
+### IPv6
+- 128-bit address, written içinde hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on bu içiçindedeternet; used içiçindedeside local ağs:
+### Private IP Ranges (RFC 1918)
+These are not routable on bu internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means bu first 24 bits are bu ağ prefix; bu last 8 bits are hosts. It içiçindedecludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means bu first 24 bits are bu Ağ prefix; bu last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Domaiçiçindede Name System)
+## DNS (Domain Name System)
 
-Maps domaiçiçindede names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domaiçiçindede to IPv4 address |
-| **AAAA** | Maps domaiçiçindede to IPv6 address |
-| **CNAME** | Alias to anobur domaiçiçindede name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver için bu domaiçiçindede |
+| **NS** | Nameserver için bu domain |
 | **SRV** | Service record (e.g., için SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps ve System Admiçiçindedeistration
+# DevOps ve System Administration
 
-A practical rehber to managiçiçindedeg servers, automatiçiçindedeg operations, ve maiçiçindedetaiçiçindedeiçiçindedeg reliable içiçindedefrastructure.
+A practical Rehber to managing servers, automating operations, ve maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

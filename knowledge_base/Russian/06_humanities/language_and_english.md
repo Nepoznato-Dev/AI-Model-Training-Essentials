@@ -7,48 +7,48 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Язык и Английский
 
-# # What is Язык?
+## What is Язык?
 
-Язык is a system из коммуникация usвg sounds, symbols, or gestures that follows a shared set из rules understood by a community. Human язык is unique в its complexity, creativity, и capacity to express abstract ideas. There are approximately 7,000 языкs spoken в the world today. Английский is the most widely spoken язык as a second язык и is the domвant язык из вternational коммуникация, busвess, наука, и the вternet.
+Язык is a system из Коммуникация using sounds, symbols, or gestures that follows a shared set из rules understood by a community. Human Язык is unique в its complexity, creativity, и capacity to express abstract ideas. There are approximately 7,000 languages spoken в the world today. Английский is the most widely spoken Язык as a second Язык и is the dominant Язык из international Коммуникация, Бизнес, Наука, и the internet.
 
-# # Английский Grammar
+## Английский Grammar
 
-Grammar is the set из rules governвg how words are combвed to дляm sentences в a язык. A sentence must contaв a subject (who or what the sentence is about) и a predicate (what the subject does or is).
+Grammar is the set из rules governing how words are combined to form sentences в a Язык. A sentence must contain a subject (who or what the sentence is about) и a predicate (what the subject does or is).
 
-A **noun** is a word that names a person, place, thвg, or idea.
-A **verb** is a word that expresses an action or state из beвg.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state из being.
 An **adjective** modifies a noun.
 An **adverb** modifies a verb, adjective, or another adverb.
 A **pronoun** takes the place из a noun.
 
-A **clause** is a group из words contaввg a subject и a verb. An вdependent clause can stи alone as a sentence. A dependent clause cannot stи alone и depends on an вdependent clause. A **phrase** is a group из words that does not contaв both a subject и a predicate.
+A **clause** is a group из words containing a subject и a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone и depends on an independent clause. A **phrase** is a group из words that does not contain both a subject и a predicate.
 
-# # Pискусства из Speech
+## Parts из Speech
 
-The eight traditional pискусства из speech в Английский are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, и вterjection.
+the eight traditional parts из speech в Английский are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, и interjection.
 
 A **preposition** shows the relationship between a noun or pronoun и another word (e.g., в, on, at, by, с).
 A **conjunction** connects words, phrases, or clauses (e.g., и, but, or, because).
 
-**Common coordвatвg conjunctions** can be remembered с the acronym FANBOYS:
+**Common coordinating conjunctions** can be remembered с the acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-# # Punctuation
+## Punctuation
 
 - A period (.) ends a declarative sentence.
-- A question mark (?) ends an вterrogative sentence.
+- A question mark (?) ends an interrogative sentence.
 - An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items в a list, sets изf вtroductory phrases, и separates вdependent clauses joвed by a conjunction.
-- A semicolon (;) separates two closely related вdependent clauses.
-- A colon (:) вtroduces a list, explanation, or quotation.
-- An apostrophe (') вdicates possession (John's book) or a contraction (don't = do not).
+- A comma (,) separates items в a list, sets off introductory phrases, и separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-# # Spellвg и Common Errors
+## Spelling и Common Errors
 
-**Common spellвg rules:**
-- "i beдляe e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "наука")
-- Words endвg в a silent "e" drop the "e" beдляe addвg a vowel suffix (make → makвg)
-- Double the fвal consonant beдляe addвg a vowel suffix when the last syllable is stressed и ends в a sвgle consonant (run → runnвg)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Наука")
+- Words ending в a silent "e" drop the "e" before adding a vowel suffix (make → making)
+- Double the final consonant before adding a vowel suffix when the last syllable is stressed и ends в a single consonant (run → running)
 
 **Common confusable word pairs:**
 - their / there / they're
@@ -57,107 +57,107 @@ A **conjunction** connects words, phrases, or clauses (e.g., и, but, or, becaus
 - affect / effect
 - then / than
 
-# # Vocabulary и Word Formation
+## Vocabulary и Word Formation
 
-**Etymology** is the study из the origвs и historical разработка из words. Many Английский words come from Latв, Greek, French, и Germanic roots.
+**Etymology** is the study из the origins и historical Разработка из words. Many Английский words come from Latin, Greek, French, и Germanic roots.
 
-**Prefixes** are added to the begвnвg из words to change their meanвg (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to the end из words (e.g., -tion, -ness, -вg, -ly).
+**Prefixes** are added to the beginning из words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to the end из words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words с similar meanвgs
-- **Antonyms**: words с opposite meanвgs
-- **Metaphor**: describes somethвg by sayвg it is somethвg else ("Time is a thief")
-- **Simile**: compares two thвgs usвg "like" or "as" ("Busy as a bee")
+- **Synonyms**: words с similar meanings
+- **Antonyms**: words с opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-# # Writвg Skills
+## Writing Skills
 
-Good writвg is clear, concise, coherent, и engagвg.
+Good writing is clear, concise, coherent, и engaging.
 
-- A **paragraph** should have a topic sentence (the maв idea), supportвg sentences, и a concludвg sentence.
-- The **five-paragraph essay** structure consists из an вtroduction, three body paragraphs, и a conclusion.
-- **Revision** is the process из improvвg a draft.
-- **Editвg** focuses on correctвg grammar, spellвg, и punctuation errors.
-- **Proизreadвg** is the fвal check beдляe publication.
+- A **paragraph** should have a topic sentence (the main idea), supporting sentences, и a concluding sentence.
+- the **five-paragraph essay** structure consists из an Введение, three body paragraphs, и a conclusion.
+- **Revision** is the process из improving a draft.
+- **Editing** focuses on correcting grammar, spelling, и punctuation errors.
+- **Proofreading** is the final check before publication.
 
-# # Readвg и Comprehension
+## Reading и Comprehension
 
-**Active readвg** вvolves engagвg с the text by askвg questions, makвg predictions, summarizвg, и makвg connections.
+**Active reading** involves engaging с the text by asking questions, making predictions, summarizing, и making connections.
 
-- The **maв idea** is the central poвt из a passage.
-- Details, примеры, и evidence support the maв idea.
-- **Inference** вvolves drawвg conclusions from вдляmation that is implied but not stated directly.
-- **Context clues** are words и phrases surroundвg an unfamiliar word that help determвe its meanвg.
+- the **main idea** is the central point из a passage.
+- Details, Примеры, и evidence support the main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words и phrases surrounding an unfamiliar word that help determine its meaning.
 
-# # Коммуникация и Rhetoric
+## Коммуникация и Rhetoric
 
-**Rhetoric** is the art из effective коммуникация и persuasion.
+**Rhetoric** is the art из effective Коммуникация и persuasion.
 - **Ethos** appeals to the credibility из the speaker.
 - **Pathos** appeals to emotion.
 - **Logos** appeals to logic и reason.
 
-A **thesis statement** clearly expresses the maв argument из an essay.
+A **thesis statement** clearly expresses the main argument из an essay.
 **Tone** refers to the writer's attitude toward the subject и audience.
-**Register** refers to the level из дляmality в язык use, rangвg from casual conversation to дляmal academic writвg.
+**Register** refers to the level из formality в Язык use, ranging from casual conversation to formal academic writing.
 
-# # Subject-Verb Agreement (Expиed)
+## Subject-Verb Agreement (Expanded)
 
-One из the most important grammar rules в Английский is that a subject и its verb must agree в number: a sвgular subject takes a sвgular verb, и a plural subject takes a plural verb.
+One из the most important grammar rules в Английский is that a subject и its verb must agree в number: a singular subject takes a singular verb, и a plural subject takes a plural verb.
 
-# ## Gerunds as Subjects
+### Gerunds as Subjects
 
-A gerund (a verb used as a noun, endвg в -вg) is always sвgular.
+A gerund (a verb used as a noun, ending в -ing) is always singular.
 
 **Correct:**
-- "Eatвg rocks **is** dangerous."
-- "Runnвg every day **is** good для your health."
-- "Readвg **helps** improve vocabulary."
+- "Eating rocks **is** dangerous."
+- "Running every day **is** good для your health."
+- "Reading **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eatвg rocks **are** dangerous." (gerund is sвgular)
-- "Runnвg и swimmвg **is** good." (compound subject — plural, use "are")
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running и swimming **is** good." (compound subject — plural, use "are")
 
-# ## Compound Subjects
+### Compound Subjects
 
-- Joвed by "и": plural verb
+- Joined by "и": plural verb
   - "Alice и Bob **are** here."
-  - "The teacher и the student **agree**."
+  - "the teacher и the student **agree**."
 
-- Joвed by "or"/"nor": agree с the subject closest to the verb
+- Joined by "or"/"nor": agree с the subject closest to the verb
   - "Neither the students nor the teacher **was** ready."
   - "Neither the teacher nor the students **were** ready."
 
-# ## Collective Nouns
+### Collective Nouns
 
-Collective nouns (team, committee, group, family) take a sвgular verb в American Английский:
-- "The team **is** practisвg."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb в American Английский:
+- "the team **is** practising."
+- "the committee **has** made a decision."
 
-In British Английский, plural verbs are also accepted dependвg on context.
+в British Английский, plural verbs are also accepted depending on context.
 
-# ## Indefвite Pronouns
+### Indefinite Pronouns
 
-The followвg вdefвite pronouns are **always sвgular**:
+the following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
 **Correct:**
-- "Everyone **is** вvited."
+- "Everyone **is** invited."
 - "Each из the students **has** completed the assignment."
 
 **Incorrect:**
-- "Everyone **are** вvited."
+- "Everyone **are** invited."
 
-# # Epistemic Honesty — Knowвg When to Say "I Don't Know"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** means beвg truthful about the limits из one's knowledge. It is better to say "I don't have reliable вдляmation on that" than to produce a confident-soundвg but false answer.
+**Epistemic honesty** means being truthful about the limits из one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucвation** is the tendency из AI системы to generate plausible-soundвg but factually вcorrect statements. Guardвg agaвst hallucвation requires recognisвg when a question falls outside available knowledge и respondвg с an honest acknowledgement из uncertaвty rather than an вvented answer.
+**Hallucination** is the tendency из AI Системы to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge и responding с an honest acknowledgement из uncertainty rather than an invented answer.
 
-**Useful phrases для expressвg uncertaвty:**
-- "I'm not certaв, but…"
+**Useful phrases для expressing uncertainty:**
+- "I'm not certain, but…"
 - "You may want to verify this с a specialist."
-- "I don't have enough вдляmation to answer reliably."
-- "This is outside my база знаний."
+- "I don't have enough information to answer reliably."
+- "This is outside my База знаний."
 
-**For health, medical, юридический, or безопасныйty questions:**
-It is always better to defer to qualified prизessionals rather than изfer specific advice. Statвg a recommended dose из a substance, a treatment для a disease, or a юридический rulвg сout prизessional context can cause real harm и must be avoided.
+**для health, medical, Юридический, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose из a substance, a treatment для a disease, or a Юридический ruling without professional context can cause real harm и must be avoided.

@@ -7,13 +7,13 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Python 구문 Cheat Sheet
 
-Quick 참조 위한 Python 3.x 구문 와 common patterns.
+빠른 참조 위한 Python 3.x 구문 와 common patterns.
 
 ---
 
-# # Basic 구문
+## Basic 구문
 
-# ## Variables 와 데이터 Types
+### Variables 와 데이터 Types
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +32,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-# ## Str에서gs
+### Strings
 ```python
 s = "Hello, World!"
 
@@ -54,9 +54,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-# # Control Flow
+## Control Flow
 
-# ## Conditionals
+### Conditionals
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +69,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-# ## Loops
+### Loops
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +93,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-# # 데이터 Structures
+## 데이터 Structures
 
-# ## Lists
+### Lists
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +113,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-# ## Dictionaries
+### Dictionaries
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +128,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-# ## Sets
+### Sets
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +140,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-# ## Tuples
+### Tuples
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +149,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-# # Functions
+## Functions
 
-# ## Def에서ition
+### Definition
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +170,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-# ## Lambda Functions
+### Lambda Functions
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +178,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-# # Classes
+## Classes
 
 ```python
 class Person:
@@ -207,7 +207,7 @@ class Employee(Person):
 
 ---
 
-# # File I/O
+## File I/O
 
 ```python
 # Reading files
@@ -226,7 +226,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-# # Error H와l에서g
+## Error Handling
 
 ```python
 try:
@@ -248,7 +248,7 @@ raise ValueError("Invalid value")
 
 ---
 
-# # Modules 와 Imports
+## Modules 와 Imports
 
 ```python
 import math
@@ -263,9 +263,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-# # Common Patterns
+## Common Patterns
 
-# ## List Operations
+### List Operations
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +281,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-# ## Str에서g Operations
+### String Operations
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +297,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-# ## 사전 Operations
+### 사전 Operations
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +313,7 @@ for k, v in d.items():
 
 ---
 
-# # Built-에서 Functions
+## Built-에서 Functions
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,15 +329,15 @@ any(), all()
 
 ---
 
-# # Quick Tips
+## Quick Tips
 
-- Use `#` 위한 s에서gle-l에서e comments
-- Use `"""triple quotes"""` 위한 docstr에서gs 와 multi-l에서e str에서gs
+- Use `#` 위한 single-line comments
+- Use `"""triple quotes"""` 위한 docstrings 와 multi-line strings
 - Indentation matters (typically 4 spaces)
-- Nam에서g conventions: `snake_case` 위한 variables/functions, `PascalCase` 위한 classes
-- `__name__ == "__ma에서__"` to check if script is run directly
+- Naming conventions: `snake_case` 위한 variables/functions, `PascalCase` 위한 classes
+- `__name__ == "__main__"` to check if script is run directly
 - Use `virtualenv` or `venv` 위한 project isolation
-- Install packages 와 함께 `pip 에서stall package_name`
+- Install packages 와 함께 `pip install package_name`
 
 ---
 

@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# SQL Quick 参考 指南
+# SQL 快速参考 指南
 
-Essential SQL comm和s 为 数据base operations.
+Essential SQL 命令 为 数据库 operations.
 
 ---
 
-# # Basic Query Structure
+## Basic Query Structure
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-# # 数据 Retrieval (SELECT)
+## 数据 Retrieval (SELECT)
 
-# ## Basic Selection
+### Basic Selection
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filter在g (WHERE)
+### Filtering (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sort在g 和 Limit在g
+### Sorting 和 Limiting
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-# # Aggregation Functions
+## Aggregation Functions
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-# # Jo在s
+## Joins
 
-# ## Inner Jo在
+### Inner Join
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Left/Right Jo在
+### Left/Right Join
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Full Outer Jo在
+### Full Outer Join
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Cross Jo在
+### Cross Join
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-# ## Self Jo在
+### Self Join
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-# # Subqueries
+## Subqueries
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-# # Set Operations
+## Set Operations
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,9 +210,9 @@ SELECT user_id FROM banned_users;
 
 ---
 
-# # 数据 Modification
+## 数据 Modification
 
-# ## 在SERT
+### INSERT
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -229,7 +229,7 @@ INSERT INTO archived_users
 SELECT * FROM users WHERE last_login < '2023-01-01';
 ```
 
-# ## UPDATE
+### UPDATE
 ```sql
 -- Update single row
 UPDATE users 
@@ -248,7 +248,7 @@ SET o.status = 'processed'
 WHERE u.country = 'USA';
 ```
 
-# ## DELETE
+### DELETE
 ```sql
 -- Delete specific rows
 DELETE FROM users WHERE id = 1;
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-# # Table Operations
+## Table Operations
 
-# ## CREATE Table
+### CREATE Table
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-# ## ALTER Table
+### ALTER Table
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-# ## DROP Table
+### DROP Table
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-# # Constra在ts
+## Constraints
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-# # Indexes
+## Indexes
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-# # Views
+## Views
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-# # Common Table Expressions (CTEs)
+## Common Table Expressions (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-# # W在dow Functions
+## Window Functions
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-# # 数据 Types
+## 数据 Types
 
-# ## Numeric
-- `在T` - Integer
-- `BIG在T` - Large 在teger
+### Numeric
+- `INT` - Integer
+- `BIGINT` - Large integer
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate float在g po在t
+- `FLOAT` - Approximate floating point
 - `DOUBLE` - Double precision float
 
-# ## Str在g
-- `CHAR(n)` - Fixed length str在g
-- `VARCHAR(n)` - Variable length str在g
+### String
+- `CHAR(n)` - Fixed length string
+- `VARCHAR(n)` - Variable length string
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
-# ## Date/Time
+### Date/Time
 - `DATE` - Date (YYYY-MM-DD)
 - `TIME` - Time (HH:MM:SS)
 - `DATETIME` - Date 和 time
 - `TIMESTAMP` - Unix timestamp
 - `YEAR` - Year value
 
-# ## Boolean
+### Boolean
 - `BOOLEAN` or `BOOL` - True/False
 
-# ## B在ary
-- `BLOB` - B在ary large object
-- `B在ARY` - Fixed b在ary
-- `VARB在ARY` - Variable b在ary
+### Binary
+- `BLOB` - Binary large object
+- `BINARY` - Fixed binary
+- `VARBINARY` - Variable binary
 
 ---
 
-# # Useful Functions
+## Useful Functions
 
-# ## Str在g Functions
+### String Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-# ## Date Functions
+### Date Functions
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-# ## Numeric Functions
+### Numeric Functions
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-# ## Conditional Functions
+### Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +556,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-# # Per为mance Tips
+## 性能 Tips
 
 ✅ **Do:**
-- Use 在dexes on frequently queried columns
+- Use indexes on frequently queried columns
 - Select only needed columns (avoid `SELECT *`)
-- Use `EXPLA在` to analyze query per为mance
+- Use `EXPLAIN` to analyze query 性能
 - Normalize 数据 appropriately
-- Use prepared statements to prevent SQL 在jection
+- Use prepared statements to prevent SQL injection
 
 ❌ **Don't:**
-- Use functions on 在dexed columns 在 WHERE clauses
-- Create too many 在dexes (slows writes)
-- Use `SELECT DIST在CT` unnecessarily
+- Use functions on indexed columns 在 WHERE clauses
+- Create too many indexes (slows writes)
+- Use `SELECT DISTINCT` unnecessarily
 - Ignore query execution plans
-- Store computed values when 这y can be calculated
+- Store computed values when they can be calculated
 
 ---
 
-# # 安全 最佳实践
+## 安全 最佳实践
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Last updated: June 2025 | SQL St和ard (MySQL/PostgreSQL compatible)*
+*Last updated: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Tool Usage
 
-# # Git — Version Control
+## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy de o/a repository história on o/air local macheme.
+Git is a distributed version control system. Every developer has a full copy de o/a repository História on their local machine.
 
-# ## Core workflow
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branchemg
+### Branching
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Mergemg e rebasemg
+### Merging e rebasing
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-# ## Pull request (PR) workflow
+### Pull request (PR) workflow
 
-1. Create a feature branch from `maem`.
+1. Create a feature branch from `main`.
 2. Make commits on o/a feature branch.
-3. Push o/a branch: `git push origem feature/new-themg`.
+3. Push o/a branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
 5. Address code review feedback com additional commits.
 6. Merge o/a PR once approved.
 
-# ## Undoemg changes
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,9 +77,9 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-# # Package Managers
+## Package Managers
 
-# ## pip (Python)
+### pip (Python)
 
 ```bash
 pip install requests            # install a package
@@ -90,9 +90,9 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work emside a virtual environment to keep project dependencies isolated.
+Always work inside a virtual environment to keep project dependencies isolated.
 
-# ## npm (Node.js / JavaScript)
+### npm (Node.js / JavaScript)
 
 ```bash
 npm init -y                     # create package.json
@@ -107,7 +107,7 @@ npx create-react-app my-app     # run a package without installing globally
 
 `package-lock.json` records exact versions; commit it to source control.
 
-# ## Cargo (Rust)
+### Cargo (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-# ## Go modules (Go)
+### Go modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -132,7 +132,7 @@ go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu Lemux)
+### apt (Debian / Ubuntu Linux)
 
 ```bash
 sudo apt update                 # refresh package lists
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-# # Comme-Leme Básico
+## Command-Line Básico
 
-# ## Navigation
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text processemg
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-# ## Pipes e redirection
+### Pipes e redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-# ## Rede e file transfer
+### Rede e file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-# ## Permissions
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-# ## Process gerenciamento
+### Process Gerenciamento
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-# # Editors e IDEs
+## Editors e IDEs
 
-# ## VS Code
+### VS Code
 
-VS Code is a lightweight, cross-platparam code editor com a rich extension ecosystem.
+VS Code is a lightweight, cross-platform code editor com a rich extension ecosystem.
 
-- Open a folder: `File > Open Folder` or `code .` em o/a termemal.
-- Comme palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated termemal: `Ctrl+`` (backtick)`.
+- Open a folder: `File > Open Folder` or `code .` em o/a terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to defemition: `F12`.
+- Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: emstall idioma support (Python, Rust, Go, etc.), lemters, e paramatters from o/a Extensions panel (`Ctrl+Shift+X`).
-- `settemgs.json` (user or workspace) controls editor behaviour.
+- Extensions: install Idioma support (Python, Rust, Go, etc.), linters, e formatters from o/a Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures o/a debugger.
 
-# ## JetBraems IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLe)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion e refactoremg are core features.
+- Smart code completion e refactoring are core features.
 - Run/debug configurations let you launch e debug programs com one click.
 - Built-em Git support em o/a VCS menu.
 - `Shift+Shift` opens o/a Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reparamats code.
-- Plugems extend idioma support e add tools.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend Idioma support e add tools.
 
-# ## Termemal tips
+### Terminal tips
 
-- Use tab completion to femish file names e commes quickly.
-- Press `Ctrl+R` to search comme história emteractively.
+- Use tab completion to finish file names e Comandos quickly.
+- Press `Ctrl+R` to search command História interactively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <comme>` shows o/a manual page para any built-em comme.
+- `man <command>` shows o/a manual page para any built-em command.
 
 ---
 
-# # Docker
+## Docker
 
-Docker packages applications e o/air dependencies emto portable contaemers.
+Docker packages applications e their dependencies into portable containers.
 
-# ## Core concepts
+### Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Contaemer**: a runnemg emstance de an image.
+- **Container**: a running instance de an image.
 - **Registry**: a storage e distribution service para images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a contaemer.
+- **Volume**: persistent storage that outlives a container.
 
-# ## Common commes
+### Common Comandos
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-# ## Dockerfile example
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -297,9 +297,9 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-# ## Docker Compose
+### Docker Compose
 
-Docker Compose manages multi-contaemer applications com a `docker-compose.yml` file.
+Docker Compose manages multi-container applications com a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"

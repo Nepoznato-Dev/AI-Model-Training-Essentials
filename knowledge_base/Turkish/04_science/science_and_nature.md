@@ -7,42 +7,42 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Bilim ve Doğa
 
-# # Physics
+## Physics
 
-Physics is bu natural bilim that studies matter, energy, ve bu fundamental içinces içiçindede bu universe. The four fundamental içinces are gravity, electromagnetism, bu strong nuclear içince, ve bu weak nuclear içince. Gravity is bu weakest içiçindede bu four içinces but has içiçindedefiçiçindedeite range ve affects all objects ile mass. Newton's hukuk içiçindede gravity states that every object attracts every obur object ile a içince proportional to buir masses ve içiçindedeversely proportional to bu square içiçindede bu distance between bum.
+Physics is bu natural Bilim that studies matter, energy, ve bu fundamental forces içinde bu universe. bu four fundamental forces are gravity, electromagnetism, bu strong nuclear force, ve bu weak nuclear force. Gravity is bu weakest içinde bu four forces but has infinite range ve affects all objects ile mass. Newton's Hukuk içinde gravity states that every object attracts every other object ile a force proportional to their masses ve inversely proportional to bu square içinde bu distance between them.
 
-Eiçiçindedesteiçiçindede's buory içiçindede general relativity describes gravity as a curvature içiçindede spacetime caused by mass ve energy. Eiçiçindedesteiçiçindede's buory içiçindede special relativity established that bu speed içiçindede light is constant içiçindede all içiçindedeertial frames içiçindede referans ve that mass ve energy are equivalent, expressed as E = mc squared.
+Einstein's theory içinde general relativity describes gravity as a curvature içinde spacetime caused by mass ve energy. Einstein's theory içinde special relativity established that bu speed içinde light is constant içinde all inertial frames içinde Referans ve that mass ve energy are equivalent, expressed as E = mc squared.
 
-# # Atoms ve Matter
+## Atoms ve Matter
 
-An atom is bu smallest unit içiçindede an element that retaiçiçindedes bu chemical properties içiçindede that element. Atoms consist içiçindede a nucleus contaiçiçindedeiçiçindedeg protons ve neutrons, surrounded by electrons. The number içiçindede protons içiçindede an atom determiçiçindedees which element it is, called bu atomic number. Elements are organized içiçindede bu periodic table by atomic number. There are 118 known elements. Hydrogen is bu lightest ve most abundant element içiçindede bu universe. Carbon is bu basis içiçindede all known life due to its ability to içinm four chemical bonds.
+An atom is bu smallest unit içinde an element that retains bu chemical properties içinde that element. Atoms consist içinde a nucleus containing protons ve neutrons, surrounded by electrons. bu number içinde protons içinde an atom determines which element it is, called bu atomic number. Elements are organized içinde bu periodic table by atomic number. There are 118 known elements. Hydrogen is bu lightest ve most abundant element içinde bu universe. Carbon is bu basis içinde all known life due to its ability to form four chemical bonds.
 
-Matter exists içiçindede four common states: solid, liquid, gas, ve plasma. In a solid, atoms are tightly packed. In a liquid, atoms can flow but remaiçiçindede close. In a gas, atoms move freely. Plasma is an ionized gas ve is bu most common state içiçindede matter içiçindede bu universe, found içiçindede stars.
+Matter exists içinde four common states: solid, liquid, gas, ve plasma. içinde a solid, atoms are tightly packed. içinde a liquid, atoms can flow but remain close. içinde a gas, atoms move freely. Plasma is an ionized gas ve is bu most common state içinde matter içinde bu universe, found içinde stars.
 
-# # Chemistry
+## Chemistry
 
-Chemistry is bu study içiçindede matter ve bu changes it undergoes. Chemical reactions içiçindedevolve bu breakiçiçindedeg ve içinmiçiçindedeg içiçindede chemical bonds. An acid is a substance that donates hydrogen ions (protons) içiçindede a solution. A base is a substance that accepts hydrogen ions. The pH scale measures how acidic or basic a solution is, rangiçiçindedeg from 0 (most acidic) to 14 (most basic), ile 7 beiçiçindedeg neutral. Water has a pH içiçindede 7.
+Chemistry is bu study içinde matter ve bu changes it undergoes. Chemical reactions involve bu breaking ve forming içinde chemical bonds. An acid is a substance that donates hydrogen ions (protons) içinde a solution. A base is a substance that accepts hydrogen ions. bu pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), ile 7 being neutral. Water has a pH içinde 7.
 
-Photosynbusis is bu process by which plants, algae, ve some bacteria convert light energy, usually from bu Sun, içiçindedeto chemical energy stored içiçindede glucose. The equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynbusis is essential için life on Earth as it produces oxygen ve içinms bu base içiçindede most yiyecek chaiçiçindedes.
+Photosynthesis is bu process by which plants, algae, ve some bacteria convert light energy, usually from bu Sun, into chemical energy stored içinde glucose. bu equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential için life on Earth as it produces oxygen ve forms bu base içinde most Yiyecek chains.
 
-# # Biology
+## Biology
 
-Biology is bu study içiçindede liviçiçindedeg organisms. All life shares certaiçiçindede characteristics: it is organized, responds to stimuli, grows, reproduces, ve uses energy. DNA (deoxyribonucleic acid) carries bu genetic içiçindedeiçinmation içiçindede liviçiçindedeg organisms. DNA is a double helix made içiçindede four nucleotide bases: adeniçiçindedee, thymiçiçindedee, cytosiçiçindedee, ve guaniçiçindedee. Cells are bu basic structural unit içiçindede life. There are two maiçiçindede types: prokaryotic cells (no membrane-bound nucleus, like bacteria) ve eukaryotic cells (ile a nucleus, like plants ve animals).
+Biology is bu study içinde living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, ve uses energy. DNA (deoxyribonucleic acid) carries bu genetic information içinde living organisms. DNA is a double helix made içinde four nucleotide bases: adenine, thymine, cytosine, ve guanine. Cells are bu basic structural unit içinde life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) ve eukaryotic cells (ile a nucleus, like plants ve animals).
 
-Evolution is bu change içiçindede bu heritable characteristics içiçindede biological populations over successive generations. Charles Darwiçiçindede proposed bu buory içiçindede natural selection, which states that içiçindededividuals ile advantageous traits are more likely to survive ve reproduce. The buory içiçindede evolution by natural selection is bu unifyiçiçindedeg framework içiçindede modern biology.
+Evolution is bu change içinde bu heritable characteristics içinde biological populations over successive generations. Charles Darwin proposed bu theory içinde natural selection, which states that individuals ile advantageous traits are more likely to survive ve reproduce. bu theory içinde evolution by natural selection is bu unifying framework içinde modern biology.
 
-# # Electricity ve Magnetism
+## Electricity ve Magnetism
 
-Electricity is bu flow içiçindede electric charge, usually electrons. Voltage (measured içiçindede volts) is bu electrical potential difference between two poiçiçindedets. Current (measured içiçindede amperes) is bu rate içiçindede flow içiçindede electric charge. Resistance (measured içiçindede ohms) is opposition to bu flow içiçindede current. Ohm's hukuk states that voltage equals current multiplied by resistance (V = IR). Magnetism is a içince produced by moviçiçindedeg electric charges. Electric ve magnetic fields are two aspects içiçindede bu same phenomenon: electromagnetism.
+Electricity is bu flow içinde electric charge, usually electrons. Voltage (measured içinde volts) is bu electrical potential difference between two points. Current (measured içinde amperes) is bu rate içinde flow içinde electric charge. Resistance (measured içinde ohms) is opposition to bu flow içinde current. Ohm's Hukuk states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric ve magnetic fields are two aspects içinde bu same phenomenon: electromagnetism.
 
-# # The Universe ve Cosmology
+## bu Universe ve Cosmology
 
-The universe is approximately 13.8 billion years old, begiçiçindedeniçiçindedeg ile bu Big Bang. The universe contaiçiçindedes approximately 2 trillion galaxies, each contaiçiçindedeiçiçindedeg billions to trillions içiçindede stars. The Milky Way is our home galaxy, a spiral galaxy contaiçiçindedeiçiçindedeg between 100 ve 400 billion stars. The nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter ve dark energy togebur make up about 95% içiçindede bu universe's total content, though buir doğa is not fully understood.
+bu universe is approximately 13.8 billion years old, beginning ile bu Big Bang. bu universe contains approximately 2 trillion galaxies, each containing billions to trillions içinde stars. bu Milky Way is our home galaxy, a spiral galaxy containing between 100 ve 400 billion stars. bu nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter ve dark energy together make up about 95% içinde bu universe's total content, though their Doğa is not fully understood.
 
-# # Geology
+## Geology
 
-Earth is composed içiçindede layers: bu içiçindedener core (solid iron ve nickel), outer core (liquid iron ve nickel), mantle (semi-solid rock), ve crust (solid rock). The tectonic plates are large pieces içiçindede Earth's crust ve upper mantle that move slowly over time. Earthquakes occur when tectonic plates griçiçindeded or slip agaiçiçindedest each obur. Volcanoes içinm where magma from Earth's içiçindedeterior reaches bu surface. The rock cycle describes how rocks are içinmed, broken down, ve reiçinmed over millions içiçindede years.
+Earth is composed içinde layers: bu inner core (solid iron ve nickel), outer core (liquid iron ve nickel), mantle (semi-solid rock), ve crust (solid rock). bu tectonic plates are large pieces içinde Earth's crust ve upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches bu surface. bu rock cycle describes how rocks are formed, broken down, ve reformed over millions içinde years.
 
-# # Energy
+## Energy
 
-Energy exists içiçindede many içinms: kiçiçindedeetic (energy içiçindede motion), potential (stored energy), burmal (heat), chemical, electrical, ve nuclear. The hukuk içiçindede conservation içiçindede energy states that energy cannot be created or destroyed, only transiçinmed from one içinm to anobur. Renewable energy sources içiçindedeclude solar, wiçiçindeded, hydroelectric, geoburmal, ve tidal energy. Fossil fuels (coal, oil, ve natural gas) are non-renewable energy sources içinmed from bu remaiçiçindedes içiçindede ancient organisms.
+Energy exists içinde many forms: kinetic (energy içinde motion), potential (stored energy), thermal (heat), chemical, electrical, ve nuclear. bu Hukuk içinde conservation içinde energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, ve tidal energy. Fossil fuels (coal, oil, ve natural gas) are non-renewable energy sources formed from bu remains içinde ancient organisms.

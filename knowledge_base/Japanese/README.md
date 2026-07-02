@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 英語 ナレッジベース
 
-A comprehensive collection の リファレンス documents coverでg テクノロジー, 科学, busでess, humanities, と practical skills.
+A comprehensive collection の リファレンス documents covering テクノロジー, 科学, ビジネス, humanities, と practical skills.
 
 **Last Updated:** June 2025  
 **Total Files:** 34+ markdown documents  
-**Organization:** Categorized でto 10 そのmatic directories
+**Organization:** Categorized into 10 thematic directories
 
 ---
 
-# # 📁 Directory Structure
+## 📁 Directory Structure
 
 ```
 knowledge_base/English/
@@ -33,127 +33,127 @@ knowledge_base/English/
 
 ---
 
-# # 📚 Quick Navigation
+## 📚 Quick Navigation
 
-# ## テクノロジー & Computでg (`01_テクノロジー_と_computでg/`)
-| File | Description | Lでes |
+### テクノロジー & コンピューティング (`01_technology_and_computing/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [codでg_言語s.md](01_テクノロジー_と_computでg/codでg_言語s.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [ウェブ_開発.md](01_テクノロジー_と_computでg/ウェブ_開発.md) | Frontend, backend, DevOps, セキュリティ | 350+ |
-| [データbase_システム.md](01_テクノロジー_と_computでg/データbase_システム.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_アーキテクチャ.md](01_テクノロジー_と_computでg/cloud_アーキテクチャ.md) | Cloud providers, アーキテクチャ patterns, セキュリティ | 350+ |
-| [ネットワークでg_基本.md](01_テクノロジー_と_computでg/ネットワークでg_基本.md) | OSI model, TCP/IP, protocols, セキュリティ | 400+ |
-| [テクノロジー_glossary.md](01_テクノロジー_と_computでg/テクノロジー_glossary.md) | Technical termでology | 250+ |
-| [tool_usage.md](01_テクノロジー_と_computでg/tool_usage.md) | 開発 tools と utilities | 200+ |
+| [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, セキュリティ | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, アーキテクチャ patterns, セキュリティ | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, セキュリティ | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | 開発 tools と utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_でtelligence/`)
-| File | Description | Lでes |
+### Artificial Intelligence (`02_artificial_intelligence/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [artificial_でtelligence.md](02_artificial_でtelligence/artificial_でtelligence.md) | AI 概要, ML, deep learnでg, LLMs | 200+ |
-| [ml_evaluation_と_workflow.md](02_artificial_でtelligence/ml_evaluation_と_workflow.md) | ML pipelでes, metrics, ベストプラクティス | 200+ |
-| [phi3_と_local_models.md](02_artificial_でtelligence/phi3_と_local_models.md) | Runnでg models locally | 200+ |
-| [local_ai_アーキテクチャ.md](02_artificial_でtelligence/local_ai_アーキテクチャ.md) | Local AI デプロイ アーキテクチャs | 400+ |
-| [prompt_engでeerでg.md](02_artificial_でtelligence/prompt_engでeerでg.md) | Prompt techniques と strategies | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI 概要, ML, 深層学習, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, ベストプラクティス | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI デプロイ architectures | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques と strategies | 150+ |
 
-# ## データ 科学 (`03_データ_科学/`)
-| File | Description | Lでes |
+### データ 科学 (`03_data_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [データ_科学_と_analytics.md](03_データ_科学/データ_科学_と_analytics.md) | データ processでg, ML, big データ, BI | 350+ |
-| [math_と_logic.md](03_データ_科学/math_と_logic.md) | Maそのmatics, logic, proのs | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | データ processing, ML, big データ, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
-# ## 科学 (`04_科学/`)
-| File | Description | Lでes |
+### 科学 (`04_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [科学_と_自然.md](04_科学/科学_と_自然.md) | Physics, chemistry, biology 基本 | 100+ |
-| [medicでe_と_医療.md](04_科学/medicでe_と_医療.md) | Medical specialties, 医療 システム | 250+ |
-| [環境_科学_と_sustaでability.md](04_科学/環境_科学_と_sustaでability.md) | Ecoシステム, climate, conservation | 200+ |
-| [食べ物_agri文化_と_栄養.md](04_科学/食べ物_agri文化_と_栄養.md) | Agri文化, 栄養, 食べ物 システム | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology 基本 | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, 医療 システム | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | 農業, 栄養, 食べ物 システム | 150+ |
 
-# ## Busでess & Fでance (`05_busでess_と_fでance/`)
-| File | Description | Lでes |
+### ビジネス & 金融 (`05_business_and_finance/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [busでess_と_経済.md](05_busでess_と_fでance/busでess_と_経済.md) | Corporate structures, marketでg, 経済 | 150+ |
-| [fでance_と_でvestでg.md](05_busでess_と_fでance/fでance_と_でvestでg.md) | Personal fでance, でvestでg, markets | 350+ |
-| [法律_と_法的_システム.md](05_busでess_と_fでance/法律_と_法的_システム.md) | 法的 システム, contracts, IP, constitutional 法律 | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, 経済 | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal 金融, 投資, markets | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | 法的 システム, contracts, IP, constitutional 法律 | 200+ |
 
-# ## Humanities (`06_humanities/`)
-| File | Description | Lでes |
+### Humanities (`06_humanities/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [歴史_と_文化.md](06_humanities/歴史_と_文化.md) | Historical periods, cultural movements | 200+ |
-| [地理_と_地政学.md](06_humanities/地理_と_地政学.md) | Physical/human 地理, political システム | 300+ |
-| [芸術_と_文学.md](06_humanities/芸術_と_文学.md) | Literary genres, visual 芸術, music, film | 400+ |
-| [心理学_と_human_behavior.md](06_humanities/心理学_と_human_behavior.md) | Cognitive, social, 開発al 心理学 | 200+ |
-| [言語_と_英語.md](06_humanities/言語_と_英語.md) | Grammar, lでguistics, writでg | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human 地理, political システム | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual 芸術, music, film | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental 心理学 | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
-# ## リファレンス (`07_リファレンス/`)
-| File | Description | Lでes |
+### リファレンス (`07_reference/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [辞書.md](07_リファレンス/辞書.md) | Comprehensive word defでitions (A-Z) | 868 |
-| [general_knowledge.md](07_リファレンス/general_knowledge.md) | Fundamental facts about その world | 150+ |
-| [テクノロジー_と_computでg.md](07_リファレンス/テクノロジー_と_computでg.md) | Computでg 基本 と 基礎 | 250+ |
-| [安全な_コミュニケーション.md](07_リファレンス/安全な_コミュニケーション.md) | コミュニケーション ガイドlでes と ベストプラクティス | 150+ |
+| [辞書.md](07_reference/辞書.md) | Comprehensive word definitions (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about その world | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | コンピューティング 基本 と 基礎 | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | コミュニケーション guidelines と ベストプラクティス | 150+ |
 
-# ## 未来 (`08_未来/`)
-| File | Description | Lでes |
+### 未来 (`08_future/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [2026_と_未来_イベント.md](08_未来/2026_と_未来_イベント.md) | Upcomでg イベント, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming イベント, space missions, tech trends | 200+ |
 
-# ## Practical Skills (`09_practical_skills/`)
-*Growでg directory - comでg soon:*
+### Practical Skills (`09_practical_skills/`)
+*Growing directory - coming soon:*
 - research_methods.md
-- critical_thでkでg.md
-- technical_writでg.md
+- critical_thinking.md
+- technical_writing.md
 - presentation_skills.md
-- career_開発.md
+- career_development.md
 
-# ## チートシート (`10_cheat_sheets/`)
-*Growでg directory - comでg soon:*
-- python_構文.md
-- git_commとs.md
+### チートシート (`10_cheat_sheets/`)
+*Growing directory - coming soon:*
+- python_syntax.md
+- git_commands.md
 - sql_quick_ref.md
-- lでux_commとs.md
-- math_のためにmulas.md
+- linux_commands.md
+- math_formulas.md
 
 ---
 
-# # 🎯 Learnでg Paths
+## 🎯 学習パス
 
-# ## For Begでners
-1. Start と `07_リファレンス/general_knowledge.md`
-2. Move to `07_リファレンス/テクノロジー_と_computでg.md`
-3. Explore `06_humanities/言語_と_英語.md`
-4. Begで `01_テクノロジー_と_computでg/codでg_言語s.md`
+### のために Beginners
+1. Start と `07_reference/general_knowledge.md`
+2. Move to `07_reference/technology_and_computing.md`
+3. Explore `06_humanities/language_and_english.md`
+4. Begin `01_technology_and_computing/coding_languages.md`
 
-# ## For Sのtware Developers
-1. `01_テクノロジー_と_computでg/codでg_言語s.md`
-2. `01_テクノロジー_と_computでg/ウェブ_開発.md`
-3. `01_テクノロジー_と_computでg/データbase_システム.md`
-4. `01_テクノロジー_と_computでg/cloud_アーキテクチャ.md`
-5. `02_artificial_でtelligence/artificial_でtelligence.md`
+### のために Software Developers
+1. `01_technology_and_computing/coding_languages.md`
+2. `01_technology_and_computing/web_development.md`
+3. `01_technology_and_computing/database_systems.md`
+4. `01_technology_and_computing/cloud_architecture.md`
+5. `02_artificial_intelligence/artificial_intelligence.md`
 
-# ## For データ Scientists
-1. `03_データ_科学/math_と_logic.md`
-2. `03_データ_科学/データ_科学_と_analytics.md`
-3. `02_artificial_でtelligence/ml_evaluation_と_workflow.md`
-4. `01_テクノロジー_と_computでg/データbase_システム.md`
+### のために データ Scientists
+1. `03_data_science/math_and_logic.md`
+2. `03_data_science/data_science_and_analytics.md`
+3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
+4. `01_technology_and_computing/database_systems.md`
 
-# ## For Busでess Prのessionals
-1. `05_busでess_と_fでance/busでess_と_経済.md`
-2. `05_busでess_と_fでance/fでance_と_でvestでg.md`
-3. `05_busでess_と_fでance/法律_と_法的_システム.md`
-4. `06_humanities/地理_と_地政学.md`
+### のために ビジネス Professionals
+1. `05_business_and_finance/business_and_economics.md`
+2. `05_business_and_finance/finance_and_investing.md`
+3. `05_business_and_finance/law_and_legal_systems.md`
+4. `06_humanities/geography_and_geopolitics.md`
 
 ---
 
-# # 📊 統計
+## 📊 統計
 
-| Category | Files | Total Lでes | Avg Lでes/File |
+| Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
-| テクノロジー & Computでg | 7 | ~2,800 | 400 |
+| テクノロジー & コンピューティング | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |
 | データ 科学 | 2 | ~600 | 300 |
 | 科学 | 4 | ~700 | 175 |
-| Busでess & Fでance | 3 | ~700 | 233 |
+| ビジネス & 金融 | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | リファレンス | 4 | ~1,400 | 350 |
 | 未来 | 1 | ~200 | 200 |
@@ -161,43 +161,43 @@ knowledge_base/English/
 
 ---
 
-# # ⚠️ Important 免責事項
+## ⚠️ Important 免責事項
 
-- **Medical Inのためにmation:** Content で `medicでe_と_医療.md` is のために educational purposes only と should not replace prのessional medical advice.
-- **法的 Inのためにmation:** Content で `法律_と_法的_システム.md` is でのためにmational と does not constitute 法的 advice.
-- **Fでancial Inのためにmation:** Content で `fでance_と_でvestでg.md` is educational と should not be considered fでancial advice.
-- **未来 Projections:** Content で `2026_と_未来_イベント.md` contaでs speculative でのためにmation と projections that may change.
+- **Medical Information:** Content で `medicine_and_healthcare.md` is のために educational purposes only と should not replace professional medical advice.
+- **法的 Information:** Content で `law_and_legal_systems.md` is informational と does not constitute 法的 advice.
+- **Financial Information:** Content で `finance_and_investing.md` is educational と should not be considered financial advice.
+- **未来 Projections:** Content で `2026_and_future_events.md` contains speculative information と projections that may change.
 
 ---
 
-# # 🔧 Usage ガイドlでes
+## 🔧 Usage Guidelines
 
-# ## For AI システム
-- All files are structured と clear hierarchical headでgs
-- Technical terms are defでed でlでe or で `辞書.md`
-- Cross-リファレンスs use markdown lでks
-- Code 例 でclude 構文 highlightでg
+### のために AI システム
+- All files are structured と clear hierarchical headings
+- Technical terms are defined inline or で `辞書.md`
+- Cross-references use markdown links
+- Code 例 include 構文 highlighting
 
-# ## For Human Readers
-- Each file でcludes learnでg objectives at その begでnでg
+### のために Human Readers
+- Each file includes learning objectives at その beginning
 - Difficulty levels are noted where applicable
-- Exercises と practice problems でcluded で technical files
+- Exercises と practice problems included で technical files
 - Visual aids (diagrams, tables) used where helpful
 
 ---
 
-# # 📝 Contributでg
+## 📝 貢献
 
-When addでg or modifyでg content:
+When adding or modifying content:
 
 1. **Follow その style ガイド:**
    - Use `#` のために file title only
    - Use `##` のために major sections
    - Use `###` のために subsections
    - Use `-` のために unordered lists
-   - Include 構文 highlightでg で code blocks
+   - Include 構文 highlighting で code blocks
 
-2. **Add metaデータ** (YAML frontmatter):
+2. **Add metadata** (YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -209,29 +209,29 @@ last_updated: YYYY-MM-DD
 ```
 
 3. **Include citations** のために factual claims
-4. **Add cross-リファレンスs** to related files
-5. **Update this README** if addでg new files
+4. **Add cross-references** to related files
+5. **Update this README** if adding new files
 
 ---
 
-# # 🔄 Update Cycle
+## 🔄 Update Cycle
 
 - **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checkでg:** 統計 と time-sensitive でのためにmation verified
-- **Content expansion:** Underdeveloped files expとed progressively
-- **New topics:** Added based on emergでg fields と user needs
+- **Fact-checking:** 統計 と time-sensitive information verified
+- **Content expansion:** Underdeveloped files expanded progressively
+- **New topics:** Added based on emerging fields と user needs
 
 **Next scheduled review:** Q3 2025
 
 ---
 
-# # 📞 Feedback
+## 📞 Feedback
 
 Found errors? Have suggestions? Please note:
-- Check のために duplicates beのためにe suggestでg new topics
-- Verify claims agaでst authoritative sources
-- Consider scope と audience when proposでg additions
+- Check のために duplicates before suggesting new topics
+- Verify claims against authoritative sources
+- Consider scope と audience when proposing additions
 
 ---
 
-*This ナレッジベース is a livでg document collection, contでuously improved と expとed.*
+*This ナレッジベース is a living document collection, continuously improved と expanded.*

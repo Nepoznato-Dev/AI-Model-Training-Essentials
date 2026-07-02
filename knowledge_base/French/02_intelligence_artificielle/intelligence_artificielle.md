@@ -1,91 +1,186 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: artificial_intelligence.md
+Source: ml_evaluation_and_workflow.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Artificial Intelligence
+# Apprentissage automatique Evaluation et Workflow
 
-# # What is Artificial Intelligence?
+A practical Guide to le/la ML lifecycle — from problem framing to production monitoring — avec a focus on metrics, validation, et debugging.
 
-Artificial Intelligence (AI) refers to le/la simulation de human danstelligence dans machdanses programmed to thdansk, learn, et solve problems. AI systèmes can perpourm tasks that typically require human danstelligence, such as recognisdansg speech, makdansg decisions, translatdansg langues, et identifydansg objects dans images. The term was codansed by John McCarthy dans 1956 at le/la Dartmouth Conference, widely regarded as le/la founddansg event de AI as a field.
+---
 
-Modern AI is broadly divided dansto Narrow AI (also called Weak AI), which is designed pour specific tasks, et le/la le/laoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domadanss. All current AI systèmes are Narrow AI.
+## le/la ML Workflow (CRISP-ML)
 
-# # Histoire de AI
+1. **Entreprise Understanding**: Define le/la objective et success criteria.
+2. **Données Understanding**: Explore available Données, identify quality issues.
+3. **Données Preparation**: Clean, transform, et split Données.
+4. **Modelling**: Train models, tune hyperparameters.
+5. **Evaluation**: Assess Performance against metrics.
+6. **Déploiement**: Serve le/la model dans production.
+7. **Monitoring**: Track drift, Performance, et anomalies.
 
-The histoire de AI spans nearly eight decades. Early le/laoretical foundations were laid by Alan Turdansg, whose 1950 paper "Computdansg Machdansery et Intelligence" danstroduced le/la Turdansg Test — a measure de a machdanse's ability to exhibit danstelligent behaviour dansdistdansguishable from a human. The 1956 Dartmouth Conference pourmally established AI as an academic discipldanse.
+This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
-The 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) et LISP (a programmdansg langue designed pour AI). The "AI wdansters" de le/la 1970s et 1980s were periods de reduced funddansg et dansterest followdansg unmet expectations. A resurgence dans le/la 1980s came avec expert systèmes — rule-based programs that encoded human expertise. The 2000s brought machdanse learndansg breakthroughs fuelled by le/la dansternet et growdansg donnéessets. The 2010s saw le/la rise de deep learndansg, transpourmdansg computer vision, natural langue processdansg (NLP), et redanspourcement learndansg.
+---
 
-# # Machdanse Learndansg
+## Données Splitting
 
-Machdanse Learndansg (ML) is a subset de AI that enables systèmes to learn from données avecout bedansg explicitly programmed. Key ML categories dansclude:
+### Train / Validation / Test Split
+- **Training set** (~70%): Used to fit le/la model parameters.
+- **Validation set** (~15%): Used to tune hyperparameters et select model variants.
+- **Test set** (~15%): Used only once at le/la very end to estimate generalisation Performance.
 
-**Supervised Learndansg**: The model is tradansed on labelled dansput-output pairs. Exemples dansclude spam detection et image classification. Algorithms dansclude ldansear regression, decision trees, support vector machdanses, et réseaux de neurones.
+**Important:** le/la test set must be kept completely untouched until final evaluation to avoid Données leakage.
 
-**Unsupervised Learndansg**: The model fdansds patterns dans unlabelled données. Exemples dansclude customer segmentation et anomaly detection. Algorithms dansclude k-means clusterdansg et prdanscipal component analysis (PCA).
+### Cross-Validation (k-fold)
+pour small datasets, use k-fold cross-validation: split Données into k folds, train on k-1, validate on le/la remaining, et repeat k times. Average le/la Performance. k=5 or k=10 is common.
 
-**Redanspourcement Learndansg**: An agent learns by dansteractdansg avec an environment, receivdansg rewards or penalties. Used dans game-playdansg AI (AlphaGo, AlphaZero), robotics, et recommendation systèmes.
+### Stratified Splitting
+pour classification avec imbalanced classes, use stratified splits to preserve class proportions dans each subset.
 
-**Semi-Supervised et Self-Supervised Learndansg**: Combdanse small amounts de labelled données avec large unlabelled donnéessets. GPT models use a self-supervised approach durdansg pre-tradansdansg.
+### Time-Based Splitting
+pour time-series Données, split chronologically (train on past, test on Futur) rather than randomly.
 
-# # Deep Learndansg
+---
 
-Deep Learndansg is a subset de machdanse learndansg that uses artificial réseaux de neurones avec many layers (deep réseaus). Inspired loosely by le/la bradans's neural structure, le/lase réseaus learn hierarchical representations de données. Deep learndansg powers:
+## Evaluation Metrics
 
-- **Computer Vision**: Image recognition, object detection, medical imagdansg
-- **Natural Langue Processdansg**: Machdanse translation, sentiment analysis, question answerdansg
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+### Classification Metrics
 
-Key deep learndansg architectures dansclude convolutional réseaux de neurones (CNNs) pour images, recurrent réseaux de neurones (RNNs) et LSTMs pour sequences, transpourmers pour langue, et generative adversarial réseaus (GANs) pour synle/lasis.
+| Metric | What it measures | Best used pour |
+|--------|------------------|---------------|
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
+| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
+| **F1-score** | Harmonic mean de precision et recall | Imbalanced datasets, single-number metric |
+| **AUC-ROC** | Area under le/la ROC curve; tradeoff between TPR et FPR | General classifier Performance independent de threshold |
+| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
 
-# # Large Langue Models (LLMs)
+**Definitions:**
+- TP = True Positive
+- TN = True Negative
+- FP = False Positive (Type I error)
+- FN = False Negative (Type II error)
 
-Large Langue Models (LLMs) are AI systèmes tradansed on vast amounts de text données to understet et generate human langue. They are based on le/la Transpourmer architecture, danstroduced dans le/la 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict le/la next token (word piece) dans a sequence, allowdansg le/lam to generate coherent text, answer questions, write code, et perpourm reasondansg tasks.
+### Regression Metrics
 
-Notable LLMs dansclude:
-- **GPT series** (OpenAI): GPT-3, GPT-4, et successors — widely used pour chat et code
-- **Claude** (Anthropic): Focused on sûrty et helpfulness
-- **Gemdansi** (Google DeepMdansd): Multimodal, danstegratdansg text, images, et code
-- **LLaMA / Llama 3** (Meta): Open-weight models pour research et local déploiement
-- **Mistral** (Mistral AI): Efficient open models competitive avec much larger LLMs
+| Metric | What it measures | Sensitivity to outliers |
+|--------|------------------|--------------------------|
+| **MSE** (Mean Squared Error) | Average squared difference | High |
+| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
+| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
+| **R²** (Coefficient de Determination) | Proportion de variance explained | None directly, but sensitive to outliers indirectly |
 
-LLMs are tradansed dans two stages: pre-tradansdansg (unsupervised on large text corpora) et fdanse-tundansg (supervised or via redanspourcement learndansg from human feedback, RLHF). Context wdansdows describe how much text an LLM can process at once, rangdansg from 4K tokens (early GPT-3) to over 1 million tokens dans le/la most avancé 2024 models.
+### Ranking et Retrieval Metrics
+- **Precision@k**: Fraction de relevant items among top-k recommendations.
+- **Recall@k**: Fraction de all relevant items that appear dans top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain): Accounts pour position relevance.
+- **Hit Rate**: Whether a relevant item appears dans le/la top-k.
 
-# # AI Ethics et Sûrty
+### Generative / LLM Metrics
+- **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
+- **BLEU**: n-gram overlap avec Référence translations (precision-focused).
+- **ROUGE**: Recall-oriented overlap pour summarisation.
+- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
+- **METEOR**: Aligns to WordNet synonyms et stems.
 
-AI raises important ethical questions danscluddansg bias, privacy, job displacement, et le/la risk de misuse. Algorithmic bias occurs when tradansdansg données reflects historical dansequalities, causdansg AI systèmes to produce discrimdansatory outputs. Facial recognition systèmes have shown higher error rates pour darker-skdansned dansdividuals. Hirdansg algorithms have been found to favour male cetidates.
+---
 
-AI sûrty is le/la field dedicated to ensurdansg AI systèmes behave as danstended avecout causdansg undanstended harm. Key concerns dansclude:
-- **Alignment**: Ensurdansg AI goals match human values
-- **Interpretability / Expladansability**: Understetdansg why an AI made a decision (critical dans medicdanse, droit, fdansance)
-- **Misuse**: AI-generated deepfakes, disdanspourmation, cyberattacks
-- **Existential risk**: Theoretical concern that a futur AGI could pursue goals misaligned avec human survival
+## Evaluation Pitfalls
 
-Organisations workdansg on AI sûrty dansclude OpenAI's Sûrty team, Anthropic (founded by pourmer OpenAI sûrty researchers), DeepMdansd's sûrty team, et dansdependent dansstitutes like MIRI et ARC.
+### Données Leakage
+Occurs when information from le/la test set inadvertently influences training.
+- **Prevent:** Never use test Données pour feature engineering, normalisation, or hyperparameter tuning.
+- **Detect:** If your model scores suspiciously high, suspect leakage.
 
-# # AI dans Society
+### Overfitting
+Model performs well on training Données but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stopping, simplify Architecture, or collect more Données.
 
-AI is transpourmdansg nearly every dansdustry:
+### Underfitting
+Model performs poorly on both training et validation.
+- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
-- **Soins de santé**: AI assists dans diagnosdansg cancer from medical images, predictdansg patient outcomes, acceleratdansg drug discovery (AlphaFold solved protedans folddansg structure prediction), et personalisdansg treatment plans.
-- **Fdansance**: Fraud detection, algorithmic traddansg, credit scordansg, et robo-advisors use ML models.
-- **Transportation**: Self-drivdansg vehicles use computer vision, lidar, et redanspourcement learndansg. Tesla Autopilot, Waymo, et Cruise are leaddansg efpourts.
-- **Education**: Personalised learndansg platpourms adapt content to dansdividual student pace et learndansg style.
-- **Creative fields**: AI generates music, art, et writdansg; tools like Midjourney, DALL-E, et GitHub Copilot have changed creative workflows.
-- **Cybersécurité**: AI detects anomalies, identifies threats, et powers both attacks et defences.
+### Imbalanced Données
+- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
 
-# # Robotics et Embodied AI
+### Temporal Drift (Concept Drift)
+le/la relationship between features et target changes over time.
+- **Mitigate:** Retrain periodically, monitor Performance, use drift detection algorithms.
 
-Robotics combdanses AI avec physical machdanses. Modern robots use perception (cameras, lidar), planndansg, et control to navigate et manipulate environments. Boston Dynamics' Atlas demonstrates avancé bipedal movement. Industrial robots from companies like ABB et FANUC automate manufacturdansg. Household robots (Roomba) et surgical robots (da Vdansci System) apply AI dans everyday et medical settdansgs. Embodied AI research focuses on agents that learn physical skills through dansteraction avec le/la world, bridgdansg le/la gap between simulated et real environments.
+---
 
-# # Current AI Trends (2020s)
+## Hyperparameter Tuning
 
-- **Multimodal AI**: Systèmes that process text, images, audio, et video togele/lar (GPT-4V, Gemdansi)
-- **Agents et agentic AI**: LLMs that can use tools, browse le/la web, write code, et take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models pour researchers
-- **On-device AI**: Runndansg AI models locally on phones et laptops avecout cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: The EU AI Act (2024) is le/la world's first comprehensive AI droit, classifydansg AI systèmes by risk level
+- **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
+- **Random Search**: Sample random combinations from distributions. More efficient than grid search pour high-dimensional spaces.
+- **Bayesian Optimisation**: Builds a probabilistic model de le/la objective function et selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps pour distributed tuning.
+
+**Suggested search ranges pour common hyperparameters:**
+
+| Parameter | Suggested range (log-scale) |
+|-----------|-----------------------------|
+| Learning rate | 1e-5 to 1e-1 |
+| Batch size | 16, 32, 64, 128, 256 |
+| Number de layers (NN) | 2 to 6 |
+| Number de neurons (NN) | 32 to 1024 |
+| Regularisation (L2) | 1e-6 to 1e-2 |
+| Tree depth (XGBoost) | 3 to 12 |
+
+---
+
+## Model Selection et Validation
+
+1. **Baseline model**: Start avec a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
+2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Réseau).
+3. **Cross-validate** each candidate on le/la validation set.
+4. **Compare metrics** (avec confidence intervals) et select le/la best candidate.
+5. **Final evaluation** on le/la held-out test set.
+6. **Error analysis**: Look at Exemples le/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) et feed insights back into Données preparation or feature engineering.
+
+---
+
+## Déploiement et Monitoring
+
+### Serving Patterns
+- **Batch inference**: Process large volumes de Données offline (e.g., nightly recommendations).
+- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
+- **Streaming inference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
+
+### Model Monitoring
+- **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is available).
+- **Données drift**: Monitor changes dans input feature distributions (e.g., using PSI – Population Stability Index).
+- **Concept drift**: Monitor changes dans le/la relationship between inputs et outputs.
+- **Prediction drift**: Track le/la distribution de predicted outputs.
+- **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
+
+### Logging et Alerting
+- Log all prediction requests et responses (avec anonymisation).
+- Set alerts pour:
+  - Significant drop dans Performance.
+  - High percentage de missing or invalid inputs.
+  - Model outputs outside expected bounds.
+
+### Model Versioning et Registry
+- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store et version models, metadata, et evaluation results.
+- Store le/la training code et Données version (via DVC or Git LFS) alongside le/la model.
+
+---
+
+## Practical Workflow Checklist
+
+- [ ] Problem framed et success metric defined.
+- [ ] Données exploration performed (missing values, outliers, distribution).
+- [ ] Train/validation/test split created (stratified if needed).
+- [ ] Baseline model established.
+- [ ] Candidate models trained et validated.
+- [ ] Hyperparameters tuned.
+- [ ] Best model selected via cross-validation.
+- [ ] Final evaluation on test set.
+- [ ] Error analysis performed.
+- [ ] Déploiement plan ready (serving infrastructure).
+- [ ] Monitoring dashboard set up.
+- [ ] Documentation (Données card, model card) completed.

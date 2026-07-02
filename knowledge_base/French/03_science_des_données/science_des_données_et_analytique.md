@@ -1,341 +1,194 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: data_science_and_analytics.md
+Source: math_and_logic.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Données Science et Analytics
+# Mathematics et Logic
 
-# # Core Concepts
+## What is Mathematics?
 
-# ## What is Données Science?
-Données science is an dansterdiscipldansary field that uses scientific methods, processes, algorithms, et systèmes to extract knowledge et danssights from structured et unstructured données. It combdanses:
-- **Statistiques**: Male/lamatical foundation pour analysis
-- **Computer Science**: Programmdansg, algorithms, données structures
-- **Domadans Expertise**: Subject matter knowledge
-- **Données Visualization**: Communicatdansg fdansddansgs effectively
+Mathematics is le/la study de numbers, shapes, patterns, et logical relationships. It is both a Science et a Langue used to describe le/la universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, Statistiques, et logic. Mathematics is le/la foundation de physics, engineering, computer Science, Économie, et many other fields.
 
-# ## Données Types
-- **Structured Données**: Organized dans rows/columns (donnéesbases, spreadsheets)
-- **Unstructured Données**: No predefdansed pourmat (text, images, audio, video)
-- **Semi-structured Données**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series Données**: Sequential données podansts dansdexed dans time order
-- **Spatial Données**: Geographic/location-based danspourmation
-- **Graph Données**: Nodes et edges representdansg relationships
+## Arithmetic
 
-# ## The Données Science Process (CRISP-DM)
-1. **Busdansess Understetdansg**: Defdanse objectives et requirements
-2. **Données Understetdansg**: Collect et explore dansitial données
-3. **Données Preparation**: Clean, transpourm, et pourmat données (80% de work)
-4. **Modeldansg**: Select et apply modeldansg techniques
-5. **Evaluation**: Assess model perpourmance agadansst objectives
-6. **Déploiement**: Implement model dans production environment
+Arithmetic is le/la branch de mathematics dealing avec basic operations on numbers. le/la four fundamental operations are addition (+), subtraction (−), multiplication (×), et division (÷). le/la order de operations specifies le/la sequence dans which calculations must be performed: Parentheses, Exponents, Multiplication et Division (left to right), Addition et Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 et itself. le/la first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, et 29.
 
-# # Statistiques Fondamentaux
+**Exemples:**
+- Prime factorization: 84 = 2² × 3 × 7
+- Greatest Common Divisor (GCD) de 24 et 36: 12
+- Least Common Multiple (LCM) de 4 et 6: 12
 
-# ## Descriptive Statistiques
-- **Measures de Central Tendency**: Mean, median, mode
-- **Measures de Dispersion**: Range, variance, stetard deviation, dansterquartile range
-- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles et Quartiles**: Position avecdans distribution
+## Algebra
 
-# ## Inferential Statistiques
-- **Hypole/lasis Testdansg**: Null hypole/lasis, alternative hypole/lasis, p-values
-- **Confidence Intervals**: Range de values likely contadansdansg population parameter
-- **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejectdansg true null hypole/lasis)
-- **Type II Error**: False negative (faildansg to reject false null hypole/lasis)
-- **Power**: Probability de correctly rejectdansg false null hypole/lasis
+Algebra uses letters et symbols to represent numbers et quantities dans equations et formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding le/la value(s) de le/la variable(s) that make le/la equation true.
 
-# ## Probability Distributions
-- **Normal Distribution**: Bell curve, mean = median = mode
-- **Bdansomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count de événements dans fixed dansterval
-- **Unipourm Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between événements
-- **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical données analysis
+le/la **quadratic formula** solves equations de le/la form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
-# ## Statistical Tests
-- **t-test**: Compare means between two groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Test**: Test dansdependence de categorical variables
-- **Mann-Whitney U**: Non-parametric alternative to t-test
-- **Pearson Correlation**: Ldansear relationship between contdansuous variables
-- **Spearman Correlation**: Monotonic relationship (rank-based)
-- **Kolmogorov-Smirnov**: Compare distributions
 
-# # Données Collection et Storage
+A **function** maps each input to exactly one output. Common functions include:
+- Linear: y = mx + b (straight line, constant rate de change)
+- Quadratic: y = ax² + bx + c (parabola, curved)
+- Exponential: y = a × bˣ (growth or decay, rapid change)
+- Logarithmic: y = log_b(x) (inverse de exponential)
 
-# ## Données Sources
-- **Donnéesbases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, web scrapdansg
-- **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streamdansg Données**: Kafka, Kdansesis, real-time feeds
-- **Surveys et Experiments**: Primary données collection
-- **Public Donnéessets**: Government données, Kaggle, academic repositories
+**Key concepts:**
+- Domain: le/la set de all possible input values
+- Range: le/la set de all possible output values
+- Slope: rate de change (m dans y = mx + b)
+- Intercept: where le/la function crosses le/la y-axis (b dans y = mx + b)
 
-# ## Données Warehousdansg
-- **ETL**: Extract, Transpourm, Load process
-- **Données Lake**: Raw données storage dans native pourmat
-- **Données Warehouse**: Structured, processed données pour analysis
-- **Données Mart**: Subset de warehouse pour specific department
-- **OLAP**: Onldanse Analytical Processdansg, multidimensional queries
-- **Star Schema**: Fact tables surrounded by dimension tables
-- **Snowflake Schema**: Normalized dimension tables
+## Geometry
 
-# ## Donnéesbase Types
-- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
-- **Document**: MongoDB, CouchDB (JSON-like documents)
-- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassetra, HBase (optimized pour columns)
-- **Graph**: Neo4j, Amazon Neptune (nodes et relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped données)
-- **Vector**: Pdansecone, Milvus (embedddansg storage pour ML)
+Geometry is le/la branch de mathematics that studies shapes, sizes, positions, et properties de figures. A point has no size; it represents a location. A line extends infinitely dans both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
 
-# # Données Preprocessdansg
+**Key rules:**
+- le/la sum de angles dans a triangle is always 180 degrees.
+- le/la sum de angles dans a quadrilateral is always 360 degrees.
+- le/la Pythagorean theorem: dans a right triangle, a² + b² = c² (where c is le/la hypotenuse).
+- Circle circumference: 2πr
+- Circle area: πr²
+- Sphere volume: (4/3)πr³
 
-# ## Données Cleandansg
-- **Missdansg Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (cappdansg, transpourmation)
-- **Duplicates**: Identification et removal
-- **Inconsistencies**: Stetardizdansg pourmats, fixdansg typos
-- **Données Validation**: Checkdansg constradansts, ranges, types
+**π (pi)** is approximately 3.14159 et is le/la ratio de a circle's circumference to its diameter.
 
-# ## Données Transpourmation
-- **Normalization**: Scaldansg to 0-1 range
-- **Stetardization**: Z-score normalization (mean=0, std=1)
-- **Encoddansg**: One-hot, label, orddansal, target encoddansg
-- **Bdansndansg**: Groupdansg contdansuous values dansto categories
-- **Log Transpourmation**: Reducdansg skewness
-- **Feature Scaldansg**: Makdansg features comparable
+**Common geometric shapes:**
+- Triangle: 3 sides, angles sum to 180°
+- Square: 4 equal sides, 4 right angles
+- Rectangle: 4 sides, opposite sides equal, 4 right angles
+- Circle: no sides, continuous curved boundary
+- Pentagon: 5 sides, angles sum to 540°
+- Hexagon: 6 sides, angles sum to 720°
 
-# ## Feature Engdanseerdansg
-- **Feature Creation**: Derivdansg new features from existdansg ones
-- **Feature Selection**: Choosdansg most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimdansation)
-  - Embedded methods (LASSO, tree-based importance)
-- **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combdansdansg features multiplicatively
-- **Polynomial Features**: Creatdansg higher-order terms
+## Statistiques et Probability
 
-# # Exploratory Données Analysis (EDA)
+Statistiques is le/la Science de collecting, analysing, interpreting, et presenting Données.
 
-# ## EDA Techniques
-- **Summary Statistiques**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Sdansgle variable distributions
-- **Bivariate Analysis**: Relationships between two variables
-- **Multivariate Analysis**: Multiple variable dansteractions
-- **Correlation Analysis**: Identify relationships et multicolldansearity
-- **Segmentation**: Group similar observations
+**Measures de central tendency:**
+- **Mean** (average): sum de all values divided by le/la number de values
+- **Median**: middle value when Données is sorted (less sensitive to outliers)
+- **Mode**: most frequently occurring value (can have multiple modes)
 
-# ## Visualization Tools
-- **Histograms**: Distribution de sdansgle variable
-- **Box Plots**: Five-number summary, outlier detection
-- **Scatter Plots**: Relationship between two contdansuous variables
-- **Heatmaps**: Correlation matrices, density
-- **Bar Charts**: Categorical comparisons
-- **Ldanse Charts**: Trends over time
-- **Violdans Plots**: Distribution density avec box plot elements
-- **Pair Plots**: Multiple scatter plots pour variable pairs
+**Measures de spread:**
+- **Range**: maximum - minimum
+- **Variance**: average de squared deviations from le/la mean
+- **Standard deviation**: square root de variance (dans same units as Données)
 
-# ## Python Libraries pour EDA
-- **petas**: Données manipulation et analysis
-- **numpy**: Numerical computdansg
-- **matplotlib**: Basic plottdansg
-- **seaborn**: Statistical visualization
-- **plotly**: Interactive visualizations
-- **scipy**: Scientific computdansg et statistiques
+Probability measures le/la likelihood de an event occurring, ranging from 0 (impossible) to 1 (certain). le/la probability de two independent Événements both occurring is le/la product de their individual probabilities.
 
-# # Machdanse Learndansg dans Données Science
+**Example:** Probability de rolling a 6 on a fair die: 1/6. Probability de rolling two 6s dans a row: (1/6) × (1/6) = 1/36.
 
-# ## Supervised Learndansg
-- **Regression**: Predict contdansuous values
-  - Ldansear Regression
-  - Polynomial Regression
-  - Ridge/LASSO/Elastic Net
-  - Decision Tree Regressor
-  - Retom Forest Regressor
-  - Gradient Boostdansg (XGBoost, LightGBM, CatBoost)
-  
-- **Classification**: Predict categorical labels
-  - Logistic Regression
-  - k-Nearest Neighbors
-  - Naive Bayes
-  - Support Vector Machdanses
-  - Decision Trees
-  - Retom Forest
-  - Gradient Boostdansg
-  - Réseaux de neurones
+## Probability pour Informatique et ML
 
-# ## Unsupervised Learndansg
-- **Clusterdansg**: Group similar observations
-  - k-Means
-  - Hierarchical Clusterdansg
-  - DBSCAN (density-based)
-  - Gaussian Mixture Models
-  - Spectral Clusterdansg
-  
-- **Dimensionality Reduction**: Reduce feature count
-  - Prdanscipal Component Analysis (PCA)
-  - t-Distributed Stochastic Neighbor Embedddansg (t-SNE)
-  - Unipourm Manifold Approximation (UMAP)
-  - Autoencoders
-  
-- **Association Rules**: Fdansd co-occurrdansg items
-  - Apriori Algorithm
-  - FP-Growth
+A **random variable** is a variable whose value depends on le/la outcome de a random process. A **probability distribution** describes how likely each outcome is.
 
-# ## Model Evaluation
-- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tundansg**: Grid search, retom search, Bayesian optimization
-- **Learndansg Curves**: Diagnose bias-variance tradedef
+**Common distributions:**
+- **Bernoulli**: single trial avec two outcomes (e.g., coin flip)
+- **Binomial**: number de successes dans n independent Bernoulli trials
+- **Normal (Gaussian)**: bell curve, symmetric around le/la mean (common dans natural phenomena)
+- **Poisson**: number de Événements dans a fixed interval (e.g., emails per hour)
 
-# # Big Données Technologies
+**Expected value** is le/la long-run average outcome de a random variable. **Variance** measures spread around that expectation.
 
-# ## Distributed Computdansg Frameworks
-- **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: In-memory processdansg, faster than Hadoop
-  - Spark SQL: Structured données processdansg
-  - Spark Streamdansg: Real-time données
-  - MLlib: Machdanse learndansg library
-  - GraphX: Graph processdansg
-- **Apache Fldansk**: Stream processdansg avec low latency
-- **Apache Beam**: Unified batch et streamdansg
+**Conditional probability** describes le/la probability de an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
 
-# ## Cloud Platpourms
-- **AWS**: S3, EMR, Redshift, SageMaker, Glue
-- **Google Cloud**: BigQuery, Donnéesproc, AI Platpourm, Cloud Storage
-- **Azure**: Synapse Analytics, Donnéesbricks, Machdanse Learndansg, Données Lake
-- **Snowflake**: Cloud données warehouse
+**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
 
-# ## Données Pipeldanse Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeldanse gestion (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: Données orchestrator avec asset focus
-- **dbt**: Données transpourmation dans warehouse
 
-# # Busdansess Intelligence et Analytics
+dans Apprentissage automatique, probability underpins classification confidence, uncertainty estimation, Bayesian methods, et many loss functions (such as cross-entropy).
 
-# ## BI Tools
-- **Tableau**: Visual analytics platpourm
-- **Power BI**: Microsdet busdansess analytics
-- **Looker**: Données exploration et danssights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+## Calculus
 
-# ## Dashboard Design Prdansciples
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to données type
-- **Use Color Strategically**: Highlight important danspourmation
-- **Madanstadans Consistency**: Stetardize pourmats et scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Perpourmance**: Fast loaddansg, efficient queries
-- **Mobile Considerations**: Responsive design
+Calculus is le/la branch de mathematics that studies continuous change.
 
-# ## Key Perpourmance Indicators (KPIs)
-- **Fdansancial**: Revenue, prdeit margdans, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketdansg**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+**Differential calculus** deals avec rates de change et slopes de curves, using **derivatives**. le/la derivative de a function f(x) represents le/la rate de change de f avec respect to x at a point. Notation: f'(x) or df/dx.
 
-# # Avancé Analytics
+**Common derivatives:**
+- d/dx [x^n] = n·x^(n−1)
+- d/dx [e^x] = e^x
+- d/dx [ln(x)] = 1/x
+- d/dx [sin(x)] = cos(x)
 
-# ## Predictive Analytics
-- **Forecastdansg**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeldansg**: Credit scordansg, fraud detection, danssurance
-- **Customer Analytics**: Churn prediction, propensity modeldansg
-- **Demet Forecastdansg**: Inventory optimization, supply chadans
-- **Madanstenance Prediction**: Equipment failure anticipation
+**Integral calculus** deals avec accumulation de quantities et areas under curves, using **integrals**. le/la integral represents le/la area under le/la curve between two points.
 
-# ## Prescriptive Analytics
-- **Optimization**: Ldansear programmdansg, dansteger programmdansg
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, dansfluence diagrams
-- **A/B Testdansg**: Experimental design, statistical significance
-- **Multi-Armed Betits**: Adaptive experimentation
+le/la **fundamental theorem de calculus** connects differentiation et integration: differentiation et integration are inverse operations.
 
-# ## Text Analytics (NLP)
-- **Text Preprocessdansg**: Tokenization, stemmdansg, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeldansg**: LDA, NMF pour le/lame discovery
-- **Named Entity Recognition**: Identifydansg people, places, organizations
-- **Text Classification**: Spam detection, categorization
-- **Word Embedddansgs**: Word2Vec, GloVe, BERT
+Calculus was developed independently by Isaac Newton et Gottfried Wilhelm Leibniz dans le/la 17th century.
 
-# # Données Ethics et Governance
+## Number Systèmes
 
-# ## Données Privacy
-- **GDPR**: EU General Données Protection Regulation
-- **CCPA**: Calipournia Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability et Accountability Act (US soins de santé)
-- **Anonymization**: Removdansg personally identifiable danspourmation
-- **Differential Privacy**: Adddansg noise to protect dansdividuals
-- **Consent Gestion**: Opt-dans/opt-out mechanisms
+- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
+- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
+- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers et their negatives)
+- **Rational numbers**: numbers expressible as p/q where p et q are integers et q ≠ 0 (e.g., 1/2, 3/4, −5/3)
+- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
+- **Real numbers**: all rational et irrational numbers (le/la number line)
+- **Imaginary numbers**: involve le/la square root de negative numbers; i = √(−1)
+- **Complex numbers**: combine real et imaginary parts (a + bi)
 
-# ## Données Quality
-- **Accuracy**: Correctness de données
-- **Completeness**: All required données present
-- **Consistency**: No contradictions across sources
-- **Timeldansess**: Données available when needed
-- **Validity**: Conpourms to defdansed rules
-- **Uniqueness**: No duplicates
+## Logic et Reasoning
 
-# ## Bias et Fairness
-- **Sampldansg Bias**: Non-representative données collection
-- **Measurement Bias**: Fdroited données collection dansstruments
-- **Algorithmic Bias**: Discrimdansatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processdansg, dans-processdansg, post-processdansg
+Logic is le/la study de valid reasoning.
 
-# ## Données Governance Framework
-- **Données Stewardship**: Responsibility pour données assets
-- **Metadonnées Gestion**: Données about données documentation
-- **Données Ldanseage**: Trackdansg données flow et transpourmations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Loggdansg données access et changes
-- **Compliance**: Regulatory adherence
+**Deductive reasoning** draws specific conclusions from general premises. If le/la premises are true et le/la argument is valid, le/la conclusion must be true.
+- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
 
-# # Career Paths dans Données Science
+**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee le/la conclusion is true, but makes it probable.
+- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
 
-# ## Roles
-- **Données Analyst**: Focus on descriptive analytics, dashboards, reportdansg
-- **Données Scientist**: Statistical modeldansg, machdanse learndansg, avancé analytics
-- **ML Engdanseer**: Production ML systèmes, model déploiement, MLOps
-- **Données Engdanseer**: Données pipeldanses, dansfrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder gestion
-- **BI Developer**: Dashboard creation, report développement
-- **Research Scientist**: Novel algorithms, publications, avancé research
+**Common logical fallacies (errors dans reasoning):**
+- **Ad hominem**: attacking le/la person rather than le/la argument
+- **Straw man**: misrepresenting an argument to make it easier to attack
+- **False dichotomy**: presenting only two options when more exist
+- **Circular reasoning**: using le/la conclusion as a premise
+- **Appeal to authority**: claiming something is true because an authority says so
+- **Post hoc fallacy**: assuming that because A happened before B, A caused B
 
-# ## Skills Matrix
-- **Technical**: Python/R, SQL, statistiques, ML frameworks, cloud platpourms
-- **Analytical**: Problem-solvdansg, critical thdanskdansg, experimental design
-- **Communication**: Storytelldansg, visualization, presentation skills
-- **Busdansess**: Domadans knowledge, stakeholder gestion, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control pour models
+## Sets
 
-# # Emergdansg Trends
+A **set** is a collection de distinct objects.
+- **Union** (A ∪ B): all elements from both sets
+- **Intersection** (A ∩ B): only elements common to both
+- **Empty set** (∅ or {}): contains no elements
+- **Subset** (A ⊆ B): all elements de A are also dans B
+- **Venn diagrams**: visually represent relationships between sets
 
-# ## Current Développements
-- **AutoML**: Automated machdanse learndansg pipeldanse creation
-- **MLOps**: DevOps practices pour machdanse learndansg
-- **Feature Stores**: Centralized feature gestion
-- **Données Mesh**: Decentralized données architecture
-- **LLMs et Generative AI**: Large langue models, content generation
-- **Edge Analytics**: Processdansg données at source devices
-- **Real-Time Analytics**: Streamdansg données analysis
-- **Augmented Analytics**: AI-assisted données preparation et danssights
+Set theory is le/la foundation de modern mathematics et logic.
 
-# ## Futur Directions
-- **Quantum Machdanse Learndansg**: Quantum computdansg pour ML
-- **Federated Learndansg**: Tradansdansg models across decentralized données
-- **Causal Inference**: Movdansg beyond correlation to causation
-- **Responsible AI**: Ethics, expladansability, transparency
-- **Données Fabric**: Integrated données gestion across environments
+## Binary et Number Bases
+
+Computers represent Données dans **binary** (base 2), using only digits 0 et 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
+
+**Decimal** is le/la base-10 number system humans typically use.
+
+**Hexadecimal** is base 16, using digits 0–9 et letters A–F, often used dans Informatique to represent binary Données compactly.
+
+**Conversions:**
+- Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
+- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
+
+Converting between number bases is a fundamental concept dans computer Science.
+
+## Linear Algebra pour Developers et ML
+
+Linear algebra studies vectors, matrices, et linear transformations.
+
+A **vector** is an ordered list de numbers (e.g., features dans an ML sample).
+- Example: [23, 1.8, 175] represents a person's age, height, et weight
+
+A **matrix** is a 2D array de numbers (e.g., model weights or dataset batches).
+- Example: [[1, 2], [3, 4]] is a 2×2 matrix
+
+**Matrix multiplication** combines linear transformations et is a core operation dans graphics, simulation, et Réseaux de neurones.
+
+**Dot product** measures similarity et projection between vectors:
+- a·b = Σ(a_i × b_i)
+- **Cosine similarity** = (a·b) / (||a|| × ||b||)
+- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
+
+**Eigenvalues et eigenvectors** describe directions that are scaled (not rotated) by a matrix et are used dans methods such as PCA (Principal Component Analysis).
+
+**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful pour compression et dimensionality reduction.
+
+Most modern ML workloads rely heavily on optimized linear algebra libraries et hardware acceleration.

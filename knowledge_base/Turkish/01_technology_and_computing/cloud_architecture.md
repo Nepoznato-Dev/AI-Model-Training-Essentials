@@ -7,395 +7,395 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud Mimari
 
-# # Cloud Computiçiçindedeg Temeller
+## Cloud Bilişim Temeller
 
-# ## What is Cloud Computiçiçindedeg?
-On-demve delivery içiçindede computiçiçindedeg resources (servers, storage, veribases, ağiçiçindedeg, siçiçindedetware) over bu içiçindedeternet ile pay-as-you-go priciçiçindedeg.
+### What is Cloud Bilişim?
+On-demand delivery içinde Bilişim resources (servers, storage, databases, networking, software) over bu internet ile pay-as-you-go pricing.
 
-# ## Essential Characteristics (NIST Defiçiçindedeition)
-- **On-Demve Self-Service**: Provision resources ileout human içiçindedeteraction
-- **Broad Ağ Access**: Available over ağ via stveard mechanisms
-- **Resource Pooliçiçindedeg**: Multi-tenant model ile dynamic assignment
-- **Rapid Elasticity**: Scale outward ve içiçindedeward rapidly
+### Essential Characteristics (NIST Definition)
+- **On-Demand Self-Service**: Provision resources without human interaction
+- **Broad Ağ Access**: Available over Ağ via standard mechanisms
+- **Resource Pooling**: Multi-tenant model ile dynamic assignment
+- **Rapid Elasticity**: Scale outward ve inward rapidly
 - **Measured Service**: Resource usage monitored ve billed
 
-# ## Cloud Dağıtım Models
-- **Public Cloud**: Owned by providers, shared içiçindedefrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to siçiçindedegle organization (on-premises or hosted)
-- **Hybrid Cloud**: Combiçiçindedeation içiçindede public ve private clouds
-- **Multi-Cloud**: Usiçiçindedeg multiple public cloud providers
+### Cloud Dağıtım Models
+- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
+- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
+- **Hybrid Cloud**: Combination içinde public ve private clouds
+- **Multi-Cloud**: Using multiple public cloud providers
 - **Community Cloud**: Shared by organizations ile common concerns
 
-# ## Service Models
+### Service Models
 
-# ### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machiçiçindedees, storage, ağs, operatiçiçindedeg sistemler
-- **Örnekler**: AWS EC2, Google Compute Engiçiçindedee, Azure VMs
-- **Use Cases**: Lift-ve-shift migrations, geliştirme environments, high-control needs
+#### Infrastructure as a Service (IaaS)
+- **Provides**: Virtual machines, storage, networks, operating Sistemler
+- **Örnekler**: AWS EC2, Google Compute Engine, Azure VMs
+- **Use Cases**: Lift-ve-shift migrations, Geliştirme environments, high-control needs
 
-# ### Platiçinm as a Service (PaaS)
-- **Provides**: Geliştirme platiçinms, veribases, middleware
-- **Örnekler**: Heroku, Google App Engiçiçindedee, AWS Elastic Beanstalk
-- **Use Cases**: Application geliştirme, API dağıtım, microservices
+#### Platform as a Service (PaaS)
+- **Provides**: Geliştirme platforms, databases, middleware
+- **Örnekler**: Heroku, Google App Engine, AWS Elastic Beanstalk
+- **Use Cases**: Application Geliştirme, API Dağıtım, microservices
 
-# ### Siçiçindedetware as a Service (SaaS)
-- **Provides**: Complete applications over içiçindedeternet
-- **Örnekler**: Salesiçince, Google Workspace, Microsiçiçindedet 365, Slack
-- **Use Cases**: Email, CRM, collaboration, busiçiçindedeess applications
+#### Software as a Service (SaaS)
+- **Provides**: Complete applications over internet
+- **Örnekler**: Salesforce, Google Workspace, Microsoft 365, Slack
+- **Use Cases**: Email, CRM, collaboration, İş applications
 
-# ### Function as a Service (FaaS) / Serverless
+#### Function as a Service (FaaS) / Serverless
 - **Provides**: Event-driven function execution
 - **Örnekler**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processiçiçindedeg, APIs, scheduled tasks, real-time processiçiçindedeg
+- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
 
-# # Major Cloud Providers
+## Major Cloud Providers
 
-# ## Amazon Web Services (AWS)
+### Amazon Web Services (AWS)
 - **Market Share**: ~32% (largest provider)
 - **Key Services**:
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
-  - Veribase: RDS, DynamoDB, Aurora
-  - Ağiçiçindedeg: VPC, Route 53, CloudFront
+  - Veritabanı: RDS, DynamoDB, Aurora
+  - Networking: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
-# ## Microsiçiçindedet Azure
+### Microsoft Azure
 - **Market Share**: ~23%
-- **Strengths**: Enterprise içiçindedetegration, hybrid cloud, Microsiçiçindedet ecosystem
+- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
 - **Key Services**:
-  - Compute: Virtual Machiçiçindedees, Azure Functions, AKS
+  - Compute: Virtual Machines, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
-  - Veribase: SQL Veribase, Cosmos DB
-  - Ağiçiçindedeg: Virtual Ağ, Traffic Manager
+  - Veritabanı: SQL Veritabanı, Cosmos DB
+  - Networking: Virtual Ağ, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
-# ## Google Cloud Platiçinm (GCP)
+### Google Cloud Platform (GCP)
 - **Market Share**: ~10%
 - **Strengths**: Veri analytics, AI/ML, Kubernetes
 - **Key Services**:
-  - Compute: Compute Engiçiçindedee, Cloud Functions, GKE
+  - Compute: Compute Engine, Cloud Functions, GKE
   - Storage: Cloud Storage, Persistent Disk
-  - Veribase: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Veriflow, Pub/Sub
+  - Veritabanı: Cloud SQL, Firestore, Bigtable
+  - Analytics: BigQuery, Dataflow, Pub/Sub
   - AI/ML: Vertex AI, AutoML
 
-# ## Obur Providers
+### Other Providers
 - **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: Veribase workloads, enterprise applications
-- **Alibaba Cloud**: Domiçiçindedeant içiçindede Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified içiçindedeferiçiçindedegs
+- **Oracle Cloud**: Veritabanı workloads, enterprise applications
+- **Alibaba Cloud**: Dominant içinde Asia-Pacific
+- **DigitalOcean**: Developer-friendly, simplified offerings
 
-# # Cloud Mimari Patterns
+## Cloud Mimari Patterns
 
-# ## Well-Architected Framework Priçiçindedeciples
+### Well-Architected Framework Principles
 
-# ### Operational Excellence
+#### Operational Excellence
 - Automate operations
 - Make frequent, reversible changes
-- Refiçiçindedee procedures contiçiçindedeuously
+- Refine procedures continuously
 - Anticipate failure
 
-# ### Güvenlik
+#### Güvenlik
 - Implement strong identity foundation
 - Enable traceability
-- Apply güvenlik at all layers
-- Automate güvenlik en i̇yi uygulamalar
-- Protect veri içiçindede transit ve at rest
+- Apply Güvenlik at all layers
+- Automate Güvenlik En İyi Uygulamalar
+- Protect Veri içinde transit ve at rest
 
-# ### Reliability
+#### Reliability
 - Test recovery procedures
 - Automatically recover from failure
 - Scale horizontally için availability
-- Stop guessiçiçindedeg capacity
-- Manage change içiçindede automation
+- Stop guessing capacity
+- Manage change içinde automation
 
-# ### Periçinmance Efficiency
-- Democratize i̇leri düzey technologies
-- Go global içiçindede miçiçindedeutes
-- Use serverless mimaris
-- Experiment more içiçindedeten
+#### Performans Efficiency
+- Democratize İleri Düzey technologies
+- Go global içinde minutes
+- Use serverless architectures
+- Experiment more often
 - Consider mechanical sympathy
 
-# ### Cost Optimization
+#### Cost Optimization
 - Adopt consumption model
 - Measure overall efficiency
-- Stop spendiçiçindedeg money on undifferentiated work
+- Stop spending money on undifferentiated work
 - Analyze ve attribute expenditure
 - Use managed services
 
-# ## Common Mimari Patterns
+### Common Mimari Patterns
 
-# ### Microservices Mimari
-- Decompose applications içiçindedeto small, içiçindededependent services
-- Each service owns its veri ve logic
-- Communicate via APIs (REST, gRPC, messagiçiçindedeg)
-- Deploy içiçindededependently
-- **Benefits**: Scalability, fault isolation, teknoloji diversity
-- **Challenges**: Distributed complexity, veri consistency, monitoriçiçindedeg
+#### Microservices Mimari
+- Decompose applications into small, independent services
+- Each service owns its Veri ve logic
+- Communicate via APIs (REST, gRPC, messaging)
+- Deploy independently
+- **Benefits**: Scalability, fault isolation, Teknoloji diversity
+- **Challenges**: Distributed complexity, Veri consistency, monitoring
 
-# ### Event-Driven Mimari
-- Components communicate through olaylar
-- Producers emit olaylar, consumers react
-- **Patterns**: Event sourciçiçindedeg, CQRS, pub/sub
+#### Event-Driven Mimari
+- Components communicate through Olaylar
+- Producers emit Olaylar, consumers react
+- **Patterns**: Event sourcing, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupliçiçindedeg, scalability, real-time processiçiçindedeg
+- **Benefits**: Loose coupling, scalability, real-time processing
 
-# ### Serverless Mimari
-- No server yönetim required
+#### Serverless Mimari
+- No server Yönetim required
 - Pay per execution
-- Automatic scaliçiçindedeg
+- Automatic scaling
 - **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid dağıtım
-- **Considerations**: Cold stsanat, vendor lock-içiçindede, execution limits
+- **Benefits**: Cost efficiency, reduced operations, rapid Dağıtım
+- **Considerations**: Cold starts, vendor lock-içinde, execution limits
 
-# ### Layered Mimari (N-Tier)
+#### Layered Mimari (N-Tier)
 - Presentation layer (UI)
-- Application/Busiçiçindedeess logic layer
+- Application/İş logic layer
 - Veri access layer
-- Veribase layer
-- **Benefits**: Separation içiçindede concerns, maiçiçindedetaiçiçindedeability
-- **Common**: 3-tier web applications
+- Veritabanı layer
+- **Benefits**: Separation içinde concerns, maintainability
+- **Common**: 3-tier Web applications
 
-# ### Space-Based Mimari
-- Hvele high concurrency ile distributed veri
+#### Space-Based Mimari
+- Handle high concurrency ile distributed Veri
 - Virtualized memory across servers
-- Processiçiçindedeg nodes scale içiçindededependently
+- Processing nodes scale independently
 - **Use Cases**: High-volume, low-latency applications
 
-# # Compute Services
+## Compute Services
 
-# ## Virtual Machiçiçindedees
+### Virtual Machines
 - **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Priciçiçindedeg**: On-demve, reserved içiçindedestances, spot içiçindedestances
-- **Yönetim**: Auto-scaliçiçindedeg groups, load balancers
-- **En İyi Uygulamalar**: Right-siziçiçindedeg, taggiçiçindedeg, monitoriçiçindedeg, patchiçiçindedeg
+- **Pricing**: On-demand, reserved instances, spot instances
+- **Yönetim**: Auto-scaling groups, load balancers
+- **En İyi Uygulamalar**: Right-sizing, tagging, monitoring, patching
 
-# ## Contaiçiçindedeers
-- **Docker**: Contaiçiçindedeer runtime stveard
+### Containers
+- **Docker**: Container runtime standard
 - **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
 - **Benefits**: Portability, efficiency, consistency
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
-# ## Serverless Functions
+### Serverless Functions
 - **Execution Model**: Event-triggered, stateless
 - **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processiçiçindedeg, scheduled jobs, IoT backends
-- **Monitoriçiçindedeg**: Invocation counts, errors, duration, cold stsanat
+- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
+- **Monitoring**: Invocation counts, errors, duration, cold starts
 
-# # Storage Solutions
+## Storage Solutions
 
-# ## Object Storage
-- **Characteristics**: Flat structure, metaveri, HTTP access
+### Object Storage
+- **Characteristics**: Flat structure, metadata, HTTP access
 - **Örnekler**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, veri lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varyiçiçindedeg cost/access)
+- **Use Cases**: Static assets, backups, Veri lakes, archives
+- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
 
-# ## Block Storage
+### Block Storage
 - **Characteristics**: Raw volumes, attached to VMs
 - **Örnekler**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Veribases, boot volumes, high-periçinmance needs
+- **Use Cases**: Databases, boot volumes, high-Performans needs
 - **Types**: SSD, HDD, provisioned IOPS
 
-# ## File Storage
-- **Characteristics**: Shared file sistemler, NFS/SMB protocols
+### File Storage
+- **Characteristics**: Shared file Sistemler, NFS/SMB protocols
 - **Örnekler**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content yönetim, shared configs, lift-ve-shift
+- **Use Cases**: Content Yönetim, shared configs, lift-ve-shift
 
-# ## Archive Storage
+### Archive Storage
 - **Characteristics**: Lowest cost, retrieval delays
 - **Örnekler**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical veri
+- **Use Cases**: Compliance, long-term backups, historical Veri
 
-# # Veribase Services
+## Veritabanı Services
 
-# ## Managed Relational Veribases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Veribase
-- **Features**: Automated backups, patchiçiçindedeg, scaliçiçindedeg, replication
-- **Engiçiçindedees**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### Managed Relational Databases
+- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Veritabanı
+- **Features**: Automated backups, patching, scaling, replication
+- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-# ## NoSQL Veribases
+### NoSQL Databases
 - **Document**: DocumentDB, Firestore, Cosmos DB
 - **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassvera (managed)
+- **Wide-Column**: Bigtable, Cassandra (managed)
 - **Graph**: Neptune, Cosmos DB (graph API)
 
-# ## Veri Warehousiçiçindedeg
+### Veri Warehousing
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP mimari
-- **Use Cases**: Analytics, BI, large-scale veri analysis
+- **Characteristics**: Columnar storage, MPP Mimari
+- **Use Cases**: Analytics, BI, large-scale Veri analysis
 
-# ## Cachiçiçindedeg Services
-- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Cachiçiçindedeg**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query cachiçiçindedeg, content delivery
+### Caching Services
+- **içinde-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
+- **Use Cases**: Session storage, query caching, content delivery
 
-# # Ağiçiçindedeg
+## Networking
 
-# ## Virtual Ağs
-- **VPC/VNet**: Isolated ağ environments
-- **Subnets**: Public (içiçindedeternet-faciçiçindedeg), private (içiçindedeternal only)
-- **IP Addressiçiçindedeg**: CIDR blocks, IPv4/IPv6
+### Virtual Networks
+- **VPC/VNet**: Isolated Ağ environments
+- **Subnets**: Public (internet-facing), private (internal only)
+- **IP Addressing**: CIDR blocks, IPv4/IPv6
 - **Route Tables**: Control traffic flow
 
-# ## Load Balanciçiçindedeg
+### Load Balancing
 - **Types**: Application (L7), Ağ (L4), Gateway
-- **Features**: Health checks, SSL termiçiçindedeation, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balanciçiçindedeg, Azure Load Balancer
+- **Features**: Health checks, SSL termination, sticky sessions
+- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-# ## Content Delivery Ağs (CDN)
+### Content Delivery Networks (CDN)
 - **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origiçiçindede load, global distribution
+- **Benefits**: Reduced latency, lower origin load, global distribution
 - **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-# ## DNS Services
-- **Functions**: Domaiçiçindede registration, routiçiçindedeg, health checks
+### DNS Services
+- **Functions**: Domain registration, routing, health checks
 - **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routiçiçindedeg Policies**: Simple, weighted, latency-based, geolocation, failover
+- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
 
-# ## Connectivity Options
-- **Internet Gateway**: Public içiçindedeternet access
+### Connectivity Options
+- **Internet Gateway**: Public internet access
 - **NAT Gateway**: Private subnet outbound access
 - **VPN**: Encrypted tunnels to on-premises
 - **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peeriçiçindedeg**: Connect VPCs ileiçiçindede/between accounts
+- **VPC Peering**: Connect VPCs within/between accounts
 
-# # Güvenlik içiçindede bu Cloud
+## Güvenlik içinde bu Cloud
 
-# ## Shared Responsibility Model
-- **Provider Responsibility**: Güvenlik IÇINDE bu cloud (içiçindedefrastructure)
-- **Customer Responsibility**: Güvenlik IÇINDE bu cloud (veri, applications, access)
+### Shared Responsibility Model
+- **Provider Responsibility**: Güvenlik içinde bu cloud (infrastructure)
+- **Customer Responsibility**: Güvenlik içinde bu cloud (Veri, applications, access)
 - **Varies By Service**: More managed = more provider responsibility
 
-# ## Identity ve Access Yönetim (IAM)
+### Identity ve Access Yönetim (IAM)
 - **Users**: Individual identities
-- **Groups**: Collections içiçindede users
+- **Groups**: Collections içinde users
 - **Roles**: Temporary credentials için services/users
-- **Policies**: JSON documents defiçiçindedeiçiçindedeg permissions
-- **Priçiçindedeciples**: Least privilege, separation içiçindede duties
+- **Policies**: JSON documents defining permissions
+- **Principles**: Least privilege, separation içinde duties
 
-# ## Ağ Güvenlik
-- **Güvenlik Groups**: Stateful firewalls için içiçindedestances
+### Ağ Güvenlik
+- **Güvenlik Groups**: Stateful firewalls için instances
 - **Ağ ACLs**: Stateless firewalls için subnets
-- **Web Application Firewall (WAF)**: Protect agaiçiçindedest web exploits
+- **Web Application Firewall (WAF)**: Protect against Web exploits
 - **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
 
-# ## Veri Protection
+### Veri Protection
 - **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption içiçindede Transit**: TLS/SSL, HTTPS
+- **Encryption içinde Transit**: TLS/SSL, HTTPS
 - **Key Yönetim**: HSM, key rotation, audit trails
 - **Secrets Yönetim**: Secrets Manager, Key Vault
 
-# ## Compliance ve Governance
+### Compliance ve Governance
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy eniçincement, compliance reportiçiçindedeg, audit logs
+- **Tools**: Policy enforcement, compliance reporting, audit logs
 - **Frameworks**: Cloud Güvenlik Alliance, NIST CSF
 
-# # DevOps içiçindede bu Cloud
+## DevOps içinde bu Cloud
 
-# ## CI/CD Services
-- **AWS**: CodePipeliçiçindedee, CodeBuild, CodeDeploy
+### CI/CD Services
+- **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkiçiçindedes, CircleCI, GitLab CI
+- **Third-party**: Jenkins, CircleCI, GitLab CI
 
-# ## Infrastructure as Code (IaC)
-- **Terraiçinm**: Multi-cloud, declarative, state yönetim
+### Infrastructure as Code (IaC)
+- **Terraform**: Multi-cloud, declarative, state Yönetim
 - **CloudFormation**: AWS native, YAML/JSON templates
 - **ARM Templates**: Azure native
 - **Dağıtım Manager**: GCP native
-- **Pulumi**: Infrastructure usiçiçindedeg programmiçiçindedeg dils
+- **Pulumi**: Infrastructure using programming languages
 - **Benefits**: Version control, repeatability, documentation
 
-# ## Configuration Yönetim
+### Configuration Yönetim
 - **Ansible**: Agentless, YAML playbooks
 - **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reportiçiçindedeg
+- **Puppet**: Declarative, strong reporting
 - **SaltStack**: Fast, Python-based
 
-# ## Monitoriçiçindedeg ve Observability
-- **Metrics**: CloudWatch, Cloud Monitoriçiçindedeg, Azure Monitor
-- **Loggiçiçindedeg**: CloudWatch Logs, Cloud Loggiçiçindedeg, Log Analytics
-- **Traciçiçindedeg**: X-Ray, Cloud Trace, Application Insights
+### Monitoring ve Observability
+- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **Tracing**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alertiçiçindedeg**: SNS, Cloud Monitoriçiçindedeg alerts, Action Groups
+- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
 
-# ## Contaiçiçindedeer Orchestration
-- **Kubernetes**: Industry stveard orchestration
+### Container Orchestration
+- **Kubernetes**: Industry standard orchestration
 - **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Liçiçindedekerd (traffic yönetim, güvenlik)
-- **GitOps**: ArgoCD, Flux (declarative dağıtıms)
+- **Service Mesh**: Istio, Linkerd (traffic Yönetim, Güvenlik)
+- **GitOps**: ArgoCD, Flux (declarative deployments)
 
-# # Cost Yönetim
+## Cost Yönetim
 
-# ## Priciçiçindedeg Models
+### Pricing Models
 - **Pay-as-you-go**: Pay için what you use
 - **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid için unused capacity, can be içiçindedeterrupted
-- **Saviçiçindedegs Plans**: Flexible commitment priciçiçindedeg
+- **Spot Instances**: Bid için unused capacity, can be interrupted
+- **Savings Plans**: Flexible commitment pricing
 - **Free Tier**: Limited free usage için new accounts
 
-# ## Cost Optimization Strategies
-- **Right-siziçiçindedeg**: Match içiçindedestance types to workload needs
-- **Auto-scaliçiçindedeg**: Scale based on demve
+### Cost Optimization Strategies
+- **Right-sizing**: Match instance types to workload needs
+- **Auto-scaling**: Scale based on demand
 - **Reserved Capacity**: Commit to steady-state workloads
 - **Spot Usage**: Use için fault-tolerant, flexible workloads
-- **Storage Tiers**: Move içiçindedefrequent veri to cheaper tiers
+- **Storage Tiers**: Move infrequent Veri to cheaper tiers
 - **Cleanup**: Delete unused resources, snapshots, AMIs
 
-# ## Cost Yönetim Tools
+### Cost Yönetim Tools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
 - **Azure**: Cost Yönetim, Advisor
-- **GCP**: Billiçiçindedeg reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Veridog
+- **GCP**: Billing reports, Recommender
+- **Third-party**: CloudHealth, CloudCheckr, Datadog
 
-# # High Availability ve Disaster Recovery
+## High Availability ve Disaster Recovery
 
-# ## Availability Concepts
-- **Availability Zones**: Physically separate veri centers ileiçiçindede region
+### Availability Concepts
+- **Availability Zones**: Physically separate Veri centers within region
 - **Regions**: Geographic areas ile multiple AZs
 - **Edge Locations**: CDN cache locations globally
 
-# ## HA Strategies
+### HA Strategies
 - **Multi-AZ**: Deploy across availability zones
-- **Auto-healiçiçindedeg**: Auto-replace failed içiçindedestances
-- **Load Balanciçiçindedeg**: Distribute traffic across healthy içiçindedestances
-- **Veribase Replication**: Multi-AZ dağıtıms, read replicas
+- **Auto-healing**: Auto-replace failed instances
+- **Load Balancing**: Distribute traffic across healthy instances
+- **Veritabanı Replication**: Multi-AZ deployments, read replicas
 
-# ## Disaster Recovery Strategies
+### Disaster Recovery Strategies
 - **Backup ve Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements runniçiçindedeg, scale up duriçiçindedeg disaster
-- **Warm Stveby**: Scaled-down version always runniçiçindedeg
-- **Multi-Site Active/Active**: Full production içiçindede multiple regions (highest cost)
+- **Pilot Light**: Core elements running, scale up during disaster
+- **Warm Standby**: Scaled-down version always running
+- **Multi-Site Active/Active**: Full production içinde multiple regions (highest cost)
 
-# ## RTO ve RPO
+### RTO ve RPO
 - **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Poiçiçindedet Objective (RPO)**: Maximum acceptable veri loss
-- **Strategy Selection**: Based on busiçiçindedeess requirements ve budget
+- **Recovery Point Objective (RPO)**: Maximum acceptable Veri loss
+- **Strategy Selection**: Based on İş requirements ve budget
 
-# # Emergiçiçindedeg Trends
+## Emerging Trends
 
-# ## Edge Computiçiçindedeg
-- Process veri closer to source
+### Edge Bilişim
+- Process Veri closer to source
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
 - **Use Cases**: IoT, real-time analytics, low-latency applications
 
-# ## Multi-Cloud ve Hybrid Cloud
-- Avoid vendor lock-içiçindede
-- Leverage best-içiçindede-breed services
-- **Tools**: Terraiçinm, Anthos, Arc, CloudHealth
+### Multi-Cloud ve Hybrid Cloud
+- Avoid vendor lock-içinde
+- Leverage best-içinde-breed services
+- **Tools**: Terraform, Anthos, Arc, CloudHealth
 
-# ## AI/ML Services
-- Pre-traiçiçindedeed models: Vision, speech, dil
-- Custom model traiçiçindedeiçiçindedeg: SageMaker, Vertex AI, Azure ML
-- MLOps: Model dağıtım, monitoriçiçindedeg, governance
+### AI/ML Services
+- Pre-trained models: Vision, speech, Dil
+- Custom model training: SageMaker, Vertex AI, Azure ML
+- MLOps: Model Dağıtım, monitoring, governance
 
-# ## Quantum Computiçiçindedeg
+### Quantum Bilişim
 - **Services**: AWS Braket, Azure Quantum
 - **Status**: Early stage, experimental
 - **Potential**: Cryptography, optimization, drug discovery
 
-# ## Sustaiçiçindedeable Cloud
-- Carbon footpriçiçindedet trackiçiçindedeg
+### Sustainable Cloud
+- Carbon footprint tracking
 - Renewable energy commitments
 - Efficient resource utilization
-- Green mimari patterns
+- Green Mimari patterns

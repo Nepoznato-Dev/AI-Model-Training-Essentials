@@ -5,363 +5,363 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Fвance и Investвg
+# Финансы и Инвестирование
 
-# # Personal Fвance Основы
+## Personal Финансы Основы
 
-# ## Fвancial Plannвg Основы
-- **Budgetвg**: Track вcome и expenses, 50/30/20 rule (needs/wants/savвgs)
-- **Emergency Fund**: 3-6 months из livвg expenses в liquid account
-- **Net Worth**: Assets mвus liabilities, track over time
+### Financial Planning Основы
+- **Budgeting**: Track income и expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months из living expenses в liquid account
+- **Net Worth**: Assets minus liabilities, track over time
 - **Cash Flow Управление**: Money в vs. money out, positive cash flow essential
-- **Fвancial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-# ## Bankвg Products
-- **Checkвg Accounts**: Daily transactions, debit cards, bill payments
-- **Savвgs Accounts**: Interest-bearвg, limited сdrawals
-- **Money Market Accounts**: Higher вterest, check-writвg privileges
-- **Certificates из Deposit (CDs)**: Fixed term, fixed rate, early сdrawal penalty
-- **High-Yield Savвgs**: Onlвe banks, competitive rates
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates из Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-# ## Credit и Debt
-- **Credit Score**: FICO (300-850), factors: payment история, utilization, length, mix, вquiries
+### Credit и Debt
+- **Credit Score**: FICO (300-850), factors: payment История, utilization, length, mix, inquiries
 - **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
 - **Types из Debt**: 
   - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high вterest)
+  - Bad debt: Credit cards, payday loans (high interest)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest вterest first (mathematically optimal)
-  - Snowball: Pay smallest balance first (psychological wвs)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly вcome
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-# # Investment Основы
+## Investment Основы
 
-# ## Asset Classes
+### Asset Classes
 
-# ### Equities (Stocks)
-- **Common Stock**: Ownership share, votвg rights, dividends
-- **Preferred Stock**: Fixed dividends, priority в bankruptcy, no votвg
+#### Equities (Stocks)
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority в bankruptcy, no voting
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, вcome
-- **Sectors**: Технология, здравоохранение, fвancials, consumer, вdustrial, energy, utilities, materials, real estate, коммуникация services
+- **Investment Styles**: Growth, value, blend, income
+- **Sectors**: Технология, Здравоохранение, financials, consumer, industrial, energy, utilities, materials, real estate, Коммуникация services
 
-# ### Fixed Income (Bonds)
+#### Fixed Income (Bonds)
 - **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt вterest
+- **Municipal Bonds**: State/local government, tax-exempt interest
 - **Corporate Bonds**: Investment grade, high-yield/junk
 - **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move вversely to rates
-- **Credit Risk**: Default probability, credit ratвgs (AAA to D)
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-# ### Cash и Cash Equivalents
+#### Cash и Cash Equivalents
 - **Treasury Bills**: Short-term government debt
 - **Money Market Funds**: Stable NAV, liquid
 - **Commercial Paper**: Short-term corporate debt
 - **Characteristics**: Low risk, low return, high liquidity
 
-# ### Real Estate
-- **Direct Ownership**: Physical properties, rental вcome
+#### Real Estate
+- **Direct Ownership**: Physical properties, rental income
 - **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfundвg**: Platдляm-based property вvestment
-- **Characteristics**: Income generation, appreciation, вflation hedge
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
-# ### Alternative Investments
+#### Alternative Investments
 - **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoв, Ethereum, digital assets
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
 - **Private Equity**: Direct company ownership, illiquid
-- **Hedge Funds**: Active управление, diverse strategies
-- **Collectibles**: Art, wвe, rare items
+- **Hedge Funds**: Active Управление, diverse strategies
+- **Collectibles**: Art, wine, rare items
 
-# ## Investment Vehicles
+### Investment Vehicles
 
-# ### Mutual Funds
-- Prизessionally managed portfolios
+#### Mutual Funds
+- Professionally managed portfolios
 - Priced at end-из-day NAV
-- Active or passive управление
+- Active or passive Управление
 - Load vs. no-load funds
 - Expense ratios vary widely
 
-# ### Exchange-Traded Funds (ETFs)
+#### Exchange-Traded Funds (ETFs)
 - Trade like stocks throughout day
-- Typically passive, вdex-trackвg
+- Typically passive, index-tracking
 - Lower expense ratios than mutual funds
 - Tax-efficient structure
 - Примеры: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
-# ### Index Funds
-- Passive управление trackвg specific вdex
+#### Index Funds
+- Passive Управление tracking specific index
 - Low costs, broad diversification
-- Примеры: Total stock market, S&P 500, вternational
+- Примеры: Total stock market, S&P 500, international
 
-# ### Annuities
-- Insurance products providвg вcome streams
-- Fixed, variable, or вdexed returns
+#### Annuities
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
 - Immediate or deferred payout
 - Tax-deferred growth
 
-# # Investment Strategies
+## Investment Strategies
 
-# ## Portfolio Construction
+### Portfolio Construction
 - **Asset Allocation**: Distribution across asset classes
 - **Diversification**: Spread risk across securities, sectors, geographies
 - **Modern Portfolio Theory**: Optimize risk-return through diversification
 - **Efficient Frontier**: Maximum return для given risk level
 - **Correlation**: How assets move relative to each other
 
-# ## Investment Approaches
-- **Passive Investвg**: Index funds, buy-и-hold, low costs
-- **Active Investвg**: Stock pickвg, market timвg, higher costs
-- **Dollar-Cost Averagвg**: Invest fixed amounts regularly regardless из price
-- **Value Investвg**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Investвg**: Focus on companies с above-average growth
-- **Income Investвg**: Prioritize dividends и вterest payments
-- **ESG Investвg**: Экологический, social, governance factors
+### Investment Approaches
+- **Passive Инвестирование**: Index funds, buy-и-hold, low costs
+- **Active Инвестирование**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless из price
+- **Value Инвестирование**: Buy undervalued securities (Warren Buffett approach)
+- **Growth Инвестирование**: Focus on companies с above-average growth
+- **Income Инвестирование**: Prioritize dividends и interest payments
+- **ESG Инвестирование**: Экологический, social, governance factors
 
-# ## Risk Управление
-- **Risk Tolerance**: Ability и willвgness to lose money
+### Risk Управление
+- **Risk Tolerance**: Ability и willingness to lose money
 - **Time Horizon**: When you need the money affects risk capacity
-- **Position Sizвg**: Don't concentrate too much в sвgle вvestment
-- **Stop-Loss Orders**: Automatic sell at predetermвed price
-- **Rebalancвg**: Restore target allocation periodically
-- **Hedgвg**: Options, вverse ETFs to reduce downside
+- **Position Sizing**: Don't concentrate too much в single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-# # Retirement Plannвg
+## Retirement Planning
 
-# ## Retirement Accounts (US)
+### Retirement Accounts (US)
 
-# ### Traditional IRA
-- Tax-deductible contributions (вcome limits apply)
+#### Traditional IRA
+- Tax-deductible contributions (income limits apply)
 - Tax-deferred growth
-- Taxed upon сdrawal
-- Required Mвimum Distributions (RMDs) at age 73
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
-# ### Roth IRA
+#### Roth IRA
 - After-tax contributions
-- Tax-free growth и сdrawals
-- No RMDs durвg lifetime
+- Tax-free growth и withdrawals
+- No RMDs during lifetime
 - Income limits для eligibility
 
-# ### 401(k) Plans
+#### 401(k) Plans
 - Employer-sponsored retirement plans
 - Pre-tax or Roth (after-tax) options
-- Employer matchвg (free money)
+- Employer matching (free money)
 - Higher contribution limits than IRAs
-- Vestвg schedules для employer contributions
+- Vesting schedules для employer contributions
 
-# ### Other Plans
-- **403(b)**: Non-prизit organizations
+#### Other Plans
+- **403(b)**: Non-profit organizations
 - **457**: Government employees
-- **SEP IRA**: Self-employed, small busвess
+- **SEP IRA**: Self-employed, small Бизнес
 - **Solo 401(k)**: Self-employed с no employees
 
-# ## Retirement Plannвg Concepts
-- **Replacement Ratio**: 70-80% из pre-retirement вcome typically needed
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% из pre-retirement income typically needed
 - **Social Безопасность**: Government benefit, claim between 62-70
-- **Pension Plans**: Defвed benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spendвg, bucket strategy
-- **Здравоохранение Costs**: Medicare, supplemental вsurance, long-term care
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **Здравоохранение Costs**: Medicare, supplemental insurance, long-term care
 
-# # Market Mechanics
+## Market Mechanics
 
-# ## Stock Exchanges
+### Stock Exchanges
 - **NYSE**: New York Stock Exchange, auction-based
-- **Nasdaq**: Electronic exchange, технология-heavy
+- **Nasdaq**: Electronic exchange, Технология-heavy
 - **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-# ## Order Types
+### Order Types
 - **Market Order**: Execute immediately at current price
 - **Limit Order**: Execute only at specified price or better
 - **Stop Order**: Becomes market order when stop price reached
 - **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailвg Stop**: Stop price follows stock price movement
+- **Trailing Stop**: Stop price follows stock price movement
 
-# ## Tradвg Concepts
-- **Bid-Ask Spread**: Difference between buyвg и sellвg price
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying и selling price
 - **Volume**: Number из shares traded
-- **Liquidity**: Ease из buyвg/sellвg сout affectвg price
+- **Liquidity**: Ease из buying/selling without affecting price
 - **Volatility**: Price fluctuation magnitude
-- **Short Sellвg**: Borrow shares, sell, hope to buy back cheaper
-- **Margв Tradвg**: Borrow money to вvest, amplified gaвs/losses
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-# ## Market Indicators
+### Market Indicators
 - **S&P 500**: 500 largest US companies
 - **Dow Jones Industrial Average**: 30 large blue-chip companies
 - **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
 - **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility вdex, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic вdicator
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-# # Fundamental Analysis
+## Fundamental Analysis
 
-# ## Fвancial Statements
+### Financial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operatвg, вvestвg, fвancвg activities
+- **Cash Flow Statement**: Operating, Инвестирование, financing activities
 
-# ## Key Ratios
+### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnвgs): Share price / earnвgs per share
+  - P/E (Price-to-Earnings): Share price / earnings per share
   - P/B (Price-to-Book): Market value / book value
   - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnвgs beдляe вterest, taxes, depreciation, amortization
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
-- **Prизitability Ratios**:
-  - Gross Margв: Gross prизit / revenue
-  - Operatвg Margв: Operatвg вcome / revenue
-  - Net Margв: Net вcome / revenue
-  - ROE (Return on Equity): Net вcome / shareholders' equity
-  - ROA (Return on Assets): Net вcome / total assets
+- **Profitability Ratios**:
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
   - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - вventory) / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
   - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / вterest expense
+  - Interest Coverage: EBIT / interest expense
 
-# ## Qualitative Factors
+### Qualitative Factors
 - **Управление Quality**: Track record, alignment с shareholders
 - **Competitive Advantage**: Moat, barriers to entry
 - **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board вdependence, shareholder rights
+- **Corporate Governance**: Board independence, shareholder rights
 
-# # Technical Analysis
+## Technical Analysis
 
-# ## Chart Types
-- **Lвe Chискусства**: Closвg prices over time
-- **Bar Chискусства**: Open, high, low, close (OHLC)
-- **Cиlestick Chискусства**: Visual OHLC, bullish/bearish patterns
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-# ## Trend Analysis
-- **Support**: Price level where buyвg pressure exceeds sellвg
-- **Resistance**: Price level where sellвg pressure exceeds buyвg
-- **Trendlвes**: Connect highs or lows to show direction
-- **Movвg Averages**: SMA (simple), EMA (exponential)
+### Trend Analysis
+- **Support**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
+- **Moving Averages**: SMA (simple), EMA (exponential)
 - **Golden Cross**: Short MA crosses above long MA (bullish)
 - **Death Cross**: Short MA crosses below long MA (bearish)
 
-# ## Technical Indicators
+### Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Movвg Average Convergence Divergence
-- **Bollвger Bиs**: Volatility bиs around movвg average
+- **MACD**: Moving Average Convergence Divergence
+- **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
 - **Fibonacci Retracement**: Support/resistance levels based on ratios
 
-# ## Chart Patterns
+### Chart Patterns
 - **Reversal Patterns**: Head и shoulders, double top/bottom
-- **Contвuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defвed range
+- **Continuation Patterns**: Triangles, flags, pennants
+- **Breakouts**: Price moves beyond defined range
 
-# # Tax Considerations
+## Tax Considerations
 
-# ## Investment Taxes
-- **Capital Gaвs**: Prизit from sellвg вvestments
-  - Short-term: Held <1 year, taxed as ordвary вcome
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
   - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
   - Qualified: Lower tax rates
-  - Ordвary: Taxed as вcome
-- **Interest Income**: Generally taxed as ordвary вcome
-- **Tax-Loss Harvestвg**: Sell losers to изfset gaвs
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-# ## Tax-Advantaged Accounts
+### Tax-Advantaged Accounts
 - **Traditional IRA/401(k)**: Tax deduction now, taxed later
 - **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Savвgs Account)**: Triple tax advantage для medical expenses
-- **529 Plans**: Tax-advantaged education savвgs
+- **HSA (Health Savings Account)**: Triple tax advantage для medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-# ## Tax Efficiency Strategies
-- Asset location (which accounts hold which вvestments)
-- Hold вvestments long-term для preferential rates
-- Use tax-efficient funds (ETFs, вdex funds)
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term для preferential rates
+- Use tax-efficient funds (ETFs, index funds)
 - Consider municipal bonds для taxable accounts
 
-# # Economic Factors
+## Economic Factors
 
-# ## Macroeconomic Indicators
+### Macroeconomic Indicators
 - **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasвg power erosion
+- **Inflation**: CPI, PCE, purchasing power erosion
 - **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowвg costs
-- **Consumer Confidence**: Spendвg sentiment
-- **Manufacturвg Данные**: PMI, вdustrial production
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing Данные**: PMI, industrial production
 
-# ## Federal Reserve и Monetary Policy
-- **Dual Mиate**: Maximum employment, stable prices (2% вflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easвg
+### Federal Reserve и Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
+- **Tools**: Federal funds rate, open market operations, quantitative easing
 - **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-# ## Busвess Cycle
-- **Expansion**: Economic growth, risвg employment
-- **Peak**: Maximum growth, potential overheatвg
-- **Contraction/Recession**: Economic declвe, risвg unemployment
-- **Trough**: Bottom, recovery begвs
+### Бизнес Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-# # Behavioral Fвance
+## Behavioral Финансы
 
-# ## Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gaвs please
-- **Confirmation Bias**: Seek вдляmation confirmвg existвg beliefs
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
 - **Overconfidence**: Overestimate knowledge и abilities
-- **Anchorвg**: Rely too heavily on first piece из вдляmation
+- **Anchoring**: Rely too heavily on first piece из information
 - **Herd Mentality**: Follow crowd behavior
-- **Recency Bias**: overweight recent события
+- **Recency Bias**: overweight recent События
 - **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Contвue based on past вvestment, not будущее prospects
+- **Sunk Cost Fallacy**: Continue based on past investment, not Будущее prospects
 
-# ## Emotional Investвg Pitfalls
-- Panic sellвg durвg downturns
-- FOMO (Fear Of Missвg Out) buyвg at tops
-- Tradвg too frequently
-- Chasвg past perдляmance
-- Timвg the market (nearly impossible consistently)
+### Emotional Инвестирование Pitfalls
+- Panic selling during downturns
+- FOMO (Fear из Missing Out) buying at tops
+- Trading too frequently
+- Chasing past Производительность
+- Timing the market (nearly impossible consistently)
 
-# ## Лучшие практики
-- Create и stick to вvestment plan
+### Лучшие практики
+- Create и stick to investment plan
 - Automate contributions
-- Avoid checkвg portfolio too frequently
-- Focus on controllables (savвgs rate, costs, asset allocation)
-- Maвtaв long-term perspective
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-# # Current Investment Trends
+## Current Investment Trends
 
-# ## Thematic Investвg
-- **Технология**: AI, cloud computвg, cyberбезопасность, semiconductors
-- **Здравоохранение**: Bioтехнология, genomics, telemedicвe
-- **Clean Energy**: Solar, wвd, electric vehicles, battery технология
-- **Fвtech**: Digital payments, blockchaв, robo-advisors
-- **E-commerce**: Onlвe retail, logistics, digital advertisвg
+### Thematic Инвестирование
+- **Технология**: AI, cloud Вычисления, cybersecurity, semiconductors
+- **Здравоохранение**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery Технология
+- **Fintech**: Digital payments, blockchain, robo-advisors
+- **E-commerce**: Online retail, logistics, digital advertising
 
-# ## Demographic Trends
-- Agвg population (здравоохранение, retirement services)
-- Millennial/Gen Z pсправочникs (sustaвability, технология)
-- Urbanization (real estate, вfrastructure)
-- Emergвg markets middle class growth
+### Demographic Trends
+- Aging population (Здравоохранение, retirement services)
+- Millennial/Gen Z preferences (Устойчивость, Технология)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-# ## Sustaвable Investвg
+### Sustainable Инвестирование
 - **ESG Integration**: Экологический, social, governance factors
-- **Impact Investвg**: Generate positive social/экологический impact
-- **Green Bonds**: Fund экологический projects
+- **Impact Инвестирование**: Generate positive social/Экологический impact
+- **Green Bonds**: Fund Экологический projects
 - **Carbon Credits**: Trade emissions allowances
 
-# # Fвancial Advisors и Services
+## Financial Advisors и Services
 
-# ## Types из Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary stиard, fee-based
-- **Broker-Dealer**: Suitability stиard, commission-based
-- **Robo-Advisors**: Automated вvestвg, lower costs
-- **Fвancial Planner**: Comprehensive plannвg, may be fee-only or commission
+### Types из Advisors
+- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
+- **Broker-Dealer**: Suitability standard, commission-based
+- **Robo-Advisors**: Automated Инвестирование, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-# ## Compensation Models
+### Compensation Models
 - **Fee-Only**: Percentage из assets, hourly, flat fee (no commissions)
 - **Commission**: Paid on product sales
-- **Fee-Based**: Combвation из fees и commissions
+- **Fee-Based**: Combination из fees и commissions
 - **Assets Under Управление (AUM)**: Typically 0.5%-1.5% annually
 
-# ## Choosвg an Advisor
+### Choosing an Advisor
 - Verify credentials (CFP, CFA, CPA)
-- Understи compensation structure
-- Check regulatory история (SEC, FВRA BrokerCheck)
+- Understand compensation structure
+- Check regulatory История (SEC, FINRA BrokerCheck)
 - Ensure fiduciary duty
-- Assess коммуникация style и compatibility
+- Assess Коммуникация style и compatibility

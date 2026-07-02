@@ -1,0 +1,44 @@
+<!-- 
+This file was automatically translated from English to Arabic.
+Source: business_and_economics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# الأعمال و الاقتصاد
+
+# # Corporate Structures
+
+A corporation is a قانوني entity separate from its owners, providing limited liability protection to shareholders. ال main types من الأعمال structures include sole proprietorships (owned by one person), partnerships (owned by two or more people), limited liability companies (LLCs), و corporations (C-corp, S-corp). Corporations are governed by a board من directors elected by shareholders. ال chief executive officer (CEO) is ال highest-ranking executive, responsible لأجل making major corporate decisions. Other C-suite executives include ال Chief Financial Officer (CFO), Chief Operating Officer (COO), و Chief التكنولوجيا Officer (CTO).
+
+# # Marketing الأساسيات
+
+Marketing is ال process من promoting, selling, و distributing products or services. ال marketing mix consists من ال 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), و Promotion (how you advertise it). Market segmentation divides customers into groups based on demographics, الجغرافيا, behavior, or psychographics. Brand identity is ال visible elements من a brand (logo, colors, design) that distinguish it from competitors. Customer acquisition cost (CAC) is ال expense incurred to acquire a new customer. Customer lifetime value (CLV) estimates ال total revenue a الأعمال can expect from a single customer account.
+
+# # Accounting الأساسيات
+
+Accounting is ال systematic recording, reporting, و analysis من financial transactions. ال fundamental accounting equation is: Assets = Liabilities + Equity. Assets are resources owned by a الأعمال (cash, inventory, equipment). Liabilities are obligations or debts owed to others. Equity represents ال owner's claim on assets after liabilities are deducted. ال balance sheet shows a company's financial position at a specific point في time. ال income statement (profit و loss statement) shows revenues, expenses, و profits over a period. Cash flow statements track ال movement من cash في و out من a الأعمال. Generally Accepted Accounting Principles (GAAP) و International Financial Reporting Standards (IFRS) are ال main accounting frameworks.
+
+# # الاستثمار و المالية
+
+الاستثمار involves allocating money مع ال expectation من generating income or profit. Stocks represent ownership shares في a corporation. Bonds are debt securities where investors loan money to entities (corporations or governments) لأجل a fixed interest rate. Mutual funds pool money from many investors to purchase a diversified portfolio من securities. Exchange-traded funds (ETFs) are similar to mutual funds but trade on stock exchanges like individual stocks. Diversification spreads investments across different assets to reduce risk. Compound interest is interest calculated on both ال initial principal و accumulated interest. ال risk-return tradeoff states that potential return rises مع increased risk. Blue-chip stocks are shares في large, well-established companies مع reliable الأداء. Dividends are payments made by corporations to shareholders from profits.
+
+# # Economic Indicators
+
+Gross Domestic Product (GDP) measures ال total value من goods و services produced في a country. Inflation is ال rate at which prices rise over time, reducing purchasing power. ال Consumer Price Index (CPI) measures changes في ال price level من consumer goods و services. Unemployment rate is ال percentage من ال labor force that is jobless و actively seeking employment. Interest rates, set by central banks, influence borrowing costs و economic activity. ال Federal Reserve (US), European Central Bank (ECB), و Bank من England are major central banks. Recession is typically defined as two consecutive quarters من negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
+
+# # Supply Chain و Operations
+
+Supply chain الإدارة oversees ال flow من goods و services from raw materials to final products. Logistics involves ال coordination من moving resources from origin to consumption. Inventory الإدارة balances having enough stock to meet demand without excess holding costs. Just-في-time (JIT) manufacturing minimizes inventory by receiving goods only as needed. Quality control ensures products meet specified standards. Six Sigma is a methodology لأجل eliminating defects و improving processes. Lean manufacturing focuses on minimizing waste while maximizing productivity.
+
+# # Entrepreneurship و Startups
+
+Entrepreneurship is ال process من designing, launching, و running a new الأعمال. A startup is a young company founded to develop a unique product or service. Venture capital is funding provided by investors to startups مع high growth potential. Angel investors are affluent individuals who provide capital لأجل startups, often في exchange لأجل equity. Crowdfunding raises small amounts من money from many people via online platforms. A minimum viable product (MVP) is a version من a product مع just enough features to satisfy early customers. Pivot refers to a fundamental change في الأعمال strategy. Scalability is ال ability to grow without being hampered by structure or resources.
+
+# # International Trade
+
+International trade involves ال exchange من goods و services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is ال opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. ال World Trade Organization (WTO) regulates international trade. Currency exchange rates affect ال relative cost من imports و exports. Globalization has increased interconnectedness من economies worldwide.
+
+# # الأعمال Ethics و Corporate Social Responsibility
+
+الأعمال ethics involves moral principles guiding الأعمال behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustainably و contribute positively to society. بيئي, Social, و Governance (ESG) criteria evaluate company practices on الاستدامة و ethical impact. Stakeholders include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when الأعمال decisions conflict مع moral values. Transparency و accountability are key principles من ethical الأعمال practice.

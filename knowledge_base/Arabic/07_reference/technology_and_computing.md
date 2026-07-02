@@ -1,0 +1,72 @@
+<!-- 
+This file was automatically translated from English to Arabic.
+Source: technology_and_computing.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# التكنولوجيا و الحوسبة
+
+# # What is a Computer?
+
+A computer is an electronic device that processes البيانات according to a set من instructions called a program. Modern computers are based on ال von Neumann العمارة, which consists من a central processing unit (CPU), memory, storage, و input/output devices. ال CPU executes instructions. RAM (random access memory) stores البيانات temporarily while ال computer is running. Storage devices such as SSDs و hard drives store البيانات permanently.
+
+# # Programming Languages
+
+A programming اللغة is a formal اللغة used to write instructions لأجل computers. Python is a high-level, interpreted, general-purpose programming اللغة known لأجل its simple بناء الجملة و readability. It is widely used في البيانات العلوم, التعلم الآلي, الويب التطوير, و automation. JavaScript is ال primary اللغة لأجل الويب التطوير و runs في browsers. Java is a compiled, object-oriented اللغة used widely في enterprise software و Android التطوير. C و C++ are lower-level languages that give fine-grained control over hardware و are used في system programming, game التطوير, و الأداء-critical applications. Rust is a modern الأنظمة programming اللغة focused on safety و الأداء.
+
+# # How ال Internet Works
+
+ال internet is a global الشبكة من interconnected computers that communicate using standardized protocols. ال World Wide الويب is a system من websites و الويب pages accessed through ال internet via browsers. HTTP (HyperText Transfer Protocol) و HTTPS (secure HTTP) are ال protocols used to transfer الويب pages. An IP address is a unique numerical address assigned to each device on a الشبكة. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs الشبكة traffic between devices و networks.
+
+# # Networking و Protocols
+
+TCP/IP is ال foundational protocol suite من ال internet. IP (Internet Protocol) handles addressing و routing packets between networks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery مع retransmission و flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (لأجل example في streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol لأجل request/response التواصل between clients و servers. HTTPS is HTTP over TLS, adding encryption و integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), و stateless interactions. WebSockets provide persistent, full-duplex connections so client و server can push messages في real time, which is useful لأجل chat, live dashboards, و collaborative apps.
+
+# # Artificial Intelligence
+
+Artificial intelligence (AI) is ال simulation من human intelligence by machines, particularly computer الأنظمة. التعلم الآلي is a subset من AI في which الأنظمة learn from البيانات to make predictions or decisions without being explicitly programmed. التعلم العميق is a subset من التعلم الآلي that uses الشبكات العصبية مع many layers. الشبكات العصبية are computational models loosely inspired by ال structure من biological brains. Large اللغة models (LLMs) are AI models trained on massive amounts من text to generate و understand natural اللغة.
+
+# # Algorithms و البيانات Structures
+
+An algorithm is a step-by-step procedure لأجل solving a problem. البيانات structures are ways من organizing البيانات في a computer so that it can be accessed و modified efficiently. Common البيانات structures include arrays, linked lists, stacks, queues, trees, graphs, و hash tables. Sorting algorithms arrange items في a specified order; common أمثلة are bubble sort, merge sort, و quicksort. Binary search is an efficient algorithm لأجل finding an item في a sorted list by repeatedly halving ال search range.
+
+# # Databases
+
+A قاعدة البيانات is an organized collection من structured البيانات stored electronically. A relational قاعدة البيانات stores البيانات في tables مع rows و columns. SQL (Structured Query اللغة) is ال standard اللغة لأجل managing و querying relational databases. NoSQL databases store البيانات في formats other than tabular relations, such as documents, key-value pairs, or graphs. Common قاعدة البيانات الأنظمة include PostgreSQL, MySQL, SQLite, MongoDB, و Redis. An index في a قاعدة البيانات speeds up البيانات retrieval at ال cost من extra storage.
+
+# # System Design الأساسيات
+
+System design focuses on building reliable, scalable, و maintainable software الأنظمة. Load balancing distributes traffic across multiple servers to improve availability و reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed البيانات في fast storage (لأجل example Redis, Memcached, or CDN edge caches) to reduce قاعدة البيانات load و response time. Databases at scale require replication, partitioning (sharding), backup strategies, و careful consistency tradeoffs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic في one deployable unit; both approaches involve tradeoffs في complexity, النشر speed, debugging, و team autonomy.
+
+# # Operating الأنظمة
+
+An operating system (OS) is software that manages computer hardware و provides services لأجل programs. Common operating الأنظمة include Windows, macOS, و Linux. Linux is an open-source OS kernel used في servers, embedded الأنظمة, و Android. ال OS manages processes (running programs), memory, file الأنظمة, و input/output devices. A process is a running instance من a program. A thread is ال smallest unit من execution within a process.
+
+# # Version Control
+
+Version control الأنظمة track changes to code over time, allowing developers to collaborate و revert to previous states. Git is ال most widely used version control system. A repository (repo) is a collection من files و their التاريخ. A commit is a saved snapshot من changes. A branch is an independent line من التطوير. A pull request is a proposal to merge changes from one branch into another.
+
+# # Software التطوير Practices
+
+Object-oriented programming (OOP) organizes code into objects that combine البيانات و behavior. Key principles من OOP include encapsulation, inheritance, polymorphism, و abstraction. Test-driven التطوير (TDD) is a practice من writing tests before writing code. Agile is a set من software التطوير methodologies that emphasize iterative التطوير, collaboration, و adaptability. DevOps combines software التطوير و IT operations to shorten ال التطوير lifecycle. APIs (Application Programming Interfaces) allow different software الأنظمة to communicate مع each other.
+
+# # Cloud و DevOps الأساسيات
+
+Cloud الحوسبة provides on-demand infrastructure و managed services over ال internet. ال three major public cloud providers are AWS (Amazon الويب Services), Microsoft Azure, و Google Cloud Platform (GCP). Common service models are IaaS (infrastructure), PaaS (platform), و SaaS (software). Core cloud building blocks include compute instances/containers, object storage, managed databases, networking, و IAM (Identity و Access الإدارة). CI/CD (Continuous Integration و Continuous Delivery/النشر) automates build, test, و release pipelines so code can move safely from commit to production. Docker packages applications و dependencies into portable containers; في production these containers are typically deployed via orchestrators (such as Kubernetes), serverless platforms, or managed container services.
+
+# # البيانات Formats و Tooling
+
+JSON (JavaScript Object Notation) is a lightweight text format built from objects (key/value pairs), arrays, strings, numbers, booleans, و null; it is widely used في APIs. YAML is a human-friendly configuration format that supports nested structures و comments, commonly used في CI/CD و infrastructure definitions. CSV (Comma-Separated Values) stores tabular البيانات as rows من delimited text و is common لأجل البيانات import/export pipelines. XML (eXtensible Markup اللغة) is a tag-based structured format used في legacy الأنظمة, configuration, و document workflows. Developers commonly validate و transform these formats مع linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), و parsing libraries في their programming اللغة.
+
+# # Regular Expressions (Regex)
+
+A regular expression is a pattern اللغة used to search, match, extract, و transform text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), و escaping special characters. Regex is heavily used لأجل input validation, log parsing, text extraction, و find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested و documented to avoid bugs.
+
+# # Cybersecurity
+
+Cybersecurity is ال practice من protecting computer الأنظمة, networks, و البيانات from digital attacks. Common threats include malware (malicious software), phishing (fraudulent التواصل designed to steal information), ransomware (malware that encrypts البيانات و demands payment), و denial-من-service attacks. Encryption transforms البيانات into an unreadable form that can only be decoded مع a key. HTTPS uses TLS (Transport Layer الأمان) to encrypt الويب traffic. Strong, unique passwords و two-factor authentication are fundamental الأمان practices.
+
+# # الأمان Concepts لأجل Developers
+
+OAuth 2.0 is an authorization framework that lets users grant limited access to an application without sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 لأجل authentication. JWT (JSON الويب Token) is a compact token format containing claims, often used لأجل stateless auth, but it must be signed correctly و validated strictly (signature, expiration, issuer, audience). TLS secures البيانات في transit by providing encryption, integrity, و server authentication through certificates. ال OWASP Top 10 is a widely used list من common الويب application الأمان risks, including broken access control, cryptographic failures, injection, insecure design, الأمان misconfiguration, vulnerable components, و insufficient logging/monitoring. Secure التطوير requires defense-في-depth: input validation, output encoding, least privilege, secret الإدارة, dependency patching, و regular الأمان الاختبار.

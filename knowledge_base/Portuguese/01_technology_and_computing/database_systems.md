@@ -5,36 +5,36 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Dadosbase Sistemas
+# Banco de dados Sistemas
 
-# # Dadosbase Fundamentos
+## Banco de dados Fundamentos
 
-# ## What is a Dadosbase?
-A dadosbase is an organized collection de structured emparamation stored electronically, designed para efficient retrieval, emsertion, updatemg, e deletion de dados.
+### What is a Banco de dados?
+A Banco de dados is an organized collection de structured information stored electronically, designed para efficient retrieval, insertion, updating, e deletion de Dados.
 
-# ## Dadosbase Gerenciamento Sistemas (DBMS)
-Sdetware that emteracts com end users, applications, e o/a dadosbase itself to capture e analyze dados. Exemplos: MySQL, PostgreSQL, Oracle, MongoDB.
+### Banco de dados Gerenciamento Sistemas (DBMS)
+Software that interacts com end users, applications, e o/a Banco de dados itself to capture e analyze Dados. Exemplos: MySQL, PostgreSQL, Oracle, MongoDB.
 
-# ## Key Concepts
-- **Schema**: Structure/organization de dadosbase (tables, fields, relationships)
-- **Instance**: Actual dados stored at a particular moment
+### Key Concepts
+- **Schema**: Structure/organization de Banco de dados (tables, fields, relationships)
+- **Instance**: Actual Dados stored at a particular moment
 - **ACID Properties**: Atomicity, Consistency, Isolation, Durability
 - **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizemg dados to reduce redundancy
-- **Denormalization**: Addemg redundancy to improve read perparamance
+- **Normalization**: Organizing Dados to reduce redundancy
+- **Denormalization**: Adding redundancy to improve read Desempenho
 
-# # Relational Dadosbases (SQL)
+## Relational Databases (SQL)
 
-# ## Core Concepts
+### Core Concepts
 - **Tables**: Rows (records) e columns (fields)
 - **Primary Key**: Unique identifier para each row
-- **Foreign Key**: Referência to primary key em anoo/ar table
-- **Indexes**: Dados structures improvemg query speed
+- **Foreign Key**: Referência to primary key em another table
+- **Indexes**: Dados structures improving query speed
 - **Views**: Virtual tables based on query results
 - **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on dados changes
+- **Triggers**: Automatic actions on Dados changes
 
-# ## SQL Operations (CRUD)
+### SQL Operations (CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -50,223 +50,223 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-# ## Joems
-- **EMNER JOEM**: Returns matchemg rows from both tables
-- **LEFT JOEM**: All rows from left table, matches from right
-- **RIGHT JOEM**: All rows from right table, matches from left
-- **FULL OUTER JOEM**: All rows from both tables
-- **CROSS JOEM**: Cartesian product de both tables
-- **SELF JOEM**: Table joemed com itself
+### Joins
+- **INNER JOIN**: Returns matching rows from both tables
+- **LEFT JOIN**: All rows from left table, matches from right
+- **RIGHT JOIN**: All rows from right table, matches from left
+- **FULL OUTER JOIN**: All rows from both tables
+- **CROSS JOIN**: Cartesian product de both tables
+- **SELF JOIN**: Table joined com itself
 
-# ## Normalization Forms
-- **1NF**: Atomic values, no repeatemg groups
+### Normalization Forms
+- **1NF**: Atomic values, no repeating groups
 - **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on oo/ar non-key attributes)
-- **BCNF**: Stronger 3NF, every determemant is a ceidate key
+- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
+- **BCNF**: Stronger 3NF, every determinant is a candidate key
 - **4NF**: No multi-valued dependencies
-- **5NF**: No joem dependencies
+- **5NF**: No join dependencies
 
-# ## Popular RDBMS
+### Popular RDBMS
 - **PostgreSQL**: Avançado features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, web applications
+- **MySQL**: Widely used, fast reads, Web applications
 - **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsdet ecosystem, emtegrated tools
+- **SQL Server**: Microsoft ecosystem, integrated tools
 - **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL parak, open-source
+- **MariaDB**: MySQL fork, open-source
 
-# # NoSQL Dadosbases
+## NoSQL Databases
 
-# ## Types de NoSQL Dadosbases
+### Types de NoSQL Databases
 
-# ### Document Stores
+#### Document Stores
 - **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content gerenciamento, catalogs, user prdeiles
+- **Use Cases**: Content Gerenciamento, catalogs, user profiles
 - **Exemplos**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-# ### Key-Value Stores
+#### Key-Value Stores
 - **Structure**: Simple key-value pairs
-- **Use Cases**: Cachemg, sessions, shoppemg cartes
+- **Use Cases**: Caching, sessions, shopping carts
 - **Exemplos**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited queryemg
+- **Characteristics**: Fast, simple, limited querying
 
-# ### Column-Family Stores
-- **Structure**: Columns grouped emto families
-- **Use Cases**: Big dados, analytics, time-series
-- **Exemplos**: Cassera, HBase, ScyllaDB
+#### Column-Family Stores
+- **Structure**: Columns grouped into families
+- **Use Cases**: Big Dados, analytics, time-series
+- **Exemplos**: Cassandra, HBase, ScyllaDB
 - **Characteristics**: Write-optimized, distributed, scalable
 
-# ### Graph Dadosbases
+#### Graph Databases
 - **Structure**: Nodes, edges, properties
-- **Use Cases**: Social redes, fraud detection, recommendations
+- **Use Cases**: Social networks, fraud detection, recommendations
 - **Exemplos**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Idioma**: Cypher (Neo4j), Gremlem
+- **Query Idioma**: Cypher (Neo4j), Gremlin
 
-# ## When to Use NoSQL
-- Flexible/evolvemg schema
-- Horizontal scalemg requirements
+### When to Use NoSQL
+- Flexible/evolving schema
+- Horizontal scaling requirements
 - High write throughput
-- Hierarchical/nested dados
-- Distributed sistemas
+- Hierarchical/nested Dados
+- Distributed Sistemas
 - Real-time applications
 
-# # Dadosbase Design
+## Banco de dados Design
 
-# ## Entity-Relationship Modelemg
+### Entity-Relationship Modeling
 - **Entities**: Objects/concepts (Customer, Product, Order)
 - **Attributes**: Properties de entities (name, price, date)
 - **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardemality**: Number de emstances em relationship
+- **Cardinality**: Number de instances em relationship
 
-# ## Schema Design Patterns
-- **Semgle Table Inheritance**: All types em one table com type discrimemator
+### Schema Design Patterns
+- **Single Table Inheritance**: All types em one table com type discriminator
 - **Class Table Inheritance**: Separate tables para base e subclasses
 - **Concrete Table Inheritance**: Separate table para each concrete class
 - **Junction Tables**: Resolve many-to-many relationships
 - **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
 
-# ## Indexemg Strategies
-- **B-Tree**: Default, range queries, sortemg
+### Indexing Strategies
+- **B-Tree**: Default, range queries, sorting
 - **Hash**: Exact match lookups
-- **Bitmap**: Low-cardemality columns (gender, status)
+- **Bitmap**: Low-cardinality columns (gender, status)
 - **Full-Text**: Text search capabilities
-- **Spatial**: Geographic dados (GIS)
-- **Composite**: Multiple columns combemed
-- **Coveremg**: Includes all columns needed para query
+- **Spatial**: Geographic Dados (GIS)
+- **Composite**: Multiple columns combined
+- **Covering**: Includes all columns needed para query
 
-# # Query Optimization
+## Query Optimization
 
-# ## Execution Plans
-- Understeemg how dadosbase executes queries
-- Identifyemg bottlenecks (full table scans, missemg emdexes)
-- Tools: EXPLAEM, EXPLAEM ANALYZE
+### Execution Plans
+- Understanding how Banco de dados executes queries
+- Identifying bottlenecks (full table scans, missing indexes)
+- Tools: EXPLAIN, EXPLAIN ANALYZE
 
-# ## Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate emdexes
-- **Query Rewritemg**: Simplify complex queries
-- **Joem Optimization**: Choose correct joem types e order
-- **Partitionemg**: Split large tables (range, hash, list)
+### Optimization Techniques
+- **Index Usage**: Ensure queries use appropriate indexes
+- **Query Rewriting**: Simplify complex queries
+- **Join Optimization**: Choose correct join types e order
+- **Partitioning**: Split large tables (range, hash, list)
 - **Materialized Views**: Pre-computed query results
-- **Query Cachemg**: Store frequent query results
+- **Query Caching**: Store frequent query results
 
-# ## Common Perparamance Issues
-- **N+1 Query Problem**: Fetchemg related dados emefficiently
-- **Missemg Indexes**: Full table scans on large tables
-- **Over-emdexemg**: Slow writes due to too many emdexes
-- **Lock Contention**: Transactions waitemg para locks
-- **Inefficient Queries**: SELECT *, unnecessary joems
+### Common Desempenho Issues
+- **N+1 Query Problem**: Fetching related Dados inefficiently
+- **Missing Indexes**: Full table scans on large tables
+- **Over-indexing**: Slow writes due to too many indexes
+- **Lock Contention**: Transactions waiting para locks
+- **Inefficient Queries**: SELECT *, unnecessary joins
 
-# # Transactions e Concurrency
+## Transactions e Concurrency
 
-# ## Transaction Isolation Levels
+### Transaction Isolation Levels
 - **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed dados visible (default em most DBs)
-- **REPEATABLE READ**: Same query returns same results comem transaction
+- **READ COMMITTED**: Only committed Dados visible (default em most DBs)
+- **REPEATABLE READ**: Same query returns same results within transaction
 - **SERIALIZABLE**: Highest isolation, transactions execute sequentially
 
-# ## Concurrency Control
-- **Pessimistic Lockemg**: Lock resources beparae access
-- **Optimistic Lockemg**: Check version beparae commit
-- **MVCC (Multi-Version Concurrency Control)**: Maemtaem multiple versions de rows
-- **Row-Level Lockemg**: Lock specific rows
-- **Table-Level Lockemg**: Lock entire table
+### Concurrency Control
+- **Pessimistic Locking**: Lock resources before access
+- **Optimistic Locking**: Check version before commit
+- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions de rows
+- **Row-Level Locking**: Lock specific rows
+- **Table-Level Locking**: Lock entire table
 
-# ## Deadlocks
-- Circular dependency where transactions wait para each oo/ar
-- Prevention: Consistent lock orderemg, timeouts, deadlock detection
+### Deadlocks
+- Circular dependency where transactions wait para each other
+- Prevention: Consistent lock ordering, timeouts, deadlock detection
 - Resolution: Abort one transaction
 
-# # Replication e Scalemg
+## Replication e Scaling
 
-# ## Replication Types
+### Replication Types
 - **Master-Slave**: One primary, multiple read replicas
 - **Master-Master**: Multiple primaries, bidirectional replication
 - **Multi-Master**: N primaries, conflict resolution needed
-- **Chaem Replication**: Sequential replication through nodes
+- **Chain Replication**: Sequential replication through nodes
 
-# ## Scalemg Approaches
-- **Vertical Scalemg**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scalemg**: Add more servers (shardemg, partitionemg)
+### Scaling Approaches
+- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
+- **Horizontal Scaling**: Add more servers (sharding, partitioning)
 - **Read Replicas**: Offload read traffic
-- **Shardemg**: Split dados across servers by key/range/hash
+- **Sharding**: Split Dados across servers by key/range/hash
 - **Federation**: Split by function/service
 
-# ## Consistency Models
-- **Strong Consistency**: All nodes see same dados at same time
+### Consistency Models
+- **Strong Consistency**: All nodes see same Dados at same time
 - **Eventual Consistency**: Nodes converge over time
 - **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees o/air own updates immediately
+- **Read-Your-Writes**: User sees their own updates immediately
 
-# # Backup e Recovery
+## Backup e Recovery
 
-# ## Backup Strategies
-- **Full Backup**: Complete dadosbase copy
-- **Incremental Backup**: Changes semce last backup
-- **Differential Backup**: Changes semce last full backup
-- **Poemt-em-Time Recovery**: Restore to specific moment
-- **Contemuous Backup**: Real-time replication to backup
+### Backup Strategies
+- **Full Backup**: Complete Banco de dados copy
+- **Incremental Backup**: Changes since last backup
+- **Differential Backup**: Changes since last full backup
+- **Point-em-Time Recovery**: Restore to specific moment
+- **Continuous Backup**: Real-time replication to backup
 
-# ## Recovery Procedures
+### Recovery Procedures
 - **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Poemt Objective)**: Maximum acceptable dados loss
+- **RPO (Recovery Point Objective)**: Maximum acceptable Dados loss
 - **Disaster Recovery Plan**: Documented procedures para failures
-- **Testemg**: Regular recovery drills
+- **Teste**: Regular recovery drills
 
-# # Segurança
+## Segurança
 
-# ## Access Control
-- **Auo/antication**: Verify user identity
+### Access Control
+- **Authentication**: Verify user identity
 - **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions para easier gerenciamento
-- **Premciple de Least Privilege**: Memimum necessary access
+- **Roles**: Group permissions para easier Gerenciamento
+- **Principle de Least Privilege**: Minimum necessary access
 
-# ## Dados Protection
-- **Encryption at Rest**: Encrypt stored dados
+### Dados Protection
+- **Encryption at Rest**: Encrypt stored Dados
 - **Encryption em Transit**: TLS/SSL para connections
-- **Maskemg**: Hide sensitive dados em non-production
-- **Tokenization**: Replace sensitive dados com tokens
+- **Masking**: Hide sensitive Dados em non-production
+- **Tokenization**: Replace sensitive Dados com tokens
 
-# ## Common Vulnerabilities
-- **SQL Injection**: Malicious SQL em user emput
-- **Privilege Escalation**: Gaememg unauthorized access
-- **Audit Loggemg**: Track all dadosbase activities
+### Common Vulnerabilities
+- **SQL Injection**: Malicious SQL em user input
+- **Privilege Escalation**: Gaining unauthorized access
+- **Audit Logging**: Track all Banco de dados activities
 - **Compliance**: GDPR, HIPAA, PCI-DSS requirements
 
-# # Modern Dadosbase Technologies
+## Modern Banco de dados Technologies
 
-# ## Cloud Dadosbases
+### Cloud Databases
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Dadosbase, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scalemg, backups emcluded
+- **Azure**: SQL Banco de dados, Cosmos DB, Synapse
+- **Benefits**: Managed service, auto-scaling, backups included
 
-# ## NewSQL Dadosbases
-- Combeme SQL consistency com NoSQL scalability
+### NewSQL Databases
+- Combine SQL consistency com NoSQL scalability
 - **Exemplos**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scalemg
+- **Features**: Distributed, ACID transactions, horizontal scaling
 
-# ## Time-Series Dadosbases
-- Optimized para timestamped dados
-- **Exemplos**: InfluxDB, TimescaleDB, Promeo/aus
-- **Use Cases**: IoT, monitoremg, femancial dados
+### Time-Series Databases
+- Optimized para timestamped Dados
+- **Exemplos**: InfluxDB, TimescaleDB, Prometheus
+- **Use Cases**: IoT, monitoring, financial Dados
 
-# ## Vector Dadosbases
-- Store e query embeddemg vectors
-- **Exemplos**: Pemecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation sistemas, AI applications
+### Vector Databases
+- Store e query embedding vectors
+- **Exemplos**: Pinecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Semantic search, recommendation Sistemas, AI applications
 
-# ## Multi-Model Dadosbases
-- Support multiple dados models em semgle system
+### Multi-Model Databases
+- Support multiple Dados models em single system
 - **Exemplos**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility comout multiple dadosbases
+- **Benefit**: Flexibility without multiple databases
 
-# # ORMs e Dados Access
+## ORMs e Dados Access
 
-# ## Object-Relational Mappemg
-- **Purpose**: Map dadosbase tables to programmemg objects
+### Object-Relational Mapping
+- **Purpose**: Map Banco de dados tables to programming objects
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
@@ -274,30 +274,30 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-# ## Benefits
+### Benefits
 - Abstraction from SQL
-- Type seguroty
-- Migration gerenciamento
-- Query buildemg APIs
+- Type safety
+- Migration Gerenciamento
+- Query building APIs
 
-# ## Drawbacks
-- Perparamance overhead
+### Drawbacks
+- Desempenho overhead
 - Complex queries harder to write
 - N+1 query problems
-- Learnemg curve
+- Learning curve
 
-# # Dadosbase Admemistration
+## Banco de dados Administration
 
-# ## DBA Responsibilities
+### DBA Responsibilities
 - Installation e configuration
-- Perparamance tunemg
+- Desempenho tuning
 - Backup e recovery
-- Segurança gerenciamento
-- Capacity plannemg
-- Monitoremg e alertemg
-- Patch gerenciamento
+- Segurança Gerenciamento
+- Capacity planning
+- Monitoring e alerting
+- Patch Gerenciamento
 
-# ## Monitoremg Metrics
+### Monitoring Metrics
 - Query response time
 - Throughput (transactions per second)
 - Connection count
@@ -306,9 +306,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Lock wait time
 - Replication lag
 
-# ## Maemtenance Tasks
-- **Vacuum/Analyze**: Update estatísticas, reclaim space
-- **Index Rebuildemg**: Defragment emdexes
-- **Estatísticas Updates**: Keep query optimizer emparamed
+### Maintenance Tasks
+- **Vacuum/Analyze**: Update Estatísticas, reclaim space
+- **Index Rebuilding**: Defragment indexes
+- **Estatísticas Updates**: Keep query optimizer informed
 - **Log Rotation**: Manage log file sizes
-- **Capacity Plannemg**: Predict growth, plan upgrades
+- **Capacity Planning**: Predict growth, plan upgrades

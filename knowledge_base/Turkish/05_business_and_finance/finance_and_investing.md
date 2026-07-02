@@ -5,363 +5,363 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Fiçiçindedeance ve Investiçiçindedeg
+# Finans ve Yatırım
 
-# # Personal Fiçiçindedeance Temeller
+## Personal Finans Temeller
 
-# ## Fiçiçindedeancial Planniçiçindedeg Temeller
-- **Budgetiçiçindedeg**: Track içiçindedecome ve expenses, 50/30/20 rule (needs/wants/saviçiçindedegs)
-- **Emergency Fund**: 3-6 months içiçindede liviçiçindedeg expenses içiçindede liquid account
-- **Net Worth**: Assets miçiçindedeus liabilities, track over time
-- **Cash Flow Yönetim**: Money içiçindede vs. money out, positive cash flow essential
-- **Fiçiçindedeancial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+### Financial Planning Temeller
+- **Budgeting**: Track income ve expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months içinde living expenses içinde liquid account
+- **Net Worth**: Assets minus liabilities, track over time
+- **Cash Flow Yönetim**: Money içinde vs. money out, positive cash flow essential
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-# ## Bankiçiçindedeg Products
-- **Checkiçiçindedeg Accounts**: Daily transactions, debit cards, bill payments
-- **Saviçiçindedegs Accounts**: Interest-beariçiçindedeg, limited iledrawals
-- **Money Market Accounts**: Higher içiçindedeterest, check-writiçiçindedeg privileges
-- **Certificates içiçindede Deposit (CDs)**: Fixed term, fixed rate, early iledrawal penalty
-- **High-Yield Saviçiçindedegs**: Onliçiçindedee banks, competitive rates
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates içinde Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-# ## Credit ve Debt
-- **Credit Score**: FICO (300-850), factors: payment tarih, utilization, length, mix, içiçindedequiries
+### Credit ve Debt
+- **Credit Score**: FICO (300-850), factors: payment Tarih, utilization, length, mix, inquiries
 - **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
-- **Types içiçindede Debt**: 
+- **Types içinde Debt**: 
   - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high içiçindedeterest)
+  - Bad debt: Credit cards, payday loans (high interest)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest içiçindedeterest first (mabumatically optimal)
-  - Snowball: Pay smallest balance first (psychological wiçiçindedes)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly içiçindedecome
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-# # Investment Temeller
+## Investment Temeller
 
-# ## Asset Classes
+### Asset Classes
 
-# ### Equities (Stocks)
-- **Common Stock**: Ownership share, votiçiçindedeg rights, dividends
-- **Preferred Stock**: Fixed dividends, priority içiçindede bankruptcy, no votiçiçindedeg
+#### Equities (Stocks)
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority içinde bankruptcy, no voting
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, içiçindedecome
-- **Sectors**: Teknoloji, sağlık hizmetleri, fiçiçindedeancials, consumer, içiçindededustrial, energy, utilities, materials, real estate, i̇letişim services
+- **Investment Styles**: Growth, value, blend, income
+- **Sectors**: Teknoloji, Sağlık Hizmetleri, financials, consumer, industrial, energy, utilities, materials, real estate, İletişim services
 
-# ### Fixed Income (Bonds)
+#### Fixed Income (Bonds)
 - **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt içiçindedeterest
+- **Municipal Bonds**: State/local government, tax-exempt interest
 - **Corporate Bonds**: Investment grade, high-yield/junk
 - **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move içiçindedeversely to rates
-- **Credit Risk**: Default probability, credit ratiçiçindedegs (AAA to D)
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-# ### Cash ve Cash Equivalents
+#### Cash ve Cash Equivalents
 - **Treasury Bills**: Short-term government debt
 - **Money Market Funds**: Stable NAV, liquid
 - **Commercial Paper**: Short-term corporate debt
 - **Characteristics**: Low risk, low return, high liquidity
 
-# ### Real Estate
-- **Direct Ownership**: Physical properties, rental içiçindedecome
+#### Real Estate
+- **Direct Ownership**: Physical properties, rental income
 - **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfundiçiçindedeg**: Platiçinm-based property içiçindedevestment
-- **Characteristics**: Income generation, appreciation, içiçindedeflation hedge
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
-# ### Alternative Investments
+#### Alternative Investments
 - **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoiçiçindede, Ebureum, digital assets
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
 - **Private Equity**: Direct company ownership, illiquid
-- **Hedge Funds**: Active yönetim, diverse strategies
-- **Collectibles**: Art, wiçiçindedee, rare items
+- **Hedge Funds**: Active Yönetim, diverse strategies
+- **Collectibles**: Art, wine, rare items
 
-# ## Investment Vehicles
+### Investment Vehicles
 
-# ### Mutual Funds
-- Priçiçindedeessionally managed portfolios
-- Priced at end-içiçindede-day NAV
-- Active or passive yönetim
+#### Mutual Funds
+- Professionally managed portfolios
+- Priced at end-içinde-day NAV
+- Active or passive Yönetim
 - Load vs. no-load funds
 - Expense ratios vary widely
 
-# ### Exchange-Traded Funds (ETFs)
+#### Exchange-Traded Funds (ETFs)
 - Trade like stocks throughout day
-- Typically passive, içiçindededex-trackiçiçindedeg
+- Typically passive, index-tracking
 - Lower expense ratios than mutual funds
 - Tax-efficient structure
 - Örnekler: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
-# ### Index Funds
-- Passive yönetim trackiçiçindedeg specific içiçindededex
+#### Index Funds
+- Passive Yönetim tracking specific index
 - Low costs, broad diversification
-- Örnekler: Total stock market, S&P 500, içiçindedeternational
+- Örnekler: Total stock market, S&P 500, international
 
-# ### Annuities
-- Insurance products providiçiçindedeg içiçindedecome streams
-- Fixed, variable, or içiçindededexed returns
+#### Annuities
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
 - Immediate or deferred payout
 - Tax-deferred growth
 
-# # Investment Strategies
+## Investment Strategies
 
-# ## Portfolio Construction
+### Portfolio Construction
 - **Asset Allocation**: Distribution across asset classes
 - **Diversification**: Spread risk across securities, sectors, geographies
 - **Modern Portfolio Theory**: Optimize risk-return through diversification
 - **Efficient Frontier**: Maximum return için given risk level
-- **Correlation**: How assets move relative to each obur
+- **Correlation**: How assets move relative to each other
 
-# ## Investment Approaches
-- **Passive Investiçiçindedeg**: Index funds, buy-ve-hold, low costs
-- **Active Investiçiçindedeg**: Stock pickiçiçindedeg, market timiçiçindedeg, higher costs
-- **Dollar-Cost Averagiçiçindedeg**: Invest fixed amounts regularly regardless içiçindede price
-- **Value Investiçiçindedeg**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Investiçiçindedeg**: Focus on companies ile above-average growth
-- **Income Investiçiçindedeg**: Prioritize dividends ve içiçindedeterest payments
-- **ESG Investiçiçindedeg**: Çevresel, social, governance factors
+### Investment Approaches
+- **Passive Yatırım**: Index funds, buy-ve-hold, low costs
+- **Active Yatırım**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless içinde price
+- **Value Yatırım**: Buy undervalued securities (Warren Buffett approach)
+- **Growth Yatırım**: Focus on companies ile above-average growth
+- **Income Yatırım**: Prioritize dividends ve interest payments
+- **ESG Yatırım**: Çevresel, social, governance factors
 
-# ## Risk Yönetim
-- **Risk Tolerance**: Ability ve williçiçindedegness to lose money
+### Risk Yönetim
+- **Risk Tolerance**: Ability ve willingness to lose money
 - **Time Horizon**: When you need bu money affects risk capacity
-- **Position Siziçiçindedeg**: Don't concentrate too much içiçindede siçiçindedegle içiçindedevestment
-- **Stop-Loss Orders**: Automatic sell at predetermiçiçindedeed price
-- **Rebalanciçiçindedeg**: Restore target allocation periodically
-- **Hedgiçiçindedeg**: Options, içiçindedeverse ETFs to reduce downside
+- **Position Sizing**: Don't concentrate too much içinde single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-# # Retirement Planniçiçindedeg
+## Retirement Planning
 
-# ## Retirement Accounts (US)
+### Retirement Accounts (US)
 
-# ### Traditional IRA
-- Tax-deductible contributions (içiçindedecome limits apply)
+#### Traditional IRA
+- Tax-deductible contributions (income limits apply)
 - Tax-deferred growth
-- Taxed upon iledrawal
-- Required Miçiçindedeimum Distributions (RMDs) at age 73
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
-# ### Roth IRA
+#### Roth IRA
 - After-tax contributions
-- Tax-free growth ve iledrawals
-- No RMDs duriçiçindedeg lifetime
+- Tax-free growth ve withdrawals
+- No RMDs during lifetime
 - Income limits için eligibility
 
-# ### 401(k) Plans
+#### 401(k) Plans
 - Employer-sponsored retirement plans
 - Pre-tax or Roth (after-tax) options
-- Employer matchiçiçindedeg (free money)
+- Employer matching (free money)
 - Higher contribution limits than IRAs
-- Vestiçiçindedeg schedules için employer contributions
+- Vesting schedules için employer contributions
 
-# ### Obur Plans
-- **403(b)**: Non-priçiçindedeit organizations
+#### Other Plans
+- **403(b)**: Non-profit organizations
 - **457**: Government employees
-- **SEP IRA**: Self-employed, small busiçiçindedeess
+- **SEP IRA**: Self-employed, small İş
 - **Solo 401(k)**: Self-employed ile no employees
 
-# ## Retirement Planniçiçindedeg Concepts
-- **Replacement Ratio**: 70-80% içiçindede pre-retirement içiçindedecome typically needed
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% içinde pre-retirement income typically needed
 - **Social Güvenlik**: Government benefit, claim between 62-70
-- **Pension Plans**: Defiçiçindedeed benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spendiçiçindedeg, bucket strategy
-- **Sağlık Hizmetleri Costs**: Medicare, supplemental içiçindedesurance, long-term care
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **Sağlık Hizmetleri Costs**: Medicare, supplemental insurance, long-term care
 
-# # Market Mechanics
+## Market Mechanics
 
-# ## Stock Exchanges
+### Stock Exchanges
 - **NYSE**: New York Stock Exchange, auction-based
-- **Nasdaq**: Electronic exchange, teknoloji-heavy
-- **Obur Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+- **Nasdaq**: Electronic exchange, Teknoloji-heavy
+- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-# ## Order Types
+### Order Types
 - **Market Order**: Execute immediately at current price
 - **Limit Order**: Execute only at specified price or better
 - **Stop Order**: Becomes market order when stop price reached
 - **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailiçiçindedeg Stop**: Stop price follows stock price movement
+- **Trailing Stop**: Stop price follows stock price movement
 
-# ## Tradiçiçindedeg Concepts
-- **Bid-Ask Spread**: Difference between buyiçiçindedeg ve selliçiçindedeg price
-- **Volume**: Number içiçindede shares traded
-- **Liquidity**: Ease içiçindede buyiçiçindedeg/selliçiçindedeg ileout affectiçiçindedeg price
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying ve selling price
+- **Volume**: Number içinde shares traded
+- **Liquidity**: Ease içinde buying/selling without affecting price
 - **Volatility**: Price fluctuation magnitude
-- **Short Selliçiçindedeg**: Borrow shares, sell, hope to buy back cheaper
-- **Margiçiçindede Tradiçiçindedeg**: Borrow money to içiçindedevest, amplified gaiçiçindedes/losses
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-# ## Market Indicators
+### Market Indicators
 - **S&P 500**: 500 largest US companies
 - **Dow Jones Industrial Average**: 30 large blue-chip companies
 - **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
 - **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility içiçindededex, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic içiçindededicator
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-# # Fundamental Analysis
+## Fundamental Analysis
 
-# ## Fiçiçindedeancial Statements
+### Financial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operatiçiçindedeg, içiçindedevestiçiçindedeg, fiçiçindedeanciçiçindedeg activities
+- **Cash Flow Statement**: Operating, Yatırım, financing activities
 
-# ## Key Ratios
+### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earniçiçindedegs): Share price / earniçiçindedegs per share
+  - P/E (Price-to-Earnings): Share price / earnings per share
   - P/B (Price-to-Book): Market value / book value
   - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earniçiçindedegs beiçine içiçindedeterest, taxes, depreciation, amortization
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
-- **Priçiçindedeitability Ratios**:
-  - Gross Margiçiçindede: Gross priçiçindedeit / revenue
-  - Operatiçiçindedeg Margiçiçindede: Operatiçiçindedeg içiçindedecome / revenue
-  - Net Margiçiçindede: Net içiçindedecome / revenue
-  - ROE (Return on Equity): Net içiçindedecome / shareholders' equity
-  - ROA (Return on Assets): Net içiçindedecome / total assets
+- **Profitability Ratios**:
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
   - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - içiçindedeventory) / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
   - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / içiçindedeterest expense
+  - Interest Coverage: EBIT / interest expense
 
-# ## Qualitative Factors
+### Qualitative Factors
 - **Yönetim Quality**: Track record, alignment ile shareholders
 - **Competitive Advantage**: Moat, barriers to entry
 - **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board içiçindededependence, shareholder rights
+- **Corporate Governance**: Board independence, shareholder rights
 
-# # Technical Analysis
+## Technical Analysis
 
-# ## Chart Types
-- **Liçiçindedee Chsanat**: Closiçiçindedeg prices over time
-- **Bar Chsanat**: Open, high, low, close (OHLC)
-- **Cvelestick Chsanat**: Visual OHLC, bullish/bearish patterns
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-# ## Trend Analysis
-- **Support**: Price level where buyiçiçindedeg pressure exceeds selliçiçindedeg
-- **Resistance**: Price level where selliçiçindedeg pressure exceeds buyiçiçindedeg
-- **Trendliçiçindedees**: Connect highs or lows to show direction
-- **Moviçiçindedeg Averages**: SMA (simple), EMA (exponential)
+### Trend Analysis
+- **Support**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
+- **Moving Averages**: SMA (simple), EMA (exponential)
 - **Golden Cross**: Short MA crosses above long MA (bullish)
 - **Death Cross**: Short MA crosses below long MA (bearish)
 
-# ## Technical Indicators
+### Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Moviçiçindedeg Average Convergence Divergence
-- **Bolliçiçindedeger Bves**: Volatility bves around moviçiçindedeg average
+- **MACD**: Moving Average Convergence Divergence
+- **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
 - **Fibonacci Retracement**: Support/resistance levels based on ratios
 
-# ## Chart Patterns
+### Chart Patterns
 - **Reversal Patterns**: Head ve shoulders, double top/bottom
-- **Contiçiçindedeuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defiçiçindedeed range
+- **Continuation Patterns**: Triangles, flags, pennants
+- **Breakouts**: Price moves beyond defined range
 
-# # Tax Considerations
+## Tax Considerations
 
-# ## Investment Taxes
-- **Capital Gaiçiçindedes**: Priçiçindedeit from selliçiçindedeg içiçindedevestments
-  - Short-term: Held <1 year, taxed as ordiçiçindedeary içiçindedecome
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
   - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
   - Qualified: Lower tax rates
-  - Ordiçiçindedeary: Taxed as içiçindedecome
-- **Interest Income**: Generally taxed as ordiçiçindedeary içiçindedecome
-- **Tax-Loss Harvestiçiçindedeg**: Sell losers to içiçindedefset gaiçiçindedes
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-# ## Tax-Advantaged Accounts
+### Tax-Advantaged Accounts
 - **Traditional IRA/401(k)**: Tax deduction now, taxed later
 - **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Saviçiçindedegs Account)**: Triple tax advantage için medical expenses
-- **529 Plans**: Tax-advantaged education saviçiçindedegs
+- **HSA (Health Savings Account)**: Triple tax advantage için medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-# ## Tax Efficiency Strategies
-- Asset location (which accounts hold which içiçindedevestments)
-- Hold içiçindedevestments long-term için preferential rates
-- Use tax-efficient funds (ETFs, içiçindededex funds)
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term için preferential rates
+- Use tax-efficient funds (ETFs, index funds)
 - Consider municipal bonds için taxable accounts
 
-# # Economic Factors
+## Economic Factors
 
-# ## Macroeconomic Indicators
+### Macroeconomic Indicators
 - **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasiçiçindedeg power erosion
+- **Inflation**: CPI, PCE, purchasing power erosion
 - **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowiçiçindedeg costs
-- **Consumer Confidence**: Spendiçiçindedeg sentiment
-- **Manufacturiçiçindedeg Veri**: PMI, içiçindededustrial production
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing Veri**: PMI, industrial production
 
-# ## Federal Reserve ve Monetary Policy
-- **Dual Mveate**: Maximum employment, stable prices (2% içiçindedeflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easiçiçindedeg
+### Federal Reserve ve Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
+- **Tools**: Federal funds rate, open market operations, quantitative easing
 - **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-# ## Busiçiçindedeess Cycle
-- **Expansion**: Economic growth, risiçiçindedeg employment
-- **Peak**: Maximum growth, potential overheatiçiçindedeg
-- **Contraction/Recession**: Economic decliçiçindedee, risiçiçindedeg unemployment
-- **Trough**: Bottom, recovery begiçiçindedes
+### İş Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-# # Behavioral Fiçiçindedeance
+## Behavioral Finans
 
-# ## Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gaiçiçindedes please
-- **Confirmation Bias**: Seek içiçindedeiçinmation confirmiçiçindedeg existiçiçindedeg beliefs
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
 - **Overconfidence**: Overestimate knowledge ve abilities
-- **Anchoriçiçindedeg**: Rely too heavily on first piece içiçindede içiçindedeiçinmation
+- **Anchoring**: Rely too heavily on first piece içinde information
 - **Herd Mentality**: Follow crowd behavior
-- **Recency Bias**: overweight recent olaylar
+- **Recency Bias**: overweight recent Olaylar
 - **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Contiçiçindedeue based on past içiçindedevestment, not gelecek prospects
+- **Sunk Cost Fallacy**: Continue based on past investment, not Gelecek prospects
 
-# ## Emotional Investiçiçindedeg Pitfalls
-- Panic selliçiçindedeg duriçiçindedeg downturns
-- FOMO (Fear Of Missiçiçindedeg Out) buyiçiçindedeg at tops
-- Tradiçiçindedeg too frequently
-- Chasiçiçindedeg past periçinmance
-- Timiçiçindedeg bu market (nearly impossible consistently)
+### Emotional Yatırım Pitfalls
+- Panic selling during downturns
+- FOMO (Fear içinde Missing Out) buying at tops
+- Trading too frequently
+- Chasing past Performans
+- Timing bu market (nearly impossible consistently)
 
-# ## En İyi Uygulamalar
-- Create ve stick to içiçindedevestment plan
+### En İyi Uygulamalar
+- Create ve stick to investment plan
 - Automate contributions
-- Avoid checkiçiçindedeg portfolio too frequently
-- Focus on controllables (saviçiçindedegs rate, costs, asset allocation)
-- Maiçiçindedetaiçiçindede long-term perspective
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-# # Current Investment Trends
+## Current Investment Trends
 
-# ## Thematic Investiçiçindedeg
-- **Teknoloji**: AI, cloud computiçiçindedeg, cybergüvenlik, semiconductors
-- **Sağlık Hizmetleri**: Bioteknoloji, genomics, telemediciçiçindedee
-- **Clean Energy**: Solar, wiçiçindeded, electric vehicles, battery teknoloji
-- **Fiçiçindedetech**: Digital payments, blockchaiçiçindede, robo-advisors
-- **E-commerce**: Onliçiçindedee retail, logistics, digital advertisiçiçindedeg
+### Thematic Yatırım
+- **Teknoloji**: AI, cloud Bilişim, cybersecurity, semiconductors
+- **Sağlık Hizmetleri**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery Teknoloji
+- **Fintech**: Digital payments, blockchain, robo-advisors
+- **E-commerce**: Online retail, logistics, digital advertising
 
-# ## Demographic Trends
-- Agiçiçindedeg population (sağlık hizmetleri, retirement services)
-- Millennial/Gen Z preferanss (sustaiçiçindedeability, teknoloji)
-- Urbanization (real estate, içiçindedefrastructure)
-- Emergiçiçindedeg markets middle class growth
+### Demographic Trends
+- Aging population (Sağlık Hizmetleri, retirement services)
+- Millennial/Gen Z preferences (Sürdürülebilirlik, Teknoloji)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-# ## Sustaiçiçindedeable Investiçiçindedeg
+### Sustainable Yatırım
 - **ESG Integration**: Çevresel, social, governance factors
-- **Impact Investiçiçindedeg**: Generate positive social/çevresel impact
-- **Green Bonds**: Fund çevresel projects
+- **Impact Yatırım**: Generate positive social/Çevresel impact
+- **Green Bonds**: Fund Çevresel projects
 - **Carbon Credits**: Trade emissions allowances
 
-# # Fiçiçindedeancial Advisors ve Services
+## Financial Advisors ve Services
 
-# ## Types içiçindede Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary stveard, fee-based
-- **Broker-Dealer**: Suitability stveard, commission-based
-- **Robo-Advisors**: Automated içiçindedevestiçiçindedeg, lower costs
-- **Fiçiçindedeancial Planner**: Comprehensive planniçiçindedeg, may be fee-only or commission
+### Types içinde Advisors
+- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
+- **Broker-Dealer**: Suitability standard, commission-based
+- **Robo-Advisors**: Automated Yatırım, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-# ## Compensation Models
-- **Fee-Only**: Percentage içiçindede assets, hourly, flat fee (no commissions)
+### Compensation Models
+- **Fee-Only**: Percentage içinde assets, hourly, flat fee (no commissions)
 - **Commission**: Paid on product sales
-- **Fee-Based**: Combiçiçindedeation içiçindede fees ve commissions
+- **Fee-Based**: Combination içinde fees ve commissions
 - **Assets Under Yönetim (AUM)**: Typically 0.5%-1.5% annually
 
-# ## Choosiçiçindedeg an Advisor
+### Choosing an Advisor
 - Verify credentials (CFP, CFA, CPA)
-- Understve compensation structure
-- Check regulatory tarih (SEC, FIÇINDERA BrokerCheck)
+- Understand compensation structure
+- Check regulatory Tarih (SEC, FINRA BrokerCheck)
 - Ensure fiduciary duty
-- Assess i̇letişim style ve compatibility
+- Assess İletişim style ve compatibility

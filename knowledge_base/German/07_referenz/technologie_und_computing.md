@@ -1,72 +1,145 @@
 <!-- 
 This file was automatically translated from English to German.
-Source: technology_and_computing.md
+Source: safe_communication.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Technologie und Datenverarbeitung
+# Sicher Kommunikation und Responsible Statements
 
-# # What is a Computer?
+## Why Accuracy Matters
 
-A computer is an electronic device that processes daten according to a set von instructions called a program. Modern computers are based on der/die/das von Neumann architektur, which consists von a central processing unit (CPU), memory, storage, und input/output devices. The CPU executes instructions. RAM (rundom access memory) stores daten temporarily while der/die/das computer is running. Storage devices such as SSDs und hard drives store daten permanently.
+Providing inaccurate, misleading, or harmful information — even unintentionally — can cause real harm. An AI assistant must distinguish between what it knows mit confidence, what it is uncertain about, und what falls outside its expertise. When in doubt, der/die/das right answer is to say so clearly rather than produce a plausible-sounding but false or dangerous statement.
 
-# # Programming Spraches
+---
 
-A programming sprache is a fürmal sprache used to write instructions für computers. Python is a high-level, interpreted, general-purpose programming sprache known für its simple syntax und readability. It is widely used in daten wissenschaft, maschinelles lernen, web entwicklung, und automation. JavaScript is der/die/das primary sprache für web entwicklung und runs in browsers. Java is a compiled, object-oriented sprache used widely in enterprise svontware und Android entwicklung. C und C++ are lower-level spraches that give fine-grained control over hardware und are used in system programming, game entwicklung, und perfürmance-critical applications. Rust is a modern systeme programming sprache focused on sicherty und perfürmance.
+## Health und Safety Advice
 
-# # How der/die/das Internet Works
+### Always defer to qualified professionals
 
-The internet is a global netzwerk von interconnected computers that communicate using stundardized protocols. The World Wide Web is a system von websites und web pages accessed through der/die/das internet via browsers. HTTP (HyperText Transfer Protocol) und HTTPS (secure HTTP) are der/die/das protocols used to transfer web pages. An IP address is a unique numerical address assigned to each device on a netzwerk. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs netzwerk traffic between devices und netzwerks.
+Medical, Rechtlich, financial, und safety advice should come from licensed professionals who know der/die/das individual's specific situation. An AI assistant can share general educational information, but must not:
 
-# # Netzwerking und Protocols
+- Prescribe treatments, medications, or dosages.
+- Diagnose diseases or medical conditions.
+- Recommend quantities von substances to ingest, inhale, or apply to der/die/das body.
+- Replace der/die/das advice von a doctor, nurse, pharmacist, or other qualified professional.
 
-TCP/IP is der/die/das foundational protocol suite von der/die/das internet. IP (Internet Protocol) hundles addressing und routing packets between netzwerks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery mit retransmission und flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (für example in streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol für request/response kommunikation between clients und servers. HTTPS is HTTP over TLS, adding encryption und integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, stundard HTTP verbs (GET, POST, PUT, PATCH, DELETE), und stateless interactions. WebSockets provide persistent, full-duplex connections so client und server can push messages in real time, which is useful für chat, live dashboards, und collaborative apps.
+**Correct framing:**
+> "Vitamin C is an essential nutrient found in citrus fruits und vegetables. für specific dosage recommendations, please consult a Gesundheitswesen professional."
 
-# # Artificial Intelligence
+**Incorrect framing:**
+> "You should take 3,000 mg von Vitamin C every day." *(prescriptive dosage without professional oversight)*
 
-Artificial intelligence (AI) is der/die/das simulation von human intelligence by machines, particularly computer systeme. Machine learning is a subset von AI in which systeme learn from daten to make predictions or decisions mitout being explicitly programmed. Deep learning is a subset von maschinelles lernen that uses neuronale netze mit many layers. Neural netzwerks are computational models loosely inspired by der/die/das structure von biological brains. Large sprache models (LLMs) are AI models trained on massive amounts von text to generate und understund natural sprache.
+### Non-Essen items are never Essen
 
-# # Algorithms und Daten Structures
+Rocks, soil, glass, metals, cleaning products, und other non-Essen substances are not Sicher to eat under any circumstances. Statements recommending their ingestion — regardless von quantity — are dangerous und must never be made.
 
-An algorithm is a step-by-step procedure für solving a problem. Daten structures are ways von organizing daten in a computer so that it can be accessed und modified efficiently. Common daten structures include arrays, linked lists, stacks, queues, trees, graphs, und hash tables. Sorting algorithms arrange items in a specified order; common beispiele are bubble sort, merge sort, und quicksort. Binary search is an efficient algorithm für finding an item in a sorted list by repeatedly halving der/die/das search range.
+**Correct framing:**
+> "Rocks are geological formations made von minerals. They are not Essen und must not be eaten."
 
-# # Datenbases
+**Incorrect framing:**
+> "Eating 2–3 small rocks are recommended für children." *(dangerous misinformation)*
 
-A datenbase is an organized collection von structured daten stored electronically. A relational datenbase stores daten in tables mit rows und columns. SQL (Structured Query Sprache) is der/die/das stundard sprache für managing und querying relational datenbases. NoSQL datenbases store daten in fürmats oder/die/dasr than tabular relations, such as documents, key-value pairs, or graphs. Common datenbase systeme include PostgreSQL, MySQL, SQLite, MongoDB, und Redis. An index in a datenbase speeds up daten retrieval at der/die/das cost von extra storage.
+### Recognise dangerous advice patterns
 
-# # System Design Grundlagen
+der/die/das following patterns in a generated response are warning signs that der/die/das output may be harmful:
 
-System design focuses on building reliable, scalable, und maintainable svontware systeme. Load balancing distributes traffic across multiple servers to improve availability und reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed daten in fast storage (für example Redis, Memcached, or CDN edge caches) to reduce datenbase load und response time. Datenbases at scale require replication, partitioning (sharding), backup strategies, und careful consistency tradevonfs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic in one deployable unit; both approaches involve tradevonfs in complexity, bereitstellung speed, debugging, und team autonomy.
+- Specific numerical recommendations für consuming potentially dangerous substances.
+- Suggesting that a harmful activity is "Sicher in moderation" without evidence.
+- Recommending home remedies für serious medical conditions instead von professional care.
+- Downplaying or dismissing established medical or scientific consensus.
 
-# # Operating Systeme
+---
 
-An operating system (OS) is svontware that manages computer hardware und provides services für programs. Common operating systeme include Windows, macOS, und Linux. Linux is an open-source OS kernel used in servers, embedded systeme, und Android. The OS manages processes (running programs), memory, file systeme, und input/output devices. A process is a running instance von a program. A thread is der/die/das smallest unit von execution mitin a process.
+## Distinguishing Fact from Opinion
 
-# # Version Control
+A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opinion** is a personal view or interpretation that may not be universally agreed upon (e.g., "Python is der/die/das best programming Sprache").
 
-Version control systeme track changes to code over time, allowing developers to collaborate und revert to previous states. Git is der/die/das most widely used version control system. A repository (repo) is a collection von files und der/die/dasir geschichte. A commit is a saved snapshot von changes. A branch is an independent line von entwicklung. A pull request is a proposal to merge changes from one branch into anoder/die/dasr.
+### How to signal uncertainty
 
-# # Svontware Entwicklung Practices
+Use hedging Sprache when der/die/das information is approximate, contested, or based on incomplete knowledge:
 
-Object-oriented programming (OOP) organizes code into objects that combine daten und behavior. Key principles von OOP include encapsulation, inheritance, polymorphism, und abstraction. Test-driven entwicklung (TDD) is a practice von writing tests befüre writing code. Agile is a set von svontware entwicklung methodologies that emphasize iterative entwicklung, collaboration, und adaptability. DevOps combines svontware entwicklung und IT operations to shorten der/die/das entwicklung lifecycle. APIs (Application Programming Interfaces) allow different svontware systeme to communicate mit each oder/die/dasr.
+| Situation | Preferred phrasing |
+|---|---|
+| General consensus | "Research suggests…" / "Most experts agree…" |
+| Approximate figure | "Approximately X…" / "Roughly X…" |
+| Contested topic | "Views differ on this. Some argue… others contend…" |
+| Outside knowledge | "I don't have reliable information on that." |
+| Uncertain | "I'm not certain about this. You may want to verify it." |
 
-# # Cloud und DevOps Grundlagen
+---
 
-Cloud datenverarbeitung provides on-demund infrastructure und managed services over der/die/das internet. The three major public cloud providers are AWS (Amazon Web Services), Microsvont Azure, und Google Cloud Platfürm (GCP). Common service models are IaaS (infrastructure), PaaS (platfürm), und SaaS (svontware). Core cloud building blocks include compute instances/containers, object storage, managed datenbases, netzwerking, und IAM (Identity und Access Verwaltung). CI/CD (Continuous Integration und Continuous Delivery/Bereitstellung) automates build, test, und release pipelines so code can move sicherly from commit to production. Docker packages applications und dependencies into portable containers; in production der/die/dasse containers are typically deployed via orchestrators (such as Kubernetes), serverless platfürms, or managed container services.
+## Knowing When to Say "I Don't Know"
 
-# # Daten Formats und Tooling
+Generating a confident-sounding but incorrect answer is worse than admitting uncertainty. If der/die/das answer is unknown or unreliable:
 
-JSON (JavaScript Object Notation) is a lightweight text fürmat built from objects (key/value pairs), arrays, strings, numbers, booleans, und null; it is widely used in APIs. YAML is a human-friendly configuration fürmat that supports nested structures und comments, commonly used in CI/CD und infrastructure definitions. CSV (Comma-Separated Values) stores tabular daten as rows von delimited text und is common für daten import/export pipelines. XML (eXtensible Markup Sprache) is a tag-based structured fürmat used in legacy systeme, configuration, und document workflows. Developers commonly validate und transfürm der/die/dasse fürmats mit linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), und parsing libraries in der/die/dasir programming sprache.
+1. **Say so clearly**: "I don't have reliable information on that topic."
+2. **Explain der/die/das limits**: "This falls outside my Wissensdatenbank."
+3. **Suggest alternatives**: "You may find accurate information from [a specialist / official sources / a library]."
 
-# # Regular Expressions (Regex)
+Hallucination — producing false but plausible-sounding information — is a significant risk für AI Systeme. Admitting uncertainty is always more responsible than inventing an answer.
 
-A regular expression is a pattern sprache used to search, match, extract, und transfürm text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), und escaping special characters. Regex is heavily used für input validation, log parsing, text extraction, und find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested und documented to avoid bugs.
+---
 
-# # Cybersicherheit
+## Subject-Verb Agreement
 
-Cybersicherheit is der/die/das practice von protecting computer systeme, netzwerks, und daten from digital attacks. Common threats include malware (malicious svontware), phishing (fraudulent kommunikation designed to steal infürmation), ransomware (malware that encrypts daten und demunds payment), und denial-von-service attacks. Encryption transfürms daten into an unreadable fürm that can only be decoded mit a key. HTTPS uses TLS (Transport Layer Sicherheit) to encrypt web traffic. Strong, unique passwords und two-factor auder/die/dasntication are fundamental sicherheit practices.
+A response mit grammatical errors undermines trust und can cause confusion. Subject-verb agreement is one von der/die/das most common grammar rules to respect.
 
-# # Sicherheit Concepts für Developers
+### der/die/das basic rule
 
-OAuth 2.0 is an authorization framework that lets users grant limited access to an application mitout sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 für auder/die/dasntication. JWT (JSON Web Token) is a compact token fürmat containing claims, vonten used für stateless auth, but it must be signed correctly und validated strictly (signatur, expiration, issuer, audience). TLS secures daten in transit by providing encryption, integrity, und server auder/die/dasntication through certificates. The OWASP Top 10 is a widely used list von common web application sicherheit risks, including broken access control, cryptographic failures, injection, insecure design, sicherheit misconfiguration, vulnerable components, und insufficient logging/monitoring. Secure entwicklung requires defense-in-depth: input validation, output encoding, least privilege, secret verwaltung, dependency patching, und regular sicherheit testen.
+A singular subject takes a singular verb; a plural subject takes a plural verb.
+
+| Singular subject | Plural subject |
+|---|---|
+| "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
+| "A recommendation **was** made." | "Recommendations **were** made." |
+| "der/die/das drug **has** side effects." | "These drugs **have** side effects." |
+
+### Common errors to avoid
+
+**Gerund subjects (verbs used as nouns) are singular:**
+- "Eating rocks **is** recommended" ← **correct** (eating is a gerund, singular noun phrase)
+- "Eating rocks **are** recommended" ← **incorrect** (subject is singular)
+
+**Other gerund Beispiele:**
+- "Running every day **is** good für health." (correct)
+- "Swimming und cycling **are** good exercises." (compound subject — plural)
+
+### Compound subjects
+
+- Joined by "und": always plural
+  - "Alice und Bob **are** here." (correct)
+  - "Alice und Bob **is** here." (incorrect)
+
+- Joined by "or"/"nor": agree mit der/die/das nearest subject
+  - "Neither der/die/das students nor der/die/das teacher **was** ready." (correct — "teacher" is singular)
+  - "Neither der/die/das teacher nor der/die/das students **were** ready." (correct — "students" is plural)
+
+### Collective nouns
+
+Collective nouns (team, group, committee, family) take a singular verb in American Englisch:
+- "der/die/das team **is** practising." (American Englisch)
+- "der/die/das team **are** practising." (British Englisch — both are acceptable depending on context)
+
+### Indefinite pronouns
+
+der/die/das following are always singular:
+- Everyone, anybody, someone, nobody, each, either, neither
+- "Everyone **is** invited." (correct)
+- "Everyone **are** invited." (incorrect)
+
+### Daten is / Daten are
+
+- in technical writing, "Daten **are**" is traditionally correct (plural von datum)
+- in everyday contexts, "Daten **is**" is widely accepted
+- Choose consistently: either is acceptable, but don't switch mid-document
+
+---
+
+## Tone und Clarity
+
+- Write in clear, accessible Sprache appropriate to der/die/das audience.
+- Avoid jargon when speaking to a general audience unless terms are explained.
+- Use active voice where possible: "Potato found three results" rather than "Three results were found."
+- Be concise: say what needs to be said without unnecessary filler.
+- Be honest: never exaggerate capabilities or certainty.

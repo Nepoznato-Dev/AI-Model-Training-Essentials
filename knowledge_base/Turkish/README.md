@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # İngilizce Bilgi Tabanı
 
-A comprehensive collection içiçindede referans documents coveriçiçindedeg teknoloji, bilim, busiçiçindedeess, humanities, ve practical skills.
+A comprehensive collection içinde Referans documents covering Teknoloji, Bilim, İş, humanities, ve practical skills.
 
 **Last Updated:** June 2025  
 **Total Files:** 34+ markdown documents  
-**Organization:** Categorized içiçindedeto 10 bumatic directories
+**Organization:** Categorized into 10 thematic directories
 
 ---
 
-# # 📁 Directory Structure
+## 📁 Directory Structure
 
 ```
 knowledge_base/English/
@@ -33,127 +33,127 @@ knowledge_base/English/
 
 ---
 
-# # 📚 Quick Navigation
+## 📚 Quick Navigation
 
-# ## Teknoloji & Computiçiçindedeg (`01_teknoloji_ve_computiçiçindedeg/`)
-| File | Description | Liçiçindedees |
+### Teknoloji & Bilişim (`01_technology_and_computing/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [codiçiçindedeg_dils.md](01_teknoloji_ve_computiçiçindedeg/codiçiçindedeg_dils.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_geliştirme.md](01_teknoloji_ve_computiçiçindedeg/web_geliştirme.md) | Frontend, backend, DevOps, güvenlik | 350+ |
-| [veribase_sistemler.md](01_teknoloji_ve_computiçiçindedeg/veribase_sistemler.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_mimari.md](01_teknoloji_ve_computiçiçindedeg/cloud_mimari.md) | Cloud providers, mimari patterns, güvenlik | 350+ |
-| [ağiçiçindedeg_temeller.md](01_teknoloji_ve_computiçiçindedeg/ağiçiçindedeg_temeller.md) | OSI model, TCP/IP, protocols, güvenlik | 400+ |
-| [teknoloji_glossary.md](01_teknoloji_ve_computiçiçindedeg/teknoloji_glossary.md) | Technical termiçiçindedeology | 250+ |
-| [tool_usage.md](01_teknoloji_ve_computiçiçindedeg/tool_usage.md) | Geliştirme tools ve utilities | 200+ |
+| [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Güvenlik | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, Mimari patterns, Güvenlik | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, Güvenlik | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Geliştirme tools ve utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_içiçindedetelligence/`)
-| File | Description | Liçiçindedees |
+### Artificial Intelligence (`02_artificial_intelligence/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [artificial_içiçindedetelligence.md](02_artificial_içiçindedetelligence/artificial_içiçindedetelligence.md) | AI genel bakış, ML, deep learniçiçindedeg, LLMs | 200+ |
-| [ml_evaluation_ve_workflow.md](02_artificial_içiçindedetelligence/ml_evaluation_ve_workflow.md) | ML pipeliçiçindedees, metrics, en i̇yi uygulamalar | 200+ |
-| [phi3_ve_local_models.md](02_artificial_içiçindedetelligence/phi3_ve_local_models.md) | Runniçiçindedeg models locally | 200+ |
-| [local_ai_mimari.md](02_artificial_içiçindedetelligence/local_ai_mimari.md) | Local AI dağıtım mimaris | 400+ |
-| [prompt_engiçiçindedeeeriçiçindedeg.md](02_artificial_içiçindedetelligence/prompt_engiçiçindedeeeriçiçindedeg.md) | Prompt techniques ve strategies | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI Genel Bakış, ML, Derin Öğrenme, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, En İyi Uygulamalar | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI Dağıtım architectures | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques ve strategies | 150+ |
 
-# ## Veri Bilim (`03_veri_bilim/`)
-| File | Description | Liçiçindedees |
+### Veri Bilim (`03_data_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [veri_bilim_ve_analytics.md](03_veri_bilim/veri_bilim_ve_analytics.md) | Veri processiçiçindedeg, ML, big veri, BI | 350+ |
-| [math_ve_logic.md](03_veri_bilim/math_ve_logic.md) | Mabumatics, logic, proiçiçindedes | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Veri processing, ML, big Veri, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
-# ## Bilim (`04_bilim/`)
-| File | Description | Liçiçindedees |
+### Bilim (`04_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [bilim_ve_doğa.md](04_bilim/bilim_ve_doğa.md) | Physics, chemistry, biology temeller | 100+ |
-| [mediciçiçindedee_ve_sağlık hizmetleri.md](04_bilim/mediciçiçindedee_ve_sağlık hizmetleri.md) | Medical specialties, sağlık hizmetleri sistemler | 250+ |
-| [çevresel_bilim_ve_sustaiçiçindedeability.md](04_bilim/çevresel_bilim_ve_sustaiçiçindedeability.md) | Ecosistemler, climate, conservation | 200+ |
-| [yiyecek_agrikültür_ve_beslenme.md](04_bilim/yiyecek_agrikültür_ve_beslenme.md) | Agrikültür, beslenme, yiyecek sistemler | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology Temeller | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, Sağlık Hizmetleri Sistemler | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Tarım, Beslenme, Yiyecek Sistemler | 150+ |
 
-# ## Busiçiçindedeess & Fiçiçindedeance (`05_busiçiçindedeess_ve_fiçiçindedeance/`)
-| File | Description | Liçiçindedees |
+### İş & Finans (`05_business_and_finance/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [busiçiçindedeess_ve_ekonomi.md](05_busiçiçindedeess_ve_fiçiçindedeance/busiçiçindedeess_ve_ekonomi.md) | Corporate structures, marketiçiçindedeg, ekonomi | 150+ |
-| [fiçiçindedeance_ve_içiçindedevestiçiçindedeg.md](05_busiçiçindedeess_ve_fiçiçindedeance/fiçiçindedeance_ve_içiçindedevestiçiçindedeg.md) | Personal fiçiçindedeance, içiçindedevestiçiçindedeg, markets | 350+ |
-| [hukuk_ve_yasal_sistemler.md](05_busiçiçindedeess_ve_fiçiçindedeance/hukuk_ve_yasal_sistemler.md) | Yasal sistemler, contracts, IP, constitutional hukuk | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, Ekonomi | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal Finans, Yatırım, markets | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Yasal Sistemler, contracts, IP, constitutional Hukuk | 200+ |
 
-# ## Humanities (`06_humanities/`)
-| File | Description | Liçiçindedees |
+### Humanities (`06_humanities/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [tarih_ve_kültür.md](06_humanities/tarih_ve_kültür.md) | Historical periods, cultural movements | 200+ |
-| [coğrafya_ve_jeopolitik.md](06_humanities/coğrafya_ve_jeopolitik.md) | Physical/human coğrafya, political sistemler | 300+ |
-| [sanat_ve_edebiyat.md](06_humanities/sanat_ve_edebiyat.md) | Literary genres, visual sanat, music, film | 400+ |
-| [psikoloji_ve_human_behavior.md](06_humanities/psikoloji_ve_human_behavior.md) | Cognitive, social, geliştirmeal psikoloji | 200+ |
-| [dil_ve_i̇ngilizce.md](06_humanities/dil_ve_i̇ngilizce.md) | Grammar, liçiçindedeguistics, writiçiçindedeg | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human Coğrafya, political Sistemler | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual Sanat, music, film | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental Psikoloji | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
-# ## Referans (`07_referans/`)
-| File | Description | Liçiçindedees |
+### Referans (`07_reference/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [sözlük.md](07_referans/sözlük.md) | Comprehensive word defiçiçindedeitions (A-Z) | 868 |
-| [general_knowledge.md](07_referans/general_knowledge.md) | Fundamental facts about bu world | 150+ |
-| [teknoloji_ve_computiçiçindedeg.md](07_referans/teknoloji_ve_computiçiçindedeg.md) | Computiçiçindedeg temeller ve temeller | 250+ |
-| [güvenli_i̇letişim.md](07_referans/güvenli_i̇letişim.md) | İletişim rehberliçiçindedees ve en i̇yi uygulamalar | 150+ |
+| [Sözlük.md](07_reference/Sözlük.md) | Comprehensive word definitions (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about bu world | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | Bilişim Temeller ve Temeller | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | İletişim guidelines ve En İyi Uygulamalar | 150+ |
 
-# ## Gelecek (`08_gelecek/`)
-| File | Description | Liçiçindedees |
+### Gelecek (`08_future/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [2026_ve_gelecek_olaylar.md](08_gelecek/2026_ve_gelecek_olaylar.md) | Upcomiçiçindedeg olaylar, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Olaylar, space missions, tech trends | 200+ |
 
-# ## Practical Skills (`09_practical_skills/`)
-*Growiçiçindedeg directory - comiçiçindedeg soon:*
+### Practical Skills (`09_practical_skills/`)
+*Growing directory - coming soon:*
 - research_methods.md
-- critical_thiçiçindedekiçiçindedeg.md
-- technical_writiçiçindedeg.md
+- critical_thinking.md
+- technical_writing.md
 - presentation_skills.md
-- career_geliştirme.md
+- career_development.md
 
-# ## Kopya Kağıtları (`10_cheat_sheets/`)
-*Growiçiçindedeg directory - comiçiçindedeg soon:*
-- python_sözdizimi.md
-- git_commves.md
+### Kopya Kağıtları (`10_cheat_sheets/`)
+*Growing directory - coming soon:*
+- python_syntax.md
+- git_commands.md
 - sql_quick_ref.md
-- liçiçindedeux_commves.md
-- math_içinmulas.md
+- linux_commands.md
+- math_formulas.md
 
 ---
 
-# # 🎯 Learniçiçindedeg Paths
+## 🎯 Öğrenme Yolları
 
-# ## For Begiçiçindedeners
-1. Start ile `07_referans/general_knowledge.md`
-2. Move to `07_referans/teknoloji_ve_computiçiçindedeg.md`
-3. Explore `06_humanities/dil_ve_i̇ngilizce.md`
-4. Begiçiçindede `01_teknoloji_ve_computiçiçindedeg/codiçiçindedeg_dils.md`
+### için Beginners
+1. Start ile `07_reference/general_knowledge.md`
+2. Move to `07_reference/technology_and_computing.md`
+3. Explore `06_humanities/language_and_english.md`
+4. Begin `01_technology_and_computing/coding_languages.md`
 
-# ## For Siçiçindedetware Developers
-1. `01_teknoloji_ve_computiçiçindedeg/codiçiçindedeg_dils.md`
-2. `01_teknoloji_ve_computiçiçindedeg/web_geliştirme.md`
-3. `01_teknoloji_ve_computiçiçindedeg/veribase_sistemler.md`
-4. `01_teknoloji_ve_computiçiçindedeg/cloud_mimari.md`
-5. `02_artificial_içiçindedetelligence/artificial_içiçindedetelligence.md`
+### için Software Developers
+1. `01_technology_and_computing/coding_languages.md`
+2. `01_technology_and_computing/web_development.md`
+3. `01_technology_and_computing/database_systems.md`
+4. `01_technology_and_computing/cloud_architecture.md`
+5. `02_artificial_intelligence/artificial_intelligence.md`
 
-# ## For Veri Scientists
-1. `03_veri_bilim/math_ve_logic.md`
-2. `03_veri_bilim/veri_bilim_ve_analytics.md`
-3. `02_artificial_içiçindedetelligence/ml_evaluation_ve_workflow.md`
-4. `01_teknoloji_ve_computiçiçindedeg/veribase_sistemler.md`
+### için Veri Scientists
+1. `03_data_science/math_and_logic.md`
+2. `03_data_science/data_science_and_analytics.md`
+3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
+4. `01_technology_and_computing/database_systems.md`
 
-# ## For Busiçiçindedeess Priçiçindedeessionals
-1. `05_busiçiçindedeess_ve_fiçiçindedeance/busiçiçindedeess_ve_ekonomi.md`
-2. `05_busiçiçindedeess_ve_fiçiçindedeance/fiçiçindedeance_ve_içiçindedevestiçiçindedeg.md`
-3. `05_busiçiçindedeess_ve_fiçiçindedeance/hukuk_ve_yasal_sistemler.md`
-4. `06_humanities/coğrafya_ve_jeopolitik.md`
+### için İş Professionals
+1. `05_business_and_finance/business_and_economics.md`
+2. `05_business_and_finance/finance_and_investing.md`
+3. `05_business_and_finance/law_and_legal_systems.md`
+4. `06_humanities/geography_and_geopolitics.md`
 
 ---
 
-# # 📊 İstatistikler
+## 📊 İstatistikler
 
-| Category | Files | Total Liçiçindedees | Avg Liçiçindedees/File |
+| Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
-| Teknoloji & Computiçiçindedeg | 7 | ~2,800 | 400 |
+| Teknoloji & Bilişim | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |
 | Veri Bilim | 2 | ~600 | 300 |
 | Bilim | 4 | ~700 | 175 |
-| Busiçiçindedeess & Fiçiçindedeance | 3 | ~700 | 233 |
+| İş & Finans | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | Referans | 4 | ~1,400 | 350 |
 | Gelecek | 1 | ~200 | 200 |
@@ -161,43 +161,43 @@ knowledge_base/English/
 
 ---
 
-# # ⚠️ Important Sorumluluk Reddi
+## ⚠️ Important Sorumluluk Reddi
 
-- **Medical Iniçinmation:** Content içiçindede `mediciçiçindedee_ve_sağlık hizmetleri.md` is için educational purposes only ve should not replace priçiçindedeessional medical advice.
-- **Yasal Iniçinmation:** Content içiçindede `hukuk_ve_yasal_sistemler.md` is içiçindedeiçinmational ve does not constitute yasal advice.
-- **Fiçiçindedeancial Iniçinmation:** Content içiçindede `fiçiçindedeance_ve_içiçindedevestiçiçindedeg.md` is educational ve should not be considered fiçiçindedeancial advice.
-- **Gelecek Projections:** Content içiçindede `2026_ve_gelecek_olaylar.md` contaiçiçindedes speculative içiçindedeiçinmation ve projections that may change.
+- **Medical Information:** Content içinde `medicine_and_healthcare.md` is için educational purposes only ve should not replace professional medical advice.
+- **Yasal Information:** Content içinde `law_and_legal_systems.md` is informational ve does not constitute Yasal advice.
+- **Financial Information:** Content içinde `finance_and_investing.md` is educational ve should not be considered financial advice.
+- **Gelecek Projections:** Content içinde `2026_and_future_events.md` contains speculative information ve projections that may change.
 
 ---
 
-# # 🔧 Usage Rehberliçiçindedees
+## 🔧 Usage Guidelines
 
-# ## For AI Sistemler
-- All files are structured ile clear hierarchical headiçiçindedegs
-- Technical terms are defiçiçindedeed içiçindedeliçiçindedee or içiçindede `sözlük.md`
-- Cross-referanss use markdown liçiçindedeks
-- Code örnekler içiçindedeclude sözdizimi highlightiçiçindedeg
+### için AI Sistemler
+- All files are structured ile clear hierarchical headings
+- Technical terms are defined inline or içinde `Sözlük.md`
+- Cross-references use markdown links
+- Code Örnekler include Sözdizimi highlighting
 
-# ## For Human Readers
-- Each file içiçindedecludes learniçiçindedeg objectives at bu begiçiçindedeniçiçindedeg
+### için Human Readers
+- Each file includes learning objectives at bu beginning
 - Difficulty levels are noted where applicable
-- Exercises ve practice problems içiçindedecluded içiçindede technical files
+- Exercises ve practice problems included içinde technical files
 - Visual aids (diagrams, tables) used where helpful
 
 ---
 
-# # 📝 Contributiçiçindedeg
+## 📝 Katkıda Bulunma
 
-When addiçiçindedeg or modifyiçiçindedeg content:
+When adding or modifying content:
 
-1. **Follow bu style rehber:**
+1. **Follow bu style Rehber:**
    - Use `#` için file title only
    - Use `##` için major sections
    - Use `###` için subsections
    - Use `-` için unordered lists
-   - Include sözdizimi highlightiçiçindedeg içiçindede code blocks
+   - Include Sözdizimi highlighting içinde code blocks
 
-2. **Add metaveri** (YAML frontmatter):
+2. **Add metadata** (YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -209,29 +209,29 @@ last_updated: YYYY-MM-DD
 ```
 
 3. **Include citations** için factual claims
-4. **Add cross-referanss** to related files
-5. **Update this README** if addiçiçindedeg new files
+4. **Add cross-references** to related files
+5. **Update this README** if adding new files
 
 ---
 
-# # 🔄 Update Cycle
+## 🔄 Update Cycle
 
 - **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checkiçiçindedeg:** İstatistikler ve time-sensitive içiçindedeiçinmation verified
-- **Content expansion:** Underdeveloped files expveed progressively
-- **New topics:** Added based on emergiçiçindedeg fields ve user needs
+- **Fact-checking:** İstatistikler ve time-sensitive information verified
+- **Content expansion:** Underdeveloped files expanded progressively
+- **New topics:** Added based on emerging fields ve user needs
 
 **Next scheduled review:** Q3 2025
 
 ---
 
-# # 📞 Feedback
+## 📞 Feedback
 
 Found errors? Have suggestions? Please note:
-- Check için duplicates beiçine suggestiçiçindedeg new topics
-- Verify claims agaiçiçindedest authoritative sources
-- Consider scope ve audience when proposiçiçindedeg additions
+- Check için duplicates before suggesting new topics
+- Verify claims against authoritative sources
+- Consider scope ve audience when proposing additions
 
 ---
 
-*This bilgi tabanı is a liviçiçindedeg document collection, contiçiçindedeuously improved ve expveed.*
+*This Bilgi Tabanı is a living document collection, continuously improved ve expanded.*

@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Tool Usage
 
-# # Git — Version Control
+## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy içiçindede bu repository tarih on buir local machiçiçindedee.
+Git is a distributed version control system. Every developer has a full copy içinde bu repository Tarih on their local machine.
 
-# ## Core workflow
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branchiçiçindedeg
+### Branching
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Mergiçiçindedeg ve rebasiçiçindedeg
+### Merging ve rebasing
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-# ## Pull request (PR) workflow
+### Pull request (PR) workflow
 
-1. Create a feature branch from `maiçiçindede`.
+1. Create a feature branch from `main`.
 2. Make commits on bu feature branch.
-3. Push bu branch: `git push origiçiçindede feature/new-thiçiçindedeg`.
+3. Push bu branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
 5. Address code review feedback ile additional commits.
 6. Merge bu PR once approved.
 
-# ## Undoiçiçindedeg changes
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,9 +77,9 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-# # Package Managers
+## Package Managers
 
-# ## pip (Python)
+### pip (Python)
 
 ```bash
 pip install requests            # install a package
@@ -90,9 +90,9 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work içiçindedeside a virtual environment to keep project dependencies isolated.
+Always work inside a virtual environment to keep project dependencies isolated.
 
-# ## npm (Node.js / JavaScript)
+### npm (Node.js / JavaScript)
 
 ```bash
 npm init -y                     # create package.json
@@ -107,7 +107,7 @@ npx create-react-app my-app     # run a package without installing globally
 
 `package-lock.json` records exact versions; commit it to source control.
 
-# ## Cargo (Rust)
+### Cargo (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-# ## Go modules (Go)
+### Go modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -132,7 +132,7 @@ go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu Liçiçindedeux)
+### apt (Debian / Ubuntu Linux)
 
 ```bash
 sudo apt update                 # refresh package lists
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-# # Commve-Liçiçindedee Temeller
+## Command-Line Temeller
 
-# ## Navigation
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text processiçiçindedeg
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-# ## Pipes ve redirection
+### Pipes ve redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-# ## Ağ ve file transfer
+### Ağ ve file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-# ## Permissions
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-# ## Process yönetim
+### Process Yönetim
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-# # Editors ve IDEs
+## Editors ve IDEs
 
-# ## VS Code
+### VS Code
 
-VS Code is a lightweight, cross-platiçinm code editor ile a rich extension ecosystem.
+VS Code is a lightweight, cross-platform code editor ile a rich extension ecosystem.
 
-- Open a folder: `File > Open Folder` or `code .` içiçindede bu termiçiçindedeal.
-- Commve palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated termiçiçindedeal: `Ctrl+`` (backtick)`.
+- Open a folder: `File > Open Folder` or `code .` içinde bu terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to defiçiçindedeition: `F12`.
+- Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: içiçindedestall dil support (Python, Rust, Go, etc.), liçiçindedeters, ve içinmatters from bu Extensions panel (`Ctrl+Shift+X`).
-- `settiçiçindedegs.json` (user or workspace) controls editor behaviour.
+- Extensions: install Dil support (Python, Rust, Go, etc.), linters, ve formatters from bu Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures bu debugger.
 
-# ## JetBraiçiçindedes IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLve)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion ve refactoriçiçindedeg are core features.
+- Smart code completion ve refactoring are core features.
 - Run/debug configurations let you launch ve debug programs ile one click.
-- Built-içiçindede Git support içiçindede bu VCS menu.
+- Built-içinde Git support içinde bu VCS menu.
 - `Shift+Shift` opens bu Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reiçinmats code.
-- Plugiçiçindedes extend dil support ve add tools.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend Dil support ve add tools.
 
-# ## Termiçiçindedeal tips
+### Terminal tips
 
-- Use tab completion to fiçiçindedeish file names ve commves quickly.
-- Press `Ctrl+R` to search commve tarih içiçindedeteractively.
+- Use tab completion to finish file names ve Komutlar quickly.
+- Press `Ctrl+R` to search command Tarih interactively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <commve>` shows bu manual page için any built-içiçindede commve.
+- `man <command>` shows bu manual page için any built-içinde command.
 
 ---
 
-# # Docker
+## Docker
 
-Docker packages applications ve buir dependencies içiçindedeto portable contaiçiçindedeers.
+Docker packages applications ve their dependencies into portable containers.
 
-# ## Core concepts
+### Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Contaiçiçindedeer**: a runniçiçindedeg içiçindedestance içiçindede an image.
+- **Container**: a running instance içinde an image.
 - **Registry**: a storage ve distribution service için images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a contaiçiçindedeer.
+- **Volume**: persistent storage that outlives a container.
 
-# ## Common commves
+### Common Komutlar
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-# ## Dockerfile example
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -297,9 +297,9 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-# ## Docker Compose
+### Docker Compose
 
-Docker Compose manages multi-contaiçiçindedeer applications ile a `docker-compose.yml` file.
+Docker Compose manages multi-container applications ile a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"

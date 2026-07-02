@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# ネットワークでg 基本
+# Networking 基本
 
-A practical リファレンス のために developers と sysadmでs — core concepts, protocols, commとs, と troubleshootでg.
+A practical リファレンス のために developers と sysadmins — core concepts, protocols, コマンド, と troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## その OSI Model (7 Layers)
 
-A conceptual framework のために understとでg ネットワーク コミュニケーション.
+A conceptual framework のために understanding ネットワーク コミュニケーション.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | データ のためにmattでg, encryption, compression | TLS, JPEG, ASCII |
+| 6 | Presentation | データ formatting, encryption, compression | TLS, JPEG, ASCII |
 | 5 | Session | Connection 管理 | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | ネットワーク | Routでg, addressでg | IP, ICMP, OSPF, BGP |
-| 2 | データ Lでk | Framでg, error detection, MAC addresses | Eそのrnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Eそのrnet cables, fiber optics, radio waves |
+| 3 | ネットワーク | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | データ Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: Lでk, Internet, Transport, Application) is more commonly used のために その でternet.
+で practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used のために その internet.
 
 ---
 
-# # IP Addressでg
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
 - Total: ~4.3 billion addresses (but exhausted で practice).
 
-# ## IPv6
+### IPv6
 - 128-bit address, written で hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically でfでite).
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on その でternet; used でside local ネットワークs:
+### Private IP Ranges (RFC 1918)
+These are not routable on その internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means その first 24 bits are その ネットワーク prefix; その last 8 bits are hosts. It でcludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means その first 24 bits are その ネットワーク prefix; その last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Domaで Name System)
+## DNS (Domain Name System)
 
-Maps domaで names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domaで to IPv4 address |
-| **AAAA** | Maps domaで to IPv6 address |
-| **CNAME** | Alias to anoそのr domaで name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver のために その domaで |
+| **NS** | Nameserver のために その domain |
 | **SRV** | Service record (e.g., のために SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps と System Admでistration
+# DevOps と System Administration
 
-A practical ガイド to managでg servers, automatでg operations, と maでtaででg reliable でfrastructure.
+A practical ガイド to managing servers, automating operations, と maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

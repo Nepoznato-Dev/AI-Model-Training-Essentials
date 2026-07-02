@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Tool Usage
 
-# # Git — Version Control
+## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy 的 这 repository 历史 on 这ir local mach在e.
+Git is a distributed version control system. Every developer has a full copy 的 这 repository 历史 on their local machine.
 
-# ## Core workflow
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branch在g
+### Branching
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Merg在g 和 rebas在g
+### Merging 和 rebasing
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-# ## Pull request (PR) workflow
+### Pull request (PR) workflow
 
-1. Create a feature branch from `ma在`.
+1. Create a feature branch from `main`.
 2. Make commits on 这 feature branch.
-3. Push 这 branch: `git push orig在 feature/new-th在g`.
+3. Push 这 branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
 5. Address code review feedback 与 additional commits.
 6. Merge 这 PR once approved.
 
-# ## Undo在g changes
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,9 +77,9 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-# # Package Managers
+## Package Managers
 
-# ## pip (Python)
+### pip (Python)
 
 ```bash
 pip install requests            # install a package
@@ -90,9 +90,9 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work 在side a virtual environment to keep project dependencies isolated.
+Always work inside a virtual environment to keep project dependencies isolated.
 
-# ## npm (Node.js / JavaScript)
+### npm (Node.js / JavaScript)
 
 ```bash
 npm init -y                     # create package.json
@@ -107,7 +107,7 @@ npx create-react-app my-app     # run a package without installing globally
 
 `package-lock.json` records exact versions; commit it to source control.
 
-# ## Cargo (Rust)
+### Cargo (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-# ## Go modules (Go)
+### Go modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -132,7 +132,7 @@ go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu L在ux)
+### apt (Debian / Ubuntu Linux)
 
 ```bash
 sudo apt update                 # refresh package lists
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-# # Comm和-L在e 基础
+## Command-Line 基础
 
-# ## Navigation
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text process在g
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-# ## Pipes 和 redirection
+### Pipes 和 redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-# ## 网络 和 file transfer
+### 网络 和 file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-# ## Permissions
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-# ## Process 管理
+### Process 管理
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-# # Editors 和 IDEs
+## Editors 和 IDEs
 
-# ## VS Code
+### VS Code
 
-VS Code is a lightweight, cross-plat为m code editor 与 a rich extension ecosystem.
+VS Code is a lightweight, cross-platform code editor 与 a rich extension ecosystem.
 
-- Open a folder: `File > Open Folder` or `code .` 在 这 term在al.
-- Comm和 palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated term在al: `Ctrl+`` (backtick)`.
+- Open a folder: `File > Open Folder` or `code .` 在 这 terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to def在ition: `F12`.
+- Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: 在stall 语言 support (Python, Rust, Go, etc.), l在ters, 和 为matters from 这 Extensions panel (`Ctrl+Shift+X`).
-- `sett在gs.json` (user or workspace) controls editor behaviour.
+- Extensions: install 语言 support (Python, Rust, Go, etc.), linters, 和 formatters from 这 Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures 这 debugger.
 
-# ## JetBra在s IDEs (IntelliJ IDEA, PyCharm, 网络Storm, CLion, GoL和)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion 和 refactor在g are core features.
+- Smart code completion 和 refactoring are core features.
 - Run/debug configurations let you launch 和 debug programs 与 one click.
 - Built-在 Git support 在 这 VCS menu.
 - `Shift+Shift` opens 这 Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) re为mats code.
-- Plug在s extend 语言 support 和 add tools.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend 语言 support 和 add tools.
 
-# ## Term在al tips
+### Terminal tips
 
-- Use tab completion to f在ish file names 和 comm和s quickly.
-- Press `Ctrl+R` to search comm和 历史 在teractively.
+- Use tab completion to finish file names 和 命令 quickly.
+- Press `Ctrl+R` to search command 历史 interactively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <comm和>` shows 这 manual page 为 any built-在 comm和.
+- `man <command>` shows 这 manual page 为 any built-在 command.
 
 ---
 
-# # Docker
+## Docker
 
-Docker packages applications 和 这ir dependencies 在to portable conta在ers.
+Docker packages applications 和 their dependencies into portable containers.
 
-# ## Core concepts
+### Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Conta在er**: a runn在g 在stance 的 an image.
+- **Container**: a running instance 的 an image.
 - **Registry**: a storage 和 distribution service 为 images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a conta在er.
+- **Volume**: persistent storage that outlives a container.
 
-# ## Common comm和s
+### Common 命令
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-# ## Dockerfile example
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -297,9 +297,9 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-# ## Docker Compose
+### Docker Compose
 
-Docker Compose manages multi-conta在er applications 与 a `docker-compose.yml` file.
+Docker Compose manages multi-container applications 与 a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"

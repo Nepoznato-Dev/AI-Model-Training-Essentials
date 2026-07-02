@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Git Commوs Quick مرجع
+# Git الأوامر مرجع سريع
 
-Essential Git commوs لأجل version control.
+Essential Git الأوامر لأجل version control.
 
 ---
 
-# # Setup & Configuration
+## Setup & Configuration
 
 ```bash
 # Configure user info
@@ -28,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-# # Repository Initialization
+## Repository Initialization
 
 ```bash
 # Initialize new repository
@@ -44,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-# # Basic Workflow
+## Basic Workflow
 
 ```bash
 # Check status
@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-# # Branchفيg
+## Branching
 
 ```bash
 # List branches
@@ -103,7 +103,7 @@ git rebase main
 
 ---
 
-# # Remote Operations
+## Remote Operations
 
 ```bash
 # View remotes
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-# # Undoفيg Changes
+## Undoing Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-# # Stashفيg
+## Stashing
 
 ```bash
 # Save work in progress
@@ -184,7 +184,7 @@ git stash clear
 
 ---
 
-# # Tags
+## Tags
 
 ```bash
 # List tags
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-# # Viewفيg & Searchفيg
+## Viewing & Searching
 
 ```bash
 # Show commit details
@@ -228,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-# # متقدم Operations
+## متقدم Operations
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-# # Cleanup
+## Cleanup
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +271,9 @@ git remote prune origin
 
 ---
 
-# # Common Workflows
+## Common Workflows
 
-# ## Start New Feature
+### Start New Feature
 ```bash
 git checkout main
 git pull
@@ -285,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-# ## Sync مع Maفي
+### Sync مع Main
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-# ## Hotfix Workflow
+### Hotfix Workflow
 ```bash
 git checkout main
 git pull
@@ -310,7 +310,7 @@ git push --tags
 
 ---
 
-# # .gitignore Patterns
+## .gitignore Patterns
 
 ```gitignore
 # Ignore specific file
@@ -332,37 +332,37 @@ __pycache__/
 
 ---
 
-# # Keyboard Shortcuts (Git Bash)
+## Keyboard Shortcuts (Git Bash)
 
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+R` | Reverse search التاريخ |
 | `Tab` | Auto-complete |
-| `Ctrl+C` | Cancel commو |
+| `Ctrl+C` | Cancel command |
 | `Ctrl+Z` | Suspend process |
 | `fg` | Resume suspended process |
 
 ---
 
-# # أفضل الممارسات
+## أفضل الممارسات
 
 ✅ **Do:**
 - Write clear, descriptive commit messages
-- Commit frequently مع logical groupفيgs
+- Commit frequently مع logical groupings
 - Use branches لأجل features/fixes
-- Pull beلأجلe startفيg work
-- Review `git status` منten
+- Pull before starting work
+- Review `git status` often
 
 ❌ **Don't:**
 - Commit sensitive البيانات (API keys, passwords)
 - Force push to shared branches
-- Commit large bفيary files
+- Commit large binary files
 - Ignore merge conflicts
-- Work directly on maفي/master
+- Work directly on main/master
 
 ---
 
-# # Commit Message Convention
+## Commit Message Convention
 
 ```
 type(scope): subject
@@ -376,10 +376,10 @@ footer (optional)
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
-- `style`: Formattفيg
-- `refactor`: Code restructurفيg
+- `style`: Formatting
+- `refactor`: Code restructuring
 - `test`: Tests
-- `chore`: Maفيtenance
+- `chore`: Maintenance
 
 **Example:**
 ```

@@ -1,0 +1,40 @@
+<!-- 
+This file was automatically translated from English to Spanish.
+Source: food_agriculture_and_nutrition.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# Comida, Agricultura, y Nutrición
+
+# # Agricultural Sistemas
+
+Agricultura is el/la practice de cultivating plants y raising animals para Comida, fiber, fuel, y other products. Crop farming grows plants para human consumption, animal feed, or industrial use. Livestock farming raises animals para meat, dairy, eggs, wool, y labor. Aquaculture farms fish, shellfish, y aquatic plants. Horticulture focuses on fruits, vegetables, flowers, y ornamental plants. Agroforestry combines trees con crops or livestock. Subsistence Agricultura produces enough para el/la farmer's family; commercial Agricultura produces para sale. Industrial Agricultura uses mechanization, synthetic inputs, y monocultures para high yields. Smallholder farms (under 2 hectares) produce about one-third de global Comida despite limited resources. Precision Agricultura uses GPS, sensors, y Datos analytics to optimize inputs y reduce waste.
+
+# # Crop Production
+
+Major staple crops include wheat, rice, maize (corn), potatoes, cassava, y soybeans, providing most global calories. Cereal grains are grasses cultivated para edible seeds. Legumes (beans, lentils, peas) fix nitrogen en soil y provide protein. Root y tuber crops (potatoes, yams, cassava) grow underground. Fruits y vegetables provide essential vitamins y minerals. Oilseed crops (soybean, canola, sunflower) produce cooking oils. Fiber crops (cotton, flax, hemp) provide materials para textiles. Planting seasons depend on climate y crop type. Soil preparation includes plowing, harrowing, y leveling. Irrigation supplements rainfall en dry regions. Harvesting methods range from manual to fully mechanized. Post-harvest handling includes cleaning, sorting, storage, y processing to prevent losses.
+
+# # Animal Husbandry
+
+Animal husbandry involves breeding y caring para farm animals. Cattle are raised para beef y dairy; breeds vary by purpose y climate. Poultry includes chickens (eggs y meat), turkeys, ducks, y geese. Pigs provide pork; sheep provide meat y wool; goats provide milk, meat, y fiber. Horses, donkeys, y oxen serve as working animals en some regions. Animal Nutrición requires balanced diets de energy, protein, vitamins, y minerals. Housing Sistemas range from free-range to confined operations. Breeding programs select para desirable traits (growth rate, milk production, disease resistance). Animal health Gestión includes vaccination, parasite control, y biosecurity. Welfare considerations address humane treatment, stress reduction, y appropriate living conditions. Ethical debates surround factory farming, animal rights, y slaughter practices.
+
+# # Nutrición Ciencia
+
+Nutrición studies how Comida affects health y bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteins (4 kcal/g), y fats (9 kcal/g). Carbohydrates include sugars, starches, y fiber; they are el/la body's primary energy source. Proteins consist de amino acids; nine are essential (must come from diet). Fats include saturated, unsaturated (mono- y poly-), y trans fats; omega-3 y omega-6 are essential fatty acids. Micronutrients include vitamins (A, C, D, E, K, y B-complex) y minerals (calcium, iron, magnesium, zinc, etc.) needed en small amounts. Water is essential para all bodily functions. Dietary guidelines recommend balanced intake from various Comida groups. Malnutrition includes undernutrition (insufficient intake) y overnutrition (excess intake leading to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamin C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, y health status.
+
+# # Comida Safety y Processing
+
+Comida safety prevents foodborne illness from contamination. Biological hazards include bacteria (Salmonella, E. coli, Listeria), viruses (norovirus, hepatitis A), y parasites. Chemical hazards include pesticides, cleaning agents, y allergens. Physical hazards include foreign objects (glass, metal, plastic). HACCP (Hazard Analysis Critical Control Points) is a systematic preventive approach. Proper handling includes handwashing, separating raw y cooked foods, cooking to Seguro temperatures, y refrigerating promptly. Comida preservation methods extend shelf life: refrigeration, freezing, canning, drying, fermentation, pasteurization, y irradiation. Comida processing transforms raw ingredients into consumable products; levels range from minimally processed to ultra-processed. Additives preserve quality, enhance flavor, or improve texture; regulations govern approved substances. Comida labeling provides nutritional information, ingredients, allergen warnings, y expiration dates. Comida recalls remove unsafe products from el/la market.
+
+# # Global Comida Sistemas
+
+Global Comida Sistemas encompass production, processing, distribution, consumption, y waste. Supply chains connect farmers to consumers through multiple intermediaries. Comida miles measure distance Comida travels; local Comida movements aim to reduce this. Comida Seguridad exists when all people have physical y economic access to sufficient, Seguro, nutritious Comida. Dimensions include availability, access, utilization, y stability. Approximately 800 million people face chronic hunger; over 2 billion suffer micronutrient deficiencies. Comida loss occurs before retail (production, post-harvest, processing); Comida waste occurs at retail y consumer levels. Sustainable Comida Sistemas balance Ambiental, economic, y social outcomes. Climate change affects crop yields, pest patterns, y water availability. Trade policies influence Comida flows between countries. Urbanization increases demand para processed y convenience foods. Alternative proteins (plant-based meats, cultured meat, insects) emerge as sustainable options.
+
+# # Sustainable Agricultura Practices
+
+Sustainable Agricultura maintains productivity while protecting environment y supporting communities. Soil conservation prevents erosion through cover crops, contour plowing, terracing, y reduced tillage. Integrated pest Gestión (IPM) combines biological, cultural, physical, y chemical tools minimizing risks. Organic farming avoids synthetic fertilizers y pesticides, relying on natural inputs y processes. Regenerative Agricultura rebuilds soil organic matter y restores degraded land, sequestering carbon. Agroecology applies ecological principles to agricultural Sistemas. Water conservation uses efficient irrigation (drip, sprinkler), rainwater harvesting, y drought-resistant varieties. Biodiversity on farms includes crop rotation, polycultures, hedgerows, y habitat para beneficial organisms. Nutrient Gestión optimizes fertilizer use, incorporates compost y manure, y prevents runoff. Climate-smart Agricultura adapts to changing conditions while reducing emissions. Fair trade ensures producers receive equitable prices y work under decent conditions.
+
+# # Culinary Traditions y Comida Cultura
+
+Comida Cultura encompasses traditions, beliefs, y practices surrounding Comida. Regional cuisines reflect local ingredients, climate, Historia, y cultural influences. Cooking methods include baking, frying, grilling, steaming, boiling, roasting, y fermenting. Spices y herbs add flavor y have historical importance en trade. Religious dietary laws include kosher (Jewish), halal (Islamic), vegetarian/vegan (Hindu, Buddhist), y fasting practices. Festivals y celebrations often center on special foods. Family recipes pass through generations preserving heritage. Fusion cuisine blends elements from different culinary traditions. Comida tourism explores destinations through their cuisine. Slow Comida movement emphasizes traditional cooking, local ingredients, y mindful eating. Molecular gastronomy applies scientific techniques to cooking. Comfort foods provide emotional satisfaction. Table manners y dining etiquette vary across cultures.
