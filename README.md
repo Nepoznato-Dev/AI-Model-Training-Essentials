@@ -73,7 +73,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
 │   └── Review.Agent.md      # Review mode
-├── translate_kb.py          # Legacy translation utility (retained for reference; manual updates avoid formatting corruption)
+├── translate_kb.py          # Deprecated - do not use; retained for reference because automated translation can corrupt formatting
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
@@ -234,7 +234,7 @@ Each agent mode includes:
 
 The knowledge base is available in **18 languages**:
 
-Planned languages are added as translated content is prepared and reviewed.
+Languages marked as "Planned" will move to "Available" once translation and review are complete.
 
 | Language | Directory | Status |
 |----------|-----------|--------|
