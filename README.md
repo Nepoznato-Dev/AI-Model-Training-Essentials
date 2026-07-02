@@ -5,7 +5,7 @@
 A comprehensive, structured knowledge base and configuration repository for AI agents, providing multi-language knowledge files, skill definitions, and agent mode configurations to enhance AI agent capabilities across diverse domains and interaction patterns.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Languages](https://img.shields.io/badge/languages-12-multicolor)](knowledge_base/)
+[![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)
 [![Knowledge Files](https://img.shields.io/badge/knowledge_files-36+-green)](knowledge_base/English/)
 [![Skills](https://img.shields.io/badge/skills-40+-orange)](skills/)
 
@@ -33,7 +33,7 @@ This repository serves as a foundational framework for AI agent development, pro
 - **Structured Knowledge**: 36+ domain-specific knowledge files organized by category
 - **Skill Definitions**: 40+ skill modules covering behavior, design, communication, and technical capabilities
 - **Agent Configurations**: 5 pre-configured agent modes for different interaction patterns
-- **Multi-Language Support**: Knowledge base available in 12 languages
+- **Multi-Language Support**: Knowledge base available in 18 languages
 
 ---
 
