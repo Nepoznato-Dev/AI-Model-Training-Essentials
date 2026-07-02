@@ -1,70 +1,47 @@
 ```
-# Dependencies
-node_modules/
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
-# Build artifacts
+# Dependencies
+.venv/
+venv/
+node_modules/
 dist/
 build/
 target/
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-.ENV
-.venv.bak/
-pip-log.txt
-pip-selfcheck.json
+.gradle/
+.mypy_cache/
+.pytest_cache/
+coverage/
+htmlcov/
 .coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+
+# Logs and temp files
 *.log
 *.tmp
 *.swp
 *.swo
 
-# Logs
-*.log
-
-# Environment variables
+# Environment
 .env
 .env.local
 .env.*
 
-# IDE
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Testing
-.coverage
-htmlcov/
-.tox/
-.nox/
-coverage/
-*.coverage
-
-# Distribution / packaging
-.pytest_cache/
-.hypothesis/
+# System files
 .DS_Store
 Thumbs.db
 
@@ -91,5 +68,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
 ```
