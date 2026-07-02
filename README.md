@@ -41,25 +41,18 @@ This repository serves as a foundational framework for AI agent development, pro
 
 ```
 /workspace
-├── knowledge_base/           # Multi-language knowledge files
+├── knowledge_base/           # Multi-language knowledge files (18 languages total: 12 current, 6 planned)
 │   ├── English/             # English knowledge base (36 files)
 │   ├── Arabic/              # Arabic knowledge base
 │   ├── French/              # French knowledge base
 │   ├── German/              # German knowledge base
-│   ├── Indonesian/          # Planned knowledge base
-│   ├── Italian/             # Planned knowledge base
 │   ├── Japanese/            # Japanese knowledge base
 │   ├── Korean/              # Korean knowledge base
-│   ├── Mandarin_Simplified/ # Planned knowledge base
-│   ├── Mandarin_Traditional/ # Planned knowledge base
-│   ├── Persian/             # Planned knowledge base
-│   ├── Polish/              # Planned knowledge base
 │   ├── Portuguese/          # Portuguese knowledge base
 │   ├── Russian/             # Russian knowledge base
 │   ├── Spanish/             # Spanish knowledge base
-│   ├── Thai/                # Planned knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   └── Vietnamese/          # Planned knowledge base
+│   └── (6 planned language directories are listed in the table below)
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -80,7 +73,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
 │   └── Review.Agent.md      # Review mode
-├── translate_kb.py          # Legacy translation utility (deprecated)
+├── translate_kb.py          # Legacy translation utility (deprecated; use manual updates)
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
