@@ -45,7 +45,7 @@ git branch -d feature/new-thing     # merge के बाद branch हटाए
 git checkout main
 git merge feature/new-thing
 
-# Rebase इतिहास को linear रखता है
+# रीबेस इतिहास को रैखिक रखता है
 git checkout feature/new-thing
 git rebase main
 ```
@@ -259,12 +259,12 @@ Docker applications और उनकी dependencies को portable containers 
 ### सामान्य commands
 
 ```bash
-# Images
+# छवियां
 docker pull ubuntu:22.04
 docker images
 docker rmi ubuntu:22.04
 
-# Containers
+# कंटेनर
 docker run -it ubuntu:22.04 bash        # interactive shell
 docker run -d -p 8080:80 nginx          # detached mode, port mapping
 docker ps                               # चल रहे containers
@@ -274,7 +274,7 @@ docker rm <container_id>
 docker logs <container_id>
 docker exec -it <container_id> bash     # चल रहे container में shell खोलें
 
-# Building
+# निर्माण
 docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```

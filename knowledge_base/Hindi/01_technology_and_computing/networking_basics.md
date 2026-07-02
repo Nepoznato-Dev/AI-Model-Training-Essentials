@@ -263,7 +263,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # fallback
 Public Key को सर्वर पर कॉपी करें
 bash
 ssh-copy-id user@host
-# Manual alternative:
+# मैनुअल विकल्प:
 cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 SSH Config (~/.ssh/config)
 ssh-config
@@ -420,7 +420,7 @@ pg_dumpall > all_backup.sql
 # MySQL / MariaDB
 mysqldump -u root -p dbname > backup.sql
 
-# Restore
+# पुनर्स्थापित करें
 psql dbname < backup.sql
 mysql -u root -p dbname < backup.sql
 फ़ाइल बैकअप
