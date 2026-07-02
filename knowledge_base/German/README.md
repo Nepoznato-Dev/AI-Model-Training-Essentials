@@ -3,7 +3,7 @@
 Eine umfassende Sammlung von Referenzdokumenten zu Technologie, Wissenschaft, Wirtschaft, Geisteswissenschaften und praktischen Fähigkeiten.
 
 **Zuletzt aktualisiert:** Juni 2025  
-**Gesamtzahl der Dateien:** 34+ Markdown-Dokumente  
+**Gesamtzahl der Dateien:** 35 Markdown-Dokumente  
 **Organisation:** In 10 thematische Verzeichnisse kategorisiert
 
 ---
@@ -100,7 +100,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Cheat Sheets (`10_cheat_sheets/`)
-*Wachsendes Verzeichnis - demnächst verfügbar:*
+*Kurze Referenzleitfäden:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -150,7 +150,8 @@ knowledge_base/English/
 | Geisteswissenschaften | 5 | ~1,100 | 220 |
 | Referenz | 4 | ~1,400 | 350 |
 | Zukunft | 1 | ~200 | 200 |
-| **Gesamt** | **31** | **~9,000** | **290** |
+| Cheat Sheets | 4 | ~1,700 | 425 |
+| **Gesamt** | **35** | **~10,700** | **306** |
 
 ---
 

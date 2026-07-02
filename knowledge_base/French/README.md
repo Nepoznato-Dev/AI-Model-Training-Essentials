@@ -3,7 +3,7 @@
 Une collection complète de documents de référence couvrant la technologie, la science, les affaires, les sciences humaines et les compétences pratiques.
 
 **Dernière mise à jour :** juin 2025  
-**Nombre total de fichiers :** 34+ documents markdown  
+**Nombre total de fichiers :** 35 documents markdown  
 **Organisation :** Classée en 10 répertoires thématiques
 
 ---
@@ -100,7 +100,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Aide-mémoire (`10_cheat_sheets/`)
-*Répertoire en développement - bientôt disponible :*
+*Guides de référence rapide :*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -150,7 +150,8 @@ knowledge_base/English/
 | Sciences humaines | 5 | ~1,100 | 220 |
 | Référence | 4 | ~1,400 | 350 |
 | Futur | 1 | ~200 | 200 |
-| **Total** | **31** | **~9,000** | **290** |
+| Aide-mémoire | 4 | ~1,700 | 425 |
+| **Total** | **35** | **~10,700** | **306** |
 
 ---
 
