@@ -48,11 +48,13 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── German/              # German knowledge base
 │   ├── Japanese/            # Japanese knowledge base
 │   ├── Korean/              # Korean knowledge base
+│   ├── Mandarin (Simplified Chinese)/ # Simplified Chinese knowledge base
+│   ├── Mandarin (Traditional Chinese)/ # Traditional Chinese knowledge base
 │   ├── Portuguese/          # Portuguese knowledge base
 │   ├── Russian/             # Russian knowledge base
 │   ├── Spanish/             # Spanish knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   └── (planned languages are documented in the Multi-Language Support table below)
+│   └── (6 planned languages are documented in the Multi-Language Support table below)
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -232,9 +234,7 @@ Each agent mode includes:
 
 ## 🌍 Multi-Language Support
 
-The knowledge base is available in **18 languages**:
-
-Languages marked as "Planned" will move to "Available" once translation and review are complete.
+The knowledge base supports **18 languages**: 12 currently available and 6 planned.
 
 | Language | Directory | Status |
 |----------|-----------|--------|
@@ -246,8 +246,8 @@ Languages marked as "Planned" will move to "Available" once translation and revi
 | Italian | `Italian/` | 🟡 Planned |
 | Japanese | `Japanese/` | ✅ Available |
 | Korean | `Korean/` | ✅ Available |
-| Mandarin (Simplified) | `Mandarin (Simplified Chinese)/` | 🟡 Planned |
-| Mandarin (Traditional) | `Mandarin (Traditional Chinese)/` | 🟡 Planned |
+| Mandarin (Simplified) | `Mandarin (Simplified Chinese)/` | ✅ Available |
+| Mandarin (Traditional) | `Mandarin (Traditional Chinese)/` | ✅ Available |
 | Persian | `Persian/` | 🟡 Planned |
 | Polish | `Polish/` | 🟡 Planned |
 | Portuguese | `Portuguese/` | ✅ Available |
