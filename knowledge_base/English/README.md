@@ -3,7 +3,7 @@
 A comprehensive collection of reference documents covering technology, science, business, humanities, and practical skills.
 
 **Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Total Files:** 35 markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
@@ -100,7 +100,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Cheat Sheets (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Quick reference guides:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -150,7 +150,8 @@ knowledge_base/English/
 | Humanities | 5 | ~1,100 | 220 |
 | Reference | 4 | ~1,400 | 350 |
 | Future | 1 | ~200 | 200 |
-| **Total** | **31** | **~9,000** | **290** |
+| Cheat Sheets | 4 | ~1,700 | 425 |
+| **Total** | **35** | **~10,700** | **306** |
 
 ---
 
