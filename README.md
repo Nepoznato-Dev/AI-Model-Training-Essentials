@@ -54,7 +54,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Russian/             # Russian knowledge base
 │   ├── Spanish/             # Spanish knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   └── (6 planned languages are documented in the Multi-Language Support table below)
+│   └── (6 planned languages are documented in the Multi-Language Support table below, in addition to the 12 existing directories above)
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -75,10 +75,11 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
 │   └── Review.Agent.md      # Review mode
-├── translate_kb.py          # Deprecated - do not use; prefer manual updates to avoid formatting corruption
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
+
+Legacy note: `translate_kb.py` remains in the repository for reference only, but manual updates are the preferred approach because the script can corrupt formatting.
 
 ---
 
