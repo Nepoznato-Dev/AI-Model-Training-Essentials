@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# الإنجليزية قاعدة المعرفة
+# قاعدة المعرفة العربية
 
-A comprehensive collection من مرجع documents coverفيg التكنولوجيا, العلوم, busفيess, humanities, و practical skills.
+مجموعة شاملة من المستندات المرجعية التي تغطي التكنولوجيا والعلوم والأعمال والإنسانيات والمهارات العملية.
 
 **Last Updated:** June 2025  
-**Total Files:** 36 markdown documents  
-**Organization:** Categorized فيto 10 الmatic directories
+**Total Files:** 35 markdown documents  
+**Organization:** مصنفة ضمن 10 مجلدات موضوعية
 
 ---
 
@@ -33,25 +33,25 @@ knowledge_base/English/
 
 ---
 
-# # 📚 Quick Navigation
+# # 📚 التنقل السريع
 
 # ## التكنولوجيا والحوسبة (`01_التكنولوجيا_والحوسبة/`)
-| File | Description | Lفيes |
+| File | Description | Lines |
 |------|-------------|-------|
 | [coding_languages.md](01_التكنولوجيا_والحوسبة/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
 | [web_development.md](01_التكنولوجيا_والحوسبة/web_development.md) | Frontend, backend, DevOps, الأمان | 350+ |
 | [database_systems.md](01_التكنولوجيا_والحوسبة/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
 | [cloud_architecture.md](01_التكنولوجيا_والحوسبة/cloud_architecture.md) | Cloud providers, العمارة patterns, الأمان | 350+ |
 | [networking_basics.md](01_التكنولوجيا_والحوسبة/networking_basics.md) | OSI model, TCP/IP, protocols, الأمان | 400+ |
-| [technology_glossary.md](01_التكنولوجيا_والحوسبة/technology_glossary.md) | Technical termفيology | 250+ |
+| [technology_glossary.md](01_التكنولوجيا_والحوسبة/technology_glossary.md) | Technical terminology | 250+ |
 | [tool_usage.md](01_التكنولوجيا_والحوسبة/tool_usage.md) | التطوير tools و utilities | 200+ |
 
 # ## الذكاء الاصطناعي (`02_الذكاء_الاصطناعي/`)
-| File | Description | Lفيes |
+| File | Description | Lines |
 |------|-------------|-------|
-| [artificial_intelligence.md](02_الذكاء_الاصطناعي/artificial_intelligence.md) | AI نظرة عامة, ML, deep learnفيg, LLMs | 200+ |
-| [ml_evaluation_and_workflow.md](02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md) | ML pipelفيes, metrics, أفضل الممارسات | 200+ |
-| [phi3_and_local_models.md](02_الذكاء_الاصطناعي/phi3_and_local_models.md) | Runnفيg models locally | 200+ |
+| [artificial_intelligence.md](02_الذكاء_الاصطناعي/artificial_intelligence.md) | AI نظرة عامة, ML, deep learning, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md) | ML pipelines, metrics, أفضل الممارسات | 200+ |
+| [phi3_and_local_models.md](02_الذكاء_الاصطناعي/phi3_and_local_models.md) | Running models locally | 200+ |
 | [local_ai_architecture.md](02_الذكاء_الاصطناعي/local_ai_architecture.md) | Local AI النشر العمارةs | 400+ |
 | [prompt_engineering.md](02_الذكاء_الاصطناعي/prompt_engineering.md) | Prompt techniques و strategies | 150+ |
 
@@ -116,48 +116,50 @@ knowledge_base/English/
 
 ---
 
-# # 🎯 Learnفيg Paths
+# # 🎯 مسارات التعلم
 
-# ## For Begفيners
-1. Start مع `07_مرجع/general_knowledge.md`
-2. Move to `07_مرجع/التكنولوجيا_والحوسبة.md`
-3. Explore `06_العلوم_الإنسانية/اللغة_والإنجليزية.md`
-4. Begin with `01_التكنولوجيا_والحوسبة/coding_languages.md`
+# ## للمبتدئين
+1. ابدأ بـ `07_المراجع/general_knowledge.md`
+2. انتقل إلى `07_المراجع/التكنولوجيا_والحوسبة.md`
+3. استكشف `06_العلوم_الإنسانية/اللغة_والإنجليزية.md`
+4. ابدأ بـ `01_التكنولوجيا_والحوسبة/coding_languages.md`
 
-# ## For Sمنtware Developers
+# ## لمطوري البرمجيات
 1. `01_التكنولوجيا_والحوسبة/coding_languages.md`
 2. `01_التكنولوجيا_والحوسبة/web_development.md`
 3. `01_التكنولوجيا_والحوسبة/database_systems.md`
 4. `01_التكنولوجيا_والحوسبة/cloud_architecture.md`
 5. `02_الذكاء_الاصطناعي/artificial_intelligence.md`
 
-# ## For البيانات Scientists
+# ## لعلماء البيانات
 1. `03_علم_البيانات/math_and_logic.md`
 2. `03_علم_البيانات/data_science_and_analytics.md`
 3. `02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md`
 4. `01_التكنولوجيا_والحوسبة/database_systems.md`
 
-# ## For Busفيess Prمنessionals
-1. `05_busفيess_و_fفيance/busفيess_و_الاقتصاد.md`
-2. `05_busفيess_و_fفيance/fفيance_و_فيvestفيg.md`
-3. `05_busفيess_و_fفيance/القانون_و_قانوني_الأنظمة.md`
-4. `06_humanities/الجغرافيا_و_الجيوسياسية.md`
+# ## لمحترفي الأعمال
+1. `05_الأعمال_والمالية/business_and_economics.md`
+2. `05_الأعمال_والمالية/finance_and_investing.md`
+3. `05_الأعمال_والمالية/law_and_legal_systems.md`
+4. `06_العلوم_الإنسانية/geography_and_geopolitics.md`
 
 ---
 
 # # 📊 إحصائيات
 
-| Category | Files | Total Lفيes | Avg Lفيes/File |
+| Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
 | التكنولوجيا والحوسبة | 7 | ~2,800 | 400 |
 | الذكاء الاصطناعي | 5 | ~1,500 | 300 |
 | البيانات العلوم | 2 | ~600 | 300 |
 | العلوم | 4 | ~700 | 175 |
-| Busفيess & Fفيance | 3 | ~700 | 233 |
-| Humanities | 5 | ~1,100 | 220 |
+| الأعمال والمالية | 3 | ~700 | 233 |
+| العلوم الإنسانية | 5 | ~1,100 | 220 |
 | مرجع | 4 | ~1,400 | 350 |
 | المستقبل | 1 | ~200 | 200 |
-| **Total** | **36** | **~10,800** | **300** |
+| المهارات العملية | 0 | — | — |
+| أوراق الغش | 4 | ~1,200 | 300 |
+| **Total** | **35** | **~10,200** | **300** |
 
 ---
 
