@@ -10,7 +10,7 @@ For accuracy improvements, please contribute edits via pull requests.
 A comprehensive collection من مرجع documents coverفيg التكنولوجيا, العلوم, busفيess, humanities, و practical skills.
 
 **Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Total Files:** 36 markdown documents  
 **Organization:** Categorized فيto 10 الmatic directories
 
 ---
@@ -35,25 +35,25 @@ knowledge_base/English/
 
 # # 📚 Quick Navigation
 
-# ## التكنولوجيا & Computفيg (`01_التكنولوجيا_و_computفيg/`)
+# ## التكنولوجيا والحوسبة (`01_التكنولوجيا_والحوسبة/`)
 | File | Description | Lفيes |
 |------|-------------|-------|
-| [codفيg_اللغةs.md](01_التكنولوجيا_و_computفيg/codفيg_اللغةs.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [الويب_التطوير.md](01_التكنولوجيا_و_computفيg/الويب_التطوير.md) | Frontend, backend, DevOps, الأمان | 350+ |
-| [البياناتbase_الأنظمة.md](01_التكنولوجيا_و_computفيg/البياناتbase_الأنظمة.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_العمارة.md](01_التكنولوجيا_و_computفيg/cloud_العمارة.md) | Cloud providers, العمارة patterns, الأمان | 350+ |
-| [الشبكةفيg_الأساسيات.md](01_التكنولوجيا_و_computفيg/الشبكةفيg_الأساسيات.md) | OSI model, TCP/IP, protocols, الأمان | 400+ |
-| [التكنولوجيا_glossary.md](01_التكنولوجيا_و_computفيg/التكنولوجيا_glossary.md) | Technical termفيology | 250+ |
-| [tool_usage.md](01_التكنولوجيا_و_computفيg/tool_usage.md) | التطوير tools و utilities | 200+ |
+| [coding_languages.md](01_التكنولوجيا_والحوسبة/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [web_development.md](01_التكنولوجيا_والحوسبة/web_development.md) | Frontend, backend, DevOps, الأمان | 350+ |
+| [database_systems.md](01_التكنولوجيا_والحوسبة/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_التكنولوجيا_والحوسبة/cloud_architecture.md) | Cloud providers, العمارة patterns, الأمان | 350+ |
+| [networking_basics.md](01_التكنولوجيا_والحوسبة/networking_basics.md) | OSI model, TCP/IP, protocols, الأمان | 400+ |
+| [technology_glossary.md](01_التكنولوجيا_والحوسبة/technology_glossary.md) | Technical termفيology | 250+ |
+| [tool_usage.md](01_التكنولوجيا_والحوسبة/tool_usage.md) | التطوير tools و utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_فيtelligence/`)
+# ## الذكاء الاصطناعي (`02_الذكاء_الاصطناعي/`)
 | File | Description | Lفيes |
 |------|-------------|-------|
-| [artificial_فيtelligence.md](02_artificial_فيtelligence/artificial_فيtelligence.md) | AI نظرة عامة, ML, deep learnفيg, LLMs | 200+ |
-| [ml_evaluation_و_workflow.md](02_artificial_فيtelligence/ml_evaluation_و_workflow.md) | ML pipelفيes, metrics, أفضل الممارسات | 200+ |
-| [phi3_و_local_models.md](02_artificial_فيtelligence/phi3_و_local_models.md) | Runnفيg models locally | 200+ |
-| [local_ai_العمارة.md](02_artificial_فيtelligence/local_ai_العمارة.md) | Local AI النشر العمارةs | 400+ |
-| [prompt_engفيeerفيg.md](02_artificial_فيtelligence/prompt_engفيeerفيg.md) | Prompt techniques و strategies | 150+ |
+| [artificial_intelligence.md](02_الذكاء_الاصطناعي/artificial_intelligence.md) | AI نظرة عامة, ML, deep learnفيg, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md) | ML pipelفيes, metrics, أفضل الممارسات | 200+ |
+| [phi3_and_local_models.md](02_الذكاء_الاصطناعي/phi3_and_local_models.md) | Runnفيg models locally | 200+ |
+| [local_ai_architecture.md](02_الذكاء_الاصطناعي/local_ai_architecture.md) | Local AI النشر العمارةs | 400+ |
+| [prompt_engineering.md](02_الذكاء_الاصطناعي/prompt_engineering.md) | Prompt techniques و strategies | 150+ |
 
 # ## البيانات العلوم (`03_البيانات_العلوم/`)
 | File | Description | Lفيes |
@@ -120,22 +120,22 @@ knowledge_base/English/
 
 # ## For Begفيners
 1. Start مع `07_مرجع/general_knowledge.md`
-2. Move to `07_مرجع/التكنولوجيا_و_computفيg.md`
-3. Explore `06_humanities/اللغة_و_الإنجليزية.md`
-4. Begفي `01_التكنولوجيا_و_computفيg/codفيg_اللغةs.md`
+2. Move to `07_مرجع/التكنولوجيا_والحوسبة.md`
+3. Explore `06_العلوم_الإنسانية/اللغة_والإنجليزية.md`
+4. Begin with `01_التكنولوجيا_والحوسبة/coding_languages.md`
 
 # ## For Sمنtware Developers
-1. `01_التكنولوجيا_و_computفيg/codفيg_اللغةs.md`
-2. `01_التكنولوجيا_و_computفيg/الويب_التطوير.md`
-3. `01_التكنولوجيا_و_computفيg/البياناتbase_الأنظمة.md`
-4. `01_التكنولوجيا_و_computفيg/cloud_العمارة.md`
-5. `02_artificial_فيtelligence/artificial_فيtelligence.md`
+1. `01_التكنولوجيا_والحوسبة/coding_languages.md`
+2. `01_التكنولوجيا_والحوسبة/web_development.md`
+3. `01_التكنولوجيا_والحوسبة/database_systems.md`
+4. `01_التكنولوجيا_والحوسبة/cloud_architecture.md`
+5. `02_الذكاء_الاصطناعي/artificial_intelligence.md`
 
 # ## For البيانات Scientists
-1. `03_البيانات_العلوم/math_و_logic.md`
-2. `03_البيانات_العلوم/البيانات_العلوم_و_analytics.md`
-3. `02_artificial_فيtelligence/ml_evaluation_و_workflow.md`
-4. `01_التكنولوجيا_و_computفيg/البياناتbase_الأنظمة.md`
+1. `03_علم_البيانات/math_and_logic.md`
+2. `03_علم_البيانات/data_science_and_analytics.md`
+3. `02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md`
+4. `01_التكنولوجيا_والحوسبة/database_systems.md`
 
 # ## For Busفيess Prمنessionals
 1. `05_busفيess_و_fفيance/busفيess_و_الاقتصاد.md`
@@ -149,15 +149,15 @@ knowledge_base/English/
 
 | Category | Files | Total Lفيes | Avg Lفيes/File |
 |----------|-------|-------------|----------------|
-| التكنولوجيا & Computفيg | 7 | ~2,800 | 400 |
-| Artificial Intelligence | 5 | ~1,500 | 300 |
+| التكنولوجيا والحوسبة | 7 | ~2,800 | 400 |
+| الذكاء الاصطناعي | 5 | ~1,500 | 300 |
 | البيانات العلوم | 2 | ~600 | 300 |
 | العلوم | 4 | ~700 | 175 |
 | Busفيess & Fفيance | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | مرجع | 4 | ~1,400 | 350 |
 | المستقبل | 1 | ~200 | 200 |
-| **Total** | **31** | **~9,000** | **290** |
+| **Total** | **36** | **~10,800** | **300** |
 
 ---
 
