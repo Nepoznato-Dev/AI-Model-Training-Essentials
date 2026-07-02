@@ -52,7 +52,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Russian/             # Russian knowledge base
 │   ├── Spanish/             # Spanish knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   └── (see the Multi-Language Support table below for all 18 languages)
+│   └── (planned languages are documented in the Multi-Language Support table below)
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -73,7 +73,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
 │   └── Review.Agent.md      # Review mode
-├── translate_kb.py          # Deprecated - do not use; retained for reference because automated translation can corrupt formatting
+├── translate_kb.py          # Deprecated - do not use; prefer manual updates to avoid formatting corruption
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
@@ -246,8 +246,8 @@ Languages marked as "Planned" will move to "Available" once translation and revi
 | Italian | `Italian/` | 🟡 Planned |
 | Japanese | `Japanese/` | ✅ Available |
 | Korean | `Korean/` | ✅ Available |
-| Mandarin (Simplified) | `Mandarin_Simplified/` | 🟡 Planned |
-| Mandarin (Traditional) | `Mandarin_Traditional/` | 🟡 Planned |
+| Mandarin (Simplified) | `Mandarin (Simplified Chinese)/` | 🟡 Planned |
+| Mandarin (Traditional) | `Mandarin (Traditional Chinese)/` | 🟡 Planned |
 | Persian | `Persian/` | 🟡 Planned |
 | Polish | `Polish/` | 🟡 Planned |
 | Portuguese | `Portuguese/` | ✅ Available |
