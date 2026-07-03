@@ -89,7 +89,7 @@ Legacy note: `translate_kb.py` remains in the repository for reference only, but
 
 The English knowledge base contains **36 files** organized into 10 categories:
 
-#### 🔧 01 Technology and Computing (7 files)
+#### 01 Technology and Computing (7 files)
 | File | Description |
 |------|-------------|
 | `cloud_architecture.md` | Cloud computing architectures and patterns |
@@ -100,7 +100,7 @@ The English knowledge base contains **36 files** organized into 10 categories:
 | `tool_usage.md` | Development tool usage instructions |
 | `web_development.md` | Web development frameworks and practices |
 
-#### 🤖 02 Artificial Intelligence (5 files)
+#### 02 Artificial Intelligence (5 files)
 | File | Description |
 |------|-------------|
 | `artificial_intelligence.md` | AI fundamentals, history, ML, and deep learning |
@@ -109,13 +109,13 @@ The English knowledge base contains **36 files** organized into 10 categories:
 | `phi3_and_local_models.md` | Phi3 and local model information |
 | `prompt_engineering.md` | Prompt design and optimization techniques |
 
-#### 📊 03 Data Science (2 files)
+#### 03 Data Science (2 files)
 | File | Description |
 |------|-------------|
 | `data_science_and_analytics.md` | Data analysis and analytics methods |
 | `math_and_logic.md` | Mathematical concepts and logical reasoning |
 
-#### 🔬 04 Science (4 files)
+#### 04 Science (4 files)
 | File | Description |
 |------|-------------|
 | `environmental_science_and_sustainability.md` | Environmental topics and sustainability |
@@ -123,14 +123,14 @@ The English knowledge base contains **36 files** organized into 10 categories:
 | `medicine_and_healthcare.md` | Medical and healthcare information |
 | `science_and_nature.md` | Scientific concepts and natural phenomena |
 
-#### 💼 05 Business and Finance (3 files)
+#### 05 Business and Finance (3 files)
 | File | Description |
 |------|-------------|
 | `business_and_economics.md` | Business principles and economics |
 | `finance_and_investing.md` | Financial concepts and investment strategies |
 | `law_and_legal_systems.md` | Legal systems and jurisprudence |
 
-#### 🎭 06 Humanities (5 files)
+#### 06 Humanities (5 files)
 | File | Description |
 |------|-------------|
 | `arts_and_literature.md` | Arts, literature, and creative works |
@@ -139,7 +139,7 @@ The English knowledge base contains **36 files** organized into 10 categories:
 | `language_and_english.md` | Language rules and English grammar |
 | `psychology_and_human_behavior.md` | Psychology and behavioral science |
 
-#### 📖 07 Reference (4 files)
+#### 07 Reference (4 files)
 | File | Description |
 |------|-------------|
 | `dictionary.md` | Terminology and definitions |
@@ -147,12 +147,12 @@ The English knowledge base contains **36 files** organized into 10 categories:
 | `safe_communication.md` | Guidelines for safe AI communication |
 | `technology_and_computing.md` | General technology overview |
 
-#### 🔮 08 Future (1 file)
+#### 08 Future (1 file)
 | File | Description |
 |------|-------------|
 | `2026_and_future_events.md` | Future predictions and emerging trends |
 
-#### ⚡ 10 Cheat Sheets (4 files)
+#### 10 Cheat Sheets (4 files)
 | File | Description |
 |------|-------------|
 | `git_commands.md` | Git command reference |
@@ -213,17 +213,17 @@ Specialized technical capabilities across multiple domains:
 
 ---
 
-## 🤖 Agent Modes
+##  Agent Modes
 
 Pre-configured agent modes for different interaction patterns:
 
 | Mode | File | Use Case |
 |------|------|----------|
-| **🔧 Agent** | `Agent.Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
-| **❓ Ask** | `Ask.Agent.md` | Question-answering mode for direct queries and information retrieval |
-| **🔍 Explore** | `Explore.Agent.md` | Exploration mode for discovering and investigating new topics |
-| **📋 Plan** | `Plan.Agent.md` | Planning mode for structured task breakdown and roadmap creation |
-| **✅ Review** | `Review.Agent.md` | Review mode for code analysis, content review, and quality assurance |
+| ** Agent** | `Agent.Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
+| ** Ask** | `Ask.Agent.md` | Question-answering mode for direct queries and information retrieval |
+| ** Explore** | `Explore.Agent.md` | Exploration mode for discovering and investigating new topics |
+| ** Plan** | `Plan.Agent.md` | Planning mode for structured task breakdown and roadmap creation |
+| ** Review** | `Review.Agent.md` | Review mode for code analysis, content review, and quality assurance |
 
 Each agent mode includes:
 - YAML frontmatter configuration
@@ -240,7 +240,7 @@ The knowledge base supports **18 languages**: 12 currently available and 6 plann
 | Language | Directory | Status |
 |----------|-----------|--------|
 | Arabic | `Arabic/` | ✅ Available |
-| English | `English/` | ✅ Complete (36 files) |
+| English | `English/` | ✅ Fully Available |
 | French | `French/` | ✅ Available |
 | German | `German/` | ✅ Available |
 | Indonesian | `Indonesian/` | 🟡 Planned |
@@ -387,12 +387,12 @@ Detailed behavioral guidelines and interaction patterns.
 
 This repository serves as:
 
-- ✅ **Structured Knowledge Base**: Organized, domain-specific information for AI reference
-- ✅ **Skill Library**: Modular capabilities for enhancing agent performance
-- ✅ **Configuration Hub**: Centralized agent mode definitions
-- ✅ **Multi-Language Resource**: Globally accessible knowledge in 18 languages
-- ✅ **Extensible Framework**: Maintainable and scalable architecture for AI development
-- ✅ **Collaboration Platform**: Standardized formats for team contributions
+- **Structured Knowledge Base**: Organized, domain-specific information for AI reference
+-  **Skill Library**: Modular capabilities for enhancing agent performance
+-  **Configuration Hub**: Centralized agent mode definitions
+-  **Multi-Language Resource**: Globally accessible knowledge in 18 languages
+-  **Extensible Framework**: Maintainable and scalable architecture for AI development
+-  **Collaboration Platform**: Standardized formats for team contributions
 
 ---
 
@@ -434,7 +434,7 @@ For questions, suggestions, or issues:
 
 <div align="center">
 
-**Built with ❤️ for the AI community**
+**Built with ❤️ for the local and open source AI community**
 
 [⬆ Back to Top](#ai-model-training-essentials)
 
