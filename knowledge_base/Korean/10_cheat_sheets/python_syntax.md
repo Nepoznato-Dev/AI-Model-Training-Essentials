@@ -5,58 +5,58 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Python 구문 Cheat Sheet
+# Python 구문 치트시트
 
-빠른 참조 위한 Python 3.x 구문 와 common patterns.
+빠른 참조를 위한 Python 3.x 구문과 일반적인 패턴.
 
 ---
 
-## Basic 구문
+## 기본 구문
 
-### Variables 와 데이터 Types
+### 변수와 데이터 타입
 ```python
-# Variable assignment (no declaration needed)
+# 변수 할당 (선언 불필요)
 x = 5
 name = "Alice"
 is_active = True
 price = 19.99
 
-# Type checking
+# 타입 검사
 type(x)           # <class 'int'>
 isinstance(x, int)  # True
 
-# Type conversion
+# 타입 변환
 int("5")          # 5
 str(5)            # "5"
 float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### 문자열
 ```python
 s = "Hello, World!"
 
-# Slicing
+# 슬라이싱
 s[0]              # 'H'
 s[-1]             # '!'
 s[0:5]            # 'Hello'
 s[7:]             # 'World!'
-s[::-1]           # Reverse string
+s[::-1]           # 문자열 뒤집기
 
-# Methods
+# 메서드
 s.lower()         # 'hello, world!'
 s.upper()         # 'HELLO, WORLD!'
 s.split(",")      # ['Hello', ' World!']
 s.replace("World", "Python")
-s.strip()         # Remove whitespace
-f"Value: {x}"     # f-string formatting
+s.strip()         # 공백 제거
+f"Value: {x}"     # f-string 형식 지정
 ```
 
 ---
 
-## Control Flow
+## 제어 흐름
 
-### Conditionals
+### 조건문
 ```python
 if x > 10:
     print("Greater than 10")
@@ -65,14 +65,14 @@ elif x == 10:
 else:
     print("Less than 10")
 
-# Ternary operator
+# 삼항 연산자
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### 반복문
 ```python
-# For loop
-for i in range(5):      # 0 to 4
+# for 반복문
+for i in range(5):      # 0부터 4까지
     print(i)
 
 for item in [1, 2, 3]:
@@ -81,87 +81,87 @@ for item in [1, 2, 3]:
 for key, value in dict.items():
     print(key, value)
 
-# While loop
+# while 반복문
 while x < 10:
     x += 1
 
-# Loop control
-break       # Exit loop
-continue    # Skip to next iteration
-else:       # Execute if loop completes without break
+# 반복 제어
+break       # 반복문 종료
+continue    # 다음 반복으로 건너뜀
+else:       # break 없이 반복이 끝나면 실행
 ```
 
 ---
 
-## 데이터 Structures
+## 데이터 구조
 
-### Lists
+### 리스트
 ```python
 lst = [1, 2, 3, 4, 5]
 
-lst.append(6)           # Add to end
-lst.insert(0, 0)        # Insert at index
-lst.remove(3)           # Remove by value
-lst.pop()               # Remove and return last
-lst.pop(0)              # Remove and return first
-lst.index(2)            # Find index of value
-lst.count(2)            # Count occurrences
-lst.sort()              # Sort in place
-sorted(lst)             # Return sorted copy
-lst.reverse()           # Reverse in place
-lst[1:4]                # Slice
-[i*2 for i in lst]      # List comprehension
+lst.append(6)           # 끝에 추가
+lst.insert(0, 0)        # 지정한 위치에 삽입
+lst.remove(3)           # 값으로 삭제
+lst.pop()               # 마지막 항목 삭제 후 반환
+lst.pop(0)              # 첫 항목 삭제 후 반환
+lst.index(2)            # 값의 인덱스 찾기
+lst.count(2)            # 등장 횟수 세기
+lst.sort()              # 제자리 정렬
+sorted(lst)             # 정렬된 복사본 반환
+lst.reverse()           # 제자리 뒤집기
+lst[1:4]                # 슬라이스
+[i*2 for i in lst]      # 리스트 컴프리헨션
 ```
 
-### Dictionaries
+### 딕셔너리
 ```python
 d = {"name": "Alice", "age": 30}
 
-d["age"]                # Access value
-d.get("age", 0)         # Safe access with default
-d.keys()                # Get all keys
-d.values()              # Get all values
-d.items()               # Get key-value pairs
+d["age"]                # 값에 접근
+d.get("age", 0)         # 기본값으로 안전하게 접근
+d.keys()                # 모든 키 가져오기
+d.values()              # 모든 값 가져오기
+d.items()               # 키-값 쌍 가져오기
 d.update({"city": "NYC"})
-del d["age"]            # Delete key
+del d["age"]            # 키 삭제
 
-{k: v*2 for k, v in d.items()}  # Dict comprehension
+{k: v*2 for k, v in d.items()}  # 딕셔너리 컴프리헨션
 ```
 
-### Sets
+### 집합
 ```python
-s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
+s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - 중복 제거됨
 
 s.add(5)
 s.remove(3)
-s.discard(10)           # Remove if exists (no error)
-s.union({4, 5, 6})      # Combine sets
-s.intersection({2, 3})  # Common elements
-s.difference({3, 4})    # Elements in s but not other
+s.discard(10)           # 있으면 제거 (오류 없음)
+s.union({4, 5, 6})      # 집합 결합
+s.intersection({2, 3})  # 공통 원소
+s.difference({3, 4})    # s 에는 있지만 다른 집합에는 없는 원소
 ```
 
-### Tuples
+### 튜플
 ```python
 t = (1, 2, 3)
-t[0]                    # Access (immutable)
-x, y, z = t             # Unpacking
+t[0]                    # 접근 (불변)
+x, y, z = t             # 언패킹
 ```
 
 ---
 
-## Functions
+## 함수
 
-### Definition
+### 정의
 ```python
 def greet(name, greeting="Hello"):
-    """Docstring: Describe the function"""
+    """독스트링: 함수 설명"""
     return f"{greeting}, {name}!"
 
-# Call with positional and keyword args
+# 위치 인자와 키워드 인자로 호출
 greet("Alice")
 greet("Bob", greeting="Hi")
 
-# Variable arguments
+# 가변 인자
 def sum_all(*args):
     return sum(args)
 
@@ -170,7 +170,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### 람다 함수
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,15 +178,15 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## 클래스
 
 ```python
 class Person:
     def __init__(self, name, age):
-        self.name = name      # Instance variable
+        self.name = name      # 인스턴스 변수
         self.age = age
     
-    def greet(self):          # Instance method
+    def greet(self):          # 인스턴스 메서드
         return f"Hi, I'm {self.name}"
     
     @classmethod
@@ -198,7 +198,7 @@ class Person:
     def is_adult(age):
         return age >= 18
 
-# Inheritance
+# 상속
 class Employee(Person):
     def __init__(self, name, age, employee_id):
         super().__init__(name, age)
@@ -207,48 +207,48 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## 파일 입출력
 
 ```python
-# Reading files
+# 파일 읽기
 with open("file.txt", "r") as f:
-    content = f.read()        # Read entire file
-    lines = f.readlines()     # Read as list of lines
+    content = f.read()        # 파일 전체 읽기
+    lines = f.readlines()     # 줄 목록으로 읽기
 
-# Writing files
+# 파일 쓰기
 with open("file.txt", "w") as f:
     f.write("Hello\n")
 
-# Append mode
+# 추가 모드
 with open("file.txt", "a") as f:
     f.write("More content\n")
 ```
 
 ---
 
-## Error Handling
+## 예외 처리
 
 ```python
 try:
     result = 10 / 0
 except ZeroDivisionError as e:
-    print(f"Error: {e}")
+    print(f"오류: {e}")
 except (TypeError, ValueError):
-    print("Type or value error")
+    print("형식 또는 값 오류")
 except Exception as e:
-    print(f"General error: {e}")
+    print(f"일반 오류: {e}")
 else:
-    print("No errors occurred")
+    print("오류가 발생하지 않았습니다")
 finally:
-    print("Always executes")
+    print("항상 실행됩니다")
 
-# Raise exceptions
+# 예외 발생시키기
 raise ValueError("Invalid value")
 ```
 
 ---
 
-## Modules 와 Imports
+## 모듈과 import
 
 ```python
 import math
@@ -257,63 +257,63 @@ from collections import defaultdict, Counter
 import numpy as np
 from mymodule import my_function as mf
 
-# Common standard library modules
+# 일반적인 표준 라이브러리 모듈
 os, sys, json, re, random, itertools, functools, pathlib
 ```
 
 ---
 
-## Common Patterns
+## 일반적인 패턴
 
-### List Operations
+### 리스트 연산
 ```python
-# Filter
+# 필터
 evens = [x for x in lst if x % 2 == 0]
 
-# Map
+# 맵
 squares = [x**2 for x in lst]
 
-# Zip
+# zip
 list(zip([1, 2], ['a', 'b']))  # [(1, 'a'), (2, 'b')]
 
-# Enumerate
+# enumerate
 for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### 문자열 연산
 ```python
-# Join list of strings
+# 문자열 목록 결합
 ", ".join(["a", "b", "c"])  # "a, b, c"
 
-# Split string
+# 문자열 분리
 "a,b,c".split(",")          # ['a', 'b', 'c']
 
-# Check substring
+# 부분 문자열 확인
 "test" in "this is a test"  # True
 
-# Format strings
+# 문자열 형식 지정
 "{} {}".format("Hello", "World")
-f"{value:.2f}"              # 2 decimal places
+f"{value:.2f}"              # 소수점 두 자리
 ```
 
-### 사전 Operations
+### 딕셔너리 연산
 ```python
-# Merge dictionaries
+# 딕셔너리 병합
 {**d1, **d2}
 d1 | d2                     # Python 3.9+
 
-# Default value
+# 기본값
 d.get("key", default_value)
 
-# Iterate
+# 순회
 for k, v in d.items():
     pass
 ```
 
 ---
 
-## Built-에서 Functions
+## 내장 함수
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +329,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## 빠른 팁
 
-- Use `#` 위한 single-line comments
-- Use `"""triple quotes"""` 위한 docstrings 와 multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` 위한 variables/functions, `PascalCase` 위한 classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` 위한 project isolation
-- Install packages 와 함께 `pip install package_name`
+- `#` 는 한 줄 주석에 사용
+- `"""triple quotes"""` 는 독스트링과 여러 줄 문자열에 사용
+- 들여쓰기는 중요함 (보통 4칸)
+- 명명 규칙: 변수/함수는 `snake_case`, 클래스는 `PascalCase`
+- 스크립트가 직접 실행되었는지 확인할 때 `__name__ == "__main__"` 사용
+- 프로젝트 격리를 위해 `virtualenv` 또는 `venv` 사용
+- 패키지 설치는 `pip install package_name` 사용
 
 ---
 
-*최종 업데이트: June 2025 | Python 3.x*
+*최종 업데이트: 2025년 6월 | Python 3.x*

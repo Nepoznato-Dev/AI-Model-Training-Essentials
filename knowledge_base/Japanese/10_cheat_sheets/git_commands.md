@@ -5,65 +5,65 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Git コマンド クイックリファレンス
+# Gitコマンド クイックリファレンス
 
-Essential Git コマンド のために version control.
+バージョン管理のための基本的な Git コマンド。
 
 ---
 
-## Setup & Configuration
+## セットアップと設定
 
 ```bash
-# Configure user info
+# ユーザー情報を設定
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
-# View configuration
+# 設定を表示
 git config --list
 git config user.name
 
-# Set default branch name
+# デフォルトブランチ名を設定
 git config --global init.defaultBranch main
 ```
 
 ---
 
-## Repository Initialization
+## リポジトリの初期化
 
 ```bash
-# Initialize new repository
+# 新しいリポジトリを初期化
 git init
 
-# Clone existing repository
+# 既存のリポジトリをクローン
 git clone <url>
 git clone <url> folder-name
 
-# Clone specific branch
+# 特定のブランチをクローン
 git clone -b branch-name <url>
 ```
 
 ---
 
-## Basic Workflow
+## 基本的なワークフロー
 
 ```bash
-# Check status
+# 状態を確認
 git status
 
-# View changes
+# 変更を表示
 git diff
 git diff --staged
 
-# Stage files
-git add file.txt          # Specific file
-git add .                 # All files
-git add *.py              # Pattern match
+# ファイルをステージに追加
+git add file.txt          # 特定のファイル
+git add .                 # すべてのファイル
+git add *.py              # パターンに一致
 
-# Commit changes
+# 変更をコミット
 git commit -m "Commit message"
-git commit -am "Message"  # Stage and commit tracked files
+git commit -am "Message"  # 追跡済みファイルをステージしてコミット
 
-# View commit history
+# コミット履歴を表示
 git log
 git log --oneline
 git log --graph --oneline --all
@@ -71,235 +71,235 @@ git log --graph --oneline --all
 
 ---
 
-## Branching
+## ブランチ操作
 
 ```bash
-# List branches
-git branch                # Local branches
-git branch -a             # All branches
-git branch -r             # Remote branches
+# ブランチ一覧を表示
+git branch                # ローカルブランチ
+git branch -a             # すべてのブランチ
+git branch -r             # リモートブランチ
 
-# Create branch
+# ブランチを作成
 git branch branch-name
-git checkout -b branch-name   # Create and switch
+git checkout -b branch-name   # 作成して切り替え
 
-# Switch branches
+# ブランチを切り替え
 git checkout branch-name
-git switch branch-name        # Newer syntax
+git switch branch-name        # 新しい構文
 
-# Rename current branch
+# 現在のブランチ名を変更
 git branch -m new-name
 
-# Delete branch
-git branch -d branch-name     # Safe delete (merged)
-git branch -D branch-name     # Force delete
+# ブランチを削除
+git branch -d branch-name     # 安全な削除（マージ済み）
+git branch -D branch-name     # 強制削除
 
-# Merge branch
+# ブランチをマージ
 git merge branch-name
 
-# Rebase branch
+# ブランチをリベース
 git rebase main
 ```
 
 ---
 
-## Remote Operations
+## リモート操作
 
 ```bash
-# View remotes
+# リモートを表示
 git remote -v
 
-# Add remote
+# リモートを追加
 git remote add origin <url>
 
-# Fetch from remote
+# リモートから取得
 git fetch origin
 git fetch --all
 
-# Pull changes (fetch + merge)
+# 変更をプル（fetch + merge）
 git pull origin main
 git pull --rebase origin main
 
-# Push changes
+# 変更をプッシュ
 git push origin main
-git push -u origin main     # Set upstream
-git push --force            # Force push (use carefully)
-git push --force-with-lease # Safer force push
+git push -u origin main     # 上流ブランチを設定
+git push --force            # 強制プッシュ（注意して使用）
+git push --force-with-lease # より安全な強制プッシュ
 
-# Push tags
+# タグをプッシュ
 git push --tags
 ```
 
 ---
 
-## Undoing Changes
+## 変更の取り消し
 
 ```bash
-# Unstage file (keep changes)
+# ファイルのステージを外す（変更は保持）
 git reset HEAD file.txt
 git restore --staged file.txt
 
-# Discard working changes
+# 作業中の変更を破棄
 git checkout -- file.txt
 git restore file.txt
 
-# Amend last commit
+# 直前のコミットを修正
 git commit --amend -m "New message"
 git commit --amend --no-edit
 
-# Revert commit (safe for shared repos)
+# コミットを取り消す（共有リポジトリ向けに安全）
 git revert commit-hash
 
-# Reset to previous commit
-git reset --soft HEAD~1     # Keep changes staged
-git reset --mixed HEAD~1    # Keep changes unstaged (default)
-git reset --hard HEAD~1     # Discard all changes (dangerous)
+# 以前のコミットにリセット
+git reset --soft HEAD~1     # 変更をステージ済みのまま保持
+git reset --mixed HEAD~1    # 変更を未ステージのまま保持（既定）
+git reset --hard HEAD~1     # すべての変更を破棄（危険）
 ```
 
 ---
 
-## Stashing
+## スタッシュ
 
 ```bash
-# Save work in progress
+# 作業中の内容を保存
 git stash
 git stash save "message"
 
-# List stashes
+# スタッシュ一覧を表示
 git stash list
 
-# Apply stash
-git stash apply             # Most recent
-git stash apply stash@{1}   # Specific stash
+# スタッシュを適用
+git stash apply             # 最新のもの
+git stash apply stash@{1}   # 特定のスタッシュ
 
-# Apply and remove
+# 適用して削除
 git stash pop
 
-# Drop stash
+# スタッシュを削除
 git stash drop stash@{1}
 
-# Clear all stashes
+# すべてのスタッシュを消去
 git stash clear
 ```
 
 ---
 
-## Tags
+## タグ
 
 ```bash
-# List tags
+# タグ一覧を表示
 git tag
 git tag -l "v1.*"
 
-# Create tag
+# タグを作成
 git tag v1.0.0
-git tag -a v1.0.0 -m "Version 1.0.0"  # Annotated tag
+git tag -a v1.0.0 -m "Version 1.0.0"  # 注釈付きタグ
 
-# Checkout tag
+# タグをチェックアウト
 git checkout v1.0.0
 
-# Delete tag
+# タグを削除
 git tag -d v1.0.0
 git push origin --delete v1.0.0
 ```
 
 ---
 
-## Viewing & Searching
+## 表示と検索
 
 ```bash
-# Show commit details
+# コミットの詳細を表示
 git show commit-hash
 git show --stat commit-hash
 
-# Blame (who changed what)
+# blame（誰が何を変更したか）
 git blame file.txt
 
-# Search commits
+# コミットを検索
 git log --grep="keyword"
 git log --author="name"
 
-# Search code in history
+# 履歴内のコードを検索
 git log -S"function_name"
 
-# View file at specific commit
+# 特定のコミット時点のファイルを表示
 git show commit-hash:file.txt
 ```
 
 ---
 
-## 上級 Operations
+## 高度な操作
 
 ```bash
-# Cherry-pick commit
+# コミットをチェリーピック
 git cherry-pick commit-hash
 
-# Interactive rebase
+# 対話的リベース
 git rebase -i HEAD~5
 
-# Squash commits (during rebase)
-# Change 'pick' to 'squash' or 's' in editor
+# コミットを squash（リベース中）
+# エディタで 'pick' を 'squash' または 's' に変更
 
-# Create patch
+# パッチを作成
 git format-patch -1 commit-hash
 
-# Apply patch
+# パッチを適用
 git apply patch-file.patch
 git am patch-file.patch
 
-# Submodules
+# サブモジュール
 git submodule add <url> path
 git submodule update --init --recursive
 ```
 
 ---
 
-## Cleanup
+## クリーンアップ
 
 ```bash
-# Remove untracked files (dry run)
+# 未追跡ファイルを削除（試行実行）
 git clean -n
-git clean -f                # Actually remove
+git clean -f                # 実際に削除
 
-# Remove untracked directories
+# 未追跡ディレクトリを削除
 git clean -fd
 
-# Prune deleted remote branches
+# 削除済みリモートブランチを整理
 git fetch --prune
 git remote prune origin
 ```
 
 ---
 
-## Common Workflows
+## よくあるワークフロー
 
-### Start New Feature
+### 新機能の開始
 ```bash
 git checkout main
 git pull
 git checkout -b feature/new-feature
-# ... work ...
+# ... 作業 ...
 git add .
 git commit -m "Add new feature"
 git push -u origin feature/new-feature
-# Create PR/MR on platform
+# プラットフォームで PR/MR を作成
 ```
 
-### Sync と Main
+### メインとの同期
 ```bash
 git checkout feature-branch
 git fetch origin
 git rebase origin/main
-# Resolve conflicts if any
+# 競合があれば解決
 git push --force-with-lease
 ```
 
-### Hotfix Workflow
+### ホットフィックスのワークフロー
 ```bash
 git checkout main
 git pull
 git checkout -b hotfix/urgent-fix
-# ... fix ...
+# ... 修正 ...
 git commit -am "Fix critical bug"
 git checkout main
 git merge hotfix/urgent-fix
@@ -310,59 +310,59 @@ git push --tags
 
 ---
 
-## .gitignore Patterns
+## .gitignore パターン
 
 ```gitignore
-# Ignore specific file
+# 特定のファイルを無視
 filename.txt
 
-# Ignore all .log files
+# すべての .log ファイルを無視
 *.log
 
-# Ignore directory
+# ディレクトリを無視
 node_modules/
 __pycache__/
 
-# Negate (include despite earlier pattern)
+# 例外として含める
 !important.log
 
-# Comment
-# This is a comment
+# コメント
+# これはコメントです
 ```
 
 ---
 
-## Keyboard Shortcuts (Git Bash)
+## キーボードショートカット（Git Bash）
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+R` | Reverse search 歴史 |
-| `Tab` | Auto-完全 |
-| `Ctrl+C` | Cancel command |
-| `Ctrl+Z` | Suspend process |
-| `fg` | Resume suspended process |
+| `Ctrl+R` | 履歴の逆検索 |
+| `Tab` | 自動補完 |
+| `Ctrl+C` | コマンドを中止 |
+| `Ctrl+Z` | プロセスを一時停止 |
+| `fg` | 一時停止したプロセスを再開 |
 
 ---
 
 ## ベストプラクティス
 
 ✅ **Do:**
-- Write clear, descriptive commit messages
-- Commit frequently と logical groupings
-- Use branches のために features/fixes
-- Pull before starting work
-- Review `git status` often
+- わかりやすく具体的なコミットメッセージを書く
+- 小まめに、論理的な単位でコミットする
+- 機能や修正ごとにブランチを使う
+- 作業前に pull する
+- `git status` を頻繁に確認する
 
 ❌ **Don't:**
-- Commit sensitive データ (API keys, passwords)
-- Force push to shared branches
-- Commit large binary files
-- Ignore merge conflicts
-- Work directly on main/master
+- 機密データ（API キー、パスワード）をコミットしない
+- 共有ブランチに force push しない
+- 大きなバイナリファイルをコミットしない
+- マージ競合を無視しない
+- main/master で直接作業しない
 
 ---
 
-## Commit Message Convention
+## コミットメッセージ規約
 
 ```
 type(scope): subject
@@ -372,25 +372,25 @@ body (optional)
 footer (optional)
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code restructuring
-- `test`: Tests
-- `chore`: Maintenance
+**種類:**
+- `feat`: 新機能
+- `fix`: バグ修正
+- `docs`: ドキュメント
+- `style`: 書式のみの変更
+- `refactor`: コードの再構成
+- `test`: テスト
+- `chore`: 保守作業
 
-**Example:**
+**例:**
 ```
 feat(auth): add password reset functionality
 
-Implement password reset via email with token-based
-verification. Token expires after 24 hours.
+メールによるパスワードリセットをトークンベースの
+検証で実装する。トークンは 24 時間で期限切れになる。
 
 Closes #123
 ```
 
 ---
 
-*最終更新: June 2025 | Git 2.x*
+*最終更新: 2025年6月 | Git 2.x*
