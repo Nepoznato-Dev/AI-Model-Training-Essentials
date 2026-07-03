@@ -106,14 +106,14 @@ HAVING AVG(salary) > 50000;
 
 ## Joins
 
-### Inner Join
+### Внутреннее соединение (Inner Join)
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-### Left/Right Join
+### Левое/правое соединение (Left/Right Join)
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Full Outer Join
+### Полное внешнее соединение (Full Outer Join)
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Cross Join
+### Декартово соединение (Cross Join)
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-### Self Join
+### Самосоединение (Self Join)
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -270,7 +270,7 @@ TRUNCATE TABLE temp_data;
 
 ## Table Operations
 
-### CREATE Table
+### Создание таблицы (CREATE TABLE)
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-### ALTER Table
+### Изменение таблицы (ALTER TABLE)
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,7 +311,7 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-### DROP Table
+### Удаление таблицы (DROP TABLE)
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## Общие табличные выражения (CTE)
 
 ```sql
 -- Simple CTE
@@ -484,11 +484,11 @@ FROM daily_sales;
 - `DATE` - Date (YYYY-MM-DD)
 - `TIME` - Time (HH:MM:SS)
 - `DATETIME` - Date и time
-- `TIMESTAMP` - Unix timestamp
+- `TIMESTAMP` - временная метка Unix
 - `YEAR` - Year value
 
 ### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+- `BOOLEAN` или `BOOL` - логическое значение (истина/ложь)
 
 ### Binary
 - `BLOB` - Binary large object

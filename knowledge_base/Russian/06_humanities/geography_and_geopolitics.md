@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: geography_and_geopolitics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: geography_and_geopolitics.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # География и Геополитика
@@ -66,7 +66,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Economic География
 - **GDP Leaders**: USA, China, Japan, Germany, India, UK, France, Italy, Brazil, Canada
 - **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), African Continental Free Trade Area
-- **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (China dominant), Lithium (Australia, Chile, Argentina)
+- **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Редкоземельные элементы (China dominant), Lithium (Australia, Chile, Argentina)
 
 ## Political География
 
@@ -108,16 +108,16 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestinian conflict, Kurdish independence movements
 - **Resources**: ~48% из world's proven oil reserves, natural gas
 
-### Asia-Pacific
+### Азиатско-Тихоокеанский регион
 - **East Asia**: China (rising superpower), Japan (economic powerhouse), South Korea (Технология leader), North Korea (nuclear tensions)
 - **South Asia**: India (demographic giant), Pakistan (nuclear state), Bangladesh (rapid growth)
 - **Southeast Asia**: ASEAN cooperation, South China Sea disputes, economic growth
 - **Key Tensions**: Taiwan Strait, Korean Peninsula, India-China border, South China Sea
 
 ### Europe
-- **European Integration**: EU expansion, Brexit (UK left 2020), eurozone challenges
-- **Russia-Ukraine Conflict**: 2022 invasion, NATO expansion, energy dependence
-- **Balkan Region**: Post-Yugoslav states, EU accession processes
+- **Европейская интеграция**: EU expansion, Brexit (UK left 2020), eurozone challenges
+- **Конфликт России и Украины**: 2022 invasion, NATO expansion, energy dependence
+- **Балканский регион**: Post-Yugoslav states, EU accession processes
 - **Caucasus**: Armenia-Azerbaijan conflicts, Russian influence
 
 ### Americas
@@ -126,10 +126,10 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
 
 ### Africa
-- **Colonial Legacy**: Artificial borders, ethnic divisions, Язык policies
+- **Колониальное наследие**: Artificial borders, ethnic divisions, Язык policies
 - **Разработка Challenges**: Poverty, infrastructure, governance, debt
-- **Rising Powers**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
-- **Regional Issues**: Sahel instability, Horn из Africa conflicts, Great Lakes region
+- **Растущие державы**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
+- **Региональные проблемы**: Sahel instability, Horn из Africa conflicts, Great Lakes region
 
 ## Contemporary Geopolitical Issues
 
@@ -140,10 +140,10 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Water Conflicts**: Nile Dam dispute (Ethiopia-Egypt-Sudan), Indus Waters Treaty (India-Pakistan)
 
 ### Resource Геополитика
-- **Energy Transition**: Shift from fossil fuels, critical minerals (lithium, cobalt, rare earths)
+- **Energy Transition**: Shift from ископаемого топлива, critical minerals (lithium, cobalt, rare earths)
 - **Еда Безопасность**: Agricultural land, water access, supply chains
-- **Rare Earth Elements**: China controls ~80% из processing, essential для electronics и green tech
-- **Semiconductor Supply Chains**: Taiwan produces ~60% из world's chips, geopolitical flashpoint
+- **Редкоземельные элементы**: China controls ~80% из processing, essential для электроники и зелёных технологий
+- **Цепочки поставок полупроводников**: Taiwan produces ~60% из world's чипов, geopolitical flashpoint
 
 ### Territorial Disputes
 - **South China Sea**: China's nine-dash line vs. Philippines, Vietnam, Malaysia, Brunei, Taiwan
@@ -154,26 +154,26 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Kurds**: Stateless nation across Turkey, Syria, Iraq, Iran
 
 ### Migration и Borders
-- **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
-- **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
-- **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
-- **Brain Drain**: Skilled workers emigrating from developing to developed nations
+- **Кризисы беженцев**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
+- **Пограничные стены**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
+- **Миграционные маршруты**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
+- **Утечка мозгов**: Skilled workers emigrating from developing to developed nations
 
 ## Strategic Concepts
 
 ### Power Projection
-- **Hard Power**: Military force, economic sanctions, coercion
-- **Soft Power**: Cultural influence, diplomacy, values attraction
-- **Smart Power**: Combination из hard и soft power strategies
-- **Naval Power**: Control из sea lanes, chokepoints (Strait из Hormuz, Malacca, Suez, Panama)
-- **Air Power**: Strategic bombing, air superiority, drone warfare
-- **Cyber Power**: Digital warfare, information operations, infrastructure attacks
+- **Жёсткая сила**: Military force, economic sanctions, coercion
+- **Мягкая сила**: Cultural influence, diplomacy, values attraction
+- **Умная сила**: Combination из hard и soft power strategies
+- **Морская мощь**: Control из sea lanes, chokepoints (Strait из Hormuz, Malacca, Suez, Panama)
+- **Воздушная мощь**: Strategic bombing, air superiority, drone warfare
+- **Кибермощь**: Digital warfare, information operations, infrastructure attacks
 
 ### Spheres из Influence
-- **Monroe Doctrine**: US opposition to European colonization в Americas (1823)
-- **Russian Near Abroad**: Former Soviet states considered Russian sphere
+- **Доктрина Монро**: US opposition to European colonization в Americas (1823)
+- **Ближнее зарубежье России**: Former Soviet states considered Russian sphere
 - **Chinese Belt и Road**: Infrastructure investments creating economic influence
-- **American Hegemony**: Post-WWII global leadership role
+- **Американская гегемония**: Post-WWII global leadership role
 
 ### Balance из Power
 - **Unipolar**: Single dominant power (US post-Cold War)
@@ -185,16 +185,16 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Mapping Technologies
 - **GPS**: Global Positioning System, satellite navigation
-- **Remote Sensing**: Satellite imagery, aerial photography
-- **Spatial Analysis**: Pattern recognition, proximity analysis, Сеть analysis
+- **Дистанционное зондирование**: Satellite imagery, aerial photography
+- **Пространственный анализ**: Pattern recognition, proximity analysis, Сеть analysis
 - **Cartography**: Map-making, projections, scale, symbology
 
 ### Applications
-- **Urban Planning**: Land use, transportation, zoning
+- **Городское планирование**: Land use, transportation, zoning
 - **Экологический Monitoring**: Deforestation, pollution, climate change
-- **Disaster Response**: Emergency Управление, evacuation routes
+- **Реагирование на бедствия**: Emergency Управление, evacuation routes
 - **Бизнес Intelligence**: Market analysis, site selection, logistics
-- **Public Health**: Disease tracking, Здравоохранение access
+- **Общественное здравоохранение**: Disease tracking, Здравоохранение access
 
 ## Key Geopolitical Theorists
 
@@ -206,13 +206,13 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Important Geographic Terms
 
-- **Chokepoint**: Narrow passage critical для trade/military movement
-- **Hinterland**: Area serving a port or city economically
-- **Irredentism**: Claiming territory based on historical/ethnic ties
-- **Nation-State**: Political unit where nation и state boundaries align
+- **Узкий стратегический проход**: Narrow passage critical для trade/military movement
+- **Хинтерланд**: Area serving a port or city economically
+- **Ирредентизм**: Claiming territory based on historical/ethnic ties
+- **Национальное государство**: Political unit where nation и state boundaries align
 - **Realpolitik**: Politics based on practical objectives rather than ideals
-- **Self-Determination**: Right из peoples to choose their sovereignty
+- **Самоопределение**: Right из peoples to choose their sovereignty
 - **Shatterbelt**: Region caught between stronger external powers
-- **Stateless Nation**: Ethnic group without own state (Kurds, Palestinians, Tibetans)
-- **Supranational Organization**: Entity above national level (EU, UN)
-- **Terminal Moraine**: Geological feature marking glacier's furthest advance
+- **Народ без государства**: Ethnic group without own state (Kurds, Palestinians, Tibetans)
+- **Наднациональная организация**: Entity above national level (EU, UN)
+- **Конечная морена**: Geological feature marking glacier's furthest advance

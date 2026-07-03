@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: arts_and_literature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: arts_and_literature.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Искусства и Литература
@@ -23,12 +23,12 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Biography/Autobiography**: Life stories из real people (e.g., "the Diary из a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
 - **Memoir**: Personal accounts focusing on specific experiences or themes
 - **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
-- **Journalism**: News reporting, investigative pieces, feature articles
+- **Journalism**: News reporting, investigative pieces, очерковые статьи
 - **Academic Writing**: Research papers, scholarly articles, dissertations
 - **Self-Help**: Personal Разработка и improvement guides
 
 ### Poetry Forms
-- **Sonnet**: 14-line poem с specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
+- **Sonnet**: 14-line poem с specific rhyme scheme (шекспировская: ABAB CDCD EFEF GG; петрарковская: ABBAABBA CDECDE)
 - **Haiku**: Japanese form с 5-7-5 syllable pattern
 - **Limerick**: Five-line humorous poem с AABBA rhyme scheme
 - **Free Verse**: No regular meter or rhyme pattern
@@ -43,33 +43,33 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Medieval Литература** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "the Divine Comedy" by Dante)
 - **Renaissance** (14th - 17th century): Humanism, revival из classical learning (e.g., Shakespeare, Cervantes)
 - **Enlightenment** (17th - 18th century): Reason, Наука, individual rights (e.g., Voltaire, Jonathan Swift)
-- **Romanticism** (late 18th - mid-19th century): Emotion, Природа, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
-- **Realism** (mid-19th century): Accurate depiction из everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
-- **Modernism** (late 19th - mid-20th century): Experimental forms, stream из consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
-- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
+- **Romanticism** (конец XVIII - середина XIX века): Emotion, Природа, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
+- **Realism** (середина XIX века): Accurate depiction из everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
+- **Modernism** (конец XIX - середина XX века): Experimental forms, stream из consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
+- **Postmodernism** (с середины XX века по настоящее время): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
 
 ## Visual Искусства
 
 ### Art Movements
 - **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
 - **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
-- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
-- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
-- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
-- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
-- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
-- **Pop Art** (1950s - 1960s): Popular Культура imagery (e.g., Warhol, Lichtenstein)
-- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
+- **Impressionism** (конец XIX века): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
+- **Post-Impressionism** (конец XIX века): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
+- **Cubism** (начало XX века): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
+- **Surrealism** (1920-е - 1940-е годы): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
+- **Abstract Expressionism** (1940-е - 1950-е годы): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
+- **Pop Art** (1950-е - 1960-е годы): Popular Культура imagery (e.g., Warhol, Lichtenstein)
+- **Contemporary Art** (с 1970-х годов по настоящее время): Diverse media, conceptual approaches, social commentary
 
 ### Art Mediums и Techniques
 - **Painting**: Oil, acrylic, watercolor, fresco, tempera
-- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
+- **Drawing**: Pencil, charcoal, ink, pastel, сангина
 - **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
 - **Printmaking**: Etching, lithography, screen printing, woodcut
 - **Photography**: Digital, film, documentary, portrait, landscape, street photography
-- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
+- **Digital Art**: 3D-моделирование, цифровая живопись, генеративное искусство, NFT
 - **Installation Art**: Site-specific, immersive environments
-- **Производительность Art**: Live actions, body art, happenings
+- **Производительность Art**: Live actions, body art, хеппенинги
 
 ## Music
 
@@ -82,13 +82,13 @@ For accuracy improvements, please contribute edits via pull requests.
 - **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
 
 ### Music Genres
-- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
+- **Jazz**: Improvisation, swing rhythm, блюза influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
 - **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
 - **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
 - **Hip Hop/Rap**: Rhythmic speech, beats, DJ Культура (e.g., Tupac, Kendrick Lamar, Jay-Z)
 - **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
 - **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
-- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
+- **R&B/Soul**: Emotional vocals, грув (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
 - **Classical Crossover**: Fusion из classical и popular styles
 
 ### Music Theory Основы
@@ -96,7 +96,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Chords и Harmony**: Triads, seventh chords, chord progressions
 - **Rhythm и Meter**: Time signatures, tempo, syncopation
 - **Melody и Counterpoint**: Thematic Разработка, voice leading
-- **Form и Structure**: Sonata form, symphony movements, verse-chorus structure
+- **Form и Structure**: Sonata form, symphony movements, куплетно-припевная structure
 
 ## Theater и Производительность
 
@@ -123,14 +123,14 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Comedy**: Humor, satire, parody
 - **Horror**: Fear, suspense, supernatural elements
 - **Documentary**: Non-fiction, real События, educational
-- **Animation**: Hand-drawn, CGI, stop-motion
+- **Animation**: Hand-drawn, CGI, покадровая анимация
 - **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
 - **Наука Fiction**: Futuristic Технология, space, time travel
 
 ### Film Movements
 - **German Expressionism** (1920s): Distorted visuals, psychological themes ("the Cabinet из Dr. Caligari")
 - **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
+- **French New Wave** (1950s-1960s): Innovative editing, теория авторского кино (Godard, Truffaut)
 - **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
 - **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
 
@@ -170,7 +170,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Simile**: Comparison using "like" or "as"
 - **Personification**: Giving human qualities to non-human things
 - **Hyperbole**: Deliberate exaggeration
-- **Irony**: Contrast between expectation и reality (verbal, situational, dramatic)
+- **Irony**: Contrast between expectation и reality (словесная, ситуационная, драматическая)
 - **Symbolism**: Objects representing abstract ideas
 - **Imagery**: Descriptive Язык appealing to senses
 
@@ -212,7 +212,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ## Key Concepts в Art Criticism
 
 ### Analysis Frameworks
-- **Formalism**: Focus on visual elements (line, color, composition)
+- **Formalism**: Focus on visual elements (линия, цвет, композиция)
 - **Iconography**: Symbolic meanings и cultural references
 - **Contextual Analysis**: Historical, social, political context
 - **Feminist Criticism**: Gender representation, women artists
@@ -220,8 +220,8 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Psychoanalytic Criticism**: Unconscious motivations, symbolism
 
 ### Aesthetic Principles
-- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
-- **Contrast**: Differences в elements (light/dark, large/small)
+- **Balance**: Visual weight distribution (симметричный, асимметричный)
+- **Contrast**: Differences в elements (светлое/тёмное, крупное/малое)
 - **Emphasis**: Focal points, areas из interest
 - **Movement**: Visual flow guiding viewer's eye
 - **Pattern**: Repetition из elements

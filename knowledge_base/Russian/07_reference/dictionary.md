@@ -1,173 +1,173 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: dictionary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+<!--
+Этот файл был автоматически переведён с английского языка на русский.
+Источник: dictionary.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском языке.
+Для повышения точности перевода, пожалуйста, вносите правки через pull request.
 -->
 
-# Английский Словарь — Common Word Definitions
+# Английский словарь — определения распространённых слов
 
-A Справочник list из frequently used Английский words и their meanings,
-covering everyday vocabulary, academic terms, и words commonly encountered
-в questions и discussions.
+Справочный список часто используемых английских слов и их значений,
+охватывающий повседневную лексику, академические термины и слова,
+часто встречающиеся в вопросах и обсуждениях.
 
 ---
 
 ## A
 
-**abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — the power or skill to do something.
-**abstract** — existing as a concept rather than a concrete thing; a summary из a document.
-**accurate** — correct и precise; free from errors.
-**achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit the truth из something; to show recognition.
-**acquire** — to obtain or gain something, usually through effort or purchase.
-**adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough для a purpose.
-**adjacent** — next to or adjoining something else.
-**adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead из the current time.
-**advantage** — a condition that gives a favourable position over others.
-**adverse** — unfavourable; harmful.
-**affect** — to have an impact on something (verb); emotion (noun, formal).
-**aggregate** — a whole formed by combining several elements.
-**algorithm** — a set из rules or steps для solving a problem or task.
-**allocate** — to assign resources для a particular purpose.
-**alter** — to change something, usually partially.
-**ambiguous** — unclear; can be interpreted в more than one way.
-**analyse** — to examine в detail to understand or explain.
-**annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare для something before it happens.
-**apparent** — clearly visible or understood; seeming to be true.
-**approach** — a way из dealing с something; to come near.
-**approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge the quality, value, or Природа из something.
-**assign** — to give a task or role to someone; to allocate.
-**assume** — to accept something as true without proof.
-**attribute** — a quality or feature; to credit something to a cause (verb).
-**automate** — to make a process operate automatically without human intervention.
+**abandon** — навсегда покинуть; отказаться от цели или места.
+**ability** — способность или умение что-либо делать.
+**abstract** — существующий как понятие, а не как конкретный предмет; краткое изложение документа.
+**accurate** — правильный и точный; свободный от ошибок.
+**achieve** — успешно достичь цели благодаря усилиям.
+**acknowledge** — признать истинность чего-либо; выразить признание.
+**acquire** — получить или приобрести что-либо, обычно через усилия или покупку.
+**adapt** — приспособиться к новым условиям или требованиям.
+**adequate** — удовлетворительный; достаточный для определённой цели.
+**adjacent** — расположенный рядом или примыкающий к чему-либо другому.
+**adjust** — вносить небольшие изменения для улучшения соответствия или работы.
+**advance** — двигаться вперёд; прогресс; также «заранее», то есть раньше текущего момента.
+**advantage** — условие, дающее выгодное положение по сравнению с другими.
+**adverse** — неблагоприятный; вредный.
+**affect** — оказывать влияние на что-либо (глагол); эмоция (существительное, формальное).
+**aggregate** — целое, образованное объединением нескольких элементов.
+**algorithm** — набор правил или шагов для решения задачи.
+**allocate** — выделять ресурсы для определённой цели.
+**alter** — изменить что-либо, обычно частично.
+**ambiguous** — неясный; допускающий более одного толкования.
+**analyse** — подробно изучать, чтобы понять или объяснить.
+**annotate** — добавлять пояснительные заметки к тексту или схеме.
+**anticipate** — ожидать или готовиться к чему-либо заранее.
+**apparent** — явно видимый или понятный; кажущийся истинным.
+**approach** — способ работы с чем-либо; приближаться.
+**approximate** — приблизительно верный; неточный.
+**assess** — оценивать качество, ценность или природу чего-либо.
+**assign** — поручить задачу или роль кому-либо; распределить.
+**assume** — принимать что-либо как истину без доказательств.
+**attribute** — качество или признак; приписывать что-либо причине (глагол).
+**automate** — сделать так, чтобы процесс выполнялся автоматически, без участия человека.
 
 ## B
 
-**benefit** — an advantage or positive outcome.
-**bias** — an unfair preference для or against something; systematic error.
-**brief** — short в time or length; a summary or instructions.
+**benefit** — преимущество или положительный результат.
+**bias** — необъективное предпочтение чему-либо или против чего-либо; систематическая ошибка.
+**brief** — короткий по времени или объёму; краткое изложение или инструкции.
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having the ability or qualities needed для something.
-**capacity** — the maximum amount something can hold or do.
-**categorise** — to place into groups based on shared characteristics.
-**clarify** — to make something easier to understand.
-**classify** — to arrange into categories or groups.
-**coherent** — logical и consistent; easy to understand.
-**collaborate** — to work together с others towards a common goal.
-**compile** — to gather и organise information; to convert source code into executable code.
-**complex** — consisting из many interconnected parts; not simple.
-**component** — a part or element из a larger whole.
-**comprehend** — to understand fully.
-**compute** — to calculate or process Данные.
-**concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or finish something.
-**condition** — a requirement; a state из being; circumstances.
-**configure** — to arrange or set up a system в a particular way.
-**confirm** — to establish the truth or accuracy из something.
-**conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving в the same way; not contradictory.
-**context** — the circumstances surrounding something; background information.
-**contrast** — to compare в order to show differences.
-**convert** — to change from one form, unit, or use to another.
-**coordinate** — to organise different elements to work together.
-**criteria** — standards by which something is judged (plural из criterion).
+**calculate** — определить значение с помощью математических вычислений.
+**capable** — обладающий способностями или качествами, необходимыми для чего-либо.
+**capacity** — максимальный объём, который что-либо может вместить или выполнить.
+**categorise** — распределять по группам на основе общих признаков.
+**clarify** — сделать что-либо более понятным.
+**classify** — распределять по категориям или группам.
+**coherent** — логичный и последовательный; легко понимаемый.
+**collaborate** — работать вместе с другими ради общей цели.
+**compile** — собирать и систематизировать информацию; преобразовывать исходный код в исполняемый.
+**complex** — состоящий из множества взаимосвязанных частей; непростой.
+**component** — часть или элемент более крупного целого.
+**comprehend** — полностью понять.
+**compute** — вычислять или обрабатывать данные.
+**concept** — абстрактная идея или общее понятие.
+**conclude** — прийти к решению или завершить что-либо.
+**condition** — требование; состояние; обстоятельства.
+**configure** — определённым образом настроить систему.
+**confirm** — установить истинность или точность чего-либо.
+**conflict** — серьёзное разногласие; столкновение противоборствующих сторон.
+**consistent** — всегда ведущий себя одинаково; непротиворечивый.
+**context** — обстоятельства, окружающие что-либо; исходная информация.
+**contrast** — сравнивать, чтобы показать различия.
+**convert** — превратить из одной формы, единицы измерения или назначения в другое.
+**coordinate** — организовать разные элементы для совместной работы.
+**criteria** — стандарты, по которым что-либо оценивается (множественное число от criterion).
 
 ## D
 
-**Данные** — facts и Статистика collected для analysis.
-**debug** — to find и fix errors в computer code.
-**define** — to give the meaning из a word or describe the limits из something.
-**demonstrate** — to show how something works or is done.
-**deploy** — to put into use; to install и run software в a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
-**determine** — to find out or establish something conclusively.
-**develop** — to build, grow, or make something more elaborate over time.
-**differ** — to be unlike; to disagree.
-**distinct** — clearly different и separate.
-**distribute** — to spread or share across multiple locations or people.
-**domain** — a field из knowledge or activity; a Веб address.
-**duplicate** — an exact copy; to copy something.
+**data** — факты и статистика, собранные для анализа.
+**debug** — находить и исправлять ошибки в программном коде.
+**define** — дать значение слова или описать границы чего-либо.
+**demonstrate** — показать, как что-либо работает или выполняется.
+**deploy** — ввести в эксплуатацию; установить и запустить программное обеспечение в рабочей среде.
+**derive** — получить что-либо из источника; прийти к выводу путём рассуждений.
+**determine** — выяснить или окончательно установить что-либо.
+**develop** — создавать, развивать или совершенствовать что-либо со временем.
+**differ** — быть непохожим; не соглашаться.
+**distinct** — явно отличный и отдельный.
+**distribute** — распространять или распределять по нескольким местам или людям.
+**domain** — область знаний или деятельности; веб-адрес.
+**duplicate** — точная копия; копировать что-либо.
 
 ## E
 
-**efficient** — achieving results с minimum waste из time or resources.
-**element** — a basic component; one из the chemical substances в the periodic table.
-**embed** — to fix firmly within; to incorporate into a larger structure.
-**enable** — to make possible; to activate a feature.
-**enhance** — to improve the quality or value из something.
-**entity** — a thing с distinct existence; an object в a system.
-**enumerate** — to list items one by one; to count.
-**environment** — surroundings; в Вычисления, the system и configuration в which software runs.
-**error** — a mistake; a deviation from correct behaviour.
-**estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to form an opinion after careful consideration.
-**execute** — to carry out a plan or instruction; to run a computer program.
-**explicit** — clearly stated и leaving nothing implied.
-**extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtain from a source.
+**efficient** — достигающий результата с минимальными затратами времени или ресурсов.
+**element** — базовый компонент; одно из химических веществ в периодической таблице.
+**embed** — прочно закрепить внутри; включить в более крупную структуру.
+**enable** — сделать возможным; активировать функцию.
+**enhance** — улучшить качество или ценность чего-либо.
+**entity** — вещь с отдельным существованием; объект в системе.
+**enumerate** — перечислить элементы один за другим; пересчитать.
+**environment** — окружение; в вычислениях — система и конфигурация, в которых работает программное обеспечение.
+**error** — ошибка; отклонение от правильного поведения.
+**estimate** — приблизительный расчёт; оценивать примерно.
+**evaluate** — сформировать мнение после тщательного рассмотрения.
+**execute** — выполнить план или инструкцию; запустить компьютерную программу.
+**explicit** — чётко сформулированный, не оставляющий недосказанности.
+**extend** — сделать длиннее или больше; добавить функциональность.
+**extract** — извлечь или получить из источника.
 
 ## F
 
-**factor** — an element that contributes to a result; to break into components (math).
-**feature** — a distinctive aspect or capability.
-**filter** — to remove unwanted elements; a device or function that selects items.
-**flexible** — able to adapt to different conditions.
-**format** — the arrangement or layout из Данные; to prepare для use.
-**framework** — a basic structure providing Поддержка для building something.
-**function** — the purpose из something; a reusable block из code (programming).
-**fundamental** — forming the base or foundation; essential.
+**factor** — элемент, влияющий на результат; разложить на составляющие (в математике).
+**feature** — отличительная особенность или возможность.
+**filter** — устранять нежелательные элементы; устройство или функция, отбирающая элементы.
+**flexible** — способный приспосабливаться к разным условиям.
+**format** — организация или расположение данных; подготовить к использованию.
+**framework** — базовая структура, обеспечивающая поддержку для построения чего-либо.
+**function** — назначение чего-либо; переиспользуемый блок кода (в программировании).
+**fundamental** — образующий основу; необходимый.
 
 ## G
 
-**generate** — to produce or create.
-**global** — relating to the whole world; applying to an entire system.
-**guideline** — a general rule or recommendation.
+**generate** — производить или создавать.
+**global** — относящийся ко всему миру; применимый ко всей системе.
+**guideline** — общее правило или рекомендация.
 
 ## H
 
-**hierarchy** — a system ranked by levels из authority or importance.
-**hypothesis** — a proposed explanation that can be tested.
+**hierarchy** — система, упорядоченная по уровням влияния или значимости.
+**hypothesis** — предполагаемое объяснение, которое можно проверить.
 
 ## I
 
-**identify** — to recognise и name something.
-**implement** — to put a plan or system into effect.
-**implicit** — implied without being directly stated.
-**index** — a pointer to Данные location; an alphabetical list (noun); to categorise (verb).
-**infer** — to reach a conclusion from evidence without explicit statement.
-**initialise** — to set a variable or system to a starting state.
-**input** — Данные provided to a system; to enter Данные.
-**integrate** — to combine parts into a whole; to add a feature to an existing system.
-**interface** — a point where two Системы meet и interact; a contract в programming.
-**interpret** — to explain the meaning из something; to execute code line by line.
-**iterate** — to repeat a process, often с incremental changes.
+**identify** — распознать и назвать что-либо.
+**implement** — воплотить план или систему в жизнь.
+**implicit** — подразумеваемый, но не выраженный напрямую.
+**index** — указатель на расположение данных; алфавитный список (существительное); классифицировать (глагол).
+**infer** — прийти к выводу на основании данных без прямого утверждения.
+**initialise** — задать переменной или системе начальное состояние.
+**input** — данные, предоставляемые системе; вводить данные.
+**integrate** — объединить части в единое целое; добавить функцию в существующую систему.
+**interface** — точка соприкосновения и взаимодействия двух систем; контракт в программировании.
+**interpret** — объяснить значение чего-либо; выполнять код построчно.
+**iterate** — повторять процесс, часто с постепенными изменениями.
 
 ## J
 
-**justify** — to give reasons для a decision; to align text along a margin.
+**justify** — приводить основания для решения; выровнять текст по краю.
 
 ## K
 
-**key** — essential; a value used to look up Данные; a cryptographic secret.
+**key** — важный; значение, используемое для поиска данных; криптографический секрет.
 
 ## L
 
-**layer** — a level в a hierarchy; a component stacked on others.
-**legacy** — inherited from the past; old software still в use.
-**limit** — a boundary; the maximum or minimum value allowed.
-**linear** — arranged в a straight line; proportional increase.
-**link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; в Вычисления, running on the same machine.
-**logic** — reasoning according to rules; the flow из control в a program.
+**layer** — уровень в иерархии; компонент, расположенный поверх других.
+**legacy** — унаследованный от прошлого; старое программное обеспечение, всё ещё используемое.
+**limit** — граница; максимально или минимально допустимое значение.
+**linear** — расположенный по прямой линии; пропорциональное возрастание.
+**link** — связь между двумя вещами; гиперссылка.
+**local** — относящийся к близлежащей области; в вычислениях — выполняемый на той же машине.
+**logic** — рассуждение по правилам; поток управления в программе.
 
 ## M
 

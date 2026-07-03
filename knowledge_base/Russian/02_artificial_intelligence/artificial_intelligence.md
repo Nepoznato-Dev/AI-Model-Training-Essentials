@@ -1,91 +1,84 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: artificial_intelligence.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Искусственный интеллект
 
-# Artificial Intelligence
+## Что такое искусственный интеллект?
 
-## What is Artificial Intelligence?
+Искусственный интеллект (AI) — это моделирование человеческого интеллекта в машинах, которые запрограммированы думать, учиться и решать задачи. Системы AI могут выполнять задачи, обычно требующие человеческого интеллекта: распознавать речь, принимать решения, переводить языки и определять объекты на изображениях. Термин ввёл Джон Маккарти в 1956 году на Dartmouth Conference, которую обычно считают событием, положившим начало AI как научной области.
 
-Artificial Intelligence (AI) refers to the simulation из human intelligence в machines programmed to think, learn, и solve problems. AI Системы can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, и identifying objects в images. the term was coined by John McCarthy в 1956 at the Dartmouth Conference, widely regarded as the founding event из AI as a field.
+Современный AI обычно делят на Narrow AI (его также называют Weak AI), предназначенный для конкретных задач, и теоретический Artificial General Intelligence (AGI), который соответствовал бы человеческим когнитивным способностям во всех областях или превосходил бы их. Все существующие сегодня системы AI относятся к Narrow AI.
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed для specific tasks, и the theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Системы are Narrow AI.
+## История AI
 
-## История из AI
+История AI охватывает почти восемь десятилетий. Ранние теоретические основы заложил Алан Тьюринг: в своей статье 1950 года "Computing Machinery and Intelligence" он предложил тест Тьюринга — способ оценить, способна ли машина демонстрировать интеллектуальное поведение, неотличимое от человеческого. Dartmouth Conference 1956 года официально оформила AI как академическую дисциплину.
 
-the История из AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Вычисления Machinery и Intelligence" introduced the Turing Test — a measure из a machine's ability to exhibit intelligent behaviour indistinguishable from a human. the 1956 Dartmouth Conference formally established AI as an academic discipline.
+В 1950–1970-е годы появились ранние и весьма оптимистичные разработки, такие как ELIZA (простой чат-бот) и LISP (язык программирования, созданный для AI). «Зимы AI» 1970-х и 1980-х годов стали периодами снижения финансирования и интереса из-за неоправдавшихся ожиданий. В 1980-е начался новый подъём благодаря экспертным системам — программам на основе правил, кодировавшим человеческую экспертизу. В 2000-е прорывы в machine learning ускорились благодаря интернету и росту объёмов данных. В 2010-е на первый план вышло deep learning, преобразив computer vision, обработку естественного языка (NLP) и reinforcement learning.
 
-the 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) и LISP (a programming Язык designed для AI). the "AI winters" из the 1970s и 1980s were periods из reduced funding и interest following unmet expectations. A resurgence в the 1980s came с expert Системы — rule-based programs that encoded human expertise. the 2000s brought Машинное обучение breakthroughs fuelled by the internet и growing datasets. the 2010s saw the rise из Глубокое обучение, transforming computer vision, natural Язык processing (NLP), и reinforcement learning.
+## Machine Learning
 
-## Машинное обучение
+Machine Learning (ML) — это подраздел AI, который позволяет системам учиться на данных без явного программирования. Ключевые категории ML включают:
 
-Машинное обучение (ML) is a subset из AI that enables Системы to learn from Данные without being explicitly programmed. Key ML categories include:
+**Supervised Learning**: Модель обучается на размеченных парах «вход-выход». Примеры — фильтрация спама и классификация изображений. Среди алгоритмов — линейная регрессия, деревья решений, support vector machines и нейронные сети.
 
-**Supervised Learning**: the model is trained on labelled input-output pairs. Примеры include spam detection и image classification. Algorithms include linear regression, decision trees, Поддержка vector machines, и Нейронные сети.
+**Unsupervised Learning**: Модель находит закономерности в неразмеченных данных. Примеры — сегментация клиентов и обнаружение аномалий. Среди алгоритмов — кластеризация k-means и principal component analysis (PCA).
 
-**Unsupervised Learning**: the model finds patterns в unlabelled Данные. Примеры include customer segmentation и anomaly detection. Algorithms include k-means clustering и principal component analysis (PCA).
+**Reinforcement Learning**: Агент учится, взаимодействуя со средой и получая награды или штрафы. Этот подход используется в игровом AI (AlphaGo, AlphaZero), робототехнике и рекомендательных системах.
 
-**Reinforcement Learning**: An agent learns by interacting с an environment, receiving rewards or penalties. Used в game-playing AI (AlphaGo, AlphaZero), robotics, и recommendation Системы.
+**Semi-Supervised and Self-Supervised Learning**: Сочетает небольшие объёмы размеченных данных с большими неразмеченными наборами. Модели GPT используют self-supervised подход на этапе pre-training.
 
-**Semi-Supervised и Self-Supervised Learning**: Combine small amounts из labelled Данные с large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+## Deep Learning
 
-## Глубокое обучение
+Deep Learning — это подраздел machine learning, использующий искусственные нейронные сети со множеством слоёв (deep networks). Эти сети, в общих чертах вдохновлённые нейронной структурой мозга, учатся строить иерархические представления данных. Deep learning лежит в основе:
 
-Глубокое обучение is a subset из Машинное обучение that uses artificial Нейронные сети с many layers (deep networks). Inspired loosely by the brain's neural structure, these networks learn hierarchical representations из Данные. Глубокое обучение powers:
+- **Computer Vision**: Распознавания изображений, обнаружения объектов, медицинской визуализации
+- **Natural Language Processing**: Машинного перевода, анализа тональности, ответа на вопросы
+- **Speech Recognition**: Голосовых ассистентов вроде Siri, Alexa, Google Assistant
+- **Generative AI**: Генерации изображений (DALL-E, Stable Diffusion) и текста (GPT)
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural Язык Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+К ключевым архитектурам deep learning относятся convolutional neural networks (CNNs) для изображений, recurrent neural networks (RNNs) и LSTMs для последовательностей, transformers для языка и generative adversarial networks (GANs) для синтеза.
 
-Key Глубокое обучение architectures include convolutional Нейронные сети (CNNs) для images, recurrent Нейронные сети (RNNs) и LSTMs для sequences, transformers для Язык, и generative adversarial networks (GANs) для synthesis.
+## Large Language Models (LLMs)
 
-## Large Язык Models (LLMs)
+Large Language Models (LLMs) — это системы AI, обученные на огромных объёмах текстовых данных для понимания и генерации человеческого языка. Они основаны на архитектуре Transformer, представленной в статье 2017 года "Attention is All You Need" Васвани и соавторов. LLM предсказывают следующий token (часть слова) в последовательности, благодаря чему могут генерировать связный текст, отвечать на вопросы, писать код и выполнять задачи рассуждения.
 
-Large Язык Models (LLMs) are AI Системы trained on vast amounts из text Данные to understand и generate human Язык. They are based on the Transformer Архитектура, introduced в the 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict the next token (word piece) в a sequence, allowing them to generate coherent text, answer questions, write code, и perform reasoning tasks.
+Среди заметных LLM:
+- **GPT series** (OpenAI): GPT-3, GPT-4 и последующие модели — широко используются для чата и кода
+- **Claude** (Anthropic): Делает акцент на безопасности и полезности
+- **Gemini** (Google DeepMind): Мультимодальная модель, объединяющая текст, изображения и код
+- **LLaMA / Llama 3** (Meta): Open-weight модели для исследований и локального развёртывания
+- **Mistral** (Mistral AI): Эффективные открытые модели, конкурирующие с куда более крупными LLM
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, и successors — widely used для chat и code
-- **Claude** (Anthropic): Focused on safety и helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, и code
-- **LLaMA / Llama 3** (Meta): Open-weight models для research и local Развертывание
-- **Mistral** (Mistral AI): Efficient open models competitive с much larger LLMs
+LLM обучаются в два этапа: pre-training (без учителя на больших текстовых корпусах) и fine-tuning (с учителем или с помощью reinforcement learning from human feedback, RLHF). Context windows описывают, какой объём текста LLM может обработать за один раз: от 4K tokens у ранних версий GPT-3 до более чем 1 миллиона tokens у самых продвинутых моделей 2024 года.
 
-LLMs are trained в two stages: pre-training (unsupervised on large text corpora) и fine-tuning (supervised or via reinforcement learning from human Обратная связь, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens в the most Продвинутый 2024 models.
+## Этика и безопасность AI
 
-## AI Ethics и Safety
+AI поднимает важные этические вопросы, связанные с предвзятостью, приватностью, вытеснением рабочих мест и риском злоупотребления. Алгоритмическая предвзятость возникает, когда обучающие данные отражают историческое неравенство, из-за чего системы AI выдают дискриминационные результаты. У систем распознавания лиц обнаруживали более высокий уровень ошибок для людей с более тёмной кожей. Алгоритмы найма также показывали склонность отдавать предпочтение мужчинам.
 
-AI raises important ethical questions including bias, privacy, job displacement, и the risk из misuse. Algorithmic bias occurs when training Данные reflects historical inequalities, causing AI Системы to produce discriminatory outputs. Facial recognition Системы have shown higher error rates для darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+AI safety — это область, посвящённая тому, чтобы системы AI вели себя так, как задумано, и не причиняли непреднамеренного вреда. Ключевые темы здесь:
+- **Alignment**: Обеспечение соответствия целей AI человеческим ценностям
+- **Interpretability / Explainability**: Понимание, почему AI принял то или иное решение (особенно важно в медицине, праве и финансах)
+- **Misuse**: Deepfakes, дезинформация, кибератаки, созданные или усиленные AI
+- **Existential risk**: Теоретическая опасность того, что будущий AGI будет преследовать цели, несовместимые с выживанием человечества
 
-AI safety is the field dedicated to ensuring AI Системы behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical в Медицина, Закон, Финансы)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a Будущее AGI could pursue goals misaligned с human survival
+Среди организаций, занимающихся безопасностью AI, — Safety team в OpenAI, Anthropic (основана бывшими исследователями OpenAI по безопасности), safety team в DeepMind и независимые институты вроде MIRI и ARC.
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, и independent institutes like MIRI и ARC.
+## AI в обществе
 
-## AI в Society
+AI трансформирует почти каждую отрасль:
 
-AI is transforming nearly every industry:
+- **Healthcare**: AI помогает диагностировать рак по медицинским изображениям, прогнозировать исходы лечения, ускорять разработку лекарств (AlphaFold решила задачу предсказания структуры белков) и персонализировать планы лечения.
+- **Finance**: ML-модели используются для выявления мошенничества, алгоритмической торговли, кредитного скоринга и robo-advisors.
+- **Transportation**: Беспилотные автомобили используют computer vision, lidar и reinforcement learning. Среди лидеров — Tesla Autopilot, Waymo и Cruise.
+- **Education**: Платформы персонализированного обучения подстраивают контент под темп и стиль обучения конкретного ученика.
+- **Creative fields**: AI генерирует музыку, искусство и тексты; инструменты вроде Midjourney, DALL-E и GitHub Copilot изменили творческие процессы.
+- **Cybersecurity**: AI обнаруживает аномалии, выявляет угрозы и используется как в атаках, так и в защите.
 
-- **Здравоохранение**: AI assists в diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), и personalising treatment plans.
-- **Финансы**: Fraud detection, algorithmic trading, credit scoring, и robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, и reinforcement learning. Tesla Autopilot, Waymo, и Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace и learning style.
-- **Creative fields**: AI generates music, art, и writing; tools like Midjourney, DALL-E, и GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, и powers both attacks и defences.
+## Робототехника и embodied AI
 
-## Robotics и Embodied AI
+Робототехника объединяет AI с физическими машинами. Современные роботы используют восприятие (камеры, lidar), планирование и управление, чтобы перемещаться и взаимодействовать с окружающей средой. Atlas от Boston Dynamics демонстрирует продвинутое двуногое движение. Промышленные роботы компаний вроде ABB и FANUC автоматизируют производство. Бытовые роботы (Roomba) и хирургические роботы (da Vinci System) применяют AI в повседневной жизни и медицине. Исследования embodied AI сосредоточены на агентах, которые осваивают физические навыки через взаимодействие с миром, сокращая разрыв между симулированной и реальной средой.
 
-Robotics combines AI с physical machines. Modern robots use perception (cameras, lidar), planning, и control to navigate и manipulate environments. Boston Dynamics' Atlas demonstrates Продвинутый bipedal movement. Industrial robots from companies like ABB и FANUC automate manufacturing. Household robots (Roomba) и surgical robots (da Vinci System) apply AI в everyday и medical settings. Embodied AI research focuses on agents that learn physical skills through interaction с the world, bridging the gap between simulated и real environments.
+## Актуальные тренды AI (2020-е)
 
-## Current AI Trends (2020s)
-
-- **Multimodal AI**: Системы that process text, images, audio, и video together (GPT-4V, Gemini)
-- **Agents и agentic AI**: LLMs that can use tools, browse the Веб, write code, и take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models для researchers
-- **On-device AI**: Running AI models locally on phones и laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: the EU AI Act (2024) is the world's first comprehensive AI Закон, classifying AI Системы by risk level
+- **Multimodal AI**: Системы, которые одновременно обрабатывают текст, изображения, аудио и видео (GPT-4V, Gemini)
+- **Agents and agentic AI**: LLM, способные использовать инструменты, просматривать веб, писать код и выполнять многошаговые действия (OpenAI's Operator, Anthropic Computer Use)
+- **Open-weight models**: LLaMA от Meta демократизировала доступ исследователей к крупным моделям
+- **On-device AI**: Запуск моделей AI локально на телефонах и ноутбуках без подключения к облаку (Apple Intelligence, Qualcomm NPUs)
+- **AI regulation**: EU AI Act (2024) — первый в мире всеобъемлющий закон об AI, классифицирующий системы AI по уровню риска

@@ -1,186 +1,179 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: ml_evaluation_and_workflow.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Оценка и рабочий процесс машинного обучения
 
-# Машинное обучение Evaluation и Workflow
-
-A practical Руководство to the ML lifecycle — from problem framing to production monitoring — с a focus on metrics, validation, и debugging.
+Практическое руководство по жизненному циклу ML — от постановки задачи до мониторинга в production — с акцентом на метрики, валидацию и отладку.
 
 ---
 
-## the ML Workflow (CRISP-ML)
+## Рабочий процесс ML (CRISP-ML)
 
-1. **Бизнес Understanding**: Define the objective и success criteria.
-2. **Данные Understanding**: Explore Доступно Данные, identify quality issues.
-3. **Данные Preparation**: Clean, transform, и split Данные.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess Производительность against metrics.
-6. **Развертывание**: Serve the model в production.
-7. **Monitoring**: Track drift, Производительность, и anomalies.
+1. **Понимание бизнеса**: Определите цель и критерии успеха.
+2. **Понимание данных**: Изучите доступные данные и выявите проблемы с качеством.
+3. **Подготовка данных**: Очистите, преобразуйте и разделите данные.
+4. **Моделирование**: Обучите модели и настройте гиперпараметры.
+5. **Оценка**: Оцените качество по выбранным метрикам.
+6. **Развёртывание**: Введите модель в production.
+7. **Мониторинг**: Отслеживайте дрейф, качество и аномалии.
 
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
-
----
-
-## Данные Splitting
-
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit the model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters и select model variants.
-- **Test set** (~15%): Used only once at the very end to estimate generalisation Производительность.
-
-**Important:** the test set must be kept completely untouched until final evaluation to avoid Данные leakage.
-
-### Cross-Validation (k-fold)
-для small datasets, use k-fold cross-validation: split Данные into k folds, train on k-1, validate on the remaining, и repeat k times. Average the Производительность. k=5 or k=10 is common.
-
-### Stratified Splitting
-для classification с imbalanced classes, use stratified splits to preserve class proportions в each subset.
-
-### Time-Based Splitting
-для time-series Данные, split chronologically (train on past, test on Будущее) rather than randomly.
+Это итеративный цикл — по результатам оценки вы будете возвращаться к предыдущим этапам.
 
 ---
 
-## Evaluation Metrics
+## Разделение данных
 
-### Classification Metrics
+### Разделение на обучение / валидацию / тест
+- **Обучающая выборка** (~70%): Используется для подгонки параметров модели.
+- **Валидационная выборка** (~15%): Используется для настройки гиперпараметров и выбора вариантов модели.
+- **Тестовая выборка** (~15%): Используется только один раз в самом конце для оценки обобщающей способности.
 
-| Metric | What it measures | Best used для |
+**Важно:** Тестовая выборка должна оставаться полностью нетронутой до финальной оценки, чтобы избежать утечки данных.
+
+### Кросс-валидация (k-fold)
+Для небольших наборов данных используйте k-fold cross-validation: разделите данные на k частей, обучайте на k-1, проверяйте на оставшейся части и повторяйте это k раз. Затем усредните качество. Обычно используют k=5 или k=10.
+
+### Стратифицированное разделение
+Для задач классификации с несбалансированными классами используйте стратифицированное разделение, чтобы сохранить доли классов в каждой подвыборке.
+
+### Разделение по времени
+Для временных рядов разделяйте данные хронологически (обучение на прошлом, тестирование на будущем), а не случайным образом.
+
+---
+
+## Метрики оценки
+
+### Метрики классификации
+
+| Метрика | Что измеряет | Когда лучше использовать |
 |--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean из precision и recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under the ROC curve; tradeoff between TPR и FPR | General classifier Производительность independent из threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Сбалансированные датасеты |
+| **Precision** | TP / (TP + FP) | Когда ложноположительные срабатывания дорого обходятся (например, при обнаружении спама) |
+| **Recall** | TP / (TP + FN) | Когда ложноотрицательные срабатывания дорого обходятся (например, при скрининге на рак) |
+| **F1-score** | Гармоническое среднее Precision и Recall | Несбалансированные датасеты, метрика в виде одного числа |
+| **AUC-ROC** | Площадь под ROC-кривой; компромисс между TPR и FPR | Общее качество классификатора независимо от порога |
+| **AUC-PR** | Площадь под кривой Precision-Recall | Сильно несбалансированные датасеты |
 
-**Definitions:**
+**Определения:**
 - TP = True Positive
 - TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+- FP = False Positive (ошибка I рода)
+- FN = False Negative (ошибка II рода)
 
-### Regression Metrics
+### Метрики регрессии
 
-| Metric | What it measures | Sensitivity to outliers |
+| Метрика | Что измеряет | Чувствительность к выбросам |
 |--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root из MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient из Determination) | Proportion из variance explained | None directly, but sensitive to outliers indirectly |
+| **MSE** (Mean Squared Error) | Среднюю квадратичную разницу | Высокая |
+| **RMSE** (Root Mean Squared Error) | Квадратный корень из MSE (в тех же единицах, что и целевая переменная) | Высокая |
+| **MAE** (Mean Absolute Error) | Среднюю абсолютную разницу | Низкая |
+| **R²** (Coefficient of Determination) | Долю объяснённой дисперсии | Напрямую — нет, но косвенно чувствительна к выбросам |
 
-### Ranking и Retrieval Metrics
-- **Precision@k**: Fraction из relevant items among top-k recommendations.
-- **Recall@k**: Fraction из all relevant items that appear в top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts для position relevance.
-- **Hit Rate**: Whether a relevant item appears в the top-k.
+### Метрики ранжирования и поиска
+- **Precision@k**: Доля релевантных элементов среди top-k рекомендаций.
+- **Recall@k**: Доля всех релевантных элементов, попавших в top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain): Учитывает релевантность с поправкой на позицию.
+- **Hit Rate**: Показывает, появляется ли релевантный элемент в top-k.
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" the model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap с Справочник translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap для summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms и stems.
-
----
-
-## Evaluation Pitfalls
-
-### Данные Leakage
-Occurs when information from the test set inadvertently influences training.
-- **Prevent:** Never use test Данные для feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
-
-### Overfitting
-Model performs well on training Данные but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify Архитектура, or collect more Данные.
-
-### Underfitting
-Model performs poorly on both training и validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
-
-### Imbalanced Данные
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
-
-### Temporal Drift (Concept Drift)
-the relationship between features и target changes over time.
-- **Mitigate:** Retrain periodically, monitor Производительность, use drift detection algorithms.
+### Метрики для генеративных моделей / LLM
+- **Perplexity**: Насколько модель «удивляется» отложенному тексту (чем ниже, тем лучше).
+- **BLEU**: Пересечение n-грамм с эталонными переводами (ориентирована на precision).
+- **ROUGE**: Ориентированная на recall мера пересечения для суммаризации.
+- **BERTScore**: Семантическое сходство с использованием контекстных эмбеддингов (более устойчива, чем BLEU).
+- **METEOR**: Учитывает синонимы WordNet и основы слов.
 
 ---
 
-## Hyperparameter Tuning
+## Подводные камни оценки
 
-- **Grid Search**: Exhaustively try all combinations из a predefined set из hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search для high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model из the objective function и selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps для distributed tuning.
+### Утечка данных
+Возникает, когда информация из тестовой выборки непреднамеренно влияет на обучение.
+- **Как предотвратить:** Никогда не используйте тестовые данные для feature engineering, нормализации или настройки гиперпараметров.
+- **Как обнаружить:** Если модель показывает подозрительно высокий результат, стоит заподозрить утечку.
 
-**Suggested search ranges для common hyperparameters:**
+### Переобучение
+Модель хорошо работает на обучающих данных, но плохо — на валидации и тесте.
+- **Как снизить:** Используйте регуляризацию, early stopping, упростите архитектуру или соберите больше данных.
 
-| Parameter | Suggested range (log-scale) |
+### Недообучение
+Модель плохо работает и на обучении, и на валидации.
+- **Как снизить:** Используйте более сложную модель, добавьте признаки или ослабьте регуляризацию.
+
+### Несбалансированные данные
+- **Как снизить:** Используйте веса классов, oversampling (SMOTE), undersampling или подходящие метрики (F1, AUC-PR) вместо Accuracy.
+
+### Временной дрейф (Concept Drift)
+Связь между признаками и целевой переменной со временем меняется.
+- **Как снизить:** Периодически переобучайте модель, отслеживайте качество, используйте алгоритмы обнаружения дрейфа.
+
+---
+
+## Настройка гиперпараметров
+
+- **Grid Search**: Полный перебор всех комбинаций из заранее заданного набора гиперпараметров. Просто, но вычислительно дорого.
+- **Random Search**: Случайная выборка комбинаций из распределений. Для пространств большой размерности эффективнее, чем grid search.
+- **Bayesian Optimisation**: Строит вероятностную модель целевой функции и интеллектуально подбирает гиперпараметры. Библиотеки: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning**: Используйте инструменты вроде Optuna, Ray Tune или Weights & Biases Sweeps для распределённой настройки.
+
+**Рекомендуемые диапазоны поиска для распространённых гиперпараметров:**
+
+| Параметр | Рекомендуемый диапазон (лог-шкала) |
 |-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number из layers (NN) | 2 to 6 |
-| Number из neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+| Скорость обучения | 1e-5 to 1e-1 |
+| Размер батча | 16, 32, 64, 128, 256 |
+| Число слоёв (NN) | 2 to 6 |
+| Число нейронов (NN) | 32 to 1024 |
+| Регуляризация (L2) | 1e-6 to 1e-2 |
+| Глубина дерева (XGBoost) | 3 to 12 |
 
 ---
 
-## Model Selection и Validation
+## Выбор модели и валидация
 
-1. **Baseline model**: Start с a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Сеть).
-3. **Cross-validate** each candidate on the validation set.
-4. **Compare metrics** (с confidence intervals) и select the best candidate.
-5. **Final evaluation** on the held-out test set.
-6. **Error analysis**: Look at Примеры the model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) и feed insights back into Данные preparation or feature engineering.
-
----
-
-## Развертывание и Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes из Данные offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time с low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **Производительность monitoring**: Track accuracy/F1 over time on live Данные (when ground truth is Доступно).
-- **Данные drift**: Monitor changes в input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes в the relationship between inputs и outputs.
-- **Prediction drift**: Track the distribution из predicted outputs.
-- **Latency и throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging и Alerting
-- Log all prediction requests и responses (с anonymisation).
-- Set alerts для:
-  - Significant drop в Производительность.
-  - High percentage из missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning и Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store и version models, metadata, и evaluation results.
-- Store the training code и Данные version (via DVC or Git LFS) alongside the model.
+1. **Базовая модель**: Начните с простой эвристики или простой модели (например, logistic regression или предсказания среднего), чтобы задать нижнюю границу качества.
+2. **Модели-кандидаты**: Обучите несколько семейств моделей (например, Random Forest, XGBoost, Neural Network).
+3. **Проведите кросс-валидацию** каждой модели-кандидата на валидационной выборке.
+4. **Сравните метрики** (с доверительными интервалами) и выберите лучший вариант.
+5. **Финальная оценка** на отложенной тестовой выборке.
+6. **Анализ ошибок**: Посмотрите на примеры, где модель ошибается. Выявите закономерности (например, редкие классы или неоднозначные входы) и используйте эти выводы для улучшения подготовки данных или feature engineering.
 
 ---
 
-## Practical Workflow Checklist
+## Развёртывание и мониторинг
 
-- [ ] Problem framed и success metric defined.
-- [ ] Данные exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained и validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] Развертывание plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (Данные card, model card) completed.
+### Паттерны обслуживания
+- **Batch inference**: Обработка больших объёмов данных офлайн (например, ночные рекомендации).
+- **Online inference**: Предсказания в реальном времени через API (например, кредитный скоринг или обнаружение мошенничества).
+- **Streaming inference**: Событийная обработка в реальном времени с низкой задержкой (например, оповещения от IoT-датчиков).
+
+### Мониторинг модели
+- **Мониторинг качества**: Отслеживайте Accuracy/F1 во времени на реальных данных (когда доступна ground truth).
+- **Data drift**: Отслеживайте изменения в распределениях входных признаков (например, с помощью PSI – Population Stability Index).
+- **Concept drift**: Отслеживайте изменения в зависимости между входами и выходами.
+- **Prediction drift**: Отслеживайте распределение предсказанных выходов.
+- **Latency and throughput**: Убедитесь, что соблюдаются SLA (Service Level Agreements).
+
+### Логирование и оповещения
+- Логируйте все запросы и ответы с предсказаниями (с анонимизацией).
+- Настройте оповещения для:
+  - Значительного падения качества.
+  - Высокой доли пропущенных или некорректных входных данных.
+  - Выходов модели за ожидаемые пределы.
+
+### Версионирование моделей и registry
+- Используйте model registry (например, MLflow, Weights & Biases, Sagemaker Model Registry) для хранения и версионирования моделей, метаданных и результатов оценки.
+- Храните рядом с моделью код обучения и версию данных (через DVC или Git LFS).
+
+---
+
+## Практический чеклист рабочего процесса
+
+- [ ] Задача сформулирована и метрика успеха определена.
+- [ ] Исследование данных выполнено (пропуски, выбросы, распределение).
+- [ ] Создано разделение на train/validation/test (при необходимости стратифицированное).
+- [ ] Базовая модель определена.
+- [ ] Модели-кандидаты обучены и провалидированы.
+- [ ] Гиперпараметры настроены.
+- [ ] Лучшая модель выбрана с помощью кросс-валидации.
+- [ ] Выполнена финальная оценка на тестовой выборке.
+- [ ] Анализ ошибок проведён.
+- [ ] План развёртывания готов (serving infrastructure).
+- [ ] Настроен dashboard для мониторинга.
+- [ ] Документация (data card, model card) завершена.

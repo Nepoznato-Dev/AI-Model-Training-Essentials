@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stashing
+## Отложенные изменения (stash)ing
 
 ```bash
 # Save work in progress
@@ -334,7 +334,7 @@ __pycache__/
 
 ## Keyboard Shortcuts (Git Bash)
 
-| Shortcut | Action |
+| Сочетание | Действие |
 |----------|--------|
 | `Ctrl+R` | Reverse search История |
 | `Tab` | Auto-Полный |
@@ -393,4 +393,4 @@ Closes #123
 
 ---
 
-*Последнее обновление: June 2025 | Git 2.x*
+*Последнее обновление: июнь 2025 | Git 2.x*

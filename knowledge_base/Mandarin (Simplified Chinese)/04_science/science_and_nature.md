@@ -1,48 +1,41 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: science_and_nature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 科学与自然
 
-# 科学 和 自然
+## 物理学
 
-## Physics
+物理学是研究物质、能量以及宇宙基本作用力的自然科学。四种基本作用力分别是引力、电磁力、强核力和弱核力。引力是四种力中最弱的一种，但作用范围无限，并影响所有具有质量的物体。牛顿万有引力定律指出，任何两个物体之间都会相互吸引，其作用力与它们质量的乘积成正比，与它们之间距离的平方成反比。
 
-Physics is 这 natural 科学 that studies matter, energy, 和 这 fundamental forces 的 这 universe. 这 four fundamental forces are gravity, electromagnetism, 这 strong nuclear force, 和 这 weak nuclear force. Gravity is 这 weakest 的 这 four forces but has infinite range 和 affects all objects 与 mass. Newton's 法律 的 gravity states that every object attracts every other object 与 a force proportional to their masses 和 inversely proportional to 这 square 的 这 distance between them.
+爱因斯坦的广义相对论将引力描述为质量和能量导致的时空弯曲。爱因斯坦的狭义相对论则指出，光速在所有惯性参考系中恒定不变，同时质量与能量是等价的，可表示为 E = mc²。
 
-Einstein's theory 的 general relativity describes gravity as a curvature 的 spacetime caused by mass 和 energy. Einstein's theory 的 special relativity established that 这 speed 的 light is constant 在 all inertial frames 的 参考 和 that mass 和 energy are equivalent, expressed as E = mc squared.
+## 原子与物质
 
-## Atoms 和 Matter
+原子是能够保留元素化学性质的最小单位。原子由包含质子和中子的原子核，以及围绕其运动的电子组成。原子中的质子数决定该原子属于哪种元素，这个数称为原子序数。元素按照原子序数排列在元素周期表中。目前已知元素共有 118 种。氢是宇宙中最轻、含量最丰富的元素。碳能够形成四个化学键，因此成为所有已知生命的基础。
 
-An atom is 这 smallest unit 的 an element that retains 这 chemical properties 的 that element. Atoms consist 的 a nucleus containing protons 和 neutrons, surrounded by electrons. 这 number 的 protons 在 an atom determines which element it is, called 这 atomic number. Elements are organized 在 这 periodic table by atomic number. There are 118 known elements. Hydrogen is 这 lightest 和 most abundant element 在 这 universe. Carbon is 这 basis 的 all known life due to its ability to form four chemical bonds.
+物质通常有四种常见状态：固态、液态、气态和等离子态。在固体中，原子紧密排列；在液体中，原子可以流动但仍保持较近距离；在气体中，原子自由运动。等离子体是电离气体，也是宇宙中最常见的物质状态，恒星主要由它构成。
 
-Matter exists 在 four common states: solid, liquid, gas, 和 plasma. 在 a solid, atoms are tightly packed. 在 a liquid, atoms can flow but remain close. 在 a gas, atoms move freely. Plasma is an ionized gas 和 is 这 most common state 的 matter 在 这 universe, found 在 stars.
+## 化学
 
-## Chemistry
+化学研究物质及其发生的变化。化学反应涉及化学键的断裂与形成。酸是在溶液中提供氢离子（质子）的物质。碱是能够接受氢离子的物质。pH 标度用于衡量溶液的酸碱性，范围从 0（酸性最强）到 14（碱性最强），其中 7 为中性。水的 pH 值是 7。
 
-Chemistry is 这 study 的 matter 和 这 changes it undergoes. Chemical reactions involve 这 breaking 和 forming 的 chemical bonds. An acid is a substance that donates hydrogen ions (protons) 在 a solution. A base is a substance that accepts hydrogen ions. 这 pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), 与 7 being neutral. Water has a pH 的 7.
+光合作用是植物、藻类和某些细菌将光能（通常来自太阳）转化为储存在葡萄糖中的化学能的过程。其反应式为：二氧化碳 + 水 + 光能 → 葡萄糖 + 氧气。光合作用对地球生命至关重要，因为它产生氧气，并构成大多数食物链的基础。
 
-Photosynthesis is 这 process by which plants, algae, 和 some bacteria convert light energy, usually from 这 Sun, into chemical energy stored 在 glucose. 这 equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential 为 life on Earth as it produces oxygen 和 forms 这 base 的 most 食物 chains.
+## 生物学
 
-## Biology
+生物学研究生物体。所有生命都具有一些共同特征：有组织结构、能对刺激作出反应、会生长、会繁殖并利用能量。DNA（脱氧核糖核酸）携带生物体的遗传信息。DNA 是由四种核苷酸碱基——腺嘌呤、胸腺嘧啶、胞嘧啶和鸟嘌呤——组成的双螺旋结构。细胞是生命的基本结构单位。细胞主要分为两类：原核细胞（没有膜包裹的细胞核，如细菌）和真核细胞（具有细胞核，如植物和动物）。
 
-Biology is 这 study 的 living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, 和 uses energy. DNA (deoxyribonucleic acid) carries 这 genetic information 的 living organisms. DNA is a double helix made 的 four nucleotide bases: adenine, thymine, cytosine, 和 guanine. Cells are 这 basic structural unit 的 life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) 和 eukaryotic cells (与 a nucleus, like plants 和 animals).
+进化是生物种群可遗传特征在连续世代中发生的变化。查尔斯·达尔文提出了自然选择理论，指出具有有利特征的个体更可能生存并繁殖。通过自然选择实现进化的理论，是现代生物学的统一框架。
 
-Evolution is 这 change 在 这 heritable characteristics 的 biological populations over successive generations. Charles Darwin proposed 这 theory 的 natural selection, which states that individuals 与 advantageous traits are more likely to survive 和 reproduce. 这 theory 的 evolution by natural selection is 这 unifying framework 的 modern biology.
+## 电与磁
 
-## Electricity 和 Magnetism
+电是电荷的流动，通常指电子的流动。电压（单位：伏特）是两点之间的电势差。电流（单位：安培）是电荷流动的速率。电阻（单位：欧姆）是对电流流动的阻碍。欧姆定律指出，电压等于电流乘以电阻（V = IR）。磁性是运动电荷产生的一种力。电场与磁场是同一现象的两个方面：电磁现象。
 
-Electricity is 这 flow 的 electric charge, usually electrons. Voltage (measured 在 volts) is 这 electrical potential difference between two points. Current (measured 在 amperes) is 这 rate 的 flow 的 electric charge. Resistance (measured 在 ohms) is opposition to 这 flow 的 current. Ohm's 法律 states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric 和 magnetic fields are two aspects 的 这 same phenomenon: electromagnetism.
+## 宇宙与宇宙学
 
-## 这 Universe 和 Cosmology
+宇宙大约有 138 亿年历史，起源于大爆炸。宇宙中大约有 2 万亿个星系，每个星系都包含数十亿到数万亿颗恒星。银河系是我们的家园，是一个螺旋星系，包含约 1000 亿到 4000 亿颗恒星。离太阳最近的恒星是比邻星，距离约 4.24 光年。暗物质和暗能量合计约占宇宙总内容的 95%，尽管它们的本质仍未被完全理解。
 
-这 universe is approximately 13.8 billion years old, beginning 与 这 Big Bang. 这 universe contains approximately 2 trillion galaxies, each containing billions to trillions 的 stars. 这 Milky Way is our home galaxy, a spiral galaxy containing between 100 和 400 billion stars. 这 nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter 和 dark energy together make up about 95% 的 这 universe's total content, though their 自然 is not fully understood.
+## 地质学
 
-## Geology
+地球由多层结构组成：内核（固态铁和镍）、外核（液态铁和镍）、地幔（半固态岩石）和地壳（固态岩石）。板块构造中的板块是由地壳和上地幔组成的大块结构，会随着时间缓慢移动。地震发生在板块彼此摩擦或滑动时。火山形成于地球内部的岩浆到达地表之处。岩石循环描述了岩石如何在数百万年间形成、分解并再次形成。
 
-Earth is composed 的 layers: 这 inner core (solid iron 和 nickel), outer core (liquid iron 和 nickel), mantle (semi-solid rock), 和 crust (solid rock). 这 tectonic plates are large pieces 的 Earth's crust 和 upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches 这 surface. 这 rock cycle describes how rocks are formed, broken down, 和 reformed over millions 的 years.
+## 能量
 
-## Energy
-
-Energy exists 在 many forms: kinetic (energy 的 motion), potential (stored energy), thermal (heat), chemical, electrical, 和 nuclear. 这 法律 的 conservation 的 energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, 和 tidal energy. Fossil fuels (coal, oil, 和 natural gas) are non-renewable energy sources formed from 这 remains 的 ancient organisms.
+能量有多种形式：动能（运动的能量）、势能（储存的能量）、热能、化学能、电能和核能。能量守恒定律指出，能量不能被创造或消灭，只能从一种形式转化为另一种形式。可再生能源包括太阳能、风能、水力发电、地热能和潮汐能。化石燃料（煤、石油和天然气）是不可再生能源，由古代生物遗骸形成。

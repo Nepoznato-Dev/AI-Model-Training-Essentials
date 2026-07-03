@@ -1,331 +1,324 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: web_development.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Web 开发
 
-# 网络 开发
+## 前端开发
 
-## Frontend 开发
+### 核心技术
 
-### Core Technologies
+#### HTML（超文本标记语言）
+- **语义化 HTML**：使用具有明确含义的标签（`<header>`、`<nav>`、`<main>`、`<article>`、`<section>`、`<aside>`、`<footer>`）
+- **表单**：输入类型、校验、无障碍标签
+- **媒体**：图片、视频、音频嵌入
+- **Meta 标签**：SEO、viewport、字符编码
+- **HTML5 特性**：Canvas、SVG、本地存储、地理定位、WebSocket
 
-#### HTML (HyperText Markup 语言)
-- **Semantic HTML**: Using meaningful tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
-- **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embedding
-- **Meta Tags**: SEO, viewport, character encoding
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, 网络 sockets
-
-#### CSS (Cascading Style Sheets)
-- **Box Model**: Content, padding, border, margin
-- **Layout 系统**:
-  - **Flexbox**: One-dimensional layouts, justify-content, align-items
-  - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Positioning**: Static, relative, absolute, fixed, sticky
-- **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties 为 theming
-- **Animations**: Transitions, keyframes, transforms
-- **Preprocessors**: Sass, Less (variables, mixins, nesting)
+#### CSS（层叠样式表）
+- **盒模型**：内容、内边距、边框、外边距
+- **布局系统**：
+  - **Flexbox**：一维布局、justify-content、align-items
+  - **Grid**：二维布局、grid-template、grid-area
+  - **定位**：static、relative、absolute、fixed、sticky
+- **响应式设计**：媒体查询、移动优先方法
+- **CSS 变量**：用于主题定制的自定义属性
+- **动画**：过渡、关键帧、变换
+- **预处理器**：Sass、Less（变量、混入、嵌套）
 
 #### JavaScript
-- **DOM Manipulation**: Selecting, creating, modifying elements
-- **事件**: Click, submit, keyboard, custom 事件, event delegation
-- **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
-- **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
-- **TypeScript**: Static typing, interfaces, generics, decorators
+- **DOM 操作**：选择、创建、修改元素
+- **事件**：点击、提交、键盘、自定义事件、事件委托
+- **ES6+ 特性**：箭头函数、解构、展开/剩余、模块、async/await
+- **API**：Fetch、XMLHttpRequest、localStorage、sessionStorage
+- **TypeScript**：静态类型、接口、泛型、装饰器
 
-### Modern Frontend Frameworks
+### 现代前端框架
 
 #### React
-- **Components**: Functional components, class components
-- **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State 管理**: Context API, Redux, Zustand, Recoil
-- **Routing**: React Router (BrowserRouter, Routes, Route, Link)
-- **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient rendering through diffing algorithm
+- **组件**：函数组件、类组件
+- **Hooks**：useState、useEffect、useContext、useReducer、自定义 Hook
+- **状态管理**：Context API、Redux、Zustand、Recoil
+- **路由**：React Router（BrowserRouter、Routes、Route、Link）
+- **生态系统**：Next.js（SSR、SSG）、Remix、Gatsby
+- **虚拟 DOM**：通过 diff 算法实现高效渲染
 
 #### Vue.js
-- **Options API**: 数据, methods, computed, watch
-- **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-为, v-bind, v-on, v-model
-- **Vuex/Pinia**: State 管理
-- **Vue Router**: Client-side routing
-- **Nuxt.js**: Server-side rendering framework
+- **Options API**：data、methods、computed、watch
+- **Composition API**：setup()、ref、reactive、computed
+- **指令**：v-if、v-for、v-bind、v-on、v-model
+- **Vuex/Pinia**：状态管理
+- **Vue Router**：客户端路由
+- **Nuxt.js**：服务端渲染框架
 
 #### Angular
-- **Components**: Decorators, templates, lifecycle hooks
-- **Services**: Dependency injection, singleton pattern
-- **RxJS**: Reactive programming, observables
-- **Routing**: RouterModule, guards, resolvers
-- **Forms**: Template-driven, reactive forms
-- **NgRx**: Redux-style state 管理
+- **组件**：装饰器、模板、生命周期钩子
+- **服务**：依赖注入、单例模式
+- **RxJS**：响应式编程、可观察对象
+- **路由**：RouterModule、守卫、解析器
+- **表单**：模板驱动表单、响应式表单
+- **NgRx**：Redux 风格的状态管理
 
-### Build Tools 和 Bundlers
-- **Webpack**: Module bundling, code splitting, loaders, plugins
-- **Vite**: Fast build tool using native ES modules
-- **Parcel**: Zero-configuration bundler
-- **Rollup**: Optimized 为 libraries
-- **esbuild**: Extremely fast JavaScript bundler
-- **Babel**: JavaScript transpiler 为 backward compatibility
-- **PostCSS**: CSS processing 与 plugins
+### 构建工具与打包器
+- **Webpack**：模块打包、代码分割、loader、插件
+- **Vite**：基于原生 ES 模块的高速构建工具
+- **Parcel**：零配置打包器
+- **Rollup**：针对库构建优化
+- **esbuild**：极快的 JavaScript 打包器
+- **Babel**：用于向后兼容的 JavaScript 转译器
+- **PostCSS**：基于插件的 CSS 处理工具
 
-### CSS Frameworks 和 Libraries
-- **Bootstrap**: Component library, grid system, utilities
-- **Tailwind CSS**: Utility-first CSS framework
-- **Material UI**: Google's Material Design implementation
-- **Chakra UI**: Accessible component library
-- **Ant Design**: Enterprise-level UI components
-- **Styled Components**: CSS-在-JS library
-- **Emotion**: CSS-在-JS 与 source maps
+### CSS 框架与库
+- **Bootstrap**：组件库、栅格系统、工具类
+- **Tailwind CSS**：实用优先的 CSS 框架
+- **Material UI**：Google Material Design 的实现
+- **Chakra UI**：无障碍组件库
+- **Ant Design**：企业级 UI 组件
+- **Styled Components**：CSS-in-JS 库
+- **Emotion**：支持 source map 的 CSS-in-JS
 
-## Backend 开发
+## 后端开发
 
-### Server-Side Languages
+### 服务端语言
 
 #### Node.js
-- **Runtime**: JavaScript on 这 server (V8 engine)
-- **Express.js**: Minimal 网络 framework, middleware 架构
-- **NestJS**: Angular-inspired 架构, TypeScript
-- **Fastify**: High-性能 framework
-- **Koa**: Modern Express by same creators
-- **Package 管理**: npm, yarn, pnpm
+- **运行时**：服务端 JavaScript（V8 引擎）
+- **Express.js**：极简 Web 框架、中间件架构
+- **NestJS**：受 Angular 启发的架构、TypeScript
+- **Fastify**：高性能框架
+- **Koa**：由同一批作者打造的现代版 Express
+- **包管理**：npm、yarn、pnpm
 
 #### Python
-- **Django**: Full-featured framework, ORM, admin panel, batteries-included
-- **Flask**: Microframework, extensions ecosystem
-- **FastAPI**: Modern, async, automatic API documentation
-- **Pyramid**: Flexible, scalable framework
+- **Django**：功能完整的框架、ORM、管理后台、开箱即用
+- **Flask**：微框架、扩展生态
+- **FastAPI**：现代化、异步、自动生成 API 文档
+- **Pyramid**：灵活、可扩展的框架
 
-#### Other Backend Languages
-- **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Spring**: Enterprise framework, dependency injection
-- **PHP Laravel**: Elegant 语法, Eloquent ORM, Blade templating
-- **Go Gin**: High 性能, minimal framework
-- **Rust Actix**: Memory safety, 性能
-- **C# ASP.NET Core**: Cross-platform, enterprise features
+#### 其他后端语言
+- **Ruby on Rails**：约定优于配置、ActiveRecord ORM
+- **Java Spring**：企业级框架、依赖注入
+- **PHP Laravel**：优雅语法、Eloquent ORM、Blade 模板
+- **Go Gin**：高性能、极简框架
+- **Rust Actix**：内存安全、性能出色
+- **C# ASP.NET Core**：跨平台、具备企业级特性
 
-### 数据库 Integration
+### 数据库集成
 
-#### ORMs (Object-Relational Mapping)
-- **Sequelize**: Node.js ORM 为 SQL databases
-- **Prisma**: Type-安全 数据库 access, auto-generated client
-- **SQLAlchemy**: Python SQL toolkit 和 ORM
-- **ActiveRecord**: Ruby on Rails ORM
-- **Hibernate**: Java ORM
-- **Entity Framework**: .NET ORM
+#### ORM（对象关系映射）
+- **Sequelize**：Node.js 的 SQL 数据库 ORM
+- **Prisma**：类型安全的数据库访问、自动生成客户端
+- **SQLAlchemy**：Python SQL 工具包与 ORM
+- **ActiveRecord**：Ruby on Rails ORM
+- **Hibernate**：Java ORM
+- **Entity Framework**：.NET ORM
 
-#### 数据库 Drivers
-- **pg**: PostgreSQL client 为 Node.js
-- **mysql2**: MySQL client 与 promises
-- **pymongo**: MongoDB driver 为 Python
-- **redis**: Redis client 为 multiple languages
+#### 数据库驱动
+- **pg**：Node.js 的 PostgreSQL 客户端
+- **mysql2**：支持 Promise 的 MySQL 客户端
+- **pymongo**：Python 的 MongoDB 驱动
+- **redis**：适用于多种语言的 Redis 客户端
 
 ### API 开发
 
-#### REST APIs
-- **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
-- **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Naming**: Nouns, plural, hierarchical
-- **Versioning**: URL path, headers, query parameters
-- **Authentication**: JWT, OAuth, API keys
-- **Documentation**: OpenAPI/Swagger, Postman
+#### REST API
+- **HTTP 方法**：GET、POST、PUT、PATCH、DELETE
+- **状态码**：200、201、400、401、403、404、500
+- **资源命名**：使用名词、复数、层级结构
+- **版本控制**：URL 路径、请求头、查询参数
+- **身份验证**：JWT、OAuth、API 密钥
+- **文档**：OpenAPI/Swagger、Postman
 
 #### GraphQL
-- **Schema Definition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level 数据 fetching
-- **Apollo Server**: GraphQL server implementation
-- **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetching, single endpoint, strong typing
+- **Schema 定义**：类型、查询、变更、订阅
+- **解析器**：字段级数据获取
+- **Apollo Server**：GraphQL 服务端实现
+- **Relay**：Facebook 的 GraphQL 客户端
+- **优势**：避免过度获取、单一端点、强类型
 
 #### gRPC
-- **Protocol Buffers**: Interface definition 语言
-- **HTTP/2**: Bidirectional streaming
-- **Use Cases**: Microservices 沟通, real-time applications
+- **Protocol Buffers**：接口定义语言
+- **HTTP/2**：双向流
+- **使用场景**：微服务通信、实时应用
 
-### Authentication 和 Authorization
-- **Session-based**: Cookies, server-side sessions
-- **Token-based**: JWT (JSON 网络 Tokens), stateless
-- **OAuth 2.0**: Authorization framework, third-party login
-- **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise single sign-on
-- **Password Hashing**: bcrypt, argon2, scrypt
-- **Multi-Factor Authentication**: TOTP, SMS, email codes
+### 身份验证与授权
+- **基于会话**：Cookie、服务端会话
+- **基于令牌**：JWT（JSON Web Token）、无状态
+- **OAuth 2.0**：授权框架、第三方登录
+- **OpenID Connect**：构建在 OAuth 2.0 之上的身份层
+- **SAML**：企业级单点登录
+- **密码哈希**：bcrypt、argon2、scrypt
+- **多因素认证**：TOTP、短信、电子邮件验证码
 
-## DevOps 和 部署
+## DevOps 与部署
 
-### Version Control
-- **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository hosting
-- **Branching Strategies**: Git Flow, GitHub Flow, trunk-based 开发
-- **CI/CD**: Automated 测试 和 部署 pipelines
+### 版本控制
+- **Git**：分布式版本控制
+- **GitHub/GitLab/Bitbucket**：代码仓库托管
+- **分支策略**：Git Flow、GitHub Flow、主干开发
+- **CI/CD**：自动化测试与部署流水线
 
-### Containerization
-- **Docker**: Container runtime, Dockerfile, images
-- **Docker Compose**: Multi-container orchestration
-- **Container Registries**: Docker Hub, AWS ECR, Google GCR
-- **最佳实践**: Multi-stage builds, minimal base images
+### 容器化
+- **Docker**：容器运行时、Dockerfile、镜像
+- **Docker Compose**：多容器编排
+- **容器镜像仓库**：Docker Hub、AWS ECR、Google GCR
+- **最佳实践**：多阶段构建、精简基础镜像
 
-### Orchestration
-- **Kubernetes**: Container orchestration, pods, services, deployments
-- **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Linkerd 为 microservices networking
+### 编排
+- **Kubernetes**：容器编排、Pod、Service、Deployment
+- **Helm**：Kubernetes 包管理器
+- **Service Mesh**：用于微服务网络的 Istio、Linkerd
 
-### Cloud Platforms
-- **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
-- **Google Cloud**: Compute Engine, Cloud Storage, Cloud Functions, GKE
-- **Azure**: Virtual Machines, Blob Storage, Functions, AKS
-- **Vercel**: Frontend 部署, serverless functions
-- **Netlify**: Static site hosting, serverless functions
-- **Heroku**: Platform as a Service (PaaS)
-- **DigitalOcean**: Simplified cloud infrastructure
+### 云平台
+- **AWS**：EC2、S3、Lambda、RDS、CloudFront、ECS/EKS
+- **Google Cloud**：Compute Engine、Cloud Storage、Cloud Functions、GKE
+- **Azure**：Virtual Machines、Blob Storage、Functions、AKS
+- **Vercel**：前端部署、无服务器函数
+- **Netlify**：静态站点托管、无服务器函数
+- **Heroku**：平台即服务（PaaS）
+- **DigitalOcean**：简化的云基础设施
 
-### CI/CD Pipelines
-- **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-在 continuous integration
-- **Jenkins**: Extensible automation server
-- **CircleCI**: Cloud-based CI/CD
-- **Travis CI**: Continuous integration service
-- **ArgoCD**: GitOps continuous delivery 为 Kubernetes
+### CI/CD 流水线
+- **GitHub Actions**：工作流自动化
+- **GitLab CI**：内建持续集成
+- **Jenkins**：可扩展的自动化服务器
+- **CircleCI**：基于云的 CI/CD
+- **Travis CI**：持续集成服务
+- **ArgoCD**：面向 Kubernetes 的 GitOps 持续交付
 
-### Monitoring 和 Logging
-- **Application 性能**: New Relic, Datadog, AppDynamics
-- **Error Tracking**: Sentry, Rollbar, Bugsnag
-- **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
-- **Uptime Monitoring**: Pingdom, UptimeRobot
-- **Analytics**: Google Analytics, Mixpanel, Amplitude
+### 监控与日志
+- **应用性能**：New Relic、Datadog、AppDynamics
+- **错误追踪**：Sentry、Rollbar、Bugsnag
+- **日志**：ELK Stack（Elasticsearch、Logstash、Kibana）、Splunk
+- **可用性监控**：Pingdom、UptimeRobot
+- **分析**：Google Analytics、Mixpanel、Amplitude
 
-## 网络 性能
+## Web 性能
 
-### Optimization Techniques
-- **Code Splitting**: Lazy loading, dynamic imports
-- **Tree Shaking**: Removing unused code
-- **Minification**: Reducing file sizes
-- **Compression**: Gzip, Brotli
-- **Caching**: Browser cache, CDN, service workers
-- **Image Optimization**: WebP, AVIF, lazy loading, responsive images
-- **Critical CSS**: Inlining above-这-fold styles
-- **数据库 Optimization**: Indexing, query optimization, connection pooling
+### 优化技术
+- **代码分割**：懒加载、动态导入
+- **Tree Shaking**：移除未使用代码
+- **压缩与最小化**：减小文件体积
+- **压缩传输**：Gzip、Brotli
+- **缓存**：浏览器缓存、CDN、Service Worker
+- **图像优化**：WebP、AVIF、懒加载、响应式图片
+- **关键 CSS**：内联首屏样式
+- **数据库优化**：索引、查询优化、连接池
 
-### Core 网络 Vitals
-- **LCP (Largest Contentful Paint)**: Loading 性能 (<2.5s)
-- **FID (First Input Delay)**: Interactivity (<100ms)
-- **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
-- **INP (Interaction to Next Paint)**: Responsiveness metric
+### Core Web Vitals
+- **LCP（Largest Contentful Paint）**：加载性能（<2.5s）
+- **FID（First Input Delay）**：交互性（<100ms）
+- **CLS（Cumulative Layout Shift）**：视觉稳定性（<0.1）
+- **INP（Interaction to Next Paint）**：响应性指标
 
-### Content Delivery Networks (CDNs)
-- **Cloudflare**: 安全, 性能, DNS
-- **Akamai**: Enterprise CDN
-- **Amazon CloudFront**: AWS CDN
-- **Fastly**: Edge cloud platform
-- **StackPath**: Edge services
+### 内容分发网络（CDN）
+- **Cloudflare**：安全、性能、DNS
+- **Akamai**：企业级 CDN
+- **Amazon CloudFront**：AWS CDN
+- **Fastly**：边缘云平台
+- **StackPath**：边缘服务
 
-## 网络 安全
+## Web 安全
 
-### Common Vulnerabilities (OWASP Top 10)
-- **Injection**: SQL injection, command injection
-- **Broken Authentication**: Session hijacking, credential stuffing
-- **Sensitive 数据 Exposure**: Unencrypted 数据, weak cryptography
-- **XML External Entities (XXE)**: XML parser vulnerabilities
-- **Broken Access Control**: Privilege escalation, unauthorized access
-- **安全 Misconfiguration**: Default credentials, verbose errors
-- **Cross-Site Scripting (XSS)**: Reflected, stored, DOM-based
-- **Insecure Deserialization**: Object injection attacks
-- **Using Components 与 Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Logging & Monitoring**: Undetected breaches
+### 常见漏洞（OWASP Top 10）
+- **注入**：SQL 注入、命令注入
+- **失效的身份验证**：会话劫持、撞库攻击
+- **敏感数据泄露**：未加密数据、弱加密
+- **XML 外部实体（XXE）**：XML 解析器漏洞
+- **失效的访问控制**：权限提升、未授权访问
+- **安全配置错误**：默认凭据、冗长错误信息
+- **跨站脚本（XSS）**：反射型、存储型、基于 DOM
+- **不安全的反序列化**：对象注入攻击
+- **使用含已知漏洞的组件**：过时依赖
+- **日志记录与监控不足**：未被发现的入侵
 
-### 安全 最佳实践
-- **HTTPS**: TLS/SSL encryption, HSTS
-- **Content 安全 Policy (CSP)**: Prevent XSS attacks
-- **Input Validation**: Sanitize user input
-- **Output Encoding**: Prevent injection attacks
-- **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limiting**: Prevent brute force attacks
-- **安全 Headers**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scanning**: npm audit, Snyk, Dependabot
+### 安全最佳实践
+- **HTTPS**：TLS/SSL 加密、HSTS
+- **内容安全策略（CSP）**：防止 XSS 攻击
+- **输入验证**：清理用户输入
+- **输出编码**：防止注入攻击
+- **CSRF 防护**：Anti-CSRF 令牌、SameSite Cookie
+- **限流**：防止暴力破解攻击
+- **安全头**：X-Frame-Options、X-Content-Type-Options
+- **依赖扫描**：npm audit、Snyk、Dependabot
 
 ## 测试
 
-### 测试 Types
-- **Unit 测试**: Individual components/functions
-- **Integration 测试**: Component interactions
-- **End-to-End (E2E)**: Full user workflows
-- **Visual Regression**: UI change detection
-- **性能 测试**: Load, stress, spike 测试
-- **Accessibility 测试**: WCAG compliance
+### 测试类型
+- **单元测试**：单个组件/函数
+- **集成测试**：组件交互
+- **端到端（E2E）测试**：完整用户流程
+- **视觉回归测试**：UI 变化检测
+- **性能测试**：负载测试、压力测试、峰值测试
+- **无障碍测试**：WCAG 合规性
 
-### 测试 Frameworks
-- **Jest**: JavaScript 测试 framework
-- **Mocha**: Flexible test runner
-- **pytest**: Python 测试 framework
-- **RSpec**: Ruby 测试 framework
-- **JUnit**: Java 测试 framework
+### 测试框架
+- **Jest**：JavaScript 测试框架
+- **Mocha**：灵活的测试运行器
+- **pytest**：Python 测试框架
+- **RSpec**：Ruby 测试框架
+- **JUnit**：Java 测试框架
 
-### E2E 测试 Tools
-- **Selenium**: Browser automation
-- **Cypress**: Modern E2E 测试
-- **Playwright**: Cross-browser automation
-- **Puppeteer**: Headless Chrome control
+### E2E 测试工具
+- **Selenium**：浏览器自动化
+- **Cypress**：现代 E2E 测试
+- **Playwright**：跨浏览器自动化
+- **Puppeteer**：无头 Chrome 控制工具
 
-## Accessibility (a11y)
+## 无障碍（a11y）
 
-### WCAG Guidelines
-- **Perceivable**: Text alternatives, captions, adaptable content
-- **Operable**: Keyboard navigation, sufficient time, no seizures
-- **Understandable**: Readable, predictable, input assistance
-- **Robust**: Compatible 与 assistive technologies
+### WCAG 指南
+- **可感知**：文本替代、字幕、可适配内容
+- **可操作**：键盘导航、充足时间、避免诱发癫痫
+- **可理解**：内容可读、行为可预测、输入辅助
+- **稳健**：兼容辅助技术
 
-### Implementation
-- **Semantic HTML**: Proper heading hierarchy, landmarks
-- **ARIA Attributes**: Roles, states, properties
-- **Focus 管理**: Visible focus indicators, logical tab order
-- **Color Contrast**: Minimum 4.5:1 ratio 为 text
-- **Screen Reader 测试**: NVDA, JAWS, VoiceOver
-- **Keyboard Navigation**: All interactive elements accessible
+### 实现方式
+- **语义化 HTML**：合理的标题层级、页面地标
+- **ARIA 属性**：角色、状态、属性
+- **焦点管理**：可见的焦点指示器、合乎逻辑的 Tab 顺序
+- **颜色对比度**：文本至少达到 4.5:1
+- **屏幕阅读器测试**：NVDA、JAWS、VoiceOver
+- **键盘导航**：所有可交互元素都可访问
 
-## Progressive 网络 Apps (PWAs)
+## 渐进式 Web 应用（PWA）
 
-### PWA Features
-- **Service Workers**: Offline functionality, background sync
-- **网络 App Manifest**: Install prompt, icons, theme colors
-- **App Shell**: Cached UI skeleton
-- **Push Notifications**: User engagement
-- **Responsive Design**: Works on all devices
-- **HTTPS Required**: Secure context
+### PWA 特性
+- **Service Worker**：离线功能、后台同步
+- **Web App Manifest**：安装提示、图标、主题色
+- **App Shell**：已缓存的 UI 骨架
+- **推送通知**：提升用户参与度
+- **响应式设计**：适配所有设备
+- **必须使用 HTTPS**：安全上下文
 
-### Tools
-- **Workbox**: Service worker libraries
-- **Lighthouse**: PWA auditing
-- **PWA Builder**: Generate manifests 和 icons
+### 工具
+- **Workbox**：Service Worker 库
+- **Lighthouse**：PWA 审计工具
+- **PWA Builder**：生成 manifest 和图标
 
-## Emerging Technologies
+## 新兴技术
 
-### WebAssembly (Wasm)
-- **Purpose**: Run compiled code 在 browser at near-native speed
-- **Languages**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editing, cryptography, ML inference
+### WebAssembly（Wasm）
+- **用途**：在浏览器中以接近原生速度运行编译后的代码
+- **语言**：C++、Rust、Go 编译目标
+- **使用场景**：游戏、视频编辑、密码学、机器学习推理
 
-### Serverless 架构
-- **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server 管理, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-在, debugging complexity
+### 无服务器架构
+- **函数即服务**：AWS Lambda、Azure Functions、Google Cloud Functions
+- **优势**：无需管理服务器、自动扩缩容、按使用付费
+- **注意事项**：冷启动、供应商锁定、调试复杂度
 
 ### Jamstack 架构
-- **JavaScript**: Client-side interactivity
-- **APIs**: Serverless functions, third-party services
-- **Markup**: Pre-built static files
-- **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Benefits**: 性能, 安全, scalability, developer experience
+- **JavaScript**：客户端交互
+- **API**：无服务器函数、第三方服务
+- **Markup**：预构建静态文件
+- **工具**：Next.js、Gatsby、Hugo、Eleventy
+- **优势**：性能、安全性、可扩展性、开发体验
 
-### Real-Time 沟通
-- **WebSockets**: Bidirectional 沟通
-- **Server-Sent 事件**: Server-to-client streaming
-- **WebRTC**: Peer-to-peer video, audio, 数据
-- **Use Cases**: Chat, collaboration, live streaming, gaming
+### 实时通信
+- **WebSocket**：双向通信
+- **Server-Sent Events**：服务端到客户端的流式传输
+- **WebRTC**：点对点视频、音频、数据
+- **使用场景**：聊天、协作、直播、游戏
 
-### Micro Frontends
-- **Concept**: Extend microservices to frontend
-- **Approaches**: Build-time, run-time, edge-side integration
-- **Benefits**: Independent deployments, team autonomy
-- **Challenges**: Consistency, 性能, complexity
+### 微前端
+- **概念**：将微服务理念扩展到前端
+- **实现方式**：构建时集成、运行时集成、边缘侧集成
+- **优势**：独立部署、团队自治
+- **挑战**：一致性、性能、复杂性

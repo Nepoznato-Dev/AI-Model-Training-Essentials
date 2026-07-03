@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: math_and_logic.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: math_and_logic.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Mathematics и Logic
@@ -72,24 +72,24 @@ Geometry is the branch из mathematics that studies shapes, sizes, positions, �
 
 **Measures из spread:**
 - **Range**: maximum - minimum
-- **Variance**: average из squared deviations from the mean
-- **Standard deviation**: square root из variance (в same units as Данные)
+- **Дисперсия**: среднее квадратичное отклонение от среднего
+- **Стандартное отклонение**: квадратный корень из дисперсии (в тех же единицах, что и данные)
 
-Probability measures the likelihood из an event occurring, ranging from 0 (impossible) to 1 (certain). the probability из two independent События both occurring is the product из their individual probabilities.
+Вероятность измеряет, насколько вероятно наступление события, и принимает значения от 0 (невозможно) до 1 (достоверно). Вероятность того, что два независимых события произойдут одновременно, равна произведению их отдельных вероятностей.
 
-**Example:** Probability из rolling a 6 on a fair die: 1/6. Probability из rolling two 6s в a row: (1/6) × (1/6) = 1/36.
+**Пример:** Вероятность выбросить 6 на честном кубике: 1/6. Вероятность выбросить две 6 подряд: (1/6) × (1/6) = 1/36.
 
-## Probability для Вычисления и ML
+## Вероятность в вычислениях и ML
 
-A **random variable** is a variable whose value depends on the outcome из a random process. A **probability distribution** describes how likely each outcome is.
+**Случайная величина** — это переменная, значение которой зависит от результата случайного процесса. **Распределение вероятностей** описывает, насколько вероятен каждый исход.
 
-**Common distributions:**
-- **Bernoulli**: single trial с two outcomes (e.g., coin flip)
-- **Binomial**: number из successes в n independent Bernoulli trials
-- **Normal (Gaussian)**: bell curve, symmetric around the mean (common в natural phenomena)
-- **Poisson**: number из События в a fixed interval (e.g., emails per hour)
+**Распространённые распределения:**
+- **Распределение Бернулли**: одно испытание с двумя исходами (например, подбрасывание монеты)
+- **Биномиальное распределение**: число успехов в n независимых испытаниях Бернулли
+- **Нормальное (гауссово) распределение**: колоколообразная кривая, симметричная относительно среднего (часто встречается в природных явлениях)
+- **Распределение Пуассона**: число событий за фиксированный интервал (например, количество писем в час)
 
-**Expected value** is the long-run average outcome из a random variable. **Variance** measures spread around that expectation.
+**Ожидаемое значение** — это средний результат случайной величины на длинной дистанции. **Дисперсия** измеряет разброс вокруг этого ожидания.
 
 **Conditional probability** describes the probability из an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
 
@@ -143,7 +143,7 @@ Logic is the study из valid reasoning.
 - **False dichotomy**: presenting only two options when more exist
 - **Circular reasoning**: using the conclusion as a premise
 - **Appeal to authority**: claiming something is true because an authority says so
-- **Post hoc fallacy**: assuming that because A happened before B, A caused B
+- **Ошибка post hoc**: предположение, что если A произошло раньше B, то A вызвало B
 
 ## Sets
 

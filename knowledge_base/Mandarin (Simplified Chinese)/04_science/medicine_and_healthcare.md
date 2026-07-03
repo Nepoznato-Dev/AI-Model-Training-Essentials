@@ -1,48 +1,41 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: medicine_and_healthcare.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 医学与医疗体系
 
-# 医学 和 医疗 系统
+## 医学专科
 
-## Medical Specialties
+医学包含众多专业领域。内科学关注成人疾病和器官系统。心脏病学处理心脏与心血管疾病。神经病学研究神经系统疾病。胃肠病学关注消化系统疾病。呼吸病学治疗呼吸系统疾病。内分泌学管理包括糖尿病在内的激素紊乱。肾脏病学聚焦肾脏疾病。肿瘤学负责癌症的诊断与治疗。血液学研究血液疾病。风湿病学处理自身免疫和肌肉骨骼相关疾病。感染病学专家治疗各类感染。皮肤病学关注皮肤疾病。精神病学管理心理健康障碍。儿科学负责儿童健康。老年医学聚焦老年照护。急诊医学处理急性疾病和损伤。外科学包括普通外科，以及骨科、神经外科、心胸外科、整形外科、泌尿外科等亚专科。放射学利用影像进行诊断和治疗。麻醉学负责手术过程中的镇痛与镇静。病理学通过组织和实验室分析研究疾病成因。家庭医学提供综合性初级医疗服务。妇产科学涵盖女性生殖健康。眼科学治疗眼部疾病。耳鼻喉科（ENT）处理耳、鼻、喉疾病。
 
-医学 encompasses numerous specialized fields. Internal 医学 focuses on adult diseases 和 organ 系统. Cardiology deals 与 heart 和 cardiovascular conditions. Neurology addresses disorders 的 这 nervous system. Gastroenterology covers digestive system diseases. Pulmonology treats respiratory conditions. Endocrinology manages hormonal disorders including diabetes. Nephrology focuses on kidney diseases. Oncology diagnoses 和 treats cancer. Hematology studies blood disorders. Rheumatology handles autoimmune 和 musculoskeletal conditions. Infectious disease specialists treat infections. Dermatology addresses skin conditions. Psychiatry manages mental health disorders. Pediatrics cares 为 children's health. Geriatrics focuses on elderly care. Emergency 医学 handles acute illnesses 和 injuries. Surgery includes general surgery 和 subspecialties like orthopedic, neurosurgery, cardiothoracic, plastic, 和 urologic surgery. Radiology uses imaging 为 diagnosis 和 treatment. Anesthesiology manages pain 和 sedation during procedures. Pathology studies disease causes through tissue 和 lab analysis. Family 医学 provides comprehensive primary care. Obstetrics 和 gynecology covers women's reproductive health. Ophthalmology treats eye conditions. Otolaryngology (ENT) addresses ear, nose, 和 throat disorders.
+## 医疗体系
 
-## 医疗 系统
+全球医疗体系差异很大。单一支付方体系（如英国 NHS、加拿大）由政府资助并提供全民覆盖。多支付方体系（如美国、德国）由多个保险机构共同参与。社会健康保险模式（如法国、日本）要求雇主和雇员共同缴费。自费体系在低收入国家更为常见。初级医疗是患者接触医疗系统的第一站，并负责协调持续照护。二级医疗包括专科门诊和医院服务。三级医疗在大型中心提供高度专业化治疗。预防性医疗通过筛查、疫苗接种和生活方式咨询来预防疾病。紧急门诊处理非危及生命但需要及时处理的健康需求。远程医疗通过技术提供远程医疗服务。电子健康记录（EHR）以数字形式存储患者信息。健康保险通过保费、免赔额、共付额和共同保险承担医疗费用。全民医疗确保所有公民都能获得所需服务。
 
-医疗 系统 vary globally. Single-payer 系统 (UK's NHS, Canada) have government-funded universal coverage. Multi-payer 系统 (US, Germany) involve multiple insurance providers. Social health insurance models (France, Japan) mandate contributions from employers 和 employees. Out-的-pocket 系统 dominate 在 low-income countries. Primary care serves as 这 first contact point, coordinating ongoing care. Secondary care involves specialist consultations 和 hospital services. Tertiary care provides highly specialized treatments at major centers. Preventive care aims to prevent illness through screening, vaccination, 和 lifestyle counseling. Urgent care handles non-emergency immediate needs. Telemedicine delivers remote 医疗 via 技术. Electronic health records (EHRs) store patient information digitally. Health insurance covers medical costs through premiums, deductibles, copayments, 和 coinsurance. Universal 医疗 ensures all citizens have access to needed services.
+## 药理学与药物
 
-## Pharmacology 和 Medications
+药理学研究药物的作用与影响。处方药需要医生授权。非处方药（OTC）无需处方即可购买。仿制药与品牌药含有相同的活性成分，但成本更低。药物类别包括抗生素（对抗细菌感染）、抗病毒药（治疗病毒感染）、镇痛药（止痛）、抗炎药（减轻炎症）、降压药（降低血压）、他汀类药物（降低胆固醇）、抗凝药（预防血栓）、抗抑郁药（治疗抑郁）、抗精神病药（控制精神病性症状）、支气管扩张剂（扩张气道）、胰岛素（管理糖尿病）以及化疗药物（治疗癌症）。药代动力学研究药物的吸收、分布、代谢和排泄。药物相互作用是指药物之间相互影响。副作用是非预期的药物反应。过敏反应是机体对药物的免疫反应。剂量指给药的数量与频率。临床试验在药物获批前测试其安全性和有效性。FDA（美国）和 EMA（欧洲）负责监管药品。
 
-Pharmacology studies drug actions 和 effects. Prescription medications require doctor authorization. Over-这-counter (OTC) drugs are 可用 without prescription. Generic drugs contain same active ingredients as brand names at lower cost. Drug classes include antibiotics (fight bacterial infections), antivirals (treat viral infections), analgesics (pain relievers), anti-inflammatories (reduce inflammation), antihypertensives (lower blood pressure), statins (lower cholesterol), anticoagulants (prevent blood clots), antidepressants (treat depression), antipsychotics (manage psychosis), bronchodilators (open airways), insulin (manages diabetes), 和 chemotherapy agents (treat cancer). Pharmacokinetics examines drug absorption, distribution, metabolism, 和 excretion. Drug interactions occur when medications affect each other. Side effects are unintended drug reactions. Allergic reactions are immune responses to medications. Dosage refers to amount 和 frequency 的 administration. Clinical trials test drug safety 和 efficacy before approval. 这 FDA (US) 和 EMA (Europe) regulate pharmaceuticals.
+## 医学伦理
 
-## Medical Ethics
+医学伦理为医疗决策提供指导。自主原则尊重患者做出知情决定的权利。行善原则要求以患者最佳利益行事。不伤害原则意味着“首先不伤害”。公正原则要求公平分配资源。知情同意确保患者在接受医疗程序前理解其风险和收益。保密原则保护患者隐私（美国由 HIPAA 规范）。如实告知要求与患者进行诚实沟通。临终关怀会引发关于生命支持、姑息治疗和安乐死的讨论。资源分配涉及对稀缺治疗资源作出艰难选择。利益冲突必须披露并妥善管理。研究伦理通过机构审查委员会（IRB）保护受试者。文化胜任力要求尊重多元信念与实践。专业边界用于维持医患关系的适当性。
 
-Medical ethics guides 医疗 decision-making. Autonomy respects patients' right to make informed decisions. Beneficence requires acting 在 patients' best interests. Non-maleficence means "do no harm." Justice demands fair resource distribution. Informed consent ensures patients understand risks 和 benefits before procedures. Confidentiality protects patient privacy (HIPAA 在 US). Truth-telling requires honest 沟通 与 patients. End-的-life care raises questions about life 支持, palliative care, 和 euthanasia. Resource allocation involves difficult decisions about scarce treatments. Conflicts 的 interest must be disclosed 和 managed. Research ethics protects human subjects through institutional review boards (IRBs). Cultural competence respects diverse beliefs 和 practices. Professional boundaries maintain appropriate provider-patient relationships.
+## 公共卫生
 
-## Public Health
+公共卫生关注群体层面的健康促进和疾病预防。流行病学研究疾病的分布模式和成因。疫苗接种项目可预防传染病。健康教育推动健康行为。环境卫生关注周围环境中的危害。职业卫生保护劳动者。营养项目应对营养不良。妇幼保健服务支持家庭。伤害预防用于减少事故。慢性病管理应对长期疾病。卫生政策塑造医疗服务提供与可及性。全球卫生关注国际性健康挑战。大流行防备旨在应对疫情暴发。接触者追踪用于识别暴发期间可能暴露的人群。隔离措施用于分开可能受感染的人。群体免疫是指足够多的人具备免疫力，从而保护脆弱人群。健康的社会决定因素包括收入、教育、住房和环境，它们都会影响健康结果。健康差异是不同人群之间不平等的健康结局。
 
-Public health focuses on population-level health promotion 和 disease prevention. Epidemiology studies disease patterns 和 causes. Vaccination programs prevent infectious diseases. Health education promotes healthy behaviors. 环境 health addresses hazards 在 surroundings. Occupational health protects workers. 营养 programs combat malnutrition. Maternal 和 child health services 支持 families. Injury prevention reduces accidents. Chronic disease 管理 addresses long-term conditions. Health policy shapes 医疗 delivery 和 access. Global health tackles international health challenges. Pandemic preparedness plans 为 disease outbreaks. Contact tracing identifies exposed individuals during outbreaks. Quarantine isolates potentially infected people. Herd immunity occurs when enough people are immune to protect 这 vulnerable. Social determinants 的 health include income, education, housing, 和 environment affecting health outcomes. Health disparities are unequal health outcomes across populations.
+## 诊断方法
 
-## Diagnostic Methods
+诊断通过多种方式识别疾病。体格检查评估可见和可触及的体征。病史采集收集症状和背景信息。实验室检测分析血液、尿液及其他样本。全血细胞计数（CBC）用于测量血细胞。代谢面板用于评估器官功能。影像检查包括 X 光（骨骼和高密度组织）、CT 扫描（详细横断面）、MRI（软组织细节）、超声（声波成像）、PET 扫描（代谢活动）以及乳腺 X 线摄影（乳房影像）。活检会取出组织进行病理检查。内窥镜通过摄像设备观察体内器官。心电图（ECG/EKG）记录心脏电活动。脑电图（EEG）测量脑波。肺活量测定用于测试肺功能。基因检测可识别遗传性疾病。筛查检测用于在症状出现前发现疾病。鉴别诊断会列出能够解释症状的多种可能疾病。
 
-Diagnosis identifies diseases through various methods. Physical examination assesses visible 和 palpable signs. Medical 历史 gathers symptom 和 background information. Laboratory tests analyze blood, urine, 和 other samples. 完整 blood count (CBC) measures blood cells. Metabolic panels assess organ function. Imaging includes X-rays (bone 和 dense tissue), CT scans (detailed cross-sections), MRI (soft tissue detail), ultrasound (sound waves), PET scans (metabolic activity), 和 mammography (breast imaging). Biopsy removes tissue 为 pathological examination. Endoscopy uses cameras to view internal organs. Electrocardiogram (ECG/EKG) records heart electrical activity. Electroencephalogram (EEG) measures brain waves. Spirometry tests lung function. Genetic 测试 identifies inherited conditions. Screening tests detect diseases before symptoms appear. Differential diagnosis lists possible conditions explaining symptoms.
+## 治疗方法
 
-## Treatment Approaches
+治疗策略因疾病而异。药物治疗使用药物。手术通过物理方式修复或切除病变组织。放射治疗利用高能射线杀死癌细胞。免疫治疗借助免疫系统对抗疾病。物理治疗恢复运动和功能。作业治疗帮助改善日常生活能力。言语治疗应对沟通障碍。心理治疗通过谈话疗法处理心理健康问题。生活方式调整包括饮食、运动和压力管理。替代医学包括针灸、草药疗法和整脊治疗（证据强度不一）。姑息治疗侧重缓解症状与提高生活质量。康复治疗帮助患者在疾病或受伤后恢复。基因治疗通过修改基因来治疗疾病。干细胞移植用于替换受损细胞。透析在肾衰竭时承担血液过滤功能。移植则用于替换衰竭器官。临床指南提供基于证据的治疗建议。
 
-Treatment strategies vary by condition. Pharmacotherapy uses medications. Surgery physically repairs or removes diseased tissue. Radiation therapy kills cancer cells 与 high-energy rays. Immunotherapy harnesses 这 immune system against disease. Physical therapy restores movement 和 function. Occupational therapy helps daily living skills. Speech therapy addresses 沟通 disorders. Psychotherapy treats mental health through talk therapy. Lifestyle modifications include diet, exercise, 和 stress 管理. Alternative 医学 includes acupuncture, herbal remedies, 和 chiropractic care (evidence varies). Palliative care focuses on symptom relief 和 quality 的 life. Rehabilitation helps recovery after illness or injury. Gene therapy modifies genes to treat disease. Stem cell transplantation replaces damaged cells. Dialysis filters blood when kidneys fail. Transplantation replaces failing organs. Clinical guidelines provide evidence-based treatment recommendations.
+## 解剖学与生理学基础
 
-## Anatomy 和 Physiology 基础
+解剖学研究身体结构。生理学研究各身体系统如何运作。外皮系统（皮肤、毛发、指甲）负责保护和调节体温。骨骼系统（206 块骨头）提供支撑和保护。肌肉系统实现运动。神经系统（大脑、脊髓、神经）控制身体功能。内分泌系统产生调节代谢和生长的激素。心血管系统（心脏、血管）循环血液。淋巴系统对抗感染并引流体液。呼吸系统（肺和气道）进行气体交换。消化系统处理食物并吸收营养。泌尿系统（肾脏、膀胱）排除废物。生殖系统支持繁殖。免疫系统抵御病原体。体内稳态维持内部环境稳定。细胞是生命的基本单位。组织由相似细胞组成。器官执行特定功能。器官系统协同工作以维持生存。
 
-Anatomy studies body structure. Physiology examines how body 系统 function. 这 integumentary system (skin, hair, nails) protects 和 regulates temperature. 这 skeletal system (206 bones) provides structure 和 protection. 这 muscular system enables movement. 这 nervous system (brain, spinal cord, nerves) controls body functions. 这 endocrine system produces hormones regulating metabolism 和 growth. 这 cardiovascular system (heart, blood vessels) circulates blood. 这 lymphatic system fights infection 和 drains fluids. 这 respiratory system (lungs, airways) exchanges gases. 这 digestive system processes 食物 和 absorbs nutrients. 这 urinary system (kidneys, bladder) eliminates waste. 这 reproductive system enables reproduction. 这 immune system defends against pathogens. Homeostasis maintains stable internal conditions. Cells are 这 basic units 的 life. Tissues group similar cells. Organs perform specific functions. Organ 系统 work together 为 survival.
+## 常见医学状况
 
-## Common Medical Conditions
+心血管疾病包括高血压、冠状动脉疾病、心脏病发作、中风和心力衰竭。呼吸系统疾病包括哮喘、慢阻肺、肺炎和肺癌。消化系统疾病包括 GERD、溃疡、炎症性肠病和肝病。内分泌疾病包括糖尿病（1 型和 2 型）、甲状腺疾病和肥胖。神经系统疾病包括阿尔茨海默病、帕金森病、癫痫、偏头痛和多发性硬化。心理健康问题包括抑郁症、焦虑障碍、双相障碍、精神分裂症和 PTSD。肌肉骨骼问题包括关节炎、骨质疏松、背痛和骨折。癌症可影响多种器官，预后各不相同。传染病从普通感冒到结核病、HIV/AIDS 以及新发病原体不等。自身免疫疾病包括狼疮、类风湿关节炎和 1 型糖尿病。肾病可从急性损伤发展到慢性衰竭。皮肤疾病包括湿疹、银屑病、痤疮和皮肤癌。
 
-Cardiovascular diseases include hypertension (high blood pressure), coronary artery disease, heart attack, stroke, 和 heart failure. Respiratory conditions include asthma, COPD, pneumonia, 和 lung cancer. Digestive disorders include GERD, ulcers, inflammatory bowel disease, 和 liver disease. Endocrine disorders include diabetes (types 1 和 2), thyroid disease, 和 obesity. Neurological conditions include Alzheimer's disease, Parkinson's disease, epilepsy, migraines, 和 multiple sclerosis. Mental health conditions include depression, anxiety disorders, bipolar disorder, schizophrenia, 和 PTSD. Musculoskeletal issues include arthritis, osteoporosis, back pain, 和 fractures. Cancer affects various organs 与 different prognoses. Infectious diseases range from common cold to tuberculosis, HIV/AIDS, 和 emerging pathogens. Autoimmune diseases include lupus, rheumatoid arthritis, 和 type 1 diabetes. Kidney disease ranges from acute injury to chronic failure. Skin conditions include eczema, psoriasis, acne, 和 skin cancer.
+## 健康促进与预防
 
-## Health Promotion 和 Prevention
-
-Preventive 医疗 reduces disease risk. Regular check-ups monitor health status. Screenings detect early disease (mammograms, colonoscopies, Pap smears, PSA tests). Vaccinations prevent infectious diseases (flu, measles, HPV, COVID-19). Healthy diet emphasizes fruits, vegetables, whole grains, lean proteins, 和 limits processed foods, sugar, 和 saturated fats. Physical activity recommendations suggest 150 minutes moderate exercise weekly. Weight 管理 maintains healthy BMI. Smoking cessation dramatically reduces health risks. Moderate alcohol consumption limits intake. Stress 管理 techniques include meditation, yoga, 和 counseling. Sleep hygiene promotes 7-9 hours quality sleep nightly. Sun protection prevents skin damage. 安全 sex practices prevent STIs. Injury prevention includes seatbelts, helmets, 和 fall prevention. Dental care maintains oral health. Mental health awareness reduces stigma 和 encourages help-seeking.
+预防性医疗可降低患病风险。定期体检用于监测健康状况。筛查可早期发现疾病（如乳腺 X 线检查、结肠镜、宫颈涂片、PSA 检测）。疫苗接种可以预防传染病（流感、麻疹、HPV、COVID-19）。健康饮食强调水果、蔬菜、全谷物、瘦蛋白，并限制加工食品、糖和饱和脂肪。身体活动建议为每周进行 150 分钟中等强度运动。体重管理有助于维持健康 BMI。戒烟可显著降低健康风险。适度饮酒强调限制摄入量。压力管理方法包括冥想、瑜伽和心理咨询。睡眠卫生鼓励每晚 7-9 小时的高质量睡眠。防晒可预防皮肤损伤。安全性行为有助于预防性传播感染。伤害预防包括系安全带、戴头盔和防跌倒。口腔护理有助于维护口腔健康。提升心理健康意识能够减少污名并鼓励寻求帮助。

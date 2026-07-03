@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: science_and_nature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: science_and_nature.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Наука и Природа

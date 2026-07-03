@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: environmental_science_and_sustainability.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: environmental_science_and_sustainability.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Экологический Наука и Устойчивость

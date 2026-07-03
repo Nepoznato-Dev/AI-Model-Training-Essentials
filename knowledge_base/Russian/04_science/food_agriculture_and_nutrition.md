@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: food_agriculture_and_nutrition.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: food_agriculture_and_nutrition.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Еда, Сельское хозяйство, и Питание
@@ -21,7 +21,7 @@ Animal husbandry involves breeding и caring для farm animals. Cattle are rai
 
 ## Питание Наука
 
-Питание studies how Еда affects health и bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteins (4 kcal/g), и fats (9 kcal/g). Carbohydrates include sugars, starches, и fiber; they are the body's primary energy source. Proteins consist из amino acids; nine are essential (must come from diet). Fats include saturated, unsaturated (mono- и poly-), и trans fats; omega-3 и omega-6 are essential fatty acids. Micronutrients include vitamins (A, C, D, E, K, и B-complex) и minerals (calcium, iron, magnesium, zinc, etc.) needed в small amounts. Water is essential для all bodily functions. Dietary guidelines recommend balanced intake from various Еда groups. Malnutrition includes undernutrition (insufficient intake) и overnutrition (excess intake leading to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamin C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, и health status.
+Питание studies how Еда affects health и bodily functions. Macronutrients provide energy: carbohydrates (4 ккал/г), proteins (4 ккал/г), и fats (9 ккал/г). Carbohydrates include sugars, starches, и fiber; they are the body's primary energy source. Proteins consist из amino acids; nine are essential (must come from diet). Fats include saturated, unsaturated (mono- и poly-), и trans fats; omega-3 и omega-6 are essential fatty acids. Micronutrients include vitamins (A, C, D, E, K, и B-complex) и minerals (calcium, iron, magnesium, zinc, etc.) needed в small amounts. Water is essential для all bodily functions. Dietary guidelines recommend balanced intake from various Еда groups. Malnutrition includes undernutrition (insufficient intake) и overnutrition (excess intake leading to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamin C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, и health status.
 
 ## Еда Safety и Processing
 

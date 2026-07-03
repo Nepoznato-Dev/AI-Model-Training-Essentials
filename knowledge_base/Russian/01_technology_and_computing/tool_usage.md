@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: tool_usage.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Использование инструментов
 
-# Tool Usage
+## Git — контроль версий
 
-## Git — Version Control
+Git — это распределённая система контроля версий. У каждого разработчика есть полная копия истории репозитория на локальной машине.
 
-Git is a distributed version control system. Every developer has a full copy из the repository История on their local machine.
-
-### Core workflow
+### Основной рабочий процесс
 
 ```bash
 # Start a new repository
@@ -35,7 +28,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-### Branching
+### Ветвление
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +38,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging и rebasing
+### Слияние и rebase
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +50,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### Рабочий процесс pull request (PR)
 
-1. Create a feature branch from `main`.
-2. Make commits on the feature branch.
-3. Push the branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review Обратная связь с additional commits.
-6. Merge the PR once approved.
+1. Создайте feature-ветку от `main`.
+2. Делайте коммиты в feature-ветке.
+3. Отправьте ветку: `git push origin feature/new-thing`.
+4. Откройте pull request в GitHub / GitLab.
+5. Внесите дополнительные коммиты по итогам code review.
+6. Слейте PR после одобрения.
 
-### Undoing changes
+### Отмена изменений
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,7 +70,7 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-## Package Managers
+## Менеджеры пакетов
 
 ### pip (Python)
 
@@ -90,7 +83,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+Всегда работайте внутри виртуального окружения, чтобы зависимости проекта оставались изолированными.
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +98,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` фиксирует точные версии; добавляйте его в систему контроля версий.
 
 ### Cargo (Rust)
 
@@ -121,7 +114,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-### Go modules (Go)
+### Модули Go (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -145,9 +138,9 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line Основы
+## Основы командной строки
 
-### Navigation
+### Навигация
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +156,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### Обработка текста
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +169,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes и redirection
+### Каналы и перенаправление
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +180,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### Сеть и file transfer
+### Сеть и передача файлов
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +190,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-### Permissions
+### Права доступа
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +198,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Process Управление
+### Управление процессами
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +209,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editors и IDEs
+## Редакторы и IDE
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor с a rich extension ecosystem.
+VS Code — это лёгкий кроссплатформенный редактор кода с богатой экосистемой расширений.
 
-- Open a folder: `File > Open Folder` or `code .` в the terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install Язык Поддержка (Python, Rust, Go, etc.), linters, и formatters from the Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures the debugger.
+- Открыть папку: `File > Open Folder` или `code .` в терминале.
+- Палитра команд: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Встроенный терминал: `Ctrl+`` (backtick)`.
+- Множественные курсоры: `Alt+Click`, чтобы поставить дополнительные курсоры.
+- Перейти к определению: `F12`.
+- Переименовать символ: `F2`.
+- Форматировать документ: `Shift+Alt+F`.
+- Расширения: устанавливайте поддержку языков (Python, Rust, Go и т. д.), линтеры и форматтеры из панели Extensions (`Ctrl+Shift+X`).
+- `settings.json` (пользовательский или workspace) управляет поведением редактора.
+- `launch.json` настраивает отладчик.
 
 ### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion и refactoring are core features.
-- Run/debug configurations let you launch и debug programs с one click.
-- Built-в Git Поддержка в the VCS menu.
-- `Shift+Shift` opens the Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Язык Поддержка и add tools.
+- Умное автодополнение кода и рефакторинг — ключевые возможности.
+- Конфигурации запуска/отладки позволяют запускать и отлаживать программы в один клик.
+- Встроенная поддержка Git находится в меню VCS.
+- `Shift+Shift` открывает диалог Search Everywhere.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) переформатирует код.
+- Плагины расширяют языковую поддержку и добавляют инструменты.
 
-### Terminal tips
+### Советы по терминалу
 
-- Use tab completion to finish file names и Команды quickly.
-- Press `Ctrl+R` to search command История interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows the manual page для any built-в command.
+- Используйте tab completion, чтобы быстро дописывать имена файлов и команды.
+- Нажмите `Ctrl+R`, чтобы интерактивно искать по истории команд.
+- `alias ll='ls -la'` создаёт сокращение — добавьте его в `~/.bashrc` или `~/.zshrc`.
+- Используйте `tmux` или `screen`, чтобы сохранять сессии при отключении от удалённого сервера.
+- `man <command>` показывает страницу руководства для любой встроенной команды.
 
 ---
 
 ## Docker
 
-Docker packages applications и their dependencies into portable containers.
+Docker упаковывает приложения и их зависимости в переносимые контейнеры.
 
-### Core concepts
+### Основные понятия
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance из an image.
-- **Registry**: a storage и distribution service для images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **Image**: шаблон только для чтения, собранный из `Dockerfile`.
+- **Container**: запущенный экземпляр образа.
+- **Registry**: сервис хранения и распространения образов (Docker Hub, GHCR).
+- **Volume**: постоянное хранилище, которое живёт дольше контейнера.
 
-### Common Команды
+### Часто используемые команды
 
 ```bash
 # Images
@@ -286,7 +279,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### Пример Dockerfile
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +292,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications с a `docker-compose.yml` file.
+Docker Compose управляет многоконтейнерными приложениями с помощью файла `docker-compose.yml`.
 
 ```yaml
 version: "3.9"

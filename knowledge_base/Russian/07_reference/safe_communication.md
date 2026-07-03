@@ -89,10 +89,10 @@ A response с grammatical errors undermines trust и can cause confusion. Subjec
 
 A singular subject takes a singular verb; a plural subject takes a plural verb.
 
-| Singular subject | Plural subject |
+| Подлежащее в единственном числе | Подлежащее во множественном числе |
 |---|---|
-| "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
-| "A recommendation **was** made." | "Recommendations **were** made." |
+| "Поедание камней **опасно**." | "Эти действия **опасны**." |
+| "Эта рекомендация **была** дана." | "Эти рекомендации **были** даны." |
 | "the drug **has** side effects." | "These drugs **have** side effects." |
 
 ### Common errors to avoid
@@ -125,8 +125,8 @@ Collective nouns (team, group, committee, family) take a singular verb в Americ
 
 the following are always singular:
 - Everyone, anybody, someone, nobody, each, either, neither
-- "Everyone **is** invited." (correct)
-- "Everyone **are** invited." (incorrect)
+- "Everyone **is** invited." *(правильно)*
+- "Everyone **are** invited." *(неправильно)*
 
 ### Данные is / Данные are
 

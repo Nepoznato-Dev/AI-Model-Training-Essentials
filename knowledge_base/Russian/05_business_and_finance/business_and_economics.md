@@ -1,8 +1,8 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: business_and_economics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский.
+Источник: business_and_economics.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
+Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
 # Бизнес и Экономика
@@ -25,7 +25,7 @@ Accounting is the systematic recording, reporting, и analysis из financial tr
 
 ## Economic Indicators
 
-Gross Domestic Product (GDP) measures the total value из goods и services produced в a country. Inflation is the rate at which prices rise over time, reducing purchasing power. the Consumer Price Index (CPI) measures changes в the price level из consumer goods и services. Unemployment rate is the percentage из the labor force that is jobless и actively seeking employment. Interest rates, set by central banks, influence borrowing costs и economic activity. the Federal Reserve (US), European Central Bank (ECB), и Bank из England are major central banks. Recession is typically defined as two consecutive quarters из negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
+Валовой внутренний продукт (GDP) measures the total value из goods и services produced в a country. Inflation is the rate at which prices rise over time, reducing purchasing power. the Индекс потребительских цен (CPI) measures changes в the price level из consumer goods и services. Unemployment rate is the percentage из the labor force that is jobless и actively seeking employment. Interest rates, set by central banks, influence borrowing costs и economic activity. the Federal Reserve (US), European Central Bank (ECB), и Bank из England are major central banks. Recession is typically defined as two consecutive quarters из negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
 
 ## Supply Chain и Operations
 
@@ -33,12 +33,12 @@ Supply chain Управление oversees the flow из goods и services from 
 
 ## Entrepreneurship и Startups
 
-Entrepreneurship is the process из designing, launching, и running a new Бизнес. A startup is a young company founded to develop a unique product or service. Venture capital is funding provided by investors to startups с high growth potential. Angel investors are affluent individuals who provide capital для startups, often в exchange для equity. Crowdfunding raises small amounts из money from many people via online platforms. A minimum viable product (MVP) is a version из a product с just enough features to satisfy early customers. Pivot refers to a fundamental change в Бизнес strategy. Scalability is the ability to grow without being hampered by structure or resources.
+Entrepreneurship is the process из designing, launching, и running a new Бизнес. A startup is a young company founded to develop a unique product or service. Венчурный капитал is funding provided by investors to startups с high growth potential. Бизнес-ангелы are affluent individuals who provide capital для startups, often в exchange для equity. Краудфандинг raises small amounts из money from many people via online platforms. A minimum viable product (MVP) is a version из a product с just enough features to satisfy early customers. Пивот refers to a fundamental change в Бизнес strategy. Scalability is the ability to grow without being hampered by structure or resources.
 
 ## International Trade
 
-International trade involves the exchange из goods и services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is the opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. the World Trade Organization (WTO) regulates international trade. Currency exchange rates affect the relative cost из imports и exports. Globalization has increased interconnectedness из economies worldwide.
+International trade involves the exchange из goods и services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is the opposite. Тарифы are taxes on imported goods. Free trade agreements reduce barriers between countries. the World Trade Organization (WTO) regulates international trade. Currency exchange rates affect the relative cost из imports и exports. Globalization has increased interconnectedness из economies worldwide.
 
 ## Бизнес Ethics и Corporate Social Responsibility
 
-Бизнес ethics involves moral principles guiding Бизнес behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustainably и contribute positively to society. Экологический, Social, и Governance (ESG) criteria evaluate company practices on Устойчивость и ethical impact. Stakeholders include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when Бизнес decisions conflict с moral values. Transparency и accountability are key principles из ethical Бизнес practice.
+Бизнес ethics involves moral principles guiding Бизнес behavior. Корпоративная социальная ответственность (CSR) is a company's commitment to operate sustainably и contribute positively to society. Экологический, Social, и Governance (ESG) criteria evaluate company practices on Устойчивость и ethical impact. Заинтересованные стороны include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when Бизнес decisions conflict с moral values. Transparency и accountability are key principles из ethical Бизнес practice.

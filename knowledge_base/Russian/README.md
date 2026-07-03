@@ -9,8 +9,8 @@ For accuracy improvements, please contribute edits via pull requests.
 
 Полная коллекция из Справочник documents covering Технология, Наука, Бизнес, humanities, и practical skills.
 
-**Последнее обновление:** June 2025  
-**Всего файлов:** 34+ markdown documents  
+**Последнее обновление:** июнь 2025  
+**Всего файлов:** 34+ документов в формате Markdown  
 **Organization:** Categorized into 10 thematic directories
 
 ---
@@ -36,7 +36,7 @@ knowledge_base/English/
 ## 📚 Быстрая навигация
 
 ### Технология & Вычисления (`01_technology_and_computing/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
 | [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Безопасность | 350+ |
@@ -47,7 +47,7 @@ knowledge_base/English/
 | [tool_usage.md](01_technology_and_computing/tool_usage.md) | Разработка tools и utilities | 200+ |
 
 ### Artificial Intelligence (`02_artificial_intelligence/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI Обзор, ML, Глубокое обучение, LLMs | 200+ |
 | [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, Лучшие практики | 200+ |
@@ -56,13 +56,13 @@ knowledge_base/English/
 | [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques и strategies | 150+ |
 
 ### Данные Наука (`03_data_science/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Данные processing, ML, big Данные, BI | 350+ |
 | [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
 ### Наука (`04_science/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology Основы | 100+ |
 | [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, Здравоохранение Системы | 250+ |
@@ -70,14 +70,14 @@ knowledge_base/English/
 | [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Сельское хозяйство, Питание, Еда Системы | 150+ |
 
 ### Бизнес & Финансы (`05_business_and_finance/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, Экономика | 150+ |
 | [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal Финансы, Инвестирование, markets | 350+ |
 | [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Юридический Системы, contracts, IP, constitutional Закон | 200+ |
 
 ### Humanities (`06_humanities/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
 | [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human География, political Системы | 300+ |
@@ -86,7 +86,7 @@ knowledge_base/English/
 | [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
 ### Справочник (`07_reference/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [Словарь.md](07_reference/Словарь.md) | Comprehensive word definitions (A-Z) | 868 |
 | [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about the world | 150+ |
@@ -94,7 +94,7 @@ knowledge_base/English/
 | [safe_communication.md](07_reference/safe_communication.md) | Коммуникация guidelines и Лучшие практики | 150+ |
 
 ### Будущее (`08_future/`)
-| File | Description | Lines |
+| Файл | Описание | Строки |
 |------|-------------|-------|
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming События, space missions, tech trends | 200+ |
 
@@ -147,7 +147,7 @@ knowledge_base/English/
 
 ## 📊 Статистика
 
-| Category | Files | Total Lines | Avg Lines/File |
+| Категория | Файлы | Всего строк | Среднее строк/файл |
 |----------|-------|-------------|----------------|
 | Технология & Вычисления | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |

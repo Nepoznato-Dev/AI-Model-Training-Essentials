@@ -66,10 +66,10 @@ umask                   # Show default permission mask
 ```
 
 ### Permission Numbers
-- `7` = rwx (read + write + execute)
-- `6` = rw- (read + write)
-- `5` = r-x (read + execute)
-- `4` = r-- (read only)
+- `7` = rwx (чтение + запись + выполнение)
+- `6` = rw- (чтение + запись)
+- `5` = r-x (чтение + выполнение)
+- `4` = r-- (только чтение)
 
 ---
 
@@ -324,7 +324,7 @@ du -ah | sort -hr | head -20
 
 ## Keyboard Shortcuts
 
-| Shortcut | Action |
+| Сочетание | Действие |
 |----------|--------|
 | `Tab` | Auto-Полный |
 | `Ctrl+C` | Kill current command |
