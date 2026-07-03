@@ -1,48 +1,163 @@
 <!-- 
 This file was automatically translated from English to German.
-Source: psychology_and_human_behavior.md
+Source: language_and_english.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Psychologie und Menschliches Verhalten
+# Sprache und Englisch
 
-## Einführung to Psychologie
+## What is Sprache?
 
-Psychologie is der/die/das scientific study von mind und behavior. It examines how people think, feel, act, und interact. Major perspectives in Psychologie include biological (examining brain structures und neurotransmitters), behavioral (focusing on observable behaviors und learning), cognitive (studying mental processes like memory und decision-making), psychodynamic (exploring unconscious drives und conflicts, originating mit Freud), humanistic (emphasizing personal growth und self-actualization), und social-cultural (examining how environment und Kultur shape behavior). Psychologie uses scientific methods including experiments, observations, surveys, und case studies to understand human experience.
+Sprache is a system von Kommunikation using sounds, symbols, or gestures that follows a shared set von rules understood by a community. Human Sprache is unique in its complexity, creativity, und capacity to express abstract ideas. There are approximately 7,000 languages spoken in der/die/das world today. Englisch is der/die/das most widely spoken Sprache as a second Sprache und is der/die/das dominant Sprache von international Kommunikation, Geschäft, Wissenschaft, und der/die/das internet.
 
-## Cognitive Psychologie
+## Englisch Grammar
 
-Cognitive Psychologie studies mental processes including attention, perception, memory, Sprache, problem-solving, und decision-making. Attention is der/die/das ability to focus on specific stimuli while filtering out others. Perception involves organizing und interpreting sensory information. Memory has three main stages: encoding (getting information in), storage (retaining information), und retrieval (getting information out). Short-term memory holds limited information briefly; long-term memory has vast capacity für extended periods. Working memory temporarily manipulates information für complex tasks. Sprache acquisition involves understanding und producing Kommunikation. Problem-solving strategies include algorithms (step-by-step procedures) und heuristics (mental shortcuts). Decision-making can be influenced by biases und emotions.
+Grammar is der/die/das set von rules governing how words are combined to form sentences in a Sprache. A sentence must contain a subject (who or what der/die/das sentence is about) und a predicate (what der/die/das subject does or is).
 
-## Developmental Psychologie
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state von being.
+An **adjective** modifies a noun.
+An **adverb** modifies a verb, adjective, or another adverb.
+A **pronoun** takes der/die/das place von a noun.
 
-Developmental Psychologie examines how people change und grow throughout their lifespan. Prenatal Entwicklung includes germinal, embryonic, und fetal stages. Infancy (0-2 years) features rapid physical growth, attachment formation, und sensorimotor learning. Childhood (2-12 years) involves Sprache Entwicklung, social skills, und concrete thinking. Adolescence (12-18 years) brings puberty, identity formation, und abstract reasoning. Early adulthood (20s-30s) focuses on career, relationships, und independence. Middle adulthood (40s-60s) often involves career consolidation und caring für aging parents. Late adulthood (65+) may include retirement, health challenges, und reflection. Key theories include Piaget's stages von cognitive Entwicklung, Erikson's psychosocial stages, und Kohlberg's moral Entwicklung theory. Natur (genetics) und nurture (environment) both influence Entwicklung.
+A **clause** is a group von words containing a subject und a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone und depends on an independent clause. A **phrase** is a group von words that does not contain both a subject und a predicate.
 
-## Social Psychologie
+## Parts von Speech
 
-Social Psychologie studies how individuals think, feel, und behave in social contexts. Conformity is adjusting behavior to match group norms, demonstrated in Asch's line experiments. Obedience is complying mit authority figures, studied in Milgram's shock experiments. Social facilitation improves Leistung on simple tasks when others watch. Social loafing reduces effort in groups. Groupthink occurs when groups prioritize harmony over critical evaluation. Prejudice is preconceived judgment about groups; discrimination is unequal treatment. Stereotypes are generalized beliefs about groups. Attribution theory explains how we interpret others' behavior (internal vs. external causes). der/die/das fundamental attribution error overestimates personality und underestimates situation when judging others. Bystander effect reduces helping behavior when others are present. Aggression can be influenced by biology, frustration, und social learning. Attraction involves proximity, similarity, physical attractiveness, und reciprocity.
+der/die/das eight traditional parts von speech in Englisch are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, und interjection.
 
-## Personality Psychologie
+A **preposition** shows der/die/das relationship between a noun or pronoun und another word (e.g., in, on, at, by, mit).
+A **conjunction** connects words, phrases, or clauses (e.g., und, but, or, because).
 
-Personality refers to enduring patterns von thoughts, feelings, und behaviors. der/die/das Big Five personality traits are openness (curiosity, creativity), conscientiousness (organization, dependability), extraversion (sociability, energy from others), agreeableness (cooperation, compassion), und neuroticism (emotional instability, anxiety). Freud's psychoanalytic theory proposed id (instincts), ego (reality), und superego (morality). Humanistic theories (Maslow, Rogers) emphasize growth potential und self-actualization. Trait theories identify consistent characteristics across situations. Type theories categorize people (e.g., Type A vs. Type B behavior patterns). Personality develops through genetics, environment, und experiences. Assessment tools include self-report inventories (MMPI) und projective tests (Rorschach inkblots).
+**Common coordinating conjunctions** can be remembered mit der/die/das acronym FANBOYS:
+- **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## Mental Health und Disorders
+## Punctuation
 
-Mental health encompasses emotional, psychological, und social well-being. Psychological disorders are patterns causing distress or impaired functioning. Anxiety disorders include generalized anxiety, panic disorder, phobias, und social anxiety. Mood disorders include depression (persistent sadness) und bipolar disorder (mood swings). Schizophrenia involves distorted thinking, perceptions, und emotions. Eating disorders include anorexia nervosa, bulimia, und binge-eating. Personality disorders involve inflexible patterns causing problems (e.g., borderline, antisocial). Trauma-related disorders include PTSD following traumatic Ereignisse. der/die/das DSM-5 (Diagnostic und Statistical Manual) classifies mental disorders. Causes von disorders involve biological factors (genetics, brain chemistry), psychological factors (trauma, learned patterns), und social factors (stress, environment). Stigma surrounding mental illness can prevent people from seeking help.
+- A period (.) ends a declarative sentence.
+- A question mark (?) ends an interrogative sentence.
+- An exclamation mark (!) ends an exclamatory sentence.
+- A comma (,) separates items in a list, sets off introductory phrases, und separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-## Therapeutic Approaches
+## Spelling und Common Errors
 
-Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts und past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns und behaviors. Humanistic therapy emphasizes self-exploration und personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer Support. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) und procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, und patient values. Prevention und early intervention improve outcomes. Self-care practices include exercise, sleep, Ernährung, mindfulness, und social connection.
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Wissenschaft")
+- Words ending in a silent "e" drop der/die/das "e" before adding a vowel suffix (make → making)
+- Double der/die/das final consonant before adding a vowel suffix when der/die/das last syllable is stressed und ends in a single consonant (run → running)
 
-## Neuroscience und Behavior
+**Common confusable word pairs:**
+- their / there / they're
+- your / you're
+- its / it's
+- affect / effect
+- then / than
 
-Neuroscience examines der/die/das nervous system's role in behavior. Neurons are nerve cells transmitting information through electrical und chemical signals. Neurotransmitters are chemicals transmitting signals between neurons (dopamine, serotonin, norepinephrine, GABA, glutamate). der/die/das central nervous system includes brain und spinal cord. der/die/das peripheral nervous system connects CNS to body. der/die/das brain's cerebrum handles higher functions; cerebellum coordinates movement; brainstem controls vital functions. der/die/das limbic system processes emotions und memory (amygdala, hippocampus, hypothalamus). Brain plasticity allows neural connections to change mit experience. Neuroimaging techniques (MRI, fMRI, PET scans) visualize brain structure und activity. Hormones from der/die/das endocrine system also influence behavior und emotions.
+## Vocabulary und Word Formation
 
-## Motivation und Emotion
+**Etymology** is der/die/das study von der/die/das origins und historical Entwicklung von words. Many Englisch words come from Latin, Greek, French, und Germanic roots.
 
-Motivation drives behavior toward goals. Intrinsic motivation comes from internal satisfaction; extrinsic motivation from external rewards. Maslow's hierarchy proposes needs from physiological to self-actualization. Drive-reduction theory suggests behavior aims to reduce internal tension. Instinct theory proposes innate behavioral patterns. Emotion involves physiological arousal, expressive behaviors, und conscious experience. Major emotion theories include James-Lange (emotion follows physiological response), Cannon-Bard (emotion und response occur simultaneously), und Schachter-Singer (emotion depends on interpretation von arousal). Basic emotions include happiness, sadness, anger, fear, surprise, und disgust. Emotional intelligence involves recognizing und managing emotions in oneself und others. Stress triggers der/die/das fight-or-flight response; chronic stress harms health.
+**Prefixes** are added to der/die/das beginning von words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to der/die/das end von words (e.g., -tion, -ness, -ing, -ly).
 
-## Learning und Conditioning
+- **Synonyms**: words mit similar meanings
+- **Antonyms**: words mit opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-Learning is relatively permanent behavior change through experience. Classical conditioning (Pavlov) pairs neutral stimuli mit natural responses. Operant conditioning (Skinner) uses consequences to shape behavior. Positive reinforcement adds desirable stimuli to increase behavior; negative reinforcement removes aversive stimuli to increase behavior. Punishment decreases behavior. Observational learning (Bandura) occurs by watching others. Latent learning happens without immediate reinforcement. Insight learning involves sudden problem comprehension. Habituation reduces response to repeated stimuli. Generalization responds similarly to similar stimuli; discrimination distinguishes between stimuli. Extinction weakens conditioned responses when reinforcement stops.
+## Writing Skills
+
+Good writing is clear, concise, coherent, und engaging.
+
+- A **paragraph** should have a topic sentence (der/die/das main idea), supporting sentences, und a concluding sentence.
+- der/die/das **five-paragraph essay** structure consists von an Einführung, three body paragraphs, und a conclusion.
+- **Revision** is der/die/das process von improving a draft.
+- **Editing** focuses on correcting grammar, spelling, und punctuation errors.
+- **Proofreading** is der/die/das final check before publication.
+
+## Reading und Comprehension
+
+**Active reading** involves engaging mit der/die/das text by asking questions, making predictions, summarizing, und making connections.
+
+- der/die/das **main idea** is der/die/das central point von a passage.
+- Details, Beispiele, und evidence Support der/die/das main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words und phrases surrounding an unfamiliar word that help determine its meaning.
+
+## Kommunikation und Rhetoric
+
+**Rhetoric** is der/die/das art von effective Kommunikation und persuasion.
+- **Ethos** appeals to der/die/das credibility von der/die/das speaker.
+- **Pathos** appeals to emotion.
+- **Logos** appeals to logic und reason.
+
+A **thesis statement** clearly expresses der/die/das main argument von an essay.
+**Tone** refers to der/die/das writer's attitude toward der/die/das subject und audience.
+**Register** refers to der/die/das level von formality in Sprache use, ranging from casual conversation to formal academic writing.
+
+## Subject-Verb Agreement (Expanded)
+
+One von der/die/das most important grammar rules in Englisch is that a subject und its verb must agree in number: a singular subject takes a singular verb, und a plural subject takes a plural verb.
+
+### Gerunds as Subjects
+
+A gerund (a verb used as a noun, ending in -ing) is always singular.
+
+**Correct:**
+- "Eating rocks **is** dangerous."
+- "Running every day **is** good für your health."
+- "Reading **helps** improve vocabulary."
+
+**Incorrect:**
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running und swimming **is** good." (compound subject — plural, use "are")
+
+### Compound Subjects
+
+- Joined by "und": plural verb
+  - "Alice und Bob **are** here."
+  - "der/die/das teacher und der/die/das student **agree**."
+
+- Joined by "or"/"nor": agree mit der/die/das subject closest to der/die/das verb
+  - "Neither der/die/das students nor der/die/das teacher **was** ready."
+  - "Neither der/die/das teacher nor der/die/das students **were** ready."
+
+### Collective Nouns
+
+Collective nouns (team, committee, group, family) take a singular verb in American Englisch:
+- "der/die/das team **is** practising."
+- "der/die/das committee **has** made a decision."
+
+in British Englisch, plural verbs are also accepted depending on context.
+
+### Indefinite Pronouns
+
+der/die/das following indefinite pronouns are **always singular**:
+- everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
+- each, either, neither
+
+**Correct:**
+- "Everyone **is** invited."
+- "Each von der/die/das students **has** completed der/die/das assignment."
+
+**Incorrect:**
+- "Everyone **are** invited."
+
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
+
+**Epistemic honesty** means being truthful about der/die/das limits von one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
+
+**Hallucination** is der/die/das tendency von AI Systeme to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Verfügbar knowledge und responding mit an honest acknowledgement von uncertainty rather than an invented answer.
+
+**Useful phrases für expressing uncertainty:**
+- "I'm not certain, but…"
+- "You may want to verify this mit a specialist."
+- "I don't have enough information to answer reliably."
+- "This is outside my Wissensdatenbank."
+
+**für health, medical, Rechtlich, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose von a substance, a treatment für a disease, or a Rechtlich ruling without professional context can cause real harm und must be avoided.

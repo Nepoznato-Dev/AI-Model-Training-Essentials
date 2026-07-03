@@ -1,447 +1,186 @@
 <!-- 
 This file was automatically translated from English to Spanish.
-Source: local_ai_architecture.md
+Source: ml_evaluation_and_workflow.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI Arquitectura
+# Aprendizaje automático Evaluation y Workflow
 
-A practical Guía to running large Idioma models entirely on-device — hardware considerations, inference engines, memory optimisation, y system design para edge Implementación.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No Datos leaves el/la device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, Red-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, y fine-tuning.
+A practical Guía to el/la ML lifecycle — from problem framing to production monitoring — con a focus on metrics, validation, y debugging.
 
 ---
 
-## Hardware Requirements
+## el/la ML Workflow (CRISP-ML)
 
-### GPU Memory (VRAM)
-el/la most critical resource. Model size en memory ≈ **parameters × bytes per parameter**.
+1. **Negocios Understanding**: Define el/la objective y success criteria.
+2. **Datos Understanding**: Explore Disponible Datos, identify quality issues.
+3. **Datos Preparation**: Clean, transform, y split Datos.
+4. **Modelling**: Train models, tune hyperparameters.
+5. **Evaluation**: Assess Rendimiento against metrics.
+6. **Implementación**: Serve el/la model en production.
+7. **Monitoring**: Track drift, Rendimiento, y anomalies.
 
-| Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
-|-----------|---------------------|------------|----------|-----------|-----------|
-| FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
-| FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
-
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ Sistemas.
-
-### RAM (System Memory)
-- para CPU inference, you need enough system RAM to load el/la model (similar to VRAM numbers).
-- para GPU inference, system RAM matters para loading el/la model into memory before offloading to VRAM.
-
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free para multiple models.
-
-### CPU
-- para prompt processing (prefill) y CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Rendimiento para LLMs due to el/la unified memory y Neural Engine.
+This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
 ---
 
-## Quantisation
+## Datos Splitting
 
-Quantisation reduces el/la numerical precision de weights, dramatically cutting memory y increasing speed at a small accuracy cost.
+### Train / Validation / Test Split
+- **Training set** (~70%): Used to fit el/la model parameters.
+- **Validation set** (~15%): Used to tune hyperparameters y select model variants.
+- **Test set** (~15%): Used only once at el/la very end to estimate generalisation Rendimiento.
 
-### Popular Formats
+**Important:** el/la test set must be kept completely untouched until final evaluation to avoid Datos leakage.
 
-| Format | Bits | Description | Typical use |
-|--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised para CPU/GPU hybrid | Best para local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best para NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good para batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+### Cross-Validation (k-fold)
+para small datasets, use k-fold cross-validation: split Datos into k folds, train on k-1, validate on el/la remaining, y repeat k times. Average el/la Rendimiento. k=5 or k=10 is common.
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality para most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation con better perplexity at 4/3 bits.
+### Stratified Splitting
+para classification con imbalanced classes, use stratified splits to preserve class proportions en each subset.
 
-**Rule de thumb:** Use Q4_K_M para a good balance de quality y size. If you have extra VRAM, use Q5 or Q6.
+### Time-Based Splitting
+para time-series Datos, split chronologically (train on past, test on Futuro) rather than randomly.
 
 ---
 
-## Inference Engines (Local)
+## Evaluation Metrics
 
-### llama.cpp
-- Written en C++.
-- Supports GGUF format.
-- Optimised para CPU y GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, y Python bindings.
+### Classification Metrics
 
-**Example command:**
-```bash
-./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+| Metric | What it measures | Best used para |
+|--------|------------------|---------------|
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
+| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
+| **F1-score** | Harmonic mean de precision y recall | Imbalanced datasets, single-number metric |
+| **AUC-ROC** | Area under el/la ROC curve; tradeoff between TPR y FPR | General classifier Rendimiento independent de threshold |
+| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
 
-Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+**Definitions:**
+- TP = True Positive
+- TN = True Negative
+- FP = False Positive (Type I error)
+- FN = False Negative (Type II error)
 
-Auto-downloads models, manages them.
+### Regression Metrics
 
-Great for prototyping and desktop apps.
+| Metric | What it measures | Sensitivity to outliers |
+|--------|------------------|--------------------------|
+| **MSE** (Mean Squared Error) | Average squared difference | High |
+| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
+| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
+| **R²** (Coefficient de Determination) | Proportion de variance explained | None directly, but sensitive to outliers indirectly |
 
-Supports custom Modelfiles for system prompts.
+### Ranking y Retrieval Metrics
+- **Precision@k**: Fraction de relevant items among top-k recommendations.
+- **Recall@k**: Fraction de all relevant items that appear en top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain): Accounts para position relevance.
+- **Hit Rate**: Whether a relevant item appears en el/la top-k.
 
-Usage:
-
-bash
-ollama run phi3:3.8b
-ollama run llama3:8b
-LM Studio
-Graphical desktop app for Windows, macOS, Linux.
-
-One-click download and chat interface.
-
-Built-in local server with OpenAI-compatible API.
-
-Good for non-technical users and quick testing.
-
-Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
-
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
-
-More flexible for fine-tuning but slower than llama.cpp for inference.
-
-ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
-
-Best performance on NVIDIA GPUs.
-
-Supports batched generation.
-
-mlx (Apple)
-Apple's framework for M-series chips.
-
-Highly optimised for Apple Silicon.
-
-Python API.
-
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
-
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
-
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
-
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
-
-Token streaming: Process tokens incrementally rather than all at once.
-
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
-
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
-
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
-
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
-
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
-
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
-
-iOS: Use llama.cpp via Swift bindings or mlx.
-
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
-
-Performance Optimisation
-Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
-
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
-
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
-
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
-
-Practical Setup Guide
-1. Install Ollama
-bash
-curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
-bash
-ollama pull phi3:3.8b-q4_K_M
-3. Run with API
-bash
-ollama serve
-Then send requests to http://localhost:11434/api/generate.
-
-4. Python Integration
-python
-import requests
-
-response = requests.post(
-    "http://localhost:11434/api/generate",
-    json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
-)
-print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
-bash
-# Download GGUF from Hugging Face
-wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
-
-# Run server
-./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
-
-Track memory usage (RAM and VRAM).
-
-Track tokens per second (throughput).
-
-Track time to first token (latency).
-
-Use built-in logging from llama.cpp or Ollama.
-
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
-
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
-
-Multilingual: Smaller models may have less multilingual capability.
-
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
-
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
-
-text
+### Generative / LLM Metrics
+- **Perplexity**: How "surprised" el/la model is by a held-out text (lower is better).
+- **BLEU**: n-gram overlap con Referencia translations (precision-focused).
+- **ROUGE**: Recall-oriented overlap para summarisation.
+- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
+- **METEOR**: Aligns to WordNet synonyms y stems.
 
 ---
 
-## File 4: `security_best_practices.md`
+## Evaluation Pitfalls
 
-```markdown
-# Seguridad Mejores prácticas
+### Datos Leakage
+Occurs when information from el/la test set inadvertently influences training.
+- **Prevent:** Never use test Datos para feature engineering, normalisation, or hyperparameter tuning.
+- **Detect:** If your model scores suspiciously high, suspect leakage.
 
-A practical Guía to securing applications, infrastructure, y Datos — from Desarrollo to production.
+### Overfitting
+Model performs well on training Datos but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stopping, simplify Arquitectura, or collect more Datos.
 
----
+### Underfitting
+Model performs poorly on both training y validation.
+- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
 
-## OWASP Top 10 (2021) — Descripción general
+### Imbalanced Datos
+- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
 
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **Seguridad Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable y Outdated Components**: Known CVEs en dependencies.
-7. **Identification y Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software y Datos Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **Seguridad Logging y Monitoring Failures**: No detection de breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse de server to make requests to internal Sistemas.
-
----
-
-## Input Validation y Output Encoding
-
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex para email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows y DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: para email, URL, y date validation, use standard libraries (e.g., `email-validator` en Python, `validator.js` en Node).
-
-### Output Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell Comandos from user input; if unavoidable, use `shlex.quote()` or similar.
+### Temporal Drift (Concept Drift)
+el/la relationship between features y target changes over time.
+- **Mitigate:** Retrain periodically, monitor Rendimiento, use drift detection algorithms.
 
 ---
 
-## Authentication y Authorisation
+## Hyperparameter Tuning
 
-### Password Gestión
-- **Hashing**: Store passwords con a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) para sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
+- **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
+- **Random Search**: Sample random combinations from distributions. More efficient than grid search para high-dimensional spaces.
+- **Bayesian Optimisation**: Builds a probabilistic model de el/la objective function y selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps para distributed tuning.
 
-### Session Gestión
-- Use secure, HTTP-only, SameSite cookies para session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout y on password change.
-- Avoid exposing session IDs en URLs.
+**Suggested search ranges para common hyperparameters:**
 
-### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Seguridad).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
-
-### JWT (JSON Web Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) para better Seguridad; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), y expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes para access tokens; use refresh tokens para longer sessions.
-- **Store securely**: Never store JWTs en localStorage (vulnerable to XSS); use HTTP-only cookies instead.
+| Parameter | Suggested range (log-scale) |
+|-----------|-----------------------------|
+| Learning rate | 1e-5 to 1e-1 |
+| Batch size | 16, 32, 64, 128, 256 |
+| Number de layers (NN) | 2 to 6 |
+| Number de neurons (NN) | 32 to 1024 |
+| Regularisation (L2) | 1e-6 to 1e-2 |
+| Tree depth (XGBoost) | 3 to 12 |
 
 ---
 
-## API Seguridad
+## Model Selection y Validation
 
-### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
-
-### Rate Limiting y Throttling
-- Apply per-user y per-IP rate limits to prevent abuse y DoS.
-- Return `429 Too Many Requests` con a `Retry-After` header.
-
-### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` en production).
-- Validate `Origin` header on el/la server side.
-
-### Input Validation
-- Validate all request parameters, including headers y body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` en JSON Schema).
-
-### HTTPS / TLS
-- Enforce HTTPS en production.
-- Use HSTS (HTTP Strict Transport Seguridad) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
+1. **Baseline model**: Start con a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
+2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Red).
+3. **Cross-validate** each candidate on el/la validation set.
+4. **Compare metrics** (con confidence intervals) y select el/la best candidate.
+5. **Final evaluation** on el/la held-out test set.
+6. **Error analysis**: Look at Ejemplos el/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) y feed insights back into Datos preparation or feature engineering.
 
 ---
 
-## Secrets Gestión
+## Implementación y Monitoring
 
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, Base de datos URLs) to source control.
-- Use environment variables or secret Gestión tools.
+### Serving Patterns
+- **Batch inference**: Process large volumes de Datos offline (e.g., nightly recommendations).
+- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
+- **Streaming inference**: Event-driven, real-time con low latency (e.g., IoT sensor alerts).
 
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets en files y commit them (con KMS or GPG).
-- **Docker secrets**: para Swarm mode; Kubernetes secrets (base64-encoded, but use con care; consider external Secrets Store CSI driver).
+### Model Monitoring
+- **Rendimiento monitoring**: Track accuracy/F1 over time on live Datos (when ground truth is Disponible).
+- **Datos drift**: Monitor changes en input feature distributions (e.g., using PSI – Population Stability Index).
+- **Concept drift**: Monitor changes en el/la relationship between inputs y outputs.
+- **Prediction drift**: Track el/la distribution de predicted outputs.
+- **Latency y throughput**: Ensure SLAs (Service Level Agreements) are met.
 
-### Rotation
-- Regularly rotate secrets y service accounts.
-- Automate rotation where possible.
+### Logging y Alerting
+- Log all prediction requests y responses (con anonymisation).
+- Set alerts para:
+  - Significant drop en Rendimiento.
+  - High percentage de missing or invalid inputs.
+  - Model outputs outside expected bounds.
 
----
-
-## Dependency Gestión
-
-### Vulnerability Scanning
-- **Python**: `safety`, `pip-audit`, `bandit`.
-- **Node**: `npm audit`, `yarn audit`, `snyk`.
-- **Rust**: `cargo audit`.
-- **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
-
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests para minor/patch updates.
-- Review changelogs para breaking changes.
-
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums de downloaded dependencies.
-- Prefer official registries y trust only verified publishers.
+### Model Versioning y Registry
+- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store y version models, metadata, y evaluation results.
+- Store el/la training code y Datos version (via DVC or Git LFS) alongside el/la model.
 
 ---
 
-## Infrastructure Seguridad
+## Practical Workflow Checklist
 
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use Seguridad groups (AWS) or NSGs (Azure) para fine-grained control.
-
-### OS Hardening
-- Apply Seguridad updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services y default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### Red Segmentation
-- Place databases y caches en private subnets con no internet access.
-- Use a DMZ para public-facing services.
-- Apply el/la principle de least privilege to Red access.
-
-### Secrets en Infrastructure
-- Never store secrets en CI/CD environment variables unless encrypted.
-- Use el/la cloud provider's IAM roles para EC2/VM instances instead de long-lived keys.
-
----
-
-## Logging y Monitoring
-
-### What to Log
-- Authentication Eventos (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- Base de datos schema changes.
-- System errors y exceptions.
-- API requests y responses (redact sensitive Datos).
-
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
-
-### Alerting
-- Set up alerts para:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (Seguridad Information y Event Gestión) para Avanzado correlation.
-
-### Log Retention
-- Retain logs para at least 30–90 days depending on regulatory requirements.
-- Store logs en a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
-
----
-
-## Secure Desarrollo Lifecycle (SDL)
-
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early en design.
-3. **Secure coding standards**: Enforce via linters y code review checklists.
-4. **SAST** (Static Application Seguridad Pruebas): Scan source code para vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Seguridad Pruebas): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration Pruebas**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan para when a breach is detected.
-
----
-
-## Emergency Checklist (When a Breach is Suspected)
-
-1. **Do not panic** — but act quickly.
-2. **Isolate** el/la affected Sistemas (disconnect from Red if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, y disk images.
-4. **Identify** el/la scope: which Sistemas, which Datos.
-5. **Rotate** all compromised credentials y secrets.
-6. **Patch** el/la vulnerability.
-7. **Notify** affected users y regulatory bodies if required (within Legal timeframes).
-8. **Conduct a post-mortem** to understand root cause y improve processes.
+- [ ] Problem framed y success metric defined.
+- [ ] Datos exploration performed (missing values, outliers, distribution).
+- [ ] Train/validation/test split created (stratified if needed).
+- [ ] Baseline model established.
+- [ ] Candidate models trained y validated.
+- [ ] Hyperparameters tuned.
+- [ ] Best model selected via cross-validation.
+- [ ] Final evaluation on test set.
+- [ ] Error analysis performed.
+- [ ] Implementación plan ready (serving infrastructure).
+- [ ] Monitoring dashboard set up.
+- [ ] Documentation (Datos card, model card) completed.

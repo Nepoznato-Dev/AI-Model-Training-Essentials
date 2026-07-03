@@ -1,186 +1,181 @@
 <!-- 
 This file was automatically translated from English to Spanish.
-Source: ml_evaluation_and_workflow.md
+Source: prompt_engineering.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Aprendizaje automático Evaluation y Workflow
+# Prompt Engineering
 
-A practical Guía to el/la ML lifecycle — from problem framing to production monitoring — con a focus on metrics, validation, y debugging.
-
----
-
-## el/la ML Workflow (CRISP-ML)
-
-1. **Negocios Understanding**: Define el/la objective y success criteria.
-2. **Datos Understanding**: Explore Disponible Datos, identify quality issues.
-3. **Datos Preparation**: Clean, transform, y split Datos.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess Rendimiento against metrics.
-6. **Implementación**: Serve el/la model en production.
-7. **Monitoring**: Track drift, Rendimiento, y anomalies.
-
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
+Prompt engineering is el/la practice de designing, refining, y optimising input prompts to get el/la best possible output from a Idioma model. It is both an art y a Ciencia, y it is el/la primary interface para controlling LLM behaviour without fine-tuning.
 
 ---
 
-## Datos Splitting
+## Core Principles
 
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit el/la model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters y select model variants.
-- **Test set** (~15%): Used only once at el/la very end to estimate generalisation Rendimiento.
+### Clarity y Specificity
+A clear prompt leaves no room para ambiguity. Specify exactly what you want, including format, length, y perspective.
 
-**Important:** el/la test set must be kept completely untouched until final evaluation to avoid Datos leakage.
+**Vague:**
+> "Tell me about Python."
 
-### Cross-Validation (k-fold)
-para small datasets, use k-fold cross-validation: split Datos into k folds, train on k-1, validate on el/la remaining, y repeat k times. Average el/la Rendimiento. k=5 or k=10 is common.
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, y keep your answer under 200 words."
 
-### Stratified Splitting
-para classification con imbalanced classes, use stratified splits to preserve class proportions en each subset.
+### Provide Context
+Models perform better when they know el/la role, audience, y goal.
 
-### Time-Based Splitting
-para time-series Datos, split chronologically (train on past, test on Futuro) rather than randomly.
+**Without context:**
+> "Write a function to sort a list."
 
----
+**con context:**
+> "You are a senior Python developer. Write a function to sort a list de dictionaries by a given key. Use type hints y handle edge cases. el/la audience is junior developers."
 
-## Evaluation Metrics
-
-### Classification Metrics
-
-| Metric | What it measures | Best used para |
-|--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean de precision y recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under el/la ROC curve; tradeoff between TPR y FPR | General classifier Rendimiento independent de threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
-
-**Definitions:**
-- TP = True Positive
-- TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
-
-### Regression Metrics
-
-| Metric | What it measures | Sensitivity to outliers |
-|--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient de Determination) | Proportion de variance explained | None directly, but sensitive to outliers indirectly |
-
-### Ranking y Retrieval Metrics
-- **Precision@k**: Fraction de relevant items among top-k recommendations.
-- **Recall@k**: Fraction de all relevant items that appear en top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts para position relevance.
-- **Hit Rate**: Whether a relevant item appears en el/la top-k.
-
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" el/la model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap con Referencia translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap para summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms y stems.
+### Use Positive Instructions
+Tell el/la model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Idioma accessible to a 10-year-old."
 
 ---
 
-## Evaluation Pitfalls
+## Prompt Structures
 
-### Datos Leakage
-Occurs when information from el/la test set inadvertently influences training.
-- **Prevent:** Never use test Datos para feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
+### System / User / Assistant Roles
+Most LLM APIs Soporte a multi-turn structure:
 
-### Overfitting
-Model performs well on training Datos but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify Arquitectura, or collect more Datos.
+- **System message**: Sets el/la model's behaviour, persona, y constraints (persists para el/la whole session).
+- **User message**: el/la current query or instruction.
+- **Assistant message**: el/la model's previous responses (used para continuity).
 
-### Underfitting
-Model performs poorly on both training y validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply con concise code Ejemplos y brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
-### Imbalanced Datos
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
+### Few-Shot Prompting
+Provide 2–3 Ejemplos de el/la desired input-output format before asking el/la model to perform el/la task. This teaches el/la pattern.
 
-### Temporal Drift (Concept Drift)
-el/la relationship between features y target changes over time.
-- **Mitigate:** Retrain periodically, monitor Rendimiento, use drift detection algorithms.
+**Example:**
+User: Convert these sentences to passive voice:
+Input: el/la cat chased el/la mouse.
+Output: el/la mouse was chased by el/la cat.
+Input: el/la chef cooked el/la meal.
+Output: el/la meal was cooked by el/la chef.
+Input: el/la storm destroyed el/la house.
+Output: (model completes)
 
----
+### Chain-de-Thought (CoT)
+Encourage el/la model to show its reasoning step by step. This improves accuracy on arithmetic, logic, y multi-step tasks.
 
-## Hyperparameter Tuning
+**Without CoT:**
+> "What is 24 × 37?"
 
-- **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search para high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model de el/la objective function y selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps para distributed tuning.
+**con CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
 
-**Suggested search ranges para common hyperparameters:**
+el/la model will produce intermediate steps, reducing arithmetic errors.
 
-| Parameter | Suggested range (log-scale) |
-|-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number de layers (NN) | 2 to 6 |
-| Number de neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros y three cons de microservices. Return only a valid JSON object con keys "pros" y "cons", each an array de strings.
 
 ---
 
-## Model Selection y Validation
+## Avanzado Techniques
 
-1. **Baseline model**: Start con a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Red).
-3. **Cross-validate** each candidate on el/la validation set.
-4. **Compare metrics** (con confidence intervals) y select el/la best candidate.
-5. **Final evaluation** on el/la held-out test set.
-6. **Error analysis**: Look at Ejemplos el/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) y feed insights back into Datos preparation or feature engineering.
+### Self-Consistency
+Generate multiple responses para el/la same prompt (con a temperature > 0) y take a majority vote on el/la final answer. This is especially effective para reasoning tasks.
 
----
+### Tree-de-Thoughts
+Explore multiple reasoning paths en parallel, evaluate each, y choose el/la best one. This is a research-level technique but can be approximated by asking el/la model to "explore alternative solutions."
 
-## Implementación y Monitoring
+### ReAct (Reasoning + Acting)
+Let el/la model interleave reasoning con tool calls. It can think, then act (e.g., search el/la Web, run code), then think again based on el/la result.
 
-### Serving Patterns
-- **Batch inference**: Process large volumes de Datos offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time con low latency (e.g., IoT sensor alerts).
+**Prompt structure:**
+You have access to a calculator y a search engine. para each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have el/la final answer.
 
-### Model Monitoring
-- **Rendimiento monitoring**: Track accuracy/F1 over time on live Datos (when ground truth is Disponible).
-- **Datos drift**: Monitor changes en input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes en el/la relationship between inputs y outputs.
-- **Prediction drift**: Track el/la distribution de predicted outputs.
-- **Latency y throughput**: Ensure SLAs (Service Level Agreements) are met.
+### Persona Assignment
+Assign a specific persona to frame el/la response.
 
-### Logging y Alerting
-- Log all prediction requests y responses (con anonymisation).
-- Set alerts para:
-  - Significant drop en Rendimiento.
-  - High percentage de missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning y Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store y version models, metadata, y evaluation results.
-- Store el/la training code y Datos version (via DVC or Git LFS) alongside el/la model.
+**Ejemplos:**
+- "You are a Linux kernel developer explaining memory Gestión to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## Practical Workflow Checklist
+## Parameter Tuning
 
-- [ ] Problem framed y success metric defined.
-- [ ] Datos exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained y validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] Implementación plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (Datos card, model card) completed.
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 para factual answers; 0.7–1.0 para creative writing.
+- **Top-p** (nucleus sampling): Cuts off el/la probability mass at a certain cumulative threshold. 0.9 means el/la model samples from el/la top 90% de likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets el/la maximum output length. Remember to reserve space para el/la response within el/la context window.
+- **Frequency penalty**: Reduces repetition de el/la same tokens.
+- **Presence penalty**: Encourages el/la model to introduce new topics.
+
+---
+
+## Common Pitfalls y Fixes
+
+| Problem | Likely cause | Fix |
+|---------|--------------|-----|
+| Model ignores parts de prompt | Prompt too long or overloaded | Shorten; put el/la most important instruction at el/la end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain en detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" y provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask para JSON, markdown table, or bullet list |
+| Model answers en wrong Idioma | No Idioma instruction | Explicitly state "Respond en Inglés" (or your target Idioma) |
+
+---
+
+## Prompt Templates para Common Tasks
+
+### Summarisation
+Summarise el/la following text en 3 bullet points. Focus on el/la main arguments y avoid details.
+
+Text: [insert text]
+
+
+### Code Generation
+Write a [Idioma] function that [does X].
+Requirements:
+
+Use type hints.
+
+Include a docstring.
+
+Handle edge cases: [list].
+
+Do not use external libraries unless specified.
+
+
+### Explanation
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
+
+### Brainstorming
+Generate 10 ideas para [topic]. para each idea, give a one-sentence description y one potential challenge.
+
+text
+
+### Classification
+Classify el/la following customer Comentarios as [positive, neutral, negative].
+Provide a confidence score (0-100) y a brief reason.
+
+Comentarios: [insert text]
+
+### Translation con Style
+Translate el/la following Inglés text to Spanish. Use an informal tone suitable para a social media post.
+Text: [insert text]
+
+---
+
+## Evaluation de Prompts
+
+Treat prompts as code: version them, test them, y iterate.
+
+- **A/B test** different prompt variants on a held-out set de queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) con el/la prompt, version, y observed Rendimiento.
+
+---

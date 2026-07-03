@@ -1,658 +1,632 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: coding_languages.md
+Source: networking_basics.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Coding Languages
+# Networking Bases
 
-## Python
-
-Python is a high-level, interpreted, dynamically typed, general-purpose programming Langue. It emphasises readability et uses significant indentation as block delimiters.
-
-### Syntaxe Bases
-
-```python
-# Variables and types
-name: str = "Alice"
-age: int = 30
-score: float = 9.5
-active: bool = True
-
-# Conditionals
-if age >= 18:
-    print("adult")
-elif age >= 13:
-    print("teenager")
-else:
-    print("child")
-
-# Loops
-for i in range(5):
-    print(i)
-
-while active:
-    active = False
-```
-
-### Functions et type hints
-
-```python
-def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
-```
-
-### List comprehensions
-
-```python
-squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
-```
-
-### Classes et OOP
-
-```python
-class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def speak(self) -> str:
-        raise NotImplementedError
-
-class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
-```
-
-### Common patterns
-
-- Use `avec open(path) as f:` pour file I/O.
-- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
-- Use `dataclasses.dataclass` pour Données-only classes.
-- Use `pathlib.Path` instead de `os.path` pour file paths.
-
-### Tooling
-
-- `pip install <package>` installs packages.
-- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip install -r requirements.txt` restores them.
-- `pyproject.toml` is le/la modern project-configuration standard.
+A practical Référence pour developers et sysadmins — core concepts, protocols, Commandes, et troubleshooting.
 
 ---
 
-## JavaScript
+## le/la OSI Model (7 Layers)
 
-JavaScript is le/la primary Langue de le/la Web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
+A conceptual framework pour understanding Réseau Communication.
 
-### Modern Syntaxe (ES6+)
+| Layer | Name | Function | Example protocols |
+|-------|------|----------|-------------------|
+| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Presentation | Données formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection Gestion | NetBIOS, RPC |
+| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
+| 3 | Réseau | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Données Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
-
-// Arrow functions
-const add = (a, b) => a + b;
-
-// Template literals
-const greet = name => `Hello, ${name}!`;
-
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
-
-// Spread
-const merged = { ...defaults, ...overrides };
-```
-
-### Async programming
-
-```javascript
-// Promises
-fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
-```
-
-### Array methods
-
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
-
-### DOM manipulation
-
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
-});
-```
-
-### Tooling
-
-- `npm init -y` initialises a project.
-- `npm install <package>` adds a dependency.
-- `npm run <script>` runs a script defined dans `package.json`.
-- `node index.js` runs a script avec Node.js.
+dans practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used pour le/la internet.
 
 ---
 
-## TypeScript
+## IP Addressing
 
-TypeScript is a statically typed superset de JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, et enums.
+### IPv4
+- 32-bit address, written as four octets: `192.168.1.1`
+- Total: ~4.3 billion addresses (but exhausted dans practice).
 
-### Type annotations
+### IPv6
+- 128-bit address, written dans hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Total: 2¹²⁸ addresses (practically infinite).
 
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
+### Private IP Ranges (RFC 1918)
+These are not routable on le/la internet; used inside local networks:
+- `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
+- `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
+- `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### Interfaces et types
-
-```typescript
-interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
-}
-
-type Status = "active" | "inactive" | "banned";
-```
-
-### Generics
-
-```typescript
-function identity<T>(value: T): T {
-  return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
-  return arr[0];
-}
-```
-
-### Classes avec access modifiers
-
-```typescript
-class Counter {
-  private count: number = 0;
-
-  increment(): void {
-    this.count++;
-  }
-
-  get value(): number {
-    return this.count;
-  }
-}
-```
-
-### tsconfig.json essentials
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
-}
-```
-
-### Tooling
-
-- `npm install -g typescript` installs le/la compiler.
-- `tsc` compiles le/la project.
-- `ts-node src/index.ts` runs TypeScript directly.
+### CIDR Notation
+`192.168.1.0/24` means le/la first 24 bits are le/la Réseau prefix; le/la last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-## Rust
+## DNS (Domain Name System)
 
-Rust is a Systèmes programming Langue focused on safety, speed, et concurrency. It prevents memory-safety bugs at compile time through its ownership system.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-### Ownership et borrowing
+### Record Types
+| Type | Purpose |
+|------|---------|
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
+| **MX** | Mail exchange server |
+| **TXT** | Arbitrary text (SPF, DKIM, verification) |
+| **NS** | Nameserver pour le/la domain |
+| **SRV** | Service record (e.g., pour SIP) |
 
-Every value dans Rust has exactly one owner. When le/la owner goes out de scope le/la value is dropped. Borrowing allows references without transferring ownership.
+### Common Tools
+```bash
+dig example.com            # DNS lookup (detailed)
+nslookup example.com       # DNS lookup (simpler)
+host example.com           # Quick lookup
+dig -x 8.8.8.8             # Reverse lookup (IP to name)
 
-```rust
-fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
-}
+Ports and Protocols
+Well-Known Ports (0–1023)
+Port	Protocol	Service
+20, 21	TCP	FTP
+22	TCP	SSH
+23	TCP	Telnet
+25	TCP	SMTP
+53	UDP/TCP	DNS
+80	TCP	HTTP
+110	TCP	POP3
+123	UDP	NTP
+143	TCP	IMAP
+443	TCP	HTTPS
+465	TCP	SMTPS
+587	TCP	SMTP (submission)
+993	TCP	IMAPS
+995	TCP	POP3S
+3306	TCP	MySQL
+5432	TCP	PostgreSQL
+6379	TCP	Redis
+27017	TCP	MongoDB
+Check open ports
+bash
+ss -tulpn                 # Linux: listen and established sockets
+netstat -an               # Older tool
+lsof -i :8080             # See process using port 8080
+nmap localhost            # Scan local ports
+TCP vs UDP
+Feature	TCP	UDP
+Connection	Connection-oriented (handshake)	Connectionless
+Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
+Ordering	Preserves order	No ordering guarantee
+Flow control	Yes (sliding window)	No
+Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
+Header size	20–60 bytes	8 bytes
+HTTP and HTTPS
+HTTP Methods
+GET: Retrieve a resource (idempotent, safe).
 
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
+POST: Submit data (not idempotent).
 
-Mutable borrows (`&mut T`) require that no other borrows exist at le/la same time.
+PUT: Update/replace a resource (idempotent).
 
-### Lifetimes
+PATCH: Partial update.
 
-Lifetimes ensure references do not outlive le/la Données they point to.
+DELETE: Remove a resource (idempotent).
 
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
-}
-```
+Status Codes
+1xx: Informational (100 Continue).
 
-### Enums et pattern matching
+2xx: Success (200 OK, 201 Created, 204 No Content).
 
-```rust
-enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
-}
+3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
 
-fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
+4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+
+5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+
+Headers
+Content-Type: media type (application/json, text/html).
+
+Authorization: credentials (e.g., Bearer <token>).
+
+Cache-Control: caching policy.
+
+CORS headers: Access-Control-Allow-Origin, etc.
+
+TLS/SSL
+Encrypts HTTP traffic (HTTPS = HTTP over TLS).
+
+Certificates from Certificate Authorities (CAs) authenticate the server.
+
+Verify certificate chain and hostname on the client side.
+
+Firewalls and NAT
+Firewall
+Filters traffic based on rules (source IP, dest IP, port, protocol).
+
+Stateful firewalls track connection states.
+
+NAT (Network Address Translation)
+Translates private IPs to a public IP for internet access.
+
+Port forwarding: maps a public port to an internal host/port.
+
+Common Networking Commands
+Connectivity Tests
+bash
+ping google.com            # ICMP echo request
+ping -c 4 8.8.8.8          # ping 4 times
+traceroute google.com      # Trace the route (Linux)
+tracert google.com         # Windows version
+Routing
+bash
+ip route show              # Linux: routing table
+route -n                   # Older Linux
+netstat -r                 # Windows/Mac
+Network Interfaces
+bash
+ip addr show               # List interfaces and IPs
+ifconfig                   # Older command
+DNS
+bash
+dig example.com
+nslookup example.com
+host example.com
+Connectivity to a Port
+bash
+nc -zv google.com 443      # Netcat: check if port 443 is open
+telnet google.com 443      # Telnet to port
+curl -v https://google.com # Verbose output
+Firewall (Linux iptables/nftables)
+bash
+sudo ufw status            # Ubuntu: simple firewall
+sudo iptables -L -n        # List rules
+Network Statistics
+bash
+ss -tulpn                  # Show listening sockets (Linux)
+netstat -an                # All sockets (all OS)
+Subnetting (Quick Reference)
+CIDR	Netmask	Number of addresses	Usable hosts
+/32	255.255.255.255	1	1
+/30	255.255.255.252	4	2
+/29	255.255.255.248	8	6
+/28	255.255.255.240	16	14
+/27	255.255.255.224	32	30
+/26	255.255.255.192	64	62
+/25	255.255.255.128	128	126
+/24	255.255.255.0	256	254
+/23	255.255.254.0	512	510
+/22	255.255.252.0	1,024	1,022
+/16	255.255.0.0	65,536	65,534
+/8	255.0.0.0	16,777,216	16,777,214
+Load Balancing and Reverse Proxies
+Nginx as Reverse Proxy
+nginx
+server {
+    listen 80;
+    server_name example.com;
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
     }
 }
-```
+Load Balancing Algorithms
+Round-robin
 
-### Error handling
+Least connections
 
-```rust
-use std::fs;
+IP hash (session stickiness)
 
-fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
-}
+Weighted round-robin
 
-fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
-}
-```
+Tools
+Nginx, HAProxy (software)
 
-le/la `?` operator propagates errors automatically inside functions that return `Result`.
+AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
 
-### Tooling (Cargo)
+Troubleshooting Checklist
+Is the physical link up? (Check cables, Wi-Fi connection).
 
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles et runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` formats code. `cargo clippy` lints.
+Can you ping the gateway? (e.g., ping 192.168.1.1).
+
+Can you ping an external IP? (e.g., 8.8.8.8).
+
+Can you resolve a domain? (dig google.com).
+
+Is the application listening on the expected port? (ss -tulpn | grep 8080).
+
+Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+
+Are there any errors in the application logs?
+
+Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
+
+text
 
 ---
 
-## Go
+## File 6: `devops_sysadmin.md`
 
-Go (Golang) is a statically typed, compiled Langue designed pour simplicity et high-Performance concurrent programs.
+```markdown
+# DevOps et System Administration
 
-### Bases
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
-}
-```
-
-### Functions et multiple return values
-
-```go
-func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
-}
-```
-
-### Interfaces
-
-```go
-type Speaker interface {
-    Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
-
-Any type that implements all methods de an interface satisfies it — no explicit declaration is needed.
-
-### Goroutines et channels
-
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
-}
-
-func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
-
-    go worker(1, jobs, results)
-
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
-
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
-}
-```
-
-### Defer
-
-```go
-func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
-}
-```
-
-### Tooling
-
-- `go mod init module/name` initialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` formats code.
-- `go vet ./...` checks pour common mistakes.
+A practical Guide to managing servers, automating operations, et maintaining reliable infrastructure.
 
 ---
 
-## C et C++
+## SSH (Secure Shell)
 
-C is a low-level, compiled, procedural Langue. C++ extends C avec classes, templates, et le/la Standard Template Library (STL).
+### Key Generation
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
+Copy Public Key to Server
+bash
+ssh-copy-id user@host
+# Manual alternative:
+cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+SSH Config (~/.ssh/config)
+ssh-config
+Host myserver
+    HostName 192.168.1.10
+    User ubuntu
+    IdentityFile ~/.ssh/mykey
+    Port 2222
+Common SSH Commands
+bash
+ssh user@host                    # Connect
+ssh -J jumpuser@jumphost user@target   # Proxy jump
+scp file.txt user@host:/path/     # Copy file to remote
+scp user@host:/path/file.txt .    # Copy from remote
+rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
+Hardening SSH
+Disable root login: PermitRootLogin no
 
-### C Bases
+Use key-based auth only: PasswordAuthentication no
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
+Change default port (optional, security through obscurity).
 
-int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
+Enable AllowUsers or AllowGroups to restrict access.
 
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
+Systemd (Linux Service Management)
+Common Commands
+bash
+systemctl status nginx           # Check service status
+systemctl start nginx            # Start service
+systemctl stop nginx
+systemctl restart nginx
+systemctl reload nginx           # Graceful reload (re-read config)
+systemctl enable nginx           # Start on boot
+systemctl disable nginx
+systemctl list-units --type=service --all   # List all services
+systemctl daemon-reload          # Reload unit files after editing
+Creating a systemd Service Unit
+Create /etc/systemd/system/myapp.service:
 
-    return 0;
+ini
+[Unit]
+Description=My Python App
+After=network.target
+
+[Service]
+User=myuser
+Group=mygroup
+WorkingDirectory=/opt/myapp
+ExecStart=/usr/bin/python3 /opt/myapp/main.py
+Restart=always
+RestartSec=10
+Environment="ENV=production"
+
+[Install]
+WantedBy=multi-user.target
+Then:
+
+bash
+sudo systemctl daemon-reload
+sudo systemctl enable myapp
+sudo systemctl start myapp
+Journalctl (View Logs)
+bash
+journalctl -u myapp              # Logs for service
+journalctl -f                    # Follow (tail) logs
+journalctl --since "1 hour ago"
+journalctl _PID=1234             # Filter by process ID
+Logging Strategies
+Structured Logging
+Use JSON format to make logs machine-parseable:
+
+python
+import structlog
+logger = structlog.get_logger()
+logger.info("user_login", user_id=123, ip="192.168.1.1")
+Log Levels
+DEBUG: detailed diagnostic.
+
+INFO: general events (start, stop, normal transactions).
+
+WARN: unexpected but not fatal.
+
+ERROR: error that prevents a specific operation.
+
+FATAL/CRITICAL: system shutdown.
+
+Log Aggregation
+ELK Stack (Elasticsearch, Logstash, Kibana) or Elastic Cloud.
+
+Loki + Grafana (lightweight alternative).
+
+Datadog, Splunk, Sumo Logic (SaaS).
+
+Log Rotation (logrotate)
+Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
+
+logrotate
+/var/log/myapp/*.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 0640 myuser mygroup
 }
-```
+Monitoring and Alerting
+Metrics to Monitor
+System: CPU, RAM, disk usage, load average, network I/O.
 
-### Pointers
+Application: request rate, latency (p50, p95, p99), error rate, active sessions.
 
-A pointer stores le/la memory address de another variable. `*ptr` dereferences it; `&var` takes an address.
+Database: query count, slow queries, connection pool usage.
 
-```c
-int a = 10;
-int *p = &a;
-*p = 20;   /* a is now 20 */
-```
+Business: user signups, conversion rate, revenue.
 
-### C++ classes et RAII
+Tools
+Prometheus + Grafana: Standard open-source stack.
 
-```cpp
-#include <string>
-#include <iostream>
+Node Exporter for system metrics.
 
-class Person {
-public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
+Blackbox Exporter for endpoint availability.
 
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
+Alertmanager for alert routing.
 
-private:
-    std::string name_;
-    int age_;
-};
-```
+Cloud native: AWS CloudWatch, Azure Monitor, GCP Monitoring.
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically dans destructors.
+Uptime Monitoring
+Pingdom, Statuspage, Better Uptime, Uptime Kuma (self-hosted).
 
-### STL containers
+Health checks: expose a /health endpoint that returns 200 if the service is healthy.
 
-```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
+Backup Strategies
+The 3-2-1 Rule
+3 copies of data.
 
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
+2 different media types (e.g., SSD + tape, or local + cloud).
 
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"]   = 87;
-```
+1 copy off-site (e.g., cloud or remote data centre).
 
-### Modern C++ (C++17 / C++20) highlights
+Backup Types
+Full backup: copy everything (slow, space-heavy).
 
-- `auto` type deduction.
-- Range-based `pour` loops: `pour (auto& item : container)`.
-- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bindings: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::string_view`.
+Incremental backup: copy only changes since last full or incremental (fast, complex restore).
 
-### Compilation
+Differential backup: copy changes since last full (middle ground).
 
-- `gcc main.c -o main` compiles C.
-- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is le/la standard build-system generator pour larger projects.
+Database Backups
+bash
+# PostgreSQL
+pg_dump dbname > backup.sql
+pg_dumpall > all_backup.sql
 
----
+# MySQL / MariaDB
+mysqldump -u root -p dbname > backup.sql
 
-## Swift
+# Restore
+psql dbname < backup.sql
+mysql -u root -p dbname < backup.sql
+File Backups
+bash
+# Tar archive
+tar -czf backup.tar.gz /var/lib/data
 
-Swift is a modern, statically typed programming Langue developed by Apple pour iOS, macOS, watchOS, et tvOS. It is also Disponible on Linux.
+# Rsync to remote
+rsync -avz /local/data/ user@backup-server:/backup/data/
 
-### Bases
+# Cloud CLI (e.g., AWS S3)
+aws s3 sync /local/data s3://my-bucket/backup/
+Automated Backup Scheduling (cron)
+cron
+# Run daily at 2am
+0 2 * * * /usr/local/bin/backup_script.sh
+Cron and Scheduled Jobs
+Cron Syntax
+text
+* * * * * command
+│ │ │ │ │
+│ │ │ │ └─ Day of week (0-7, 0=Sun)
+│ │ │ └─── Month (1-12)
+│ │ └───── Day of month (1-31)
+│ └─────── Hour (0-23)
+└───────── Minute (0-59)
+Examples
+cron
+# Every 5 minutes
+*/5 * * * * /path/to/script
 
-```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
-counter += 1
+# Every day at 3:15 AM
+15 3 * * * /path/to/script
 
-let pi: Double = 3.14159
-```
+# Every Monday at 4 AM
+0 4 * * 1 /path/to/script
 
-### Optionals
+# Every hour
+0 * * * * /path/to/script
+Managing Cron
+bash
+crontab -l          # List current user's cron jobs
+crontab -e          # Edit
+crontab -r          # Remove all
+Anacron
+Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
 
-An optional (`T?`) represents a value that may or may not be present.
+Package Management and Updates
+Debian/Ubuntu (apt)
+bash
+sudo apt update                # Update package list
+sudo apt upgrade               # Upgrade all packages
+sudo apt install git nginx
+sudo apt remove git
+sudo apt autoremove            # Remove unused dependencies
+RHEL/CentOS/Fedora (dnf/yum)
+bash
+sudo dnf check-update
+sudo dnf update
+sudo dnf install git nginx
+sudo dnf remove git
+Security Updates
+Enable unattended-upgrades on Ubuntu for security patches:
 
-```swift
-var name: String? = nil
-name = "Alice"
+bash
+sudo apt install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
+Docker in Production
+Best Practices
+Use specific image tags (python:3.12-slim) not latest.
 
-// Safe unwrapping
-if let n = name {
-    print("Hello, \(n)")
+Run containers as non-root user.
+
+Scan images for vulnerabilities (docker scan, trivy).
+
+Set resource limits (--memory, --cpus).
+
+Use secrets (via Docker secrets or environment with care).
+
+Keep images small: multi-stage builds, alpine base.
+
+Docker Compose in Production
+Set resource limits in docker-compose.yml:
+
+yaml
+services:
+  app:
+    image: myapp:1.0
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+CI/CD Basics
+Pipeline Stages
+Build: Compile code, install dependencies.
+
+Test: Run unit, integration, and lint checks.
+
+Containerise: Build Docker image.
+
+Push: Push image to container registry.
+
+Deploy: Update staging/production environment.
+
+Tools
+GitHub Actions: Integrated with GitHub.
+
+GitLab CI: Built into GitLab.
+
+Jenkins: Traditional, highly configurable.
+
+CircleCI, Travis CI: Popular third-party.
+
+ArgoCD: GitOps for Kubernetes.
+
+Example GitHub Action (simple):
+yaml
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: pytest
+System Tuning and Troubleshooting
+Check Disk Space
+bash
+df -h                      # Human-readable disk usage
+du -sh /* | sort -h        # Size of top-level directories
+Check Memory Usage
+bash
+free -m                    # Memory in MB
+vmstat 1 10                # Virtual memory statistics
+top -o %MEM                # Sort processes by memory
+Check CPU Load
+bash
+uptime                     # Load average over 1,5,15 minutes
+top -o %CPU                # Sort processes by CPU
+mpstat -P ALL 1 5          # Per-core CPU usage
+Check Network
+bash
+netstat -i                 # Interface statistics
+iftop                      # Live bandwidth usage (requires install)
+nload                      # Another bandwidth monitor
+Find Large Files
+bash
+find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
+Infrastructure as Code (IaC)
+Terraform
+Declare cloud resources in HCL.
+
+hcl
+provider "aws" {
+  region = "us-east-1"
 }
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
-
-### Functions et closures
-
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
-
-### Classes et structs
-
-Swift has both classes (Référence types) et structs (value types). Prefer structs pour simple Données models.
-
-```swift
-struct Point {
-    var x: Double
-    var y: Double
+resource "aws_instance" "web" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
 }
+Ansible
+Agentless configuration management using YAML.
 
-class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
-}
-```
+yaml
+- name: Install nginx
+  hosts: webservers
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+Best Practices
+Use modules and roles for reusability.
 
-### Protocols
+Store state remotely (S3, Terraform Cloud).
 
-```swift
-protocol Describable {
-    var description: String { get }
-}
+Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
 
-struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
-}
-```
+Version control your IaC code.
 
-### Codable (JSON encoding / decoding)
+Incident Response (On-call)
+Checklist for Service Outage
+Acknowledge the alert.
 
-```swift
-struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
-}
+Assess scope: Which services/users are affected?
 
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
+Identify the issue (look at logs, metrics, recent deployments).
 
-### SwiftUI Bases
+Contain if possible (circuit breakers, feature flags).
 
-```swift
-import SwiftUI
+Rollback or fix forward.
 
-struct ContentView: View {
-    @State private var count = 0
+Communicate status to stakeholders and users (status page).
 
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
-}
-```
+Document the incident timeline and actions.
 
-### Tooling
-
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs le/la project.
-- `swift test` runs tests.
-- `swift package init --type executable` creates a new executable project.
-- Xcode is le/la primary IDE pour Apple-platform Développement.
-
----
-
-## Coding Fondamentaux (Langue-Agnostic)
-
-### Problem-solving workflow
-
-1. Define le/la input, output, et constraints before writing code.
-2. Break le/la task into smaller sub-problems.
-3. Start avec a simple correct solution, then optimise if needed.
-4. Validate avec tests, edge cases, et realistic inputs.
-
-### Core Données structures
-
-- **Array / List**: ordered collection avec fast indexed reads.
-- **Hash map / Dictionnaire**: key-value store avec average O(1) lookup.
-- **Set**: unique values, useful pour membership checks.
-- **Stack**: LIFO (last dans, first out), common dans parsing et recursion.
-- **Queue**: FIFO (first dans, first out), useful pour scheduling et BFS.
-- **Tree / Graph**: hierarchical et Réseau-style relationships.
-
-### Algorithmic complexity (Big O)
-
-- Big O describes how runtime or memory grows avec input size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): binary search.
-  - O(n): single pass through Données.
-  - O(n log n): efficient sorting.
-  - O(n²): nested loops over similar-size inputs.
-- Prefer clear, maintainable code unless profiling shows a bottleneck.
-
-### Debugging principles
-
-- Reproduce le/la bug reliably first.
-- Minimise le/la failing case to isolate cause.
-- Inspect logs, inputs, et assumptions.
-- Change one variable at a time while Test.
-- Add regression tests so le/la same bug does not return.
-
-### Test pyramid
-
-- **Unit tests**: fast, focused checks de small logic units.
-- **Integration tests**: verify interactions across modules/services.
-- **End-to-end tests**: validate user flows dans realistic environments.
-- A balanced suite has many unit tests et fewer slow end-to-end tests.
-
-### Code quality practices
-
-- Use meaningful names et small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive et interfaces explicit.
-- Use linters/formatters pour consistency.
-- Review code pour correctness, clarity, et Sécurité.
-
-### Sécurité Bases pour developers
-
-- Validate et sanitise external input.
-- Use parameterised queries to prevent SQL injection.
-- Store passwords avec strong hashing algorithms (e.g., Argon2, bcrypt).
-- Avoid embedding secrets dans source code.
-- Apply least privilege pour credentials et services.
+Post-mortem: within 24–48 hours, write a root cause analysis (RCA) and action items to prevent recurrence.

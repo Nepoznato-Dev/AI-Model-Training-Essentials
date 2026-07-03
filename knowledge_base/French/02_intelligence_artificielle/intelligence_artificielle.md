@@ -1,186 +1,91 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: ml_evaluation_and_workflow.md
+Source: artificial_intelligence.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Apprentissage automatique Evaluation et Workflow
+# Artificial Intelligence
 
-A practical Guide to le/la ML lifecycle — from problem framing to production monitoring — avec a focus on metrics, validation, et debugging.
+## What is Artificial Intelligence?
 
----
+Artificial Intelligence (AI) refers to le/la simulation de human intelligence dans machines programmed to think, learn, et solve problems. AI Systèmes can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, et identifying objects dans images. le/la term was coined by John McCarthy dans 1956 at le/la Dartmouth Conference, widely regarded as le/la founding event de AI as a field.
 
-## le/la ML Workflow (CRISP-ML)
+Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed pour specific tasks, et le/la theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Systèmes are Narrow AI.
 
-1. **Entreprise Understanding**: Define le/la objective et success criteria.
-2. **Données Understanding**: Explore Disponible Données, identify quality issues.
-3. **Données Preparation**: Clean, transform, et split Données.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess Performance against metrics.
-6. **Déploiement**: Serve le/la model dans production.
-7. **Monitoring**: Track drift, Performance, et anomalies.
+## Histoire de AI
 
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
+le/la Histoire de AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Informatique Machinery et Intelligence" introduced le/la Turing Test — a measure de a machine's ability to exhibit intelligent behaviour indistinguishable from a human. le/la 1956 Dartmouth Conference formally established AI as an academic discipline.
 
----
+le/la 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) et LISP (a programming Langue designed pour AI). le/la "AI winters" de le/la 1970s et 1980s were periods de reduced funding et interest following unmet expectations. A resurgence dans le/la 1980s came avec expert Systèmes — rule-based programs that encoded human expertise. le/la 2000s brought Apprentissage automatique breakthroughs fuelled by le/la internet et growing datasets. le/la 2010s saw le/la rise de Apprentissage profond, transforming computer vision, natural Langue processing (NLP), et reinforcement learning.
 
-## Données Splitting
+## Apprentissage automatique
 
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit le/la model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters et select model variants.
-- **Test set** (~15%): Used only once at le/la very end to estimate generalisation Performance.
+Apprentissage automatique (ML) is a subset de AI that enables Systèmes to learn from Données without being explicitly programmed. Key ML categories include:
 
-**Important:** le/la test set must be kept completely untouched until final evaluation to avoid Données leakage.
+**Supervised Learning**: le/la model is trained on labelled input-output pairs. Exemples include spam detection et image classification. Algorithms include linear regression, decision trees, Assistance vector machines, et Réseaux de neurones.
 
-### Cross-Validation (k-fold)
-pour small datasets, use k-fold cross-validation: split Données into k folds, train on k-1, validate on le/la remaining, et repeat k times. Average le/la Performance. k=5 or k=10 is common.
+**Unsupervised Learning**: le/la model finds patterns dans unlabelled Données. Exemples include customer segmentation et anomaly detection. Algorithms include k-means clustering et principal component analysis (PCA).
 
-### Stratified Splitting
-pour classification avec imbalanced classes, use stratified splits to preserve class proportions dans each subset.
+**Reinforcement Learning**: An agent learns by interacting avec an environment, receiving rewards or penalties. Used dans game-playing AI (AlphaGo, AlphaZero), robotics, et recommendation Systèmes.
 
-### Time-Based Splitting
-pour time-series Données, split chronologically (train on past, test on Futur) rather than randomly.
+**Semi-Supervised et Self-Supervised Learning**: Combine small amounts de labelled Données avec large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
 
----
+## Apprentissage profond
 
-## Evaluation Metrics
+Apprentissage profond is a subset de Apprentissage automatique that uses artificial Réseaux de neurones avec many layers (deep networks). Inspired loosely by le/la brain's neural structure, these networks learn hierarchical representations de Données. Apprentissage profond powers:
 
-### Classification Metrics
+- **Computer Vision**: Image recognition, object detection, medical imaging
+- **Natural Langue Processing**: Machine translation, sentiment analysis, question answering
+- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
+- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
 
-| Metric | What it measures | Best used pour |
-|--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean de precision et recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under le/la ROC curve; tradeoff between TPR et FPR | General classifier Performance independent de threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+Key Apprentissage profond architectures include convolutional Réseaux de neurones (CNNs) pour images, recurrent Réseaux de neurones (RNNs) et LSTMs pour sequences, transformers pour Langue, et generative adversarial networks (GANs) pour synthesis.
 
-**Definitions:**
-- TP = True Positive
-- TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+## Large Langue Models (LLMs)
 
-### Regression Metrics
+Large Langue Models (LLMs) are AI Systèmes trained on vast amounts de text Données to understand et generate human Langue. They are based on le/la Transformer Architecture, introduced dans le/la 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict le/la next token (word piece) dans a sequence, allowing them to generate coherent text, answer questions, write code, et perform reasoning tasks.
 
-| Metric | What it measures | Sensitivity to outliers |
-|--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient de Determination) | Proportion de variance explained | None directly, but sensitive to outliers indirectly |
+Notable LLMs include:
+- **GPT series** (OpenAI): GPT-3, GPT-4, et successors — widely used pour chat et code
+- **Claude** (Anthropic): Focused on safety et helpfulness
+- **Gemini** (Google DeepMind): Multimodal, integrating text, images, et code
+- **LLaMA / Llama 3** (Meta): Open-weight models pour research et local Déploiement
+- **Mistral** (Mistral AI): Efficient open models competitive avec much larger LLMs
 
-### Ranking et Retrieval Metrics
-- **Precision@k**: Fraction de relevant items among top-k recommendations.
-- **Recall@k**: Fraction de all relevant items that appear dans top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts pour position relevance.
-- **Hit Rate**: Whether a relevant item appears dans le/la top-k.
+LLMs are trained dans two stages: pre-training (unsupervised on large text corpora) et fine-tuning (supervised or via reinforcement learning from human Retour, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens dans le/la most Avancé 2024 models.
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap avec Référence translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap pour summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms et stems.
+## AI Ethics et Safety
 
----
+AI raises important ethical questions including bias, privacy, job displacement, et le/la risk de misuse. Algorithmic bias occurs when training Données reflects historical inequalities, causing AI Systèmes to produce discriminatory outputs. Facial recognition Systèmes have shown higher error rates pour darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
 
-## Evaluation Pitfalls
+AI safety is le/la field dedicated to ensuring AI Systèmes behave as intended without causing unintended harm. Key concerns include:
+- **Alignment**: Ensuring AI goals match human values
+- **Interpretability / Explainability**: Understanding why an AI made a decision (critical dans Médecine, Droit, Finance)
+- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
+- **Existential risk**: Theoretical concern that a Futur AGI could pursue goals misaligned avec human survival
 
-### Données Leakage
-Occurs when information from le/la test set inadvertently influences training.
-- **Prevent:** Never use test Données pour feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
+Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, et independent institutes like MIRI et ARC.
 
-### Overfitting
-Model performs well on training Données but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify Architecture, or collect more Données.
+## AI dans Society
 
-### Underfitting
-Model performs poorly on both training et validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
+AI is transforming nearly every industry:
 
-### Imbalanced Données
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
+- **Soins de santé**: AI assists dans diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), et personalising treatment plans.
+- **Finance**: Fraud detection, algorithmic trading, credit scoring, et robo-advisors use ML models.
+- **Transportation**: Self-driving vehicles use computer vision, lidar, et reinforcement learning. Tesla Autopilot, Waymo, et Cruise are leading efforts.
+- **Education**: Personalised learning platforms adapt content to individual student pace et learning style.
+- **Creative fields**: AI generates music, art, et writing; tools like Midjourney, DALL-E, et GitHub Copilot have changed creative workflows.
+- **Cybersecurity**: AI detects anomalies, identifies threats, et powers both attacks et defences.
 
-### Temporal Drift (Concept Drift)
-le/la relationship between features et target changes over time.
-- **Mitigate:** Retrain periodically, monitor Performance, use drift detection algorithms.
+## Robotics et Embodied AI
 
----
+Robotics combines AI avec physical machines. Modern robots use perception (cameras, lidar), planning, et control to navigate et manipulate environments. Boston Dynamics' Atlas demonstrates Avancé bipedal movement. Industrial robots from companies like ABB et FANUC automate manufacturing. Household robots (Roomba) et surgical robots (da Vinci System) apply AI dans everyday et medical settings. Embodied AI research focuses on agents that learn physical skills through interaction avec le/la world, bridging le/la gap between simulated et real environments.
 
-## Hyperparameter Tuning
+## Current AI Trends (2020s)
 
-- **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search pour high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model de le/la objective function et selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps pour distributed tuning.
-
-**Suggested search ranges pour common hyperparameters:**
-
-| Parameter | Suggested range (log-scale) |
-|-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number de layers (NN) | 2 to 6 |
-| Number de neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
-
----
-
-## Model Selection et Validation
-
-1. **Baseline model**: Start avec a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Réseau).
-3. **Cross-validate** each candidate on le/la validation set.
-4. **Compare metrics** (avec confidence intervals) et select le/la best candidate.
-5. **Final evaluation** on le/la held-out test set.
-6. **Error analysis**: Look at Exemples le/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) et feed insights back into Données preparation or feature engineering.
-
----
-
-## Déploiement et Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes de Données offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is Disponible).
-- **Données drift**: Monitor changes dans input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes dans le/la relationship between inputs et outputs.
-- **Prediction drift**: Track le/la distribution de predicted outputs.
-- **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging et Alerting
-- Log all prediction requests et responses (avec anonymisation).
-- Set alerts pour:
-  - Significant drop dans Performance.
-  - High percentage de missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning et Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store et version models, metadata, et evaluation results.
-- Store le/la training code et Données version (via DVC or Git LFS) alongside le/la model.
-
----
-
-## Practical Workflow Checklist
-
-- [ ] Problem framed et success metric defined.
-- [ ] Données exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained et validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] Déploiement plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (Données card, model card) completed.
+- **Multimodal AI**: Systèmes that process text, images, audio, et video together (GPT-4V, Gemini)
+- **Agents et agentic AI**: LLMs that can use tools, browse le/la Web, write code, et take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
+- **Open-weight models**: Meta's LLaMA democratised access to large models pour researchers
+- **On-device AI**: Running AI models locally on phones et laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
+- **AI regulation**: le/la EU AI Act (2024) is le/la world's first comprehensive AI Droit, classifying AI Systèmes by risk level

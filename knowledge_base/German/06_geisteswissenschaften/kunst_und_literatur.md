@@ -1,71 +1,229 @@
 <!-- 
 This file was automatically translated from English to German.
-Source: history_and_culture.md
+Source: arts_and_literature.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Geschichte und Kultur
+# Künste und Literatur
 
-## Ancient Civilizations
+## Literary Genres und Forms
 
-Mesopotamia, located between der/die/das Tigris und Euphrates rivers in modern-day Iraq, is considered one von der/die/das earliest cradles von civilization. der/die/das Sumerians developed one von der/die/das first writing Systeme, called cuneiform, around 3400 BCE. Ancient Egypt developed along der/die/das Nile River und is famous für its pyramids, pharaohs, und hieroglyphic writing. der/die/das Great Pyramid von Giza was built around 2560 BCE und is one von der/die/das Seven Wonders von der/die/das Ancient World.
+### Fiction Genres
+- **Literary Fiction**: Character-driven narratives focusing on themes, style, und psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
+- **Wissenschaft Fiction**: Speculative fiction exploring futuristic Technologie, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "der/die/das Lord von der/die/das Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Mystery/Detective**: Crime-solving narratives mit puzzles und investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
+- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "der/die/das Shining" by Stephen King, "Dracula" by Bram Stoker)
+- **Romance**: Focus on romantic relationships und emotional journeys (e.g., Jane Austen's "Pride und Prejudice", Nicholas Sparks novels)
+- **Historical Fiction**: Set in specific historical periods mit accurate details (e.g., "der/die/das Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
+- **Magical Realism**: Realistic settings mit magical elements treated as ordinary (e.g., "One Hundred Years von Solitude" by Gabriel García Márquez)
 
-Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, und art. Greek thinkers including Socrates, Plato, und Aristotle established frameworks von logic und ethics still studied today. Ancient Rome grew from a city-state to a republic und then an empire stretching across Europe, North Africa, und Western Asia. Rome contributed to Recht, Architektur, engineering (roads, aqueducts), und governance.
+### Non-Fiction Genres
+- **Biography/Autobiography**: Life stories von real people (e.g., "der/die/das Diary von a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
+- **Memoir**: Personal accounts focusing on specific experiences or themes
+- **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
+- **Journalism**: News reporting, investigative pieces, feature articles
+- **Academic Writing**: Research papers, scholarly articles, dissertations
+- **Self-Help**: Personal Entwicklung und improvement guides
 
-## Major World Religions
+### Poetry Forms
+- **Sonnet**: 14-line poem mit specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
+- **Haiku**: Japanese form mit 5-7-5 syllable pattern
+- **Limerick**: Five-line humorous poem mit AABBA rhyme scheme
+- **Free Verse**: No regular meter or rhyme pattern
+- **Villanelle**: 19 lines mit specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
+- **Ode**: Lyrical poem praising a person, event, or thing
+- **Epic**: Long narrative poem about heroic deeds (e.g., "der/die/das Odyssey" by Homer, "Beowulf")
 
-Christianity is der/die/das world's largest religion mit approximately 2.4 billion followers. It is based on der/die/das life und teachings von Jesus Christ und centers on der/die/das Bible. Islam is der/die/das world's second-largest religion mit approximately 1.9 billion followers. It was founded by der/die/das Prophet Muhammad in der/die/das 7th century CE und is centered on der/die/das Quran. Hinduism is der/die/das world's third-largest religion mit approximately 1.2 billion followers, primarily in India. Buddhism was founded by Siddhartha Gautama in der/die/das 5th century BCE und focuses on achieving enlightenment. Judaism is one von der/die/das oldest monotheistic religions, mit approximately 15 million followers worldwide.
+## Major Literary Movements
 
-## der/die/das Middle Ages
+### Historical Periods
+- **Classical Literatur** (8th century BCE - 5th century CE): Greek und Roman works emphasizing reason, order, und humanism
+- **Medieval Literatur** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "der/die/das Divine Comedy" by Dante)
+- **Renaissance** (14th - 17th century): Humanism, revival von classical learning (e.g., Shakespeare, Cervantes)
+- **Enlightenment** (17th - 18th century): Reason, Wissenschaft, individual rights (e.g., Voltaire, Jonathan Swift)
+- **Romanticism** (late 18th - mid-19th century): Emotion, Natur, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
+- **Realism** (mid-19th century): Accurate depiction von everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
+- **Modernism** (late 19th - mid-20th century): Experimental forms, stream von consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
+- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
 
-der/die/das Middle Ages (approximately 500–1500 CE) in Europe followed der/die/das fall von der/die/das Western Roman Empire. This period saw der/die/das rise von feudalism, der/die/das Catholic Church as a dominant political und cultural force, der/die/das Crusades (military campaigns to der/die/das Holy Land), und eventually der/die/das Renaissance. der/die/das Black Death (bubonic plague) killed approximately one-third von Europe's population in der/die/das 14th century. der/die/das Islamic Golden Age (8th–14th centuries) saw major advances in Wissenschaft, mathematics, und philosophy in der/die/das Islamic world.
+## Visual Künste
 
-## der/die/das Renaissance und Enlightenment
+### Art Movements
+- **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
+- **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
+- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
+- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
+- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
+- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
+- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
+- **Pop Art** (1950s - 1960s): Popular Kultur imagery (e.g., Warhol, Lichtenstein)
+- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
 
-der/die/das Renaissance (14th–17th centuries) was a cultural und intellectual movement that began in Italy und spread across Europe, characterized by renewed interest in classical art, philosophy, und Wissenschaft. Key figures include Leonardo da Vinci, Michelangelo, und Galileo Galilei. der/die/das Scientific Revolution (16th–17th centuries) transformed understanding von Natur und Wissenschaft, mit contributions from Copernicus, Galileo, und Newton. der/die/das Enlightenment (17th–18th centuries) emphasized reason, individual rights, und skepticism von tradition, influencing modern democracy und human rights.
+### Art Mediums und Techniques
+- **Painting**: Oil, acrylic, watercolor, fresco, tempera
+- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
+- **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
+- **Printmaking**: Etching, lithography, screen printing, woodcut
+- **Photography**: Digital, film, documentary, portrait, landscape, street photography
+- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
+- **Installation Art**: Site-specific, immersive environments
+- **Leistung Art**: Live actions, body art, happenings
 
-## Exploration und Colonization
+## Music
 
-der/die/das Age von Exploration (15th–17th centuries) saw European explorers map der/die/das world. Christopher Columbus reached der/die/das Americas in 1492. Vasco da Gama reached India by sea in 1498. Ferdinand Magellan's expedition completed der/die/das first circumnavigation von der/die/das globe in 1522. European colonization von der/die/das Americas, Africa, und Asia had profound und often devastating effects on indigenous populations through violence, disease, und exploitation.
+### Classical Music Periods
+- **Medieval** (500-1400): Gregorian chant, early polyphony
+- **Renaissance** (1400-1600): Vocal polyphony, madrigals (e.g., Palestrina, Josquin des Prez)
+- **Baroque** (1600-1750): Ornate melodies, basso continuo (e.g., Bach, Handel, Vivaldi)
+- **Classical** (1750-1820): Balanced forms, clarity (e.g., Mozart, Haydn, Beethoven early works)
+- **Romantic** (1820-1900): Emotional expression, expanded orchestras (e.g., Chopin, Wagner, Tchaikovsky)
+- **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
 
-## der/die/das Industrial Revolution
+### Music Genres
+- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
+- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
+- **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
+- **Hip Hop/Rap**: Rhythmic speech, beats, DJ Kultur (e.g., Tupac, Kendrick Lamar, Jay-Z)
+- **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
+- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
+- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
+- **Classical Crossover**: Fusion von classical und popular styles
 
-der/die/das Industrial Revolution began in Britain in der/die/das late 18th century und transformed manufacturing, Landwirtschaft, und transportation. Steam power, textile machinery, und iron production drove rapid economic change. der/die/das revolution spread across Europe und North America in der/die/das 19th century. It led to urbanization, new social classes, und significant Umwelt changes. It also produced dangerous working conditions that eventually spurred labor movements und social reform.
+### Music Theory Grundlagen
+- **Notes und Scales**: Major, minor, chromatic, pentatonic, modes
+- **Chords und Harmony**: Triads, seventh chords, chord progressions
+- **Rhythm und Meter**: Time signatures, tempo, syncopation
+- **Melody und Counterpoint**: Thematic Entwicklung, voice leading
+- **Form und Structure**: Sonata form, symphony movements, verse-chorus structure
 
-## World Wars
+## Theater und Leistung
 
-World War I (1914–1918) began following der/die/das assassination von Archduke Franz Ferdinand von Austria-Hungary und involved much von Europe. New military technologies such as machine guns, poison gas, und tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was der/die/das deadliest conflict in human Geschichte, mit approximately 70–85 million deaths. It was fought between der/die/das Allies (including der/die/das United States, Soviet Union, und United Kingdom) und der/die/das Axis powers (Germany, Japan, und Italy). der/die/das war ended mit der/die/das defeat von Nazi Germany und der/die/das atomic bombings von Hiroshima und Nagasaki in Japan.
+### Theater Types
+- **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
+- **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
+- **Drama**: Serious narratives exploring human conflict
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "der/die/das Phantom von der/die/das Opera")
+- **Experimental/Avant-Garde**: Non-traditional forms, audience participation
 
-## der/die/das Cold War
+### Famous Playwrights
+- William Shakespeare (Englisch, 1564-1616): "Hamlet", "Macbeth", "Romeo und Juliet"
+- Anton Chekhov (Russian, 1860-1904): "der/die/das Cherry Orchard", "Three Sisters"
+- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "der/die/das Glass Menagerie"
+- Arthur Miller (American, 1915-2005): "Death von a Salesman", "der/die/das Crucible"
+- Samuel Beckett (Irish, 1906-1989): "Waiting für Godot", "Endgame"
+- August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
 
-der/die/das Cold War (1947–1991) was a period von geopolitical tension between der/die/das United States und der/die/das Soviet Union und their respective allies. It was characterized by an arms race, proxy wars, und ideological competition between capitalism und communism. Key Ereignisse include der/die/das Berlin Wall (built 1961, fell 1989), der/die/das Korean War, der/die/das Vietnam War, und der/die/das Cuban Missile Crisis von 1962. der/die/das Cold War ended mit der/die/das dissolution von der/die/das Soviet Union in 1991.
+## Film und Cinema
 
-## Decolonization und Independence Movements
+### Film Genres
+- **Drama**: Character-driven narratives, emotional depth
+- **Action**: Physical feats, chases, fights, explosions
+- **Comedy**: Humor, satire, parody
+- **Horror**: Fear, suspense, supernatural elements
+- **Documentary**: Non-fiction, real Ereignisse, educational
+- **Animation**: Hand-drawn, CGI, stop-motion
+- **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
+- **Wissenschaft Fiction**: Futuristic Technologie, space, time travel
 
-After World War II, many countries in Africa und Asia gained independence from European colonial powers. India gained independence from Britain in 1947. Most African nations became independent in der/die/das 1950s und 1960s. der/die/das United Nations was founded in 1945 to promote international cooperation, peace, und human rights.
+### Film Movements
+- **German Expressionism** (1920s): Distorted visuals, psychological themes ("der/die/das Cabinet von Dr. Caligari")
+- **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
+- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
+- **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
+- **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
 
-## der/die/das Space Race und Technologie Age
+### Filmmaking Roles
+- **Director**: Creative vision, actor direction, overall control
+- **Cinematographer/Director von Photography**: Camera work, lighting, visual style
+- **Screenwriter**: Script writing, dialogue, story structure
+- **Editor**: Footage assembly, pacing, narrative flow
+- **Production Designer**: Sets, locations, visual environment
+- **Composer**: Original music score
 
-der/die/das Space Race (1957–1969) was a competition between der/die/das United States und Soviet Union to achieve superiority in space exploration. der/die/das Soviet Union launched Sputnik 1, der/die/das first artificial satellite, in 1957. Yuri Gagarin became der/die/das first human in space in 1961. der/die/das United States landed astronauts on der/die/das Moon during der/die/das Apollo 11 mission on July 20, 1969, mit Neil Armstrong becoming der/die/das first person to walk on der/die/das lunar surface. der/die/das Space Race drove enormous advances in rocket Technologie, Datenverarbeitung, und telecommunications.
+## Famous Authors und Works
 
-## der/die/das Information Age
+### Classic Literatur
+- Homer: "der/die/das Iliad", "der/die/das Odyssey" (Ancient Greece)
+- Dante Alighieri: "der/die/das Divine Comedy" (Italy, 1308-1320)
+- Miguel de Cervantes: "Don Quixote" (Spain, 1605)
+- Jane Austen: "Pride und Prejudice", "Sense und Sensibility" (England, 1810s)
+- Leo Tolstoy: "War und Peace", "Anna Karenina" (Russia, 1860s-1870s)
+- Fyodor Dostoevsky: "Crime und Punishment", "der/die/das Brothers Karamazov" (Russia, 1860s-1880s)
+- Charles Dickens: "Great Expectations", "A Tale von Two Cities" (England, 1850s-1860s)
+- Mark Twain: "Adventures von Huckleberry Finn" (USA, 1884)
 
-der/die/das late 20th und early 21st centuries are characterised by der/die/das Information Age, driven by der/die/das Entwicklung von digital computers, der/die/das internet, und mobile Technologie. der/die/das World Wide Web was invented by Tim Berners-Lee in 1989 und made publicly Verfügbar in 1991, fundamentally transforming Kommunikation, commerce, education, und Kultur. der/die/das rise von personal computers in der/die/das 1980s, led by Apple und IBM, brought Datenverarbeitung into homes. der/die/das smartphone era, ushered in by Apple's iPhone in 2007, placed internet-connected computers in billions von pockets worldwide.
+### Modern Literatur
+- James Joyce: "Ulysses" (Ireland, 1922)
+- Virginia Woolf: "Mrs. Dalloway", "To der/die/das Lighthouse" (England, 1920s)
+- Franz Kafka: "der/die/das Metamorphosis", "der/die/das Trial" (Czechoslovakia, 1910s-1920s)
+- Gabriel García Márquez: "One Hundred Years von Solitude" (Colombia, 1967)
+- Toni Morrison: "Beloved", "Song von Solomon" (USA, 1970s-1980s)
+- Haruki Murakami: "Norwegian Wood", "Kafka on der/die/das Shore" (Japan, 1980s-present)
+- Chimamanda Ngozi Adichie: "Half von a Yellow Sun", "Americanah" (Nigeria, 2000s)
 
-## der/die/das 21st Century
+## Literary Devices und Techniques
 
-der/die/das early 21st century has been shaped by globalisation, terrorism, climate change, und technological disruption. der/die/das September 11, 2001 attacks in der/die/das United States led to der/die/das War on Terror und conflicts in Afghanistan und Iraq. der/die/das 2008 global financial crisis was der/die/das worst economic downturn since der/die/das Great Depression. der/die/das Arab Spring (2010–2012) saw mass protests und uprisings across der/die/das Middle East und North Africa. der/die/das COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide und triggered unprecedented social und economic disruption. der/die/das 2020s have seen rising geopolitical tensions, including Russia's invasion von Ukraine in 2022 und increased US-China competition over Technologie und Taiwan.
+### Figurative Sprache
+- **Metaphor**: Direct comparison without "like" or "as"
+- **Simile**: Comparison using "like" or "as"
+- **Personification**: Giving human qualities to non-human things
+- **Hyperbole**: Deliberate exaggeration
+- **Irony**: Contrast between expectation und reality (verbal, situational, dramatic)
+- **Symbolism**: Objects representing abstract ideas
+- **Imagery**: Descriptive Sprache appealing to senses
 
-## Art und Kultur Through Geschichte
+### Narrative Techniques
+- **Point von View**: First person, second person, third person (limited, omniscient)
+- **Stream von Consciousness**: Continuous flow von thoughts
+- **Unreliable Narrator**: Narrator whose credibility is compromised
+- **Non-linear Narrative**: Ereignisse presented out von chronological order
+- **Foreshadowing**: Hints about Zukunft Ereignisse
+- **Flashback**: Scenes from earlier in der/die/das story
 
-Human cultural expression spans tens von thousands von years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some von der/die/das earliest known art. der/die/das Renaissance produced masterpieces such as der/die/das Mona Lisa (Leonardo da Vinci) und der/die/das Sistine Chapel ceiling (Michelangelo). der/die/das Romantic era (late 18th–19th century) valued emotion und Natur, producing works by Beethoven, Keats, und Delacroix. Modernism (early 20th century) broke mit tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), und jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives und embraced plurality, influencing Architektur, Literatur, und visual art.
+### Structural Elements
+- **Plot**: Exposition, rising action, climax, falling action, resolution
+- **Character Entwicklung**: Protagonist, antagonist, dynamic/static characters
+- **Setting**: Time, place, social context
+- **Theme**: Central message or underlying meaning
+- **Tone**: Author's attitude toward subject
+- **Mood**: Emotional atmosphere created für reader
 
-## Philosophy und Intellectual Geschichte
+## Cultural Institutions
 
-Western philosophy began mit der/die/das pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, und Aristotle defined der/die/das classical tradition. During der/die/das Enlightenment, thinkers like Descartes, Locke, Hume, und Kant reshaped epistemology (theory von knowledge) und ethics. der/die/das 19th century saw Marx's Kritik von capitalism, Nietzsche's challenge to morality, und der/die/das birth von sociology. der/die/das 20th century brought analytic philosophy (Russell, Wittgenstein) und continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, und Vedic philosophy have shaped billions von lives across Asia für millennia.
+### Museums und Galleries
+- Louvre (Paris): World's largest art museum
+- Metropolitan Museum von Art (New York): Comprehensive collections
+- British Museum (London): Human Geschichte und Kultur
+- Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
+- Uffizi Gallery (Florence): Italian Renaissance masterpieces
+- Hermitage Museum (St. Petersburg): One von oldest und largest museums
+- Museum von Modern Art - MoMA (New York): Modern und contemporary art
 
-## Music Through Geschichte
+### Literary Awards
+- Nobel Prize in Literatur: International recognition
+- Pulitzer Prize (USA): Fiction, drama, Geschichte, poetry
+- Booker Prize (UK/Commonwealth): Best original novel
+- Hugo Award: Wissenschaft fiction und fantasy
+- National Book Award (USA): American Literatur
+- Man Booker International Prize: Translated fiction
 
-Music has existed in human cultures since prehistory. Ancient Greeks used music in drama und ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). der/die/das Baroque period (1600–1750) gave rise to opera und instrumental music; composers include Bach, Handel, und Vivaldi. der/die/das Classical period (1750–1820) featured Mozart, Haydn, und der/die/das early Beethoven, emphasising clarity und form. der/die/das Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, und Wagner. der/die/das 20th century saw der/die/das emergence von jazz, blues, rock und roll, hip-hop, electronic music, und countless global fusion genres, democratised further by recording Technologie und streaming.
+## Key Concepts in Art Criticism
 
+### Analysis Frameworks
+- **Formalism**: Focus on visual elements (line, color, composition)
+- **Iconography**: Symbolic meanings und cultural references
+- **Contextual Analysis**: Historical, social, political context
+- **Feminist Criticism**: Gender representation, women artists
+- **Postcolonial Criticism**: Colonial legacy, cultural identity
+- **Psychoanalytic Criticism**: Unconscious motivations, symbolism
+
+### Aesthetic Principles
+- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
+- **Contrast**: Differences in elements (light/dark, large/small)
+- **Emphasis**: Focal points, areas von interest
+- **Movement**: Visual flow guiding viewer's eye
+- **Pattern**: Repetition von elements
+- **Proportion**: Size relationships between parts
+- **Unity**: Coherence und harmony von whole composition
