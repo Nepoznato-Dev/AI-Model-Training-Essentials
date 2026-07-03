@@ -1,163 +1,156 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: language_and_english.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 語言與英語
 
-# 語言 和 英語
+## 什麼是語言？
 
-## What is 語言?
+語言是一種使用聲音、符號或手勢進行溝通的系統，遵循社群所理解的共享規則集。人類語言在其複雜性、創造力和表達抽象概念的能力方面是獨特的。目前世界上約有7000種語言。英語是作為第二語言使用最廣泛的語言，是國際溝通、商業、科學和網際網路的主導語言。
 
-語言 is a system 的 溝通 using sounds, symbols, or gestures that follows a shared set 的 rules understood by a community. Human 語言 is unique 在 its complexity, creativity, 和 capacity to express abstract ideas. There are approximately 7,000 languages spoken 在 這 world today. 英語 is 這 most widely spoken 語言 as a second 語言 和 is 這 dominant 語言 的 international 溝通, 商業, 科學, 和 這 internet.
+## 英語語法
 
-## 英語 Grammar
+語法是管理單詞如何組合成句子的規則集。一個句子必須包含主語（句子所討論的人或事物）和謂語（主語的行為或狀態）。
 
-Grammar is 這 set 的 rules governing how words are combined to form sentences 在 a 語言. A sentence must contain a subject (who or what 這 sentence is about) 和 a predicate (what 這 subject does or is).
+**名詞**是命名人、地方、事物或概念的單詞。
+**動詞**是表達動作或存在狀態的單詞。
+**形容詞**修飾名詞。
+**副詞**修飾動詞、形容詞或另一個副詞。
+**代名詞**取代名詞。
 
-A **noun** is a word that names a person, place, thing, or idea.
-A **verb** is a word that expresses an action or state 的 being.
-An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or another adverb.
-A **pronoun** takes 這 place 的 a noun.
+**子句**是包含主語和動詞的一組詞。獨立子句可以單獨作為句子。從屬子句不能單獨存在，依賴於獨立子句。**片語**是不包含主語和謂語的一組詞。
 
-A **clause** is a group 的 words containing a subject 和 a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone 和 depends on an independent clause. A **phrase** is a group 的 words that does not contain both a subject 和 a predicate.
+## 詞類
 
-## Parts 的 Speech
+英語中的八種傳統詞類是：名詞、代名詞、動詞、形容詞、副詞、介系詞、連接詞和感嘆詞。
 
-這 eight traditional parts 的 speech 在 英語 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, 和 interjection.
+**介系詞**顯示名詞或代名詞與另一個詞之間的關係（例如：in、on、at、by、with）。
+**連接詞**連接單詞、片語或子句（例如：and、but、or、because）。
 
-A **preposition** shows 這 relationship between a noun or pronoun 和 another word (e.g., 在, on, at, by, 與).
-A **conjunction** connects words, phrases, or clauses (e.g., 和, but, or, because).
+**常見的對等連接詞**可以用首字母縮寫FANBOYS記住：
+- **F**or、**A**nd、**N**or、**B**ut、**O**r、**Y**et、**S**o
 
-**Common coordinating conjunctions** can be remembered 與 這 acronym FANBOYS:
-- **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
+## 標點符號
 
-## Punctuation
+- 句號（.）結束陳述句。
+- 問號（?）結束疑問句。
+- 驚嘆號（!）結束感嘆句。
+- 逗號（,）分隔列表中的項目、隔開引導性片語，以及分隔由連接詞連接的獨立子句。
+- 分號（;）分隔兩個密切相關的獨立子句。
+- 冒號（:）引入列表、解釋或引文。
+- 撇號（'）表示所有格（John's book）或縮寫（don't = do not）。
 
-- A period (.) ends a declarative sentence.
-- A question mark (?) ends an interrogative sentence.
-- An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items 在 a list, sets off introductory phrases, 和 separates independent clauses joined by a conjunction.
-- A semicolon (;) separates two closely related independent clauses.
-- A colon (:) introduces a list, explanation, or quotation.
-- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
+## 拼寫與常見錯誤
 
-## Spelling 和 Common Errors
+**常見拼寫規則：**
+- 「i在e之前，除非在c之後」（believe、receive）——儘管這個規則有許多例外（例如：「weird」、「science」）
+- 以不發音的「e」結尾的單詞在添加母音字尾之前刪除「e」（make → making）
+- 當最後一個音節重讀並以單個子音結尾時，在添加母音字尾之前將最後的子音加倍（run → running）
 
-**Common spelling rules:**
-- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科學")
-- Words ending 在 a silent "e" drop 這 "e" before adding a vowel suffix (make → making)
-- Double 這 final consonant before adding a vowel suffix when 這 last syllable is stressed 和 ends 在 a single consonant (run → running)
-
-**Common confusable word pairs:**
+**容易混淆的詞對：**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## Vocabulary 和 Word Formation
+## 詞彙與構詞法
 
-**Etymology** is 這 study 的 這 origins 和 historical 開發 的 words. Many 英語 words come from Latin, Greek, French, 和 Germanic roots.
+**詞源學**是研究單詞的起源和歷史發展。許多英語單詞來自拉丁語、希臘語、法語和日耳曼語詞根。
 
-**Prefixes** are added to 這 beginning 的 words to change their meaning (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to 這 end 的 words (e.g., -tion, -ness, -ing, -ly).
+**字首**添加到單詞的開頭以改變其含義（例如：un-、re-、pre-、mis-）。
+**字尾**添加到單詞的結尾（例如：-tion、-ness、-ing、-ly）。
 
-- **Synonyms**: words 與 similar meanings
-- **Antonyms**: words 與 opposite meanings
-- **Metaphor**: describes something by saying it is something else ("Time is a thief")
-- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
+- **同義詞**：意思相似的單詞
+- **反義詞**：意思相反的單詞
+- **隱喻**：通過說某物是另一物來描述它（「時間是竊賊」）
+- **明喻**：使用「像」或「如同」比較兩個事物（「像蜜蜂一樣忙碌」）
 
-## Writing Skills
+## 寫作技巧
 
-Good writing is clear, concise, coherent, 和 engaging.
+好的寫作是清晰、簡潔、連貫和引人入勝的。
 
-- A **paragraph** should have a topic sentence (這 main idea), supporting sentences, 和 a concluding sentence.
-- 這 **five-paragraph essay** structure consists 的 an 介紹, three body paragraphs, 和 a conclusion.
-- **Revision** is 這 process 的 improving a draft.
-- **Editing** focuses on correcting grammar, spelling, 和 punctuation errors.
-- **Proofreading** is 這 final check before publication.
+- **段落**應該有主題句（主要觀點）、支持句和結論句。
+- **五段式作文**結構包括引言、三個主體段落和結論。
+- **修改**是改進草稿的過程。
+- **編輯**專注於糾正語法、拼寫和標點錯誤。
+- **校對**是出版前的最後檢查。
 
-## Reading 和 Comprehension
+## 閱讀與理解
 
-**Active reading** involves engaging 與 這 text by asking questions, making predictions, summarizing, 和 making connections.
+**主動閱讀**涉及通過提問、做預測、總結和建立連結來與文本互動。
 
-- 這 **main idea** is 這 central point 的 a passage.
-- Details, 範例, 和 evidence 支援 這 main idea.
-- **Inference** involves drawing conclusions from information that is implied but not stated directly.
-- **Context clues** are words 和 phrases surrounding an unfamiliar word that help determine its meaning.
+- **主旨**是段落的中心要點。
+- 細節、例子和證據支持主旨。
+- **推論**涉及從暗示但未直接陳述的資訊中得出結論。
+- **上下文線索**是圍繞陌生單詞的詞語和片語，有助於確定其含義。
 
-## 溝通 和 Rhetoric
+## 溝通與修辭學
 
-**Rhetoric** is 這 art 的 effective 溝通 和 persuasion.
-- **Ethos** appeals to 這 credibility 的 這 speaker.
-- **Pathos** appeals to emotion.
-- **Logos** appeals to logic 和 reason.
+**修辭學**是有效溝通和說服的藝術。
+- **Ethos**訴諸說話者的可信度。
+- **Pathos**訴諸情感。
+- **Logos**訴諸邏輯和理性。
 
-A **thesis statement** clearly expresses 這 main argument 的 an essay.
-**Tone** refers to 這 writer's attitude toward 這 subject 和 audience.
-**Register** refers to 這 level 的 formality 在 語言 use, ranging from casual conversation to formal academic writing.
+**論文陳述**清楚地表達文章的主要論點。
+**語氣**指作者對主題和受眾的態度。
+**語域**指語言使用的正式程度，從隨意對話到正式學術寫作。
 
-## Subject-Verb Agreement (Expanded)
+## 主詞-動詞一致（擴展）
 
-One 的 這 most important grammar rules 在 英語 is that a subject 和 its verb must agree 在 number: a singular subject takes a singular verb, 和 a plural subject takes a plural verb.
+英語中最重要的語法規則之一是主詞和動詞必須在數上一致：單數主詞採用單數動詞，複數主詞採用複數動詞。
 
-### Gerunds as Subjects
+### 動名詞作為主詞
 
-A gerund (a verb used as a noun, ending 在 -ing) is always singular.
+動名詞（用作名詞的動詞，以-ing結尾）總是單數。
 
-**Correct:**
+**正確：**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good 為 your health."
+- "Running every day **is** good for your health."
 - "Reading **helps** improve vocabulary."
 
-**Incorrect:**
-- "Eating rocks **are** dangerous." (gerund is singular)
-- "Running 和 swimming **is** good." (compound subject — plural, use "are")
+**錯誤：**
+- "Eating rocks **are** dangerous."（動名詞是單數）
+- "Running and swimming **is** good."（複合主詞——複數，使用「are」）
 
-### Compound Subjects
+### 複合主詞
 
-- Joined by "和": plural verb
-  - "Alice 和 Bob **are** here."
-  - "這 teacher 和 這 student **agree**."
+- 由「and」連接：複數動詞
+  - "Alice and Bob **are** here."
+  - "The teacher and the student **agree**."
 
-- Joined by "or"/"nor": agree 與 這 subject closest to 這 verb
-  - "Neither 這 students nor 這 teacher **was** ready."
-  - "Neither 這 teacher nor 這 students **were** ready."
+- 由「or」/「nor」連接：與最接近動詞的主詞一致
+  - "Neither the students nor the teacher **was** ready."
+  - "Neither the teacher nor the students **were** ready."
 
-### Collective Nouns
+### 集合名詞
 
-Collective nouns (team, committee, group, family) take a singular verb 在 American 英語:
-- "這 team **is** practising."
-- "這 committee **has** made a decision."
+集合名詞（team、committee、group、family）在美式英語中採用單數動詞：
+- "The team **is** practising."
+- "The committee **has** made a decision."
 
-在 British 英語, plural verbs are also accepted depending on context.
+在英式英語中，根據上下文也接受複數動詞。
 
-### Indefinite Pronouns
+### 不定代名詞
 
-這 following indefinite pronouns are **always singular**:
-- everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, either, neither
+以下不定代名詞**總是單數**：
+- everyone、everybody、anyone、anybody、someone、somebody、no one、nobody
+- each、either、neither
 
-**Correct:**
+**正確：**
 - "Everyone **is** invited."
-- "Each 的 這 students **has** completed 這 assignment."
+- "Each of the students **has** completed the assignment."
 
-**Incorrect:**
+**錯誤：**
 - "Everyone **are** invited."
 
-## Epistemic Honesty — Knowing When to Say "I Don't Know"
+## 認識論誠實——知道何時說「我不知道」
 
-**Epistemic honesty** means being truthful about 這 limits 的 one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
+**認識論誠實**意味著對自己知識的局限性保持誠實。說「我對此沒有可靠的資訊」比產生聽起來自信但錯誤的答案更好。
 
-**Hallucination** is 這 tendency 的 AI 系統 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 可用 knowledge 和 responding 與 an honest acknowledgement 的 uncertainty rather than an invented answer.
+**幻覺**是AI系統產生聽起來合理但事實上不正確的陳述的傾向。防止幻覺需要認識到問題超出可用知識範圍，並以誠實承認不確定性來回應，而不是編造答案。
 
-**Useful phrases 為 expressing uncertainty:**
+**表達不確定性的有用片語：**
 - "I'm not certain, but…"
-- "You may want to verify this 與 a specialist."
+- "You may want to verify this with a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my 知識庫."
+- "This is outside my knowledge base."
 
-**為 health, medical, 法律, or safety questions:**
-It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose 的 a substance, a treatment 為 a disease, or a 法律 ruling without professional context can cause real harm 和 must be avoided.
+**對於健康、醫療、法律或安全問題：**
+最好是推遲給合格的專業人員，而不是提供具體建議。在沒有專業背景的情況下陳述物質的建議劑量、疾病的治療或法律裁決可能造成真正的傷害，必須避免。

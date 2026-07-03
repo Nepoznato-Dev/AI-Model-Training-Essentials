@@ -1,6 +1,8 @@
 # İngilizce Sözlük — Yaygın Kelime Tanımları
 
-Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça karşılaşılan kelimeleri kapsayan, yaygın kullanılan İngilizce kelimeler ve anlamları için bir başvuru listesi.
+Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça karşılaşılan
+kelimeleri kapsayan, yaygın kullanılan İngilizce kelimeler ve anlamları için
+bir başvuru listesi.
 
 ---
 
@@ -70,7 +72,7 @@ Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça k
 **contrast** — farkları göstermek amacıyla karşılaştırmak.
 **convert** — bir biçimden, birimden veya kullanımdan diğerine değiştirmek.
 **coordinate** — farklı öğeleri birlikte çalışacak şekilde düzenlemek.
-**criteria** — bir şeyin değerlendirildiği standartlar (criterion sözcüğünün çoğulu).
+**criteria** — bir şeyin değerlendirildiği standartlar (ölçüt sözcüğünün çoğulu).
 
 ## D
 
@@ -304,7 +306,7 @@ Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça k
 **backpropagation** — hataları geriye doğru yayarak sinir ağlarını eğitme algoritması.
 **bandwidth** — kullanılabilir frekans aralığı; veri aktarım kapasitesi.
 **binary** — iki parçadan oluşan; 0 ve 1 kullanan 2 tabanlı sayı sistemi.
-**bit** — en küçük veri birimi (0 veya 1); binary digit ifadesinin kısaltması.
+**bit** — en küçük veri birimi (0 veya 1); ikili basamak ifadesinin kısaltması.
 **blockchain** — işlemleri birden çok bilgisayarda kaydeden dağıtık defter teknolojisi.
 **boolean** — doğru veya yanlış değerleriyle mantığa ilişkin; adını George Boole'dan alır.
 **bottleneck** — bir süreci veya sistemi yavaşlatan tıkanıklık noktası.
@@ -591,7 +593,7 @@ Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça k
 **pragmatic** — pratik; gerçek sonuçlarla ilgilenen.
 **precedent** — yol gösterici olan önceki olay.
 **precision** — kesinlik; makine öğrenmesinde gerçek pozitiflerin tahmin edilen pozitiflere oranı.
-**predicate** — cümlede özne hakkında bir şey bildiren bölüm; boolean döndüren işlev.
+**predicate** — cümlede özne hakkında bir şey bildiren bölüm; mantıksal değer döndüren işlev.
 **predictive** — tahminle ilgili; gelecekteki olayları öngören.
 **prefix** — bir kelimenin başına eklenen biçimbirim.
 **premise** — bir argümanın temelini oluşturan ifade.

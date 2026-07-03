@@ -1,17 +1,17 @@
 <!-- 
-This file was automatically translated from English to Russian.
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Этот файл был автоматически переведён с английского на русский язык.
+Источник: sql_quick_ref.md
+Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском языке.
+Для повышения точности перевода вносите правки через pull request.
 -->
 
-# SQL Быстрый справочник Руководство
+# SQL: краткое руководство-справочник
 
-Essential SQL Команды для База данных operations.
+Основные команды SQL для работы с базами данных.
 
 ---
 
-## Basic Query Structure
+## Базовая структура запроса
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-## Данные Retrieval (SELECT)
+## Получение данных (SELECT)
 
-### Basic Selection
+### Базовая выборка
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### Фильтрация (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting и Limiting
+### Сортировка и ограничение
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## Функции агрегирования
 
 ```sql
 -- Count rows
@@ -104,7 +104,7 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## Соединения (Joins)
 
 ### Внутреннее соединение (Inner Join)
 ```sql
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## Подзапросы
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## Операции над множествами
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +210,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## Данные Modification
+## Изменение данных
 
 ### INSERT
 ```sql
@@ -268,7 +268,7 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## Операции с таблицами
 
 ### Создание таблицы (CREATE TABLE)
 ```sql
@@ -318,7 +318,7 @@ DROP TABLE IF EXISTS temp_table;
 
 ---
 
-## Constraints
+## Ограничения (Constraints)
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## Индексы (Indexes)
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## Представления (Views)
 
 ```sql
 -- Create view
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## Оконные функции (Window Functions)
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-## Данные Types
+## Типы данных
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### Числовые
+- `INT` — целое число
+- `BIGINT` — большое целое число
+- `DECIMAL(p,s)` — точное десятичное число (точность, масштаб)
+- `FLOAT` — приблизительное число с плавающей точкой
+- `DOUBLE` — число с плавающей точкой двойной точности
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### Строковые
+- `CHAR(n)` — строка фиксированной длины
+- `VARCHAR(n)` — строка переменной длины
+- `TEXT` — большой текст
+- `ENUM` — перечисляемые значения
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date и time
-- `TIMESTAMP` - временная метка Unix
-- `YEAR` - Year value
+### Дата/время
+- `DATE` — дата (ГГГГ-ММ-ДД)
+- `TIME` — время (ЧЧ:ММ:СС)
+- `DATETIME` — дата и время
+- `TIMESTAMP` — временная метка Unix
+- `YEAR` — значение года
 
-### Boolean
-- `BOOLEAN` или `BOOL` - логическое значение (истина/ложь)
+### Логический тип
+- `BOOLEAN` или `BOOL` — логическое значение (истина/ложь)
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### Двоичные
+- `BLOB` — большой двоичный объект
+- `BINARY` — фиксированный двоичный тип
+- `VARBINARY` — двоичный тип переменной длины
 
 ---
 
-## Useful Functions
+## Полезные функции
 
-### String Functions
+### Строковые функции
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### Функции для работы с датами
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### Числовые функции
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### Условные функции
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +556,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## Производительность Tips
+## Советы по производительности
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query Производительность
-- Normalize Данные appropriately
-- Use prepared statements to prevent SQL injection
+✅ **Стоит делать:**
+- Используйте индексы для часто запрашиваемых столбцов
+- Выбирайте только нужные столбцы (избегайте `SELECT *`)
+- Используйте `EXPLAIN` для анализа производительности запроса
+- Нормализуйте данные должным образом
+- Используйте подготовленные выражения для защиты от SQL-инъекций
 
-❌ **Don't:**
-- Use functions on indexed columns в WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **Не стоит делать:**
+- Применять функции к индексированным столбцам в условиях WHERE
+- Создавать слишком много индексов (замедляет запись)
+- Использовать `SELECT DISTINCT` без необходимости
+- Игнорировать планы выполнения запросов
+- Хранить вычисляемые значения, которые можно рассчитать на лету
 
 ---
 
-## Безопасность Лучшие практики
+## Лучшие практики безопасности
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Последнее обновление: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Последнее обновление: июнь 2025 | Стандарт SQL (совместим с MySQL/PostgreSQL)*

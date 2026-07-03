@@ -116,12 +116,12 @@ Model hem eğitim hem doğrulama verisinde kötü performans gösterir.
 
 | Parametre | Önerilen aralık (log ölçeği) |
 |-----------|------------------------------|
-| Learning rate | 1e-5 to 1e-1 |
+| Learning rate | 1e-5 ile 1e-1 arası |
 | Batch size | 16, 32, 64, 128, 256 |
-| Katman sayısı (NN) | 2 to 6 |
-| Nöron sayısı (NN) | 32 to 1024 |
-| Düzenlileştirme (L2) | 1e-6 to 1e-2 |
-| Ağaç derinliği (XGBoost) | 3 to 12 |
+| Katman sayısı (NN) | 2 ile 6 arası |
+| Nöron sayısı (NN) | 32 ile 1024 arası |
+| Düzenlileştirme (L2) | 1e-6 ile 1e-2 arası |
+| Ağaç derinliği (XGBoost) | 3 ile 12 arası |
 
 ---
 

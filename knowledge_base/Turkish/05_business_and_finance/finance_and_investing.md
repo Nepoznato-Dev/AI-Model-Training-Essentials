@@ -206,8 +206,8 @@
   - ROA (Return on Assets): Net kâr / toplam varlıklar
 
 - **Likidite Oranları**:
-  - Current Ratio: Dönen varlıklar / kısa vadeli yükümlülükler
-  - Quick Ratio: (Dönen varlıklar - stoklar) / kısa vadeli yükümlülükler
+  - Cari Oran: Dönen varlıklar / kısa vadeli yükümlülükler
+  - Asit-Test Oranı: (Dönen varlıklar - stoklar) / kısa vadeli yükümlülükler
 
 - **Kaldıraç Oranları**:
   - Debt-to-Equity: Toplam borç / hissedar özsermayesi
@@ -281,8 +281,8 @@
 - **Üretim Verileri**: PMI, sanayi üretimi
 
 ### Federal Reserve ve Para Politikası
-- **Çift Mandat**: Maksimum istihdam, istikrarlı fiyatlar (%2 enflasyon)
-- **Araçlar**: Federal funds rate, açık piyasa işlemleri, niceliksel genişleme
+- **İkili Görev**: Maksimum istihdam, istikrarlı fiyatlar (%2 enflasyon)
+- **Araçlar**: Federal fonlar oranı, açık piyasa işlemleri, niceliksel genişleme
 - **Etki**: Faiz oranları tahvilleri, hisseleri, para birimini ve ekonomiyi etkiler
 
 ### İş Döngüsü
@@ -305,7 +305,7 @@
 
 ### Duygusal Yatırım Tuzakları
 - Düşüş dönemlerinde panikle satış yapmak
-- Zirvelerde FOMO (Fear Of Missing Out) ile alım yapmak
+- Zirvelerde FOMO (kaçırma korkusu) ile alım yapmak
 - Aşırı sık işlem yapmak
 - Geçmiş performansın peşinden gitmek
 - Piyasayı zamanlamaya çalışmak (istikrarlı biçimde neredeyse imkânsızdır)
@@ -349,7 +349,7 @@
 ### Ücretlendirme Modelleri
 - **Fee-Only**: Varlık yüzdesi, saatlik ücret, sabit ücret (komisyon yok)
 - **Commission**: Ürün satışları üzerinden ödeme
-- **Fee-Based**: Ücretler ve komisyonların birleşimi
+- **Ücret ve Komisyon Bazlı**: Ücretler ve komisyonların birleşimi
 - **Assets Under Management (AUM)**: Genellikle yıllık %0,5-%1,5
 
 ### Danışman Seçimi

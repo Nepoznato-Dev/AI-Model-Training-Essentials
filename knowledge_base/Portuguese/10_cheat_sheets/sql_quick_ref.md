@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Guia de Referência Rápida de SQL
 
-# SQL Referência rápida Guia
-
-Essential SQL Comandos para Banco de dados operations.
+Comandos essenciais de SQL para operações em bancos de dados.
 
 ---
 
-## Basic Query Structure
+## Estrutura Básica de Consulta
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +18,9 @@ LIMIT number;
 
 ---
 
-## Dados Retrieval (SELECT)
+## Recuperação de Dados (SELECT)
 
-### Basic Selection
+### Seleção Básica
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +35,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### Filtragem (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +53,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting e Limiting
+### Ordenação e Limitação
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +70,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## Funções de Agregação
 
 ```sql
 -- Count rows
@@ -154,7 +147,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## Subconsultas
 
 ```sql
 -- In WHERE clause
@@ -184,7 +177,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## Operações de Conjunto
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +203,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## Dados Modification
+## Modificação de Dados
 
 ### INSERT
 ```sql
@@ -268,7 +261,7 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## Operações com Tabelas
 
 ### CREATE Table
 ```sql
@@ -318,7 +311,7 @@ DROP TABLE IF EXISTS temp_table;
 
 ---
 
-## Constraints
+## Restrições
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +350,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## Índices
 
 ```sql
 -- Create index
@@ -402,7 +395,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## Expressões de Tabela Comuns (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +425,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## Funções de Janela
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +458,41 @@ FROM daily_sales;
 
 ---
 
-## Dados Types
+## Tipos de Dados
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### Numéricos
+- `INT` - Inteiro
+- `BIGINT` - Inteiro grande
+- `DECIMAL(p,s)` - Decimal exato (precisão, escala)
+- `FLOAT` - Ponto flutuante aproximado
+- `DOUBLE` - Ponto flutuante de dupla precisão
 
 ### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+- `CHAR(n)` - String de comprimento fixo
+- `VARCHAR(n)` - String de comprimento variável
+- `TEXT` - Texto longo
+- `ENUM` - Valores enumerados
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date e time
-- `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+### Data/Hora
+- `DATE` - Data (YYYY-MM-DD)
+- `TIME` - Hora (HH:MM:SS)
+- `DATETIME` - Data e hora
+- `TIMESTAMP` - Carimbo de data/hora Unix
+- `YEAR` - Valor de ano
 
-### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+### Booleano
+- `BOOLEAN` ou `BOOL` - Verdadeiro/Falso
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### Binários
+- `BLOB` - Objeto binário grande
+- `BINARY` - Binário de comprimento fixo
+- `VARBINARY` - Binário de comprimento variável
 
 ---
 
-## Useful Functions
+## Funções Úteis
 
-### String Functions
+### Funções de String
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +503,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### Funções de Data
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +515,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### Funções Numéricas
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +526,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### Funções Condicionais
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +549,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## Desempenho Tips
+## Dicas de Desempenho
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query Desempenho
-- Normalize Dados appropriately
-- Use prepared statements to prevent SQL injection
+✅ **Faça:**
+- Use índices nas colunas consultadas com frequência
+- Selecione apenas as colunas necessárias (evite `SELECT *`)
+- Use `EXPLAIN` para analisar o desempenho das consultas
+- Normalize os dados adequadamente
+- Use prepared statements para evitar SQL injection
 
-❌ **Don't:**
-- Use functions on indexed columns em WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **Não faça:**
+- Use funções em colunas indexadas em cláusulas WHERE
+- Crie índices demais (isso desacelera gravações)
+- Use `SELECT DISTINCT` desnecessariamente
+- Ignore planos de execução de consultas
+- Armazene valores calculados quando eles puderem ser calculados
 
 ---
 
-## Segurança Melhores práticas
+## Boas Práticas de Segurança
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +584,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Última atualização: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Última atualização: junho de 2025 | Padrão SQL (compatível com MySQL/PostgreSQL)*

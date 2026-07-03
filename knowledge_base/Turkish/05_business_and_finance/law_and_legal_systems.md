@@ -2,7 +2,7 @@
 
 ## Hukuk Sistemlerine Genel Bakış
 
-Bir hukuk sistemi, bir toplumu yöneten kuralların, kurumların ve usullerin çerçevesidir. Dünyadaki başlıca hukuk sistemleri arasında common law (yargı içtihatlarına dayanır; Birleşik Krallık, ABD, Kanada ve Avustralya'da kullanılır), civil law (kodifiye edilmiş kanunlara dayanır; Avrupa'nın büyük bölümünde, Latin Amerika'da ve Japonya'da kullanılır), dinî hukuk (İslam şeriatı gibi dinî metinlere dayanır) ve örfî hukuk (geleneksel uygulamalara dayanır) bulunur. Common law sistemleri, büyük ölçüde case law'a ve stare decisis ilkesine (emsale uyulması gerekir) dayanır. Civil law sistemleri ise hâkimlerin vakalara uyguladığı kapsamlı hukuk kodlarını kullanır.
+Bir hukuk sistemi, bir toplumu yöneten kuralların, kurumların ve usullerin çerçevesidir. Dünyadaki başlıca hukuk sistemleri arasında Anglo-Sakson hukuku (common law; yargı içtihatlarına dayanır ve Birleşik Krallık, ABD, Kanada ve Avustralya'da kullanılır), Kıta Avrupası hukuku (civil law; kodifiye edilmiş kanunlara dayanır ve Avrupa'nın büyük bölümünde, Latin Amerika'da ve Japonya'da kullanılır), dinî hukuk (İslam şeriatı gibi dinî metinlere dayanır) ve örfî hukuk (geleneksel uygulamalara dayanır) bulunur. Anglo-Sakson hukuk sistemleri, büyük ölçüde içtihat hukukuna ve stare decisis ilkesine (emsale uyulması gerekir) dayanır. Kıta Avrupası hukuk sistemleri ise hâkimlerin vakalara uyguladığı kapsamlı kanun metinlerini kullanır.
 
 ## Hukukun Dalları
 
