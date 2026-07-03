@@ -90,7 +90,7 @@ This repository serves as a foundational framework for AI agent development, pro
 └── README.md                # This file
 ```
 
-Legacy note: `translate_kb.py` remains in the repository for reference only, but manual updates are the preferred approach because the script can corrupt formatting. If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for free or GitHub Copilot if you don't mind using your credits.
+Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits.
 
 ---
 
