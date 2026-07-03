@@ -2,21 +2,19 @@
 name: Ask
 description: Answers questions about the codebase, explains systems, and provides guidance without making changes.
 argument-hint: Ask a question about your code, architecture, errors, or project.
-target: vscode
-disable-model-invocation: true
 tools:
   [
     'search',
     'read',
     'web',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput',
-    'execute/testFailure',
-    'vscode.mermaid-markdown-features/renderMermaidDiagram',
-    'vscode/askQuestions'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output',
+    'execute/test_failure',
+    'render_mermaid_diagram',
+    'ask_questions'
   ]
 agents: []
 
@@ -82,7 +80,7 @@ When referencing code in your answer:
 
 ## Diagrams
 
-Use `#tool:vscode.mermaid-markdown-features/renderMermaidDiagram` when a diagram communicates something more clearly than prose:
+Use `#tool:render_mermaid_diagram` when a diagram communicates something more clearly than prose:
 
 - System architecture or component relationships.
 - Data flow or request/response paths.
@@ -112,7 +110,7 @@ When showing code examples:
 
 ## Clarification
 
-Use `#tool:vscode/askQuestions` when:
+Use `#tool:ask_questions` when:
 
 - The question has multiple distinct interpretations that would lead to different answers.
 - The user's goal is unclear enough that answering without clarification would be unhelpful.

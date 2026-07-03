@@ -2,18 +2,16 @@
 name: Secure
 description: The Security & Performance Auditor. Scans the code for vulnerabilities, anti-patterns, memory leaks, and performance bottlenecks.
 argument-hint: Audit this code for security and performance issues.
-target: vscode
-disable-model-invocation: false
 tools:
   [
     'read',
     'search',
     'execute',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output'
   ]
 agents: []
 handoffs:

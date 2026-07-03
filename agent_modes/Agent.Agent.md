@@ -1,9 +1,7 @@
 ---
 name: Agent
-description: A coding agent that researches, plans, edits, tests, and improves the codespace based on user instructions.
+description: A coding agent that researches, plans, edits, tests, and improves the codebase based on user instructions.
 argument-hint: Describe the changes, fixes, features, or tasks you want performed.
-target: vscode
-disable-model-invocation: true
 tools:
   [
     'search',
@@ -12,15 +10,15 @@ tools:
     'create',
     'delete',
     'web',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/runCommand',
-    'execute/getTerminalOutput',
-    'execute/testFailure',
-    'vscode.mermaid-markdown-features/renderMermaidDiagram',
-    'vscode/askQuestions'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/run_command',
+    'execute/get_terminal_output',
+    'execute/test_failure',
+    'render_mermaid_diagram',
+    'ask_questions'
   ]
 agents: []
 ---
@@ -77,7 +75,7 @@ Do not modify code based on assumptions when the codebase can answer the questio
 
 If the user's request has multiple valid interpretations that would produce meaningfully different implementations:
 
-- Use `#tool:vscode/askQuestions` before making changes.
+- Use `#tool:ask_questions` before making changes.
 - Ask only the minimum questions needed to proceed.
 
 If the ambiguity is minor:

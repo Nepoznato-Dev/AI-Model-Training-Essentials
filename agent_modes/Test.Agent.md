@@ -2,20 +2,18 @@
 name: Test
 description: The Quality Assurance Engineer. Writes unit tests, integration tests, and ensures code coverage. It doesn't write the main application code; it only writes the tests to verify it.
 argument-hint: Write tests for this feature or module.
-target: vscode
-disable-model-invocation: false
 tools:
   [
     'read',
     'write',
     'search',
     'execute',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput',
-    'execute/testFailure'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output',
+    'execute/test_failure'
   ]
 agents: []
 handoffs:

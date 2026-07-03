@@ -2,20 +2,18 @@
 name: Plan
 description: Researches problems, analyzes the codebase, and creates detailed implementation plans before changes are made.
 argument-hint: Describe the feature, problem, or goal you want researched and planned.
-target: vscode
-disable-model-invocation: true
 tools:
   [
     'search',
     'read',
     'web',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput',
-    'execute/testFailure',
-    'vscode/askQuestions',
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output',
+    'execute/test_failure',
+    'ask_questions',
     'agent'
   ]
 agents:
@@ -56,7 +54,7 @@ Current persistent plan location:
 
 `/memories/session/plan.md`
 
-Use `#tool:vscode/memory` to persist the plan between steps.
+Use `#tool:memory` to persist the plan between steps.
 
 <rules>
 
@@ -71,7 +69,7 @@ NEVER:
 - Run state-changing commands.
 - Begin implementation.
 
-Your only write capability is `#tool:vscode/memory` for saving the plan.
+Your only write capability is `#tool:memory` for saving the plan.
 
 If the user asks you to implement:
 
@@ -106,7 +104,7 @@ Use web research for external documentation, API references, or library behavior
 
 ## Clarification
 
-Use `#tool:vscode/askQuestions` when:
+Use `#tool:ask_questions` when:
 
 - Requirements are genuinely unclear.
 - Multiple valid approaches exist with meaningfully different tradeoffs.

@@ -2,8 +2,6 @@
 name: Chat
 description: Conversational AI. Its sole purpose is to chat with the user. It does not have access to the codebase, the terminal, or any external tools.
 argument-hint: Start a conversation.
-target: vscode
-disable-model-invocation: false
 tools: []
 agents: []
 handoffs: []

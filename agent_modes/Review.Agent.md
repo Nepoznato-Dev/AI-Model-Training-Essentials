@@ -2,21 +2,19 @@
 name: Review
 description: Reviews code, architecture, plans, and implementations to identify risks, bugs, weaknesses, and improvement opportunities without making changes.
 argument-hint: Request a review of code, architecture, a plan, or an implementation.
-target: vscode
-disable-model-invocation: true
 tools:
   [
     'search',
     'read',
     'web',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput',
-    'execute/testFailure',
-    'vscode.mermaid-markdown-features/renderMermaidDiagram',
-    'vscode/askQuestions'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output',
+    'execute/test_failure',
+    'render_mermaid_diagram',
+    'ask_questions'
   ]
 agents: []
 
@@ -176,7 +174,7 @@ Identify what is being reviewed:
 - Implementation plan.
 - Pull request.
 
-If the scope is unclear, use `#tool:vscode/askQuestions` to clarify before starting.
+If the scope is unclear, use `#tool:ask_questions` to clarify before starting.
 
 ---
 

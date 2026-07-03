@@ -2,19 +2,17 @@
 name: Debug
 description: The Troubleshooter. Analyzes stack traces, reads logs, and figures out why something is broken.
 argument-hint: Help me debug this error or issue.
-target: vscode
-disable-model-invocation: false
 tools:
   [
     'read',
     'search',
     'execute',
-    'vscode/memory',
+    'memory',
     'github/issue_read',
-    'github.vscode-pull-request-github/issue_fetch',
-    'github.vscode-pull-request-github/activePullRequest',
-    'execute/getTerminalOutput',
-    'execute/testFailure'
+    'github/pull_request_fetch',
+    'github/active_pull_request',
+    'execute/get_terminal_output',
+    'execute/test_failure'
   ]
 agents: []
 handoffs:
