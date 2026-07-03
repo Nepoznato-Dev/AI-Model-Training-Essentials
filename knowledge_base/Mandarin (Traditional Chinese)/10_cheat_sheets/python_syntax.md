@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: python_syntax.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Python 語法速查表
 
-# Python 語法 Cheat Sheet
-
-快速參考 為 Python 3.x 語法 和 common patterns.
+Python 3.x 語法和常見模式的快速參考。
 
 ---
 
-## Basic 語法
+## 基本語法
 
-### Variables 和 資料 Types
+### 變數與資料型別
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +25,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### 字串
 ```python
 s = "Hello, World!"
 
@@ -54,9 +47,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## 控制流程
 
-### Conditionals
+### 條件判斷
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### 迴圈
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +86,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## 資料 Structures
+## 資料結構
 
-### Lists
+### 串列（Lists）
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +106,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### 字典（Dictionaries）
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +121,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### 集合（Sets）
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +133,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuples
+### 元組（Tuples）
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +142,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## 函式
 
-### Definition
+### 定義
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +163,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Lambda 函式
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +171,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## 類別
 
 ```python
 class Person:
@@ -207,7 +200,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## 檔案 I/O
 
 ```python
 # Reading files
@@ -226,7 +219,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## 錯誤處理
 
 ```python
 try:
@@ -248,7 +241,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules 和 Imports
+## 模組與匯入
 
 ```python
 import math
@@ -263,9 +256,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## 常見模式
 
-### List Operations
+### 串列操作
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +274,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### 字串操作
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +290,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### 詞典 Operations
+### 字典操作
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +306,7 @@ for k, v in d.items():
 
 ---
 
-## Built-在 Functions
+## 內建函式
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +322,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## 快速提示
 
-- Use `#` 為 single-line comments
-- Use `"""triple quotes"""` 為 docstrings 和 multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` 為 variables/functions, `PascalCase` 為 classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` 為 project isolation
-- Install packages 與 `pip install package_name`
+- 使用 `#` 進行單行註解
+- 使用 `"""三引號"""` 進行文件字串和多行字串
+- 縮排很重要（通常為 4 個空格）
+- 命名慣例：變數/函式使用 `snake_case`，類別使用 `PascalCase`
+- 使用 `__name__ == "__main__"` 檢查腳本是否直接執行
+- 使用 `virtualenv` 或 `venv` 進行專案隔離
+- 使用 `pip install package_name` 安裝套件
 
 ---
 
-*最後更新: June 2025 | Python 3.x*
+*最後更新：2025 年 6 月 | Python 3.x*

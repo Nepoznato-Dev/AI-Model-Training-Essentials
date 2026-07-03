@@ -1,868 +1,866 @@
-# İngilizce Sözlük — Common Word Definitions
+# İngilizce Sözlük — Yaygın Kelime Tanımları
 
-A Referans list içinde frequently used İngilizce words ve their meanings,
-covering everyday vocabulary, academic terms, ve words commonly encountered
-içinde questions ve discussions.
+Gündelik sözcükleri, akademik terimleri ve soru ile tartışmalarda sıkça karşılaşılan kelimeleri kapsayan, yaygın kullanılan İngilizce kelimeler ve anlamları için bir başvuru listesi.
 
 ---
 
 ## A
 
-**abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — bu power or skill to do something.
-**abstract** — existing as a concept rather than a concrete thing; a summary içinde a document.
-**accurate** — correct ve precise; free from errors.
-**achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit bu truth içinde something; to show recognition.
-**acquire** — to obtain or gain something, usually through effort or purchase.
-**adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough için a purpose.
-**adjacent** — next to or adjoining something else.
-**adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead içinde bu current time.
-**advantage** — a condition that gives a favourable position over others.
-**adverse** — unfavourable; harmful.
-**affect** — to have an impact on something (verb); emotion (noun, formal).
-**aggregate** — a whole formed by combining several elements.
-**algorithm** — a set içinde rules or steps için solving a problem or task.
-**allocate** — to assign resources için a particular purpose.
-**alter** — to change something, usually partially.
-**ambiguous** — unclear; can be interpreted içinde more than one way.
-**analyse** — to examine içinde detail to understand or explain.
-**annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare için something before it happens.
-**apparent** — clearly visible or understood; seeming to be true.
-**approach** — a way içinde dealing ile something; to come near.
-**approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge bu quality, value, or Doğa içinde something.
-**assign** — to give a task or role to someone; to allocate.
-**assume** — to accept something as true without proof.
-**attribute** — a quality or feature; to credit something to a cause (verb).
-**automate** — to make a process operate automatically without human intervention.
+**abandon** — kalıcı olarak geride bırakmak; bir hedeften veya yerden vazgeçmek.
+**ability** — bir şeyi yapma gücü veya becerisi.
+**abstract** — somut bir şeyden çok kavram olarak var olan; bir belgenin özeti.
+**accurate** — doğru ve kesin; hatasız.
+**achieve** — çaba yoluyla bir hedefe başarıyla ulaşmak.
+**acknowledge** — bir şeyin doğruluğunu kabul veya itiraf etmek; tanıdığını göstermek.
+**acquire** — genellikle çaba veya satın alma yoluyla bir şeyi elde etmek veya kazanmak.
+**adapt** — yeni koşullara veya gereksinimlere uyum sağlamak.
+**adequate** — yeterli; bir amaç için tam gerektiği kadar olan.
+**adjacent** — başka bir şeyin yanında veya bitişiğinde olan.
+**adjust** — uyumu veya işlevi iyileştirmek için küçük değişiklikler yapmak.
+**advance** — ileri gitmek; ilerleme; ayrıca, mevcut zamandan önce olan.
+**advantage** — başkalarına göre elverişli konum sağlayan durum.
+**adverse** — elverişsiz; zararlı.
+**affect** — bir şey üzerinde etki yaratmak (fiil); duygu durumu (isim, resmî kullanım).
+**aggregate** — birkaç öğenin birleşmesiyle oluşan bütün.
+**algorithm** — bir problemi veya görevi çözmek için kurallar ya da adımlar kümesi.
+**allocate** — kaynakları belirli bir amaç için tahsis etmek.
+**alter** — bir şeyi genellikle kısmen değiştirmek.
+**ambiguous** — belirsiz; birden fazla şekilde yorumlanabilen.
+**analyse** — anlamak veya açıklamak için ayrıntılı biçimde incelemek.
+**annotate** — bir metne veya diyagrama açıklayıcı notlar eklemek.
+**anticipate** — bir şey olmadan önce onu beklemek veya ona hazırlanmak.
+**apparent** — açıkça görülen veya anlaşılan; doğru gibi görünen.
+**approach** — bir şeyle başa çıkma yolu; yaklaşmak.
+**approximate** — yaklaşık olarak doğru; tam olmayan.
+**assess** — bir şeyin niteliğini, değerini veya doğasını değerlendirmek ya da yargılamak.
+**assign** — birine görev veya rol vermek; tahsis etmek.
+**assume** — kanıt olmadan bir şeyi doğru kabul etmek.
+**attribute** — bir nitelik veya özellik; bir şeyi bir nedene bağlamak (fiil).
+**automate** — bir sürecin insan müdahalesi olmadan otomatik çalışmasını sağlamak.
 
 ## B
 
-**benefit** — an advantage or positive outcome.
-**bias** — an unfair preference için or against something; systematic error.
-**brief** — short içinde time or length; a summary or instructions.
+**benefit** — avantaj veya olumlu sonuç.
+**bias** — bir şey lehine veya aleyhine adil olmayan eğilim; sistematik hata.
+**brief** — süre veya uzunluk bakımından kısa; özet veya yönergeler.
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having bu ability or qualities needed için something.
-**capacity** — bu maximum amount something can hold or do.
-**categorise** — to place into groups based on shared characteristics.
-**clarify** — to make something easier to understand.
-**classify** — to arrange into categories or groups.
-**coherent** — logical ve consistent; easy to understand.
-**collaborate** — to work together ile others towards a common goal.
-**compile** — to gather ve organise information; to convert source code into executable code.
-**complex** — consisting içinde many interconnected parts; not simple.
-**component** — a part or element içinde a larger whole.
-**comprehend** — to understand fully.
-**compute** — to calculate or process Veri.
-**concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or finish something.
-**condition** — a requirement; a state içinde being; circumstances.
-**configure** — to arrange or set up a system içinde a particular way.
-**confirm** — to establish bu truth or accuracy içinde something.
-**conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving içinde bu same way; not contradictory.
-**context** — bu circumstances surrounding something; background information.
-**contrast** — to compare içinde order to show differences.
-**convert** — to change from one form, unit, or use to another.
-**coordinate** — to organise different elements to work together.
-**criteria** — standards by which something is judged (plural içinde criterion).
+**calculate** — matematik kullanarak bir değeri belirlemek.
+**capable** — bir şey için gereken yeteneğe veya niteliklere sahip olan.
+**capacity** — bir şeyin tutabileceği veya yapabileceği en yüksek miktar.
+**categorise** — ortak özelliklere göre gruplara ayırmak.
+**clarify** — bir şeyi anlaşılması daha kolay hâle getirmek.
+**classify** — kategorilere veya gruplara düzenlemek.
+**coherent** — mantıklı ve tutarlı; anlaşılması kolay.
+**collaborate** — ortak bir hedef için başkalarıyla birlikte çalışmak.
+**compile** — bilgiyi toplamak ve düzenlemek; kaynak kodu çalıştırılabilir koda dönüştürmek.
+**complex** — birbirine bağlı birçok parçadan oluşan; basit olmayan.
+**component** — daha büyük bir bütünün parçası veya öğesi.
+**comprehend** — tam olarak anlamak.
+**compute** — hesaplamak veya veriyi işlemek.
+**concept** — soyut fikir veya genel kavram.
+**conclude** — bir karara varmak veya bir şeyi bitirmek.
+**condition** — gereklilik; varoluş hâli; koşullar.
+**configure** — bir sistemi belirli bir şekilde düzenlemek veya kurmak.
+**confirm** — bir şeyin doğruluğunu veya kesinliğini ortaya koymak.
+**conflict** — ciddi anlaşmazlık; karşıt güçler arasındaki çatışma.
+**consistent** — her zaman aynı şekilde davranan; çelişkili olmayan.
+**context** — bir şeyi çevreleyen koşullar; arka plan bilgisi.
+**contrast** — farkları göstermek amacıyla karşılaştırmak.
+**convert** — bir biçimden, birimden veya kullanımdan diğerine değiştirmek.
+**coordinate** — farklı öğeleri birlikte çalışacak şekilde düzenlemek.
+**criteria** — bir şeyin değerlendirildiği standartlar (criterion sözcüğünün çoğulu).
 
 ## D
 
-**Veri** — facts ve İstatistikler collected için analysis.
-**debug** — to find ve fix errors içinde computer code.
-**define** — to give bu meaning içinde a word or describe bu limits içinde something.
-**demonstrate** — to show how something works or is done.
-**deploy** — to put into use; to install ve run software içinde a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
-**determine** — to find out or establish something conclusively.
-**develop** — to build, grow, or make something more elaborate over time.
-**differ** — to be unlike; to disagree.
-**distinct** — clearly different ve separate.
-**distribute** — to spread or share across multiple locations or people.
-**domain** — a field içinde knowledge or activity; a Web address.
-**duplicate** — an exact copy; to copy something.
+**data** — analiz için toplanan olgular ve istatistikler.
+**debug** — bilgisayar kodundaki hataları bulmak ve düzeltmek.
+**define** — bir kelimenin anlamını vermek veya bir şeyin sınırlarını tanımlamak.
+**demonstrate** — bir şeyin nasıl çalıştığını veya yapıldığını göstermek.
+**deploy** — kullanıma almak; yazılımı canlı bir ortamda kurup çalıştırmak.
+**derive** — bir şeyi bir kaynaktan elde etmek; akıl yürütmeyle sonuca varmak.
+**determine** — bir şeyi kesin biçimde bulmak veya saptamak.
+**develop** — zaman içinde inşa etmek, büyütmek veya daha ayrıntılı hâle getirmek.
+**differ** — farklı olmak; görüş ayrılığına düşmek.
+**distinct** — açıkça farklı ve ayrı.
+**distribute** — birden çok konuma veya kişiye yaymak ya da paylaştırmak.
+**domain** — bilgi veya etkinlik alanı; web adresi.
+**duplicate** — birebir kopya; bir şeyi kopyalamak.
 
 ## E
 
-**efficient** — achieving results ile minimum waste içinde time or resources.
-**element** — a basic component; one içinde bu chemical substances içinde bu periodic table.
-**embed** — to fix firmly within; to incorporate into a larger structure.
-**enable** — to make possible; to activate a feature.
-**enhance** — to improve bu quality or value içinde something.
-**entity** — a thing ile distinct existence; an object içinde a system.
-**enumerate** — to list items one by one; to count.
-**environment** — surroundings; içinde Bilişim, bu system ve configuration içinde which software runs.
-**error** — a mistake; a deviation from correct behaviour.
-**estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to form an opinion after careful consideration.
-**execute** — to carry out a plan or instruction; to run a computer program.
-**explicit** — clearly stated ve leaving nothing implied.
-**extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtain from a source.
+**efficient** — zamanı veya kaynakları en az israfla kullanarak sonuç elde eden.
+**element** — temel bileşen; periyodik tablodaki kimyasal maddelerden biri.
+**embed** — sıkıca yerleştirmek; daha büyük bir yapıya dâhil etmek.
+**enable** — mümkün kılmak; bir özelliği etkinleştirmek.
+**enhance** — bir şeyin kalitesini veya değerini artırmak.
+**entity** — ayrı varlığa sahip şey; bir sistemdeki nesne.
+**enumerate** — öğeleri tek tek listelemek; saymak.
+**environment** — çevre; bilişimde, yazılımın çalıştığı sistem ve yapılandırma.
+**error** — hata; doğru davranıştan sapma.
+**estimate** — yaklaşık hesap; kabaca değerlendirmek.
+**evaluate** — dikkatli değerlendirmeden sonra bir görüş oluşturmak.
+**execute** — bir planı veya talimatı yerine getirmek; bir bilgisayar programını çalıştırmak.
+**explicit** — açıkça belirtilmiş ve ima edilmeyen hiçbir şey bırakmayan.
+**extend** — daha uzun veya büyük yapmak; işlevsellik eklemek.
+**extract** — bir kaynaktan çıkarmak veya elde etmek.
 
 ## F
 
-**factor** — an element that contributes to a result; to break into components (math).
-**feature** — a distinctive aspect or capability.
-**filter** — to remove unwanted elements; a device or function that selects items.
-**flexible** — able to adapt to different conditions.
-**format** — bu arrangement or layout içinde Veri; to prepare için use.
-**framework** — a basic structure providing Destek için building something.
-**function** — bu purpose içinde something; a reusable block içinde code (programming).
-**fundamental** — forming bu base or foundation; essential.
+**factor** — bir sonuca katkıda bulunan öğe; bileşenlerine ayırmak (matematik).
+**feature** — ayırt edici yön veya yetenek.
+**filter** — istenmeyen öğeleri çıkarmak; öğeleri seçen aygıt veya işlev.
+**flexible** — farklı koşullara uyum sağlayabilen.
+**format** — verinin düzeni veya yerleşimi; kullanıma hazırlamak.
+**framework** — bir şey inşa etmeye destek sağlayan temel yapı.
+**function** — bir şeyin amacı; yeniden kullanılabilir kod bloğu (programlama).
+**fundamental** — temel veya dayanak oluşturan; esas.
 
 ## G
 
-**generate** — to produce or create.
-**global** — relating to bu whole world; applying to an entire system.
-**guideline** — a general rule or recommendation.
+**generate** — üretmek veya oluşturmak.
+**global** — tüm dünyayla ilgili; bütün bir sisteme uygulanan.
+**guideline** — genel kural veya öneri.
 
 ## H
 
-**hierarchy** — a system ranked by levels içinde authority or importance.
-**hypothesis** — a proposed explanation that can be tested.
+**hierarchy** — yetki veya önem düzeylerine göre sıralanmış sistem.
+**hypothesis** — test edilebilen önerilmiş açıklama.
 
 ## I
 
-**identify** — to recognise ve name something.
-**implement** — to put a plan or system into effect.
-**implicit** — implied without being directly stated.
-**index** — a pointer to Veri location; an alphabetical list (noun); to categorise (verb).
-**infer** — to reach a conclusion from evidence without explicit statement.
-**initialise** — to set a variable or system to a starting state.
-**input** — Veri provided to a system; to enter Veri.
-**integrate** — to combine parts into a whole; to add a feature to an existing system.
-**interface** — a point where two Sistemler meet ve interact; a contract içinde programming.
-**interpret** — to explain bu meaning içinde something; to execute code line by line.
-**iterate** — to repeat a process, often ile incremental changes.
+**identify** — bir şeyi tanımak ve adlandırmak.
+**implement** — bir planı veya sistemi yürürlüğe koymak.
+**implicit** — doğrudan belirtilmeden ima edilen.
+**index** — veri konumuna işaretçi; alfabetik liste (isim); kategorize etmek (fiil).
+**infer** — açıkça söylenmeden kanıtlardan sonuca varmak.
+**initialise** — bir değişkeni veya sistemi başlangıç durumuna getirmek.
+**input** — bir sisteme verilen veri; veri girmek.
+**integrate** — parçaları bir bütünde birleştirmek; mevcut bir sisteme özellik eklemek.
+**interface** — iki sistemin buluşup etkileştiği nokta; programlamada sözleşme.
+**interpret** — bir şeyin anlamını açıklamak; kodu satır satır yürütmek.
+**iterate** — bir süreci, çoğu zaman aşamalı değişikliklerle, tekrarlamak.
 
 ## J
 
-**justify** — to give reasons için a decision; to align text along a margin.
+**justify** — bir karar için gerekçeler sunmak; metni bir kenara hizalamak.
 
 ## K
 
-**key** — essential; a value used to look up Veri; a cryptographic secret.
+**key** — temel; veriyi aramak için kullanılan değer; kriptografik sır.
 
 ## L
 
-**layer** — a level içinde a hierarchy; a component stacked on others.
-**legacy** — inherited from bu past; old software still içinde use.
-**limit** — a boundary; bu maximum or minimum value allowed.
-**linear** — arranged içinde a straight line; proportional increase.
-**link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; içinde Bilişim, running on bu same machine.
-**logic** — reasoning according to rules; bu flow içinde control içinde a program.
+**layer** — hiyerarşide bir düzey; diğerlerinin üzerine yerleştirilen bileşen.
+**legacy** — geçmişten devralınmış; hâlâ kullanılan eski yazılım.
+**limit** — sınır; izin verilen en yüksek veya en düşük değer.
+**linear** — düz bir çizgi üzerinde düzenlenmiş; orantılı artış.
+**link** — iki şey arasındaki bağlantı; köprü bağlantısı.
+**local** — yakın bir alanla ilgili; bilişimde, aynı makinede çalışan.
+**logic** — kurallara göre akıl yürütme; bir programdaki denetim akışı.
 
 ## M
 
-**maintain** — to keep içinde good condition; to continue over time.
-**manipulate** — to handle or control, sometimes ile skill; to influence unfairly.
-**map** — to associate keys ile values (Veri structure); to show spatial relationships.
-**merge** — to combine into one; to join code branches.
-**method** — a way içinde doing something; a function attached to an object (OOP).
-**migrate** — to move Veri or Sistemler from one environment to another.
-**model** — a representation içinde something; a trained AI system.
-**modify** — to change partially.
-**monitor** — to observe ve check over time; a display screen.
+**maintain** — iyi durumda tutmak; zaman içinde sürdürmek.
+**manipulate** — bazen beceriyle işlemek veya kontrol etmek; haksız biçimde etkilemek.
+**map** — anahtarları değerlerle ilişkilendirmek (veri yapısı); mekânsal ilişkileri göstermek.
+**merge** — birleştirmek; kod dallarını bir araya getirmek.
+**method** — bir şeyi yapma yolu; bir nesneye bağlı işlev (nesne yönelimli programlama).
+**migrate** — verileri veya sistemleri bir ortamdan başka bir ortama taşımak.
+**model** — bir şeyin temsili; eğitilmiş yapay zekâ sistemi.
+**modify** — kısmen değiştirmek.
+**monitor** — zaman içinde gözlemlemek ve kontrol etmek; görüntü ekranı.
 
 ## N
 
-**navigate** — to find a path through; to move between pages or screens.
-**node** — a point içinde a Ağ or tree structure.
-**normalise** — to scale values to a standard range; to reduce redundancy içinde a Veritabanı.
+**navigate** — içinden yol bulmak; sayfalar veya ekranlar arasında hareket etmek.
+**node** — ağ veya ağaç yapısındaki nokta.
+**normalise** — değerleri standart bir aralığa ölçeklemek; veritabanında gereksiz yinelemeyi azaltmak.
 
 ## O
 
-**objective** — a goal or aim; not influenced by personal feelings (adjective).
-**obtain** — to get or acquire.
-**optimise** — to make as effective or efficient as possible.
-**output** — Veri produced by a system; bu result içinde a computation.
-**override** — to take control over an existing setting or method.
+**objective** — hedef veya amaç; kişisel duygulardan etkilenmeyen (sıfat).
+**obtain** — elde etmek veya edinmek.
+**optimise** — mümkün olduğunca etkili veya verimli hâle getirmek.
+**output** — bir sistemin ürettiği veri; bir hesaplamanın sonucu.
+**override** — mevcut bir ayar veya yöntem üzerinde denetimi devralmak.
 
 ## P
 
-**parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text into components; to interpret structured Veri.
-**pattern** — a repeated arrangement; a template için solving a common problem.
-**persist** — to continue to exist; to save Veri so it survives restarts.
-**pipeline** — a series içinde connected stages where bu output içinde one feeds bu next.
-**precise** — exact; accurate to fine detail.
-**predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance ve address bu most important first.
-**process** — a series içinde steps; a running program instance (verb: to handle or transform).
-**prompt** — a cue or instruction given to an AI model or user.
-**property** — a characteristic or attribute; a value belonging to an object.
-**protocol** — a set içinde rules için İletişim between Sistemler.
+**parameter** — bir işleve aktarılan değer; ölçülebilir özellik.
+**parse** — metni bileşenlerine ayırarak analiz etmek; yapılandırılmış veriyi yorumlamak.
+**pattern** — yinelenen düzen; yaygın bir problemi çözmek için şablon.
+**persist** — varlığını sürdürmek; veriyi yeniden başlatmalardan sonra da kalacak şekilde kaydetmek.
+**pipeline** — birinin çıktısının sonrakine girdi olduğu bağlı aşamalar dizisi.
+**precise** — kesin; ince ayrıntıya kadar doğru.
+**predict** — bir şey olmadan önce ne olacağını söylemek.
+**prioritise** — görevleri önem sırasına koymak ve en önemlisini önce ele almak.
+**process** — adımlar dizisi; çalışan program örneği (fiil: işlemek veya dönüştürmek).
+**prompt** — bir yapay zekâ modeline veya kullanıcıya verilen ipucu ya da talimat.
+**property** — özellik veya nitelik; bir nesneye ait değer.
+**protocol** — sistemler arası iletişim için kurallar kümesi.
 
 ## Q
 
-**query** — a request için information from a Veritabanı; a question.
-**queue** — a line içinde items waiting to be processed (first içinde, first out).
+**query** — veritabanından bilgi isteği; soru.
+**queue** — işlenmeyi bekleyen öğeler sırası (ilk giren, ilk çıkar).
 
 ## R
 
-**recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates existing functionality; extra için backup.
-**refactor** — to restructure existing code without changing its external behaviour.
-**Referans** — a pointer to a value; a source cited için information.
-**relevant** — closely connected to bu topic at hand.
-**render** — to produce output (graphics, text, or HTML).
-**represent** — to stand için or describe something.
-**requirement** — a necessary condition or feature.
-**resolve** — to find a solution; to determine a value (e.g. a DNS name).
-**retrieve** — to get back stored information.
-**robust** — strong ve reliable, especially under stress.
+**recursive** — kendisini çağıran veya kendisine başvuran işlev ya da süreç.
+**redundant** — mevcut işlevi yinelediği için gereksiz; yedekleme için fazladan olan.
+**refactor** — mevcut kodu dış davranışını değiştirmeden yeniden yapılandırmak.
+**reference** — bir değere işaretçi; bilgi için başvurulan kaynak.
+**relevant** — eldeki konuyla yakından bağlantılı.
+**render** — çıktı üretmek (grafik, metin veya HTML).
+**represent** — bir şeyin yerine geçmek veya onu betimlemek.
+**requirement** — gerekli koşul veya özellik.
+**resolve** — çözüm bulmak; bir değeri belirlemek (ör. DNS adı).
+**retrieve** — depolanmış bilgiyi geri almak.
+**robust** — özellikle baskı altında güçlü ve güvenilir.
 
 ## S
 
-**scalable** — able to handle increased workload without degrading Performans.
-**schema** — bu structure or layout içinde a Veritabanı or Veri format.
-**scope** — bu range içinde effect; bu section içinde code where a variable is visible.
-**segment** — a distinct section or part.
-**semantic** — relating to meaning, especially içinde Dil or code.
-**sequence** — a set içinde things içinde a particular order.
-**session** — a period içinde activity; a connection between client ve server.
-**simulate** — to imitate bu behaviour içinde a system.
-**source** — bu origin içinde something; original code before compilation.
-**specify** — to state clearly ve içinde detail.
-**static** — not changing; içinde Bilişim, fixed at compile time or not associated ile instances.
-**store** — to save Veri için later use.
-**structure** — bu arrangement içinde parts; a composite Veri type.
-**summarise** — to give a brief statement içinde bu main points.
-**synchronise** — to cause to happen at bu same time or rate.
-**Sözdizimi** — bu rules governing bu structure içinde statements içinde a Dil.
+**scalable** — performans düşmeden artan iş yükünü kaldırabilen.
+**schema** — bir veritabanının veya veri biçiminin yapısı ya da düzeni.
+**scope** — etki aralığı; bir değişkenin görünür olduğu kod bölümü.
+**segment** — belirgin bölüm veya parça.
+**semantic** — özellikle dilde veya kodda anlamla ilgili.
+**sequence** — belirli bir sıradaki şeyler kümesi.
+**session** — etkinlik dönemi; istemci ile sunucu arasındaki bağlantı.
+**simulate** — bir sistemin davranışını taklit etmek.
+**source** — bir şeyin kökeni; derlemeden önceki özgün kod.
+**specify** — açık ve ayrıntılı biçimde belirtmek.
+**static** — değişmeyen; bilişimde, derleme zamanında sabit olan veya örneklerle ilişkili olmayan.
+**store** — veriyi daha sonra kullanmak üzere kaydetmek.
+**structure** — parçaların düzeni; bileşik veri türü.
+**summarise** — ana noktaları kısa bir ifadeyle vermek.
+**synchronise** — aynı zamanda veya aynı hızda gerçekleşmesini sağlamak.
+**syntax** — bir dilde ifadelerin yapısını belirleyen kurallar.
 
 ## T
 
-**template** — a model or pattern used as a starting point.
-**threshold** — a level or point that triggers an action when reached.
-**token** — a unit içinde text içinde NLP; an authentication credential.
-**trace** — to follow a path; a record içinde program execution için debugging.
-**transform** — to change içinde form, Doğa, or appearance.
-**transmit** — to send Veri from one place to another.
+**template** — başlangıç noktası olarak kullanılan model veya kalıp.
+**threshold** — ulaşıldığında bir eylemi tetikleyen seviye veya nokta.
+**token** — doğal dil işlemede metin birimi; kimlik doğrulama bilgisi.
+**trace** — bir yolu izlemek; hata ayıklama için program yürütme kaydı.
+**transform** — biçim, doğa veya görünüş bakımından değiştirmek.
+**transmit** — veriyi bir yerden başka bir yere göndermek.
 
 ## U
 
-**uniform** — consistent ve unchanged throughout.
-**unique** — bu only one içinde its kind; occurring just once.
-**update** — to bring to a more current state.
-**utilise** — to make use içinde something.
+**uniform** — baştan sona tutarlı ve değişmeyen.
+**unique** — türünün tek örneği; yalnızca bir kez gerçekleşen.
+**update** — daha güncel bir duruma getirmek.
+**utilise** — bir şeyden yararlanmak.
 
 ## V
 
-**validate** — to confirm something meets requirements or is correct.
-**variable** — a named container için a value that can change.
-**verify** — to check correctness or truth.
-**version** — a specific form içinde a product at a particular point içinde its Geliştirme.
+**validate** — bir şeyin gereksinimleri karşıladığını veya doğru olduğunu doğrulamak.
+**variable** — değişebilen bir değer için adlandırılmış kapsayıcı.
+**verify** — doğruluğu veya gerçekliği kontrol etmek.
+**version** — bir ürünün geliştirilmesinin belirli bir noktasındaki özel biçimi.
 
 ## W
 
-**workflow** — a series içinde steps followed to Tam a task.
-**warrant** — justification için an action; a Yasal document authorizing something.
+**workflow** — bir görevi tamamlamak için izlenen adımlar dizisi.
+**warrant** — bir eylem için gerekçe; bir şeye yetki veren yasal belge.
 
 ## X
 
-**xenophobia** — fear or hatred içinde foreigners or strangers.
+**xenophobia** — yabancılara veya tanımadıklara yönelik korku ya da nefret.
 
 ## Y
 
-**yield** — to produce or provide; to give way; bu amount produced.
+**yield** — üretmek veya sağlamak; yol vermek; üretilen miktar.
 
 ## Z
 
-**zero-sum** — a situation where one person's gain equals another's loss.
-**zone** — an area ile distinct characteristics or boundaries.
+**zero-sum** — bir kişinin kazancının başka birinin kaybına eşit olduğu durum.
+**zone** — kendine özgü özellikleri veya sınırları olan alan.
 
 ---
 
-## Additional Technical Terms
+## Ek Teknik Terimler
 
-**abstraction** — hiding complex implementation details while showing only essential features.
-**acronym** — a word formed from initial letters içinde a phrase (e.g., NASA, ASCII).
-**adjective** — a word describing a noun or pronoun.
-**adverb** — a word modifying a verb, adjective, or other adverb, often ending içinde -ly.
-**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
-**agile** — a software Geliştirme methodology emphasizing iterative progress ve flexibility.
-**analogy** — a comparison between two things to explain or clarify.
-**antonym** — a word opposite içinde meaning to another word.
-**aphorism** — a concise statement expressing a general truth or principle.
-**apocryphal** — içinde doubtful authenticity; widely circulated but likely false.
-**archetype** — an original model or typical example içinde something.
-**artifact** — an object made by humans; içinde Bilişim, an unintended byproduct içinde processing.
-**assertion** — a confident statement; içinde programming, a check that a condition is true.
-**asynchronous** — not occurring at bu same time; allowing operations to proceed without waiting.
-**attenuate** — to reduce içinde force, value, or intensity.
-**axiom** — a statement accepted as true without proof; a fundamental principle.
+**abstraction** — karmaşık uygulama ayrıntılarını gizleyip yalnızca temel özellikleri göstermek.
+**acronym** — bir ifadenin ilk harflerinden oluşturulan kelime (ör. NASA, ASCII).
+**adjective** — bir ismi veya zamiri niteleyen kelime.
+**adverb** — bir fiili, sıfatı veya başka bir zarfı değiştiren, İngilizcede çoğu zaman -ly ile biten kelime.
+**affix** — bir kelime köküne eklenen biçimbirim (başta önek, sonda sonek).
+**agile** — yinelemeli ilerlemeyi ve esnekliği vurgulayan yazılım geliştirme yöntemi.
+**analogy** — açıklamak veya netleştirmek için iki şey arasında yapılan karşılaştırma.
+**antonym** — anlamca başka bir kelimenin karşıtı olan kelime.
+**aphorism** — genel bir gerçeği veya ilkeyi ifade eden özlü söz.
+**apocryphal** — gerçekliği kuşkulu; yaygın dolaşımda olsa da muhtemelen yanlış.
+**archetype** — bir şeyin özgün modeli veya tipik örneği.
+**artifact** — insanlar tarafından yapılmış nesne; bilişimde, işlemenin istenmeyen yan ürünü.
+**assertion** — kendinden emin ifade; programlamada, bir koşulun doğru olduğunu denetleme.
+**asynchronous** — aynı anda gerçekleşmeyen; işlemlerin beklemeden ilerlemesine izin veren.
+**attenuate** — güç, değer veya yoğunluğu azaltmak.
+**axiom** — kanıtsız doğru kabul edilen ifade; temel ilke.
 
-**backpropagation** — an algorithm için training Sinir Ağları by propagating errors backward.
-**bandwidth** — bu range içinde frequencies Mevcut; Veri transfer capacity.
-**binary** — consisting içinde two parts; base-2 number system using 0s ve 1s.
-**bit** — bu smallest unit içinde Veri (0 or 1); short için binary digit.
-**blockchain** — a distributed ledger Teknoloji recording transactions across multiple computers.
-**boolean** — relating to logic ile values true or false; named after George Boole.
-**bottleneck** — a point içinde congestion slowing down a process or system.
-**byte** — a unit içinde digital information typically consisting içinde 8 bits.
+**backpropagation** — hataları geriye doğru yayarak sinir ağlarını eğitme algoritması.
+**bandwidth** — kullanılabilir frekans aralığı; veri aktarım kapasitesi.
+**binary** — iki parçadan oluşan; 0 ve 1 kullanan 2 tabanlı sayı sistemi.
+**bit** — en küçük veri birimi (0 veya 1); binary digit ifadesinin kısaltması.
+**blockchain** — işlemleri birden çok bilgisayarda kaydeden dağıtık defter teknolojisi.
+**boolean** — doğru veya yanlış değerleriyle mantığa ilişkin; adını George Boole'dan alır.
+**bottleneck** — bir süreci veya sistemi yavaşlatan tıkanıklık noktası.
+**byte** — genellikle 8 bitten oluşan dijital bilgi birimi.
 
-**cache** — a hardware or software component storing Veri için faster Gelecek access.
-**calibrate** — to adjust precisely için accurate measurement or Performans.
-**cascade** — a series içinde stages where each triggers bu next; waterfall effect.
-**catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — bu relationship between cause ve effect.
-**centroid** — bu geometric center içinde a shape; average position içinde points.
-**checksum** — a value computed from Veri to detect errors or tampering.
-**cipher** — an algorithm için encryption or decryption; a secret code.
-**coalesce** — to come together to form one whole.
-**cognitive** — relating to mental processes içinde perception, memory, judgment, ve reasoning.
-**cohort** — a group sharing a common characteristic or experience within a defined period.
-**collateral** — assets pledged as Güvenlik için a loan; secondary or accompanying.
-**colloquial** — informal Dil used içinde ordinary conversation.
-**combinatorics** — bu branch içinde mathematics dealing ile combinations ve permutations.
-**commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happening during overlapping periods.
-**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
-**conjunction** — a word connecting clauses or sentences (ve, but, or); logical ve operator.
-**consensus** — general agreement among a group.
-**constraint** — a limitation or restriction on what is possible.
-**corollary** — a proposition following from one already proved.
-**correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
-**crystalize** — to form into crystals; to make clear or definite.
+**cache** — gelecekte daha hızlı erişim için veri depolayan donanım veya yazılım bileşeni.
+**calibrate** — doğru ölçüm veya performans için hassas biçimde ayarlamak.
+**cascade** — her aşamanın sonrakini tetiklediği aşamalar dizisi; şelale etkisi.
+**catalyst** — kimyasal tepkimeyi hızlandıran madde; değişime neden olan herhangi bir şey.
+**causality** — neden ile sonuç arasındaki ilişki.
+**centroid** — bir şeklin geometrik merkezi; noktaların ortalama konumu.
+**checksum** — hataları veya kurcalamayı saptamak için veriden hesaplanan değer.
+**cipher** — şifreleme veya şifre çözme algoritması; gizli kod.
+**coalesce** — birleşerek tek bir bütün oluşturmak.
+**cognitive** — algı, bellek, yargı ve akıl yürütme gibi zihinsel süreçlerle ilgili.
+**cohort** — tanımlı bir dönem içinde ortak özellik veya deneyim paylaşan grup.
+**collateral** — kredi için teminat olarak gösterilen varlıklar; ikincil veya eşlik eden.
+**colloquial** — günlük konuşmada kullanılan gayriresmî dil.
+**combinatorics** — kombinasyonlar ve permütasyonlarla ilgilenen matematik dalı.
+**commutative** — sıranın önemli olmadığı özellik (a+b = b+a).
+**concurrency** — birden çok hesaplamanın örtüşen zaman aralıklarında gerçekleşmesi.
+**conjecture** — eksik bilgiyle oluşturulan sonuç; matematiksel varsayım.
+**conjunction** — tümceleri veya cümleleri bağlayan kelime (ve, ama, veya); mantıksal VE işleci.
+**consensus** — bir grup içindeki genel uzlaşma.
+**constraint** — mümkün olanı sınırlayan kısıt veya engel.
+**corollary** — daha önce kanıtlanmış bir önermeden çıkan sonuç.
+**correlation** — iki değişken arasındaki karşılıklı ilişki; nedensellik anlamına gelmez.
+**cryptocurrency** — kriptografiyle güvence altına alınmış, çoğu zaman merkeziyetsiz dijital para birimi.
+**crystalize** — kristallere dönüşmek; açık veya kesin hâle getirmek.
 
-**daisy-chain** — to connect devices or tasks içinde a sequential series.
-**deconvolution** — reversing convolution; separating mixed signals or images.
-**deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — bu act içinde throwing someone out içinde a window.
-**deictic** — referring to something by pointing (this, that, here, there).
-**demographic** — statistical Veri about populations or groups.
-**denotation** — bu literal or primary meaning içinde a word.
-**deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure içinde rate içinde change (calculus); derived from something else.
-**deterministic** — producing bu same output given bu same input; predictable.
-**diachronic** — studying phenomena as they change over time.
-**didactic** — intended to teach, particularly ile moral instruction.
-**diffraction** — bu bending içinde waves around obstacles or through openings.
-**digraph** — two characters representing one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make something clearer.
-**discrete** — separate ve distinct; individual (opposite içinde continuous).
-**disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — bu process içinde separating or moving apart.
-**docstring** — documentation embedded içinde source code explaining function purpose.
+**daisy-chain** — aygıtları veya görevleri sıralı bir dizi hâlinde bağlamak.
+**deconvolution** — evrişimi tersine çevirme; karışmış sinyalleri veya görüntüleri ayırma.
+**deduction** — genel ilkelerden özel sonuçlara akıl yürütme.
+**defenestration** — birini pencereden dışarı atma eylemi.
+**deictic** — işaret ederek bir şeye gönderme yapan (bu, şu, burada, orada).
+**demographic** — nüfuslar veya gruplar hakkındaki istatistiksel veriler.
+**denotation** — bir kelimenin sözlük anlamı veya birincil anlamı.
+**deprecated** — kullanımdan kalkmış olarak işaretlenmiş ama hâlâ çalışan; kullanımı önerilmeyen.
+**derivative** — değişim hızının ölçüsü (kalkülüs); başka bir şeyden türetilmiş olan.
+**deterministic** — aynı girdiye aynı çıktıyı üreten; öngörülebilir.
+**diachronic** — olguları zaman içindeki değişimleriyle inceleyen.
+**didactic** — öğretmeyi amaçlayan, özellikle ahlaki ders içeren.
+**diffraction** — dalgaların engellerin etrafında veya açıklıklardan geçerken bükülmesi.
+**digraph** — tek bir sesi temsil eden iki karakter (sh, ch, th).
+**disambiguate** — belirsizliği gidermek; bir şeyi daha açık hâle getirmek.
+**discrete** — ayrı ve belirgin; tekil (süreklinin karşıtı).
+**disjunctive** — alternatifler sunan; mantıksal VEYA işlemi.
+**divergence** — ayrılma veya birbirinden uzaklaşma süreci.
+**docstring** — işlevin amacını açıklayan, kaynak koda gömülü belgelendirme.
 
-**eccentric** — unconventional or slightly strange; off-center.
-**eclectic** — selecting from diverse sources or styles.
-**edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament için bu dead.
-**elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission içinde words; three dots (...) indicating continuation or pause.
-**embargo** — an official ban on trade or publication.
-**empathy** — bu ability to understand ve share others' feelings.
-**empirical** — based on observation or experience rather than theory.
-**emulate** — to imitate or match, especially içinde Bilişim (software emulation).
-**endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — lasting için a very short time; temporary.
-**epistemology** — bu study içinde knowledge, its Doğa ve scope.
-**epoch** — a significant period içinde Tarih; içinde ML, one pass through training Veri.
-**equilibrium** — a state içinde balance between opposing forces.
-**equivocate** — to use ambiguous Dil to conceal bu truth.
-**ergodic** — having statistical properties uniform throughout; random yet representative.
-**esoteric** — intended için or understood by a small, specialized group.
-**ethnography** — bu systematic study içinde people ve cultures through observation.
-**etymology** — bu study içinde word origins ve historical Geliştirme.
-**euphemism** — a mild expression substituting için a harsh or unpleasant one.
-**evanescent** — fleeting; vanishing like vapor.
-**exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certain goods.
-**existential** — relating to existence; concerning human freedom ve choice.
-**exogenous** — originating from external factors.
-**expedite** — to make happen sooner; accelerate.
-**exponential** — involving exponentiation; growth accelerating over time.
-**extrapolate** — to estimate beyond known Veri by extending trends.
+**eccentric** — alışılmadık veya biraz tuhaf; merkezden sapmış.
+**eclectic** — çeşitli kaynaklardan veya tarzlardan seçen.
+**edge case** — özel işlem gerektiren uç veya nadir senaryo.
+**elegy** — ölüler için hüzünlü şiir veya ağıt.
+**elide** — sesleri veya heceleri atlamak ya da kaynaştırmak.
+**ellipsis** — kelimelerin atılması; devamı veya duraklamayı gösteren üç nokta (...).
+**embargo** — ticaret veya yayımlama üzerindeki resmî yasak.
+**empathy** — başkalarının duygularını anlama ve paylaşma yetisi.
+**empirical** — kuramdan çok gözlem veya deneyime dayanan.
+**emulate** — özellikle bilişimde taklit etmek veya eşdeğer davranmak (yazılım öykünmesi).
+**endemic** — belirli bir bölgeye özgü veya onunla sınırlı; sürekli mevcut.
+**ephemeral** — çok kısa süreli; geçici.
+**epistemology** — bilginin doğasını ve kapsamını inceleyen alan.
+**epoch** — tarihte önemli dönem; makine öğrenmesinde eğitim verilerinden bir tam geçiş.
+**equilibrium** — karşıt güçler arasında denge durumu.
+**equivocate** — gerçeği gizlemek için belirsiz dil kullanmak.
+**ergodic** — baştan sona tekdüze istatistiksel özelliklere sahip; rastlantısal ama temsil edici.
+**esoteric** — küçük, uzmanlaşmış bir grup için amaçlanan veya onların anlayabildiği.
+**ethnography** — insanları ve kültürleri gözlem yoluyla sistematik inceleme.
+**etymology** — kelime kökenlerini ve tarihsel gelişimi inceleyen alan.
+**euphemism** — sert veya hoş olmayan bir ifadenin yerine kullanılan yumuşak ifade.
+**evanescent** — kısa ömürlü; buhar gibi kaybolan.
+**exacerbate** — bir sorunu daha kötü hâle getirmek.
+**excise** — kesip çıkarmak; belirli mallardan alınan vergi.
+**existential** — varoluşla ilgili; insan özgürlüğü ve seçimiyle ilgili.
+**exogenous** — dış etkenlerden kaynaklanan.
+**expedite** — daha erken gerçekleşmesini sağlamak; hızlandırmak.
+**exponential** — üs alma içeren; zamanla hızlanarak büyüyen.
+**extrapolate** — eğilimleri genişleterek bilinen verinin ötesini tahmin etmek.
 
-**facade** — bu front içinde a building; a deceptive outward appearance.
-**fallacy** — a mistaken belief; flawed reasoning içinde argument.
-**falsifiable** — capable içinde being proven false; a criterion için scientific claims.
-**Geri Bildirim loop** — a system where outputs influence inputs, amplifying or stabilizing.
-**ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**finite** — having limits or bounds; not infinite.
-**flux** — continuous change; flow or movement.
-**formalism** — strict adherence to rules or forms; emphasis on structure.
-**fortuitous** — happening by chance; lucky.
-**fractal** — a self-similar pattern repeating at different scales.
-**frequency** — bu rate içinde occurrence; number içinde cycles per second (Hertz).
-**full-stack** — involving both front-end ve back-end Geliştirme.
+**facade** — bir binanın ön yüzü; aldatıcı dış görünüş.
+**fallacy** — yanlış inanç; tartışmada kusurlu akıl yürütme.
+**falsifiable** — yanlışlığı kanıtlanabilir olan; bilimsel iddialar için ölçüt.
+**feedback loop** — çıktıların girdileri etkilediği, güçlendiren veya dengeleyen sistem.
+**ferment** — mikroorganizmalarla kimyasal parçalanma; çalkantı veya huzursuzluk.
+**finite** — sınırları veya limitleri olan; sonsuz olmayan.
+**flux** — sürekli değişim; akış veya hareket.
+**formalism** — kurallara veya biçimlere sıkı bağlılık; yapıya vurgu.
+**fortuitous** — tesadüfen gerçekleşen; şanslı.
+**fractal** — farklı ölçeklerde tekrarlanan kendine benzer desen.
+**frequency** — gerçekleşme oranı; saniyedeki döngü sayısı (Hertz).
+**full-stack** — hem ön yüz hem arka uç geliştirmeyi içeren.
 
-**garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — bu study içinde family lineages ve descent.
-**generic** — general rather than specific; lacking brand identification.
-**genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than bu sum içinde its parts.
-**gibberish** — unintelligible or meaningless speech or writing.
-**granular** — composed içinde small particles; detailed ve fine-grained.
-**graph** — a diagram showing relationships; a Veri structure ile nodes ve edges.
-**gregarious** — sociable; fond içinde company.
-**grok** — to understand deeply ve intuitively (from Bilim fiction).
+**garrulous** — özellikle önemsiz konularda aşırı konuşkan.
+**gaussian** — normal dağılımla ilgili; çan eğrisi biçimli.
+**genealogy** — aile soylarını ve köken ilişkilerini inceleyen alan.
+**generic** — özelden çok genel; marka kimliği olmayan.
+**genitive** — sahiplik gösteren dilbilgisel hâl.
+**gestalt** — parçalarının toplamından daha fazlası olarak algılanan örgütlü bütün.
+**gibberish** — anlaşılmaz veya anlamsız konuşma ya da yazı.
+**granular** — küçük parçacıklardan oluşan; ayrıntılı ve ince taneli.
+**graph** — ilişkileri gösteren diyagram; düğümler ve kenarlardan oluşan veri yapısı.
+**gregarious** — sosyal; arkadaşlıktan hoşlanan.
+**grok** — derinden ve sezgisel olarak anlamak (bilim kurgudan).
 
-**halcyon** — calm ve peaceful; prosperous ve happy.
-**haplotype** — a set içinde DNA variations inherited together.
-**hegemony** — dominance or leadership, especially içinde one state over others.
-**hermeneutics** — bu theory ve methodology içinde interpretation.
-**heuristic** — a practical method not guaranteed optimal; a rule içinde thumb.
-**hologram** — a 3D image created by laser interference patterns.
-**homogeneous** — uniform içinde composition or character.
-**homomorphism** — a structure-preserving map between algebraic structures.
-**homophone** — words sounding alike but differing içinde meaning or spelling.
-**homonym** — words ile same spelling or pronunciation but different meanings.
-**hyperbole** — deliberate exaggeration için effect.
-**hyperparameter** — a configuration setting için Makine Öğrenimi models set before training.
-**hypertext** — text containing links to other texts; foundational to bu Web.
-**hypothesize** — to propose an explanation as a starting point için investigation.
+**halcyon** — sakin ve huzurlu; refah içinde ve mutlu.
+**haplotype** — birlikte kalıtılan DNA varyasyonları kümesi.
+**hegemony** — özellikle bir devletin diğerleri üzerindeki üstünlüğü veya liderliği.
+**hermeneutics** — yorumlama kuramı ve yöntembilimi.
+**heuristic** — en iyi sonucu garanti etmeyen pratik yöntem; deneyim kuralı.
+**hologram** — lazer girişim desenleriyle oluşturulan üç boyutlu görüntü.
+**homogeneous** — bileşim veya karakter bakımından tekdüze.
+**homomorphism** — cebirsel yapılar arasında yapıyı koruyan eşleme.
+**homophone** — aynı seslenen ama anlamı veya yazımı farklı kelimeler.
+**homonym** — yazımı veya telaffuzu aynı, anlamları farklı kelimeler.
+**hyperbole** — etki yaratmak için kasıtlı abartı.
+**hyperparameter** — makine öğrenmesi modelleri için eğitimden önce belirlenen yapılandırma ayarı.
+**hypertext** — başka metinlere bağlantılar içeren metin; web'in temeli.
+**hypothesize** — araştırmaya başlangıç noktası olarak bir açıklama önermek.
 
-**iconoclast** — one who attacks cherished beliefs or institutions.
-**idiom** — a phrase whose meaning cannot be deduced from individual words.
-**idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing bu same result regardless içinde how many times applied.
-**igneous** — rock formed from cooled magma or lava.
-**immutable** — unchanging over time; unable to be modified.
-**impedance** — opposition to alternating current; metaphorically, resistance to flow.
-**imperative** — crucial; a command; programming paradigm focused on statements.
-**implicit** — implied though not plainly expressed.
-**imponderable** — impossible to estimate or assess.
-**impromptu** — done without preparation; spontaneous.
-**inchoate** — just begun; not fully formed.
-**inductive** — reasoning from specific observations to general conclusions.
-**ineffable** — too great or extreme to be expressed içinde words.
-**inference** — a conclusion reached from evidence; içinde AI, generating outputs from models.
-**inflection** — change içinde pitch or tone; modification içinde words için grammar.
-**innate** — inborn; natural rather than acquired.
-**inoculate** — to vaccinate; introduce an idea or attitude gradually.
-**insidious** — proceeding subtly but harmfully.
-**instantiation** — creating a specific instance içinde a class or concept.
-**intentionality** — bu quality içinde being about something; directedness içinde consciousness.
-**interoperability** — bu ability içinde Sistemler to work together seamlessly.
-**interpolate** — to estimate values between known Veri points.
-**introspection** — examining one's own thoughts ve feelings; içinde code, examining types at runtime.
-**invariant** — unchanging; a condition that remains constant during execution.
-**invective** — abusive or insulting Dil.
-**inverse** — opposite içinde position, direction, or effect.
-**iterable** — an object capable içinde returning its members one at a time.
+**iconoclast** — değer verilen inançlara veya kurumlara saldıran kişi.
+**idiom** — anlamı tek tek kelimelerden çıkarılamayan ifade.
+**idiosyncratic** — bir bireye özgü; ayırt edici.
+**idempotent** — kaç kez uygulanırsa uygulansın aynı sonucu üreten.
+**igneous** — soğumuş magma veya lavdan oluşan kayaç.
+**immutable** — zaman içinde değişmeyen; değiştirilemeyen.
+**impedance** — alternatif akıma karşı direnç; mecazen, akışa direnç.
+**imperative** — zorunlu önemde; komut; deyimlere odaklanan programlama paradigması.
+**implicit** — açıkça ifade edilmemiş olsa da ima edilen.
+**imponderable** — tahmin edilmesi veya değerlendirilmesi imkânsız.
+**impromptu** — hazırlıksız yapılan; kendiliğinden.
+**inchoate** — yeni başlamış; tam oluşmamış.
+**inductive** — özel gözlemlerden genel sonuçlara akıl yürütme.
+**ineffable** — kelimelerle ifade edilemeyecek kadar büyük veya aşırı.
+**inference** — kanıtlardan ulaşılan sonuç; yapay zekâda, modellerden çıktı üretme.
+**inflection** — perde veya ton değişimi; kelimelerin dilbilgisi için değişmesi.
+**innate** — doğuştan gelen; edinilmiş değil doğal olan.
+**inoculate** — aşılamak; bir fikri veya tutumu kademeli olarak tanıtmak.
+**insidious** — sinsi biçimde ilerleyen ama zararlı olan.
+**instantiation** — bir sınıfın veya kavramın belirli bir örneğini oluşturma.
+**intentionality** — bir şey hakkında olma niteliği; bilincin yönelmişliği.
+**interoperability** — sistemlerin sorunsuz biçimde birlikte çalışabilme yeteneği.
+**interpolate** — bilinen veri noktaları arasındaki değerleri tahmin etmek.
+**introspection** — kişinin kendi düşünce ve duygularını incelemesi; kodda, çalışma zamanında türleri inceleme.
+**invariant** — değişmeyen; yürütme sırasında sabit kalan koşul.
+**invective** — aşağılayıcı veya hakaret içeren dil.
+**inverse** — konum, yön veya etki bakımından karşıt.
+**iterable** — üyelerini tek tek döndürebilen nesne.
 
-**jargon** — specialized terminology used by a particular group.
-**juxtapose** — to place side by side için comparison or contrast.
+**jargon** — belirli bir grubun kullandığı uzmanlık terminolojisi.
+**juxtapose** — karşılaştırma veya karşıtlık için yan yana koymak.
 
-**kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — bu core içinde an operating system; a seed; içinde ML, a function transforming Veri.
-**kinetic** — relating to motion; active rather than static.
-**kiosk** — a small booth için information or sales; a locked-down computer terminal.
+**kafkaesque** — kâbus gibi karmaşık veya bürokratik (Franz Kafka'dan).
+**kernel** — işletim sisteminin çekirdeği; tohum; makine öğrenmesinde veriyi dönüştüren işlev.
+**kinetic** — hareketle ilgili; durağan değil etkin.
+**kiosk** — bilgi veya satış için küçük kulübe; kilitli kısıtlı bilgisayar terminali.
 
-**lacuna** — a gap or missing part, especially içinde a manuscript.
-**latency** — delay between stimulus ve response; içinde networking, time için Veri to travel.
-**latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — bu vocabulary içinde a Dil or field; a Sözlük.
-**liability** — Yasal responsibility; a disadvantage; debts owed.
-**linear regression** — a statistical method modeling linear relationships between variables.
-**lingua franca** — a common Dil used between speakers içinde different native languages.
-**literal** — taking words içinde their usual sense; not figurative.
-**litmus test** — a decisive test revealing true Doğa or quality.
-**locus** — bu set içinde points satisfying a condition; a center içinde activity.
-**loquacious** — very talkative.
-**lucid** — clear ve easy to understand; mentally sharp.
-**lumen** — a unit içinde luminous flux; light output.
-**lyric** — expressing personal emotions; song-like poetry.
+**lacuna** — özellikle bir el yazmasında boşluk veya eksik bölüm.
+**latency** — uyaran ile yanıt arasındaki gecikme; ağlarda, verinin yol alma süresi.
+**latent** — var olan ama henüz gelişmemiş veya ortaya çıkmamış; gizli.
+**lexicon** — bir dilin veya alanın söz varlığı; sözlük.
+**liability** — yasal sorumluluk; dezavantaj; borçlar.
+**linear regression** — değişkenler arasındaki doğrusal ilişkileri modelleyen istatistiksel yöntem.
+**lingua franca** — ana dilleri farklı konuşurlar arasında kullanılan ortak dil.
+**literal** — kelimeleri olağan anlamıyla alan; mecazi olmayan.
+**litmus test** — gerçek doğayı veya niteliği ortaya çıkaran belirleyici test.
+**locus** — bir koşulu sağlayan noktalar kümesi; etkinlik merkezi.
+**loquacious** — çok konuşkan.
+**lucid** — açık ve anlaşılması kolay; zihinsel olarak berrak.
+**lumen** — ışık akısı birimi; ışık çıktısı.
+**lyric** — kişisel duyguları ifade eden; şarkı benzeri şiir.
 
-**macro** — a large-scale view; a rule specifying pattern replacement.
-**malapropism** — mistaken use içinde a word içinde place içinde a similar-sounding one.
-**manifest** — obvious; a list içinde cargo or passengers; to display or show.
-**mantissa** — bu significant digits içinde a floating-point number.
-**mapreduce** — a programming model için processing large datasets içinde parallel.
-**marginal** — minimal; at bu edge; additional or incremental.
-**markup** — text formatting codes (HTML, XML); price increase.
-**matrix** — a rectangular array içinde numbers; environment or surroundings.
-**maxim** — a short statement expressing a general truth or rule içinde conduct.
-**mechanism** — a system içinde parts working together; an underlying process.
-**mediator** — one who facilitates resolution between parties.
-**membrane** — a thin flexible layer; içinde biology, cell boundary.
-**memoization** — caching function results to avoid recomputation.
-**metaphor** — a figure içinde speech comparing unlike things without "like" or "as".
-**metastable** — apparently stable but easily disrupted.
-**metonymy** — referring to something by something closely associated (crown için monarchy).
-**microservice** — a small, independent service içinde a distributed Mimari.
-**millisecond** — one thousandth içinde a second.
-**mnemonic** — a memory aid or device.
-**modality** — bu mode or form içinde something; sensory channel.
-**model** — a representation; içinde ML, a trained system making predictions.
-**modulate** — to adjust or regulate; vary içinde strength or tone.
-**monad** — a structure içinde functional programming handling side effects.
-**monolithic** — a single massive structure; not modular.
-**monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — bu study içinde forms ve structures; word formation içinde linguistics.
-**multicast** — sending Veri to multiple destinations simultaneously.
-**multimodal** — combining multiple modes (text, image, audio).
-**mutable** — capable içinde change; modifiable.
-**mutual** — held içinde common; reciprocal.
+**macro** — büyük ölçekli bakış; desen değiştirmeyi belirten kural.
+**malapropism** — benzer sesli bir kelimenin yerine yanlış kelime kullanımı.
+**manifest** — açıkça görülen; yük veya yolcu listesi; sergilemek ya da göstermek.
+**mantissa** — kayan noktalı bir sayının anlamlı basamakları.
+**mapreduce** — büyük veri kümelerini paralel işlemek için programlama modeli.
+**marginal** — çok az; kenarda; ek veya artımsal.
+**markup** — metin biçimlendirme kodları (HTML, XML); fiyat artışı.
+**matrix** — dikdörtgen sayı dizisi; ortam veya çevre.
+**maxim** — genel bir gerçeği veya davranış kuralını ifade eden kısa söz.
+**mechanism** — birlikte çalışan parçalar sistemi; altta yatan süreç.
+**mediator** — taraflar arasında çözümü kolaylaştıran kişi.
+**membrane** — ince ve esnek katman; biyolojide hücre sınırı.
+**memoization** — yeniden hesaplamayı önlemek için işlev sonuçlarını önbelleğe alma.
+**metaphor** — benzemeyen şeyleri "gibi" kullanmadan karşılaştıran söz sanatı.
+**metastable** — görünüşte kararlı ama kolayca bozulabilen.
+**metonymy** — bir şeyi onunla yakından ilişkili bir şeyle adlandırma (monarşi için taç).
+**microservice** — dağıtık mimaride küçük ve bağımsız hizmet.
+**millisecond** — saniyenin binde biri.
+**mnemonic** — bellek yardımcısı veya aracı.
+**modality** — bir şeyin kipi veya biçimi; duyusal kanal.
+**model** — temsil; makine öğrenmesinde tahmin yapan eğitilmiş sistem.
+**modulate** — ayarlamak veya düzenlemek; güç ya da tonda değişiklik yapmak.
+**monad** — işlevsel programlamada yan etkileri ele alan yapı.
+**monolithic** — tek ve devasa yapı; modüler olmayan.
+**monotonic** — sürekli artan veya sürekli azalan; yön değiştirmeyen.
+**morphology** — biçim ve yapıların incelenmesi; dilbilimde kelime oluşumu.
+**multicast** — veriyi aynı anda birden çok hedefe göndermek.
+**multimodal** — birden çok kipi birleştiren (metin, görüntü, ses).
+**mutable** — değişebilir; değiştirilebilir.
+**mutual** — ortak olarak sahip olunan; karşılıklı.
 
-**nascent** — just coming into existence; beginning to develop.
-**native** — inherent; belonging to a place by birth; içinde Bilişim, built için a specific platform.
-**natural Dil** — human Dil as spoken or written, not formal or programming.
-**negation** — denial or contradiction; logical NOT.
-**neologism** — a newly coined word or expression.
-**nested** — contained within something similar; hierarchical layers.
-**netizen** — an active internet user.
-**neural Ağ** — a Bilişim system inspired by biological brains.
-**nominal** — içinde name only; very small; stated or face value.
-**non sequitur** — a conclusion not following from premises.
-**normalization** — organizing Veri to reduce redundancy; scaling to standard range.
-**notwithstanding** — içinde spite içinde; nevertheless.
-**nuance** — subtle distinction or variation.
-**null** — having no value; zero; invalid.
-**numerator** — bu top number içinde a fraction.
+**nascent** — yeni var olmaya başlayan; gelişmeye yeni başlayan.
+**native** — doğasında bulunan; doğumla bir yere ait; bilişimde belirli bir platform için yapılmış.
+**natural language** — biçimsel dil veya programlama dili değil, konuşulan ya da yazılan insan dili.
+**negation** — inkâr veya çelişki; mantıksal DEĞİL.
+**neologism** — yeni türetilmiş kelime veya ifade.
+**nested** — benzer bir şeyin içinde yer alan; hiyerarşik katmanlar.
+**netizen** — etkin internet kullanıcısı.
+**neural network** — biyolojik beyinlerden esinlenen hesaplama sistemi.
+**nominal** — yalnızca isimde var olan; çok küçük; belirtilen veya nominal değer.
+**non sequitur** — öncüllerden çıkmayan sonuç.
+**normalization** — gereksiz yinelemeyi azaltmak için veriyi düzenleme; standart aralığa ölçekleme.
+**notwithstanding** — rağmen; yine de.
+**nuance** — ince ayrım veya farklılık.
+**null** — değeri olmayan; sıfır; geçersiz.
+**numerator** — kesirde üstteki sayı.
 
-**objective** — not influenced by personal feelings; a goal.
-**obligatory** — required; mandatory.
-**obfuscate** — to deliberately make unclear or confusing.
-**objective function** — a function to maximize or minimize içinde optimization.
-**observable** — capable içinde being observed; içinde programming, a stream içinde Olaylar.
-**obsolescence** — bu process içinde becoming outdated.
-**occasional** — happening sometimes; irregular.
-**occlusion** — blockage or obstruction; hiding içinde objects içinde vision.
-**octet** — a group içinde eight; içinde networking, 8 bits (byte).
-**offload** — to transfer work to another system or person.
-**omnibus** — containing multiple items; a collection.
-**ontology** — bu study içinde being; içinde CS, a formal representation içinde knowledge.
-**opaque** — not transparent; difficult to understand.
-**operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — bu value içinde bu best alternative forgone.
-**optimization** — making something as effective as possible; finding best solutions.
-**oracle** — a source içinde wisdom; içinde Bilişim, a theoretical black box answering questions.
-**orthogonal** — at right angles; independent; unrelated.
-**oscillate** — to swing back ve forth; fluctuate.
-**ostensible** — appearing or claimed to be true, though possibly not so.
-**overfit** — when a model learns training Veri too well, failing to generalize.
-**overhead** — extra resources required beyond bu core task.
-**oxide** — a chemical compound containing oxygen.
+**objective** — kişisel duygulardan etkilenmeyen; hedef.
+**obligatory** — gerekli; zorunlu.
+**obfuscate** — kasıtlı olarak belirsiz veya kafa karıştırıcı hâle getirmek.
+**objective function** — optimizasyonda en üst düzeye çıkarılacak veya en aza indirilecek işlev.
+**observable** — gözlemlenebilir; programlamada olay akışı.
+**obsolescence** — eskimiş hâle gelme süreci.
+**occasional** — bazen olan; düzensiz.
+**occlusion** — tıkanma veya engelleme; görmede nesnelerin gizlenmesi.
+**octet** — sekizli grup; ağlarda 8 bit (bayt).
+**offload** — işi başka bir sisteme veya kişiye aktarmak.
+**omnibus** — birden çok öğe içeren; derleme.
+**ontology** — varlığı inceleyen alan; bilgisayar biliminde bilginin biçimsel temsili.
+**opaque** — saydam olmayan; anlaşılması zor.
+**operationalize** — işleyişe koymak; ölçülebilir göstergeler tanımlamak.
+**opportunity cost** — vazgeçilen en iyi alternatifin değeri.
+**optimization** — bir şeyi mümkün olduğunca etkili hâle getirme; en iyi çözümleri bulma.
+**oracle** — bilgelik kaynağı; bilişimde, soruları yanıtlayan kuramsal kara kutu.
+**orthogonal** — dik açılı; bağımsız; ilgisiz.
+**oscillate** — ileri geri salınmak; dalgalanmak.
+**ostensible** — doğru gibi görünen veya öyle iddia edilen, ancak öyle olmayabilecek.
+**overfit** — bir modelin eğitim verisini genelleme yapamayacak kadar iyi öğrenmesi.
+**overhead** — temel görevin ötesinde gereken ek kaynaklar.
+**oxide** — oksijen içeren kimyasal bileşik.
 
-**pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading bu same backward ve forward.
-**paradigm** — a typical example or pattern; a framework içinde thought.
-**parallel** — side by side; occurring simultaneously.
-**parameterize** — to express içinde terms içinde parameters.
-**parity** — equality; evenness; error-checking bit.
-**parsimony** — extreme frugality; simplicity içinde explanation (Occam's razor).
-**partial** — incomplete; biased toward one side.
-**partition** — to divide into parts; a section.
-**passive** — accepting without resistance; not active.
-**patent** — a government license granting exclusive rights; obvious.
-**pathological** — relating to disease; extremely abnormal.
-**peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed için breaking rules.
-**pending** — awaiting decision; not yet settled.
-**permutation** — an arrangement içinde items içinde a specific order.
-**persona** — bu aspect içinde someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; bu art içinde representing 3D on 2D.
-**pertinent** — relevant to bu matter at hand.
-**pervasive** — spreading widely; omnipresent.
-**pessimistic** — expecting negative outcomes; assuming worst case.
-**phantom** — ghostly; illusory; içinde databases, rows appearing unexpectedly.
-**phenomenology** — bu study içinde structures içinde consciousness.
-**philosophy** — bu study içinde fundamental questions about existence, knowledge, values.
-**phishing** — fraudulent attempts to obtain sensitive information via electronic İletişim.
-**phoneme** — bu smallest unit içinde sound distinguishing meaning.
-**phrase** — a group içinde words forming a unit; an expression.
-**pi** — bu ratio içinde circle circumference to diameter (~3.14159).
-**placeholder** — a temporary stand-içinde; a token to be replaced.
-**plagiarism** — presenting others' work as one's own.
-**platform** — a raised surface; a Bilişim environment; a service foundation.
-**plethora** — an excess; abundance.
-**pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program Mevcut için download.
-**polar** — relating to poles; having opposite extremes.
-**politic** — prudent; tactful; relating to government.
-**polymorphic** — having multiple forms; içinde OOP, methods behaving differently by type.
-**polysemy** — a word having multiple related meanings.
-**posterior** — coming after; later; buttocks.
-**postulate** — assume as fact; a fundamental assumption.
-**pragmatic** — practical; concerned ile actual results.
-**precedent** — an earlier event serving as Rehber.
-**precision** — exactness; içinde ML, true positives divided by predicted positives.
-**predicate** — bu part içinde a sentence stating something about bu subject; a function returning boolean.
-**predictive** — relating to prediction; forecasting Gelecek Olaylar.
-**prefix** — a morpheme added to bu beginning içinde a word.
-**premise** — a statement forming bu basis içinde an argument.
-**prescient** — having knowledge before it happens.
-**presupposition** — an assumption underlying an argument.
-**primordial** — existing from bu beginning; primitive.
-**prior** — earlier; preceding; içinde Bayesian İstatistikler, initial belief.
-**probe** — to investigate; a device için exploration.
-**procedural** — relating to procedures; a programming paradigm.
-**proclivity** — a tendency or inclination.
-**prodigious** — remarkably large; extraordinary.
-**proficient** — skilled; competent.
-**prognosis** — a forecast içinde disease outcome; prediction.
-**prolific** — highly productive.
-**promissory** — containing a promise.
-**propagate** — to spread; reproduce; transmit signals.
-**proponent** — a supporter; advocate.
-**proprietary** — owned exclusively; private.
-**prosody** — rhythm ve intonation içinde speech; poetry structure.
-**protocol** — a set içinde rules için İletişim.
-**prototype** — an early model; original form.
-**provenance** — origin; source; Tarih içinde ownership.
-**proximal** — nearest; close to a Referans point.
-**proxy** — an agent; a substitute; a server forwarding requests.
-**pseudo** — false; fake; pretending to be.
-**psycholinguistics** — study içinde psychological aspects içinde Dil.
-**public** — open to all; relating to people as a whole.
-**pundit** — an expert offering opinions içinde media.
-**purport** — to claim; intended meaning.
-**pyramid** — a structure ile triangular sides; hierarchical organization.
+**pacify** — barış sağlamak; sakinleştirmek veya yatıştırmak.
+**palindrome** — tersten ve düzden aynı okunan kelime veya ifade.
+**paradigm** — tipik örnek veya kalıp; düşünce çerçevesi.
+**parallel** — yan yana; eşzamanlı gerçekleşen.
+**parameterize** — parametreler cinsinden ifade etmek.
+**parity** — eşitlik; çiftlik; hata denetim biti.
+**parsimony** — aşırı tutumluluk; açıklamada yalınlık (Occam'ın usturası).
+**partial** — eksik; bir tarafa yanlı.
+**partition** — parçalara bölmek; bölüm.
+**passive** — direnç göstermeden kabul eden; etkin olmayan.
+**patent** — münhasır haklar veren devlet lisansı; apaçık.
+**pathological** — hastalıkla ilgili; aşırı anormal.
+**peer** — eşit konumdaki kişi; yakından bakmak.
+**penalty** — ceza; kuralları çiğnemeye karşı uygulanan dezavantaj.
+**pending** — karar bekleyen; henüz sonuçlanmamış.
+**permutation** — öğelerin belirli bir sıradaki dizilişi.
+**persona** — birinin karakterinin bir yönü; kurgusal kullanıcı temsili.
+**perspective** — belirli bakış açısı; üç boyutu iki boyutta temsil etme sanatı.
+**pertinent** — eldeki meseleyle ilgili.
+**pervasive** — yaygın biçimde yayılan; her yerde bulunan.
+**pessimistic** — olumsuz sonuçlar bekleyen; en kötü durumu varsayan.
+**phantom** — hayaletimsi; yanıltıcı; veritabanlarında beklenmedik şekilde beliren satırlar.
+**phenomenology** — bilinç yapılarının incelenmesi.
+**philosophy** — varoluş, bilgi ve değerlerle ilgili temel soruların incelenmesi.
+**phishing** — elektronik iletişim yoluyla hassas bilgi elde etmeye yönelik dolandırıcılık girişimleri.
+**phoneme** — anlamı ayırt eden en küçük ses birimi.
+**phrase** — bir birim oluşturan kelime grubu; ifade.
+**pi** — çember çevresinin çapına oranı (~3,14159).
+**placeholder** — geçici yer tutucu; yerine başka şey konacak belirteç.
+**plagiarism** — başkalarının çalışmasını kendi çalışması gibi sunma.
+**platform** — yükseltilmiş yüzey; bilişim ortamı; hizmet temeli.
+**plethora** — fazlalık; bolluk.
+**pluripotent** — birçok hücre tipine dönüşebilen.
+**podcast** — indirilebilir dijital ses programı.
+**polar** — kutuplarla ilgili; karşıt uçlara sahip.
+**politic** — sağduyulu; incelikli; yönetimle ilgili.
+**polymorphic** — birden çok biçime sahip; nesne yönelimli programlamada yöntemlerin türe göre farklı davranması.
+**polysemy** — bir kelimenin birden çok ilişkili anlama sahip olması.
+**posterior** — sonra gelen; daha sonraki; kalça.
+**postulate** — olgu olarak varsaymak; temel varsayım.
+**pragmatic** — pratik; gerçek sonuçlarla ilgilenen.
+**precedent** — yol gösterici olan önceki olay.
+**precision** — kesinlik; makine öğrenmesinde gerçek pozitiflerin tahmin edilen pozitiflere oranı.
+**predicate** — cümlede özne hakkında bir şey bildiren bölüm; boolean döndüren işlev.
+**predictive** — tahminle ilgili; gelecekteki olayları öngören.
+**prefix** — bir kelimenin başına eklenen biçimbirim.
+**premise** — bir argümanın temelini oluşturan ifade.
+**prescient** — bir şey olmadan önce bilgi sahibi olan.
+**presupposition** — bir argümanın altında yatan varsayım.
+**primordial** — başlangıçtan beri var olan; ilkel.
+**prior** — daha önceki; önce gelen; Bayes istatistiğinde başlangıç inancı.
+**probe** — araştırmak; keşif için kullanılan aygıt.
+**procedural** — prosedürlerle ilgili; bir programlama paradigması.
+**proclivity** — eğilim veya yatkınlık.
+**prodigious** — olağanüstü büyük; sıra dışı.
+**proficient** — becerikli; yetkin.
+**prognosis** — hastalık sonucuna ilişkin öngörü; tahmin.
+**prolific** — çok üretken.
+**promissory** — söz içeren.
+**propagate** — yaymak; çoğaltmak; sinyalleri iletmek.
+**proponent** — destekçi; savunucu.
+**proprietary** — münhasır mülkiyete ait; özel.
+**prosody** — konuşmada ritim ve tonlama; şiir yapısı.
+**protocol** — iletişim için kurallar kümesi.
+**prototype** — erken model; özgün biçim.
+**provenance** — köken; kaynak; sahiplik geçmişi.
+**proximal** — en yakın; bir referans noktasına yakın.
+**proxy** — temsilci; yerine geçen; istekleri ileten sunucu.
+**pseudo** — yanlış; sahte; öyleymiş gibi görünen.
+**psycholinguistics** — dilin psikolojik yönlerinin incelenmesi.
+**public** — herkese açık; bir bütün olarak insanlarla ilgili.
+**pundit** — medyada görüş sunan uzman.
+**purport** — iddia etmek; amaçlanan anlam.
+**pyramid** — üçgen yan yüzleri olan yapı; hiyerarşik örgütlenme.
 
-**quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relating to quantum mechanics.
-**quarantine** — isolation to prevent disease spread; Güvenlik isolation.
-**query** — a question; a Veritabanı request.
-**quintessential** — representing bu perfect example.
-**quotient** — bu result içinde division; a ratio.
+**quantify** — sayı olarak ifade etmek; ölçmek.
+**quantum** — ayrık miktar; kuantum mekaniğiyle ilgili.
+**quarantine** — hastalık yayılmasını önlemek için izolasyon; güvenlik izolasyonu.
+**query** — soru; veritabanı isteği.
+**quintessential** — kusursuz örneği temsil eden.
+**quotient** — bölme işleminin sonucu; oran.
 
-**radical** — thoroughgoing; extreme; relating to roots.
-**random** — lacking pattern; unpredictable.
-**range** — bu set içinde output values; extent; distance.
-**raster** — a grid içinde pixels; bitmap image.
-**ratify** — to formally approve; confirm.
-**rational** — based on reason; expressible as a fraction.
-**recursion** — a function calling itself; self-Referans.
-**redundancy** — repetition; backup; unnecessary duplication.
-**refinement** — improvement; making more precise.
-**reflection** — thinking deeply; içinde programming, examining structure at runtime.
-**regression** — return to earlier state; içinde İstatistikler, modeling relationships.
-**regularization** — preventing overfitting by adding penalties.
-**relational** — concerning relationships; Veritabanı model using tables.
-**reliance** — dependence; trust.
-**remediation** — correction; fixing problems.
-**rendezvous** — a meeting; to meet at an appointed time.
-**replication** — copying; reproducing experiments.
-**repository** — a storage location; a code archive.
-**representational** — depicting something; standing için.
-**resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solving a problem.
-**resonance** — reinforcement by vibration; emotional connection.
-**restitution** — restoration; compensation için loss.
-**retrospective** — looking back; review içinde past Olaylar.
-**reverberate** — echo; resonate.
-**revision** — review ve alteration; new version.
-**rhizome** — underground stem; non-hierarchical structure (philosophy).
-**robustness** — strength; resilience to errors.
-**root cause** — bu fundamental reason için a problem.
-**rotation** — turning around an axis.
-**rudimentary** — basic; undeveloped.
-**runtime** — bu time when a program executes; execution environment.
+**radical** — köklü; aşırı; köklerle ilgili.
+**random** — desenden yoksun; öngörülemez.
+**range** — çıktı değerleri kümesi; kapsam; mesafe.
+**raster** — piksel ızgarası; bitmap görüntü.
+**ratify** — resmen onaylamak; doğrulamak.
+**rational** — akla dayalı; kesir olarak ifade edilebilir.
+**recursion** — bir işlevin kendisini çağırması; kendine gönderme.
+**redundancy** — yineleme; yedekleme; gereksiz çoğaltma.
+**refinement** — iyileştirme; daha kesin hâle getirme.
+**reflection** — derin düşünme; programlamada çalışma zamanında yapıyı inceleme.
+**regression** — önceki duruma dönme; istatistikte ilişkileri modelleme.
+**regularization** — cezalar ekleyerek aşırı uyumu önleme.
+**relational** — ilişkilerle ilgili; tablolar kullanan veritabanı modeli.
+**reliance** — bağımlılık; güven.
+**remediation** — düzeltme; sorunları giderme.
+**rendezvous** — buluşma; belirlenen zamanda buluşmak.
+**replication** — kopyalama; deneyleri yeniden üretme.
+**repository** — depolama konumu; kod arşivi.
+**representational** — bir şeyi betimleyen; temsil eden.
+**resilience** — toparlanma yeteneği; eski hâline dönebilme.
+**resolution** — ayrıntı düzeyi; karar; bir problemi çözme.
+**resonance** — titreşimle güçlenme; duygusal bağ.
+**restitution** — eski hâle getirme; kayıp için tazminat.
+**retrospective** — geriye dönük; geçmiş olayların gözden geçirilmesi.
+**reverberate** — yankılanmak; rezonans yapmak.
+**revision** — gözden geçirme ve değiştirme; yeni sürüm.
+**rhizome** — yeraltı gövdesi; hiyerarşik olmayan yapı (felsefe).
+**robustness** — güç; hatalara karşı dayanıklılık.
+**root cause** — bir problemin temel nedeni.
+**rotation** — bir eksen etrafında dönme.
+**rudimentary** — temel; gelişmemiş.
+**runtime** — bir programın çalıştığı zaman; yürütme ortamı.
 
-**sacrifice** — giving up something valued; offering.
-**salient** — prominent; noticeable.
-**sanction** — approval; penalty.
-**sandbox** — a Güvenli Test Etme environment; a play area.
-**saturation** — full capacity; intense color.
-**scalar** — a single number; magnitude without direction.
-**schema** — a structured framework; Veritabanı design.
-**schism** — a split or division.
-**scope** — extent; range içinde effect; variable visibility.
-**scrutable** — understandable; comprehensible.
-**semantic** — relating to meaning.
-**semaphore** — a signaling mechanism; flag.
-**senescence** — aging; deterioration ile age.
-**sentient** — capable içinde feeling; conscious.
-**sequential** — içinde order; one after another.
-**serendipity** — fortunate accidental discovery.
-**serialization** — converting objects to storable/transmittable format.
-**set** — a collection içinde distinct elements.
-**shader** — a program determining pixel colors içinde graphics.
-**shard** — a fragment; Veritabanı partition.
-**sigmoid** — S-shaped curve; activation function.
-**similarity** — resemblance; degree içinde likeness.
-**simulation** — imitation içinde real processes.
-**singular** — unique; extraordinary; grammatical form.
-**skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; bu / character.
-**snapshot** — a momentary view; backup at a point içinde time.
-**socket** — an endpoint için Ağ İletişim.
-**softmax** — a function converting values to probabilities.
-**sovereign** — supreme ruler; independent nation.
-**sparse** — thinly scattered; mostly empty.
-**specification** — a detailed description içinde requirements.
-**spectrum** — a range; band içinde colors.
-**spherical** — shaped like a sphere.
-**spurious** — false; fake; not genuine.
-**stability** — firmness; resistance to change.
-**stack** — a Veri structure (LIFO); layers; pile.
-**stakeholder** — anyone affected by decisions.
-**stall** — to stop progressing; delay.
-**standardize** — to make conform to standards.
-**state** — condition; içinde Bilişim, stored information; political entity.
-**static** — unchanging; stationary; compile-time.
-**statistical** — relating to Veri analysis ve probability.
-**status** — position; standing; state.
-**stochastic** — randomly determined; probabilistic.
-**stratify** — to arrange içinde layers or classes.
-**stream** — a continuous flow; sequence içinde Veri.
-**stress** — pressure; emphasis; strain.
-**stride** — a long step; step size içinde iteration.
-**string** — a sequence içinde characters; cord.
-**structural** — relating to structure or organization.
-**subroutine** — a procedure within a program; function.
-**subset** — a set contained within another.
-**substantiate** — to provide evidence; prove.
-**subtle** — delicate; not obvious.
-**suffix** — a morpheme added to word ends.
-**summation** — bu addition içinde a sequence.
-**superposition** — placement on top; quantum state combination.
-**supervised** — ile oversight; ML ile labeled Veri.
-**supplant** — to replace; supersede.
-**surrogate** — a substitute; proxy.
-**susceptible** — vulnerable; likely to be affected.
-**Sürdürülebilirlik** — ability to continue long-term.
-**suture** — to stitch; surgical stitching.
-**syllable** — a unit içinde pronunciation.
-**symbolic** — representing something else; using symbols.
-**symmetry** — balanced proportions; invariance under transformation.
-**synapse** — junction between neurons.
-**synchrony** — simultaneous occurrence.
-**syndrome** — a set içinde symptoms; pattern içinde characteristics.
-**synonym** — a word similar içinde meaning.
-**synopsis** — a brief summary.
-**Sözdizimi** — grammatical structure; rules için valid expressions.
-**synthesis** — combination forming a whole.
-**systemic** — affecting bu entire system.
+**sacrifice** — değer verilen bir şeyden vazgeçme; adak.
+**salient** — belirgin; dikkat çekici.
+**sanction** — onay; ceza.
+**sandbox** — güvenli test ortamı; oyun alanı.
+**saturation** — tam kapasite; yoğun renk.
+**scalar** — tek sayı; yönü olmayan büyüklük.
+**schema** — yapılandırılmış çerçeve; veritabanı tasarımı.
+**schism** — ayrılık veya bölünme.
+**scope** — kapsam; etki aralığı; değişken görünürlüğü.
+**scrutable** — anlaşılabilir; kavranabilir.
+**semantic** — anlamla ilgili.
+**semaphore** — sinyal verme mekanizması; bayrak.
+**senescence** — yaşlanma; yaşla birlikte bozulma.
+**sentient** — hissedebilen; bilinçli.
+**sequential** — sırayla; art arda.
+**serendipity** — şans eseri yapılan değerli keşif.
+**serialization** — nesneleri depolanabilir veya iletilebilir biçime dönüştürme.
+**set** — farklı öğelerden oluşan koleksiyon.
+**shader** — grafiklerde piksel renklerini belirleyen program.
+**shard** — parça; veritabanı bölümü.
+**sigmoid** — S biçimli eğri; etkinleştirme işlevi.
+**similarity** — benzerlik; benzer olma derecesi.
+**simulation** — gerçek süreçlerin taklidi.
+**singular** — benzersiz; olağanüstü; dilbilgisel biçim.
+**skeuomorphic** — fiziksel nesneleri taklit eden tasarım.
+**slash** — kesmek; / karakteri.
+**snapshot** — anlık görünüm; belirli bir zamandaki yedek.
+**socket** — ağ iletişimi için uç nokta.
+**softmax** — değerleri olasılıklara dönüştüren işlev.
+**sovereign** — en üstün hükümdar; bağımsız ulus.
+**sparse** — seyrek dağılmış; çoğunlukla boş.
+**specification** — gereksinimlerin ayrıntılı açıklaması.
+**spectrum** — aralık; renk bandı.
+**spherical** — küre biçiminde.
+**spurious** — yanlış; sahte; gerçek olmayan.
+**stability** — sağlamlık; değişime direnç.
+**stack** — veri yapısı (son giren, ilk çıkar); katmanlar; yığın.
+**stakeholder** — kararlardan etkilenen herkes.
+**stall** — ilerlemeyi durdurmak; geciktirmek.
+**standardize** — standartlara uygun hâle getirmek.
+**state** — durum; bilişimde depolanmış bilgi; siyasi varlık.
+**static** — değişmeyen; durağan; derleme zamanı.
+**statistical** — veri analizi ve olasılıkla ilgili.
+**status** — konum; saygınlık; durum.
+**stochastic** — rastlantısal olarak belirlenen; olasılıksal.
+**stratify** — katmanlara veya sınıflara ayırmak.
+**stream** — sürekli akış; veri dizisi.
+**stress** — baskı; vurgu; zorlanma.
+**stride** — uzun adım; yinelemede adım boyutu.
+**string** — karakter dizisi; ip.
+**structural** — yapı veya örgütlenmeyle ilgili.
+**subroutine** — bir program içindeki prosedür; işlev.
+**subset** — başka bir kümenin içinde yer alan küme.
+**substantiate** — kanıt sunmak; ispatlamak.
+**subtle** — ince; açıkça belli olmayan.
+**suffix** — kelime sonlarına eklenen biçimbirim.
+**summation** — bir dizinin toplanması.
+**superposition** — üst üste yerleştirme; kuantum durum birleşimi.
+**supervised** — gözetimli; etiketli verilerle makine öğrenmesi.
+**supplant** — yerine geçmek; ikame etmek.
+**surrogate** — yerine geçen; vekil.
+**susceptible** — savunmasız; etkilenmeye yatkın.
+**sustainability** — uzun vadede sürdürülebilme yeteneği.
+**suture** — dikmek; cerrahi dikiş.
+**syllable** — telaffuz birimi.
+**symbolic** — başka bir şeyi temsil eden; semboller kullanan.
+**symmetry** — dengeli oranlar; dönüşüm altında değişmezlik.
+**synapse** — nöronlar arasındaki bağlantı noktası.
+**synchrony** — eşzamanlı gerçekleşme.
+**syndrome** — belirti kümesi; özellikler örüntüsü.
+**synonym** — anlamca benzer kelime.
+**synopsis** — kısa özet.
+**syntax** — dilbilgisel yapı; geçerli ifadeler için kurallar.
+**synthesis** — bir bütün oluşturan birleşim.
+**systemic** — tüm sistemi etkileyen.
 
-**tacit** — understood without being stated.
-**tactical** — relating to strategy; short-term planning.
-**tangent** — touching at one point; diverging from topic.
-**tautology** — saying bu same thing twice; logically always true.
-**taxonomy** — classification scheme.
-**teleology** — explanation by purpose or design.
-**tempered** — moderated; hardened (metal).
-**temporal** — relating to time; worldly.
-**tendency** — inclination; trend.
-**tensor** — a multi-dimensional array; içinde physics, generalized vector.
-**terminology** — specialized vocabulary.
-**ternary** — consisting içinde three parts; base-3.
-**terrestrial** — relating to Earth; land-based.
-**testament** — evidence; will; covenant.
-**theorem** — a provable mathematical statement.
-**theory** — a well-substantiated explanation; conjecture.
-**thermal** — relating to heat.
-**threshold** — a limit triggering action.
-**throughput** — amount processed içinde given time.
-**timbre** — tone quality; sound color.
-**topology** — study içinde spatial properties; Ağ layout.
-**torque** — rotational force.
-**trace** — to follow; record; sum içinde diagonal elements.
-**trademark** — a registered brand identifier.
-**trajectory** — path içinde a projectile; course içinde Geliştirme.
-**transcend** — to go beyond; surpass.
-**transcript** — written record; RNA copy içinde DNA.
-**transformation** — thorough change; mathematical mapping.
-**transient** — temporary; passing.
-**transpose** — to reverse position; swap rows ve columns.
-**triage** — prioritizing by urgency.
-**trigonometry** — study içinde triangle relationships.
-**trivial** — simple; unimportant; mathematically obvious.
-**trope** — a common theme or device.
-**troubleshoot** — to diagnose ve fix problems.
-**truncate** — to shorten by cutting off.
-**trust** — confidence; reliance; Yasal arrangement.
-**turbulence** — chaotic fluid motion; instability.
-**tutorial** — instructional lesson.
-**tuple** — an ordered list içinde elements.
-**turing-Tam** — capable içinde universal computation.
-**typology** — study içinde types or classifications.
+**tacit** — ifade edilmeden anlaşılan.
+**tactical** — stratejiyle ilgili; kısa vadeli planlama.
+**tangent** — bir noktada teğet; konudan sapan.
+**tautology** — aynı şeyi iki kez söyleme; mantıksal olarak her zaman doğru.
+**taxonomy** — sınıflandırma şeması.
+**teleology** — amaç veya tasarımla açıklama.
+**tempered** — ölçülü hâle getirilmiş; sertleştirilmiş (metal).
+**temporal** — zamanla ilgili; dünyevi.
+**tendency** — eğilim; gidişat.
+**tensor** — çok boyutlu dizi; fizikte genelleştirilmiş vektör.
+**terminology** — uzmanlık söz varlığı.
+**ternary** — üç parçadan oluşan; 3 tabanlı.
+**terrestrial** — Dünya ile ilgili; karasal.
+**testament** — kanıt; vasiyet; ahit.
+**theorem** — kanıtlanabilir matematiksel ifade.
+**theory** — güçlü kanıtlarla desteklenmiş açıklama; varsayım.
+**thermal** — ısıyla ilgili.
+**threshold** — eylemi tetikleyen sınır.
+**throughput** — belirli sürede işlenen miktar.
+**timbre** — ses niteliği; ses rengi.
+**topology** — uzamsal özelliklerin incelenmesi; ağ yerleşimi.
+**torque** — döndürme kuvveti.
+**trace** — izlemek; kayıt; köşegen elemanların toplamı.
+**trademark** — tescilli marka tanımlayıcısı.
+**trajectory** — bir cismin izlediği yol; gelişim rotası.
+**transcend** — ötesine geçmek; aşmak.
+**transcript** — yazılı kayıt; DNA'nın RNA kopyası.
+**transformation** — köklü değişim; matematiksel eşleme.
+**transient** — geçici; gelip geçici.
+**transpose** — konumu tersine çevirmek; satır ve sütunları değiştirmek.
+**triage** — aciliyete göre önceliklendirme.
+**trigonometry** — üçgen ilişkilerinin incelenmesi.
+**trivial** — basit; önemsiz; matematiksel olarak apaçık.
+**trope** — yaygın tema veya anlatım aracı.
+**troubleshoot** — sorunları teşhis etmek ve düzeltmek.
+**truncate** — keserek kısaltmak.
+**trust** — güven; dayanma; hukuki düzenleme.
+**turbulence** — kaotik akışkan hareketi; istikrarsızlık.
+**tutorial** — öğretici ders.
+**tuple** — öğelerden oluşan sıralı liste.
+**turing-complete** — evrensel hesaplama yapabilen.
+**typology** — türlerin veya sınıflandırmaların incelenmesi.
 
-**ubiquitous** — present everywhere.
-**ulterior** — hidden; beyond what is evident.
-**uncanny** — strangely familiar; eerie.
-**unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; bu _ character.
-**underwrite** — to guarantee financially; Destek.
-**uniform** — consistent; a distinctive outfit.
-**unilateral** — one-sided; by one party.
-**unique** — one içinde a kind.
-**universal** — applicable everywhere; general.
-**unix** — a family içinde operating Sistemler.
-**unsupervised** — without labels; ML finding patterns alone.
-**utilitarian** — practical; maximizing overall happiness.
-**utterance** — something spoken; vocal expression.
+**ubiquitous** — her yerde bulunan.
+**ulterior** — gizli; görünenin ötesinde.
+**uncanny** — garip biçimde tanıdık; ürpertici.
+**unconscious** — farkında olmayan; bilincin altında.
+**underscore** — vurgulamak; _ karakteri.
+**underwrite** — finansal olarak garanti etmek; desteklemek.
+**uniform** — tutarlı; ayırt edici kıyafet.
+**unilateral** — tek taraflı; tek bir tarafça yapılan.
+**unique** — türünün tek örneği.
+**universal** — her yerde geçerli; genel.
+**unix** — bir işletim sistemleri ailesi.
+**unsupervised** — etiketsiz; makine öğrenmesinde örüntüleri tek başına bulan.
+**utilitarian** — pratik; genel mutluluğu en üst düzeye çıkarmayı amaçlayan.
+**utterance** — söylenen şey; sesli ifade.
 
-**vacuous** — empty; lacking content.
-**vagrant** — wandering; homeless.
-**valid** — logically sound; legally acceptable.
-**valence** — combining power; emotional charge.
-**vanilla** — plain; standard; unmodified.
-**variable** — changeable; a named storage location.
-**variance** — variability; statistical dispersion.
-**vector** — a quantity ile direction ve magnitude; an array.
-**vegetative** — relating to plants; automatic bodily functions.
-**velocity** — speed ile direction.
-**vendor** — a seller; supplier.
-**verbose** — using more words than needed.
-**verification** — confirming truth or accuracy.
-**vernacular** — everyday Dil; local dialect.
-**versatile** — adaptable; multi-purpose.
-**vertex** — a corner point; highest point.
-**vertical** — upright; industry-specific.
-**vested** — secured; guaranteed.
-**viable** — capable içinde working; feasible.
-**vicarious** — experienced through another.
-**virtual** — simulated; nearly; içinde Bilişim, emulated.
-**viscosity** — resistance to flow; thickness.
-**visual** — relating to sight.
-**volatile** — unstable; evaporating easily; memory losing Veri without power.
-**volume** — amount; loudness; 3D space.
-**vulnerability** — weakness; susceptibility to attack.
+**vacuous** — boş; içerikten yoksun.
+**vagrant** — gezgin; evsiz.
+**valid** — mantıksal olarak sağlam; hukuken kabul edilebilir.
+**valence** — birleşme gücü; duygusal yük.
+**vanilla** — sade; standart; değiştirilmemiş.
+**variable** — değişebilir; adlandırılmış depolama konumu.
+**variance** — değişkenlik; istatistiksel yayılım.
+**vector** — yönü ve büyüklüğü olan nicelik; dizi.
+**vegetative** — bitkilerle ilgili; otomatik bedensel işlevler.
+**velocity** — yönlü hız.
+**vendor** — satıcı; tedarikçi.
+**verbose** — gerekenden fazla kelime kullanan.
+**verification** — doğruluğu veya gerçekliği onaylama.
+**vernacular** — gündelik dil; yerel lehçe.
+**versatile** — uyarlanabilir; çok amaçlı.
+**vertex** — köşe noktası; en yüksek nokta.
+**vertical** — dik; sektöre özgü.
+**vested** — güvence altına alınmış; garanti edilmiş.
+**viable** — çalışabilir; uygulanabilir.
+**vicarious** — başkası aracılığıyla deneyimlenen.
+**virtual** — benzetimli; neredeyse; bilişimde öykünülmüş.
+**viscosity** — akışa direnç; koyuluk.
+**visual** — görmeyle ilgili.
+**volatile** — kararsız; kolayca buharlaşan; güç kesilince veriyi kaybeden bellek.
+**volume** — miktar; ses yüksekliği; üç boyutlu uzay.
+**vulnerability** — zayıflık; saldırıya açıklık.
 
-**waive** — to give up; refrain from enforcing.
-**wanderlust** — strong desire to travel.
-**want** — to desire; lack.
-**warfare** — armed conflict; competitive struggle.
-**warrant** — authorization; justification.
-**warranty** — a guarantee; assurance.
-**waveform** — shape içinde a wave.
-**weakness** — lack içinde strength; vulnerability.
-**Web** — a Ağ; bu World Wide Web.
-**weight** — importance; heaviness; parameter value içinde ML.
-**well-formed** — correctly structured.
-**what-if** — hypothetical scenario analysis.
-**whitelist** — approved list; allowlist.
-**wildcard** — a placeholder matching any character; unpredictable element.
-**window** — an opening; a viewing area; time interval.
-**wireframe** — a skeletal visual Rehber.
-**wisdom** — deep understanding; good judgment.
-**workaround** — a temporary solution bypassing a problem.
-**worldview** — a comprehensive perspective on life.
-**wrapper** — something enclosing; code adapting interfaces.
-**write-up** — a report; documentation.
+**waive** — vazgeçmek; uygulamaktan kaçınmak.
+**wanderlust** — seyahat etmeye yönelik güçlü arzu.
+**want** — arzulamak; yoksun olmak.
+**warfare** — silahlı çatışma; rekabetçi mücadele.
+**warrant** — yetki; gerekçe.
+**warranty** — garanti; güvence.
+**waveform** — bir dalganın şekli.
+**weakness** — güç eksikliği; savunmasızlık.
+**web** — ağ; Dünya Çapında Ağ.
+**weight** — önem; ağırlık; makine öğrenmesinde parametre değeri.
+**well-formed** — doğru yapılandırılmış.
+**what-if** — varsayımsal senaryo analizi.
+**whitelist** — onaylı liste; izin verilenler listesi.
+**wildcard** — herhangi bir karakterle eşleşen yer tutucu; öngörülemez öğe.
+**window** — açıklık; görüntüleme alanı; zaman aralığı.
+**wireframe** — iskelet niteliğinde görsel kılavuz.
+**wisdom** — derin anlayış; sağduyulu yargı.
+**workaround** — bir sorunu dolanarak aşan geçici çözüm.
+**worldview** — yaşama dair kapsamlı bakış açısı.
+**wrapper** — saran şey; arayüzleri uyarlayan kod.
+**write-up** — rapor; belgelendirme.
 
-**x-axis** — horizontal axis içinde coordinates.
-**xenon** — a noble gas element.
-**xerox** — to photocopy; brand name.
-**xml** — Extensible Markup Dil.
-**xpath** — a query Dil için XML.
-**xylophone** — a percussion instrument.
+**x-axis** — koordinatlarda yatay eksen.
+**xenon** — soy gaz elementi.
+**xerox** — fotokopi çekmek; marka adı.
+**xml** — Genişletilebilir İşaretleme Dili.
+**xpath** — XML için sorgu dili.
+**xylophone** — vurmalı çalgı.
 
-**yacht** — a recreational boat.
-**yaml** — a human-readable Veri serialization format.
-**yardstick** — a measuring stick; standard içinde comparison.
-**yearning** — a longing desire.
-**yield** — to produce; give way; return value.
+**yacht** — gezi teknesi.
+**yaml** — insan tarafından okunabilir veri serileştirme biçimi.
+**yardstick** — ölçü çubuğu; karşılaştırma standardı.
+**yearning** — özlem dolu arzu.
+**yield** — üretmek; yol vermek; dönüş değeri.
 
-**zenith** — bu highest point; peak.
-**zero** — nothing; bu number 0.
-**zip** — to fasten; compress files; move quickly.
-**zone** — an area ile specific characteristics.
-**zoom** — to magnify; change focal length.
+**zenith** — en yüksek nokta; zirve.
+**zero** — hiçlik; 0 sayısı.
+**zip** — fermuarı kapatmak; dosyaları sıkıştırmak; hızlı hareket etmek.
+**zone** — belirli özelliklere sahip alan.
+**zoom** — büyütmek; odak uzaklığını değiştirmek.

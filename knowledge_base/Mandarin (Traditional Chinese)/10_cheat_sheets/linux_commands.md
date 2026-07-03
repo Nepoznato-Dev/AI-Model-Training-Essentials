@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: linux_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Linux 命令快速參考
 
-# Linux 命令 快速參考
-
-Essential Linux/Unix 命令 為 system navigation 和 administration.
+系統導航和管理的基本 Linux/Unix 命令。
 
 ---
 
-## File & Directory Operations
+## 檔案與目錄操作
 
-### Navigation
+### 導航
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -25,7 +18,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-### File Operations
+### 檔案操作
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +33,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-### Viewing Files
+### 檢視檔案
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,29 +46,29 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-## File Permissions
+## 檔案權限
 
 ```bash
-chmod 755 file          # Set permissions (rwxr-xr-x)
-chmod +x script.sh      # Make executable
-chmod -R 755 dir        # Recursive permission change
-chown user:group file   # Change owner and group
-chown user file         # Change owner only
-chgrp group file        # Change group only
-umask                   # Show default permission mask
+chmod 755 file          # 設定權限 (rwxr-xr-x)
+chmod +x script.sh      # 設為可執行
+chmod -R 755 dir        # 遞迴變更權限
+chown user:group file   # 變更擁有者和群組
+chown user file         # 只變更擁有者
+chgrp group file        # 只變更群組
+umask                   # 顯示預設權限遮罩
 ```
 
-### Permission Numbers
-- `7` = rwx (read + write + execute)
-- `6` = rw- (read + write)
-- `5` = r-x (read + execute)
-- `4` = r-- (read only)
+### 權限數字
+- `7` = rwx（讀取 + 寫入 + 執行）
+- `6` = rw-（讀取 + 寫入）
+- `5` = r-x（讀取 + 執行）
+- `4` = r--（只讀）
 
 ---
 
-## Text Processing
+## 文字處理
 
-### Search & Replace
+### 搜尋與取代
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +79,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-### Find Files
+### 尋找檔案
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +91,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-### Text Manipulation
+### 文字操作
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +109,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-## Process 管理
+## 程序管理
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +131,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-## System Information
+## 系統資訊
 
 ```bash
 uname -a                # System information
@@ -159,7 +152,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-## 網路 命令
+## 網路命令
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -181,7 +174,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-## Archive & Compression
+## 壓縮與封存
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,7 +191,7 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-## Package 管理
+## 套件管理
 
 ### Debian/Ubuntu (apt)
 ```bash
@@ -231,7 +224,7 @@ brew list                               # List installed packages
 
 ---
 
-## User 管理
+## 使用者管理
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +239,7 @@ groups username                         # Show user groups
 
 ---
 
-## Disk 管理
+## 磁碟管理
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +253,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-## Shell Variables & Environment
+## Shell 變數與環境
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +271,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Input/Output Redirection
+## 輸入/輸出重定向
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +285,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-## Useful One-Liners
+## 實用單行命令
 
 ```bash
 # Count files in directory
@@ -322,40 +315,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-## Keyboard Shortcuts
+## 鍵盤快捷鍵
 
-| Shortcut | Action |
+| 快捷鍵 | 動作 |
 |----------|--------|
-| `Tab` | Auto-完整 |
-| `Ctrl+C` | Kill current command |
-| `Ctrl+Z` | Suspend command |
-| `Ctrl+D` | Exit shell/EOF |
-| `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to line start |
-| `Ctrl+E` | Go to line end |
-| `Ctrl+U` | Delete to line start |
-| `Ctrl+K` | Delete to line end |
-| `Ctrl+R` | Search 歷史 |
-| `Ctrl+W` | Delete word before cursor |
+| `Tab` | 自動完成 |
+| `Ctrl+C` | 終止目前命令 |
+| `Ctrl+Z` | 暫停命令 |
+| `Ctrl+D` | 退出 shell/EOF |
+| `Ctrl+L` | 清除螢幕 |
+| `Ctrl+A` | 跳到行首 |
+| `Ctrl+E` | 跳到行尾 |
+| `Ctrl+U` | 刪除到行首 |
+| `Ctrl+K` | 刪除到行尾 |
+| `Ctrl+R` | 搜尋歷史 |
+| `Ctrl+W` | 刪除游標前的單字 |
 
 ---
 
 ## 最佳實踐
 
-✅ **Do:**
-- Use `sudo` sparingly 和 carefully
-- Test destructive 命令 without execution flags first
-- Keep backups before major changes
-- Use meaningful filenames (no spaces)
-- Learn to use `man` pages (`man command`)
+✅ **應該：**
+- 謹慎使用 `sudo`
+- 先測試破壞性命令而不執行
+- 重大變更前保留備份
+- 使用有意義的檔名（不含空格）
+- 學習使用 `man` 手冊（`man command`）
 
-❌ **Don't:**
-- Run `rm -rf /` or similar dangerous 命令
-- Use `chmod 777` on sensitive files
-- Ignore warning messages
-- Edit system files without backups
-- Run unknown scripts as root
+❌ **不應該：**
+- 執行 `rm -rf /` 或類似的危險命令
+- 在敏感檔案上使用 `chmod 777`
+- 忽略警告訊息
+- 不備份就編輯系統檔案
+- 以 root 身分執行未知腳本
 
 ---
 
-*最後更新: June 2025 | Linux/Unix compatible*
+*最後更新：2025 年 6 月 | Linux/Unix 相容*

@@ -1,65 +1,65 @@
 # Genel Kültür
 
-## bu Solar System
+## Güneş Sistemi
 
-bu solar system consists içinde bu Sun ve eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, ve Neptune. Earth is bu third planet from bu Sun, located approximately 150 million kilometers away. bu Sun is a star at bu center içinde bu solar system that provides light ve energy to all planets through nuclear fusion. Jupiter is bu largest planet, ile a mass greater than all other planets combined. Saturn is known için its prominent ring system made içinde ice ve rock. Mars is called bu Red Planet because içinde iron oxide on its surface. Neptune is bu farthest planet from bu Sun.
+Güneş sistemi, Güneş ve sekiz gezegenden oluşur: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs ve Neptün. Dünya, Güneş'ten yaklaşık 150 milyon kilometre uzaklıkta bulunan üçüncü gezegendir. Güneş, güneş sisteminin merkezinde yer alan ve nükleer füzyon yoluyla tüm gezegenlere ışık ve enerji sağlayan bir yıldızdır. Jüpiter en büyük gezegendir; kütlesi diğer tüm gezegenlerin toplamından daha büyüktür. Satürn, buz ve kayadan oluşan belirgin halka sistemiyle bilinir. Mars, yüzeyindeki demir oksit nedeniyle Kızıl Gezegen olarak adlandırılır. Neptün, Güneş'e en uzak gezegendir.
 
-## Earth
+## Dünya
 
-Earth is bu fifth-largest planet içinde bu solar system ve bu only known planet to harbor life. Its surface is approximately 71% water ve 29% land. bu atmosphere is composed içinde approximately 78% nitrogen, 21% oxygen, ve 1% other gases including carbon dioxide ve argon. Earth has one natural satellite called bu Moon. bu Moon orbits Earth roughly every 27.3 days ve is approximately 384,400 kilometers away. Earth has a diameter içinde approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Dünya, güneş sistemindeki beşinci en büyük gezegen ve yaşam barındırdığı bilinen tek gezegendir. Yüzeyinin yaklaşık %71'i su, %29'u karadır. Atmosferi yaklaşık %78 azot, %21 oksijen ve karbondioksit ile argon dâhil yaklaşık %1 diğer gazlardan oluşur. Dünya'nın Ay adlı bir doğal uydusu vardır. Ay, Dünya'nın çevresinde yaklaşık her 27,3 günde bir dolanır ve yaklaşık 384.400 kilometre uzaklıktadır. Dünya'nın çapı yaklaşık 12.742 kilometredir. Dünya yaklaşık 4,5 milyar yaşındadır.
 
-## Weather ve Climate
+## Hava Durumu ve İklim
 
-Weather refers to short-term atmospheric conditions içinde a specific location, including temperature, humidity, precipitation, ve wind. Climate refers to long-term weather patterns içinde a region over many years. bu greenhouse effect occurs when gases içinde Earth's atmosphere trap heat from bu Sun, warming bu planet. Carbon dioxide, water vapor, ve methane are bu main greenhouse gases. Climate change refers to long-term shifts içinde global temperatures ve weather patterns, largely driven by human activity since bu Industrial Revolution.
+Hava durumu, belirli bir yerdeki sıcaklık, nem, yağış ve rüzgâr gibi kısa vadeli atmosfer koşullarını ifade eder. İklim ise bir bölgede uzun yıllar boyunca gözlenen uzun vadeli hava örüntüleridir. Sera etkisi, Dünya atmosferindeki gazların Güneş'ten gelen ısıyı tutarak gezegeni ısıtmasıyla oluşur. Karbondioksit, su buharı ve metan başlıca sera gazlarıdır. İklim değişikliği, büyük ölçüde Sanayi Devrimi'nden bu yana insan faaliyetleriyle yönlendirilen, küresel sıcaklıklarda ve hava örüntülerinde uzun vadeli değişimleri ifade eder.
 
-## Oceans
+## Okyanuslar
 
-Earth has five oceans: bu Pacific, Atlantic, Indian, Southern, ve Arctic. bu Pacific Ocean is bu largest, covering more than 165 million square kilometers, ve bu deepest, ile bu Mariana Trench reaching approximately 11 kilometers deep. bu oceans cover about 361 million square kilometers içinde total. bu average depth içinde bu ocean is approximately 3,688 meters. bu oceans regulate Earth's temperature ve are home to bu majority içinde life on bu planet.
+Dünya'da beş okyanus vardır: Pasifik, Atlantik, Hint, Güney ve Arktik. Pasifik Okyanusu, 165 milyon kilometrekareden fazla alan kaplayarak en büyük okyanustur ve Mariana Çukuru'nun yaklaşık 11 kilometre derinliğe ulaşmasıyla en derin okyanustur. Okyanuslar toplamda yaklaşık 361 milyon kilometrekare alan kaplar. Okyanusların ortalama derinliği yaklaşık 3.688 metredir. Okyanuslar Dünya'nın sıcaklığını düzenler ve gezegendeki yaşamın büyük bölümüne ev sahipliği yapar.
 
-## Continents
+## Kıtalar
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, ve South America. Asia is bu largest continent by area ve population. Africa has bu most countries içinde any continent. Antarctica is bu coldest, driest, ve windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe ve Asia are sometimes considered a single landmass called Eurasia.
+Dünya'da yedi kıta vardır: Afrika, Antarktika, Asya, Avustralya (Okyanusya), Avrupa, Kuzey Amerika ve Güney Amerika. Asya, yüzölçümü ve nüfus bakımından en büyük kıtadır. En çok ülkeye sahip kıta Afrika'dır. Antarktika; ortalama 2,1 kilometre kalınlığında bir buz tabakasıyla kaplı, en soğuk, en kurak ve en rüzgârlı kıtadır. Avrupa ve Asya bazen Avrasya adı verilen tek bir kara kütlesi olarak kabul edilir.
 
-## Time ve Calendars
+## Zaman ve Takvimler
 
-A year is bu time it takes Earth to orbit bu Sun, approximately 365.25 days. A leap year has 366 days ve occurs every four years to account için bu extra quarter-day. A day is one full rotation içinde Earth on its axis, approximately 24 hours. bu Gregorian calendar is bu most widely used calendar içinde bu world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+Bir yıl, Dünya'nın Güneş etrafındaki yörüngesini tamamlaması için geçen süredir ve yaklaşık 365,25 gündür. Artık yıl 366 gündür ve fazladan çeyrek günü hesaba katmak için dört yılda bir gerçekleşir. Bir gün, Dünya'nın kendi ekseni etrafındaki bir tam dönüşüdür ve yaklaşık 24 saattir. Gregoryen takvim, günümüzde dünyada en yaygın kullanılan takvimdir. Bir hafta yedi gündür. Bir saat 60 dakikadır. Bir dakika 60 saniyedir.
 
-## Light ve Speed
+## Işık ve Hız
 
-bu speed içinde light içinde a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from bu Sun takes about 8 minutes to reach Earth. A light-year is bu distance light travels içinde one year, approximately 9.46 trillion kilometers. Nothing ile mass can travel as fast as bu speed içinde light according to Einstein's theory içinde special relativity.
+Işığın boşluktaki hızı saniyede yaklaşık 299.792 kilometredir; bu yaklaşık saniyede 186.000 mile karşılık gelir. Güneş'ten gelen ışığın Dünya'ya ulaşması yaklaşık 8 dakika sürer. Işık yılı, ışığın bir yılda katettiği mesafedir ve yaklaşık 9,46 trilyon kilometredir. Einstein'ın özel görelilik kuramına göre kütlesi olan hiçbir şey ışık hızı kadar hızlı hareket edemez.
 
-## Human Body
+## İnsan Vücudu
 
-bu human body contains approximately 37 trillion cells. bu adult human skeleton has 206 bones. bu heart pumps blood through approximately 100,000 kilometers içinde blood vessels. bu brain is bu most complex organ ve contains approximately 86 billion neurons. bu human body is approximately 60% water. bu longest bone içinde bu body is bu femur (thigh bone). bu smallest bone is bu stapes içinde bu ear.
+İnsan vücudu yaklaşık 37 trilyon hücre içerir. Yetişkin bir insan iskeletinde 206 kemik bulunur. Kalp, kanı yaklaşık 100.000 kilometrelik kan damarları boyunca pompalar. Beyin en karmaşık organdır ve yaklaşık 86 milyar nöron içerir. İnsan vücudunun yaklaşık %60'ı sudur. Vücuttaki en uzun kemik femur (uyluk kemiği), en küçük kemik ise kulaktaki üzengidir.
 
-## Water
+## Su
 
-Water is a chemical compound made içinde two hydrogen atoms ve one oxygen atom (H2O). It exists içinde three states: liquid (water), solid (ice), ve gas (steam or water vapor). Water freezes at 0 degrees Celsius ve boils at 100 degrees Celsius at sea level. Water is essential için all known forms içinde life. About 97.5% içinde Earth's water is saltwater; only 2.5% is freshwater.
+Su, iki hidrojen atomu ve bir oksijen atomundan (H2O) oluşan kimyasal bir bileşiktir. Üç hâlde bulunur: sıvı (su), katı (buz) ve gaz (buhar veya su buharı). Su, deniz seviyesinde 0 santigrat derecede donar ve 100 santigrat derecede kaynar. Su, bilinen tüm yaşam biçimleri için gereklidir. Dünya'daki suyun yaklaşık %97,5'i tuzlu sudur; yalnızca %2,5'i tatlı sudur.
 
-## Animals
+## Hayvanlar
 
-Mammals are warm-blooded animals that give birth to live young ve nurse them ile milk. Birds are warm-blooded animals covered içinde feathers that lay eggs. Reptiles are cold-blooded animals ile scales. Amphibians can live both on land ve içinde water. Fish breathe through gills ve live içinde water. Insects are bu most numerous class içinde animals on Earth. bu blue whale is bu largest animal ever known to have lived, reaching up to 30 meters içinde length.
+Memeliler, canlı yavru doğuran ve yavrularını sütle besleyen sıcakkanlı hayvanlardır. Kuşlar, tüylerle kaplı ve yumurtlayan sıcakkanlı hayvanlardır. Sürüngenler pullu soğukkanlı hayvanlardır. Amfibiler hem karada hem suda yaşayabilir. Balıklar solungaçlarıyla nefes alır ve suda yaşar. Böcekler, Dünya'daki en kalabalık hayvan sınıfıdır. Mavi balina, 30 metreye kadar ulaşabilen uzunluğuyla yaşadığı bilinen en büyük hayvandır.
 
-## Coğrafya ve Population
+## Coğrafya ve Nüfus
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India ve China are bu two most populous countries. bu largest country by area is Russia, followed by Canada ve China. bu Nile ve bu Amazon are among bu world's longest river Sistemler. Mount Everest, içinde bu Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+Dünya'nın toplam yüzey alanı yaklaşık 510 milyon kilometrekaredir. Dünya'da yaklaşık 8 milyar insan yaşamaktadır. Hindistan ve Çin en kalabalık iki ülkedir. Yüzölçümü bakımından en büyük ülke Rusya'dır; onu Kanada ve Çin izler. Nil ve Amazon, dünyanın en uzun nehir sistemleri arasındadır. Himalayalar'daki Everest Dağı, deniz seviyesinden 8.848,86 metre yüksekliğiyle Dünya'nın en yüksek dağıdır.
 
-## Energy ve Resources
+## Enerji ve Kaynaklar
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, ve solar. Fossil fuels formed over millions içinde years from ancient organic matter. Renewable energy sources such as wind ve solar are replenished naturally ve are central to many decarbonisation strategies. Electrical energy is measured içinde joules; içinde households ve industry, usage is commonly measured içinde kilowatt-hours (kWh).
+Başlıca küresel enerji kaynakları arasında petrol, doğal gaz, kömür, nükleer enerji, hidroelektrik, rüzgâr ve güneş bulunur. Fosil yakıtlar, milyonlarca yıl boyunca eski organik maddelerden oluşmuştur. Rüzgâr ve güneş gibi yenilenebilir enerji kaynakları doğal olarak yenilenir ve birçok karbonsuzlaştırma stratejisinin merkezinde yer alır. Elektrik enerjisi joule cinsinden ölçülür; hanelerde ve sanayide kullanım yaygın olarak kilovat-saat (kWh) cinsinden ölçülür.
 
-## Ekonomi Temeller
+## Ekonominin Temelleri
 
-Ekonomi studies how people ve societies allocate limited resources. Supply ve demand influence market prices. Inflation is a general rise içinde prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates bu total value içinde goods ve services produced içinde a country. Interest rates influence borrowing, saving, ve investment behavior.
+Ekonomi, insanların ve toplumların sınırlı kaynakları nasıl tahsis ettiğini inceler. Arz ve talep piyasa fiyatlarını etkiler. Enflasyon, fiyatların zaman içinde genel olarak artmasıdır ve satın alma gücünü azaltır. Gayri Safi Yurtiçi Hasıla (GDP), bir ülkede üretilen mal ve hizmetlerin toplam değerini tahmin eder. Faiz oranları borçlanma, tasarruf ve yatırım davranışını etkiler.
 
-## Government ve Civics
+## Yönetim ve Yurttaşlık
 
-Many modern states use one içinde three broad Sistemler: democracies, authoritarian Sistemler, or mixed forms. içinde constitutional democracies, power is typically distributed across branches such as legislative, executive, ve judicial institutions. Laws define rights ve responsibilities, while courts interpret ve apply those laws. Local government often manages services such as schools, roads, ve sanitation.
+Birçok modern devlet üç geniş sistemden birini kullanır: demokrasiler, otoriter sistemler veya karma biçimler. Anayasal demokrasilerde güç genellikle yasama, yürütme ve yargı kurumları gibi organlar arasında dağıtılır. Yasalar hakları ve sorumlulukları tanımlar; mahkemeler ise bu yasaları yorumlar ve uygular. Yerel yönetimler çoğu zaman okullar, yollar ve temizlik gibi hizmetleri yönetir.
 
-## Health ve Public Safety
+## Sağlık ve Kamu Güvenliği
 
-Vaccines train bu immune system to recognize ve fight specific pathogens. Hand hygiene ve clean water are among bu most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as bu common cold. Sleep, Beslenme, physical activity, ve stress Yönetim are foundational contributors to long-term health outcomes.
+Aşılar, bağışıklık sistemini belirli patojenleri tanımak ve onlarla savaşmak üzere eğitir. El hijyeni ve temiz su, en etkili halk sağlığı müdahaleleri arasındadır. Antibiyotikler bakteriyel enfeksiyonları tedavi eder ancak soğuk algınlığı gibi viral hastalıkları iyileştirmez. Uyku, beslenme, fiziksel aktivite ve stres yönetimi uzun vadeli sağlık sonuçlarının temel belirleyicilerindendir.
 
-## İletişim ve Media Literacy
+## İletişim ve Medya Okuryazarlığı
 
-Reliable information is usually supported by evidence, transparent sourcing, ve independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Veri, while secondary sources interpret primary material. içinde bu digital era, checking publication date, author credibility, ve source quality is important için avoiding misinformation.
+Güvenilir bilgi genellikle kanıt, şeffaf kaynak gösterimi ve bağımsız doğrulama ile desteklenir. Korelasyon mutlaka nedensellik anlamına gelmez. Birincil kaynaklar doğrudan veri sağlar; ikincil kaynaklar ise birincil materyali yorumlar. Dijital çağda, yanlış bilgiden kaçınmak için yayın tarihini, yazarın güvenilirliğini ve kaynağın niteliğini kontrol etmek önemlidir.

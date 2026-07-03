@@ -433,12 +433,12 @@ rsync -avz /local/data/ user@backup-server:/backup/data/
 
 # Cloud CLI (e.g., AWS S3)
 aws s3 sync /local/data s3://my-bucket/backup/
-Automated Backup Scheduling (cron)
+Otomatik Yedekleme Zamanlaması (cron)
 cron
 # Run daily at 2am
 0 2 * * * /usr/local/bin/backup_script.sh
-Cron and Scheduled Jobs
-Cron Syntax
+Cron ve Zamanlanmış Görevler
+Cron Söz Dizimi
 text
 * * * * * command
 │ │ │ │ │
@@ -447,7 +447,7 @@ text
 │ │ └───── Day of month (1-31)
 │ └─────── Hour (0-23)
 └───────── Minute (0-59)
-Examples
+Örnekler
 cron
 # Every 5 minutes
 */5 * * * * /path/to/script
@@ -460,15 +460,15 @@ cron
 
 # Every hour
 0 * * * * /path/to/script
-Managing Cron
+Cron Yönetimi
 bash
 crontab -l          # List current user's cron jobs
 crontab -e          # Edit
 crontab -r          # Remove all
 Anacron
-Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
+24/7 çalışmayan sistemler (ör. dizüstü bilgisayarlar) için kullanılır; görevlerin sonunda yine de çalışmasını sağlar.
 
-Package Management and Updates
+Paket Yönetimi ve Güncellemeler
 Debian/Ubuntu (apt)
 bash
 sudo apt update                # Update package list
@@ -482,8 +482,8 @@ sudo dnf check-update
 sudo dnf update
 sudo dnf install git nginx
 sudo dnf remove git
-Security Updates
-Enable unattended-upgrades on Ubuntu for security patches:
+Güvenlik Güncellemeleri
+Ubuntu'da güvenlik yamaları için unattended-upgrades özelliğini etkinleştirin:
 
 bash
 sudo apt install unattended-upgrades

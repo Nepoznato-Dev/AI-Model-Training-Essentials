@@ -255,11 +255,11 @@
 ## Bulutta Güvenlik
 
 ### Paylaşılan Sorumluluk Modeli
-- **Sağlayıcının Sorumluluğu**: Bulut altyapısının güvenliği (security OF the cloud)
-- **Müşterinin Sorumluluğu**: Bulut içindeki veri, uygulama ve erişimin güvenliği (security IN the cloud)
+- **Sağlayıcının Sorumluluğu**: Bulut altyapısının güvenliği (bulutun güvenliği)
+- **Müşterinin Sorumluluğu**: Bulut içindeki veri, uygulama ve erişimin güvenliği (bulut içindeki güvenlik)
 - **Hizmete Göre Değişir**: Hizmet ne kadar yönetilirse sağlayıcının sorumluluğu da o kadar artar
 
-### Identity and Access Management (IAM)
+### Kimlik ve Erişim Yönetimi (IAM)
 - **Kullanıcılar**: Bireysel kimlikler
 - **Gruplar**: Kullanıcı koleksiyonları
 - **Roller**: Hizmetler ve kullanıcılar için geçici kimlik bilgileri
