@@ -14,7 +14,7 @@ On-demand delivery 的 计算 resources (servers, storage, databases, networking
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad 网络 Access**: Available over 网络 via standard mechanisms
+- **Broad 网络 Access**: 可用 over 网络 via standard mechanisms
 - **Resource Pooling**: Multi-tenant model 与 dynamic assignment
 - **Rapid Elasticity**: Scale outward 和 inward rapidly
 - **Measured Service**: Resource usage monitored 和 billed
@@ -39,7 +39,7 @@ On-demand delivery 的 计算 resources (servers, storage, databases, networking
 - **Use Cases**: Application 开发, API 部署, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Complete applications over internet
+- **Provides**: 完整 applications over internet
 - **示例**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, 商业 applications
 

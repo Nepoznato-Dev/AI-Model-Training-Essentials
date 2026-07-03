@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on その feature branch.
 3. Push その branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback と additional commits.
+5. Address code review フィードバック と additional commits.
 6. Merge その PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor と a rich extension ecosys
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install 言語 support (Python, Rust, Go, etc.), linters, と formatters from その Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install 言語 サポート (Python, Rust, Go, etc.), linters, と formatters from その Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures その debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor と a rich extension ecosys
 
 - Smart code completion と refactoring are core features.
 - Run/debug configurations let you launch と debug programs と one click.
-- Built-で Git support で その VCS menu.
+- Built-で Git サポート で その VCS menu.
 - `Shift+Shift` opens その Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend 言語 support と add tools.
+- Plugins extend 言語 サポート と add tools.
 
 ### Terminal tips
 

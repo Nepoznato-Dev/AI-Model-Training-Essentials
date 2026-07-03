@@ -14,7 +14,7 @@ On-demand delivery из Вычисления resources (servers, storage, databa
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Сеть Access**: Available over Сеть via standard mechanisms
+- **Broad Сеть Access**: Доступно over Сеть via standard mechanisms
 - **Resource Pooling**: Multi-tenant model с dynamic assignment
 - **Rapid Elasticity**: Scale outward и inward rapidly
 - **Measured Service**: Resource usage monitored и billed
@@ -39,7 +39,7 @@ On-demand delivery из Вычисления resources (servers, storage, databa
 - **Use Cases**: Application Разработка, API Развертывание, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Complete applications over internet
+- **Provides**: Полный applications over internet
 - **Примеры**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, Бизнес applications
 

@@ -14,7 +14,7 @@ A practical Guide to le/la ML lifecycle — from problem framing to production m
 ## le/la ML Workflow (CRISP-ML)
 
 1. **Entreprise Understanding**: Define le/la objective et success criteria.
-2. **Données Understanding**: Explore available Données, identify quality issues.
+2. **Données Understanding**: Explore Disponible Données, identify quality issues.
 3. **Données Preparation**: Clean, transform, et split Données.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Performance against metrics.
@@ -151,7 +151,7 @@ le/la relationship between features et target changes over time.
 - **Streaming inference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is available).
+- **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is Disponible).
 - **Données drift**: Monitor changes dans input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes dans le/la relationship between inputs et outputs.
 - **Prediction drift**: Track le/la distribution de predicted outputs.

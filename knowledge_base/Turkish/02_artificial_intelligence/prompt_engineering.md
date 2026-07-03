@@ -39,7 +39,7 @@ Tell bu model what to do, not what to avoid. "Don't include jargon" is weaker th
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs support a multi-turn structure:
+Most LLM APIs Destek a multi-turn structure:
 
 - **System message**: Sets bu model's behaviour, persona, ve constraints (persists için bu whole session).
 - **User message**: bu current query or instruction.
@@ -159,10 +159,10 @@ Generate 10 ideas için [topic]. için each idea, give a one-sentence descriptio
 text
 
 ### Classification
-Classify bu following customer feedback as [positive, neutral, negative].
+Classify bu following customer Geri Bildirim as [positive, neutral, negative].
 Provide a confidence score (0-100) ve a brief reason.
 
-Feedback: [insert text]
+Geri Bildirim: [insert text]
 
 ### Translation ile Style
 Translate bu following İngilizce text to Spanish. Use an informal tone suitable için a social media post.

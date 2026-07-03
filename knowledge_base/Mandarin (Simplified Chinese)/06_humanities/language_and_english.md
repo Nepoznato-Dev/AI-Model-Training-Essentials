@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, 和 engaging.
 **Active reading** involves engaging 与 这 text by asking questions, making predictions, summarizing, 和 making connections.
 
 - 这 **main idea** is 这 central point 的 a passage.
-- Details, 示例, 和 evidence support 这 main idea.
+- Details, 示例, 和 evidence 支持 这 main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words 和 phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ Collective nouns (team, committee, group, family) take a singular verb 在 Ameri
 
 **Epistemic honesty** means being truthful about 这 limits 的 one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is 这 tendency 的 AI 系统 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge 和 responding 与 an honest acknowledgement 的 uncertainty rather than an invented answer.
+**Hallucination** is 这 tendency 的 AI 系统 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 可用 knowledge 和 responding 与 an honest acknowledgement 的 uncertainty rather than an invented answer.
 
 **Useful phrases 为 expressing uncertainty:**
 - "I'm not certain, but…"

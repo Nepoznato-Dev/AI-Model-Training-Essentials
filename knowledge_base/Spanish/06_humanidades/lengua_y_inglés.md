@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, y engaging.
 **Active reading** involves engaging con el/la text by asking questions, making predictions, summarizing, y making connections.
 
 - el/la **main idea** is el/la central point de a passage.
-- Details, Ejemplos, y evidence support el/la main idea.
+- Details, Ejemplos, y evidence Soporte el/la main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words y phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ el/la following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about el/la limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is el/la tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge y responding con an honest acknowledgement de uncertainty rather than an invented answer.
+**Hallucination** is el/la tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponible knowledge y responding con an honest acknowledgement de uncertainty rather than an invented answer.
 
 **Useful phrases para expressing uncertainty:**
 - "I'm not certain, but…"

@@ -341,4 +341,4 @@ any(), all()
 
 ---
 
-*Last updated: June 2025 | Python 3.x*
+*Zuletzt aktualisiert: June 2025 | Python 3.x*

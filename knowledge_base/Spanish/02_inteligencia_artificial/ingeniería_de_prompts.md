@@ -14,7 +14,7 @@ A practical Guía to el/la ML lifecycle — from problem framing to production m
 ## el/la ML Workflow (CRISP-ML)
 
 1. **Negocios Understanding**: Define el/la objective y success criteria.
-2. **Datos Understanding**: Explore available Datos, identify quality issues.
+2. **Datos Understanding**: Explore Disponible Datos, identify quality issues.
 3. **Datos Preparation**: Clean, transform, y split Datos.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Rendimiento against metrics.
@@ -151,7 +151,7 @@ el/la relationship between features y target changes over time.
 - **Streaming inference**: Event-driven, real-time con low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Rendimiento monitoring**: Track accuracy/F1 over time on live Datos (when ground truth is available).
+- **Rendimiento monitoring**: Track accuracy/F1 over time on live Datos (when ground truth is Disponible).
 - **Datos drift**: Monitor changes en input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes en el/la relationship between inputs y outputs.
 - **Prediction drift**: Track el/la distribution de predicted outputs.

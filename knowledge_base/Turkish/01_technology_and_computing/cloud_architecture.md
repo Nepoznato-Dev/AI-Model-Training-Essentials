@@ -14,7 +14,7 @@ On-demand delivery içinde Bilişim resources (servers, storage, databases, netw
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Ağ Access**: Available over Ağ via standard mechanisms
+- **Broad Ağ Access**: Mevcut over Ağ via standard mechanisms
 - **Resource Pooling**: Multi-tenant model ile dynamic assignment
 - **Rapid Elasticity**: Scale outward ve inward rapidly
 - **Measured Service**: Resource usage monitored ve billed
@@ -39,7 +39,7 @@ On-demand delivery içinde Bilişim resources (servers, storage, databases, netw
 - **Use Cases**: Application Geliştirme, API Dağıtım, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Complete applications over internet
+- **Provides**: Tam applications over internet
 - **Örnekler**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, İş applications
 

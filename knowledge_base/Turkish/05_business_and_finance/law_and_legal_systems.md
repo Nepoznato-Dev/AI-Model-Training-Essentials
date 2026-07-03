@@ -37,7 +37,7 @@ Criminal Hukuk defines crimes ve punishments. Crimes are classified as felonies 
 
 ## Family Hukuk
 
-Family Hukuk deals ile domestic relations ve family matters. Marriage is a Yasal union creating rights ve obligations between spouses. Divorce (dissolution içinde marriage) involves division içinde assets, spousal support (alimony), ve child custody. Child custody determines where children live ve who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Yasal parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Yasal fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Hukuk deals ile domestic relations ve family matters. Marriage is a Yasal union creating rights ve obligations between spouses. Divorce (dissolution içinde marriage) involves division içinde assets, spousal Destek (alimony), ve child custody. Child custody determines where children live ve who makes decisions about their welfare. Child Destek is financial Destek paid by non-custodial parents. Adoption creates a Yasal parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Yasal fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

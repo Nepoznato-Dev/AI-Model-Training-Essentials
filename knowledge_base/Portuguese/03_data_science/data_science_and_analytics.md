@@ -164,7 +164,7 @@ Dados Ciência is an interdisciplinary field that uses scientific methods, proce
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Support Vector Machines
+  - Suporte Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
@@ -284,7 +284,7 @@ Dados Ciência is an interdisciplinary field that uses scientific methods, proce
 - **Accuracy**: Correctness de Dados
 - **Completeness**: All required Dados present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Dados available when needed
+- **Timeliness**: Dados Disponível when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

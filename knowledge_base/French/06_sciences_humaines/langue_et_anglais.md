@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, et engaging.
 **Active reading** involves engaging avec le/la text by asking questions, making predictions, summarizing, et making connections.
 
 - le/la **main idea** is le/la central point de a passage.
-- Details, Exemples, et evidence support le/la main idea.
+- Details, Exemples, et evidence Assistance le/la main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words et phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ le/la following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about le/la limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is le/la tendency de AI Systèmes to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge et responding avec an honest acknowledgement de uncertainty rather than an invented answer.
+**Hallucination** is le/la tendency de AI Systèmes to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponible knowledge et responding avec an honest acknowledgement de uncertainty rather than an invented answer.
 
 **Useful phrases pour expressing uncertainty:**
 - "I'm not certain, but…"

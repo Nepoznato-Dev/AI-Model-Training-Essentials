@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # İngilizce Bilgi Tabanı
 
-A comprehensive collection içinde Referans documents covering Teknoloji, Bilim, İş, humanities, ve practical skills.
+Kapsamlı bir koleksiyon içinde Referans documents covering Teknoloji, Bilim, İş, humanities, ve practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Son Güncelleme:** June 2025  
+**Toplam Dosya:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Dizin Yapısı
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Hızlı Gezinme
 
 ### Teknoloji & Bilişim (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Olaylar, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Büyüyen dizin - yakında:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Kopya Kağıtları (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Büyüyen dizin - yakında:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Sorumluluk Reddi
+## ⚠️ Önemli Uyarılar
 
 - **Medical Information:** Content içinde `medicine_and_healthcare.md` is için educational purposes only ve should not replace professional medical advice.
 - **Yasal Information:** Content içinde `law_and_legal_systems.md` is informational ve does not constitute Yasal advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Kullanım Kılavuzu
 
 ### için AI Sistemler
 - All files are structured ile clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 Geri Bildirim
 
 Found errors? Have suggestions? Please note:
 - Check için duplicates before suggesting new topics

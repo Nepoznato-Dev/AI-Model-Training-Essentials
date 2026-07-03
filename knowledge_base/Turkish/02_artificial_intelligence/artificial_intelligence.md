@@ -23,7 +23,7 @@ bu 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) ve 
 
 Makine Öğrenimi (ML) is a subset içinde AI that enables Sistemler to learn from Veri without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: bu model is trained on labelled input-output pairs. Örnekler include spam detection ve image classification. Algorithms include linear regression, decision trees, support vector machines, ve Sinir Ağları.
+**Supervised Learning**: bu model is trained on labelled input-output pairs. Örnekler include spam detection ve image classification. Algorithms include linear regression, decision trees, Destek vector machines, ve Sinir Ağları.
 
 **Unsupervised Learning**: bu model finds patterns içinde unlabelled Veri. Örnekler include customer segmentation ve anomaly detection. Algorithms include k-means clustering ve principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models için research ve local Dağıtım
 - **Mistral** (Mistral AI): Efficient open models competitive ile much larger LLMs
 
-LLMs are trained içinde two stages: pre-training (unsupervised on large text corpora) ve fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens içinde bu most İleri Düzey 2024 models.
+LLMs are trained içinde two stages: pre-training (unsupervised on large text corpora) ve fine-tuning (supervised or via reinforcement learning from human Geri Bildirim, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens içinde bu most İleri Düzey 2024 models.
 
 ## AI Ethics ve Safety
 

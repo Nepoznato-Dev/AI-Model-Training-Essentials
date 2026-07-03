@@ -39,7 +39,7 @@ Tell その model what to do, not what to avoid. "Don't include jargon" is weake
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs support a multi-turn structure:
+Most LLM APIs サポート a multi-turn structure:
 
 - **System message**: Sets その model's behaviour, persona, と constraints (persists のために その whole session).
 - **User message**: その current query or instruction.
@@ -159,10 +159,10 @@ Generate 10 ideas のために [topic]. のために each idea, give a one-sente
 text
 
 ### Classification
-Classify その following customer feedback as [positive, neutral, negative].
+Classify その following customer フィードバック as [positive, neutral, negative].
 Provide a confidence score (0-100) と a brief reason.
 
-Feedback: [insert text]
+フィードバック: [insert text]
 
 ### Translation と Style
 Translate その following 英語 text to Spanish. Use an informal tone suitable のために a social media post.

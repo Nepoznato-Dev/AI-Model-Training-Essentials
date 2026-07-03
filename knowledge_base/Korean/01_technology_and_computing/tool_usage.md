@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on 그 feature branch.
 3. Push 그 branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback 와 함께 additional commits.
+5. Address code review 피드백 와 함께 additional commits.
 6. Merge 그 PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor 와 함께 a rich extension
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install 언어 support (Python, Rust, Go, etc.), linters, 와 formatters from 그 Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install 언어 지원 (Python, Rust, Go, etc.), linters, 와 formatters from 그 Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures 그 debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor 와 함께 a rich extension
 
 - Smart code completion 와 refactoring are core features.
 - Run/debug configurations let you launch 와 debug programs 와 함께 one click.
-- Built-에서 Git support 에서 그 VCS menu.
+- Built-에서 Git 지원 에서 그 VCS menu.
 - `Shift+Shift` opens 그 Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend 언어 support 와 add tools.
+- Plugins extend 언어 지원 와 add tools.
 
 ### Terminal tips
 

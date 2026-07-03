@@ -488,7 +488,7 @@ scores["Bob"]   = 87;
 
 ## Swift
 
-Swift is a modern, statically typed programming Язык developed by Apple для iOS, macOS, watchOS, и tvOS. It is also available on Linux.
+Swift is a modern, statically typed programming Язык developed by Apple для iOS, macOS, watchOS, и tvOS. It is also Доступно on Linux.
 
 ### Основы
 

@@ -488,7 +488,7 @@ scores["Bob"]   = 87;
 
 ## Swift
 
-Swift is a modern, statically typed programming Dil developed by Apple için iOS, macOS, watchOS, ve tvOS. It is also available on Linux.
+Swift is a modern, statically typed programming Dil developed by Apple için iOS, macOS, watchOS, ve tvOS. It is also Mevcut on Linux.
 
 ### Temeller
 

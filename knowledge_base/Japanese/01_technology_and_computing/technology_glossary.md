@@ -104,11 +104,11 @@ $40,000 each but offer 10–30× その AI throughput の consumer RTX cards.
 ### AMD Radeon RX Series
 AMD's consumer GPU line. その RX 7900 XTX (2022) has 24GB VRAM と can run
 local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA のために AI frameworks, though support is improving.
+well-supported than NVIDIA のために AI frameworks, though サポート is improving.
 
 ### Intel Arc
 Intel Arc is Intel's discrete GPU product line, released starting で 2022. Arc
-GPUs support XeSS (Intel's super-sampling) と have limited but growing support
+GPUs サポート XeSS (Intel's super-sampling) と have limited but growing サポート
 のために AI inference tasks via OpenVINO と IPEX-LLM frameworks.
 
 ### ARK Intel (ark.intel.com)
@@ -179,12 +179,12 @@ hardware or even mobile devices.
 ### Context Window
 その context window is その maximum number の tokens a model can process at once,
 including both その prompt と その generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo と Claude 3 support 128,000 tokens; Gemini 1.5 Pro
+window; GPT-4 Turbo と Claude 3 サポート 128,000 tokens; Gemini 1.5 Pro
 supports 1,000,000 tokens. A larger context window allows その model to "see"
 more の a conversation or document at once, improving coherence over long
 exchanges.
 
-### RLHF (Reinforcement Learning from Human Feedback)
+### RLHF (Reinforcement Learning from Human フィードバック)
 RLHF is その training technique that transforms a base 言語 model (which
 simply predicts その next token) into an assistant that follows instructions と
 behaves helpfully. Human raters score model outputs, a reward model is trained
@@ -205,5 +205,5 @@ encoder-decoder Transformers (T5, BART) are used のために translation と su
 Embeddings are dense numerical representations の text (or images) produced by
 a neural ネットワーク. Semantically similar texts have embeddings that are close で
 vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings と support fast approximate nearest-neighbour search. They are
+these embeddings と サポート fast approximate nearest-neighbour search. They are
 その storage backbone の RAG システム, including Potato.ai's cold-memory layer.

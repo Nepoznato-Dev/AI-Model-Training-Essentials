@@ -14,7 +14,7 @@ On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, network
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad 네트워크 Access**: Available over 네트워크 via standard mechanisms
+- **Broad 네트워크 Access**: 사용 가능 over 네트워크 via standard mechanisms
 - **Resource Pooling**: Multi-tenant model 와 함께 dynamic assignment
 - **Rapid Elasticity**: Scale outward 와 inward rapidly
 - **Measured Service**: Resource usage monitored 와 billed
@@ -39,7 +39,7 @@ On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, network
 - **Use Cases**: Application 개발, API 배포, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Complete applications over internet
+- **Provides**: 완전한 applications over internet
 - **예시**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, 비즈니스 applications
 

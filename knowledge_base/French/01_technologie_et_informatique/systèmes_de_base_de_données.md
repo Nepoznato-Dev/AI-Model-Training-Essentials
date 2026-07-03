@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on le/la feature branch.
 3. Push le/la branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback avec additional commits.
+5. Address code review Retour avec additional commits.
 6. Merge le/la PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor avec a rich extension ecosy
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install Langue support (Python, Rust, Go, etc.), linters, et formatters from le/la Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install Langue Assistance (Python, Rust, Go, etc.), linters, et formatters from le/la Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures le/la debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor avec a rich extension ecosy
 
 - Smart code completion et refactoring are core features.
 - Run/debug configurations let you launch et debug programs avec one click.
-- Built-dans Git support dans le/la VCS menu.
+- Built-dans Git Assistance dans le/la VCS menu.
 - `Shift+Shift` opens le/la Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Langue support et add tools.
+- Plugins extend Langue Assistance et add tools.
 
 ### Terminal tips
 

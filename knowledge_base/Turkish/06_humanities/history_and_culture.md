@@ -51,7 +51,7 @@ bu Space Race (1957–1969) was a competition between bu United States ve Soviet
 
 ## bu Information Age
 
-bu late 20th ve early 21st centuries are characterised by bu Information Age, driven by bu Geliştirme içinde digital computers, bu internet, ve mobile Teknoloji. bu World Wide Web was invented by Tim Berners-Lee içinde 1989 ve made publicly available içinde 1991, fundamentally transforming İletişim, commerce, education, ve Kültür. bu rise içinde personal computers içinde bu 1980s, led by Apple ve IBM, brought Bilişim into homes. bu smartphone era, ushered içinde by Apple's iPhone içinde 2007, placed internet-connected computers içinde billions içinde pockets worldwide.
+bu late 20th ve early 21st centuries are characterised by bu Information Age, driven by bu Geliştirme içinde digital computers, bu internet, ve mobile Teknoloji. bu World Wide Web was invented by Tim Berners-Lee içinde 1989 ve made publicly Mevcut içinde 1991, fundamentally transforming İletişim, commerce, education, ve Kültür. bu rise içinde personal computers içinde bu 1980s, led by Apple ve IBM, brought Bilişim into homes. bu smartphone era, ushered içinde by Apple's iPhone içinde 2007, placed internet-connected computers içinde billions içinde pockets worldwide.
 
 ## bu 21st Century
 

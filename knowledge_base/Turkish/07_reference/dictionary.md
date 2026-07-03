@@ -122,7 +122,7 @@ içinde questions ve discussions.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — bu arrangement or layout içinde Veri; to prepare için use.
-**framework** — a basic structure providing support için building something.
+**framework** — a basic structure providing Destek için building something.
 **function** — bu purpose içinde something; a reusable block içinde code (programming).
 **fundamental** — forming bu base or foundation; essential.
 
@@ -273,7 +273,7 @@ içinde questions ve discussions.
 
 ## W
 
-**workflow** — a series içinde steps followed to complete a task.
+**workflow** — a series içinde steps followed to Tam a task.
 **warrant** — justification için an action; a Yasal document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ içinde questions ve discussions.
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm için training Sinir Ağları by propagating errors backward.
-**bandwidth** — bu range içinde frequencies available; Veri transfer capacity.
+**bandwidth** — bu range içinde frequencies Mevcut; Veri transfer capacity.
 **binary** — consisting içinde two parts; base-2 number system using 0s ve 1s.
 **bit** — bu smallest unit içinde Veri (0 or 1); short için binary digit.
 **blockchain** — a distributed ledger Teknoloji recording transactions across multiple computers.
@@ -397,7 +397,7 @@ içinde questions ve discussions.
 **facade** — bu front içinde a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning içinde argument.
 **falsifiable** — capable içinde being proven false; a criterion için scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**Geri Bildirim loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ içinde questions ve discussions.
 **platform** — a raised surface; a Bilişim environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available için download.
+**podcast** — a digital audio program Mevcut için download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; içinde OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ içinde questions ve discussions.
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list içinde elements.
-**turing-complete** — capable içinde universal computation.
+**turing-Tam** — capable içinde universal computation.
 **typology** — study içinde types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ içinde questions ve discussions.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; bu _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; Destek.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one içinde a kind.

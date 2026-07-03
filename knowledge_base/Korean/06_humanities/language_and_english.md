@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, 와 engaging.
 **Active reading** involves engaging 와 함께 그 text by asking questions, making predictions, summarizing, 와 making connections.
 
 - 그 **main idea** is 그 central point 의 a passage.
-- Details, 예시, 와 evidence support 그 main idea.
+- Details, 예시, 와 evidence 지원 그 main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words 와 phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ Collective nouns (team, committee, group, family) take a singular verb 에서 Am
 
 **Epistemic honesty** means being truthful about 그 limits 의 one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is 그 tendency 의 AI 시스템 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge 와 responding 와 함께 an honest acknowledgement 의 uncertainty rather than an invented answer.
+**Hallucination** is 그 tendency 의 AI 시스템 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 사용 가능 knowledge 와 responding 와 함께 an honest acknowledgement 의 uncertainty rather than an invented answer.
 
 **Useful phrases 위한 expressing uncertainty:**
 - "I'm not certain, but…"

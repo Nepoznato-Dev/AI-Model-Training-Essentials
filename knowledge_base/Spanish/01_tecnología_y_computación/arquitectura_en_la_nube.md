@@ -14,7 +14,7 @@ On-demand delivery de Informática resources (servers, storage, databases, netwo
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Red Access**: Available over Red via standard mechanisms
+- **Broad Red Access**: Disponible over Red via standard mechanisms
 - **Resource Pooling**: Multi-tenant model con dynamic assignment
 - **Rapid Elasticity**: Scale outward y inward rapidly
 - **Measured Service**: Resource usage monitored y billed
@@ -39,7 +39,7 @@ On-demand delivery de Informática resources (servers, storage, databases, netwo
 - **Use Cases**: Application Desarrollo, API Implementación, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Complete applications over internet
+- **Provides**: Completo applications over internet
 - **Ejemplos**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, Negocios applications
 

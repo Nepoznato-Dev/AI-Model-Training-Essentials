@@ -75,7 +75,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Republic**: State without monarchy, representatives elected
 - **Monarchy**: Ruled by king/queen (constitutional, absolute)
 - **Authoritarian**: Limited political freedom, centralized power
-- **Totalitarian**: Complete state control over public 와 private life
+- **Totalitarian**: 완전한 state control over public 와 private life
 - **Federal**: Power divided between national 와 regional governments
 - **Unitary**: Centralized government, regional authorities subordinate
 

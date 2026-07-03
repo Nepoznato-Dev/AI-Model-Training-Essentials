@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # الإنجليزية قاعدة المعرفة
 
-A comprehensive collection من مرجع documents covering التكنولوجيا, العلوم, الأعمال, humanities, و practical skills.
+مجموعة شاملة من مرجع documents covering التكنولوجيا, العلوم, الأعمال, humanities, و practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**آخر تحديث:** June 2025  
+**إجمالي الملفات:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 هيكل الدليل
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 تنقل سريع
 
 ### التكنولوجيا & الحوسبة (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming الأحداث, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*دليل متنامٍ - قريبًا:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### أوراق الغش (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*دليل متنامٍ - قريبًا:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important إخلاء المسؤولية
+## ⚠️ إخلاءات مسؤولية مهمة
 
 - **Medical Information:** Content في `medicine_and_healthcare.md` is لأجل educational purposes only و should not replace professional medical advice.
 - **قانوني Information:** Content في `law_and_legal_systems.md` is informational و does not constitute قانوني advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 إرشادات الاستخدام
 
 ### لأجل AI الأنظمة
 - All files are structured مع clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 ملاحظات
 
 Found errors? Have suggestions? Please note:
 - Check لأجل duplicates before suggesting new topics

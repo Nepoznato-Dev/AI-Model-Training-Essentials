@@ -122,7 +122,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — 그 arrangement or layout 의 데이터; to prepare 위한 use.
-**framework** — a basic structure providing support 위한 building something.
+**framework** — a basic structure providing 지원 위한 building something.
 **function** — 그 purpose 의 something; a reusable block 의 code (programming).
 **fundamental** — forming 그 base or foundation; essential.
 
@@ -273,7 +273,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 
 ## W
 
-**workflow** — a series 의 steps followed to complete a task.
+**workflow** — a series 의 steps followed to 완전한 a task.
 **warrant** — justification 위한 an action; a 법적 document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm 위한 training 신경망 by propagating errors backward.
-**bandwidth** — 그 range 의 frequencies available; 데이터 transfer capacity.
+**bandwidth** — 그 range 의 frequencies 사용 가능; 데이터 transfer capacity.
 **binary** — consisting 의 two parts; base-2 number system using 0s 와 1s.
 **bit** — 그 smallest unit 의 데이터 (0 or 1); short 위한 binary digit.
 **blockchain** — a distributed ledger 기술 recording transactions across multiple computers.
@@ -397,7 +397,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **facade** — 그 front 의 a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning 에서 argument.
 **falsifiable** — capable 의 being proven false; a criterion 위한 scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**피드백 loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **platform** — a raised surface; a 컴퓨팅 environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available 위한 download.
+**podcast** — a digital audio program 사용 가능 위한 download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; 에서 OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list 의 elements.
-**turing-complete** — capable 의 universal computation.
+**turing-완전한** — capable 의 universal computation.
 **typology** — study 의 types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ covering everyday vocabulary, academic terms, 와 words commonly encountered
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; 그 _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; 지원.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one 의 a kind.

@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on bu feature branch.
 3. Push bu branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback ile additional commits.
+5. Address code review Geri Bildirim ile additional commits.
 6. Merge bu PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor ile a rich extension ecosys
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install Dil support (Python, Rust, Go, etc.), linters, ve formatters from bu Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install Dil Destek (Python, Rust, Go, etc.), linters, ve formatters from bu Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures bu debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor ile a rich extension ecosys
 
 - Smart code completion ve refactoring are core features.
 - Run/debug configurations let you launch ve debug programs ile one click.
-- Built-içinde Git support içinde bu VCS menu.
+- Built-içinde Git Destek içinde bu VCS menu.
 - `Shift+Shift` opens bu Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Dil support ve add tools.
+- Plugins extend Dil Destek ve add tools.
 
 ### Terminal tips
 

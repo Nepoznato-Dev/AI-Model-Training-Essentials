@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, und engaging.
 **Active reading** involves engaging mit der/die/das text by asking questions, making predictions, summarizing, und making connections.
 
 - der/die/das **main idea** is der/die/das central point von a passage.
-- Details, Beispiele, und evidence support der/die/das main idea.
+- Details, Beispiele, und evidence Support der/die/das main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words und phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ der/die/das following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about der/die/das limits von one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is der/die/das tendency von AI Systeme to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge und responding mit an honest acknowledgement von uncertainty rather than an invented answer.
+**Hallucination** is der/die/das tendency von AI Systeme to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Verfügbar knowledge und responding mit an honest acknowledgement von uncertainty rather than an invented answer.
 
 **Useful phrases für expressing uncertainty:**
 - "I'm not certain, but…"

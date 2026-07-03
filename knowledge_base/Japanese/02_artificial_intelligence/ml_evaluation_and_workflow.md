@@ -14,7 +14,7 @@ A practical ガイド to その ML lifecycle — from problem framing to product
 ## その ML Workflow (CRISP-ML)
 
 1. **ビジネス Understanding**: Define その objective と success criteria.
-2. **データ Understanding**: Explore available データ, identify quality issues.
+2. **データ Understanding**: Explore 利用可能 データ, identify quality issues.
 3. **データ Preparation**: Clean, transform, と split データ.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess パフォーマンス against metrics.
@@ -151,7 +151,7 @@ Model performs poorly on both training と validation.
 - **Streaming inference**: Event-driven, real-time と low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **パフォーマンス monitoring**: Track accuracy/F1 over time on live データ (when ground truth is available).
+- **パフォーマンス monitoring**: Track accuracy/F1 over time on live データ (when ground truth is 利用可能).
 - **データ drift**: Monitor changes で input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes で その relationship between inputs と outputs.
 - **Prediction drift**: Track その distribution の predicted outputs.

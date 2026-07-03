@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Last updated: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Dernière mise à jour: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

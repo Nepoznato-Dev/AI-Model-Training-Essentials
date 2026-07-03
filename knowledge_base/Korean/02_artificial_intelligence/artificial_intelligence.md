@@ -23,7 +23,7 @@ Modern AI is broadly divided into Narrow AI (also called Weak AI), which is desi
 
 기계 학습 (ML) is a subset 의 AI that enables 시스템 to learn from 데이터 without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: 그 model is trained on labelled input-output pairs. 예시 include spam detection 와 image classification. Algorithms include linear regression, decision trees, support vector machines, 와 신경망.
+**Supervised Learning**: 그 model is trained on labelled input-output pairs. 예시 include spam detection 와 image classification. Algorithms include linear regression, decision trees, 지원 vector machines, 와 신경망.
 
 **Unsupervised Learning**: 그 model finds patterns 에서 unlabelled 데이터. 예시 include customer segmentation 와 anomaly detection. Algorithms include k-means clustering 와 principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models 위한 research 와 local 배포
 - **Mistral** (Mistral AI): Efficient open models competitive 와 함께 much larger LLMs
 
-LLMs are trained 에서 two stages: pre-training (unsupervised on large text corpora) 와 fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 에서 그 most 고급 2024 models.
+LLMs are trained 에서 two stages: pre-training (unsupervised on large text corpora) 와 fine-tuning (supervised or via reinforcement learning from human 피드백, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 에서 그 most 고급 2024 models.
 
 ## AI Ethics 와 Safety
 

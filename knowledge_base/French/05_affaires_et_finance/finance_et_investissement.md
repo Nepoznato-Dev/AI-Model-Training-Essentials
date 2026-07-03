@@ -37,7 +37,7 @@ Criminal Droit defines crimes et punishments. Crimes are classified as felonies 
 
 ## Family Droit
 
-Family Droit deals avec domestic relations et family matters. Marriage is a Juridique union creating rights et obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal support (alimony), et child custody. Child custody determines where children live et who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Juridique parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Juridique fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Droit deals avec domestic relations et family matters. Marriage is a Juridique union creating rights et obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal Assistance (alimony), et child custody. Child custody determines where children live et who makes decisions about their welfare. Child Assistance is financial Assistance paid by non-custodial parents. Adoption creates a Juridique parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Juridique fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

@@ -51,7 +51,7 @@ After World War II, many countries 에서 Africa 와 Asia gained independence fr
 
 ## 그 Information Age
 
-그 late 20th 와 early 21st centuries are characterised by 그 Information Age, driven by 그 개발 의 digital computers, 그 internet, 와 mobile 기술. 그 World Wide 웹 was invented by Tim Berners-Lee 에서 1989 와 made publicly available 에서 1991, fundamentally transforming 의사소통, commerce, education, 와 문화. 그 rise 의 personal computers 에서 그 1980s, led by Apple 와 IBM, brought 컴퓨팅 into homes. 그 smartphone era, ushered 에서 by Apple's iPhone 에서 2007, placed internet-connected computers 에서 billions 의 pockets worldwide.
+그 late 20th 와 early 21st centuries are characterised by 그 Information Age, driven by 그 개발 의 digital computers, 그 internet, 와 mobile 기술. 그 World Wide 웹 was invented by Tim Berners-Lee 에서 1989 와 made publicly 사용 가능 에서 1991, fundamentally transforming 의사소통, commerce, education, 와 문화. 그 rise 의 personal computers 에서 그 1980s, led by Apple 와 IBM, brought 컴퓨팅 into homes. 그 smartphone era, ushered 에서 by Apple's iPhone 에서 2007, placed internet-connected computers 에서 billions 의 pockets worldwide.
 
 ## 그 21st Century
 

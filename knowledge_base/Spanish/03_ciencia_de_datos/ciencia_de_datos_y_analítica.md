@@ -164,7 +164,7 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Support Vector Machines
+  - Soporte Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
@@ -284,7 +284,7 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
 - **Accuracy**: Correctness de Datos
 - **Completeness**: All required Datos present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Datos available when needed
+- **Timeliness**: Datos Disponible when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

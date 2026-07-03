@@ -14,7 +14,7 @@ A practical Rehber to bu ML lifecycle — from problem framing to production mon
 ## bu ML Workflow (CRISP-ML)
 
 1. **İş Understanding**: Define bu objective ve success criteria.
-2. **Veri Understanding**: Explore available Veri, identify quality issues.
+2. **Veri Understanding**: Explore Mevcut Veri, identify quality issues.
 3. **Veri Preparation**: Clean, transform, ve split Veri.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Performans against metrics.
@@ -151,7 +151,7 @@ bu relationship between features ve target changes over time.
 - **Streaming inference**: Event-driven, real-time ile low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Performans monitoring**: Track accuracy/F1 over time on live Veri (when ground truth is available).
+- **Performans monitoring**: Track accuracy/F1 over time on live Veri (when ground truth is Mevcut).
 - **Veri drift**: Monitor changes içinde input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes içinde bu relationship between inputs ve outputs.
 - **Prediction drift**: Track bu distribution içinde predicted outputs.

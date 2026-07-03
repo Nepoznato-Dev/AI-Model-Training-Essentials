@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 英語 ナレッジベース
 
-A comprehensive collection の リファレンス documents covering テクノロジー, 科学, ビジネス, humanities, と practical skills.
+包括的なコレクション の リファレンス documents covering テクノロジー, 科学, ビジネス, humanities, と practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**最終更新:** June 2025  
+**総ファイル数:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 ディレクトリ構造
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 クイックナビゲーション
 
 ### テクノロジー & コンピューティング (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming イベント, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*成長中のディレクトリ - 近日公開:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### チートシート (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*成長中のディレクトリ - 近日公開:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important 免責事項
+## ⚠️ 重要な注意事項
 
 - **Medical Information:** Content で `medicine_and_healthcare.md` is のために educational purposes only と should not replace professional medical advice.
 - **法的 Information:** Content で `law_and_legal_systems.md` is informational と does not constitute 法的 advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 使用ガイドライン
 
 ### のために AI システム
 - All files are structured と clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 フィードバック
 
 Found errors? Have suggestions? Please note:
 - Check のために duplicates before suggesting new topics

@@ -284,7 +284,7 @@ Daten Wissenschaft is an interdisciplinary field that uses scientific methods, p
 - **Accuracy**: Correctness von Daten
 - **Completeness**: All required Daten present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Daten available when needed
+- **Timeliness**: Daten Verfügbar when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

@@ -23,7 +23,7 @@ Modern AI is broadly divided into Narrow AI (also called Weak AI), which is desi
 
 التعلم الآلي (ML) is a subset من AI that enables الأنظمة to learn from البيانات without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: ال model is trained on labelled input-output pairs. أمثلة include spam detection و image classification. Algorithms include linear regression, decision trees, support vector machines, و الشبكات العصبية.
+**Supervised Learning**: ال model is trained on labelled input-output pairs. أمثلة include spam detection و image classification. Algorithms include linear regression, decision trees, الدعم vector machines, و الشبكات العصبية.
 
 **Unsupervised Learning**: ال model finds patterns في unlabelled البيانات. أمثلة include customer segmentation و anomaly detection. Algorithms include k-means clustering و principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models لأجل research و local النشر
 - **Mistral** (Mistral AI): Efficient open models competitive مع much larger LLMs
 
-LLMs are trained في two stages: pre-training (unsupervised on large text corpora) و fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens في ال most متقدم 2024 models.
+LLMs are trained في two stages: pre-training (unsupervised on large text corpora) و fine-tuning (supervised or via reinforcement learning from human ملاحظات, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens في ال most متقدم 2024 models.
 
 ## AI Ethics و Safety
 

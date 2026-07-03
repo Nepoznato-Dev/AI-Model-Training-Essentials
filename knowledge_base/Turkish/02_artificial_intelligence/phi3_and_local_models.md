@@ -20,7 +20,7 @@ Phi-3-mini is a small Dil model (SLM) developed by Microsoft Research, released 
 - **Two context variants**: 4,096 tokens (standard) ve 128,000 tokens (long context)
 - **Runs on consumer hardware** — fits comfortably içinde 8GB VRAM içinde 4-bit quantisation
 - **Mobile Dağıtım** — Microsoft demonstrated Phi-3-mini running on an iPhone 14
-- **Open weights** — available on Hugging Face için local use
+- **Open weights** — Mevcut on Hugging Face için local use
 
 Despite its small size, Phi-3-mini matches or outperforms models 3–5× larger on a range içinde reasoning ve knowledge benchmarks.
 
@@ -148,7 +148,7 @@ bu Phi-3 design philosophy aligns closely ile Potato.ai's KB-centric approach:
 ### Gemma 2 (Google, 2024)
 - 2B ve 9B variants from Google
 - Strong reasoning için their size
-- Available under a permissive licence için local use
+- Mevcut under a permissive licence için local use
 
 ### Qwen 2.5 (Alibaba, 2024)
 - 0.5B to 72B variants

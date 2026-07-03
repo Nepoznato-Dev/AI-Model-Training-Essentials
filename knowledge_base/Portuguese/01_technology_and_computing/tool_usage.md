@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on o/a feature branch.
 3. Push o/a branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback com additional commits.
+5. Address code review Feedback com additional commits.
 6. Merge o/a PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor com a rich extension ecosys
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install Idioma support (Python, Rust, Go, etc.), linters, e formatters from o/a Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install Idioma Suporte (Python, Rust, Go, etc.), linters, e formatters from o/a Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures o/a debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor com a rich extension ecosys
 
 - Smart code completion e refactoring are core features.
 - Run/debug configurations let you launch e debug programs com one click.
-- Built-em Git support em o/a VCS menu.
+- Built-em Git Suporte em o/a VCS menu.
 - `Shift+Shift` opens o/a Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Idioma support e add tools.
+- Plugins extend Idioma Suporte e add tools.
 
 ### Terminal tips
 

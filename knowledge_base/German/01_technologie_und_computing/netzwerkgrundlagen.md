@@ -203,7 +203,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ## Backup und Recovery
 
 ### Backup Strategies
-- **Full Backup**: Complete Datenbank copy
+- **Full Backup**: Vollständig Datenbank copy
 - **Incremental Backup**: Changes since last backup
 - **Differential Backup**: Changes since last full backup
 - **Point-in-Time Recovery**: Restore to specific moment

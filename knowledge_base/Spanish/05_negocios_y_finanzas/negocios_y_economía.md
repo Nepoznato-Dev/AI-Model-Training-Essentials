@@ -37,7 +37,7 @@ Criminal Derecho defines crimes y punishments. Crimes are classified as felonies
 
 ## Family Derecho
 
-Family Derecho deals con domestic relations y family matters. Marriage is a Legal union creating rights y obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal support (alimony), y child custody. Child custody determines where children live y who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Legal parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Legal fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Derecho deals con domestic relations y family matters. Marriage is a Legal union creating rights y obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal Soporte (alimony), y child custody. Child custody determines where children live y who makes decisions about their welfare. Child Soporte is financial Soporte paid by non-custodial parents. Adoption creates a Legal parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Legal fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

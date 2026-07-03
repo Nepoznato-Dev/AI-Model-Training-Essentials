@@ -37,7 +37,7 @@ Criminal Direito defines crimes e punishments. Crimes are classified as felonies
 
 ## Family Direito
 
-Family Direito deals com domestic relations e family matters. Marriage is a Jurídico union creating rights e obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal support (alimony), e child custody. Child custody determines where children live e who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Jurídico parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Jurídico fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Direito deals com domestic relations e family matters. Marriage is a Jurídico union creating rights e obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal Suporte (alimony), e child custody. Child custody determines where children live e who makes decisions about their welfare. Child Suporte is financial Suporte paid by non-custodial parents. Adoption creates a Jurídico parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Jurídico fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

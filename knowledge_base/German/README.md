@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Englisch Wissensdatenbank
 
-A comprehensive collection von Referenz documents covering Technologie, Wissenschaft, Geschäft, humanities, und practical skills.
+Eine umfassende Sammlung von Referenz documents covering Technologie, Wissenschaft, Geschäft, humanities, und practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Zuletzt aktualisiert:** June 2025  
+**Gesamtdateien:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Verzeichnisstruktur
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Schnellnavigation
 
 ### Technologie & Datenverarbeitung (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Ereignisse, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Wachsendes Verzeichnis - demnächst:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Spickzettel (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Wachsendes Verzeichnis - demnächst:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Haftungsausschlüsse
+## ⚠️ Wichtige Hinweise
 
 - **Medical Information:** Content in `medicine_and_healthcare.md` is für educational purposes only und should not replace professional medical advice.
 - **Rechtlich Information:** Content in `law_and_legal_systems.md` is informational und does not constitute Rechtlich advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Nutzungsrichtlinien
 
 ### für AI Systeme
 - All files are structured mit clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 Rückmeldung
 
 Found errors? Have suggestions? Please note:
 - Check für duplicates before suggesting new topics

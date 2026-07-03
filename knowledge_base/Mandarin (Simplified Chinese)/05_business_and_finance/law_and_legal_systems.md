@@ -37,7 +37,7 @@ Criminal 法律 defines crimes 和 punishments. Crimes are classified as felonie
 
 ## Family 法律
 
-Family 法律 deals 与 domestic relations 和 family matters. Marriage is a 法律 union creating rights 和 obligations between spouses. Divorce (dissolution 的 marriage) involves division 的 assets, spousal support (alimony), 和 child custody. Child custody determines where children live 和 who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a 法律 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 法律 fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family 法律 deals 与 domestic relations 和 family matters. Marriage is a 法律 union creating rights 和 obligations between spouses. Divorce (dissolution 的 marriage) involves division 的 assets, spousal 支持 (alimony), 和 child custody. Child custody determines where children live 和 who makes decisions about their welfare. Child 支持 is financial 支持 paid by non-custodial parents. Adoption creates a 法律 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 法律 fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

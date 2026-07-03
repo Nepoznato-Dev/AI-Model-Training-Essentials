@@ -122,7 +122,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — the arrangement or layout из Данные; to prepare для use.
-**framework** — a basic structure providing support для building something.
+**framework** — a basic structure providing Поддержка для building something.
 **function** — the purpose из something; a reusable block из code (programming).
 **fundamental** — forming the base or foundation; essential.
 
@@ -273,7 +273,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 
 ## W
 
-**workflow** — a series из steps followed to complete a task.
+**workflow** — a series из steps followed to Полный a task.
 **warrant** — justification для an action; a Юридический document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm для training Нейронные сети by propagating errors backward.
-**bandwidth** — the range из frequencies available; Данные transfer capacity.
+**bandwidth** — the range из frequencies Доступно; Данные transfer capacity.
 **binary** — consisting из two parts; base-2 number system using 0s и 1s.
 **bit** — the smallest unit из Данные (0 or 1); short для binary digit.
 **blockchain** — a distributed ledger Технология recording transactions across multiple computers.
@@ -397,7 +397,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **facade** — the front из a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning в argument.
 **falsifiable** — capable из being proven false; a criterion для scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**Обратная связь loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **platform** — a raised surface; a Вычисления environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available для download.
+**podcast** — a digital audio program Доступно для download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; в OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list из elements.
-**turing-complete** — capable из universal computation.
+**turing-Полный** — capable из universal computation.
 **typology** — study из types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ covering everyday vocabulary, academic terms, и words commonly encountered
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; the _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; Поддержка.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one из a kind.

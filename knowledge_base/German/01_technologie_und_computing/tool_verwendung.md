@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on der/die/das feature branch.
 3. Push der/die/das branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback mit additional commits.
+5. Address code review Rückmeldung mit additional commits.
 6. Merge der/die/das PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor mit a rich extension ecosys
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install Sprache support (Python, Rust, Go, etc.), linters, und formatters from der/die/das Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install Sprache Support (Python, Rust, Go, etc.), linters, und formatters from der/die/das Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures der/die/das debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor mit a rich extension ecosys
 
 - Smart code completion und refactoring are core features.
 - Run/debug configurations let you launch und debug programs mit one click.
-- Built-in Git support in der/die/das VCS menu.
+- Built-in Git Support in der/die/das VCS menu.
 - `Shift+Shift` opens der/die/das Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Sprache support und add tools.
+- Plugins extend Sprache Support und add tools.
 
 ### Terminal tips
 

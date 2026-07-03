@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Inglês Base de conhecimento
 
-A comprehensive collection de Referência documents covering Tecnologia, Ciência, Negócios, humanities, e practical skills.
+Uma coleção abrangente de Referência documents covering Tecnologia, Ciência, Negócios, humanities, e practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Última atualização:** June 2025  
+**Total de arquivos:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Estrutura de diretórios
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Navegação rápida
 
 ### Tecnologia & Computação (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Eventos, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Diretório em crescimento - em breve:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Colas (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Diretório em crescimento - em breve:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -116,7 +116,7 @@ knowledge_base/English/
 
 ---
 
-## 🎯 Caminhos de aprendizado
+## 🎯 Caminhos de aprendizagem
 
 ### para Beginners
 1. Start com `07_reference/general_knowledge.md`
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Avisos legais
+## ⚠️ Avisos importantes
 
 - **Medical Information:** Content em `medicine_and_healthcare.md` is para educational purposes only e should not replace professional medical advice.
 - **Jurídico Information:** Content em `law_and_legal_systems.md` is informational e does not constitute Jurídico advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Diretrizes de uso
 
 ### para AI Sistemas
 - All files are structured com clear hierarchical headings

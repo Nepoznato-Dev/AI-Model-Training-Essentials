@@ -39,7 +39,7 @@ Tell 그 model what to do, not what to avoid. "Don't include jargon" is weaker t
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs support a multi-turn structure:
+Most LLM APIs 지원 a multi-turn structure:
 
 - **System message**: Sets 그 model's behaviour, persona, 와 constraints (persists 위한 그 whole session).
 - **User message**: 그 current query or instruction.
@@ -159,10 +159,10 @@ Generate 10 ideas 위한 [topic]. 위한 each idea, give a one-sentence descript
 text
 
 ### Classification
-Classify 그 following customer feedback as [positive, neutral, negative].
+Classify 그 following customer 피드백 as [positive, neutral, negative].
 Provide a confidence score (0-100) 와 a brief reason.
 
-Feedback: [insert text]
+피드백: [insert text]
 
 ### Translation 와 함께 Style
 Translate 그 following 영어 text to Spanish. Use an informal tone suitable 위한 a social media post.

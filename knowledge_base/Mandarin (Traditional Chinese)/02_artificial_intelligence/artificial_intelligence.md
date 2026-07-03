@@ -23,7 +23,7 @@ Modern AI is broadly divided into Narrow AI (also called Weak AI), which is desi
 
 機器學習 (ML) is a subset 的 AI that enables 系統 to learn from 資料 without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: 這 model is trained on labelled input-output pairs. 範例 include spam detection 和 image classification. Algorithms include linear regression, decision trees, support vector machines, 和 神經網絡.
+**Supervised Learning**: 這 model is trained on labelled input-output pairs. 範例 include spam detection 和 image classification. Algorithms include linear regression, decision trees, 支援 vector machines, 和 神經網絡.
 
 **Unsupervised Learning**: 這 model finds patterns 在 unlabelled 資料. 範例 include customer segmentation 和 anomaly detection. Algorithms include k-means clustering 和 principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models 為 research 和 local 部署
 - **Mistral** (Mistral AI): Efficient open models competitive 與 much larger LLMs
 
-LLMs are trained 在 two stages: pre-training (unsupervised on large text corpora) 和 fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 在 這 most 高級 2024 models.
+LLMs are trained 在 two stages: pre-training (unsupervised on large text corpora) 和 fine-tuning (supervised or via reinforcement learning from human 回饋, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 在 這 most 高級 2024 models.
 
 ## AI Ethics 和 Safety
 

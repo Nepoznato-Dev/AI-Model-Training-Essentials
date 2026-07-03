@@ -51,7 +51,7 @@ le/la Space Race (1957–1969) was a competition between le/la United States et 
 
 ## le/la Information Age
 
-le/la late 20th et early 21st centuries are characterised by le/la Information Age, driven by le/la Développement de digital computers, le/la internet, et mobile Technologie. le/la World Wide Web was invented by Tim Berners-Lee dans 1989 et made publicly available dans 1991, fundamentally transforming Communication, commerce, education, et Culture. le/la rise de personal computers dans le/la 1980s, led by Apple et IBM, brought Informatique into homes. le/la smartphone era, ushered dans by Apple's iPhone dans 2007, placed internet-connected computers dans billions de pockets worldwide.
+le/la late 20th et early 21st centuries are characterised by le/la Information Age, driven by le/la Développement de digital computers, le/la internet, et mobile Technologie. le/la World Wide Web was invented by Tim Berners-Lee dans 1989 et made publicly Disponible dans 1991, fundamentally transforming Communication, commerce, education, et Culture. le/la rise de personal computers dans le/la 1980s, led by Apple et IBM, brought Informatique into homes. le/la smartphone era, ushered dans by Apple's iPhone dans 2007, placed internet-connected computers dans billions de pockets worldwide.
 
 ## le/la 21st Century
 

@@ -51,7 +51,7 @@ After World War II, many countries で Africa と Asia gained independence from 
 
 ## その Information Age
 
-その late 20th と early 21st centuries are characterised by その Information Age, driven by その 開発 の digital computers, その internet, と mobile テクノロジー. その World Wide ウェブ was invented by Tim Berners-Lee で 1989 と made publicly available で 1991, fundamentally transforming コミュニケーション, commerce, education, と 文化. その rise の personal computers で その 1980s, led by Apple と IBM, brought コンピューティング into homes. その smartphone era, ushered で by Apple's iPhone で 2007, placed internet-connected computers で billions の pockets worldwide.
+その late 20th と early 21st centuries are characterised by その Information Age, driven by その 開発 の digital computers, その internet, と mobile テクノロジー. その World Wide ウェブ was invented by Tim Berners-Lee で 1989 と made publicly 利用可能 で 1991, fundamentally transforming コミュニケーション, commerce, education, と 文化. その rise の personal computers で その 1980s, led by Apple と IBM, brought コンピューティング into homes. その smartphone era, ushered で by Apple's iPhone で 2007, placed internet-connected computers で billions の pockets worldwide.
 
 ## その 21st Century
 

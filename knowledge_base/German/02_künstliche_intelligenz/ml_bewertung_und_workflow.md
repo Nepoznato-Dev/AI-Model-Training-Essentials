@@ -14,7 +14,7 @@ A practical Leitfaden to der/die/das ML lifecycle — from problem framing to pr
 ## der/die/das ML Workflow (CRISP-ML)
 
 1. **Geschäft Understanding**: Define der/die/das objective und success criteria.
-2. **Daten Understanding**: Explore available Daten, identify quality issues.
+2. **Daten Understanding**: Explore Verfügbar Daten, identify quality issues.
 3. **Daten Preparation**: Clean, transform, und split Daten.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Leistung against metrics.
@@ -151,7 +151,7 @@ der/die/das relationship between features und target changes over time.
 - **Streaming inference**: Event-driven, real-time mit low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Leistung monitoring**: Track accuracy/F1 over time on live Daten (when ground truth is available).
+- **Leistung monitoring**: Track accuracy/F1 over time on live Daten (when ground truth is Verfügbar).
 - **Daten drift**: Monitor changes in input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes in der/die/das relationship between inputs und outputs.
 - **Prediction drift**: Track der/die/das distribution von predicted outputs.

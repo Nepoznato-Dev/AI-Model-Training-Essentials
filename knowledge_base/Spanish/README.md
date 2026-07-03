@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Inglés Base de conocimientos
 
-A comprehensive collection de Referencia documents covering Tecnología, Ciencia, Negocios, humanities, y practical skills.
+Una colección completa de Referencia documents covering Tecnología, Ciencia, Negocios, humanities, y practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Última actualización:** June 2025  
+**Archivos totales:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Estructura de directorios
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Navegación rápida
 
 ### Tecnología & Informática (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Eventos, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Directorio en crecimiento - próximamente:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Chuletas (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Directorio en crecimiento - próximamente:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Descargos de responsabilidad
+## ⚠️ Avisos importantes
 
 - **Medical Information:** Content en `medicine_and_healthcare.md` is para educational purposes only y should not replace professional medical advice.
 - **Legal Information:** Content en `law_and_legal_systems.md` is informational y does not constitute Legal advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Pautas de uso
 
 ### para AI Sistemas
 - All files are structured con clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 Comentarios
 
 Found errors? Have suggestions? Please note:
 - Check para duplicates before suggesting new topics

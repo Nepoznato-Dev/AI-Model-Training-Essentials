@@ -23,7 +23,7 @@ der/die/das 1950s–1970s saw optimistic early programs like ELIZA (a simple cha
 
 Maschinelles Lernen (ML) is a subset von AI that enables Systeme to learn from Daten without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: der/die/das model is trained on labelled input-output pairs. Beispiele include spam detection und image classification. Algorithms include linear regression, decision trees, support vector machines, und Neuronale Netze.
+**Supervised Learning**: der/die/das model is trained on labelled input-output pairs. Beispiele include spam detection und image classification. Algorithms include linear regression, decision trees, Support vector machines, und Neuronale Netze.
 
 **Unsupervised Learning**: der/die/das model finds patterns in unlabelled Daten. Beispiele include customer segmentation und anomaly detection. Algorithms include k-means clustering und principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models für research und local Bereitstellung
 - **Mistral** (Mistral AI): Efficient open models competitive mit much larger LLMs
 
-LLMs are trained in two stages: pre-training (unsupervised on large text corpora) und fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens in der/die/das most Fortgeschritten 2024 models.
+LLMs are trained in two stages: pre-training (unsupervised on large text corpora) und fine-tuning (supervised or via reinforcement learning from human Rückmeldung, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens in der/die/das most Fortgeschritten 2024 models.
 
 ## AI Ethics und Safety
 

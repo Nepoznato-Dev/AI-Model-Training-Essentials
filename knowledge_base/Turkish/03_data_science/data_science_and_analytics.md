@@ -164,7 +164,7 @@ Veri Bilim is an interdisciplinary field that uses scientific methods, processes
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Support Vector Machines
+  - Destek Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
@@ -284,7 +284,7 @@ Veri Bilim is an interdisciplinary field that uses scientific methods, processes
 - **Accuracy**: Correctness içinde Veri
 - **Completeness**: All required Veri present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Veri available when needed
+- **Timeliness**: Veri Mevcut when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

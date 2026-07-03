@@ -37,7 +37,7 @@ Criminal Recht defines crimes und punishments. Crimes are classified as felonies
 
 ## Family Recht
 
-Family Recht deals mit domestic relations und family matters. Marriage is a Rechtlich union creating rights und obligations between spouses. Divorce (dissolution von marriage) involves division von assets, spousal support (alimony), und child custody. Child custody determines where children live und who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Rechtlich parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Rechtlich fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Recht deals mit domestic relations und family matters. Marriage is a Rechtlich union creating rights und obligations between spouses. Divorce (dissolution von marriage) involves division von assets, spousal Support (alimony), und child custody. Child custody determines where children live und who makes decisions about their welfare. Child Support is financial Support paid by non-custodial parents. Adoption creates a Rechtlich parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Rechtlich fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

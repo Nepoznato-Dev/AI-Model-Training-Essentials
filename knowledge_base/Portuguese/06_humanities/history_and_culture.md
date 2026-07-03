@@ -51,7 +51,7 @@ o/a Space Race (1957–1969) was a competition between o/a United States e Sovie
 
 ## o/a Information Age
 
-o/a late 20th e early 21st centuries are characterised by o/a Information Age, driven by o/a Desenvolvimento de digital computers, o/a internet, e mobile Tecnologia. o/a World Wide Web was invented by Tim Berners-Lee em 1989 e made publicly available em 1991, fundamentally transforming Comunicação, commerce, education, e Cultura. o/a rise de personal computers em o/a 1980s, led by Apple e IBM, brought Computação into homes. o/a smartphone era, ushered em by Apple's iPhone em 2007, placed internet-connected computers em billions de pockets worldwide.
+o/a late 20th e early 21st centuries are characterised by o/a Information Age, driven by o/a Desenvolvimento de digital computers, o/a internet, e mobile Tecnologia. o/a World Wide Web was invented by Tim Berners-Lee em 1989 e made publicly Disponível em 1991, fundamentally transforming Comunicação, commerce, education, e Cultura. o/a rise de personal computers em o/a 1980s, led by Apple e IBM, brought Computação into homes. o/a smartphone era, ushered em by Apple's iPhone em 2007, placed internet-connected computers em billions de pockets worldwide.
 
 ## o/a 21st Century
 

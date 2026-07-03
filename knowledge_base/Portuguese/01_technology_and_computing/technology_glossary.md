@@ -104,11 +104,11 @@ $40,000 each but offer 10–30× o/a AI throughput de consumer RTX cards.
 ### AMD Radeon RX Series
 AMD's consumer GPU line. o/a RX 7900 XTX (2022) has 24GB VRAM e can run
 local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA para AI frameworks, though support is improving.
+well-supported than NVIDIA para AI frameworks, though Suporte is improving.
 
 ### Intel Arc
 Intel Arc is Intel's discrete GPU product line, released starting em 2022. Arc
-GPUs support XeSS (Intel's super-sampling) e have limited but growing support
+GPUs Suporte XeSS (Intel's super-sampling) e have limited but growing Suporte
 para AI inference tasks via OpenVINO e IPEX-LLM frameworks.
 
 ### ARK Intel (ark.intel.com)
@@ -179,7 +179,7 @@ hardware or even mobile devices.
 ### Context Window
 o/a context window is o/a maximum number de tokens a model can process at once,
 including both o/a prompt e o/a generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo e Claude 3 support 128,000 tokens; Gemini 1.5 Pro
+window; GPT-4 Turbo e Claude 3 Suporte 128,000 tokens; Gemini 1.5 Pro
 supports 1,000,000 tokens. A larger context window allows o/a model to "see"
 more de a conversation or document at once, improving coherence over long
 exchanges.
@@ -205,5 +205,5 @@ encoder-decoder Transformers (T5, BART) are used para translation e summarisatio
 Embeddings are dense numerical representations de text (or images) produced by
 a neural Rede. Semantically similar texts have embeddings that are close em
 vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings e support fast approximate nearest-neighbour search. They are
+these embeddings e Suporte fast approximate nearest-neighbour search. They are
 o/a storage backbone de RAG Sistemas, including Potato.ai's cold-memory layer.

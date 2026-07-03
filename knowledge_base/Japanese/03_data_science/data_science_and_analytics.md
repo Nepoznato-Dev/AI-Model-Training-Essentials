@@ -164,7 +164,7 @@ For accuracy improvements, please contribute edits via pull requests.
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Support Vector Machines
+  - サポート Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
@@ -284,7 +284,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Accuracy**: Correctness の データ
 - **Completeness**: All required データ present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: データ available when needed
+- **Timeliness**: データ 利用可能 when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

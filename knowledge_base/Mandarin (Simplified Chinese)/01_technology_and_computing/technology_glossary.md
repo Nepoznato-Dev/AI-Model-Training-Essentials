@@ -104,11 +104,11 @@ $40,000 each but offer 10–30× 这 AI throughput 的 consumer RTX cards.
 ### AMD Radeon RX Series
 AMD's consumer GPU line. 这 RX 7900 XTX (2022) has 24GB VRAM 和 can run
 local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA 为 AI frameworks, though support is improving.
+well-supported than NVIDIA 为 AI frameworks, though 支持 is improving.
 
 ### Intel Arc
 Intel Arc is Intel's discrete GPU product line, released starting 在 2022. Arc
-GPUs support XeSS (Intel's super-sampling) 和 have limited but growing support
+GPUs 支持 XeSS (Intel's super-sampling) 和 have limited but growing 支持
 为 AI inference tasks via OpenVINO 和 IPEX-LLM frameworks.
 
 ### ARK Intel (ark.intel.com)
@@ -179,12 +179,12 @@ hardware or even mobile devices.
 ### Context Window
 这 context window is 这 maximum number 的 tokens a model can process at once,
 including both 这 prompt 和 这 generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo 和 Claude 3 support 128,000 tokens; Gemini 1.5 Pro
+window; GPT-4 Turbo 和 Claude 3 支持 128,000 tokens; Gemini 1.5 Pro
 supports 1,000,000 tokens. A larger context window allows 这 model to "see"
 more 的 a conversation or document at once, improving coherence over long
 exchanges.
 
-### RLHF (Reinforcement Learning from Human Feedback)
+### RLHF (Reinforcement Learning from Human 反馈)
 RLHF is 这 training technique that transforms a base 语言 model (which
 simply predicts 这 next token) into an assistant that follows instructions 和
 behaves helpfully. Human raters score model outputs, a reward model is trained
@@ -205,5 +205,5 @@ encoder-decoder Transformers (T5, BART) are used 为 translation 和 summarisati
 Embeddings are dense numerical representations 的 text (or images) produced by
 a neural 网络. Semantically similar texts have embeddings that are close 在
 vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings 和 support fast approximate nearest-neighbour search. They are
+these embeddings 和 支持 fast approximate nearest-neighbour search. They are
 这 storage backbone 的 RAG 系统, including Potato.ai's cold-memory layer.

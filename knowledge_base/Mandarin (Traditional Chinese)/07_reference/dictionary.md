@@ -122,7 +122,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — 這 arrangement or layout 的 資料; to prepare 為 use.
-**framework** — a basic structure providing support 為 building something.
+**framework** — a basic structure providing 支援 為 building something.
 **function** — 這 purpose 的 something; a reusable block 的 code (programming).
 **fundamental** — forming 這 base or foundation; essential.
 
@@ -273,7 +273,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 
 ## W
 
-**workflow** — a series 的 steps followed to complete a task.
+**workflow** — a series 的 steps followed to 完整 a task.
 **warrant** — justification 為 an action; a 法律 document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm 為 training 神經網絡 by propagating errors backward.
-**bandwidth** — 這 range 的 frequencies available; 資料 transfer capacity.
+**bandwidth** — 這 range 的 frequencies 可用; 資料 transfer capacity.
 **binary** — consisting 的 two parts; base-2 number system using 0s 和 1s.
 **bit** — 這 smallest unit 的 資料 (0 or 1); short 為 binary digit.
 **blockchain** — a distributed ledger 技術 recording transactions across multiple computers.
@@ -397,7 +397,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **facade** — 這 front 的 a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning 在 argument.
 **falsifiable** — capable 的 being proven false; a criterion 為 scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**回饋 loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **platform** — a raised surface; a 計算 environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available 為 download.
+**podcast** — a digital audio program 可用 為 download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; 在 OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list 的 elements.
-**turing-complete** — capable 的 universal computation.
+**turing-完整** — capable 的 universal computation.
 **typology** — study 的 types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ covering everyday vocabulary, academic terms, 和 words commonly encountered
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; 這 _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; 支援.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one 的 a kind.

@@ -203,7 +203,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ## Backup と Recovery
 
 ### Backup Strategies
-- **Full Backup**: Complete データベース copy
+- **Full Backup**: 完全 データベース copy
 - **Incremental Backup**: Changes since last backup
 - **Differential Backup**: Changes since last full backup
 - **Point-で-Time Recovery**: Restore to specific moment
@@ -259,7 +259,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Use Cases**: Semantic search, recommendation システム, AI applications
 
 ### Multi-Model Databases
-- Support multiple データ models で single system
+- サポート multiple データ models で single system
 - **例**: ArangoDB, OrientDB, Azure Cosmos DB
 - **Benefit**: Flexibility without multiple databases
 

@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on ال feature branch.
 3. Push ال branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback مع additional commits.
+5. Address code review ملاحظات مع additional commits.
 6. Merge ال PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor مع a rich extension ecosy
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install اللغة support (Python, Rust, Go, etc.), linters, و formatters from ال Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install اللغة الدعم (Python, Rust, Go, etc.), linters, و formatters from ال Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures ال debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor مع a rich extension ecosy
 
 - Smart code completion و refactoring are core features.
 - Run/debug configurations let you launch و debug programs مع one click.
-- Built-في Git support في ال VCS menu.
+- Built-في Git الدعم في ال VCS menu.
 - `Shift+Shift` opens ال Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend اللغة support و add tools.
+- Plugins extend اللغة الدعم و add tools.
 
 ### Terminal tips
 

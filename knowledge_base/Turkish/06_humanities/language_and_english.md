@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, ve engaging.
 **Active reading** involves engaging ile bu text by asking questions, making predictions, summarizing, ve making connections.
 
 - bu **main idea** is bu central point içinde a passage.
-- Details, Örnekler, ve evidence support bu main idea.
+- Details, Örnekler, ve evidence Destek bu main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words ve phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ bu following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about bu limits içinde one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is bu tendency içinde AI Sistemler to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge ve responding ile an honest acknowledgement içinde uncertainty rather than an invented answer.
+**Hallucination** is bu tendency içinde AI Sistemler to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Mevcut knowledge ve responding ile an honest acknowledgement içinde uncertainty rather than an invented answer.
 
 **Useful phrases için expressing uncertainty:**
 - "I'm not certain, but…"

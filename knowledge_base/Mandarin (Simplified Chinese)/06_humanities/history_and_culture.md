@@ -51,7 +51,7 @@ After World War II, many countries 在 Africa 和 Asia gained independence from 
 
 ## 这 Information Age
 
-这 late 20th 和 early 21st centuries are characterised by 这 Information Age, driven by 这 开发 的 digital computers, 这 internet, 和 mobile 技术. 这 World Wide 网络 was invented by Tim Berners-Lee 在 1989 和 made publicly available 在 1991, fundamentally transforming 沟通, commerce, education, 和 文化. 这 rise 的 personal computers 在 这 1980s, led by Apple 和 IBM, brought 计算 into homes. 这 smartphone era, ushered 在 by Apple's iPhone 在 2007, placed internet-connected computers 在 billions 的 pockets worldwide.
+这 late 20th 和 early 21st centuries are characterised by 这 Information Age, driven by 这 开发 的 digital computers, 这 internet, 和 mobile 技术. 这 World Wide 网络 was invented by Tim Berners-Lee 在 1989 和 made publicly 可用 在 1991, fundamentally transforming 沟通, commerce, education, 和 文化. 这 rise 的 personal computers 在 这 1980s, led by Apple 和 IBM, brought 计算 into homes. 这 smartphone era, ushered 在 by Apple's iPhone 在 2007, placed internet-connected computers 在 billions 的 pockets worldwide.
 
 ## 这 21st Century
 

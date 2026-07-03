@@ -104,11 +104,11 @@ $40,000 each but offer 10–30× bu AI throughput içinde consumer RTX cards.
 ### AMD Radeon RX Series
 AMD's consumer GPU line. bu RX 7900 XTX (2022) has 24GB VRAM ve can run
 local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA için AI frameworks, though support is improving.
+well-supported than NVIDIA için AI frameworks, though Destek is improving.
 
 ### Intel Arc
 Intel Arc is Intel's discrete GPU product line, released starting içinde 2022. Arc
-GPUs support XeSS (Intel's super-sampling) ve have limited but growing support
+GPUs Destek XeSS (Intel's super-sampling) ve have limited but growing Destek
 için AI inference tasks via OpenVINO ve IPEX-LLM frameworks.
 
 ### ARK Intel (ark.intel.com)
@@ -179,12 +179,12 @@ hardware or even mobile devices.
 ### Context Window
 bu context window is bu maximum number içinde tokens a model can process at once,
 including both bu prompt ve bu generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo ve Claude 3 support 128,000 tokens; Gemini 1.5 Pro
+window; GPT-4 Turbo ve Claude 3 Destek 128,000 tokens; Gemini 1.5 Pro
 supports 1,000,000 tokens. A larger context window allows bu model to "see"
 more içinde a conversation or document at once, improving coherence over long
 exchanges.
 
-### RLHF (Reinforcement Learning from Human Feedback)
+### RLHF (Reinforcement Learning from Human Geri Bildirim)
 RLHF is bu training technique that transforms a base Dil model (which
 simply predicts bu next token) into an assistant that follows instructions ve
 behaves helpfully. Human raters score model outputs, a reward model is trained
@@ -205,5 +205,5 @@ encoder-decoder Transformers (T5, BART) are used için translation ve summarisat
 Embeddings are dense numerical representations içinde text (or images) produced by
 a neural Ağ. Semantically similar texts have embeddings that are close içinde
 vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings ve support fast approximate nearest-neighbour search. They are
+these embeddings ve Destek fast approximate nearest-neighbour search. They are
 bu storage backbone içinde RAG Sistemler, including Potato.ai's cold-memory layer.

@@ -33,7 +33,7 @@ Mental health encompasses emotional, psychological, 和 social well-being. Psych
 
 ## Therapeutic Approaches
 
-Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 和 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 和 behaviors. Humanistic therapy emphasizes self-exploration 和 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer support. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 和 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 和 patient values. Prevention 和 early intervention improve outcomes. Self-care practices include exercise, sleep, 营养, mindfulness, 和 social connection.
+Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 和 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 和 behaviors. Humanistic therapy emphasizes self-exploration 和 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer 支持. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 和 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 和 patient values. Prevention 和 early intervention improve outcomes. Self-care practices include exercise, sleep, 营养, mindfulness, 和 social connection.
 
 ## Neuroscience 和 Behavior
 

@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Anglais Base de connaissances
 
-A comprehensive collection de Référence documents covering Technologie, Science, Entreprise, humanities, et practical skills.
+Une collection complète de Référence documents covering Technologie, Science, Entreprise, humanities, et practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Dernière mise à jour:** June 2025  
+**Fichiers totaux:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Structure du répertoire
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Navigation rapide
 
 ### Technologie & Informatique (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Événements, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Répertoire en croissance - bientôt disponible:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Aide-mémoire (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Répertoire en croissance - bientôt disponible:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Avertissements
+## ⚠️ Avertissements importants
 
 - **Medical Information:** Content dans `medicine_and_healthcare.md` is pour educational purposes only et should not replace professional medical advice.
 - **Juridique Information:** Content dans `law_and_legal_systems.md` is informational et does not constitute Juridique advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Consignes d'utilisation
 
 ### pour AI Systèmes
 - All files are structured avec clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 Retour
 
 Found errors? Have suggestions? Please note:
 - Check pour duplicates before suggesting new topics

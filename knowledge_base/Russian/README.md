@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Английский База знаний
 
-A comprehensive collection из Справочник documents covering Технология, Наука, Бизнес, humanities, и practical skills.
+Полная коллекция из Справочник documents covering Технология, Наука, Бизнес, humanities, и practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**Последнее обновление:** June 2025  
+**Всего файлов:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 Структура каталогов
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 Быстрая навигация
 
 ### Технология & Вычисления (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming События, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*Растущий каталог - скоро будет:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Шпаргалки (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*Растущий каталог - скоро будет:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important Отказ от ответственности
+## ⚠️ Важные предупреждения
 
 - **Medical Information:** Content в `medicine_and_healthcare.md` is для educational purposes only и should not replace professional medical advice.
 - **Юридический Information:** Content в `law_and_legal_systems.md` is informational и does not constitute Юридический advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 Руководство по использованию
 
 ### для AI Системы
 - All files are structured с clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 Обратная связь
 
 Found errors? Have suggestions? Please note:
 - Check для duplicates before suggesting new topics

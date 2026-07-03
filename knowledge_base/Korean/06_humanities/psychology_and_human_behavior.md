@@ -33,7 +33,7 @@ Mental health encompasses emotional, psychological, 와 social well-being. Psych
 
 ## Therapeutic Approaches
 
-Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 와 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 와 behaviors. Humanistic therapy emphasizes self-exploration 와 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer support. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 와 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 와 patient values. Prevention 와 early intervention improve outcomes. Self-care practices include exercise, sleep, 영양, mindfulness, 와 social connection.
+Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 와 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 와 behaviors. Humanistic therapy emphasizes self-exploration 와 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer 지원. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 와 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 와 patient values. Prevention 와 early intervention improve outcomes. Self-care practices include exercise, sleep, 영양, mindfulness, 와 social connection.
 
 ## Neuroscience 와 Behavior
 

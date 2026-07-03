@@ -20,7 +20,7 @@ Phi-3-mini is a small Sprache model (SLM) developed by Microsoft Research, relea
 - **Two context variants**: 4,096 tokens (standard) und 128,000 tokens (long context)
 - **Runs on consumer hardware** — fits comfortably in 8GB VRAM in 4-bit quantisation
 - **Mobile Bereitstellung** — Microsoft demonstrated Phi-3-mini running on an iPhone 14
-- **Open weights** — available on Hugging Face für local use
+- **Open weights** — Verfügbar on Hugging Face für local use
 
 Despite its small size, Phi-3-mini matches or outperforms models 3–5× larger on a range von reasoning und knowledge benchmarks.
 
@@ -148,7 +148,7 @@ der/die/das Phi-3 design philosophy aligns closely mit Potato.ai's KB-centric ap
 ### Gemma 2 (Google, 2024)
 - 2B und 9B variants from Google
 - Strong reasoning für their size
-- Available under a permissive licence für local use
+- Verfügbar under a permissive licence für local use
 
 ### Qwen 2.5 (Alibaba, 2024)
 - 0.5B to 72B variants

@@ -326,7 +326,7 @@ du -ah | sort -hr | head -20
 
 | Shortcut | Action |
 |----------|--------|
-| `Tab` | Auto-complete |
+| `Tab` | Auto-完整 |
 | `Ctrl+C` | Kill current command |
 | `Ctrl+Z` | Suspend command |
 | `Ctrl+D` | Exit shell/EOF |
@@ -358,4 +358,4 @@ du -ah | sort -hr | head -20
 
 ---
 
-*Last updated: June 2025 | Linux/Unix compatible*
+*最後更新: June 2025 | Linux/Unix compatible*

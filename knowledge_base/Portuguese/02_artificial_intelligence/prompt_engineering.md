@@ -39,7 +39,7 @@ Tell o/a model what to do, not what to avoid. "Don't include jargon" is weaker t
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs support a multi-turn structure:
+Most LLM APIs Suporte a multi-turn structure:
 
 - **System message**: Sets o/a model's behaviour, persona, e constraints (persists para o/a whole session).
 - **User message**: o/a current query or instruction.
@@ -159,7 +159,7 @@ Generate 10 ideas para [topic]. para each idea, give a one-sentence description 
 text
 
 ### Classification
-Classify o/a following customer feedback as [positive, neutral, negative].
+Classify o/a following customer Feedback as [positive, neutral, negative].
 Provide a confidence score (0-100) e a brief reason.
 
 Feedback: [insert text]

@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, и engaging.
 **Active reading** involves engaging с the text by asking questions, making predictions, summarizing, и making connections.
 
 - the **main idea** is the central point из a passage.
-- Details, Примеры, и evidence support the main idea.
+- Details, Примеры, и evidence Поддержка the main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words и phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ the following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about the limits из one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is the tendency из AI Системы to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge и responding с an honest acknowledgement из uncertainty rather than an invented answer.
+**Hallucination** is the tendency из AI Системы to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Доступно knowledge и responding с an honest acknowledgement из uncertainty rather than an invented answer.
 
 **Useful phrases для expressing uncertainty:**
 - "I'm not certain, but…"

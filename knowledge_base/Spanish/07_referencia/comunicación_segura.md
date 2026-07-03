@@ -122,7 +122,7 @@ en questions y discussions.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — el/la arrangement or layout de Datos; to prepare para use.
-**framework** — a basic structure providing support para building something.
+**framework** — a basic structure providing Soporte para building something.
 **function** — el/la purpose de something; a reusable block de code (programming).
 **fundamental** — forming el/la base or foundation; essential.
 
@@ -273,7 +273,7 @@ en questions y discussions.
 
 ## W
 
-**workflow** — a series de steps followed to complete a task.
+**workflow** — a series de steps followed to Completo a task.
 **warrant** — justification para an action; a Legal document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ en questions y discussions.
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm para training Redes neuronales by propagating errors backward.
-**bandwidth** — el/la range de frequencies available; Datos transfer capacity.
+**bandwidth** — el/la range de frequencies Disponible; Datos transfer capacity.
 **binary** — consisting de two parts; base-2 number system using 0s y 1s.
 **bit** — el/la smallest unit de Datos (0 or 1); short para binary digit.
 **blockchain** — a distributed ledger Tecnología recording transactions across multiple computers.
@@ -397,7 +397,7 @@ en questions y discussions.
 **facade** — el/la front de a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning en argument.
 **falsifiable** — capable de being proven false; a criterion para scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**Comentarios loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ en questions y discussions.
 **platform** — a raised surface; a Informática environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available para download.
+**podcast** — a digital audio program Disponible para download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; en OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ en questions y discussions.
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list de elements.
-**turing-complete** — capable de universal computation.
+**turing-Completo** — capable de universal computation.
 **typology** — study de types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ en questions y discussions.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; el/la _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; Soporte.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one de a kind.

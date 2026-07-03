@@ -23,7 +23,7 @@ o/a 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) e 
 
 Aprendizado de máquina (ML) is a subset de AI that enables Sistemas to learn from Dados without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: o/a model is trained on labelled input-output pairs. Exemplos include spam detection e image classification. Algorithms include linear regression, decision trees, support vector machines, e Redes neurais.
+**Supervised Learning**: o/a model is trained on labelled input-output pairs. Exemplos include spam detection e image classification. Algorithms include linear regression, decision trees, Suporte vector machines, e Redes neurais.
 
 **Unsupervised Learning**: o/a model finds patterns em unlabelled Dados. Exemplos include customer segmentation e anomaly detection. Algorithms include k-means clustering e principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models para research e local Implantação
 - **Mistral** (Mistral AI): Efficient open models competitive com much larger LLMs
 
-LLMs are trained em two stages: pre-training (unsupervised on large text corpora) e fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens em o/a most Avançado 2024 models.
+LLMs are trained em two stages: pre-training (unsupervised on large text corpora) e fine-tuning (supervised or via reinforcement learning from human Feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens em o/a most Avançado 2024 models.
 
 ## AI Ethics e Safety
 

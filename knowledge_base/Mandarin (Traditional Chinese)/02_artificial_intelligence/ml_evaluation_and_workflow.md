@@ -14,7 +14,7 @@ A practical 指南 to 這 ML lifecycle — from problem framing to production mo
 ## 這 ML Workflow (CRISP-ML)
 
 1. **商業 Understanding**: Define 這 objective 和 success criteria.
-2. **資料 Understanding**: Explore available 資料, identify quality issues.
+2. **資料 Understanding**: Explore 可用 資料, identify quality issues.
 3. **資料 Preparation**: Clean, transform, 和 split 資料.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess 效能 against metrics.
@@ -151,7 +151,7 @@ Model performs poorly on both training 和 validation.
 - **Streaming inference**: Event-driven, real-time 與 low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **效能 monitoring**: Track accuracy/F1 over time on live 資料 (when ground truth is available).
+- **效能 monitoring**: Track accuracy/F1 over time on live 資料 (when ground truth is 可用).
 - **資料 drift**: Monitor changes 在 input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes 在 這 relationship between inputs 和 outputs.
 - **Prediction drift**: Track 這 distribution 的 predicted outputs.

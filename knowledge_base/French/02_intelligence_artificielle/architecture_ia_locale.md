@@ -23,7 +23,7 @@ le/la 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) 
 
 Apprentissage automatique (ML) is a subset de AI that enables Systèmes to learn from Données without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: le/la model is trained on labelled input-output pairs. Exemples include spam detection et image classification. Algorithms include linear regression, decision trees, support vector machines, et Réseaux de neurones.
+**Supervised Learning**: le/la model is trained on labelled input-output pairs. Exemples include spam detection et image classification. Algorithms include linear regression, decision trees, Assistance vector machines, et Réseaux de neurones.
 
 **Unsupervised Learning**: le/la model finds patterns dans unlabelled Données. Exemples include customer segmentation et anomaly detection. Algorithms include k-means clustering et principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models pour research et local Déploiement
 - **Mistral** (Mistral AI): Efficient open models competitive avec much larger LLMs
 
-LLMs are trained dans two stages: pre-training (unsupervised on large text corpora) et fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens dans le/la most Avancé 2024 models.
+LLMs are trained dans two stages: pre-training (unsupervised on large text corpora) et fine-tuning (supervised or via reinforcement learning from human Retour, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens dans le/la most Avancé 2024 models.
 
 ## AI Ethics et Safety
 

@@ -337,7 +337,7 @@ __pycache__/
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl+R` | Reverse search 역사 |
-| `Tab` | Auto-complete |
+| `Tab` | Auto-완전한 |
 | `Ctrl+C` | Cancel command |
 | `Ctrl+Z` | Suspend process |
 | `fg` | Resume suspended process |
@@ -393,4 +393,4 @@ Closes #123
 
 ---
 
-*Last updated: June 2025 | Git 2.x*
+*최종 업데이트: June 2025 | Git 2.x*

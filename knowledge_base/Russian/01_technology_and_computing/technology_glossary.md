@@ -104,11 +104,11 @@ $40,000 each but offer 10–30× the AI throughput из consumer RTX cards.
 ### AMD Radeon RX Series
 AMD's consumer GPU line. the RX 7900 XTX (2022) has 24GB VRAM и can run
 local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA для AI frameworks, though support is improving.
+well-supported than NVIDIA для AI frameworks, though Поддержка is improving.
 
 ### Intel Arc
 Intel Arc is Intel's discrete GPU product line, released starting в 2022. Arc
-GPUs support XeSS (Intel's super-sampling) и have limited but growing support
+GPUs Поддержка XeSS (Intel's super-sampling) и have limited but growing Поддержка
 для AI inference tasks via OpenVINO и IPEX-LLM frameworks.
 
 ### ARK Intel (ark.intel.com)
@@ -179,12 +179,12 @@ hardware or even mobile devices.
 ### Context Window
 the context window is the maximum number из tokens a model can process at once,
 including both the prompt и the generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo и Claude 3 support 128,000 tokens; Gemini 1.5 Pro
+window; GPT-4 Turbo и Claude 3 Поддержка 128,000 tokens; Gemini 1.5 Pro
 supports 1,000,000 tokens. A larger context window allows the model to "see"
 more из a conversation or document at once, improving coherence over long
 exchanges.
 
-### RLHF (Reinforcement Learning from Human Feedback)
+### RLHF (Reinforcement Learning from Human Обратная связь)
 RLHF is the training technique that transforms a base Язык model (which
 simply predicts the next token) into an assistant that follows instructions и
 behaves helpfully. Human raters score model outputs, a reward model is trained
@@ -205,5 +205,5 @@ encoder-decoder Transformers (T5, BART) are used для translation и summarisa
 Embeddings are dense numerical representations из text (or images) produced by
 a neural Сеть. Semantically similar texts have embeddings that are close в
 vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings и support fast approximate nearest-neighbour search. They are
+these embeddings и Поддержка fast approximate nearest-neighbour search. They are
 the storage backbone из RAG Системы, including Potato.ai's cold-memory layer.

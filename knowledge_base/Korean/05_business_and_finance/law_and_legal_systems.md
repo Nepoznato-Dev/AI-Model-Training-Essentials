@@ -37,7 +37,7 @@ Criminal 법률 defines crimes 와 punishments. Crimes are classified as felonie
 
 ## Family 법률
 
-Family 법률 deals 와 함께 domestic relations 와 family matters. Marriage is a 법적 union creating rights 와 obligations between spouses. Divorce (dissolution 의 marriage) involves division 의 assets, spousal support (alimony), 와 child custody. Child custody determines where children live 와 who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a 법적 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 법적 fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family 법률 deals 와 함께 domestic relations 와 family matters. Marriage is a 법적 union creating rights 와 obligations between spouses. Divorce (dissolution 의 marriage) involves division 의 assets, spousal 지원 (alimony), 와 child custody. Child custody determines where children live 와 who makes decisions about their welfare. Child 지원 is financial 지원 paid by non-custodial parents. Adoption creates a 법적 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 법적 fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

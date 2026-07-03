@@ -39,7 +39,7 @@ Tell ال model what to do, not what to avoid. "Don't include jargon" is weaker 
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs support a multi-turn structure:
+Most LLM APIs الدعم a multi-turn structure:
 
 - **System message**: Sets ال model's behaviour, persona, و constraints (persists لأجل ال whole session).
 - **User message**: ال current query or instruction.
@@ -159,10 +159,10 @@ Generate 10 ideas لأجل [topic]. لأجل each idea, give a one-sentence desc
 text
 
 ### Classification
-Classify ال following customer feedback as [positive, neutral, negative].
+Classify ال following customer ملاحظات as [positive, neutral, negative].
 Provide a confidence score (0-100) و a brief reason.
 
-Feedback: [insert text]
+ملاحظات: [insert text]
 
 ### Translation مع Style
 Translate ال following الإنجليزية text to Spanish. Use an informal tone suitable لأجل a social media post.

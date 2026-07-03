@@ -488,7 +488,7 @@ scores["Bob"]   = 87;
 
 ## Swift
 
-Swift is a modern, statically typed programming 언어 developed by Apple 위한 iOS, macOS, watchOS, 와 tvOS. It is also available on Linux.
+Swift is a modern, statically typed programming 언어 developed by Apple 위한 iOS, macOS, watchOS, 와 tvOS. It is also 사용 가능 on Linux.
 
 ### 기본
 

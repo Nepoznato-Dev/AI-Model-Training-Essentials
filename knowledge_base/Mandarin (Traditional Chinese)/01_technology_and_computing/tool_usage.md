@@ -63,7 +63,7 @@ git rebase main
 2. Make commits on 這 feature branch.
 3. Push 這 branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback 與 additional commits.
+5. Address code review 回饋 與 additional commits.
 6. Merge 這 PR once approved.
 
 ### Undoing changes
@@ -229,7 +229,7 @@ VS Code is a lightweight, cross-platform code editor 與 a rich extension ecosys
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install 語言 support (Python, Rust, Go, etc.), linters, 和 formatters from 這 Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install 語言 支援 (Python, Rust, Go, etc.), linters, 和 formatters from 這 Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures 這 debugger.
 
@@ -237,10 +237,10 @@ VS Code is a lightweight, cross-platform code editor 與 a rich extension ecosys
 
 - Smart code completion 和 refactoring are core features.
 - Run/debug configurations let you launch 和 debug programs 與 one click.
-- Built-在 Git support 在 這 VCS menu.
+- Built-在 Git 支援 在 這 VCS menu.
 - `Shift+Shift` opens 這 Search Everywhere dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend 語言 support 和 add tools.
+- Plugins extend 語言 支援 和 add tools.
 
 ### Terminal tips
 

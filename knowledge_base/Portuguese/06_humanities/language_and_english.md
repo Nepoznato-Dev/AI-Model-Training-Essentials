@@ -84,7 +84,7 @@ Good writing is clear, concise, coherent, e engaging.
 **Active reading** involves engaging com o/a text by asking questions, making predictions, summarizing, e making connections.
 
 - o/a **main idea** is o/a central point de a passage.
-- Details, Exemplos, e evidence support o/a main idea.
+- Details, Exemplos, e evidence Suporte o/a main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words e phrases surrounding an unfamiliar word that help determine its meaning.
 
@@ -151,7 +151,7 @@ o/a following indefinite pronouns are **always singular**:
 
 **Epistemic honesty** means being truthful about o/a limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is o/a tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside available knowledge e responding com an honest acknowledgement de uncertainty rather than an invented answer.
+**Hallucination** is o/a tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponível knowledge e responding com an honest acknowledgement de uncertainty rather than an invented answer.
 
 **Useful phrases para expressing uncertainty:**
 - "I'm not certain, but…"

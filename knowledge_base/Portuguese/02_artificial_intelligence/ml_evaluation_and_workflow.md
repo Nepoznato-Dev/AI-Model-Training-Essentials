@@ -14,7 +14,7 @@ A practical Guia to o/a ML lifecycle — from problem framing to production moni
 ## o/a ML Workflow (CRISP-ML)
 
 1. **Negócios Understanding**: Define o/a objective e success criteria.
-2. **Dados Understanding**: Explore available Dados, identify quality issues.
+2. **Dados Understanding**: Explore Disponível Dados, identify quality issues.
 3. **Dados Preparation**: Clean, transform, e split Dados.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Desempenho against metrics.
@@ -151,7 +151,7 @@ o/a relationship between features e target changes over time.
 - **Streaming inference**: Event-driven, real-time com low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Desempenho monitoring**: Track accuracy/F1 over time on live Dados (when ground truth is available).
+- **Desempenho monitoring**: Track accuracy/F1 over time on live Dados (when ground truth is Disponível).
 - **Dados drift**: Monitor changes em input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes em o/a relationship between inputs e outputs.
 - **Prediction drift**: Track o/a distribution de predicted outputs.

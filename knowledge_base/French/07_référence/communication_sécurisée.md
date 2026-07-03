@@ -122,7 +122,7 @@ dans questions et discussions.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
 **format** — le/la arrangement or layout de Données; to prepare pour use.
-**framework** — a basic structure providing support pour building something.
+**framework** — a basic structure providing Assistance pour building something.
 **function** — le/la purpose de something; a reusable block de code (programming).
 **fundamental** — forming le/la base or foundation; essential.
 
@@ -273,7 +273,7 @@ dans questions et discussions.
 
 ## W
 
-**workflow** — a series de steps followed to complete a task.
+**workflow** — a series de steps followed to Complet a task.
 **warrant** — justification pour an action; a Juridique document authorizing something.
 
 ## X
@@ -311,7 +311,7 @@ dans questions et discussions.
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm pour training Réseaux de neurones by propagating errors backward.
-**bandwidth** — le/la range de frequencies available; Données transfer capacity.
+**bandwidth** — le/la range de frequencies Disponible; Données transfer capacity.
 **binary** — consisting de two parts; base-2 number system using 0s et 1s.
 **bit** — le/la smallest unit de Données (0 or 1); short pour binary digit.
 **blockchain** — a distributed ledger Technologie recording transactions across multiple computers.
@@ -397,7 +397,7 @@ dans questions et discussions.
 **facade** — le/la front de a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning dans argument.
 **falsifiable** — capable de being proven false; a criterion pour scientific claims.
-**feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**Retour loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
 **finite** — having limits or bounds; not infinite.
 **flux** — continuous change; flow or movement.
@@ -590,7 +590,7 @@ dans questions et discussions.
 **platform** — a raised surface; a Informatique environment; a service foundation.
 **plethora** — an excess; abundance.
 **pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program available pour download.
+**podcast** — a digital audio program Disponible pour download.
 **polar** — relating to poles; having opposite extremes.
 **politic** — prudent; tactful; relating to government.
 **polymorphic** — having multiple forms; dans OOP, methods behaving differently by type.
@@ -788,7 +788,7 @@ dans questions et discussions.
 **turbulence** — chaotic fluid motion; instability.
 **tutorial** — instructional lesson.
 **tuple** — an ordered list de elements.
-**turing-complete** — capable de universal computation.
+**turing-Complet** — capable de universal computation.
 **typology** — study de types or classifications.
 
 **ubiquitous** — present everywhere.
@@ -796,7 +796,7 @@ dans questions et discussions.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
 **underscore** — to emphasize; le/la _ character.
-**underwrite** — to guarantee financially; support.
+**underwrite** — to guarantee financially; Assistance.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
 **unique** — one de a kind.

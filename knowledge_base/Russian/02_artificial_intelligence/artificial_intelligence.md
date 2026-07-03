@@ -23,7 +23,7 @@ the 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) и
 
 Машинное обучение (ML) is a subset из AI that enables Системы to learn from Данные without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: the model is trained on labelled input-output pairs. Примеры include spam detection и image classification. Algorithms include linear regression, decision trees, support vector machines, и Нейронные сети.
+**Supervised Learning**: the model is trained on labelled input-output pairs. Примеры include spam detection и image classification. Algorithms include linear regression, decision trees, Поддержка vector machines, и Нейронные сети.
 
 **Unsupervised Learning**: the model finds patterns в unlabelled Данные. Примеры include customer segmentation и anomaly detection. Algorithms include k-means clustering и principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models для research и local Развертывание
 - **Mistral** (Mistral AI): Efficient open models competitive с much larger LLMs
 
-LLMs are trained в two stages: pre-training (unsupervised on large text corpora) и fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens в the most Продвинутый 2024 models.
+LLMs are trained в two stages: pre-training (unsupervised on large text corpora) и fine-tuning (supervised or via reinforcement learning from human Обратная связь, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens в the most Продвинутый 2024 models.
 
 ## AI Ethics и Safety
 

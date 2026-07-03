@@ -14,7 +14,7 @@ A practical 가이드 to 그 ML lifecycle — from problem framing to production
 ## 그 ML Workflow (CRISP-ML)
 
 1. **비즈니스 Understanding**: Define 그 objective 와 success criteria.
-2. **데이터 Understanding**: Explore available 데이터, identify quality issues.
+2. **데이터 Understanding**: Explore 사용 가능 데이터, identify quality issues.
 3. **데이터 Preparation**: Clean, transform, 와 split 데이터.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess 성능 against metrics.
@@ -151,7 +151,7 @@ Model performs poorly on both training 와 validation.
 - **Streaming inference**: Event-driven, real-time 와 함께 low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **성능 monitoring**: Track accuracy/F1 over time on live 데이터 (when ground truth is available).
+- **성능 monitoring**: Track accuracy/F1 over time on live 데이터 (when ground truth is 사용 가능).
 - **데이터 drift**: Monitor changes 에서 input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes 에서 그 relationship between inputs 와 outputs.
 - **Prediction drift**: Track 그 distribution 의 predicted outputs.

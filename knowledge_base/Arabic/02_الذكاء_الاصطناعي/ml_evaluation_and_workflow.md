@@ -14,7 +14,7 @@ A practical دليل to ال ML lifecycle — from problem framing to production
 ## ال ML Workflow (CRISP-ML)
 
 1. **الأعمال Understanding**: Define ال objective و success criteria.
-2. **البيانات Understanding**: Explore available البيانات, identify quality issues.
+2. **البيانات Understanding**: Explore متاح البيانات, identify quality issues.
 3. **البيانات Preparation**: Clean, transform, و split البيانات.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess الأداء against metrics.
@@ -151,7 +151,7 @@ Model performs poorly on both training و validation.
 - **Streaming inference**: Event-driven, real-time مع low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **الأداء monitoring**: Track accuracy/F1 over time on live البيانات (when ground truth is available).
+- **الأداء monitoring**: Track accuracy/F1 over time on live البيانات (when ground truth is متاح).
 - **البيانات drift**: Monitor changes في input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes في ال relationship between inputs و outputs.
 - **Prediction drift**: Track ال distribution من predicted outputs.

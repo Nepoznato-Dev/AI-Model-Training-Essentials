@@ -14,7 +14,7 @@ A practical Руководство to the ML lifecycle — from problem framing 
 ## the ML Workflow (CRISP-ML)
 
 1. **Бизнес Understanding**: Define the objective и success criteria.
-2. **Данные Understanding**: Explore available Данные, identify quality issues.
+2. **Данные Understanding**: Explore Доступно Данные, identify quality issues.
 3. **Данные Preparation**: Clean, transform, и split Данные.
 4. **Modelling**: Train models, tune hyperparameters.
 5. **Evaluation**: Assess Производительность against metrics.
@@ -151,7 +151,7 @@ the relationship between features и target changes over time.
 - **Streaming inference**: Event-driven, real-time с low latency (e.g., IoT sensor alerts).
 
 ### Model Monitoring
-- **Производительность monitoring**: Track accuracy/F1 over time on live Данные (when ground truth is available).
+- **Производительность monitoring**: Track accuracy/F1 over time on live Данные (when ground truth is Доступно).
 - **Данные drift**: Monitor changes в input feature distributions (e.g., using PSI – Population Stability Index).
 - **Concept drift**: Monitor changes в the relationship between inputs и outputs.
 - **Prediction drift**: Track the distribution из predicted outputs.

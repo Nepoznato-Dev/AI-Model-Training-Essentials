@@ -75,7 +75,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Republic**: State without monarchy, representatives elected
 - **Monarchy**: Ruled by king/queen (constitutional, absolute)
 - **Authoritarian**: Limited political freedom, centralized power
-- **Totalitarian**: Complete state control over public и private life
+- **Totalitarian**: Полный state control over public и private life
 - **Federal**: Power divided between national и regional governments
 - **Unitary**: Centralized government, regional authorities subordinate
 

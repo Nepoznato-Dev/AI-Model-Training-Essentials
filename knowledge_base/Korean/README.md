@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 영어 지식 기반
 
-A comprehensive collection 의 참조 documents covering 기술, 과학, 비즈니스, humanities, 와 practical skills.
+포괄적인 컬렉션 의 참조 documents covering 기술, 과학, 비즈니스, humanities, 와 practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
+**최종 업데이트:** June 2025  
+**전체 파일 수:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
 ---
 
-## 📁 Directory Structure
+## 📁 디렉터리 구조
 
 ```
 knowledge_base/English/
@@ -33,7 +33,7 @@ knowledge_base/English/
 
 ---
 
-## 📚 Quick Navigation
+## 📚 빠른 탐색
 
 ### 기술 & 컴퓨팅 (`01_technology_and_computing/`)
 | File | Description | Lines |
@@ -99,7 +99,7 @@ knowledge_base/English/
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming 이벤트, space missions, tech trends | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
-*Growing directory - coming soon:*
+*성장 중인 디렉터리 - 곧 제공 예정:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### 치트 시트 (`10_cheat_sheets/`)
-*Growing directory - coming soon:*
+*성장 중인 디렉터리 - 곧 제공 예정:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -161,7 +161,7 @@ knowledge_base/English/
 
 ---
 
-## ⚠️ Important 면책 조항
+## ⚠️ 중요한 고지 사항
 
 - **Medical Information:** Content 에서 `medicine_and_healthcare.md` is 위한 educational purposes only 와 should not replace professional medical advice.
 - **법적 Information:** Content 에서 `law_and_legal_systems.md` is informational 와 does not constitute 법적 advice.
@@ -170,7 +170,7 @@ knowledge_base/English/
 
 ---
 
-## 🔧 Usage Guidelines
+## 🔧 사용 지침
 
 ### 위한 AI 시스템
 - All files are structured 와 함께 clear hierarchical headings
@@ -225,7 +225,7 @@ last_updated: YYYY-MM-DD
 
 ---
 
-## 📞 Feedback
+## 📞 피드백
 
 Found errors? Have suggestions? Please note:
 - Check 위한 duplicates before suggesting new topics

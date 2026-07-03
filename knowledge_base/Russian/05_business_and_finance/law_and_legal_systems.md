@@ -37,7 +37,7 @@ Criminal Закон defines crimes и punishments. Crimes are classified as felo
 
 ## Family Закон
 
-Family Закон deals с domestic relations и family matters. Marriage is a Юридический union creating rights и obligations between spouses. Divorce (dissolution из marriage) involves division из assets, spousal support (alimony), и child custody. Child custody determines where children live и who makes decisions about their welfare. Child support is financial support paid by non-custodial parents. Adoption creates a Юридический parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Юридический fatherhood. Prenuptial agreements specify asset division if marriage ends.
+Family Закон deals с domestic relations и family matters. Marriage is a Юридический union creating rights и obligations between spouses. Divorce (dissolution из marriage) involves division из assets, spousal Поддержка (alimony), и child custody. Child custody determines where children live и who makes decisions about their welfare. Child Поддержка is financial Поддержка paid by non-custodial parents. Adoption creates a Юридический parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Юридический fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
 ## Intellectual Property
 

@@ -23,7 +23,7 @@ Modern AI is broadly divided into Narrow AI (also called Weak AI), which is desi
 
 機械学習 (ML) is a subset の AI that enables システム to learn from データ without being explicitly programmed. Key ML categories include:
 
-**Supervised Learning**: その model is trained on labelled input-output pairs. 例 include spam detection と image classification. Algorithms include linear regression, decision trees, support vector machines, と ニューラルネットワーク.
+**Supervised Learning**: その model is trained on labelled input-output pairs. 例 include spam detection と image classification. Algorithms include linear regression, decision trees, サポート vector machines, と ニューラルネットワーク.
 
 **Unsupervised Learning**: その model finds patterns で unlabelled データ. 例 include customer segmentation と anomaly detection. Algorithms include k-means clustering と principal component analysis (PCA).
 
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models のために research と local デプロイ
 - **Mistral** (Mistral AI): Efficient open models competitive と much larger LLMs
 
-LLMs are trained で two stages: pre-training (unsupervised on large text corpora) と fine-tuning (supervised or via reinforcement learning from human feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens で その most 上級 2024 models.
+LLMs are trained で two stages: pre-training (unsupervised on large text corpora) と fine-tuning (supervised or via reinforcement learning from human フィードバック, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens で その most 上級 2024 models.
 
 ## AI Ethics と Safety
 

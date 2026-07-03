@@ -51,7 +51,7 @@ the Space Race (1957–1969) was a competition between the United States и Sovi
 
 ## the Information Age
 
-the late 20th и early 21st centuries are characterised by the Information Age, driven by the Разработка из digital computers, the internet, и mobile Технология. the World Wide Веб was invented by Tim Berners-Lee в 1989 и made publicly available в 1991, fundamentally transforming Коммуникация, commerce, education, и Культура. the rise из personal computers в the 1980s, led by Apple и IBM, brought Вычисления into homes. the smartphone era, ushered в by Apple's iPhone в 2007, placed internet-connected computers в billions из pockets worldwide.
+the late 20th и early 21st centuries are characterised by the Information Age, driven by the Разработка из digital computers, the internet, и mobile Технология. the World Wide Веб was invented by Tim Berners-Lee в 1989 и made publicly Доступно в 1991, fundamentally transforming Коммуникация, commerce, education, и Культура. the rise из personal computers в the 1980s, led by Apple и IBM, brought Вычисления into homes. the smartphone era, ushered в by Apple's iPhone в 2007, placed internet-connected computers в billions из pockets worldwide.
 
 ## the 21st Century
 

@@ -203,7 +203,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ## Backup ve Recovery
 
 ### Backup Strategies
-- **Full Backup**: Complete Veritabanı copy
+- **Full Backup**: Tam Veritabanı copy
 - **Incremental Backup**: Changes since last backup
 - **Differential Backup**: Changes since last full backup
 - **Point-içinde-Time Recovery**: Restore to specific moment
@@ -259,7 +259,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Use Cases**: Semantic search, recommendation Sistemler, AI applications
 
 ### Multi-Model Databases
-- Support multiple Veri models içinde single system
+- Destek multiple Veri models içinde single system
 - **Örnekler**: ArangoDB, OrientDB, Azure Cosmos DB
 - **Benefit**: Flexibility without multiple databases
 

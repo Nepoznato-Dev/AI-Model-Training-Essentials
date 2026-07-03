@@ -164,7 +164,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Support Vector Machines
+  - Assistance Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
@@ -284,7 +284,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 - **Accuracy**: Correctness de Données
 - **Completeness**: All required Données present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Données available when needed
+- **Timeliness**: Données Disponible when needed
 - **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 

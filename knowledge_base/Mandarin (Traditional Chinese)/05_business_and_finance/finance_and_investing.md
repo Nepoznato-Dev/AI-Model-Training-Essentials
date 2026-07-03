@@ -234,7 +234,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
 ### Trend Analysis
-- **Support**: Price level where buying pressure exceeds selling
+- **支援**: Price level where buying pressure exceeds selling
 - **Resistance**: Price level where selling pressure exceeds buying
 - **Trendlines**: Connect highs or lows to show direction
 - **Moving Averages**: SMA (simple), EMA (exponential)
@@ -246,7 +246,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **MACD**: Moving Average Convergence Divergence
 - **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: Support/resistance levels based on ratios
+- **Fibonacci Retracement**: 支援/resistance levels based on ratios
 
 ### Chart Patterns
 - **Reversal Patterns**: Head 和 shoulders, double top/bottom

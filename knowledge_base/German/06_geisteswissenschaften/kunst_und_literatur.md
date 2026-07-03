@@ -51,7 +51,7 @@ der/die/das Space Race (1957–1969) was a competition between der/die/das Unite
 
 ## der/die/das Information Age
 
-der/die/das late 20th und early 21st centuries are characterised by der/die/das Information Age, driven by der/die/das Entwicklung von digital computers, der/die/das internet, und mobile Technologie. der/die/das World Wide Web was invented by Tim Berners-Lee in 1989 und made publicly available in 1991, fundamentally transforming Kommunikation, commerce, education, und Kultur. der/die/das rise von personal computers in der/die/das 1980s, led by Apple und IBM, brought Datenverarbeitung into homes. der/die/das smartphone era, ushered in by Apple's iPhone in 2007, placed internet-connected computers in billions von pockets worldwide.
+der/die/das late 20th und early 21st centuries are characterised by der/die/das Information Age, driven by der/die/das Entwicklung von digital computers, der/die/das internet, und mobile Technologie. der/die/das World Wide Web was invented by Tim Berners-Lee in 1989 und made publicly Verfügbar in 1991, fundamentally transforming Kommunikation, commerce, education, und Kultur. der/die/das rise von personal computers in der/die/das 1980s, led by Apple und IBM, brought Datenverarbeitung into homes. der/die/das smartphone era, ushered in by Apple's iPhone in 2007, placed internet-connected computers in billions von pockets worldwide.
 
 ## der/die/das 21st Century
 
