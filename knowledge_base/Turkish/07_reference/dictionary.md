@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: dictionary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # İngilizce Sözlük — Common Word Definitions
 
 A Referans list içinde frequently used İngilizce words ve their meanings,

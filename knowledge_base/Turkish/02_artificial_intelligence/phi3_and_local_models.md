@@ -1,4 +1,4 @@
-# Phi-3-mini ve Yerel AI Model Ekosistemi
+# Phi-3-mini ve Yerel Yapay Zekâ Model Ekosistemi
 
 Microsoft'un Phi-3-mini modeline; tasarım felsefesine, mimari tercihlerine ve performans özelliklerine yönelik bir inceleme — ve başarısının bize etkili, verimli AI sistemleri kurma konusunda ne öğrettiği.
 
@@ -15,7 +15,7 @@ Phi-3-mini, Microsoft Research tarafından geliştirilen ve Nisan 2024'te yayım
 - **Mobil dağıtım** — Microsoft, Phi-3-mini'nin iPhone 14 üzerinde çalıştığını gösterdi
 - **Açık ağırlıklar** — yerel kullanım için Hugging Face üzerinde mevcuttur
 
-Küçük boyutuna rağmen Phi-3-mini, akıl yürütme ve bilgi odaklı çeşitli benchmark'larda kendisinden 3–5× daha büyük modellerle eşleşir ya da onları geride bırakır.
+Küçük boyutuna rağmen Phi-3-mini, akıl yürütme ve bilgi odaklı çeşitli kıyaslama testlerinde kendisinden 3–5× daha büyük modellerle eşleşir ya da onları geride bırakır.
 
 ---
 
@@ -26,7 +26,7 @@ Phi serisinin merkezindeki içgörü şudur: **veri kalitesi, veri miktarından 
 Phi ekibi şu soruyu sordu: Ham web metni yerine, ders kitaplarında bulunan yoğun, iyi açıklanmış ve yapılandırılmış içerikle eğitim yapılsaydı ne olurdu?
 
 ### Phi-1 (2023): Kavramın Kanıtı
-İlk Phi-1 makalesi ("Textbooks Are All You Need"), sentetik olarak üretilmiş "ders kitabı kalitesinde" Python kodu ve alıştırmalar üzerinde 1.3B'lik bir modeli eğitti. Model, HumanEval'de (Python code generation) kendi boyutunun 10× üzerindeki modelleri geçti. Bu, özenle seçilmiş ve yapılandırılmış verinin daha küçük model boyutunu telafi edebileceğine dair güçlü bir işaretti.
+İlk Phi-1 makalesi ("Textbooks Are All You Need"), sentetik olarak üretilmiş "ders kitabı kalitesinde" Python kodu ve alıştırmalar üzerinde 1.3B'lik bir modeli eğitti. Model, HumanEval'de (Python kod üretimi) kendi boyutunun 10× üzerindeki modelleri geçti. Bu, özenle seçilmiş ve yapılandırılmış verinin daha küçük model boyutunu telafi edebileceğine dair güçlü bir işaretti.
 
 ### Phi-1.5 ve Phi-2
 Sonraki modeller, yaklaşımı genel akıl yürütmeye genişletti ve şu karışımı kullandı:
@@ -47,33 +47,33 @@ Eğitim veri kümesi şunları içerir:
 
 ## Mimari Ayrıntılar
 
-Phi-3-mini, birkaç verimlilik iyileştirmesiyle birlikte standart decoder-only Transformer mimarisini kullanır:
+Phi-3-mini, birkaç verimlilik iyileştirmesiyle birlikte standart, yalnızca kod çözücüden oluşan Transformer mimarisini kullanır:
 
-### Grouped-Query Attention (GQA)
+### Gruplanmış Sorgu Dikkati (GQA)
 Standart multi-head attention (MHA), her attention head için bir key-value (KV) head kullanır. GQA, birden fazla attention head'in aynı KV head'leri paylaşmasını sağlayarak KV cache boyutunu — yani çıkarım sırasında bağlamı saklamak için gereken belleği — azaltır. Bu da özellikle 128k uzun bağlam varyantında, aksi hâlde çok büyük KV cache'ler gerekeceği için, Phi-3-mini'yi çıkarım sırasında belirgin biçimde daha hızlı kılar.
 
 ### Mimari Değerler
 - Katmanlar: 32
-- Attention head'leri: 32 (query), 8 (key-value, grouped)
+- Dikkat başlıkları: 32 (sorgu), 8 (anahtar-değer, gruplanmış)
 - Gizli boyut: 3,072
 - Feed-forward boyutu: 8,192
-- Sözlük boyutu: 32,064 (Llama tokenizer ile aynı)
+- Sözlük boyutu: 32,064 (Llama tokenlaştırıcısı ile aynı)
 - Aktivasyon fonksiyonu: SiLU (Sigmoid Linear Unit)
 
 ### SFT ve RLHF Hizalaması
-Tüm dağıtılmış chat modelleri gibi Phi-3-mini de şu aşamalardan geçer:
+Tüm dağıtılmış sohbet modelleri gibi Phi-3-mini de şu aşamalardan geçer:
 1. Talimat izleme örnekleri üzerinde **Supervised Fine-Tuning (SFT)**
-2. İnsan tercih verileri üzerinde eğitilmiş bir reward model'e karşı **Proximal Policy Optimisation (PPO)**
+2. İnsan tercih verileri üzerinde eğitilmiş bir ödül modeline karşı **Proximal Policy Optimisation (PPO)**
 
 Bu süreç, sonraki token'ı tahmin eden temel modeli; talimatları izleyen, faydalı bir asistana dönüştürür.
 
 ---
 
-## Benchmark Performansı
+## Karşılaştırma Testi Performansı
 
 Phi-3-mini, parametre sayısına göre dikkat çekici derecede iyi performans gösterir:
 
-| Benchmark | Phi-3-mini (3.8B) | Llama 3 8B | Mistral 7B | GPT-3.5 |
+| Test | Phi-3-mini (3.8B) | Llama 3 8B | Mistral 7B | GPT-3.5 |
 |-----------|-------------------|------------|------------|---------|
 | MMLU      | ~69%              | ~66%       | ~62%       | ~70%    |
 | HumanEval | ~56%              | ~60%       | ~30%       | ~73%    |
@@ -82,7 +82,7 @@ Phi-3-mini, parametre sayısına göre dikkat çekici derecede iyi performans g�
 
 **Temel gözlemler:**
 - Phi-3-mini, MMLU'da 50× daha az parametreyle GPT-3.5 seviyesine ulaşır
-- Daha küçük olmasına rağmen listelenen her benchmark'ta Mistral 7B'yi geçer
+- Daha küçük olmasına rağmen listelenen her kıyaslama testinde Mistral 7B'yi geçer
 - 2× daha küçük olmasına karşın (3.8B vs 8B), Llama 3 8B ile neredeyse aynı düzeydedir
 
 *Kaynak: Microsoft Phi-3 Technical Report (Nisan 2024)*
@@ -94,20 +94,20 @@ Phi-3-mini, parametre sayısına göre dikkat çekici derecede iyi performans g�
 Phi deneyimi birkaç önemli ders gösteriyor:
 
 ### 1. Eğitim Verisinin Dağılımı En Belirleyici Etkendir
-Bir modelin benchmark'larda aldığı skorlar, ham parametre sayısından çok eğitildiği veri türünü yansıtır. Yüksek kaliteli akıl yürütme örnekleri üzerinde eğitilmiş küçük bir model, akıl yürütme benchmark'larında gürültülü web metniyle eğitilmiş büyük bir modeli geçecektir.
+Bir modelin kıyaslama testlerinde aldığı skorlar, ham parametre sayısından çok eğitildiği veri türünü yansıtır. Yüksek kaliteli akıl yürütme örnekleri üzerinde eğitilmiş küçük bir model, akıl yürütme testlerinde gürültülü web metniyle eğitilmiş büyük bir modeli geçecektir.
 
 ### 2. Bilgi Yoğunluğu ve Bilgi Hacmi
-3.8B'lik bir model, ağırlıklarında 70B'lik bir model kadar çok olgusal bilgiyi depolayamaz. Ancak kapasitesini olgu ezberlemek yerine yapılandırılmış akıl yürütme için kullanacak şekilde eğitilmişse yine de iyi akıl yürütebilir. GSM8K gibi benchmark'lar çok adımlı aritmetik akıl yürütmeyi ölçer — ve bu beceri verimli biçimde öğretilebilir.
+3.8B'lik bir model, ağırlıklarında 70B'lik bir model kadar çok olgusal bilgiyi depolayamaz. Ancak kapasitesini olgu ezberlemek yerine yapılandırılmış akıl yürütme için kullanacak şekilde eğitilmişse yine de iyi akıl yürütebilir. GSM8K gibi kıyaslama testleri çok adımlı aritmetik akıl yürütmeyi ölçer — ve bu beceri verimli biçimde öğretilebilir.
 
 ### 3. Maliyet-Verimlilik Eğrisi
-Birçok gerçek dünya görevi için (Q&A, coding assistance, summarisation) Phi-3-mini düzeyinde yetenek yeterlidir. 3.8B'lik bir modeli yerel olarak çalıştırmak:
+Birçok gerçek dünya görevi için (soru-cevap, kodlama yardımı, özetleme) Phi-3-mini düzeyinde yetenek yeterlidir. 3.8B'lik bir modeli yerel olarak çalıştırmak:
 - **Ücretsizdir** — API maliyeti yoktur
 - **Özeldir** — veri cihazdan çıkmaz
-- **Hızlıdır** — modern bir laptop GPU'sunda gerçek zamanlı token üretir
+- **Hızlıdır** — modern bir dizüstü bilgisayar GPU'sunda gerçek zamanlı token üretir
 - **Her yere dağıtılabilir** — akıllı telefonlar, uç cihazlar, air-gapped sistemler
 
 ### 4. Güç Çarpanı Olarak Sentetik Veri Üretimi
-Büyük bir teacher model'in (GPT-4), küçük bir student model için yüksek kaliteli eğitim verisi üretmesi bir bilgi damıtımı biçimidir. Bu "en iyiden öğren, en ekonomik olanı dağıt" yaklaşımı sektörde giderek daha yaygın hâle geliyor.
+Büyük bir öğretmen modelin (GPT-4), küçük bir öğrenci model için yüksek kaliteli eğitim verisi üretmesi bir bilgi damıtımı biçimidir. Bu "en iyiden öğren, en ekonomik olanı dağıt" yaklaşımı sektörde giderek daha yaygın hâle geliyor.
 
 ---
 
@@ -119,9 +119,9 @@ Phi-3 tasarım felsefesi, Potato.ai'nin KB merkezli yaklaşımıyla yakından ö
 
 **Akıl yürütme yapısına odaklanma**: Phi-3, adım adım akıl yürütmeyi gösteren örneklerle eğitilmiştir. Potato.ai de KB kaynaklarının ham olgular yerine açıklamalar içermesini sağlayarak benzer şekilde iyileşebilir.
 
-**Verimli KB kapsamı**: Phi-3-mini'nin 3.8B parametresi, insan bilgisinin büyük bir bölümünü verimli biçimde kapsamak zorundadır. Potato.ai'nin seed edilen KB kaynakları da benzer şekilde, kelime başına yaygın sorguların mümkün olan en geniş kapsamını hedeflemelidir.
+**Verimli KB kapsamı**: Phi-3-mini'nin 3.8B parametresi, insan bilgisinin büyük bir bölümünü verimli biçimde kapsamak zorundadır. Potato.ai'nin başlangıçta eklenen KB kaynakları da benzer şekilde, kelime başına yaygın sorguların mümkün olan en geniş kapsamını hedeflemelidir.
 
-**Yerel öncelikli yaklaşım uygulanabilirdir**: Phi-3-mini'nin başarısı, tamamen yerel bir AI'nin birçok görevde cloud tabanlı modellerle eşleşebileceğini gösterir. Bu da Potato.ai'nin harici API çağrıları olmadan tamamen cihaz üzerinde çalışan mimarisini doğrular.
+**Yerel öncelikli yaklaşım uygulanabilirdir**: Phi-3-mini'nin başarısı, tamamen yerel bir AI'nin birçok görevde bulut tabanlı modellerle eşleşebileceğini gösterir. Bu da Potato.ai'nin harici API çağrıları olmadan tamamen cihaz üzerinde çalışan mimarisini doğrular.
 
 ---
 
@@ -136,7 +136,7 @@ Phi-3 tasarım felsefesi, Potato.ai'nin KB merkezli yaklaşımıyla yakından ö
 ### Mistral / Mixtral
 - **Mistral 7B**: Boyutunun ötesinde performans gösterir, sliding-window attention kullanır
 - **Mixtral 8x7B**: Mixture of experts, yerelde GPT-3.5 düzeyinde performans
-- **Mistral-Nemo 12B**: Daha büyük, sınıfı için state-of-the-art
+- **Mistral-Nemo 12B**: Daha büyük, sınıfı için son teknoloji
 
 ### Gemma 2 (Google, 2024)
 - Google'dan 2B ve 9B varyantları
@@ -150,13 +150,13 @@ Phi-3 tasarım felsefesi, Potato.ai'nin KB merkezli yaklaşımıyla yakından ö
 
 ---
 
-## 2024–2025'te Yerel AI Model Pazarı
+## 2024–2025'te Yerel Yapay Zekâ Model Pazarı
 
-2024'te yerel ve cloud modeller arasındaki fark dramatik biçimde daraldı:
+2024'te yerel ve bulut modelleri arasındaki fark dramatik biçimde daraldı:
 
-- Laptop üzerinde çalışan ücretsiz, 4-bit kuantize bir Phi-3-mini; eğitimi milyonlarca dolara mal olmuş GPT-3.5'i birçok benchmark'ta geride bırakıyor
+- Laptop üzerinde çalışan ücretsiz, 4-bit kuantize bir Phi-3-mini; eğitimi milyonlarca dolara mal olmuş GPT-3.5'i birçok kıyaslama testinde geride bırakıyor
 - Tüketici sınıfı 24GB GPU'lar (NVIDIA RTX 3090, 4090), 70B modelleri 4-bit çalıştırabiliyor
-- Apple Silicon M serisi Mac'ler, birleşik bellek mimarileri nedeniyle yerel AI için popüler; 64GB belleğe sahip bir M3 Max, 70B modelleri akıcı biçimde çalıştırabiliyor
+- Apple Silicon M serisi Mac'ler, birleşik bellek mimarileri nedeniyle yerel yapay zekâ için popüler; 64GB belleğe sahip bir M3 Max, 70B modelleri akıcı biçimde çalıştırabiliyor
 - Ollama, LM Studio ve llama.cpp, yerel model dağıtımını teknik olmayan kullanıcılar için erişilebilir hâle getirdi
 
-Bunun anlamı şu: Mahremiyetin kritik olduğu uygulamalar, uç dağıtım veya maliyet duyarlı senaryolar için yerel modeller artık çok çeşitli görevlerde cloud API'lerine karşı inandırıcı bir alternatiftir.
+Bunun anlamı şu: Mahremiyetin kritik olduğu uygulamalar, uç dağıtım veya maliyet duyarlı senaryolar için yerel modeller artık çok çeşitli görevlerde bulut API'lerine karşı inandırıcı bir alternatiftir.

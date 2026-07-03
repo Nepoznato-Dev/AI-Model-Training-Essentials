@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: tool_usage.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Tool Usage
 
 ## Git — Version Control

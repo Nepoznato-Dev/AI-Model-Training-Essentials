@@ -1,20 +1,20 @@
-<!-- 
+<!--
 Этот файл был автоматически переведён с английского на русский.
 Источник: data_science_and_analytics.md
 Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском.
 Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
-# наука о данных и аналитика
+# Наука о данных и аналитика
 
 ## Основные концепции
 
 ### Что такое наука о данных?
-наука о данных — это междисциплинарная область, которая использует научные методы, процессы, алгоритмы и системы для извлечения знаний и выводов из структурированных и неструктурированных данных. Она объединяет:
-- **Статистика**: математическую основу анализа
-- **Информатика**: программирование, алгоритмы, структуры данных
-- **Предметная экспертиза**: знание предметной области
-- **Визуализация данных**: эффективное представление результатов
+Наука о данных — это междисциплинарная область, которая использует научные методы, процессы, алгоритмы и системы для извлечения знаний и выводов из структурированных и неструктурированных данных. Она объединяет:
+- **Статистику**: математическую основу анализа
+- **Информатику**: программирование, алгоритмы, структуры данных
+- **Предметную экспертизу**: знание конкретной области
+- **Визуализацию данных**: наглядное представление результатов
 
 ### Типы данных
 - **Структурированные данные**: организованы в строки и столбцы (базы данных, электронные таблицы)
@@ -43,19 +43,19 @@
 ### Выводная статистика
 - **Проверка гипотез**: нулевая гипотеза, альтернативная гипотеза, p-значения
 - **Доверительные интервалы**: диапазон значений, который с высокой вероятностью содержит параметр генеральной совокупности
-- **Статистическая значимость**: вероятность того, что результат получен случайно
+- **Статистическая значимость**: вероятность того, что результат не является случайным
 - **Ошибка I рода**: ложноположительный результат (отклонение истинной нулевой гипотезы)
 - **Ошибка II рода**: ложноотрицательный результат (неотклонение ложной нулевой гипотезы)
 - **Мощность теста**: вероятность правильно отклонить ложную нулевую гипотезу
 
 ### Распределения вероятностей
-- **Нормальное распределение**: колоколообразная кривая, среднее = медиана = мода
+- **Нормальное распределение**: колоколообразная кривая, где среднее, медиана и мода совпадают
 - **Биномиальное распределение**: исходы типа успех/неудача
 - **Распределение Пуассона**: число событий в фиксированном интервале
 - **Равномерное распределение**: все исходы равновероятны
 - **Экспоненциальное распределение**: время между событиями
-- **t-распределение**: малые выборки, неизвестная дисперсия генеральной совокупности
-- **Распределение хи-квадрат**: анализ категориальных данных
+- **t-распределение**: используется при малых выборках и неизвестной дисперсии генеральной совокупности
+- **Распределение хи-квадрат**: применяется для анализа категориальных данных
 
 ### Статистические тесты
 - **t-тест**: сравнение средних двух групп
@@ -81,7 +81,7 @@
 - **Озеро данных (Data Lake)**: хранение сырых данных в исходном формате
 - **Хранилище данных (Data Warehouse)**: структурированные, обработанные данные для анализа
 - **Витрина данных (Data Mart)**: подмножество хранилища для конкретного подразделения
-- **OLAP**: многомерная аналитическая обработка, многомерные запросы
+- **OLAP**: многомерная аналитическая обработка и многомерные запросы
 - **Звездообразная схема**: таблицы фактов, окружённые таблицами измерений
 - **Снежинка**: нормализованные таблицы измерений
 
@@ -159,7 +159,7 @@
   - Регрессор на дереве решений
   - Регрессор случайного леса
   - Градиентный бустинг (XGBoost, LightGBM, CatBoost)
-  
+
 - **Классификация**: предсказание категориальных меток
   - Логистическая регрессия
   - k-ближайших соседей
@@ -177,165 +177,165 @@
   - DBSCAN (на основе плотности)
   - Модели гауссовых смесей
   - Спектральная кластеризация
-  
-- **Снижение размерности**: Reduce feature count
+
+- **Снижение размерности**: уменьшение числа признаков
   - Principal Component Analysis (PCA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
   - Uniform Manifold Approximation (UMAP)
-  - Autoencoders
-  
-- **Association Rules**: Find co-occurring items
-  - Apriori Algorithm
+  - Автоэнкодеры
+
+- **Правила ассоциаций**: поиск часто совместно встречающихся элементов
+  - Алгоритм Apriori
   - FP-Growth
 
-### Model Evaluation
-- **Классификация Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Регрессия Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradeoff
+### Оценка моделей
+- **Метрики классификации**: accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
+- **Метрики регрессии**: MAE, MSE, RMSE, R², Adjusted R²
+- **Кросс-валидация**: k-fold, stratified, leave-one-out, time series split
+- **Подбор гиперпараметров**: grid search, random search, байесовская оптимизация
+- **Кривые обучения**: диагностика компромисса между смещением и дисперсией
 
-## Big Данные Technologies
+## Технологии Big Data
 
-### Distributed Вычисления Frameworks
+### Фреймворки распределённых вычислений
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: в-memory processing, faster than Hadoop
-  - Spark SQL: Структурированные данные processing
-  - Spark Streaming: Real-time Данные
-  - MLlib: Машинное обучение library
-  - ГрафовыеX: Графовые processing
-- **Apache Flink**: Stream processing с low latency
-- **Apache Beam**: Unified batch и streaming
+- **Apache Spark**: обработка в памяти, быстрее Hadoop
+  - Spark SQL: обработка структурированных данных
+  - Spark Streaming: данные в реальном времени
+  - MLlib: библиотека машинного обучения
+  - GraphX: обработка графов
+- **Apache Flink**: потоковая обработка с низкой задержкой
+- **Apache Beam**: единая модель для пакетной и потоковой обработки
 
-### Cloud Platforms
+### Облачные платформы
 - **AWS**: S3, EMR, Redshift, SageMaker, Glue
 - **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
-- **Azure**: Synapse аналитика, Databricks, Машинное обучение, Данные Lake
-- **Snowflake**: Cloud Данные warehouse
+- **Azure**: Synapse Analytics, Databricks, Azure Machine Learning, Data Lake
+- **Snowflake**: облачное хранилище данных
 
-### Данные Pipeline Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline Управление (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: Данные orchestrator с asset focus
-- **dbt**: Данные transformation в warehouse
+### Инструменты для конвейеров данных
+- **Apache Airflow**: оркестрация рабочих процессов
+- **Luigi**: управление конвейерами данных (Spotify)
+- **Prefect**: современная оркестрация рабочих процессов
+- **Dagster**: оркестратор данных с фокусом на активы данных
+- **dbt**: преобразование данных в хранилище
 
-## Бизнес Intelligence и аналитика
+## Бизнес-аналитика и аналитика
 
-### BI Tools
-- **Tableau**: Visual analytics platform
-- **Мощность теста BI**: Microsoft Бизнес analytics
-- **Looker**: Данные exploration и insights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+### BI-инструменты
+- **Tableau**: платформа визуальной аналитики
+- **Power BI**: платформа бизнес-аналитики от Microsoft
+- **Looker**: исследование данных и получение инсайтов (Google)
+- **Qlik Sense**: ассоциативная аналитика
+- **Metabase**: BI-инструмент с открытым исходным кодом
+- **Superset**: BI-платформа Apache с открытым исходным кодом
 
-### Dashboard Design Principles
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to Данные type
-- **Use Color Strategically**: Highlight important information
-- **Maintain Consistency**: Standardize formats и scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Производительность**: Fast loading, efficient queries
-- **Mobile Considerations**: Responsive design
+### Принципы проектирования дашбордов
+- **Знайте свою аудиторию**: адаптируйте дашборд под потребности пользователей
+- **Выбирайте подходящие визуализации**: соотносите тип графика с типом данных
+- **Используйте цвет осмысленно**: выделяйте важную информацию
+- **Соблюдайте единообразие**: стандартизируйте форматы и шкалы
+- **Обеспечивайте интерактивность**: фильтры, drill-down, всплывающие подсказки
+- **Оптимизируйте производительность**: быстрая загрузка, эффективные запросы
+- **Учитывайте мобильные устройства**: адаптивный дизайн
 
-### Key Производительность Indicators (KPIs)
-- **Financial**: Revenue, profit margin, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketing**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+### Ключевые показатели эффективности (KPI)
+- **Финансовые**: выручка, маржа прибыли, ROI, пожизненная ценность клиента
+- **Клиентские**: стоимость привлечения, отток, индекс удовлетворённости, NPS
+- **Операционные**: показатели эффективности, время цикла, уровень дефектов
+- **Маркетинговые**: коэффициенты конверсии, CTR, атрибуция
+- **Продуктовые**: активные пользователи, вовлечённость, удержание, использование функций
 
-## Продвинутый аналитика
+## Продвинутая аналитика
 
-### Predictive аналитика
-- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeling**: Credit scoring, fraud detection, insurance
-- **Customer аналитика**: Churn prediction, propensity modeling
-- **Demand Forecasting**: Inventory optimization, supply chain
-- **Maintenance Prediction**: Equipment failure anticipation
+### Предиктивная аналитика
+- **Прогнозирование**: предсказание временных рядов (ARIMA, Prophet, LSTM)
+- **Моделирование рисков**: кредитный скоринг, выявление мошенничества, страхование
+- **Клиентская аналитика**: прогноз оттока, моделирование склонности к действию
+- **Прогнозирование спроса**: оптимизация запасов, цепочка поставок
+- **Прогнозирование обслуживания**: предвосхищение отказов оборудования
 
-### Prescriptive аналитика
-- **Optimization**: Linear programming, integer programming
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, influence diagrams
-- **A/B Тестирование**: Experimental design, statistical significance
-- **Multi-Armed Bandits**: Adaptive experimentation
+### Прескриптивная аналитика
+- **Оптимизация**: линейное программирование, целочисленное программирование
+- **Моделирование**: методы Монте-Карло, имитация дискретных событий
+- **Анализ решений**: деревья решений, диаграммы влияния
+- **A/B-тестирование**: дизайн экспериментов, статистическая значимость
+- **Многорукие бандиты**: адаптивные эксперименты
 
-### Text аналитика (NLP)
-- **Text Preprocessing**: Tokenization, stemming, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF для theme discovery
-- **Named Entity Recognition**: Identifying people, places, organizations
-- **Text Классификация**: Spam detection, categorization
-- **Word Embeddings**: Word2Vec, GloVe, BERT
+### Текстовая аналитика (NLP)
+- **Предобработка текста**: токенизация, стемминг, лемматизация
+- **Анализ тональности**: классификация на положительный/отрицательный/нейтральный
+- **Тематическое моделирование**: LDA, NMF для выявления тем
+- **Распознавание именованных сущностей**: выделение людей, мест и организаций
+- **Классификация текста**: обнаружение спама, категоризация
+- **Векторные представления слов**: Word2Vec, GloVe, BERT
 
-## Данные Ethics и Governance
+## Этика и управление данными
 
-### Данные Privacy
-- **GDPR**: EU General Данные Protection Regulation
+### Конфиденциальность данных
+- **GDPR**: Общий регламент ЕС по защите данных
 - **CCPA**: California Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability и Accountability Act (US Здравоохранение)
-- **Anonymization**: Removing personally identifiable information
-- **Differential Privacy**: Adding noise to protect individuals
-- **Consent Управление**: Opt-в/opt-out mechanisms
+- **HIPAA**: Health Insurance Portability and Accountability Act (здравоохранение США)
+- **Анонимизация**: удаление персонально идентифицируемой информации
+- **Дифференциальная приватность**: добавление шума для защиты отдельных людей
+- **Управление согласием**: механизмы opt-in/opt-out
 
-### Данные Quality
-- **Accuracy**: Correctness из Данные
-- **Completeness**: All required Данные present
-- **Consistency**: No contradictions across sources
-- **Timeliness**: Данные Доступно when needed
-- **Validity**: Conforms to defined rules
-- **Uniqueness**: No duplicates
+### Качество данных
+- **Точность**: корректность данных
+- **Полнота**: наличие всех необходимых данных
+- **Согласованность**: отсутствие противоречий между источниками
+- **Своевременность**: данные доступны тогда, когда они нужны
+- **Валидность**: соответствие заданным правилам
+- **Уникальность**: отсутствие дубликатов
 
-### Bias и Fairness
-- **Sampling Bias**: Non-representative Данные collection
-- **Measurement Bias**: Flawed Данные collection instruments
-- **Algorithmic Bias**: Discriminatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processing, в-processing, post-processing
+### Смещение и справедливость
+- **Смещение выборки**: нерепрезентативный сбор данных
+- **Смещение измерений**: недостатки инструментов сбора данных
+- **Алгоритмическое смещение**: дискриминационные предсказания модели
+- **Метрики справедливости**: демографический паритет, равные возможности
+- **Снижение смещения**: методы до обработки, во время обработки и после обработки
 
-### Данные Governance Framework
-- **Данные Stewardship**: Responsibility для Данные assets
-- **Metadata Управление**: Данные about Данные documentation
-- **Данные Lineage**: Tracking Данные flow и transformations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Logging Данные access и changes
-- **Compliance**: Regulatory adherence
+### Фреймворк управления данными
+- **Data Stewardship**: ответственное владение данными как активом
+- **Управление метаданными**: описание и документация данных
+- **Происхождение данных (Data Lineage)**: отслеживание потока и преобразований данных
+- **Контроль доступа**: ролевые разрешения
+- **Журналы аудита**: фиксация доступа к данным и изменений
+- **Соответствие требованиям**: соблюдение нормативных правил
 
-## Career Paths в наука о данных
+## Карьерные пути в науке о данных
 
-### Roles
-- **Данные Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **Данные Scientist**: Statistical modeling, Машинное обучение, Продвинутый analytics
-- **ML Engineer**: Production ML Системы, model Развертывание, MLOps
-- **Данные Engineer**: Данные pipelines, infrastructure, ETL processes
-- **аналитика Manager**: Team leadership, strategy, stakeholder Управление
-- **BI Developer**: Dashboard creation, report Разработка
-- **Research Scientist**: Novel algorithms, publications, Продвинутый research
+### Роли
+- **Аналитик данных**: фокус на описательной аналитике, дашбордах и отчётности
+- **Data Scientist**: статистическое моделирование, машинное обучение, продвинутая аналитика
+- **ML Engineer**: production-системы ML, развёртывание моделей, MLOps
+- **Инженер данных**: конвейеры данных, инфраструктура, процессы ETL
+- **Менеджер по аналитике**: управление командой, стратегия, работа со стейкхолдерами
+- **BI-разработчик**: создание дашбордов, разработка отчётов
+- **Исследователь**: новые алгоритмы, публикации, передовые исследования
 
-### Skills Matrix
-- **Technical**: Python/R, SQL, Статистика, ML frameworks, cloud platforms
-- **Analytical**: Problem-solving, critical thinking, experimental design
-- **Коммуникация**: Storytelling, visualization, presentation skills
-- **Бизнес**: Domain knowledge, stakeholder Управление, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control для models
+### Матрица навыков
+- **Технические**: Python/R, SQL, статистика, ML-фреймворки, облачные платформы
+- **Аналитические**: решение задач, критическое мышление, дизайн экспериментов
+- **Коммуникационные**: сторителлинг, визуализация, навыки презентации
+- **Бизнесовые**: знание предметной области, управление стейкхолдерами, анализ ROI
+- **Инструменты**: Git, Jupyter, Docker, CI/CD, контроль версий для моделей
 
-## Emerging Trends
+## Новые тенденции
 
-### Current Developments
-- **AutoML**: Automated Машинное обучение pipeline creation
-- **MLOps**: DevOps practices для Машинное обучение
-- **Feature Stores**: Centralized feature Управление
-- **Данные Mesh**: Decentralized Данные Архитектура
-- **LLMs и Generative AI**: Large Язык models, content generation
-- **Edge аналитика**: Processing Данные at source devices
-- **Real-Time аналитика**: Потоковые данные analysis
-- **Augmented аналитика**: AI-assisted Данные preparation и insights
+### Текущие направления
+- **AutoML**: автоматизированное создание конвейеров машинного обучения
+- **MLOps**: практики DevOps для машинного обучения
+- **Feature Stores**: централизованное управление признаками
+- **Data Mesh**: децентрализованная архитектура данных
+- **LLM и генеративный ИИ**: большие языковые модели, генерация контента
+- **Периферийная аналитика**: обработка данных на устройствах-источниках
+- **Аналитика в реальном времени**: анализ потоковых данных
+- **Дополненная аналитика**: подготовка данных и получение инсайтов с помощью ИИ
 
-### Будущее Directions
-- **Quantum Машинное обучение**: Quantum Вычисления для ML
-- **Federated Learning**: Training models across decentralized Данные
-- **Causal Inference**: Moving beyond correlation to causation
-- **Responsible AI**: Ethics, explainability, transparency
-- **Данные Fabric**: Integrated Данные Управление across environments
+### Будущие направления
+- **Квантовое машинное обучение**: квантовые вычисления для ML
+- **Федеративное обучение**: обучение моделей на распределённых данных
+- **Причинно-следственный вывод**: переход от корреляции к причинности
+- **Ответственный ИИ**: этика, объяснимость, прозрачность
+- **Data Fabric**: интегрированное управление данными в разных средах

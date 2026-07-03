@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: tool_usage.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 工具使用
 
-# Tool Usage
+## Git — 版本控制
 
-## Git — Version Control
+Git 是一種分散式版本控制系統。每位開發者的本地機器上都儲存著倉庫歷史的完整副本。
 
-Git is a distributed version control system. Every developer has a full copy 的 這 repository 歷史 on their local machine.
-
-### Core workflow
+### 核心工作流程
 
 ```bash
 # Start a new repository
@@ -35,7 +28,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-### Branching
+### 分支管理
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +38,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging 和 rebasing
+### 合併與變基
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +50,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### Pull request（PR）工作流程
 
-1. Create a feature branch from `main`.
-2. Make commits on 這 feature branch.
-3. Push 這 branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review 回饋 與 additional commits.
-6. Merge 這 PR once approved.
+1. 從 `main` 建立一個功能分支。
+2. 在該功能分支上提交程式碼。
+3. 推送該分支：`git push origin feature/new-thing`。
+4. 在 GitHub / GitLab 上建立一個 pull request。
+5. 根據程式碼評審反饋繼續提交修改。
+6. 獲得批准後合併 PR。
 
-### Undoing changes
+### 撤銷更改
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -90,7 +83,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+始終在虛擬環境中工作，以確保專案依賴彼此隔離。
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +98,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` 會記錄精確版本；請將其提交到版本控制中。
 
 ### Cargo (Rust)
 
@@ -145,9 +138,9 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line 基礎
+## 命令列基礎
 
-### Navigation
+### 導航
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +156,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### 文字處理
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +169,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes 和 redirection
+### 管道與重定向
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +180,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### 網路 和 file transfer
+### 網路與檔案傳輸
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -205,7 +198,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Process 管理
+### 程序管理
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +209,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editors 和 IDEs
+## 編輯器與 IDE
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor 與 a rich extension ecosystem.
+VS Code 是一款輕量級、跨平台的程式碼編輯器，擁有豐富的擴充套件生態。
 
-- Open a folder: `File > Open Folder` or `code .` 在 這 terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install 語言 支援 (Python, Rust, Go, etc.), linters, 和 formatters from 這 Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures 這 debugger.
+- 開啟資料夾：`File > Open Folder`，或在終端中執行 `code .`。
+- 命令面板：`Ctrl+Shift+P`（macOS：`Cmd+Shift+P`）。
+- 整合終端：`Ctrl+``（backtick）。
+- 多游標：`Alt+Click` 可放置額外游標。
+- 跳轉到定義：`F12`。
+- 重新命名符號：`F2`。
+- 格式化文件：`Shift+Alt+F`。
+- 擴充套件：可在 Extensions 面板（`Ctrl+Shift+X`）中安裝語言支援（Python、Rust、Go 等）、lint 工具和格式化工具。
+- `settings.json`（使用者級或工作區級）用於控制編輯器行為。
+- `launch.json` 用於設定偵錯程式。
 
 ### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion 和 refactoring are core features.
-- Run/debug configurations let you launch 和 debug programs 與 one click.
-- Built-在 Git 支援 在 這 VCS menu.
-- `Shift+Shift` opens 這 Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend 語言 支援 和 add tools.
+- 智慧程式碼補全和重構是其核心特性。
+- 執行/除錯設定讓你可以一鍵啟動並除錯程式。
+- VCS 選單內建 Git 支援。
+- `Shift+Shift` 可開啟 Search Everywhere 對話方塊。
+- `Ctrl+Alt+L`（macOS：`Cmd+Option+L`）可重新格式化程式碼。
+- 外掛可擴充套件語言支援並新增工具能力。
 
-### Terminal tips
+### 終端技巧
 
-- Use tab completion to finish file names 和 命令 quickly.
-- Press `Ctrl+R` to search command 歷史 interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows 這 manual page 為 any built-在 command.
+- 使用 Tab 補全可快速補齊檔名和命令。
+- 按 `Ctrl+R` 可互動式搜尋命令歷史。
+- `alias ll='ls -la'` 可以建立快捷方式——將其加入 `~/.bashrc` 或 `~/.zshrc`。
+- 使用 `tmux` 或 `screen`，可在與遠端伺服器斷開連線後保持會話存活。
+- `man <command>` 會顯示任意內建命令的手冊頁。
 
 ---
 
 ## Docker
 
-Docker packages applications 和 their dependencies into portable containers.
+Docker 會把應用及其依賴打包進可移植的容器中。
 
-### Core concepts
+### 核心概念
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance 的 an image.
-- **Registry**: a storage 和 distribution service 為 images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **Image**：由 `Dockerfile` 構建出的只讀模板。
+- **Container**：映象的一個執行例項。
+- **Registry**：用於儲存和分發映象的服務（Docker Hub、GHCR）。
+- **Volume**：獨立於容器生命週期之外的持久化儲存。
 
-### Common 命令
+### 常用命令
 
 ```bash
 # Images
@@ -286,7 +279,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### Dockerfile 範例
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +292,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications 與 a `docker-compose.yml` file.
+Docker Compose 使用 `docker-compose.yml` 檔案來管理多容器應用。
 
 ```yaml
 version: "3.9"

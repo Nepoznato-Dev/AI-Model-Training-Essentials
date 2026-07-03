@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: finance_and_investing.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Finans ve Yatırım
 
 ## Personal Finans Temeller

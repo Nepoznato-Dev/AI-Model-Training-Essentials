@@ -1,71 +1,64 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: networking_basics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Ağ Temelleri
 
-# Networking Temeller
-
-A practical Referans için developers ve sysadmins — core concepts, protocols, Komutlar, ve troubleshooting.
+Geliştiriciler ve sistem yöneticileri için pratik bir başvuru kaynağı — temel kavramlar, protokoller, komutlar ve sorun giderme.
 
 ---
 
-## bu OSI Model (7 Layers)
+## OSI Modeli (7 Katman)
 
-A conceptual framework için understanding Ağ İletişim.
+Ağ iletişimini anlamak için kavramsal bir çerçeve.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Veri formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection Yönetim | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Ağ | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | Veri Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | Application | Son kullanıcı hizmetleri | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Presentation | Veri biçimlendirme, şifreleme, sıkıştırma | TLS, JPEG, ASCII |
+| 5 | Session | Bağlantı yönetimi | NetBIOS, RPC |
+| 4 | Transport | Uçtan uca teslim, hata düzeltme, akış kontrolü | TCP, UDP |
+| 3 | Network | Yönlendirme, adresleme | IP, ICMP, OSPF, BGP |
+| 2 | Data Link | Çerçeveleme, hata tespiti, MAC adresleri | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Ham bit iletimi | Ethernet kabloları, fiber optik, radyo dalgaları |
 
-içinde practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used için bu internet.
+Pratikte, **TCP/IP modeli** (4 katman: Link, Internet, Transport, Application) internet için daha yaygın olarak kullanılır.
 
 ---
 
-## IP Addressing
+## IP Adresleme
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted içinde practice).
+- 32 bitlik adres, dört oktet şeklinde yazılır: `192.168.1.1`
+- Toplam: ~4,3 milyar adres (ancak pratikte tükenmiştir).
 
 ### IPv6
-- 128-bit address, written içinde hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128 bitlik adres, onaltılık biçimde yazılır: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Toplam: 2¹²⁸ adres (pratik olarak sonsuz).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on bu internet; used inside local networks:
+### Özel IP Aralıkları (RFC 1918)
+Bunlar internette yönlendirilemez; yerel ağların içinde kullanılır:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means bu first 24 bits are bu Ağ prefix; bu last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Gösterimi
+`192.168.1.0/24`, ilk 24 bitin ağ öneki olduğu; son 8 bitin ise ana bilgisayarlar için ayrıldığı anlamına gelir. `192.168.1.0` ile `192.168.1.255` arasındaki adresleri kapsar.
 
 ---
 
-## DNS (Domain Name System)
+## DNS (Alan Adı Sistemi)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+Alan adlarını (ör. `example.com`) IP adreslerine eşler.
 
-### Record Types
+### Kayıt Türleri
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver için bu domain |
-| **SRV** | Service record (e.g., için SIP) |
+| **A** | Alan adını IPv4 adresine eşler |
+| **AAAA** | Alan adını IPv6 adresine eşler |
+| **CNAME** | Başka bir alan adına takma ad |
+| **MX** | Posta alışveriş sunucusu |
+| **TXT** | Serbest metin (SPF, DKIM, doğrulama) |
+| **NS** | Alan adının ad sunucusu |
+| **SRV** | Hizmet kaydı (ör. SIP için) |
 
-### Common Tools
+### Yaygın Araçlar
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -133,7 +126,7 @@ Status Codes
 Headers
 Content-Type: media type (application/json, text/html).
 
-Authorization: credentials (e.g., Bearer <token>).
+Authorization: credentials (e.g., ******
 
 Cache-Control: caching policy.
 
@@ -255,9 +248,9 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps ve System Administration
+# DevOps and System Administration
 
-A practical Rehber to managing servers, automating operations, ve maintaining reliable infrastructure.
+A practical guide to managing servers, automating operations, and maintaining reliable infrastructure.
 
 ---
 

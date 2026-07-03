@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: README.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # İngilizce Bilgi Tabanı
 
 Kapsamlı bir koleksiyon içinde Referans documents covering Teknoloji, Bilim, İş, humanities, ve practical skills.

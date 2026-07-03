@@ -10,16 +10,16 @@ Büyük dil modellerini tamamen cihaz üzerinde çalıştırmaya yönelik; donan
 - **Maliyet**: Token başına API ücreti yoktur.
 - **Gecikme**: Öngörülebilir, ağdan bağımsız çıkarım sağlar.
 - **Çevrimdışı Kullanılabilirlik**: İnternet olmadan çalışır.
-- **Kontrol**: Model sürümü, özelleştirme ve fine-tuning üzerinde tam kontrol sağlar.
+- **Kontrol**: Model sürümü, özelleştirme ve ince ayar üzerinde tam kontrol sağlar.
 
 ---
 
 ## Donanım Gereksinimleri
 
 ### GPU Belleği (VRAM)
-En kritik kaynaktır. Bellekte model boyutu ≈ **parametre sayısı × parametre başına byte**.
+En kritik kaynaktır. Bellekte model boyutu ≈ **parametre sayısı × parametre başına bayt**.
 
-| Hassasiyet | Parametre başına byte | 3.8B model | 7B model | 13B model | 70B model |
+| Hassasiyet | Parametre başına bayt | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|-----------------------|------------|----------|-----------|-----------|
 | FP32      | 4                     | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                     | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
@@ -37,7 +37,7 @@ En kritik kaynaktır. Bellekte model boyutu ≈ **parametre sayısı × parametr
 - GPU ile çıkarım için, model VRAM'e aktarılmadan önce belleğe alınacağı için sistem RAM'i önemlidir.
 
 ### Depolama
-- Nicemlenmiş model ağırlıkları birkaç GB yer kaplar (ör. 4-bit 7B ≈ diskte 4 GB). Birden çok model için en az 20–50 GB boş alan bırakın.
+- Kuantize edilmiş model ağırlıkları birkaç GB yer kaplar (ör. 4-bit 7B ≈ diskte 4 GB). Birden çok model için en az 20–50 GB boş alan bırakın.
 
 ### CPU
 - İstem işleme (prefill) ve CPU'ya katman aktarma için modern, çok çekirdekli bir CPU faydalıdır.
@@ -55,8 +55,8 @@ Kuantizasyon, ağırlıkların sayısal hassasiyetini düşürerek doğrulukta k
 |--------|------|----------|----------------|
 | **GGUF** | 4–8 | llama.cpp formatı, CPU/GPU hibriti için optimize edilmiştir | Yerel çıkarım için en iyisi |
 | **GPTQ** | 4–8 | Yalnızca GPU, CUDA üzerinde verimli | NVIDIA GPU'lar için en iyisi |
-| **AWQ** | 4 | Activation-aware, yalnızca GPU | GPU'larda toplu çıkarım için iyi |
-| **ONNX** | variable | Standartlaştırılmış, platformlar arası | Production serving |
+| **AWQ** | 4 | Aktivasyon farkındalıklı, yalnızca GPU | GPU'larda toplu çıkarım için iyi |
+| **ONNX** | değişken | Standartlaştırılmış, platformlar arası | Üretim ortamında sunum |
 
 ### Kuantizasyon Düzeyi Seçimi
 - **Q8_0** (8-bit): minimum kalite kaybı, en büyük boyut.
@@ -76,7 +76,7 @@ Kuantizasyon, ağırlıkların sayısal hassasiyetini düşürerek doğrulukta k
 - GGUF formatını destekler.
 - CPU ve GPU için optimize edilmiştir (CUDA, Metal, OpenCL üzerinden).
 - Özellikle CPU'da çok hızlıdır.
-- Command-line, server mode ve Python bindings sunar.
+- Komut satırı, sunucu modu ve Python bağlayıcıları sunar.
 
 **Örnek komut:**
 ```bash
@@ -88,7 +88,7 @@ Kuantizasyon, ağırlıkların sayısal hassasiyetini düşürerek doğrulukta k
 - llama.cpp'yi basit bir CLI ve REST API ile sarmalar.
 - Modelleri otomatik indirir ve yönetir.
 - Prototipleme ve masaüstü uygulamaları için çok uygundur.
-- System prompt'lar için özel Modelfile'ları destekler.
+- Sistem istemleri için özel Modelfile'ları destekler.
 
 **Kullanım:**
 ```bash
@@ -98,22 +98,22 @@ ollama run llama3:8b
 
 ### LM Studio
 - Windows, macOS ve Linux için grafik masaüstü uygulamasıdır.
-- Tek tıklamayla indirme ve chat arayüzü sunar.
+- Tek tıklamayla indirme ve sohbet arayüzü sunar.
 - OpenAI uyumlu API'ye sahip yerleşik bir yerel sunucu içerir.
 - Teknik olmayan kullanıcılar ve hızlı testler için uygundur.
 
 ### Hugging Face Transformers + bitsandbytes
-- HF modelleri için standart Python kütüphanesidir.
+- Hugging Face modelleri için standart Python kütüphanesidir.
 - 4-bit kuantizasyon için bitsandbytes kullanın (`load_in_4bit=True`).
 - Fine-tuning açısından daha esnektir, ancak çıkarım için llama.cpp'den daha yavaştır.
 
 ### ExLlamaV2
 - GPTQ ve AWQ için çok hızlı GPU çıkarımı sağlar.
 - NVIDIA GPU'larda en iyi performansı verir.
-- Batch generation destekler.
+- Toplu üretimi destekler.
 
 ### mlx (Apple)
-- Apple'ın M serisi çipler için sunduğu framework'tür.
+- Apple'ın M serisi çipler için sunduğu çerçevedir.
 - Apple Silicon için yoğun biçimde optimize edilmiştir.
 - Python API sunar.
 
@@ -121,39 +121,39 @@ ollama run llama3:8b
 
 ## Bellek Yönetimi
 
-### Context Window ve KV Cache
-KV cache, context içindeki her layer ve her token için key-value çiftlerini saklar. Context uzunluğuyla doğrusal olarak büyür.
+### Bağlam Penceresi ve KV Önbelleği
+KV önbelleği, bağlamdaki her katman ve her token için anahtar-değer çiftlerini saklar. Bağlam uzunluğuyla doğrusal olarak büyür.
 
-Bellek maliyeti ≈ 2 × layers × (KV heads × head dim) × tokens × value başına byte
+Bellek maliyeti ≈ 2 × katmanlar × (KV başlıkları × başlık boyutu) × token sayısı × değer başına bayt
 
-8 KV head ve 128 head dim'e sahip 32 katmanlı bir model için her token yaklaşık ~32 × 8 × 128 × 2 byte = token başına 65 KB maliyet oluşturur. 128k token'da bu, yalnızca cache için ~8 GB demektir.
+8 KV başlığı ve 128 başlık boyutuna sahip 32 katmanlı bir model için her token yaklaşık ~32 × 8 × 128 × 2 bayt = token başına 65 KB maliyet oluşturur. 128k token'da bu, yalnızca önbellek için ~8 GB demektir.
 
-### Offloading Stratejileri
-- **Katman Offloading**: Bazı katmanları GPU'ya, diğerlerini CPU'ya koyun. Tam CPU'ya göre daha hızlıdır, VRAM gereksinimi daha düşüktür.
-- **Token Streaming**: Tüm token'ları tek seferde değil, artımlı olarak işleyin.
+### Katman Aktarma Stratejileri
+- **Katman Aktarma**: Bazı katmanları GPU'ya, diğerlerini CPU'ya koyun. Tam CPU'ya göre daha hızlıdır, VRAM gereksinimi daha düşüktür.
+- **Token Akışı**: Tüm token'ları tek seferde değil, artımlı olarak işleyin.
 
-### Prompt Caching
-Prefill aşamasını yeniden hesaplamamak için benzer prompt'lar arasında KV cache'leri yeniden kullanın. Bazı framework'ler bunu destekler (ör. vLLM, `--prompt-cache` ile llama.cpp).
+### İstem Önbellekleme
+Prefill aşamasını yeniden hesaplamamak için benzer istemler arasında KV önbelleklerini yeniden kullanın. Bazı çerçeveler bunu destekler (ör. vLLM, `--prompt-cache` ile llama.cpp).
 
-### Memory-Mapped Files
-Model ağırlıklarını tamamen RAM'e almadan doğrudan diskten yükleyin (belleği sınırlı sistemlerde büyük modeller için faydalıdır). llama.cpp varsayılan olarak memory-mapping kullanır.
+### Bellek Eşlemeli Dosyalar
+Model ağırlıklarını tamamen RAM'e almadan doğrudan diskten yükleyin (belleği sınırlı sistemlerde büyük modeller için faydalıdır). llama.cpp varsayılan olarak bellek eşlemeyi kullanır.
 
 ---
 
 ## Dağıtım Mimarileri
 
-### Single-Device Mode
-Tek bir model, tek bir makinede çalışır (laptop, smartphone, edge device). Kişisel asistanlar, not alma uygulamaları ve code completion için kullanılır.
+### Tek Cihaz Modu
+Tek bir model, tek bir makinede çalışır (dizüstü bilgisayar, akıllı telefon, uç cihaz). Kişisel asistanlar, not alma uygulamaları ve kod tamamlama için kullanılır.
 
-### Hybrid Edge-Cloud
-Yerel model yaygın sorguları işler; karmaşık sorular için cloud model'e geri düşer. Böylece iki dünyanın da en iyi yanlarını sunar: çoğu durumda hız ve mahremiyet, uç durumlarda ise daha yüksek yetenek.
+### Hibrit Uç-Bulut
+Yerel model yaygın sorguları işler; karmaşık sorular için bulut modeline geri düşer. Böylece iki dünyanın da en iyi yanlarını sunar: çoğu durumda hız ve mahremiyet, uç durumlarda ise daha yüksek yetenek.
 
-### Distributed Inference (Multi-GPU)
-Daha büyük modeller için katmanları birden fazla GPU'ya bölün (tensor parallelism) veya context'i cihazlar arasında bölün (pipeline parallelism). llama.cpp'de `-ngl` ya da ExLlamaV2'de `--num-gpu-layers` kullanın.
+### Dağıtık Çıkarım (Multi-GPU)
+Daha büyük modeller için katmanları birden fazla GPU'ya bölün (tensor parallelism) veya bağlamı cihazlar arasında bölün (pipeline parallelism). llama.cpp'de `-ngl` ya da ExLlamaV2'de `--num-gpu-layers` kullanın.
 
-### Mobile Deployment
-- **Android**: JNI bindings veya ML Kit üzerinden llama.cpp kullanın.
-- **iOS**: Swift bindings veya mlx üzerinden llama.cpp kullanın.
+### Mobil Dağıtım
+- **Android**: JNI bağlayıcıları veya ML Kit üzerinden llama.cpp kullanın.
+- **iOS**: Swift bağlayıcıları veya mlx üzerinden llama.cpp kullanın.
 - **Web**: WebLLM (ONNX runtime üzerinden WebGPU'da çalışır) veya transformers.js kullanın.
 
 ---
@@ -161,16 +161,16 @@ Daha büyük modeller için katmanları birden fazla GPU'ya bölün (tensor para
 ## Performans Optimizasyonu
 
 ### Flash Attention
-Attention hesaplamasını hızlandırır ve bellek kullanımını azaltır. llama.cpp, ExLlamaV2 ve modern transformers kütüphanelerinde bulunur.
+Attention hesaplamasını hızlandırır ve bellek kullanımını azaltır. llama.cpp, ExLlamaV2 ve modern Transformer kütüphanelerinde bulunur.
 
-### Batch Inference
-Birden fazla prompt'u tek bir forward pass içinde işleyin. Throughput'u ciddi biçimde artırır. llama-batch veya vLLM kullanın.
+### Toplu Çıkarım
+Birden fazla istemi tek bir forward pass içinde işleyin. İş hacmini ciddi biçimde artırır. llama-batch veya vLLM kullanın.
 
-### Early Stopping / Token Budgeting
+### Erken Durdurma / Token Bütçeleme
 Sınırsız üretimi önlemek için maksimum token bütçesi belirleyin.
 
-### Speculative Decoding
-Küçük ve hızlı bir model (draft), token'ları tahmin eder; büyük model bunları paralel olarak doğrular. 2–3× hızlanma sağlayabilir.
+### Spekülatif Kod Çözme
+Küçük ve hızlı bir taslak model, token'ları tahmin eder; büyük model bunları paralel olarak doğrular. 2–3× hızlanma sağlayabilir.
 
 ---
 
@@ -218,17 +218,17 @@ wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/P
 
 - GPU kullanımını izleyin (`nvidia-smi` Linux'ta, Activity Monitor macOS'te).
 - Bellek kullanımını izleyin (RAM ve VRAM).
-- Saniye başına token sayısını izleyin (throughput).
-- İlk token'a kadar geçen süreyi izleyin (latency).
+- Saniye başına token sayısını izleyin (iş hacmi).
+- İlk token'a kadar geçen süreyi izleyin (gecikme).
 - llama.cpp veya Ollama'nın yerleşik log'larını kullanın.
 
 ---
 
 ## Sınırlamalar ve Ödünleşimler
 
-- **Kalite farkı**: Küçük yerel modeller (3.8B–7B), karmaşık akıl yürütmede genellikle büyük cloud modellerinin (GPT-4, Claude 3.5) gerisinde kalır.
-- **Knowledge cutoff**: Model bilgisi eğitim anında donar; güncel bilgiyi eklemek için RAG kullanın.
+- **Kalite farkı**: Küçük yerel modeller (3.8B–7B), karmaşık akıl yürütmede genellikle büyük bulut modellerinin (GPT-4, Claude 3.5) gerisinde kalır.
+- **Bilgi sınırı**: Model bilgisi eğitim anında donar; güncel bilgiyi eklemek için RAG kullanın.
 - **Çok Dillilik**: Daha küçük modellerin çok dilli yetenekleri daha sınırlı olabilir.
-- **Araç Kullanımı**: Agentic workflow'lar (function calling), küçük modellerde daha az güvenilir olabilir.
+- **Araç Kullanımı**: Ajan tabanlı iş akışları (function calling), küçük modellerde daha az güvenilir olabilir.
 
-Birçok gündelik görev için (summarisation, Q&A, code completion, classification) yerel modeller şimdiden yeterlidir ve hızla gelişmektedir.
+Birçok gündelik görev için (özetleme, soru-cevap, kod tamamlama, sınıflandırma) yerel modeller şimdiden yeterlidir ve hızla gelişmektedir.

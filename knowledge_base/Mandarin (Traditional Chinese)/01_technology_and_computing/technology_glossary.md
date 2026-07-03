@@ -1,209 +1,91 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: technology_glossary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 技術術語表
 
-# 技術 Glossary
-
-A 參考 glossary covering AI models, hardware, benchmarks, 和 core concepts
-在 這 modern AI 和 計算 landscape.
+這是一份參考性術語表，涵蓋現代 AI 與計算領域中的 AI 模型、硬體、基準測試和核心概念。
 
 ---
 
-## AI 語言 Models 和 Assistants
+## AI 語言模型與助手
 
 ### ChatGPT
-ChatGPT is an AI chatbot developed by OpenAI, first released 在 November 2022.
-It is powered by 這 GPT series 的 large 語言 models (LLMs). ChatGPT is one
-的 這 fastest-growing consumer AI products 在 歷史, reaching 100 million
-users within two months 的 launch. It supports text-based conversation, code
-generation, summarisation, 和 creative writing. Paid tiers provide access to
-more powerful models such as GPT-4 和 GPT-4o.
+ChatGPT 是 OpenAI 開發的一款 AI 聊天機器人，首次發布於 2022 年 11 月。它由 GPT 系列大型語言模型（LLM）驅動。ChatGPT 是歷史上成長速度最快的消費級 AI 產品之一，在發布後兩個月內使用者數就達到 1 億。它支援文字對話、程式碼生成、摘要總結和創意寫作。付費版本可使用 GPT-4 和 GPT-4o 等更強大的模型。
 
 ### GPT (Generative Pre-trained Transformer)
-GPT is a family 的 large 語言 models created by OpenAI. 這 架構
-uses a decoder-only Transformer trained 與 a next-token prediction objective on
-massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
-為 "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via 這 API), GPT-3.5 (這 backbone 的 這 original ChatGPT), 和 GPT-4
-(2023, multimodal, 效能 close to human expert level on many benchmarks).
+GPT 是 OpenAI 建立的大型語言模型家族。其架構採用僅解碼器（decoder-only）的 Transformer，並在海量文字語料上以“預測下一個 token”為目標進行訓練。關鍵版本包括 GPT-2（2019 年，15 億參數，因“危險到不宜發布”的輿論而知名）、GPT-3（2020 年，1750 億參數，透過 API 被廣泛使用）、GPT-3.5（最初版 ChatGPT 的核心模型）以及 GPT-4（2023 年，多模態，在許多基準測試中的表現接近人類專家水平）。
 
 ### Claude
-Claude is an AI assistant developed by Anthropic. It is named after Claude
-Shannon, 這 founder 的 information theory. Anthropic was founded by former
-OpenAI researchers 和 focuses on "constitutional AI" — a technique to make
-models safer by training them to follow a set 的 principles. Claude models
-(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known 為 long context windows (up
-to 200,000 tokens), nuanced reasoning, 和 reduced harmful output compared to
-baseline LLMs.
+Claude 是 Anthropic 開發的 AI 助手，名稱來自資訊理論創始人 Claude Shannon。Anthropic 由前 OpenAI 研究人員創立，重點研究“憲法式 AI（constitutional AI）”——這是一種透過訓練模型遵循一組原則來提升安全性的技術。Claude 系列模型（Claude 1、2、3 Haiku / Sonnet / Opus）以超長上下文視窗（最高可達 200,000 tokens）、細膩的推理能力，以及相較基礎 LLM 更少的有害輸出而聞名。
 
 ### Gemini
-Gemini is Google DeepMind's family 的 multimodal AI models, announced 在
-December 2023. Gemini is natively multimodal — trained from 這 ground up on
-text, images, audio, 和 video simultaneously, unlike earlier models that had
-modalities added via fine-tuning. Versions include Gemini Nano (on-device),
-Gemini Flash (fast, cost-efficient), 和 Gemini Ultra (highest-capability).
-Gemini powers Google's AI chatbot Bard (renamed Gemini) 和 Google Search AI
-Overviews.
+Gemini 是 Google DeepMind 的多模態 AI 模型家族，於 2023 年 12 月發布。Gemini 原生支援多模態——從一開始就同時基於文字、影像、音訊和影片進行訓練，而不是像早期模型那樣透過微調後續新增模態能力。其版本包括 Gemini Nano（裝置端）、Gemini Flash（速度快、成本效率高）和 Gemini Ultra（能力最強）。Gemini 驅動著 Google 的 AI 聊天機器人 Bard（後更名為 Gemini）以及 Google Search AI Overviews。
 
 ### Phi-3-mini
-Phi-3-mini is a small 語言 model (SLM) developed by Microsoft 與 3.8B
-parameters. It was released 在 April 2024. Unlike most large models, Phi-3-mini
-was trained on a carefully curated "textbook-quality" dataset — a technique
-pioneered by Microsoft Research — that prioritises 資料 quality over raw volume.
-Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
-outperforms models several times larger on reasoning benchmarks such as MMLU 和
-HumanEval. It supports a 4k token context window 在 its base variant 和 a 128k
-window 在 這 long-context variant. Phi-3-mini can run on a single consumer GPU
-or even on-device on a modern smartphone 與 sufficient RAM.
+Phi-3-mini 是 Microsoft 開發的一款小型語言模型（SLM），參數規模為 38 億，於 2024 年 4 月發布。與大多數大型模型不同，Phi-3-mini 訓練所用的是經過精心篩選的“教科書級品質”資料集——這是 Microsoft Research 開創的一種方法，強調資料品質高於原始資料量。儘管規模遠小於 GPT-4 或 Claude 3 Opus，Phi-3-mini 在 MMLU 和 HumanEval 等推理基準上仍能達到或超過若干體量大出數倍的模型。其基礎版本支援 4k token 上下文視窗，長上下文版本支援 128k。Phi-3-mini 可在單張消費級 GPU 上執行，若現代智慧型手機具備足夠 RAM，甚至也能在裝置端執行。
 
 ### Llama (Meta AI)
-Llama (Large 語言 Model Meta AI) is an open-weights family 的 models
-released by Meta. Llama 2 (2023) was released 為 research 和 commercial use
-與 sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
-效能 significantly, 與 models ranging from 8B to 70B (和 later 400B+).
-Because 這 weights are publicly downloadable, Llama models are 這 foundation
-為 a large ecosystem 的 fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
-和 are widely used 為 local/private AI deployments.
+Llama（Large Language Model Meta AI）是 Meta 發布的開放權重模型家族。Llama 2（2023）面向研究和商業用途發布，參數規模從 7B 到 70B 不等。Llama 3（2024）顯著提升了效能，模型規模從 8B 到 70B（後續還有 400B+）。由於權重可公開下載，Llama 模型成為龐大微調生態的基礎（如 Mistral、Alpaca、Vicuna 等），也被廣泛用於本地化/私有化 AI 部署。
 
 ### Mistral
-Mistral AI is a French AI company that develops open 和 proprietary LLMs.
-Mistral 7B (2023) demonstrated that a 7B-parameter model can match 這
-效能 的 much larger models using efficient techniques such as sliding
-window attention 和 grouped-query attention. Mixtral 8x7B (2024) is a mixture-
-的-experts model — it routes each token to a subset 的 8 expert networks,
-achieving GPT-3.5-level 效能 while being computationally cheaper.
-Mistral's models are fully open-weight 和 can be run locally.
+Mistral AI 是一家法國 AI 公司，開發開放及專有的 LLM。Mistral 7B（2023）證明，藉助滑動視窗注意力（sliding window attention）和分組查詢注意力（grouped-query attention）等高效技術，70 億參數模型也能達到遠大於其體量的模型效能。Mixtral 8x7B（2024）是一種混合專家（mixture-of-experts）模型——它會將每個 token 路由到 8 個專家網路中的一個子集，從而以更低的計算成本實現接近 GPT-3.5 水平的效能。Mistral 的模型權重完全開放，也可以在本地執行。
 
 ---
 
-## GPU Hardware 和 Graphics Cards
+## GPU 硬體與顯示卡
 
 ### GPU (Graphics Processing Unit)
-A GPU is a processor designed 為 massively parallel computation. Originally
-built 為 rendering 3D graphics, GPUs have become essential 為 AI/ML training
-和 inference because they can perform thousands 的 floating-point operations
-simultaneously using thousands 的 small cores. 這 two main GPU manufacturers
-為 AI are NVIDIA 和 AMD.
+GPU 是一種面向大規模平行計算設計的處理器。它最初用於渲染 3D 圖形，如今已成為 AI/ML 訓練和推理的關鍵硬體，因為它能夠利用成千上萬個小型核心並行執行大量浮點運算。AI 領域的兩大 GPU 廠商主要是 NVIDIA 和 AMD。
 
 ### NVIDIA GeForce RTX Series
-這 RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
-30xx (Ampere, 2020) 和 RTX 40xx (Ada Lovelace, 2022) generations include
-dedicated Tensor Cores 為 accelerating AI operations. VRAM (video RAM) is
-critical 為 running AI models locally — an 8GB GPU can handle 7B parameter
-models 在 4-bit quantisation; a 24GB GPU can handle 70B models 在 4-bit.
+RTX（Ray Tracing Texel eXtreme）系列是 NVIDIA 的消費級 GPU 產品線。RTX 30xx（Ampere，2020）和 RTX 40xx（Ada Lovelace，2022）兩代產品都包含專門用於加速 AI 運算的 Tensor Cores。對於本地執行 AI 模型來說，VRAM（顯示記憶體）至關重要——8GB 顯示記憶體的 GPU 可以在 4-bit 量化下執行 7B 參數模型；24GB 顯示記憶體的 GPU 則可以在 4-bit 量化下執行 70B 模型。
 
-### NVIDIA A-Series 和 H-Series (資料 Centre)
-這 A100 (Ampere, 2020) 和 H100 (Hopper, 2022) are NVIDIA's professional AI
-accelerators. An H100 has up to 80GB 的 HBM3 memory 和 is 這 standard
-hardware behind most large-scale LLM training today. These GPUs cost $25,000–
-$40,000 each but offer 10–30× 這 AI throughput 的 consumer RTX cards.
+### NVIDIA A-Series and H-Series（資料中心）
+A100（Ampere，2020）和 H100（Hopper，2022）是 NVIDIA 的專業級 AI 加速器。H100 最多配備 80GB HBM3 記憶體，是當前大多數大規模 LLM 訓練背後的標準硬體。這類 GPU 單價通常在 25,000–40,000 美元之間，但 AI 吞吐量可達到消費級 RTX 顯示卡的 10–30 倍。
 
 ### AMD Radeon RX Series
-AMD's consumer GPU line. 這 RX 7900 XTX (2022) has 24GB VRAM 和 can run
-local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA 為 AI frameworks, though 支援 is improving.
+這是 AMD 的消費級 GPU 產品線。RX 7900 XTX（2022）擁有 24GB VRAM，可透過 ROCm（AMD 的 GPU 計算棧）執行本地 LLM。與 NVIDIA 相比，AMD GPU 對 AI 框架的支援通常仍較弱，但正在持續改善。
 
 ### Intel Arc
-Intel Arc is Intel's discrete GPU product line, released starting 在 2022. Arc
-GPUs 支援 XeSS (Intel's super-sampling) 和 have limited but growing 支援
-為 AI inference tasks via OpenVINO 和 IPEX-LLM frameworks.
+Intel Arc 是 Intel 自 2022 年起推出的獨立顯示卡產品線。Arc GPU 支援 XeSS（Intel 的超級取樣技術），並透過 OpenVINO 和 IPEX-LLM 框架，對 AI 推理任務提供有限但不斷增強的支援。
 
 ### ARK Intel (ark.intel.com)
-ARK is Intel's official product specifications 資料庫 at ark.intel.com. It
-provides detailed technical specifications 為 every Intel CPU, GPU, FPGA, 和
-NUC product, including core counts, clock speeds, TDP, supported memory types,
-和 instruction-set features. When you hear "check ARK 為 specs," it means
-visiting that 資料庫 為 authoritative hardware information.
+ARK 是 Intel 在 ark.intel.com 上提供的官方產品規格資料庫。它為每一款 Intel CPU、GPU、FPGA 和 NUC 產品提供詳細技術規格，包括核心數量、主頻、TDP、支援的記憶體型別以及指令集特性。當你聽到“去 ARK 查參數”時，指的就是存取這個資料庫以獲取權威的硬體資訊。
 
 ---
 
-## AI 效能 Benchmarks
+## AI 效能基準
 
-### MMLU (Massive Multitask 語言 Understanding)
-MMLU is a benchmark 測試 LLM knowledge across 57 academic subjects including
-mathematics, 歷史, 法律, 醫學, 和 computer 科學. It consists 的
-multiple-choice questions drawn from real university-level exams. A score 的
-70% is roughly human undergraduate level; GPT-4 和 Claude 3 score above 86%.
-Phi-3-mini scores around 70% despite its small size.
+### MMLU（大規模多工語言理解）
+MMLU 是一個用於測試 LLM 知識面的基準，覆蓋數學、歷史、法律、醫學和電腦科學等 57 個學術科目。它由來自真實大學水平考試的選擇題組成。70% 的得分大致相當於人類本科生水平；GPT-4 和 Claude 3 的得分都高於 86%。儘管體量很小，Phi-3-mini 的得分也在 70% 左右。
 
 ### HumanEval
-HumanEval is OpenAI's benchmark 為 code generation. It consists 的 164 Python
-programming problems 與 automated test cases. Models are measured on
-pass@k — 這 probability that at least one 的 k generated solutions passes all
-tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
+HumanEval 是 OpenAI 用於程式碼生成的基準測試。它包含 164 道帶有自動化測試用例的 Python 程式設計題。模型透過 pass@k 指標進行評估——即在生成的 k 個解答中，至少有一個透過全部測試的機率。GPT-4 的得分約為 87%（pass@1）；經過良好調優的 7B 模型可達到約 50–60%。
 
 ### HellaSwag
-HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
-describing a mundane activity 和 must choose 這 most likely continuation from
-four options. 這 incorrect options are specially designed to be plausible but
-subtly wrong. It tests whether a model has a grounded understanding 的 physical
-和 social situations.
+HellaSwag 是一個常識推理基準。模型會收到一句描述日常活動的句子，然後必須從四個選項中選出最可能的後續內容。錯誤選項經過專門設計，看起來可信卻存在細微錯誤。它用於測試模型是否真正理解物理和社會情境。
 
 ### ARC (AI2 Reasoning Challenge)
-ARC is a benchmark from 這 Allen Institute 為 AI. It consists 的 grade-school
-科學 questions, split into "Easy" 和 "Challenge" sets. 這 Challenge set
-contains questions that retrieval-based methods 和 simple statistical models
-struggle 與, requiring multi-step reasoning.
+ARC 是 Allen Institute for AI 推出的一個基準。它由小學科學題目組成，分為 "Easy" 和 "Challenge" 兩個集合。Challenge 集合中的問題讓基於檢索的方法和簡單統計模型都難以應對，因此需要多步推理。
 
 ---
 
-## Core AI/ML Concepts
+## AI/ML 核心概念
 
 ### RAG (Retrieval-Augmented Generation)
-RAG is a technique that combines a retrieval system (typically a vector
-資料庫) 與 a 語言 model. Instead 的 relying solely on 這 model's
-parametric knowledge, RAG first retrieves relevant documents from an external
-知識庫 和 then includes them 在 這 model's context. This allows 這
-model to answer questions about up-to-date or domain-specific information
-without retraining. Potato.ai uses a form 的 RAG — it retrieves from its KB
-和 includes 這 results 在 這 context before generating a response.
+RAG 是一種將檢索系統（通常是向量資料庫）與語言模型結合起來的技術。它不是隻依賴模型的參數化知識，而是先從外部知識庫中檢索相關文件，再將這些內容加入模型上下文中。這樣，模型無需重新訓練，也能回答最新或特定領域的資訊。Potato.ai 使用的就是一種 RAG 形式——它先從自身 KB 中檢索內容，再將結果放入上下文後生成回答。
 
 ### Fine-tuning
-Fine-tuning is 這 process 的 continuing to train a pre-trained model on a
-smaller, domain-specific dataset. This adapts 這 model's weights 為 a
-particular task or domain. 為 example, a base LLM might be fine-tuned on
-medical records to create a medical Q&A assistant. Fine-tuning is
-computationally expensive but much cheaper than training from scratch.
+Fine-tuning（微調）是指在一個預訓練模型的基礎上，繼續使用更小、面向特定領域的資料集進行訓練。這樣可以調整模型權重，使其適配某項特定任務或領域。例如，一個基礎 LLM 可以透過醫療記錄進行微調，從而變成醫療問答助手。微調的計算成本較高，但遠低於從零開始訓練。
 
 ### Quantisation
-Quantisation reduces 這 numerical precision 的 model weights (e.g. from 32-bit
-float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
-在 16-bit precision requires ~14GB VRAM; 這 same model 在 4-bit (GGUF format)
-requires ~4GB. Quantisation typically causes a small but acceptable accuracy
-degradation 和 is 這 main technique enabling large models to run on consumer
-hardware or even mobile devices.
+Quantisation（量化）是指降低模型權重的數值精度（例如從 32-bit float 降到 4-bit integer）。這會顯著降低記憶體佔用——一個 7B 模型在 16-bit 精度下約需 14GB VRAM；同一個模型在 4-bit（GGUF 格式）下約需 4GB。量化通常只會帶來較小且可接受的精度下降，也是讓大模型能夠在消費級硬體甚至移動裝置上執行的關鍵技術。
 
 ### Context Window
-這 context window is 這 maximum number 的 tokens a model can process at once,
-including both 這 prompt 和 這 generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo 和 Claude 3 支援 128,000 tokens; Gemini 1.5 Pro
-supports 1,000,000 tokens. A larger context window allows 這 model to "see"
-more 的 a conversation or document at once, improving coherence over long
-exchanges.
+上下文視窗（context window）是模型一次能夠處理的最大 token 數量，其中既包括提示詞，也包括生成的回覆。GPT-3.5 的上下文視窗為 4,096 tokens；GPT-4 Turbo 和 Claude 3 支援 128,000 tokens；Gemini 1.5 Pro 則支援 1,000,000 tokens。更大的上下文視窗意味著模型能夠一次“看到”更多對話或文件內容，從而在長篇互動中保持更好的連貫性。
 
-### RLHF (Reinforcement Learning from Human 回饋)
-RLHF is 這 training technique that transforms a base 語言 model (which
-simply predicts 這 next token) into an assistant that follows instructions 和
-behaves helpfully. Human raters score model outputs, a reward model is trained
-on their preferences, 和 這 語言 model is then optimised against this
-reward model using reinforcement learning. ChatGPT, Claude, 和 Gemini all use
-variants 的 RLHF or similar alignment techniques (e.g. Constitutional AI,
-Direct Preference Optimisation).
+### RLHF（基於人類反饋的強化學習）
+RLHF 是一種訓練技術，用於將基礎語言模型（它本來只是預測下一個 token）轉變為能夠遵循指令並提供有幫助回答的助手。具體過程是：由人工標註者對模型輸出打分，基於這些偏好訓練獎勵模型，然後再用強化學習讓語言模型針對該獎勵模型進行最佳化。ChatGPT、Claude 和 Gemini 都使用了 RLHF 或類似的對齊技術變體（例如 Constitutional AI、Direct Preference Optimisation）。
 
-### Transformer 架構
-這 Transformer is 這 neural 網路 架構 underlying all modern LLMs.
-Introduced 在 這 2017 paper "Attention Is All You Need" by Vaswani et al., it
-uses self-attention mechanisms to process all tokens 在 parallel rather than
-sequentially. Encoder-only Transformers (BERT) are used 為 understanding tasks;
-decoder-only Transformers (GPT, Llama, Mistral) are used 為 generation tasks;
-encoder-decoder Transformers (T5, BART) are used 為 translation 和 summarisation.
+### Transformer Architecture
+Transformer 是支撐所有現代 LLM 的神經網路架構。它由 Vaswani 等人在 2017 年論文《Attention Is All You Need》中提出，採用自注意力機制並行處理所有 token，而不是按順序逐個處理。僅編碼器 Transformer（BERT）主要用於理解類任務；僅解碼器 Transformer（GPT、Llama、Mistral）主要用於生成類任務；編碼器—解碼器 Transformer（T5、BART）則主要用於翻譯和摘要。
 
-### Embeddings 和 Vector Databases
-Embeddings are dense numerical representations 的 text (or images) produced by
-a neural 網路. Semantically similar texts have embeddings that are close 在
-vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings 和 支援 fast approximate nearest-neighbour search. They are
-這 storage backbone 的 RAG 系統, including Potato.ai's cold-memory layer.
+### Embeddings 與向量資料庫
+Embeddings（嵌入）是神經網路生成的文字（或影像）稠密數值表示。語義相近的文字，其 embedding 在向量空間中也彼此接近。向量資料庫（ChromaDB、Pinecone、Weaviate、Qdrant）負責儲存這些 embeddings，並支援快速的近似最近鄰搜尋。它們是 RAG 系統的儲存基礎設施，Potato.ai 的冷記憶層也建立在此之上。

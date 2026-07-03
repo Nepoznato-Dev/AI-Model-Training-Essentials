@@ -5,159 +5,159 @@
 Чтобы улучшить точность, присылайте правки через pull request.
 -->
 
-# Язык и Английский
+# Язык и английский язык
 
-## What is Язык?
+## Что такое язык?
 
-Язык is a system из Коммуникация using sounds, symbols, or gestures that follows a shared set из rules understood by a community. Human Язык is unique в its complexity, creativity, и capacity to express abstract ideas. There are approximately 7,000 languages spoken в the world today. Английский is the most widely spoken Язык as a second Язык и is the dominant Язык из international Коммуникация, Бизнес, Наука, и the internet.
+Язык — это система коммуникации, использующая звуки, символы или жесты и опирающаяся на общий набор правил, понятных определённому сообществу. Человеческий язык уникален своей сложностью, творческим потенциалом и способностью выражать абстрактные идеи. Сегодня в мире существует около 7 000 языков. Английский — самый распространённый второй язык и основной язык международного общения, бизнеса, науки и интернета.
 
-## Английский Grammar
+## Грамматика английского языка
 
-Grammar is the set из rules governing how words are combined to form sentences в a Язык. A sentence must contain a subject (who or what the sentence is about) и a predicate (what the subject does or is).
+Грамматика (grammar) — это набор правил, определяющих, как слова соединяются в предложения в языке. Предложение должно содержать subject (о ком или о чём идёт речь) и predicate (что делает или чем является subject).
 
-**Noun** is a word that names a person, place, thing, or idea.
-**Verb** is a word that expresses an action or state из being.
-**Adjective** modifies a noun.
-**Adverb** modifies a verb, adjective, or another adverb.
-**Pronoun** takes the place из a noun.
+**Noun** — это слово, называющее человека, место, предмет или идею.
+**Verb** — это слово, выражающее действие или состояние.
+**Adjective** описывает noun.
+**Adverb** описывает verb, adjective или другой adverb.
+**Pronoun** заменяет noun.
 
-**Clause** is a group из words containing a subject и a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone и depends on an independent clause. **Phrase** is a group из words that does not contain both a subject и a predicate.
+**Clause** — это группа слов, содержащая subject и verb. Independent clause может существовать как отдельное предложение. Dependent clause самостоятельно не употребляется и зависит от independent clause. **Phrase** — это группа слов, в которой нет одновременно и subject, и predicate.
 
-## Parts из Speech
+## Части речи
 
-the eight traditional parts из speech в Английский are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, и interjection.
+В английском языке традиционно выделяют восемь частей речи: noun, pronoun, verb, adjective, adverb, preposition, conjunction и interjection.
 
-**Preposition** shows the relationship between a noun or pronoun и another word (e.g., в, on, at, by, с).
-**Conjunction** connects words, phrases, or clauses (e.g., и, but, or, because).
+**Preposition** показывает отношение между noun или pronoun и другим словом (например, in, on, at, by, with).
+**Conjunction** соединяет слова, phrases или clauses (например, and, but, or, because).
 
-**Распространённые сочинительные союзы** can be remembered с the acronym FANBOYS:
+**Распространённые сочинительные союзы** можно запомнить по акрониму FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## Punctuation
+## Пунктуация
 
-- A period (.) ends a declarative sentence.
-- A question mark (?) ends an interrogative sentence.
-- An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items в a list, sets off introductory phrases, и separates independent clauses joined by a conjunction.
-- A semicolon (;) separates two closely related independent clauses.
-- A colon (:) introduces a list, explanation, or quotation.
-- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
+- Точка (.) завершает повествовательное предложение.
+- Вопросительный знак (?) завершает вопросительное предложение.
+- Восклицательный знак (!) завершает восклицательное предложение.
+- Запятая (,) разделяет элементы списка, выделяет вводные конструкции и разделяет независимые части сложного предложения, соединённые союзом.
+- Точка с запятой (;) разделяет два тесно связанных независимых предложения.
+- Двоеточие (:) вводит список, пояснение или цитату.
+- Апостроф (') обозначает принадлежность (John's book) или сокращение (don't = do not).
 
-## Spelling и Common Errors
+## Орфография и типичные ошибки
 
-**Common spelling rules:**
-- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Наука")
-- Words ending в a silent "e" drop the "e" before adding a vowel suffix (make → making)
-- Double the final consonant before adding a vowel suffix when the last syllable is stressed и ends в a single consonant (run → running)
+**Распространённые правила правописания:**
+- "i before e except after c" (believe, receive) — хотя у этого правила много исключений (например, "weird", "science")
+- Слова, оканчивающиеся на немую "e", обычно теряют её перед добавлением суффикса, начинающегося с гласной (make → making)
+- Конечная согласная удваивается перед добавлением суффикса, начинающегося с гласной, если последний слог ударный и слово оканчивается на одну согласную (run → running)
 
-**Common confusable word pairs:**
+**Часто путаемые пары слов:**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## Vocabulary и Word Formation
+## Словарный запас и словообразование
 
-**Этимология (etymology)** is the study из the origins и historical Разработка из words. Many Английский words come from Latin, Greek, French, и Germanic roots.
+**Этимология (etymology)** — это изучение происхождения и исторического развития слов. Многие английские слова происходят от латинских, греческих, французских и германских корней.
 
-**Префиксы (prefixes)** are added to the beginning из words to change their meaning (e.g., un-, re-, pre-, mis-).
-**Суффиксы (suffixes)** are added to the end из words (e.g., -tion, -ness, -ing, -ly).
+**Префиксы (prefixes)** добавляются в начало слова, чтобы изменить его значение (например, un-, re-, pre-, mis-).
+**Суффиксы (suffixes)** добавляются в конец слова (например, -tion, -ness, -ing, -ly).
 
-- **Синонимы (synonyms)**: words с similar meanings
-- **Антонимы (antonyms)**: words с opposite meanings
-- **Метафора (metaphor)**: describes something by saying it is something else ("Time is a thief")
-- **Сравнение (simile)**: compares two things using "like" or "as" ("Busy as a bee")
+- **Синонимы (synonyms)**: слова со сходными значениями
+- **Антонимы (antonyms)**: слова с противоположными значениями
+- **Метафора (metaphor)**: описание одного явления через другое ("Time is a thief")
+- **Сравнение (simile)**: сопоставление двух вещей с помощью "like" или "as" ("Busy as a bee")
 
-## Writing Skills
+## Навыки письма
 
-Good writing is clear, concise, coherent, и engaging.
+Хороший текст должен быть ясным, лаконичным, связным и выразительным.
 
-- A **paragraph** should have a topic sentence (the основную мысль), supporting sentences, и a concluding sentence.
-- the **сочинение из пяти абзацев (five-paragraph essay)** structure consists из an Введение, three body paragraphs, и a conclusion.
-- **Переработка (revision)** is the process из improving a draft.
-- **Редактирование (editing)** focuses on correcting grammar, spelling, и punctuation errors.
-- **Вычитка (proofreading)** is the final check before publication.
+- **Paragraph** должен включать topic sentence (основную мысль абзаца), supporting sentences и concluding sentence.
+- **Сочинение из пяти абзацев (five-paragraph essay)** состоит из введения, трёх основных абзацев и заключения.
+- **Переработка (revision)** — это процесс улучшения черновика.
+- **Редактирование (editing)** сосредоточено на исправлении ошибок грамматики, орфографии и пунктуации.
+- **Вычитка (proofreading)** — это финальная проверка перед публикацией.
 
-## Reading и Comprehension
+## Чтение и понимание
 
-**Активное чтение (active reading)** involves engaging с the text by asking questions, making predictions, summarizing, и making connections.
+**Активное чтение (active reading)** предполагает работу с текстом через вопросы, прогнозы, краткое изложение и установление связей.
 
-- the **основную мысль** is the central point из a passage.
-- Details, Примеры, и evidence Поддержка the основную мысль.
-- **Вывод по контексту (inference)** involves drawing conclusions from information that is implied but not stated directly.
-- **Контекстные подсказки (context clues)** are words и phrases surrounding an unfamiliar word that help determine its meaning.
+- **Основная мысль** — это центральная идея отрывка.
+- Детали, примеры и доказательства поддерживают основную мысль.
+- **Вывод по контексту (inference)** — это вывод, сделанный на основе информации, которая подразумевается, но не выражена прямо.
+- **Контекстные подсказки (context clues)** — это слова и фразы вокруг незнакомого слова, помогающие определить его значение.
 
-## Коммуникация и Rhetoric
+## Коммуникация и риторика
 
-**Риторика (rhetoric)** is the art из effective Коммуникация и persuasion.
-- **Ethos** appeals to the credibility из the speaker.
-- **Pathos** appeals to emotion.
-- **Logos** appeals to logic и reason.
+**Риторика (rhetoric)** — это искусство эффективной коммуникации и убеждения.
+- **Ethos** обращается к авторитету и надёжности говорящего.
+- **Pathos** обращается к эмоциям.
+- **Logos** обращается к логике и разуму.
 
-A **thesis statement** clearly expresses the main argument из an essay.
-**Тон (tone)** refers to the writer's attitude toward the subject и audience.
-**Регистр (register)** refers to the level из formality в Язык use, ranging from casual conversation to formal academic writing.
+**Thesis statement** чётко выражает основной тезис эссе.
+**Тон (tone)** обозначает отношение автора к теме и аудитории.
+**Регистр (register)** обозначает степень формальности речевого употребления — от непринуждённой беседы до строгого академического письма.
 
-## Subject-Verb Agreement (Expanded)
+## Согласование подлежащего и сказуемого (расширенно)
 
-One из the most important grammar rules в Английский is that a subject и its verb must agree в number: a singular subject takes a singular verb, и a plural subject takes a plural verb.
+Одно из важнейших правил грамматики английского языка состоит в том, что subject и verb должны согласовываться в числе: singular subject требует глагола в единственном числе, а plural subject — глагола во множественном числе.
 
 ### Герундий в роли подлежащего
 
-A gerund (a verb used as a noun, ending в -ing) is always singular.
+Герундий (gerund) — форма глагола, выступающая как существительное и оканчивающаяся на -ing, — всегда считается единственным числом.
 
-**Correct:**
+**Правильно:**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good для your health."
+- "Running every day **is** good for your health."
 - "Reading **helps** improve vocabulary."
 
-**Incorrect:**
+**Неправильно:**
 - "Eating rocks **are** dangerous." (gerund is singular)
-- "Running и swimming **is** good." (compound subject — plural, use "are")
+- "Running and swimming **is** good." (compound subject — plural, use "are")
 
 ### Составные подлежащие
 
-- Joined by "и": plural verb
-  - "Alice и Bob **are** here."
-  - "the teacher и the student **agree**."
+- Соединённые союзом "and": требуется глагол во множественном числе
+  - "Alice and Bob **are** here."
+  - "The teacher and the student **agree**."
 
-- Joined by "or"/"nor": agree с the subject closest to the verb
+- Соединённые союзами "or"/"nor": сказуемое согласуется с ближайшим к нему subject
   - "Neither the students nor the teacher **was** ready."
   - "Neither the teacher nor the students **were** ready."
 
 ### Собирательные существительные
 
-Collective nouns (team, committee, group, family) take a singular verb в American Английский:
-- "the team **is** practising."
-- "the committee **has** made a decision."
+Собирательные существительные (collective nouns: team, committee, group, family) в American English обычно требуют singular verb:
+- "The team **is** practising."
+- "The committee **has** made a decision."
 
-в British Английский, plural verbs are also accepted depending on context.
+В British English допустимы и plural verbs — в зависимости от контекста.
 
 ### Неопределённые местоимения
 
-the following indefinite pronouns are **always singular**:
+Следующие indefinite pronouns **всегда имеют форму единственного числа**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
-**Correct:**
+**Правильно:**
 - "Everyone **is** invited."
-- "Each из the students **has** completed the assignment."
+- "Each of the students **has** completed the assignment."
 
-**Incorrect:**
+**Неправильно:**
 - "Everyone **are** invited."
 
-## Epistemic Honesty — Knowing When to Say "I Don't Know"
+## Эпистемическая честность — когда стоит сказать "I Don't Know"
 
-**Эпистемическая честность (epistemic honesty)** means being truthful about the limits из one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
+**Эпистемическая честность (epistemic honesty)** означает честно признавать пределы своих знаний. Лучше сказать "I don't have reliable information on that", чем дать уверенно звучащий, но ложный ответ.
 
-**Галлюцинация (hallucination)** is the tendency из AI Системы to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Доступно knowledge и responding с an honest acknowledgement из uncertainty rather than an invented answer.
+**Галлюцинация (hallucination)** — это склонность AI-систем генерировать правдоподобные, но фактически неверные утверждения. Защита от галлюцинаций требует понимать, когда вопрос выходит за пределы доступных знаний, и честно признавать неопределённость вместо того, чтобы выдумывать ответ.
 
-**Useful phrases для expressing uncertainty:**
+**Полезные фразы для выражения неопределённости:**
 - "I'm not certain, but…"
-- "You may want to verify this с a specialist."
+- "You may want to verify this with a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my База знаний."
+- "This is outside my knowledge base."
 
-**для health, medical, Юридический, or safety questions:**
-It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose из a substance, a treatment для a disease, or a Юридический ruling without professional context can cause real harm и must be avoided.
+**Для вопросов о здоровье, медицине, праве или безопасности:**
+Всегда лучше направлять человека к квалифицированным специалистам, а не давать конкретные советы. Указание дозировки вещества, метода лечения болезни или юридического вывода без профессионального контекста может причинить реальный вред, поэтому этого следует избегать.

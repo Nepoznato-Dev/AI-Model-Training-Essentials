@@ -1,10 +1,3 @@
-<!-- 
-本檔案已從英文自動翻譯為繁體中文。
-來源：networking_basics.md
-注意：技術術語、程式碼範例及專有名詞可能保留英文。
-如需改善翻譯品質，歡迎透過 pull request 貢獻修改。
--->
-
 # 網路基礎
 
 面向開發者和系統管理員的實用參考資料——涵蓋核心概念、協定、指令與疑難排解。
@@ -252,7 +245,7 @@ text
 
 ---
 
-## File 6: `devops_sysadmin.md`
+## 檔案 6：`devops_sysadmin.md`
 
 ```markdown
 # DevOps 與系統管理

@@ -37,7 +37,7 @@
 - **Durum Yönetimi**: Context API, Redux, Zustand, Recoil
 - **Yönlendirme**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ekosistem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Sanal DOM**: Diffing algoritmasıyla verimli render
+- **Sanal DOM**: Diffing algoritmasıyla verimli görüntüleme
 
 #### Vue.js
 - **Options API**: data, methods, computed, watch
@@ -45,7 +45,7 @@
 - **Yönergeler**: v-if, v-for, v-bind, v-on, v-model
 - **Vuex/Pinia**: Durum yönetimi
 - **Vue Router**: İstemci tarafı yönlendirme
-- **Nuxt.js**: Sunucu tarafı render çerçevesi
+- **Nuxt.js**: Sunucu tarafı görüntüleme çerçevesi
 
 #### Angular
 - **Bileşenler**: Decorators, templates, lifecycle hooks
@@ -66,7 +66,7 @@
 
 ### CSS Çatıları ve Kütüphaneleri
 - **Bootstrap**: Bileşen kütüphanesi, grid sistemi, yardımcı sınıflar
-- **Tailwind CSS**: Utility-first CSS framework
+- **Tailwind CSS**: Yardımcı sınıf öncelikli CSS çatısı
 - **Material UI**: Google'ın Material Design uygulaması
 - **Chakra UI**: Erişilebilir bileşen kütüphanesi
 - **Ant Design**: Kurumsal düzeyde UI bileşenleri
@@ -79,23 +79,23 @@
 
 #### Node.js
 - **Çalışma Ortamı**: Sunucu tarafında JavaScript (V8 engine)
-- **Express.js**: Minimal web framework, middleware mimarisi
+- **Express.js**: Hafif web çatısı, ara katman mimarisi
 - **NestJS**: Angular'dan ilham alan mimari, TypeScript
-- **Fastify**: Yüksek performanslı framework
+- **Fastify**: Yüksek performanslı çerçeve
 - **Koa**: Aynı yaratıcılar tarafından geliştirilen modern Express
 - **Paket Yönetimi**: npm, yarn, pnpm
 
 #### Python
-- **Django**: Kapsamlı framework, ORM, admin panel, batteries-included
+- **Django**: Kapsamlı çerçeve, ORM, yönetim paneli, kutudan çıktığı gibi zengin özellikler
 - **Flask**: Microframework, eklenti ekosistemi
 - **FastAPI**: Modern, async, otomatik API dokümantasyonu
-- **Pyramid**: Esnek, ölçeklenebilir framework
+- **Pyramid**: Esnek, ölçeklenebilir çerçeve
 
 #### Diğer Backend Dilleri
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Spring**: Kurumsal framework, dependency injection
+- **Java Spring**: Kurumsal çerçeve, bağımlılık enjeksiyonu
 - **PHP Laravel**: Zarif söz dizimi, Eloquent ORM, Blade templating
-- **Go Gin**: Yüksek performans, minimal framework
+- **Go Gin**: Yüksek performans, hafif çerçeve
 - **Rust Actix**: Bellek güvenliği, performans
 - **C# ASP.NET Core**: Cross-platform, kurumsal özellikler
 
@@ -103,7 +103,7 @@
 
 #### ORMs (Object-Relational Mapping)
 - **Sequelize**: SQL veritabanları için Node.js ORM'si
-- **Prisma**: Type-safe veritabanı erişimi, otomatik üretilen istemci
+- **Prisma**: Tür güvenli veritabanı erişimi, otomatik üretilen istemci
 - **SQLAlchemy**: Python SQL toolkit ve ORM
 - **ActiveRecord**: Ruby on Rails ORM
 - **Hibernate**: Java ORM
@@ -152,7 +152,7 @@
 - **Git**: Dağıtık sürüm kontrolü
 - **GitHub/GitLab/Bitbucket**: Depo barındırma
 - **Dallanma Stratejileri**: Git Flow, GitHub Flow, trunk-based development
-- **CI/CD**: Otomatik test ve dağıtım pipeline'ları
+- **CI/CD**: Otomatik test ve dağıtım işlem hatları
 
 ### Konteynerleştirme
 - **Docker**: Container runtime, Dockerfile, image'lar
@@ -169,8 +169,8 @@
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
 - **Google Cloud**: Compute Engine, Cloud Storage, Cloud Functions, GKE
 - **Azure**: Virtual Machines, Blob Storage, Functions, AKS
-- **Vercel**: Frontend dağıtımı, serverless functions
-- **Netlify**: Statik site barındırma, serverless functions
+- **Vercel**: Frontend dağıtımı, sunucusuz işlevler
+- **Netlify**: Statik site barındırma, sunucusuz işlevler
 - **Heroku**: Platform as a Service (PaaS)
 - **DigitalOcean**: Sadeleştirilmiş bulut altyapısı
 
@@ -178,8 +178,8 @@
 - **GitHub Actions**: Workflow otomasyonu
 - **GitLab CI**: Yerleşik continuous integration
 - **Jenkins**: Genişletilebilir otomasyon sunucusu
-- **CircleCI**: Cloud tabanlı CI/CD
-- **Travis CI**: Continuous integration hizmeti
+- **CircleCI**: Bulut tabanlı CI/CD
+- **Travis CI**: Sürekli entegrasyon hizmeti
 - **ArgoCD**: Kubernetes için GitOps continuous delivery
 
 ### İzleme ve Günlükleme
@@ -197,7 +197,7 @@
 - **Minification**: Dosya boyutlarını küçültme
 - **Sıkıştırma**: Gzip, Brotli
 - **Önbellekleme**: Tarayıcı önbelleği, CDN, service worker'lar
-- **Görsel Optimizasyonu**: WebP, AVIF, lazy loading, responsive images
+- **Görsel Optimizasyonu**: WebP, AVIF, lazy loading, duyarlı görseller
 - **Kritik CSS**: Above-the-fold stillerin satır içine alınması
 - **Veritabanı Optimizasyonu**: Indexing, query optimization, connection pooling
 
@@ -238,7 +238,7 @@
 - **Güvenlik Başlıkları**: X-Frame-Options, X-Content-Type-Options
 - **Bağımlılık Taraması**: npm audit, Snyk, Dependabot
 
-## Testing
+## Testler
 
 ### Test Türleri
 - **Birim Testi**: Tekil bileşenler/fonksiyonlar
@@ -249,11 +249,11 @@
 - **Erişilebilirlik Testi**: WCAG uyumluluğu
 
 ### Test Çerçeveleri
-- **Jest**: JavaScript test framework'ü
+- **Jest**: JavaScript test çerçevesi
 - **Mocha**: Esnek test çalıştırıcısı
-- **pytest**: Python test framework'ü
-- **RSpec**: Ruby test framework'ü
-- **JUnit**: Java test framework'ü
+- **pytest**: Python test çerçevesi
+- **RSpec**: Ruby test çerçevesi
+- **JUnit**: Java test çerçevesi
 
 ### E2E Test Araçları
 - **Selenium**: Tarayıcı otomasyonu
@@ -300,7 +300,7 @@
 - **Kullanım Alanları**: Oyunlar, video düzenleme, kriptografi, ML çıkarımı
 
 ### Sunucusuz Mimari
-- **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
+- **Hizmet Olarak İşlevler**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Avantajlar**: Sunucu yönetimi yok, auto-scaling, kullandıkça öde
 - **Dikkat Edilmesi Gerekenler**: Cold start'lar, üreticiye bağımlılık, hata ayıklama karmaşıklığı
 

@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: technology_glossary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Teknoloji Glossary
 
 A Referans glossary covering AI models, hardware, benchmarks, ve core concepts

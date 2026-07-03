@@ -19,7 +19,7 @@ Son kullanıcılar, uygulamalar ve veritabanının kendisiyle etkileşime girere
 ## İlişkisel Veritabanları (SQL)
 
 ### Temel Kavramlar
-- **Tablolar**: Satırlar (records) ve sütunlar (fields)
+- **Tablolar**: Satırlar (kayıtlar) ve sütunlar (alanlar)
 - **Birincil Anahtar (Primary Key)**: Her satır için benzersiz tanımlayıcı
 - **Yabancı Anahtar (Foreign Key)**: Başka bir tablodaki birincil anahtara referans
 - **İndeksler**: Sorgu hızını artıran veri yapıları
@@ -64,8 +64,8 @@ DELETE FROM users WHERE id = 1;
 - **MySQL**: Yaygın kullanım, hızlı okumalar, web uygulamaları
 - **Oracle**: Kurumsal özellikler, ölçeklenebilirlik, yüksek maliyet
 - **SQL Server**: Microsoft ekosistemi, entegre araçlar
-- **SQLite**: Embedded, serverless, hafif
-- **MariaDB**: MySQL fork'u, açık kaynak
+- **SQLite**: Gömülü, sunucusuz, hafif
+- **MariaDB**: MySQL çatallanması, açık kaynak
 
 ## NoSQL Veritabanları
 
@@ -271,7 +271,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - SQL'den soyutlama
 - Tür güvenliği
 - Migration yönetimi
-- Query building API'leri
+- Sorgu oluşturma API'leri
 
 ### Dezavantajlar
 - Performans ek yükü

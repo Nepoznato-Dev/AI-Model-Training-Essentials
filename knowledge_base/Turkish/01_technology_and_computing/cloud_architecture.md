@@ -139,7 +139,7 @@
 - Otomatik ölçeklenir
 - **Bileşenler**: Functions, API Gateway, yönetilen hizmetler
 - **Avantajlar**: Maliyet verimliliği, daha az operasyon yükü, hızlı dağıtım
-- **Dikkat Edilmesi Gerekenler**: Cold start'lar, üreticiye bağımlılık, çalıştırma sınırları
+- **Dikkat Edilmesi Gerekenler**: Soğuk başlangıçlar, üreticiye bağımlılık, çalıştırma sınırları
 
 #### Katmanlı Mimari (N-Tier)
 - Sunum katmanı (UI)
@@ -173,7 +173,7 @@
 - **Çalıştırma Modeli**: Olay tetiklemeli, durum tutmayan
 - **Sınırlar**: Çalıştırma süresi, bellek, eşzamanlı çalıştırma sayısı
 - **Kullanım Alanları**: API'ler, dosya işleme, zamanlanmış işler, IoT arka uçları
-- **İzleme**: Çağrı sayısı, hatalar, süre, cold start'lar
+- **İzleme**: Çağrı sayısı, hatalar, süre, soğuk başlangıçlar
 
 ## Depolama Çözümleri
 
@@ -181,7 +181,7 @@
 - **Özellikler**: Düz yapı, üstveri, HTTP erişimi
 - **Örnekler**: AWS S3, Google Cloud Storage, Azure Blob
 - **Kullanım Alanları**: Statik varlıklar, yedekler, veri gölleri, arşivler
-- **Depolama Sınıfları**: Hot, cool, cold, archive (farklı maliyet/erişim düzeyleri)
+- **Depolama Sınıfları**: Sık erişimli, seyrek erişimli, soğuk ve arşiv (farklı maliyet/erişim düzeyleri)
 
 ### Blok Depolama
 - **Özellikler**: Ham disk birimleri, sanal makinelere bağlanır
@@ -310,7 +310,7 @@
 - **Günlükleme**: CloudWatch Logs, Cloud Logging, Log Analytics
 - **İz Sürme**: X-Ray, Cloud Trace, Application Insights
 - **Gösterge Panelleri**: CloudWatch Dashboards, Cloud Console
-- **Uyarılar**: SNS, Cloud Monitoring alerts, Action Groups
+- **Uyarılar**: SNS, Cloud Monitoring uyarıları, Action Groups
 
 ### Konteyner Orkestrasyonu
 - **Kubernetes**: Endüstri standardı orkestrasyon

@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: prompt_engineering.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Prompt Engineering
 
 Prompt engineering is bu practice içinde designing, refining, ve optimising input prompts to get bu best possible output from a Dil model. It is both an art ve a Bilim, ve it is bu primary interface için controlling LLM behaviour without fine-tuning.

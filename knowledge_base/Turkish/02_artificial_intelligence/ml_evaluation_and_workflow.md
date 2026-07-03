@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: ml_evaluation_and_workflow.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Makine Öğrenimi Evaluation ve Workflow
 
 A practical Rehber to bu ML lifecycle — from problem framing to production monitoring — ile a focus on metrics, validation, ve debugging.

@@ -1,6 +1,6 @@
 # Python Sözdizimi Hızlı Başvuru
 
-Python 3.x sözdizimi ve yaygın kalıplar için hızlı referans.
+Python 3.x sözdizimi ve yaygın kalıplar için kısa başvuru kılavuzu.
 
 ---
 
@@ -322,7 +322,7 @@ any(), all()
 
 ---
 
-## Hızlı İpuçları
+## Pratik İpuçları
 
 - Tek satırlık yorumlar için `#` kullanın
 - Docstring'ler ve çok satırlı string'ler için `"""triple quotes"""` kullanın

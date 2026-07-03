@@ -1,10 +1,3 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: linux_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Linux Komutlar Hızlı Referans
 
 Essential Linux/Unix Komutlar için system navigation ve administration.
