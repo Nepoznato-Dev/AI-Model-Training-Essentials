@@ -2,17 +2,15 @@
 name: Explore
 description: Deeply investigates specific areas of the codebase, gathers context, discovers patterns, and returns structured findings for planning — without making changes.
 argument-hint: Specify what you need investigated (e.g., a feature, a module, an error, or a dependency).
-target: vscode
-disable-model-invocation: true
 tools:
   [
     'search',
     'read',
     'web',
-    'vscode/memory',
-    'vscode/askQuestions',
-    'execute/getTerminalOutput',
-    'execute/testFailure'
+    'memory',
+    'ask_questions',
+    'execute/get_terminal_output',
+    'execute/test_failure'
   ]
 agents: []
 handoffs:
@@ -58,7 +56,7 @@ Before diving into research, clarify the scope of what you are investigating:
 - **What specific questions need answering?**
 - **What constraints or context matter?**
 
-Use `#tool:vscode/askQuestions` if the scope is ambiguous. Once clear, proceed with the investigation.
+Use `#tool:ask_questions` if the scope is ambiguous. Once clear, proceed with the investigation.
 
 ## Investigate Thoroughly
 
