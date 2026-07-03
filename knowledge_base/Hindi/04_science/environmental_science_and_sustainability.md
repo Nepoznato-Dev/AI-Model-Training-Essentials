@@ -1,1 +1,0 @@
-# environmental_science_and_sustainability.md

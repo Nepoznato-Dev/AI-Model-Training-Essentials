@@ -1,1 +1,0 @@
-# general_knowledge.md
