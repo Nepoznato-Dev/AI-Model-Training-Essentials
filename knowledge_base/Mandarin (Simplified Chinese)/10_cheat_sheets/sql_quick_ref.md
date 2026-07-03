@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# SQL 快速参考指南
 
-# SQL 快速参考 指南
-
-Essential SQL 命令 为 数据库 operations.
+数据库操作常用 SQL 命令。
 
 ---
 
-## Basic Query Structure
+## 基本查询结构
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +18,9 @@ LIMIT number;
 
 ---
 
-## 数据 Retrieval (SELECT)
+## 数据检索（SELECT）
 
-### Basic Selection
+### 基本选择
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +35,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### 过滤（WHERE）
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +53,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting 和 Limiting
+### 排序与限制
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +70,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## 聚合函数
 
 ```sql
 -- Count rows
@@ -104,16 +97,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## 连接（Joins）
 
-### Inner Join
+### 内连接
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-### Left/Right Join
+### 左连接 / 右连接
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +119,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Full Outer Join
+### 全外连接
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +131,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Cross Join
+### 交叉连接
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-### Self Join
+### 自连接
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +147,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## 子查询
 
 ```sql
 -- In WHERE clause
@@ -184,7 +177,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## 集合操作
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +203,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## 数据 Modification
+## 数据修改
 
 ### INSERT
 ```sql
@@ -268,9 +261,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## 表操作
 
-### CREATE Table
+### CREATE 表
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +279,7 @@ CREATE TABLE users (
 );
 ```
 
-### ALTER Table
+### ALTER 表
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +304,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-### DROP Table
+### DROP 表
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-## Constraints
+## 约束
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +350,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## 索引
 
 ```sql
 -- Create index
@@ -378,7 +371,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## 视图
 
 ```sql
 -- Create view
@@ -402,7 +395,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## 公共表表达式（CTE）
 
 ```sql
 -- Simple CTE
@@ -432,7 +425,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## 窗口函数
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +458,41 @@ FROM daily_sales;
 
 ---
 
-## 数据 Types
+## 数据类型
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### 数值类型
+- `INT` - 整数
+- `BIGINT` - 大整数
+- `DECIMAL(p,s)` - 精确小数（精度、小数位）
+- `FLOAT` - 近似浮点数
+- `DOUBLE` - 双精度浮点数
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### 字符串类型
+- `CHAR(n)` - 定长字符串
+- `VARCHAR(n)` - 变长字符串
+- `TEXT` - 大文本
+- `ENUM` - 枚举值
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date 和 time
-- `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+### 日期/时间类型
+- `DATE` - 日期（YYYY-MM-DD）
+- `TIME` - 时间（HH:MM:SS）
+- `DATETIME` - 日期和时间
+- `TIMESTAMP` - Unix 时间戳
+- `YEAR` - 年份值
 
-### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+### 布尔类型
+- `BOOLEAN` or `BOOL` - 真/假
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### 二进制类型
+- `BLOB` - 二进制大对象
+- `BINARY` - 定长二进制
+- `VARBINARY` - 变长二进制
 
 ---
 
-## Useful Functions
+## 常用函数
 
-### String Functions
+### 字符串函数
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +503,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### 日期函数
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +515,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### 数值函数
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +526,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### 条件函数
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +549,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## 性能 Tips
+## 性能提示
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query 性能
-- Normalize 数据 appropriately
-- Use prepared statements to prevent SQL injection
+✅ **推荐：**
+- 为高频查询列建立索引
+- 只选择需要的列（避免 `SELECT *`）
+- 使用 `EXPLAIN` 分析查询性能
+- 合理规范化数据
+- 使用预处理语句防止 SQL 注入
 
-❌ **Don't:**
-- Use functions on indexed columns 在 WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **避免：**
+- 在 WHERE 子句中对已索引列使用函数
+- 创建过多索引（会拖慢写入）
+- 不必要地使用 `SELECT DISTINCT`
+- 忽略查询执行计划
+- 在本可计算时仍存储计算结果
 
 ---
 
-## 安全 最佳实践
+## 安全最佳实践
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +584,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*最后更新: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*最后更新：2025 年 6 月 | SQL 标准（兼容 MySQL/PostgreSQL）*

@@ -1,72 +1,65 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: technology_and_computing.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 技术与计算
 
-# 技术 和 计算
+## 什么是计算机？
 
-## What is a Computer?
+计算机是一种按照一组称为程序的指令来处理数据的电子设备。现代计算机基于冯·诺依曼体系结构，主要由中央处理器（CPU）、内存、存储设备和输入/输出设备组成。CPU 负责执行指令。RAM（随机存取存储器）在计算机运行时临时存储数据。SSD 和硬盘等存储设备则用于长期保存数据。
 
-A computer is an electronic device that processes 数据 according to a set 的 instructions called a program. Modern computers are based on 这 von Neumann 架构, which consists 的 a central processing unit (CPU), memory, storage, 和 input/output devices. 这 CPU executes instructions. RAM (random access memory) stores 数据 temporarily while 这 computer is running. Storage devices such as SSDs 和 hard drives store 数据 permanently.
+## 编程语言
 
-## Programming Languages
+编程语言是一种用于为计算机编写指令的形式化语言。Python 是一种高级、解释型、通用编程语言，以语法简洁、可读性强而闻名。它广泛应用于数据科学、机器学习、Web 开发和自动化。JavaScript 是 Web 开发的核心语言，运行于浏览器中。Java 是一种编译型、面向对象的语言，广泛用于企业软件和 Android 开发。C 和 C++ 属于更底层的语言，能够对硬件进行细粒度控制，常用于系统编程、游戏开发和对性能要求很高的应用。Rust 是一种现代系统编程语言，强调安全性和性能。
 
-A programming 语言 is a formal 语言 used to write instructions 为 computers. Python is a high-level, interpreted, general-purpose programming 语言 known 为 its simple 语法 和 readability. It is widely used 在 数据 科学, 机器学习, 网络 开发, 和 automation. JavaScript is 这 primary 语言 为 网络 开发 和 runs 在 browsers. Java is a compiled, object-oriented 语言 used widely 在 enterprise software 和 Android 开发. C 和 C++ are lower-level languages that give fine-grained control over hardware 和 are used 在 system programming, game 开发, 和 性能-critical applications. Rust is a modern 系统 programming 语言 focused on safety 和 性能.
+## 互联网如何运作
 
-## How 这 Internet Works
+互联网是一个由互联计算机构成的全球网络，这些计算机使用标准化协议进行通信。万维网（World Wide Web）是由网站和网页组成的系统，人们通过浏览器经由互联网访问它。HTTP（超文本传输协议）和 HTTPS（安全超文本传输协议）是传输网页所使用的协议。IP 地址是分配给网络中每台设备的唯一数字地址。DNS（域名系统）把人类可读的域名（如 google.com）转换为 IP 地址。路由器则负责在设备与网络之间转发网络流量。
 
-这 internet is a global 网络 的 interconnected computers that communicate using standardized protocols. 这 World Wide 网络 is a system 的 websites 和 网络 pages accessed through 这 internet via browsers. HTTP (HyperText Transfer Protocol) 和 HTTPS (secure HTTP) are 这 protocols used to transfer 网络 pages. An IP address is a unique numerical address assigned to each device on a 网络. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs 网络 traffic between devices 和 networks.
+## 网络与协议
 
-## Networking 和 Protocols
+TCP/IP 是互联网的基础协议族。IP（互联网协议）负责在网络之间为数据包寻址和路由，而 TCP（传输控制协议）通过重传和流量控制提供可靠、有序的传输。UDP 是一种无连接替代方案，当低延迟比传输保证更重要时常会使用它（例如流媒体、游戏或 DNS 查询）。HTTP 是一种无状态的应用层协议，用于客户端与服务器之间的请求/响应通信。HTTPS 是运行在 TLS 之上的 HTTP，增加了加密和完整性保护。REST（表述性状态转移）是一种 API 架构风格，使用资源、标准 HTTP 动词（GET、POST、PUT、PATCH、DELETE）以及无状态交互。WebSocket 提供持久的全双工连接，使客户端和服务器能够实时双向推送消息，适用于聊天、实时仪表盘和协作应用。
 
-TCP/IP is 这 foundational protocol suite 的 这 internet. IP (Internet Protocol) handles addressing 和 routing packets between networks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery 与 retransmission 和 flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (为 example 在 streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol 为 request/response 沟通 between clients 和 servers. HTTPS is HTTP over TLS, adding encryption 和 integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), 和 stateless interactions. WebSockets provide persistent, full-duplex connections so client 和 server can push messages 在 real time, which is useful 为 chat, live dashboards, 和 collaborative apps.
+## 人工智能
 
-## Artificial Intelligence
+人工智能（AI）是用机器，尤其是计算机系统，来模拟人类智能。机器学习是 AI 的一个子领域，在这一领域中，系统通过从数据中学习来做出预测或决策，而无需为每种情况显式编程。深度学习是机器学习的一个分支，使用具有多层结构的神经网络。神经网络是一类受生物大脑结构启发的计算模型。大语言模型（LLM）是在海量文本上训练的 AI 模型，用于生成和理解自然语言。
 
-Artificial intelligence (AI) is 这 simulation 的 human intelligence by machines, particularly computer 系统. 机器学习 is a subset 的 AI 在 which 系统 learn from 数据 to make predictions or decisions without being explicitly programmed. 深度学习 is a subset 的 机器学习 that uses 神经网络 与 many layers. 神经网络 are computational models loosely inspired by 这 structure 的 biological brains. Large 语言 models (LLMs) are AI models trained on massive amounts 的 text to generate 和 understand natural 语言.
+## 算法与数据结构
 
-## Algorithms 和 数据 Structures
+算法是解决问题的分步骤过程。数据结构是在计算机中组织数据的方式，以便能够高效访问和修改。常见的数据结构包括数组、链表、栈、队列、树、图和哈希表。排序算法会按照指定顺序排列元素，常见例子有冒泡排序、归并排序和快速排序。二分查找是一种在有序列表中查找元素的高效算法，其方法是不断将搜索范围减半。
 
-An algorithm is a step-by-step procedure 为 solving a problem. 数据 structures are ways 的 organizing 数据 在 a computer so that it can be accessed 和 modified efficiently. Common 数据 structures include arrays, linked lists, stacks, queues, trees, graphs, 和 hash tables. Sorting algorithms arrange items 在 a specified order; common 示例 are bubble sort, merge sort, 和 quicksort. Binary search is an efficient algorithm 为 finding an item 在 a sorted list by repeatedly halving 这 search range.
+## 数据库
 
-## Databases
+数据库是以电子方式存储的、有组织的结构化数据集合。关系型数据库将数据存储在由行和列构成的表中。SQL（结构化查询语言）是管理和查询关系型数据库的标准语言。NoSQL 数据库以非表格关系的形式存储数据，例如文档、键值对或图。常见的数据库系统包括 PostgreSQL、MySQL、SQLite、MongoDB 和 Redis。数据库中的索引可以加快数据检索速度，但代价是额外占用存储空间。
 
-A 数据库 is an organized collection 的 structured 数据 stored electronically. A relational 数据库 stores 数据 在 tables 与 rows 和 columns. SQL (Structured Query 语言) is 这 standard 语言 为 managing 和 querying relational databases. NoSQL databases store 数据 在 formats other than tabular relations, such as documents, key-value pairs, or graphs. Common 数据库 系统 include PostgreSQL, MySQL, SQLite, MongoDB, 和 Redis. An index 在 a 数据库 speeds up 数据 retrieval at 这 cost 的 extra storage.
+## 系统设计基础
 
-## System Design 基础
+系统设计关注如何构建可靠、可扩展且易维护的软件系统。负载均衡会把流量分配到多台服务器上，以提升可用性并降低延迟。水平扩展是增加更多机器；垂直扩展是为单台机器增加更多资源。缓存把高频访问的数据存放在高速存储中（例如 Redis、Memcached 或 CDN 边缘缓存），以减少数据库负载并缩短响应时间。大规模数据库需要复制、分区（分片）、备份策略，以及对一致性权衡进行谨慎处理。微服务将大型应用拆分为多个可独立部署的小型服务，而单体架构则把大部分逻辑保留在一个可部署单元中；两种方式在复杂度、部署速度、调试难度和团队自治性方面各有取舍。
 
-System design focuses on building reliable, scalable, 和 maintainable software 系统. Load balancing distributes traffic across multiple servers to improve availability 和 reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed 数据 在 fast storage (为 example Redis, Memcached, or CDN edge caches) to reduce 数据库 load 和 response time. Databases at scale require replication, partitioning (sharding), backup strategies, 和 careful consistency tradeoffs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic 在 one deployable unit; both approaches involve tradeoffs 在 complexity, 部署 speed, debugging, 和 team autonomy.
+## 操作系统
 
-## Operating 系统
+操作系统（OS）是管理计算机硬件并为程序提供服务的软件。常见操作系统包括 Windows、macOS 和 Linux。Linux 是一种开源操作系统内核，广泛用于服务器、嵌入式系统和 Android。操作系统管理进程（正在运行的程序）、内存、文件系统以及输入/输出设备。进程是程序的运行实例。线程是进程内部最小的执行单元。
 
-An operating system (OS) is software that manages computer hardware 和 provides services 为 programs. Common operating 系统 include Windows, macOS, 和 Linux. Linux is an open-source OS kernel used 在 servers, embedded 系统, 和 Android. 这 OS manages processes (running programs), memory, file 系统, 和 input/output devices. A process is a running instance 的 a program. A thread is 这 smallest unit 的 execution within a process.
+## 版本控制
 
-## Version Control
+版本控制系统会跟踪代码随时间发生的变化，使开发者能够协作并回退到先前状态。Git 是目前使用最广泛的版本控制系统。仓库（repo）是一组文件及其历史记录的集合。提交（commit）是对更改的一个已保存快照。分支（branch）是一条独立的开发线。拉取请求（pull request）是将一个分支中的更改合并到另一个分支中的提议。
 
-Version control 系统 track changes to code over time, allowing developers to collaborate 和 revert to previous states. Git is 这 most widely used version control system. A repository (repo) is a collection 的 files 和 their 历史. A commit is a saved snapshot 的 changes. A branch is an independent line 的 开发. A pull request is a proposal to merge changes from one branch into another.
+## 软件开发实践
 
-## Software 开发 Practices
+面向对象编程（OOP）把代码组织为同时封装数据和行为的对象。OOP 的关键原则包括封装、继承、多态和抽象。测试驱动开发（TDD）是一种先写测试、再写代码的实践。敏捷（Agile）是一组强调迭代开发、协作与适应性的开发方法。DevOps 将软件开发与 IT 运维结合起来，以缩短开发生命周期。API（应用程序编程接口）使不同的软件系统能够彼此通信。
 
-Object-oriented programming (OOP) organizes code into objects that combine 数据 和 behavior. Key principles 的 OOP include encapsulation, inheritance, polymorphism, 和 abstraction. Test-driven 开发 (TDD) is a practice 的 writing tests before writing code. Agile is a set 的 software 开发 methodologies that emphasize iterative 开发, collaboration, 和 adaptability. DevOps combines software 开发 和 IT operations to shorten 这 开发 lifecycle. APIs (Application Programming Interfaces) allow different software 系统 to communicate 与 each other.
+## 云计算与 DevOps 基础
 
-## Cloud 和 DevOps 基础
+云计算通过互联网提供按需基础设施和托管服务。三大公有云提供商分别是 AWS（Amazon Web Services）、Microsoft Azure 和 Google Cloud Platform（GCP）。常见服务模型包括 IaaS（基础设施即服务）、PaaS（平台即服务）和 SaaS（软件即服务）。云的核心构件包括计算实例/容器、对象存储、托管数据库、网络以及 IAM（身份与访问管理）。CI/CD（持续集成与持续交付/部署）将构建、测试和发布流水线自动化，使代码能够安全地从提交进入生产环境。Docker 将应用及其依赖打包为可移植容器；在生产环境中，这些容器通常通过编排器（如 Kubernetes）、无服务器平台或托管容器服务部署。
 
-Cloud 计算 provides on-demand infrastructure 和 managed services over 这 internet. 这 three major public cloud providers are AWS (Amazon 网络 Services), Microsoft Azure, 和 Google Cloud Platform (GCP). Common service models are IaaS (infrastructure), PaaS (platform), 和 SaaS (software). Core cloud building blocks include compute instances/containers, object storage, managed databases, networking, 和 IAM (Identity 和 Access 管理). CI/CD (Continuous Integration 和 Continuous Delivery/部署) automates build, test, 和 release pipelines so code can move safely from commit to production. Docker packages applications 和 dependencies into portable containers; 在 production these containers are typically deployed via orchestrators (such as Kubernetes), serverless platforms, or managed container services.
+## 数据格式与工具链
 
-## 数据 Formats 和 Tooling
+JSON（JavaScript Object Notation）是一种轻量级文本格式，由对象（键值对）、数组、字符串、数字、布尔值和 null 构成，广泛用于 API。YAML 是一种对人更友好的配置格式，支持嵌套结构和注释，常用于 CI/CD 和基础设施定义。CSV（逗号分隔值）以分隔文本行的形式存储表格数据，常见于数据导入/导出流程。XML（可扩展标记语言）是一种基于标签的结构化格式，常用于遗留系统、配置和文档工作流。开发者通常会使用 lint 工具、模式验证器（如 JSON Schema）、查询工具（`jq`、XPath）以及编程语言中的解析库来验证和转换这些格式。
 
-JSON (JavaScript Object Notation) is a lightweight text format built from objects (key/value pairs), arrays, strings, numbers, booleans, 和 null; it is widely used 在 APIs. YAML is a human-friendly configuration format that supports nested structures 和 comments, commonly used 在 CI/CD 和 infrastructure definitions. CSV (Comma-Separated Values) stores tabular 数据 as rows 的 delimited text 和 is common 为 数据 import/export pipelines. XML (eXtensible Markup 语言) is a tag-based structured format used 在 legacy 系统, configuration, 和 document workflows. Developers commonly validate 和 transform these formats 与 linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), 和 parsing libraries 在 their programming 语言.
+## 正则表达式（Regex）
 
-## Regular Expressions (Regex)
+正则表达式是一种用于搜索、匹配、提取和转换文本的模式语言。核心概念包括字面量（`cat`）、字符类（`[a-z]`、`\d`）、量词（`*`、`+`、`?`、`{n,m}`）、锚点（`^`、`$`）、分组（`(...)`）、选择（`a|b`）以及特殊字符转义。Regex 被广泛用于输入校验、日志解析、文本提取和查找替换自动化。不同引擎（PCRE、JavaScript、Python `re`、RE2）的功能集并不相同，因此不同工具之间的行为可能存在差异。Regex 功能强大，但也可能难以阅读；复杂模式应经过测试并做好文档说明，以避免缺陷。
 
-A regular expression is a pattern 语言 used to search, match, extract, 和 transform text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), 和 escaping special characters. Regex is heavily used 为 input validation, log parsing, text extraction, 和 find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested 和 documented to avoid bugs.
+## 网络安全
 
-## Cybersecurity
+网络安全是保护计算机系统、网络和数据免受数字攻击的实践。常见威胁包括恶意软件（malware）、网络钓鱼（phishing，旨在窃取信息的欺诈性通信）、勒索软件（加密数据并索要赎金的恶意软件）以及拒绝服务攻击。加密会把数据转换为难以读取的形式，只有持有密钥才能解码。HTTPS 使用 TLS（传输层安全）来加密 Web 流量。强且唯一的密码以及双因素认证，是最基础的安全实践。
 
-Cybersecurity is 这 practice 的 protecting computer 系统, networks, 和 数据 from digital attacks. Common threats include malware (malicious software), phishing (fraudulent 沟通 designed to steal information), ransomware (malware that encrypts 数据 和 demands payment), 和 denial-的-service attacks. Encryption transforms 数据 into an unreadable form that can only be decoded 与 a key. HTTPS uses TLS (Transport Layer 安全) to encrypt 网络 traffic. Strong, unique passwords 和 two-factor authentication are fundamental 安全 practices.
+## 面向开发者的安全概念
 
-## 安全 Concepts 为 Developers
-
-OAuth 2.0 is an authorization framework that lets users grant limited access to an application without sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 为 authentication. JWT (JSON 网络 Token) is a compact token format containing claims, often used 为 stateless auth, but it must be signed correctly 和 validated strictly (signature, expiration, issuer, audience). TLS secures 数据 在 transit by providing encryption, integrity, 和 server authentication through certificates. 这 OWASP Top 10 is a widely used list 的 common 网络 application 安全 risks, including broken access control, cryptographic failures, injection, insecure design, 安全 misconfiguration, vulnerable components, 和 insufficient logging/monitoring. Secure 开发 requires defense-在-depth: input validation, output encoding, least privilege, secret 管理, dependency patching, 和 regular 安全 测试.
+OAuth 2.0 是一种授权框架，允许用户在不直接共享凭证的情况下，向应用授予受限访问权限。OpenID Connect（OIDC）是在 OAuth 2.0 之上构建的身份层，用于身份认证。JWT（JSON Web Token）是一种紧凑的令牌格式，包含声明信息，常用于无状态认证，但必须正确签名并严格验证（签名、过期时间、签发者、受众）。TLS 通过证书提供加密、完整性和服务器认证，从而保护传输中的数据。OWASP Top 10 是一份被广泛使用的常见 Web 应用安全风险清单，包括访问控制失效、加密失误、注入、不安全设计、安全配置错误、脆弱组件以及日志/监控不足。安全开发需要纵深防御：输入验证、输出编码、最小权限、密钥管理、依赖修补以及定期安全测试。

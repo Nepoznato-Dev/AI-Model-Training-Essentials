@@ -1,875 +1,867 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: dictionary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 英语词典——常见词汇释义
 
-# 英语 词典 — Common Word Definitions
-
-A 参考 list 的 frequently used 英语 words 和 their meanings,
-covering everyday vocabulary, academic terms, 和 words commonly encountered
-在 questions 和 discussions.
+这是一份常用英语词汇及其含义的参考清单，
+涵盖日常词汇、学术术语，以及在提问与讨论中经常遇到的词语。
 
 ---
 
 ## A
 
-**abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — 这 power or skill to do something.
-**abstract** — existing as a concept rather than a concrete thing; a summary 的 a document.
-**accurate** — correct 和 precise; free from errors.
-**achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit 这 truth 的 something; to show recognition.
-**acquire** — to obtain or gain something, usually through effort or purchase.
-**adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough 为 a purpose.
-**adjacent** — next to or adjoining something else.
-**adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead 的 这 current time.
-**advantage** — a condition that gives a favourable position over others.
-**adverse** — unfavourable; harmful.
-**affect** — to have an impact on something (verb); emotion (noun, formal).
-**aggregate** — a whole formed by combining several elements.
-**algorithm** — a set 的 rules or steps 为 solving a problem or task.
-**allocate** — to assign resources 为 a particular purpose.
-**alter** — to change something, usually partially.
-**ambiguous** — unclear; can be interpreted 在 more than one way.
-**analyse** — to examine 在 detail to understand or explain.
-**annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare 为 something before it happens.
-**apparent** — clearly visible or understood; seeming to be true.
-**approach** — a way 的 dealing 与 something; to come near.
-**approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge 这 quality, value, or 自然 的 something.
-**assign** — to give a task or role to someone; to allocate.
-**assume** — to accept something as true without proof.
-**attribute** — a quality or feature; to credit something to a cause (verb).
-**automate** — to make a process operate automatically without human intervention.
+**abandon** — 永久地离开、遗弃；放弃某个目标或地点。
+**ability** — 做某事的能力或技能。
+**abstract** — 抽象的，作为概念而非具体事物存在的；（文档的）摘要。
+**accurate** — 准确的、精确的；没有错误的。
+**achieve** — 通过努力成功达成目标。
+**acknowledge** — 承认某事属实；表示认可或致意。
+**acquire** — 获得、取得某物，通常通过努力或购买。
+**adapt** — 适应新的条件或要求。
+**adequate** — 足够的；能满足某种用途的。
+**adjacent** — 邻近的；毗连的。
+**adjust** — 作出小幅调整，以改善适配或功能。
+**advance** — 前进；进展；也指提前的。
+**advantage** — 使人处于有利位置的条件或优势。
+**adverse** — 不利的；有害的。
+**affect** — 影响（动词）；情感、情绪（名词，正式用法）。
+**aggregate** — 由多个部分组合而成的整体。
+**algorithm** — 用于解决问题或完成任务的一组规则或步骤。
+**allocate** — 为特定目的分配资源。
+**alter** — 改变某物，通常指部分改变。
+**ambiguous** — 模糊不清的；可作多种解释的。
+**analyse** — 详细分析，以便理解或解释。
+**annotate** — 给文本或图表添加说明性注释。
+**anticipate** — 预期；提前为某事做准备。
+**apparent** — 明显可见或易于理解的；表面上看似真实的。
+**approach** — 处理问题的方法；靠近。
+**approximate** — 近似的；不完全精确的。
+**assess** — 评估；判断某事物的质量、价值或性质。
+**assign** — 分派任务或角色给某人；分配。
+**assume** — 在没有证据的情况下认为某事为真。
+**attribute** — 属性、特征；把某事归因于某种原因（动词）。
+**automate** — 使某个过程自动运行，无需人工干预。
 
 ## B
 
-**benefit** — an advantage or positive outcome.
-**bias** — an unfair preference 为 or against something; systematic error.
-**brief** — short 在 time or length; a summary or instructions.
+**benefit** — 益处；好处；积极结果。
+**bias** — 偏见；对某事的不公平偏向；系统性误差。
+**brief** — 简短的；摘要；简要说明。
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having 这 ability or qualities needed 为 something.
-**capacity** — 这 maximum amount something can hold or do.
-**categorise** — to place into groups based on shared characteristics.
-**clarify** — to make something easier to understand.
-**classify** — to arrange into categories or groups.
-**coherent** — logical 和 consistent; easy to understand.
-**collaborate** — to work together 与 others towards a common goal.
-**compile** — to gather 和 organise information; to convert source code into executable code.
-**complex** — consisting 的 many interconnected parts; not simple.
-**component** — a part or element 的 a larger whole.
-**comprehend** — to understand fully.
-**compute** — to calculate or process 数据.
-**concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or finish something.
-**condition** — a requirement; a state 的 being; circumstances.
-**configure** — to arrange or set up a system 在 a particular way.
-**confirm** — to establish 这 truth or accuracy 的 something.
-**conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving 在 这 same way; not contradictory.
-**context** — 这 circumstances surrounding something; background information.
-**contrast** — to compare 在 order to show differences.
-**convert** — to change from one form, unit, or use to another.
-**coordinate** — to organise different elements to work together.
-**criteria** — standards by which something is judged (plural 的 criterion).
+**calculate** — 用数学方法计算某个数值。
+**capable** — 有能力的；具备所需素质的。
+**capacity** — 可容纳或可完成的最大数量、能力。
+**categorise** — 按共同特征归入不同类别。
+**clarify** — 使某事更清楚易懂。
+**classify** — 分类；分门别类地排列。
+**coherent** — 连贯的；合乎逻辑且一致的。
+**collaborate** — 与他人合作，共同实现目标。
+**compile** — 汇集并整理信息；将源代码编译为可执行代码。
+**complex** — 复杂的；由许多相互关联的部分组成的。
+**component** — 更大整体中的一个部分或组成要素。
+**comprehend** — 充分理解。
+**compute** — 计算；处理数据。
+**concept** — 概念；抽象观念。
+**conclude** — 得出结论；结束某事。
+**condition** — 条件；状态；情形。
+**configure** — 以特定方式设置或配置系统。
+**confirm** — 证实某事的真实性或准确性。
+**conflict** — 冲突；严重分歧；对立力量之间的碰撞。
+**consistent** — 一贯的；一致的；不矛盾的。
+**context** — 语境；背景情况。
+**contrast** — 对比，以显示差异。
+**convert** — 转换；从一种形式、单位或用途变为另一种。
+**coordinate** — 协调不同要素，使其协同工作。
+**criteria** — 评判某事的标准（criterion 的复数）。
 
 ## D
 
-**数据** — facts 和 统计 collected 为 analysis.
-**debug** — to find 和 fix errors 在 computer code.
-**define** — to give 这 meaning 的 a word or describe 这 limits 的 something.
-**demonstrate** — to show how something works or is done.
-**deploy** — to put into use; to install 和 run software 在 a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
-**determine** — to find out or establish something conclusively.
-**develop** — to build, grow, or make something more elaborate over time.
-**differ** — to be unlike; to disagree.
-**distinct** — clearly different 和 separate.
-**distribute** — to spread or share across multiple locations or people.
-**domain** — a field 的 knowledge or activity; a 网络 address.
-**duplicate** — an exact copy; to copy something.
+**data** — 用于分析的事实与统计资料。
+**debug** — 查找并修复计算机代码中的错误。
+**define** — 给出词语的含义；界定某事的范围。
+**demonstrate** — 展示某物如何运作或如何完成。
+**deploy** — 投入使用；在真实环境中部署并运行软件。
+**derive** — 从某一来源获得；通过推理得出结论。
+**determine** — 查明；确定；确立。
+**develop** — 构建、发展，或让某物随着时间更完善。
+**differ** — 不同；持不同意见。
+**distinct** — 明显不同的；分开的。
+**distribute** — 分发；分布到多个地点或人群中。
+**domain** — 领域；知识或活动范围；域名。
+**duplicate** — 完全相同的副本；复制某物。
 
 ## E
 
-**efficient** — achieving results 与 minimum waste 的 time or resources.
-**element** — a basic component; one 的 这 chemical substances 在 这 periodic table.
-**embed** — to fix firmly within; to incorporate into a larger structure.
-**enable** — to make possible; to activate a feature.
-**enhance** — to improve 这 quality or value 的 something.
-**entity** — a thing 与 distinct existence; an object 在 a system.
-**enumerate** — to list items one by one; to count.
-**environment** — surroundings; 在 计算, 这 system 和 configuration 在 which software runs.
-**error** — a mistake; a deviation from correct behaviour.
-**estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to form an opinion after careful consideration.
-**execute** — to carry out a plan or instruction; to run a computer program.
-**explicit** — clearly stated 和 leaving nothing implied.
-**extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtain from a source.
+**efficient** — 高效的；以最少时间或资源浪费取得结果的。
+**element** — 基本组成部分；元素周期表中的化学元素。
+**embed** — 嵌入；牢固地置于某物内部；整合进更大结构。
+**enable** — 使成为可能；启用某项功能。
+**enhance** — 提升；改善某物的质量或价值。
+**entity** — 独立存在的事物；系统中的实体对象。
+**enumerate** — 逐项列举；计数。
+**environment** — 环境；在计算中指软件运行的系统与配置环境。
+**error** — 错误；偏离正确行为的情况。
+**estimate** — 估算；粗略判断。
+**evaluate** — 经过审慎考虑后作出评价。
+**execute** — 执行计划或指令；运行计算机程序。
+**explicit** — 明确表述的；毫无暗示和含糊的。
+**extend** — 延长、扩大；增加功能。
+**extract** — 提取；从来源中取出或获得。
 
 ## F
 
-**factor** — an element that contributes to a result; to break into components (math).
-**feature** — a distinctive aspect or capability.
-**filter** — to remove unwanted elements; a device or function that selects items.
-**flexible** — able to adapt to different conditions.
-**format** — 这 arrangement or layout 的 数据; to prepare 为 use.
-**framework** — a basic structure providing 支持 为 building something.
-**function** — 这 purpose 的 something; a reusable block 的 code (programming).
-**fundamental** — forming 这 base or foundation; essential.
+**factor** — 影响结果的因素；（数学）分解成因子。
+**feature** — 特征；功能；显著方面。
+**filter** — 过滤；去除不需要的部分；起筛选作用的装置或功能。
+**flexible** — 灵活的；能适应不同条件的。
+**format** — 数据的格式或布局；为使用做好整理。
+**framework** — 提供支撑的基本结构；框架。
+**function** — 作用、功能；（编程）可复用的代码块。
+**fundamental** — 基础的；根本的；本质上重要的。
 
 ## G
 
-**generate** — to produce or create.
-**global** — relating to 这 whole world; applying to an entire system.
-**guideline** — a general rule or recommendation.
+**generate** — 生成；产生。
+**global** — 全球的；适用于整个系统的。
+**guideline** — 指导原则；一般性建议。
 
 ## H
 
-**hierarchy** — a system ranked by levels 的 authority or importance.
-**hypothesis** — a proposed explanation that can be tested.
+**hierarchy** — 层级结构；按权力或重要性分级的体系。
+**hypothesis** — 假设；可被检验的解释。
 
 ## I
 
-**identify** — to recognise 和 name something.
-**implement** — to put a plan or system into effect.
-**implicit** — implied without being directly stated.
-**index** — a pointer to 数据 location; an alphabetical list (noun); to categorise (verb).
-**infer** — to reach a conclusion from evidence without explicit statement.
-**initialise** — to set a variable or system to a starting state.
-**input** — 数据 provided to a system; to enter 数据.
-**integrate** — to combine parts into a whole; to add a feature to an existing system.
-**interface** — a point where two 系统 meet 和 interact; a contract 在 programming.
-**interpret** — to explain 这 meaning 的 something; to execute code line by line.
-**iterate** — to repeat a process, often 与 incremental changes.
+**identify** — 识别并命名某物。
+**implement** — 实施；使计划或系统生效。
+**implicit** — 含蓄的；未直接说明但暗含其中的。
+**index** — 数据位置的索引；字母顺序索引表（名词）；为某物建立索引或分类（动词）。
+**infer** — 根据证据推断出结论。
+**initialise** — 将变量或系统设为初始状态。
+**input** — 输入到系统中的数据；输入数据。
+**integrate** — 整合各部分成为整体；向现有系统加入某项功能。
+**interface** — 两个系统相遇并交互的界面；编程中的接口约定。
+**interpret** — 解释含义；逐行执行代码。
+**iterate** — 重复某个过程，通常伴随渐进式改动。
 
 ## J
 
-**justify** — to give reasons 为 a decision; to align text along a margin.
+**justify** — 为某个决定给出理由；使文本与边距对齐。
 
 ## K
 
-**key** — essential; a value used to look up 数据; a cryptographic secret.
+**key** — 关键的；用于查找数据的键；加密密钥。
 
 ## L
 
-**layer** — a level 在 a hierarchy; a component stacked on others.
-**legacy** — inherited from 这 past; old software still 在 use.
-**limit** — a boundary; 这 maximum or minimum value allowed.
-**linear** — arranged 在 a straight line; proportional increase.
-**link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; 在 计算, running on 这 same machine.
-**logic** — reasoning according to rules; 这 flow 的 control 在 a program.
+**layer** — 层级中的一层；叠放在其他部分之上的组件。
+**legacy** — 从过去遗留下来的；仍在使用的旧软件。
+**limit** — 界限；允许的最大值或最小值。
+**linear** — 线性的；按直线排列的；成比例增长的。
+**link** — 连接；链接；超链接。
+**local** — 本地的；附近区域的；在计算中指运行在同一台机器上的。
+**logic** — 逻辑；按规则推理；程序中的控制流程。
 
 ## M
 
-**maintain** — to keep 在 good condition; to continue over time.
-**manipulate** — to handle or control, sometimes 与 skill; to influence unfairly.
-**map** — to associate keys 与 values (数据 structure); to show spatial relationships.
-**merge** — to combine into one; to join code branches.
-**method** — a way 的 doing something; a function attached to an object (OOP).
-**migrate** — to move 数据 or 系统 from one environment to another.
-**model** — a representation 的 something; a trained AI system.
-**modify** — to change partially.
-**monitor** — to observe 和 check over time; a display screen.
+**maintain** — 维护，使其保持良好状态；持续保持。
+**manipulate** — 操作、控制；有时也指不公正地操纵。
+**map** — 建立键与值的对应关系（数据结构）；表示空间关系。
+**merge** — 合并为一；合并代码分支。
+**method** — 方法；（OOP）附属于对象的函数。
+**migrate** — 将数据或系统迁移到另一个环境。
+**model** — 模型；某物的表示形式；经过训练的 AI 系统。
+**modify** — 修改；局部更改。
+**monitor** — 监测、持续观察；显示器。
 
 ## N
 
-**navigate** — to find a path through; to move between pages or screens.
-**node** — a point 在 a 网络 or tree structure.
-**normalise** — to scale values to a standard range; to reduce redundancy 在 a 数据库.
+**navigate** — 找到路径穿过；在页面或屏幕间移动。
+**node** — 网络或树结构中的节点。
+**normalise** — 将数值标准化到某一范围；在数据库中减少冗余。
 
 ## O
 
-**objective** — a goal or aim; not influenced by personal feelings (adjective).
-**obtain** — to get or acquire.
-**optimise** — to make as effective or efficient as possible.
-**output** — 数据 produced by a system; 这 result 的 a computation.
-**override** — to take control over an existing setting or method.
+**objective** — 目标；客观的，不受个人情感影响的。
+**obtain** — 获得；取得。
+**optimise** — 优化；使尽可能高效或有效。
+**output** — 系统产生的数据；计算结果。
+**override** — 覆盖；接管已有设置或方法。
 
 ## P
 
-**parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text into components; to interpret structured 数据.
-**pattern** — a repeated arrangement; a template 为 solving a common problem.
-**persist** — to continue to exist; to save 数据 so it survives restarts.
-**pipeline** — a series 的 connected stages where 这 output 的 one feeds 这 next.
-**precise** — exact; accurate to fine detail.
-**predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance 和 address 这 most important first.
-**process** — a series 的 steps; a running program instance (verb: to handle or transform).
-**prompt** — a cue or instruction given to an AI model or user.
-**property** — a characteristic or attribute; a value belonging to an object.
-**protocol** — a set 的 rules 为 沟通 between 系统.
+**parameter** — 传递给函数的参数；可测量的特征。
+**parse** — 将文本分析为组成部分；解析结构化数据。
+**pattern** — 模式；重复出现的安排；解决常见问题的模板。
+**persist** — 持续存在；保存数据使其在重启后仍然保留。
+**pipeline** — 由多个相连阶段组成的流程，前一阶段的输出会成为后一阶段的输入。
+**precise** — 精确的；准确到细节。
+**predict** — 预言、预测将会发生什么。
+**prioritise** — 按重要性排序任务，并优先处理最重要的。
+**process** — 一系列步骤；运行中的程序实例（动词：处理、转换）。
+**prompt** — 提示语；给 AI 模型或用户的指令。
+**property** — 属性、特征；对象所拥有的一个值。
+**protocol** — 系统之间通信所遵循的一组规则。
 
 ## Q
 
-**query** — a request 为 information from a 数据库; a question.
-**queue** — a line 的 items waiting to be processed (first 在, first out).
+**query** — 查询；向数据库发出的信息请求；问题。
+**queue** — 队列；等待处理的一列项目（先进先出）。
 
 ## R
 
-**recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates existing functionality; extra 为 backup.
-**refactor** — to restructure existing code without changing its external behaviour.
-**参考** — a pointer to a value; a source cited 为 information.
-**relevant** — closely connected to 这 topic at hand.
-**render** — to produce output (graphics, text, or HTML).
-**represent** — to stand 为 or describe something.
-**requirement** — a necessary condition or feature.
-**resolve** — to find a solution; to determine a value (e.g. a DNS name).
-**retrieve** — to get back stored information.
-**robust** — strong 和 reliable, especially under stress.
+**recursive** — 递归的；函数或过程会调用或引用自身。
+**redundant** — 冗余的；因重复现有功能而显得多余；也可指备份用的额外部分。
+**refactor** — 在不改变外部行为的前提下重构已有代码。
+**reference** — 对某个值的引用；被引用的信息来源。
+**relevant** — 与当前主题密切相关的。
+**render** — 渲染；生成输出（图形、文本或 HTML）。
+**represent** — 代表；描述；体现。
+**requirement** — 必要条件；所需功能。
+**resolve** — 解决问题；解析出某个值（例如 DNS 名称）。
+**retrieve** — 取回已存储的信息。
+**robust** — 健壮的；可靠的，尤其是在压力下依然稳定。
 
 ## S
 
-**scalable** — able to handle increased workload without degrading 性能.
-**schema** — 这 structure or layout 的 a 数据库 or 数据 format.
-**scope** — 这 range 的 effect; 这 section 的 code where a variable is visible.
-**segment** — a distinct section or part.
-**semantic** — relating to meaning, especially 在 语言 or code.
-**sequence** — a set 的 things 在 a particular order.
-**session** — a period 的 activity; a connection between client 和 server.
-**simulate** — to imitate 这 behaviour 的 a system.
-**source** — 这 origin 的 something; original code before compilation.
-**specify** — to state clearly 和 在 detail.
-**static** — not changing; 在 计算, fixed at compile time or not associated 与 instances.
-**store** — to save 数据 为 later use.
-**structure** — 这 arrangement 的 parts; a composite 数据 type.
-**summarise** — to give a brief statement 的 这 main points.
-**synchronise** — to cause to happen at 这 same time or rate.
-**语法** — 这 rules governing 这 structure 的 statements 在 a 语言.
+**scalable** — 可扩展的；能够在工作负载增加时不显著降低性能。
+**schema** — 模式；数据库或数据格式的结构布局。
+**scope** — 范围；影响的边界；变量可见的代码区域。
+**segment** — 片段；独立的一部分。
+**semantic** — 语义的；与意义有关的，尤其在语言或代码中。
+**sequence** — 按特定顺序排列的一组事物。
+**session** — 会话；一段活动时间；客户端与服务器之间的一次连接。
+**simulate** — 模拟；仿真某个系统的行为。
+**source** — 来源；源头；编译前的原始代码。
+**specify** — 明确详细地说明。
+**static** — 静态的；不变化的；在计算中指编译时固定或不与实例关联的。
+**store** — 存储；保存数据以供后用。
+**structure** — 结构；各部分的排列方式；复合数据类型。
+**summarise** — 概述；简要陈述要点。
+**synchronise** — 同步；使在同一时间或速率下发生。
+**syntax** — 语法；语言中语句结构所遵循的规则。
 
 ## T
 
-**template** — a model or pattern used as a starting point.
-**threshold** — a level or point that triggers an action when reached.
-**token** — a unit 的 text 在 NLP; an authentication credential.
-**trace** — to follow a path; a record 的 program execution 为 debugging.
-**transform** — to change 在 form, 自然, or appearance.
-**transmit** — to send 数据 from one place to another.
+**template** — 模板；作为起点使用的模型或样式。
+**threshold** — 阈值；达到后会触发动作的界限或点。
+**token** — 标记；在 NLP 中是文本单位；也可指认证凭证。
+**trace** — 追踪；程序执行记录；调试痕迹。
+**transform** — 转换；改变形态、性质或外观。
+**transmit** — 传输；把数据从一处发送到另一处。
 
 ## U
 
-**uniform** — consistent 和 unchanged throughout.
-**unique** — 这 only one 的 its kind; occurring just once.
-**update** — to bring to a more current state.
-**utilise** — to make use 的 something.
+**uniform** — 一致的；始终不变的。
+**unique** — 独一无二的；仅出现一次的。
+**update** — 更新到更当前的状态。
+**utilise** — 利用；使用某物。
 
 ## V
 
-**validate** — to confirm something meets requirements or is correct.
-**variable** — a named container 为 a value that can change.
-**verify** — to check correctness or truth.
-**version** — a specific form 的 a product at a particular point 在 its 开发.
+**validate** — 验证某事是否满足要求或是否正确。
+**variable** — 变量；用于存放可变化数值的具名容器。
+**verify** — 核实正确性或真实性。
+**version** — 某个产品在开发过程中某一时点上的特定版本。
 
 ## W
 
-**workflow** — a series 的 steps followed to 完整 a task.
-**warrant** — justification 为 an action; a 法律 document authorizing something.
+**workflow** — 为完成任务而遵循的一系列步骤。
+**warrant** — 正当理由；授权某事的法律文件。
 
 ## X
 
-**xenophobia** — fear or hatred 的 foreigners or strangers.
+**xenophobia** — 对外国人或陌生人的恐惧或仇视。
 
 ## Y
 
-**yield** — to produce or provide; to give way; 这 amount produced.
+**yield** — 产生、提供；让步；产出量。
 
 ## Z
 
-**zero-sum** — a situation where one person's gain equals another's loss.
-**zone** — an area 与 distinct characteristics or boundaries.
+**zero-sum** — 零和的；一方所得等于另一方所失的情形。
+**zone** — 具有特定特征或边界的区域。
 
 ---
 
-## Additional Technical Terms
+## 补充技术术语
 
-**abstraction** — hiding complex implementation details while showing only essential features.
-**acronym** — a word formed from initial letters 的 a phrase (e.g., NASA, ASCII).
-**adjective** — a word describing a noun or pronoun.
-**adverb** — a word modifying a verb, adjective, or other adverb, often ending 在 -ly.
-**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
-**agile** — a software 开发 methodology emphasizing iterative progress 和 flexibility.
-**analogy** — a comparison between two things to explain or clarify.
-**antonym** — a word opposite 在 meaning to another word.
-**aphorism** — a concise statement expressing a general truth or principle.
-**apocryphal** — 的 doubtful authenticity; widely circulated but likely false.
-**archetype** — an original model or typical example 的 something.
-**artifact** — an object made by humans; 在 计算, an unintended byproduct 的 processing.
-**assertion** — a confident statement; 在 programming, a check that a condition is true.
-**asynchronous** — not occurring at 这 same time; allowing operations to proceed without waiting.
-**attenuate** — to reduce 在 force, value, or intensity.
-**axiom** — a statement accepted as true without proof; a fundamental principle.
+**abstraction** — 隐藏复杂实现细节，只呈现关键特征的做法。
+**acronym** — 由短语首字母构成的词（如 NASA、ASCII）。
+**adjective** — 形容词；用于修饰名词或代词的词。
+**adverb** — 副词；修饰动词、形容词或其他副词的词，常以 -ly 结尾。
+**affix** — 词缀；附加在词根上的语素（前缀在前，后缀在后）。
+**agile** — 敏捷；强调迭代推进与灵活性的开发方法。
+**analogy** — 类比；通过比较两件事来解释或澄清。
+**antonym** — 反义词；意义相反的词。
+**aphorism** — 格言；简洁表达普遍真理或原则的话。
+**apocryphal** — 真伪可疑的；广为流传但很可能不真实的。
+**archetype** — 原型；某类事物最初或最典型的范例。
+**artifact** — 人工制品；在计算中指处理过程中产生的非预期副产物。
+**assertion** — 断言；有把握的陈述；在编程中指对某条件为真的检查。
+**asynchronous** — 异步的；不在同一时间发生的；允许操作无需等待即可继续。
+**attenuate** — 减弱；降低强度、价值或程度。
+**axiom** — 公理；无需证明而被接受为真的陈述；基本原则。
 
-**backpropagation** — an algorithm 为 training 神经网络 by propagating errors backward.
-**bandwidth** — 这 range 的 frequencies 可用; 数据 transfer capacity.
-**binary** — consisting 的 two parts; base-2 number system using 0s 和 1s.
-**bit** — 这 smallest unit 的 数据 (0 or 1); short 为 binary digit.
-**blockchain** — a distributed ledger 技术 recording transactions across multiple computers.
-**boolean** — relating to logic 与 values true or false; named after George Boole.
-**bottleneck** — a point 的 congestion slowing down a process or system.
-**byte** — a unit 的 digital information typically consisting 的 8 bits.
+**backpropagation** — 反向传播；通过将误差向后传播来训练神经网络的算法。
+**bandwidth** — 带宽；可用频率范围；数据传输能力。
+**binary** — 二进制的；由两部分组成的；以 0 和 1 为基础的数制。
+**bit** — 比特；最小的数据单位（0 或 1），binary digit 的缩写。
+**blockchain** — 区块链；一种在多台计算机上记录交易的分布式账本技术。
+**boolean** — 布尔的；与真/假逻辑有关，以 George Boole 命名。
+**bottleneck** — 瓶颈；导致流程或系统变慢的拥堵点。
+**byte** — 字节；通常由 8 个比特组成的数字信息单位。
 
-**cache** — a hardware or software component storing 数据 为 faster 未来 access.
-**calibrate** — to adjust precisely 为 accurate measurement or 性能.
-**cascade** — a series 的 stages where each triggers 这 next; waterfall effect.
-**catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — 这 relationship between cause 和 effect.
-**centroid** — 这 geometric center 的 a shape; average position 的 points.
-**checksum** — a value computed from 数据 to detect errors or tampering.
-**cipher** — an algorithm 为 encryption or decryption; a secret code.
-**coalesce** — to come together to form one whole.
-**cognitive** — relating to mental processes 的 perception, memory, judgment, 和 reasoning.
-**cohort** — a group sharing a common characteristic or experience within a defined period.
-**collateral** — assets pledged as 安全 为 a loan; secondary or accompanying.
-**colloquial** — informal 语言 used 在 ordinary conversation.
-**combinatorics** — 这 branch 的 mathematics dealing 与 combinations 和 permutations.
-**commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happening during overlapping periods.
-**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
-**conjunction** — a word connecting clauses or sentences (和, but, or); logical 和 operator.
-**consensus** — general agreement among a group.
-**constraint** — a limitation or restriction on what is possible.
-**corollary** — a proposition following from one already proved.
-**correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
-**crystalize** — to form into crystals; to make clear or definite.
+**cache** — 缓存；为便于更快访问而存储数据的硬件或软件组件。
+**calibrate** — 校准；精确调整以获得准确测量或性能。
+**cascade** — 级联；一连串阶段，每个阶段触发下一个阶段。
+**catalyst** — 催化剂；加速化学反应的物质；也指促成变化的因素。
+**causality** — 因果关系；原因与结果之间的联系。
+**centroid** — 质心；图形的几何中心；点集的平均位置。
+**checksum** — 校验和；根据数据计算出的值，用于检测错误或篡改。
+**cipher** — 密码算法；用于加密或解密的算法；密文编码。
+**coalesce** — 合并；聚合成一个整体。
+**cognitive** — 认知的；与感知、记忆、判断和推理等心理过程有关。
+**cohort** — 同类群体；在一定时期内共享某种特征或经历的一组对象。
+**collateral** — 抵押物；作为贷款担保的资产；附带的、次要的。
+**colloquial** — 口语化的；日常会话中使用的非正式语言。
+**combinatorics** — 组合数学；研究组合与排列的数学分支。
+**commutative** — 交换的；顺序不影响结果的性质（a+b = b+a）。
+**concurrency** — 并发；多个计算在重叠时间段内进行。
+**conjecture** — 猜想；在信息不完整时形成的结论；数学假说。
+**conjunction** — 连词；连接从句或句子的词（and、but、or）；逻辑与运算。
+**consensus** — 共识；群体中的普遍一致意见。
+**constraint** — 约束；对可能性的限制。
+**corollary** — 推论；由已证明命题自然导出的命题。
+**correlation** — 相关性；两个变量之间的相互关系；不等于因果关系。
+**cryptocurrency** — 加密货币；通常去中心化、由密码学保障的数字货币。
+**crystalize** — 结晶；使某事变得清晰明确。
 
-**daisy-chain** — to connect devices or tasks 在 a sequential series.
-**deconvolution** — reversing convolution; separating mixed signals or images.
-**deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — 这 act 的 throwing someone out 的 a window.
-**deictic** — referring to something by pointing (this, that, here, there).
-**demographic** — statistical 数据 about populations or groups.
-**denotation** — 这 literal or primary meaning 的 a word.
-**deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure 的 rate 的 change (calculus); derived from something else.
-**deterministic** — producing 这 same output given 这 same input; predictable.
-**diachronic** — studying phenomena as they change over time.
-**didactic** — intended to teach, particularly 与 moral instruction.
-**diffraction** — 这 bending 的 waves around obstacles or through openings.
-**digraph** — two characters representing one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make something clearer.
-**discrete** — separate 和 distinct; individual (opposite 的 continuous).
-**disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — 这 process 的 separating or moving apart.
-**docstring** — documentation embedded 在 source code explaining function purpose.
+**daisy-chain** — 菊花链；将设备或任务按顺序串联连接。
+**deconvolution** — 反卷积；对卷积过程进行逆向分离，提取混合信号或图像。
+**deduction** — 演绎；从一般原则推导出具体结论。
+**defenestration** — 抛出窗外的行为。
+**deictic** — 指示性的；通过指向来表示某物（如 this、that、here、there）。
+**demographic** — 人口统计的；关于人口或群体的统计信息。
+**denotation** — 字面意义；词语最直接、最基本的含义。
+**deprecated** — 已弃用的；虽然仍可使用，但不再推荐。
+**derivative** — 导数；变化率的度量；也指派生出来的事物。
+**deterministic** — 确定性的；相同输入总会产生相同输出的；可预测的。
+**diachronic** — 历时的；研究事物随时间变化的。
+**didactic** — 说教性的；旨在教学，尤其带有道德训诫意味的。
+**diffraction** — 衍射；波绕过障碍物或通过缝隙时发生的弯曲。
+**digraph** — 二合字母；两个字符表示一个音（如 sh、ch、th）。
+**disambiguate** — 消歧；去除歧义，使含义更清楚。
+**discrete** — 离散的；彼此分开、独立的（与连续相对）。
+**disjunctive** — 析取的；表示备选项的；逻辑或运算。
+**divergence** — 分歧；分离或向外扩散的过程。
+**docstring** — 文档字符串；嵌入源代码中、用于说明函数用途的文档文本。
 
-**eccentric** — unconventional or slightly strange; off-center.
-**eclectic** — selecting from diverse sources or styles.
-**edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament 为 这 dead.
-**elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission 的 words; three dots (...) indicating continuation or pause.
-**embargo** — an official ban on trade or publication.
-**empathy** — 这 ability to understand 和 share others' feelings.
-**empirical** — based on observation or experience rather than theory.
-**emulate** — to imitate or match, especially 在 计算 (software emulation).
-**endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — lasting 为 a very short time; temporary.
-**epistemology** — 这 study 的 knowledge, its 自然 和 scope.
-**epoch** — a significant period 在 历史; 在 ML, one pass through training 数据.
-**equilibrium** — a state 的 balance between opposing forces.
-**equivocate** — to use ambiguous 语言 to conceal 这 truth.
-**ergodic** — having statistical properties uniform throughout; random yet representative.
-**esoteric** — intended 为 or understood by a small, specialized group.
-**ethnography** — 这 systematic study 的 people 和 cultures through observation.
-**etymology** — 这 study 的 word origins 和 historical 开发.
-**euphemism** — a mild expression substituting 为 a harsh or unpleasant one.
-**evanescent** — fleeting; vanishing like vapor.
-**exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certain goods.
-**existential** — relating to existence; concerning human freedom 和 choice.
-**exogenous** — originating from external factors.
-**expedite** — to make happen sooner; accelerate.
-**exponential** — involving exponentiation; growth accelerating over time.
-**extrapolate** — to estimate beyond known 数据 by extending trends.
+**eccentric** — 古怪的；不合常规的；偏离中心的。
+**eclectic** — 兼收并蓄的；从多种来源或风格中择取的。
+**edge case** — 边界情况；极端或罕见、需要特殊处理的场景。
+**elegy** — 挽歌；哀悼逝者的诗歌。
+**elide** — 省略；吞音；略去音节或词语。
+**ellipsis** — 省略；省略号（三个点 ...），表示继续或停顿。
+**embargo** — 禁运；官方发布的贸易或出版禁令。
+**empathy** — 共情；理解并感受他人情绪的能力。
+**empirical** — 经验性的；基于观察或经验而非纯理论的。
+**emulate** — 模拟；仿效；尤其在计算中指软件仿真。
+**endemic** — 地方性的；某地区特有的；持续存在的。
+**ephemeral** — 短暂的；转瞬即逝的。
+**epistemology** — 认识论；研究知识的本质与范围。
+**epoch** — 时代；一个重要历史时期；在机器学习中指对训练数据的一轮完整遍历。
+**equilibrium** — 平衡；对立力量之间的平衡状态。
+**equivocate** — 含糊其辞；用模棱两可的话掩盖真相。
+**ergodic** — 各态历经的；统计性质在整体上均匀、随机但具有代表性的。
+**esoteric** — 深奥的；仅供少数专业人士理解的。
+**ethnography** — 民族志；通过观察系统研究人群与文化的方法。
+**etymology** — 词源学；研究词语起源与历史演变。
+**euphemism** — 委婉语；用较温和的表达替代刺耳或不快的说法。
+**evanescent** — 短暂消逝的；如蒸汽般迅速消失的。
+**exacerbate** — 使问题恶化；加剧。
+**excise** — 切除；消费税。
+**existential** — 与存在有关的；涉及人的自由与选择的。
+**exogenous** — 外生的；源于外部因素的。
+**expedite** — 加快；促使更快发生。
+**exponential** — 指数型的；随时间加速增长的。
+**extrapolate** — 外推；依据已知数据延伸趋势来估计未知部分。
 
-**facade** — 这 front 的 a building; a deceptive outward appearance.
-**fallacy** — a mistaken belief; flawed reasoning 在 argument.
-**falsifiable** — capable 的 being proven false; a criterion 为 scientific claims.
-**反馈 loop** — a system where outputs influence inputs, amplifying or stabilizing.
-**ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**finite** — having limits or bounds; not infinite.
-**flux** — continuous change; flow or movement.
-**formalism** — strict adherence to rules or forms; emphasis on structure.
-**fortuitous** — happening by chance; lucky.
-**fractal** — a self-similar pattern repeating at different scales.
-**frequency** — 这 rate 的 occurrence; number 的 cycles per second (Hertz).
-**full-stack** — involving both front-end 和 back-end 开发.
+**facade** — 建筑正面；表面的假象。
+**fallacy** — 谬误；错误观念；论证中的逻辑错误。
+**falsifiable** — 可证伪的；能够被证明为假的，是科学主张的重要标准。
+**feedback loop** — 反馈回路；输出反过来影响输入、从而放大或稳定系统的机制。
+**ferment** — 发酵；由微生物引起的化学分解；也指动荡不安。
+**finite** — 有限的；有边界或界限的。
+**flux** — 流动；持续变化；流量。
+**formalism** — 形式主义；严格遵循规则或形式；强调结构。
+**fortuitous** — 偶然发生的；幸运的。
+**fractal** — 分形；在不同尺度上重复出现的自相似图案。
+**frequency** — 频率；发生率；每秒循环次数（赫兹）。
+**full-stack** — 全栈的；同时涉及前端与后端开发。
 
-**garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — 这 study 的 family lineages 和 descent.
-**generic** — general rather than specific; lacking brand identification.
-**genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than 这 sum 的 its parts.
-**gibberish** — unintelligible or meaningless speech or writing.
-**granular** — composed 的 small particles; detailed 和 fine-grained.
-**graph** — a diagram showing relationships; a 数据 structure 与 nodes 和 edges.
-**gregarious** — sociable; fond 的 company.
-**grok** — to understand deeply 和 intuitively (from 科学 fiction).
+**garrulous** — 喋喋不休的；特别爱说琐事的。
+**gaussian** — 高斯的；与正态分布、钟形曲线有关。
+**genealogy** — 家谱学；研究家族血统与世系。
+**generic** — 通用的；非特定的；不带品牌特征的。
+**genitive** — 所有格；表示所属关系的语法格。
+**gestalt** — 完形；被感知为大于部分之和的有组织整体。
+**gibberish** — 胡言乱语；难以理解或无意义的话语文字。
+**granular** — 颗粒状的；细粒度的；细致具体的。
+**graph** — 图；显示关系的图表；由节点和边组成的数据结构。
+**gregarious** — 合群的；喜欢与人相处的。
+**grok** — 彻底直观地理解（源自科幻作品）。
 
-**halcyon** — calm 和 peaceful; prosperous 和 happy.
-**haplotype** — a set 的 DNA variations inherited together.
-**hegemony** — dominance or leadership, especially 的 one state over others.
-**hermeneutics** — 这 theory 和 methodology 的 interpretation.
-**heuristic** — a practical method not guaranteed optimal; a rule 的 thumb.
-**hologram** — a 3D image created by laser interference patterns.
-**homogeneous** — uniform 在 composition or character.
-**homomorphism** — a structure-preserving map between algebraic structures.
-**homophone** — words sounding alike but differing 在 meaning or spelling.
-**homonym** — words 与 same spelling or pronunciation but different meanings.
-**hyperbole** — deliberate exaggeration 为 effect.
-**hyperparameter** — a configuration setting 为 机器学习 models set before training.
-**hypertext** — text containing links to other texts; foundational to 这 网络.
-**hypothesize** — to propose an explanation as a starting point 为 investigation.
+**halcyon** — 平静安宁的；繁荣愉快的。
+**haplotype** — 单倍型；一组一起遗传的 DNA 变异。
+**hegemony** — 霸权；主导地位，尤指一国对他国的支配。
+**hermeneutics** — 诠释学；关于解释的方法与理论。
+**heuristic** — 启发式的；虽不保证最优但实用的经验方法。
+**hologram** — 全息图；由激光干涉图样形成的三维图像。
+**homogeneous** — 同质的；成分或性质均一的。
+**homomorphism** — 同态；保持结构的映射。
+**homophone** — 同音异义词；发音相同但意义或拼写不同的词。
+**homonym** — 同形（或同音）异义词；拼写或发音相同但含义不同的词。
+**hyperbole** — 夸张；为达到效果而有意夸大。
+**hyperparameter** — 超参数；机器学习模型在训练前设定的配置参数。
+**hypertext** — 超文本；包含指向其他文本链接的文本，是 Web 的基础之一。
+**hypothesize** — 提出假设；把某种解释作为调查的起点。
 
-**iconoclast** — one who attacks cherished beliefs or institutions.
-**idiom** — a phrase whose meaning cannot be deduced from individual words.
-**idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing 这 same result regardless 的 how many times applied.
-**igneous** — rock formed from cooled magma or lava.
-**immutable** — unchanging over time; unable to be modified.
-**impedance** — opposition to alternating current; metaphorically, resistance to flow.
-**imperative** — crucial; a command; programming paradigm focused on statements.
-**implicit** — implied though not plainly expressed.
-**imponderable** — impossible to estimate or assess.
-**impromptu** — done without preparation; spontaneous.
-**inchoate** — just begun; not fully formed.
-**inductive** — reasoning from specific observations to general conclusions.
-**ineffable** — too great or extreme to be expressed 在 words.
-**inference** — a conclusion reached from evidence; 在 AI, generating outputs from models.
-**inflection** — change 在 pitch or tone; modification 的 words 为 grammar.
-**innate** — inborn; natural rather than acquired.
-**inoculate** — to vaccinate; introduce an idea or attitude gradually.
-**insidious** — proceeding subtly but harmfully.
-**instantiation** — creating a specific instance 的 a class or concept.
-**intentionality** — 这 quality 的 being about something; directedness 的 consciousness.
-**interoperability** — 这 ability 的 系统 to work together seamlessly.
-**interpolate** — to estimate values between known 数据 points.
-**introspection** — examining one's own thoughts 和 feelings; 在 code, examining types at runtime.
-**invariant** — unchanging; a condition that remains constant during execution.
-**invective** — abusive or insulting 语言.
-**inverse** — opposite 在 position, direction, or effect.
-**iterable** — an object capable 的 returning its members one at a time.
+**iconoclast** — 反传统者；攻击既有信念或制度的人。
+**idiom** — 习语；不能仅凭字面推断整体意义的固定表达。
+**idiosyncratic** — 特有的；个人风格明显的。
+**idempotent** — 幂等的；无论执行多少次都产生相同结果的。
+**igneous** — 火成的；由岩浆或熔岩冷却形成的。
+**immutable** — 不可变的；不能被修改的。
+**impedance** — 阻抗；对交流电的阻碍；也可比喻对流动的阻力。
+**imperative** — 势在必行的；命令式的；强调语句执行的编程范式。
+**implicit** — 隐含的；虽未明说但暗中表达的。
+**imponderable** — 难以估量或评估的。
+**impromptu** — 即兴的；未经准备的。
+**inchoate** — 刚开始形成的；尚未成熟完善的。
+**inductive** — 归纳的；从具体观察推导出一般结论的。
+**ineffable** — 难以言喻的；无法用语言充分表达的。
+**inference** — 推断；基于证据得出的结论；在 AI 中也指模型生成输出的过程。
+**inflection** — 语调变化；词形变化。
+**innate** — 天生的；与生俱来的。
+**inoculate** — 接种疫苗；逐步灌输某种观念或态度。
+**insidious** — 潜伏有害的；暗中逐步产生危害的。
+**instantiation** — 实例化；创建某个类或概念的具体实例。
+**intentionality** — 意向性；意识指向某物的性质。
+**interoperability** — 互操作性；不同系统无缝协同工作的能力。
+**interpolate** — 插值；估计已知数据点之间的数值。
+**introspection** — 内省；审视自己的思想与感受；在代码中指运行时检查类型或结构。
+**invariant** — 不变量；在执行过程中保持不变的条件。
+**invective** — 谩骂；辱骂性语言。
+**inverse** — 逆的；在位置、方向或效果上相反的。
+**iterable** — 可迭代对象；能够一次返回一个成员的对象。
 
-**jargon** — specialized terminology used by a particular group.
-**juxtapose** — to place side by side 为 comparison or contrast.
+**jargon** — 行话；特定群体使用的专业术语。
+**juxtapose** — 并置；把事物放在一起以作比较或对照。
 
-**kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — 这 core 的 an operating system; a seed; 在 ML, a function transforming 数据.
-**kinetic** — relating to motion; active rather than static.
-**kiosk** — a small booth 为 information or sales; a locked-down computer terminal.
+**kafkaesque** — 卡夫卡式的；噩梦般复杂或官僚化的。
+**kernel** — 内核；操作系统的核心；种子；在机器学习中也指变换数据的核函数。
+**kinetic** — 与运动有关的；动态的。
+**kiosk** — 信息亭、小售货亭；受限用途的终端计算机。
 
-**lacuna** — a gap or missing part, especially 在 a manuscript.
-**latency** — delay between stimulus 和 response; 在 networking, time 为 数据 to travel.
-**latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — 这 vocabulary 的 a 语言 or field; a 词典.
-**liability** — 法律 responsibility; a disadvantage; debts owed.
-**linear regression** — a statistical method modeling linear relationships between variables.
-**lingua franca** — a common 语言 used between speakers 的 different native languages.
-**literal** — taking words 在 their usual sense; not figurative.
-**litmus test** — a decisive test revealing true 自然 or quality.
-**locus** — 这 set 的 points satisfying a condition; a center 的 activity.
-**loquacious** — very talkative.
-**lucid** — clear 和 easy to understand; mentally sharp.
-**lumen** — a unit 的 luminous flux; light output.
-**lyric** — expressing personal emotions; song-like poetry.
+**lacuna** — 缺口；缺失部分，尤指手稿中的缺漏。
+**latency** — 延迟；刺激与响应之间的时间；在网络中指数据传输所需时间。
+**latent** — 潜在的；已存在但尚未表现出来的。
+**lexicon** — 词汇表；某种语言或领域的全部词汇；词典。
+**liability** — 法律责任；负担、不利因素；所欠债务。
+**linear regression** — 线性回归；用于建模变量线性关系的统计方法。
+**lingua franca** — 通用语；不同母语者之间共同使用的语言。
+**literal** — 字面上的；按通常意义理解词语的；非比喻的。
+**litmus test** — 试金石；能揭示真实性质或质量的决定性测试。
+**locus** — 轨迹、轨迹集；满足某条件的点集；活动中心。
+**loquacious** — 多话的；健谈的。
+**lucid** — 清晰易懂的；头脑清醒的。
+**lumen** — 流明；光通量单位；发光量。
+**lyric** — 抒情的；表达个人情感的；歌词式诗歌。
 
-**macro** — a large-scale view; a rule specifying pattern replacement.
-**malapropism** — mistaken use 的 a word 在 place 的 a similar-sounding one.
-**manifest** — obvious; a list 的 cargo or passengers; to display or show.
-**mantissa** — 这 significant digits 的 a floating-point number.
-**mapreduce** — a programming model 为 processing large datasets 在 parallel.
-**marginal** — minimal; at 这 edge; additional or incremental.
-**markup** — text formatting codes (HTML, XML); price increase.
-**matrix** — a rectangular array 的 numbers; environment or surroundings.
-**maxim** — a short statement expressing a general truth or rule 的 conduct.
-**mechanism** — a system 的 parts working together; an underlying process.
-**mediator** — one who facilitates resolution between parties.
-**membrane** — a thin flexible layer; 在 biology, cell boundary.
-**memoization** — caching function results to avoid recomputation.
-**metaphor** — a figure 的 speech comparing unlike things without "like" or "as".
-**metastable** — apparently stable but easily disrupted.
-**metonymy** — referring to something by something closely associated (crown 为 monarchy).
-**microservice** — a small, independent service 在 a distributed 架构.
-**millisecond** — one thousandth 的 a second.
-**mnemonic** — a memory aid or device.
-**modality** — 这 mode or form 的 something; sensory channel.
-**model** — a representation; 在 ML, a trained system making predictions.
-**modulate** — to adjust or regulate; vary 在 strength or tone.
-**monad** — a structure 在 functional programming handling side effects.
-**monolithic** — a single massive structure; not modular.
-**monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — 这 study 的 forms 和 structures; word formation 在 linguistics.
-**multicast** — sending 数据 to multiple destinations simultaneously.
-**multimodal** — combining multiple modes (text, image, audio).
-**mutable** — capable 的 change; modifiable.
-**mutual** — held 在 common; reciprocal.
+**macro** — 宏；宏观视角；一种指定模式替换规则的机制。
+**malapropism** — 误用近音词；把发音相近但意义错误的词用错。
+**manifest** — 明显的；货单、乘客名单；显示、显现。
+**mantissa** — 尾数；浮点数中的有效数字部分。
+**mapreduce** — MapReduce；用于并行处理大规模数据集的编程模型。
+**marginal** — 边缘的；很小的；额外增加的。
+**markup** — 标记语言代码（如 HTML、XML）；加价。
+**matrix** — 矩阵；数字矩形阵列；环境、背景。
+**maxim** — 格言；表达普遍真理或行为准则的简短语句。
+**mechanism** — 机制；协同运作的一套部件；底层过程。
+**mediator** — 调解者；帮助各方解决争端的人。
+**membrane** — 膜；薄而柔韧的层；在生物学中指细胞膜。
+**memoization** — 记忆化；缓存函数结果以避免重复计算。
+**metaphor** — 隐喻；不借助“像”“如”等词而进行的比喻。
+**metastable** — 亚稳态的；表面稳定但容易被打破的。
+**metonymy** — 借代；用与某事物密切相关的名称来指代它。
+**microservice** — 微服务；分布式架构中的小型独立服务。
+**millisecond** — 毫秒；千分之一秒。
+**mnemonic** — 记忆术；帮助记忆的方法或装置。
+**modality** — 模态；某物的方式或形式；感知通道。
+**model** — 模型；表示形式；在机器学习中指能够做出预测的训练系统。
+**modulate** — 调制；调节；改变强度或音调。
+**monad** — 单子；函数式编程中处理副作用的一种结构。
+**monolithic** — 单体的；整体庞大而不模块化的。
+**monotonic** — 单调的；始终递增或递减，从不改变方向的。
+**morphology** — 形态学；研究形式和结构；在语言学中指构词方式。
+**multicast** — 组播；同时向多个目的地发送数据。
+**multimodal** — 多模态的；结合文本、图像、音频等多种模式。
+**mutable** — 可变的；可修改的。
+**mutual** — 相互的；共同持有的。
 
-**nascent** — just coming into existence; beginning to develop.
-**native** — inherent; belonging to a place by birth; 在 计算, built 为 a specific platform.
-**natural 语言** — human 语言 as spoken or written, not formal or programming.
-**negation** — denial or contradiction; logical NOT.
-**neologism** — a newly coined word or expression.
-**nested** — contained within something similar; hierarchical layers.
-**netizen** — an active internet user.
-**neural 网络** — a 计算 system inspired by biological brains.
-**nominal** — 在 name only; very small; stated or face value.
-**non sequitur** — a conclusion not following from premises.
-**normalization** — organizing 数据 to reduce redundancy; scaling to standard range.
-**notwithstanding** — 在 spite 的; nevertheless.
-**nuance** — subtle distinction or variation.
-**null** — having no value; zero; invalid.
-**numerator** — 这 top number 在 a fraction.
+**nascent** — 初生的；刚开始形成的。
+**native** — 本地的；天生的；在计算中指专为某个平台构建的。
+**natural language** — 自然语言；人类口语或书面语，而非形式语言或编程语言。
+**negation** — 否定；逻辑非。
+**neologism** — 新词；新造词语或表达。
+**nested** — 嵌套的；包含在相似结构中的；层级式的。
+**netizen** — 网民；活跃的互联网用户。
+**neural network** — 神经网络；受生物大脑启发的计算系统。
+**nominal** — 名义上的；很小的；标称值的。
+**non sequitur** — 不合逻辑的结论；前提不能推出结论的说法。
+**normalization** — 规范化；在数据库中组织数据以减少冗余；将数值缩放到标准范围。
+**notwithstanding** — 尽管；虽然如此。
+**nuance** — 细微差别；微妙变化。
+**null** — 空值；没有值；无效。
+**numerator** — 分子；分数上方的数字。
 
-**objective** — not influenced by personal feelings; a goal.
-**obligatory** — required; mandatory.
-**obfuscate** — to deliberately make unclear or confusing.
-**objective function** — a function to maximize or minimize 在 optimization.
-**observable** — capable 的 being observed; 在 programming, a stream 的 事件.
-**obsolescence** — 这 process 的 becoming outdated.
-**occasional** — happening sometimes; irregular.
-**occlusion** — blockage or obstruction; hiding 的 objects 在 vision.
-**octet** — a group 的 eight; 在 networking, 8 bits (byte).
-**offload** — to transfer work to another system or person.
-**omnibus** — containing multiple items; a collection.
-**ontology** — 这 study 的 being; 在 CS, a formal representation 的 knowledge.
-**opaque** — not transparent; difficult to understand.
-**operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — 这 value 的 这 best alternative forgone.
-**optimization** — making something as effective as possible; finding best solutions.
-**oracle** — a source 的 wisdom; 在 计算, a theoretical black box answering questions.
-**orthogonal** — at right angles; independent; unrelated.
-**oscillate** — to swing back 和 forth; fluctuate.
-**ostensible** — appearing or claimed to be true, though possibly not so.
-**overfit** — when a model learns training 数据 too well, failing to generalize.
-**overhead** — extra resources required beyond 这 core task.
-**oxide** — a chemical compound containing oxygen.
+**objective** — 客观的，不受个人情感影响的；目标。
+**obligatory** — 必需的；强制性的。
+**obfuscate** — 混淆；故意使之难以理解。
+**objective function** — 目标函数；在优化中需要最大化或最小化的函数。
+**observable** — 可观察的；在编程中指事件流。
+**obsolescence** — 过时；逐渐变旧、失去适用性的过程。
+**occasional** — 偶尔发生的；不规律的。
+**occlusion** — 遮挡；阻塞；视觉中物体被遮住的情况。
+**octet** — 八个一组；在网络中常指 8 位（一个字节）。
+**offload** — 卸载；把工作转移给另一个系统或人。
+**omnibus** — 综合性的；包含多项内容的合集。
+**ontology** — 本体论；在计算机科学中指知识的形式化表示体系。
+**opaque** — 不透明的；难以理解的。
+**operationalize** — 使其可操作化；定义可测量的指标并投入实施。
+**opportunity cost** — 机会成本；放弃的最佳备选方案的价值。
+**optimization** — 优化；使某事尽可能有效；寻找最优解。
+**oracle** — 神谕；智慧来源；在计算中可指能回答问题的理论黑箱。
+**orthogonal** — 正交的；相互独立、互不相关的。
+**oscillate** — 振荡；来回摆动；波动。
+**ostensible** — 表面上的；看似真实、但未必如此的。
+**overfit** — 过拟合；模型过度学习训练数据而无法良好泛化。
+**overhead** — 开销；核心任务之外额外需要的资源。
+**oxide** — 氧化物；含氧的化合物。
 
-**pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading 这 same backward 和 forward.
-**paradigm** — a typical example or pattern; a framework 的 thought.
-**parallel** — side by side; occurring simultaneously.
-**parameterize** — to express 在 terms 的 parameters.
-**parity** — equality; evenness; error-checking bit.
-**parsimony** — extreme frugality; simplicity 在 explanation (Occam's razor).
-**partial** — incomplete; biased toward one side.
-**partition** — to divide into parts; a section.
-**passive** — accepting without resistance; not active.
-**patent** — a government license granting exclusive rights; obvious.
-**pathological** — relating to disease; extremely abnormal.
-**peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed 为 breaking rules.
-**pending** — awaiting decision; not yet settled.
-**permutation** — an arrangement 的 items 在 a specific order.
-**persona** — 这 aspect 的 someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; 这 art 的 representing 3D on 2D.
-**pertinent** — relevant to 这 matter at hand.
-**pervasive** — spreading widely; omnipresent.
-**pessimistic** — expecting negative outcomes; assuming worst case.
-**phantom** — ghostly; illusory; 在 databases, rows appearing unexpectedly.
-**phenomenology** — 这 study 的 structures 的 consciousness.
-**philosophy** — 这 study 的 fundamental questions about existence, knowledge, values.
-**phishing** — fraudulent attempts to obtain sensitive information via electronic 沟通.
-**phoneme** — 这 smallest unit 的 sound distinguishing meaning.
-**phrase** — a group 的 words forming a unit; an expression.
-**pi** — 这 ratio 的 circle circumference to diameter (~3.14159).
-**placeholder** — a temporary stand-在; a token to be replaced.
-**plagiarism** — presenting others' work as one's own.
-**platform** — a raised surface; a 计算 environment; a service foundation.
-**plethora** — an excess; abundance.
-**pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program 可用 为 download.
-**polar** — relating to poles; having opposite extremes.
-**politic** — prudent; tactful; relating to government.
-**polymorphic** — having multiple forms; 在 OOP, methods behaving differently by type.
-**polysemy** — a word having multiple related meanings.
-**posterior** — coming after; later; buttocks.
-**postulate** — assume as fact; a fundamental assumption.
-**pragmatic** — practical; concerned 与 actual results.
-**precedent** — an earlier event serving as 指南.
-**precision** — exactness; 在 ML, true positives divided by predicted positives.
-**predicate** — 这 part 的 a sentence stating something about 这 subject; a function returning boolean.
-**predictive** — relating to prediction; forecasting 未来 事件.
-**prefix** — a morpheme added to 这 beginning 的 a word.
-**premise** — a statement forming 这 basis 的 an argument.
-**prescient** — having knowledge before it happens.
-**presupposition** — an assumption underlying an argument.
-**primordial** — existing from 这 beginning; primitive.
-**prior** — earlier; preceding; 在 Bayesian 统计, initial belief.
-**probe** — to investigate; a device 为 exploration.
-**procedural** — relating to procedures; a programming paradigm.
-**proclivity** — a tendency or inclination.
-**prodigious** — remarkably large; extraordinary.
-**proficient** — skilled; competent.
-**prognosis** — a forecast 的 disease outcome; prediction.
-**prolific** — highly productive.
-**promissory** — containing a promise.
-**propagate** — to spread; reproduce; transmit signals.
-**proponent** — a supporter; advocate.
-**proprietary** — owned exclusively; private.
-**prosody** — rhythm 和 intonation 在 speech; poetry structure.
-**protocol** — a set 的 rules 为 沟通.
-**prototype** — an early model; original form.
-**provenance** — origin; source; 历史 的 ownership.
-**proximal** — nearest; close to a 参考 point.
-**proxy** — an agent; a substitute; a server forwarding requests.
-**pseudo** — false; fake; pretending to be.
-**psycholinguistics** — study 的 psychological aspects 的 语言.
-**public** — open to all; relating to people as a whole.
-**pundit** — an expert offering opinions 在 media.
-**purport** — to claim; intended meaning.
-**pyramid** — a structure 与 triangular sides; hierarchical organization.
+**pacify** — 安抚；使平静；带来和平。
+**palindrome** — 回文；正读反读都一样的词或短语。
+**paradigm** — 范式；典型模式；思考框架。
+**parallel** — 并行的；并排的；同时发生的。
+**parameterize** — 参数化；用参数形式来表达。
+**parity** — 奇偶性；相等；用于差错检测的校验位。
+**parsimony** — 节约；简约；解释中的简洁性（奥卡姆剃刀）。
+**partial** — 不完整的；偏向某一方的。
+**partition** — 分区；划分为多个部分；其中的一个部分。
+**passive** — 被动的；不主动抵抗的。
+**patent** — 专利；政府授予的独占权；明显的。
+**pathological** — 病理性的；与疾病有关的；极端异常的。
+**peer** — 同辈、同级者；仔细看。
+**penalty** — 惩罚；因违反规则而施加的不利后果。
+**pending** — 待定的；尚未处理完成的。
+**permutation** — 排列；按特定顺序安排的一组元素。
+**persona** — 人设；某人性格的一面；虚构的用户画像。
+**perspective** — 视角；观点；将三维表现于二维的透视法。
+**pertinent** — 切题的；与当前事项相关的。
+**pervasive** — 普遍存在的；无处不在的。
+**pessimistic** — 悲观的；预期负面结果的。
+**phantom** — 幻影般的；虚假的；在数据库中可指意外出现的行。
+**phenomenology** — 现象学；研究意识结构的学科。
+**philosophy** — 哲学；研究存在、知识、价值等根本问题。
+**phishing** — 网络钓鱼；通过电子通信骗取敏感信息的行为。
+**phoneme** — 音位；区分意义的最小语音单位。
+**phrase** — 短语；构成一个整体意义的一组词。
+**pi** — 圆周率；圆周与直径之比（约 3.14159）。
+**placeholder** — 占位符；临时替代物；等待替换的标记。
+**plagiarism** — 抄袭；将他人作品冒充为自己的。
+**platform** — 平台；升高的平面；计算环境；服务基础设施。
+**plethora** — 过多；大量。
+**pluripotent** — 多能的；可分化为多种细胞类型的。
+**podcast** — 播客；可下载的数字音频节目。
+**polar** — 极地的；两极分化的；具有对立端点的。
+**politic** — 审慎的；圆通的；与政府事务有关的。
+**polymorphic** — 多态的；具有多种形式；在 OOP 中指方法可因类型不同而表现不同。
+**polysemy** — 一词多义；一个词具有多个相关含义。
+**posterior** — 后来的；在后的；臀部。
+**postulate** — 假定为真；基本假设。
+**pragmatic** — 务实的；注重实际结果的。
+**precedent** — 先例；可作为参考的早先事件。
+**precision** — 精确度；在机器学习中指真正例占预测正例的比例。
+**predicate** — 谓词；句子中说明主语情况的部分；返回布尔值的函数。
+**predictive** — 预测性的；与预报未来事件有关的。
+**prefix** — 前缀；加在词首的语素。
+**premise** — 前提；构成论证基础的陈述。
+**prescient** — 有先见之明的；事先就知道的。
+**presupposition** — 预设；论证背后的先行假定。
+**primordial** — 原初的；最早期的；原始的。
+**prior** — 先前的；在前的；在贝叶斯统计中指先验信念。
+**probe** — 探查；探针；用于探索的装置。
+**procedural** — 程序性的；与过程有关的；一种编程范式。
+**proclivity** — 倾向；爱好；习性。
+**prodigious** — 巨大的；惊人的；非凡的。
+**proficient** — 熟练的；精通的。
+**prognosis** — 预后；疾病结果的预测；预判。
+**prolific** — 多产的；高产出的。
+**promissory** — 承诺性的；包含承诺的。
+**propagate** — 传播；繁殖；传输信号。
+**proponent** — 支持者；倡导者。
+**proprietary** — 专有的；归某方独占所有的。
+**prosody** — 韵律；语音中的节奏与语调；诗歌的格律结构。
+**protocol** — 协议；用于通信的一组规则。
+**prototype** — 原型；早期模型；最初形态。
+**provenance** — 来源；出处；所有权历史。
+**proximal** — 近端的；靠近参照点的。
+**proxy** — 代理；替代者；转发请求的服务器。
+**pseudo** — 伪的；假的；冒充的。
+**psycholinguistics** — 心理语言学；研究语言心理过程的学科。
+**public** — 公共的；对所有人开放的；与大众整体相关的。
+**pundit** — 评论专家；在媒体上发表观点的行家。
+**purport** — 声称；意图表达的含义。
+**pyramid** — 金字塔；有三角侧面的结构；层级化组织。
 
-**quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relating to quantum mechanics.
-**quarantine** — isolation to prevent disease spread; 安全 isolation.
-**query** — a question; a 数据库 request.
-**quintessential** — representing 这 perfect example.
-**quotient** — 这 result 的 division; a ratio.
+**quantify** — 量化；用数字表达或衡量。
+**quantum** — 量子；离散量；与量子力学相关的。
+**quarantine** — 隔离；防止疾病传播的隔离；安全隔离环境。
+**query** — 查询；问题；数据库请求。
+**quintessential** — 典型中的典型；最能代表本质的。
+**quotient** — 商；除法结果；比值。
 
-**radical** — thoroughgoing; extreme; relating to roots.
-**random** — lacking pattern; unpredictable.
-**range** — 这 set 的 output values; extent; distance.
-**raster** — a grid 的 pixels; bitmap image.
-**ratify** — to formally approve; confirm.
-**rational** — based on reason; expressible as a fraction.
-**recursion** — a function calling itself; self-参考.
-**redundancy** — repetition; backup; unnecessary duplication.
-**refinement** — improvement; making more precise.
-**reflection** — thinking deeply; 在 programming, examining structure at runtime.
-**regression** — return to earlier state; 在 统计, modeling relationships.
-**regularization** — preventing overfitting by adding penalties.
-**relational** — concerning relationships; 数据库 model using tables.
-**reliance** — dependence; trust.
-**remediation** — correction; fixing problems.
-**rendezvous** — a meeting; to meet at an appointed time.
-**replication** — copying; reproducing experiments.
-**repository** — a storage location; a code archive.
-**representational** — depicting something; standing 为.
-**resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solving a problem.
-**resonance** — reinforcement by vibration; emotional connection.
-**restitution** — restoration; compensation 为 loss.
-**retrospective** — looking back; review 的 past 事件.
-**reverberate** — echo; resonate.
-**revision** — review 和 alteration; new version.
-**rhizome** — underground stem; non-hierarchical structure (philosophy).
-**robustness** — strength; resilience to errors.
-**root cause** — 这 fundamental reason 为 a problem.
-**rotation** — turning around an axis.
-**rudimentary** — basic; undeveloped.
-**runtime** — 这 time when a program executes; execution environment.
+**radical** — 激进的；根本性的；与根有关的。
+**random** — 随机的；无固定模式的；不可预测的。
+**range** — 范围；输出值集合；距离。
+**raster** — 栅格；像素网格；位图图像。
+**ratify** — 正式批准；确认。
+**rational** — 理性的；基于推理的；可表示为分数的。
+**recursion** — 递归；函数调用自身；自我引用。
+**redundancy** — 冗余；重复；备份用途的额外部分。
+**refinement** — 改进；精炼；使更精确。
+**reflection** — 反思；在编程中指运行时检查程序结构。
+**regression** — 回归；回到先前状态；在统计中指建模变量关系。
+**regularization** — 正则化；通过加入惩罚项防止过拟合。
+**relational** — 关系型的；与关系有关的；采用表结构的数据库模型。
+**reliance** — 依赖；信赖。
+**remediation** — 修复；纠正问题。
+**rendezvous** — 会合；约定时间地点见面。
+**replication** — 复制；复现实验；副本生成。
+**repository** — 仓库；存储位置；代码档案库。
+**representational** — 表征性的；用于描绘或代表某事物的。
+**resilience** — 韧性；恢复能力；反弹能力。
+**resolution** — 分辨率；决议；问题的解决。
+**resonance** — 共振；共鸣；情感呼应。
+**restitution** — 归还；恢复；补偿损失。
+**retrospective** — 回顾性的；回顾过去事件的总结。
+**reverberate** — 回响；产生持续回声或影响。
+**revision** — 修订；复查并修改；新版本。
+**rhizome** — 根茎；非层级化结构（哲学用语）。
+**robustness** — 稳健性；强健程度；对错误的承受能力。
+**root cause** — 根本原因；问题最基础的成因。
+**rotation** — 旋转；绕轴转动。
+**rudimentary** — 初步的；基础的；尚不完善的。
+**runtime** — 运行时；程序执行的时间或环境。
 
-**sacrifice** — giving up something valued; offering.
-**salient** — prominent; noticeable.
-**sanction** — approval; penalty.
-**sandbox** — a 安全 测试 environment; a play area.
-**saturation** — full capacity; intense color.
-**scalar** — a single number; magnitude without direction.
-**schema** — a structured framework; 数据库 design.
-**schism** — a split or division.
-**scope** — extent; range 的 effect; variable visibility.
-**scrutable** — understandable; comprehensible.
-**semantic** — relating to meaning.
-**semaphore** — a signaling mechanism; flag.
-**senescence** — aging; deterioration 与 age.
-**sentient** — capable 的 feeling; conscious.
-**sequential** — 在 order; one after another.
-**serendipity** — fortunate accidental discovery.
-**serialization** — converting objects to storable/transmittable format.
-**set** — a collection 的 distinct elements.
-**shader** — a program determining pixel colors 在 graphics.
-**shard** — a fragment; 数据库 partition.
-**sigmoid** — S-shaped curve; activation function.
-**similarity** — resemblance; degree 的 likeness.
-**simulation** — imitation 的 real processes.
-**singular** — unique; extraordinary; grammatical form.
-**skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; 这 / character.
-**snapshot** — a momentary view; backup at a point 在 time.
-**socket** — an endpoint 为 网络 沟通.
-**softmax** — a function converting values to probabilities.
-**sovereign** — supreme ruler; independent nation.
-**sparse** — thinly scattered; mostly empty.
-**specification** — a detailed description 的 requirements.
-**spectrum** — a range; band 的 colors.
-**spherical** — shaped like a sphere.
-**spurious** — false; fake; not genuine.
-**stability** — firmness; resistance to change.
-**stack** — a 数据 structure (LIFO); layers; pile.
-**stakeholder** — anyone affected by decisions.
-**stall** — to stop progressing; delay.
-**standardize** — to make conform to standards.
-**state** — condition; 在 计算, stored information; political entity.
-**static** — unchanging; stationary; compile-time.
-**statistical** — relating to 数据 analysis 和 probability.
-**status** — position; standing; state.
-**stochastic** — randomly determined; probabilistic.
-**stratify** — to arrange 在 layers or classes.
-**stream** — a continuous flow; sequence 的 数据.
-**stress** — pressure; emphasis; strain.
-**stride** — a long step; step size 在 iteration.
-**string** — a sequence 的 characters; cord.
-**structural** — relating to structure or organization.
-**subroutine** — a procedure within a program; function.
-**subset** — a set contained within another.
-**substantiate** — to provide evidence; prove.
-**subtle** — delicate; not obvious.
-**suffix** — a morpheme added to word ends.
-**summation** — 这 addition 的 a sequence.
-**superposition** — placement on top; quantum state combination.
-**supervised** — 与 oversight; ML 与 labeled 数据.
-**supplant** — to replace; supersede.
-**surrogate** — a substitute; proxy.
-**susceptible** — vulnerable; likely to be affected.
-**可持续性** — ability to continue long-term.
-**suture** — to stitch; surgical stitching.
-**syllable** — a unit 的 pronunciation.
-**symbolic** — representing something else; using symbols.
-**symmetry** — balanced proportions; invariance under transformation.
-**synapse** — junction between neurons.
-**synchrony** — simultaneous occurrence.
-**syndrome** — a set 的 symptoms; pattern 的 characteristics.
-**synonym** — a word similar 在 meaning.
-**synopsis** — a brief summary.
-**语法** — grammatical structure; rules 为 valid expressions.
-**synthesis** — combination forming a whole.
-**systemic** — affecting 这 entire system.
+**sacrifice** — 牺牲；放弃有价值之物；供奉。
+**salient** — 显著的；突出的。
+**sanction** — 认可；制裁；处罚。
+**sandbox** — 沙箱；安全的测试环境；儿童游戏区。
+**saturation** — 饱和；满负荷；高强度色彩。
+**scalar** — 标量；只有大小没有方向的单一数值。
+**schema** — 模式；结构化框架；数据库设计。
+**schism** — 分裂；裂痕。
+**scope** — 范围；影响区域；变量可见性。
+**scrutable** — 可理解的；可以看透的。
+**semantic** — 语义的；与意义有关的。
+**semaphore** — 信号量；信号机制；旗语标志。
+**senescence** — 衰老；随年龄增长而退化。
+**sentient** — 有感知能力的；有意识的。
+**sequential** — 顺序的；一个接一个发生的。
+**serendipity** — 意外发现之喜；机缘巧合的好运。
+**serialization** — 序列化；将对象转换为可存储或可传输格式。
+**set** — 集合；由互不相同元素组成的整体。
+**shader** — 着色器；决定图形中像素颜色的程序。
+**shard** — 分片；碎片；数据库分区。
+**sigmoid** — S 形曲线；一种激活函数。
+**similarity** — 相似性；相像程度。
+**simulation** — 模拟；对真实过程的仿真。
+**singular** — 单数的；独特的；非凡的。
+**skeuomorphic** — 拟物化的；模仿实体物品外观的设计。
+**slash** — 斜杠“/”；砍、划。
+**snapshot** — 快照；某一时刻的视图；某一时间点的备份。
+**socket** — 套接字；网络通信的端点。
+**softmax** — softmax 函数；把数值转换为概率分布的函数。
+**sovereign** — 主权的；最高统治者；独立国家。
+**sparse** — 稀疏的；分布稀少的；大部分为空的。
+**specification** — 规格说明；对需求的详细描述。
+**spectrum** — 光谱；范围；一系列颜色或状态。
+**spherical** — 球形的；像球体一样的。
+**spurious** — 虚假的；伪造的；不真实的。
+**stability** — 稳定性；抗变化能力。
+**stack** — 栈；后进先出数据结构；层叠结构；一堆。
+**stakeholder** — 利益相关者；会受决策影响的人。
+**stall** — 停滞；停止推进；拖延。
+**standardize** — 标准化；使其符合统一标准。
+**state** — 状态；在计算中指存储的信息；国家。
+**static** — 静态的；不变化的；编译期固定的。
+**statistical** — 统计的；与数据分析和概率有关的。
+**status** — 状况；地位；状态。
+**stochastic** — 随机的；概率性的。
+**stratify** — 分层；按层次或类别排列。
+**stream** — 流；连续的数据序列；不断流动的过程。
+**stress** — 压力；强调；张力。
+**stride** — 步长；大步；迭代中的步进大小。
+**string** — 字符串；字符序列；绳索。
+**structural** — 结构性的；与组织方式有关的。
+**subroutine** — 子程序；程序中的过程或函数。
+**subset** — 子集；包含于另一个集合中的集合。
+**substantiate** — 证实；提供证据证明。
+**subtle** — 细微的；不明显的。
+**suffix** — 后缀；加在词尾的语素。
+**summation** — 求和；一系列项的总和。
+**superposition** — 叠加；置于其上；量子态组合。
+**supervised** — 受监督的；有标注数据的机器学习方式。
+**supplant** — 取代；替换。
+**surrogate** — 替代物；代理。
+**susceptible** — 易受影响的；脆弱的。
+**sustainability** — 可持续性；长期维持下去的能力。
+**suture** — 缝合；外科缝线。
+**syllable** — 音节；发音单位。
+**symbolic** — 象征性的；使用符号进行表示的。
+**symmetry** — 对称；平衡比例；在变换下保持不变的性质。
+**synapse** — 突触；神经元之间的连接点。
+**synchrony** — 同时发生；同步性。
+**syndrome** — 综合征；一组症状或特征模式。
+**synonym** — 同义词；意义相近的词。
+**synopsis** — 概要；简短摘要。
+**syntax** — 语法结构；构成有效表达式的规则。
+**synthesis** — 综合；组合成整体。
+**systemic** — 系统性的；影响整个系统的。
 
-**tacit** — understood without being stated.
-**tactical** — relating to strategy; short-term planning.
-**tangent** — touching at one point; diverging from topic.
-**tautology** — saying 这 same thing twice; logically always true.
-**taxonomy** — classification scheme.
-**teleology** — explanation by purpose or design.
-**tempered** — moderated; hardened (metal).
-**temporal** — relating to time; worldly.
-**tendency** — inclination; trend.
-**tensor** — a multi-dimensional array; 在 physics, generalized vector.
-**terminology** — specialized vocabulary.
-**ternary** — consisting 的 three parts; base-3.
-**terrestrial** — relating to Earth; land-based.
-**testament** — evidence; will; covenant.
-**theorem** — a provable mathematical statement.
-**theory** — a well-substantiated explanation; conjecture.
-**thermal** — relating to heat.
-**threshold** — a limit triggering action.
-**throughput** — amount processed 在 given time.
-**timbre** — tone quality; sound color.
-**topology** — study 的 spatial properties; 网络 layout.
-**torque** — rotational force.
-**trace** — to follow; record; sum 的 diagonal elements.
-**trademark** — a registered brand identifier.
-**trajectory** — path 的 a projectile; course 的 开发.
-**transcend** — to go beyond; surpass.
-**transcript** — written record; RNA copy 的 DNA.
-**transformation** — thorough change; mathematical mapping.
-**transient** — temporary; passing.
-**transpose** — to reverse position; swap rows 和 columns.
-**triage** — prioritizing by urgency.
-**trigonometry** — study 的 triangle relationships.
-**trivial** — simple; unimportant; mathematically obvious.
-**trope** — a common theme or device.
-**troubleshoot** — to diagnose 和 fix problems.
-**truncate** — to shorten by cutting off.
-**trust** — confidence; reliance; 法律 arrangement.
-**turbulence** — chaotic fluid motion; instability.
-**tutorial** — instructional lesson.
-**tuple** — an ordered list 的 elements.
-**turing-完整** — capable 的 universal computation.
-**typology** — study 的 types or classifications.
+**tacit** — 默许的；不言自明的。
+**tactical** — 战术性的；与短期策略有关的。
+**tangent** — 切线；只接触一点的；离题的。
+**tautology** — 同义反复；把同一件事说两遍；逻辑上恒真的陈述。
+**taxonomy** — 分类法；分类体系。
+**teleology** — 目的论；从目的或设计来解释事物。
+**tempered** — 经过调和的；缓和的；经淬炼硬化的。
+**temporal** — 时间上的；现世的。
+**tendency** — 倾向；趋势。
+**tensor** — 张量；多维数组；在物理中是广义向量对象。
+**terminology** — 术语；专门词汇。
+**ternary** — 三元的；由三部分组成的；以 3 为基的。
+**terrestrial** — 地球的；陆地的。
+**testament** — 证据；遗嘱；誓约。
+**theorem** — 定理；可证明的数学命题。
+**theory** — 理论；有充分依据的解释；也可指猜想。
+**thermal** — 热的；与热有关的。
+**threshold** — 阈值；触发行动的界限。
+**throughput** — 吞吐量；单位时间内处理的数量。
+**timbre** — 音色；声音的质感。
+**topology** — 拓扑；研究空间性质；网络布局。
+**torque** — 扭矩；旋转力。
+**trace** — 追踪；记录；矩阵对角元素之和。
+**trademark** — 商标；注册品牌标识。
+**trajectory** — 轨迹；抛射物路径；发展路线。
+**transcend** — 超越；胜过。
+**transcript** — 文本记录；DNA 的 RNA 拷贝。
+**transformation** — 转变；彻底变化；数学映射。
+**transient** — 短暂的；瞬时的。
+**transpose** — 转置；交换位置；交换行和列。
+**triage** — 分诊；按紧急程度进行优先排序。
+**trigonometry** — 三角学；研究三角关系的学科。
+**trivial** — 琐碎的；简单的；在数学上显然成立的。
+**trope** — 常见母题；修辞或叙事手法。
+**troubleshoot** — 排查并修复问题。
+**truncate** — 截断；通过切去末端来缩短。
+**trust** — 信任；依赖；法律上的信托安排。
+**turbulence** — 湍流；不稳定、混乱状态。
+**tutorial** — 教程；教学课程。
+**tuple** — 元组；有序元素列表。
+**turing-complete** — 图灵完备的；具有通用计算能力的。
+**typology** — 类型学；研究类型或分类的学科。
 
-**ubiquitous** — present everywhere.
-**ulterior** — hidden; beyond what is evident.
-**uncanny** — strangely familiar; eerie.
-**unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; 这 _ character.
-**underwrite** — to guarantee financially; 支持.
-**uniform** — consistent; a distinctive outfit.
-**unilateral** — one-sided; by one party.
-**unique** — one 的 a kind.
-**universal** — applicable everywhere; general.
-**unix** — a family 的 operating 系统.
-**unsupervised** — without labels; ML finding patterns alone.
-**utilitarian** — practical; maximizing overall happiness.
-**utterance** — something spoken; vocal expression.
+**ubiquitous** — 无处不在的；普遍存在的。
+**ulterior** — 隐藏的；超出表面所见的。
+**uncanny** — 诡异地熟悉的；离奇的。
+**unconscious** — 无意识的；未察觉的；意识之下的。
+**underscore** — 强调；下划线字符 `_`。
+**underwrite** — 承保；提供资金担保；支持。
+**uniform** — 一致的；制服。
+**unilateral** — 单方面的；由一方作出的。
+**unique** — 独一无二的。
+**universal** — 普遍适用的；通用的。
+**unix** — Unix；一类操作系统家族。
+**unsupervised** — 无监督的；没有标签、由模型自行发现模式的机器学习方式。
+**utilitarian** — 功利主义的；实用的；追求整体最大幸福的。
+**utterance** — 话语；说出的内容；发声表达。
 
-**vacuous** — empty; lacking content.
-**vagrant** — wandering; homeless.
-**valid** — logically sound; legally acceptable.
-**valence** — combining power; emotional charge.
-**vanilla** — plain; standard; unmodified.
-**variable** — changeable; a named storage location.
-**variance** — variability; statistical dispersion.
-**vector** — a quantity 与 direction 和 magnitude; an array.
-**vegetative** — relating to plants; automatic bodily functions.
-**velocity** — speed 与 direction.
-**vendor** — a seller; supplier.
-**verbose** — using more words than needed.
-**verification** — confirming truth or accuracy.
-**vernacular** — everyday 语言; local dialect.
-**versatile** — adaptable; multi-purpose.
-**vertex** — a corner point; highest point.
-**vertical** — upright; industry-specific.
-**vested** — secured; guaranteed.
-**viable** — capable 的 working; feasible.
-**vicarious** — experienced through another.
-**virtual** — simulated; nearly; 在 计算, emulated.
-**viscosity** — resistance to flow; thickness.
-**visual** — relating to sight.
-**volatile** — unstable; evaporating easily; memory losing 数据 without power.
-**volume** — amount; loudness; 3D space.
-**vulnerability** — weakness; susceptibility to attack.
+**vacuous** — 空洞的；缺乏内容的。
+**vagrant** — 流浪的；无家可归的。
+**valid** — 有效的；逻辑成立的；法律可接受的。
+**valence** — 化合价；情感强度。
+**vanilla** — 原味的；标准的；未修改的。
+**variable** — 可变的；变量；具名存储位置。
+**variance** — 方差；变异程度；统计离散度。
+**vector** — 向量；具有方向和大小的量；数组。
+**vegetative** — 植物性的；与植物有关的；自动生理功能的。
+**velocity** — 速度；带方向的速率。
+**vendor** — 卖方；供应商。
+**verbose** — 冗长的；用词过多的。
+**verification** — 验证；确认真实性或准确性。
+**vernacular** — 方言；日常语言；本地通俗说法。
+**versatile** — 多才多用的；适应性强的。
+**vertex** — 顶点；角点；最高点。
+**vertical** — 垂直的；行业垂直领域的。
+**vested** — 既得的；已保障的。
+**viable** — 可行的；能够运作的。
+**vicarious** — 间接体验的；通过他人获得的。
+**virtual** — 虚拟的；近乎实际的；在计算中指被仿真的。
+**viscosity** — 黏度；对流动的阻力。
+**visual** — 视觉的；与视力有关的。
+**volatile** — 易变的；易挥发的；断电即失数据的（内存）。
+**volume** — 体积；音量；三维空间大小。
+**vulnerability** — 漏洞；弱点；易受攻击性。
 
-**waive** — to give up; refrain from enforcing.
-**wanderlust** — strong desire to travel.
-**want** — to desire; lack.
-**warfare** — armed conflict; competitive struggle.
-**warrant** — authorization; justification.
-**warranty** — a guarantee; assurance.
-**waveform** — shape 的 a wave.
-**weakness** — lack 的 strength; vulnerability.
-**网络** — a 网络; 这 World Wide 网络.
-**weight** — importance; heaviness; parameter value 在 ML.
-**well-formed** — correctly structured.
-**what-if** — hypothetical scenario analysis.
-**whitelist** — approved list; allowlist.
-**wildcard** — a placeholder matching any character; unpredictable element.
-**window** — an opening; a viewing area; time interval.
-**wireframe** — a skeletal visual 指南.
-**wisdom** — deep understanding; good judgment.
-**workaround** — a temporary solution bypassing a problem.
-**worldview** — a comprehensive perspective on life.
-**wrapper** — something enclosing; code adapting interfaces.
-**write-up** — a report; documentation.
+**waive** — 放弃；免除；不再强制执行。
+**wanderlust** — 旅行癖；强烈的旅行欲望。
+**want** — 想要；缺乏。
+**warfare** — 战争；武装冲突；竞争性斗争。
+**warrant** — 授权；正当理由。
+**warranty** — 保证；保修承诺。
+**waveform** — 波形；波的形状。
+**weakness** — 弱点；不足；脆弱性。
+**web** — 网；网络；万维网。
+**weight** — 权重；重要性；重量；在机器学习中指参数值。
+**well-formed** — 结构良好的；形式正确的。
+**what-if** — 假设性情景分析。
+**whitelist** — 白名单；允许名单。
+**wildcard** — 通配符；可匹配任意字符的占位符；不可预测因素。
+**window** — 窗口；开口；观察区域；时间窗口。
+**wireframe** — 线框图；骨架式视觉草图。
+**wisdom** — 智慧；深刻理解；良好判断力。
+**workaround** — 变通方案；绕过问题的临时解决办法。
+**worldview** — 世界观；对人生和世界的整体看法。
+**wrapper** — 包装器；包裹某物的东西；用于适配接口的代码。
+**write-up** — 书面报告；文字说明；文档。
 
-**x-axis** — horizontal axis 在 coordinates.
-**xenon** — a noble gas element.
-**xerox** — to photocopy; brand name.
-**xml** — Extensible Markup 语言.
-**xpath** — a query 语言 为 XML.
-**xylophone** — a percussion instrument.
+**x-axis** — x 轴；坐标系中的水平轴。
+**xenon** — 氙；一种稀有气体元素。
+**xerox** — 复印；施乐品牌名。
+**xml** — XML；可扩展标记语言。
+**xpath** — XPath；用于 XML 的查询语言。
+**xylophone** — 木琴；打击乐器。
 
-**yacht** — a recreational boat.
-**yaml** — a human-readable 数据 serialization format.
-**yardstick** — a measuring stick; standard 的 comparison.
-**yearning** — a longing desire.
-**yield** — to produce; give way; return value.
+**yacht** — 游艇。
+**yaml** — YAML；一种人类可读的数据序列化格式。
+**yardstick** — 码尺；衡量标准。
+**yearning** — 渴望；向往。
+**yield** — 产生；让步；返回值。
 
-**zenith** — 这 highest point; peak.
-**zero** — nothing; 这 number 0.
-**zip** — to fasten; compress files; move quickly.
-**zone** — an area 与 specific characteristics.
-**zoom** — to magnify; change focal length.
+**zenith** — 顶点；最高点；巅峰。
+**zero** — 零；数字 0；什么都没有。
+**zip** — 拉上拉链；压缩文件；快速移动。
+**zone** — 具有特定特征的区域。
+**zoom** — 放大；变焦。

@@ -1,72 +1,65 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: general_knowledge.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 基础常识
 
-# 常识
+## 太阳系
 
-## 这 Solar System
+太阳系由太阳和八大行星组成：水星、金星、地球、火星、木星、土星、天王星和海王星。地球是距离太阳第三近的行星，距太阳约1.5亿千米。太阳是位于太阳系中心的一颗恒星，通过核聚变为所有行星提供光和能量。木星是最大的行星，其质量超过其他所有行星的总和。土星以其显著的环系统闻名，这些环主要由冰和岩石构成。火星因其表面的氧化铁而被称为“红色星球”。海王星是距离太阳最远的行星。
 
-这 solar system consists 的 这 Sun 和 eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, 和 Neptune. Earth is 这 third planet from 这 Sun, located approximately 150 million kilometers away. 这 Sun is a star at 这 center 的 这 solar system that provides light 和 energy to all planets through nuclear fusion. Jupiter is 这 largest planet, 与 a mass greater than all other planets combined. Saturn is known 为 its prominent ring system made 的 ice 和 rock. Mars is called 这 Red Planet because 的 iron oxide on its surface. Neptune is 这 farthest planet from 这 Sun.
+## 地球
 
-## Earth
+地球是太阳系中第五大行星，也是目前已知唯一孕育生命的行星。地表大约71%是水，29%是陆地。大气约由78%的氮气、21%的氧气以及1%的其他气体组成，其中包括二氧化碳和氩气。地球有一颗天然卫星，叫作月球。月球大约每27.3天绕地球运行一周，距地球约384,400千米。地球的直径约为12,742千米。地球大约有45亿年历史。
 
-Earth is 这 fifth-largest planet 在 这 solar system 和 这 only known planet to harbor life. Its surface is approximately 71% water 和 29% land. 这 atmosphere is composed 的 approximately 78% nitrogen, 21% oxygen, 和 1% other gases including carbon dioxide 和 argon. Earth has one natural satellite called 这 Moon. 这 Moon orbits Earth roughly every 27.3 days 和 is approximately 384,400 kilometers away. Earth has a diameter 的 approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+## 天气与气候
 
-## Weather 和 Climate
+天气指某一地点短期内的大气状况，包括温度、湿度、降水和风。气候指一个地区多年形成的长期天气模式。温室效应是指地球大气中的气体滞留来自太阳的热量，从而使地球升温。二氧化碳、水蒸气和甲烷是主要的温室气体。气候变化是指全球气温和天气模式的长期变化，自工业革命以来，这一变化在很大程度上由人类活动驱动。
 
-Weather refers to short-term atmospheric conditions 在 a specific location, including temperature, humidity, precipitation, 和 wind. Climate refers to long-term weather patterns 在 a region over many years. 这 greenhouse effect occurs when gases 在 Earth's atmosphere trap heat from 这 Sun, warming 这 planet. Carbon dioxide, water vapor, 和 methane are 这 main greenhouse gases. Climate change refers to long-term shifts 在 global temperatures 和 weather patterns, largely driven by human activity since 这 Industrial Revolution.
+## 海洋
 
-## Oceans
+地球有五大洋：太平洋、大西洋、印度洋、南大洋和北冰洋。太平洋面积最大，覆盖超过1.65亿平方千米；同时也是最深的海洋，马里亚纳海沟最深处约达11千米。全球海洋总面积约为3.61亿平方千米。海洋平均深度约为3,688米。海洋调节着地球温度，也是地球上大多数生命的栖息地。
 
-Earth has five oceans: 这 Pacific, Atlantic, Indian, Southern, 和 Arctic. 这 Pacific Ocean is 这 largest, covering more than 165 million square kilometers, 和 这 deepest, 与 这 Mariana Trench reaching approximately 11 kilometers deep. 这 oceans cover about 361 million square kilometers 在 total. 这 average depth 的 这 ocean is approximately 3,688 meters. 这 oceans regulate Earth's temperature 和 are home to 这 majority 的 life on 这 planet.
+## 洲
 
-## Continents
+地球有七大洲：非洲、南极洲、亚洲、大洋洲（澳大利亚）、欧洲、北美洲和南美洲。亚洲在面积和人口上都是最大的洲。非洲拥有最多的国家。南极洲是最寒冷、最干燥、风力最强的大陆，其表面覆盖着平均厚度约2.1千米的冰盖。欧洲和亚洲有时也被视为一整块大陆，称为“欧亚大陆”。
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, 和 South America. Asia is 这 largest continent by area 和 population. Africa has 这 most countries 的 any continent. Antarctica is 这 coldest, driest, 和 windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe 和 Asia are sometimes considered a single landmass called Eurasia.
+## 时间与历法
 
-## Time 和 Calendars
+一年是地球绕太阳公转一周所需的时间，约为365.25天。闰年有366天，每四年出现一次，用于补上多出的四分之一天。一天是地球绕地轴自转一周的时间，约为24小时。公历是当今世界上使用最广泛的历法。一周有七天。一小时有60分钟。一分钟有60秒。
 
-A year is 这 time it takes Earth to orbit 这 Sun, approximately 365.25 days. A leap year has 366 days 和 occurs every four years to account 为 这 extra quarter-day. A day is one full rotation 的 Earth on its axis, approximately 24 hours. 这 Gregorian calendar is 这 most widely used calendar 在 这 world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+## 光与速度
 
-## Light 和 Speed
+真空中的光速约为每秒299,792千米，约合每秒186,000英里。太阳发出的光到达地球大约需要8分钟。光年是光在一年中传播的距离，约为9.46万亿千米。根据爱因斯坦的狭义相对论，任何有质量的物体都无法达到光速。
 
-这 speed 的 light 在 a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from 这 Sun takes about 8 minutes to reach Earth. A light-year is 这 distance light travels 在 one year, approximately 9.46 trillion kilometers. Nothing 与 mass can travel as fast as 这 speed 的 light according to Einstein's theory 的 special relativity.
+## 人体
 
-## Human Body
+人体约由37万亿个细胞组成。成年人的骨骼共有206块骨头。心脏通过总长约100,000千米的血管输送血液。大脑是最复杂的器官，约含有860亿个神经元。人体约60%由水构成。人体最长的骨头是股骨（大腿骨）。最小的骨头是耳朵里的镫骨。
 
-这 human body contains approximately 37 trillion cells. 这 adult human skeleton has 206 bones. 这 heart pumps blood through approximately 100,000 kilometers 的 blood vessels. 这 brain is 这 most complex organ 和 contains approximately 86 billion neurons. 这 human body is approximately 60% water. 这 longest bone 在 这 body is 这 femur (thigh bone). 这 smallest bone is 这 stapes 在 这 ear.
+## 水
 
-## Water
+水是由两个氢原子和一个氧原子组成的化合物（H2O）。它有三种状态：液态（水）、固态（冰）和气态（蒸汽或水蒸气）。在海平面条件下，水在0摄氏度结冰，在100摄氏度沸腾。水对所有已知生命形式都至关重要。地球上的水约有97.5%是咸水，只有2.5%是淡水。
 
-Water is a chemical compound made 的 two hydrogen atoms 和 one oxygen atom (H2O). It exists 在 three states: liquid (water), solid (ice), 和 gas (steam or water vapor). Water freezes at 0 degrees Celsius 和 boils at 100 degrees Celsius at sea level. Water is essential 为 all known forms 的 life. About 97.5% 的 Earth's water is saltwater; only 2.5% is freshwater.
+## 动物
 
-## Animals
+哺乳动物是恒温动物，能产下幼崽并以乳汁哺育。鸟类是身披羽毛、会产卵的恒温动物。爬行动物是具有鳞片的变温动物。两栖动物既能在陆地上生活，也能在水中生活。鱼类通过鳃呼吸，并生活在水中。昆虫是地球上数量最多的一类动物。蓝鲸是已知有史以来体型最大的动物，体长可达30米。
 
-Mammals are warm-blooded animals that give birth to live young 和 nurse them 与 milk. Birds are warm-blooded animals covered 在 feathers that lay eggs. Reptiles are cold-blooded animals 与 scales. Amphibians can live both on land 和 在 water. Fish breathe through gills 和 live 在 water. Insects are 这 most numerous class 的 animals on Earth. 这 blue whale is 这 largest animal ever known to have lived, reaching up to 30 meters 在 length.
+## 地理与人口
 
-## 地理 和 Population
+地球总表面积约为5.1亿平方千米。地球上约有80亿人口。印度和中国是人口最多的两个国家。按面积计算，最大的国家是俄罗斯，其次是加拿大和中国。尼罗河和亚马孙河都属于世界上最长的河流系统之一。位于喜马拉雅山脉的珠穆朗玛峰，海拔8,848.86米，是地球上海拔最高的山峰。
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India 和 China are 这 two most populous countries. 这 largest country by area is Russia, followed by Canada 和 China. 这 Nile 和 这 Amazon are among 这 world's longest river 系统. Mount Everest, 在 这 Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+## 能源与资源
 
-## Energy 和 Resources
+全球主要能源来源包括石油、天然气、煤炭、核能、水电、风能和太阳能。化石燃料由远古有机物经过数百万年形成。风能、太阳能等可再生能源能够自然补充，是许多脱碳战略的核心。电能以焦耳计量；在家庭和工业领域，通常以千瓦时（kWh）计量用电量。
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, 和 solar. Fossil fuels formed over millions 的 years from ancient organic matter. Renewable energy sources such as wind 和 solar are replenished naturally 和 are central to many decarbonisation strategies. Electrical energy is measured 在 joules; 在 households 和 industry, usage is commonly measured 在 kilowatt-hours (kWh).
+## 经济学基础
 
-## 经济 基础
+经济学研究个人和社会如何配置有限资源。供给和需求会影响市场价格。通货膨胀是价格水平随时间普遍上升的现象，会削弱购买力。国内生产总值（GDP）用于估算一个国家生产的商品和服务总价值。利率会影响借贷、储蓄和投资行为。
 
-经济 studies how people 和 societies allocate limited resources. Supply 和 demand influence market prices. Inflation is a general rise 在 prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates 这 total value 的 goods 和 services produced 在 a country. Interest rates influence borrowing, saving, 和 investment behavior.
+## 政府与公民常识
 
-## Government 和 Civics
+许多现代国家大致采用三类制度之一：民主制度、威权制度或混合形式。在宪政民主国家中，权力通常分散在立法、行政和司法等机构之间。法律界定权利和责任，而法院负责解释和适用这些法律。地方政府通常负责学校、道路和环境卫生等公共服务。
 
-Many modern states use one 的 three broad 系统: democracies, authoritarian 系统, or mixed forms. 在 constitutional democracies, power is typically distributed across branches such as legislative, executive, 和 judicial institutions. Laws define rights 和 responsibilities, while courts interpret 和 apply those laws. Local government often manages services such as schools, roads, 和 sanitation.
+## 健康与公共安全
 
-## Health 和 Public Safety
+疫苗能够训练免疫系统识别并对抗特定病原体。手部卫生和清洁饮用水是最有效的公共卫生干预措施之一。抗生素可治疗细菌感染，但不能治愈普通感冒等病毒性疾病。睡眠、营养、身体活动和压力管理，是影响长期健康结果的基础因素。
 
-Vaccines train 这 immune system to recognize 和 fight specific pathogens. Hand hygiene 和 clean water are among 这 most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as 这 common cold. Sleep, 营养, physical activity, 和 stress 管理 are foundational contributors to long-term health outcomes.
+## 沟通与媒介素养
 
-## 沟通 和 Media Literacy
-
-Reliable information is usually supported by evidence, transparent sourcing, 和 independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand 数据, while secondary sources interpret primary material. 在 这 digital era, checking publication date, author credibility, 和 source quality is important 为 avoiding misinformation.
+可靠的信息通常有证据支持、来源透明，并经过独立核实。相关性并不必然意味着因果关系。一手资料提供第一手数据，二手资料则对原始材料进行解读。在数字时代，核查发布日期、作者可信度和来源质量，对于避免错误信息非常重要。
