@@ -1,17 +1,10 @@
-<!-- 
-Этот файл был автоматически переведён с английского на русский язык.
-Источник: README.md
-Примечание: технические термины, примеры кода и имена собственные могут оставаться на английском языке.
-Для повышения точности перевода вносите правки через pull request.
--->
-
 # База знаний
 
 Полная коллекция справочных материалов, охватывающих технологии, науку, бизнес, гуманитарные дисциплины и практические навыки.
 
 **Последнее обновление:** июнь 2025  
 **Всего файлов:** 34+ документов в формате Markdown  
-**Организация:** распределены по 10 тематическим каталогам
+**Организация:** материалы распределены по 10 тематическим каталогам
 
 ---
 
@@ -39,7 +32,7 @@ knowledge_base/Russian/
 | Файл | Описание | Строки |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, безопасность | 350+ |
+| [web_development.md](01_technology_and_computing/web_development.md) | Фронтенд, бэкенд, DevOps, безопасность | 350+ |
 | [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, шаблоны проектирования, оптимизация | 300+ |
 | [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Облачные провайдеры, архитектурные шаблоны, безопасность | 350+ |
 | [networking_basics.md](01_technology_and_computing/networking_basics.md) | Модель OSI, TCP/IP, протоколы, безопасность | 400+ |
@@ -58,7 +51,7 @@ knowledge_base/Russian/
 ### Наука о данных (`03_data_science/`)
 | Файл | Описание | Строки |
 |------|-------------|-------|
-| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Обработка данных, машинное обучение, big data, BI | 350+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Обработка данных, машинное обучение, большие данные, BI | 350+ |
 | [math_and_logic.md](03_data_science/math_and_logic.md) | Математика, логика, доказательства | 250+ |
 
 ### Наука (`04_science/`)
@@ -85,10 +78,10 @@ knowledge_base/Russian/
 | [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Когнитивная, социальная, возрастная психология | 200+ |
 | [language_and_english.md](06_humanities/language_and_english.md) | Грамматика, лингвистика, письмо | 180+ |
 
-### Справочник (`07_reference/`)
+### Справочные материалы (`07_reference/`)
 | Файл | Описание | Строки |
 |------|-------------|-------|
-| [Словарь.md](07_reference/Словарь.md) | Полный словарь терминов (А-Я) | 868 |
+| [dictionary.md](07_reference/dictionary.md) | Полный словарь терминов (A–Z) | 868 |
 | [general_knowledge.md](07_reference/general_knowledge.md) | Базовые факты об окружающем мире | 150+ |
 | [technology_and_computing.md](07_reference/technology_and_computing.md) | Основы вычислительной техники | 250+ |
 | [safe_communication.md](07_reference/safe_communication.md) | Рекомендации по коммуникации и лучшие практики | 150+ |
@@ -174,8 +167,8 @@ knowledge_base/Russian/
 
 ### Для ИИ-систем
 - Все файлы структурированы с чёткой иерархией заголовков
-- Технические термины определяются по месту использования или в `Словарь.md`
-- Перекрёстные ссылки оформлены как markdown-ссылки
+- Технические термины определяются по месту использования или в `dictionary.md`
+- Перекрёстные ссылки оформлены как Markdown-ссылки
 - Примеры кода включают подсветку синтаксиса
 
 ### Для читателей-людей
@@ -197,7 +190,7 @@ knowledge_base/Russian/
    - Используйте `-` для маркированных списков
    - Включайте подсветку синтаксиса в блоках кода
 
-2. **Добавьте метаданные** (YAML frontmatter):
+2. **Добавьте метаданные** (блок YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -221,7 +214,7 @@ last_updated: YYYY-MM-DD
 - **Расширение содержимого:** недостаточно проработанные файлы дополняются постепенно
 - **Новые темы:** добавляются на основе новых областей знаний и потребностей пользователей
 
-**Следующая плановая проверка:** Q3 2025
+**Следующая плановая проверка:** 3-й квартал 2025
 
 ---
 
