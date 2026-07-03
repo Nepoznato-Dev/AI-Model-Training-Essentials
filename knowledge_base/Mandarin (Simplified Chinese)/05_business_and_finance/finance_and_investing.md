@@ -1,360 +1,367 @@
-# 金融与投资
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: finance_and_investing.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 个人理财基础
+# 金融 和 投资
 
-### 财务规划基础
-- **预算管理**：跟踪收入与支出，采用 50/30/20 规则（需求/想要/储蓄）
-- **应急基金**：将 3-6 个月的生活费用存放在流动性账户中
-- **净资产**：资产减去负债，并持续跟踪其变化
-- **现金流管理**：流入的钱与流出的钱，保持正现金流至关重要
-- **财务目标**：短期（<1 年）、中期（1-5 年）、长期（5 年以上）
+## Personal 金融 基础
 
-### 银行产品
-- **支票账户**：用于日常交易、借记卡消费和账单支付
-- **储蓄账户**：计息账户，取款次数有限
-- **货币市场账户**：利率更高，通常附带支票签发功能
-- **定期存款（CDs）**：固定期限、固定利率，提前支取会有罚金
-- **高收益储蓄**：通常由线上银行提供，利率更具竞争力
+### Financial Planning 基础
+- **Budgeting**: Track income 和 expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months 的 living expenses 在 liquid account
+- **Net Worth**: Assets minus liabilities, track over time
+- **Cash Flow 管理**: Money 在 vs. money out, positive cash flow essential
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-### 信用与债务
-- **信用评分**：FICO（300-850），影响因素包括：还款记录、使用率、信用历史长度、信用组合、查询次数
-- **信用报告**：每年可从 Equifax、Experian、TransUnion 免费获取
-- **债务类型**：
-  - 良性债务：房贷、学生贷款（可能带来投资回报）
-  - 不良债务：信用卡、发薪日贷款（高利率）
-- **还债策略**：
-  - 雪崩法：先偿还利率最高的债务（从数学上最优）
-  - 雪球法：先偿还余额最小的债务（更容易获得心理上的成就感）
-- **债务收入比**：每月债务偿还额 / 月税前总收入
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates 的 Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-## 投资基础
+### Credit 和 Debt
+- **Credit Score**: FICO (300-850), factors: payment 历史, utilization, length, mix, inquiries
+- **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
+- **Types 的 Debt**: 
+  - Good debt: Mortgage, student loans (potential ROI)
+  - Bad debt: Credit cards, payday loans (high interest)
+- **Debt Repayment Strategies**:
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-### 资产类别
+## Investment 基础
 
-#### 权益类资产（股票）
-- **普通股**：所有权份额、投票权、股息
-- **优先股**：固定股息、破产时优先受偿、无投票权
-- **市值**：大盘股、中盘股、小盘股
-- **投资风格**：成长、价值、混合、收益
-- **行业板块**：科技、医疗保健、金融、消费、工业、能源、公用事业、材料、房地产、通信服务
+### Asset Classes
 
-#### 固定收益类资产（债券）
-- **政府债券**：国库券、国债票据、长期国债（风险最低）
-- **市政债券**：州/地方政府发行，利息通常免税
-- **公司债券**：投资级、高收益/垃圾债
-- **债券特征**：面值、票面利率、到期日、收益率
-- **利率风险**：债券价格与利率呈反向变动
-- **信用风险**：违约概率、信用评级（AAA 到 D）
+#### Equities (Stocks)
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority 在 bankruptcy, no voting
+- **Market Capitalization**: Large-cap, mid-cap, small-cap
+- **Investment Styles**: Growth, value, blend, income
+- **Sectors**: 技术, 医疗, financials, consumer, industrial, energy, utilities, materials, real estate, 沟通 services
 
-#### 现金及现金等价物
-- **国库券**：短期政府债务工具
-- **货币市场基金**：净值稳定、流动性强
-- **商业票据**：短期公司债务工具
-- **特征**：低风险、低回报、高流动性
+#### Fixed Income (Bonds)
+- **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
+- **Municipal Bonds**: State/local government, tax-exempt interest
+- **Corporate Bonds**: Investment grade, high-yield/junk
+- **Bond Characteristics**: Face value, coupon rate, maturity, yield
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-#### 房地产
-- **直接持有**：持有实体房产，获取租金收入
-- **REITs**：房地产投资信托基金，可公开交易
-- **房地产众筹**：通过平台进行房产投资
-- **特征**：可产生收入、具有升值潜力、可对冲通胀
+#### Cash 和 Cash Equivalents
+- **Treasury Bills**: Short-term government debt
+- **Money Market Funds**: Stable NAV, liquid
+- **Commercial Paper**: Short-term corporate debt
+- **Characteristics**: Low risk, low return, high liquidity
 
-#### 另类投资
-- **大宗商品**：黄金、白银、石油、农产品
-- **加密货币**：比特币、以太坊、数字资产
-- **私募股权**：直接持有公司股权，流动性较差
-- **对冲基金**：主动管理、策略多样
-- **收藏品**：艺术品、葡萄酒、稀有物品
+#### Real Estate
+- **Direct Ownership**: Physical properties, rental income
+- **REITs**: Real Estate Investment Trusts, publicly traded
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
-### 投资工具
+#### Alternative Investments
+- **Commodities**: Gold, silver, oil, agricultural products
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
+- **Private Equity**: Direct company ownership, illiquid
+- **Hedge Funds**: Active 管理, diverse strategies
+- **Collectibles**: Art, wine, rare items
 
-#### 共同基金
-- 由专业人士管理的投资组合
-- 按收盘时的净值（NAV）定价
-- 可采用主动或被动管理
-- 有前端收费基金和无申购费基金之分
-- 费用率差异很大
+### Investment Vehicles
 
-#### 交易所交易基金（ETFs）
-- 像股票一样可在全天交易
-- 通常为被动管理，跟踪指数
-- 费用率通常低于共同基金
-- 结构上更具税务效率
-- 例子：SPY（S&P 500）、QQQ（Nasdaq）、VTI（全市场）
+#### Mutual Funds
+- Professionally managed portfolios
+- Priced at end-的-day NAV
+- Active or passive 管理
+- Load vs. no-load funds
+- Expense ratios vary widely
 
-#### 指数基金
-- 以被动方式跟踪特定指数
-- 成本低、分散程度高
-- 例子：全股票市场、S&P 500、国际市场
+#### Exchange-Traded Funds (ETFs)
+- Trade like stocks throughout day
+- Typically passive, index-tracking
+- Lower expense ratios than mutual funds
+- Tax-efficient structure
+- 示例: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
-#### 年金
-- 由保险公司提供、用于产生收入流的产品
-- 回报可以是固定、浮动或指数挂钩
-- 可立即领取，也可延期领取
-- 享有递延纳税增长
+#### Index Funds
+- Passive 管理 tracking specific index
+- Low costs, broad diversification
+- 示例: Total stock market, S&P 500, international
 
-## 投资策略
+#### Annuities
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
+- Immediate or deferred payout
+- Tax-deferred growth
 
-### 投资组合构建
-- **资产配置**：在不同资产类别之间分配资金
-- **分散化**：在证券、行业和地理区域之间分散风险
-- **现代投资组合理论**：通过分散化优化风险—收益关系
-- **有效前沿**：在给定风险水平下实现最大回报
-- **相关性**：资产之间相对彼此的联动方式
+## Investment Strategies
 
-### 投资方法
-- **被动投资**：指数基金、买入并持有、低成本
-- **主动投资**：选股、择时、成本更高
-- **定投（Dollar-Cost Averaging）**：无论价格如何，定期投入固定金额
-- **价值投资**：买入被低估的证券（沃伦·巴菲特式方法）
-- **成长投资**：关注增长高于平均水平的公司
-- **收益型投资**：优先考虑股息和利息收入
-- **ESG 投资**：关注环境、社会和治理因素
+### Portfolio Construction
+- **Asset Allocation**: Distribution across asset classes
+- **Diversification**: Spread risk across securities, sectors, geographies
+- **Modern Portfolio Theory**: Optimize risk-return through diversification
+- **Efficient Frontier**: Maximum return 为 given risk level
+- **Correlation**: How assets move relative to each other
 
-### 风险管理
-- **风险承受能力**：承受亏损的能力和意愿
-- **投资期限**：你何时需要这笔钱会影响你的风险承载能力
-- **仓位管理**：不要把过多资金集中在单一投资上
-- **止损单**：在预设价格自动卖出
-- **再平衡**：定期恢复目标资产配置
-- **对冲**：使用期权、反向 ETF 等来降低下行风险
+### Investment Approaches
+- **Passive 投资**: Index funds, buy-和-hold, low costs
+- **Active 投资**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless 的 price
+- **Value 投资**: Buy undervalued securities (Warren Buffett approach)
+- **Growth 投资**: Focus on companies 与 above-average growth
+- **Income 投资**: Prioritize dividends 和 interest payments
+- **ESG 投资**: 环境, social, governance factors
 
-## 退休规划
+### Risk 管理
+- **Risk Tolerance**: Ability 和 willingness to lose money
+- **Time Horizon**: When you need 这 money affects risk capacity
+- **Position Sizing**: Don't concentrate too much 在 single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-### 退休账户（美国）
+## Retirement Planning
 
-#### 传统 IRA
-- 可抵税缴款（受收入限制）
-- 递延纳税增长
-- 提取时纳税
-- 73 岁开始需要进行最低强制分配（RMDs）
+### Retirement Accounts (US)
+
+#### Traditional IRA
+- Tax-deductible contributions (income limits apply)
+- Tax-deferred growth
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
 #### Roth IRA
-- 税后缴款
-- 增长和提取均免税
-- 终身无需 RMDs
-- 有收入资格限制
+- After-tax contributions
+- Tax-free growth 和 withdrawals
+- No RMDs during lifetime
+- Income limits 为 eligibility
 
-#### 401(k) 计划
-- 由雇主提供的退休计划
-- 可选择税前或 Roth（税后）缴款
-- 雇主匹配缴款（相当于“免费钱”）
-- 缴款上限高于 IRA
-- 雇主缴款通常有归属期安排
+#### 401(k) Plans
+- Employer-sponsored retirement plans
+- Pre-tax or Roth (after-tax) options
+- Employer matching (free money)
+- Higher contribution limits than IRAs
+- Vesting schedules 为 employer contributions
 
-#### 其他计划
-- **403(b)**：非营利机构员工
-- **457**：政府雇员
-- **SEP IRA**：自雇人士、小企业
-- **Solo 401(k)**：无雇员的自雇人士
+#### Other Plans
+- **403(b)**: Non-profit organizations
+- **457**: Government employees
+- **SEP IRA**: Self-employed, small 商业
+- **Solo 401(k)**: Self-employed 与 no employees
 
-### 退休规划概念
-- **替代率**：退休后通常需要退休前收入的 70-80%
-- **Social Security**：政府福利，可在 62-70 岁之间申领
-- **养老金计划**：确定给付型计划（由雇主保证支付金额）
-- **提取策略**：4% 规则、动态支出、分桶策略
-- **医疗成本**：Medicare、补充保险、长期护理
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% 的 pre-retirement income typically needed
+- **Social 安全**: Government benefit, claim between 62-70
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **医疗 Costs**: Medicare, supplemental insurance, long-term care
 
-## 市场机制
+## Market Mechanics
 
-### 证券交易所
-- **NYSE**：纽约证券交易所，拍卖制
-- **Nasdaq**：电子化交易所，科技股占比高
-- **其他交易所**：伦敦证券交易所、东京证券交易所、上海证券交易所
+### Stock Exchanges
+- **NYSE**: New York Stock Exchange, auction-based
+- **Nasdaq**: Electronic exchange, 技术-heavy
+- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-### 订单类型
-- **市价单**：按当前价格立即执行
-- **限价单**：仅在指定价格或更优价格执行
-- **止损单**：当达到止损价时转为市价单
-- **止损限价单**：当达到止损价时转为限价单
-- **追踪止损**：止损价随股价变动而调整
+### Order Types
+- **Market Order**: Execute immediately at current price
+- **Limit Order**: Execute only at specified price or better
+- **Stop Order**: Becomes market order when stop price reached
+- **Stop-Limit Order**: Becomes limit order when stop price reached
+- **Trailing Stop**: Stop price follows stock price movement
 
-### 交易概念
-- **买卖价差**：买入价与卖出价之间的差额
-- **成交量**：交易的股份数量
-- **流动性**：在不影响价格的情况下买卖的难易程度
-- **波动性**：价格波动的幅度
-- **卖空**：借入股票卖出，并希望以后以更低价格买回
-- **保证金交易**：借钱投资，放大收益和亏损
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying 和 selling price
+- **Volume**: Number 的 shares traded
+- **Liquidity**: Ease 的 buying/selling without affecting price
+- **Volatility**: Price fluctuation magnitude
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-### 市场指标
-- **S&P 500**：美国规模最大的 500 家公司
-- **Dow Jones Industrial Average**：30 家大型蓝筹公司
-- **Nasdaq Composite**：所有在 Nasdaq 上市的股票，科技股占比高
-- **Russell 2000**：美国小盘股指数
-- **VIX**：波动率指数，“恐慌指数”
-- **收益率曲线**：不同期限债券收益率构成的曲线，是经济指标之一
+### Market Indicators
+- **S&P 500**: 500 largest US companies
+- **Dow Jones Industrial Average**: 30 large blue-chip companies
+- **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
+- **Russell 2000**: Small-cap US stocks
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-## 基本面分析
+## Fundamental Analysis
 
-### 财务报表
-- **资产负债表**：Assets = Liabilities + Shareholders' Equity
-- **利润表**：Revenue - Expenses = Net Income
-- **现金流量表**：经营、投资、融资活动
+### Financial Statements
+- **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
+- **Income Statement**: Revenue - Expenses = Net Income
+- **Cash Flow Statement**: Operating, 投资, financing activities
 
-### 关键比率
-- **估值比率**：
-  - P/E（市盈率）：股价 / 每股收益
-  - P/B（市净率）：市值 / 账面价值
-  - P/S（市销率）：市值 / 营收
-  - EV/EBITDA：企业价值 / 息税折旧摊销前利润
+### Key Ratios
+- **Valuation Ratios**:
+  - P/E (Price-to-Earnings): Share price / earnings per share
+  - P/B (Price-to-Book): Market value / book value
+  - P/S (Price-to-Sales): Market cap / revenue
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
-- **盈利能力比率**：
-  - Gross Margin：毛利润 / 营收
-  - Operating Margin：营业利润 / 营收
-  - Net Margin：净利润 / 营收
-  - ROE（净资产收益率）：净利润 / 股东权益
-  - ROA（总资产收益率）：净利润 / 总资产
+- **Profitability Ratios**:
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
-- **流动性比率**：
-  - Current Ratio：流动资产 / 流动负债
-  - Quick Ratio：（流动资产 - 存货）/ 流动负债
+- **Liquidity Ratios**:
+  - Current Ratio: Current assets / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
-- **杠杆比率**：
-  - Debt-to-Equity：总债务 / 股东权益
-  - Interest Coverage：EBIT / 利息支出
+- **Leverage Ratios**:
+  - Debt-to-Equity: Total debt / shareholders' equity
+  - Interest Coverage: EBIT / interest expense
 
-### 定性因素
-- **管理层质量**：过往业绩、与股东利益的一致性
-- **竞争优势**：护城河、进入壁垒
-- **行业动态**：增长、竞争、监管
-- **公司治理**：董事会独立性、股东权利
+### Qualitative Factors
+- **管理 Quality**: Track record, alignment 与 shareholders
+- **Competitive Advantage**: Moat, barriers to entry
+- **Industry Dynamics**: Growth, competition, regulation
+- **Corporate Governance**: Board independence, shareholder rights
 
-## 技术分析
+## Technical Analysis
 
-### 图表类型
-- **折线图**：展示一段时间内的收盘价
-- **柱状图**：开盘价、最高价、最低价、收盘价（OHLC）
-- **K 线图**：以可视化方式呈现 OHLC，以及多空形态
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-### 趋势分析
-- **支撑位**：买盘压力大于卖盘压力的价格水平
-- **阻力位**：卖盘压力大于买盘压力的价格水平
-- **趋势线**：连接高点或低点以显示方向
-- **移动平均线**：SMA（简单移动平均）、EMA（指数移动平均）
-- **黄金交叉**：短期均线上穿长期均线（看涨）
-- **死亡交叉**：短期均线下穿长期均线（看跌）
+### Trend Analysis
+- **支持**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
+- **Moving Averages**: SMA (simple), EMA (exponential)
+- **Golden Cross**: Short MA crosses above long MA (bullish)
+- **Death Cross**: Short MA crosses below long MA (bearish)
 
-### 技术指标
-- **相对强弱指数（RSI）**：动量振荡指标（0-100）
-- **MACD**：Moving Average Convergence Divergence
-- **布林带**：围绕移动平均线形成的波动区间
-- **成交量指标**：On-Balance Volume、成交量加权平均价
-- **斐波那契回撤**：基于比率的支撑/阻力水平
+### Technical Indicators
+- **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
+- **MACD**: Moving Average Convergence Divergence
+- **Bollinger Bands**: Volatility bands around moving average
+- **Volume Indicators**: On-Balance Volume, volume-weighted average price
+- **Fibonacci Retracement**: 支持/resistance levels based on ratios
 
-### 图表形态
-- **反转形态**：头肩形、双顶/双底
-- **延续形态**：三角形、旗形、三角旗形
-- **突破**：价格突破既定区间
+### Chart Patterns
+- **Reversal Patterns**: Head 和 shoulders, double top/bottom
+- **Continuation Patterns**: Triangles, flags, pennants
+- **Breakouts**: Price moves beyond defined range
 
-## 税务考量
+## Tax Considerations
 
-### 投资税
-- **资本利得（Capital Gains）**：出售投资获得的利润
-  - 短期：持有 <1 年，按普通收入纳税
-  - 长期：持有 >1 年，适用优惠税率（0%、15%、20%）
-- **股息**：
-  - 合格股息（Qualified）：适用较低税率
-  - 普通股息（Ordinary）：按收入纳税
-- **利息收入**：通常按普通收入纳税
-- **税损收割**：卖出亏损资产以抵消收益
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
+  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
+- **Dividends**: 
+  - Qualified: Lower tax rates
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-### 税收优惠账户
-- **Traditional IRA/401(k)**：现在享受税前扣除，未来提取时纳税
-- **Roth IRA/401(k)**：现在不能扣除，未来提取免税
-- **HSA（Health Savings Account）**：医疗支出享有三重税务优势
-- **529 Plans**：享有税收优惠的教育储蓄计划
+### Tax-Advantaged Accounts
+- **Traditional IRA/401(k)**: Tax deduction now, taxed later
+- **Roth IRA/401(k)**: No deduction now, tax-free later
+- **HSA (Health Savings Account)**: Triple tax advantage 为 medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-### 税务效率策略
-- 资产定位（哪些账户持有哪些投资）
-- 长期持有投资，以获得优惠税率
-- 使用税务效率更高的基金（ETF、指数基金）
-- 对应税账户考虑市政债券
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term 为 preferential rates
+- Use tax-efficient funds (ETFs, index funds)
+- Consider municipal bonds 为 taxable accounts
 
-## 经济因素
+## Economic Factors
 
-### 宏观经济指标
-- **GDP**：国内生产总值，反映经济增长
-- **通货膨胀（Inflation）**：CPI、PCE、购买力侵蚀
-- **失业（Unemployment）**：劳动力市场健康状况
-- **利率（Interest Rates）**：美联储政策、借贷成本
-- **消费者信心（Consumer Confidence）**：消费信心
-- **制造业数据（Manufacturing Data）**：PMI、工业生产
+### Macroeconomic Indicators
+- **GDP**: Gross Domestic Product, economic growth
+- **Inflation**: CPI, PCE, purchasing power erosion
+- **Unemployment**: Labor market health
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing 数据**: PMI, industrial production
 
-### 美联储与货币政策
-- **双重使命**：实现最大就业和价格稳定（2% 通胀）
-- **工具**：联邦基金利率、公开市场操作、量化宽松
-- **影响**：利率会影响债券、股票、货币和整体经济
+### Federal Reserve 和 Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
+- **Tools**: Federal funds rate, open market operations, quantitative easing
+- **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-### 商业周期
-- **扩张**：经济增长、就业上升
-- **高峰**：增长达到峰值，可能出现过热
-- **收缩/衰退**：经济下滑、失业上升
-- **谷底**：触底后开始复苏
+### 商业 Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-## 行为金融学
+## Behavioral 金融
 
-### 常见偏差
-- **损失厌恶**：损失带来的痛苦大于同等收益带来的快乐
-- **确认偏误**：寻找能够印证既有信念的信息
-- **过度自信**：高估自己的知识和能力
-- **锚定效应**：过度依赖最初获得的信息
-- **从众心理**：跟随群体行为
-- **近因偏差**：过度看重近期事件
-- **禀赋效应**：对自己拥有的东西估值更高
-- **沉没成本谬误**：基于过去投入而非未来前景继续坚持
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
+- **Overconfidence**: Overestimate knowledge 和 abilities
+- **Anchoring**: Rely too heavily on first piece 的 information
+- **Herd Mentality**: Follow crowd behavior
+- **Recency Bias**: overweight recent 事件
+- **Endowment Effect**: Value owned items more highly
+- **Sunk Cost Fallacy**: Continue based on past investment, not 未来 prospects
 
-### 情绪化投资的陷阱
-- 在下跌时恐慌性抛售
-- 因 FOMO（Fear Of Missing Out）在高位追涨
-- 交易过于频繁
-- 追逐过去的业绩
-- 试图择时市场（长期持续做到几乎不可能）
+### Emotional 投资 Pitfalls
+- Panic selling during downturns
+- FOMO (Fear 的 Missing Out) buying at tops
+- Trading too frequently
+- Chasing past 性能
+- Timing 这 market (nearly impossible consistently)
 
 ### 最佳实践
-- 制定并坚持投资计划
-- 自动化定期投入
-- 避免过于频繁地查看投资组合
-- 关注可控因素（储蓄率、成本、资产配置）
-- 保持长期视角
+- Create 和 stick to investment plan
+- Automate contributions
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-## 当前投资趋势
+## Current Investment Trends
 
-### 主题投资
-- **科技**：AI、云计算、网络安全、半导体
-- **医疗保健**：生物技术、基因组学、远程医疗
-- **清洁能源**：太阳能、风能、电动车、电池技术
-- **金融科技**：数字支付、区块链、智能投顾
-- **电子商务**：在线零售、物流、数字广告
+### Thematic 投资
+- **技术**: AI, cloud 计算, cybersecurity, semiconductors
+- **医疗**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery 技术
+- **Fintech**: Digital payments, blockchain, robo-advisors
+- **E-commerce**: Online retail, logistics, digital advertising
 
-### 人口趋势
-- 人口老龄化（医疗保健、退休服务）
-- 千禧一代 / Z 世代偏好（可持续性、科技）
-- 城市化（房地产、基础设施）
-- 新兴市场中产阶级增长
+### Demographic Trends
+- Aging population (医疗, retirement services)
+- Millennial/Gen Z preferences (可持续性, 技术)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-### 可持续投资
-- **ESG 整合**：环境、社会和治理因素
-- **影响力投资**：在获取回报的同时产生积极的社会/环境影响
-- **绿色债券**：为环保项目融资
-- **碳信用**：交易排放配额
+### Sustainable 投资
+- **ESG Integration**: 环境, social, governance factors
+- **Impact 投资**: Generate positive social/环境 impact
+- **Green Bonds**: Fund 环境 projects
+- **Carbon Credits**: Trade emissions allowances
 
-## 财务顾问与服务
+## Financial Advisors 和 Services
 
-### 顾问类型
-- **Registered Investment Advisor (RIA)**：受信义义务约束，按收费提供服务
-- **Broker-Dealer**：遵循适当性标准，以佣金为基础
-- **Robo-Advisors**：自动化投资，成本更低
-- **Financial Planner**：提供综合规划，可能仅收取费用，也可能收取佣金
+### Types 的 Advisors
+- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
+- **Broker-Dealer**: Suitability standard, commission-based
+- **Robo-Advisors**: Automated 投资, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-### 收费模式
-- **Fee-Only**：按资产比例、按小时或固定费用收费（无佣金）
-- **Commission**：根据产品销售收取佣金
-- **Fee-Based**：费用与佣金结合
-- **Assets Under Management (AUM)**：通常每年为 0.5%-1.5%
+### Compensation Models
+- **Fee-Only**: Percentage 的 assets, hourly, flat fee (no commissions)
+- **Commission**: Paid on product sales
+- **Fee-Based**: Combination 的 fees 和 commissions
+- **Assets Under 管理 (AUM)**: Typically 0.5%-1.5% annually
 
-### 如何选择顾问
-- 核实资质（CFP、CFA、CPA）
-- 了解收费结构
-- 查看监管记录（SEC、FINRA BrokerCheck）
-- 确认其承担信义义务
-- 评估沟通风格和合作契合度
+### Choosing an Advisor
+- Verify credentials (CFP, CFA, CPA)
+- Understand compensation structure
+- Check regulatory 历史 (SEC, FINRA BrokerCheck)
+- Ensure fiduciary duty
+- Assess 沟通 style 和 compatibility

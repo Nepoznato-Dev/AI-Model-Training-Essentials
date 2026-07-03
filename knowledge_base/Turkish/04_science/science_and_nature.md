@@ -1,41 +1,48 @@
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: science_and_nature.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
 # Bilim ve Doğa
 
-## Fizik
+## Physics
 
-Fizik, maddeyi, enerjiyi ve evrenin temel kuvvetlerini inceleyen doğa bilimidir. Dört temel kuvvet; kütle çekimi, elektromanyetizma, güçlü nükleer kuvvet ve zayıf nükleer kuvvettir. Kütle çekimi, bu dört kuvvetin en zayıfı olmasına rağmen sonsuz menzile sahiptir ve kütlesi olan tüm nesneleri etkiler. Newton'un kütle çekim yasası, her nesnenin diğer her nesneyi kütleleriyle doğru, aralarındaki uzaklığın karesiyle ters orantılı bir kuvvetle çektiğini söyler.
+Physics is bu natural Bilim that studies matter, energy, ve bu fundamental forces içinde bu universe. bu four fundamental forces are gravity, electromagnetism, bu strong nuclear force, ve bu weak nuclear force. Gravity is bu weakest içinde bu four forces but has infinite range ve affects all objects ile mass. Newton's Hukuk içinde gravity states that every object attracts every other object ile a force proportional to their masses ve inversely proportional to bu square içinde bu distance between them.
 
-Einstein'ın genel görelilik kuramı, kütle çekimini kütle ve enerjinin neden olduğu uzay-zaman eğriliği olarak açıklar. Einstein'ın özel görelilik kuramı ise ışık hızının tüm eylemsiz referans çerçevelerinde sabit olduğunu ve kütle ile enerjinin eşdeğer olduğunu ortaya koymuştur; bu ilişki E = mc squared ifadesiyle gösterilir.
+Einstein's theory içinde general relativity describes gravity as a curvature içinde spacetime caused by mass ve energy. Einstein's theory içinde special relativity established that bu speed içinde light is constant içinde all inertial frames içinde Referans ve that mass ve energy are equivalent, expressed as E = mc squared.
 
-## Atomlar ve Madde
+## Atoms ve Matter
 
-Atom, bir elementin kimyasal özelliklerini koruyan en küçük birimidir. Atomlar, proton ve nötron içeren bir çekirdekten ve bunun çevresindeki elektronlardan oluşur. Bir atomdaki proton sayısı, onun hangi element olduğunu belirler; buna atom numarası denir. Elementler, atom numarasına göre periyodik tabloda düzenlenir. Bilinen 118 element vardır. Hidrojen, evrendeki en hafif ve en bol bulunan elementtir. Karbon, dört kimyasal bağ kurabilme yeteneği nedeniyle bilinen tüm yaşamın temelidir.
+An atom is bu smallest unit içinde an element that retains bu chemical properties içinde that element. Atoms consist içinde a nucleus containing protons ve neutrons, surrounded by electrons. bu number içinde protons içinde an atom determines which element it is, called bu atomic number. Elements are organized içinde bu periodic table by atomic number. There are 118 known elements. Hydrogen is bu lightest ve most abundant element içinde bu universe. Carbon is bu basis içinde all known life due to its ability to form four chemical bonds.
 
-Madde yaygın olarak dört halde bulunur: katı, sıvı, gaz ve plazma. Katıda atomlar sıkı biçimde paketlenmiştir. Sıvıda atomlar akabilir ancak birbirine yakın kalır. Gazda atomlar serbestçe hareket eder. Plazma iyonlaşmış bir gazdır ve yıldızlarda bulunduğu için evrende maddenin en yaygın halidir.
+Matter exists içinde four common states: solid, liquid, gas, ve plasma. içinde a solid, atoms are tightly packed. içinde a liquid, atoms can flow but remain close. içinde a gas, atoms move freely. Plasma is an ionized gas ve is bu most common state içinde matter içinde bu universe, found içinde stars.
 
-## Kimya
+## Chemistry
 
-Kimya, maddeyi ve onun geçirdiği değişimleri inceleyen bilim dalıdır. Kimyasal tepkimeler, kimyasal bağların kırılmasını ve oluşmasını içerir. Asit, bir çözeltide hidrojen iyonu (proton) veren maddedir. Baz, hidrojen iyonu kabul eden maddedir. pH ölçeği, bir çözeltinin ne kadar asidik veya bazik olduğunu ölçer; 0'dan (en asidik) 14'e (en bazik) kadar uzanır ve 7 nötrdür. Suyun pH'ı 7'dir.
+Chemistry is bu study içinde matter ve bu changes it undergoes. Chemical reactions involve bu breaking ve forming içinde chemical bonds. An acid is a substance that donates hydrogen ions (protons) içinde a solution. A base is a substance that accepts hydrogen ions. bu pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), ile 7 being neutral. Water has a pH içinde 7.
 
-Fotosentez, bitkilerin, alglerin ve bazı bakterilerin ışık enerjisini, genellikle Güneş'ten gelen enerjiyi, glikozda depolanan kimyasal enerjiye dönüştürdüğü süreçtir. Denklem şöyledir: carbon dioxide + water + light energy → glucose + oxygen. Fotosentez, oksijen ürettiği ve çoğu besin zincirinin temelini oluşturduğu için Dünya'daki yaşam açısından zorunludur.
+Photosynthesis is bu process by which plants, algae, ve some bacteria convert light energy, usually from bu Sun, into chemical energy stored içinde glucose. bu equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential için life on Earth as it produces oxygen ve forms bu base içinde most Yiyecek chains.
 
-## Biyoloji
+## Biology
 
-Biyoloji, canlı organizmaları inceleyen bilimdir. Tüm yaşam belirli ortak özellikler taşır: örgütlüdür, uyaranlara tepki verir, büyür, ürer ve enerji kullanır. DNA (deoxyribonucleic acid), canlı organizmaların genetik bilgisini taşır. DNA; adenin, timin, sitozin ve guanin olmak üzere dört nükleotid bazından oluşan çift sarmallı bir yapıdır. Hücreler yaşamın temel yapısal birimidir. İki ana tür vardır: prokaryotik hücreler (bakteriler gibi, zarla çevrili çekirdeği olmayanlar) ve ökaryotik hücreler (bitki ve hayvanlar gibi çekirdeği olanlar).
+Biology is bu study içinde living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, ve uses energy. DNA (deoxyribonucleic acid) carries bu genetic information içinde living organisms. DNA is a double helix made içinde four nucleotide bases: adenine, thymine, cytosine, ve guanine. Cells are bu basic structural unit içinde life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) ve eukaryotic cells (ile a nucleus, like plants ve animals).
 
-Evrim, biyolojik popülasyonların kalıtsal özelliklerinde ardışık nesiller boyunca meydana gelen değişimdir. Charles Darwin, avantajlı özelliklere sahip bireylerin hayatta kalma ve üreme olasılığının daha yüksek olduğunu söyleyen doğal seçilim kuramını ortaya koymuştur. Doğal seçilim yoluyla evrim kuramı, modern biyolojinin birleştirici çerçevesidir.
+Evolution is bu change içinde bu heritable characteristics içinde biological populations over successive generations. Charles Darwin proposed bu theory içinde natural selection, which states that individuals ile advantageous traits are more likely to survive ve reproduce. bu theory içinde evolution by natural selection is bu unifying framework içinde modern biology.
 
-## Elektrik ve Manyetizma
+## Electricity ve Magnetism
 
-Elektrik, elektrik yükünün, genellikle elektronların, akışıdır. Voltaj (volt cinsinden ölçülür), iki nokta arasındaki elektriksel potansiyel farkıdır. Akım (amper cinsinden ölçülür), elektrik yükünün akış hızıdır. Direnç (ohm cinsinden ölçülür), akımın akışına karşı gösterilen dirençtir. Ohm yasası, voltajın akım ile direncin çarpımına eşit olduğunu söyler (V = IR). Manyetizma, hareket eden elektrik yüklerinin ürettiği bir kuvvettir. Elektrik ve manyetik alanlar aynı olgunun iki yönüdür: elektromanyetizma.
+Electricity is bu flow içinde electric charge, usually electrons. Voltage (measured içinde volts) is bu electrical potential difference between two points. Current (measured içinde amperes) is bu rate içinde flow içinde electric charge. Resistance (measured içinde ohms) is opposition to bu flow içinde current. Ohm's Hukuk states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric ve magnetic fields are two aspects içinde bu same phenomenon: electromagnetism.
 
-## Evren ve Kozmoloji
+## bu Universe ve Cosmology
 
-Evren yaklaşık 13,8 milyar yaşındadır ve Big Bang ile başlamıştır. Evren yaklaşık 2 trilyon galaksi içerir; her biri milyarlardan trilyonlara kadar yıldız barındırır. Samanyolu, 100 ile 400 milyar arasında yıldız içeren sarmal bir galaksi olan kendi gökadamızdır. Güneşimize en yakın yıldız, yaklaşık 4,24 ışık yılı uzaklıktaki Proxima Centauri'dir. Karanlık madde ve karanlık enerji birlikte evrenin toplam içeriğinin yaklaşık %95'ini oluşturur, ancak doğaları henüz tam olarak anlaşılmış değildir.
+bu universe is approximately 13.8 billion years old, beginning ile bu Big Bang. bu universe contains approximately 2 trillion galaxies, each containing billions to trillions içinde stars. bu Milky Way is our home galaxy, a spiral galaxy containing between 100 ve 400 billion stars. bu nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter ve dark energy together make up about 95% içinde bu universe's total content, though their Doğa is not fully understood.
 
-## Jeoloji
+## Geology
 
-Dünya katmanlardan oluşur: iç çekirdek (katı demir ve nikel), dış çekirdek (sıvı demir ve nikel), manto (yarı katı kayaç) ve kabuk (katı kayaç). Tektonik plakalar, Dünya'nın kabuğu ve üst mantosunun zaman içinde yavaşça hareket eden büyük parçalarıdır. Depremler, tektonik plakalar birbirine sürtündüğünde veya kaydığında meydana gelir. Volkanlar, Dünya'nın iç kısmındaki magmanın yüzeye ulaştığı yerlerde oluşur. Kaya döngüsü, kayaçların milyonlarca yıl boyunca nasıl oluştuğunu, parçalandığını ve yeniden şekillendiğini açıklar.
+Earth is composed içinde layers: bu inner core (solid iron ve nickel), outer core (liquid iron ve nickel), mantle (semi-solid rock), ve crust (solid rock). bu tectonic plates are large pieces içinde Earth's crust ve upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches bu surface. bu rock cycle describes how rocks are formed, broken down, ve reformed over millions içinde years.
 
-## Enerji
+## Energy
 
-Enerji birçok biçimde bulunur: kinetik (hareket enerjisi), potansiyel (depolanmış enerji), termal (ısı), kimyasal, elektriksel ve nükleer. Enerjinin korunumu yasası, enerjinin yaratılamayacağını veya yok edilemeyeceğini, yalnızca bir biçimden diğerine dönüşebileceğini söyler. Yenilenebilir enerji kaynakları arasında güneş, rüzgâr, hidroelektrik, jeotermal ve gelgit enerjisi bulunur. Fosil yakıtlar (kömür, petrol ve doğal gaz), eski organizmaların kalıntılarından oluşan yenilenemez enerji kaynaklarıdır.
+Energy exists içinde many forms: kinetic (energy içinde motion), potential (stored energy), thermal (heat), chemical, electrical, ve nuclear. bu Hukuk içinde conservation içinde energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, ve tidal energy. Fossil fuels (coal, oil, ve natural gas) are non-renewable energy sources formed from bu remains içinde ancient organisms.

@@ -1,168 +1,175 @@
-# Fundamentos de Redes
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: networking_basics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Uma referência prática para desenvolvedores e administradores de sistemas — conceitos centrais, protocolos, comandos e troubleshooting.
+# Networking Básico
+
+A practical Referência para developers e sysadmins — core concepts, protocols, Comandos, e troubleshooting.
 
 ---
 
-## O Modelo OSI (7 Camadas)
+## o/a OSI Model (7 Layers)
 
-Um framework conceitual para entender a comunicação em rede.
+A conceptual framework para understanding Rede Comunicação.
 
-| Camada | Nome | Função | Protocolos de exemplo |
+| Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
-| 7 | Aplicação | Serviços para o usuário final | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Apresentação | Formatação de dados, criptografia, compressão | TLS, JPEG, ASCII |
-| 5 | Sessão | Gerenciamento de conexão | NetBIOS, RPC |
-| 4 | Transporte | Entrega ponta a ponta, correção de erros, controle de fluxo | TCP, UDP |
-| 3 | Rede | Roteamento, endereçamento | IP, ICMP, OSPF, BGP |
-| 2 | Enlace de Dados | Enquadramento, detecção de erros, endereços MAC | Ethernet, Wi-Fi, PPP |
-| 1 | Física | Transmissão bruta de bits | Cabos Ethernet, fibra óptica, ondas de rádio |
+| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Presentation | Dados formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection Gerenciamento | NetBIOS, RPC |
+| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
+| 3 | Rede | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Dados Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-Na prática, o **modelo TCP/IP** (4 camadas: Link, Internet, Transport, Application) é mais usado na internet.
+em practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used para o/a internet.
 
 ---
 
-## Endereçamento IP
+## IP Addressing
 
 ### IPv4
-- Endereço de 32 bits, escrito como quatro octetos: `192.168.1.1`
-- Total: ~4,3 bilhões de endereços (mas já esgotados na prática).
+- 32-bit address, written as four octets: `192.168.1.1`
+- Total: ~4.3 billion addresses (but exhausted em practice).
 
 ### IPv6
-- Endereço de 128 bits, escrito em hexadecimal: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ endereços (praticamente infinito).
+- 128-bit address, written em hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Total: 2¹²⁸ addresses (practically infinite).
 
-### Faixas de IP Privado (RFC 1918)
-Estas não são roteáveis na internet; são usadas dentro de redes locais:
+### Private IP Ranges (RFC 1918)
+These are not routable on o/a internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### Notação CIDR
-`192.168.1.0/24` significa que os primeiros 24 bits são o prefixo da rede; os últimos 8 bits são hosts. Ela inclui os endereços `192.168.1.0` a `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means o/a first 24 bits are o/a Rede prefix; o/a last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
 ## DNS (Domain Name System)
 
-Mapeia nomes de domínio (por exemplo, `example.com`) para endereços IP.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-### Tipos de Registro
-| Tipo | Finalidade |
+### Record Types
+| Type | Purpose |
 |------|---------|
-| **A** | Mapeia o domínio para um endereço IPv4 |
-| **AAAA** | Mapeia o domínio para um endereço IPv6 |
-| **CNAME** | Alias para outro nome de domínio |
-| **MX** | Servidor de troca de e-mail |
-| **TXT** | Texto arbitrário (SPF, DKIM, verificação) |
-| **NS** | Nameserver do domínio |
-| **SRV** | Registro de serviço (por exemplo, para SIP) |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
+| **MX** | Mail exchange server |
+| **TXT** | Arbitrary text (SPF, DKIM, verification) |
+| **NS** | Nameserver para o/a domain |
+| **SRV** | Service record (e.g., para SIP) |
 
-### Ferramentas Comuns
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
 host example.com           # Quick lookup
 dig -x 8.8.8.8             # Reverse lookup (IP to name)
 
-Portas e Protocolos
-Portas Bem Conhecidas (0–1023)
-PortaProtocoloServiço
-20, 21TCPFTP
-22TCPSSH
-23TCPTelnet
-25TCPSMTP
-53UDP/TCPDNS
-80TCPHTTP
-110TCPPOP3
-123UDPNTP
-143TCPIMAP
-443TCPHTTPS
-465TCPSMTPS
-587TCPSMTP (submission)
-993TCPIMAPS
-995TCPPOP3S
-3306TCPMySQL
-5432TCPPostgreSQL
-6379TCPRedis
-27017TCPMongoDB
-Verificar portas abertas
+Ports and Protocols
+Well-Known Ports (0–1023)
+Port	Protocol	Service
+20, 21	TCP	FTP
+22	TCP	SSH
+23	TCP	Telnet
+25	TCP	SMTP
+53	UDP/TCP	DNS
+80	TCP	HTTP
+110	TCP	POP3
+123	UDP	NTP
+143	TCP	IMAP
+443	TCP	HTTPS
+465	TCP	SMTPS
+587	TCP	SMTP (submission)
+993	TCP	IMAPS
+995	TCP	POP3S
+3306	TCP	MySQL
+5432	TCP	PostgreSQL
+6379	TCP	Redis
+27017	TCP	MongoDB
+Check open ports
 bash
 ss -tulpn                 # Linux: listen and established sockets
 netstat -an               # Older tool
 lsof -i :8080             # See process using port 8080
 nmap localhost            # Scan local ports
 TCP vs UDP
-CaracterísticaTCPUDP
-ConexãoOrientado à conexão (handshake)Sem conexão
-ConfiabilidadeEntrega garantida, retransmissãoMelhor esforço (pode perder pacotes)
-OrdenaçãoPreserva a ordemSem garantia de ordenação
-Controle de fluxoSim (janela deslizante)Não
-Casos de usoWeb (HTTP), e-mail, SSH, transferência de arquivosDNS, streaming, VoIP, jogos, SNMP
-Tamanho do cabeçalho20–60 bytes8 bytes
-HTTP e HTTPS
-Métodos HTTP
-GET: Recupera um recurso (idempotente, seguro).
+Feature	TCP	UDP
+Connection	Connection-oriented (handshake)	Connectionless
+Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
+Ordering	Preserves order	No ordering guarantee
+Flow control	Yes (sliding window)	No
+Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
+Header size	20–60 bytes	8 bytes
+HTTP and HTTPS
+HTTP Methods
+GET: Retrieve a resource (idempotent, safe).
 
-POST: Envia dados (não idempotente).
+POST: Submit data (not idempotent).
 
-PUT: Atualiza/substitui um recurso (idempotente).
+PUT: Update/replace a resource (idempotent).
 
-PATCH: Atualização parcial.
+PATCH: Partial update.
 
-DELETE: Remove um recurso (idempotente).
+DELETE: Remove a resource (idempotent).
 
-Códigos de Status
-1xx: Informativo (100 Continue).
+Status Codes
+1xx: Informational (100 Continue).
 
-2xx: Sucesso (200 OK, 201 Created, 204 No Content).
+2xx: Success (200 OK, 201 Created, 204 No Content).
 
-3xx: Redirecionamento (301 Moved Permanently, 302 Found, 304 Not Modified).
+3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
 
-4xx: Erro do cliente (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
 
-5xx: Erro do servidor (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
 
-Cabeçalhos
-Content-Type: tipo de mídia (application/json, text/html).
+Headers
+Content-Type: media type (application/json, text/html).
 
-Authorization: credenciais (por exemplo, Bearer <token>).
+Authorization: credentials (e.g., Bearer <token>).
 
-Cache-Control: política de cache.
+Cache-Control: caching policy.
 
-Cabeçalhos CORS: Access-Control-Allow-Origin etc.
+CORS headers: Access-Control-Allow-Origin, etc.
 
 TLS/SSL
-Criptografa o tráfego HTTP (HTTPS = HTTP sobre TLS).
+Encrypts HTTP traffic (HTTPS = HTTP over TLS).
 
-Certificados de Certificate Authorities (CAs) autenticam o servidor.
+Certificates from Certificate Authorities (CAs) authenticate the server.
 
-Verifique a cadeia de certificados e o hostname no lado do cliente.
+Verify certificate chain and hostname on the client side.
 
-Firewalls e NAT
+Firewalls and NAT
 Firewall
-Filtra o tráfego com base em regras (IP de origem, IP de destino, porta, protocolo).
+Filters traffic based on rules (source IP, dest IP, port, protocol).
 
-Firewalls stateful acompanham os estados das conexões.
+Stateful firewalls track connection states.
 
 NAT (Network Address Translation)
-Traduz IPs privados em um IP público para acesso à internet.
+Translates private IPs to a public IP for internet access.
 
-Port forwarding: mapeia uma porta pública para um host/porta interno.
+Port forwarding: maps a public port to an internal host/port.
 
-Comandos Comuns de Rede
-Testes de Conectividade
+Common Networking Commands
+Connectivity Tests
 bash
 ping google.com            # ICMP echo request
 ping -c 4 8.8.8.8          # ping 4 times
 traceroute google.com      # Trace the route (Linux)
 tracert google.com         # Windows version
-Roteamento
+Routing
 bash
 ip route show              # Linux: routing table
 route -n                   # Older Linux
 netstat -r                 # Windows/Mac
-Interfaces de Rede
+Network Interfaces
 bash
 ip addr show               # List interfaces and IPs
 ifconfig                   # Older command
@@ -171,7 +178,7 @@ bash
 dig example.com
 nslookup example.com
 host example.com
-Conectividade com uma Porta
+Connectivity to a Port
 bash
 nc -zv google.com 443      # Netcat: check if port 443 is open
 telnet google.com 443      # Telnet to port
@@ -180,26 +187,26 @@ Firewall (Linux iptables/nftables)
 bash
 sudo ufw status            # Ubuntu: simple firewall
 sudo iptables -L -n        # List rules
-Estatísticas de Rede
+Network Statistics
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Sub-redes (Referência Rápida)
-CIDRMáscara de redeNúmero de endereçosHosts utilizáveis
-/32255.255.255.25511
-/30255.255.255.25242
-/29255.255.255.24886
-/28255.255.255.2401614
-/27255.255.255.2243230
-/26255.255.255.1926462
-/25255.255.255.128128126
-/24255.255.255.0256254
-/23255.255.254.0512510
-/22255.255.252.01,0241,022
-/16255.255.0.065,53665,534
-/8255.0.0.016,777,21616,777,214
-Balanceamento de Carga e Proxies Reversos
-Nginx como Proxy Reverso
+Subnetting (Quick Reference)
+CIDR	Netmask	Number of addresses	Usable hosts
+/32	255.255.255.255	1	1
+/30	255.255.255.252	4	2
+/29	255.255.255.248	8	6
+/28	255.255.255.240	16	14
+/27	255.255.255.224	32	30
+/26	255.255.255.192	64	62
+/25	255.255.255.128	128	126
+/24	255.255.255.0	256	254
+/23	255.255.254.0	512	510
+/22	255.255.252.0	1,024	1,022
+/16	255.255.0.0	65,536	65,534
+/8	255.0.0.0	16,777,216	16,777,214
+Load Balancing and Reverse Proxies
+Nginx as Reverse Proxy
 nginx
 server {
     listen 80;
@@ -210,86 +217,86 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-Algoritmos de Balanceamento de Carga
+Load Balancing Algorithms
 Round-robin
 
 Least connections
 
-IP hash (afinidade de sessão)
+IP hash (session stickiness)
 
 Weighted round-robin
 
-Ferramentas
+Tools
 Nginx, HAProxy (software)
 
 AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
 
-Checklist de Troubleshooting
-O link físico está ativo? (Verifique cabos, conexão Wi-Fi).
+Troubleshooting Checklist
+Is the physical link up? (Check cables, Wi-Fi connection).
 
-Você consegue pingar o gateway? (por exemplo, ping 192.168.1.1).
+Can you ping the gateway? (e.g., ping 192.168.1.1).
 
-Você consegue pingar um IP externo? (por exemplo, 8.8.8.8).
+Can you ping an external IP? (e.g., 8.8.8.8).
 
-Você consegue resolver um domínio? (dig google.com).
+Can you resolve a domain? (dig google.com).
 
-A aplicação está escutando na porta esperada? (ss -tulpn | grep 8080).
+Is the application listening on the expected port? (ss -tulpn | grep 8080).
 
-O firewall está bloqueando a porta? (Verifique iptables/ufw ou grupos de segurança na nuvem).
+Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
 
-Há erros nos logs da aplicação?
+Are there any errors in the application logs?
 
-O certificado TLS é válido e confiável? (openssl s_client -connect example.com:443).
+Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
 
-texto
+text
 
 ---
 
-## Arquivo 6: `devops_sysadmin.md`
+## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps e Administração de Sistemas
+# DevOps e System Administration
 
-Um guia prático para gerenciar servidores, automatizar operações e manter uma infraestrutura confiável.
+A practical Guia to managing servers, automating operations, e maintaining reliable infrastructure.
 
 ---
 
 ## SSH (Secure Shell)
 
-### Geração de Chaves
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
-Copiar chave pública para o servidor
+Copy Public Key to Server
 bash
 ssh-copy-id user@host
 # Manual alternative:
 cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
-Configuração do SSH (~/.ssh/config)
+SSH Config (~/.ssh/config)
 ssh-config
 Host myserver
     HostName 192.168.1.10
     User ubuntu
     IdentityFile ~/.ssh/mykey
     Port 2222
-Comandos SSH comuns
+Common SSH Commands
 bash
 ssh user@host                    # Connect
 ssh -J jumpuser@jumphost user@target   # Proxy jump
 scp file.txt user@host:/path/     # Copy file to remote
 scp user@host:/path/file.txt .    # Copy from remote
 rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
-Protegendo o SSH
+Hardening SSH
 Disable root login: PermitRootLogin no
 
-Use only key-based auth: PasswordAuthentication no
+Use key-based auth only: PasswordAuthentication no
 
 Change default port (optional, security through obscurity).
 
 Enable AllowUsers or AllowGroups to restrict access.
 
-systemd (Gerenciamento de Serviços no Linux)
-Comandos comuns
+Systemd (Linux Service Management)
+Common Commands
 bash
 systemctl status nginx           # Check service status
 systemctl start nginx            # Start service
@@ -300,7 +307,7 @@ systemctl enable nginx           # Start on boot
 systemctl disable nginx
 systemctl list-units --type=service --all   # List all services
 systemctl daemon-reload          # Reload unit files after editing
-Criando uma unidade de serviço systemd
+Creating a systemd Service Unit
 Create /etc/systemd/system/myapp.service:
 
 ini
@@ -325,40 +332,40 @@ bash
 sudo systemctl daemon-reload
 sudo systemctl enable myapp
 sudo systemctl start myapp
-journalctl (Ver logs)
+Journalctl (View Logs)
 bash
 journalctl -u myapp              # Logs for service
 journalctl -f                    # Follow (tail) logs
 journalctl --since "1 hour ago"
 journalctl _PID=1234             # Filter by process ID
-Estratégias de logging
-Logging estruturado
+Logging Strategies
+Structured Logging
 Use JSON format to make logs machine-parseable:
 
 python
 import structlog
 logger = structlog.get_logger()
 logger.info("user_login", user_id=123, ip="192.168.1.1")
-Níveis de log
-DEBUG: diagnóstico detalhado.
+Log Levels
+DEBUG: detailed diagnostic.
 
-INFO: eventos gerais (início, parada, transações normais).
+INFO: general events (start, stop, normal transactions).
 
-WARN: inesperado, mas não fatal.
+WARN: unexpected but not fatal.
 
-ERROR: erro que impede uma operação específica.
+ERROR: error that prevents a specific operation.
 
-FATAL/CRITICAL: desligamento do sistema.
+FATAL/CRITICAL: system shutdown.
 
-Agregação de logs
-ELK Stack (Elasticsearch, Logstash, Kibana) ou Elastic Cloud.
+Log Aggregation
+ELK Stack (Elasticsearch, Logstash, Kibana) or Elastic Cloud.
 
-Loki + Grafana (alternativa leve).
+Loki + Grafana (lightweight alternative).
 
 Datadog, Splunk, Sumo Logic (SaaS).
 
-Rotação de logs (logrotate)
-Evita que os logs encham os discos. Configure /etc/logrotate.d/myapp:
+Log Rotation (logrotate)
+Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
 
 logrotate
 /var/log/myapp/*.log {
@@ -370,48 +377,48 @@ logrotate
     notifempty
     create 0640 myuser mygroup
 }
-Monitoramento e Alertas
-Métricas para monitorar
-Sistema: CPU, RAM, uso de disco, load average, I/O de rede.
+Monitoring and Alerting
+Metrics to Monitor
+System: CPU, RAM, disk usage, load average, network I/O.
 
-Aplicação: taxa de requisições, latência (p50, p95, p99), taxa de erros, sessões ativas.
+Application: request rate, latency (p50, p95, p99), error rate, active sessions.
 
-Banco de dados: contagem de consultas, consultas lentas, uso do pool de conexões.
+Database: query count, slow queries, connection pool usage.
 
-Negócio: cadastros de usuários, taxa de conversão, receita.
+Business: user signups, conversion rate, revenue.
 
-Ferramentas
-Prometheus + Grafana: Stack open-source padrão.
+Tools
+Prometheus + Grafana: Standard open-source stack.
 
-Node Exporter para métricas de sistema.
+Node Exporter for system metrics.
 
-Blackbox Exporter para disponibilidade de endpoints.
+Blackbox Exporter for endpoint availability.
 
-Alertmanager para roteamento de alertas.
+Alertmanager for alert routing.
 
-Nativo de nuvem: AWS CloudWatch, Azure Monitor, GCP Monitoring.
+Cloud native: AWS CloudWatch, Azure Monitor, GCP Monitoring.
 
-Monitoramento de Uptime
+Uptime Monitoring
 Pingdom, Statuspage, Better Uptime, Uptime Kuma (self-hosted).
 
-Health checks: exponha um endpoint /health que retorne 200 se o serviço estiver saudável.
+Health checks: expose a /health endpoint that returns 200 if the service is healthy.
 
-Estratégias de Backup
-A Regra 3-2-1
-3 cópias dos dados.
+Backup Strategies
+The 3-2-1 Rule
+3 copies of data.
 
-2 tipos diferentes de mídia (por exemplo, SSD + fita, ou local + cloud).
+2 different media types (e.g., SSD + tape, or local + cloud).
 
-1 cópia off-site (por exemplo, cloud ou data center remoto).
+1 copy off-site (e.g., cloud or remote data centre).
 
-Tipos de Backup
-Full backup: copiar tudo (lento, ocupa muito espaço).
+Backup Types
+Full backup: copy everything (slow, space-heavy).
 
-Incremental backup: copiar apenas alterações desde o último full ou incremental (rápido, restauração complexa).
+Incremental backup: copy only changes since last full or incremental (fast, complex restore).
 
-Differential backup: copiar alterações desde o último full (meio-termo).
+Differential backup: copy changes since last full (middle ground).
 
-Backups de Banco de Dados
+Database Backups
 bash
 # PostgreSQL
 pg_dump dbname > backup.sql
@@ -423,7 +430,7 @@ mysqldump -u root -p dbname > backup.sql
 # Restore
 psql dbname < backup.sql
 mysql -u root -p dbname < backup.sql
-Backups de Arquivos
+File Backups
 bash
 # Tar archive
 tar -czf backup.tar.gz /var/lib/data
@@ -433,21 +440,21 @@ rsync -avz /local/data/ user@backup-server:/backup/data/
 
 # Cloud CLI (e.g., AWS S3)
 aws s3 sync /local/data s3://my-bucket/backup/
-Agendamento automatizado de backups (cron)
+Automated Backup Scheduling (cron)
 cron
 # Run daily at 2am
 0 2 * * * /usr/local/bin/backup_script.sh
-Cron e tarefas agendadas
-Sintaxe do Cron
+Cron and Scheduled Jobs
+Cron Syntax
 text
 * * * * * command
 │ │ │ │ │
-│ │ │ │ └─ Dia da semana (0-7, 0=Dom)
-│ │ │ └─── Mês (1-12)
-│ │ └───── Dia do mês (1-31)
-│ └─────── Hora (0-23)
-└───────── Minuto (0-59)
-Exemplos
+│ │ │ │ └─ Day of week (0-7, 0=Sun)
+│ │ │ └─── Month (1-12)
+│ │ └───── Day of month (1-31)
+│ └─────── Hour (0-23)
+└───────── Minute (0-59)
+Examples
 cron
 # Every 5 minutes
 */5 * * * * /path/to/script
@@ -460,15 +467,15 @@ cron
 
 # Every hour
 0 * * * * /path/to/script
-Gerenciando o Cron
+Managing Cron
 bash
 crontab -l          # List current user's cron jobs
 crontab -e          # Edit
 crontab -r          # Remove all
 Anacron
-Usado para sistemas que não ficam ligados 24/7 (por exemplo, laptops), garantindo que os jobs sejam executados eventualmente.
+Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
 
-Gerenciamento de Pacotes e Atualizações
+Package Management and Updates
 Debian/Ubuntu (apt)
 bash
 sudo apt update                # Update package list
@@ -482,28 +489,28 @@ sudo dnf check-update
 sudo dnf update
 sudo dnf install git nginx
 sudo dnf remove git
-Atualizações de Segurança
+Security Updates
 Enable unattended-upgrades on Ubuntu for security patches:
 
 bash
 sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
-Docker em Produção
-Boas Práticas
-Use tags específicas de imagem (python:3.12-slim), não latest.
+Docker in Production
+Best Practices
+Use specific image tags (python:3.12-slim) not latest.
 
-Execute containers como usuário não root.
+Run containers as non-root user.
 
-Escaneie imagens em busca de vulnerabilidades (docker scan, trivy).
+Scan images for vulnerabilities (docker scan, trivy).
 
-Defina limites de recursos (--memory, --cpus).
+Set resource limits (--memory, --cpus).
 
-Use segredos (via Docker secrets ou variáveis de ambiente com cuidado).
+Use secrets (via Docker secrets or environment with care).
 
-Mantenha as imagens pequenas: multi-stage builds, base alpine.
+Keep images small: multi-stage builds, alpine base.
 
-Docker Compose em Produção
-Defina limites de recursos em docker-compose.yml:
+Docker Compose in Production
+Set resource limits in docker-compose.yml:
 
 yaml
 services:
@@ -514,30 +521,30 @@ services:
         limits:
           memory: 512M
           cpus: '0.5'
-Fundamentos de CI/CD
-Etapas do Pipeline
-Build: compilar o código, instalar dependências.
+CI/CD Basics
+Pipeline Stages
+Build: Compile code, install dependencies.
 
-Test: executar verificações unitárias, de integração e lint.
+Test: Run unit, integration, and lint checks.
 
-Containerise: construir a imagem Docker.
+Containerise: Build Docker image.
 
-Push: enviar a imagem para o container registry.
+Push: Push image to container registry.
 
-Deploy: atualizar o ambiente de staging/produção.
+Deploy: Update staging/production environment.
 
-Ferramentas
-GitHub Actions: integrado ao GitHub.
+Tools
+GitHub Actions: Integrated with GitHub.
 
-GitLab CI: integrado ao GitLab.
+GitLab CI: Built into GitLab.
 
-Jenkins: tradicional, altamente configurável.
+Jenkins: Traditional, highly configurable.
 
-CircleCI, Travis CI: opções populares de terceiros.
+CircleCI, Travis CI: Popular third-party.
 
-ArgoCD: GitOps para Kubernetes.
+ArgoCD: GitOps for Kubernetes.
 
-Exemplo de GitHub Action (simples):
+Example GitHub Action (simple):
 yaml
 name: CI
 on: push
@@ -551,32 +558,32 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: pytest
-Ajuste e Troubleshooting do Sistema
-Verificar Espaço em Disco
+System Tuning and Troubleshooting
+Check Disk Space
 bash
 df -h                      # Human-readable disk usage
 du -sh /* | sort -h        # Size of top-level directories
-Verificar Uso de Memória
+Check Memory Usage
 bash
 free -m                    # Memory in MB
 vmstat 1 10                # Virtual memory statistics
 top -o %MEM                # Sort processes by memory
-Verificar Carga de CPU
+Check CPU Load
 bash
 uptime                     # Load average over 1,5,15 minutes
 top -o %CPU                # Sort processes by CPU
 mpstat -P ALL 1 5          # Per-core CPU usage
-Verificar Rede
+Check Network
 bash
 netstat -i                 # Interface statistics
 iftop                      # Live bandwidth usage (requires install)
 nload                      # Another bandwidth monitor
-Encontrar Arquivos Grandes
+Find Large Files
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
 Infrastructure as Code (IaC)
 Terraform
-Declarar recursos de cloud em HCL.
+Declare cloud resources in HCL.
 
 hcl
 provider "aws" {
@@ -587,7 +594,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 }
 Ansible
-Gerenciamento de configuração sem agente usando YAML.
+Agentless configuration management using YAML.
 
 yaml
 - name: Install nginx
@@ -597,29 +604,29 @@ yaml
       apt:
         name: nginx
         state: present
-Boas Práticas
-Use modules e roles para reutilização.
+Best Practices
+Use modules and roles for reusability.
 
-Armazene o state remotamente (S3, Terraform Cloud).
+Store state remotely (S3, Terraform Cloud).
 
-Use variáveis e segredos (AWS_SECRET_ACCESS_KEY via environment, não hardcoded).
+Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
 
-Mantenha seu código de IaC em controle de versão.
+Version control your IaC code.
 
-Resposta a Incidentes (On-call)
-Checklist para indisponibilidade de serviço
-Reconheça o alerta.
+Incident Response (On-call)
+Checklist for Service Outage
+Acknowledge the alert.
 
-Avalie o escopo: quais serviços/usuários foram afetados?
+Assess scope: Which services/users are affected?
 
-Identifique o problema (veja logs, métricas, deploys recentes).
+Identify the issue (look at logs, metrics, recent deployments).
 
-Contenha, se possível (circuit breakers, feature flags).
+Contain if possible (circuit breakers, feature flags).
 
-Faça rollback ou siga em frente com a correção.
+Rollback or fix forward.
 
-Comunique o status a stakeholders e usuários (status page).
+Communicate status to stakeholders and users (status page).
 
-Documente a linha do tempo do incidente e as ações tomadas.
+Document the incident timeline and actions.
 
-Post-mortem: em 24–48 horas, escreva uma análise de causa raiz (RCA) e itens de ação para evitar recorrência.
+Post-mortem: within 24–48 hours, write a root cause analysis (RCA) and action items to prevent recurrence.

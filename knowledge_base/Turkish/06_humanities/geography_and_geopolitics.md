@@ -1,211 +1,218 @@
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: geography_and_geopolitics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
 # Coğrafya ve Jeopolitik
 
-## Fiziki Coğrafya
+## Physical Coğrafya
 
-### Kıtalar ve Başlıca Bölgeler
-- **Afrika**: 54 ülke, Sahra Çölü'nden tropikal yağmur ormanlarına uzanan çeşitli iklimler, Nil Nehri (en uzun nehir)
-- **Antarktika**: En güneydeki kıta, buzla kaplı, araştırma istasyonları var, kalıcı nüfus yok
-- **Asya**: En büyük kıta, Orta Doğu, Orta Asya, Doğu Asya, Güney Asya, Güneydoğu Asya'yı içerir
-- **Avrupa**: Avrasya'nın batı yarımadası, çeşitli kültürler, European Union siyasi bloğu
-- **Kuzey Amerika**: Kanada, United States, Meksika, Orta Amerika kıstağı, Karayip adaları
-- **Okyanusya**: Avustralya, Yeni Zelanda, Pasifik ada ülkeleri (Melanesia, Micronesia, Polynesia)
-- **Güney Amerika**: Andes Dağları, Amazon Yağmur Ormanları, 12 egemen ülke
+### Continents ve Major Regions
+- **Africa**: 54 countries, diverse climates from Sahara Desert to tropical rainforests, Nile River (longest river)
+- **Antarctica**: Southernmost continent, ice-covered, research stations, no permanent residents
+- **Asia**: Largest continent, includes Middle East, Central Asia, East Asia, South Asia, Southeast Asia
+- **Europe**: Western peninsula içinde Eurasia, diverse cultures, European Union political bloc
+- **North America**: Canada, United States, Mexico, Central American isthmus, Caribbean islands
+- **Oceania**: Australia, New Zealand, Pacific island nations (Melanesia, Micronesia, Polynesia)
+- **South America**: Andes Mountains, Amazon Rainforest, 12 sovereign nations
 
-### Başlıca Dağ Sıradağları
-- **Himalayalar**: Asya, Mount Everest (8.849 m) dâhil en yüksek zirveler, Hint-Avrasya levha çarpışmasıyla oluşmuştur
-- **Andes**: Güney Amerika, en uzun kıtasal dağ sırası (~7.000 km), volkanik etkinlik
-- **Rocky Mountains**: Kuzey Amerika, Kanada'dan New Mexico'ya kadar uzanır
-- **Alpler**: Avrupa, Orta Avrupa sıradağları, önemli turizm ve kayak destinasyonu
-- **Atlas Dağları**: Kuzey Afrika, Fas'tan Tunus'a, Akdeniz'i Sahra'dan ayırır
-- **Ural Dağları**: Rusya, Avrupa ile Asya arasındaki geleneksel sınır
+### Major Mountain Ranges
+- **Himalayas**: Asia, highest peaks including Mount Everest (8,849m), formed by Indian-Eurasian plate collision
+- **Andes**: South America, longest continental mountain range (~7,000km), volcanic activity
+- **Rocky Mountains**: North America, extends from Canada to New Mexico
+- **Alps**: Europe, central European range, major tourism ve skiing destination
+- **Atlas Mountains**: North Africa, Morocco to Tunisia, separates Mediterranean from Sahara
+- **Ural Mountains**: Russia, traditional boundary between Europe ve Asia
 
-### Başlıca Nehirler
-- **Nil**: Kuzeydoğu Afrika, ~6.650 km, 11 ülkeden geçerek Akdeniz'e ulaşır
-- **Amazon**: Güney Amerika, debi hacmi bakımından en büyük, Amazon Havzası biyoçeşitliliği
-- **Yangtze**: Çin, Asya'nın en uzunu, Three Gorges Dam
-- **Mississippi-Missouri**: Kuzey Amerika, United States'in büyük drenaj sistemi
-- **Ganj**: Hindistan/Bangladeş, kutsal nehir, yoğun nüfuslu havza
-- **Tuna**: Avrupa, 10 ülkeden geçer, önemli ticaret yolu
+### Major Rivers
+- **Nile**: Northeast Africa, ~6,650km, flows through 11 countries to Mediterranean
+- **Amazon**: South America, largest by discharge volume, Amazon Basin biodiversity
+- **Yangtze**: China, longest içinde Asia, Three Gorges Dam
+- **Mississippi-Missouri**: North America, major drainage system içinde United States
+- **Ganges**: India/Bangladesh, sacred river, densely populated basin
+- **Danube**: Europe, flows through 10 countries, important trade route
 
-### Çöller
-- **Sahra**: Kuzey Afrika, en büyük sıcak çöl (~9,2 milyon km²)
-- **Arabian Desert**: Orta Doğu, Arabian Peninsula'nın çoğunu kaplar
-- **Gobi**: Doğu Asya, Çin/Moğolistan, soğuk çöl
-- **Kalahari**: Güney Afrika, yarı kurak savan
-- **Antarktik Çöl**: Genel olarak en büyük çöl (soğuk çöl)
-- **Atacama**: Güney Amerika, kutup dışındaki en kurak çöl
+### Deserts
+- **Sahara**: North Africa, largest hot desert (~9.2 million km²)
+- **Arabian Desert**: Middle East, covers most içinde Arabian Peninsula
+- **Gobi**: East Asia, China/Mongolia, cold desert
+- **Kalahari**: Southern Africa, semi-arid savanna
+- **Antarctic Desert**: Largest desert overall (cold desert)
+- **Atacama**: South America, driest non-polar desert
 
-### İklim Kuşakları
-- **Tropikal**: Ekvatora yakın, yıl boyu sıcak, yüksek yağış (yağmur ormanları, musonlar)
-- **Kurak/Subtropikal**: Sıcak yazlar, ılıman kışlar, az yağış (çöller)
-- **Ilıman**: Orta düzey sıcaklıklar, belirgin mevsimler (Akdeniz, okyanusal, nemli karasal)
-- **Karasal**: Büyük sıcaklık farkları, soğuk kışlar (kıta içleri)
-- **Kutupsal**: Aşırı soğuk, buz örtüleri, tundra (Arktik, Antarktik)
-- **Yüksek Dağ**: Yükseltiye göre değişir, yüksekte daha serindir
+### Climate Zones
+- **Tropical**: Near equator, warm year-round, high rainfall (rainforests, monsoons)
+- **Arid/Subtropical**: Hot summers, mild winters, low precipitation (deserts)
+- **Temperate**: Moderate temperatures, distinct seasons (Mediterranean, oceanic, humid continental)
+- **Continental**: Large temperature variations, cold winters (interior continents)
+- **Polar**: Extremely cold, ice caps, tundra (Arctic, Antarctic)
+- **Highland**: Varies ile elevation, cooler at altitude
 
-## Beşerî Coğrafya
+## Human Coğrafya
 
-### Nüfus Dağılımı
-- **En Kalabalık Ülkeler** (2024): Hindistan (~1,43 milyar), Çin (~1,42 milyar), ABD (~340 milyon), Endonezya (~280 milyon), Pakistan (~240 milyon)
-- **Nüfus Yoğunluğu**: Monako (en yüksek), Makao, Singapur, Hong Kong, Bahreyn
-- **Kentleşme**: Küresel nüfusun %55'inden fazlası şehirlerde yaşıyor, 2050'ye kadar %68 olması bekleniyor
-- **Megakentler** (10M+): Tokyo, Delhi, Şanghay, São Paulo, Mexico City, Kahire, Mumbai, Beijing, Dhaka, Osaka
+### Population Distribution
+- **Most Populous Countries** (2024): India (~1.43B), China (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
+- **Population Density**: Monaco (highest), Macau, Singapore, Hong Kong, Bahrain
+- **Urbanization**: Over 55% global population lives içinde cities, projected 68% by 2050
+- **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijing, Dhaka, Osaka
 
-### Diller
-- **En Çok Konuşulanlar** (ana dil + ikinci dil): İngilizce (~1,5 milyar), Mandarin Chinese (~1,1 milyar), Hintçe (~600 milyon), İspanyolca (~550 milyon), Fransızca (~300 milyon), Arapça (~275 milyon)
-- **Dil Aileleri**: Hint-Avrupa, Çin-Tibet, Afro-Asyatik, Avustronezya, Nijer-Kongo
-- **Tehlike Altındaki Diller**: UNESCO, dillerin %40'ının yok olma riski altında olduğunu tahmin ediyor
+### Languages
+- **Most Spoken** (native + second Dil): İngilizce (~1.5B), Mandarin Chinese (~1.1B), Hindi (~600M), Spanish (~550M), French (~300M), Arabic (~275M)
+- **Dil Families**: Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian, Niger-Congo
+- **Endangered Languages**: UNESCO estimates 40% içinde languages at risk içinde extinction
 
-### Ekonomik Coğrafya
-- **GDP Liderleri**: ABD, Çin, Japonya, Almanya, Hindistan, BK, Fransa, İtalya, Brezilya, Kanada
-- **Ticaret Blokları**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Güneydoğu Asya), Mercosur (Güney Amerika), African Continental Free Trade Area
-- **Kaynak Dağılımı**: Petrol (Orta Doğu, Rusya, ABD), doğal gaz (Rusya, İran, Katar), Rare Earth Elements (Çin baskın), lityum (Avustralya, Şili, Arjantin)
+### Economic Coğrafya
+- **GDP Leaders**: USA, China, Japan, Germany, India, UK, France, Italy, Brazil, Canada
+- **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), African Continental Free Trade Area
+- **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (China dominant), Lithium (Australia, Chile, Argentina)
 
-## Siyasi Coğrafya
+## Political Coğrafya
 
-### Yönetim Türleri
-- **Demokrasi**: Güç halkın oyu aracılığıyla elindedir (temsili, doğrudan)
-- **Cumhuriyet**: Monarşi olmayan devlet, temsilciler seçilir
-- **Monarşi**: Kral/kraliçe tarafından yönetilir (anayasal, mutlak)
-- **Otoriter**: Sınırlı siyasi özgürlük, merkezî güç
-- **Totaliter**: Kamusal ve özel yaşam üzerinde tam devlet kontrolü
-- **Federal**: Güç ulusal ve bölgesel yönetimler arasında bölünür
-- **Üniter**: Merkezî yönetim, bölgesel makamlar ona bağlıdır
+### Types içinde Governments
+- **Democracy**: Power held by people through voting (representative, direct)
+- **Republic**: State without monarchy, representatives elected
+- **Monarchy**: Ruled by king/queen (constitutional, absolute)
+- **Authoritarian**: Limited political freedom, centralized power
+- **Totalitarian**: Tam state control over public ve private life
+- **Federal**: Power divided between national ve regional governments
+- **Unitary**: Centralized government, regional authorities subordinate
 
-### Uluslararası Kuruluşlar
-- **United Nations (UN)**: 193 üye devlet, barışı koruma, insani yardım, uluslararası hukuk
-- **NATO**: North Atlantic Treaty Organization, askerî ittifak (2024 itibarıyla 32 üye)
-- **European Union (EU)**: 27 üye devlet, ekonomik ve siyasi birlik, euro para birimi (20 üye)
-- **World Trade Organization (WTO)**: Uluslararası ticareti düzenler
-- **World Health Organization (WHO)**: Küresel halk sağlığı koordinasyonu
-- **International Monetary Fund (IMF)**: Finansal istikrar, ülkelere kredi
-- **World Bank**: Kalkınma finansmanı, yoksulluğun azaltılması
-- **G7/G20**: Ekonomik iş birliği forumları
+### International Organizations
+- **United Nations (UN)**: 193 member states, peacekeeping, humanitarian aid, international Hukuk
+- **NATO**: North Atlantic Treaty Organization, military alliance (32 members as içinde 2024)
+- **European Union (EU)**: 27 member states, economic ve political union, euro currency (20 members)
+- **World Trade Organization (WTO)**: Regulates international trade
+- **World Health Organization (WHO)**: Global public health coordination
+- **International Monetary Fund (IMF)**: Financial stability, loans to countries
+- **World Bank**: Geliştirme financing, poverty reduction
+- **G7/G20**: Economic cooperation forums
 
-### Jeopolitik Kavramlar
-- **Sovereignty**: Bir toprak içindeki en üstün otorite
-- **Borders**: Siyasi sınırlar (doğal, yapay, ihtilaflı)
-- **Exclusive Economic Zone (EEZ)**: Kıyıdan 200 deniz mili, kaynak hakları
-- **Territorial Waters**: Esas hattan 12 deniz mili, tam egemenlik
-- **Enclave**: Başka bir devlet tarafından çevrili toprak (örn. Lesotho, Vatican City)
-- **Exclave**: Bir ülkenin ana topraklarından ayrılmış parçası (örn. Kaliningrad, Alaska)
-- **Buffer State**: Rakip güçler arasındaki ülke (tarihsel örnekler: Afganistan, Moğolistan)
-- **Heartland Theory**: Doğu Avrupa'yı kontrol eden Heartland'i, Heartland'i kontrol eden World Island'ı (Avrasya-Afrika) kontrol eder
-- **Rimland Theory**: Kıyı bölgeleri iç kesimlerden daha önemlidir
+### Geopolitical Concepts
+- **Sovereignty**: Supreme authority within territory
+- **Borders**: Political boundaries (natural, artificial, disputed)
+- **Exclusive Economic Zone (EEZ)**: 200 nautical miles from coast, resource rights
+- **Territorial Waters**: 12 nautical miles from baseline, full sovereignty
+- **Enclave**: Territory surrounded by another state (e.g., Lesotho, Vatican City)
+- **Exclave**: Part içinde country separated from main territory (e.g., Kaliningrad, Alaska)
+- **Buffer State**: Country between rival powers (historical: Afghanistan, Mongolia)
+- **Heartland Theory**: Control içinde Eastern Europe controls Heartland, controls World Island (Eurasia-Africa)
+- **Rimland Theory**: Coastal regions more important than interior
 
-## Bölgesel İncelemeler
+## Regional Studies
 
-### Middle East and North Africa (MENA)
-- **Temel Konular**: Petrol kaynakları, su kıtlığı, dini çatışmalar (Sünni-Şii), Arap-İsrail çatışması
-- **Büyük Güçler**: Suudi Arabistan, İran, Türkiye, İsrail, Mısır, BAE
-- **Çatışmalar**: Suriye İç Savaşı, Yemen Savaşı, İsrail-Filistin çatışması, Kürt bağımsızlık hareketleri
-- **Kaynaklar**: Dünyadaki kanıtlanmış petrol rezervlerinin ~%48'i, doğal gaz
+### Middle East ve North Africa (MENA)
+- **Key Issues**: Oil resources, water scarcity, religious conflicts (Sunni-Shia), Arab-Israeli conflict
+- **Major Powers**: Saudi Arabia, Iran, Turkey, Israel, Egypt, UAE
+- **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestinian conflict, Kurdish independence movements
+- **Resources**: ~48% içinde world's proven oil reserves, natural gas
 
 ### Asia-Pacific
-- **East Asia**: Çin (yükselen süper güç), Japonya (ekonomik güç merkezi), South Korea (teknoloji lideri), North Korea (nükleer gerilimler)
-- **South Asia**: Hindistan (demografik dev), Pakistan (nükleer devlet), Bangladeş (hızlı büyüme)
-- **Southeast Asia**: ASEAN iş birliği, South China Sea anlaşmazlıkları, ekonomik büyüme
-- **Temel Gerilimler**: Taiwan Strait, Korean Peninsula, Hindistan-Çin sınırı, South China Sea
+- **East Asia**: China (rising superpower), Japan (economic powerhouse), South Korea (Teknoloji leader), North Korea (nuclear tensions)
+- **South Asia**: India (demographic giant), Pakistan (nuclear state), Bangladesh (rapid growth)
+- **Southeast Asia**: ASEAN cooperation, South China Sea disputes, economic growth
+- **Key Tensions**: Taiwan Strait, Korean Peninsula, India-China border, South China Sea
 
-### Avrupa
-- **Avrupa Entegrasyonu**: EU genişlemesi, Brexit (BK 2020'de ayrıldı), eurozone zorlukları
-- **Rusya-Ukrayna Çatışması**: 2022 işgali, NATO'nun genişlemesi, enerji bağımlılığı
-- **Balkan Bölgesi**: Yugoslavya sonrası devletler, EU üyelik süreçleri
-- **Kafkasya**: Ermenistan-Azerbaycan çatışmaları, Rus etkisi
+### Europe
+- **European Integration**: EU expansion, Brexit (UK left 2020), eurozone challenges
+- **Russia-Ukraine Conflict**: 2022 invasion, NATO expansion, energy dependence
+- **Balkan Region**: Post-Yugoslav states, EU accession processes
+- **Caucasus**: Armenia-Azerbaijan conflicts, Russian influence
 
-### Amerikalar
-- **Kuzey Amerika**: US-Canada-Mexico ilişkileri, göç, ticaret (USMCA)
-- **Latin Amerika**: Eşitsizlik, uyuşturucu kaçakçılığı, popülist hareketler, Venezuela krizi
-- **Karayipler**: Turizme bağımlı ekonomiler, iklim kırılganlığı, Küba ambargosu
+### Americas
+- **North America**: US-Canada-Mexico relations, immigration, trade (USMCA)
+- **Latin America**: Inequality, drug trafficking, populist movements, Venezuela crisis
+- **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
 
-### Afrika
-- **Sömürge Mirası**: Yapay sınırlar, etnik bölünmeler, dil politikaları
-- **Kalkınma Zorlukları**: Yoksulluk, altyapı, yönetişim, borç
-- **Yükselen Güçler**: Nijerya (en büyük ekonomi), South Africa (sanayileşmiş), Etiyopya (hızlı büyüyen)
-- **Bölgesel Konular**: Sahel istikrarsızlığı, Afrika Boynuzu çatışmaları, Great Lakes bölgesi
+### Africa
+- **Colonial Legacy**: Artificial borders, ethnic divisions, Dil policies
+- **Geliştirme Challenges**: Poverty, infrastructure, governance, debt
+- **Rising Powers**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
+- **Regional Issues**: Sahel instability, Horn içinde Africa conflicts, Great Lakes region
 
-## Çağdaş Jeopolitik Meseleler
+## Contemporary Geopolitical Issues
 
-### İklim Değişikliği ve Coğrafya
-- **Yükselen Deniz Seviyeleri**: Ada devletlerini (Maldives, Tuvalu) ve kıyı şehirlerini tehdit eder
-- **Arktik Erimesi**: Yeni deniz rotaları, kaynak erişimi, toprak iddiaları
-- **İklim Göçü**: Kuraklık, sel ve aşırı hava olayları nedeniyle yerinden edilme
-- **Su Çatışmaları**: Nil Barajı anlaşmazlığı (Etiyopya-Mısır-Sudan), Indus Waters Treaty (Hindistan-Pakistan)
+### Climate Change ve Coğrafya
+- **Rising Sea Levels**: Threatens island nations (Maldives, Tuvalu), coastal cities
+- **Arctic Melting**: New shipping routes, resource access, territorial claims
+- **Climate Migration**: Displacement from drought, flooding, extreme weather
+- **Water Conflicts**: Nile Dam dispute (Ethiopia-Egypt-Sudan), Indus Waters Treaty (India-Pakistan)
 
-### Kaynak Jeopolitiği
-- **Enerji Dönüşümü**: Fosil yakıtlardan uzaklaşma, kritik mineraller (lityum, kobalt, rare earths)
-- **Gıda Güvenliği**: Tarım arazisi, su erişimi, tedarik zincirleri
-- **Rare Earth Elements**: İşlemenin yaklaşık %80'i Çin'in kontrolünde, elektronik ve green tech için kritik
-- **Semiconductor Supply Chains**: Dünyadaki çiplerin ~%60'ı Taiwan'da üretilir, jeopolitik gerilim noktası
+### Resource Jeopolitik
+- **Energy Transition**: Shift from fossil fuels, critical minerals (lithium, cobalt, rare earths)
+- **Yiyecek Güvenlik**: Agricultural land, water access, supply chains
+- **Rare Earth Elements**: China controls ~80% içinde processing, essential için electronics ve green tech
+- **Semiconductor Supply Chains**: Taiwan produces ~60% içinde world's chips, geopolitical flashpoint
 
-### Toprak Anlaşmazlıkları
-- **South China Sea**: Çin'in nine-dash line iddiası ile Filipinler, Vietnam, Malezya, Brunei, Taiwan arasındaki çekişme
-- **Keşmir**: Hindistan-Pakistan-Çin'in rakip iddiaları
-- **Western Sahara**: Fas ile Polisario Front arasındaki çekişme
-- **Kırım**: 2014'te Rusya tarafından ilhak edildi, uluslararası olarak Ukrayna toprağı kabul edilir
-- **Taiwan**: Çin egemenlik iddia eder, fiilen bağımsız bir devlet gibi işler
-- **Kürtler**: Türkiye, Suriye, Irak ve İran'a yayılmış devletsiz ulus
+### Territorial Disputes
+- **South China Sea**: China's nine-dash line vs. Philippines, Vietnam, Malaysia, Brunei, Taiwan
+- **Kashmir**: India-Pakistan-China competing claims
+- **Western Sahara**: Morocco vs. Polisario Front
+- **Crimea**: Russia annexed 2014, internationally recognized as Ukrainian
+- **Taiwan**: China claims sovereignty, operates as independent state
+- **Kurds**: Stateless nation across Turkey, Syria, Iraq, Iran
 
-### Göç ve Sınırlar
-- **Mülteci Krizleri**: Suriye, Afganistan, Venezuela, Ukrayna, Sudan
-- **Sınır Duvarları**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
-- **Göç Rotaları**: Orta Akdeniz, Doğu Akdeniz, ABD güneybatısı, Balkan rotası
-- **Brain Drain**: Nitelikli işçilerin gelişmekte olan ülkelerden gelişmiş ülkelere göç etmesi
+### Migration ve Borders
+- **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
+- **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
+- **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
+- **Brain Drain**: Skilled workers emigrating from developing to developed nations
 
-## Stratejik Kavramlar
+## Strategic Concepts
 
-### Güç Projeksiyonu
-- **Hard Power**: Askerî güç, ekonomik yaptırımlar, zorlama
-- **Soft Power**: Kültürel etki, diplomasi, değer çekiciliği
-- **Smart Power**: Hard power ve soft power stratejilerinin birleşimi
-- **Naval Power**: Deniz yolları ve chokepoint'lerin kontrolü (Hürmüz Boğazı, Malakka, Süveyş, Panama)
-- **Air Power**: Stratejik bombardıman, hava üstünlüğü, drone savaşı
-- **Cyber Power**: Dijital savaş, bilgi operasyonları, altyapı saldırıları
+### Power Projection
+- **Hard Power**: Military force, economic sanctions, coercion
+- **Soft Power**: Cultural influence, diplomacy, values attraction
+- **Smart Power**: Combination içinde hard ve soft power strategies
+- **Naval Power**: Control içinde sea lanes, chokepoints (Strait içinde Hormuz, Malacca, Suez, Panama)
+- **Air Power**: Strategic bombing, air superiority, drone warfare
+- **Cyber Power**: Digital warfare, information operations, infrastructure attacks
 
-### Etki Alanları
-- **Monroe Doctrine**: ABD'nin Amerika kıtasında Avrupa sömürgeleştirmesine karşı çıkışı (1823)
-- **Russian Near Abroad**: Eski Sovyet devletleri Rusya'nın etki alanı olarak görülür
-- **Chinese Belt and Road**: Ekonomik etki yaratan altyapı yatırımları
-- **American Hegemony**: II. Dünya Savaşı sonrası küresel liderlik rolü
+### Spheres içinde Influence
+- **Monroe Doctrine**: US opposition to European colonization içinde Americas (1823)
+- **Russian Near Abroad**: Former Soviet states considered Russian sphere
+- **Chinese Belt ve Road**: Infrastructure investments creating economic influence
+- **American Hegemony**: Post-WWII global leadership role
 
-### Güç Dengesi
-- **Unipolar**: Tek baskın güç (Soğuk Savaş sonrası ABD)
-- **Bipolar**: İki rakip güç (ABD-SSCB Soğuk Savaşı)
-- **Multipolar**: Birden fazla büyük güç (I. Dünya Savaşı öncesi Avrupa, ortaya çıkan düzen)
-- **Hegemonic Stability**: Baskın güç küresel kamusal mallar sağlar
+### Balance içinde Power
+- **Unipolar**: Single dominant power (US post-Cold War)
+- **Bipolar**: Two competing powers (US-USSR Cold War)
+- **Multipolar**: Multiple great powers (pre-WWI Europe, emerging order)
+- **Hegemonic Stability**: Dominant power provides global public goods
 
-## Geographic Information Systems (GIS)
+## Geographic Information Sistemler (GIS)
 
-### Haritalama Teknolojileri
-- **GPS**: Global Positioning System, uydu navigasyonu
-- **Remote Sensing**: Uydu görüntüleri, hava fotoğrafçılığı
-- **Spatial Analysis**: Örüntü tanıma, yakınlık analizi, ağ analizi
-- **Cartography**: Harita yapımı, projeksiyonlar, ölçek, semboloji
+### Mapping Technologies
+- **GPS**: Global Positioning System, satellite navigation
+- **Remote Sensing**: Satellite imagery, aerial photography
+- **Spatial Analysis**: Pattern recognition, proximity analysis, Ağ analysis
+- **Cartography**: Map-making, projections, scale, symbology
 
-### Uygulamalar
-- **Urban Planning**: Arazi kullanımı, ulaşım, imar
-- **Environmental Monitoring**: Ormansızlaşma, kirlilik, iklim değişikliği
-- **Disaster Response**: Acil durum yönetimi, tahliye rotaları
-- **Business Intelligence**: Pazar analizi, yer seçimi, lojistik
-- **Public Health**: Hastalık takibi, sağlık hizmetine erişim
+### Applications
+- **Urban Planning**: Land use, transportation, zoning
+- **Çevresel Monitoring**: Deforestation, pollution, climate change
+- **Disaster Response**: Emergency Yönetim, evacuation routes
+- **İş Intelligence**: Market analysis, site selection, logistics
+- **Public Health**: Disease tracking, Sağlık Hizmetleri access
 
-## Önemli Jeopolitik Kuramcılar
+## Key Geopolitical Theorists
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe commands the Heartland"
-- **Alfred Thayer Mahan** (1840-1914): Deniz gücünün önemi, deniz stratejisi
-- **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy üzerindeki etkisi
-- **Karl Haushofer** (1869-1946): Geopolitik, Alman coğrafya ekolü
-- **Saul Bernard Cohen** (1921-2022): Jeopolitik sistem analizi
+- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Komutlar bu Heartland"
+- **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
+- **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
+- **Karl Haushofer** (1869-1946): Geopolitik, German geographical school
+- **Saul Bernard Cohen** (1921-2022): Geopolitical Sistemler analysis
 
-## Önemli Coğrafi Terimler
+## Important Geographic Terms
 
-- **Chokepoint**: Ticaret/askerî hareket için kritik dar geçit
-- **Hinterland**: Bir limana veya şehre ekonomik olarak hizmet eden alan
-- **Irredentism**: Tarihsel/etnik bağlara dayanarak toprak talep etme
-- **Nation-State**: Ulus ve devlet sınırlarının örtüştüğü siyasi birim
-- **Realpolitik**: İdeallerden çok pratik hedeflere dayalı siyaset
-- **Self-Determination**: Halkların kendi egemenliklerini seçme hakkı
-- **Shatterbelt**: Daha güçlü dış güçler arasında sıkışmış bölge
-- **Stateless Nation**: Kendi devleti olmayan etnik grup (Kürtler, Filistinliler, Tibetliler)
-- **Supranational Organization**: Ulusal düzeyin üstündeki yapı (EU, UN)
-- **Terminal Moraine**: Buzulun en ileri noktasını gösteren jeolojik oluşum
+- **Chokepoint**: Narrow passage critical için trade/military movement
+- **Hinterland**: Area serving a port or city economically
+- **Irredentism**: Claiming territory based on historical/ethnic ties
+- **Nation-State**: Political unit where nation ve state boundaries align
+- **Realpolitik**: Politics based on practical objectives rather than ideals
+- **Self-Determination**: Right içinde peoples to choose their sovereignty
+- **Shatterbelt**: Region caught between stronger external powers
+- **Stateless Nation**: Ethnic group without own state (Kurds, Palestinians, Tibetans)
+- **Supranational Organization**: Entity above national level (EU, UN)
+- **Terminal Moraine**: Geological feature marking glacier's furthest advance

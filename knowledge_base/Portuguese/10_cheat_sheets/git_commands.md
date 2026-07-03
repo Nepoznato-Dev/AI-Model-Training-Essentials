@@ -1,10 +1,17 @@
-# Referência Rápida de Comandos Git
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: git_commands.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Comandos essenciais do Git para controle de versão.
+# Git Comandos Referência rápida
+
+Essential Git Comandos para version control.
 
 ---
 
-## Instalação e Configuração
+## Setup & Configuration
 
 ```bash
 # Configure user info
@@ -21,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Inicialização de Repositório
+## Repository Initialization
 
 ```bash
 # Initialize new repository
@@ -37,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Fluxo de Trabalho Básico
+## Basic Workflow
 
 ```bash
 # Check status
@@ -64,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-## Branches
+## Branching
 
 ```bash
 # List branches
@@ -96,7 +103,7 @@ git rebase main
 
 ---
 
-## Operações Remotas
+## Remote Operations
 
 ```bash
 # View remotes
@@ -125,7 +132,7 @@ git push --tags
 
 ---
 
-## Desfazendo Alterações
+## Undoing Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -198,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Visualização e Busca
+## Viewing & Searching
 
 ```bash
 # Show commit details
@@ -221,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-## Operações Avançadas
+## Avançado Operations
 
 ```bash
 # Cherry-pick commit
@@ -247,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-## Limpeza
+## Cleanup
 
 ```bash
 # Remove untracked files (dry run)
@@ -264,9 +271,9 @@ git remote prune origin
 
 ---
 
-## Fluxos de Trabalho Comuns
+## Common Workflows
 
-### Iniciar Nova Funcionalidade
+### Start New Feature
 ```bash
 git checkout main
 git pull
@@ -278,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Sincronizar com a Main
+### Sync com Main
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -287,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Fluxo de Hotfix
+### Hotfix Workflow
 ```bash
 git checkout main
 git pull
@@ -303,7 +310,7 @@ git push --tags
 
 ---
 
-## Padrões de .gitignore
+## .gitignore Patterns
 
 ```gitignore
 # Ignore specific file
@@ -325,37 +332,37 @@ __pycache__/
 
 ---
 
-## Atalhos de Teclado (Git Bash)
+## Keyboard Shortcuts (Git Bash)
 
-| Atalho | Ação |
+| Shortcut | Action |
 |----------|--------|
-| `Ctrl+R` | Pesquisar histórico para trás |
-| `Tab` | Autocompletar |
-| `Ctrl+C` | Cancelar comando |
-| `Ctrl+Z` | Suspender processo |
-| `fg` | Retomar processo suspenso |
+| `Ctrl+R` | Reverse search História |
+| `Tab` | Auto-Completo |
+| `Ctrl+C` | Cancel command |
+| `Ctrl+Z` | Suspend process |
+| `fg` | Resume suspended process |
 
 ---
 
-## Boas Práticas
+## Melhores práticas
 
-✅ **Faça:**
-- Escreva mensagens de commit claras e descritivas
-- Faça commits frequentes com agrupamentos lógicos
-- Use branches para funcionalidades/correções
-- Faça pull antes de começar a trabalhar
-- Revise `git status` com frequência
+✅ **Do:**
+- Write clear, descriptive commit messages
+- Commit frequently com logical groupings
+- Use branches para features/fixes
+- Pull before starting work
+- Review `git status` often
 
-❌ **Não faça:**
-- Faça commit de dados sensíveis (chaves de API, senhas)
-- Use force push em branches compartilhadas
-- Faça commit de arquivos binários grandes
-- Ignore conflitos de merge
-- Trabalhe diretamente em main/master
+❌ **Don't:**
+- Commit sensitive Dados (API keys, passwords)
+- Force push to shared branches
+- Commit large binary files
+- Ignore merge conflicts
+- Work directly on main/master
 
 ---
 
-## Convenção de Mensagens de Commit
+## Commit Message Convention
 
 ```
 type(scope): subject
@@ -365,16 +372,16 @@ body (optional)
 footer (optional)
 ```
 
-**Tipos:**
-- `feat`: Nova funcionalidade
-- `fix`: Correção de bug
-- `docs`: Documentação
-- `style`: Formatação
-- `refactor`: Reestruturação de código
-- `test`: Testes
-- `chore`: Manutenção
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Formatting
+- `refactor`: Code restructuring
+- `test`: Tests
+- `chore`: Maintenance
 
-**Exemplo:**
+**Example:**
 ```
 feat(auth): add password reset functionality
 
@@ -386,4 +393,4 @@ Closes #123
 
 ---
 
-*Última atualização: junho de 2025 | Git 2.x*
+*Última atualização: June 2025 | Git 2.x*

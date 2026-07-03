@@ -1,37 +1,44 @@
-# 商業與經濟
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: business_and_economics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 公司結構
+# 商業 和 經濟
 
-公司是獨立於所有者的法律實體,為股東提供有限責任保護。主要的商業結構類型包括獨資企業(由一人擁有)、合夥企業(由兩人或多人擁有)、有限責任公司(LLC),以及公司法人(C型公司、S型公司)。公司由股東選舉的董事會管理。執行長(CEO)是最高階的主管,負責做出重大企業決策。其他高層主管包括財務長(CFO)、營運長(COO)和技術長(CTO)。
+## Corporate Structures
 
-## 行銷基礎
+A corporation is a 法律 entity separate from its owners, providing limited liability protection to shareholders. 這 main types 的 商業 structures include sole proprietorships (owned by one person), partnerships (owned by two or more people), limited liability companies (LLCs), 和 corporations (C-corp, S-corp). Corporations are governed by a board 的 directors elected by shareholders. 這 chief executive officer (CEO) is 這 highest-ranking executive, responsible 為 making major corporate decisions. Other C-suite executives include 這 Chief Financial Officer (CFO), Chief Operating Officer (COO), 和 Chief 技術 Officer (CTO).
 
-行銷是推廣、銷售和分銷產品或服務的過程。行銷組合由4P組成:產品(你賣什麼)、價格(收費多少)、地點(在哪裡賣)和推廣(如何宣傳)。市場區隔根據人口統計、地理位置、行為或心理特徵將顧客分成不同群組。品牌識別是品牌的可見元素(標誌、顏色、設計),使其有別於競爭對手。顧客獲取成本(CAC)是獲得新顧客所產生的費用。顧客終身價值(CLV)估算企業從單一顧客帳戶可預期獲得的總收入。
+## Marketing 基礎
 
-## 會計基礎
+Marketing is 這 process 的 promoting, selling, 和 distributing products or services. 這 marketing mix consists 的 這 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), 和 Promotion (how you advertise it). Market segmentation divides customers into groups based on demographics, 地理, behavior, or psychographics. Brand identity is 這 visible elements 的 a brand (logo, colors, design) that distinguish it from competitors. Customer acquisition cost (CAC) is 這 expense incurred to acquire a new customer. Customer lifetime value (CLV) estimates 這 total revenue a 商業 can expect from a single customer account.
 
-會計是系統性地記錄、報告和分析財務交易的過程。會計基本等式為:資產 = 負債 + 權益。資產是企業擁有的資源(現金、存貨、設備)。負債是對他人的義務或債務。權益代表扣除負債後,所有者對資產的要求權。資產負債表顯示公司在特定時點的財務狀況。損益表(利潤與虧損表)顯示一段期間的收入、支出和利潤。現金流量表追蹤企業的現金流入和流出。公認會計原則(GAAP)和國際財務報告準則(IFRS)是主要的會計框架。
+## Accounting 基礎
 
-## 投資與金融
+Accounting is 這 systematic recording, reporting, 和 analysis 的 financial transactions. 這 fundamental accounting equation is: Assets = Liabilities + Equity. Assets are resources owned by a 商業 (cash, inventory, equipment). Liabilities are obligations or debts owed to others. Equity represents 這 owner's claim on assets after liabilities are deducted. 這 balance sheet shows a company's financial position at a specific point 在 time. 這 income statement (profit 和 loss statement) shows revenues, expenses, 和 profits over a period. Cash flow statements track 這 movement 的 cash 在 和 out 的 a 商業. Generally Accepted Accounting Principles (GAAP) 和 International Financial Reporting Standards (IFRS) are 這 main accounting frameworks.
 
-投資涉及分配資金以期產生收入或利潤。股票代表公司的所有權股份。債券是債務證券,投資者以固定利率將資金借給實體(公司或政府)。共同基金匯集許多投資者的資金以購買多元化的證券投資組合。交易所交易基金(ETF)與共同基金類似,但像個股一樣在證券交易所交易。多元化將投資分散於不同資產以降低風險。複利是對本金和累積利息一起計算的利息。風險報酬權衡指出潛在報酬會隨風險增加而上升。藍籌股是表現穩定的大型知名企業股票。股利是公司從利潤中支付給股東的款項。
+## 投資 和 金融
 
-## 經濟指標
+投資 involves allocating money 與 這 expectation 的 generating income or profit. Stocks represent ownership shares 在 a corporation. Bonds are debt securities where investors loan money to entities (corporations or governments) 為 a fixed interest rate. Mutual funds pool money from many investors to purchase a diversified portfolio 的 securities. Exchange-traded funds (ETFs) are similar to mutual funds but trade on stock exchanges like individual stocks. Diversification spreads investments across different assets to reduce risk. Compound interest is interest calculated on both 這 initial principal 和 accumulated interest. 這 risk-return tradeoff states that potential return rises 與 increased risk. Blue-chip stocks are shares 在 large, well-established companies 與 reliable 效能. Dividends are payments made by corporations to shareholders from profits.
 
-國內生產總值(GDP)衡量一國生產的商品和服務總值。通貨膨脹是價格隨時間上漲的速率,會降低購買力。消費者物價指數(CPI)衡量消費品和服務價格水準的變化。失業率是勞動力中失業且積極尋找工作的人口比例。由中央銀行設定的利率會影響借貸成本和經濟活動。聯邦準備系統(美國)、歐洲中央銀行(ECB)和英格蘭銀行是主要的中央銀行。經濟衰退通常定義為連續兩季的負GDP成長。牛市表示股價上漲;熊市表示價格下跌。
+## Economic Indicators
 
-## 供應鏈與營運
+Gross Domestic Product (GDP) measures 這 total value 的 goods 和 services produced 在 a country. Inflation is 這 rate at which prices rise over time, reducing purchasing power. 這 Consumer Price Index (CPI) measures changes 在 這 price level 的 consumer goods 和 services. Unemployment rate is 這 percentage 的 這 labor force that is jobless 和 actively seeking employment. Interest rates, set by central banks, influence borrowing costs 和 economic activity. 這 Federal Reserve (US), European Central Bank (ECB), 和 Bank 的 England are major central banks. Recession is typically defined as two consecutive quarters 的 negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
 
-供應鏈管理監督從原料到最終產品的商品和服務流動。物流涉及協調資源從產地到消費地的移動。庫存管理在滿足需求和避免過多持有成本之間取得平衡。及時生產(JIT)製造透過僅在需要時接收貨物來最小化庫存。品質控管確保產品符合指定標準。六標準差是消除缺陷和改善流程的方法論。精實製造專注於最小化浪費同時最大化生產力。
+## Supply Chain 和 Operations
 
-## 創業與新創公司
+Supply chain 管理 oversees 這 flow 的 goods 和 services from raw materials to final products. Logistics involves 這 coordination 的 moving resources from origin to consumption. Inventory 管理 balances having enough stock to meet demand without excess holding costs. Just-在-time (JIT) manufacturing minimizes inventory by receiving goods only as needed. Quality control ensures products meet specified standards. Six Sigma is a methodology 為 eliminating defects 和 improving processes. Lean manufacturing focuses on minimizing waste while maximizing productivity.
 
-創業是設計、啟動和經營新事業的過程。新創公司是為開發獨特產品或服務而成立的年輕公司。創投資本是投資者提供給具有高成長潛力新創公司的資金。天使投資人是富裕的個人,為新創公司提供資金,通常以股權作為交換。群眾募資透過線上平台向許多人籌集小額資金。最小可行產品(MVP)是具有足夠功能以滿足早期客戶的產品版本。轉型指商業策略的根本改變。可擴展性是在不受結構或資源限制下成長的能力。
+## Entrepreneurship 和 Startups
 
-## 國際貿易
+Entrepreneurship is 這 process 的 designing, launching, 和 running a new 商業. A startup is a young company founded to develop a unique product or service. Venture capital is funding provided by investors to startups 與 high growth potential. Angel investors are affluent individuals who provide capital 為 startups, often 在 exchange 為 equity. Crowdfunding raises small amounts 的 money from many people via online platforms. A minimum viable product (MVP) is a version 的 a product 與 just enough features to satisfy early customers. Pivot refers to a fundamental change 在 商業 strategy. Scalability is 這 ability to grow without being hampered by structure or resources.
 
-國際貿易涉及跨國界的商品和服務交換。進口是帶入國內的商品;出口是送出的商品。當進口超過出口時會出現貿易逆差;貿易順差則相反。關稅是對進口商品課徵的稅。自由貿易協定減少國家間的障礙。世界貿易組織(WTO)規範國際貿易。貨幣匯率影響進出口的相對成本。全球化增加了全球經濟的相互連結性。
+## International Trade
 
-## 商業倫理與企業社會責任
+International trade involves 這 exchange 的 goods 和 services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is 這 opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. 這 World Trade Organization (WTO) regulates international trade. Currency exchange rates affect 這 relative cost 的 imports 和 exports. Globalization has increased interconnectedness 的 economies worldwide.
 
-商業倫理涉及指導商業行為的道德原則。企業社會責任(CSR)是公司承諾永續經營並對社會做出積極貢獻。環境、社會和公司治理(ESG)標準評估公司在永續性和倫理影響方面的做法。利害關係人包括受公司行動影響的任何人(員工、客戶、社區、股東)。當商業決策與道德價值觀衝突時,會出現倫理困境。透明度和問責制是倫理商業實踐的關鍵原則。
+## 商業 Ethics 和 Corporate Social Responsibility
+
+商業 ethics involves moral principles guiding 商業 behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustainably 和 contribute positively to society. 環境, Social, 和 Governance (ESG) criteria evaluate company practices on 永續性 和 ethical impact. Stakeholders include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when 商業 decisions conflict 與 moral values. Transparency 和 accountability are key principles 的 ethical 商業 practice.

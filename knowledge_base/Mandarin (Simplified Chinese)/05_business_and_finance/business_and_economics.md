@@ -1,37 +1,44 @@
-# 商业与经济
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: business_and_economics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 企业组织结构
+# 商业 和 经济
 
-公司是与其所有者相分离的法律实体，为股东提供有限责任保护。主要的商业组织形式包括独资企业（由一人拥有）、合伙企业（由两人或以上拥有）、有限责任公司（LLC）以及公司制企业（C-corp、S-corp）。公司由股东选举产生的董事会治理。首席执行官（CEO）是级别最高的管理者，负责作出重大的公司决策。其他 C-suite 高管包括首席财务官（CFO）、首席运营官（COO）和首席技术官（CTO）。
+## Corporate Structures
 
-## 营销基础
+A corporation is a 法律 entity separate from its owners, providing limited liability protection to shareholders. 这 main types 的 商业 structures include sole proprietorships (owned by one person), partnerships (owned by two or more people), limited liability companies (LLCs), 和 corporations (C-corp, S-corp). Corporations are governed by a board 的 directors elected by shareholders. 这 chief executive officer (CEO) is 这 highest-ranking executive, responsible 为 making major corporate decisions. Other C-suite executives include 这 Chief Financial Officer (CFO), Chief Operating Officer (COO), 和 Chief 技术 Officer (CTO).
 
-营销是推广、销售和分发产品或服务的过程。营销组合由 4P 构成：Product（产品，即你销售什么）、Price（价格，即你收取多少）、Place（渠道，即你在哪里销售）和 Promotion（促销，即你如何宣传）。市场细分会根据人口统计、地理、行为或心理特征将客户划分为不同群体。品牌识别是品牌的可见元素（如标志、颜色、设计），用于将其与竞争对手区分开来。客户获取成本（CAC）是获得一位新客户所产生的费用。客户终身价值（CLV）则估算企业从单个客户账户中能够获得的总收入。
+## Marketing 基础
 
-## 会计基础
+Marketing is 这 process 的 promoting, selling, 和 distributing products or services. 这 marketing mix consists 的 这 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), 和 Promotion (how you advertise it). Market segmentation divides customers into groups based on demographics, 地理, behavior, or psychographics. Brand identity is 这 visible elements 的 a brand (logo, colors, design) that distinguish it from competitors. Customer acquisition cost (CAC) is 这 expense incurred to acquire a new customer. Customer lifetime value (CLV) estimates 这 total revenue a 商业 can expect from a single customer account.
 
-会计是对财务交易进行系统记录、报告和分析的工作。基本会计恒等式为：Assets = Liabilities + Equity。资产（Assets）是企业拥有的资源（如现金、存货、设备）。负债（Liabilities）是对他人承担的义务或债务。所有者权益（Equity）表示在扣除负债后所有者对资产的剩余权益。资产负债表展示公司在某一特定时点的财务状况。利润表（income statement，也称 profit and loss statement）展示一段时期内的收入、费用和利润。现金流量表追踪企业现金流入与流出的情况。公认会计原则（GAAP）和国际财务报告准则（IFRS）是主要的会计框架。
+## Accounting 基础
 
-## 投资与金融
+Accounting is 这 systematic recording, reporting, 和 analysis 的 financial transactions. 这 fundamental accounting equation is: Assets = Liabilities + Equity. Assets are resources owned by a 商业 (cash, inventory, equipment). Liabilities are obligations or debts owed to others. Equity represents 这 owner's claim on assets after liabilities are deducted. 这 balance sheet shows a company's financial position at a specific point 在 time. 这 income statement (profit 和 loss statement) shows revenues, expenses, 和 profits over a period. Cash flow statements track 这 movement 的 cash 在 和 out 的 a 商业. Generally Accepted Accounting Principles (GAAP) 和 International Financial Reporting Standards (IFRS) are 这 main accounting frameworks.
 
-投资是指投入资金，并期望产生收入或利润。股票代表对一家公司的所有权份额。债券是债务证券，投资者以固定利率将资金借给某个实体（公司或政府）。共同基金汇集众多投资者的资金，以购买分散化的证券组合。交易所交易基金（ETF）与共同基金类似，但像个股一样在证券交易所交易。分散投资通过将资金配置到不同资产上来降低风险。复利是同时基于初始本金和累计利息计算的利息。风险—收益权衡指出，潜在回报通常会随着风险上升而提高。蓝筹股是大型、成熟且业绩可靠公司的股票。股息是公司从利润中向股东支付的款项。
+## 投资 和 金融
 
-## 经济指标
+投资 involves allocating money 与 这 expectation 的 generating income or profit. Stocks represent ownership shares 在 a corporation. Bonds are debt securities where investors loan money to entities (corporations or governments) 为 a fixed interest rate. Mutual funds pool money from many investors to purchase a diversified portfolio 的 securities. Exchange-traded funds (ETFs) are similar to mutual funds but trade on stock exchanges like individual stocks. Diversification spreads investments across different assets to reduce risk. Compound interest is interest calculated on both 这 initial principal 和 accumulated interest. 这 risk-return tradeoff states that potential return rises 与 increased risk. Blue-chip stocks are shares 在 large, well-established companies 与 reliable 性能. Dividends are payments made by corporations to shareholders from profits.
 
-国内生产总值（GDP）衡量一个国家生产的商品和服务总价值。通货膨胀是价格随时间上涨的速度，会削弱购买力。消费者价格指数（CPI）衡量消费品和服务价格水平的变化。失业率是劳动力中没有工作且正在积极求职的人所占比例。由中央银行设定的利率会影响借贷成本和经济活动。美联储（美国）、欧洲中央银行（ECB）和英格兰银行都是重要的中央银行。经济衰退通常被定义为 GDP 连续两个季度负增长。牛市表示股价上涨；熊市表示股价下跌。
+## Economic Indicators
 
-## 供应链与运营
+Gross Domestic Product (GDP) measures 这 total value 的 goods 和 services produced 在 a country. Inflation is 这 rate at which prices rise over time, reducing purchasing power. 这 Consumer Price Index (CPI) measures changes 在 这 price level 的 consumer goods 和 services. Unemployment rate is 这 percentage 的 这 labor force that is jobless 和 actively seeking employment. Interest rates, set by central banks, influence borrowing costs 和 economic activity. 这 Federal Reserve (US), European Central Bank (ECB), 和 Bank 的 England are major central banks. Recession is typically defined as two consecutive quarters 的 negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
 
-供应链管理负责监督商品和服务从原材料到最终产品的流动。物流涉及将资源从起点协调转移到消费端。库存管理需要在满足需求和避免过高持有成本之间取得平衡。准时制（JIT）制造通过仅在需要时接收货物来尽量减少库存。质量控制确保产品符合既定标准。六西格玛（Six Sigma）是一种消除缺陷、改进流程的方法论。精益制造强调在最大化生产率的同时尽量减少浪费。
+## Supply Chain 和 Operations
 
-## 创业与初创公司
+Supply chain 管理 oversees 这 flow 的 goods 和 services from raw materials to final products. Logistics involves 这 coordination 的 moving resources from origin to consumption. Inventory 管理 balances having enough stock to meet demand without excess holding costs. Just-在-time (JIT) manufacturing minimizes inventory by receiving goods only as needed. Quality control ensures products meet specified standards. Six Sigma is a methodology 为 eliminating defects 和 improving processes. Lean manufacturing focuses on minimizing waste while maximizing productivity.
 
-创业是设计、启动并运营一家新企业的过程。初创公司是为开发独特产品或服务而成立的年轻公司。风险投资是投资者向具有高增长潜力的初创公司提供的资金。天使投资人是为初创公司提供资本的高净值个人，通常以换取股权为条件。众筹通过在线平台从许多人那里筹集小额资金。最小可行产品（MVP）是具有刚好足以满足早期客户需求功能的产品版本。Pivot 指商业战略上的根本性转变。可扩展性是指企业在不受组织结构或资源限制的情况下实现增长的能力。
+## Entrepreneurship 和 Startups
 
-## 国际贸易
+Entrepreneurship is 这 process 的 designing, launching, 和 running a new 商业. A startup is a young company founded to develop a unique product or service. Venture capital is funding provided by investors to startups 与 high growth potential. Angel investors are affluent individuals who provide capital 为 startups, often 在 exchange 为 equity. Crowdfunding raises small amounts 的 money from many people via online platforms. A minimum viable product (MVP) is a version 的 a product 与 just enough features to satisfy early customers. Pivot refers to a fundamental change 在 商业 strategy. Scalability is 这 ability to grow without being hampered by structure or resources.
 
-国际贸易是跨境交换商品和服务。进口是运入一国的商品；出口是运出一国的商品。当进口超过出口时就会出现贸易逆差；贸易顺差则相反。关税是对进口商品征收的税。自由贸易协定减少国家之间的贸易壁垒。世界贸易组织（WTO）负责规范国际贸易。汇率会影响进出口商品的相对成本。全球化增强了世界各国经济之间的相互联系。
+## International Trade
 
-## 商业伦理与企业社会责任
+International trade involves 这 exchange 的 goods 和 services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is 这 opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. 这 World Trade Organization (WTO) regulates international trade. Currency exchange rates affect 这 relative cost 的 imports 和 exports. Globalization has increased interconnectedness 的 economies worldwide.
 
-商业伦理是指导企业行为的道德原则。企业社会责任（CSR）是公司对可持续经营并积极回馈社会的承诺。环境、社会与治理（ESG）标准用于评估公司的可持续性实践及其伦理影响。利益相关者包括所有会受到公司行为影响的人（员工、客户、社区、股东）。当商业决策与道德价值发生冲突时，就会出现伦理困境。透明度和问责制是商业伦理实践的关键原则。
+## 商业 Ethics 和 Corporate Social Responsibility
+
+商业 ethics involves moral principles guiding 商业 behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustainably 和 contribute positively to society. 环境, Social, 和 Governance (ESG) criteria evaluate company practices on 可持续性 和 ethical impact. Stakeholders include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when 商业 decisions conflict 与 moral values. Transparency 和 accountability are key principles 的 ethical 商业 practice.

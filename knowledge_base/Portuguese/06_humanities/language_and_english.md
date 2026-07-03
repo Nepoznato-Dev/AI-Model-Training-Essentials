@@ -1,156 +1,163 @@
-# Linguagem e Inglês
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: language_and_english.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## O que é Linguagem?
+# Idioma e Inglês
 
-Linguagem é um sistema de comunicação que utiliza sons, símbolos ou gestos e segue um conjunto compartilhado de regras compreendido por uma comunidade. A linguagem humana é única em sua complexidade, criatividade e capacidade de expressar ideias abstratas. Há aproximadamente 7.000 línguas faladas no mundo hoje. O inglês é a língua mais amplamente falada como segunda língua e é o idioma dominante da comunicação internacional, dos negócios, da ciência e da internet.
+## What is Idioma?
 
-## Gramática do Inglês
+Idioma is a system de Comunicação using sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human Idioma is unique em its complexity, creativity, e capacity to express abstract ideas. There are approximately 7,000 languages spoken em o/a world today. Inglês is o/a most widely spoken Idioma as a second Idioma e is o/a dominant Idioma de international Comunicação, Negócios, Ciência, e o/a internet.
 
-Gramática é o conjunto de regras que governa a forma como as palavras são combinadas para formar frases em uma língua. Uma frase deve conter um sujeito (quem ou o que é o tema da frase) e um predicado (o que o sujeito faz ou é).
+## Inglês Grammar
 
-A **noun** é uma palavra que nomeia uma pessoa, lugar, coisa ou ideia.
-A **verb** é uma palavra que expressa uma ação ou estado de ser.
-A **adjective** modifica uma noun.
-A **adverb** modifica uma verb, adjective ou outra adverb.
-A **pronoun** ocupa o lugar de uma noun.
+Grammar is o/a set de rules governing how words are combined to form sentences em a Idioma. A sentence must contain a subject (who or what o/a sentence is about) e a predicate (what o/a subject does or is).
 
-Uma **clause** é um grupo de palavras que contém sujeito e verbo. Uma independent clause pode aparecer sozinha como frase. Uma dependent clause não pode aparecer sozinha e depende de uma independent clause. Uma **phrase** é um grupo de palavras que não contém ao mesmo tempo sujeito e predicado.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state de being.
+An **adjective** modifies a noun.
+An **adverb** modifies a verb, adjective, or another adverb.
+A **pronoun** takes o/a place de a noun.
 
-## Classes de Palavras
+A **clause** is a group de words containing a subject e a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone e depends on an independent clause. A **phrase** is a group de words that does not contain both a subject e a predicate.
 
-As oito classes gramaticais tradicionais do inglês são: noun, pronoun, verb, adjective, adverb, preposition, conjunction e interjection.
+## Parts de Speech
 
-Uma **preposition** mostra a relação entre uma noun ou pronoun e outra palavra (ex.: in, on, at, by, with).
-Uma **conjunction** conecta palavras, phrases ou clauses (ex.: and, but, or, because).
+o/a eight traditional parts de speech em Inglês are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, e interjection.
 
-**Conjunções coordenativas comuns** podem ser lembradas pelo acrônimo FANBOYS:
+A **preposition** shows o/a relationship between a noun or pronoun e another word (e.g., em, on, at, by, com).
+A **conjunction** connects words, phrases, or clauses (e.g., e, but, or, because).
+
+**Common coordinating conjunctions** can be remembered com o/a acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## Pontuação
+## Punctuation
 
-- Um ponto final (.) encerra uma frase declarativa.
-- Um ponto de interrogação (?) encerra uma frase interrogativa.
-- Um ponto de exclamação (!) encerra uma frase exclamativa.
-- Uma vírgula (,) separa itens em uma lista, isola expressões introdutórias e separa orações independentes ligadas por uma conjunção.
-- Um ponto e vírgula (;) separa duas orações independentes estreitamente relacionadas.
-- Dois-pontos (:) introduzem uma lista, explicação ou citação.
-- Um apóstrofo (') indica posse (John's book) ou uma contração (don't = do not).
+- A period (.) ends a declarative sentence.
+- A question mark (?) ends an interrogative sentence.
+- An exclamation mark (!) ends an exclamatory sentence.
+- A comma (,) separates items em a list, sets off introductory phrases, e separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-## Ortografia e Erros Comuns
+## Spelling e Common Errors
 
-**Regras ortográficas comuns:**
-- "i before e except after c" (believe, receive) — embora essa regra tenha muitas exceções (ex.: "weird", "science")
-- Palavras terminadas em "e" mudo perdem o "e" antes de receber um sufixo iniciado por vogal (make → making)
-- Dobra-se a consoante final antes de adicionar um sufixo iniciado por vogal quando a última sílaba é tônica e termina em uma única consoante (run → running)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Ciência")
+- Words ending em a silent "e" drop o/a "e" before adding a vowel suffix (make → making)
+- Double o/a final consonant before adding a vowel suffix when o/a last syllable is stressed e ends em a single consonant (run → running)
 
-**Pares de palavras comumente confundidas:**
+**Common confusable word pairs:**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## Vocabulário e Formação de Palavras
+## Vocabulary e Word Formation
 
-**Etymology** é o estudo das origens e do desenvolvimento histórico das palavras. Muitas palavras do inglês vêm de raízes latinas, gregas, francesas e germânicas.
+**Etymology** is o/a study de o/a origins e historical Desenvolvimento de words. Many Inglês words come from Latin, Greek, French, e Germanic roots.
 
-**Prefixes** são adicionados ao início das palavras para mudar seu significado (ex.: un-, re-, pre-, mis-).
-**Suffixes** são adicionados ao final das palavras (ex.: -tion, -ness, -ing, -ly).
+**Prefixes** are added to o/a beginning de words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to o/a end de words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: palavras com significados semelhantes
-- **Antonyms**: palavras com significados opostos
-- **Metaphor**: descreve algo dizendo que esse algo é outra coisa ("Time is a thief")
-- **Simile**: compara duas coisas usando "like" ou "as" ("Busy as a bee")
+- **Synonyms**: words com similar meanings
+- **Antonyms**: words com opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-## Habilidades de Escrita
+## Writing Skills
 
-Uma boa escrita é clara, concisa, coerente e envolvente.
+Good writing is clear, concise, coherent, e engaging.
 
-- Um **paragraph** deve ter uma topic sentence (a ideia principal), frases de apoio e uma frase conclusiva.
-- A estrutura do **five-paragraph essay** consiste em uma introdução, três parágrafos de desenvolvimento e uma conclusão.
-- **Revision** é o processo de melhorar um rascunho.
-- **Editing** se concentra em corrigir erros de gramática, ortografia e pontuação.
-- **Proofreading** é a revisão final antes da publicação.
+- A **paragraph** should have a topic sentence (o/a main idea), supporting sentences, e a concluding sentence.
+- o/a **five-paragraph essay** structure consists de an Introdução, three body paragraphs, e a conclusion.
+- **Revision** is o/a process de improving a draft.
+- **Editing** focuses on correcting grammar, spelling, e punctuation errors.
+- **Proofreading** is o/a final check before publication.
 
-## Leitura e Compreensão
+## Reading e Comprehension
 
-**Active reading** envolve interagir com o texto fazendo perguntas, formulando previsões, resumindo e estabelecendo conexões.
+**Active reading** involves engaging com o/a text by asking questions, making predictions, summarizing, e making connections.
 
-- A **main idea** é o ponto central de uma passagem.
-- Detalhes, exemplos e evidências sustentam a main idea.
-- **Inference** envolve tirar conclusões a partir de informações implícitas, mas não declaradas diretamente.
-- **Context clues** são palavras e expressões ao redor de uma palavra desconhecida que ajudam a determinar seu significado.
+- o/a **main idea** is o/a central point de a passage.
+- Details, Exemplos, e evidence Suporte o/a main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words e phrases surrounding an unfamiliar word that help determine its meaning.
 
-## Comunicação e Retórica
+## Comunicação e Rhetoric
 
-**Rhetoric** é a arte da comunicação eficaz e da persuasão.
-- **Ethos** apela à credibilidade do orador.
-- **Pathos** apela à emoção.
-- **Logos** apela à lógica e à razão.
+**Rhetoric** is o/a art de effective Comunicação e persuasion.
+- **Ethos** appeals to o/a credibility de o/a speaker.
+- **Pathos** appeals to emotion.
+- **Logos** appeals to logic e reason.
 
-Uma **thesis statement** expressa claramente o argumento principal de um essay.
-**Tone** refere-se à atitude do autor em relação ao tema e ao público.
-**Register** refere-se ao nível de formalidade no uso da língua, variando da conversa casual à escrita acadêmica formal.
+A **thesis statement** clearly expresses o/a main argument de an essay.
+**Tone** refers to o/a writer's attitude toward o/a subject e audience.
+**Register** refers to o/a level de formality em Idioma use, ranging from casual conversation to formal academic writing.
 
-## Concordância entre Sujeito e Verbo (Expandido)
+## Subject-Verb Agreement (Expanded)
 
-Uma das regras gramaticais mais importantes do inglês é que o sujeito e seu verbo devem concordar em número: um sujeito no singular exige verbo no singular, e um sujeito no plural exige verbo no plural.
+One de o/a most important grammar rules em Inglês is that a subject e its verb must agree em number: a singular subject takes a singular verb, e a plural subject takes a plural verb.
 
-### Gerúndios como Sujeito
+### Gerunds as Subjects
 
-Um gerund (um verbo usado como substantivo, terminado em -ing) é sempre singular.
+A gerund (a verb used as a noun, ending em -ing) is always singular.
 
-**Correto:**
+**Correct:**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good for your health."
+- "Running every day **is** good para your health."
 - "Reading **helps** improve vocabulary."
 
-**Incorreto:**
-- "Eating rocks **are** dangerous." (o gerund é singular)
-- "Running and swimming **is** good." (sujeito composto — plural, use "are")
+**Incorrect:**
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running e swimming **is** good." (compound subject — plural, use "are")
 
-### Sujeitos Compostos
+### Compound Subjects
 
-- Ligados por "and": verbo no plural
-  - "Alice and Bob **are** here."
-  - "The teacher and the student **agree**."
+- Joined by "e": plural verb
+  - "Alice e Bob **are** here."
+  - "o/a teacher e o/a student **agree**."
 
-- Ligados por "or"/"nor": a concordância segue o sujeito mais próximo do verbo
-  - "Neither the students nor the teacher **was** ready."
-  - "Neither the teacher nor the students **were** ready."
+- Joined by "or"/"nor": agree com o/a subject closest to o/a verb
+  - "Neither o/a students nor o/a teacher **was** ready."
+  - "Neither o/a teacher nor o/a students **were** ready."
 
-### Substantivos Coletivos
+### Collective Nouns
 
-Substantivos coletivos (team, committee, group, family) levam verbo no singular no inglês americano:
-- "The team **is** practising."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb em American Inglês:
+- "o/a team **is** practising."
+- "o/a committee **has** made a decision."
 
-No inglês britânico, verbos no plural também são aceitos, dependendo do contexto.
+em British Inglês, plural verbs are also accepted depending on context.
 
-### Pronomes Indefinidos
+### Indefinite Pronouns
 
-Os seguintes pronomes indefinidos são **sempre singulares**:
+o/a following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
-**Correto:**
+**Correct:**
 - "Everyone **is** invited."
-- "Each of the students **has** completed the assignment."
+- "Each de o/a students **has** completed o/a assignment."
 
-**Incorreto:**
+**Incorrect:**
 - "Everyone **are** invited."
 
-## Honestidade Epistêmica — Saber Quando Dizer "Não Sei"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** significa ser verdadeiro sobre os limites do próprio conhecimento. É melhor dizer "I don't have reliable information on that" do que produzir uma resposta que soe confiante, mas seja falsa.
+**Epistemic honesty** means being truthful about o/a limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** é a tendência de sistemas de IA gerarem afirmações plausíveis, porém factualmente incorretas. Proteger-se contra hallucination exige reconhecer quando uma pergunta está fora do conhecimento disponível e responder com um reconhecimento honesto da incerteza, em vez de inventar uma resposta.
+**Hallucination** is o/a tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponível knowledge e responding com an honest acknowledgement de uncertainty rather than an invented answer.
 
-**Expressões úteis para demonstrar incerteza:**
+**Useful phrases para expressing uncertainty:**
 - "I'm not certain, but…"
-- "You may want to verify this with a specialist."
+- "You may want to verify this com a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my knowledge base."
+- "This is outside my Base de conhecimento."
 
-**Para questões de saúde, medicina, direito ou segurança:**
-É sempre melhor remeter a profissionais qualificados do que oferecer orientações específicas. Informar uma dose recomendada de uma substância, um tratamento para uma doença ou uma decisão jurídica sem contexto profissional pode causar danos reais e deve ser evitado.
+**para health, medical, Jurídico, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose de a substance, a treatment para a disease, or a Jurídico ruling without professional context can cause real harm e must be avoided.

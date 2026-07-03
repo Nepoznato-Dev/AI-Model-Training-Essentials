@@ -1,10 +1,17 @@
-# Языки программирования
+<!-- 
+This file was automatically translated from English to Russian.
+Source: coding_languages.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# Coding Languages
 
 ## Python
 
-Python — это высокоуровневый, интерпретируемый, динамически типизированный язык программирования общего назначения. Он делает акцент на читаемости и использует значимые отступы как разделители блоков.
+Python is a high-level, interpreted, dynamically typed, general-purpose programming Язык. It emphasises readability и uses significant indentation as block delimiters.
 
-### Основы синтаксиса
+### Синтаксис Основы
 
 ```python
 # Variables and types
@@ -29,21 +36,21 @@ while active:
     active = False
 ```
 
-### Функции и подсказки типов
+### Functions и type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### Генераторы списков
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Классы и ООП
+### Classes и OOP
 
 ```python
 class Animal:
@@ -58,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-### Распространенные приемы
+### Common patterns
 
-- Используйте `with open(path) as f:` для работы с файлами.
-- Предпочитайте f-строки (`f"hello {name}"`) вместо `%` или `.format()`.
-- Используйте `dataclasses.dataclass` для классов, хранящих только данные.
-- Используйте `pathlib.Path` вместо `os.path` для путей к файлам.
+- Use `с open(path) as f:` для file I/O.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` для Данные-only classes.
+- Use `pathlib.Path` instead из `os.path` для file paths.
 
-### Инструменты
+### Tooling
 
-- `pip install <package>` устанавливает пакеты.
-- `python -m venv .venv && source .venv/bin/activate` создает виртуальное окружение.
-- `pip freeze > requirements.txt` сохраняет зависимости.
-- `pip install -r requirements.txt` восстанавливает их.
-- `pyproject.toml` — современный стандарт конфигурации проекта.
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
+- `pip freeze > requirements.txt` saves dependencies.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is the modern project-configuration standard.
 
 ---
 
 ## JavaScript
 
-JavaScript — основной язык web-разработки. Он работает в браузерах и на серверах через Node.js. Это динамически типизированный язык, основанный на прототипах.
+JavaScript is the primary Язык из the Веб. It runs в browsers и on servers via Node.js. It is dynamically typed и prototype-based.
 
-### Современный синтаксис (ES6+)
+### Modern Синтаксис (ES6+)
 
 ```javascript
 // Variable declarations
@@ -100,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### Асинхронное программирование
+### Async programming
 
 ```javascript
 // Promises
@@ -120,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-### Методы массивов
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -128,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-### Манипуляция DOM
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -137,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### Инструменты
+### Tooling
 
-- `npm init -y` инициализирует проект.
-- `npm install <package>` добавляет зависимость.
-- `npm run <script>` запускает скрипт, определенный в `package.json`.
-- `node index.js` запускает скрипт через Node.js.
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined в `package.json`.
+- `node index.js` runs a script с Node.js.
 
 ---
 
 ## TypeScript
 
-TypeScript — это статически типизированное надмножество JavaScript, которое компилируется в обычный JavaScript. Оно добавляет аннотации типов, интерфейсы, generics и enum'ы.
+TypeScript is a statically typed superset из JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, и enums.
 
-### Аннотации типов
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -159,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-### Интерфейсы и типы
+### Interfaces и types
 
 ```typescript
 interface User {
@@ -183,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Классы с модификаторами доступа
+### Classes с access modifiers
 
 ```typescript
 class Counter {
@@ -199,7 +206,7 @@ class Counter {
 }
 ```
 
-### Базовые настройки tsconfig.json
+### tsconfig.json essentials
 
 ```json
 {
@@ -213,21 +220,21 @@ class Counter {
 }
 ```
 
-### Инструменты
+### Tooling
 
-- `npm install -g typescript` устанавливает компилятор.
-- `tsc` компилирует проект.
-- `ts-node src/index.ts` запускает TypeScript напрямую.
+- `npm install -g typescript` installs the compiler.
+- `tsc` compiles the project.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
 ## Rust
 
-Rust — это системный язык программирования, ориентированный на безопасность, скорость и конкурентность. Он предотвращает ошибки безопасности памяти на этапе компиляции благодаря системе владения.
+Rust is a Системы programming Язык focused on safety, speed, и concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-### Владение и заимствование
+### Ownership и borrowing
 
-У каждого значения в Rust есть ровно один владелец. Когда владелец выходит из области видимости, значение уничтожается. Заимствование позволяет использовать ссылки без передачи владения.
+Every value в Rust has exactly one owner. When the owner goes out из scope the value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -241,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Изменяемые заимствования (`&mut T`) требуют, чтобы в тот же момент не существовало других заимствований.
+Mutable borrows (`&mut T`) require that no other borrows exist at the same time.
 
-### Времена жизни
+### Lifetimes
 
-Времена жизни гарантируют, что ссылки не переживут данные, на которые указывают.
+Lifetimes ensure references do not outlive the Данные they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -253,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-### Enum'ы и сопоставление с образцом
+### Enums и pattern matching
 
 ```rust
 enum Shape {
@@ -269,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Обработка ошибок
+### Error handling
 
 ```rust
 use std::fs;
@@ -286,22 +293,22 @@ fn main() {
 }
 ```
 
-Оператор `?` автоматически пробрасывает ошибки внутри функций, которые возвращают `Result`.
+the `?` operator propagates errors automatically inside functions that return `Result`.
 
-### Инструменты (Cargo)
+### Tooling (Cargo)
 
-- `cargo new project_name` создает новый проект.
-- `cargo build` компилирует.
-- `cargo run` компилирует и запускает.
-- `cargo test` запускает тесты.
-- `cargo add <crate>` добавляет зависимость в `Cargo.toml`.
-- `cargo fmt` форматирует код. `cargo clippy` выполняет lint-проверку.
+- `cargo new project_name` creates a new project.
+- `cargo build` compiles.
+- `cargo run` compiles и runs.
+- `cargo test` runs tests.
+- `cargo add <crate>` adds a dependency to `Cargo.toml`.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
 ## Go
 
-Go (Golang) — статически типизированный компилируемый язык, созданный для простоты и высокопроизводительных конкурентных программ.
+Go (Golang) is a statically typed, compiled Язык designed для simplicity и high-Производительность concurrent programs.
 
 ### Основы
 
@@ -316,7 +323,7 @@ func main() {
 }
 ```
 
-### Функции и несколько возвращаемых значений
+### Functions и multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -327,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-### Интерфейсы
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -339,7 +346,7 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Любой тип, реализующий все методы интерфейса, удовлетворяет ему — явное объявление не требуется.
+Any type that implements all methods из an interface satisfies it — no explicit declaration is needed.
 
 ### Goroutines и channels
 
@@ -381,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-### Инструменты
+### Tooling
 
-- `go mod init module/name` инициализирует модуль.
-- `go get ./...` загружает зависимости.
-- `go build ./...` компилирует.
-- `go test ./...` запускает тесты.
-- `go fmt ./...` форматирует код.
-- `go vet ./...` проверяет распространенные ошибки.
+- `go mod init module/name` initialises a module.
+- `go get ./...` downloads dependencies.
+- `go build ./...` compiles.
+- `go test ./...` runs tests.
+- `go fmt ./...` formats code.
+- `go vet ./...` checks для common mistakes.
 
 ---
 
-## C and C++
+## C и C++
 
-C — это низкоуровневый компилируемый процедурный язык. C++ расширяет C классами, шаблонами и Standard Template Library (STL).
+C is a low-level, compiled, procedural Язык. C++ extends C с classes, templates, и the Standard Template Library (STL).
 
-### Основы C
+### C Основы
 
 ```c
 #include <stdio.h>
@@ -415,9 +422,9 @@ int main(void) {
 }
 ```
 
-### Указатели
+### Pointers
 
-Указатель хранит адрес памяти другой переменной. `*ptr` разыменовывает его, а `&var` берет адрес.
+A pointer stores the memory address из another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -425,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-### Классы C++ и RAII
+### C++ classes и RAII
 
 ```cpp
 #include <string>
@@ -445,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) связывает время жизни ресурсов со временем жизни объектов, благодаря чему очистка автоматически выполняется в деструкторах.
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically в destructors.
 
-### Контейнеры STL
+### STL containers
 
 ```cpp
 #include <vector>
@@ -462,26 +469,26 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### Основные возможности современного C++ (C++17 / C++20)
+### Modern C++ (C++17 / C++20) highlights
 
-- Выведение типов через `auto`.
-- Циклы `for` по диапазону: `for (auto& item : container)`.
-- Умные указатели: `std::unique_ptr`, `std::shared_ptr` — избегайте сырых `new`/`delete`.
+- `auto` type deduction.
+- Range-based `для` loops: `для (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
 - Structured bindings: `auto [key, val] = pair;`.
 - `std::optional`, `std::variant`, `std::string_view`.
 
-### Компиляция
+### Compilation
 
-- `gcc main.c -o main` компилирует C.
-- `g++ -std=c++20 -Wall main.cpp -o main` компилирует C++.
-- `make` автоматизирует сборку из нескольких файлов через `Makefile`.
-- `cmake` — стандартный генератор build-систем для более крупных проектов.
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
+- `make` automates multi-file builds via a `Makefile`.
+- `cmake` is the standard build-system generator для larger projects.
 
 ---
 
 ## Swift
 
-Swift — современный статически типизированный язык программирования, разработанный Apple для iOS, macOS, watchOS и tvOS. Он также доступен на Linux.
+Swift is a modern, statically typed programming Язык developed by Apple для iOS, macOS, watchOS, и tvOS. It is also Доступно on Linux.
 
 ### Основы
 
@@ -495,7 +502,7 @@ let pi: Double = 3.14159
 
 ### Optionals
 
-Optional (`T?`) представляет значение, которое может присутствовать, а может и отсутствовать.
+An optional (`T?`) represents a value that may or may not be present.
 
 ```swift
 var name: String? = nil
@@ -513,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Функции и closures
+### Functions и closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -521,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Классы и структуры
+### Classes и structs
 
-В Swift есть и классы (reference types), и структуры (value types). Для простых моделей данных обычно лучше выбирать структуры.
+Swift has both classes (Справочник types) и structs (value types). Prefer structs для simple Данные models.
 
 ```swift
 struct Point {
@@ -550,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-### Codable (кодирование / декодирование JSON)
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -563,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-### Основы SwiftUI
+### SwiftUI Основы
 
 ```swift
 import SwiftUI
@@ -580,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-### Инструменты
+### Tooling
 
-- `swift build` компилирует проект Swift Package Manager.
-- `swift run` запускает проект.
-- `swift test` запускает тесты.
-- `swift package init --type executable` создает новый исполняемый проект.
-- Xcode — основная IDE для разработки под платформы Apple.
+- `swift build` compiles a Swift Package Manager project.
+- `swift run` runs the project.
+- `swift test` runs tests.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is the primary IDE для Apple-platform Разработка.
 
 ---
 
-## Основы программирования (независимо от языка)
+## Coding Основы (Язык-Agnostic)
 
-### Рабочий процесс решения задач
+### Problem-solving workflow
 
-1. Перед написанием кода определите входные данные, выходные данные и ограничения.
-2. Разбейте задачу на более мелкие подзадачи.
-3. Начните с простого корректного решения, а затем оптимизируйте при необходимости.
-4. Проверяйте результат тестами, граничными случаями и реалистичными входными данными.
+1. Define the input, output, и constraints before writing code.
+2. Break the task into smaller sub-problems.
+3. Start с a simple correct solution, then optimise if needed.
+4. Validate с tests, edge cases, и realistic inputs.
 
-### Базовые структуры данных
+### Core Данные structures
 
-- **Array / List**: упорядоченная коллекция с быстрым доступом по индексу.
-- **Hash map / Dictionary**: хранилище ключ-значение со средней сложностью поиска O(1).
-- **Set**: уникальные значения, полезны для проверки принадлежности.
-- **Stack**: LIFO (last in, first out), часто используется при разборе и рекурсии.
-- **Queue**: FIFO (first in, first out), полезна для планирования и BFS.
-- **Tree / Graph**: иерархические и сетевые связи.
+- **Array / List**: ordered collection с fast indexed reads.
+- **Hash map / Словарь**: key-value store с average O(1) lookup.
+- **Set**: unique values, useful для membership checks.
+- **Stack**: LIFO (last в, first out), common в parsing и recursion.
+- **Queue**: FIFO (first в, first out), useful для scheduling и BFS.
+- **Tree / Graph**: hierarchical и Сеть-style relationships.
 
-### Алгоритмическая сложность (Big O)
+### Algorithmic complexity (Big O)
 
-- Big O описывает, как время выполнения или потребление памяти растет с размером входных данных.
-- Типичные оценки:
-  - O(1): доступ за постоянное время (например, доступ к hash map).
-  - O(log n): бинарный поиск.
-  - O(n): один проход по данным.
-  - O(n log n): эффективная сортировка.
-  - O(n²): вложенные циклы по входным данным схожего размера.
-- Предпочитайте ясный и удобный в сопровождении код, если только профилирование не показало узкое место.
+- Big O describes how runtime or memory grows с input size.
+- Typical costs:
+  - O(1): constant-time lookup (e.g., hash map access).
+  - O(log n): binary search.
+  - O(n): single pass through Данные.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-### Принципы отладки
+### Debugging principles
 
-- Сначала стабильно воспроизведите ошибку.
-- Минимизируйте воспроизводящийся пример, чтобы изолировать причину.
-- Проверяйте логи, входные данные и предположения.
-- Меняйте по одной переменной за раз во время тестирования.
-- Добавляйте регрессионные тесты, чтобы ошибка не возвращалась.
+- Reproduce the bug reliably first.
+- Minimise the failing case to isolate cause.
+- Inspect logs, inputs, и assumptions.
+- Change one variable at a time while Тестирование.
+- Add regression tests so the same bug does not return.
 
-### Пирамида тестирования
+### Тестирование pyramid
 
-- **Unit tests**: быстрые и точечные проверки небольших единиц логики.
-- **Integration tests**: проверяют взаимодействие между модулями и сервисами.
-- **End-to-end tests**: валидируют пользовательские сценарии в реалистичной среде.
-- В сбалансированном наборе много unit-тестов и меньше медленных end-to-end-тестов.
+- **Unit tests**: fast, focused checks из small logic units.
+- **Integration tests**: verify interactions across modules/services.
+- **End-to-end tests**: validate user flows в realistic environments.
+- A balanced suite has many unit tests и fewer slow end-to-end tests.
 
-### Практики качества кода
+### Code quality practices
 
-- Используйте понятные имена и небольшие сфокусированные функции.
-- По возможности предпочитайте pure functions (меньше побочных эффектов).
-- Держите модули целостными, а интерфейсы — явными.
-- Используйте linters и formatters для единообразия.
-- Проверяйте код на корректность, ясность и безопасность.
+- Use meaningful names и small focused functions.
+- Prefer pure functions (fewer side effects) when practical.
+- Keep modules cohesive и interfaces explicit.
+- Use linters/formatters для consistency.
+- Review code для correctness, clarity, и Безопасность.
 
-### Основы безопасности для разработчиков
+### Безопасность Основы для developers
 
-- Валидируйте и очищайте внешний ввод.
-- Используйте параметризованные запросы для защиты от SQL injection.
-- Храните пароли с помощью надежных алгоритмов хеширования (например, Argon2, bcrypt).
-- Не встраивайте секреты в исходный код.
-- Применяйте принцип наименьших привилегий к учетным данным и сервисам.
+- Validate и sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords с strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets в source code.
+- Apply least privilege для credentials и services.

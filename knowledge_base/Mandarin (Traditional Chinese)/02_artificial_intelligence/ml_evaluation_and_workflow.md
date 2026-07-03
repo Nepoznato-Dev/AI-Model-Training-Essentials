@@ -1,179 +1,186 @@
-# 機器學習評估和工作流程
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: ml_evaluation_and_workflow.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-ML 生命週期的實用指南——從問題框架到生產監控——重點關注指標、驗證和除錯。
+# 機器學習 Evaluation 和 Workflow
 
----
-
-## ML 工作流程（CRISP-ML）
-
-1. **業務理解**：定義目標和成功標準。
-2. **資料理解**：探索可用資料，識別品質問題。
-3. **資料準備**：清理、轉換和分割資料。
-4. **建模**：訓練模型，調整超參數。
-5. **評估**：根據指標評估效能。
-6. **部署**：在生產環境中提供模型服務。
-7. **監控**：追蹤漂移、效能和異常。
-
-這是一個反覆運算的迴圈——您將根據評估結果重新訪問早期步驟。
+A practical 指南 to 這 ML lifecycle — from problem framing to production monitoring — 與 a focus on metrics, validation, 和 debugging.
 
 ---
 
-## 資料分割
+## 這 ML Workflow (CRISP-ML)
 
-### 訓練 / 驗證 / 測試分割
-- **訓練集**（~70%）：用於擬合模型參數。
-- **驗證集**（~15%）：用於調整超參數和選擇模型變體。
-- **測試集**（~15%）：僅在最後使用一次以估計泛化效能。
+1. **商業 Understanding**: Define 這 objective 和 success criteria.
+2. **資料 Understanding**: Explore 可用 資料, identify quality issues.
+3. **資料 Preparation**: Clean, transform, 和 split 資料.
+4. **Modelling**: Train models, tune hyperparameters.
+5. **Evaluation**: Assess 效能 against metrics.
+6. **部署**: Serve 這 model 在 production.
+7. **Monitoring**: Track drift, 效能, 和 anomalies.
 
-**重要：**測試集必須在最終評估之前保持完全不動，以避免資料洩漏。
-
-### 交叉驗證（k 折）
-對於小型資料集，使用 k 折交叉驗證：將資料分成 k 折，在 k-1 上訓練，在剩餘的上驗證，並重複 k 次。平均效能。k=5 或 k=10 很常見。
-
-### 分層分割
-對於具有不平衡類別的分類，使用分層分割以在每個子集中保持類別比例。
-
-### 基於時間的分割
-對於時間序列資料，按時間順序分割（在過去訓練，在未來測試），而不是隨機分割。
+This is an iterative loop — you will revisit earlier steps based on evaluation results.
 
 ---
 
-## 評估指標
+## 資料 Splitting
 
-### 分類指標
+### Train / Validation / Test Split
+- **Training set** (~70%): Used to fit 這 model parameters.
+- **Validation set** (~15%): Used to tune hyperparameters 和 select model variants.
+- **Test set** (~15%): Used only once at 這 very end to estimate generalisation 效能.
 
-| 指標 | 測量內容 | 最適用於 |
+**Important:** 這 test set must be kept completely untouched until final evaluation to avoid 資料 leakage.
+
+### Cross-Validation (k-fold)
+為 small datasets, use k-fold cross-validation: split 資料 into k folds, train on k-1, validate on 這 remaining, 和 repeat k times. Average 這 效能. k=5 or k=10 is common.
+
+### Stratified Splitting
+為 classification 與 imbalanced classes, use stratified splits to preserve class proportions 在 each subset.
+
+### Time-Based Splitting
+為 time-series 資料, split chronologically (train on past, test on 未來) rather than randomly.
+
+---
+
+## Evaluation Metrics
+
+### Classification Metrics
+
+| Metric | What it measures | Best used 為 |
 |--------|------------------|---------------|
-| **準確度** | (TP + TN) / (TP + TN + FP + FN) | 平衡資料集 |
-| **精確度** | TP / (TP + FP) | 當誤報成本高時（例如，垃圾郵件偵測） |
-| **召回率** | TP / (TP + FN) | 當漏報成本高時（例如，癌症篩檢） |
-| **F1 分數** | 精確度和召回率的調和平均數 | 不平衡資料集，單一數字指標 |
-| **AUC-ROC** | ROC 曲線下面積；TPR 和 FPR 之間的權衡 | 獨立於閾值的一般分類器效能 |
-| **AUC-PR** | 精確度-召回率曲線下面積 | 高度不平衡的資料集 |
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
+| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
+| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
+| **F1-score** | Harmonic mean 的 precision 和 recall | Imbalanced datasets, single-number metric |
+| **AUC-ROC** | Area under 這 ROC curve; tradeoff between TPR 和 FPR | General classifier 效能 independent 的 threshold |
+| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
 
-**定義：**
-- TP = 真陽性
-- TN = 真陰性
-- FP = 偽陽性（第一類錯誤）
-- FN = 偽陰性（第二類錯誤）
+**Definitions:**
+- TP = True Positive
+- TN = True Negative
+- FP = False Positive (Type I error)
+- FN = False Negative (Type II error)
 
-### 迴歸指標
+### Regression Metrics
 
-| 指標 | 測量內容 | 對離群值的敏感度 |
+| Metric | What it measures | Sensitivity to outliers |
 |--------|------------------|--------------------------|
-| **MSE**（均方誤差） | 平均平方差 | 高 |
-| **RMSE**（均方根誤差） | MSE 的平方根（與目標單位相同） | 高 |
-| **MAE**（平均絕對誤差） | 平均絕對差 | 低 |
-| **R²**（決定係數） | 解釋的變異比例 | 不直接，但間接對離群值敏感 |
+| **MSE** (Mean Squared Error) | Average squared difference | High |
+| **RMSE** (Root Mean Squared Error) | Square root 的 MSE (same units as target) | High |
+| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
+| **R²** (Coefficient 的 Determination) | Proportion 的 variance explained | None directly, but sensitive to outliers indirectly |
 
-### 排名和檢索指標
-- **Precision@k**：前 k 個推薦中相關項目的比例。
-- **Recall@k**：前 k 個中出現的所有相關項目的比例。
-- **NDCG**（標準化折扣累積增益）：考慮位置相關性。
-- **命中率**：前 k 個中是否出現相關項目。
+### Ranking 和 Retrieval Metrics
+- **Precision@k**: Fraction 的 relevant items among top-k recommendations.
+- **Recall@k**: Fraction 的 all relevant items that appear 在 top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain): Accounts 為 position relevance.
+- **Hit Rate**: Whether a relevant item appears 在 這 top-k.
 
-### 生成式 / LLM 指標
-- **困惑度**：模型對保留文字的「驚訝」程度（越低越好）。
-- **BLEU**：與參考翻譯的 n-gram 重疊（關注精確度）。
-- **ROUGE**：針對摘要的召回導向重疊。
-- **BERTScore**：使用上下文嵌入的語義相似度（比 BLEU 更健壯）。
-- **METEOR**：與 WordNet 同義詞和詞幹對齊。
-
----
-
-## 評估陷阱
-
-### 資料洩漏
-當測試集的資訊無意中影響訓練時發生。
-- **預防：**絕不將測試資料用於特徵工程、標準化或超參數調整。
-- **偵測：**如果您的模型得分高得可疑，請懷疑洩漏。
-
-### 過度擬合
-模型在訓練資料上表現良好，但在驗證/測試上表現不佳。
-- **緩解：**使用正則化、提前停止、簡化架構或收集更多資料。
-
-### 欠擬合
-模型在訓練和驗證上都表現不佳。
-- **緩解：**使用更複雜的模型、新增特徵或減少正則化。
-
-### 不平衡資料
-- **緩解：**使用類別權重、過採樣（SMOTE）、欠採樣，或使用適當的指標（F1、AUC-PR）而不是準確度。
-
-### 時間漂移（概念漂移）
-特徵和目標之間的關係隨時間變化。
-- **緩解：**定期重新訓練、監控效能、使用漂移偵測演算法。
+### Generative / LLM Metrics
+- **Perplexity**: How "surprised" 這 model is by a held-out text (lower is better).
+- **BLEU**: n-gram overlap 與 參考 translations (precision-focused).
+- **ROUGE**: Recall-oriented overlap 為 summarisation.
+- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
+- **METEOR**: Aligns to WordNet synonyms 和 stems.
 
 ---
 
-## 超參數調整
+## Evaluation Pitfalls
 
-- **網格搜尋**：詳盡嘗試預定義的超參數組合集的所有組合。簡單但計算量大。
-- **隨機搜尋**：從分佈中採樣隨機組合。對於高維空間比網格搜尋更有效。
-- **貝葉斯最佳化**：建立目標函式的機率模型並智慧地選擇超參數。函式庫：Optuna、Hyperopt、scikit-optimize。
-- **自動調整**：使用 Optuna、Ray Tune 或 Weights & Biases Sweeps 等工具進行分散式調整。
+### 資料 Leakage
+Occurs when information from 這 test set inadvertently influences training.
+- **Prevent:** Never use test 資料 為 feature engineering, normalisation, or hyperparameter tuning.
+- **Detect:** If your model scores suspiciously high, suspect leakage.
 
-**常見超參數的建議搜尋範圍：**
+### Overfitting
+Model performs well on training 資料 but poorly on validation/test.
+- **Mitigate:** Use regularisation, early stopping, simplify 架構, or collect more 資料.
 
-| 參數 | 建議範圍（對數刻度） |
+### Underfitting
+Model performs poorly on both training 和 validation.
+- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
+
+### Imbalanced 資料
+- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
+
+### Temporal Drift (Concept Drift)
+這 relationship between features 和 target changes over time.
+- **Mitigate:** Retrain periodically, monitor 效能, use drift detection algorithms.
+
+---
+
+## Hyperparameter Tuning
+
+- **Grid Search**: Exhaustively try all combinations 的 a predefined set 的 hyperparameters. Simple but computationally expensive.
+- **Random Search**: Sample random combinations from distributions. More efficient than grid search 為 high-dimensional spaces.
+- **Bayesian Optimisation**: Builds a probabilistic model 的 這 objective function 和 selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps 為 distributed tuning.
+
+**Suggested search ranges 為 common hyperparameters:**
+
+| Parameter | Suggested range (log-scale) |
 |-----------|-----------------------------|
-| 學習率 | 1e-5 到 1e-1 |
-| 批次大小 | 16、32、64、128、256 |
-| 層數（神經網路） | 2 到 6 |
-| 神經元數（神經網路） | 32 到 1024 |
-| 正則化（L2） | 1e-6 到 1e-2 |
-| 樹深度（XGBoost） | 3 到 12 |
+| Learning rate | 1e-5 to 1e-1 |
+| Batch size | 16, 32, 64, 128, 256 |
+| Number 的 layers (NN) | 2 to 6 |
+| Number 的 neurons (NN) | 32 to 1024 |
+| Regularisation (L2) | 1e-6 to 1e-2 |
+| Tree depth (XGBoost) | 3 to 12 |
 
 ---
 
-## 模型選擇和驗證
+## Model Selection 和 Validation
 
-1. **基線模型**：從簡單的啟發式或簡單模型（例如，邏輯迴歸、均值預測器）開始以建立下限。
-2. **候選模型**：訓練多個模型家族（例如，隨機森林、XGBoost、神經網路）。
-3. **交叉驗證**驗證集上的每個候選。
-4. **比較指標**（帶置信區間）並選擇最佳候選。
-5. **在保留的測試集上進行最終評估**。
-6. **錯誤分析**：查看模型出錯的範例。識別模式（例如，稀有類別、模糊輸入）並將見解回饋到資料準備或特徵工程中。
-
----
-
-## 部署和監控
-
-### 服務模式
-- **批次推論**：離線處理大量資料（例如，夜間推薦）。
-- **線上推論**：透過 API 進行即時預測（例如，信用評分、欺詐偵測）。
-- **串流推論**：事件驅動、低延遲即時（例如，IoT 感測器警報）。
-
-### 模型監控
-- **效能監控**：在有地面真相時，追蹤即時資料上的準確度/F1 隨時間的變化。
-- **資料漂移**：監控輸入特徵分佈的變化（例如，使用 PSI——族群穩定性指數）。
-- **概念漂移**：監控輸入和輸出之間關係的變化。
-- **預測漂移**：追蹤預測輸出的分佈。
-- **延遲和吞吐量**：確保滿足 SLA（服務級別協定）。
-
-### 日誌記錄和警報
-- 記錄所有預測請求和回應（帶匿名化）。
-- 設定警報：
-  - 效能顯著下降。
-  - 缺失或無效輸入的百分比高。
-  - 模型輸出超出預期範圍。
-
-### 模型版本控制和登錄檔
-- 使用模型登錄檔（例如，MLflow、Weights & Biases、Sagemaker Model Registry）來儲存和版本模型、元資料和評估結果。
-- 將訓練程式碼和資料版本（透過 DVC 或 Git LFS）與模型一起儲存。
+1. **Baseline model**: Start 與 a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
+2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural 網路).
+3. **Cross-validate** each candidate on 這 validation set.
+4. **Compare metrics** (與 confidence intervals) 和 select 這 best candidate.
+5. **Final evaluation** on 這 held-out test set.
+6. **Error analysis**: Look at 範例 這 model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) 和 feed insights back into 資料 preparation or feature engineering.
 
 ---
 
-## 實用工作流程檢查清單
+## 部署 和 Monitoring
 
-- [ ] 問題框架和成功指標已定義。
-- [ ] 已執行資料探索（缺失值、離群值、分佈）。
-- [ ] 已建立訓練/驗證/測試分割（如需要則分層）。
-- [ ] 已建立基線模型。
-- [ ] 已訓練和驗證候選模型。
-- [ ] 已調整超參數。
-- [ ] 透過交叉驗證選擇最佳模型。
-- [ ] 在測試集上進行最終評估。
-- [ ] 已執行錯誤分析。
-- [ ] 部署計畫已準備好（服務基礎設施）。
-- [ ] 已設定監控儀表板。
-- [ ] 已完成文件（資料卡、模型卡）。
+### Serving Patterns
+- **Batch inference**: Process large volumes 的 資料 offline (e.g., nightly recommendations).
+- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
+- **Streaming inference**: Event-driven, real-time 與 low latency (e.g., IoT sensor alerts).
+
+### Model Monitoring
+- **效能 monitoring**: Track accuracy/F1 over time on live 資料 (when ground truth is 可用).
+- **資料 drift**: Monitor changes 在 input feature distributions (e.g., using PSI – Population Stability Index).
+- **Concept drift**: Monitor changes 在 這 relationship between inputs 和 outputs.
+- **Prediction drift**: Track 這 distribution 的 predicted outputs.
+- **Latency 和 throughput**: Ensure SLAs (Service Level Agreements) are met.
+
+### Logging 和 Alerting
+- Log all prediction requests 和 responses (與 anonymisation).
+- Set alerts 為:
+  - Significant drop 在 效能.
+  - High percentage 的 missing or invalid inputs.
+  - Model outputs outside expected bounds.
+
+### Model Versioning 和 Registry
+- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store 和 version models, metadata, 和 evaluation results.
+- Store 這 training code 和 資料 version (via DVC or Git LFS) alongside 這 model.
+
+---
+
+## Practical Workflow Checklist
+
+- [ ] Problem framed 和 success metric defined.
+- [ ] 資料 exploration performed (missing values, outliers, distribution).
+- [ ] Train/validation/test split created (stratified if needed).
+- [ ] Baseline model established.
+- [ ] Candidate models trained 和 validated.
+- [ ] Hyperparameters tuned.
+- [ ] Best model selected via cross-validation.
+- [ ] Final evaluation on test set.
+- [ ] Error analysis performed.
+- [ ] 部署 plan ready (serving infrastructure).
+- [ ] Monitoring dashboard set up.
+- [ ] Documentation (資料 card, model card) completed.

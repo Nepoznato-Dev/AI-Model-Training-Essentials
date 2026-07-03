@@ -1,33 +1,40 @@
-# 資料庫系統
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: database_systems.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 資料庫基礎
+# 資料庫 系統
 
-### 什麼是資料庫？
-資料庫是以電子方式儲存的結構化資訊的有組織集合，旨在高效地檢索、插入、更新和刪除資料。
+## 資料庫 基礎
 
-### 資料庫管理系統（DBMS）
-DBMS 是與終端使用者、應用程式以及資料庫本身互動的軟體，用於擷取和分析資料。範例：MySQL、PostgreSQL、Oracle、MongoDB。
+### What is a 資料庫?
+A 資料庫 is an organized collection 的 structured information stored electronically, designed 為 efficient retrieval, insertion, updating, 和 deletion 的 資料.
 
-### 關鍵概念
-- **Schema**：資料庫的結構 / 組織方式（表、欄位、關係）
-- **Instance**：某一時刻實際儲存的資料
-- **ACID Properties**：原子性、一致性、隔離性、持久性
-- **CAP Theorem**：一致性、可用性、分區容錯性（通常三者取其二）
-- **Normalization**：透過組織資料來減少冗餘
-- **Denormalization**：透過增加冗餘來提升讀取效能
+### 資料庫 管理 系統 (DBMS)
+Software that interacts 與 end users, applications, 和 這 資料庫 itself to capture 和 analyze 資料. 範例: MySQL, PostgreSQL, Oracle, MongoDB.
 
-## 關係型資料庫（SQL）
+### Key Concepts
+- **Schema**: Structure/organization 的 資料庫 (tables, fields, relationships)
+- **Instance**: Actual 資料 stored at a particular moment
+- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
+- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
+- **Normalization**: Organizing 資料 to reduce redundancy
+- **Denormalization**: Adding redundancy to improve read 效能
 
-### 核心概念
-- **Tables**：行（記錄）和列（欄位）
-- **Primary Key**：每一行的唯一識別符號
-- **Foreign Key**：引用另一張表中的主鍵
-- **Indexes**：提升查詢速度的資料結構
-- **Views**：基於查詢結果生成的虛擬表
-- **Stored Procedures**：預編譯的 SQL 程式碼塊
-- **Triggers**：資料變更時自動執行的動作
+## Relational Databases (SQL)
 
-### SQL 操作（CRUD）
+### Core Concepts
+- **Tables**: Rows (records) 和 columns (fields)
+- **Primary Key**: Unique identifier 為 each row
+- **Foreign Key**: 參考 to primary key 在 another table
+- **Indexes**: 資料 structures improving query speed
+- **Views**: Virtual tables based on query results
+- **Stored Procedures**: Precompiled SQL code blocks
+- **Triggers**: Automatic actions on 資料 changes
+
+### SQL Operations (CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -43,265 +50,265 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-### 連線（Joins）
-- **INNER JOIN**：返回兩張表中匹配的行
-- **LEFT JOIN**：返回左表全部行及右表中的匹配行
-- **RIGHT JOIN**：返回右表全部行及左表中的匹配行
-- **FULL OUTER JOIN**：返回兩張表中的全部行
-- **CROSS JOIN**：返回兩張表的笛卡爾積
-- **SELF JOIN**：表與自身連線
+### Joins
+- **INNER JOIN**: Returns matching rows from both tables
+- **LEFT JOIN**: All rows from left table, matches from right
+- **RIGHT JOIN**: All rows from right table, matches from left
+- **FULL OUTER JOIN**: All rows from both tables
+- **CROSS JOIN**: Cartesian product 的 both tables
+- **SELF JOIN**: Table joined 與 itself
 
-### 正規化形式
-- **1NF**：值不可再分，不存在重複組
-- **2NF**：滿足 1NF，且不存在部分依賴（所有非鍵屬性依賴於整個主鍵）
-- **3NF**：滿足 2NF，且不存在傳遞依賴（非鍵屬性不依賴於其他非鍵屬性）
-- **BCNF**：比 3NF 更嚴格，每個決定因素都是候選鍵
-- **4NF**：不存在多值依賴
-- **5NF**：不存在連線依賴
+### Normalization Forms
+- **1NF**: Atomic values, no repeating groups
+- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
+- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
+- **BCNF**: Stronger 3NF, every determinant is a candidate key
+- **4NF**: No multi-valued dependencies
+- **5NF**: No join dependencies
 
-### 常見 RDBMS
-- **PostgreSQL**：功能先進、可擴充套件、符合 ACID
-- **MySQL**：應用廣泛、讀取速度快、常見於 Web 應用
-- **Oracle**：企業特性豐富、可擴充套件性強、成本較高
-- **SQL Server**：適合微軟生態，整合工具完善
-- **SQLite**：嵌入式、無伺服器、輕量
-- **MariaDB**：MySQL 分支，開源
+### Popular RDBMS
+- **PostgreSQL**: 高級 features, extensible, ACID-compliant
+- **MySQL**: Widely used, fast reads, 網路 applications
+- **Oracle**: Enterprise features, scalability, expensive
+- **SQL Server**: Microsoft ecosystem, integrated tools
+- **SQLite**: Embedded, serverless, lightweight
+- **MariaDB**: MySQL fork, open-source
 
-## NoSQL 資料庫
+## NoSQL Databases
 
-### NoSQL 資料庫的型別
+### Types 的 NoSQL Databases
 
-#### 文件資料庫
-- **Structure**：類似 JSON 的文件（BSON）
-- **Use Cases**：內容管理、目錄、使用者畫像
-- **Examples**：MongoDB、CouchDB、DocumentDB
+#### Document Stores
+- **Structure**: JSON-like documents (BSON)
+- **Use Cases**: Content 管理, catalogs, user profiles
+- **範例**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### 鍵值資料庫
-- **Structure**：簡單的鍵值對
-- **Use Cases**：快取、會話、購物車
-- **Examples**：Redis、DynamoDB、Riak
-- **Characteristics**：速度快、簡單、查詢能力有限
+#### Key-Value Stores
+- **Structure**: Simple key-value pairs
+- **Use Cases**: Caching, sessions, shopping carts
+- **範例**: Redis, DynamoDB, Riak
+- **Characteristics**: Fast, simple, limited querying
 
-#### 列族資料庫
-- **Structure**：列按族進行分組
-- **Use Cases**：大資料、分析、時序資料
-- **Examples**：Cassandra、HBase、ScyllaDB
-- **Characteristics**：寫入最佳化、分散式、可擴充套件
+#### Column-Family Stores
+- **Structure**: Columns grouped into families
+- **Use Cases**: Big 資料, analytics, time-series
+- **範例**: Cassandra, HBase, ScyllaDB
+- **Characteristics**: Write-optimized, distributed, scalable
 
-#### 圖資料庫
-- **Structure**：節點、邊、屬性
-- **Use Cases**：社交網路、欺詐檢測、推薦
-- **Examples**：Neo4j、Amazon Neptune、ArangoDB
-- **Query Language**：Cypher（Neo4j）、Gremlin
+#### Graph Databases
+- **Structure**: Nodes, edges, properties
+- **Use Cases**: Social networks, fraud detection, recommendations
+- **範例**: Neo4j, Amazon Neptune, ArangoDB
+- **Query 語言**: Cypher (Neo4j), Gremlin
 
-### 何時使用 NoSQL
-- Schema 需要靈活演進
-- 需要橫向擴充套件
-- 寫入吞吐量高
-- 資料具有層次 / 巢狀結構
-- 面向分散式系統
-- 即時應用場景
+### When to Use NoSQL
+- Flexible/evolving schema
+- Horizontal scaling requirements
+- High write throughput
+- Hierarchical/nested 資料
+- Distributed 系統
+- Real-time applications
 
-## 資料庫設計
+## 資料庫 Design
 
-### 實體關係建模
-- **Entities**：物件 / 概念（Customer、Product、Order）
-- **Attributes**：實體的屬性（名稱、價格、日期）
-- **Relationships**：實體之間的關係（一對一、一對多、多對多）
-- **Cardinality**：關係中例項數量的約束
+### Entity-Relationship Modeling
+- **Entities**: Objects/concepts (Customer, Product, Order)
+- **Attributes**: Properties 的 entities (name, price, date)
+- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
+- **Cardinality**: Number 的 instances 在 relationship
 
-### Schema 設計模式
-- **Single Table Inheritance**：所有型別放在一張表中，用型別識別符號區分
-- **Class Table Inheritance**：基類與子類分別使用獨立的表
-- **Concrete Table Inheritance**：每個具體類使用獨立的表
-- **Junction Tables**：用於解決多對多關係
-- **Audit Tables**：跟蹤變更（created_at、updated_at、deleted_at）
+### Schema Design Patterns
+- **Single Table Inheritance**: All types 在 one table 與 type discriminator
+- **Class Table Inheritance**: Separate tables 為 base 和 subclasses
+- **Concrete Table Inheritance**: Separate table 為 each concrete class
+- **Junction Tables**: Resolve many-to-many relationships
+- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
 
-### 索引策略
-- **B-Tree**：預設索引，適合範圍查詢和排序
-- **Hash**：適合精確匹配查詢
-- **Bitmap**：適合低基數字段（如 gender、status）
-- **Full-Text**：支援全文檢索
-- **Spatial**：適合地理資料（GIS）
-- **Composite**：多個列組合而成
-- **Covering**：包含查詢所需的全部列
+### Indexing Strategies
+- **B-Tree**: Default, range queries, sorting
+- **Hash**: Exact match lookups
+- **Bitmap**: Low-cardinality columns (gender, status)
+- **Full-Text**: Text search capabilities
+- **Spatial**: Geographic 資料 (GIS)
+- **Composite**: Multiple columns combined
+- **Covering**: Includes all columns needed 為 query
 
-## 查詢最佳化
+## Query Optimization
 
-### 執行計劃
-- 瞭解資料庫如何執行查詢
-- 識別瓶頸（全表掃描、缺少索引）
-- 工具：EXPLAIN、EXPLAIN ANALYZE
+### Execution Plans
+- Understanding how 資料庫 executes queries
+- Identifying bottlenecks (full table scans, missing indexes)
+- Tools: EXPLAIN, EXPLAIN ANALYZE
 
-### 最佳化技術
-- **Index Usage**：確保查詢使用合適的索引
-- **Query Rewriting**：簡化複雜查詢
-- **Join Optimization**：選擇正確的連線型別與順序
-- **Partitioning**：拆分大表（範圍、雜湊、列表）
-- **Materialized Views**：預先計算查詢結果
-- **Query Caching**：快取高頻查詢結果
+### Optimization Techniques
+- **Index Usage**: Ensure queries use appropriate indexes
+- **Query Rewriting**: Simplify complex queries
+- **Join Optimization**: Choose correct join types 和 order
+- **Partitioning**: Split large tables (range, hash, list)
+- **Materialized Views**: Pre-computed query results
+- **Query Caching**: Store frequent query results
 
-### 常見效能問題
-- **N+1 Query Problem**：關聯資料獲取低效
-- **Missing Indexes**：大表查詢發生全表掃描
-- **Over-indexing**：索引過多導致寫入變慢
-- **Lock Contention**：事務相互等待鎖
-- **Inefficient Queries**：`SELECT *`、不必要的連線
+### Common 效能 Issues
+- **N+1 Query Problem**: Fetching related 資料 inefficiently
+- **Missing Indexes**: Full table scans on large tables
+- **Over-indexing**: Slow writes due to too many indexes
+- **Lock Contention**: Transactions waiting 為 locks
+- **Inefficient Queries**: SELECT *, unnecessary joins
 
-## 事務與併發
+## Transactions 和 Concurrency
 
-### 事務隔離級別
-- **READ UNCOMMITTED**：隔離性最低，可能出現髒讀
-- **READ COMMITTED**：只能看到已提交資料（多數資料庫預設）
-- **REPEATABLE READ**：同一事務內同一查詢返回相同結果
-- **SERIALIZABLE**：隔離性最高，事務按順序執行
+### Transaction Isolation Levels
+- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
+- **READ COMMITTED**: Only committed 資料 visible (default 在 most DBs)
+- **REPEATABLE READ**: Same query returns same results within transaction
+- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
 
-### 併發控制
-- **Pessimistic Locking**：在存取前先加鎖
-- **Optimistic Locking**：提交前檢查版本
-- **MVCC (Multi-Version Concurrency Control)**：維護同一行的多個版本
-- **Row-Level Locking**：鎖定特定行
-- **Table-Level Locking**：鎖定整張表
+### Concurrency Control
+- **Pessimistic Locking**: Lock resources before access
+- **Optimistic Locking**: Check version before commit
+- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions 的 rows
+- **Row-Level Locking**: Lock specific rows
+- **Table-Level Locking**: Lock entire table
 
-### 死鎖
-- 事務之間形成迴圈依賴並相互等待
-- 預防方式：統一加鎖順序、設定超時、啟用死鎖檢測
-- 解決方式：中止其中一個事務
+### Deadlocks
+- Circular dependency where transactions wait 為 each other
+- Prevention: Consistent lock ordering, timeouts, deadlock detection
+- Resolution: Abort one transaction
 
-## 複製與擴充套件
+## Replication 和 Scaling
 
-### 複製型別
-- **Master-Slave**：一個主庫，多個只讀副本
-- **Master-Master**：多個主庫，雙向複製
-- **Multi-Master**：多個主庫，需要衝突解決機制
-- **Chain Replication**：透過節點鏈路順序複製
+### Replication Types
+- **Master-Slave**: One primary, multiple read replicas
+- **Master-Master**: Multiple primaries, bidirectional replication
+- **Multi-Master**: N primaries, conflict resolution needed
+- **Chain Replication**: Sequential replication through nodes
 
-### 擴充套件方式
-- **Vertical Scaling**：提升單臺伺服器資源（CPU、RAM、儲存）
-- **Horizontal Scaling**：增加更多伺服器（分片、分區）
-- **Read Replicas**：分擔讀流量
-- **Sharding**：按鍵 / 範圍 / 雜湊將資料分佈到多臺伺服器
-- **Federation**：按功能 / 服務拆分
+### Scaling Approaches
+- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
+- **Horizontal Scaling**: Add more servers (sharding, partitioning)
+- **Read Replicas**: Offload read traffic
+- **Sharding**: Split 資料 across servers by key/range/hash
+- **Federation**: Split by function/service
 
-### 一致性模型
-- **Strong Consistency**：所有節點在同一時間看到相同資料
-- **Eventual Consistency**：節點經過一段時間後最終收斂
-- **Causal Consistency**：保持因果關係順序
-- **Read-Your-Writes**：使用者能立即看到自己剛寫入的更新
+### Consistency Models
+- **Strong Consistency**: All nodes see same 資料 at same time
+- **Eventual Consistency**: Nodes converge over time
+- **Causal Consistency**: Cause-effect relationships preserved
+- **Read-Your-Writes**: User sees their own updates immediately
 
-## 備份與恢復
+## Backup 和 Recovery
 
-### 備份策略
-- **Full Backup**：完整資料庫副本
-- **Incremental Backup**：自上次備份以來的變更
-- **Differential Backup**：自上次完整備份以來的變更
-- **Point-in-Time Recovery**：恢復到特定時間點
-- **Continuous Backup**：即時複製到備份系統
+### Backup Strategies
+- **Full Backup**: 完整 資料庫 copy
+- **Incremental Backup**: Changes since last backup
+- **Differential Backup**: Changes since last full backup
+- **Point-在-Time Recovery**: Restore to specific moment
+- **Continuous Backup**: Real-time replication to backup
 
-### 恢復流程
-- **RTO (Recovery Time Objective)**：可接受的最長停機時間
-- **RPO (Recovery Point Objective)**：可接受的最大資料丟失量
-- **Disaster Recovery Plan**：針對故障的文件化恢復流程
-- **Testing**：定期執行恢復演練
+### Recovery Procedures
+- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
+- **RPO (Recovery Point Objective)**: Maximum acceptable 資料 loss
+- **Disaster Recovery Plan**: Documented procedures 為 failures
+- **測試**: Regular recovery drills
 
 ## 安全
 
-### 存取控制
-- **Authentication**：驗證使用者身份
-- **Authorization**：授予許可權（GRANT、REVOKE）
-- **Roles**：將許可權分組，便於管理
-- **Principle of Least Privilege**：僅授予必要的最小許可權
+### Access Control
+- **Authentication**: Verify user identity
+- **Authorization**: Grant permissions (GRANT, REVOKE)
+- **Roles**: Group permissions 為 easier 管理
+- **Principle 的 Least Privilege**: Minimum necessary access
 
-### 資料保護
-- **Encryption at Rest**：對靜態儲存資料進行加密
-- **Encryption in Transit**：連線使用 TLS/SSL 加密
-- **Masking**：在非生產環境中隱藏敏感資料
-- **Tokenization**：用令牌替代敏感資料
+### 資料 Protection
+- **Encryption at Rest**: Encrypt stored 資料
+- **Encryption 在 Transit**: TLS/SSL 為 connections
+- **Masking**: Hide sensitive 資料 在 non-production
+- **Tokenization**: Replace sensitive 資料 與 tokens
 
-### 常見漏洞
-- **SQL Injection**：使用者輸入中包含惡意 SQL
-- **Privilege Escalation**：獲得未授權存取權限
-- **Audit Logging**：跟蹤所有資料庫活動
-- **Compliance**：滿足 GDPR、HIPAA、PCI-DSS 等要求
+### Common Vulnerabilities
+- **SQL Injection**: Malicious SQL 在 user input
+- **Privilege Escalation**: Gaining unauthorized access
+- **Audit Logging**: Track all 資料庫 activities
+- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
 
-## 現代資料庫技術
+## Modern 資料庫 Technologies
 
-### 雲資料庫
-- **AWS**：RDS、Aurora、DynamoDB、Redshift
-- **Google Cloud**：Cloud SQL、Spanner、Bigtable、Firestore
-- **Azure**：SQL Database、Cosmos DB、Synapse
-- **Benefits**：託管服務、自動伸縮、內建備份
+### Cloud Databases
+- **AWS**: RDS, Aurora, DynamoDB, Redshift
+- **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
+- **Azure**: SQL 資料庫, Cosmos DB, Synapse
+- **Benefits**: Managed service, auto-scaling, backups included
 
-### NewSQL 資料庫
-- 結合 SQL 的一致性與 NoSQL 的可擴充套件性
-- **Examples**：CockroachDB、TiDB、YugabyteDB、Google Spanner
-- **Features**：分散式、支援 ACID 事務、橫向擴充套件
+### NewSQL Databases
+- Combine SQL consistency 與 NoSQL scalability
+- **範例**: CockroachDB, TiDB, YugabyteDB, Google Spanner
+- **Features**: Distributed, ACID transactions, horizontal scaling
 
-### 時序資料庫
-- 針對帶時間戳的資料進行了最佳化
-- **Examples**：InfluxDB、TimescaleDB、Prometheus
-- **Use Cases**：IoT、監控、金融資料
+### Time-Series Databases
+- Optimized 為 timestamped 資料
+- **範例**: InfluxDB, TimescaleDB, Prometheus
+- **Use Cases**: IoT, monitoring, financial 資料
 
-### 向量資料庫
-- 用於儲存和查詢嵌入向量
-- **Examples**：Pinecone、Milvus、Weaviate、Qdrant
-- **Use Cases**：語義搜尋、推薦系統、AI 應用
+### Vector Databases
+- Store 和 query embedding vectors
+- **範例**: Pinecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Semantic search, recommendation 系統, AI applications
 
-### 多模型資料庫
-- 在單一系統中支援多種資料模型
-- **Examples**：ArangoDB、OrientDB、Azure Cosmos DB
-- **Benefit**：無需維護多種資料庫也能獲得靈活性
+### Multi-Model Databases
+- 支援 multiple 資料 models 在 single system
+- **範例**: ArangoDB, OrientDB, Azure Cosmos DB
+- **Benefit**: Flexibility without multiple databases
 
-## ORM 與資料存取
+## ORMs 和 資料 Access
 
-### 物件關係映射
-- **Purpose**：將資料庫表映射為程式設計物件
+### Object-Relational Mapping
+- **Purpose**: Map 資料庫 tables to programming objects
 - **Popular ORMs**:
-  - Python: SQLAlchemy、Django ORM、Peewee
-  - JavaScript: Sequelize、Prisma、TypeORM
-  - Java: Hibernate、JPA
+  - Python: SQLAlchemy, Django ORM, Peewee
+  - JavaScript: Sequelize, Prisma, TypeORM
+  - Java: Hibernate, JPA
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-### 優勢
-- 對 SQL 的抽象
-- 型別安全
-- 遷移管理
-- 查詢構建 API
+### Benefits
+- Abstraction from SQL
+- Type safety
+- Migration 管理
+- Query building APIs
 
-### 侷限
-- 效能開銷
-- 複雜查詢更難編寫
-- 容易出現 N+1 查詢問題
-- 學習曲線較陡
+### Drawbacks
+- 效能 overhead
+- Complex queries harder to write
+- N+1 query problems
+- Learning curve
 
-## 資料庫管理
+## 資料庫 Administration
 
-### DBA 職責
-- 安裝與設定
-- 效能調優
-- 備份與恢復
-- 安全管理
-- 容量規劃
-- 監控與告警
-- 補丁管理
+### DBA Responsibilities
+- Installation 和 configuration
+- 效能 tuning
+- Backup 和 recovery
+- 安全 管理
+- Capacity planning
+- Monitoring 和 alerting
+- Patch 管理
 
-### 監控指標
-- 查詢響應時間
-- 吞吐量（每秒事務數）
-- 連線數
-- 快取命中率
-- 磁碟 I/O
-- 鎖等待時間
-- 複製延遲
+### Monitoring Metrics
+- Query response time
+- Throughput (transactions per second)
+- Connection count
+- Cache hit ratio
+- Disk I/O
+- Lock wait time
+- Replication lag
 
-### 維護任務
-- **Vacuum/Analyze**：更新統計資訊、回收空間
-- **Index Rebuilding**：重建索引碎片
-- **Statistics Updates**：讓查詢最佳化器掌握最新統計資訊
-- **Log Rotation**：管理日誌檔案大小
-- **Capacity Planning**：預測成長並規劃升級
+### Maintenance Tasks
+- **Vacuum/Analyze**: Update 統計, reclaim space
+- **Index Rebuilding**: Defragment indexes
+- **統計 Updates**: Keep query optimizer informed
+- **Log Rotation**: Manage log file sizes
+- **Capacity Planning**: Predict growth, plan upgrades

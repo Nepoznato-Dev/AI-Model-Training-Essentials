@@ -1,10 +1,17 @@
-# Краткий справочник по командам Git
+<!-- 
+This file was automatically translated from English to Russian.
+Source: git_commands.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Основные команды Git для контроля версий.
+# Git Команды Быстрый справочник
+
+Essential Git Команды для version control.
 
 ---
 
-## Настройка и конфигурация
+## Setup & Configuration
 
 ```bash
 # Configure user info
@@ -21,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Инициализация репозитория
+## Repository Initialization
 
 ```bash
 # Initialize new repository
@@ -37,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Базовый рабочий процесс
+## Basic Workflow
 
 ```bash
 # Check status
@@ -64,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-## Ветвление
+## Branching
 
 ```bash
 # List branches
@@ -96,7 +103,7 @@ git rebase main
 
 ---
 
-## Удалённые операции
+## Remote Operations
 
 ```bash
 # View remotes
@@ -125,7 +132,7 @@ git push --tags
 
 ---
 
-## Отмена изменений
+## Undoing Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -151,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stash
+## Stashing
 
 ```bash
 # Save work in progress
@@ -177,7 +184,7 @@ git stash clear
 
 ---
 
-## Теги
+## Tags
 
 ```bash
 # List tags
@@ -198,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Просмотр и поиск
+## Viewing & Searching
 
 ```bash
 # Show commit details
@@ -221,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-## Продвинутые операции
+## Продвинутый Operations
 
 ```bash
 # Cherry-pick commit
@@ -247,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-## Очистка
+## Cleanup
 
 ```bash
 # Remove untracked files (dry run)
@@ -264,9 +271,9 @@ git remote prune origin
 
 ---
 
-## Распространённые сценарии работы
+## Common Workflows
 
-### Начало новой функции
+### Start New Feature
 ```bash
 git checkout main
 git pull
@@ -278,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Синхронизация с main
+### Sync с Main
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -287,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Сценарий hotfix
+### Hotfix Workflow
 ```bash
 git checkout main
 git pull
@@ -303,7 +310,7 @@ git push --tags
 
 ---
 
-## Шаблоны .gitignore
+## .gitignore Patterns
 
 ```gitignore
 # Ignore specific file
@@ -325,37 +332,37 @@ __pycache__/
 
 ---
 
-## Сочетания клавиш (Git Bash)
+## Keyboard Shortcuts (Git Bash)
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+R` | Обратный поиск по истории |
-| `Tab` | Автодополнение |
-| `Ctrl+C` | Отмена команды |
-| `Ctrl+Z` | Приостановка процесса |
-| `fg` | Возобновление приостановленного процесса |
+| `Ctrl+R` | Reverse search История |
+| `Tab` | Auto-Полный |
+| `Ctrl+C` | Cancel command |
+| `Ctrl+Z` | Suspend process |
+| `fg` | Resume suspended process |
 
 ---
 
-## Рекомендации
+## Лучшие практики
 
-✅ **Стоит делать:**
-- Писать понятные и информативные сообщения коммитов
-- Коммитить часто и логически связанными порциями
-- Использовать ветки для функций и исправлений
-- Выполнять pull перед началом работы
-- Регулярно проверять `git status`
+✅ **Do:**
+- Write clear, descriptive commit messages
+- Commit frequently с logical groupings
+- Use branches для features/fixes
+- Pull before starting work
+- Review `git status` often
 
-❌ **Не стоит:**
-- Коммитить конфиденциальные данные (API keys, пароли)
-- Делать force push в общие ветки
-- Коммитить большие бинарные файлы
-- Игнорировать merge conflicts
-- Работать напрямую в main/master
+❌ **Don't:**
+- Commit sensitive Данные (API keys, passwords)
+- Force push to shared branches
+- Commit large binary files
+- Ignore merge conflicts
+- Work directly on main/master
 
 ---
 
-## Соглашение о сообщениях коммитов
+## Commit Message Convention
 
 ```
 type(scope): subject
@@ -365,16 +372,16 @@ body (optional)
 footer (optional)
 ```
 
-**Типы:**
-- `feat`: Новая функция
-- `fix`: Исправление ошибки
-- `docs`: Документация
-- `style`: Форматирование
-- `refactor`: Реструктуризация кода
-- `test`: Тесты
-- `chore`: Техническое обслуживание
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Formatting
+- `refactor`: Code restructuring
+- `test`: Tests
+- `chore`: Maintenance
 
-**Пример:**
+**Example:**
 ```
 feat(auth): add password reset functionality
 

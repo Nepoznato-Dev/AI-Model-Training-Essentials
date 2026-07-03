@@ -1,33 +1,40 @@
-# 食品、农业与营养
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: food_agriculture_and_nutrition.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 农业系统
+# 食物, 农业, 和 营养
 
-农业是栽培植物、饲养动物，以生产食物、纤维、燃料及其他产品的活动。种植业为人类食用、动物饲料或工业用途种植作物。畜牧业饲养动物以获取肉类、乳制品、鸡蛋、羊毛和劳动力。水产养殖培育鱼类、贝类和水生植物。园艺侧重水果、蔬菜、花卉和观赏植物。农林复合经营把树木与作物或牲畜结合起来。自给农业主要满足农户家庭自身需求；商品农业则面向市场销售。工业化农业通过机械化、合成投入品和单一种植追求高产。小农场（面积不足 2 公顷）虽然资源有限，却生产了全球约三分之一的粮食。精准农业利用 GPS、传感器和数据分析来优化投入并减少浪费。
+## Agricultural 系统
 
-## 作物生产
+农业 is 这 practice 的 cultivating plants 和 raising animals 为 食物, fiber, fuel, 和 other products. Crop farming grows plants 为 human consumption, animal feed, or industrial use. Livestock farming raises animals 为 meat, dairy, eggs, wool, 和 labor. Aquaculture farms fish, shellfish, 和 aquatic plants. Horticulture focuses on fruits, vegetables, flowers, 和 ornamental plants. Agroforestry combines trees 与 crops or livestock. Subsistence 农业 produces enough 为 这 farmer's family; commercial 农业 produces 为 sale. Industrial 农业 uses mechanization, synthetic inputs, 和 monocultures 为 high yields. Smallholder farms (under 2 hectares) produce about one-third 的 global 食物 despite limited resources. Precision 农业 uses GPS, sensors, 和 数据 analytics to optimize inputs 和 reduce waste.
 
-主要粮食作物包括小麦、水稻、玉米、马铃薯、木薯和大豆，提供了全球大部分热量摄入。谷类作物是为可食用种子而栽培的禾本科植物。豆类（豆、扁豆、豌豆）能够固氮，并提供蛋白质。根茎类作物（马铃薯、山药、木薯）在地下生长。水果和蔬菜提供必需的维生素和矿物质。油料作物（大豆、油菜、向日葵）用于生产食用油。纤维作物（棉花、亚麻、大麻）为纺织品提供原料。播种季节取决于气候和作物类型。整地包括翻耕、耙地和平整。灌溉可在干旱地区补充降雨不足。收获方式从人工到全机械化不等。采后处理包括清洗、分级、储存和加工，以防止损失。
+## Crop Production
 
-## 畜牧业
+Major staple crops include wheat, rice, maize (corn), potatoes, cassava, 和 soybeans, providing most global calories. Cereal grains are grasses cultivated 为 edible seeds. Legumes (beans, lentils, peas) fix nitrogen 在 soil 和 provide protein. Root 和 tuber crops (potatoes, yams, cassava) grow underground. Fruits 和 vegetables provide essential vitamins 和 minerals. Oilseed crops (soybean, canola, sunflower) produce cooking oils. Fiber crops (cotton, flax, hemp) provide materials 为 textiles. Planting seasons depend on climate 和 crop type. Soil preparation includes plowing, harrowing, 和 leveling. Irrigation supplements rainfall 在 dry regions. Harvesting methods range from manual to fully mechanized. Post-harvest handling includes cleaning, sorting, storage, 和 processing to prevent losses.
 
-畜牧业涉及农场动物的繁育与照料。牛可用于肉用和奶用；不同品种会根据用途和气候而有所不同。家禽包括鸡（蛋和肉）、火鸡、鸭和鹅。猪提供猪肉；绵羊提供肉和羊毛；山羊提供奶、肉和纤维。马、驴和牛在某些地区还作为役用动物。动物营养需要在能量、蛋白质、维生素和矿物质之间保持平衡。饲养方式从放养到密集圈养不等。育种计划会选择理想性状（生长速度、产奶量、抗病性）。动物健康管理包括疫苗接种、寄生虫控制和生物安全。动物福利强调人道待遇、减轻压力和提供适宜的生活条件。围绕工厂化养殖、动物权利和屠宰方式也存在伦理争议。
+## Animal Husbandry
 
-## 营养科学
+Animal husbandry involves breeding 和 caring 为 farm animals. Cattle are raised 为 beef 和 dairy; breeds vary by purpose 和 climate. Poultry includes chickens (eggs 和 meat), turkeys, ducks, 和 geese. Pigs provide pork; sheep provide meat 和 wool; goats provide milk, meat, 和 fiber. Horses, donkeys, 和 oxen serve as working animals 在 some regions. Animal 营养 requires balanced diets 的 energy, protein, vitamins, 和 minerals. Housing 系统 range from free-range to confined operations. Breeding programs select 为 desirable traits (growth rate, milk production, disease resistance). Animal health 管理 includes vaccination, parasite control, 和 biosecurity. Welfare considerations address humane treatment, stress reduction, 和 appropriate living conditions. Ethical debates surround factory farming, animal rights, 和 slaughter practices.
 
-营养学研究食物如何影响健康和身体功能。宏量营养素提供能量：碳水化合物（4 kcal/g）、蛋白质（4 kcal/g）和脂肪（9 kcal/g）。碳水化合物包括糖、淀粉和膳食纤维，是人体的主要能量来源。蛋白质由氨基酸组成；其中有九种是必需氨基酸（必须从饮食中获得）。脂肪包括饱和脂肪、不饱和脂肪（单不饱和和多不饱和）以及反式脂肪；omega-3 和 omega-6 属于必需脂肪酸。微量营养素包括维生素（A、C、D、E、K 和 B 族）和矿物质（钙、铁、镁、锌等），所需量虽小，却不可或缺。水对所有身体功能都至关重要。膳食指南建议从多种食物类别中均衡摄入营养。营养不良既包括营养不足（摄入不够），也包括营养过剩（摄入过多导致肥胖）。营养素缺乏会引发特定疾病（如维生素 C 缺乏导致坏血病，缺铁导致贫血）。个体需求会因年龄、性别、活动水平和健康状况而异。
+## 营养 科学
 
-## 食品安全与加工
+营养 studies how 食物 affects health 和 bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteins (4 kcal/g), 和 fats (9 kcal/g). Carbohydrates include sugars, starches, 和 fiber; they are 这 body's primary energy source. Proteins consist 的 amino acids; nine are essential (must come from diet). Fats include saturated, unsaturated (mono- 和 poly-), 和 trans fats; omega-3 和 omega-6 are essential fatty acids. Micronutrients include vitamins (A, C, D, E, K, 和 B-complex) 和 minerals (calcium, iron, magnesium, zinc, etc.) needed 在 small amounts. Water is essential 为 all bodily functions. Dietary guidelines recommend balanced intake from various 食物 groups. Malnutrition includes undernutrition (insufficient intake) 和 overnutrition (excess intake leading to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamin C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, 和 health status.
 
-食品安全旨在防止因污染引发的食源性疾病。生物危害包括细菌（Salmonella、E. coli、Listeria）、病毒（norovirus、hepatitis A）和寄生虫。化学危害包括农药、清洁剂和过敏原。物理危害包括异物（玻璃、金属、塑料）。HACCP（危害分析与关键控制点）是一种系统性的预防方法。正确处理方式包括洗手、生熟分开、烹调至安全温度以及及时冷藏。食品保藏方法可延长保质期，包括冷藏、冷冻、罐藏、干燥、发酵、巴氏杀菌和辐照。食品加工是把原料转化为可食产品的过程，加工程度可从轻度加工到超加工不等。食品添加剂可用于保持品质、增强风味或改善口感；其使用受法规约束。食品标签提供营养信息、配料、过敏原警示和保质日期。食品召回用于将不安全产品撤出市场。
+## 食物 Safety 和 Processing
 
-## 全球食品系统
+食物 safety prevents foodborne illness from contamination. Biological hazards include bacteria (Salmonella, E. coli, Listeria), viruses (norovirus, hepatitis A), 和 parasites. Chemical hazards include pesticides, cleaning agents, 和 allergens. Physical hazards include foreign objects (glass, metal, plastic). HACCP (Hazard Analysis Critical Control Points) is a systematic preventive approach. Proper handling includes handwashing, separating raw 和 cooked foods, cooking to 安全 temperatures, 和 refrigerating promptly. 食物 preservation methods extend shelf life: refrigeration, freezing, canning, drying, fermentation, pasteurization, 和 irradiation. 食物 processing transforms raw ingredients into consumable products; levels range from minimally processed to ultra-processed. Additives preserve quality, enhance flavor, or improve texture; regulations govern approved substances. 食物 labeling provides nutritional information, ingredients, allergen warnings, 和 expiration dates. 食物 recalls remove unsafe products from 这 market.
 
-全球食品系统涵盖生产、加工、分销、消费和废弃。供应链通过多个中间环节把农民与消费者连接起来。食物里程衡量食物运输的距离；本地食品运动致力于降低这一距离。粮食安全是指所有人都能在物理和经济上获得充足、安全且有营养的食物。其维度包括可获得性、可及性、利用性和稳定性。约有 8 亿人长期面临饥饿，超过 20 亿人缺乏微量营养素。食物损耗发生在零售之前（生产、采后、加工）；食物浪费发生在零售和消费者环节。可持续食品系统需要在环境、经济和社会结果之间取得平衡。气候变化会影响作物产量、害虫模式和水资源可用性。贸易政策会影响国家之间的粮食流动。城市化提升了对加工食品和便利食品的需求。替代蛋白（植物肉、培养肉、昆虫）正成为更可持续的选择。
+## Global 食物 系统
 
-## 可持续农业实践
+Global 食物 系统 encompass production, processing, distribution, consumption, 和 waste. Supply chains connect farmers to consumers through multiple intermediaries. 食物 miles measure distance 食物 travels; local 食物 movements aim to reduce this. 食物 安全 exists when all people have physical 和 economic access to sufficient, 安全, nutritious 食物. Dimensions include availability, access, utilization, 和 stability. Approximately 800 million people face chronic hunger; over 2 billion suffer micronutrient deficiencies. 食物 loss occurs before retail (production, post-harvest, processing); 食物 waste occurs at retail 和 consumer levels. Sustainable 食物 系统 balance 环境, economic, 和 social outcomes. Climate change affects crop yields, pest patterns, 和 water availability. Trade policies influence 食物 flows between countries. Urbanization increases demand 为 processed 和 convenience foods. Alternative proteins (plant-based meats, cultured meat, insects) emerge as sustainable options.
 
-可持续农业在保持生产力的同时，也保护环境并支持社区发展。土壤保护通过覆盖作物、等高耕作、梯田和少耕来防止侵蚀。综合病虫害管理（IPM）结合生物、农艺、物理和化学手段，以尽量降低风险。有机农业避免使用合成肥料和农药，依赖天然投入品和自然过程。再生农业通过重建土壤有机质和修复退化土地来实现碳封存。农业生态学把生态学原理应用于农业系统。节水措施包括高效灌溉（滴灌、喷灌）、雨水收集和抗旱品种。农场生物多样性可通过轮作、混作、树篱和为有益生物提供栖息地来提升。养分管理旨在优化施肥、利用堆肥和粪肥，并防止养分径流。气候智慧型农业在适应变化条件的同时减少排放。公平贸易确保生产者获得合理价格，并在体面条件下工作。
+## Sustainable 农业 Practices
 
-## 烹饪传统与饮食文化
+Sustainable 农业 maintains productivity while protecting environment 和 supporting communities. Soil conservation prevents erosion through cover crops, contour plowing, terracing, 和 reduced tillage. Integrated pest 管理 (IPM) combines biological, cultural, physical, 和 chemical tools minimizing risks. Organic farming avoids synthetic fertilizers 和 pesticides, relying on natural inputs 和 processes. Regenerative 农业 rebuilds soil organic matter 和 restores degraded land, sequestering carbon. Agroecology applies ecological principles to agricultural 系统. Water conservation uses efficient irrigation (drip, sprinkler), rainwater harvesting, 和 drought-resistant varieties. Biodiversity on farms includes crop rotation, polycultures, hedgerows, 和 habitat 为 beneficial organisms. Nutrient 管理 optimizes fertilizer use, incorporates compost 和 manure, 和 prevents runoff. Climate-smart 农业 adapts to changing conditions while reducing emissions. Fair trade ensures producers receive equitable prices 和 work under decent conditions.
 
-饮食文化涵盖围绕食物形成的传统、信念和实践。地方菜系反映当地食材、气候、历史和文化影响。烹饪方式包括烘焙、油炸、烧烤、蒸煮、水煮、烘烤和发酵。香料和香草不仅增添风味，也在历史贸易中占据重要地位。宗教饮食规范包括 kosher（犹太教）、halal（伊斯兰教）、素食 / 纯素食（印度教、佛教）以及斋戒实践。节庆和庆典往往围绕特殊食物展开。家庭食谱代代相传，保存文化传承。融合料理把不同烹饪传统的元素结合起来。美食旅游通过当地饮食探索目的地。慢食运动强调传统烹饪、本地食材和有意识的进食。分子料理把科学技术应用到烹饪中。安慰食物能带来情感上的满足。餐桌礼仪和用餐规范在不同文化中各不相同。
+## Culinary Traditions 和 食物 文化
+
+食物 文化 encompasses traditions, beliefs, 和 practices surrounding 食物. Regional cuisines reflect local ingredients, climate, 历史, 和 cultural influences. Cooking methods include baking, frying, grilling, steaming, boiling, roasting, 和 fermenting. Spices 和 herbs add flavor 和 have historical importance 在 trade. Religious dietary laws include kosher (Jewish), halal (Islamic), vegetarian/vegan (Hindu, Buddhist), 和 fasting practices. Festivals 和 celebrations often center on special foods. Family recipes pass through generations preserving heritage. Fusion cuisine blends elements from different culinary traditions. 食物 tourism explores destinations through their cuisine. Slow 食物 movement emphasizes traditional cooking, local ingredients, 和 mindful eating. Molecular gastronomy applies scientific techniques to cooking. Comfort foods provide emotional satisfaction. Table manners 和 dining etiquette vary across cultures.

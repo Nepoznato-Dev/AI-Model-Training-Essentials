@@ -1,187 +1,194 @@
-# Matemática e Lógica
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: math_and_logic.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## O que é Matemática?
+# Mathematics e Logic
 
-Matemática é o estudo de números, formas, padrões e relações lógicas. Ela é ao mesmo tempo uma ciência e uma linguagem usada para descrever o universo. A matemática se divide em ramos como aritmética, álgebra, geometria, cálculo, estatística e lógica. A matemática é a base da física, da engenharia, da ciência da computação, da economia e de muitas outras áreas.
+## What is Mathematics?
 
-## Aritmética
+Mathematics is o/a study de numbers, shapes, patterns, e logical relationships. It is both a Ciência e a Idioma used to describe o/a universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, Estatísticas, e logic. Mathematics is o/a foundation de physics, engineering, computer Ciência, Economia, e many other fields.
 
-A aritmética é o ramo da matemática que lida com operações básicas sobre números. As quatro operações fundamentais são adição (+), subtração (−), multiplicação (×) e divisão (÷). A ordem das operações especifica a sequência em que os cálculos devem ser realizados: Parênteses, Expoentes, Multiplicação e Divisão (da esquerda para a direita), Adição e Subtração (da esquerda para a direita). Isso costuma ser lembrado como **PEMDAS** ou **BODMAS**. Um número primo é um número inteiro maior que 1 que não tem divisores além de 1 e dele mesmo. Os primeiros números primos são 2, 3, 5, 7, 11, 13, 17, 19, 23 e 29.
+## Arithmetic
+
+Arithmetic is o/a branch de mathematics dealing com basic operations on numbers. o/a four fundamental operations are addition (+), subtraction (−), multiplication (×), e division (÷). o/a order de operations specifies o/a sequence em which calculations must be performed: Parentheses, Exponents, Multiplication e Division (left to right), Addition e Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 e itself. o/a first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, e 29.
 
 **Exemplos:**
-- Fatoração prima: 84 = 2² × 3 × 7
+- Prime factorization: 84 = 2² × 3 × 7
 - Greatest Common Divisor (GCD) de 24 e 36: 12
 - Least Common Multiple (LCM) de 4 e 6: 12
 
-## Álgebra
+## Algebra
 
-A álgebra usa letras e símbolos para representar números e quantidades em equações e fórmulas. Uma **variável** é um símbolo (geralmente uma letra) que representa uma quantidade desconhecida ou mutável. Uma **equação** afirma que duas expressões são iguais. Resolver uma equação significa encontrar o(s) valor(es) da(s) variável(eis) que tornam a equação verdadeira.
+Algebra uses letters e symbols to represent numbers e quantities em equations e formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding o/a value(s) de o/a variable(s) that make o/a equation true.
 
-A **fórmula quadrática** resolve equações da forma ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
-
-
-Uma **função** associa cada entrada a exatamente uma saída. Funções comuns incluem:
-- Linear: y = mx + b (reta, taxa de variação constante)
-- Quadrática: y = ax² + bx + c (parábola, curva)
-- Exponencial: y = a × bˣ (crescimento ou decaimento, mudança rápida)
-- Logarítmica: y = log_b(x) (inversa da exponencial)
-
-**Conceitos-chave:**
-- Domínio: o conjunto de todos os valores de entrada possíveis
-- Imagem: o conjunto de todos os valores de saída possíveis
-- Inclinação: taxa de variação (m em y = mx + b)
-- Intercepto: ponto em que a função cruza o eixo y (b em y = mx + b)
-
-## Geometria
-
-Geometria é o ramo da matemática que estuda formas, tamanhos, posições e propriedades das figuras. Um ponto não tem tamanho; ele representa uma localização. Uma reta se estende infinitamente em ambas as direções. Um segmento de reta tem duas extremidades. Um ângulo é formado por duas semirretas que compartilham um ponto final.
-
-**Regras principais:**
-- A soma dos ângulos de um triângulo é sempre 180 graus.
-- A soma dos ângulos de um quadrilátero é sempre 360 graus.
-- O teorema de Pitágoras: em um triângulo retângulo, a² + b² = c² (onde c é a hipotenusa).
-- Circunferência do círculo: 2πr
-- Área do círculo: πr²
-- Volume da esfera: (4/3)πr³
-
-**π (pi)** é aproximadamente 3,14159 e é a razão entre a circunferência de um círculo e seu diâmetro.
-
-**Formas geométricas comuns:**
-- Triângulo: 3 lados, soma dos ângulos igual a 180°
-- Quadrado: 4 lados iguais, 4 ângulos retos
-- Retângulo: 4 lados, lados opostos iguais, 4 ângulos retos
-- Círculo: sem lados, borda curva contínua
-- Pentágono: 5 lados, soma dos ângulos igual a 540°
-- Hexágono: 6 lados, soma dos ângulos igual a 720°
-
-## Estatística e Probabilidade
-
-Estatística é a ciência de coletar, analisar, interpretar e apresentar dados.
-
-**Medidas de tendência central:**
-- **Média** (average): soma de todos os valores dividida pelo número de valores
-- **Mediana**: valor central quando os dados estão ordenados (menos sensível a outliers)
-- **Moda**: valor que ocorre com maior frequência (pode haver múltiplas modas)
-
-**Medidas de dispersão:**
-- **Amplitude**: máximo - mínimo
-- **Variância**: média dos desvios quadráticos em relação à média
-- **Desvio padrão**: raiz quadrada da variância (nas mesmas unidades dos dados)
-
-Probabilidade mede a chance de um evento ocorrer, variando de 0 (impossível) a 1 (certo). A probabilidade de dois eventos independentes ocorrerem ambos é o produto de suas probabilidades individuais.
-
-**Exemplo:** Probabilidade de sair 6 em um dado justo: 1/6. Probabilidade de sair dois 6 seguidos: (1/6) × (1/6) = 1/36.
-
-## Probabilidade para Computação e ML
-
-Uma **variável aleatória** é uma variável cujo valor depende do resultado de um processo aleatório. Uma **distribuição de probabilidade** descreve a probabilidade de cada resultado.
-
-**Distribuições comuns:**
-- **Bernoulli**: único experimento com dois resultados (ex.: cara ou coroa)
-- **Binomial**: número de sucessos em n tentativas independentes de Bernoulli
-- **Normal (Gaussiana)**: curva em sino, simétrica em torno da média (comum em fenômenos naturais)
-- **Poisson**: número de eventos em um intervalo fixo (ex.: emails por hora)
-
-**Valor esperado** é o resultado médio de longo prazo de uma variável aleatória. **Variância** mede a dispersão em torno dessa expectativa.
-
-**Probabilidade condicional** descreve a probabilidade de um evento dado que outro evento ocorreu: P(A|B) = P(A ∩ B) / P(B) [se P(B) > 0].
-
-**Teorema de Bayes** atualiza crenças usando evidências: P(A|B) = P(B|A) × P(A) / P(B).
+o/a **quadratic formula** solves equations de o/a form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
 
-Em machine learning, a probabilidade sustenta a confiança em classificação, a estimativa de incerteza, métodos bayesianos e muitas funções de perda (como cross-entropy).
+A **function** maps each input to exactly one output. Common functions include:
+- Linear: y = mx + b (straight line, constant rate de change)
+- Quadratic: y = ax² + bx + c (parabola, curved)
+- Exponential: y = a × bˣ (growth or decay, rapid change)
+- Logarithmic: y = log_b(x) (inverse de exponential)
 
-## Cálculo
+**Key concepts:**
+- Domain: o/a set de all possible input values
+- Range: o/a set de all possible output values
+- Slope: rate de change (m em y = mx + b)
+- Intercept: where o/a function crosses o/a y-axis (b em y = mx + b)
 
-Cálculo é o ramo da matemática que estuda a mudança contínua.
+## Geometry
 
-**Cálculo diferencial** lida com taxas de variação e inclinações de curvas, usando **derivadas**. A derivada de uma função f(x) representa a taxa de variação de f em relação a x em um ponto. Notação: f'(x) ou df/dx.
+Geometry is o/a branch de mathematics that studies shapes, sizes, positions, e properties de figures. A point has no size; it represents a location. A line extends infinitely em both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
 
-**Derivadas comuns:**
+**Key rules:**
+- o/a sum de angles em a triangle is always 180 degrees.
+- o/a sum de angles em a quadrilateral is always 360 degrees.
+- o/a Pythagorean theorem: em a right triangle, a² + b² = c² (where c is o/a hypotenuse).
+- Circle circumference: 2πr
+- Circle area: πr²
+- Sphere volume: (4/3)πr³
+
+**π (pi)** is approximately 3.14159 e is o/a ratio de a circle's circumference to its diameter.
+
+**Common geometric shapes:**
+- Triangle: 3 sides, angles sum to 180°
+- Square: 4 equal sides, 4 right angles
+- Rectangle: 4 sides, opposite sides equal, 4 right angles
+- Circle: no sides, continuous curved boundary
+- Pentagon: 5 sides, angles sum to 540°
+- Hexagon: 6 sides, angles sum to 720°
+
+## Estatísticas e Probability
+
+Estatísticas is o/a Ciência de collecting, analysing, interpreting, e presenting Dados.
+
+**Measures de central tendency:**
+- **Mean** (average): sum de all values divided by o/a number de values
+- **Median**: middle value when Dados is sorted (less sensitive to outliers)
+- **Mode**: most frequently occurring value (can have multiple modes)
+
+**Measures de spread:**
+- **Range**: maximum - minimum
+- **Variance**: average de squared deviations from o/a mean
+- **Standard deviation**: square root de variance (em same units as Dados)
+
+Probability measures o/a likelihood de an event occurring, ranging from 0 (impossible) to 1 (certain). o/a probability de two independent Eventos both occurring is o/a product de their individual probabilities.
+
+**Example:** Probability de rolling a 6 on a fair die: 1/6. Probability de rolling two 6s em a row: (1/6) × (1/6) = 1/36.
+
+## Probability para Computação e ML
+
+A **random variable** is a variable whose value depends on o/a outcome de a random process. A **probability distribution** describes how likely each outcome is.
+
+**Common distributions:**
+- **Bernoulli**: single trial com two outcomes (e.g., coin flip)
+- **Binomial**: number de successes em n independent Bernoulli trials
+- **Normal (Gaussian)**: bell curve, symmetric around o/a mean (common em natural phenomena)
+- **Poisson**: number de Eventos em a fixed interval (e.g., emails per hour)
+
+**Expected value** is o/a long-run average outcome de a random variable. **Variance** measures spread around that expectation.
+
+**Conditional probability** describes o/a probability de an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
+
+**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
+
+
+em Aprendizado de máquina, probability underpins classification confidence, uncertainty estimation, Bayesian methods, e many loss functions (such as cross-entropy).
+
+## Calculus
+
+Calculus is o/a branch de mathematics that studies continuous change.
+
+**Differential calculus** deals com rates de change e slopes de curves, using **derivatives**. o/a derivative de a function f(x) represents o/a rate de change de f com respect to x at a point. Notation: f'(x) or df/dx.
+
+**Common derivatives:**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
 - d/dx [sin(x)] = cos(x)
 
-**Cálculo integral** lida com acúmulo de quantidades e áreas sob curvas, usando **integrais**. A integral representa a área sob a curva entre dois pontos.
+**Integral calculus** deals com accumulation de quantities e areas under curves, using **integrals**. o/a integral represents o/a area under o/a curve between two points.
 
-O **teorema fundamental do cálculo** conecta diferenciação e integração: diferenciação e integração são operações inversas.
+o/a **fundamental theorem de calculus** connects differentiation e integration: differentiation e integration are inverse operations.
 
-O cálculo foi desenvolvido de forma independente por Isaac Newton e Gottfried Wilhelm Leibniz no século XVII.
+Calculus was developed independently by Isaac Newton e Gottfried Wilhelm Leibniz em o/a 17th century.
 
-## Sistemas Numéricos
+## Number Sistemas
 
-- **Números naturais**: 1, 2, 3, 4, ... (números de contagem)
-- **Números inteiros não negativos**: 0, 1, 2, 3, ... (números naturais mais zero)
-- **Inteiros**: ..., −2, −1, 0, 1, 2, ... (todos os inteiros não negativos e seus negativos)
-- **Números racionais**: números expressáveis como p/q, onde p e q são inteiros e q ≠ 0 (ex.: 1/2, 3/4, −5/3)
-- **Números irracionais**: não podem ser expressos como fração (ex.: √2, π, e)
-- **Números reais**: todos os números racionais e irracionais (a reta numérica)
-- **Números imaginários**: envolvem a raiz quadrada de números negativos; i = √(−1)
-- **Números complexos**: combinam partes reais e imaginárias (a + bi)
+- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
+- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
+- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers e their negatives)
+- **Rational numbers**: numbers expressible as p/q where p e q are integers e q ≠ 0 (e.g., 1/2, 3/4, −5/3)
+- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
+- **Real numbers**: all rational e irrational numbers (o/a number line)
+- **Imaginary numbers**: involve o/a square root de negative numbers; i = √(−1)
+- **Complex numbers**: combine real e imaginary parts (a + bi)
 
-## Lógica e Raciocínio
+## Logic e Reasoning
 
-Lógica é o estudo do raciocínio válido.
+Logic is o/a study de valid reasoning.
 
-**Raciocínio dedutivo** tira conclusões específicas a partir de premissas gerais. Se as premissas forem verdadeiras e o argumento for válido, a conclusão deve ser verdadeira.
-- **Exemplo:** Todos os seres humanos são mortais. Sócrates é humano. Logo, Sócrates é mortal.
+**Deductive reasoning** draws specific conclusions from general premises. If o/a premises are true e o/a argument is valid, o/a conclusion must be true.
+- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
 
-**Raciocínio indutivo** tira conclusões gerais a partir de observações específicas. Não garante que a conclusão seja verdadeira, mas a torna provável.
-- **Exemplo:** Todo cisne que eu vi é branco. Portanto, todos os cisnes são brancos. (Observação: isso é falso; cisnes negros existem!)
+**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee o/a conclusion is true, but makes it probable.
+- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
 
-**Falácias lógicas comuns (erros de raciocínio):**
-- **Ad hominem**: atacar a pessoa em vez do argumento
-- **Espantalho**: distorcer um argumento para torná-lo mais fácil de atacar
-- **Falsa dicotomia**: apresentar apenas duas opções quando há mais possibilidades
-- **Raciocínio circular**: usar a conclusão como premissa
-- **Apelo à autoridade**: afirmar que algo é verdadeiro porque uma autoridade disse
-- **Falácia post hoc**: presumir que, porque A aconteceu antes de B, A causou B
+**Common logical fallacies (errors em reasoning):**
+- **Ad hominem**: attacking o/a person rather than o/a argument
+- **Straw man**: misrepresenting an argument to make it easier to attack
+- **False dichotomy**: presenting only two options when more exist
+- **Circular reasoning**: using o/a conclusion as a premise
+- **Appeal to authority**: claiming something is true because an authority says so
+- **Post hoc fallacy**: assuming that because A happened before B, A caused B
 
-## Conjuntos
+## Sets
 
-Um **conjunto** é uma coleção de objetos distintos.
-- **União** (A ∪ B): todos os elementos de ambos os conjuntos
-- **Interseção** (A ∩ B): apenas os elementos comuns aos dois
-- **Conjunto vazio** (∅ or {}): não contém elementos
-- **Subconjunto** (A ⊆ B): todos os elementos de A também estão em B
-- **Diagramas de Venn**: representam visualmente as relações entre conjuntos
+A **set** is a collection de distinct objects.
+- **Union** (A ∪ B): all elements from both sets
+- **Intersection** (A ∩ B): only elements common to both
+- **Empty set** (∅ or {}): contains no elements
+- **Subset** (A ⊆ B): all elements de A are also em B
+- **Venn diagrams**: visually represent relationships between sets
 
-A teoria dos conjuntos é a base da matemática e da lógica modernas.
+Set theory is o/a foundation de modern mathematics e logic.
 
-## Binário e Bases Numéricas
+## Binary e Number Bases
 
-Computadores representam dados em **binário** (base 2), usando apenas os dígitos 0 e 1. Cada dígito binário é chamado de **bit**. Oito bits formam um **byte**.
+Computers represent Dados em **binary** (base 2), using only digits 0 e 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
 
-**Decimal** é o sistema numérico de base 10 que os seres humanos normalmente usam.
+**Decimal** is o/a base-10 number system humans typically use.
 
-**Hexadecimal** é base 16, usando os dígitos 0–9 e as letras A–F, frequentemente usado em computação para representar dados binários de forma compacta.
+**Hexadecimal** is base 16, using digits 0–9 e letters A–F, often used em Computação to represent binary Dados compactly.
 
-**Conversões:**
+**Conversions:**
 - Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
 - Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
 
-Converter entre bases numéricas é um conceito fundamental em ciência da computação.
+Converting between number bases is a fundamental concept em computer Ciência.
 
-## Álgebra Linear para Desenvolvedores e ML
+## Linear Algebra para Developers e ML
 
-Álgebra linear estuda vetores, matrizes e transformações lineares.
+Linear algebra studies vectors, matrices, e linear transformations.
 
-Um **vetor** é uma lista ordenada de números (ex.: features em uma amostra de ML).
-- Exemplo: [23, 1.8, 175] representa a idade, a altura e o peso de uma pessoa
+A **vector** is an ordered list de numbers (e.g., features em an ML sample).
+- Example: [23, 1.8, 175] represents a person's age, height, e weight
 
-Uma **matriz** é um array bidimensional de números (ex.: pesos de um modelo ou batches de um dataset).
-- Exemplo: [[1, 2], [3, 4]] é uma matriz 2×2
+A **matrix** is a 2D array de numbers (e.g., model weights or dataset batches).
+- Example: [[1, 2], [3, 4]] is a 2×2 matrix
 
-**Multiplicação de matrizes** combina transformações lineares e é uma operação central em gráficos, simulação e redes neurais.
+**Matrix multiplication** combines linear transformations e is a core operation em graphics, simulation, e Redes neurais.
 
-**Produto escalar** mede similaridade e projeção entre vetores:
+**Dot product** measures similarity e projection between vectors:
 - a·b = Σ(a_i × b_i)
 - **Cosine similarity** = (a·b) / (||a|| × ||b||)
-- Cosine similarity varia de -1 (direções opostas) a 1 (mesma direção)
+- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
 
-**Autovalores e autovetores** descrevem direções que são escaladas (e não rotacionadas) por uma matriz e são usados em métodos como PCA (Principal Component Analysis).
+**Eigenvalues e eigenvectors** describe directions that are scaled (not rotated) by a matrix e are used em methods such as PCA (Principal Component Analysis).
 
-**Posto** indica quanta informação independente uma matriz contém. Aproximações de baixo posto são úteis para compressão e redução de dimensionalidade.
+**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful para compression e dimensionality reduction.
 
-A maioria das cargas de trabalho modernas de ML depende fortemente de bibliotecas otimizadas de álgebra linear e de aceleração por hardware.
+Most modern ML workloads rely heavily on optimized linear algebra libraries e hardware acceleration.

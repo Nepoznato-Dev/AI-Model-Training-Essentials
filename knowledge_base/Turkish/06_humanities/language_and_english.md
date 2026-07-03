@@ -1,156 +1,163 @@
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: language_and_english.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
 # Dil ve İngilizce
 
-## Dil Nedir?
+## What is Dil?
 
-Dil, bir topluluk tarafından paylaşılan ve anlaşılan ortak kuralları izleyen; sesler, semboller veya jestler aracılığıyla iletişim kurma sistemidir. İnsan dili; karmaşıklığı, yaratıcılığı ve soyut fikirleri ifade etme kapasitesi bakımından benzersizdir. Günümüzde dünyada konuşulan yaklaşık 7.000 dil vardır. İngilizce, ikinci dil olarak en yaygın konuşulan dildir ve uluslararası iletişimin, iş dünyasının, bilimin ve internetin baskın dilidir.
+Dil is a system içinde İletişim using sounds, symbols, or gestures that follows a shared set içinde rules understood by a community. Human Dil is unique içinde its complexity, creativity, ve capacity to express abstract ideas. There are approximately 7,000 languages spoken içinde bu world today. İngilizce is bu most widely spoken Dil as a second Dil ve is bu dominant Dil içinde international İletişim, İş, Bilim, ve bu internet.
 
-## İngilizce Dilbilgisi
+## İngilizce Grammar
 
-Dilbilgisi, bir dilde sözcüklerin cümle oluşturmak için nasıl birleştirildiğini yöneten kurallar bütünüdür. Bir cümlenin bir öznesi (cümlenin kim veya ne hakkında olduğu) ve bir yüklemi (öznenin ne yaptığı veya ne olduğu) bulunmalıdır.
+Grammar is bu set içinde rules governing how words are combined to form sentences içinde a Dil. A sentence must contain a subject (who or what bu sentence is about) ve a predicate (what bu subject does or is).
 
-Bir **noun**, kişiyi, yeri, şeyi veya fikri adlandıran sözcüktür.
-Bir **verb**, bir eylemi veya oluş durumunu ifade eden sözcüktür.
-Bir **adjective**, bir noun'u niteler.
-Bir **adverb**, bir verb'ü, adjective'i veya başka bir adverb'ü niteler.
-Bir **pronoun**, noun'un yerini alır.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state içinde being.
+An **adjective** modifies a noun.
+An **adverb** modifies a verb, adjective, or another adverb.
+A **pronoun** takes bu place içinde a noun.
 
-Bir **clause**, özne ve fiil içeren sözcük grubudur. Bir independent clause, tek başına bir cümle olarak durabilir. Bir dependent clause, tek başına duramaz ve bir independent clause'a bağlıdır. **Phrase** ise hem özne hem de yüklem içermeyen sözcük grubudur.
+A **clause** is a group içinde words containing a subject ve a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone ve depends on an independent clause. A **phrase** is a group içinde words that does not contain both a subject ve a predicate.
 
-## Sözcük Türleri
+## Parts içinde Speech
 
-İngilizcedeki geleneksel sekiz sözcük türü şunlardır: noun, pronoun, verb, adjective, adverb, preposition, conjunction ve interjection.
+bu eight traditional parts içinde speech içinde İngilizce are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, ve interjection.
 
-Bir **preposition**, bir noun veya pronoun ile başka bir sözcük arasındaki ilişkiyi gösterir (örn. in, on, at, by, with).
-Bir **conjunction**, sözcükleri, phrase'leri veya clause'ları bağlar (örn. and, but, or, because).
+A **preposition** shows bu relationship between a noun or pronoun ve another word (e.g., içinde, on, at, by, ile).
+A **conjunction** connects words, phrases, or clauses (e.g., ve, but, or, because).
 
-**Yaygın coordinating conjunctions** şu FANBOYS kısaltmasıyla hatırlanabilir:
+**Common coordinating conjunctions** can be remembered ile bu acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## Noktalama İşaretleri
+## Punctuation
 
-- Nokta (.) bildirici bir cümleyi bitirir.
-- Soru işareti (?) soru cümlesini bitirir.
-- Ünlem işareti (!) ünlem cümlesini bitirir.
-- Virgül (,), listedeki ögeleri ayırır, giriş ifadelerini ayırır ve bir conjunction ile bağlanan bağımsız cümlecikleri ayırır.
-- Noktalı virgül (;), yakından ilişkili iki bağımsız cümleciği ayırır.
-- İki nokta (:), bir listeyi, açıklamayı veya alıntıyı başlatır.
-- Apostrof ('), sahiplik gösterir (John's book) veya bir contraction'ı belirtir (don't = do not).
+- A period (.) ends a declarative sentence.
+- A question mark (?) ends an interrogative sentence.
+- An exclamation mark (!) ends an exclamatory sentence.
+- A comma (,) separates items içinde a list, sets off introductory phrases, ve separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-## Yazım ve Yaygın Hatalar
+## Spelling ve Common Errors
 
-**Yaygın yazım kuralları:**
-- "i before e except after c" (believe, receive) — ancak bu kuralın birçok istisnası vardır (örn. "weird", "science")
-- Sessiz "e" ile biten sözcükler, sesli harfle başlayan bir ek almadan önce "e" harfini düşürür (make → making)
-- Son hece vurguluysa ve tek ünsüzle bitiyorsa, sesli harfle başlayan ekten önce son ünsüz çiftlenir (run → running)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Bilim")
+- Words ending içinde a silent "e" drop bu "e" before adding a vowel suffix (make → making)
+- Double bu final consonant before adding a vowel suffix when bu last syllable is stressed ve ends içinde a single consonant (run → running)
 
-**Sık karıştırılan sözcük çiftleri:**
+**Common confusable word pairs:**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## Kelime Dağarcığı ve Sözcük Oluşumu
+## Vocabulary ve Word Formation
 
-**Etymology**, sözcüklerin kökenlerini ve tarihsel gelişimini inceleyen alandır. İngilizcedeki birçok sözcük Latin, Yunanca, Fransızca ve Cermen köklerinden gelir.
+**Etymology** is bu study içinde bu origins ve historical Geliştirme içinde words. Many İngilizce words come from Latin, Greek, French, ve Germanic roots.
 
-**Prefixes**, anlamı değiştirmek için sözcüklerin başına eklenir (örn. un-, re-, pre-, mis-).
-**Suffixes**, sözcüklerin sonuna eklenir (örn. -tion, -ness, -ing, -ly).
+**Prefixes** are added to bu beginning içinde words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to bu end içinde words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: Benzer anlamlı sözcükler
-- **Antonyms**: Zıt anlamlı sözcükler
-- **Metaphor**: Bir şeyi, başka bir şey olduğunu söyleyerek anlatır ("Time is a thief")
-- **Simile**: İki şeyi "like" veya "as" kullanarak karşılaştırır ("Busy as a bee")
+- **Synonyms**: words ile similar meanings
+- **Antonyms**: words ile opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-## Yazma Becerileri
+## Writing Skills
 
-İyi yazı açık, öz, tutarlı ve ilgi çekicidir.
+Good writing is clear, concise, coherent, ve engaging.
 
-- Bir **paragraph**, bir konu cümlesine (ana fikir), destekleyici cümlelere ve sonuç cümlesine sahip olmalıdır.
-- **Five-paragraph essay** yapısı; bir giriş, üç gelişme paragrafı ve bir sonuç bölümünden oluşur.
-- **Revision**, bir taslağı iyileştirme sürecidir.
-- **Editing**, dilbilgisi, yazım ve noktalama hatalarını düzeltmeye odaklanır.
-- **Proofreading**, yayımlamadan önce yapılan son kontroldür.
+- A **paragraph** should have a topic sentence (bu main idea), supporting sentences, ve a concluding sentence.
+- bu **five-paragraph essay** structure consists içinde an Giriş, three body paragraphs, ve a conclusion.
+- **Revision** is bu process içinde improving a draft.
+- **Editing** focuses on correcting grammar, spelling, ve punctuation errors.
+- **Proofreading** is bu final check before publication.
 
-## Okuma ve Anlama
+## Reading ve Comprehension
 
-**Active reading**, soru sorarak, tahminlerde bulunarak, özetleyerek ve bağlantılar kurarak metinle etkileşime girmeyi içerir.
+**Active reading** involves engaging ile bu text by asking questions, making predictions, summarizing, ve making connections.
 
-- **Main idea**, bir pasajın merkezî noktasıdır.
-- Ayrıntılar, örnekler ve kanıtlar main idea'yı destekler.
-- **Inference**, doğrudan söylenmeyen ancak ima edilen bilgilerden sonuç çıkarma sürecidir.
-- **Context clues**, anlamı bilinmeyen bir sözcüğün çevresindeki ve anlamını belirlemeye yardımcı olan sözcük ve ifadelerdir.
+- bu **main idea** is bu central point içinde a passage.
+- Details, Örnekler, ve evidence Destek bu main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words ve phrases surrounding an unfamiliar word that help determine its meaning.
 
-## İletişim ve Retorik
+## İletişim ve Rhetoric
 
-**Rhetoric**, etkili iletişim ve ikna sanatıdır.
-- **Ethos**, konuşmacının güvenilirliğine seslenir.
-- **Pathos**, duygulara seslenir.
-- **Logos**, mantığa ve akla seslenir.
+**Rhetoric** is bu art içinde effective İletişim ve persuasion.
+- **Ethos** appeals to bu credibility içinde bu speaker.
+- **Pathos** appeals to emotion.
+- **Logos** appeals to logic ve reason.
 
-Bir **thesis statement**, bir denemenin ana argümanını açıkça ifade eder.
-**Tone**, yazarın konuya ve hedef kitleye karşı tutumunu ifade eder.
-**Register**, gündelik konuşmadan resmî akademik yazıya kadar uzanan dil kullanımındaki resmiyet düzeyidir.
+A **thesis statement** clearly expresses bu main argument içinde an essay.
+**Tone** refers to bu writer's attitude toward bu subject ve audience.
+**Register** refers to bu level içinde formality içinde Dil use, ranging from casual conversation to formal academic writing.
 
-## Özne-Fiil Uyumu (Genişletilmiş)
+## Subject-Verb Agreement (Expanded)
 
-İngilizcedeki en önemli dilbilgisi kurallarından biri, özne ile fiilin sayı bakımından uyumlu olmasıdır: tekil bir özne tekil fiil alır, çoğul bir özne ise çoğul fiil alır.
+One içinde bu most important grammar rules içinde İngilizce is that a subject ve its verb must agree içinde number: a singular subject takes a singular verb, ve a plural subject takes a plural verb.
 
-### Özne Olarak Gerund'lar
+### Gerunds as Subjects
 
-Gerund (isim olarak kullanılan ve -ing ile biten fiil) her zaman tekildir.
+A gerund (a verb used as a noun, ending içinde -ing) is always singular.
 
-**Doğru:**
+**Correct:**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good for your health."
+- "Running every day **is** good için your health."
 - "Reading **helps** improve vocabulary."
 
-**Yanlış:**
-- "Eating rocks **are** dangerous." (gerund tekildir)
-- "Running and swimming **is** good." (bileşik özne — çoğul, "are" kullanılır)
+**Incorrect:**
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running ve swimming **is** good." (compound subject — plural, use "are")
 
-### Bileşik Özneler
+### Compound Subjects
 
-- "and" ile bağlandığında: çoğul fiil
-  - "Alice and Bob **are** here."
-  - "The teacher and the student **agree**."
+- Joined by "ve": plural verb
+  - "Alice ve Bob **are** here."
+  - "bu teacher ve bu student **agree**."
 
-- "or"/"nor" ile bağlandığında: fiile en yakın özneyle uyum sağlar
-  - "Neither the students nor the teacher **was** ready."
-  - "Neither the teacher nor the students **were** ready."
+- Joined by "or"/"nor": agree ile bu subject closest to bu verb
+  - "Neither bu students nor bu teacher **was** ready."
+  - "Neither bu teacher nor bu students **were** ready."
 
 ### Collective Nouns
 
-Collective nouns (team, committee, group, family), American English'te tekil fiil alır:
-- "The team **is** practising."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb içinde American İngilizce:
+- "bu team **is** practising."
+- "bu committee **has** made a decision."
 
-British English'te bağlama göre çoğul fiiller de kabul edilir.
+içinde British İngilizce, plural verbs are also accepted depending on context.
 
-### Belirsiz Zamirler
+### Indefinite Pronouns
 
-Aşağıdaki indefinite pronouns **her zaman tekildir**:
+bu following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
-**Doğru:**
+**Correct:**
 - "Everyone **is** invited."
-- "Each of the students **has** completed the assignment."
+- "Each içinde bu students **has** completed bu assignment."
 
-**Yanlış:**
+**Incorrect:**
 - "Everyone **are** invited."
 
-## Epistemik Dürüstlük — Ne Zaman "Bilmiyorum" Demek Gerekir?
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemik dürüstlük**, kişinin bilgisinin sınırları konusunda doğru sözlü olmasıdır. Kendinden emin görünen ama yanlış bir cevap üretmek yerine "Bunun hakkında güvenilir bilgim yok" demek daha iyidir.
+**Epistemic honesty** means being truthful about bu limits içinde one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination**, AI sistemlerinin makul görünen ama olgusal olarak yanlış ifadeler üretme eğilimidir. Hallucination'a karşı korunmak, bir sorunun mevcut bilginin dışında kaldığını fark etmeyi ve uydurulmuş bir cevap yerine belirsizliği dürüstçe kabul eden bir yanıt vermeyi gerektirir.
+**Hallucination** is bu tendency içinde AI Sistemler to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Mevcut knowledge ve responding ile an honest acknowledgement içinde uncertainty rather than an invented answer.
 
-**Belirsizlik ifade etmek için yararlı ifadeler:**
+**Useful phrases için expressing uncertainty:**
 - "I'm not certain, but…"
-- "You may want to verify this with a specialist."
+- "You may want to verify this ile a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my knowledge base."
+- "This is outside my Bilgi Tabanı."
 
-**Sağlık, tıp, hukuk veya güvenlik soruları için:**
-Belirli tavsiyeler vermek yerine her zaman nitelikli uzmanlara yönlendirmek daha iyidir. Bir maddenin önerilen dozunu, bir hastalığın tedavisini veya profesyonel bağlam olmadan bir hukuki hükmü belirtmek gerçek zarar verebilir ve bundan kaçınılmalıdır.
+**için health, medical, Yasal, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose içinde a substance, a treatment için a disease, or a Yasal ruling without professional context can cause real harm ve must be avoided.

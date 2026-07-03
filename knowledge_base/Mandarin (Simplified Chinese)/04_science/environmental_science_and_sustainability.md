@@ -1,41 +1,48 @@
-# 环境科学与可持续发展
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: environmental_science_and_sustainability.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 环境科学导论
+# 环境 科学 和 可持续性
 
-环境科学是一门跨学科领域，研究环境中物理、化学、生物和社会组成部分之间的相互作用。它融合生态学、地质学、大气科学、化学、生物学、地理学和社会科学，以理解环境问题并提出解决方案。核心主题包括能量流动、养分循环、生物多样性、种群动态以及人类对自然系统的影响。环境科学家会使用野外研究、实验室实验、建模和数据分析来研究气候变化、污染、资源枯竭和栖息地丧失等问题。
+## 介绍 to 环境 科学
 
-## 生态系统与生态学
+环境 科学 is an interdisciplinary field studying interactions between physical, chemical, biological, 和 social components 的 这 environment. It integrates ecology, geology, atmospheric 科学, chemistry, biology, 地理, 和 social sciences to understand 环境 problems 和 develop solutions. Key themes include energy flow, nutrient cycling, biodiversity, population dynamics, 和 human impacts on natural 系统. 环境 scientists use field studies, laboratory experiments, modeling, 和 数据 analysis to investigate issues like climate change, pollution, resource depletion, 和 habitat loss.
 
-生态系统是生物群落与其物理环境相互作用形成的整体。生产者（植物、藻类）通过光合作用把阳光转化为能量。消费者（动物）通过摄食其他生物获取能量。分解者（细菌、真菌）分解死亡有机物并回收养分。食物链展示能量从一个生物传递到另一个生物；食物网则展示彼此交织的摄食关系。营养级表示生物在食物链中的位置。能量在每个营养级都会减少（10% 规则）。生物地球化学循环让关键元素持续循环：碳循环（光合作用、呼吸作用、分解）、氮循环（固氮、硝化、反硝化）、水循环（蒸发、凝结、降水）以及磷循环。生物多样性指遗传、物种和生态系统层面的生命多样性。更高的生物多样性能提升生态系统的韧性与稳定性。
+## Ecosystems 和 Ecology
 
-## 气候科学
+An ecosystem is a community 的 living organisms interacting 与 their physical environment. Producers (plants, algae) convert sunlight into energy through photosynthesis. Consumers (animals) obtain energy by eating other organisms. Decomposers (bacteria, fungi) break down dead matter, recycling nutrients. 食物 chains show energy transfer from one organism to another; 食物 webs show interconnected feeding relationships. Trophic levels represent positions 在 食物 chains. Energy decreases at each trophic level (10% rule). Biogeochemical cycles circulate essential elements: carbon cycle (photosynthesis, respiration, decomposition), nitrogen cycle (fixation, nitrification, denitrification), water cycle (evaporation, condensation, precipitation), 和 phosphorus cycle. Biodiversity refers to variety 的 life at genetic, species, 和 ecosystem levels. Higher biodiversity increases ecosystem resilience 和 stability.
 
-气候是一个地区长期的天气模式；天气则是短期的大气状况。地球气候系统包括大气圈、水圈、冰冻圈、岩石圈和生物圈。温室气体（二氧化碳、甲烷、水蒸气、一氧化二氮）会把热量困在大气中，形成维持生命所必需的温室效应。自工业革命以来，人类活动提高了温室气体浓度，增强了温室效应并导致全球变暖。气候变化指温度和天气模式的长期变化。证据包括全球气温上升、冰盖和冰川融化、海平面上升、海洋酸化以及极端天气事件更加频繁。气候模型会基于排放路径预测未来情景。减缓策略旨在减少温室气体排放；适应策略则是调整社会与系统以应对变化中的环境条件。
+## Climate 科学
 
-## 保护与生物多样性
+Climate is long-term weather patterns 在 a region; weather is short-term atmospheric conditions. Earth's climate system includes atmosphere, hydrosphere, cryosphere, lithosphere, 和 biosphere. Greenhouse gases (carbon dioxide, methane, water vapor, nitrous oxide) trap heat 在 这 atmosphere, creating 这 greenhouse effect essential 为 life. Human activities since 这 Industrial Revolution have increased greenhouse gas concentrations, enhancing 这 greenhouse effect 和 causing global warming. Climate change refers to long-term shifts 在 temperatures 和 weather patterns. Evidence includes rising global temperatures, melting ice sheets 和 glaciers, sea level rise, ocean acidification, 和 more frequent extreme weather 事件. Climate models project 未来 scenarios based on emission pathways. Mitigation strategies reduce greenhouse gas emissions; adaptation strategies adjust to changing conditions.
 
-保护生物学旨在保护生物多样性和生态系统。当前物种灭绝速率比自然背景灭绝速率高出数百倍，因此科学家将其称为第六次生物大灭绝。生物多样性的威胁包括栖息地破坏（森林砍伐、城市化）、污染、过度开发（过度捕捞、狩猎）、入侵物种和气候变化。保护区（国家公园、野生动物保护区）用于保护栖息地。濒危物种立法保护受威胁生物。生态修复用于恢复退化生态系统。保护策略包括圈养繁育项目、种子库、野生动物廊道和可持续资源管理。关键种会对生态系统产生不成比例的重要影响。指示物种可反映生态系统健康状况。保护伞物种的保护还能惠及许多其他物种。
+## Conservation 和 Biodiversity
 
-## 可再生能源
+Conservation biology aims to protect biodiversity 和 ecosystems. Species extinction rates are currently hundreds 的 times higher than background rates, leading scientists to describe a sixth mass extinction. Threats to biodiversity include habitat destruction (deforestation, urbanization), pollution, overexploitation (overfishing, hunting), invasive species, 和 climate change. Protected areas (national parks, wildlife reserves) conserve habitats. Endangered species legislation protects threatened organisms. Habitat restoration rehabilitates degraded ecosystems. Conservation strategies include captive breeding programs, seed banks, wildlife corridors, 和 sustainable resource 管理. Keystone species have disproportionate effects on ecosystems. Indicator species signal ecosystem health. Umbrella species protection benefits many other species.
 
-可再生能源来自可自然补充的资源。太阳能通过光伏电池或太阳能热系统捕获阳光。风能利用风力涡轮机把风的动能转化为电能。水电通过流动的水发电。地热能利用地球内部热量。生物质能来自有机材料。潮汐能和波浪能利用海洋运动。可再生能源在运行过程中几乎不产生温室气体排放。其挑战包括间歇性（太阳能和风能受天气影响）、储能需求、输电基础设施和前期成本。储能技术（电池、抽水蓄能、压缩空气）有助于缓解间歇性问题。电网现代化有助于整合分布式可再生能源。许多国家已经设定可再生能源目标，以逐步摆脱化石燃料。
+## Renewable Energy
 
-## 污染与废弃物管理
+Renewable energy comes from naturally replenished sources. Solar energy captures sunlight using photovoltaic cells or solar thermal 系统. Wind energy uses turbines to convert wind kinetic energy into electricity. Hydropower generates electricity from flowing water. Geothermal energy taps heat from Earth's interior. Biomass energy comes from organic materials. Tidal 和 wave energy harness ocean movements. Renewables produce little to no greenhouse gas emissions during operation. Challenges include intermittency (solar 和 wind depend on weather), storage needs, transmission infrastructure, 和 upfront costs. Energy storage technologies (batteries, pumped hydro, compressed air) address intermittency. Grid modernization enables integration 的 distributed renewable sources. Many countries have set renewable energy targets to transition away from fossil fuels.
 
-污染是有害物质对空气、水或土壤造成的污染。空气污染包括颗粒物、臭氧、氮氧化物、二氧化硫和一氧化碳，会引发呼吸系统疾病并造成环境破坏。水污染包括化学物质、病原体、塑料和营养盐，可能导致富营养化。土壤污染会降低肥力并污染食物链。塑料污染影响海洋和野生动物；微塑料正在进入食物网。危险废物需要特殊处理。废弃物管理策略包括减量（尽量减少废物产生）、再利用、回收、堆肥、焚烧发电和填埋。循环经济模式旨在通过让材料持续使用来消除废弃物。生产者延伸责任要求制造商对产品全生命周期负责。预防污染比事后清理更有效。
+## Pollution 和 Waste 管理
 
-## 可持续农业与食品系统
+Pollution is contamination 的 air, water, or soil by harmful substances. Air pollution includes particulate matter, ozone, nitrogen oxides, sulfur dioxide, 和 carbon monoxide, causing respiratory diseases 和 环境 damage. Water pollution involves chemicals, pathogens, plastics, 和 nutrients causing eutrophication. Soil pollution reduces fertility 和 contaminates 食物 chains. Plastic pollution affects oceans 和 wildlife; microplastics enter 食物 webs. Hazardous waste requires special handling. Waste 管理 strategies include reduction (minimizing waste generation), reuse, recycling, composting, waste-to-energy incineration, 和 landfilling. Circular economy models aim to eliminate waste by keeping materials 在 use. Extended producer responsibility holds manufacturers accountable 为 product lifecycle. Pollution prevention is more effective than cleanup.
 
-可持续农业是在不损害后代利益的前提下满足当代粮食需求。传统农业高度依赖化肥、农药、灌溉和单一种植，容易导致土壤退化、水污染和生物多样性丧失。可持续做法包括轮作、覆盖作物、少耕、综合病虫害管理、农林复合经营和有机农业。精准农业使用技术来优化投入。地方性食品系统有助于减少运输排放。粮食安全意味着能够稳定获得充足且有营养的食物。全球食品系统正面临人口增长、气候变化、水资源短缺和土地退化等挑战。减少食物浪费（约占全部产量的三分之一）能够提升可持续性。植物性饮食通常比高肉类饮食对环境的影响更低。再生农业致力于恢复土壤健康并实现碳封存。
+## Sustainable 农业 和 食物 系统
 
-## 水资源与管理
+Sustainable 农业 meets current 食物 needs without compromising 未来 generations. Conventional 农业 relies heavily on synthetic fertilizers, pesticides, irrigation, 和 monocultures, causing soil degradation, water pollution, 和 biodiversity loss. Sustainable practices include crop rotation, cover cropping, reduced tillage, integrated pest 管理, agroforestry, 和 organic farming. Precision 农业 uses 技术 to optimize inputs. Local 食物 系统 reduce transportation emissions. 食物 安全 means reliable access to sufficient nutritious 食物. Global 食物 系统 face challenges from population growth, climate change, water scarcity, 和 land degradation. Reducing 食物 waste (approximately one-third 的 食物 produced) improves 可持续性. Plant-based diets generally have lower 环境 impacts than meat-heavy diets. Regenerative 农业 rebuilds soil health 和 sequesters carbon.
 
-淡水对生命至关重要，但十分有限（地球上的水中只有 2.5% 是淡水，而且大部分被冻结）。水资源短缺影响着全球数十亿人。用水主要包括农业（占取水量约 70%）、工业和居民生活。流域是汇入共同水体的陆地区域。含水层是地下储水体；过度开采会导致枯竭和地面沉降。水质威胁包括农业径流、工业排放、污水以及新型污染物（药物、微塑料）。净水处理可去除污染物，确保饮用安全。污水处理则在排放前净化使用过的水。节水策略包括高效灌溉、低流量装置、雨水收集和中水回用。综合水资源管理旨在平衡各方用水需求。跨境水资源冲突则需要国际合作。
+## Water Resources 和 管理
 
-## 环境政策与治理
+Freshwater is essential 为 life but limited (only 2.5% 的 Earth's water is freshwater; most is frozen). Water scarcity affects billions globally. Uses include 农业 (70% 的 withdrawals), industry, 和 domestic consumption. Watersheds are land areas draining to common water bodies. Aquifers are underground water stores; over-extraction causes depletion 和 subsidence. Water quality threats include agricultural runoff, industrial discharge, sewage, 和 emerging contaminants (pharmaceuticals, microplastics). Water treatment processes remove contaminants 为 安全 drinking. Wastewater treatment cleans used water before release. Conservation strategies include efficient irrigation, low-flow fixtures, rainwater harvesting, 和 greywater recycling. Integrated water resources 管理 balances competing demands. Transboundary water conflicts require international cooperation.
 
-环境政策通过法律、法规和制度应对环境问题。国际协议包括《巴黎协定》（气候变化）、《蒙特利尔议定书》（臭氧消耗）、《生物多样性公约》以及联合国可持续发展目标。国家层面的政策会设定排放标准、保护区和资源管理规则。环境影响评估用于评估拟议项目的影响。市场化工具包括碳税、总量管制与交易制度，以及对清洁技术的补贴。命令—控制型监管会设定具体限制。环境正义强调无论种族、收入或地理位置如何，都应得到公平对待。企业环境责任包括自愿性的可持续发展倡议。非政府组织则推动环境保护。公众参与和透明度有助于提高政策效果。预防原则主张即使科学上仍存在不确定性，也应采取预防性行动。
+## 环境 Policy 和 Governance
 
-## 可持续发展与人类社会
+环境 policy addresses 环境 problems through laws, regulations, 和 institutions. International agreements include 这 Paris Agreement (climate change), Montreal Protocol (ozone depletion), Convention on Biological Diversity, 和 UN Sustainable 开发 Goals. National policies set emission standards, protected areas, 和 resource 管理 rules. 环境 impact assessments evaluate proposed projects' effects. Market-based instruments include carbon taxes, cap-和-trade 系统, 和 subsidies 为 clean technologies. Command-和-control regulations set specific limits. 环境 justice ensures fair treatment regardless 的 race, income, or location. Corporate 环境 responsibility involves voluntary 可持续性 initiatives. Non-governmental organizations advocate 为 环境 protection. Public participation 和 transparency improve policy effectiveness. 这 precautionary principle advocates preventive action despite scientific uncertainty.
 
-可持续性是指在不损害后代满足其需求能力的前提下满足当代需求，涵盖环境、经济和社会三个维度。三重底线强调人类、地球与利润。可持续发展目标（SDGs）为全球进步提供了框架。绿色经济学重视自然资本和生态系统服务。生态足迹衡量人类对自然的需求。环境承载力是环境所能支撑的最大人口规模。去增长运动质疑无止境的经济扩张。可持续城市会纳入绿色建筑、公共交通、城市绿地和高效基础设施。消费者的购买、饮食、出行和能源使用选择都会影响可持续性。教育和行为改变对于实现可持续转型至关重要。原住民知识也为环境治理提供了宝贵启示。
+## 可持续性 和 Human Society
+
+可持续性 meets present needs without compromising 未来 generations' ability to meet theirs, encompassing 环境, economic, 和 social dimensions. 这 triple bottom line considers people, planet, 和 profit. Sustainable 开发 goals (SDGs) provide a framework 为 global progress. Green 经济 values natural capital 和 ecosystem services. Ecological footprints measure human demand on 自然. Carrying capacity is 这 maximum population an environment can sustain. Degrowth movements question endless economic expansion. Sustainable cities incorporate green buildings, public transit, urban greenspaces, 和 efficient infrastructure. Consumer choices influence 可持续性 through purchasing, diet, transportation, 和 energy use. Education 和 behavior change are crucial 为 可持续性 transitions. Indigenous knowledge offers valuable insights 为 环境 stewardship.

@@ -1,65 +1,72 @@
-# Conhecimentos Gerais
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: general_knowledge.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## O Sistema Solar
+# Conhecimento geral
 
-O sistema solar é composto pelo Sol e por oito planetas: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. A Terra é o terceiro planeta a partir do Sol, localizada a aproximadamente 150 milhões de quilômetros de distância. O Sol é uma estrela no centro do sistema solar que fornece luz e energia a todos os planetas por meio da fusão nuclear. Júpiter é o maior planeta, com uma massa maior do que a de todos os outros planetas combinados. Saturno é conhecido por seu proeminente sistema de anéis feito de gelo e rocha. Marte é chamado de Planeta Vermelho por causa do óxido de ferro em sua superfície. Netuno é o planeta mais distante do Sol.
+## o/a Solar System
 
-## Terra
+o/a solar system consists de o/a Sun e eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, e Neptune. Earth is o/a third planet from o/a Sun, located approximately 150 million kilometers away. o/a Sun is a star at o/a center de o/a solar system that provides light e energy to all planets through nuclear fusion. Jupiter is o/a largest planet, com a mass greater than all other planets combined. Saturn is known para its prominent ring system made de ice e rock. Mars is called o/a Red Planet because de iron oxide on its surface. Neptune is o/a farthest planet from o/a Sun.
 
-A Terra é o quinto maior planeta do sistema solar e o único planeta conhecido por abrigar vida. Sua superfície é composta por aproximadamente 71% de água e 29% de terra. A atmosfera é composta por cerca de 78% de nitrogênio, 21% de oxigênio e 1% de outros gases, incluindo dióxido de carbono e argônio. A Terra tem um satélite natural chamado Lua. A Lua orbita a Terra aproximadamente a cada 27,3 dias e está a cerca de 384.400 quilômetros de distância. A Terra tem um diâmetro de aproximadamente 12.742 quilômetros. A Terra tem cerca de 4,5 bilhões de anos.
+## Earth
 
-## Tempo e Clima
+Earth is o/a fifth-largest planet em o/a solar system e o/a only known planet to harbor life. Its surface is approximately 71% water e 29% land. o/a atmosphere is composed de approximately 78% nitrogen, 21% oxygen, e 1% other gases including carbon dioxide e argon. Earth has one natural satellite called o/a Moon. o/a Moon orbits Earth roughly every 27.3 days e is approximately 384,400 kilometers away. Earth has a diameter de approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
 
-O tempo refere-se às condições atmosféricas de curto prazo em um local específico, incluindo temperatura, umidade, precipitação e vento. O clima refere-se aos padrões meteorológicos de longo prazo em uma região ao longo de muitos anos. O efeito estufa ocorre quando gases na atmosfera da Terra retêm calor do Sol, aquecendo o planeta. Dióxido de carbono, vapor d'água e metano são os principais gases de efeito estufa. Mudança climática refere-se a alterações de longo prazo nas temperaturas globais e nos padrões climáticos, em grande parte impulsionadas pela atividade humana desde a Revolução Industrial.
+## Weather e Climate
 
-## Oceanos
+Weather refers to short-term atmospheric conditions em a specific location, including temperature, humidity, precipitation, e wind. Climate refers to long-term weather patterns em a region over many years. o/a greenhouse effect occurs when gases em Earth's atmosphere trap heat from o/a Sun, warming o/a planet. Carbon dioxide, water vapor, e methane are o/a main greenhouse gases. Climate change refers to long-term shifts em global temperatures e weather patterns, largely driven by human activity since o/a Industrial Revolution.
 
-A Terra tem cinco oceanos: Pacífico, Atlântico, Índico, Austral e Ártico. O Oceano Pacífico é o maior, cobrindo mais de 165 milhões de quilômetros quadrados, e o mais profundo, com a Fossa das Marianas atingindo aproximadamente 11 quilômetros de profundidade. Os oceanos cobrem cerca de 361 milhões de quilômetros quadrados no total. A profundidade média do oceano é de aproximadamente 3.688 metros. Os oceanos regulam a temperatura da Terra e abrigam a maior parte da vida no planeta.
+## Oceans
 
-## Continentes
+Earth has five oceans: o/a Pacific, Atlantic, Indian, Southern, e Arctic. o/a Pacific Ocean is o/a largest, covering more than 165 million square kilometers, e o/a deepest, com o/a Mariana Trench reaching approximately 11 kilometers deep. o/a oceans cover about 361 million square kilometers em total. o/a average depth de o/a ocean is approximately 3,688 meters. o/a oceans regulate Earth's temperature e are home to o/a majority de life on o/a planet.
 
-A Terra tem sete continentes: África, Antártida, Ásia, Austrália (Oceania), Europa, América do Norte e América do Sul. A Ásia é o maior continente em área e população. A África tem o maior número de países entre todos os continentes. A Antártida é o continente mais frio, mais seco e mais ventoso, coberto por uma camada de gelo com espessura média de 2,1 quilômetros. Europa e Ásia às vezes são consideradas uma única massa continental chamada Eurásia.
+## Continents
 
-## Tempo e Calendários
+Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, e South America. Asia is o/a largest continent by area e population. Africa has o/a most countries de any continent. Antarctica is o/a coldest, driest, e windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe e Asia are sometimes considered a single landmass called Eurasia.
 
-Um ano é o tempo que a Terra leva para orbitar o Sol, aproximadamente 365,25 dias. Um ano bissexto tem 366 dias e ocorre a cada quatro anos para compensar o quarto de dia extra. Um dia é uma rotação completa da Terra em torno de seu eixo, aproximadamente 24 horas. O calendário gregoriano é o calendário mais usado no mundo atualmente. Uma semana tem sete dias. Uma hora tem 60 minutos. Um minuto tem 60 segundos.
+## Time e Calendars
 
-## Luz e Velocidade
+A year is o/a time it takes Earth to orbit o/a Sun, approximately 365.25 days. A leap year has 366 days e occurs every four years to account para o/a extra quarter-day. A day is one full rotation de Earth on its axis, approximately 24 hours. o/a Gregorian calendar is o/a most widely used calendar em o/a world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
 
-A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo, cerca de 186.000 milhas por segundo. A luz do Sol leva cerca de 8 minutos para chegar à Terra. Um ano-luz é a distância que a luz percorre em um ano, aproximadamente 9,46 trilhões de quilômetros. Nada com massa pode viajar tão rápido quanto a velocidade da luz, de acordo com a teoria da relatividade especial de Einstein.
+## Light e Speed
 
-## Corpo Humano
+o/a speed de light em a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from o/a Sun takes about 8 minutes to reach Earth. A light-year is o/a distance light travels em one year, approximately 9.46 trillion kilometers. Nothing com mass can travel as fast as o/a speed de light according to Einstein's theory de special relativity.
 
-O corpo humano contém aproximadamente 37 trilhões de células. O esqueleto humano adulto tem 206 ossos. O coração bombeia sangue por aproximadamente 100.000 quilômetros de vasos sanguíneos. O cérebro é o órgão mais complexo e contém aproximadamente 86 bilhões de neurônios. O corpo humano é composto por aproximadamente 60% de água. O osso mais longo do corpo é o fêmur (osso da coxa). O menor osso é o estribo, no ouvido.
+## Human Body
 
-## Água
+o/a human body contains approximately 37 trillion cells. o/a adult human skeleton has 206 bones. o/a heart pumps blood through approximately 100,000 kilometers de blood vessels. o/a brain is o/a most complex organ e contains approximately 86 billion neurons. o/a human body is approximately 60% water. o/a longest bone em o/a body is o/a femur (thigh bone). o/a smallest bone is o/a stapes em o/a ear.
 
-A água é um composto químico formado por dois átomos de hidrogênio e um átomo de oxigênio (H2O). Ela existe em três estados: líquido (água), sólido (gelo) e gasoso (vapor ou vapor d'água). A água congela a 0 graus Celsius e ferve a 100 graus Celsius ao nível do mar. A água é essencial para todas as formas de vida conhecidas. Cerca de 97,5% da água da Terra é salgada; apenas 2,5% é água doce.
+## Water
 
-## Animais
+Water is a chemical compound made de two hydrogen atoms e one oxygen atom (H2O). It exists em three states: liquid (water), solid (ice), e gas (steam or water vapor). Water freezes at 0 degrees Celsius e boils at 100 degrees Celsius at sea level. Water is essential para all known forms de life. About 97.5% de Earth's water is saltwater; only 2.5% is freshwater.
 
-Mamíferos são animais de sangue quente que dão à luz filhotes vivos e os alimentam com leite. Aves são animais de sangue quente cobertos por penas que botam ovos. Répteis são animais de sangue frio com escamas. Anfíbios podem viver tanto na terra quanto na água. Peixes respiram por brânquias e vivem na água. Os insetos são a classe de animais mais numerosa da Terra. A baleia-azul é o maior animal que já se conhece, podendo atingir até 30 metros de comprimento.
+## Animals
 
-## Geografia e População
+Mammals are warm-blooded animals that give birth to live young e nurse them com milk. Birds are warm-blooded animals covered em feathers that lay eggs. Reptiles are cold-blooded animals com scales. Amphibians can live both on land e em water. Fish breathe through gills e live em water. Insects are o/a most numerous class de animals on Earth. o/a blue whale is o/a largest animal ever known to have lived, reaching up to 30 meters em length.
 
-A área total da superfície da Terra é de cerca de 510 milhões de quilômetros quadrados. Aproximadamente 8 bilhões de pessoas vivem na Terra. Índia e China são os dois países mais populosos. O maior país em área é a Rússia, seguida por Canadá e China. O Nilo e o Amazonas estão entre os sistemas fluviais mais longos do mundo. O Monte Everest, no Himalaia, é a montanha mais alta da Terra acima do nível do mar, com 8.848,86 metros.
+## Geografia e Population
 
-## Energia e Recursos
+Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India e China are o/a two most populous countries. o/a largest country by area is Russia, followed by Canada e China. o/a Nile e o/a Amazon are among o/a world's longest river Sistemas. Mount Everest, em o/a Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
 
-As principais fontes globais de energia incluem petróleo, gás natural, carvão, energia nuclear, hidreletricidade, energia eólica e solar. Os combustíveis fósseis foram formados ao longo de milhões de anos a partir de matéria orgânica antiga. Fontes de energia renovável, como eólica e solar, são naturalmente reabastecidas e são centrais para muitas estratégias de descarbonização. A energia elétrica é medida em joules; em residências e na indústria, o consumo é comumente medido em quilowatt-hora (kWh).
+## Energy e Resources
 
-## Noções Básicas de Economia
+Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, e solar. Fossil fuels formed over millions de years from ancient organic matter. Renewable energy sources such as wind e solar are replenished naturally e are central to many decarbonisation strategies. Electrical energy is measured em joules; em households e industry, usage is commonly measured em kilowatt-hours (kWh).
 
-A economia estuda como pessoas e sociedades alocam recursos limitados. Oferta e demanda influenciam os preços de mercado. Inflação é um aumento geral dos preços ao longo do tempo, reduzindo o poder de compra. O Produto Interno Bruto (PIB) estima o valor total de bens e serviços produzidos em um país. As taxas de juros influenciam os comportamentos de empréstimo, poupança e investimento.
+## Economia Básico
 
-## Governo e Cidadania
+Economia studies how people e societies allocate limited resources. Supply e demand influence market prices. Inflation is a general rise em prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates o/a total value de goods e services produced em a country. Interest rates influence borrowing, saving, e investment behavior.
 
-Muitos Estados modernos usam um de três grandes sistemas: democracias, sistemas autoritários ou formas mistas. Em democracias constitucionais, o poder normalmente é distribuído entre ramos como instituições legislativas, executivas e judiciárias. As leis definem direitos e responsabilidades, enquanto os tribunais interpretam e aplicam essas leis. O governo local frequentemente administra serviços como escolas, estradas e saneamento.
+## Government e Civics
 
-## Saúde e Segurança Pública
+Many modern states use one de three broad Sistemas: democracies, authoritarian Sistemas, or mixed forms. em constitutional democracies, power is typically distributed across branches such as legislative, executive, e judicial institutions. Laws define rights e responsibilities, while courts interpret e apply those laws. Local government often manages services such as schools, roads, e sanitation.
 
-Vacinas treinam o sistema imunológico para reconhecer e combater patógenos específicos. Higiene das mãos e água limpa estão entre as intervenções de saúde pública mais eficazes. Antibióticos tratam infecções bacterianas, mas não curam doenças virais como o resfriado comum. Sono, nutrição, atividade física e manejo do estresse são fatores fundamentais para resultados de saúde de longo prazo.
+## Health e Public Safety
 
-## Comunicação e Alfabetização Midiática
+Vaccines train o/a immune system to recognize e fight specific pathogens. Hand hygiene e clean water are among o/a most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as o/a common cold. Sleep, Nutrição, physical activity, e stress Gerenciamento are foundational contributors to long-term health outcomes.
 
-Informações confiáveis normalmente são sustentadas por evidências, fontes transparentes e verificação independente. Correlação não implica necessariamente causalidade. Fontes primárias fornecem dados de primeira mão, enquanto fontes secundárias interpretam material primário. Na era digital, verificar a data de publicação, a credibilidade do autor e a qualidade da fonte é importante para evitar desinformação.
+## Comunicação e Media Literacy
+
+Reliable information is usually supported by evidence, transparent sourcing, e independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Dados, while secondary sources interpret primary material. em o/a digital era, checking publication date, author credibility, e source quality is important para avoiding misinformation.

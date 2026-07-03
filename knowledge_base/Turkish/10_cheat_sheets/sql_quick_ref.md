@@ -1,10 +1,17 @@
-# SQL Hızlı Referans Rehberi
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: sql_quick_ref.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Veritabanı işlemleri için temel SQL komutları.
+# SQL Hızlı Referans Rehber
+
+Essential SQL Komutlar için Veritabanı operations.
 
 ---
 
-## Temel Sorgu Yapısı
+## Basic Query Structure
 
 ```sql
 SELECT column1, column2, ...
@@ -18,9 +25,9 @@ LIMIT number;
 
 ---
 
-## Veri Alma (SELECT)
+## Veri Retrieval (SELECT)
 
-### Temel Seçim
+### Basic Selection
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -35,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtreleme (WHERE)
+### Filtering (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -53,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sıralama ve Sınırlandırma
+### Sorting ve Limiting
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -70,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Toplama Fonksiyonları
+## Aggregation Functions
 
 ```sql
 -- Count rows
@@ -97,7 +104,7 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Join'ler
+## Joins
 
 ### Inner Join
 ```sql
@@ -147,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Alt Sorgular
+## Subqueries
 
 ```sql
 -- In WHERE clause
@@ -177,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-## Küme İşlemleri
+## Set Operations
 
 ```sql
 -- UNION (remove duplicates)
@@ -203,7 +210,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## Veri Değiştirme
+## Veri Modification
 
 ### INSERT
 ```sql
@@ -261,7 +268,7 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Tablo İşlemleri
+## Table Operations
 
 ### CREATE Table
 ```sql
@@ -311,7 +318,7 @@ DROP TABLE IF EXISTS temp_table;
 
 ---
 
-## Kısıtlamalar
+## Constraints
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -350,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-## İndeksler
+## Indexes
 
 ```sql
 -- Create index
@@ -371,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## View'ler
+## Views
 
 ```sql
 -- Create view
@@ -395,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTE'ler)
+## Common Table Expressions (CTEs)
 
 ```sql
 -- Simple CTE
@@ -458,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-## Veri Tipleri
+## Veri Types
 
-### Sayısal
-- `INT` - Tamsayı
-- `BIGINT` - Büyük tamsayı
-- `DECIMAL(p,s)` - Kesin ondalık sayı (precision, scale)
-- `FLOAT` - Yaklaşık kayan noktalı sayı
-- `DOUBLE` - Çift hassasiyetli kayan noktalı sayı
+### Numeric
+- `INT` - Integer
+- `BIGINT` - Large integer
+- `DECIMAL(p,s)` - Exact decimal (precision, scale)
+- `FLOAT` - Approximate floating point
+- `DOUBLE` - Double precision float
 
 ### String
-- `CHAR(n)` - Sabit uzunluklu string
-- `VARCHAR(n)` - Değişken uzunluklu string
-- `TEXT` - Büyük metin alanı
-- `ENUM` - Sıralı değerler
+- `CHAR(n)` - Fixed length string
+- `VARCHAR(n)` - Variable length string
+- `TEXT` - Large text
+- `ENUM` - Enumerated values
 
-### Tarih/Saat
-- `DATE` - Tarih (YYYY-MM-DD)
-- `TIME` - Saat (HH:MM:SS)
-- `DATETIME` - Tarih ve saat
-- `TIMESTAMP` - Unix zaman damgası
-- `YEAR` - Yıl değeri
+### Date/Time
+- `DATE` - Date (YYYY-MM-DD)
+- `TIME` - Time (HH:MM:SS)
+- `DATETIME` - Date ve time
+- `TIMESTAMP` - Unix timestamp
+- `YEAR` - Year value
 
 ### Boolean
-- `BOOLEAN` veya `BOOL` - True/False
+- `BOOLEAN` or `BOOL` - True/False
 
 ### Binary
-- `BLOB` - İkili büyük nesne
-- `BINARY` - Sabit ikili veri
-- `VARBINARY` - Değişken ikili veri
+- `BLOB` - Binary large object
+- `BINARY` - Fixed binary
+- `VARBINARY` - Variable binary
 
 ---
 
-## Kullanışlı Fonksiyonlar
+## Useful Functions
 
-### String Fonksiyonları
+### String Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -503,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Tarih Fonksiyonları
+### Date Functions
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -515,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Sayısal Fonksiyonlar
+### Numeric Functions
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -526,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Koşullu Fonksiyonlar
+### Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
@@ -549,25 +556,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## Performans İpuçları
+## Performans Tips
 
-✅ **Yapın:**
-- Sık sorgulanan sütunlarda indeks kullanın
-- Yalnızca gereken sütunları seçin (`SELECT *` kullanmaktan kaçının)
-- Sorgu performansını analiz etmek için `EXPLAIN` kullanın
-- Veriyi uygun şekilde normalize edin
-- SQL injection'ı önlemek için prepared statement kullanın
+✅ **Do:**
+- Use indexes on frequently queried columns
+- Select only needed columns (avoid `SELECT *`)
+- Use `EXPLAIN` to analyze query Performans
+- Normalize Veri appropriately
+- Use prepared statements to prevent SQL injection
 
-❌ **Yapmayın:**
-- WHERE koşullarında indeksli sütunlar üzerinde fonksiyon kullanmayın
-- Çok fazla indeks oluşturmayın (yazmaları yavaşlatır)
-- Gereksiz yere `SELECT DISTINCT` kullanmayın
-- Sorgu yürütme planlarını görmezden gelmeyin
-- Hesaplanabiliyorsa hesaplanmış değerleri saklamayın
+❌ **Don't:**
+- Use functions on indexed columns içinde WHERE clauses
+- Create too many indexes (slows writes)
+- Use `SELECT DISTINCT` unnecessarily
+- Ignore query execution plans
+- Store computed values when they can be calculated
 
 ---
 
-## Güvenlik İçin En İyi Uygulamalar
+## Güvenlik En İyi Uygulamalar
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -584,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Son güncelleme: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Son Güncelleme: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

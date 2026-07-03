@@ -1,10 +1,17 @@
-# База знаний на английском языке
+<!-- 
+This file was automatically translated from English to Russian.
+Source: README.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Полная коллекция справочных документов по технологиям, науке, бизнесу, гуманитарным дисциплинам и практическим навыкам.
+# Английский База знаний
+
+Полная коллекция из Справочник documents covering Технология, Наука, Бизнес, humanities, и practical skills.
 
 **Последнее обновление:** June 2025  
 **Всего файлов:** 34+ markdown documents  
-**Организация:** Материалы распределены по 10 тематическим каталогам
+**Organization:** Categorized into 10 thematic directories
 
 ---
 
@@ -28,71 +35,71 @@ knowledge_base/English/
 
 ## 📚 Быстрая навигация
 
-### Технологии и вычислительная техника (`01_technology_and_computing/`)
+### Технология & Вычисления (`01_technology_and_computing/`)
 | File | Description | Lines |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, безопасность | 350+ |
-| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, шаблоны проектирования, оптимизация | 300+ |
-| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, архитектурные шаблоны, безопасность | 350+ |
-| [networking_basics.md](01_technology_and_computing/networking_basics.md) | Модель OSI, TCP/IP, протоколы, безопасность | 400+ |
-| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Техническая терминология | 250+ |
-| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Инструменты и утилиты для разработки | 200+ |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Безопасность | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, Архитектура patterns, Безопасность | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, Безопасность | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Разработка tools и utilities | 200+ |
 
-### Искусственный интеллект (`02_artificial_intelligence/`)
+### Artificial Intelligence (`02_artificial_intelligence/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | Обзор AI, ML, deep learning, LLMs | 200+ |
-| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML-пайплайны, метрики, лучшие практики | 200+ |
-| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Локальный запуск моделей | 200+ |
-| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Архитектуры локального развёртывания AI | 400+ |
-| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Техники и стратегии prompt engineering | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI Обзор, ML, Глубокое обучение, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, Лучшие практики | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI Развертывание architectures | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques и strategies | 150+ |
 
-### Data Science (`03_data_science/`)
+### Данные Наука (`03_data_science/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Обработка данных, ML, big data, BI | 350+ |
-| [math_and_logic.md](03_data_science/math_and_logic.md) | Математика, логика, доказательства | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Данные processing, ML, big Данные, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
 ### Наука (`04_science/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [science_and_nature.md](04_science/science_and_nature.md) | Основы физики, химии и биологии | 100+ |
-| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Медицинские специальности, системы здравоохранения | 250+ |
-| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Экосистемы, климат, охрана природы | 200+ |
-| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Сельское хозяйство, питание, продовольственные системы | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology Основы | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, Здравоохранение Системы | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Сельское хозяйство, Питание, Еда Системы | 150+ |
 
-### Бизнес и финансы (`05_business_and_finance/`)
+### Бизнес & Финансы (`05_business_and_finance/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Корпоративные структуры, маркетинг, экономика | 150+ |
-| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Личные финансы, инвестиции, рынки | 350+ |
-| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Правовые системы, договоры, IP, конституционное право | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, Экономика | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal Финансы, Инвестирование, markets | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Юридический Системы, contracts, IP, constitutional Закон | 200+ |
 
-### Гуманитарные науки (`06_humanities/`)
+### Humanities (`06_humanities/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [history_and_culture.md](06_humanities/history_and_culture.md) | Исторические периоды, культурные движения | 200+ |
-| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Физическая и социальная география, политические системы | 300+ |
-| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Литературные жанры, визуальные искусства, музыка, кино | 400+ |
-| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Когнитивная, социальная и возрастная психология | 200+ |
-| [language_and_english.md](06_humanities/language_and_english.md) | Грамматика, лингвистика, письмо | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human География, political Системы | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual Искусства, music, film | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental Психология | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
-### Справочные материалы (`07_reference/`)
+### Справочник (`07_reference/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [dictionary.md](07_reference/dictionary.md) | Подробные определения слов (A-Z) | 868 |
-| [general_knowledge.md](07_reference/general_knowledge.md) | Базовые факты о мире | 150+ |
-| [technology_and_computing.md](07_reference/technology_and_computing.md) | Основы вычислительной техники и информатики | 250+ |
-| [safe_communication.md](07_reference/safe_communication.md) | Рекомендации и лучшие практики общения | 150+ |
+| [Словарь.md](07_reference/Словарь.md) | Comprehensive word definitions (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about the world | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | Вычисления Основы и Основы | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | Коммуникация guidelines и Лучшие практики | 150+ |
 
 ### Будущее (`08_future/`)
 | File | Description | Lines |
 |------|-------------|-------|
-| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Предстоящие события, космические миссии, технологические тренды | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming События, space missions, tech trends | 200+ |
 
-### Практические навыки (`09_practical_skills/`)
-*Раздел пополняется — скоро появятся:*
+### Practical Skills (`09_practical_skills/`)
+*Растущий каталог - скоро будет:*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -100,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Шпаргалки (`10_cheat_sheets/`)
-*Раздел пополняется — скоро появятся:*
+*Растущий каталог - скоро будет:*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -109,28 +116,28 @@ knowledge_base/English/
 
 ---
 
-## 🎯 Траектории обучения
+## 🎯 Пути обучения
 
-### Для начинающих
-1. Начните с `07_reference/general_knowledge.md`
-2. Затем перейдите к `07_reference/technology_and_computing.md`
-3. Изучите `06_humanities/language_and_english.md`
-4. После этого приступайте к `01_technology_and_computing/coding_languages.md`
+### для Beginners
+1. Start с `07_reference/general_knowledge.md`
+2. Move to `07_reference/technology_and_computing.md`
+3. Explore `06_humanities/language_and_english.md`
+4. Begin `01_technology_and_computing/coding_languages.md`
 
-### Для разработчиков ПО
+### для Software Developers
 1. `01_technology_and_computing/coding_languages.md`
 2. `01_technology_and_computing/web_development.md`
 3. `01_technology_and_computing/database_systems.md`
 4. `01_technology_and_computing/cloud_architecture.md`
 5. `02_artificial_intelligence/artificial_intelligence.md`
 
-### Для специалистов по Data Science
+### для Данные Scientists
 1. `03_data_science/math_and_logic.md`
 2. `03_data_science/data_science_and_analytics.md`
 3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
 4. `01_technology_and_computing/database_systems.md`
 
-### Для специалистов в бизнесе
+### для Бизнес Professionals
 1. `05_business_and_finance/business_and_economics.md`
 2. `05_business_and_finance/finance_and_investing.md`
 3. `05_business_and_finance/law_and_legal_systems.md`
@@ -142,55 +149,55 @@ knowledge_base/English/
 
 | Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
-| Технологии и вычислительная техника | 7 | ~2,800 | 400 |
-| Искусственный интеллект | 5 | ~1,500 | 300 |
-| Data Science | 2 | ~600 | 300 |
+| Технология & Вычисления | 7 | ~2,800 | 400 |
+| Artificial Intelligence | 5 | ~1,500 | 300 |
+| Данные Наука | 2 | ~600 | 300 |
 | Наука | 4 | ~700 | 175 |
-| Бизнес и финансы | 3 | ~700 | 233 |
-| Гуманитарные науки | 5 | ~1,100 | 220 |
-| Справочные материалы | 4 | ~1,400 | 350 |
+| Бизнес & Финансы | 3 | ~700 | 233 |
+| Humanities | 5 | ~1,100 | 220 |
+| Справочник | 4 | ~1,400 | 350 |
 | Будущее | 1 | ~200 | 200 |
-| **Итого** | **31** | **~9,000** | **290** |
+| **Total** | **31** | **~9,000** | **290** |
 
 ---
 
-## ⚠️ Важные оговорки
+## ⚠️ Важные предупреждения
 
-- **Медицинская информация:** Материалы в `medicine_and_healthcare.md` предназначены только для образовательных целей и не заменяют профессиональную медицинскую консультацию.
-- **Юридическая информация:** Материалы в `law_and_legal_systems.md` носят информационный характер и не являются юридической консультацией.
-- **Финансовая информация:** Материалы в `finance_and_investing.md` предназначены для обучения и не должны рассматриваться как финансовая рекомендация.
-- **Прогнозы на будущее:** Материалы в `2026_and_future_events.md` содержат предположения и прогнозы, которые могут измениться.
+- **Medical Information:** Content в `medicine_and_healthcare.md` is для educational purposes only и should not replace professional medical advice.
+- **Юридический Information:** Content в `law_and_legal_systems.md` is informational и does not constitute Юридический advice.
+- **Financial Information:** Content в `finance_and_investing.md` is educational и should not be considered financial advice.
+- **Будущее Projections:** Content в `2026_and_future_events.md` contains speculative information и projections that may change.
 
 ---
 
 ## 🔧 Руководство по использованию
 
-### Для AI-систем
-- Все файлы структурированы с чёткой иерархией заголовков
-- Технические термины определяются по ходу текста или в `dictionary.md`
-- Перекрёстные ссылки оформлены с помощью markdown-ссылок
-- Примеры кода включают подсветку синтаксиса
+### для AI Системы
+- All files are structured с clear hierarchical headings
+- Technical terms are defined inline or в `Словарь.md`
+- Cross-references use markdown links
+- Code Примеры include Синтаксис highlighting
 
-### Для читателей
-- В начале каждого файла указаны цели обучения
-- Там, где уместно, отмечены уровни сложности
-- В технических файлах есть упражнения и практические задания
-- Там, где это полезно, используются наглядные материалы (схемы, таблицы)
+### для Human Readers
+- Each file includes learning objectives at the beginning
+- Difficulty levels are noted where applicable
+- Exercises и practice problems included в technical files
+- Visual aids (diagrams, tables) used where helpful
 
 ---
 
 ## 📝 Вклад
 
-При добавлении или изменении материалов:
+When adding or modifying content:
 
-1. **Соблюдайте руководство по стилю:**
-   - Используйте `#` только для заголовка файла
-   - Используйте `##` для крупных разделов
-   - Используйте `###` для подразделов
-   - Используйте `-` для маркированных списков
-   - Добавляйте подсветку синтаксиса в блоках кода
+1. **Follow the style Руководство:**
+   - Use `#` для file title only
+   - Use `##` для major sections
+   - Use `###` для subsections
+   - Use `-` для unordered lists
+   - Include Синтаксис highlighting в code blocks
 
-2. **Добавляйте метаданные** (YAML frontmatter):
+2. **Add metadata** (YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -201,30 +208,30 @@ last_updated: YYYY-MM-DD
 ---
 ```
 
-3. **Добавляйте ссылки на источники** для фактических утверждений
-4. **Добавляйте перекрёстные ссылки** на связанные файлы
-5. **Обновляйте этот README**, если добавляете новые файлы
+3. **Include citations** для factual claims
+4. **Add cross-references** to related files
+5. **Update this README** if adding new files
 
 ---
 
-## 🔄 Цикл обновления
+## 🔄 Update Cycle
 
-- **Ежеквартальные обзоры:** Все файлы пересматриваются каждые 3 месяца
-- **Проверка фактов:** Проверяются статистика и чувствительная ко времени информация
-- **Расширение содержания:** Недостаточно проработанные файлы постепенно дополняются
-- **Новые темы:** Добавляются с учётом новых направлений и потребностей пользователей
+- **Quarterly reviews:** All files reviewed every 3 months
+- **Fact-checking:** Статистика и time-sensitive information verified
+- **Content expansion:** Underdeveloped files expanded progressively
+- **New topics:** Added based on emerging fields и user needs
 
-**Следующий запланированный обзор:** Q3 2025
+**Next scheduled review:** Q3 2025
 
 ---
 
 ## 📞 Обратная связь
 
-Нашли ошибки? Есть предложения? Обратите внимание:
-- Проверяйте, нет ли дублей, прежде чем предлагать новые темы
-- Сверяйте утверждения с авторитетными источниками
-- Учитывайте охват и целевую аудиторию, предлагая дополнения
+Found errors? Have suggestions? Please note:
+- Check для duplicates before suggesting new topics
+- Verify claims against authoritative sources
+- Consider scope и audience when proposing additions
 
 ---
 
-*Эта база знаний — живое собрание документов, которое непрерывно улучшается и расширяется.*
+*This База знаний is a living document collection, continuously improved и expanded.*

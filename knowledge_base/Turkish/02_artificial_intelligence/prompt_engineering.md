@@ -1,137 +1,144 @@
-# İstem Mühendisliği
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: prompt_engineering.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-İstem mühendisliği (prompt engineering), bir dil modelinden mümkün olan en iyi çıktıyı almak için giriş istemlerini tasarlama, iyileştirme ve optimize etme pratiğidir. Hem bir sanat hem de bir bilimdir ve fine-tuning yapmadan LLM davranışını kontrol etmenin başlıca arayüzüdür.
+# Prompt Engineering
 
----
-
-## Temel İlkeler
-
-### Açıklık ve Özgüllük
-Açık bir istem, belirsizliğe yer bırakmaz. Formatı, uzunluğu ve bakış açısını da dâhil ederek tam olarak ne istediğinizi belirtin.
-
-**Belirsiz:**
-> "Bana Python hakkında bilgi ver."
-
-**Spesifik:**
-> "Python'daki Global Interpreter Lock'u (GIL) açıklayın. Multithreading üzerindeki etkisini anlatın, bir geçici çözüm verin ve yanıtınızı 200 kelimenin altında tutun."
-
-### Bağlam Sağlayın
-Modeller; rolü, hedef kitleyi ve amacı bildiklerinde daha iyi performans gösterir.
-
-**Bağlam olmadan:**
-> "Bir listeyi sıralayan bir fonksiyon yaz."
-
-**Bağlamla birlikte:**
-> "Kıdemli bir Python geliştiricisisiniz. Verilen bir anahtara göre sözlüklerden oluşan bir listeyi sıralayan bir fonksiyon yazın. Type hint kullanın ve edge case'leri ele alın. Hedef kitle junior geliştiriciler."
-
-### Pozitif Talimatlar Kullanın
-Modele ne yapmaması gerektiğini değil, ne yapması gerektiğini söyleyin. "Jargon kullanma" ifadesi, "10 yaşındaki bir çocuğun anlayabileceği basit bir dil kullan" demekten daha zayıftır.
+Prompt engineering is bu practice içinde designing, refining, ve optimising input prompts to get bu best possible output from a Dil model. It is both an art ve a Bilim, ve it is bu primary interface için controlling LLM behaviour without fine-tuning.
 
 ---
 
-## İstem Yapıları
+## Core Principles
 
-### System / User / Assistant Rolleri
-Çoğu LLM API'si çok turlu bir yapı destekler:
+### Clarity ve Specificity
+A clear prompt leaves no room için ambiguity. Specify exactly what you want, including format, length, ve perspective.
 
-- **System message**: Modelin davranışını, personasını ve kısıtlarını belirler (tüm oturum boyunca kalıcıdır).
-- **User message**: Mevcut sorgu veya talimattır.
-- **Assistant message**: Modelin önceki yanıtlarıdır (süreklilik için kullanılır).
+**Vague:**
+> "Tell me about Python."
 
-**Örnek (OpenAI API tarzı):**
-System: Yardımsever bir kodlama asistanısınız. Kısa kod örnekleri ve kısa açıklamalarla yanıt verirsiniz. Asla güvensiz kod sağlamazsınız.
-User: Bir URL'den dosya indiren bir Python fonksiyonu yaz.
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, ve keep your answer under 200 words."
+
+### Provide Context
+Models perform better when they know bu role, audience, ve goal.
+
+**Without context:**
+> "Write a function to sort a list."
+
+**ile context:**
+> "You are a senior Python developer. Write a function to sort a list içinde dictionaries by a given key. Use type hints ve handle edge cases. bu audience is junior developers."
+
+### Use Positive Instructions
+Tell bu model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Dil accessible to a 10-year-old."
+
+---
+
+## Prompt Structures
+
+### System / User / Assistant Roles
+Most LLM APIs Destek a multi-turn structure:
+
+- **System message**: Sets bu model's behaviour, persona, ve constraints (persists için bu whole session).
+- **User message**: bu current query or instruction.
+- **Assistant message**: bu model's previous responses (used için continuity).
+
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply ile concise code Örnekler ve brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-Modelden görevi yapmasını istemeden önce istenen giriş-çıkış biçiminden 2–3 örnek verin. Bu, örüntüyü öğretir.
+Provide 2–3 Örnekler içinde bu desired input-output format before asking bu model to perform bu task. This teaches bu pattern.
 
-**Örnek:**
-User: Bu cümleleri edilgen çatıya dönüştür:
-Input: The cat chased the mouse.
-Output: The mouse was chased by the cat.
-Input: The chef cooked the meal.
-Output: The meal was cooked by the chef.
-Input: The storm destroyed the house.
+**Example:**
+User: Convert these sentences to passive voice:
+Input: bu cat chased bu mouse.
+Output: bu mouse was chased by bu cat.
+Input: bu chef cooked bu meal.
+Output: bu meal was cooked by bu chef.
+Input: bu storm destroyed bu house.
 Output: (model completes)
 
-### Chain-of-Thought (CoT)
-Modeli, akıl yürütmesini adım adım göstermeye teşvik edin. Bu, aritmetik, mantık ve çok adımlı görevlerde doğruluğu artırır.
+### Chain-içinde-Thought (CoT)
+Encourage bu model to show its reasoning step by step. This improves accuracy on arithmetic, logic, ve multi-step tasks.
 
-**CoT olmadan:**
-> "24 × 37 kaçtır?"
+**Without CoT:**
+> "What is 24 × 37?"
 
-**CoT ile:**
-> "24 × 37 işlemini hesapla. Akıl yürütmeni adım adım göster."
+**ile CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
 
-Model ara adımlar üreterek aritmetik hatalarını azaltır.
+bu model will produce intermediate steps, reducing arithmetic errors.
 
-### Yapılandırılmış Çıktılar
-Ayrıştırmayı güvenilir hâle getirmek için JSON, YAML veya markdown tabloları gibi belirli bir format isteyin.
-User: Mikroservislerin üç avantajını ve üç dezavantajını listele. Yalnızca "pros" ve "cons" anahtarlarına sahip, her biri string dizisi olan geçerli bir JSON nesnesi döndür.
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros ve three cons içinde microservices. Return only a valid JSON object ile keys "pros" ve "cons", each an array içinde strings.
 
 ---
 
-## İleri Teknikler
+## İleri Düzey Techniques
 
 ### Self-Consistency
-Aynı istem için birden fazla yanıt üretin (temperature > 0 ile) ve nihai yanıtta çoğunluk oylaması yapın. Bu yaklaşım özellikle akıl yürütme görevlerinde etkilidir.
+Generate multiple responses için bu same prompt (ile a temperature > 0) ve take a majority vote on bu final answer. This is especially effective için reasoning tasks.
 
-### Tree-of-Thoughts
-Birden fazla akıl yürütme yolunu paralel olarak keşfedin, her birini değerlendirin ve en iyisini seçin. Bu araştırma düzeyinde bir tekniktir ancak modele "alternatif çözümleri keşfet" diyerek yaklaşık olarak uygulanabilir.
+### Tree-içinde-Thoughts
+Explore multiple reasoning paths içinde parallel, evaluate each, ve choose bu best one. This is a research-level technique but can be approximated by asking bu model to "explore alternative solutions."
 
 ### ReAct (Reasoning + Acting)
-Modelin akıl yürütmeyi araç çağrılarıyla iç içe geçirmesine izin verin. Düşünebilir, sonra eyleme geçebilir (ör. web'de arama yapmak, kod çalıştırmak), ardından sonuca göre yeniden düşünebilir.
+Let bu model interleave reasoning ile tool calls. It can think, then act (e.g., search bu Web, run code), then think again based on bu result.
 
-**İstem yapısı:**
-Bir hesap makinesine ve bir arama motoruna erişiminiz var. Her adım için şu çıktıyı verin:
-Thought: (akıl yürütmeniz)
-Action: (araç adı, girdi)
-Observation: (araç çıktısı)
-... nihai yanıta ulaşana kadar devam edin.
+**Prompt structure:**
+You have access to a calculator ve a search engine. için each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have bu final answer.
 
-### Persona Ataması
-Yanıtı çerçevelemek için belirli bir persona atayın.
+### Persona Assignment
+Assign a specific persona to frame bu response.
 
 **Örnekler:**
-- "Bellek yönetimini yeni mezun birine açıklayan bir Linux kernel geliştiricisisiniz."
-- "Bir danışana genel tavsiye veren dost canlısı bir nutritionist'siniz."
-- "Yeni bir gadget'ı değerlendiren alaycı bir teknoloji eleştirmenisiniz."
+- "You are a Linux kernel developer explaining memory Yönetim to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## Parametre Ayarlama
+## Parameter Tuning
 
-- **Temperature** (0.0 – 1.0+): Rastgeleliği kontrol eder. Düşük = daha deterministik, yüksek = daha yaratıcı. Olgusal yanıtlar için 0.0–0.3; yaratıcı yazı için 0.7–1.0 kullanın.
-- **Top-p** (nucleus sampling): Olasılık kütlesini belirli bir kümülatif eşikte keser. 0.9, modelin en olası token'ların üst %90'ından örnekleme yaptığı anlamına gelir. Genellikle temperature veya top-p ayarlanır, ikisi birden değil.
-- **Max tokens**: Çıktının en fazla uzunluğunu belirler. Context window içinde yanıt için yer ayırmayı unutmayın.
-- **Frequency penalty**: Aynı token'ların tekrarını azaltır.
-- **Presence penalty**: Modeli yeni konular açmaya teşvik eder.
-
----
-
-## Yaygın Sorunlar ve Çözümleri
-
-| Problem | Olası neden | Çözüm |
-|---------|-------------|-------|
-| Model istemin bazı bölümlerini yok sayıyor | İstem çok uzun ya da aşırı yüklü | Kısaltın; en önemli talimatı sona koyun |
-| Çıktı çok uzun | Uzunluk kısıtı yok | "3 cümleyle sınırla" ekleyin veya max_tokens ayarlayın |
-| Çıktı çok kısa | Aşırı kısıtlayıcı istem | "Ayrıntılı açıkla" ekleyin veya temperature'ı düşürün |
-| Olgusal halüsinasyonlar | Yetersiz bağlam veya belirsiz soru | "Emin değilsen 'I don't know' de" ekleyin ve RAG bağlamı sağlayın |
-| Biçim tutarsız | Açık format talimatı yok | JSON, markdown table veya bullet list isteyin |
-| Model yanlış dilde yanıtlıyor | Dil talimatı yok | Açıkça "Respond in English" (veya hedef dilinizi) belirtin |
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 için factual answers; 0.7–1.0 için creative writing.
+- **Top-p** (nucleus sampling): Cuts off bu probability mass at a certain cumulative threshold. 0.9 means bu model samples from bu top 90% içinde likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets bu maximum output length. Remember to reserve space için bu response within bu context window.
+- **Frequency penalty**: Reduces repetition içinde bu same tokens.
+- **Presence penalty**: Encourages bu model to introduce new topics.
 
 ---
 
-## Yaygın Görevler için İstem Şablonları
+## Common Pitfalls ve Fixes
+
+| Problem | Likely cause | Fix |
+|---------|--------------|-----|
+| Model ignores parts içinde prompt | Prompt too long or overloaded | Shorten; put bu most important instruction at bu end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain içinde detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" ve provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask için JSON, markdown table, or bullet list |
+| Model answers içinde wrong Dil | No Dil instruction | Explicitly state "Respond içinde İngilizce" (or your target Dil) |
+
+---
+
+## Prompt Templates için Common Tasks
 
 ### Summarisation
-Aşağıdaki metni 3 madde hâlinde özetle. Ana argümanlara odaklan ve ayrıntılardan kaçın.
+Summarise bu following text içinde 3 bullet points. Focus on bu main arguments ve avoid details.
 
 Text: [insert text]
 
 
 ### Code Generation
-[Dil] dilinde [X işlemini yapan] bir fonksiyon yaz.
+Write a [Dil] function that [does X].
 Requirements:
 
 Use type hints.
@@ -144,31 +151,31 @@ Do not use external libraries unless specified.
 
 
 ### Explanation
-[Konsept]'i [uzman olmayan biri / üniversite öğrencisi / çocuk] için açıkla. Uygun olduğunda bir benzetme kullan.
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
 
 ### Brainstorming
-[Topic] için 10 fikir üret. Her fikir için tek cümlelik bir açıklama ve olası bir zorluk ver.
+Generate 10 ideas için [topic]. için each idea, give a one-sentence description ve one potential challenge.
 
 text
 
 ### Classification
-Aşağıdaki müşteri geri bildirimini [positive, neutral, negative] olarak sınıflandır.
-0-100 arasında bir confidence score ve kısa bir gerekçe ver.
+Classify bu following customer Geri Bildirim as [positive, neutral, negative].
+Provide a confidence score (0-100) ve a brief reason.
 
-Feedback: [insert text]
+Geri Bildirim: [insert text]
 
-### Translation with Style
-Aşağıdaki English metni Spanish diline çevir. Sosyal medya gönderisine uygun samimi bir ton kullan.
+### Translation ile Style
+Translate bu following İngilizce text to Spanish. Use an informal tone suitable için a social media post.
 Text: [insert text]
 
 ---
 
-## İstemlerin Değerlendirilmesi
+## Evaluation içinde Prompts
 
-İstemlere kod gibi davranın: sürümleyin, test edin ve yineleyin.
+Treat prompts as code: version them, test them, ve iterate.
 
-- Elde tutulmuş bir sorgu kümesi üzerinde farklı istem varyantlarını **A/B test** ile karşılaştırın.
-- Başarıyı insan değerlendirmesi veya otomatik metriklerle ölçün (ör. exact match, BLEU, özel puanlama).
-- İstemi, sürümünü ve gözlenen performansı içeren bir **prompt registry** (basit bir metin dosyası veya spreadsheet) tutun.
+- **A/B test** different prompt variants on a held-out set içinde queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) ile bu prompt, version, ve observed Performans.
 
 ---

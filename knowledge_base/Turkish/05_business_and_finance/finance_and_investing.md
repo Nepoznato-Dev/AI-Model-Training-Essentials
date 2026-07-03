@@ -1,360 +1,367 @@
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: finance_and_investing.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
 # Finans ve Yatırım
 
-## Kişisel Finansın Temelleri
+## Personal Finans Temeller
 
-### Finansal Planlamanın Temelleri
-- **Bütçeleme**: Gelir ve giderleri takip etme, 50/30/20 kuralı (ihtiyaçlar/istekler/birikim)
-- **Acil Durum Fonu**: Likit bir hesapta 3-6 aylık yaşam gideri
-- **Net Servet**: Varlıklar eksi yükümlülükler, zaman içinde takip edilir
-- **Nakit Akışı Yönetimi**: İçeri giren para ile dışarı çıkan para, pozitif nakit akışı kritiktir
-- **Finansal Hedefler**: Kısa vadeli (<1 yıl), orta vadeli (1-5 yıl), uzun vadeli (5+ yıl)
+### Financial Planning Temeller
+- **Budgeting**: Track income ve expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months içinde living expenses içinde liquid account
+- **Net Worth**: Assets minus liabilities, track over time
+- **Cash Flow Yönetim**: Money içinde vs. money out, positive cash flow essential
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-### Bankacılık Ürünleri
-- **Checking Accounts**: Günlük işlemler, debit cards, fatura ödemeleri
-- **Savings Accounts**: Faiz getiren, sınırlı para çekme hakkı olan hesaplar
-- **Money Market Accounts**: Daha yüksek faiz, çek yazma ayrıcalıkları
-- **Certificates of Deposit (CDs)**: Sabit vade, sabit oran, erken çekim cezası
-- **High-Yield Savings**: Online bankalar, rekabetçi oranlar
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates içinde Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-### Kredi ve Borç
-- **Credit Score**: FICO (300-850), faktörler: ödeme geçmişi, kullanım oranı, süre, karışım, sorgular
-- **Credit Reports**: Equifax, Experian, TransUnion'dan yıllık ücretsiz raporlar
-- **Borç Türleri**:
-  - İyi borç: Mortgage, student loans (potansiyel ROI)
-  - Kötü borç: Credit cards, payday loans (yüksek faiz)
-- **Borç Geri Ödeme Stratejileri**:
-  - Avalanche: Önce en yüksek faizi öde (matematiksel olarak optimal)
-  - Snowball: Önce en küçük bakiyeyi öde (psikolojik kazanımlar)
-- **Borç-Gelir Oranı**: Aylık borç ödemeleri / brüt aylık gelir
+### Credit ve Debt
+- **Credit Score**: FICO (300-850), factors: payment Tarih, utilization, length, mix, inquiries
+- **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
+- **Types içinde Debt**: 
+  - Good debt: Mortgage, student loans (potential ROI)
+  - Bad debt: Credit cards, payday loans (high interest)
+- **Debt Repayment Strategies**:
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-## Yatırımın Temelleri
+## Investment Temeller
 
-### Varlık Sınıfları
+### Asset Classes
 
 #### Equities (Stocks)
-- **Common Stock**: Mülkiyet payı, oy hakkı, temettüler
-- **Preferred Stock**: Sabit temettü, iflasta öncelik, oy hakkı yok
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority içinde bankruptcy, no voting
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
 - **Investment Styles**: Growth, value, blend, income
-- **Sektörler**: Teknoloji, sağlık, finans, tüketici, sanayi, enerji, utilities, materials, real estate, communication services
+- **Sectors**: Teknoloji, Sağlık Hizmetleri, financials, consumer, industrial, energy, utilities, materials, real estate, İletişim services
 
 #### Fixed Income (Bonds)
-- **Government Bonds**: Treasury bills, notes, bonds (en düşük risk)
-- **Municipal Bonds**: Eyalet/yerel yönetim, vergiden muaf faiz
+- **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
+- **Municipal Bonds**: State/local government, tax-exempt interest
 - **Corporate Bonds**: Investment grade, high-yield/junk
-- **Bond Characteristics**: Nominal değer, kupon oranı, vade, getiri
-- **Interest Rate Risk**: Tahvil fiyatları faizlerle ters yönde hareket eder
-- **Credit Risk**: Temerrüt olasılığı, kredi notları (AAA'dan D'ye)
+- **Bond Characteristics**: Face value, coupon rate, maturity, yield
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-#### Cash and Cash Equivalents
-- **Treasury Bills**: Kısa vadeli devlet borcu
-- **Money Market Funds**: Stabil NAV, likit
-- **Commercial Paper**: Kısa vadeli şirket borcu
-- **Characteristics**: Düşük risk, düşük getiri, yüksek likidite
+#### Cash ve Cash Equivalents
+- **Treasury Bills**: Short-term government debt
+- **Money Market Funds**: Stable NAV, liquid
+- **Commercial Paper**: Short-term corporate debt
+- **Characteristics**: Low risk, low return, high liquidity
 
 #### Real Estate
-- **Direct Ownership**: Fiziksel mülkler, kira geliri
-- **REITs**: Real Estate Investment Trusts, halka açık işlem görür
-- **Real Estate Crowdfunding**: Platform tabanlı gayrimenkul yatırımı
-- **Characteristics**: Gelir üretimi, değer artışı, enflasyona karşı koruma
+- **Direct Ownership**: Physical properties, rental income
+- **REITs**: Real Estate Investment Trusts, publicly traded
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
 #### Alternative Investments
-- **Commodities**: Altın, gümüş, petrol, tarım ürünleri
-- **Cryptocurrencies**: Bitcoin, Ethereum, dijital varlıklar
-- **Private Equity**: Doğrudan şirket sahipliği, likit değildir
-- **Hedge Funds**: Aktif yönetim, çeşitli stratejiler
-- **Collectibles**: Sanat, şarap, nadir parçalar
+- **Commodities**: Gold, silver, oil, agricultural products
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
+- **Private Equity**: Direct company ownership, illiquid
+- **Hedge Funds**: Active Yönetim, diverse strategies
+- **Collectibles**: Art, wine, rare items
 
-### Yatırım Araçları
+### Investment Vehicles
 
 #### Mutual Funds
-- Profesyonelce yönetilen portföyler
-- Gün sonunda NAV üzerinden fiyatlanır
-- Aktif veya pasif yönetim
+- Professionally managed portfolios
+- Priced at end-içinde-day NAV
+- Active or passive Yönetim
 - Load vs. no-load funds
-- Expense ratio'lar büyük ölçüde değişir
+- Expense ratios vary widely
 
 #### Exchange-Traded Funds (ETFs)
-- Gün boyunca hisse senedi gibi işlem görür
-- Genellikle pasif, index-tracking
-- Mutual funds'a göre daha düşük expense ratio'lar
-- Vergi açısından verimli yapı
-- Örnekler: SPY (S&P 500), QQQ (Nasdaq), VTI (toplam piyasa)
+- Trade like stocks throughout day
+- Typically passive, index-tracking
+- Lower expense ratios than mutual funds
+- Tax-efficient structure
+- Örnekler: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
 #### Index Funds
-- Belirli bir endeksi izleyen pasif yönetim
-- Düşük maliyetler, geniş çeşitlendirme
-- Örnekler: Toplam hisse senedi piyasası, S&P 500, uluslararası
+- Passive Yönetim tracking specific index
+- Low costs, broad diversification
+- Örnekler: Total stock market, S&P 500, international
 
 #### Annuities
-- Gelir akışı sağlayan sigorta ürünleri
-- Sabit, değişken veya endeksli getiriler
-- Hemen veya ertelenmiş ödeme
-- Vergi ertelenmiş büyüme
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
+- Immediate or deferred payout
+- Tax-deferred growth
 
-## Yatırım Stratejileri
+## Investment Strategies
 
-### Portföy Oluşturma
-- **Asset Allocation**: Varlık sınıfları arasında dağılım
-- **Diversification**: Riski menkul kıymetler, sektörler ve coğrafyalar arasında yayma
-- **Modern Portfolio Theory**: Çeşitlendirme yoluyla risk-getiriyi optimize etmek
-- **Efficient Frontier**: Belirli risk düzeyi için azami getiri
-- **Correlation**: Varlıkların birbirine göre nasıl hareket ettiği
+### Portfolio Construction
+- **Asset Allocation**: Distribution across asset classes
+- **Diversification**: Spread risk across securities, sectors, geographies
+- **Modern Portfolio Theory**: Optimize risk-return through diversification
+- **Efficient Frontier**: Maximum return için given risk level
+- **Correlation**: How assets move relative to each other
 
-### Yatırım Yaklaşımları
-- **Passive Investing**: Index funds, buy-and-hold, düşük maliyetler
-- **Active Investing**: Hisse seçimi, piyasa zamanlaması, daha yüksek maliyetler
-- **Dollar-Cost Averaging**: Fiyattan bağımsız olarak düzenli aralıklarla sabit tutarlar yatırmak
-- **Value Investing**: Değeri düşük fiyatlanan menkul kıymetleri almak (Warren Buffett yaklaşımı)
-- **Growth Investing**: Ortalama üzeri büyümeye sahip şirketlere odaklanmak
-- **Income Investing**: Temettü ve faiz ödemelerine öncelik vermek
-- **ESG Investing**: Çevresel, sosyal ve yönetişim faktörleri
+### Investment Approaches
+- **Passive Yatırım**: Index funds, buy-ve-hold, low costs
+- **Active Yatırım**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless içinde price
+- **Value Yatırım**: Buy undervalued securities (Warren Buffett approach)
+- **Growth Yatırım**: Focus on companies ile above-average growth
+- **Income Yatırım**: Prioritize dividends ve interest payments
+- **ESG Yatırım**: Çevresel, social, governance factors
 
-### Risk Yönetimi
-- **Risk Tolerance**: Para kaybetme kapasitesi ve istekliliği
-- **Time Horizon**: Paraya ne zaman ihtiyaç duyduğunuz risk kapasitesini etkiler
-- **Position Sizing**: Tek bir yatırıma aşırı yoğunlaşmamak
-- **Stop-Loss Orders**: Önceden belirlenmiş fiyatta otomatik satış
-- **Rebalancing**: Hedef dağılımı periyodik olarak yeniden sağlamak
-- **Hedging**: Aşağı yönlü riski azaltmak için options, inverse ETFs
+### Risk Yönetim
+- **Risk Tolerance**: Ability ve willingness to lose money
+- **Time Horizon**: When you need bu money affects risk capacity
+- **Position Sizing**: Don't concentrate too much içinde single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-## Emeklilik Planlaması
+## Retirement Planning
 
 ### Retirement Accounts (US)
 
 #### Traditional IRA
-- Vergiden düşülebilen katkılar (gelir sınırları uygulanır)
-- Vergi ertelenmiş büyüme
-- Çekim sırasında vergilendirilir
-- 73 yaşında Required Minimum Distributions (RMDs)
+- Tax-deductible contributions (income limits apply)
+- Tax-deferred growth
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
 #### Roth IRA
-- Vergi sonrası katkılar
-- Vergisiz büyüme ve çekim
-- Yaşam boyunca RMD yok
-- Uygunluk için gelir sınırları
+- After-tax contributions
+- Tax-free growth ve withdrawals
+- No RMDs during lifetime
+- Income limits için eligibility
 
 #### 401(k) Plans
-- İşveren destekli emeklilik planları
-- Vergi öncesi veya Roth (vergi sonrası) seçenekleri
-- İşveren eşleştirmesi (bedava para)
-- IRA'lardan daha yüksek katkı limitleri
-- İşveren katkıları için vesting schedules
+- Employer-sponsored retirement plans
+- Pre-tax or Roth (after-tax) options
+- Employer matching (free money)
+- Higher contribution limits than IRAs
+- Vesting schedules için employer contributions
 
 #### Other Plans
-- **403(b)**: Kâr amacı gütmeyen kuruluşlar
-- **457**: Devlet çalışanları
-- **SEP IRA**: Serbest çalışanlar, küçük işletmeler
-- **Solo 401(k)**: Çalışanı olmayan serbest çalışanlar
+- **403(b)**: Non-profit organizations
+- **457**: Government employees
+- **SEP IRA**: Self-employed, small İş
+- **Solo 401(k)**: Self-employed ile no employees
 
-### Emeklilik Planlama Kavramları
-- **Replacement Ratio**: Emeklilik öncesi gelirin genellikle %70-80'i gerekir
-- **Social Security**: Devlet yardımı, 62-70 yaş arasında talep edilir
-- **Pension Plans**: Tanımlanmış fayda (işveren ödemeyi garanti eder)
-- **Withdrawal Strategies**: %4 kuralı, dinamik harcama, bucket strategy
-- **Healthcare Costs**: Medicare, tamamlayıcı sigorta, uzun süreli bakım
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% içinde pre-retirement income typically needed
+- **Social Güvenlik**: Government benefit, claim between 62-70
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **Sağlık Hizmetleri Costs**: Medicare, supplemental insurance, long-term care
 
-## Piyasa Mekanikleri
+## Market Mechanics
 
 ### Stock Exchanges
-- **NYSE**: New York Stock Exchange, açık artırma temelli
-- **Nasdaq**: Elektronik borsa, teknoloji ağırlıklı
+- **NYSE**: New York Stock Exchange, auction-based
+- **Nasdaq**: Electronic exchange, Teknoloji-heavy
 - **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-### Emir Türleri
-- **Market Order**: Mevcut fiyattan hemen gerçekleştirilir
-- **Limit Order**: Yalnızca belirtilen fiyatta veya daha iyisinde gerçekleşir
-- **Stop Order**: Stop fiyatına ulaşıldığında market order'a dönüşür
-- **Stop-Limit Order**: Stop fiyatına ulaşıldığında limit order'a dönüşür
-- **Trailing Stop**: Stop fiyatı hisse fiyatı hareketini takip eder
+### Order Types
+- **Market Order**: Execute immediately at current price
+- **Limit Order**: Execute only at specified price or better
+- **Stop Order**: Becomes market order when stop price reached
+- **Stop-Limit Order**: Becomes limit order when stop price reached
+- **Trailing Stop**: Stop price follows stock price movement
 
-### Alım Satım Kavramları
-- **Bid-Ask Spread**: Alış ve satış fiyatı arasındaki fark
-- **Volume**: İşlem gören hisse sayısı
-- **Liquidity**: Fiyatı etkilemeden alma/satma kolaylığı
-- **Volatility**: Fiyat dalgalanmasının büyüklüğü
-- **Short Selling**: Hisse ödünç alıp satmak, sonra daha ucuza geri almayı ummak
-- **Margin Trading**: Yatırım yapmak için borç para kullanmak, kazanç/kayıpları büyütür
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying ve selling price
+- **Volume**: Number içinde shares traded
+- **Liquidity**: Ease içinde buying/selling without affecting price
+- **Volatility**: Price fluctuation magnitude
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-### Piyasa Göstergeleri
-- **S&P 500**: En büyük 500 ABD şirketi
-- **Dow Jones Industrial Average**: 30 büyük blue-chip şirket
-- **Nasdaq Composite**: Nasdaq'ta listelenen tüm hisseler, teknoloji ağırlıklı
-- **Russell 2000**: Küçük ölçekli ABD hisseleri
-- **VIX**: Oynaklık endeksi, "fear gauge"
-- **Yield Curve**: Vadeler boyunca tahvil getirileri, ekonomik gösterge
+### Market Indicators
+- **S&P 500**: 500 largest US companies
+- **Dow Jones Industrial Average**: 30 large blue-chip companies
+- **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
+- **Russell 2000**: Small-cap US stocks
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-## Temel Analiz
+## Fundamental Analysis
 
-### Finansal Tablolar
+### Financial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operating, investing, financing activities
+- **Cash Flow Statement**: Operating, Yatırım, financing activities
 
-### Temel Oranlar
+### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnings): Hisse fiyatı / hisse başına kazanç
-  - P/B (Price-to-Book): Piyasa değeri / defter değeri
-  - P/S (Price-to-Sales): Piyasa değeri / gelir
-  - EV/EBITDA: Enterprise value / faiz, vergi, amortisman öncesi kazanç
+  - P/E (Price-to-Earnings): Share price / earnings per share
+  - P/B (Price-to-Book): Market value / book value
+  - P/S (Price-to-Sales): Market cap / revenue
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
 - **Profitability Ratios**:
-  - Gross Margin: Brüt kâr / gelir
-  - Operating Margin: Faaliyet geliri / gelir
-  - Net Margin: Net gelir / gelir
-  - ROE (Return on Equity): Net gelir / shareholders' equity
-  - ROA (Return on Assets): Net gelir / toplam varlıklar
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
-  - Current Ratio: Dönen varlıklar / kısa vadeli yükümlülükler
-  - Quick Ratio: (Dönen varlıklar - envanter) / kısa vadeli yükümlülükler
+  - Current Ratio: Current assets / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
-  - Debt-to-Equity: Toplam borç / shareholders' equity
-  - Interest Coverage: EBIT / faiz gideri
+  - Debt-to-Equity: Total debt / shareholders' equity
+  - Interest Coverage: EBIT / interest expense
 
-### Nitel Faktörler
-- **Management Quality**: Geçmiş performans, hissedarlarla uyum
-- **Competitive Advantage**: Moat, giriş engelleri
-- **Industry Dynamics**: Büyüme, rekabet, düzenleme
-- **Corporate Governance**: Yönetim kurulu bağımsızlığı, hissedar hakları
+### Qualitative Factors
+- **Yönetim Quality**: Track record, alignment ile shareholders
+- **Competitive Advantage**: Moat, barriers to entry
+- **Industry Dynamics**: Growth, competition, regulation
+- **Corporate Governance**: Board independence, shareholder rights
 
-## Teknik Analiz
+## Technical Analysis
 
-### Grafik Türleri
-- **Line Charts**: Zaman içindeki kapanış fiyatları
-- **Bar Charts**: Açılış, en yüksek, en düşük, kapanış (OHLC)
-- **Candlestick Charts**: Görsel OHLC, bullish/bearish pattern'ler
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-### Trend Analizi
-- **Support**: Alım baskısının satış baskısını aştığı fiyat seviyesi
-- **Resistance**: Satış baskısının alım baskısını aştığı fiyat seviyesi
-- **Trendlines**: Yönü göstermek için zirveleri veya dipleri birleştirme
+### Trend Analysis
+- **Destek**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
 - **Moving Averages**: SMA (simple), EMA (exponential)
-- **Golden Cross**: Kısa vadeli MA'nın uzun vadeli MA'nın üzerine çıkması (bullish)
-- **Death Cross**: Kısa vadeli MA'nın uzun vadeli MA'nın altına düşmesi (bearish)
+- **Golden Cross**: Short MA crosses above long MA (bullish)
+- **Death Cross**: Short MA crosses below long MA (bearish)
 
-### Teknik Göstergeler
-- **Relative Strength Index (RSI)**: Momentum osilatörü (0-100)
+### Technical Indicators
+- **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
 - **MACD**: Moving Average Convergence Divergence
-- **Bollinger Bands**: Moving average etrafındaki oynaklık bantları
+- **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: Oranlara dayalı support/resistance seviyeleri
+- **Fibonacci Retracement**: Destek/resistance levels based on ratios
 
-### Grafik Formasyonları
-- **Reversal Patterns**: Head and shoulders, double top/bottom
+### Chart Patterns
+- **Reversal Patterns**: Head ve shoulders, double top/bottom
 - **Continuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Fiyatın tanımlı aralığın dışına çıkması
+- **Breakouts**: Price moves beyond defined range
 
-## Vergisel Hususlar
+## Tax Considerations
 
-### Yatırım Vergileri
-- **Capital Gains**: Yatırımı satmaktan doğan kâr
-  - Kısa vadeli: <1 yıl elde tutulur, normal gelir gibi vergilenir
-  - Uzun vadeli: >1 yıl elde tutulur, avantajlı oranlar (%0, %15, %20)
-- **Dividends**:
-  - Qualified: Daha düşük vergi oranları
-  - Ordinary: Gelir olarak vergilenir
-- **Interest Income**: Genellikle normal gelir olarak vergilenir
-- **Tax-Loss Harvesting**: Kârları dengelemek için zarar eden pozisyonları satmak
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
+  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
+- **Dividends**: 
+  - Qualified: Lower tax rates
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-### Vergi Avantajlı Hesaplar
-- **Traditional IRA/401(k)**: Şimdi vergi indirimi, sonra vergi
-- **Roth IRA/401(k)**: Şimdi indirim yok, sonra vergisiz
-- **HSA (Health Savings Account)**: Tıbbi giderler için üçlü vergi avantajı
-- **529 Plans**: Vergi avantajlı eğitim birikimi
+### Tax-Advantaged Accounts
+- **Traditional IRA/401(k)**: Tax deduction now, taxed later
+- **Roth IRA/401(k)**: No deduction now, tax-free later
+- **HSA (Health Savings Account)**: Triple tax advantage için medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-### Vergi Verimliliği Stratejileri
-- Asset location (hangi hesaplarda hangi yatırımların tutulduğu)
-- Avantajlı oranlar için yatırımları uzun süre elde tutmak
-- Vergi açısından verimli fonlar kullanmak (ETFs, index funds)
-- Vergilendirilebilir hesaplar için municipal bonds düşünmek
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term için preferential rates
+- Use tax-efficient funds (ETFs, index funds)
+- Consider municipal bonds için taxable accounts
 
-## Ekonomik Faktörler
+## Economic Factors
 
-### Makroekonomik Göstergeler
-- **GDP**: Gayrisafi Yurtiçi Hasıla, ekonomik büyüme
-- **Inflation**: CPI, PCE, satın alma gücü erozyonu
-- **Unemployment**: İş gücü piyasasının sağlığı
-- **Interest Rates**: Federal Reserve politikası, borçlanma maliyetleri
-- **Consumer Confidence**: Harcama eğilimi
-- **Manufacturing Data**: PMI, endüstriyel üretim
+### Macroeconomic Indicators
+- **GDP**: Gross Domestic Product, economic growth
+- **Inflation**: CPI, PCE, purchasing power erosion
+- **Unemployment**: Labor market health
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing Veri**: PMI, industrial production
 
-### Federal Reserve ve Para Politikası
-- **Dual Mandate**: Azami istihdam, fiyat istikrarı (%2 enflasyon)
+### Federal Reserve ve Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
 - **Tools**: Federal funds rate, open market operations, quantitative easing
-- **Impact**: Faiz oranları tahvilleri, hisseleri, para birimini ve ekonomiyi etkiler
+- **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-### İş Döngüsü
-- **Expansion**: Ekonomik büyüme, yükselen istihdam
-- **Peak**: En yüksek büyüme, aşırı ısınma potansiyeli
-- **Contraction/Recession**: Ekonomik daralma, yükselen işsizlik
-- **Trough**: Dip nokta, toparlanma başlar
+### İş Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-## Davranışsal Finans
+## Behavioral Finans
 
-### Yaygın Yanlılıklar
-- **Loss Aversion**: Kayıplar, eşdeğer kazançlardan daha fazla acı verir
-- **Confirmation Bias**: Mevcut inançları doğrulayan bilgileri aramak
-- **Overconfidence**: Bilgiyi ve yetenekleri olduğundan fazla görmek
-- **Anchoring**: İlk bilgi parçasına aşırı ağırlık vermek
-- **Herd Mentality**: Kalabalığın davranışını izlemek
-- **Recency Bias**: Yakın olaylara aşırı ağırlık vermek
-- **Endowment Effect**: Sahip olunan şeylere daha yüksek değer biçmek
-- **Sunk Cost Fallacy**: Gelecek beklentileri yerine geçmiş yatırıma dayanarak devam etmek
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
+- **Overconfidence**: Overestimate knowledge ve abilities
+- **Anchoring**: Rely too heavily on first piece içinde information
+- **Herd Mentality**: Follow crowd behavior
+- **Recency Bias**: overweight recent Olaylar
+- **Endowment Effect**: Value owned items more highly
+- **Sunk Cost Fallacy**: Continue based on past investment, not Gelecek prospects
 
-### Duygusal Yatırım Tuzakları
-- Düşüşlerde panikle satış yapmak
-- Zirvelerde FOMO (Fear Of Missing Out) ile alım yapmak
-- Çok sık işlem yapmak
-- Geçmiş performansın peşinden gitmek
-- Piyasayı zamanlamaya çalışmak (sürekli olarak neredeyse imkânsızdır)
+### Emotional Yatırım Pitfalls
+- Panic selling during downturns
+- FOMO (Fear içinde Missing Out) buying at tops
+- Trading too frequently
+- Chasing past Performans
+- Timing bu market (nearly impossible consistently)
 
 ### En İyi Uygulamalar
-- Bir yatırım planı oluşturup ona bağlı kalmak
-- Katkıları otomatikleştirmek
-- Portföyü çok sık kontrol etmekten kaçınmak
-- Kontrol edilebilen unsurlara odaklanmak (tasarruf oranı, maliyetler, varlık dağılımı)
-- Uzun vadeli perspektifi korumak
+- Create ve stick to investment plan
+- Automate contributions
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-## Güncel Yatırım Eğilimleri
+## Current Investment Trends
 
-### Tematik Yatırım
-- **Technology**: AI, cloud computing, cybersecurity, semiconductors
-- **Healthcare**: Biotechnology, genomics, telemedicine
-- **Clean Energy**: Solar, wind, electric vehicles, battery technology
+### Thematic Yatırım
+- **Teknoloji**: AI, cloud Bilişim, cybersecurity, semiconductors
+- **Sağlık Hizmetleri**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery Teknoloji
 - **Fintech**: Digital payments, blockchain, robo-advisors
 - **E-commerce**: Online retail, logistics, digital advertising
 
-### Demografik Eğilimler
-- Yaşlanan nüfus (sağlık hizmetleri, emeklilik hizmetleri)
-- Millennial/Gen Z tercihleri (sürdürülebilirlik, teknoloji)
-- Kentleşme (gayrimenkul, altyapı)
-- Gelişmekte olan piyasalarda orta sınıfın büyümesi
+### Demographic Trends
+- Aging population (Sağlık Hizmetleri, retirement services)
+- Millennial/Gen Z preferences (Sürdürülebilirlik, Teknoloji)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-### Sürdürülebilir Yatırım
-- **ESG Integration**: Çevresel, sosyal, yönetişim faktörleri
-- **Impact Investing**: Olumlu sosyal/çevresel etki üretmek
-- **Green Bonds**: Çevresel projeleri finanse etmek
-- **Carbon Credits**: Emisyon kotalarının ticareti
+### Sustainable Yatırım
+- **ESG Integration**: Çevresel, social, governance factors
+- **Impact Yatırım**: Generate positive social/Çevresel impact
+- **Green Bonds**: Fund Çevresel projects
+- **Carbon Credits**: Trade emissions allowances
 
-## Finansal Danışmanlar ve Hizmetler
+## Financial Advisors ve Services
 
-### Danışman Türleri
+### Types içinde Advisors
 - **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
 - **Broker-Dealer**: Suitability standard, commission-based
-- **Robo-Advisors**: Otomatik yatırım, daha düşük maliyetler
-- **Financial Planner**: Kapsamlı planlama, fee-only veya commission olabilir
+- **Robo-Advisors**: Automated Yatırım, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-### Ücretlendirme Modelleri
-- **Fee-Only**: Varlıkların yüzdesi, saatlik, sabit ücret (komisyon yok)
-- **Commission**: Ürün satışları üzerinden ödeme
-- **Fee-Based**: Ücret ve komisyon kombinasyonu
-- **Assets Under Management (AUM)**: Genellikle yıllık %0,5-%1,5
+### Compensation Models
+- **Fee-Only**: Percentage içinde assets, hourly, flat fee (no commissions)
+- **Commission**: Paid on product sales
+- **Fee-Based**: Combination içinde fees ve commissions
+- **Assets Under Yönetim (AUM)**: Typically 0.5%-1.5% annually
 
-### Danışman Seçimi
-- Kimlik bilgilerini doğrulamak (CFP, CFA, CPA)
-- Ücretlendirme yapısını anlamak
-- Düzenleyici geçmişi kontrol etmek (SEC, FINRA BrokerCheck)
-- Fiduciary duty olduğundan emin olmak
-- İletişim tarzını ve uyumu değerlendirmek
+### Choosing an Advisor
+- Verify credentials (CFP, CFA, CPA)
+- Understand compensation structure
+- Check regulatory Tarih (SEC, FINRA BrokerCheck)
+- Ensure fiduciary duty
+- Assess İletişim style ve compatibility

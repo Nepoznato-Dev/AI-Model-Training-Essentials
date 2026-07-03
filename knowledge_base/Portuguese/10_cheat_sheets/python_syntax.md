@@ -1,12 +1,19 @@
-# Folha de Consulta de Sintaxe Python
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: python_syntax.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Referência rápida para a sintaxe do Python 3.x e padrões comuns.
+# Python Sintaxe Cheat Sheet
+
+Referência rápida para Python 3.x Sintaxe e common patterns.
 
 ---
 
-## Sintaxe Básica
+## Basic Sintaxe
 
-### Variáveis e Tipos de Dados
+### Variables e Dados Types
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -47,9 +54,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Fluxo de Controle
+## Control Flow
 
-### Condicionais
+### Conditionals
 ```python
 if x > 10:
     print("Greater than 10")
@@ -86,9 +93,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## Estruturas de Dados
+## Dados Structures
 
-### Listas
+### Lists
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -106,7 +113,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dicionários
+### Dictionaries
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -133,7 +140,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuplas
+### Tuples
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -142,9 +149,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Funções
+## Functions
 
-### Definição
+### Definition
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -163,7 +170,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Funções Lambda
+### Lambda Functions
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -200,7 +207,7 @@ class Employee(Person):
 
 ---
 
-## Entrada/Saída de Arquivos
+## File I/O
 
 ```python
 # Reading files
@@ -219,7 +226,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Tratamento de Erros
+## Error Handling
 
 ```python
 try:
@@ -241,7 +248,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Módulos e Imports
+## Modules e Imports
 
 ```python
 import math
@@ -256,9 +263,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Padrões Comuns
+## Common Patterns
 
-### Operações com Listas
+### List Operations
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -274,7 +281,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### Operações com Strings
+### String Operations
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -290,7 +297,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### Operações com Dicionários
+### Dicionário Operations
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -306,7 +313,7 @@ for k, v in d.items():
 
 ---
 
-## Funções Embutidas
+## Built-em Functions
 
 ```python
 len(), str(), int(), float(), bool()
@@ -322,16 +329,16 @@ any(), all()
 
 ---
 
-## Dicas Rápidas
+## Quick Tips
 
-- Use `#` para comentários de uma linha
-- Use `"""triple quotes"""` para docstrings e strings multilinha
-- A indentação importa (normalmente 4 espaços)
-- Convenções de nomenclatura: `snake_case` para variáveis/funções, `PascalCase` para classes
-- `__name__ == "__main__"` para verificar se o script está sendo executado diretamente
-- Use `virtualenv` ou `venv` para isolamento de projetos
-- Instale pacotes com `pip install package_name`
+- Use `#` para single-line comments
+- Use `"""triple quotes"""` para docstrings e multi-line strings
+- Indentation matters (typically 4 spaces)
+- Naming conventions: `snake_case` para variables/functions, `PascalCase` para classes
+- `__name__ == "__main__"` to check if script is run directly
+- Use `virtualenv` or `venv` para project isolation
+- Install packages com `pip install package_name`
 
 ---
 
-*Última atualização: junho de 2025 | Python 3.x*
+*Última atualização: June 2025 | Python 3.x*

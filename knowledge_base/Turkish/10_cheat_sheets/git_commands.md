@@ -1,10 +1,17 @@
-# Git Komutları Hızlı Referans
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: git_commands.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Sürüm kontrolü için temel Git komutları.
+# Git Komutlar Hızlı Referans
+
+Essential Git Komutlar için version control.
 
 ---
 
-## Kurulum ve Yapılandırma
+## Setup & Configuration
 
 ```bash
 # Configure user info
@@ -21,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Depo Başlatma
+## Repository Initialization
 
 ```bash
 # Initialize new repository
@@ -37,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Temel İş Akışı
+## Basic Workflow
 
 ```bash
 # Check status
@@ -64,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-## Dallanma
+## Branching
 
 ```bash
 # List branches
@@ -96,7 +103,7 @@ git rebase main
 
 ---
 
-## Uzak Depo İşlemleri
+## Remote Operations
 
 ```bash
 # View remotes
@@ -125,7 +132,7 @@ git push --tags
 
 ---
 
-## Değişiklikleri Geri Alma
+## Undoing Changes
 
 ```bash
 # Unstage file (keep changes)
@@ -151,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stash Kullanımı
+## Stashing
 
 ```bash
 # Save work in progress
@@ -177,7 +184,7 @@ git stash clear
 
 ---
 
-## Etiketler
+## Tags
 
 ```bash
 # List tags
@@ -198,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Görüntüleme ve Arama
+## Viewing & Searching
 
 ```bash
 # Show commit details
@@ -221,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-## Gelişmiş İşlemler
+## İleri Düzey Operations
 
 ```bash
 # Cherry-pick commit
@@ -247,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-## Temizlik
+## Cleanup
 
 ```bash
 # Remove untracked files (dry run)
@@ -264,9 +271,9 @@ git remote prune origin
 
 ---
 
-## Yaygın İş Akışları
+## Common Workflows
 
-### Yeni Özellik Başlatma
+### Start New Feature
 ```bash
 git checkout main
 git pull
@@ -278,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### main ile Senkronize Olma
+### Sync ile Main
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -287,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Hotfix İş Akışı
+### Hotfix Workflow
 ```bash
 git checkout main
 git pull
@@ -303,7 +310,7 @@ git push --tags
 
 ---
 
-## .gitignore Desenleri
+## .gitignore Patterns
 
 ```gitignore
 # Ignore specific file
@@ -325,37 +332,37 @@ __pycache__/
 
 ---
 
-## Klavye Kısayolları (Git Bash)
+## Keyboard Shortcuts (Git Bash)
 
-| Kısayol | İşlem |
+| Shortcut | Action |
 |----------|--------|
-| `Ctrl+R` | Geçmişte ters yönde arama |
-| `Tab` | Otomatik tamamlama |
-| `Ctrl+C` | Komutu iptal et |
-| `Ctrl+Z` | İşlemi askıya al |
-| `fg` | Askıya alınmış işlemi sürdür |
+| `Ctrl+R` | Reverse search Tarih |
+| `Tab` | Auto-Tam |
+| `Ctrl+C` | Cancel command |
+| `Ctrl+Z` | Suspend process |
+| `fg` | Resume suspended process |
 
 ---
 
 ## En İyi Uygulamalar
 
-✅ **Yapın:**
-- Açık ve açıklayıcı commit mesajları yazın
-- Mantıklı gruplamalarla sık commit atın
-- Özellikler/düzeltmeler için branch kullanın
-- Çalışmaya başlamadan önce pull alın
-- `git status` çıktısını sık sık gözden geçirin
+✅ **Do:**
+- Write clear, descriptive commit messages
+- Commit frequently ile logical groupings
+- Use branches için features/fixes
+- Pull before starting work
+- Review `git status` often
 
-❌ **Yapmayın:**
-- Hassas verileri commit etmeyin (API keys, passwords)
-- Paylaşılan branch'lere force push yapmayın
-- Büyük binary dosyaları commit etmeyin
-- Merge conflict'leri görmezden gelmeyin
-- Doğrudan main/master üzerinde çalışmayın
+❌ **Don't:**
+- Commit sensitive Veri (API keys, passwords)
+- Force push to shared branches
+- Commit large binary files
+- Ignore merge conflicts
+- Work directly on main/master
 
 ---
 
-## Commit Mesajı Biçimi
+## Commit Message Convention
 
 ```
 type(scope): subject
@@ -365,16 +372,16 @@ body (optional)
 footer (optional)
 ```
 
-**Türler:**
-- `feat`: Yeni özellik
-- `fix`: Hata düzeltmesi
-- `docs`: Dokümantasyon
-- `style`: Biçimlendirme
-- `refactor`: Kodun yeniden düzenlenmesi
-- `test`: Testler
-- `chore`: Bakım
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Formatting
+- `refactor`: Code restructuring
+- `test`: Tests
+- `chore`: Maintenance
 
-**Örnek:**
+**Example:**
 ```
 feat(auth): add password reset functionality
 
@@ -386,4 +393,4 @@ Closes #123
 
 ---
 
-*Son güncelleme: June 2025 | Git 2.x*
+*Son Güncelleme: June 2025 | Git 2.x*

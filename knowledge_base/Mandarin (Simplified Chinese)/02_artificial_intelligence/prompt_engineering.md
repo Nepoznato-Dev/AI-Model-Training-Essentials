@@ -1,174 +1,181 @@
-# 提示工程
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: prompt_engineering.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-提示工程是指设计、打磨并优化输入提示，以从语言模型中获得尽可能优质输出的实践。它既是一门艺术，也是一门科学，并且是在不进行微调的前提下控制 LLM 行为的主要接口。
+# Prompt Engineering
 
----
-
-## 核心原则
-
-### 清晰且具体
-清晰的提示不应留下歧义空间。要明确说明你想要的内容，包括格式、长度和视角。
-
-**模糊：**
-> “给我讲讲 Python。”
-
-**具体：**
-> “解释一下 Python 的全局解释器锁（GIL）。说明它对多线程的影响，给出一种替代方案，并将答案控制在 200 字以内。”
-
-### 提供上下文
-当模型知道自己的角色、受众和目标时，通常表现更好。
-
-**没有上下文：**
-> “写一个排序列表的函数。”
-
-**有上下文：**
-> “你是一名资深 Python 开发者。请写一个函数，按照指定键对字典列表进行排序。使用类型提示，并处理边界情况。目标读者是初级开发者。”
-
-### 使用正向指令
-告诉模型“要做什么”，而不是“不要做什么”。“不要使用术语”通常不如“使用 10 岁孩子也能理解的简单语言”有效。
+Prompt engineering is 这 practice 的 designing, refining, 和 optimising input prompts to get 这 best possible output from a 语言 model. It is both an art 和 a 科学, 和 it is 这 primary interface 为 controlling LLM behaviour without fine-tuning.
 
 ---
 
-## 提示结构
+## Core Principles
 
-### System / User / Assistant 角色
-大多数 LLM API 都支持多轮对话结构：
+### Clarity 和 Specificity
+A clear prompt leaves no room 为 ambiguity. Specify exactly what you want, including format, length, 和 perspective.
 
-- **System message**：设定模型的行为、人格和约束（在整个会话中持续生效）。
-- **User message**：当前的查询或指令。
-- **Assistant message**：模型此前的回答（用于保持上下文连续性）。
+**Vague:**
+> "Tell me about Python."
 
-**示例（OpenAI API 风格）：**
-System: 你是一位乐于助人的编程助手。你用简洁的代码示例和简短的解释作答。绝不提供不安全的代码。
-User: 写一个 Python 函数，从 URL 下载文件。
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, 和 keep your answer under 200 words."
+
+### Provide Context
+Models perform better when they know 这 role, audience, 和 goal.
+
+**Without context:**
+> "Write a function to sort a list."
+
+**与 context:**
+> "You are a senior Python developer. Write a function to sort a list 的 dictionaries by a given key. Use type hints 和 handle edge cases. 这 audience is junior developers."
+
+### Use Positive Instructions
+Tell 这 model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple 语言 accessible to a 10-year-old."
+
+---
+
+## Prompt Structures
+
+### System / User / Assistant Roles
+Most LLM APIs 支持 a multi-turn structure:
+
+- **System message**: Sets 这 model's behaviour, persona, 和 constraints (persists 为 这 whole session).
+- **User message**: 这 current query or instruction.
+- **Assistant message**: 这 model's previous responses (used 为 continuity).
+
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply 与 concise code 示例 和 brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-在要求模型执行任务之前，先给出 2–3 个你期望的输入输出示例。这能帮助模型学会模式。
+Provide 2–3 示例 的 这 desired input-output format before asking 这 model to perform 这 task. This teaches 这 pattern.
 
-**示例：**
-User: 将这些句子改写为被动语态：
-Input: 猫追赶了老鼠。
-Output: 老鼠被猫追赶。
-Input: 厨师做了这顿饭。
-Output: 这顿饭是厨师做的。
-Input: 暴风雨摧毁了房子。
-Output: （由模型完成）
+**Example:**
+User: Convert these sentences to passive voice:
+Input: 这 cat chased 这 mouse.
+Output: 这 mouse was chased by 这 cat.
+Input: 这 chef cooked 这 meal.
+Output: 这 meal was cooked by 这 chef.
+Input: 这 storm destroyed 这 house.
+Output: (model completes)
 
-### Chain-of-Thought（CoT）
-鼓励模型逐步展示推理过程。这能提升它在算术、逻辑和多步骤任务上的准确性。
+### Chain-的-Thought (CoT)
+Encourage 这 model to show its reasoning step by step. This improves accuracy on arithmetic, logic, 和 multi-step tasks.
 
-**不使用 CoT：**
-> “24 × 37 等于多少？”
+**Without CoT:**
+> "What is 24 × 37?"
 
-**使用 CoT：**
-> “计算 24 × 37，并一步一步展示你的推理过程。”
+**与 CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
 
-模型会先生成中间步骤，从而减少算术错误。
+这 model will produce intermediate steps, reducing arithmetic errors.
 
-### 结构化输出
-要求模型返回特定格式，例如 JSON、YAML 或 markdown 表格，以便可靠解析。
-User: 列出微服务的三个优点和三个缺点。仅返回一个合法的 JSON 对象，键为 "pros" 和 "cons"，两者都必须是字符串数组。
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros 和 three cons 的 microservices. Return only a valid JSON object 与 keys "pros" 和 "cons", each an array 的 strings.
 
 ---
 
-## 高级技巧
+## 高级 Techniques
 
 ### Self-Consistency
-针对同一个提示生成多个回答（temperature > 0），再对最终答案进行多数投票。这对推理任务尤其有效。
+Generate multiple responses 为 这 same prompt (与 a temperature > 0) 和 take a majority vote on 这 final answer. This is especially effective 为 reasoning tasks.
 
-### Tree-of-Thoughts
-并行探索多条推理路径，分别评估后选出最佳方案。这是偏研究型的方法，但可以通过要求模型“探索备选解法”来近似实现。
+### Tree-的-Thoughts
+Explore multiple reasoning paths 在 parallel, evaluate each, 和 choose 这 best one. This is a research-level technique but can be approximated by asking 这 model to "explore alternative solutions."
 
-### ReAct（Reasoning + Acting）
-让模型将推理与工具调用交错进行。它可以先思考，再行动（例如搜索网页、运行代码），然后根据结果继续思考。
+### ReAct (Reasoning + Acting)
+Let 这 model interleave reasoning 与 tool calls. It can think, then act (e.g., search 这 网络, run code), then think again based on 这 result.
 
-**提示结构：**
-你可以使用计算器和搜索引擎。每一步都输出：
-Thought:（你的推理）
-Action:（工具名称、输入）
-Observation:（工具输出）
-……持续进行，直到得到最终答案。
+**Prompt structure:**
+You have access to a calculator 和 a search engine. 为 each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have 这 final answer.
 
 ### Persona Assignment
-为模型指定一个具体人设，以塑造回答风格。
+Assign a specific persona to frame 这 response.
 
-**示例：**
-- “你是一名 Linux 内核开发者，正在向刚毕业的新人解释内存管理。”
-- “你是一位友好的营养师，正在向客户提供一般性建议。”
-- “你是一位尖刻的科技评论人，正在评测一款新设备。”
-
----
-
-## 参数调优
-
-- **Temperature**（0.0 – 1.0+）：控制随机性。越低越确定，越高越有创造性。事实性回答可用 0.0–0.3；创意写作用 0.7–1.0。
-- **Top-p**（核采样）：将采样概率截断在某个累积阈值内。0.9 表示模型从最可能的前 90% token 中采样。通常调 Temperature 或 Top-p 其一即可，不必同时调。
-- **Max tokens**：设置输出的最大长度。别忘了在上下文窗口中为回复预留足够空间。
-- **Frequency penalty**：减少相同 token 的重复出现。
-- **Presence penalty**：鼓励模型引入新主题。
+**示例:**
+- "You are a Linux kernel developer explaining memory 管理 to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## 常见问题与修复方法
+## Parameter Tuning
 
-| 问题 | 可能原因 | 修复方法 |
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 为 factual answers; 0.7–1.0 为 creative writing.
+- **Top-p** (nucleus sampling): Cuts off 这 probability mass at a certain cumulative threshold. 0.9 means 这 model samples from 这 top 90% 的 likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets 这 maximum output length. Remember to reserve space 为 这 response within 这 context window.
+- **Frequency penalty**: Reduces repetition 的 这 same tokens.
+- **Presence penalty**: Encourages 这 model to introduce new topics.
+
+---
+
+## Common Pitfalls 和 Fixes
+
+| Problem | Likely cause | Fix |
 |---------|--------------|-----|
-| 模型忽略了提示中的部分要求 | 提示过长或信息过载 | 缩短提示；把最重要的指令放在最后 |
-| 输出过于冗长 | 没有长度约束 | 添加“限制为 3 句话”或设置 max_tokens |
-| 输出过于简略 | 约束过严 | 添加“请详细解释”或调低 temperature |
-| 事实性幻觉 | 上下文不足或问题含糊 | 添加“如果不确定，请说‘I don't know’”，并提供 RAG 上下文 |
-| 格式不一致 | 没有明确规定输出格式 | 要求返回 JSON、markdown 表格或项目符号列表 |
-| 模型使用了错误的语言作答 | 没有指定语言 | 明确写出“Respond in English”（或你的目标语言） |
+| Model ignores parts 的 prompt | Prompt too long or overloaded | Shorten; put 这 most important instruction at 这 end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain 在 detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" 和 provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask 为 JSON, markdown table, or bullet list |
+| Model answers 在 wrong 语言 | No 语言 instruction | Explicitly state "Respond 在 英语" (or your target 语言) |
 
 ---
 
-## 常见任务的提示模板
+## Prompt Templates 为 Common Tasks
 
-### 摘要
-请将以下文本概括为 3 个要点，聚焦主要论点，避免细节。
+### Summarisation
+Summarise 这 following text 在 3 bullet points. Focus on 这 main arguments 和 avoid details.
 
-Text: [插入文本]
-
-
-### 代码生成
-编写一个 [语言] 函数，用于 [完成 X 功能]。
-要求：
-
-使用类型提示。
-
-包含 docstring。
-
-处理这些边界情况：[列表]。
-
-除非明确说明，否则不要使用外部库。
+Text: [insert text]
 
 
-### 解释说明
-向 [非专业人士 / 大学生 / 儿童] 解释 [概念]。适当时请使用类比。
+### Code Generation
+Write a [语言] function that [does X].
+Requirements:
 
-### 头脑风暴
-围绕 [主题] 生成 10 个想法。对每个想法，给出一句话描述和一个潜在挑战。
+Use type hints.
 
-文本
+Include a docstring.
 
-### 分类
-将以下客户反馈分类为 [正面、中性、负面]。
-给出置信分数（0-100）和简短理由。
+Handle edge cases: [list].
 
-Feedback: [插入文本]
+Do not use external libraries unless specified.
 
-### 风格化翻译
-将以下英文翻译成西班牙语。使用适合社交媒体帖文的非正式语气。
-Text: [插入文本]
+
+### Explanation
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
+
+### Brainstorming
+Generate 10 ideas 为 [topic]. 为 each idea, give a one-sentence description 和 one potential challenge.
+
+text
+
+### Classification
+Classify 这 following customer 反馈 as [positive, neutral, negative].
+Provide a confidence score (0-100) 和 a brief reason.
+
+反馈: [insert text]
+
+### Translation 与 Style
+Translate 这 following 英语 text to Spanish. Use an informal tone suitable 为 a social media post.
+Text: [insert text]
 
 ---
 
-## 提示的评估
+## Evaluation 的 Prompts
 
-像对待代码一样对待提示：进行版本管理、测试，并持续迭代。
+Treat prompts as code: version them, test them, 和 iterate.
 
-- **A/B 测试**不同提示版本在留出查询集上的效果。
-- 通过**人工评估**或自动化指标（如 exact match、BLEU、自定义评分）来**衡量成功**。
-- **维护提示注册表**（一个简单的文本文件或电子表格即可），记录提示内容、版本和观察到的表现。
+- **A/B test** different prompt variants on a held-out set 的 queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) 与 这 prompt, version, 和 observed 性能.
 
 ---

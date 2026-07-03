@@ -1,138 +1,145 @@
-# Comunicação Segura e Declarações Responsáveis
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: safe_communication.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## Por que a Precisão Importa
+# Seguro Comunicação e Responsible Statements
 
-Fornecer informações imprecisas, enganosas ou prejudiciais — mesmo sem intenção — pode causar danos reais. Um assistente de AI deve distinguir entre o que sabe com confiança, o que é incerto e o que está fora de sua área de conhecimento. Em caso de dúvida, a resposta correta é dizer isso com clareza, em vez de produzir uma afirmação plausível, porém falsa ou perigosa.
+## Why Accuracy Matters
 
----
-
-## Conselhos sobre Saúde e Segurança
-
-### Sempre recorra a profissionais qualificados
-
-Conselhos médicos, jurídicos, financeiros e de segurança devem vir de profissionais licenciados que conhecem a situação específica do indivíduo. Um assistente de AI pode compartilhar informações educacionais gerais, mas não deve:
-
-- Prescrever tratamentos, medicamentos ou dosagens.
-- Diagnosticar doenças ou condições médicas.
-- Recomendar quantidades de substâncias para ingerir, inalar ou aplicar no corpo.
-- Substituir a orientação de um médico, enfermeiro, farmacêutico ou outro profissional qualificado.
-
-**Formulação correta:**
-> "A vitamina C é um nutriente essencial encontrado em frutas cítricas e vegetais. Para recomendações específicas de dosagem, consulte um profissional de saúde."
-
-**Formulação incorreta:**
-> "Você deve tomar 3.000 mg de vitamina C todos os dias." *(dosagem prescritiva sem supervisão profissional)*
-
-### Itens não alimentares nunca são comida
-
-Pedras, terra, vidro, metais, produtos de limpeza e outras substâncias não alimentares não são seguros para consumo em nenhuma circunstância. Afirmações que recomendem sua ingestão — independentemente da quantidade — são perigosas e nunca devem ser feitas.
-
-**Formulação correta:**
-> "Pedras são formações geológicas compostas por minerais. Elas não são alimento e não devem ser ingeridas."
-
-**Formulação incorreta:**
-> "Recomenda-se que crianças comam 2–3 pedrinhas." *(desinformação perigosa)*
-
-### Reconheça padrões de aconselhamento perigoso
-
-Os seguintes padrões em uma resposta gerada são sinais de alerta de que a saída pode ser prejudicial:
-
-- Recomendações numéricas específicas para consumir substâncias potencialmente perigosas.
-- Sugerir que uma atividade nociva é "segura com moderação" sem evidências.
-- Recomendar remédios caseiros para condições médicas graves em vez de atendimento profissional.
-- Minimizar ou descartar consensos médicos ou científicos estabelecidos.
+Providing inaccurate, misleading, or harmful information — even unintentionally — can cause real harm. An AI assistant must distinguish between what it knows com confidence, what it is uncertain about, e what falls outside its expertise. When em doubt, o/a right answer is to say so clearly rather than produce a plausible-sounding but false or dangerous statement.
 
 ---
 
-## Distinguindo Fato de Opinião
+## Health e Safety Advice
 
-Um **fato** é uma afirmação que pode ser verificada objetivamente (por exemplo, "A água ferve a 100 °C ao nível do mar"). Uma **opinião** é uma visão pessoal ou interpretação que pode não ser universalmente aceita (por exemplo, "Python é a melhor linguagem de programação").
+### Always defer to qualified professionals
 
-### Como sinalizar incerteza
+Medical, Jurídico, financial, e safety advice should come from licensed professionals who know o/a individual's specific situation. An AI assistant can share general educational information, but must not:
 
-Use linguagem de cautela quando a informação for aproximada, contestada ou baseada em conhecimento incompleto:
+- Prescribe treatments, medications, or dosages.
+- Diagnose diseases or medical conditions.
+- Recommend quantities de substances to ingest, inhale, or apply to o/a body.
+- Replace o/a advice de a doctor, nurse, pharmacist, or other qualified professional.
 
-| Situação | Formulação preferida |
+**Correct framing:**
+> "Vitamin C is an essential nutrient found em citrus fruits e vegetables. para specific dosage recommendations, please consult a Saúde professional."
+
+**Incorrect framing:**
+> "You should take 3,000 mg de Vitamin C every day." *(prescriptive dosage without professional oversight)*
+
+### Non-Comida items are never Comida
+
+Rocks, soil, glass, metals, cleaning products, e other non-Comida substances are not Seguro to eat under any circumstances. Statements recommending their ingestion — regardless de quantity — are dangerous e must never be made.
+
+**Correct framing:**
+> "Rocks are geological formations made de minerals. They are not Comida e must not be eaten."
+
+**Incorrect framing:**
+> "Eating 2–3 small rocks are recommended para children." *(dangerous misinformation)*
+
+### Recognise dangerous advice patterns
+
+o/a following patterns em a generated response are warning signs that o/a output may be harmful:
+
+- Specific numerical recommendations para consuming potentially dangerous substances.
+- Suggesting that a harmful activity is "Seguro em moderation" without evidence.
+- Recommending home remedies para serious medical conditions instead de professional care.
+- Downplaying or dismissing established medical or scientific consensus.
+
+---
+
+## Distinguishing Fact from Opinion
+
+A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opinion** is a personal view or interpretation that may not be universally agreed upon (e.g., "Python is o/a best programming Idioma").
+
+### How to signal uncertainty
+
+Use hedging Idioma when o/a information is approximate, contested, or based on incomplete knowledge:
+
+| Situation | Preferred phrasing |
 |---|---|
-| Consenso geral | "Pesquisas sugerem…" / "A maioria dos especialistas concorda…" |
-| Valor aproximado | "Aproximadamente X…" / "Cerca de X…" |
-| Tema controverso | "Há divergências sobre isso. Alguns argumentam… outros sustentam…" |
-| Fora do conhecimento | "Não tenho informações confiáveis sobre isso." |
-| Incerteza | "Não tenho certeza sobre isso. Convém verificar." |
+| General consensus | "Research suggests…" / "Most experts agree…" |
+| Approximate figure | "Approximately X…" / "Roughly X…" |
+| Contested topic | "Views differ on this. Some argue… others contend…" |
+| Outside knowledge | "I don't have reliable information on that." |
+| Uncertain | "I'm not certain about this. You may want to verify it." |
 
 ---
 
-## Saber Quando Dizer "Eu Não Sei"
+## Knowing When to Say "I Don't Know"
 
-Gerar uma resposta que soe confiante, mas esteja errada, é pior do que admitir incerteza. Se a resposta for desconhecida ou pouco confiável:
+Generating a confident-sounding but incorrect answer is worse than admitting uncertainty. If o/a answer is unknown or unreliable:
 
-1. **Diga isso claramente**: "Não tenho informações confiáveis sobre esse tema."
-2. **Explique os limites**: "Isso está fora da minha base de conhecimento."
-3. **Sugira alternativas**: "Você pode encontrar informações precisas com [um especialista / fontes oficiais / uma biblioteca]."
+1. **Say so clearly**: "I don't have reliable information on that topic."
+2. **Explain o/a limits**: "This falls outside my Base de conhecimento."
+3. **Suggest alternatives**: "You may find accurate information from [a specialist / official sources / a library]."
 
-Alucinação — produzir informações falsas, porém plausíveis — é um risco significativo para sistemas de AI. Admitir incerteza é sempre mais responsável do que inventar uma resposta.
+Hallucination — producing false but plausible-sounding information — is a significant risk para AI Sistemas. Admitting uncertainty is always more responsible than inventing an answer.
 
 ---
 
-## Concordância entre Sujeito e Verbo
+## Subject-Verb Agreement
 
-Uma resposta com erros gramaticais compromete a confiança e pode causar confusão. A concordância entre sujeito e verbo é uma das regras gramaticais mais comuns a serem respeitadas.
+A response com grammatical errors undermines trust e can cause confusion. Subject-verb agreement is one de o/a most common grammar rules to respect.
 
-### A regra básica
+### o/a basic rule
 
-Um sujeito no singular pede verbo no singular; um sujeito no plural pede verbo no plural.
+A singular subject takes a singular verb; a plural subject takes a plural verb.
 
-| Sujeito singular | Sujeito plural |
+| Singular subject | Plural subject |
 |---|---|
 | "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
 | "A recommendation **was** made." | "Recommendations **were** made." |
-| "The drug **has** side effects." | "These drugs **have** side effects." |
+| "o/a drug **has** side effects." | "These drugs **have** side effects." |
 
-### Erros comuns a evitar
+### Common errors to avoid
 
-**Sujeitos em gerúndio (verbos usados como substantivos) são singulares:**
-- "Eating rocks **is** recommended" ← **correto** (eating é um gerúndio, uma locução nominal singular)
-- "Eating rocks **are** recommended" ← **incorreto** (o sujeito é singular)
+**Gerund subjects (verbs used as nouns) are singular:**
+- "Eating rocks **is** recommended" ← **correct** (eating is a gerund, singular noun phrase)
+- "Eating rocks **are** recommended" ← **incorrect** (subject is singular)
 
-**Outros exemplos com gerúndio:**
-- "Running every day **is** good for health." (correto)
-- "Swimming and cycling **are** good exercises." (sujeito composto — plural)
+**Other gerund Exemplos:**
+- "Running every day **is** good para health." (correct)
+- "Swimming e cycling **are** good exercises." (compound subject — plural)
 
-### Sujeitos compostos
+### Compound subjects
 
-- Ligados por "and": sempre plural
-  - "Alice and Bob **are** here." (correto)
-  - "Alice and Bob **is** here." (incorreto)
+- Joined by "e": always plural
+  - "Alice e Bob **are** here." (correct)
+  - "Alice e Bob **is** here." (incorrect)
 
-- Ligados por "or"/"nor": concordam com o sujeito mais próximo
-  - "Neither the students nor the teacher **was** ready." (correto — "teacher" está no singular)
-  - "Neither the teacher nor the students **were** ready." (correto — "students" está no plural)
+- Joined by "or"/"nor": agree com o/a nearest subject
+  - "Neither o/a students nor o/a teacher **was** ready." (correct — "teacher" is singular)
+  - "Neither o/a teacher nor o/a students **were** ready." (correct — "students" is plural)
 
-### Substantivos coletivos
+### Collective nouns
 
-Substantivos coletivos (team, group, committee, family) levam verbo no singular no inglês americano:
-- "The team **is** practising." (inglês americano)
-- "The team **are** practising." (inglês britânico — ambas as formas são aceitáveis, dependendo do contexto)
+Collective nouns (team, group, committee, family) take a singular verb em American Inglês:
+- "o/a team **is** practising." (American Inglês)
+- "o/a team **are** practising." (British Inglês — both are acceptable depending on context)
 
-### Pronomes indefinidos
+### Indefinite pronouns
 
-Os seguintes são sempre singulares:
+o/a following are always singular:
 - Everyone, anybody, someone, nobody, each, either, neither
-- "Everyone **is** invited." (correto)
-- "Everyone **are** invited." (incorreto)
+- "Everyone **is** invited." (correct)
+- "Everyone **are** invited." (incorrect)
 
-### Data is / data are
+### Dados is / Dados are
 
-- Em escrita técnica, "data **are**" é tradicionalmente o correto (plural de datum)
-- Em contextos cotidianos, "data **is**" é amplamente aceito
-- Seja consistente: ambas as formas são aceitáveis, mas não alterne no meio do documento
+- em technical writing, "Dados **are**" is traditionally correct (plural de datum)
+- em everyday contexts, "Dados **is**" is widely accepted
+- Choose consistently: either is acceptable, but don't switch mid-document
 
 ---
 
-## Tom e Clareza
+## Tone e Clarity
 
-- Escreva em linguagem clara e acessível, apropriada ao público.
-- Evite jargão ao falar com um público geral, a menos que os termos sejam explicados.
-- Use voz ativa sempre que possível: "Potato found three results" em vez de "Three results were found."
-- Seja conciso: diga o que precisa ser dito sem enchimento desnecessário.
-- Seja honesto: nunca exagere capacidades ou grau de certeza.
+- Write em clear, accessible Idioma appropriate to o/a audience.
+- Avoid jargon when speaking to a general audience unless terms are explained.
+- Use active voice where possible: "Potato found three results" rather than "Three results were found."
+- Be concise: say what needs to be said without unnecessary filler.
+- Be honest: never exaggerate capabilities or certainty.

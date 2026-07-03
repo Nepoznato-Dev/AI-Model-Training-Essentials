@@ -1,10 +1,17 @@
-# 程式語言
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: coding_languages.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# Coding Languages
 
 ## Python
 
-Python 是一種高階、解釋型、動態型別、通用程式語言。它強調可讀性，並使用具有語義意義的縮排來界定程式碼塊。
+Python is a high-level, interpreted, dynamically typed, general-purpose programming 語言. It emphasises readability 和 uses significant indentation as block delimiters.
 
-### 語法基礎
+### 語法 基礎
 
 ```python
 # Variables and types
@@ -29,21 +36,21 @@ while active:
     active = False
 ```
 
-### 函式與型別提示
+### Functions 和 type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### 列表推導式
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### 類與物件導向程式設計
+### Classes 和 OOP
 
 ```python
 class Animal:
@@ -58,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-### 常見模式
+### Common patterns
 
-- 使用 `with open(path) as f:` 進行檔案 I/O。
-- 相比 `%` 或 `.format()`，優先使用 f-string（`f"hello {name}"`）。
-- 對僅承載資料的類，使用 `dataclasses.dataclass`。
-- 處理檔案路徑時，優先使用 `pathlib.Path` 而不是 `os.path`。
+- Use `與 open(path) as f:` 為 file I/O.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` 為 資料-only classes.
+- Use `pathlib.Path` instead 的 `os.path` 為 file paths.
 
-### 工具鏈
+### Tooling
 
-- `pip install <package>` 用於安裝包。
-- `python -m venv .venv && source .venv/bin/activate` 用於建立虛擬環境。
-- `pip freeze > requirements.txt` 用於儲存依賴。
-- `pip install -r requirements.txt` 用於恢復依賴。
-- `pyproject.toml` 是現代專案設定的標準檔案。
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
+- `pip freeze > requirements.txt` saves dependencies.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is 這 modern project-configuration standard.
 
 ---
 
 ## JavaScript
 
-JavaScript 是 Web 的核心語言。它既可在瀏覽器中執行，也可透過 Node.js 在伺服器端執行。它是動態型別語言，並採用基於原型的物件模型。
+JavaScript is 這 primary 語言 的 這 網路. It runs 在 browsers 和 on servers via Node.js. It is dynamically typed 和 prototype-based.
 
-### 現代語法（ES6+）
+### Modern 語法 (ES6+)
 
 ```javascript
 // Variable declarations
@@ -100,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### 非同步程式設計
+### Async programming
 
 ```javascript
 // Promises
@@ -120,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-### 陣列方法
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -128,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-### DOM 操作
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -137,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### 工具鏈
+### Tooling
 
-- `npm init -y` 用於初始化專案。
-- `npm install <package>` 用於新增依賴。
-- `npm run <script>` 用於執行 `package.json` 中定義的指令碼。
-- `node index.js` 用於透過 Node.js 執行指令碼。
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined 在 `package.json`.
+- `node index.js` runs a script 與 Node.js.
 
 ---
 
 ## TypeScript
 
-TypeScript 是 JavaScript 的靜態型別超集，可編譯為普通 JavaScript。它增加了型別註解、介面、泛型和列舉。
+TypeScript is a statically typed superset 的 JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, 和 enums.
 
-### 型別註解
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -159,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-### 介面與型別
+### Interfaces 和 types
 
 ```typescript
 interface User {
@@ -171,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-### 泛型
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -183,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### 帶存取修飾詞的類
+### Classes 與 access modifiers
 
 ```typescript
 class Counter {
@@ -199,7 +206,7 @@ class Counter {
 }
 ```
 
-### tsconfig.json 基礎設定
+### tsconfig.json essentials
 
 ```json
 {
@@ -213,21 +220,21 @@ class Counter {
 }
 ```
 
-### 工具鏈
+### Tooling
 
-- `npm install -g typescript` 用於安裝編譯器。
-- `tsc` 用於編譯專案。
-- `ts-node src/index.ts` 用於直接執行 TypeScript。
+- `npm install -g typescript` installs 這 compiler.
+- `tsc` compiles 這 project.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
 ## Rust
 
-Rust 是一種面向安全、速度和併發的系統程式語言。它透過所有權系統在編譯期防止記憶體安全漏洞。
+Rust is a 系統 programming 語言 focused on safety, speed, 和 concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-### 所有權與借用
+### Ownership 和 borrowing
 
-Rust 中的每個值都恰好有一個所有者。當所有者離開作用域時，該值會被釋放。借用允許在不轉移所有權的前提下使用引用。
+Every value 在 Rust has exactly one owner. When 這 owner goes out 的 scope 這 value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -241,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-可變借用（`&mut T`）要求同一時間不能存在其他借用。
+Mutable borrows (`&mut T`) require that no other borrows exist at 這 same time.
 
-### 生命週期
+### Lifetimes
 
-生命週期確保引用不會比其指向的資料存活得更久。
+Lifetimes ensure references do not outlive 這 資料 they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -253,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-### 列舉與模式匹配
+### Enums 和 pattern matching
 
 ```rust
 enum Shape {
@@ -269,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### 錯誤處理
+### Error handling
 
 ```rust
 use std::fs;
@@ -286,22 +293,22 @@ fn main() {
 }
 ```
 
-返回 `Result` 的函式內部可以使用 `?` 運算子自動傳播錯誤。
+這 `?` operator propagates errors automatically inside functions that return `Result`.
 
-### 工具鏈（Cargo）
+### Tooling (Cargo)
 
-- `cargo new project_name` 用於建立新專案。
-- `cargo build` 用於編譯。
-- `cargo run` 用於編譯並執行。
-- `cargo test` 用於執行測試。
-- `cargo add <crate>` 用於向 `Cargo.toml` 新增依賴。
-- `cargo fmt` 用於格式化程式碼。`cargo clippy` 用於靜態檢查。
+- `cargo new project_name` creates a new project.
+- `cargo build` compiles.
+- `cargo run` compiles 和 runs.
+- `cargo test` runs tests.
+- `cargo add <crate>` adds a dependency to `Cargo.toml`.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
 ## Go
 
-Go（Golang）是一種靜態型別、編譯型語言，旨在以簡潔的方式構建高效能併發程式。
+Go (Golang) is a statically typed, compiled 語言 designed 為 simplicity 和 high-效能 concurrent programs.
 
 ### 基礎
 
@@ -316,7 +323,7 @@ func main() {
 }
 ```
 
-### 函式與多返回值
+### Functions 和 multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -327,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-### 介面
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -339,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-任何實現了介面全部方法的型別都會滿足該介面，無需顯式宣告。
+Any type that implements all methods 的 an interface satisfies it — no explicit declaration is needed.
 
-### Goroutine 與 Channel
+### Goroutines 和 channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -381,20 +388,20 @@ func readFile(path string) error {
 }
 ```
 
-### 工具鏈
+### Tooling
 
-- `go mod init module/name` 用於初始化模組。
-- `go get ./...` 用於下載依賴。
-- `go build ./...` 用於編譯。
-- `go test ./...` 用於執行測試。
-- `go fmt ./...` 用於格式化程式碼。
-- `go vet ./...` 用於檢查常見錯誤。
+- `go mod init module/name` initialises a module.
+- `go get ./...` downloads dependencies.
+- `go build ./...` compiles.
+- `go test ./...` runs tests.
+- `go fmt ./...` formats code.
+- `go vet ./...` checks 為 common mistakes.
 
 ---
 
 ## C 和 C++
 
-C 是一種低階、編譯型、過程式語言。C++ 在 C 的基礎上擴充套件了類、模板以及標準模板庫（STL）。
+C is a low-level, compiled, procedural 語言. C++ extends C 與 classes, templates, 和 這 Standard Template Library (STL).
 
 ### C 基礎
 
@@ -415,9 +422,9 @@ int main(void) {
 }
 ```
 
-### 指標
+### Pointers
 
-指標儲存另一個變數的記憶體地址。`*ptr` 用於解引用，`&var` 用於取地址。
+A pointer stores 這 memory address 的 another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -425,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-### C++ 類與 RAII
+### C++ classes 和 RAII
 
 ```cpp
 #include <string>
@@ -445,9 +452,9 @@ private:
 };
 ```
 
-RAII（Resource Acquisition Is Initialization，資源獲取即初始化）將資源生命週期繫結到物件生命週期上，從而確保資源會在解構函式中自動清理。
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically 在 destructors.
 
-### STL 容器
+### STL containers
 
 ```cpp
 #include <vector>
@@ -462,26 +469,26 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### 現代 C++（C++17 / C++20）亮點
+### Modern C++ (C++17 / C++20) highlights
 
-- `auto` 型別推導。
-- 基於範圍的 `for` 迴圈：`for (auto& item : container)`。
-- 智慧指標：`std::unique_ptr`、`std::shared_ptr` —— 避免直接使用原始 `new`/`delete`。
-- 結構化繫結：`auto [key, val] = pair;`。
-- `std::optional`、`std::variant`、`std::string_view`。
+- `auto` type deduction.
+- Range-based `為` loops: `為 (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-### 編譯
+### Compilation
 
-- `gcc main.c -o main` 用於編譯 C。
-- `g++ -std=c++20 -Wall main.cpp -o main` 用於編譯 C++。
-- `make` 可透過 `Makefile` 自動化多檔案構建。
-- `cmake` 是大型專案常用的標準構建系統生成器。
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
+- `make` automates multi-file builds via a `Makefile`.
+- `cmake` is 這 standard build-system generator 為 larger projects.
 
 ---
 
 ## Swift
 
-Swift 是 Apple 為 iOS、macOS、watchOS 和 tvOS 開發的現代靜態型別程式語言，也可執行於 Linux。
+Swift is a modern, statically typed programming 語言 developed by Apple 為 iOS, macOS, watchOS, 和 tvOS. It is also 可用 on Linux.
 
 ### 基礎
 
@@ -493,9 +500,9 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-### Optional
+### Optionals
 
-Optional（`T?`）表示一個值可能存在，也可能不存在。
+An optional (`T?`) represents a value that may or may not be present.
 
 ```swift
 var name: String? = nil
@@ -513,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### 函式與閉包
+### Functions 和 closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -521,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### 類與結構體
+### Classes 和 structs
 
-Swift 同時擁有類（引用型別）和結構體（值型別）。對於簡單的資料模型，優先使用結構體。
+Swift has both classes (參考 types) 和 structs (value types). Prefer structs 為 simple 資料 models.
 
 ```swift
 struct Point {
@@ -537,7 +544,7 @@ class Vehicle {
 }
 ```
 
-### 協議
+### Protocols
 
 ```swift
 protocol Describable {
@@ -550,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-### Codable（JSON 編碼 / 解碼）
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -580,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-### 工具鏈
+### Tooling
 
-- `swift build` 用於編譯 Swift Package Manager 專案。
-- `swift run` 用於執行專案。
-- `swift test` 用於執行測試。
-- `swift package init --type executable` 用於建立新的可執行專案。
-- Xcode 是 Apple 平台開發的主要 IDE。
+- `swift build` compiles a Swift Package Manager project.
+- `swift run` runs 這 project.
+- `swift test` runs tests.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is 這 primary IDE 為 Apple-platform 開發.
 
 ---
 
-## 程式設計基礎（與語言無關）
+## Coding 基礎 (語言-Agnostic)
 
-### 問題求解流程
+### Problem-solving workflow
 
-1. 編寫程式碼前，先定義輸入、輸出和約束條件。
-2. 將任務拆分為更小的子問題。
-3. 先寫出一個簡單且正確的方案，再在需要時進行最佳化。
-4. 用測試、邊界情況和真實輸入來驗證結果。
+1. Define 這 input, output, 和 constraints before writing code.
+2. Break 這 task into smaller sub-problems.
+3. Start 與 a simple correct solution, then optimise if needed.
+4. Validate 與 tests, edge cases, 和 realistic inputs.
 
-### 核心資料結構
+### Core 資料 structures
 
-- **Array / List**：有序集合，支援快速按索引讀取。
-- **Hash map / Dictionary**：鍵值儲存，平均查詢複雜度為 O(1)。
-- **Set**：元素唯一，適合做成員檢查。
-- **Stack**：LIFO（後進先出），常用於解析和遞迴。
-- **Queue**：FIFO（先進先出），適用於排程和 BFS。
-- **Tree / Graph**：表示層次關係與網路關係。
+- **Array / List**: ordered collection 與 fast indexed reads.
+- **Hash map / 詞典**: key-value store 與 average O(1) lookup.
+- **Set**: unique values, useful 為 membership checks.
+- **Stack**: LIFO (last 在, first out), common 在 parsing 和 recursion.
+- **Queue**: FIFO (first 在, first out), useful 為 scheduling 和 BFS.
+- **Tree / Graph**: hierarchical 和 網路-style relationships.
 
-### 演算法複雜度（Big O）
+### Algorithmic complexity (Big O)
 
-- Big O 用於描述執行時間或記憶體佔用如何隨輸入規模成長。
-- 典型複雜度：
-  - O(1)：常數時間查詢（例如雜湊表存取）。
-  - O(log n)：二分查詢。
-  - O(n)：對資料進行一次線性遍歷。
-  - O(n log n)：高效排序。
-  - O(n²)：對規模相近的輸入做巢狀迴圈。
-- 除非效能分析顯示存在瓶頸，否則應優先選擇清晰、易維護的程式碼。
+- Big O describes how runtime or memory grows 與 input size.
+- Typical costs:
+  - O(1): constant-time lookup (e.g., hash map access).
+  - O(log n): binary search.
+  - O(n): single pass through 資料.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-### 除錯原則
+### Debugging principles
 
-- 首先穩定復現問題。
-- 儘量縮小失敗用例以定位原因。
-- 檢查日誌、輸入和既有假設。
-- 測試時一次只改變一個變數。
-- 新增回歸測試，避免同類問題再次出現。
+- Reproduce 這 bug reliably first.
+- Minimise 這 failing case to isolate cause.
+- Inspect logs, inputs, 和 assumptions.
+- Change one variable at a time while 測試.
+- Add regression tests so 這 same bug does not return.
 
-### 測試金字塔
+### 測試 pyramid
 
-- **單元測試**：快速、聚焦於小型邏輯單元。
-- **整合測試**：驗證模組或服務之間的互動。
-- **端到端測試**：在真實環境中驗證使用者流程。
-- 一個平衡的測試體系通常包含大量單元測試和較少的慢速端到端測試。
+- **Unit tests**: fast, focused checks 的 small logic units.
+- **Integration tests**: verify interactions across modules/services.
+- **End-to-end tests**: validate user flows 在 realistic environments.
+- A balanced suite has many unit tests 和 fewer slow end-to-end tests.
 
-### 程式碼品質實踐
+### Code quality practices
 
-- 使用有意義的命名和小而專注的函式。
-- 在可行時優先使用純函式（更少副作用）。
-- 保持模組內聚、介面明確。
-- 使用 linter / formatter 保持一致性。
-- 從正確性、清晰度和安全性角度審查程式碼。
+- Use meaningful names 和 small focused functions.
+- Prefer pure functions (fewer side effects) when practical.
+- Keep modules cohesive 和 interfaces explicit.
+- Use linters/formatters 為 consistency.
+- Review code 為 correctness, clarity, 和 安全.
 
-### 開發者安全基礎
+### 安全 基礎 為 developers
 
-- 對外部輸入進行驗證和清洗。
-- 使用參數化查詢防止 SQL 注入。
-- 使用強雜湊演算法儲存密碼（如 Argon2、bcrypt）。
-- 避免將金鑰或憑據直接寫入原始碼。
-- 為憑據和服務應用最小許可權原則。
+- Validate 和 sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords 與 strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets 在 source code.
+- Apply least privilege 為 credentials 和 services.

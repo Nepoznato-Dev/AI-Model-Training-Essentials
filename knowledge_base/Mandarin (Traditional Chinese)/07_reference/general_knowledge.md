@@ -1,65 +1,72 @@
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: general_knowledge.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
 # 常識
 
-## 太陽系
+## 這 Solar System
 
-太陽系由太陽和八顆行星組成：水星、金星、地球、火星、木星、土星、天王星和海王星。地球是距離太陽第三近的行星，約位於 1.5 億公里之外。太陽是太陽系中心的恆星，透過核融合為所有行星提供光和能量。木星是最大的行星，質量大於所有其他行星的總和。土星以其由冰和岩石組成的顯著環系統而聞名。火星因表面的氧化鐵而被稱為紅色星球。海王星是距離太陽最遠的行星。
+這 solar system consists 的 這 Sun 和 eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, 和 Neptune. Earth is 這 third planet from 這 Sun, located approximately 150 million kilometers away. 這 Sun is a star at 這 center 的 這 solar system that provides light 和 energy to all planets through nuclear fusion. Jupiter is 這 largest planet, 與 a mass greater than all other planets combined. Saturn is known 為 its prominent ring system made 的 ice 和 rock. Mars is called 這 Red Planet because 的 iron oxide on its surface. Neptune is 這 farthest planet from 這 Sun.
 
-## 地球
+## Earth
 
-地球是太陽系中第五大行星，也是已知唯一孕育生命的行星。其表面約 71% 是水，29% 是陸地。大氣層約由 78% 氮氣、21% 氧氣和 1% 其他氣體（包括二氧化碳和氬氣）組成。地球有一顆稱為月球的天然衛星。月球大約每 27.3 天繞地球運行一次，距離約 384,400 公里。地球直徑約 12,742 公里。地球約有 45 億年歷史。
+Earth is 這 fifth-largest planet 在 這 solar system 和 這 only known planet to harbor life. Its surface is approximately 71% water 和 29% land. 這 atmosphere is composed 的 approximately 78% nitrogen, 21% oxygen, 和 1% other gases including carbon dioxide 和 argon. Earth has one natural satellite called 這 Moon. 這 Moon orbits Earth roughly every 27.3 days 和 is approximately 384,400 kilometers away. Earth has a diameter 的 approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
 
-## 天氣與氣候
+## Weather 和 Climate
 
-天氣指特定地點的短期大氣狀況，包括溫度、濕度、降水和風。氣候指一個地區多年來的長期天氣模式。溫室效應發生在地球大氣層中的氣體捕獲來自太陽的熱量，使地球變暖時。二氧化碳、水蒸氣和甲烷是主要的溫室氣體。氣候變遷指全球溫度和天氣模式的長期變化，主要由工業革命以來的人類活動驅動。
+Weather refers to short-term atmospheric conditions 在 a specific location, including temperature, humidity, precipitation, 和 wind. Climate refers to long-term weather patterns 在 a region over many years. 這 greenhouse effect occurs when gases 在 Earth's atmosphere trap heat from 這 Sun, warming 這 planet. Carbon dioxide, water vapor, 和 methane are 這 main greenhouse gases. Climate change refers to long-term shifts 在 global temperatures 和 weather patterns, largely driven by human activity since 這 Industrial Revolution.
 
-## 海洋
+## Oceans
 
-地球有五大洋：太平洋、大西洋、印度洋、南冰洋和北冰洋。太平洋最大，面積超過 1.65 億平方公里，也是最深的，馬里亞納海溝深度約達 11 公里。海洋總面積約 3.61 億平方公里。海洋平均深度約 3,688 公尺。海洋調節地球溫度，是地球上大多數生命的家園。
+Earth has five oceans: 這 Pacific, Atlantic, Indian, Southern, 和 Arctic. 這 Pacific Ocean is 這 largest, covering more than 165 million square kilometers, 和 這 deepest, 與 這 Mariana Trench reaching approximately 11 kilometers deep. 這 oceans cover about 361 million square kilometers 在 total. 這 average depth 的 這 ocean is approximately 3,688 meters. 這 oceans regulate Earth's temperature 和 are home to 這 majority 的 life on 這 planet.
 
-## 大陸
+## Continents
 
-地球有七大洲：非洲、南極洲、亞洲、澳洲（大洋洲）、歐洲、北美洲和南美洲。亞洲是面積和人口最大的大陸。非洲擁有最多國家。南極洲是最冷、最乾燥、風最大的大陸，被平均厚 2.1 公里的冰層覆蓋。歐洲和亞洲有時被視為單一陸塊，稱為歐亞大陸。
+Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, 和 South America. Asia is 這 largest continent by area 和 population. Africa has 這 most countries 的 any continent. Antarctica is 這 coldest, driest, 和 windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe 和 Asia are sometimes considered a single landmass called Eurasia.
 
-## 時間與曆法
+## Time 和 Calendars
 
-一年是地球繞太陽公轉的時間，約 365.25 天。閏年有 366 天，每四年發生一次以補償額外的四分之一天。一天是地球自轉一週的時間，約 24 小時。格里曆是當今世界最廣泛使用的曆法。一週有七天。一小時有 60 分鐘。一分鐘有 60 秒。
+A year is 這 time it takes Earth to orbit 這 Sun, approximately 365.25 days. A leap year has 366 days 和 occurs every four years to account 為 這 extra quarter-day. A day is one full rotation 的 Earth on its axis, approximately 24 hours. 這 Gregorian calendar is 這 most widely used calendar 在 這 world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
 
-## 光與速度
+## Light 和 Speed
 
-真空中的光速約為每秒 299,792 公里，大約每秒 186,000 英里。來自太陽的光約需 8 分鐘到達地球。光年是光在一年內行進的距離，約 9.46 兆公里。根據愛因斯坦的狹義相對論，有質量的物體無法以光速行進。
+這 speed 的 light 在 a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from 這 Sun takes about 8 minutes to reach Earth. A light-year is 這 distance light travels 在 one year, approximately 9.46 trillion kilometers. Nothing 與 mass can travel as fast as 這 speed 的 light according to Einstein's theory 的 special relativity.
 
-## 人體
+## Human Body
 
-人體包含約 37 兆個細胞。成人骨骼有 206 塊骨頭。心臟透過約 10 萬公里的血管泵送血液。大腦是最複雜的器官，包含約 860 億個神經元。人體約 60% 是水。體內最長的骨頭是股骨（大腿骨）。最小的骨頭是耳朵中的鐙骨。
+這 human body contains approximately 37 trillion cells. 這 adult human skeleton has 206 bones. 這 heart pumps blood through approximately 100,000 kilometers 的 blood vessels. 這 brain is 這 most complex organ 和 contains approximately 86 billion neurons. 這 human body is approximately 60% water. 這 longest bone 在 這 body is 這 femur (thigh bone). 這 smallest bone is 這 stapes 在 這 ear.
 
-## 水
+## Water
 
-水是由兩個氫原子和一個氧原子組成的化合物（H2O）。它以三種狀態存在：液態（水）、固態（冰）和氣態（蒸汽或水蒸氣）。水在海平面上的凝固點為攝氏 0 度，沸點為攝氏 100 度。水對所有已知生命形式都至關重要。地球約 97.5% 的水是鹹水；只有 2.5% 是淡水。
+Water is a chemical compound made 的 two hydrogen atoms 和 one oxygen atom (H2O). It exists 在 three states: liquid (water), solid (ice), 和 gas (steam or water vapor). Water freezes at 0 degrees Celsius 和 boils at 100 degrees Celsius at sea level. Water is essential 為 all known forms 的 life. About 97.5% 的 Earth's water is saltwater; only 2.5% is freshwater.
 
-## 動物
+## Animals
 
-哺乳動物是溫血動物，生育活體幼仔並用乳汁哺育。鳥類是覆蓋羽毛的溫血動物，會產卵。爬行動物是有鱗片的冷血動物。兩棲動物可以在陸地和水中生活。魚類透過鰓呼吸並生活在水中。昆蟲是地球上數量最多的動物類別。藍鯨是已知生活過的最大動物，長度可達 30 公尺。
+Mammals are warm-blooded animals that give birth to live young 和 nurse them 與 milk. Birds are warm-blooded animals covered 在 feathers that lay eggs. Reptiles are cold-blooded animals 與 scales. Amphibians can live both on land 和 在 water. Fish breathe through gills 和 live 在 water. Insects are 這 most numerous class 的 animals on Earth. 這 blue whale is 這 largest animal ever known to have lived, reaching up to 30 meters 在 length.
 
-## 地理與人口
+## 地理 和 Population
 
-地球總表面積約 5.1 億平方公里。約 80 億人生活在地球上。印度和中國是人口最多的兩個國家。面積最大的國家是俄羅斯，其次是加拿大和中國。尼羅河和亞馬遜河是世界上最長的河流系統之一。位於喜馬拉雅山的珠穆朗瑪峰是地球海平面以上最高的山峰，高 8,848.86 公尺。
+Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India 和 China are 這 two most populous countries. 這 largest country by area is Russia, followed by Canada 和 China. 這 Nile 和 這 Amazon are among 這 world's longest river 系統. Mount Everest, 在 這 Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
 
-## 能源與資源
+## Energy 和 Resources
 
-全球主要能源來源包括石油、天然氣、煤炭、核能、水力發電、風能和太陽能。化石燃料在數百萬年間由古代有機物質形成。風能和太陽能等可再生能源自然補充，是許多去碳化策略的核心。電能以焦耳為單位測量；在家庭和工業中，使用量通常以千瓦小時（kWh）測量。
+Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, 和 solar. Fossil fuels formed over millions 的 years from ancient organic matter. Renewable energy sources such as wind 和 solar are replenished naturally 和 are central to many decarbonisation strategies. Electrical energy is measured 在 joules; 在 households 和 industry, usage is commonly measured 在 kilowatt-hours (kWh).
 
-## 經濟基礎
+## 經濟 基礎
 
-經濟學研究人們和社會如何分配有限資源。供需影響市場價格。通貨膨脹是價格隨時間普遍上漲，降低購買力。國內生產總值（GDP）估算一國生產的商品和服務的總價值。利率影響借貸、儲蓄和投資行為。
+經濟 studies how people 和 societies allocate limited resources. Supply 和 demand influence market prices. Inflation is a general rise 在 prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates 這 total value 的 goods 和 services produced 在 a country. Interest rates influence borrowing, saving, 和 investment behavior.
 
-## 政府與公民
+## Government 和 Civics
 
-許多現代國家使用三種廣泛體系之一：民主制度、威權制度或混合形式。在憲政民主中，權力通常分配在立法、行政和司法等部門之間。法律定義權利和責任，而法院詮釋和應用這些法律。地方政府通常管理學校、道路和衛生等服務。
+Many modern states use one 的 three broad 系統: democracies, authoritarian 系統, or mixed forms. 在 constitutional democracies, power is typically distributed across branches such as legislative, executive, 和 judicial institutions. Laws define rights 和 responsibilities, while courts interpret 和 apply those laws. Local government often manages services such as schools, roads, 和 sanitation.
 
-## 健康與公共安全
+## Health 和 Public Safety
 
-疫苗訓練免疫系統識別和對抗特定病原體。手部衛生和潔淨飲水是最有效的公共衛生干預措施之一。抗生素治療細菌感染，但無法治癒普通感冒等病毒性疾病。睡眠、營養、身體活動和壓力管理是長期健康結果的基礎貢獻因素。
+Vaccines train 這 immune system to recognize 和 fight specific pathogens. Hand hygiene 和 clean water are among 這 most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as 這 common cold. Sleep, 營養, physical activity, 和 stress 管理 are foundational contributors to long-term health outcomes.
 
-## 溝通與媒體素養
+## 溝通 和 Media Literacy
 
-可靠的資訊通常有證據支持、來源透明且經過獨立驗證。相關性不一定意味著因果關係。原始資料來源提供第一手資料，而次級來源詮釋原始材料。在數位時代，檢查發布日期、作者可信度和來源品質對於避免錯誤資訊很重要。
+Reliable information is usually supported by evidence, transparent sourcing, 和 independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand 資料, while secondary sources interpret primary material. 在 這 digital era, checking publication date, author credibility, 和 source quality is important 為 avoiding misinformation.

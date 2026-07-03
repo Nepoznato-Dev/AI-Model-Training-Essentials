@@ -1,868 +1,875 @@
-# Английский словарь — определения распространённых слов
+<!-- 
+This file was automatically translated from English to Russian.
+Source: dictionary.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Справочный список часто употребляемых английских слов и их значений,
-охватывающий повседневную лексику, академические термины и слова,
-часто встречающиеся в вопросах и обсуждениях.
+# Английский Словарь — Common Word Definitions
+
+A Справочник list из frequently used Английский words и their meanings,
+covering everyday vocabulary, academic terms, и words commonly encountered
+в questions и discussions.
 
 ---
 
 ## A
 
-**abandon** — оставить навсегда; отказаться от цели или места.
-**ability** — способность или умение что-либо делать.
-**abstract** — существующий как понятие, а не как конкретный предмет; краткое изложение документа.
-**accurate** — точный и правильный; без ошибок.
-**achieve** — успешно достичь цели благодаря усилиям.
-**acknowledge** — признать или принять истинность чего-либо; выразить признание.
-**acquire** — получить или приобрести что-либо, обычно благодаря усилиям или покупке.
-**adapt** — приспособиться к новым условиям или требованиям.
-**adequate** — достаточный; удовлетворяющий цели.
-**adjacent** — расположенный рядом; смежный.
-**adjust** — внести небольшие изменения для улучшения соответствия или работы.
-**advance** — двигаться вперёд; продвигаться; также: опережать текущее время.
-**advantage** — условие, дающее выгодное положение по сравнению с другими.
-**adverse** — неблагоприятный; вредный.
-**affect** — влиять на что-либо (глагол); эмоция (существительное, форм.).
-**aggregate** — целое, образованное объединением нескольких элементов.
-**algorithm** — набор правил или шагов для решения задачи.
-**allocate** — выделять ресурсы для определённой цели.
-**alter** — изменять что-либо, обычно частично.
-**ambiguous** — неоднозначный; допускающий более одного толкования.
-**analyse** — подробно изучать, чтобы понять или объяснить.
-**annotate** — снабжать текст или схему пояснительными примечаниями.
-**anticipate** — ожидать или заранее готовиться к чему-либо.
-**apparent** — очевидный или понятный; кажущийся истинным.
-**approach** — способ подойти к чему-либо; приближаться.
-**approximate** — приблизительный; не точный.
-**assess** — оценивать качество, ценность или характер чего-либо.
-**assign** — поручать задачу или роль; назначать; распределять.
-**assume** — принимать что-либо за истину без доказательств.
-**attribute** — свойство или характеристика; приписывать что-либо причине (глагол).
-**automate** — сделать процесс автоматическим, без участия человека.
+**abandon** — to leave behind permanently; to give up on a goal or place.
+**ability** — the power or skill to do something.
+**abstract** — existing as a concept rather than a concrete thing; a summary из a document.
+**accurate** — correct и precise; free from errors.
+**achieve** — to successfully reach a goal through effort.
+**acknowledge** — to accept or admit the truth из something; to show recognition.
+**acquire** — to obtain or gain something, usually through effort or purchase.
+**adapt** — to adjust to new conditions or requirements.
+**adequate** — satisfactory; just enough для a purpose.
+**adjacent** — next to or adjoining something else.
+**adjust** — to make small changes to improve fit or function.
+**advance** — to move forward; progress; also, ahead из the current time.
+**advantage** — a condition that gives a favourable position over others.
+**adverse** — unfavourable; harmful.
+**affect** — to have an impact on something (verb); emotion (noun, formal).
+**aggregate** — a whole formed by combining several elements.
+**algorithm** — a set из rules or steps для solving a problem or task.
+**allocate** — to assign resources для a particular purpose.
+**alter** — to change something, usually partially.
+**ambiguous** — unclear; can be interpreted в more than one way.
+**analyse** — to examine в detail to understand or explain.
+**annotate** — to add explanatory notes to a text or diagram.
+**anticipate** — to expect or prepare для something before it happens.
+**apparent** — clearly visible or understood; seeming to be true.
+**approach** — a way из dealing с something; to come near.
+**approximate** — nearly correct; not exact.
+**assess** — to evaluate or judge the quality, value, or Природа из something.
+**assign** — to give a task or role to someone; to allocate.
+**assume** — to accept something as true without proof.
+**attribute** — a quality or feature; to credit something to a cause (verb).
+**automate** — to make a process operate automatically without human intervention.
 
 ## B
 
-**benefit** — преимущество или положительный результат.
-**bias** — несправедливое предпочтение или предвзятость; систематическая ошибка.
-**brief** — краткий по времени или объёму; сводка или инструкции.
+**benefit** — an advantage or positive outcome.
+**bias** — an unfair preference для or against something; systematic error.
+**brief** — short в time or length; a summary or instructions.
 
 ## C
 
-**calculate** — вычислять значение с помощью математики.
-**capable** — обладающий нужными способностями или качествами.
-**capacity** — максимальный объём, который что-либо может вместить или выполнить.
-**categorise** — относить к группам на основе общих признаков.
-**clarify** — делать что-либо более понятным.
-**classify** — распределять по категориям или группам.
-**coherent** — логичный и последовательный; легко понимаемый.
-**collaborate** — работать вместе с другими ради общей цели.
-**compile** — собирать и упорядочивать информацию; преобразовывать исходный код в исполняемый.
-**complex** — состоящий из многих взаимосвязанных частей; сложный.
-**component** — часть или элемент большего целого.
-**comprehend** — полностью понимать.
-**compute** — вычислять или обрабатывать данные.
-**concept** — абстрактная идея или общее представление.
-**conclude** — прийти к выводу или завершить что-либо.
-**condition** — условие; состояние; обстоятельства.
-**configure** — настраивать систему определённым образом.
-**confirm** — подтверждать истинность или точность чего-либо.
-**conflict** — серьёзное разногласие; столкновение противоположных сил.
-**consistent** — ведущий себя одинаково; последовательный; непротиворечивый.
-**context** — обстоятельства, окружающие что-либо; фоновая информация.
-**contrast** — сопоставлять, чтобы показать различия.
-**convert** — преобразовывать из одной формы, единицы или назначения в другое.
-**coordinate** — согласовывать разные элементы для совместной работы.
-**criteria** — критерии, по которым что-либо оценивается (мн. ч. от criterion).
+**calculate** — to determine a value using mathematics.
+**capable** — having the ability or qualities needed для something.
+**capacity** — the maximum amount something can hold or do.
+**categorise** — to place into groups based on shared characteristics.
+**clarify** — to make something easier to understand.
+**classify** — to arrange into categories or groups.
+**coherent** — logical и consistent; easy to understand.
+**collaborate** — to work together с others towards a common goal.
+**compile** — to gather и organise information; to convert source code into executable code.
+**complex** — consisting из many interconnected parts; not simple.
+**component** — a part or element из a larger whole.
+**comprehend** — to understand fully.
+**compute** — to calculate or process Данные.
+**concept** — an abstract idea or general notion.
+**conclude** — to reach a decision or finish something.
+**condition** — a requirement; a state из being; circumstances.
+**configure** — to arrange or set up a system в a particular way.
+**confirm** — to establish the truth or accuracy из something.
+**conflict** — a serious disagreement; a clash between opposing forces.
+**consistent** — always behaving в the same way; not contradictory.
+**context** — the circumstances surrounding something; background information.
+**contrast** — to compare в order to show differences.
+**convert** — to change from one form, unit, or use to another.
+**coordinate** — to organise different elements to work together.
+**criteria** — standards by which something is judged (plural из criterion).
 
 ## D
 
-**data** — факты и статистические сведения, собранные для анализа.
-**debug** — находить и исправлять ошибки в компьютерном коде.
-**define** — давать значение слова или описывать границы чего-либо.
-**demonstrate** — показывать, как что-либо работает или делается.
-**deploy** — вводить в использование; устанавливать и запускать ПО в рабочей среде.
-**derive** — получать что-либо из источника; приходить к выводу путём рассуждения.
-**determine** — выяснять или окончательно устанавливать что-либо.
-**develop** — создавать, развивать или усложнять что-либо со временем.
-**differ** — отличаться; не соглашаться.
-**distinct** — чётко отличный и отдельный.
-**distribute** — распределять или распространять по нескольким местам или людям.
-**domain** — область знаний или деятельности; веб-адрес.
-**duplicate** — точная копия; копировать что-либо.
+**Данные** — facts и Статистика collected для analysis.
+**debug** — to find и fix errors в computer code.
+**define** — to give the meaning из a word or describe the limits из something.
+**demonstrate** — to show how something works or is done.
+**deploy** — to put into use; to install и run software в a live environment.
+**derive** — to obtain something from a source; to reach a conclusion by reasoning.
+**determine** — to find out or establish something conclusively.
+**develop** — to build, grow, or make something more elaborate over time.
+**differ** — to be unlike; to disagree.
+**distinct** — clearly different и separate.
+**distribute** — to spread or share across multiple locations or people.
+**domain** — a field из knowledge or activity; a Веб address.
+**duplicate** — an exact copy; to copy something.
 
 ## E
 
-**efficient** — достигающий результата с минимальными затратами времени или ресурсов.
-**element** — базовый компонент; один из химических элементов таблицы Менделеева.
-**embed** — прочно встроить; включить в более крупную структуру.
-**enable** — делать возможным; включать функцию.
-**enhance** — улучшать качество или ценность чего-либо.
-**entity** — нечто, существующее отдельно; объект в системе.
-**enumerate** — перечислять по одному; подсчитывать.
-**environment** — окружение; в вычислениях — система и конфигурация, в которых работает ПО.
-**error** — ошибка; отклонение от правильного поведения.
-**estimate** — приблизительная оценка; оценивать примерно.
-**evaluate** — формировать мнение после тщательного рассмотрения.
-**execute** — выполнять план или инструкцию; запускать компьютерную программу.
-**explicit** — выраженный ясно и без недомолвок.
-**extend** — делать длиннее или больше; добавлять функциональность.
-**extract** — извлекать или получать из источника.
+**efficient** — achieving results с minimum waste из time or resources.
+**element** — a basic component; one из the chemical substances в the periodic table.
+**embed** — to fix firmly within; to incorporate into a larger structure.
+**enable** — to make possible; to activate a feature.
+**enhance** — to improve the quality or value из something.
+**entity** — a thing с distinct existence; an object в a system.
+**enumerate** — to list items one by one; to count.
+**environment** — surroundings; в Вычисления, the system и configuration в which software runs.
+**error** — a mistake; a deviation from correct behaviour.
+**estimate** — an approximate calculation; to judge roughly.
+**evaluate** — to form an opinion after careful consideration.
+**execute** — to carry out a plan or instruction; to run a computer program.
+**explicit** — clearly stated и leaving nothing implied.
+**extend** — to make longer or larger; to add functionality.
+**extract** — to take out or obtain from a source.
 
 ## F
 
-**factor** — фактор, влияющий на результат; раскладывать на множители (мат.).
-**feature** — отличительная черта или возможность.
-**filter** — удалять нежелательные элементы; устройство или функция для отбора.
-**flexible** — способный адаптироваться к разным условиям.
-**format** — формат или расположение данных; подготавливать к использованию.
-**framework** — базовая структура, служащая опорой для создания чего-либо.
-**function** — назначение чего-либо; многократно используемый блок кода (программирование).
-**fundamental** — лежащий в основе; существенный.
+**factor** — an element that contributes to a result; to break into components (math).
+**feature** — a distinctive aspect or capability.
+**filter** — to remove unwanted elements; a device or function that selects items.
+**flexible** — able to adapt to different conditions.
+**format** — the arrangement or layout из Данные; to prepare для use.
+**framework** — a basic structure providing Поддержка для building something.
+**function** — the purpose из something; a reusable block из code (programming).
+**fundamental** — forming the base or foundation; essential.
 
 ## G
 
-**generate** — производить или создавать.
-**global** — относящийся ко всему миру; применимый ко всей системе.
-**guideline** — общее правило или рекомендация.
+**generate** — to produce or create.
+**global** — relating to the whole world; applying to an entire system.
+**guideline** — a general rule or recommendation.
 
 ## H
 
-**hierarchy** — система, упорядоченная по уровням власти или важности.
-**hypothesis** — предполагаемое объяснение, которое можно проверить.
+**hierarchy** — a system ranked by levels из authority or importance.
+**hypothesis** — a proposed explanation that can be tested.
 
 ## I
 
-**identify** — распознавать и называть что-либо.
-**implement** — воплощать план или систему на практике.
-**implicit** — подразумеваемый, но не выраженный прямо.
-**index** — указатель на местоположение данных; алфавитный список (сущ.); индексировать (глагол).
-**infer** — делать вывод на основе доказательств без прямого утверждения.
-**initialise** — устанавливать переменную или систему в начальное состояние.
-**input** — данные, подаваемые в систему; вводить данные.
-**integrate** — объединять части в целое; добавлять функцию в существующую систему.
-**interface** — точка, где встречаются и взаимодействуют две системы; контракт в программировании.
-**interpret** — объяснять смысл чего-либо; выполнять код построчно.
-**iterate** — повторять процесс, часто с постепенными изменениями.
+**identify** — to recognise и name something.
+**implement** — to put a plan or system into effect.
+**implicit** — implied without being directly stated.
+**index** — a pointer to Данные location; an alphabetical list (noun); to categorise (verb).
+**infer** — to reach a conclusion from evidence without explicit statement.
+**initialise** — to set a variable or system to a starting state.
+**input** — Данные provided to a system; to enter Данные.
+**integrate** — to combine parts into a whole; to add a feature to an existing system.
+**interface** — a point where two Системы meet и interact; a contract в programming.
+**interpret** — to explain the meaning из something; to execute code line by line.
+**iterate** — to repeat a process, often с incremental changes.
 
 ## J
 
-**justify** — обосновывать решение; выравнивать текст по полю.
+**justify** — to give reasons для a decision; to align text along a margin.
 
 ## K
 
-**key** — ключевой; значение для поиска данных; криптографический секрет.
+**key** — essential; a value used to look up Данные; a cryptographic secret.
 
 ## L
 
-**layer** — уровень в иерархии; компонент, расположенный поверх других.
-**legacy** — унаследованный из прошлого; старое ПО, всё ещё используемое.
-**limit** — предел; максимально или минимально допустимое значение.
-**linear** — расположенный по прямой; увеличивающийся пропорционально.
-**link** — связь между двумя вещами; гиперссылка.
-**local** — относящийся к ближайшей области; в вычислениях — работающий на той же машине.
-**logic** — рассуждение по правилам; поток управления в программе.
+**layer** — a level в a hierarchy; a component stacked on others.
+**legacy** — inherited from the past; old software still в use.
+**limit** — a boundary; the maximum or minimum value allowed.
+**linear** — arranged в a straight line; proportional increase.
+**link** — a connection between two things; a hyperlink.
+**local** — relating to a nearby area; в Вычисления, running on the same machine.
+**logic** — reasoning according to rules; the flow из control в a program.
 
 ## M
 
-**maintain** — поддерживать в хорошем состоянии; сохранять во времени.
-**manipulate** — управлять или обращаться, иногда умело; нечестно влиять.
-**map** — сопоставлять ключи со значениями (структура данных); отображать пространственные связи.
-**merge** — объединять в одно; сливать ветки кода.
-**method** — способ делать что-либо; функция, привязанная к объекту (OOP).
-**migrate** — переносить данные или системы из одной среды в другую.
-**model** — представление чего-либо; обученная AI-система.
-**modify** — частично изменять.
-**monitor** — наблюдать и проверять со временем; экран.
+**maintain** — to keep в good condition; to continue over time.
+**manipulate** — to handle or control, sometimes с skill; to influence unfairly.
+**map** — to associate keys с values (Данные structure); to show spatial relationships.
+**merge** — to combine into one; to join code branches.
+**method** — a way из doing something; a function attached to an object (OOP).
+**migrate** — to move Данные or Системы from one environment to another.
+**model** — a representation из something; a trained AI system.
+**modify** — to change partially.
+**monitor** — to observe и check over time; a display screen.
 
 ## N
 
-**navigate** — находить путь; перемещаться между страницами или экранами.
-**node** — узел в сети или древовидной структуре.
-**normalise** — приводить значения к стандартному диапазону; уменьшать избыточность в базе данных.
+**navigate** — to find a path through; to move between pages or screens.
+**node** — a point в a Сеть or tree structure.
+**normalise** — to scale values to a standard range; to reduce redundancy в a База данных.
 
 ## O
 
-**objective** — цель; не зависящий от личных чувств (прилагательное).
-**obtain** — получать или приобретать.
-**optimise** — делать максимально эффективным.
-**output** — данные, производимые системой; результат вычисления.
-**override** — брать верх над существующей настройкой или методом.
+**objective** — a goal or aim; not influenced by personal feelings (adjective).
+**obtain** — to get or acquire.
+**optimise** — to make as effective or efficient as possible.
+**output** — Данные produced by a system; the result из a computation.
+**override** — to take control over an existing setting or method.
 
 ## P
 
-**parameter** — значение, передаваемое функции; измеримая характеристика.
-**parse** — разбирать текст на составляющие; интерпретировать структурированные данные.
-**pattern** — повторяющаяся схема; шаблон для решения типовой задачи.
-**persist** — продолжать существовать; сохранять данные так, чтобы они переживали перезапуск.
-**pipeline** — серия связанных этапов, где выход одного служит входом для следующего.
-**precise** — точный; детальный.
-**predict** — предсказывать, что произойдёт.
-**prioritise** — расставлять задачи по важности и сначала решать самые важные.
-**process** — последовательность шагов; запущенный экземпляр программы (глагол: обрабатывать или преобразовывать).
-**prompt** — подсказка или инструкция, данная AI-модели или пользователю.
-**property** — свойство или характеристика; значение, принадлежащее объекту.
-**protocol** — набор правил для связи между системами.
+**parameter** — a value passed to a function; a measurable characteristic.
+**parse** — to analyse text into components; to interpret structured Данные.
+**pattern** — a repeated arrangement; a template для solving a common problem.
+**persist** — to continue to exist; to save Данные so it survives restarts.
+**pipeline** — a series из connected stages where the output из one feeds the next.
+**precise** — exact; accurate to fine detail.
+**predict** — to say what will happen before it does.
+**prioritise** — to rank tasks by importance и address the most important first.
+**process** — a series из steps; a running program instance (verb: to handle or transform).
+**prompt** — a cue or instruction given to an AI model or user.
+**property** — a characteristic or attribute; a value belonging to an object.
+**protocol** — a set из rules для Коммуникация between Системы.
 
 ## Q
 
-**query** — запрос информации к базе данных; вопрос.
-**queue** — очередь элементов, ожидающих обработки (первым пришёл — первым вышел).
+**query** — a request для information from a База данных; a question.
+**queue** — a line из items waiting to be processed (first в, first out).
 
 ## R
 
-**recursive** — функция или процесс, который вызывает или ссылается на самого себя.
-**redundant** — избыточный из-за дублирования существующей функции; запасной.
-**refactor** — перестраивать существующий код без изменения его внешнего поведения.
-**reference** — ссылка на значение; источник, цитируемый для информации.
-**relevant** — тесно связанный с рассматриваемой темой.
-**render** — формировать вывод (графику, текст или HTML).
-**represent** — представлять или описывать что-либо.
-**requirement** — необходимое условие или функция.
-**resolve** — находить решение; определять значение (например, DNS-имя).
-**retrieve** — извлекать сохранённую информацию.
-**robust** — прочный и надёжный, особенно под нагрузкой.
+**recursive** — a function or process that calls or refers to itself.
+**redundant** — unnecessary because it duplicates existing functionality; extra для backup.
+**refactor** — to restructure existing code without changing its external behaviour.
+**Справочник** — a pointer to a value; a source cited для information.
+**relevant** — closely connected to the topic at hand.
+**render** — to produce output (graphics, text, or HTML).
+**represent** — to stand для or describe something.
+**requirement** — a necessary condition or feature.
+**resolve** — to find a solution; to determine a value (e.g. a DNS name).
+**retrieve** — to get back stored information.
+**robust** — strong и reliable, especially under stress.
 
 ## S
 
-**scalable** — способный выдерживать рост нагрузки без ухудшения производительности.
-**schema** — структура или схема базы данных либо формата данных.
-**scope** — область действия; участок кода, где видна переменная.
-**segment** — отдельный раздел или часть.
-**semantic** — относящийся к смыслу, особенно в языке или коде.
-**sequence** — набор вещей в определённом порядке.
-**session** — период активности; соединение между клиентом и сервером.
-**simulate** — имитировать поведение системы.
-**source** — источник чего-либо; исходный код до компиляции.
-**specify** — указывать ясно и подробно.
-**static** — неизменный; в вычислениях — фиксированный во время компиляции или не связанный с экземплярами.
-**store** — сохранять данные для дальнейшего использования.
-**structure** — расположение частей; составной тип данных.
-**summarise** — кратко излагать основные пункты.
-**synchronise** — заставлять происходить одновременно или с одинаковой скоростью.
-**syntax** — правила, определяющие структуру выражений в языке.
+**scalable** — able to handle increased workload without degrading Производительность.
+**schema** — the structure or layout из a База данных or Данные format.
+**scope** — the range из effect; the section из code where a variable is visible.
+**segment** — a distinct section or part.
+**semantic** — relating to meaning, especially в Язык or code.
+**sequence** — a set из things в a particular order.
+**session** — a period из activity; a connection between client и server.
+**simulate** — to imitate the behaviour из a system.
+**source** — the origin из something; original code before compilation.
+**specify** — to state clearly и в detail.
+**static** — not changing; в Вычисления, fixed at compile time or not associated с instances.
+**store** — to save Данные для later use.
+**structure** — the arrangement из parts; a composite Данные type.
+**summarise** — to give a brief statement из the main points.
+**synchronise** — to cause to happen at the same time or rate.
+**Синтаксис** — the rules governing the structure из statements в a Язык.
 
 ## T
 
-**template** — модель или образец, используемый как отправная точка.
-**threshold** — уровень или точка, при достижении которой срабатывает действие.
-**token** — единица текста в NLP; учётные данные для аутентификации.
-**trace** — прослеживать путь; запись выполнения программы для отладки.
-**transform** — изменять форму, природу или внешний вид.
-**transmit** — передавать данные из одного места в другое.
+**template** — a model or pattern used as a starting point.
+**threshold** — a level or point that triggers an action when reached.
+**token** — a unit из text в NLP; an authentication credential.
+**trace** — to follow a path; a record из program execution для debugging.
+**transform** — to change в form, Природа, or appearance.
+**transmit** — to send Данные from one place to another.
 
 ## U
 
-**uniform** — единообразный; неизменный на всём протяжении.
-**unique** — единственный в своём роде; встречающийся лишь однажды.
-**update** — переводить в более актуальное состояние.
-**utilise** — использовать.
+**uniform** — consistent и unchanged throughout.
+**unique** — the only one из its kind; occurring just once.
+**update** — to bring to a more current state.
+**utilise** — to make use из something.
 
 ## V
 
-**validate** — подтверждать, что что-либо соответствует требованиям или является правильным.
-**variable** — именованное хранилище для значения, которое может меняться.
-**verify** — проверять правильность или истинность.
-**version** — конкретная форма продукта на определённом этапе его развития.
+**validate** — to confirm something meets requirements or is correct.
+**variable** — a named container для a value that can change.
+**verify** — to check correctness or truth.
+**version** — a specific form из a product at a particular point в its Разработка.
 
 ## W
 
-**workflow** — последовательность шагов для выполнения задачи.
-**warrant** — основание для действия; юридический документ, дающий разрешение.
+**workflow** — a series из steps followed to Полный a task.
+**warrant** — justification для an action; a Юридический document authorizing something.
 
 ## X
 
-**xenophobia** — страх или ненависть к иностранцам или незнакомцам.
+**xenophobia** — fear or hatred из foreigners or strangers.
 
 ## Y
 
-**yield** — производить или предоставлять; уступать; количество произведённого.
+**yield** — to produce or provide; to give way; the amount produced.
 
 ## Z
 
-**zero-sum** — ситуация, где выигрыш одного равен потере другого.
-**zone** — область с определёнными характеристиками или границами.
+**zero-sum** — a situation where one person's gain equals another's loss.
+**zone** — an area с distinct characteristics or boundaries.
 
 ---
 
-## Дополнительные технические термины
+## Additional Technical Terms
 
-**abstraction** — сокрытие сложных деталей реализации при показе только существенных свойств.
-**acronym** — слово, образованное из начальных букв фразы (например, NASA, ASCII).
-**adjective** — слово, описывающее существительное или местоимение.
-**adverb** — слово, определяющее глагол, прилагательное или другое наречие, часто оканчивающееся на -ly.
-**affix** — морфема, добавляемая к корню слова (prefix в начале, suffix в конце).
-**agile** — методология разработки ПО, подчёркивающая итеративный прогресс и гибкость.
-**analogy** — сравнение двух вещей для объяснения или прояснения.
-**antonym** — слово с противоположным значением.
-**aphorism** — краткое изречение, выражающее общую истину или принцип.
-**apocryphal** — сомнительной подлинности; широко распространяемый, но, вероятно, ложный.
-**archetype** — исходная модель или типичный пример чего-либо.
-**artifact** — объект, созданный человеком; в вычислениях — непреднамеренный побочный результат обработки.
-**assertion** — уверенное утверждение; в программировании — проверка истинности условия.
-**asynchronous** — происходящий не одновременно; позволяющий операциям идти без ожидания.
-**attenuate** — ослаблять по силе, значению или интенсивности.
-**axiom** — утверждение, принимаемое как истинное без доказательств; фундаментальный принцип.
+**abstraction** — hiding complex implementation details while showing only essential features.
+**acronym** — a word formed from initial letters из a phrase (e.g., NASA, ASCII).
+**adjective** — a word describing a noun or pronoun.
+**adverb** — a word modifying a verb, adjective, or other adverb, often ending в -ly.
+**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
+**agile** — a software Разработка methodology emphasizing iterative progress и flexibility.
+**analogy** — a comparison between two things to explain or clarify.
+**antonym** — a word opposite в meaning to another word.
+**aphorism** — a concise statement expressing a general truth or principle.
+**apocryphal** — из doubtful authenticity; widely circulated but likely false.
+**archetype** — an original model or typical example из something.
+**artifact** — an object made by humans; в Вычисления, an unintended byproduct из processing.
+**assertion** — a confident statement; в programming, a check that a condition is true.
+**asynchronous** — not occurring at the same time; allowing operations to proceed without waiting.
+**attenuate** — to reduce в force, value, or intensity.
+**axiom** — a statement accepted as true without proof; a fundamental principle.
 
-**backpropagation** — алгоритм обучения нейронных сетей путём обратного распространения ошибок.
-**bandwidth** — диапазон доступных частот; пропускная способность передачи данных.
-**binary** — состоящий из двух частей; двоичная система счисления с 0 и 1.
-**bit** — наименьшая единица данных (0 или 1); сокращение от binary digit.
-**blockchain** — технология распределённого реестра, записывающая транзакции на нескольких компьютерах.
-**boolean** — относящийся к логике со значениями true или false; назван в честь George Boole.
-**bottleneck** — узкое место, замедляющее процесс или систему.
-**byte** — единица цифровой информации, обычно состоящая из 8 bits.
+**backpropagation** — an algorithm для training Нейронные сети by propagating errors backward.
+**bandwidth** — the range из frequencies Доступно; Данные transfer capacity.
+**binary** — consisting из two parts; base-2 number system using 0s и 1s.
+**bit** — the smallest unit из Данные (0 or 1); short для binary digit.
+**blockchain** — a distributed ledger Технология recording transactions across multiple computers.
+**boolean** — relating to logic с values true or false; named after George Boole.
+**bottleneck** — a point из congestion slowing down a process or system.
+**byte** — a unit из digital information typically consisting из 8 bits.
 
-**cache** — аппаратный или программный компонент, хранящий данные для более быстрого последующего доступа.
-**calibrate** — точно настраивать для корректного измерения или работы.
-**cascade** — серия этапов, где каждый запускает следующий; каскадный эффект.
-**catalyst** — вещество, ускоряющее химическую реакцию; всё, что вызывает изменения.
-**causality** — связь между причиной и следствием.
-**centroid** — геометрический центр фигуры; среднее положение точек.
-**checksum** — значение, вычисляемое по данным для обнаружения ошибок или подмены.
-**cipher** — алгоритм шифрования или дешифрования; шифр.
-**coalesce** — объединяться в одно целое.
-**cognitive** — относящийся к умственным процессам восприятия, памяти, суждения и мышления.
-**cohort** — группа с общей характеристикой или опытом в пределах определённого периода.
-**collateral** — активы, заложенные в обеспечение займа; сопутствующий или вторичный.
-**colloquial** — разговорный, используемый в повседневной речи.
-**combinatorics** — раздел математики, изучающий сочетания и перестановки.
-**commutative** — свойство, при котором порядок не важен (a+b = b+a).
-**concurrency** — выполнение нескольких вычислений в пересекающиеся периоды времени.
-**conjecture** — вывод на неполной информации; математическая гипотеза.
-**conjunction** — слово, соединяющее части предложения (and, but, or); логический оператор AND.
-**consensus** — общее согласие внутри группы.
-**constraint** — ограничение или условие возможного.
-**corollary** — утверждение, следующее из уже доказанного.
-**correlation** — взаимосвязь между двумя переменными; не означает причинности.
-**cryptocurrency** — цифровая валюта, защищённая криптографией, часто децентрализованная.
-**crystalize** — кристаллизоваться; делать ясным и определённым.
+**cache** — a hardware or software component storing Данные для faster Будущее access.
+**calibrate** — to adjust precisely для accurate measurement or Производительность.
+**cascade** — a series из stages where each triggers the next; waterfall effect.
+**catalyst** — a substance speeding up a chemical reaction; anything causing change.
+**causality** — the relationship between cause и effect.
+**centroid** — the geometric center из a shape; average position из points.
+**checksum** — a value computed from Данные to detect errors or tampering.
+**cipher** — an algorithm для encryption or decryption; a secret code.
+**coalesce** — to come together to form one whole.
+**cognitive** — relating to mental processes из perception, memory, judgment, и reasoning.
+**cohort** — a group sharing a common characteristic or experience within a defined period.
+**collateral** — assets pledged as Безопасность для a loan; secondary or accompanying.
+**colloquial** — informal Язык used в ordinary conversation.
+**combinatorics** — the branch из mathematics dealing с combinations и permutations.
+**commutative** — a property where order doesn't matter (a+b = b+a).
+**concurrency** — multiple computations happening during overlapping periods.
+**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
+**conjunction** — a word connecting clauses or sentences (и, but, or); logical и operator.
+**consensus** — general agreement among a group.
+**constraint** — a limitation or restriction on what is possible.
+**corollary** — a proposition following from one already proved.
+**correlation** — a mutual relationship between two variables; does not imply causation.
+**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
+**crystalize** — to form into crystals; to make clear or definite.
 
-**daisy-chain** — соединять устройства или задачи в последовательную цепочку.
-**deconvolution** — обратная свёртка; разделение смешанных сигналов или изображений.
-**deduction** — рассуждение от общего к частному.
-**defenestration** — выбрасывание кого-либо из окна.
-**deictic** — указывающий на что-либо через ссылку (this, that, here, there).
-**demographic** — относящийся к статистическим данным о населении или группах.
-**denotation** — буквальное или основное значение слова.
-**deprecated** — помеченный как устаревший, но ещё работающий; нежелательный к использованию.
-**derivative** — производная, мера скорости изменения (матанализ); происходящий от чего-либо.
-**deterministic** — дающий один и тот же результат при одинаковом входе; предсказуемый.
-**diachronic** — изучающий явления в их изменении во времени.
-**didactic** — поучительный, особенно с нравоучительной целью.
-**diffraction** — огибание волнами препятствий или прохождение через отверстия.
-**digraph** — две буквы, обозначающие один звук (sh, ch, th).
-**disambiguate** — устранять неоднозначность; делать яснее.
-**discrete** — раздельный и отдельный; индивидуальный (в противоположность непрерывному).
-**disjunctive** — представляющий альтернативы; логическая операция OR.
-**divergence** — процесс расхождения или удаления друг от друга.
-**docstring** — документация внутри исходного кода, объясняющая назначение функции.
+**daisy-chain** — to connect devices or tasks в a sequential series.
+**deconvolution** — reversing convolution; separating mixed signals or images.
+**deduction** — reasoning from general principles to specific conclusions.
+**defenestration** — the act из throwing someone out из a window.
+**deictic** — referring to something by pointing (this, that, here, there).
+**demographic** — statistical Данные about populations or groups.
+**denotation** — the literal or primary meaning из a word.
+**deprecated** — marked as obsolete but still functional; discouraged from use.
+**derivative** — a measure из rate из change (calculus); derived from something else.
+**deterministic** — producing the same output given the same input; predictable.
+**diachronic** — studying phenomena as they change over time.
+**didactic** — intended to teach, particularly с moral instruction.
+**diffraction** — the bending из waves around obstacles or through openings.
+**digraph** — two characters representing one sound (sh, ch, th).
+**disambiguate** — to remove ambiguity; make something clearer.
+**discrete** — separate и distinct; individual (opposite из continuous).
+**disjunctive** — presenting alternatives; logical OR operation.
+**divergence** — the process из separating or moving apart.
+**docstring** — documentation embedded в source code explaining function purpose.
 
-**eccentric** — необычный или слегка странный; смещённый от центра.
-**eclectic** — заимствующий из разных источников или стилей.
-**edge case** — крайний или редкий сценарий, требующий особой обработки.
-**elegy** — скорбное стихотворение или плач по умершему.
-**elide** — опускать или проглатывать звуки либо слоги.
-**ellipsis** — пропуск слов; многоточие (...) как знак продолжения или паузы.
-**embargo** — официальный запрет на торговлю или публикацию.
-**empathy** — способность понимать и разделять чувства других.
-**empirical** — основанный на наблюдении или опыте, а не на теории.
-**emulate** — подражать или воспроизводить, особенно в вычислениях (software emulation).
-**endemic** — характерный или ограниченный определённым регионом; постоянно присутствующий.
-**ephemeral** — очень недолговечный; временный.
-**epistemology** — теория познания; изучение природы и границ знания.
-**epoch** — значимый период в истории; в ML — один проход по обучающим данным.
-**equilibrium** — состояние равновесия между противоположными силами.
-**equivocate** — использовать двусмысленный язык, чтобы скрыть правду.
-**ergodic** — обладающий статистическими свойствами, равномерными по всему пространству; случайный, но репрезентативный.
-**esoteric** — предназначенный для узкой специализированной группы или понятный ей.
-**ethnography** — систематическое изучение людей и культур через наблюдение.
-**etymology** — изучение происхождения слов и их исторического развития.
-**euphemism** — мягкое выражение вместо резкого или неприятного.
-**evanescent** — мимолётный; исчезающий, как пар.
-**exacerbate** — ухудшать проблему.
-**excise** — вырезать; акциз на определённые товары.
-**existential** — относящийся к существованию; к человеческой свободе и выбору.
-**exogenous** — происходящий из внешних факторов.
-**expedite** — ускорять наступление чего-либо.
-**exponential** — связанный с возведением в степень; растущий с ускорением.
-**extrapolate** — оценивать за пределами известных данных путём продолжения тенденций.
+**eccentric** — unconventional or slightly strange; off-center.
+**eclectic** — selecting from diverse sources or styles.
+**edge case** — an extreme or rare scenario requiring special handling.
+**elegy** — a mournful poem or lament для the dead.
+**elide** — to omit or slur over sounds or syllables.
+**ellipsis** — omission из words; three dots (...) indicating continuation or pause.
+**embargo** — an official ban on trade or publication.
+**empathy** — the ability to understand и share others' feelings.
+**empirical** — based on observation or experience rather than theory.
+**emulate** — to imitate or match, especially в Вычисления (software emulation).
+**endemic** — native or restricted to a particular region; constantly present.
+**ephemeral** — lasting для a very short time; temporary.
+**epistemology** — the study из knowledge, its Природа и scope.
+**epoch** — a significant period в История; в ML, one pass through training Данные.
+**equilibrium** — a state из balance between opposing forces.
+**equivocate** — to use ambiguous Язык to conceal the truth.
+**ergodic** — having statistical properties uniform throughout; random yet representative.
+**esoteric** — intended для or understood by a small, specialized group.
+**ethnography** — the systematic study из people и cultures through observation.
+**etymology** — the study из word origins и historical Разработка.
+**euphemism** — a mild expression substituting для a harsh or unpleasant one.
+**evanescent** — fleeting; vanishing like vapor.
+**exacerbate** — to make a problem worse.
+**excise** — to cut out; a tax on certain goods.
+**existential** — relating to existence; concerning human freedom и choice.
+**exogenous** — originating from external factors.
+**expedite** — to make happen sooner; accelerate.
+**exponential** — involving exponentiation; growth accelerating over time.
+**extrapolate** — to estimate beyond known Данные by extending trends.
 
-**facade** — фасад здания; обманчивая внешняя видимость.
-**fallacy** — ошибочное убеждение; изъян в рассуждении.
-**falsifiable** — допускающий возможность быть опровергнутым; критерий научного утверждения.
-**feedback loop** — система, в которой выход влияет на вход, усиливая или стабилизируя процесс.
-**ferment** — химическое разложение микроорганизмами; брожение; волнение.
-**finite** — имеющий пределы; не бесконечный.
-**flux** — непрерывное изменение; поток или движение.
-**formalism** — строгое следование правилам или формам; акцент на структуре.
-**fortuitous** — случайный; удачный.
-**fractal** — самоподобный узор, повторяющийся на разных масштабах.
-**frequency** — частота появления; число циклов в секунду (Hertz).
-**full-stack** — связанный и с front-end, и с back-end разработкой.
+**facade** — the front из a building; a deceptive outward appearance.
+**fallacy** — a mistaken belief; flawed reasoning в argument.
+**falsifiable** — capable из being proven false; a criterion для scientific claims.
+**Обратная связь loop** — a system where outputs influence inputs, amplifying or stabilizing.
+**ferment** — chemical breakdown by microorganisms; agitation or unrest.
+**finite** — having limits or bounds; not infinite.
+**flux** — continuous change; flow or movement.
+**formalism** — strict adherence to rules or forms; emphasis on structure.
+**fortuitous** — happening by chance; lucky.
+**fractal** — a self-similar pattern repeating at different scales.
+**frequency** — the rate из occurrence; number из cycles per second (Hertz).
+**full-stack** — involving both front-end и back-end Разработка.
 
-**garrulous** — чрезмерно разговорчивый, особенно о пустяках.
-**gaussian** — относящийся к нормальному распределению; колоколообразная кривая.
-**genealogy** — изучение родословных и происхождения семьи.
-**generic** — общий, а не специфический; без фирменной идентификации.
-**genitive** — грамматический падеж, выражающий принадлежность.
-**gestalt** — организованное целое, воспринимаемое как нечто большее суммы частей.
-**gibberish** — бессвязная или бессмысленная речь либо письмо.
-**granular** — состоящий из мелких частиц; детализированный.
-**graph** — диаграмма отношений; структура данных из узлов и рёбер.
-**gregarious** — общительный; любящий общество.
-**grok** — глубоко и интуитивно понимать (термин из научной фантастики).
+**garrulous** — excessively talkative, especially about trivial matters.
+**gaussian** — relating to normal distribution; bell-shaped curve.
+**genealogy** — the study из family lineages и descent.
+**generic** — general rather than specific; lacking brand identification.
+**genitive** — grammatical case showing possession.
+**gestalt** — an organized whole perceived as more than the sum из its parts.
+**gibberish** — unintelligible or meaningless speech or writing.
+**granular** — composed из small particles; detailed и fine-grained.
+**graph** — a diagram showing relationships; a Данные structure с nodes и edges.
+**gregarious** — sociable; fond из company.
+**grok** — to understand deeply и intuitively (from Наука fiction).
 
-**halcyon** — спокойный и мирный; благополучный и счастливый.
-**haplotype** — набор вариаций DNA, наследуемых вместе.
-**hegemony** — господство или лидерство, особенно одного государства над другими.
-**hermeneutics** — теория и методология интерпретации.
-**heuristic** — практический метод без гарантии оптимальности; эмпирическое правило.
-**hologram** — трёхмерное изображение, созданное интерференцией лазерных лучей.
-**homogeneous** — однородный по составу или характеру.
-**homomorphism** — отображение между алгебраическими структурами, сохраняющее структуру.
-**homophone** — слова, звучащие одинаково, но различающиеся по значению или написанию.
-**homonym** — слова с одинаковым написанием или произношением, но разным значением.
-**hyperbole** — намеренное преувеличение ради эффекта.
-**hyperparameter** — параметр настройки модели machine learning, задаваемый до обучения.
-**hypertext** — текст со ссылками на другие тексты; основа web.
-**hypothesize** — выдвигать объяснение как отправную точку для исследования.
+**halcyon** — calm и peaceful; prosperous и happy.
+**haplotype** — a set из DNA variations inherited together.
+**hegemony** — dominance or leadership, especially из one state over others.
+**hermeneutics** — the theory и methodology из interpretation.
+**heuristic** — a practical method not guaranteed optimal; a rule из thumb.
+**hologram** — a 3D image created by laser interference patterns.
+**homogeneous** — uniform в composition or character.
+**homomorphism** — a structure-preserving map between algebraic structures.
+**homophone** — words sounding alike but differing в meaning or spelling.
+**homonym** — words с same spelling or pronunciation but different meanings.
+**hyperbole** — deliberate exaggeration для effect.
+**hyperparameter** — a configuration setting для Машинное обучение models set before training.
+**hypertext** — text containing links to other texts; foundational to the Веб.
+**hypothesize** — to propose an explanation as a starting point для investigation.
 
-**iconoclast** — человек, оспаривающий почитаемые убеждения или институты.
-**idiom** — выражение, смысл которого нельзя вывести из значений отдельных слов.
-**idiosyncratic** — свойственный конкретному человеку; своеобразный.
-**idempotent** — дающий один и тот же результат независимо от числа повторений.
-**igneous** — магматический; образованный из остывшей магмы или лавы.
-**immutable** — неизменяемый со временем; не поддающийся модификации.
-**impedance** — сопротивление переменному току; в переносном смысле — сопротивление потоку.
-**imperative** — крайне важный; приказ; парадигма программирования, основанная на инструкциях.
-**implicit** — подразумеваемый, хотя прямо не высказанный.
-**imponderable** — не поддающийся оценке или измерению.
-**impromptu** — сделанный без подготовки; спонтанный.
-**inchoate** — только начавшийся; ещё не до конца оформленный.
-**inductive** — выводящий общее заключение из частных наблюдений.
-**ineffable** — настолько великий или крайний, что не поддаётся выражению словами.
-**inference** — вывод на основе фактов; в AI — получение результатов от моделей.
-**inflection** — изменение высоты или интонации; изменение формы слова по грамматическим категориям.
-**innate** — врождённый; естественный, а не приобретённый.
-**inoculate** — вакцинировать; постепенно внедрять идею или установку.
-**insidious** — развивающийся незаметно, но вредно.
-**instantiation** — создание конкретного экземпляра класса или понятия.
-**intentionality** — направленность на что-либо; свойство сознания быть о чём-то.
-**interoperability** — способность систем бесшовно работать вместе.
-**interpolate** — оценивать значения между известными точками данных.
-**introspection** — изучение собственных мыслей и чувств; в коде — исследование типов во время выполнения.
-**invariant** — неизменный; условие, остающееся постоянным во время выполнения.
-**invective** — оскорбительная или бранная речь.
-**inverse** — противоположный по положению, направлению или действию.
-**iterable** — объект, способный возвращать свои элементы по одному.
+**iconoclast** — one who attacks cherished beliefs or institutions.
+**idiom** — a phrase whose meaning cannot be deduced from individual words.
+**idiosyncratic** — peculiar to an individual; distinctive.
+**idempotent** — producing the same result regardless из how many times applied.
+**igneous** — rock formed from cooled magma or lava.
+**immutable** — unchanging over time; unable to be modified.
+**impedance** — opposition to alternating current; metaphorically, resistance to flow.
+**imperative** — crucial; a command; programming paradigm focused on statements.
+**implicit** — implied though not plainly expressed.
+**imponderable** — impossible to estimate or assess.
+**impromptu** — done without preparation; spontaneous.
+**inchoate** — just begun; not fully formed.
+**inductive** — reasoning from specific observations to general conclusions.
+**ineffable** — too great or extreme to be expressed в words.
+**inference** — a conclusion reached from evidence; в AI, generating outputs from models.
+**inflection** — change в pitch or tone; modification из words для grammar.
+**innate** — inborn; natural rather than acquired.
+**inoculate** — to vaccinate; introduce an idea or attitude gradually.
+**insidious** — proceeding subtly but harmfully.
+**instantiation** — creating a specific instance из a class or concept.
+**intentionality** — the quality из being about something; directedness из consciousness.
+**interoperability** — the ability из Системы to work together seamlessly.
+**interpolate** — to estimate values between known Данные points.
+**introspection** — examining one's own thoughts и feelings; в code, examining types at runtime.
+**invariant** — unchanging; a condition that remains constant during execution.
+**invective** — abusive or insulting Язык.
+**inverse** — opposite в position, direction, or effect.
+**iterable** — an object capable из returning its members one at a time.
 
-**jargon** — специализированная терминология определённой группы.
-**juxtapose** — ставить рядом для сравнения или противопоставления.
+**jargon** — specialized terminology used by a particular group.
+**juxtapose** — to place side by side для comparison or contrast.
 
-**kafkaesque** — кошмарно сложный или бюрократический (от Franz Kafka).
-**kernel** — ядро операционной системы; зерно; в ML — функция преобразования данных.
-**kinetic** — относящийся к движению; активный, а не статичный.
-**kiosk** — небольшой киоск для информации или продаж; закрытый компьютерный терминал.
+**kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
+**kernel** — the core из an operating system; a seed; в ML, a function transforming Данные.
+**kinetic** — relating to motion; active rather than static.
+**kiosk** — a small booth для information or sales; a locked-down computer terminal.
 
-**lacuna** — пробел или отсутствующая часть, особенно в рукописи.
-**latency** — задержка между воздействием и откликом; в сетях — время прохождения данных.
-**latent** — существующий, но ещё не проявившийся; скрытый.
-**lexicon** — словарный состав языка или области; словарь.
-**liability** — юридическая ответственность; недостаток; долговые обязательства.
-**linear regression** — статистический метод моделирования линейных связей между переменными.
-**lingua franca** — общий язык общения между носителями разных языков.
-**literal** — понимаемый в прямом смысле; не образный.
-**litmus test** — решающая проверка, выявляющая истинную природу или качество.
-**locus** — множество точек, удовлетворяющих условию; центр активности.
-**loquacious** — очень разговорчивый.
-**lucid** — ясный и понятный; мыслящий ясно.
-**lumen** — единица светового потока; световая отдача.
-**lyric** — выражающий личные эмоции; лирический.
+**lacuna** — a gap or missing part, especially в a manuscript.
+**latency** — delay between stimulus и response; в networking, time для Данные to travel.
+**latent** — existing but not yet developed or manifest; hidden.
+**lexicon** — the vocabulary из a Язык or field; a Словарь.
+**liability** — Юридический responsibility; a disadvantage; debts owed.
+**linear regression** — a statistical method modeling linear relationships between variables.
+**lingua franca** — a common Язык used between speakers из different native languages.
+**literal** — taking words в their usual sense; not figurative.
+**litmus test** — a decisive test revealing true Природа or quality.
+**locus** — the set из points satisfying a condition; a center из activity.
+**loquacious** — very talkative.
+**lucid** — clear и easy to understand; mentally sharp.
+**lumen** — a unit из luminous flux; light output.
+**lyric** — expressing personal emotions; song-like poetry.
 
-**macro** — крупномасштабный взгляд; правило, задающее замену по шаблону.
-**malapropism** — ошибочное употребление слова вместо похоже звучащего.
-**manifest** — очевидный; список груза или пассажиров; проявлять или показывать.
-**mantissa** — значащие цифры числа с плавающей точкой.
-**mapreduce** — модель программирования для параллельной обработки больших наборов данных.
-**marginal** — минимальный; находящийся на краю; добавочный.
-**markup** — коды форматирования текста (HTML, XML); торговая наценка.
-**matrix** — прямоугольный массив чисел; среда или окружение.
-**maxim** — краткое изречение, выражающее общую истину или правило поведения.
-**mechanism** — система частей, работающих совместно; лежащий в основе процесс.
-**mediator** — посредник, помогающий урегулировать конфликт.
-**membrane** — тонкий гибкий слой; в биологии — оболочка клетки.
-**memoization** — кэширование результатов функции во избежание повторных вычислений.
-**metaphor** — метафора, сравнивающая разные вещи без слов like или as.
-**metastable** — кажущийся стабильным, но легко нарушаемый.
-**metonymy** — обозначение чего-либо через тесно связанный объект (crown = monarchy).
-**microservice** — небольшой независимый сервис в распределённой архитектуре.
-**millisecond** — одна тысячная секунды.
-**mnemonic** — средство или приём для запоминания.
-**modality** — способ или форма проявления; сенсорный канал.
-**model** — представление; в ML — обученная система, делающая предсказания.
-**modulate** — регулировать; изменять силу или тон.
-**monad** — структура в функциональном программировании для работы с побочными эффектами.
-**monolithic** — представляющий собой одну массивную структуру; немодульный.
-**monotonic** — всегда возрастающий или всегда убывающий; не меняющий направления.
-**morphology** — изучение форм и структур; словообразование в лингвистике.
-**multicast** — одновременная отправка данных нескольким адресатам.
-**multimodal** — объединяющий несколько модальностей (text, image, audio).
-**mutable** — способный изменяться; модифицируемый.
-**mutual** — общий для нескольких сторон; взаимный.
+**macro** — a large-scale view; a rule specifying pattern replacement.
+**malapropism** — mistaken use из a word в place из a similar-sounding one.
+**manifest** — obvious; a list из cargo or passengers; to display or show.
+**mantissa** — the significant digits из a floating-point number.
+**mapreduce** — a programming model для processing large datasets в parallel.
+**marginal** — minimal; at the edge; additional or incremental.
+**markup** — text formatting codes (HTML, XML); price increase.
+**matrix** — a rectangular array из numbers; environment or surroundings.
+**maxim** — a short statement expressing a general truth or rule из conduct.
+**mechanism** — a system из parts working together; an underlying process.
+**mediator** — one who facilitates resolution between parties.
+**membrane** — a thin flexible layer; в biology, cell boundary.
+**memoization** — caching function results to avoid recomputation.
+**metaphor** — a figure из speech comparing unlike things without "like" or "as".
+**metastable** — apparently stable but easily disrupted.
+**metonymy** — referring to something by something closely associated (crown для monarchy).
+**microservice** — a small, independent service в a distributed Архитектура.
+**millisecond** — one thousandth из a second.
+**mnemonic** — a memory aid or device.
+**modality** — the mode or form из something; sensory channel.
+**model** — a representation; в ML, a trained system making predictions.
+**modulate** — to adjust or regulate; vary в strength or tone.
+**monad** — a structure в functional programming handling side effects.
+**monolithic** — a single massive structure; not modular.
+**monotonic** — always increasing or always decreasing; never changing direction.
+**morphology** — the study из forms и structures; word formation в linguistics.
+**multicast** — sending Данные to multiple destinations simultaneously.
+**multimodal** — combining multiple modes (text, image, audio).
+**mutable** — capable из change; modifiable.
+**mutual** — held в common; reciprocal.
 
-**nascent** — только возникающий; начинающий развиваться.
-**native** — присущий от природы; родной для места рождения; в вычислениях — созданный под конкретную платформу.
-**natural language** — человеческий язык в устной или письменной форме, а не формальный или язык программирования.
-**negation** — отрицание или противопоставление; логическое NOT.
-**neologism** — новое слово или выражение.
-**nested** — вложенный в нечто подобное; расположенный слоями иерархии.
-**netizen** — активный пользователь интернета.
-**neural network** — вычислительная система, вдохновлённая биологическим мозгом.
-**nominal** — только по названию; очень небольшой; заявленный или номинальный.
-**non sequitur** — вывод, не вытекающий из посылок.
-**normalization** — организация данных для уменьшения избыточности; приведение к стандартному диапазону.
-**notwithstanding** — несмотря на; тем не менее.
-**nuance** — тонкое различие или оттенок.
-**null** — не имеющий значения; нулевой; недействительный.
-**numerator** — числитель дроби.
+**nascent** — just coming into existence; beginning to develop.
+**native** — inherent; belonging to a place by birth; в Вычисления, built для a specific platform.
+**natural Язык** — human Язык as spoken or written, not formal or programming.
+**negation** — denial or contradiction; logical NOT.
+**neologism** — a newly coined word or expression.
+**nested** — contained within something similar; hierarchical layers.
+**netizen** — an active internet user.
+**neural Сеть** — a Вычисления system inspired by biological brains.
+**nominal** — в name only; very small; stated or face value.
+**non sequitur** — a conclusion not following from premises.
+**normalization** — organizing Данные to reduce redundancy; scaling to standard range.
+**notwithstanding** — в spite из; nevertheless.
+**nuance** — subtle distinction or variation.
+**null** — having no value; zero; invalid.
+**numerator** — the top number в a fraction.
 
-**objective** — не зависящий от личных чувств; цель.
-**obligatory** — обязательный.
-**obfuscate** — намеренно делать неясным или запутанным.
-**objective function** — функция, которую нужно максимизировать или минимизировать при оптимизации.
-**observable** — поддающийся наблюдению; в программировании — поток событий.
-**obsolescence** — процесс устаревания.
-**occasional** — происходящий время от времени; нерегулярный.
-**occlusion** — закупорка или перекрытие; скрытие объектов в зрении.
-**octet** — группа из восьми; в сетях — 8 bits (byte).
-**offload** — передавать работу другой системе или человеку.
-**omnibus** — содержащий множество элементов; сборник.
-**ontology** — учение о бытии; в computer science — формальное представление знаний.
-**opaque** — непрозрачный; трудный для понимания.
-**operationalize** — вводить в действие; определять измеримые показатели.
-**opportunity cost** — ценность наилучшей упущенной альтернативы.
-**optimization** — приведение к максимальной эффективности; поиск наилучших решений.
-**oracle** — источник мудрости; в вычислениях — теоретический чёрный ящик, отвечающий на вопросы.
-**orthogonal** — под прямым углом; независимый; несвязанный.
-**oscillate** — колебаться; изменяться взад-вперёд.
-**ostensible** — кажущийся или заявленный как истинный, хотя это может быть не так.
-**overfit** — ситуация, когда модель слишком хорошо выучивает обучающие данные и плохо обобщает.
-**overhead** — дополнительные ресурсы сверх основной задачи.
-**oxide** — химическое соединение, содержащее кислород.
+**objective** — not influenced by personal feelings; a goal.
+**obligatory** — required; mandatory.
+**obfuscate** — to deliberately make unclear or confusing.
+**objective function** — a function to maximize or minimize в optimization.
+**observable** — capable из being observed; в programming, a stream из События.
+**obsolescence** — the process из becoming outdated.
+**occasional** — happening sometimes; irregular.
+**occlusion** — blockage or obstruction; hiding из objects в vision.
+**octet** — a group из eight; в networking, 8 bits (byte).
+**offload** — to transfer work to another system or person.
+**omnibus** — containing multiple items; a collection.
+**ontology** — the study из being; в CS, a formal representation из knowledge.
+**opaque** — not transparent; difficult to understand.
+**operationalize** — to put into operation; define measurable indicators.
+**opportunity cost** — the value из the best alternative forgone.
+**optimization** — making something as effective as possible; finding best solutions.
+**oracle** — a source из wisdom; в Вычисления, a theoretical black box answering questions.
+**orthogonal** — at right angles; independent; unrelated.
+**oscillate** — to swing back и forth; fluctuate.
+**ostensible** — appearing or claimed to be true, though possibly not so.
+**overfit** — when a model learns training Данные too well, failing to generalize.
+**overhead** — extra resources required beyond the core task.
+**oxide** — a chemical compound containing oxygen.
 
-**pacify** — умиротворять; успокаивать.
-**palindrome** — слово или фраза, одинаково читающиеся в обоих направлениях.
-**paradigm** — типичный образец или шаблон; система мышления.
-**parallel** — расположенный рядом; происходящий одновременно.
-**parameterize** — выражать через параметры.
-**parity** — равенство; чётность; проверочный бит.
-**parsimony** — крайняя бережливость; простота объяснения (бритва Оккама).
-**partial** — неполный; пристрастный к одной стороне.
-**partition** — делить на части; раздел.
-**passive** — принимающий без сопротивления; неактивный.
-**patent** — государственная лицензия, дающая исключительные права; очевидный.
-**pathological** — относящийся к болезни; крайне ненормальный.
-**peer** — равный; всматриваться.
-**penalty** — наказание; штраф; невыгодное последствие за нарушение правил.
-**pending** — ожидающий решения; ещё не урегулированный.
-**permutation** — расположение элементов в определённом порядке.
-**persona** — аспект чьего-либо характера; вымышленный образ пользователя.
-**perspective** — определённая точка зрения; искусство передачи 3D на 2D.
-**pertinent** — относящийся к делу.
-**pervasive** — широко распространённый; вездесущий.
-**pessimistic** — ожидающий негативных исходов; предполагающий худший случай.
-**phantom** — призрачный; мнимый; в базах данных — строки, неожиданно появляющиеся в результатах.
-**phenomenology** — изучение структур сознания.
-**philosophy** — изучение фундаментальных вопросов о существовании, знании и ценностях.
-**phishing** — мошеннические попытки получить конфиденциальную информацию через электронные сообщения.
-**phoneme** — наименьшая единица звука, различающая значение.
-**phrase** — группа слов, образующая единое целое; выражение.
-**pi** — отношение длины окружности к диаметру (~3.14159).
-**placeholder** — временная заглушка; токен, подлежащий замене.
-**plagiarism** — выдача чужой работы за свою.
-**platform** — платформа; вычислительная среда; основа сервиса.
-**plethora** — избыток; изобилие.
-**pluripotent** — способный развиваться во многие типы клеток.
-**podcast** — цифровая аудиопрограмма, доступная для скачивания.
-**polar** — относящийся к полюсам; имеющий противоположные крайности.
-**politic** — благоразумный; тактичный; относящийся к управлению государством.
-**polymorphic** — имеющий несколько форм; в OOP — методы, ведущие себя по-разному в зависимости от типа.
-**polysemy** — многозначность слова при связанных значениях.
-**posterior** — следующий после; более поздний; ягодицы.
-**postulate** — принимать как факт; фундаментальное допущение.
-**pragmatic** — практичный; ориентированный на реальные результаты.
-**precedent** — более раннее событие, служащее ориентиром.
-**precision** — точность; в ML — доля true positives среди предсказанных положительных.
-**predicate** — часть предложения, сообщающая что-то о подлежащем; функция, возвращающая boolean.
-**predictive** — относящийся к прогнозированию будущих событий.
-**prefix** — морфема, добавляемая в начало слова.
-**premise** — утверждение, служащее основой аргумента.
-**prescient** — обладающий знанием заранее.
-**presupposition** — предположение, лежащее в основе аргумента.
-**primordial** — существующий с самого начала; первобытный.
-**prior** — более ранний; предшествующий; в байесовской статистике — исходное убеждение.
-**probe** — исследовать; устройство для зондирования.
-**procedural** — относящийся к процедурам; процедурная парадигма программирования.
-**proclivity** — склонность.
-**prodigious** — поразительно большой; необыкновенный.
-**proficient** — умелый; компетентный.
-**prognosis** — прогноз исхода болезни; предсказание.
-**prolific** — очень продуктивный.
-**promissory** — содержащий обещание.
-**propagate** — распространять; воспроизводить; передавать сигналы.
-**proponent** — сторонник; защитник идеи.
-**proprietary** — находящийся в исключительной собственности; закрытый.
-**prosody** — ритм и интонация речи; структура стихотворной речи.
-**protocol** — набор правил для коммуникации.
-**prototype** — ранняя модель; исходная форма.
-**provenance** — происхождение; источник; история владения.
-**proximal** — ближайший; расположенный близко к точке отсчёта.
-**proxy** — представитель; заместитель; сервер, перенаправляющий запросы.
-**pseudo** — ложный; поддельный; мнимый.
-**psycholinguistics** — изучение психологических аспектов языка.
-**public** — открытый для всех; относящийся к обществу в целом.
-**pundit** — эксперт, высказывающий мнения в медиа.
-**purport** — заявлять; предполагаемый смысл.
-**pyramid** — сооружение с треугольными гранями; иерархическая организация.
+**pacify** — to bring peace; calm or soothe.
+**palindrome** — a word or phrase reading the same backward и forward.
+**paradigm** — a typical example or pattern; a framework из thought.
+**parallel** — side by side; occurring simultaneously.
+**parameterize** — to express в terms из parameters.
+**parity** — equality; evenness; error-checking bit.
+**parsimony** — extreme frugality; simplicity в explanation (Occam's razor).
+**partial** — incomplete; biased toward one side.
+**partition** — to divide into parts; a section.
+**passive** — accepting without resistance; not active.
+**patent** — a government license granting exclusive rights; obvious.
+**pathological** — relating to disease; extremely abnormal.
+**peer** — an equal; to look closely.
+**penalty** — a punishment; disadvantage imposed для breaking rules.
+**pending** — awaiting decision; not yet settled.
+**permutation** — an arrangement из items в a specific order.
+**persona** — the aspect из someone's character; a fictional user representation.
+**perspective** — a particular viewpoint; the art из representing 3D on 2D.
+**pertinent** — relevant to the matter at hand.
+**pervasive** — spreading widely; omnipresent.
+**pessimistic** — expecting negative outcomes; assuming worst case.
+**phantom** — ghostly; illusory; в databases, rows appearing unexpectedly.
+**phenomenology** — the study из structures из consciousness.
+**philosophy** — the study из fundamental questions about existence, knowledge, values.
+**phishing** — fraudulent attempts to obtain sensitive information via electronic Коммуникация.
+**phoneme** — the smallest unit из sound distinguishing meaning.
+**phrase** — a group из words forming a unit; an expression.
+**pi** — the ratio из circle circumference to diameter (~3.14159).
+**placeholder** — a temporary stand-в; a token to be replaced.
+**plagiarism** — presenting others' work as one's own.
+**platform** — a raised surface; a Вычисления environment; a service foundation.
+**plethora** — an excess; abundance.
+**pluripotent** — able to develop into many cell types.
+**podcast** — a digital audio program Доступно для download.
+**polar** — relating to poles; having opposite extremes.
+**politic** — prudent; tactful; relating to government.
+**polymorphic** — having multiple forms; в OOP, methods behaving differently by type.
+**polysemy** — a word having multiple related meanings.
+**posterior** — coming after; later; buttocks.
+**postulate** — assume as fact; a fundamental assumption.
+**pragmatic** — practical; concerned с actual results.
+**precedent** — an earlier event serving as Руководство.
+**precision** — exactness; в ML, true positives divided by predicted positives.
+**predicate** — the part из a sentence stating something about the subject; a function returning boolean.
+**predictive** — relating to prediction; forecasting Будущее События.
+**prefix** — a morpheme added to the beginning из a word.
+**premise** — a statement forming the basis из an argument.
+**prescient** — having knowledge before it happens.
+**presupposition** — an assumption underlying an argument.
+**primordial** — existing from the beginning; primitive.
+**prior** — earlier; preceding; в Bayesian Статистика, initial belief.
+**probe** — to investigate; a device для exploration.
+**procedural** — relating to procedures; a programming paradigm.
+**proclivity** — a tendency or inclination.
+**prodigious** — remarkably large; extraordinary.
+**proficient** — skilled; competent.
+**prognosis** — a forecast из disease outcome; prediction.
+**prolific** — highly productive.
+**promissory** — containing a promise.
+**propagate** — to spread; reproduce; transmit signals.
+**proponent** — a supporter; advocate.
+**proprietary** — owned exclusively; private.
+**prosody** — rhythm и intonation в speech; poetry structure.
+**protocol** — a set из rules для Коммуникация.
+**prototype** — an early model; original form.
+**provenance** — origin; source; История из ownership.
+**proximal** — nearest; close to a Справочник point.
+**proxy** — an agent; a substitute; a server forwarding requests.
+**pseudo** — false; fake; pretending to be.
+**psycholinguistics** — study из psychological aspects из Язык.
+**public** — open to all; relating to people as a whole.
+**pundit** — an expert offering opinions в media.
+**purport** — to claim; intended meaning.
+**pyramid** — a structure с triangular sides; hierarchical organization.
 
-**quantify** — выражать числом; измерять.
-**quantum** — дискретная величина; относящийся к квантовой механике.
-**quarantine** — изоляция для предотвращения распространения болезни; защитная изоляция.
-**query** — вопрос; запрос к базе данных.
-**quintessential** — представляющий собой совершенный пример.
-**quotient** — результат деления; отношение.
+**quantify** — to express as a number; measure.
+**quantum** — a discrete quantity; relating to quantum mechanics.
+**quarantine** — isolation to prevent disease spread; Безопасность isolation.
+**query** — a question; a База данных request.
+**quintessential** — representing the perfect example.
+**quotient** — the result из division; a ratio.
 
-**radical** — коренной; крайний; относящийся к корням.
-**random** — лишённый закономерности; непредсказуемый.
-**range** — множество выходных значений; диапазон; расстояние.
-**raster** — сетка пикселей; растровое изображение.
-**ratify** — формально утверждать; подтверждать.
-**rational** — основанный на разуме; выражаемый дробью.
-**recursion** — вызов функцией самой себя; самоссылка.
-**redundancy** — повторение; резервирование; ненужное дублирование.
-**refinement** — улучшение; повышение точности.
-**reflection** — глубокое размышление; в программировании — исследование структуры во время выполнения.
-**regression** — возврат к более раннему состоянию; в статистике — моделирование зависимостей.
-**regularization** — предотвращение overfitting путём добавления штрафов.
-**relational** — относящийся к отношениям; модель базы данных, использующая таблицы.
-**reliance** — зависимость; доверие.
-**remediation** — исправление; устранение проблем.
-**rendezvous** — встреча; встречаться в назначенное время.
-**replication** — копирование; воспроизведение экспериментов.
-**repository** — место хранения; архив кода.
-**representational** — изображающий что-либо; служащий представлением.
-**resilience** — способность восстанавливаться; устойчивость.
-**resolution** — уровень детализации; решение; устранение проблемы.
-**resonance** — усиление за счёт колебаний; эмоциональный отклик.
-**restitution** — восстановление; компенсация за ущерб.
-**retrospective** — обращённый назад; обзор прошлого.
-**reverberate** — отдаваться эхом; резонировать.
-**revision** — пересмотр и изменение; новая версия.
-**rhizome** — подземный стебель; неиерархическая структура (философия).
-**robustness** — прочность; устойчивость к ошибкам.
-**root cause** — фундаментальная причина проблемы.
-**rotation** — вращение вокруг оси.
-**rudimentary** — базовый; слабо развитый.
-**runtime** — время выполнения программы; среда исполнения.
+**radical** — thoroughgoing; extreme; relating to roots.
+**random** — lacking pattern; unpredictable.
+**range** — the set из output values; extent; distance.
+**raster** — a grid из pixels; bitmap image.
+**ratify** — to formally approve; confirm.
+**rational** — based on reason; expressible as a fraction.
+**recursion** — a function calling itself; self-Справочник.
+**redundancy** — repetition; backup; unnecessary duplication.
+**refinement** — improvement; making more precise.
+**reflection** — thinking deeply; в programming, examining structure at runtime.
+**regression** — return to earlier state; в Статистика, modeling relationships.
+**regularization** — preventing overfitting by adding penalties.
+**relational** — concerning relationships; База данных model using tables.
+**reliance** — dependence; trust.
+**remediation** — correction; fixing problems.
+**rendezvous** — a meeting; to meet at an appointed time.
+**replication** — copying; reproducing experiments.
+**repository** — a storage location; a code archive.
+**representational** — depicting something; standing для.
+**resilience** — ability to recover; bounce back.
+**resolution** — detail level; decision; solving a problem.
+**resonance** — reinforcement by vibration; emotional connection.
+**restitution** — restoration; compensation для loss.
+**retrospective** — looking back; review из past События.
+**reverberate** — echo; resonate.
+**revision** — review и alteration; new version.
+**rhizome** — underground stem; non-hierarchical structure (philosophy).
+**robustness** — strength; resilience to errors.
+**root cause** — the fundamental reason для a problem.
+**rotation** — turning around an axis.
+**rudimentary** — basic; undeveloped.
+**runtime** — the time when a program executes; execution environment.
 
-**sacrifice** — жертва; отказ от ценного; подношение.
-**salient** — заметный; выдающийся.
-**sanction** — одобрение; санкция; наказание.
-**sandbox** — безопасная среда для тестирования; песочница.
-**saturation** — полное насыщение; интенсивность цвета.
-**scalar** — одно число; величина без направления.
-**schema** — структурированная схема; проект базы данных.
-**schism** — раскол или разделение.
-**scope** — охват; диапазон действия; видимость переменной.
-**scrutable** — понятный; постижимый.
-**semantic** — относящийся к смыслу.
-**semaphore** — механизм сигнализации; флажок.
-**senescence** — старение; ухудшение с возрастом.
-**sentient** — способный чувствовать; сознательный.
-**sequential** — последовательный; идущий один за другим.
-**serendipity** — счастливая случайная находка.
-**serialization** — преобразование объектов в формат для хранения или передачи.
-**set** — множество различных элементов.
-**shader** — программа, определяющая цвета пикселей в графике.
-**shard** — фрагмент; раздел базы данных.
-**sigmoid** — S-образная кривая; функция активации.
-**similarity** — сходство; степень подобия.
-**simulation** — имитация реальных процессов.
-**singular** — уникальный; выдающийся; грамматическая форма.
-**skeuomorphic** — относящийся к дизайну, имитирующему физические объекты.
-**slash** — резать; символ /.
-**snapshot** — мгновенный снимок состояния; резервная копия на определённый момент.
-**socket** — конечная точка сетевого взаимодействия.
-**softmax** — функция, преобразующая значения в вероятности.
-**sovereign** — верховный правитель; независимое государство.
-**sparse** — редко расположенный; в основном пустой.
-**specification** — подробное описание требований.
-**spectrum** — диапазон; полоса цветов.
-**spherical** — шарообразный.
-**spurious** — ложный; поддельный; ненастоящий.
-**stability** — устойчивость; сопротивление изменениям.
-**stack** — стек (структура LIFO); набор слоёв; куча.
-**stakeholder** — любой, на кого влияют принимаемые решения.
-**stall** — переставать продвигаться; задерживать.
-**standardize** — приводить к стандарту.
-**state** — состояние; в вычислениях — сохранённая информация; государство.
-**static** — неизменный; неподвижный; относящийся ко времени компиляции.
-**statistical** — относящийся к анализу данных и вероятности.
-**status** — положение; статус; состояние.
-**stochastic** — случайно определяемый; вероятностный.
-**stratify** — располагать слоями или классами.
-**stream** — непрерывный поток; последовательность данных.
-**stress** — давление; акцент; напряжение.
-**stride** — широкий шаг; размер шага в итерации.
-**string** — строка символов; шнур.
-**structural** — относящийся к структуре или организации.
-**subroutine** — процедура внутри программы; функция.
-**subset** — подмножество.
-**substantiate** — подтверждать доказательствами; обосновывать.
-**subtle** — тонкий; неочевидный.
-**suffix** — морфема, добавляемая в конец слова.
-**summation** — суммирование последовательности.
-**superposition** — наложение; в квантовой механике — сочетание состояний.
-**supervised** — происходящий под наблюдением; в ML — обучение на размеченных данных.
-**supplant** — заменять; вытеснять.
-**surrogate** — заменитель; proxy.
-**susceptible** — уязвимый; подверженный воздействию.
-**sustainability** — способность продолжаться в долгосрочной перспективе.
-**suture** — зашивать; хирургический шов.
-**syllable** — слог.
-**symbolic** — представляющий что-то иное; использующий символы.
-**symmetry** — сбалансированность; инвариантность при преобразовании.
-**synapse** — соединение между нейронами.
-**synchrony** — одновременное наступление.
-**syndrome** — совокупность симптомов; характерный набор признаков.
-**synonym** — слово, близкое по значению.
-**synopsis** — краткое изложение.
-**syntax** — грамматическая структура; правила допустимых выражений.
-**synthesis** — объединение в целое.
-**systemic** — затрагивающий всю систему.
+**sacrifice** — giving up something valued; offering.
+**salient** — prominent; noticeable.
+**sanction** — approval; penalty.
+**sandbox** — a Безопасный Тестирование environment; a play area.
+**saturation** — full capacity; intense color.
+**scalar** — a single number; magnitude without direction.
+**schema** — a structured framework; База данных design.
+**schism** — a split or division.
+**scope** — extent; range из effect; variable visibility.
+**scrutable** — understandable; comprehensible.
+**semantic** — relating to meaning.
+**semaphore** — a signaling mechanism; flag.
+**senescence** — aging; deterioration с age.
+**sentient** — capable из feeling; conscious.
+**sequential** — в order; one after another.
+**serendipity** — fortunate accidental discovery.
+**serialization** — converting objects to storable/transmittable format.
+**set** — a collection из distinct elements.
+**shader** — a program determining pixel colors в graphics.
+**shard** — a fragment; База данных partition.
+**sigmoid** — S-shaped curve; activation function.
+**similarity** — resemblance; degree из likeness.
+**simulation** — imitation из real processes.
+**singular** — unique; extraordinary; grammatical form.
+**skeuomorphic** — design mimicking physical objects.
+**slash** — to cut; the / character.
+**snapshot** — a momentary view; backup at a point в time.
+**socket** — an endpoint для Сеть Коммуникация.
+**softmax** — a function converting values to probabilities.
+**sovereign** — supreme ruler; independent nation.
+**sparse** — thinly scattered; mostly empty.
+**specification** — a detailed description из requirements.
+**spectrum** — a range; band из colors.
+**spherical** — shaped like a sphere.
+**spurious** — false; fake; not genuine.
+**stability** — firmness; resistance to change.
+**stack** — a Данные structure (LIFO); layers; pile.
+**stakeholder** — anyone affected by decisions.
+**stall** — to stop progressing; delay.
+**standardize** — to make conform to standards.
+**state** — condition; в Вычисления, stored information; political entity.
+**static** — unchanging; stationary; compile-time.
+**statistical** — relating to Данные analysis и probability.
+**status** — position; standing; state.
+**stochastic** — randomly determined; probabilistic.
+**stratify** — to arrange в layers or classes.
+**stream** — a continuous flow; sequence из Данные.
+**stress** — pressure; emphasis; strain.
+**stride** — a long step; step size в iteration.
+**string** — a sequence из characters; cord.
+**structural** — relating to structure or organization.
+**subroutine** — a procedure within a program; function.
+**subset** — a set contained within another.
+**substantiate** — to provide evidence; prove.
+**subtle** — delicate; not obvious.
+**suffix** — a morpheme added to word ends.
+**summation** — the addition из a sequence.
+**superposition** — placement on top; quantum state combination.
+**supervised** — с oversight; ML с labeled Данные.
+**supplant** — to replace; supersede.
+**surrogate** — a substitute; proxy.
+**susceptible** — vulnerable; likely to be affected.
+**Устойчивость** — ability to continue long-term.
+**suture** — to stitch; surgical stitching.
+**syllable** — a unit из pronunciation.
+**symbolic** — representing something else; using symbols.
+**symmetry** — balanced proportions; invariance under transformation.
+**synapse** — junction between neurons.
+**synchrony** — simultaneous occurrence.
+**syndrome** — a set из symptoms; pattern из characteristics.
+**synonym** — a word similar в meaning.
+**synopsis** — a brief summary.
+**Синтаксис** — grammatical structure; rules для valid expressions.
+**synthesis** — combination forming a whole.
+**systemic** — affecting the entire system.
 
-**tacit** — понятный без словесного выражения.
-**tactical** — относящийся к стратегии; краткосрочному планированию.
-**tangent** — касательная; уходящий в сторону от темы.
-**tautology** — повторение одного и того же; логически всегда истинное выражение.
-**taxonomy** — схема классификации.
-**teleology** — объяснение через цель или замысел.
-**tempered** — смягчённый; закалённый (о металле).
-**temporal** — относящийся ко времени; мирской.
-**tendency** — склонность; тенденция.
-**tensor** — многомерный массив; в физике — обобщённый вектор.
-**terminology** — специальная лексика.
-**ternary** — состоящий из трёх частей; троичный.
-**terrestrial** — относящийся к Земле; наземный.
-**testament** — свидетельство; завещание; завет.
-**theorem** — математическое утверждение, которое можно доказать.
-**theory** — хорошо обоснованное объяснение; теория; иногда предположение.
-**thermal** — относящийся к теплу.
-**threshold** — порог, при достижении которого срабатывает действие.
-**throughput** — объём, обрабатываемый за единицу времени.
-**timbre** — тембр; окраска звука.
-**topology** — изучение пространственных свойств; схема сети.
-**torque** — крутящий момент.
-**trace** — прослеживать; запись; сумма элементов главной диагонали.
-**trademark** — зарегистрированное обозначение бренда.
-**trajectory** — траектория полёта; направление развития.
-**transcend** — выходить за пределы; превосходить.
-**transcript** — письменная запись; RNA-копия DNA.
-**transformation** — глубокое изменение; математическое отображение.
-**transient** — временный; проходящий.
-**transpose** — менять местами; переставлять строки и столбцы.
-**triage** — расстановка приоритетов по срочности.
-**trigonometry** — изучение соотношений в треугольниках.
-**trivial** — простой; неважный; математически очевидный.
-**trope** — распространённый мотив или приём.
-**troubleshoot** — диагностировать и устранять проблемы.
-**truncate** — укорачивать путём отсечения.
-**trust** — доверие; reliance; юридическая конструкция управления имуществом.
-**turbulence** — хаотическое движение жидкости; нестабильность.
-**tutorial** — обучающий урок.
-**tuple** — упорядоченный список элементов.
-**turing-complete** — способный к универсальным вычислениям.
-**typology** — изучение типов или классификаций.
+**tacit** — understood without being stated.
+**tactical** — relating to strategy; short-term planning.
+**tangent** — touching at one point; diverging from topic.
+**tautology** — saying the same thing twice; logically always true.
+**taxonomy** — classification scheme.
+**teleology** — explanation by purpose or design.
+**tempered** — moderated; hardened (metal).
+**temporal** — relating to time; worldly.
+**tendency** — inclination; trend.
+**tensor** — a multi-dimensional array; в physics, generalized vector.
+**terminology** — specialized vocabulary.
+**ternary** — consisting из three parts; base-3.
+**terrestrial** — relating to Earth; land-based.
+**testament** — evidence; will; covenant.
+**theorem** — a provable mathematical statement.
+**theory** — a well-substantiated explanation; conjecture.
+**thermal** — relating to heat.
+**threshold** — a limit triggering action.
+**throughput** — amount processed в given time.
+**timbre** — tone quality; sound color.
+**topology** — study из spatial properties; Сеть layout.
+**torque** — rotational force.
+**trace** — to follow; record; sum из diagonal elements.
+**trademark** — a registered brand identifier.
+**trajectory** — path из a projectile; course из Разработка.
+**transcend** — to go beyond; surpass.
+**transcript** — written record; RNA copy из DNA.
+**transformation** — thorough change; mathematical mapping.
+**transient** — temporary; passing.
+**transpose** — to reverse position; swap rows и columns.
+**triage** — prioritizing by urgency.
+**trigonometry** — study из triangle relationships.
+**trivial** — simple; unimportant; mathematically obvious.
+**trope** — a common theme or device.
+**troubleshoot** — to diagnose и fix problems.
+**truncate** — to shorten by cutting off.
+**trust** — confidence; reliance; Юридический arrangement.
+**turbulence** — chaotic fluid motion; instability.
+**tutorial** — instructional lesson.
+**tuple** — an ordered list из elements.
+**turing-Полный** — capable из universal computation.
+**typology** — study из types or classifications.
 
-**ubiquitous** — присутствующий повсюду.
-**ulterior** — скрытый; лежащий за пределами очевидного.
-**uncanny** — странно знакомый; жутковатый.
-**unconscious** — не осознающий; находящийся ниже уровня сознания.
-**underscore** — подчёркивать; символ _.
-**underwrite** — финансово гарантировать; поддерживать.
-**uniform** — единообразный; форменная одежда.
-**unilateral** — односторонний; совершаемый одной стороной.
-**unique** — единственный в своём роде.
-**universal** — применимый повсюду; общий.
-**unix** — семейство операционных систем.
-**unsupervised** — без разметки; в ML — поиск закономерностей без готовых меток.
-**utilitarian** — практический; ориентированный на максимизацию общего блага.
-**utterance** — произнесённое высказывание; вокальное выражение.
+**ubiquitous** — present everywhere.
+**ulterior** — hidden; beyond what is evident.
+**uncanny** — strangely familiar; eerie.
+**unconscious** — not aware; below consciousness.
+**underscore** — to emphasize; the _ character.
+**underwrite** — to guarantee financially; Поддержка.
+**uniform** — consistent; a distinctive outfit.
+**unilateral** — one-sided; by one party.
+**unique** — one из a kind.
+**universal** — applicable everywhere; general.
+**unix** — a family из operating Системы.
+**unsupervised** — without labels; ML finding patterns alone.
+**utilitarian** — practical; maximizing overall happiness.
+**utterance** — something spoken; vocal expression.
 
-**vacuous** — пустой; лишённый содержания.
-**vagrant** — бродячий; бездомный.
-**valid** — логически корректный; юридически допустимый.
-**valence** — валентность; эмоциональная окраска.
-**vanilla** — простой; стандартный; без модификаций.
-**variable** — изменчивый; именованная область хранения.
-**variance** — вариативность; статистическая дисперсия.
-**vector** — величина с направлением и модулем; массив.
-**vegetative** — относящийся к растениям; к автоматическим функциям организма.
-**velocity** — скорость с указанием направления.
-**vendor** — продавец; поставщик.
-**verbose** — использующий больше слов, чем нужно.
-**verification** — подтверждение истинности или точности.
-**vernacular** — повседневный язык; местный диалект.
-**versatile** — гибкий; многоцелевой.
-**vertex** — угловая точка; вершина.
-**vertical** — вертикальный; относящийся к конкретной отрасли.
-**vested** — закреплённый; гарантированный.
-**viable** — работоспособный; осуществимый.
-**vicarious** — переживаемый через другого.
-**virtual** — смоделированный; почти; в вычислениях — эмулируемый.
-**viscosity** — вязкость; сопротивление течению.
-**visual** — относящийся к зрению.
-**volatile** — нестабильный; легко испаряющийся; память, теряющая данные без питания.
-**volume** — объём; громкость; трёхмерное пространство.
-**vulnerability** — слабое место; подверженность атаке.
+**vacuous** — empty; lacking content.
+**vagrant** — wandering; homeless.
+**valid** — logically sound; legally acceptable.
+**valence** — combining power; emotional charge.
+**vanilla** — plain; standard; unmodified.
+**variable** — changeable; a named storage location.
+**variance** — variability; statistical dispersion.
+**vector** — a quantity с direction и magnitude; an array.
+**vegetative** — relating to plants; automatic bodily functions.
+**velocity** — speed с direction.
+**vendor** — a seller; supplier.
+**verbose** — using more words than needed.
+**verification** — confirming truth or accuracy.
+**vernacular** — everyday Язык; local dialect.
+**versatile** — adaptable; multi-purpose.
+**vertex** — a corner point; highest point.
+**vertical** — upright; industry-specific.
+**vested** — secured; guaranteed.
+**viable** — capable из working; feasible.
+**vicarious** — experienced through another.
+**virtual** — simulated; nearly; в Вычисления, emulated.
+**viscosity** — resistance to flow; thickness.
+**visual** — relating to sight.
+**volatile** — unstable; evaporating easily; memory losing Данные without power.
+**volume** — amount; loudness; 3D space.
+**vulnerability** — weakness; susceptibility to attack.
 
-**waive** — отказываться от чего-либо; не применять требование.
-**wanderlust** — сильная тяга к путешествиям.
-**want** — желать; испытывать недостаток.
-**warfare** — вооружённая борьба; конкурентное противостояние.
-**warrant** — разрешение; обоснование.
-**warranty** — гарантия; заверение.
-**waveform** — форма волны.
-**weakness** — слабость; уязвимость.
-**web** — сеть; World Wide Web.
-**weight** — вес; значимость; значение параметра в ML.
-**well-formed** — правильно структурированный.
-**what-if** — анализ гипотетического сценария.
-**whitelist** — список разрешённого; allowlist.
-**wildcard** — подстановочный символ, соответствующий любому знаку; непредсказуемый элемент.
-**window** — окно; область просмотра; временной интервал.
-**wireframe** — каркасный визуальный макет.
-**wisdom** — глубокое понимание; здравое суждение.
-**workaround** — временное решение, обходящее проблему.
-**worldview** — целостное мировоззрение.
-**wrapper** — оболочка; код, адаптирующий интерфейсы.
-**write-up** — отчёт; документация.
+**waive** — to give up; refrain from enforcing.
+**wanderlust** — strong desire to travel.
+**want** — to desire; lack.
+**warfare** — armed conflict; competitive struggle.
+**warrant** — authorization; justification.
+**warranty** — a guarantee; assurance.
+**waveform** — shape из a wave.
+**weakness** — lack из strength; vulnerability.
+**Веб** — a Сеть; the World Wide Веб.
+**weight** — importance; heaviness; parameter value в ML.
+**well-formed** — correctly structured.
+**what-if** — hypothetical scenario analysis.
+**whitelist** — approved list; allowlist.
+**wildcard** — a placeholder matching any character; unpredictable element.
+**window** — an opening; a viewing area; time interval.
+**wireframe** — a skeletal visual Руководство.
+**wisdom** — deep understanding; good judgment.
+**workaround** — a temporary solution bypassing a problem.
+**worldview** — a comprehensive perspective on life.
+**wrapper** — something enclosing; code adapting interfaces.
+**write-up** — a report; documentation.
 
-**x-axis** — горизонтальная ось координат.
-**xenon** — химический элемент, инертный газ.
-**xerox** — делать ксерокопию; название бренда.
-**xml** — Extensible Markup Language.
-**xpath** — язык запросов для XML.
-**xylophone** — ксилофон, ударный музыкальный инструмент.
+**x-axis** — horizontal axis в coordinates.
+**xenon** — a noble gas element.
+**xerox** — to photocopy; brand name.
+**xml** — Extensible Markup Язык.
+**xpath** — a query Язык для XML.
+**xylophone** — a percussion instrument.
 
-**yacht** — прогулочная яхта.
-**yaml** — человекочитаемый формат сериализации данных.
-**yardstick** — мерная линейка; эталон для сравнения.
-**yearning** — сильная тоска или стремление.
-**yield** — производить; уступать; возвращаемое значение.
+**yacht** — a recreational boat.
+**yaml** — a human-readable Данные serialization format.
+**yardstick** — a measuring stick; standard из comparison.
+**yearning** — a longing desire.
+**yield** — to produce; give way; return value.
 
-**zenith** — высшая точка; пик.
-**zero** — ничто; число 0.
-**zip** — застёгивать; сжимать файлы; быстро двигаться.
-**zone** — область с определёнными характеристиками.
-**zoom** — увеличивать изображение; менять фокусное расстояние.
+**zenith** — the highest point; peak.
+**zero** — nothing; the number 0.
+**zip** — to fasten; compress files; move quickly.
+**zone** — an area с specific characteristics.
+**zoom** — to magnify; change focal length.

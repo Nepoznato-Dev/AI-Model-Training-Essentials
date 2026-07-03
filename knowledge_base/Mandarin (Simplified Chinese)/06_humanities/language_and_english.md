@@ -1,156 +1,163 @@
-# 语言与英语
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: language_and_english.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 什么是语言？
+# 语言 和 英语
 
-语言是一种使用声音、符号或手势进行交流的系统，它遵循由某个共同体所理解和共享的一套规则。人类语言因其复杂性、创造力以及表达抽象思想的能力而独具特色。当今世界大约有 7,000 种语言。英语是作为第二语言使用最广泛的语言，也是国际交流、商业、科学和互联网领域的主导语言。
+## What is 语言?
 
-## 英语语法
+语言 is a system 的 沟通 using sounds, symbols, or gestures that follows a shared set 的 rules understood by a community. Human 语言 is unique 在 its complexity, creativity, 和 capacity to express abstract ideas. There are approximately 7,000 languages spoken 在 这 world today. 英语 is 这 most widely spoken 语言 as a second 语言 和 is 这 dominant 语言 的 international 沟通, 商业, 科学, 和 这 internet.
 
-语法是一套规范词语如何组合成句子的规则。一个句子必须包含主语（句子谈论的是谁或什么）和谓语（主语做什么或是什么）。
+## 英语 Grammar
 
-**名词（noun）** 是表示人、地点、事物或概念的词。
-**动词（verb）** 是表示动作或状态的词。
-**形容词（adjective）** 用来修饰名词。
-**副词（adverb）** 用来修饰动词、形容词或另一个副词。
-**代词（pronoun）** 用来代替名词。
+Grammar is 这 set 的 rules governing how words are combined to form sentences 在 a 语言. A sentence must contain a subject (who or what 这 sentence is about) 和 a predicate (what 这 subject does or is).
 
-**从句（clause）** 是包含主语和动词的一组词。独立从句可以单独构成一个句子。依赖从句不能单独成立，必须依附于独立从句。**短语（phrase）** 是一组不同时包含主语和谓语的词。
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state 的 being.
+An **adjective** modifies a noun.
+An **adverb** modifies a verb, adjective, or another adverb.
+A **pronoun** takes 这 place 的 a noun.
 
-## 词类
+A **clause** is a group 的 words containing a subject 和 a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone 和 depends on an independent clause. A **phrase** is a group 的 words that does not contain both a subject 和 a predicate.
 
-英语中传统的八大词类是：名词、代词、动词、形容词、副词、介词、连词和感叹词。
+## Parts 的 Speech
 
-**介词（preposition）** 表示名词或代词与其他词之间的关系（例如 in、on、at、by、with）。
-**连词（conjunction）** 连接词、短语或从句（例如 and、but、or、because）。
+这 eight traditional parts 的 speech 在 英语 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, 和 interjection.
 
-**常见并列连词** 可以用缩写 FANBOYS 来记忆：
+A **preposition** shows 这 relationship between a noun or pronoun 和 another word (e.g., 在, on, at, by, 与).
+A **conjunction** connects words, phrases, or clauses (e.g., 和, but, or, because).
+
+**Common coordinating conjunctions** can be remembered 与 这 acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## 标点符号
+## Punctuation
 
-- 句号（.）用于结束陈述句。
-- 问号（?）用于结束疑问句。
-- 感叹号（!）用于结束感叹句。
-- 逗号（,）用于分隔列表项目、隔开引导短语，以及分隔由连词连接的独立分句。
-- 分号（;）用于分隔两个关系密切的独立分句。
-- 冒号（:）用于引出列表、解释或引语。
-- 撇号（'）用于表示所属关系（John's book）或缩写形式（don't = do not）。
+- A period (.) ends a declarative sentence.
+- A question mark (?) ends an interrogative sentence.
+- An exclamation mark (!) ends an exclamatory sentence.
+- A comma (,) separates items 在 a list, sets off introductory phrases, 和 separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-## 拼写与常见错误
+## Spelling 和 Common Errors
 
-**常见拼写规则：**
-- "i before e except after c"（believe、receive）——不过这条规则有很多例外（例如 "weird"、"science"）
-- 以不发音的 "e" 结尾的单词，在添加以元音开头的后缀前通常要去掉这个 "e"（make → making）
-- 当最后一个音节重读且以单个辅音结尾时，在添加以元音开头的后缀前要双写末尾辅音（run → running）
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科学")
+- Words ending 在 a silent "e" drop 这 "e" before adding a vowel suffix (make → making)
+- Double 这 final consonant before adding a vowel suffix when 这 last syllable is stressed 和 ends 在 a single consonant (run → running)
 
-**常见易混淆词对：**
+**Common confusable word pairs:**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## 词汇与构词法
+## Vocabulary 和 Word Formation
 
-**词源学（etymology）** 研究词语的起源及其历史发展。许多英语词汇来自拉丁语、希腊语、法语和日耳曼语词根。
+**Etymology** is 这 study 的 这 origins 和 historical 开发 的 words. Many 英语 words come from Latin, Greek, French, 和 Germanic roots.
 
-**前缀（prefixes）** 加在词首以改变词义（例如 un-、re-、pre-、mis-）。
-**后缀（suffixes）** 加在词尾（例如 -tion、-ness、-ing、-ly）。
+**Prefixes** are added to 这 beginning 的 words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to 这 end 的 words (e.g., -tion, -ness, -ing, -ly).
 
-- **同义词（Synonyms）**：意义相近的词
-- **反义词（Antonyms）**：意义相反的词
-- **隐喻（Metaphor）**：通过说某物“就是”另一物来描述它（"Time is a thief"）
-- **明喻（Simile）**：使用 "like" 或 "as" 比较两件事物（"Busy as a bee"）
+- **Synonyms**: words 与 similar meanings
+- **Antonyms**: words 与 opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-## 写作技能
+## Writing Skills
 
-优秀的写作应当清晰、简洁、连贯且富有吸引力。
+Good writing is clear, concise, coherent, 和 engaging.
 
-- **段落（paragraph）** 应当包含主题句（核心观点）、支撑句和总结句。
-- **五段式作文（five-paragraph essay）** 由引言、三个正文段和结论组成。
-- **修订（revision）** 是改进草稿的过程。
-- **编辑（editing）** 侧重纠正语法、拼写和标点错误。
-- **校对（proofreading）** 是发表前的最后检查。
+- A **paragraph** should have a topic sentence (这 main idea), supporting sentences, 和 a concluding sentence.
+- 这 **five-paragraph essay** structure consists 的 an 介绍, three body paragraphs, 和 a conclusion.
+- **Revision** is 这 process 的 improving a draft.
+- **Editing** focuses on correcting grammar, spelling, 和 punctuation errors.
+- **Proofreading** is 这 final check before publication.
 
-## 阅读与理解
+## Reading 和 Comprehension
 
-**主动阅读（active reading）** 指通过提问、预测、总结和建立联系来积极参与文本。
+**Active reading** involves engaging 与 这 text by asking questions, making predictions, summarizing, 和 making connections.
 
-- **主旨（main idea）** 是段落或篇章的中心要点。
-- 细节、示例和证据用于支撑主旨。
-- **推断（inference）** 是根据暗示而非直接陈述的信息得出结论。
-- **语境线索（context clues）** 是围绕生词出现的词和短语，可帮助判断其含义。
+- 这 **main idea** is 这 central point 的 a passage.
+- Details, 示例, 和 evidence 支持 这 main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words 和 phrases surrounding an unfamiliar word that help determine its meaning.
 
-## 沟通与修辞
+## 沟通 和 Rhetoric
 
-**修辞（rhetoric）** 是有效沟通和说服的艺术。
-- **Ethos** 诉诸说话者的可信度。
-- **Pathos** 诉诸情感。
-- **Logos** 诉诸逻辑与理性。
+**Rhetoric** is 这 art 的 effective 沟通 和 persuasion.
+- **Ethos** appeals to 这 credibility 的 这 speaker.
+- **Pathos** appeals to emotion.
+- **Logos** appeals to logic 和 reason.
 
-**论点陈述（thesis statement）** 清楚表达文章的核心论点。
-**语气（tone）** 指作者对主题和读者的态度。
-**语域（register）** 指语言使用的正式程度，从日常对话到正式学术写作不等。
+A **thesis statement** clearly expresses 这 main argument 的 an essay.
+**Tone** refers to 这 writer's attitude toward 这 subject 和 audience.
+**Register** refers to 这 level 的 formality 在 语言 use, ranging from casual conversation to formal academic writing.
 
-## 主谓一致（扩展）
+## Subject-Verb Agreement (Expanded)
 
-英语中最重要的语法规则之一是主语和动词必须在人称数上保持一致：单数主语搭配单数动词，复数主语搭配复数动词。
+One 的 这 most important grammar rules 在 英语 is that a subject 和 its verb must agree 在 number: a singular subject takes a singular verb, 和 a plural subject takes a plural verb.
 
-### 动名词作主语
+### Gerunds as Subjects
 
-动名词（作为名词使用、以 -ing 结尾的动词）始终视为单数。
+A gerund (a verb used as a noun, ending 在 -ing) is always singular.
 
-**正确：**
+**Correct:**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good for your health."
+- "Running every day **is** good 为 your health."
 - "Reading **helps** improve vocabulary."
 
-**错误：**
+**Incorrect:**
 - "Eating rocks **are** dangerous." (gerund is singular)
-- "Running and swimming **is** good." (compound subject — plural, use "are")
+- "Running 和 swimming **is** good." (compound subject — plural, use "are")
 
-### 并列主语
+### Compound Subjects
 
-- 由 "and" 连接：用复数动词
-  - "Alice and Bob **are** here."
-  - "The teacher and the student **agree**."
+- Joined by "和": plural verb
+  - "Alice 和 Bob **are** here."
+  - "这 teacher 和 这 student **agree**."
 
-- 由 "or"/"nor" 连接：与离动词最近的主语保持一致
-  - "Neither the students nor the teacher **was** ready."
-  - "Neither the teacher nor the students **were** ready."
+- Joined by "or"/"nor": agree 与 这 subject closest to 这 verb
+  - "Neither 这 students nor 这 teacher **was** ready."
+  - "Neither 这 teacher nor 这 students **were** ready."
 
-### 集合名词
+### Collective Nouns
 
-在美式英语中，集合名词（team、committee、group、family）通常搭配单数动词：
-- "The team **is** practising."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb 在 American 英语:
+- "这 team **is** practising."
+- "这 committee **has** made a decision."
 
-在英式英语中，视语境不同，也可以使用复数动词。
+在 British 英语, plural verbs are also accepted depending on context.
 
-### 不定代词
+### Indefinite Pronouns
 
-以下不定代词**始终视为单数**：
+这 following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
-**正确：**
+**Correct:**
 - "Everyone **is** invited."
-- "Each of the students **has** completed the assignment."
+- "Each 的 这 students **has** completed 这 assignment."
 
-**错误：**
+**Incorrect:**
 - "Everyone **are** invited."
 
-## 认知诚实——知道何时说 "I Don't Know"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**认知诚实（epistemic honesty）** 指如实说明自己知识的边界。与其给出听起来很自信却错误的答案，不如坦率地说 "I don't have reliable information on that"。
+**Epistemic honesty** means being truthful about 这 limits 的 one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**幻觉（hallucination）** 指 AI 系统倾向于生成听起来可信、但事实上不正确的陈述。防范幻觉，要求我们识别某个问题是否超出可用知识范围，并以诚实承认不确定性的方式回应，而不是编造答案。
+**Hallucination** is 这 tendency 的 AI 系统 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 可用 knowledge 和 responding 与 an honest acknowledgement 的 uncertainty rather than an invented answer.
 
-**表达不确定性的常用说法：**
+**Useful phrases 为 expressing uncertainty:**
 - "I'm not certain, but…"
-- "You may want to verify this with a specialist."
+- "You may want to verify this 与 a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my knowledge base."
+- "This is outside my 知识库."
 
-**对于健康、医疗、法律或安全问题：**
-与其提供具体建议，不如始终转介给合格的专业人士。若脱离专业语境就给出某种物质的推荐剂量、某种疾病的治疗方案或法律裁决，可能造成真实伤害，因此必须避免。
+**为 health, medical, 法律, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose 的 a substance, a treatment 为 a disease, or a 法律 ruling without professional context can cause real harm 和 must be avoided.

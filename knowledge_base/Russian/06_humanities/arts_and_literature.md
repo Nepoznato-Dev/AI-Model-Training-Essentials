@@ -1,223 +1,229 @@
-# Искусство и литература
+<!-- 
+This file was automatically translated from English to Russian.
+Source: arts_and_literature.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## Литературные жанры и формы
+# Искусства и Литература
 
-### Жанры художественной литературы
-- **Литературная проза**: произведения, ориентированные на раскрытие персонажей, тематику, стиль и психологическую глубину (например, "To Kill a Mockingbird" Harper Lee)
-- **Научная фантастика**: спекулятивная проза о технологиях будущего, космических исследованиях, путешествиях во времени и параллельных вселенных (например, "Dune" Frank Herbert, "1984" George Orwell)
-- **Фэнтези**: волшебные миры, мифические существа, сверхъестественные элементы (например, "The Lord of the Rings" J.R.R. Tolkien, "Harry Potter" J.K. Rowling)
-- **Детектив/мистика**: сюжеты о раскрытии преступлений с загадками и расследованиями (например, серия об Эркюле Пуаро Агаты Кристи, Sherlock Holmes Arthur Conan Doyle)
-- **Ужасы**: произведения, призванные пугать, тревожить или создавать напряжение (например, "The Shining" Stephen King, "Dracula" Bram Stoker)
-- **Любовный роман**: акцент на романтических отношениях и эмоциональном пути героев (например, "Pride and Prejudice" Jane Austen, романы Nicholas Sparks)
-- **Историческая проза**: действие разворачивается в конкретные исторические эпохи с достоверными деталями (например, "The Book Thief" Markus Zusak, "Wolf Hall" Hilary Mantel)
-- **Магический реализм**: реалистичная среда, где магические элементы воспринимаются как нечто обычное (например, "One Hundred Years of Solitude" Gabriel García Márquez)
+## Literary Genres и Forms
 
-### Жанры нон-фикшн
-- **Биография/автобиография**: истории жизни реальных людей (например, "The Diary of a Young Girl" Anne Frank, "Becoming" Michelle Obama)
-- **Мемуары**: личные воспоминания, сосредоточенные на конкретном опыте или теме
-- **Эссе**: короткие прозаические тексты на определённую тему (например, работы James Baldwin, Joan Didion)
-- **Журналистика**: новостные материалы, журналистские расследования, feature articles
-- **Академическое письмо**: научные статьи, исследовательские работы, диссертации
-- **Самопомощь**: руководства по личному развитию и самосовершенствованию
+### Fiction Genres
+- **Literary Fiction**: Character-driven narratives focusing on themes, style, и psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
+- **Наука Fiction**: Speculative fiction exploring futuristic Технология, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "the Lord из the Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Mystery/Detective**: Crime-solving narratives с puzzles и investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
+- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "the Shining" by Stephen King, "Dracula" by Bram Stoker)
+- **Romance**: Focus on romantic relationships и emotional journeys (e.g., Jane Austen's "Pride и Prejudice", Nicholas Sparks novels)
+- **Historical Fiction**: Set в specific historical periods с accurate details (e.g., "the Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
+- **Magical Realism**: Realistic settings с magical elements treated as ordinary (e.g., "One Hundred Years из Solitude" by Gabriel García Márquez)
 
-### Поэтические формы
-- **Сонет**: стихотворение из 14 строк с определённой схемой рифмовки (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
-- **Хайку**: японская форма со схемой слогов 5-7-5
-- **Лимерик**: юмористическое стихотворение из пяти строк со схемой рифмовки AABBA
-- **Свободный стих**: без регулярного метра и схемы рифмы
-- **Вилланелла**: 19 строк с определённой схемой повторов (например, "Do Not Go Gentle into That Good Night" Dylan Thomas)
-- **Ода**: лирическое стихотворение, прославляющее человека, событие или предмет
-- **Эпос**: длинная повествовательная поэма о героических деяниях (например, "The Odyssey" Homer, "Beowulf")
+### Non-Fiction Genres
+- **Biography/Autobiography**: Life stories из real people (e.g., "the Diary из a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
+- **Memoir**: Personal accounts focusing on specific experiences or themes
+- **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
+- **Journalism**: News reporting, investigative pieces, feature articles
+- **Academic Writing**: Research papers, scholarly articles, dissertations
+- **Self-Help**: Personal Разработка и improvement guides
 
-## Основные литературные направления
+### Poetry Forms
+- **Sonnet**: 14-line poem с specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
+- **Haiku**: Japanese form с 5-7-5 syllable pattern
+- **Limerick**: Five-line humorous poem с AABBA rhyme scheme
+- **Free Verse**: No regular meter or rhyme pattern
+- **Villanelle**: 19 lines с specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
+- **Ode**: Lyrical poem praising a person, event, or thing
+- **Epic**: Long narrative poem about heroic deeds (e.g., "the Odyssey" by Homer, "Beowulf")
 
-### Исторические периоды
-- **Классическая литература** (8th century BCE - 5th century CE): греческие и римские произведения, подчёркивающие разум, порядок и гуманизм
-- **Средневековая литература** (5th - 15th century): религиозные темы, рыцарские романы, аллегории (например, "The Divine Comedy" Dante)
-- **Возрождение** (14th - 17th century): гуманизм, возрождение интереса к классическому знанию (например, Shakespeare, Cervantes)
-- **Просвещение** (17th - 18th century): разум, наука, права личности (например, Voltaire, Jonathan Swift)
-- **Романтизм** (late 18th - mid-19th century): чувство, природа, индивидуализм (например, Wordsworth, Goethe, Mary Shelley)
-- **Реализм** (mid-19th century): точное изображение повседневной жизни (например, Tolstoy, George Eliot, Mark Twain)
-- **Модернизм** (late 19th - mid-20th century): экспериментальные формы, поток сознания (например, James Joyce, Virginia Woolf, T.S. Eliot)
-- **Постмодернизм** (mid-20th century - present): фрагментарность, метапроза, ирония (например, Thomas Pynchon, Don DeLillo)
+## Major Literary Movements
 
-## Изобразительное искусство
+### Historical Periods
+- **Classical Литература** (8th century BCE - 5th century CE): Greek и Roman works emphasizing reason, order, и humanism
+- **Medieval Литература** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "the Divine Comedy" by Dante)
+- **Renaissance** (14th - 17th century): Humanism, revival из classical learning (e.g., Shakespeare, Cervantes)
+- **Enlightenment** (17th - 18th century): Reason, Наука, individual rights (e.g., Voltaire, Jonathan Swift)
+- **Romanticism** (late 18th - mid-19th century): Emotion, Природа, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
+- **Realism** (mid-19th century): Accurate depiction из everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
+- **Modernism** (late 19th - mid-20th century): Experimental forms, stream из consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
+- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
 
-### Художественные направления
-- **Возрождение** (14th - 17th century): реализм, перспектива, анатомия человека (например, Leonardo da Vinci, Michelangelo, Raphael)
-- **Барокко** (17th century): драматическое освещение, эмоциональная интенсивность (например, Caravaggio, Rembrandt, Bernini)
-- **Импрессионизм** (late 19th century): свет, цвет, видимые мазки кисти (например, Monet, Renoir, Degas)
-- **Постимпрессионизм** (late 19th century): смелые цвета, геометрические формы (например, Van Gogh, Cézanne, Gauguin)
-- **Кубизм** (early 20th century): геометрические формы, множественные перспективы (например, Picasso, Braque)
-- **Сюрреализм** (1920s - 1940s): образы сна, бессознательное (например, Dalí, Magritte, Frida Kahlo)
-- **Абстрактный экспрессионизм** (1940s - 1950s): спонтанная, жестовая живопись (например, Pollock, Rothko, de Kooning)
-- **Поп-арт** (1950s - 1960s): образы массовой культуры (например, Warhol, Lichtenstein)
-- **Современное искусство** (1970s - present): разнообразные медиа, концептуальные подходы, социальный комментарий
+## Visual Искусства
 
-### Художественные медиумы и техники
-- **Живопись**: масло, акрил, акварель, фреска, темпера
-- **Рисунок**: карандаш, уголь, тушь, пастель, conte crayon
-- **Скульптура**: резьба (камень, дерево), лепка (глина, воск), литьё (бронза, металл), сборка
-- **Печатная графика**: офорт, литография, шелкография, ксилография
-- **Фотография**: цифровая, плёночная, документальная, портретная, пейзажная, уличная фотография
-- **Цифровое искусство**: 3D modeling, digital painting, generative art, NFTs
-- **Инсталляция**: site-specific работы, иммерсивные пространства
-- **Перформанс**: живые действия, body art, happenings
+### Art Movements
+- **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
+- **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
+- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
+- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
+- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
+- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
+- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
+- **Pop Art** (1950s - 1960s): Popular Культура imagery (e.g., Warhol, Lichtenstein)
+- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
 
-## Музыка
+### Art Mediums и Techniques
+- **Painting**: Oil, acrylic, watercolor, fresco, tempera
+- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
+- **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
+- **Printmaking**: Etching, lithography, screen printing, woodcut
+- **Photography**: Digital, film, documentary, portrait, landscape, street photography
+- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
+- **Installation Art**: Site-specific, immersive environments
+- **Производительность Art**: Live actions, body art, happenings
 
-### Периоды классической музыки
-- **Средневековье** (500-1400): григорианский хорал, ранняя полифония
-- **Возрождение** (1400-1600): вокальная полифония, мадригалы (например, Palestrina, Josquin des Prez)
-- **Барокко** (1600-1750): изысканные мелодии, basso continuo (например, Bach, Handel, Vivaldi)
-- **Классицизм** (1750-1820): уравновешенные формы, ясность (например, Mozart, Haydn, ранний Beethoven)
-- **Романтизм** (1820-1900): эмоциональная выразительность, расширенные оркестры (например, Chopin, Wagner, Tchaikovsky)
-- **XX век/современность**: атональность, минимализм, эксперимент (например, Stravinsky, Schoenberg, Philip Glass)
+## Music
 
-### Музыкальные жанры
-- **Джаз**: импровизация, свинговый ритм, влияние blues (например, Louis Armstrong, Miles Davis, John Coltrane)
-- **Блюз**: 12-тактовая структура, выразительный вокал (например, B.B. King, Muddy Waters)
-- **Рок**: электрогитары, сильные ритмы (например, Beatles, Led Zeppelin, Nirvana)
-- **Хип-хоп/рэп**: ритмизованная речь, биты, DJ culture (например, Tupac, Kendrick Lamar, Jay-Z)
-- **Электронная музыка**: синтезаторы, цифровое продюсирование (например, Kraftwerk, Daft Punk, Aphex Twin)
-- **Кантри**: фольклорные традиции, повествовательность (например, Johnny Cash, Dolly Parton)
-- **R&B/Soul**: эмоциональный вокал, groove (например, Aretha Franklin, Stevie Wonder, Beyoncé)
-- **Классический кроссовер**: слияние классических и популярных стилей
+### Classical Music Periods
+- **Medieval** (500-1400): Gregorian chant, early polyphony
+- **Renaissance** (1400-1600): Vocal polyphony, madrigals (e.g., Palestrina, Josquin des Prez)
+- **Baroque** (1600-1750): Ornate melodies, basso continuo (e.g., Bach, Handel, Vivaldi)
+- **Classical** (1750-1820): Balanced forms, clarity (e.g., Mozart, Haydn, Beethoven early works)
+- **Romantic** (1820-1900): Emotional expression, expanded orchestras (e.g., Chopin, Wagner, Tchaikovsky)
+- **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
 
-### Основы теории музыки
-- **Notes and Scales**: мажор, минор, хроматика, пентатоника, лады
-- **Chords and Harmony**: трезвучия, септаккорды, последовательности аккордов
-- **Rhythm and Meter**: размеры, темп, синкопа
-- **Melody and Counterpoint**: тематическое развитие, голосоведение
-- **Form and Structure**: сонатная форма, части симфонии, структура verse-chorus
+### Music Genres
+- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
+- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
+- **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
+- **Hip Hop/Rap**: Rhythmic speech, beats, DJ Культура (e.g., Tupac, Kendrick Lamar, Jay-Z)
+- **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
+- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
+- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
+- **Classical Crossover**: Fusion из classical и popular styles
 
-## Театр и перформанс
+### Music Theory Основы
+- **Notes и Scales**: Major, minor, chromatic, pentatonic, modes
+- **Chords и Harmony**: Triads, seventh chords, chord progressions
+- **Rhythm и Meter**: Time signatures, tempo, syncopation
+- **Melody и Counterpoint**: Thematic Разработка, voice leading
+- **Form и Structure**: Sonata form, symphony movements, verse-chorus structure
 
-### Типы театра
-- **Трагедия**: серьёзные темы, гибель или падение героя (например, греческие трагедии, "Hamlet" Shakespeare)
-- **Комедия**: комические ситуации, счастливые развязки (например, комедии Shakespeare, Oscar Wilde)
-- **Драма**: серьёзные повествования, исследующие человеческий конфликт
-- **Музыкальный театр**: интеграция песен, танца и диалогов (например, "Hamilton", "Les Misérables", "The Phantom of the Opera")
-- **Экспериментальный/авангардный театр**: нетрадиционные формы, участие аудитории
+## Theater и Производительность
 
-### Знаменитые драматурги
-- William Shakespeare (English, 1564-1616): "Hamlet", "Macbeth", "Romeo and Juliet"
-- Anton Chekhov (Russian, 1860-1904): "The Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "The Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death of a Salesman", "The Crucible"
-- Samuel Beckett (Irish, 1906-1989): "Waiting for Godot", "Endgame"
+### Theater Types
+- **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
+- **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
+- **Drama**: Serious narratives exploring human conflict
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "the Phantom из the Opera")
+- **Experimental/Avant-Garde**: Non-traditional forms, audience participation
+
+### Famous Playwrights
+- William Shakespeare (Английский, 1564-1616): "Hamlet", "Macbeth", "Romeo и Juliet"
+- Anton Chekhov (Russian, 1860-1904): "the Cherry Orchard", "Three Sisters"
+- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "the Glass Menagerie"
+- Arthur Miller (American, 1915-2005): "Death из a Salesman", "the Crucible"
+- Samuel Beckett (Irish, 1906-1989): "Waiting для Godot", "Endgame"
 - August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
 
-## Кино
+## Film и Cinema
 
-### Жанры кино
-- **Драма**: повествование, основанное на персонажах, эмоциональная глубина
-- **Боевик**: физические подвиги, погони, драки, взрывы
-- **Комедия**: юмор, сатира, пародия
-- **Ужасы**: страх, саспенс, сверхъестественные элементы
-- **Документальное кино**: нон-фикшн, реальные события, образовательный характер
-- **Анимация**: рисованная анимация, CGI, stop-motion
-- **Film Noir**: мрачные темы, моральная неоднозначность, выразительный визуальный стиль (1940s-1950s)
-- **Научная фантастика**: технологии будущего, космос, путешествия во времени
+### Film Genres
+- **Drama**: Character-driven narratives, emotional depth
+- **Action**: Physical feats, chases, fights, explosions
+- **Comedy**: Humor, satire, parody
+- **Horror**: Fear, suspense, supernatural elements
+- **Documentary**: Non-fiction, real События, educational
+- **Animation**: Hand-drawn, CGI, stop-motion
+- **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
+- **Наука Fiction**: Futuristic Технология, space, time travel
 
-### Кинонаправления
-- **German Expressionism** (1920s): искажённая визуальность, психологические темы ("The Cabinet of Dr. Caligari")
-- **Italian Neorealism** (1940s-1950s): истории рабочего класса, съёмки на натуре ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): новаторский монтаж, auteur theory (Godard, Truffaut)
-- **New Hollywood** (1960s-1980s): доминирование режиссёрского видения, зрелые темы (Scorsese, Coppola, Spielberg)
-- **Dogme 95** (1990s): минималистские правила, естественный свет (von Trier, Vinterberg)
+### Film Movements
+- **German Expressionism** (1920s): Distorted visuals, psychological themes ("the Cabinet из Dr. Caligari")
+- **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
+- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
+- **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
+- **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
 
-### Роли в кинопроизводстве
-- **Режиссёр**: творческое видение, работа с актёрами, общий контроль
-- **Оператор/Director of Photography**: работа камеры, освещение, визуальный стиль
-- **Сценарист**: написание сценария, диалоги, структура истории
-- **Монтажёр**: сборка материала, темп, повествовательный поток
-- **Художник-постановщик**: декорации, локации, визуальная среда
-- **Композитор**: оригинальная музыкальная партитура
+### Filmmaking Roles
+- **Director**: Creative vision, actor direction, overall control
+- **Cinematographer/Director из Photography**: Camera work, lighting, visual style
+- **Screenwriter**: Script writing, dialogue, story structure
+- **Editor**: Footage assembly, pacing, narrative flow
+- **Production Designer**: Sets, locations, visual environment
+- **Composer**: Original music score
 
-## Знаменитые авторы и произведения
+## Famous Authors и Works
 
-### Классическая литература
-- Homer: "The Iliad", "The Odyssey" (Ancient Greece)
-- Dante Alighieri: "The Divine Comedy" (Italy, 1308-1320)
+### Classic Литература
+- Homer: "the Iliad", "the Odyssey" (Ancient Greece)
+- Dante Alighieri: "the Divine Comedy" (Italy, 1308-1320)
 - Miguel de Cervantes: "Don Quixote" (Spain, 1605)
-- Jane Austen: "Pride and Prejudice", "Sense and Sensibility" (England, 1810s)
-- Leo Tolstoy: "War and Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime and Punishment", "The Brothers Karamazov" (Russia, 1860s-1880s)
-- Charles Dickens: "Great Expectations", "A Tale of Two Cities" (England, 1850s-1860s)
-- Mark Twain: "Adventures of Huckleberry Finn" (USA, 1884)
+- Jane Austen: "Pride и Prejudice", "Sense и Sensibility" (England, 1810s)
+- Leo Tolstoy: "War и Peace", "Anna Karenina" (Russia, 1860s-1870s)
+- Fyodor Dostoevsky: "Crime и Punishment", "the Brothers Karamazov" (Russia, 1860s-1880s)
+- Charles Dickens: "Great Expectations", "A Tale из Two Cities" (England, 1850s-1860s)
+- Mark Twain: "Adventures из Huckleberry Finn" (USA, 1884)
 
-### Современная литература
+### Modern Литература
 - James Joyce: "Ulysses" (Ireland, 1922)
 - Virginia Woolf: "Mrs. Dalloway", "To the Lighthouse" (England, 1920s)
-- Franz Kafka: "The Metamorphosis", "The Trial" (Czechoslovakia, 1910s-1920s)
-- Gabriel García Márquez: "One Hundred Years of Solitude" (Colombia, 1967)
-- Toni Morrison: "Beloved", "Song of Solomon" (USA, 1970s-1980s)
+- Franz Kafka: "the Metamorphosis", "the Trial" (Czechoslovakia, 1910s-1920s)
+- Gabriel García Márquez: "One Hundred Years из Solitude" (Colombia, 1967)
+- Toni Morrison: "Beloved", "Song из Solomon" (USA, 1970s-1980s)
 - Haruki Murakami: "Norwegian Wood", "Kafka on the Shore" (Japan, 1980s-present)
-- Chimamanda Ngozi Adichie: "Half of a Yellow Sun", "Americanah" (Nigeria, 2000s)
+- Chimamanda Ngozi Adichie: "Half из a Yellow Sun", "Americanah" (Nigeria, 2000s)
 
-## Литературные приёмы и техники
+## Literary Devices и Techniques
 
-### Образный язык
-- **Метафора**: прямое сравнение без слов "like" или "as"
-- **Сравнение**: сопоставление двух вещей с использованием "like" или "as"
-- **Олицетворение**: наделение нечеловеческих объектов человеческими качествами
-- **Гипербола**: намеренное преувеличение
-- **Ирония**: контраст между ожиданием и реальностью (verbal, situational, dramatic)
-- **Символизм**: предметы, представляющие абстрактные идеи
-- **Образность**: описательный язык, воздействующий на чувства
+### Figurative Язык
+- **Metaphor**: Direct comparison without "like" or "as"
+- **Simile**: Comparison using "like" or "as"
+- **Personification**: Giving human qualities to non-human things
+- **Hyperbole**: Deliberate exaggeration
+- **Irony**: Contrast between expectation и reality (verbal, situational, dramatic)
+- **Symbolism**: Objects representing abstract ideas
+- **Imagery**: Descriptive Язык appealing to senses
 
-### Повествовательные техники
-- **Точка зрения**: first person, second person, third person (limited, omniscient)
-- **Поток сознания**: непрерывный поток мыслей
-- **Ненадёжный рассказчик**: рассказчик, чья достоверность вызывает сомнение
-- **Нелинейное повествование**: события представлены вне хронологического порядка
-- **Предвосхищение**: намёки на будущие события
-- **Ретроспекция**: сцены из более раннего этапа истории
+### Narrative Techniques
+- **Point из View**: First person, second person, third person (limited, omniscient)
+- **Stream из Consciousness**: Continuous flow из thoughts
+- **Unreliable Narrator**: Narrator whose credibility is compromised
+- **Non-linear Narrative**: События presented out из chronological order
+- **Foreshadowing**: Hints about Будущее События
+- **Flashback**: Scenes from earlier в the story
 
-### Структурные элементы
-- **Сюжет**: экспозиция, завязка и нарастание действия, кульминация, спад действия, развязка
-- **Развитие персонажей**: protagonist, antagonist, динамические/статические персонажи
-- **Место и время действия**: время, место, социальный контекст
-- **Тема**: центральная идея или скрытый смысл
-- **Тон**: отношение автора к теме
-- **Настроение**: эмоциональная атмосфера, создаваемая для читателя
+### Structural Elements
+- **Plot**: Exposition, rising action, climax, falling action, resolution
+- **Character Разработка**: Protagonist, antagonist, dynamic/static characters
+- **Setting**: Time, place, social context
+- **Theme**: Central message or underlying meaning
+- **Tone**: Author's attitude toward subject
+- **Mood**: Emotional atmosphere created для reader
 
-## Культурные институции
+## Cultural Institutions
 
-### Музеи и галереи
-- Louvre (Paris): крупнейший художественный музей мира
-- Metropolitan Museum of Art (New York): всеобъемлющие коллекции
-- British Museum (London): история и культура человечества
-- Vatican Museums (Vatican City): искусство Renaissance, Sistine Chapel
-- Uffizi Gallery (Florence): шедевры итальянского Renaissance
-- Hermitage Museum (St. Petersburg): один из старейших и крупнейших музеев
-- Museum of Modern Art - MoMA (New York): modern and contemporary art
+### Museums и Galleries
+- Louvre (Paris): World's largest art museum
+- Metropolitan Museum из Art (New York): Comprehensive collections
+- British Museum (London): Human История и Культура
+- Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
+- Uffizi Gallery (Florence): Italian Renaissance masterpieces
+- Hermitage Museum (St. Petersburg): One из oldest и largest museums
+- Museum из Modern Art - MoMA (New York): Modern и contemporary art
 
-### Литературные премии
-- Nobel Prize in Literature: международное признание
-- Pulitzer Prize (USA): fiction, drama, history, poetry
-- Booker Prize (UK/Commonwealth): лучший оригинальный роман
-- Hugo Award: science fiction и fantasy
-- National Book Award (USA): американская литература
-- Man Booker International Prize: переводная художественная литература
+### Literary Awards
+- Nobel Prize в Литература: International recognition
+- Pulitzer Prize (USA): Fiction, drama, История, poetry
+- Booker Prize (UK/Commonwealth): Best original novel
+- Hugo Award: Наука fiction и fantasy
+- National Book Award (USA): American Литература
+- Man Booker International Prize: Translated fiction
 
-## Ключевые понятия художественной критики
+## Key Concepts в Art Criticism
 
-### Подходы к анализу
-- **Формализм**: фокус на визуальных элементах (line, color, composition)
-- **Иконография**: символические значения и культурные отсылки
-- **Контекстуальный анализ**: исторический, социальный, политический контекст
-- **Феминистская критика**: репрезентация гендера, женщины-художницы
-- **Постколониальная критика**: колониальное наследие, культурная идентичность
-- **Психоаналитическая критика**: бессознательные мотивы, символизм
+### Analysis Frameworks
+- **Formalism**: Focus on visual elements (line, color, composition)
+- **Iconography**: Symbolic meanings и cultural references
+- **Contextual Analysis**: Historical, social, political context
+- **Feminist Criticism**: Gender representation, women artists
+- **Postcolonial Criticism**: Colonial legacy, cultural identity
+- **Psychoanalytic Criticism**: Unconscious motivations, symbolism
 
-### Эстетические принципы
-- **Баланс**: распределение визуального веса (symmetrical, asymmetrical)
-- **Контраст**: различия между элементами (light/dark, large/small)
-- **Акцент**: фокусные точки, области интереса
-- **Движение**: визуальный поток, направляющий взгляд зрителя
-- **Паттерн**: повторение элементов
-- **Пропорция**: соотношение размеров между частями
-- **Единство**: цельность и гармония всей композиции
-
+### Aesthetic Principles
+- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
+- **Contrast**: Differences в elements (light/dark, large/small)
+- **Emphasis**: Focal points, areas из interest
+- **Movement**: Visual flow guiding viewer's eye
+- **Pattern**: Repetition из elements
+- **Proportion**: Size relationships between parts
+- **Unity**: Coherence и harmony из whole composition

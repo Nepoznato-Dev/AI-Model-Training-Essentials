@@ -1,334 +1,341 @@
-# 数据科学与分析
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: data_science_and_analytics.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 核心概念
+# 数据 科学 和 Analytics
 
-### 什么是数据科学？
-数据科学是一门跨学科领域，使用科学方法、流程、算法和系统，从结构化与非结构化数据中提取知识和洞见。它结合了：
-- **统计学**：分析的数学基础
-- **计算机科学**：编程、算法、数据结构
-- **领域知识**：对具体主题的专业理解
-- **数据可视化**：有效传达发现
+## Core Concepts
 
-### 数据类型
-- **结构化数据**：按行 / 列组织（数据库、电子表格）
-- **非结构化数据**：没有预定义格式（文本、图像、音频、视频）
-- **半结构化数据**：有一定组织性，但不严格（JSON、XML、HTML）
-- **时间序列数据**：按时间顺序索引的连续数据点
-- **空间数据**：与地理位置相关的信息
-- **图数据**：由节点和边表示关系
+### What is 数据 科学?
+数据 科学 is an interdisciplinary field that uses scientific methods, processes, algorithms, 和 系统 to extract knowledge 和 insights from structured 和 unstructured 数据. It combines:
+- **统计**: Mathematical foundation 为 analysis
+- **Computer 科学**: Programming, algorithms, 数据 structures
+- **Domain Expertise**: Subject matter knowledge
+- **数据 Visualization**: Communicating findings effectively
 
-### 数据科学流程（CRISP-DM）
-1. **业务理解**：定义目标和需求
-2. **数据理解**：收集并探索初始数据
-3. **数据准备**：清洗、转换并格式化数据（通常占 80% 的工作量）
-4. **建模**：选择并应用建模技术
-5. **评估**：根据目标评估模型表现
-6. **部署**：在生产环境中落地模型
+### 数据 Types
+- **Structured 数据**: Organized 在 rows/columns (databases, spreadsheets)
+- **Unstructured 数据**: No predefined format (text, images, audio, video)
+- **Semi-structured 数据**: Some organization but not rigid (JSON, XML, HTML)
+- **Time Series 数据**: Sequential 数据 points indexed 在 time order
+- **Spatial 数据**: Geographic/location-based information
+- **Graph 数据**: Nodes 和 edges representing relationships
 
-## 统计学基础
+### 这 数据 科学 Process (CRISP-DM)
+1. **商业 Understanding**: Define objectives 和 requirements
+2. **数据 Understanding**: Collect 和 explore initial 数据
+3. **数据 Preparation**: Clean, transform, 和 format 数据 (80% 的 work)
+4. **Modeling**: Select 和 apply modeling techniques
+5. **Evaluation**: Assess model 性能 against objectives
+6. **部署**: Implement model 在 production environment
 
-### 描述统计
-- **集中趋势度量**：均值、中位数、众数
-- **离散程度度量**：极差、方差、标准差、四分位距
-- **分布形状**：偏度（不对称性）、峰度（尾部厚度）
-- **百分位数与四分位数**：在分布中的位置
+## 统计 基础
 
-### 推断统计
-- **假设检验**：原假设、备择假设、p 值
-- **置信区间**：可能包含总体参数的取值范围
-- **统计显著性**：结果由偶然造成的可能性
-- **I 类错误**：假阳性（错误地拒绝真实的原假设）
-- **II 类错误**：假阴性（未能拒绝错误的原假设）
-- **检验功效**：正确拒绝错误原假设的概率
+### Descriptive 统计
+- **Measures 的 Central Tendency**: Mean, median, mode
+- **Measures 的 Dispersion**: Range, variance, standard deviation, interquartile range
+- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
+- **Percentiles 和 Quartiles**: Position within distribution
 
-### 概率分布
-- **正态分布**：钟形曲线，均值 = 中位数 = 众数
-- **二项分布**：成功 / 失败结果
-- **泊松分布**：固定区间内事件发生次数
-- **均匀分布**：所有结果等可能
-- **指数分布**：事件之间的时间间隔
-- **t 分布**：小样本、总体方差未知
-- **卡方分布**：用于分类数据分析
+### Inferential 统计
+- **Hypothesis 测试**: Null hypothesis, alternative hypothesis, p-values
+- **Confidence Intervals**: Range 的 values likely containing population parameter
+- **Statistical Significance**: Likelihood results occurred by chance
+- **Type I Error**: False positive (rejecting true null hypothesis)
+- **Type II Error**: False negative (failing to reject false null hypothesis)
+- **Power**: Probability 的 correctly rejecting false null hypothesis
 
-### 统计检验
-- **t 检验**：比较两组均值
-- **ANOVA**：比较多组均值
-- **卡方检验**：检验分类变量之间的独立性
-- **Mann-Whitney U 检验**：t 检验的非参数替代方法
-- **Pearson 相关系数**：连续变量之间的线性关系
-- **Spearman 相关系数**：单调关系（基于秩）
-- **Kolmogorov-Smirnov 检验**：比较分布差异
+### Probability Distributions
+- **Normal Distribution**: Bell curve, mean = median = mode
+- **Binomial Distribution**: Success/failure outcomes
+- **Poisson Distribution**: Count 的 事件 在 fixed interval
+- **Uniform Distribution**: All outcomes equally likely
+- **Exponential Distribution**: Time between 事件
+- **t-Distribution**: Small sample sizes, unknown population variance
+- **Chi-Square Distribution**: Categorical 数据 analysis
 
-## 数据采集与存储
+### Statistical Tests
+- **t-test**: Compare means between two groups
+- **ANOVA**: Compare means across multiple groups
+- **Chi-Square Test**: Test independence 的 categorical variables
+- **Mann-Whitney U**: Non-parametric alternative to t-test
+- **Pearson Correlation**: Linear relationship between continuous variables
+- **Spearman Correlation**: Monotonic relationship (rank-based)
+- **Kolmogorov-Smirnov**: Compare distributions
 
-### 数据来源
-- **数据库**：SQL、NoSQL、关系型数据库、文档型存储
-- **API**：REST、GraphQL、网页抓取
-- **文件**：CSV、JSON、XML、Parquet、Avro
-- **流式数据**：Kafka、Kinesis、实时数据流
-- **调查与实验**：一手数据采集
-- **公共数据集**：政府数据、Kaggle、学术仓库
+## 数据 Collection 和 Storage
 
-### 数据仓储
-- **ETL**：抽取（Extract）、转换（Transform）、加载（Load）流程
-- **数据湖**：以原生格式存储原始数据
-- **数据仓库**：面向分析的结构化、加工后数据
-- **数据集市**：面向特定部门的数据仓库子集
-- **OLAP**：联机分析处理，多维查询
-- **星型模型**：事实表被维度表包围
-- **雪花模型**：规范化后的维度表结构
+### 数据 Sources
+- **Databases**: SQL, NoSQL, relational, document stores
+- **APIs**: REST, GraphQL, 网络 scraping
+- **Files**: CSV, JSON, XML, Parquet, Avro
+- **Streaming 数据**: Kafka, Kinesis, real-time feeds
+- **Surveys 和 Experiments**: Primary 数据 collection
+- **Public Datasets**: Government 数据, Kaggle, academic repositories
 
-### 数据库类型
-- **关系型（SQL）**：MySQL、PostgreSQL、Oracle、SQL Server
-- **文档型**：MongoDB、CouchDB（类似 JSON 的文档）
-- **键值型**：Redis、DynamoDB（简单键值对）
-- **列族型**：Cassandra、HBase（针对列优化）
-- **图数据库**：Neo4j、Amazon Neptune（节点与关系）
-- **时序型**：InfluxDB、TimescaleDB（带时间戳的数据）
-- **向量型**：Pinecone、Milvus（用于 ML 的 embedding 存储）
+### 数据 Warehousing
+- **ETL**: Extract, Transform, Load process
+- **数据 Lake**: Raw 数据 storage 在 native format
+- **数据 Warehouse**: Structured, processed 数据 为 analysis
+- **数据 Mart**: Subset 的 warehouse 为 specific department
+- **OLAP**: Online Analytical Processing, multidimensional queries
+- **Star Schema**: Fact tables surrounded by dimension tables
+- **Snowflake Schema**: Normalized dimension tables
 
-## 数据预处理
+### 数据库 Types
+- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
+- **Document**: MongoDB, CouchDB (JSON-like documents)
+- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
+- **Column-Family**: Cassandra, HBase (optimized 为 columns)
+- **Graph**: Neo4j, Amazon Neptune (nodes 和 relationships)
+- **Time-Series**: InfluxDB, TimescaleDB (timestamped 数据)
+- **Vector**: Pinecone, Milvus (embedding storage 为 ML)
 
-### 数据清洗
-- **缺失值**：插补（均值、中位数、众数、预测）、删除
-- **离群值**：检测（IQR、Z-score）、处理（截断、变换）
-- **重复数据**：识别与删除
-- **不一致性**：统一格式、修正拼写错误
-- **数据校验**：检查约束、范围和类型
+## 数据 Preprocessing
 
-### 数据转换
-- **归一化**：缩放到 0-1 区间
-- **标准化**：Z-score 标准化（mean=0，std=1）
-- **编码**：One-hot、label、ordinal、target encoding
-- **分箱**：将连续值分组为类别
-- **对数变换**：降低偏态
-- **特征缩放**：让特征具有可比性
+### 数据 Cleaning
+- **Missing Values**: Imputation (mean, median, mode, prediction), deletion
+- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
+- **Duplicates**: Identification 和 removal
+- **Inconsistencies**: Standardizing formats, fixing typos
+- **数据 Validation**: Checking constraints, ranges, types
 
-### 特征工程
-- **特征创建**：从已有特征中衍生新特征
-- **特征选择**：挑选最相关的特征
-  - 过滤法（相关性、卡方）
-  - 包装法（递归特征消除）
-  - 嵌入法（LASSO、基于树的重要性）
-- **降维**：PCA、t-SNE、UMAP
-- **交互项**：以乘积方式组合特征
-- **多项式特征**：构造高阶项
+### 数据 Transformation
+- **Normalization**: Scaling to 0-1 range
+- **Standardization**: Z-score normalization (mean=0, std=1)
+- **Encoding**: One-hot, label, ordinal, target encoding
+- **Binning**: Grouping continuous values into categories
+- **Log Transformation**: Reducing skewness
+- **Feature Scaling**: Making features comparable
 
-## 探索性数据分析（EDA）
+### Feature Engineering
+- **Feature Creation**: Deriving new features from existing ones
+- **Feature Selection**: Choosing most relevant features
+  - Filter methods (correlation, chi-square)
+  - Wrapper methods (recursive feature elimination)
+  - Embedded methods (LASSO, tree-based importance)
+- **Dimensionality Reduction**: PCA, t-SNE, UMAP
+- **Interaction Terms**: Combining features multiplicatively
+- **Polynomial Features**: Creating higher-order terms
 
-### EDA 技术
-- **汇总统计**：描述集中趋势、离散程度和分布形状
-- **单变量分析**：单个变量的分布
-- **双变量分析**：两个变量之间的关系
-- **多变量分析**：多个变量之间的交互关系
-- **相关性分析**：识别关联与多重共线性
-- **分群**：将相似观测分组
+## Exploratory 数据 Analysis (EDA)
 
-### 可视化工具
-- **直方图**：单个变量的分布
-- **箱线图**：五数概括、离群值检测
-- **散点图**：两个连续变量之间的关系
-- **热力图**：相关矩阵、密度分布
-- **条形图**：类别比较
-- **折线图**：随时间变化的趋势
-- **小提琴图**：结合箱线图元素的分布密度图
-- **成对图（Pair Plots）**：多个变量两两之间的散点图
+### EDA Techniques
+- **Summary 统计**: Describe central tendency, spread, shape
+- **Univariate Analysis**: Single variable distributions
+- **Bivariate Analysis**: Relationships between two variables
+- **Multivariate Analysis**: Multiple variable interactions
+- **Correlation Analysis**: Identify relationships 和 multicollinearity
+- **Segmentation**: Group similar observations
 
-### 用于 EDA 的 Python 库
-- **pandas**：数据处理与分析
-- **numpy**：数值计算
-- **matplotlib**：基础绘图
-- **seaborn**：统计可视化
-- **plotly**：交互式可视化
-- **scipy**：科学计算与统计
+### Visualization Tools
+- **Histograms**: Distribution 的 single variable
+- **Box Plots**: Five-number summary, outlier detection
+- **Scatter Plots**: Relationship between two continuous variables
+- **Heatmaps**: Correlation matrices, density
+- **Bar Charts**: Categorical comparisons
+- **Line Charts**: Trends over time
+- **Violin Plots**: Distribution density 与 box plot elements
+- **Pair Plots**: Multiple scatter plots 为 variable pairs
 
-## 数据科学中的机器学习
+### Python Libraries 为 EDA
+- **pandas**: 数据 manipulation 和 analysis
+- **numpy**: Numerical 计算
+- **matplotlib**: Basic plotting
+- **seaborn**: Statistical visualization
+- **plotly**: Interactive visualizations
+- **scipy**: Scientific 计算 和 统计
 
-### 监督学习
-- **回归**：预测连续值
-  - 线性回归
-  - 多项式回归
-  - Ridge / LASSO / Elastic Net
-  - 决策树回归器
-  - 随机森林回归器
-  - 梯度提升（XGBoost、LightGBM、CatBoost）
+## 机器学习 在 数据 科学
+
+### Supervised Learning
+- **Regression**: Predict continuous values
+  - Linear Regression
+  - Polynomial Regression
+  - Ridge/LASSO/Elastic Net
+  - Decision Tree Regressor
+  - Random Forest Regressor
+  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
   
-- **分类**：预测离散标签
-  - 逻辑回归
-  - k 近邻
-  - 朴素贝叶斯
-  - 支持向量机
-  - 决策树
-  - 随机森林
-  - 梯度提升
+- **Classification**: Predict categorical labels
+  - Logistic Regression
+  - k-Nearest Neighbors
+  - Naive Bayes
+  - 支持 Vector Machines
+  - Decision Trees
+  - Random Forest
+  - Gradient Boosting
   - 神经网络
 
-### 无监督学习
-- **聚类**：将相似观测分组
+### Unsupervised Learning
+- **Clustering**: Group similar observations
   - k-Means
-  - 层次聚类
-  - DBSCAN（基于密度）
-  - 高斯混合模型
-  - 谱聚类
+  - Hierarchical Clustering
+  - DBSCAN (density-based)
+  - Gaussian Mixture Models
+  - Spectral Clustering
   
-- **降维**：减少特征数量
-  - 主成分分析（PCA）
-  - t-分布随机邻域嵌入（t-SNE）
-  - 一致流形近似与投影（UMAP）
-  - 自编码器
+- **Dimensionality Reduction**: Reduce feature count
+  - Principal Component Analysis (PCA)
+  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+  - Uniform Manifold Approximation (UMAP)
+  - Autoencoders
   
-- **关联规则**：发现经常共同出现的项
-  - Apriori 算法
+- **Association Rules**: Find co-occurring items
+  - Apriori Algorithm
   - FP-Growth
 
-### 模型评估
-- **分类指标**：准确率、精确率、召回率、F1-score、ROC-AUC、混淆矩阵
-- **回归指标**：MAE、MSE、RMSE、R²、调整后 R²
-- **交叉验证**：k 折、分层、留一法、时间序列拆分
-- **超参数调优**：网格搜索、随机搜索、贝叶斯优化
-- **学习曲线**：诊断偏差-方差权衡
+### Model Evaluation
+- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
+- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
+- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
+- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
+- **Learning Curves**: Diagnose bias-variance tradeoff
 
-## 大数据技术
+## Big 数据 Technologies
 
-### 分布式计算框架
-- **Apache Hadoop**：MapReduce、HDFS（Hadoop 分布式文件系统）
-- **Apache Spark**：内存计算，比 Hadoop 更快
-  - Spark SQL：结构化数据处理
-  - Spark Streaming：实时数据处理
-  - MLlib：机器学习库
-  - GraphX：图计算
-- **Apache Flink**：低延迟流处理
-- **Apache Beam**：统一的批处理与流处理框架
+### Distributed 计算 Frameworks
+- **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
+- **Apache Spark**: 在-memory processing, faster than Hadoop
+  - Spark SQL: Structured 数据 processing
+  - Spark Streaming: Real-time 数据
+  - MLlib: 机器学习 library
+  - GraphX: Graph processing
+- **Apache Flink**: Stream processing 与 low latency
+- **Apache Beam**: Unified batch 和 streaming
 
-### 云平台
-- **AWS**：S3、EMR、Redshift、SageMaker、Glue
-- **Google Cloud**：BigQuery、Dataproc、AI Platform、Cloud Storage
-- **Azure**：Synapse Analytics、Databricks、Machine Learning、Data Lake
-- **Snowflake**：云数据仓库
+### Cloud Platforms
+- **AWS**: S3, EMR, Redshift, SageMaker, Glue
+- **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
+- **Azure**: Synapse Analytics, Databricks, 机器学习, 数据 Lake
+- **Snowflake**: Cloud 数据 warehouse
 
-### 数据管道工具
-- **Apache Airflow**：工作流编排
-- **Luigi**：数据管道管理（Spotify）
-- **Prefect**：现代工作流编排
-- **Dagster**：以数据资产为中心的数据编排工具
-- **dbt**：在数据仓库中进行数据转换
+### 数据 Pipeline Tools
+- **Apache Airflow**: Workflow orchestration
+- **Luigi**: Pipeline 管理 (Spotify)
+- **Prefect**: Modern workflow orchestration
+- **Dagster**: 数据 orchestrator 与 asset focus
+- **dbt**: 数据 transformation 在 warehouse
 
-## 商业智能与分析
+## 商业 Intelligence 和 Analytics
 
-### BI 工具
-- **Tableau**：可视化分析平台
-- **Power BI**：微软商业分析工具
-- **Looker**：数据探索与洞察（Google）
-- **Qlik Sense**：关联式分析
-- **Metabase**：开源 BI 工具
-- **Superset**：Apache 开源 BI 平台
+### BI Tools
+- **Tableau**: Visual analytics platform
+- **Power BI**: Microsoft 商业 analytics
+- **Looker**: 数据 exploration 和 insights (Google)
+- **Qlik Sense**: Associative analytics
+- **Metabase**: Open-source BI
+- **Superset**: Apache open-source BI
 
-### 仪表板设计原则
-- **了解你的受众**：按用户需求定制
-- **选择合适的可视化**：让图表类型匹配数据类型
-- **有策略地使用颜色**：突出关键信息
-- **保持一致性**：统一格式和刻度
-- **支持交互**：过滤器、下钻、工具提示
-- **优化性能**：快速加载、高效查询
-- **移动端考量**：响应式设计
+### Dashboard Design Principles
+- **Know Your Audience**: Tailor to user needs
+- **Choose Right Visualizations**: Match chart to 数据 type
+- **Use Color Strategically**: Highlight important information
+- **Maintain Consistency**: Standardize formats 和 scales
+- **Enable Interactivity**: Filters, drill-downs, tooltips
+- **Optimize 性能**: Fast loading, efficient queries
+- **Mobile Considerations**: Responsive design
 
-### 关键绩效指标（KPI）
-- **财务类**：收入、利润率、ROI、客户生命周期价值
-- **客户类**：获客成本、流失率、满意度评分、NPS
-- **运营类**：效率指标、周期时间、缺陷率
-- **营销类**：转化率、点击率、归因效果
-- **产品类**：活跃用户、参与度、留存、功能采用率
+### Key 性能 Indicators (KPIs)
+- **Financial**: Revenue, profit margin, ROI, customer lifetime value
+- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
+- **Operational**: Efficiency rates, cycle time, defect rates
+- **Marketing**: Conversion rates, click-through rates, attribution
+- **Product**: Active users, engagement, retention, feature adoption
 
-## 高级分析
+## 高级 Analytics
 
-### 预测分析
-- **预测**：时间序列预测（ARIMA、Prophet、LSTM）
-- **风险建模**：信用评分、欺诈检测、保险
-- **客户分析**：流失预测、倾向性建模
-- **需求预测**：库存优化、供应链管理
-- **维护预测**：预判设备故障
+### Predictive Analytics
+- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
+- **Risk Modeling**: Credit scoring, fraud detection, insurance
+- **Customer Analytics**: Churn prediction, propensity modeling
+- **Demand Forecasting**: Inventory optimization, supply chain
+- **Maintenance Prediction**: Equipment failure anticipation
 
-### 处方分析
-- **优化**：线性规划、整数规划
-- **仿真**：蒙特卡洛方法、离散事件仿真
-- **决策分析**：决策树、影响图
-- **A/B 测试**：实验设计、统计显著性
-- **多臂老虎机**：自适应实验
+### Prescriptive Analytics
+- **Optimization**: Linear programming, integer programming
+- **Simulation**: Monte Carlo methods, discrete event simulation
+- **Decision Analysis**: Decision trees, influence diagrams
+- **A/B 测试**: Experimental design, statistical significance
+- **Multi-Armed Bandits**: Adaptive experimentation
 
-### 文本分析（NLP）
-- **文本预处理**：分词、词干提取、词形还原
-- **情感分析**：正面 / 负面 / 中性分类
-- **主题建模**：LDA、NMF 用于主题发现
-- **命名实体识别**：识别人名、地名、组织名
-- **文本分类**：垃圾邮件检测、文本归类
-- **词向量**：Word2Vec、GloVe、BERT
+### Text Analytics (NLP)
+- **Text Preprocessing**: Tokenization, stemming, lemmatization
+- **Sentiment Analysis**: Positive/negative/neutral classification
+- **Topic Modeling**: LDA, NMF 为 theme discovery
+- **Named Entity Recognition**: Identifying people, places, organizations
+- **Text Classification**: Spam detection, categorization
+- **Word Embeddings**: Word2Vec, GloVe, BERT
 
-## 数据伦理与治理
+## 数据 Ethics 和 Governance
 
-### 数据隐私
-- **GDPR**：欧盟《通用数据保护条例》
-- **CCPA**：加州《消费者隐私法案》
-- **HIPAA**：《健康保险可携性与责任法案》（美国医疗领域）
-- **匿名化**：移除个人可识别信息
-- **差分隐私**：通过加入噪声保护个人
-- **同意管理**：opt-in / opt-out 机制
+### 数据 Privacy
+- **GDPR**: EU General 数据 Protection Regulation
+- **CCPA**: California Consumer Privacy Act
+- **HIPAA**: Health Insurance Portability 和 Accountability Act (US 医疗)
+- **Anonymization**: Removing personally identifiable information
+- **Differential Privacy**: Adding noise to protect individuals
+- **Consent 管理**: Opt-在/opt-out mechanisms
 
-### 数据质量
-- **准确性**：数据是否正确
-- **完整性**：所需数据是否齐全
-- **一致性**：不同来源之间是否无冲突
-- **及时性**：是否在需要时可用
-- **有效性**：是否符合定义规则
-- **唯一性**：是否无重复
+### 数据 Quality
+- **Accuracy**: Correctness 的 数据
+- **Completeness**: All required 数据 present
+- **Consistency**: No contradictions across sources
+- **Timeliness**: 数据 可用 when needed
+- **Validity**: Conforms to defined rules
+- **Uniqueness**: No duplicates
 
-### 偏差与公平性
-- **抽样偏差**：数据采集不具代表性
-- **测量偏差**：数据采集工具存在缺陷
-- **算法偏差**：模型预测具有歧视性
-- **公平性指标**：人口统计均衡、机会平等
-- **偏差缓解**：前处理、处理中、后处理
+### Bias 和 Fairness
+- **Sampling Bias**: Non-representative 数据 collection
+- **Measurement Bias**: Flawed 数据 collection instruments
+- **Algorithmic Bias**: Discriminatory model predictions
+- **Fairness Metrics**: Demographic parity, equal opportunity
+- **Bias Mitigation**: Pre-processing, 在-processing, post-processing
 
-### 数据治理框架
-- **数据管理责任**：对数据资产负责
-- **元数据管理**：记录“关于数据的数据”
-- **数据血缘**：跟踪数据流动和转换过程
-- **访问控制**：基于角色的权限管理
-- **审计轨迹**：记录数据访问与变更
-- **合规**：遵守监管要求
+### 数据 Governance Framework
+- **数据 Stewardship**: Responsibility 为 数据 assets
+- **Metadata 管理**: 数据 about 数据 documentation
+- **数据 Lineage**: Tracking 数据 flow 和 transformations
+- **Access Control**: Role-based permissions
+- **Audit Trails**: Logging 数据 access 和 changes
+- **Compliance**: Regulatory adherence
 
-## 数据科学职业路径
+## Career Paths 在 数据 科学
 
-### 角色
-- **数据分析师**：侧重描述性分析、仪表板与报告
-- **数据科学家**：统计建模、机器学习、高级分析
-- **机器学习工程师**：生产级 ML 系统、模型部署、MLOps
-- **数据工程师**：数据管道、基础设施、ETL 流程
-- **分析经理**：团队领导、策略制定、利益相关方管理
-- **BI 开发人员**：仪表板创建、报表开发
-- **研究科学家**：新算法、论文发表、前沿研究
+### Roles
+- **数据 Analyst**: Focus on descriptive analytics, dashboards, reporting
+- **数据 Scientist**: Statistical modeling, 机器学习, 高级 analytics
+- **ML Engineer**: Production ML 系统, model 部署, MLOps
+- **数据 Engineer**: 数据 pipelines, infrastructure, ETL processes
+- **Analytics Manager**: Team leadership, strategy, stakeholder 管理
+- **BI Developer**: Dashboard creation, report 开发
+- **Research Scientist**: Novel algorithms, publications, 高级 research
 
-### 技能矩阵
-- **技术能力**：Python / R、SQL、统计学、ML 框架、云平台
-- **分析能力**：问题解决、批判性思维、实验设计
-- **沟通能力**：讲故事、可视化、演示表达
-- **业务能力**：领域知识、利益相关方管理、ROI 分析
-- **工具**：Git、Jupyter、Docker、CI/CD、模型版本控制
+### Skills Matrix
+- **Technical**: Python/R, SQL, 统计, ML frameworks, cloud platforms
+- **Analytical**: Problem-solving, critical thinking, experimental design
+- **沟通**: Storytelling, visualization, presentation skills
+- **商业**: Domain knowledge, stakeholder 管理, ROI analysis
+- **Tools**: Git, Jupyter, Docker, CI/CD, version control 为 models
 
-## 新兴趋势
+## Emerging Trends
 
-### 当前发展
-- **AutoML**：自动化机器学习流水线构建
-- **MLOps**：机器学习的 DevOps 实践
-- **Feature Stores**：集中式特征管理
-- **Data Mesh**：去中心化数据架构
-- **LLMs 与生成式 AI**：大语言模型、内容生成
-- **边缘分析**：在源设备端处理数据
-- **实时分析**：流式数据分析
-- **增强分析**：AI 辅助的数据准备与洞察生成
+### Current Developments
+- **AutoML**: Automated 机器学习 pipeline creation
+- **MLOps**: DevOps practices 为 机器学习
+- **Feature Stores**: Centralized feature 管理
+- **数据 Mesh**: Decentralized 数据 架构
+- **LLMs 和 Generative AI**: Large 语言 models, content generation
+- **Edge Analytics**: Processing 数据 at source devices
+- **Real-Time Analytics**: Streaming 数据 analysis
+- **Augmented Analytics**: AI-assisted 数据 preparation 和 insights
 
-### 未来方向
-- **量子机器学习**：将量子计算用于 ML
-- **联邦学习**：跨去中心化数据训练模型
-- **因果推断**：从相关性迈向因果关系
-- **负责任的 AI**：伦理、可解释性、透明度
-- **Data Fabric**：跨环境的一体化数据管理
+### 未来 Directions
+- **Quantum 机器学习**: Quantum 计算 为 ML
+- **Federated Learning**: Training models across decentralized 数据
+- **Causal Inference**: Moving beyond correlation to causation
+- **Responsible AI**: Ethics, explainability, transparency
+- **数据 Fabric**: Integrated 数据 管理 across environments

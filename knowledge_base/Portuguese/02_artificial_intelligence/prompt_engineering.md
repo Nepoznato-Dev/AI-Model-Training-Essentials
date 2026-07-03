@@ -1,174 +1,181 @@
-# Engenharia de Prompts
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: prompt_engineering.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Engenharia de prompts é a prática de projetar, refinar e otimizar prompts de entrada para obter a melhor saída possível de um modelo de linguagem. Ela é ao mesmo tempo uma arte e uma ciência, e é a principal interface para controlar o comportamento de LLMs sem recorrer a fine-tuning.
+# Prompt Engineering
 
----
-
-## Princípios Fundamentais
-
-### Clareza e Especificidade
-Um prompt claro não deixa espaço para ambiguidade. Especifique exatamente o que você quer, incluindo formato, extensão e perspectiva.
-
-**Vago:**
-> "Fale sobre Python."
-
-**Específico:**
-> "Explique o Global Interpreter Lock (GIL) do Python. Descreva seu impacto em multithreading, dê uma alternativa contornando a limitação e mantenha sua resposta com menos de 200 palavras."
-
-### Forneça Contexto
-Os modelos têm melhor desempenho quando conhecem o papel, o público e o objetivo.
-
-**Sem contexto:**
-> "Escreva uma função para ordenar uma lista."
-
-**Com contexto:**
-> "Você é um desenvolvedor Python sênior. Escreva uma função para ordenar uma lista de dicionários por uma chave específica. Use type hints e trate edge cases. O público são desenvolvedores júnior."
-
-### Use Instruções Positivas
-Diga ao modelo o que fazer, não apenas o que evitar. "Não use jargão" é mais fraco do que "Use linguagem simples, acessível a uma criança de 10 anos".
+Prompt engineering is o/a practice de designing, refining, e optimising input prompts to get o/a best possible output from a Idioma model. It is both an art e a Ciência, e it is o/a primary interface para controlling LLM behaviour without fine-tuning.
 
 ---
 
-## Estruturas de Prompt
+## Core Principles
 
-### Papéis de System / User / Assistant
-A maioria das APIs de LLM oferece suporte a uma estrutura multi-turn:
+### Clarity e Specificity
+A clear prompt leaves no room para ambiguity. Specify exactly what you want, including format, length, e perspective.
 
-- **System message**: Define o comportamento, a persona e as restrições do modelo (persistem durante toda a sessão).
-- **User message**: A consulta ou instrução atual.
-- **Assistant message**: As respostas anteriores do modelo (usadas para continuidade).
+**Vague:**
+> "Tell me about Python."
 
-**Exemplo (estilo OpenAI API):**
-System: Você é um assistente útil de programação. Responda com exemplos de código concisos e explicações breves. Nunca forneça código inseguro.
-User: Escreva uma função em Python para baixar um arquivo a partir de uma URL.
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, e keep your answer under 200 words."
+
+### Provide Context
+Models perform better when they know o/a role, audience, e goal.
+
+**Without context:**
+> "Write a function to sort a list."
+
+**com context:**
+> "You are a senior Python developer. Write a function to sort a list de dictionaries by a given key. Use type hints e handle edge cases. o/a audience is junior developers."
+
+### Use Positive Instructions
+Tell o/a model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Idioma accessible to a 10-year-old."
+
+---
+
+## Prompt Structures
+
+### System / User / Assistant Roles
+Most LLM APIs Suporte a multi-turn structure:
+
+- **System message**: Sets o/a model's behaviour, persona, e constraints (persists para o/a whole session).
+- **User message**: o/a current query or instruction.
+- **Assistant message**: o/a model's previous responses (used para continuity).
+
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply com concise code Exemplos e brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-Forneça 2–3 exemplos do formato desejado de entrada e saída antes de pedir ao modelo para executar a tarefa. Isso ensina o padrão.
+Provide 2–3 Exemplos de o/a desired input-output format before asking o/a model to perform o/a task. This teaches o/a pattern.
 
-**Exemplo:**
-User: Converta estas frases para a voz passiva:
-Input: O gato perseguiu o rato.
-Output: O rato foi perseguido pelo gato.
-Input: O chef cozinhou a refeição.
-Output: A refeição foi cozinhada pelo chef.
-Input: A tempestade destruiu a casa.
-Output: (o modelo completa)
+**Example:**
+User: Convert these sentences to passive voice:
+Input: o/a cat chased o/a mouse.
+Output: o/a mouse was chased by o/a cat.
+Input: o/a chef cooked o/a meal.
+Output: o/a meal was cooked by o/a chef.
+Input: o/a storm destroyed o/a house.
+Output: (model completes)
 
-### Chain-of-Thought (CoT)
-Incentive o modelo a mostrar o raciocínio passo a passo. Isso melhora a precisão em tarefas de aritmética, lógica e múltiplas etapas.
+### Chain-de-Thought (CoT)
+Encourage o/a model to show its reasoning step by step. This improves accuracy on arithmetic, logic, e multi-step tasks.
 
-**Sem CoT:**
-> "Quanto é 24 × 37?"
+**Without CoT:**
+> "What is 24 × 37?"
 
-**Com CoT:**
-> "Calcule 24 × 37. Mostre seu raciocínio passo a passo."
+**com CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
 
-O modelo produzirá etapas intermediárias, reduzindo erros aritméticos.
+o/a model will produce intermediate steps, reducing arithmetic errors.
 
-### Saídas Estruturadas
-Solicite um formato específico, como JSON, YAML ou tabelas em markdown, para tornar o parsing confiável.
-User: Liste três prós e três contras de microservices. Retorne apenas um objeto JSON válido com as chaves "pros" e "cons", cada uma sendo um array de strings.
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros e three cons de microservices. Return only a valid JSON object com keys "pros" e "cons", each an array de strings.
 
 ---
 
-## Técnicas Avançadas
+## Avançado Techniques
 
-### Autoconsistência
-Gere múltiplas respostas para o mesmo prompt (com temperatura > 0) e faça uma votação majoritária para a resposta final. Isso é especialmente eficaz para tarefas de raciocínio.
+### Self-Consistency
+Generate multiple responses para o/a same prompt (com a temperature > 0) e take a majority vote on o/a final answer. This is especially effective para reasoning tasks.
 
-### Tree-of-Thoughts
-Explore múltiplos caminhos de raciocínio em paralelo, avalie cada um e escolha o melhor. Esta é uma técnica de nível de pesquisa, mas pode ser aproximada pedindo ao modelo que "explore soluções alternativas".
+### Tree-de-Thoughts
+Explore multiple reasoning paths em parallel, evaluate each, e choose o/a best one. This is a research-level technique but can be approximated by asking o/a model to "explore alternative solutions."
 
 ### ReAct (Reasoning + Acting)
-Permita que o modelo intercale raciocínio com chamadas de ferramentas. Ele pode pensar, agir (por exemplo, pesquisar na web, executar código) e depois pensar novamente com base no resultado.
+Let o/a model interleave reasoning com tool calls. It can think, then act (e.g., search o/a Web, run code), then think again based on o/a result.
 
-**Estrutura do prompt:**
-Você tem acesso a uma calculadora e a um mecanismo de busca. Em cada etapa, produza:
-Thought: (seu raciocínio)
-Action: (nome da ferramenta, entrada)
-Observation: (saída da ferramenta)
-... continue até chegar à resposta final.
+**Prompt structure:**
+You have access to a calculator e a search engine. para each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have o/a final answer.
 
-### Atribuição de Persona
-Atribua uma persona específica para enquadrar a resposta.
+### Persona Assignment
+Assign a specific persona to frame o/a response.
 
 **Exemplos:**
-- "Você é um desenvolvedor do kernel Linux explicando gerenciamento de memória para um recém-formado."
-- "Você é um nutricionista amigável dando conselhos gerais a um cliente."
-- "Você é um crítico de tecnologia cínico analisando um novo gadget."
+- "You are a Linux kernel developer explaining memory Gerenciamento to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## Ajuste de Parâmetros
+## Parameter Tuning
 
-- **Temperature** (0.0 – 1.0+): Controla a aleatoriedade. Menor = mais determinístico; maior = mais criativo. Use 0.0–0.3 para respostas factuais; 0.7–1.0 para escrita criativa.
-- **Top-p** (nucleus sampling): Corta a massa de probabilidade em um determinado limite cumulativo. 0.9 significa que o modelo amostra a partir dos 90% tokens mais prováveis. Em geral, ajuste temperatura ou top-p, não ambos.
-- **Max tokens**: Define o tamanho máximo da saída. Lembre-se de reservar espaço para a resposta dentro da janela de contexto.
-- **Frequency penalty**: Reduz a repetição dos mesmos tokens.
-- **Presence penalty**: Incentiva o modelo a introduzir novos tópicos.
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 para factual answers; 0.7–1.0 para creative writing.
+- **Top-p** (nucleus sampling): Cuts off o/a probability mass at a certain cumulative threshold. 0.9 means o/a model samples from o/a top 90% de likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets o/a maximum output length. Remember to reserve space para o/a response within o/a context window.
+- **Frequency penalty**: Reduces repetition de o/a same tokens.
+- **Presence penalty**: Encourages o/a model to introduce new topics.
 
 ---
 
-## Problemas Comuns e Correções
+## Common Pitfalls e Fixes
 
-| Problema | Causa provável | Correção |
+| Problem | Likely cause | Fix |
 |---------|--------------|-----|
-| O modelo ignora partes do prompt | Prompt muito longo ou sobrecarregado | Encurte; coloque a instrução mais importante no final |
-| A saída é verbosa demais | Não há restrição de tamanho | Adicione "Limite a 3 frases" ou defina max_tokens |
-| A saída é curta demais | Restrições excessivas | Adicione "Explique em detalhes" ou reduza a temperatura |
-| Alucinações factuais | Contexto insuficiente ou pergunta ambígua | Adicione "Se não tiver certeza, diga 'não sei'" e forneça um contexto de RAG |
-| Formatação inconsistente | Não há instrução explícita de formato | Peça JSON, tabela em markdown ou lista com marcadores |
-| O modelo responde no idioma errado | Não há instrução de idioma | Declare explicitamente "Responda em inglês" (ou no idioma desejado) |
+| Model ignores parts de prompt | Prompt too long or overloaded | Shorten; put o/a most important instruction at o/a end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain em detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" e provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask para JSON, markdown table, or bullet list |
+| Model answers em wrong Idioma | No Idioma instruction | Explicitly state "Respond em Inglês" (or your target Idioma) |
 
 ---
 
-## Templates de Prompt para Tarefas Comuns
+## Prompt Templates para Common Tasks
 
-### Sumarização
-Resuma o texto a seguir em 3 bullet points. Foque nos principais argumentos e evite detalhes.
+### Summarisation
+Summarise o/a following text em 3 bullet points. Focus on o/a main arguments e avoid details.
 
-Texto: [insira o texto]
+Text: [insert text]
 
 
-### Geração de Código
-Escreva uma função em [linguagem] que [faça X].
-Requisitos:
+### Code Generation
+Write a [Idioma] function that [does X].
+Requirements:
 
 Use type hints.
 
-Inclua uma docstring.
+Include a docstring.
 
-Trate os seguintes edge cases: [lista].
+Handle edge cases: [list].
 
-Não use bibliotecas externas, a menos que isso seja especificado.
+Do not use external libraries unless specified.
 
 
-### Explicação
-Explique [conceito] para um [leigo / estudante universitário / criança]. Use uma analogia quando apropriado.
+### Explanation
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
 
 ### Brainstorming
-Gere 10 ideias para [tópico]. Para cada ideia, dê uma descrição de uma frase e um possível desafio.
+Generate 10 ideas para [topic]. para each idea, give a one-sentence description e one potential challenge.
 
 text
 
-### Classificação
-Classifique o seguinte feedback de cliente como [positivo, neutro, negativo].
-Forneça uma pontuação de confiança (0-100) e um motivo breve.
+### Classification
+Classify o/a following customer Feedback as [positive, neutral, negative].
+Provide a confidence score (0-100) e a brief reason.
 
-Feedback: [insira o texto]
+Feedback: [insert text]
 
-### Tradução com Estilo
-Traduza o texto a seguir do inglês para o espanhol. Use um tom informal adequado para uma publicação em redes sociais.
-Texto: [insira o texto]
+### Translation com Style
+Translate o/a following Inglês text to Spanish. Use an informal tone suitable para a social media post.
+Text: [insert text]
 
 ---
 
-## Avaliação de Prompts
+## Evaluation de Prompts
 
-Trate prompts como código: versione, teste e itere.
+Treat prompts as code: version them, test them, e iterate.
 
-- **Faça testes A/B** com diferentes variantes de prompt em um conjunto separado de consultas.
-- **Meça o sucesso** por meio de avaliação humana ou métricas automatizadas (ex.: exact match, BLEU, pontuação personalizada).
-- **Mantenha um registro de prompts** (um arquivo de texto simples ou planilha) com o prompt, a versão e o desempenho observado.
+- **A/B test** different prompt variants on a held-out set de queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) com o/a prompt, version, e observed Desempenho.
 
 ---

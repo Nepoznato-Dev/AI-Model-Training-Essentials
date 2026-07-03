@@ -1,10 +1,17 @@
-# Uso de Ferramentas
+<!-- 
+This file was automatically translated from English to Portuguese.
+Source: tool_usage.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## Git — Controle de Versão
+# Tool Usage
 
-Git é um sistema distribuído de controle de versão. Todo desenvolvedor tem uma cópia completa do histórico do repositório em sua máquina local.
+## Git — Version Control
 
-### Fluxo de trabalho principal
+Git is a distributed version control system. Every developer has a full copy de o/a repository História on their local machine.
+
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -50,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Fluxo de pull request (PR)
+### Pull request (PR) workflow
 
-1. Crie uma feature branch a partir de `main`.
-2. Faça commits na feature branch.
-3. Envie a branch: `git push origin feature/new-thing`.
-4. Abra um pull request no GitHub / GitLab.
-5. Trate o feedback da code review com commits adicionais.
-6. Faça o merge do PR quando ele for aprovado.
+1. Create a feature branch from `main`.
+2. Make commits on o/a feature branch.
+3. Push o/a branch: `git push origin feature/new-thing`.
+4. Open a pull request on GitHub / GitLab.
+5. Address code review Feedback com additional commits.
+6. Merge o/a PR once approved.
 
-### Desfazendo alterações
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -70,7 +77,7 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-## Gerenciadores de Pacotes
+## Package Managers
 
 ### pip (Python)
 
@@ -83,7 +90,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Sempre trabalhe dentro de um ambiente virtual para manter as dependências do projeto isoladas.
+Always work inside a virtual environment to keep project dependencies isolated.
 
 ### npm (Node.js / JavaScript)
 
@@ -98,7 +105,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` registra as versões exatas; faça commit dele no controle de versão.
+`package-lock.json` records exact versions; commit it to source control.
 
 ### Cargo (Rust)
 
@@ -138,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-## Fundamentos da Linha de Comando
+## Command-Line Básico
 
-### Navegação
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -156,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Processamento de texto
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -169,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes e redirecionamento
+### Pipes e redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -180,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### Rede e transferência de arquivos
+### Rede e file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -190,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-### Permissões
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -198,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Gerenciamento de processos
+### Process Gerenciamento
 
 ```bash
 ps aux                          # list running processes
@@ -209,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editores e IDEs
+## Editors e IDEs
 
 ### VS Code
 
-VS Code é um editor de código leve e multiplataforma com um rico ecossistema de extensões.
+VS Code is a lightweight, cross-platform code editor com a rich extension ecosystem.
 
-- Abrir uma pasta: `File > Open Folder` ou `code .` no terminal.
-- Paleta de comandos: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Terminal integrado: `Ctrl+`` (backtick).
-- Multi-cursor: `Alt+Click` para posicionar cursores adicionais.
-- Ir para a definição: `F12`.
-- Renomear símbolo: `F2`.
-- Formatar documento: `Shift+Alt+F`.
-- Extensões: instale suporte a linguagens (Python, Rust, Go etc.), linters e formatadores no painel Extensions (`Ctrl+Shift+X`).
-- `settings.json` (usuário ou workspace) controla o comportamento do editor.
-- `launch.json` configura o debugger.
+- Open a folder: `File > Open Folder` or `code .` em o/a terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
+- Multi-cursor: `Alt+Click` to place additional cursors.
+- Go to definition: `F12`.
+- Rename symbol: `F2`.
+- Format document: `Shift+Alt+F`.
+- Extensions: install Idioma Suporte (Python, Rust, Go, etc.), linters, e formatters from o/a Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
+- `launch.json` configures o/a debugger.
 
-### IDEs da JetBrains (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion e refatoração são recursos centrais.
-- Run/debug configurations permitem iniciar e depurar programas com um clique.
-- Suporte integrado ao Git no menu VCS.
-- `Shift+Shift` abre a caixa de diálogo Search Everywhere.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformata o código.
-- Plugins ampliam o suporte a linguagens e adicionam ferramentas.
+- Smart code completion e refactoring are core features.
+- Run/debug configurations let you launch e debug programs com one click.
+- Built-em Git Suporte em o/a VCS menu.
+- `Shift+Shift` opens o/a Search Everywhere dialog.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend Idioma Suporte e add tools.
 
-### Dicas de terminal
+### Terminal tips
 
-- Use tab completion para completar nomes de arquivos e comandos rapidamente.
-- Pressione `Ctrl+R` para pesquisar o histórico de comandos de forma interativa.
-- `alias ll='ls -la'` cria um atalho — adicione-o ao `~/.bashrc` ou `~/.zshrc`.
-- Use `tmux` ou `screen` para manter sessões ativas ao desconectar de um servidor remoto.
-- `man <command>` mostra a página de manual de qualquer comando embutido.
+- Use tab completion to finish file names e Comandos quickly.
+- Press `Ctrl+R` to search command História interactively.
+- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
+- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
+- `man <command>` shows o/a manual page para any built-em command.
 
 ---
 
 ## Docker
 
-Docker empacota aplicações e suas dependências em containers portáteis.
+Docker packages applications e their dependencies into portable containers.
 
-### Conceitos fundamentais
+### Core concepts
 
-- **Image**: um template somente leitura construído a partir de um `Dockerfile`.
-- **Container**: uma instância em execução de uma image.
-- **Registry**: um serviço de armazenamento e distribuição de imagens (Docker Hub, GHCR).
-- **Volume**: armazenamento persistente que sobrevive a um container.
+- **Image**: a read-only template built from a `Dockerfile`.
+- **Container**: a running instance de an image.
+- **Registry**: a storage e distribution service para images (Docker Hub, GHCR).
+- **Volume**: persistent storage that outlives a container.
 
-### Comandos comuns
+### Common Comandos
 
 ```bash
 # Images
@@ -279,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Exemplo de Dockerfile
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -292,7 +299,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose gerencia aplicações com múltiplos containers usando um arquivo `docker-compose.yml`.
+Docker Compose manages multi-container applications com a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"

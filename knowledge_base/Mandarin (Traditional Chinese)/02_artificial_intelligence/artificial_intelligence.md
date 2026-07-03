@@ -1,84 +1,91 @@
-# 人工智慧
+<!-- 
+This file was automatically translated from English to Mandarin (Traditional Chinese).
+Source: artificial_intelligence.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 什麼是人工智慧？
+# Artificial Intelligence
 
-人工智慧（AI）是指在機器中模擬人類智慧，這些機器被程式設計為能夠思考、學習和解決問題。AI 系統可以執行通常需要人類智慧的任務，例如辨識語音、做出決策、翻譯語言和識別圖片中的物體。這個術語是由 John McCarthy 在 1956 年的達特茅斯會議上提出的，該會議被廣泛認為是 AI 作為一個領域的創立事件。
+## What is Artificial Intelligence?
 
-現代 AI 大致分為狹義 AI（也稱為弱 AI），專為特定任務設計，以及理論上的通用人工智慧（AGI），它將在所有領域匹配或超越人類的認知能力。目前所有的 AI 系統都是狹義 AI。
+Artificial Intelligence (AI) refers to 這 simulation 的 human intelligence 在 machines programmed to think, learn, 和 solve problems. AI 系統 can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, 和 identifying objects 在 images. 這 term was coined by John McCarthy 在 1956 at 這 Dartmouth Conference, widely regarded as 這 founding event 的 AI as a field.
 
-## AI 的歷史
+Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed 為 specific tasks, 和 這 theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI 系統 are Narrow AI.
 
-AI 的歷史跨越近八十年。早期的理論基礎由 Alan Turing 奠定，他 1950 年的論文《計算機器與智慧》介紹了圖靈測試——一種衡量機器展現與人類無法區分的智慧行為能力的標準。1956 年的達特茅斯會議正式確立了 AI 作為一門學術學科。
+## 歷史 的 AI
 
-1950 年代至 1970 年代出現了樂觀的早期程式，如 ELIZA（一個簡單的聊天機器人）和 LISP（專為 AI 設計的程式語言）。1970 年代和 1980 年代的「AI 寒冬」是因未達預期而導致資金和興趣減少的時期。1980 年代隨著專家系統的出現而復甦——這些基於規則的程式編碼了人類專業知識。2000 年代在網際網路和不斷增長的資料集的推動下，機器學習取得突破。2010 年代見證了深度學習的崛起，改變了電腦視覺、自然語言處理（NLP）和強化學習。
+這 歷史 的 AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "計算 Machinery 和 Intelligence" introduced 這 Turing Test — a measure 的 a machine's ability to exhibit intelligent behaviour indistinguishable from a human. 這 1956 Dartmouth Conference formally established AI as an academic discipline.
+
+這 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) 和 LISP (a programming 語言 designed 為 AI). 這 "AI winters" 的 這 1970s 和 1980s were periods 的 reduced funding 和 interest following unmet expectations. A resurgence 在 這 1980s came 與 expert 系統 — rule-based programs that encoded human expertise. 這 2000s brought 機器學習 breakthroughs fuelled by 這 internet 和 growing datasets. 這 2010s saw 這 rise 的 深度學習, transforming computer vision, natural 語言 processing (NLP), 和 reinforcement learning.
 
 ## 機器學習
 
-機器學習（ML）是 AI 的一個子集，使系統能夠從資料中學習而無需明確程式設計。主要的 ML 類別包括：
+機器學習 (ML) is a subset 的 AI that enables 系統 to learn from 資料 without being explicitly programmed. Key ML categories include:
 
-**監督式學習**：模型在標記的輸入-輸出配對上進行訓練。範例包括垃圾郵件偵測和圖片分類。演算法包括線性迴歸、決策樹、支援向量機和神經網路。
+**Supervised Learning**: 這 model is trained on labelled input-output pairs. 範例 include spam detection 和 image classification. Algorithms include linear regression, decision trees, 支援 vector machines, 和 神經網絡.
 
-**非監督式學習**：模型在未標記的資料中尋找模式。範例包括客戶分群和異常偵測。演算法包括 k-means 聚類和主成分分析（PCA）。
+**Unsupervised Learning**: 這 model finds patterns 在 unlabelled 資料. 範例 include customer segmentation 和 anomaly detection. Algorithms include k-means clustering 和 principal component analysis (PCA).
 
-**強化學習**：代理透過與環境互動來學習，接收獎勵或懲罰。用於遊戲 AI（AlphaGo、AlphaZero）、機器人和推薦系統。
+**Reinforcement Learning**: An agent learns by interacting 與 an environment, receiving rewards or penalties. Used 在 game-playing AI (AlphaGo, AlphaZero), robotics, 和 recommendation 系統.
 
-**半監督和自監督學習**：將少量標記資料與大量未標記資料集結合。GPT 模型在預訓練期間使用自監督方法。
+**Semi-Supervised 和 Self-Supervised Learning**: Combine small amounts 的 labelled 資料 與 large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
 
 ## 深度學習
 
-深度學習是機器學習的一個子集，使用具有許多層的人工神經網路（深度網路）。受大腦神經結構的啟發，這些網路學習資料的階層表示。深度學習驅動：
+深度學習 is a subset 的 機器學習 that uses artificial 神經網絡 與 many layers (deep networks). Inspired loosely by 這 brain's neural structure, these networks learn hierarchical representations 的 資料. 深度學習 powers:
 
-- **電腦視覺**：圖片辨識、物體偵測、醫學影像
-- **自然語言處理**：機器翻譯、情感分析、問答
-- **語音辨識**：語音助理，如 Siri、Alexa、Google Assistant
-- **生成式 AI**：圖片生成（DALL-E、Stable Diffusion）、文字生成（GPT）
+- **Computer Vision**: Image recognition, object detection, medical imaging
+- **Natural 語言 Processing**: Machine translation, sentiment analysis, question answering
+- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
+- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
 
-主要的深度學習架構包括用於圖片的卷積神經網路（CNN）、用於序列的循環神經網路（RNN）和 LSTM、用於語言的 transformer 以及用於合成的生成對抗網路（GAN）。
+Key 深度學習 architectures include convolutional 神經網絡 (CNNs) 為 images, recurrent 神經網絡 (RNNs) 和 LSTMs 為 sequences, transformers 為 語言, 和 generative adversarial networks (GANs) 為 synthesis.
 
-## 大型語言模型（LLM）
+## Large 語言 Models (LLMs)
 
-大型語言模型（LLM）是在大量文字資料上訓練的 AI 系統，用於理解和生成人類語言。它們基於 Transformer 架構，該架構在 Vaswani 等人 2017 年的論文《Attention is All You Need》中引入。LLM 預測序列中的下一個 token（詞片段），使它們能夠生成連貫的文字、回答問題、編寫程式碼和執行推理任務。
+Large 語言 Models (LLMs) are AI 系統 trained on vast amounts 的 text 資料 to understand 和 generate human 語言. They are based on 這 Transformer 架構, introduced 在 這 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict 這 next token (word piece) 在 a sequence, allowing them to generate coherent text, answer questions, write code, 和 perform reasoning tasks.
 
-著名的 LLM 包括：
-- **GPT 系列**（OpenAI）：GPT-3、GPT-4 及後續版本——廣泛用於聊天和程式碼
-- **Claude**（Anthropic）：專注於安全性和幫助性
-- **Gemini**（Google DeepMind）：多模態，整合文字、圖片和程式碼
-- **LLaMA / Llama 3**（Meta）：用於研究和本地部署的開放權重模型
-- **Mistral**（Mistral AI）：高效的開放模型，與更大的 LLM 競爭
+Notable LLMs include:
+- **GPT series** (OpenAI): GPT-3, GPT-4, 和 successors — widely used 為 chat 和 code
+- **Claude** (Anthropic): Focused on safety 和 helpfulness
+- **Gemini** (Google DeepMind): Multimodal, integrating text, images, 和 code
+- **LLaMA / Llama 3** (Meta): Open-weight models 為 research 和 local 部署
+- **Mistral** (Mistral AI): Efficient open models competitive 與 much larger LLMs
 
-LLM 在兩個階段進行訓練：預訓練（在大型文字語料庫上進行無監督訓練）和微調（透過監督或人類回饋強化學習，RLHF）。上下文視窗描述了 LLM 一次可以處理多少文字，範圍從 4K token（早期 GPT-3）到最先進的 2024 年模型中超過 100 萬個 token。
+LLMs are trained 在 two stages: pre-training (unsupervised on large text corpora) 和 fine-tuning (supervised or via reinforcement learning from human 回饋, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 在 這 most 高級 2024 models.
 
-## AI 倫理和安全
+## AI Ethics 和 Safety
 
-AI 引發重要的倫理問題，包括偏見、隱私、工作取代和濫用風險。當訓練資料反映歷史不平等時，會發生演算法偏見，導致 AI 系統產生歧視性輸出。臉部辨識系統對深色皮膚個體顯示出較高的錯誤率。招聘演算法被發現偏向男性候選人。
+AI raises important ethical questions including bias, privacy, job displacement, 和 這 risk 的 misuse. Algorithmic bias occurs when training 資料 reflects historical inequalities, causing AI 系統 to produce discriminatory outputs. Facial recognition 系統 have shown higher error rates 為 darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
 
-AI 安全是致力於確保 AI 系統按預期行為而不造成意外傷害的領域。主要關注點包括：
-- **對齊**：確保 AI 目標與人類價值觀一致
-- **可解釋性/可說明性**：理解 AI 為何做出決定（在醫學、法律、金融中至關重要）
-- **濫用**：AI 生成的 deepfake、錯誤資訊、網路攻擊
-- **存在風險**：理論上的擔憂，即未來的 AGI 可能追求與人類生存不一致的目標
+AI safety is 這 field dedicated to ensuring AI 系統 behave as intended without causing unintended harm. Key concerns include:
+- **Alignment**: Ensuring AI goals match human values
+- **Interpretability / Explainability**: Understanding why an AI made a decision (critical 在 醫學, 法律, 金融)
+- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
+- **Existential risk**: Theoretical concern that a 未來 AGI could pursue goals misaligned 與 human survival
 
-致力於 AI 安全的組織包括 OpenAI 的安全團隊、Anthropic（由前 OpenAI 安全研究人員創立）、DeepMind 的安全團隊，以及 MIRI 和 ARC 等獨立機構。
+Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, 和 independent institutes like MIRI 和 ARC.
 
-## AI 在社會中的應用
+## AI 在 Society
 
-AI 正在改變幾乎每個產業：
+AI is transforming nearly every industry:
 
-- **醫療**：AI 協助從醫學影像診斷癌症、預測患者結果、加速藥物發現（AlphaFold 解決了蛋白質摺疊結構預測）以及個人化治療計畫。
-- **金融**：欺詐偵測、演算法交易、信用評分和機器人顧問使用 ML 模型。
-- **運輸**：自動駕駛車輛使用電腦視覺、光達和強化學習。Tesla Autopilot、Waymo 和 Cruise 處於領先地位。
-- **教育**：個人化學習平台根據個別學生的進度和學習風格調整內容。
-- **創意領域**：AI 生成音樂、藝術和寫作；Midjourney、DALL-E 和 GitHub Copilot 等工具改變了創意工作流程。
-- **網路安全**：AI 偵測異常、識別威脅，並同時驅動攻擊和防禦。
+- **醫療**: AI assists 在 diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), 和 personalising treatment plans.
+- **金融**: Fraud detection, algorithmic trading, credit scoring, 和 robo-advisors use ML models.
+- **Transportation**: Self-driving vehicles use computer vision, lidar, 和 reinforcement learning. Tesla Autopilot, Waymo, 和 Cruise are leading efforts.
+- **Education**: Personalised learning platforms adapt content to individual student pace 和 learning style.
+- **Creative fields**: AI generates music, art, 和 writing; tools like Midjourney, DALL-E, 和 GitHub Copilot have changed creative workflows.
+- **Cybersecurity**: AI detects anomalies, identifies threats, 和 powers both attacks 和 defences.
 
-## 機器人和具身 AI
+## Robotics 和 Embodied AI
 
-機器人將 AI 與物理機器結合。現代機器人使用感知（攝影機、光達）、規劃和控制來導航和操縱環境。Boston Dynamics 的 Atlas 展示了先進的雙足運動。ABB 和 FANUC 等公司的工業機器人自動化製造。家用機器人（Roomba）和手術機器人（da Vinci 系統）在日常和醫療環境中應用 AI。具身 AI 研究專注於透過與世界互動學習物理技能的代理，彌合模擬和真實環境之間的差距。
+Robotics combines AI 與 physical machines. Modern robots use perception (cameras, lidar), planning, 和 control to navigate 和 manipulate environments. Boston Dynamics' Atlas demonstrates 高級 bipedal movement. Industrial robots from companies like ABB 和 FANUC automate manufacturing. Household robots (Roomba) 和 surgical robots (da Vinci System) apply AI 在 everyday 和 medical settings. Embodied AI research focuses on agents that learn physical skills through interaction 與 這 world, bridging 這 gap between simulated 和 real environments.
 
-## 當前 AI 趨勢（2020 年代）
+## Current AI Trends (2020s)
 
-- **多模態 AI**：同時處理文字、圖片、音訊和影片的系統（GPT-4V、Gemini）
-- **代理和代理式 AI**：可以使用工具、瀏覽網路、編寫程式碼並採取多步驟行動的 LLM（OpenAI 的 Operator、Anthropic Computer Use）
-- **開放權重模型**：Meta 的 LLaMA 使研究人員更容易獲得大型模型
-- **裝置上 AI**：在手機和筆記型電腦上本地執行 AI 模型，無需雲端連接（Apple Intelligence、Qualcomm NPU）
-- **AI 監管**：歐盟 AI 法案（2024）是全球首個全面的 AI 法律，按風險級別對 AI 系統進行分類
+- **Multimodal AI**: 系統 that process text, images, audio, 和 video together (GPT-4V, Gemini)
+- **Agents 和 agentic AI**: LLMs that can use tools, browse 這 網路, write code, 和 take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
+- **Open-weight models**: Meta's LLaMA democratised access to large models 為 researchers
+- **On-device AI**: Running AI models locally on phones 和 laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
+- **AI regulation**: 這 EU AI Act (2024) is 這 world's first comprehensive AI 法律, classifying AI 系統 by risk level

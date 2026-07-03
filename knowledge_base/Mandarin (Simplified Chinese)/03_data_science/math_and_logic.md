@@ -1,187 +1,194 @@
-# 数学与逻辑
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: math_and_logic.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## 什么是数学？
+# Mathematics 和 Logic
 
-数学是研究数字、形状、模式和逻辑关系的学科。它既是一门科学，也是一种描述宇宙的语言。数学可分为算术、代数、几何、微积分、统计学和逻辑学等分支。数学是物理、工程、计算机科学、经济学以及许多其他领域的基础。
+## What is Mathematics?
 
-## 算术
+Mathematics is 这 study 的 numbers, shapes, patterns, 和 logical relationships. It is both a 科学 和 a 语言 used to describe 这 universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, 统计, 和 logic. Mathematics is 这 foundation 的 physics, engineering, computer 科学, 经济, 和 many other fields.
 
-算术是研究数字基本运算的数学分支。四种基本运算分别是加法（+）、减法（−）、乘法（×）和除法（÷）。运算顺序规定了计算必须遵循的先后次序：括号、指数、乘法和除法（从左到右）、加法和减法（从左到右）。这通常记作 **PEMDAS** 或 **BODMAS**。质数是大于 1 且除 1 和它本身外没有其他因数的整数。最早的一些质数包括 2、3、5、7、11、13、17、19、23 和 29。
+## Arithmetic
 
-**示例：**
-- 质因数分解：84 = 2² × 3 × 7
-- 24 和 36 的最大公约数（GCD）：12
-- 4 和 6 的最小公倍数（LCM）：12
+Arithmetic is 这 branch 的 mathematics dealing 与 basic operations on numbers. 这 four fundamental operations are addition (+), subtraction (−), multiplication (×), 和 division (÷). 这 order 的 operations specifies 这 sequence 在 which calculations must be performed: Parentheses, Exponents, Multiplication 和 Division (left to right), Addition 和 Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 和 itself. 这 first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, 和 29.
 
-## 代数
+**示例:**
+- Prime factorization: 84 = 2² × 3 × 7
+- Greatest Common Divisor (GCD) 的 24 和 36: 12
+- Least Common Multiple (LCM) 的 4 和 6: 12
 
-代数使用字母和符号来表示方程与公式中的数字和数量。**变量**是表示未知量或变化量的符号（通常是字母）。**方程**表示两个表达式相等。解方程，就是找出使方程成立的变量取值。
+## Algebra
 
-**二次公式**用于求解形如 ax² + bx + c = 0 的方程：x = (−b ± √(b²−4ac)) / (2a)
+Algebra uses letters 和 symbols to represent numbers 和 quantities 在 equations 和 formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding 这 value(s) 的 这 variable(s) that make 这 equation true.
 
-
-**函数**会将每个输入映射到唯一的输出。常见函数包括：
-- 线性函数：y = mx + b（直线，变化率恒定）
-- 二次函数：y = ax² + bx + c（抛物线，曲线）
-- 指数函数：y = a × bˣ（增长或衰减，变化迅速）
-- 对数函数：y = log_b(x)（指数函数的反函数）
-
-**关键概念：**
-- 定义域：所有可能输入值的集合
-- 值域：所有可能输出值的集合
-- 斜率：变化率（y = mx + b 中的 m）
-- 截距：函数与 y 轴相交的位置（y = mx + b 中的 b）
-
-## 几何
-
-几何学是研究图形的形状、大小、位置及其性质的数学分支。点没有大小，它表示一个位置。直线向两个方向无限延伸。线段有两个端点。角由两条共享端点的射线组成。
-
-**关键规则：**
-- 三角形内角和始终为 180 度。
-- 四边形内角和始终为 360 度。
-- 勾股定理：直角三角形中，a² + b² = c²（其中 c 为斜边）。
-- 圆周长：2πr
-- 圆面积：πr²
-- 球体积：(4/3)πr³
-
-**π（pi）** 约等于 3.14159，是圆周长与直径之比。
-
-**常见几何图形：**
-- 三角形：3 条边，内角和为 180°
-- 正方形：4 条边相等，4 个直角
-- 长方形：4 条边，对边相等，4 个直角
-- 圆：没有边，边界为连续曲线
-- 五边形：5 条边，内角和为 540°
-- 六边形：6 条边，内角和为 720°
-
-## 统计与概率
-
-统计学是收集、分析、解释和呈现数据的科学。
-
-**集中趋势度量：**
-- **均值**（平均数）：所有数值之和除以数值个数
-- **中位数**：数据排序后位于中间的值（受离群值影响较小）
-- **众数**：出现频率最高的值（可能有多个众数）
-
-**离散程度度量：**
-- **极差**：最大值 - 最小值
-- **方差**：各数值相对均值偏差平方的平均值
-- **标准差**：方差的平方根（单位与原数据相同）
-
-概率衡量事件发生的可能性，取值范围从 0（不可能）到 1（必然）。两个独立事件同时发生的概率，等于各自概率的乘积。
-
-**示例：** 在公平骰子中掷出 6 的概率是 1/6。连续两次都掷出 6 的概率是 (1/6) × (1/6) = 1/36。
-
-## 面向计算与机器学习的概率
-
-**随机变量**是其取值取决于随机过程结果的变量。**概率分布**描述了各个结果发生的可能性。
-
-**常见分布：**
-- **伯努利分布**：一次试验、两种结果（如抛硬币）
-- **二项分布**：n 次独立伯努利试验中的成功次数
-- **正态分布（高斯分布）**：钟形曲线，围绕均值对称（自然现象中很常见）
-- **泊松分布**：固定区间内事件发生次数（如每小时收到的邮件数）
-
-**期望值**是随机变量在长期中的平均结果。**方差**衡量围绕期望值的离散程度。
-
-**条件概率**描述在另一个事件已发生的前提下某事件发生的概率：P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0]。
-
-**贝叶斯定理**用证据更新信念：P(A|B) = P(B|A) × P(A) / P(B)。
+这 **quadratic formula** solves equations 的 这 form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
 
-在机器学习中，概率是分类置信度、不确定性估计、贝叶斯方法以及许多损失函数（如交叉熵）的基础。
+A **function** maps each input to exactly one output. Common functions include:
+- Linear: y = mx + b (straight line, constant rate 的 change)
+- Quadratic: y = ax² + bx + c (parabola, curved)
+- Exponential: y = a × bˣ (growth or decay, rapid change)
+- Logarithmic: y = log_b(x) (inverse 的 exponential)
 
-## 微积分
+**Key concepts:**
+- Domain: 这 set 的 all possible input values
+- Range: 这 set 的 all possible output values
+- Slope: rate 的 change (m 在 y = mx + b)
+- Intercept: where 这 function crosses 这 y-axis (b 在 y = mx + b)
 
-微积分是研究连续变化的数学分支。
+## Geometry
 
-**微分学**研究变化率和曲线斜率，使用的是**导数**。函数 f(x) 的导数表示 f 相对于 x 在某一点的变化率。记号为：f'(x) 或 df/dx。
+Geometry is 这 branch 的 mathematics that studies shapes, sizes, positions, 和 properties 的 figures. A point has no size; it represents a location. A line extends infinitely 在 both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
 
-**常见导数：**
+**Key rules:**
+- 这 sum 的 angles 在 a triangle is always 180 degrees.
+- 这 sum 的 angles 在 a quadrilateral is always 360 degrees.
+- 这 Pythagorean theorem: 在 a right triangle, a² + b² = c² (where c is 这 hypotenuse).
+- Circle circumference: 2πr
+- Circle area: πr²
+- Sphere volume: (4/3)πr³
+
+**π (pi)** is approximately 3.14159 和 is 这 ratio 的 a circle's circumference to its diameter.
+
+**Common geometric shapes:**
+- Triangle: 3 sides, angles sum to 180°
+- Square: 4 equal sides, 4 right angles
+- Rectangle: 4 sides, opposite sides equal, 4 right angles
+- Circle: no sides, continuous curved boundary
+- Pentagon: 5 sides, angles sum to 540°
+- Hexagon: 6 sides, angles sum to 720°
+
+## 统计 和 Probability
+
+统计 is 这 科学 的 collecting, analysing, interpreting, 和 presenting 数据.
+
+**Measures 的 central tendency:**
+- **Mean** (average): sum 的 all values divided by 这 number 的 values
+- **Median**: middle value when 数据 is sorted (less sensitive to outliers)
+- **Mode**: most frequently occurring value (can have multiple modes)
+
+**Measures 的 spread:**
+- **Range**: maximum - minimum
+- **Variance**: average 的 squared deviations from 这 mean
+- **Standard deviation**: square root 的 variance (在 same units as 数据)
+
+Probability measures 这 likelihood 的 an event occurring, ranging from 0 (impossible) to 1 (certain). 这 probability 的 two independent 事件 both occurring is 这 product 的 their individual probabilities.
+
+**Example:** Probability 的 rolling a 6 on a fair die: 1/6. Probability 的 rolling two 6s 在 a row: (1/6) × (1/6) = 1/36.
+
+## Probability 为 计算 和 ML
+
+A **random variable** is a variable whose value depends on 这 outcome 的 a random process. A **probability distribution** describes how likely each outcome is.
+
+**Common distributions:**
+- **Bernoulli**: single trial 与 two outcomes (e.g., coin flip)
+- **Binomial**: number 的 successes 在 n independent Bernoulli trials
+- **Normal (Gaussian)**: bell curve, symmetric around 这 mean (common 在 natural phenomena)
+- **Poisson**: number 的 事件 在 a fixed interval (e.g., emails per hour)
+
+**Expected value** is 这 long-run average outcome 的 a random variable. **Variance** measures spread around that expectation.
+
+**Conditional probability** describes 这 probability 的 an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
+
+**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
+
+
+在 机器学习, probability underpins classification confidence, uncertainty estimation, Bayesian methods, 和 many loss functions (such as cross-entropy).
+
+## Calculus
+
+Calculus is 这 branch 的 mathematics that studies continuous change.
+
+**Differential calculus** deals 与 rates 的 change 和 slopes 的 curves, using **derivatives**. 这 derivative 的 a function f(x) represents 这 rate 的 change 的 f 与 respect to x at a point. Notation: f'(x) or df/dx.
+
+**Common derivatives:**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
 - d/dx [sin(x)] = cos(x)
 
-**积分学**研究量的累积以及曲线下的面积，使用的是**积分**。积分表示两个点之间曲线下方的面积。
+**Integral calculus** deals 与 accumulation 的 quantities 和 areas under curves, using **integrals**. 这 integral represents 这 area under 这 curve between two points.
 
-**微积分基本定理**连接了微分与积分：微分和积分互为逆运算。
+这 **fundamental theorem 的 calculus** connects differentiation 和 integration: differentiation 和 integration are inverse operations.
 
-微积分由艾萨克·牛顿和戈特弗里德·威廉·莱布尼茨在 17 世纪分别独立发展出来。
+Calculus was developed independently by Isaac Newton 和 Gottfried Wilhelm Leibniz 在 这 17th century.
 
-## 数系
+## Number 系统
 
-- **自然数**：1、2、3、4、...（计数用的数字）
-- **全体非负整数**：0、1、2、3、...（自然数加上 0）
-- **整数**：...、−2、−1、0、1、2、...（所有非负整数及其相反数）
-- **有理数**：可表示为 p/q 的数，其中 p 和 q 为整数且 q ≠ 0（如 1/2、3/4、−5/3）
-- **无理数**：不能表示为分数的数（如 √2、π、e）
-- **实数**：所有有理数和无理数（数轴上的数）
-- **虚数**：涉及负数平方根；i = √(−1)
-- **复数**：由实部和虚部组成（a + bi）
+- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
+- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
+- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers 和 their negatives)
+- **Rational numbers**: numbers expressible as p/q where p 和 q are integers 和 q ≠ 0 (e.g., 1/2, 3/4, −5/3)
+- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
+- **Real numbers**: all rational 和 irrational numbers (这 number line)
+- **Imaginary numbers**: involve 这 square root 的 negative numbers; i = √(−1)
+- **Complex numbers**: combine real 和 imaginary parts (a + bi)
 
-## 逻辑与推理
+## Logic 和 Reasoning
 
-逻辑学研究有效推理。
+Logic is 这 study 的 valid reasoning.
 
-**演绎推理**从一般前提出发，得出具体结论。如果前提为真且论证有效，那么结论必然为真。
-- **示例：** 所有人都会死。苏格拉底是人。所以，苏格拉底会死。
+**Deductive reasoning** draws specific conclusions from general premises. If 这 premises are true 和 这 argument is valid, 这 conclusion must be true.
+- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
 
-**归纳推理**从具体观察出发，得出一般结论。它不能保证结论一定为真，但会让结论变得较为可信。
-- **示例：** 我见过的每一只天鹅都是白色的。所以，所有天鹅都是白色的。（注意：这是假命题；黑天鹅确实存在！）
+**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee 这 conclusion is true, but makes it probable.
+- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
 
-**常见逻辑谬误（推理错误）：**
-- **人身攻击**：攻击说话的人，而不是论点本身
-- **稻草人谬误**：歪曲对方论点，使其更容易被攻击
-- **错误二分法**：明明有更多选项，却只给出两个选择
-- **循环论证**：把结论当作前提来证明
-- **诉诸权威**：因为某个权威这么说，就断言某事为真
-- **后此谬误**：因为 A 发生在 B 之前，就认定 A 导致了 B
+**Common logical fallacies (errors 在 reasoning):**
+- **Ad hominem**: attacking 这 person rather than 这 argument
+- **Straw man**: misrepresenting an argument to make it easier to attack
+- **False dichotomy**: presenting only two options when more exist
+- **Circular reasoning**: using 这 conclusion as a premise
+- **Appeal to authority**: claiming something is true because an authority says so
+- **Post hoc fallacy**: assuming that because A happened before B, A caused B
 
-## 集合
+## Sets
 
-**集合**是由一组互不相同的对象组成的整体。
-- **并集**（A ∪ B）：来自两个集合的所有元素
-- **交集**（A ∩ B）：两个集合共有的元素
-- **空集**（∅ 或 {}）：不包含任何元素
-- **子集**（A ⊆ B）：A 中所有元素也都属于 B
-- **维恩图**：用图形直观表示集合之间的关系
+A **set** is a collection 的 distinct objects.
+- **Union** (A ∪ B): all elements from both sets
+- **Intersection** (A ∩ B): only elements common to both
+- **Empty set** (∅ or {}): contains no elements
+- **Subset** (A ⊆ B): all elements 的 A are also 在 B
+- **Venn diagrams**: visually represent relationships between sets
 
-集合论是现代数学和逻辑学的基础。
+Set theory is 这 foundation 的 modern mathematics 和 logic.
 
-## 二进制与数制
+## Binary 和 Number Bases
 
-计算机使用**二进制**（base 2）表示数据，只使用数字 0 和 1。每一个二进制位称为一个 **bit**。八个 bit 构成一个 **byte**。
+Computers represent 数据 在 **binary** (base 2), using only digits 0 和 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
 
-**十进制**是人类通常使用的 base-10 数制。
+**Decimal** is 这 base-10 number system humans typically use.
 
-**十六进制**是 base 16，使用数字 0–9 和字母 A–F，在计算中常用于更紧凑地表示二进制数据。
+**Hexadecimal** is base 16, using digits 0–9 和 letters A–F, often used 在 计算 to represent binary 数据 compactly.
 
-**转换示例：**
-- 二进制 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11（十进制）
-- 十六进制 A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163（十进制）
+**Conversions:**
+- Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
+- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
 
-不同数制之间的转换，是计算机科学中的基础概念。
+Converting between number bases is a fundamental concept 在 computer 科学.
 
-## 面向开发者与机器学习的线性代数
+## Linear Algebra 为 Developers 和 ML
 
-线性代数研究向量、矩阵和线性变换。
+Linear algebra studies vectors, matrices, 和 linear transformations.
 
-**向量**是一个有序数列（例如 ML 样本中的特征）。
-- 示例：[23, 1.8, 175] 表示一个人的年龄、身高和体重
+A **vector** is an ordered list 的 numbers (e.g., features 在 an ML sample).
+- Example: [23, 1.8, 175] represents a person's age, height, 和 weight
 
-**矩阵**是一个二维数字数组（例如模型权重或数据集批次）。
-- 示例：[[1, 2], [3, 4]] 是一个 2×2 矩阵
+A **matrix** is a 2D array 的 numbers (e.g., model weights or dataset batches).
+- Example: [[1, 2], [3, 4]] is a 2×2 matrix
 
-**矩阵乘法**用于组合线性变换，是图形学、仿真和神经网络中的核心运算。
+**Matrix multiplication** combines linear transformations 和 is a core operation 在 graphics, simulation, 和 神经网络.
 
-**点积**衡量向量之间的相似性和投影关系：
+**Dot product** measures similarity 和 projection between vectors:
 - a·b = Σ(a_i × b_i)
-- **余弦相似度** = (a·b) / (||a|| × ||b||)
-- 余弦相似度取值范围为 -1（方向相反）到 1（方向相同）
+- **Cosine similarity** = (a·b) / (||a|| × ||b||)
+- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
 
-**特征值与特征向量**描述矩阵作用下会被缩放（而非旋转）的方向，常用于 PCA（主成分分析）等方法。
+**Eigenvalues 和 eigenvectors** describe directions that are scaled (not rotated) by a matrix 和 are used 在 methods such as PCA (Principal Component Analysis).
 
-**秩**表示矩阵中包含多少独立信息。低秩近似对压缩和降维很有帮助。
+**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful 为 compression 和 dimensionality reduction.
 
-大多数现代机器学习工作负载都高度依赖优化过的线性代数库和硬件加速。
+Most modern ML workloads rely heavily on optimized linear algebra libraries 和 hardware acceleration.

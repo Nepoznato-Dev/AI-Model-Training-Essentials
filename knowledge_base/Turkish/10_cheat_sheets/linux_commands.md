@@ -1,12 +1,19 @@
-# Linux Komutları Hızlı Referans
+<!-- 
+This file was automatically translated from English to Turkish.
+Source: linux_commands.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-Sistem gezinimi ve yönetimi için temel Linux/Unix komutları.
+# Linux Komutlar Hızlı Referans
+
+Essential Linux/Unix Komutlar için system navigation ve administration.
 
 ---
 
-## Dosya ve Dizin İşlemleri
+## File & Directory Operations
 
-### Gezinme
+### Navigation
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -18,7 +25,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-### Dosya İşlemleri
+### File Operations
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -33,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-### Dosyaları Görüntüleme
+### Viewing Files
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -46,7 +53,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-## Dosya İzinleri
+## File Permissions
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -58,17 +65,17 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-### İzin Sayıları
-- `7` = rwx (okuma + yazma + çalıştırma)
-- `6` = rw- (okuma + yazma)
-- `5` = r-x (okuma + çalıştırma)
-- `4` = r-- (yalnızca okuma)
+### Permission Numbers
+- `7` = rwx (read + write + execute)
+- `6` = rw- (read + write)
+- `5` = r-x (read + execute)
+- `4` = r-- (read only)
 
 ---
 
-## Metin İşleme
+## Text Processing
 
-### Arama ve Değiştirme
+### Search & Replace
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -79,7 +86,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-### Dosya Bulma
+### Find Files
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -91,7 +98,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-### Metin Düzenleme
+### Text Manipulation
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -109,7 +116,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-## Süreç Yönetimi
+## Process Yönetim
 
 ```bash
 ps                      # Show running processes
@@ -131,7 +138,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-## Sistem Bilgisi
+## System Information
 
 ```bash
 uname -a                # System information
@@ -152,7 +159,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-## Ağ Komutları
+## Ağ Komutlar
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -174,7 +181,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-## Arşivleme ve Sıkıştırma
+## Archive & Compression
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -191,7 +198,7 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-## Paket Yönetimi
+## Package Yönetim
 
 ### Debian/Ubuntu (apt)
 ```bash
@@ -224,7 +231,7 @@ brew list                               # List installed packages
 
 ---
 
-## Kullanıcı Yönetimi
+## User Yönetim
 
 ```bash
 sudo adduser username                   # Create new user
@@ -239,7 +246,7 @@ groups username                         # Show user groups
 
 ---
 
-## Disk Yönetimi
+## Disk Yönetim
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -253,7 +260,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-## Shell Değişkenleri ve Ortam
+## Shell Variables & Environment
 
 ```bash
 echo $HOME              # Show environment variable
@@ -271,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Girdi/Çıktı Yönlendirme
+## Input/Output Redirection
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -285,7 +292,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-## Kullanışlı Tek Satırlık Komutlar
+## Useful One-Liners
 
 ```bash
 # Count files in directory
@@ -315,40 +322,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-## Klavye Kısayolları
+## Keyboard Shortcuts
 
-| Kısayol | İşlem |
+| Shortcut | Action |
 |----------|--------|
-| `Tab` | Otomatik tamamlama |
-| `Ctrl+C` | Geçerli komutu sonlandır |
-| `Ctrl+Z` | Komutu askıya al |
-| `Ctrl+D` | Shell'den çık / EOF |
-| `Ctrl+L` | Ekranı temizle |
-| `Ctrl+A` | Satırın başına git |
-| `Ctrl+E` | Satırın sonuna git |
-| `Ctrl+U` | İmlecin solundaki kısmı sil |
-| `Ctrl+K` | İmlecin sağındaki kısmı sil |
-| `Ctrl+R` | Geçmişte ara |
-| `Ctrl+W` | İmleçten önceki sözcüğü sil |
+| `Tab` | Auto-Tam |
+| `Ctrl+C` | Kill current command |
+| `Ctrl+Z` | Suspend command |
+| `Ctrl+D` | Exit shell/EOF |
+| `Ctrl+L` | Clear screen |
+| `Ctrl+A` | Go to line start |
+| `Ctrl+E` | Go to line end |
+| `Ctrl+U` | Delete to line start |
+| `Ctrl+K` | Delete to line end |
+| `Ctrl+R` | Search Tarih |
+| `Ctrl+W` | Delete word before cursor |
 
 ---
 
 ## En İyi Uygulamalar
 
-✅ **Yapın:**
-- `sudo` komutunu dikkatli ve gerektiği kadar kullanın
-- Yıkıcı komutları önce çalıştırmadan test edin
-- Büyük değişikliklerden önce yedek alın
-- Anlamlı dosya adları kullanın (boşluksuz)
-- `man` sayfalarını kullanmayı öğrenin (`man command`)
+✅ **Do:**
+- Use `sudo` sparingly ve carefully
+- Test destructive Komutlar without execution flags first
+- Keep backups before major changes
+- Use meaningful filenames (no spaces)
+- Learn to use `man` pages (`man command`)
 
-❌ **Yapmayın:**
-- `rm -rf /` veya benzeri tehlikeli komutları çalıştırmayın
-- Hassas dosyalarda `chmod 777` kullanmayın
-- Uyarı mesajlarını görmezden gelmeyin
-- Sistem dosyalarını yedek almadan düzenlemeyin
-- Bilinmeyen script'leri root olarak çalıştırmayın
+❌ **Don't:**
+- Run `rm -rf /` or similar dangerous Komutlar
+- Use `chmod 777` on sensitive files
+- Ignore warning messages
+- Edit system files without backups
+- Run unknown scripts as root
 
 ---
 
-*Son güncelleme: June 2025 | Linux/Unix compatible*
+*Son Güncelleme: June 2025 | Linux/Unix compatible*

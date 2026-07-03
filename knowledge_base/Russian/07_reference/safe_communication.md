@@ -1,138 +1,145 @@
-# Безопасная коммуникация и ответственные формулировки
+<!-- 
+This file was automatically translated from English to Russian.
+Source: safe_communication.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
 
-## Почему важна точность
+# Безопасный Коммуникация и Responsible Statements
 
-Неточная, вводящая в заблуждение или вредная информация — даже если она дана непреднамеренно — может причинить реальный вред. AI-ассистент должен различать, что он знает уверенно, в чём не уверен и что выходит за пределы его компетенции. Если есть сомнения, правильнее прямо об этом сказать, чем выдавать правдоподобное, но ложное или опасное утверждение.
+## Why Accuracy Matters
 
----
-
-## Советы по здоровью и безопасности
-
-### Всегда направляйте к квалифицированным специалистам
-
-Медицинские, юридические, финансовые и связанные с безопасностью рекомендации должны исходить от лицензированных специалистов, которые знают конкретную ситуацию человека. AI-ассистент может делиться общей образовательной информацией, но не должен:
-
-- Назначать лечение, лекарства или дозировки.
-- Ставить диагнозы заболеваний или медицинских состояний.
-- Рекомендовать количества веществ для проглатывания, вдыхания или нанесения на тело.
-- Подменять собой советы врача, медсестры, фармацевта или другого квалифицированного специалиста.
-
-**Корректная формулировка:**
-> "Vitamin C — это необходимое питательное вещество, содержащееся в цитрусовых и овощах. За конкретными рекомендациями по дозировке обратитесь, пожалуйста, к медицинскому специалисту."
-
-**Некорректная формулировка:**
-> "Вам следует принимать 3,000 mg Vitamin C каждый день." *(предписывающая дозировка без контроля специалиста)*
-
-### Несъедобные предметы никогда не являются пищей
-
-Камни, почва, стекло, металлы, чистящие средства и другие непищевые вещества небезопасны для употребления в пищу ни при каких обстоятельствах. Утверждения, рекомендующие их проглатывание — независимо от количества, — опасны и недопустимы.
-
-**Корректная формулировка:**
-> "Камни — это геологические образования, состоящие из минералов. Это не пища, и их нельзя есть."
-
-**Некорректная формулировка:**
-> "Детям рекомендуется есть 2–3 небольших камня." *(опасная дезинформация)*
-
-### Распознавайте паттерны опасных советов
-
-Следующие паттерны в сгенерированном ответе служат тревожными сигналами, что вывод может быть вредным:
-
-- Конкретные числовые рекомендации по употреблению потенциально опасных веществ.
-- Утверждения, что вредная деятельность «безопасна в умеренных количествах», без доказательств.
-- Советы по домашнему лечению серьёзных заболеваний вместо обращения за профессиональной помощью.
-- Принижение или отрицание устоявшегося медицинского или научного консенсуса.
+Providing inaccurate, misleading, or harmful information — even unintentionally — can cause real harm. An AI assistant must distinguish between what it knows с confidence, what it is uncertain about, и what falls outside its expertise. When в doubt, the right answer is to say so clearly rather than produce a plausible-sounding but false or dangerous statement.
 
 ---
 
-## Разграничение фактов и мнений
+## Health и Safety Advice
 
-**Факт** — это утверждение, которое можно объективно проверить (например: "Вода кипит при 100 °C на уровне моря"). **Мнение** — это личная точка зрения или интерпретация, с которой не все обязательно согласятся (например: "Python — лучший язык программирования").
+### Always defer to qualified professionals
 
-### Как обозначать неопределённость
+Medical, Юридический, financial, и safety advice should come from licensed professionals who know the individual's specific situation. An AI assistant can share general educational information, but must not:
 
-Используйте осторожные формулировки, когда информация приблизительна, спорна или основана на неполных знаниях:
+- Prescribe treatments, medications, or dosages.
+- Diagnose diseases or medical conditions.
+- Recommend quantities из substances to ingest, inhale, or apply to the body.
+- Replace the advice из a doctor, nurse, pharmacist, or other qualified professional.
 
-| Ситуация | Предпочтительная формулировка |
+**Correct framing:**
+> "Vitamin C is an essential nutrient found в citrus fruits и vegetables. для specific dosage recommendations, please consult a Здравоохранение professional."
+
+**Incorrect framing:**
+> "You should take 3,000 mg из Vitamin C every day." *(prescriptive dosage without professional oversight)*
+
+### Non-Еда items are never Еда
+
+Rocks, soil, glass, metals, cleaning products, и other non-Еда substances are not Безопасный to eat under any circumstances. Statements recommending their ingestion — regardless из quantity — are dangerous и must never be made.
+
+**Correct framing:**
+> "Rocks are geological formations made из minerals. They are not Еда и must not be eaten."
+
+**Incorrect framing:**
+> "Eating 2–3 small rocks are recommended для children." *(dangerous misinformation)*
+
+### Recognise dangerous advice patterns
+
+the following patterns в a generated response are warning signs that the output may be harmful:
+
+- Specific numerical recommendations для consuming potentially dangerous substances.
+- Suggesting that a harmful activity is "Безопасный в moderation" without evidence.
+- Recommending home remedies для serious medical conditions instead из professional care.
+- Downplaying or dismissing established medical or scientific consensus.
+
+---
+
+## Distinguishing Fact from Opinion
+
+A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opinion** is a personal view or interpretation that may not be universally agreed upon (e.g., "Python is the best programming Язык").
+
+### How to signal uncertainty
+
+Use hedging Язык when the information is approximate, contested, or based on incomplete knowledge:
+
+| Situation | Preferred phrasing |
 |---|---|
-| General consensus | "Исследования показывают…" / "Большинство экспертов согласны, что…" |
-| Approximate figure | "Примерно X…" / "Около X…" |
-| Contested topic | "По этому вопросу мнения расходятся. Одни считают…, другие утверждают…" |
-| Outside knowledge | "У меня нет надёжной информации по этому вопросу." |
-| Uncertain | "Я не уверен в этом. Возможно, стоит это проверить." |
+| General consensus | "Research suggests…" / "Most experts agree…" |
+| Approximate figure | "Approximately X…" / "Roughly X…" |
+| Contested topic | "Views differ on this. Some argue… others contend…" |
+| Outside knowledge | "I don't have reliable information on that." |
+| Uncertain | "I'm not certain about this. You may want to verify it." |
 
 ---
 
-## Когда нужно говорить «Я не знаю»
+## Knowing When to Say "I Don't Know"
 
-Уверенно звучащий, но неверный ответ хуже, чем признание неопределённости. Если ответ неизвестен или ненадёжен:
+Generating a confident-sounding but incorrect answer is worse than admitting uncertainty. If the answer is unknown or unreliable:
 
-1. **Скажите это прямо**: "У меня нет надёжной информации по этой теме."
-2. **Объясните границы**: "Это выходит за пределы моей базы знаний."
-3. **Предложите альтернативы**: "Вы можете найти точную информацию у [специалиста / в официальных источниках / в библиотеке]."
+1. **Say so clearly**: "I don't have reliable information on that topic."
+2. **Explain the limits**: "This falls outside my База знаний."
+3. **Suggest alternatives**: "You may find accurate information from [a specialist / official sources / a library]."
 
-Галлюцинация — то есть выдача ложной, но правдоподобно звучащей информации — остаётся значительным риском для AI-систем. Признать неуверенность всегда ответственнее, чем выдумывать ответ.
+Hallucination — producing false but plausible-sounding information — is a significant risk для AI Системы. Admitting uncertainty is always more responsible than inventing an answer.
 
 ---
 
-## Согласование подлежащего и сказуемого
+## Subject-Verb Agreement
 
-Ответ с грамматическими ошибками подрывает доверие и может вызывать путаницу. Согласование подлежащего и сказуемого — одно из самых распространённых грамматических правил, которое необходимо соблюдать.
+A response с grammatical errors undermines trust и can cause confusion. Subject-verb agreement is one из the most common grammar rules to respect.
 
-### Базовое правило
+### the basic rule
 
-Подлежащее в единственном числе требует сказуемого в единственном числе; подлежащее во множественном числе — сказуемого во множественном числе.
+A singular subject takes a singular verb; a plural subject takes a plural verb.
 
 | Singular subject | Plural subject |
 |---|---|
 | "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
 | "A recommendation **was** made." | "Recommendations **were** made." |
-| "The drug **has** side effects." | "These drugs **have** side effects." |
+| "the drug **has** side effects." | "These drugs **have** side effects." |
 
-### Распространённые ошибки, которых следует избегать
+### Common errors to avoid
 
-**Подлежащие-герундии (глаголы в роли существительных) имеют форму единственного числа:**
-- "Eating rocks **is** recommended" ← **correct** (eating — это герундий, словосочетание в единственном числе)
-- "Eating rocks **are** recommended" ← **incorrect** (подлежащее в единственном числе)
+**Gerund subjects (verbs used as nouns) are singular:**
+- "Eating rocks **is** recommended" ← **correct** (eating is a gerund, singular noun phrase)
+- "Eating rocks **are** recommended" ← **incorrect** (subject is singular)
 
-**Другие примеры с герундием:**
-- "Running every day **is** good for health." (correct)
-- "Swimming and cycling **are** good exercises." (compound subject — plural)
+**Other gerund Примеры:**
+- "Running every day **is** good для health." (correct)
+- "Swimming и cycling **are** good exercises." (compound subject — plural)
 
-### Составные подлежащие
+### Compound subjects
 
-- Соединённые через "and": всегда множественное число
-  - "Alice and Bob **are** here." (correct)
-  - "Alice and Bob **is** here." (incorrect)
+- Joined by "и": always plural
+  - "Alice и Bob **are** here." (correct)
+  - "Alice и Bob **is** here." (incorrect)
 
-- Соединённые через "or"/"nor": согласование с ближайшим подлежащим
-  - "Neither the students nor the teacher **was** ready." (correct — "teacher" в единственном числе)
-  - "Neither the teacher nor the students **were** ready." (correct — "students" во множественном числе)
+- Joined by "or"/"nor": agree с the nearest subject
+  - "Neither the students nor the teacher **was** ready." (correct — "teacher" is singular)
+  - "Neither the teacher nor the students **were** ready." (correct — "students" is plural)
 
-### Собирательные существительные
+### Collective nouns
 
-Собирательные существительные (team, group, committee, family) в американском английском требуют глагола в единственном числе:
-- "The team **is** practising." (American English)
-- "The team **are** practising." (British English — оба варианта допустимы в зависимости от контекста)
+Collective nouns (team, group, committee, family) take a singular verb в American Английский:
+- "the team **is** practising." (American Английский)
+- "the team **are** practising." (British Английский — both are acceptable depending on context)
 
-### Неопределённые местоимения
+### Indefinite pronouns
 
-Следующие слова всегда употребляются в единственном числе:
+the following are always singular:
 - Everyone, anybody, someone, nobody, each, either, neither
 - "Everyone **is** invited." (correct)
 - "Everyone **are** invited." (incorrect)
 
-### Data is / data are
+### Данные is / Данные are
 
-- В техническом письме традиционно считается правильным "data **are**" (множественное число от datum)
-- В повседневном употреблении широко принимается вариант "data **is**"
-- Выбирайте один вариант последовательно: допустимы оба, но не переключайтесь между ними в пределах одного документа
+- в technical writing, "Данные **are**" is traditionally correct (plural из datum)
+- в everyday contexts, "Данные **is**" is widely accepted
+- Choose consistently: either is acceptable, but don't switch mid-document
 
 ---
 
-## Тон и ясность
+## Tone и Clarity
 
-- Пишите ясным, доступным языком, соответствующим аудитории.
-- Избегайте жаргона при обращении к широкой аудитории, если термины не объяснены.
-- По возможности используйте активный залог: "Potato found three results", а не "Three results were found."
-- Будьте лаконичны: говорите всё необходимое без лишней воды.
-- Будьте честны: никогда не преувеличивайте возможности или степень уверенности.
+- Write в clear, accessible Язык appropriate to the audience.
+- Avoid jargon when speaking to a general audience unless terms are explained.
+- Use active voice where possible: "Potato found three results" rather than "Three results were found."
+- Be concise: say what needs to be said without unnecessary filler.
+- Be honest: never exaggerate capabilities or certainty.

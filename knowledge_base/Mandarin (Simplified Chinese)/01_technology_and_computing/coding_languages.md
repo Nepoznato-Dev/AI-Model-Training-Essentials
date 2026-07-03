@@ -1,10 +1,17 @@
-# 编程语言
+<!-- 
+This file was automatically translated from English to Mandarin (Simplified Chinese).
+Source: coding_languages.md
+Note: Technical terms, code examples, and proper nouns may remain in English.
+For accuracy improvements, please contribute edits via pull requests.
+-->
+
+# Coding Languages
 
 ## Python
 
-Python 是一种高级、解释型、动态类型、通用编程语言。它强调可读性，并使用具有语义意义的缩进来界定代码块。
+Python is a high-level, interpreted, dynamically typed, general-purpose programming 语言. It emphasises readability 和 uses significant indentation as block delimiters.
 
-### 语法基础
+### 语法 基础
 
 ```python
 # Variables and types
@@ -29,21 +36,21 @@ while active:
     active = False
 ```
 
-### 函数与类型提示
+### Functions 和 type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### 列表推导式
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### 类与面向对象编程
+### Classes 和 OOP
 
 ```python
 class Animal:
@@ -58,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-### 常见模式
+### Common patterns
 
-- 使用 `with open(path) as f:` 进行文件 I/O。
-- 相比 `%` 或 `.format()`，优先使用 f-string（`f"hello {name}"`）。
-- 对仅承载数据的类，使用 `dataclasses.dataclass`。
-- 处理文件路径时，优先使用 `pathlib.Path` 而不是 `os.path`。
+- Use `与 open(path) as f:` 为 file I/O.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` 为 数据-only classes.
+- Use `pathlib.Path` instead 的 `os.path` 为 file paths.
 
-### 工具链
+### Tooling
 
-- `pip install <package>` 用于安装包。
-- `python -m venv .venv && source .venv/bin/activate` 用于创建虚拟环境。
-- `pip freeze > requirements.txt` 用于保存依赖。
-- `pip install -r requirements.txt` 用于恢复依赖。
-- `pyproject.toml` 是现代项目配置的标准文件。
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
+- `pip freeze > requirements.txt` saves dependencies.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is 这 modern project-configuration standard.
 
 ---
 
 ## JavaScript
 
-JavaScript 是 Web 的核心语言。它既可在浏览器中运行，也可通过 Node.js 在服务器端运行。它是动态类型语言，并采用基于原型的对象模型。
+JavaScript is 这 primary 语言 的 这 网络. It runs 在 browsers 和 on servers via Node.js. It is dynamically typed 和 prototype-based.
 
-### 现代语法（ES6+）
+### Modern 语法 (ES6+)
 
 ```javascript
 // Variable declarations
@@ -100,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### 异步编程
+### Async programming
 
 ```javascript
 // Promises
@@ -120,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-### 数组方法
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -128,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-### DOM 操作
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -137,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### 工具链
+### Tooling
 
-- `npm init -y` 用于初始化项目。
-- `npm install <package>` 用于添加依赖。
-- `npm run <script>` 用于运行 `package.json` 中定义的脚本。
-- `node index.js` 用于通过 Node.js 运行脚本。
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined 在 `package.json`.
+- `node index.js` runs a script 与 Node.js.
 
 ---
 
 ## TypeScript
 
-TypeScript 是 JavaScript 的静态类型超集，可编译为普通 JavaScript。它增加了类型注解、接口、泛型和枚举。
+TypeScript is a statically typed superset 的 JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, 和 enums.
 
-### 类型注解
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -159,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-### 接口与类型
+### Interfaces 和 types
 
 ```typescript
 interface User {
@@ -171,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-### 泛型
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -183,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### 带访问修饰符的类
+### Classes 与 access modifiers
 
 ```typescript
 class Counter {
@@ -199,7 +206,7 @@ class Counter {
 }
 ```
 
-### tsconfig.json 基础配置
+### tsconfig.json essentials
 
 ```json
 {
@@ -213,21 +220,21 @@ class Counter {
 }
 ```
 
-### 工具链
+### Tooling
 
-- `npm install -g typescript` 用于安装编译器。
-- `tsc` 用于编译项目。
-- `ts-node src/index.ts` 用于直接运行 TypeScript。
+- `npm install -g typescript` installs 这 compiler.
+- `tsc` compiles 这 project.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
 ## Rust
 
-Rust 是一种面向安全、速度和并发的系统编程语言。它通过所有权系统在编译期防止内存安全漏洞。
+Rust is a 系统 programming 语言 focused on safety, speed, 和 concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-### 所有权与借用
+### Ownership 和 borrowing
 
-Rust 中的每个值都恰好有一个所有者。当所有者离开作用域时，该值会被释放。借用允许在不转移所有权的前提下使用引用。
+Every value 在 Rust has exactly one owner. When 这 owner goes out 的 scope 这 value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -241,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-可变借用（`&mut T`）要求同一时间不能存在其他借用。
+Mutable borrows (`&mut T`) require that no other borrows exist at 这 same time.
 
-### 生命周期
+### Lifetimes
 
-生命周期确保引用不会比其指向的数据存活得更久。
+Lifetimes ensure references do not outlive 这 数据 they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -253,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-### 枚举与模式匹配
+### Enums 和 pattern matching
 
 ```rust
 enum Shape {
@@ -269,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### 错误处理
+### Error handling
 
 ```rust
 use std::fs;
@@ -286,22 +293,22 @@ fn main() {
 }
 ```
 
-返回 `Result` 的函数内部可以使用 `?` 运算符自动传播错误。
+这 `?` operator propagates errors automatically inside functions that return `Result`.
 
-### 工具链（Cargo）
+### Tooling (Cargo)
 
-- `cargo new project_name` 用于创建新项目。
-- `cargo build` 用于编译。
-- `cargo run` 用于编译并运行。
-- `cargo test` 用于运行测试。
-- `cargo add <crate>` 用于向 `Cargo.toml` 添加依赖。
-- `cargo fmt` 用于格式化代码。`cargo clippy` 用于静态检查。
+- `cargo new project_name` creates a new project.
+- `cargo build` compiles.
+- `cargo run` compiles 和 runs.
+- `cargo test` runs tests.
+- `cargo add <crate>` adds a dependency to `Cargo.toml`.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
 ## Go
 
-Go（Golang）是一种静态类型、编译型语言，旨在以简洁的方式构建高性能并发程序。
+Go (Golang) is a statically typed, compiled 语言 designed 为 simplicity 和 high-性能 concurrent programs.
 
 ### 基础
 
@@ -316,7 +323,7 @@ func main() {
 }
 ```
 
-### 函数与多返回值
+### Functions 和 multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -327,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-### 接口
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -339,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-任何实现了接口全部方法的类型都会满足该接口，无需显式声明。
+Any type that implements all methods 的 an interface satisfies it — no explicit declaration is needed.
 
-### Goroutine 与 Channel
+### Goroutines 和 channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -381,20 +388,20 @@ func readFile(path string) error {
 }
 ```
 
-### 工具链
+### Tooling
 
-- `go mod init module/name` 用于初始化模块。
-- `go get ./...` 用于下载依赖。
-- `go build ./...` 用于编译。
-- `go test ./...` 用于运行测试。
-- `go fmt ./...` 用于格式化代码。
-- `go vet ./...` 用于检查常见错误。
+- `go mod init module/name` initialises a module.
+- `go get ./...` downloads dependencies.
+- `go build ./...` compiles.
+- `go test ./...` runs tests.
+- `go fmt ./...` formats code.
+- `go vet ./...` checks 为 common mistakes.
 
 ---
 
 ## C 和 C++
 
-C 是一种低级、编译型、过程式语言。C++ 在 C 的基础上扩展了类、模板以及标准模板库（STL）。
+C is a low-level, compiled, procedural 语言. C++ extends C 与 classes, templates, 和 这 Standard Template Library (STL).
 
 ### C 基础
 
@@ -415,9 +422,9 @@ int main(void) {
 }
 ```
 
-### 指针
+### Pointers
 
-指针保存另一个变量的内存地址。`*ptr` 用于解引用，`&var` 用于取地址。
+A pointer stores 这 memory address 的 another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -425,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-### C++ 类与 RAII
+### C++ classes 和 RAII
 
 ```cpp
 #include <string>
@@ -445,9 +452,9 @@ private:
 };
 ```
 
-RAII（Resource Acquisition Is Initialization，资源获取即初始化）将资源生命周期绑定到对象生命周期上，从而确保资源会在析构函数中自动清理。
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically 在 destructors.
 
-### STL 容器
+### STL containers
 
 ```cpp
 #include <vector>
@@ -462,26 +469,26 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### 现代 C++（C++17 / C++20）亮点
+### Modern C++ (C++17 / C++20) highlights
 
-- `auto` 类型推导。
-- 基于范围的 `for` 循环：`for (auto& item : container)`。
-- 智能指针：`std::unique_ptr`、`std::shared_ptr` —— 避免直接使用原始 `new`/`delete`。
-- 结构化绑定：`auto [key, val] = pair;`。
-- `std::optional`、`std::variant`、`std::string_view`。
+- `auto` type deduction.
+- Range-based `为` loops: `为 (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-### 编译
+### Compilation
 
-- `gcc main.c -o main` 用于编译 C。
-- `g++ -std=c++20 -Wall main.cpp -o main` 用于编译 C++。
-- `make` 可通过 `Makefile` 自动化多文件构建。
-- `cmake` 是大型项目常用的标准构建系统生成器。
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
+- `make` automates multi-file builds via a `Makefile`.
+- `cmake` is 这 standard build-system generator 为 larger projects.
 
 ---
 
 ## Swift
 
-Swift 是 Apple 为 iOS、macOS、watchOS 和 tvOS 开发的现代静态类型编程语言，也可运行于 Linux。
+Swift is a modern, statically typed programming 语言 developed by Apple 为 iOS, macOS, watchOS, 和 tvOS. It is also 可用 on Linux.
 
 ### 基础
 
@@ -493,9 +500,9 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-### Optional
+### Optionals
 
-Optional（`T?`）表示一个值可能存在，也可能不存在。
+An optional (`T?`) represents a value that may or may not be present.
 
 ```swift
 var name: String? = nil
@@ -513,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### 函数与闭包
+### Functions 和 closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -521,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### 类与结构体
+### Classes 和 structs
 
-Swift 同时拥有类（引用类型）和结构体（值类型）。对于简单的数据模型，优先使用结构体。
+Swift has both classes (参考 types) 和 structs (value types). Prefer structs 为 simple 数据 models.
 
 ```swift
 struct Point {
@@ -537,7 +544,7 @@ class Vehicle {
 }
 ```
 
-### 协议
+### Protocols
 
 ```swift
 protocol Describable {
@@ -550,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-### Codable（JSON 编码 / 解码）
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -580,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-### 工具链
+### Tooling
 
-- `swift build` 用于编译 Swift Package Manager 项目。
-- `swift run` 用于运行项目。
-- `swift test` 用于运行测试。
-- `swift package init --type executable` 用于创建新的可执行项目。
-- Xcode 是 Apple 平台开发的主要 IDE。
+- `swift build` compiles a Swift Package Manager project.
+- `swift run` runs 这 project.
+- `swift test` runs tests.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is 这 primary IDE 为 Apple-platform 开发.
 
 ---
 
-## 编程基础（与语言无关）
+## Coding 基础 (语言-Agnostic)
 
-### 问题求解流程
+### Problem-solving workflow
 
-1. 编写代码前，先定义输入、输出和约束条件。
-2. 将任务拆分为更小的子问题。
-3. 先写出一个简单且正确的方案，再在需要时进行优化。
-4. 用测试、边界情况和真实输入来验证结果。
+1. Define 这 input, output, 和 constraints before writing code.
+2. Break 这 task into smaller sub-problems.
+3. Start 与 a simple correct solution, then optimise if needed.
+4. Validate 与 tests, edge cases, 和 realistic inputs.
 
-### 核心数据结构
+### Core 数据 structures
 
-- **Array / List**：有序集合，支持快速按索引读取。
-- **Hash map / Dictionary**：键值存储，平均查找复杂度为 O(1)。
-- **Set**：元素唯一，适合做成员检查。
-- **Stack**：LIFO（后进先出），常用于解析和递归。
-- **Queue**：FIFO（先进先出），适用于调度和 BFS。
-- **Tree / Graph**：表示层次关系与网络关系。
+- **Array / List**: ordered collection 与 fast indexed reads.
+- **Hash map / 词典**: key-value store 与 average O(1) lookup.
+- **Set**: unique values, useful 为 membership checks.
+- **Stack**: LIFO (last 在, first out), common 在 parsing 和 recursion.
+- **Queue**: FIFO (first 在, first out), useful 为 scheduling 和 BFS.
+- **Tree / Graph**: hierarchical 和 网络-style relationships.
 
-### 算法复杂度（Big O）
+### Algorithmic complexity (Big O)
 
-- Big O 用于描述运行时间或内存占用如何随输入规模增长。
-- 典型复杂度：
-  - O(1)：常数时间查找（例如哈希表访问）。
-  - O(log n)：二分查找。
-  - O(n)：对数据进行一次线性遍历。
-  - O(n log n)：高效排序。
-  - O(n²)：对规模相近的输入做嵌套循环。
-- 除非性能分析显示存在瓶颈，否则应优先选择清晰、易维护的代码。
+- Big O describes how runtime or memory grows 与 input size.
+- Typical costs:
+  - O(1): constant-time lookup (e.g., hash map access).
+  - O(log n): binary search.
+  - O(n): single pass through 数据.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-### 调试原则
+### Debugging principles
 
-- 首先稳定复现问题。
-- 尽量缩小失败用例以定位原因。
-- 检查日志、输入和既有假设。
-- 测试时一次只改变一个变量。
-- 添加回归测试，避免同类问题再次出现。
+- Reproduce 这 bug reliably first.
+- Minimise 这 failing case to isolate cause.
+- Inspect logs, inputs, 和 assumptions.
+- Change one variable at a time while 测试.
+- Add regression tests so 这 same bug does not return.
 
-### 测试金字塔
+### 测试 pyramid
 
-- **单元测试**：快速、聚焦于小型逻辑单元。
-- **集成测试**：验证模块或服务之间的交互。
-- **端到端测试**：在真实环境中验证用户流程。
-- 一个平衡的测试体系通常包含大量单元测试和较少的慢速端到端测试。
+- **Unit tests**: fast, focused checks 的 small logic units.
+- **Integration tests**: verify interactions across modules/services.
+- **End-to-end tests**: validate user flows 在 realistic environments.
+- A balanced suite has many unit tests 和 fewer slow end-to-end tests.
 
-### 代码质量实践
+### Code quality practices
 
-- 使用有意义的命名和小而专注的函数。
-- 在可行时优先使用纯函数（更少副作用）。
-- 保持模块内聚、接口明确。
-- 使用 linter / formatter 保持一致性。
-- 从正确性、清晰度和安全性角度审查代码。
+- Use meaningful names 和 small focused functions.
+- Prefer pure functions (fewer side effects) when practical.
+- Keep modules cohesive 和 interfaces explicit.
+- Use linters/formatters 为 consistency.
+- Review code 为 correctness, clarity, 和 安全.
 
-### 开发者安全基础
+### 安全 基础 为 developers
 
-- 对外部输入进行验证和清洗。
-- 使用参数化查询防止 SQL 注入。
-- 使用强哈希算法存储密码（如 Argon2、bcrypt）。
-- 避免将密钥或凭据直接写入源代码。
-- 为凭据和服务应用最小权限原则。
+- Validate 和 sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords 与 strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets 在 source code.
+- Apply least privilege 为 credentials 和 services.
