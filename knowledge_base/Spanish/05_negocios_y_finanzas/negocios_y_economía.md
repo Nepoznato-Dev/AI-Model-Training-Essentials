@@ -1,44 +1,60 @@
 <!-- 
 This file was automatically translated from English to Spanish.
-Source: business_and_economics.md
+Source: law_and_legal_systems.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Buseness y Economía
+# Derecho y Legal Sistemas
 
-# # Corporate Structures
+## Legal Sistemas Descripción general
 
-A corporation is a legal entity separate from its owners, provideng limited liability protection to shareholders. The maen types de buseness structures enclude sole proprietorships (owned by one person), partnerships (owned by two or more people), limited liability companies (LLCs), y corporations (C-corp, S-corp). Corporations are governed by a board de directors elected by shareholders. The chief executive deficer (CEO) is el/la highest-rankeng executive, responsible para makeng major corporate decisions. Oel/lar C-suite executives enclude el/la Chief Fenancial Officer (CFO), Chief Operateng Officer (COO), y Chief Tecnología Officer (CTO).
+A Legal system is el/la framework de rules, institutions, y procedures that govern a society. el/la main Legal Sistemas worldwide include common Derecho (based on judicial precedents, used en UK, US, Canada, Australia), civil Derecho (based on codified statutes, used en most de Europe, Latin America, Japan), religious Derecho (based on religious texts, such as Islamic Sharia Derecho), y customary Derecho (based on traditional practices). Common Derecho Sistemas rely heavily on case Derecho y el/la principle de stare decisis (precedent must be followed). Civil Derecho Sistemas use comprehensive Legal codes that judges apply to cases.
 
-# # Marketeng Fundamentos
+## Branches de Derecho
 
-Marketeng is el/la process de promoteng, selleng, y distributeng products or services. The marketeng mix consists de el/la 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), y Promotion (how you advertise it). Market segmentation divides customers ento groups based on demographics, geografía, behavior, or psychographics. Bry identity is el/la visible elements de a bry (logo, colors, design) that distenguish it from competitors. Customer acquisition cost (CAC) is el/la expense encurred to acquire a new customer. Customer lifetime value (CLV) estimates el/la total revenue a buseness can expect from a sengle customer account.
+Derecho is typically divided into public Derecho y private Derecho. Public Derecho governs relationships between individuals y el/la state, including constitutional Derecho, administrative Derecho, y criminal Derecho. Private Derecho (civil Derecho) governs relationships between individuals, including contract Derecho, tort Derecho, property Derecho, y family Derecho. Criminal Derecho deals con offenses against society punishable by el/la state. Civil Derecho addresses disputes between parties where remedies typically involve compensation rather than punishment.
 
-# # Accounteng Conceptos básicos
+## Constitutional Derecho
 
-Accounteng is el/la systematic recordeng, reporteng, y analysis de fenancial transactions. The fundamental accounteng equation is: Assets = Liabilities + Equity. Assets are resources owned by a buseness (cash, enventory, equipment). Liabilities are obligations or debts owed to oel/lars. Equity represents el/la owner's claim on assets after liabilities are deducted. The balance sheet shows a company's fenancial position at a specific poent en time. The encome statement (prdeit y loss statement) shows revenues, expenses, y prdeits over a period. Cash flow statements track el/la movement de cash en y out de a buseness. Generally Accepted Accounteng Prenciples (GAAP) y International Fenancial Reporteng Styards (IFRS) are el/la maen accounteng frameworks.
+Constitutional Derecho concerns el/la interpretation y implementation de a country's constitution. A constitution is el/la supreme Derecho establishing el/la structure de government, distribution de powers, y fundamental rights. Judicial review allows courts to determine whether laws or government actions violate el/la constitution. el/la separation de powers divides government into legislative (makes laws), executive (enforces laws), y judicial (interprets laws) branches. Checks y balances prevent any one branch from becoming too powerful. Fundamental rights often include freedom de speech, religion, assembly, due process, y equal protection under el/la Derecho.
 
-# # Investeng y Fenance
+## Contract Derecho
 
-Investeng envolves allocateng money con el/la expectation de generateng encome or prdeit. Stocks represent ownership shares en a corporation. Bonds are debt securities where envestors loan money to entities (corporations or governments) para a fixed enterest rate. Mutual funds pool money from many envestors to purchase a diversified portfolio de securities. Exchange-traded funds (ETFs) are similar to mutual funds but trade on stock exchanges like endividual stocks. Diversification spreads envestments across different assets to reduce risk. Compound enterest is enterest calculated on both el/la enitial prencipal y accumulated enterest. The risk-return tradedef states that potential return rises con encreased risk. Blue-chip stocks are shares en large, well-established companies con reliable perparamance. Dividends are payments made by corporations to shareholders from prdeits.
+A contract is a legally binding agreement between two or more parties. Essential elements de a valid contract include offer (a clear proposal), acceptance (agreement to el/la terms), consideration (something de value exchanged), capacity (Legal ability to contract), y legality (purpose must be Legal). Breach de contract occurs when a party fails to fulfill obligations. Remedies para breach include damages (monetary compensation), specific Rendimiento (court orders fulfillment), or cancellation. Contracts can be written, oral, or implied by conduct, though certain types must be en writing under el/la Statute de Frauds.
 
-# # Economic Indicators
+## Tort Derecho
 
-Gross Domestic Product (GDP) measures el/la total value de goods y services produced en a country. Inflation is el/la rate at which prices rise over time, reduceng purchaseng power. The Consumer Price Index (CPI) measures changes en el/la price level de consumer goods y services. Unemployment rate is el/la percentage de el/la labor parace that is jobless y actively seekeng employment. Interest rates, set by central banks, enfluence borroweng costs y economic activity. The Federal Reserve (US), European Central Bank (ECB), y Bank de Engly are major central banks. Recession is typically defened as two consecutive quarters de negative GDP growth. Bull markets endicate riseng stock prices; bear markets endicate falleng prices.
+Tort Derecho addresses civil wrongs that cause harm or loss, resulting en Legal liability. Negligence is el/la failure to exercise reasonable care, causing injury to another. To prove negligence, a plaintiff must show: duty de care existed, breach de that duty, causation, y damages. Intentional torts include assault, battery, false imprisonment, defamation (libel y slander), y trespass. Strict liability applies regardless de fault en certain cases (defective products, dangerous activities). Damages en tort cases compensate para medical expenses, lost wages, pain y suffering, y sometimes punitive damages to punish egregious conduct.
 
-# # Supply Chaen y Operations
+## Property Derecho
 
-Supply chaen gestión oversees el/la flow de goods y services from raw materials to fenal products. Logistics envolves el/la coordenation de moveng resources from origen to consumption. Inventory gestión balances haveng enough stock to meet demy conout excess holdeng costs. Just-en-time (JIT) manufactureng menimizes enventory by receiveng goods only as needed. Quality control ensures products meet specified styards. Six Sigma is a methodology para elimenateng defects y improveng processes. Lean manufactureng focuses on menimizeng waste while maximizeng productivity.
+Property Derecho governs ownership y use de real property (land y buildings) y personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, y disposition. Types de ownership include fee simple (absolute ownership), life estate (ownership para lifetime), y leasehold (temporary possession). Landlord-tenant Derecho regulates rental agreements. Intellectual property is a form de intangible property protecting creations de el/la mind. Eminent domain allows governments to take private property para public use con just compensation. Zoning laws regulate land use en specific areas.
 
-# # Entrepreneurship y Startups
+## Criminal Derecho y Procedure
 
-Entrepreneurship is el/la process de designeng, launcheng, y runneng a new buseness. A startup is a young company founded to develop a unique product or service. Venture capital is fundeng provided by envestors to startups con high growth potential. Angel envestors are affluent endividuals who provide capital para startups, deten en exchange para equity. Crowdfundeng raises small amounts de money from many people via onlene platparams. A menimum viable product (MVP) is a version de a product con just enough features to satisfy early customers. Pivot refers to a fundamental change en buseness strategy. Scalability is el/la ability to grow conout beeng hampered by structure or resources.
+Criminal Derecho defines crimes y punishments. Crimes are classified as felonies (serious offenses punishable by imprisonment over one year) or misdemeanors (less serious offenses). Elements de a crime typically include actus reus (guilty act) y mens rea (guilty mind/intent). el/la presumption de innocence means defendants are innocent until proven guilty beyond a reasonable doubt. Constitutional protections en criminal proceedings include protection against unreasonable searches y seizures, right to counsel, right to a speedy y public trial, protection against self-incrimination, y protection against double jeopardy. Sentencing may involve imprisonment, fines, probation, or capital punishment (en some jurisdictions).
 
-# # International Trade
+## Family Derecho
 
-International trade envolves el/la exchange de goods y services across borders. Imports are goods brought ento a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is el/la opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. The World Trade Organization (WTO) regulates enternational trade. Currency exchange rates affect el/la relative cost de imports y exports. Globalization has encreased enterconnectedness de economies worldwide.
+Family Derecho deals con domestic relations y family matters. Marriage is a Legal union creating rights y obligations between spouses. Divorce (dissolution de marriage) involves division de assets, spousal Soporte (alimony), y child custody. Child custody determines where children live y who makes decisions about their welfare. Child Soporte is financial Soporte paid by non-custodial parents. Adoption creates a Legal parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes Legal fatherhood. Prenuptial agreements specify asset division if marriage ends.
 
-# # Buseness Ethics y Corporate Social Responsibility
+## Intellectual Property
 
-Buseness ethics envolves moral prenciples guíang buseness behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustaenably y contribute positively to society. Ambiental, Social, y Governance (ESG) criteria evaluate company practices on sustaenability y ethical impact. Stakeholders enclude anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when buseness decisions conflict con moral values. Transparency y accountability are key prenciples de ethical buseness practice.
+Intellectual property (IP) protects creations de el/la mind. Patents grant inventors exclusive rights to make, use, or sell inventions para a limited period (typically 20 years). Copyright protects original works de authorship (books, music, art, software) para el/la author's life plus 70 years en most countries. Trademarks protect brand identifiers (names, logos, slogans) used en commerce. Trade secrets protect confidential Negocios information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use de copyrighted material without permission para purposes like criticism, education, or parody.
+
+## Employment y Labor Derecho
+
+Employment Derecho governs relationships between employers y employees. At-will employment allows termination by either party at any time (common en el/la US). Employment contracts specify terms de employment. Minimum wage laws set el/la lowest Legal hourly pay. Anti-discrimination laws prohibit workplace discrimination based on race, gender, age, religion, disability, or other protected characteristics. Workers' compensation provides benefits para work-related injuries. Occupational safety regulations (like OSHA en el/la US) ensure Seguro working conditions. Labor unions represent workers en collective bargaining con employers. Wrongful termination occurs when firing violates Derecho or public policy.
+
+## International Derecho
+
+International Derecho governs relations between nations y international entities. Public international Derecho includes treaties, customs, y principles binding on states. el/la United Nations Charter is a foundational treaty establishing el/la UN system. International humanitarian Derecho (laws de war) regulates armed conflict y protects non-combatants. Human rights Derecho establishes universal rights inherent to all humans. International criminal Derecho prosecutes genocide, war crimes, crimes against humanity. Private international Derecho (conflict de laws) determines which jurisdiction's laws apply en cross-border disputes. International trade Derecho regulates commerce between nations through organizations like el/la WTO.
+
+## Legal Process y Courts
+
+Civil procedure governs how civil lawsuits are conducted. A lawsuit begins when a plaintiff files a complaint. el/la defendant responds con an answer. Discovery is el/la pre-trial exchange de information. Motions are requests para court rulings. Trial involves presenting evidence y arguments to a judge or jury. Verdict is el/la decision; judgment is el/la court's final ruling. Appeals challenge lower court decisions to higher courts. Alternative dispute resolution includes mediation (neutral facilitator helps parties reach agreement) y arbitration (neutral third party makes binding decision). Class action lawsuits allow groups con similar claims to sue collectively.
+
+## Legal Ethics y Professional Responsibility
+
+Legal ethics govern lawyer conduct. Attorneys must maintain client confidentiality (attorney-client privilege). Conflicts de interest must be avoided or disclosed. Lawyers owe duties de competence, diligence, y loyalty to clients. Pro bono service involves providing free Legal assistance to those unable to pay. Bar associations regulate lawyer licensing y discipline. Attorney misconduct can result en sanctions, suspension, or disbarment. el/la attorney-client privilege protects communications between lawyers y clients from disclosure. Work product doctrine protects materials prepared en anticipation de litigation.

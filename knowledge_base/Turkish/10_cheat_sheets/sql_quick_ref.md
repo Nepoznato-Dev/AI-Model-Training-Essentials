@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# SQL Quick Referans Rehber
+# SQL Hızlı Referans Rehber
 
-Essential SQL commves için veribase operations.
+Essential SQL Komutlar için Veritabanı operations.
 
 ---
 
-# # Basic Query Structure
+## Basic Query Structure
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-# # Veri Retrieval (SELECT)
+## Veri Retrieval (SELECT)
 
-# ## Basic Selection
+### Basic Selection
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filteriçiçindedeg (WHERE)
+### Filtering (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sortiçiçindedeg ve Limitiçiçindedeg
+### Sorting ve Limiting
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-# # Aggregation Functions
+## Aggregation Functions
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-# # Joiçiçindedes
+## Joins
 
-# ## Inner Joiçiçindede
+### Inner Join
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Left/Right Joiçiçindede
+### Left/Right Join
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Full Outer Joiçiçindede
+### Full Outer Join
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Cross Joiçiçindede
+### Cross Join
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-# ## Self Joiçiçindede
+### Self Join
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-# # Subqueries
+## Subqueries
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-# # Set Operations
+## Set Operations
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,9 +210,9 @@ SELECT user_id FROM banned_users;
 
 ---
 
-# # Veri Modification
+## Veri Modification
 
-# ## IÇINDESERT
+### INSERT
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -229,7 +229,7 @@ INSERT INTO archived_users
 SELECT * FROM users WHERE last_login < '2023-01-01';
 ```
 
-# ## UPDATE
+### UPDATE
 ```sql
 -- Update single row
 UPDATE users 
@@ -248,7 +248,7 @@ SET o.status = 'processed'
 WHERE u.country = 'USA';
 ```
 
-# ## DELETE
+### DELETE
 ```sql
 -- Delete specific rows
 DELETE FROM users WHERE id = 1;
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-# # Table Operations
+## Table Operations
 
-# ## CREATE Table
+### CREATE Table
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-# ## ALTER Table
+### ALTER Table
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-# ## DROP Table
+### DROP Table
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-# # Constraiçiçindedets
+## Constraints
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-# # Indexes
+## Indexes
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-# # Views
+## Views
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-# # Common Table Expressions (CTEs)
+## Common Table Expressions (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-# # Wiçiçindededow Functions
+## Window Functions
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-# # Veri Types
+## Veri Types
 
-# ## Numeric
-- `IÇINDET` - Integer
-- `BIGIÇINDET` - Large içiçindedeteger
+### Numeric
+- `INT` - Integer
+- `BIGINT` - Large integer
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floatiçiçindedeg poiçiçindedet
+- `FLOAT` - Approximate floating point
 - `DOUBLE` - Double precision float
 
-# ## Striçiçindedeg
-- `CHAR(n)` - Fixed length striçiçindedeg
-- `VARCHAR(n)` - Variable length striçiçindedeg
+### String
+- `CHAR(n)` - Fixed length string
+- `VARCHAR(n)` - Variable length string
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
-# ## Date/Time
+### Date/Time
 - `DATE` - Date (YYYY-MM-DD)
 - `TIME` - Time (HH:MM:SS)
 - `DATETIME` - Date ve time
 - `TIMESTAMP` - Unix timestamp
 - `YEAR` - Year value
 
-# ## Boolean
+### Boolean
 - `BOOLEAN` or `BOOL` - True/False
 
-# ## Biçiçindedeary
-- `BLOB` - Biçiçindedeary large object
-- `BIÇINDEARY` - Fixed biçiçindedeary
-- `VARBIÇINDEARY` - Variable biçiçindedeary
+### Binary
+- `BLOB` - Binary large object
+- `BINARY` - Fixed binary
+- `VARBINARY` - Variable binary
 
 ---
 
-# # Useful Functions
+## Useful Functions
 
-# ## Striçiçindedeg Functions
+### String Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-# ## Date Functions
+### Date Functions
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-# ## Numeric Functions
+### Numeric Functions
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-# ## Conditional Functions
+### Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +556,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-# # Periçinmance Tips
+## Performans Tips
 
 ✅ **Do:**
-- Use içiçindededexes on frequently queried columns
+- Use indexes on frequently queried columns
 - Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIÇINDE` to analyze query periçinmance
-- Normalize veri appropriately
-- Use prepared statements to prevent SQL içiçindedejection
+- Use `EXPLAIN` to analyze query Performans
+- Normalize Veri appropriately
+- Use prepared statements to prevent SQL injection
 
 ❌ **Don't:**
-- Use functions on içiçindededexed columns içiçindede WHERE clauses
-- Create too many içiçindededexes (slows writes)
-- Use `SELECT DISTIÇINDECT` unnecessarily
+- Use functions on indexed columns içinde WHERE clauses
+- Create too many indexes (slows writes)
+- Use `SELECT DISTINCT` unnecessarily
 - Ignore query execution plans
-- Store computed values when buy can be calculated
+- Store computed values when they can be calculated
 
 ---
 
-# # Güvenlik En İyi Uygulamalar
+## Güvenlik En İyi Uygulamalar
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Last updated: June 2025 | SQL Stveard (MySQL/PostgreSQL compatible)*
+*Son Güncelleme: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

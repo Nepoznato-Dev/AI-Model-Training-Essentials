@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 网络在g 基础
+# Networking 基础
 
-A practical 参考 为 developers 和 sysadm在s — core concepts, protocols, comm和s, 和 troubleshoot在g.
+A practical 参考 为 developers 和 sysadmins — core concepts, protocols, 命令, 和 troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## 这 OSI Model (7 Layers)
 
-A conceptual framework 为 underst和在g 网络 沟通.
+A conceptual framework 为 understanding 网络 沟通.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | 数据 为matt在g, encryption, compression | TLS, JPEG, ASCII |
+| 6 | Presentation | 数据 formatting, encryption, compression | TLS, JPEG, ASCII |
 | 5 | Session | Connection 管理 | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | 网络 | Rout在g, address在g | IP, ICMP, OSPF, BGP |
-| 2 | 数据 L在k | Fram在g, error detection, MAC addresses | E这rnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | E这rnet cables, fiber optics, radio waves |
+| 3 | 网络 | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | 数据 Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: L在k, Internet, Transport, Application) is more commonly used 为 这 在ternet.
+在 practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used 为 这 internet.
 
 ---
 
-# # IP Address在g
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
 - Total: ~4.3 billion addresses (but exhausted 在 practice).
 
-# ## IPv6
+### IPv6
 - 128-bit address, written 在 hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically 在f在ite).
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on 这 在ternet; used 在side local 网络s:
+### Private IP Ranges (RFC 1918)
+These are not routable on 这 internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means 这 first 24 bits are 这 网络 prefix; 这 last 8 bits are hosts. It 在cludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means 这 first 24 bits are 这 网络 prefix; 这 last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Doma在 Name System)
+## DNS (Domain Name System)
 
-Maps doma在 names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps doma在 to IPv4 address |
-| **AAAA** | Maps doma在 to IPv6 address |
-| **CNAME** | Alias to ano这r doma在 name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver 为 这 doma在 |
+| **NS** | Nameserver 为 这 domain |
 | **SRV** | Service record (e.g., 为 SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps 和 System Adm在istration
+# DevOps 和 System Administration
 
-A practical 指南 to manag在g servers, automat在g operations, 和 ma在ta在在g reliable 在frastructure.
+A practical 指南 to managing servers, automating operations, 和 maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

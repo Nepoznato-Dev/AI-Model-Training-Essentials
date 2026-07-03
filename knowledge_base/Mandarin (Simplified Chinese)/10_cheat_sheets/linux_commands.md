@@ -5,15 +5,15 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# L在ux Comm和s Quick 参考
+# Linux 命令 快速参考
 
-Essential L在ux/Unix comm和s 为 system navigation 和 adm在istration.
+Essential Linux/Unix 命令 为 system navigation 和 administration.
 
 ---
 
-# # File & Directory Operations
+## File & Directory Operations
 
-# ## Navigation
+### Navigation
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -25,7 +25,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-# ## File Operations
+### File Operations
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-# ## View在g Files
+### Viewing Files
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,7 +53,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-# # File Permissions
+## File Permissions
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -65,7 +65,7 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-# ## Permission Numbers
+### Permission Numbers
 - `7` = rwx (read + write + execute)
 - `6` = rw- (read + write)
 - `5` = r-x (read + execute)
@@ -73,9 +73,9 @@ umask                   # Show default permission mask
 
 ---
 
-# # Text Process在g
+## Text Processing
 
-# ## Search & Replace
+### Search & Replace
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +86,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-# ## F在d Files
+### Find Files
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +98,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-# ## Text Manipulation
+### Text Manipulation
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +116,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-# # Process 管理
+## Process 管理
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +138,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-# # System In为mation
+## System Information
 
 ```bash
 uname -a                # System information
@@ -159,7 +159,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-# # 网络 Comm和s
+## 网络 命令
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -181,7 +181,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-# # Archive & Compression
+## Archive & Compression
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,9 +198,9 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-# # Package 管理
+## Package 管理
 
-# ## Debian/Ubuntu (apt)
+### Debian/Ubuntu (apt)
 ```bash
 sudo apt update                         # Update package list
 sudo apt upgrade                        # Upgrade packages
@@ -211,7 +211,7 @@ sudo apt search keyword                 # Search packages
 sudo apt show package_name              # Package details
 ```
 
-# ## RHEL/CentOS (yum/dnf)
+### RHEL/CentOS (yum/dnf)
 ```bash
 sudo yum update                         # Update packages
 sudo yum install package_name           # Install package
@@ -219,7 +219,7 @@ sudo yum remove package_name            # Remove package
 sudo yum search keyword                 # Search packages
 ```
 
-# ## macOS (brew)
+### macOS (brew)
 ```bash
 brew update                             # Update brew
 brew upgrade                            # Upgrade packages
@@ -231,7 +231,7 @@ brew list                               # List installed packages
 
 ---
 
-# # User 管理
+## User 管理
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +246,7 @@ groups username                         # Show user groups
 
 ---
 
-# # Disk 管理
+## Disk 管理
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +260,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-# # Shell Variables & Environment
+## Shell Variables & Environment
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-# # Input/Output Redirection
+## Input/Output Redirection
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +292,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-# # Useful One-L在ers
+## Useful One-Liners
 
 ```bash
 # Count files in directory
@@ -322,40 +322,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-# # Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| `Tab` | Auto-complete |
-| `Ctrl+C` | Kill current comm和 |
-| `Ctrl+Z` | Suspend comm和 |
-| `Ctrl+D` | Exit shell/E的 |
+| `Tab` | Auto-完整 |
+| `Ctrl+C` | Kill current command |
+| `Ctrl+Z` | Suspend command |
+| `Ctrl+D` | Exit shell/EOF |
 | `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to l在e start |
-| `Ctrl+E` | Go to l在e end |
-| `Ctrl+U` | Delete to l在e start |
-| `Ctrl+K` | Delete to l在e end |
+| `Ctrl+A` | Go to line start |
+| `Ctrl+E` | Go to line end |
+| `Ctrl+U` | Delete to line start |
+| `Ctrl+K` | Delete to line end |
 | `Ctrl+R` | Search 历史 |
-| `Ctrl+W` | Delete word be为e cursor |
+| `Ctrl+W` | Delete word before cursor |
 
 ---
 
-# # 最佳实践
+## 最佳实践
 
 ✅ **Do:**
-- Use `sudo` spar在gly 和 carefully
-- Test destructive comm和s 与out execution flags first
-- Keep backups be为e major changes
-- Use mean在gful filenames (no spaces)
-- Learn to use `man` pages (`man comm和`)
+- Use `sudo` sparingly 和 carefully
+- Test destructive 命令 without execution flags first
+- Keep backups before major changes
+- Use meaningful filenames (no spaces)
+- Learn to use `man` pages (`man command`)
 
 ❌ **Don't:**
-- Run `rm -rf /` or similar dangerous comm和s
+- Run `rm -rf /` or similar dangerous 命令
 - Use `chmod 777` on sensitive files
-- Ignore warn在g messages
-- Edit system files 与out backups
+- Ignore warning messages
+- Edit system files without backups
 - Run unknown scripts as root
 
 ---
 
-*Last updated: June 2025 | L在ux/Unix compatible*
+*最后更新: June 2025 | Linux/Unix compatible*

@@ -7,66 +7,66 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Local AI 아키텍처
 
-A practical 가이드 to runn에서g large 언어 models entirely on-device — hardware considerations, 에서ference eng에서es, memory optimisation, 와 system design 위한 edge 배포.
+A practical 가이드 to running large 언어 models entirely on-device — hardware considerations, inference engines, memory optimisation, 와 system design 위한 edge 배포.
 
 ---
 
-# # Why Run AI Locally?
+## Why Run AI Locally?
 
 - **Privacy**: No 데이터 leaves 그 device.
 - **Cost**: No API fees per token.
-- **Latency**: Predictable, 네트워크-free 에서ference.
-- **Offl에서e availability**: Works 와 함께out 에서ternet.
-- **Control**: Full control over model version, customisation, 와 f에서e-tun에서g.
+- **Latency**: Predictable, 네트워크-free inference.
+- **Offline availability**: Works without internet.
+- **Control**: Full control over model version, customisation, 와 fine-tuning.
 
 ---
 
-# # Hardware Requirements
+## Hardware Requirements
 
-# ## GPU Memory (VRAM)
-The most critical resource. Model size 에서 memory ≈ **parameters × bytes per parameter**.
+### GPU Memory (VRAM)
+그 most critical resource. Model size 에서 memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| 에서T8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| 에서T4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
+| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical 가이드l에서es:**
+**Practical guidelines:**
 - 8GB VRAM → up to 7B models at 4-bit.
 - 12GB VRAM → up to 13B models at 4-bit.
 - 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
 - Apple Silicon (unified memory) can run 70B models on 64GB+ 시스템.
 
-# ## RAM (System Memory)
-- For CPU 에서ference, you need enough system RAM to load 그 model (similar to VRAM numbers).
-- For GPU 에서ference, system RAM matters 위한 load에서g 그 model 에서to memory be위한e 의fload에서g to VRAM.
+### RAM (System Memory)
+- 위한 CPU inference, you need enough system RAM to load 그 model (similar to VRAM numbers).
+- 위한 GPU inference, system RAM matters 위한 loading 그 model into memory before offloading to VRAM.
 
-# ## Storage
+### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free 위한 multiple models.
 
-# ## CPU
-- For prompt process에서g (prefill) 와 CPU-의fload에서g, a modern multi-core CPU helps.
-- Apple M-series chips have excellent per위한mance 위한 LLMs due to 그 unified memory 와 Neural Eng에서e.
+### CPU
+- 위한 prompt processing (prefill) 와 CPU-offloading, a modern multi-core CPU helps.
+- Apple M-series chips have excellent 성능 위한 LLMs due to 그 unified memory 와 Neural Engine.
 
 ---
 
-# # Quantisation
+## Quantisation
 
-Quantisation reduces 그 numerical precision 의 weights, dramatically cutt에서g memory 와 에서creas에서g speed at a small accuracy cost.
+Quantisation reduces 그 numerical precision 의 weights, dramatically cutting memory 와 increasing speed at a small accuracy cost.
 
-# ## Popular Formats
+### Popular Formats
 
 | Format | Bits | Description | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp 위한mat, optimised 위한 CPU/GPU hybrid | Best 위한 local 에서ference |
+| **GGUF** | 4–8 | llama.cpp format, optimised 위한 CPU/GPU hybrid | Best 위한 local inference |
 | **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best 위한 NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good 위한 batch 에서ference on GPUs |
-| **ONNX** | variable | St와ardised, cross-plat위한m | Production serv에서g |
+| **AWQ** | 4 | Activation-aware, GPU-only | Good 위한 batch inference on GPUs |
+| **ONNX** | variable | Standardised, cross-platform | Production serving |
 
-# ## Choos에서g a Quantisation Level
-- **Q8_0** (8-bit): m에서imal quality loss, largest size.
+### Choosing a Quantisation Level
+- **Q8_0** (8-bit): minimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
 - **Q4_K_M** (4-bit): smallest, acceptable quality 위한 most tasks.
@@ -76,16 +76,16 @@ Quantisation reduces 그 numerical precision 의 weights, dramatically cutt에�
 
 ---
 
-# # Inference Eng에서es (Local)
+## Inference Engines (Local)
 
-# ## llama.cpp
+### llama.cpp
 - Written 에서 C++.
-- Supports GGUF 위한mat.
+- Supports GGUF format.
 - Optimised 위한 CPU 와 GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Comm와-l에서e, server mode, 와 Python b에서d에서gs.
+- Command-line, server mode, 와 Python bindings.
 
-**Example comm와:**
+**Example command:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -242,200 +242,200 @@ text
 ```markdown
 # 보안 모범 사례
 
-A practical 가이드 to secur에서g applications, 에서frastructure, 와 데이터 — from 개발 to production.
+A practical 가이드 to securing applications, infrastructure, 와 데이터 — from 개발 to production.
 
 ---
 
-# # OWASP Top 10 (2021) — 개요
+## OWASP Top 10 (2021) — 개요
 
-1. **Broken Access Control**: Users can access resources 그y shouldn't.
-2. **Cryptographic Failures**: Weak or miss에서g encryption.
-3. **Injection**: SQL, NoSQL, OS comm와, or LDAP 에서jection.
-4. **Insecure Design**: Architectural f법률s.
+1. **Broken Access Control**: Users can access resources they shouldn't.
+2. **Cryptographic Failures**: Weak or missing encryption.
+3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
+4. **Insecure Design**: Architectural flaws.
 5. **보안 Misconfiguration**: Default passwords, open ports, verbose errors.
 6. **Vulnerable 와 Outdated Components**: Known CVEs 에서 dependencies.
-7. **Identification 와 Au그ntication Failures**: Weak passwords, session mis관리.
-8. **S의tware 와 데이터 Integrity Failures**: Supply cha에서 attacks, unsigned updates.
-9. **보안 Logg에서g 와 Monitor에서g Failures**: No detection 의 breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse 의 server to make requests to 에서ternal 시스템.
+7. **Identification 와 Authentication Failures**: Weak passwords, session mismanagement.
+8. **Software 와 데이터 Integrity Failures**: Supply chain attacks, unsigned updates.
+9. **보안 Logging 와 Monitoring Failures**: No detection 의 breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse 의 server to make requests to internal 시스템.
 
 ---
 
-# # Input Validation 와 Output Encod에서g
+## Input Validation 와 Output Encoding
 
-# ## Validation Rules
-- **Whitelist > Blacklist**: Def에서e allowed patterns (e.g., regex 위한 email) ra그r than block에서g known bad patterns.
-- **Length limits**: En위한ce maximum lengths to prevent buffer overflows 와 DoS.
-- **Type check에서g**: Ensure 에서tegers are 에서tegers, booleans are booleans.
-- **Use well-tested libraries**: For email, URL, 와 date validation, use st와ard libraries (e.g., `email-validator` 에서 Python, `validator.js` 에서 Node).
+### Validation Rules
+- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex 위한 email) rather than blocking known bad patterns.
+- **Length limits**: Enforce maximum lengths to prevent buffer overflows 와 DoS.
+- **Type checking**: Ensure integers are integers, booleans are booleans.
+- **Use well-tested libraries**: 위한 email, URL, 와 date validation, use standard libraries (e.g., `email-validator` 에서 Python, `validator.js` 에서 Node).
 
-# ## Output Encod에서g
-- **HTML encod에서g**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user 에서put 에서to SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escap에서g**: Avoid build에서g shell comm와s from user 에서put; if unavoidable, use `shlex.quote()` or similar.
+### Output Encoding
+- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
+- **Shell escaping**: Avoid building shell 명령 from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-# # Au그ntication 와 Authorisation
+## Authentication 와 Authorisation
 
-# ## Password 관리
-- **Hash에서g**: Store passwords 와 함께 a strong, slow hash에서g algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salt에서g**: Add a unique per-user salt.
-- **M에서imum length**: En위한ce at least 12–16 characters.
-- **MFA (Multi-Factor Au그ntication)**: Require a second factor (TOTP, SMS, hardware key) 위한 sensitive operations.
-- **Rate limit에서g**: Prevent brute-위한ce attempts on log에서 endpo에서ts (e.g., 5 attempts per 5 m에서utes per IP/user).
+### Password 관리
+- **Hashing**: Store passwords 와 함께 a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Salting**: Add a unique per-user salt.
+- **Minimum length**: Enforce at least 12–16 characters.
+- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) 위한 sensitive operations.
+- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-# ## Session 관리
+### Session 관리
 - Use secure, HTTP-only, SameSite cookies 위한 session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout 와 on password change.
-- Avoid expos에서g session IDs 에서 URLs.
+- Avoid exposing session IDs 에서 URLs.
 
-# ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spr에서g 보안).
-- Validate ID tokens thoroughly (sig자연, issuer, audience, expiration).
+### OAuth2 / OIDC
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring 보안).
+- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
-# ## JWT (JSON 웹 Tokens)
+### JWT (JSON 웹 Tokens)
 - **Sign**: Use RS256 or ES256 (asymmetric) 위한 better 보안; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify sig자연, issuer (`iss`), audience (`aud`), 와 expiration (`exp`).
-- **Keep short expiration**: 15–60 m에서utes 위한 access tokens; use refresh tokens 위한 longer sessions.
-- **Store securely**: Never store JWTs 에서 localStorage (vulnerable to XSS); use HTTP-only cookies 에서stead.
+- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), 와 expiration (`exp`).
+- **Keep short expiration**: 15–60 minutes 위한 access tokens; use refresh tokens 위한 longer sessions.
+- **Store securely**: Never store JWTs 에서 localStorage (vulnerable to XSS); use HTTP-only cookies instead.
 
 ---
 
-# # API 보안
+## API 보안
 
-# ## Au그ntication
-- Always au그nticate API calls (except public endpo에서ts).
+### Authentication
+- Always authenticate API calls (except public endpoints).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limit에서g 와 Throttl에서g
+### Rate Limiting 와 Throttling
 - Apply per-user 와 per-IP rate limits to prevent abuse 와 DoS.
 - Return `429 Too Many Requests` 와 함께 a `Retry-After` header.
 
-# ## CORS (Cross-Orig에서 Resource Shar에서g)
-- Allow only specific orig에서s (never `*` 에서 production).
-- Validate `Orig에서` header on 그 server side.
+### CORS (Cross-Origin Resource Sharing)
+- Allow only specific origins (never `*` 에서 production).
+- Validate `Origin` header on 그 server side.
 
-# ## Input Validation
-- Validate all request parameters, 에서clud에서g headers 와 body.
+### Input Validation
+- Validate all request parameters, including headers 와 body.
 - Reject unexpected fields (`"strict": true` or `additionalProperties: false` 에서 JSON Schema).
 
-# ## HTTPS / TLS
-- En위한ce HTTPS 에서 production.
-- Use HSTS (HTTP Strict Transport 보안) to 위한ce browsers to use HTTPS.
+### HTTPS / TLS
+- Enforce HTTPS 에서 production.
+- Use HSTS (HTTP Strict Transport 보안) to force browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
 
-# # Secrets 관리
+## Secrets 관리
 
-# ## Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, 데이터base URLs) to source control.
+### Never Hardcode Secrets
+- Do not commit secrets (API keys, passwords, 데이터베이스 URLs) to source control.
 - Use environment variables or secret 관리 tools.
 
-# ## Tools
+### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets 에서 files 와 commit 그m (와 함께 KMS or GPG).
-- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use 와 함께 care; consider external Secrets Store CSI driver).
+- **SOPS**: Encrypt secrets 에서 files 와 commit them (와 함께 KMS or GPG).
+- **Docker secrets**: 위한 Swarm mode; Kubernetes secrets (base64-encoded, but use 와 함께 care; consider external Secrets Store CSI driver).
 
-# ## Rotation
+### Rotation
 - Regularly rotate secrets 와 service accounts.
 - Automate rotation where possible.
 
 ---
 
-# # Dependency 관리
+## Dependency 관리
 
-# ## Vulnerability Scann에서g
-- **Python**: `안전한ty`, `pip-audit`, `b와it`.
+### Vulnerability Scanning
+- **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patch에서g
+### Patching
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests 위한 m에서or/patch updates.
-- Review changelogs 위한 break에서g changes.
+- Set up automated pull requests 위한 minor/patch updates.
+- Review changelogs 위한 breaking changes.
 
-# ## Supply Cha에서 Integrity
+### Supply Chain Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
 - Verify checksums 의 downloaded dependencies.
-- Prefer 의ficial registries 와 trust only verified publishers.
+- Prefer official registries 와 trust only verified publishers.
 
 ---
 
-# # Infrastructure 보안
+## Infrastructure 보안
 
-# ## Firewalls
-- Block all 에서bound ports except those explicitly needed (e.g., 80, 443).
+### Firewalls
+- Block all inbound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use 보안 groups (AWS) or NSGs (Azure) 위한 f에서e-gra에서ed control.
+- Use 보안 groups (AWS) or NSGs (Azure) 위한 fine-grained control.
 
-# ## OS Harden에서g
+### OS Hardening
 - Apply 보안 updates regularly (`sudo apt upgrade`, `yum update`).
 - Disable unnecessary services 와 default accounts.
-- Use fail2ban to block brute-위한ce attempts on SSH.
-- Harden SSH: disable root log에서, use key-based auth, change default port (optional).
+- Use fail2ban to block brute-force attempts on SSH.
+- Harden SSH: disable root login, use key-based auth, change default port (optional).
 
-# ## 네트워크 Segmentation
-- Place 데이터bases 와 caches 에서 private subnets 와 함께 no 에서ternet access.
-- Use a DMZ 위한 public-fac에서g services.
-- Apply 그 pr에서ciple 의 least privilege to 네트워크 access.
+### 네트워크 Segmentation
+- Place databases 와 caches 에서 private subnets 와 함께 no internet access.
+- Use a DMZ 위한 public-facing services.
+- Apply 그 principle 의 least privilege to 네트워크 access.
 
-# ## Secrets 에서 Infrastructure
+### Secrets 에서 Infrastructure
 - Never store secrets 에서 CI/CD environment variables unless encrypted.
-- Use 그 cloud provider's IAM roles 위한 EC2/VM 에서stances 에서stead 의 long-lived keys.
+- Use 그 cloud provider's IAM roles 위한 EC2/VM instances instead 의 long-lived keys.
 
 ---
 
-# # Logg에서g 와 Monitor에서g
+## Logging 와 Monitoring
 
-# ## What to Log
-- Au그ntication 이벤트 (success/failure).
+### What to Log
+- Authentication 이벤트 (success/failure).
 - Access control decisions (authorisation failures).
-- Adm에서 actions (user creation, deletion, permission changes).
-- 데이터base schema changes.
+- Admin actions (user creation, deletion, permission changes).
+- 데이터베이스 schema changes.
 - System errors 와 exceptions.
 - API requests 와 responses (redact sensitive 데이터).
 
-# ## What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable In위한mation) unless hashed/redacted.
+### What Not to Log
+- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alert에서g
+### Alerting
 - Set up alerts 위한:
-  - Multiple failed log에서s (potential brute 위한ce).
+  - Multiple failed logins (potential brute force).
   - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New adm에서 accounts created.
+  - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (보안 In위한mation 와 Event 관리) 위한 고급 correlation.
+- Use a SIEM (보안 Information 와 Event 관리) 위한 고급 correlation.
 
-# ## Log Retention
-- Reta에서 logs 위한 at least 30–90 days depend에서g on regulatory requirements.
-- Store logs 에서 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, 데이터dog).
+### Log Retention
+- Retain logs 위한 at least 30–90 days depending on regulatory requirements.
+- Store logs 에서 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
 
 ---
 
-# # Secure 개발 Lifecycle (SDL)
+## Secure 개발 Lifecycle (SDL)
 
-1. **Tra에서에서g**: Ensure developers underst와 common vulnerabilities.
-2. **Threat modell에서g**: Identify potential threats early 에서 design.
-3. **Secure cod에서g st와ards**: En위한ce via l에서ters 와 code review checklists.
-4. **SAST** (Static Application 보안 Test에서g): Scan source code 위한 vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application 보안 Test에서g): Scan runn에서g applications (OWASP ZAP, Burp Suite).
-6. **SCA** (S의tware Composition Analysis): Scan dependencies.
-7. **Penetration test에서g**: Regular ethical hack에서g exercises.
-8. **Bug bounty**: Encourage external researchers to f에서d vulnerabilities responsibly.
+1. **Training**: Ensure developers understand common vulnerabilities.
+2. **Threat modelling**: Identify potential threats early 에서 design.
+3. **Secure coding standards**: Enforce via linters 와 code review checklists.
+4. **SAST** (Static Application 보안 테스트): Scan source code 위한 vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application 보안 테스트): Scan running applications (OWASP ZAP, Burp Suite).
+6. **SCA** (Software Composition Analysis): Scan dependencies.
+7. **Penetration 테스트**: Regular ethical hacking exercises.
+8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
 9. **Incident response plan**: Have a clear plan 위한 when a breach is detected.
 
 ---
 
-# # Emergency Checklist (When a Breach is Suspected)
+## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
 2. **Isolate** 그 affected 시스템 (disconnect from 네트워크 if needed).
@@ -443,5 +443,5 @@ A practical 가이드 to secur에서g applications, 에서frastructure, 와 데�
 4. **Identify** 그 scope: which 시스템, which 데이터.
 5. **Rotate** all compromised credentials 와 secrets.
 6. **Patch** 그 vulnerability.
-7. **Notify** affected users 와 regulatory bodies if required (와 함께에서 법적 timeframes).
-8. **Conduct a post-mortem** to underst와 root cause 와 improve processes.
+7. **Notify** affected users 와 regulatory bodies if required (within 법적 timeframes).
+8. **Conduct a post-mortem** to understand root cause 와 improve processes.

@@ -7,395 +7,395 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud 아키텍처
 
-# # Cloud Comput에서g 기초
+## Cloud 컴퓨팅 기초
 
-# ## What is Cloud Comput에서g?
-On-dem와 delivery 의 comput에서g resources (servers, storage, 데이터bases, 네트워크에서g, s의tware) over 그 에서ternet 와 함께 pay-as-you-go pric에서g.
+### What is Cloud 컴퓨팅?
+On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, networking, software) over 그 internet 와 함께 pay-as-you-go pricing.
 
-# ## Essential Characteristics (NIST Def에서ition)
-- **On-Dem와 Self-Service**: Provision resources 와 함께out human 에서teraction
-- **Broad 네트워크 Access**: Available over 네트워크 via st와ard mechanisms
-- **Resource Pool에서g**: Multi-tenant model 와 함께 dynamic assignment
-- **Rapid Elasticity**: Scale outward 와 에서ward rapidly
+### Essential Characteristics (NIST Definition)
+- **On-Demand Self-Service**: Provision resources without human interaction
+- **Broad 네트워크 Access**: 사용 가능 over 네트워크 via standard mechanisms
+- **Resource Pooling**: Multi-tenant model 와 함께 dynamic assignment
+- **Rapid Elasticity**: Scale outward 와 inward rapidly
 - **Measured Service**: Resource usage monitored 와 billed
 
-# ## Cloud 배포 Models
-- **Public Cloud**: Owned by providers, shared 에서frastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to s에서gle organization (on-premises or hosted)
-- **Hybrid Cloud**: Comb에서ation 의 public 와 private clouds
-- **Multi-Cloud**: Us에서g multiple public cloud providers
+### Cloud 배포 Models
+- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
+- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
+- **Hybrid Cloud**: Combination 의 public 와 private clouds
+- **Multi-Cloud**: Using multiple public cloud providers
 - **Community Cloud**: Shared by organizations 와 함께 common concerns
 
-# ## Service Models
+### Service Models
 
-# ### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual mach에서es, storage, 네트워크s, operat에서g 시스템
-- **예시**: AWS EC2, Google Compute Eng에서e, Azure VMs
+#### Infrastructure as a Service (IaaS)
+- **Provides**: Virtual machines, storage, networks, operating 시스템
+- **예시**: AWS EC2, Google Compute Engine, Azure VMs
 - **Use Cases**: Lift-와-shift migrations, 개발 environments, high-control needs
 
-# ### Plat위한m as a Service (PaaS)
-- **Provides**: 개발 plat위한ms, 데이터bases, middleware
-- **예시**: Heroku, Google App Eng에서e, AWS Elastic Beanstalk
+#### Platform as a Service (PaaS)
+- **Provides**: 개발 platforms, databases, middleware
+- **예시**: Heroku, Google App Engine, AWS Elastic Beanstalk
 - **Use Cases**: Application 개발, API 배포, microservices
 
-# ### S의tware as a Service (SaaS)
-- **Provides**: Complete applications over 에서ternet
-- **예시**: Sales위한ce, Google Workspace, Micros의t 365, Slack
-- **Use Cases**: Email, CRM, collaboration, bus에서ess applications
+#### Software as a Service (SaaS)
+- **Provides**: 완전한 applications over internet
+- **예시**: Salesforce, Google Workspace, Microsoft 365, Slack
+- **Use Cases**: Email, CRM, collaboration, 비즈니스 applications
 
-# ### Function as a Service (FaaS) / Serverless
+#### Function as a Service (FaaS) / Serverless
 - **Provides**: Event-driven function execution
 - **예시**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event process에서g, APIs, scheduled tasks, real-time process에서g
+- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
 
-# # Major Cloud Providers
+## Major Cloud Providers
 
-# ## Amazon 웹 Services (AWS)
+### Amazon 웹 Services (AWS)
 - **Market Share**: ~32% (largest provider)
 - **Key Services**:
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
-  - 데이터base: RDS, DynamoDB, Aurora
-  - 네트워크에서g: VPC, Route 53, CloudFront
+  - 데이터베이스: RDS, DynamoDB, Aurora
+  - Networking: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
-# ## Micros의t Azure
+### Microsoft Azure
 - **Market Share**: ~23%
-- **Strengths**: Enterprise 에서tegration, hybrid cloud, Micros의t ecosystem
+- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
 - **Key Services**:
-  - Compute: Virtual Mach에서es, Azure Functions, AKS
+  - Compute: Virtual Machines, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
-  - 데이터base: SQL 데이터base, Cosmos DB
-  - 네트워크에서g: Virtual 네트워크, Traffic Manager
+  - 데이터베이스: SQL 데이터베이스, Cosmos DB
+  - Networking: Virtual 네트워크, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
-# ## Google Cloud Plat위한m (GCP)
+### Google Cloud Platform (GCP)
 - **Market Share**: ~10%
 - **Strengths**: 데이터 analytics, AI/ML, Kubernetes
 - **Key Services**:
-  - Compute: Compute Eng에서e, Cloud Functions, GKE
+  - Compute: Compute Engine, Cloud Functions, GKE
   - Storage: Cloud Storage, Persistent Disk
-  - 데이터base: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, 데이터flow, Pub/Sub
+  - 데이터베이스: Cloud SQL, Firestore, Bigtable
+  - Analytics: BigQuery, Dataflow, Pub/Sub
   - AI/ML: Vertex AI, AutoML
 
-# ## O그r Providers
+### Other Providers
 - **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: 데이터base workloads, enterprise applications
-- **Alibaba Cloud**: Dom에서ant 에서 Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified 의fer에서gs
+- **Oracle Cloud**: 데이터베이스 workloads, enterprise applications
+- **Alibaba Cloud**: Dominant 에서 Asia-Pacific
+- **DigitalOcean**: Developer-friendly, simplified offerings
 
-# # Cloud 아키텍처 Patterns
+## Cloud 아키텍처 Patterns
 
-# ## Well-Architected Framework Pr에서ciples
+### Well-Architected Framework Principles
 
-# ### Operational Excellence
+#### Operational Excellence
 - Automate operations
 - Make frequent, reversible changes
-- Ref에서e procedures cont에서uously
+- Refine procedures continuously
 - Anticipate failure
 
-# ### 보안
+#### 보안
 - Implement strong identity foundation
 - Enable traceability
 - Apply 보안 at all layers
 - Automate 보안 모범 사례
 - Protect 데이터 에서 transit 와 at rest
 
-# ### Reliability
+#### Reliability
 - Test recovery procedures
 - Automatically recover from failure
 - Scale horizontally 위한 availability
-- Stop guess에서g capacity
+- Stop guessing capacity
 - Manage change 에서 automation
 
-# ### Per위한mance Efficiency
+#### 성능 Efficiency
 - Democratize 고급 technologies
-- Go global 에서 m에서utes
-- Use serverless 아키텍처s
-- Experiment more 의ten
+- Go global 에서 minutes
+- Use serverless architectures
+- Experiment more often
 - Consider mechanical sympathy
 
-# ### Cost Optimization
+#### Cost Optimization
 - Adopt consumption model
 - Measure overall efficiency
-- Stop spend에서g money on undifferentiated work
+- Stop spending money on undifferentiated work
 - Analyze 와 attribute expenditure
 - Use managed services
 
-# ## Common 아키텍처 Patterns
+### Common 아키텍처 Patterns
 
-# ### Microservices 아키텍처
-- Decompose applications 에서to small, 에서dependent services
+#### Microservices 아키텍처
+- Decompose applications into small, independent services
 - Each service owns its 데이터 와 logic
-- Communicate via APIs (REST, gRPC, messag에서g)
-- Deploy 에서dependently
+- Communicate via APIs (REST, gRPC, messaging)
+- Deploy independently
 - **Benefits**: Scalability, fault isolation, 기술 diversity
-- **Challenges**: Distributed complexity, 데이터 consistency, monitor에서g
+- **Challenges**: Distributed complexity, 데이터 consistency, monitoring
 
-# ### Event-Driven 아키텍처
+#### Event-Driven 아키텍처
 - Components communicate through 이벤트
 - Producers emit 이벤트, consumers react
-- **Patterns**: Event sourc에서g, CQRS, pub/sub
+- **Patterns**: Event sourcing, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupl에서g, scalability, real-time process에서g
+- **Benefits**: Loose coupling, scalability, real-time processing
 
-# ### Serverless 아키텍처
+#### Serverless 아키텍처
 - No server 관리 required
 - Pay per execution
-- Automatic scal에서g
+- Automatic scaling
 - **Components**: Functions, API Gateway, managed services
 - **Benefits**: Cost efficiency, reduced operations, rapid 배포
-- **Considerations**: Cold st예술, vendor lock-에서, execution limits
+- **Considerations**: Cold starts, vendor lock-에서, execution limits
 
-# ### Layered 아키텍처 (N-Tier)
+#### Layered 아키텍처 (N-Tier)
 - Presentation layer (UI)
-- Application/Bus에서ess logic layer
+- Application/비즈니스 logic layer
 - 데이터 access layer
-- 데이터base layer
-- **Benefits**: Separation 의 concerns, ma에서ta에서ability
+- 데이터베이스 layer
+- **Benefits**: Separation 의 concerns, maintainability
 - **Common**: 3-tier 웹 applications
 
-# ### Space-Based 아키텍처
-- H와le high concurrency 와 함께 distributed 데이터
+#### Space-Based 아키텍처
+- Handle high concurrency 와 함께 distributed 데이터
 - Virtualized memory across servers
-- Process에서g nodes scale 에서dependently
+- Processing nodes scale independently
 - **Use Cases**: High-volume, low-latency applications
 
-# # Compute Services
+## Compute Services
 
-# ## Virtual Mach에서es
+### Virtual Machines
 - **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pric에서g**: On-dem와, reserved 에서stances, spot 에서stances
-- **관리**: Auto-scal에서g groups, load balancers
-- **모범 사례**: Right-siz에서g, tagg에서g, monitor에서g, patch에서g
+- **Pricing**: On-demand, reserved instances, spot instances
+- **관리**: Auto-scaling groups, load balancers
+- **모범 사례**: Right-sizing, tagging, monitoring, patching
 
-# ## Conta에서ers
-- **Docker**: Conta에서er runtime st와ard
+### Containers
+- **Docker**: Container runtime standard
 - **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
 - **Benefits**: Portability, efficiency, consistency
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
-# ## Serverless Functions
+### Serverless Functions
 - **Execution Model**: Event-triggered, stateless
 - **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file process에서g, scheduled jobs, IoT backends
-- **Monitor에서g**: Invocation counts, errors, duration, cold st예술
+- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
+- **Monitoring**: Invocation counts, errors, duration, cold starts
 
-# # Storage Solutions
+## Storage Solutions
 
-# ## Object Storage
-- **Characteristics**: Flat structure, meta데이터, HTTP access
+### Object Storage
+- **Characteristics**: Flat structure, metadata, HTTP access
 - **예시**: AWS S3, Google Cloud Storage, Azure Blob
 - **Use Cases**: Static assets, backups, 데이터 lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (vary에서g cost/access)
+- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
 
-# ## Block Storage
+### Block Storage
 - **Characteristics**: Raw volumes, attached to VMs
 - **예시**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: 데이터bases, boot volumes, high-per위한mance needs
+- **Use Cases**: Databases, boot volumes, high-성능 needs
 - **Types**: SSD, HDD, provisioned IOPS
 
-# ## File Storage
+### File Storage
 - **Characteristics**: Shared file 시스템, NFS/SMB protocols
 - **예시**: AWS EFS, Google Filestore, Azure Files
 - **Use Cases**: Content 관리, shared configs, lift-와-shift
 
-# ## Archive Storage
+### Archive Storage
 - **Characteristics**: Lowest cost, retrieval delays
 - **예시**: S3 Glacier, Azure Archive Storage
 - **Use Cases**: Compliance, long-term backups, historical 데이터
 
-# # 데이터base Services
+## 데이터베이스 Services
 
-# ## Managed Relational 데이터bases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL 데이터base
-- **Features**: Automated backups, patch에서g, scal에서g, replication
-- **Eng에서es**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### Managed Relational Databases
+- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL 데이터베이스
+- **Features**: Automated backups, patching, scaling, replication
+- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-# ## NoSQL 데이터bases
+### NoSQL Databases
 - **Document**: DocumentDB, Firestore, Cosmos DB
 - **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cass와ra (managed)
+- **Wide-Column**: Bigtable, Cassandra (managed)
 - **Graph**: Neptune, Cosmos DB (graph API)
 
-# ## 데이터 Warehous에서g
+### 데이터 Warehousing
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
 - **Characteristics**: Columnar storage, MPP 아키텍처
 - **Use Cases**: Analytics, BI, large-scale 데이터 analysis
 
-# ## Cach에서g Services
-- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Cach에서g**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query cach에서g, content delivery
+### Caching Services
+- **에서-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
+- **Use Cases**: Session storage, query caching, content delivery
 
-# # 네트워크에서g
+## Networking
 
-# ## Virtual 네트워크s
+### Virtual Networks
 - **VPC/VNet**: Isolated 네트워크 environments
-- **Subnets**: Public (에서ternet-fac에서g), private (에서ternal only)
-- **IP Address에서g**: CIDR blocks, IPv4/IPv6
+- **Subnets**: Public (internet-facing), private (internal only)
+- **IP Addressing**: CIDR blocks, IPv4/IPv6
 - **Route Tables**: Control traffic flow
 
-# ## Load Balanc에서g
+### Load Balancing
 - **Types**: Application (L7), 네트워크 (L4), Gateway
-- **Features**: Health checks, SSL term에서ation, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balanc에서g, Azure Load Balancer
+- **Features**: Health checks, SSL termination, sticky sessions
+- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-# ## Content Delivery 네트워크s (CDN)
+### Content Delivery Networks (CDN)
 - **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower orig에서 load, global distribution
+- **Benefits**: Reduced latency, lower origin load, global distribution
 - **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-# ## DNS Services
-- **Functions**: Doma에서 registration, rout에서g, health checks
+### DNS Services
+- **Functions**: Domain registration, routing, health checks
 - **Services**: Route 53, Cloud DNS, Azure DNS
-- **Rout에서g Policies**: Simple, weighted, latency-based, geolocation, failover
+- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
 
-# ## Connectivity Options
-- **Internet Gateway**: Public 에서ternet access
+### Connectivity Options
+- **Internet Gateway**: Public internet access
 - **NAT Gateway**: Private subnet outbound access
 - **VPN**: Encrypted tunnels to on-premises
 - **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peer에서g**: Connect VPCs 와 함께에서/between accounts
+- **VPC Peering**: Connect VPCs within/between accounts
 
-# # 보안 에서 그 Cloud
+## 보안 에서 그 Cloud
 
-# ## Shared Responsibility Model
-- **Provider Responsibility**: 보안 의 그 cloud (에서frastructure)
+### Shared Responsibility Model
+- **Provider Responsibility**: 보안 의 그 cloud (infrastructure)
 - **Customer Responsibility**: 보안 에서 그 cloud (데이터, applications, access)
 - **Varies By Service**: More managed = more provider responsibility
 
-# ## Identity 와 Access 관리 (IAM)
+### Identity 와 Access 관리 (IAM)
 - **Users**: Individual identities
 - **Groups**: Collections 의 users
 - **Roles**: Temporary credentials 위한 services/users
-- **Policies**: JSON documents def에서에서g permissions
-- **Pr에서ciples**: Least privilege, separation 의 duties
+- **Policies**: JSON documents defining permissions
+- **Principles**: Least privilege, separation 의 duties
 
-# ## 네트워크 보안
-- **보안 Groups**: Stateful firewalls 위한 에서stances
+### 네트워크 보안
+- **보안 Groups**: Stateful firewalls 위한 instances
 - **네트워크 ACLs**: Stateless firewalls 위한 subnets
-- **웹 Application Firewall (WAF)**: Protect aga에서st 웹 exploits
+- **웹 Application Firewall (WAF)**: Protect against 웹 exploits
 - **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
 
-# ## 데이터 Protection
+### 데이터 Protection
 - **Encryption at Rest**: KMS, customer-managed keys
 - **Encryption 에서 Transit**: TLS/SSL, HTTPS
 - **Key 관리**: HSM, key rotation, audit trails
 - **Secrets 관리**: Secrets Manager, Key Vault
 
-# ## Compliance 와 Governance
+### Compliance 와 Governance
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy en위한cement, compliance report에서g, audit logs
+- **Tools**: Policy enforcement, compliance reporting, audit logs
 - **Frameworks**: Cloud 보안 Alliance, NIST CSF
 
-# # DevOps 에서 그 Cloud
+## DevOps 에서 그 Cloud
 
-# ## CI/CD Services
-- **AWS**: CodePipel에서e, CodeBuild, CodeDeploy
+### CI/CD Services
+- **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenk에서s, CircleCI, GitLab CI
+- **Third-party**: Jenkins, CircleCI, GitLab CI
 
-# ## Infrastructure as Code (IaC)
-- **Terra위한m**: Multi-cloud, declarative, state 관리
+### Infrastructure as Code (IaC)
+- **Terraform**: Multi-cloud, declarative, state 관리
 - **CloudFormation**: AWS native, YAML/JSON templates
 - **ARM Templates**: Azure native
 - **배포 Manager**: GCP native
-- **Pulumi**: Infrastructure us에서g programm에서g 언어s
+- **Pulumi**: Infrastructure using programming languages
 - **Benefits**: Version control, repeatability, documentation
 
-# ## Configuration 관리
+### Configuration 관리
 - **Ansible**: Agentless, YAML playbooks
 - **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong report에서g
+- **Puppet**: Declarative, strong reporting
 - **SaltStack**: Fast, Python-based
 
-# ## Monitor에서g 와 Observability
-- **Metrics**: CloudWatch, Cloud Monitor에서g, Azure Monitor
-- **Logg에서g**: CloudWatch Logs, Cloud Logg에서g, Log Analytics
-- **Trac에서g**: X-Ray, Cloud Trace, Application Insights
+### Monitoring 와 Observability
+- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **Tracing**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alert에서g**: SNS, Cloud Monitor에서g alerts, Action Groups
+- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
 
-# ## Conta에서er Orchestration
-- **Kubernetes**: Industry st와ard orchestration
+### Container Orchestration
+- **Kubernetes**: Industry standard orchestration
 - **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, L에서kerd (traffic 관리, 보안)
-- **GitOps**: ArgoCD, Flux (declarative 배포s)
+- **Service Mesh**: Istio, Linkerd (traffic 관리, 보안)
+- **GitOps**: ArgoCD, Flux (declarative deployments)
 
-# # Cost 관리
+## Cost 관리
 
-# ## Pric에서g Models
+### Pricing Models
 - **Pay-as-you-go**: Pay 위한 what you use
 - **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid 위한 unused capacity, can be 에서terrupted
-- **Sav에서gs Plans**: Flexible commitment pric에서g
+- **Spot Instances**: Bid 위한 unused capacity, can be interrupted
+- **Savings Plans**: Flexible commitment pricing
 - **Free Tier**: Limited free usage 위한 new accounts
 
-# ## Cost Optimization Strategies
-- **Right-siz에서g**: Match 에서stance types to workload needs
-- **Auto-scal에서g**: Scale based on dem와
+### Cost Optimization Strategies
+- **Right-sizing**: Match instance types to workload needs
+- **Auto-scaling**: Scale based on demand
 - **Reserved Capacity**: Commit to steady-state workloads
 - **Spot Usage**: Use 위한 fault-tolerant, flexible workloads
-- **Storage Tiers**: Move 에서frequent 데이터 to cheaper tiers
+- **Storage Tiers**: Move infrequent 데이터 to cheaper tiers
 - **Cleanup**: Delete unused resources, snapshots, AMIs
 
-# ## Cost 관리 Tools
+### Cost 관리 Tools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
 - **Azure**: Cost 관리, Advisor
-- **GCP**: Bill에서g reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, 데이터dog
+- **GCP**: Billing reports, Recommender
+- **Third-party**: CloudHealth, CloudCheckr, Datadog
 
-# # High Availability 와 Disaster Recovery
+## High Availability 와 Disaster Recovery
 
-# ## Availability Concepts
-- **Availability Zones**: Physically separate 데이터 centers 와 함께에서 region
+### Availability Concepts
+- **Availability Zones**: Physically separate 데이터 centers within region
 - **Regions**: Geographic areas 와 함께 multiple AZs
 - **Edge Locations**: CDN cache locations globally
 
-# ## HA Strategies
+### HA Strategies
 - **Multi-AZ**: Deploy across availability zones
-- **Auto-heal에서g**: Auto-replace failed 에서stances
-- **Load Balanc에서g**: Distribute traffic across healthy 에서stances
-- **데이터base Replication**: Multi-AZ 배포s, read replicas
+- **Auto-healing**: Auto-replace failed instances
+- **Load Balancing**: Distribute traffic across healthy instances
+- **데이터베이스 Replication**: Multi-AZ deployments, read replicas
 
-# ## Disaster Recovery Strategies
+### Disaster Recovery Strategies
 - **Backup 와 Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements runn에서g, scale up dur에서g disaster
-- **Warm St와by**: Scaled-down version always runn에서g
+- **Pilot Light**: Core elements running, scale up during disaster
+- **Warm Standby**: Scaled-down version always running
 - **Multi-Site Active/Active**: Full production 에서 multiple regions (highest cost)
 
-# ## RTO 와 RPO
+### RTO 와 RPO
 - **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Po에서t Objective (RPO)**: Maximum acceptable 데이터 loss
-- **Strategy Selection**: Based on bus에서ess requirements 와 budget
+- **Recovery Point Objective (RPO)**: Maximum acceptable 데이터 loss
+- **Strategy Selection**: Based on 비즈니스 requirements 와 budget
 
-# # Emerg에서g Trends
+## Emerging Trends
 
-# ## Edge Comput에서g
+### Edge 컴퓨팅
 - Process 데이터 closer to source
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
 - **Use Cases**: IoT, real-time analytics, low-latency applications
 
-# ## Multi-Cloud 와 Hybrid Cloud
+### Multi-Cloud 와 Hybrid Cloud
 - Avoid vendor lock-에서
 - Leverage best-의-breed services
-- **Tools**: Terra위한m, Anthos, Arc, CloudHealth
+- **Tools**: Terraform, Anthos, Arc, CloudHealth
 
-# ## AI/ML Services
-- Pre-tra에서ed models: Vision, speech, 언어
-- Custom model tra에서에서g: SageMaker, Vertex AI, Azure ML
-- MLOps: Model 배포, monitor에서g, governance
+### AI/ML Services
+- Pre-trained models: Vision, speech, 언어
+- Custom model training: SageMaker, Vertex AI, Azure ML
+- MLOps: Model 배포, monitoring, governance
 
-# ## Quantum Comput에서g
+### Quantum 컴퓨팅
 - **Services**: AWS Braket, Azure Quantum
 - **Status**: Early stage, experimental
 - **Potential**: Cryptography, optimization, drug discovery
 
-# ## Susta에서able Cloud
-- Carbon footpr에서t track에서g
+### Sustainable Cloud
+- Carbon footprint tracking
 - Renewable energy commitments
 - Efficient resource utilization
 - Green 아키텍처 patterns

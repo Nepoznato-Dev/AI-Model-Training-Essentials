@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Codiçiçindedeg Dils
+# Coding Languages
 
-# # Python
+## Python
 
-Python is a high-level, içiçindedeterpreted, dynamically typed, general-purpose programmiçiçindedeg dil. It emphasises readability ve uses significant içiçindededentation as block delimiters.
+Python is a high-level, interpreted, dynamically typed, general-purpose programming Dil. It emphasises readability ve uses significant indentation as block delimiters.
 
-# ## Sözdizimi temeller
+### Sözdizimi Temeller
 
 ```python
 # Variables and types
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-# ## Functions ve type hiçiçindedets
+### Functions ve type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-# ## List comprehensions
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes ve OOP
+### Classes ve OOP
 
 ```python
 class Animal:
@@ -65,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-# ## Common patterns
+### Common patterns
 
 - Use `ile open(path) as f:` için file I/O.
-- Prefer f-striçiçindedegs (`f"hello {name}"`) over `%` or `.içinmat()`.
-- Use `vericlasses.vericlass` için veri-only classes.
-- Use `pathlib.Path` içiçindedestead içiçindede `os.path` için file paths.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` için Veri-only classes.
+- Use `pathlib.Path` instead içinde `os.path` için file paths.
 
-# ## Tooliçiçindedeg
+### Tooling
 
-- `pip içiçindedestall <package>` içiçindedestalls packages.
-- `python -m venv .venv && source .venv/biçiçindede/activate` creates a virtual environment.
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
 - `pip freeze > requirements.txt` saves dependencies.
-- `pip içiçindedestall -r requirements.txt` restores bum.
-- `pyproject.toml` is bu modern project-configuration stveard.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is bu modern project-configuration standard.
 
 ---
 
-# # JavaScript
+## JavaScript
 
-JavaScript is bu primary dil içiçindede bu web. It runs içiçindede browsers ve on servers via Node.js. It is dynamically typed ve prototype-based.
+JavaScript is bu primary Dil içinde bu Web. It runs içinde browsers ve on servers via Node.js. It is dynamically typed ve prototype-based.
 
-# ## Modern sözdizimi (ES6+)
+### Modern Sözdizimi (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-# ## Async programmiçiçindedeg
+### Async programming
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-# ## Array methods
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-# ## DOM manipulation
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-# ## Tooliçiçindedeg
+### Tooling
 
-- `npm içiçindedeit -y` içiçindedeitialises a project.
-- `npm içiçindedestall <package>` adds a dependency.
-- `npm run <script>` runs a script defiçiçindedeed içiçindede `package.json`.
-- `node içiçindededex.js` runs a script ile Node.js.
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined içinde `package.json`.
+- `node index.js` runs a script ile Node.js.
 
 ---
 
-# # TypeScript
+## TypeScript
 
-TypeScript is a statically typed superset içiçindede JavaScript that compiles to plaiçiçindede JavaScript. It adds type annotations, içiçindedeterfaces, generics, ve enums.
+TypeScript is a statically typed superset içinde JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, ve enums.
 
-# ## Type annotations
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-# ## Interfaces ve types
+### Interfaces ve types
 
 ```typescript
 interface User {
@@ -178,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-# ## Generics
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-# ## Classes ile access modifiers
+### Classes ile access modifiers
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-# ## tsconfig.json essentials
+### tsconfig.json essentials
 
 ```json
 {
@@ -220,21 +220,21 @@ class Counter {
 }
 ```
 
-# ## Tooliçiçindedeg
+### Tooling
 
-- `npm içiçindedestall -g typescript` içiçindedestalls bu compiler.
+- `npm install -g typescript` installs bu compiler.
 - `tsc` compiles bu project.
-- `ts-node src/içiçindededex.ts` runs TypeScript directly.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
-# # Rust
+## Rust
 
-Rust is a sistemler programmiçiçindedeg dil focused on güvenlity, speed, ve concurrency. It prolaylar memory-güvenlity bugs at compile time through its ownership system.
+Rust is a Sistemler programming Dil focused on safety, speed, ve concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-# ## Ownership ve borrowiçiçindedeg
+### Ownership ve borrowing
 
-Every value içiçindede Rust has exactly one owner. When bu owner goes out içiçindede scope bu value is dropped. Borrowiçiçindedeg allows referanss ileout transferriçiçindedeg ownership.
+Every value içinde Rust has exactly one owner. When bu owner goes out içinde scope bu value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no obur borrows exist at bu same time.
+Mutable borrows (`&mut T`) require that no other borrows exist at bu same time.
 
-# ## Lifetimes
+### Lifetimes
 
-Lifetimes ensure referanss do not outlive bu veri buy poiçiçindedet to.
+Lifetimes ensure references do not outlive bu Veri they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-# ## Enums ve pattern matchiçiçindedeg
+### Enums ve pattern matching
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-# ## Error hveliçiçindedeg
+### Error handling
 
 ```rust
 use std::fs;
@@ -293,24 +293,24 @@ fn main() {
 }
 ```
 
-The `?` operator propagates errors automatically içiçindedeside functions that return `Result`.
+bu `?` operator propagates errors automatically inside functions that return `Result`.
 
-# ## Tooliçiçindedeg (Cargo)
+### Tooling (Cargo)
 
 - `cargo new project_name` creates a new project.
 - `cargo build` compiles.
 - `cargo run` compiles ve runs.
 - `cargo test` runs tests.
 - `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` içinmats code. `cargo clippy` liçiçindedets.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
-# # Go
+## Go
 
-Go (Golang) is a statically typed, compiled dil designed için simplicity ve high-periçinmance concurrent programs.
+Go (Golang) is a statically typed, compiled Dil designed için simplicity ve high-Performans concurrent programs.
 
-# ## Temeller
+### Temeller
 
 ```go
 package main
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-# ## Functions ve multiple return values
+### Functions ve multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -334,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-# ## Interfaces
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -346,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods içiçindede an içiçindedeterface satisfies it — no explicit declaration is needed.
+Any type that implements all methods içinde an interface satisfies it — no explicit declaration is needed.
 
-# ## Goroutiçiçindedees ve channels
+### Goroutines ve channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -374,7 +374,7 @@ func main() {
 }
 ```
 
-# ## Defer
+### Defer
 
 ```go
 func readFile(path string) error {
@@ -388,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-# ## Tooliçiçindedeg
+### Tooling
 
-- `go mod içiçindedeit module/name` içiçindedeitialises a module.
+- `go mod init module/name` initialises a module.
 - `go get ./...` downloads dependencies.
 - `go build ./...` compiles.
 - `go test ./...` runs tests.
-- `go fmt ./...` içinmats code.
+- `go fmt ./...` formats code.
 - `go vet ./...` checks için common mistakes.
 
 ---
 
-# # C ve C++
+## C ve C++
 
-C is a low-level, compiled, procedural dil. C++ extends C ile classes, templates, ve bu Stveard Template Library (STL).
+C is a low-level, compiled, procedural Dil. C++ extends C ile classes, templates, ve bu Standard Template Library (STL).
 
-# ## C temeller
+### C Temeller
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-# ## Poiçiçindedeters
+### Pointers
 
-A poiçiçindedeter stores bu memory address içiçindede anobur variable. `*ptr` dereferanss it; `&var` takes an address.
+A pointer stores bu memory address içinde another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -432,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-# ## C++ classes ve RAII
+### C++ classes ve RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuriçiçindedeg cleanup happens automatically içiçindede destructors.
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically içinde destructors.
 
-# ## STL contaiçiçindedeers
+### STL containers
 
 ```cpp
 #include <vector>
@@ -469,28 +469,28 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-# ## Modern C++ (C++17 / C++20) highlights
+### Modern C++ (C++17 / C++20) highlights
 
 - `auto` type deduction.
-- Range-based `için` loops: `için (auto& item : contaiçiçindedeer)`.
-- Smart poiçiçindedeters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured biçiçindedediçiçindedegs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::striçiçindedeg_view`.
+- Range-based `için` loops: `için (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-# ## Compilation
+### Compilation
 
-- `gcc maiçiçindede.c -o maiçiçindede` compiles C.
-- `g++ -std=c++20 -Wall maiçiçindede.cpp -o maiçiçindede` compiles C++.
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
 - `make` automates multi-file builds via a `Makefile`.
-- `cmake` is bu stveard build-system generator için larger projects.
+- `cmake` is bu standard build-system generator için larger projects.
 
 ---
 
-# # Swift
+## Swift
 
-Swift is a modern, statically typed programmiçiçindedeg dil developed by Apple için iOS, macOS, watchOS, ve tvOS. It is also available on Liçiçindedeux.
+Swift is a modern, statically typed programming Dil developed by Apple için iOS, macOS, watchOS, ve tvOS. It is also Mevcut on Linux.
 
-# ## Temeller
+### Temeller
 
 ```swift
 let greeting = "Hello, world!"   // constant (immutable)
@@ -500,7 +500,7 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-# ## Optionals
+### Optionals
 
 An optional (`T?`) represents a value that may or may not be present.
 
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-# ## Functions ve closures
+### Functions ve closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-# ## Classes ve structs
+### Classes ve structs
 
-Swift has both classes (referans types) ve structs (value types). Prefer structs için simple veri models.
+Swift has both classes (Referans types) ve structs (value types). Prefer structs için simple Veri models.
 
 ```swift
 struct Point {
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-# ## Protocols
+### Protocols
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-# ## Codable (JSON encodiçiçindedeg / decodiçiçindedeg)
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-# ## SwiftUI temeller
+### SwiftUI Temeller
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-# ## Tooliçiçindedeg
+### Tooling
 
 - `swift build` compiles a Swift Package Manager project.
 - `swift run` runs bu project.
 - `swift test` runs tests.
-- `swift package içiçindedeit --type executable` creates a new executable project.
-- Xcode is bu primary IDE için Apple-platiçinm geliştirme.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is bu primary IDE için Apple-platform Geliştirme.
 
 ---
 
-# # Codiçiçindedeg Temeller (Dil-Agnostic)
+## Coding Temeller (Dil-Agnostic)
 
-# ## Problem-solviçiçindedeg workflow
+### Problem-solving workflow
 
-1. Defiçiçindedee bu içiçindedeput, output, ve constraiçiçindedets beiçine writiçiçindedeg code.
-2. Break bu task içiçindedeto smaller sub-problems.
-3. Start ile a simple correct solution, bun optimise if needed.
-4. Validate ile tests, edge cases, ve realistic içiçindedeputs.
+1. Define bu input, output, ve constraints before writing code.
+2. Break bu task into smaller sub-problems.
+3. Start ile a simple correct solution, then optimise if needed.
+4. Validate ile tests, edge cases, ve realistic inputs.
 
-# ## Core veri structures
+### Core Veri structures
 
-- **Array / List**: ordered collection ile fast içiçindededexed reads.
+- **Array / List**: ordered collection ile fast indexed reads.
 - **Hash map / Sözlük**: key-value store ile average O(1) lookup.
 - **Set**: unique values, useful için membership checks.
-- **Stack**: LIFO (last içiçindede, first out), common içiçindede parsiçiçindedeg ve recursion.
-- **Queue**: FIFO (first içiçindede, first out), useful için scheduliçiçindedeg ve BFS.
-- **Tree / Graph**: hierarchical ve ağ-style relationships.
+- **Stack**: LIFO (last içinde, first out), common içinde parsing ve recursion.
+- **Queue**: FIFO (first içinde, first out), useful için scheduling ve BFS.
+- **Tree / Graph**: hierarchical ve Ağ-style relationships.
 
-# ## Algorithmic complexity (Big O)
+### Algorithmic complexity (Big O)
 
-- Big O describes how runtime or memory grows ile içiçindedeput size.
+- Big O describes how runtime or memory grows ile input size.
 - Typical costs:
   - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): biçiçindedeary search.
-  - O(n): siçiçindedegle pass through veri.
-  - O(n log n): efficient sortiçiçindedeg.
-  - O(n²): nested loops over similar-size içiçindedeputs.
-- Prefer clear, maiçiçindedetaiçiçindedeable code unless priçiçindedeiliçiçindedeg shows a bottleneck.
+  - O(log n): binary search.
+  - O(n): single pass through Veri.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-# ## Debuggiçiçindedeg priçiçindedeciples
+### Debugging principles
 
 - Reproduce bu bug reliably first.
-- Miçiçindedeimise bu failiçiçindedeg case to isolate cause.
-- Inspect logs, içiçindedeputs, ve assumptions.
-- Change one variable at a time while testiçiçindedeg.
+- Minimise bu failing case to isolate cause.
+- Inspect logs, inputs, ve assumptions.
+- Change one variable at a time while Test Etme.
 - Add regression tests so bu same bug does not return.
 
-# ## Testiçiçindedeg pyramid
+### Test Etme pyramid
 
-- **Unit tests**: fast, focused checks içiçindede small logic units.
-- **Integration tests**: verify içiçindedeteractions across modules/services.
-- **End-to-end tests**: validate user flows içiçindede realistic environments.
+- **Unit tests**: fast, focused checks içinde small logic units.
+- **Integration tests**: verify interactions across modules/services.
+- **End-to-end tests**: validate user flows içinde realistic environments.
 - A balanced suite has many unit tests ve fewer slow end-to-end tests.
 
-# ## Code quality practices
+### Code quality practices
 
-- Use meaniçiçindedegful names ve small focused functions.
+- Use meaningful names ve small focused functions.
 - Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive ve içiçindedeterfaces explicit.
-- Use liçiçindedeters/içinmatters için consistency.
-- Review code için correctness, clarity, ve güvenlik.
+- Keep modules cohesive ve interfaces explicit.
+- Use linters/formatters için consistency.
+- Review code için correctness, clarity, ve Güvenlik.
 
-# ## Güvenlik temeller için developers
+### Güvenlik Temeller için developers
 
-- Validate ve sanitise external içiçindedeput.
-- Use parameterised queries to prevent SQL içiçindedejection.
-- Store passwords ile strong hashiçiçindedeg algorithms (e.g., Argon2, bcrypt).
-- Avoid embeddiçiçindedeg secrets içiçindede source code.
+- Validate ve sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords ile strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets içinde source code.
 - Apply least privilege için credentials ve services.

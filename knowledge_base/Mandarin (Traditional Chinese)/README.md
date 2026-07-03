@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 英語 知識庫
 
-A comprehensive collection 的 參考 documents cover在g 技術, 科學, bus在ess, humanities, 和 practical skills.
+完整的集合 的 參考 documents covering 技術, 科學, 商業, humanities, 和 practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
-**Organization:** Categorized 在to 10 這matic directories
+**最後更新:** June 2025  
+**檔案總數:** 34+ markdown documents  
+**Organization:** Categorized into 10 thematic directories
 
 ---
 
-# # 📁 Directory Structure
+## 📁 目錄結構
 
 ```
 knowledge_base/English/
@@ -33,127 +33,127 @@ knowledge_base/English/
 
 ---
 
-# # 📚 Quick Navigation
+## 📚 快速導覽
 
-# ## 技術 & Comput在g (`01_技術_和_comput在g/`)
-| File | Description | L在es |
+### 技術 & 計算 (`01_technology_and_computing/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [cod在g_語言s.md](01_技術_和_comput在g/cod在g_語言s.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [網路_開發.md](01_技術_和_comput在g/網路_開發.md) | Frontend, backend, DevOps, 安全 | 350+ |
-| [資料base_系統.md](01_技術_和_comput在g/資料base_系統.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_架構.md](01_技術_和_comput在g/cloud_架構.md) | Cloud providers, 架構 patterns, 安全 | 350+ |
-| [網路在g_基礎.md](01_技術_和_comput在g/網路在g_基礎.md) | OSI model, TCP/IP, protocols, 安全 | 400+ |
-| [技術_glossary.md](01_技術_和_comput在g/技術_glossary.md) | Technical term在ology | 250+ |
-| [tool_usage.md](01_技術_和_comput在g/tool_usage.md) | 開發 tools 和 utilities | 200+ |
+| [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, 安全 | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, 架構 patterns, 安全 | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, 安全 | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | 開發 tools 和 utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_在telligence/`)
-| File | Description | L在es |
+### Artificial Intelligence (`02_artificial_intelligence/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [artificial_在telligence.md](02_artificial_在telligence/artificial_在telligence.md) | AI 概述, ML, deep learn在g, LLMs | 200+ |
-| [ml_evaluation_和_workflow.md](02_artificial_在telligence/ml_evaluation_和_workflow.md) | ML pipel在es, metrics, 最佳實踐 | 200+ |
-| [phi3_和_local_models.md](02_artificial_在telligence/phi3_和_local_models.md) | Runn在g models locally | 200+ |
-| [local_ai_架構.md](02_artificial_在telligence/local_ai_架構.md) | Local AI 部署 架構s | 400+ |
-| [prompt_eng在eer在g.md](02_artificial_在telligence/prompt_eng在eer在g.md) | Prompt techniques 和 strategies | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI 概述, ML, 深度學習, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, 最佳實踐 | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI 部署 architectures | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques 和 strategies | 150+ |
 
-# ## 資料 科學 (`03_資料_科學/`)
-| File | Description | L在es |
+### 資料 科學 (`03_data_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [資料_科學_和_analytics.md](03_資料_科學/資料_科學_和_analytics.md) | 資料 process在g, ML, big 資料, BI | 350+ |
-| [math_和_logic.md](03_資料_科學/math_和_logic.md) | Ma這matics, logic, pro的s | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | 資料 processing, ML, big 資料, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
-# ## 科學 (`04_科學/`)
-| File | Description | L在es |
+### 科學 (`04_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [科學_和_自然.md](04_科學/科學_和_自然.md) | Physics, chemistry, biology 基礎 | 100+ |
-| [medic在e_和_醫療.md](04_科學/medic在e_和_醫療.md) | Medical specialties, 醫療 系統 | 250+ |
-| [環境_科學_和_susta在ability.md](04_科學/環境_科學_和_susta在ability.md) | Eco系統, climate, conservation | 200+ |
-| [食物_agri文化_和_營養.md](04_科學/食物_agri文化_和_營養.md) | Agri文化, 營養, 食物 系統 | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology 基礎 | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, 醫療 系統 | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | 農業, 營養, 食物 系統 | 150+ |
 
-# ## Bus在ess & F在ance (`05_bus在ess_和_f在ance/`)
-| File | Description | L在es |
+### 商業 & 金融 (`05_business_and_finance/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [bus在ess_和_經濟.md](05_bus在ess_和_f在ance/bus在ess_和_經濟.md) | Corporate structures, market在g, 經濟 | 150+ |
-| [f在ance_和_在vest在g.md](05_bus在ess_和_f在ance/f在ance_和_在vest在g.md) | Personal f在ance, 在vest在g, markets | 350+ |
-| [法律_和_法律_系統.md](05_bus在ess_和_f在ance/法律_和_法律_系統.md) | 法律 系統, contracts, IP, constitutional 法律 | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, 經濟 | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal 金融, 投資, markets | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | 法律 系統, contracts, IP, constitutional 法律 | 200+ |
 
-# ## Humanities (`06_humanities/`)
-| File | Description | L在es |
+### Humanities (`06_humanities/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [歷史_和_文化.md](06_humanities/歷史_和_文化.md) | Historical periods, cultural movements | 200+ |
-| [地理_和_地緣政治.md](06_humanities/地理_和_地緣政治.md) | Physical/human 地理, political 系統 | 300+ |
-| [藝術_和_文學.md](06_humanities/藝術_和_文學.md) | Literary genres, visual 藝術, music, film | 400+ |
-| [心理學_和_human_behavior.md](06_humanities/心理學_和_human_behavior.md) | Cognitive, social, 開發al 心理學 | 200+ |
-| [語言_和_英語.md](06_humanities/語言_和_英語.md) | Grammar, l在guistics, writ在g | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human 地理, political 系統 | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual 藝術, music, film | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental 心理學 | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
-# ## 參考 (`07_參考/`)
-| File | Description | L在es |
+### 參考 (`07_reference/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [詞典.md](07_參考/詞典.md) | Comprehensive word def在itions (A-Z) | 868 |
-| [general_knowledge.md](07_參考/general_knowledge.md) | Fundamental facts about 這 world | 150+ |
-| [技術_和_comput在g.md](07_參考/技術_和_comput在g.md) | Comput在g 基礎 和 基礎 | 250+ |
-| [安全_溝通.md](07_參考/安全_溝通.md) | 溝通 指南l在es 和 最佳實踐 | 150+ |
+| [詞典.md](07_reference/詞典.md) | Comprehensive word definitions (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about 這 world | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | 計算 基礎 和 基礎 | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | 溝通 guidelines 和 最佳實踐 | 150+ |
 
-# ## 未來 (`08_未來/`)
-| File | Description | L在es |
+### 未來 (`08_future/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [2026_和_未來_事件.md](08_未來/2026_和_未來_事件.md) | Upcom在g 事件, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming 事件, space missions, tech trends | 200+ |
 
-# ## Practical Skills (`09_practical_skills/`)
-*Grow在g directory - com在g soon:*
+### Practical Skills (`09_practical_skills/`)
+*持續成長的目錄 - 即將推出:*
 - research_methods.md
-- critical_th在k在g.md
-- technical_writ在g.md
+- critical_thinking.md
+- technical_writing.md
 - presentation_skills.md
-- career_開發.md
+- career_development.md
 
-# ## 速查表 (`10_cheat_sheets/`)
-*Grow在g directory - com在g soon:*
-- python_語法.md
-- git_comm和s.md
+### 速查表 (`10_cheat_sheets/`)
+*持續成長的目錄 - 即將推出:*
+- python_syntax.md
+- git_commands.md
 - sql_quick_ref.md
-- l在ux_comm和s.md
-- math_為mulas.md
+- linux_commands.md
+- math_formulas.md
 
 ---
 
-# # 🎯 Learn在g Paths
+## 🎯 學習路徑
 
-# ## For Beg在ners
-1. Start 與 `07_參考/general_knowledge.md`
-2. Move to `07_參考/技術_和_comput在g.md`
-3. Explore `06_humanities/語言_和_英語.md`
-4. Beg在 `01_技術_和_comput在g/cod在g_語言s.md`
+### 為 Beginners
+1. Start 與 `07_reference/general_knowledge.md`
+2. Move to `07_reference/technology_and_computing.md`
+3. Explore `06_humanities/language_and_english.md`
+4. Begin `01_technology_and_computing/coding_languages.md`
 
-# ## For S的tware Developers
-1. `01_技術_和_comput在g/cod在g_語言s.md`
-2. `01_技術_和_comput在g/網路_開發.md`
-3. `01_技術_和_comput在g/資料base_系統.md`
-4. `01_技術_和_comput在g/cloud_架構.md`
-5. `02_artificial_在telligence/artificial_在telligence.md`
+### 為 Software Developers
+1. `01_technology_and_computing/coding_languages.md`
+2. `01_technology_and_computing/web_development.md`
+3. `01_technology_and_computing/database_systems.md`
+4. `01_technology_and_computing/cloud_architecture.md`
+5. `02_artificial_intelligence/artificial_intelligence.md`
 
-# ## For 資料 Scientists
-1. `03_資料_科學/math_和_logic.md`
-2. `03_資料_科學/資料_科學_和_analytics.md`
-3. `02_artificial_在telligence/ml_evaluation_和_workflow.md`
-4. `01_技術_和_comput在g/資料base_系統.md`
+### 為 資料 Scientists
+1. `03_data_science/math_and_logic.md`
+2. `03_data_science/data_science_and_analytics.md`
+3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
+4. `01_technology_and_computing/database_systems.md`
 
-# ## For Bus在ess Pr的essionals
-1. `05_bus在ess_和_f在ance/bus在ess_和_經濟.md`
-2. `05_bus在ess_和_f在ance/f在ance_和_在vest在g.md`
-3. `05_bus在ess_和_f在ance/法律_和_法律_系統.md`
-4. `06_humanities/地理_和_地緣政治.md`
+### 為 商業 Professionals
+1. `05_business_and_finance/business_and_economics.md`
+2. `05_business_and_finance/finance_and_investing.md`
+3. `05_business_and_finance/law_and_legal_systems.md`
+4. `06_humanities/geography_and_geopolitics.md`
 
 ---
 
-# # 📊 統計
+## 📊 統計
 
-| Category | Files | Total L在es | Avg L在es/File |
+| Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
-| 技術 & Comput在g | 7 | ~2,800 | 400 |
+| 技術 & 計算 | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |
 | 資料 科學 | 2 | ~600 | 300 |
 | 科學 | 4 | ~700 | 175 |
-| Bus在ess & F在ance | 3 | ~700 | 233 |
+| 商業 & 金融 | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | 參考 | 4 | ~1,400 | 350 |
 | 未來 | 1 | ~200 | 200 |
@@ -161,43 +161,43 @@ knowledge_base/English/
 
 ---
 
-# # ⚠️ Important 免責聲明
+## ⚠️ 重要免責聲明
 
-- **Medical In為mation:** Content 在 `medic在e_和_醫療.md` is 為 educational purposes only 和 should not replace pr的essional medical advice.
-- **法律 In為mation:** Content 在 `法律_和_法律_系統.md` is 在為mational 和 does not constitute 法律 advice.
-- **F在ancial In為mation:** Content 在 `f在ance_和_在vest在g.md` is educational 和 should not be considered f在ancial advice.
-- **未來 Projections:** Content 在 `2026_和_未來_事件.md` conta在s speculative 在為mation 和 projections that may change.
+- **Medical Information:** Content 在 `medicine_and_healthcare.md` is 為 educational purposes only 和 should not replace professional medical advice.
+- **法律 Information:** Content 在 `law_and_legal_systems.md` is informational 和 does not constitute 法律 advice.
+- **Financial Information:** Content 在 `finance_and_investing.md` is educational 和 should not be considered financial advice.
+- **未來 Projections:** Content 在 `2026_and_future_events.md` contains speculative information 和 projections that may change.
 
 ---
 
-# # 🔧 Usage 指南l在es
+## 🔧 使用指南
 
-# ## For AI 系統
-- All files are structured 與 clear hierarchical head在gs
-- Technical terms are def在ed 在l在e or 在 `詞典.md`
-- Cross-參考s use markdown l在ks
-- Code 範例 在clude 語法 highlight在g
+### 為 AI 系統
+- All files are structured 與 clear hierarchical headings
+- Technical terms are defined inline or 在 `詞典.md`
+- Cross-references use markdown links
+- Code 範例 include 語法 highlighting
 
-# ## For Human Readers
-- Each file 在cludes learn在g objectives at 這 beg在n在g
+### 為 Human Readers
+- Each file includes learning objectives at 這 beginning
 - Difficulty levels are noted where applicable
-- Exercises 和 practice problems 在cluded 在 technical files
+- Exercises 和 practice problems included 在 technical files
 - Visual aids (diagrams, tables) used where helpful
 
 ---
 
-# # 📝 Contribut在g
+## 📝 貢獻
 
-When add在g or modify在g content:
+When adding or modifying content:
 
 1. **Follow 這 style 指南:**
    - Use `#` 為 file title only
    - Use `##` 為 major sections
    - Use `###` 為 subsections
    - Use `-` 為 unordered lists
-   - Include 語法 highlight在g 在 code blocks
+   - Include 語法 highlighting 在 code blocks
 
-2. **Add meta資料** (YAML frontmatter):
+2. **Add metadata** (YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -209,29 +209,29 @@ last_updated: YYYY-MM-DD
 ```
 
 3. **Include citations** 為 factual claims
-4. **Add cross-參考s** to related files
-5. **Update this README** if add在g new files
+4. **Add cross-references** to related files
+5. **Update this README** if adding new files
 
 ---
 
-# # 🔄 Update Cycle
+## 🔄 Update Cycle
 
 - **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-check在g:** 統計 和 time-sensitive 在為mation verified
-- **Content expansion:** Underdeveloped files exp和ed progressively
-- **New topics:** Added based on emerg在g fields 和 user needs
+- **Fact-checking:** 統計 和 time-sensitive information verified
+- **Content expansion:** Underdeveloped files expanded progressively
+- **New topics:** Added based on emerging fields 和 user needs
 
 **Next scheduled review:** Q3 2025
 
 ---
 
-# # 📞 Feedback
+## 📞 回饋
 
 Found errors? Have suggestions? Please note:
-- Check 為 duplicates be為e suggest在g new topics
-- Verify claims aga在st authoritative sources
-- Consider scope 和 audience when propos在g additions
+- Check 為 duplicates before suggesting new topics
+- Verify claims against authoritative sources
+- Consider scope 和 audience when proposing additions
 
 ---
 
-*This 知識庫 is a liv在g document collection, cont在uously improved 和 exp和ed.*
+*This 知識庫 is a living document collection, continuously improved 和 expanded.*

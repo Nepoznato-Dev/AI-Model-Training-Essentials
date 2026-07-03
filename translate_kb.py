@@ -4,9 +4,13 @@ Translation script for knowledge base files from English to multiple languages.
 Uses a simple dictionary-based approach for common terms and structural translation.
 """
 
-import os
-import shutil
+import re
 from pathlib import Path
+
+# Repository-local paths
+BASE_DIR = Path(__file__).resolve().parent
+ENGLISH_BASE = BASE_DIR / "knowledge_base" / "English"
+KB_BASE = BASE_DIR / "knowledge_base"
 
 # Target languages with their directory names
 TARGET_LANGUAGES = {
@@ -46,13 +50,11 @@ def get_language_name(lang_code):
 
 def translate_title(title, target_lang):
     """Translate markdown title preserving structure."""
-    # Keep code blocks and technical terms intact
-    prefixes = ['#', '##', '###', '####', '#####', '######']
-    for prefix in prefixes:
-        if title.startswith(prefix):
-            content = title[len(prefix):].strip()
-            translated_content = simple_translate(content, target_lang)
-            return f"{prefix} {translated_content}"
+    match = re.match(r'^(#{1,6})\s*(.*)$', title)
+    if match:
+        prefix, content = match.groups()
+        translated_content = simple_translate(content, target_lang)
+        return f"{prefix} {translated_content}".rstrip()
     return simple_translate(title, target_lang)
 
 def simple_translate(text, target_lang):
@@ -142,19 +144,38 @@ def simple_translate(text, target_lang):
         'Statistics': {'fr': 'Statistiques', 'de': 'Statistiken', 'es': 'Estadísticas', 'pt': 'Estatísticas', 'ru': 'Статистика', 'ja': '統計', 'ko': '통계', 'zh-CN': '统计', 'zh-TW': '統計', 'ar': 'إحصائيات', 'tr': 'İstatistikler'},
         'Disclaimers': {'fr': 'Avertissements', 'de': 'Haftungsausschlüsse', 'es': 'Descargos de responsabilidad', 'pt': 'Avisos legais', 'ru': 'Отказ от ответственности', 'ja': '免責事項', 'ko': '면책 조항', 'zh-CN': '免责声明', 'zh-TW': '免責聲明', 'ar': 'إخلاء المسؤولية', 'tr': 'Sorumluluk Reddi'},
         'Contributing': {'fr': 'Contribuer', 'de': 'Beitragen', 'es': 'Contribuir', 'pt': 'Contribuir', 'ru': 'Вклад', 'ja': '貢献', 'ko': '기여', 'zh-CN': '贡献', 'zh-TW': '貢獻', 'ar': 'المساهمة', 'tr': 'Katkıda Bulunma'},
+        'A comprehensive collection': {'fr': 'Une collection complète', 'de': 'Eine umfassende Sammlung', 'es': 'Una colección completa', 'pt': 'Uma coleção abrangente', 'ru': 'Полная коллекция', 'ja': '包括的なコレクション', 'ko': '포괄적인 컬렉션', 'zh-CN': '全面的集合', 'zh-TW': '完整的集合', 'ar': 'مجموعة شاملة', 'tr': 'Kapsamlı bir koleksiyon'},
+        'Last Updated': {'fr': 'Dernière mise à jour', 'de': 'Zuletzt aktualisiert', 'es': 'Última actualización', 'pt': 'Última atualização', 'ru': 'Последнее обновление', 'ja': '最終更新', 'ko': '최종 업데이트', 'zh-CN': '最后更新', 'zh-TW': '最後更新', 'ar': 'آخر تحديث', 'tr': 'Son Güncelleme'},
+        'Total Files': {'fr': 'Fichiers totaux', 'de': 'Gesamtdateien', 'es': 'Archivos totales', 'pt': 'Total de arquivos', 'ru': 'Всего файлов', 'ja': '総ファイル数', 'ko': '전체 파일 수', 'zh-CN': '文件总数', 'zh-TW': '檔案總數', 'ar': 'إجمالي الملفات', 'tr': 'Toplam Dosya'},
+        'Repository Structure': {'fr': 'Structure du dépôt', 'de': 'Repository-Struktur', 'es': 'Estructura del repositorio', 'pt': 'Estrutura do repositório', 'ru': 'Структура репозитория', 'ja': 'リポジトリ構造', 'ko': '저장소 구조', 'zh-CN': '仓库结构', 'zh-TW': '儲存庫結構', 'ar': 'هيكل المستودع', 'tr': 'Depo Yapısı'},
+        'Directory Structure': {'fr': 'Structure du répertoire', 'de': 'Verzeichnisstruktur', 'es': 'Estructura de directorios', 'pt': 'Estrutura de diretórios', 'ru': 'Структура каталогов', 'ja': 'ディレクトリ構造', 'ko': '디렉터리 구조', 'zh-CN': '目录结构', 'zh-TW': '目錄結構', 'ar': 'هيكل الدليل', 'tr': 'Dizin Yapısı'},
+        'Quick Navigation': {'fr': 'Navigation rapide', 'de': 'Schnellnavigation', 'es': 'Navegación rápida', 'pt': 'Navegação rápida', 'ru': 'Быстрая навигация', 'ja': 'クイックナビゲーション', 'ko': '빠른 탐색', 'zh-CN': '快速导航', 'zh-TW': '快速導覽', 'ar': 'تنقل سريع', 'tr': 'Hızlı Gezinme'},
+        'Learning Paths': {'fr': 'Parcours d\'apprentissage', 'de': 'Lernpfade', 'es': 'Rutas de aprendizaje', 'pt': 'Caminhos de aprendizagem', 'ru': 'Пути обучения', 'ja': '学習パス', 'ko': '학습 경로', 'zh-CN': '学习路径', 'zh-TW': '學習路徑', 'ar': 'مسارات التعلم', 'tr': 'Öğrenme Yolları'},
+        'Important Disclaimers': {'fr': 'Avertissements importants', 'de': 'Wichtige Hinweise', 'es': 'Avisos importantes', 'pt': 'Avisos importantes', 'ru': 'Важные предупреждения', 'ja': '重要な注意事項', 'ko': '중요한 고지 사항', 'zh-CN': '重要免责声明', 'zh-TW': '重要免責聲明', 'ar': 'إخلاءات مسؤولية مهمة', 'tr': 'Önemli Uyarılar'},
+        'Usage Guidelines': {'fr': "Consignes d'utilisation", 'de': 'Nutzungsrichtlinien', 'es': 'Pautas de uso', 'pt': 'Diretrizes de uso', 'ru': 'Руководство по использованию', 'ja': '使用ガイドライン', 'ko': '사용 지침', 'zh-CN': '使用指南', 'zh-TW': '使用指南', 'ar': 'إرشادات الاستخدام', 'tr': 'Kullanım Kılavuzu'},
+        'Skill Library': {'fr': 'Bibliothèque de compétences', 'de': 'Fähigkeitenbibliothek', 'es': 'Biblioteca de habilidades', 'pt': 'Biblioteca de habilidades', 'ru': 'Библиотека навыков', 'ja': 'スキルライブラリ', 'ko': '스킬 라이브러리', 'zh-CN': '技能库', 'zh-TW': '技能庫', 'ar': 'مكتبة المهارات', 'tr': 'Yetenek Kütüphanesi'},
+        'Agent Modes': {'fr': "Modes d'agent", 'de': 'Agentenmodi', 'es': 'Modos de agente', 'pt': 'Modos de agente', 'ru': 'Режимы агента', 'ja': 'エージェントモード', 'ko': '에이전트 모드', 'zh-CN': '代理模式', 'zh-TW': '代理模式', 'ar': 'أوضاع الوكيل', 'tr': 'Ajan Modları'},
+        'Multi-Language Support': {'fr': 'Prise en charge multilingue', 'de': 'Mehrsprachige Unterstützung', 'es': 'Compatibilidad multilingüe', 'pt': 'Suporte multilíngue', 'ru': 'Многоязычная поддержка', 'ja': '多言語サポート', 'ko': '다국어 지원', 'zh-CN': '多语言支持', 'zh-TW': '多語言支援', 'ar': 'دعم متعدد اللغات', 'tr': 'Çok Dilli Destek'},
+        'Support': {'fr': 'Assistance', 'de': 'Support', 'es': 'Soporte', 'pt': 'Suporte', 'ru': 'Поддержка', 'ja': 'サポート', 'ko': '지원', 'zh-CN': '支持', 'zh-TW': '支援', 'ar': 'الدعم', 'tr': 'Destek'},
+        'Feedback': {'fr': 'Retour', 'de': 'Rückmeldung', 'es': 'Comentarios', 'pt': 'Feedback', 'ru': 'Обратная связь', 'ja': 'フィードバック', 'ko': '피드백', 'zh-CN': '反馈', 'zh-TW': '回饋', 'ar': 'ملاحظات', 'tr': 'Geri Bildirim'},
+        'Growing directory': {'fr': 'Répertoire en croissance', 'de': 'Wachsendes Verzeichnis', 'es': 'Directorio en crecimiento', 'pt': 'Diretório em crescimento', 'ru': 'Растущий каталог', 'ja': '成長中のディレクトリ', 'ko': '성장 중인 디렉터리', 'zh-CN': '不断增长的目录', 'zh-TW': '持續成長的目錄', 'ar': 'دليل متنامٍ', 'tr': 'Büyüyen dizin'},
+        'coming soon': {'fr': 'bientôt disponible', 'de': 'demnächst', 'es': 'próximamente', 'pt': 'em breve', 'ru': 'скоро будет', 'ja': '近日公開', 'ko': '곧 제공 예정', 'zh-CN': '即将推出', 'zh-TW': '即將推出', 'ar': 'قريبًا', 'tr': 'yakında'},
+        'Available': {'fr': 'Disponible', 'de': 'Verfügbar', 'es': 'Disponible', 'pt': 'Disponível', 'ru': 'Доступно', 'ja': '利用可能', 'ko': '사용 가능', 'zh-CN': '可用', 'zh-TW': '可用', 'ar': 'متاح', 'tr': 'Mevcut'},
+        'Planned': {'fr': 'Prévu', 'de': 'Geplant', 'es': 'Planificado', 'pt': 'Planejado', 'ru': 'Запланировано', 'ja': '予定', 'ko': '계획됨', 'zh-CN': '计划中', 'zh-TW': '計畫中', 'ar': 'مخطط', 'tr': 'Planlanan'},
+        'Complete': {'fr': 'Complet', 'de': 'Vollständig', 'es': 'Completo', 'pt': 'Completo', 'ru': 'Полный', 'ja': '完全', 'ko': '완전한', 'zh-CN': '完整', 'zh-TW': '完整', 'ar': 'مكتمل', 'tr': 'Tam'},
     }
     
     result = text
     
-    # Apply translations for known words/phrases
-    for english, translations_dict in translations.items():
-        if english.lower() in result.lower():
-            if target_lang in translations_dict:
-                translated = translations_dict[target_lang]
-                # Case-sensitive replacement
-                result = result.replace(english, translated)
-                result = result.replace(english.lower(), translated.lower())
-                result = result.replace(english.upper(), translated.upper())
+    # Apply translations for known words/phrases using whole-word matching
+    # to avoid corrupting unrelated words (for example, "in" inside
+    # "computing").
+    for english, translations_dict in sorted(translations.items(), key=lambda item: len(item[0]), reverse=True):
+        translated = translations_dict.get(target_lang)
+        if not translated:
+            continue
+        pattern = re.compile(rf"(?<!\w){re.escape(english)}(?!\w)", re.IGNORECASE)
+        result = pattern.sub(translated, result)
     
     return result
 
@@ -246,37 +267,54 @@ def copy_directory_structure(source_dir, target_dir):
             dest.mkdir(parents=True, exist_ok=True)
             print(f"  Created directory: {dest}")
 
-def translate_file(source_file, target_lang, target_base_dir):
+ENGLISH_CATEGORY_DIRS = {
+    "01_technology_and_computing",
+    "02_artificial_intelligence",
+    "03_data_science",
+    "04_science",
+    "05_business_and_finance",
+    "06_humanities",
+    "07_reference",
+    "08_future",
+    "10_cheat_sheets",
+}
+
+def target_markdown_files(root_dir):
+    """Return the markdown files for a language, preferring localized folders."""
+    files = []
+    root_dir = Path(root_dir)
+
+    readme = root_dir / "README.md"
+    if readme.exists():
+        files.append(readme)
+
+    subdirs = [path for path in root_dir.iterdir() if path.is_dir()]
+    localized_subdirs = [path for path in subdirs if path.name not in ENGLISH_CATEGORY_DIRS]
+    selected_subdirs = localized_subdirs if localized_subdirs else [path for path in subdirs if path.name in ENGLISH_CATEGORY_DIRS]
+
+    for subdir in sorted(selected_subdirs, key=lambda path: path.name):
+        files.extend(sorted(subdir.rglob("*.md"), key=lambda path: path.relative_to(root_dir).as_posix()))
+
+    return sorted(files, key=lambda path: path.relative_to(root_dir).as_posix())
+
+def translate_file(source_file, target_file, target_lang):
     """Translate a single file and save to target directory."""
-    # Read source content
     with open(source_file, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # Calculate relative path from English directory
-    english_base = Path('/workspace/knowledge_base/English')
-    rel_path = Path(source_file).relative_to(english_base)
-    
-    # Create target path
-    target_path = Path(target_base_dir) / rel_path
-    target_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Translate content
+
+    target_file.parent.mkdir(parents=True, exist_ok=True)
     translated_content = translate_content(content, target_lang, source_file.name)
     translated_content = add_translation_header(translated_content, target_lang, source_file.name)
-    
-    # Write translated content
-    with open(target_path, 'w', encoding='utf-8') as f:
+
+    with open(target_file, 'w', encoding='utf-8') as f:
         f.write(translated_content)
-    
-    return target_path
+
+    return target_file
 
 def main():
     """Main translation function."""
-    english_base = Path('/workspace/knowledge_base/English')
-    kb_base = Path('/workspace/knowledge_base')
-    
     # Get all markdown files
-    md_files = list(english_base.rglob('*.md'))
+    md_files = sorted(ENGLISH_BASE.rglob("*.md"), key=lambda path: path.relative_to(ENGLISH_BASE).as_posix())
     print(f"Found {len(md_files)} markdown files to translate")
     print(f"Target languages: {', '.join(TARGET_LANGUAGES.keys())}")
     print(f"Total translations needed: {len(md_files) * len(TARGET_LANGUAGES)}\n")
@@ -286,23 +324,24 @@ def main():
     failed = 0
     
     for lang_name, lang_code in TARGET_LANGUAGES.items():
-        target_dir = kb_base / lang_name
+        target_dir = KB_BASE / lang_name
         print(f"\n{'='*60}")
         print(f"Translating to {lang_name} ({lang_code})")
         print(f"{'='*60}")
-        
-        # Ensure target directory exists
+
         target_dir.mkdir(exist_ok=True)
-        
-        # Copy directory structure
-        copy_directory_structure(english_base, target_dir)
-        
-        # Translate each file
+
+        target_files = target_markdown_files(target_dir)
+        if len(target_files) != len(md_files):
+            print(f"  Skipping {lang_name}: expected {len(md_files)} files, found {len(target_files)} tracked markdown files")
+            failed += len(md_files)
+            continue
+
         lang_successful = 0
-        for source_file in md_files:
+        for source_file, target_file in zip(md_files, target_files):
             try:
-                target_path = translate_file(source_file, lang_code, target_dir)
-                print(f"  ✓ {source_file.relative_to(english_base)} -> {target_path.relative_to(kb_base)}")
+                target_path = translate_file(source_file, target_file, lang_code)
+                print(f"  ✓ {source_file.relative_to(ENGLISH_BASE)} -> {target_path.relative_to(KB_BASE)}")
                 lang_successful += 1
                 successful += 1
             except Exception as e:

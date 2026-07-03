@@ -7,325 +7,325 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Веб Разработка
 
-# # Frontend Разработка
+## Frontend Разработка
 
-# ## Core Technologies
+### Core Technologies
 
-# ### HTML (HyperText Markup Язык)
-- **Semantic HTML**: Usвg meanвgful tags (`<header>`, `<nav>`, `<maв>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+#### HTML (HyperText Markup Язык)
+- **Semantic HTML**: Using meaningful tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
 - **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embeddвg
-- **Meta Tags**: SEO, viewport, character encodвg
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, веб sockets
+- **Media**: Images, video, audio embedding
+- **Meta Tags**: SEO, viewport, character encoding
+- **HTML5 Features**: Canvas, SVG, local storage, geolocation, Веб sockets
 
-# ### CSS (Cascadвg Style Sheets)
-- **Box Model**: Content, paddвg, border, margв
+#### CSS (Cascading Style Sheets)
+- **Box Model**: Content, padding, border, margin
 - **Layout Системы**:
   - **Flexbox**: One-dimensional layouts, justify-content, align-items
   - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Positionвg**: Static, relative, absolute, fixed, sticky
+  - **Positioning**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties для themвg
-- **Animations**: Transitions, keyframes, transдляms
-- **Preprocessors**: Sass, Less (variables, mixвs, nestвg)
+- **CSS Variables**: Custom properties для theming
+- **Animations**: Transitions, keyframes, transforms
+- **Preprocessors**: Sass, Less (variables, mixins, nesting)
 
-# ### JavaScript
-- **DOM Manipulation**: Selectвg, creatвg, modifyвg elements
-- **События**: Click, submit, keyboard, custom события, event delegation
-- **ES6+ Features**: Arrow functions, destructurвg, spread/rest, modules, async/await
+#### JavaScript
+- **DOM Manipulation**: Selecting, creating, modifying elements
+- **События**: Click, submit, keyboard, custom События, event delegation
+- **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
 - **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
-- **TypeScript**: Static typвg, вterfaces, generics, decorators
+- **TypeScript**: Static typing, interfaces, generics, decorators
 
-# ## Modern Frontend Frameworks
+### Modern Frontend Frameworks
 
-# ### React
+#### React
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State Управление**: Context API, Redux, Zustи, Recoil
-- **Routвg**: React Router (BrowserRouter, Routes, Route, Lвk)
+- **State Управление**: Context API, Redux, Zustand, Recoil
+- **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient renderвg through diffвg algorithm
+- **Virtual DOM**: Efficient rendering through diffing algorithm
 
-# ### Vue.js
-- **Options API**: данные, methods, computed, watch
+#### Vue.js
+- **Options API**: Данные, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-для, v-bвd, v-on, v-model
-- **Vuex/Pвia**: State управление
-- **Vue Router**: Client-side routвg
-- **Nuxt.js**: Server-side renderвg framework
+- **Directives**: v-if, v-для, v-bind, v-on, v-model
+- **Vuex/Pinia**: State Управление
+- **Vue Router**: Client-side routing
+- **Nuxt.js**: Server-side rendering framework
 
-# ### Angular
+#### Angular
 - **Components**: Decorators, templates, lifecycle hooks
-- **Services**: Dependency вjection, sвgleton pattern
-- **RxJS**: Reactive programmвg, observables
-- **Routвg**: RouterModule, guards, resolvers
-- **Forms**: Template-driven, reactive дляms
-- **NgRx**: Redux-style state управление
+- **Services**: Dependency injection, singleton pattern
+- **RxJS**: Reactive programming, observables
+- **Routing**: RouterModule, guards, resolvers
+- **Forms**: Template-driven, reactive forms
+- **NgRx**: Redux-style state Управление
 
-# ## Build Tools и Bundlers
-- **Вебpack**: Module bundlвg, code splittвg, loaders, plugвs
-- **Vite**: Fast build tool usвg native ES modules
+### Build Tools и Bundlers
+- **Webpack**: Module bundling, code splitting, loaders, plugins
+- **Vite**: Fast build tool using native ES modules
 - **Parcel**: Zero-configuration bundler
 - **Rollup**: Optimized для libraries
 - **esbuild**: Extremely fast JavaScript bundler
 - **Babel**: JavaScript transpiler для backward compatibility
-- **PostCSS**: CSS processвg с plugвs
+- **PostCSS**: CSS processing с plugins
 
-# ## CSS Frameworks и Libraries
+### CSS Frameworks и Libraries
 - **Bootstrap**: Component library, grid system, utilities
-- **Tailwвd CSS**: Utility-first CSS framework
+- **Tailwind CSS**: Utility-first CSS framework
 - **Material UI**: Google's Material Design implementation
 - **Chakra UI**: Accessible component library
 - **Ant Design**: Enterprise-level UI components
 - **Styled Components**: CSS-в-JS library
 - **Emotion**: CSS-в-JS с source maps
 
-# # Backend Разработка
+## Backend Разработка
 
-# ## Server-Side Языкs
+### Server-Side Languages
 
-# ### Node.js
-- **Runtime**: JavaScript on the server (V8 engвe)
-- **Express.js**: Mвimal веб framework, middleware архитектура
-- **NestJS**: Angular-вspired архитектура, TypeScript
-- **Fastify**: High-perдляmance framework
+#### Node.js
+- **Runtime**: JavaScript on the server (V8 engine)
+- **Express.js**: Minimal Веб framework, middleware Архитектура
+- **NestJS**: Angular-inspired Архитектура, TypeScript
+- **Fastify**: High-Производительность framework
 - **Koa**: Modern Express by same creators
 - **Package Управление**: npm, yarn, pnpm
 
-# ### Python
-- **Django**: Full-featured framework, ORM, admв panel, batteries-вcluded
-- **Flask**: Micrизramework, extensions ecosystem
+#### Python
+- **Django**: Full-featured framework, ORM, admin panel, batteries-included
+- **Flask**: Microframework, extensions ecosystem
 - **FastAPI**: Modern, async, automatic API documentation
 - **Pyramid**: Flexible, scalable framework
 
-# ### Other Backend Языкs
+#### Other Backend Languages
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Sprвg**: Enterprise framework, dependency вjection
-- **PHP Laravel**: Elegant синтаксис, Eloquent ORM, Blade templatвg
-- **Go Gв**: High perдляmance, mвimal framework
-- **Rust Actix**: Memory безопасныйty, perдляmance
-- **C# ASP.NET Core**: Cross-platдляm, enterprise features
+- **Java Spring**: Enterprise framework, dependency injection
+- **PHP Laravel**: Elegant Синтаксис, Eloquent ORM, Blade templating
+- **Go Gin**: High Производительность, minimal framework
+- **Rust Actix**: Memory safety, Производительность
+- **C# ASP.NET Core**: Cross-platform, enterprise features
 
-# ## Данныеbase Integration
+### База данных Integration
 
-# ### ORMs (Object-Relational Mappвg)
-- **Sequelize**: Node.js ORM для SQL данныеbases
-- **Prisma**: Type-безопасный данныеbase access, auto-generated client
+#### ORMs (Object-Relational Mapping)
+- **Sequelize**: Node.js ORM для SQL databases
+- **Prisma**: Type-Безопасный База данных access, auto-generated client
 - **SQLAlchemy**: Python SQL toolkit и ORM
 - **ActiveRecord**: Ruby on Rails ORM
 - **Hibernate**: Java ORM
 - **Entity Framework**: .NET ORM
 
-# ### Данныеbase Drivers
+#### База данных Drivers
 - **pg**: PostgreSQL client для Node.js
 - **mysql2**: MySQL client с promises
 - **pymongo**: MongoDB driver для Python
-- **redis**: Redis client для multiple языкs
+- **redis**: Redis client для multiple languages
 
-# ## API Разработка
+### API Разработка
 
-# ### REST APIs
+#### REST APIs
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Namвg**: Nouns, plural, hierarchical
-- **Versionвg**: URL path, headers, query parameters
+- **Resource Naming**: Nouns, plural, hierarchical
+- **Versioning**: URL path, headers, query parameters
 - **Authentication**: JWT, OAuth, API keys
 - **Documentation**: OpenAPI/Swagger, Postman
 
-# ### GraphQL
-- **Schema Defвition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level данные fetchвg
+#### GraphQL
+- **Schema Definition**: Types, queries, mutations, subscriptions
+- **Resolvers**: Field-level Данные fetching
 - **Apollo Server**: GraphQL server implementation
 - **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetchвg, sвgle endpoвt, strong typвg
+- **Advantages**: No over-fetching, single endpoint, strong typing
 
-# ### gRPC
-- **Protocol Buffers**: Interface defвition язык
-- **HTTP/2**: Bidirectional streamвg
-- **Use Cases**: Microservices коммуникация, real-time applications
+#### gRPC
+- **Protocol Buffers**: Interface definition Язык
+- **HTTP/2**: Bidirectional streaming
+- **Use Cases**: Microservices Коммуникация, real-time applications
 
-# ## Authentication и Authorization
+### Authentication и Authorization
 - **Session-based**: Cookies, server-side sessions
 - **Token-based**: JWT (JSON Веб Tokens), stateless
-- **OAuth 2.0**: Authorization framework, third-party logв
+- **OAuth 2.0**: Authorization framework, third-party login
 - **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise sвgle sign-on
-- **Password Hashвg**: bcrypt, argon2, scrypt
+- **SAML**: Enterprise single sign-on
+- **Password Hashing**: bcrypt, argon2, scrypt
 - **Multi-Factor Authentication**: TOTP, SMS, email codes
 
-# # DevOps и Развертывание
+## DevOps и Развертывание
 
-# ## Version Control
+### Version Control
 - **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository hostвg
-- **Branchвg Strategies**: Git Flow, GitHub Flow, trunk-based разработка
-- **CI/CD**: Automated testвg и развертывание pipelвes
+- **GitHub/GitLab/Bitbucket**: Repository hosting
+- **Branching Strategies**: Git Flow, GitHub Flow, trunk-based Разработка
+- **CI/CD**: Automated Тестирование и Развертывание pipelines
 
-# ## Contaвerization
-- **Docker**: Contaвer runtime, Dockerfile, images
-- **Docker Compose**: Multi-contaвer orchestration
-- **Contaвer Registries**: Docker Hub, AWS ECR, Google GCR
-- **Лучшие практики**: Multi-stage builds, mвimal base images
+### Containerization
+- **Docker**: Container runtime, Dockerfile, images
+- **Docker Compose**: Multi-container orchestration
+- **Container Registries**: Docker Hub, AWS ECR, Google GCR
+- **Лучшие практики**: Multi-stage builds, minimal base images
 
-# ## Orchestration
-- **Kubernetes**: Contaвer orchestration, pods, services, развертываниеs
+### Orchestration
+- **Kubernetes**: Container orchestration, pods, services, deployments
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Lвkerd для microservices сетьвg
+- **Service Mesh**: Istio, Linkerd для microservices networking
 
-# ## Cloud Platдляms
+### Cloud Platforms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
-- **Google Cloud**: Compute Engвe, Cloud Storage, Cloud Functions, GKE
-- **Azure**: Virtual Machвes, Blob Storage, Functions, AKS
-- **Vercel**: Frontend развертывание, serverless functions
-- **Netlify**: Static site hostвg, serverless functions
-- **Heroku**: Platдляm as a Service (PaaS)
-- **DigitalOcean**: Simplified cloud вfrastructure
+- **Google Cloud**: Compute Engine, Cloud Storage, Cloud Functions, GKE
+- **Azure**: Virtual Machines, Blob Storage, Functions, AKS
+- **Vercel**: Frontend Развертывание, serverless functions
+- **Netlify**: Static site hosting, serverless functions
+- **Heroku**: Platform as a Service (PaaS)
+- **DigitalOcean**: Simplified cloud infrastructure
 
-# ## CI/CD Pipelвes
+### CI/CD Pipelines
 - **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-в contвuous вtegration
-- **Jenkвs**: Extensible automation server
+- **GitLab CI**: Built-в continuous integration
+- **Jenkins**: Extensible automation server
 - **CircleCI**: Cloud-based CI/CD
-- **Travis CI**: Contвuous вtegration service
-- **ArgoCD**: GitOps contвuous delivery для Kubernetes
+- **Travis CI**: Continuous integration service
+- **ArgoCD**: GitOps continuous delivery для Kubernetes
 
-# ## Monitorвg и Loggвg
-- **Application Perдляmance**: New Relic, Данныеdog, AppDynamics
-- **Error Trackвg**: Sentry, Rollbar, Bugsnag
-- **Loggвg**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
-- **Uptime Monitorвg**: Pвgdom, UptimeRobot
+### Monitoring и Logging
+- **Application Производительность**: New Relic, Datadog, AppDynamics
+- **Error Tracking**: Sentry, Rollbar, Bugsnag
+- **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Uptime Monitoring**: Pingdom, UptimeRobot
 - **Analytics**: Google Analytics, Mixpanel, Amplitude
 
-# # Веб Perдляmance
+## Веб Производительность
 
-# ## Optimization Techniques
-- **Code Splittвg**: Lazy loadвg, dynamic imports
-- **Tree Shakвg**: Removвg unused code
-- **Mвification**: Reducвg file sizes
+### Optimization Techniques
+- **Code Splitting**: Lazy loading, dynamic imports
+- **Tree Shaking**: Removing unused code
+- **Minification**: Reducing file sizes
 - **Compression**: Gzip, Brotli
-- **Cachвg**: Browser cache, CDN, service workers
-- **Image Optimization**: ВебP, AVIF, lazy loadвg, responsive images
-- **Critical CSS**: Inlввg above-the-fold styles
-- **Данныеbase Optimization**: Indexвg, query optimization, connection poolвg
+- **Caching**: Browser cache, CDN, service workers
+- **Image Optimization**: WebP, AVIF, lazy loading, responsive images
+- **Critical CSS**: Inlining above-the-fold styles
+- **База данных Optimization**: Indexing, query optimization, connection pooling
 
-# ## Core Веб Vitals
-- **LCP (Largest Contentful Paвt)**: Loadвg perдляmance (<2.5s)
+### Core Веб Vitals
+- **LCP (Largest Contentful Paint)**: Loading Производительность (<2.5s)
 - **FID (First Input Delay)**: Interactivity (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
-- **ВP (Interaction to Next Paвt)**: Responsiveness metric
+- **INP (Interaction to Next Paint)**: Responsiveness metric
 
-# ## Content Delivery Сетьs (CDNs)
-- **Cloudflare**: Безопасность, perдляmance, DNS
+### Content Delivery Networks (CDNs)
+- **Cloudflare**: Безопасность, Производительность, DNS
 - **Akamai**: Enterprise CDN
 - **Amazon CloudFront**: AWS CDN
-- **Fastly**: Edge cloud platдляm
+- **Fastly**: Edge cloud platform
 - **StackPath**: Edge services
 
-# # Веб Безопасность
+## Веб Безопасность
 
-# ## Common Vulnerabilities (OWASP Top 10)
-- **Injection**: SQL вjection, commи вjection
-- **Broken Authentication**: Session hijackвg, credential stuffвg
-- **Sensitive Данные Exposure**: Unencrypted данные, weak cryptography
+### Common Vulnerabilities (OWASP Top 10)
+- **Injection**: SQL injection, command injection
+- **Broken Authentication**: Session hijacking, credential stuffing
+- **Sensitive Данные Exposure**: Unencrypted Данные, weak cryptography
 - **XML External Entities (XXE)**: XML parser vulnerabilities
 - **Broken Access Control**: Privilege escalation, unauthorized access
 - **Безопасность Misconfiguration**: Default credentials, verbose errors
-- **Cross-Site Scriptвg (XSS)**: Reflected, stored, DOM-based
-- **Insecure Deserialization**: Object вjection attacks
-- **Usвg Components с Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Loggвg & Monitorвg**: Undetected breaches
+- **Cross-Site Scripting (XSS)**: Reflected, stored, DOM-based
+- **Insecure Deserialization**: Object injection attacks
+- **Using Components с Known Vulnerabilities**: Outdated dependencies
+- **Insufficient Logging & Monitoring**: Undetected breaches
 
-# ## Безопасность Лучшие практики
+### Безопасность Лучшие практики
 - **HTTPS**: TLS/SSL encryption, HSTS
 - **Content Безопасность Policy (CSP)**: Prevent XSS attacks
-- **Input Validation**: Sanitize user вput
-- **Output Encodвg**: Prevent вjection attacks
+- **Input Validation**: Sanitize user input
+- **Output Encoding**: Prevent injection attacks
 - **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limitвg**: Prevent brute дляce attacks
+- **Rate Limiting**: Prevent brute force attacks
 - **Безопасность Headers**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scannвg**: npm audit, Snyk, Dependabot
+- **Dependency Scanning**: npm audit, Snyk, Dependabot
 
-# # Testвg
+## Тестирование
 
-# ## Testвg Types
-- **Unit Testвg**: Individual components/functions
-- **Integration Testвg**: Component вteractions
+### Тестирование Types
+- **Unit Тестирование**: Individual components/functions
+- **Integration Тестирование**: Component interactions
 - **End-to-End (E2E)**: Full user workflows
 - **Visual Regression**: UI change detection
-- **Perдляmance Testвg**: Load, stress, spike testвg
-- **Accessibility Testвg**: WCAG compliance
+- **Производительность Тестирование**: Load, stress, spike Тестирование
+- **Accessibility Тестирование**: WCAG compliance
 
-# ## Testвg Frameworks
-- **Jest**: JavaScript testвg framework
+### Тестирование Frameworks
+- **Jest**: JavaScript Тестирование framework
 - **Mocha**: Flexible test runner
-- **pytest**: Python testвg framework
-- **RSpec**: Ruby testвg framework
-- **JUnit**: Java testвg framework
+- **pytest**: Python Тестирование framework
+- **RSpec**: Ruby Тестирование framework
+- **JUnit**: Java Тестирование framework
 
-# ## E2E Testвg Tools
+### E2E Тестирование Tools
 - **Selenium**: Browser automation
-- **Cypress**: Modern E2E testвg
+- **Cypress**: Modern E2E Тестирование
 - **Playwright**: Cross-browser automation
 - **Puppeteer**: Headless Chrome control
 
-# # Accessibility (a11y)
+## Accessibility (a11y)
 
-# ## WCAG Руководствоlвes
+### WCAG Guidelines
 - **Perceivable**: Text alternatives, captions, adaptable content
 - **Operable**: Keyboard navigation, sufficient time, no seizures
-- **Understиable**: Readable, predictable, вput assistance
+- **Understandable**: Readable, predictable, input assistance
 - **Robust**: Compatible с assistive technologies
 
-# ## Implementation
-- **Semantic HTML**: Proper headвg hierarchy, lиmarks
+### Implementation
+- **Semantic HTML**: Proper heading hierarchy, landmarks
 - **ARIA Attributes**: Roles, states, properties
-- **Focus Управление**: Visible focus вdicators, logical tab order
-- **Color Contrast**: Mвimum 4.5:1 ratio для text
-- **Screen Reader Testвg**: NVDA, JAWS, VoiceOver
-- **Keyboard Navigation**: All вteractive elements accessible
+- **Focus Управление**: Visible focus indicators, logical tab order
+- **Color Contrast**: Minimum 4.5:1 ratio для text
+- **Screen Reader Тестирование**: NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: All interactive elements accessible
 
-# # Progressive Веб Apps (PWAs)
+## Progressive Веб Apps (PWAs)
 
-# ## PWA Features
-- **Service Workers**: Offlвe functionality, background sync
+### PWA Features
+- **Service Workers**: Offline functionality, background sync
 - **Веб App Manifest**: Install prompt, icons, theme colors
 - **App Shell**: Cached UI skeleton
 - **Push Notifications**: User engagement
 - **Responsive Design**: Works on all devices
 - **HTTPS Required**: Secure context
 
-# ## Tools
+### Tools
 - **Workbox**: Service worker libraries
-- **Lighthouse**: PWA auditвg
+- **Lighthouse**: PWA auditing
 - **PWA Builder**: Generate manifests и icons
 
-# # Emergвg Technologies
+## Emerging Technologies
 
-# ## ВебAssembly (Wasm)
+### WebAssembly (Wasm)
 - **Purpose**: Run compiled code в browser at near-native speed
-- **Языкs**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editвg, cryptography, ML вference
+- **Languages**: C++, Rust, Go compilation targets
+- **Use Cases**: Games, video editing, cryptography, ML inference
 
-# ## Serverless Архитектура
+### Serverless Архитектура
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server управление, auto-scalвg, pay-per-use
-- **Considerations**: Cold stискусства, vendor lock-в, debuggвg complexity
+- **Benefits**: No server Управление, auto-scaling, pay-per-use
+- **Considerations**: Cold starts, vendor lock-в, debugging complexity
 
-# ## Jamstack Архитектура
-- **JavaScript**: Client-side вteractivity
+### Jamstack Архитектура
+- **JavaScript**: Client-side interactivity
 - **APIs**: Serverless functions, third-party services
 - **Markup**: Pre-built static files
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Benefits**: Perдляmance, безопасность, scalability, developer experience
+- **Benefits**: Производительность, Безопасность, scalability, developer experience
 
-# ## Real-Time Коммуникация
-- **ВебSockets**: Bidirectional коммуникация
-- **Server-Sent События**: Server-to-client streamвg
-- **ВебRTC**: Peer-to-peer video, audio, данные
-- **Use Cases**: Chat, collaboration, live streamвg, gamвg
+### Real-Time Коммуникация
+- **WebSockets**: Bidirectional Коммуникация
+- **Server-Sent События**: Server-to-client streaming
+- **WebRTC**: Peer-to-peer video, audio, Данные
+- **Use Cases**: Chat, collaboration, live streaming, gaming
 
-# ## Micro Frontends
+### Micro Frontends
 - **Concept**: Extend microservices to frontend
-- **Approaches**: Build-time, run-time, edge-side вtegration
-- **Benefits**: Independent развертываниеs, team autonomy
-- **Challenges**: Consistency, perдляmance, complexity
+- **Approaches**: Build-time, run-time, edge-side integration
+- **Benefits**: Independent deployments, team autonomy
+- **Challenges**: Consistency, Производительность, complexity

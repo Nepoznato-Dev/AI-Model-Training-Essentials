@@ -1,658 +1,209 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: coding_languages.md
+Source: technology_glossary.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Coddansg Langues
+# Technologie Glossary
 
-# # Python
-
-Python is a high-level, dansterpreted, dynamically typed, general-purpose programmdansg langue. It emphasises readability et uses significant dansdentation as block delimiters.
-
-# ## Syntaxe bases
-
-```python
-# Variables and types
-name: str = "Alice"
-age: int = 30
-score: float = 9.5
-active: bool = True
-
-# Conditionals
-if age >= 18:
-    print("adult")
-elif age >= 13:
-    print("teenager")
-else:
-    print("child")
-
-# Loops
-for i in range(5):
-    print(i)
-
-while active:
-    active = False
-```
-
-# ## Functions et type hdansts
-
-```python
-def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
-```
-
-# ## List comprehensions
-
-```python
-squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
-```
-
-# ## Classes et OOP
-
-```python
-class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def speak(self) -> str:
-        raise NotImplementedError
-
-class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
-```
-
-# ## Common patterns
-
-- Use `avec open(path) as f:` pour file I/O.
-- Prefer f-strdansgs (`f"hello {name}"`) over `%` or `.pourmat()`.
-- Use `donnéesclasses.donnéesclass` pour données-only classes.
-- Use `pathlib.Path` dansstead de `os.path` pour file paths.
-
-# ## Tooldansg
-
-- `pip dansstall <package>` dansstalls packages.
-- `python -m venv .venv && source .venv/bdans/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip dansstall -r requirements.txt` restores le/lam.
-- `pyproject.toml` is le/la modern project-configuration stetard.
+A Référence glossary covering AI models, hardware, benchmarks, et core concepts
+dans le/la modern AI et Informatique landscape.
 
 ---
 
-# # JavaScript
+## AI Langue Models et Assistants
 
-JavaScript is le/la primary langue de le/la web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
+### ChatGPT
+ChatGPT is an AI chatbot developed by OpenAI, first released dans November 2022.
+It is powered by le/la GPT series de large Langue models (LLMs). ChatGPT is one
+de le/la fastest-growing consumer AI products dans Histoire, reaching 100 million
+users within two months de launch. It supports text-based conversation, code
+generation, summarisation, et creative writing. Paid tiers provide access to
+more powerful models such as GPT-4 et GPT-4o.
 
-# ## Modern syntaxe (ES6+)
+### GPT (Generative Pre-trained Transformer)
+GPT is a family de large Langue models created by OpenAI. le/la Architecture
+uses a decoder-only Transformer trained avec a next-token prediction objective on
+massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
+pour "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
+used via le/la API), GPT-3.5 (le/la backbone de le/la original ChatGPT), et GPT-4
+(2023, multimodal, Performance close to human expert level on many benchmarks).
 
-```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
+### Claude
+Claude is an AI assistant developed by Anthropic. It is named after Claude
+Shannon, le/la founder de information theory. Anthropic was founded by former
+OpenAI researchers et focuses on "constitutional AI" — a technique to make
+models safer by training them to follow a set de principles. Claude models
+(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known pour long context windows (up
+to 200,000 tokens), nuanced reasoning, et reduced harmful output compared to
+baseline LLMs.
 
-// Arrow functions
-const add = (a, b) => a + b;
+### Gemini
+Gemini is Google DeepMind's family de multimodal AI models, announced dans
+December 2023. Gemini is natively multimodal — trained from le/la ground up on
+text, images, audio, et video simultaneously, unlike earlier models that had
+modalities added via fine-tuning. Versions include Gemini Nano (on-device),
+Gemini Flash (fast, cost-efficient), et Gemini Ultra (highest-capability).
+Gemini powers Google's AI chatbot Bard (renamed Gemini) et Google Search AI
+Overviews.
 
-// Template literals
-const greet = name => `Hello, ${name}!`;
+### Phi-3-mini
+Phi-3-mini is a small Langue model (SLM) developed by Microsoft avec 3.8B
+parameters. It was released dans April 2024. Unlike most large models, Phi-3-mini
+was trained on a carefully curated "textbook-quality" dataset — a technique
+pioneered by Microsoft Research — that prioritises Données quality over raw volume.
+Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
+outperforms models several times larger on reasoning benchmarks such as MMLU et
+HumanEval. It supports a 4k token context window dans its base variant et a 128k
+window dans le/la long-context variant. Phi-3-mini can run on a single consumer GPU
+or even on-device on a modern smartphone avec sufficient RAM.
 
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
+### Llama (Meta AI)
+Llama (Large Langue Model Meta AI) is an open-weights family de models
+released by Meta. Llama 2 (2023) was released pour research et commercial use
+avec sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
+Performance significantly, avec models ranging from 8B to 70B (et later 400B+).
+Because le/la weights are publicly downloadable, Llama models are le/la foundation
+pour a large ecosystem de fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
+et are widely used pour local/private AI deployments.
 
-// Spread
-const merged = { ...defaults, ...overrides };
-```
-
-# ## Async programmdansg
-
-```javascript
-// Promises
-fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
-```
-
-# ## Array methods
-
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
-
-# ## DOM manipulation
-
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
-});
-```
-
-# ## Tooldansg
-
-- `npm dansit -y` dansitialises a project.
-- `npm dansstall <package>` adds a dependency.
-- `npm run <script>` runs a script defdansed dans `package.json`.
-- `node dansdex.js` runs a script avec Node.js.
+### Mistral
+Mistral AI is a French AI company that develops open et proprietary LLMs.
+Mistral 7B (2023) demonstrated that a 7B-parameter model can match le/la
+Performance de much larger models using efficient techniques such as sliding
+window attention et grouped-query attention. Mixtral 8x7B (2024) is a mixture-
+de-experts model — it routes each token to a subset de 8 expert networks,
+achieving GPT-3.5-level Performance while being computationally cheaper.
+Mistral's models are fully open-weight et can be run locally.
 
 ---
 
-# # TypeScript
+## GPU Hardware et Graphics Cards
 
-TypeScript is a statically typed superset de JavaScript that compiles to pladans JavaScript. It adds type annotations, dansterfaces, generics, et enums.
+### GPU (Graphics Processing Unit)
+A GPU is a processor designed pour massively parallel computation. Originally
+built pour rendering 3D graphics, GPUs have become essential pour AI/ML training
+et inference because they can perform thousands de floating-point operations
+simultaneously using thousands de small cores. le/la two main GPU manufacturers
+pour AI are NVIDIA et AMD.
 
-# ## Type annotations
+### NVIDIA GeForce RTX Series
+le/la RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
+30xx (Ampere, 2020) et RTX 40xx (Ada Lovelace, 2022) generations include
+dedicated Tensor Cores pour accelerating AI operations. VRAM (video RAM) is
+critical pour running AI models locally — an 8GB GPU can handle 7B parameter
+models dans 4-bit quantisation; a 24GB GPU can handle 70B models dans 4-bit.
 
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
+### NVIDIA A-Series et H-Series (Données Centre)
+le/la A100 (Ampere, 2020) et H100 (Hopper, 2022) are NVIDIA's professional AI
+accelerators. An H100 has up to 80GB de HBM3 memory et is le/la standard
+hardware behind most large-scale LLM training today. These GPUs cost $25,000–
+$40,000 each but offer 10–30× le/la AI throughput de consumer RTX cards.
 
-# ## Interfaces et types
+### AMD Radeon RX Series
+AMD's consumer GPU line. le/la RX 7900 XTX (2022) has 24GB VRAM et can run
+local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
+well-supported than NVIDIA pour AI frameworks, though Assistance is improving.
 
-```typescript
-interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
-}
+### Intel Arc
+Intel Arc is Intel's discrete GPU product line, released starting dans 2022. Arc
+GPUs Assistance XeSS (Intel's super-sampling) et have limited but growing Assistance
+pour AI inference tasks via OpenVINO et IPEX-LLM frameworks.
 
-type Status = "active" | "inactive" | "banned";
-```
-
-# ## Generics
-
-```typescript
-function identity<T>(value: T): T {
-  return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
-  return arr[0];
-}
-```
-
-# ## Classes avec access modifiers
-
-```typescript
-class Counter {
-  private count: number = 0;
-
-  increment(): void {
-    this.count++;
-  }
-
-  get value(): number {
-    return this.count;
-  }
-}
-```
-
-# ## tsconfig.json essentials
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
-}
-```
-
-# ## Tooldansg
-
-- `npm dansstall -g typescript` dansstalls le/la compiler.
-- `tsc` compiles le/la project.
-- `ts-node src/dansdex.ts` runs TypeScript directly.
+### ARK Intel (ark.intel.com)
+ARK is Intel's official product specifications Base de données at ark.intel.com. It
+provides detailed technical specifications pour every Intel CPU, GPU, FPGA, et
+NUC product, including core counts, clock speeds, TDP, supported memory types,
+et instruction-set features. When you hear "check ARK pour specs," it means
+visiting that Base de données pour authoritative hardware information.
 
 ---
 
-# # Rust
+## AI Performance Benchmarks
 
-Rust is a systèmes programmdansg langue focused on sûrty, speed, et concurrency. It prévénements memory-sûrty bugs at compile time through its ownership system.
+### MMLU (Massive Multitask Langue Understanding)
+MMLU is a benchmark Test LLM knowledge across 57 academic subjects including
+mathematics, Histoire, Droit, Médecine, et computer Science. It consists de
+multiple-choice questions drawn from real university-level exams. A score de
+70% is roughly human undergraduate level; GPT-4 et Claude 3 score above 86%.
+Phi-3-mini scores around 70% despite its small size.
 
-# ## Ownership et borrowdansg
+### HumanEval
+HumanEval is OpenAI's benchmark pour code generation. It consists de 164 Python
+programming problems avec automated test cases. Models are measured on
+pass@k — le/la probability that at least one de k generated solutions passes all
+tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
 
-Every value dans Rust has exactly one owner. When le/la owner goes out de scope le/la value is dropped. Borrowdansg allows références avecout transferrdansg ownership.
+### HellaSwag
+HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
+describing a mundane activity et must choose le/la most likely continuation from
+four options. le/la incorrect options are specially designed to be plausible but
+subtly wrong. It tests whether a model has a grounded understanding de physical
+et social situations.
 
-```rust
-fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
-}
-
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
-
-Mutable borrows (`&mut T`) require that no ole/lar borrows exist at le/la same time.
-
-# ## Lifetimes
-
-Lifetimes ensure références do not outlive le/la données le/lay podanst to.
-
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
-}
-```
-
-# ## Enums et pattern matchdansg
-
-```rust
-enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
-    }
-}
-```
-
-# ## Error hetldansg
-
-```rust
-use std::fs;
-
-fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
-}
-
-fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
-}
-```
-
-The `?` operator propagates errors automatically dansside functions that return `Result`.
-
-# ## Tooldansg (Cargo)
-
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles et runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` pourmats code. `cargo clippy` ldansts.
+### ARC (AI2 Reasoning Challenge)
+ARC is a benchmark from le/la Allen Institute pour AI. It consists de grade-school
+Science questions, split into "Easy" et "Challenge" sets. le/la Challenge set
+contains questions that retrieval-based methods et simple statistical models
+struggle avec, requiring multi-step reasoning.
 
 ---
 
-# # Go
-
-Go (Golang) is a statically typed, compiled langue designed pour simplicity et high-perpourmance concurrent programs.
-
-# ## Bases
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
-}
-```
-
-# ## Functions et multiple return values
-
-```go
-func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
-}
-```
-
-# ## Interfaces
-
-```go
-type Speaker interface {
-    Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
-
-Any type that implements all methods de an dansterface satisfies it — no explicit declaration is needed.
-
-# ## Goroutdanses et channels
-
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
-}
-
-func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
-
-    go worker(1, jobs, results)
-
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
-
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
-}
-```
-
-# ## Defer
-
-```go
-func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
-}
-```
-
-# ## Tooldansg
-
-- `go mod dansit module/name` dansitialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` pourmats code.
-- `go vet ./...` checks pour common mistakes.
-
----
-
-# # C et C++
-
-C is a low-level, compiled, procedural langue. C++ extends C avec classes, templates, et le/la Stetard Template Library (STL).
-
-# ## C bases
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
-
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
-
-    return 0;
-}
-```
-
-# ## Podansters
-
-A podanster stores le/la memory address de anole/lar variable. `*ptr` deréférences it; `&var` takes an address.
-
-```c
-int a = 10;
-int *p = &a;
-*p = 20;   /* a is now 20 */
-```
-
-# ## C++ classes et RAII
-
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
-
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
-
-private:
-    std::string name_;
-    int age_;
-};
-```
-
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensurdansg cleanup happens automatically dans destructors.
-
-# ## STL contadansers
-
-```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
-
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"]   = 87;
-```
-
-# ## Modern C++ (C++17 / C++20) highlights
-
-- `auto` type deduction.
-- Range-based `pour` loops: `pour (auto& item : contadanser)`.
-- Smart podansters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bdansddansgs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::strdansg_view`.
-
-# ## Compilation
-
-- `gcc madans.c -o madans` compiles C.
-- `g++ -std=c++20 -Wall madans.cpp -o madans` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is le/la stetard build-system generator pour larger projects.
-
----
-
-# # Swift
-
-Swift is a modern, statically typed programmdansg langue developed by Apple pour iOS, macOS, watchOS, et tvOS. It is also available on Ldansux.
-
-# ## Bases
-
-```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
-
-# ## Optionals
-
-An optional (`T?`) represents a value that may or may not be present.
-
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
-    print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
-
-# ## Functions et closures
-
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
-
-# ## Classes et structs
-
-Swift has both classes (référence types) et structs (value types). Prefer structs pour simple données models.
-
-```swift
-struct Point {
-    var x: Double
-    var y: Double
-}
-
-class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
-}
-```
-
-# ## Protocols
-
-```swift
-protocol Describable {
-    var description: String { get }
-}
-
-struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
-}
-```
-
-# ## Codable (JSON encoddansg / decoddansg)
-
-```swift
-struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
-
-# ## SwiftUI bases
-
-```swift
-import SwiftUI
-
-struct ContentView: View {
-    @State private var count = 0
-
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
-}
-```
-
-# ## Tooldansg
-
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs le/la project.
-- `swift test` runs tests.
-- `swift package dansit --type executable` creates a new executable project.
-- Xcode is le/la primary IDE pour Apple-platpourm développement.
-
----
-
-# # Coddansg Fondamentaux (Langue-Agnostic)
-
-# ## Problem-solvdansg workflow
-
-1. Defdanse le/la dansput, output, et constradansts bepoure writdansg code.
-2. Break le/la task dansto smaller sub-problems.
-3. Start avec a simple correct solution, le/lan optimise if needed.
-4. Validate avec tests, edge cases, et realistic dansputs.
-
-# ## Core données structures
-
-- **Array / List**: ordered collection avec fast dansdexed reads.
-- **Hash map / Dictionnaire**: key-value store avec average O(1) lookup.
-- **Set**: unique values, useful pour membership checks.
-- **Stack**: LIFO (last dans, first out), common dans parsdansg et recursion.
-- **Queue**: FIFO (first dans, first out), useful pour scheduldansg et BFS.
-- **Tree / Graph**: hierarchical et réseau-style relationships.
-
-# ## Algorithmic complexity (Big O)
-
-- Big O describes how runtime or memory grows avec dansput size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): bdansary search.
-  - O(n): sdansgle pass through données.
-  - O(n log n): efficient sortdansg.
-  - O(n²): nested loops over similar-size dansputs.
-- Prefer clear, madanstadansable code unless prdeildansg shows a bottleneck.
-
-# ## Debuggdansg prdansciples
-
-- Reproduce le/la bug reliably first.
-- Mdansimise le/la faildansg case to isolate cause.
-- Inspect logs, dansputs, et assumptions.
-- Change one variable at a time while testdansg.
-- Add regression tests so le/la same bug does not return.
-
-# ## Testdansg pyramid
-
-- **Unit tests**: fast, focused checks de small logic units.
-- **Integration tests**: verify dansteractions across modules/services.
-- **End-to-end tests**: validate user flows dans realistic environments.
-- A balanced suite has many unit tests et fewer slow end-to-end tests.
-
-# ## Code quality practices
-
-- Use meandansgful names et small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive et dansterfaces explicit.
-- Use ldansters/pourmatters pour consistency.
-- Review code pour correctness, clarity, et sécurité.
-
-# ## Sécurité bases pour developers
-
-- Validate et sanitise external dansput.
-- Use parameterised queries to prevent SQL dansjection.
-- Store passwords avec strong hashdansg algorithms (e.g., Argon2, bcrypt).
-- Avoid embedddansg secrets dans source code.
-- Apply least privilege pour credentials et services.
+## Core AI/ML Concepts
+
+### RAG (Retrieval-Augmented Generation)
+RAG is a technique that combines a retrieval system (typically a vector
+Base de données) avec a Langue model. Instead de relying solely on le/la model's
+parametric knowledge, RAG first retrieves relevant documents from an external
+Base de connaissances et then includes them dans le/la model's context. This allows le/la
+model to answer questions about up-to-date or domain-specific information
+without retraining. Potato.ai uses a form de RAG — it retrieves from its KB
+et includes le/la results dans le/la context before generating a response.
+
+### Fine-tuning
+Fine-tuning is le/la process de continuing to train a pre-trained model on a
+smaller, domain-specific dataset. This adapts le/la model's weights pour a
+particular task or domain. pour example, a base LLM might be fine-tuned on
+medical records to create a medical Q&A assistant. Fine-tuning is
+computationally expensive but much cheaper than training from scratch.
+
+### Quantisation
+Quantisation reduces le/la numerical precision de model weights (e.g. from 32-bit
+float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
+dans 16-bit precision requires ~14GB VRAM; le/la same model dans 4-bit (GGUF format)
+requires ~4GB. Quantisation typically causes a small but acceptable accuracy
+degradation et is le/la main technique enabling large models to run on consumer
+hardware or even mobile devices.
+
+### Context Window
+le/la context window is le/la maximum number de tokens a model can process at once,
+including both le/la prompt et le/la generated response. GPT-3.5 had a 4,096-token
+window; GPT-4 Turbo et Claude 3 Assistance 128,000 tokens; Gemini 1.5 Pro
+supports 1,000,000 tokens. A larger context window allows le/la model to "see"
+more de a conversation or document at once, improving coherence over long
+exchanges.
+
+### RLHF (Reinforcement Learning from Human Retour)
+RLHF is le/la training technique that transforms a base Langue model (which
+simply predicts le/la next token) into an assistant that follows instructions et
+behaves helpfully. Human raters score model outputs, a reward model is trained
+on their preferences, et le/la Langue model is then optimised against this
+reward model using reinforcement learning. ChatGPT, Claude, et Gemini all use
+variants de RLHF or similar alignment techniques (e.g. Constitutional AI,
+Direct Preference Optimisation).
+
+### Transformer Architecture
+le/la Transformer is le/la neural Réseau Architecture underlying all modern LLMs.
+Introduced dans le/la 2017 paper "Attention Is All You Need" by Vaswani et al., it
+uses self-attention mechanisms to process all tokens dans parallel rather than
+sequentially. Encoder-only Transformers (BERT) are used pour understanding tasks;
+decoder-only Transformers (GPT, Llama, Mistral) are used pour generation tasks;
+encoder-decoder Transformers (T5, BART) are used pour translation et summarisation.
+
+### Embeddings et Vector Databases
+Embeddings are dense numerical representations de text (or images) produced by
+a neural Réseau. Semantically similar texts have embeddings that are close dans
+vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
+these embeddings et Assistance fast approximate nearest-neighbour search. They are
+le/la storage backbone de RAG Systèmes, including Potato.ai's cold-memory layer.

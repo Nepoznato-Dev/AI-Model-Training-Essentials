@@ -1,658 +1,209 @@
 <!-- 
 This file was automatically translated from English to Spanish.
-Source: coding_languages.md
+Source: technology_glossary.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Codeng Idiomas
+# Tecnología Glossary
 
-# # Python
-
-Python is a high-level, enterpreted, dynamically typed, general-purpose programmeng idioma. It emphasises readability y uses significant endentation as block delimiters.
-
-# ## Sintaxis conceptos básicos
-
-```python
-# Variables and types
-name: str = "Alice"
-age: int = 30
-score: float = 9.5
-active: bool = True
-
-# Conditionals
-if age >= 18:
-    print("adult")
-elif age >= 13:
-    print("teenager")
-else:
-    print("child")
-
-# Loops
-for i in range(5):
-    print(i)
-
-while active:
-    active = False
-```
-
-# ## Functions y type hents
-
-```python
-def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
-```
-
-# ## List comprehensions
-
-```python
-squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
-```
-
-# ## Classes y OOP
-
-```python
-class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def speak(self) -> str:
-        raise NotImplementedError
-
-class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
-```
-
-# ## Common patterns
-
-- Use `con open(path) as f:` para file I/O.
-- Prefer f-strengs (`f"hello {name}"`) over `%` or `.paramat()`.
-- Use `datosclasses.datosclass` para datos-only classes.
-- Use `pathlib.Path` enstead de `os.path` para file paths.
-
-# ## Tooleng
-
-- `pip enstall <package>` enstalls packages.
-- `python -m venv .venv && source .venv/ben/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip enstall -r requirements.txt` restores el/lam.
-- `pyproject.toml` is el/la modern project-configuration styard.
+A Referencia glossary covering AI models, hardware, benchmarks, y core concepts
+en el/la modern AI y Informática landscape.
 
 ---
 
-# # JavaScript
+## AI Idioma Models y Assistants
 
-JavaScript is el/la primary idioma de el/la web. It runs en browsers y on servers via Node.js. It is dynamically typed y prototype-based.
+### ChatGPT
+ChatGPT is an AI chatbot developed by OpenAI, first released en November 2022.
+It is powered by el/la GPT series de large Idioma models (LLMs). ChatGPT is one
+de el/la fastest-growing consumer AI products en Historia, reaching 100 million
+users within two months de launch. It supports text-based conversation, code
+generation, summarisation, y creative writing. Paid tiers provide access to
+more powerful models such as GPT-4 y GPT-4o.
 
-# ## Modern sintaxis (ES6+)
+### GPT (Generative Pre-trained Transformer)
+GPT is a family de large Idioma models created by OpenAI. el/la Arquitectura
+uses a decoder-only Transformer trained con a next-token prediction objective on
+massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
+para "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
+used via el/la API), GPT-3.5 (el/la backbone de el/la original ChatGPT), y GPT-4
+(2023, multimodal, Rendimiento close to human expert level on many benchmarks).
 
-```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
+### Claude
+Claude is an AI assistant developed by Anthropic. It is named after Claude
+Shannon, el/la founder de information theory. Anthropic was founded by former
+OpenAI researchers y focuses on "constitutional AI" — a technique to make
+models safer by training them to follow a set de principles. Claude models
+(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known para long context windows (up
+to 200,000 tokens), nuanced reasoning, y reduced harmful output compared to
+baseline LLMs.
 
-// Arrow functions
-const add = (a, b) => a + b;
+### Gemini
+Gemini is Google DeepMind's family de multimodal AI models, announced en
+December 2023. Gemini is natively multimodal — trained from el/la ground up on
+text, images, audio, y video simultaneously, unlike earlier models that had
+modalities added via fine-tuning. Versions include Gemini Nano (on-device),
+Gemini Flash (fast, cost-efficient), y Gemini Ultra (highest-capability).
+Gemini powers Google's AI chatbot Bard (renamed Gemini) y Google Search AI
+Overviews.
 
-// Template literals
-const greet = name => `Hello, ${name}!`;
+### Phi-3-mini
+Phi-3-mini is a small Idioma model (SLM) developed by Microsoft con 3.8B
+parameters. It was released en April 2024. Unlike most large models, Phi-3-mini
+was trained on a carefully curated "textbook-quality" dataset — a technique
+pioneered by Microsoft Research — that prioritises Datos quality over raw volume.
+Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
+outperforms models several times larger on reasoning benchmarks such as MMLU y
+HumanEval. It supports a 4k token context window en its base variant y a 128k
+window en el/la long-context variant. Phi-3-mini can run on a single consumer GPU
+or even on-device on a modern smartphone con sufficient RAM.
 
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
+### Llama (Meta AI)
+Llama (Large Idioma Model Meta AI) is an open-weights family de models
+released by Meta. Llama 2 (2023) was released para research y commercial use
+con sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
+Rendimiento significantly, con models ranging from 8B to 70B (y later 400B+).
+Because el/la weights are publicly downloadable, Llama models are el/la foundation
+para a large ecosystem de fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
+y are widely used para local/private AI deployments.
 
-// Spread
-const merged = { ...defaults, ...overrides };
-```
-
-# ## Async programmeng
-
-```javascript
-// Promises
-fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
-```
-
-# ## Array methods
-
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
-
-# ## DOM manipulation
-
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
-});
-```
-
-# ## Tooleng
-
-- `npm enit -y` enitialises a project.
-- `npm enstall <package>` adds a dependency.
-- `npm run <script>` runs a script defened en `package.json`.
-- `node endex.js` runs a script con Node.js.
+### Mistral
+Mistral AI is a French AI company that develops open y proprietary LLMs.
+Mistral 7B (2023) demonstrated that a 7B-parameter model can match el/la
+Rendimiento de much larger models using efficient techniques such as sliding
+window attention y grouped-query attention. Mixtral 8x7B (2024) is a mixture-
+de-experts model — it routes each token to a subset de 8 expert networks,
+achieving GPT-3.5-level Rendimiento while being computationally cheaper.
+Mistral's models are fully open-weight y can be run locally.
 
 ---
 
-# # TypeScript
+## GPU Hardware y Graphics Cards
 
-TypeScript is a statically typed superset de JavaScript that compiles to plaen JavaScript. It adds type annotations, enterfaces, generics, y enums.
+### GPU (Graphics Processing Unit)
+A GPU is a processor designed para massively parallel computation. Originally
+built para rendering 3D graphics, GPUs have become essential para AI/ML training
+y inference because they can perform thousands de floating-point operations
+simultaneously using thousands de small cores. el/la two main GPU manufacturers
+para AI are NVIDIA y AMD.
 
-# ## Type annotations
+### NVIDIA GeForce RTX Series
+el/la RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
+30xx (Ampere, 2020) y RTX 40xx (Ada Lovelace, 2022) generations include
+dedicated Tensor Cores para accelerating AI operations. VRAM (video RAM) is
+critical para running AI models locally — an 8GB GPU can handle 7B parameter
+models en 4-bit quantisation; a 24GB GPU can handle 70B models en 4-bit.
 
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
+### NVIDIA A-Series y H-Series (Datos Centre)
+el/la A100 (Ampere, 2020) y H100 (Hopper, 2022) are NVIDIA's professional AI
+accelerators. An H100 has up to 80GB de HBM3 memory y is el/la standard
+hardware behind most large-scale LLM training today. These GPUs cost $25,000–
+$40,000 each but offer 10–30× el/la AI throughput de consumer RTX cards.
 
-# ## Interfaces y types
+### AMD Radeon RX Series
+AMD's consumer GPU line. el/la RX 7900 XTX (2022) has 24GB VRAM y can run
+local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
+well-supported than NVIDIA para AI frameworks, though Soporte is improving.
 
-```typescript
-interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
-}
+### Intel Arc
+Intel Arc is Intel's discrete GPU product line, released starting en 2022. Arc
+GPUs Soporte XeSS (Intel's super-sampling) y have limited but growing Soporte
+para AI inference tasks via OpenVINO y IPEX-LLM frameworks.
 
-type Status = "active" | "inactive" | "banned";
-```
-
-# ## Generics
-
-```typescript
-function identity<T>(value: T): T {
-  return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
-  return arr[0];
-}
-```
-
-# ## Classes con access modifiers
-
-```typescript
-class Counter {
-  private count: number = 0;
-
-  increment(): void {
-    this.count++;
-  }
-
-  get value(): number {
-    return this.count;
-  }
-}
-```
-
-# ## tsconfig.json essentials
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
-}
-```
-
-# ## Tooleng
-
-- `npm enstall -g typescript` enstalls el/la compiler.
-- `tsc` compiles el/la project.
-- `ts-node src/endex.ts` runs TypeScript directly.
+### ARK Intel (ark.intel.com)
+ARK is Intel's official product specifications Base de datos at ark.intel.com. It
+provides detailed technical specifications para every Intel CPU, GPU, FPGA, y
+NUC product, including core counts, clock speeds, TDP, supported memory types,
+y instruction-set features. When you hear "check ARK para specs," it means
+visiting that Base de datos para authoritative hardware information.
 
 ---
 
-# # Rust
+## AI Rendimiento Benchmarks
 
-Rust is a sistemas programmeng idioma focused on seguroty, speed, y concurrency. It preventos memory-seguroty bugs at compile time through its ownership system.
+### MMLU (Massive Multitask Idioma Understanding)
+MMLU is a benchmark Pruebas LLM knowledge across 57 academic subjects including
+mathematics, Historia, Derecho, Medicina, y computer Ciencia. It consists de
+multiple-choice questions drawn from real university-level exams. A score de
+70% is roughly human undergraduate level; GPT-4 y Claude 3 score above 86%.
+Phi-3-mini scores around 70% despite its small size.
 
-# ## Ownership y borroweng
+### HumanEval
+HumanEval is OpenAI's benchmark para code generation. It consists de 164 Python
+programming problems con automated test cases. Models are measured on
+pass@k — el/la probability that at least one de k generated solutions passes all
+tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
 
-Every value en Rust has exactly one owner. When el/la owner goes out de scope el/la value is dropped. Borroweng allows referencias conout transferreng ownership.
+### HellaSwag
+HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
+describing a mundane activity y must choose el/la most likely continuation from
+four options. el/la incorrect options are specially designed to be plausible but
+subtly wrong. It tests whether a model has a grounded understanding de physical
+y social situations.
 
-```rust
-fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
-}
-
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
-
-Mutable borrows (`&mut T`) require that no oel/lar borrows exist at el/la same time.
-
-# ## Lifetimes
-
-Lifetimes ensure referencias do not outlive el/la datos el/lay poent to.
-
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
-}
-```
-
-# ## Enums y pattern matcheng
-
-```rust
-enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
-    }
-}
-```
-
-# ## Error hyleng
-
-```rust
-use std::fs;
-
-fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
-}
-
-fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
-}
-```
-
-The `?` operator propagates errors automatically enside functions that return `Result`.
-
-# ## Tooleng (Cargo)
-
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles y runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` paramats code. `cargo clippy` lents.
+### ARC (AI2 Reasoning Challenge)
+ARC is a benchmark from el/la Allen Institute para AI. It consists de grade-school
+Ciencia questions, split into "Easy" y "Challenge" sets. el/la Challenge set
+contains questions that retrieval-based methods y simple statistical models
+struggle con, requiring multi-step reasoning.
 
 ---
 
-# # Go
-
-Go (Golang) is a statically typed, compiled idioma designed para simplicity y high-perparamance concurrent programs.
-
-# ## Conceptos básicos
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
-}
-```
-
-# ## Functions y multiple return values
-
-```go
-func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
-}
-```
-
-# ## Interfaces
-
-```go
-type Speaker interface {
-    Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
-
-Any type that implements all methods de an enterface satisfies it — no explicit declaration is needed.
-
-# ## Goroutenes y channels
-
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
-}
-
-func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
-
-    go worker(1, jobs, results)
-
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
-
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
-}
-```
-
-# ## Defer
-
-```go
-func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
-}
-```
-
-# ## Tooleng
-
-- `go mod enit module/name` enitialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` paramats code.
-- `go vet ./...` checks para common mistakes.
-
----
-
-# # C y C++
-
-C is a low-level, compiled, procedural idioma. C++ extends C con classes, templates, y el/la Styard Template Library (STL).
-
-# ## C conceptos básicos
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
-
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
-
-    return 0;
-}
-```
-
-# ## Poenters
-
-A poenter stores el/la memory address de anoel/lar variable. `*ptr` dereferencias it; `&var` takes an address.
-
-```c
-int a = 10;
-int *p = &a;
-*p = 20;   /* a is now 20 */
-```
-
-# ## C++ classes y RAII
-
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
-
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
-
-private:
-    std::string name_;
-    int age_;
-};
-```
-
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensureng cleanup happens automatically en destructors.
-
-# ## STL contaeners
-
-```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
-
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"]   = 87;
-```
-
-# ## Modern C++ (C++17 / C++20) highlights
-
-- `auto` type deduction.
-- Range-based `para` loops: `para (auto& item : contaener)`.
-- Smart poenters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bendengs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::streng_view`.
-
-# ## Compilation
-
-- `gcc maen.c -o maen` compiles C.
-- `g++ -std=c++20 -Wall maen.cpp -o maen` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is el/la styard build-system generator para larger projects.
-
----
-
-# # Swift
-
-Swift is a modern, statically typed programmeng idioma developed by Apple para iOS, macOS, watchOS, y tvOS. It is also available on Lenux.
-
-# ## Conceptos básicos
-
-```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
-
-# ## Optionals
-
-An optional (`T?`) represents a value that may or may not be present.
-
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
-    print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
-
-# ## Functions y closures
-
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
-
-# ## Classes y structs
-
-Swift has both classes (referencia types) y structs (value types). Prefer structs para simple datos models.
-
-```swift
-struct Point {
-    var x: Double
-    var y: Double
-}
-
-class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
-}
-```
-
-# ## Protocols
-
-```swift
-protocol Describable {
-    var description: String { get }
-}
-
-struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
-}
-```
-
-# ## Codable (JSON encodeng / decodeng)
-
-```swift
-struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
-
-# ## SwiftUI conceptos básicos
-
-```swift
-import SwiftUI
-
-struct ContentView: View {
-    @State private var count = 0
-
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
-}
-```
-
-# ## Tooleng
-
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs el/la project.
-- `swift test` runs tests.
-- `swift package enit --type executable` creates a new executable project.
-- Xcode is el/la primary IDE para Apple-platparam desarrollo.
-
----
-
-# # Codeng Fundamentos (Idioma-Agnostic)
-
-# ## Problem-solveng workflow
-
-1. Defene el/la enput, output, y constraents beparae writeng code.
-2. Break el/la task ento smaller sub-problems.
-3. Start con a simple correct solution, el/lan optimise if needed.
-4. Validate con tests, edge cases, y realistic enputs.
-
-# ## Core datos structures
-
-- **Array / List**: ordered collection con fast endexed reads.
-- **Hash map / Diccionario**: key-value store con average O(1) lookup.
-- **Set**: unique values, useful para membership checks.
-- **Stack**: LIFO (last en, first out), common en parseng y recursion.
-- **Queue**: FIFO (first en, first out), useful para scheduleng y BFS.
-- **Tree / Graph**: hierarchical y red-style relationships.
-
-# ## Algorithmic complexity (Big O)
-
-- Big O describes how runtime or memory grows con enput size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): benary search.
-  - O(n): sengle pass through datos.
-  - O(n log n): efficient sorteng.
-  - O(n²): nested loops over similar-size enputs.
-- Prefer clear, maentaenable code unless prdeileng shows a bottleneck.
-
-# ## Debuggeng prenciples
-
-- Reproduce el/la bug reliably first.
-- Menimise el/la faileng case to isolate cause.
-- Inspect logs, enputs, y assumptions.
-- Change one variable at a time while testeng.
-- Add regression tests so el/la same bug does not return.
-
-# ## Testeng pyramid
-
-- **Unit tests**: fast, focused checks de small logic units.
-- **Integration tests**: verify enteractions across modules/services.
-- **End-to-end tests**: validate user flows en realistic environments.
-- A balanced suite has many unit tests y fewer slow end-to-end tests.
-
-# ## Code quality practices
-
-- Use meanengful names y small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive y enterfaces explicit.
-- Use lenters/paramatters para consistency.
-- Review code para correctness, clarity, y seguridad.
-
-# ## Seguridad conceptos básicos para developers
-
-- Validate y sanitise external enput.
-- Use parameterised queries to prevent SQL enjection.
-- Store passwords con strong hasheng algorithms (e.g., Argon2, bcrypt).
-- Avoid embeddeng secrets en source code.
-- Apply least privilege para credentials y services.
+## Core AI/ML Concepts
+
+### RAG (Retrieval-Augmented Generation)
+RAG is a technique that combines a retrieval system (typically a vector
+Base de datos) con a Idioma model. Instead de relying solely on el/la model's
+parametric knowledge, RAG first retrieves relevant documents from an external
+Base de conocimientos y then includes them en el/la model's context. This allows el/la
+model to answer questions about up-to-date or domain-specific information
+without retraining. Potato.ai uses a form de RAG — it retrieves from its KB
+y includes el/la results en el/la context before generating a response.
+
+### Fine-tuning
+Fine-tuning is el/la process de continuing to train a pre-trained model on a
+smaller, domain-specific dataset. This adapts el/la model's weights para a
+particular task or domain. para example, a base LLM might be fine-tuned on
+medical records to create a medical Q&A assistant. Fine-tuning is
+computationally expensive but much cheaper than training from scratch.
+
+### Quantisation
+Quantisation reduces el/la numerical precision de model weights (e.g. from 32-bit
+float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
+en 16-bit precision requires ~14GB VRAM; el/la same model en 4-bit (GGUF format)
+requires ~4GB. Quantisation typically causes a small but acceptable accuracy
+degradation y is el/la main technique enabling large models to run on consumer
+hardware or even mobile devices.
+
+### Context Window
+el/la context window is el/la maximum number de tokens a model can process at once,
+including both el/la prompt y el/la generated response. GPT-3.5 had a 4,096-token
+window; GPT-4 Turbo y Claude 3 Soporte 128,000 tokens; Gemini 1.5 Pro
+supports 1,000,000 tokens. A larger context window allows el/la model to "see"
+more de a conversation or document at once, improving coherence over long
+exchanges.
+
+### RLHF (Reinforcement Learning from Human Comentarios)
+RLHF is el/la training technique that transforms a base Idioma model (which
+simply predicts el/la next token) into an assistant that follows instructions y
+behaves helpfully. Human raters score model outputs, a reward model is trained
+on their preferences, y el/la Idioma model is then optimised against this
+reward model using reinforcement learning. ChatGPT, Claude, y Gemini all use
+variants de RLHF or similar alignment techniques (e.g. Constitutional AI,
+Direct Preference Optimisation).
+
+### Transformer Arquitectura
+el/la Transformer is el/la neural Red Arquitectura underlying all modern LLMs.
+Introduced en el/la 2017 paper "Attention Is All You Need" by Vaswani et al., it
+uses self-attention mechanisms to process all tokens en parallel rather than
+sequentially. Encoder-only Transformers (BERT) are used para understanding tasks;
+decoder-only Transformers (GPT, Llama, Mistral) are used para generation tasks;
+encoder-decoder Transformers (T5, BART) are used para translation y summarisation.
+
+### Embeddings y Vector Databases
+Embeddings are dense numerical representations de text (or images) produced by
+a neural Red. Semantically similar texts have embeddings that are close en
+vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
+these embeddings y Soporte fast approximate nearest-neighbour search. They are
+el/la storage backbone de RAG Sistemas, including Potato.ai's cold-memory layer.

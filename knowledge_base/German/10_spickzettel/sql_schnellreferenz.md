@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# SQL Quick Referenz Leitfaden
+# SQL Schnellreferenz Leitfaden
 
-Essential SQL communds für datenbase operations.
+Essential SQL Befehle für Datenbank operations.
 
 ---
 
-# # Basic Query Structure
+## Basic Query Structure
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-# # Daten Retrieval (SELECT)
+## Daten Retrieval (SELECT)
 
-# ## Basic Selection
+### Basic Selection
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-# ## Filtering (WHERE)
+### Filtering (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-# ## Sorting und Limiting
+### Sorting und Limiting
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-# # Aggregation Functions
+## Aggregation Functions
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-# # Joins
+## Joins
 
-# ## Inner Join
+### Inner Join
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Left/Right Join
+### Left/Right Join
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Full Outer Join
+### Full Outer Join
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-# ## Cross Join
+### Cross Join
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-# ## Self Join
+### Self Join
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-# # Subqueries
+## Subqueries
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-# # Set Operations
+## Set Operations
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,9 +210,9 @@ SELECT user_id FROM banned_users;
 
 ---
 
-# # Daten Modification
+## Daten Modification
 
-# ## INSERT
+### INSERT
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -229,7 +229,7 @@ INSERT INTO archived_users
 SELECT * FROM users WHERE last_login < '2023-01-01';
 ```
 
-# ## UPDATE
+### UPDATE
 ```sql
 -- Update single row
 UPDATE users 
@@ -248,7 +248,7 @@ SET o.status = 'processed'
 WHERE u.country = 'USA';
 ```
 
-# ## DELETE
+### DELETE
 ```sql
 -- Delete specific rows
 DELETE FROM users WHERE id = 1;
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-# # Table Operations
+## Table Operations
 
-# ## CREATE Table
+### CREATE Table
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-# ## ALTER Table
+### ALTER Table
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-# ## DROP Table
+### DROP Table
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-# # Constraints
+## Constraints
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-# # Indexes
+## Indexes
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-# # Views
+## Views
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-# # Common Table Expressions (CTEs)
+## Common Table Expressions (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-# # Window Functions
+## Window Functions
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-# # Daten Types
+## Daten Types
 
-# ## Numeric
+### Numeric
 - `INT` - Integer
 - `BIGINT` - Large integer
 - `DECIMAL(p,s)` - Exact decimal (precision, scale)
 - `FLOAT` - Approximate floating point
 - `DOUBLE` - Double precision float
 
-# ## String
+### String
 - `CHAR(n)` - Fixed length string
 - `VARCHAR(n)` - Variable length string
 - `TEXT` - Large text
 - `ENUM` - Enumerated values
 
-# ## Date/Time
+### Date/Time
 - `DATE` - Date (YYYY-MM-DD)
 - `TIME` - Time (HH:MM:SS)
 - `DATETIME` - Date und time
 - `TIMESTAMP` - Unix timestamp
 - `YEAR` - Year value
 
-# ## Boolean
+### Boolean
 - `BOOLEAN` or `BOOL` - True/False
 
-# ## Binary
+### Binary
 - `BLOB` - Binary large object
 - `BINARY` - Fixed binary
 - `VARBINARY` - Variable binary
 
 ---
 
-# # Useful Functions
+## Useful Functions
 
-# ## String Functions
+### String Functions
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-# ## Date Functions
+### Date Functions
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-# ## Numeric Functions
+### Numeric Functions
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-# ## Conditional Functions
+### Conditional Functions
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,13 +556,13 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-# # Perfürmance Tips
+## Leistung Tips
 
 ✅ **Do:**
 - Use indexes on frequently queried columns
 - Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query perfürmance
-- Normalize daten appropriately
+- Use `EXPLAIN` to analyze query Leistung
+- Normalize Daten appropriately
 - Use prepared statements to prevent SQL injection
 
 ❌ **Don't:**
@@ -570,11 +570,11 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 - Create too many indexes (slows writes)
 - Use `SELECT DISTINCT` unnecessarily
 - Ignore query execution plans
-- Store computed values when der/die/dasy can be calculated
+- Store computed values when they can be calculated
 
 ---
 
-# # Sicherheit Best Practices
+## Sicherheit Best Practices
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Last updated: June 2025 | SQL Stundard (MySQL/PostgreSQL compatible)*
+*Zuletzt aktualisiert: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

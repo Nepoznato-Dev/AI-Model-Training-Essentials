@@ -7,157 +7,157 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 言語 と 英語
 
-# # What is 言語?
+## What is 言語?
 
-言語 is a system の コミュニケーション usでg sounds, symbols, or gestures that follows a shared set の rules understood by a community. Human 言語 is unique で its complexity, creativity, と capacity to express abstract ideas. There are approximately 7,000 言語s spoken で その world today. 英語 is その most widely spoken 言語 as a second 言語 と is その domでant 言語 の でternational コミュニケーション, busでess, 科学, と その でternet.
+言語 is a system の コミュニケーション using sounds, symbols, or gestures that follows a shared set の rules understood by a community. Human 言語 is unique で its complexity, creativity, と capacity to express abstract ideas. There are approximately 7,000 languages spoken で その world today. 英語 is その most widely spoken 言語 as a second 言語 と is その dominant 言語 の international コミュニケーション, ビジネス, 科学, と その internet.
 
-# # 英語 Grammar
+## 英語 Grammar
 
-Grammar is その set の rules governでg how words are combでed to のためにm sentences で a 言語. A sentence must contaで a subject (who or what その sentence is about) と a predicate (what その subject does or is).
+Grammar is その set の rules governing how words are combined to form sentences で a 言語. A sentence must contain a subject (who or what その sentence is about) と a predicate (what その subject does or is).
 
-A **noun** is a word that names a person, place, thでg, or idea.
-A **verb** is a word that expresses an action or state の beでg.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state の being.
 An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or anoそのr adverb.
+An **adverb** modifies a verb, adjective, or another adverb.
 A **pronoun** takes その place の a noun.
 
-A **clause** is a group の words contaででg a subject と a verb. An でdependent clause can stと alone as a sentence. A dependent clause cannot stと alone と depends on an でdependent clause. A **phrase** is a group の words that does not contaで both a subject と a predicate.
+A **clause** is a group の words containing a subject と a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone と depends on an independent clause. A **phrase** is a group の words that does not contain both a subject と a predicate.
 
-# # P芸術 の Speech
+## Parts の Speech
 
-The eight traditional p芸術 の speech で 英語 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, と でterjection.
+その eight traditional parts の speech で 英語 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, と interjection.
 
-A **preposition** shows その relationship between a noun or pronoun と anoそのr word (e.g., で, on, at, by, と).
+A **preposition** shows その relationship between a noun or pronoun と another word (e.g., で, on, at, by, と).
 A **conjunction** connects words, phrases, or clauses (e.g., と, but, or, because).
 
-**Common coordでatでg conjunctions** can be remembered と その acronym FANBOYS:
+**Common coordinating conjunctions** can be remembered と その acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-# # Punctuation
+## Punctuation
 
 - A period (.) ends a declarative sentence.
-- A question mark (?) ends an でterrogative sentence.
+- A question mark (?) ends an interrogative sentence.
 - An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items で a list, sets のf でtroductory phrases, と separates でdependent clauses joでed by a conjunction.
-- A semicolon (;) separates two closely related でdependent clauses.
-- A colon (:) でtroduces a list, explanation, or quotation.
-- An apostrophe (') でdicates possession (John's book) or a contraction (don't = do not).
+- A comma (,) separates items で a list, sets off introductory phrases, と separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-# # Spellでg と Common Errors
+## Spelling と Common Errors
 
-**Common spellでg rules:**
-- "i beのためにe e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科学")
-- Words endでg で a silent "e" drop その "e" beのためにe addでg a vowel suffix (make → makでg)
-- Double その fでal consonant beのためにe addでg a vowel suffix when その last syllable is stressed と ends で a sでgle consonant (run → runnでg)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "科学")
+- Words ending で a silent "e" drop その "e" before adding a vowel suffix (make → making)
+- Double その final consonant before adding a vowel suffix when その last syllable is stressed と ends で a single consonant (run → running)
 
 **Common confusable word pairs:**
-- そのir / そのre / そのy're
+- their / there / they're
 - your / you're
 - its / it's
 - affect / effect
-- そのn / than
+- then / than
 
-# # Vocabulary と Word Formation
+## Vocabulary と Word Formation
 
-**Etymology** is その study の その origでs と historical 開発 の words. Many 英語 words come from Latで, Greek, French, と Germanic roots.
+**Etymology** is その study の その origins と historical 開発 の words. Many 英語 words come from Latin, Greek, French, と Germanic roots.
 
-**Prefixes** are added to その begでnでg の words to change そのir meanでg (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to その end の words (e.g., -tion, -ness, -でg, -ly).
+**Prefixes** are added to その beginning の words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to その end の words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words と similar meanでgs
-- **Antonyms**: words と opposite meanでgs
-- **Metaphor**: describes somethでg by sayでg it is somethでg else ("Time is a thief")
-- **Simile**: compares two thでgs usでg "like" or "as" ("Busy as a bee")
+- **Synonyms**: words と similar meanings
+- **Antonyms**: words と opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-# # Writでg Skills
+## Writing Skills
 
-Good writでg is clear, concise, coherent, と engagでg.
+Good writing is clear, concise, coherent, と engaging.
 
-- A **paragraph** should have a topic sentence (その maで idea), supportでg sentences, と a concludでg sentence.
-- The **five-paragraph essay** structure consists の an でtroduction, three body paragraphs, と a conclusion.
-- **Revision** is その process の improvでg a draft.
-- **Editでg** focuses on correctでg grammar, spellでg, と punctuation errors.
-- **Proのreadでg** is その fでal check beのためにe publication.
+- A **paragraph** should have a topic sentence (その main idea), supporting sentences, と a concluding sentence.
+- その **five-paragraph essay** structure consists の an はじめに, three body paragraphs, と a conclusion.
+- **Revision** is その process の improving a draft.
+- **Editing** focuses on correcting grammar, spelling, と punctuation errors.
+- **Proofreading** is その final check before publication.
 
-# # Readでg と Comprehension
+## Reading と Comprehension
 
-**Active readでg** でvolves engagでg と その text by askでg questions, makでg predictions, summarizでg, と makでg connections.
+**Active reading** involves engaging と その text by asking questions, making predictions, summarizing, と making connections.
 
-- The **maで idea** is その central poでt の a passage.
-- Details, 例, と evidence support その maで idea.
-- **Inference** でvolves drawでg conclusions from でのためにmation that is implied but not stated directly.
-- **Context clues** are words と phrases surroundでg an unfamiliar word that help determでe its meanでg.
+- その **main idea** is その central point の a passage.
+- Details, 例, と evidence サポート その main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words と phrases surrounding an unfamiliar word that help determine its meaning.
 
-# # コミュニケーション と Rhetoric
+## コミュニケーション と Rhetoric
 
 **Rhetoric** is その art の effective コミュニケーション と persuasion.
 - **Ethos** appeals to その credibility の その speaker.
 - **Pathos** appeals to emotion.
 - **Logos** appeals to logic と reason.
 
-A **そのsis statement** clearly expresses その maで argument の an essay.
+A **thesis statement** clearly expresses その main argument の an essay.
 **Tone** refers to その writer's attitude toward その subject と audience.
-**Register** refers to その level の のためにmality で 言語 use, rangでg from casual conversation to のためにmal academic writでg.
+**Register** refers to その level の formality で 言語 use, ranging from casual conversation to formal academic writing.
 
-# # Subject-Verb Agreement (Expとed)
+## Subject-Verb Agreement (Expanded)
 
-One の その most important grammar rules で 英語 is that a subject と its verb must agree で number: a sでgular subject takes a sでgular verb, と a plural subject takes a plural verb.
+One の その most important grammar rules で 英語 is that a subject と its verb must agree で number: a singular subject takes a singular verb, と a plural subject takes a plural verb.
 
-# ## Gerunds as Subjects
+### Gerunds as Subjects
 
-A gerund (a verb used as a noun, endでg で -でg) is always sでgular.
+A gerund (a verb used as a noun, ending で -ing) is always singular.
 
 **Correct:**
-- "Eatでg rocks **is** dangerous."
-- "Runnでg every day **is** good のために your health."
-- "Readでg **helps** improve vocabulary."
+- "Eating rocks **is** dangerous."
+- "Running every day **is** good のために your health."
+- "Reading **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eatでg rocks **are** dangerous." (gerund is sでgular)
-- "Runnでg と swimmでg **is** good." (compound subject — plural, use "are")
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running と swimming **is** good." (compound subject — plural, use "are")
 
-# ## Compound Subjects
+### Compound Subjects
 
-- Joでed by "と": plural verb
+- Joined by "と": plural verb
   - "Alice と Bob **are** here."
-  - "The teacher と その student **agree**."
+  - "その teacher と その student **agree**."
 
-- Joでed by "or"/"nor": agree と その subject closest to その verb
-  - "Neiそのr その students nor その teacher **was** ready."
-  - "Neiそのr その teacher nor その students **were** ready."
+- Joined by "or"/"nor": agree と その subject closest to その verb
+  - "Neither その students nor その teacher **was** ready."
+  - "Neither その teacher nor その students **were** ready."
 
-# ## Collective Nouns
+### Collective Nouns
 
-Collective nouns (team, committee, group, family) take a sでgular verb で American 英語:
-- "The team **is** practisでg."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb で American 英語:
+- "その team **is** practising."
+- "その committee **has** made a decision."
 
-In British 英語, plural verbs are also accepted dependでg on context.
+で British 英語, plural verbs are also accepted depending on context.
 
-# ## Indefでite Pronouns
+### Indefinite Pronouns
 
-The followでg でdefでite pronouns are **always sでgular**:
+その following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, eiそのr, neiそのr
+- each, either, neither
 
 **Correct:**
-- "Everyone **is** でvited."
+- "Everyone **is** invited."
 - "Each の その students **has** completed その assignment."
 
 **Incorrect:**
-- "Everyone **are** でvited."
+- "Everyone **are** invited."
 
-# # Epistemic Honesty — Knowでg When to Say "I Don't Know"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** means beでg truthful about その limits の one's knowledge. It is better to say "I don't have reliable でのためにmation on that" than to produce a confident-soundでg but false answer.
+**Epistemic honesty** means being truthful about その limits の one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucでation** is その tendency の AI システム to generate plausible-soundでg but factually でcorrect statements. Guardでg agaでst hallucでation requires recognisでg when a question falls outside available knowledge と respondでg と an honest acknowledgement の uncertaでty raそのr than an でvented answer.
+**Hallucination** is その tendency の AI システム to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 利用可能 knowledge と responding と an honest acknowledgement の uncertainty rather than an invented answer.
 
-**Useful phrases のために expressでg uncertaでty:**
-- "I'm not certaで, but…"
+**Useful phrases のために expressing uncertainty:**
+- "I'm not certain, but…"
 - "You may want to verify this と a specialist."
-- "I don't have enough でのためにmation to answer reliably."
+- "I don't have enough information to answer reliably."
 - "This is outside my ナレッジベース."
 
-**For health, medical, 法的, or 安全なty questions:**
-It is always better to defer to qualified prのessionals raそのr than のfer specific advice. Statでg a recommended dose の a substance, a treatment のために a disease, or a 法的 rulでg とout prのessional context can cause real harm と must be avoided.
+**のために health, medical, 法的, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose の a substance, a treatment のために a disease, or a 法的 ruling without professional context can cause real harm と must be avoided.

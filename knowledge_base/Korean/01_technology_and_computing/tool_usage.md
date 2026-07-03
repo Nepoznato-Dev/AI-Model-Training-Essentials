@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Tool Usage
 
-# # Git — Version Control
+## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy 의 그 repository 역사 on 그ir local mach에서e.
+Git is a distributed version control system. Every developer has a full copy 의 그 repository 역사 on their local machine.
 
-# ## Core workflow
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branch에서g
+### Branching
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Merg에서g 와 rebas에서g
+### Merging 와 rebasing
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-# ## Pull request (PR) workflow
+### Pull request (PR) workflow
 
-1. Create a feature branch from `ma에서`.
+1. Create a feature branch from `main`.
 2. Make commits on 그 feature branch.
-3. Push 그 branch: `git push orig에서 feature/new-th에서g`.
+3. Push 그 branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback 와 함께 additional commits.
+5. Address code review 피드백 와 함께 additional commits.
 6. Merge 그 PR once approved.
 
-# ## Undo에서g changes
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,9 +77,9 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-# # Package Managers
+## Package Managers
 
-# ## pip (Python)
+### pip (Python)
 
 ```bash
 pip install requests            # install a package
@@ -90,9 +90,9 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work 에서side a virtual environment to keep project dependencies isolated.
+Always work inside a virtual environment to keep project dependencies isolated.
 
-# ## npm (Node.js / JavaScript)
+### npm (Node.js / JavaScript)
 
 ```bash
 npm init -y                     # create package.json
@@ -107,7 +107,7 @@ npx create-react-app my-app     # run a package without installing globally
 
 `package-lock.json` records exact versions; commit it to source control.
 
-# ## Cargo (Rust)
+### Cargo (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-# ## Go modules (Go)
+### Go modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -132,7 +132,7 @@ go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu L에서ux)
+### apt (Debian / Ubuntu Linux)
 
 ```bash
 sudo apt update                 # refresh package lists
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-# # Comm와-L에서e 기본
+## Command-Line 기본
 
-# ## Navigation
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text process에서g
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-# ## Pipes 와 redirection
+### Pipes 와 redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-# ## 네트워크 와 file transfer
+### 네트워크 와 file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-# ## Permissions
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-# ## Process 관리
+### Process 관리
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-# # Editors 와 IDEs
+## Editors 와 IDEs
 
-# ## VS Code
+### VS Code
 
-VS Code is a lightweight, cross-plat위한m code editor 와 함께 a rich extension ecosystem.
+VS Code is a lightweight, cross-platform code editor 와 함께 a rich extension ecosystem.
 
-- Open a folder: `File > Open Folder` or `code .` 에서 그 term에서al.
-- Comm와 palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated term에서al: `Ctrl+`` (backtick)`.
+- Open a folder: `File > Open Folder` or `code .` 에서 그 terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to def에서ition: `F12`.
+- Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: 에서stall 언어 support (Python, Rust, Go, etc.), l에서ters, 와 위한matters from 그 Extensions panel (`Ctrl+Shift+X`).
-- `sett에서gs.json` (user or workspace) controls editor behaviour.
+- Extensions: install 언어 지원 (Python, Rust, Go, etc.), linters, 와 formatters from 그 Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures 그 debugger.
 
-# ## JetBra에서s IDEs (IntelliJ IDEA, PyCharm, 웹Storm, CLion, GoL와)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion 와 refactor에서g are core features.
+- Smart code completion 와 refactoring are core features.
 - Run/debug configurations let you launch 와 debug programs 와 함께 one click.
-- Built-에서 Git support 에서 그 VCS menu.
+- Built-에서 Git 지원 에서 그 VCS menu.
 - `Shift+Shift` opens 그 Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) re위한mats code.
-- Plug에서s extend 언어 support 와 add tools.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend 언어 지원 와 add tools.
 
-# ## Term에서al tips
+### Terminal tips
 
-- Use tab completion to f에서ish file names 와 comm와s quickly.
-- Press `Ctrl+R` to search comm와 역사 에서teractively.
+- Use tab completion to finish file names 와 명령 quickly.
+- Press `Ctrl+R` to search command 역사 interactively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <comm와>` shows 그 manual page 위한 any built-에서 comm와.
+- `man <command>` shows 그 manual page 위한 any built-에서 command.
 
 ---
 
-# # Docker
+## Docker
 
-Docker packages applications 와 그ir dependencies 에서to portable conta에서ers.
+Docker packages applications 와 their dependencies into portable containers.
 
-# ## Core concepts
+### Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
-- **Conta에서er**: a runn에서g 에서stance 의 an image.
+- **Container**: a running instance 의 an image.
 - **Registry**: a storage 와 distribution service 위한 images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a conta에서er.
+- **Volume**: persistent storage that outlives a container.
 
-# ## Common comm와s
+### Common 명령
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-# ## Dockerfile example
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -297,9 +297,9 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-# ## Docker Compose
+### Docker Compose
 
-Docker Compose manages multi-conta에서er applications 와 함께 a `docker-compose.yml` file.
+Docker Compose manages multi-container applications 와 함께 a `docker-compose.yml` file.
 
 ```yaml
 version: "3.9"

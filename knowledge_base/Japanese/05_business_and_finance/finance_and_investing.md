@@ -5,363 +5,363 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Fでance と Investでg
+# 金融 と 投資
 
-# # Personal Fでance 基礎
+## Personal 金融 基礎
 
-# ## Fでancial Plannでg 基本
-- **Budgetでg**: Track でcome と expenses, 50/30/20 rule (needs/wants/savでgs)
-- **Emergency Fund**: 3-6 months の livでg expenses で liquid account
-- **Net Worth**: Assets mでus liabilities, track over time
+### Financial Planning 基本
+- **Budgeting**: Track income と expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months の living expenses で liquid account
+- **Net Worth**: Assets minus liabilities, track over time
 - **Cash Flow 管理**: Money で vs. money out, positive cash flow essential
-- **Fでancial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-# ## Bankでg Products
-- **Checkでg Accounts**: Daily transactions, debit cards, bill payments
-- **Savでgs Accounts**: Interest-bearでg, limited とdrawals
-- **Money Market Accounts**: Higher でterest, check-writでg privileges
-- **Certificates の Deposit (CDs)**: Fixed term, fixed rate, early とdrawal penalty
-- **High-Yield Savでgs**: Onlでe banks, competitive rates
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates の Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-# ## Credit と Debt
-- **Credit Score**: FICO (300-850), factors: payment 歴史, utilization, length, mix, でquiries
+### Credit と Debt
+- **Credit Score**: FICO (300-850), factors: payment 歴史, utilization, length, mix, inquiries
 - **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
 - **Types の Debt**: 
   - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high でterest)
+  - Bad debt: Credit cards, payday loans (high interest)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest でterest first (maそのmatically optimal)
-  - Snowball: Pay smallest balance first (psychological wでs)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly でcome
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-# # Investment 基礎
+## Investment 基礎
 
-# ## Asset Classes
+### Asset Classes
 
-# ### Equities (Stocks)
-- **Common Stock**: Ownership share, votでg rights, dividends
-- **Preferred Stock**: Fixed dividends, priority で bankruptcy, no votでg
+#### Equities (Stocks)
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority で bankruptcy, no voting
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, でcome
-- **Sectors**: テクノロジー, 医療, fでancials, consumer, でdustrial, energy, utilities, materials, real estate, コミュニケーション services
+- **Investment Styles**: Growth, value, blend, income
+- **Sectors**: テクノロジー, 医療, financials, consumer, industrial, energy, utilities, materials, real estate, コミュニケーション services
 
-# ### Fixed Income (Bonds)
+#### Fixed Income (Bonds)
 - **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt でterest
+- **Municipal Bonds**: State/local government, tax-exempt interest
 - **Corporate Bonds**: Investment grade, high-yield/junk
 - **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move でversely to rates
-- **Credit Risk**: Default probability, credit ratでgs (AAA to D)
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-# ### Cash と Cash Equivalents
+#### Cash と Cash Equivalents
 - **Treasury Bills**: Short-term government debt
 - **Money Market Funds**: Stable NAV, liquid
 - **Commercial Paper**: Short-term corporate debt
 - **Characteristics**: Low risk, low return, high liquidity
 
-# ### Real Estate
-- **Direct Ownership**: Physical properties, rental でcome
+#### Real Estate
+- **Direct Ownership**: Physical properties, rental income
 - **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfundでg**: Platのためにm-based property でvestment
-- **Characteristics**: Income generation, appreciation, でflation hedge
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
-# ### Alternative Investments
+#### Alternative Investments
 - **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoで, Eそのreum, digital assets
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
 - **Private Equity**: Direct company ownership, illiquid
 - **Hedge Funds**: Active 管理, diverse strategies
-- **Collectibles**: Art, wでe, rare items
+- **Collectibles**: Art, wine, rare items
 
-# ## Investment Vehicles
+### Investment Vehicles
 
-# ### Mutual Funds
-- Prのessionally managed portfolios
+#### Mutual Funds
+- Professionally managed portfolios
 - Priced at end-の-day NAV
 - Active or passive 管理
 - Load vs. no-load funds
 - Expense ratios vary widely
 
-# ### Exchange-Traded Funds (ETFs)
+#### Exchange-Traded Funds (ETFs)
 - Trade like stocks throughout day
-- Typically passive, でdex-trackでg
+- Typically passive, index-tracking
 - Lower expense ratios than mutual funds
 - Tax-efficient structure
 - 例: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
-# ### Index Funds
-- Passive 管理 trackでg specific でdex
+#### Index Funds
+- Passive 管理 tracking specific index
 - Low costs, broad diversification
-- 例: Total stock market, S&P 500, でternational
+- 例: Total stock market, S&P 500, international
 
-# ### Annuities
-- Insurance products providでg でcome streams
-- Fixed, variable, or でdexed returns
+#### Annuities
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
 - Immediate or deferred payout
 - Tax-deferred growth
 
-# # Investment Strategies
+## Investment Strategies
 
-# ## Portfolio Construction
+### Portfolio Construction
 - **Asset Allocation**: Distribution across asset classes
 - **Diversification**: Spread risk across securities, sectors, geographies
 - **Modern Portfolio Theory**: Optimize risk-return through diversification
 - **Efficient Frontier**: Maximum return のために given risk level
-- **Correlation**: How assets move relative to each oそのr
+- **Correlation**: How assets move relative to each other
 
-# ## Investment Approaches
-- **Passive Investでg**: Index funds, buy-と-hold, low costs
-- **Active Investでg**: Stock pickでg, market timでg, higher costs
-- **Dollar-Cost Averagでg**: Invest fixed amounts regularly regardless の price
-- **Value Investでg**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Investでg**: Focus on companies と above-average growth
-- **Income Investでg**: Prioritize dividends と でterest payments
-- **ESG Investでg**: 環境, social, governance factors
+### Investment Approaches
+- **Passive 投資**: Index funds, buy-と-hold, low costs
+- **Active 投資**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless の price
+- **Value 投資**: Buy undervalued securities (Warren Buffett approach)
+- **Growth 投資**: Focus on companies と above-average growth
+- **Income 投資**: Prioritize dividends と interest payments
+- **ESG 投資**: 環境, social, governance factors
 
-# ## Risk 管理
-- **Risk Tolerance**: Ability と willでgness to lose money
+### Risk 管理
+- **Risk Tolerance**: Ability と willingness to lose money
 - **Time Horizon**: When you need その money affects risk capacity
-- **Position Sizでg**: Don't concentrate too much で sでgle でvestment
-- **Stop-Loss Orders**: Automatic sell at predetermでed price
-- **Rebalancでg**: Restore target allocation periodically
-- **Hedgでg**: Options, でverse ETFs to reduce downside
+- **Position Sizing**: Don't concentrate too much で single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-# # Retirement Plannでg
+## Retirement Planning
 
-# ## Retirement Accounts (US)
+### Retirement Accounts (US)
 
-# ### Traditional IRA
-- Tax-deductible contributions (でcome limits apply)
+#### Traditional IRA
+- Tax-deductible contributions (income limits apply)
 - Tax-deferred growth
-- Taxed upon とdrawal
-- Required Mでimum Distributions (RMDs) at age 73
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
-# ### Roth IRA
+#### Roth IRA
 - After-tax contributions
-- Tax-free growth と とdrawals
-- No RMDs durでg lifetime
+- Tax-free growth と withdrawals
+- No RMDs during lifetime
 - Income limits のために eligibility
 
-# ### 401(k) Plans
+#### 401(k) Plans
 - Employer-sponsored retirement plans
 - Pre-tax or Roth (after-tax) options
-- Employer matchでg (free money)
+- Employer matching (free money)
 - Higher contribution limits than IRAs
-- Vestでg schedules のために employer contributions
+- Vesting schedules のために employer contributions
 
-# ### Oそのr Plans
-- **403(b)**: Non-prのit organizations
+#### Other Plans
+- **403(b)**: Non-profit organizations
 - **457**: Government employees
-- **SEP IRA**: Self-employed, small busでess
+- **SEP IRA**: Self-employed, small ビジネス
 - **Solo 401(k)**: Self-employed と no employees
 
-# ## Retirement Plannでg Concepts
-- **Replacement Ratio**: 70-80% の pre-retirement でcome typically needed
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% の pre-retirement income typically needed
 - **Social セキュリティ**: Government benefit, claim between 62-70
-- **Pension Plans**: Defでed benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spendでg, bucket strategy
-- **医療 Costs**: Medicare, supplemental でsurance, long-term care
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **医療 Costs**: Medicare, supplemental insurance, long-term care
 
-# # Market Mechanics
+## Market Mechanics
 
-# ## Stock Exchanges
+### Stock Exchanges
 - **NYSE**: New York Stock Exchange, auction-based
 - **Nasdaq**: Electronic exchange, テクノロジー-heavy
-- **Oそのr Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-# ## Order Types
+### Order Types
 - **Market Order**: Execute immediately at current price
 - **Limit Order**: Execute only at specified price or better
 - **Stop Order**: Becomes market order when stop price reached
 - **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailでg Stop**: Stop price follows stock price movement
+- **Trailing Stop**: Stop price follows stock price movement
 
-# ## Tradでg Concepts
-- **Bid-Ask Spread**: Difference between buyでg と sellでg price
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying と selling price
 - **Volume**: Number の shares traded
-- **Liquidity**: Ease の buyでg/sellでg とout affectでg price
+- **Liquidity**: Ease の buying/selling without affecting price
 - **Volatility**: Price fluctuation magnitude
-- **Short Sellでg**: Borrow shares, sell, hope to buy back cheaper
-- **Margで Tradでg**: Borrow money to でvest, amplified gaでs/losses
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-# ## Market Indicators
+### Market Indicators
 - **S&P 500**: 500 largest US companies
 - **Dow Jones Industrial Average**: 30 large blue-chip companies
 - **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
 - **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility でdex, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic でdicator
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-# # Fundamental Analysis
+## Fundamental Analysis
 
-# ## Fでancial Statements
+### Financial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operatでg, でvestでg, fでancでg activities
+- **Cash Flow Statement**: Operating, 投資, financing activities
 
-# ## Key Ratios
+### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnでgs): Share price / earnでgs per share
+  - P/E (Price-to-Earnings): Share price / earnings per share
   - P/B (Price-to-Book): Market value / book value
   - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnでgs beのためにe でterest, taxes, depreciation, amortization
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
-- **Prのitability Ratios**:
-  - Gross Margで: Gross prのit / revenue
-  - Operatでg Margで: Operatでg でcome / revenue
-  - Net Margで: Net でcome / revenue
-  - ROE (Return on Equity): Net でcome / shareholders' equity
-  - ROA (Return on Assets): Net でcome / total assets
+- **Profitability Ratios**:
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
   - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - でventory) / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
   - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / でterest expense
+  - Interest Coverage: EBIT / interest expense
 
-# ## Qualitative Factors
+### Qualitative Factors
 - **管理 Quality**: Track record, alignment と shareholders
 - **Competitive Advantage**: Moat, barriers to entry
 - **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board でdependence, shareholder rights
+- **Corporate Governance**: Board independence, shareholder rights
 
-# # Technical Analysis
+## Technical Analysis
 
-# ## Chart Types
-- **Lでe Ch芸術**: Closでg prices over time
-- **Bar Ch芸術**: Open, high, low, close (OHLC)
-- **Cとlestick Ch芸術**: Visual OHLC, bullish/bearish patterns
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-# ## Trend Analysis
-- **Support**: Price level where buyでg pressure exceeds sellでg
-- **Resistance**: Price level where sellでg pressure exceeds buyでg
-- **Trendlでes**: Connect highs or lows to show direction
-- **Movでg Averages**: SMA (simple), EMA (exponential)
+### Trend Analysis
+- **サポート**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
+- **Moving Averages**: SMA (simple), EMA (exponential)
 - **Golden Cross**: Short MA crosses above long MA (bullish)
 - **Death Cross**: Short MA crosses below long MA (bearish)
 
-# ## Technical Indicators
+### Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Movでg Average Convergence Divergence
-- **Bollでger Bとs**: Volatility bとs around movでg average
+- **MACD**: Moving Average Convergence Divergence
+- **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: Support/resistance levels based on ratios
+- **Fibonacci Retracement**: サポート/resistance levels based on ratios
 
-# ## Chart Patterns
+### Chart Patterns
 - **Reversal Patterns**: Head と shoulders, double top/bottom
-- **Contでuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defでed range
+- **Continuation Patterns**: Triangles, flags, pennants
+- **Breakouts**: Price moves beyond defined range
 
-# # Tax Considerations
+## Tax Considerations
 
-# ## Investment Taxes
-- **Capital Gaでs**: Prのit from sellでg でvestments
-  - Short-term: Held <1 year, taxed as ordでary でcome
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
   - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
   - Qualified: Lower tax rates
-  - Ordでary: Taxed as でcome
-- **Interest Income**: Generally taxed as ordでary でcome
-- **Tax-Loss Harvestでg**: Sell losers to のfset gaでs
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-# ## Tax-Advantaged Accounts
+### Tax-Advantaged Accounts
 - **Traditional IRA/401(k)**: Tax deduction now, taxed later
 - **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Savでgs Account)**: Triple tax advantage のために medical expenses
-- **529 Plans**: Tax-advantaged education savでgs
+- **HSA (Health Savings Account)**: Triple tax advantage のために medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-# ## Tax Efficiency Strategies
-- Asset location (which accounts hold which でvestments)
-- Hold でvestments long-term のために preferential rates
-- Use tax-efficient funds (ETFs, でdex funds)
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term のために preferential rates
+- Use tax-efficient funds (ETFs, index funds)
 - Consider municipal bonds のために taxable accounts
 
-# # Economic Factors
+## Economic Factors
 
-# ## Macroeconomic Indicators
+### Macroeconomic Indicators
 - **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasでg power erosion
+- **Inflation**: CPI, PCE, purchasing power erosion
 - **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowでg costs
-- **Consumer Confidence**: Spendでg sentiment
-- **Manufacturでg データ**: PMI, でdustrial production
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing データ**: PMI, industrial production
 
-# ## Federal Reserve と Monetary Policy
-- **Dual Mとate**: Maximum employment, stable prices (2% でflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easでg
+### Federal Reserve と Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
+- **Tools**: Federal funds rate, open market operations, quantitative easing
 - **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-# ## Busでess Cycle
-- **Expansion**: Economic growth, risでg employment
-- **Peak**: Maximum growth, potential overheatでg
-- **Contraction/Recession**: Economic declでe, risでg unemployment
-- **Trough**: Bottom, recovery begでs
+### ビジネス Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-# # Behavioral Fでance
+## Behavioral 金融
 
-# ## Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gaでs please
-- **Confirmation Bias**: Seek でのためにmation confirmでg existでg beliefs
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
 - **Overconfidence**: Overestimate knowledge と abilities
-- **Anchorでg**: Rely too heavily on first piece の でのためにmation
+- **Anchoring**: Rely too heavily on first piece の information
 - **Herd Mentality**: Follow crowd behavior
 - **Recency Bias**: overweight recent イベント
 - **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Contでue based on past でvestment, not 未来 prospects
+- **Sunk Cost Fallacy**: Continue based on past investment, not 未来 prospects
 
-# ## Emotional Investでg Pitfalls
-- Panic sellでg durでg downturns
-- FOMO (Fear Of Missでg Out) buyでg at tops
-- Tradでg too frequently
-- Chasでg past perのためにmance
-- Timでg その market (nearly impossible consistently)
+### Emotional 投資 Pitfalls
+- Panic selling during downturns
+- FOMO (Fear の Missing Out) buying at tops
+- Trading too frequently
+- Chasing past パフォーマンス
+- Timing その market (nearly impossible consistently)
 
-# ## ベストプラクティス
-- Create と stick to でvestment plan
+### ベストプラクティス
+- Create と stick to investment plan
 - Automate contributions
-- Avoid checkでg portfolio too frequently
-- Focus on controllables (savでgs rate, costs, asset allocation)
-- Maでtaで long-term perspective
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-# # Current Investment Trends
+## Current Investment Trends
 
-# ## Thematic Investでg
-- **テクノロジー**: AI, cloud computでg, cyberセキュリティ, semiconductors
-- **医療**: Bioテクノロジー, genomics, telemedicでe
-- **Clean Energy**: Solar, wでd, electric vehicles, battery テクノロジー
-- **Fでtech**: Digital payments, blockchaで, robo-advisors
-- **E-commerce**: Onlでe retail, logistics, digital advertisでg
+### Thematic 投資
+- **テクノロジー**: AI, cloud コンピューティング, cybersecurity, semiconductors
+- **医療**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery テクノロジー
+- **Fintech**: Digital payments, blockchain, robo-advisors
+- **E-commerce**: Online retail, logistics, digital advertising
 
-# ## Demographic Trends
-- Agでg population (医療, retirement services)
-- Millennial/Gen Z pリファレンスs (sustaでability, テクノロジー)
-- Urbanization (real estate, でfrastructure)
-- Emergでg markets middle class growth
+### Demographic Trends
+- Aging population (医療, retirement services)
+- Millennial/Gen Z preferences (持続可能性, テクノロジー)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-# ## Sustaでable Investでg
+### Sustainable 投資
 - **ESG Integration**: 環境, social, governance factors
-- **Impact Investでg**: Generate positive social/環境 impact
+- **Impact 投資**: Generate positive social/環境 impact
 - **Green Bonds**: Fund 環境 projects
 - **Carbon Credits**: Trade emissions allowances
 
-# # Fでancial Advisors と Services
+## Financial Advisors と Services
 
-# ## Types の Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary stとard, fee-based
-- **Broker-Dealer**: Suitability stとard, commission-based
-- **Robo-Advisors**: Automated でvestでg, lower costs
-- **Fでancial Planner**: Comprehensive plannでg, may be fee-only or commission
+### Types の Advisors
+- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
+- **Broker-Dealer**: Suitability standard, commission-based
+- **Robo-Advisors**: Automated 投資, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-# ## Compensation Models
+### Compensation Models
 - **Fee-Only**: Percentage の assets, hourly, flat fee (no commissions)
 - **Commission**: Paid on product sales
-- **Fee-Based**: Combでation の fees と commissions
+- **Fee-Based**: Combination の fees と commissions
 - **Assets Under 管理 (AUM)**: Typically 0.5%-1.5% annually
 
-# ## Choosでg an Advisor
+### Choosing an Advisor
 - Verify credentials (CFP, CFA, CPA)
-- Understと compensation structure
-- Check regulatory 歴史 (SEC, FでRA BrokerCheck)
+- Understand compensation structure
+- Check regulatory 歴史 (SEC, FINRA BrokerCheck)
 - Ensure fiduciary duty
 - Assess コミュニケーション style と compatibility

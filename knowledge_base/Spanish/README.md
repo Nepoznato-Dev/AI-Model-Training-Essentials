@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Inglés Base de conocimientos
 
-A comprehensive collection de referencia documents covereng tecnología, ciencia, buseness, humanities, y practical skills.
+Una colección completa de Referencia documents covering Tecnología, Ciencia, Negocios, humanities, y practical skills.
 
-**Last Updated:** June 2025  
-**Total Files:** 34+ markdown documents  
-**Organization:** Categorized ento 10 el/lamatic directories
+**Última actualización:** June 2025  
+**Archivos totales:** 34+ markdown documents  
+**Organization:** Categorized into 10 thematic directories
 
 ---
 
-# # 📁 Directory Structure
+## 📁 Estructura de directorios
 
 ```
 knowledge_base/English/
@@ -33,127 +33,127 @@ knowledge_base/English/
 
 ---
 
-# # 📚 Quick Navigation
+## 📚 Navegación rápida
 
-# ## Tecnología & Computeng (`01_tecnología_y_computeng/`)
-| File | Description | Lenes |
+### Tecnología & Informática (`01_technology_and_computing/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [codeng_idiomas.md](01_tecnología_y_computeng/codeng_idiomas.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_desarrollo.md](01_tecnología_y_computeng/web_desarrollo.md) | Frontend, backend, DevOps, seguridad | 350+ |
-| [datosbase_sistemas.md](01_tecnología_y_computeng/datosbase_sistemas.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_arquitectura.md](01_tecnología_y_computeng/cloud_arquitectura.md) | Cloud providers, arquitectura patterns, seguridad | 350+ |
-| [redeng_conceptos básicos.md](01_tecnología_y_computeng/redeng_conceptos básicos.md) | OSI model, TCP/IP, protocols, seguridad | 400+ |
-| [tecnología_glossary.md](01_tecnología_y_computeng/tecnología_glossary.md) | Technical termenology | 250+ |
-| [tool_usage.md](01_tecnología_y_computeng/tool_usage.md) | Desarrollo tools y utilities | 200+ |
+| [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Seguridad | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, Arquitectura patterns, Seguridad | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, Seguridad | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Desarrollo tools y utilities | 200+ |
 
-# ## Artificial Intelligence (`02_artificial_entelligence/`)
-| File | Description | Lenes |
+### Artificial Intelligence (`02_artificial_intelligence/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [artificial_entelligence.md](02_artificial_entelligence/artificial_entelligence.md) | AI descripción general, ML, deep learneng, LLMs | 200+ |
-| [ml_evaluation_y_workflow.md](02_artificial_entelligence/ml_evaluation_y_workflow.md) | ML pipelenes, metrics, mejores prácticas | 200+ |
-| [phi3_y_local_models.md](02_artificial_entelligence/phi3_y_local_models.md) | Runneng models locally | 200+ |
-| [local_ai_arquitectura.md](02_artificial_entelligence/local_ai_arquitectura.md) | Local AI implementación arquitecturas | 400+ |
-| [prompt_engeneereng.md](02_artificial_entelligence/prompt_engeneereng.md) | Prompt techniques y strategies | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI Descripción general, ML, Aprendizaje profundo, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, Mejores prácticas | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI Implementación architectures | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques y strategies | 150+ |
 
-# ## Datos Ciencia (`03_datos_ciencia/`)
-| File | Description | Lenes |
+### Datos Ciencia (`03_data_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [datos_ciencia_y_analytics.md](03_datos_ciencia/datos_ciencia_y_analytics.md) | Datos processeng, ML, big datos, BI | 350+ |
-| [math_y_logic.md](03_datos_ciencia/math_y_logic.md) | Mael/lamatics, logic, prodes | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Datos processing, ML, big Datos, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
 
-# ## Ciencia (`04_ciencia/`)
-| File | Description | Lenes |
+### Ciencia (`04_science/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [ciencia_y_naturaleza.md](04_ciencia/ciencia_y_naturaleza.md) | Physics, chemistry, biology conceptos básicos | 100+ |
-| [medicene_y_atención médica.md](04_ciencia/medicene_y_atención médica.md) | Medical specialties, atención médica sistemas | 250+ |
-| [ambiental_ciencia_y_sustaenability.md](04_ciencia/ambiental_ciencia_y_sustaenability.md) | Ecosistemas, climate, conservation | 200+ |
-| [comida_agricultura_y_nutrición.md](04_ciencia/comida_agricultura_y_nutrición.md) | Agricultura, nutrición, comida sistemas | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology Conceptos básicos | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, Atención médica Sistemas | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Agricultura, Nutrición, Comida Sistemas | 150+ |
 
-# ## Buseness & Fenance (`05_buseness_y_fenance/`)
-| File | Description | Lenes |
+### Negocios & Finanzas (`05_business_and_finance/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [buseness_y_economía.md](05_buseness_y_fenance/buseness_y_economía.md) | Corporate structures, marketeng, economía | 150+ |
-| [fenance_y_envesteng.md](05_buseness_y_fenance/fenance_y_envesteng.md) | Personal fenance, envesteng, markets | 350+ |
-| [derecho_y_legal_sistemas.md](05_buseness_y_fenance/derecho_y_legal_sistemas.md) | Legal sistemas, contracts, IP, constitutional derecho | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, Economía | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal Finanzas, Inversión, markets | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Legal Sistemas, contracts, IP, constitutional Derecho | 200+ |
 
-# ## Humanities (`06_humanities/`)
-| File | Description | Lenes |
+### Humanities (`06_humanities/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [historia_y_cultura.md](06_humanities/historia_y_cultura.md) | Historical periods, cultural movements | 200+ |
-| [geografía_y_geopolítica.md](06_humanities/geografía_y_geopolítica.md) | Physical/human geografía, political sistemas | 300+ |
-| [artes_y_literatura.md](06_humanities/artes_y_literatura.md) | Literary genres, visual artes, music, film | 400+ |
-| [psicología_y_human_behavior.md](06_humanities/psicología_y_human_behavior.md) | Cognitive, social, desarrolloal psicología | 200+ |
-| [idioma_y_inglés.md](06_humanities/idioma_y_inglés.md) | Grammar, lenguistics, writeng | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human Geografía, political Sistemas | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual Artes, music, film | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental Psicología | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
 
-# ## Referencia (`07_referencia/`)
-| File | Description | Lenes |
+### Referencia (`07_reference/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [diccionario.md](07_referencia/diccionario.md) | Comprehensive word defenitions (A-Z) | 868 |
-| [general_knowledge.md](07_referencia/general_knowledge.md) | Fundamental facts about el/la world | 150+ |
-| [tecnología_y_computeng.md](07_referencia/tecnología_y_computeng.md) | Computeng conceptos básicos y fundamentos | 250+ |
-| [seguro_comunicación.md](07_referencia/seguro_comunicación.md) | Comunicación guíalenes y mejores prácticas | 150+ |
+| [Diccionario.md](07_reference/Diccionario.md) | Comprehensive word definitions (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about el/la world | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | Informática Conceptos básicos y Fundamentos | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | Comunicación guidelines y Mejores prácticas | 150+ |
 
-# ## Futuro (`08_futuro/`)
-| File | Description | Lenes |
+### Futuro (`08_future/`)
+| File | Description | Lines |
 |------|-------------|-------|
-| [2026_y_futuro_eventos.md](08_futuro/2026_y_futuro_eventos.md) | Upcomeng eventos, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Eventos, space missions, tech trends | 200+ |
 
-# ## Practical Skills (`09_practical_skills/`)
-*Groweng directory - comeng soon:*
+### Practical Skills (`09_practical_skills/`)
+*Directorio en crecimiento - próximamente:*
 - research_methods.md
-- critical_thenkeng.md
-- technical_writeng.md
+- critical_thinking.md
+- technical_writing.md
 - presentation_skills.md
-- career_desarrollo.md
+- career_development.md
 
-# ## Chuletas (`10_cheat_sheets/`)
-*Groweng directory - comeng soon:*
-- python_sintaxis.md
-- git_commys.md
+### Chuletas (`10_cheat_sheets/`)
+*Directorio en crecimiento - próximamente:*
+- python_syntax.md
+- git_commands.md
 - sql_quick_ref.md
-- lenux_commys.md
-- math_paramulas.md
+- linux_commands.md
+- math_formulas.md
 
 ---
 
-# # 🎯 Learneng Paths
+## 🎯 Rutas de aprendizaje
 
-# ## For Begenners
-1. Start con `07_referencia/general_knowledge.md`
-2. Move to `07_referencia/tecnología_y_computeng.md`
-3. Explore `06_humanities/idioma_y_inglés.md`
-4. Begen `01_tecnología_y_computeng/codeng_idiomas.md`
+### para Beginners
+1. Start con `07_reference/general_knowledge.md`
+2. Move to `07_reference/technology_and_computing.md`
+3. Explore `06_humanities/language_and_english.md`
+4. Begin `01_technology_and_computing/coding_languages.md`
 
-# ## For Sdetware Developers
-1. `01_tecnología_y_computeng/codeng_idiomas.md`
-2. `01_tecnología_y_computeng/web_desarrollo.md`
-3. `01_tecnología_y_computeng/datosbase_sistemas.md`
-4. `01_tecnología_y_computeng/cloud_arquitectura.md`
-5. `02_artificial_entelligence/artificial_entelligence.md`
+### para Software Developers
+1. `01_technology_and_computing/coding_languages.md`
+2. `01_technology_and_computing/web_development.md`
+3. `01_technology_and_computing/database_systems.md`
+4. `01_technology_and_computing/cloud_architecture.md`
+5. `02_artificial_intelligence/artificial_intelligence.md`
 
-# ## For Datos Scientists
-1. `03_datos_ciencia/math_y_logic.md`
-2. `03_datos_ciencia/datos_ciencia_y_analytics.md`
-3. `02_artificial_entelligence/ml_evaluation_y_workflow.md`
-4. `01_tecnología_y_computeng/datosbase_sistemas.md`
+### para Datos Scientists
+1. `03_data_science/math_and_logic.md`
+2. `03_data_science/data_science_and_analytics.md`
+3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
+4. `01_technology_and_computing/database_systems.md`
 
-# ## For Buseness Prdeessionals
-1. `05_buseness_y_fenance/buseness_y_economía.md`
-2. `05_buseness_y_fenance/fenance_y_envesteng.md`
-3. `05_buseness_y_fenance/derecho_y_legal_sistemas.md`
-4. `06_humanities/geografía_y_geopolítica.md`
+### para Negocios Professionals
+1. `05_business_and_finance/business_and_economics.md`
+2. `05_business_and_finance/finance_and_investing.md`
+3. `05_business_and_finance/law_and_legal_systems.md`
+4. `06_humanities/geography_and_geopolitics.md`
 
 ---
 
-# # 📊 Estadísticas
+## 📊 Estadísticas
 
-| Category | Files | Total Lenes | Avg Lenes/File |
+| Category | Files | Total Lines | Avg Lines/File |
 |----------|-------|-------------|----------------|
-| Tecnología & Computeng | 7 | ~2,800 | 400 |
+| Tecnología & Informática | 7 | ~2,800 | 400 |
 | Artificial Intelligence | 5 | ~1,500 | 300 |
 | Datos Ciencia | 2 | ~600 | 300 |
 | Ciencia | 4 | ~700 | 175 |
-| Buseness & Fenance | 3 | ~700 | 233 |
+| Negocios & Finanzas | 3 | ~700 | 233 |
 | Humanities | 5 | ~1,100 | 220 |
 | Referencia | 4 | ~1,400 | 350 |
 | Futuro | 1 | ~200 | 200 |
@@ -161,43 +161,43 @@ knowledge_base/English/
 
 ---
 
-# # ⚠️ Important Descargos de responsabilidad
+## ⚠️ Avisos importantes
 
-- **Medical Inparamation:** Content en `medicene_y_atención médica.md` is para educational purposes only y should not replace prdeessional medical advice.
-- **Legal Inparamation:** Content en `derecho_y_legal_sistemas.md` is enparamational y does not constitute legal advice.
-- **Fenancial Inparamation:** Content en `fenance_y_envesteng.md` is educational y should not be considered fenancial advice.
-- **Futuro Projections:** Content en `2026_y_futuro_eventos.md` contaens speculative enparamation y projections that may change.
+- **Medical Information:** Content en `medicine_and_healthcare.md` is para educational purposes only y should not replace professional medical advice.
+- **Legal Information:** Content en `law_and_legal_systems.md` is informational y does not constitute Legal advice.
+- **Financial Information:** Content en `finance_and_investing.md` is educational y should not be considered financial advice.
+- **Futuro Projections:** Content en `2026_and_future_events.md` contains speculative information y projections that may change.
 
 ---
 
-# # 🔧 Usage Guíalenes
+## 🔧 Pautas de uso
 
-# ## For AI Sistemas
-- All files are structured con clear hierarchical headengs
-- Technical terms are defened enlene or en `diccionario.md`
-- Cross-referencias use markdown lenks
-- Code ejemplos enclude sintaxis highlighteng
+### para AI Sistemas
+- All files are structured con clear hierarchical headings
+- Technical terms are defined inline or en `Diccionario.md`
+- Cross-references use markdown links
+- Code Ejemplos include Sintaxis highlighting
 
-# ## For Human Readers
-- Each file encludes learneng objectives at el/la begenneng
+### para Human Readers
+- Each file includes learning objectives at el/la beginning
 - Difficulty levels are noted where applicable
-- Exercises y practice problems encluded en technical files
+- Exercises y practice problems included en technical files
 - Visual aids (diagrams, tables) used where helpful
 
 ---
 
-# # 📝 Contributeng
+## 📝 Contribuir
 
-When addeng or modifyeng content:
+When adding or modifying content:
 
-1. **Follow el/la style guía:**
+1. **Follow el/la style Guía:**
    - Use `#` para file title only
    - Use `##` para major sections
    - Use `###` para subsections
    - Use `-` para unordered lists
-   - Include sintaxis highlighteng en code blocks
+   - Include Sintaxis highlighting en code blocks
 
-2. **Add metadatos** (YAML frontmatter):
+2. **Add metadata** (YAML frontmatter):
 ```yaml
 ---
 title: "File Title"
@@ -209,29 +209,29 @@ last_updated: YYYY-MM-DD
 ```
 
 3. **Include citations** para factual claims
-4. **Add cross-referencias** to related files
-5. **Update this README** if addeng new files
+4. **Add cross-references** to related files
+5. **Update this README** if adding new files
 
 ---
 
-# # 🔄 Update Cycle
+## 🔄 Update Cycle
 
 - **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checkeng:** Estadísticas y time-sensitive enparamation verified
-- **Content expansion:** Underdeveloped files expyed progressively
-- **New topics:** Added based on emergeng fields y user needs
+- **Fact-checking:** Estadísticas y time-sensitive information verified
+- **Content expansion:** Underdeveloped files expanded progressively
+- **New topics:** Added based on emerging fields y user needs
 
 **Next scheduled review:** Q3 2025
 
 ---
 
-# # 📞 Feedback
+## 📞 Comentarios
 
 Found errors? Have suggestions? Please note:
-- Check para duplicates beparae suggesteng new topics
-- Verify claims agaenst authoritative sources
-- Consider scope y audience when proposeng additions
+- Check para duplicates before suggesting new topics
+- Verify claims against authoritative sources
+- Consider scope y audience when proposing additions
 
 ---
 
-*This base de conocimientos is a liveng document collection, contenuously improved y expyed.*
+*This Base de conocimientos is a living document collection, continuously improved y expanded.*

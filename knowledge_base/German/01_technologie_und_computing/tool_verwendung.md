@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Tool Usage
 
-# # Git — Version Control
+## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy von der/die/das repository geschichte on der/die/dasir local machine.
+Git is a distributed version control system. Every developer has a full copy von der/die/das repository Geschichte on their local machine.
 
-# ## Core workflow
+### Core workflow
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-# ## Branching
+### Branching
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ## Merging und rebasing
+### Merging und rebasing
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-# ## Pull request (PR) workflow
+### Pull request (PR) workflow
 
 1. Create a feature branch from `main`.
 2. Make commits on der/die/das feature branch.
 3. Push der/die/das branch: `git push origin feature/new-thing`.
 4. Open a pull request on GitHub / GitLab.
-5. Address code review feedback mit additional commits.
+5. Address code review Rückmeldung mit additional commits.
 6. Merge der/die/das PR once approved.
 
-# ## Undoing changes
+### Undoing changes
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,9 +77,9 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-# # Package Managers
+## Package Managers
 
-# ## pip (Python)
+### pip (Python)
 
 ```bash
 pip install requests            # install a package
@@ -92,7 +92,7 @@ pip show requests               # info about a package
 
 Always work inside a virtual environment to keep project dependencies isolated.
 
-# ## npm (Node.js / JavaScript)
+### npm (Node.js / JavaScript)
 
 ```bash
 npm init -y                     # create package.json
@@ -107,7 +107,7 @@ npx create-react-app my-app     # run a package without installing globally
 
 `package-lock.json` records exact versions; commit it to source control.
 
-# ## Cargo (Rust)
+### Cargo (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-# ## Go modules (Go)
+### Go modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -132,7 +132,7 @@ go test ./...
 go vet ./...
 ```
 
-# ## apt (Debian / Ubuntu Linux)
+### apt (Debian / Ubuntu Linux)
 
 ```bash
 sudo apt update                 # refresh package lists
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-# # Commund-Line Grundlagen
+## Command-Line Grundlagen
 
-# ## Navigation
+### Navigation
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-# ## Text processing
+### Text processing
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-# ## Pipes und redirection
+### Pipes und redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-# ## Netzwerk und file transfer
+### Netzwerk und file transfer
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-# ## Permissions
+### Permissions
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-# ## Process verwaltung
+### Process Verwaltung
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-# # Editors und IDEs
+## Editors und IDEs
 
-# ## VS Code
+### VS Code
 
-VS Code is a lightweight, cross-platfürm code editor mit a rich extension ecosystem.
+VS Code is a lightweight, cross-platform code editor mit a rich extension ecosystem.
 
 - Open a folder: `File > Open Folder` or `code .` in der/die/das terminal.
-- Commund palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
 - Integrated terminal: `Ctrl+`` (backtick)`.
 - Multi-cursor: `Alt+Click` to place additional cursors.
 - Go to definition: `F12`.
 - Rename symbol: `F2`.
 - Format document: `Shift+Alt+F`.
-- Extensions: install sprache support (Python, Rust, Go, etc.), linters, und fürmatters from der/die/das Extensions panel (`Ctrl+Shift+X`).
+- Extensions: install Sprache Support (Python, Rust, Go, etc.), linters, und formatters from der/die/das Extensions panel (`Ctrl+Shift+X`).
 - `settings.json` (user or workspace) controls editor behaviour.
 - `launch.json` configures der/die/das debugger.
 
-# ## JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLund)
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
 - Smart code completion und refactoring are core features.
 - Run/debug configurations let you launch und debug programs mit one click.
-- Built-in Git support in der/die/das VCS menu.
+- Built-in Git Support in der/die/das VCS menu.
 - `Shift+Shift` opens der/die/das Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) refürmats code.
-- Plugins extend sprache support und add tools.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend Sprache Support und add tools.
 
-# ## Terminal tips
+### Terminal tips
 
-- Use tab completion to finish file names und communds quickly.
-- Press `Ctrl+R` to search commund geschichte interactively.
+- Use tab completion to finish file names und Befehle quickly.
+- Press `Ctrl+R` to search command Geschichte interactively.
 - `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
 - Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <commund>` shows der/die/das manual page für any built-in commund.
+- `man <command>` shows der/die/das manual page für any built-in command.
 
 ---
 
-# # Docker
+## Docker
 
-Docker packages applications und der/die/dasir dependencies into portable containers.
+Docker packages applications und their dependencies into portable containers.
 
-# ## Core concepts
+### Core concepts
 
 - **Image**: a read-only template built from a `Dockerfile`.
 - **Container**: a running instance von an image.
 - **Registry**: a storage und distribution service für images (Docker Hub, GHCR).
 - **Volume**: persistent storage that outlives a container.
 
-# ## Common communds
+### Common Befehle
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-# ## Dockerfile example
+### Dockerfile example
 
 ```dockerfile
 FROM python:3.12-slim
@@ -297,7 +297,7 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-# ## Docker Compose
+### Docker Compose
 
 Docker Compose manages multi-container applications mit a `docker-compose.yml` file.
 

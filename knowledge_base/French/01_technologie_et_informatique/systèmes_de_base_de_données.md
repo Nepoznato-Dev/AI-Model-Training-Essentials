@@ -1,314 +1,328 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: database_systems.md
+Source: tool_usage.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Donnéesbase Systèmes
+# Tool Usage
 
-# # Donnéesbase Fondamentaux
+## Git — Version Control
 
-# ## What is a Donnéesbase?
-A donnéesbase is an organized collection de structured danspourmation stored electronically, designed pour efficient retrieval, danssertion, updatdansg, et deletion de données.
+Git is a distributed version control system. Every developer has a full copy de le/la repository Histoire on their local machine.
 
-# ## Donnéesbase Gestion Systèmes (DBMS)
-Sdetware that dansteracts avec end users, applications, et le/la donnéesbase itself to capture et analyze données. Exemples: MySQL, PostgreSQL, Oracle, MongoDB.
+### Core workflow
 
-# ## Key Concepts
-- **Schema**: Structure/organization de donnéesbase (tables, fields, relationships)
-- **Instance**: Actual données stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizdansg données to reduce redundancy
-- **Denormalization**: Adddansg redundancy to improve read perpourmance
+```bash
+# Start a new repository
+git init
 
-# # Relational Donnéesbases (SQL)
+# Clone an existing repository
+git clone https://github.com/owner/repo.git
 
-# ## Core Concepts
-- **Tables**: Rows (records) et columns (fields)
-- **Primary Key**: Unique identifier pour each row
-- **Foreign Key**: Référence to primary key dans anole/lar table
-- **Indexes**: Données structures improvdansg query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on données changes
+# Check status and recent history
+git status
+git log --oneline -10
 
-# ## SQL Operations (CRUD)
-```sql
--- Create
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
+# Stage changes
+git add file.py            # stage a specific file
+git add .                  # stage all changes in the working directory
 
--- Read
-SELECT * FROM users WHERE id = 1;
-SELECT name, email FROM users ORDER BY name LIMIT 10;
+# Commit
+git commit -m "Short, imperative description of change"
 
--- Update
-UPDATE users SET email = 'new@example.com' WHERE id = 1;
-
--- Delete
-DELETE FROM users WHERE id = 1;
+# Push to a remote
+git push origin main
 ```
 
-# ## Jodanss
-- **DANSNER JODANS**: Returns matchdansg rows from both tables
-- **LEFT JODANS**: All rows from left table, matches from right
-- **RIGHT JODANS**: All rows from right table, matches from left
-- **FULL OUTER JODANS**: All rows from both tables
-- **CROSS JODANS**: Cartesian product de both tables
-- **SELF JODANS**: Table jodansed avec itself
+### Branching
 
-# ## Normalization Forms
-- **1NF**: Atomic values, no repeatdansg groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on ole/lar non-key attributes)
-- **BCNF**: Stronger 3NF, every determdansant is a cetidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No jodans dependencies
+```bash
+git branch feature/new-thing        # create a branch
+git checkout feature/new-thing      # switch to it
+# shortcut: git checkout -b feature/new-thing
 
-# ## Popular RDBMS
-- **PostgreSQL**: Avancé features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, web applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsdet ecosystem, danstegrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL pourk, open-source
-
-# # NoSQL Donnéesbases
-
-# ## Types de NoSQL Donnéesbases
-
-# ### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content gestion, catalogs, user prdeiles
-- **Exemples**: MongoDB, CouchDB, DocumentDB
-- **Query Example** (MongoDB):
-```javascript
-db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
+git branch -d feature/new-thing     # delete branch after merging
 ```
 
-# ### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Cachdansg, sessions, shoppdansg carts
-- **Exemples**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querydansg
+### Merging et rebasing
 
-# ### Column-Family Stores
-- **Structure**: Columns grouped dansto families
-- **Use Cases**: Big données, analytics, time-series
-- **Exemples**: Cassetra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+```bash
+# Merge feature branch into main
+git checkout main
+git merge feature/new-thing
 
-# ### Graph Donnéesbases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social réseaus, fraud detection, recommendations
-- **Exemples**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Langue**: Cypher (Neo4j), Gremldans
+# Rebase keeps a linear history
+git checkout feature/new-thing
+git rebase main
+```
 
-# ## When to Use NoSQL
-- Flexible/evolvdansg schema
-- Horizontal scaldansg requirements
-- High write throughput
-- Hierarchical/nested données
-- Distributed systèmes
-- Real-time applications
+### Pull request (PR) workflow
 
-# # Donnéesbase Design
+1. Create a feature branch from `main`.
+2. Make commits on le/la feature branch.
+3. Push le/la branch: `git push origin feature/new-thing`.
+4. Open a pull request on GitHub / GitLab.
+5. Address code review Retour avec additional commits.
+6. Merge le/la PR once approved.
 
-# ## Entity-Relationship Modeldansg
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties de entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Carddansality**: Number de dansstances dans relationship
+### Undoing changes
 
-# ## Schema Design Patterns
-- **Sdansgle Table Inheritance**: All types dans one table avec type discrimdansator
-- **Class Table Inheritance**: Separate tables pour base et subclasses
-- **Concrete Table Inheritance**: Separate table pour each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+```bash
+git restore file.py            # discard unstaged changes
+git restore --staged file.py   # unstage a file
+git revert <commit-sha>        # create a new commit that undoes a previous one
+git reset --soft HEAD~1        # undo last commit, keep changes staged
+```
 
-# ## Indexdansg Strategies
-- **B-Tree**: Default, range queries, sortdansg
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-carddansality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic données (GIS)
-- **Composite**: Multiple columns combdansed
-- **Coverdansg**: Includes all columns needed pour query
+---
 
-# # Query Optimization
+## Package Managers
 
-# ## Execution Plans
-- Understetdansg how donnéesbase executes queries
-- Identifydansg bottlenecks (full table scans, missdansg dansdexes)
-- Tools: EXPLADANS, EXPLADANS ANALYZE
+### pip (Python)
 
-# ## Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate dansdexes
-- **Query Rewritdansg**: Simplify complex queries
-- **Jodans Optimization**: Choose correct jodans types et order
-- **Partitiondansg**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Cachdansg**: Store frequent query results
+```bash
+pip install requests            # install a package
+pip install "requests>=2.28"    # with version constraint
+pip install -r requirements.txt # install from a file
+pip uninstall requests
+pip list                        # show installed packages
+pip show requests               # info about a package
+```
 
-# ## Common Perpourmance Issues
-- **N+1 Query Problem**: Fetchdansg related données dansefficiently
-- **Missdansg Indexes**: Full table scans on large tables
-- **Over-dansdexdansg**: Slow writes due to too many dansdexes
-- **Lock Contention**: Transactions waitdansg pour locks
-- **Inefficient Queries**: SELECT *, unnecessary jodanss
+Always work inside a virtual environment to keep project dependencies isolated.
 
-# # Transactions et Concurrency
+### npm (Node.js / JavaScript)
 
-# ## Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed données visible (default dans most DBs)
-- **REPEATABLE READ**: Same query returns same results avecdans transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+```bash
+npm init -y                     # create package.json
+npm install express             # install as a runtime dependency
+npm install --save-dev jest     # install as a dev dependency
+npm uninstall express
+npm update
+npm run test                    # run the "test" script from package.json
+npm run build
+npx create-react-app my-app     # run a package without installing globally
+```
 
-# ## Concurrency Control
-- **Pessimistic Lockdansg**: Lock resources bepoure access
-- **Optimistic Lockdansg**: Check version bepoure commit
-- **MVCC (Multi-Version Concurrency Control)**: Madanstadans multiple versions de rows
-- **Row-Level Lockdansg**: Lock specific rows
-- **Table-Level Lockdansg**: Lock entire table
+`package-lock.json` records exact versions; commit it to source control.
 
-# ## Deadlocks
-- Circular dependency where transactions wait pour each ole/lar
-- Prevention: Consistent lock orderdansg, timeouts, deadlock detection
-- Resolution: Abort one transaction
+### Cargo (Rust)
 
-# # Replication et Scaldansg
+```bash
+cargo new my_project            # new binary project
+cargo new --lib my_lib          # new library project
+cargo add serde --features derive
+cargo build
+cargo run
+cargo test
+cargo clippy                    # lint
+cargo fmt                       # format
+cargo update                    # update dependencies within constraints
+```
 
-# ## Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chadans Replication**: Sequential replication through nodes
+### Go modules (Go)
 
-# ## Scaldansg Approaches
-- **Vertical Scaldansg**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaldansg**: Add more servers (sharddansg, partitiondansg)
-- **Read Replicas**: Offload read traffic
-- **Sharddansg**: Split données across servers by key/range/hash
-- **Federation**: Split by function/service
+```bash
+go mod init github.com/user/repo
+go get github.com/some/package@v1.2.3
+go mod tidy                     # remove unused dependencies
+go build ./...
+go test ./...
+go vet ./...
+```
 
-# ## Consistency Models
-- **Strong Consistency**: All nodes see same données at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees le/lair own updates immediately
+### apt (Debian / Ubuntu Linux)
 
-# # Backup et Recovery
+```bash
+sudo apt update                 # refresh package lists
+sudo apt install git curl wget  # install packages
+sudo apt remove package-name
+sudo apt upgrade                # upgrade all installed packages
+apt search keyword              # search for packages
+apt show package-name           # details about a package
+```
 
-# ## Backup Strategies
-- **Full Backup**: Complete donnéesbase copy
-- **Incremental Backup**: Changes sdansce last backup
-- **Differential Backup**: Changes sdansce last full backup
-- **Podanst-dans-Time Recovery**: Restore to specific moment
-- **Contdansuous Backup**: Real-time replication to backup
+---
 
-# ## Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Podanst Objective)**: Maximum acceptable données loss
-- **Disaster Recovery Plan**: Documented procedures pour failures
-- **Testdansg**: Regular recovery drills
+## Command-Line Bases
 
-# # Sécurité
+### Navigation
 
-# ## Access Control
-- **Aule/lantication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions pour easier gestion
-- **Prdansciple de Least Privilege**: Mdansimum necessary access
+```bash
+pwd                             # print working directory
+ls                              # list directory contents
+ls -la                          # detailed listing including hidden files
+cd /path/to/dir                 # change directory
+cd ..                           # go up one level
+cd ~                            # go to home directory
+mkdir new_folder
+rm file.txt                     # remove a file
+rm -r folder/                   # remove a directory recursively
+cp src.txt dst.txt
+mv old_name.txt new_name.txt
+```
 
-# ## Données Protection
-- **Encryption at Rest**: Encrypt stored données
-- **Encryption dans Transit**: TLS/SSL pour connections
-- **Maskdansg**: Hide sensitive données dans non-production
-- **Tokenization**: Replace sensitive données avec tokens
+### Text processing
 
-# ## Common Vulnerabilities
-- **SQL Injection**: Malicious SQL dans user dansput
-- **Privilege Escalation**: Gadansdansg unauthorized access
-- **Audit Loggdansg**: Track all donnéesbase activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+```bash
+cat file.txt                    # print file contents
+less file.txt                   # scroll through a file
+head -n 20 file.txt             # first 20 lines
+tail -n 20 file.txt             # last 20 lines
+tail -f log.txt                 # follow a growing log file
+grep "pattern" file.txt         # search for a pattern
+grep -r "pattern" ./src/        # recursive search
+grep -i "pattern" file.txt      # case-insensitive
+```
 
-# # Modern Donnéesbase Technologies
+### Pipes et redirection
 
-# ## Cloud Donnéesbases
-- **AWS**: RDS, Aurora, DynamoDB, Redshift
-- **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Donnéesbase, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaldansg, backups danscluded
+```bash
+command1 | command2             # pipe output of command1 into command2
+ls -la | grep ".py"             # list only Python files
+cat file.txt | wc -l            # count lines
+command > output.txt            # redirect stdout to a file (overwrite)
+command >> output.txt           # append stdout to a file
+command 2>&1                    # merge stderr into stdout
+```
 
-# ## NewSQL Donnéesbases
-- Combdanse SQL consistency avec NoSQL scalability
-- **Exemples**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaldansg
+### Réseau et file transfer
 
-# ## Time-Series Donnéesbases
-- Optimized pour timestamped données
-- **Exemples**: InfluxDB, TimescaleDB, Promele/laus
-- **Use Cases**: IoT, monitordansg, fdansancial données
+```bash
+curl https://example.com                     # fetch a URL
+curl -o file.zip https://example.com/f.zip   # download to a file
+curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.example.com/endpoint
 
-# ## Vector Donnéesbases
-- Store et query embedddansg vectors
-- **Exemples**: Pdansecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation systèmes, AI applications
+wget https://example.com/file.zip            # download with wget
+```
 
-# ## Multi-Model Donnéesbases
-- Support multiple données models dans sdansgle system
-- **Exemples**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility avecout multiple donnéesbases
+### Permissions
 
-# # ORMs et Données Access
+```bash
+chmod +x script.sh              # make executable
+chmod 644 file.txt              # owner read/write, group/others read
+chown user:group file.txt       # change owner and group
+```
 
-# ## Object-Relational Mappdansg
-- **Purpose**: Map donnéesbase tables to programmdansg objects
-- **Popular ORMs**:
-  - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelize, Prisma, TypeORM
-  - Java: Hibernate, JPA
-  - Ruby: ActiveRecord
-  - .NET: Entity Framework
+### Process Gestion
 
-# ## Benefits
-- Abstraction from SQL
-- Type sûrty
-- Migration gestion
-- Query builddansg APIs
+```bash
+ps aux                          # list running processes
+kill <PID>                      # send SIGTERM to a process
+kill -9 <PID>                   # force kill
+top / htop                      # interactive process monitor
+```
 
-# ## Drawbacks
-- Perpourmance overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learndansg curve
+---
 
-# # Donnéesbase Admdansistration
+## Editors et IDEs
 
-# ## DBA Responsibilities
-- Installation et configuration
-- Perpourmance tundansg
-- Backup et recovery
-- Sécurité gestion
-- Capacity planndansg
-- Monitordansg et alertdansg
-- Patch gestion
+### VS Code
 
-# ## Monitordansg Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
+VS Code is a lightweight, cross-platform code editor avec a rich extension ecosystem.
 
-# ## Madanstenance Tasks
-- **Vacuum/Analyze**: Update statistiques, reclaim space
-- **Index Rebuilddansg**: Defragment dansdexes
-- **Statistiques Updates**: Keep query optimizer danspourmed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planndansg**: Predict growth, plan upgrades
+- Open a folder: `File > Open Folder` or `code .` dans le/la terminal.
+- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integrated terminal: `Ctrl+`` (backtick)`.
+- Multi-cursor: `Alt+Click` to place additional cursors.
+- Go to definition: `F12`.
+- Rename symbol: `F2`.
+- Format document: `Shift+Alt+F`.
+- Extensions: install Langue Assistance (Python, Rust, Go, etc.), linters, et formatters from le/la Extensions panel (`Ctrl+Shift+X`).
+- `settings.json` (user or workspace) controls editor behaviour.
+- `launch.json` configures le/la debugger.
+
+### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+
+- Smart code completion et refactoring are core features.
+- Run/debug configurations let you launch et debug programs avec one click.
+- Built-dans Git Assistance dans le/la VCS menu.
+- `Shift+Shift` opens le/la Search Everywhere dialog.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
+- Plugins extend Langue Assistance et add tools.
+
+### Terminal tips
+
+- Use tab completion to finish file names et Commandes quickly.
+- Press `Ctrl+R` to search command Histoire interactively.
+- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
+- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
+- `man <command>` shows le/la manual page pour any built-dans command.
+
+---
+
+## Docker
+
+Docker packages applications et their dependencies into portable containers.
+
+### Core concepts
+
+- **Image**: a read-only template built from a `Dockerfile`.
+- **Container**: a running instance de an image.
+- **Registry**: a storage et distribution service pour images (Docker Hub, GHCR).
+- **Volume**: persistent storage that outlives a container.
+
+### Common Commandes
+
+```bash
+# Images
+docker pull ubuntu:22.04
+docker images
+docker rmi ubuntu:22.04
+
+# Containers
+docker run -it ubuntu:22.04 bash        # interactive shell
+docker run -d -p 8080:80 nginx          # detached, port mapping
+docker ps                               # running containers
+docker ps -a                            # all containers
+docker stop <container_id>
+docker rm <container_id>
+docker logs <container_id>
+docker exec -it <container_id> bash     # open shell in running container
+
+# Building
+docker build -t myapp:1.0 .
+docker push myrepo/myapp:1.0
+```
+
+### Dockerfile example
+
+```dockerfile
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+CMD ["python", "main.py"]
+```
+
+### Docker Compose
+
+Docker Compose manages multi-container applications avec a `docker-compose.yml` file.
+
+```yaml
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://db:5432/mydb
+    depends_on:
+      - db
+  db:
+    image: postgres:15
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+```
+
+```bash
+docker compose up -d       # start all services in the background
+docker compose down        # stop and remove containers
+docker compose logs -f     # stream logs
+docker compose build       # rebuild images
+```

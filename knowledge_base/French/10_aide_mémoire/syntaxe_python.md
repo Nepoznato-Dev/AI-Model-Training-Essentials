@@ -1,344 +1,594 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: python_syntax.md
+Source: sql_quick_ref.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Python Syntaxe Cheat Sheet
+# SQL Référence rapide Guide
 
-Quick référence pour Python 3.x syntaxe et common patterns.
+Essential SQL Commandes pour Base de données operations.
 
 ---
 
-# # Basic Syntaxe
+## Basic Query Structure
 
-# ## Variables et Données Types
-```python
-# Variable assignment (no declaration needed)
-x = 5
-name = "Alice"
-is_active = True
-price = 19.99
-
-# Type checking
-type(x)           # <class 'int'>
-isinstance(x, int)  # True
-
-# Type conversion
-int("5")          # 5
-str(5)            # "5"
-float(5)          # 5.0
-bool(1)           # True
-```
-
-# ## Strdansgs
-```python
-s = "Hello, World!"
-
-# Slicing
-s[0]              # 'H'
-s[-1]             # '!'
-s[0:5]            # 'Hello'
-s[7:]             # 'World!'
-s[::-1]           # Reverse string
-
-# Methods
-s.lower()         # 'hello, world!'
-s.upper()         # 'HELLO, WORLD!'
-s.split(",")      # ['Hello', ' World!']
-s.replace("World", "Python")
-s.strip()         # Remove whitespace
-f"Value: {x}"     # f-string formatting
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition
+GROUP BY column(s)
+HAVING condition
+ORDER BY column [ASC|DESC]
+LIMIT number;
 ```
 
 ---
 
-# # Control Flow
+## Données Retrieval (SELECT)
 
-# ## Conditionals
-```python
-if x > 10:
-    print("Greater than 10")
-elif x == 10:
-    print("Equals 10")
-else:
-    print("Less than 10")
+### Basic Selection
+```sql
+-- Select all columns
+SELECT * FROM users;
 
-# Ternary operator
-result = "yes" if condition else "no"
+-- Select specific columns
+SELECT id, name, email FROM users;
+
+-- Select with alias
+SELECT name AS user_name, email AS contact FROM users;
+
+-- Select distinct values
+SELECT DISTINCT country FROM users;
 ```
 
-# ## Loops
-```python
-# For loop
-for i in range(5):      # 0 to 4
-    print(i)
+### Filtering (WHERE)
+```sql
+-- Comparison operators
+SELECT * FROM products WHERE price > 100;
+SELECT * FROM products WHERE price BETWEEN 50 AND 200;
+SELECT * FROM users WHERE name IN ('Alice', 'Bob', 'Charlie');
+SELECT * FROM users WHERE name LIKE 'A%';      -- Starts with A
+SELECT * FROM users WHERE name LIKE '%son';    -- Ends with son
+SELECT * FROM users WHERE name LIKE '%test%';  -- Contains test
+SELECT * FROM users WHERE email IS NULL;
+SELECT * FROM users WHERE email IS NOT NULL;
 
-for item in [1, 2, 3]:
-    print(item)
-
-for key, value in dict.items():
-    print(key, value)
-
-# While loop
-while x < 10:
-    x += 1
-
-# Loop control
-break       # Exit loop
-continue    # Skip to next iteration
-else:       # Execute if loop completes without break
+-- Logical operators
+SELECT * FROM users WHERE age >= 18 AND country = 'USA';
+SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
+SELECT * FROM products WHERE NOT discontinued;
 ```
 
----
+### Sorting et Limiting
+```sql
+-- Order by single column
+SELECT * FROM products ORDER BY price DESC;
 
-# # Données Structures
+-- Order by multiple columns
+SELECT * FROM employees ORDER BY department ASC, salary DESC;
 
-# ## Lists
-```python
-lst = [1, 2, 3, 4, 5]
+-- Limit results
+SELECT * FROM users LIMIT 10;
 
-lst.append(6)           # Add to end
-lst.insert(0, 0)        # Insert at index
-lst.remove(3)           # Remove by value
-lst.pop()               # Remove and return last
-lst.pop(0)              # Remove and return first
-lst.index(2)            # Find index of value
-lst.count(2)            # Count occurrences
-lst.sort()              # Sort in place
-sorted(lst)             # Return sorted copy
-lst.reverse()           # Reverse in place
-lst[1:4]                # Slice
-[i*2 for i in lst]      # List comprehension
-```
-
-# ## Dictionaries
-```python
-d = {"name": "Alice", "age": 30}
-
-d["age"]                # Access value
-d.get("age", 0)         # Safe access with default
-d.keys()                # Get all keys
-d.values()              # Get all values
-d.items()               # Get key-value pairs
-d.update({"city": "NYC"})
-del d["age"]            # Delete key
-
-{k: v*2 for k, v in d.items()}  # Dict comprehension
-```
-
-# ## Sets
-```python
-s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
-
-s.add(5)
-s.remove(3)
-s.discard(10)           # Remove if exists (no error)
-s.union({4, 5, 6})      # Combine sets
-s.intersection({2, 3})  # Common elements
-s.difference({3, 4})    # Elements in s but not other
-```
-
-# ## Tuples
-```python
-t = (1, 2, 3)
-t[0]                    # Access (immutable)
-x, y, z = t             # Unpacking
+-- Offset (for pagination)
+SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 ```
 
 ---
 
-# # Functions
+## Aggregation Functions
 
-# ## Defdansition
-```python
-def greet(name, greeting="Hello"):
-    """Docstring: Describe the function"""
-    return f"{greeting}, {name}!"
+```sql
+-- Count rows
+SELECT COUNT(*) FROM users;
+SELECT COUNT(DISTINCT country) FROM users;
 
-# Call with positional and keyword args
-greet("Alice")
-greet("Bob", greeting="Hi")
+-- Sum, Average, Min, Max
+SELECT SUM(salary) FROM employees;
+SELECT AVG(salary) FROM employees;
+SELECT MIN(salary) FROM employees;
+SELECT MAX(salary) FROM employees;
 
-# Variable arguments
-def sum_all(*args):
-    return sum(args)
+-- Group by
+SELECT department, COUNT(*) as emp_count, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department;
 
-def print_all(**kwargs):
-    for k, v in kwargs.items():
-        print(f"{k}: {v}")
-```
-
-# ## Lambda Functions
-```python
-square = lambda x: x ** 2
-sorted(lst, key=lambda x: x[1])
+-- Having (filter groups)
+SELECT department, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 50000;
 ```
 
 ---
 
-# # Classes
+## Joins
 
-```python
-class Person:
-    def __init__(self, name, age):
-        self.name = name      # Instance variable
-        self.age = age
+### Inner Join
+```sql
+SELECT u.name, o.order_date, o.total
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id;
+```
+
+### Left/Right Join
+```sql
+-- All users, even those without orders
+SELECT u.name, o.order_id
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id;
+
+-- All orders, even those without users (rare)
+SELECT u.name, o.order_id
+FROM users u
+RIGHT JOIN orders o ON u.id = o.user_id;
+```
+
+### Full Outer Join
+```sql
+-- All users and all orders (MySQL doesn't support FULL OUTER)
+SELECT u.name, o.order_id
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id
+UNION
+SELECT u.name, o.order_id
+FROM users u
+RIGHT JOIN orders o ON u.id = o.user_id;
+```
+
+### Cross Join
+```sql
+-- Cartesian product (all combinations)
+SELECT * FROM colors CROSS JOIN sizes;
+```
+
+### Self Join
+```sql
+-- Find employees and their managers
+SELECT e.name AS employee, m.name AS manager
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.id;
+```
+
+---
+
+## Subqueries
+
+```sql
+-- In WHERE clause
+SELECT name FROM users 
+WHERE id IN (SELECT user_id FROM orders WHERE total > 100);
+
+-- In SELECT clause
+SELECT name, 
+       (SELECT COUNT(*) FROM orders WHERE user_id = users.id) AS order_count
+FROM users;
+
+-- In FROM clause
+SELECT dept, avg_salary
+FROM (
+    SELECT department AS dept, AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department
+) AS dept_stats
+WHERE avg_salary > 60000;
+
+-- With EXISTS
+SELECT name FROM users u
+WHERE EXISTS (
+    SELECT 1 FROM orders o WHERE o.user_id = u.id
+);
+```
+
+---
+
+## Set Operations
+
+```sql
+-- UNION (remove duplicates)
+SELECT name FROM customers
+UNION
+SELECT name FROM suppliers;
+
+-- UNION ALL (keep duplicates)
+SELECT name FROM customers
+UNION ALL
+SELECT name FROM suppliers;
+
+-- INTERSECT (common rows)
+SELECT product_id FROM orders_2023
+INTERSECT
+SELECT product_id FROM orders_2024;
+
+-- EXCEPT/MINUS (rows in first but not second)
+SELECT user_id FROM active_users
+EXCEPT
+SELECT user_id FROM banned_users;
+```
+
+---
+
+## Données Modification
+
+### INSERT
+```sql
+-- Insert single row
+INSERT INTO users (name, email, age)
+VALUES ('Alice', 'alice@example.com', 30);
+
+-- Insert multiple rows
+INSERT INTO users (name, email, age)
+VALUES 
+    ('Bob', 'bob@example.com', 25),
+    ('Charlie', 'charlie@example.com', 35);
+
+-- Insert from SELECT
+INSERT INTO archived_users
+SELECT * FROM users WHERE last_login < '2023-01-01';
+```
+
+### UPDATE
+```sql
+-- Update single row
+UPDATE users 
+SET email = 'newemail@example.com'
+WHERE id = 1;
+
+-- Update multiple columns
+UPDATE products
+SET price = price * 1.1, updated_at = NOW()
+WHERE category = 'Electronics';
+
+-- Update with JOIN
+UPDATE orders o
+JOIN users u ON o.user_id = u.id
+SET o.status = 'processed'
+WHERE u.country = 'USA';
+```
+
+### DELETE
+```sql
+-- Delete specific rows
+DELETE FROM users WHERE id = 1;
+
+-- Delete with condition
+DELETE FROM orders WHERE order_date < '2023-01-01';
+
+-- Delete with JOIN
+DELETE o
+FROM orders o
+JOIN users u ON o.user_id = u.id
+WHERE u.status = 'deleted';
+
+-- Truncate table (faster, resets auto-increment)
+TRUNCATE TABLE temp_data;
+```
+
+---
+
+## Table Operations
+
+### CREATE Table
+```sql
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    age INT CHECK (age >= 18),
+    country VARCHAR(50) DEFAULT 'USA',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_email (email),
+    INDEX idx_country (country)
+);
+```
+
+### ALTER Table
+```sql
+-- Add column
+ALTER TABLE users ADD COLUMN phone VARCHAR(20);
+
+-- Modify column
+ALTER TABLE users MODIFY COLUMN email VARCHAR(150) NOT NULL;
+
+-- Rename column
+ALTER TABLE users RENAME COLUMN username TO user_name;
+
+-- Drop column
+ALTER TABLE users DROP COLUMN phone;
+
+-- Add constraint
+ALTER TABLE orders ADD CONSTRAINT fk_user 
+FOREIGN KEY (user_id) REFERENCES users(id);
+
+-- Drop constraint
+ALTER TABLE orders DROP FOREIGN KEY fk_user;
+
+-- Rename table
+ALTER TABLE old_name RENAME TO new_name;
+```
+
+### DROP Table
+```sql
+DROP TABLE IF EXISTS temp_table;
+```
+
+---
+
+## Constraints
+
+```sql
+-- PRIMARY KEY: Unique identifier
+CREATE TABLE users (
+    id INT PRIMARY KEY
+);
+
+-- FOREIGN KEY: Reference to another table
+CREATE TABLE orders (
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- UNIQUE: No duplicate values
+CREATE TABLE users (
+    email VARCHAR(100) UNIQUE
+);
+
+-- NOT NULL: Required field
+CREATE TABLE users (
+    name VARCHAR(50) NOT NULL
+);
+
+-- CHECK: Validate values
+CREATE TABLE products (
+    price DECIMAL(10,2) CHECK (price > 0),
+    stock INT CHECK (stock >= 0)
+);
+
+-- DEFAULT: Default value
+CREATE TABLE users (
+    status VARCHAR(20) DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+---
+
+## Indexes
+
+```sql
+-- Create index
+CREATE INDEX idx_email ON users(email);
+
+-- Create composite index
+CREATE INDEX idx_name_age ON users(last_name, first_name);
+
+-- Create unique index
+CREATE UNIQUE INDEX idx_username ON users(username);
+
+-- Drop index
+DROP INDEX idx_email ON users;
+
+-- View indexes
+SHOW INDEX FROM users;
+```
+
+---
+
+## Views
+
+```sql
+-- Create view
+CREATE VIEW active_users AS
+SELECT id, name, email, country
+FROM users
+WHERE status = 'active';
+
+-- Use view
+SELECT * FROM active_users WHERE country = 'USA';
+
+-- Update view (if updatable)
+CREATE OR REPLACE VIEW active_users AS
+SELECT id, name, email, country, created_at
+FROM users
+WHERE status = 'active';
+
+-- Drop view
+DROP VIEW IF EXISTS active_users;
+```
+
+---
+
+## Common Table Expressions (CTEs)
+
+```sql
+-- Simple CTE
+WITH high_value_users AS (
+    SELECT id, name, total_spent
+    FROM users
+    WHERE total_spent > 1000
+)
+SELECT * FROM high_value_users ORDER BY total_spent DESC;
+
+-- Recursive CTE (hierarchical data)
+WITH RECURSIVE org_chart AS (
+    -- Base case
+    SELECT id, name, manager_id, 1 AS level
+    FROM employees
+    WHERE manager_id IS NULL
     
-    def greet(self):          # Instance method
-        return f"Hi, I'm {self.name}"
+    UNION ALL
     
-    @classmethod
-    def from_birth_year(cls, name, year):
-        age = 2025 - year
-        return cls(name, age)
-    
-    @staticmethod
-    def is_adult(age):
-        return age >= 18
-
-# Inheritance
-class Employee(Person):
-    def __init__(self, name, age, employee_id):
-        super().__init__(name, age)
-        self.employee_id = employee_id
+    -- Recursive case
+    SELECT e.id, e.name, e.manager_id, oc.level + 1
+    FROM employees e
+    INNER JOIN org_chart oc ON e.manager_id = oc.id
+)
+SELECT * FROM org_chart ORDER BY level, name;
 ```
 
 ---
 
-# # File I/O
+## Window Functions
 
-```python
-# Reading files
-with open("file.txt", "r") as f:
-    content = f.read()        # Read entire file
-    lines = f.readlines()     # Read as list of lines
+```sql
+-- ROW_NUMBER
+SELECT name, salary, 
+       ROW_NUMBER() OVER (ORDER BY salary DESC) AS rank
+FROM employees;
 
-# Writing files
-with open("file.txt", "w") as f:
-    f.write("Hello\n")
+-- RANK and DENSE_RANK
+SELECT name, salary,
+       RANK() OVER (ORDER BY salary DESC) AS rank,
+       DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank
+FROM employees;
 
-# Append mode
-with open("file.txt", "a") as f:
-    f.write("More content\n")
+-- Running total
+SELECT date, amount,
+       SUM(amount) OVER (ORDER BY date) AS running_total
+FROM transactions;
+
+-- Partitioned window
+SELECT department, name, salary,
+       AVG(salary) OVER (PARTITION BY department) AS dept_avg
+FROM employees;
+
+-- LAG and LEAD
+SELECT date, sales,
+       LAG(sales, 1) OVER (ORDER BY date) AS prev_day_sales,
+       LEAD(sales, 1) OVER (ORDER BY date) AS next_day_sales
+FROM daily_sales;
 ```
 
 ---
 
-# # Error Hetldansg
+## Données Types
 
-```python
-try:
-    result = 10 / 0
-except ZeroDivisionError as e:
-    print(f"Error: {e}")
-except (TypeError, ValueError):
-    print("Type or value error")
-except Exception as e:
-    print(f"General error: {e}")
-else:
-    print("No errors occurred")
-finally:
-    print("Always executes")
+### Numeric
+- `INT` - Integer
+- `BIGINT` - Large integer
+- `DECIMAL(p,s)` - Exact decimal (precision, scale)
+- `FLOAT` - Approximate floating point
+- `DOUBLE` - Double precision float
 
-# Raise exceptions
-raise ValueError("Invalid value")
+### String
+- `CHAR(n)` - Fixed length string
+- `VARCHAR(n)` - Variable length string
+- `TEXT` - Large text
+- `ENUM` - Enumerated values
+
+### Date/Time
+- `DATE` - Date (YYYY-MM-DD)
+- `TIME` - Time (HH:MM:SS)
+- `DATETIME` - Date et time
+- `TIMESTAMP` - Unix timestamp
+- `YEAR` - Year value
+
+### Boolean
+- `BOOLEAN` or `BOOL` - True/False
+
+### Binary
+- `BLOB` - Binary large object
+- `BINARY` - Fixed binary
+- `VARBINARY` - Variable binary
+
+---
+
+## Useful Functions
+
+### String Functions
+```sql
+CONCAT(first_name, ' ', last_name)  -- Concatenate strings
+UPPER(name)                          -- Convert to uppercase
+LOWER(name)                          -- Convert to lowercase
+SUBSTRING(name, 1, 3)                -- Extract substring
+LENGTH(name)                         -- String length
+TRIM(name)                           -- Remove whitespace
+REPLACE(text, 'old', 'new')          -- Replace substring
+```
+
+### Date Functions
+```sql
+NOW()                                -- Current date/time
+CURDATE()                            -- Current date
+CURTIME()                            -- Current time
+DATE_ADD(NOW(), INTERVAL 7 DAY)      -- Add interval
+DATEDIFF(end_date, start_date)       -- Difference in days
+YEAR(date_column)                    -- Extract year
+MONTH(date_column)                   -- Extract month
+DAY(date_column)                     -- Extract day
+```
+
+### Numeric Functions
+```sql
+ROUND(value, 2)                      -- Round to decimals
+CEIL(value)                          -- Round up
+FLOOR(value)                         -- Round down
+ABS(value)                           -- Absolute value
+POWER(base, exp)                     -- Exponentiation
+SQRT(value)                          -- Square root
+RAND()                               -- Random number
+```
+
+### Conditional Functions
+```sql
+-- CASE statement
+SELECT name,
+       CASE 
+           WHEN age < 18 THEN 'Minor'
+           WHEN age < 65 THEN 'Adult'
+           ELSE 'Senior'
+       END AS age_group
+FROM users;
+
+-- IF function (MySQL)
+SELECT IF(age >= 18, 'Adult', 'Minor') AS status FROM users;
+
+-- COALESCE (return first non-null)
+SELECT COALESCE(phone, email, 'No contact') AS contact FROM users;
+
+-- NULLIF (return NULL if equal)
+SELECT NULLIF(value, 0) AS safe_value FROM data;
 ```
 
 ---
 
-# # Modules et Imports
+## Performance Tips
 
-```python
-import math
-from datetime import datetime
-from collections import defaultdict, Counter
-import numpy as np
-from mymodule import my_function as mf
+✅ **Do:**
+- Use indexes on frequently queried columns
+- Select only needed columns (avoid `SELECT *`)
+- Use `EXPLAIN` to analyze query Performance
+- Normalize Données appropriately
+- Use prepared statements to prevent SQL injection
 
-# Common standard library modules
-os, sys, json, re, random, itertools, functools, pathlib
+❌ **Don't:**
+- Use functions on indexed columns dans WHERE clauses
+- Create too many indexes (slows writes)
+- Use `SELECT DISTINCT` unnecessarily
+- Ignore query execution plans
+- Store computed values when they can be calculated
+
+---
+
+## Sécurité Meilleures pratiques
+
+```sql
+-- Use parameterized queries (in application code)
+-- NEVER concatenate user input directly
+
+-- Grant minimal privileges
+GRANT SELECT, INSERT ON database.table TO 'user'@'localhost';
+REVOKE DELETE ON database.table FROM 'user'@'localhost';
+
+-- Use strong passwords
+-- Enable SSL connections
+-- Regular security audits
 ```
 
 ---
 
-# # Common Patterns
-
-# ## List Operations
-```python
-# Filter
-evens = [x for x in lst if x % 2 == 0]
-
-# Map
-squares = [x**2 for x in lst]
-
-# Zip
-list(zip([1, 2], ['a', 'b']))  # [(1, 'a'), (2, 'b')]
-
-# Enumerate
-for i, val in enumerate(lst):
-    print(f"{i}: {val}")
-```
-
-# ## Strdansg Operations
-```python
-# Join list of strings
-", ".join(["a", "b", "c"])  # "a, b, c"
-
-# Split string
-"a,b,c".split(",")          # ['a', 'b', 'c']
-
-# Check substring
-"test" in "this is a test"  # True
-
-# Format strings
-"{} {}".format("Hello", "World")
-f"{value:.2f}"              # 2 decimal places
-```
-
-# ## Dictionnaire Operations
-```python
-# Merge dictionaries
-{**d1, **d2}
-d1 | d2                     # Python 3.9+
-
-# Default value
-d.get("key", default_value)
-
-# Iterate
-for k, v in d.items():
-    pass
-```
-
----
-
-# # Built-dans Functions
-
-```python
-len(), str(), int(), float(), bool()
-range(), enumerate(), zip()
-map(), filter(), reduce()   # reduce from functools
-sorted(), reversed()
-min(), max(), sum()
-abs(), round(), pow()
-dir(), help(), type()
-isinstance(), issubclass()
-any(), all()
-```
-
----
-
-# # Quick Tips
-
-- Use `#` pour sdansgle-ldanse comments
-- Use `"""triple quotes"""` pour docstrdansgs et multi-ldanse strdansgs
-- Indentation matters (typically 4 spaces)
-- Namdansg conventions: `snake_case` pour variables/functions, `PascalCase` pour classes
-- `__name__ == "__madans__"` to check if script is run directly
-- Use `virtualenv` or `venv` pour project isolation
-- Install packages avec `pip dansstall package_name`
-
----
-
-*Last updated: June 2025 | Python 3.x*
+*Dernière mise à jour: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*

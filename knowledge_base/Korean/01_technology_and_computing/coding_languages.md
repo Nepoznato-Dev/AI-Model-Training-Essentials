@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cod에서g 언어s
+# Coding Languages
 
-# # Python
+## Python
 
-Python is a high-level, 에서terpreted, dynamically typed, general-purpose programm에서g 언어. It emphasises readability 와 uses significant 에서dentation as block delimiters.
+Python is a high-level, interpreted, dynamically typed, general-purpose programming 언어. It emphasises readability 와 uses significant indentation as block delimiters.
 
-# ## 구문 기본
+### 구문 기본
 
 ```python
 # Variables and types
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-# ## Functions 와 type h에서ts
+### Functions 와 type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-# ## List comprehensions
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes 와 OOP
+### Classes 와 OOP
 
 ```python
 class Animal:
@@ -65,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-# ## Common patterns
+### Common patterns
 
 - Use `와 함께 open(path) as f:` 위한 file I/O.
-- Prefer f-str에서gs (`f"hello {name}"`) over `%` or `.위한mat()`.
-- Use `데이터classes.데이터class` 위한 데이터-only classes.
-- Use `pathlib.Path` 에서stead 의 `os.path` 위한 file paths.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` 위한 데이터-only classes.
+- Use `pathlib.Path` instead 의 `os.path` 위한 file paths.
 
-# ## Tool에서g
+### Tooling
 
-- `pip 에서stall <package>` 에서stalls packages.
-- `python -m venv .venv && source .venv/b에서/activate` creates a virtual environment.
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
 - `pip freeze > requirements.txt` saves dependencies.
-- `pip 에서stall -r requirements.txt` restores 그m.
-- `pyproject.toml` is 그 modern project-configuration st와ard.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is 그 modern project-configuration standard.
 
 ---
 
-# # JavaScript
+## JavaScript
 
 JavaScript is 그 primary 언어 의 그 웹. It runs 에서 browsers 와 on servers via Node.js. It is dynamically typed 와 prototype-based.
 
-# ## Modern 구문 (ES6+)
+### Modern 구문 (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-# ## Async programm에서g
+### Async programming
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-# ## Array methods
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-# ## DOM manipulation
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-# ## Tool에서g
+### Tooling
 
-- `npm 에서it -y` 에서itialises a project.
-- `npm 에서stall <package>` adds a dependency.
-- `npm run <script>` runs a script def에서ed 에서 `package.json`.
-- `node 에서dex.js` runs a script 와 함께 Node.js.
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined 에서 `package.json`.
+- `node index.js` runs a script 와 함께 Node.js.
 
 ---
 
-# # TypeScript
+## TypeScript
 
-TypeScript is a statically typed superset 의 JavaScript that compiles to pla에서 JavaScript. It adds type annotations, 에서terfaces, generics, 와 enums.
+TypeScript is a statically typed superset 의 JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, 와 enums.
 
-# ## Type annotations
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-# ## Interfaces 와 types
+### Interfaces 와 types
 
 ```typescript
 interface User {
@@ -178,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-# ## Generics
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-# ## Classes 와 함께 access modifiers
+### Classes 와 함께 access modifiers
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-# ## tsconfig.json essentials
+### tsconfig.json essentials
 
 ```json
 {
@@ -220,21 +220,21 @@ class Counter {
 }
 ```
 
-# ## Tool에서g
+### Tooling
 
-- `npm 에서stall -g typescript` 에서stalls 그 compiler.
+- `npm install -g typescript` installs 그 compiler.
 - `tsc` compiles 그 project.
-- `ts-node src/에서dex.ts` runs TypeScript directly.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
-# # Rust
+## Rust
 
-Rust is a 시스템 programm에서g 언어 focused on 안전한ty, speed, 와 concurrency. It pr이벤트 memory-안전한ty bugs at compile time through its ownership system.
+Rust is a 시스템 programming 언어 focused on safety, speed, 와 concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-# ## Ownership 와 borrow에서g
+### Ownership 와 borrowing
 
-Every value 에서 Rust has exactly one owner. When 그 owner goes out 의 scope 그 value is dropped. Borrow에서g allows 참조s 와 함께out transferr에서g ownership.
+Every value 에서 Rust has exactly one owner. When 그 owner goes out 의 scope 그 value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no o그r borrows exist at 그 same time.
+Mutable borrows (`&mut T`) require that no other borrows exist at 그 same time.
 
-# ## Lifetimes
+### Lifetimes
 
-Lifetimes ensure 참조s do not outlive 그 데이터 그y po에서t to.
+Lifetimes ensure references do not outlive 그 데이터 they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-# ## Enums 와 pattern match에서g
+### Enums 와 pattern matching
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-# ## Error h와l에서g
+### Error handling
 
 ```rust
 use std::fs;
@@ -293,24 +293,24 @@ fn main() {
 }
 ```
 
-The `?` operator propagates errors automatically 에서side functions that return `Result`.
+그 `?` operator propagates errors automatically inside functions that return `Result`.
 
-# ## Tool에서g (Cargo)
+### Tooling (Cargo)
 
 - `cargo new project_name` creates a new project.
 - `cargo build` compiles.
 - `cargo run` compiles 와 runs.
 - `cargo test` runs tests.
 - `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` 위한mats code. `cargo clippy` l에서ts.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
-# # Go
+## Go
 
-Go (Golang) is a statically typed, compiled 언어 designed 위한 simplicity 와 high-per위한mance concurrent programs.
+Go (Golang) is a statically typed, compiled 언어 designed 위한 simplicity 와 high-성능 concurrent programs.
 
-# ## 기본
+### 기본
 
 ```go
 package main
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-# ## Functions 와 multiple return values
+### Functions 와 multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -334,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-# ## Interfaces
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -346,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods 의 an 에서terface satisfies it — no explicit declaration is needed.
+Any type that implements all methods 의 an interface satisfies it — no explicit declaration is needed.
 
-# ## Gorout에서es 와 channels
+### Goroutines 와 channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -374,7 +374,7 @@ func main() {
 }
 ```
 
-# ## Defer
+### Defer
 
 ```go
 func readFile(path string) error {
@@ -388,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-# ## Tool에서g
+### Tooling
 
-- `go mod 에서it module/name` 에서itialises a module.
+- `go mod init module/name` initialises a module.
 - `go get ./...` downloads dependencies.
 - `go build ./...` compiles.
 - `go test ./...` runs tests.
-- `go fmt ./...` 위한mats code.
+- `go fmt ./...` formats code.
 - `go vet ./...` checks 위한 common mistakes.
 
 ---
 
-# # C 와 C++
+## C 와 C++
 
-C is a low-level, compiled, procedural 언어. C++ extends C 와 함께 classes, templates, 와 그 St와ard Template Library (STL).
+C is a low-level, compiled, procedural 언어. C++ extends C 와 함께 classes, templates, 와 그 Standard Template Library (STL).
 
-# ## C 기본
+### C 기본
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-# ## Po에서ters
+### Pointers
 
-A po에서ter stores 그 memory address 의 ano그r variable. `*ptr` de참조s it; `&var` takes an address.
+A pointer stores 그 memory address 의 another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -432,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-# ## C++ classes 와 RAII
+### C++ classes 와 RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensur에서g cleanup happens automatically 에서 destructors.
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically 에서 destructors.
 
-# ## STL conta에서ers
+### STL containers
 
 ```cpp
 #include <vector>
@@ -469,28 +469,28 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-# ## Modern C++ (C++17 / C++20) highlights
+### Modern C++ (C++17 / C++20) highlights
 
 - `auto` type deduction.
-- Range-based `위한` loops: `위한 (auto& item : conta에서er)`.
-- Smart po에서ters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured b에서d에서gs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::str에서g_view`.
+- Range-based `위한` loops: `위한 (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-# ## Compilation
+### Compilation
 
-- `gcc ma에서.c -o ma에서` compiles C.
-- `g++ -std=c++20 -Wall ma에서.cpp -o ma에서` compiles C++.
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
 - `make` automates multi-file builds via a `Makefile`.
-- `cmake` is 그 st와ard build-system generator 위한 larger projects.
+- `cmake` is 그 standard build-system generator 위한 larger projects.
 
 ---
 
-# # Swift
+## Swift
 
-Swift is a modern, statically typed programm에서g 언어 developed by Apple 위한 iOS, macOS, watchOS, 와 tvOS. It is also available on L에서ux.
+Swift is a modern, statically typed programming 언어 developed by Apple 위한 iOS, macOS, watchOS, 와 tvOS. It is also 사용 가능 on Linux.
 
-# ## 기본
+### 기본
 
 ```swift
 let greeting = "Hello, world!"   // constant (immutable)
@@ -500,7 +500,7 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-# ## Optionals
+### Optionals
 
 An optional (`T?`) represents a value that may or may not be present.
 
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-# ## Functions 와 closures
+### Functions 와 closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,7 +528,7 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-# ## Classes 와 structs
+### Classes 와 structs
 
 Swift has both classes (참조 types) 와 structs (value types). Prefer structs 위한 simple 데이터 models.
 
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-# ## Protocols
+### Protocols
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-# ## Codable (JSON encod에서g / decod에서g)
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-# ## SwiftUI 기본
+### SwiftUI 기본
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-# ## Tool에서g
+### Tooling
 
 - `swift build` compiles a Swift Package Manager project.
 - `swift run` runs 그 project.
 - `swift test` runs tests.
-- `swift package 에서it --type executable` creates a new executable project.
-- Xcode is 그 primary IDE 위한 Apple-plat위한m 개발.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is 그 primary IDE 위한 Apple-platform 개발.
 
 ---
 
-# # Cod에서g 기초 (언어-Agnostic)
+## Coding 기초 (언어-Agnostic)
 
-# ## Problem-solv에서g workflow
+### Problem-solving workflow
 
-1. Def에서e 그 에서put, output, 와 constra에서ts be위한e writ에서g code.
-2. Break 그 task 에서to smaller sub-problems.
-3. Start 와 함께 a simple correct solution, 그n optimise if needed.
-4. Validate 와 함께 tests, edge cases, 와 realistic 에서puts.
+1. Define 그 input, output, 와 constraints before writing code.
+2. Break 그 task into smaller sub-problems.
+3. Start 와 함께 a simple correct solution, then optimise if needed.
+4. Validate 와 함께 tests, edge cases, 와 realistic inputs.
 
-# ## Core 데이터 structures
+### Core 데이터 structures
 
-- **Array / List**: ordered collection 와 함께 fast 에서dexed reads.
+- **Array / List**: ordered collection 와 함께 fast indexed reads.
 - **Hash map / 사전**: key-value store 와 함께 average O(1) lookup.
 - **Set**: unique values, useful 위한 membership checks.
-- **Stack**: LIFO (last 에서, first out), common 에서 pars에서g 와 recursion.
-- **Queue**: FIFO (first 에서, first out), useful 위한 schedul에서g 와 BFS.
+- **Stack**: LIFO (last 에서, first out), common 에서 parsing 와 recursion.
+- **Queue**: FIFO (first 에서, first out), useful 위한 scheduling 와 BFS.
 - **Tree / Graph**: hierarchical 와 네트워크-style relationships.
 
-# ## Algorithmic complexity (Big O)
+### Algorithmic complexity (Big O)
 
-- Big O describes how runtime or memory grows 와 함께 에서put size.
+- Big O describes how runtime or memory grows 와 함께 input size.
 - Typical costs:
   - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): b에서ary search.
-  - O(n): s에서gle pass through 데이터.
-  - O(n log n): efficient sort에서g.
-  - O(n²): nested loops over similar-size 에서puts.
-- Prefer clear, ma에서ta에서able code unless pr의il에서g shows a bottleneck.
+  - O(log n): binary search.
+  - O(n): single pass through 데이터.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-# ## Debugg에서g pr에서ciples
+### Debugging principles
 
 - Reproduce 그 bug reliably first.
-- M에서imise 그 fail에서g case to isolate cause.
-- Inspect logs, 에서puts, 와 assumptions.
-- Change one variable at a time while test에서g.
+- Minimise 그 failing case to isolate cause.
+- Inspect logs, inputs, 와 assumptions.
+- Change one variable at a time while 테스트.
 - Add regression tests so 그 same bug does not return.
 
-# ## Test에서g pyramid
+### 테스트 pyramid
 
 - **Unit tests**: fast, focused checks 의 small logic units.
-- **Integration tests**: verify 에서teractions across modules/services.
+- **Integration tests**: verify interactions across modules/services.
 - **End-to-end tests**: validate user flows 에서 realistic environments.
 - A balanced suite has many unit tests 와 fewer slow end-to-end tests.
 
-# ## Code quality practices
+### Code quality practices
 
-- Use mean에서gful names 와 small focused functions.
+- Use meaningful names 와 small focused functions.
 - Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive 와 에서terfaces explicit.
-- Use l에서ters/위한matters 위한 consistency.
+- Keep modules cohesive 와 interfaces explicit.
+- Use linters/formatters 위한 consistency.
 - Review code 위한 correctness, clarity, 와 보안.
 
-# ## 보안 기본 위한 developers
+### 보안 기본 위한 developers
 
-- Validate 와 sanitise external 에서put.
-- Use parameterised queries to prevent SQL 에서jection.
-- Store passwords 와 함께 strong hash에서g algorithms (e.g., Argon2, bcrypt).
-- Avoid embedd에서g secrets 에서 source code.
+- Validate 와 sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords 와 함께 strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets 에서 source code.
 - Apply least privilege 위한 credentials 와 services.

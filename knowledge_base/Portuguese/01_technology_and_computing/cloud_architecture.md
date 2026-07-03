@@ -7,395 +7,395 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud Arquitetura
 
-# # Cloud Computemg Fundamentos
+## Cloud Computação Fundamentos
 
-# ## What is Cloud Computemg?
-On-deme delivery de computemg resources (servers, storage, dadosbases, redeemg, sdetware) over o/a emternet com pay-as-you-go pricemg.
+### What is Cloud Computação?
+On-demand delivery de Computação resources (servers, storage, databases, networking, software) over o/a internet com pay-as-you-go pricing.
 
-# ## Essential Characteristics (NIST Defemition)
-- **On-Deme Self-Service**: Provision resources comout human emteraction
-- **Broad Rede Access**: Available over rede via steard mechanisms
-- **Resource Poolemg**: Multi-tenant model com dynamic assignment
-- **Rapid Elasticity**: Scale outward e emward rapidly
+### Essential Characteristics (NIST Definition)
+- **On-Demand Self-Service**: Provision resources without human interaction
+- **Broad Rede Access**: Disponível over Rede via standard mechanisms
+- **Resource Pooling**: Multi-tenant model com dynamic assignment
+- **Rapid Elasticity**: Scale outward e inward rapidly
 - **Measured Service**: Resource usage monitored e billed
 
-# ## Cloud Implantação Models
-- **Public Cloud**: Owned by providers, shared emfrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to semgle organization (on-premises or hosted)
-- **Hybrid Cloud**: Combemation de public e private clouds
-- **Multi-Cloud**: Usemg multiple public cloud providers
+### Cloud Implantação Models
+- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
+- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
+- **Hybrid Cloud**: Combination de public e private clouds
+- **Multi-Cloud**: Using multiple public cloud providers
 - **Community Cloud**: Shared by organizations com common concerns
 
-# ## Service Models
+### Service Models
 
-# ### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machemes, storage, redes, operatemg sistemas
-- **Exemplos**: AWS EC2, Google Compute Engeme, Azure VMs
-- **Use Cases**: Lift-e-shift migrations, desenvolvimento environments, high-control needs
+#### Infrastructure as a Service (IaaS)
+- **Provides**: Virtual machines, storage, networks, operating Sistemas
+- **Exemplos**: AWS EC2, Google Compute Engine, Azure VMs
+- **Use Cases**: Lift-e-shift migrations, Desenvolvimento environments, high-control needs
 
-# ### Platparam as a Service (PaaS)
-- **Provides**: Desenvolvimento platparams, dadosbases, middleware
-- **Exemplos**: Heroku, Google App Engeme, AWS Elastic Beanstalk
-- **Use Cases**: Application desenvolvimento, API implantação, microservices
+#### Platform as a Service (PaaS)
+- **Provides**: Desenvolvimento platforms, databases, middleware
+- **Exemplos**: Heroku, Google App Engine, AWS Elastic Beanstalk
+- **Use Cases**: Application Desenvolvimento, API Implantação, microservices
 
-# ### Sdetware as a Service (SaaS)
-- **Provides**: Complete applications over emternet
-- **Exemplos**: Salesparace, Google Workspace, Microsdet 365, Slack
-- **Use Cases**: Email, CRM, collaboration, busemess applications
+#### Software as a Service (SaaS)
+- **Provides**: Completo applications over internet
+- **Exemplos**: Salesforce, Google Workspace, Microsoft 365, Slack
+- **Use Cases**: Email, CRM, collaboration, Negócios applications
 
-# ### Function as a Service (FaaS) / Serverless
+#### Function as a Service (FaaS) / Serverless
 - **Provides**: Event-driven function execution
 - **Exemplos**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processemg, APIs, scheduled tasks, real-time processemg
+- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
 
-# # Major Cloud Providers
+## Major Cloud Providers
 
-# ## Amazon Web Services (AWS)
+### Amazon Web Services (AWS)
 - **Market Share**: ~32% (largest provider)
 - **Key Services**:
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
-  - Dadosbase: RDS, DynamoDB, Aurora
-  - Redeemg: VPC, Route 53, CloudFront
+  - Banco de dados: RDS, DynamoDB, Aurora
+  - Networking: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
-# ## Microsdet Azure
+### Microsoft Azure
 - **Market Share**: ~23%
-- **Strengths**: Enterprise emtegration, hybrid cloud, Microsdet ecosystem
+- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
 - **Key Services**:
-  - Compute: Virtual Machemes, Azure Functions, AKS
+  - Compute: Virtual Machines, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
-  - Dadosbase: SQL Dadosbase, Cosmos DB
-  - Redeemg: Virtual Rede, Traffic Manager
+  - Banco de dados: SQL Banco de dados, Cosmos DB
+  - Networking: Virtual Rede, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
-# ## Google Cloud Platparam (GCP)
+### Google Cloud Platform (GCP)
 - **Market Share**: ~10%
 - **Strengths**: Dados analytics, AI/ML, Kubernetes
 - **Key Services**:
-  - Compute: Compute Engeme, Cloud Functions, GKE
+  - Compute: Compute Engine, Cloud Functions, GKE
   - Storage: Cloud Storage, Persistent Disk
-  - Dadosbase: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dadosflow, Pub/Sub
+  - Banco de dados: Cloud SQL, Firestore, Bigtable
+  - Analytics: BigQuery, Dataflow, Pub/Sub
   - AI/ML: Vertex AI, AutoML
 
-# ## Oo/ar Providers
+### Other Providers
 - **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: Dadosbase workloads, enterprise applications
-- **Alibaba Cloud**: Domemant em Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified deferemgs
+- **Oracle Cloud**: Banco de dados workloads, enterprise applications
+- **Alibaba Cloud**: Dominant em Asia-Pacific
+- **DigitalOcean**: Developer-friendly, simplified offerings
 
-# # Cloud Arquitetura Patterns
+## Cloud Arquitetura Patterns
 
-# ## Well-Architected Framework Premciples
+### Well-Architected Framework Principles
 
-# ### Operational Excellence
+#### Operational Excellence
 - Automate operations
 - Make frequent, reversible changes
-- Refeme procedures contemuously
+- Refine procedures continuously
 - Anticipate failure
 
-# ### Segurança
+#### Segurança
 - Implement strong identity foundation
 - Enable traceability
-- Apply segurança at all layers
-- Automate segurança melhores práticas
-- Protect dados em transit e at rest
+- Apply Segurança at all layers
+- Automate Segurança Melhores práticas
+- Protect Dados em transit e at rest
 
-# ### Reliability
+#### Reliability
 - Test recovery procedures
 - Automatically recover from failure
 - Scale horizontally para availability
-- Stop guessemg capacity
+- Stop guessing capacity
 - Manage change em automation
 
-# ### Perparamance Efficiency
-- Democratize avançado technologies
-- Go global em memutes
-- Use serverless arquiteturas
-- Experiment more deten
+#### Desempenho Efficiency
+- Democratize Avançado technologies
+- Go global em minutes
+- Use serverless architectures
+- Experiment more often
 - Consider mechanical sympathy
 
-# ### Cost Optimization
+#### Cost Optimization
 - Adopt consumption model
 - Measure overall efficiency
-- Stop spendemg money on undifferentiated work
+- Stop spending money on undifferentiated work
 - Analyze e attribute expenditure
 - Use managed services
 
-# ## Common Arquitetura Patterns
+### Common Arquitetura Patterns
 
-# ### Microservices Arquitetura
-- Decompose applications emto small, emdependent services
-- Each service owns its dados e logic
-- Communicate via APIs (REST, gRPC, messagemg)
-- Deploy emdependently
-- **Benefits**: Scalability, fault isolation, tecnologia diversity
-- **Challenges**: Distributed complexity, dados consistency, monitoremg
+#### Microservices Arquitetura
+- Decompose applications into small, independent services
+- Each service owns its Dados e logic
+- Communicate via APIs (REST, gRPC, messaging)
+- Deploy independently
+- **Benefits**: Scalability, fault isolation, Tecnologia diversity
+- **Challenges**: Distributed complexity, Dados consistency, monitoring
 
-# ### Event-Driven Arquitetura
-- Components communicate through eventos
-- Producers emit eventos, consumers react
-- **Patterns**: Event sourcemg, CQRS, pub/sub
+#### Event-Driven Arquitetura
+- Components communicate through Eventos
+- Producers emit Eventos, consumers react
+- **Patterns**: Event sourcing, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose couplemg, scalability, real-time processemg
+- **Benefits**: Loose coupling, scalability, real-time processing
 
-# ### Serverless Arquitetura
-- No server gerenciamento required
+#### Serverless Arquitetura
+- No server Gerenciamento required
 - Pay per execution
-- Automatic scalemg
+- Automatic scaling
 - **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid implantação
-- **Considerations**: Cold startes, vendor lock-em, execution limits
+- **Benefits**: Cost efficiency, reduced operations, rapid Implantação
+- **Considerations**: Cold starts, vendor lock-em, execution limits
 
-# ### Layered Arquitetura (N-Tier)
+#### Layered Arquitetura (N-Tier)
 - Presentation layer (UI)
-- Application/Busemess logic layer
+- Application/Negócios logic layer
 - Dados access layer
-- Dadosbase layer
-- **Benefits**: Separation de concerns, maemtaemability
-- **Common**: 3-tier web applications
+- Banco de dados layer
+- **Benefits**: Separation de concerns, maintainability
+- **Common**: 3-tier Web applications
 
-# ### Space-Based Arquitetura
-- Hele high concurrency com distributed dados
+#### Space-Based Arquitetura
+- Handle high concurrency com distributed Dados
 - Virtualized memory across servers
-- Processemg nodes scale emdependently
+- Processing nodes scale independently
 - **Use Cases**: High-volume, low-latency applications
 
-# # Compute Services
+## Compute Services
 
-# ## Virtual Machemes
+### Virtual Machines
 - **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pricemg**: On-deme, reserved emstances, spot emstances
-- **Gerenciamento**: Auto-scalemg groups, load balancers
-- **Melhores práticas**: Right-sizemg, taggemg, monitoremg, patchemg
+- **Pricing**: On-demand, reserved instances, spot instances
+- **Gerenciamento**: Auto-scaling groups, load balancers
+- **Melhores práticas**: Right-sizing, tagging, monitoring, patching
 
-# ## Contaemers
-- **Docker**: Contaemer runtime steard
+### Containers
+- **Docker**: Container runtime standard
 - **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
 - **Benefits**: Portability, efficiency, consistency
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
-# ## Serverless Functions
+### Serverless Functions
 - **Execution Model**: Event-triggered, stateless
 - **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processemg, scheduled jobs, IoT backends
-- **Monitoremg**: Invocation counts, errors, duration, cold startes
+- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
+- **Monitoring**: Invocation counts, errors, duration, cold starts
 
-# # Storage Solutions
+## Storage Solutions
 
-# ## Object Storage
-- **Characteristics**: Flat structure, metadados, HTTP access
+### Object Storage
+- **Characteristics**: Flat structure, metadata, HTTP access
 - **Exemplos**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, dados lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varyemg cost/access)
+- **Use Cases**: Static assets, backups, Dados lakes, archives
+- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
 
-# ## Block Storage
+### Block Storage
 - **Characteristics**: Raw volumes, attached to VMs
 - **Exemplos**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Dadosbases, boot volumes, high-perparamance needs
+- **Use Cases**: Databases, boot volumes, high-Desempenho needs
 - **Types**: SSD, HDD, provisioned IOPS
 
-# ## File Storage
-- **Characteristics**: Shared file sistemas, NFS/SMB protocols
+### File Storage
+- **Characteristics**: Shared file Sistemas, NFS/SMB protocols
 - **Exemplos**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content gerenciamento, shared configs, lift-e-shift
+- **Use Cases**: Content Gerenciamento, shared configs, lift-e-shift
 
-# ## Archive Storage
+### Archive Storage
 - **Characteristics**: Lowest cost, retrieval delays
 - **Exemplos**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical dados
+- **Use Cases**: Compliance, long-term backups, historical Dados
 
-# # Dadosbase Services
+## Banco de dados Services
 
-# ## Managed Relational Dadosbases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Dadosbase
-- **Features**: Automated backups, patchemg, scalemg, replication
-- **Engemes**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### Managed Relational Databases
+- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Banco de dados
+- **Features**: Automated backups, patching, scaling, replication
+- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-# ## NoSQL Dadosbases
+### NoSQL Databases
 - **Document**: DocumentDB, Firestore, Cosmos DB
 - **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassera (managed)
+- **Wide-Column**: Bigtable, Cassandra (managed)
 - **Graph**: Neptune, Cosmos DB (graph API)
 
-# ## Dados Warehousemg
+### Dados Warehousing
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP arquitetura
-- **Use Cases**: Analytics, BI, large-scale dados analysis
+- **Characteristics**: Columnar storage, MPP Arquitetura
+- **Use Cases**: Analytics, BI, large-scale Dados analysis
 
-# ## Cachemg Services
-- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Cachemg**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query cachemg, content delivery
+### Caching Services
+- **em-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
+- **Use Cases**: Session storage, query caching, content delivery
 
-# # Redeemg
+## Networking
 
-# ## Virtual Redes
-- **VPC/VNet**: Isolated rede environments
-- **Subnets**: Public (emternet-facemg), private (emternal only)
-- **IP Addressemg**: CIDR blocks, IPv4/IPv6
+### Virtual Networks
+- **VPC/VNet**: Isolated Rede environments
+- **Subnets**: Public (internet-facing), private (internal only)
+- **IP Addressing**: CIDR blocks, IPv4/IPv6
 - **Route Tables**: Control traffic flow
 
-# ## Load Balancemg
+### Load Balancing
 - **Types**: Application (L7), Rede (L4), Gateway
-- **Features**: Health checks, SSL termemation, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balancemg, Azure Load Balancer
+- **Features**: Health checks, SSL termination, sticky sessions
+- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-# ## Content Delivery Redes (CDN)
+### Content Delivery Networks (CDN)
 - **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origem load, global distribution
+- **Benefits**: Reduced latency, lower origin load, global distribution
 - **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-# ## DNS Services
-- **Functions**: Domaem registration, routemg, health checks
+### DNS Services
+- **Functions**: Domain registration, routing, health checks
 - **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routemg Policies**: Simple, weighted, latency-based, geolocation, failover
+- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
 
-# ## Connectivity Options
-- **Internet Gateway**: Public emternet access
+### Connectivity Options
+- **Internet Gateway**: Public internet access
 - **NAT Gateway**: Private subnet outbound access
 - **VPN**: Encrypted tunnels to on-premises
 - **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peeremg**: Connect VPCs comem/between accounts
+- **VPC Peering**: Connect VPCs within/between accounts
 
-# # Segurança em o/a Cloud
+## Segurança em o/a Cloud
 
-# ## Shared Responsibility Model
-- **Provider Responsibility**: Segurança DE o/a cloud (emfrastructure)
-- **Customer Responsibility**: Segurança EM o/a cloud (dados, applications, access)
+### Shared Responsibility Model
+- **Provider Responsibility**: Segurança de o/a cloud (infrastructure)
+- **Customer Responsibility**: Segurança em o/a cloud (Dados, applications, access)
 - **Varies By Service**: More managed = more provider responsibility
 
-# ## Identity e Access Gerenciamento (IAM)
+### Identity e Access Gerenciamento (IAM)
 - **Users**: Individual identities
 - **Groups**: Collections de users
 - **Roles**: Temporary credentials para services/users
-- **Policies**: JSON documents defememg permissions
-- **Premciples**: Least privilege, separation de duties
+- **Policies**: JSON documents defining permissions
+- **Principles**: Least privilege, separation de duties
 
-# ## Rede Segurança
-- **Segurança Groups**: Stateful firewalls para emstances
+### Rede Segurança
+- **Segurança Groups**: Stateful firewalls para instances
 - **Rede ACLs**: Stateless firewalls para subnets
-- **Web Application Firewall (WAF)**: Protect agaemst web exploits
+- **Web Application Firewall (WAF)**: Protect against Web exploits
 - **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
 
-# ## Dados Protection
+### Dados Protection
 - **Encryption at Rest**: KMS, customer-managed keys
 - **Encryption em Transit**: TLS/SSL, HTTPS
 - **Key Gerenciamento**: HSM, key rotation, audit trails
 - **Secrets Gerenciamento**: Secrets Manager, Key Vault
 
-# ## Compliance e Governance
+### Compliance e Governance
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enparacement, compliance reportemg, audit logs
+- **Tools**: Policy enforcement, compliance reporting, audit logs
 - **Frameworks**: Cloud Segurança Alliance, NIST CSF
 
-# # DevOps em o/a Cloud
+## DevOps em o/a Cloud
 
-# ## CI/CD Services
-- **AWS**: CodePipeleme, CodeBuild, CodeDeploy
+### CI/CD Services
+- **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkems, CircleCI, GitLab CI
+- **Third-party**: Jenkins, CircleCI, GitLab CI
 
-# ## Infrastructure as Code (IaC)
-- **Terraparam**: Multi-cloud, declarative, state gerenciamento
+### Infrastructure as Code (IaC)
+- **Terraform**: Multi-cloud, declarative, state Gerenciamento
 - **CloudFormation**: AWS native, YAML/JSON templates
 - **ARM Templates**: Azure native
 - **Implantação Manager**: GCP native
-- **Pulumi**: Infrastructure usemg programmemg idiomas
+- **Pulumi**: Infrastructure using programming languages
 - **Benefits**: Version control, repeatability, documentation
 
-# ## Configuration Gerenciamento
+### Configuration Gerenciamento
 - **Ansible**: Agentless, YAML playbooks
 - **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reportemg
+- **Puppet**: Declarative, strong reporting
 - **SaltStack**: Fast, Python-based
 
-# ## Monitoremg e Observability
-- **Metrics**: CloudWatch, Cloud Monitoremg, Azure Monitor
-- **Loggemg**: CloudWatch Logs, Cloud Loggemg, Log Analytics
-- **Tracemg**: X-Ray, Cloud Trace, Application Insights
+### Monitoring e Observability
+- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **Tracing**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alertemg**: SNS, Cloud Monitoremg alerts, Action Groups
+- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
 
-# ## Contaemer Orchestration
-- **Kubernetes**: Industry steard orchestration
+### Container Orchestration
+- **Kubernetes**: Industry standard orchestration
 - **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Lemkerd (traffic gerenciamento, segurança)
-- **GitOps**: ArgoCD, Flux (declarative implantaçãos)
+- **Service Mesh**: Istio, Linkerd (traffic Gerenciamento, Segurança)
+- **GitOps**: ArgoCD, Flux (declarative deployments)
 
-# # Cost Gerenciamento
+## Cost Gerenciamento
 
-# ## Pricemg Models
+### Pricing Models
 - **Pay-as-you-go**: Pay para what you use
 - **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid para unused capacity, can be emterrupted
-- **Savemgs Plans**: Flexible commitment pricemg
+- **Spot Instances**: Bid para unused capacity, can be interrupted
+- **Savings Plans**: Flexible commitment pricing
 - **Free Tier**: Limited free usage para new accounts
 
-# ## Cost Optimization Strategies
-- **Right-sizemg**: Match emstance types to workload needs
-- **Auto-scalemg**: Scale based on deme
+### Cost Optimization Strategies
+- **Right-sizing**: Match instance types to workload needs
+- **Auto-scaling**: Scale based on demand
 - **Reserved Capacity**: Commit to steady-state workloads
 - **Spot Usage**: Use para fault-tolerant, flexible workloads
-- **Storage Tiers**: Move emfrequent dados to cheaper tiers
+- **Storage Tiers**: Move infrequent Dados to cheaper tiers
 - **Cleanup**: Delete unused resources, snapshots, AMIs
 
-# ## Cost Gerenciamento Tools
+### Cost Gerenciamento Tools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
 - **Azure**: Cost Gerenciamento, Advisor
-- **GCP**: Billemg reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Dadosdog
+- **GCP**: Billing reports, Recommender
+- **Third-party**: CloudHealth, CloudCheckr, Datadog
 
-# # High Availability e Disaster Recovery
+## High Availability e Disaster Recovery
 
-# ## Availability Concepts
-- **Availability Zones**: Physically separate dados centers comem region
+### Availability Concepts
+- **Availability Zones**: Physically separate Dados centers within region
 - **Regions**: Geographic areas com multiple AZs
 - **Edge Locations**: CDN cache locations globally
 
-# ## HA Strategies
+### HA Strategies
 - **Multi-AZ**: Deploy across availability zones
-- **Auto-healemg**: Auto-replace failed emstances
-- **Load Balancemg**: Distribute traffic across healthy emstances
-- **Dadosbase Replication**: Multi-AZ implantaçãos, read replicas
+- **Auto-healing**: Auto-replace failed instances
+- **Load Balancing**: Distribute traffic across healthy instances
+- **Banco de dados Replication**: Multi-AZ deployments, read replicas
 
-# ## Disaster Recovery Strategies
+### Disaster Recovery Strategies
 - **Backup e Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements runnemg, scale up duremg disaster
-- **Warm Steby**: Scaled-down version always runnemg
+- **Pilot Light**: Core elements running, scale up during disaster
+- **Warm Standby**: Scaled-down version always running
 - **Multi-Site Active/Active**: Full production em multiple regions (highest cost)
 
-# ## RTO e RPO
+### RTO e RPO
 - **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Poemt Objective (RPO)**: Maximum acceptable dados loss
-- **Strategy Selection**: Based on busemess requirements e budget
+- **Recovery Point Objective (RPO)**: Maximum acceptable Dados loss
+- **Strategy Selection**: Based on Negócios requirements e budget
 
-# # Emergemg Trends
+## Emerging Trends
 
-# ## Edge Computemg
-- Process dados closer to source
+### Edge Computação
+- Process Dados closer to source
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
 - **Use Cases**: IoT, real-time analytics, low-latency applications
 
-# ## Multi-Cloud e Hybrid Cloud
+### Multi-Cloud e Hybrid Cloud
 - Avoid vendor lock-em
 - Leverage best-de-breed services
-- **Tools**: Terraparam, Anthos, Arc, CloudHealth
+- **Tools**: Terraform, Anthos, Arc, CloudHealth
 
-# ## AI/ML Services
-- Pre-traemed models: Vision, speech, idioma
-- Custom model traememg: SageMaker, Vertex AI, Azure ML
-- MLOps: Model implantação, monitoremg, governance
+### AI/ML Services
+- Pre-trained models: Vision, speech, Idioma
+- Custom model training: SageMaker, Vertex AI, Azure ML
+- MLOps: Model Implantação, monitoring, governance
 
-# ## Quantum Computemg
+### Quantum Computação
 - **Services**: AWS Braket, Azure Quantum
 - **Status**: Early stage, experimental
 - **Potential**: Cryptography, optimization, drug discovery
 
-# ## Sustaemable Cloud
-- Carbon footpremt trackemg
+### Sustainable Cloud
+- Carbon footprint tracking
 - Renewable energy commitments
 - Efficient resource utilization
-- Green arquitetura patterns
+- Green Arquitetura patterns

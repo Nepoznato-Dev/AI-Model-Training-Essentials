@@ -7,57 +7,57 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Daten Wissenschaft und Analytics
 
-# # Core Concepts
+## Core Concepts
 
-# ## What is Daten Wissenschaft?
-Daten wissenschaft is an interdisciplinary field that uses scientific methods, processes, algorithms, und systeme to extract knowledge und insights from structured und unstructured daten. It combines:
-- **Statistiken**: Mader/die/dasmatical foundation für analysis
-- **Computer Wissenschaft**: Programming, algorithms, daten structures
+### What is Daten Wissenschaft?
+Daten Wissenschaft is an interdisciplinary field that uses scientific methods, processes, algorithms, und Systeme to extract knowledge und insights from structured und unstructured Daten. It combines:
+- **Statistiken**: Mathematical foundation für analysis
+- **Computer Wissenschaft**: Programming, algorithms, Daten structures
 - **Domain Expertise**: Subject matter knowledge
 - **Daten Visualization**: Communicating findings effectively
 
-# ## Daten Types
-- **Structured Daten**: Organized in rows/columns (datenbases, spreadsheets)
-- **Unstructured Daten**: No predefined fürmat (text, images, audio, video)
+### Daten Types
+- **Structured Daten**: Organized in rows/columns (databases, spreadsheets)
+- **Unstructured Daten**: No predefined format (text, images, audio, video)
 - **Semi-structured Daten**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series Daten**: Sequential daten points indexed in time order
-- **Spatial Daten**: Geographic/location-based infürmation
+- **Time Series Daten**: Sequential Daten points indexed in time order
+- **Spatial Daten**: Geographic/location-based information
 - **Graph Daten**: Nodes und edges representing relationships
 
-# ## The Daten Wissenschaft Process (CRISP-DM)
-1. **Geschäft Understunding**: Define objectives und requirements
-2. **Daten Understunding**: Collect und explore initial daten
-3. **Daten Preparation**: Clean, transfürm, und fürmat daten (80% von work)
+### der/die/das Daten Wissenschaft Process (CRISP-DM)
+1. **Geschäft Understanding**: Define objectives und requirements
+2. **Daten Understanding**: Collect und explore initial Daten
+3. **Daten Preparation**: Clean, transform, und format Daten (80% von work)
 4. **Modeling**: Select und apply modeling techniques
-5. **Evaluation**: Assess model perfürmance against objectives
+5. **Evaluation**: Assess model Leistung against objectives
 6. **Bereitstellung**: Implement model in production environment
 
-# # Statistiken Grundlagen
+## Statistiken Grundlagen
 
-# ## Descriptive Statistiken
+### Descriptive Statistiken
 - **Measures von Central Tendency**: Mean, median, mode
-- **Measures von Dispersion**: Range, variance, stundard deviation, interquartile range
+- **Measures von Dispersion**: Range, variance, standard deviation, interquartile range
 - **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles und Quartiles**: Position mitin distribution
+- **Percentiles und Quartiles**: Position within distribution
 
-# ## Inferential Statistiken
-- **Hypoder/die/dassis Testen**: Null hypoder/die/dassis, alternative hypoder/die/dassis, p-values
+### Inferential Statistiken
+- **Hypothesis Testen**: Null hypothesis, alternative hypothesis, p-values
 - **Confidence Intervals**: Range von values likely containing population parameter
 - **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejecting true null hypoder/die/dassis)
-- **Type II Error**: False negative (failing to reject false null hypoder/die/dassis)
-- **Power**: Probability von correctly rejecting false null hypoder/die/dassis
+- **Type I Error**: False positive (rejecting true null hypothesis)
+- **Type II Error**: False negative (failing to reject false null hypothesis)
+- **Power**: Probability von correctly rejecting false null hypothesis
 
-# ## Probability Distributions
+### Probability Distributions
 - **Normal Distribution**: Bell curve, mean = median = mode
 - **Binomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count von ereignisse in fixed interval
-- **Unifürm Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between ereignisse
+- **Poisson Distribution**: Count von Ereignisse in fixed interval
+- **Uniform Distribution**: All outcomes equally likely
+- **Exponential Distribution**: Time between Ereignisse
 - **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical daten analysis
+- **Chi-Square Distribution**: Categorical Daten analysis
 
-# ## Statistical Tests
+### Statistical Tests
 - **t-test**: Compare means between two groups
 - **ANOVA**: Compare means across multiple groups
 - **Chi-Square Test**: Test independence von categorical variables
@@ -66,52 +66,52 @@ Daten wissenschaft is an interdisciplinary field that uses scientific methods, p
 - **Spearman Correlation**: Monotonic relationship (rank-based)
 - **Kolmogorov-Smirnov**: Compare distributions
 
-# # Daten Collection und Storage
+## Daten Collection und Storage
 
-# ## Daten Sources
-- **Datenbases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, web scraping
+### Daten Sources
+- **Databases**: SQL, NoSQL, relational, document stores
+- **APIs**: REST, GraphQL, Web scraping
 - **Files**: CSV, JSON, XML, Parquet, Avro
 - **Streaming Daten**: Kafka, Kinesis, real-time feeds
-- **Surveys und Experiments**: Primary daten collection
-- **Public Datensets**: Government daten, Kaggle, academic repositories
+- **Surveys und Experiments**: Primary Daten collection
+- **Public Datasets**: Government Daten, Kaggle, academic repositories
 
-# ## Daten Warehousing
-- **ETL**: Extract, Transfürm, Load process
-- **Daten Lake**: Raw daten storage in native fürmat
-- **Daten Warehouse**: Structured, processed daten für analysis
+### Daten Warehousing
+- **ETL**: Extract, Transform, Load process
+- **Daten Lake**: Raw Daten storage in native format
+- **Daten Warehouse**: Structured, processed Daten für analysis
 - **Daten Mart**: Subset von warehouse für specific department
 - **OLAP**: Online Analytical Processing, multidimensional queries
 - **Star Schema**: Fact tables surrounded by dimension tables
 - **Snowflake Schema**: Normalized dimension tables
 
-# ## Datenbase Types
+### Datenbank Types
 - **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
 - **Document**: MongoDB, CouchDB (JSON-like documents)
 - **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassundra, HBase (optimized für columns)
+- **Column-Family**: Cassandra, HBase (optimized für columns)
 - **Graph**: Neo4j, Amazon Neptune (nodes und relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped daten)
+- **Time-Series**: InfluxDB, TimescaleDB (timestamped Daten)
 - **Vector**: Pinecone, Milvus (embedding storage für ML)
 
-# # Daten Preprocessing
+## Daten Preprocessing
 
-# ## Daten Cleaning
+### Daten Cleaning
 - **Missing Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (capping, transfürmation)
+- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
 - **Duplicates**: Identification und removal
-- **Inconsistencies**: Stundardizing fürmats, fixing typos
+- **Inconsistencies**: Standardizing formats, fixing typos
 - **Daten Validation**: Checking constraints, ranges, types
 
-# ## Daten Transfürmation
+### Daten Transformation
 - **Normalization**: Scaling to 0-1 range
-- **Stundardization**: Z-score normalization (mean=0, std=1)
+- **Standardization**: Z-score normalization (mean=0, std=1)
 - **Encoding**: One-hot, label, ordinal, target encoding
 - **Binning**: Grouping continuous values into categories
-- **Log Transfürmation**: Reducing skewness
+- **Log Transformation**: Reducing skewness
 - **Feature Scaling**: Making features comparable
 
-# ## Feature Engineering
+### Feature Engineering
 - **Feature Creation**: Deriving new features from existing ones
 - **Feature Selection**: Choosing most relevant features
   - Filter methods (correlation, chi-square)
@@ -121,9 +121,9 @@ Daten wissenschaft is an interdisciplinary field that uses scientific methods, p
 - **Interaction Terms**: Combining features multiplicatively
 - **Polynomial Features**: Creating higher-order terms
 
-# # Exploratory Daten Analysis (EDA)
+## Exploratory Daten Analysis (EDA)
 
-# ## EDA Techniques
+### EDA Techniques
 - **Summary Statistiken**: Describe central tendency, spread, shape
 - **Univariate Analysis**: Single variable distributions
 - **Bivariate Analysis**: Relationships between two variables
@@ -131,33 +131,33 @@ Daten wissenschaft is an interdisciplinary field that uses scientific methods, p
 - **Correlation Analysis**: Identify relationships und multicollinearity
 - **Segmentation**: Group similar observations
 
-# ## Visualization Tools
+### Visualization Tools
 - **Histograms**: Distribution von single variable
 - **Box Plots**: Five-number summary, outlier detection
 - **Scatter Plots**: Relationship between two continuous variables
 - **Heatmaps**: Correlation matrices, density
-- **Bar Chkünste**: Categorical comparisons
-- **Line Chkünste**: Trends over time
+- **Bar Charts**: Categorical comparisons
+- **Line Charts**: Trends over time
 - **Violin Plots**: Distribution density mit box plot elements
 - **Pair Plots**: Multiple scatter plots für variable pairs
 
-# ## Python Libraries für EDA
-- **pundas**: Daten manipulation und analysis
-- **numpy**: Numerical datenverarbeitung
+### Python Libraries für EDA
+- **pandas**: Daten manipulation und analysis
+- **numpy**: Numerical Datenverarbeitung
 - **matplotlib**: Basic plotting
 - **seaborn**: Statistical visualization
 - **plotly**: Interactive visualizations
-- **scipy**: Scientific datenverarbeitung und statistiken
+- **scipy**: Scientific Datenverarbeitung und Statistiken
 
-# # Maschinelles Lernen in Daten Wissenschaft
+## Maschinelles Lernen in Daten Wissenschaft
 
-# ## Supervised Learning
+### Supervised Learning
 - **Regression**: Predict continuous values
   - Linear Regression
   - Polynomial Regression
   - Ridge/LASSO/Elastic Net
   - Decision Tree Regressor
-  - Rundom Forest Regressor
+  - Random Forest Regressor
   - Gradient Boosting (XGBoost, LightGBM, CatBoost)
   
 - **Classification**: Predict categorical labels
@@ -166,11 +166,11 @@ Daten wissenschaft is an interdisciplinary field that uses scientific methods, p
   - Naive Bayes
   - Support Vector Machines
   - Decision Trees
-  - Rundom Forest
+  - Random Forest
   - Gradient Boosting
   - Neuronale Netze
 
-# ## Unsupervised Learning
+### Unsupervised Learning
 - **Clustering**: Group similar observations
   - k-Means
   - Hierarchical Clustering
@@ -181,161 +181,161 @@ Daten wissenschaft is an interdisciplinary field that uses scientific methods, p
 - **Dimensionality Reduction**: Reduce feature count
   - Principal Component Analysis (PCA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
-  - Unifürm Manifold Approximation (UMAP)
+  - Uniform Manifold Approximation (UMAP)
   - Autoencoders
   
 - **Association Rules**: Find co-occurring items
   - Apriori Algorithm
   - FP-Growth
 
-# ## Model Evaluation
+### Model Evaluation
 - **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
 - **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
 - **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, rundom search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradevonf
+- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
+- **Learning Curves**: Diagnose bias-variance tradeoff
 
-# # Big Daten Technologies
+## Big Daten Technologies
 
-# ## Distributed Datenverarbeitung Frameworks
+### Distributed Datenverarbeitung Frameworks
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: In-memory processing, faster than Hadoop
-  - Spark SQL: Structured daten processing
-  - Spark Streaming: Real-time daten
-  - MLlib: Machine learning library
+- **Apache Spark**: in-memory processing, faster than Hadoop
+  - Spark SQL: Structured Daten processing
+  - Spark Streaming: Real-time Daten
+  - MLlib: Maschinelles Lernen library
   - GraphX: Graph processing
 - **Apache Flink**: Stream processing mit low latency
 - **Apache Beam**: Unified batch und streaming
 
-# ## Cloud Platfürms
+### Cloud Platforms
 - **AWS**: S3, EMR, Redshift, SageMaker, Glue
-- **Google Cloud**: BigQuery, Datenproc, AI Platfürm, Cloud Storage
-- **Azure**: Synapse Analytics, Datenbricks, Maschinelles Lernen, Daten Lake
-- **Snowflake**: Cloud daten warehouse
+- **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
+- **Azure**: Synapse Analytics, Databricks, Maschinelles Lernen, Daten Lake
+- **Snowflake**: Cloud Daten warehouse
 
-# ## Daten Pipeline Tools
+### Daten Pipeline Tools
 - **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline verwaltung (Spotify)
+- **Luigi**: Pipeline Verwaltung (Spotify)
 - **Prefect**: Modern workflow orchestration
 - **Dagster**: Daten orchestrator mit asset focus
-- **dbt**: Daten transfürmation in warehouse
+- **dbt**: Daten transformation in warehouse
 
-# # Geschäft Intelligence und Analytics
+## Geschäft Intelligence und Analytics
 
-# ## BI Tools
-- **Tableau**: Visual analytics platfürm
-- **Power BI**: Microsvont geschäft analytics
+### BI Tools
+- **Tableau**: Visual analytics platform
+- **Power BI**: Microsoft Geschäft analytics
 - **Looker**: Daten exploration und insights (Google)
 - **Qlik Sense**: Associative analytics
 - **Metabase**: Open-source BI
 - **Superset**: Apache open-source BI
 
-# ## Dashboard Design Principles
+### Dashboard Design Principles
 - **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to daten type
-- **Use Color Strategically**: Highlight important infürmation
-- **Maintain Consistency**: Stundardize fürmats und scales
+- **Choose Right Visualizations**: Match chart to Daten type
+- **Use Color Strategically**: Highlight important information
+- **Maintain Consistency**: Standardize formats und scales
 - **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Perfürmance**: Fast loading, efficient queries
+- **Optimize Leistung**: Fast loading, efficient queries
 - **Mobile Considerations**: Responsive design
 
-# ## Key Perfürmance Indicators (KPIs)
-- **Financial**: Revenue, prvonit margin, ROI, customer lifetime value
+### Key Leistung Indicators (KPIs)
+- **Financial**: Revenue, profit margin, ROI, customer lifetime value
 - **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
 - **Operational**: Efficiency rates, cycle time, defect rates
 - **Marketing**: Conversion rates, click-through rates, attribution
 - **Product**: Active users, engagement, retention, feature adoption
 
-# # Fortgeschritten Analytics
+## Fortgeschritten Analytics
 
-# ## Predictive Analytics
+### Predictive Analytics
 - **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
 - **Risk Modeling**: Credit scoring, fraud detection, insurance
 - **Customer Analytics**: Churn prediction, propensity modeling
-- **Demund Forecasting**: Inventory optimization, supply chain
+- **Demand Forecasting**: Inventory optimization, supply chain
 - **Maintenance Prediction**: Equipment failure anticipation
 
-# ## Prescriptive Analytics
+### Prescriptive Analytics
 - **Optimization**: Linear programming, integer programming
 - **Simulation**: Monte Carlo methods, discrete event simulation
 - **Decision Analysis**: Decision trees, influence diagrams
 - **A/B Testen**: Experimental design, statistical significance
-- **Multi-Armed Bundits**: Adaptive experimentation
+- **Multi-Armed Bandits**: Adaptive experimentation
 
-# ## Text Analytics (NLP)
+### Text Analytics (NLP)
 - **Text Preprocessing**: Tokenization, stemming, lemmatization
 - **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF für der/die/dasme discovery
+- **Topic Modeling**: LDA, NMF für theme discovery
 - **Named Entity Recognition**: Identifying people, places, organizations
 - **Text Classification**: Spam detection, categorization
 - **Word Embeddings**: Word2Vec, GloVe, BERT
 
-# # Daten Ethics und Governance
+## Daten Ethics und Governance
 
-# ## Daten Privacy
+### Daten Privacy
 - **GDPR**: EU General Daten Protection Regulation
-- **CCPA**: Califürnia Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability und Accountability Act (US gesundheitswesen)
-- **Anonymization**: Removing personally identifiable infürmation
+- **CCPA**: California Consumer Privacy Act
+- **HIPAA**: Health Insurance Portability und Accountability Act (US Gesundheitswesen)
+- **Anonymization**: Removing personally identifiable information
 - **Differential Privacy**: Adding noise to protect individuals
 - **Consent Verwaltung**: Opt-in/opt-out mechanisms
 
-# ## Daten Quality
-- **Accuracy**: Correctness von daten
-- **Completeness**: All required daten present
+### Daten Quality
+- **Accuracy**: Correctness von Daten
+- **Completeness**: All required Daten present
 - **Consistency**: No contradictions across sources
-- **Timeliness**: Daten available when needed
-- **Validity**: Confürms to defined rules
+- **Timeliness**: Daten Verfügbar when needed
+- **Validity**: Conforms to defined rules
 - **Uniqueness**: No duplicates
 
-# ## Bias und Fairness
-- **Sampling Bias**: Non-representative daten collection
-- **Measurement Bias**: Frechted daten collection instruments
+### Bias und Fairness
+- **Sampling Bias**: Non-representative Daten collection
+- **Measurement Bias**: Flawed Daten collection instruments
 - **Algorithmic Bias**: Discriminatory model predictions
 - **Fairness Metrics**: Demographic parity, equal opportunity
 - **Bias Mitigation**: Pre-processing, in-processing, post-processing
 
-# ## Daten Governance Framework
-- **Daten Stewardship**: Responsibility für daten assets
-- **Metadaten Verwaltung**: Daten about daten documentation
-- **Daten Lineage**: Tracking daten flow und transfürmations
+### Daten Governance Framework
+- **Daten Stewardship**: Responsibility für Daten assets
+- **Metadata Verwaltung**: Daten about Daten documentation
+- **Daten Lineage**: Tracking Daten flow und transformations
 - **Access Control**: Role-based permissions
-- **Audit Trails**: Logging daten access und changes
+- **Audit Trails**: Logging Daten access und changes
 - **Compliance**: Regulatory adherence
 
-# # Career Paths in Daten Wissenschaft
+## Career Paths in Daten Wissenschaft
 
-# ## Roles
+### Roles
 - **Daten Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **Daten Scientist**: Statistical modeling, maschinelles lernen, fortgeschritten analytics
-- **ML Engineer**: Production ML systeme, model bereitstellung, MLOps
+- **Daten Scientist**: Statistical modeling, Maschinelles Lernen, Fortgeschritten analytics
+- **ML Engineer**: Production ML Systeme, model Bereitstellung, MLOps
 - **Daten Engineer**: Daten pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder verwaltung
-- **BI Developer**: Dashboard creation, report entwicklung
-- **Research Scientist**: Novel algorithms, publications, fortgeschritten research
+- **Analytics Manager**: Team leadership, strategy, stakeholder Verwaltung
+- **BI Developer**: Dashboard creation, report Entwicklung
+- **Research Scientist**: Novel algorithms, publications, Fortgeschritten research
 
-# ## Skills Matrix
-- **Technical**: Python/R, SQL, statistiken, ML frameworks, cloud platfürms
+### Skills Matrix
+- **Technical**: Python/R, SQL, Statistiken, ML frameworks, cloud platforms
 - **Analytical**: Problem-solving, critical thinking, experimental design
 - **Kommunikation**: Storytelling, visualization, presentation skills
-- **Geschäft**: Domain knowledge, stakeholder verwaltung, ROI analysis
+- **Geschäft**: Domain knowledge, stakeholder Verwaltung, ROI analysis
 - **Tools**: Git, Jupyter, Docker, CI/CD, version control für models
 
-# # Emerging Trends
+## Emerging Trends
 
-# ## Current Entwicklungs
-- **AutoML**: Automated maschinelles lernen pipeline creation
-- **MLOps**: DevOps practices für maschinelles lernen
-- **Feature Stores**: Centralized feature verwaltung
-- **Daten Mesh**: Decentralized daten architektur
-- **LLMs und Generative AI**: Large sprache models, content generation
-- **Edge Analytics**: Processing daten at source devices
-- **Real-Time Analytics**: Streaming daten analysis
-- **Augmented Analytics**: AI-assisted daten preparation und insights
+### Current Developments
+- **AutoML**: Automated Maschinelles Lernen pipeline creation
+- **MLOps**: DevOps practices für Maschinelles Lernen
+- **Feature Stores**: Centralized feature Verwaltung
+- **Daten Mesh**: Decentralized Daten Architektur
+- **LLMs und Generative AI**: Large Sprache models, content generation
+- **Edge Analytics**: Processing Daten at source devices
+- **Real-Time Analytics**: Streaming Daten analysis
+- **Augmented Analytics**: AI-assisted Daten preparation und insights
 
-# ## Zukunft Directions
-- **Quantum Maschinelles Lernen**: Quantum datenverarbeitung für ML
-- **Federated Learning**: Training models across decentralized daten
+### Zukunft Directions
+- **Quantum Maschinelles Lernen**: Quantum Datenverarbeitung für ML
+- **Federated Learning**: Training models across decentralized Daten
 - **Causal Inference**: Moving beyond correlation to causation
 - **Responsible AI**: Ethics, explainability, transparency
-- **Daten Fabric**: Integrated daten verwaltung across environments
+- **Daten Fabric**: Integrated Daten Verwaltung across environments

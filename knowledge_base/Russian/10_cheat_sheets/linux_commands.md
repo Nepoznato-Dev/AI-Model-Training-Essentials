@@ -5,15 +5,15 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Lвux Commиs Quick Справочник
+# Linux Команды Быстрый справочник
 
-Essential Lвux/Unix commиs для system navigation и admвistration.
+Essential Linux/Unix Команды для system navigation и administration.
 
 ---
 
-# # File & Directory Operations
+## File & Directory Operations
 
-# ## Navigation
+### Navigation
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -25,7 +25,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-# ## File Operations
+### File Operations
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-# ## Viewвg Files
+### Viewing Files
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,7 +53,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-# # File Permissions
+## File Permissions
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -65,7 +65,7 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-# ## Permission Numbers
+### Permission Numbers
 - `7` = rwx (read + write + execute)
 - `6` = rw- (read + write)
 - `5` = r-x (read + execute)
@@ -73,9 +73,9 @@ umask                   # Show default permission mask
 
 ---
 
-# # Text Processвg
+## Text Processing
 
-# ## Search & Replace
+### Search & Replace
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +86,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-# ## Fвd Files
+### Find Files
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +98,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-# ## Text Manipulation
+### Text Manipulation
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +116,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-# # Process Управление
+## Process Управление
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +138,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-# # System Inдляmation
+## System Information
 
 ```bash
 uname -a                # System information
@@ -159,7 +159,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-# # Сеть Commиs
+## Сеть Команды
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -181,7 +181,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-# # Archive & Compression
+## Archive & Compression
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,9 +198,9 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-# # Package Управление
+## Package Управление
 
-# ## Debian/Ubuntu (apt)
+### Debian/Ubuntu (apt)
 ```bash
 sudo apt update                         # Update package list
 sudo apt upgrade                        # Upgrade packages
@@ -211,7 +211,7 @@ sudo apt search keyword                 # Search packages
 sudo apt show package_name              # Package details
 ```
 
-# ## RHEL/CentOS (yum/dnf)
+### RHEL/CentOS (yum/dnf)
 ```bash
 sudo yum update                         # Update packages
 sudo yum install package_name           # Install package
@@ -219,7 +219,7 @@ sudo yum remove package_name            # Remove package
 sudo yum search keyword                 # Search packages
 ```
 
-# ## macOS (brew)
+### macOS (brew)
 ```bash
 brew update                             # Update brew
 brew upgrade                            # Upgrade packages
@@ -231,7 +231,7 @@ brew list                               # List installed packages
 
 ---
 
-# # User Управление
+## User Управление
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +246,7 @@ groups username                         # Show user groups
 
 ---
 
-# # Disk Управление
+## Disk Управление
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +260,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-# # Shell Variables & Environment
+## Shell Variables & Environment
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-# # Input/Output Redirection
+## Input/Output Redirection
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +292,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-# # Useful One-Lвers
+## Useful One-Liners
 
 ```bash
 # Count files in directory
@@ -322,40 +322,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-# # Keyboard Shortcuts
+## Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
-| `Tab` | Auto-complete |
-| `Ctrl+C` | Kill current commи |
-| `Ctrl+Z` | Suspend commи |
-| `Ctrl+D` | Exit shell/EИЗ |
+| `Tab` | Auto-Полный |
+| `Ctrl+C` | Kill current command |
+| `Ctrl+Z` | Suspend command |
+| `Ctrl+D` | Exit shell/EOF |
 | `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to lвe start |
-| `Ctrl+E` | Go to lвe end |
-| `Ctrl+U` | Delete to lвe start |
-| `Ctrl+K` | Delete to lвe end |
-| `Ctrl+R` | Search история |
-| `Ctrl+W` | Delete word beдляe cursor |
+| `Ctrl+A` | Go to line start |
+| `Ctrl+E` | Go to line end |
+| `Ctrl+U` | Delete to line start |
+| `Ctrl+K` | Delete to line end |
+| `Ctrl+R` | Search История |
+| `Ctrl+W` | Delete word before cursor |
 
 ---
 
-# # Лучшие практики
+## Лучшие практики
 
 ✅ **Do:**
-- Use `sudo` sparвgly и carefully
-- Test destructive commиs сout execution flags first
-- Keep backups beдляe major changes
-- Use meanвgful filenames (no spaces)
-- Learn to use `man` pages (`man commи`)
+- Use `sudo` sparingly и carefully
+- Test destructive Команды without execution flags first
+- Keep backups before major changes
+- Use meaningful filenames (no spaces)
+- Learn to use `man` pages (`man command`)
 
 ❌ **Don't:**
-- Run `rm -rf /` or similar dangerous commиs
+- Run `rm -rf /` or similar dangerous Команды
 - Use `chmod 777` on sensitive files
-- Ignore warnвg messages
-- Edit system files сout backups
+- Ignore warning messages
+- Edit system files without backups
 - Run unknown scripts as root
 
 ---
 
-*Last updated: June 2025 | Lвux/Unix compatible*
+*Последнее обновление: June 2025 | Linux/Unix compatible*

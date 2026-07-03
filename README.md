@@ -5,7 +5,7 @@
 A comprehensive, structured knowledge base and configuration repository for AI agents, providing multi-language knowledge files, skill definitions, and agent mode configurations to enhance AI agent capabilities across diverse domains and interaction patterns.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Languages](https://img.shields.io/badge/languages-12-multicolor)](knowledge_base/)
+[![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)
 [![Knowledge Files](https://img.shields.io/badge/knowledge_files-36+-green)](knowledge_base/English/)
 [![Skills](https://img.shields.io/badge/skills-40+-orange)](skills/)
 
@@ -33,7 +33,7 @@ This repository serves as a foundational framework for AI agent development, pro
 - **Structured Knowledge**: 36+ domain-specific knowledge files organized by category
 - **Skill Definitions**: 40+ skill modules covering behavior, design, communication, and technical capabilities
 - **Agent Configurations**: 5 pre-configured agent modes for different interaction patterns
-- **Multi-Language Support**: Knowledge base available in 12 languages
+- **Multi-Language Support**: Knowledge base available in 18 languages
 
 ---
 
@@ -48,12 +48,13 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── German/              # German knowledge base
 │   ├── Japanese/            # Japanese knowledge base
 │   ├── Korean/              # Korean knowledge base
-│   ├── Mandarin (Simplified Chinese)/
-│   ├── Mandarin (Traditional Chinese)/
+│   ├── Mandarin (Simplified Chinese)/ # Simplified Chinese knowledge base
+│   ├── Mandarin (Traditional Chinese)/ # Traditional Chinese knowledge base
 │   ├── Portuguese/          # Portuguese knowledge base
 │   ├── Russian/             # Russian knowledge base
 │   ├── Spanish/             # Spanish knowledge base
-│   └── Turkish/             # Turkish knowledge base
+│   ├── Turkish/             # Turkish knowledge base
+│   └── (6 planned languages are documented in the Multi-Language Support table below, in addition to the 12 existing directories above)
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -74,10 +75,11 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
 │   └── Review.Agent.md      # Review mode
-├── translate_kb.py          # Knowledge base translation utility
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
+
+Legacy note: `translate_kb.py` remains in the repository for reference only, but manual updates are the preferred approach because the script can corrupt formatting.
 
 ---
 
@@ -233,7 +235,7 @@ Each agent mode includes:
 
 ## 🌍 Multi-Language Support
 
-The knowledge base is available in **12 languages**:
+The knowledge base supports **18 languages**: 12 currently available and 6 planned.
 
 | Language | Directory | Status |
 |----------|-----------|--------|
@@ -241,22 +243,20 @@ The knowledge base is available in **12 languages**:
 | English | `English/` | ✅ Complete (36 files) |
 | French | `French/` | ✅ Available |
 | German | `German/` | ✅ Available |
+| Indonesian | `Indonesian/` | 🟡 Planned |
+| Italian | `Italian/` | 🟡 Planned |
 | Japanese | `Japanese/` | ✅ Available |
 | Korean | `Korean/` | ✅ Available |
 | Mandarin (Simplified) | `Mandarin (Simplified Chinese)/` | ✅ Available |
 | Mandarin (Traditional) | `Mandarin (Traditional Chinese)/` | ✅ Available |
+| Persian | `Persian/` | 🟡 Planned |
+| Polish | `Polish/` | 🟡 Planned |
 | Portuguese | `Portuguese/` | ✅ Available |
 | Russian | `Russian/` | ✅ Available |
 | Spanish | `Spanish/` | ✅ Available |
+| Thai | `Thai/` | 🟡 Planned |
 | Turkish | `Turkish/` | ✅ Available |
-
-### Translation Utility
-
-Use the included `translate_kb.py` script to assist with knowledge base translations:
-
-```bash
-python translate_kb.py --source English --target Spanish
-```
+| Vietnamese | `Vietnamese/` | 🟡 Planned |
 
 ---
 
@@ -293,7 +293,7 @@ python translate_kb.py --source English --target Spanish
 #### Adding Knowledge Files
 1. Create new `.md` file in appropriate category under `knowledge_base/English/`
 2. Follow the standard format (see [File Formats](#-file-formats))
-3. Update translations in other language directories
+3. Update the relevant language directories manually
 4. Add entry to this README
 
 #### Adding Skills
@@ -390,7 +390,7 @@ This repository serves as:
 - ✅ **Structured Knowledge Base**: Organized, domain-specific information for AI reference
 - ✅ **Skill Library**: Modular capabilities for enhancing agent performance
 - ✅ **Configuration Hub**: Centralized agent mode definitions
-- ✅ **Multi-Language Resource**: Globally accessible knowledge in 12 languages
+- ✅ **Multi-Language Resource**: Globally accessible knowledge in 18 languages
 - ✅ **Extensible Framework**: Maintainable and scalable architecture for AI development
 - ✅ **Collaboration Platform**: Standardized formats for team contributions
 

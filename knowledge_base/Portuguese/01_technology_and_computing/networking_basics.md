@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Redeemg Básico
+# Networking Básico
 
-A practical referência para developers e sysadmems — core concepts, protocols, commes, e troubleshootemg.
+A practical Referência para developers e sysadmins — core concepts, protocols, Comandos, e troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## o/a OSI Model (7 Layers)
 
-A conceptual framework para understeemg rede comunicação.
+A conceptual framework para understanding Rede Comunicação.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Dados paramattemg, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection gerenciamento | NetBIOS, RPC |
+| 6 | Presentation | Dados formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection Gerenciamento | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Rede | Routemg, addressemg | IP, ICMP, OSPF, BGP |
-| 2 | Dados Lemk | Framemg, error detection, MAC addresses | Eo/arnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Eo/arnet cables, fiber optics, radio waves |
+| 3 | Rede | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Dados Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: Lemk, Internet, Transport, Application) is more commonly used para o/a emternet.
+em practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used para o/a internet.
 
 ---
 
-# # IP Addressemg
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
 - Total: ~4.3 billion addresses (but exhausted em practice).
 
-# ## IPv6
+### IPv6
 - 128-bit address, written em hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically emfemite).
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on o/a emternet; used emside local redes:
+### Private IP Ranges (RFC 1918)
+These are not routable on o/a internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means o/a first 24 bits are o/a rede prefix; o/a last 8 bits are hosts. It emcludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means o/a first 24 bits are o/a Rede prefix; o/a last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Domaem Name System)
+## DNS (Domain Name System)
 
-Maps domaem names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domaem to IPv4 address |
-| **AAAA** | Maps domaem to IPv6 address |
-| **CNAME** | Alias to anoo/ar domaem name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver para o/a domaem |
+| **NS** | Nameserver para o/a domain |
 | **SRV** | Service record (e.g., para SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps e System Admemistration
+# DevOps e System Administration
 
-A practical guia to managemg servers, automatemg operations, e maemtaememg reliable emfrastructure.
+A practical Guia to managing servers, automating operations, e maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

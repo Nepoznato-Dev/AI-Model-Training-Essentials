@@ -1,186 +1,181 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: ml_evaluation_and_workflow.md
+Source: prompt_engineering.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Machdanse Learndansg Evaluation et Workflow
+# Prompt Engineering
 
-A practical guide to le/la ML lifecycle — from problem framdansg to production monitordansg — avec a focus on metrics, validation, et debuggdansg.
-
----
-
-# # The ML Workflow (CRISP-ML)
-
-1. **Busdansess Understetdansg**: Defdanse le/la objective et success criteria.
-2. **Données Understetdansg**: Explore available données, identify quality issues.
-3. **Données Preparation**: Clean, transpourm, et split données.
-4. **Modelldansg**: Tradans models, tune hyperparameters.
-5. **Evaluation**: Assess perpourmance agadansst metrics.
-6. **Déploiement**: Serve le/la model dans production.
-7. **Monitordansg**: Track drift, perpourmance, et anomalies.
-
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
+Prompt engineering is le/la practice de designing, refining, et optimising input prompts to get le/la best possible output from a Langue model. It is both an art et a Science, et it is le/la primary interface pour controlling LLM behaviour without fine-tuning.
 
 ---
 
-# # Données Splittdansg
+## Core Principles
 
-# ## Tradans / Validation / Test Split
-- **Tradansdansg set** (~70%): Used to fit le/la model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters et select model variants.
-- **Test set** (~15%): Used only once at le/la very end to estimate generalisation perpourmance.
+### Clarity et Specificity
+A clear prompt leaves no room pour ambiguity. Specify exactly what you want, including format, length, et perspective.
 
-**Important:** The test set must be kept completely untouched until fdansal evaluation to avoid données leakage.
+**Vague:**
+> "Tell me about Python."
 
-# ## Cross-Validation (k-fold)
-For small donnéessets, use k-fold cross-validation: split données dansto k folds, tradans on k-1, validate on le/la remadansdansg, et repeat k times. Average le/la perpourmance. k=5 or k=10 is common.
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, et keep your answer under 200 words."
 
-# ## Stratified Splittdansg
-For classification avec imbalanced classes, use stratified splits to preserve class proportions dans each subset.
+### Provide Context
+Models perform better when they know le/la role, audience, et goal.
 
-# ## Time-Based Splittdansg
-For time-series données, split chronologically (tradans on past, test on futur) rale/lar than retomly.
+**Without context:**
+> "Write a function to sort a list."
 
----
+**avec context:**
+> "You are a senior Python developer. Write a function to sort a list de dictionaries by a given key. Use type hints et handle edge cases. le/la audience is junior developers."
 
-# # Evaluation Metrics
-
-# ## Classification Metrics
-
-| Metric | What it measures | Best used pour |
-|--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced donnéessets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screendansg) |
-| **F1-score** | Harmonic mean de precision et recall | Imbalanced donnéessets, sdansgle-number metric |
-| **AUC-ROC** | Area under le/la ROC curve; tradedef between TPR et FPR | General classifier perpourmance dansdependent de threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced donnéessets |
-
-**Defdansitions:**
-- TP = True Positive
-- TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
-
-# ## Regression Metrics
-
-| Metric | What it measures | Sensitivity to outliers |
-|--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient de Determdansation) | Proportion de variance expladansed | None directly, but sensitive to outliers dansdirectly |
-
-# ## Rankdansg et Retrieval Metrics
-- **Precision@k**: Fraction de relevant items among top-k recommendations.
-- **Recall@k**: Fraction de all relevant items that appear dans top-k.
-- **NDCG** (Normalised Discounted Cumulative Gadans): Accounts pour position relevance.
-- **Hit Rate**: Whele/lar a relevant item appears dans le/la top-k.
-
-# ## Generative / LLM Metrics
-- **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap avec référence translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap pour summarisation.
-- **BERTScore**: Semantic similarity usdansg contextual embedddansgs (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms et stems.
+### Use Positive Instructions
+Tell le/la model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Langue accessible to a 10-year-old."
 
 ---
 
-# # Evaluation Pitfalls
+## Prompt Structures
 
-# ## Données Leakage
-Occurs when danspourmation from le/la test set dansadvertently dansfluences tradansdansg.
-- **Prevent:** Never use test données pour feature engdanseerdansg, normalisation, or hyperparameter tundansg.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
+### System / User / Assistant Roles
+Most LLM APIs Assistance a multi-turn structure:
 
-# ## Overfittdansg
-Model perpourms well on tradansdansg données but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stoppdansg, simplify architecture, or collect more données.
+- **System message**: Sets le/la model's behaviour, persona, et constraints (persists pour le/la whole session).
+- **User message**: le/la current query or instruction.
+- **Assistant message**: le/la model's previous responses (used pour continuity).
 
-# ## Underfittdansg
-Model perpourms poorly on both tradansdansg et validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply avec concise code Exemples et brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
-# ## Imbalanced Données
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rale/lar than accuracy.
+### Few-Shot Prompting
+Provide 2–3 Exemples de le/la desired input-output format before asking le/la model to perform le/la task. This teaches le/la pattern.
 
-# ## Temporal Drift (Concept Drift)
-The relationship between features et target changes over time.
-- **Mitigate:** Retradans periodically, monitor perpourmance, use drift detection algorithms.
+**Example:**
+User: Convert these sentences to passive voice:
+Input: le/la cat chased le/la mouse.
+Output: le/la mouse was chased by le/la cat.
+Input: le/la chef cooked le/la meal.
+Output: le/la meal was cooked by le/la chef.
+Input: le/la storm destroyed le/la house.
+Output: (model completes)
 
----
+### Chain-de-Thought (CoT)
+Encourage le/la model to show its reasoning step by step. This improves accuracy on arithmetic, logic, et multi-step tasks.
 
-# # Hyperparameter Tundansg
+**Without CoT:**
+> "What is 24 × 37?"
 
-- **Grid Search**: Exhaustively try all combdansations de a predefdansed set de hyperparameters. Simple but computationally expensive.
-- **Retom Search**: Sample retom combdansations from distributions. More efficient than grid search pour high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model de le/la objective function et selects hyperparameters danstelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tundansg**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps pour distributed tundansg.
+**avec CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
 
-**Suggested search ranges pour common hyperparameters:**
+le/la model will produce intermediate steps, reducing arithmetic errors.
 
-| Parameter | Suggested range (log-scale) |
-|-----------|-----------------------------|
-| Learndansg rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number de layers (NN) | 2 to 6 |
-| Number de neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros et three cons de microservices. Return only a valid JSON object avec keys "pros" et "cons", each an array de strings.
 
 ---
 
-# # Model Selection et Validation
+## Avancé Techniques
 
-1. **Baseldanse model**: Start avec a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Cetidate models**: Tradans multiple model families (e.g., Retom Forest, XGBoost, Neural Réseau).
-3. **Cross-validate** each cetidate on le/la validation set.
-4. **Compare metrics** (avec confidence danstervals) et select le/la best cetidate.
-5. **Fdansal evaluation** on le/la held-out test set.
-6. **Error analysis**: Look at exemples le/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous dansputs) et feed danssights back dansto données preparation or feature engdanseerdansg.
+### Self-Consistency
+Generate multiple responses pour le/la same prompt (avec a temperature > 0) et take a majority vote on le/la final answer. This is especially effective pour reasoning tasks.
 
----
+### Tree-de-Thoughts
+Explore multiple reasoning paths dans parallel, evaluate each, et choose le/la best one. This is a research-level technique but can be approximated by asking le/la model to "explore alternative solutions."
 
-# # Déploiement et Monitordansg
+### ReAct (Reasoning + Acting)
+Let le/la model interleave reasoning avec tool calls. It can think, then act (e.g., search le/la Web, run code), then think again based on le/la result.
 
-# ## Servdansg Patterns
-- **Batch dansference**: Process large volumes de données defldanse (e.g., nightly recommendations).
-- **Onldanse dansference**: Real-time predictions via API (e.g., credit scordansg, fraud detection).
-- **Streamdansg dansference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
+**Prompt structure:**
+You have access to a calculator et a search engine. pour each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have le/la final answer.
 
-# ## Model Monitordansg
-- **Perpourmance monitordansg**: Track accuracy/F1 over time on live données (when ground truth is available).
-- **Données drift**: Monitor changes dans dansput feature distributions (e.g., usdansg PSI – Population Stability Index).
-- **Concept drift**: Monitor changes dans le/la relationship between dansputs et outputs.
-- **Prediction drift**: Track le/la distribution de predicted outputs.
-- **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
+### Persona Assignment
+Assign a specific persona to frame le/la response.
 
-# ## Loggdansg et Alertdansg
-- Log all prediction requests et responses (avec anonymisation).
-- Set alerts pour:
-  - Significant drop dans perpourmance.
-  - High percentage de missdansg or dansvalid dansputs.
-  - Model outputs outside expected bounds.
-
-# ## Model Versiondansg et Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store et version models, metadonnées, et evaluation results.
-- Store le/la tradansdansg code et données version (via DVC or Git LFS) alongside le/la model.
+**Exemples:**
+- "You are a Linux kernel developer explaining memory Gestion to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-# # Practical Workflow Checklist
+## Parameter Tuning
 
-- [ ] Problem framed et success metric defdansed.
-- [ ] Données exploration perpourmed (missdansg values, outliers, distribution).
-- [ ] Tradans/validation/test split created (stratified if needed).
-- [ ] Baseldanse model established.
-- [ ] Cetidate models tradansed et validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Fdansal evaluation on test set.
-- [ ] Error analysis perpourmed.
-- [ ] Déploiement plan ready (servdansg dansfrastructure).
-- [ ] Monitordansg dashboard set up.
-- [ ] Documentation (données card, model card) completed.
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 pour factual answers; 0.7–1.0 pour creative writing.
+- **Top-p** (nucleus sampling): Cuts off le/la probability mass at a certain cumulative threshold. 0.9 means le/la model samples from le/la top 90% de likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets le/la maximum output length. Remember to reserve space pour le/la response within le/la context window.
+- **Frequency penalty**: Reduces repetition de le/la same tokens.
+- **Presence penalty**: Encourages le/la model to introduce new topics.
+
+---
+
+## Common Pitfalls et Fixes
+
+| Problem | Likely cause | Fix |
+|---------|--------------|-----|
+| Model ignores parts de prompt | Prompt too long or overloaded | Shorten; put le/la most important instruction at le/la end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain dans detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" et provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask pour JSON, markdown table, or bullet list |
+| Model answers dans wrong Langue | No Langue instruction | Explicitly state "Respond dans Anglais" (or your target Langue) |
+
+---
+
+## Prompt Templates pour Common Tasks
+
+### Summarisation
+Summarise le/la following text dans 3 bullet points. Focus on le/la main arguments et avoid details.
+
+Text: [insert text]
+
+
+### Code Generation
+Write a [Langue] function that [does X].
+Requirements:
+
+Use type hints.
+
+Include a docstring.
+
+Handle edge cases: [list].
+
+Do not use external libraries unless specified.
+
+
+### Explanation
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
+
+### Brainstorming
+Generate 10 ideas pour [topic]. pour each idea, give a one-sentence description et one potential challenge.
+
+text
+
+### Classification
+Classify le/la following customer Retour as [positive, neutral, negative].
+Provide a confidence score (0-100) et a brief reason.
+
+Retour: [insert text]
+
+### Translation avec Style
+Translate le/la following Anglais text to Spanish. Use an informal tone suitable pour a social media post.
+Text: [insert text]
+
+---
+
+## Evaluation de Prompts
+
+Treat prompts as code: version them, test them, et iterate.
+
+- **A/B test** different prompt variants on a held-out set de queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) avec le/la prompt, version, et observed Performance.
+
+---

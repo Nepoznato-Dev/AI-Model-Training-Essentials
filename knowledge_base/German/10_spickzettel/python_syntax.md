@@ -7,13 +7,13 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Python Syntax Cheat Sheet
 
-Quick referenz für Python 3.x syntax und common patterns.
+Schnellreferenz für Python 3.x Syntax und common patterns.
 
 ---
 
-# # Basic Syntax
+## Basic Syntax
 
-# ## Variables und Daten Types
+### Variables und Daten Types
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +32,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-# ## Strings
+### Strings
 ```python
 s = "Hello, World!"
 
@@ -54,9 +54,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-# # Control Flow
+## Control Flow
 
-# ## Conditionals
+### Conditionals
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +69,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-# ## Loops
+### Loops
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +93,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-# # Daten Structures
+## Daten Structures
 
-# ## Lists
+### Lists
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +113,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-# ## Dictionaries
+### Dictionaries
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +128,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-# ## Sets
+### Sets
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +140,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-# ## Tuples
+### Tuples
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +149,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-# # Functions
+## Functions
 
-# ## Definition
+### Definition
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +170,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-# ## Lambda Functions
+### Lambda Functions
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +178,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-# # Classes
+## Classes
 
 ```python
 class Person:
@@ -207,7 +207,7 @@ class Employee(Person):
 
 ---
 
-# # File I/O
+## File I/O
 
 ```python
 # Reading files
@@ -226,7 +226,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-# # Error Hundling
+## Error Handling
 
 ```python
 try:
@@ -248,7 +248,7 @@ raise ValueError("Invalid value")
 
 ---
 
-# # Modules und Imports
+## Modules und Imports
 
 ```python
 import math
@@ -263,9 +263,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-# # Common Patterns
+## Common Patterns
 
-# ## List Operations
+### List Operations
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +281,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-# ## String Operations
+### String Operations
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +297,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-# ## Wörterbuch Operations
+### Wörterbuch Operations
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +313,7 @@ for k, v in d.items():
 
 ---
 
-# # Built-in Functions
+## Built-in Functions
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,7 +329,7 @@ any(), all()
 
 ---
 
-# # Quick Tips
+## Quick Tips
 
 - Use `#` für single-line comments
 - Use `"""triple quotes"""` für docstrings und multi-line strings
@@ -341,4 +341,4 @@ any(), all()
 
 ---
 
-*Last updated: June 2025 | Python 3.x*
+*Zuletzt aktualisiert: June 2025 | Python 3.x*

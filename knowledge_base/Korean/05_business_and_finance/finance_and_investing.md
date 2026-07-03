@@ -5,363 +5,363 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# F에서ance 와 Invest에서g
+# 금융 와 투자
 
-# # Personal F에서ance 기초
+## Personal 금융 기초
 
-# ## F에서ancial Plann에서g 기본
-- **Budget에서g**: Track 에서come 와 expenses, 50/30/20 rule (needs/wants/sav에서gs)
-- **Emergency Fund**: 3-6 months 의 liv에서g expenses 에서 liquid account
-- **Net Worth**: Assets m에서us liabilities, track over time
+### Financial Planning 기본
+- **Budgeting**: Track income 와 expenses, 50/30/20 rule (needs/wants/savings)
+- **Emergency Fund**: 3-6 months 의 living expenses 에서 liquid account
+- **Net Worth**: Assets minus liabilities, track over time
 - **Cash Flow 관리**: Money 에서 vs. money out, positive cash flow essential
-- **F에서ancial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
 
-# ## Bank에서g Products
-- **Check에서g Accounts**: Daily transactions, debit cards, bill payments
-- **Sav에서gs Accounts**: Interest-bear에서g, limited 와 함께drawals
-- **Money Market Accounts**: Higher 에서terest, check-writ에서g privileges
-- **Certificates 의 Deposit (CDs)**: Fixed term, fixed rate, early 와 함께drawal penalty
-- **High-Yield Sav에서gs**: Onl에서e banks, competitive rates
+### Banking Products
+- **Checking Accounts**: Daily transactions, debit cards, bill payments
+- **Savings Accounts**: Interest-bearing, limited withdrawals
+- **Money Market Accounts**: Higher interest, check-writing privileges
+- **Certificates 의 Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
+- **High-Yield Savings**: Online banks, competitive rates
 
-# ## Credit 와 Debt
-- **Credit Score**: FICO (300-850), factors: payment 역사, utilization, length, mix, 에서quiries
+### Credit 와 Debt
+- **Credit Score**: FICO (300-850), factors: payment 역사, utilization, length, mix, inquiries
 - **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
 - **Types 의 Debt**: 
   - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high 에서terest)
+  - Bad debt: Credit cards, payday loans (high interest)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest 에서terest first (ma그matically optimal)
-  - Snowball: Pay smallest balance first (psychological w에서s)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly 에서come
+  - Avalanche: Pay highest interest first (mathematically optimal)
+  - Snowball: Pay smallest balance first (psychological wins)
+- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
-# # Investment 기초
+## Investment 기초
 
-# ## Asset Classes
+### Asset Classes
 
-# ### Equities (Stocks)
-- **Common Stock**: Ownership share, vot에서g rights, dividends
-- **Preferred Stock**: Fixed dividends, priority 에서 bankruptcy, no vot에서g
+#### Equities (Stocks)
+- **Common Stock**: Ownership share, voting rights, dividends
+- **Preferred Stock**: Fixed dividends, priority 에서 bankruptcy, no voting
 - **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, 에서come
-- **Sectors**: 기술, 의료, f에서ancials, consumer, 에서dustrial, energy, utilities, materials, real estate, 의사소통 services
+- **Investment Styles**: Growth, value, blend, income
+- **Sectors**: 기술, 의료, financials, consumer, industrial, energy, utilities, materials, real estate, 의사소통 services
 
-# ### Fixed Income (Bonds)
+#### Fixed Income (Bonds)
 - **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt 에서terest
+- **Municipal Bonds**: State/local government, tax-exempt interest
 - **Corporate Bonds**: Investment grade, high-yield/junk
 - **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move 에서versely to rates
-- **Credit Risk**: Default probability, credit rat에서gs (AAA to D)
+- **Interest Rate Risk**: Bond prices move inversely to rates
+- **Credit Risk**: Default probability, credit ratings (AAA to D)
 
-# ### Cash 와 Cash Equivalents
+#### Cash 와 Cash Equivalents
 - **Treasury Bills**: Short-term government debt
 - **Money Market Funds**: Stable NAV, liquid
 - **Commercial Paper**: Short-term corporate debt
 - **Characteristics**: Low risk, low return, high liquidity
 
-# ### Real Estate
-- **Direct Ownership**: Physical properties, rental 에서come
+#### Real Estate
+- **Direct Ownership**: Physical properties, rental income
 - **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfund에서g**: Plat위한m-based property 에서vestment
-- **Characteristics**: Income generation, appreciation, 에서flation hedge
+- **Real Estate Crowdfunding**: Platform-based property investment
+- **Characteristics**: Income generation, appreciation, inflation hedge
 
-# ### Alternative Investments
+#### Alternative Investments
 - **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitco에서, E그reum, digital assets
+- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
 - **Private Equity**: Direct company ownership, illiquid
 - **Hedge Funds**: Active 관리, diverse strategies
-- **Collectibles**: Art, w에서e, rare items
+- **Collectibles**: Art, wine, rare items
 
-# ## Investment Vehicles
+### Investment Vehicles
 
-# ### Mutual Funds
-- Pr의essionally managed portfolios
+#### Mutual Funds
+- Professionally managed portfolios
 - Priced at end-의-day NAV
 - Active or passive 관리
 - Load vs. no-load funds
 - Expense ratios vary widely
 
-# ### Exchange-Traded Funds (ETFs)
+#### Exchange-Traded Funds (ETFs)
 - Trade like stocks throughout day
-- Typically passive, 에서dex-track에서g
+- Typically passive, index-tracking
 - Lower expense ratios than mutual funds
 - Tax-efficient structure
 - 예시: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
 
-# ### Index Funds
-- Passive 관리 track에서g specific 에서dex
+#### Index Funds
+- Passive 관리 tracking specific index
 - Low costs, broad diversification
-- 예시: Total stock market, S&P 500, 에서ternational
+- 예시: Total stock market, S&P 500, international
 
-# ### Annuities
-- Insurance products provid에서g 에서come streams
-- Fixed, variable, or 에서dexed returns
+#### Annuities
+- Insurance products providing income streams
+- Fixed, variable, or indexed returns
 - Immediate or deferred payout
 - Tax-deferred growth
 
-# # Investment Strategies
+## Investment Strategies
 
-# ## Portfolio Construction
+### Portfolio Construction
 - **Asset Allocation**: Distribution across asset classes
 - **Diversification**: Spread risk across securities, sectors, geographies
 - **Modern Portfolio Theory**: Optimize risk-return through diversification
 - **Efficient Frontier**: Maximum return 위한 given risk level
-- **Correlation**: How assets move relative to each o그r
+- **Correlation**: How assets move relative to each other
 
-# ## Investment Approaches
-- **Passive Invest에서g**: Index funds, buy-와-hold, low costs
-- **Active Invest에서g**: Stock pick에서g, market tim에서g, higher costs
-- **Dollar-Cost Averag에서g**: Invest fixed amounts regularly regardless 의 price
-- **Value Invest에서g**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Invest에서g**: Focus on companies 와 함께 above-average growth
-- **Income Invest에서g**: Prioritize dividends 와 에서terest payments
-- **ESG Invest에서g**: 환경, social, governance factors
+### Investment Approaches
+- **Passive 투자**: Index funds, buy-와-hold, low costs
+- **Active 투자**: Stock picking, market timing, higher costs
+- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless 의 price
+- **Value 투자**: Buy undervalued securities (Warren Buffett approach)
+- **Growth 투자**: Focus on companies 와 함께 above-average growth
+- **Income 투자**: Prioritize dividends 와 interest payments
+- **ESG 투자**: 환경, social, governance factors
 
-# ## Risk 관리
-- **Risk Tolerance**: Ability 와 will에서gness to lose money
+### Risk 관리
+- **Risk Tolerance**: Ability 와 willingness to lose money
 - **Time Horizon**: When you need 그 money affects risk capacity
-- **Position Siz에서g**: Don't concentrate too much 에서 s에서gle 에서vestment
-- **Stop-Loss Orders**: Automatic sell at predeterm에서ed price
-- **Rebalanc에서g**: Restore target allocation periodically
-- **Hedg에서g**: Options, 에서verse ETFs to reduce downside
+- **Position Sizing**: Don't concentrate too much 에서 single investment
+- **Stop-Loss Orders**: Automatic sell at predetermined price
+- **Rebalancing**: Restore target allocation periodically
+- **Hedging**: Options, inverse ETFs to reduce downside
 
-# # Retirement Plann에서g
+## Retirement Planning
 
-# ## Retirement Accounts (US)
+### Retirement Accounts (US)
 
-# ### Traditional IRA
-- Tax-deductible contributions (에서come limits apply)
+#### Traditional IRA
+- Tax-deductible contributions (income limits apply)
 - Tax-deferred growth
-- Taxed upon 와 함께drawal
-- Required M에서imum Distributions (RMDs) at age 73
+- Taxed upon withdrawal
+- Required Minimum Distributions (RMDs) at age 73
 
-# ### Roth IRA
+#### Roth IRA
 - After-tax contributions
-- Tax-free growth 와 와 함께drawals
-- No RMDs dur에서g lifetime
+- Tax-free growth 와 withdrawals
+- No RMDs during lifetime
 - Income limits 위한 eligibility
 
-# ### 401(k) Plans
+#### 401(k) Plans
 - Employer-sponsored retirement plans
 - Pre-tax or Roth (after-tax) options
-- Employer match에서g (free money)
+- Employer matching (free money)
 - Higher contribution limits than IRAs
-- Vest에서g schedules 위한 employer contributions
+- Vesting schedules 위한 employer contributions
 
-# ### O그r Plans
-- **403(b)**: Non-pr의it organizations
+#### Other Plans
+- **403(b)**: Non-profit organizations
 - **457**: Government employees
-- **SEP IRA**: Self-employed, small bus에서ess
+- **SEP IRA**: Self-employed, small 비즈니스
 - **Solo 401(k)**: Self-employed 와 함께 no employees
 
-# ## Retirement Plann에서g Concepts
-- **Replacement Ratio**: 70-80% 의 pre-retirement 에서come typically needed
+### Retirement Planning Concepts
+- **Replacement Ratio**: 70-80% 의 pre-retirement income typically needed
 - **Social 보안**: Government benefit, claim between 62-70
-- **Pension Plans**: Def에서ed benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spend에서g, bucket strategy
-- **의료 Costs**: Medicare, supplemental 에서surance, long-term care
+- **Pension Plans**: Defined benefit (employer guarantees payout)
+- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
+- **의료 Costs**: Medicare, supplemental insurance, long-term care
 
-# # Market Mechanics
+## Market Mechanics
 
-# ## Stock Exchanges
+### Stock Exchanges
 - **NYSE**: New York Stock Exchange, auction-based
 - **Nasdaq**: Electronic exchange, 기술-heavy
-- **O그r Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-# ## Order Types
+### Order Types
 - **Market Order**: Execute immediately at current price
 - **Limit Order**: Execute only at specified price or better
 - **Stop Order**: Becomes market order when stop price reached
 - **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trail에서g Stop**: Stop price follows stock price movement
+- **Trailing Stop**: Stop price follows stock price movement
 
-# ## Trad에서g Concepts
-- **Bid-Ask Spread**: Difference between buy에서g 와 sell에서g price
+### Trading Concepts
+- **Bid-Ask Spread**: Difference between buying 와 selling price
 - **Volume**: Number 의 shares traded
-- **Liquidity**: Ease 의 buy에서g/sell에서g 와 함께out affect에서g price
+- **Liquidity**: Ease 의 buying/selling without affecting price
 - **Volatility**: Price fluctuation magnitude
-- **Short Sell에서g**: Borrow shares, sell, hope to buy back cheaper
-- **Marg에서 Trad에서g**: Borrow money to 에서vest, amplified ga에서s/losses
+- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
+- **Margin Trading**: Borrow money to invest, amplified gains/losses
 
-# ## Market Indicators
+### Market Indicators
 - **S&P 500**: 500 largest US companies
 - **Dow Jones Industrial Average**: 30 large blue-chip companies
 - **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
 - **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility 에서dex, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic 에서dicator
+- **VIX**: Volatility index, "fear gauge"
+- **Yield Curve**: Bond yields across maturities, economic indicator
 
-# # Fundamental Analysis
+## Fundamental Analysis
 
-# ## F에서ancial Statements
+### Financial Statements
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operat에서g, 에서vest에서g, f에서anc에서g activities
+- **Cash Flow Statement**: Operating, 투자, financing activities
 
-# ## Key Ratios
+### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earn에서gs): Share price / earn에서gs per share
+  - P/E (Price-to-Earnings): Share price / earnings per share
   - P/B (Price-to-Book): Market value / book value
   - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earn에서gs be위한e 에서terest, taxes, depreciation, amortization
+  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
-- **Pr의itability Ratios**:
-  - Gross Marg에서: Gross pr의it / revenue
-  - Operat에서g Marg에서: Operat에서g 에서come / revenue
-  - Net Marg에서: Net 에서come / revenue
-  - ROE (Return on Equity): Net 에서come / shareholders' equity
-  - ROA (Return on Assets): Net 에서come / total assets
+- **Profitability Ratios**:
+  - Gross Margin: Gross profit / revenue
+  - Operating Margin: Operating income / revenue
+  - Net Margin: Net income / revenue
+  - ROE (Return on Equity): Net income / shareholders' equity
+  - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
   - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - 에서ventory) / current liabilities
+  - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
   - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / 에서terest expense
+  - Interest Coverage: EBIT / interest expense
 
-# ## Qualitative Factors
+### Qualitative Factors
 - **관리 Quality**: Track record, alignment 와 함께 shareholders
 - **Competitive Advantage**: Moat, barriers to entry
 - **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board 에서dependence, shareholder rights
+- **Corporate Governance**: Board independence, shareholder rights
 
-# # Technical Analysis
+## Technical Analysis
 
-# ## Chart Types
-- **L에서e Ch예술**: Clos에서g prices over time
-- **Bar Ch예술**: Open, high, low, close (OHLC)
-- **C와lestick Ch예술**: Visual OHLC, bullish/bearish patterns
+### Chart Types
+- **Line Charts**: Closing prices over time
+- **Bar Charts**: Open, high, low, close (OHLC)
+- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
 
-# ## Trend Analysis
-- **Support**: Price level where buy에서g pressure exceeds sell에서g
-- **Resistance**: Price level where sell에서g pressure exceeds buy에서g
-- **Trendl에서es**: Connect highs or lows to show direction
-- **Mov에서g Averages**: SMA (simple), EMA (exponential)
+### Trend Analysis
+- **지원**: Price level where buying pressure exceeds selling
+- **Resistance**: Price level where selling pressure exceeds buying
+- **Trendlines**: Connect highs or lows to show direction
+- **Moving Averages**: SMA (simple), EMA (exponential)
 - **Golden Cross**: Short MA crosses above long MA (bullish)
 - **Death Cross**: Short MA crosses below long MA (bearish)
 
-# ## Technical Indicators
+### Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Mov에서g Average Convergence Divergence
-- **Boll에서ger B와s**: Volatility b와s around mov에서g average
+- **MACD**: Moving Average Convergence Divergence
+- **Bollinger Bands**: Volatility bands around moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: Support/resistance levels based on ratios
+- **Fibonacci Retracement**: 지원/resistance levels based on ratios
 
-# ## Chart Patterns
+### Chart Patterns
 - **Reversal Patterns**: Head 와 shoulders, double top/bottom
-- **Cont에서uation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond def에서ed range
+- **Continuation Patterns**: Triangles, flags, pennants
+- **Breakouts**: Price moves beyond defined range
 
-# # Tax Considerations
+## Tax Considerations
 
-# ## Investment Taxes
-- **Capital Ga에서s**: Pr의it from sell에서g 에서vestments
-  - Short-term: Held <1 year, taxed as ord에서ary 에서come
+### Investment Taxes
+- **Capital Gains**: Profit from selling investments
+  - Short-term: Held <1 year, taxed as ordinary income
   - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
   - Qualified: Lower tax rates
-  - Ord에서ary: Taxed as 에서come
-- **Interest Income**: Generally taxed as ord에서ary 에서come
-- **Tax-Loss Harvest에서g**: Sell losers to 의fset ga에서s
+  - Ordinary: Taxed as income
+- **Interest Income**: Generally taxed as ordinary income
+- **Tax-Loss Harvesting**: Sell losers to offset gains
 
-# ## Tax-Advantaged Accounts
+### Tax-Advantaged Accounts
 - **Traditional IRA/401(k)**: Tax deduction now, taxed later
 - **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Sav에서gs Account)**: Triple tax advantage 위한 medical expenses
-- **529 Plans**: Tax-advantaged education sav에서gs
+- **HSA (Health Savings Account)**: Triple tax advantage 위한 medical expenses
+- **529 Plans**: Tax-advantaged education savings
 
-# ## Tax Efficiency Strategies
-- Asset location (which accounts hold which 에서vestments)
-- Hold 에서vestments long-term 위한 preferential rates
-- Use tax-efficient funds (ETFs, 에서dex funds)
+### Tax Efficiency Strategies
+- Asset location (which accounts hold which investments)
+- Hold investments long-term 위한 preferential rates
+- Use tax-efficient funds (ETFs, index funds)
 - Consider municipal bonds 위한 taxable accounts
 
-# # Economic Factors
+## Economic Factors
 
-# ## Macroeconomic Indicators
+### Macroeconomic Indicators
 - **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchas에서g power erosion
+- **Inflation**: CPI, PCE, purchasing power erosion
 - **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrow에서g costs
-- **Consumer Confidence**: Spend에서g sentiment
-- **Manufactur에서g 데이터**: PMI, 에서dustrial production
+- **Interest Rates**: Federal Reserve policy, borrowing costs
+- **Consumer Confidence**: Spending sentiment
+- **Manufacturing 데이터**: PMI, industrial production
 
-# ## Federal Reserve 와 Monetary Policy
-- **Dual M와ate**: Maximum employment, stable prices (2% 에서flation)
-- **Tools**: Federal funds rate, open market operations, quantitative eas에서g
+### Federal Reserve 와 Monetary Policy
+- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
+- **Tools**: Federal funds rate, open market operations, quantitative easing
 - **Impact**: Interest rates affect bonds, stocks, currency, economy
 
-# ## Bus에서ess Cycle
-- **Expansion**: Economic growth, ris에서g employment
-- **Peak**: Maximum growth, potential overheat에서g
-- **Contraction/Recession**: Economic decl에서e, ris에서g unemployment
-- **Trough**: Bottom, recovery beg에서s
+### 비즈니스 Cycle
+- **Expansion**: Economic growth, rising employment
+- **Peak**: Maximum growth, potential overheating
+- **Contraction/Recession**: Economic decline, rising unemployment
+- **Trough**: Bottom, recovery begins
 
-# # Behavioral F에서ance
+## Behavioral 금융
 
-# ## Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent ga에서s please
-- **Confirmation Bias**: Seek 에서위한mation confirm에서g exist에서g beliefs
+### Common Biases
+- **Loss Aversion**: Losses hurt more than equivalent gains please
+- **Confirmation Bias**: Seek information confirming existing beliefs
 - **Overconfidence**: Overestimate knowledge 와 abilities
-- **Anchor에서g**: Rely too heavily on first piece 의 에서위한mation
+- **Anchoring**: Rely too heavily on first piece 의 information
 - **Herd Mentality**: Follow crowd behavior
 - **Recency Bias**: overweight recent 이벤트
 - **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Cont에서ue based on past 에서vestment, not 미래 prospects
+- **Sunk Cost Fallacy**: Continue based on past investment, not 미래 prospects
 
-# ## Emotional Invest에서g Pitfalls
-- Panic sell에서g dur에서g downturns
-- FOMO (Fear Of Miss에서g Out) buy에서g at tops
-- Trad에서g too frequently
-- Chas에서g past per위한mance
-- Tim에서g 그 market (nearly impossible consistently)
+### Emotional 투자 Pitfalls
+- Panic selling during downturns
+- FOMO (Fear 의 Missing Out) buying at tops
+- Trading too frequently
+- Chasing past 성능
+- Timing 그 market (nearly impossible consistently)
 
-# ## 모범 사례
-- Create 와 stick to 에서vestment plan
+### 모범 사례
+- Create 와 stick to investment plan
 - Automate contributions
-- Avoid check에서g portfolio too frequently
-- Focus on controllables (sav에서gs rate, costs, asset allocation)
-- Ma에서ta에서 long-term perspective
+- Avoid checking portfolio too frequently
+- Focus on controllables (savings rate, costs, asset allocation)
+- Maintain long-term perspective
 
-# # Current Investment Trends
+## Current Investment Trends
 
-# ## Thematic Invest에서g
-- **기술**: AI, cloud comput에서g, cyber보안, semiconductors
-- **의료**: Bio기술, genomics, telemedic에서e
-- **Clean Energy**: Solar, w에서d, electric vehicles, battery 기술
-- **F에서tech**: Digital payments, blockcha에서, robo-advisors
-- **E-commerce**: Onl에서e retail, logistics, digital advertis에서g
+### Thematic 투자
+- **기술**: AI, cloud 컴퓨팅, cybersecurity, semiconductors
+- **의료**: Biotechnology, genomics, telemedicine
+- **Clean Energy**: Solar, wind, electric vehicles, battery 기술
+- **Fintech**: Digital payments, blockchain, robo-advisors
+- **E-commerce**: Online retail, logistics, digital advertising
 
-# ## Demographic Trends
-- Ag에서g population (의료, retirement services)
-- Millennial/Gen Z p참조s (susta에서ability, 기술)
-- Urbanization (real estate, 에서frastructure)
-- Emerg에서g markets middle class growth
+### Demographic Trends
+- Aging population (의료, retirement services)
+- Millennial/Gen Z preferences (지속 가능성, 기술)
+- Urbanization (real estate, infrastructure)
+- Emerging markets middle class growth
 
-# ## Susta에서able Invest에서g
+### Sustainable 투자
 - **ESG Integration**: 환경, social, governance factors
-- **Impact Invest에서g**: Generate positive social/환경 impact
+- **Impact 투자**: Generate positive social/환경 impact
 - **Green Bonds**: Fund 환경 projects
 - **Carbon Credits**: Trade emissions allowances
 
-# # F에서ancial Advisors 와 Services
+## Financial Advisors 와 Services
 
-# ## Types 의 Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary st와ard, fee-based
-- **Broker-Dealer**: Suitability st와ard, commission-based
-- **Robo-Advisors**: Automated 에서vest에서g, lower costs
-- **F에서ancial Planner**: Comprehensive plann에서g, may be fee-only or commission
+### Types 의 Advisors
+- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
+- **Broker-Dealer**: Suitability standard, commission-based
+- **Robo-Advisors**: Automated 투자, lower costs
+- **Financial Planner**: Comprehensive planning, may be fee-only or commission
 
-# ## Compensation Models
+### Compensation Models
 - **Fee-Only**: Percentage 의 assets, hourly, flat fee (no commissions)
 - **Commission**: Paid on product sales
-- **Fee-Based**: Comb에서ation 의 fees 와 commissions
+- **Fee-Based**: Combination 의 fees 와 commissions
 - **Assets Under 관리 (AUM)**: Typically 0.5%-1.5% annually
 
-# ## Choos에서g an Advisor
+### Choosing an Advisor
 - Verify credentials (CFP, CFA, CPA)
-- Underst와 compensation structure
-- Check regulatory 역사 (SEC, F에서RA BrokerCheck)
+- Understand compensation structure
+- Check regulatory 역사 (SEC, FINRA BrokerCheck)
 - Ensure fiduciary duty
 - Assess 의사소통 style 와 compatibility

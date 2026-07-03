@@ -7,66 +7,66 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Local AI Архитектура
 
-A practical руководство to runnвg large язык models entirely on-device — hardware considerations, вference engвes, memory optimisation, и system design для edge развертывание.
+A practical Руководство to running large Язык models entirely on-device — hardware considerations, inference engines, memory optimisation, и system design для edge Развертывание.
 
 ---
 
-# # Why Run AI Locally?
+## Why Run AI Locally?
 
-- **Privacy**: No данные leaves the device.
+- **Privacy**: No Данные leaves the device.
 - **Cost**: No API fees per token.
-- **Latency**: Predictable, сеть-free вference.
-- **Offlвe availability**: Works сout вternet.
-- **Control**: Full control over model version, customisation, и fвe-tunвg.
+- **Latency**: Predictable, Сеть-free inference.
+- **Offline availability**: Works without internet.
+- **Control**: Full control over model version, customisation, и fine-tuning.
 
 ---
 
-# # Hardware Requirements
+## Hardware Requirements
 
-# ## GPU Memory (VRAM)
-The most critical resource. Model size в memory ≈ **parameters × bytes per parameter**.
+### GPU Memory (VRAM)
+the most critical resource. Model size в memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| ВT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| ВT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
+| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical руководствоlвes:**
+**Practical guidelines:**
 - 8GB VRAM → up to 7B models at 4-bit.
 - 12GB VRAM → up to 13B models at 4-bit.
 - 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ системы.
+- Apple Silicon (unified memory) can run 70B models on 64GB+ Системы.
 
-# ## RAM (System Memory)
-- For CPU вference, you need enough system RAM to load the model (similar to VRAM numbers).
-- For GPU вference, system RAM matters для loadвg the model вto memory beдляe изfloadвg to VRAM.
+### RAM (System Memory)
+- для CPU inference, you need enough system RAM to load the model (similar to VRAM numbers).
+- для GPU inference, system RAM matters для loading the model into memory before offloading to VRAM.
 
-# ## Storage
+### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free для multiple models.
 
-# ## CPU
-- For prompt processвg (prefill) и CPU-изfloadвg, a modern multi-core CPU helps.
-- Apple M-series chips have excellent perдляmance для LLMs due to the unified memory и Neural Engвe.
+### CPU
+- для prompt processing (prefill) и CPU-offloading, a modern multi-core CPU helps.
+- Apple M-series chips have excellent Производительность для LLMs due to the unified memory и Neural Engine.
 
 ---
 
-# # Quantisation
+## Quantisation
 
-Quantisation reduces the numerical precision из weights, dramatically cuttвg memory и вcreasвg speed at a small accuracy cost.
+Quantisation reduces the numerical precision из weights, dramatically cutting memory и increasing speed at a small accuracy cost.
 
-# ## Popular Formats
+### Popular Formats
 
 | Format | Bits | Description | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp дляmat, optimised для CPU/GPU hybrid | Best для local вference |
+| **GGUF** | 4–8 | llama.cpp format, optimised для CPU/GPU hybrid | Best для local inference |
 | **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best для NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good для batch вference on GPUs |
-| **ONNX** | variable | Stиardised, cross-platдляm | Production servвg |
+| **AWQ** | 4 | Activation-aware, GPU-only | Good для batch inference on GPUs |
+| **ONNX** | variable | Standardised, cross-platform | Production serving |
 
-# ## Choosвg a Quantisation Level
-- **Q8_0** (8-bit): mвimal quality loss, largest size.
+### Choosing a Quantisation Level
+- **Q8_0** (8-bit): minimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
 - **Q4_K_M** (4-bit): smallest, acceptable quality для most tasks.
@@ -76,16 +76,16 @@ Quantisation reduces the numerical precision из weights, dramatically cuttвg 
 
 ---
 
-# # Inference Engвes (Local)
+## Inference Engines (Local)
 
-# ## llama.cpp
+### llama.cpp
 - Written в C++.
-- Supports GGUF дляmat.
+- Supports GGUF format.
 - Optimised для CPU и GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Commи-lвe, server mode, и Python bвdвgs.
+- Command-line, server mode, и Python bindings.
 
-**Example commи:**
+**Example command:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -242,206 +242,206 @@ text
 ```markdown
 # Безопасность Лучшие практики
 
-A practical руководство to securвg applications, вfrastructure, и данные — from разработка to production.
+A practical Руководство to securing applications, infrastructure, и Данные — from Разработка to production.
 
 ---
 
-# # OWASP Top 10 (2021) — Обзор
+## OWASP Top 10 (2021) — Обзор
 
 1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missвg encryption.
-3. **Injection**: SQL, NoSQL, OS commи, or LDAP вjection.
-4. **Insecure Design**: Architectural fзаконs.
+2. **Cryptographic Failures**: Weak or missing encryption.
+3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
+4. **Insecure Design**: Architectural flaws.
 5. **Безопасность Misconfiguration**: Default passwords, open ports, verbose errors.
 6. **Vulnerable и Outdated Components**: Known CVEs в dependencies.
-7. **Identification и Authentication Failures**: Weak passwords, session misуправление.
-8. **Sизtware и Данные Integrity Failures**: Supply chaв attacks, unsigned updates.
-9. **Безопасность Loggвg и Monitorвg Failures**: No detection из breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse из server to make requests to вternal системы.
+7. **Identification и Authentication Failures**: Weak passwords, session mismanagement.
+8. **Software и Данные Integrity Failures**: Supply chain attacks, unsigned updates.
+9. **Безопасность Logging и Monitoring Failures**: No detection из breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse из server to make requests to internal Системы.
 
 ---
 
-# # Input Validation и Output Encodвg
+## Input Validation и Output Encoding
 
-# ## Validation Rules
-- **Whitelist > Blacklist**: Defвe allowed patterns (e.g., regex для email) rather than blockвg known bad patterns.
-- **Length limits**: Enдляce maximum lengths to prevent buffer overflows и DoS.
-- **Type checkвg**: Ensure вtegers are вtegers, booleans are booleans.
-- **Use well-tested libraries**: For email, URL, и date validation, use stиard libraries (e.g., `email-validator` в Python, `validator.js` в Node).
+### Validation Rules
+- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex для email) rather than blocking known bad patterns.
+- **Length limits**: Enforce maximum lengths to prevent buffer overflows и DoS.
+- **Type checking**: Ensure integers are integers, booleans are booleans.
+- **Use well-tested libraries**: для email, URL, и date validation, use standard libraries (e.g., `email-validator` в Python, `validator.js` в Node).
 
-# ## Output Encodвg
-- **HTML encodвg**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user вput вto SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escapвg**: Avoid buildвg shell commиs from user вput; if unavoidable, use `shlex.quote()` or similar.
+### Output Encoding
+- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
+- **Shell escaping**: Avoid building shell Команды from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-# # Authentication и Authorisation
+## Authentication и Authorisation
 
-# ## Password Управление
-- **Hashвg**: Store passwords с a strong, slow hashвg algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Saltвg**: Add a unique per-user salt.
-- **Mвimum length**: Enдляce at least 12–16 characters.
+### Password Управление
+- **Hashing**: Store passwords с a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Salting**: Add a unique per-user salt.
+- **Minimum length**: Enforce at least 12–16 characters.
 - **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) для sensitive operations.
-- **Rate limitвg**: Prevent brute-дляce attempts on logв endpoвts (e.g., 5 attempts per 5 mвutes per IP/user).
+- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-# ## Session Управление
+### Session Управление
 - Use secure, HTTP-only, SameSite cookies для session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout и on password change.
-- Avoid exposвg session IDs в URLs.
+- Avoid exposing session IDs в URLs.
 
-# ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Sprвg Безопасность).
-- Validate ID tokens thoroughly (sigприрода, issuer, audience, expiration).
+### OAuth2 / OIDC
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Безопасность).
+- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
-# ## JWT (JSON Веб Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) для better безопасность; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify sigприрода, issuer (`iss`), audience (`aud`), и expiration (`exp`).
-- **Keep short expiration**: 15–60 mвutes для access tokens; use refresh tokens для longer sessions.
-- **Store securely**: Never store JWTs в localStorage (vulnerable to XSS); use HTTP-only cookies вstead.
+### JWT (JSON Веб Tokens)
+- **Sign**: Use RS256 or ES256 (asymmetric) для better Безопасность; HS256 (symmetric) is acceptable if shared secrets are managed well.
+- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), и expiration (`exp`).
+- **Keep short expiration**: 15–60 minutes для access tokens; use refresh tokens для longer sessions.
+- **Store securely**: Never store JWTs в localStorage (vulnerable to XSS); use HTTP-only cookies instead.
 
 ---
 
-# # API Безопасность
+## API Безопасность
 
-# ## Authentication
-- Always authenticate API calls (except public endpoвts).
+### Authentication
+- Always authenticate API calls (except public endpoints).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limitвg и Throttlвg
+### Rate Limiting и Throttling
 - Apply per-user и per-IP rate limits to prevent abuse и DoS.
 - Return `429 Too Many Requests` с a `Retry-After` header.
 
-# ## CORS (Cross-Origв Resource Sharвg)
-- Allow only specific origвs (never `*` в production).
-- Validate `Origв` header on the server side.
+### CORS (Cross-Origin Resource Sharing)
+- Allow only specific origins (never `*` в production).
+- Validate `Origin` header on the server side.
 
-# ## Input Validation
-- Validate all request parameters, вcludвg headers и body.
+### Input Validation
+- Validate all request parameters, including headers и body.
 - Reject unexpected fields (`"strict": true` or `additionalProperties: false` в JSON Schema).
 
-# ## HTTPS / TLS
-- Enдляce HTTPS в production.
-- Use HSTS (HTTP Strict Transport Безопасность) to дляce browsers to use HTTPS.
+### HTTPS / TLS
+- Enforce HTTPS в production.
+- Use HSTS (HTTP Strict Transport Безопасность) to force browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
 
-# # Secrets Управление
+## Secrets Управление
 
-# ## Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, данныеbase URLs) to source control.
-- Use environment variables or secret управление tools.
+### Never Hardcode Secrets
+- Do not commit secrets (API keys, passwords, База данных URLs) to source control.
+- Use environment variables or secret Управление tools.
 
-# ## Tools
+### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
 - **SOPS**: Encrypt secrets в files и commit them (с KMS or GPG).
-- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use с care; consider external Secrets Store CSI driver).
+- **Docker secrets**: для Swarm mode; Kubernetes secrets (base64-encoded, but use с care; consider external Secrets Store CSI driver).
 
-# ## Rotation
+### Rotation
 - Regularly rotate secrets и service accounts.
 - Automate rotation where possible.
 
 ---
 
-# # Dependency Управление
+## Dependency Управление
 
-# ## Vulnerability Scannвg
-- **Python**: `безопасныйty`, `pip-audit`, `bиit`.
+### Vulnerability Scanning
+- **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patchвg
+### Patching
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests для mвor/patch updates.
-- Review changelogs для breakвg changes.
+- Set up automated pull requests для minor/patch updates.
+- Review changelogs для breaking changes.
 
-# ## Supply Chaв Integrity
+### Supply Chain Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
 - Verify checksums из downloaded dependencies.
-- Prefer изficial registries и trust only verified publishers.
+- Prefer official registries и trust only verified publishers.
 
 ---
 
-# # Infrastructure Безопасность
+## Infrastructure Безопасность
 
-# ## Firewalls
-- Block all вbound ports except those explicitly needed (e.g., 80, 443).
+### Firewalls
+- Block all inbound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use безопасность groups (AWS) or NSGs (Azure) для fвe-graвed control.
+- Use Безопасность groups (AWS) or NSGs (Azure) для fine-grained control.
 
-# ## OS Hardenвg
-- Apply безопасность updates regularly (`sudo apt upgrade`, `yum update`).
+### OS Hardening
+- Apply Безопасность updates regularly (`sudo apt upgrade`, `yum update`).
 - Disable unnecessary services и default accounts.
-- Use fail2ban to block brute-дляce attempts on SSH.
-- Harden SSH: disable root logв, use key-based auth, change default port (optional).
+- Use fail2ban to block brute-force attempts on SSH.
+- Harden SSH: disable root login, use key-based auth, change default port (optional).
 
-# ## Сеть Segmentation
-- Place данныеbases и caches в private subnets с no вternet access.
-- Use a DMZ для public-facвg services.
-- Apply the prвciple из least privilege to сеть access.
+### Сеть Segmentation
+- Place databases и caches в private subnets с no internet access.
+- Use a DMZ для public-facing services.
+- Apply the principle из least privilege to Сеть access.
 
-# ## Secrets в Infrastructure
+### Secrets в Infrastructure
 - Never store secrets в CI/CD environment variables unless encrypted.
-- Use the cloud provider's IAM roles для EC2/VM вstances вstead из long-lived keys.
+- Use the cloud provider's IAM roles для EC2/VM instances instead из long-lived keys.
 
 ---
 
-# # Loggвg и Monitorвg
+## Logging и Monitoring
 
-# ## What to Log
-- Authentication события (success/failure).
+### What to Log
+- Authentication События (success/failure).
 - Access control decisions (authorisation failures).
-- Admв actions (user creation, deletion, permission changes).
-- Данныеbase schema changes.
+- Admin actions (user creation, deletion, permission changes).
+- База данных schema changes.
 - System errors и exceptions.
-- API requests и responses (redact sensitive данные).
+- API requests и responses (redact sensitive Данные).
 
-# ## What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Inдляmation) unless hashed/redacted.
+### What Not to Log
+- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alertвg
+### Alerting
 - Set up alerts для:
-  - Multiple failed logвs (potential brute дляce).
+  - Multiple failed logins (potential brute force).
   - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admв accounts created.
+  - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (Безопасность Inдляmation и Event Управление) для продвинутый correlation.
+- Use a SIEM (Безопасность Information и Event Управление) для Продвинутый correlation.
 
-# ## Log Retention
-- Retaв logs для at least 30–90 days dependвg on regulatory requirements.
-- Store logs в a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Данныеdog).
+### Log Retention
+- Retain logs для at least 30–90 days depending on regulatory requirements.
+- Store logs в a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
 
 ---
 
-# # Secure Разработка Lifecycle (SDL)
+## Secure Разработка Lifecycle (SDL)
 
-1. **Traввg**: Ensure developers understи common vulnerabilities.
-2. **Threat modellвg**: Identify potential threats early в design.
-3. **Secure codвg stиards**: Enдляce via lвters и code review checklists.
-4. **SAST** (Static Application Безопасность Testвg): Scan source code для vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Безопасность Testвg): Scan runnвg applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Sизtware Composition Analysis): Scan dependencies.
-7. **Penetration testвg**: Regular ethical hackвg exercises.
-8. **Bug bounty**: Encourage external researchers to fвd vulnerabilities responsibly.
+1. **Training**: Ensure developers understand common vulnerabilities.
+2. **Threat modelling**: Identify potential threats early в design.
+3. **Secure coding standards**: Enforce via linters и code review checklists.
+4. **SAST** (Static Application Безопасность Тестирование): Scan source code для vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application Безопасность Тестирование): Scan running applications (OWASP ZAP, Burp Suite).
+6. **SCA** (Software Composition Analysis): Scan dependencies.
+7. **Penetration Тестирование**: Regular ethical hacking exercises.
+8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
 9. **Incident response plan**: Have a clear plan для when a breach is detected.
 
 ---
 
-# # Emergency Checklist (When a Breach is Suspected)
+## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** the affected системы (disconnect from сеть if needed).
+2. **Isolate** the affected Системы (disconnect from Сеть if needed).
 3. **Preserve evidence**: Capture logs, memory dumps, и disk images.
-4. **Identify** the scope: which системы, which данные.
+4. **Identify** the scope: which Системы, which Данные.
 5. **Rotate** all compromised credentials и secrets.
 6. **Patch** the vulnerability.
-7. **Notify** affected users и regulatory bodies if required (св юридический timeframes).
-8. **Conduct a post-mortem** to understи root cause и improve processes.
+7. **Notify** affected users и regulatory bodies if required (within Юридический timeframes).
+8. **Conduct a post-mortem** to understand root cause и improve processes.

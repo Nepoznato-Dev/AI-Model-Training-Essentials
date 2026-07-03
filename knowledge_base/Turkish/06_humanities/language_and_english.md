@@ -7,157 +7,157 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Dil ve İngilizce
 
-# # What is Dil?
+## What is Dil?
 
-Dil is a system içiçindede i̇letişim usiçiçindedeg sounds, symbols, or gestures that follows a shared set içiçindede rules understood by a community. Human dil is unique içiçindede its complexity, creativity, ve capacity to express abstract ideas. There are approximately 7,000 dils spoken içiçindede bu world today. İngilizce is bu most widely spoken dil as a second dil ve is bu domiçiçindedeant dil içiçindede içiçindedeternational i̇letişim, busiçiçindedeess, bilim, ve bu içiçindedeternet.
+Dil is a system içinde İletişim using sounds, symbols, or gestures that follows a shared set içinde rules understood by a community. Human Dil is unique içinde its complexity, creativity, ve capacity to express abstract ideas. There are approximately 7,000 languages spoken içinde bu world today. İngilizce is bu most widely spoken Dil as a second Dil ve is bu dominant Dil içinde international İletişim, İş, Bilim, ve bu internet.
 
-# # İngilizce Grammar
+## İngilizce Grammar
 
-Grammar is bu set içiçindede rules governiçiçindedeg how words are combiçiçindedeed to içinm sentences içiçindede a dil. A sentence must contaiçiçindede a subject (who or what bu sentence is about) ve a predicate (what bu subject does or is).
+Grammar is bu set içinde rules governing how words are combined to form sentences içinde a Dil. A sentence must contain a subject (who or what bu sentence is about) ve a predicate (what bu subject does or is).
 
-A **noun** is a word that names a person, place, thiçiçindedeg, or idea.
-A **verb** is a word that expresses an action or state içiçindede beiçiçindedeg.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state içinde being.
 An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or anobur adverb.
-A **pronoun** takes bu place içiçindede a noun.
+An **adverb** modifies a verb, adjective, or another adverb.
+A **pronoun** takes bu place içinde a noun.
 
-A **clause** is a group içiçindede words contaiçiçindedeiçiçindedeg a subject ve a verb. An içiçindededependent clause can stve alone as a sentence. A dependent clause cannot stve alone ve depends on an içiçindededependent clause. A **phrase** is a group içiçindede words that does not contaiçiçindede both a subject ve a predicate.
+A **clause** is a group içinde words containing a subject ve a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone ve depends on an independent clause. A **phrase** is a group içinde words that does not contain both a subject ve a predicate.
 
-# # Psanat içiçindede Speech
+## Parts içinde Speech
 
-The eight traditional psanat içiçindede speech içiçindede İngilizce are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, ve içiçindedeterjection.
+bu eight traditional parts içinde speech içinde İngilizce are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, ve interjection.
 
-A **preposition** shows bu relationship between a noun or pronoun ve anobur word (e.g., içiçindede, on, at, by, ile).
+A **preposition** shows bu relationship between a noun or pronoun ve another word (e.g., içinde, on, at, by, ile).
 A **conjunction** connects words, phrases, or clauses (e.g., ve, but, or, because).
 
-**Common coordiçiçindedeatiçiçindedeg conjunctions** can be remembered ile bu acronym FANBOYS:
+**Common coordinating conjunctions** can be remembered ile bu acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-# # Punctuation
+## Punctuation
 
 - A period (.) ends a declarative sentence.
-- A question mark (?) ends an içiçindedeterrogative sentence.
+- A question mark (?) ends an interrogative sentence.
 - An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items içiçindede a list, sets içiçindedef içiçindedetroductory phrases, ve separates içiçindededependent clauses joiçiçindedeed by a conjunction.
-- A semicolon (;) separates two closely related içiçindededependent clauses.
-- A colon (:) içiçindedetroduces a list, explanation, or quotation.
-- An apostrophe (') içiçindededicates possession (John's book) or a contraction (don't = do not).
+- A comma (,) separates items içinde a list, sets off introductory phrases, ve separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-# # Spelliçiçindedeg ve Common Errors
+## Spelling ve Common Errors
 
-**Common spelliçiçindedeg rules:**
-- "i beiçine e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "bilim")
-- Words endiçiçindedeg içiçindede a silent "e" drop bu "e" beiçine addiçiçindedeg a vowel suffix (make → makiçiçindedeg)
-- Double bu fiçiçindedeal consonant beiçine addiçiçindedeg a vowel suffix when bu last syllable is stressed ve ends içiçindede a siçiçindedegle consonant (run → runniçiçindedeg)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Bilim")
+- Words ending içinde a silent "e" drop bu "e" before adding a vowel suffix (make → making)
+- Double bu final consonant before adding a vowel suffix when bu last syllable is stressed ve ends içinde a single consonant (run → running)
 
 **Common confusable word pairs:**
-- buir / bure / buy're
+- their / there / they're
 - your / you're
 - its / it's
 - affect / effect
-- bun / than
+- then / than
 
-# # Vocabulary ve Word Formation
+## Vocabulary ve Word Formation
 
-**Etymology** is bu study içiçindede bu origiçiçindedes ve historical geliştirme içiçindede words. Many İngilizce words come from Latiçiçindede, Greek, French, ve Germanic roots.
+**Etymology** is bu study içinde bu origins ve historical Geliştirme içinde words. Many İngilizce words come from Latin, Greek, French, ve Germanic roots.
 
-**Prefixes** are added to bu begiçiçindedeniçiçindedeg içiçindede words to change buir meaniçiçindedeg (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to bu end içiçindede words (e.g., -tion, -ness, -içiçindedeg, -ly).
+**Prefixes** are added to bu beginning içinde words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to bu end içinde words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words ile similar meaniçiçindedegs
-- **Antonyms**: words ile opposite meaniçiçindedegs
-- **Metaphor**: describes somethiçiçindedeg by sayiçiçindedeg it is somethiçiçindedeg else ("Time is a thief")
-- **Simile**: compares two thiçiçindedegs usiçiçindedeg "like" or "as" ("Busy as a bee")
+- **Synonyms**: words ile similar meanings
+- **Antonyms**: words ile opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-# # Writiçiçindedeg Skills
+## Writing Skills
 
-Good writiçiçindedeg is clear, concise, coherent, ve engagiçiçindedeg.
+Good writing is clear, concise, coherent, ve engaging.
 
-- A **paragraph** should have a topic sentence (bu maiçiçindede idea), supportiçiçindedeg sentences, ve a concludiçiçindedeg sentence.
-- The **five-paragraph essay** structure consists içiçindede an içiçindedetroduction, three body paragraphs, ve a conclusion.
-- **Revision** is bu process içiçindede improviçiçindedeg a draft.
-- **Editiçiçindedeg** focuses on correctiçiçindedeg grammar, spelliçiçindedeg, ve punctuation errors.
-- **Proiçiçindedereadiçiçindedeg** is bu fiçiçindedeal check beiçine publication.
+- A **paragraph** should have a topic sentence (bu main idea), supporting sentences, ve a concluding sentence.
+- bu **five-paragraph essay** structure consists içinde an Giriş, three body paragraphs, ve a conclusion.
+- **Revision** is bu process içinde improving a draft.
+- **Editing** focuses on correcting grammar, spelling, ve punctuation errors.
+- **Proofreading** is bu final check before publication.
 
-# # Readiçiçindedeg ve Comprehension
+## Reading ve Comprehension
 
-**Active readiçiçindedeg** içiçindedevolves engagiçiçindedeg ile bu text by askiçiçindedeg questions, makiçiçindedeg predictions, summariziçiçindedeg, ve makiçiçindedeg connections.
+**Active reading** involves engaging ile bu text by asking questions, making predictions, summarizing, ve making connections.
 
-- The **maiçiçindede idea** is bu central poiçiçindedet içiçindede a passage.
-- Details, örnekler, ve evidence support bu maiçiçindede idea.
-- **Inference** içiçindedevolves drawiçiçindedeg conclusions from içiçindedeiçinmation that is implied but not stated directly.
-- **Context clues** are words ve phrases surroundiçiçindedeg an unfamiliar word that help determiçiçindedee its meaniçiçindedeg.
+- bu **main idea** is bu central point içinde a passage.
+- Details, Örnekler, ve evidence Destek bu main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words ve phrases surrounding an unfamiliar word that help determine its meaning.
 
-# # İletişim ve Rhetoric
+## İletişim ve Rhetoric
 
-**Rhetoric** is bu art içiçindede effective i̇letişim ve persuasion.
-- **Ethos** appeals to bu credibility içiçindede bu speaker.
+**Rhetoric** is bu art içinde effective İletişim ve persuasion.
+- **Ethos** appeals to bu credibility içinde bu speaker.
 - **Pathos** appeals to emotion.
 - **Logos** appeals to logic ve reason.
 
-A **busis statement** clearly expresses bu maiçiçindede argument içiçindede an essay.
+A **thesis statement** clearly expresses bu main argument içinde an essay.
 **Tone** refers to bu writer's attitude toward bu subject ve audience.
-**Register** refers to bu level içiçindede içinmality içiçindede dil use, rangiçiçindedeg from casual conversation to içinmal academic writiçiçindedeg.
+**Register** refers to bu level içinde formality içinde Dil use, ranging from casual conversation to formal academic writing.
 
-# # Subject-Verb Agreement (Expveed)
+## Subject-Verb Agreement (Expanded)
 
-One içiçindede bu most important grammar rules içiçindede İngilizce is that a subject ve its verb must agree içiçindede number: a siçiçindedegular subject takes a siçiçindedegular verb, ve a plural subject takes a plural verb.
+One içinde bu most important grammar rules içinde İngilizce is that a subject ve its verb must agree içinde number: a singular subject takes a singular verb, ve a plural subject takes a plural verb.
 
-# ## Gerunds as Subjects
+### Gerunds as Subjects
 
-A gerund (a verb used as a noun, endiçiçindedeg içiçindede -içiçindedeg) is always siçiçindedegular.
+A gerund (a verb used as a noun, ending içinde -ing) is always singular.
 
 **Correct:**
-- "Eatiçiçindedeg rocks **is** dangerous."
-- "Runniçiçindedeg every day **is** good için your health."
-- "Readiçiçindedeg **helps** improve vocabulary."
+- "Eating rocks **is** dangerous."
+- "Running every day **is** good için your health."
+- "Reading **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eatiçiçindedeg rocks **are** dangerous." (gerund is siçiçindedegular)
-- "Runniçiçindedeg ve swimmiçiçindedeg **is** good." (compound subject — plural, use "are")
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running ve swimming **is** good." (compound subject — plural, use "are")
 
-# ## Compound Subjects
+### Compound Subjects
 
-- Joiçiçindedeed by "ve": plural verb
+- Joined by "ve": plural verb
   - "Alice ve Bob **are** here."
-  - "The teacher ve bu student **agree**."
+  - "bu teacher ve bu student **agree**."
 
-- Joiçiçindedeed by "or"/"nor": agree ile bu subject closest to bu verb
-  - "Neibur bu students nor bu teacher **was** ready."
-  - "Neibur bu teacher nor bu students **were** ready."
+- Joined by "or"/"nor": agree ile bu subject closest to bu verb
+  - "Neither bu students nor bu teacher **was** ready."
+  - "Neither bu teacher nor bu students **were** ready."
 
-# ## Collective Nouns
+### Collective Nouns
 
-Collective nouns (team, committee, group, family) take a siçiçindedegular verb içiçindede American İngilizce:
-- "The team **is** practisiçiçindedeg."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb içinde American İngilizce:
+- "bu team **is** practising."
+- "bu committee **has** made a decision."
 
-In British İngilizce, plural verbs are also accepted dependiçiçindedeg on context.
+içinde British İngilizce, plural verbs are also accepted depending on context.
 
-# ## Indefiçiçindedeite Pronouns
+### Indefinite Pronouns
 
-The followiçiçindedeg içiçindededefiçiçindedeite pronouns are **always siçiçindedegular**:
+bu following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, eibur, neibur
+- each, either, neither
 
 **Correct:**
-- "Everyone **is** içiçindedevited."
-- "Each içiçindede bu students **has** completed bu assignment."
+- "Everyone **is** invited."
+- "Each içinde bu students **has** completed bu assignment."
 
 **Incorrect:**
-- "Everyone **are** içiçindedevited."
+- "Everyone **are** invited."
 
-# # Epistemic Honesty — Knowiçiçindedeg When to Say "I Don't Know"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** means beiçiçindedeg truthful about bu limits içiçindede one's knowledge. It is better to say "I don't have reliable içiçindedeiçinmation on that" than to produce a confident-soundiçiçindedeg but false answer.
+**Epistemic honesty** means being truthful about bu limits içinde one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Halluciçiçindedeation** is bu tendency içiçindede AI sistemler to generate plausible-soundiçiçindedeg but factually içiçindedecorrect statements. Guardiçiçindedeg agaiçiçindedest halluciçiçindedeation requires recognisiçiçindedeg when a question falls outside available knowledge ve respondiçiçindedeg ile an honest acknowledgement içiçindede uncertaiçiçindedety rabur than an içiçindedevented answer.
+**Hallucination** is bu tendency içinde AI Sistemler to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Mevcut knowledge ve responding ile an honest acknowledgement içinde uncertainty rather than an invented answer.
 
-**Useful phrases için expressiçiçindedeg uncertaiçiçindedety:**
-- "I'm not certaiçiçindede, but…"
+**Useful phrases için expressing uncertainty:**
+- "I'm not certain, but…"
 - "You may want to verify this ile a specialist."
-- "I don't have enough içiçindedeiçinmation to answer reliably."
-- "This is outside my bilgi tabanı."
+- "I don't have enough information to answer reliably."
+- "This is outside my Bilgi Tabanı."
 
-**For health, medical, yasal, or güvenlity questions:**
-It is always better to defer to qualified priçiçindedeessionals rabur than içiçindedefer specific advice. Statiçiçindedeg a recommended dose içiçindede a substance, a treatment için a disease, or a yasal ruliçiçindedeg ileout priçiçindedeessional context can cause real harm ve must be avoided.
+**için health, medical, Yasal, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose içinde a substance, a treatment için a disease, or a Yasal ruling without professional context can cause real harm ve must be avoided.

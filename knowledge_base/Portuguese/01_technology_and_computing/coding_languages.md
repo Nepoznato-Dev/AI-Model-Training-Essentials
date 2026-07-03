@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Codemg Idiomas
+# Coding Languages
 
-# # Python
+## Python
 
-Python is a high-level, emterpreted, dynamically typed, general-purpose programmemg idioma. It emphasises readability e uses significant emdentation as block delimiters.
+Python is a high-level, interpreted, dynamically typed, general-purpose programming Idioma. It emphasises readability e uses significant indentation as block delimiters.
 
-# ## Sintaxe básico
+### Sintaxe Básico
 
 ```python
 # Variables and types
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-# ## Functions e type hemts
+### Functions e type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-# ## List comprehensions
+### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-# ## Classes e OOP
+### Classes e OOP
 
 ```python
 class Animal:
@@ -65,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-# ## Common patterns
+### Common patterns
 
 - Use `com open(path) as f:` para file I/O.
-- Prefer f-stremgs (`f"hello {name}"`) over `%` or `.paramat()`.
-- Use `dadosclasses.dadosclass` para dados-only classes.
-- Use `pathlib.Path` emstead de `os.path` para file paths.
+- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
+- Use `dataclasses.dataclass` para Dados-only classes.
+- Use `pathlib.Path` instead de `os.path` para file paths.
 
-# ## Toolemg
+### Tooling
 
-- `pip emstall <package>` emstalls packages.
-- `python -m venv .venv && source .venv/bem/activate` creates a virtual environment.
+- `pip install <package>` installs packages.
+- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
 - `pip freeze > requirements.txt` saves dependencies.
-- `pip emstall -r requirements.txt` restores o/am.
-- `pyproject.toml` is o/a modern project-configuration steard.
+- `pip install -r requirements.txt` restores them.
+- `pyproject.toml` is o/a modern project-configuration standard.
 
 ---
 
-# # JavaScript
+## JavaScript
 
-JavaScript is o/a primary idioma de o/a web. It runs em browsers e on servers via Node.js. It is dynamically typed e prototype-based.
+JavaScript is o/a primary Idioma de o/a Web. It runs em browsers e on servers via Node.js. It is dynamically typed e prototype-based.
 
-# ## Modern sintaxe (ES6+)
+### Modern Sintaxe (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-# ## Async programmemg
+### Async programming
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-# ## Array methods
+### Array methods
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-# ## DOM manipulation
+### DOM manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-# ## Toolemg
+### Tooling
 
-- `npm emit -y` emitialises a project.
-- `npm emstall <package>` adds a dependency.
-- `npm run <script>` runs a script defemed em `package.json`.
-- `node emdex.js` runs a script com Node.js.
+- `npm init -y` initialises a project.
+- `npm install <package>` adds a dependency.
+- `npm run <script>` runs a script defined em `package.json`.
+- `node index.js` runs a script com Node.js.
 
 ---
 
-# # TypeScript
+## TypeScript
 
-TypeScript is a statically typed superset de JavaScript that compiles to plaem JavaScript. It adds type annotations, emterfaces, generics, e enums.
+TypeScript is a statically typed superset de JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, e enums.
 
-# ## Type annotations
+### Type annotations
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-# ## Interfaces e types
+### Interfaces e types
 
 ```typescript
 interface User {
@@ -178,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-# ## Generics
+### Generics
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-# ## Classes com access modifiers
+### Classes com access modifiers
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-# ## tsconfig.json essentials
+### tsconfig.json essentials
 
 ```json
 {
@@ -220,21 +220,21 @@ class Counter {
 }
 ```
 
-# ## Toolemg
+### Tooling
 
-- `npm emstall -g typescript` emstalls o/a compiler.
+- `npm install -g typescript` installs o/a compiler.
 - `tsc` compiles o/a project.
-- `ts-node src/emdex.ts` runs TypeScript directly.
+- `ts-node src/index.ts` runs TypeScript directly.
 
 ---
 
-# # Rust
+## Rust
 
-Rust is a sistemas programmemg idioma focused on seguroty, speed, e concurrency. It preventos memory-seguroty bugs at compile time through its ownership system.
+Rust is a Sistemas programming Idioma focused on safety, speed, e concurrency. It prevents memory-safety bugs at compile time through its ownership system.
 
-# ## Ownership e borrowemg
+### Ownership e borrowing
 
-Every value em Rust has exactly one owner. When o/a owner goes out de scope o/a value is dropped. Borrowemg allows referências comout transferremg ownership.
+Every value em Rust has exactly one owner. When o/a owner goes out de scope o/a value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no oo/ar borrows exist at o/a same time.
+Mutable borrows (`&mut T`) require that no other borrows exist at o/a same time.
 
-# ## Lifetimes
+### Lifetimes
 
-Lifetimes ensure referências do not outlive o/a dados o/ay poemt to.
+Lifetimes ensure references do not outlive o/a Dados they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-# ## Enums e pattern matchemg
+### Enums e pattern matching
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-# ## Error helemg
+### Error handling
 
 ```rust
 use std::fs;
@@ -293,24 +293,24 @@ fn main() {
 }
 ```
 
-The `?` operator propagates errors automatically emside functions that return `Result`.
+o/a `?` operator propagates errors automatically inside functions that return `Result`.
 
-# ## Toolemg (Cargo)
+### Tooling (Cargo)
 
 - `cargo new project_name` creates a new project.
 - `cargo build` compiles.
 - `cargo run` compiles e runs.
 - `cargo test` runs tests.
 - `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` paramats code. `cargo clippy` lemts.
+- `cargo fmt` formats code. `cargo clippy` lints.
 
 ---
 
-# # Go
+## Go
 
-Go (Golang) is a statically typed, compiled idioma designed para simplicity e high-perparamance concurrent programs.
+Go (Golang) is a statically typed, compiled Idioma designed para simplicity e high-Desempenho concurrent programs.
 
-# ## Básico
+### Básico
 
 ```go
 package main
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-# ## Functions e multiple return values
+### Functions e multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -334,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-# ## Interfaces
+### Interfaces
 
 ```go
 type Speaker interface {
@@ -346,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods de an emterface satisfies it — no explicit declaration is needed.
+Any type that implements all methods de an interface satisfies it — no explicit declaration is needed.
 
-# ## Goroutemes e channels
+### Goroutines e channels
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -374,7 +374,7 @@ func main() {
 }
 ```
 
-# ## Defer
+### Defer
 
 ```go
 func readFile(path string) error {
@@ -388,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-# ## Toolemg
+### Tooling
 
-- `go mod emit module/name` emitialises a module.
+- `go mod init module/name` initialises a module.
 - `go get ./...` downloads dependencies.
 - `go build ./...` compiles.
 - `go test ./...` runs tests.
-- `go fmt ./...` paramats code.
+- `go fmt ./...` formats code.
 - `go vet ./...` checks para common mistakes.
 
 ---
 
-# # C e C++
+## C e C++
 
-C is a low-level, compiled, procedural idioma. C++ extends C com classes, templates, e o/a Steard Template Library (STL).
+C is a low-level, compiled, procedural Idioma. C++ extends C com classes, templates, e o/a Standard Template Library (STL).
 
-# ## C básico
+### C Básico
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-# ## Poemters
+### Pointers
 
-A poemter stores o/a memory address de anoo/ar variable. `*ptr` dereferências it; `&var` takes an address.
+A pointer stores o/a memory address de another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
@@ -432,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-# ## C++ classes e RAII
+### C++ classes e RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuremg cleanup happens automatically em destructors.
+RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically em destructors.
 
-# ## STL contaemers
+### STL containers
 
 ```cpp
 #include <vector>
@@ -469,28 +469,28 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-# ## Modern C++ (C++17 / C++20) highlights
+### Modern C++ (C++17 / C++20) highlights
 
 - `auto` type deduction.
-- Range-based `para` loops: `para (auto& item : contaemer)`.
-- Smart poemters: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bemdemgs: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::stremg_view`.
+- Range-based `para` loops: `para (auto& item : container)`.
+- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- Structured bindings: `auto [key, val] = pair;`.
+- `std::optional`, `std::variant`, `std::string_view`.
 
-# ## Compilation
+### Compilation
 
-- `gcc maem.c -o maem` compiles C.
-- `g++ -std=c++20 -Wall maem.cpp -o maem` compiles C++.
+- `gcc main.c -o main` compiles C.
+- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
 - `make` automates multi-file builds via a `Makefile`.
-- `cmake` is o/a steard build-system generator para larger projects.
+- `cmake` is o/a standard build-system generator para larger projects.
 
 ---
 
-# # Swift
+## Swift
 
-Swift is a modern, statically typed programmemg idioma developed by Apple para iOS, macOS, watchOS, e tvOS. It is also available on Lemux.
+Swift is a modern, statically typed programming Idioma developed by Apple para iOS, macOS, watchOS, e tvOS. It is also Disponível on Linux.
 
-# ## Básico
+### Básico
 
 ```swift
 let greeting = "Hello, world!"   // constant (immutable)
@@ -500,7 +500,7 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-# ## Optionals
+### Optionals
 
 An optional (`T?`) represents a value that may or may not be present.
 
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-# ## Functions e closures
+### Functions e closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-# ## Classes e structs
+### Classes e structs
 
-Swift has both classes (referência types) e structs (value types). Prefer structs para simple dados models.
+Swift has both classes (Referência types) e structs (value types). Prefer structs para simple Dados models.
 
 ```swift
 struct Point {
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-# ## Protocols
+### Protocols
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-# ## Codable (JSON encodemg / decodemg)
+### Codable (JSON encoding / decoding)
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-# ## SwiftUI básico
+### SwiftUI Básico
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-# ## Toolemg
+### Tooling
 
 - `swift build` compiles a Swift Package Manager project.
 - `swift run` runs o/a project.
 - `swift test` runs tests.
-- `swift package emit --type executable` creates a new executable project.
-- Xcode is o/a primary IDE para Apple-platparam desenvolvimento.
+- `swift package init --type executable` creates a new executable project.
+- Xcode is o/a primary IDE para Apple-platform Desenvolvimento.
 
 ---
 
-# # Codemg Fundamentos (Idioma-Agnostic)
+## Coding Fundamentos (Idioma-Agnostic)
 
-# ## Problem-solvemg workflow
+### Problem-solving workflow
 
-1. Defeme o/a emput, output, e constraemts beparae writemg code.
-2. Break o/a task emto smaller sub-problems.
-3. Start com a simple correct solution, o/an optimise if needed.
-4. Validate com tests, edge cases, e realistic emputs.
+1. Define o/a input, output, e constraints before writing code.
+2. Break o/a task into smaller sub-problems.
+3. Start com a simple correct solution, then optimise if needed.
+4. Validate com tests, edge cases, e realistic inputs.
 
-# ## Core dados structures
+### Core Dados structures
 
-- **Array / List**: ordered collection com fast emdexed reads.
+- **Array / List**: ordered collection com fast indexed reads.
 - **Hash map / Dicionário**: key-value store com average O(1) lookup.
 - **Set**: unique values, useful para membership checks.
-- **Stack**: LIFO (last em, first out), common em parsemg e recursion.
-- **Queue**: FIFO (first em, first out), useful para schedulemg e BFS.
-- **Tree / Graph**: hierarchical e rede-style relationships.
+- **Stack**: LIFO (last em, first out), common em parsing e recursion.
+- **Queue**: FIFO (first em, first out), useful para scheduling e BFS.
+- **Tree / Graph**: hierarchical e Rede-style relationships.
 
-# ## Algorithmic complexity (Big O)
+### Algorithmic complexity (Big O)
 
-- Big O describes how runtime or memory grows com emput size.
+- Big O describes how runtime or memory grows com input size.
 - Typical costs:
   - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): bemary search.
-  - O(n): semgle pass through dados.
-  - O(n log n): efficient sortemg.
-  - O(n²): nested loops over similar-size emputs.
-- Prefer clear, maemtaemable code unless prdeilemg shows a bottleneck.
+  - O(log n): binary search.
+  - O(n): single pass through Dados.
+  - O(n log n): efficient sorting.
+  - O(n²): nested loops over similar-size inputs.
+- Prefer clear, maintainable code unless profiling shows a bottleneck.
 
-# ## Debuggemg premciples
+### Debugging principles
 
 - Reproduce o/a bug reliably first.
-- Memimise o/a failemg case to isolate cause.
-- Inspect logs, emputs, e assumptions.
-- Change one variable at a time while testemg.
+- Minimise o/a failing case to isolate cause.
+- Inspect logs, inputs, e assumptions.
+- Change one variable at a time while Teste.
 - Add regression tests so o/a same bug does not return.
 
-# ## Testemg pyramid
+### Teste pyramid
 
 - **Unit tests**: fast, focused checks de small logic units.
-- **Integration tests**: verify emteractions across modules/services.
+- **Integration tests**: verify interactions across modules/services.
 - **End-to-end tests**: validate user flows em realistic environments.
 - A balanced suite has many unit tests e fewer slow end-to-end tests.
 
-# ## Code quality practices
+### Code quality practices
 
-- Use meanemgful names e small focused functions.
+- Use meaningful names e small focused functions.
 - Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive e emterfaces explicit.
-- Use lemters/paramatters para consistency.
-- Review code para correctness, clarity, e segurança.
+- Keep modules cohesive e interfaces explicit.
+- Use linters/formatters para consistency.
+- Review code para correctness, clarity, e Segurança.
 
-# ## Segurança básico para developers
+### Segurança Básico para developers
 
-- Validate e sanitise external emput.
-- Use parameterised queries to prevent SQL emjection.
-- Store passwords com strong hashemg algorithms (e.g., Argon2, bcrypt).
-- Avoid embeddemg secrets em source code.
+- Validate e sanitise external input.
+- Use parameterised queries to prevent SQL injection.
+- Store passwords com strong hashing algorithms (e.g., Argon2, bcrypt).
+- Avoid embedding secrets em source code.
 - Apply least privilege para credentials e services.

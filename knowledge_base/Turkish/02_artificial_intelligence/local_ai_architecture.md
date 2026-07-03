@@ -7,85 +7,85 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Local AI Mimari
 
-A practical rehber to runniçiçindedeg large dil models entirely on-device — hardware considerations, içiçindedeference engiçiçindedees, memory optimisation, ve system design için edge dağıtım.
+A practical Rehber to running large Dil models entirely on-device — hardware considerations, inference engines, memory optimisation, ve system design için edge Dağıtım.
 
 ---
 
-# # Why Run AI Locally?
+## Why Run AI Locally?
 
-- **Privacy**: No veri leaves bu device.
+- **Privacy**: No Veri leaves bu device.
 - **Cost**: No API fees per token.
-- **Latency**: Predictable, ağ-free içiçindedeference.
-- **Offliçiçindedee availability**: Works ileout içiçindedeternet.
-- **Control**: Full control over model version, customisation, ve fiçiçindedee-tuniçiçindedeg.
+- **Latency**: Predictable, Ağ-free inference.
+- **Offline availability**: Works without internet.
+- **Control**: Full control over model version, customisation, ve fine-tuning.
 
 ---
 
-# # Hardware Requirements
+## Hardware Requirements
 
-# ## GPU Memory (VRAM)
-The most critical resource. Model size içiçindede memory ≈ **parameters × bytes per parameter**.
+### GPU Memory (VRAM)
+bu most critical resource. Model size içinde memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| IÇINDET8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| IÇINDET4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
+| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical rehberliçiçindedees:**
+**Practical guidelines:**
 - 8GB VRAM → up to 7B models at 4-bit.
 - 12GB VRAM → up to 13B models at 4-bit.
 - 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ sistemler.
+- Apple Silicon (unified memory) can run 70B models on 64GB+ Sistemler.
 
-# ## RAM (System Memory)
-- For CPU içiçindedeference, you need enough system RAM to load bu model (similar to VRAM numbers).
-- For GPU içiçindedeference, system RAM matters için loadiçiçindedeg bu model içiçindedeto memory beiçine içiçindedefloadiçiçindedeg to VRAM.
+### RAM (System Memory)
+- için CPU inference, you need enough system RAM to load bu model (similar to VRAM numbers).
+- için GPU inference, system RAM matters için loading bu model into memory before offloading to VRAM.
 
-# ## Storage
+### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free için multiple models.
 
-# ## CPU
-- For prompt processiçiçindedeg (prefill) ve CPU-içiçindedefloadiçiçindedeg, a modern multi-core CPU helps.
-- Apple M-series chips have excellent periçinmance için LLMs due to bu unified memory ve Neural Engiçiçindedee.
+### CPU
+- için prompt processing (prefill) ve CPU-offloading, a modern multi-core CPU helps.
+- Apple M-series chips have excellent Performans için LLMs due to bu unified memory ve Neural Engine.
 
 ---
 
-# # Quantisation
+## Quantisation
 
-Quantisation reduces bu numerical precision içiçindede weights, dramatically cuttiçiçindedeg memory ve içiçindedecreasiçiçindedeg speed at a small accuracy cost.
+Quantisation reduces bu numerical precision içinde weights, dramatically cutting memory ve increasing speed at a small accuracy cost.
 
-# ## Popular Formats
+### Popular Formats
 
 | Format | Bits | Description | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp içinmat, optimised için CPU/GPU hybrid | Best için local içiçindedeference |
+| **GGUF** | 4–8 | llama.cpp format, optimised için CPU/GPU hybrid | Best için local inference |
 | **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best için NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good için batch içiçindedeference on GPUs |
-| **ONNX** | variable | Stveardised, cross-platiçinm | Production serviçiçindedeg |
+| **AWQ** | 4 | Activation-aware, GPU-only | Good için batch inference on GPUs |
+| **ONNX** | variable | Standardised, cross-platform | Production serving |
 
-# ## Choosiçiçindedeg a Quantisation Level
-- **Q8_0** (8-bit): miçiçindedeimal quality loss, largest size.
+### Choosing a Quantisation Level
+- **Q8_0** (8-bit): minimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
 - **Q4_K_M** (4-bit): smallest, acceptable quality için most tasks.
 - **IQ4_XS** / **IQ3_XS**: Improved quantisation ile better perplexity at 4/3 bits.
 
-**Rule içiçindede thumb:** Use Q4_K_M için a good balance içiçindede quality ve size. If you have extra VRAM, use Q5 or Q6.
+**Rule içinde thumb:** Use Q4_K_M için a good balance içinde quality ve size. If you have extra VRAM, use Q5 or Q6.
 
 ---
 
-# # Inference Engiçiçindedees (Local)
+## Inference Engines (Local)
 
-# ## llama.cpp
-- Written içiçindede C++.
-- Supports GGUF içinmat.
+### llama.cpp
+- Written içinde C++.
+- Supports GGUF format.
 - Optimised için CPU ve GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Commve-liçiçindedee, server mode, ve Python biçiçindedediçiçindedegs.
+- Command-line, server mode, ve Python bindings.
 
-**Example commve:**
+**Example command:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -242,206 +242,206 @@ text
 ```markdown
 # Güvenlik En İyi Uygulamalar
 
-A practical rehber to securiçiçindedeg applications, içiçindedefrastructure, ve veri — from geliştirme to production.
+A practical Rehber to securing applications, infrastructure, ve Veri — from Geliştirme to production.
 
 ---
 
-# # OWASP Top 10 (2021) — Genel Bakış
+## OWASP Top 10 (2021) — Genel Bakış
 
-1. **Broken Access Control**: Users can access resources buy shouldn't.
-2. **Cryptographic Failures**: Weak or missiçiçindedeg encryption.
-3. **Injection**: SQL, NoSQL, OS commve, or LDAP içiçindedejection.
-4. **Insecure Design**: Architectural fhukuks.
+1. **Broken Access Control**: Users can access resources they shouldn't.
+2. **Cryptographic Failures**: Weak or missing encryption.
+3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
+4. **Insecure Design**: Architectural flaws.
 5. **Güvenlik Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable ve Outdated Components**: Known CVEs içiçindede dependencies.
-7. **Identification ve Aubuntication Failures**: Weak passwords, session misyönetim.
-8. **Siçiçindedetware ve Veri Integrity Failures**: Supply chaiçiçindede attacks, unsigned updates.
-9. **Güvenlik Loggiçiçindedeg ve Monitoriçiçindedeg Failures**: No detection içiçindede breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse içiçindede server to make requests to içiçindedeternal sistemler.
+6. **Vulnerable ve Outdated Components**: Known CVEs içinde dependencies.
+7. **Identification ve Authentication Failures**: Weak passwords, session mismanagement.
+8. **Software ve Veri Integrity Failures**: Supply chain attacks, unsigned updates.
+9. **Güvenlik Logging ve Monitoring Failures**: No detection içinde breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse içinde server to make requests to internal Sistemler.
 
 ---
 
-# # Input Validation ve Output Encodiçiçindedeg
+## Input Validation ve Output Encoding
 
-# ## Validation Rules
-- **Whitelist > Blacklist**: Defiçiçindedee allowed patterns (e.g., regex için email) rabur than blockiçiçindedeg known bad patterns.
-- **Length limits**: Eniçince maximum lengths to prevent buffer overflows ve DoS.
-- **Type checkiçiçindedeg**: Ensure içiçindedetegers are içiçindedetegers, booleans are booleans.
-- **Use well-tested libraries**: For email, URL, ve date validation, use stveard libraries (e.g., `email-validator` içiçindede Python, `validator.js` içiçindede Node).
+### Validation Rules
+- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex için email) rather than blocking known bad patterns.
+- **Length limits**: Enforce maximum lengths to prevent buffer overflows ve DoS.
+- **Type checking**: Ensure integers are integers, booleans are booleans.
+- **Use well-tested libraries**: için email, URL, ve date validation, use standard libraries (e.g., `email-validator` içinde Python, `validator.js` içinde Node).
 
-# ## Output Encodiçiçindedeg
-- **HTML encodiçiçindedeg**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user içiçindedeput içiçindedeto SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escapiçiçindedeg**: Avoid buildiçiçindedeg shell commves from user içiçindedeput; if unavoidable, use `shlex.quote()` or similar.
+### Output Encoding
+- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
+- **Shell escaping**: Avoid building shell Komutlar from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-# # Aubuntication ve Authorisation
+## Authentication ve Authorisation
 
-# ## Password Yönetim
-- **Hashiçiçindedeg**: Store passwords ile a strong, slow hashiçiçindedeg algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Saltiçiçindedeg**: Add a unique per-user salt.
-- **Miçiçindedeimum length**: Eniçince at least 12–16 characters.
-- **MFA (Multi-Factor Aubuntication)**: Require a second factor (TOTP, SMS, hardware key) için sensitive operations.
-- **Rate limitiçiçindedeg**: Prevent brute-içince attempts on logiçiçindede endpoiçiçindedets (e.g., 5 attempts per 5 miçiçindedeutes per IP/user).
+### Password Yönetim
+- **Hashing**: Store passwords ile a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Salting**: Add a unique per-user salt.
+- **Minimum length**: Enforce at least 12–16 characters.
+- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) için sensitive operations.
+- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-# ## Session Yönetim
+### Session Yönetim
 - Use secure, HTTP-only, SameSite cookies için session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout ve on password change.
-- Avoid exposiçiçindedeg session IDs içiçindede URLs.
+- Avoid exposing session IDs içinde URLs.
 
-# ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spriçiçindedeg Güvenlik).
-- Validate ID tokens thoroughly (sigdoğa, issuer, audience, expiration).
+### OAuth2 / OIDC
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Güvenlik).
+- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
-# ## JWT (JSON Web Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) için better güvenlik; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify sigdoğa, issuer (`iss`), audience (`aud`), ve expiration (`exp`).
-- **Keep short expiration**: 15–60 miçiçindedeutes için access tokens; use refresh tokens için longer sessions.
-- **Store securely**: Never store JWTs içiçindede localStorage (vulnerable to XSS); use HTTP-only cookies içiçindedestead.
+### JWT (JSON Web Tokens)
+- **Sign**: Use RS256 or ES256 (asymmetric) için better Güvenlik; HS256 (symmetric) is acceptable if shared secrets are managed well.
+- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), ve expiration (`exp`).
+- **Keep short expiration**: 15–60 minutes için access tokens; use refresh tokens için longer sessions.
+- **Store securely**: Never store JWTs içinde localStorage (vulnerable to XSS); use HTTP-only cookies instead.
 
 ---
 
-# # API Güvenlik
+## API Güvenlik
 
-# ## Aubuntication
-- Always aubunticate API calls (except public endpoiçiçindedets).
+### Authentication
+- Always authenticate API calls (except public endpoints).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limitiçiçindedeg ve Throttliçiçindedeg
+### Rate Limiting ve Throttling
 - Apply per-user ve per-IP rate limits to prevent abuse ve DoS.
 - Return `429 Too Many Requests` ile a `Retry-After` header.
 
-# ## CORS (Cross-Origiçiçindede Resource Shariçiçindedeg)
-- Allow only specific origiçiçindedes (never `*` içiçindede production).
-- Validate `Origiçiçindede` header on bu server side.
+### CORS (Cross-Origin Resource Sharing)
+- Allow only specific origins (never `*` içinde production).
+- Validate `Origin` header on bu server side.
 
-# ## Input Validation
-- Validate all request parameters, içiçindedecludiçiçindedeg headers ve body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` içiçindede JSON Schema).
+### Input Validation
+- Validate all request parameters, including headers ve body.
+- Reject unexpected fields (`"strict": true` or `additionalProperties: false` içinde JSON Schema).
 
-# ## HTTPS / TLS
-- Eniçince HTTPS içiçindede production.
-- Use HSTS (HTTP Strict Transport Güvenlik) to içince browsers to use HTTPS.
+### HTTPS / TLS
+- Enforce HTTPS içinde production.
+- Use HSTS (HTTP Strict Transport Güvenlik) to force browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
 
-# # Secrets Yönetim
+## Secrets Yönetim
 
-# ## Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, veribase URLs) to source control.
-- Use environment variables or secret yönetim tools.
+### Never Hardcode Secrets
+- Do not commit secrets (API keys, passwords, Veritabanı URLs) to source control.
+- Use environment variables or secret Yönetim tools.
 
-# ## Tools
+### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets içiçindede files ve commit bum (ile KMS or GPG).
-- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use ile care; consider external Secrets Store CSI driver).
+- **SOPS**: Encrypt secrets içinde files ve commit them (ile KMS or GPG).
+- **Docker secrets**: için Swarm mode; Kubernetes secrets (base64-encoded, but use ile care; consider external Secrets Store CSI driver).
 
-# ## Rotation
+### Rotation
 - Regularly rotate secrets ve service accounts.
 - Automate rotation where possible.
 
 ---
 
-# # Dependency Yönetim
+## Dependency Yönetim
 
-# ## Vulnerability Scanniçiçindedeg
-- **Python**: `güvenlity`, `pip-audit`, `bveit`.
+### Vulnerability Scanning
+- **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patchiçiçindedeg
+### Patching
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests için miçiçindedeor/patch updates.
-- Review changelogs için breakiçiçindedeg changes.
+- Set up automated pull requests için minor/patch updates.
+- Review changelogs için breaking changes.
 
-# ## Supply Chaiçiçindede Integrity
+### Supply Chain Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums içiçindede downloaded dependencies.
-- Prefer içiçindedeficial registries ve trust only verified publishers.
+- Verify checksums içinde downloaded dependencies.
+- Prefer official registries ve trust only verified publishers.
 
 ---
 
-# # Infrastructure Güvenlik
+## Infrastructure Güvenlik
 
-# ## Firewalls
-- Block all içiçindedebound ports except those explicitly needed (e.g., 80, 443).
+### Firewalls
+- Block all inbound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use güvenlik groups (AWS) or NSGs (Azure) için fiçiçindedee-graiçiçindedeed control.
+- Use Güvenlik groups (AWS) or NSGs (Azure) için fine-grained control.
 
-# ## OS Hardeniçiçindedeg
-- Apply güvenlik updates regularly (`sudo apt upgrade`, `yum update`).
+### OS Hardening
+- Apply Güvenlik updates regularly (`sudo apt upgrade`, `yum update`).
 - Disable unnecessary services ve default accounts.
-- Use fail2ban to block brute-içince attempts on SSH.
-- Harden SSH: disable root logiçiçindede, use key-based auth, change default port (optional).
+- Use fail2ban to block brute-force attempts on SSH.
+- Harden SSH: disable root login, use key-based auth, change default port (optional).
 
-# ## Ağ Segmentation
-- Place veribases ve caches içiçindede private subnets ile no içiçindedeternet access.
-- Use a DMZ için public-faciçiçindedeg services.
-- Apply bu priçiçindedeciple içiçindede least privilege to ağ access.
+### Ağ Segmentation
+- Place databases ve caches içinde private subnets ile no internet access.
+- Use a DMZ için public-facing services.
+- Apply bu principle içinde least privilege to Ağ access.
 
-# ## Secrets içiçindede Infrastructure
-- Never store secrets içiçindede CI/CD environment variables unless encrypted.
-- Use bu cloud provider's IAM roles için EC2/VM içiçindedestances içiçindedestead içiçindede long-lived keys.
+### Secrets içinde Infrastructure
+- Never store secrets içinde CI/CD environment variables unless encrypted.
+- Use bu cloud provider's IAM roles için EC2/VM instances instead içinde long-lived keys.
 
 ---
 
-# # Loggiçiçindedeg ve Monitoriçiçindedeg
+## Logging ve Monitoring
 
-# ## What to Log
-- Aubuntication olaylar (success/failure).
+### What to Log
+- Authentication Olaylar (success/failure).
 - Access control decisions (authorisation failures).
-- Admiçiçindede actions (user creation, deletion, permission changes).
-- Veribase schema changes.
+- Admin actions (user creation, deletion, permission changes).
+- Veritabanı schema changes.
 - System errors ve exceptions.
-- API requests ve responses (redact sensitive veri).
+- API requests ve responses (redact sensitive Veri).
 
-# ## What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Iniçinmation) unless hashed/redacted.
+### What Not to Log
+- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alertiçiçindedeg
+### Alerting
 - Set up alerts için:
-  - Multiple failed logiçiçindedes (potential brute içince).
+  - Multiple failed logins (potential brute force).
   - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admiçiçindede accounts created.
+  - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (Güvenlik Iniçinmation ve Event Yönetim) için i̇leri düzey correlation.
+- Use a SIEM (Güvenlik Information ve Event Yönetim) için İleri Düzey correlation.
 
-# ## Log Retention
-- Retaiçiçindede logs için at least 30–90 days dependiçiçindedeg on regulatory requirements.
-- Store logs içiçindede a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Veridog).
+### Log Retention
+- Retain logs için at least 30–90 days depending on regulatory requirements.
+- Store logs içinde a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
 
 ---
 
-# # Secure Geliştirme Lifecycle (SDL)
+## Secure Geliştirme Lifecycle (SDL)
 
-1. **Traiçiçindedeiçiçindedeg**: Ensure developers understve common vulnerabilities.
-2. **Threat modelliçiçindedeg**: Identify potential threats early içiçindede design.
-3. **Secure codiçiçindedeg stveards**: Eniçince via liçiçindedeters ve code review checklists.
-4. **SAST** (Static Application Güvenlik Testiçiçindedeg): Scan source code için vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Güvenlik Testiçiçindedeg): Scan runniçiçindedeg applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Siçiçindedetware Composition Analysis): Scan dependencies.
-7. **Penetration testiçiçindedeg**: Regular ethical hackiçiçindedeg exercises.
-8. **Bug bounty**: Encourage external researchers to fiçiçindeded vulnerabilities responsibly.
+1. **Training**: Ensure developers understand common vulnerabilities.
+2. **Threat modelling**: Identify potential threats early içinde design.
+3. **Secure coding standards**: Enforce via linters ve code review checklists.
+4. **SAST** (Static Application Güvenlik Test Etme): Scan source code için vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application Güvenlik Test Etme): Scan running applications (OWASP ZAP, Burp Suite).
+6. **SCA** (Software Composition Analysis): Scan dependencies.
+7. **Penetration Test Etme**: Regular ethical hacking exercises.
+8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
 9. **Incident response plan**: Have a clear plan için when a breach is detected.
 
 ---
 
-# # Emergency Checklist (When a Breach is Suspected)
+## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** bu affected sistemler (disconnect from ağ if needed).
+2. **Isolate** bu affected Sistemler (disconnect from Ağ if needed).
 3. **Preserve evidence**: Capture logs, memory dumps, ve disk images.
-4. **Identify** bu scope: which sistemler, which veri.
+4. **Identify** bu scope: which Sistemler, which Veri.
 5. **Rotate** all compromised credentials ve secrets.
 6. **Patch** bu vulnerability.
-7. **Notify** affected users ve regulatory bodies if required (ileiçiçindede yasal timeframes).
-8. **Conduct a post-mortem** to understve root cause ve improve processes.
+7. **Notify** affected users ve regulatory bodies if required (within Yasal timeframes).
+8. **Conduct a post-mortem** to understand root cause ve improve processes.

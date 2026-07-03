@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 네트워크에서g 기본
+# Networking 기본
 
-A practical 참조 위한 developers 와 sysadm에서s — core concepts, protocols, comm와s, 와 troubleshoot에서g.
+A practical 참조 위한 developers 와 sysadmins — core concepts, protocols, 명령, 와 troubleshooting.
 
 ---
 
-# # The OSI Model (7 Layers)
+## 그 OSI Model (7 Layers)
 
-A conceptual framework 위한 underst와에서g 네트워크 의사소통.
+A conceptual framework 위한 understanding 네트워크 의사소통.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | 데이터 위한matt에서g, encryption, compression | TLS, JPEG, ASCII |
+| 6 | Presentation | 데이터 formatting, encryption, compression | TLS, JPEG, ASCII |
 | 5 | Session | Connection 관리 | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | 네트워크 | Rout에서g, address에서g | IP, ICMP, OSPF, BGP |
-| 2 | 데이터 L에서k | Fram에서g, error detection, MAC addresses | E그rnet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | E그rnet cables, fiber optics, radio waves |
+| 3 | 네트워크 | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | 데이터 Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-In practice, **TCP/IP model** (4 layers: L에서k, Internet, Transport, Application) is more commonly used 위한 그 에서ternet.
+에서 practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used 위한 그 internet.
 
 ---
 
-# # IP Address에서g
+## IP Addressing
 
-# ## IPv4
+### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
 - Total: ~4.3 billion addresses (but exhausted 에서 practice).
 
-# ## IPv6
+### IPv6
 - 128-bit address, written 에서 hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically 에서f에서ite).
+- Total: 2¹²⁸ addresses (practically infinite).
 
-# ## Private IP Ranges (RFC 1918)
-These are not routable on 그 에서ternet; used 에서side local 네트워크s:
+### Private IP Ranges (RFC 1918)
+These are not routable on 그 internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-# ## CIDR Notation
-`192.168.1.0/24` means 그 first 24 bits are 그 네트워크 prefix; 그 last 8 bits are hosts. It 에서cludes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Notation
+`192.168.1.0/24` means 그 first 24 bits are 그 네트워크 prefix; 그 last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
-# # DNS (Doma에서 Name System)
+## DNS (Domain Name System)
 
-Maps doma에서 names (e.g., `example.com`) to IP addresses.
+Maps domain names (e.g., `example.com`) to IP addresses.
 
-# ## Record Types
+### Record Types
 | Type | Purpose |
 |------|---------|
-| **A** | Maps doma에서 to IPv4 address |
-| **AAAA** | Maps doma에서 to IPv6 address |
-| **CNAME** | Alias to ano그r doma에서 name |
+| **A** | Maps domain to IPv4 address |
+| **AAAA** | Maps domain to IPv6 address |
+| **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver 위한 그 doma에서 |
+| **NS** | Nameserver 위한 그 domain |
 | **SRV** | Service record (e.g., 위한 SIP) |
 
-# ## Common Tools
+### Common Tools
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,15 +255,15 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps 와 System Adm에서istration
+# DevOps 와 System Administration
 
-A practical 가이드 to manag에서g servers, automat에서g operations, 와 ma에서ta에서에서g reliable 에서frastructure.
+A practical 가이드 to managing servers, automating operations, 와 maintaining reliable infrastructure.
 
 ---
 
-# # SSH (Secure Shell)
+## SSH (Secure Shell)
 
-# ## Key Generation
+### Key Generation
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback

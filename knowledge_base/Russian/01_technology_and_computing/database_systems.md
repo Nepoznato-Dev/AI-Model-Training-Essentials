@@ -5,36 +5,36 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Данныеbase Системы
+# База данных Системы
 
-# # Данныеbase Основы
+## База данных Основы
 
-# ## What is a Данныеbase?
-A данныеbase is an organized collection из structured вдляmation stored electronically, designed для efficient retrieval, вsertion, updatвg, и deletion из данные.
+### What is a База данных?
+A База данных is an organized collection из structured information stored electronically, designed для efficient retrieval, insertion, updating, и deletion из Данные.
 
-# ## Данныеbase Управление Системы (DBMS)
-Sизtware that вteracts с end users, applications, и the данныеbase itself to capture и analyze данные. Примеры: MySQL, PostgreSQL, Oracle, MongoDB.
+### База данных Управление Системы (DBMS)
+Software that interacts с end users, applications, и the База данных itself to capture и analyze Данные. Примеры: MySQL, PostgreSQL, Oracle, MongoDB.
 
-# ## Key Concepts
-- **Schema**: Structure/organization из данныеbase (tables, fields, relationships)
-- **Instance**: Actual данные stored at a particular moment
+### Key Concepts
+- **Schema**: Structure/organization из База данных (tables, fields, relationships)
+- **Instance**: Actual Данные stored at a particular moment
 - **ACID Properties**: Atomicity, Consistency, Isolation, Durability
 - **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizвg данные to reduce redundancy
-- **Denormalization**: Addвg redundancy to improve read perдляmance
+- **Normalization**: Organizing Данные to reduce redundancy
+- **Denormalization**: Adding redundancy to improve read Производительность
 
-# # Relational Данныеbases (SQL)
+## Relational Databases (SQL)
 
-# ## Core Concepts
+### Core Concepts
 - **Tables**: Rows (records) и columns (fields)
 - **Primary Key**: Unique identifier для each row
 - **Foreign Key**: Справочник to primary key в another table
-- **Indexes**: Данные structures improvвg query speed
+- **Indexes**: Данные structures improving query speed
 - **Views**: Virtual tables based on query results
 - **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on данные changes
+- **Triggers**: Automatic actions on Данные changes
 
-# ## SQL Operations (CRUD)
+### SQL Operations (CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -50,223 +50,223 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-# ## Joвs
-- **ВNER JOВ**: Returns matchвg rows from both tables
-- **LEFT JOВ**: All rows from left table, matches from right
-- **RIGHT JOВ**: All rows from right table, matches from left
-- **FULL OUTER JOВ**: All rows from both tables
-- **CROSS JOВ**: Cartesian product из both tables
-- **SELF JOВ**: Table joвed с itself
+### Joins
+- **INNER JOIN**: Returns matching rows from both tables
+- **LEFT JOIN**: All rows from left table, matches from right
+- **RIGHT JOIN**: All rows from right table, matches from left
+- **FULL OUTER JOIN**: All rows from both tables
+- **CROSS JOIN**: Cartesian product из both tables
+- **SELF JOIN**: Table joined с itself
 
-# ## Normalization Forms
-- **1NF**: Atomic values, no repeatвg groups
+### Normalization Forms
+- **1NF**: Atomic values, no repeating groups
 - **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
 - **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determвant is a cиidate key
+- **BCNF**: Stronger 3NF, every determinant is a candidate key
 - **4NF**: No multi-valued dependencies
-- **5NF**: No joв dependencies
+- **5NF**: No join dependencies
 
-# ## Popular RDBMS
+### Popular RDBMS
 - **PostgreSQL**: Продвинутый features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, веб applications
+- **MySQL**: Widely used, fast reads, Веб applications
 - **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsизt ecosystem, вtegrated tools
+- **SQL Server**: Microsoft ecosystem, integrated tools
 - **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL дляk, open-source
+- **MariaDB**: MySQL fork, open-source
 
-# # NoSQL Данныеbases
+## NoSQL Databases
 
-# ## Types из NoSQL Данныеbases
+### Types из NoSQL Databases
 
-# ### Document Stores
+#### Document Stores
 - **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content управление, catalogs, user prизiles
+- **Use Cases**: Content Управление, catalogs, user profiles
 - **Примеры**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-# ### Key-Value Stores
+#### Key-Value Stores
 - **Structure**: Simple key-value pairs
-- **Use Cases**: Cachвg, sessions, shoppвg cискусства
+- **Use Cases**: Caching, sessions, shopping carts
 - **Примеры**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited queryвg
+- **Characteristics**: Fast, simple, limited querying
 
-# ### Column-Family Stores
-- **Structure**: Columns grouped вto families
-- **Use Cases**: Big данные, analytics, time-series
-- **Примеры**: Cassиra, HBase, ScyllaDB
+#### Column-Family Stores
+- **Structure**: Columns grouped into families
+- **Use Cases**: Big Данные, analytics, time-series
+- **Примеры**: Cassandra, HBase, ScyllaDB
 - **Characteristics**: Write-optimized, distributed, scalable
 
-# ### Graph Данныеbases
+#### Graph Databases
 - **Structure**: Nodes, edges, properties
-- **Use Cases**: Social сетьs, fraud detection, recommendations
+- **Use Cases**: Social networks, fraud detection, recommendations
 - **Примеры**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Язык**: Cypher (Neo4j), Gremlв
+- **Query Язык**: Cypher (Neo4j), Gremlin
 
-# ## When to Use NoSQL
-- Flexible/evolvвg schema
-- Horizontal scalвg requirements
+### When to Use NoSQL
+- Flexible/evolving schema
+- Horizontal scaling requirements
 - High write throughput
-- Hierarchical/nested данные
-- Distributed системы
+- Hierarchical/nested Данные
+- Distributed Системы
 - Real-time applications
 
-# # Данныеbase Design
+## База данных Design
 
-# ## Entity-Relationship Modelвg
+### Entity-Relationship Modeling
 - **Entities**: Objects/concepts (Customer, Product, Order)
 - **Attributes**: Properties из entities (name, price, date)
 - **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardвality**: Number из вstances в relationship
+- **Cardinality**: Number из instances в relationship
 
-# ## Schema Design Patterns
-- **Sвgle Table Inheritance**: All types в one table с type discrimвator
+### Schema Design Patterns
+- **Single Table Inheritance**: All types в one table с type discriminator
 - **Class Table Inheritance**: Separate tables для base и subclasses
 - **Concrete Table Inheritance**: Separate table для each concrete class
 - **Junction Tables**: Resolve many-to-many relationships
 - **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
 
-# ## Indexвg Strategies
-- **B-Tree**: Default, range queries, sortвg
+### Indexing Strategies
+- **B-Tree**: Default, range queries, sorting
 - **Hash**: Exact match lookups
-- **Bitmap**: Low-cardвality columns (gender, status)
+- **Bitmap**: Low-cardinality columns (gender, status)
 - **Full-Text**: Text search capabilities
-- **Spatial**: Geographic данные (GIS)
-- **Composite**: Multiple columns combвed
-- **Coverвg**: Includes all columns needed для query
+- **Spatial**: Geographic Данные (GIS)
+- **Composite**: Multiple columns combined
+- **Covering**: Includes all columns needed для query
 
-# # Query Optimization
+## Query Optimization
 
-# ## Execution Plans
-- Understивg how данныеbase executes queries
-- Identifyвg bottlenecks (full table scans, missвg вdexes)
-- Tools: EXPLAВ, EXPLAВ ANALYZE
+### Execution Plans
+- Understanding how База данных executes queries
+- Identifying bottlenecks (full table scans, missing indexes)
+- Tools: EXPLAIN, EXPLAIN ANALYZE
 
-# ## Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate вdexes
-- **Query Rewritвg**: Simplify complex queries
-- **Joв Optimization**: Choose correct joв types и order
-- **Partitionвg**: Split large tables (range, hash, list)
+### Optimization Techniques
+- **Index Usage**: Ensure queries use appropriate indexes
+- **Query Rewriting**: Simplify complex queries
+- **Join Optimization**: Choose correct join types и order
+- **Partitioning**: Split large tables (range, hash, list)
 - **Materialized Views**: Pre-computed query results
-- **Query Cachвg**: Store frequent query results
+- **Query Caching**: Store frequent query results
 
-# ## Common Perдляmance Issues
-- **N+1 Query Problem**: Fetchвg related данные вefficiently
-- **Missвg Indexes**: Full table scans on large tables
-- **Over-вdexвg**: Slow writes due to too many вdexes
-- **Lock Contention**: Transactions waitвg для locks
-- **Inefficient Queries**: SELECT *, unnecessary joвs
+### Common Производительность Issues
+- **N+1 Query Problem**: Fetching related Данные inefficiently
+- **Missing Indexes**: Full table scans on large tables
+- **Over-indexing**: Slow writes due to too many indexes
+- **Lock Contention**: Transactions waiting для locks
+- **Inefficient Queries**: SELECT *, unnecessary joins
 
-# # Transactions и Concurrency
+## Transactions и Concurrency
 
-# ## Transaction Isolation Levels
+### Transaction Isolation Levels
 - **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed данные visible (default в most DBs)
-- **REPEATABLE READ**: Same query returns same results св transaction
+- **READ COMMITTED**: Only committed Данные visible (default в most DBs)
+- **REPEATABLE READ**: Same query returns same results within transaction
 - **SERIALIZABLE**: Highest isolation, transactions execute sequentially
 
-# ## Concurrency Control
-- **Pessimistic Lockвg**: Lock resources beдляe access
-- **Optimistic Lockвg**: Check version beдляe commit
-- **MVCC (Multi-Version Concurrency Control)**: Maвtaв multiple versions из rows
-- **Row-Level Lockвg**: Lock specific rows
-- **Table-Level Lockвg**: Lock entire table
+### Concurrency Control
+- **Pessimistic Locking**: Lock resources before access
+- **Optimistic Locking**: Check version before commit
+- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions из rows
+- **Row-Level Locking**: Lock specific rows
+- **Table-Level Locking**: Lock entire table
 
-# ## Deadlocks
+### Deadlocks
 - Circular dependency where transactions wait для each other
-- Prevention: Consistent lock orderвg, timeouts, deadlock detection
+- Prevention: Consistent lock ordering, timeouts, deadlock detection
 - Resolution: Abort one transaction
 
-# # Replication и Scalвg
+## Replication и Scaling
 
-# ## Replication Types
+### Replication Types
 - **Master-Slave**: One primary, multiple read replicas
 - **Master-Master**: Multiple primaries, bidirectional replication
 - **Multi-Master**: N primaries, conflict resolution needed
-- **Chaв Replication**: Sequential replication through nodes
+- **Chain Replication**: Sequential replication through nodes
 
-# ## Scalвg Approaches
-- **Vertical Scalвg**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scalвg**: Add more servers (shardвg, partitionвg)
+### Scaling Approaches
+- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
+- **Horizontal Scaling**: Add more servers (sharding, partitioning)
 - **Read Replicas**: Offload read traffic
-- **Shardвg**: Split данные across servers by key/range/hash
+- **Sharding**: Split Данные across servers by key/range/hash
 - **Federation**: Split by function/service
 
-# ## Consistency Models
-- **Strong Consistency**: All nodes see same данные at same time
+### Consistency Models
+- **Strong Consistency**: All nodes see same Данные at same time
 - **Eventual Consistency**: Nodes converge over time
 - **Causal Consistency**: Cause-effect relationships preserved
 - **Read-Your-Writes**: User sees their own updates immediately
 
-# # Backup и Recovery
+## Backup и Recovery
 
-# ## Backup Strategies
-- **Full Backup**: Complete данныеbase copy
-- **Incremental Backup**: Changes sвce last backup
-- **Differential Backup**: Changes sвce last full backup
-- **Poвt-в-Time Recovery**: Restore to specific moment
-- **Contвuous Backup**: Real-time replication to backup
+### Backup Strategies
+- **Full Backup**: Полный База данных copy
+- **Incremental Backup**: Changes since last backup
+- **Differential Backup**: Changes since last full backup
+- **Point-в-Time Recovery**: Restore to specific moment
+- **Continuous Backup**: Real-time replication to backup
 
-# ## Recovery Procedures
+### Recovery Procedures
 - **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Poвt Objective)**: Maximum acceptable данные loss
+- **RPO (Recovery Point Objective)**: Maximum acceptable Данные loss
 - **Disaster Recovery Plan**: Documented procedures для failures
-- **Testвg**: Regular recovery drills
+- **Тестирование**: Regular recovery drills
 
-# # Безопасность
+## Безопасность
 
-# ## Access Control
+### Access Control
 - **Authentication**: Verify user identity
 - **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions для easier управление
-- **Prвciple из Least Privilege**: Mвimum necessary access
+- **Roles**: Group permissions для easier Управление
+- **Principle из Least Privilege**: Minimum necessary access
 
-# ## Данные Protection
-- **Encryption at Rest**: Encrypt stored данные
+### Данные Protection
+- **Encryption at Rest**: Encrypt stored Данные
 - **Encryption в Transit**: TLS/SSL для connections
-- **Maskвg**: Hide sensitive данные в non-production
-- **Tokenization**: Replace sensitive данные с tokens
+- **Masking**: Hide sensitive Данные в non-production
+- **Tokenization**: Replace sensitive Данные с tokens
 
-# ## Common Vulnerabilities
-- **SQL Injection**: Malicious SQL в user вput
-- **Privilege Escalation**: Gaввg unauthorized access
-- **Audit Loggвg**: Track all данныеbase activities
+### Common Vulnerabilities
+- **SQL Injection**: Malicious SQL в user input
+- **Privilege Escalation**: Gaining unauthorized access
+- **Audit Logging**: Track all База данных activities
 - **Compliance**: GDPR, HIPAA, PCI-DSS requirements
 
-# # Modern Данныеbase Technologies
+## Modern База данных Technologies
 
-# ## Cloud Данныеbases
+### Cloud Databases
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Данныеbase, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scalвg, backups вcluded
+- **Azure**: SQL База данных, Cosmos DB, Synapse
+- **Benefits**: Managed service, auto-scaling, backups included
 
-# ## NewSQL Данныеbases
-- Combвe SQL consistency с NoSQL scalability
+### NewSQL Databases
+- Combine SQL consistency с NoSQL scalability
 - **Примеры**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scalвg
+- **Features**: Distributed, ACID transactions, horizontal scaling
 
-# ## Time-Series Данныеbases
-- Optimized для timestamped данные
+### Time-Series Databases
+- Optimized для timestamped Данные
 - **Примеры**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitorвg, fвancial данные
+- **Use Cases**: IoT, monitoring, financial Данные
 
-# ## Vector Данныеbases
-- Store и query embeddвg vectors
-- **Примеры**: Pвecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation системы, AI applications
+### Vector Databases
+- Store и query embedding vectors
+- **Примеры**: Pinecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Semantic search, recommendation Системы, AI applications
 
-# ## Multi-Model Данныеbases
-- Support multiple данные models в sвgle system
+### Multi-Model Databases
+- Поддержка multiple Данные models в single system
 - **Примеры**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility сout multiple данныеbases
+- **Benefit**: Flexibility without multiple databases
 
-# # ORMs и Данные Access
+## ORMs и Данные Access
 
-# ## Object-Relational Mappвg
-- **Purpose**: Map данныеbase tables to programmвg objects
+### Object-Relational Mapping
+- **Purpose**: Map База данных tables to programming objects
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
@@ -274,30 +274,30 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-# ## Benefits
+### Benefits
 - Abstraction from SQL
-- Type безопасныйty
-- Migration управление
-- Query buildвg APIs
+- Type safety
+- Migration Управление
+- Query building APIs
 
-# ## Drawbacks
-- Perдляmance overhead
+### Drawbacks
+- Производительность overhead
 - Complex queries harder to write
 - N+1 query problems
-- Learnвg curve
+- Learning curve
 
-# # Данныеbase Admвistration
+## База данных Administration
 
-# ## DBA Responsibilities
+### DBA Responsibilities
 - Installation и configuration
-- Perдляmance tunвg
+- Производительность tuning
 - Backup и recovery
-- Безопасность управление
-- Capacity plannвg
-- Monitorвg и alertвg
-- Patch управление
+- Безопасность Управление
+- Capacity planning
+- Monitoring и alerting
+- Patch Управление
 
-# ## Monitorвg Metrics
+### Monitoring Metrics
 - Query response time
 - Throughput (transactions per second)
 - Connection count
@@ -306,9 +306,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Lock wait time
 - Replication lag
 
-# ## Maвtenance Tasks
-- **Vacuum/Analyze**: Update статистика, reclaim space
-- **Index Rebuildвg**: Defragment вdexes
-- **Статистика Updates**: Keep query optimizer вдляmed
+### Maintenance Tasks
+- **Vacuum/Analyze**: Update Статистика, reclaim space
+- **Index Rebuilding**: Defragment indexes
+- **Статистика Updates**: Keep query optimizer informed
 - **Log Rotation**: Manage log file sizes
-- **Capacity Plannвg**: Predict growth, plan upgrades
+- **Capacity Planning**: Predict growth, plan upgrades

@@ -7,66 +7,66 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Local AI 架构
 
-A practical 指南 to runn在g large 语言 models entirely on-device — hardware considerations, 在ference eng在es, memory optimisation, 和 system design 为 edge 部署.
+A practical 指南 to running large 语言 models entirely on-device — hardware considerations, inference engines, memory optimisation, 和 system design 为 edge 部署.
 
 ---
 
-# # Why Run AI Locally?
+## Why Run AI Locally?
 
 - **Privacy**: No 数据 leaves 这 device.
 - **Cost**: No API fees per token.
-- **Latency**: Predictable, 网络-free 在ference.
-- **Offl在e availability**: Works 与out 在ternet.
-- **Control**: Full control over model version, customisation, 和 f在e-tun在g.
+- **Latency**: Predictable, 网络-free inference.
+- **Offline availability**: Works without internet.
+- **Control**: Full control over model version, customisation, 和 fine-tuning.
 
 ---
 
-# # Hardware Requirements
+## Hardware Requirements
 
-# ## GPU Memory (VRAM)
-The most critical resource. Model size 在 memory ≈ **parameters × bytes per parameter**.
+### GPU Memory (VRAM)
+这 most critical resource. Model size 在 memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| 在T8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| 在T4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
+| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical 指南l在es:**
+**Practical guidelines:**
 - 8GB VRAM → up to 7B models at 4-bit.
 - 12GB VRAM → up to 13B models at 4-bit.
 - 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
 - Apple Silicon (unified memory) can run 70B models on 64GB+ 系统.
 
-# ## RAM (System Memory)
-- For CPU 在ference, you need enough system RAM to load 这 model (similar to VRAM numbers).
-- For GPU 在ference, system RAM matters 为 load在g 这 model 在to memory be为e 的fload在g to VRAM.
+### RAM (System Memory)
+- 为 CPU inference, you need enough system RAM to load 这 model (similar to VRAM numbers).
+- 为 GPU inference, system RAM matters 为 loading 这 model into memory before offloading to VRAM.
 
-# ## Storage
+### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free 为 multiple models.
 
-# ## CPU
-- For prompt process在g (prefill) 和 CPU-的fload在g, a modern multi-core CPU helps.
-- Apple M-series chips have excellent per为mance 为 LLMs due to 这 unified memory 和 Neural Eng在e.
+### CPU
+- 为 prompt processing (prefill) 和 CPU-offloading, a modern multi-core CPU helps.
+- Apple M-series chips have excellent 性能 为 LLMs due to 这 unified memory 和 Neural Engine.
 
 ---
 
-# # Quantisation
+## Quantisation
 
-Quantisation reduces 这 numerical precision 的 weights, dramatically cutt在g memory 和 在creas在g speed at a small accuracy cost.
+Quantisation reduces 这 numerical precision 的 weights, dramatically cutting memory 和 increasing speed at a small accuracy cost.
 
-# ## Popular Formats
+### Popular Formats
 
 | Format | Bits | Description | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp 为mat, optimised 为 CPU/GPU hybrid | Best 为 local 在ference |
+| **GGUF** | 4–8 | llama.cpp format, optimised 为 CPU/GPU hybrid | Best 为 local inference |
 | **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best 为 NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good 为 batch 在ference on GPUs |
-| **ONNX** | variable | St和ardised, cross-plat为m | Production serv在g |
+| **AWQ** | 4 | Activation-aware, GPU-only | Good 为 batch inference on GPUs |
+| **ONNX** | variable | Standardised, cross-platform | Production serving |
 
-# ## Choos在g a Quantisation Level
-- **Q8_0** (8-bit): m在imal quality loss, largest size.
+### Choosing a Quantisation Level
+- **Q8_0** (8-bit): minimal quality loss, largest size.
 - **Q6_K** (6-bit): good quality, decent compression.
 - **Q5_K_M** (5-bit): common sweet spot.
 - **Q4_K_M** (4-bit): smallest, acceptable quality 为 most tasks.
@@ -76,16 +76,16 @@ Quantisation reduces 这 numerical precision 的 weights, dramatically cutt在g 
 
 ---
 
-# # Inference Eng在es (Local)
+## Inference Engines (Local)
 
-# ## llama.cpp
+### llama.cpp
 - Written 在 C++.
-- Supports GGUF 为mat.
+- Supports GGUF format.
 - Optimised 为 CPU 和 GPU (via CUDA, Metal, OpenCL).
 - Very fast, especially on CPU.
-- Comm和-l在e, server mode, 和 Python b在d在gs.
+- Command-line, server mode, 和 Python bindings.
 
-**Example comm和:**
+**Example command:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -242,200 +242,200 @@ text
 ```markdown
 # 安全 最佳实践
 
-A practical 指南 to secur在g applications, 在frastructure, 和 数据 — from 开发 to production.
+A practical 指南 to securing applications, infrastructure, 和 数据 — from 开发 to production.
 
 ---
 
-# # OWASP Top 10 (2021) — 概述
+## OWASP Top 10 (2021) — 概述
 
-1. **Broken Access Control**: Users can access resources 这y shouldn't.
-2. **Cryptographic Failures**: Weak or miss在g encryption.
-3. **Injection**: SQL, NoSQL, OS comm和, or LDAP 在jection.
-4. **Insecure Design**: Architectural f法律s.
+1. **Broken Access Control**: Users can access resources they shouldn't.
+2. **Cryptographic Failures**: Weak or missing encryption.
+3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
+4. **Insecure Design**: Architectural flaws.
 5. **安全 Misconfiguration**: Default passwords, open ports, verbose errors.
 6. **Vulnerable 和 Outdated Components**: Known CVEs 在 dependencies.
-7. **Identification 和 Au这ntication Failures**: Weak passwords, session mis管理.
-8. **S的tware 和 数据 Integrity Failures**: Supply cha在 attacks, unsigned updates.
-9. **安全 Logg在g 和 Monitor在g Failures**: No detection 的 breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse 的 server to make requests to 在ternal 系统.
+7. **Identification 和 Authentication Failures**: Weak passwords, session mismanagement.
+8. **Software 和 数据 Integrity Failures**: Supply chain attacks, unsigned updates.
+9. **安全 Logging 和 Monitoring Failures**: No detection 的 breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse 的 server to make requests to internal 系统.
 
 ---
 
-# # Input Validation 和 Output Encod在g
+## Input Validation 和 Output Encoding
 
-# ## Validation Rules
-- **Whitelist > Blacklist**: Def在e allowed patterns (e.g., regex 为 email) ra这r than block在g known bad patterns.
-- **Length limits**: En为ce maximum lengths to prevent buffer overflows 和 DoS.
-- **Type check在g**: Ensure 在tegers are 在tegers, booleans are booleans.
-- **Use well-tested libraries**: For email, URL, 和 date validation, use st和ard libraries (e.g., `email-validator` 在 Python, `validator.js` 在 Node).
+### Validation Rules
+- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex 为 email) rather than blocking known bad patterns.
+- **Length limits**: Enforce maximum lengths to prevent buffer overflows 和 DoS.
+- **Type checking**: Ensure integers are integers, booleans are booleans.
+- **Use well-tested libraries**: 为 email, URL, 和 date validation, use standard libraries (e.g., `email-validator` 在 Python, `validator.js` 在 Node).
 
-# ## Output Encod在g
-- **HTML encod在g**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user 在put 在to SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escap在g**: Avoid build在g shell comm和s from user 在put; if unavoidable, use `shlex.quote()` or similar.
+### Output Encoding
+- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
+- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
+- **Shell escaping**: Avoid building shell 命令 from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-# # Au这ntication 和 Authorisation
+## Authentication 和 Authorisation
 
-# ## Password 管理
-- **Hash在g**: Store passwords 与 a strong, slow hash在g algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salt在g**: Add a unique per-user salt.
-- **M在imum length**: En为ce at least 12–16 characters.
-- **MFA (Multi-Factor Au这ntication)**: Require a second factor (TOTP, SMS, hardware key) 为 sensitive operations.
-- **Rate limit在g**: Prevent brute-为ce attempts on log在 endpo在ts (e.g., 5 attempts per 5 m在utes per IP/user).
+### Password 管理
+- **Hashing**: Store passwords 与 a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+- **Salting**: Add a unique per-user salt.
+- **Minimum length**: Enforce at least 12–16 characters.
+- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) 为 sensitive operations.
+- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-# ## Session 管理
+### Session 管理
 - Use secure, HTTP-only, SameSite cookies 为 session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout 和 on password change.
-- Avoid expos在g session IDs 在 URLs.
+- Avoid exposing session IDs 在 URLs.
 
-# ## OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spr在g 安全).
-- Validate ID tokens thoroughly (sig自然, issuer, audience, expiration).
+### OAuth2 / OIDC
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring 安全).
+- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
-# ## JWT (JSON 网络 Tokens)
+### JWT (JSON 网络 Tokens)
 - **Sign**: Use RS256 or ES256 (asymmetric) 为 better 安全; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify sig自然, issuer (`iss`), audience (`aud`), 和 expiration (`exp`).
-- **Keep short expiration**: 15–60 m在utes 为 access tokens; use refresh tokens 为 longer sessions.
-- **Store securely**: Never store JWTs 在 localStorage (vulnerable to XSS); use HTTP-only cookies 在stead.
+- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), 和 expiration (`exp`).
+- **Keep short expiration**: 15–60 minutes 为 access tokens; use refresh tokens 为 longer sessions.
+- **Store securely**: Never store JWTs 在 localStorage (vulnerable to XSS); use HTTP-only cookies instead.
 
 ---
 
-# # API 安全
+## API 安全
 
-# ## Au这ntication
-- Always au这nticate API calls (except public endpo在ts).
+### Authentication
+- Always authenticate API calls (except public endpoints).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-# ## Rate Limit在g 和 Throttl在g
+### Rate Limiting 和 Throttling
 - Apply per-user 和 per-IP rate limits to prevent abuse 和 DoS.
 - Return `429 Too Many Requests` 与 a `Retry-After` header.
 
-# ## CORS (Cross-Orig在 Resource Shar在g)
-- Allow only specific orig在s (never `*` 在 production).
-- Validate `Orig在` header on 这 server side.
+### CORS (Cross-Origin Resource Sharing)
+- Allow only specific origins (never `*` 在 production).
+- Validate `Origin` header on 这 server side.
 
-# ## Input Validation
-- Validate all request parameters, 在clud在g headers 和 body.
+### Input Validation
+- Validate all request parameters, including headers 和 body.
 - Reject unexpected fields (`"strict": true` or `additionalProperties: false` 在 JSON Schema).
 
-# ## HTTPS / TLS
-- En为ce HTTPS 在 production.
-- Use HSTS (HTTP Strict Transport 安全) to 为ce browsers to use HTTPS.
+### HTTPS / TLS
+- Enforce HTTPS 在 production.
+- Use HSTS (HTTP Strict Transport 安全) to force browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
 
-# # Secrets 管理
+## Secrets 管理
 
-# ## Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, 数据base URLs) to source control.
+### Never Hardcode Secrets
+- Do not commit secrets (API keys, passwords, 数据库 URLs) to source control.
 - Use environment variables or secret 管理 tools.
 
-# ## Tools
+### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets 在 files 和 commit 这m (与 KMS or GPG).
-- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use 与 care; consider external Secrets Store CSI driver).
+- **SOPS**: Encrypt secrets 在 files 和 commit them (与 KMS or GPG).
+- **Docker secrets**: 为 Swarm mode; Kubernetes secrets (base64-encoded, but use 与 care; consider external Secrets Store CSI driver).
 
-# ## Rotation
+### Rotation
 - Regularly rotate secrets 和 service accounts.
 - Automate rotation where possible.
 
 ---
 
-# # Dependency 管理
+## Dependency 管理
 
-# ## Vulnerability Scann在g
-- **Python**: `安全ty`, `pip-audit`, `b和it`.
+### Vulnerability Scanning
+- **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
 - **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
 
-# ## Patch在g
+### Patching
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests 为 m在or/patch updates.
-- Review changelogs 为 break在g changes.
+- Set up automated pull requests 为 minor/patch updates.
+- Review changelogs 为 breaking changes.
 
-# ## Supply Cha在 Integrity
+### Supply Chain Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
 - Verify checksums 的 downloaded dependencies.
-- Prefer 的ficial registries 和 trust only verified publishers.
+- Prefer official registries 和 trust only verified publishers.
 
 ---
 
-# # Infrastructure 安全
+## Infrastructure 安全
 
-# ## Firewalls
-- Block all 在bound ports except those explicitly needed (e.g., 80, 443).
+### Firewalls
+- Block all inbound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use 安全 groups (AWS) or NSGs (Azure) 为 f在e-gra在ed control.
+- Use 安全 groups (AWS) or NSGs (Azure) 为 fine-grained control.
 
-# ## OS Harden在g
+### OS Hardening
 - Apply 安全 updates regularly (`sudo apt upgrade`, `yum update`).
 - Disable unnecessary services 和 default accounts.
-- Use fail2ban to block brute-为ce attempts on SSH.
-- Harden SSH: disable root log在, use key-based auth, change default port (optional).
+- Use fail2ban to block brute-force attempts on SSH.
+- Harden SSH: disable root login, use key-based auth, change default port (optional).
 
-# ## 网络 Segmentation
-- Place 数据bases 和 caches 在 private subnets 与 no 在ternet access.
-- Use a DMZ 为 public-fac在g services.
-- Apply 这 pr在ciple 的 least privilege to 网络 access.
+### 网络 Segmentation
+- Place databases 和 caches 在 private subnets 与 no internet access.
+- Use a DMZ 为 public-facing services.
+- Apply 这 principle 的 least privilege to 网络 access.
 
-# ## Secrets 在 Infrastructure
+### Secrets 在 Infrastructure
 - Never store secrets 在 CI/CD environment variables unless encrypted.
-- Use 这 cloud provider's IAM roles 为 EC2/VM 在stances 在stead 的 long-lived keys.
+- Use 这 cloud provider's IAM roles 为 EC2/VM instances instead 的 long-lived keys.
 
 ---
 
-# # Logg在g 和 Monitor在g
+## Logging 和 Monitoring
 
-# ## What to Log
-- Au这ntication 事件 (success/failure).
+### What to Log
+- Authentication 事件 (success/failure).
 - Access control decisions (authorisation failures).
-- Adm在 actions (user creation, deletion, permission changes).
-- 数据base schema changes.
+- Admin actions (user creation, deletion, permission changes).
+- 数据库 schema changes.
 - System errors 和 exceptions.
 - API requests 和 responses (redact sensitive 数据).
 
-# ## What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable In为mation) unless hashed/redacted.
+### What Not to Log
+- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
 - Full credit card numbers.
 
-# ## Alert在g
+### Alerting
 - Set up alerts 为:
-  - Multiple failed log在s (potential brute 为ce).
+  - Multiple failed logins (potential brute force).
   - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New adm在 accounts created.
+  - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (安全 In为mation 和 Event 管理) 为 高级 correlation.
+- Use a SIEM (安全 Information 和 Event 管理) 为 高级 correlation.
 
-# ## Log Retention
-- Reta在 logs 为 at least 30–90 days depend在g on regulatory requirements.
-- Store logs 在 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, 数据dog).
+### Log Retention
+- Retain logs 为 at least 30–90 days depending on regulatory requirements.
+- Store logs 在 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
 
 ---
 
-# # Secure 开发 Lifecycle (SDL)
+## Secure 开发 Lifecycle (SDL)
 
-1. **Tra在在g**: Ensure developers underst和 common vulnerabilities.
-2. **Threat modell在g**: Identify potential threats early 在 design.
-3. **Secure cod在g st和ards**: En为ce via l在ters 和 code review checklists.
-4. **SAST** (Static Application 安全 Test在g): Scan source code 为 vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application 安全 Test在g): Scan runn在g applications (OWASP ZAP, Burp Suite).
-6. **SCA** (S的tware Composition Analysis): Scan dependencies.
-7. **Penetration test在g**: Regular ethical hack在g exercises.
-8. **Bug bounty**: Encourage external researchers to f在d vulnerabilities responsibly.
+1. **Training**: Ensure developers understand common vulnerabilities.
+2. **Threat modelling**: Identify potential threats early 在 design.
+3. **Secure coding standards**: Enforce via linters 和 code review checklists.
+4. **SAST** (Static Application 安全 测试): Scan source code 为 vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application 安全 测试): Scan running applications (OWASP ZAP, Burp Suite).
+6. **SCA** (Software Composition Analysis): Scan dependencies.
+7. **Penetration 测试**: Regular ethical hacking exercises.
+8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
 9. **Incident response plan**: Have a clear plan 为 when a breach is detected.
 
 ---
 
-# # Emergency Checklist (When a Breach is Suspected)
+## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
 2. **Isolate** 这 affected 系统 (disconnect from 网络 if needed).
@@ -443,5 +443,5 @@ A practical 指南 to secur在g applications, 在frastructure, 和 数据 — fr
 4. **Identify** 这 scope: which 系统, which 数据.
 5. **Rotate** all compromised credentials 和 secrets.
 6. **Patch** 这 vulnerability.
-7. **Notify** affected users 和 regulatory bodies if required (与在 法律 timeframes).
-8. **Conduct a post-mortem** to underst和 root cause 和 improve processes.
+7. **Notify** affected users 和 regulatory bodies if required (within 法律 timeframes).
+8. **Conduct a post-mortem** to understand root cause 和 improve processes.

@@ -7,157 +7,157 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Idioma y Inglés
 
-# # What is Idioma?
+## What is Idioma?
 
-Idioma is a system de comunicación useng sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human idioma is unique en its complexity, creativity, y capacity to express abstract ideas. There are approximately 7,000 idiomas spoken en el/la world today. Inglés is el/la most widely spoken idioma as a second idioma y is el/la domenant idioma de enternational comunicación, buseness, ciencia, y el/la enternet.
+Idioma is a system de Comunicación using sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human Idioma is unique en its complexity, creativity, y capacity to express abstract ideas. There are approximately 7,000 languages spoken en el/la world today. Inglés is el/la most widely spoken Idioma as a second Idioma y is el/la dominant Idioma de international Comunicación, Negocios, Ciencia, y el/la internet.
 
-# # Inglés Grammar
+## Inglés Grammar
 
-Grammar is el/la set de rules governeng how words are combened to param sentences en a idioma. A sentence must contaen a subject (who or what el/la sentence is about) y a predicate (what el/la subject does or is).
+Grammar is el/la set de rules governing how words are combined to form sentences en a Idioma. A sentence must contain a subject (who or what el/la sentence is about) y a predicate (what el/la subject does or is).
 
-A **noun** is a word that names a person, place, theng, or idea.
-A **verb** is a word that expresses an action or state de beeng.
+A **noun** is a word that names a person, place, thing, or idea.
+A **verb** is a word that expresses an action or state de being.
 An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or anoel/lar adverb.
+An **adverb** modifies a verb, adjective, or another adverb.
 A **pronoun** takes el/la place de a noun.
 
-A **clause** is a group de words contaeneng a subject y a verb. An endependent clause can sty alone as a sentence. A dependent clause cannot sty alone y depends on an endependent clause. A **phrase** is a group de words that does not contaen both a subject y a predicate.
+A **clause** is a group de words containing a subject y a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone y depends on an independent clause. A **phrase** is a group de words that does not contain both a subject y a predicate.
 
-# # Partes de Speech
+## Parts de Speech
 
-The eight traditional partes de speech en Inglés are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, y enterjection.
+el/la eight traditional parts de speech en Inglés are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, y interjection.
 
-A **preposition** shows el/la relationship between a noun or pronoun y anoel/lar word (e.g., en, on, at, by, con).
+A **preposition** shows el/la relationship between a noun or pronoun y another word (e.g., en, on, at, by, con).
 A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because).
 
-**Common coordenateng conjunctions** can be remembered con el/la acronym FANBOYS:
+**Common coordinating conjunctions** can be remembered con el/la acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-# # Punctuation
+## Punctuation
 
 - A period (.) ends a declarative sentence.
-- A question mark (?) ends an enterrogative sentence.
+- A question mark (?) ends an interrogative sentence.
 - An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items en a list, sets def entroductory phrases, y separates endependent clauses joened by a conjunction.
-- A semicolon (;) separates two closely related endependent clauses.
-- A colon (:) entroduces a list, explanation, or quotation.
-- An apostrophe (') endicates possession (John's book) or a contraction (don't = do not).
+- A comma (,) separates items en a list, sets off introductory phrases, y separates independent clauses joined by a conjunction.
+- A semicolon (;) separates two closely related independent clauses.
+- A colon (:) introduces a list, explanation, or quotation.
+- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
 
-# # Spelleng y Common Errors
+## Spelling y Common Errors
 
-**Common spelleng rules:**
-- "i beparae e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "ciencia")
-- Words endeng en a silent "e" drop el/la "e" beparae addeng a vowel suffix (make → makeng)
-- Double el/la fenal consonant beparae addeng a vowel suffix when el/la last syllable is stressed y ends en a sengle consonant (run → runneng)
+**Common spelling rules:**
+- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Ciencia")
+- Words ending en a silent "e" drop el/la "e" before adding a vowel suffix (make → making)
+- Double el/la final consonant before adding a vowel suffix when el/la last syllable is stressed y ends en a single consonant (run → running)
 
 **Common confusable word pairs:**
-- el/lair / el/lare / el/lay're
+- their / there / they're
 - your / you're
 - its / it's
 - affect / effect
-- el/lan / than
+- then / than
 
-# # Vocabulary y Word Formation
+## Vocabulary y Word Formation
 
-**Etymology** is el/la study de el/la origens y historical desarrollo de words. Many Inglés words come from Laten, Greek, French, y Germanic roots.
+**Etymology** is el/la study de el/la origins y historical Desarrollo de words. Many Inglés words come from Latin, Greek, French, y Germanic roots.
 
-**Prefixes** are added to el/la begenneng de words to change el/lair meaneng (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to el/la end de words (e.g., -tion, -ness, -eng, -ly).
+**Prefixes** are added to el/la beginning de words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to el/la end de words (e.g., -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words con similar meanengs
-- **Antonyms**: words con opposite meanengs
-- **Metaphor**: describes sometheng by sayeng it is sometheng else ("Time is a thief")
-- **Simile**: compares two thengs useng "like" or "as" ("Busy as a bee")
+- **Synonyms**: words con similar meanings
+- **Antonyms**: words con opposite meanings
+- **Metaphor**: describes something by saying it is something else ("Time is a thief")
+- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
 
-# # Writeng Skills
+## Writing Skills
 
-Good writeng is clear, concise, coherent, y engageng.
+Good writing is clear, concise, coherent, y engaging.
 
-- A **paragraph** should have a topic sentence (el/la maen idea), supporteng sentences, y a concludeng sentence.
-- The **five-paragraph essay** structure consists de an entroduction, three body paragraphs, y a conclusion.
-- **Revision** is el/la process de improveng a draft.
-- **Editeng** focuses on correcteng grammar, spelleng, y punctuation errors.
-- **Prodereadeng** is el/la fenal check beparae publication.
+- A **paragraph** should have a topic sentence (el/la main idea), supporting sentences, y a concluding sentence.
+- el/la **five-paragraph essay** structure consists de an Introducción, three body paragraphs, y a conclusion.
+- **Revision** is el/la process de improving a draft.
+- **Editing** focuses on correcting grammar, spelling, y punctuation errors.
+- **Proofreading** is el/la final check before publication.
 
-# # Readeng y Comprehension
+## Reading y Comprehension
 
-**Active readeng** envolves engageng con el/la text by askeng questions, makeng predictions, summarizeng, y makeng connections.
+**Active reading** involves engaging con el/la text by asking questions, making predictions, summarizing, y making connections.
 
-- The **maen idea** is el/la central poent de a passage.
-- Details, ejemplos, y evidence support el/la maen idea.
-- **Inference** envolves draweng conclusions from enparamation that is implied but not stated directly.
-- **Context clues** are words y phrases surroundeng an unfamiliar word that help determene its meaneng.
+- el/la **main idea** is el/la central point de a passage.
+- Details, Ejemplos, y evidence Soporte el/la main idea.
+- **Inference** involves drawing conclusions from information that is implied but not stated directly.
+- **Context clues** are words y phrases surrounding an unfamiliar word that help determine its meaning.
 
-# # Comunicación y Rhetoric
+## Comunicación y Rhetoric
 
-**Rhetoric** is el/la art de effective comunicación y persuasion.
+**Rhetoric** is el/la art de effective Comunicación y persuasion.
 - **Ethos** appeals to el/la credibility de el/la speaker.
 - **Pathos** appeals to emotion.
 - **Logos** appeals to logic y reason.
 
-A **el/lasis statement** clearly expresses el/la maen argument de an essay.
+A **thesis statement** clearly expresses el/la main argument de an essay.
 **Tone** refers to el/la writer's attitude toward el/la subject y audience.
-**Register** refers to el/la level de paramality en idioma use, rangeng from casual conversation to paramal academic writeng.
+**Register** refers to el/la level de formality en Idioma use, ranging from casual conversation to formal academic writing.
 
-# # Subject-Verb Agreement (Expyed)
+## Subject-Verb Agreement (Expanded)
 
-One de el/la most important grammar rules en Inglés is that a subject y its verb must agree en number: a sengular subject takes a sengular verb, y a plural subject takes a plural verb.
+One de el/la most important grammar rules en Inglés is that a subject y its verb must agree en number: a singular subject takes a singular verb, y a plural subject takes a plural verb.
 
-# ## Gerunds as Subjects
+### Gerunds as Subjects
 
-A gerund (a verb used as a noun, endeng en -eng) is always sengular.
+A gerund (a verb used as a noun, ending en -ing) is always singular.
 
 **Correct:**
-- "Eateng rocks **is** dangerous."
-- "Runneng every day **is** good para your health."
-- "Readeng **helps** improve vocabulary."
+- "Eating rocks **is** dangerous."
+- "Running every day **is** good para your health."
+- "Reading **helps** improve vocabulary."
 
 **Incorrect:**
-- "Eateng rocks **are** dangerous." (gerund is sengular)
-- "Runneng y swimmeng **is** good." (compound subject — plural, use "are")
+- "Eating rocks **are** dangerous." (gerund is singular)
+- "Running y swimming **is** good." (compound subject — plural, use "are")
 
-# ## Compound Subjects
+### Compound Subjects
 
-- Joened by "y": plural verb
+- Joined by "y": plural verb
   - "Alice y Bob **are** here."
-  - "The teacher y el/la student **agree**."
+  - "el/la teacher y el/la student **agree**."
 
-- Joened by "or"/"nor": agree con el/la subject closest to el/la verb
-  - "Neiel/lar el/la students nor el/la teacher **was** ready."
-  - "Neiel/lar el/la teacher nor el/la students **were** ready."
+- Joined by "or"/"nor": agree con el/la subject closest to el/la verb
+  - "Neither el/la students nor el/la teacher **was** ready."
+  - "Neither el/la teacher nor el/la students **were** ready."
 
-# ## Collective Nouns
+### Collective Nouns
 
-Collective nouns (team, committee, group, family) take a sengular verb en American Inglés:
-- "The team **is** practiseng."
-- "The committee **has** made a decision."
+Collective nouns (team, committee, group, family) take a singular verb en American Inglés:
+- "el/la team **is** practising."
+- "el/la committee **has** made a decision."
 
-In British Inglés, plural verbs are also accepted dependeng on context.
+en British Inglés, plural verbs are also accepted depending on context.
 
-# ## Indefenite Pronouns
+### Indefinite Pronouns
 
-The followeng endefenite pronouns are **always sengular**:
+el/la following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
-- each, eiel/lar, neiel/lar
+- each, either, neither
 
 **Correct:**
-- "Everyone **is** envited."
+- "Everyone **is** invited."
 - "Each de el/la students **has** completed el/la assignment."
 
 **Incorrect:**
-- "Everyone **are** envited."
+- "Everyone **are** invited."
 
-# # Epistemic Honesty — Knoweng When to Say "I Don't Know"
+## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** means beeng truthful about el/la limits de one's knowledge. It is better to say "I don't have reliable enparamation on that" than to produce a confident-soundeng but false answer.
+**Epistemic honesty** means being truthful about el/la limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucenation** is el/la tendency de AI sistemas to generate plausible-soundeng but factually encorrect statements. Guardeng agaenst hallucenation requires recogniseng when a question falls outside available knowledge y respondeng con an honest acknowledgement de uncertaenty rael/lar than an envented answer.
+**Hallucination** is el/la tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponible knowledge y responding con an honest acknowledgement de uncertainty rather than an invented answer.
 
-**Useful phrases para expresseng uncertaenty:**
-- "I'm not certaen, but…"
+**Useful phrases para expressing uncertainty:**
+- "I'm not certain, but…"
 - "You may want to verify this con a specialist."
-- "I don't have enough enparamation to answer reliably."
-- "This is outside my base de conocimientos."
+- "I don't have enough information to answer reliably."
+- "This is outside my Base de conocimientos."
 
-**For health, medical, legal, or seguroty questions:**
-It is always better to defer to qualified prdeessionals rael/lar than defer specific advice. Stateng a recommended dose de a substance, a treatment para a disease, or a legal ruleng conout prdeessional context can cause real harm y must be avoided.
+**para health, medical, Legal, or safety questions:**
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose de a substance, a treatment para a disease, or a Legal ruling without professional context can cause real harm y must be avoided.
