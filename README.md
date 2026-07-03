@@ -32,7 +32,7 @@ This repository serves as a foundational framework for AI agent development, pro
 
 - **Structured Knowledge**: 36+ domain-specific knowledge files organized by category
 - **Skill Definitions**: 40+ skill modules covering behavior, design, communication, and technical capabilities
-- **Agent Configurations**: 5 pre-configured agent modes for different interaction patterns
+- **Agent Configurations**: 9 pre-configured agent modes for different interaction patterns
 - **Multi-Language Support**: Knowledge base available in 18 languages
 
 ---
@@ -42,19 +42,26 @@ This repository serves as a foundational framework for AI agent development, pro
 ```
 /workspace
 ├── knowledge_base/           # Multi-language knowledge files
-│   ├── English/             # English knowledge base (36 files)
+├── knowledge_base/           # Multi-language knowledge files
 │   ├── Arabic/              # Arabic knowledge base
+│   ├── English/             # English knowledge base (36 files)
 │   ├── French/              # French knowledge base
 │   ├── German/              # German knowledge base
+│   ├── Hindi/               # Hindi knowledge base
+│   ├── Indonesian/          # Indonesian knowledge base
+│   ├── Italian/             # Italian knowledge base
 │   ├── Japanese/            # Japanese knowledge base
 │   ├── Korean/              # Korean knowledge base
-│   ├── Mandarin (Simplified Chinese)/ # Simplified Chinese knowledge base
-│   ├── Mandarin (Traditional Chinese)/ # Traditional Chinese knowledge base
+│   ├── Mandarin_Simplified/ # Simplified Chinese knowledge base
+│   ├── Mandarin_Traditional/# Traditional Chinese knowledge base
+│   ├── Persian/             # Persian knowledge base
+│   ├── Polish/              # Polish knowledge base
 │   ├── Portuguese/          # Portuguese knowledge base
 │   ├── Russian/             # Russian knowledge base
-│   ├── Spanish/             # Spanish knowledge base
+│   ├── Thai/                # Thai knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   └── (6 planned languages are documented in the Multi-Language Support table below, in addition to the 12 existing directories above)
+│   ├── Vietnamese/          # Vietnamese knowledge base
+│   └── 6 planned languages are documented in the Multi-Language Support table below, in addition to the 18 existing directories above.
 ├── skills/                   # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
@@ -72,14 +79,18 @@ This repository serves as a foundational framework for AI agent development, pro
 ├── agent_modes/             # Agent configuration files
 │   ├── Agent.Agent.md       # Full coding agent
 │   ├── Ask.Agent.md         # Q&A mode
+│   ├── Chat.Agent.md        # Chat mode
+│   ├── Debug.Agent.md       # Debugging mode
 │   ├── Explore.Agent.md     # Exploration mode
 │   ├── Plan.Agent.md        # Planning mode
-│   └── Review.Agent.md      # Review mode
+│   ├── Review.Agent.md      # Review mode
+│   ├── Secure.Agent.md      # Security mode
+│   └── Test.Agent.md        # Testing mode
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
 
-Legacy note: `translate_kb.py` remains in the repository for reference only, but manual updates are the preferred approach because the script can corrupt formatting. If you don't actually speak any other languages it's fine, you can use tools like Qwen Code for free or GitHub Copilot if you don't mind using your credits.
+Legacy note: `translate_kb.py` remains in the repository for reference only, but manual updates are the preferred approach because the script can corrupt formatting. If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for free or GitHub Copilot if you don't mind using your credits.
 
 ---
 
@@ -219,11 +230,15 @@ Pre-configured agent modes for different interaction patterns:
 
 | Mode | File | Use Case |
 |------|------|----------|
-| ** Agent** | `Agent.Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
-| ** Ask** | `Ask.Agent.md` | Question-answering mode for direct queries and information retrieval |
-| ** Explore** | `Explore.Agent.md` | Exploration mode for discovering and investigating new topics |
-| ** Plan** | `Plan.Agent.md` | Planning mode for structured task breakdown and roadmap creation |
-| ** Review** | `Review.Agent.md` | Review mode for code analysis, content review, and quality assurance |
+| **Agent** | `Agent.Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
+| **Ask** | `Ask.Agent.md` | Question-answering mode for direct queries and information retrieval |
+| **Chat** | `Chat.Agent.md` | Conversational mode for natural dialogue and interactive discussions |
+| **Debug** | `Debug.Agent.md` | Debugging mode for identifying and fixing code issues |
+| **Explore** | `Explore.Agent.md` | Exploration mode for discovering and investigating new topics |
+| **Plan** | `Plan.Agent.md` | Planning mode for structured task breakdown and roadmap creation |
+| **Review** | `Review.Agent.md` | Review mode for code analysis, content review, and quality assurance |
+| **Secure** | `Secure.Agent.md` | Security mode for secure coding practices and vulnerability analysis |
+| **Test** | `Test.Agent.md` | Testing mode for test creation and validation |
 
 Each agent mode includes:
 - YAML frontmatter configuration
@@ -235,28 +250,36 @@ Each agent mode includes:
 
 ## 🌍 Multi-Language Support
 
-The knowledge base supports **18 languages**: 12 currently available and 6 planned.
+The knowledge base supports **18 languages**: 18 currently available and 6 planned.
 
 | Language | Directory | Status |
 |----------|-----------|--------|
 | Arabic | `Arabic/` | ✅ Available |
-| English | `English/` | ✅ Fully Available |
+| English | `English/` | ✅ Fully Supported and Available |
 | French | `French/` | ✅ Available |
 | German | `German/` | ✅ Available |
-| Indonesian | `Indonesian/` | 🟡 Planned |
-| Italian | `Italian/` | 🟡 Planned |
+| Indonesian | `Indonesian/` | ✅ Available |
+| Italian | `Italian/` | ✅ Available |
 | Japanese | `Japanese/` | ✅ Available |
 | Korean | `Korean/` | ✅ Available |
 | Mandarin (Simplified) | `Mandarin (Simplified Chinese)/` | ✅ Available |
 | Mandarin (Traditional) | `Mandarin (Traditional Chinese)/` | ✅ Available |
-| Persian | `Persian/` | 🟡 Planned |
-| Polish | `Polish/` | 🟡 Planned |
+| Persian | `Persian/` | ✅ Available |
+| Polish | `Polish/` | ✅ Available |
 | Portuguese | `Portuguese/` | ✅ Available |
 | Russian | `Russian/` | ✅ Available |
 | Spanish | `Spanish/` | ✅ Available |
-| Thai | `Thai/` | 🟡 Planned |
+| Thai | `Thai/` | ✅ Available |
 | Turkish | `Turkish/` | ✅ Available |
-| Vietnamese | `Vietnamese/` | 🟡 Planned |
+| Vietnamese | `Vietnamese/` | ✅ Available |
+| Hindi | `Hindi/` | 🟡 Planned |
+| Ukrainian | `Ukrainian/` | 🟡 Planned |
+| Romanian | `Romanian/` | 🟡 Planned |
+| Bengali (Bangla)  | `Bengali (Bangla)/` | 🟡 Planned |
+| Urdu | `Urdu/` | 🟡 Planned |
+| Tagalog (Filipino) | `Tagalog (Filipino)/` | 🟡 Planned |
+
+Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **before** or **During** September.
 
 ---
 
