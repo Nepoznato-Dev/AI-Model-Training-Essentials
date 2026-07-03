@@ -3,45 +3,45 @@
 ## Fiziki Coğrafya
 
 ### Kıtalar ve Büyük Bölgeler
-- **Africa**: 54 ülke, Sahra Çölü'nden tropik yağmur ormanlarına uzanan çeşitli iklimler, Nil Nehri (en uzun nehir)
-- **Antarctica**: En güneydeki kıta, buzla kaplı, araştırma istasyonları var, kalıcı sakin yok
-- **Asia**: En büyük kıta; Orta Doğu, Orta Asya, Doğu Asya, Güney Asya ve Güneydoğu Asya'yı içerir
-- **Europe**: Avrasya'nın batı yarımadası, çeşitli kültürler, Avrupa Birliği siyasi bloğu
-- **North America**: Kanada, Amerika Birleşik Devletleri, Meksika, Orta Amerika kıstağı, Karayip adaları
-- **Oceania**: Avustralya, Yeni Zelanda, Pasifik ada ülkeleri (Melanezya, Mikronezya, Polinezya)
-- **South America**: And Dağları, Amazon Yağmur Ormanı, 12 egemen ülke
+- **Afrika**: 54 ülke, Sahra Çölü'nden tropik yağmur ormanlarına uzanan çeşitli iklimler, Nil Nehri (en uzun nehir)
+- **Antarktika**: En güneydeki kıta, buzla kaplı, araştırma istasyonları var, kalıcı sakin yok
+- **Asya**: En büyük kıta; Orta Doğu, Orta Asya, Doğu Asya, Güney Asya ve Güneydoğu Asya'yı içerir
+- **Avrupa**: Avrasya'nın batı yarımadası, çeşitli kültürler, Avrupa Birliği siyasi bloğu
+- **Kuzey Amerika**: Kanada, Amerika Birleşik Devletleri, Meksika, Orta Amerika kıstağı, Karayip adaları
+- **Okyanusya**: Avustralya, Yeni Zelanda, Pasifik ada ülkeleri (Melanezya, Mikronezya, Polinezya)
+- **Güney Amerika**: And Dağları, Amazon Yağmur Ormanı, 12 egemen ülke
 
 ### Başlıca Dağ Sıradağları
-- **Himalayas**: Asya, Everest Dağı'nı da içeren en yüksek zirveler (8.849 m), Hint-Avrasya levha çarpışmasıyla oluşmuştur
-- **Andes**: Güney Amerika, en uzun kıtasal dağ sırası (~7.000 km), volkanik etkinlik
-- **Rocky Mountains**: Kuzey Amerika, Kanada'dan New Mexico'ya kadar uzanır
-- **Alps**: Avrupa, Orta Avrupa dağ sırası, önemli turizm ve kayak merkezi
-- **Atlas Mountains**: Kuzey Afrika, Fas'tan Tunus'a, Akdeniz ile Sahra'yı ayırır
-- **Ural Mountains**: Rusya, Avrupa ile Asya arasındaki geleneksel sınır
+- **Himalayalar**: Asya, Everest Dağı'nı da içeren en yüksek zirveler (8.849 m), Hint-Avrasya levha çarpışmasıyla oluşmuştur
+- **Andlar**: Güney Amerika, en uzun kıtasal dağ sırası (~7.000 km), volkanik etkinlik
+- **Kayalık Dağları**: Kuzey Amerika, Kanada'dan New Mexico'ya kadar uzanır
+- **Alpler**: Avrupa, Orta Avrupa dağ sırası, önemli turizm ve kayak merkezi
+- **Atlas Dağları**: Kuzey Afrika, Fas'tan Tunus'a, Akdeniz ile Sahra'yı ayırır
+- **Ural Dağları**: Rusya, Avrupa ile Asya arasındaki geleneksel sınır
 
 ### Başlıca Nehirler
-- **Nile**: Kuzeydoğu Afrika, ~6.650 km, 11 ülkeden geçerek Akdeniz'e ulaşır
+- **Nil**: Kuzeydoğu Afrika, ~6.650 km, 11 ülkeden geçerek Akdeniz'e ulaşır
 - **Amazon**: Güney Amerika, debi hacmi bakımından en büyük, Amazon Havzası biyoçeşitliliği
 - **Yangtze**: Çin, Asya'nın en uzunu, Üç Boğaz Barajı
 - **Mississippi-Missouri**: Kuzey Amerika, Amerika Birleşik Devletleri'nin başlıca drenaj sistemi
 - **Ganges**: Hindistan/Bangladeş, kutsal nehir, yoğun nüfuslu havza
-- **Danube**: Avrupa, 10 ülkeden geçer, önemli ticaret yolu
+- **Tuna**: Avrupa, 10 ülkeden geçer, önemli ticaret yolu
 
 ### Çöller
-- **Sahara**: Kuzey Afrika, en büyük sıcak çöl (~9,2 milyon km²)
-- **Arabian Desert**: Orta Doğu, Arap Yarımadası'nın büyük kısmını kaplar
+- **Sahra**: Kuzey Afrika, en büyük sıcak çöl (~9,2 milyon km²)
+- **Arap Çölü**: Orta Doğu, Arap Yarımadası'nın büyük kısmını kaplar
 - **Gobi**: Doğu Asya, Çin/Moğolistan, soğuk çöl
 - **Kalahari**: Güney Afrika, yarı kurak savan
-- **Antarctic Desert**: Genel olarak en büyük çöl (soğuk çöl)
+- **Antarktika Çölü**: Genel olarak en büyük çöl (soğuk çöl)
 - **Atacama**: Güney Amerika, kutup dışı en kurak çöl
 
 ### İklim Kuşakları
-- **Tropical**: Ekvatora yakın, yıl boyunca sıcak, yüksek yağışlı (yağmur ormanları, musonlar)
-- **Arid/Subtropical**: Sıcak yazlar, ılıman kışlar, düşük yağış (çöller)
-- **Temperate**: Orta sıcaklıklar, belirgin mevsimler (Akdeniz, okyanusal, nemli karasal)
-- **Continental**: Büyük sıcaklık değişimleri, soğuk kışlar (kıtaların iç kesimleri)
-- **Polar**: Aşırı soğuk, buz örtüleri, tundra (Arktik, Antarktika)
-- **Highland**: Yüksekliğe göre değişir, rakım arttıkça serinler
+- **Tropikal**: Ekvatora yakın, yıl boyunca sıcak, yüksek yağışlı (yağmur ormanları, musonlar)
+- **Kurak/Subtropikal**: Sıcak yazlar, ılıman kışlar, düşük yağış (çöller)
+- **Ilıman**: Orta sıcaklıklar, belirgin mevsimler (Akdeniz, okyanusal, nemli karasal)
+- **Karasal**: Büyük sıcaklık değişimleri, soğuk kışlar (kıtaların iç kesimleri)
+- **Kutupsal**: Aşırı soğuk, buz örtüleri, tundra (Arktik, Antarktika)
+- **Yüksek Dağlık**: Yüksekliğe göre değişir, rakım arttıkça serinler
 
 ## Beşerî Coğrafya
 
@@ -64,130 +64,130 @@
 ## Siyasi Coğrafya
 
 ### Yönetim Türleri
-- **Democracy**: Gücün oy verme yoluyla halkta olduğu yönetim (temsili, doğrudan)
-- **Republic**: Monarşinin olmadığı, temsilcilerin seçildiği devlet
-- **Monarchy**: Kral/kraliçe tarafından yönetilen sistem (anayasal, mutlak)
-- **Authoritarian**: Sınırlı siyasi özgürlük, merkezileşmiş güç
-- **Totalitarian**: Kamusal ve özel yaşam üzerinde tam devlet kontrolü
+- **Demokrasi**: Gücün oy verme yoluyla halkta olduğu yönetim (temsili, doğrudan)
+- **Cumhuriyet**: Monarşinin olmadığı, temsilcilerin seçildiği devlet
+- **Monarşi**: Kral/kraliçe tarafından yönetilen sistem (anayasal, mutlak)
+- **Otoriter**: Sınırlı siyasi özgürlük, merkezileşmiş güç
+- **Totaliter**: Kamusal ve özel yaşam üzerinde tam devlet kontrolü
 - **Federal**: Gücün ulusal ve bölgesel yönetimler arasında paylaştırılması
-- **Unitary**: Merkezî yönetim, bölgesel otoriteler ona bağlıdır
+- **Üniter**: Merkezî yönetim, bölgesel otoriteler ona bağlıdır
 
 ### Uluslararası Kuruluşlar
-- **United Nations (UN)**: 193 üye devlet, barışı koruma, insani yardım, uluslararası hukuk
+- **Birleşmiş Milletler (BM)**: 193 üye devlet, barışı koruma, insani yardım, uluslararası hukuk
 - **NATO**: Kuzey Atlantik Antlaşması Örgütü, askerî ittifak (2024 itibarıyla 32 üye)
-- **European Union (EU)**: 27 üye devlet, ekonomik ve siyasi birlik, euro para birimi (20 üye)
-- **World Trade Organization (WTO)**: Uluslararası ticareti düzenler
-- **World Health Organization (WHO)**: Küresel halk sağlığı koordinasyonu
-- **International Monetary Fund (IMF)**: Finansal istikrar, ülkelere kredi
-- **World Bank**: Kalkınma finansmanı, yoksulluğu azaltma
+- **Avrupa Birliği (AB)**: 27 üye devlet, ekonomik ve siyasi birlik, euro para birimi (20 üye)
+- **Dünya Ticaret Örgütü (DTÖ)**: Uluslararası ticareti düzenler
+- **Dünya Sağlık Örgütü (DSÖ)**: Küresel halk sağlığı koordinasyonu
+- **Uluslararası Para Fonu (IMF)**: Finansal istikrar, ülkelere kredi
+- **Dünya Bankası**: Kalkınma finansmanı, yoksulluğu azaltma
 - **G7/G20**: Ekonomik iş birliği forumları
 
 ### Jeopolitik Kavramlar
-- **Sovereignty**: Bir toprak parçası içindeki en üstün otorite
-- **Borders**: Siyasi sınırlar (doğal, yapay, ihtilaflı)
-- **Exclusive Economic Zone (EEZ)**: Kıyıdan 200 deniz mili, kaynak hakları
-- **Territorial Waters**: Esas hattan 12 deniz mili, tam egemenlik
-- **Enclave**: Başka bir devlet tarafından çevrili toprak parçası (ör. Lesotho, Vatikan Şehri)
-- **Exclave**: Bir ülkenin ana topraklarından ayrılmış parçası (ör. Kaliningrad, Alaska)
-- **Buffer State**: Rakip güçler arasında yer alan ülke (tarihsel: Afganistan, Moğolistan)
-- **Heartland Theory**: Doğu Avrupa'yı kontrol eden Heartland'i, Heartland'i kontrol eden Dünya Adası'nı (Avrasya-Afrika) kontrol eder
-- **Rimland Theory**: Kıyı bölgeleri iç kesimlerden daha önemlidir
+- **Egemenlik**: Bir toprak parçası içindeki en üstün otorite
+- **Sınırlar**: Siyasi sınırlar (doğal, yapay, ihtilaflı)
+- **Münhasır Ekonomik Bölge (MEB)**: Kıyıdan 200 deniz mili, kaynak hakları
+- **Karasuları**: Esas hattan 12 deniz mili, tam egemenlik
+- **Anklav**: Başka bir devlet tarafından çevrili toprak parçası (ör. Lesotho, Vatikan Şehri)
+- **Eksklav**: Bir ülkenin ana topraklarından ayrılmış parçası (ör. Kaliningrad, Alaska)
+- **Tampon Devlet**: Rakip güçler arasında yer alan ülke (tarihsel: Afganistan, Moğolistan)
+- **Heartland Teorisi**: Doğu Avrupa'yı kontrol eden Heartland'i, Heartland'i kontrol eden Dünya Adası'nı (Avrasya-Afrika) kontrol eder
+- **Rimland Teorisi**: Kıyı bölgeleri iç kesimlerden daha önemlidir
 
 ## Bölgesel İncelemeler
 
-### Middle East and North Africa (MENA)
-- **Key Issues**: Petrol kaynakları, su kıtlığı, dinî çatışmalar (Sünni-Şii), Arap-İsrail çatışması
-- **Major Powers**: Suudi Arabistan, İran, Türkiye, İsrail, Mısır, BAE
-- **Conflicts**: Suriye İç Savaşı, Yemen Savaşı, İsrail-Filistin çatışması, Kürt bağımsızlık hareketleri
-- **Resources**: Dünyanın kanıtlanmış petrol rezervlerinin ~%48'i, doğal gaz
+### Orta Doğu ve Kuzey Afrika (MENA)
+- **Temel Sorunlar**: Petrol kaynakları, su kıtlığı, dinî çatışmalar (Sünni-Şii), Arap-İsrail çatışması
+- **Başlıca Güçler**: Suudi Arabistan, İran, Türkiye, İsrail, Mısır, BAE
+- **Çatışmalar**: Suriye İç Savaşı, Yemen Savaşı, İsrail-Filistin çatışması, Kürt bağımsızlık hareketleri
+- **Kaynaklar**: Dünyanın kanıtlanmış petrol rezervlerinin ~%48'i, doğal gaz
 
-### Asia-Pacific
-- **East Asia**: Çin (yükselen süper güç), Japonya (ekonomik güç merkezi), Güney Kore (teknoloji lideri), Kuzey Kore (nükleer gerilimler)
-- **South Asia**: Hindistan (demografik dev), Pakistan (nükleer güç), Bangladeş (hızlı büyüme)
-- **Southeast Asia**: ASEAN iş birliği, Güney Çin Denizi anlaşmazlıkları, ekonomik büyüme
-- **Key Tensions**: Tayvan Boğazı, Kore Yarımadası, Hindistan-Çin sınırı, Güney Çin Denizi
+### Asya-Pasifik
+- **Doğu Asya**: Çin (yükselen süper güç), Japonya (ekonomik güç merkezi), Güney Kore (teknoloji lideri), Kuzey Kore (nükleer gerilimler)
+- **Güney Asya**: Hindistan (demografik dev), Pakistan (nükleer güç), Bangladeş (hızlı büyüme)
+- **Güneydoğu Asya**: ASEAN iş birliği, Güney Çin Denizi anlaşmazlıkları, ekonomik büyüme
+- **Başlıca Gerilimler**: Tayvan Boğazı, Kore Yarımadası, Hindistan-Çin sınırı, Güney Çin Denizi
 
-### Europe
-- **European Integration**: AB genişlemesi, Brexit (BK 2020'de ayrıldı), euro bölgesi zorlukları
-- **Russia-Ukraine Conflict**: 2022 işgali, NATO genişlemesi, enerji bağımlılığı
-- **Balkan Region**: Yugoslavya sonrası devletler, AB'ye katılım süreçleri
-- **Caucasus**: Ermenistan-Azerbaycan çatışmaları, Rus etkisi
+### Avrupa
+- **Avrupa Bütünleşmesi**: AB genişlemesi, Brexit (BK 2020'de ayrıldı), euro bölgesi zorlukları
+- **Rusya-Ukrayna Çatışması**: 2022 işgali, NATO genişlemesi, enerji bağımlılığı
+- **Balkan Bölgesi**: Yugoslavya sonrası devletler, AB'ye katılım süreçleri
+- **Kafkasya**: Ermenistan-Azerbaycan çatışmaları, Rus etkisi
 
-### Americas
-- **North America**: ABD-Kanada-Meksika ilişkileri, göç, ticaret (USMCA)
-- **Latin America**: Eşitsizlik, uyuşturucu kaçakçılığı, popülist hareketler, Venezuela krizi
-- **Caribbean**: Turizme bağımlı ekonomiler, iklim kırılganlığı, Küba ambargosu
+### Amerika Kıtaları
+- **Kuzey Amerika**: ABD-Kanada-Meksika ilişkileri, göç, ticaret (USMCA)
+- **Latin Amerika**: Eşitsizlik, uyuşturucu kaçakçılığı, popülist hareketler, Venezuela krizi
+- **Karayipler**: Turizme bağımlı ekonomiler, iklim kırılganlığı, Küba ambargosu
 
-### Africa
-- **Colonial Legacy**: Yapay sınırlar, etnik bölünmeler, dil politikaları
-- **Development Challenges**: Yoksulluk, altyapı, yönetişim, borç
-- **Rising Powers**: Nijerya (en büyük ekonomi), Güney Afrika (sanayileşmiş), Etiyopya (hızla büyüyen)
-- **Regional Issues**: Sahel istikrarsızlığı, Afrika Boynuzu çatışmaları, Büyük Göller bölgesi
+### Afrika
+- **Sömürge Mirası**: Yapay sınırlar, etnik bölünmeler, dil politikaları
+- **Kalkınma Zorlukları**: Yoksulluk, altyapı, yönetişim, borç
+- **Yükselen Güçler**: Nijerya (en büyük ekonomi), Güney Afrika (sanayileşmiş), Etiyopya (hızla büyüyen)
+- **Bölgesel Sorunlar**: Sahel istikrarsızlığı, Afrika Boynuzu çatışmaları, Büyük Göller bölgesi
 
 ## Çağdaş Jeopolitik Sorunlar
 
 ### İklim Değişikliği ve Coğrafya
-- **Rising Sea Levels**: Ada devletlerini (Maldivler, Tuvalu) ve kıyı şehirlerini tehdit eder
-- **Arctic Melting**: Yeni deniz taşımacılığı rotaları, kaynak erişimi, toprak iddiaları
-- **Climate Migration**: Kuraklık, sel ve aşırı hava olayları nedeniyle yer değiştirme
-- **Water Conflicts**: Nil Barajı anlaşmazlığı (Etiyopya-Mısır-Sudan), İndus Suları Antlaşması (Hindistan-Pakistan)
+- **Yükselen Deniz Seviyeleri**: Ada devletlerini (Maldivler, Tuvalu) ve kıyı şehirlerini tehdit eder
+- **Arktik Erimesi**: Yeni deniz taşımacılığı rotaları, kaynak erişimi, toprak iddiaları
+- **İklim Göçü**: Kuraklık, sel ve aşırı hava olayları nedeniyle yer değiştirme
+- **Su Çatışmaları**: Nil Barajı anlaşmazlığı (Etiyopya-Mısır-Sudan), İndus Suları Antlaşması (Hindistan-Pakistan)
 
 ### Kaynak Jeopolitiği
-- **Energy Transition**: Fosil yakıtlardan geçiş, kritik mineraller (lityum, kobalt, nadir topraklar)
-- **Food Security**: Tarım arazileri, suya erişim, tedarik zincirleri
-- **Rare Earth Elements**: Çin işleme kapasitesinin ~%80'ini kontrol eder; elektronik ve yeşil teknoloji için kritiktir
-- **Semiconductor Supply Chains**: Tayvan dünya çiplerinin ~%60'ını üretir, jeopolitik gerilim noktasıdır
+- **Enerji Dönüşümü**: Fosil yakıtlardan geçiş, kritik mineraller (lityum, kobalt, nadir topraklar)
+- **Gıda Güvenliği**: Tarım arazileri, suya erişim, tedarik zincirleri
+- **Nadir Toprak Elementleri**: Çin işleme kapasitesinin ~%80'ini kontrol eder; elektronik ve yeşil teknoloji için kritiktir
+- **Yarı İletken Tedarik Zincirleri**: Tayvan dünya çiplerinin ~%60'ını üretir, jeopolitik gerilim noktasıdır
 
 ### Toprak Anlaşmazlıkları
-- **South China Sea**: Çin'in dokuz çizgili hattına karşı Filipinler, Vietnam, Malezya, Brunei, Tayvan
+- **Güney Çin Denizi**: Çin'in dokuz çizgili hattına karşı Filipinler, Vietnam, Malezya, Brunei, Tayvan
 - **Kashmir**: Hindistan-Pakistan-Çin arasında rekabet eden iddialar
-- **Western Sahara**: Fas ve Polisario Cephesi
-- **Crimea**: Rusya 2014'te ilhak etti, uluslararası olarak Ukrayna toprağı kabul edilir
-- **Taiwan**: Çin egemenlik iddia eder, fiilen bağımsız devlet gibi işler
-- **Kurds**: Türkiye, Suriye, Irak ve İran'a yayılmış devletsiz ulus
+- **Batı Sahra**: Fas ve Polisario Cephesi
+- **Kırım**: Rusya 2014'te ilhak etti, uluslararası olarak Ukrayna toprağı kabul edilir
+- **Tayvan**: Çin egemenlik iddia eder, fiilen bağımsız devlet gibi işler
+- **Kürtler**: Türkiye, Suriye, Irak ve İran'a yayılmış devletsiz ulus
 
 ### Göç ve Sınırlar
-- **Refugee Crises**: Suriye, Afganistan, Venezuela, Ukrayna, Sudan
-- **Border Walls**: ABD-Meksika, Macaristan-Sırbistan, Hindistan-Bangladeş, Yunanistan-Türkiye
-- **Migration Routes**: Orta Akdeniz, Doğu Akdeniz, ABD güneybatısı, Balkan rotası
-- **Brain Drain**: Nitelikli çalışanların gelişmekte olan ülkelerden gelişmiş ülkelere göç etmesi
+- **Mülteci Krizleri**: Suriye, Afganistan, Venezuela, Ukrayna, Sudan
+- **Sınır Duvarları**: ABD-Meksika, Macaristan-Sırbistan, Hindistan-Bangladeş, Yunanistan-Türkiye
+- **Göç Rotaları**: Orta Akdeniz, Doğu Akdeniz, ABD güneybatısı, Balkan rotası
+- **Beyin Göçü**: Nitelikli çalışanların gelişmekte olan ülkelerden gelişmiş ülkelere göç etmesi
 
 ## Stratejik Kavramlar
 
 ### Güç Yansıtımı
-- **Hard Power**: Askerî güç, ekonomik yaptırımlar, zorlama
-- **Soft Power**: Kültürel etki, diplomasi, değerlerin çekiciliği
-- **Smart Power**: Sert ve yumuşak güç stratejilerinin birleşimi
-- **Naval Power**: Deniz yollarının, dar boğazların kontrolü (Hürmüz, Malakka, Süveyş, Panama)
-- **Air Power**: Stratejik bombardıman, hava üstünlüğü, İHA savaşı
-- **Cyber Power**: Dijital savaş, bilgi operasyonları, altyapı saldırıları
+- **Sert Güç**: Askerî güç, ekonomik yaptırımlar, zorlama
+- **Yumuşak Güç**: Kültürel etki, diplomasi, değerlerin çekiciliği
+- **Akıllı Güç**: Sert ve yumuşak güç stratejilerinin birleşimi
+- **Deniz Gücü**: Deniz yollarının, dar boğazların kontrolü (Hürmüz, Malakka, Süveyş, Panama)
+- **Hava Gücü**: Stratejik bombardıman, hava üstünlüğü, İHA savaşı
+- **Siber Güç**: Dijital savaş, bilgi operasyonları, altyapı saldırıları
 
 ### Etki Alanları
-- **Monroe Doctrine**: ABD'nin Amerika kıtalarında Avrupa sömürgeleşmesine karşı çıkışı (1823)
-- **Russian Near Abroad**: Eski Sovyet devletleri Rus etki alanı kabul edilir
-- **Chinese Belt and Road**: Ekonomik etki yaratan altyapı yatırımları
-- **American Hegemony**: II. Dünya Savaşı sonrası küresel liderlik rolü
+- **Monroe Doktrini**: ABD'nin Amerika kıtalarında Avrupa sömürgeleşmesine karşı çıkışı (1823)
+- **Rus Yakın Çevresi**: Eski Sovyet devletleri Rus etki alanı kabul edilir
+- **Çin Kuşak ve Yol Girişimi**: Ekonomik etki yaratan altyapı yatırımları
+- **Amerikan Hegemonyası**: II. Dünya Savaşı sonrası küresel liderlik rolü
 
 ### Güç Dengesi
-- **Unipolar**: Tek baskın güç (Soğuk Savaş sonrası ABD)
-- **Bipolar**: İki rakip güç (ABD-SSCB Soğuk Savaş dönemi)
-- **Multipolar**: Birden fazla büyük güç (I. Dünya Savaşı öncesi Avrupa, yükselen düzen)
-- **Hegemonic Stability**: Baskın güç küresel kamusal mallar sağlar
+- **Tek Kutuplu**: Tek baskın güç (Soğuk Savaş sonrası ABD)
+- **İki Kutuplu**: İki rakip güç (ABD-SSCB Soğuk Savaş dönemi)
+- **Çok Kutuplu**: Birden fazla büyük güç (I. Dünya Savaşı öncesi Avrupa, yükselen düzen)
+- **Hegemonik İstikrar**: Baskın güç küresel kamusal mallar sağlar
 
 ## Coğrafi Bilgi Sistemleri (GIS)
 
 ### Haritalama Teknolojileri
 - **GPS**: Küresel Konumlama Sistemi, uydu navigasyonu
-- **Remote Sensing**: Uydu görüntüleme, hava fotoğrafçılığı
-- **Spatial Analysis**: Örüntü tanıma, yakınlık analizi, ağ analizi
-- **Cartography**: Harita yapımı, projeksiyonlar, ölçek, semboloji
+- **Uzaktan Algılama**: Uydu görüntüleme, hava fotoğrafçılığı
+- **Mekânsal Analiz**: Örüntü tanıma, yakınlık analizi, ağ analizi
+- **Kartografya**: Harita yapımı, projeksiyonlar, ölçek, semboloji
 
 ### Uygulamalar
-- **Urban Planning**: Arazi kullanımı, ulaşım, imar
-- **Environmental Monitoring**: Ormansızlaşma, kirlilik, iklim değişikliği
-- **Disaster Response**: Acil durum yönetimi, tahliye rotaları
-- **Business Intelligence**: Pazar analizi, yer seçimi, lojistik
-- **Public Health**: Hastalık takibi, sağlık hizmetlerine erişim
+- **Kentsel Planlama**: Arazi kullanımı, ulaşım, imar
+- **Çevresel İzleme**: Ormansızlaşma, kirlilik, iklim değişikliği
+- **Afet Müdahalesi**: Acil durum yönetimi, tahliye rotaları
+- **İş Zekâsı**: Pazar analizi, yer seçimi, lojistik
+- **Halk Sağlığı**: Hastalık takibi, sağlık hizmetlerine erişim
 
 ## Önemli Jeopolitik Kuramcılar
 
@@ -199,13 +199,13 @@
 
 ## Önemli Coğrafi Terimler
 
-- **Chokepoint**: Ticaret/askerî hareket için kritik dar geçit
-- **Hinterland**: Bir limana veya şehre ekonomik olarak hizmet eden alan
-- **Irredentism**: Tarihsel/etnik bağlara dayanarak toprak talep etme
-- **Nation-State**: Ulus ile devlet sınırlarının örtüştüğü siyasi birim
+- **Dar Boğaz**: Ticaret/askerî hareket için kritik dar geçit
+- **Arka Bölge**: Bir limana veya şehre ekonomik olarak hizmet eden alan
+- **İrredantizm**: Tarihsel/etnik bağlara dayanarak toprak talep etme
+- **Ulus-Devlet**: Ulus ile devlet sınırlarının örtüştüğü siyasi birim
 - **Realpolitik**: İdeallerden çok pratik hedeflere dayanan siyaset
-- **Self-Determination**: Halkların kendi egemenliğini seçme hakkı
-- **Shatterbelt**: Daha güçlü dış güçler arasında sıkışmış bölge
-- **Stateless Nation**: Kendi devleti olmayan etnik grup (Kürtler, Filistinliler, Tibetliler)
-- **Supranational Organization**: Ulusal düzeyin üstündeki yapı (AB, BM)
-- **Terminal Moraine**: Buzulun en ileri noktasını işaretleyen jeolojik oluşum
+- **Kendi Kaderini Tayin**: Halkların kendi egemenliğini seçme hakkı
+- **Parçalanma Kuşağı**: Daha güçlü dış güçler arasında sıkışmış bölge
+- **Devletsiz Ulus**: Kendi devleti olmayan etnik grup (Kürtler, Filistinliler, Tibetliler)
+- **Ulusüstü Örgüt**: Ulusal düzeyin üstündeki yapı (AB, BM)
+- **Terminal Moren**: Buzulun en ileri noktasını işaretleyen jeolojik oluşum

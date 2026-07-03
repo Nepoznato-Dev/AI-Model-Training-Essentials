@@ -277,7 +277,7 @@ Veri bilimi, yapılandırılmış ve yapılandırılmamış verilerden bilgi ve 
 - **Doğruluk**: Verinin doğruluğu
 - **Eksiksizlik**: Gereken tüm verinin mevcut olması
 - **Tutarlılık**: Kaynaklar arasında çelişki olmaması
-- **Zamanlılık**: Verinin gerektiğinde उपलब्ध olması
+- **Zamanlılık**: Verinin gerektiğinde kullanılabilir olması
 - **Geçerlilik**: Tanımlı kurallara uygunluk
 - **Benzersizlik**: Yinelenen kayıt olmaması
 

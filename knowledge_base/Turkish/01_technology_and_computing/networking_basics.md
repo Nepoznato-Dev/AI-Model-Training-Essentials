@@ -8,17 +8,17 @@ Geliştiriciler ve sistem yöneticileri için pratik bir başvuru kaynağı — 
 
 Ağ iletişimini anlamak için kavramsal bir çerçeve.
 
-| Layer | Name | Function | Example protocols |
+| Katman | Ad | İşlev | Örnek protokoller |
 |-------|------|----------|-------------------|
-| 7 | Application | Son kullanıcı hizmetleri | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Veri biçimlendirme, şifreleme, sıkıştırma | TLS, JPEG, ASCII |
-| 5 | Session | Bağlantı yönetimi | NetBIOS, RPC |
-| 4 | Transport | Uçtan uca teslim, hata düzeltme, akış kontrolü | TCP, UDP |
-| 3 | Network | Yönlendirme, adresleme | IP, ICMP, OSPF, BGP |
-| 2 | Data Link | Çerçeveleme, hata tespiti, MAC adresleri | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Ham bit iletimi | Ethernet kabloları, fiber optik, radyo dalgaları |
+| 7 | Uygulama | Son kullanıcı hizmetleri | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Sunum | Veri biçimlendirme, şifreleme, sıkıştırma | TLS, JPEG, ASCII |
+| 5 | Oturum | Bağlantı yönetimi | NetBIOS, RPC |
+| 4 | Taşıma | Uçtan uca teslim, hata düzeltme, akış kontrolü | TCP, UDP |
+| 3 | Ağ | Yönlendirme, adresleme | IP, ICMP, OSPF, BGP |
+| 2 | Veri Bağı | Çerçeveleme, hata tespiti, MAC adresleri | Ethernet, Wi-Fi, PPP |
+| 1 | Fiziksel | Ham bit iletimi | Ethernet kabloları, fiber optik, radyo dalgaları |
 
-Pratikte, **TCP/IP modeli** (4 katman: Link, Internet, Transport, Application) internet için daha yaygın olarak kullanılır.
+Pratikte, **TCP/IP modeli** (4 katman: Bağlantı, İnternet, Taşıma, Uygulama) internet için daha yaygın olarak kullanılır.
 
 ---
 
@@ -48,7 +48,7 @@ Bunlar internette yönlendirilemez; yerel ağların içinde kullanılır:
 Alan adlarını (ör. `example.com`) IP adreslerine eşler.
 
 ### Kayıt Türleri
-| Type | Purpose |
+| Tür | Amaç |
 |------|---------|
 | **A** | Alan adını IPv4 adresine eşler |
 | **AAAA** | Alan adını IPv6 adresine eşler |
