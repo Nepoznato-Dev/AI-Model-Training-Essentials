@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: git_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Git 命令快速參考
 
-# Git 命令 快速參考
-
-Essential Git 命令 為 version control.
+版本控制的基本 Git 命令。
 
 ---
 
-## Setup & Configuration
+## 設定與配置
 
 ```bash
 # Configure user info
@@ -28,7 +21,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Repository Initialization
+## 儲存庫初始化
 
 ```bash
 # Initialize new repository
@@ -44,7 +37,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Basic Workflow
+## 基本工作流程
 
 ```bash
 # Check status
@@ -71,7 +64,7 @@ git log --graph --oneline --all
 
 ---
 
-## Branching
+## 分支操作
 
 ```bash
 # List branches
@@ -103,7 +96,7 @@ git rebase main
 
 ---
 
-## Remote Operations
+## 遠端操作
 
 ```bash
 # View remotes
@@ -132,7 +125,7 @@ git push --tags
 
 ---
 
-## Undoing Changes
+## 撤銷變更
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +151,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stashing
+## 暫存工作
 
 ```bash
 # Save work in progress
@@ -184,7 +177,7 @@ git stash clear
 
 ---
 
-## Tags
+## 標籤
 
 ```bash
 # List tags
@@ -205,7 +198,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Viewing & Searching
+## 檢視與搜尋
 
 ```bash
 # Show commit details
@@ -228,7 +221,7 @@ git show commit-hash:file.txt
 
 ---
 
-## 高級 Operations
+## 進階操作
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +247,7 @@ git submodule update --init --recursive
 
 ---
 
-## Cleanup
+## 清理
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +264,9 @@ git remote prune origin
 
 ---
 
-## Common Workflows
+## 常見工作流程
 
-### Start New Feature
+### 開始新功能
 ```bash
 git checkout main
 git pull
@@ -285,7 +278,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Sync 與 Main
+### 與主分支同步
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +287,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Hotfix Workflow
+### 緊急修復工作流程
 ```bash
 git checkout main
 git pull
@@ -310,7 +303,7 @@ git push --tags
 
 ---
 
-## .gitignore Patterns
+## .gitignore 模式
 
 ```gitignore
 # Ignore specific file
@@ -332,37 +325,37 @@ __pycache__/
 
 ---
 
-## Keyboard Shortcuts (Git Bash)
+## 鍵盤快捷鍵（Git Bash）
 
-| Shortcut | Action |
+| 快捷鍵 | 動作 |
 |----------|--------|
-| `Ctrl+R` | Reverse search 歷史 |
-| `Tab` | Auto-完整 |
-| `Ctrl+C` | Cancel command |
-| `Ctrl+Z` | Suspend process |
-| `fg` | Resume suspended process |
+| `Ctrl+R` | 反向搜尋歷史 |
+| `Tab` | 自動完成 |
+| `Ctrl+C` | 取消命令 |
+| `Ctrl+Z` | 暫停程序 |
+| `fg` | 恢復暫停的程序 |
 
 ---
 
 ## 最佳實踐
 
-✅ **Do:**
-- Write clear, descriptive commit messages
-- Commit frequently 與 logical groupings
-- Use branches 為 features/fixes
-- Pull before starting work
-- Review `git status` often
+✅ **應該：**
+- 撰寫清楚、具描述性的提交訊息
+- 經常提交並做邏輯性分組
+- 使用分支進行功能開發和修復
+- 開始工作前先拉取更新
+- 經常檢視 `git status`
 
-❌ **Don't:**
-- Commit sensitive 資料 (API keys, passwords)
-- Force push to shared branches
-- Commit large binary files
-- Ignore merge conflicts
-- Work directly on main/master
+❌ **不應該：**
+- 提交敏感資料（API 金鑰、密碼）
+- 強制推送到共享分支
+- 提交大型二進位檔案
+- 忽略合併衝突
+- 直接在 main/master 分支上工作
 
 ---
 
-## Commit Message Convention
+## 提交訊息慣例
 
 ```
 type(scope): subject
@@ -372,16 +365,16 @@ body (optional)
 footer (optional)
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code restructuring
-- `test`: Tests
-- `chore`: Maintenance
+**類型：**
+- `feat`: 新功能
+- `fix`: 錯誤修復
+- `docs`: 文件更新
+- `style`: 格式調整
+- `refactor`: 程式碼重構
+- `test`: 測試
+- `chore`: 維護工作
 
-**Example:**
+**範例：**
 ```
 feat(auth): add password reset functionality
 
@@ -393,4 +386,4 @@ Closes #123
 
 ---
 
-*最後更新: June 2025 | Git 2.x*
+*最後更新：2025 年 6 月 | Git 2.x*

@@ -1,48 +1,42 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: psychology_and_human_behavior.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 心理學與人類行為
 
-# 心理學 和 人類行為
+## 心理學導論
 
-## 介紹 to 心理學
+心理學是對心智和行為的科學研究。它檢視人們如何思考、感受、行動和互動。心理學的主要觀點包括生物學觀點（檢視大腦結構和神經傳導物質）、行為主義觀點（專注於可觀察的行為和學習）、認知觀點（研究記憶和決策等心理過程）、心理動力學觀點（探索潛意識驅力和衝突，源自Freud）、人本主義觀點（強調個人成長和自我實現）以及社會文化觀點（檢視環境和文化如何塑造行為）。心理學使用包括實驗、觀察、調查和個案研究在內的科學方法來理解人類經驗。
 
-心理學 is 這 scientific study 的 mind 和 behavior. It examines how people think, feel, act, 和 interact. Major perspectives 在 心理學 include biological (examining brain structures 和 neurotransmitters), behavioral (focusing on observable behaviors 和 learning), cognitive (studying mental processes like memory 和 decision-making), psychodynamic (exploring unconscious drives 和 conflicts, originating 與 Freud), humanistic (emphasizing personal growth 和 self-actualization), 和 social-cultural (examining how environment 和 文化 shape behavior). 心理學 uses scientific methods including experiments, observations, surveys, 和 case studies to understand human experience.
+## 認知心理學
 
-## Cognitive 心理學
+認知心理學研究心理過程，包括注意力、知覺、記憶、語言、問題解決和決策。注意力是專注於特定刺激同時過濾其他刺激的能力。知覺涉及組織和解釋感官資訊。記憶有三個主要階段：編碼（獲取資訊）、儲存（保留資訊）和提取（取出資訊）。短期記憶短暫保存有限資訊；長期記憶具有延長期間的龐大容量。工作記憶暫時操作複雜任務的資訊。語言習得涉及理解和產生溝通。問題解決策略包括演算法（逐步程序）和啟發式（心理捷徑）。決策可能受到偏見和情緒的影響。
 
-Cognitive 心理學 studies mental processes including attention, perception, memory, 語言, problem-solving, 和 decision-making. Attention is 這 ability to focus on specific stimuli while filtering out others. Perception involves organizing 和 interpreting sensory information. Memory has three main stages: encoding (getting information 在), storage (retaining information), 和 retrieval (getting information out). Short-term memory holds limited information briefly; long-term memory has vast capacity 為 extended periods. Working memory temporarily manipulates information 為 complex tasks. 語言 acquisition involves understanding 和 producing 溝通. Problem-solving strategies include algorithms (step-by-step procedures) 和 heuristics (mental shortcuts). Decision-making can be influenced by biases 和 emotions.
+## 發展心理學
 
-## Developmental 心理學
+發展心理學檢視人們在整個生命週期中如何變化和成長。產前發展包括胚種期、胚胎期和胎兒期階段。嬰兒期（0-2歲）的特點是快速的身體成長、依附形成和感覺運動學習。兒童期（2-12歲）涉及語言發展、社交技能和具體思維。青春期（12-18歲）帶來青春期、身分形成和抽象推理。成年早期（20-30歲）專注於職業、關係和獨立。中年期（40-60歲）通常涉及職業鞏固和照顧年邁父母。晚年期（65歲以上）可能包括退休、健康挑戰和反思。關鍵理論包括Piaget的認知發展階段、Erikson的心理社會階段和Kohlberg的道德發展理論。先天（遺傳）和後天（環境）都影響發展。
 
-Developmental 心理學 examines how people change 和 grow throughout their lifespan. Prenatal 開發 includes germinal, embryonic, 和 fetal stages. Infancy (0-2 years) features rapid physical growth, attachment formation, 和 sensorimotor learning. Childhood (2-12 years) involves 語言 開發, social skills, 和 concrete thinking. Adolescence (12-18 years) brings puberty, identity formation, 和 abstract reasoning. Early adulthood (20s-30s) focuses on career, relationships, 和 independence. Middle adulthood (40s-60s) often involves career consolidation 和 caring 為 aging parents. Late adulthood (65+) may include retirement, health challenges, 和 reflection. Key theories include Piaget's stages 的 cognitive 開發, Erikson's psychosocial stages, 和 Kohlberg's moral 開發 theory. 自然 (genetics) 和 nurture (environment) both influence 開發.
+## 社會心理學
 
-## Social 心理學
+社會心理學研究個體在社會情境中如何思考、感受和行為。從眾是調整行為以符合團體規範，在Asch的線條實驗中得到證明。服從是遵從權威人物，在Milgram的電擊實驗中進行研究。社會促進改善他人觀看時簡單任務的表現。社會懈怠減少團體中的努力。團體迷思發生在團體優先考慮和諧而非批判性評估時。偏見是對團體的先入為主判斷；歧視是不平等待遇。刻板印象是對團體的概括信念。歸因理論解釋我們如何解釋他人的行為（內在與外在原因）。基本歸因錯誤在判斷他人時高估人格而低估情境。旁觀者效應在其他人在場時減少助人行為。攻擊可能受到生物學、挫折和社會學習的影響。吸引力涉及接近性、相似性、身體吸引力和互惠性。
 
-Social 心理學 studies how individuals think, feel, 和 behave 在 social contexts. Conformity is adjusting behavior to match group norms, demonstrated 在 Asch's line experiments. Obedience is complying 與 authority figures, studied 在 Milgram's shock experiments. Social facilitation improves 效能 on simple tasks when others watch. Social loafing reduces effort 在 groups. Groupthink occurs when groups prioritize harmony over critical evaluation. Prejudice is preconceived judgment about groups; discrimination is unequal treatment. Stereotypes are generalized beliefs about groups. Attribution theory explains how we interpret others' behavior (internal vs. external causes). 這 fundamental attribution error overestimates personality 和 underestimates situation when judging others. Bystander effect reduces helping behavior when others are present. Aggression can be influenced by biology, frustration, 和 social learning. Attraction involves proximity, similarity, physical attractiveness, 和 reciprocity.
+## 人格心理學
 
-## Personality 心理學
+人格指的是思想、感受和行為的持久模式。五大人格特質是開放性（好奇心、創造力）、盡責性（組織性、可靠性）、外向性（社交性、從他人獲得能量）、親和性（合作性、同情心）和神經質（情緒不穩定性、焦慮）。Freud的精神分析理論提出本我（本能）、自我（現實）和超我（道德）。人本主義理論（Maslow、Rogers）強調成長潛力和自我實現。特質理論識別跨情境的一致特徵。類型理論對人進行分類（例如：A型與B型行為模式）。人格通過遺傳、環境和經驗發展。評估工具包括自陳量表（MMPI）和投射測驗（羅夏克墨漬）。
 
-Personality refers to enduring patterns 的 thoughts, feelings, 和 behaviors. 這 Big Five personality traits are openness (curiosity, creativity), conscientiousness (organization, dependability), extraversion (sociability, energy from others), agreeableness (cooperation, compassion), 和 neuroticism (emotional instability, anxiety). Freud's psychoanalytic theory proposed id (instincts), ego (reality), 和 superego (morality). Humanistic theories (Maslow, Rogers) emphasize growth potential 和 self-actualization. Trait theories identify consistent characteristics across situations. Type theories categorize people (e.g., Type A vs. Type B behavior patterns). Personality develops through genetics, environment, 和 experiences. Assessment tools include self-report inventories (MMPI) 和 projective tests (Rorschach inkblots).
+## 心理健康與疾患
 
-## Mental Health 和 Disorders
+心理健康包含情緒、心理和社會福祉。心理疾患是造成痛苦或功能受損的模式。焦慮症包括廣泛性焦慮、恐慌症、恐懼症和社交焦慮。情緒障礙包括憂鬱症（持續悲傷）和躁鬱症（情緒波動）。精神分裂症涉及扭曲的思維、知覺和情緒。飲食障礙包括神經性厭食症、神經性暴食症和暴食症。人格障礙涉及造成問題的僵化模式（例如：邊緣型、反社會型）。創傷相關疾患包括創傷事件後的PTSD。DSM-5（精神疾病診斷與統計手冊）對心理疾患進行分類。疾患的原因涉及生物因素（遺傳、大腦化學）、心理因素（創傷、習得模式）和社會因素（壓力、環境）。圍繞心理疾病的污名化可能阻止人們尋求幫助。
 
-Mental health encompasses emotional, psychological, 和 social well-being. Psychological disorders are patterns causing distress or impaired functioning. Anxiety disorders include generalized anxiety, panic disorder, phobias, 和 social anxiety. Mood disorders include depression (persistent sadness) 和 bipolar disorder (mood swings). Schizophrenia involves distorted thinking, perceptions, 和 emotions. Eating disorders include anorexia nervosa, bulimia, 和 binge-eating. Personality disorders involve inflexible patterns causing problems (e.g., borderline, antisocial). Trauma-related disorders include PTSD following traumatic 事件. 這 DSM-5 (Diagnostic 和 Statistical Manual) classifies mental disorders. Causes 的 disorders involve biological factors (genetics, brain chemistry), psychological factors (trauma, learned patterns), 和 social factors (stress, environment). Stigma surrounding mental illness can prevent people from seeking help.
+## 治療方法
 
-## Therapeutic Approaches
+心理治療涉及通過心理方法治療心理疾患。心理動力治療探索潛意識衝突和過去經驗。認知行為治療（CBT）改變負面思維模式和行為。人本主義治療強調自我探索和個人成長。行為治療通過制約技術修改行為。家族治療處理影響個人的家庭動力。團體治療提供同儕支持。生物醫學治療包括藥物（抗憂鬱藥、抗精神病藥、情緒穩定劑）和程序（ECT、TMS）。實證本位實務整合研究證據、臨床專業知識和患者價值觀。預防和早期介入改善結果。自我照護實踐包括運動、睡眠、營養、正念和社交連結。
 
-Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 和 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 和 behaviors. Humanistic therapy emphasizes self-exploration 和 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer 支援. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 和 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 和 patient values. Prevention 和 early intervention improve outcomes. Self-care practices include exercise, sleep, 營養, mindfulness, 和 social connection.
+## 神經科學與行為
 
-## Neuroscience 和 Behavior
+神經科學檢視神經系統在行為中的角色。神經元是通過電信號和化學信號傳遞資訊的神經細胞。神經傳導物質是在神經元之間傳遞信號的化學物質（多巴胺、血清素、正腎上腺素、GABA、麩胺酸）。中樞神經系統包括大腦和脊髓。周邊神經系統將中樞神經系統連接到身體。大腦的大腦處理高級功能；小腦協調運動；腦幹控制重要功能。邊緣系統處理情緒和記憶（杏仁核、海馬迴、下視丘）。大腦可塑性允許神經連接隨經驗而改變。神經影像技術（MRI、fMRI、PET掃描）將大腦結構和活動可視化。內分泌系統的激素也影響行為和情緒。
 
-Neuroscience examines 這 nervous system's role 在 behavior. Neurons are nerve cells transmitting information through electrical 和 chemical signals. Neurotransmitters are chemicals transmitting signals between neurons (dopamine, serotonin, norepinephrine, GABA, glutamate). 這 central nervous system includes brain 和 spinal cord. 這 peripheral nervous system connects CNS to body. 這 brain's cerebrum handles higher functions; cerebellum coordinates movement; brainstem controls vital functions. 這 limbic system processes emotions 和 memory (amygdala, hippocampus, hypothalamus). Brain plasticity allows neural connections to change 與 experience. Neuroimaging techniques (MRI, fMRI, PET scans) visualize brain structure 和 activity. Hormones from 這 endocrine system also influence behavior 和 emotions.
+## 動機與情緒
 
-## Motivation 和 Emotion
+動機驅動行為朝向目標。內在動機來自內在滿足；外在動機來自外部獎勵。Maslow的層級理論提出從生理需求到自我實現的需求。驅力降低理論認為行為旨在減少內在緊張。本能理論提出先天行為模式。情緒涉及生理喚起、表達行為和有意識經驗。主要情緒理論包括James-Lange理論（情緒跟隨生理反應）、Cannon-Bard理論（情緒和反應同時發生）和Schachter-Singer理論（情緒取決於喚起的解釋）。基本情緒包括快樂、悲傷、憤怒、恐懼、驚訝和厭惡。情緒智力涉及識別和管理自己和他人的情緒。壓力觸發戰鬥或逃跑反應；慢性壓力損害健康。
 
-Motivation drives behavior toward goals. Intrinsic motivation comes from internal satisfaction; extrinsic motivation from external rewards. Maslow's hierarchy proposes needs from physiological to self-actualization. Drive-reduction theory suggests behavior aims to reduce internal tension. Instinct theory proposes innate behavioral patterns. Emotion involves physiological arousal, expressive behaviors, 和 conscious experience. Major emotion theories include James-Lange (emotion follows physiological response), Cannon-Bard (emotion 和 response occur simultaneously), 和 Schachter-Singer (emotion depends on interpretation 的 arousal). Basic emotions include happiness, sadness, anger, fear, surprise, 和 disgust. Emotional intelligence involves recognizing 和 managing emotions 在 oneself 和 others. Stress triggers 這 fight-or-flight response; chronic stress harms health.
+## 學習與制約
 
-## Learning 和 Conditioning
+學習是通過經驗相對永久的行為改變。古典制約（Pavlov）將中性刺激與自然反應配對。操作制約（Skinner）使用後果來塑造行為。正增強添加期望的刺激以增加行為；負增強移除厭惡刺激以增加行為。懲罰減少行為。觀察學習（Bandura）通過觀看他人發生。潛在學習在沒有立即增強的情況下發生。頓悟學習涉及突然的問題理解。習慣化減少對重複刺激的反應。泛化對相似刺激做出類似反應；區辨在刺激之間進行區分。消退在增強停止時削弱制約反應。
 
-Learning is relatively permanent behavior change through experience. Classical conditioning (Pavlov) pairs neutral stimuli 與 natural responses. Operant conditioning (Skinner) uses consequences to shape behavior. Positive reinforcement adds desirable stimuli to increase behavior; negative reinforcement removes aversive stimuli to increase behavior. Punishment decreases behavior. Observational learning (Bandura) occurs by watching others. Latent learning happens without immediate reinforcement. Insight learning involves sudden problem comprehension. Habituation reduces response to repeated stimuli. Generalization responds similarly to similar stimuli; discrimination distinguishes between stimuli. Extinction weakens conditioned responses when reinforcement stops.

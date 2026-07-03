@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# SQL 快速參考指南
 
-# SQL 快速參考 指南
-
-Essential SQL 命令 為 資料庫 operations.
+資料庫操作的基本 SQL 命令。
 
 ---
 
-## Basic Query Structure
+## 基本查詢結構
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +18,9 @@ LIMIT number;
 
 ---
 
-## 資料 Retrieval (SELECT)
+## 資料檢索（SELECT）
 
-### Basic Selection
+### 基本選擇
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +35,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### 過濾條件（WHERE）
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +53,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting 和 Limiting
+### 排序與限制
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +70,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## 聚合函式
 
 ```sql
 -- Count rows
@@ -104,7 +97,7 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## 聯結（Joins）
 
 ### Inner Join
 ```sql
@@ -154,7 +147,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## 子查詢
 
 ```sql
 -- In WHERE clause
@@ -184,7 +177,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## 集合運算
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +203,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## 資料 Modification
+## 資料修改
 
 ### INSERT
 ```sql
@@ -268,9 +261,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## 資料表操作
 
-### CREATE Table
+### CREATE 資料表
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +279,7 @@ CREATE TABLE users (
 );
 ```
 
-### ALTER Table
+### ALTER 資料表
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +304,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-### DROP Table
+### DROP 資料表
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-## Constraints
+## 約束條件
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +350,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## 索引
 
 ```sql
 -- Create index
@@ -378,7 +371,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## 檢視表（Views）
 
 ```sql
 -- Create view
@@ -402,7 +395,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## 共同資料表運算式（CTEs）
 
 ```sql
 -- Simple CTE
@@ -432,7 +425,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## 視窗函式
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +458,41 @@ FROM daily_sales;
 
 ---
 
-## 資料 Types
+## 資料型別
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### 數值型別
+- `INT` - 整數
+- `BIGINT` - 大整數
+- `DECIMAL(p,s)` - 精確小數（精度、小數位數）
+- `FLOAT` - 近似浮點數
+- `DOUBLE` - 雙精度浮點數
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### 字串型別
+- `CHAR(n)` - 固定長度字串
+- `VARCHAR(n)` - 可變長度字串
+- `TEXT` - 大型文字
+- `ENUM` - 列舉值
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date 和 time
-- `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+### 日期/時間型別
+- `DATE` - 日期（YYYY-MM-DD）
+- `TIME` - 時間（HH:MM:SS）
+- `DATETIME` - 日期與時間
+- `TIMESTAMP` - Unix 時間戳記
+- `YEAR` - 年份值
 
-### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+### 布林型別
+- `BOOLEAN` 或 `BOOL` - True/False
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### 二進位型別
+- `BLOB` - 二進位大型物件
+- `BINARY` - 固定二進位
+- `VARBINARY` - 可變二進位
 
 ---
 
-## Useful Functions
+## 實用函式
 
-### String Functions
+### 字串函式
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +503,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### 日期函式
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +515,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### 數值函式
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +526,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### 條件函式
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,39 +549,39 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## 效能 Tips
+## 效能提示
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query 效能
-- Normalize 資料 appropriately
-- Use prepared statements to prevent SQL injection
+✅ **應該：**
+- 在經常查詢的欄位上使用索引
+- 只選擇所需的欄位（避免 `SELECT *`）
+- 使用 `EXPLAIN` 分析查詢效能
+- 適當地正規化資料
+- 使用預備語句防止 SQL 注入
 
-❌ **Don't:**
-- Use functions on indexed columns 在 WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **不應該：**
+- 在 WHERE 子句中對索引欄位使用函式
+- 建立過多索引（會降低寫入速度）
+- 不必要地使用 `SELECT DISTINCT`
+- 忽略查詢執行計畫
+- 儲存可以計算得出的值
 
 ---
 
-## 安全 最佳實踐
+## 安全性最佳實踐
 
 ```sql
--- Use parameterized queries (in application code)
--- NEVER concatenate user input directly
+-- 使用參數化查詢（在應用程式程式碼中）
+-- 絕不直接串接使用者輸入
 
--- Grant minimal privileges
+-- 授予最小權限
 GRANT SELECT, INSERT ON database.table TO 'user'@'localhost';
 REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
--- Use strong passwords
--- Enable SSL connections
--- Regular security audits
+-- 使用強密碼
+-- 啟用 SSL 連線
+-- 定期安全稽核
 ```
 
 ---
 
-*最後更新: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*最後更新：2025 年 6 月 | SQL 標準（MySQL/PostgreSQL 相容）*

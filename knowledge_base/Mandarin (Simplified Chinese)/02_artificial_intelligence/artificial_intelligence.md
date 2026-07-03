@@ -1,91 +1,84 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: artificial_intelligence.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 人工智能
 
-# Artificial Intelligence
+## 什么是人工智能？
 
-## What is Artificial Intelligence?
+人工智能（AI）是指在机器中模拟人类智能，使其能够思考、学习并解决问题。AI 系统可以执行通常需要人类智能的任务，例如语音识别、决策、语言翻译以及图像中的物体识别。该术语由 John McCarthy 于 1956 年在达特茅斯会议上提出，这场会议通常被视为人工智能作为一门学科的奠基事件。
 
-Artificial Intelligence (AI) refers to 这 simulation 的 human intelligence 在 machines programmed to think, learn, 和 solve problems. AI 系统 can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, 和 identifying objects 在 images. 这 term was coined by John McCarthy 在 1956 at 这 Dartmouth Conference, widely regarded as 这 founding event 的 AI as a field.
+现代 AI 大体分为狭义人工智能（Narrow AI，也称弱人工智能），即面向特定任务设计的系统；以及理论上的通用人工智能（AGI），即在各个领域都能达到或超越人类认知能力的系统。当前所有 AI 系统都属于狭义人工智能。
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed 为 specific tasks, 和 这 theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI 系统 are Narrow AI.
+## 人工智能的历史
 
-## 历史 的 AI
+人工智能的发展历程已近八十年。早期理论基础由 Alan Turing 奠定，他在 1950 年发表的论文《Computing Machinery and Intelligence》中提出了图灵测试——这是一种衡量机器能否表现出与人类无可区分的智能行为的标准。1956 年的达特茅斯会议则正式确立了人工智能的学术地位。
 
-这 历史 的 AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "计算 Machinery 和 Intelligence" introduced 这 Turing Test — a measure 的 a machine's ability to exhibit intelligent behaviour indistinguishable from a human. 这 1956 Dartmouth Conference formally established AI as an academic discipline.
-
-这 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) 和 LISP (a programming 语言 designed 为 AI). 这 "AI winters" 的 这 1970s 和 1980s were periods 的 reduced funding 和 interest following unmet expectations. A resurgence 在 这 1980s came 与 expert 系统 — rule-based programs that encoded human expertise. 这 2000s brought 机器学习 breakthroughs fuelled by 这 internet 和 growing datasets. 这 2010s saw 这 rise 的 深度学习, transforming computer vision, natural 语言 processing (NLP), 和 reinforcement learning.
+20 世纪 50 年代至 70 年代，ELIZA（一个简单的聊天机器人）和 LISP（专为 AI 设计的编程语言）等早期项目让人们充满乐观。20 世纪 70 年代和 80 年代的“AI 寒冬”，则是在预期落空后资金与关注度双双下降的时期。到了 20 世纪 80 年代，基于规则、编码人类专业知识的专家系统推动了 AI 的复苏。进入 21 世纪后，互联网和不断增长的数据集催生了机器学习的突破。2010 年代，深度学习迅速崛起，彻底改变了计算机视觉、自然语言处理（NLP）和强化学习。
 
 ## 机器学习
 
-机器学习 (ML) is a subset 的 AI that enables 系统 to learn from 数据 without being explicitly programmed. Key ML categories include:
+机器学习（ML）是人工智能的一个分支，它使系统能够在不进行显式编程的情况下从数据中学习。主要类别包括：
 
-**Supervised Learning**: 这 model is trained on labelled input-output pairs. 示例 include spam detection 和 image classification. Algorithms include linear regression, decision trees, 支持 vector machines, 和 神经网络.
+**监督学习**：模型基于带标签的输入—输出样本进行训练。典型应用包括垃圾邮件检测和图像分类。常见算法有线性回归、决策树、支持向量机和神经网络。
 
-**Unsupervised Learning**: 这 model finds patterns 在 unlabelled 数据. 示例 include customer segmentation 和 anomaly detection. Algorithms include k-means clustering 和 principal component analysis (PCA).
+**无监督学习**：模型从无标签数据中发现模式。典型应用包括客户分群和异常检测。常见算法有 k-means 聚类和主成分分析（PCA）。
 
-**Reinforcement Learning**: An agent learns by interacting 与 an environment, receiving rewards or penalties. Used 在 game-playing AI (AlphaGo, AlphaZero), robotics, 和 recommendation 系统.
+**强化学习**：智能体通过与环境交互并获得奖励或惩罚来学习。这类方法常用于博弈型 AI（如 AlphaGo、AlphaZero）、机器人以及推荐系统。
 
-**Semi-Supervised 和 Self-Supervised Learning**: Combine small amounts 的 labelled 数据 与 large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+**半监督学习与自监督学习**：将少量带标签数据与大量无标签数据结合使用。GPT 模型在预训练阶段就采用了自监督方法。
 
 ## 深度学习
 
-深度学习 is a subset 的 机器学习 that uses artificial 神经网络 与 many layers (deep networks). Inspired loosely by 这 brain's neural structure, these networks learn hierarchical representations 的 数据. 深度学习 powers:
+深度学习是机器学习的一个分支，它使用具有多层结构的人工神经网络（深层网络）。这些网络在一定程度上受到大脑神经结构的启发，能够学习数据的分层表示。深度学习驱动了以下领域的发展：
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural 语言 Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+- **计算机视觉**：图像识别、目标检测、医学影像
+- **自然语言处理**：机器翻译、情感分析、问答
+- **语音识别**：Siri、Alexa、Google Assistant 等语音助手
+- **生成式 AI**：图像生成（DALL-E、Stable Diffusion）、文本生成（GPT）
 
-Key 深度学习 architectures include convolutional 神经网络 (CNNs) 为 images, recurrent 神经网络 (RNNs) 和 LSTMs 为 sequences, transformers 为 语言, 和 generative adversarial networks (GANs) 为 synthesis.
+关键的深度学习架构包括：用于图像任务的卷积神经网络（CNN）、用于序列任务的循环神经网络（RNN）和 LSTM、用于语言任务的 Transformer，以及用于生成任务的生成对抗网络（GAN）。
 
-## Large 语言 Models (LLMs)
+## 大语言模型（LLM）
 
-Large 语言 Models (LLMs) are AI 系统 trained on vast amounts 的 text 数据 to understand 和 generate human 语言. They are based on 这 Transformer 架构, introduced 在 这 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict 这 next token (word piece) 在 a sequence, allowing them to generate coherent text, answer questions, write code, 和 perform reasoning tasks.
+大语言模型（LLM）是基于海量文本数据训练的 AI 系统，能够理解并生成人类语言。它们建立在 Transformer 架构之上，该架构由 Vaswani 等人在 2017 年论文《Attention is All You Need》中提出。LLM 通过预测序列中的下一个 token（词片段）来生成连贯文本、回答问题、编写代码并执行推理任务。
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, 和 successors — widely used 为 chat 和 code
-- **Claude** (Anthropic): Focused on safety 和 helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, 和 code
-- **LLaMA / Llama 3** (Meta): Open-weight models 为 research 和 local 部署
-- **Mistral** (Mistral AI): Efficient open models competitive 与 much larger LLMs
+知名 LLM 包括：
+- **GPT 系列**（OpenAI）：GPT-3、GPT-4 及其后续模型——广泛用于对话和代码场景
+- **Claude**（Anthropic）：强调安全性和有用性
+- **Gemini**（Google DeepMind）：多模态，整合文本、图像和代码
+- **LLaMA / Llama 3**（Meta）：适合研究与本地部署的开放权重模型
+- **Mistral**（Mistral AI）：高效的开放模型，在性能上可与更大规模的 LLM 竞争
 
-LLMs are trained 在 two stages: pre-training (unsupervised on large text corpora) 和 fine-tuning (supervised or via reinforcement learning from human 反馈, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens 在 这 most 高级 2024 models.
+LLM 的训练通常分为两个阶段：预训练（在大规模文本语料上进行无监督训练）和微调（监督微调，或通过基于人类反馈的强化学习，即 RLHF）。上下文窗口描述了 LLM 一次可以处理多少文本，其规模已从早期 GPT-3 的 4K tokens，发展到 2024 年最先进模型的超过 100 万 tokens。
 
-## AI Ethics 和 Safety
+## AI 伦理与安全
 
-AI raises important ethical questions including bias, privacy, job displacement, 和 这 risk 的 misuse. Algorithmic bias occurs when training 数据 reflects historical inequalities, causing AI 系统 to produce discriminatory outputs. Facial recognition 系统 have shown higher error rates 为 darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+AI 带来了诸多重要的伦理问题，包括偏见、隐私、岗位替代以及被滥用的风险。当训练数据反映出历史性不平等时，就会产生算法偏见，导致 AI 系统输出带有歧视性的结果。人脸识别系统在深色皮肤人群上的错误率更高，招聘算法也被发现更偏向男性候选人。
 
-AI safety is 这 field dedicated to ensuring AI 系统 behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical 在 医学, 法律, 金融)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a 未来 AGI could pursue goals misaligned 与 human survival
+AI 安全致力于确保 AI 系统按预期运行，并避免造成非预期伤害。核心关注点包括：
+- **对齐（Alignment）**：确保 AI 目标与人类价值一致
+- **可解释性 / 可说明性**：理解 AI 为什么做出某项决策（在医疗、法律、金融等领域尤为关键）
+- **滥用**：AI 生成的深度伪造、虚假信息、网络攻击
+- **生存风险**：一种理论担忧，即未来的 AGI 可能追求与人类生存不一致的目标
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, 和 independent institutes like MIRI 和 ARC.
+从事 AI 安全研究的组织包括 OpenAI 的 Safety 团队、Anthropic（由前 OpenAI 安全研究人员创立）、DeepMind 的安全团队，以及 MIRI、ARC 等独立研究机构。
 
-## AI 在 Society
+## AI 与社会
 
-AI is transforming nearly every industry:
+AI 正在改变几乎所有行业：
 
-- **医疗**: AI assists 在 diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), 和 personalising treatment plans.
-- **金融**: Fraud detection, algorithmic trading, credit scoring, 和 robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, 和 reinforcement learning. Tesla Autopilot, Waymo, 和 Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace 和 learning style.
-- **Creative fields**: AI generates music, art, 和 writing; tools like Midjourney, DALL-E, 和 GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, 和 powers both attacks 和 defences.
+- **医疗健康**：AI 可辅助从医学影像中诊断癌症、预测患者结局、加速药物发现（AlphaFold 解决了蛋白质折叠结构预测问题），并实现个性化治疗方案。
+- **金融**：欺诈检测、算法交易、信用评分和智能投顾都在使用机器学习模型。
+- **交通运输**：自动驾驶汽车依赖计算机视觉、激光雷达和强化学习。Tesla Autopilot、Waymo 和 Cruise 都是这一领域的代表。
+- **教育**：个性化学习平台可根据学生的学习节奏和风格动态调整内容。
+- **创意领域**：AI 能生成音乐、艺术和文本；Midjourney、DALL-E 和 GitHub Copilot 等工具已改变创作流程。
+- **网络安全**：AI 用于检测异常、识别威胁，同时也驱动攻击与防御两端的发展。
 
-## Robotics 和 Embodied AI
+## 机器人与具身智能
 
-Robotics combines AI 与 physical machines. Modern robots use perception (cameras, lidar), planning, 和 control to navigate 和 manipulate environments. Boston Dynamics' Atlas demonstrates 高级 bipedal movement. Industrial robots from companies like ABB 和 FANUC automate manufacturing. Household robots (Roomba) 和 surgical robots (da Vinci System) apply AI 在 everyday 和 medical settings. Embodied AI research focuses on agents that learn physical skills through interaction 与 这 world, bridging 这 gap between simulated 和 real environments.
+机器人技术将 AI 与物理机器结合起来。现代机器人利用感知（摄像头、激光雷达）、规划和控制来导航并操纵环境。Boston Dynamics 的 Atlas 展示了先进的双足运动能力。ABB、FANUC 等公司的工业机器人推动制造自动化，家用机器人（Roomba）和手术机器人（达芬奇系统）则将 AI 应用于日常与医疗场景。具身智能研究聚焦于通过与现实世界交互来学习物理技能的智能体，弥合模拟环境与真实环境之间的差距。
 
-## Current AI Trends (2020s)
+## 当前 AI 趋势（2020 年代）
 
-- **Multimodal AI**: 系统 that process text, images, audio, 和 video together (GPT-4V, Gemini)
-- **Agents 和 agentic AI**: LLMs that can use tools, browse 这 网络, write code, 和 take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models 为 researchers
-- **On-device AI**: Running AI models locally on phones 和 laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: 这 EU AI Act (2024) is 这 world's first comprehensive AI 法律, classifying AI 系统 by risk level
+- **多模态 AI**：同时处理文本、图像、音频和视频的系统（GPT-4V、Gemini）
+- **Agent 与代理式 AI**：能够使用工具、浏览网页、编写代码并执行多步操作的 LLM（OpenAI 的 Operator、Anthropic Computer Use）
+- **开放权重模型**：Meta 的 LLaMA 让研究人员更容易获取大模型
+- **端侧 AI**：在手机和笔记本电脑上本地运行 AI 模型，无需连接云端（Apple Intelligence、Qualcomm NPU）
+- **AI 监管**：欧盟《AI 法案》（2024）是全球首部全面的 AI 法律，按风险等级对 AI 系统进行分类

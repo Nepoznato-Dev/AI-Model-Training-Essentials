@@ -1,186 +1,179 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: ml_evaluation_and_workflow.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 机器学习评估与工作流
 
-# 机器学习 Evaluation 和 Workflow
-
-A practical 指南 to 这 ML lifecycle — from problem framing to production monitoring — 与 a focus on metrics, validation, 和 debugging.
+一份关于机器学习生命周期的实用指南——从问题定义到生产监控——重点介绍指标、验证和调试。
 
 ---
 
-## 这 ML Workflow (CRISP-ML)
+## 机器学习工作流（CRISP-ML）
 
-1. **商业 Understanding**: Define 这 objective 和 success criteria.
-2. **数据 Understanding**: Explore 可用 数据, identify quality issues.
-3. **数据 Preparation**: Clean, transform, 和 split 数据.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess 性能 against metrics.
-6. **部署**: Serve 这 model 在 production.
-7. **Monitoring**: Track drift, 性能, 和 anomalies.
+1. **业务理解**：明确目标和成功标准。
+2. **数据理解**：探索可用数据，识别质量问题。
+3. **数据准备**：清洗、转换并拆分数据。
+4. **建模**：训练模型并调优超参数。
+5. **评估**：依据指标评估性能。
+6. **部署**：将模型投入生产环境提供服务。
+7. **监控**：跟踪漂移、性能和异常情况。
 
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
-
----
-
-## 数据 Splitting
-
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit 这 model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters 和 select model variants.
-- **Test set** (~15%): Used only once at 这 very end to estimate generalisation 性能.
-
-**Important:** 这 test set must be kept completely untouched until final evaluation to avoid 数据 leakage.
-
-### Cross-Validation (k-fold)
-为 small datasets, use k-fold cross-validation: split 数据 into k folds, train on k-1, validate on 这 remaining, 和 repeat k times. Average 这 性能. k=5 or k=10 is common.
-
-### Stratified Splitting
-为 classification 与 imbalanced classes, use stratified splits to preserve class proportions 在 each subset.
-
-### Time-Based Splitting
-为 time-series 数据, split chronologically (train on past, test on 未来) rather than randomly.
+这是一个迭代循环——你会根据评估结果反复回到前面的步骤。
 
 ---
 
-## Evaluation Metrics
+## 数据集拆分
 
-### Classification Metrics
+### 训练 / 验证 / 测试集划分
+- **训练集**（约 70%）：用于拟合模型参数。
+- **验证集**（约 15%）：用于调优超参数并选择模型变体。
+- **测试集**（约 15%）：只在最后使用一次，用于估计泛化性能。
 
-| Metric | What it measures | Best used 为 |
+**重要：** 测试集在最终评估前必须保持完全未触碰状态，以避免数据泄漏。
+
+### 交叉验证（k-fold）
+对于小型数据集，可使用 k 折交叉验证：将数据划分为 k 份，用其中 k-1 份训练，在剩余 1 份上验证，并重复 k 次，最后对性能取平均。常见取值是 k=5 或 k=10。
+
+### 分层拆分
+对于类别不平衡的分类任务，应使用分层拆分，以在每个子集中保留原始类别比例。
+
+### 基于时间的拆分
+对于时间序列数据，应按时间顺序拆分（用过去训练、用未来测试），而不是随机拆分。
+
+---
+
+## 评估指标
+
+### 分类指标
+
+| 指标 | 衡量内容 | 最适用场景 |
 |--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean 的 precision 和 recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under 这 ROC curve; tradeoff between TPR 和 FPR | General classifier 性能 independent 的 threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+| **Accuracy（准确率）** | (TP + TN) / (TP + TN + FP + FN) | 类别分布均衡的数据集 |
+| **Precision（精确率）** | TP / (TP + FP) | 假阳性代价高时（如垃圾邮件检测） |
+| **Recall（召回率）** | TP / (TP + FN) | 假阴性代价高时（如癌症筛查） |
+| **F1-score** | 精确率与召回率的调和平均数 | 类别不平衡数据集，需要单一综合指标时 |
+| **AUC-ROC** | ROC 曲线下面积；衡量 TPR 与 FPR 的权衡 | 与阈值无关的分类器整体性能 |
+| **AUC-PR** | Precision-Recall 曲线下面积 | 高度类别不平衡的数据集 |
 
-**Definitions:**
-- TP = True Positive
-- TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+**定义：**
+- TP = 真阳性（True Positive）
+- TN = 真阴性（True Negative）
+- FP = 假阳性（False Positive，I 类错误）
+- FN = 假阴性（False Negative，II 类错误）
 
-### Regression Metrics
+### 回归指标
 
-| Metric | What it measures | Sensitivity to outliers |
+| 指标 | 衡量内容 | 对离群值的敏感度 |
 |--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root 的 MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient 的 Determination) | Proportion 的 variance explained | None directly, but sensitive to outliers indirectly |
+| **MSE**（均方误差） | 平均平方差 | 高 |
+| **RMSE**（均方根误差） | MSE 的平方根（与目标变量单位相同） | 高 |
+| **MAE**（平均绝对误差） | 平均绝对差 | 低 |
+| **R²**（决定系数） | 被解释的方差占比 | 没有直接敏感性，但会间接受离群值影响 |
 
-### Ranking 和 Retrieval Metrics
-- **Precision@k**: Fraction 的 relevant items among top-k recommendations.
-- **Recall@k**: Fraction 的 all relevant items that appear 在 top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts 为 position relevance.
-- **Hit Rate**: Whether a relevant item appears 在 这 top-k.
+### 排序与检索指标
+- **Precision@k**：前 k 个推荐结果中相关项所占比例。
+- **Recall@k**：所有相关项中出现在前 k 个结果里的比例。
+- **NDCG**（归一化折损累计增益）：考虑相关项所在位置的重要性。
+- **Hit Rate**：相关项是否出现在前 k 个结果中。
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" 这 model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap 与 参考 translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap 为 summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms 和 stems.
-
----
-
-## Evaluation Pitfalls
-
-### 数据 Leakage
-Occurs when information from 这 test set inadvertently influences training.
-- **Prevent:** Never use test 数据 为 feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
-
-### Overfitting
-Model performs well on training 数据 but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify 架构, or collect more 数据.
-
-### Underfitting
-Model performs poorly on both training 和 validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
-
-### Imbalanced 数据
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
-
-### Temporal Drift (Concept Drift)
-这 relationship between features 和 target changes over time.
-- **Mitigate:** Retrain periodically, monitor 性能, use drift detection algorithms.
+### 生成式 / LLM 指标
+- **Perplexity（困惑度）**：模型面对留出文本时有多“意外”（越低越好）。
+- **BLEU**：与参考译文的 n-gram 重叠度（偏重精确率）。
+- **ROUGE**：面向摘要任务的召回导向重叠度。
+- **BERTScore**：使用上下文嵌入衡量语义相似度（比 BLEU 更稳健）。
+- **METEOR**：结合 WordNet 同义词和词干进行对齐。
 
 ---
 
-## Hyperparameter Tuning
+## 评估陷阱
 
-- **Grid Search**: Exhaustively try all combinations 的 a predefined set 的 hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search 为 high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model 的 这 objective function 和 selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps 为 distributed tuning.
+### 数据泄漏
+当测试集中的信息在无意间影响了训练过程时，就会发生数据泄漏。
+- **预防：** 绝不要将测试数据用于特征工程、归一化或超参数调优。
+- **识别：** 如果模型得分高得可疑，应优先怀疑是否发生了泄漏。
 
-**Suggested search ranges 为 common hyperparameters:**
+### 过拟合
+模型在训练数据上表现很好，但在验证集 / 测试集上表现很差。
+- **缓解：** 使用正则化、提前停止、简化架构，或收集更多数据。
 
-| Parameter | Suggested range (log-scale) |
+### 欠拟合
+模型在训练集和验证集上都表现不佳。
+- **缓解：** 使用更复杂的模型、增加特征，或减弱正则化。
+
+### 数据不平衡
+- **缓解：** 使用类别权重、过采样（SMOTE）、欠采样，或采用合适指标（如 F1、AUC-PR）而不是准确率。
+
+### 时间漂移（概念漂移）
+特征与目标之间的关系会随时间变化。
+- **缓解：** 定期重训、持续监控性能，并使用漂移检测算法。
+
+---
+
+## 超参数调优
+
+- **网格搜索（Grid Search）**：穷举尝试预定义超参数集合中的所有组合。简单，但计算成本高。
+- **随机搜索（Random Search）**：从分布中随机采样组合。对于高维空间，通常比网格搜索更高效。
+- **贝叶斯优化（Bayesian Optimisation）**：构建目标函数的概率模型，并智能地选择超参数。常用库：Optuna、Hyperopt、scikit-optimise。
+- **自动化调优**：使用 Optuna、Ray Tune 或 Weights & Biases Sweeps 等工具进行分布式调优。
+
+**常见超参数的建议搜索范围：**
+
+| 参数 | 建议范围（对数尺度） |
 |-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number 的 layers (NN) | 2 to 6 |
-| Number 的 neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+| 学习率 | 1e-5 到 1e-1 |
+| Batch size | 16、32、64、128、256 |
+| 层数（神经网络） | 2 到 6 |
+| 神经元数量（神经网络） | 32 到 1024 |
+| 正则化（L2） | 1e-6 到 1e-2 |
+| 树深（XGBoost） | 3 到 12 |
 
 ---
 
-## Model Selection 和 Validation
+## 模型选择与验证
 
-1. **Baseline model**: Start 与 a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural 网络).
-3. **Cross-validate** each candidate on 这 validation set.
-4. **Compare metrics** (与 confidence intervals) 和 select 这 best candidate.
-5. **Final evaluation** on 这 held-out test set.
-6. **Error analysis**: Look at 示例 这 model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) 和 feed insights back into 数据 preparation or feature engineering.
-
----
-
-## 部署 和 Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes 的 数据 offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time 与 low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **性能 monitoring**: Track accuracy/F1 over time on live 数据 (when ground truth is 可用).
-- **数据 drift**: Monitor changes 在 input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes 在 这 relationship between inputs 和 outputs.
-- **Prediction drift**: Track 这 distribution 的 predicted outputs.
-- **Latency 和 throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging 和 Alerting
-- Log all prediction requests 和 responses (与 anonymisation).
-- Set alerts 为:
-  - Significant drop 在 性能.
-  - High percentage 的 missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning 和 Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store 和 version models, metadata, 和 evaluation results.
-- Store 这 training code 和 数据 version (via DVC or Git LFS) alongside 这 model.
+1. **基线模型**：先从简单启发式或简单模型（如逻辑回归、均值预测器）开始，建立性能下界。
+2. **候选模型**：训练多个模型家族（如随机森林、XGBoost、神经网络）。
+3. 对每个候选模型进行**交叉验证**。
+4. **比较指标**（连同置信区间），选出最佳候选模型。
+5. 在留出的测试集上进行**最终评估**。
+6. **误差分析**：查看模型出错的样本，识别模式（如稀有类别、模糊输入），再将这些洞察反馈到数据准备或特征工程中。
 
 ---
 
-## Practical Workflow Checklist
+## 部署与监控
 
-- [ ] Problem framed 和 success metric defined.
-- [ ] 数据 exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained 和 validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] 部署 plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (数据 card, model card) completed.
+### 服务模式
+- **批量推理**：离线处理大量数据（如夜间推荐）。
+- **在线推理**：通过 API 提供实时预测（如信用评分、欺诈检测）。
+- **流式推理**：事件驱动、低延迟实时推理（如 IoT 传感器告警）。
+
+### 模型监控
+- **性能监控**：在真实线上数据上持续跟踪准确率 / F1（前提是可获得真值）。
+- **数据漂移**：监控输入特征分布的变化（例如使用 PSI——总体稳定性指数）。
+- **概念漂移**：监控输入与输出关系的变化。
+- **预测漂移**：跟踪模型预测输出分布的变化。
+- **延迟与吞吐量**：确保满足 SLA（服务级别协议）。
+
+### 日志与告警
+- 记录所有预测请求和响应（并进行匿名化处理）。
+- 为以下情况设置告警：
+  - 性能显著下降。
+  - 缺失或无效输入占比过高。
+  - 模型输出超出预期范围。
+
+### 模型版本管理与注册表
+- 使用模型注册表（如 MLflow、Weights & Biases、Sagemaker Model Registry）存储并管理模型、元数据和评估结果的版本。
+- 将训练代码和数据版本（通过 DVC 或 Git LFS）与模型一同保存。
+
+---
+
+## 实用工作流检查清单
+
+- [ ] 已明确定义问题和成功指标。
+- [ ] 已完成数据探索（缺失值、离群值、分布）。
+- [ ] 已创建训练 / 验证 / 测试集划分（必要时进行分层）。
+- [ ] 已建立基线模型。
+- [ ] 已训练并验证候选模型。
+- [ ] 已完成超参数调优。
+- [ ] 已通过交叉验证选出最佳模型。
+- [ ] 已在测试集上完成最终评估。
+- [ ] 已完成误差分析。
+- [ ] 部署方案已就绪（服务基础设施）。
+- [ ] 监控看板已搭建。
+- [ ] 文档（data card、model card）已完成。

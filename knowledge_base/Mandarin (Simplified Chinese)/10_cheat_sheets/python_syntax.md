@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: python_syntax.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Python 语法速查表
 
-# Python 语法 Cheat Sheet
-
-快速参考 为 Python 3.x 语法 和 common patterns.
+Python 3.x 语法与常见写法快速参考。
 
 ---
 
-## Basic 语法
+## 基础语法
 
-### Variables 和 数据 Types
+### 变量与数据类型
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +25,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### 字符串
 ```python
 s = "Hello, World!"
 
@@ -54,9 +47,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## 控制流
 
-### Conditionals
+### 条件判断
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### 循环
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +86,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## 数据 Structures
+## 数据结构
 
-### Lists
+### 列表
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +106,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### 字典
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +121,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### 集合
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +133,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuples
+### 元组
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +142,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## 函数
 
-### Definition
+### 定义
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +163,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Lambda 函数
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +171,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## 类
 
 ```python
 class Person:
@@ -207,7 +200,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## 文件 I/O
 
 ```python
 # Reading files
@@ -226,7 +219,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## 错误处理
 
 ```python
 try:
@@ -248,7 +241,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules 和 Imports
+## 模块与导入
 
 ```python
 import math
@@ -263,9 +256,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## 常见模式
 
-### List Operations
+### 列表操作
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +274,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### 字符串操作
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +290,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### 词典 Operations
+### 字典操作
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +306,7 @@ for k, v in d.items():
 
 ---
 
-## Built-在 Functions
+## 内置函数
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +322,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## 快速提示
 
-- Use `#` 为 single-line comments
-- Use `"""triple quotes"""` 为 docstrings 和 multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` 为 variables/functions, `PascalCase` 为 classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` 为 project isolation
-- Install packages 与 `pip install package_name`
+- 使用 `#` 编写单行注释
+- 使用 `"""triple quotes"""` 编写文档字符串和多行字符串
+- 缩进很重要（通常为 4 个空格）
+- 命名约定：变量/函数使用 `snake_case`，类使用 `PascalCase`
+- 使用 `__name__ == "__main__"` 检查脚本是否被直接运行
+- 使用 `virtualenv` 或 `venv` 进行项目隔离
+- 使用 `pip install package_name` 安装包
 
 ---
 
-*最后更新: June 2025 | Python 3.x*
+*最后更新：2025 年 6 月 | Python 3.x*

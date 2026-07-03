@@ -1,71 +1,63 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: history_and_culture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# История и культура
 
-# История и Культура
+## Древние цивилизации
 
-## Ancient Civilizations
+Месопотамия, расположенная между реками Тигр и Евфрат на территории современного Ирака, считается одной из древнейших колыбелей цивилизации. Шумеры около 3400 года до н. э. создали одну из первых систем письма — клинопись. Древний Египет развивался вдоль Нила и известен своими пирамидами, фараонами и иероглифическим письмом. Великая пирамида в Гизе была построена примерно в 2560 году до н. э. и является одним из Семи чудес Древнего мира.
 
-Mesopotamia, located between the Tigris и Euphrates rivers в modern-day Iraq, is considered one из the earliest cradles из civilization. the Sumerians developed one из the first writing Системы, called cuneiform, around 3400 BCE. Ancient Egypt developed along the Nile River и is famous для its pyramids, pharaohs, и hieroglyphic writing. the Great Pyramid из Giza was built around 2560 BCE и is one из the Seven Wonders из the Ancient World.
+Древняя Греция (примерно 800-146 годы до н. э.) внесла фундаментальный вклад в философию, демократию, математику и искусство. Греческие мыслители, включая Сократа, Платона и Аристотеля, заложили основы логики и этики, которые изучаются до сих пор. Древний Рим вырос из города-государства в республику, а затем в империю, простиравшуюся по Европе, Северной Африке и Западной Азии. Рим внёс вклад в право, архитектуру, инженерное дело (дороги, акведуки) и государственное управление.
 
-Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, и art. Greek thinkers including Socrates, Plato, и Aristotle established frameworks из logic и ethics still studied today. Ancient Rome grew from a city-state to a republic и then an empire stretching across Europe, North Africa, и Western Asia. Rome contributed to Закон, Архитектура, engineering (roads, aqueducts), и governance.
+## Основные мировые религии
 
-## Major World Religions
+Христианство — крупнейшая религия мира, насчитывающая примерно 2,4 миллиарда последователей. Оно основано на жизни и учении Иисуса Христа и сосредоточено вокруг Библии. Ислам — вторая по численности мировая религия, имеющая около 1,9 миллиарда последователей. Он возник благодаря пророку Мухаммеду в VII веке н. э. и основан на Коране. Индуизм — третья по численности религия мира с примерно 1,2 миллиарда последователей, в основном в Индии. Буддизм был основан Сиддхартхой Гаутамой в V веке до н. э. и сосредоточен на достижении просветления. Иудаизм — одна из древнейших монотеистических религий, насчитывающая около 15 миллионов последователей по всему миру.
 
-Christianity is the world's largest religion с approximately 2.4 billion followers. It is based on the life и teachings из Jesus Christ и centers on the Bible. Islam is the world's second-largest religion с approximately 1.9 billion followers. It was founded by the Prophet Muhammad в the 7th century CE и is centered on the Quran. Hinduism is the world's third-largest religion с approximately 1.2 billion followers, primarily в India. Buddhism was founded by Siddhartha Gautama в the 5th century BCE и focuses on achieving enlightenment. Judaism is one из the oldest monotheistic religions, с approximately 15 million followers worldwide.
+## Средние века
 
-## the Middle Ages
+Средние века (примерно 500-1500 годы н. э.) в Европе последовали за падением Западной Римской империи. Этот период ознаменовался подъёмом феодализма, доминирующей политической и культурной ролью Католической церкви, Крестовыми походами (военными кампаниями в Святую землю), а затем и Возрождением. Чёрная смерть (бубонная чума) в XIV веке уничтожила примерно треть населения Европы. Исламский золотой век (VIII-XIV века) принёс крупные достижения в науке, математике и философии в исламском мире.
 
-the Middle Ages (approximately 500–1500 CE) в Europe followed the fall из the Western Roman Empire. This period saw the rise из feudalism, the Catholic Church as a dominant political и cultural force, the Crusades (military campaigns to the Holy Land), и eventually the Renaissance. the Black Death (bubonic plague) killed approximately one-third из Europe's population в the 14th century. the Islamic Golden Age (8th–14th centuries) saw major advances в Наука, mathematics, и philosophy в the Islamic world.
+## Возрождение и Просвещение
 
-## the Renaissance и Enlightenment
+Возрождение (XIV-XVII века) было культурным и интеллектуальным движением, начавшимся в Италии и распространившимся по Европе; оно характеризовалось возрождённым интересом к античному искусству, философии и науке. Среди ключевых фигур — Leonardo da Vinci, Michelangelo и Galileo Galilei. Научная революция (XVI-XVII века) преобразила представления о природе и науке благодаря вкладу Copernicus, Galileo и Newton. Просвещение (XVII-XVIII века) подчёркивало роль разума, прав личности и критического отношения к традиции, повлияв на современную демократию и права человека.
 
-the Renaissance (14th–17th centuries) was a cultural и intellectual movement that began в Italy и spread across Europe, characterized by renewed interest в classical art, philosophy, и Наука. Key figures include Leonardo da Vinci, Michelangelo, и Galileo Galilei. the Scientific Revolution (16th–17th centuries) transformed understanding из Природа и Наука, с contributions from Copernicus, Galileo, и Newton. the Enlightenment (17th–18th centuries) emphasized reason, individual rights, и skepticism из tradition, influencing modern democracy и human rights.
+## Эпоха географических открытий и колонизация
 
-## Exploration и Colonization
+Эпоха географических открытий (XV-XVII века) ознаменовалась тем, что европейские мореплаватели нанесли мир на карты. Christopher Columbus достиг Америки в 1492 году. Vasco da Gama морским путём добрался до Индии в 1498 году. Экспедиция Ferdinand Magellan завершила первое кругосветное плавание в 1522 году. Европейская колонизация Америки, Африки и Азии оказала глубокое и часто разрушительное влияние на коренные народы через насилие, болезни и эксплуатацию.
 
-the Age из Exploration (15th–17th centuries) saw European explorers map the world. Christopher Columbus reached the Americas в 1492. Vasco da Gama reached India by sea в 1498. Ferdinand Magellan's expedition completed the first circumnavigation из the globe в 1522. European colonization из the Americas, Africa, и Asia had profound и often devastating effects on indigenous populations through violence, disease, и exploitation.
+## Промышленная революция
 
-## the Industrial Revolution
+Промышленная революция началась в Великобритании в конце XVIII века и преобразила производство, сельское хозяйство и транспорт. Паровая энергия, текстильные машины и производство железа вызвали быстрые экономические изменения. В XIX веке революция распространилась по Европе и Северной Америке. Она привела к урбанизации, появлению новых социальных классов и значительным экологическим изменениям. Она также породила опасные условия труда, что со временем стимулировало рабочие движения и социальные реформы.
 
-the Industrial Revolution began в Britain в the late 18th century и transformed manufacturing, Сельское хозяйство, и transportation. Steam power, textile machinery, и iron production drove rapid economic change. the revolution spread across Europe и North America в the 19th century. It led to urbanization, new social classes, и significant Экологический changes. It also produced dangerous working conditions that eventually spurred labor movements и social reform.
+## Мировые войны
 
-## World Wars
+Первая мировая война (1914-1918) началась после убийства эрцгерцога Franz Ferdinand из Austria-Hungary и охватила большую часть Европы. Новые военные технологии, такие как пулемёты, отравляющие газы и танки, привели к огромным потерям. Погибло около 17 миллионов человек. Вторая мировая война (1939-1945) стала самым смертоносным конфликтом в истории человечества, унёсшим примерно 70-85 миллионов жизней. В ней сражались союзники (включая Соединённые Штаты, Советский Союз и Соединённое Королевство) и державы Оси (Germany, Japan и Italy). Война завершилась поражением Nazi Germany и атомными бомбардировками Hiroshima и Nagasaki в Japan.
 
-World War I (1914–1918) began following the assassination из Archduke Franz Ferdinand из Austria-Hungary и involved much из Europe. New military technologies such as machine guns, poison gas, и tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was the deadliest conflict в human История, с approximately 70–85 million deaths. It was fought between the Allies (including the United States, Soviet Union, и United Kingdom) и the Axis powers (Germany, Japan, и Italy). the war ended с the defeat из Nazi Germany и the atomic bombings из Hiroshima и Nagasaki в Japan.
+## Холодная война
 
-## the Cold War
+Холодная война (1947-1991) была периодом геополитической напряжённости между Соединёнными Штатами и Советским Союзом, а также их союзниками. Она характеризовалась гонкой вооружений, войнами через посредников и идеологическим соперничеством между капитализмом и коммунизмом. Ключевые события включают Берлинскую стену (построена в 1961 году, пала в 1989 году), Корейскую войну, войну во Вьетнаме и Карибский кризис 1962 года. Холодная война завершилась распадом Советского Союза в 1991 году.
 
-the Cold War (1947–1991) was a period из geopolitical tension between the United States и the Soviet Union и their respective allies. It was characterized by an arms race, proxy wars, и ideological competition between capitalism и communism. Key События include the Berlin Wall (built 1961, fell 1989), the Korean War, the Vietnam War, и the Cuban Missile Crisis из 1962. the Cold War ended с the dissolution из the Soviet Union в 1991.
+## Деколонизация и движения за независимость
 
-## Decolonization и Independence Movements
+После Второй мировой войны многие страны Африки и Азии получили независимость от европейских колониальных держав. Индия обрела независимость от Великобритании в 1947 году. Большинство африканских государств стали независимыми в 1950-х и 1960-х годах. Организация Объединённых Наций была основана в 1945 году для содействия международному сотрудничеству, миру и правам человека.
 
-After World War II, many countries в Africa и Asia gained independence from European colonial powers. India gained independence from Britain в 1947. Most African nations became independent в the 1950s и 1960s. the United Nations was founded в 1945 to promote international cooperation, peace, и human rights.
+## Космическая гонка и эпоха технологий
 
-## the Space Race и Технология Age
+Космическая гонка (1957-1969) была соревнованием между Соединёнными Штатами и Советским Союзом за превосходство в освоении космоса. Советский Союз запустил Sputnik 1 — первый искусственный спутник — в 1957 году. Yuri Gagarin стал первым человеком в космосе в 1961 году. Соединённые Штаты высадили астронавтов на Луну во время миссии Apollo 11 20 июля 1969 года, а Neil Armstrong стал первым человеком, ступившим на лунную поверхность. Космическая гонка дала мощный импульс развитию ракетных технологий, вычислительной техники и телекоммуникаций.
 
-the Space Race (1957–1969) was a competition between the United States и Soviet Union to achieve superiority в space exploration. the Soviet Union launched Sputnik 1, the first artificial satellite, в 1957. Yuri Gagarin became the first human в space в 1961. the United States landed astronauts on the Moon during the Apollo 11 mission on July 20, 1969, с Neil Armstrong becoming the first person to walk on the lunar surface. the Space Race drove enormous advances в rocket Технология, Вычисления, и telecommunications.
+## Информационная эпоха
 
-## the Information Age
+Конец XX и начало XXI века характеризуются информационной эпохой, движимой развитием цифровых компьютеров, интернета и мобильных технологий. World Wide Web был создан Tim Berners-Lee в 1989 году и стал публично доступен в 1991 году, коренным образом изменив коммуникацию, торговлю, образование и культуру. Рост популярности персональных компьютеров в 1980-х годах, во многом благодаря Apple и IBM, принёс вычислительную технику в дома. Эпоха смартфонов, начавшаяся с выходом iPhone от Apple в 2007 году, поместила подключённые к интернету компьютеры в карманы миллиардов людей по всему миру.
 
-the late 20th и early 21st centuries are characterised by the Information Age, driven by the Разработка из digital computers, the internet, и mobile Технология. the World Wide Веб was invented by Tim Berners-Lee в 1989 и made publicly Доступно в 1991, fundamentally transforming Коммуникация, commerce, education, и Культура. the rise из personal computers в the 1980s, led by Apple и IBM, brought Вычисления into homes. the smartphone era, ushered в by Apple's iPhone в 2007, placed internet-connected computers в billions из pockets worldwide.
+## XXI век
 
-## the 21st Century
+Начало XXI века формируется под влиянием глобализации, терроризма, изменения климата и технологических потрясений. Теракты 11 сентября 2001 года в Соединённых Штатах привели к войне с терроризмом и конфликтам в Афганистане и Ираке. Мировой финансовый кризис 2008 года стал самым тяжёлым экономическим спадом со времён Великой депрессии. Арабская весна (2010-2012) сопровождалась массовыми протестами и восстаниями по всему Ближнему Востоку и Северной Африке. Пандемия COVID-19 (2019-2022) стала причиной более 6 миллионов подтверждённых смертей по всему миру и вызвала беспрецедентные социальные и экономические потрясения. В 2020-х годах усилились геополитические напряжения, включая вторжение Russia в Ukraine в 2022 году и возросшее соперничество США и China в области технологий и вокруг Taiwan.
 
-the early 21st century has been shaped by globalisation, terrorism, climate change, и technological disruption. the September 11, 2001 attacks в the United States led to the War on Terror и conflicts в Afghanistan и Iraq. the 2008 global financial crisis was the worst economic downturn since the Great Depression. the Arab Spring (2010–2012) saw mass protests и uprisings across the Middle East и North Africa. the COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide и triggered unprecedented social и economic disruption. the 2020s have seen rising geopolitical tensions, including Russia's invasion из Ukraine в 2022 и increased US-China competition over Технология и Taiwan.
+## Искусство и культура в истории
 
-## Art и Культура Through История
+Человеческое культурное самовыражение насчитывает десятки тысяч лет. Наскальные рисунки в Ласко, Франция (примерно 17 000 лет назад), относятся к числу самых ранних известных произведений искусства. Возрождение подарило такие шедевры, как Mona Lisa (Leonardo da Vinci) и роспись потолка Сикстинской капеллы (Michelangelo). Эпоха романтизма (конец XVIII-XIX век) ценила эмоции и природу, породив произведения Beethoven, Keats и Delacroix. Модернизм (начало XX века) порвал с традицией, что привело к появлению кубизма (Picasso), абстрактного искусства (Kandinsky) и джазовой музыки. Постмодернизм (середина-вторая половина XX века) поставил под сомнение большие нарративы и принял множественность, повлияв на архитектуру, литературу и визуальное искусство.
 
-Human cultural expression spans tens из thousands из years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some из the earliest known art. the Renaissance produced masterpieces such as the Mona Lisa (Leonardo da Vinci) и the Sistine Chapel ceiling (Michelangelo). the Romantic era (late 18th–19th century) valued emotion и Природа, producing works by Beethoven, Keats, и Delacroix. Modernism (early 20th century) broke с tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), и jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives и embraced plurality, influencing Архитектура, Литература, и visual art.
+## Философия и интеллектуальная история
 
-## Philosophy и Intellectual История
+Западная философия началась с досократиков (Thales, Heraclitus, Parmenides) около 600 года до н. э. Сократ, Платон и Аристотель определили классическую традицию. Во время Просвещения мыслители вроде Descartes, Locke, Hume и Kant заново осмыслили эпистемологию (теорию познания) и этику. XIX век ознаменовался критикой капитализма у Marx, вызовом морали у Nietzsche и рождением социологии. XX век принёс аналитическую философию (Russell, Wittgenstein) и континентальную философию (Heidegger, Sartre, Beauvoir). Восточные философские традиции, включая конфуцианство, даосизм, буддизм и ведическую философию, на протяжении тысячелетий формировали жизнь миллиардов людей в Азии.
 
-Western philosophy began с the pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, и Aristotle defined the classical tradition. During the Enlightenment, thinkers like Descartes, Locke, Hume, и Kant reshaped epistemology (theory из knowledge) и ethics. the 19th century saw Marx's Критика из capitalism, Nietzsche's challenge to morality, и the birth из sociology. the 20th century brought analytic philosophy (Russell, Wittgenstein) и continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, и Vedic philosophy have shaped billions из lives across Asia для millennia.
+## Музыка в истории
 
-## Music Through История
-
-Music has existed в human cultures since prehistory. Ancient Greeks used music в drama и ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). the Baroque period (1600–1750) gave rise to opera и instrumental music; composers include Bach, Handel, и Vivaldi. the Classical period (1750–1820) featured Mozart, Haydn, и the early Beethoven, emphasising clarity и form. the Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, и Wagner. the 20th century saw the emergence из jazz, blues, rock и roll, hip-hop, electronic music, и countless global fusion genres, democratised further by recording Технология и streaming.
-
+Музыка существует в человеческих культурах с доисторических времён. Древние греки использовали музыку в драме и ритуале. Средневековая Европа развила многоголосную духовную музыку (григорианский хорал, органум). Период барокко (1600-1750) дал толчок опере и инструментальной музыке; среди композиторов — Bach, Handel и Vivaldi. Период классицизма (1750-1820) представлен Mozart, Haydn и ранним Beethoven и подчёркивал ясность и форму. Эпоха романтизма (1820-1900) отдавала предпочтение эмоциональной выразительности в музыке Brahms, Chopin и Wagner. В XX веке появились джаз, блюз, рок-н-ролл, хип-хоп, электронная музыка и бесчисленные гибридные жанры со всего мира, а технологии звукозаписи и стриминг сделали музыку ещё доступнее.

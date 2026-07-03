@@ -1,229 +1,222 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: arts_and_literature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Sanat ve Edebiyat
 
-## Literary Genres ve Forms
+## Edebi Türler ve Biçimler
 
-### Fiction Genres
-- **Literary Fiction**: Character-driven narratives focusing on themes, style, ve psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
-- **Bilim Fiction**: Speculative fiction exploring futuristic Teknoloji, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "bu Lord içinde bu Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
-- **Mystery/Detective**: Crime-solving narratives ile puzzles ve investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "bu Shining" by Stephen King, "Dracula" by Bram Stoker)
-- **Romance**: Focus on romantic relationships ve emotional journeys (e.g., Jane Austen's "Pride ve Prejudice", Nicholas Sparks novels)
-- **Historical Fiction**: Set içinde specific historical periods ile accurate details (e.g., "bu Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
-- **Magical Realism**: Realistic settings ile magical elements treated as ordinary (e.g., "One Hundred Years içinde Solitude" by Gabriel García Márquez)
+### Kurgu Türleri
+- **Edebi Kurgu**: Temalara, üsluba ve psikolojik derinliğe odaklanan, karakter merkezli anlatılar (örn. Harper Lee'nin "To Kill a Mockingbird" eseri)
+- **Bilim Kurgu**: Geleceğin teknolojisini, uzay keşfini, zaman yolculuğunu ve paralel evrenleri inceleyen spekülatif kurgu (örn. Frank Herbert'in "Dune" eseri, George Orwell'in "1984" eseri)
+- **Fantastik**: Büyülü dünyalar, mitolojik yaratıklar ve doğaüstü unsurlar (örn. J.R.R. Tolkien'in "The Lord of the Rings" eseri, J.K. Rowling'in "Harry Potter" serisi)
+- **Gizem/Dedektif**: Bulmacalar ve soruşturmalar içeren suç çözme anlatıları (örn. Agatha Christie'nin Hercule Poirot serisi, Arthur Conan Doyle'un Sherlock Holmes öyküleri)
+- **Korku**: Korkutmayı, huzursuz etmeyi veya gerilim yaratmayı amaçlayan anlatılar (örn. Stephen King'in "The Shining" eseri, Bram Stoker'ın "Dracula" eseri)
+- **Romans**: Romantik ilişkilere ve duygusal yolculuklara odaklanan eserler (örn. Jane Austen'in "Pride and Prejudice" eseri, Nicholas Sparks romanları)
+- **Tarihsel Kurgu**: Doğru ayrıntılarla belirli tarihsel dönemlerde geçen eserler (örn. Markus Zusak'ın "The Book Thief" eseri, Hilary Mantel'in "Wolf Hall" eseri)
+- **Büyülü Gerçekçilik**: Büyülü unsurların olağan kabul edildiği gerçekçi ortamlar (örn. Gabriel García Márquez'in "One Hundred Years of Solitude" eseri)
 
-### Non-Fiction Genres
-- **Biography/Autobiography**: Life stories içinde real people (e.g., "bu Diary içinde a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
-- **Memoir**: Personal accounts focusing on specific experiences or themes
-- **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
-- **Journalism**: News reporting, investigative pieces, feature articles
-- **Academic Writing**: Research papers, scholarly articles, dissertations
-- **Self-Help**: Personal Geliştirme ve improvement guides
+### Kurgu Dışı Türler
+- **Biyografi/Otobiyografi**: Gerçek kişilerin yaşam öyküleri (örn. Anne Frank'ın "The Diary of a Young Girl" eseri, Michelle Obama'nın "Becoming" eseri)
+- **Anı**: Belirli deneyimlere veya temalara odaklanan kişisel anlatılar
+- **Deneme**: Belirli konular üzerine yazılmış kısa düzyazı metinleri (örn. James Baldwin ve Joan Didion'ın eserleri)
+- **Gazetecilik**: Haber yazıları, araştırmacı dosyalar ve özellikli makaleler
+- **Akademik Yazım**: Araştırma makaleleri, bilimsel makaleler ve tezler
+- **Kişisel Gelişim**: Kişisel gelişim ve iyileşme rehberleri
 
-### Poetry Forms
-- **Sonnet**: 14-line poem ile specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
-- **Haiku**: Japanese form ile 5-7-5 syllable pattern
-- **Limerick**: Five-line humorous poem ile AABBA rhyme scheme
-- **Free Verse**: No regular meter or rhyme pattern
-- **Villanelle**: 19 lines ile specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
-- **Ode**: Lyrical poem praising a person, event, or thing
-- **Epic**: Long narrative poem about heroic deeds (e.g., "bu Odyssey" by Homer, "Beowulf")
+### Şiir Biçimleri
+- **Sone**: Belirli uyak düzenine sahip 14 dizelik şiir (Shakespeare tipi: ABAB CDCD EFEF GG; Petrarca tipi: ABBAABBA CDECDE)
+- **Haiku**: 5-7-5 hece düzenine sahip Japon şiir biçimi
+- **Limerick**: AABBA uyak düzenine sahip beş dizelik mizahi şiir
+- **Serbest Nazım**: Düzenli ölçü veya uyak kalıbı olmayan şiir
+- **Villanelle**: Belirli tekrar düzenine sahip 19 dizelik şiir (örn. Dylan Thomas'ın "Do Not Go Gentle into That Good Night" şiiri)
+- **Ode**: Bir kişiyi, olayı veya nesneyi öven lirik şiir
+- **Destan**: Kahramanlık eylemlerini anlatan uzun anlatı şiiri (örn. Homeros'un "The Odyssey" eseri, "Beowulf")
 
-## Major Literary Movements
+## Başlıca Edebi Akımlar
 
-### Historical Periods
-- **Classical Edebiyat** (8th century BCE - 5th century CE): Greek ve Roman works emphasizing reason, order, ve humanism
-- **Medieval Edebiyat** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "bu Divine Comedy" by Dante)
-- **Renaissance** (14th - 17th century): Humanism, revival içinde classical learning (e.g., Shakespeare, Cervantes)
-- **Enlightenment** (17th - 18th century): Reason, Bilim, individual rights (e.g., Voltaire, Jonathan Swift)
-- **Romanticism** (late 18th - mid-19th century): Emotion, Doğa, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
-- **Realism** (mid-19th century): Accurate depiction içinde everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
-- **Modernism** (late 19th - mid-20th century): Experimental forms, stream içinde consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
-- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
+### Tarihsel Dönemler
+- **Klasik Edebiyat** (MÖ 8. yüzyıl - MS 5. yüzyıl): Akıl, düzen ve hümanizmi vurgulayan Yunan ve Roma eserleri
+- **Orta Çağ Edebiyatı** (5. - 15. yüzyıl): Dinsel temalar, şövalye romansları ve alegoriler (örn. Dante'nin "The Divine Comedy" eseri)
+- **Rönesans** (14. - 17. yüzyıl): Hümanizm ve klasik öğrenimin yeniden canlanması (örn. Shakespeare, Cervantes)
+- **Aydınlanma** (17. - 18. yüzyıl): Akıl, bilim ve bireysel haklar (örn. Voltaire, Jonathan Swift)
+- **Romantizm** (18. yüzyıl sonu - 19. yüzyıl ortası): Duygu, doğa ve bireycilik (örn. Wordsworth, Goethe, Mary Shelley)
+- **Gerçekçilik** (19. yüzyıl ortası): Gündelik yaşamın doğru biçimde betimlenmesi (örn. Tolstoy, George Eliot, Mark Twain)
+- **Modernizm** (19. yüzyıl sonu - 20. yüzyıl ortası): Deneysel biçimler ve bilinç akışı (örn. James Joyce, Virginia Woolf, T.S. Eliot)
+- **Postmodernizm** (20. yüzyıl ortası - günümüz): Parçalanma, üstkurmaca ve ironi (örn. Thomas Pynchon, Don DeLillo)
 
-## Visual Sanat
+## Görsel Sanatlar
 
-### Art Movements
-- **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
-- **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
-- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
-- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
-- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
-- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
-- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
-- **Pop Art** (1950s - 1960s): Popular Kültür imagery (e.g., Warhol, Lichtenstein)
-- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
+### Sanat Akımları
+- **Rönesans** (14. - 17. yüzyıl): Gerçekçilik, perspektif ve insan anatomisi (örn. Leonardo da Vinci, Michelangelo, Raphael)
+- **Barok** (17. yüzyıl): Dramatik ışık kullanımı ve duygusal yoğunluk (örn. Caravaggio, Rembrandt, Bernini)
+- **İzlenimcilik** (19. yüzyıl sonu): Işık, renk ve görünür fırça darbeleri (örn. Monet, Renoir, Degas)
+- **Post-Empresyonizm** (19. yüzyıl sonu): Cesur renkler ve geometrik biçimler (örn. Van Gogh, Cézanne, Gauguin)
+- **Kübizm** (20. yüzyıl başı): Geometrik şekiller ve çoklu perspektifler (örn. Picasso, Braque)
+- **Sürrealizm** (1920'ler - 1940'lar): Rüya imgeleri ve bilinçdışı zihin (örn. Dalí, Magritte, Frida Kahlo)
+- **Soyut Dışavurumculuk** (1940'lar - 1950'ler): Kendiliğinden, jestüel resim (örn. Pollock, Rothko, de Kooning)
+- **Pop Art** (1950'ler - 1960'lar): Popüler kültür imgeleri (örn. Warhol, Lichtenstein)
+- **Çağdaş Sanat** (1970'ler - günümüz): Çeşitli ortamlar, kavramsal yaklaşımlar ve toplumsal yorum
 
-### Art Mediums ve Techniques
-- **Painting**: Oil, acrylic, watercolor, fresco, tempera
-- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
-- **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
-- **Printmaking**: Etching, lithography, screen printing, woodcut
-- **Photography**: Digital, film, documentary, portrait, landscape, street photography
-- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
-- **Installation Art**: Site-specific, immersive environments
-- **Performans Art**: Live actions, body art, happenings
+### Sanat Ortamları ve Teknikleri
+- **Resim**: Yağlı boya, akrilik, suluboya, fresk, tempera
+- **Çizim**: Kurşun kalem, kömür, mürekkep, pastel, conte kalemi
+- **Heykel**: Oyma (taş, ahşap), modelleme (kil, balmumu), döküm (bronz, metal), birleştirme
+- **Baskı Resim**: Asit oyma, litografi, serigrafi, ağaç baskı
+- **Fotoğrafçılık**: Dijital, film, belgesel, portre, manzara, sokak fotoğrafçılığı
+- **Dijital Sanat**: 3D modelleme, dijital resim, üretken sanat, NFT'ler
+- **Yerleştirme Sanatı**: Mekâna özgü, içine alan ortamlar
+- **Performans Sanatı**: Canlı eylemler, beden sanatı, happening'ler
 
-## Music
+## Müzik
 
-### Classical Music Periods
-- **Medieval** (500-1400): Gregorian chant, early polyphony
-- **Renaissance** (1400-1600): Vocal polyphony, madrigals (e.g., Palestrina, Josquin des Prez)
-- **Baroque** (1600-1750): Ornate melodies, basso continuo (e.g., Bach, Handel, Vivaldi)
-- **Classical** (1750-1820): Balanced forms, clarity (e.g., Mozart, Haydn, Beethoven early works)
-- **Romantic** (1820-1900): Emotional expression, expanded orchestras (e.g., Chopin, Wagner, Tchaikovsky)
-- **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
+### Klasik Müzik Dönemleri
+- **Orta Çağ** (500-1400): Gregoriyen ilahiler, erken çok seslilik
+- **Rönesans** (1400-1600): Vokal polifoni, madrigaller (örn. Palestrina, Josquin des Prez)
+- **Barok** (1600-1750): Süslü melodiler, basso continuo (örn. Bach, Handel, Vivaldi)
+- **Klasik** (1750-1820): Dengeli biçimler ve açıklık (örn. Mozart, Haydn, Beethoven'ın erken dönem eserleri)
+- **Romantik** (1820-1900): Duygusal ifade ve genişleyen orkestralar (örn. Chopin, Wagner, Tchaikovsky)
+- **20. Yüzyıl/Çağdaş**: Atonalite, minimalizm ve deneysel yaklaşım (örn. Stravinsky, Schoenberg, Philip Glass)
 
-### Music Genres
-- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
-- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
-- **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
-- **Hip Hop/Rap**: Rhythmic speech, beats, DJ Kültür (e.g., Tupac, Kendrick Lamar, Jay-Z)
-- **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
-- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
-- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
-- **Classical Crossover**: Fusion içinde classical ve popular styles
+### Müzik Türleri
+- **Jazz**: Doğaçlama, swing ritmi ve blues etkisi (örn. Louis Armstrong, Miles Davis, John Coltrane)
+- **Blues**: 12 ölçülük yapı ve etkileyici vokaller (örn. B.B. King, Muddy Waters)
+- **Rock**: Elektrikli gitarlar ve güçlü ritimler (örn. Beatles, Led Zeppelin, Nirvana)
+- **Hip Hop/Rap**: Ritmik konuşma, beat'ler ve DJ kültürü (örn. Tupac, Kendrick Lamar, Jay-Z)
+- **Elektronik**: Sentezleyiciler ve dijital prodüksiyon (örn. Kraftwerk, Daft Punk, Aphex Twin)
+- **Country**: Halk gelenekleri ve hikâye anlatımı (örn. Johnny Cash, Dolly Parton)
+- **R&B/Soul**: Duygusal vokaller ve groove (örn. Aretha Franklin, Stevie Wonder, Beyoncé)
+- **Klasik Crossover**: Klasik ve popüler tarzların birleşimi
 
-### Music Theory Temeller
-- **Notes ve Scales**: Major, minor, chromatic, pentatonic, modes
-- **Chords ve Harmony**: Triads, seventh chords, chord progressions
-- **Rhythm ve Meter**: Time signatures, tempo, syncopation
-- **Melody ve Counterpoint**: Thematic Geliştirme, voice leading
-- **Form ve Structure**: Sonata form, symphony movements, verse-chorus structure
+### Müzik Teorisinin Temelleri
+- **Notalar ve Gamlar**: Majör, minör, kromatik, pentatonik, modlar
+- **Akorlar ve Armoni**: Üç sesli akorlar, yedili akorlar, akor ilerlemeleri
+- **Ritim ve Ölçü**: Ölçü işaretleri, tempo, senkop
+- **Melodi ve Kontrpuan**: Tematik gelişim, ses yönlendirme
+- **Biçim ve Yapı**: Sonat formu, senfoni bölümleri, kıta-nakarat yapısı
 
-## Theater ve Performans
+## Tiyatro ve Performans
 
-### Theater Types
-- **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
-- **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
-- **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "bu Phantom içinde bu Opera")
-- **Experimental/Avant-Garde**: Non-traditional forms, audience participation
+### Tiyatro Türleri
+- **Trajedi**: Ciddi temalar ve başkahramanın düşüşü (örn. Yunan tragedyaları, Shakespeare'in "Hamlet" eseri)
+- **Komedi**: Mizahi durumlar ve mutlu sonlar (örn. Shakespeare komedileri, Oscar Wilde)
+- **Drama**: İnsan çatışmasını inceleyen ciddi anlatılar
+- **Müzikal Tiyatro**: Şarkıların, dansın ve diyalogların bütünleştiği tiyatro (örn. "Hamilton", "Les Misérables", "The Phantom of the Opera")
+- **Deneysel/Avangart**: Geleneksel olmayan biçimler ve seyirci katılımı
 
-### Famous Playwrights
-- William Shakespeare (İngilizce, 1564-1616): "Hamlet", "Macbeth", "Romeo ve Juliet"
-- Anton Chekhov (Russian, 1860-1904): "bu Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "bu Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death içinde a Salesman", "bu Crucible"
-- Samuel Beckett (Irish, 1906-1989): "Waiting için Godot", "Endgame"
-- August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
+### Ünlü Oyun Yazarları
+- William Shakespeare (İngiliz, 1564-1616): "Hamlet", "Macbeth", "Romeo and Juliet"
+- Anton Chekhov (Rus, 1860-1904): "The Cherry Orchard", "Three Sisters"
+- Tennessee Williams (Amerikalı, 1911-1983): "A Streetcar Named Desire", "The Glass Menagerie"
+- Arthur Miller (Amerikalı, 1915-2005): "Death of a Salesman", "The Crucible"
+- Samuel Beckett (İrlandalı, 1906-1989): "Waiting for Godot", "Endgame"
+- August Wilson (Amerikalı, 1945-2005): Pittsburgh Cycle, "Fences"
 
-## Film ve Cinema
+## Film ve Sinema
 
-### Film Genres
-- **Drama**: Character-driven narratives, emotional depth
-- **Action**: Physical feats, chases, fights, explosions
-- **Comedy**: Humor, satire, parody
-- **Horror**: Fear, suspense, supernatural elements
-- **Documentary**: Non-fiction, real Olaylar, educational
-- **Animation**: Hand-drawn, CGI, stop-motion
-- **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
-- **Bilim Fiction**: Futuristic Teknoloji, space, time travel
+### Film Türleri
+- **Drama**: Karakter merkezli anlatılar ve duygusal derinlik
+- **Aksiyon**: Fiziksel gösteriler, kovalamacalar, dövüşler ve patlamalar
+- **Komedi**: Mizah, hiciv ve parodi
+- **Korku**: Korku, gerilim ve doğaüstü unsurlar
+- **Belgesel**: Kurgu dışı, gerçek olaylara dayalı ve eğitici
+- **Animasyon**: Elle çizim, CGI, stop-motion
+- **Film Noir**: Karanlık temalar, ahlaki belirsizlik ve görsel üslup (1940'lar-1950'ler)
+- **Bilim Kurgu**: Geleceğin teknolojisi, uzay ve zaman yolculuğu
 
-### Film Movements
-- **German Expressionism** (1920s): Distorted visuals, psychological themes ("bu Cabinet içinde Dr. Caligari")
-- **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
-- **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
-- **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
+### Film Akımları
+- **Alman Dışavurumculuğu** (1920'ler): Çarpıtılmış görseller ve psikolojik temalar ("The Cabinet of Dr. Caligari")
+- **İtalyan Yeni Gerçekçiliği** (1940'lar-1950'ler): İşçi sınıfı öyküleri ve gerçek mekân çekimleri ("Bicycle Thieves")
+- **Fransız Yeni Dalgası** (1950'ler-1960'lar): Yenilikçi kurgu ve auteur kuramı (Godard, Truffaut)
+- **New Hollywood** (1960'lar-1980'ler): Yönetmen odaklı, olgun temalı sinema (Scorsese, Coppola, Spielberg)
+- **Dogme 95** (1990'lar): Minimalist kurallar ve doğal ışık (von Trier, Vinterberg)
 
-### Filmmaking Roles
-- **Director**: Creative vision, actor direction, overall control
-- **Cinematographer/Director içinde Photography**: Camera work, lighting, visual style
-- **Screenwriter**: Script writing, dialogue, story structure
-- **Editor**: Footage assembly, pacing, narrative flow
-- **Production Designer**: Sets, locations, visual environment
-- **Composer**: Original music score
+### Film Yapımındaki Roller
+- **Yönetmen**: Yaratıcı vizyon, oyuncu yönetimi ve genel kontrol
+- **Görüntü Yönetmeni/Fotoğraf Direktörü**: Kamera çalışması, ışıklandırma ve görsel üslup
+- **Senarist**: Senaryo yazımı, diyalog ve öykü yapısı
+- **Kurgucu**: Görüntülerin birleştirilmesi, tempo ve anlatı akışı
+- **Yapım Tasarımcısı**: Dekorlar, mekânlar ve görsel çevre
+- **Besteci**: Özgün film müziği
 
-## Famous Authors ve Works
+## Ünlü Yazarlar ve Eserler
 
-### Classic Edebiyat
-- Homer: "bu Iliad", "bu Odyssey" (Ancient Greece)
-- Dante Alighieri: "bu Divine Comedy" (Italy, 1308-1320)
-- Miguel de Cervantes: "Don Quixote" (Spain, 1605)
-- Jane Austen: "Pride ve Prejudice", "Sense ve Sensibility" (England, 1810s)
-- Leo Tolstoy: "War ve Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime ve Punishment", "bu Brothers Karamazov" (Russia, 1860s-1880s)
-- Charles Dickens: "Great Expectations", "A Tale içinde Two Cities" (England, 1850s-1860s)
-- Mark Twain: "Adventures içinde Huckleberry Finn" (USA, 1884)
+### Klasik Edebiyat
+- Homeros: "The Iliad", "The Odyssey" (Antik Yunan)
+- Dante Alighieri: "The Divine Comedy" (İtalya, 1308-1320)
+- Miguel de Cervantes: "Don Quixote" (İspanya, 1605)
+- Jane Austen: "Pride and Prejudice", "Sense and Sensibility" (İngiltere, 1810'lar)
+- Leo Tolstoy: "War and Peace", "Anna Karenina" (Rusya, 1860'lar-1870'ler)
+- Fyodor Dostoevsky: "Crime and Punishment", "The Brothers Karamazov" (Rusya, 1860'lar-1880'ler)
+- Charles Dickens: "Great Expectations", "A Tale of Two Cities" (İngiltere, 1850'ler-1860'lar)
+- Mark Twain: "Adventures of Huckleberry Finn" (ABD, 1884)
 
 ### Modern Edebiyat
-- James Joyce: "Ulysses" (Ireland, 1922)
-- Virginia Woolf: "Mrs. Dalloway", "To bu Lighthouse" (England, 1920s)
-- Franz Kafka: "bu Metamorphosis", "bu Trial" (Czechoslovakia, 1910s-1920s)
-- Gabriel García Márquez: "One Hundred Years içinde Solitude" (Colombia, 1967)
-- Toni Morrison: "Beloved", "Song içinde Solomon" (USA, 1970s-1980s)
-- Haruki Murakami: "Norwegian Wood", "Kafka on bu Shore" (Japan, 1980s-present)
-- Chimamanda Ngozi Adichie: "Half içinde a Yellow Sun", "Americanah" (Nigeria, 2000s)
+- James Joyce: "Ulysses" (İrlanda, 1922)
+- Virginia Woolf: "Mrs. Dalloway", "To the Lighthouse" (İngiltere, 1920'ler)
+- Franz Kafka: "The Metamorphosis", "The Trial" (Çekoslovakya, 1910'lar-1920'ler)
+- Gabriel García Márquez: "One Hundred Years of Solitude" (Kolombiya, 1967)
+- Toni Morrison: "Beloved", "Song of Solomon" (ABD, 1970'ler-1980'ler)
+- Haruki Murakami: "Norwegian Wood", "Kafka on the Shore" (Japonya, 1980'ler-günümüz)
+- Chimamanda Ngozi Adichie: "Half of a Yellow Sun", "Americanah" (Nijerya, 2000'ler)
 
-## Literary Devices ve Techniques
+## Edebi Söz Sanatları ve Teknikler
 
-### Figurative Dil
-- **Metaphor**: Direct comparison without "like" or "as"
-- **Simile**: Comparison using "like" or "as"
-- **Personification**: Giving human qualities to non-human things
-- **Hyperbole**: Deliberate exaggeration
-- **Irony**: Contrast between expectation ve reality (verbal, situational, dramatic)
-- **Symbolism**: Objects representing abstract ideas
-- **Imagery**: Descriptive Dil appealing to senses
+### Mecazlı Dil
+- **Metafor**: "Gibi" veya "kadar" kullanmadan yapılan doğrudan benzetme
+- **Benzetme**: "Gibi" veya "kadar" kullanılarak yapılan karşılaştırma
+- **Kişileştirme**: İnsan dışı varlıklara insani özellikler verme
+- **Abartma**: Bilinçli ve belirgin ölçüde büyütme
+- **İroni**: Beklenti ile gerçeklik arasındaki karşıtlık (sözel, durumsal, dramatik)
+- **Sembolizm**: Nesnelerin soyut fikirleri temsil etmesi
+- **İmgeleme**: Duyulara seslenen betimleyici dil
 
-### Narrative Techniques
-- **Point içinde View**: First person, second person, third person (limited, omniscient)
-- **Stream içinde Consciousness**: Continuous flow içinde thoughts
-- **Unreliable Narrator**: Narrator whose credibility is compromised
-- **Non-linear Narrative**: Olaylar presented out içinde chronological order
-- **Foreshadowing**: Hints about Gelecek Olaylar
-- **Flashback**: Scenes from earlier içinde bu story
+### Anlatı Teknikleri
+- **Bakış Açısı**: Birinci kişi, ikinci kişi, üçüncü kişi (sınırlı, her şeyi bilen)
+- **Bilinç Akışı**: Düşüncelerin kesintisiz akışı
+- **Güvenilmez Anlatıcı**: Güvenilirliği zedelenmiş anlatıcı
+- **Doğrusal Olmayan Anlatı**: Olayların kronolojik sıra dışında sunulması
+- **Önceden Sezdirme**: Gelecekteki olaylara dair ipuçları
+- **Geriye Dönüş**: Öykünün daha erken zamanlarından sahneler
 
-### Structural Elements
-- **Plot**: Exposition, rising action, climax, falling action, resolution
-- **Character Geliştirme**: Protagonist, antagonist, dynamic/static characters
-- **Setting**: Time, place, social context
-- **Theme**: Central message or underlying meaning
-- **Tone**: Author's attitude toward subject
-- **Mood**: Emotional atmosphere created için reader
+### Yapısal Unsurlar
+- **Olay Örgüsü**: Giriş, yükselen eylem, doruk noktası, düşen eylem, çözüm
+- **Karakter Gelişimi**: Başkahraman, karşıt karakter, dinamik/durağan karakterler
+- **Mekân ve Zaman**: Zaman, yer ve toplumsal bağlam
+- **Tema**: Merkezî mesaj veya altta yatan anlam
+- **Ton**: Yazarın konuya yönelik tutumu
+- **Duygu Atmosferi**: Okur için yaratılan duygusal ortam
 
-## Cultural Institutions
+## Kültürel Kurumlar
 
-### Museums ve Galleries
-- Louvre (Paris): World's largest art museum
-- Metropolitan Museum içinde Art (New York): Comprehensive collections
-- British Museum (London): Human Tarih ve Kültür
-- Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
-- Uffizi Gallery (Florence): Italian Renaissance masterpieces
-- Hermitage Museum (St. Petersburg): One içinde oldest ve largest museums
-- Museum içinde Modern Art - MoMA (New York): Modern ve contemporary art
+### Müzeler ve Galeriler
+- Louvre (Paris): Dünyanın en büyük sanat müzesi
+- Metropolitan Museum of Art (New York): Kapsamlı koleksiyonlar
+- British Museum (Londra): İnsanlık tarihi ve kültürü
+- Vatican Museums (Vatikan): Rönesans sanatı, Sistine Chapel
+- Uffizi Gallery (Floransa): İtalyan Rönesansı başyapıtları
+- Hermitage Museum (St. Petersburg): En eski ve en büyük müzelerden biri
+- Museum of Modern Art - MoMA (New York): Modern ve çağdaş sanat
 
-### Literary Awards
-- Nobel Prize içinde Edebiyat: International recognition
-- Pulitzer Prize (USA): Fiction, drama, Tarih, poetry
-- Booker Prize (UK/Commonwealth): Best original novel
-- Hugo Award: Bilim fiction ve fantasy
-- National Book Award (USA): American Edebiyat
-- Man Booker International Prize: Translated fiction
+### Edebiyat Ödülleri
+- Nobel Prize in Literature: Uluslararası tanınırlık
+- Pulitzer Prize (ABD): Kurgu, drama, tarih ve şiir
+- Booker Prize (Birleşik Krallık/Commonwealth): En iyi özgün roman
+- Hugo Award: Bilim kurgu ve fantastik
+- National Book Award (ABD): Amerikan edebiyatı
+- Man Booker International Prize: Çeviri kurgu
 
-## Key Concepts içinde Art Criticism
+## Sanat Eleştirisinde Temel Kavramlar
 
-### Analysis Frameworks
-- **Formalism**: Focus on visual elements (line, color, composition)
-- **Iconography**: Symbolic meanings ve cultural references
-- **Contextual Analysis**: Historical, social, political context
-- **Feminist Criticism**: Gender representation, women artists
-- **Postcolonial Criticism**: Colonial legacy, cultural identity
-- **Psychoanalytic Criticism**: Unconscious motivations, symbolism
+### Analiz Çerçeveleri
+- **Biçimcilik**: Görsel unsurlara odaklanma (çizgi, renk, kompozisyon)
+- **İkonografi**: Sembolik anlamlar ve kültürel göndermeler
+- **Bağlamsal Analiz**: Tarihsel, toplumsal ve siyasi bağlam
+- **Feminist Eleştiri**: Toplumsal cinsiyet temsili, kadın sanatçılar
+- **Postkolonyal Eleştiri**: Sömürgecilik mirası, kültürel kimlik
+- **Psikanalitik Eleştiri**: Bilinçdışı güdüler, sembolizm
 
-### Aesthetic Principles
-- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
-- **Contrast**: Differences içinde elements (light/dark, large/small)
-- **Emphasis**: Focal points, areas içinde interest
-- **Movement**: Visual flow guiding viewer's eye
-- **Pattern**: Repetition içinde elements
-- **Proportion**: Size relationships between parts
-- **Unity**: Coherence ve harmony içinde whole composition
+### Estetik İlkeler
+- **Denge**: Görsel ağırlığın dağılımı (simetrik, asimetrik)
+- **Kontrast**: Unsurlar arasındaki farklılıklar (açık/koyu, büyük/küçük)
+- **Vurgu**: Odak noktaları, ilgi alanları
+- **Hareket**: İzleyicinin gözünü yönlendiren görsel akış
+- **Örüntü**: Unsurların tekrarı
+- **Oran**: Parçalar arasındaki boyut ilişkileri
+- **Birlik**: Tüm kompozisyonun tutarlılığı ve uyumu

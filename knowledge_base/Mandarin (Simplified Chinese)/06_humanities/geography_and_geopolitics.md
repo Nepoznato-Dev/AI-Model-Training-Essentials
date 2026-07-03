@@ -1,218 +1,211 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: geography_and_geopolitics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 地理与地缘政治
 
-# 地理 和 地缘政治
+## 自然地理
 
-## Physical 地理
+### 大洲与主要区域
+- **非洲**：54 个国家，气候多样，从撒哈拉沙漠到热带雨林，尼罗河（最长河流）
+- **南极洲**：最南端大陆，冰雪覆盖，设有科研站，无永久居民
+- **亚洲**：最大的大洲，包括中东、中亚、东亚、南亚、东南亚
+- **欧洲**：欧亚大陆西部半岛，文化多样，拥有欧盟这一政治集团
+- **北美洲**：加拿大、美国、墨西哥、中美洲地峡、加勒比海诸岛
+- **大洋洲**：澳大利亚、新西兰、太平洋岛国（美拉尼西亚、密克罗尼西亚、波利尼西亚）
+- **南美洲**：安第斯山脉、亚马孙雨林、12 个主权国家
 
-### Continents 和 Major Regions
-- **Africa**: 54 countries, diverse climates from Sahara Desert to tropical rainforests, Nile River (longest river)
-- **Antarctica**: Southernmost continent, ice-covered, research stations, no permanent residents
-- **Asia**: Largest continent, includes Middle East, Central Asia, East Asia, South Asia, Southeast Asia
-- **Europe**: Western peninsula 的 Eurasia, diverse cultures, European Union political bloc
-- **North America**: Canada, United States, Mexico, Central American isthmus, Caribbean islands
-- **Oceania**: Australia, New Zealand, Pacific island nations (Melanesia, Micronesia, Polynesia)
-- **South America**: Andes Mountains, Amazon Rainforest, 12 sovereign nations
+### 主要山脉
+- **喜马拉雅山脉**：位于亚洲，拥有包括珠穆朗玛峰（8,849 米）在内的最高峰，由印度板块与欧亚板块碰撞形成
+- **安第斯山脉**：位于南美洲，是最长的大陆山脉（约 7,000 公里），火山活动活跃
+- **落基山脉**：位于北美洲，从加拿大延伸到新墨西哥州
+- **阿尔卑斯山脉**：位于欧洲，中欧重要山系，也是主要旅游和滑雪目的地
+- **阿特拉斯山脉**：位于北非，从摩洛哥延伸到突尼斯，将地中海地区与撒哈拉分隔开来
+- **乌拉尔山脉**：位于俄罗斯，传统上被视为欧亚分界线
 
-### Major Mountain Ranges
-- **Himalayas**: Asia, highest peaks including Mount Everest (8,849m), formed by Indian-Eurasian plate collision
-- **Andes**: South America, longest continental mountain range (~7,000km), volcanic activity
-- **Rocky Mountains**: North America, extends from Canada to New Mexico
-- **Alps**: Europe, central European range, major tourism 和 skiing destination
-- **Atlas Mountains**: North Africa, Morocco to Tunisia, separates Mediterranean from Sahara
-- **Ural Mountains**: Russia, traditional boundary between Europe 和 Asia
+### 主要河流
+- **尼罗河**：位于东北非，约 6,650 公里，流经 11 个国家并注入地中海
+- **亚马孙河**：位于南美洲，流量全球最大，亚马孙流域生物多样性极高
+- **长江**：中国境内，亚洲最长河流，拥有三峡大坝
+- **密西西比—密苏里河系**：位于北美洲，是美国的重要排水系统
+- **恒河**：流经印度/孟加拉国，神圣河流，流域人口稠密
+- **多瑙河**：位于欧洲，流经 10 个国家，是重要贸易航线
 
-### Major Rivers
-- **Nile**: Northeast Africa, ~6,650km, flows through 11 countries to Mediterranean
-- **Amazon**: South America, largest by discharge volume, Amazon Basin biodiversity
-- **Yangtze**: China, longest 在 Asia, Three Gorges Dam
-- **Mississippi-Missouri**: North America, major drainage system 的 United States
-- **Ganges**: India/Bangladesh, sacred river, densely populated basin
-- **Danube**: Europe, flows through 10 countries, important trade route
+### 沙漠
+- **撒哈拉**：位于北非，最大的热带沙漠（约 920 万平方公里）
+- **阿拉伯沙漠**：位于中东，覆盖阿拉伯半岛大部分地区
+- **戈壁沙漠**：位于东亚，中国/蒙古之间，属于寒冷沙漠
+- **喀拉哈里沙漠**：位于南部非洲，半干旱稀树草原地区
+- **南极沙漠**：整体上面积最大的沙漠（寒冷沙漠）
+- **阿塔卡马沙漠**：位于南美洲，是最干燥的非极地沙漠
 
-### Deserts
-- **Sahara**: North Africa, largest hot desert (~9.2 million km²)
-- **Arabian Desert**: Middle East, covers most 的 Arabian Peninsula
-- **Gobi**: East Asia, China/Mongolia, cold desert
-- **Kalahari**: Southern Africa, semi-arid savanna
-- **Antarctic Desert**: Largest desert overall (cold desert)
-- **Atacama**: South America, driest non-polar desert
+### 气候带
+- **热带**：接近赤道，全年温暖、降雨丰富（雨林、季风）
+- **干旱/亚热带**：夏季炎热、冬季温和、降水少（沙漠）
+- **温带**：气温适中、四季分明（地中海型、海洋性、湿润大陆性）
+- **大陆性**：温差大、冬季寒冷（大陆内部地区）
+- **极地**：极度寒冷、冰盖、冻原（北极、南极）
+- **高地**：随海拔而变化，高海拔地区更凉爽
 
-### Climate Zones
-- **Tropical**: Near equator, warm year-round, high rainfall (rainforests, monsoons)
-- **Arid/Subtropical**: Hot summers, mild winters, low precipitation (deserts)
-- **Temperate**: Moderate temperatures, distinct seasons (Mediterranean, oceanic, humid continental)
-- **Continental**: Large temperature variations, cold winters (interior continents)
-- **Polar**: Extremely cold, ice caps, tundra (Arctic, Antarctic)
-- **Highland**: Varies 与 elevation, cooler at altitude
+## 人文地理
 
-## Human 地理
+### 人口分布
+- **人口最多的国家**（2024）：印度（约 14.3 亿）、中国（约 14.2 亿）、美国（约 3.4 亿）、印度尼西亚（约 2.8 亿）、巴基斯坦（约 2.4 亿）
+- **人口密度**：摩纳哥（最高）、澳门、新加坡、香港、巴林
+- **城市化**：全球超过 55% 的人口居住在城市，到 2050 年预计将达到 68%
+- **超大城市**（1000 万以上）：东京、德里、上海、圣保罗、墨西哥城、开罗、孟买、北京、达卡、大阪
 
-### Population Distribution
-- **Most Populous Countries** (2024): India (~1.43B), China (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
-- **Population Density**: Monaco (highest), Macau, Singapore, Hong Kong, Bahrain
-- **Urbanization**: Over 55% global population lives 在 cities, projected 68% by 2050
-- **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijing, Dhaka, Osaka
+### 语言
+- **使用人数最多**（母语 + 第二语言）：英语（约 15 亿）、普通话（约 11 亿）、印地语（约 6 亿）、西班牙语（约 5.5 亿）、法语（约 3 亿）、阿拉伯语（约 2.75 亿）
+- **语系**：印欧语系、汉藏语系、亚非语系、南岛语系、尼日尔—刚果语系
+- **濒危语言**：联合国教科文组织估计，约 40% 的语言面临消亡风险
 
-### Languages
-- **Most Spoken** (native + second 语言): 英语 (~1.5B), Mandarin Chinese (~1.1B), Hindi (~600M), Spanish (~550M), French (~300M), Arabic (~275M)
-- **语言 Families**: Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian, Niger-Congo
-- **Endangered Languages**: UNESCO estimates 40% 的 languages at risk 的 extinction
+### 经济地理
+- **GDP 领先国家**：美国、中国、日本、德国、印度、英国、法国、意大利、巴西、加拿大
+- **贸易集团**：EU（欧盟）、USMCA（美国-墨西哥-加拿大协定）、ASEAN（东南亚国家联盟）、Mercosur（南美南方共同市场）、非洲大陆自由贸易区
+- **资源分布**：石油（中东、俄罗斯、美国）、天然气（俄罗斯、伊朗、卡塔尔）、稀土元素（中国占主导）、锂（澳大利亚、智利、阿根廷）
 
-### Economic 地理
-- **GDP Leaders**: USA, China, Japan, Germany, India, UK, France, Italy, Brazil, Canada
-- **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), African Continental Free Trade Area
-- **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (China dominant), Lithium (Australia, Chile, Argentina)
+## 政治地理
 
-## Political 地理
+### 政府类型
+- **民主制**：人民通过投票掌握权力（代议制、直接民主）
+- **共和国**：没有君主制的国家，由选举产生代表
+- **君主制**：由国王/女王统治（立宪君主制、专制君主制）
+- **威权体制**：政治自由有限，权力高度集中
+- **极权体制**：国家全面控制公共与私人生活
+- **联邦制**：国家与地区政府之间分权
+- **单一制**：中央政府集权，地方权力从属
 
-### Types 的 Governments
-- **Democracy**: Power held by people through voting (representative, direct)
-- **Republic**: State without monarchy, representatives elected
-- **Monarchy**: Ruled by king/queen (constitutional, absolute)
-- **Authoritarian**: Limited political freedom, centralized power
-- **Totalitarian**: 完整 state control over public 和 private life
-- **Federal**: Power divided between national 和 regional governments
-- **Unitary**: Centralized government, regional authorities subordinate
+### 国际组织
+- **联合国（UN）**：193 个成员国，负责维和、人道援助和国际法事务
+- **NATO**：北大西洋公约组织，军事同盟（截至 2024 年有 32 个成员）
+- **欧洲联盟（EU）**：27 个成员国，经济和政治联盟，使用欧元的有 20 国
+- **世界贸易组织（WTO）**：规范国际贸易
+- **世界卫生组织（WHO）**：全球公共卫生协调
+- **国际货币基金组织（IMF）**：维护金融稳定，向各国提供贷款
+- **世界银行**：发展融资、减贫
+- **G7/G20**：经济合作论坛
 
-### International Organizations
-- **United Nations (UN)**: 193 member states, peacekeeping, humanitarian aid, international 法律
-- **NATO**: North Atlantic Treaty Organization, military alliance (32 members as 的 2024)
-- **European Union (EU)**: 27 member states, economic 和 political union, euro currency (20 members)
-- **World Trade Organization (WTO)**: Regulates international trade
-- **World Health Organization (WHO)**: Global public health coordination
-- **International Monetary Fund (IMF)**: Financial stability, loans to countries
-- **World Bank**: 开发 financing, poverty reduction
-- **G7/G20**: Economic cooperation forums
+### 地缘政治概念
+- **主权**：在一国领土内的最高权威
+- **边界**：政治边界（自然边界、人为边界、争议边界）
+- **专属经济区（EEZ）**：距海岸 200 海里，享有资源权利
+- **领海**：自基线起 12 海里，享有完全主权
+- **飞地（Enclave）**：被另一国家领土完全包围的地区（例如莱索托、梵蒂冈城）
+- **外飞地（Exclave）**：与本国主体领土分离的部分（例如加里宁格勒、阿拉斯加）
+- **缓冲国**：位于敌对强权之间的国家（历史例子：阿富汗、蒙古）
+- **心脏地带理论（Heartland Theory）**：控制东欧就能控制心脏地带，进而控制世界岛（欧亚非大陆）
+- **边缘地带理论（Rimland Theory）**：沿海地区比内陆更重要
 
-### Geopolitical Concepts
-- **Sovereignty**: Supreme authority within territory
-- **Borders**: Political boundaries (natural, artificial, disputed)
-- **Exclusive Economic Zone (EEZ)**: 200 nautical miles from coast, resource rights
-- **Territorial Waters**: 12 nautical miles from baseline, full sovereignty
-- **Enclave**: Territory surrounded by another state (e.g., Lesotho, Vatican City)
-- **Exclave**: Part 的 country separated from main territory (e.g., Kaliningrad, Alaska)
-- **Buffer State**: Country between rival powers (historical: Afghanistan, Mongolia)
-- **Heartland Theory**: Control 的 Eastern Europe controls Heartland, controls World Island (Eurasia-Africa)
-- **Rimland Theory**: Coastal regions more important than interior
+## 区域研究
 
-## Regional Studies
+### 中东和北非（MENA）
+- **关键议题**：石油资源、水资源短缺、宗教冲突（逊尼派—什叶派）、阿以冲突
+- **主要强国**：沙特阿拉伯、伊朗、土耳其、以色列、埃及、阿联酋
+- **冲突**：叙利亚内战、也门战争、巴以冲突、库尔德独立运动
+- **资源**：约占全球已探明石油储量的 48%，并拥有天然气资源
 
-### Middle East 和 North Africa (MENA)
-- **Key Issues**: Oil resources, water scarcity, religious conflicts (Sunni-Shia), Arab-Israeli conflict
-- **Major Powers**: Saudi Arabia, Iran, Turkey, Israel, Egypt, UAE
-- **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestinian conflict, Kurdish independence movements
-- **Resources**: ~48% 的 world's proven oil reserves, natural gas
+### 亚太地区
+- **东亚**：中国（崛起中的超级大国）、日本（经济强国）、韩国（科技领先）、朝鲜（核紧张局势）
+- **南亚**：印度（人口大国）、巴基斯坦（核国家）、孟加拉国（快速增长）
+- **东南亚**：东盟合作、南海争端、经济增长
+- **关键紧张点**：台湾海峡、朝鲜半岛、中印边界、南海
 
-### Asia-Pacific
-- **East Asia**: China (rising superpower), Japan (economic powerhouse), South Korea (技术 leader), North Korea (nuclear tensions)
-- **South Asia**: India (demographic giant), Pakistan (nuclear state), Bangladesh (rapid growth)
-- **Southeast Asia**: ASEAN cooperation, South China Sea disputes, economic growth
-- **Key Tensions**: Taiwan Strait, Korean Peninsula, India-China border, South China Sea
+### 欧洲
+- **欧洲一体化**：欧盟扩张、Brexit（英国于 2020 年退出）、欧元区挑战
+- **俄乌冲突**：2022 年入侵、NATO 扩张、能源依赖
+- **巴尔干地区**：前南斯拉夫国家、加入欧盟进程
+- **高加索地区**：亚美尼亚—阿塞拜疆冲突、俄罗斯影响力
 
-### Europe
-- **European Integration**: EU expansion, Brexit (UK left 2020), eurozone challenges
-- **Russia-Ukraine Conflict**: 2022 invasion, NATO expansion, energy dependence
-- **Balkan Region**: Post-Yugoslav states, EU accession processes
-- **Caucasus**: Armenia-Azerbaijan conflicts, Russian influence
+### 美洲
+- **北美**：美国—加拿大—墨西哥关系、移民、贸易（USMCA）
+- **拉丁美洲**：不平等、毒品贩运、民粹主义运动、委内瑞拉危机
+- **加勒比地区**：依赖旅游业的经济体、气候脆弱性、古巴禁运
 
-### Americas
-- **North America**: US-Canada-Mexico relations, immigration, trade (USMCA)
-- **Latin America**: Inequality, drug trafficking, populist movements, Venezuela crisis
-- **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
+### 非洲
+- **殖民遗产**：人为边界、族群分裂、语言政策
+- **发展挑战**：贫困、基础设施、治理、债务
+- **崛起中的强国**：尼日利亚（最大经济体）、南非（工业化程度高）、埃塞俄比亚（增长迅速）
+- **区域问题**：萨赫勒地区不稳定、非洲之角冲突、大湖区问题
 
-### Africa
-- **Colonial Legacy**: Artificial borders, ethnic divisions, 语言 policies
-- **开发 Challenges**: Poverty, infrastructure, governance, debt
-- **Rising Powers**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
-- **Regional Issues**: Sahel instability, Horn 的 Africa conflicts, Great Lakes region
+## 当代地缘政治议题
 
-## Contemporary Geopolitical Issues
+### 气候变化与地理
+- **海平面上升**：威胁岛国（马尔代夫、图瓦卢）和沿海城市
+- **北极融化**：带来新的航运路线、资源获取机会和领土主张
+- **气候移民**：由干旱、洪水和极端天气引发的迁移
+- **水资源冲突**：尼罗河大坝争端（埃塞俄比亚—埃及—苏丹）、印度河水条约（印度—巴基斯坦）
 
-### Climate Change 和 地理
-- **Rising Sea Levels**: Threatens island nations (Maldives, Tuvalu), coastal cities
-- **Arctic Melting**: New shipping routes, resource access, territorial claims
-- **Climate Migration**: Displacement from drought, flooding, extreme weather
-- **Water Conflicts**: Nile Dam dispute (Ethiopia-Egypt-Sudan), Indus Waters Treaty (India-Pakistan)
+### 资源地缘政治
+- **能源转型**：从化石燃料转向关键矿产（锂、钴、稀土）
+- **粮食安全**：农业用地、水资源获取、供应链
+- **稀土元素**：中国控制约 80% 的加工能力，对电子产品和绿色技术至关重要
+- **半导体供应链**：台湾生产约 60% 的全球芯片，是地缘政治热点
 
-### Resource 地缘政治
-- **Energy Transition**: Shift from fossil fuels, critical minerals (lithium, cobalt, rare earths)
-- **食物 安全**: Agricultural land, water access, supply chains
-- **Rare Earth Elements**: China controls ~80% 的 processing, essential 为 electronics 和 green tech
-- **Semiconductor Supply Chains**: Taiwan produces ~60% 的 world's chips, geopolitical flashpoint
+### 领土争端
+- **南海**：中国的九段线主张与菲律宾、越南、马来西亚、文莱、台湾之间的争议
+- **克什米尔**：印度、巴基斯坦、中国之间的竞争性主张
+- **西撒哈拉**：摩洛哥与波利萨里奥阵线之间的争议
+- **克里米亚**：俄罗斯于 2014 年吞并，国际上普遍承认为乌克兰领土
+- **台湾**：中国声称拥有主权，但其以独立政治实体方式运作
+- **库尔德人**：分布于土耳其、叙利亚、伊拉克、伊朗的无国家民族
 
-### Territorial Disputes
-- **South China Sea**: China's nine-dash line vs. Philippines, Vietnam, Malaysia, Brunei, Taiwan
-- **Kashmir**: India-Pakistan-China competing claims
-- **Western Sahara**: Morocco vs. Polisario Front
-- **Crimea**: Russia annexed 2014, internationally recognized as Ukrainian
-- **Taiwan**: China claims sovereignty, operates as independent state
-- **Kurds**: Stateless nation across Turkey, Syria, Iraq, Iran
+### 迁徙与边界
+- **难民危机**：叙利亚、阿富汗、委内瑞拉、乌克兰、苏丹
+- **边境墙**：美国—墨西哥、匈牙利—塞尔维亚、印度—孟加拉国、希腊—土耳其
+- **迁移路线**：中地中海、东地中海、美国西南边境、巴尔干路线
+- **人才流失**：技术人才从发展中国家迁往发达国家
 
-### Migration 和 Borders
-- **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
-- **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
-- **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
-- **Brain Drain**: Skilled workers emigrating from developing to developed nations
+## 战略概念
 
-## Strategic Concepts
+### 权力投射
+- **硬实力**：军事力量、经济制裁、胁迫
+- **软实力**：文化影响力、外交、价值观吸引力
+- **巧实力**：硬实力与软实力策略的结合
+- **海权**：控制海上通道和咽喉要道（霍尔木兹、马六甲、苏伊士、巴拿马）
+- **空中力量**：战略轰炸、制空权、无人机作战
+- **网络力量**：数字战争、信息行动、基础设施攻击
 
-### Power Projection
-- **Hard Power**: Military force, economic sanctions, coercion
-- **Soft Power**: Cultural influence, diplomacy, values attraction
-- **Smart Power**: Combination 的 hard 和 soft power strategies
-- **Naval Power**: Control 的 sea lanes, chokepoints (Strait 的 Hormuz, Malacca, Suez, Panama)
-- **Air Power**: Strategic bombing, air superiority, drone warfare
-- **Cyber Power**: Digital warfare, information operations, infrastructure attacks
+### 势力范围
+- **门罗主义**：美国反对欧洲在美洲殖民（1823）
+- **俄罗斯“近邻地区”**：前苏联国家被视为俄罗斯势力范围
+- **中国“一带一路”**：通过基础设施投资形成经济影响力
+- **美国霸权**：二战后的全球领导角色
 
-### Spheres 的 Influence
-- **Monroe Doctrine**: US opposition to European colonization 在 Americas (1823)
-- **Russian Near Abroad**: Former Soviet states considered Russian sphere
-- **Chinese Belt 和 Road**: Infrastructure investments creating economic influence
-- **American Hegemony**: Post-WWII global leadership role
+### 力量平衡
+- **单极**：单一主导强国（冷战后美国）
+- **两极**：两个竞争性强国（美苏冷战）
+- **多极**：多个大国并立（第一次世界大战前的欧洲、正在形成的新秩序）
+- **霸权稳定**：主导性强国提供全球公共产品
 
-### Balance 的 Power
-- **Unipolar**: Single dominant power (US post-Cold War)
-- **Bipolar**: Two competing powers (US-USSR Cold War)
-- **Multipolar**: Multiple great powers (pre-WWI Europe, emerging order)
-- **Hegemonic Stability**: Dominant power provides global public goods
+## 地理信息系统（GIS）
 
-## Geographic Information 系统 (GIS)
+### 制图技术
+- **GPS**：全球定位系统，卫星导航
+- **遥感**：卫星影像、航空摄影
+- **空间分析**：模式识别、邻近分析、网络分析
+- **制图学**：地图制作、投影、比例尺、符号系统
 
-### Mapping Technologies
-- **GPS**: Global Positioning System, satellite navigation
-- **Remote Sensing**: Satellite imagery, aerial photography
-- **Spatial Analysis**: Pattern recognition, proximity analysis, 网络 analysis
-- **Cartography**: Map-making, projections, scale, symbology
+### 应用
+- **城市规划**：土地利用、交通、分区
+- **环境监测**：森林砍伐、污染、气候变化
+- **灾害响应**：应急管理、疏散路线
+- **商业智能**：市场分析、选址、物流
+- **公共卫生**：疾病追踪、医疗可及性
 
-### Applications
-- **Urban Planning**: Land use, transportation, zoning
-- **环境 Monitoring**: Deforestation, pollution, climate change
-- **Disaster Response**: Emergency 管理, evacuation routes
-- **商业 Intelligence**: Market analysis, site selection, logistics
-- **Public Health**: Disease tracking, 医疗 access
+## 重要地缘政治理论家
 
-## Key Geopolitical Theorists
+- **Halford Mackinder**（1861-1947）：心脏地带理论，“Who rules East Europe commands the Heartland”
+- **Alfred Thayer Mahan**（1840-1914）：海权重要性、海军战略
+- **Nicholas Spykman**（1893-1943）：边缘地带理论，对遏制战略有影响
+- **Karl Haushofer**（1869-1946）：Geopolitik，德国地理学派
+- **Saul Bernard Cohen**（1921-2022）：地缘政治体系分析
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe 命令 这 Heartland"
-- **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
-- **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
-- **Karl Haushofer** (1869-1946): Geopolitik, German geographical school
-- **Saul Bernard Cohen** (1921-2022): Geopolitical 系统 analysis
+## 重要地理术语
 
-## Important Geographic Terms
-
-- **Chokepoint**: Narrow passage critical 为 trade/military movement
-- **Hinterland**: Area serving a port or city economically
-- **Irredentism**: Claiming territory based on historical/ethnic ties
-- **Nation-State**: Political unit where nation 和 state boundaries align
-- **Realpolitik**: Politics based on practical objectives rather than ideals
-- **Self-Determination**: Right 的 peoples to choose their sovereignty
-- **Shatterbelt**: Region caught between stronger external powers
-- **Stateless Nation**: Ethnic group without own state (Kurds, Palestinians, Tibetans)
-- **Supranational Organization**: Entity above national level (EU, UN)
-- **Terminal Moraine**: Geological feature marking glacier's furthest advance
+- **咽喉要道（Chokepoint）**：对贸易/军事行动至关重要的狭窄通道
+- **腹地（Hinterland）**：在经济上服务于港口或城市的区域
+- **领土收复主义（Irredentism）**：基于历史/族群联系主张领土
+- **民族国家（Nation-State）**：民族边界与国家边界相一致的政治单位
+- **现实政治（Realpolitik）**：基于实际目标而非理想的政治
+- **自决（Self-Determination）**：人民选择自身主权归属的权利
+- **破碎带（Shatterbelt）**：夹在更强大外部力量之间的地区
+- **无国家民族（Stateless Nation）**：没有自己国家的族群（库尔德人、巴勒斯坦人、藏人）
+- **超国家组织（Supranational Organization）**：高于国家层级的实体（EU、UN）
+- **终碛（Terminal Moraine）**：标示冰川推进最远位置的地质地貌

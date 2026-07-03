@@ -1,40 +1,33 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: database_systems.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Sistemas de Banco de Dados
 
-# Banco de dados Sistemas
+## Fundamentos de Banco de Dados
 
-## Banco de dados Fundamentos
+### O que é um Banco de Dados?
+Um banco de dados é uma coleção organizada de informações estruturadas armazenadas eletronicamente, projetada para a recuperação, inserção, atualização e exclusão eficientes de dados.
 
-### What is a Banco de dados?
-A Banco de dados is an organized collection de structured information stored electronically, designed para efficient retrieval, insertion, updating, e deletion de Dados.
+### Sistemas de Gerenciamento de Banco de Dados (DBMS)
+Software que interage com usuários finais, aplicações e com o próprio banco de dados para capturar e analisar dados. Exemplos: MySQL, PostgreSQL, Oracle, MongoDB.
 
-### Banco de dados Gerenciamento Sistemas (DBMS)
-Software that interacts com end users, applications, e o/a Banco de dados itself to capture e analyze Dados. Exemplos: MySQL, PostgreSQL, Oracle, MongoDB.
+### Conceitos-Chave
+- **Schema**: Estrutura/organização do banco de dados (tabelas, campos, relacionamentos)
+- **Instance**: Dados reais armazenados em um determinado momento
+- **ACID Properties**: Atomicidade, Consistência, Isolamento, Durabilidade
+- **CAP Theorem**: Consistência, Disponibilidade, Tolerância a Partições (escolha 2)
+- **Normalization**: Organização dos dados para reduzir redundância
+- **Denormalization**: Adição de redundância para melhorar o desempenho de leitura
 
-### Key Concepts
-- **Schema**: Structure/organization de Banco de dados (tables, fields, relationships)
-- **Instance**: Actual Dados stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing Dados to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read Desempenho
+## Bancos de Dados Relacionais (SQL)
 
-## Relational Databases (SQL)
+### Conceitos Fundamentais
+- **Tables**: Linhas (registros) e colunas (campos)
+- **Primary Key**: Identificador único para cada linha
+- **Foreign Key**: Referência à chave primária em outra tabela
+- **Indexes**: Estruturas de dados que melhoram a velocidade das consultas
+- **Views**: Tabelas virtuais baseadas em resultados de consultas
+- **Stored Procedures**: Blocos de código SQL pré-compilados
+- **Triggers**: Ações automáticas em alterações de dados
 
-### Core Concepts
-- **Tables**: Rows (records) e columns (fields)
-- **Primary Key**: Unique identifier para each row
-- **Foreign Key**: Referência to primary key em another table
-- **Indexes**: Dados structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on Dados changes
-
-### SQL Operations (CRUD)
+### Operações SQL (CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -51,222 +44,222 @@ DELETE FROM users WHERE id = 1;
 ```
 
 ### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product de both tables
-- **SELF JOIN**: Table joined com itself
+- **INNER JOIN**: Retorna linhas correspondentes de ambas as tabelas
+- **LEFT JOIN**: Todas as linhas da tabela da esquerda e correspondências da direita
+- **RIGHT JOIN**: Todas as linhas da tabela da direita e correspondências da esquerda
+- **FULL OUTER JOIN**: Todas as linhas de ambas as tabelas
+- **CROSS JOIN**: Produto cartesiano de ambas as tabelas
+- **SELF JOIN**: Tabela associada a ela mesma
 
-### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+### Formas Normais
+- **1NF**: Valores atômicos, sem grupos repetidos
+- **2NF**: 1NF + sem dependências parciais (todos os atributos não-chave dependem da chave primária inteira)
+- **3NF**: 2NF + sem dependências transitivas (atributos não-chave não dependem de outros atributos não-chave)
+- **BCNF**: 3NF mais forte, todo determinante é uma chave candidata
+- **4NF**: Sem dependências multivaloradas
+- **5NF**: Sem dependências de junção
 
-### Popular RDBMS
-- **PostgreSQL**: Avançado features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, Web applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### SGBDRs Populares
+- **PostgreSQL**: Recursos avançados, extensível, compatível com ACID
+- **MySQL**: Amplamente usado, leituras rápidas, aplicações web
+- **Oracle**: Recursos corporativos, escalabilidade, custo elevado
+- **SQL Server**: Ecossistema Microsoft, ferramentas integradas
+- **SQLite**: Embarcado, sem servidor, leve
+- **MariaDB**: Fork do MySQL, código aberto
 
-## NoSQL Databases
+## Bancos de Dados NoSQL
 
-### Types de NoSQL Databases
+### Tipos de Bancos de Dados NoSQL
 
-#### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Gerenciamento, catalogs, user profiles
-- **Exemplos**: MongoDB, CouchDB, DocumentDB
+#### Bancos de Documentos
+- **Structure**: Documentos semelhantes a JSON (BSON)
+- **Use Cases**: Gerenciamento de conteúdo, catálogos, perfis de usuários
+- **Examples**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
-- **Exemplos**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+#### Bancos Chave-Valor
+- **Structure**: Pares simples de chave-valor
+- **Use Cases**: Cache, sessões, carrinhos de compras
+- **Examples**: Redis, DynamoDB, Riak
+- **Characteristics**: Rápidos, simples, consultas limitadas
 
-#### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **Use Cases**: Big Dados, analytics, time-series
-- **Exemplos**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+#### Bancos Orientados a Famílias de Colunas
+- **Structure**: Colunas agrupadas em famílias
+- **Use Cases**: Big data, análises, séries temporais
+- **Examples**: Cassandra, HBase, ScyllaDB
+- **Characteristics**: Otimizados para escrita, distribuídos, escaláveis
 
-#### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
-- **Exemplos**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Idioma**: Cypher (Neo4j), Gremlin
+#### Bancos de Grafos
+- **Structure**: Nós, arestas, propriedades
+- **Use Cases**: Redes sociais, detecção de fraudes, recomendações
+- **Examples**: Neo4j, Amazon Neptune, ArangoDB
+- **Query Language**: Cypher (Neo4j), Gremlin
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested Dados
-- Distributed Sistemas
-- Real-time applications
+### Quando Usar NoSQL
+- Esquema flexível/em evolução
+- Requisitos de escalabilidade horizontal
+- Alta taxa de escrita
+- Dados hierárquicos/aninhados
+- Sistemas distribuídos
+- Aplicações em tempo real
 
-## Banco de dados Design
+## Projeto de Banco de Dados
 
-### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties de entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number de instances em relationship
+### Modelagem Entidade-Relacionamento
+- **Entities**: Objetos/conceitos (Cliente, Produto, Pedido)
+- **Attributes**: Propriedades das entidades (nome, preço, data)
+- **Relationships**: Conexões entre entidades (um para um, um para muitos, muitos para muitos)
+- **Cardinality**: Número de instâncias em um relacionamento
 
-### Schema Design Patterns
-- **Single Table Inheritance**: All types em one table com type discriminator
-- **Class Table Inheritance**: Separate tables para base e subclasses
-- **Concrete Table Inheritance**: Separate table para each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+### Padrões de Projeto de Esquema
+- **Single Table Inheritance**: Todos os tipos em uma tabela com discriminador de tipo
+- **Class Table Inheritance**: Tabelas separadas para a base e para as subclasses
+- **Concrete Table Inheritance**: Tabela separada para cada classe concreta
+- **Junction Tables**: Resolvem relacionamentos muitos para muitos
+- **Audit Tables**: Rastreiam alterações (created_at, updated_at, deleted_at)
 
-### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic Dados (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed para query
+### Estratégias de Indexação
+- **B-Tree**: Padrão, consultas por intervalo, ordenação
+- **Hash**: Buscas por correspondência exata
+- **Bitmap**: Colunas de baixa cardinalidade (gênero, status)
+- **Full-Text**: Recursos de busca textual
+- **Spatial**: Dados geográficos (GIS)
+- **Composite**: Combinação de múltiplas colunas
+- **Covering**: Inclui todas as colunas necessárias para a consulta
 
-## Query Optimization
+## Otimização de Consultas
 
-### Execution Plans
-- Understanding how Banco de dados executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
-- Tools: EXPLAIN, EXPLAIN ANALYZE
+### Planos de Execução
+- Entender como o banco de dados executa consultas
+- Identificar gargalos (varreduras completas de tabela, índices ausentes)
+- Ferramentas: EXPLAIN, EXPLAIN ANALYZE
 
-### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types e order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+### Técnicas de Otimização
+- **Index Usage**: Garantir que as consultas usem índices apropriados
+- **Query Rewriting**: Simplificar consultas complexas
+- **Join Optimization**: Escolher os tipos e a ordem corretos dos joins
+- **Partitioning**: Dividir tabelas grandes (range, hash, list)
+- **Materialized Views**: Resultados de consultas pré-computados
+- **Query Caching**: Armazenar resultados de consultas frequentes
 
-### Common Desempenho Issues
-- **N+1 Query Problem**: Fetching related Dados inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting para locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### Problemas Comuns de Desempenho
+- **N+1 Query Problem**: Busca ineficiente de dados relacionados
+- **Missing Indexes**: Varreduras completas em tabelas grandes
+- **Over-indexing**: Escritas lentas devido a índices em excesso
+- **Lock Contention**: Transações aguardando locks
+- **Inefficient Queries**: SELECT *, joins desnecessários
 
-## Transactions e Concurrency
+## Transações e Concorrência
 
-### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed Dados visible (default em most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+### Níveis de Isolamento de Transações
+- **READ UNCOMMITTED**: Menor isolamento, leituras sujas possíveis
+- **READ COMMITTED**: Apenas dados confirmados ficam visíveis (padrão na maioria dos bancos)
+- **REPEATABLE READ**: A mesma consulta retorna os mesmos resultados dentro da transação
+- **SERIALIZABLE**: Maior isolamento, transações executadas sequencialmente
 
-### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions de rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+### Controle de Concorrência
+- **Pessimistic Locking**: Bloqueia recursos antes do acesso
+- **Optimistic Locking**: Verifica a versão antes do commit
+- **MVCC (Multi-Version Concurrency Control)**: Mantém múltiplas versões das linhas
+- **Row-Level Locking**: Bloqueia linhas específicas
+- **Table-Level Locking**: Bloqueia a tabela inteira
 
 ### Deadlocks
-- Circular dependency where transactions wait para each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+- Dependência circular em que transações esperam umas pelas outras
+- Prevenção: Ordenação consistente de locks, timeouts, detecção de deadlock
+- Resolução: Abortamento de uma transação
 
-## Replication e Scaling
+## Replicação e Escalabilidade
 
-### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+### Tipos de Replicação
+- **Master-Slave**: Um primário, múltiplas réplicas de leitura
+- **Master-Master**: Múltiplos primários, replicação bidirecional
+- **Multi-Master**: N primários, com necessidade de resolução de conflitos
+- **Chain Replication**: Replicação sequencial entre nós
 
-### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split Dados across servers by key/range/hash
-- **Federation**: Split by function/service
+### Abordagens de Escalabilidade
+- **Vertical Scaling**: Aumentar os recursos do servidor (CPU, RAM, armazenamento)
+- **Horizontal Scaling**: Adicionar mais servidores (sharding, particionamento)
+- **Read Replicas**: Descarregar tráfego de leitura
+- **Sharding**: Dividir dados entre servidores por chave/faixa/hash
+- **Federation**: Divisão por função/serviço
 
-### Consistency Models
-- **Strong Consistency**: All nodes see same Dados at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+### Modelos de Consistência
+- **Strong Consistency**: Todos os nós veem os mesmos dados ao mesmo tempo
+- **Eventual Consistency**: Os nós convergem ao longo do tempo
+- **Causal Consistency**: Relações de causa e efeito são preservadas
+- **Read-Your-Writes**: O usuário vê imediatamente suas próprias atualizações
 
-## Backup e Recovery
+## Backup e Recuperação
 
-### Backup Strategies
-- **Full Backup**: Completo Banco de dados copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-em-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+### Estratégias de Backup
+- **Full Backup**: Cópia completa do banco de dados
+- **Incremental Backup**: Alterações desde o último backup
+- **Differential Backup**: Alterações desde o último backup completo
+- **Point-in-Time Recovery**: Restauração para um momento específico
+- **Continuous Backup**: Replicação em tempo real para backup
 
-### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable Dados loss
-- **Disaster Recovery Plan**: Documented procedures para failures
-- **Teste**: Regular recovery drills
+### Procedimentos de Recuperação
+- **RTO (Recovery Time Objective)**: Tempo máximo aceitável de indisponibilidade
+- **RPO (Recovery Point Objective)**: Perda máxima aceitável de dados
+- **Disaster Recovery Plan**: Procedimentos documentados para falhas
+- **Testing**: Simulações regulares de recuperação
 
 ## Segurança
 
-### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions para easier Gerenciamento
-- **Principle de Least Privilege**: Minimum necessary access
+### Controle de Acesso
+- **Authentication**: Verificação da identidade do usuário
+- **Authorization**: Concessão de permissões (GRANT, REVOKE)
+- **Roles**: Agrupamento de permissões para facilitar o gerenciamento
+- **Principle of Least Privilege**: Mínimo acesso necessário
 
-### Dados Protection
-- **Encryption at Rest**: Encrypt stored Dados
-- **Encryption em Transit**: TLS/SSL para connections
-- **Masking**: Hide sensitive Dados em non-production
-- **Tokenization**: Replace sensitive Dados com tokens
+### Proteção de Dados
+- **Encryption at Rest**: Criptografia dos dados armazenados
+- **Encryption in Transit**: TLS/SSL para conexões
+- **Masking**: Ocultação de dados sensíveis fora de produção
+- **Tokenization**: Substituição de dados sensíveis por tokens
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL em user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all Banco de dados activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+### Vulnerabilidades Comuns
+- **SQL Injection**: SQL malicioso na entrada do usuário
+- **Privilege Escalation**: Obtenção de acesso não autorizado
+- **Audit Logging**: Rastreamento de todas as atividades do banco de dados
+- **Compliance**: Requisitos de GDPR, HIPAA, PCI-DSS
 
-## Modern Banco de dados Technologies
+## Tecnologias Modernas de Banco de Dados
 
-### Cloud Databases
+### Bancos de Dados em Nuvem
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Banco de dados, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+- **Azure**: SQL Database, Cosmos DB, Synapse
+- **Benefits**: Serviço gerenciado, escalabilidade automática, backups incluídos
 
-### NewSQL Databases
-- Combine SQL consistency com NoSQL scalability
-- **Exemplos**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+### Bancos de Dados NewSQL
+- Combinam a consistência do SQL com a escalabilidade do NoSQL
+- **Examples**: CockroachDB, TiDB, YugabyteDB, Google Spanner
+- **Features**: Distribuídos, transações ACID, escalabilidade horizontal
 
-### Time-Series Databases
-- Optimized para timestamped Dados
-- **Exemplos**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial Dados
+### Bancos de Dados de Séries Temporais
+- Otimizados para dados com timestamp
+- **Examples**: InfluxDB, TimescaleDB, Prometheus
+- **Use Cases**: IoT, monitoramento, dados financeiros
 
-### Vector Databases
-- Store e query embedding vectors
-- **Exemplos**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation Sistemas, AI applications
+### Bancos de Dados Vetoriais
+- Armazenam e consultam vetores de embeddings
+- **Examples**: Pinecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Busca semântica, sistemas de recomendação, aplicações de IA
 
-### Multi-Model Databases
-- Suporte multiple Dados models em single system
-- **Exemplos**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
+### Bancos de Dados Multimodelo
+- Suportam múltiplos modelos de dados em um único sistema
+- **Examples**: ArangoDB, OrientDB, Azure Cosmos DB
+- **Benefit**: Flexibilidade sem necessidade de múltiplos bancos de dados
 
-## ORMs e Dados Access
+## ORMs e Acesso a Dados
 
-### Object-Relational Mapping
-- **Purpose**: Map Banco de dados tables to programming objects
+### Mapeamento Objeto-Relacional
+- **Purpose**: Mapear tabelas do banco de dados para objetos de programação
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
@@ -274,41 +267,41 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration Gerenciamento
-- Query building APIs
+### Benefícios
+- Abstração do SQL
+- Segurança de tipos
+- Gerenciamento de migrações
+- APIs para construção de consultas
 
-### Drawbacks
-- Desempenho overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
+### Desvantagens
+- Sobrecarga de desempenho
+- Consultas complexas mais difíceis de escrever
+- Problemas de consulta N+1
+- Curva de aprendizado
 
-## Banco de dados Administration
+## Administração de Banco de Dados
 
-### DBA Responsibilities
-- Installation e configuration
-- Desempenho tuning
-- Backup e recovery
-- Segurança Gerenciamento
-- Capacity planning
-- Monitoring e alerting
-- Patch Gerenciamento
+### Responsabilidades do DBA
+- Instalação e configuração
+- Ajuste de desempenho
+- Backup e recuperação
+- Gerenciamento de segurança
+- Planejamento de capacidade
+- Monitoramento e alertas
+- Gerenciamento de patches
 
-### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
+### Métricas de Monitoramento
+- Tempo de resposta das consultas
+- Throughput (transações por segundo)
+- Número de conexões
+- Taxa de acerto do cache
+- I/O de disco
+- Tempo de espera por locks
+- Atraso de replicação
 
-### Maintenance Tasks
-- **Vacuum/Analyze**: Update Estatísticas, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **Estatísticas Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+### Tarefas de Manutenção
+- **Vacuum/Analyze**: Atualizar estatísticas, recuperar espaço
+- **Index Rebuilding**: Desfragmentar índices
+- **Statistics Updates**: Manter o otimizador de consultas informado
+- **Log Rotation**: Gerenciar o tamanho dos arquivos de log
+- **Capacity Planning**: Prever crescimento, planejar upgrades

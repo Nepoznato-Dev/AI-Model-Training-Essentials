@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: python_syntax.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Шпаргалка по синтаксису Python
 
-# Python Синтаксис Cheat Sheet
-
-Быстрый справочник для Python 3.x Синтаксис и common patterns.
+Быстрый справочник по синтаксису Python 3.x и типичным приёмам.
 
 ---
 
-## Basic Синтаксис
+## Основы синтаксиса
 
-### Variables и Данные Types
+### Переменные и типы данных
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +25,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### Строки
 ```python
 s = "Hello, World!"
 
@@ -54,9 +47,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## Управление потоком выполнения
 
-### Conditionals
+### Условия
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### Циклы
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +86,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## Данные Structures
+## Структуры данных
 
-### Lists
+### Списки
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +106,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### Словари
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +121,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### Множества
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +133,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuples
+### Кортежи
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +142,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## Функции
 
-### Definition
+### Определение
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +163,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Лямбда-функции
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +171,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## Классы
 
 ```python
 class Person:
@@ -207,7 +200,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## Работа с файлами (ввод/вывод)
 
 ```python
 # Reading files
@@ -226,7 +219,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## Обработка ошибок
 
 ```python
 try:
@@ -248,7 +241,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules и Imports
+## Модули и импорты
 
 ```python
 import math
@@ -263,9 +256,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## Часто используемые приёмы
 
-### List Operations
+### Операции со списками
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +274,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### Операции со строками
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +290,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### Словарь Operations
+### Операции со словарями
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +306,7 @@ for k, v in d.items():
 
 ---
 
-## Built-в Functions
+## Встроенные функции
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +322,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## Полезные советы
 
-- Use `#` для single-line comments
-- Use `"""triple quotes"""` для docstrings и multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` для variables/functions, `PascalCase` для classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` для project isolation
-- Install packages с `pip install package_name`
+- Используйте `#` для однострочных комментариев
+- Используйте `"""тройные кавычки"""` для docstring'ов и многострочных строк
+- Отступы имеют значение (обычно 4 пробела)
+- Соглашения об именовании: `snake_case` для переменных/функций, `PascalCase` для классов
+- `__name__ == "__main__"` — проверка, что скрипт запущен напрямую
+- Используйте `virtualenv` или `venv` для изоляции проекта
+- Устанавливайте пакеты с помощью `pip install package_name`
 
 ---
 
-*Последнее обновление: June 2025 | Python 3.x*
+*Последнее обновление: июнь 2025 | Python 3.x*

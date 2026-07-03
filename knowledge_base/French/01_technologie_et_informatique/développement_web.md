@@ -1,314 +1,331 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: database_systems.md
+Source: web_development.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Base de données Systèmes
+# Web Développement
 
-## Base de données Fondamentaux
+## Frontend Développement
 
-### What is a Base de données?
-A Base de données is an organized collection de structured information stored electronically, designed pour efficient retrieval, insertion, updating, et deletion de Données.
+### Core Technologies
 
-### Base de données Gestion Systèmes (DBMS)
-Software that interacts avec end users, applications, et le/la Base de données itself to capture et analyze Données. Exemples: MySQL, PostgreSQL, Oracle, MongoDB.
+#### HTML (HyperText Markup Langue)
+- **Semantic HTML**: Using meaningful tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+- **Forms**: Input types, validation, accessibility labels
+- **Media**: Images, video, audio embedding
+- **Meta Tags**: SEO, viewport, character encoding
+- **HTML5 Features**: Canvas, SVG, local storage, geolocation, Web sockets
 
-### Key Concepts
-- **Schema**: Structure/organization de Base de données (tables, fields, relationships)
-- **Instance**: Actual Données stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing Données to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read Performance
+#### CSS (Cascading Style Sheets)
+- **Box Model**: Content, padding, border, margin
+- **Layout Systèmes**:
+  - **Flexbox**: One-dimensional layouts, justify-content, align-items
+  - **Grid**: Two-dimensional layouts, grid-template, grid-area
+  - **Positioning**: Static, relative, absolute, fixed, sticky
+- **Responsive Design**: Media queries, mobile-first approach
+- **CSS Variables**: Custom properties pour theming
+- **Animations**: Transitions, keyframes, transforms
+- **Preprocessors**: Sass, Less (variables, mixins, nesting)
 
-## Relational Databases (SQL)
+#### JavaScript
+- **DOM Manipulation**: Selecting, creating, modifying elements
+- **Événements**: Click, submit, keyboard, custom Événements, event delegation
+- **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
+- **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
+- **TypeScript**: Static typing, interfaces, generics, decorators
 
-### Core Concepts
-- **Tables**: Rows (records) et columns (fields)
-- **Primary Key**: Unique identifier pour each row
-- **Foreign Key**: Référence to primary key dans another table
-- **Indexes**: Données structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on Données changes
+### Modern Frontend Frameworks
 
-### SQL Operations (CRUD)
-```sql
--- Create
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
+#### React
+- **Components**: Functional components, class components
+- **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
+- **State Gestion**: Context API, Redux, Zustand, Recoil
+- **Routing**: React Router (BrowserRouter, Routes, Route, Link)
+- **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
+- **Virtual DOM**: Efficient rendering through diffing algorithm
 
--- Read
-SELECT * FROM users WHERE id = 1;
-SELECT name, email FROM users ORDER BY name LIMIT 10;
+#### Vue.js
+- **Options API**: Données, methods, computed, watch
+- **Composition API**: setup(), ref, reactive, computed
+- **Directives**: v-if, v-pour, v-bind, v-on, v-model
+- **Vuex/Pinia**: State Gestion
+- **Vue Router**: Client-side routing
+- **Nuxt.js**: Server-side rendering framework
 
--- Update
-UPDATE users SET email = 'new@example.com' WHERE id = 1;
+#### Angular
+- **Components**: Decorators, templates, lifecycle hooks
+- **Services**: Dependency injection, singleton pattern
+- **RxJS**: Reactive programming, observables
+- **Routing**: RouterModule, guards, resolvers
+- **Forms**: Template-driven, reactive forms
+- **NgRx**: Redux-style state Gestion
 
--- Delete
-DELETE FROM users WHERE id = 1;
-```
+### Build Tools et Bundlers
+- **Webpack**: Module bundling, code splitting, loaders, plugins
+- **Vite**: Fast build tool using native ES modules
+- **Parcel**: Zero-configuration bundler
+- **Rollup**: Optimized pour libraries
+- **esbuild**: Extremely fast JavaScript bundler
+- **Babel**: JavaScript transpiler pour backward compatibility
+- **PostCSS**: CSS processing avec plugins
 
-### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product de both tables
-- **SELF JOIN**: Table joined avec itself
+### CSS Frameworks et Libraries
+- **Bootstrap**: Component library, grid system, utilities
+- **Tailwind CSS**: Utility-first CSS framework
+- **Material UI**: Google's Material Design implementation
+- **Chakra UI**: Accessible component library
+- **Ant Design**: Enterprise-level UI components
+- **Styled Components**: CSS-dans-JS library
+- **Emotion**: CSS-dans-JS avec source maps
 
-### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+## Backend Développement
 
-### Popular RDBMS
-- **PostgreSQL**: Avancé features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, Web applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### Server-Side Languages
 
-## NoSQL Databases
+#### Node.js
+- **Runtime**: JavaScript on le/la server (V8 engine)
+- **Express.js**: Minimal Web framework, middleware Architecture
+- **NestJS**: Angular-inspired Architecture, TypeScript
+- **Fastify**: High-Performance framework
+- **Koa**: Modern Express by same creators
+- **Package Gestion**: npm, yarn, pnpm
 
-### Types de NoSQL Databases
+#### Python
+- **Django**: Full-featured framework, ORM, admin panel, batteries-included
+- **Flask**: Microframework, extensions ecosystem
+- **FastAPI**: Modern, async, automatic API documentation
+- **Pyramid**: Flexible, scalable framework
 
-#### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Gestion, catalogs, user profiles
-- **Exemples**: MongoDB, CouchDB, DocumentDB
-- **Query Example** (MongoDB):
-```javascript
-db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
-```
+#### Other Backend Languages
+- **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
+- **Java Spring**: Enterprise framework, dependency injection
+- **PHP Laravel**: Elegant Syntaxe, Eloquent ORM, Blade templating
+- **Go Gin**: High Performance, minimal framework
+- **Rust Actix**: Memory safety, Performance
+- **C# ASP.NET Core**: Cross-platform, enterprise features
 
-#### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
-- **Exemples**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+### Base de données Integration
 
-#### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **Use Cases**: Big Données, analytics, time-series
-- **Exemples**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+#### ORMs (Object-Relational Mapping)
+- **Sequelize**: Node.js ORM pour SQL databases
+- **Prisma**: Type-Sûr Base de données access, auto-generated client
+- **SQLAlchemy**: Python SQL toolkit et ORM
+- **ActiveRecord**: Ruby on Rails ORM
+- **Hibernate**: Java ORM
+- **Entity Framework**: .NET ORM
 
-#### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
-- **Exemples**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Langue**: Cypher (Neo4j), Gremlin
+#### Base de données Drivers
+- **pg**: PostgreSQL client pour Node.js
+- **mysql2**: MySQL client avec promises
+- **pymongo**: MongoDB driver pour Python
+- **redis**: Redis client pour multiple languages
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested Données
-- Distributed Systèmes
-- Real-time applications
+### API Développement
 
-## Base de données Design
+#### REST APIs
+- **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
+- **Status Codes**: 200, 201, 400, 401, 403, 404, 500
+- **Resource Naming**: Nouns, plural, hierarchical
+- **Versioning**: URL path, headers, query parameters
+- **Authentication**: JWT, OAuth, API keys
+- **Documentation**: OpenAPI/Swagger, Postman
 
-### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties de entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number de instances dans relationship
+#### GraphQL
+- **Schema Definition**: Types, queries, mutations, subscriptions
+- **Resolvers**: Field-level Données fetching
+- **Apollo Server**: GraphQL server implementation
+- **Relay**: Facebook's GraphQL client
+- **Advantages**: No over-fetching, single endpoint, strong typing
 
-### Schema Design Patterns
-- **Single Table Inheritance**: All types dans one table avec type discriminator
-- **Class Table Inheritance**: Separate tables pour base et subclasses
-- **Concrete Table Inheritance**: Separate table pour each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+#### gRPC
+- **Protocol Buffers**: Interface definition Langue
+- **HTTP/2**: Bidirectional streaming
+- **Use Cases**: Microservices Communication, real-time applications
 
-### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic Données (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed pour query
+### Authentication et Authorization
+- **Session-based**: Cookies, server-side sessions
+- **Token-based**: JWT (JSON Web Tokens), stateless
+- **OAuth 2.0**: Authorization framework, third-party login
+- **OpenID Connect**: Identity layer on OAuth 2.0
+- **SAML**: Enterprise single sign-on
+- **Password Hashing**: bcrypt, argon2, scrypt
+- **Multi-Factor Authentication**: TOTP, SMS, email codes
 
-## Query Optimization
+## DevOps et Déploiement
 
-### Execution Plans
-- Understanding how Base de données executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
-- Tools: EXPLAIN, EXPLAIN ANALYZE
+### Version Control
+- **Git**: Distributed version control
+- **GitHub/GitLab/Bitbucket**: Repository hosting
+- **Branching Strategies**: Git Flow, GitHub Flow, trunk-based Développement
+- **CI/CD**: Automated Test et Déploiement pipelines
+
+### Containerization
+- **Docker**: Container runtime, Dockerfile, images
+- **Docker Compose**: Multi-container orchestration
+- **Container Registries**: Docker Hub, AWS ECR, Google GCR
+- **Meilleures pratiques**: Multi-stage builds, minimal base images
+
+### Orchestration
+- **Kubernetes**: Container orchestration, pods, services, deployments
+- **Helm**: Kubernetes package manager
+- **Service Mesh**: Istio, Linkerd pour microservices networking
+
+### Cloud Platforms
+- **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
+- **Google Cloud**: Compute Engine, Cloud Storage, Cloud Functions, GKE
+- **Azure**: Virtual Machines, Blob Storage, Functions, AKS
+- **Vercel**: Frontend Déploiement, serverless functions
+- **Netlify**: Static site hosting, serverless functions
+- **Heroku**: Platform as a Service (PaaS)
+- **DigitalOcean**: Simplified cloud infrastructure
+
+### CI/CD Pipelines
+- **GitHub Actions**: Workflow automation
+- **GitLab CI**: Built-dans continuous integration
+- **Jenkins**: Extensible automation server
+- **CircleCI**: Cloud-based CI/CD
+- **Travis CI**: Continuous integration service
+- **ArgoCD**: GitOps continuous delivery pour Kubernetes
+
+### Monitoring et Logging
+- **Application Performance**: New Relic, Datadog, AppDynamics
+- **Error Tracking**: Sentry, Rollbar, Bugsnag
+- **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- **Uptime Monitoring**: Pingdom, UptimeRobot
+- **Analytics**: Google Analytics, Mixpanel, Amplitude
+
+## Web Performance
 
 ### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types et order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+- **Code Splitting**: Lazy loading, dynamic imports
+- **Tree Shaking**: Removing unused code
+- **Minification**: Reducing file sizes
+- **Compression**: Gzip, Brotli
+- **Caching**: Browser cache, CDN, service workers
+- **Image Optimization**: WebP, AVIF, lazy loading, responsive images
+- **Critical CSS**: Inlining above-le/la-fold styles
+- **Base de données Optimization**: Indexing, query optimization, connection pooling
 
-### Common Performance Issues
-- **N+1 Query Problem**: Fetching related Données inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting pour locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### Core Web Vitals
+- **LCP (Largest Contentful Paint)**: Loading Performance (<2.5s)
+- **FID (First Input Delay)**: Interactivity (<100ms)
+- **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
+- **INP (Interaction to Next Paint)**: Responsiveness metric
 
-## Transactions et Concurrency
+### Content Delivery Networks (CDNs)
+- **Cloudflare**: Sécurité, Performance, DNS
+- **Akamai**: Enterprise CDN
+- **Amazon CloudFront**: AWS CDN
+- **Fastly**: Edge cloud platform
+- **StackPath**: Edge services
 
-### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed Données visible (default dans most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+## Web Sécurité
 
-### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions de rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+### Common Vulnerabilities (OWASP Top 10)
+- **Injection**: SQL injection, command injection
+- **Broken Authentication**: Session hijacking, credential stuffing
+- **Sensitive Données Exposure**: Unencrypted Données, weak cryptography
+- **XML External Entities (XXE)**: XML parser vulnerabilities
+- **Broken Access Control**: Privilege escalation, unauthorized access
+- **Sécurité Misconfiguration**: Default credentials, verbose errors
+- **Cross-Site Scripting (XSS)**: Reflected, stored, DOM-based
+- **Insecure Deserialization**: Object injection attacks
+- **Using Components avec Known Vulnerabilities**: Outdated dependencies
+- **Insufficient Logging & Monitoring**: Undetected breaches
 
-### Deadlocks
-- Circular dependency where transactions wait pour each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+### Sécurité Meilleures pratiques
+- **HTTPS**: TLS/SSL encryption, HSTS
+- **Content Sécurité Policy (CSP)**: Prevent XSS attacks
+- **Input Validation**: Sanitize user input
+- **Output Encoding**: Prevent injection attacks
+- **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
+- **Rate Limiting**: Prevent brute force attacks
+- **Sécurité Headers**: X-Frame-Options, X-Content-Type-Options
+- **Dependency Scanning**: npm audit, Snyk, Dependabot
 
-## Replication et Scaling
+## Test
 
-### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+### Test Types
+- **Unit Test**: Individual components/functions
+- **Integration Test**: Component interactions
+- **End-to-End (E2E)**: Full user workflows
+- **Visual Regression**: UI change detection
+- **Performance Test**: Load, stress, spike Test
+- **Accessibility Test**: WCAG compliance
 
-### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split Données across servers by key/range/hash
-- **Federation**: Split by function/service
+### Test Frameworks
+- **Jest**: JavaScript Test framework
+- **Mocha**: Flexible test runner
+- **pytest**: Python Test framework
+- **RSpec**: Ruby Test framework
+- **JUnit**: Java Test framework
 
-### Consistency Models
-- **Strong Consistency**: All nodes see same Données at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+### E2E Test Tools
+- **Selenium**: Browser automation
+- **Cypress**: Modern E2E Test
+- **Playwright**: Cross-browser automation
+- **Puppeteer**: Headless Chrome control
 
-## Backup et Recovery
+## Accessibility (a11y)
 
-### Backup Strategies
-- **Full Backup**: Complet Base de données copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-dans-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+### WCAG Guidelines
+- **Perceivable**: Text alternatives, captions, adaptable content
+- **Operable**: Keyboard navigation, sufficient time, no seizures
+- **Understandable**: Readable, predictable, input assistance
+- **Robust**: Compatible avec assistive technologies
 
-### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable Données loss
-- **Disaster Recovery Plan**: Documented procedures pour failures
-- **Test**: Regular recovery drills
+### Implementation
+- **Semantic HTML**: Proper heading hierarchy, landmarks
+- **ARIA Attributes**: Roles, states, properties
+- **Focus Gestion**: Visible focus indicators, logical tab order
+- **Color Contrast**: Minimum 4.5:1 ratio pour text
+- **Screen Reader Test**: NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: All interactive elements accessible
 
-## Sécurité
+## Progressive Web Apps (PWAs)
 
-### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions pour easier Gestion
-- **Principle de Least Privilege**: Minimum necessary access
+### PWA Features
+- **Service Workers**: Offline functionality, background sync
+- **Web App Manifest**: Install prompt, icons, theme colors
+- **App Shell**: Cached UI skeleton
+- **Push Notifications**: User engagement
+- **Responsive Design**: Works on all devices
+- **HTTPS Required**: Secure context
 
-### Données Protection
-- **Encryption at Rest**: Encrypt stored Données
-- **Encryption dans Transit**: TLS/SSL pour connections
-- **Masking**: Hide sensitive Données dans non-production
-- **Tokenization**: Replace sensitive Données avec tokens
+### Tools
+- **Workbox**: Service worker libraries
+- **Lighthouse**: PWA auditing
+- **PWA Builder**: Generate manifests et icons
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL dans user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all Base de données activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+## Emerging Technologies
 
-## Modern Base de données Technologies
+### WebAssembly (Wasm)
+- **Purpose**: Run compiled code dans browser at near-native speed
+- **Languages**: C++, Rust, Go compilation targets
+- **Use Cases**: Games, video editing, cryptography, ML inference
 
-### Cloud Databases
-- **AWS**: RDS, Aurora, DynamoDB, Redshift
-- **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Base de données, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+### Serverless Architecture
+- **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
+- **Benefits**: No server Gestion, auto-scaling, pay-per-use
+- **Considerations**: Cold starts, vendor lock-dans, debugging complexity
 
-### NewSQL Databases
-- Combine SQL consistency avec NoSQL scalability
-- **Exemples**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+### Jamstack Architecture
+- **JavaScript**: Client-side interactivity
+- **APIs**: Serverless functions, third-party services
+- **Markup**: Pre-built static files
+- **Tools**: Next.js, Gatsby, Hugo, Eleventy
+- **Benefits**: Performance, Sécurité, scalability, developer experience
 
-### Time-Series Databases
-- Optimized pour timestamped Données
-- **Exemples**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial Données
+### Real-Time Communication
+- **WebSockets**: Bidirectional Communication
+- **Server-Sent Événements**: Server-to-client streaming
+- **WebRTC**: Peer-to-peer video, audio, Données
+- **Use Cases**: Chat, collaboration, live streaming, gaming
 
-### Vector Databases
-- Store et query embedding vectors
-- **Exemples**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation Systèmes, AI applications
-
-### Multi-Model Databases
-- Assistance multiple Données models dans single system
-- **Exemples**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
-
-## ORMs et Données Access
-
-### Object-Relational Mapping
-- **Purpose**: Map Base de données tables to programming objects
-- **Popular ORMs**:
-  - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelize, Prisma, TypeORM
-  - Java: Hibernate, JPA
-  - Ruby: ActiveRecord
-  - .NET: Entity Framework
-
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration Gestion
-- Query building APIs
-
-### Drawbacks
-- Performance overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
-
-## Base de données Administration
-
-### DBA Responsibilities
-- Installation et configuration
-- Performance tuning
-- Backup et recovery
-- Sécurité Gestion
-- Capacity planning
-- Monitoring et alerting
-- Patch Gestion
-
-### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
-
-### Maintenance Tasks
-- **Vacuum/Analyze**: Update Statistiques, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **Statistiques Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+### Micro Frontends
+- **Concept**: Extend microservices to frontend
+- **Approaches**: Build-time, run-time, edge-side integration
+- **Benefits**: Independent deployments, team autonomy
+- **Challenges**: Consistency, Performance, complexity

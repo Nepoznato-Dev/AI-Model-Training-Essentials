@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: linux_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Linux Команды: быстрый справочник
 
-# Linux Команды Быстрый справочник
-
-Essential Linux/Unix Команды для system navigation и administration.
+Основные команды Linux/Unix для навигации по системе и администрирования.
 
 ---
 
-## File & Directory Operations
+## Операции с файлами и каталогами
 
-### Navigation
+### Навигация
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -25,7 +18,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-### File Operations
+### Операции с файлами
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +33,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-### Viewing Files
+### Просмотр файлов
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,7 +46,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-## File Permissions
+## Права доступа к файлам
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -65,17 +58,17 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-### Permission Numbers
-- `7` = rwx (read + write + execute)
-- `6` = rw- (read + write)
-- `5` = r-x (read + execute)
-- `4` = r-- (read only)
+### Числовые обозначения прав доступа
+- `7` = rwx (чтение + запись + выполнение)
+- `6` = rw- (чтение + запись)
+- `5` = r-x (чтение + выполнение)
+- `4` = r-- (только чтение)
 
 ---
 
-## Text Processing
+## Обработка текста
 
-### Search & Replace
+### Поиск и замена
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +79,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-### Find Files
+### Поиск файлов
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +91,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-### Text Manipulation
+### Работа с текстом
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +109,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-## Process Управление
+## Управление процессами
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +131,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-## System Information
+## Информация о системе
 
 ```bash
 uname -a                # System information
@@ -159,7 +152,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-## Сеть Команды
+## Сетевые команды
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -181,7 +174,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-## Archive & Compression
+## Архивирование и сжатие
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,7 +191,7 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-## Package Управление
+## Управление пакетами
 
 ### Debian/Ubuntu (apt)
 ```bash
@@ -231,7 +224,7 @@ brew list                               # List installed packages
 
 ---
 
-## User Управление
+## Управление пользователями
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +239,7 @@ groups username                         # Show user groups
 
 ---
 
-## Disk Управление
+## Управление дисками
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +253,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-## Shell Variables & Environment
+## Переменные оболочки и окружение
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +271,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Input/Output Redirection
+## Перенаправление ввода/вывода
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +285,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-## Useful One-Liners
+## Полезные однострочники
 
 ```bash
 # Count files in directory
@@ -322,40 +315,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-## Keyboard Shortcuts
+## Сочетания клавиш
 
-| Shortcut | Action |
+| Сочетание | Действие |
 |----------|--------|
-| `Tab` | Auto-Полный |
-| `Ctrl+C` | Kill current command |
-| `Ctrl+Z` | Suspend command |
-| `Ctrl+D` | Exit shell/EOF |
-| `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to line start |
-| `Ctrl+E` | Go to line end |
-| `Ctrl+U` | Delete to line start |
-| `Ctrl+K` | Delete to line end |
-| `Ctrl+R` | Search История |
-| `Ctrl+W` | Delete word before cursor |
+| `Tab` | Автодополнение |
+| `Ctrl+C` | Завершить текущую команду |
+| `Ctrl+Z` | Приостановить команду |
+| `Ctrl+D` | Выход из оболочки / EOF |
+| `Ctrl+L` | Очистить экран |
+| `Ctrl+A` | Перейти в начало строки |
+| `Ctrl+E` | Перейти в конец строки |
+| `Ctrl+U` | Удалить до начала строки |
+| `Ctrl+K` | Удалить до конца строки |
+| `Ctrl+R` | Поиск по истории |
+| `Ctrl+W` | Удалить слово перед курсором |
 
 ---
 
 ## Лучшие практики
 
-✅ **Do:**
-- Use `sudo` sparingly и carefully
-- Test destructive Команды without execution flags first
-- Keep backups before major changes
-- Use meaningful filenames (no spaces)
-- Learn to use `man` pages (`man command`)
+✅ **Стоит делать:**
+- Используйте `sudo` осторожно и только при необходимости
+- Сначала тестируйте разрушительные команды без флагов выполнения
+- Делайте резервные копии перед крупными изменениями
+- Используйте осмысленные имена файлов (без пробелов)
+- Изучите использование man-страниц (`man command`)
 
-❌ **Don't:**
-- Run `rm -rf /` or similar dangerous Команды
-- Use `chmod 777` on sensitive files
-- Ignore warning messages
-- Edit system files without backups
-- Run unknown scripts as root
+❌ **Не стоит делать:**
+- Выполнять `rm -rf /` или похожие опасные команды
+- Использовать `chmod 777` для конфиденциальных файлов
+- Игнорировать предупреждающие сообщения
+- Редактировать системные файлы без резервных копий
+- Запускать неизвестные скрипты от имени root
 
 ---
 
-*Последнее обновление: June 2025 | Linux/Unix compatible*
+*Последнее обновление: июнь 2025 | Совместимо с Linux/Unix*

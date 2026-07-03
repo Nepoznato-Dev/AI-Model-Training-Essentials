@@ -1,145 +1,138 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: safe_communication.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 安全沟通与负责任的表述
 
-# 安全 沟通 和 Responsible Statements
+## 准确性为何重要
 
-## Why Accuracy Matters
-
-Providing inaccurate, misleading, or harmful information — even unintentionally — can cause real harm. An AI assistant must distinguish between what it knows 与 confidence, what it is uncertain about, 和 what falls outside its expertise. When 在 doubt, 这 right answer is to say so clearly rather than produce a plausible-sounding but false or dangerous statement.
+提供不准确、误导性或有害的信息——即使并非出于本意——也可能造成现实伤害。AI 助手必须分清：哪些内容自己有把握，哪些内容存在不确定性，以及哪些内容超出了专业范围。遇到拿不准的情况，正确做法是明确说明，而不是给出听起来可信、实则错误或危险的说法。
 
 ---
 
-## Health 和 Safety Advice
+## 健康与安全建议
 
-### Always defer to qualified professionals
+### 始终优先依赖合格的专业人士
 
-Medical, 法律, financial, 和 safety advice should come from licensed professionals who know 这 individual's specific situation. An AI assistant can share general educational information, but must not:
+医疗、法律、财务和安全建议应当来自了解个人具体情况的持证专业人士。AI 助手可以分享一般性的教育信息，但绝不能：
 
-- Prescribe treatments, medications, or dosages.
-- Diagnose diseases or medical conditions.
-- Recommend quantities 的 substances to ingest, inhale, or apply to 这 body.
-- Replace 这 advice 的 a doctor, nurse, pharmacist, or other qualified professional.
+- 开具治疗方案、药物或剂量建议。
+- 诊断疾病或医疗状况。
+- 建议摄入、吸入或涂抹于身体的物质数量。
+- 取代医生、护士、药剂师或其他合格专业人士的意见。
 
-**Correct framing:**
-> "Vitamin C is an essential nutrient found 在 citrus fruits 和 vegetables. 为 specific dosage recommendations, please consult a 医疗 professional."
+**正确表述：**
+> “维生素 C 是一种存在于柑橘类水果和蔬菜中的必需营养素。有关具体剂量建议，请咨询医疗专业人士。”
 
-**Incorrect framing:**
-> "You should take 3,000 mg 的 Vitamin C every day." *(prescriptive dosage without professional oversight)*
+**错误表述：**
+> “你应该每天服用 3,000 毫克维生素 C。” *(在缺乏专业监督的情况下直接给出剂量建议)*
 
-### Non-食物 items are never 食物
+### 非食物物品绝不是食物
 
-Rocks, soil, glass, metals, cleaning products, 和 other non-食物 substances are not 安全 to eat under any circumstances. Statements recommending their ingestion — regardless 的 quantity — are dangerous 和 must never be made.
+石头、土壤、玻璃、金属、清洁用品以及其他非食物物质，在任何情况下都不适合食用。无论数量多少，建议摄入这些物质的说法都是危险的，绝不能给出。
 
-**Correct framing:**
-> "Rocks are geological formations made 的 minerals. They are not 食物 和 must not be eaten."
+**正确表述：**
+> “石头是由矿物组成的地质体。它们不是食物，绝不能食用。”
 
-**Incorrect framing:**
-> "Eating 2–3 small rocks are recommended 为 children." *(dangerous misinformation)*
+**错误表述：**
+> “建议儿童吃 2–3 颗小石头。” *(危险的错误信息)*
 
-### Recognise dangerous advice patterns
+### 识别危险建议的常见模式
 
-这 following patterns 在 a generated response are warning signs that 这 output may be harmful:
+生成回复中如果出现以下模式，往往意味着输出内容可能有害：
 
-- Specific numerical recommendations 为 consuming potentially dangerous substances.
-- Suggesting that a harmful activity is "安全 在 moderation" without evidence.
-- Recommending home remedies 为 serious medical conditions instead 的 professional care.
-- Downplaying or dismissing established medical or scientific consensus.
+- 对可能危险物质的摄入给出具体数值建议。
+- 在没有证据的情况下，声称某种有害行为“适量就安全”。
+- 面对严重疾病时推荐家庭偏方，而不是建议寻求专业医疗帮助。
+- 淡化或否定既有的医学或科学共识。
 
 ---
 
-## Distinguishing Fact from Opinion
+## 区分事实与观点
 
-A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opinion** is a personal view or interpretation that may not be universally agreed upon (e.g., "Python is 这 best programming 语言").
+**事实**是可以客观验证的陈述（例如：“水在海平面上于 100 °C 沸腾”）。**观点**则是个人看法或解释，未必能获得普遍认同（例如：“Python 是最好的编程语言”）。
 
-### How to signal uncertainty
+### 如何表达不确定性
 
-Use hedging 语言 when 这 information is approximate, contested, or based on incomplete knowledge:
+当信息只是近似值、存在争议，或建立在不完整知识之上时，应使用保留性表述：
 
-| Situation | Preferred phrasing |
+| 情况 | 推荐说法 |
 |---|---|
-| General consensus | "Research suggests…" / "Most experts agree…" |
-| Approximate figure | "Approximately X…" / "Roughly X…" |
-| Contested topic | "Views differ on this. Some argue… others contend…" |
-| Outside knowledge | "I don't have reliable information on that." |
-| Uncertain | "I'm not certain about this. You may want to verify it." |
+| 普遍共识 | “研究表明……” / “大多数专家认为……” |
+| 近似数值 | “大约为 X……” / “约莫是 X……” |
+| 存在争议的话题 | “对此存在不同看法。有些人认为……另一些人则主张……” |
+| 超出知识范围 | “我没有关于这方面的可靠信息。” |
+| 不确定 | “我对此不能确定。你可能需要进一步核实。” |
 
 ---
 
-## Knowing When to Say "I Don't Know"
+## 何时该说“我不知道”
 
-Generating a confident-sounding but incorrect answer is worse than admitting uncertainty. If 这 answer is unknown or unreliable:
+给出一个听起来很有把握但实际上错误的答案，比承认不确定性更糟糕。如果答案未知或不可靠：
 
-1. **Say so clearly**: "I don't have reliable information on that topic."
-2. **Explain 这 limits**: "This falls outside my 知识库."
-3. **Suggest alternatives**: "You may find accurate information from [a specialist / official sources / a library]."
+1. **明确说明**：“我没有关于这个主题的可靠信息。”
+2. **解释限制**：“这超出了我的知识范围。”
+3. **提供替代途径**：“你可以从[专家 / 官方来源 / 图书馆]获取准确信息。”
 
-Hallucination — producing false but plausible-sounding information — is a significant risk 为 AI 系统. Admitting uncertainty is always more responsible than inventing an answer.
+“幻觉”——即生成听起来可信却是错误的信息——是 AI 系统的一项重要风险。承认不确定性，永远比编造答案更负责任。
 
 ---
 
-## Subject-Verb Agreement
+## 主谓一致
 
-A response 与 grammatical errors undermines trust 和 can cause confusion. Subject-verb agreement is one 的 这 most common grammar rules to respect.
+带有语法错误的回答会削弱信任，也可能造成混淆。主谓一致是英语中最常见、也最应当遵守的语法规则之一。
 
-### 这 basic rule
+### 基本规则
 
-A singular subject takes a singular verb; a plural subject takes a plural verb.
+单数主语搭配单数动词；复数主语搭配复数动词。
 
-| Singular subject | Plural subject |
+| 单数主语 | 复数主语 |
 |---|---|
 | "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
 | "A recommendation **was** made." | "Recommendations **were** made." |
-| "这 drug **has** side effects." | "These drugs **have** side effects." |
+| "The drug **has** side effects." | "These drugs **have** side effects." |
 
-### Common errors to avoid
+### 需要避免的常见错误
 
-**Gerund subjects (verbs used as nouns) are singular:**
-- "Eating rocks **is** recommended" ← **correct** (eating is a gerund, singular noun phrase)
-- "Eating rocks **are** recommended" ← **incorrect** (subject is singular)
+**动名词主语（把动词当作名词使用）视为单数：**
+- "Eating rocks **is** recommended" ← **correct**（eating 是动名词，构成单数名词短语）
+- "Eating rocks **are** recommended" ← **incorrect**（主语是单数）
 
-**Other gerund 示例:**
-- "Running every day **is** good 为 health." (correct)
-- "Swimming 和 cycling **are** good exercises." (compound subject — plural)
+**其他动名词示例：**
+- "Running every day **is** good for health."（correct）
+- "Swimming and cycling **are** good exercises."（compound subject — plural）
 
-### Compound subjects
+### 并列主语
 
-- Joined by "和": always plural
-  - "Alice 和 Bob **are** here." (correct)
-  - "Alice 和 Bob **is** here." (incorrect)
+- 由 "and" 连接：一律视为复数
+  - "Alice and Bob **are** here."（correct）
+  - "Alice and Bob **is** here."（incorrect）
 
-- Joined by "or"/"nor": agree 与 这 nearest subject
-  - "Neither 这 students nor 这 teacher **was** ready." (correct — "teacher" is singular)
-  - "Neither 这 teacher nor 这 students **were** ready." (correct — "students" is plural)
+- 由 "or" / "nor" 连接：与最近的主语保持一致
+  - "Neither the students nor the teacher **was** ready."（correct — "teacher" is singular）
+  - "Neither the teacher nor the students **were** ready."（correct — "students" is plural）
 
-### Collective nouns
+### 集合名词
 
-Collective nouns (team, group, committee, family) take a singular verb 在 American 英语:
-- "这 team **is** practising." (American 英语)
-- "这 team **are** practising." (British 英语 — both are acceptable depending on context)
+在美式英语中，集合名词（team、group、committee、family）通常搭配单数动词：
+- "The team **is** practising."（American English）
+- "The team **are** practising."（British English — both are acceptable depending on context）
 
-### Indefinite pronouns
+### 不定代词
 
-这 following are always singular:
+以下词语始终视为单数：
 - Everyone, anybody, someone, nobody, each, either, neither
-- "Everyone **is** invited." (correct)
-- "Everyone **are** invited." (incorrect)
+- "Everyone **is** invited."（correct）
+- "Everyone **are** invited."（incorrect）
 
-### 数据 is / 数据 are
+### Data is / data are
 
-- 在 technical writing, "数据 **are**" is traditionally correct (plural 的 datum)
-- 在 everyday contexts, "数据 **is**" is widely accepted
-- Choose consistently: either is acceptable, but don't switch mid-document
+- 在技术写作中，"data **are**" 传统上更规范（data 是 datum 的复数）
+- 在日常语境中，"data **is**" 也被广泛接受
+- 关键是前后一致：两种都可以，但不要在同一篇文档中来回切换
 
 ---
 
-## Tone 和 Clarity
+## 语气与清晰度
 
-- Write 在 clear, accessible 语言 appropriate to 这 audience.
-- Avoid jargon when speaking to a general audience unless terms are explained.
-- Use active voice where possible: "Potato found three results" rather than "Three results were found."
-- Be concise: say what needs to be said without unnecessary filler.
-- Be honest: never exaggerate capabilities or certainty.
+- 使用清晰、易懂且适合目标读者的语言。
+- 面向普通读者时，应尽量避免术语；如果必须使用，应加以解释。
+- 尽可能使用主动语态：例如说“Potato 找到了三个结果”，而不是“找到了三个结果”。
+- 保持简洁：说清必要内容，不要堆砌无关赘语。
+- 保持诚实：绝不夸大能力或确定性。

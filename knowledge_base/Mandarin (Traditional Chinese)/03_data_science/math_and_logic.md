@@ -1,194 +1,187 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: math_and_logic.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 數學與邏輯
 
-# Mathematics 和 Logic
+## 什麼是數學？
 
-## What is Mathematics?
+數學是研究數字、形狀、模式和邏輯關係的學科。它既是一門科學，也是一種用來描述宇宙的語言。數學分為多個分支，包括算術、代數、幾何、微積分、統計和邏輯。數學是物理學、工程學、電腦科學、經濟學和許多其他領域的基礎。
 
-Mathematics is 這 study 的 numbers, shapes, patterns, 和 logical relationships. It is both a 科學 和 a 語言 used to describe 這 universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, 統計, 和 logic. Mathematics is 這 foundation 的 physics, engineering, computer 科學, 經濟, 和 many other fields.
+## 算術
 
-## Arithmetic
+算術是處理數字基本運算的數學分支。四個基本運算是加法（+）、減法（−）、乘法（×）和除法（÷）。運算順序指定了計算必須執行的順序：括號、指數、乘法和除法（從左到右）、加法和減法（從左到右）。這通常被記憶為 **PEMDAS** 或 **BODMAS**。質數是大於 1 且除了 1 和它本身之外沒有其他因數的整數。最初的幾個質數是 2、3、5、7、11、13、17、19、23 和 29。
 
-Arithmetic is 這 branch 的 mathematics dealing 與 basic operations on numbers. 這 four fundamental operations are addition (+), subtraction (−), multiplication (×), 和 division (÷). 這 order 的 operations specifies 這 sequence 在 which calculations must be performed: Parentheses, Exponents, Multiplication 和 Division (left to right), Addition 和 Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 和 itself. 這 first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, 和 29.
+**範例：**
+- 質因數分解：84 = 2² × 3 × 7
+- 24 和 36 的最大公因數（GCD）：12
+- 4 和 6 的最小公倍數（LCM）：12
 
-**範例:**
-- Prime factorization: 84 = 2² × 3 × 7
-- Greatest Common Divisor (GCD) 的 24 和 36: 12
-- Least Common Multiple (LCM) 的 4 和 6: 12
+## 代數
 
-## Algebra
+代數使用字母和符號在方程式和公式中表示數字和量。**變數**是一個符號（通常是字母），表示未知或變化的量。**方程式**說明兩個表達式相等。解方程式意味著找到使方程式成立的變數值。
 
-Algebra uses letters 和 symbols to represent numbers 和 quantities 在 equations 和 formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding 這 value(s) 的 這 variable(s) that make 這 equation true.
-
-這 **quadratic formula** solves equations 的 這 form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
+**一元二次公式**解決 ax² + bx + c = 0 形式的方程式：x = (−b ± √(b²−4ac)) / (2a)
 
 
-A **function** maps each input to exactly one output. Common functions include:
-- Linear: y = mx + b (straight line, constant rate 的 change)
-- Quadratic: y = ax² + bx + c (parabola, curved)
-- Exponential: y = a × bˣ (growth or decay, rapid change)
-- Logarithmic: y = log_b(x) (inverse 的 exponential)
+**函數**將每個輸入對應到恰好一個輸出。常見函數包括：
+- 線性：y = mx + b（直線，恆定的變化率）
+- 二次：y = ax² + bx + c（拋物線，彎曲）
+- 指數：y = a × bˣ（增長或衰減，快速變化）
+- 對數：y = log_b(x)（指數的反函數）
 
-**Key concepts:**
-- Domain: 這 set 的 all possible input values
-- Range: 這 set 的 all possible output values
-- Slope: rate 的 change (m 在 y = mx + b)
-- Intercept: where 這 function crosses 這 y-axis (b 在 y = mx + b)
+**關鍵概念：**
+- 定義域：所有可能輸入值的集合
+- 值域：所有可能輸出值的集合
+- 斜率：變化率（y = mx + b 中的 m）
+- 截距：函數與 y 軸相交的位置（y = mx + b 中的 b）
 
-## Geometry
+## 幾何
 
-Geometry is 這 branch 的 mathematics that studies shapes, sizes, positions, 和 properties 的 figures. A point has no size; it represents a location. A line extends infinitely 在 both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
+幾何是研究圖形的形狀、大小、位置和性質的數學分支。點沒有大小；它表示一個位置。線在兩個方向上無限延伸。線段有兩個端點。角由共享一個端點的兩條射線形成。
 
-**Key rules:**
-- 這 sum 的 angles 在 a triangle is always 180 degrees.
-- 這 sum 的 angles 在 a quadrilateral is always 360 degrees.
-- 這 Pythagorean theorem: 在 a right triangle, a² + b² = c² (where c is 這 hypotenuse).
-- Circle circumference: 2πr
-- Circle area: πr²
-- Sphere volume: (4/3)πr³
+**關鍵規則：**
+- 三角形的角度和總是 180 度。
+- 四邊形的角度和總是 360 度。
+- 畢氏定理：在直角三角形中，a² + b² = c²（其中 c 是斜邊）。
+- 圓周長：2πr
+- 圓面積：πr²
+- 球體體積：(4/3)πr³
 
-**π (pi)** is approximately 3.14159 和 is 這 ratio 的 a circle's circumference to its diameter.
+**π（圓周率）**約為 3.14159，是圓的周長與直徑的比率。
 
-**Common geometric shapes:**
-- Triangle: 3 sides, angles sum to 180°
-- Square: 4 equal sides, 4 right angles
-- Rectangle: 4 sides, opposite sides equal, 4 right angles
-- Circle: no sides, continuous curved boundary
-- Pentagon: 5 sides, angles sum to 540°
-- Hexagon: 6 sides, angles sum to 720°
+**常見幾何圖形：**
+- 三角形：3 條邊，角度和為 180°
+- 正方形：4 條相等的邊，4 個直角
+- 矩形：4 條邊，對邊相等，4 個直角
+- 圓形：無邊，連續彎曲的邊界
+- 五邊形：5 條邊，角度和為 540°
+- 六邊形：6 條邊，角度和為 720°
 
-## 統計 和 Probability
+## 統計與機率
 
-統計 is 這 科學 的 collecting, analysing, interpreting, 和 presenting 資料.
+統計學是收集、分析、解釋和呈現資料的科學。
 
-**Measures 的 central tendency:**
-- **Mean** (average): sum 的 all values divided by 這 number 的 values
-- **Median**: middle value when 資料 is sorted (less sensitive to outliers)
-- **Mode**: most frequently occurring value (can have multiple modes)
+**集中趨勢量數：**
+- **平均數**（算術平均）：所有值的總和除以值的數量
+- **中位數**：資料排序後的中間值（對離群值較不敏感）
+- **眾數**：最常出現的值（可以有多個眾數）
 
-**Measures 的 spread:**
-- **Range**: maximum - minimum
-- **Variance**: average 的 squared deviations from 這 mean
-- **Standard deviation**: square root 的 variance (在 same units as 資料)
+**離散程度量數：**
+- **全距**：最大值 − 最小值
+- **變異數**：與平均數的平方偏差的平均值
+- **標準差**：變異數的平方根（與資料相同單位）
 
-Probability measures 這 likelihood 的 an event occurring, ranging from 0 (impossible) to 1 (certain). 這 probability 的 two independent 事件 both occurring is 這 product 的 their individual probabilities.
+機率測量事件發生的可能性，範圍從 0（不可能）到 1（確定）。兩個獨立事件都發生的機率是它們各自機率的乘積。
 
-**Example:** Probability 的 rolling a 6 on a fair die: 1/6. Probability 的 rolling two 6s 在 a row: (1/6) × (1/6) = 1/36.
+**範例：**擲骰子得到 6 的機率：1/6。連續擲出兩個 6 的機率：(1/6) × (1/6) = 1/36。
 
-## Probability 為 計算 和 ML
+## 運算與 ML 的機率
 
-A **random variable** is a variable whose value depends on 這 outcome 的 a random process. A **probability distribution** describes how likely each outcome is.
+**隨機變數**是其值取決於隨機過程結果的變數。**機率分佈**描述每個結果的可能性。
 
-**Common distributions:**
-- **Bernoulli**: single trial 與 two outcomes (e.g., coin flip)
-- **Binomial**: number 的 successes 在 n independent Bernoulli trials
-- **Normal (Gaussian)**: bell curve, symmetric around 這 mean (common 在 natural phenomena)
-- **Poisson**: number 的 事件 在 a fixed interval (e.g., emails per hour)
+**常見分佈：**
+- **Bernoulli**：單次試驗，兩種結果（例如擲硬幣）
+- **Binomial**：n 次獨立 Bernoulli 試驗中的成功次數
+- **Normal（Gaussian）**：鐘形曲線，圍繞平均數對稱（常見於自然現象）
+- **Poisson**：固定區間內的事件數量（例如每小時的電子郵件數）
 
-**Expected value** is 這 long-run average outcome 的 a random variable. **Variance** measures spread around that expectation.
+**期望值**是隨機變數的長期平均結果。**變異數**測量圍繞期望值的離散程度。
 
-**Conditional probability** describes 這 probability 的 an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
+**條件機率**描述在另一個事件已發生的條件下某個事件的機率：P(A|B) = P(A ∩ B) / P(B) [如果 P(B) > 0]。
 
-**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
+**貝氏定理**使用證據更新信念：P(A|B) = P(B|A) × P(A) / P(B)。
 
 
-在 機器學習, probability underpins classification confidence, uncertainty estimation, Bayesian methods, 和 many loss functions (such as cross-entropy).
+在機器學習中，機率是分類信心、不確定性估計、貝氏方法和許多損失函數（如交叉熵）的基礎。
 
-## Calculus
+## 微積分
 
-Calculus is 這 branch 的 mathematics that studies continuous change.
+微積分是研究連續變化的數學分支。
 
-**Differential calculus** deals 與 rates 的 change 和 slopes 的 curves, using **derivatives**. 這 derivative 的 a function f(x) represents 這 rate 的 change 的 f 與 respect to x at a point. Notation: f'(x) or df/dx.
+**微分學**處理變化率和曲線的斜率，使用**導數**。函數 f(x) 的導數表示 f 相對於 x 在某點的變化率。符號：f'(x) 或 df/dx。
 
-**Common derivatives:**
+**常見導數：**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
 - d/dx [sin(x)] = cos(x)
 
-**Integral calculus** deals 與 accumulation 的 quantities 和 areas under curves, using **integrals**. 這 integral represents 這 area under 這 curve between two points.
+**積分學**處理量的累積和曲線下的面積，使用**積分**。積分表示兩點之間曲線下的面積。
 
-這 **fundamental theorem 的 calculus** connects differentiation 和 integration: differentiation 和 integration are inverse operations.
+**微積分基本定理**連接微分和積分：微分和積分是互逆運算。
 
-Calculus was developed independently by Isaac Newton 和 Gottfried Wilhelm Leibniz 在 這 17th century.
+微積分是由 Isaac Newton 和 Gottfried Wilhelm Leibniz 在 17 世紀各自獨立發展出來的。
 
-## Number 系統
+## 數系
 
-- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
-- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
-- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers 和 their negatives)
-- **Rational numbers**: numbers expressible as p/q where p 和 q are integers 和 q ≠ 0 (e.g., 1/2, 3/4, −5/3)
-- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
-- **Real numbers**: all rational 和 irrational numbers (這 number line)
-- **Imaginary numbers**: involve 這 square root 的 negative numbers; i = √(−1)
-- **Complex numbers**: combine real 和 imaginary parts (a + bi)
+- **自然數**：1、2、3、4、...（計數數字）
+- **整數**：0、1、2、3、...（自然數加上零）
+- **整數**：...、−2、−1、0、1、2、...（所有整數及其負數）
+- **有理數**：可表示為 p/q 的數字，其中 p 和 q 是整數且 q ≠ 0（例如 1/2、3/4、−5/3）
+- **無理數**：無法表示為分數（例如 √2、π、e）
+- **實數**：所有有理數和無理數（數線）
+- **虛數**：涉及負數的平方根；i = √(−1)
+- **複數**：結合實數和虛數部分（a + bi）
 
-## Logic 和 Reasoning
+## 邏輯與推理
 
-Logic is 這 study 的 valid reasoning.
+邏輯是研究有效推理的學科。
 
-**Deductive reasoning** draws specific conclusions from general premises. If 這 premises are true 和 這 argument is valid, 這 conclusion must be true.
-- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
+**演繹推理**從一般前提得出具體結論。如果前提為真且論證有效，則結論必定為真。
+- **範例：**所有人類都會死。蘇格拉底是人類。因此，蘇格拉底會死。
 
-**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee 這 conclusion is true, but makes it probable.
-- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
+**歸納推理**從具體觀察得出一般結論。它不能保證結論為真，但使其成為可能。
+- **範例：**我看到的每隻天鵝都是白色的。因此，所有天鵝都是白色的。（注意：這是錯誤的；黑天鵝存在！）
 
-**Common logical fallacies (errors 在 reasoning):**
-- **Ad hominem**: attacking 這 person rather than 這 argument
-- **Straw man**: misrepresenting an argument to make it easier to attack
-- **False dichotomy**: presenting only two options when more exist
-- **Circular reasoning**: using 這 conclusion as a premise
-- **Appeal to authority**: claiming something is true because an authority says so
-- **Post hoc fallacy**: assuming that because A happened before B, A caused B
+**常見邏輯謬誤（推理錯誤）：**
+- **訴諸人身**：攻擊人而不是論點
+- **稻草人謬誤**：歪曲論點使其更容易攻擊
+- **錯誤二分法**：當存在更多選項時只呈現兩個選項
+- **循環論證**：使用結論作為前提
+- **訴諸權威**：因為權威這麼說就聲稱某事為真
+- **後此謬誤**：假設因為 A 在 B 之前發生，A 導致了 B
 
-## Sets
+## 集合
 
-A **set** is a collection 的 distinct objects.
-- **Union** (A ∪ B): all elements from both sets
-- **Intersection** (A ∩ B): only elements common to both
-- **Empty set** (∅ or {}): contains no elements
-- **Subset** (A ⊆ B): all elements 的 A are also 在 B
-- **Venn diagrams**: visually represent relationships between sets
+**集合**是不同物件的集合。
+- **聯集**（A ∪ B）：來自兩個集合的所有元素
+- **交集**（A ∩ B）：僅兩個集合共有的元素
+- **空集**（∅ 或 {}）：不包含任何元素
+- **子集**（A ⊆ B）：A 的所有元素也在 B 中
+- **文氏圖**：視覺化表示集合之間的關係
 
-Set theory is 這 foundation 的 modern mathematics 和 logic.
+集合論是現代數學和邏輯的基礎。
 
-## Binary 和 Number Bases
+## 二進位與數字基底
 
-Computers represent 資料 在 **binary** (base 2), using only digits 0 和 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
+電腦以**二進位**（基底 2）表示資料，僅使用數字 0 和 1。每個二進位數字稱為**位元**。八個位元組成一個**位元組**。
 
-**Decimal** is 這 base-10 number system humans typically use.
+**十進位**是人類通常使用的基底 10 數字系統。
 
-**Hexadecimal** is base 16, using digits 0–9 和 letters A–F, often used 在 計算 to represent binary 資料 compactly.
+**十六進位**是基底 16，使用數字 0–9 和字母 A–F，常用於運算中以緊湊方式表示二進位資料。
 
-**Conversions:**
-- Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
-- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
+**轉換：**
+- 二進位 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11（十進位）
+- 十六進位 A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163（十進位）
 
-Converting between number bases is a fundamental concept 在 computer 科學.
+數字基底之間的轉換是電腦科學中的基本概念。
 
-## Linear Algebra 為 Developers 和 ML
+## 開發者與 ML 的線性代數
 
-Linear algebra studies vectors, matrices, 和 linear transformations.
+線性代數研究向量、矩陣和線性變換。
 
-A **vector** is an ordered list 的 numbers (e.g., features 在 an ML sample).
-- Example: [23, 1.8, 175] represents a person's age, height, 和 weight
+**向量**是一個有序的數字列表（例如 ML 樣本中的特徵）。
+- 範例：[23, 1.8, 175] 表示一個人的年齡、身高和體重
 
-A **matrix** is a 2D array 的 numbers (e.g., model weights or dataset batches).
-- Example: [[1, 2], [3, 4]] is a 2×2 matrix
+**矩陣**是數字的 2D 陣列（例如模型權重或資料集批次）。
+- 範例：[[1, 2], [3, 4]] 是一個 2×2 矩陣
 
-**Matrix multiplication** combines linear transformations 和 is a core operation 在 graphics, simulation, 和 神經網絡.
+**矩陣乘法**結合線性變換，是圖形、模擬和神經網路中的核心運算。
 
-**Dot product** measures similarity 和 projection between vectors:
+**點積**測量向量之間的相似性和投影：
 - a·b = Σ(a_i × b_i)
-- **Cosine similarity** = (a·b) / (||a|| × ||b||)
-- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
+- **餘弦相似度** = (a·b) / (||a|| × ||b||)
+- 餘弦相似度範圍從 -1（相反）到 1（相同方向）
 
-**Eigenvalues 和 eigenvectors** describe directions that are scaled (not rotated) by a matrix 和 are used 在 methods such as PCA (Principal Component Analysis).
+**特徵值和特徵向量**描述矩陣縮放（不旋轉）的方向，並用於諸如 PCA（主成分分析）等方法。
 
-**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful 為 compression 和 dimensionality reduction.
+**秩**表示矩陣包含多少獨立資訊。低秩近似對壓縮和降維很有用。
 
-Most modern ML workloads rely heavily on optimized linear algebra libraries 和 hardware acceleration.
+大多數現代 ML 工作負載高度依賴最佳化的線性代數函式庫和硬體加速。

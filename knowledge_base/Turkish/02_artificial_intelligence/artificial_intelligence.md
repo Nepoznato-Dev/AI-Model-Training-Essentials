@@ -1,91 +1,84 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: artificial_intelligence.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Yapay Zekâ
 
-# Artificial Intelligence
+## Yapay Zekâ Nedir?
 
-## What is Artificial Intelligence?
+Yapay Zekâ (AI), düşünmek, öğrenmek ve problem çözmek üzere programlanmış makinelerde insan zekâsının benzetimini ifade eder. AI sistemleri; konuşmayı tanıma, karar verme, diller arasında çeviri yapma ve görüntülerde nesneleri belirleme gibi normalde insan zekâsı gerektiren görevleri yerine getirebilir. Terim, 1956'da Dartmouth Konferansı'nda John McCarthy tarafından ortaya atılmıştır; bu konferans, AI alanının kurucu etkinliği olarak yaygın biçimde kabul edilir.
 
-Artificial Intelligence (AI) refers to bu simulation içinde human intelligence içinde machines programmed to think, learn, ve solve problems. AI Sistemler can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, ve identifying objects içinde images. bu term was coined by John McCarthy içinde 1956 at bu Dartmouth Conference, widely regarded as bu founding event içinde AI as a field.
+Modern AI genel olarak, belirli görevler için tasarlanan Dar AI (Zayıf AI olarak da adlandırılır) ve tüm alanlarda insanın bilişsel yeteneğine eşit ya da onu aşacak kuramsal Yapay Genel Zekâ (AGI) olmak üzere ikiye ayrılır. Günümüzdeki tüm AI sistemleri Dar AI kapsamındadır.
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed için specific tasks, ve bu theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Sistemler are Narrow AI.
+## AI Tarihi
 
-## Tarih içinde AI
+AI tarihinin kapsamı yaklaşık seksen yıla uzanır. Erken kuramsal temeller Alan Turing tarafından atılmıştır; Turing'in 1950 tarihli "Computing Machinery and Intelligence" makalesi, bir makinenin insandan ayırt edilemeyecek zeki davranış sergileyebilme yeteneğini ölçen Turing Testi'ni tanıtmıştır. 1956 Dartmouth Konferansı ise AI'ı resmen akademik bir disiplin olarak kurmuştur.
 
-bu Tarih içinde AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Bilişim Machinery ve Intelligence" introduced bu Turing Test — a measure içinde a machine's ability to exhibit intelligent behaviour indistinguishable from a human. bu 1956 Dartmouth Conference formally established AI as an academic discipline.
+1950'lerden 1970'lere kadar ELIZA (basit bir sohbet botu) ve LISP (AI için tasarlanmış bir programlama dili) gibi iyimser erken dönem programlar görüldü. 1970'ler ve 1980'lerdeki "AI kışları", karşılanamayan beklentilerin ardından fonların ve ilginin azaldığı dönemlerdi. 1980'lerde kural tabanlı, insan uzmanlığını kodlayan programlar olan uzman sistemlerle yeniden canlanma yaşandı. 2000'ler, internetin ve büyüyen veri kümelerinin beslediği makine öğrenmesi atılımlarını getirdi. 2010'larda derin öğrenmenin yükselişi; bilgisayarlı görü, doğal dil işleme (NLP) ve pekiştirmeli öğrenmeyi dönüştürdü.
 
-bu 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) ve LISP (a programming Dil designed için AI). bu "AI winters" içinde bu 1970s ve 1980s were periods içinde reduced funding ve interest following unmet expectations. A resurgence içinde bu 1980s came ile expert Sistemler — rule-based programs that encoded human expertise. bu 2000s brought Makine Öğrenimi breakthroughs fuelled by bu internet ve growing datasets. bu 2010s saw bu rise içinde Derin Öğrenme, transforming computer vision, natural Dil processing (NLP), ve reinforcement learning.
+## Makine Öğrenmesi
 
-## Makine Öğrenimi
+Makine Öğrenmesi (ML), sistemlerin açıkça programlanmadan veriden öğrenmesini sağlayan AI'ın bir alt alanıdır. Başlıca ML kategorileri şunlardır:
 
-Makine Öğrenimi (ML) is a subset içinde AI that enables Sistemler to learn from Veri without being explicitly programmed. Key ML categories include:
+**Denetimli Öğrenme**: Model, etiketlenmiş girdi-çıktı çiftleri üzerinde eğitilir. Örnekler arasında spam tespiti ve görüntü sınıflandırma yer alır. Algoritmalar arasında doğrusal regresyon, karar ağaçları, destek vektör makineleri ve sinir ağları bulunur.
 
-**Supervised Learning**: bu model is trained on labelled input-output pairs. Örnekler include spam detection ve image classification. Algorithms include linear regression, decision trees, Destek vector machines, ve Sinir Ağları.
+**Denetimsiz Öğrenme**: Model, etiketsiz verilerde örüntüler bulur. Örnekler arasında müşteri segmentasyonu ve anomali tespiti yer alır. Algoritmalar arasında k-means kümeleme ve temel bileşen analizi (PCA) bulunur.
 
-**Unsupervised Learning**: bu model finds patterns içinde unlabelled Veri. Örnekler include customer segmentation ve anomaly detection. Algorithms include k-means clustering ve principal component analysis (PCA).
+**Pekiştirmeli Öğrenme**: Bir ajan, bir ortamla etkileşime girerek ödüller veya cezalar alır ve bu yolla öğrenir. Oyun oynayan AI sistemlerinde (AlphaGo, AlphaZero), robotikte ve öneri sistemlerinde kullanılır.
 
-**Reinforcement Learning**: An agent learns by interacting ile an environment, receiving rewards or penalties. Used içinde game-playing AI (AlphaGo, AlphaZero), robotics, ve recommendation Sistemler.
-
-**Semi-Supervised ve Self-Supervised Learning**: Combine small amounts içinde labelled Veri ile large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+**Yarı Denetimli ve Öz Denetimli Öğrenme**: Az miktarda etiketli veriyi büyük etiketsiz veri kümeleriyle birleştirir. GPT modelleri, ön eğitim sırasında öz denetimli bir yaklaşım kullanır.
 
 ## Derin Öğrenme
 
-Derin Öğrenme is a subset içinde Makine Öğrenimi that uses artificial Sinir Ağları ile many layers (deep networks). Inspired loosely by bu brain's neural structure, these networks learn hierarchical representations içinde Veri. Derin Öğrenme powers:
+Derin Öğrenme, çok katmanlı yapay sinir ağlarını (derin ağları) kullanan makine öğrenmesinin bir alt alanıdır. Beynin sinirsel yapısından genel olarak esinlenen bu ağlar, verinin hiyerarşik temsillerini öğrenir. Derin öğrenme şunları mümkün kılar:
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural Dil Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+- **Bilgisayarlı Görü**: Görüntü tanıma, nesne tespiti, tıbbi görüntüleme
+- **Doğal Dil İşleme**: Makine çevirisi, duygu analizi, soru yanıtlama
+- **Konuşma Tanıma**: Siri, Alexa, Google Assistant gibi sesli asistanlar
+- **Üretken AI**: Görüntü üretimi (DALL-E, Stable Diffusion), metin üretimi (GPT)
 
-Key Derin Öğrenme architectures include convolutional Sinir Ağları (CNNs) için images, recurrent Sinir Ağları (RNNs) ve LSTMs için sequences, transformers için Dil, ve generative adversarial networks (GANs) için synthesis.
+Başlıca derin öğrenme mimarileri arasında görüntüler için evrişimli sinir ağları (CNN'ler), diziler için tekrarlayan sinir ağları (RNN'ler) ve LSTM'ler, dil için transformer'lar ve sentez için üretici çekişmeli ağlar (GAN'ler) bulunur.
 
-## Large Dil Models (LLMs)
+## Büyük Dil Modelleri (LLM'ler)
 
-Large Dil Models (LLMs) are AI Sistemler trained on vast amounts içinde text Veri to understand ve generate human Dil. They are based on bu Transformer Mimari, introduced içinde bu 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict bu next token (word piece) içinde a sequence, allowing them to generate coherent text, answer questions, write code, ve perform reasoning tasks.
+Büyük Dil Modelleri (LLM'ler), insan dilini anlamak ve üretmek için çok büyük miktarda metin verisi üzerinde eğitilen AI sistemleridir. Vaswani ve arkadaşlarının 2017 tarihli "Attention is All You Need" makalesinde tanıtılan Transformer mimarisine dayanırlar. LLM'ler bir dizideki bir sonraki token'ı (kelime parçasını) tahmin eder; bu da onların tutarlı metin üretmesini, soruları yanıtlamasını, kod yazmasını ve akıl yürütme görevlerini yerine getirmesini sağlar.
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, ve successors — widely used için chat ve code
-- **Claude** (Anthropic): Focused on safety ve helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, ve code
-- **LLaMA / Llama 3** (Meta): Open-weight models için research ve local Dağıtım
-- **Mistral** (Mistral AI): Efficient open models competitive ile much larger LLMs
+Dikkate değer LLM'ler şunlardır:
+- **GPT serisi** (OpenAI): GPT-3, GPT-4 ve ardılları — sohbet ve kod için yaygın olarak kullanılır
+- **Claude** (Anthropic): Güvenlik ve faydalılığa odaklanır
+- **Gemini** (Google DeepMind): Metin, görüntü ve kodu birleştiren çok modlu model
+- **LLaMA / Llama 3** (Meta): Araştırma ve yerel dağıtım için açık ağırlıklı modeller
+- **Mistral** (Mistral AI): Çok daha büyük LLM'lerle rekabet edebilen verimli açık modeller
 
-LLMs are trained içinde two stages: pre-training (unsupervised on large text corpora) ve fine-tuning (supervised or via reinforcement learning from human Geri Bildirim, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens içinde bu most İleri Düzey 2024 models.
+LLM'ler iki aşamada eğitilir: ön eğitim (büyük metin derlemleri üzerinde denetimsiz) ve ince ayar (denetimli veya insan geri bildiriminden pekiştirmeli öğrenme, RLHF, yoluyla). Bağlam pencereleri, bir LLM'in tek seferde ne kadar metni işleyebileceğini tanımlar; bu kapasite erken GPT-3'te 4K token'dan, en gelişmiş 2024 modellerinde 1 milyonu aşan token'a kadar değişir.
 
-## AI Ethics ve Safety
+## AI Etiği ve Güvenliği
 
-AI raises important ethical questions including bias, privacy, job displacement, ve bu risk içinde misuse. Algorithmic bias occurs when training Veri reflects historical inequalities, causing AI Sistemler to produce discriminatory outputs. Facial recognition Sistemler have shown higher error rates için darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+AI; önyargı, gizlilik, iş kaybı ve kötüye kullanım riski gibi önemli etik sorular doğurur. Algoritmik önyargı, eğitim verileri tarihsel eşitsizlikleri yansıttığında ortaya çıkar ve AI sistemlerinin ayrımcı çıktılar üretmesine neden olur. Yüz tanıma sistemlerinin koyu tenli bireylerde daha yüksek hata oranları gösterdiği görülmüştür. İşe alım algoritmalarının erkek adayları kayırdığı saptanmıştır.
 
-AI safety is bu field dedicated to ensuring AI Sistemler behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical içinde Tıp, Hukuk, Finans)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a Gelecek AGI could pursue goals misaligned ile human survival
+AI güvenliği, AI sistemlerinin istenmeyen zararlara yol açmadan amaçlandığı gibi davranmasını sağlamaya adanmış alandır. Başlıca kaygılar şunlardır:
+- **Hizalanma**: AI hedeflerinin insan değerleriyle uyumlu olmasını sağlama
+- **Yorumlanabilirlik / Açıklanabilirlik**: Bir AI'ın neden belirli bir karar verdiğini anlama (tıp, hukuk ve finans alanlarında kritik önemdedir)
+- **Kötüye kullanım**: AI tarafından üretilen deepfake'ler, dezenformasyon, siber saldırılar
+- **Varoluşsal risk**: Gelecekteki bir AGI'ın insanlığın hayatta kalmasıyla uyumsuz hedefler izleyebileceğine dair kuramsal kaygı
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, ve independent institutes like MIRI ve ARC.
+AI güvenliği üzerinde çalışan kuruluşlar arasında OpenAI'ın Safety ekibi, Anthropic (eski OpenAI güvenlik araştırmacıları tarafından kurulmuştur), DeepMind'ın güvenlik ekibi ve MIRI ile ARC gibi bağımsız enstitüler bulunur.
 
-## AI içinde Society
+## Toplumda AI
 
-AI is transforming nearly every industry:
+AI neredeyse her sektörü dönüştürmektedir:
 
-- **Sağlık Hizmetleri**: AI assists içinde diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), ve personalising treatment plans.
-- **Finans**: Fraud detection, algorithmic trading, credit scoring, ve robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, ve reinforcement learning. Tesla Autopilot, Waymo, ve Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace ve learning style.
-- **Creative fields**: AI generates music, art, ve writing; tools like Midjourney, DALL-E, ve GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, ve powers both attacks ve defences.
+- **Sağlık hizmetleri**: AI, tıbbi görüntülerden kanser tanısına yardımcı olur, hasta sonuçlarını öngörür, ilaç keşfini hızlandırır (AlphaFold protein katlanması yapı tahmini sorununu çözmüştür) ve tedavi planlarını kişiselleştirir.
+- **Finans**: Dolandırıcılık tespiti, algoritmik alım satım, kredi puanlama ve robo-danışmanlar ML modellerini kullanır.
+- **Ulaşım**: Otonom araçlar bilgisayarlı görü, lidar ve pekiştirmeli öğrenme kullanır. Tesla Autopilot, Waymo ve Cruise bu alandaki öncü girişimlerdendir.
+- **Eğitim**: Kişiselleştirilmiş öğrenme platformları, içeriği öğrencinin bireysel hızına ve öğrenme tarzına uyarlar.
+- **Yaratıcı alanlar**: AI müzik, sanat ve yazı üretir; Midjourney, DALL-E ve GitHub Copilot gibi araçlar yaratıcı iş akışlarını değiştirmiştir.
+- **Siber güvenlik**: AI anomalileri tespit eder, tehditleri belirler ve hem saldırıları hem savunmaları güçlendirir.
 
-## Robotics ve Embodied AI
+## Robotik ve Bedenlenmiş AI
 
-Robotics combines AI ile physical machines. Modern robots use perception (cameras, lidar), planning, ve control to navigate ve manipulate environments. Boston Dynamics' Atlas demonstrates İleri Düzey bipedal movement. Industrial robots from companies like ABB ve FANUC automate manufacturing. Household robots (Roomba) ve surgical robots (da Vinci System) apply AI içinde everyday ve medical settings. Embodied AI research focuses on agents that learn physical skills through interaction ile bu world, bridging bu gap between simulated ve real environments.
+Robotik, AI'ı fiziksel makinelerle birleştirir. Modern robotlar, ortamlarda gezinmek ve nesneleri manipüle etmek için algılama (kameralar, lidar), planlama ve kontrol kullanır. Boston Dynamics'in Atlas'ı gelişmiş iki ayaklı hareket yeteneklerini gösterir. ABB ve FANUC gibi şirketlerin endüstriyel robotları üretimi otomatikleştirir. Ev robotları (Roomba) ve cerrahi robotlar (da Vinci System), AI'ı gündelik ve tıbbi ortamlarda uygular. Bedenlenmiş AI araştırmaları, simüle edilmiş ve gerçek ortamlar arasındaki boşluğu kapatarak dünya ile etkileşim yoluyla fiziksel beceriler öğrenen ajanlara odaklanır.
 
-## Current AI Trends (2020s)
+## Güncel AI Eğilimleri (2020'ler)
 
-- **Multimodal AI**: Sistemler that process text, images, audio, ve video together (GPT-4V, Gemini)
-- **Agents ve agentic AI**: LLMs that can use tools, browse bu Web, write code, ve take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models için researchers
-- **On-device AI**: Running AI models locally on phones ve laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: bu EU AI Act (2024) is bu world's first comprehensive AI Hukuk, classifying AI Sistemler by risk level
+- **Çok modlu AI**: Metin, görüntü, ses ve videoyu birlikte işleyen sistemler (GPT-4V, Gemini)
+- **Ajanlar ve ajansal AI**: Araç kullanabilen, web'de gezinebilen, kod yazabilen ve çok adımlı eylemler gerçekleştirebilen LLM'ler (OpenAI'ın Operator'ı, Anthropic Computer Use)
+- **Açık ağırlıklı modeller**: Meta'nın LLaMA'sı, büyük modellere erişimi araştırmacılar için demokratikleştirdi
+- **Cihaz üstü AI**: AI modellerini bulut bağlantısı olmadan telefonlarda ve dizüstü bilgisayarlarda yerel olarak çalıştırma (Apple Intelligence, Qualcomm NPU'ları)
+- **AI düzenlemeleri**: EU AI Act (2024), AI sistemlerini risk düzeyine göre sınıflandıran dünyanın ilk kapsamlı AI yasasıdır

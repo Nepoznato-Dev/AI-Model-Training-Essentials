@@ -1,186 +1,179 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: ml_evaluation_and_workflow.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Makine Öğrenmesi Değerlendirmesi ve İş Akışı
 
-# Makine Öğrenimi Evaluation ve Workflow
-
-A practical Rehber to bu ML lifecycle — from problem framing to production monitoring — ile a focus on metrics, validation, ve debugging.
+ML yaşam döngüsüne yönelik pratik bir rehber — problem çerçevelemeden üretim izlemeye kadar — metriklere, doğrulamaya ve hata ayıklamaya odaklanır.
 
 ---
 
-## bu ML Workflow (CRISP-ML)
+## ML İş Akışı (CRISP-ML)
 
-1. **İş Understanding**: Define bu objective ve success criteria.
-2. **Veri Understanding**: Explore Mevcut Veri, identify quality issues.
-3. **Veri Preparation**: Clean, transform, ve split Veri.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess Performans against metrics.
-6. **Dağıtım**: Serve bu model içinde production.
-7. **Monitoring**: Track drift, Performans, ve anomalies.
+1. **İş Anlayışı**: Hedefi ve başarı ölçütlerini tanımlayın.
+2. **Veri Anlayışı**: Mevcut verileri inceleyin, kalite sorunlarını belirleyin.
+3. **Veri Hazırlama**: Veriyi temizleyin, dönüştürün ve bölün.
+4. **Modelleme**: Modelleri eğitin, hiperparametreleri ayarlayın.
+5. **Değerlendirme**: Performansı metriklere göre ölçün.
+6. **Dağıtım**: Modeli üretim ortamında sunun.
+7. **İzleme**: Drift'i, performansı ve anomalileri takip edin.
 
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
-
----
-
-## Veri Splitting
-
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit bu model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters ve select model variants.
-- **Test set** (~15%): Used only once at bu very end to estimate generalisation Performans.
-
-**Important:** bu test set must be kept completely untouched until final evaluation to avoid Veri leakage.
-
-### Cross-Validation (k-fold)
-için small datasets, use k-fold cross-validation: split Veri into k folds, train on k-1, validate on bu remaining, ve repeat k times. Average bu Performans. k=5 or k=10 is common.
-
-### Stratified Splitting
-için classification ile imbalanced classes, use stratified splits to preserve class proportions içinde each subset.
-
-### Time-Based Splitting
-için time-series Veri, split chronologically (train on past, test on Gelecek) rather than randomly.
+Bu yinelemeli bir döngüdür — değerlendirme sonuçlarına göre önceki adımlara geri dönersiniz.
 
 ---
 
-## Evaluation Metrics
+## Veri Bölme
 
-### Classification Metrics
+### Eğitim / Doğrulama / Test Bölmesi
+- **Eğitim kümesi** (~%70): Model parametrelerini uydurmak için kullanılır.
+- **Doğrulama kümesi** (~%15): Hiperparametreleri ayarlamak ve model varyantlarını seçmek için kullanılır.
+- **Test kümesi** (~%15): Genelleme performansını tahmin etmek için yalnızca en sonda bir kez kullanılır.
 
-| Metric | What it measures | Best used için |
-|--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean içinde precision ve recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under bu ROC curve; tradeoff between TPR ve FPR | General classifier Performans independent içinde threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+**Önemli:** Veri sızıntısını önlemek için test kümesi nihai değerlendirmeye kadar tamamen dokunulmadan tutulmalıdır.
 
-**Definitions:**
+### Çapraz Doğrulama (k-fold)
+Küçük veri kümelerinde k-fold çapraz doğrulama kullanın: veriyi k katmana ayırın, k-1 katman üzerinde eğitin, kalan katmanda doğrulayın ve bunu k kez tekrarlayın. Performansın ortalamasını alın. k=5 veya k=10 yaygındır.
+
+### Katmanlı Bölme
+Dengesiz sınıflara sahip sınıflandırma problemlerinde, her alt kümede sınıf oranlarını korumak için katmanlı bölmeler kullanın.
+
+### Zamana Dayalı Bölme
+Zaman serisi verilerinde rastgele bölmek yerine kronolojik olarak bölün (geçmiş üzerinde eğit, gelecek üzerinde test et).
+
+---
+
+## Değerlendirme Metrikleri
+
+### Sınıflandırma Metrikleri
+
+| Metrik | Ne ölçer | En uygun kullanım |
+|--------|----------|-------------------|
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Dengeli veri kümeleri |
+| **Precision** | TP / (TP + FP) | Yanlış pozitiflerin maliyetli olduğu durumlar (ör. spam tespiti) |
+| **Recall** | TP / (TP + FN) | Yanlış negatiflerin maliyetli olduğu durumlar (ör. kanser taraması) |
+| **F1-score** | Precision ve recall'un harmonik ortalaması | Dengesiz veri kümeleri, tek sayılı metrik |
+| **AUC-ROC** | ROC eğrisi altındaki alan; TPR ve FPR arasındaki ödünleşim | Eşikten bağımsız genel sınıflandırıcı performansı |
+| **AUC-PR** | Precision-Recall eğrisi altındaki alan | Çok dengesiz veri kümeleri |
+
+**Tanımlar:**
 - TP = True Positive
 - TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+- FP = False Positive (Tip I hata)
+- FN = False Negative (Tip II hata)
 
-### Regression Metrics
+### Regresyon Metrikleri
 
-| Metric | What it measures | Sensitivity to outliers |
-|--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root içinde MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient içinde Determination) | Proportion içinde variance explained | None directly, but sensitive to outliers indirectly |
+| Metrik | Ne ölçer | Aykırı değerlere duyarlılık |
+|--------|----------|-----------------------------|
+| **MSE** (Mean Squared Error) | Ortalama karesel fark | Yüksek |
+| **RMSE** (Root Mean Squared Error) | MSE'nin karekökü (hedefle aynı birimler) | Yüksek |
+| **MAE** (Mean Absolute Error) | Ortalama mutlak fark | Düşük |
+| **R²** (Belirlilik Katsayısı) | Açıklanan varyans oranı | Doğrudan yok, ancak dolaylı olarak aykırı değerlere duyarlı |
 
-### Ranking ve Retrieval Metrics
-- **Precision@k**: Fraction içinde relevant items among top-k recommendations.
-- **Recall@k**: Fraction içinde all relevant items that appear içinde top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts için position relevance.
-- **Hit Rate**: Whether a relevant item appears içinde bu top-k.
+### Sıralama ve Getirme Metrikleri
+- **Precision@k**: En iyi k öneri içindeki ilgili öğelerin oranı.
+- **Recall@k**: Tüm ilgili öğelerden en iyi k içinde görünenlerin oranı.
+- **NDCG** (Normalised Discounted Cumulative Gain): Konum alakasını hesaba katar.
+- **Hit Rate**: İlgili bir öğenin en iyi k içinde görünüp görünmediği.
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" bu model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap ile Referans translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap için summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms ve stems.
-
----
-
-## Evaluation Pitfalls
-
-### Veri Leakage
-Occurs when information from bu test set inadvertently influences training.
-- **Prevent:** Never use test Veri için feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
-
-### Overfitting
-Model performs well on training Veri but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify Mimari, or collect more Veri.
-
-### Underfitting
-Model performs poorly on both training ve validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
-
-### Imbalanced Veri
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
-
-### Temporal Drift (Concept Drift)
-bu relationship between features ve target changes over time.
-- **Mitigate:** Retrain periodically, monitor Performans, use drift detection algorithms.
+### Üretken / LLM Metrikleri
+- **Perplexity**: Modelin ayrılmış bir metin karşısında ne kadar "şaşırdığı" (düşük olması daha iyidir).
+- **BLEU**: Referans çevirilerle n-gram örtüşmesi (precision odaklı).
+- **ROUGE**: Özetleme için recall odaklı örtüşme.
+- **BERTScore**: Bağlamsal embedding'lerle anlamsal benzerlik (BLEU'dan daha sağlam).
+- **METEOR**: WordNet eş anlamlıları ve köklerle hizalama yapar.
 
 ---
 
-## Hyperparameter Tuning
+## Değerlendirme Tuzakları
 
-- **Grid Search**: Exhaustively try all combinations içinde a predefined set içinde hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search için high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model içinde bu objective function ve selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps için distributed tuning.
+### Veri Sızıntısı
+Test kümesinden gelen bilgi istemeden eğitimi etkilediğinde ortaya çıkar.
+- **Önleme:** Test verisini özellik mühendisliği, normalizasyon veya hiperparametre ayarı için asla kullanmayın.
+- **Tespit:** Modeliniz şüpheli derecede yüksek skor alıyorsa sızıntıdan kuşkulanın.
 
-**Suggested search ranges için common hyperparameters:**
+### Aşırı Uyum
+Model eğitim verisinde iyi performans gösterir, ancak doğrulama/test verisinde kötü performans gösterir.
+- **Azaltma:** Düzenlileştirme kullanın, erken durdurma uygulayın, mimariyi sadeleştirin veya daha fazla veri toplayın.
 
-| Parameter | Suggested range (log-scale) |
-|-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
+### Yetersiz Uyum
+Model hem eğitim hem doğrulama verisinde kötü performans gösterir.
+- **Azaltma:** Daha karmaşık bir model kullanın, özellik ekleyin veya düzenlileştirmeyi azaltın.
+
+### Dengesiz Veri
+- **Azaltma:** Accuracy yerine sınıf ağırlıkları, oversampling (SMOTE), undersampling veya uygun metrikler (F1, AUC-PR) kullanın.
+
+### Zamansal Drift (Concept Drift)
+Özellikler ile hedef arasındaki ilişki zaman içinde değişir.
+- **Azaltma:** Periyodik olarak yeniden eğitin, performansı izleyin, drift tespit algoritmaları kullanın.
+
+---
+
+## Hiperparametre Ayarı
+
+- **Grid Search**: Önceden tanımlanmış bir hiperparametre kümesindeki tüm kombinasyonları kapsamlı biçimde dener. Basittir ancak hesaplama açısından pahalıdır.
+- **Random Search**: Dağılımlardan rastgele kombinasyonlar örnekler. Yüksek boyutlu uzaylarda grid search'ten daha verimlidir.
+- **Bayesian Optimisation**: Amaç fonksiyonunun olasılıksal bir modelini kurar ve hiperparametreleri akıllıca seçer. Kütüphaneler: Optuna, Hyperopt, scikit-optimise.
+- **Otomatik Ayar**: Dağıtık ayarlama için Optuna, Ray Tune veya Weights & Biases Sweeps gibi araçları kullanın.
+
+**Yaygın hiperparametreler için önerilen arama aralıkları:**
+
+| Parametre | Önerilen aralık (log ölçeği) |
+|-----------|------------------------------|
+| Learning rate | 1e-5 ile 1e-1 arası |
 | Batch size | 16, 32, 64, 128, 256 |
-| Number içinde layers (NN) | 2 to 6 |
-| Number içinde neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+| Katman sayısı (NN) | 2 ile 6 arası |
+| Nöron sayısı (NN) | 32 ile 1024 arası |
+| Düzenlileştirme (L2) | 1e-6 ile 1e-2 arası |
+| Ağaç derinliği (XGBoost) | 3 ile 12 arası |
 
 ---
 
-## Model Selection ve Validation
+## Model Seçimi ve Doğrulama
 
-1. **Baseline model**: Start ile a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Ağ).
-3. **Cross-validate** each candidate on bu validation set.
-4. **Compare metrics** (ile confidence intervals) ve select bu best candidate.
-5. **Final evaluation** on bu held-out test set.
-6. **Error analysis**: Look at Örnekler bu model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) ve feed insights back into Veri preparation or feature engineering.
-
----
-
-## Dağıtım ve Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes içinde Veri offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time ile low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **Performans monitoring**: Track accuracy/F1 over time on live Veri (when ground truth is Mevcut).
-- **Veri drift**: Monitor changes içinde input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes içinde bu relationship between inputs ve outputs.
-- **Prediction drift**: Track bu distribution içinde predicted outputs.
-- **Latency ve throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging ve Alerting
-- Log all prediction requests ve responses (ile anonymisation).
-- Set alerts için:
-  - Significant drop içinde Performans.
-  - High percentage içinde missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning ve Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store ve version models, metadata, ve evaluation results.
-- Store bu training code ve Veri version (via DVC or Git LFS) alongside bu model.
+1. **Baseline model**: Alt sınırı belirlemek için basit bir sezgisel yöntem veya basit bir modelle (ör. lojistik regresyon, ortalama tahminleyici) başlayın.
+2. **Aday modeller**: Birden çok model ailesini (ör. Random Forest, XGBoost, Neural Network) eğitin.
+3. Her adayı doğrulama kümesinde **çapraz doğrulayın**.
+4. **Metrikleri karşılaştırın** (güven aralıklarıyla) ve en iyi adayı seçin.
+5. Ayrılmış test kümesinde **nihai değerlendirme** yapın.
+6. **Hata analizi**: Modelin yanlış yaptığı örneklere bakın. Örüntüleri (ör. nadir sınıflar, belirsiz girdiler) belirleyin ve içgörüleri veri hazırlama veya özellik mühendisliğine geri besleyin.
 
 ---
 
-## Practical Workflow Checklist
+## Dağıtım ve İzleme
 
-- [ ] Problem framed ve success metric defined.
-- [ ] Veri exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained ve validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] Dağıtım plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (Veri card, model card) completed.
+### Sunum Örüntüleri
+- **Batch inference**: Büyük veri hacimlerini çevrimdışı işleme (ör. gecelik öneriler).
+- **Online inference**: API üzerinden gerçek zamanlı tahminler (ör. kredi puanlama, dolandırıcılık tespiti).
+- **Streaming inference**: Düşük gecikmeli, olay güdümlü gerçek zamanlı tahmin (ör. IoT sensör uyarıları).
+
+### Model İzleme
+- **Performans izleme**: Canlı veride zaman içinde accuracy/F1 takibi (ground truth mevcut olduğunda).
+- **Veri drift'i**: Girdi özellik dağılımlarındaki değişimleri izleyin (ör. PSI – Population Stability Index kullanarak).
+- **Concept drift**: Girdiler ve çıktılar arasındaki ilişkideki değişimleri izleyin.
+- **Tahmin drift'i**: Tahmin edilen çıktıların dağılımını takip edin.
+- **Gecikme ve verim**: SLA'ların (Service Level Agreements) karşılandığından emin olun.
+
+### Günlükleme ve Uyarı
+- Tüm tahmin isteklerini ve yanıtlarını (anonimleştirerek) günlükleyin.
+- Şunlar için uyarılar ayarlayın:
+  - Performansta belirgin düşüş.
+  - Eksik veya geçersiz girdilerin yüksek yüzdesi.
+  - Beklenen sınırların dışındaki model çıktıları.
+
+### Model Sürümleme ve Registry
+- Modelleri, metadataları ve değerlendirme sonuçlarını saklamak ve sürümlemek için bir model registry (ör. MLflow, Weights & Biases, Sagemaker Model Registry) kullanın.
+- Eğitim kodunu ve veri sürümünü (DVC veya Git LFS aracılığıyla) modelin yanında saklayın.
+
+---
+
+## Pratik İş Akışı Kontrol Listesi
+
+- [ ] Problem çerçevelendi ve başarı metriği tanımlandı.
+- [ ] Veri keşfi yapıldı (eksik değerler, aykırı değerler, dağılım).
+- [ ] Eğitim/doğrulama/test bölmesi oluşturuldu (gerekirse katmanlı).
+- [ ] Baseline model oluşturuldu.
+- [ ] Aday modeller eğitildi ve doğrulandı.
+- [ ] Hiperparametreler ayarlandı.
+- [ ] En iyi model çapraz doğrulama yoluyla seçildi.
+- [ ] Test kümesinde nihai değerlendirme yapıldı.
+- [ ] Hata analizi yapıldı.
+- [ ] Dağıtım planı hazır (sunum altyapısı).
+- [ ] İzleme panosu kuruldu.
+- [ ] Dokümantasyon (data card, model card) tamamlandı.

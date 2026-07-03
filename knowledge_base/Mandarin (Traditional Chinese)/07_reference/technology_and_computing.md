@@ -1,72 +1,65 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: technology_and_computing.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 技術與計算
 
-# 技術 和 計算
+## 什麼是電腦？
 
-## What is a Computer?
+電腦是根據一組稱為程式的指令處理資料的電子設備。現代電腦基於 von Neumann 架構，由中央處理單元（CPU）、記憶體、儲存裝置和輸入/輸出設備組成。CPU 執行指令。RAM（隨機存取記憶體）在電腦運行時暫時儲存資料。儲存裝置（如 SSD 和硬碟）永久儲存資料。
 
-A computer is an electronic device that processes 資料 according to a set 的 instructions called a program. Modern computers are based on 這 von Neumann 架構, which consists 的 a central processing unit (CPU), memory, storage, 和 input/output devices. 這 CPU executes instructions. RAM (random access memory) stores 資料 temporarily while 這 computer is running. Storage devices such as SSDs 和 hard drives store 資料 permanently.
+## 程式語言
 
-## Programming Languages
+程式語言是用於編寫電腦指令的正式語言。Python 是一種高階、直譯式、通用程式語言，以其簡單的語法和可讀性而聞名。它廣泛用於資料科學、機器學習、網頁開發和自動化。JavaScript 是網頁開發的主要語言，在瀏覽器中運行。Java 是一種編譯型、物件導向語言，廣泛用於企業軟體和 Android 開發。C 和 C++ 是較低階的語言，對硬體提供細粒度控制，用於系統程式設計、遊戲開發和效能關鍵應用程式。Rust 是一種現代系統程式語言，專注於安全性和效能。
 
-A programming 語言 is a formal 語言 used to write instructions 為 computers. Python is a high-level, interpreted, general-purpose programming 語言 known 為 its simple 語法 和 readability. It is widely used 在 資料 科學, 機器學習, 網路 開發, 和 automation. JavaScript is 這 primary 語言 為 網路 開發 和 runs 在 browsers. Java is a compiled, object-oriented 語言 used widely 在 enterprise software 和 Android 開發. C 和 C++ are lower-level languages that give fine-grained control over hardware 和 are used 在 system programming, game 開發, 和 效能-critical applications. Rust is a modern 系統 programming 語言 focused on safety 和 效能.
+## 網際網路如何運作
 
-## How 這 Internet Works
+網際網路是使用標準化協定進行通訊的全球互連電腦網路。全球資訊網是透過網際網路經由瀏覽器存取的網站和網頁系統。HTTP（超文本傳輸協定）和 HTTPS（安全 HTTP）是用於傳輸網頁的協定。IP 位址是分配給網路上每個設備的唯一數字位址。DNS（網域名稱系統）將人類可讀的網域名稱（如 google.com）轉換為 IP 位址。路由器在設備和網路之間引導網路流量。
 
-這 internet is a global 網路 的 interconnected computers that communicate using standardized protocols. 這 World Wide 網路 is a system 的 websites 和 網路 pages accessed through 這 internet via browsers. HTTP (HyperText Transfer Protocol) 和 HTTPS (secure HTTP) are 這 protocols used to transfer 網路 pages. An IP address is a unique numerical address assigned to each device on a 網路. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs 網路 traffic between devices 和 networks.
+## 網路與協定
 
-## Networking 和 Protocols
+TCP/IP 是網際網路的基礎協定套件。IP（網際網路協定）處理網路之間的定址和封包路由，而 TCP（傳輸控制協定）透過重傳和流量控制提供可靠、有序的傳遞。UDP 是一種無連接的替代方案，用於低延遲比保證傳遞更重要的情況（例如串流、遊戲或 DNS 查詢）。HTTP 是一種無狀態應用層協定，用於客戶端和伺服器之間的請求/回應通訊。HTTPS 是基於 TLS 的 HTTP，增加了加密和完整性保護。REST（表現層狀態轉換）是一種 API 架構風格，使用資源、標準 HTTP 動詞（GET、POST、PUT、PATCH、DELETE）和無狀態互動。WebSocket 提供持久的全雙工連接，使客戶端和伺服器能夠即時推送訊息，對於聊天、即時儀表板和協作應用程式很有用。
 
-TCP/IP is 這 foundational protocol suite 的 這 internet. IP (Internet Protocol) handles addressing 和 routing packets between networks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery 與 retransmission 和 flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (為 example 在 streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol 為 request/response 溝通 between clients 和 servers. HTTPS is HTTP over TLS, adding encryption 和 integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), 和 stateless interactions. WebSockets provide persistent, full-duplex connections so client 和 server can push messages 在 real time, which is useful 為 chat, live dashboards, 和 collaborative apps.
+## 人工智慧
 
-## Artificial Intelligence
+人工智慧（AI）是機器，特別是電腦系統對人類智慧的模擬。機器學習是 AI 的一個子集，其中系統從資料中學習以進行預測或決策，而無需明確程式設計。深度學習是機器學習的一個子集，使用具有多層的神經網路。神經網路是受生物大腦結構啟發的計算模型。大型語言模型（LLM）是在大量文字上訓練的 AI 模型，用於生成和理解自然語言。
 
-Artificial intelligence (AI) is 這 simulation 的 human intelligence by machines, particularly computer 系統. 機器學習 is a subset 的 AI 在 which 系統 learn from 資料 to make predictions or decisions without being explicitly programmed. 深度學習 is a subset 的 機器學習 that uses 神經網絡 與 many layers. 神經網絡 are computational models loosely inspired by 這 structure 的 biological brains. Large 語言 models (LLMs) are AI models trained on massive amounts 的 text to generate 和 understand natural 語言.
+## 演算法與資料結構
 
-## Algorithms 和 資料 Structures
+演算法是解決問題的逐步程序。資料結構是在電腦中組織資料的方式，以便有效地存取和修改。常見的資料結構包括陣列、鏈結串列、堆疊、佇列、樹狀結構、圖和雜湊表。排序演算法按指定順序排列項目；常見範例有氣泡排序、合併排序和快速排序。二元搜尋是一種在排序清單中透過反覆將搜尋範圍減半來尋找項目的高效演算法。
 
-An algorithm is a step-by-step procedure 為 solving a problem. 資料 structures are ways 的 organizing 資料 在 a computer so that it can be accessed 和 modified efficiently. Common 資料 structures include arrays, linked lists, stacks, queues, trees, graphs, 和 hash tables. Sorting algorithms arrange items 在 a specified order; common 範例 are bubble sort, merge sort, 和 quicksort. Binary search is an efficient algorithm 為 finding an item 在 a sorted list by repeatedly halving 這 search range.
+## 資料庫
 
-## Databases
+資料庫是以電子方式儲存的結構化資料的有組織集合。關聯式資料庫以具有列和欄的表格儲存資料。SQL（結構化查詢語言）是用於管理和查詢關聯式資料庫的標準語言。NoSQL 資料庫以表格關係以外的格式儲存資料，例如文件、鍵值對或圖。常見的資料庫系統包括 PostgreSQL、MySQL、SQLite、MongoDB 和 Redis。資料庫中的索引以額外儲存空間為代價加速資料檢索。
 
-A 資料庫 is an organized collection 的 structured 資料 stored electronically. A relational 資料庫 stores 資料 在 tables 與 rows 和 columns. SQL (Structured Query 語言) is 這 standard 語言 為 managing 和 querying relational databases. NoSQL databases store 資料 在 formats other than tabular relations, such as documents, key-value pairs, or graphs. Common 資料庫 系統 include PostgreSQL, MySQL, SQLite, MongoDB, 和 Redis. An index 在 a 資料庫 speeds up 資料 retrieval at 這 cost 的 extra storage.
+## 系統設計基礎
 
-## System Design 基礎
+系統設計專注於建構可靠、可擴展和可維護的軟體系統。負載平衡在多個伺服器之間分配流量，以提高可用性並減少延遲。水平擴展增加更多機器；垂直擴展為一台機器增加更多資源。快取將經常存取的資料儲存在快速儲存中（例如 Redis、Memcached 或 CDN 邊緣快取），以減少資料庫負載和回應時間。大規模資料庫需要複製、分區（分片）、備份策略和仔細的一致性權衡。微服務將大型應用程式拆分為較小的可獨立部署服務，而單體架構將大部分邏輯保留在一個可部署單元中；兩種方法都涉及複雜性、部署速度、除錯和團隊自主性的權衡。
 
-System design focuses on building reliable, scalable, 和 maintainable software 系統. Load balancing distributes traffic across multiple servers to improve availability 和 reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed 資料 在 fast storage (為 example Redis, Memcached, or CDN edge caches) to reduce 資料庫 load 和 response time. Databases at scale require replication, partitioning (sharding), backup strategies, 和 careful consistency tradeoffs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic 在 one deployable unit; both approaches involve tradeoffs 在 complexity, 部署 speed, debugging, 和 team autonomy.
+## 作業系統
 
-## Operating 系統
+作業系統（OS）是管理電腦硬體並為程式提供服務的軟體。常見的作業系統包括 Windows、macOS 和 Linux。Linux 是一個開源 OS 核心，用於伺服器、嵌入式系統和 Android。OS 管理程序（運行中的程式）、記憶體、檔案系統和輸入/輸出設備。程序是程式的運行實例。執行緒是程序內的最小執行單元。
 
-An operating system (OS) is software that manages computer hardware 和 provides services 為 programs. Common operating 系統 include Windows, macOS, 和 Linux. Linux is an open-source OS kernel used 在 servers, embedded 系統, 和 Android. 這 OS manages processes (running programs), memory, file 系統, 和 input/output devices. A process is a running instance 的 a program. A thread is 這 smallest unit 的 execution within a process.
+## 版本控制
 
-## Version Control
+版本控制系統追蹤程式碼隨時間的變更，允許開發人員協作並恢復到先前狀態。Git 是最廣泛使用的版本控制系統。儲存庫（repo）是檔案及其歷史記錄的集合。提交是變更的已儲存快照。分支是獨立的開發線。拉取請求是將一個分支的變更合併到另一個分支的提議。
 
-Version control 系統 track changes to code over time, allowing developers to collaborate 和 revert to previous states. Git is 這 most widely used version control system. A repository (repo) is a collection 的 files 和 their 歷史. A commit is a saved snapshot 的 changes. A branch is an independent line 的 開發. A pull request is a proposal to merge changes from one branch into another.
+## 軟體開發實踐
 
-## Software 開發 Practices
+物件導向程式設計（OOP）將程式碼組織成結合資料和行為的物件。OOP 的關鍵原則包括封裝、繼承、多型和抽象。測試驅動開發（TDD）是在編寫程式碼之前編寫測試的實踐。Agile 是一套強調迭代開發、協作和適應性的軟體開發方法論。DevOps 結合軟體開發和 IT 營運以縮短開發生命週期。API（應用程式介面）允許不同的軟體系統彼此通訊。
 
-Object-oriented programming (OOP) organizes code into objects that combine 資料 和 behavior. Key principles 的 OOP include encapsulation, inheritance, polymorphism, 和 abstraction. Test-driven 開發 (TDD) is a practice 的 writing tests before writing code. Agile is a set 的 software 開發 methodologies that emphasize iterative 開發, collaboration, 和 adaptability. DevOps combines software 開發 和 IT operations to shorten 這 開發 lifecycle. APIs (Application Programming Interfaces) allow different software 系統 to communicate 與 each other.
+## 雲端與 DevOps 基礎
 
-## Cloud 和 DevOps 基礎
+雲端運算透過網際網路提供按需基礎設施和託管服務。三大公共雲端供應商是 AWS（Amazon Web Services）、Microsoft Azure 和 Google Cloud Platform（GCP）。常見的服務模型有 IaaS（基礎設施）、PaaS（平台）和 SaaS（軟體）。核心雲端建構區塊包括運算實例/容器、物件儲存、託管資料庫、網路和 IAM（身份與存取管理）。CI/CD（持續整合和持續交付/部署）自動化建置、測試和發布管線，使程式碼能夠安全地從提交移動到生產環境。Docker 將應用程式和相依性打包成可攜式容器；在生產環境中，這些容器通常透過編排器（如 Kubernetes）、無伺服器平台或託管容器服務部署。
 
-Cloud 計算 provides on-demand infrastructure 和 managed services over 這 internet. 這 three major public cloud providers are AWS (Amazon 網路 Services), Microsoft Azure, 和 Google Cloud Platform (GCP). Common service models are IaaS (infrastructure), PaaS (platform), 和 SaaS (software). Core cloud building blocks include compute instances/containers, object storage, managed databases, networking, 和 IAM (Identity 和 Access 管理). CI/CD (Continuous Integration 和 Continuous Delivery/部署) automates build, test, 和 release pipelines so code can move safely from commit to production. Docker packages applications 和 dependencies into portable containers; 在 production these containers are typically deployed via orchestrators (such as Kubernetes), serverless platforms, or managed container services.
+## 資料格式與工具
 
-## 資料 Formats 和 Tooling
+JSON（JavaScript Object Notation）是一種輕量級文字格式，由物件（鍵/值對）、陣列、字串、數字、布林值和 null 建構而成；它廣泛用於 API。YAML 是一種人類友善的設定格式，支援巢狀結構和註解，常用於 CI/CD 和基礎設施定義。CSV（逗號分隔值）將表格資料儲存為分隔文字的行，常用於資料匯入/匯出管線。XML（可延伸標記語言）是一種基於標籤的結構化格式，用於遺留系統、設定和文件工作流程。開發人員通常使用檢查器、模式驗證器（如 JSON Schema）、查詢工具（`jq`、XPath）和程式語言中的解析函式庫來驗證和轉換這些格式。
 
-JSON (JavaScript Object Notation) is a lightweight text format built from objects (key/value pairs), arrays, strings, numbers, booleans, 和 null; it is widely used 在 APIs. YAML is a human-friendly configuration format that supports nested structures 和 comments, commonly used 在 CI/CD 和 infrastructure definitions. CSV (Comma-Separated Values) stores tabular 資料 as rows 的 delimited text 和 is common 為 資料 import/export pipelines. XML (eXtensible Markup 語言) is a tag-based structured format used 在 legacy 系統, configuration, 和 document workflows. Developers commonly validate 和 transform these formats 與 linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), 和 parsing libraries 在 their programming 語言.
+## 正規表示式（Regex）
 
-## Regular Expressions (Regex)
+正規表示式是用於搜尋、匹配、提取和轉換文字的模式語言。核心 regex 概念包括文字（`cat`）、字元類別（`[a-z]`、`\d`）、量詞（`*`、`+`、`?`、`{n,m}`）、錨點（`^`、`$`）、群組（`(...)`）、替代（`a|b`）和跳脫特殊字元。Regex 廣泛用於輸入驗證、日誌解析、文字提取和尋找/替換自動化。不同的引擎（PCRE、JavaScript、Python `re`、RE2）具有不同的功能集，因此不同工具之間的行為可能有所不同。Regex 功能強大但可能難以閱讀；複雜模式應進行測試和記錄以避免錯誤。
 
-A regular expression is a pattern 語言 used to search, match, extract, 和 transform text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), 和 escaping special characters. Regex is heavily used 為 input validation, log parsing, text extraction, 和 find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested 和 documented to avoid bugs.
+## 網路安全
 
-## Cybersecurity
+網路安全是保護電腦系統、網路和資料免受數位攻擊的實踐。常見威脅包括惡意軟體（惡意軟體）、網路釣魚（旨在竊取資訊的詐騙通訊）、勒索軟體（加密資料並要求付款的惡意軟體）和阻斷服務攻擊。加密將資料轉換為只能用金鑰解碼的不可讀形式。HTTPS 使用 TLS（傳輸層安全性）來加密網頁流量。強而獨特的密碼和雙因素驗證是基本的安全實踐。
 
-Cybersecurity is 這 practice 的 protecting computer 系統, networks, 和 資料 from digital attacks. Common threats include malware (malicious software), phishing (fraudulent 溝通 designed to steal information), ransomware (malware that encrypts 資料 和 demands payment), 和 denial-的-service attacks. Encryption transforms 資料 into an unreadable form that can only be decoded 與 a key. HTTPS uses TLS (Transport Layer 安全) to encrypt 網路 traffic. Strong, unique passwords 和 two-factor authentication are fundamental 安全 practices.
+## 開發人員的安全概念
 
-## 安全 Concepts 為 Developers
-
-OAuth 2.0 is an authorization framework that lets users grant limited access to an application without sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 為 authentication. JWT (JSON 網路 Token) is a compact token format containing claims, often used 為 stateless auth, but it must be signed correctly 和 validated strictly (signature, expiration, issuer, audience). TLS secures 資料 在 transit by providing encryption, integrity, 和 server authentication through certificates. 這 OWASP Top 10 is a widely used list 的 common 網路 application 安全 risks, including broken access control, cryptographic failures, injection, insecure design, 安全 misconfiguration, vulnerable components, 和 insufficient logging/monitoring. Secure 開發 requires defense-在-depth: input validation, output encoding, least privilege, secret 管理, dependency patching, 和 regular 安全 測試.
+OAuth 2.0 是一種授權框架，允許使用者在不直接共享憑證的情況下授予應用程式有限的存取權限。OpenID Connect（OIDC）是建立在 OAuth 2.0 之上的身份層，用於驗證。JWT（JSON Web Token）是一種包含聲明的緊湊令牌格式，通常用於無狀態驗證，但必須正確簽名並嚴格驗證（簽名、過期時間、發行者、受眾）。TLS 透過提供加密、完整性和透過憑證進行伺服器驗證來保護傳輸中的資料。OWASP Top 10 是一個廣泛使用的常見網頁應用程式安全風險清單，包括存取控制破損、加密失敗、注入、不安全設計、安全設定錯誤、易受攻擊的元件以及記錄/監控不足。安全開發需要縱深防禦：輸入驗證、輸出編碼、最小權限、密鑰管理、相依性修補和定期安全測試。

@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: tool_usage.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Araç Kullanımı
 
-# Tool Usage
+## Git — Sürüm Kontrolü
 
-## Git — Version Control
+Git, dağıtık bir sürüm kontrol sistemidir. Her geliştirici, depo geçmişinin tam bir kopyasını kendi yerel makinesinde tutar.
 
-Git is a distributed version control system. Every developer has a full copy içinde bu repository Tarih on their local machine.
-
-### Core workflow
+### Temel iş akışı
 
 ```bash
 # Start a new repository
@@ -35,7 +28,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-### Branching
+### Dallanma
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +38,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging ve rebasing
+### Birleştirme ve rebase
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +50,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### Pull request (PR) iş akışı
 
-1. Create a feature branch from `main`.
-2. Make commits on bu feature branch.
-3. Push bu branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review Geri Bildirim ile additional commits.
-6. Merge bu PR once approved.
+1. `main` dalından bir özellik dalı oluşturun.
+2. Commit'leri özellik dalında yapın.
+3. Dalı gönderin: `git push origin feature/new-thing`.
+4. GitHub / GitLab üzerinde bir pull request açın.
+5. Kod incelemesi geri bildirimlerini ek commit'lerle ele alın.
+6. Onaylandıktan sonra PR'yi birleştirin.
 
-### Undoing changes
+### Değişiklikleri geri alma
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,7 +70,7 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-## Package Managers
+## Paket Yöneticileri
 
 ### pip (Python)
 
@@ -90,7 +83,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+Proje bağımlılıklarını yalıtılmış tutmak için her zaman bir sanal ortam içinde çalışın.
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +98,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` tam sürümleri kaydeder; bunu kaynak kontrole ekleyin.
 
 ### Cargo (Rust)
 
@@ -121,7 +114,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-### Go modules (Go)
+### Go modülleri (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -145,9 +138,9 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line Temeller
+## Komut Satırı Temelleri
 
-### Navigation
+### Gezinme
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +156,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### Metin işleme
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +169,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes ve redirection
+### Borular ve yönlendirme
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +180,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### Ağ ve file transfer
+### Ağ ve dosya aktarımı
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +190,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-### Permissions
+### İzinler
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +198,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Process Yönetim
+### Süreç yönetimi
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +209,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editors ve IDEs
+## Editörler ve IDE'ler
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor ile a rich extension ecosystem.
+VS Code, zengin eklenti ekosistemine sahip, hafif ve çok platformlu bir kod editörüdür.
 
-- Open a folder: `File > Open Folder` or `code .` içinde bu terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install Dil Destek (Python, Rust, Go, etc.), linters, ve formatters from bu Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures bu debugger.
+- Bir klasör açın: terminalde `File > Open Folder` veya `code .`.
+- Komut paleti: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Tümleşik terminal: `Ctrl+`` (backtick).
+- Çoklu imleç: ek imleç yerleştirmek için `Alt+Click`.
+- Tanıma git: `F12`.
+- Sembol yeniden adlandır: `F2`.
+- Belgeyi biçimlendir: `Shift+Alt+F`.
+- Eklentiler: Extensions panelinden (`Ctrl+Shift+X`) dil desteği (Python, Rust, Go vb.), linter ve formatter yükleyin.
+- `settings.json` (kullanıcı veya çalışma alanı), editör davranışını kontrol eder.
+- `launch.json`, hata ayıklayıcıyı yapılandırır.
 
-### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+### JetBrains IDE'leri (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion ve refactoring are core features.
-- Run/debug configurations let you launch ve debug programs ile one click.
-- Built-içinde Git Destek içinde bu VCS menu.
-- `Shift+Shift` opens bu Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Dil Destek ve add tools.
+- Akıllı kod tamamlama ve refactoring temel özelliklerdir.
+- Çalıştırma/hata ayıklama yapılandırmaları, programları tek tıkla başlatıp ayıklamanızı sağlar.
+- VCS menüsünde yerleşik Git desteği bulunur.
+- `Shift+Shift`, Search Everywhere iletişim kutusunu açar.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) kodu yeniden biçimlendirir.
+- Eklentiler dil desteğini genişletir ve araçlar ekler.
 
-### Terminal tips
+### Terminal ipuçları
 
-- Use tab completion to finish file names ve Komutlar quickly.
-- Press `Ctrl+R` to search command Tarih interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows bu manual page için any built-içinde command.
+- Dosya adlarını ve komutları hızla tamamlamak için sekme tamamlama kullanın.
+- Komut geçmişinde etkileşimli arama yapmak için `Ctrl+R` tuşlarına basın.
+- `alias ll='ls -la'` bir kısayol oluşturur — bunu `~/.bashrc` veya `~/.zshrc` dosyanıza ekleyin.
+- Uzak bir sunucudan bağlantınız kesildiğinde oturumları açık tutmak için `tmux` veya `screen` kullanın.
+- `man <command>`, herhangi bir yerleşik komutun kılavuz sayfasını gösterir.
 
 ---
 
 ## Docker
 
-Docker packages applications ve their dependencies into portable containers.
+Docker, uygulamaları ve bağımlılıklarını taşınabilir konteynerlere paketler.
 
-### Core concepts
+### Temel kavramlar
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance içinde an image.
-- **Registry**: a storage ve distribution service için images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **Image**: `Dockerfile` dosyasından oluşturulan salt okunur şablon.
+- **Container**: bir image'ın çalışan örneği.
+- **Registry**: image'lar için depolama ve dağıtım hizmeti (Docker Hub, GHCR).
+- **Volume**: konteynerden bağımsız, kalıcı depolama alanı.
 
-### Common Komutlar
+### Yaygın komutlar
 
 ```bash
 # Images
@@ -286,7 +279,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### Dockerfile örneği
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +292,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications ile a `docker-compose.yml` file.
+Docker Compose, çoklu konteyner uygulamalarını `docker-compose.yml` dosyasıyla yönetir.
 
 ```yaml
 version: "3.9"

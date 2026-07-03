@@ -1,19 +1,12 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: python_syntax.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Python Sözdizimi Hızlı Başvuru
 
-# Python Sözdizimi Cheat Sheet
-
-Hızlı Referans için Python 3.x Sözdizimi ve common patterns.
+Python 3.x sözdizimi ve yaygın kalıplar için kısa başvuru kılavuzu.
 
 ---
 
-## Basic Sözdizimi
+## Temel Sözdizimi
 
-### Variables ve Veri Types
+### Değişkenler ve Veri Tipleri
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +25,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### String'ler
 ```python
 s = "Hello, World!"
 
@@ -54,9 +47,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## Kontrol Akışı
 
-### Conditionals
+### Koşullar
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### Döngüler
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -93,9 +86,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## Veri Structures
+## Veri Yapıları
 
-### Lists
+### Listeler
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +106,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### Sözlükler
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +121,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### Kümeler
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +133,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuples
+### Demetler
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -149,9 +142,9 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## Fonksiyonlar
 
-### Definition
+### Tanımlama
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -170,7 +163,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Lambda Fonksiyonları
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -178,7 +171,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## Sınıflar
 
 ```python
 class Person:
@@ -207,7 +200,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## Dosya G/Ç
 
 ```python
 # Reading files
@@ -226,7 +219,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## Hata Yönetimi
 
 ```python
 try:
@@ -248,7 +241,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules ve Imports
+## Modüller ve İçe Aktarmalar
 
 ```python
 import math
@@ -263,9 +256,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## Yaygın Kalıplar
 
-### List Operations
+### Liste İşlemleri
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +274,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### String İşlemleri
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +290,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### Sözlük Operations
+### Sözlük İşlemleri
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +306,7 @@ for k, v in d.items():
 
 ---
 
-## Built-içinde Functions
+## Yerleşik Fonksiyonlar
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +322,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## Pratik İpuçları
 
-- Use `#` için single-line comments
-- Use `"""triple quotes"""` için docstrings ve multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` için variables/functions, `PascalCase` için classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` için project isolation
-- Install packages ile `pip install package_name`
+- Tek satırlık yorumlar için `#` kullanın
+- Docstring'ler ve çok satırlı string'ler için `"""triple quotes"""` kullanın
+- Girintileme önemlidir (genellikle 4 boşluk)
+- Adlandırma kuralları: değişkenler/fonksiyonlar için `snake_case`, sınıflar için `PascalCase`
+- Betiğin doğrudan çalıştırılıp çalıştırılmadığını kontrol etmek için `__name__ == "__main__"` kullanın
+- Proje izolasyonu için `virtualenv` veya `venv` kullanın
+- Paketleri `pip install package_name` ile kurun
 
 ---
 
-*Son Güncelleme: June 2025 | Python 3.x*
+*Son güncelleme: Haziran 2025 | Python 3.x*

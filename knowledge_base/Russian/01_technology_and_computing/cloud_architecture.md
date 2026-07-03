@@ -1,401 +1,394 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: cloud_architecture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Облачная архитектура
 
-# Cloud Архитектура
+## Основы облачных вычислений
 
-## Cloud Вычисления Основы
+### Что такое облачные вычисления?
+Предоставление вычислительных ресурсов по запросу (серверы, хранилище, базы данных, сеть, программное обеспечение) через интернет с оплатой по мере использования.
 
-### What is Cloud Вычисления?
-On-demand delivery из Вычисления resources (servers, storage, databases, networking, software) over the internet с pay-as-you-go pricing.
+### Ключевые характеристики (определение NIST)
+- **Самообслуживание по требованию**: Предоставление ресурсов без участия человека
+- **Широкий сетевой доступ**: Доступ через сеть с помощью стандартных механизмов
+- **Пул ресурсов**: Модель с множеством арендаторов и динамическим распределением
+- **Быстрая эластичность**: Быстрое масштабирование вверх и вниз
+- **Измеряемый сервис**: Использование ресурсов отслеживается и тарифицируется
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Сеть Access**: Доступно over Сеть via standard mechanisms
-- **Resource Pooling**: Multi-tenant model с dynamic assignment
-- **Rapid Elasticity**: Scale outward и inward rapidly
-- **Measured Service**: Resource usage monitored и billed
+### Модели развертывания облака
+- **Публичное облако**: Принадлежит провайдерам, общая инфраструктура (AWS, Azure, GCP)
+- **Частное облако**: Выделено для одной организации (локально или у хостинг-провайдера)
+- **Гибридное облако**: Сочетание публичных и частных облаков
+- **Мультиоблако**: Использование нескольких провайдеров публичного облака
+- **Облако сообщества**: Совместно используется организациями с общими требованиями
 
-### Cloud Развертывание Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination из public и private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations с common concerns
+### Модели сервисов
 
-### Service Models
-
-#### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating Системы
+#### Инфраструктура как услуга (IaaS)
+- **Предоставляет**: Виртуальные машины, хранилище, сети, операционные системы
 - **Примеры**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-и-shift migrations, Разработка environments, high-control needs
+- **Сценарии использования**: Миграции lift-and-shift, среды разработки, задачи с повышенными требованиями к контролю
 
-#### Platform as a Service (PaaS)
-- **Provides**: Разработка platforms, databases, middleware
+#### Платформа как услуга (PaaS)
+- **Предоставляет**: Платформы разработки, базы данных, промежуточное ПО
 - **Примеры**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application Разработка, API Развертывание, microservices
+- **Сценарии использования**: Разработка приложений, развёртывание API, микросервисы
 
-#### Software as a Service (SaaS)
-- **Provides**: Полный applications over internet
+#### Программное обеспечение как услуга (SaaS)
+- **Предоставляет**: Готовые приложения через интернет
 - **Примеры**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, Бизнес applications
+- **Сценарии использования**: Электронная почта, CRM, совместная работа, бизнес-приложения
 
-#### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
+#### Функции как услуга (FaaS) / бессерверная модель
+- **Предоставляет**: Выполнение функций, управляемых событиями
 - **Примеры**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+- **Сценарии использования**: Обработка событий, API, задачи по расписанию, обработка в реальном времени
 
-## Major Cloud Providers
+## Крупнейшие облачные провайдеры
 
-### Amazon Веб Services (AWS)
-- **Market Share**: ~32% (largest provider)
-- **Key Services**:
-  - Compute: EC2, Lambda, ECS, EKS
-  - Storage: S3, EBS, Glacier
-  - База данных: RDS, DynamoDB, Aurora
-  - Networking: VPC, Route 53, CloudFront
+### Amazon Web Services (AWS)
+- **Доля рынка**: ~32% (крупнейший провайдер)
+- **Ключевые сервисы**:
+  - Вычисления: EC2, Lambda, ECS, EKS
+  - Хранилище: S3, EBS, Glacier
+  - Базы данных: RDS, DynamoDB, Aurora
+  - Сеть: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
 ### Microsoft Azure
-- **Market Share**: ~23%
-- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
-- **Key Services**:
-  - Compute: Virtual Machines, Azure Functions, AKS
-  - Storage: Blob Storage, Disk Storage
-  - База данных: SQL База данных, Cosmos DB
-  - Networking: Virtual Сеть, Traffic Manager
+- **Доля рынка**: ~23%
+- **Сильные стороны**: Интеграция с корпоративной средой, гибридное облако, экосистема Microsoft
+- **Ключевые сервисы**:
+  - Вычисления: Virtual Machines, Azure Functions, AKS
+  - Хранилище: Blob Storage, Disk Storage
+  - Базы данных: SQL Database, Cosmos DB
+  - Сеть: Virtual Network, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
 ### Google Cloud Platform (GCP)
-- **Market Share**: ~10%
-- **Strengths**: Данные analytics, AI/ML, Kubernetes
-- **Key Services**:
-  - Compute: Compute Engine, Cloud Functions, GKE
-  - Storage: Cloud Storage, Persistent Disk
-  - База данных: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dataflow, Pub/Sub
+- **Доля рынка**: ~10%
+- **Сильные стороны**: Аналитика данных, AI/ML, Kubernetes
+- **Ключевые сервисы**:
+  - Вычисления: Compute Engine, Cloud Functions, GKE
+  - Хранилище: Cloud Storage, Persistent Disk
+  - Базы данных: Cloud SQL, Firestore, Bigtable
+  - Аналитика: BigQuery, Dataflow, Pub/Sub
   - AI/ML: Vertex AI, AutoML
 
-### Other Providers
-- **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: База данных workloads, enterprise applications
-- **Alibaba Cloud**: Dominant в Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified offerings
+### Другие провайдеры
+- **IBM Cloud**: Фокус на корпоративный сегмент, Watson AI
+- **Oracle Cloud**: Нагрузки баз данных, корпоративные приложения
+- **Alibaba Cloud**: Лидер в Азиатско-Тихоокеанском регионе
+- **DigitalOcean**: Ориентированность на разработчиков, упрощенные предложения
 
-## Cloud Архитектура Patterns
+## Паттерны облачной архитектуры
 
-### Well-Architected Framework Principles
+### Принципы Well-Architected Framework
 
-#### Operational Excellence
-- Automate operations
-- Make frequent, reversible changes
-- Refine procedures continuously
-- Anticipate failure
+#### Операционное совершенство
+- Автоматизируйте операции
+- Вносите частые и обратимые изменения
+- Непрерывно совершенствуйте процедуры
+- Предвидьте сбои
 
 #### Безопасность
-- Implement strong identity foundation
-- Enable traceability
-- Apply Безопасность at all layers
-- Automate Безопасность Лучшие практики
-- Protect Данные в transit и at rest
+- Создавайте надежную основу управления идентификацией
+- Обеспечивайте трассируемость
+- Применяйте безопасность на всех уровнях
+- Автоматизируйте лучшие практики безопасности
+- Защищайте данные при передаче и хранении
 
-#### Reliability
-- Test recovery procedures
-- Automatically recover from failure
-- Scale horizontally для availability
-- Stop guessing capacity
-- Manage change в automation
+#### Надежность
+- Тестируйте процедуры восстановления
+- Автоматически восстанавливайтесь после сбоев
+- Масштабируйтесь горизонтально для обеспечения доступности
+- Не полагайтесь на догадки при оценке ёмкости
+- Управляйте изменениями через автоматизацию
 
-#### Производительность Efficiency
-- Democratize Продвинутый technologies
-- Go global в minutes
-- Use serverless architectures
-- Experiment more often
-- Consider mechanical sympathy
+#### Эффективность производительности
+- Делайте передовые технологии доступными
+- Выходите на глобальный уровень за считаные минуты
+- Используйте бессерверные архитектуры
+- Экспериментируйте чаще
+- Учитывайте особенности аппаратной платформы
 
-#### Cost Optimization
-- Adopt consumption model
-- Measure overall efficiency
-- Stop spending money on undifferentiated work
-- Analyze и attribute expenditure
-- Use managed services
+#### Оптимизация затрат
+- Используйте модель потребления
+- Измеряйте общую эффективность
+- Не тратьте деньги на недифференцирующую работу
+- Анализируйте и распределяйте расходы
+- Используйте управляемые сервисы
 
-### Common Архитектура Patterns
+### Распространенные архитектурные паттерны
 
-#### Microservices Архитектура
-- Decompose applications into small, independent services
-- Each service owns its Данные и logic
-- Communicate via APIs (REST, gRPC, messaging)
-- Deploy independently
-- **Benefits**: Scalability, fault isolation, Технология diversity
-- **Challenges**: Distributed complexity, Данные consistency, monitoring
+#### Микросервисная архитектура
+- Разделяйте приложения на небольшие независимые сервисы
+- Каждый сервис владеет своими данными и логикой
+- Взаимодействуйте через API (REST, gRPC, обмен сообщениями)
+- Развертывайте независимо
+- **Преимущества**: Масштабируемость, изоляция сбоев, разнообразие технологий
+- **Сложности**: Распределенная сложность, согласованность данных, мониторинг
 
-#### Event-Driven Архитектура
-- Components communicate through События
-- Producers emit События, consumers react
-- **Patterns**: Event sourcing, CQRS, pub/sub
-- **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, real-time processing
+#### Архитектура, управляемая событиями
+- Компоненты взаимодействуют через события
+- Производители публикуют события, потребители реагируют
+- **Паттерны**: Event sourcing, CQRS, pub/sub
+- **Технологии**: Kafka, SNS/SQS, EventBridge, Pub/Sub
+- **Преимущества**: Слабая связанность, масштабируемость, обработка в реальном времени
 
-#### Serverless Архитектура
-- No server Управление required
-- Pay per execution
-- Automatic scaling
-- **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid Развертывание
-- **Considerations**: Cold starts, vendor lock-в, execution limits
+#### Бессерверная архитектура
+- Не требует управления серверами
+- Оплата за каждое выполнение
+- Автоматическое масштабирование
+- **Компоненты**: функции, API Gateway, управляемые сервисы
+- **Преимущества**: Экономичность, меньше операционной нагрузки, быстрое развёртывание
+- **Особенности**: Холодный старт, привязка к вендору, ограничения на время выполнения
 
-#### Layered Архитектура (N-Tier)
-- Presentation layer (UI)
-- Application/Бизнес logic layer
-- Данные access layer
-- База данных layer
-- **Benefits**: Separation из concerns, maintainability
-- **Common**: 3-tier Веб applications
+#### Слоистая архитектура (N-Tier)
+- Слой представления (UI)
+- Слой логики приложения/бизнес-логики
+- Слой доступа к данным
+- Слой базы данных
+- **Преимущества**: Разделение ответственности, сопровождаемость
+- **Типичный случай**: Трехзвенные веб-приложения
 
-#### Space-Based Архитектура
-- Handle high concurrency с distributed Данные
-- Virtualized memory across servers
-- Processing nodes scale independently
-- **Use Cases**: High-volume, low-latency applications
+#### Архитектура на основе распределенного пространства данных
+- Обрабатывает высокую конкуренцию с помощью распределенных данных
+- Виртуализированная память между серверами
+- Узлы обработки масштабируются независимо
+- **Сценарии использования**: Высоконагруженные приложения с низкой задержкой
 
-## Compute Services
+## Сервисы вычислений
 
-### Virtual Machines
-- **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pricing**: On-demand, reserved instances, spot instances
-- **Управление**: Auto-scaling groups, load balancers
-- **Лучшие практики**: Right-sizing, tagging, monitoring, patching
+### Виртуальные машины
+- **Типы**: Общего назначения, оптимизированные под вычисления, оптимизированные по памяти, GPU
+- **Тарификация**: по требованию, зарезервированные экземпляры, спотовые экземпляры
+- **Управление**: Группы автомасштабирования, балансировщики нагрузки
+- **Лучшие практики**: Подбор размера, теги, мониторинг, патчинг
 
-### Containers
-- **Docker**: Container runtime standard
-- **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
-- **Benefits**: Portability, efficiency, consistency
-- **Registry**: ECR, GCR, ACR, Docker Hub
+### Контейнеры
+- **Docker**: Стандарт среды выполнения контейнеров
+- **Оркестрация**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
+- **Преимущества**: Портативность, эффективность, консистентность
+- **Реестр**: ECR, GCR, ACR, Docker Hub
 
-### Serverless Functions
-- **Execution Model**: Event-triggered, stateless
-- **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
-- **Monitoring**: Invocation counts, errors, duration, cold starts
+### Serverless-функции
+- **Модель выполнения**: Запуск по событию, без состояния
+- **Ограничения**: Время выполнения, память, число параллельных запусков
+- **Сценарии использования**: API, обработка файлов, задачи по расписанию, IoT-бэкенды
+- **Мониторинг**: Количество вызовов, ошибки, длительность, холодные старты
 
-## Storage Solutions
+## Решения для хранения данных
 
-### Object Storage
-- **Characteristics**: Flat structure, metadata, HTTP access
+### Объектное хранилище
+- **Характеристики**: Плоская структура, метаданные, доступ по HTTP
 - **Примеры**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, Данные lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
+- **Сценарии использования**: Статические ресурсы, резервные копии, озера данных, архивы
+- **Классы хранения**: горячий, прохладный, холодный, архивный (разная стоимость и доступность)
 
-### Block Storage
-- **Characteristics**: Raw volumes, attached to VMs
+### Блочное хранилище
+- **Характеристики**: Необработанные тома, подключаемые к VM
 - **Примеры**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Databases, boot volumes, high-Производительность needs
-- **Types**: SSD, HDD, provisioned IOPS
+- **Сценарии использования**: Базы данных, загрузочные тома, высокопроизводительные задачи
+- **Типы**: SSD, HDD, provisioned IOPS
 
-### File Storage
-- **Characteristics**: Shared file Системы, NFS/SMB protocols
+### Файловое хранилище
+- **Характеристики**: Общие файловые системы, протоколы NFS/SMB
 - **Примеры**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content Управление, shared configs, lift-и-shift
+- **Сценарии использования**: Управление контентом, общие конфигурации, lift-and-shift
 
-### Archive Storage
-- **Characteristics**: Lowest cost, retrieval delays
+### Архивное хранилище
+- **Характеристики**: Минимальная стоимость, задержка при извлечении
 - **Примеры**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical Данные
+- **Сценарии использования**: Compliance, долгосрочные резервные копии, исторические данные
 
-## База данных Services
+## Сервисы баз данных
 
-### Managed Relational Databases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL База данных
-- **Features**: Automated backups, patching, scaling, replication
-- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### Управляемые реляционные базы данных
+- **Сервисы**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Database
+- **Возможности**: Автоматические резервные копии, патчинг, масштабирование, репликация
+- **СУБД**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-### NoSQL Databases
-- **Document**: DocumentDB, Firestore, Cosmos DB
-- **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassandra (managed)
-- **Graph**: Neptune, Cosmos DB (graph API)
+### NoSQL-базы данных
+- **Документные**: DocumentDB, Firestore, Cosmos DB
+- **Ключ-значение**: DynamoDB, Redis Cache
+- **Ширококолончатые**: Bigtable, Cassandra (managed)
+- **Графовые**: Neptune, Cosmos DB (graph API)
 
-### Данные Warehousing
-- **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP Архитектура
-- **Use Cases**: Analytics, BI, large-scale Данные analysis
+### Хранилища данных
+- **Сервисы**: Snowflake, Redshift, BigQuery, Synapse
+- **Характеристики**: Колоночное хранение, архитектура MPP
+- **Сценарии использования**: Аналитика, BI, крупномасштабный анализ данных
 
-### Caching Services
-- **в-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query caching, content delivery
+### Сервисы кэширования
+- **В памяти**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN-кэширование**: CloudFront, Cloud CDN, Azure CDN
+- **Сценарии использования**: Хранение сессий, кэширование запросов, доставка контента
 
-## Networking
+## Сеть
 
-### Virtual Networks
-- **VPC/VNet**: Isolated Сеть environments
-- **Subnets**: Public (internet-facing), private (internal only)
-- **IP Addressing**: CIDR blocks, IPv4/IPv6
-- **Route Tables**: Control traffic flow
+### Виртуальные сети
+- **VPC/VNet**: Изолированные сетевые среды
+- **Подсети**: публичные (с выходом в интернет), частные (только внутренние)
+- **IP-адресация**: Блоки CIDR, IPv4/IPv6
+- **Таблицы маршрутизации**: Управляют потоками трафика
 
-### Load Balancing
-- **Types**: Application (L7), Сеть (L4), Gateway
-- **Features**: Health checks, SSL termination, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
+### Балансировка нагрузки
+- **Типы**: Application (L7), Network (L4), Gateway
+- **Возможности**: Проверки работоспособности, завершение SSL, sticky sessions
+- **Сервисы**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-### Content Delivery Networks (CDN)
-- **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origin load, global distribution
-- **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
+### Сети доставки контента (CDN)
+- **Назначение**: Кэширование контента на пограничных узлах
+- **Преимущества**: Меньшая задержка, ниже нагрузка на origin, глобальное распространение
+- **Сервисы**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-### DNS Services
-- **Functions**: Domain registration, routing, health checks
-- **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
+### DNS-сервисы
+- **Функции**: Регистрация доменов, маршрутизация, проверки работоспособности
+- **Сервисы**: Route 53, Cloud DNS, Azure DNS
+- **Политики маршрутизации**: Simple, weighted, latency-based, geolocation, failover
 
-### Connectivity Options
-- **Internet Gateway**: Public internet access
-- **NAT Gateway**: Private subnet outbound access
-- **VPN**: Encrypted tunnels to on-premises
-- **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peering**: Connect VPCs within/between accounts
+### Варианты подключения
+- **Internet Gateway**: Публичный доступ в интернет
+- **NAT Gateway**: Исходящий доступ из частной подсети
+- **VPN**: Зашифрованные туннели к локальной инфраструктуре
+- **Direct Connect/ExpressRoute**: Выделенные частные соединения
+- **VPC Peering**: Соединение VPC внутри аккаунтов и между ними
 
-## Безопасность в the Cloud
+## Безопасность в облаке
 
-### Shared Responsibility Model
-- **Provider Responsibility**: Безопасность из the cloud (infrastructure)
-- **Customer Responsibility**: Безопасность в the cloud (Данные, applications, access)
-- **Varies By Service**: More managed = more provider responsibility
+### Модель разделенной ответственности
+- **Ответственность провайдера**: Безопасность ОБЛАКА (инфраструктуры)
+- **Ответственность клиента**: Безопасность В облаке (данных, приложений, доступа)
+- **Зависит от сервиса**: Чем больше управляемости, тем больше ответственности у провайдера
 
-### Identity и Access Управление (IAM)
-- **Users**: Individual identities
-- **Groups**: Collections из users
-- **Roles**: Temporary credentials для services/users
-- **Policies**: JSON documents defining permissions
-- **Principles**: Least privilege, separation из duties
+### Управление идентификацией и доступом (IAM)
+- **Пользователи**: Индивидуальные идентичности
+- **Группы**: Наборы пользователей
+- **Роли**: Временные учётные данные для сервисов/пользователей
+- **Политики**: JSON-документы, определяющие разрешения
+- **Принципы**: Минимально необходимые привилегии, разделение обязанностей
 
-### Сеть Безопасность
-- **Безопасность Groups**: Stateful firewalls для instances
-- **Сеть ACLs**: Stateless firewalls для subnets
-- **Веб Application Firewall (WAF)**: Protect against Веб exploits
-- **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
+### Сетевая безопасность
+- **Группы безопасности**: stateful-брандмауэры для инстансов
+- **Сетевые ACL**: stateless-брандмауэры для подсетей
+- **Web Application Firewall (WAF)**: Защита от веб-эксплойтов
+- **Защита от DDoS**: Shield, Cloud Armor, DDoS Protection
 
-### Данные Protection
-- **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption в Transit**: TLS/SSL, HTTPS
-- **Key Управление**: HSM, key rotation, audit trails
-- **Secrets Управление**: Secrets Manager, Key Vault
+### Защита данных
+- **Шифрование при хранении**: KMS, ключи под управлением клиента
+- **Шифрование при передаче**: TLS/SSL, HTTPS
+- **Управление ключами**: HSM, ротация ключей, журналы аудита
+- **Управление секретами**: Secrets Manager, Key Vault
 
-### Compliance и Governance
-- **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enforcement, compliance reporting, audit logs
-- **Frameworks**: Cloud Безопасность Alliance, NIST CSF
+### Соответствие требованиям и управление
+- **Сертификации**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
+- **Инструменты**: Применение политик, отчёты по соответствию требованиям, журналы аудита
+- **Фреймворки**: Cloud Security Alliance, NIST CSF
 
-## DevOps в the Cloud
+## DevOps в облаке
 
-### CI/CD Services
+### CI/CD-сервисы
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkins, CircleCI, GitLab CI
+- **Сторонние**: Jenkins, CircleCI, GitLab CI
 
 ### Infrastructure as Code (IaC)
-- **Terraform**: Multi-cloud, declarative, state Управление
-- **CloudFormation**: AWS native, YAML/JSON templates
-- **ARM Templates**: Azure native
-- **Развертывание Manager**: GCP native
-- **Pulumi**: Infrastructure using programming languages
-- **Benefits**: Version control, repeatability, documentation
+- **Terraform**: Мультиоблако, декларативный подход, управление состоянием
+- **CloudFormation**: Нативный для AWS, шаблоны YAML/JSON
+- **ARM Templates**: Нативный для Azure
+- **Deployment Manager**: Нативный для GCP
+- **Pulumi**: Инфраструктура с использованием языков программирования
+- **Преимущества**: Контроль версий, повторяемость, документация
 
-### Configuration Управление
-- **Ansible**: Agentless, YAML playbooks
-- **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reporting
-- **SaltStack**: Fast, Python-based
+### Управление конфигурацией
+- **Ansible**: Безагентный подход, YAML-playbooks
+- **Chef**: Основан на Ruby, зрелая экосистема
+- **Puppet**: Декларативный подход, сильная отчетность
+- **SaltStack**: Быстрый, основан на Python
 
-### Monitoring и Observability
-- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
-- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
-- **Tracing**: X-Ray, Cloud Trace, Application Insights
-- **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
+### Мониторинг и наблюдаемость
+- **Метрики**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Логирование**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **Трассировка**: X-Ray, Cloud Trace, Application Insights
+- **Дашборды**: CloudWatch Dashboards, Cloud Console
+- **Оповещения**: SNS, Cloud Monitoring alerts, Action Groups
 
-### Container Orchestration
-- **Kubernetes**: Industry standard orchestration
-- **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (traffic Управление, Безопасность)
-- **GitOps**: ArgoCD, Flux (declarative deployments)
+### Оркестрация контейнеров
+- **Kubernetes**: Отраслевой стандарт оркестрации
+- **Управляемые сервисы**: EKS, AKS, GKE
+- **Service Mesh**: Istio, Linkerd (управление трафиком, безопасность)
+- **GitOps**: ArgoCD, Flux (декларативные развертывания)
 
-## Cost Управление
+## Управление затратами
 
-### Pricing Models
-- **Pay-as-you-go**: Pay для what you use
-- **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid для unused capacity, can be interrupted
-- **Savings Plans**: Flexible commitment pricing
-- **Free Tier**: Limited free usage для new accounts
+### Модели ценообразования
+- **Оплата по мере использования**: Оплата только за использованные ресурсы
+- **Зарезервированные экземпляры**: Обязательства на 1–3 года, значительные скидки
+- **Спотовые экземпляры**: Покупка неиспользуемой ёмкости по сниженной ставке, возможны прерывания
+- **Savings Plans**: Гибкая модель ценообразования с обязательствами
+- **Бесплатный уровень**: Ограниченный бесплатный объём для новых аккаунтов
 
-### Cost Optimization Strategies
-- **Right-sizing**: Match instance types to workload needs
-- **Auto-scaling**: Scale based on demand
-- **Reserved Capacity**: Commit to steady-state workloads
-- **Spot Usage**: Use для fault-tolerant, flexible workloads
-- **Storage Tiers**: Move infrequent Данные to cheaper tiers
-- **Cleanup**: Delete unused resources, snapshots, AMIs
+### Стратегии оптимизации затрат
+- **Подбор размера**: Соответствие типов инстансов потребностям нагрузки
+- **Автомасштабирование**: Масштабирование по спросу
+- **Зарезервированная емкость**: Обязательства для стабильных нагрузок
+- **Использование спотовых инстансов**: Для отказоустойчивых и гибких нагрузок
+- **Уровни хранения**: Перемещение редко используемых данных в более дешевые классы
+- **Очистка**: Удаление неиспользуемых ресурсов, snapshots, AMI
 
-### Cost Управление Tools
+### Инструменты управления затратами
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
-- **Azure**: Cost Управление, Advisor
-- **GCP**: Billing reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Datadog
+- **Azure**: Cost Management, Advisor
+- **GCP**: Отчеты по биллингу, Recommender
+- **Сторонние**: CloudHealth, CloudCheckr, Datadog
 
-## High Availability и Disaster Recovery
+## Высокая доступность и аварийное восстановление
 
-### Availability Concepts
-- **Availability Zones**: Physically separate Данные centers within region
-- **Regions**: Geographic areas с multiple AZs
-- **Edge Locations**: CDN cache locations globally
+### Концепции доступности
+- **Availability Zones**: Физически отдельные дата-центры внутри региона
+- **Регионы**: Географические области с несколькими AZ
+- **Пограничные точки присутствия**: Глобальные точки кэширования CDN
 
-### HA Strategies
-- **Multi-AZ**: Deploy across availability zones
-- **Auto-healing**: Auto-replace failed instances
-- **Load Balancing**: Distribute traffic across healthy instances
-- **База данных Replication**: Multi-AZ deployments, read replicas
+### Стратегии высокой доступности
+- **Multi-AZ**: Развертывание в нескольких зонах доступности
+- **Самовосстановление**: Автоматическая замена вышедших из строя инстансов
+- **Балансировка нагрузки**: Распределение трафика между здоровыми инстансами
+- **Репликация баз данных**: Развертывания Multi-AZ, реплики для чтения
 
-### Disaster Recovery Strategies
-- **Backup и Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements running, scale up during disaster
-- **Warm Standby**: Scaled-down version always running
-- **Multi-Site Active/Active**: Full production в multiple regions (highest cost)
+### Стратегии аварийного восстановления
+- **Резервное копирование и восстановление**: Периодические резервные копии, восстановление по мере необходимости (минимальная стоимость)
+- **Минимально поддерживаемое ядро (Pilot Light)**: Основные компоненты работают, масштабирование выполняется во время аварии
+- **Тёплый резерв (Warm Standby)**: Постоянно работает уменьшенная версия системы
+- **Мультирегиональный Active/Active**: Полноценная производственная среда в нескольких регионах (максимальная стоимость)
 
 ### RTO и RPO
-- **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Point Objective (RPO)**: Maximum acceptable Данные loss
-- **Strategy Selection**: Based on Бизнес requirements и budget
+- **Целевое время восстановления (RTO)**: Максимально допустимое время простоя
+- **Целевая точка восстановления (RPO)**: Максимально допустимая потеря данных
+- **Выбор стратегии**: Определяется бизнес-требованиями и бюджетом
 
-## Emerging Trends
+## Новые тенденции
 
-### Edge Вычисления
-- Process Данные closer to source
-- **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **Use Cases**: IoT, real-time analytics, low-latency applications
+### Периферийные вычисления
+- Обрабатывайте данные ближе к источнику
+- **Сервисы**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
+- **Сценарии использования**: IoT, аналитика в реальном времени, приложения с низкой задержкой
 
-### Multi-Cloud и Hybrid Cloud
-- Avoid vendor lock-в
-- Leverage best-из-breed services
-- **Tools**: Terraform, Anthos, Arc, CloudHealth
+### Мультиоблако и гибридное облако
+- Избегайте привязки к поставщику
+- Используйте лучшие сервисы в каждом классе
+- **Инструменты**: Terraform, Anthos, Arc, CloudHealth
 
-### AI/ML Services
-- Pre-trained models: Vision, speech, Язык
-- Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model Развертывание, monitoring, governance
+### AI/ML-сервисы
+- Предобученные модели: зрение, речь, язык
+- Обучение собственных моделей: SageMaker, Vertex AI, Azure ML
+- MLOps: Развёртывание моделей, мониторинг, управление
 
-### Quantum Вычисления
-- **Services**: AWS Braket, Azure Quantum
-- **Status**: Early stage, experimental
-- **Potential**: Cryptography, optimization, drug discovery
+### Квантовые вычисления
+- **Сервисы**: AWS Braket, Azure Quantum
+- **Статус**: Ранняя стадия, экспериментальная область
+- **Потенциал**: Криптография, оптимизация, разработка лекарств
 
-### Sustainable Cloud
-- Carbon footprint tracking
-- Renewable energy commitments
-- Efficient resource utilization
-- Green Архитектура patterns
+### Экологически устойчивое облако
+- Отслеживание углеродного следа
+- Обязательства по использованию возобновляемой энергии
+- Эффективное использование ресурсов
+- Паттерны экологичной архитектуры

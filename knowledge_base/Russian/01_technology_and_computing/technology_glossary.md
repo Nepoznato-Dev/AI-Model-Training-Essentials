@@ -1,209 +1,202 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: technology_glossary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Глоссарий технологий
 
-# Технология Glossary
-
-A Справочник glossary covering AI models, hardware, benchmarks, и core concepts
-в the modern AI и Вычисления landscape.
+Справочный глоссарий по ИИ-моделям, оборудованию, бенчмаркам и ключевым понятиям
+в современном мире ИИ и вычислительной техники.
 
 ---
 
-## AI Язык Models и Assistants
+## Языковые ИИ-модели и ассистенты
 
 ### ChatGPT
-ChatGPT is an AI chatbot developed by OpenAI, first released в November 2022.
-It is powered by the GPT series из large Язык models (LLMs). ChatGPT is one
-из the fastest-growing consumer AI products в История, reaching 100 million
-users within two months из launch. It supports text-based conversation, code
-generation, summarisation, и creative writing. Paid tiers provide access to
-more powerful models such as GPT-4 и GPT-4o.
+ChatGPT — это ИИ-чатбот, разработанный OpenAI и впервые выпущенный в ноябре 2022 года.
+Он работает на базе серии больших языковых моделей GPT (LLM). ChatGPT — один
+из самых быстрорастущих потребительских ИИ-продуктов в истории: он достиг 100 миллионов
+пользователей в течение двух месяцев после запуска. Он поддерживает текстовый диалог, генерацию
+кода, суммаризацию и творческое письмо. Платные тарифы предоставляют доступ к
+более мощным моделям, таким как GPT-4 и GPT-4o.
 
 ### GPT (Generative Pre-trained Transformer)
-GPT is a family из large Язык models created by OpenAI. the Архитектура
-uses a decoder-only Transformer trained с a next-token prediction objective on
-massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
-для "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via the API), GPT-3.5 (the backbone из the original ChatGPT), и GPT-4
-(2023, multimodal, Производительность close to human expert level on many benchmarks).
+GPT — это семейство больших языковых моделей, созданных OpenAI. Архитектура
+использует Transformer только с декодером, обученный с целью предсказания следующего токена на
+огромных текстовых корпусах. Ключевые версии включают GPT-2 (2019, 1.5B параметров, примечателен
+публичной историей про "too dangerous to release"), GPT-3 (2020, 175B параметров, широко
+использовался через API), GPT-3.5 (основа оригинального ChatGPT) и GPT-4
+(2023, мультимодальная модель, по многим бенчмаркам показывающая результаты, близкие к уровню человеческого эксперта).
 
 ### Claude
-Claude is an AI assistant developed by Anthropic. It is named after Claude
-Shannon, the founder из information theory. Anthropic was founded by former
-OpenAI researchers и focuses on "constitutional AI" — a technique to make
-models safer by training them to follow a set из principles. Claude models
-(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known для long context windows (up
-to 200,000 tokens), nuanced reasoning, и reduced harmful output compared to
-baseline LLMs.
+Claude — это AI-ассистент, разработанный Anthropic. Он назван в честь Клода
+Шеннона, основателя теории информации. Anthropic была основана бывшими
+исследователями OpenAI и делает акцент на «конституционном ИИ» — технике, которая делает
+модели безопаснее, обучая их следовать набору принципов. Модели Claude
+(Claude 1, 2, 3 Haiku / Sonnet / Opus) известны длинными окнами контекста (до
+200 000 токенов), тонким рассуждением и меньшим количеством вредоносных ответов по сравнению с
+базовыми LLM.
 
 ### Gemini
-Gemini is Google DeepMind's family из multimodal AI models, announced в
-December 2023. Gemini is natively multimodal — trained from the ground up on
-text, images, audio, и video simultaneously, unlike earlier models that had
-modalities added via fine-tuning. Versions include Gemini Nano (on-device),
-Gemini Flash (fast, cost-efficient), и Gemini Ultra (highest-capability).
-Gemini powers Google's AI chatbot Bard (renamed Gemini) и Google Search AI
+Gemini — это семейство мультимодальных ИИ-моделей Google DeepMind, анонсированное в
+декабре 2023 года. Gemini изначально мультимодальна — она обучалась с нуля одновременно на
+тексте, изображениях, аудио и видео, в отличие от более ранних моделей, у которых
+модальности добавлялись через дообучение. Среди версий — Gemini Nano (для работы на устройстве),
+Gemini Flash (быстрая и экономичная) и Gemini Ultra (максимальной мощности).
+Gemini используется в ИИ-чатботе Google Bard (позже переименованном в Gemini) и в Google Search AI
 Overviews.
 
 ### Phi-3-mini
-Phi-3-mini is a small Язык model (SLM) developed by Microsoft с 3.8B
-parameters. It was released в April 2024. Unlike most large models, Phi-3-mini
-was trained on a carefully curated "textbook-quality" dataset — a technique
-pioneered by Microsoft Research — that prioritises Данные quality over raw volume.
-Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
-outperforms models several times larger on reasoning benchmarks such as MMLU и
-HumanEval. It supports a 4k token context window в its base variant и a 128k
-window в the long-context variant. Phi-3-mini can run on a single consumer GPU
-or even on-device on a modern smartphone с sufficient RAM.
+Phi-3-mini — это небольшая языковая модель (SLM), разработанная Microsoft с 3.8B
+параметров. Она была выпущена в апреле 2024 года. В отличие от большинства крупных моделей, Phi-3-mini
+обучалась на тщательно отобранном датасете «учебникового качества» — это техника,
+разработанная Microsoft Research, — где приоритет отдаётся качеству данных, а не их объёму.
+Несмотря на то что Phi-3-mini намного меньше GPT-4 или Claude 3 Opus, она соответствует или
+превосходит модели в несколько раз больше по бенчмаркам рассуждения, таким как MMLU и
+HumanEval. Она поддерживает окно контекста 4k токенов в базовом варианте и 128k
+в варианте с длинным контекстом. Phi-3-mini может работать на одной потребительской GPU
+или даже прямо на устройстве, например на современном смартфоне, при достаточном объёме RAM.
 
 ### Llama (Meta AI)
-Llama (Large Язык Model Meta AI) is an open-weights family из models
-released by Meta. Llama 2 (2023) was released для research и commercial use
-с sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
-Производительность significantly, с models ranging from 8B to 70B (и later 400B+).
-Because the weights are publicly downloadable, Llama models are the foundation
-для a large ecosystem из fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
-и are widely used для local/private AI deployments.
+Llama (Large Language Model Meta AI) — это семейство моделей с открытыми весами,
+выпущенное Meta. Llama 2 (2023) была выпущена для исследований и коммерческого использования
+в размерах от 7B до 70B параметров. Llama 3 (2024) значительно улучшила
+производительность, а размеры моделей варьировались от 8B до 70B (а позже и 400B+).
+Поскольку веса доступны для публичной загрузки, модели Llama стали основой
+для большой экосистемы дообученных вариантов (Mistral, Alpaca, Vicuna и т. д.)
+и широко используются для локальных/приватных AI-развёртываний.
 
 ### Mistral
-Mistral AI is a French AI company that develops open и proprietary LLMs.
-Mistral 7B (2023) demonstrated that a 7B-parameter model can match the
-Производительность из much larger models using efficient techniques such as sliding
-window attention и grouped-query attention. Mixtral 8x7B (2024) is a mixture-
-из-experts model — it routes each token to a subset из 8 expert networks,
-achieving GPT-3.5-level Производительность while being computationally cheaper.
-Mistral's models are fully open-weight и can be run locally.
+Mistral AI — это французская AI-компания, разрабатывающая открытые и проприетарные LLM.
+Mistral 7B (2023) показала, что модель с 7B параметров может соответствовать
+производительности гораздо более крупных моделей за счёт эффективных техник, таких как sliding
+window attention и внимание с группировкой запросов. Mixtral 8x7B (2024) — это mixture-
+of-experts модель — она направляет каждый токен в подмножество из 8 экспертных сетей,
+достигая производительности уровня GPT-3.5 при меньших вычислительных затратах.
+Модели Mistral имеют полностью открытые веса и могут запускаться локально.
 
 ---
 
-## GPU Hardware и Graphics Cards
+## GPU-оборудование и видеокарты
 
 ### GPU (Graphics Processing Unit)
-A GPU is a processor designed для massively parallel computation. Originally
-built для rendering 3D graphics, GPUs have become essential для AI/ML training
-и inference because they can perform thousands из floating-point operations
-simultaneously using thousands из small cores. the two main GPU manufacturers
-для AI are NVIDIA и AMD.
+GPU — это процессор, предназначенный для массово-параллельных вычислений. Изначально
+созданные для рендеринга 3D-графики, GPU стали незаменимы для обучения и инференса ИИ/ML,
+потому что могут одновременно выполнять тысячи операций с плавающей точкой,
+используя тысячи небольших ядер. Два основных производителя GPU
+для ИИ — NVIDIA и AMD.
 
 ### NVIDIA GeForce RTX Series
-the RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
-30xx (Ampere, 2020) и RTX 40xx (Ada Lovelace, 2022) generations include
-dedicated Tensor Cores для accelerating AI operations. VRAM (video RAM) is
-critical для running AI models locally — an 8GB GPU can handle 7B parameter
-models в 4-bit quantisation; a 24GB GPU can handle 70B models в 4-bit.
+Серия RTX (Ray Tracing Texel eXtreme) — это потребительская линейка GPU от NVIDIA. Поколения RTX
+30xx (Ampere, 2020) и RTX 40xx (Ada Lovelace, 2022) включают
+выделенные Tensor Cores для ускорения ИИ-операций. VRAM (видеопамять) критически важна
+для локального запуска ИИ-моделей — GPU с 8GB может работать с моделями на 7B параметров
+в 4-битной квантизации; GPU с 24GB может работать с моделями на 70B в 4-битном виде.
 
-### NVIDIA A-Series и H-Series (Данные Centre)
-the A100 (Ampere, 2020) и H100 (Hopper, 2022) are NVIDIA's professional AI
-accelerators. An H100 has up to 80GB из HBM3 memory и is the standard
-hardware behind most large-scale LLM training today. These GPUs cost $25,000–
-$40,000 each but offer 10–30× the AI throughput из consumer RTX cards.
+### NVIDIA A-Series and H-Series (Data Centre)
+A100 (Ampere, 2020) и H100 (Hopper, 2022) — это профессиональные AI-
+ускорители NVIDIA. H100 имеет до 80GB памяти HBM3 и является стандартным
+оборудованием для большинства масштабных обучений LLM сегодня. Эти GPU стоят по $25,000–
+$40,000 за штуку, но обеспечивают пропускную способность для ИИ в 10–30× выше, чем потребительские карты RTX.
 
 ### AMD Radeon RX Series
-AMD's consumer GPU line. the RX 7900 XTX (2022) has 24GB VRAM и can run
-local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA для AI frameworks, though Поддержка is improving.
+Это потребительская линейка GPU от AMD. RX 7900 XTX (2022) имеет 24GB VRAM и может запускать
+локальные LLM через ROCm (стек вычислений GPU от AMD). GPU от AMD в целом хуже
+поддерживаются AI-фреймворками, чем NVIDIA, хотя поддержка улучшается.
 
 ### Intel Arc
-Intel Arc is Intel's discrete GPU product line, released starting в 2022. Arc
-GPUs Поддержка XeSS (Intel's super-sampling) и have limited but growing Поддержка
-для AI inference tasks via OpenVINO и IPEX-LLM frameworks.
+Intel Arc — это линейка дискретных GPU от Intel, выпускаемая с 2022 года. GPU Arc
+поддерживают XeSS (технологию суперсэмплинга Intel) и имеют ограниченную, но растущую поддержку
+AI-инференса через фреймворки OpenVINO и IPEX-LLM.
 
 ### ARK Intel (ark.intel.com)
-ARK is Intel's official product specifications База данных at ark.intel.com. It
-provides detailed technical specifications для every Intel CPU, GPU, FPGA, и
-NUC product, including core counts, clock speeds, TDP, supported memory types,
-и instruction-set features. When you hear "check ARK для specs," it means
-visiting that База данных для authoritative hardware information.
+ARK — это официальная база спецификаций продуктов Intel на ark.intel.com. Она
+предоставляет подробные технические характеристики для каждого продукта Intel CPU, GPU, FPGA и
+NUC, включая число ядер, тактовые частоты, TDP, поддерживаемые типы памяти
+и особенности наборов инструкций. Когда говорят "check ARK for specs", имеют в виду
+обращение к этой базе как к авторитетному источнику сведений о железе.
 
 ---
 
-## AI Производительность Benchmarks
+## Бенчмарки производительности AI
 
-### MMLU (Massive Multitask Язык Understanding)
-MMLU is a benchmark Тестирование LLM knowledge across 57 academic subjects including
-mathematics, История, Закон, Медицина, и computer Наука. It consists из
-multiple-choice questions drawn from real university-level exams. A score из
-70% is roughly human undergraduate level; GPT-4 и Claude 3 score above 86%.
-Phi-3-mini scores around 70% despite its small size.
+### MMLU (Massive Multitask Language Understanding)
+MMLU — это бенчмарк, проверяющий знания LLM в 57 академических предметах, включая
+математику, историю, право, медицину и информатику. Он состоит из
+вопросов с несколькими вариантами ответа, взятых из реальных университетских экзаменов. Результат
+в 70% примерно соответствует уровню студента бакалавриата; GPT-4 и Claude 3 набирают более 86%.
+Phi-3-mini набирает около 70% несмотря на свой небольшой размер.
 
 ### HumanEval
-HumanEval is OpenAI's benchmark для code generation. It consists из 164 Python
-programming problems с automated test cases. Models are measured on
-pass@k — the probability that at least one из k generated solutions passes all
-tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
+HumanEval — это бенчмарк OpenAI для генерации кода. Он состоит из 164 задач по Python
+с автоматизированными тест-кейсами. Модели оцениваются по метрике
+pass@k — вероятности того, что хотя бы одно из k сгенерированных решений проходит все
+тесты. GPT-4 набирает ~87% (pass@1); хорошо настроенная модель на 7B может достичь ~50–60%.
 
 ### HellaSwag
-HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
-describing a mundane activity и must choose the most likely continuation from
-four options. the incorrect options are specially designed to be plausible but
-subtly wrong. It tests whether a model has a grounded understanding из physical
-и social situations.
+HellaSwag — это бенчмарк на здравый смысл. Модели получают предложение,
+описывающее повседневную активность, и должны выбрать наиболее вероятное продолжение из
+четырёх вариантов. Неверные варианты специально сделаны правдоподобными, но
+тонко ошибочными. Бенчмарк проверяет, есть ли у модели приземлённое понимание физических
+и социальных ситуаций.
 
 ### ARC (AI2 Reasoning Challenge)
-ARC is a benchmark from the Allen Institute для AI. It consists из grade-school
-Наука questions, split into "Easy" и "Challenge" sets. the Challenge set
-contains questions that retrieval-based methods и simple statistical models
-struggle с, requiring multi-step reasoning.
+ARC — это бенчмарк от Allen Institute for AI. Он состоит из школьных
+вопросов по естественным наукам, разделённых на наборы "Easy" и "Challenge". Набор Challenge
+содержит вопросы, с которыми плохо справляются retrieval-based методы и простые статистические модели,
+поскольку там требуется многошаговое рассуждение.
 
 ---
 
-## Core AI/ML Concepts
+## Базовые понятия AI/ML
 
 ### RAG (Retrieval-Augmented Generation)
-RAG is a technique that combines a retrieval system (typically a vector
-База данных) с a Язык model. Instead из relying solely on the model's
-parametric knowledge, RAG first retrieves relevant documents from an external
-База знаний и then includes them в the model's context. This allows the
-model to answer questions about up-to-date or domain-specific information
-without retraining. Potato.ai uses a form из RAG — it retrieves from its KB
-и includes the results в the context before generating a response.
+RAG — это техника, сочетающая систему поиска (обычно векторную
+базу данных) с языковой моделью. Вместо того чтобы полагаться только на
+параметрические знания модели, RAG сначала извлекает релевантные документы из внешней
+базы знаний, а затем включает их в контекст модели. Это позволяет
+модели отвечать на вопросы об актуальной или предметно-специфической информации
+без дообучения. Potato.ai использует разновидность RAG — система извлекает данные из своей KB
+и добавляет результаты в контекст перед генерацией ответа.
 
-### Fine-tuning
-Fine-tuning is the process из continuing to train a pre-trained model on a
-smaller, domain-specific dataset. This adapts the model's weights для a
-particular task or domain. для example, a base LLM might be fine-tuned on
-medical records to create a medical Q&A assistant. Fine-tuning is
-computationally expensive but much cheaper than training from scratch.
+### Дообучение
+Дообучение — это процесс продолжения обучения предобученной модели на
+меньшем, предметно-специфическом датасете. Это адаптирует веса модели под
+конкретную задачу или домен. Например, базовую LLM можно дообучить на
+медицинских записях, чтобы создать медицинского Q&A-ассистента. Fine-tuning
+требует значительных вычислений, но всё же намного дешевле, чем обучение с нуля.
 
-### Quantisation
-Quantisation reduces the numerical precision из model weights (e.g. from 32-bit
-float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
-в 16-bit precision requires ~14GB VRAM; the same model в 4-bit (GGUF format)
-requires ~4GB. Quantisation typically causes a small but acceptable accuracy
-degradation и is the main technique enabling large models to run on consumer
-hardware or even mobile devices.
+### Квантизация
+Квантизация снижает числовую точность весов модели (например, с 32-битного
+числа с плавающей точкой до 4-битного целого числа). Это радикально уменьшает объём памяти — модель на 7B
+в 16-битной точности требует ~14GB VRAM; та же модель в 4-битном виде (формат GGUF)
+требует ~4GB. Quantisation обычно приводит к небольшому, но приемлемому снижению точности
+и является основной техникой, позволяющей запускать большие модели на потребительском
+оборудовании или даже на мобильных устройствах.
 
-### Context Window
-the context window is the maximum number из tokens a model can process at once,
-including both the prompt и the generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo и Claude 3 Поддержка 128,000 tokens; Gemini 1.5 Pro
-supports 1,000,000 tokens. A larger context window allows the model to "see"
-more из a conversation or document at once, improving coherence over long
-exchanges.
+### Контекстное окно
+Контекстное окно — это максимальное число токенов, которое модель может обработать за один раз,
+включая и prompt, и сгенерированный ответ. У GPT-3.5 было окно на 4,096 токена;
+GPT-4 Turbo и Claude 3 поддерживают 128,000 токенов; Gemini 1.5 Pro
+поддерживает 1,000,000 токенов. Более широкое окно контекста позволяет модели "видеть"
+большую часть беседы или документа сразу, улучшая связность в длинных
+обменах.
 
-### RLHF (Reinforcement Learning from Human Обратная связь)
-RLHF is the training technique that transforms a base Язык model (which
-simply predicts the next token) into an assistant that follows instructions и
-behaves helpfully. Human raters score model outputs, a reward model is trained
-on their preferences, и the Язык model is then optimised against this
-reward model using reinforcement learning. ChatGPT, Claude, и Gemini all use
-variants из RLHF or similar alignment techniques (e.g. Constitutional AI,
+### RLHF (Reinforcement Learning from Human Feedback)
+RLHF — это техника обучения, которая превращает базовую языковую модель (которая
+просто предсказывает следующий токен) в ассистента, способного следовать инструкциям и
+вести себя полезно. Люди-оценщики выставляют оценки ответам модели, затем обучается
+reward model на их предпочтениях, а после этого языковая модель оптимизируется по этой
+reward model с использованием обучения с подкреплением. ChatGPT, Claude и Gemini используют
+варианты RLHF или схожих техник выравнивания (например, Constitutional AI,
 Direct Preference Optimisation).
 
-### Transformer Архитектура
-the Transformer is the neural Сеть Архитектура underlying all modern LLMs.
-Introduced в the 2017 paper "Attention Is All You Need" by Vaswani et al., it
-uses self-attention mechanisms to process all tokens в parallel rather than
-sequentially. Encoder-only Transformers (BERT) are used для understanding tasks;
-decoder-only Transformers (GPT, Llama, Mistral) are used для generation tasks;
-encoder-decoder Transformers (T5, BART) are used для translation и summarisation.
+### Архитектура Transformer
+Transformer — это архитектура нейронной сети, лежащая в основе всех современных LLM.
+Представленная в статье 2017 года "Attention Is All You Need" авторов Vaswani et al., она
+использует механизмы self-attention для обработки всех токенов параллельно, а не
+последовательно. Трансформеры только с энкодером (BERT) используются для задач понимания;
+трансформеры только с декодером (GPT, Llama, Mistral) — для задач генерации;
+трансформеры типа энкодер-декодер (T5, BART) — для перевода и суммаризации.
 
-### Embeddings и Vector Databases
-Embeddings are dense numerical representations из text (or images) produced by
-a neural Сеть. Semantically similar texts have embeddings that are close в
-vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings и Поддержка fast approximate nearest-neighbour search. They are
-the storage backbone из RAG Системы, including Potato.ai's cold-memory layer.
+### Эмбеддинги и векторные базы данных
+Эмбеддинги — это плотные численные представления текста (или изображений), создаваемые
+нейронной сетью. Семантически похожие тексты имеют эмбеддинги, которые близки в
+векторном пространстве. Векторные базы данных (ChromaDB, Pinecone, Weaviate, Qdrant) хранят
+эти эмбеддинги и поддерживают быстрый приблизительный поиск ближайших соседей. Они являются
+основой хранения для систем RAG, включая слой cold-memory в Potato.ai.

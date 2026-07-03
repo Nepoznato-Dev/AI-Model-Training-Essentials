@@ -1,40 +1,33 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: database_systems.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Системы баз данных
 
-# База данных Системы
+## Основы баз данных
 
-## База данных Основы
+### Что такое база данных?
+База данных — это организованная коллекция структурированной информации, хранящейся в электронном виде и предназначенной для эффективного извлечения, вставки, обновления и удаления данных.
 
-### What is a База данных?
-A База данных is an organized collection из structured information stored electronically, designed для efficient retrieval, insertion, updating, и deletion из Данные.
+### Системы управления базами данных (DBMS)
+Программное обеспечение, которое взаимодействует с конечными пользователями, приложениями и самой базой данных для сбора и анализа данных. Примеры: MySQL, PostgreSQL, Oracle, MongoDB.
 
-### База данных Управление Системы (DBMS)
-Software that interacts с end users, applications, и the База данных itself to capture и analyze Данные. Примеры: MySQL, PostgreSQL, Oracle, MongoDB.
+### Ключевые понятия
+- **Схема**: Структура/организация базы данных (таблицы, поля, связи)
+- **Экземпляр**: Фактические данные, хранящиеся в конкретный момент времени
+- **Свойства ACID**: Атомарность, согласованность, изоляция, долговечность
+- **Теорема CAP**: согласованность, доступность, устойчивость к разделению сети (обычно приходится выбирать компромисс)
+- **Нормализация**: Организация данных для уменьшения избыточности
+- **Денормализация**: Добавление избыточности для повышения производительности чтения
 
-### Key Concepts
-- **Schema**: Structure/organization из База данных (tables, fields, relationships)
-- **Instance**: Actual Данные stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing Данные to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read Производительность
+## Реляционные базы данных (SQL)
 
-## Relational Databases (SQL)
+### Основные понятия
+- **Таблицы**: Строки (записи) и столбцы (поля)
+- **Первичный ключ**: Уникальный идентификатор для каждой строки
+- **Внешний ключ**: Ссылка на первичный ключ в другой таблице
+- **Индексы**: Структуры данных, ускоряющие выполнение запросов
+- **Представления**: Виртуальные таблицы на основе результатов запроса
+- **Хранимые процедуры**: Предварительно скомпилированные блоки SQL-кода
+- **Триггеры**: Автоматические действия при изменении данных
 
-### Core Concepts
-- **Tables**: Rows (records) и columns (fields)
-- **Primary Key**: Unique identifier для each row
-- **Foreign Key**: Справочник to primary key в another table
-- **Indexes**: Данные structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on Данные changes
-
-### SQL Operations (CRUD)
+### Операции SQL (CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -50,265 +43,265 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product из both tables
-- **SELF JOIN**: Table joined с itself
+### Соединения
+- **INNER JOIN**: Возвращает совпадающие строки из обеих таблиц
+- **LEFT JOIN**: Все строки из левой таблицы и совпадения из правой
+- **RIGHT JOIN**: Все строки из правой таблицы и совпадения из левой
+- **FULL OUTER JOIN**: Все строки из обеих таблиц
+- **CROSS JOIN**: Декартово произведение обеих таблиц
+- **SELF JOIN**: Соединение таблицы самой с собой
 
-### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+### Формы нормализации
+- **1NF**: Атомарные значения, без повторяющихся групп
+- **2NF**: 1NF + отсутствие частичных зависимостей (все неключевые атрибуты зависят от всего первичного ключа)
+- **3NF**: 2NF + отсутствие транзитивных зависимостей (неключевые атрибуты не зависят от других неключевых атрибутов)
+- **BCNF**: Усиленная 3NF, каждый детерминант является потенциальным ключом
+- **4NF**: Нет многозначных зависимостей
+- **5NF**: Нет зависимостей соединения
 
-### Popular RDBMS
-- **PostgreSQL**: Продвинутый features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, Веб applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### Популярные RDBMS
+- **PostgreSQL**: Расширенные возможности, расширяемость, соответствие ACID
+- **MySQL**: Широко используется, быстрое чтение, веб-приложения
+- **Oracle**: Корпоративные возможности, масштабируемость, высокая стоимость
+- **SQL Server**: Экосистема Microsoft, интегрированные инструменты
+- **SQLite**: Встраиваемая, без отдельного сервера, легковесная
+- **MariaDB**: Форк MySQL с открытым исходным кодом
 
-## NoSQL Databases
+## NoSQL-базы данных
 
-### Types из NoSQL Databases
+### Типы NoSQL-баз данных
 
-#### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Управление, catalogs, user profiles
+#### Документные хранилища
+- **Структура**: JSON-подобные документы (BSON)
+- **Сценарии использования**: Управление контентом, каталоги, профили пользователей
 - **Примеры**: MongoDB, CouchDB, DocumentDB
-- **Query Example** (MongoDB):
+- **Пример запроса** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
+#### Хранилища «ключ-значение»
+- **Структура**: Простые пары ключ-значение
+- **Сценарии использования**: Кэширование, сессии, корзины покупок
 - **Примеры**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+- **Характеристики**: Быстрые, простые, с ограниченными возможностями запросов
 
-#### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **Use Cases**: Big Данные, analytics, time-series
+#### Хранилища семейств столбцов
+- **Структура**: Столбцы, сгруппированные в семейства
+- **Сценарии использования**: Big Data, аналитика, временные ряды
 - **Примеры**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+- **Характеристики**: Оптимизированы под запись, распределенные, масштабируемые
 
-#### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
+#### Графовые базы данных
+- **Структура**: Узлы, ребра, свойства
+- **Сценарии использования**: Социальные сети, обнаружение мошенничества, рекомендации
 - **Примеры**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Язык**: Cypher (Neo4j), Gremlin
+- **Язык запросов**: Cypher (Neo4j), Gremlin
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested Данные
-- Distributed Системы
-- Real-time applications
+### Когда использовать NoSQL
+- Гибкая/эволюционирующая схема
+- Требования к горизонтальному масштабированию
+- Высокая пропускная способность записи
+- Иерархические/вложенные данные
+- Распределенные системы
+- Приложения реального времени
 
-## База данных Design
+## Проектирование баз данных
 
-### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties из entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number из instances в relationship
+### ER-моделирование (сущность—связь)
+- **Сущности**: Объекты/понятия (клиент, товар, заказ)
+- **Атрибуты**: Свойства сущностей (имя, цена, дата)
+- **Связи**: Соединения между сущностями (один-к-одному, один-ко-многим, многие-ко-многим)
+- **Кардинальность**: Количество экземпляров в связи
 
-### Schema Design Patterns
-- **Single Table Inheritance**: All types в one table с type discriminator
-- **Class Table Inheritance**: Separate tables для base и subclasses
-- **Concrete Table Inheritance**: Separate table для each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+### Паттерны проектирования схем
+- **Наследование в одной таблице**: Все типы в одной таблице с дискриминатором типа
+- **Наследование через таблицы классов**: Отдельные таблицы для базового класса и подклассов
+- **Наследование через конкретные таблицы**: Отдельная таблица для каждого конкретного класса
+- **Промежуточные таблицы**: Разрешают связи многие-ко-многим
+- **Таблицы аудита**: Отслеживают изменения (created_at, updated_at, deleted_at)
 
-### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic Данные (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed для query
+### Стратегии индексирования
+- **B-Tree**: По умолчанию, диапазонные запросы, сортировка
+- **Hash**: Поиск по точному совпадению
+- **Bitmap**: Столбцы с низкой кардинальностью (gender, status)
+- **Полнотекстовый индекс**: Возможности текстового поиска
+- **Пространственный индекс**: Географические данные (GIS)
+- **Составной индекс**: Комбинация нескольких столбцов
+- **Покрывающий индекс**: Включает все столбцы, необходимые для запроса
 
-## Query Optimization
+## Оптимизация запросов
 
-### Execution Plans
-- Understanding how База данных executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
-- Tools: EXPLAIN, EXPLAIN ANALYZE
+### Планы выполнения
+- Понимание того, как база данных выполняет запросы
+- Выявление узких мест (полные сканирования таблиц, отсутствующие индексы)
+- Инструменты: EXPLAIN, EXPLAIN ANALYZE
 
-### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types и order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+### Техники оптимизации
+- **Использование индексов**: Убедитесь, что запросы используют подходящие индексы
+- **Переписывание запросов**: Упрощайте сложные запросы
+- **Оптимизация JOIN**: Выбирайте правильные типы и порядок JOIN
+- **Партиционирование**: Разделение больших таблиц (по диапазону, хешу или списку)
+- **Материализованные представления**: Предварительно вычисленные результаты запросов
+- **Кэширование запросов**: Хранение результатов часто выполняемых запросов
 
-### Common Производительность Issues
-- **N+1 Query Problem**: Fetching related Данные inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting для locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### Частые проблемы производительности
+- **Проблема N+1 запросов**: Неэффективное получение связанных данных
+- **Отсутствующие индексы**: Полные сканирования больших таблиц
+- **Чрезмерное индексирование**: Медленная запись из-за слишком большого числа индексов
+- **Конкуренция за блокировки**: Транзакции ожидают освобождения блокировок
+- **Неэффективные запросы**: SELECT *, лишние JOIN
 
-## Transactions и Concurrency
+## Транзакции и конкурентность
 
-### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed Данные visible (default в most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+### Уровни изоляции транзакций
+- **READ UNCOMMITTED**: Самая низкая изоляция, возможны грязные чтения
+- **READ COMMITTED**: Видны только зафиксированные данные (по умолчанию в большинстве СУБД)
+- **REPEATABLE READ**: Один и тот же запрос возвращает одинаковые результаты внутри транзакции
+- **SERIALIZABLE**: Самая высокая изоляция, транзакции выполняются последовательно
 
-### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions из rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+### Управление конкурентностью
+- **Пессимистические блокировки**: Блокировка ресурсов до доступа
+- **Оптимистические блокировки**: Проверка версии перед подтверждением транзакции
+- **MVCC (Multi-Version Concurrency Control)**: Хранение нескольких версий строк
+- **Блокировки на уровне строк**: Блокируются конкретные строки
+- **Блокировки на уровне таблицы**: Блокируется вся таблица
 
-### Deadlocks
-- Circular dependency where transactions wait для each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+### Взаимные блокировки
+- Циклическая зависимость, при которой транзакции ждут друг друга
+- Предотвращение: Согласованный порядок блокировок, тайм-ауты, обнаружение взаимных блокировок
+- Разрешение: Прервать одну транзакцию
 
-## Replication и Scaling
+## Репликация и масштабирование
 
-### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+### Типы репликации
+- **Основной узел — реплики**: Один основной узел и несколько реплик для чтения
+- **Основной узел — основной узел**: Несколько основных узлов и двунаправленная репликация
+- **Много основных узлов**: Несколько основных узлов, требуется разрешение конфликтов
+- **Цепочечная репликация**: Последовательная репликация через узлы
 
-### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split Данные across servers by key/range/hash
-- **Federation**: Split by function/service
+### Подходы к масштабированию
+- **Вертикальное масштабирование**: Увеличение ресурсов сервера (CPU, RAM, хранилище)
+- **Горизонтальное масштабирование**: Добавление серверов (шардирование, партиционирование)
+- **Реплики для чтения**: Перенос нагрузки чтения
+- **Шардирование**: Разделение данных между серверами по ключу, диапазону или хешу
+- **Федерация**: Разделение по функции или сервису
 
-### Consistency Models
-- **Strong Consistency**: All nodes see same Данные at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+### Модели согласованности
+- **Строгая согласованность**: Все узлы видят одни и те же данные одновременно
+- **Согласованность в конечном счёте**: Узлы сходятся к одному состоянию со временем
+- **Причинная согласованность**: Сохраняются причинно-следственные связи
+- **Чтение своих записей**: Пользователь сразу видит собственные обновления
 
-## Backup и Recovery
+## Резервное копирование и восстановление
 
-### Backup Strategies
-- **Full Backup**: Полный База данных copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-в-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+### Стратегии резервного копирования
+- **Полная резервная копия**: Полная копия базы данных
+- **Инкрементная резервная копия**: Изменения с момента последней резервной копии
+- **Дифференциальная резервная копия**: Изменения с момента последней полной резервной копии
+- **Восстановление на момент времени**: Восстановление на конкретный момент времени
+- **Непрерывное резервное копирование**: Репликация в резервную копию в реальном времени
 
-### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable Данные loss
-- **Disaster Recovery Plan**: Documented procedures для failures
-- **Тестирование**: Regular recovery drills
+### Процедуры восстановления
+- **RTO (Recovery Time Objective)**: Максимально допустимое время простоя
+- **RPO (Recovery Point Objective)**: Максимально допустимая потеря данных
+- **План аварийного восстановления**: Документированные процедуры на случай сбоев
+- **Тестирование**: Регулярные учебные восстановления
 
 ## Безопасность
 
-### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions для easier Управление
-- **Principle из Least Privilege**: Minimum necessary access
+### Контроль доступа
+- **Аутентификация**: Проверка личности пользователя
+- **Авторизация**: Выдача разрешений (GRANT, REVOKE)
+- **Роли**: Группировка разрешений для упрощения управления
+- **Принцип наименьших привилегий**: Минимально необходимый доступ
 
-### Данные Protection
-- **Encryption at Rest**: Encrypt stored Данные
-- **Encryption в Transit**: TLS/SSL для connections
-- **Masking**: Hide sensitive Данные в non-production
-- **Tokenization**: Replace sensitive Данные с tokens
+### Защита данных
+- **Шифрование при хранении**: Шифрование сохраненных данных
+- **Шифрование при передаче**: TLS/SSL для соединений
+- **Маскирование**: Сокрытие чувствительных данных вне продуктивной среды
+- **Токенизация**: Замена чувствительных данных токенами
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL в user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all База данных activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+### Распространенные уязвимости
+- **SQL-инъекция**: Вредоносный SQL во входных данных пользователя
+- **Повышение привилегий**: Получение несанкционированного доступа
+- **Журналирование аудита**: Отслеживание всех действий с базой данных
+- **Соответствие требованиям**: Требования GDPR, HIPAA, PCI-DSS
 
-## Modern База данных Technologies
+## Современные технологии баз данных
 
-### Cloud Databases
+### Облачные базы данных
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL База данных, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+- **Azure**: SQL Database, Cosmos DB, Synapse
+- **Преимущества**: Управляемый сервис, автомасштабирование, резервные копии включены
 
-### NewSQL Databases
-- Combine SQL consistency с NoSQL scalability
+### NewSQL-базы данных
+- Сочетают SQL-согласованность с масштабируемостью NoSQL
 - **Примеры**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+- **Особенности**: Распределенность, ACID-транзакции, горизонтальное масштабирование
 
-### Time-Series Databases
-- Optimized для timestamped Данные
+### Базы данных временных рядов
+- Оптимизированы для данных с временными метками
 - **Примеры**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial Данные
+- **Сценарии использования**: IoT, мониторинг, финансовые данные
 
-### Vector Databases
-- Store и query embedding vectors
+### Векторные базы данных
+- Хранят и запрашивают векторные представления (эмбеддинги)
 - **Примеры**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation Системы, AI applications
+- **Сценарии использования**: Семантический поиск, рекомендательные системы, AI-приложения
 
-### Multi-Model Databases
-- Поддержка multiple Данные models в single system
+### Мультимодельные базы данных
+- Поддерживают несколько моделей данных в одной системе
 - **Примеры**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
+- **Преимущество**: Гибкость без необходимости использовать несколько баз данных
 
-## ORMs и Данные Access
+## ORMs и доступ к данным
 
-### Object-Relational Mapping
-- **Purpose**: Map База данных tables to programming objects
-- **Popular ORMs**:
+### Объектно-реляционное отображение
+- **Назначение**: Отображение таблиц базы данных в объекты языка программирования
+- **Популярные ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
   - Java: Hibernate, JPA
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration Управление
-- Query building APIs
+### Преимущества
+- Абстракция от SQL
+- Безопасность типов
+- Управление миграциями
+- API для построения запросов
 
-### Drawbacks
-- Производительность overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
+### Недостатки
+- Накладные расходы по производительности
+- Сложные запросы труднее писать
+- Проблемы N+1 запросов
+- Кривая обучения
 
-## База данных Administration
+## Администрирование баз данных
 
-### DBA Responsibilities
-- Installation и configuration
-- Производительность tuning
-- Backup и recovery
-- Безопасность Управление
-- Capacity planning
-- Monitoring и alerting
-- Patch Управление
+### Обязанности DBA
+- Установка и настройка
+- Настройка производительности
+- Резервное копирование и восстановление
+- Управление безопасностью
+- Планирование емкости
+- Мониторинг и оповещение
+- Управление патчами
 
-### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
+### Метрики мониторинга
+- Время ответа на запрос
+- Пропускная способность (транзакций в секунду)
+- Количество соединений
+- Коэффициент попадания в кэш
+- Дисковый ввод-вывод
+- Время ожидания блокировок
+- Задержка репликации
 
-### Maintenance Tasks
-- **Vacuum/Analyze**: Update Статистика, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **Статистика Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+### Задачи сопровождения
+- **Vacuum/Analyze**: Обновление статистики, освобождение места
+- **Перестроение индексов**: Дефрагментация индексов
+- **Обновление статистики**: Поддержание актуальности данных для оптимизатора запросов
+- **Ротация логов**: Управление размером лог-файлов
+- **Планирование ёмкости**: Прогнозирование роста и планирование обновлений

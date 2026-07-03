@@ -1,447 +1,181 @@
 <!-- 
 This file was automatically translated from English to French.
-Source: local_ai_architecture.md
+Source: prompt_engineering.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI Architecture
+# Prompt Engineering
 
-A practical Guide to running large Langue models entirely on-device — hardware considerations, inference engines, memory optimisation, et system design pour edge Déploiement.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No Données leaves le/la device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, Réseau-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, et fine-tuning.
+Prompt engineering is le/la practice de designing, refining, et optimising input prompts to get le/la best possible output from a Langue model. It is both an art et a Science, et it is le/la primary interface pour controlling LLM behaviour without fine-tuning.
 
 ---
 
-## Hardware Requirements
+## Core Principles
 
-### GPU Memory (VRAM)
-le/la most critical resource. Model size dans memory ≈ **parameters × bytes per parameter**.
+### Clarity et Specificity
+A clear prompt leaves no room pour ambiguity. Specify exactly what you want, including format, length, et perspective.
 
-| Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
-|-----------|---------------------|------------|----------|-----------|-----------|
-| FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
-| FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+**Vague:**
+> "Tell me about Python."
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ Systèmes.
+**Specific:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, et keep your answer under 200 words."
 
-### RAM (System Memory)
-- pour CPU inference, you need enough system RAM to load le/la model (similar to VRAM numbers).
-- pour GPU inference, system RAM matters pour loading le/la model into memory before offloading to VRAM.
+### Provide Context
+Models perform better when they know le/la role, audience, et goal.
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free pour multiple models.
+**Without context:**
+> "Write a function to sort a list."
 
-### CPU
-- pour prompt processing (prefill) et CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Performance pour LLMs due to le/la unified memory et Neural Engine.
+**avec context:**
+> "You are a senior Python developer. Write a function to sort a list de dictionaries by a given key. Use type hints et handle edge cases. le/la audience is junior developers."
+
+### Use Positive Instructions
+Tell le/la model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Langue accessible to a 10-year-old."
 
 ---
 
-## Quantisation
+## Prompt Structures
 
-Quantisation reduces le/la numerical precision de weights, dramatically cutting memory et increasing speed at a small accuracy cost.
+### System / User / Assistant Roles
+Most LLM APIs Assistance a multi-turn structure:
 
-### Popular Formats
+- **System message**: Sets le/la model's behaviour, persona, et constraints (persists pour le/la whole session).
+- **User message**: le/la current query or instruction.
+- **Assistant message**: le/la model's previous responses (used pour continuity).
 
-| Format | Bits | Description | Typical use |
-|--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised pour CPU/GPU hybrid | Best pour local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best pour NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good pour batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+**Example (OpenAI API style):**
+System: You are a helpful coding assistant. You reply avec concise code Exemples et brief explanations. Never provide unsafe code.
+User: Write a Python function to download a file from a URL.
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality pour most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation avec better perplexity at 4/3 bits.
+### Few-Shot Prompting
+Provide 2–3 Exemples de le/la desired input-output format before asking le/la model to perform le/la task. This teaches le/la pattern.
 
-**Rule de thumb:** Use Q4_K_M pour a good balance de quality et size. If you have extra VRAM, use Q5 or Q6.
+**Example:**
+User: Convert these sentences to passive voice:
+Input: le/la cat chased le/la mouse.
+Output: le/la mouse was chased by le/la cat.
+Input: le/la chef cooked le/la meal.
+Output: le/la meal was cooked by le/la chef.
+Input: le/la storm destroyed le/la house.
+Output: (model completes)
+
+### Chain-de-Thought (CoT)
+Encourage le/la model to show its reasoning step by step. This improves accuracy on arithmetic, logic, et multi-step tasks.
+
+**Without CoT:**
+> "What is 24 × 37?"
+
+**avec CoT:**
+> "Calculate 24 × 37. Show your reasoning step by step."
+
+le/la model will produce intermediate steps, reducing arithmetic errors.
+
+### Structured Outputs
+Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
+User: List three pros et three cons de microservices. Return only a valid JSON object avec keys "pros" et "cons", each an array de strings.
 
 ---
 
-## Inference Engines (Local)
+## Avancé Techniques
 
-### llama.cpp
-- Written dans C++.
-- Supports GGUF format.
-- Optimised pour CPU et GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, et Python bindings.
+### Self-Consistency
+Generate multiple responses pour le/la same prompt (avec a temperature > 0) et take a majority vote on le/la final answer. This is especially effective pour reasoning tasks.
 
-**Example command:**
-```bash
-./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+### Tree-de-Thoughts
+Explore multiple reasoning paths dans parallel, evaluate each, et choose le/la best one. This is a research-level technique but can be approximated by asking le/la model to "explore alternative solutions."
 
-Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+### ReAct (Reasoning + Acting)
+Let le/la model interleave reasoning avec tool calls. It can think, then act (e.g., search le/la Web, run code), then think again based on le/la result.
 
-Auto-downloads models, manages them.
+**Prompt structure:**
+You have access to a calculator et a search engine. pour each step, output:
+Thought: (your reasoning)
+Action: (tool name, input)
+Observation: (tool output)
+... continue until you have le/la final answer.
 
-Great for prototyping and desktop apps.
+### Persona Assignment
+Assign a specific persona to frame le/la response.
 
-Supports custom Modelfiles for system prompts.
+**Exemples:**
+- "You are a Linux kernel developer explaining memory Gestion to a new graduate."
+- "You are a friendly nutritionist giving general advice to a client."
+- "You are a cynical tech critic reviewing a new gadget."
 
-Usage:
+---
 
-bash
-ollama run phi3:3.8b
-ollama run llama3:8b
-LM Studio
-Graphical desktop app for Windows, macOS, Linux.
+## Parameter Tuning
 
-One-click download and chat interface.
+- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 pour factual answers; 0.7–1.0 pour creative writing.
+- **Top-p** (nucleus sampling): Cuts off le/la probability mass at a certain cumulative threshold. 0.9 means le/la model samples from le/la top 90% de likely tokens. Usually adjust either temperature or top-p, not both.
+- **Max tokens**: Sets le/la maximum output length. Remember to reserve space pour le/la response within le/la context window.
+- **Frequency penalty**: Reduces repetition de le/la same tokens.
+- **Presence penalty**: Encourages le/la model to introduce new topics.
 
-Built-in local server with OpenAI-compatible API.
+---
 
-Good for non-technical users and quick testing.
+## Common Pitfalls et Fixes
 
-Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
+| Problem | Likely cause | Fix |
+|---------|--------------|-----|
+| Model ignores parts de prompt | Prompt too long or overloaded | Shorten; put le/la most important instruction at le/la end |
+| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
+| Output is too terse | Overly restrictive | Add "Explain dans detail" or lower temperature |
+| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" et provide a RAG context |
+| Inconsistent formatting | No explicit format instruction | Ask pour JSON, markdown table, or bullet list |
+| Model answers dans wrong Langue | No Langue instruction | Explicitly state "Respond dans Anglais" (or your target Langue) |
 
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
+---
 
-More flexible for fine-tuning but slower than llama.cpp for inference.
+## Prompt Templates pour Common Tasks
 
-ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
+### Summarisation
+Summarise le/la following text dans 3 bullet points. Focus on le/la main arguments et avoid details.
 
-Best performance on NVIDIA GPUs.
+Text: [insert text]
 
-Supports batched generation.
 
-mlx (Apple)
-Apple's framework for M-series chips.
+### Code Generation
+Write a [Langue] function that [does X].
+Requirements:
 
-Highly optimised for Apple Silicon.
+Use type hints.
 
-Python API.
+Include a docstring.
 
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
+Handle edge cases: [list].
 
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
+Do not use external libraries unless specified.
 
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
 
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
+### Explanation
+Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
 
-Token streaming: Process tokens incrementally rather than all at once.
-
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
-
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
-
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
-
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
-
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
-
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
-
-iOS: Use llama.cpp via Swift bindings or mlx.
-
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
-
-Performance Optimisation
-Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
-
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
-
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
-
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
-
-Practical Setup Guide
-1. Install Ollama
-bash
-curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
-bash
-ollama pull phi3:3.8b-q4_K_M
-3. Run with API
-bash
-ollama serve
-Then send requests to http://localhost:11434/api/generate.
-
-4. Python Integration
-python
-import requests
-
-response = requests.post(
-    "http://localhost:11434/api/generate",
-    json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
-)
-print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
-bash
-# Download GGUF from Hugging Face
-wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
-
-# Run server
-./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
-
-Track memory usage (RAM and VRAM).
-
-Track tokens per second (throughput).
-
-Track time to first token (latency).
-
-Use built-in logging from llama.cpp or Ollama.
-
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
-
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
-
-Multilingual: Smaller models may have less multilingual capability.
-
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
-
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
+### Brainstorming
+Generate 10 ideas pour [topic]. pour each idea, give a one-sentence description et one potential challenge.
 
 text
 
----
+### Classification
+Classify le/la following customer Retour as [positive, neutral, negative].
+Provide a confidence score (0-100) et a brief reason.
 
-## File 4: `security_best_practices.md`
+Retour: [insert text]
 
-```markdown
-# Sécurité Meilleures pratiques
-
-A practical Guide to securing applications, infrastructure, et Données — from Développement to production.
-
----
-
-## OWASP Top 10 (2021) — Aperçu
-
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **Sécurité Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable et Outdated Components**: Known CVEs dans dependencies.
-7. **Identification et Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software et Données Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **Sécurité Logging et Monitoring Failures**: No detection de breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse de server to make requests to internal Systèmes.
+### Translation avec Style
+Translate le/la following Anglais text to Spanish. Use an informal tone suitable pour a social media post.
+Text: [insert text]
 
 ---
 
-## Input Validation et Output Encoding
+## Evaluation de Prompts
 
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex pour email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows et DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: pour email, URL, et date validation, use standard libraries (e.g., `email-validator` dans Python, `validator.js` dans Node).
+Treat prompts as code: version them, test them, et iterate.
 
-### Output Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell Commandes from user input; if unavoidable, use `shlex.quote()` or similar.
+- **A/B test** different prompt variants on a held-out set de queries.
+- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (a simple text file or spreadsheet) avec le/la prompt, version, et observed Performance.
 
 ---
-
-## Authentication et Authorisation
-
-### Password Gestion
-- **Hashing**: Store passwords avec a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) pour sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
-
-### Session Gestion
-- Use secure, HTTP-only, SameSite cookies pour session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout et on password change.
-- Avoid exposing session IDs dans URLs.
-
-### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Sécurité).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
-
-### JWT (JSON Web Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) pour better Sécurité; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), et expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes pour access tokens; use refresh tokens pour longer sessions.
-- **Store securely**: Never store JWTs dans localStorage (vulnerable to XSS); use HTTP-only cookies instead.
-
----
-
-## API Sécurité
-
-### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
-
-### Rate Limiting et Throttling
-- Apply per-user et per-IP rate limits to prevent abuse et DoS.
-- Return `429 Too Many Requests` avec a `Retry-After` header.
-
-### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` dans production).
-- Validate `Origin` header on le/la server side.
-
-### Input Validation
-- Validate all request parameters, including headers et body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` dans JSON Schema).
-
-### HTTPS / TLS
-- Enforce HTTPS dans production.
-- Use HSTS (HTTP Strict Transport Sécurité) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
-
----
-
-## Secrets Gestion
-
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, Base de données URLs) to source control.
-- Use environment variables or secret Gestion tools.
-
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets dans files et commit them (avec KMS or GPG).
-- **Docker secrets**: pour Swarm mode; Kubernetes secrets (base64-encoded, but use avec care; consider external Secrets Store CSI driver).
-
-### Rotation
-- Regularly rotate secrets et service accounts.
-- Automate rotation where possible.
-
----
-
-## Dependency Gestion
-
-### Vulnerability Scanning
-- **Python**: `safety`, `pip-audit`, `bandit`.
-- **Node**: `npm audit`, `yarn audit`, `snyk`.
-- **Rust**: `cargo audit`.
-- **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
-
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests pour minor/patch updates.
-- Review changelogs pour breaking changes.
-
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums de downloaded dependencies.
-- Prefer official registries et trust only verified publishers.
-
----
-
-## Infrastructure Sécurité
-
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use Sécurité groups (AWS) or NSGs (Azure) pour fine-grained control.
-
-### OS Hardening
-- Apply Sécurité updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services et default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### Réseau Segmentation
-- Place databases et caches dans private subnets avec no internet access.
-- Use a DMZ pour public-facing services.
-- Apply le/la principle de least privilege to Réseau access.
-
-### Secrets dans Infrastructure
-- Never store secrets dans CI/CD environment variables unless encrypted.
-- Use le/la cloud provider's IAM roles pour EC2/VM instances instead de long-lived keys.
-
----
-
-## Logging et Monitoring
-
-### What to Log
-- Authentication Événements (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- Base de données schema changes.
-- System errors et exceptions.
-- API requests et responses (redact sensitive Données).
-
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
-
-### Alerting
-- Set up alerts pour:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (Sécurité Information et Event Gestion) pour Avancé correlation.
-
-### Log Retention
-- Retain logs pour at least 30–90 days depending on regulatory requirements.
-- Store logs dans a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
-
----
-
-## Secure Développement Lifecycle (SDL)
-
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early dans design.
-3. **Secure coding standards**: Enforce via linters et code review checklists.
-4. **SAST** (Static Application Sécurité Test): Scan source code pour vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Sécurité Test): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration Test**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan pour when a breach is detected.
-
----
-
-## Emergency Checklist (When a Breach is Suspected)
-
-1. **Do not panic** — but act quickly.
-2. **Isolate** le/la affected Systèmes (disconnect from Réseau if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, et disk images.
-4. **Identify** le/la scope: which Systèmes, which Données.
-5. **Rotate** all compromised credentials et secrets.
-6. **Patch** le/la vulnerability.
-7. **Notify** affected users et regulatory bodies if required (within Juridique timeframes).
-8. **Conduct a post-mortem** to understand root cause et improve processes.

@@ -1,181 +1,168 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: prompt_engineering.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Промпт-инжиниринг
 
-# Prompt Engineering
-
-Prompt engineering is the practice из designing, refining, и optimising input prompts to get the best possible output from a Язык model. It is both an art и a Наука, и it is the primary interface для controlling LLM behaviour without fine-tuning.
+Промпт-инжиниринг — это практика проектирования, доработки и оптимизации входных промптов, чтобы получать от языковой модели наилучший возможный результат. Это одновременно искусство и наука, а также основной интерфейс управления поведением LLM без дообучения.
 
 ---
 
-## Core Principles
+## Основные принципы
 
-### Clarity и Specificity
-A clear prompt leaves no room для ambiguity. Specify exactly what you want, including format, length, и perspective.
+### Ясность и конкретность
+Ясный промпт не оставляет места для неоднозначности. Точно укажите, что именно вам нужно, включая формат, длину и точку зрения.
 
-**Vague:**
-> "Tell me about Python."
+**Расплывчато:**
+> "Расскажи мне о Python."
 
-**Specific:**
-> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, и keep your answer under 200 words."
+**Конкретно:**
+> "Объясни Global Interpreter Lock (GIL) в Python. Опиши, как он влияет на многопоточность, приведи один способ обойти ограничение и уложись в 200 слов."
 
-### Provide Context
-Models perform better when they know the role, audience, и goal.
+### Предоставляйте контекст
+Модели работают лучше, когда знают роль, аудиторию и цель.
 
-**Without context:**
-> "Write a function to sort a list."
+**Без контекста:**
+> "Напиши функцию для сортировки списка."
 
-**с context:**
-> "You are a senior Python developer. Write a function to sort a list из dictionaries by a given key. Use type hints и handle edge cases. the audience is junior developers."
+**С контекстом:**
+> "Ты старший Python-разработчик. Напиши функцию для сортировки списка словарей по заданному ключу. Используй аннотации типов и обработай пограничные случаи. Аудитория — начинающие разработчики."
 
-### Use Positive Instructions
-Tell the model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Язык accessible to a 10-year-old."
-
----
-
-## Prompt Structures
-
-### System / User / Assistant Roles
-Most LLM APIs Поддержка a multi-turn structure:
-
-- **System message**: Sets the model's behaviour, persona, и constraints (persists для the whole session).
-- **User message**: the current query or instruction.
-- **Assistant message**: the model's previous responses (used для continuity).
-
-**Example (OpenAI API style):**
-System: You are a helpful coding assistant. You reply с concise code Примеры и brief explanations. Never provide unsafe code.
-User: Write a Python function to download a file from a URL.
-
-### Few-Shot Prompting
-Provide 2–3 Примеры из the desired input-output format before asking the model to perform the task. This teaches the pattern.
-
-**Example:**
-User: Convert these sentences to passive voice:
-Input: the cat chased the mouse.
-Output: the mouse was chased by the cat.
-Input: the chef cooked the meal.
-Output: the meal was cooked by the chef.
-Input: the storm destroyed the house.
-Output: (model completes)
-
-### Chain-из-Thought (CoT)
-Encourage the model to show its reasoning step by step. This improves accuracy on arithmetic, logic, и multi-step tasks.
-
-**Without CoT:**
-> "What is 24 × 37?"
-
-**с CoT:**
-> "Calculate 24 × 37. Show your reasoning step by step."
-
-the model will produce intermediate steps, reducing arithmetic errors.
-
-### Structured Outputs
-Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
-User: List three pros и three cons из microservices. Return only a valid JSON object с keys "pros" и "cons", each an array из strings.
+### Используйте позитивные инструкции
+Говорите модели, что делать, а не чего избегать. Формулировка «Не используй жаргон» слабее, чем «Используй простой язык, понятный 10-летнему ребёнку».
 
 ---
 
-## Продвинутый Techniques
+## Структуры промптов
 
-### Self-Consistency
-Generate multiple responses для the same prompt (с a temperature > 0) и take a majority vote on the final answer. This is especially effective для reasoning tasks.
+### Роли System / User / Assistant
+Большинство API для LLM поддерживают многоходовую структуру:
 
-### Tree-из-Thoughts
-Explore multiple reasoning paths в parallel, evaluate each, и choose the best one. This is a research-level technique but can be approximated by asking the model to "explore alternative solutions."
+- **System message**: задаёт поведение модели, её роль и ограничения (сохраняется на всю сессию).
+- **User message**: текущий запрос или инструкция.
+- **Assistant message**: предыдущие ответы модели (используются для сохранения контекста).
 
-### ReAct (Reasoning + Acting)
-Let the model interleave reasoning с tool calls. It can think, then act (e.g., search the Веб, run code), then think again based on the result.
+**Пример (в стиле OpenAI API):**
+System: Ты полезный ассистент по программированию. Отвечай краткими примерами кода и короткими пояснениями. Никогда не давай небезопасный код.
+User: Напиши функцию на Python для скачивания файла по URL.
 
-**Prompt structure:**
-You have access to a calculator и a search engine. для each step, output:
-Thought: (your reasoning)
-Action: (tool name, input)
-Observation: (tool output)
-... continue until you have the final answer.
+### Обучение на примерах
+Перед тем как просить модель выполнить задачу, приведите 2–3 примера желаемого формата входа и выхода. Это обучает шаблону.
 
-### Persona Assignment
-Assign a specific persona to frame the response.
+**Пример:**
+User: Преобразуй эти предложения в страдательный залог:
+Ввод: Кошка преследовала мышь.
+Вывод: Мышь была преследуема кошкой.
+Ввод: Шеф-повар приготовил блюдо.
+Вывод: Блюдо было приготовлено шеф-поваром.
+Ввод: Буря разрушила дом.
+Вывод: (модель продолжает)
+
+### Цепочка рассуждений (CoT)
+Побуждайте модель показывать ход рассуждений шаг за шагом. Это повышает точность в арифметике, логике и многошаговых задачах.
+
+**Без CoT:**
+> "Сколько будет 24 × 37?"
+
+**С CoT:**
+> "Вычисли 24 × 37. Покажи ход рассуждений шаг за шагом."
+
+Модель выдаст промежуточные шаги, что уменьшит количество арифметических ошибок.
+
+### Структурированные ответы
+Запрашивайте конкретный формат, например JSON, YAML или markdown-таблицы, чтобы результат было надёжно разбирать.
+User: Перечисли три плюса и три минуса микросервисов. Верни только корректный JSON-объект с ключами "pros" и "cons", каждый из которых является массивом строк.
+
+---
+
+## Продвинутые техники
+
+### Самосогласованность
+Сгенерируйте несколько ответов на один и тот же промпт (с `temperature > 0`), а затем выберите финальный ответ большинством голосов. Это особенно эффективно для задач на рассуждение.
+
+### Дерево рассуждений
+Исследуйте несколько путей рассуждения параллельно, оценивайте каждый и выбирайте лучший. Это техника исследовательского уровня, но её можно приблизить, попросив модель «рассмотреть альтернативные решения».
+
+### ReAct (рассуждение + действие)
+Позвольте модели чередовать рассуждение с вызовами инструментов. Она может подумать, затем выполнить действие (например, поискать в вебе или запустить код), а затем снова подумать на основе результата.
+
+**Структура промпта:**
+У тебя есть доступ к калькулятору и поисковой системе. Для каждого шага выводи:
+Thought: (твои рассуждения)
+Action: (название инструмента, вход)
+Observation: (выход инструмента)
+... продолжай, пока не получишь окончательный ответ.
+
+### Назначение персоны
+Назначьте конкретную персону, чтобы задать рамку ответа.
 
 **Примеры:**
-- "You are a Linux kernel developer explaining memory Управление to a new graduate."
-- "You are a friendly nutritionist giving general advice to a client."
-- "You are a cynical tech critic reviewing a new gadget."
+- "Ты разработчик ядра Linux, который объясняет управление памятью недавнему выпускнику."
+- "Ты дружелюбный нутрициолог, который даёт клиенту общие рекомендации."
+- "Ты циничный технокритик, который обозревает новый гаджет."
 
 ---
 
-## Parameter Tuning
+## Настройка параметров
 
-- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 для factual answers; 0.7–1.0 для creative writing.
-- **Top-p** (nucleus sampling): Cuts off the probability mass at a certain cumulative threshold. 0.9 means the model samples from the top 90% из likely tokens. Usually adjust either temperature or top-p, not both.
-- **Max tokens**: Sets the maximum output length. Remember to reserve space для the response within the context window.
-- **Frequency penalty**: Reduces repetition из the same tokens.
-- **Presence penalty**: Encourages the model to introduce new topics.
-
----
-
-## Common Pitfalls и Fixes
-
-| Problem | Likely cause | Fix |
-|---------|--------------|-----|
-| Model ignores parts из prompt | Prompt too long or overloaded | Shorten; put the most important instruction at the end |
-| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
-| Output is too terse | Overly restrictive | Add "Explain в detail" or lower temperature |
-| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" и provide a RAG context |
-| Inconsistent formatting | No explicit format instruction | Ask для JSON, markdown table, or bullet list |
-| Model answers в wrong Язык | No Язык instruction | Explicitly state "Respond в Английский" (or your target Язык) |
+- **Temperature** (0.0 – 1.0+): Управляет случайностью. Ниже = более детерминированно, выше = более креативно. Используйте 0.0–0.3 для фактических ответов; 0.7–1.0 для креативного письма.
+- **Top-p** (сэмплирование по ядру распределения): Отсекает хвост вероятностной массы на определённом накопленном пороге. 0.9 означает, что модель выбирает токены из верхних 90% наиболее вероятных вариантов. Обычно настраивают либо `temperature`, либо `top-p`, но не оба одновременно.
+- **Max tokens**: Задаёт максимальную длину ответа. Не забудьте оставить место для ответа внутри контекстного окна.
+- **Frequency penalty**: Уменьшает повторение одних и тех же токенов.
+- **Presence penalty**: Побуждает модель вводить новые темы.
 
 ---
 
-## Prompt Templates для Common Tasks
+## Частые проблемы и способы исправления
 
-### Summarisation
-Summarise the following text в 3 bullet points. Focus on the main arguments и avoid details.
-
-Text: [insert text]
-
-
-### Code Generation
-Write a [Язык] function that [does X].
-Requirements:
-
-Use type hints.
-
-Include a docstring.
-
-Handle edge cases: [list].
-
-Do not use external libraries unless specified.
-
-
-### Explanation
-Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
-
-### Brainstorming
-Generate 10 ideas для [topic]. для each idea, give a one-sentence description и one potential challenge.
-
-text
-
-### Classification
-Classify the following customer Обратная связь as [positive, neutral, negative].
-Provide a confidence score (0-100) и a brief reason.
-
-Обратная связь: [insert text]
-
-### Translation с Style
-Translate the following Английский text to Spanish. Use an informal tone suitable для a social media post.
-Text: [insert text]
+| Проблема | Вероятная причина | Исправление |
+|---------|-------------------|-------------|
+| Модель игнорирует части промпта | Промпт слишком длинный или перегружен | Сократите его; самое важное указание поместите в конец |
+| Ответ слишком многословный | Нет ограничения по длине | Добавьте «Ограничься 3 предложениями» или задайте `max_tokens` |
+| Ответ слишком краткий | Слишком жёсткие ограничения | Добавьте «Объясни подробно» или уменьшите `temperature` |
+| Фактические галлюцинации | Недостаточно контекста или неоднозначный вопрос | Добавьте «Если не уверен, скажи “Я не знаю”» и предоставьте RAG-контекст |
+| Непоследовательное форматирование | Нет явной инструкции по формату | Попросите JSON, markdown-таблицу или маркированный список |
+| Модель отвечает не на том языке | Нет указания языка | Явно укажите «Отвечай на русском» (или на целевом языке) |
 
 ---
 
-## Evaluation из Prompts
+## Шаблоны промптов для типовых задач
 
-Treat prompts as code: version them, test them, и iterate.
+### Суммаризация
+Суммируй следующий текст в 3 пунктах. Сосредоточься на главных аргументах и избегай деталей.
 
-- **A/B test** different prompt variants on a held-out set из queries.
-- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
-- **Keep a prompt registry** (a simple text file or spreadsheet) с the prompt, version, и observed Производительность.
+Текст: [вставьте текст]
+
+### Генерация кода
+Напиши функцию на [языке], которая [делает X].
+Требования:
+
+Используй аннотации типов.
+
+Добавь строку документации (docstring).
+
+Обработай пограничные случаи: [список].
+
+Не используй внешние библиотеки, если они не указаны явно.
+
+### Объяснение
+Объясни [концепцию] для [не-специалиста / студента университета / ребёнка]. При необходимости используй аналогию.
+
+### Мозговой штурм
+Сгенерируй 10 идей для [темы]. Для каждой идеи дай описание в одно предложение и одну потенциальную сложность.
+
+### Классификация
+Классифицируй следующий отзыв клиента как [положительный, нейтральный, отрицательный].
+Укажи оценку уверенности (0–100) и краткую причину.
+
+Отзыв: [вставьте текст]
+
+### Перевод с заданным стилем
+Переведи следующий английский текст на испанский. Используй неформальный тон, подходящий для поста в социальных сетях.
+Текст: [вставьте текст]
 
 ---
+
+## Оценка промптов
+
+Относитесь к промптам как к коду: версионируйте их, тестируйте и улучшайте итеративно.
+
+- **Проводите A/B-тесты** разных вариантов промптов на отложенном наборе запросов.
+- **Измеряйте успех** с помощью человеческой оценки или автоматических метрик (например, точного совпадения, BLEU, пользовательских оценок).
+- **Ведите реестр промптов** (простой текстовый файл или таблицу) с самим промптом, версией и наблюдаемым качеством.

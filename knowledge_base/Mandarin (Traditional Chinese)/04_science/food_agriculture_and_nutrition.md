@@ -1,40 +1,33 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: food_agriculture_and_nutrition.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 食物、農業與營養
 
-# 食物, 農業, 和 營養
+## 農業系統
 
-## Agricultural 系統
+農業是種植作物和飼養動物以獲取食物、纖維、燃料和其他產品的實踐。作物種植為人類消費、動物飼料或工業用途生產植物。畜牧業飼養動物以獲取肉類、乳製品、蛋類、羊毛和勞動力。水產養殖業養殖魚類、貝類和水生植物。園藝專注於水果、蔬菜、花卉和觀賞植物。農林複合經營結合樹木與作物或牲畜。自給農業生產足夠農民家庭使用；商業農業為銷售而生產。工業化農業使用機械化、合成投入和單一栽培以獲得高產量。小農場（低於2公頃）儘管資源有限，仍生產約全球三分之一的食物。精準農業使用GPS、感測器和數據分析來優化投入並減少浪費。
 
-農業 is 這 practice 的 cultivating plants 和 raising animals 為 食物, fiber, fuel, 和 other products. Crop farming grows plants 為 human consumption, animal feed, or industrial use. Livestock farming raises animals 為 meat, dairy, eggs, wool, 和 labor. Aquaculture farms fish, shellfish, 和 aquatic plants. Horticulture focuses on fruits, vegetables, flowers, 和 ornamental plants. Agroforestry combines trees 與 crops or livestock. Subsistence 農業 produces enough 為 這 farmer's family; commercial 農業 produces 為 sale. Industrial 農業 uses mechanization, synthetic inputs, 和 monocultures 為 high yields. Smallholder farms (under 2 hectares) produce about one-third 的 global 食物 despite limited resources. Precision 農業 uses GPS, sensors, 和 資料 analytics to optimize inputs 和 reduce waste.
+## 作物生產
 
-## Crop Production
+主要主食作物包括小麥、稻米、玉米、馬鈴薯、樹薯和大豆，提供大部分全球卡路里。穀物是為可食用種子而種植的草類。豆科植物（豆類、扁豆、豌豆）在土壤中固氮並提供蛋白質。根莖作物（馬鈴薯、山藥、樹薯）在地下生長。水果和蔬菜提供必需的維生素和礦物質。油料作物（大豆、油菜籽、向日葵）生產食用油。纖維作物（棉花、亞麻、大麻）提供紡織材料。種植季節取決於氣候和作物類型。土壤準備包括犁地、耙地和整平。灌溉在乾旱地區補充降雨。收穫方法從人工到完全機械化不等。收穫後處理包括清潔、分類、儲存和加工以防止損失。
 
-Major staple crops include wheat, rice, maize (corn), potatoes, cassava, 和 soybeans, providing most global calories. Cereal grains are grasses cultivated 為 edible seeds. Legumes (beans, lentils, peas) fix nitrogen 在 soil 和 provide protein. Root 和 tuber crops (potatoes, yams, cassava) grow underground. Fruits 和 vegetables provide essential vitamins 和 minerals. Oilseed crops (soybean, canola, sunflower) produce cooking oils. Fiber crops (cotton, flax, hemp) provide materials 為 textiles. Planting seasons depend on climate 和 crop type. Soil preparation includes plowing, harrowing, 和 leveling. Irrigation supplements rainfall 在 dry regions. Harvesting methods range from manual to fully mechanized. Post-harvest handling includes cleaning, sorting, storage, 和 processing to prevent losses.
+## 畜牧業
 
-## Animal Husbandry
+畜牧業涉及飼養和照顧農場動物。牛隻為牛肉和乳製品而飼養；品種因用途和氣候而異。家禽包括雞（蛋和肉）、火雞、鴨和鵝。豬提供豬肉；羊提供肉和羊毛；山羊提供奶、肉和纖維。在某些地區，馬、驢和牛作為役畜。動物營養需要能量、蛋白質、維生素和礦物質的均衡飲食。飼養系統從放養到密集圈養不等。育種計畫選擇理想特徵（生長速度、產奶量、抗病性）。動物健康管理包括疫苗接種、寄生蟲控制和生物安全。福利考量涉及人道對待、減壓和適當的生活條件。倫理辯論圍繞工廠化農業、動物權利和屠宰做法展開。
 
-Animal husbandry involves breeding 和 caring 為 farm animals. Cattle are raised 為 beef 和 dairy; breeds vary by purpose 和 climate. Poultry includes chickens (eggs 和 meat), turkeys, ducks, 和 geese. Pigs provide pork; sheep provide meat 和 wool; goats provide milk, meat, 和 fiber. Horses, donkeys, 和 oxen serve as working animals 在 some regions. Animal 營養 requires balanced diets 的 energy, protein, vitamins, 和 minerals. Housing 系統 range from free-range to confined operations. Breeding programs select 為 desirable traits (growth rate, milk production, disease resistance). Animal health 管理 includes vaccination, parasite control, 和 biosecurity. Welfare considerations address humane treatment, stress reduction, 和 appropriate living conditions. Ethical debates surround factory farming, animal rights, 和 slaughter practices.
+## 營養科學
 
-## 營養 科學
+營養學研究食物如何影響健康和身體功能。巨量營養素提供能量：碳水化合物（4千卡/克）、蛋白質（4千卡/克）和脂肪（9千卡/克）。碳水化合物包括糖類、澱粉和纖維；它們是身體的主要能量來源。蛋白質由胺基酸組成；其中九種是必需的（必須從飲食中獲得）。脂肪包括飽和、不飽和（單元和多元）和反式脂肪；omega-3和omega-6是必需脂肪酸。微量營養素包括維生素（A、C、D、E、K和B群）和礦物質（鈣、鐵、鎂、鋅等），僅需少量。水對所有身體功能都至關重要。飲食指南建議從各種食物類別均衡攝取。營養不良包括營養不足（攝取不足）和營養過剩（過量攝取導致肥胖）。營養素缺乏導致特定疾病（維生素C缺乏導致壞血病，鐵缺乏導致貧血）。個人需求因年齡、性別、活動量和健康狀況而異。
 
-營養 studies how 食物 affects health 和 bodily functions. Macronutrients provide energy: carbohydrates (4 kcal/g), proteins (4 kcal/g), 和 fats (9 kcal/g). Carbohydrates include sugars, starches, 和 fiber; they are 這 body's primary energy source. Proteins consist 的 amino acids; nine are essential (must come from diet). Fats include saturated, unsaturated (mono- 和 poly-), 和 trans fats; omega-3 和 omega-6 are essential fatty acids. Micronutrients include vitamins (A, C, D, E, K, 和 B-complex) 和 minerals (calcium, iron, magnesium, zinc, etc.) needed 在 small amounts. Water is essential 為 all bodily functions. Dietary guidelines recommend balanced intake from various 食物 groups. Malnutrition includes undernutrition (insufficient intake) 和 overnutrition (excess intake leading to obesity). Nutrient deficiencies cause specific diseases (scurvy from vitamin C deficiency, anemia from iron deficiency). Individual needs vary by age, sex, activity level, 和 health status.
+## 食品安全與加工
 
-## 食物 Safety 和 Processing
+食品安全預防污染引起的食源性疾病。生物危害包括細菌（沙門氏菌、大腸桿菌、李斯特菌）、病毒（諾羅病毒、A型肝炎）和寄生蟲。化學危害包括殺蟲劑、清潔劑和過敏原。物理危害包括異物（玻璃、金屬、塑膠）。HACCP（危害分析重要管制點）是系統性預防方法。適當處理包括洗手、分開生食和熟食、烹調至安全溫度以及及時冷藏。食品保存方法延長保存期限：冷藏、冷凍、罐裝、乾燥、發酵、巴氏消毒和輻射。食品加工將原料轉化為可食用產品；加工程度從最低限度加工到超加工不等。添加劑保持品質、增強風味或改善質地；法規管理核准的物質。食品標籤提供營養資訊、成分、過敏原警告和有效期限。食品召回從市場移除不安全產品。
 
-食物 safety prevents foodborne illness from contamination. Biological hazards include bacteria (Salmonella, E. coli, Listeria), viruses (norovirus, hepatitis A), 和 parasites. Chemical hazards include pesticides, cleaning agents, 和 allergens. Physical hazards include foreign objects (glass, metal, plastic). HACCP (Hazard Analysis Critical Control Points) is a systematic preventive approach. Proper handling includes handwashing, separating raw 和 cooked foods, cooking to 安全 temperatures, 和 refrigerating promptly. 食物 preservation methods extend shelf life: refrigeration, freezing, canning, drying, fermentation, pasteurization, 和 irradiation. 食物 processing transforms raw ingredients into consumable products; levels range from minimally processed to ultra-processed. Additives preserve quality, enhance flavor, or improve texture; regulations govern approved substances. 食物 labeling provides nutritional information, ingredients, allergen warnings, 和 expiration dates. 食物 recalls remove unsafe products from 這 market.
+## 全球糧食系統
 
-## Global 食物 系統
+全球糧食系統涵蓋生產、加工、配送、消費和浪費。供應鏈通過多個中間商將農民與消費者連接起來。食物里程衡量食物運輸的距離；在地食物運動旨在減少這一距離。當所有人都能在物理和經濟上獲得充足、安全、營養的食物時，糧食安全就存在。維度包括可得性、可及性、利用性和穩定性。約有8億人面臨長期飢餓；超過20億人遭受微量營養素缺乏。食物損失發生在零售前（生產、收穫後、加工）；食物浪費發生在零售和消費者層面。永續糧食系統平衡環境、經濟和社會成果。氣候變遷影響作物產量、病蟲害模式和水資源可得性。貿易政策影響國家間的食物流動。都市化增加對加工食品和便利食品的需求。替代蛋白質（植物性肉類、培養肉、昆蟲）作為永續選擇而出現。
 
-Global 食物 系統 encompass production, processing, distribution, consumption, 和 waste. Supply chains connect farmers to consumers through multiple intermediaries. 食物 miles measure distance 食物 travels; local 食物 movements aim to reduce this. 食物 安全 exists when all people have physical 和 economic access to sufficient, 安全, nutritious 食物. Dimensions include availability, access, utilization, 和 stability. Approximately 800 million people face chronic hunger; over 2 billion suffer micronutrient deficiencies. 食物 loss occurs before retail (production, post-harvest, processing); 食物 waste occurs at retail 和 consumer levels. Sustainable 食物 系統 balance 環境, economic, 和 social outcomes. Climate change affects crop yields, pest patterns, 和 water availability. Trade policies influence 食物 flows between countries. Urbanization increases demand 為 processed 和 convenience foods. Alternative proteins (plant-based meats, cultured meat, insects) emerge as sustainable options.
+## 永續農業實踐
 
-## Sustainable 農業 Practices
+永續農業在保護環境和支持社區的同時維持生產力。土壤保育通過覆蓋作物、等高耕作、梯田和減少耕作來防止侵蝕。整合性病蟲害管理（IPM）結合生物、文化、物理和化學工具以最小化風險。有機農業避免合成肥料和殺蟲劑，依賴天然投入和過程。再生農業重建土壤有機質並恢復退化土地，固定碳。農業生態學將生態原則應用於農業系統。水資源保育使用高效灌溉（滴灌、噴灌）、雨水收集和抗旱品種。農場上的生物多樣性包括輪作、多元栽培、樹籬以及有益生物的棲息地。營養管理優化肥料使用，納入堆肥和糞肥，並防止逕流。氣候智慧型農業適應變化的條件同時減少排放。公平貿易確保生產者獲得公平價格並在體面條件下工作。
 
-Sustainable 農業 maintains productivity while protecting environment 和 supporting communities. Soil conservation prevents erosion through cover crops, contour plowing, terracing, 和 reduced tillage. Integrated pest 管理 (IPM) combines biological, cultural, physical, 和 chemical tools minimizing risks. Organic farming avoids synthetic fertilizers 和 pesticides, relying on natural inputs 和 processes. Regenerative 農業 rebuilds soil organic matter 和 restores degraded land, sequestering carbon. Agroecology applies ecological principles to agricultural 系統. Water conservation uses efficient irrigation (drip, sprinkler), rainwater harvesting, 和 drought-resistant varieties. Biodiversity on farms includes crop rotation, polycultures, hedgerows, 和 habitat 為 beneficial organisms. Nutrient 管理 optimizes fertilizer use, incorporates compost 和 manure, 和 prevents runoff. Climate-smart 農業 adapts to changing conditions while reducing emissions. Fair trade ensures producers receive equitable prices 和 work under decent conditions.
+## 烹飪傳統與飲食文化
 
-## Culinary Traditions 和 食物 文化
-
-食物 文化 encompasses traditions, beliefs, 和 practices surrounding 食物. Regional cuisines reflect local ingredients, climate, 歷史, 和 cultural influences. Cooking methods include baking, frying, grilling, steaming, boiling, roasting, 和 fermenting. Spices 和 herbs add flavor 和 have historical importance 在 trade. Religious dietary laws include kosher (Jewish), halal (Islamic), vegetarian/vegan (Hindu, Buddhist), 和 fasting practices. Festivals 和 celebrations often center on special foods. Family recipes pass through generations preserving heritage. Fusion cuisine blends elements from different culinary traditions. 食物 tourism explores destinations through their cuisine. Slow 食物 movement emphasizes traditional cooking, local ingredients, 和 mindful eating. Molecular gastronomy applies scientific techniques to cooking. Comfort foods provide emotional satisfaction. Table manners 和 dining etiquette vary across cultures.
+飲食文化涵蓋圍繞食物的傳統、信仰和實踐。地方菜系反映當地食材、氣候、歷史和文化影響。烹飪方法包括烘焙、油炸、燒烤、蒸煮、水煮、烤製和發酵。香料和草藥增添風味，在貿易史上具有重要意義。宗教飲食法規包括猶太潔食（猶太教）、清真（伊斯蘭教）、素食/純素（印度教、佛教）和禁食實踐。節日和慶典通常以特殊食物為中心。家傳食譜代代相傳，保存遺產。融合菜系融合不同烹飪傳統的元素。美食旅遊通過當地美食探索目的地。慢食運動強調傳統烹飪、在地食材和正念飲食。分子料理將科學技術應用於烹飪。撫慰食物提供情感滿足。餐桌禮儀和用餐禮節因文化而異。

@@ -1,229 +1,223 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: arts_and_literature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 藝術與文學
 
-# 藝術 和 文學
+## 文學類型與形式
 
-## Literary Genres 和 Forms
+### 小說類型
+- **文學小說**：以角色為主的敘事，著重主題、風格和心理深度（例如：Harper Lee的《梅岡城故事》）
+- **科幻小說**：探索未來科技、太空探索、時間旅行、平行宇宙的推測性小說（例如：Frank Herbert的《沙丘》、George Orwell的《1984》）
+- **奇幻小說**：魔法世界、神話生物、超自然元素（例如：J.R.R. Tolkien的《魔戒》、J.K. Rowling的《哈利波特》）
+- **推理／偵探小說**：以解決犯罪為主的敘事，包含謎題和調查（例如：Agatha Christie的Hercule Poirot系列、Arthur Conan Doyle的Sherlock Holmes）
+- **恐怖小說**：意圖令人恐懼、不安或製造懸疑（例如：Stephen King的《鬼店》、Bram Stoker的《德古拉》）
+- **愛情小說**：關注浪漫關係和情感旅程（例如：Jane Austen的《傲慢與偏見》、Nicholas Sparks的小說）
+- **歷史小說**：設定在特定歷史時期，具有精確的細節（例如：Markus Zusak的《偷書賊》、Hilary Mantel的《狼廳》）
+- **魔幻寫實主義**：現實背景中的魔幻元素被視為平常（例如：Gabriel García Márquez的《百年孤寂》）
 
-### Fiction Genres
-- **Literary Fiction**: Character-driven narratives focusing on themes, style, 和 psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
-- **科學 Fiction**: Speculative fiction exploring futuristic 技術, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "這 Lord 的 這 Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
-- **Mystery/Detective**: Crime-solving narratives 與 puzzles 和 investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "這 Shining" by Stephen King, "Dracula" by Bram Stoker)
-- **Romance**: Focus on romantic relationships 和 emotional journeys (e.g., Jane Austen's "Pride 和 Prejudice", Nicholas Sparks novels)
-- **Historical Fiction**: Set 在 specific historical periods 與 accurate details (e.g., "這 Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
-- **Magical Realism**: Realistic settings 與 magical elements treated as ordinary (e.g., "One Hundred Years 的 Solitude" by Gabriel García Márquez)
+### 非小說類型
+- **傳記／自傳**：真實人物的生平故事（例如：Anne Frank的《安妮日記》、Michelle Obama的《成為這樣的我》）
+- **回憶錄**：專注於特定經歷或主題的個人敘述
+- **散文**：關於特定主題的短篇散文作品（例如：James Baldwin、Joan Didion的作品）
+- **新聞報導**：新聞報導、調查報導、專題文章
+- **學術寫作**：研究論文、學術文章、學位論文
+- **自助書籍**：個人發展和改善指南
 
-### Non-Fiction Genres
-- **Biography/Autobiography**: Life stories 的 real people (e.g., "這 Diary 的 a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
-- **Memoir**: Personal accounts focusing on specific experiences or themes
-- **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
-- **Journalism**: News reporting, investigative pieces, feature articles
-- **Academic Writing**: Research papers, scholarly articles, dissertations
-- **Self-Help**: Personal 開發 和 improvement guides
+### 詩歌形式
+- **十四行詩**：14行詩，具有特定押韻格式（莎士比亞式：ABAB CDCD EFEF GG；彼特拉克式：ABBAABBA CDECDE）
+- **俳句**：日本詩歌形式，具有5-7-5音節模式
+- **五行打油詩**：五行幽默詩，押韻格式為AABBA
+- **自由詩**：無固定韻律或押韻模式
+- **維拉內拉詩**：19行，具有特定重複模式（例如：Dylan Thomas的《不要溫和地走進那良夜》）
+- **頌歌**：讚頌某人、事件或事物的抒情詩
+- **史詩**：關於英雄事蹟的長篇敘事詩（例如：Homer的《奧德賽》、《貝奧武夫》）
 
-### Poetry Forms
-- **Sonnet**: 14-line poem 與 specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
-- **Haiku**: Japanese form 與 5-7-5 syllable pattern
-- **Limerick**: Five-line humorous poem 與 AABBA rhyme scheme
-- **Free Verse**: No regular meter or rhyme pattern
-- **Villanelle**: 19 lines 與 specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
-- **Ode**: Lyrical poem praising a person, event, or thing
-- **Epic**: Long narrative poem about heroic deeds (e.g., "這 Odyssey" by Homer, "Beowulf")
+## 主要文學運動
 
-## Major Literary Movements
+### 歷史時期
+- **古典文學**（西元前8世紀 - 西元5世紀）：希臘和羅馬作品，強調理性、秩序和人文主義
+- **中世紀文學**（5 - 15世紀）：宗教主題、騎士浪漫傳奇、寓言（例如：Dante的《神曲》）
+- **文藝復興**（14 - 17世紀）：人文主義、古典學習的復興（例如：Shakespeare、Cervantes）
+- **啟蒙運動**（17 - 18世紀）：理性、科學、個人權利（例如：Voltaire、Jonathan Swift）
+- **浪漫主義**（18世紀末 - 19世紀中葉）：情感、自然、個人主義（例如：Wordsworth、Goethe、Mary Shelley）
+- **寫實主義**（19世紀中葉）：準確描繪日常生活（例如：Tolstoy、George Eliot、Mark Twain）
+- **現代主義**（19世紀末 - 20世紀中葉）：實驗形式、意識流（例如：James Joyce、Virginia Woolf、T.S. Eliot）
+- **後現代主義**（20世紀中葉 - 現在）：碎片化、後設小說、諷刺（例如：Thomas Pynchon、Don DeLillo）
 
-### Historical Periods
-- **Classical 文學** (8th century BCE - 5th century CE): Greek 和 Roman works emphasizing reason, order, 和 humanism
-- **Medieval 文學** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "這 Divine Comedy" by Dante)
-- **Renaissance** (14th - 17th century): Humanism, revival 的 classical learning (e.g., Shakespeare, Cervantes)
-- **Enlightenment** (17th - 18th century): Reason, 科學, individual rights (e.g., Voltaire, Jonathan Swift)
-- **Romanticism** (late 18th - mid-19th century): Emotion, 自然, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
-- **Realism** (mid-19th century): Accurate depiction 的 everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
-- **Modernism** (late 19th - mid-20th century): Experimental forms, stream 的 consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
-- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
+## 視覺藝術
 
-## Visual 藝術
+### 藝術運動
+- **文藝復興**（14 - 17世紀）：寫實主義、透視法、人體解剖學（例如：Leonardo da Vinci、Michelangelo、Raphael）
+- **巴洛克**（17世紀）：戲劇性光線、情感強度（例如：Caravaggio、Rembrandt、Bernini）
+- **印象派**（19世紀末）：光線、色彩、可見筆觸（例如：Monet、Renoir、Degas）
+- **後印象派**（19世紀末）：大膽色彩、幾何形式（例如：Van Gogh、Cézanne、Gauguin）
+- **立體派**（20世紀初）：幾何形狀、多重視角（例如：Picasso、Braque）
+- **超現實主義**（1920年代 - 1940年代）：夢境意象、潛意識（例如：Dalí、Magritte、Frida Kahlo）
+- **抽象表現主義**（1940年代 - 1950年代）：自發性、動作繪畫（例如：Pollock、Rothko、de Kooning）
+- **普普藝術**（1950年代 - 1960年代）：流行文化意象（例如：Warhol、Lichtenstein）
+- **當代藝術**（1970年代 - 現在）：多元媒材、概念方法、社會評論
 
-### Art Movements
-- **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
-- **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
-- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
-- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
-- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
-- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
-- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
-- **Pop Art** (1950s - 1960s): Popular 文化 imagery (e.g., Warhol, Lichtenstein)
-- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
+### 藝術媒材與技術
+- **繪畫**：油畫、壓克力、水彩、壁畫、蛋彩畫
+- **素描**：鉛筆、炭筆、墨水、粉彩、康特蠟筆
+- **雕塑**：雕刻（石材、木材）、塑造（黏土、蠟）、鑄造（青銅、金屬）、組裝
+- **版畫**：蝕刻、石版印刷、絹印、木刻
+- **攝影**：數位、底片、紀錄片、肖像、風景、街頭攝影
+- **數位藝術**：3D建模、數位繪畫、生成藝術、NFT
+- **裝置藝術**：特定場域、沉浸式環境
+- **行為藝術**：現場表演、身體藝術、偶發藝術
 
-### Art Mediums 和 Techniques
-- **Painting**: Oil, acrylic, watercolor, fresco, tempera
-- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
-- **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
-- **Printmaking**: Etching, lithography, screen printing, woodcut
-- **Photography**: Digital, film, documentary, portrait, landscape, street photography
-- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
-- **Installation Art**: Site-specific, immersive environments
-- **效能 Art**: Live actions, body art, happenings
+## 音樂
 
-## Music
+### 古典音樂時期
+- **中世紀**（500-1400）：額我略聖歌、早期複音音樂
+- **文藝復興**（1400-1600）：聲樂複音音樂、牧歌（例如：Palestrina、Josquin des Prez）
+- **巴洛克**（1600-1750）：華麗旋律、數字低音（例如：Bach、Handel、Vivaldi）
+- **古典**（1750-1820）：平衡形式、清晰（例如：Mozart、Haydn、Beethoven早期作品）
+- **浪漫**（1820-1900）：情感表達、擴大管弦樂團（例如：Chopin、Wagner、Tchaikovsky）
+- **20世紀／當代**：無調性、極簡主義、實驗性（例如：Stravinsky、Schoenberg、Philip Glass）
 
-### Classical Music Periods
-- **Medieval** (500-1400): Gregorian chant, early polyphony
-- **Renaissance** (1400-1600): Vocal polyphony, madrigals (e.g., Palestrina, Josquin des Prez)
-- **Baroque** (1600-1750): Ornate melodies, basso continuo (e.g., Bach, Handel, Vivaldi)
-- **Classical** (1750-1820): Balanced forms, clarity (e.g., Mozart, Haydn, Beethoven early works)
-- **Romantic** (1820-1900): Emotional expression, expanded orchestras (e.g., Chopin, Wagner, Tchaikovsky)
-- **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
+### 音樂類型
+- **爵士樂**：即興演奏、搖擺節奏、藍調影響（例如：Louis Armstrong、Miles Davis、John Coltrane）
+- **藍調**：12小節結構、富表現力的人聲（例如：B.B. King、Muddy Waters）
+- **搖滾**：電吉他、強烈節奏（例如：Beatles、Led Zeppelin、Nirvana）
+- **嘻哈／饒舌**：節奏性說唱、節拍、DJ文化（例如：Tupac、Kendrick Lamar、Jay-Z）
+- **電子音樂**：合成器、數位製作（例如：Kraftwerk、Daft Punk、Aphex Twin）
+- **鄉村音樂**：民俗傳統、故事敘述（例如：Johnny Cash、Dolly Parton）
+- **節奏藍調／靈魂樂**：情感豐富的人聲、律動（例如：Aretha Franklin、Stevie Wonder、Beyoncé）
+- **古典跨界**：融合古典和流行風格
 
-### Music Genres
-- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
-- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
-- **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
-- **Hip Hop/Rap**: Rhythmic speech, beats, DJ 文化 (e.g., Tupac, Kendrick Lamar, Jay-Z)
-- **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
-- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
-- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
-- **Classical Crossover**: Fusion 的 classical 和 popular styles
+### 音樂理論基礎
+- **音符與音階**：大調、小調、半音階、五聲音階、調式
+- **和弦與和聲**：三和弦、七和弦、和弦進行
+- **節奏與拍子**：拍號、速度、切分音
+- **旋律與對位**：主題發展、聲部進行
+- **形式與結構**：奏鳴曲式、交響樂章、主歌副歌結構
 
-### Music Theory 基礎
-- **Notes 和 Scales**: Major, minor, chromatic, pentatonic, modes
-- **Chords 和 Harmony**: Triads, seventh chords, chord progressions
-- **Rhythm 和 Meter**: Time signatures, tempo, syncopation
-- **Melody 和 Counterpoint**: Thematic 開發, voice leading
-- **Form 和 Structure**: Sonata form, symphony movements, verse-chorus structure
+## 戲劇與表演
 
-## Theater 和 效能
+### 戲劇類型
+- **悲劇**：嚴肅主題、主角的沒落（例如：希臘悲劇、Shakespeare的《哈姆雷特》）
+- **喜劇**：幽默情境、圓滿結局（例如：Shakespeare的喜劇、Oscar Wilde）
+- **劇情劇**：探索人類衝突的嚴肅敘事
+- **音樂劇**：整合歌曲、舞蹈、對話（例如：《漢密爾頓》、《悲慘世界》、《歌劇魅影》）
+- **實驗／前衛劇場**：非傳統形式、觀眾參與
 
-### Theater Types
-- **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
-- **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
-- **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "這 Phantom 的 這 Opera")
-- **Experimental/Avant-Garde**: Non-traditional forms, audience participation
+### 著名劇作家
+- William Shakespeare（英國，1564-1616）：《哈姆雷特》、《馬克白》、《羅密歐與茱麗葉》
+- Anton Chekhov（俄國，1860-1904）：《櫻桃園》、《三姊妹》
+- Tennessee Williams（美國，1911-1983）：《慾望街車》、《玻璃動物園》
+- Arthur Miller（美國，1915-2005）：《推銷員之死》、《熔爐》
+- Samuel Beckett（愛爾蘭，1906-1989）：《等待果陀》、《終局》
+- August Wilson（美國，1945-2005）：匹茲堡系列、《藩籬》
 
-### Famous Playwrights
-- William Shakespeare (英語, 1564-1616): "Hamlet", "Macbeth", "Romeo 和 Juliet"
-- Anton Chekhov (Russian, 1860-1904): "這 Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "這 Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death 的 a Salesman", "這 Crucible"
-- Samuel Beckett (Irish, 1906-1989): "Waiting 為 Godot", "Endgame"
-- August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
+## 電影與影像
 
-## Film 和 Cinema
+### 電影類型
+- **劇情片**：以角色為主的敘事、情感深度
+- **動作片**：身體技藝、追逐、打鬥、爆破
+- **喜劇片**：幽默、諷刺、戲仿
+- **恐怖片**：恐懼、懸疑、超自然元素
+- **紀錄片**：非虛構、真實事件、教育性
+- **動畫**：手繪、CGI、定格動畫
+- **黑色電影**：黑暗主題、道德模糊、視覺風格（1940年代-1950年代）
+- **科幻電影**：未來科技、太空、時間旅行
 
-### Film Genres
-- **Drama**: Character-driven narratives, emotional depth
-- **Action**: Physical feats, chases, fights, explosions
-- **Comedy**: Humor, satire, parody
-- **Horror**: Fear, suspense, supernatural elements
-- **Documentary**: Non-fiction, real 事件, educational
-- **Animation**: Hand-drawn, CGI, stop-motion
-- **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
-- **科學 Fiction**: Futuristic 技術, space, time travel
+### 電影運動
+- **德國表現主義**（1920年代）：扭曲視覺、心理主題（《卡里加里博士的小屋》）
+- **義大利新寫實主義**（1940年代-1950年代）：工人階級故事、實景拍攝（《單車失竊記》）
+- **法國新浪潮**（1950年代-1960年代）：創新剪輯、作者理論（Godard、Truffaut）
+- **新好萊塢**（1960年代-1980年代）：導演主導、成熟主題（Scorsese、Coppola、Spielberg）
+- **Dogme 95**（1990年代）：極簡主義規則、自然光線（von Trier、Vinterberg）
 
-### Film Movements
-- **German Expressionism** (1920s): Distorted visuals, psychological themes ("這 Cabinet 的 Dr. Caligari")
-- **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
-- **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
-- **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
+### 電影製作角色
+- **導演**：創意願景、演員指導、整體控制
+- **攝影指導／攝影總監**：攝影工作、燈光、視覺風格
+- **編劇**：劇本寫作、對話、故事結構
+- **剪輯師**：鏡頭組裝、節奏、敘事流動
+- **製作設計師**：場景、地點、視覺環境
+- **作曲家**：原創音樂配樂
 
-### Filmmaking Roles
-- **Director**: Creative vision, actor direction, overall control
-- **Cinematographer/Director 的 Photography**: Camera work, lighting, visual style
-- **Screenwriter**: Script writing, dialogue, story structure
-- **Editor**: Footage assembly, pacing, narrative flow
-- **Production Designer**: Sets, locations, visual environment
-- **Composer**: Original music score
+## 著名作家與作品
 
-## Famous Authors 和 Works
+### 古典文學
+- Homer：《伊利亞德》、《奧德賽》（古希臘）
+- Dante Alighieri：《神曲》（義大利，1308-1320）
+- Miguel de Cervantes：《唐吉訶德》（西班牙，1605）
+- Jane Austen：《傲慢與偏見》、《理性與感性》（英國，1810年代）
+- Leo Tolstoy：《戰爭與和平》、《安娜·卡列尼娜》（俄國，1860年代-1870年代）
+- Fyodor Dostoevsky：《罪與罰》、《卡拉馬助夫兄弟》（俄國，1860年代-1880年代）
+- Charles Dickens：《遠大前程》、《雙城記》（英國，1850年代-1860年代）
+- Mark Twain：《頑童歷險記》（美國，1884）
 
-### Classic 文學
-- Homer: "這 Iliad", "這 Odyssey" (Ancient Greece)
-- Dante Alighieri: "這 Divine Comedy" (Italy, 1308-1320)
-- Miguel de Cervantes: "Don Quixote" (Spain, 1605)
-- Jane Austen: "Pride 和 Prejudice", "Sense 和 Sensibility" (England, 1810s)
-- Leo Tolstoy: "War 和 Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime 和 Punishment", "這 Brothers Karamazov" (Russia, 1860s-1880s)
-- Charles Dickens: "Great Expectations", "A Tale 的 Two Cities" (England, 1850s-1860s)
-- Mark Twain: "Adventures 的 Huckleberry Finn" (USA, 1884)
+### 現代文學
+- James Joyce：《尤利西斯》（愛爾蘭，1922）
+- Virginia Woolf：《達洛維夫人》、《燈塔行》（英國，1920年代）
+- Franz Kafka：《變形記》、《審判》（捷克斯洛伐克，1910年代-1920年代）
+- Gabriel García Márquez：《百年孤寂》（哥倫比亞，1967）
+- Toni Morrison：《寵兒》、《所羅門之歌》（美國，1970年代-1980年代）
+- Haruki Murakami：《挪威的森林》、《海邊的卡夫卡》（日本，1980年代-現在）
+- Chimamanda Ngozi Adichie：《半輪黃日》、《美國佬》（奈及利亞，2000年代）
 
-### Modern 文學
-- James Joyce: "Ulysses" (Ireland, 1922)
-- Virginia Woolf: "Mrs. Dalloway", "To 這 Lighthouse" (England, 1920s)
-- Franz Kafka: "這 Metamorphosis", "這 Trial" (Czechoslovakia, 1910s-1920s)
-- Gabriel García Márquez: "One Hundred Years 的 Solitude" (Colombia, 1967)
-- Toni Morrison: "Beloved", "Song 的 Solomon" (USA, 1970s-1980s)
-- Haruki Murakami: "Norwegian Wood", "Kafka on 這 Shore" (Japan, 1980s-present)
-- Chimamanda Ngozi Adichie: "Half 的 a Yellow Sun", "Americanah" (Nigeria, 2000s)
+## 文學手法與技巧
 
-## Literary Devices 和 Techniques
+### 修辭手法
+- **隱喻**：不使用「像」或「如同」的直接比較
+- **明喻**：使用「像」或「如同」的比較
+- **擬人化**：賦予非人類事物人類特質
+- **誇飾**：刻意誇張
+- **諷刺**：期望與現實之間的對比（言語性、情境性、戲劇性）
+- **象徵主義**：物體代表抽象概念
+- **意象**：訴諸感官的描述性語言
 
-### Figurative 語言
-- **Metaphor**: Direct comparison without "like" or "as"
-- **Simile**: Comparison using "like" or "as"
-- **Personification**: Giving human qualities to non-human things
-- **Hyperbole**: Deliberate exaggeration
-- **Irony**: Contrast between expectation 和 reality (verbal, situational, dramatic)
-- **Symbolism**: Objects representing abstract ideas
-- **Imagery**: Descriptive 語言 appealing to senses
+### 敘事技巧
+- **視角**：第一人稱、第二人稱、第三人稱（有限、全知）
+- **意識流**：連續的思想流動
+- **不可靠的敘述者**：可信度受損的敘述者
+- **非線性敘事**：以非時間順序呈現的事件
+- **伏筆**：關於未來事件的提示
+- **倒敘**：故事中較早時期的場景
 
-### Narrative Techniques
-- **Point 的 View**: First person, second person, third person (limited, omniscient)
-- **Stream 的 Consciousness**: Continuous flow 的 thoughts
-- **Unreliable Narrator**: Narrator whose credibility is compromised
-- **Non-linear Narrative**: 事件 presented out 的 chronological order
-- **Foreshadowing**: Hints about 未來 事件
-- **Flashback**: Scenes from earlier 在 這 story
+### 結構要素
+- **情節**：鋪陳、上升動作、高潮、下降動作、結局
+- **角色發展**：主角、反派、動態／靜態角色
+- **背景**：時間、地點、社會背景
+- **主題**：中心訊息或深層意義
+- **語氣**：作者對主題的態度
+- **氣氛**：為讀者創造的情感氛圍
 
-### Structural Elements
-- **Plot**: Exposition, rising action, climax, falling action, resolution
-- **Character 開發**: Protagonist, antagonist, dynamic/static characters
-- **Setting**: Time, place, social context
-- **Theme**: Central message or underlying meaning
-- **Tone**: Author's attitude toward subject
-- **Mood**: Emotional atmosphere created 為 reader
+## 文化機構
 
-## Cultural Institutions
+### 博物館與畫廊
+- Louvre（巴黎）：世界最大的藝術博物館
+- Metropolitan Museum of Art（紐約）：綜合收藏
+- British Museum（倫敦）：人類歷史與文化
+- Vatican Museums（梵蒂岡城）：文藝復興藝術、西斯汀禮拜堂
+- Uffizi Gallery（佛羅倫斯）：義大利文藝復興傑作
+- Hermitage Museum（聖彼得堡）：最古老和最大的博物館之一
+- Museum of Modern Art - MoMA（紐約）：現代與當代藝術
 
-### Museums 和 Galleries
-- Louvre (Paris): World's largest art museum
-- Metropolitan Museum 的 Art (New York): Comprehensive collections
-- British Museum (London): Human 歷史 和 文化
-- Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
-- Uffizi Gallery (Florence): Italian Renaissance masterpieces
-- Hermitage Museum (St. Petersburg): One 的 oldest 和 largest museums
-- Museum 的 Modern Art - MoMA (New York): Modern 和 contemporary art
+### 文學獎項
+- Nobel Prize in Literature：國際認可
+- Pulitzer Prize（美國）：小說、戲劇、歷史、詩歌
+- Booker Prize（英國／大英國協）：最佳原創小說
+- Hugo Award：科幻與奇幻
+- National Book Award（美國）：美國文學
+- Man Booker International Prize：翻譯小說
 
-### Literary Awards
-- Nobel Prize 在 文學: International recognition
-- Pulitzer Prize (USA): Fiction, drama, 歷史, poetry
-- Booker Prize (UK/Commonwealth): Best original novel
-- Hugo Award: 科學 fiction 和 fantasy
-- National Book Award (USA): American 文學
-- Man Booker International Prize: Translated fiction
+## 藝術批評的關鍵概念
 
-## Key Concepts 在 Art Criticism
+### 分析框架
+- **形式主義**：專注於視覺元素（線條、色彩、構圖）
+- **圖像學**：象徵意義和文化參照
+- **脈絡分析**：歷史、社會、政治脈絡
+- **女性主義批評**：性別再現、女性藝術家
+- **後殖民批評**：殖民遺產、文化認同
+- **精神分析批評**：潛意識動機、象徵主義
 
-### Analysis Frameworks
-- **Formalism**: Focus on visual elements (line, color, composition)
-- **Iconography**: Symbolic meanings 和 cultural references
-- **Contextual Analysis**: Historical, social, political context
-- **Feminist Criticism**: Gender representation, women artists
-- **Postcolonial Criticism**: Colonial legacy, cultural identity
-- **Psychoanalytic Criticism**: Unconscious motivations, symbolism
+### 美學原則
+- **平衡**：視覺重量分布（對稱、不對稱）
+- **對比**：元素之間的差異（明暗、大小）
+- **強調**：焦點、興趣區域
+- **動感**：引導觀者視線的視覺流動
+- **模式**：元素的重複
+- **比例**：部分之間的大小關係
+- **統一**：整體構圖的連貫性與和諧
 
-### Aesthetic Principles
-- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
-- **Contrast**: Differences 在 elements (light/dark, large/small)
-- **Emphasis**: Focal points, areas 的 interest
-- **Movement**: Visual flow guiding viewer's eye
-- **Pattern**: Repetition 的 elements
-- **Proportion**: Size relationships between parts
-- **Unity**: Coherence 和 harmony 的 whole composition

@@ -1,158 +1,151 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: data_science_and_analytics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Veri Bilimi ve Analitik
 
-# Veri Bilim ve Analytics
+## Temel Kavramlar
 
-## Core Concepts
+### Veri Bilimi Nedir?
+Veri bilimi, yapılandırılmış ve yapılandırılmamış verilerden bilgi ve içgörü çıkarmak için bilimsel yöntemler, süreçler, algoritmalar ve sistemler kullanan disiplinler arası bir alandır. Şunları bir araya getirir:
+- **İstatistik**: Analiz için matematiksel temel
+- **Bilgisayar Bilimi**: Programlama, algoritmalar, veri yapıları
+- **Alan Uzmanlığı**: Konuya özgü bilgi
+- **Veri Görselleştirme**: Bulguların etkili biçimde iletilmesi
 
-### What is Veri Bilim?
-Veri Bilim is an interdisciplinary field that uses scientific methods, processes, algorithms, ve Sistemler to extract knowledge ve insights from structured ve unstructured Veri. It combines:
-- **İstatistikler**: Mathematical foundation için analysis
-- **Computer Bilim**: Programming, algorithms, Veri structures
-- **Domain Expertise**: Subject matter knowledge
-- **Veri Visualization**: Communicating findings effectively
+### Veri Türleri
+- **Yapılandırılmış Veri**: Satır/sütun düzeninde organize edilmiş veri (veritabanları, hesap tabloları)
+- **Yapılandırılmamış Veri**: Önceden tanımlı bir biçimi olmayan veri (metin, görüntü, ses, video)
+- **Yarı Yapılandırılmış Veri**: Bir miktar düzen içeren ama katı olmayan veri (JSON, XML, HTML)
+- **Zaman Serisi Verisi**: Zaman sırasına göre dizinlenmiş ardışık veri noktaları
+- **Mekânsal Veri**: Coğrafi/konum tabanlı bilgiler
+- **Graf Verisi**: İlişkileri temsil eden düğümler ve kenarlar
 
-### Veri Types
-- **Structured Veri**: Organized içinde rows/columns (databases, spreadsheets)
-- **Unstructured Veri**: No predefined format (text, images, audio, video)
-- **Semi-structured Veri**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series Veri**: Sequential Veri points indexed içinde time order
-- **Spatial Veri**: Geographic/location-based information
-- **Graph Veri**: Nodes ve edges representing relationships
+### Veri Bilimi Süreci (CRISP-DM)
+1. **İş Anlayışı**: Hedefleri ve gereksinimleri tanımlama
+2. **Veri Anlayışı**: İlk veriyi toplama ve keşfetme
+3. **Veri Hazırlama**: Veriyi temizleme, dönüştürme ve biçimlendirme (işin %80'i)
+4. **Modelleme**: Modelleme tekniklerini seçme ve uygulama
+5. **Değerlendirme**: Model performansını hedeflere göre değerlendirme
+6. **Dağıtım**: Modeli üretim ortamında uygulama
 
-### bu Veri Bilim Process (CRISP-DM)
-1. **İş Understanding**: Define objectives ve requirements
-2. **Veri Understanding**: Collect ve explore initial Veri
-3. **Veri Preparation**: Clean, transform, ve format Veri (80% içinde work)
-4. **Modeling**: Select ve apply modeling techniques
-5. **Evaluation**: Assess model Performans against objectives
-6. **Dağıtım**: Implement model içinde production environment
+## İstatistik Temelleri
 
-## İstatistikler Temeller
+### Betimsel İstatistik
+- **Merkezi Eğilim Ölçüleri**: Ortalama, medyan, mod
+- **Dağılım Ölçüleri**: Aralık, varyans, standart sapma, çeyrekler arası açıklık
+- **Dağılım Şekli**: Çarpıklık (asimetri), basıklık (kuyruk yapısı)
+- **Yüzdelikler ve Çeyrekler**: Dağılım içindeki konum
 
-### Descriptive İstatistikler
-- **Measures içinde Central Tendency**: Mean, median, mode
-- **Measures içinde Dispersion**: Range, variance, standard deviation, interquartile range
-- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles ve Quartiles**: Position within distribution
+### Çıkarımsal İstatistik
+- **Hipotez Testi**: Sıfır hipotezi, alternatif hipotez, p-değerleri
+- **Güven Aralıkları**: Anakütle parametresini içermesi muhtemel değer aralığı
+- **İstatistiksel Anlamlılık**: Sonuçların tesadüfen ortaya çıkmış olma olasılığı
+- **Tip I Hata**: Yanlış pozitif (doğru sıfır hipotezini reddetmek)
+- **Tip II Hata**: Yanlış negatif (yanlış sıfır hipotezini reddedememek)
+- **Güç**: Yanlış sıfır hipotezini doğru biçimde reddetme olasılığı
 
-### Inferential İstatistikler
-- **Hypothesis Test Etme**: Null hypothesis, alternative hypothesis, p-values
-- **Confidence Intervals**: Range içinde values likely containing population parameter
-- **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejecting true null hypothesis)
-- **Type II Error**: False negative (failing to reject false null hypothesis)
-- **Power**: Probability içinde correctly rejecting false null hypothesis
+### Olasılık Dağılımları
+- **Normal Dağılım**: Çan eğrisi, ortalama = medyan = mod
+- **Binom Dağılımı**: Başarı/başarısızlık sonuçları
+- **Poisson Dağılımı**: Sabit bir aralıktaki olay sayısı
+- **Uniform Dağılım**: Tüm sonuçların eşit olasılıklı olması
+- **Üstel Dağılım**: Olaylar arasındaki süre
+- **t-Dağılımı**: Küçük örneklem boyutları, bilinmeyen anakütle varyansı
+- **Ki-Kare Dağılımı**: Kategorik veri analizi
 
-### Probability Distributions
-- **Normal Distribution**: Bell curve, mean = median = mode
-- **Binomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count içinde Olaylar içinde fixed interval
-- **Uniform Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between Olaylar
-- **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical Veri analysis
+### İstatistiksel Testler
+- **t-testi**: İki grup arasındaki ortalamaları karşılaştırma
+- **ANOVA**: Birden fazla grup arasındaki ortalamaları karşılaştırma
+- **Ki-Kare Testi**: Kategorik değişkenlerin bağımsızlığını test etme
+- **Mann-Whitney U**: t-testine parametrik olmayan alternatif
+- **Pearson Korelasyonu**: Sürekli değişkenler arasındaki doğrusal ilişki
+- **Spearman Korelasyonu**: Monoton ilişki (sıralama tabanlı)
+- **Kolmogorov-Smirnov**: Dağılımları karşılaştırma
 
-### Statistical Tests
-- **t-test**: Compare means between two groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Test**: Test independence içinde categorical variables
-- **Mann-Whitney U**: Non-parametric alternative to t-test
-- **Pearson Correlation**: Linear relationship between continuous variables
-- **Spearman Correlation**: Monotonic relationship (rank-based)
-- **Kolmogorov-Smirnov**: Compare distributions
+## Veri Toplama ve Depolama
 
-## Veri Collection ve Storage
+### Veri Kaynakları
+- **Veritabanları**: SQL, NoSQL, ilişkisel, belge depoları
+- **API'ler**: REST, GraphQL, web kazıma
+- **Dosyalar**: CSV, JSON, XML, Parquet, Avro
+- **Akış Verisi**: Kafka, Kinesis, gerçek zamanlı akışlar
+- **Anketler ve Deneyler**: Birincil veri toplama
+- **Açık Veri Kümeleri**: Devlet verileri, Kaggle, akademik depolar
 
-### Veri Sources
-- **Databases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, Web scraping
-- **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streaming Veri**: Kafka, Kinesis, real-time feeds
-- **Surveys ve Experiments**: Primary Veri collection
-- **Public Datasets**: Government Veri, Kaggle, academic repositories
+### Veri Ambarı
+- **ETL**: Ayıkla, Dönüştür, Yükle süreci
+- **Veri Gölü**: Ham verinin doğal biçiminde saklanması
+- **Veri Ambarı**: Analiz için yapılandırılmış, işlenmiş veri
+- **Veri Pazarı**: Belirli bir departman için ambarın alt kümesi
+- **OLAP**: Çevrimiçi Analitik İşleme, çok boyutlu sorgular
+- **Yıldız Şema**: Boyut tablolarıyla çevrili olgu tabloları
+- **Kar Tanesi Şema**: Normalize edilmiş boyut tabloları
 
-### Veri Warehousing
-- **ETL**: Extract, Transform, Load process
-- **Veri Lake**: Raw Veri storage içinde native format
-- **Veri Warehouse**: Structured, processed Veri için analysis
-- **Veri Mart**: Subset içinde warehouse için specific department
-- **OLAP**: Online Analytical Processing, multidimensional queries
-- **Star Schema**: Fact tables surrounded by dimension tables
-- **Snowflake Schema**: Normalized dimension tables
+### Veritabanı Türleri
+- **İlişkisel (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
+- **Belge**: MongoDB, CouchDB (JSON benzeri belgeler)
+- **Anahtar-Değer**: Redis, DynamoDB (basit anahtar-değer çiftleri)
+- **Sütun Ailesi**: Cassandra, HBase (sütunlar için optimize edilmiş)
+- **Graf**: Neo4j, Amazon Neptune (düğümler ve ilişkiler)
+- **Zaman Serisi**: InfluxDB, TimescaleDB (zaman damgalı veri)
+- **Vektör**: Pinecone, Milvus (ML için gömme depolama)
 
-### Veritabanı Types
-- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
-- **Document**: MongoDB, CouchDB (JSON-like documents)
-- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassandra, HBase (optimized için columns)
-- **Graph**: Neo4j, Amazon Neptune (nodes ve relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped Veri)
-- **Vector**: Pinecone, Milvus (embedding storage için ML)
+## Veri Ön İşleme
 
-## Veri Preprocessing
+### Veri Temizleme
+- **Eksik Değerler**: Atama (ortalama, medyan, mod, tahmin), silme
+- **Aykırı Değerler**: Tespit (IQR, Z-skoru), işleme (sınırlandırma, dönüşüm)
+- **Yinelenenler**: Belirleme ve kaldırma
+- **Tutarsızlıklar**: Biçimleri standartlaştırma, yazım hatalarını düzeltme
+- **Veri Doğrulama**: Kısıtları, aralıkları, türleri kontrol etme
 
-### Veri Cleaning
-- **Missing Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
-- **Duplicates**: Identification ve removal
-- **Inconsistencies**: Standardizing formats, fixing typos
-- **Veri Validation**: Checking constraints, ranges, types
+### Veri Dönüştürme
+- **Normalizasyon**: 0-1 aralığına ölçekleme
+- **Standartlaştırma**: Z-skoru normalizasyonu (ortalama=0, std=1)
+- **Kodlama**: One-hot, etiket, sıralı, hedef kodlama
+- **Binning**: Sürekli değerleri kategorilere gruplama
+- **Log Dönüşümü**: Çarpıklığı azaltma
+- **Özellik Ölçekleme**: Özellikleri karşılaştırılabilir hale getirme
 
-### Veri Transformation
-- **Normalization**: Scaling to 0-1 range
-- **Standardization**: Z-score normalization (mean=0, std=1)
-- **Encoding**: One-hot, label, ordinal, target encoding
-- **Binning**: Grouping continuous values into categories
-- **Log Transformation**: Reducing skewness
-- **Feature Scaling**: Making features comparable
+### Özellik Mühendisliği
+- **Özellik Oluşturma**: Mevcut özelliklerden yeni özellikler türetme
+- **Özellik Seçimi**: En ilgili özellikleri seçme
+  - Filtre yöntemleri (korelasyon, ki-kare)
+  - Sarmalayıcı yöntemler (özyinelemeli özellik eleme)
+  - Gömülü yöntemler (LASSO, ağaç tabanlı önem)
+- **Boyut İndirgeme**: PCA, t-SNE, UMAP
+- **Etkileşim Terimleri**: Özellikleri çarpımsal biçimde birleştirme
+- **Polinom Özellikler**: Daha yüksek dereceden terimler oluşturma
 
-### Feature Engineering
-- **Feature Creation**: Deriving new features from existing ones
-- **Feature Selection**: Choosing most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimination)
-  - Embedded methods (LASSO, tree-based importance)
-- **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combining features multiplicatively
-- **Polynomial Features**: Creating higher-order terms
+## Keşifsel Veri Analizi (EDA)
 
-## Exploratory Veri Analysis (EDA)
+### EDA Teknikleri
+- **Özet İstatistikler**: Merkezi eğilim, yayılım ve şekli tanımlama
+- **Tek Değişkenli Analiz**: Tek değişkenli dağılımlar
+- **İki Değişkenli Analiz**: İki değişken arasındaki ilişkiler
+- **Çok Değişkenli Analiz**: Birden fazla değişken arasındaki etkileşimler
+- **Korelasyon Analizi**: İlişkileri ve çoklu doğrusal bağlantıyı belirleme
+- **Segmentasyon**: Benzer gözlemleri gruplama
 
-### EDA Techniques
-- **Summary İstatistikler**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Single variable distributions
-- **Bivariate Analysis**: Relationships between two variables
-- **Multivariate Analysis**: Multiple variable interactions
-- **Correlation Analysis**: Identify relationships ve multicollinearity
-- **Segmentation**: Group similar observations
+### Görselleştirme Araçları
+- **Histogramlar**: Tek bir değişkenin dağılımı
+- **Kutu Grafikleri**: Beş sayı özeti, aykırı değer tespiti
+- **Dağılım Grafikleri**: İki sürekli değişken arasındaki ilişki
+- **Isı Haritaları**: Korelasyon matrisleri, yoğunluk
+- **Çubuk Grafikler**: Kategorik karşılaştırmalar
+- **Çizgi Grafikler**: Zaman içindeki eğilimler
+- **Keman Grafikleri**: Kutu grafiği öğeleriyle dağılım yoğunluğu
+- **Çiftli Grafikler**: Değişken çiftleri için çoklu dağılım grafikleri
 
-### Visualization Tools
-- **Histograms**: Distribution içinde single variable
-- **Box Plots**: Five-number summary, outlier detection
-- **Scatter Plots**: Relationship between two continuous variables
-- **Heatmaps**: Correlation matrices, density
-- **Bar Charts**: Categorical comparisons
-- **Line Charts**: Trends over time
-- **Violin Plots**: Distribution density ile box plot elements
-- **Pair Plots**: Multiple scatter plots için variable pairs
+### EDA için Python Kütüphaneleri
+- **pandas**: Veri işleme ve analiz
+- **numpy**: Sayısal hesaplama
+- **matplotlib**: Temel çizim
+- **seaborn**: İstatistiksel görselleştirme
+- **plotly**: Etkileşimli görselleştirmeler
+- **scipy**: Bilimsel hesaplama ve istatistik
 
-### Python Libraries için EDA
-- **pandas**: Veri manipulation ve analysis
-- **numpy**: Numerical Bilişim
-- **matplotlib**: Basic plotting
-- **seaborn**: Statistical visualization
-- **plotly**: Interactive visualizations
-- **scipy**: Scientific Bilişim ve İstatistikler
+## Veri Biliminde Makine Öğrenimi
 
-## Makine Öğrenimi içinde Veri Bilim
-
-### Supervised Learning
-- **Regression**: Predict continuous values
+### Denetimli Öğrenme
+- **Regresyon**: Sürekli değerleri tahmin etme
   - Linear Regression
   - Polynomial Regression
   - Ridge/LASSO/Elastic Net
@@ -160,182 +153,182 @@ Veri Bilim is an interdisciplinary field that uses scientific methods, processes
   - Random Forest Regressor
   - Gradient Boosting (XGBoost, LightGBM, CatBoost)
   
-- **Classification**: Predict categorical labels
+- **Sınıflandırma**: Kategorik etiketleri tahmin etme
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Destek Vector Machines
+  - Destek Vektör Makineleri
   - Decision Trees
   - Random Forest
   - Gradient Boosting
   - Sinir Ağları
 
-### Unsupervised Learning
-- **Clustering**: Group similar observations
+### Denetimsiz Öğrenme
+- **Kümeleme**: Benzer gözlemleri gruplama
   - k-Means
   - Hierarchical Clustering
-  - DBSCAN (density-based)
+  - DBSCAN (yoğunluk tabanlı)
   - Gaussian Mixture Models
   - Spectral Clustering
   
-- **Dimensionality Reduction**: Reduce feature count
+- **Boyut İndirgeme**: Özellik sayısını azaltma
   - Principal Component Analysis (PCA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
   - Uniform Manifold Approximation (UMAP)
   - Autoencoders
   
-- **Association Rules**: Find co-occurring items
+- **Birliktelik Kuralları**: Birlikte görülen öğeleri bulma
   - Apriori Algorithm
   - FP-Growth
 
-### Model Evaluation
-- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradeoff
+### Model Değerlendirme
+- **Sınıflandırma Metrikleri**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
+- **Regresyon Metrikleri**: MAE, MSE, RMSE, R², Adjusted R²
+- **Çapraz Doğrulama**: k-fold, stratified, leave-one-out, time series split
+- **Hiperparametre Ayarlama**: Grid search, random search, Bayesian optimization
+- **Öğrenme Eğrileri**: Bias-variance dengesini teşhis etme
 
-## Big Veri Technologies
+## Büyük Veri Teknolojileri
 
-### Distributed Bilişim Frameworks
+### Dağıtık Hesaplama Çerçeveleri
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: içinde-memory processing, faster than Hadoop
-  - Spark SQL: Structured Veri processing
-  - Spark Streaming: Real-time Veri
-  - MLlib: Makine Öğrenimi library
-  - GraphX: Graph processing
-- **Apache Flink**: Stream processing ile low latency
-- **Apache Beam**: Unified batch ve streaming
+- **Apache Spark**: Bellek içi işleme, Hadoop'dan daha hızlı
+  - Spark SQL: Yapılandırılmış veri işleme
+  - Spark Streaming: Gerçek zamanlı veri
+  - MLlib: Makine öğrenimi kütüphanesi
+  - GraphX: Graf işleme
+- **Apache Flink**: Düşük gecikmeyle akış işleme
+- **Apache Beam**: Birleşik toplu iş ve akış
 
-### Cloud Platforms
+### Bulut Platformları
 - **AWS**: S3, EMR, Redshift, SageMaker, Glue
 - **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
-- **Azure**: Synapse Analytics, Databricks, Makine Öğrenimi, Veri Lake
-- **Snowflake**: Cloud Veri warehouse
+- **Azure**: Synapse Analytics, Databricks, Machine Learning, Data Lake
+- **Snowflake**: Bulut veri ambarı
 
-### Veri Pipeline Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline Yönetim (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: Veri orchestrator ile asset focus
-- **dbt**: Veri transformation içinde warehouse
+### Veri Hattı Araçları
+- **Apache Airflow**: İş akışı orkestrasyonu
+- **Luigi**: İş hattı yönetimi (Spotify)
+- **Prefect**: Modern iş akışı orkestrasyonu
+- **Dagster**: Varlık odaklı veri orkestratörü
+- **dbt**: Ambar içinde veri dönüştürme
 
-## İş Intelligence ve Analytics
+## İş Zekâsı ve Analitik
 
-### BI Tools
-- **Tableau**: Visual analytics platform
-- **Power BI**: Microsoft İş analytics
-- **Looker**: Veri exploration ve insights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+### BI Araçları
+- **Tableau**: Görsel analitik platformu
+- **Power BI**: Microsoft iş analitiği
+- **Looker**: Veri keşfi ve içgörüler (Google)
+- **Qlik Sense**: İlişkisel analitik
+- **Metabase**: Açık kaynaklı BI
+- **Superset**: Apache açık kaynaklı BI
 
-### Dashboard Design Principles
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to Veri type
-- **Use Color Strategically**: Highlight important information
-- **Maintain Consistency**: Standardize formats ve scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Performans**: Fast loading, efficient queries
-- **Mobile Considerations**: Responsive design
+### Gösterge Paneli Tasarım İlkeleri
+- **Hedef Kitleni Tanı**: Kullanıcı ihtiyaçlarına göre uyarlama
+- **Doğru Görselleştirmeleri Seç**: Grafiği veri türüyle eşleştirme
+- **Rengi Stratejik Kullan**: Önemli bilgileri vurgulama
+- **Tutarlılığı Koru**: Biçimleri ve ölçekleri standartlaştırma
+- **Etkileşimi Etkinleştir**: Filtreler, detaylara inme, ipuçları
+- **Performansı Optimize Et**: Hızlı yükleme, verimli sorgular
+- **Mobil Hususlar**: Duyarlı tasarım
 
-### Key Performans Indicators (KPIs)
-- **Financial**: Revenue, profit margin, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketing**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+### Temel Performans Göstergeleri (KPI'lar)
+- **Finansal**: Gelir, kâr marjı, ROI, müşteri yaşam boyu değeri
+- **Müşteri**: Edinme maliyeti, müşteri kaybı oranı, memnuniyet skoru, NPS
+- **Operasyonel**: Verimlilik oranları, çevrim süresi, hata oranları
+- **Pazarlama**: Dönüşüm oranları, tıklama oranları, atıf
+- **Ürün**: Aktif kullanıcılar, etkileşim, elde tutma, özellik benimseme
 
-## İleri Düzey Analytics
+## İleri Analitik
 
-### Predictive Analytics
-- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeling**: Credit scoring, fraud detection, insurance
-- **Customer Analytics**: Churn prediction, propensity modeling
-- **Demand Forecasting**: Inventory optimization, supply chain
-- **Maintenance Prediction**: Equipment failure anticipation
+### Tahmine Dayalı Analitik
+- **Tahminleme**: Zaman serisi tahmini (ARIMA, Prophet, LSTM)
+- **Risk Modelleme**: Kredi puanlama, dolandırıcılık tespiti, sigorta
+- **Müşteri Analitiği**: Müşteri kaybı tahmini, eğilim modelleme
+- **Talep Tahmini**: Envanter optimizasyonu, tedarik zinciri
+- **Bakım Tahmini**: Ekipman arızasını öngörme
 
-### Prescriptive Analytics
-- **Optimization**: Linear programming, integer programming
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, influence diagrams
-- **A/B Test Etme**: Experimental design, statistical significance
-- **Multi-Armed Bandits**: Adaptive experimentation
+### Reçeteci Analitik
+- **Optimizasyon**: Doğrusal programlama, tamsayılı programlama
+- **Simülasyon**: Monte Carlo yöntemleri, kesikli olay simülasyonu
+- **Karar Analizi**: Karar ağaçları, etki diyagramları
+- **A/B Testi**: Deney tasarımı, istatistiksel anlamlılık
+- **Çok Kollu Kumarbazlar**: Uyarlanabilir deneyler
 
-### Text Analytics (NLP)
-- **Text Preprocessing**: Tokenization, stemming, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF için theme discovery
-- **Named Entity Recognition**: Identifying people, places, organizations
-- **Text Classification**: Spam detection, categorization
-- **Word Embeddings**: Word2Vec, GloVe, BERT
+### Metin Analitiği (NLP)
+- **Metin Ön İşleme**: Tokenization, stemming, lemmatization
+- **Duygu Analizi**: Pozitif/negatif/nötr sınıflandırma
+- **Konu Modelleme**: Tema keşfi için LDA, NMF
+- **Adlandırılmış Varlık Tanıma**: İnsanları, yerleri, kuruluşları belirleme
+- **Metin Sınıflandırma**: Spam tespiti, kategorilendirme
+- **Kelime Gömme**: Word2Vec, GloVe, BERT
 
-## Veri Ethics ve Governance
+## Veri Etiği ve Yönetişim
 
-### Veri Privacy
-- **GDPR**: EU General Veri Protection Regulation
-- **CCPA**: California Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability ve Accountability Act (US Sağlık Hizmetleri)
-- **Anonymization**: Removing personally identifiable information
-- **Differential Privacy**: Adding noise to protect individuals
-- **Consent Yönetim**: Opt-içinde/opt-out mechanisms
+### Veri Gizliliği
+- **GDPR**: AB Genel Veri Koruma Tüzüğü
+- **CCPA**: California Tüketici Gizliliği Yasası
+- **HIPAA**: Health Insurance Portability and Accountability Act (ABD sağlık hizmetleri)
+- **Anonimleştirme**: Kişisel olarak tanımlanabilir bilgileri kaldırma
+- **Diferansiyel Gizlilik**: Bireyleri korumak için gürültü ekleme
+- **Rıza Yönetimi**: Opt-in/opt-out mekanizmaları
 
-### Veri Quality
-- **Accuracy**: Correctness içinde Veri
-- **Completeness**: All required Veri present
-- **Consistency**: No contradictions across sources
-- **Timeliness**: Veri Mevcut when needed
-- **Validity**: Conforms to defined rules
-- **Uniqueness**: No duplicates
+### Veri Kalitesi
+- **Doğruluk**: Verinin doğruluğu
+- **Eksiksizlik**: Gereken tüm verinin mevcut olması
+- **Tutarlılık**: Kaynaklar arasında çelişki olmaması
+- **Zamanlılık**: Verinin gerektiğinde kullanılabilir olması
+- **Geçerlilik**: Tanımlı kurallara uygunluk
+- **Benzersizlik**: Yinelenen kayıt olmaması
 
-### Bias ve Fairness
-- **Sampling Bias**: Non-representative Veri collection
-- **Measurement Bias**: Flawed Veri collection instruments
-- **Algorithmic Bias**: Discriminatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processing, içinde-processing, post-processing
+### Önyargı ve Adillik
+- **Örnekleme Önyargısı**: Temsil gücü olmayan veri toplama
+- **Ölçüm Önyargısı**: Kusurlu veri toplama araçları
+- **Algoritmik Önyargı**: Ayrımcı model tahminleri
+- **Adillik Metrikleri**: Demografik eşitlik, fırsat eşitliği
+- **Önyargı Azaltma**: Ön işleme, süreç içi, süreç sonrası
 
-### Veri Governance Framework
-- **Veri Stewardship**: Responsibility için Veri assets
-- **Metadata Yönetim**: Veri about Veri documentation
-- **Veri Lineage**: Tracking Veri flow ve transformations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Logging Veri access ve changes
-- **Compliance**: Regulatory adherence
+### Veri Yönetişim Çerçevesi
+- **Veri Sorumluluğu**: Veri varlıkları için sorumluluk
+- **Üst Veri Yönetimi**: Veri hakkındaki verinin belgelenmesi
+- **Veri Soy Ağacı**: Veri akışını ve dönüşümleri izleme
+- **Erişim Kontrolü**: Rol tabanlı izinler
+- **Denetim İzleri**: Veri erişimini ve değişiklikleri kaydetme
+- **Uyumluluk**: Düzenlemelere uygunluk
 
-## Career Paths içinde Veri Bilim
+## Veri Biliminde Kariyer Yolları
 
-### Roles
-- **Veri Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **Veri Scientist**: Statistical modeling, Makine Öğrenimi, İleri Düzey analytics
-- **ML Engineer**: Production ML Sistemler, model Dağıtım, MLOps
-- **Veri Engineer**: Veri pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder Yönetim
-- **BI Developer**: Dashboard creation, report Geliştirme
-- **Research Scientist**: Novel algorithms, publications, İleri Düzey research
+### Roller
+- **Veri Analisti**: Betimsel analitik, gösterge panoları, raporlama odaklı
+- **Veri Bilimci**: İstatistiksel modelleme, makine öğrenimi, ileri analitik
+- **ML Mühendisi**: Üretim ML sistemleri, model dağıtımı, MLOps
+- **Veri Mühendisi**: Veri hatları, altyapı, ETL süreçleri
+- **Analitik Müdürü**: Ekip liderliği, strateji, paydaş yönetimi
+- **BI Geliştiricisi**: Gösterge paneli oluşturma, rapor geliştirme
+- **Araştırma Bilimcisi**: Yeni algoritmalar, yayınlar, ileri araştırma
 
-### Skills Matrix
-- **Technical**: Python/R, SQL, İstatistikler, ML frameworks, cloud platforms
-- **Analytical**: Problem-solving, critical thinking, experimental design
-- **İletişim**: Storytelling, visualization, presentation skills
-- **İş**: Domain knowledge, stakeholder Yönetim, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control için models
+### Beceri Matrisi
+- **Teknik**: Python/R, SQL, istatistik, ML çerçeveleri, bulut platformları
+- **Analitik**: Problem çözme, eleştirel düşünme, deney tasarımı
+- **İletişim**: Hikâyeleştirme, görselleştirme, sunum becerileri
+- **İş**: Alan bilgisi, paydaş yönetimi, ROI analizi
+- **Araçlar**: Git, Jupyter, Docker, CI/CD, modeller için sürüm kontrolü
 
-## Emerging Trends
+## Yükselen Eğilimler
 
-### Current Developments
-- **AutoML**: Automated Makine Öğrenimi pipeline creation
-- **MLOps**: DevOps practices için Makine Öğrenimi
-- **Feature Stores**: Centralized feature Yönetim
-- **Veri Mesh**: Decentralized Veri Mimari
-- **LLMs ve Generative AI**: Large Dil models, content generation
-- **Edge Analytics**: Processing Veri at source devices
-- **Real-Time Analytics**: Streaming Veri analysis
-- **Augmented Analytics**: AI-assisted Veri preparation ve insights
+### Güncel Gelişmeler
+- **AutoML**: Otomatik makine öğrenimi hattı oluşturma
+- **MLOps**: Makine öğrenimi için DevOps uygulamaları
+- **Feature Store'lar**: Merkezî özellik yönetimi
+- **Veri Ağı**: Merkeziyetsiz veri mimarisi
+- **LLM'ler ve Üretken Yapay Zekâ**: Büyük dil modelleri, içerik üretimi
+- **Uç Analitiği**: Veriyi kaynak cihazlarda işleme
+- **Gerçek Zamanlı Analitik**: Akış verisi analizi
+- **Artırılmış Analitik**: Yapay zekâ destekli veri hazırlama ve içgörüler
 
-### Gelecek Directions
-- **Quantum Makine Öğrenimi**: Quantum Bilişim için ML
-- **Federated Learning**: Training models across decentralized Veri
-- **Causal Inference**: Moving beyond correlation to causation
-- **Responsible AI**: Ethics, explainability, transparency
-- **Veri Fabric**: Integrated Veri Yönetim across environments
+### Gelecek Yönelimleri
+- **Kuantum Makine Öğrenimi**: ML için kuantum hesaplama
+- **Federated Learning**: Modelleri merkeziyetsiz veriler üzerinde eğitme
+- **Nedensel Çıkarım**: Korelasyondan nedenselliğe geçiş
+- **Sorumlu Yapay Zekâ**: Etik, açıklanabilirlik, şeffaflık
+- **Veri Kumaşı**: Ortamlar arasında entegre veri yönetimi
