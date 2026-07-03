@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: git_commands.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Referência Rápida de Comandos Git
 
-# Git Comandos Referência rápida
-
-Essential Git Comandos para version control.
+Comandos essenciais do Git para controle de versão.
 
 ---
 
-## Setup & Configuration
+## Instalação e Configuração
 
 ```bash
 # Configure user info
@@ -28,7 +21,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Repository Initialization
+## Inicialização de Repositório
 
 ```bash
 # Initialize new repository
@@ -44,7 +37,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Basic Workflow
+## Fluxo de Trabalho Básico
 
 ```bash
 # Check status
@@ -71,7 +64,7 @@ git log --graph --oneline --all
 
 ---
 
-## Branching
+## Branches
 
 ```bash
 # List branches
@@ -103,7 +96,7 @@ git rebase main
 
 ---
 
-## Remote Operations
+## Operações Remotas
 
 ```bash
 # View remotes
@@ -132,7 +125,7 @@ git push --tags
 
 ---
 
-## Undoing Changes
+## Desfazendo Alterações
 
 ```bash
 # Unstage file (keep changes)
@@ -205,7 +198,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Viewing & Searching
+## Visualização e Busca
 
 ```bash
 # Show commit details
@@ -228,7 +221,7 @@ git show commit-hash:file.txt
 
 ---
 
-## Avançado Operations
+## Operações Avançadas
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +247,7 @@ git submodule update --init --recursive
 
 ---
 
-## Cleanup
+## Limpeza
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +264,9 @@ git remote prune origin
 
 ---
 
-## Common Workflows
+## Fluxos de Trabalho Comuns
 
-### Start New Feature
+### Iniciar Nova Funcionalidade
 ```bash
 git checkout main
 git pull
@@ -285,7 +278,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Sync com Main
+### Sincronizar com a Main
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +287,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Hotfix Workflow
+### Fluxo de Hotfix
 ```bash
 git checkout main
 git pull
@@ -310,7 +303,7 @@ git push --tags
 
 ---
 
-## .gitignore Patterns
+## Padrões de .gitignore
 
 ```gitignore
 # Ignore specific file
@@ -332,37 +325,37 @@ __pycache__/
 
 ---
 
-## Keyboard Shortcuts (Git Bash)
+## Atalhos de Teclado (Git Bash)
 
-| Shortcut | Action |
+| Atalho | Ação |
 |----------|--------|
-| `Ctrl+R` | Reverse search História |
-| `Tab` | Auto-Completo |
-| `Ctrl+C` | Cancel command |
-| `Ctrl+Z` | Suspend process |
-| `fg` | Resume suspended process |
+| `Ctrl+R` | Pesquisar histórico para trás |
+| `Tab` | Autocompletar |
+| `Ctrl+C` | Cancelar comando |
+| `Ctrl+Z` | Suspender processo |
+| `fg` | Retomar processo suspenso |
 
 ---
 
-## Melhores práticas
+## Boas Práticas
 
-✅ **Do:**
-- Write clear, descriptive commit messages
-- Commit frequently com logical groupings
-- Use branches para features/fixes
-- Pull before starting work
-- Review `git status` often
+✅ **Faça:**
+- Escreva mensagens de commit claras e descritivas
+- Faça commits frequentes com agrupamentos lógicos
+- Use branches para funcionalidades/correções
+- Faça pull antes de começar a trabalhar
+- Revise `git status` com frequência
 
-❌ **Don't:**
-- Commit sensitive Dados (API keys, passwords)
-- Force push to shared branches
-- Commit large binary files
-- Ignore merge conflicts
-- Work directly on main/master
+❌ **Não faça:**
+- Faça commit de dados sensíveis (chaves de API, senhas)
+- Use force push em branches compartilhadas
+- Faça commit de arquivos binários grandes
+- Ignore conflitos de merge
+- Trabalhe diretamente em main/master
 
 ---
 
-## Commit Message Convention
+## Convenção de Mensagens de Commit
 
 ```
 type(scope): subject
@@ -372,16 +365,16 @@ body (optional)
 footer (optional)
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code restructuring
-- `test`: Tests
-- `chore`: Maintenance
+**Tipos:**
+- `feat`: Nova funcionalidade
+- `fix`: Correção de bug
+- `docs`: Documentação
+- `style`: Formatação
+- `refactor`: Reestruturação de código
+- `test`: Testes
+- `chore`: Manutenção
 
-**Example:**
+**Exemplo:**
 ```
 feat(auth): add password reset functionality
 
@@ -393,4 +386,4 @@ Closes #123
 
 ---
 
-*Última atualização: June 2025 | Git 2.x*
+*Última atualização: junho de 2025 | Git 2.x*

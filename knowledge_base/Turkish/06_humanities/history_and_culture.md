@@ -1,71 +1,63 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: history_and_culture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Tarih ve Kültür
 
-## Ancient Civilizations
+## Antik Uygarlıklar
 
-Mesopotamia, located between bu Tigris ve Euphrates rivers içinde modern-day Iraq, is considered one içinde bu earliest cradles içinde civilization. bu Sumerians developed one içinde bu first writing Sistemler, called cuneiform, around 3400 BCE. Ancient Egypt developed along bu Nile River ve is famous için its pyramids, pharaohs, ve hieroglyphic writing. bu Great Pyramid içinde Giza was built around 2560 BCE ve is one içinde bu Seven Wonders içinde bu Ancient World.
+Günümüz Irak'ında Dicle ve Fırat nehirleri arasında yer alan Mezopotamya, uygarlığın en eski beşiklerinden biri olarak kabul edilir. Sümerler, MÖ 3400 civarında çivi yazısı adı verilen ilk yazı sistemlerinden birini geliştirdi. Antik Mısır, Nil Nehri boyunca gelişti ve piramitleri, firavunları ve hiyeroglif yazısıyla ünlüdür. Büyük Gize Piramidi MÖ 2560 civarında inşa edildi ve Antik Dünyanın Yedi Harikası'ndan biridir.
 
-Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, ve art. Greek thinkers including Socrates, Plato, ve Aristotle established frameworks içinde logic ve ethics still studied today. Ancient Rome grew from a city-state to a republic ve then an empire stretching across Europe, North Africa, ve Western Asia. Rome contributed to Hukuk, Mimari, engineering (roads, aqueducts), ve governance.
+Antik Yunanistan (kabaca MÖ 800-146), felsefe, demokrasi, matematik ve sanata temel katkılar yaptı. Sokrates, Platon ve Aristoteles'in de aralarında bulunduğu Yunan düşünürler, bugün hâlâ incelenen mantık ve etik çerçevelerini kurdu. Antik Roma, bir şehir devletinden Avrupa, Kuzey Afrika ve Batı Asya'ya uzanan bir cumhuriyet ve ardından imparatorluğa dönüştü. Roma; hukuk, mimarlık, mühendislik (yollar, su kemerleri) ve yönetime katkı sağladı.
 
-## Major World Religions
+## Başlıca Dünya Dinleri
 
-Christianity is bu world's largest religion ile approximately 2.4 billion followers. It is based on bu life ve teachings içinde Jesus Christ ve centers on bu Bible. Islam is bu world's second-largest religion ile approximately 1.9 billion followers. It was founded by bu Prophet Muhammad içinde bu 7th century CE ve is centered on bu Quran. Hinduism is bu world's third-largest religion ile approximately 1.2 billion followers, primarily içinde India. Buddhism was founded by Siddhartha Gautama içinde bu 5th century BCE ve focuses on achieving enlightenment. Judaism is one içinde bu oldest monotheistic religions, ile approximately 15 million followers worldwide.
+Hristiyanlık, yaklaşık 2,4 milyar takipçisiyle dünyanın en büyük dinidir. İsa Mesih'in yaşamı ve öğretilerine dayanır ve merkezinde İncil bulunur. İslam, yaklaşık 1,9 milyar takipçisiyle dünyanın ikinci büyük dinidir. MS 7. yüzyılda Hz. Muhammed tarafından kurulmuş olup merkezinde Kur'an yer alır. Hinduizm, esas olarak Hindistan'da görülen yaklaşık 1,2 milyar takipçisiyle dünyanın üçüncü büyük dinidir. Budizm, MÖ 5. yüzyılda Siddhartha Gautama tarafından kurulmuş olup aydınlanmaya ulaşmaya odaklanır. Yahudilik, dünya genelinde yaklaşık 15 milyon takipçisiyle en eski tek tanrılı dinlerden biridir.
 
-## bu Middle Ages
+## Orta Çağ
 
-bu Middle Ages (approximately 500–1500 CE) içinde Europe followed bu fall içinde bu Western Roman Empire. This period saw bu rise içinde feudalism, bu Catholic Church as a dominant political ve cultural force, bu Crusades (military campaigns to bu Holy Land), ve eventually bu Renaissance. bu Black Death (bubonic plague) killed approximately one-third içinde Europe's population içinde bu 14th century. bu Islamic Golden Age (8th–14th centuries) saw major advances içinde Bilim, mathematics, ve philosophy içinde bu Islamic world.
+Avrupa'da Orta Çağ (yaklaşık MS 500-1500), Batı Roma İmparatorluğu'nun çöküşünü izledi. Bu dönem; feodalizmin yükselişine, Katolik Kilisesi'nin baskın bir siyasi ve kültürel güç hâline gelmesine, Haçlı Seferleri'ne (Kutsal Topraklar'a yönelik askerî seferler) ve nihayetinde Rönesans'a tanıklık etti. Kara Ölüm (veba), 14. yüzyılda Avrupa nüfusunun yaklaşık üçte birini öldürdü. İslam'ın Altın Çağı (8.-14. yüzyıllar), İslam dünyasında bilim, matematik ve felsefede büyük ilerlemeler gördü.
 
-## bu Renaissance ve Enlightenment
+## Rönesans ve Aydınlanma
 
-bu Renaissance (14th–17th centuries) was a cultural ve intellectual movement that began içinde Italy ve spread across Europe, characterized by renewed interest içinde classical art, philosophy, ve Bilim. Key figures include Leonardo da Vinci, Michelangelo, ve Galileo Galilei. bu Scientific Revolution (16th–17th centuries) transformed understanding içinde Doğa ve Bilim, ile contributions from Copernicus, Galileo, ve Newton. bu Enlightenment (17th–18th centuries) emphasized reason, individual rights, ve skepticism içinde tradition, influencing modern democracy ve human rights.
+Rönesans (14.-17. yüzyıllar), İtalya'da başlayıp Avrupa'ya yayılan; klasik sanat, felsefe ve bilime yeniden ilgiyle karakterize edilen kültürel ve entelektüel bir hareketti. Başlıca isimler arasında Leonardo da Vinci, Michelangelo ve Galileo Galilei bulunur. Bilim Devrimi (16.-17. yüzyıllar), Copernicus, Galileo ve Newton'un katkılarıyla doğa ve bilim anlayışını dönüştürdü. Aydınlanma (17.-18. yüzyıllar), aklı, bireysel hakları ve geleneğe kuşkuyla yaklaşmayı öne çıkararak modern demokrasi ve insan haklarını etkiledi.
 
-## Exploration ve Colonization
+## Keşif ve Sömürgeleştirme
 
-bu Age içinde Exploration (15th–17th centuries) saw European explorers map bu world. Christopher Columbus reached bu Americas içinde 1492. Vasco da Gama reached India by sea içinde 1498. Ferdinand Magellan's expedition completed bu first circumnavigation içinde bu globe içinde 1522. European colonization içinde bu Americas, Africa, ve Asia had profound ve often devastating effects on indigenous populations through violence, disease, ve exploitation.
+Keşif Çağı (15.-17. yüzyıllar), Avrupalı kâşiflerin dünyayı haritalandırdığı dönemdi. Kristof Kolomb 1492'de Amerika'ya ulaştı. Vasco da Gama 1498'de deniz yoluyla Hindistan'a ulaştı. Ferdinand Magellan'ın seferi 1522'de dünyanın ilk çevresini dolaşmayı tamamladı. Avrupa'nın Amerika, Afrika ve Asya'yı sömürgeleştirmesi, yerli halklar üzerinde şiddet, hastalık ve sömürü yoluyla derin ve çoğu zaman yıkıcı etkiler yarattı.
 
-## bu Industrial Revolution
+## Sanayi Devrimi
 
-bu Industrial Revolution began içinde Britain içinde bu late 18th century ve transformed manufacturing, Tarım, ve transportation. Steam power, textile machinery, ve iron production drove rapid economic change. bu revolution spread across Europe ve North America içinde bu 19th century. It led to urbanization, new social classes, ve significant Çevresel changes. It also produced dangerous working conditions that eventually spurred labor movements ve social reform.
+Sanayi Devrimi, 18. yüzyılın sonlarında Britanya'da başladı ve üretimi, tarımı ve ulaşımı dönüştürdü. Buhar gücü, tekstil makineleri ve demir üretimi hızlı ekonomik değişimi tetikledi. Devrim 19. yüzyılda Avrupa ve Kuzey Amerika'ya yayıldı. Kentleşmeye, yeni toplumsal sınıflara ve önemli çevresel değişimlere yol açtı. Ayrıca tehlikeli çalışma koşulları yaratarak zamanla işçi hareketlerini ve sosyal reformları teşvik etti.
 
-## World Wars
+## Dünya Savaşları
 
-World War I (1914–1918) began following bu assassination içinde Archduke Franz Ferdinand içinde Austria-Hungary ve involved much içinde Europe. New military technologies such as machine guns, poison gas, ve tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was bu deadliest conflict içinde human Tarih, ile approximately 70–85 million deaths. It was fought between bu Allies (including bu United States, Soviet Union, ve United Kingdom) ve bu Axis powers (Germany, Japan, ve Italy). bu war ended ile bu defeat içinde Nazi Germany ve bu atomic bombings içinde Hiroshima ve Nagasaki içinde Japan.
+I. Dünya Savaşı (1914-1918), Avusturya-Macaristan Veliahtı Franz Ferdinand'ın öldürülmesinin ardından başladı ve Avrupa'nın büyük bölümünü içine aldı. Makineli tüfekler, zehirli gaz ve tanklar gibi yeni askerî teknolojiler büyük kayıplara yol açtı. Yaklaşık 17 milyon insan öldü. II. Dünya Savaşı (1939-1945), yaklaşık 70-85 milyon ölümle insanlık tarihinin en ölümcül çatışmasıydı. Müttefikler (ABD, Sovyetler Birliği ve Birleşik Krallık dâhil) ile Mihver devletleri (Almanya, Japonya ve İtalya) arasında yaşandı. Savaş, Nazi Almanyası'nın yenilgisi ve Japonya'da Hiroshima ile Nagasaki'ye atom bombası atılmasıyla sona erdi.
 
-## bu Cold War
+## Soğuk Savaş
 
-bu Cold War (1947–1991) was a period içinde geopolitical tension between bu United States ve bu Soviet Union ve their respective allies. It was characterized by an arms race, proxy wars, ve ideological competition between capitalism ve communism. Key Olaylar include bu Berlin Wall (built 1961, fell 1989), bu Korean War, bu Vietnam War, ve bu Cuban Missile Crisis içinde 1962. bu Cold War ended ile bu dissolution içinde bu Soviet Union içinde 1991.
+Soğuk Savaş (1947-1991), United States ile Soviet Union ve bunların müttefikleri arasındaki jeopolitik gerilim dönemiydi. Bir silahlanma yarışı, vekâlet savaşları ve kapitalizm ile komünizm arasındaki ideolojik rekabetle karakterize edildi. Başlıca olaylar arasında Berlin Duvarı (1961'de inşa edildi, 1989'da yıkıldı), Kore Savaşı, Vietnam Savaşı ve 1962 Küba Füze Krizi bulunur. Soğuk Savaş, 1991'de Soviet Union'ın dağılmasıyla sona erdi.
 
-## Decolonization ve Independence Movements
+## Sömürgeden Kurtuluş ve Bağımsızlık Hareketleri
 
-After World War II, many countries içinde Africa ve Asia gained independence from European colonial powers. India gained independence from Britain içinde 1947. Most African nations became independent içinde bu 1950s ve 1960s. bu United Nations was founded içinde 1945 to promote international cooperation, peace, ve human rights.
+II. Dünya Savaşı'ndan sonra Afrika ve Asya'daki birçok ülke Avrupa sömürge güçlerinden bağımsızlığını kazandı. Hindistan 1947'de Britanya'dan bağımsızlığını aldı. Afrika ülkelerinin çoğu 1950'lerde ve 1960'larda bağımsız oldu. Birleşmiş Milletler, uluslararası iş birliğini, barışı ve insan haklarını teşvik etmek için 1945'te kuruldu.
 
-## bu Space Race ve Teknoloji Age
+## Uzay Yarışı ve Teknoloji Çağı
 
-bu Space Race (1957–1969) was a competition between bu United States ve Soviet Union to achieve superiority içinde space exploration. bu Soviet Union launched Sputnik 1, bu first artificial satellite, içinde 1957. Yuri Gagarin became bu first human içinde space içinde 1961. bu United States landed astronauts on bu Moon during bu Apollo 11 mission on July 20, 1969, ile Neil Armstrong becoming bu first person to walk on bu lunar surface. bu Space Race drove enormous advances içinde rocket Teknoloji, Bilişim, ve telecommunications.
+Uzay Yarışı (1957-1969), United States ile Soviet Union arasında uzay keşfinde üstünlük sağlama rekabetiydi. Soviet Union, ilk yapay uydu olan Sputnik 1'i 1957'de fırlattı. Yuri Gagarin 1961'de uzaya çıkan ilk insan oldu. United States, 20 Temmuz 1969'da Apollo 11 görevi sırasında astronotlarını Ay'a indirdi ve Neil Armstrong Ay yüzeyinde yürüyen ilk kişi oldu. Uzay Yarışı, roket teknolojisi, bilgisayar ve telekomünikasyonda çok büyük ilerlemeleri tetikledi.
 
-## bu Information Age
+## Bilgi Çağı
 
-bu late 20th ve early 21st centuries are characterised by bu Information Age, driven by bu Geliştirme içinde digital computers, bu internet, ve mobile Teknoloji. bu World Wide Web was invented by Tim Berners-Lee içinde 1989 ve made publicly Mevcut içinde 1991, fundamentally transforming İletişim, commerce, education, ve Kültür. bu rise içinde personal computers içinde bu 1980s, led by Apple ve IBM, brought Bilişim into homes. bu smartphone era, ushered içinde by Apple's iPhone içinde 2007, placed internet-connected computers içinde billions içinde pockets worldwide.
+20. yüzyılın sonları ve 21. yüzyılın başları, dijital bilgisayarların, internetin ve mobil teknolojinin gelişimiyle yönlenen Bilgi Çağı ile tanımlanır. World Wide Web, Tim Berners-Lee tarafından 1989'da icat edildi ve 1991'de kamuya açıldı; iletişimi, ticareti, eğitimi ve kültürü kökten dönüştürdü. 1980'lerde Apple ve IBM öncülüğünde kişisel bilgisayarların yükselişi, bilişimi evlere taşıdı. Apple'ın 2007'de piyasaya sürdüğü iPhone ile başlayan akıllı telefon dönemi, internet bağlantılı bilgisayarları dünya çapında milyarlarca insanın cebine koydu.
 
-## bu 21st Century
+## 21. Yüzyıl
 
-bu early 21st century has been shaped by globalisation, terrorism, climate change, ve technological disruption. bu September 11, 2001 attacks içinde bu United States led to bu War on Terror ve conflicts içinde Afghanistan ve Iraq. bu 2008 global financial crisis was bu worst economic downturn since bu Great Depression. bu Arab Spring (2010–2012) saw mass protests ve uprisings across bu Middle East ve North Africa. bu COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide ve triggered unprecedented social ve economic disruption. bu 2020s have seen rising geopolitical tensions, including Russia's invasion içinde Ukraine içinde 2022 ve increased US-China competition over Teknoloji ve Taiwan.
+21. yüzyılın ilk dönemi; küreselleşme, terörizm, iklim değişikliği ve teknolojik kırılma tarafından şekillendirildi. United States'teki 11 Eylül 2001 saldırıları, Teröre Karşı Savaş'a ve Afganistan ile Irak'taki çatışmalara yol açtı. 2008 küresel finans krizi, Büyük Buhran'dan bu yana en kötü ekonomik daralmaydı. Arap Baharı (2010-2012), Orta Doğu ve Kuzey Afrika genelinde kitlesel protestolar ve ayaklanmalar gördü. COVID-19 pandemisi (2019-2022), dünya çapında 6 milyondan fazla doğrulanmış ölüme yol açtı ve benzeri görülmemiş toplumsal ve ekonomik kesintiler yarattı. 2020'lerde, Rusya'nın 2022'de Ukrayna'yı işgali ve teknoloji ile Taiwan üzerindeki artan US-China rekabeti dâhil yükselen jeopolitik gerilimler yaşandı.
 
-## Art ve Kültür Through Tarih
+## Tarih Boyunca Sanat ve Kültür
 
-Human cultural expression spans tens içinde thousands içinde years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some içinde bu earliest known art. bu Renaissance produced masterpieces such as bu Mona Lisa (Leonardo da Vinci) ve bu Sistine Chapel ceiling (Michelangelo). bu Romantic era (late 18th–19th century) valued emotion ve Doğa, producing works by Beethoven, Keats, ve Delacroix. Modernism (early 20th century) broke ile tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), ve jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives ve embraced plurality, influencing Mimari, Edebiyat, ve visual art.
+İnsanlığın kültürel ifadesi on binlerce yıla yayılır. Fransa'nın Lascaux kentindeki mağara resimleri (yaklaşık 17.000 yıllık), bilinen en eski sanat örneklerinden bazılarını temsil eder. Rönesans, Mona Lisa (Leonardo da Vinci) ve Sistine Chapel tavanı (Michelangelo) gibi başyapıtlar üretti. Romantik dönem (18. yüzyıl sonu-19. yüzyıl), duyguyu ve doğayı öne çıkararak Beethoven, Keats ve Delacroix'nın eserlerini doğurdu. Modernizm (20. yüzyıl başı), geleneği kırarak kübizmi (Picasso), soyut sanatı (Kandinsky) ve caz müziğini ortaya çıkardı. Postmodernizm (20. yüzyıl ortası-sonları), büyük anlatıları sorguladı ve çoğulluğu benimsedi; mimarlığı, edebiyatı ve görsel sanatı etkiledi.
 
-## Philosophy ve Intellectual Tarih
+## Felsefe ve Entelektüel Tarih
 
-Western philosophy began ile bu pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, ve Aristotle defined bu classical tradition. During bu Enlightenment, thinkers like Descartes, Locke, Hume, ve Kant reshaped epistemology (theory içinde knowledge) ve ethics. bu 19th century saw Marx's Eleştiri içinde capitalism, Nietzsche's challenge to morality, ve bu birth içinde sociology. bu 20th century brought analytic philosophy (Russell, Wittgenstein) ve continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, ve Vedic philosophy have shaped billions içinde lives across Asia için millennia.
+Batı felsefesi, MÖ 600 civarında Sokrates öncesi düşünürlerle (Thales, Heraclitus, Parmenides) başladı. Sokrates, Platon ve Aristoteles klasik geleneği tanımladı. Aydınlanma döneminde Descartes, Locke, Hume ve Kant gibi düşünürler epistemolojiyi (bilgi kuramı) ve etiği yeniden şekillendirdi. 19. yüzyıl, Marx'ın kapitalizm eleştirisini, Nietzsche'nin ahlaka meydan okumasını ve sosyolojinin doğuşunu gördü. 20. yüzyıl; analitik felsefeyi (Russell, Wittgenstein) ve kıta felsefesini (Heidegger, Sartre, Beauvoir) getirdi. Konfüçyüsçülük, Taoizm, Budizm ve Vedik felsefe dâhil Doğu felsefe gelenekleri, binlerce yıl boyunca Asya genelinde milyarlarca yaşamı şekillendirdi.
 
-## Music Through Tarih
+## Tarih Boyunca Müzik
 
-Music has existed içinde human cultures since prehistory. Ancient Greeks used music içinde drama ve ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). bu Baroque period (1600–1750) gave rise to opera ve instrumental music; composers include Bach, Handel, ve Vivaldi. bu Classical period (1750–1820) featured Mozart, Haydn, ve bu early Beethoven, emphasising clarity ve form. bu Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, ve Wagner. bu 20th century saw bu emergence içinde jazz, blues, rock ve roll, hip-hop, electronic music, ve countless global fusion genres, democratised further by recording Teknoloji ve streaming.
-
+Müzik, tarih öncesinden beri insan kültürlerinde vardır. Antik Yunanlar müziği drama ve ritüelde kullandı. Orta Çağ Avrupası, çok sesli kutsal müziği geliştirdi (Gregorian chant, organum). Barok dönem (1600-1750), opera ve çalgısal müziğin yükselişini getirdi; besteciler arasında Bach, Handel ve Vivaldi bulunur. Klasik dönem (1750-1820), Mozart, Haydn ve erken dönem Beethoven ile açıklığı ve biçimi vurguladı. Romantik dönem (1820-1900), Brahms, Chopin ve Wagner aracılığıyla duygusal ifadeyi öne çıkardı. 20. yüzyıl; caz, blues, rock and roll, hip-hop, elektronik müzik ve sayısız küresel füzyon türünün ortaya çıkışına tanıklık etti; kayıt teknolojisi ve streaming bunu daha da demokratikleştirdi.

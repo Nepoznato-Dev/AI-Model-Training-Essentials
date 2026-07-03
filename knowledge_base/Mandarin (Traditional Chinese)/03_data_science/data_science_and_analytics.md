@@ -1,341 +1,334 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: data_science_and_analytics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 資料科學與分析
 
-# 資料 科學 和 Analytics
+## 核心概念
 
-## Core Concepts
+### 什麼是資料科學？
+資料科學是一個跨領域的學科，運用科學方法、流程、演算法和系統從結構化及非結構化資料中擷取知識和見解。它結合了：
+- **統計學**：分析的數學基礎
+- **電腦科學**：程式設計、演算法、資料結構
+- **領域專業知識**：專業領域的知識
+- **資料視覺化**：有效傳達研究結果
 
-### What is 資料 科學?
-資料 科學 is an interdisciplinary field that uses scientific methods, processes, algorithms, 和 系統 to extract knowledge 和 insights from structured 和 unstructured 資料. It combines:
-- **統計**: Mathematical foundation 為 analysis
-- **Computer 科學**: Programming, algorithms, 資料 structures
-- **Domain Expertise**: Subject matter knowledge
-- **資料 Visualization**: Communicating findings effectively
+### 資料類型
+- **結構化資料**：以列/欄組織（資料庫、試算表）
+- **非結構化資料**：無預定格式（文字、影像、音訊、影片）
+- **半結構化資料**：有部分組織但不嚴格（JSON、XML、HTML）
+- **時間序列資料**：依時間順序索引的連續資料點
+- **空間資料**：基於地理/位置的資訊
+- **圖形資料**：表示關係的節點和邊
 
-### 資料 Types
-- **Structured 資料**: Organized 在 rows/columns (databases, spreadsheets)
-- **Unstructured 資料**: No predefined format (text, images, audio, video)
-- **Semi-structured 資料**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series 資料**: Sequential 資料 points indexed 在 time order
-- **Spatial 資料**: Geographic/location-based information
-- **Graph 資料**: Nodes 和 edges representing relationships
+### 資料科學流程（CRISP-DM）
+1. **商業理解**：定義目標和需求
+2. **資料理解**：蒐集並探索初始資料
+3. **資料準備**：清理、轉換和格式化資料（佔80%的工作量）
+4. **建模**：選擇並應用建模技術
+5. **評估**：根據目標評估模型效能
+6. **部署**：在生產環境中實作模型
 
-### 這 資料 科學 Process (CRISP-DM)
-1. **商業 Understanding**: Define objectives 和 requirements
-2. **資料 Understanding**: Collect 和 explore initial 資料
-3. **資料 Preparation**: Clean, transform, 和 format 資料 (80% 的 work)
-4. **Modeling**: Select 和 apply modeling techniques
-5. **Evaluation**: Assess model 效能 against objectives
-6. **部署**: Implement model 在 production environment
+## 統計學基礎
 
-## 統計 基礎
+### 描述統計
+- **集中趨勢測量**：平均數、中位數、眾數
+- **離散程度測量**：範圍、變異數、標準差、四分位距
+- **分佈形狀**：偏態（不對稱性）、峰態（尾部厚度）
+- **百分位數與四分位數**：在分佈中的位置
 
-### Descriptive 統計
-- **Measures 的 Central Tendency**: Mean, median, mode
-- **Measures 的 Dispersion**: Range, variance, standard deviation, interquartile range
-- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles 和 Quartiles**: Position within distribution
+### 推論統計
+- **假設檢定**：虛無假設、對立假設、p值
+- **信賴區間**：可能包含母體參數的數值範圍
+- **統計顯著性**：結果偶然發生的可能性
+- **型一錯誤**：偽陽性（拒絕真實的虛無假設）
+- **型二錯誤**：偽陰性（未能拒絕錯誤的虛無假設）
+- **檢定力**：正確拒絕錯誤虛無假設的機率
 
-### Inferential 統計
-- **Hypothesis 測試**: Null hypothesis, alternative hypothesis, p-values
-- **Confidence Intervals**: Range 的 values likely containing population parameter
-- **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejecting true null hypothesis)
-- **Type II Error**: False negative (failing to reject false null hypothesis)
-- **Power**: Probability 的 correctly rejecting false null hypothesis
+### 機率分佈
+- **常態分佈**：鐘形曲線，平均數 = 中位數 = 眾數
+- **二項分佈**：成功/失敗結果
+- **卜瓦松分佈**：固定區間內的事件計數
+- **均勻分佈**：所有結果發生機率相等
+- **指數分佈**：事件之間的時間
+- **t分佈**：小樣本規模，未知母體變異數
+- **卡方分佈**：類別資料分析
 
-### Probability Distributions
-- **Normal Distribution**: Bell curve, mean = median = mode
-- **Binomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count 的 事件 在 fixed interval
-- **Uniform Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between 事件
-- **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical 資料 analysis
+### 統計檢定
+- **t檢定**：比較兩組間的平均數
+- **ANOVA**：比較多組間的平均數
+- **卡方檢定**：檢定類別變數的獨立性
+- **Mann-Whitney U檢定**：t檢定的無母數替代方案
+- **皮爾森相關**：連續變數間的線性關係
+- **斯皮爾曼相關**：單調關係（基於排名）
+- **Kolmogorov-Smirnov檢定**：比較分佈
 
-### Statistical Tests
-- **t-test**: Compare means between two groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Test**: Test independence 的 categorical variables
-- **Mann-Whitney U**: Non-parametric alternative to t-test
-- **Pearson Correlation**: Linear relationship between continuous variables
-- **Spearman Correlation**: Monotonic relationship (rank-based)
-- **Kolmogorov-Smirnov**: Compare distributions
+## 資料蒐集與儲存
 
-## 資料 Collection 和 Storage
+### 資料來源
+- **資料庫**：SQL、NoSQL、關聯式、文件儲存
+- **APIs**：REST、GraphQL、網路爬取
+- **檔案**：CSV、JSON、XML、Parquet、Avro
+- **串流資料**：Kafka、Kinesis、即時資料流
+- **調查與實驗**：初級資料蒐集
+- **公開資料集**：政府資料、Kaggle、學術儲存庫
 
-### 資料 Sources
-- **Databases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, 網路 scraping
-- **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streaming 資料**: Kafka, Kinesis, real-time feeds
-- **Surveys 和 Experiments**: Primary 資料 collection
-- **Public Datasets**: Government 資料, Kaggle, academic repositories
+### 資料倉儲
+- **ETL**：擷取、轉換、載入流程
+- **資料湖**：以原生格式儲存原始資料
+- **資料倉儲**：結構化、已處理的資料供分析使用
+- **資料超市**：倉儲的子集供特定部門使用
+- **OLAP**：線上分析處理，多維度查詢
+- **星型架構**：事實表周圍環繞維度表
+- **雪花架構**：正規化的維度表
 
-### 資料 Warehousing
-- **ETL**: Extract, Transform, Load process
-- **資料 Lake**: Raw 資料 storage 在 native format
-- **資料 Warehouse**: Structured, processed 資料 為 analysis
-- **資料 Mart**: Subset 的 warehouse 為 specific department
-- **OLAP**: Online Analytical Processing, multidimensional queries
-- **Star Schema**: Fact tables surrounded by dimension tables
-- **Snowflake Schema**: Normalized dimension tables
+### 資料庫類型
+- **關聯式（SQL）**：MySQL、PostgreSQL、Oracle、SQL Server
+- **文件型**：MongoDB、CouchDB（類似JSON的文件）
+- **鍵值型**：Redis、DynamoDB（簡單的鍵值對）
+- **欄族型**：Cassandra、HBase（針對欄優化）
+- **圖形型**：Neo4j、Amazon Neptune（節點和關係）
+- **時間序列型**：InfluxDB、TimescaleDB（帶時間戳記的資料）
+- **向量型**：Pinecone、Milvus（ML的嵌入儲存）
 
-### 資料庫 Types
-- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
-- **Document**: MongoDB, CouchDB (JSON-like documents)
-- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassandra, HBase (optimized 為 columns)
-- **Graph**: Neo4j, Amazon Neptune (nodes 和 relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped 資料)
-- **Vector**: Pinecone, Milvus (embedding storage 為 ML)
+## 資料預處理
 
-## 資料 Preprocessing
+### 資料清理
+- **遺失值**：填補（平均數、中位數、眾數、預測）、刪除
+- **離群值**：偵測（IQR、Z分數）、處理（限制、轉換）
+- **重複值**：識別和移除
+- **不一致性**：標準化格式、修正錯字
+- **資料驗證**：檢查限制條件、範圍、類型
 
-### 資料 Cleaning
-- **Missing Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
-- **Duplicates**: Identification 和 removal
-- **Inconsistencies**: Standardizing formats, fixing typos
-- **資料 Validation**: Checking constraints, ranges, types
+### 資料轉換
+- **正規化**：縮放至0-1範圍
+- **標準化**：Z分數正規化（平均數=0，標準差=1）
+- **編碼**：獨熱編碼、標籤編碼、順序編碼、目標編碼
+- **分箱**：將連續值分組為類別
+- **對數轉換**：減少偏態
+- **特徵縮放**：使特徵具可比性
 
-### 資料 Transformation
-- **Normalization**: Scaling to 0-1 range
-- **Standardization**: Z-score normalization (mean=0, std=1)
-- **Encoding**: One-hot, label, ordinal, target encoding
-- **Binning**: Grouping continuous values into categories
-- **Log Transformation**: Reducing skewness
-- **Feature Scaling**: Making features comparable
+### 特徵工程
+- **特徵創建**：從現有特徵衍生新特徵
+- **特徵選擇**：選擇最相關的特徵
+  - 過濾方法（相關性、卡方）
+  - 包裝方法（遞迴特徵消除）
+  - 嵌入方法（LASSO、基於樹的重要性）
+- **降維**：PCA、t-SNE、UMAP
+- **交互項**：特徵的乘積組合
+- **多項式特徵**：創建高階項
 
-### Feature Engineering
-- **Feature Creation**: Deriving new features from existing ones
-- **Feature Selection**: Choosing most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimination)
-  - Embedded methods (LASSO, tree-based importance)
-- **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combining features multiplicatively
-- **Polynomial Features**: Creating higher-order terms
+## 探索性資料分析（EDA）
 
-## Exploratory 資料 Analysis (EDA)
+### EDA技術
+- **摘要統計**：描述集中趨勢、分散和形狀
+- **單變量分析**：單一變數的分佈
+- **雙變量分析**：兩個變數間的關係
+- **多變量分析**：多個變數的互動
+- **相關分析**：識別關係和多重共線性
+- **分群**：群組相似的觀測值
 
-### EDA Techniques
-- **Summary 統計**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Single variable distributions
-- **Bivariate Analysis**: Relationships between two variables
-- **Multivariate Analysis**: Multiple variable interactions
-- **Correlation Analysis**: Identify relationships 和 multicollinearity
-- **Segmentation**: Group similar observations
+### 視覺化工具
+- **直方圖**：單一變數的分佈
+- **盒鬚圖**：五數摘要、離群值偵測
+- **散佈圖**：兩個連續變數間的關係
+- **熱圖**：相關矩陣、密度
+- **長條圖**：類別比較
+- **折線圖**：隨時間的趨勢
+- **小提琴圖**：分佈密度與盒鬚圖元素
+- **成對圖**：變數對的多個散佈圖
 
-### Visualization Tools
-- **Histograms**: Distribution 的 single variable
-- **Box Plots**: Five-number summary, outlier detection
-- **Scatter Plots**: Relationship between two continuous variables
-- **Heatmaps**: Correlation matrices, density
-- **Bar Charts**: Categorical comparisons
-- **Line Charts**: Trends over time
-- **Violin Plots**: Distribution density 與 box plot elements
-- **Pair Plots**: Multiple scatter plots 為 variable pairs
+### Python函式庫用於EDA
+- **pandas**：資料操作和分析
+- **numpy**：數值計算
+- **matplotlib**：基本繪圖
+- **seaborn**：統計視覺化
+- **plotly**：互動式視覺化
+- **scipy**：科學計算和統計
 
-### Python Libraries 為 EDA
-- **pandas**: 資料 manipulation 和 analysis
-- **numpy**: Numerical 計算
-- **matplotlib**: Basic plotting
-- **seaborn**: Statistical visualization
-- **plotly**: Interactive visualizations
-- **scipy**: Scientific 計算 和 統計
+## 資料科學中的機器學習
 
-## 機器學習 在 資料 科學
-
-### Supervised Learning
-- **Regression**: Predict continuous values
-  - Linear Regression
-  - Polynomial Regression
+### 監督式學習
+- **迴歸**：預測連續值
+  - 線性迴歸
+  - 多項式迴歸
   - Ridge/LASSO/Elastic Net
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - 決策樹迴歸
+  - 隨機森林迴歸
+  - 梯度提升（XGBoost、LightGBM、CatBoost）
   
-- **Classification**: Predict categorical labels
-  - Logistic Regression
-  - k-Nearest Neighbors
-  - Naive Bayes
-  - 支援 Vector Machines
-  - Decision Trees
-  - Random Forest
-  - Gradient Boosting
-  - 神經網絡
+- **分類**：預測類別標籤
+  - 邏輯迴歸
+  - k-最近鄰演算法
+  - 樸素貝氏
+  - 支援向量機
+  - 決策樹
+  - 隨機森林
+  - 梯度提升
+  - 神經網路
 
-### Unsupervised Learning
-- **Clustering**: Group similar observations
+### 非監督式學習
+- **聚類**：群組相似的觀測值
   - k-Means
-  - Hierarchical Clustering
-  - DBSCAN (density-based)
-  - Gaussian Mixture Models
-  - Spectral Clustering
+  - 階層式聚類
+  - DBSCAN（基於密度）
+  - 高斯混合模型
+  - 譜聚類
   
-- **Dimensionality Reduction**: Reduce feature count
-  - Principal Component Analysis (PCA)
-  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
-  - Uniform Manifold Approximation (UMAP)
-  - Autoencoders
+- **降維**：減少特徵數量
+  - 主成分分析（PCA）
+  - t分佈隨機鄰域嵌入（t-SNE）
+  - 均勻流形逼近（UMAP）
+  - 自動編碼器
   
-- **Association Rules**: Find co-occurring items
-  - Apriori Algorithm
+- **關聯規則**：尋找共同出現的項目
+  - Apriori演算法
   - FP-Growth
 
-### Model Evaluation
-- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradeoff
+### 模型評估
+- **分類指標**：準確率、精確率、召回率、F1分數、ROC-AUC、混淆矩陣
+- **迴歸指標**：MAE、MSE、RMSE、R²、調整後R²
+- **交叉驗證**：k折、分層、留一法、時間序列分割
+- **超參數調整**：網格搜尋、隨機搜尋、貝氏優化
+- **學習曲線**：診斷偏差-變異權衡
 
-## Big 資料 Technologies
+## 大數據技術
 
-### Distributed 計算 Frameworks
-- **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: 在-memory processing, faster than Hadoop
-  - Spark SQL: Structured 資料 processing
-  - Spark Streaming: Real-time 資料
-  - MLlib: 機器學習 library
-  - GraphX: Graph processing
-- **Apache Flink**: Stream processing 與 low latency
-- **Apache Beam**: Unified batch 和 streaming
+### 分散式運算框架
+- **Apache Hadoop**：MapReduce、HDFS（Hadoop分散式檔案系統）
+- **Apache Spark**：記憶體內處理，比Hadoop更快
+  - Spark SQL：結構化資料處理
+  - Spark Streaming：即時資料
+  - MLlib：機器學習函式庫
+  - GraphX：圖形處理
+- **Apache Flink**：低延遲的串流處理
+- **Apache Beam**：統一的批次和串流處理
 
-### Cloud Platforms
-- **AWS**: S3, EMR, Redshift, SageMaker, Glue
-- **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
-- **Azure**: Synapse Analytics, Databricks, 機器學習, 資料 Lake
-- **Snowflake**: Cloud 資料 warehouse
+### 雲端平台
+- **AWS**：S3、EMR、Redshift、SageMaker、Glue
+- **Google Cloud**：BigQuery、Dataproc、AI Platform、Cloud Storage
+- **Azure**：Synapse Analytics、Databricks、Machine Learning、Data Lake
+- **Snowflake**：雲端資料倉儲
 
-### 資料 Pipeline Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline 管理 (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: 資料 orchestrator 與 asset focus
-- **dbt**: 資料 transformation 在 warehouse
+### 資料管道工具
+- **Apache Airflow**：工作流程編排
+- **Luigi**：管道管理（Spotify）
+- **Prefect**：現代工作流程編排
+- **Dagster**：以資產為重點的資料編排器
+- **dbt**：倉儲中的資料轉換
 
-## 商業 Intelligence 和 Analytics
+## 商業智慧與分析
 
-### BI Tools
-- **Tableau**: Visual analytics platform
-- **Power BI**: Microsoft 商業 analytics
-- **Looker**: 資料 exploration 和 insights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+### BI工具
+- **Tableau**：視覺化分析平台
+- **Power BI**：Microsoft商業分析
+- **Looker**：資料探索和洞察（Google）
+- **Qlik Sense**：關聯式分析
+- **Metabase**：開源BI
+- **Superset**：Apache開源BI
 
-### Dashboard Design Principles
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to 資料 type
-- **Use Color Strategically**: Highlight important information
-- **Maintain Consistency**: Standardize formats 和 scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize 效能**: Fast loading, efficient queries
-- **Mobile Considerations**: Responsive design
+### 儀表板設計原則
+- **了解受眾**：針對使用者需求量身打造
+- **選擇正確的視覺化**：圖表與資料類型匹配
+- **策略性使用顏色**：突顯重要資訊
+- **保持一致性**：標準化格式和比例
+- **啟用互動性**：篩選器、向下鑽取、工具提示
+- **優化效能**：快速載入、高效查詢
+- **行動裝置考量**：響應式設計
 
-### Key 效能 Indicators (KPIs)
-- **Financial**: Revenue, profit margin, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketing**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+### 關鍵績效指標（KPIs）
+- **財務**：營收、利潤率、ROI、客戶終身價值
+- **客戶**：獲客成本、流失率、滿意度分數、NPS
+- **營運**：效率比率、週期時間、缺陷率
+- **行銷**：轉換率、點擊率、歸因
+- **產品**：活躍使用者、參與度、留存率、功能採用率
 
-## 高級 Analytics
+## 進階分析
 
-### Predictive Analytics
-- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeling**: Credit scoring, fraud detection, insurance
-- **Customer Analytics**: Churn prediction, propensity modeling
-- **Demand Forecasting**: Inventory optimization, supply chain
-- **Maintenance Prediction**: Equipment failure anticipation
+### 預測分析
+- **預測**：時間序列預測（ARIMA、Prophet、LSTM）
+- **風險建模**：信用評分、詐欺偵測、保險
+- **客戶分析**：流失預測、傾向建模
+- **需求預測**：庫存優化、供應鏈
+- **維護預測**：設備故障預測
 
-### Prescriptive Analytics
-- **Optimization**: Linear programming, integer programming
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, influence diagrams
-- **A/B 測試**: Experimental design, statistical significance
-- **Multi-Armed Bandits**: Adaptive experimentation
+### 規範分析
+- **優化**：線性規劃、整數規劃
+- **模擬**：蒙地卡羅方法、離散事件模擬
+- **決策分析**：決策樹、影響圖
+- **A/B測試**：實驗設計、統計顯著性
+- **多臂吃角子老虎機**：自適應實驗
 
-### Text Analytics (NLP)
-- **Text Preprocessing**: Tokenization, stemming, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF 為 theme discovery
-- **Named Entity Recognition**: Identifying people, places, organizations
-- **Text Classification**: Spam detection, categorization
-- **Word Embeddings**: Word2Vec, GloVe, BERT
+### 文字分析（NLP）
+- **文字預處理**：分詞、詞幹提取、詞形還原
+- **情感分析**：正面/負面/中性分類
+- **主題建模**：LDA、NMF用於主題發現
+- **命名實體識別**：識別人物、地點、組織
+- **文字分類**：垃圾郵件偵測、分類
+- **詞嵌入**：Word2Vec、GloVe、BERT
 
-## 資料 Ethics 和 Governance
+## 資料倫理與治理
 
-### 資料 Privacy
-- **GDPR**: EU General 資料 Protection Regulation
-- **CCPA**: California Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability 和 Accountability Act (US 醫療)
-- **Anonymization**: Removing personally identifiable information
-- **Differential Privacy**: Adding noise to protect individuals
-- **Consent 管理**: Opt-在/opt-out mechanisms
+### 資料隱私
+- **GDPR**：歐盟一般資料保護規範
+- **CCPA**：加州消費者隱私法
+- **HIPAA**：健康保險流通與責任法案（美國醫療）
+- **匿名化**：移除個人識別資訊
+- **差分隱私**：添加雜訊以保護個人
+- **同意管理**：選擇加入/退出機制
 
-### 資料 Quality
-- **Accuracy**: Correctness 的 資料
-- **Completeness**: All required 資料 present
-- **Consistency**: No contradictions across sources
-- **Timeliness**: 資料 可用 when needed
-- **Validity**: Conforms to defined rules
-- **Uniqueness**: No duplicates
+### 資料品質
+- **準確性**：資料的正確性
+- **完整性**：所需資料皆存在
+- **一致性**：跨來源無矛盾
+- **及時性**：資料在需要時可用
+- **有效性**：符合定義的規則
+- **唯一性**：無重複
 
-### Bias 和 Fairness
-- **Sampling Bias**: Non-representative 資料 collection
-- **Measurement Bias**: Flawed 資料 collection instruments
-- **Algorithmic Bias**: Discriminatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processing, 在-processing, post-processing
+### 偏見與公平性
+- **抽樣偏見**：非代表性的資料蒐集
+- **測量偏見**：有缺陷的資料蒐集工具
+- **演算法偏見**：歧視性的模型預測
+- **公平性指標**：人口統計平等、機會平等
+- **偏見緩解**：預處理、處理中、後處理
 
-### 資料 Governance Framework
-- **資料 Stewardship**: Responsibility 為 資料 assets
-- **Metadata 管理**: 資料 about 資料 documentation
-- **資料 Lineage**: Tracking 資料 flow 和 transformations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Logging 資料 access 和 changes
-- **Compliance**: Regulatory adherence
+### 資料治理框架
+- **資料管理**：資料資產的責任
+- **元資料管理**：關於資料的文件
+- **資料譜系**：追蹤資料流和轉換
+- **存取控制**：基於角色的權限
+- **稽核軌跡**：記錄資料存取和變更
+- **法規遵循**：遵守法規
 
-## Career Paths 在 資料 科學
+## 資料科學的職涯路徑
 
-### Roles
-- **資料 Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **資料 Scientist**: Statistical modeling, 機器學習, 高級 analytics
-- **ML Engineer**: Production ML 系統, model 部署, MLOps
-- **資料 Engineer**: 資料 pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder 管理
-- **BI Developer**: Dashboard creation, report 開發
-- **Research Scientist**: Novel algorithms, publications, 高級 research
+### 角色
+- **資料分析師**：專注於描述性分析、儀表板、報告
+- **資料科學家**：統計建模、機器學習、進階分析
+- **ML工程師**：生產ML系統、模型部署、MLOps
+- **資料工程師**：資料管道、基礎設施、ETL流程
+- **分析經理**：團隊領導、策略、利益相關者管理
+- **BI開發人員**：儀表板創建、報告開發
+- **研究科學家**：新演算法、出版品、進階研究
 
-### Skills Matrix
-- **Technical**: Python/R, SQL, 統計, ML frameworks, cloud platforms
-- **Analytical**: Problem-solving, critical thinking, experimental design
-- **溝通**: Storytelling, visualization, presentation skills
-- **商業**: Domain knowledge, stakeholder 管理, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control 為 models
+### 技能矩陣
+- **技術**：Python/R、SQL、統計、ML框架、雲端平台
+- **分析**：問題解決、批判性思考、實驗設計
+- **溝通**：說故事、視覺化、簡報技巧
+- **商業**：領域知識、利益相關者管理、ROI分析
+- **工具**：Git、Jupyter、Docker、CI/CD、模型版本控制
 
-## Emerging Trends
+## 新興趨勢
 
-### Current Developments
-- **AutoML**: Automated 機器學習 pipeline creation
-- **MLOps**: DevOps practices 為 機器學習
-- **Feature Stores**: Centralized feature 管理
-- **資料 Mesh**: Decentralized 資料 架構
-- **LLMs 和 Generative AI**: Large 語言 models, content generation
-- **Edge Analytics**: Processing 資料 at source devices
-- **Real-Time Analytics**: Streaming 資料 analysis
-- **Augmented Analytics**: AI-assisted 資料 preparation 和 insights
+### 當前發展
+- **AutoML**：自動化機器學習管道創建
+- **MLOps**：機器學習的DevOps實踐
+- **特徵儲存**：集中式特徵管理
+- **資料網格**：去中心化資料架構
+- **LLMs和生成式AI**：大型語言模型、內容生成
+- **邊緣分析**：在來源裝置處理資料
+- **即時分析**：串流資料分析
+- **增強分析**：AI輔助的資料準備和洞察
 
-### 未來 Directions
-- **Quantum 機器學習**: Quantum 計算 為 ML
-- **Federated Learning**: Training models across decentralized 資料
-- **Causal Inference**: Moving beyond correlation to causation
-- **Responsible AI**: Ethics, explainability, transparency
-- **資料 Fabric**: Integrated 資料 管理 across environments
+### 未來方向
+- **量子機器學習**：量子計算用於ML
+- **聯邦學習**：跨去中心化資料訓練模型
+- **因果推論**：從相關性到因果關係
+- **負責任的AI**：倫理、可解釋性、透明度
+- **資料網路**：跨環境的整合資料管理

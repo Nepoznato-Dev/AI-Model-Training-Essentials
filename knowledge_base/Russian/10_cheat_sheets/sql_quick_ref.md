@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: sql_quick_ref.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Краткое руководство по SQL
 
-# SQL Быстрый справочник Руководство
-
-Essential SQL Команды для База данных operations.
+Основные команды SQL для работы с базами данных.
 
 ---
 
-## Basic Query Structure
+## Базовая структура запроса
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +18,9 @@ LIMIT number;
 
 ---
 
-## Данные Retrieval (SELECT)
+## Извлечение данных (SELECT)
 
-### Basic Selection
+### Базовая выборка
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +35,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### Фильтрация (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +53,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting и Limiting
+### Сортировка и ограничение
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +70,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## Функции агрегации
 
 ```sql
 -- Count rows
@@ -104,7 +97,7 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## Соединения (JOIN)
 
 ### Inner Join
 ```sql
@@ -154,7 +147,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## Подзапросы
 
 ```sql
 -- In WHERE clause
@@ -184,7 +177,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## Операции над множествами
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +203,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## Данные Modification
+## Изменение данных
 
 ### INSERT
 ```sql
@@ -268,7 +261,7 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## Операции с таблицами
 
 ### CREATE Table
 ```sql
@@ -318,7 +311,7 @@ DROP TABLE IF EXISTS temp_table;
 
 ---
 
-## Constraints
+## Ограничения
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +350,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## Индексы
 
 ```sql
 -- Create index
@@ -378,7 +371,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## Представления
 
 ```sql
 -- Create view
@@ -432,7 +425,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## Оконные функции
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +458,41 @@ FROM daily_sales;
 
 ---
 
-## Данные Types
+## Типы данных
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### Числовые
+- `INT` - Целое число
+- `BIGINT` - Большое целое число
+- `DECIMAL(p,s)` - Точное десятичное число (precision, scale)
+- `FLOAT` - Приближённое число с плавающей точкой
+- `DOUBLE` - Число с плавающей точкой двойной точности
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### Строковые
+- `CHAR(n)` - Строка фиксированной длины
+- `VARCHAR(n)` - Строка переменной длины
+- `TEXT` - Большой текстовый блок
+- `ENUM` - Перечисляемые значения
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date и time
+### Дата/время
+- `DATE` - Дата (YYYY-MM-DD)
+- `TIME` - Время (HH:MM:SS)
+- `DATETIME` - Дата и время
 - `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+- `YEAR` - Значение года
 
-### Boolean
+### Логические
 - `BOOLEAN` or `BOOL` - True/False
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### Двоичные
+- `BLOB` - Большой двоичный объект
+- `BINARY` - Двоичные данные фиксированной длины
+- `VARBINARY` - Двоичные данные переменной длины
 
 ---
 
-## Useful Functions
+## Полезные функции
 
-### String Functions
+### Строковые функции
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +503,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### Функции даты
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +515,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### Числовые функции
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +526,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### Условные функции
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +549,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## Производительность Tips
+## Советы по производительности
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query Производительность
-- Normalize Данные appropriately
-- Use prepared statements to prevent SQL injection
+✅ **Стоит делать:**
+- Использовать индексы для часто запрашиваемых столбцов
+- Выбирать только нужные столбцы (избегать `SELECT *`)
+- Использовать `EXPLAIN` для анализа производительности запросов
+- Нормализовать данные там, где это уместно
+- Использовать prepared statements для защиты от SQL injection
 
-❌ **Don't:**
-- Use functions on indexed columns в WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **Не стоит:**
+- Использовать функции над индексируемыми столбцами в условиях WHERE
+- Создавать слишком много индексов (это замедляет запись)
+- Использовать `SELECT DISTINCT` без необходимости
+- Игнорировать планы выполнения запросов
+- Хранить вычисляемые значения, если их можно посчитать на лету
 
 ---
 
-## Безопасность Лучшие практики
+## Рекомендации по безопасности
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +584,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Последнее обновление: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Последнее обновление: June 2025 | SQL Standard (совместимо с MySQL/PostgreSQL)*

@@ -1,91 +1,84 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: local_ai_architecture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Arquitetura Local de IA
 
-# Local AI Arquitetura
-
-A practical Guia to running large Idioma models entirely on-device — hardware considerations, inference engines, memory optimisation, e system design para edge Implantação.
+Um guia prático para executar large language models inteiramente no dispositivo — considerações de hardware, mecanismos de inferência, otimização de memória e design de sistemas para implantação na edge.
 
 ---
 
-## Why Run AI Locally?
+## Por que Executar IA Localmente?
 
-- **Privacy**: No Dados leaves o/a device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, Rede-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, e fine-tuning.
+- **Privacidade**: Nenhum dado sai do dispositivo.
+- **Custo**: Sem cobranças de API por token.
+- **Latência**: Inferência previsível e sem dependência de rede.
+- **Disponibilidade offline**: Funciona sem internet.
+- **Controle**: Controle total sobre a versão do modelo, customização e fine-tuning.
 
 ---
 
-## Hardware Requirements
+## Requisitos de Hardware
 
-### GPU Memory (VRAM)
-o/a most critical resource. Model size em memory ≈ **parameters × bytes per parameter**.
+### Memória da GPU (VRAM)
+O recurso mais crítico. Tamanho do modelo na memória ≈ **parâmetros × bytes por parâmetro**.
 
-| Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
+| Precisão | Bytes por parâmetro | Modelo 3.8B | Modelo 7B | Modelo 13B | Modelo 70B |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
 | INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
 | INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ Sistemas.
+**Diretrizes práticas:**
+- 8GB de VRAM → até modelos 7B em 4-bit.
+- 12GB de VRAM → até modelos 13B em 4-bit.
+- 24GB de VRAM → até modelos 70B em 4-bit (ou 13B em 8-bit).
+- Apple Silicon (memória unificada) consegue rodar modelos 70B em sistemas com 64GB ou mais.
 
-### RAM (System Memory)
-- para CPU inference, you need enough system RAM to load o/a model (similar to VRAM numbers).
-- para GPU inference, system RAM matters para loading o/a model into memory before offloading to VRAM.
+### RAM (Memória do Sistema)
+- Para inferência em CPU, você precisa de RAM suficiente para carregar o modelo (semelhante aos números de VRAM).
+- Para inferência em GPU, a RAM do sistema importa para carregar o modelo na memória antes de descarregá-lo para a VRAM.
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free para multiple models.
+### Armazenamento
+- Pesos de modelos quantizados ocupam alguns GB (por exemplo, 7B em 4-bit ≈ 4 GB em disco). Garanta pelo menos 20–50 GB livres para múltiplos modelos.
 
 ### CPU
-- para prompt processing (prefill) e CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Desempenho para LLMs due to o/a unified memory e Neural Engine.
+- Para processamento do prompt (prefill) e offloading para CPU, um CPU multi-core moderno ajuda.
+- Chips Apple da série M têm excelente desempenho com LLMs devido à memória unificada e ao Neural Engine.
 
 ---
 
-## Quantisation
+## Quantização
 
-Quantisation reduces o/a numerical precision de weights, dramatically cutting memory e increasing speed at a small accuracy cost.
+A quantização reduz a precisão numérica dos pesos, diminuindo drasticamente o uso de memória e aumentando a velocidade com um pequeno custo de precisão.
 
-### Popular Formats
+### Formatos Populares
 
-| Format | Bits | Description | Typical use |
+| Formato | Bits | Descrição | Uso típico |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised para CPU/GPU hybrid | Best para local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best para NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good para batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | formato do llama.cpp, otimizado para uso híbrido CPU/GPU | Melhor para inferência local |
+| **GPTQ** | 4–8 | Somente GPU, eficiente em CUDA | Melhor para GPUs NVIDIA |
+| **AWQ** | 4 | Sensível a ativações, somente GPU | Bom para inferência em lote em GPUs |
+| **ONNX** | variável | Padronizado, multiplataforma | Serving em produção |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality para most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation com better perplexity at 4/3 bits.
+### Escolhendo um Nível de Quantização
+- **Q8_0** (8-bit): perda mínima de qualidade, maior tamanho.
+- **Q6_K** (6-bit): boa qualidade, compressão razoável.
+- **Q5_K_M** (5-bit): equilíbrio comum.
+- **Q4_K_M** (4-bit): menor tamanho, qualidade aceitável para a maioria das tarefas.
+- **IQ4_XS** / **IQ3_XS**: Quantização aprimorada com melhor perplexity em 4/3 bits.
 
-**Rule de thumb:** Use Q4_K_M para a good balance de quality e size. If you have extra VRAM, use Q5 or Q6.
+**Regra prática:** Use Q4_K_M para um bom equilíbrio entre qualidade e tamanho. Se você tiver VRAM extra, use Q5 ou Q6.
 
 ---
 
-## Inference Engines (Local)
+## Mecanismos de Inferência (Locais)
 
 ### llama.cpp
-- Written em C++.
-- Supports GGUF format.
-- Optimised para CPU e GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, e Python bindings.
+- Escrito em C++.
+- Suporta o formato GGUF.
+- Otimizado para CPU e GPU (via CUDA, Metal e OpenCL).
+- Muito rápido, especialmente em CPU.
+- Linha de comando, modo servidor e bindings para Python.
 
-**Example command:**
+**Exemplo de comando:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)
@@ -240,115 +233,115 @@ text
 ## File 4: `security_best_practices.md`
 
 ```markdown
-# Segurança Melhores práticas
+# Security Best Practices
 
-A practical Guia to securing applications, infrastructure, e Dados — from Desenvolvimento to production.
+A practical guide to securing applications, infrastructure, and data — from development to production.
 
 ---
 
-## OWASP Top 10 (2021) — Visão geral
+## OWASP Top 10 (2021) — Overview
 
 1. **Broken Access Control**: Users can access resources they shouldn't.
 2. **Cryptographic Failures**: Weak or missing encryption.
 3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
 4. **Insecure Design**: Architectural flaws.
-5. **Segurança Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable e Outdated Components**: Known CVEs em dependencies.
-7. **Identification e Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software e Dados Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **Segurança Logging e Monitoring Failures**: No detection de breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse de server to make requests to internal Sistemas.
+5. **Security Misconfiguration**: Default passwords, open ports, verbose errors.
+6. **Vulnerable and Outdated Components**: Known CVEs in dependencies.
+7. **Identification and Authentication Failures**: Weak passwords, session mismanagement.
+8. **Software and Data Integrity Failures**: Supply chain attacks, unsigned updates.
+9. **Security Logging and Monitoring Failures**: No detection of breaches.
+10. **Server-Side Request Forgery (SSRF)**: Abuse of server to make requests to internal systems.
 
 ---
 
-## Input Validation e Output Encoding
+## Input Validation and Output Encoding
 
 ### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex para email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows e DoS.
+- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex for email) rather than blocking known bad patterns.
+- **Length limits**: Enforce maximum lengths to prevent buffer overflows and DoS.
 - **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: para email, URL, e date validation, use standard libraries (e.g., `email-validator` em Python, `validator.js` em Node).
+- **Use well-tested libraries**: For email, URL, and date validation, use standard libraries (e.g., `email-validator` in Python, `validator.js` in Node).
 
 ### Output Encoding
 - **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
 - **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell Comandos from user input; if unavoidable, use `shlex.quote()` or similar.
+- **Shell escaping**: Avoid building shell commands from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
-## Authentication e Authorisation
+## Authentication and Authorisation
 
-### Password Gerenciamento
-- **Hashing**: Store passwords com a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
+### Password Management
+- **Hashing**: Store passwords with a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
 - **Salting**: Add a unique per-user salt.
 - **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) para sensitive operations.
+- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) for sensitive operations.
 - **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-### Session Gerenciamento
-- Use secure, HTTP-only, SameSite cookies para session tokens.
+### Session Management
+- Use secure, HTTP-only, SameSite cookies for session tokens.
 - Set appropriate expiration times.
-- Invalidate sessions on logout e on password change.
-- Avoid exposing session IDs em URLs.
+- Invalidate sessions on logout and on password change.
+- Avoid exposing session IDs in URLs.
 
 ### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Segurança).
+- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring Security).
 - Validate ID tokens thoroughly (signature, issuer, audience, expiration).
 - Use state parameters to prevent CSRF.
 - Keep client secrets confidential.
 
 ### JWT (JSON Web Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) para better Segurança; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), e expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes para access tokens; use refresh tokens para longer sessions.
-- **Store securely**: Never store JWTs em localStorage (vulnerable to XSS); use HTTP-only cookies instead.
+- **Sign**: Use RS256 or ES256 (asymmetric) for better security; HS256 (symmetric) is acceptable if shared secrets are managed well.
+- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), and expiration (`exp`).
+- **Keep short expiration**: 15–60 minutes for access tokens; use refresh tokens for longer sessions.
+- **Store securely**: Never store JWTs in localStorage (vulnerable to XSS); use HTTP-only cookies instead.
 
 ---
 
-## API Segurança
+## API Security
 
 ### Authentication
 - Always authenticate API calls (except public endpoints).
 - Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
 
-### Rate Limiting e Throttling
-- Apply per-user e per-IP rate limits to prevent abuse e DoS.
-- Return `429 Too Many Requests` com a `Retry-After` header.
+### Rate Limiting and Throttling
+- Apply per-user and per-IP rate limits to prevent abuse and DoS.
+- Return `429 Too Many Requests` with a `Retry-After` header.
 
 ### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` em production).
-- Validate `Origin` header on o/a server side.
+- Allow only specific origins (never `*` in production).
+- Validate `Origin` header on the server side.
 
 ### Input Validation
-- Validate all request parameters, including headers e body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` em JSON Schema).
+- Validate all request parameters, including headers and body.
+- Reject unexpected fields (`"strict": true` or `additionalProperties: false` in JSON Schema).
 
 ### HTTPS / TLS
-- Enforce HTTPS em production.
-- Use HSTS (HTTP Strict Transport Segurança) to force browsers to use HTTPS.
+- Enforce HTTPS in production.
+- Use HSTS (HTTP Strict Transport Security) to force browsers to use HTTPS.
 - Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
 
 ---
 
-## Secrets Gerenciamento
+## Secrets Management
 
 ### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, Banco de dados URLs) to source control.
-- Use environment variables or secret Gerenciamento tools.
+- Do not commit secrets (API keys, passwords, database URLs) to source control.
+- Use environment variables or secret management tools.
 
 ### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
 - **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets em files e commit them (com KMS or GPG).
-- **Docker secrets**: para Swarm mode; Kubernetes secrets (base64-encoded, but use com care; consider external Secrets Store CSI driver).
+- **SOPS**: Encrypt secrets in files and commit them (with KMS or GPG).
+- **Docker secrets**: For Swarm mode; Kubernetes secrets (base64-encoded, but use with care; consider external Secrets Store CSI driver).
 
 ### Rotation
-- Regularly rotate secrets e service accounts.
+- Regularly rotate secrets and service accounts.
 - Automate rotation where possible.
 
 ---
 
-## Dependency Gerenciamento
+## Dependency Management
 
 ### Vulnerability Scanning
 - **Python**: `safety`, `pip-audit`, `bandit`.
@@ -359,89 +352,88 @@ A practical Guia to securing applications, infrastructure, e Dados — from Dese
 
 ### Patching
 - Keep dependencies updated to patched versions.
-- Set up automated pull requests para minor/patch updates.
-- Review changelogs para breaking changes.
+- Set up automated pull requests for minor/patch updates.
+- Review changelogs for breaking changes.
 
 ### Supply Chain Integrity
 - Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums de downloaded dependencies.
-- Prefer official registries e trust only verified publishers.
+- Verify checksums of downloaded dependencies.
+- Prefer official registries and trust only verified publishers.
 
 ---
 
-## Infrastructure Segurança
+## Infrastructure Security
 
 ### Firewalls
 - Block all inbound ports except those explicitly needed (e.g., 80, 443).
 - Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use Segurança groups (AWS) or NSGs (Azure) para fine-grained control.
+- Use security groups (AWS) or NSGs (Azure) for fine-grained control.
 
 ### OS Hardening
-- Apply Segurança updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services e default accounts.
+- Apply security updates regularly (`sudo apt upgrade`, `yum update`).
+- Disable unnecessary services and default accounts.
 - Use fail2ban to block brute-force attempts on SSH.
 - Harden SSH: disable root login, use key-based auth, change default port (optional).
 
-### Rede Segmentation
-- Place databases e caches em private subnets com no internet access.
-- Use a DMZ para public-facing services.
-- Apply o/a principle de least privilege to Rede access.
+### Network Segmentation
+- Place databases and caches in private subnets with no internet access.
+- Use a DMZ for public-facing services.
+- Apply the principle of least privilege to network access.
 
-### Secrets em Infrastructure
-- Never store secrets em CI/CD environment variables unless encrypted.
-- Use o/a cloud provider's IAM roles para EC2/VM instances instead de long-lived keys.
+### Secrets in Infrastructure
+- Never store secrets in CI/CD environment variables unless encrypted.
+- Use the cloud provider's IAM roles for EC2/VM instances instead of long-lived keys.
 
 ---
 
-## Logging e Monitoring
+## Logging and Monitoring
 
 ### What to Log
-- Authentication Eventos (success/failure).
+- Authentication events (success/failure).
 - Access control decisions (authorisation failures).
 - Admin actions (user creation, deletion, permission changes).
-- Banco de dados schema changes.
-- System errors e exceptions.
-- API requests e responses (redact sensitive Dados).
+- Database schema changes.
+- System errors and exceptions.
+- API requests and responses (redact sensitive data).
 
 ### What Not to Log
 - Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
 - Full credit card numbers.
 
 ### Alerting
-- Set up alerts para:
+- Set up alerts for:
   - Multiple failed logins (potential brute force).
   - Unusual access patterns (e.g., from new locations, at odd hours).
   - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (Segurança Information e Event Gerenciamento) para Avançado correlation.
+- Use a SIEM (Security Information and Event Management) for advanced correlation.
 
 ### Log Retention
-- Retain logs para at least 30–90 days depending on regulatory requirements.
-- Store logs em a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
+- Retain logs for at least 30–90 days depending on regulatory requirements.
+- Store logs in a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
 
 ---
 
-## Secure Desenvolvimento Lifecycle (SDL)
+## Secure Development Lifecycle (SDL)
 
 1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early em design.
-3. **Secure coding standards**: Enforce via linters e code review checklists.
-4. **SAST** (Static Application Segurança Teste): Scan source code para vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application Segurança Teste): Scan running applications (OWASP ZAP, Burp Suite).
+2. **Threat modelling**: Identify potential threats early in design.
+3. **Secure coding standards**: Enforce via linters and code review checklists.
+4. **SAST** (Static Application Security Testing): Scan source code for vulnerabilities (SonarQube, CodeQL).
+5. **DAST** (Dynamic Application Security Testing): Scan running applications (OWASP ZAP, Burp Suite).
 6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration Teste**: Regular ethical hacking exercises.
+7. **Penetration testing**: Regular ethical hacking exercises.
 8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan para when a breach is detected.
+9. **Incident response plan**: Have a clear plan for when a breach is detected.
 
 ---
 
 ## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** o/a affected Sistemas (disconnect from Rede if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, e disk images.
-4. **Identify** o/a scope: which Sistemas, which Dados.
-5. **Rotate** all compromised credentials e secrets.
-6. **Patch** o/a vulnerability.
-7. **Notify** affected users e regulatory bodies if required (within Jurídico timeframes).
-8. **Conduct a post-mortem** to understand root cause e improve processes.
+2. **Isolate** the affected systems (disconnect from network if needed).
+3. **Preserve evidence**: Capture logs, memory dumps, and disk images.
+4. **Identify** the scope: which systems, which data.
+5. **Rotate** all compromised credentials and secrets.
+6. **Patch** the vulnerability.
+7. **Notify** affected users and regulatory bodies if required (within legal timeframes).

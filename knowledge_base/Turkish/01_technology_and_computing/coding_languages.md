@@ -1,17 +1,10 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: coding_languages.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
-# Coding Languages
+# Programlama Dilleri
 
 ## Python
 
-Python is a high-level, interpreted, dynamically typed, general-purpose programming Dil. It emphasises readability ve uses significant indentation as block delimiters.
+Python, üst düzey, yorumlanan, dinamik olarak türlenen, genel amaçlı bir programlama dilidir. Okunabilirliği vurgular ve blok ayırıcı olarak anlamlı girintileme kullanır.
 
-### Sözdizimi Temeller
+### Söz dizimi temelleri
 
 ```python
 # Variables and types
@@ -65,28 +58,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-### Common patterns
+### Yaygın kalıplar
 
-- Use `ile open(path) as f:` için file I/O.
-- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
-- Use `dataclasses.dataclass` için Veri-only classes.
-- Use `pathlib.Path` instead içinde `os.path` için file paths.
+- Dosya G/Ç için `with open(path) as f:` kullanın.
+- `%` veya `.format()` yerine f-string'leri (`f"hello {name}"`) tercih edin.
+- Yalnızca veri taşıyan sınıflar için `dataclasses.dataclass` kullanın.
+- Dosya yollarında `os.path` yerine `pathlib.Path` kullanın.
 
 ### Tooling
 
-- `pip install <package>` installs packages.
-- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip install -r requirements.txt` restores them.
-- `pyproject.toml` is bu modern project-configuration standard.
+- `pip install <package>` paket kurar.
+- `python -m venv .venv && source .venv/bin/activate` sanal ortam oluşturur.
+- `pip freeze > requirements.txt` bağımlılıkları kaydeder.
+- `pip install -r requirements.txt` bunları geri yükler.
+- `pyproject.toml` modern proje yapılandırma standardıdır.
 
 ---
 
 ## JavaScript
 
-JavaScript is bu primary Dil içinde bu Web. It runs içinde browsers ve on servers via Node.js. It is dynamically typed ve prototype-based.
+JavaScript, web'in birincil dilidir. Tarayıcılarda ve Node.js aracılığıyla sunucularda çalışır. Dinamik olarak türlenir ve prototype tabanlıdır.
 
-### Modern Sözdizimi (ES6+)
+### Modern söz dizimi (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +100,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### Async programming
+### Async programlama
 
 ```javascript
 // Promises
@@ -146,16 +139,16 @@ btn.addEventListener("click", () => {
 
 ### Tooling
 
-- `npm init -y` initialises a project.
-- `npm install <package>` adds a dependency.
-- `npm run <script>` runs a script defined içinde `package.json`.
-- `node index.js` runs a script ile Node.js.
+- `npm init -y` bir proje başlatır.
+- `npm install <package>` bağımlılık ekler.
+- `npm run <script>`, `package.json` içinde tanımlı bir script'i çalıştırır.
+- `node index.js` bir script'i Node.js ile çalıştırır.
 
 ---
 
 ## TypeScript
 
-TypeScript is a statically typed superset içinde JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, ve enums.
+TypeScript, düz JavaScript'e derlenen, statik olarak türlenmiş bir JavaScript üst kümesidir. Tür anotasyonları, interface'ler, generics ve enums ekler.
 
 ### Type annotations
 
@@ -190,7 +183,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Classes ile access modifiers
+### Access modifiers kullanan sınıflar
 
 ```typescript
 class Counter {
@@ -222,19 +215,19 @@ class Counter {
 
 ### Tooling
 
-- `npm install -g typescript` installs bu compiler.
-- `tsc` compiles bu project.
-- `ts-node src/index.ts` runs TypeScript directly.
+- `npm install -g typescript` derleyiciyi kurar.
+- `tsc` projeyi derler.
+- `ts-node src/index.ts` TypeScript'i doğrudan çalıştırır.
 
 ---
 
 ## Rust
 
-Rust is a Sistemler programming Dil focused on safety, speed, ve concurrency. It prevents memory-safety bugs at compile time through its ownership system.
+Rust, güvenlik, hız ve eşzamanlılığa odaklanan bir sistem programlama dilidir. Ownership sistemi sayesinde bellek güvenliği hatalarını derleme zamanında önler.
 
 ### Ownership ve borrowing
 
-Every value içinde Rust has exactly one owner. When bu owner goes out içinde scope bu value is dropped. Borrowing allows references without transferring ownership.
+Rust'ta her değerin tam olarak bir sahibi vardır. Sahip kapsam dışına çıktığında değer düşürülür. Borrowing, sahipliği devretmeden referans kullanımına izin verir.
 
 ```rust
 fn main() {
@@ -248,11 +241,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no other borrows exist at bu same time.
+Mutable borrow'lar (`&mut T`), aynı anda başka borrow bulunmamasını gerektirir.
 
 ### Lifetimes
 
-Lifetimes ensure references do not outlive bu Veri they point to.
+Lifetime'lar, referansların işaret ettikleri veriden daha uzun yaşamamasını garanti eder.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -293,22 +286,22 @@ fn main() {
 }
 ```
 
-bu `?` operator propagates errors automatically inside functions that return `Result`.
+`?` operatörü, `Result` döndüren fonksiyonların içinde hataları otomatik olarak yukarı iletir.
 
 ### Tooling (Cargo)
 
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles ve runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` formats code. `cargo clippy` lints.
+- `cargo new project_name` yeni proje oluşturur.
+- `cargo build` derler.
+- `cargo run` derler ve çalıştırır.
+- `cargo test` testleri çalıştırır.
+- `cargo add <crate>` `Cargo.toml` dosyasına bağımlılık ekler.
+- `cargo fmt` kodu biçimlendirir. `cargo clippy` lint çalıştırır.
 
 ---
 
 ## Go
 
-Go (Golang) is a statically typed, compiled Dil designed için simplicity ve high-Performans concurrent programs.
+Go (Golang), sadelik ve yüksek performanslı eşzamanlı programlar için tasarlanmış, statik olarak türlenmiş derlenmiş bir dildir.
 
 ### Temeller
 
@@ -323,7 +316,7 @@ func main() {
 }
 ```
 
-### Functions ve multiple return values
+### Functions ve çoklu dönüş değerleri
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -346,7 +339,7 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods içinde an interface satisfies it — no explicit declaration is needed.
+Bir interface'in tüm method'larını uygulayan her tür onu karşılar — açık bir bildirim gerekmez.
 
 ### Goroutines ve channels
 
@@ -390,20 +383,20 @@ func readFile(path string) error {
 
 ### Tooling
 
-- `go mod init module/name` initialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` formats code.
-- `go vet ./...` checks için common mistakes.
+- `go mod init module/name` bir modül başlatır.
+- `go get ./...` bağımlılıkları indirir.
+- `go build ./...` derler.
+- `go test ./...` testleri çalıştırır.
+- `go fmt ./...` kodu biçimlendirir.
+- `go vet ./...` yaygın hataları kontrol eder.
 
 ---
 
 ## C ve C++
 
-C is a low-level, compiled, procedural Dil. C++ extends C ile classes, templates, ve bu Standard Template Library (STL).
+C, düşük seviyeli, derlenmiş, prosedürel bir dildir. C++, sınıflar, şablonlar ve Standard Template Library (STL) ile C'yi genişletir.
 
-### C Temeller
+### C temelleri
 
 ```c
 #include <stdio.h>
@@ -424,7 +417,7 @@ int main(void) {
 
 ### Pointers
 
-A pointer stores bu memory address içinde another variable. `*ptr` dereferences it; `&var` takes an address.
+Bir pointer, başka bir değişkenin bellek adresini saklar. `*ptr` onu dereference eder; `&var` adres alır.
 
 ```c
 int a = 10;
@@ -432,7 +425,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-### C++ classes ve RAII
+### C++ sınıfları ve RAII
 
 ```cpp
 #include <string>
@@ -452,7 +445,7 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically içinde destructors.
+RAII (Resource Acquisition Is Initialization), kaynak ömürlerini nesne ömürlerine bağlar; böylece temizlik işlemi destructor'larda otomatik gerçekleşir.
 
 ### STL containers
 
@@ -469,26 +462,26 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### Modern C++ (C++17 / C++20) highlights
+### Modern C++ (C++17 / C++20) öne çıkanlar
 
-- `auto` type deduction.
-- Range-based `için` loops: `için (auto& item : container)`.
-- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
+- `auto` tür çıkarımı.
+- Range-based `for` döngüleri: `for (auto& item : container)`.
+- Smart pointer'lar: `std::unique_ptr`, `std::shared_ptr` — ham `new`/`delete` kullanımından kaçının.
 - Structured bindings: `auto [key, val] = pair;`.
 - `std::optional`, `std::variant`, `std::string_view`.
 
 ### Compilation
 
-- `gcc main.c -o main` compiles C.
-- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is bu standard build-system generator için larger projects.
+- `gcc main.c -o main` C kodunu derler.
+- `g++ -std=c++20 -Wall main.cpp -o main` C++ kodunu derler.
+- `make`, `Makefile` aracılığıyla çok dosyalı derlemeyi otomatikleştirir.
+- `cmake`, daha büyük projeler için standart build-system generator aracıdır.
 
 ---
 
 ## Swift
 
-Swift is a modern, statically typed programming Dil developed by Apple için iOS, macOS, watchOS, ve tvOS. It is also Mevcut on Linux.
+Swift, Apple tarafından iOS, macOS, watchOS ve tvOS için geliştirilmiş modern, statik olarak türlenmiş bir programlama dilidir. Linux'ta da kullanılabilir.
 
 ### Temeller
 
@@ -502,7 +495,7 @@ let pi: Double = 3.14159
 
 ### Optionals
 
-An optional (`T?`) represents a value that may or may not be present.
+Optional (`T?`), var olabilen ya da olmayabilen bir değeri temsil eder.
 
 ```swift
 var name: String? = nil
@@ -530,7 +523,7 @@ let multiply: (Int, Int) -> Int = { $0 * $1 }
 
 ### Classes ve structs
 
-Swift has both classes (Referans types) ve structs (value types). Prefer structs için simple Veri models.
+Swift'te hem sınıflar (reference types) hem de struct'lar (value types) vardır. Basit veri modelleri için struct tercih edilir.
 
 ```swift
 struct Point {
@@ -570,7 +563,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-### SwiftUI Temeller
+### SwiftUI temelleri
 
 ```swift
 import SwiftUI
@@ -589,70 +582,70 @@ struct ContentView: View {
 
 ### Tooling
 
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs bu project.
-- `swift test` runs tests.
-- `swift package init --type executable` creates a new executable project.
-- Xcode is bu primary IDE için Apple-platform Geliştirme.
+- `swift build` bir Swift Package Manager projesini derler.
+- `swift run` projeyi çalıştırır.
+- `swift test` testleri çalıştırır.
+- `swift package init --type executable` yeni bir çalıştırılabilir proje oluşturur.
+- Xcode, Apple platformu geliştirme için birincil IDE'dir.
 
 ---
 
-## Coding Temeller (Dil-Agnostic)
+## Programlama Temelleri (Dilden Bağımsız)
 
-### Problem-solving workflow
+### Problem çözme iş akışı
 
-1. Define bu input, output, ve constraints before writing code.
-2. Break bu task into smaller sub-problems.
-3. Start ile a simple correct solution, then optimise if needed.
-4. Validate ile tests, edge cases, ve realistic inputs.
+1. Kod yazmadan önce girdiyi, çıktıyı ve kısıtları tanımlayın.
+2. Görevi daha küçük alt problemlere bölün.
+3. Önce basit ve doğru bir çözümle başlayın, gerekirse sonra optimize edin.
+4. Testler, uç durumlar ve gerçekçi girdilerle doğrulayın.
 
-### Core Veri structures
+### Temel veri yapıları
 
-- **Array / List**: ordered collection ile fast indexed reads.
-- **Hash map / Sözlük**: key-value store ile average O(1) lookup.
-- **Set**: unique values, useful için membership checks.
-- **Stack**: LIFO (last içinde, first out), common içinde parsing ve recursion.
-- **Queue**: FIFO (first içinde, first out), useful için scheduling ve BFS.
-- **Tree / Graph**: hierarchical ve Ağ-style relationships.
+- **Array / List**: Hızlı indeksli okuma sunan sıralı koleksiyon.
+- **Hash map / Dictionary**: Ortalama O(1) erişime sahip anahtar-değer deposu.
+- **Set**: Benzersiz değerler içerir, üyelik kontrolünde kullanışlıdır.
+- **Stack**: LIFO (last in, first out), parsing ve recursion'da yaygındır.
+- **Queue**: FIFO (first in, first out), zamanlama ve BFS için kullanışlıdır.
+- **Tree / Graph**: Hiyerarşik ve ağ benzeri ilişkileri temsil eder.
 
-### Algorithmic complexity (Big O)
+### Algoritmik karmaşıklık (Big O)
 
-- Big O describes how runtime or memory grows ile input size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
+- Big O, çalışma süresi veya belleğin girdi boyutuyla nasıl büyüdüğünü açıklar.
+- Tipik maliyetler:
+  - O(1): sabit zamanlı erişim (ör. hash map erişimi).
   - O(log n): binary search.
-  - O(n): single pass through Veri.
-  - O(n log n): efficient sorting.
-  - O(n²): nested loops over similar-size inputs.
-- Prefer clear, maintainable code unless profiling shows a bottleneck.
+  - O(n): veri üzerinde tek geçiş.
+  - O(n log n): verimli sıralama.
+  - O(n²): benzer boyutlu girdiler üzerinde iç içe döngüler.
+- Profiling bir darboğaz göstermedikçe açık ve sürdürülebilir kodu tercih edin.
 
-### Debugging principles
+### Debugging ilkeleri
 
-- Reproduce bu bug reliably first.
-- Minimise bu failing case to isolate cause.
-- Inspect logs, inputs, ve assumptions.
-- Change one variable at a time while Test Etme.
-- Add regression tests so bu same bug does not return.
+- Önce hatayı güvenilir biçimde yeniden üretin.
+- Nedeni izole etmek için başarısız örneği küçültün.
+- Günlükleri, girdileri ve varsayımları inceleyin.
+- Test ederken aynı anda yalnızca bir değişkeni değiştirin.
+- Aynı hatanın geri dönmemesi için regression test ekleyin.
 
-### Test Etme pyramid
+### Testing pyramid
 
-- **Unit tests**: fast, focused checks içinde small logic units.
-- **Integration tests**: verify interactions across modules/services.
-- **End-to-end tests**: validate user flows içinde realistic environments.
-- A balanced suite has many unit tests ve fewer slow end-to-end tests.
+- **Unit tests**: Küçük mantık birimlerini hızlı ve odaklı biçimde kontrol eder.
+- **Integration tests**: Modüller/hizmetler arası etkileşimi doğrular.
+- **End-to-end tests**: Gerçekçi ortamlarda kullanıcı akışlarını doğrular.
+- Dengeli bir test paketi çok sayıda unit test ve daha az sayıda yavaş end-to-end test içerir.
 
-### Code quality practices
+### Kod kalitesi uygulamaları
 
-- Use meaningful names ve small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive ve interfaces explicit.
-- Use linters/formatters için consistency.
-- Review code için correctness, clarity, ve Güvenlik.
+- Anlamlı adlar ve küçük, odaklı fonksiyonlar kullanın.
+- Mümkün olduğunda pure function'ları (daha az yan etki) tercih edin.
+- Modülleri uyumlu, interface'leri açık tutun.
+- Tutarlılık için linter/formatter kullanın.
+- Kodu doğruluk, açıklık ve güvenlik açısından gözden geçirin.
 
-### Güvenlik Temeller için developers
+### Geliştiriciler için temel güvenlik
 
-- Validate ve sanitise external input.
-- Use parameterised queries to prevent SQL injection.
-- Store passwords ile strong hashing algorithms (e.g., Argon2, bcrypt).
-- Avoid embedding secrets içinde source code.
-- Apply least privilege için credentials ve services.
+- Dış girdileri doğrulayın ve sanitize edin.
+- SQL injection'ı önlemek için parameterized query kullanın.
+- Parolaları güçlü hashing algoritmalarıyla saklayın (ör. Argon2, bcrypt).
+- Kaynak koda secret gömmekten kaçının.
+- Kimlik bilgileri ve hizmetlerde least privilege uygulayın.

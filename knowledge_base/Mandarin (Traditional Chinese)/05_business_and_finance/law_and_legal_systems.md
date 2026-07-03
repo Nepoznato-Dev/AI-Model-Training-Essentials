@@ -1,60 +1,53 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: law_and_legal_systems.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 法律與法律體系
 
-# 法律 和 法律 系統
+## 法律體系概述
 
-## 法律 系統 概述
+法律體系是管理社會的規則、制度和程序的框架。全球主要的法律體系包括普通法(基於司法先例,用於英國、美國、加拿大、澳大利亞)、大陸法(基於成文法典,用於大部分歐洲、拉丁美洲、日本)、宗教法(基於宗教經典,如伊斯蘭教法)和習慣法(基於傳統慣例)。普通法體系高度依賴判例法和遵循先例原則(必須遵循先例)。大陸法體系使用法官適用於案件的綜合法典。
 
-A 法律 system is 這 framework 的 rules, institutions, 和 procedures that govern a society. 這 main 法律 系統 worldwide include common 法律 (based on judicial precedents, used 在 UK, US, Canada, Australia), civil 法律 (based on codified statutes, used 在 most 的 Europe, Latin America, Japan), religious 法律 (based on religious texts, such as Islamic Sharia 法律), 和 customary 法律 (based on traditional practices). Common 法律 系統 rely heavily on case 法律 和 這 principle 的 stare decisis (precedent must be followed). Civil 法律 系統 use comprehensive 法律 codes that judges apply to cases.
+## 法律分支
 
-## Branches 的 法律
+法律通常分為公法和私法。公法管理個人與國家之間的關係,包括憲法、行政法和刑法。私法(民法)管理個人之間的關係,包括契約法、侵權法、財產法和家事法。刑法處理由國家懲罰的對社會的犯罪行為。民法處理當事人之間的糾紛,救濟方式通常涉及賠償而非懲罰。
 
-法律 is typically divided into public 法律 和 private 法律. Public 法律 governs relationships between individuals 和 這 state, including constitutional 法律, administrative 法律, 和 criminal 法律. Private 法律 (civil 法律) governs relationships between individuals, including contract 法律, tort 法律, property 法律, 和 family 法律. Criminal 法律 deals 與 offenses against society punishable by 這 state. Civil 法律 addresses disputes between parties where remedies typically involve compensation rather than punishment.
+## 憲法
 
-## Constitutional 法律
+憲法涉及國家憲法的解釋和實施。憲法是建立政府結構、權力分配和基本權利的最高法律。司法審查允許法院判定法律或政府行為是否違憲。權力分立將政府分為立法(制定法律)、行政(執行法律)和司法(解釋法律)三個部門。制衡機制防止任何一個部門變得過於強大。基本權利通常包括言論自由、宗教自由、集會自由、正當程序和法律平等保護。
 
-Constitutional 法律 concerns 這 interpretation 和 implementation 的 a country's constitution. A constitution is 這 supreme 法律 establishing 這 structure 的 government, distribution 的 powers, 和 fundamental rights. Judicial review allows courts to determine whether laws or government actions violate 這 constitution. 這 separation 的 powers divides government into legislative (makes laws), executive (enforces laws), 和 judicial (interprets laws) branches. Checks 和 balances prevent any one branch from becoming too powerful. Fundamental rights often include freedom 的 speech, religion, assembly, due process, 和 equal protection under 這 法律.
+## 契約法
 
-## Contract 法律
+契約是兩方或多方之間具有法律約束力的協議。有效契約的基本要素包括要約(明確提議)、承諾(同意條款)、對價(交換有價值的東西)、行為能力(訂約的法律能力)和合法性(目的必須合法)。違約發生在一方未能履行義務時。違約的救濟方式包括損害賠償(金錢補償)、特定履行(法院命令履行)或解約。契約可以是書面、口頭或由行為默示,儘管某些類型必須根據詐欺防止法以書面形式訂立。
 
-A contract is a legally binding agreement between two or more parties. Essential elements 的 a valid contract include offer (a clear proposal), acceptance (agreement to 這 terms), consideration (something 的 value exchanged), capacity (法律 ability to contract), 和 legality (purpose must be 法律). Breach 的 contract occurs when a party fails to fulfill obligations. Remedies 為 breach include damages (monetary compensation), specific 效能 (court orders fulfillment), or cancellation. Contracts can be written, oral, or implied by conduct, though certain types must be 在 writing under 這 Statute 的 Frauds.
+## 侵權法
 
-## Tort 法律
+侵權法處理造成傷害或損失的民事過失,導致法律責任。過失是未能行使合理注意,造成他人傷害。要證明過失,原告必須證明:存在注意義務、違反該義務、因果關係和損害。故意侵權包括攻擊、毆打、非法拘禁、誹謗(書面和口頭)和侵入。嚴格責任在某些情況下不論過錯都適用(有缺陷的產品、危險活動)。侵權案件的損害賠償包括醫療費用、工資損失、痛苦和折磨,有時還包括懲罰性賠償以懲罰惡劣行為。
 
-Tort 法律 addresses civil wrongs that cause harm or loss, resulting 在 法律 liability. Negligence is 這 failure to exercise reasonable care, causing injury to another. To prove negligence, a plaintiff must show: duty 的 care existed, breach 的 that duty, causation, 和 damages. Intentional torts include assault, battery, false imprisonment, defamation (libel 和 slander), 和 trespass. Strict liability applies regardless 的 fault 在 certain cases (defective products, dangerous activities). Damages 在 tort cases compensate 為 medical expenses, lost wages, pain 和 suffering, 和 sometimes punitive damages to punish egregious conduct.
+## 財產法
 
-## Property 法律
+財產法管理不動產(土地和建築)和動產(可移動物品)的所有權和使用。不動產權利包括占有、控制、排除、享用和處分。所有權類型包括完全所有權(絕對所有權)、終身地產(終身所有權)和租賃權(臨時占有)。房東租客法規範租賃協議。智慧財產權是保護心智創作的無形財產形式。徵用權允許政府為公共用途以公正補償徵收私有財產。分區法規規範特定區域的土地使用。
 
-Property 法律 governs ownership 和 use 的 real property (land 和 buildings) 和 personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, 和 disposition. Types 的 ownership include fee simple (absolute ownership), life estate (ownership 為 lifetime), 和 leasehold (temporary possession). Landlord-tenant 法律 regulates rental agreements. Intellectual property is a form 的 intangible property protecting creations 的 這 mind. Eminent domain allows governments to take private property 為 public use 與 just compensation. Zoning laws regulate land use 在 specific areas.
+## 刑法與程序
 
-## Criminal 法律 和 Procedure
+刑法定義犯罪和懲罰。犯罪分為重罪(嚴重罪行,可處一年以上監禁)或輕罪(較輕罪行)。犯罪要素通常包括犯罪行為(有罪行為)和犯罪意圖(有罪心智/意圖)。無罪推定意味著被告在被證明有罪之前是無辜的,必須超越合理懷疑。刑事訴訟中的憲法保護包括防止不合理搜查和扣押、律師權利、快速和公開審判權、防止自證其罪和防止雙重危險。量刑可能涉及監禁、罰款、緩刑或死刑(在某些司法管轄區)。
 
-Criminal 法律 defines crimes 和 punishments. Crimes are classified as felonies (serious offenses punishable by imprisonment over one year) or misdemeanors (less serious offenses). Elements 的 a crime typically include actus reus (guilty act) 和 mens rea (guilty mind/intent). 這 presumption 的 innocence means defendants are innocent until proven guilty beyond a reasonable doubt. Constitutional protections 在 criminal proceedings include protection against unreasonable searches 和 seizures, right to counsel, right to a speedy 和 public trial, protection against self-incrimination, 和 protection against double jeopardy. Sentencing may involve imprisonment, fines, probation, or capital punishment (在 some jurisdictions).
+## 家事法
 
-## Family 法律
+家事法處理家庭關係和家庭事務。婚姻是創造配偶之間權利和義務的法律結合。離婚(解除婚姻)涉及資產分配、配偶贍養費和子女監護權。子女監護權決定孩子住在哪裡以及誰對其福利做決定。子女撫養費是非監護父母支付的經濟支持。收養創造法律上的親子關係。家庭暴力法保護家庭成員免受虐待。親子關係確立法律上的父親身份。婚前協議規定婚姻結束時的資產分配。
 
-Family 法律 deals 與 domestic relations 和 family matters. Marriage is a 法律 union creating rights 和 obligations between spouses. Divorce (dissolution 的 marriage) involves division 的 assets, spousal 支援 (alimony), 和 child custody. Child custody determines where children live 和 who makes decisions about their welfare. Child 支援 is financial 支援 paid by non-custodial parents. Adoption creates a 法律 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 法律 fatherhood. Prenuptial agreements specify asset division if marriage ends.
+## 智慧財產權
 
-## Intellectual Property
+智慧財產權(IP)保護心智創作。專利授予發明者在有限期間(通常為20年)製造、使用或銷售發明的專有權。著作權保護原創作品(書籍、音樂、藝術、軟體),保護期為作者終身加70年(在大多數國家)。商標保護商業中使用的品牌識別(名稱、標誌、標語)。商業秘密保護提供競爭優勢的機密商業資訊。未經許可使用受保護材料即構成IP侵權。合理使用原則允許在批評、教育或戲仿等目的下有限使用受著作權保護的材料而無需許可。
 
-Intellectual property (IP) protects creations 的 這 mind. Patents grant inventors exclusive rights to make, use, or sell inventions 為 a limited period (typically 20 years). Copyright protects original works 的 authorship (books, music, art, software) 為 這 author's life plus 70 years 在 most countries. Trademarks protect brand identifiers (names, logos, slogans) used 在 commerce. Trade secrets protect confidential 商業 information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use 的 copyrighted material without permission 為 purposes like criticism, education, or parody.
+## 就業與勞工法
 
-## Employment 和 Labor 法律
+就業法管理雇主與僱員之間的關係。隨意僱用允許任何一方隨時終止僱用(在美國很常見)。僱傭契約規定僱用條款。最低工資法設定最低的法定時薪。反歧視法禁止基於種族、性別、年齡、宗教、殘疾或其他受保護特徵的工作場所歧視。工人補償為與工作相關的傷害提供福利。職業安全法規(如美國的OSHA)確保安全的工作條件。工會代表工人與雇主進行集體談判。不當解僱發生在解僱違反法律或公共政策時。
 
-Employment 法律 governs relationships between employers 和 employees. At-will employment allows termination by either party at any time (common 在 這 US). Employment contracts specify terms 的 employment. Minimum wage laws set 這 lowest 法律 hourly pay. Anti-discrimination laws prohibit workplace discrimination based on race, gender, age, religion, disability, or other protected characteristics. Workers' compensation provides benefits 為 work-related injuries. Occupational safety regulations (like OSHA 在 這 US) ensure 安全 working conditions. Labor unions represent workers 在 collective bargaining 與 employers. Wrongful termination occurs when firing violates 法律 or public policy.
+## 國際法
 
-## International 法律
+國際法管理國家和國際實體之間的關係。國際公法包括對國家有約束力的條約、習慣和原則。聯合國憲章是建立聯合國體系的基礎條約。國際人道法(戰爭法)規範武裝衝突並保護非戰鬥人員。人權法建立所有人固有的普遍權利。國際刑法起訴種族滅絕、戰爭罪、危害人類罪。國際私法(法律衝突)決定在跨境糾紛中適用哪個司法管轄區的法律。國際貿易法透過WTO等組織規範國家間的商業。
 
-International 法律 governs relations between nations 和 international entities. Public international 法律 includes treaties, customs, 和 principles binding on states. 這 United Nations Charter is a foundational treaty establishing 這 UN system. International humanitarian 法律 (laws 的 war) regulates armed conflict 和 protects non-combatants. Human rights 法律 establishes universal rights inherent to all humans. International criminal 法律 prosecutes genocide, war crimes, crimes against humanity. Private international 法律 (conflict 的 laws) determines which jurisdiction's laws apply 在 cross-border disputes. International trade 法律 regulates commerce between nations through organizations like 這 WTO.
+## 法律程序與法院
 
-## 法律 Process 和 Courts
+民事訴訟程序規範民事訴訟的進行方式。訴訟始於原告提起訴狀。被告以答辯書回應。證據開示是審判前的資訊交換。動議是要求法院裁決的請求。審判涉及向法官或陪審團提出證據和論證。判決是決定;判決書是法院的最終裁決。上訴向更高法院挑戰下級法院的決定。替代性糾紛解決包括調解(中立促進者幫助當事人達成協議)和仲裁(中立第三方做出有約束力的決定)。集體訴訟允許有類似訴求的團體集體起訴。
 
-Civil procedure governs how civil lawsuits are conducted. A lawsuit begins when a plaintiff files a complaint. 這 defendant responds 與 an answer. Discovery is 這 pre-trial exchange 的 information. Motions are requests 為 court rulings. Trial involves presenting evidence 和 arguments to a judge or jury. Verdict is 這 decision; judgment is 這 court's final ruling. Appeals challenge lower court decisions to higher courts. Alternative dispute resolution includes mediation (neutral facilitator helps parties reach agreement) 和 arbitration (neutral third party makes binding decision). Class action lawsuits allow groups 與 similar claims to sue collectively.
+## 法律倫理與專業責任
 
-## 法律 Ethics 和 Professional Responsibility
-
-法律 ethics govern lawyer conduct. Attorneys must maintain client confidentiality (attorney-client privilege). Conflicts 的 interest must be avoided or disclosed. Lawyers owe duties 的 competence, diligence, 和 loyalty to clients. Pro bono service involves providing free 法律 assistance to those unable to pay. Bar associations regulate lawyer licensing 和 discipline. Attorney misconduct can result 在 sanctions, suspension, or disbarment. 這 attorney-client privilege protects communications between lawyers 和 clients from disclosure. Work product doctrine protects materials prepared 在 anticipation 的 litigation.
+法律倫理規範律師行為。律師必須維護客戶機密(律師客戶特權)。必須避免或披露利益衝突。律師對客戶負有能力、勤勉和忠誠的義務。公益服務涉及為無力支付者提供免費法律援助。律師公會規範律師執照和紀律處分。律師不當行為可能導致制裁、停職或除名。律師客戶特權保護律師與客戶之間的通訊不被披露。工作成果原則保護為訴訟準備的材料。

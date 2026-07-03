@@ -1,60 +1,53 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: law_and_legal_systems.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 法律与法律体系
 
-# 法律 和 法律 系统
+## 法律体系概述
 
-## 法律 系统 概述
+法律体系是治理社会的一套规则、制度和程序框架。全球主要的法律体系包括普通法（基于司法判例，适用于英国、美国、加拿大、澳大利亚）、大陆法（基于成文法典，适用于欧洲大部分地区、拉丁美洲、日本）、宗教法（基于宗教文本，例如伊斯兰教法 Sharia），以及习惯法（基于传统实践）。普通法体系高度依赖判例法以及 stare decisis（遵循先例）原则。大陆法体系使用由法官适用于具体案件的系统性法典。
 
-A 法律 system is 这 framework 的 rules, institutions, 和 procedures that govern a society. 这 main 法律 系统 worldwide include common 法律 (based on judicial precedents, used 在 UK, US, Canada, Australia), civil 法律 (based on codified statutes, used 在 most 的 Europe, Latin America, Japan), religious 法律 (based on religious texts, such as Islamic Sharia 法律), 和 customary 法律 (based on traditional practices). Common 法律 系统 rely heavily on case 法律 和 这 principle 的 stare decisis (precedent must be followed). Civil 法律 系统 use comprehensive 法律 codes that judges apply to cases.
+## 法律的分支
 
-## Branches 的 法律
+法律通常分为公法和私法。公法调整个人与国家之间的关系，包括宪法、行政法和刑法。私法（民法）调整个人之间的关系，包括合同法、侵权法、财产法和家庭法。刑法处理由国家予以惩罚的危害社会行为。民法则处理当事人之间的争议，其救济通常是赔偿而非惩罚。
 
-法律 is typically divided into public 法律 和 private 法律. Public 法律 governs relationships between individuals 和 这 state, including constitutional 法律, administrative 法律, 和 criminal 法律. Private 法律 (civil 法律) governs relationships between individuals, including contract 法律, tort 法律, property 法律, 和 family 法律. Criminal 法律 deals 与 offenses against society punishable by 这 state. Civil 法律 addresses disputes between parties where remedies typically involve compensation rather than punishment.
+## 宪法
 
-## Constitutional 法律
+宪法法关注一国宪法的解释与实施。宪法是国家的根本法，确立政府结构、权力分配和基本权利。司法审查使法院能够判断法律或政府行为是否违反宪法。权力分立将政府划分为立法（制定法律）、行政（执行法律）和司法（解释法律）三大分支。制衡机制防止任何一个分支权力过大。基本权利通常包括言论自由、宗教自由、集会自由、正当程序以及法律下的平等保护。
 
-Constitutional 法律 concerns 这 interpretation 和 implementation 的 a country's constitution. A constitution is 这 supreme 法律 establishing 这 structure 的 government, distribution 的 powers, 和 fundamental rights. Judicial review allows courts to determine whether laws or government actions violate 这 constitution. 这 separation 的 powers divides government into legislative (makes laws), executive (enforces laws), 和 judicial (interprets laws) branches. Checks 和 balances prevent any one branch from becoming too powerful. Fundamental rights often include freedom 的 speech, religion, assembly, due process, 和 equal protection under 这 法律.
+## 合同法
 
-## Contract 法律
+合同是两个或以上当事人之间具有法律约束力的协议。有效合同的基本要素包括要约（明确的提议）、承诺（同意条款）、对价（交换的有价值事物）、行为能力（订立合同的法律能力）以及合法性（目的必须合法）。违约是指一方未能履行义务。违约救济包括损害赔偿（金钱赔偿）、实际履行（法院命令履行）或解除合同。合同可以是书面的、口头的，或通过行为默示成立，但根据《防止欺诈法》（Statute of Frauds），某些类型的合同必须采用书面形式。
 
-A contract is a legally binding agreement between two or more parties. Essential elements 的 a valid contract include offer (a clear proposal), acceptance (agreement to 这 terms), consideration (something 的 value exchanged), capacity (法律 ability to contract), 和 legality (purpose must be 法律). Breach 的 contract occurs when a party fails to fulfill obligations. Remedies 为 breach include damages (monetary compensation), specific 性能 (court orders fulfillment), or cancellation. Contracts can be written, oral, or implied by conduct, though certain types must be 在 writing under 这 Statute 的 Frauds.
+## 侵权法
 
-## Tort 法律
+侵权法处理造成损害或损失的民事不法行为，从而产生法律责任。过失是指未尽合理注意义务，导致他人受伤。要证明过失，原告必须证明：存在注意义务、该义务被违反、存在因果关系以及造成损害。故意侵权包括袭击、殴打、非法拘禁、诽谤（书面诽谤与口头诽谤）以及非法侵入。在某些案件中（如缺陷产品、危险活动），无过错也可适用严格责任。侵权案件中的赔偿通常包括医疗费用、误工损失、精神痛苦，有时还包括惩罚性赔偿，以惩戒特别恶劣的行为。
 
-Tort 法律 addresses civil wrongs that cause harm or loss, resulting 在 法律 liability. Negligence is 这 failure to exercise reasonable care, causing injury to another. To prove negligence, a plaintiff must show: duty 的 care existed, breach 的 that duty, causation, 和 damages. Intentional torts include assault, battery, false imprisonment, defamation (libel 和 slander), 和 trespass. Strict liability applies regardless 的 fault 在 certain cases (defective products, dangerous activities). Damages 在 tort cases compensate 为 medical expenses, lost wages, pain 和 suffering, 和 sometimes punitive damages to punish egregious conduct.
+## 财产法
 
-## Property 法律
+财产法规范不动产（土地和建筑物）与动产（可移动物品）的所有权和使用。不动产权利包括占有、控制、排除、收益和处分。所有权类型包括完全所有权（fee simple）、终身产权（life estate）以及租赁权（leasehold）。房东—租客法规范租赁协议。知识产权是一种无形财产，用于保护智力创造。征收权（eminent domain）允许政府为了公共用途，在给予公平补偿的情况下征收私人财产。分区法规则规范特定区域内的土地使用。
 
-Property 法律 governs ownership 和 use 的 real property (land 和 buildings) 和 personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, 和 disposition. Types 的 ownership include fee simple (absolute ownership), life estate (ownership 为 lifetime), 和 leasehold (temporary possession). Landlord-tenant 法律 regulates rental agreements. Intellectual property is a form 的 intangible property protecting creations 的 这 mind. Eminent domain allows governments to take private property 为 public use 与 just compensation. Zoning laws regulate land use 在 specific areas.
+## 刑法与程序
 
-## Criminal 法律 和 Procedure
+刑法界定犯罪及其刑罚。犯罪通常分为重罪（可判处一年以上监禁的严重犯罪）和轻罪（较轻的违法行为）。犯罪构成通常包括 actus reus（犯罪行为）和 mens rea（犯罪意图/主观罪过）。无罪推定意味着被告在被排除合理怀疑地证明有罪之前，都应被视为无罪。刑事诉讼中的宪法保障包括免受不合理搜查和扣押、获得律师帮助的权利、获得迅速且公开审判的权利、免于自证其罪的保护，以及免于双重危险的保护。量刑可能包括监禁、罚金、缓刑或死刑（在某些司法辖区）。
 
-Criminal 法律 defines crimes 和 punishments. Crimes are classified as felonies (serious offenses punishable by imprisonment over one year) or misdemeanors (less serious offenses). Elements 的 a crime typically include actus reus (guilty act) 和 mens rea (guilty mind/intent). 这 presumption 的 innocence means defendants are innocent until proven guilty beyond a reasonable doubt. Constitutional protections 在 criminal proceedings include protection against unreasonable searches 和 seizures, right to counsel, right to a speedy 和 public trial, protection against self-incrimination, 和 protection against double jeopardy. Sentencing may involve imprisonment, fines, probation, or capital punishment (在 some jurisdictions).
+## 家庭法
 
-## Family 法律
+家庭法处理家庭关系和家庭事务。婚姻是赋予配偶双方权利与义务的法律结合。离婚（婚姻解除）涉及财产分割、配偶赡养费（alimony）和子女监护。子女监护决定孩子与谁共同生活，以及由谁作出与其福祉相关的决定。子女抚养费是非监护父母支付的经济支持。收养建立具有法律效力的亲子关系。家庭暴力法保护家庭成员免受虐待。亲子认定（paternity）确立法律上的父亲身份。婚前协议规定婚姻结束时的财产分配方式。
 
-Family 法律 deals 与 domestic relations 和 family matters. Marriage is a 法律 union creating rights 和 obligations between spouses. Divorce (dissolution 的 marriage) involves division 的 assets, spousal 支持 (alimony), 和 child custody. Child custody determines where children live 和 who makes decisions about their welfare. Child 支持 is financial 支持 paid by non-custodial parents. Adoption creates a 法律 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 法律 fatherhood. Prenuptial agreements specify asset division if marriage ends.
+## 知识产权
 
-## Intellectual Property
+知识产权（IP）保护智力创造。专利授予发明人在有限期限内（通常为 20 年）制造、使用或销售发明的专有权。版权保护原创作品（书籍、音乐、艺术、软件），在大多数国家通常持续到作者终身加 70 年。商标保护在商业中使用的品牌标识（名称、标志、口号）。商业秘密保护能带来竞争优势的机密商业信息。未经许可使用受保护材料即构成知识产权侵权。合理使用原则允许在批评、教育或戏仿等特定目的下，有限度地使用受版权保护的材料而无需获得许可。
 
-Intellectual property (IP) protects creations 的 这 mind. Patents grant inventors exclusive rights to make, use, or sell inventions 为 a limited period (typically 20 years). Copyright protects original works 的 authorship (books, music, art, software) 为 这 author's life plus 70 years 在 most countries. Trademarks protect brand identifiers (names, logos, slogans) used 在 commerce. Trade secrets protect confidential 商业 information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use 的 copyrighted material without permission 为 purposes like criticism, education, or parody.
+## 雇佣与劳动法
 
-## Employment 和 Labor 法律
+雇佣法规范雇主与雇员之间的关系。At-will employment（任意雇佣）允许任一方随时终止劳动关系（在美国较为常见）。雇佣合同规定雇佣条款。最低工资法规定合法的最低时薪。反歧视法禁止基于种族、性别、年龄、宗教、残障或其他受保护特征的职场歧视。工伤赔偿制度为与工作相关的伤害提供补偿。职业安全法规（如美国的 OSHA）确保工作环境安全。工会代表劳动者与雇主进行集体谈判。违法解雇是指解雇行为违反法律或公共政策。
 
-Employment 法律 governs relationships between employers 和 employees. At-will employment allows termination by either party at any time (common 在 这 US). Employment contracts specify terms 的 employment. Minimum wage laws set 这 lowest 法律 hourly pay. Anti-discrimination laws prohibit workplace discrimination based on race, gender, age, religion, disability, or other protected characteristics. Workers' compensation provides benefits 为 work-related injuries. Occupational safety regulations (like OSHA 在 这 US) ensure 安全 working conditions. Labor unions represent workers 在 collective bargaining 与 employers. Wrongful termination occurs when firing violates 法律 or public policy.
+## 国际法
 
-## International 法律
+国际法规范国家与国际实体之间的关系。公法意义上的国际法包括对国家具有约束力的条约、习惯和原则。《联合国宪章》是建立联合国体系的基础性条约。国际人道法（战争法）规范武装冲突并保护非战斗人员。人权法确立全人类固有的普遍权利。国际刑法追诉种族灭绝、战争罪和危害人类罪。国际私法（法律冲突）决定跨境争议应适用哪个法域的法律。国际贸易法通过 WTO 等组织规范国家之间的商业活动。
 
-International 法律 governs relations between nations 和 international entities. Public international 法律 includes treaties, customs, 和 principles binding on states. 这 United Nations Charter is a foundational treaty establishing 这 UN system. International humanitarian 法律 (laws 的 war) regulates armed conflict 和 protects non-combatants. Human rights 法律 establishes universal rights inherent to all humans. International criminal 法律 prosecutes genocide, war crimes, crimes against humanity. Private international 法律 (conflict 的 laws) determines which jurisdiction's laws apply 在 cross-border disputes. International trade 法律 regulates commerce between nations through organizations like 这 WTO.
+## 法律程序与法院
 
-## 法律 Process 和 Courts
+民事诉讼程序规范民事案件如何进行。诉讼从原告提交起诉状开始。被告随后提交答辩。证据开示（discovery）是庭审前的信息交换程序。动议（motions）是请求法院作出裁定的申请。庭审包括向法官或陪审团提交证据和论点。verdict 是裁决结果；judgment 是法院的最终判决。上诉是向上级法院挑战下级法院的裁判。替代性争议解决方式包括调解（由中立协调人帮助当事人达成协议）和仲裁（由中立第三方作出具有约束力的决定）。集团诉讼允许具有类似诉求的一群人共同起诉。
 
-Civil procedure governs how civil lawsuits are conducted. A lawsuit begins when a plaintiff files a complaint. 这 defendant responds 与 an answer. Discovery is 这 pre-trial exchange 的 information. Motions are requests 为 court rulings. Trial involves presenting evidence 和 arguments to a judge or jury. Verdict is 这 decision; judgment is 这 court's final ruling. Appeals challenge lower court decisions to higher courts. Alternative dispute resolution includes mediation (neutral facilitator helps parties reach agreement) 和 arbitration (neutral third party makes binding decision). Class action lawsuits allow groups 与 similar claims to sue collectively.
+## 法律伦理与职业责任
 
-## 法律 Ethics 和 Professional Responsibility
-
-法律 ethics govern lawyer conduct. Attorneys must maintain client confidentiality (attorney-client privilege). Conflicts 的 interest must be avoided or disclosed. Lawyers owe duties 的 competence, diligence, 和 loyalty to clients. Pro bono service involves providing free 法律 assistance to those unable to pay. Bar associations regulate lawyer licensing 和 discipline. Attorney misconduct can result 在 sanctions, suspension, or disbarment. 这 attorney-client privilege protects communications between lawyers 和 clients from disclosure. Work product doctrine protects materials prepared 在 anticipation 的 litigation.
+法律伦理规范律师的行为。律师必须维护客户保密义务（attorney-client privilege，律师—当事人保密特权）。利益冲突必须避免或披露。律师对客户负有胜任、勤勉和忠诚义务。Pro bono 服务是指向无力支付费用的人提供免费法律援助。律师协会负责律师执照和纪律监管。律师不当行为可能导致制裁、停业或吊销执照。律师—当事人保密特权保护律师与客户之间的沟通不被披露。工作成果原则（work product doctrine）保护为预期诉讼而准备的材料。

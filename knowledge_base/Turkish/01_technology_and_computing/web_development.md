@@ -1,37 +1,30 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: web_development.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Web Geliştirme
 
 ## Frontend Geliştirme
 
-### Core Technologies
+### Temel Teknolojiler
 
-#### HTML (HyperText Markup Dil)
-- **Semantic HTML**: Using meaningful tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
-- **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embedding
-- **Meta Tags**: SEO, viewport, character encoding
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, Web sockets
+#### HTML (HyperText Markup Language)
+- **Semantic HTML**: Anlamlı etiketler kullanma (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+- **Forms**: Input türleri, doğrulama, erişilebilirlik etiketleri
+- **Media**: Görsel, video ve ses gömme
+- **Meta Tags**: SEO, viewport, karakter kodlaması
+- **HTML5 Features**: Canvas, SVG, local storage, geolocation, web sockets
 
 #### CSS (Cascading Style Sheets)
 - **Box Model**: Content, padding, border, margin
-- **Layout Sistemler**:
-  - **Flexbox**: One-dimensional layouts, justify-content, align-items
-  - **Grid**: Two-dimensional layouts, grid-template, grid-area
+- **Layout Systems**:
+  - **Flexbox**: Tek boyutlu düzenler, justify-content, align-items
+  - **Grid**: İki boyutlu düzenler, grid-template, grid-area
   - **Positioning**: Static, relative, absolute, fixed, sticky
-- **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties için theming
+- **Responsive Design**: Media query'ler, mobile-first yaklaşım
+- **CSS Variables**: Tema oluşturmak için custom property'ler
 - **Animations**: Transitions, keyframes, transforms
 - **Preprocessors**: Sass, Less (variables, mixins, nesting)
 
 #### JavaScript
-- **DOM Manipulation**: Selecting, creating, modifying elements
-- **Olaylar**: Click, submit, keyboard, custom Olaylar, event delegation
+- **DOM Manipulation**: Öğeleri seçme, oluşturma, değiştirme
+- **Events**: Click, submit, keyboard, custom events, event delegation
 - **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
 - **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
 - **TypeScript**: Static typing, interfaces, generics, decorators
@@ -41,16 +34,16 @@ For accuracy improvements, please contribute edits via pull requests.
 #### React
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State Yönetim**: Context API, Redux, Zustand, Recoil
+- **State Management**: Context API, Redux, Zustand, Recoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Efficient rendering through diffing algorithm
+- **Virtual DOM**: Diffing algoritmasıyla verimli render
 
 #### Vue.js
-- **Options API**: Veri, methods, computed, watch
+- **Options API**: data, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-için, v-bind, v-on, v-model
-- **Vuex/Pinia**: State Yönetim
+- **Directives**: v-if, v-for, v-bind, v-on, v-model
+- **Vuex/Pinia**: State management
 - **Vue Router**: Client-side routing
 - **Nuxt.js**: Server-side rendering framework
 
@@ -60,272 +53,272 @@ For accuracy improvements, please contribute edits via pull requests.
 - **RxJS**: Reactive programming, observables
 - **Routing**: RouterModule, guards, resolvers
 - **Forms**: Template-driven, reactive forms
-- **NgRx**: Redux-style state Yönetim
+- **NgRx**: Redux tarzı state management
 
 ### Build Tools ve Bundlers
 - **Webpack**: Module bundling, code splitting, loaders, plugins
-- **Vite**: Fast build tool using native ES modules
+- **Vite**: Native ES modules kullanan hızlı build aracı
 - **Parcel**: Zero-configuration bundler
-- **Rollup**: Optimized için libraries
-- **esbuild**: Extremely fast JavaScript bundler
-- **Babel**: JavaScript transpiler için backward compatibility
-- **PostCSS**: CSS processing ile plugins
+- **Rollup**: Library'ler için optimize edilmiştir
+- **esbuild**: Son derece hızlı JavaScript bundler'ı
+- **Babel**: Geriye dönük uyumluluk için JavaScript transpiler'ı
+- **PostCSS**: Plugin'lerle CSS işleme aracı
 
 ### CSS Frameworks ve Libraries
 - **Bootstrap**: Component library, grid system, utilities
 - **Tailwind CSS**: Utility-first CSS framework
-- **Material UI**: Google's Material Design implementation
-- **Chakra UI**: Accessible component library
-- **Ant Design**: Enterprise-level UI components
-- **Styled Components**: CSS-içinde-JS library
-- **Emotion**: CSS-içinde-JS ile source maps
+- **Material UI**: Google'ın Material Design uygulaması
+- **Chakra UI**: Erişilebilir component library
+- **Ant Design**: Kurumsal düzeyde UI bileşenleri
+- **Styled Components**: CSS-in-JS library
+- **Emotion**: Source map destekli CSS-in-JS
 
 ## Backend Geliştirme
 
 ### Server-Side Languages
 
 #### Node.js
-- **Runtime**: JavaScript on bu server (V8 engine)
-- **Express.js**: Minimal Web framework, middleware Mimari
-- **NestJS**: Angular-inspired Mimari, TypeScript
-- **Fastify**: High-Performans framework
-- **Koa**: Modern Express by same creators
-- **Package Yönetim**: npm, yarn, pnpm
+- **Runtime**: Sunucu tarafında JavaScript (V8 engine)
+- **Express.js**: Minimal web framework, middleware mimarisi
+- **NestJS**: Angular'dan ilham alan mimari, TypeScript
+- **Fastify**: Yüksek performanslı framework
+- **Koa**: Aynı yaratıcılar tarafından geliştirilen modern Express
+- **Package Management**: npm, yarn, pnpm
 
 #### Python
 - **Django**: Full-featured framework, ORM, admin panel, batteries-included
-- **Flask**: Microframework, extensions ecosystem
-- **FastAPI**: Modern, async, automatic API documentation
-- **Pyramid**: Flexible, scalable framework
+- **Flask**: Microframework, extension ekosistemi
+- **FastAPI**: Modern, async, otomatik API dokümantasyonu
+- **Pyramid**: Esnek, ölçeklenebilir framework
 
 #### Other Backend Languages
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
-- **Java Spring**: Enterprise framework, dependency injection
-- **PHP Laravel**: Elegant Sözdizimi, Eloquent ORM, Blade templating
-- **Go Gin**: High Performans, minimal framework
-- **Rust Actix**: Memory safety, Performans
-- **C# ASP.NET Core**: Cross-platform, enterprise features
+- **Java Spring**: Kurumsal framework, dependency injection
+- **PHP Laravel**: Zarif söz dizimi, Eloquent ORM, Blade templating
+- **Go Gin**: Yüksek performans, minimal framework
+- **Rust Actix**: Bellek güvenliği, performans
+- **C# ASP.NET Core**: Cross-platform, kurumsal özellikler
 
-### Veritabanı Integration
+### Veritabanı Entegrasyonu
 
 #### ORMs (Object-Relational Mapping)
-- **Sequelize**: Node.js ORM için SQL databases
-- **Prisma**: Type-Güvenli Veritabanı access, auto-generated client
+- **Sequelize**: SQL veritabanları için Node.js ORM'si
+- **Prisma**: Type-safe veritabanı erişimi, otomatik üretilen client
 - **SQLAlchemy**: Python SQL toolkit ve ORM
 - **ActiveRecord**: Ruby on Rails ORM
 - **Hibernate**: Java ORM
 - **Entity Framework**: .NET ORM
 
-#### Veritabanı Drivers
-- **pg**: PostgreSQL client için Node.js
-- **mysql2**: MySQL client ile promises
-- **pymongo**: MongoDB driver için Python
-- **redis**: Redis client için multiple languages
+#### Database Drivers
+- **pg**: Node.js için PostgreSQL istemcisi
+- **mysql2**: Promise destekli MySQL istemcisi
+- **pymongo**: Python için MongoDB driver'ı
+- **redis**: Birden çok dil için Redis istemcisi
 
 ### API Geliştirme
 
 #### REST APIs
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
-- **Resource Naming**: Nouns, plural, hierarchical
+- **Resource Naming**: İsimler, çoğul yapı, hiyerarşi
 - **Versioning**: URL path, headers, query parameters
 - **Authentication**: JWT, OAuth, API keys
 - **Documentation**: OpenAPI/Swagger, Postman
 
 #### GraphQL
 - **Schema Definition**: Types, queries, mutations, subscriptions
-- **Resolvers**: Field-level Veri fetching
-- **Apollo Server**: GraphQL server implementation
-- **Relay**: Facebook's GraphQL client
-- **Advantages**: No over-fetching, single endpoint, strong typing
+- **Resolvers**: Alan düzeyinde veri getirme
+- **Apollo Server**: GraphQL sunucu uygulaması
+- **Relay**: Facebook'un GraphQL istemcisi
+- **Advantages**: Over-fetching yok, tek endpoint, güçlü türleme
 
 #### gRPC
-- **Protocol Buffers**: Interface definition Dil
-- **HTTP/2**: Bidirectional streaming
-- **Use Cases**: Microservices İletişim, real-time applications
+- **Protocol Buffers**: Interface tanım dili
+- **HTTP/2**: Çift yönlü akış
+- **Use Cases**: Microservices iletişimi, gerçek zamanlı uygulamalar
 
 ### Authentication ve Authorization
-- **Session-based**: Cookies, server-side sessions
+- **Session-based**: Cookies, server-side session'lar
 - **Token-based**: JWT (JSON Web Tokens), stateless
-- **OAuth 2.0**: Authorization framework, third-party login
-- **OpenID Connect**: Identity layer on OAuth 2.0
-- **SAML**: Enterprise single sign-on
+- **OAuth 2.0**: Yetkilendirme framework'ü, üçüncü taraf giriş
+- **OpenID Connect**: OAuth 2.0 üzerindeki kimlik katmanı
+- **SAML**: Kurumsal single sign-on
 - **Password Hashing**: bcrypt, argon2, scrypt
-- **Multi-Factor Authentication**: TOTP, SMS, email codes
+- **Multi-Factor Authentication**: TOTP, SMS, e-posta kodları
 
 ## DevOps ve Dağıtım
 
 ### Version Control
-- **Git**: Distributed version control
-- **GitHub/GitLab/Bitbucket**: Repository hosting
-- **Branching Strategies**: Git Flow, GitHub Flow, trunk-based Geliştirme
-- **CI/CD**: Automated Test Etme ve Dağıtım pipelines
+- **Git**: Dağıtık sürüm kontrolü
+- **GitHub/GitLab/Bitbucket**: Repo barındırma
+- **Branching Strategies**: Git Flow, GitHub Flow, trunk-based development
+- **CI/CD**: Otomatik test ve dağıtım pipeline'ları
 
 ### Containerization
-- **Docker**: Container runtime, Dockerfile, images
-- **Docker Compose**: Multi-container orchestration
+- **Docker**: Container runtime, Dockerfile, image'lar
+- **Docker Compose**: Çok container'lı orkestrasyon
 - **Container Registries**: Docker Hub, AWS ECR, Google GCR
-- **En İyi Uygulamalar**: Multi-stage builds, minimal base images
+- **Best Practices**: Multi-stage build'ler, minimal base image'lar
 
 ### Orchestration
 - **Kubernetes**: Container orchestration, pods, services, deployments
-- **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Linkerd için microservices networking
+- **Helm**: Kubernetes paket yöneticisi
+- **Service Mesh**: Microservices ağı için Istio, Linkerd
 
 ### Cloud Platforms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
 - **Google Cloud**: Compute Engine, Cloud Storage, Cloud Functions, GKE
 - **Azure**: Virtual Machines, Blob Storage, Functions, AKS
-- **Vercel**: Frontend Dağıtım, serverless functions
-- **Netlify**: Static site hosting, serverless functions
+- **Vercel**: Frontend dağıtımı, serverless functions
+- **Netlify**: Statik site barındırma, serverless functions
 - **Heroku**: Platform as a Service (PaaS)
-- **DigitalOcean**: Simplified cloud infrastructure
+- **DigitalOcean**: Sadeleştirilmiş bulut altyapısı
 
 ### CI/CD Pipelines
-- **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-içinde continuous integration
-- **Jenkins**: Extensible automation server
-- **CircleCI**: Cloud-based CI/CD
-- **Travis CI**: Continuous integration service
-- **ArgoCD**: GitOps continuous delivery için Kubernetes
+- **GitHub Actions**: Workflow otomasyonu
+- **GitLab CI**: Yerleşik continuous integration
+- **Jenkins**: Genişletilebilir otomasyon sunucusu
+- **CircleCI**: Cloud tabanlı CI/CD
+- **Travis CI**: Continuous integration hizmeti
+- **ArgoCD**: Kubernetes için GitOps continuous delivery
 
 ### Monitoring ve Logging
-- **Application Performans**: New Relic, Datadog, AppDynamics
+- **Application Performance**: New Relic, Datadog, AppDynamics
 - **Error Tracking**: Sentry, Rollbar, Bugsnag
 - **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
 - **Uptime Monitoring**: Pingdom, UptimeRobot
 - **Analytics**: Google Analytics, Mixpanel, Amplitude
 
-## Web Performans
+## Web Performansı
 
 ### Optimization Techniques
 - **Code Splitting**: Lazy loading, dynamic imports
-- **Tree Shaking**: Removing unused code
-- **Minification**: Reducing file sizes
+- **Tree Shaking**: Kullanılmayan kodu kaldırma
+- **Minification**: Dosya boyutlarını küçültme
 - **Compression**: Gzip, Brotli
-- **Caching**: Browser cache, CDN, service workers
+- **Caching**: Tarayıcı önbelleği, CDN, service worker'lar
 - **Image Optimization**: WebP, AVIF, lazy loading, responsive images
-- **Critical CSS**: Inlining above-bu-fold styles
-- **Veritabanı Optimization**: Indexing, query optimization, connection pooling
+- **Critical CSS**: Above-the-fold stillerin satır içine alınması
+- **Database Optimization**: Indexing, query optimization, connection pooling
 
 ### Core Web Vitals
-- **LCP (Largest Contentful Paint)**: Loading Performans (<2.5s)
-- **FID (First Input Delay)**: Interactivity (<100ms)
-- **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
-- **INP (Interaction to Next Paint)**: Responsiveness metric
+- **LCP (Largest Contentful Paint)**: Yükleme performansı (<2.5s)
+- **FID (First Input Delay)**: Etkileşimlilik (<100ms)
+- **CLS (Cumulative Layout Shift)**: Görsel kararlılık (<0.1)
+- **INP (Interaction to Next Paint)**: Yanıt verebilirlik metriği
 
 ### Content Delivery Networks (CDNs)
-- **Cloudflare**: Güvenlik, Performans, DNS
-- **Akamai**: Enterprise CDN
+- **Cloudflare**: Güvenlik, performans, DNS
+- **Akamai**: Kurumsal CDN
 - **Amazon CloudFront**: AWS CDN
-- **Fastly**: Edge cloud platform
-- **StackPath**: Edge services
+- **Fastly**: Edge cloud platformu
+- **StackPath**: Edge hizmetleri
 
-## Web Güvenlik
+## Web Güvenliği
 
-### Common Vulnerabilities (OWASP Top 10)
+### Yaygın Açıklar (OWASP Top 10)
 - **Injection**: SQL injection, command injection
 - **Broken Authentication**: Session hijacking, credential stuffing
-- **Sensitive Veri Exposure**: Unencrypted Veri, weak cryptography
-- **XML External Entities (XXE)**: XML parser vulnerabilities
-- **Broken Access Control**: Privilege escalation, unauthorized access
-- **Güvenlik Misconfiguration**: Default credentials, verbose errors
+- **Sensitive Data Exposure**: Şifrelenmemiş veri, zayıf kriptografi
+- **XML External Entities (XXE)**: XML parser açıkları
+- **Broken Access Control**: Privilege escalation, yetkisiz erişim
+- **Security Misconfiguration**: Varsayılan kimlik bilgileri, ayrıntılı hata çıktıları
 - **Cross-Site Scripting (XSS)**: Reflected, stored, DOM-based
-- **Insecure Deserialization**: Object injection attacks
-- **Using Components ile Known Vulnerabilities**: Outdated dependencies
-- **Insufficient Logging & Monitoring**: Undetected breaches
+- **Insecure Deserialization**: Object injection saldırıları
+- **Using Components with Known Vulnerabilities**: Güncel olmayan bağımlılıklar
+- **Insufficient Logging & Monitoring**: Tespit edilemeyen ihlaller
 
-### Güvenlik En İyi Uygulamalar
-- **HTTPS**: TLS/SSL encryption, HSTS
-- **Content Güvenlik Policy (CSP)**: Prevent XSS attacks
-- **Input Validation**: Sanitize user input
-- **Output Encoding**: Prevent injection attacks
-- **CSRF Protection**: Anti-CSRF tokens, SameSite cookies
-- **Rate Limiting**: Prevent brute force attacks
-- **Güvenlik Headers**: X-Frame-Options, X-Content-Type-Options
+### Güvenlik İçin En İyi Uygulamalar
+- **HTTPS**: TLS/SSL şifrelemesi, HSTS
+- **Content Security Policy (CSP)**: XSS saldırılarını önleme
+- **Input Validation**: Kullanıcı girdisini sanitize etme
+- **Output Encoding**: Injection saldırılarını önleme
+- **CSRF Protection**: Anti-CSRF token'ları, SameSite cookie'leri
+- **Rate Limiting**: Brute force saldırılarını önleme
+- **Security Headers**: X-Frame-Options, X-Content-Type-Options
 - **Dependency Scanning**: npm audit, Snyk, Dependabot
 
-## Test Etme
+## Testing
 
-### Test Etme Types
-- **Unit Test Etme**: Individual components/functions
-- **Integration Test Etme**: Component interactions
-- **End-to-End (E2E)**: Full user workflows
-- **Visual Regression**: UI change detection
-- **Performans Test Etme**: Load, stress, spike Test Etme
-- **Accessibility Test Etme**: WCAG compliance
+### Test Türleri
+- **Unit Testing**: Tekil bileşenler/fonksiyonlar
+- **Integration Testing**: Bileşenler arası etkileşimler
+- **End-to-End (E2E)**: Uçtan uca kullanıcı akışları
+- **Visual Regression**: UI değişikliği tespiti
+- **Performance Testing**: Load, stress, spike testleri
+- **Accessibility Testing**: WCAG uyumluluğu
 
-### Test Etme Frameworks
-- **Jest**: JavaScript Test Etme framework
-- **Mocha**: Flexible test runner
-- **pytest**: Python Test Etme framework
-- **RSpec**: Ruby Test Etme framework
-- **JUnit**: Java Test Etme framework
+### Testing Frameworks
+- **Jest**: JavaScript test framework'ü
+- **Mocha**: Esnek test çalıştırıcısı
+- **pytest**: Python test framework'ü
+- **RSpec**: Ruby test framework'ü
+- **JUnit**: Java test framework'ü
 
-### E2E Test Etme Tools
-- **Selenium**: Browser automation
-- **Cypress**: Modern E2E Test Etme
-- **Playwright**: Cross-browser automation
-- **Puppeteer**: Headless Chrome control
+### E2E Testing Tools
+- **Selenium**: Tarayıcı otomasyonu
+- **Cypress**: Modern E2E test aracı
+- **Playwright**: Çapraz tarayıcı otomasyonu
+- **Puppeteer**: Headless Chrome kontrolü
 
 ## Accessibility (a11y)
 
 ### WCAG Guidelines
-- **Perceivable**: Text alternatives, captions, adaptable content
-- **Operable**: Keyboard navigation, sufficient time, no seizures
-- **Understandable**: Readable, predictable, input assistance
-- **Robust**: Compatible ile assistive technologies
+- **Perceivable**: Metin alternatifleri, altyazılar, uyarlanabilir içerik
+- **Operable**: Klavye ile gezinme, yeterli zaman, nöbet tetiklememe
+- **Understandable**: Okunabilirlik, öngörülebilirlik, giriş yardımı
+- **Robust**: Yardımcı teknolojilerle uyumluluk
 
-### Implementation
-- **Semantic HTML**: Proper heading hierarchy, landmarks
-- **ARIA Attributes**: Roles, states, properties
-- **Focus Yönetim**: Visible focus indicators, logical tab order
-- **Color Contrast**: Minimum 4.5:1 ratio için text
-- **Screen Reader Test Etme**: NVDA, JAWS, VoiceOver
-- **Keyboard Navigation**: All interactive elements accessible
+### Uygulama
+- **Semantic HTML**: Doğru başlık hiyerarşisi, landmarks
+- **ARIA Attributes**: Roller, durumlar, özellikler
+- **Focus Management**: Görünür focus göstergeleri, mantıklı tab sırası
+- **Color Contrast**: Metin için minimum 4.5:1 oranı
+- **Screen Reader Testing**: NVDA, JAWS, VoiceOver
+- **Keyboard Navigation**: Tüm etkileşimli öğelerin erişilebilir olması
 
 ## Progressive Web Apps (PWAs)
 
 ### PWA Features
-- **Service Workers**: Offline functionality, background sync
-- **Web App Manifest**: Install prompt, icons, theme colors
-- **App Shell**: Cached UI skeleton
-- **Push Notifications**: User engagement
-- **Responsive Design**: Works on all devices
-- **HTTPS Required**: Secure context
+- **Service Workers**: Offline işlevsellik, background sync
+- **Web App Manifest**: Kurulum istemi, ikonlar, tema renkleri
+- **App Shell**: Önbelleğe alınmış UI iskeleti
+- **Push Notifications**: Kullanıcı etkileşimi
+- **Responsive Design**: Tüm cihazlarda çalışır
+- **HTTPS Required**: Güvenli bağlam zorunluluğu
 
-### Tools
-- **Workbox**: Service worker libraries
-- **Lighthouse**: PWA auditing
-- **PWA Builder**: Generate manifests ve icons
+### Araçlar
+- **Workbox**: Service worker kütüphaneleri
+- **Lighthouse**: PWA denetimi
+- **PWA Builder**: Manifest ve ikon üretimi
 
-## Emerging Technologies
+## Yükselen Teknolojiler
 
 ### WebAssembly (Wasm)
-- **Purpose**: Run compiled code içinde browser at near-native speed
-- **Languages**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editing, cryptography, ML inference
+- **Purpose**: Derlenmiş kodu tarayıcıda yerel hıza yakın çalıştırmak
+- **Languages**: C++, Rust, Go derleme hedefleri
+- **Use Cases**: Oyunlar, video düzenleme, kriptografi, ML inference
 
 ### Serverless Mimari
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server Yönetim, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-içinde, debugging complexity
+- **Benefits**: Sunucu yönetimi yok, auto-scaling, kullandıkça öde
+- **Considerations**: Cold start'lar, vendor lock-in, debugging karmaşıklığı
 
-### Jamstack Mimari
-- **JavaScript**: Client-side interactivity
-- **APIs**: Serverless functions, third-party services
-- **Markup**: Pre-built static files
+### Jamstack Mimarisi
+- **JavaScript**: İstemci tarafı etkileşim
+- **APIs**: Serverless functions, üçüncü taraf hizmetler
+- **Markup**: Önceden oluşturulmuş statik dosyalar
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Benefits**: Performans, Güvenlik, scalability, developer experience
+- **Benefits**: Performans, güvenlik, ölçeklenebilirlik, geliştirici deneyimi
 
-### Real-Time İletişim
-- **WebSockets**: Bidirectional İletişim
-- **Server-Sent Olaylar**: Server-to-client streaming
-- **WebRTC**: Peer-to-peer video, audio, Veri
-- **Use Cases**: Chat, collaboration, live streaming, gaming
+### Real-Time Communication
+- **WebSockets**: Çift yönlü iletişim
+- **Server-Sent Events**: Sunucudan istemciye akış
+- **WebRTC**: Eşler arası video, ses, veri
+- **Use Cases**: Sohbet, iş birliği, canlı yayın, oyun
 
 ### Micro Frontends
-- **Concept**: Extend microservices to frontend
+- **Concept**: Microservices yaklaşımını frontend'e genişletmek
 - **Approaches**: Build-time, run-time, edge-side integration
-- **Benefits**: Independent deployments, team autonomy
-- **Challenges**: Consistency, Performans, complexity
+- **Benefits**: Bağımsız dağıtımlar, ekip özerkliği
+- **Challenges**: Tutarlılık, performans, karmaşıklık

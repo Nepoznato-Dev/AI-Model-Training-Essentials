@@ -1,144 +1,137 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: prompt_engineering.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Промпт-инжиниринг
 
-# Prompt Engineering
-
-Prompt engineering is the practice из designing, refining, и optimising input prompts to get the best possible output from a Язык model. It is both an art и a Наука, и it is the primary interface для controlling LLM behaviour without fine-tuning.
+Prompt engineering — это практика проектирования, доработки и оптимизации входных prompts, чтобы получать от языковой модели максимально качественный результат. Это одновременно и искусство, и наука, а также основной интерфейс управления поведением LLM без fine-tuning.
 
 ---
 
-## Core Principles
+## Основные принципы
 
-### Clarity и Specificity
-A clear prompt leaves no room для ambiguity. Specify exactly what you want, including format, length, и perspective.
+### Ясность и конкретность
+Чёткий prompt не оставляет места для неоднозначности. Точно указывайте, что именно вы хотите получить, включая формат, длину и перспективу изложения.
 
-**Vague:**
-> "Tell me about Python."
+**Расплывчато:**
+> "Расскажи мне о Python."
 
-**Specific:**
-> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, и keep your answer under 200 words."
+**Конкретно:**
+> "Объясни Global Interpreter Lock (GIL) в Python. Опиши, как он влияет на multithreading, приведи один способ обхода и уложись в 200 слов."
 
-### Provide Context
-Models perform better when they know the role, audience, и goal.
+### Предоставляйте контекст
+Модели работают лучше, когда знают роль, аудиторию и цель.
 
-**Without context:**
-> "Write a function to sort a list."
+**Без контекста:**
+> "Напиши функцию для сортировки списка."
 
-**с context:**
-> "You are a senior Python developer. Write a function to sort a list из dictionaries by a given key. Use type hints и handle edge cases. the audience is junior developers."
+**С контекстом:**
+> "Ты senior Python developer. Напиши функцию для сортировки списка словарей по заданному ключу. Используй type hints и обработай edge cases. Аудитория — junior developers."
 
-### Use Positive Instructions
-Tell the model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple Язык accessible to a 10-year-old."
+### Используйте позитивные инструкции
+Говорите модели, что нужно сделать, а не только чего избегать. Формулировка "Don't include jargon" слабее, чем "Use simple language accessible to a 10-year-old."
 
 ---
 
-## Prompt Structures
+## Структуры prompts
 
-### System / User / Assistant Roles
-Most LLM APIs Поддержка a multi-turn structure:
+### Роли System / User / Assistant
+Большинство LLM APIs поддерживают многошаговую структуру:
 
-- **System message**: Sets the model's behaviour, persona, и constraints (persists для the whole session).
-- **User message**: the current query or instruction.
-- **Assistant message**: the model's previous responses (used для continuity).
+- **System message**: задаёт поведение модели, persona и ограничения (сохраняется на всю сессию).
+- **User message**: текущий запрос или инструкция.
+- **Assistant message**: предыдущие ответы модели (используются для continuity).
 
-**Example (OpenAI API style):**
-System: You are a helpful coding assistant. You reply с concise code Примеры и brief explanations. Never provide unsafe code.
+**Пример (в стиле OpenAI API):**
+System: You are a helpful coding assistant. You reply with concise code examples and brief explanations. Never provide unsafe code.
 User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-Provide 2–3 Примеры из the desired input-output format before asking the model to perform the task. This teaches the pattern.
+Перед тем как просить модель выполнить задачу, приведите 2–3 примера желаемого формата «вход-выход». Так вы обучаете её нужному шаблону.
 
-**Example:**
+**Пример:**
 User: Convert these sentences to passive voice:
-Input: the cat chased the mouse.
-Output: the mouse was chased by the cat.
-Input: the chef cooked the meal.
-Output: the meal was cooked by the chef.
-Input: the storm destroyed the house.
+Input: The cat chased the mouse.
+Output: The mouse was chased by the cat.
+Input: The chef cooked the meal.
+Output: The meal was cooked by the chef.
+Input: The storm destroyed the house.
 Output: (model completes)
 
-### Chain-из-Thought (CoT)
-Encourage the model to show its reasoning step by step. This improves accuracy on arithmetic, logic, и multi-step tasks.
+### Chain-of-Thought (CoT)
+Попросите модель показывать ход рассуждений шаг за шагом. Это повышает точность в арифметике, логике и многошаговых задачах.
 
-**Without CoT:**
-> "What is 24 × 37?"
+**Без CoT:**
+> "Сколько будет 24 × 37?"
 
-**с CoT:**
-> "Calculate 24 × 37. Show your reasoning step by step."
+**С CoT:**
+> "Вычисли 24 × 37. Покажи ход рассуждений шаг за шагом."
 
-the model will produce intermediate steps, reducing arithmetic errors.
+Модель будет выдавать промежуточные шаги, уменьшая количество арифметических ошибок.
 
 ### Structured Outputs
-Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
-User: List three pros и three cons из microservices. Return only a valid JSON object с keys "pros" и "cons", each an array из strings.
+Запрашивайте конкретный формат, например JSON, YAML или markdown tables, чтобы разбор результата был надёжным.
+User: List three pros and three cons of microservices. Return only a valid JSON object with keys "pros" and "cons", each an array of strings.
 
 ---
 
-## Продвинутый Techniques
+## Продвинутые техники
 
 ### Self-Consistency
-Generate multiple responses для the same prompt (с a temperature > 0) и take a majority vote on the final answer. This is especially effective для reasoning tasks.
+Сгенерируйте несколько ответов на один и тот же prompt (с temperature > 0), а затем выберите итоговый ответ большинством голосов. Это особенно эффективно для задач на рассуждение.
 
-### Tree-из-Thoughts
-Explore multiple reasoning paths в parallel, evaluate each, и choose the best one. This is a research-level technique but can be approximated by asking the model to "explore alternative solutions."
+### Tree-of-Thoughts
+Исследуйте несколько путей рассуждения параллельно, оцените каждый и выберите лучший. Это техника исследовательского уровня, но её можно приблизительно воспроизвести, попросив модель "explore alternative solutions."
 
 ### ReAct (Reasoning + Acting)
-Let the model interleave reasoning с tool calls. It can think, then act (e.g., search the Веб, run code), then think again based on the result.
+Позвольте модели чередовать рассуждение с вызовами инструментов. Она может подумать, затем выполнить действие (например, поискать в web или запустить код), а затем снова рассуждать на основе результата.
 
-**Prompt structure:**
-You have access to a calculator и a search engine. для each step, output:
+**Структура prompt:**
+You have access to a calculator and a search engine. For each step, output:
 Thought: (your reasoning)
 Action: (tool name, input)
 Observation: (tool output)
 ... continue until you have the final answer.
 
-### Persona Assignment
-Assign a specific persona to frame the response.
+### Назначение persona
+Задайте конкретную persona, чтобы определить рамку ответа.
 
 **Примеры:**
-- "You are a Linux kernel developer explaining memory Управление to a new graduate."
+- "You are a Linux kernel developer explaining memory management to a new graduate."
 - "You are a friendly nutritionist giving general advice to a client."
 - "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## Parameter Tuning
+## Настройка параметров
 
-- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 для factual answers; 0.7–1.0 для creative writing.
-- **Top-p** (nucleus sampling): Cuts off the probability mass at a certain cumulative threshold. 0.9 means the model samples from the top 90% из likely tokens. Usually adjust either temperature or top-p, not both.
-- **Max tokens**: Sets the maximum output length. Remember to reserve space для the response within the context window.
-- **Frequency penalty**: Reduces repetition из the same tokens.
-- **Presence penalty**: Encourages the model to introduce new topics.
-
----
-
-## Common Pitfalls и Fixes
-
-| Problem | Likely cause | Fix |
-|---------|--------------|-----|
-| Model ignores parts из prompt | Prompt too long or overloaded | Shorten; put the most important instruction at the end |
-| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
-| Output is too terse | Overly restrictive | Add "Explain в detail" or lower temperature |
-| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" и provide a RAG context |
-| Inconsistent formatting | No explicit format instruction | Ask для JSON, markdown table, or bullet list |
-| Model answers в wrong Язык | No Язык instruction | Explicitly state "Respond в Английский" (or your target Язык) |
+- **Temperature** (0.0 – 1.0+): управляет случайностью. Ниже = более детерминированно, выше = более креативно. Используйте 0.0–0.3 для фактических ответов; 0.7–1.0 для творческого письма.
+- **Top-p** (nucleus sampling): отсекает распределение вероятностей на заданном накопленном пороге. 0.9 означает, что модель выбирает из верхних 90% наиболее вероятных tokens. Обычно настраивают либо temperature, либо top-p, но не оба сразу.
+- **Max tokens**: задаёт максимальную длину вывода. Не забывайте оставлять место для ответа внутри context window.
+- **Frequency penalty**: уменьшает повторение одних и тех же tokens.
+- **Presence penalty**: побуждает модель вводить новые темы.
 
 ---
 
-## Prompt Templates для Common Tasks
+## Типичные проблемы и способы исправления
+
+| Проблема | Вероятная причина | Исправление |
+|---------|--------------|-------------|
+| Модель игнорирует части prompt | Prompt слишком длинный или перегружен | Сократите его; самую важную инструкцию поместите в конец |
+| Вывод слишком многословный | Нет ограничения по длине | Добавьте "Limit to 3 sentences" или задайте `max_tokens` |
+| Вывод слишком краткий | Слишком жёсткие ограничения | Добавьте "Explain in detail" или уменьшите temperature |
+| Фактические hallucinations | Недостаточно контекста или вопрос двусмысленный | Добавьте "If you are unsure, say 'I don't know'" и предоставьте RAG-контекст |
+| Непоследовательное форматирование | Нет явного указания формата | Попросите JSON, markdown table или bullet list |
+| Модель отвечает не на том языке | Нет указания языка | Явно напишите "Respond in English" (или на нужном языке) |
+
+---
+
+## Шаблоны prompts для типовых задач
 
 ### Summarisation
-Summarise the following text в 3 bullet points. Focus on the main arguments и avoid details.
+Summarise the following text in 3 bullet points. Focus on the main arguments and avoid details.
 
 Text: [insert text]
 
 
 ### Code Generation
-Write a [Язык] function that [does X].
+Write a [language] function that [does X].
 Requirements:
 
 Use type hints.
@@ -154,28 +147,28 @@ Do not use external libraries unless specified.
 Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
 
 ### Brainstorming
-Generate 10 ideas для [topic]. для each idea, give a one-sentence description и one potential challenge.
+Generate 10 ideas for [topic]. For each idea, give a one-sentence description and one potential challenge.
 
 text
 
 ### Classification
-Classify the following customer Обратная связь as [positive, neutral, negative].
-Provide a confidence score (0-100) и a brief reason.
+Classify the following customer feedback as [positive, neutral, negative].
+Provide a confidence score (0-100) and a brief reason.
 
-Обратная связь: [insert text]
+Feedback: [insert text]
 
-### Translation с Style
-Translate the following Английский text to Spanish. Use an informal tone suitable для a social media post.
+### Translation with Style
+Translate the following English text to Spanish. Use an informal tone suitable for a social media post.
 Text: [insert text]
 
 ---
 
-## Evaluation из Prompts
+## Оценка prompts
 
-Treat prompts as code: version them, test them, и iterate.
+Относитесь к prompts как к коду: версионируйте их, тестируйте и итеративно улучшайте.
 
-- **A/B test** different prompt variants on a held-out set из queries.
-- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
-- **Keep a prompt registry** (a simple text file or spreadsheet) с the prompt, version, и observed Производительность.
+- **A/B test** разные варианты prompts на отложенном наборе запросов.
+- **Measure success** через human evaluation или автоматические метрики (например, exact match, BLEU, custom scoring).
+- **Keep a prompt registry** (простой текстовый файл или spreadsheet) с самим prompt, версией и наблюдаемой производительностью.
 
 ---

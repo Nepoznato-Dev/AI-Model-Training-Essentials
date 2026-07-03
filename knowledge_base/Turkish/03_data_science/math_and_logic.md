@@ -1,194 +1,187 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: math_and_logic.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Matematik ve Mantık
 
-# Mathematics ve Logic
+## Matematik Nedir?
 
-## What is Mathematics?
+Matematik; sayıları, şekilleri, örüntüleri ve mantıksal ilişkileri inceleyen alandır. Hem bir bilimdir hem de evreni tanımlamak için kullanılan bir dildir. Matematik; aritmetik, cebir, geometri, kalkülüs, istatistik ve mantık gibi dallara ayrılır. Fizik, mühendislik, computer science, ekonomi ve daha birçok alanın temelini oluşturur.
 
-Mathematics is bu study içinde numbers, shapes, patterns, ve logical relationships. It is both a Bilim ve a Dil used to describe bu universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, İstatistikler, ve logic. Mathematics is bu foundation içinde physics, engineering, computer Bilim, Ekonomi, ve many other fields.
+## Aritmetik
 
-## Arithmetic
-
-Arithmetic is bu branch içinde mathematics dealing ile basic operations on numbers. bu four fundamental operations are addition (+), subtraction (−), multiplication (×), ve division (÷). bu order içinde operations specifies bu sequence içinde which calculations must be performed: Parentheses, Exponents, Multiplication ve Division (left to right), Addition ve Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 ve itself. bu first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, ve 29.
+Aritmetik, sayılar üzerindeki temel işlemlerle ilgilenen matematik dalıdır. Dört temel işlem toplama (+), çıkarma (−), çarpma (×) ve bölmedir (÷). İşlem önceliği, hesaplamaların hangi sırayla yapılması gerektiğini belirler: Parantezler, Üsler, Çarpma ve Bölme (soldan sağa), Toplama ve Çıkarma (soldan sağa). Bu sıralama genellikle **PEMDAS** veya **BODMAS** olarak hatırlanır. Asal sayı, 1'den büyük olup 1 ve kendisi dışında böleni olmayan tam sayıdır. İlk asal sayılar 2, 3, 5, 7, 11, 13, 17, 19, 23 ve 29'dur.
 
 **Örnekler:**
-- Prime factorization: 84 = 2² × 3 × 7
-- Greatest Common Divisor (GCD) içinde 24 ve 36: 12
-- Least Common Multiple (LCM) içinde 4 ve 6: 12
+- Asal çarpanlara ayırma: 84 = 2² × 3 × 7
+- 24 ve 36'nın Greatest Common Divisor (GCD) değeri: 12
+- 4 ve 6'nın Least Common Multiple (LCM) değeri: 12
 
-## Algebra
+## Cebir
 
-Algebra uses letters ve symbols to represent numbers ve quantities içinde equations ve formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding bu value(s) içinde bu variable(s) that make bu equation true.
+Cebir, denklemlerde ve formüllerde sayıları ve nicelikleri temsil etmek için harfler ve semboller kullanır. **Değişken**, bilinmeyen veya değişen bir niceliği temsil eden bir semboldür (genellikle bir harf). **Denklem**, iki ifadenin eşit olduğunu belirtir. Bir denklemi çözmek, denklemi doğru yapan değişken değer(ler)ini bulmak demektir.
 
-bu **quadratic formula** solves equations içinde bu form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
-
-
-A **function** maps each input to exactly one output. Common functions include:
-- Linear: y = mx + b (straight line, constant rate içinde change)
-- Quadratic: y = ax² + bx + c (parabola, curved)
-- Exponential: y = a × bˣ (growth or decay, rapid change)
-- Logarithmic: y = log_b(x) (inverse içinde exponential)
-
-**Key concepts:**
-- Domain: bu set içinde all possible input values
-- Range: bu set içinde all possible output values
-- Slope: rate içinde change (m içinde y = mx + b)
-- Intercept: where bu function crosses bu y-axis (b içinde y = mx + b)
-
-## Geometry
-
-Geometry is bu branch içinde mathematics that studies shapes, sizes, positions, ve properties içinde figures. A point has no size; it represents a location. A line extends infinitely içinde both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
-
-**Key rules:**
-- bu sum içinde angles içinde a triangle is always 180 degrees.
-- bu sum içinde angles içinde a quadrilateral is always 360 degrees.
-- bu Pythagorean theorem: içinde a right triangle, a² + b² = c² (where c is bu hypotenuse).
-- Circle circumference: 2πr
-- Circle area: πr²
-- Sphere volume: (4/3)πr³
-
-**π (pi)** is approximately 3.14159 ve is bu ratio içinde a circle's circumference to its diameter.
-
-**Common geometric shapes:**
-- Triangle: 3 sides, angles sum to 180°
-- Square: 4 equal sides, 4 right angles
-- Rectangle: 4 sides, opposite sides equal, 4 right angles
-- Circle: no sides, continuous curved boundary
-- Pentagon: 5 sides, angles sum to 540°
-- Hexagon: 6 sides, angles sum to 720°
-
-## İstatistikler ve Probability
-
-İstatistikler is bu Bilim içinde collecting, analysing, interpreting, ve presenting Veri.
-
-**Measures içinde central tendency:**
-- **Mean** (average): sum içinde all values divided by bu number içinde values
-- **Median**: middle value when Veri is sorted (less sensitive to outliers)
-- **Mode**: most frequently occurring value (can have multiple modes)
-
-**Measures içinde spread:**
-- **Range**: maximum - minimum
-- **Variance**: average içinde squared deviations from bu mean
-- **Standard deviation**: square root içinde variance (içinde same units as Veri)
-
-Probability measures bu likelihood içinde an event occurring, ranging from 0 (impossible) to 1 (certain). bu probability içinde two independent Olaylar both occurring is bu product içinde their individual probabilities.
-
-**Example:** Probability içinde rolling a 6 on a fair die: 1/6. Probability içinde rolling two 6s içinde a row: (1/6) × (1/6) = 1/36.
-
-## Probability için Bilişim ve ML
-
-A **random variable** is a variable whose value depends on bu outcome içinde a random process. A **probability distribution** describes how likely each outcome is.
-
-**Common distributions:**
-- **Bernoulli**: single trial ile two outcomes (e.g., coin flip)
-- **Binomial**: number içinde successes içinde n independent Bernoulli trials
-- **Normal (Gaussian)**: bell curve, symmetric around bu mean (common içinde natural phenomena)
-- **Poisson**: number içinde Olaylar içinde a fixed interval (e.g., emails per hour)
-
-**Expected value** is bu long-run average outcome içinde a random variable. **Variance** measures spread around that expectation.
-
-**Conditional probability** describes bu probability içinde an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
-
-**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
+**İkinci dereceden denklem formülü**, ax² + bx + c = 0 biçimindeki denklemleri çözer: x = (−b ± √(b²−4ac)) / (2a)
 
 
-içinde Makine Öğrenimi, probability underpins classification confidence, uncertainty estimation, Bayesian methods, ve many loss functions (such as cross-entropy).
+Bir **fonksiyon**, her girdiyi tam olarak bir çıktıya eşler. Yaygın fonksiyonlar şunlardır:
+- Doğrusal: y = mx + b (doğru, sabit değişim oranı)
+- İkinci dereceden: y = ax² + bx + c (parabol, eğri)
+- Üstel: y = a × bˣ (büyüme veya azalma, hızlı değişim)
+- Logaritmik: y = log_b(x) (üstel fonksiyonun tersi)
 
-## Calculus
+**Temel kavramlar:**
+- Domain: mümkün olan tüm girdi değerleri kümesi
+- Range: mümkün olan tüm çıktı değerleri kümesi
+- Slope: değişim oranı (y = mx + b içindeki m)
+- Intercept: fonksiyonun y-eksenini kestiği nokta (y = mx + b içindeki b)
 
-Calculus is bu branch içinde mathematics that studies continuous change.
+## Geometri
 
-**Differential calculus** deals ile rates içinde change ve slopes içinde curves, using **derivatives**. bu derivative içinde a function f(x) represents bu rate içinde change içinde f ile respect to x at a point. Notation: f'(x) or df/dx.
+Geometri, şekilleri, boyutları, konumları ve figürlerin özelliklerini inceleyen matematik dalıdır. Noktanın boyutu yoktur; bir konumu temsil eder. Bir doğru, her iki yönde sonsuza kadar uzanır. Doğru parçasının iki ucu vardır. Açı, ortak bir uç noktayı paylaşan iki ışından oluşur.
 
-**Common derivatives:**
+**Temel kurallar:**
+- Bir üçgendeki açıların toplamı her zaman 180 derecedir.
+- Bir dörtgendeki açıların toplamı her zaman 360 derecedir.
+- Pisagor teoremi: dik üçgende a² + b² = c² (burada c hipotenüstür).
+- Dairenin çevresi: 2πr
+- Dairenin alanı: πr²
+- Kürenin hacmi: (4/3)πr³
+
+**π (pi)** yaklaşık 3.14159'dur ve bir çemberin çevresinin çapına oranıdır.
+
+**Yaygın geometrik şekiller:**
+- Üçgen: 3 kenar, açı toplamı 180°
+- Kare: 4 eşit kenar, 4 dik açı
+- Dikdörtgen: 4 kenar, karşılıklı kenarlar eşit, 4 dik açı
+- Daire: kenarı yoktur, sürekli eğri bir sınırı vardır
+- Beşgen: 5 kenar, açı toplamı 540°
+- Altıgen: 6 kenar, açı toplamı 720°
+
+## İstatistik ve Olasılık
+
+İstatistik, veriyi toplama, analiz etme, yorumlama ve sunma bilimidir.
+
+**Merkezi eğilim ölçüleri:**
+- **Mean** (ortalama): tüm değerlerin toplamının değer sayısına bölünmesi
+- **Median**: veri sıralandığında ortadaki değer (aykırı değerlere daha az duyarlıdır)
+- **Mode**: en sık görülen değer (birden fazla mod olabilir)
+
+**Yayılım ölçüleri:**
+- **Range**: maksimum - minimum
+- **Variance**: ortalamadan sapmaların karelerinin ortalaması
+- **Standard deviation**: varyansın karekökü (veriyle aynı birimlerde)
+
+Olasılık, bir olayın gerçekleşme ihtimalini ölçer ve 0 (imkânsız) ile 1 (kesin) arasında değişir. İki bağımsız olayın birlikte gerçekleşme olasılığı, tek tek olasılıklarının çarpımıdır.
+
+**Örnek:** Adil bir zarda 6 gelme olasılığı: 1/6. Arka arkaya iki kez 6 gelme olasılığı: (1/6) × (1/6) = 1/36.
+
+## Bilişim ve ML için Olasılık
+
+**Rastgele değişken**, değeri rastgele bir sürecin sonucuna bağlı olan değişkendir. **Olasılık dağılımı**, her sonucun ne kadar olası olduğunu açıklar.
+
+**Yaygın dağılımlar:**
+- **Bernoulli**: iki sonuçlu tek deneme (ör. yazı tura)
+- **Binomial**: n bağımsız Bernoulli denemesinde başarı sayısı
+- **Normal (Gaussian)**: çan eğrisi, ortalama etrafında simetrik (doğal olaylarda yaygındır)
+- **Poisson**: sabit bir aralıktaki olay sayısı (ör. saatte gelen e-postalar)
+
+**Beklenen değer**, rastgele bir değişkenin uzun vadeli ortalama sonucudur. **Varyans**, bu beklentinin etrafındaki yayılımı ölçer.
+
+**Koşullu olasılık**, bir olayın başka bir olay gerçekleşmişken olma olasılığını ifade eder: P(A|B) = P(A ∩ B) / P(B) [eğer P(B) > 0 ise].
+
+**Bayes teoremi**, inançları kanıtla günceller: P(A|B) = P(B|A) × P(A) / P(B).
+
+
+Makine öğreniminde olasılık; sınıflandırma güveni, belirsizlik tahmini, Bayesyen yöntemler ve birçok loss function'ın (örneğin cross-entropy) temelini oluşturur.
+
+## Kalkülüs
+
+Kalkülüs, sürekli değişimi inceleyen matematik dalıdır.
+
+**Diferansiyel kalkülüs**, **türevler** kullanarak değişim oranları ve eğrilerin eğimleriyle ilgilenir. Bir f(x) fonksiyonunun türevi, belirli bir noktada f'nin x'e göre değişim oranını temsil eder. Gösterim: f'(x) veya df/dx.
+
+**Yaygın türevler:**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
 - d/dx [sin(x)] = cos(x)
 
-**Integral calculus** deals ile accumulation içinde quantities ve areas under curves, using **integrals**. bu integral represents bu area under bu curve between two points.
+**İntegral kalkülüs**, **integraller** kullanarak niceliklerin birikimi ve eğrilerin altındaki alanlarla ilgilenir. İntegral, iki nokta arasındaki eğrinin altında kalan alanı temsil eder.
 
-bu **fundamental theorem içinde calculus** connects differentiation ve integration: differentiation ve integration are inverse operations.
+**Kalkülüsün temel teoremi**, türev ile integrali birbirine bağlar: türev alma ve integral alma ters işlemlerdir.
 
-Calculus was developed independently by Isaac Newton ve Gottfried Wilhelm Leibniz içinde bu 17th century.
+Kalkülüs, 17. yüzyılda Isaac Newton ve Gottfried Wilhelm Leibniz tarafından birbirinden bağımsız olarak geliştirilmiştir.
 
-## Number Sistemler
+## Sayı Sistemleri
 
-- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
-- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
-- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers ve their negatives)
-- **Rational numbers**: numbers expressible as p/q where p ve q are integers ve q ≠ 0 (e.g., 1/2, 3/4, −5/3)
-- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
-- **Real numbers**: all rational ve irrational numbers (bu number line)
-- **Imaginary numbers**: involve bu square root içinde negative numbers; i = √(−1)
-- **Complex numbers**: combine real ve imaginary parts (a + bi)
+- **Natural numbers**: 1, 2, 3, 4, ... (sayma sayıları)
+- **Whole numbers**: 0, 1, 2, 3, ... (doğal sayılar ve sıfır)
+- **Integers**: ..., −2, −1, 0, 1, 2, ... (tüm tam sayılar ve negatifleri)
+- **Rational numbers**: p/q biçiminde yazılabilen sayılar; burada p ve q tam sayıdır ve q ≠ 0'dır (ör. 1/2, 3/4, −5/3)
+- **Irrational numbers**: kesir olarak ifade edilemeyen sayılar (ör. √2, π, e)
+- **Real numbers**: tüm rasyonel ve irrasyonel sayılar (sayı doğrusu)
+- **Imaginary numbers**: negatif sayıların karekökünü içerir; i = √(−1)
+- **Complex numbers**: reel ve sanal kısımların birleşimi (a + bi)
 
-## Logic ve Reasoning
+## Mantık ve Akıl Yürütme
 
-Logic is bu study içinde valid reasoning.
+Mantık, geçerli akıl yürütmeyi inceleyen alandır.
 
-**Deductive reasoning** draws specific conclusions from general premises. If bu premises are true ve bu argument is valid, bu conclusion must be true.
-- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
+**Deductive reasoning**, genel öncüllerden özel sonuçlar çıkarır. Öncüller doğruysa ve argüman geçerliyse sonuç da doğru olmak zorundadır.
+- **Örnek:** Bütün insanlar ölümlüdür. Sokrates insandır. O hâlde Sokrates ölümlüdür.
 
-**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee bu conclusion is true, but makes it probable.
-- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
+**Inductive reasoning**, özel gözlemlerden genel sonuçlar çıkarır. Sonucun doğru olduğunu garanti etmez, ancak olası hâle getirir.
+- **Örnek:** Gördüğüm her kuğu beyazdı. O hâlde bütün kuğular beyazdır. (Not: bu yanlıştır; siyah kuğular vardır!)
 
-**Common logical fallacies (errors içinde reasoning):**
-- **Ad hominem**: attacking bu person rather than bu argument
-- **Straw man**: misrepresenting an argument to make it easier to attack
-- **False dichotomy**: presenting only two options when more exist
-- **Circular reasoning**: using bu conclusion as a premise
-- **Appeal to authority**: claiming something is true because an authority says so
-- **Post hoc fallacy**: assuming that because A happened before B, A caused B
+**Yaygın mantık safsataları (akıl yürütme hataları):**
+- **Ad hominem**: argüman yerine kişiye saldırmak
+- **Straw man**: bir argümanı saldırması kolay olsun diye çarpıtmak
+- **False dichotomy**: daha fazla seçenek varken yalnızca iki seçenek sunmak
+- **Circular reasoning**: sonucu öncül olarak kullanmak
+- **Appeal to authority**: bir otorite öyle dediği için bir şeyin doğru olduğunu iddia etmek
+- **Post hoc fallacy**: A, B'den önce oldu diye A'nın B'ye sebep olduğunu varsaymak
 
-## Sets
+## Kümeler
 
-A **set** is a collection içinde distinct objects.
-- **Union** (A ∪ B): all elements from both sets
-- **Intersection** (A ∩ B): only elements common to both
-- **Empty set** (∅ or {}): contains no elements
-- **Subset** (A ⊆ B): all elements içinde A are also içinde B
-- **Venn diagrams**: visually represent relationships between sets
+**Küme**, birbirinden farklı nesnelerden oluşan bir koleksiyondur.
+- **Union** (A ∪ B): her iki kümedeki tüm elemanlar
+- **Intersection** (A ∩ B): yalnızca iki kümede ortak olan elemanlar
+- **Empty set** (∅ or {}): hiçbir eleman içermez
+- **Subset** (A ⊆ B): A'nın tüm elemanları aynı zamanda B'nin de elemanıdır
+- **Venn diagrams**: kümeler arasındaki ilişkileri görsel olarak temsil eder
 
-Set theory is bu foundation içinde modern mathematics ve logic.
+Küme teorisi, modern matematik ve mantığın temelidir.
 
-## Binary ve Number Bases
+## Binary ve Sayı Tabanları
 
-Computers represent Veri içinde **binary** (base 2), using only digits 0 ve 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
+Bilgisayarlar veriyi yalnızca 0 ve 1 rakamlarını kullanarak **binary** (taban 2) biçiminde temsil eder. Her bir binary basamağa **bit** denir. Sekiz bit bir **byte** eder.
 
-**Decimal** is bu base-10 number system humans typically use.
+**Decimal**, insanların tipik olarak kullandığı taban-10 sayı sistemidir.
 
-**Hexadecimal** is base 16, using digits 0–9 ve letters A–F, often used içinde Bilişim to represent binary Veri compactly.
+**Hexadecimal**, 0–9 rakamları ve A–F harflerini kullanan taban 16 sistemidir; computing'de binary veriyi daha kompakt göstermek için sıkça kullanılır.
 
-**Conversions:**
+**Dönüşümler:**
 - Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
 - Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
 
-Converting between number bases is a fundamental concept içinde computer Bilim.
+Sayı tabanları arasında dönüşüm yapmak, computer science'ın temel kavramlarından biridir.
 
-## Linear Algebra için Developers ve ML
+## Geliştiriciler ve ML için Lineer Cebir
 
-Linear algebra studies vectors, matrices, ve linear transformations.
+Lineer cebir; vektörleri, matrisleri ve lineer dönüşümleri inceler.
 
-A **vector** is an ordered list içinde numbers (e.g., features içinde an ML sample).
-- Example: [23, 1.8, 175] represents a person's age, height, ve weight
+**Vektör**, sıralı bir sayı listesidir (ör. bir ML örneğindeki feature'lar).
+- Örnek: [23, 1.8, 175] bir kişinin yaşını, boyunu ve kilosunu temsil eder
 
-A **matrix** is a 2D array içinde numbers (e.g., model weights or dataset batches).
-- Example: [[1, 2], [3, 4]] is a 2×2 matrix
+**Matris**, 2 boyutlu bir sayı dizisidir (ör. model ağırlıkları veya veri kümesi batch'leri).
+- Örnek: [[1, 2], [3, 4]] bir 2×2 matristir
 
-**Matrix multiplication** combines linear transformations ve is a core operation içinde graphics, simulation, ve Sinir Ağları.
+**Matrix multiplication**, lineer dönüşümleri birleştirir ve grafik, simülasyon ile neural network'lerde temel bir işlemdir.
 
-**Dot product** measures similarity ve projection between vectors:
+**Dot product**, vektörler arasındaki benzerliği ve izdüşümü ölçer:
 - a·b = Σ(a_i × b_i)
 - **Cosine similarity** = (a·b) / (||a|| × ||b||)
-- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
+- Cosine similarity, -1'den (zıt) 1'e (aynı yön) kadar değişir
 
-**Eigenvalues ve eigenvectors** describe directions that are scaled (not rotated) by a matrix ve are used içinde methods such as PCA (Principal Component Analysis).
+**Eigenvalue** ve **eigenvector**'ler, bir matris tarafından ölçeklenen (ama döndürülmeyen) yönleri tanımlar ve PCA (Principal Component Analysis) gibi yöntemlerde kullanılır.
 
-**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful için compression ve dimensionality reduction.
+**Rank**, bir matrisin ne kadar bağımsız bilgi içerdiğini gösterir. Düşük rank'lı yaklaşımlar sıkıştırma ve boyut indirgeme için faydalıdır.
 
-Most modern ML workloads rely heavily on optimized linear algebra libraries ve hardware acceleration.
+Modern ML iş yüklerinin büyük çoğunluğu, optimize edilmiş lineer cebir kütüphanelerine ve donanım hızlandırmasına yoğun biçimde dayanır.

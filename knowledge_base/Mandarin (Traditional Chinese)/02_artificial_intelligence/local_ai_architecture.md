@@ -1,202 +1,199 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: local_ai_architecture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 本地 AI 架構
 
-# Local AI 架構
-
-A practical 指南 to running large 語言 models entirely on-device — hardware considerations, inference engines, memory optimisation, 和 system design 為 edge 部署.
+完全在裝置上執行大型語言模型的實用指南——硬體考量、推論引擎、記憶體最佳化以及邊緣部署的系統設計。
 
 ---
 
-## Why Run AI Locally?
+## 為什麼要在本地執行 AI？
 
-- **Privacy**: No 資料 leaves 這 device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, 網路-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, 和 fine-tuning.
+- **隱私**：資料不離開裝置。
+- **成本**：無需為每個 token 支付 API 費用。
+- **延遲**：可預測、無需網路的推論。
+- **離線可用性**：無需網際網路即可工作。
+- **控制**：完全控制模型版本、客製化和微調。
 
 ---
 
-## Hardware Requirements
+## 硬體需求
 
-### GPU Memory (VRAM)
-這 most critical resource. Model size 在 memory ≈ **parameters × bytes per parameter**.
+### GPU 記憶體（VRAM）
+最關鍵的資源。記憶體中的模型大小 ≈ **參數 × 每參數位元組數**。
 
-| Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
+| 精度 | 每參數位元組數 | 3.8B 模型 | 7B 模型 | 13B 模型 | 70B 模型 |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| INT8（8 位元） | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
+| INT4（4 位元） | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ 系統.
+**實用指南：**
+- 8GB VRAM → 最高 7B 模型（4 位元）。
+- 12GB VRAM → 最高 13B 模型（4 位元）。
+- 24GB VRAM → 最高 70B 模型（4 位元）或 13B（8 位元）。
+- Apple Silicon（統一記憶體）可在 64GB+ 系統上執行 70B 模型。
 
-### RAM (System Memory)
-- 為 CPU inference, you need enough system RAM to load 這 model (similar to VRAM numbers).
-- 為 GPU inference, system RAM matters 為 loading 這 model into memory before offloading to VRAM.
+### RAM（系統記憶體）
+- 對於 CPU 推論，您需要足夠的系統 RAM 來載入模型（類似於 VRAM 數字）。
+- 對於 GPU 推論，系統 RAM 對於在卸載到 VRAM 之前將模型載入記憶體很重要。
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free 為 multiple models.
+### 儲存空間
+- 量化模型權重佔用幾 GB（例如，4 位元 7B ≈ 磁碟上 4 GB）。確保至少有 20–50 GB 的可用空間用於多個模型。
 
 ### CPU
-- 為 prompt processing (prefill) 和 CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent 效能 為 LLMs due to 這 unified memory 和 Neural Engine.
+- 對於提示處理（預填充）和 CPU 卸載，現代多核心 CPU 有幫助。
+- Apple M 系列晶片由於統一記憶體和神經引擎，對 LLM 具有出色的效能。
 
 ---
 
-## Quantisation
+## 量化
 
-Quantisation reduces 這 numerical precision 的 weights, dramatically cutting memory 和 increasing speed at a small accuracy cost.
+量化降低權重的數值精度，大幅減少記憶體並提高速度，準確度損失很小。
 
-### Popular Formats
+### 熱門格式
 
-| Format | Bits | Description | Typical use |
+| 格式 | 位元數 | 描述 | 典型用途 |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised 為 CPU/GPU hybrid | Best 為 local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best 為 NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good 為 batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | llama.cpp 格式，針對 CPU/GPU 混合最佳化 | 最適合本地推論 |
+| **GPTQ** | 4–8 | 僅 GPU，在 CUDA 上高效 | 最適合 NVIDIA GPU |
+| **AWQ** | 4 | 啟動感知，僅 GPU | 適合 GPU 上的批次推論 |
+| **ONNX** | 可變 | 標準化、跨平台 | 生產服務 |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality 為 most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation 與 better perplexity at 4/3 bits.
+### 選擇量化級別
+- **Q8_0**（8 位元）：最小質量損失，最大大小。
+- **Q6_K**（6 位元）：良好質量，適度壓縮。
+- **Q5_K_M**（5 位元）：常見的最佳點。
+- **Q4_K_M**（4 位元）：最小，大多數任務可接受的質量。
+- **IQ4_XS** / **IQ3_XS**：在 4/3 位元時具有更好困惑度的改進量化。
 
-**Rule 的 thumb:** Use Q4_K_M 為 a good balance 的 quality 和 size. If you have extra VRAM, use Q5 or Q6.
+**經驗法則：**使用 Q4_K_M 以獲得質量和大小的良好平衡。如果您有額外的 VRAM，請使用 Q5 或 Q6。
 
 ---
 
-## Inference Engines (Local)
+## 推論引擎（本地）
 
 ### llama.cpp
-- Written 在 C++.
-- Supports GGUF format.
-- Optimised 為 CPU 和 GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, 和 Python bindings.
+- 用 C++ 編寫。
+- 支援 GGUF 格式。
+- 針對 CPU 和 GPU（透過 CUDA、Metal、OpenCL）最佳化。
+- 非常快，特別是在 CPU 上。
+- 命令列、伺服器模式和 Python 綁定。
 
-**Example command:**
+**範例命令：**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+(-ngl 32 將 32 層卸載到 GPU)
+```
 
-Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+### Ollama
+- 使用簡單的 CLI 和 REST API 包裝 llama.cpp。
+- 自動下載模型並管理它們。
+- 非常適合原型設計和桌面應用程式。
+- 支援用於系統提示的自訂 Modelfile。
 
-Auto-downloads models, manages them.
-
-Great for prototyping and desktop apps.
-
-Supports custom Modelfiles for system prompts.
-
-Usage:
-
-bash
+**用法：**
+```bash
 ollama run phi3:3.8b
 ollama run llama3:8b
-LM Studio
-Graphical desktop app for Windows, macOS, Linux.
+```
 
-One-click download and chat interface.
+### LM Studio
+- 適用於 Windows、macOS、Linux 的圖形化桌面應用程式。
+- 一鍵下載和聊天介面。
+- 內建本地伺服器，具有 OpenAI 相容的 API。
+- 適合非技術使用者和快速測試。
 
-Built-in local server with OpenAI-compatible API.
+### Hugging Face Transformers + bitsandbytes
+- HF 模型的標準 Python 函式庫。
+- 使用 bitsandbytes 進行 4 位元量化（load_in_4bit=True）。
+- 對於微調更靈活，但推論比 llama.cpp 慢。
 
-Good for non-technical users and quick testing.
+### ExLlamaV2
+- 用於 GPTQ 和 AWQ 的非常快速的 GPU 推論。
+- 在 NVIDIA GPU 上效能最佳。
+- 支援批次生成。
 
-Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
+### mlx（Apple）
+- Apple 針對 M 系列晶片的框架。
+- 針對 Apple Silicon 高度最佳化。
+- Python API。
 
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
+---
 
-More flexible for fine-tuning but slower than llama.cpp for inference.
+## 記憶體管理
 
-ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
+### 上下文視窗和 KV 快取
+KV 快取為上下文中的每一層和每個 token 儲存鍵值對。它隨著上下文長度線性增長。
 
-Best performance on NVIDIA GPUs.
+記憶體成本 ≈ 2 × 層數 × (KV 頭數 × 頭維度) × token 數 × 每值位元組數
 
-Supports batched generation.
+對於具有 8 個 KV 頭和 128 頭維度的 32 層模型，每個 token 成本約為 ~32 × 8 × 128 × 2 位元組 = 每個 token 65 KB。對於 128k token，僅快取就約為 ~8 GB。
 
-mlx (Apple)
-Apple's framework for M-series chips.
+### 卸載策略
+- **層卸載**：將一些層放在 GPU 上，其他層放在 CPU 上。比純 CPU 更快，VRAM 需求更低。
+- **Token 串流**：逐步處理 token，而不是一次全部處理。
 
-Highly optimised for Apple Silicon.
+### 提示快取
+跨類似提示重用 KV 快取以避免重新計算預填充階段。某些框架支援此功能（例如，vLLM、帶有 --prompt-cache 的 llama.cpp）。
 
-Python API.
+### 記憶體對映檔案
+直接從磁碟載入模型權重，而無需將它們完全載入 RAM（對於記憶體有限系統上的巨大模型很有用）。llama.cpp 預設使用記憶體對映。
 
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
+---
 
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
+## 部署架構
 
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
+### 單裝置模式
+一個模型在一台機器上執行（筆記型電腦、智慧型手機、邊緣裝置）。用於個人助理、筆記應用程式、程式碼補全。
 
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
+### 混合邊緣-雲端
+本地模型處理常見查詢；對複雜問題使用雲端模型作為後備。這提供了兩全其美的效果——大多數情況下的速度/私密性，邊緣情況下的能力。
 
-Token streaming: Process tokens incrementally rather than all at once.
+### 分散式推論（多 GPU）
+對於較大的模型，跨多個 GPU 分割層（張量並行）或跨裝置分割上下文（管線並行）。使用帶有 -ngl 的 llama.cpp 或帶有 --num-gpu-layers 的 ExLlamaV2。
 
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
+### 行動部署
+- **Android**：透過 JNI 綁定或 ML Kit 使用 llama.cpp。
+- **iOS**：透過 Swift 綁定或 mlx 使用 llama.cpp。
+- **Web**：使用 WebLLM（透過 ONNX 執行環境在 WebGPU 上執行）或 transformers.js。
 
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
+---
 
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
+## 效能最佳化
 
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
+### Flash Attention
+加快注意力計算並減少記憶體使用。在 llama.cpp、ExLlamaV2 和現代 transformers 函式庫中可用。
 
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
+### 批次推論
+在單個前向傳遞中處理多個提示。大幅提高吞吐量。使用 llama-batch 或 vLLM。
 
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
+### 提前停止 / Token 預算
+設定最大 token 預算以防止無限制生成。
 
-iOS: Use llama.cpp via Swift bindings or mlx.
+### 推測解碼
+使用小型快速模型（草稿）預測 token，然後與大型模型並行驗證。可以實現 2–3 倍的加速。
 
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
+---
 
-Performance Optimisation
-Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
+## 實用設定指南
 
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
-
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
-
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
-
-Practical Setup Guide
-1. Install Ollama
-bash
+### 1. 安裝 Ollama
+```bash
 curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
-bash
-ollama pull phi3:3.8b-q4_K_M
-3. Run with API
-bash
-ollama serve
-Then send requests to http://localhost:11434/api/generate.
+```
 
-4. Python Integration
-python
+### 2. 拉取模型
+```bash
+ollama pull phi3:3.8b-q4_K_M
+```
+
+### 3. 使用 API 執行
+```bash
+ollama serve
+```
+然後向 http://localhost:11434/api/generate 發送請求。
+
+### 4. Python 整合
+```python
 import requests
 
 response = requests.post(
@@ -204,244 +201,34 @@ response = requests.post(
     json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
-bash
-# Download GGUF from Hugging Face
+```
+
+### 5.（替代方案）直接使用 llama.cpp
+```bash
+# 從 Hugging Face 下載 GGUF
 wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
 
-# Run server
+# 執行伺服器
 ./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
-
-Track memory usage (RAM and VRAM).
-
-Track tokens per second (throughput).
-
-Track time to first token (latency).
-
-Use built-in logging from llama.cpp or Ollama.
-
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
-
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
-
-Multilingual: Smaller models may have less multilingual capability.
-
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
-
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
-
-text
+```
 
 ---
 
-## File 4: `security_best_practices.md`
+## 監控和可觀察性
 
-```markdown
-# 安全 最佳實踐
-
-A practical 指南 to securing applications, infrastructure, 和 資料 — from 開發 to production.
-
----
-
-## OWASP Top 10 (2021) — 概述
-
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **安全 Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable 和 Outdated Components**: Known CVEs 在 dependencies.
-7. **Identification 和 Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software 和 資料 Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **安全 Logging 和 Monitoring Failures**: No detection 的 breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse 的 server to make requests to internal 系統.
+- 追蹤 GPU 使用率（Linux 上的 nvidia-smi，macOS 上的活動監視器）。
+- 追蹤記憶體使用（RAM 和 VRAM）。
+- 追蹤每秒 token 數（吞吐量）。
+- 追蹤第一個 token 的時間（延遲）。
+- 使用 llama.cpp 或 Ollama 的內建日誌記錄。
 
 ---
 
-## Input Validation 和 Output Encoding
+## 限制和權衡
 
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex 為 email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows 和 DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: 為 email, URL, 和 date validation, use standard libraries (e.g., `email-validator` 在 Python, `validator.js` 在 Node).
+- **質量差距**：小型本地模型（3.8B–7B）在複雜推理上通常不如大型雲端模型（GPT-4、Claude 3.5）。
+- **知識截止**：模型知識在訓練時凍結；使用 RAG 注入當前資訊。
+- **多語言**：較小的模型可能具有較少的多語言能力。
+- **工具使用**：代理式工作流程（函式呼叫）在小型模型上可能不太可靠。
 
-### Output Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell 命令 from user input; if unavoidable, use `shlex.quote()` or similar.
-
----
-
-## Authentication 和 Authorisation
-
-### Password 管理
-- **Hashing**: Store passwords 與 a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) 為 sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
-
-### Session 管理
-- Use secure, HTTP-only, SameSite cookies 為 session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout 和 on password change.
-- Avoid exposing session IDs 在 URLs.
-
-### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring 安全).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
-
-### JWT (JSON 網路 Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) 為 better 安全; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), 和 expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes 為 access tokens; use refresh tokens 為 longer sessions.
-- **Store securely**: Never store JWTs 在 localStorage (vulnerable to XSS); use HTTP-only cookies instead.
-
----
-
-## API 安全
-
-### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
-
-### Rate Limiting 和 Throttling
-- Apply per-user 和 per-IP rate limits to prevent abuse 和 DoS.
-- Return `429 Too Many Requests` 與 a `Retry-After` header.
-
-### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` 在 production).
-- Validate `Origin` header on 這 server side.
-
-### Input Validation
-- Validate all request parameters, including headers 和 body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` 在 JSON Schema).
-
-### HTTPS / TLS
-- Enforce HTTPS 在 production.
-- Use HSTS (HTTP Strict Transport 安全) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
-
----
-
-## Secrets 管理
-
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, 資料庫 URLs) to source control.
-- Use environment variables or secret 管理 tools.
-
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets 在 files 和 commit them (與 KMS or GPG).
-- **Docker secrets**: 為 Swarm mode; Kubernetes secrets (base64-encoded, but use 與 care; consider external Secrets Store CSI driver).
-
-### Rotation
-- Regularly rotate secrets 和 service accounts.
-- Automate rotation where possible.
-
----
-
-## Dependency 管理
-
-### Vulnerability Scanning
-- **Python**: `safety`, `pip-audit`, `bandit`.
-- **Node**: `npm audit`, `yarn audit`, `snyk`.
-- **Rust**: `cargo audit`.
-- **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
-
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests 為 minor/patch updates.
-- Review changelogs 為 breaking changes.
-
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums 的 downloaded dependencies.
-- Prefer official registries 和 trust only verified publishers.
-
----
-
-## Infrastructure 安全
-
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use 安全 groups (AWS) or NSGs (Azure) 為 fine-grained control.
-
-### OS Hardening
-- Apply 安全 updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services 和 default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### 網路 Segmentation
-- Place databases 和 caches 在 private subnets 與 no internet access.
-- Use a DMZ 為 public-facing services.
-- Apply 這 principle 的 least privilege to 網路 access.
-
-### Secrets 在 Infrastructure
-- Never store secrets 在 CI/CD environment variables unless encrypted.
-- Use 這 cloud provider's IAM roles 為 EC2/VM instances instead 的 long-lived keys.
-
----
-
-## Logging 和 Monitoring
-
-### What to Log
-- Authentication 事件 (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- 資料庫 schema changes.
-- System errors 和 exceptions.
-- API requests 和 responses (redact sensitive 資料).
-
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
-
-### Alerting
-- Set up alerts 為:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (安全 Information 和 Event 管理) 為 高級 correlation.
-
-### Log Retention
-- Retain logs 為 at least 30–90 days depending on regulatory requirements.
-- Store logs 在 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
-
----
-
-## Secure 開發 Lifecycle (SDL)
-
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early 在 design.
-3. **Secure coding standards**: Enforce via linters 和 code review checklists.
-4. **SAST** (Static Application 安全 測試): Scan source code 為 vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application 安全 測試): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration 測試**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan 為 when a breach is detected.
-
----
-
-## Emergency Checklist (When a Breach is Suspected)
-
-1. **Do not panic** — but act quickly.
-2. **Isolate** 這 affected 系統 (disconnect from 網路 if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, 和 disk images.
-4. **Identify** 這 scope: which 系統, which 資料.
-5. **Rotate** all compromised credentials 和 secrets.
-6. **Patch** 這 vulnerability.
-7. **Notify** affected users 和 regulatory bodies if required (within 法律 timeframes).
-8. **Conduct a post-mortem** to understand root cause 和 improve processes.
+對於許多日常任務（摘要、問答、程式碼補全、分類），本地模型已經足夠並且正在快速改進。

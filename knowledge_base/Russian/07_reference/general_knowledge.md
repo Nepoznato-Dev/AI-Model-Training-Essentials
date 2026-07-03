@@ -1,72 +1,65 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: general_knowledge.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Общие знания
 
-## the Solar System
+## Солнечная система
 
-the solar system consists из the Sun и eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, и Neptune. Earth is the third planet from the Sun, located approximately 150 million kilometers away. the Sun is a star at the center из the solar system that provides light и energy to all planets through nuclear fusion. Jupiter is the largest planet, с a mass greater than all other planets combined. Saturn is known для its prominent ring system made из ice и rock. Mars is called the Red Planet because из iron oxide on its surface. Neptune is the farthest planet from the Sun.
+Солнечная система состоит из Солнца и восьми планет: Меркурия, Венеры, Земли, Марса, Юпитера, Сатурна, Урана и Нептуна. Земля — третья планета от Солнца, расположенная примерно в 150 миллионах километров от него. Солнце — звезда в центре Солнечной системы, которая обеспечивает все планеты светом и энергией благодаря ядерному синтезу. Юпитер — крупнейшая планета, масса которой превышает суммарную массу всех остальных планет. Сатурн известен своей ярко выраженной системой колец, состоящих изо льда и камня. Марс называют Красной планетой из-за оксида железа на её поверхности. Нептун — самая удалённая от Солнца планета.
 
-## Earth
+## Земля
 
-Earth is the fifth-largest planet в the solar system и the only known planet to harbor life. Its surface is approximately 71% water и 29% land. the atmosphere is composed из approximately 78% nitrogen, 21% oxygen, и 1% other gases including carbon dioxide и argon. Earth has one natural satellite called the Moon. the Moon orbits Earth roughly every 27.3 days и is approximately 384,400 kilometers away. Earth has a diameter из approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Земля — пятая по величине планета в Солнечной системе и единственная известная планета, на которой существует жизнь. Её поверхность примерно на 71% покрыта водой и на 29% сушей. Атмосфера состоит приблизительно из 78% азота, 21% кислорода и 1% других газов, включая углекислый газ и аргон. У Земли есть один естественный спутник — Луна. Луна обращается вокруг Земли примерно за 27,3 дня и находится на расстоянии около 384 400 километров. Диаметр Земли составляет примерно 12 742 километра. Возраст Земли — около 4,5 миллиарда лет.
 
-## Weather и Climate
+## Погода и климат
 
-Weather refers to short-term atmospheric conditions в a specific location, including temperature, humidity, precipitation, и wind. Climate refers to long-term weather patterns в a region over many years. the greenhouse effect occurs when gases в Earth's atmosphere trap heat from the Sun, warming the planet. Carbon dioxide, water vapor, и methane are the main greenhouse gases. Climate change refers to long-term shifts в global temperatures и weather patterns, largely driven by human activity since the Industrial Revolution.
+Погода — это краткосрочные атмосферные условия в конкретном месте, включая температуру, влажность, осадки и ветер. Климат — это долгосрочные погодные закономерности в регионе на протяжении многих лет. Парниковый эффект возникает, когда газы в атмосфере Земли удерживают тепло Солнца, согревая планету. Основные парниковые газы — углекислый газ, водяной пар и метан. Изменение климата — это долгосрочные сдвиги глобальных температур и погодных режимов, в значительной степени вызванные деятельностью человека со времён Промышленной революции.
 
-## Oceans
+## Океаны
 
-Earth has five oceans: the Pacific, Atlantic, Indian, Southern, и Arctic. the Pacific Ocean is the largest, covering more than 165 million square kilometers, и the deepest, с the Mariana Trench reaching approximately 11 kilometers deep. the oceans cover about 361 million square kilometers в total. the average depth из the ocean is approximately 3,688 meters. the oceans regulate Earth's temperature и are home to the majority из life on the planet.
+У Земли пять океанов: Тихий, Атлантический, Индийский, Южный и Северный Ледовитый. Тихий океан — самый большой: он покрывает более 165 миллионов квадратных километров. Он же самый глубокий: глубина Марианской впадины достигает примерно 11 километров. В общей сложности океаны покрывают около 361 миллиона квадратных километров. Средняя глубина океана составляет примерно 3 688 метров. Океаны регулируют температуру Земли и являются средой обитания для большей части жизни на планете.
 
-## Continents
+## Континенты
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, и South America. Asia is the largest continent by area и population. Africa has the most countries из any continent. Antarctica is the coldest, driest, и windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe и Asia are sometimes considered a single landmass called Eurasia.
+На Земле семь континентов: Африка, Антарктида, Азия, Australia (Oceania), Европа, Северная Америка и Южная Америка. Азия — крупнейший континент по площади и населению. В Африке больше стран, чем на любом другом континенте. Антарктида — самый холодный, сухой и ветреный континент, покрытый ледяным щитом средней толщиной 2,1 километра. Европу и Азию иногда рассматривают как единый массив суши под названием Евразия.
 
-## Time и Calendars
+## Время и календари
 
-A year is the time it takes Earth to orbit the Sun, approximately 365.25 days. A leap year has 366 days и occurs every four years to account для the extra quarter-day. A day is one full rotation из Earth on its axis, approximately 24 hours. the Gregorian calendar is the most widely used calendar в the world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+Год — это время, за которое Земля совершает один оборот вокруг Солнца, примерно 365,25 суток. В високосном году 366 дней; он бывает раз в четыре года, чтобы учесть лишнюю четверть суток. Сутки — это один полный оборот Земли вокруг своей оси, примерно 24 часа. Григорианский календарь — самый распространённый календарь в современном мире. В неделе семь дней. В одном часе 60 минут. В одной минуте 60 секунд.
 
-## Light и Speed
+## Свет и скорость
 
-the speed из light в a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from the Sun takes about 8 minutes to reach Earth. A light-year is the distance light travels в one year, approximately 9.46 trillion kilometers. Nothing с mass can travel as fast as the speed из light according to Einstein's theory из special relativity.
+Скорость света в вакууме составляет примерно 299 792 километра в секунду, или около 186 000 миль в секунду. Свет от Солнца доходит до Земли примерно за 8 минут. Световой год — это расстояние, которое свет проходит за один год, приблизительно 9,46 триллиона километров. Согласно специальной теории относительности Эйнштейна, ничто, обладающее массой, не может двигаться со скоростью света.
 
-## Human Body
+## Человеческое тело
 
-the human body contains approximately 37 trillion cells. the adult human skeleton has 206 bones. the heart pumps blood through approximately 100,000 kilometers из blood vessels. the brain is the most complex organ и contains approximately 86 billion neurons. the human body is approximately 60% water. the longest bone в the body is the femur (thigh bone). the smallest bone is the stapes в the ear.
+В человеческом теле примерно 37 триллионов клеток. Скелет взрослого человека состоит из 206 костей. Сердце перекачивает кровь по кровеносным сосудам общей протяжённостью около 100 000 километров. Мозг — самый сложный орган; в нём примерно 86 миллиардов нейронов. Человеческое тело примерно на 60% состоит из воды. Самая длинная кость в теле — бедренная кость (femur). Самая маленькая — стремечко в ухе.
 
-## Water
+## Вода
 
-Water is a chemical compound made из two hydrogen atoms и one oxygen atom (H2O). It exists в three states: liquid (water), solid (ice), и gas (steam or water vapor). Water freezes at 0 degrees Celsius и boils at 100 degrees Celsius at sea level. Water is essential для all known forms из life. About 97.5% из Earth's water is saltwater; only 2.5% is freshwater.
+Вода — это химическое соединение, состоящее из двух атомов водорода и одного атома кислорода (H2O). Она существует в трёх состояниях: жидком (вода), твёрдом (лёд) и газообразном (пар или водяной пар). Вода замерзает при 0 градусах Цельсия и кипит при 100 градусах Цельсия на уровне моря. Вода необходима для всех известных форм жизни. Около 97,5% воды на Земле — солёная; только 2,5% приходится на пресную воду.
 
-## Animals
+## Животные
 
-Mammals are warm-blooded animals that give birth to live young и nurse them с milk. Birds are warm-blooded animals covered в feathers that lay eggs. Reptiles are cold-blooded animals с scales. Amphibians can live both on land и в water. Fish breathe through gills и live в water. Insects are the most numerous class из animals on Earth. the blue whale is the largest animal ever known to have lived, reaching up to 30 meters в length.
+Млекопитающие — это теплокровные животные, которые рождают живых детёнышей и выкармливают их молоком. Птицы — теплокровные животные, покрытые перьями и откладывающие яйца. Рептилии — холоднокровные животные с чешуёй. Земноводные могут жить и на суше, и в воде. Рыбы дышат жабрами и живут в воде. Насекомые — самый многочисленный класс животных на Земле. Синий кит — крупнейшее из когда-либо существовавших животных; его длина может достигать 30 метров.
 
-## География и Population
+## География и население
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India и China are the two most populous countries. the largest country by area is Russia, followed by Canada и China. the Nile и the Amazon are among the world's longest river Системы. Mount Everest, в the Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+Общая площадь поверхности Земли составляет около 510 миллионов квадратных километров. На Земле живёт около 8 миллиардов человек. Индия и Китай — две самые населённые страны. Крупнейшая страна по площади — Россия, за ней следуют Канада и Китай. Нил и Амазонка относятся к самым длинным речным системам мира. Эверест в Гималаях — самая высокая гора Земли над уровнем моря: 8 848,86 метра.
 
-## Energy и Resources
+## Энергия и ресурсы
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, и solar. Fossil fuels formed over millions из years from ancient organic matter. Renewable energy sources such as wind и solar are replenished naturally и are central to many decarbonisation strategies. Electrical energy is measured в joules; в households и industry, usage is commonly measured в kilowatt-hours (kWh).
+К основным мировым источникам энергии относятся нефть, природный газ, уголь, ядерная энергия, гидроэнергетика, энергия ветра и солнца. Ископаемое топливо сформировалось за миллионы лет из древнего органического вещества. Возобновляемые источники энергии, такие как ветер и солнце, естественным образом восполняются и играют центральную роль во многих стратегиях декарбонизации. Электрическая энергия измеряется в джоулях; в быту и промышленности потребление обычно измеряют в киловатт-часах (kWh).
 
-## Экономика Основы
+## Основы экономики
 
-Экономика studies how people и societies allocate limited resources. Supply и demand influence market prices. Inflation is a general rise в prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates the total value из goods и services produced в a country. Interest rates influence borrowing, saving, и investment behavior.
+Экономика изучает, как люди и общества распределяют ограниченные ресурсы. Спрос и предложение влияют на рыночные цены. Инфляция — это общий рост цен со временем, снижающий покупательную способность. Валовой внутренний продукт (GDP) оценивает общую стоимость товаров и услуг, произведённых в стране. Процентные ставки влияют на заимствования, сбережения и инвестиционное поведение.
 
-## Government и Civics
+## Государство и гражданское устройство
 
-Many modern states use one из three broad Системы: democracies, authoritarian Системы, or mixed forms. в constitutional democracies, power is typically distributed across branches such as legislative, executive, и judicial institutions. Laws define rights и responsibilities, while courts interpret и apply those laws. Local government often manages services such as schools, roads, и sanitation.
+Многие современные государства используют одну из трёх широких систем: демократию, авторитарную систему или смешанные формы. В конституционных демократиях власть обычно распределена между такими ветвями, как законодательные, исполнительные и судебные институты. Законы определяют права и обязанности, а суды толкуют и применяют эти законы. Местные органы власти часто управляют такими услугами, как школы, дороги и санитария.
 
-## Health и Public Safety
+## Здоровье и общественная безопасность
 
-Vaccines train the immune system to recognize и fight specific pathogens. Hand hygiene и clean water are among the most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as the common cold. Sleep, Питание, physical activity, и stress Управление are foundational contributors to long-term health outcomes.
+Вакцины обучают иммунную систему распознавать и бороться с конкретными патогенами. Гигиена рук и чистая вода относятся к наиболее эффективным мерам общественного здравоохранения. Антибиотики лечат бактериальные инфекции, но не излечивают вирусные заболевания, такие как обычная простуда. Сон, питание, физическая активность и управление стрессом — фундаментальные факторы долгосрочного здоровья.
 
-## Коммуникация и Media Literacy
+## Коммуникация и медиаграмотность
 
-Reliable information is usually supported by evidence, transparent sourcing, и independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Данные, while secondary sources interpret primary material. в the digital era, checking publication date, author credibility, и source quality is important для avoiding misinformation.
+Надёжная информация обычно подкрепляется доказательствами, прозрачным указанием источников и независимой проверкой. Корреляция не обязательно означает причинно-следственную связь. Первичные источники предоставляют данные из первых рук, а вторичные — интерпретируют первичный материал. В цифровую эпоху важно проверять дату публикации, надёжность автора и качество источника, чтобы не стать жертвой дезинформации.

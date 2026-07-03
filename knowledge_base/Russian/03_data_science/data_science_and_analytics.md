@@ -1,341 +1,334 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: data_science_and_analytics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Наука о данных и аналитика
 
-# Данные Наука и Analytics
+## Основные концепции
 
-## Core Concepts
+### Что такое Data Science?
+Data Science — это междисциплинарная область, которая использует научные методы, процессы, алгоритмы и системы для извлечения знаний и инсайтов из структурированных и неструктурированных данных. Она объединяет:
+- **Статистику**: математическую основу анализа
+- **Информатику**: программирование, алгоритмы, структуры данных
+- **Предметную экспертизу**: знание конкретной области
+- **Визуализацию данных**: эффективное представление результатов
 
-### What is Данные Наука?
-Данные Наука is an interdisciplinary field that uses scientific methods, processes, algorithms, и Системы to extract knowledge и insights from structured и unstructured Данные. It combines:
-- **Статистика**: Mathematical foundation для analysis
-- **Computer Наука**: Programming, algorithms, Данные structures
-- **Domain Expertise**: Subject matter knowledge
-- **Данные Visualization**: Communicating findings effectively
+### Типы данных
+- **Структурированные данные**: организованы в строки и столбцы (базы данных, электронные таблицы)
+- **Неструктурированные данные**: не имеют заранее заданного формата (текст, изображения, аудио, видео)
+- **Полуструктурированные данные**: имеют некоторую организацию, но не жесткую структуру (JSON, XML, HTML)
+- **Временные ряды**: последовательные точки данных, упорядоченные по времени
+- **Пространственные данные**: географическая и локационная информация
+- **Графовые данные**: узлы и ребра, представляющие связи
 
-### Данные Types
-- **Structured Данные**: Organized в rows/columns (databases, spreadsheets)
-- **Unstructured Данные**: No predefined format (text, images, audio, video)
-- **Semi-structured Данные**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series Данные**: Sequential Данные points indexed в time order
-- **Spatial Данные**: Geographic/location-based information
-- **Graph Данные**: Nodes и edges representing relationships
+### Процесс Data Science (CRISP-DM)
+1. **Понимание бизнеса**: определить цели и требования
+2. **Понимание данных**: собрать и изучить исходные данные
+3. **Подготовка данных**: очистить, преобразовать и привести данные к нужному формату (80% работы)
+4. **Моделирование**: выбрать и применить методы моделирования
+5. **Оценка**: проверить качество модели относительно поставленных целей
+6. **Внедрение**: реализовать модель в продуктивной среде
 
-### the Данные Наука Process (CRISP-DM)
-1. **Бизнес Understanding**: Define objectives и requirements
-2. **Данные Understanding**: Collect и explore initial Данные
-3. **Данные Preparation**: Clean, transform, и format Данные (80% из work)
-4. **Modeling**: Select и apply modeling techniques
-5. **Evaluation**: Assess model Производительность against objectives
-6. **Развертывание**: Implement model в production environment
+## Основы статистики
 
-## Статистика Основы
+### Описательная статистика
+- **Меры центральной тенденции**: среднее, медиана, мода
+- **Меры разброса**: размах, дисперсия, стандартное отклонение, межквартильный размах
+- **Форма распределения**: асимметрия (skewness), эксцесс (kurtosis)
+- **Процентили и квартили**: положение внутри распределения
 
-### Descriptive Статистика
-- **Measures из Central Tendency**: Mean, median, mode
-- **Measures из Dispersion**: Range, variance, standard deviation, interquartile range
-- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles и Quartiles**: Position within distribution
+### Выводная статистика
+- **Проверка гипотез**: нулевая гипотеза, альтернативная гипотеза, p-value
+- **Доверительные интервалы**: диапазон значений, который с высокой вероятностью содержит параметр генеральной совокупности
+- **Статистическая значимость**: вероятность того, что результат получен не случайно
+- **Ошибка I рода**: ложноположительный результат (отклонение истинной нулевой гипотезы)
+- **Ошибка II рода**: ложноотрицательный результат (неотклонение ложной нулевой гипотезы)
+- **Мощность теста**: вероятность правильно отклонить ложную нулевую гипотезу
 
-### Inferential Статистика
-- **Hypothesis Тестирование**: Null hypothesis, alternative hypothesis, p-values
-- **Confidence Intervals**: Range из values likely containing population parameter
-- **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejecting true null hypothesis)
-- **Type II Error**: False negative (failing to reject false null hypothesis)
-- **Power**: Probability из correctly rejecting false null hypothesis
+### Распределения вероятностей
+- **Нормальное распределение**: колоколообразная кривая, среднее = медиана = мода
+- **Биномиальное распределение**: исходы типа успех/неудача
+- **Распределение Пуассона**: число событий в фиксированном интервале
+- **Равномерное распределение**: все исходы равновероятны
+- **Экспоненциальное распределение**: время между событиями
+- **t-распределение**: малые выборки, неизвестная дисперсия генеральной совокупности
+- **Распределение хи-квадрат**: анализ категориальных данных
 
-### Probability Distributions
-- **Normal Distribution**: Bell curve, mean = median = mode
-- **Binomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count из События в fixed interval
-- **Uniform Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between События
-- **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical Данные analysis
+### Статистические тесты
+- **t-test**: сравнение средних двух групп
+- **ANOVA**: сравнение средних нескольких групп
+- **Chi-Square Test**: проверка независимости категориальных переменных
+- **Mann-Whitney U**: непараметрическая альтернатива t-test
+- **Pearson Correlation**: линейная связь между непрерывными переменными
+- **Spearman Correlation**: монотонная связь (на основе рангов)
+- **Kolmogorov-Smirnov**: сравнение распределений
 
-### Statistical Tests
-- **t-test**: Compare means between two groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Test**: Test independence из categorical variables
-- **Mann-Whitney U**: Non-parametric alternative to t-test
-- **Pearson Correlation**: Linear relationship between continuous variables
-- **Spearman Correlation**: Monotonic relationship (rank-based)
-- **Kolmogorov-Smirnov**: Compare distributions
+## Сбор и хранение данных
 
-## Данные Collection и Storage
+### Источники данных
+- **Базы данных**: SQL, NoSQL, реляционные БД, документо-ориентированные хранилища
+- **API**: REST, GraphQL, веб-скрейпинг
+- **Файлы**: CSV, JSON, XML, Parquet, Avro
+- **Потоковые данные**: Kafka, Kinesis, потоки в реальном времени
+- **Опросы и эксперименты**: первичный сбор данных
+- **Открытые датасеты**: государственные данные, Kaggle, академические репозитории
 
-### Данные Sources
-- **Databases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, Веб scraping
-- **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streaming Данные**: Kafka, Kinesis, real-time feeds
-- **Surveys и Experiments**: Primary Данные collection
-- **Public Datasets**: Government Данные, Kaggle, academic repositories
+### Хранилища данных
+- **ETL**: процесс Extract, Transform, Load
+- **Data Lake**: хранение сырых данных в исходном формате
+- **Data Warehouse**: структурированные, обработанные данные для анализа
+- **Data Mart**: подмножество хранилища для конкретного подразделения
+- **OLAP**: Online Analytical Processing, многомерные запросы
+- **Звездообразная схема**: таблицы фактов, окруженные таблицами измерений
+- **Снежинка**: нормализованные таблицы измерений
 
-### Данные Warehousing
-- **ETL**: Extract, Transform, Load process
-- **Данные Lake**: Raw Данные storage в native format
-- **Данные Warehouse**: Structured, processed Данные для analysis
-- **Данные Mart**: Subset из warehouse для specific department
-- **OLAP**: Online Analytical Processing, multidimensional queries
-- **Star Schema**: Fact tables surrounded by dimension tables
-- **Snowflake Schema**: Normalized dimension tables
+### Типы баз данных
+- **Реляционные (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
+- **Документные**: MongoDB, CouchDB (JSON-подобные документы)
+- **Ключ-значение**: Redis, DynamoDB (простые пары ключ-значение)
+- **Column-Family**: Cassandra, HBase (оптимизированы под колоночное хранение)
+- **Графовые**: Neo4j, Amazon Neptune (узлы и связи)
+- **Time-Series**: InfluxDB, TimescaleDB (данные с временными метками)
+- **Векторные**: Pinecone, Milvus (хранение векторных представлений для ML)
 
-### База данных Types
-- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
-- **Document**: MongoDB, CouchDB (JSON-like documents)
-- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassandra, HBase (optimized для columns)
-- **Graph**: Neo4j, Amazon Neptune (nodes и relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped Данные)
-- **Vector**: Pinecone, Milvus (embedding storage для ML)
+## Предобработка данных
 
-## Данные Preprocessing
+### Очистка данных
+- **Пропущенные значения**: импутация (среднее, медиана, мода, предсказание), удаление
+- **Выбросы**: обнаружение (IQR, Z-score), обработка (ограничение, преобразование)
+- **Дубликаты**: выявление и удаление
+- **Несогласованности**: стандартизация форматов, исправление опечаток
+- **Валидация данных**: проверка ограничений, диапазонов, типов
 
-### Данные Cleaning
-- **Missing Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
-- **Duplicates**: Identification и removal
-- **Inconsistencies**: Standardizing formats, fixing typos
-- **Данные Validation**: Checking constraints, ranges, types
+### Преобразование данных
+- **Нормализация**: масштабирование в диапазон 0-1
+- **Стандартизация**: Z-score-нормализация (mean=0, std=1)
+- **Кодирование**: one-hot, label, ordinal, target encoding
+- **Биннинг**: группировка непрерывных значений по категориям
+- **Логарифмическое преобразование**: уменьшение асимметрии
+- **Масштабирование признаков**: приведение признаков к сопоставимому виду
 
-### Данные Transformation
-- **Normalization**: Scaling to 0-1 range
-- **Standardization**: Z-score normalization (mean=0, std=1)
-- **Encoding**: One-hot, label, ordinal, target encoding
-- **Binning**: Grouping continuous values into categories
-- **Log Transformation**: Reducing skewness
-- **Feature Scaling**: Making features comparable
+### Инженерия признаков
+- **Создание признаков**: вывод новых признаков из существующих
+- **Отбор признаков**: выбор наиболее релевантных признаков
+  - Методы фильтрации (корреляция, chi-square)
+  - Методы-обертки (рекурсивное исключение признаков)
+  - Встроенные методы (LASSO, важность признаков в деревьях)
+- **Снижение размерности**: PCA, t-SNE, UMAP
+- **Признаки взаимодействия**: мультипликативное комбинирование признаков
+- **Полиномиальные признаки**: создание членов более высокого порядка
 
-### Feature Engineering
-- **Feature Creation**: Deriving new features from existing ones
-- **Feature Selection**: Choosing most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimination)
-  - Embedded methods (LASSO, tree-based importance)
-- **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combining features multiplicatively
-- **Polynomial Features**: Creating higher-order terms
+## Разведочный анализ данных (EDA)
 
-## Exploratory Данные Analysis (EDA)
+### Техники EDA
+- **Сводная статистика**: описание центральной тенденции, разброса и формы
+- **Одномерный анализ**: распределения одной переменной
+- **Двумерный анализ**: связи между двумя переменными
+- **Многомерный анализ**: взаимодействия нескольких переменных
+- **Корреляционный анализ**: выявление связей и мультиколлинеарности
+- **Сегментация**: группировка похожих наблюдений
 
-### EDA Techniques
-- **Summary Статистика**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Single variable distributions
-- **Bivariate Analysis**: Relationships between two variables
-- **Multivariate Analysis**: Multiple variable interactions
-- **Correlation Analysis**: Identify relationships и multicollinearity
-- **Segmentation**: Group similar observations
+### Инструменты визуализации
+- **Гистограммы**: распределение одной переменной
+- **Ящики с усами**: сводка по пяти числам, обнаружение выбросов
+- **Диаграммы рассеяния**: связь между двумя непрерывными переменными
+- **Тепловые карты**: матрицы корреляций, плотность
+- **Столбчатые диаграммы**: сравнение категорий
+- **Линейные графики**: тренды во времени
+- **Violin Plot**: плотность распределения с элементами box plot
+- **Pair Plot**: набор диаграмм рассеяния для пар переменных
 
-### Visualization Tools
-- **Histograms**: Distribution из single variable
-- **Box Plots**: Five-number summary, outlier detection
-- **Scatter Plots**: Relationship between two continuous variables
-- **Heatmaps**: Correlation matrices, density
-- **Bar Charts**: Categorical comparisons
-- **Line Charts**: Trends over time
-- **Violin Plots**: Distribution density с box plot elements
-- **Pair Plots**: Multiple scatter plots для variable pairs
+### Библиотеки Python для EDA
+- **pandas**: обработка и анализ данных
+- **numpy**: численные вычисления
+- **matplotlib**: базовая визуализация
+- **seaborn**: статистическая визуализация
+- **plotly**: интерактивные визуализации
+- **scipy**: научные вычисления и статистика
 
-### Python Libraries для EDA
-- **pandas**: Данные manipulation и analysis
-- **numpy**: Numerical Вычисления
-- **matplotlib**: Basic plotting
-- **seaborn**: Statistical visualization
-- **plotly**: Interactive visualizations
-- **scipy**: Scientific Вычисления и Статистика
+## Машинное обучение в науке о данных
 
-## Машинное обучение в Данные Наука
-
-### Supervised Learning
-- **Regression**: Predict continuous values
-  - Linear Regression
-  - Polynomial Regression
+### Обучение с учителем
+- **Регрессия**: предсказание непрерывных значений
+  - Линейная регрессия
+  - Полиномиальная регрессия
   - Ridge/LASSO/Elastic Net
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+  - Регрессор на дереве решений
+  - Регрессор Random Forest
+  - Градиентный бустинг (XGBoost, LightGBM, CatBoost)
   
-- **Classification**: Predict categorical labels
-  - Logistic Regression
-  - k-Nearest Neighbors
+- **Классификация**: предсказание категориальных меток
+  - Логистическая регрессия
+  - k-ближайших соседей
   - Naive Bayes
-  - Поддержка Vector Machines
-  - Decision Trees
+  - Метод опорных векторов
+  - Деревья решений
   - Random Forest
-  - Gradient Boosting
+  - Градиентный бустинг
   - Нейронные сети
 
-### Unsupervised Learning
-- **Clustering**: Group similar observations
+### Обучение без учителя
+- **Кластеризация**: группировка похожих наблюдений
   - k-Means
-  - Hierarchical Clustering
-  - DBSCAN (density-based)
+  - Иерархическая кластеризация
+  - DBSCAN (на основе плотности)
   - Gaussian Mixture Models
-  - Spectral Clustering
+  - Спектральная кластеризация
   
-- **Dimensionality Reduction**: Reduce feature count
+- **Снижение размерности**: уменьшение числа признаков
   - Principal Component Analysis (PCA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
   - Uniform Manifold Approximation (UMAP)
-  - Autoencoders
+  - Автоэнкодеры
   
-- **Association Rules**: Find co-occurring items
-  - Apriori Algorithm
+- **Ассоциативные правила**: поиск совместно встречающихся объектов
+  - Алгоритм Apriori
   - FP-Growth
 
-### Model Evaluation
-- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradeoff
+### Оценка моделей
+- **Метрики классификации**: точность, precision, recall, F1-score, ROC-AUC, матрица ошибок
+- **Метрики регрессии**: MAE, MSE, RMSE, R², Adjusted R²
+- **Кросс-валидация**: k-fold, stratified, leave-one-out, time series split
+- **Подбор гиперпараметров**: grid search, random search, байесовская оптимизация
+- **Кривые обучения**: диагностика компромисса bias-variance
 
-## Big Данные Technologies
+## Технологии Big Data
 
-### Distributed Вычисления Frameworks
+### Фреймворки распределенных вычислений
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: в-memory processing, faster than Hadoop
-  - Spark SQL: Structured Данные processing
-  - Spark Streaming: Real-time Данные
-  - MLlib: Машинное обучение library
-  - GraphX: Graph processing
-- **Apache Flink**: Stream processing с low latency
-- **Apache Beam**: Unified batch и streaming
+- **Apache Spark**: обработка в памяти, быстрее Hadoop
+  - Spark SQL: обработка структурированных данных
+  - Spark Streaming: работа с данными в реальном времени
+  - MLlib: библиотека машинного обучения
+  - GraphX: обработка графов
+- **Apache Flink**: потоковая обработка с низкой задержкой
+- **Apache Beam**: единый подход к batch- и streaming-обработке
 
-### Cloud Platforms
+### Облачные платформы
 - **AWS**: S3, EMR, Redshift, SageMaker, Glue
 - **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
-- **Azure**: Synapse Analytics, Databricks, Машинное обучение, Данные Lake
-- **Snowflake**: Cloud Данные warehouse
+- **Azure**: Synapse Analytics, Databricks, Machine Learning, Data Lake
+- **Snowflake**: облачное хранилище данных
 
-### Данные Pipeline Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline Управление (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: Данные orchestrator с asset focus
-- **dbt**: Данные transformation в warehouse
+### Инструменты конвейеров данных
+- **Apache Airflow**: оркестрация рабочих процессов
+- **Luigi**: управление конвейерами (Spotify)
+- **Prefect**: современная оркестрация рабочих процессов
+- **Dagster**: оркестратор данных с акцентом на активы данных
+- **dbt**: преобразование данных в хранилище
 
-## Бизнес Intelligence и Analytics
+## Business Intelligence и аналитика
 
-### BI Tools
-- **Tableau**: Visual analytics platform
-- **Power BI**: Microsoft Бизнес analytics
-- **Looker**: Данные exploration и insights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+### Инструменты BI
+- **Tableau**: платформа визуальной аналитики
+- **Power BI**: бизнес-аналитика Microsoft
+- **Looker**: исследование данных и получение инсайтов (Google)
+- **Qlik Sense**: ассоциативная аналитика
+- **Metabase**: BI с открытым исходным кодом
+- **Superset**: BI с открытым исходным кодом от Apache
 
-### Dashboard Design Principles
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to Данные type
-- **Use Color Strategically**: Highlight important information
-- **Maintain Consistency**: Standardize formats и scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Производительность**: Fast loading, efficient queries
-- **Mobile Considerations**: Responsive design
+### Принципы проектирования дашбордов
+- **Знайте свою аудиторию**: адаптируйте решение под потребности пользователей
+- **Выбирайте правильные визуализации**: соотносите тип графика с типом данных
+- **Используйте цвет стратегически**: выделяйте важную информацию
+- **Соблюдайте единообразие**: стандартизируйте форматы и шкалы
+- **Обеспечивайте интерактивность**: фильтры, детализация, всплывающие подсказки
+- **Оптимизируйте производительность**: быстрая загрузка, эффективные запросы
+- **Учитывайте мобильные устройства**: адаптивный дизайн
 
-### Key Производительность Indicators (KPIs)
-- **Financial**: Revenue, profit margin, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketing**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+### Ключевые показатели эффективности (KPI)
+- **Финансовые**: выручка, маржа прибыли, ROI, пожизненная ценность клиента
+- **Клиентские**: стоимость привлечения, уровень оттока, оценка удовлетворенности, NPS
+- **Операционные**: показатели эффективности, время цикла, уровень дефектов
+- **Маркетинговые**: коэффициенты конверсии, CTR, атрибуция
+- **Продуктовые**: активные пользователи, вовлеченность, удержание, освоение функций
 
-## Продвинутый Analytics
+## Продвинутая аналитика
 
-### Predictive Analytics
-- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeling**: Credit scoring, fraud detection, insurance
-- **Customer Analytics**: Churn prediction, propensity modeling
-- **Demand Forecasting**: Inventory optimization, supply chain
-- **Maintenance Prediction**: Equipment failure anticipation
+### Предиктивная аналитика
+- **Прогнозирование**: предсказание временных рядов (ARIMA, Prophet, LSTM)
+- **Моделирование рисков**: кредитный скоринг, выявление мошенничества, страхование
+- **Клиентская аналитика**: прогноз оттока, моделирование склонности
+- **Прогнозирование спроса**: оптимизация запасов, цепочки поставок
+- **Предиктивное обслуживание**: прогнозирование отказов оборудования
 
-### Prescriptive Analytics
-- **Optimization**: Linear programming, integer programming
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, influence diagrams
-- **A/B Тестирование**: Experimental design, statistical significance
-- **Multi-Armed Bandits**: Adaptive experimentation
+### Предписывающая аналитика
+- **Оптимизация**: линейное программирование, целочисленное программирование
+- **Симуляция**: методы Монте-Карло, дискретно-событийное моделирование
+- **Анализ решений**: деревья решений, influence diagrams
+- **A/B-тестирование**: экспериментальный дизайн, статистическая значимость
+- **Многорукие бандиты**: адаптивные эксперименты
 
-### Text Analytics (NLP)
-- **Text Preprocessing**: Tokenization, stemming, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF для theme discovery
-- **Named Entity Recognition**: Identifying people, places, organizations
-- **Text Classification**: Spam detection, categorization
-- **Word Embeddings**: Word2Vec, GloVe, BERT
+### Анализ текста (NLP)
+- **Предобработка текста**: токенизация, стемминг, лемматизация
+- **Анализ тональности**: классификация на позитивные/негативные/нейтральные
+- **Тематическое моделирование**: LDA, NMF для выявления тем
+- **Распознавание именованных сущностей**: выделение людей, мест и организаций
+- **Классификация текста**: обнаружение спама, категоризация
+- **Векторные представления слов**: Word2Vec, GloVe, BERT
 
-## Данные Ethics и Governance
+## Этика данных и управление данными
 
-### Данные Privacy
-- **GDPR**: EU General Данные Protection Regulation
-- **CCPA**: California Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability и Accountability Act (US Здравоохранение)
-- **Anonymization**: Removing personally identifiable information
-- **Differential Privacy**: Adding noise to protect individuals
-- **Consent Управление**: Opt-в/opt-out mechanisms
+### Конфиденциальность данных
+- **GDPR**: Общий регламент ЕС по защите данных
+- **CCPA**: Закон штата Калифорния о конфиденциальности потребителей
+- **HIPAA**: Закон о переносимости и подотчетности медицинского страхования (здравоохранение США)
+- **Анонимизация**: удаление персонально идентифицируемой информации
+- **Дифференциальная приватность**: добавление шума для защиты отдельных людей
+- **Управление согласием**: механизмы opt-in/opt-out
 
-### Данные Quality
-- **Accuracy**: Correctness из Данные
-- **Completeness**: All required Данные present
-- **Consistency**: No contradictions across sources
-- **Timeliness**: Данные Доступно when needed
-- **Validity**: Conforms to defined rules
-- **Uniqueness**: No duplicates
+### Качество данных
+- **Точность**: корректность данных
+- **Полнота**: наличие всех необходимых данных
+- **Согласованность**: отсутствие противоречий между источниками
+- **Своевременность**: данные доступны тогда, когда они нужны
+- **Валидность**: соответствие заданным правилам
+- **Уникальность**: отсутствие дубликатов
 
-### Bias и Fairness
-- **Sampling Bias**: Non-representative Данные collection
-- **Measurement Bias**: Flawed Данные collection instruments
-- **Algorithmic Bias**: Discriminatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processing, в-processing, post-processing
+### Смещения и справедливость
+- **Смещение выборки**: нерепрезентативный сбор данных
+- **Смещение измерения**: дефекты инструментов сбора данных
+- **Алгоритмическое смещение**: дискриминационные предсказания модели
+- **Метрики справедливости**: демографический паритет, равные возможности
+- **Снижение смещений**: предварительная обработка, обработка в процессе обучения, постобработка
 
-### Данные Governance Framework
-- **Данные Stewardship**: Responsibility для Данные assets
-- **Metadata Управление**: Данные about Данные documentation
-- **Данные Lineage**: Tracking Данные flow и transformations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Logging Данные access и changes
-- **Compliance**: Regulatory adherence
+### Рамка управления данными
+- **Data Stewardship**: ответственность за информационные активы
+- **Управление метаданными**: документация «данных о данных»
+- **Data Lineage**: отслеживание потоков и преобразований данных
+- **Контроль доступа**: разрешения на основе ролей
+- **Аудиторские следы**: журналирование доступа к данным и изменений
+- **Соответствие требованиям**: соблюдение регуляторных норм
 
-## Career Paths в Данные Наука
+## Карьерные направления в науке о данных
 
-### Roles
-- **Данные Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **Данные Scientist**: Statistical modeling, Машинное обучение, Продвинутый analytics
-- **ML Engineer**: Production ML Системы, model Развертывание, MLOps
-- **Данные Engineer**: Данные pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder Управление
-- **BI Developer**: Dashboard creation, report Разработка
-- **Research Scientist**: Novel algorithms, publications, Продвинутый research
+### Роли
+- **Data Analyst**: фокус на описательной аналитике, дашбордах и отчетности
+- **Data Scientist**: статистическое моделирование, машинное обучение, продвинутая аналитика
+- **ML Engineer**: промышленные системы ML, внедрение моделей, MLOps
+- **Data Engineer**: конвейеры данных, инфраструктура, процессы ETL
+- **Analytics Manager**: руководство командой, стратегия, работа со стейкхолдерами
+- **BI Developer**: создание дашбордов, разработка отчетов
+- **Research Scientist**: новые алгоритмы, публикации, углубленные исследования
 
-### Skills Matrix
-- **Technical**: Python/R, SQL, Статистика, ML frameworks, cloud platforms
-- **Analytical**: Problem-solving, critical thinking, experimental design
-- **Коммуникация**: Storytelling, visualization, presentation skills
-- **Бизнес**: Domain knowledge, stakeholder Управление, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control для models
+### Матрица навыков
+- **Технические**: Python/R, SQL, статистика, ML-фреймворки, облачные платформы
+- **Аналитические**: решение задач, критическое мышление, экспериментальный дизайн
+- **Коммуникационные**: сторителлинг, визуализация, навыки презентации
+- **Бизнесовые**: предметная область, управление стейкхолдерами, анализ ROI
+- **Инструменты**: Git, Jupyter, Docker, CI/CD, контроль версий для моделей
 
-## Emerging Trends
+## Новые тенденции
 
-### Current Developments
-- **AutoML**: Automated Машинное обучение pipeline creation
-- **MLOps**: DevOps practices для Машинное обучение
-- **Feature Stores**: Centralized feature Управление
-- **Данные Mesh**: Decentralized Данные Архитектура
-- **LLMs и Generative AI**: Large Язык models, content generation
-- **Edge Analytics**: Processing Данные at source devices
-- **Real-Time Analytics**: Streaming Данные analysis
-- **Augmented Analytics**: AI-assisted Данные preparation и insights
+### Текущие направления
+- **AutoML**: автоматизированное построение конвейеров машинного обучения
+- **MLOps**: практики DevOps для машинного обучения
+- **Feature Stores**: централизованное управление признаками
+- **Data Mesh**: децентрализованная архитектура данных
+- **LLMs и Generative AI**: большие языковые модели, генерация контента
+- **Edge Analytics**: обработка данных на устройствах-источниках
+- **Аналитика в реальном времени**: анализ потоковых данных в реальном времени
+- **Augmented Analytics**: подготовка данных и инсайты с поддержкой AI
 
-### Будущее Directions
-- **Quantum Машинное обучение**: Quantum Вычисления для ML
-- **Federated Learning**: Training models across decentralized Данные
-- **Causal Inference**: Moving beyond correlation to causation
-- **Responsible AI**: Ethics, explainability, transparency
-- **Данные Fabric**: Integrated Данные Управление across environments
+### Будущие направления
+- **Quantum Machine Learning**: квантовые вычисления для ML
+- **Federated Learning**: обучение моделей на децентрализованных данных
+- **Causal Inference**: переход от корреляции к причинности
+- **Responsible AI**: этика, объяснимость, прозрачность
+- **Data Fabric**: интегрированное управление данными в разных средах

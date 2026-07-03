@@ -1,71 +1,63 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: history_and_culture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 歷史與文化
 
-# 歷史 和 文化
+## 古代文明
 
-## Ancient Civilizations
+美索不達米亞位於現今伊拉克的底格里斯河和幼發拉底河之間,被認為是最早的文明搖籃之一。蘇美人在公元前3400年左右發展出最早的文字系統之一,稱為楔形文字。古埃及沿尼羅河發展,以其金字塔、法老和象形文字而聞名。吉薩大金字塔建於公元前2560年左右,是古代世界七大奇蹟之一。
 
-Mesopotamia, located between 這 Tigris 和 Euphrates rivers 在 modern-day Iraq, is considered one 的 這 earliest cradles 的 civilization. 這 Sumerians developed one 的 這 first writing 系統, called cuneiform, around 3400 BCE. Ancient Egypt developed along 這 Nile River 和 is famous 為 its pyramids, pharaohs, 和 hieroglyphic writing. 這 Great Pyramid 的 Giza was built around 2560 BCE 和 is one 的 這 Seven Wonders 的 這 Ancient World.
+古希臘(大約公元前800-146年)為哲學、民主、數學和藝術做出了奠基性貢獻。包括蘇格拉底、柏拉圖和亞里斯多德在內的希臘思想家建立了至今仍在研究的邏輯和倫理框架。古羅馬從城邦發展為共和國,然後成為橫跨歐洲、北非和西亞的帝國。羅馬對法律、建築、工程(道路、渡槽)和治理做出了貢獻。
 
-Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, 和 art. Greek thinkers including Socrates, Plato, 和 Aristotle established frameworks 的 logic 和 ethics still studied today. Ancient Rome grew from a city-state to a republic 和 then an empire stretching across Europe, North Africa, 和 Western Asia. Rome contributed to 法律, 架構, engineering (roads, aqueducts), 和 governance.
+## 世界主要宗教
 
-## Major World Religions
+基督教是世界上最大的宗教,約有24億信徒。它基於耶穌基督的生平和教導,以聖經為中心。伊斯蘭教是世界第二大宗教,約有19億信徒。它由先知穆罕默德在公元7世紀創立,以古蘭經為中心。印度教是世界第三大宗教,約有12億信徒,主要在印度。佛教由悉達多·喬達摩在公元前5世紀創立,專注於實現開悟。猶太教是最古老的一神教之一,全球約有1500萬信徒。
 
-Christianity is 這 world's largest religion 與 approximately 2.4 billion followers. It is based on 這 life 和 teachings 的 Jesus Christ 和 centers on 這 Bible. Islam is 這 world's second-largest religion 與 approximately 1.9 billion followers. It was founded by 這 Prophet Muhammad 在 這 7th century CE 和 is centered on 這 Quran. Hinduism is 這 world's third-largest religion 與 approximately 1.2 billion followers, primarily 在 India. Buddhism was founded by Siddhartha Gautama 在 這 5th century BCE 和 focuses on achieving enlightenment. Judaism is one 的 這 oldest monotheistic religions, 與 approximately 15 million followers worldwide.
+## 中世紀
 
-## 這 Middle Ages
+歐洲中世紀(大約公元500-1500年)緊隨西羅馬帝國的滅亡。這一時期見證了封建制度的興起、天主教會作為主導的政治和文化力量、十字軍東征(前往聖地的軍事遠征),以及最終的文藝復興。黑死病(鼠疫)在14世紀殺死了歐洲約三分之一的人口。伊斯蘭黃金時代(8-14世紀)見證了伊斯蘭世界在科學、數學和哲學方面的重大進展。
 
-這 Middle Ages (approximately 500–1500 CE) 在 Europe followed 這 fall 的 這 Western Roman Empire. This period saw 這 rise 的 feudalism, 這 Catholic Church as a dominant political 和 cultural force, 這 Crusades (military campaigns to 這 Holy Land), 和 eventually 這 Renaissance. 這 Black Death (bubonic plague) killed approximately one-third 的 Europe's population 在 這 14th century. 這 Islamic Golden Age (8th–14th centuries) saw major advances 在 科學, mathematics, 和 philosophy 在 這 Islamic world.
+## 文藝復興與啟蒙運動
 
-## 這 Renaissance 和 Enlightenment
+文藝復興(14-17世紀)是一場始於義大利並傳播到整個歐洲的文化和知識運動,其特點是重新關注古典藝術、哲學和科學。關鍵人物包括達文西、米開朗基羅和伽利略。科學革命(16-17世紀)改變了對自然和科學的理解,哥白尼、伽利略和牛頓做出了貢獻。啟蒙運動(17-18世紀)強調理性、個人權利和對傳統的懷疑,影響了現代民主和人權。
 
-這 Renaissance (14th–17th centuries) was a cultural 和 intellectual movement that began 在 Italy 和 spread across Europe, characterized by renewed interest 在 classical art, philosophy, 和 科學. Key figures include Leonardo da Vinci, Michelangelo, 和 Galileo Galilei. 這 Scientific Revolution (16th–17th centuries) transformed understanding 的 自然 和 科學, 與 contributions from Copernicus, Galileo, 和 Newton. 這 Enlightenment (17th–18th centuries) emphasized reason, individual rights, 和 skepticism 的 tradition, influencing modern democracy 和 human rights.
+## 探索與殖民
 
-## Exploration 和 Colonization
+大航海時代(15-17世紀)見證了歐洲探險家繪製世界地圖。哥倫布在1492年抵達美洲。達伽馬在1498年從海路抵達印度。麥哲倫的探險隊在1522年完成了首次環球航行。歐洲對美洲、非洲和亞洲的殖民化對原住民產生了深遠且往往是毀滅性的影響,透過暴力、疾病和剝削。
 
-這 Age 的 Exploration (15th–17th centuries) saw European explorers map 這 world. Christopher Columbus reached 這 Americas 在 1492. Vasco da Gama reached India by sea 在 1498. Ferdinand Magellan's expedition completed 這 first circumnavigation 的 這 globe 在 1522. European colonization 的 這 Americas, Africa, 和 Asia had profound 和 often devastating effects on indigenous populations through violence, disease, 和 exploitation.
+## 工業革命
 
-## 這 Industrial Revolution
+工業革命始於18世紀末的英國,改變了製造業、農業和交通運輸。蒸汽動力、紡織機械和鐵生產推動了快速的經濟變革。革命在19世紀傳播到歐洲和北美。它導致了都市化、新社會階級和重大環境變化。它也產生了危險的工作條件,最終促成了勞工運動和社會改革。
 
-這 Industrial Revolution began 在 Britain 在 這 late 18th century 和 transformed manufacturing, 農業, 和 transportation. Steam power, textile machinery, 和 iron production drove rapid economic change. 這 revolution spread across Europe 和 North America 在 這 19th century. It led to urbanization, new social classes, 和 significant 環境 changes. It also produced dangerous working conditions that eventually spurred labor movements 和 social reform.
+## 世界大戰
 
-## World Wars
+第一次世界大戰(1914-1918)始於奧匈帝國大公弗朗茨·斐迪南遇刺,涉及歐洲大部分地區。機關槍、毒氣和坦克等新軍事技術造成了大規模傷亡。約有1700萬人死亡。第二次世界大戰(1939-1945)是人類歷史上最致命的衝突,約有7000-8500萬人死亡。它是在盟軍(包括美國、蘇聯和英國)與軸心國(德國、日本和義大利)之間進行的。戰爭以納粹德國的失敗和對日本廣島和長崎的原子彈轟炸而結束。
 
-World War I (1914–1918) began following 這 assassination 的 Archduke Franz Ferdinand 的 Austria-Hungary 和 involved much 的 Europe. New military technologies such as machine guns, poison gas, 和 tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was 這 deadliest conflict 在 human 歷史, 與 approximately 70–85 million deaths. It was fought between 這 Allies (including 這 United States, Soviet Union, 和 United Kingdom) 和 這 Axis powers (Germany, Japan, 和 Italy). 這 war ended 與 這 defeat 的 Nazi Germany 和 這 atomic bombings 的 Hiroshima 和 Nagasaki 在 Japan.
+## 冷戰
 
-## 這 Cold War
+冷戰(1947-1991)是美國和蘇聯及其各自盟友之間的地緣政治緊張時期。其特點是軍備競賽、代理戰爭以及資本主義和共產主義之間的意識形態競爭。關鍵事件包括柏林圍牆(1961年建造,1989年倒塌)、韓戰、越戰和1962年的古巴飛彈危機。冷戰隨著1991年蘇聯解體而結束。
 
-這 Cold War (1947–1991) was a period 的 geopolitical tension between 這 United States 和 這 Soviet Union 和 their respective allies. It was characterized by an arms race, proxy wars, 和 ideological competition between capitalism 和 communism. Key 事件 include 這 Berlin Wall (built 1961, fell 1989), 這 Korean War, 這 Vietnam War, 和 這 Cuban Missile Crisis 的 1962. 這 Cold War ended 與 這 dissolution 的 這 Soviet Union 在 1991.
+## 去殖民化與獨立運動
 
-## Decolonization 和 Independence Movements
+第二次世界大戰後,非洲和亞洲的許多國家從歐洲殖民強權獨立。印度在1947年從英國獨立。大多數非洲國家在1950年代和1960年代獨立。聯合國成立於1945年,以促進國際合作、和平與人權。
 
-After World War II, many countries 在 Africa 和 Asia gained independence from European colonial powers. India gained independence from Britain 在 1947. Most African nations became independent 在 這 1950s 和 1960s. 這 United Nations was founded 在 1945 to promote international cooperation, peace, 和 human rights.
+## 太空競賽與科技時代
 
-## 這 Space Race 和 技術 Age
+太空競賽(1957-1969)是美國和蘇聯在太空探索方面爭奪優勢的競賽。蘇聯在1957年發射了第一顆人造衛星史普尼克1號。尤里·加加林在1961年成為第一個進入太空的人類。美國在1969年7月20日的阿波羅11號任務中將太空人送上月球,尼爾·阿姆斯壯成為第一個在月球表面行走的人。太空競賽推動了火箭技術、運算和電信的巨大進步。
 
-這 Space Race (1957–1969) was a competition between 這 United States 和 Soviet Union to achieve superiority 在 space exploration. 這 Soviet Union launched Sputnik 1, 這 first artificial satellite, 在 1957. Yuri Gagarin became 這 first human 在 space 在 1961. 這 United States landed astronauts on 這 Moon during 這 Apollo 11 mission on July 20, 1969, 與 Neil Armstrong becoming 這 first person to walk on 這 lunar surface. 這 Space Race drove enormous advances 在 rocket 技術, 計算, 和 telecommunications.
+## 資訊時代
 
-## 這 Information Age
+20世紀末和21世紀初的特徵是資訊時代,由數位電腦、網際網路和行動技術的發展推動。全球資訊網由提姆·柏內茲-李於1989年發明,並於1991年公開,從根本上改變了溝通、商業、教育和文化。1980年代個人電腦的興起,由蘋果和IBM領導,將運算帶入家庭。智慧型手機時代由2007年的蘋果iPhone引領,將連接網際網路的電腦放入全球數十億人的口袋中。
 
-這 late 20th 和 early 21st centuries are characterised by 這 Information Age, driven by 這 開發 的 digital computers, 這 internet, 和 mobile 技術. 這 World Wide 網路 was invented by Tim Berners-Lee 在 1989 和 made publicly 可用 在 1991, fundamentally transforming 溝通, commerce, education, 和 文化. 這 rise 的 personal computers 在 這 1980s, led by Apple 和 IBM, brought 計算 into homes. 這 smartphone era, ushered 在 by Apple's iPhone 在 2007, placed internet-connected computers 在 billions 的 pockets worldwide.
+## 21世紀
 
-## 這 21st Century
+21世紀初被全球化、恐怖主義、氣候變遷和技術顛覆所塑造。2001年9月11日對美國的襲擊導致了反恐戰爭以及阿富汗和伊拉克的衝突。2008年全球金融危機是大蕭條以來最嚴重的經濟衰退。阿拉伯之春(2010-2012)見證了整個中東和北非的大規模抗議和起義。COVID-19疫情(2019-2022)在全球造成超過600萬確診死亡,並引發了前所未有的社會和經濟混亂。2020年代見證了地緣政治緊張局勢的加劇,包括俄羅斯2022年入侵烏克蘭以及美中在技術和台灣問題上的競爭加劇。
 
-這 early 21st century has been shaped by globalisation, terrorism, climate change, 和 technological disruption. 這 September 11, 2001 attacks 在 這 United States led to 這 War on Terror 和 conflicts 在 Afghanistan 和 Iraq. 這 2008 global financial crisis was 這 worst economic downturn since 這 Great Depression. 這 Arab Spring (2010–2012) saw mass protests 和 uprisings across 這 Middle East 和 North Africa. 這 COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide 和 triggered unprecedented social 和 economic disruption. 這 2020s have seen rising geopolitical tensions, including Russia's invasion 的 Ukraine 在 2022 和 increased US-China competition over 技術 和 Taiwan.
+## 歷史上的藝術與文化
 
-## Art 和 文化 Through 歷史
+人類文化表達跨越數萬年。法國拉斯科的洞穴壁畫(約17,000年歷史)代表了一些最早已知的藝術。文藝復興創作了傑作,如《蒙娜麗莎》(達文西)和西斯汀教堂天花板(米開朗基羅)。浪漫主義時期(18世紀末-19世紀)重視情感和自然,產生了貝多芬、濟慈和德拉克洛瓦的作品。現代主義(20世紀初)打破傳統,產生了立體主義(畢卡索)、抽象藝術(康丁斯基)和爵士樂。後現代主義(20世紀中後期)質疑宏大敘事並擁抱多元性,影響了建築、文學和視覺藝術。
 
-Human cultural expression spans tens 的 thousands 的 years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some 的 這 earliest known art. 這 Renaissance produced masterpieces such as 這 Mona Lisa (Leonardo da Vinci) 和 這 Sistine Chapel ceiling (Michelangelo). 這 Romantic era (late 18th–19th century) valued emotion 和 自然, producing works by Beethoven, Keats, 和 Delacroix. Modernism (early 20th century) broke 與 tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), 和 jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives 和 embraced plurality, influencing 架構, 文學, 和 visual art.
+## 哲學與思想史
 
-## Philosophy 和 Intellectual 歷史
+西方哲學始於公元前600年左右的前蘇格拉底思想家(泰勒斯、赫拉克利特、巴門尼德)。蘇格拉底、柏拉圖和亞里斯多德定義了古典傳統。在啟蒙運動期間,笛卡兒、洛克、休謨和康德等思想家重塑了認識論(知識理論)和倫理學。19世紀見證了馬克思對資本主義的批判、尼采對道德的挑戰以及社會學的誕生。20世紀帶來了分析哲學(羅素、維根斯坦)和大陸哲學(海德格、薩特、波娃)。東方哲學傳統包括儒家思想、道家思想、佛教和吠陀哲學,數千年來塑造了亞洲數十億人的生活。
 
-Western philosophy began 與 這 pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, 和 Aristotle defined 這 classical tradition. During 這 Enlightenment, thinkers like Descartes, Locke, Hume, 和 Kant reshaped epistemology (theory 的 knowledge) 和 ethics. 這 19th century saw Marx's 批評 的 capitalism, Nietzsche's challenge to morality, 和 這 birth 的 sociology. 這 20th century brought analytic philosophy (Russell, Wittgenstein) 和 continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, 和 Vedic philosophy have shaped billions 的 lives across Asia 為 millennia.
+## 歷史上的音樂
 
-## Music Through 歷史
-
-Music has existed 在 human cultures since prehistory. Ancient Greeks used music 在 drama 和 ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). 這 Baroque period (1600–1750) gave rise to opera 和 instrumental music; composers include Bach, Handel, 和 Vivaldi. 這 Classical period (1750–1820) featured Mozart, Haydn, 和 這 early Beethoven, emphasising clarity 和 form. 這 Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, 和 Wagner. 這 20th century saw 這 emergence 的 jazz, blues, rock 和 roll, hip-hop, electronic music, 和 countless global fusion genres, democratised further by recording 技術 和 streaming.
-
+音樂自史前時代就存在於人類文化中。古希臘人在戲劇和儀式中使用音樂。中世紀歐洲發展了複音神聖音樂(葛利果聖歌、奧爾加農)。巴洛克時期(1600-1750)產生了歌劇和器樂;作曲家包括巴赫、韓德爾和韋瓦第。古典時期(1750-1820)以莫札特、海頓和早期貝多芬為特色,強調清晰度和形式。浪漫時期(1820-1900)透過布拉姆斯、蕭邦和華格納偏愛情感表達。20世紀見證了爵士樂、藍調、搖滾樂、嘻哈、電子音樂和無數全球融合類型的出現,透過錄音技術和串流媒體進一步民主化。

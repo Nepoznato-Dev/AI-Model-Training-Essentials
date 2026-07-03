@@ -1,216 +1,209 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: cloud_architecture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Bulut Mimarisi
 
-# Cloud Mimari
+## Bulut Bilişimin Temelleri
 
-## Cloud Bilişim Temeller
+### Bulut Bilişim Nedir?
+İnternet üzerinden, kullandıkça öde fiyatlandırmasıyla sunulan bilişim kaynaklarının (sunucular, depolama, veritabanları, ağ, yazılım) talep üzerine teslim edilmesidir.
 
-### What is Cloud Bilişim?
-On-demand delivery içinde Bilişim resources (servers, storage, databases, networking, software) over bu internet ile pay-as-you-go pricing.
+### Temel Özellikler (NIST Tanımı)
+- **On-Demand Self-Service**: Kaynakları insan etkileşimi olmadan sağlama
+- **Broad Network Access**: Ağ üzerinden standart mekanizmalarla erişilebilir olma
+- **Resource Pooling**: Dinamik atamaya sahip çok kiracılı model
+- **Rapid Elasticity**: Hızlı şekilde dışa ve içe ölçeklenebilme
+- **Measured Service**: Kaynak kullanımının izlenmesi ve faturalandırılması
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Ağ Access**: Mevcut over Ağ via standard mechanisms
-- **Resource Pooling**: Multi-tenant model ile dynamic assignment
-- **Rapid Elasticity**: Scale outward ve inward rapidly
-- **Measured Service**: Resource usage monitored ve billed
+### Bulut Dağıtım Modelleri
+- **Public Cloud**: Sağlayıcılara ait, paylaşımlı altyapı (AWS, Azure, GCP)
+- **Private Cloud**: Tek bir kuruma ayrılmış ortam (on-premises veya barındırılan)
+- **Hybrid Cloud**: Public ve private cloud birleşimi
+- **Multi-Cloud**: Birden fazla public cloud sağlayıcısının kullanılması
+- **Community Cloud**: Ortak ihtiyaçları olan kuruluşlar arasında paylaşılan bulut
 
-### Cloud Dağıtım Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination içinde public ve private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations ile common concerns
-
-### Service Models
+### Hizmet Modelleri
 
 #### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating Sistemler
-- **Örnekler**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-ve-shift migrations, Geliştirme environments, high-control needs
+- **Provides**: Sanal makineler, depolama, ağlar, işletim sistemleri
+- **Examples**: AWS EC2, Google Compute Engine, Azure VMs
+- **Use Cases**: Lift-and-shift geçişleri, geliştirme ortamları, yüksek kontrol gereksinimleri
 
 #### Platform as a Service (PaaS)
-- **Provides**: Geliştirme platforms, databases, middleware
-- **Örnekler**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application Geliştirme, API Dağıtım, microservices
+- **Provides**: Geliştirme platformları, veritabanları, middleware
+- **Examples**: Heroku, Google App Engine, AWS Elastic Beanstalk
+- **Use Cases**: Uygulama geliştirme, API dağıtımı, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Tam applications over internet
-- **Örnekler**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, İş applications
+- **Provides**: İnternet üzerinden tam uygulamalar
+- **Examples**: Salesforce, Google Workspace, Microsoft 365, Slack
+- **Use Cases**: E-posta, CRM, iş birliği, iş uygulamaları
 
 #### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
-- **Örnekler**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+- **Provides**: Olay odaklı işlev çalıştırma
+- **Examples**: AWS Lambda, Azure Functions, Google Cloud Functions
+- **Use Cases**: Olay işleme, API'ler, zamanlanmış görevler, gerçek zamanlı işleme
 
-## Major Cloud Providers
+## Başlıca Bulut Sağlayıcıları
 
 ### Amazon Web Services (AWS)
-- **Market Share**: ~32% (largest provider)
+- **Market Share**: ~32% (en büyük sağlayıcı)
 - **Key Services**:
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
-  - Veritabanı: RDS, DynamoDB, Aurora
+  - Database: RDS, DynamoDB, Aurora
   - Networking: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
 ### Microsoft Azure
 - **Market Share**: ~23%
-- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
+- **Strengths**: Kurumsal entegrasyon, hybrid cloud, Microsoft ekosistemi
 - **Key Services**:
   - Compute: Virtual Machines, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
-  - Veritabanı: SQL Veritabanı, Cosmos DB
-  - Networking: Virtual Ağ, Traffic Manager
+  - Database: SQL Database, Cosmos DB
+  - Networking: Virtual Network, Traffic Manager
   - AI/ML: Azure ML, Cognitive Services
 
 ### Google Cloud Platform (GCP)
 - **Market Share**: ~10%
-- **Strengths**: Veri analytics, AI/ML, Kubernetes
+- **Strengths**: Veri analitiği, AI/ML, Kubernetes
 - **Key Services**:
   - Compute: Compute Engine, Cloud Functions, GKE
   - Storage: Cloud Storage, Persistent Disk
-  - Veritabanı: Cloud SQL, Firestore, Bigtable
+  - Database: Cloud SQL, Firestore, Bigtable
   - Analytics: BigQuery, Dataflow, Pub/Sub
   - AI/ML: Vertex AI, AutoML
 
-### Other Providers
-- **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: Veritabanı workloads, enterprise applications
-- **Alibaba Cloud**: Dominant içinde Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified offerings
+### Diğer Sağlayıcılar
+- **IBM Cloud**: Kurumsal odak, Watson AI
+- **Oracle Cloud**: Veritabanı iş yükleri, kurumsal uygulamalar
+- **Alibaba Cloud**: Asya-Pasifik'te baskın oyuncu
+- **DigitalOcean**: Geliştirici dostu, sadeleştirilmiş teklifler
 
-## Cloud Mimari Patterns
+## Bulut Mimari Kalıpları
 
-### Well-Architected Framework Principles
+### Well-Architected Framework İlkeleri
 
-#### Operational Excellence
-- Automate operations
-- Make frequent, reversible changes
-- Refine procedures continuously
-- Anticipate failure
+#### Operasyonel Mükemmellik
+- Operasyonları otomatikleştir
+- Sık ve geri alınabilir değişiklikler yap
+- Süreçleri sürekli iyileştir
+- Arızaları öngör
 
 #### Güvenlik
-- Implement strong identity foundation
-- Enable traceability
-- Apply Güvenlik at all layers
-- Automate Güvenlik En İyi Uygulamalar
-- Protect Veri içinde transit ve at rest
+- Güçlü bir kimlik temeli kur
+- İzlenebilirliği etkinleştir
+- Tüm katmanlarda güvenlik uygula
+- Güvenlik için en iyi uygulamaları otomatikleştir
+- Veriyi aktarımda ve depoda koru
 
-#### Reliability
-- Test recovery procedures
-- Automatically recover from failure
-- Scale horizontally için availability
-- Stop guessing capacity
-- Manage change içinde automation
+#### Güvenilirlik
+- Kurtarma prosedürlerini test et
+- Arızalardan otomatik olarak kurtul
+- Erişilebilirlik için yatay ölçeklen
+- Kapasiteyi tahmine dayalı yönetmeyi bırak
+- Değişikliği otomasyon içinde yönet
 
-#### Performans Efficiency
-- Democratize İleri Düzey technologies
-- Go global içinde minutes
-- Use serverless architectures
-- Experiment more often
-- Consider mechanical sympathy
+#### Performans Verimliliği
+- Gelişmiş teknolojileri demokratikleştir
+- Dakikalar içinde küresel ölçekte hizmet ver
+- Serverless mimarileri kullan
+- Daha sık deney yap
+- Mechanical sympathy ilkesini dikkate al
 
-#### Cost Optimization
-- Adopt consumption model
-- Measure overall efficiency
-- Stop spending money on undifferentiated work
-- Analyze ve attribute expenditure
-- Use managed services
+#### Maliyet Optimizasyonu
+- Tüketime dayalı modeli benimse
+- Genel verimliliği ölç
+- Ayrıştırıcı olmayan işler için para harcamayı bırak
+- Harcamaları analiz et ve ilişkilendir
+- Yönetilen hizmetleri kullan
 
-### Common Mimari Patterns
+### Yaygın Mimari Kalıplar
 
-#### Microservices Mimari
-- Decompose applications into small, independent services
-- Each service owns its Veri ve logic
-- Communicate via APIs (REST, gRPC, messaging)
-- Deploy independently
-- **Benefits**: Scalability, fault isolation, Teknoloji diversity
-- **Challenges**: Distributed complexity, Veri consistency, monitoring
+#### Microservices Mimarisi
+- Uygulamaları küçük, bağımsız hizmetlere ayır
+- Her hizmet kendi verisine ve mantığına sahip olur
+- API'ler (REST, gRPC, messaging) üzerinden iletişim kurar
+- Bağımsız olarak dağıtılır
+- **Benefits**: Ölçeklenebilirlik, hata izolasyonu, teknoloji çeşitliliği
+- **Challenges**: Dağıtık karmaşıklık, veri tutarlılığı, izleme
 
 #### Event-Driven Mimari
-- Components communicate through Olaylar
-- Producers emit Olaylar, consumers react
+- Bileşenler olaylar üzerinden iletişim kurar
+- Üreticiler olay yayımlar, tüketiciler tepki verir
 - **Patterns**: Event sourcing, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, real-time processing
+- **Benefits**: Gevşek bağlılık, ölçeklenebilirlik, gerçek zamanlı işleme
 
 #### Serverless Mimari
-- No server Yönetim required
-- Pay per execution
-- Automatic scaling
+- Sunucu yönetimi gerekmez
+- Çalıştırma başına ödeme yapılır
+- Otomatik ölçeklenir
 - **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid Dağıtım
-- **Considerations**: Cold starts, vendor lock-içinde, execution limits
+- **Benefits**: Maliyet verimliliği, daha az operasyon yükü, hızlı dağıtım
+- **Considerations**: Cold start'lar, vendor lock-in, yürütme sınırları
 
-#### Layered Mimari (N-Tier)
-- Presentation layer (UI)
-- Application/İş logic layer
-- Veri access layer
-- Veritabanı layer
-- **Benefits**: Separation içinde concerns, maintainability
-- **Common**: 3-tier Web applications
+#### Katmanlı Mimari (N-Tier)
+- Sunum katmanı (UI)
+- Uygulama/iş mantığı katmanı
+- Veri erişim katmanı
+- Veritabanı katmanı
+- **Benefits**: Sorumlulukların ayrılması, sürdürülebilirlik
+- **Common**: 3 katmanlı web uygulamaları
 
 #### Space-Based Mimari
-- Handle high concurrency ile distributed Veri
-- Virtualized memory across servers
-- Processing nodes scale independently
-- **Use Cases**: High-volume, low-latency applications
+- Dağıtık veriyle yüksek eşzamanlılığı yönetir
+- Sunucular arasında sanallaştırılmış bellek kullanır
+- İşleme düğümleri bağımsız ölçeklenir
+- **Use Cases**: Yüksek hacimli, düşük gecikmeli uygulamalar
 
-## Compute Services
+## Compute Hizmetleri
 
 ### Virtual Machines
 - **Types**: General purpose, compute optimized, memory optimized, GPU
 - **Pricing**: On-demand, reserved instances, spot instances
-- **Yönetim**: Auto-scaling groups, load balancers
-- **En İyi Uygulamalar**: Right-sizing, tagging, monitoring, patching
+- **Management**: Auto-scaling groups, load balancers
+- **Best Practices**: Right-sizing, etiketleme, izleme, yamalama
 
 ### Containers
-- **Docker**: Container runtime standard
+- **Docker**: Konteyner çalışma zamanı standardı
 - **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
-- **Benefits**: Portability, efficiency, consistency
+- **Benefits**: Taşınabilirlik, verimlilik, tutarlılık
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
 ### Serverless Functions
-- **Execution Model**: Event-triggered, stateless
-- **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
-- **Monitoring**: Invocation counts, errors, duration, cold starts
+- **Execution Model**: Olay tetiklemeli, stateless
+- **Limits**: Çalıştırma süresi, bellek, eşzamanlı çalıştırma sayısı
+- **Use Cases**: API'ler, dosya işleme, zamanlanmış işler, IoT back-end'leri
+- **Monitoring**: Çağrı sayısı, hatalar, süre, cold start'lar
 
-## Storage Solutions
+## Depolama Çözümleri
 
 ### Object Storage
-- **Characteristics**: Flat structure, metadata, HTTP access
-- **Örnekler**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, Veri lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
+- **Characteristics**: Düz yapı, metadata, HTTP erişimi
+- **Examples**: AWS S3, Google Cloud Storage, Azure Blob
+- **Use Cases**: Statik varlıklar, yedekler, data lake'ler, arşivler
+- **Storage Classes**: Hot, cool, cold, archive (farklı maliyet/erişim düzeyleri)
 
 ### Block Storage
-- **Characteristics**: Raw volumes, attached to VMs
-- **Örnekler**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Databases, boot volumes, high-Performans needs
+- **Characteristics**: Ham disk birimleri, VM'lere bağlı çalışır
+- **Examples**: AWS EBS, Google Persistent Disk, Azure Disks
+- **Use Cases**: Veritabanları, önyükleme diskleri, yüksek performans gereksinimleri
 - **Types**: SSD, HDD, provisioned IOPS
 
 ### File Storage
-- **Characteristics**: Shared file Sistemler, NFS/SMB protocols
-- **Örnekler**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content Yönetim, shared configs, lift-ve-shift
+- **Characteristics**: Paylaşımlı dosya sistemleri, NFS/SMB protokolleri
+- **Examples**: AWS EFS, Google Filestore, Azure Files
+- **Use Cases**: İçerik yönetimi, paylaşılan yapılandırmalar, lift-and-shift senaryoları
 
 ### Archive Storage
-- **Characteristics**: Lowest cost, retrieval delays
-- **Örnekler**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical Veri
+- **Characteristics**: En düşük maliyet, erişim gecikmeleri
+- **Examples**: S3 Glacier, Azure Archive Storage
+- **Use Cases**: Uyumluluk, uzun süreli yedekleme, tarihsel veri
 
-## Veritabanı Services
+## Veritabanı Hizmetleri
 
 ### Managed Relational Databases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Veritabanı
-- **Features**: Automated backups, patching, scaling, replication
+- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Database
+- **Features**: Otomatik yedekleme, yamalama, ölçekleme, çoğaltma
 - **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
 ### NoSQL Databases
@@ -219,78 +212,78 @@ On-demand delivery içinde Bilişim resources (servers, storage, databases, netw
 - **Wide-Column**: Bigtable, Cassandra (managed)
 - **Graph**: Neptune, Cosmos DB (graph API)
 
-### Veri Warehousing
+### Data Warehousing
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP Mimari
-- **Use Cases**: Analytics, BI, large-scale Veri analysis
+- **Characteristics**: Sütun odaklı depolama, MPP mimarisi
+- **Use Cases**: Analitik, BI, büyük ölçekli veri analizi
 
 ### Caching Services
-- **içinde-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
 - **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query caching, content delivery
+- **Use Cases**: Session storage, sorgu önbellekleme, içerik dağıtımı
 
-## Networking
+## Ağ
 
 ### Virtual Networks
-- **VPC/VNet**: Isolated Ağ environments
-- **Subnets**: Public (internet-facing), private (internal only)
-- **IP Addressing**: CIDR blocks, IPv4/IPv6
-- **Route Tables**: Control traffic flow
+- **VPC/VNet**: Yalıtılmış ağ ortamları
+- **Subnets**: Public (internete açık), private (yalnızca iç erişim)
+- **IP Addressing**: CIDR blokları, IPv4/IPv6
+- **Route Tables**: Trafik akışını kontrol eder
 
 ### Load Balancing
-- **Types**: Application (L7), Ağ (L4), Gateway
-- **Features**: Health checks, SSL termination, sticky sessions
+- **Types**: Application (L7), Network (L4), Gateway
+- **Features**: Health check'ler, SSL sonlandırma, sticky session'lar
 - **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
 ### Content Delivery Networks (CDN)
-- **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origin load, global distribution
+- **Purpose**: İçeriği edge lokasyonlarda önbelleğe alır
+- **Benefits**: Daha düşük gecikme, origin üzerinde daha az yük, küresel dağıtım
 - **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
 ### DNS Services
-- **Functions**: Domain registration, routing, health checks
+- **Functions**: Alan adı kaydı, yönlendirme, health check'ler
 - **Services**: Route 53, Cloud DNS, Azure DNS
 - **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
 
-### Connectivity Options
-- **Internet Gateway**: Public internet access
-- **NAT Gateway**: Private subnet outbound access
-- **VPN**: Encrypted tunnels to on-premises
-- **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peering**: Connect VPCs within/between accounts
+### Bağlantı Seçenekleri
+- **Internet Gateway**: Public internet erişimi
+- **NAT Gateway**: Private subnet'lerden dışarı yönlü erişim
+- **VPN**: On-premises ortamlara şifreli tüneller
+- **Direct Connect/ExpressRoute**: Ayrılmış özel bağlantılar
+- **VPC Peering**: Hesap içi/hesaplar arası VPC bağlantısı
 
-## Güvenlik içinde bu Cloud
+## Bulutta Güvenlik
 
 ### Shared Responsibility Model
-- **Provider Responsibility**: Güvenlik içinde bu cloud (infrastructure)
-- **Customer Responsibility**: Güvenlik içinde bu cloud (Veri, applications, access)
-- **Varies By Service**: More managed = more provider responsibility
+- **Provider Responsibility**: Bulut altyapısının güvenliği (security OF the cloud)
+- **Customer Responsibility**: Bulut içindeki verinin, uygulamaların ve erişimin güvenliği (security IN the cloud)
+- **Varies By Service**: Hizmet ne kadar yönetilirse sağlayıcı sorumluluğu da o kadar artar
 
-### Identity ve Access Yönetim (IAM)
-- **Users**: Individual identities
-- **Groups**: Collections içinde users
-- **Roles**: Temporary credentials için services/users
-- **Policies**: JSON documents defining permissions
-- **Principles**: Least privilege, separation içinde duties
+### Identity and Access Management (IAM)
+- **Users**: Bireysel kimlikler
+- **Groups**: Kullanıcı koleksiyonları
+- **Roles**: Hizmetler/kullanıcılar için geçici kimlik bilgileri
+- **Policies**: Yetkileri tanımlayan JSON belgeleri
+- **Principles**: En az ayrıcalık, görevlerin ayrılığı
 
-### Ağ Güvenlik
-- **Güvenlik Groups**: Stateful firewalls için instances
-- **Ağ ACLs**: Stateless firewalls için subnets
-- **Web Application Firewall (WAF)**: Protect against Web exploits
+### Ağ Güvenliği
+- **Security Groups**: Instance'lar için stateful firewall'lar
+- **Network ACLs**: Subnet'ler için stateless firewall'lar
+- **Web Application Firewall (WAF)**: Web saldırılarına karşı koruma
 - **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
 
-### Veri Protection
-- **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption içinde Transit**: TLS/SSL, HTTPS
-- **Key Yönetim**: HSM, key rotation, audit trails
-- **Secrets Yönetim**: Secrets Manager, Key Vault
+### Veri Koruma
+- **Encryption at Rest**: KMS, müşteri tarafından yönetilen anahtarlar
+- **Encryption in Transit**: TLS/SSL, HTTPS
+- **Key Management**: HSM, anahtar döndürme, denetim izleri
+- **Secrets Management**: Secrets Manager, Key Vault
 
-### Compliance ve Governance
+### Uyumluluk ve Yönetişim
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enforcement, compliance reporting, audit logs
-- **Frameworks**: Cloud Güvenlik Alliance, NIST CSF
+- **Tools**: İlke zorlaması, uyumluluk raporlaması, denetim günlükleri
+- **Frameworks**: Cloud Security Alliance, NIST CSF
 
-## DevOps içinde bu Cloud
+## Bulutta DevOps
 
 ### CI/CD Services
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
@@ -299,20 +292,20 @@ On-demand delivery içinde Bilişim resources (servers, storage, databases, netw
 - **Third-party**: Jenkins, CircleCI, GitLab CI
 
 ### Infrastructure as Code (IaC)
-- **Terraform**: Multi-cloud, declarative, state Yönetim
-- **CloudFormation**: AWS native, YAML/JSON templates
-- **ARM Templates**: Azure native
-- **Dağıtım Manager**: GCP native
-- **Pulumi**: Infrastructure using programming languages
-- **Benefits**: Version control, repeatability, documentation
+- **Terraform**: Multi-cloud, declarative, state management
+- **CloudFormation**: AWS yerel çözümü, YAML/JSON şablonları
+- **ARM Templates**: Azure yerel çözümü
+- **Deployment Manager**: GCP yerel çözümü
+- **Pulumi**: Programlama dilleriyle altyapı tanımı
+- **Benefits**: Sürüm kontrolü, tekrarlanabilirlik, dokümantasyon
 
-### Configuration Yönetim
-- **Ansible**: Agentless, YAML playbooks
-- **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reporting
-- **SaltStack**: Fast, Python-based
+### Configuration Management
+- **Ansible**: Agentsız, YAML playbook'ları
+- **Chef**: Ruby tabanlı, olgun ekosistem
+- **Puppet**: Declarative, güçlü raporlama
+- **SaltStack**: Hızlı, Python tabanlı
 
-### Monitoring ve Observability
+### Monitoring and Observability
 - **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
 - **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
 - **Tracing**: X-Ray, Cloud Trace, Application Insights
@@ -320,82 +313,82 @@ On-demand delivery içinde Bilişim resources (servers, storage, databases, netw
 - **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
 
 ### Container Orchestration
-- **Kubernetes**: Industry standard orchestration
+- **Kubernetes**: Endüstri standardı orkestrasyon
 - **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (traffic Yönetim, Güvenlik)
+- **Service Mesh**: Istio, Linkerd (trafik yönetimi, güvenlik)
 - **GitOps**: ArgoCD, Flux (declarative deployments)
 
-## Cost Yönetim
+## Maliyet Yönetimi
 
-### Pricing Models
-- **Pay-as-you-go**: Pay için what you use
-- **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid için unused capacity, can be interrupted
-- **Savings Plans**: Flexible commitment pricing
-- **Free Tier**: Limited free usage için new accounts
+### Fiyatlandırma Modelleri
+- **Pay-as-you-go**: Yalnızca kullandığın kadar öde
+- **Reserved Instances**: 1-3 yıllık taahhüt, önemli indirimler
+- **Spot Instances**: Kullanılmayan kapasite için teklif verme, kesintiye uğrayabilir
+- **Savings Plans**: Esnek taahhüt bazlı fiyatlandırma
+- **Free Tier**: Yeni hesaplar için sınırlı ücretsiz kullanım
 
-### Cost Optimization Strategies
-- **Right-sizing**: Match instance types to workload needs
-- **Auto-scaling**: Scale based on demand
-- **Reserved Capacity**: Commit to steady-state workloads
-- **Spot Usage**: Use için fault-tolerant, flexible workloads
-- **Storage Tiers**: Move infrequent Veri to cheaper tiers
-- **Cleanup**: Delete unused resources, snapshots, AMIs
+### Maliyet Optimizasyon Stratejileri
+- **Right-sizing**: Instance tiplerini iş yükü ihtiyacına göre eşleştirme
+- **Auto-scaling**: Talebe göre ölçekleme
+- **Reserved Capacity**: Sürekli çalışan iş yükleri için taahhüt verme
+- **Spot Usage**: Hata toleranslı, esnek iş yüklerinde kullanma
+- **Storage Tiers**: Seyrek kullanılan veriyi daha ucuz katmanlara taşıma
+- **Cleanup**: Kullanılmayan kaynakları, snapshot'ları ve AMI'leri silme
 
-### Cost Yönetim Tools
+### Cost Management Tools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
-- **Azure**: Cost Yönetim, Advisor
-- **GCP**: Billing reports, Recommender
+- **Azure**: Cost Management, Advisor
+- **GCP**: Faturalama raporları, Recommender
 - **Third-party**: CloudHealth, CloudCheckr, Datadog
 
 ## High Availability ve Disaster Recovery
 
-### Availability Concepts
-- **Availability Zones**: Physically separate Veri centers within region
-- **Regions**: Geographic areas ile multiple AZs
-- **Edge Locations**: CDN cache locations globally
+### Erişilebilirlik Kavramları
+- **Availability Zones**: Bölge içindeki fiziksel olarak ayrı veri merkezleri
+- **Regions**: Birden fazla AZ içeren coğrafi alanlar
+- **Edge Locations**: Dünya geneline yayılmış CDN önbellek noktaları
 
-### HA Strategies
-- **Multi-AZ**: Deploy across availability zones
-- **Auto-healing**: Auto-replace failed instances
-- **Load Balancing**: Distribute traffic across healthy instances
-- **Veritabanı Replication**: Multi-AZ deployments, read replicas
+### HA Stratejileri
+- **Multi-AZ**: Availability zone'lara yayılmış dağıtım
+- **Auto-healing**: Arızalı instance'ları otomatik değiştirme
+- **Load Balancing**: Trafiği sağlıklı instance'lara dağıtma
+- **Database Replication**: Multi-AZ kurulumlar, read replica'lar
 
-### Disaster Recovery Strategies
-- **Backup ve Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements running, scale up during disaster
-- **Warm Standby**: Scaled-down version always running
-- **Multi-Site Active/Active**: Full production içinde multiple regions (highest cost)
+### Disaster Recovery Stratejileri
+- **Backup and Restore**: Periyodik yedekler, gerektiğinde geri yükleme (en düşük maliyet)
+- **Pilot Light**: Temel bileşenler çalışır durumda, afet anında büyütülür
+- **Warm Standby**: Sürekli çalışan küçültülmüş sürüm
+- **Multi-Site Active/Active**: Birden fazla bölgede tam üretim ortamı (en yüksek maliyet)
 
 ### RTO ve RPO
-- **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Point Objective (RPO)**: Maximum acceptable Veri loss
-- **Strategy Selection**: Based on İş requirements ve budget
+- **Recovery Time Objective (RTO)**: Kabul edilebilir azami kesinti süresi
+- **Recovery Point Objective (RPO)**: Kabul edilebilir azami veri kaybı
+- **Strategy Selection**: İş gereksinimleri ve bütçeye göre belirlenir
 
-## Emerging Trends
+## Yükselen Eğilimler
 
-### Edge Bilişim
-- Process Veri closer to source
+### Edge Computing
+- Veriyi kaynağa daha yakın yerde işler
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **Use Cases**: IoT, real-time analytics, low-latency applications
+- **Use Cases**: IoT, gerçek zamanlı analitik, düşük gecikmeli uygulamalar
 
 ### Multi-Cloud ve Hybrid Cloud
-- Avoid vendor lock-içinde
-- Leverage best-içinde-breed services
+- Vendor lock-in riskini azaltır
+- Her sağlayıcının en iyi hizmetlerinden yararlanır
 - **Tools**: Terraform, Anthos, Arc, CloudHealth
 
 ### AI/ML Services
-- Pre-trained models: Vision, speech, Dil
-- Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model Dağıtım, monitoring, governance
+- Önceden eğitilmiş modeller: Vision, speech, language
+- Özel model eğitimi: SageMaker, Vertex AI, Azure ML
+- MLOps: Model dağıtımı, izleme, yönetişim
 
-### Quantum Bilişim
+### Quantum Computing
 - **Services**: AWS Braket, Azure Quantum
-- **Status**: Early stage, experimental
-- **Potential**: Cryptography, optimization, drug discovery
+- **Status**: Erken aşama, deneysel
+- **Potential**: Kriptografi, optimizasyon, ilaç keşfi
 
-### Sustainable Cloud
-- Carbon footprint tracking
-- Renewable energy commitments
-- Efficient resource utilization
-- Green Mimari patterns
+### Sürdürülebilir Bulut
+- Karbon ayak izi takibi
+- Yenilenebilir enerji taahhütleri
+- Verimli kaynak kullanımı
+- Yeşil mimari kalıpları

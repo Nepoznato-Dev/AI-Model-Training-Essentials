@@ -1,71 +1,63 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: history_and_culture.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 历史与文化
 
-# 历史 和 文化
+## 古代文明
 
-## Ancient Civilizations
+美索不达米亚位于今天伊拉克境内底格里斯河与幼发拉底河之间，被认为是最早的文明摇篮之一。苏美尔人大约在公元前 3400 年发展出最早的文字系统之一——楔形文字。古埃及沿尼罗河发展，以金字塔、法老和象形文字闻名。吉萨大金字塔约建于公元前 2560 年，是古代世界七大奇迹之一。
 
-Mesopotamia, located between 这 Tigris 和 Euphrates rivers 在 modern-day Iraq, is considered one 的 这 earliest cradles 的 civilization. 这 Sumerians developed one 的 这 first writing 系统, called cuneiform, around 3400 BCE. Ancient Egypt developed along 这 Nile River 和 is famous 为 its pyramids, pharaohs, 和 hieroglyphic writing. 这 Great Pyramid 的 Giza was built around 2560 BCE 和 is one 的 这 Seven Wonders 的 这 Ancient World.
+古希腊（约公元前 800-146 年）在哲学、民主、数学和艺术方面作出了奠基性贡献。苏格拉底、柏拉图和亚里士多德等希腊思想家建立了至今仍在研究的逻辑与伦理框架。古罗马从城邦发展为共和国，随后又成为横跨欧洲、北非和西亚的帝国。罗马在法律、建筑、工程（道路、渡槽）和治理方面留下了重要遗产。
 
-Ancient Greece (roughly 800–146 BCE) made foundational contributions to philosophy, democracy, mathematics, 和 art. Greek thinkers including Socrates, Plato, 和 Aristotle established frameworks 的 logic 和 ethics still studied today. Ancient Rome grew from a city-state to a republic 和 then an empire stretching across Europe, North Africa, 和 Western Asia. Rome contributed to 法律, 架构, engineering (roads, aqueducts), 和 governance.
+## 世界主要宗教
 
-## Major World Religions
+基督教是世界上最大的宗教，约有 24 亿信徒。它以耶稣基督的生平与教导为基础，以《圣经》为中心。伊斯兰教是世界第二大宗教，约有 19 亿信徒。它由先知穆罕默德于公元 7 世纪创立，以《古兰经》为中心。印度教是世界第三大宗教，约有 12 亿信徒，主要分布在印度。佛教由悉达多·乔达摩于公元前 5 世纪创立，重点在于追求觉悟。犹太教是最古老的一神教之一，全球约有 1500 万信徒。
 
-Christianity is 这 world's largest religion 与 approximately 2.4 billion followers. It is based on 这 life 和 teachings 的 Jesus Christ 和 centers on 这 Bible. Islam is 这 world's second-largest religion 与 approximately 1.9 billion followers. It was founded by 这 Prophet Muhammad 在 这 7th century CE 和 is centered on 这 Quran. Hinduism is 这 world's third-largest religion 与 approximately 1.2 billion followers, primarily 在 India. Buddhism was founded by Siddhartha Gautama 在 这 5th century BCE 和 focuses on achieving enlightenment. Judaism is one 的 这 oldest monotheistic religions, 与 approximately 15 million followers worldwide.
+## 中世纪
 
-## 这 Middle Ages
+欧洲的中世纪（约公元 500-1500 年）始于西罗马帝国灭亡之后。这一时期见证了封建制度的兴起、天主教会成为主导性的政治与文化力量、十字军东征（前往圣地的军事行动），以及最终到来的文艺复兴。14 世纪的黑死病（腺鼠疫）导致欧洲约三分之一的人口死亡。伊斯兰黄金时代（8 世纪-14 世纪）则使伊斯兰世界在科学、数学和哲学方面取得重大进展。
 
-这 Middle Ages (approximately 500–1500 CE) 在 Europe followed 这 fall 的 这 Western Roman Empire. This period saw 这 rise 的 feudalism, 这 Catholic Church as a dominant political 和 cultural force, 这 Crusades (military campaigns to 这 Holy Land), 和 eventually 这 Renaissance. 这 Black Death (bubonic plague) killed approximately one-third 的 Europe's population 在 这 14th century. 这 Islamic Golden Age (8th–14th centuries) saw major advances 在 科学, mathematics, 和 philosophy 在 这 Islamic world.
+## 文艺复兴与启蒙运动
 
-## 这 Renaissance 和 Enlightenment
+文艺复兴（14 世纪-17 世纪）是一场始于意大利并传播到整个欧洲的文化与思想运动，其特征是对古典艺术、哲学和科学重新燃起兴趣。代表人物包括 Leonardo da Vinci、Michelangelo 和 Galileo Galilei。科学革命（16 世纪-17 世纪）改变了人类对自然和科学的理解，Copernicus、Galileo 和 Newton 都作出了重要贡献。启蒙运动（17 世纪-18 世纪）强调理性、个人权利以及对传统的怀疑，对现代民主和人权产生了深远影响。
 
-这 Renaissance (14th–17th centuries) was a cultural 和 intellectual movement that began 在 Italy 和 spread across Europe, characterized by renewed interest 在 classical art, philosophy, 和 科学. Key figures include Leonardo da Vinci, Michelangelo, 和 Galileo Galilei. 这 Scientific Revolution (16th–17th centuries) transformed understanding 的 自然 和 科学, 与 contributions from Copernicus, Galileo, 和 Newton. 这 Enlightenment (17th–18th centuries) emphasized reason, individual rights, 和 skepticism 的 tradition, influencing modern democracy 和 human rights.
+## 探索与殖民
 
-## Exploration 和 Colonization
+大航海时代（15 世纪-17 世纪）见证了欧洲探险家对世界的测绘。Christopher Columbus 于 1492 年抵达美洲。Vasco da Gama 于 1498 年经海路抵达印度。Ferdinand Magellan 的远征队于 1522 年完成了首次环球航行。欧洲对美洲、非洲和亚洲的殖民通过暴力、疾病和剥削，对原住民群体造成了深远且往往极具破坏性的影响。
 
-这 Age 的 Exploration (15th–17th centuries) saw European explorers map 这 world. Christopher Columbus reached 这 Americas 在 1492. Vasco da Gama reached India by sea 在 1498. Ferdinand Magellan's expedition completed 这 first circumnavigation 的 这 globe 在 1522. European colonization 的 这 Americas, Africa, 和 Asia had profound 和 often devastating effects on indigenous populations through violence, disease, 和 exploitation.
+## 工业革命
 
-## 这 Industrial Revolution
+工业革命始于 18 世纪后期的英国，并改变了制造业、农业和交通运输。蒸汽动力、纺织机械和钢铁生产推动了快速的经济变革。19 世纪，这场革命扩展到欧洲和北美。它带来了城市化、新的社会阶层以及显著的环境变化。同时，它也造成了危险的工作条件，最终推动了劳工运动和社会改革。
 
-这 Industrial Revolution began 在 Britain 在 这 late 18th century 和 transformed manufacturing, 农业, 和 transportation. Steam power, textile machinery, 和 iron production drove rapid economic change. 这 revolution spread across Europe 和 North America 在 这 19th century. It led to urbanization, new social classes, 和 significant 环境 changes. It also produced dangerous working conditions that eventually spurred labor movements 和 social reform.
+## 世界大战
 
-## World Wars
+第一次世界大战（1914-1918）在奥匈帝国皇储 Franz Ferdinand 遇刺后爆发，波及欧洲大部分地区。机关枪、毒气和坦克等新式军事技术造成了巨大伤亡，约有 1700 万人死亡。第二次世界大战（1939-1945）是人类历史上最致命的冲突，死亡人数约为 7000 万至 8500 万。交战双方是同盟国（包括美国、苏联和英国）与轴心国（德国、日本和意大利）。战争以纳粹德国战败以及日本广岛、长崎遭受原子弹轰炸而结束。
 
-World War I (1914–1918) began following 这 assassination 的 Archduke Franz Ferdinand 的 Austria-Hungary 和 involved much 的 Europe. New military technologies such as machine guns, poison gas, 和 tanks caused massive casualties. Approximately 17 million people died. World War II (1939–1945) was 这 deadliest conflict 在 human 历史, 与 approximately 70–85 million deaths. It was fought between 这 Allies (including 这 United States, Soviet Union, 和 United Kingdom) 和 这 Axis powers (Germany, Japan, 和 Italy). 这 war ended 与 这 defeat 的 Nazi Germany 和 这 atomic bombings 的 Hiroshima 和 Nagasaki 在 Japan.
+## 冷战
 
-## 这 Cold War
+冷战（1947-1991）是美国与苏联及其各自盟友之间地缘政治紧张对峙的时期。其特点包括军备竞赛、代理人战争，以及资本主义与共产主义之间的意识形态竞争。关键事件包括柏林墙（1961 年修建，1989 年倒塌）、朝鲜战争、越南战争和 1962 年的古巴导弹危机。冷战以 1991 年苏联解体而结束。
 
-这 Cold War (1947–1991) was a period 的 geopolitical tension between 这 United States 和 这 Soviet Union 和 their respective allies. It was characterized by an arms race, proxy wars, 和 ideological competition between capitalism 和 communism. Key 事件 include 这 Berlin Wall (built 1961, fell 1989), 这 Korean War, 这 Vietnam War, 和 这 Cuban Missile Crisis 的 1962. 这 Cold War ended 与 这 dissolution 的 这 Soviet Union 在 1991.
+## 去殖民化与独立运动
 
-## Decolonization 和 Independence Movements
+第二次世界大战后，非洲和亚洲许多国家摆脱了欧洲殖民列强而获得独立。印度于 1947 年脱离英国独立。大多数非洲国家在 20 世纪 50 年代和 60 年代实现独立。联合国成立于 1945 年，旨在促进国际合作、和平与人权。
 
-After World War II, many countries 在 Africa 和 Asia gained independence from European colonial powers. India gained independence from Britain 在 1947. Most African nations became independent 在 这 1950s 和 1960s. 这 United Nations was founded 在 1945 to promote international cooperation, peace, 和 human rights.
+## 太空竞赛与技术时代
 
-## 这 Space Race 和 技术 Age
+太空竞赛（1957-1969）是美国与苏联之间争夺太空探索领先地位的竞争。苏联于 1957 年发射了第一颗人造卫星 Sputnik 1。Yuri Gagarin 于 1961 年成为首位进入太空的人类。1969 年 7 月 20 日，美国在 Apollo 11 任务中将宇航员送上月球，Neil Armstrong 成为首位踏上月球表面的人。太空竞赛极大推动了火箭技术、计算和电信的发展。
 
-这 Space Race (1957–1969) was a competition between 这 United States 和 Soviet Union to achieve superiority 在 space exploration. 这 Soviet Union launched Sputnik 1, 这 first artificial satellite, 在 1957. Yuri Gagarin became 这 first human 在 space 在 1961. 这 United States landed astronauts on 这 Moon during 这 Apollo 11 mission on July 20, 1969, 与 Neil Armstrong becoming 这 first person to walk on 这 lunar surface. 这 Space Race drove enormous advances 在 rocket 技术, 计算, 和 telecommunications.
+## 信息时代
 
-## 这 Information Age
+20 世纪后期和 21 世纪初以信息时代为特征，其动力来自数字计算机、互联网和移动技术的发展。万维网由 Tim Berners-Lee 于 1989 年发明，并于 1991 年向公众开放，根本性地改变了通信、商业、教育和文化。20 世纪 80 年代，在 Apple 和 IBM 的推动下，个人电脑进入家庭。2007 年，Apple 推出的 iPhone 开启了智能手机时代，让数十亿人口袋里都装上了可连接互联网的计算机。
 
-这 late 20th 和 early 21st centuries are characterised by 这 Information Age, driven by 这 开发 的 digital computers, 这 internet, 和 mobile 技术. 这 World Wide 网络 was invented by Tim Berners-Lee 在 1989 和 made publicly 可用 在 1991, fundamentally transforming 沟通, commerce, education, 和 文化. 这 rise 的 personal computers 在 这 1980s, led by Apple 和 IBM, brought 计算 into homes. 这 smartphone era, ushered 在 by Apple's iPhone 在 2007, placed internet-connected computers 在 billions 的 pockets worldwide.
+## 21 世纪
 
-## 这 21st Century
+21 世纪初受到全球化、恐怖主义、气候变化和技术颠覆的深刻塑造。2001 年 9 月 11 日美国遭遇的袭击引发了“反恐战争”以及阿富汗和伊拉克的冲突。2008 年全球金融危机是自大萧条以来最严重的经济衰退。阿拉伯之春（2010-2012）在中东和北非引发了大规模抗议和起义。COVID-19 疫情（2019-2022）造成全球超过 600 万例确诊死亡，并引发前所未有的社会与经济动荡。2020 年代，地缘政治紧张局势持续上升，其中包括俄罗斯于 2022 年入侵乌克兰，以及美中围绕技术和台湾问题加剧的竞争。
 
-这 early 21st century has been shaped by globalisation, terrorism, climate change, 和 technological disruption. 这 September 11, 2001 attacks 在 这 United States led to 这 War on Terror 和 conflicts 在 Afghanistan 和 Iraq. 这 2008 global financial crisis was 这 worst economic downturn since 这 Great Depression. 这 Arab Spring (2010–2012) saw mass protests 和 uprisings across 这 Middle East 和 North Africa. 这 COVID-19 pandemic (2019–2022) caused over 6 million confirmed deaths worldwide 和 triggered unprecedented social 和 economic disruption. 这 2020s have seen rising geopolitical tensions, including Russia's invasion 的 Ukraine 在 2022 和 increased US-China competition over 技术 和 Taiwan.
+## 历史中的艺术与文化
 
-## Art 和 文化 Through 历史
+人类文化表达跨越了数万年。法国拉斯科洞穴壁画（约有 1.7 万年历史）代表了已知最早的艺术形式之一。文艺复兴创造了如 "Mona Lisa"（Leonardo da Vinci）和西斯廷教堂天顶画（Michelangelo）这样的杰作。浪漫主义时代（18 世纪后期-19 世纪）推崇情感与自然，产生了 Beethoven、Keats 和 Delacroix 的作品。现代主义（20 世纪初）打破传统，催生了立体主义（Picasso）、抽象艺术（Kandinsky）和爵士乐。后现代主义（20 世纪中后期）质疑宏大叙事，拥抱多元性，并影响了建筑、文学和视觉艺术。
 
-Human cultural expression spans tens 的 thousands 的 years. Cave paintings at Lascaux, France (approximately 17,000 years old) represent some 的 这 earliest known art. 这 Renaissance produced masterpieces such as 这 Mona Lisa (Leonardo da Vinci) 和 这 Sistine Chapel ceiling (Michelangelo). 这 Romantic era (late 18th–19th century) valued emotion 和 自然, producing works by Beethoven, Keats, 和 Delacroix. Modernism (early 20th century) broke 与 tradition, giving rise to cubism (Picasso), abstract art (Kandinsky), 和 jazz music. Postmodernism (mid-to-late 20th century) questioned grand narratives 和 embraced plurality, influencing 架构, 文学, 和 visual art.
+## 哲学与思想史
 
-## Philosophy 和 Intellectual 历史
+西方哲学大约于公元前 600 年随着前苏格拉底思想家（Thales、Heraclitus、Parmenides）而开始。Socrates、Plato 和 Aristotle 界定了古典传统。启蒙时期，Descartes、Locke、Hume 和 Kant 等思想家重塑了认识论（知识理论）和伦理学。19 世纪见证了 Marx 对资本主义的批判、Nietzsche 对道德的挑战以及社会学的诞生。20 世纪带来了分析哲学（Russell、Wittgenstein）和大陆哲学（Heidegger、Sartre、Beauvoir）。包括儒家、道家、佛教和吠陀哲学在内的东方哲学传统，数千年来深刻塑造了亚洲数十亿人的生活。
 
-Western philosophy began 与 这 pre-Socratic thinkers (Thales, Heraclitus, Parmenides) around 600 BCE. Socrates, Plato, 和 Aristotle defined 这 classical tradition. During 这 Enlightenment, thinkers like Descartes, Locke, Hume, 和 Kant reshaped epistemology (theory 的 knowledge) 和 ethics. 这 19th century saw Marx's 批评 的 capitalism, Nietzsche's challenge to morality, 和 这 birth 的 sociology. 这 20th century brought analytic philosophy (Russell, Wittgenstein) 和 continental philosophy (Heidegger, Sartre, Beauvoir). Eastern philosophical traditions including Confucianism, Taoism, Buddhism, 和 Vedic philosophy have shaped billions 的 lives across Asia 为 millennia.
+## 历史中的音乐
 
-## Music Through 历史
-
-Music has existed 在 human cultures since prehistory. Ancient Greeks used music 在 drama 和 ritual. Medieval Europe developed polyphonic sacred music (Gregorian chant, organum). 这 Baroque period (1600–1750) gave rise to opera 和 instrumental music; composers include Bach, Handel, 和 Vivaldi. 这 Classical period (1750–1820) featured Mozart, Haydn, 和 这 early Beethoven, emphasising clarity 和 form. 这 Romantic era (1820–1900) favoured emotional expression through Brahms, Chopin, 和 Wagner. 这 20th century saw 这 emergence 的 jazz, blues, rock 和 roll, hip-hop, electronic music, 和 countless global fusion genres, democratised further by recording 技术 和 streaming.
-
+音乐自史前时代起就存在于人类文化之中。古希腊人在戏剧和仪式中使用音乐。中世纪欧洲发展出复调宗教音乐（Gregorian chant、organum）。巴洛克时期（1600-1750）催生了歌剧和器乐；代表作曲家包括 Bach、Handel 和 Vivaldi。古典主义时期（1750-1820）以 Mozart、Haydn 及早期 Beethoven 为代表，强调清晰与形式。浪漫主义时代（1820-1900）通过 Brahms、Chopin 和 Wagner 的作品偏重情感表达。20 世纪见证了爵士、蓝调、摇滚、嘻哈、电子音乐以及无数全球融合流派的兴起，而录音技术和流媒体又进一步推动了音乐的普及化。

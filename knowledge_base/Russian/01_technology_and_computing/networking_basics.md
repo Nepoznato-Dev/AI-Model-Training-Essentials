@@ -1,60 +1,53 @@
-<!-- 
-This file was automatically translated from English to Russian.
-Source: networking_basics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Основы сетей
 
-# Networking Основы
-
-A practical Справочник для developers и sysadmins — core concepts, protocols, Команды, и troubleshooting.
+Практический справочник для разработчиков и системных администраторов — основные понятия, протоколы, команды и методы устранения неполадок.
 
 ---
 
-## the OSI Model (7 Layers)
+## Модель OSI (7 уровней)
 
-A conceptual framework для understanding Сеть Коммуникация.
+Концептуальная модель для понимания сетевого взаимодействия.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Данные formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection Управление | NetBIOS, RPC |
+| 6 | Presentation | Data formatting, encryption, compression | TLS, JPEG, ASCII |
+| 5 | Session | Connection management | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Сеть | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | Данные Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
+| 3 | Network | Routing, addressing | IP, ICMP, OSPF, BGP |
+| 2 | Data Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
 | 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-в practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used для the internet.
+На практике для интернета чаще используется **модель TCP/IP** (4 уровня: Link, Internet, Transport, Application).
 
 ---
 
-## IP Addressing
+## IP-адресация
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted в practice).
+- 32-битный адрес, записывается как четыре октета: `192.168.1.1`
+- Всего: ~4,3 миллиарда адресов (но на практике этот диапазон уже исчерпан).
 
 ### IPv6
-- 128-bit address, written в hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128-битный адрес, записывается в шестнадцатеричном виде: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Всего: 2¹²⁸ адресов (практически бесконечное количество).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on the internet; used inside local networks:
+### Диапазоны частных IP-адресов (RFC 1918)
+Они не маршрутизируются в интернете и используются внутри локальных сетей:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means the first 24 bits are the Сеть prefix; the last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### Нотация CIDR
+`192.168.1.0/24` означает, что первые 24 бита — это префикс сети, а последние 8 бит — адреса хостов. Диапазон включает адреса от `192.168.1.0` до `192.168.1.255`.
 
 ---
 
 ## DNS (Domain Name System)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+Сопоставляет доменные имена (например, `example.com`) с IP-адресами.
 
-### Record Types
+### Типы записей
 | Type | Purpose |
 |------|---------|
 | **A** | Maps domain to IPv4 address |
@@ -62,10 +55,10 @@ Maps domain names (e.g., `example.com`) to IP addresses.
 | **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver для the domain |
-| **SRV** | Service record (e.g., для SIP) |
+| **NS** | Nameserver for the domain |
+| **SRV** | Service record (e.g., for SIP) |
 
-### Common Tools
+### Распространенные инструменты
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,9 +248,9 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps и System Administration
+# DevOps and System Administration
 
-A practical Руководство to managing servers, automating operations, и maintaining reliable infrastructure.
+A practical guide to managing servers, automating operations, and maintaining reliable infrastructure.
 
 ---
 

@@ -1,71 +1,64 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: networking_basics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 网络基础
 
-# Networking 基础
-
-A practical 参考 为 developers 和 sysadmins — core concepts, protocols, 命令, 和 troubleshooting.
+面向开发者和系统管理员的实用参考资料——涵盖核心概念、协议、命令和故障排查。
 
 ---
 
-## 这 OSI Model (7 Layers)
+## OSI 模型（7 层）
 
-A conceptual framework 为 understanding 网络 沟通.
+这是一个用于理解网络通信的概念性框架。
 
-| Layer | Name | Function | Example protocols |
+| 层 | 名称 | 功能 | 示例协议 |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | 数据 formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection 管理 | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | 网络 | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | 数据 Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | 应用层 | 面向终端用户的服务 | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | 表示层 | 数据格式化、加密、压缩 | TLS, JPEG, ASCII |
+| 5 | 会话层 | 连接管理 | NetBIOS, RPC |
+| 4 | 传输层 | 端到端传输、纠错、流量控制 | TCP, UDP |
+| 3 | 网络层 | 路由、寻址 | IP, ICMP, OSPF, BGP |
+| 2 | 数据链路层 | 成帧、差错检测、MAC 地址 | Ethernet, Wi-Fi, PPP |
+| 1 | 物理层 | 原始比特传输 | Ethernet cables, fiber optics, radio waves |
 
-在 practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used 为 这 internet.
+在实际中，**TCP/IP 模型**（4 层：Link、Internet、Transport、Application）更常用于互联网。
 
 ---
 
-## IP Addressing
+## IP 编址
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted 在 practice).
+- 32 位地址，写作四个八位组：`192.168.1.1`
+- 总量：约 43 亿个地址（但实际上已基本耗尽）。
 
 ### IPv6
-- 128-bit address, written 在 hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128 位地址，以十六进制表示：`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- 总量：2¹²⁸ 个地址（几乎可视为无限）。
 
-### Private IP Ranges (RFC 1918)
-These are not routable on 这 internet; used inside local networks:
+### 私有 IP 地址范围（RFC 1918）
+这些地址不能在互联网上路由，用于本地网络内部：
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means 这 first 24 bits are 这 网络 prefix; 这 last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR 表示法
+`192.168.1.0/24` 表示前 24 位是网络前缀，后 8 位是主机位。它包含 `192.168.1.0` 到 `192.168.1.255` 之间的地址。
 
 ---
 
-## DNS (Domain Name System)
+## DNS（域名系统）
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+将域名（例如 `example.com`）映射到 IP 地址。
 
-### Record Types
-| Type | Purpose |
+### 记录类型
+| 类型 | 用途 |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver 为 这 domain |
-| **SRV** | Service record (e.g., 为 SIP) |
+| **A** | 将域名映射到 IPv4 地址 |
+| **AAAA** | 将域名映射到 IPv6 地址 |
+| **CNAME** | 指向另一个域名的别名 |
+| **MX** | 邮件交换服务器 |
+| **TXT** | 任意文本（SPF、DKIM、验证信息） |
+| **NS** | 域名的权威名称服务器 |
+| **SRV** | 服务记录（例如用于 SIP） |
 
-### Common Tools
+### 常用工具
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,9 +248,9 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps 和 System Administration
+# DevOps and System Administration
 
-A practical 指南 to managing servers, automating operations, 和 maintaining reliable infrastructure.
+A practical guide to managing servers, automating operations, and maintaining reliable infrastructure.
 
 ---
 

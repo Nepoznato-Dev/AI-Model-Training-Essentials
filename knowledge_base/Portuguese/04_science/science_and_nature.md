@@ -1,48 +1,41 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: science_and_nature.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
-
 # Ciência e Natureza
 
-## Physics
+## Física
 
-Physics is o/a natural Ciência that studies matter, energy, e o/a fundamental forces de o/a universe. o/a four fundamental forces are gravity, electromagnetism, o/a strong nuclear force, e o/a weak nuclear force. Gravity is o/a weakest de o/a four forces but has infinite range e affects all objects com mass. Newton's Direito de gravity states that every object attracts every other object com a force proportional to their masses e inversely proportional to o/a square de o/a distance between them.
+A física é a ciência natural que estuda a matéria, a energia e as forças fundamentais do universo. As quatro forças fundamentais são a gravidade, o eletromagnetismo, a força nuclear forte e a força nuclear fraca. A gravidade é a mais fraca das quatro forças, mas tem alcance infinito e afeta todos os objetos com massa. A lei da gravidade de Newton afirma que todo objeto atrai todo outro objeto com uma força proporcional às suas massas e inversamente proporcional ao quadrado da distância entre eles.
 
-Einstein's theory de general relativity describes gravity as a curvature de spacetime caused by mass e energy. Einstein's theory de special relativity established that o/a speed de light is constant em all inertial frames de Referência e that mass e energy are equivalent, expressed as E = mc squared.
+A teoria da relatividade geral de Einstein descreve a gravidade como uma curvatura do espaço-tempo causada por massa e energia. A teoria da relatividade especial de Einstein estabeleceu que a velocidade da luz é constante em todos os referenciais inerciais e que massa e energia são equivalentes, expressas como E = mc ao quadrado.
 
-## Atoms e Matter
+## Átomos e Matéria
 
-An atom is o/a smallest unit de an element that retains o/a chemical properties de that element. Atoms consist de a nucleus containing protons e neutrons, surrounded by electrons. o/a number de protons em an atom determines which element it is, called o/a atomic number. Elements are organized em o/a periodic table by atomic number. There are 118 known elements. Hydrogen is o/a lightest e most abundant element em o/a universe. Carbon is o/a basis de all known life due to its ability to form four chemical bonds.
+Um átomo é a menor unidade de um elemento que retém as propriedades químicas desse elemento. Os átomos consistem em um núcleo contendo prótons e nêutrons, cercado por elétrons. O número de prótons em um átomo determina de qual elemento se trata, chamado número atômico. Os elementos são organizados na tabela periódica pelo número atômico. Existem 118 elementos conhecidos. O hidrogênio é o elemento mais leve e mais abundante do universo. O carbono é a base de toda a vida conhecida devido à sua capacidade de formar quatro ligações químicas.
 
-Matter exists em four common states: solid, liquid, gas, e plasma. em a solid, atoms are tightly packed. em a liquid, atoms can flow but remain close. em a gas, atoms move freely. Plasma is an ionized gas e is o/a most common state de matter em o/a universe, found em stars.
+A matéria existe em quatro estados comuns: sólido, líquido, gasoso e plasma. Em um sólido, os átomos estão fortemente compactados. Em um líquido, os átomos podem fluir, mas permanecem próximos. Em um gás, os átomos movem-se livremente. O plasma é um gás ionizado e é o estado mais comum da matéria no universo, encontrado nas estrelas.
 
-## Chemistry
+## Química
 
-Chemistry is o/a study de matter e o/a changes it undergoes. Chemical reactions involve o/a breaking e forming de chemical bonds. An acid is a substance that donates hydrogen ions (protons) em a solution. A base is a substance that accepts hydrogen ions. o/a pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), com 7 being neutral. Water has a pH de 7.
+A química é o estudo da matéria e das transformações que ela sofre. As reações químicas envolvem a quebra e a formação de ligações químicas. Um ácido é uma substância que doa íons de hidrogênio (prótons) em uma solução. Uma base é uma substância que aceita íons de hidrogênio. A escala de pH mede o quão ácida ou básica é uma solução, variando de 0 (mais ácida) a 14 (mais básica), sendo 7 neutro. A água tem pH 7.
 
-Photosynthesis is o/a process by which plants, algae, e some bacteria convert light energy, usually from o/a Sun, into chemical energy stored em glucose. o/a equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential para life on Earth as it produces oxygen e forms o/a base de most Comida chains.
+A fotossíntese é o processo pelo qual plantas, algas e algumas bactérias convertem energia luminosa, geralmente do Sol, em energia química armazenada na glicose. A equação é: dióxido de carbono + água + energia luminosa → glicose + oxigênio. A fotossíntese é essencial para a vida na Terra, pois produz oxigênio e forma a base da maioria das cadeias alimentares.
 
-## Biology
+## Biologia
 
-Biology is o/a study de living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, e uses energy. DNA (deoxyribonucleic acid) carries o/a genetic information de living organisms. DNA is a double helix made de four nucleotide bases: adenine, thymine, cytosine, e guanine. Cells are o/a basic structural unit de life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) e eukaryotic cells (com a nucleus, like plants e animals).
+A biologia é o estudo dos organismos vivos. Toda vida compartilha certas características: é organizada, responde a estímulos, cresce, se reproduz e usa energia. O DNA (ácido desoxirribonucleico) carrega a informação genética dos organismos vivos. O DNA é uma dupla hélice composta por quatro bases nitrogenadas: adenina, timina, citosina e guanina. As células são a unidade estrutural básica da vida. Existem dois tipos principais: células procarióticas (sem núcleo delimitado por membrana, como bactérias) e células eucarióticas (com núcleo, como plantas e animais).
 
-Evolution is o/a change em o/a heritable characteristics de biological populations over successive generations. Charles Darwin proposed o/a theory de natural selection, which states that individuals com advantageous traits are more likely to survive e reproduce. o/a theory de evolution by natural selection is o/a unifying framework de modern biology.
+A evolução é a mudança nas características hereditárias de populações biológicas ao longo de gerações sucessivas. Charles Darwin propôs a teoria da seleção natural, que afirma que indivíduos com características vantajosas têm maior probabilidade de sobreviver e se reproduzir. A teoria da evolução por seleção natural é a estrutura unificadora da biologia moderna.
 
-## Electricity e Magnetism
+## Eletricidade e Magnetismo
 
-Electricity is o/a flow de electric charge, usually electrons. Voltage (measured em volts) is o/a electrical potential difference between two points. Current (measured em amperes) is o/a rate de flow de electric charge. Resistance (measured em ohms) is opposition to o/a flow de current. Ohm's Direito states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric e magnetic fields are two aspects de o/a same phenomenon: electromagnetism.
+A eletricidade é o fluxo de carga elétrica, geralmente elétrons. A voltagem (medida em volts) é a diferença de potencial elétrico entre dois pontos. A corrente (medida em ampères) é a taxa de fluxo de carga elétrica. A resistência (medida em ohms) é a oposição ao fluxo de corrente. A lei de Ohm afirma que a voltagem é igual à corrente multiplicada pela resistência (V = IR). O magnetismo é uma força produzida por cargas elétricas em movimento. Campos elétricos e magnéticos são dois aspectos do mesmo fenômeno: o eletromagnetismo.
 
-## o/a Universe e Cosmology
+## O Universo e a Cosmologia
 
-o/a universe is approximately 13.8 billion years old, beginning com o/a Big Bang. o/a universe contains approximately 2 trillion galaxies, each containing billions to trillions de stars. o/a Milky Way is our home galaxy, a spiral galaxy containing between 100 e 400 billion stars. o/a nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter e dark energy together make up about 95% de o/a universe's total content, though their Natureza is not fully understood.
+O universo tem aproximadamente 13,8 bilhões de anos, tendo começado com o Big Bang. O universo contém aproximadamente 2 trilhões de galáxias, cada uma contendo de bilhões a trilhões de estrelas. A Via Láctea é a nossa galáxia, uma galáxia espiral contendo entre 100 e 400 bilhões de estrelas. A estrela mais próxima do nosso Sol é Proxima Centauri, a cerca de 4,24 anos-luz de distância. Matéria escura e energia escura juntas compõem cerca de 95% do conteúdo total do universo, embora sua natureza ainda não seja totalmente compreendida.
 
-## Geology
+## Geologia
 
-Earth is composed de layers: o/a inner core (solid iron e nickel), outer core (liquid iron e nickel), mantle (semi-solid rock), e crust (solid rock). o/a tectonic plates are large pieces de Earth's crust e upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches o/a surface. o/a rock cycle describes how rocks are formed, broken down, e reformed over millions de years.
+A Terra é composta por camadas: núcleo interno (ferro e níquel sólidos), núcleo externo (ferro e níquel líquidos), manto (rocha semissólida) e crosta (rocha sólida). As placas tectônicas são grandes partes da crosta e do manto superior da Terra que se movem lentamente ao longo do tempo. Terremotos ocorrem quando placas tectônicas raspam ou deslizam umas contra as outras. Vulcões se formam onde o magma do interior da Terra alcança a superfície. O ciclo das rochas descreve como as rochas são formadas, decompostas e reformadas ao longo de milhões de anos.
 
-## Energy
+## Energia
 
-Energy exists em many forms: kinetic (energy de motion), potential (stored energy), thermal (heat), chemical, electrical, e nuclear. o/a Direito de conservation de energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, e tidal energy. Fossil fuels (coal, oil, e natural gas) are non-renewable energy sources formed from o/a remains de ancient organisms.
+A energia existe em muitas formas: cinética (energia do movimento), potencial (energia armazenada), térmica (calor), química, elétrica e nuclear. A lei da conservação da energia afirma que a energia não pode ser criada nem destruída, apenas transformada de uma forma em outra. Fontes de energia renovável incluem solar, eólica, hidrelétrica, geotérmica e energia das marés. Combustíveis fósseis (carvão, petróleo e gás natural) são fontes de energia não renováveis formadas a partir dos restos de organismos antigos.

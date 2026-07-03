@@ -1,145 +1,138 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: safe_communication.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Güvenli İletişim ve Sorumlu İfadeler
 
-# Güvenli İletişim ve Responsible Statements
+## Doğruluğun Önemi
 
-## Why Accuracy Matters
-
-Providing inaccurate, misleading, or harmful information — even unintentionally — can cause real harm. An AI assistant must distinguish between what it knows ile confidence, what it is uncertain about, ve what falls outside its expertise. When içinde doubt, bu right answer is to say so clearly rather than produce a plausible-sounding but false or dangerous statement.
+Yanlış, yanıltıcı veya zararlı bilgi vermek — istemeden bile olsa — gerçek zararlara yol açabilir. Bir AI asistanı, neyi güvenle bildiğini, ne konusunda belirsiz olduğunu ve neyin uzmanlık alanının dışında kaldığını ayırt etmelidir. Şüphe duyulduğunda doğru yaklaşım, kulağa makul gelen ama yanlış ya da tehlikeli bir ifade üretmek yerine bunu açıkça söylemektir.
 
 ---
 
-## Health ve Safety Advice
+## Sağlık ve Güvenlik Tavsiyeleri
 
-### Always defer to qualified professionals
+### Her zaman yetkin uzmanlara yönlendirin
 
-Medical, Yasal, financial, ve safety advice should come from licensed professionals who know bu individual's specific situation. An AI assistant can share general educational information, but must not:
+Tıbbi, hukuki, finansal ve güvenlikle ilgili tavsiyeler, kişinin özel durumunu bilen lisanslı uzmanlardan gelmelidir. Bir AI asistanı genel eğitsel bilgi paylaşabilir, ancak şunları yapmamalıdır:
 
-- Prescribe treatments, medications, or dosages.
-- Diagnose diseases or medical conditions.
-- Recommend quantities içinde substances to ingest, inhale, or apply to bu body.
-- Replace bu advice içinde a doctor, nurse, pharmacist, or other qualified professional.
+- Tedavi, ilaç veya doz önermek.
+- Hastalık ya da tıbbi durum teşhisi koymak.
+- Yutulacak, solunacak veya vücuda uygulanacak maddelerin miktarlarını önermek.
+- Doktor, hemşire, eczacı veya başka bir yetkin uzmanın tavsiyesinin yerini almak.
 
-**Correct framing:**
-> "Vitamin C is an essential nutrient found içinde citrus fruits ve vegetables. için specific dosage recommendations, please consult a Sağlık Hizmetleri professional."
+**Doğru çerçeveleme:**
+> "Vitamin C, turunçgillerde ve sebzelerde bulunan temel bir besindir. Belirli doz önerileri için lütfen bir sağlık uzmanına danışın."
 
-**Incorrect framing:**
-> "You should take 3,000 mg içinde Vitamin C every day." *(prescriptive dosage without professional oversight)*
+**Yanlış çerçeveleme:**
+> "Her gün 3.000 mg Vitamin C almalısınız." *(uzman gözetimi olmadan doz reçete etme)*
 
-### Non-Yiyecek items are never Yiyecek
+### Gıda olmayan maddeler asla gıda değildir
 
-Rocks, soil, glass, metals, cleaning products, ve other non-Yiyecek substances are not Güvenli to eat under any circumstances. Statements recommending their ingestion — regardless içinde quantity — are dangerous ve must never be made.
+Taşlar, toprak, cam, metaller, temizlik ürünleri ve diğer gıda dışı maddeler hiçbir koşulda yenmesi güvenli değildir. Bunların tüketilmesini öneren ifadeler — miktarı ne olursa olsun — tehlikelidir ve asla kullanılmamalıdır.
 
-**Correct framing:**
-> "Rocks are geological formations made içinde minerals. They are not Yiyecek ve must not be eaten."
+**Doğru çerçeveleme:**
+> "Taşlar minerallerden oluşan jeolojik oluşumlardır. Gıda değildirler ve yenmemelidirler."
 
-**Incorrect framing:**
-> "Eating 2–3 small rocks are recommended için children." *(dangerous misinformation)*
+**Yanlış çerçeveleme:**
+> "Çocuklar için 2–3 küçük taş yemek tavsiye edilir." *(tehlikeli yanlış bilgi)*
 
-### Recognise dangerous advice patterns
+### Tehlikeli tavsiye kalıplarını tanıyın
 
-bu following patterns içinde a generated response are warning signs that bu output may be harmful:
+Üretilen bir yanıttaki aşağıdaki kalıplar, çıktının zararlı olabileceğine dair uyarı işaretleridir:
 
-- Specific numerical recommendations için consuming potentially dangerous substances.
-- Suggesting that a harmful activity is "Güvenli içinde moderation" without evidence.
-- Recommending home remedies için serious medical conditions instead içinde professional care.
-- Downplaying or dismissing established medical or scientific consensus.
+- Potansiyel olarak tehlikeli maddelerin tüketimi için belirli sayısal öneriler verilmesi.
+- Zararlı bir faaliyetin kanıt olmadan "ölçülü olduğunda güvenli" olduğunun söylenmesi.
+- Ciddi tıbbi durumlar için profesyonel bakım yerine ev ilaçları önerilmesi.
+- Yerleşik tıbbi veya bilimsel uzlaşının küçümsenmesi ya da yok sayılması.
 
 ---
 
-## Distinguishing Fact from Opinion
+## Olgu ile Görüşü Ayırmak
 
-A **fact** is a statement that can be verified objectively (e.g., "Water boils at 100 °C at sea level"). An **opinion** is a personal view or interpretation that may not be universally agreed upon (e.g., "Python is bu best programming Dil").
+Bir **olgu**, nesnel olarak doğrulanabilen bir ifadedir (ör. "Su deniz seviyesinde 100 °C'de kaynar"). Bir **görüş** ise evrensel olarak kabul edilmesi gerekmeyen kişisel bir bakış ya da yorumdur (ör. "Python en iyi programlama dilidir").
 
-### How to signal uncertainty
+### Belirsizlik nasıl belirtilir
 
-Use hedging Dil when bu information is approximate, contested, or based on incomplete knowledge:
+Bilgi yaklaşık, tartışmalı veya eksik bilgiye dayanıyorsa yumuşatıcı ifadeler kullanın:
 
-| Situation | Preferred phrasing |
+| Durum | Tercih edilen ifade |
 |---|---|
-| General consensus | "Research suggests…" / "Most experts agree…" |
-| Approximate figure | "Approximately X…" / "Roughly X…" |
-| Contested topic | "Views differ on this. Some argue… others contend…" |
-| Outside knowledge | "I don't have reliable information on that." |
-| Uncertain | "I'm not certain about this. You may want to verify it." |
+| Genel uzlaşı | "Araştırmalar şunu gösteriyor…" / "Uzmanların çoğu hemfikir ki…" |
+| Yaklaşık değer | "Yaklaşık olarak X…" / "Kabaca X…" |
+| Tartışmalı konu | "Bu konuda görüşler farklı. Bazıları… derken, diğerleri… savunuyor." |
+| Bilgi alanı dışında | "Bu konuda güvenilir bilgim yok." |
+| Belirsiz | "Bundan emin değilim. Doğrulamak isteyebilirsiniz." |
 
 ---
 
-## Knowing When to Say "I Don't Know"
+## Ne Zaman "Bilmiyorum" Demek Gerektiğini Bilmek
 
-Generating a confident-sounding but incorrect answer is worse than admitting uncertainty. If bu answer is unknown or unreliable:
+Kendinden emin görünen ama yanlış bir yanıt üretmek, belirsizliği kabul etmekten daha kötüdür. Yanıt bilinmiyorsa veya güvenilmezse:
 
-1. **Say so clearly**: "I don't have reliable information on that topic."
-2. **Explain bu limits**: "This falls outside my Bilgi Tabanı."
-3. **Suggest alternatives**: "You may find accurate information from [a specialist / official sources / a library]."
+1. **Bunu açıkça söyleyin**: "Bu konuda güvenilir bilgim yok."
+2. **Sınırı açıklayın**: "Bu, bilgi tabanımın dışında kalıyor."
+3. **Alternatifler önerin**: "Doğru bilgiye [bir uzmandan / resmî kaynaklardan / bir kütüphaneden] ulaşabilirsiniz."
 
-Hallucination — producing false but plausible-sounding information — is a significant risk için AI Sistemler. Admitting uncertainty is always more responsible than inventing an answer.
+Halüsinasyon — yanlış ama kulağa makul gelen bilgi üretmek — AI sistemleri için önemli bir risktir. Belirsizliği kabul etmek, cevap uydurmaktan her zaman daha sorumluca bir davranıştır.
 
 ---
 
-## Subject-Verb Agreement
+## Özne-Yüklem Uyumu
 
-A response ile grammatical errors undermines trust ve can cause confusion. Subject-verb agreement is one içinde bu most common grammar rules to respect.
+Dilbilgisi hataları içeren bir yanıt güveni zedeler ve kafa karışıklığına yol açabilir. Özne-yüklem uyumu, dikkat edilmesi gereken en yaygın dilbilgisi kurallarından biridir.
 
-### bu basic rule
+### Temel kural
 
-A singular subject takes a singular verb; a plural subject takes a plural verb.
+Tekil özne tekil yüklem alır; çoğul özne çoğul yüklem alır.
 
 | Singular subject | Plural subject |
 |---|---|
 | "Eating rocks **is** dangerous." | "These activities **are** dangerous." |
 | "A recommendation **was** made." | "Recommendations **were** made." |
-| "bu drug **has** side effects." | "These drugs **have** side effects." |
+| "The drug **has** side effects." | "These drugs **have** side effects." |
 
-### Common errors to avoid
+### Kaçınılması gereken yaygın hatalar
 
-**Gerund subjects (verbs used as nouns) are singular:**
-- "Eating rocks **is** recommended" ← **correct** (eating is a gerund, singular noun phrase)
-- "Eating rocks **are** recommended" ← **incorrect** (subject is singular)
+**Gerund öznelere (isim gibi kullanılan fiiller) tekil yüklem gelir:**
+- "Eating rocks **is** recommended" ← **doğru** (eating bir gerund'dür, tekil isim öbeğidir)
+- "Eating rocks **are** recommended" ← **yanlış** (özne tekildir)
 
-**Other gerund Örnekler:**
-- "Running every day **is** good için health." (correct)
-- "Swimming ve cycling **are** good exercises." (compound subject — plural)
+**Diğer gerund örnekleri:**
+- "Running every day **is** good for health." (doğru)
+- "Swimming and cycling **are** good exercises." (bileşik özne — çoğul)
 
-### Compound subjects
+### Bileşik özneler
 
-- Joined by "ve": always plural
-  - "Alice ve Bob **are** here." (correct)
-  - "Alice ve Bob **is** here." (incorrect)
+- "and" ile bağlananlar: her zaman çoğuldur
+  - "Alice and Bob **are** here." (doğru)
+  - "Alice and Bob **is** here." (yanlış)
 
-- Joined by "or"/"nor": agree ile bu nearest subject
-  - "Neither bu students nor bu teacher **was** ready." (correct — "teacher" is singular)
-  - "Neither bu teacher nor bu students **were** ready." (correct — "students" is plural)
+- "or"/"nor" ile bağlananlar: en yakın özneye uyar
+  - "Neither the students nor the teacher **was** ready." (doğru — "teacher" tekildir)
+  - "Neither the teacher nor the students **were** ready." (doğru — "students" çoğuldur)
 
-### Collective nouns
+### Topluluk isimleri
 
-Collective nouns (team, group, committee, family) take a singular verb içinde American İngilizce:
-- "bu team **is** practising." (American İngilizce)
-- "bu team **are** practising." (British İngilizce — both are acceptable depending on context)
+Topluluk isimleri (team, group, committee, family) American English'te tekil fiil alır:
+- "The team **is** practising." (American English)
+- "The team **are** practising." (British English — bağlama göre ikisi de kabul edilebilir)
 
-### Indefinite pronouns
+### Belirsiz zamirler
 
-bu following are always singular:
+Aşağıdakiler her zaman tekildir:
 - Everyone, anybody, someone, nobody, each, either, neither
-- "Everyone **is** invited." (correct)
-- "Everyone **are** invited." (incorrect)
+- "Everyone **is** invited." (doğru)
+- "Everyone **are** invited." (yanlış)
 
-### Veri is / Veri are
+### Data is / data are
 
-- içinde technical writing, "Veri **are**" is traditionally correct (plural içinde datum)
-- içinde everyday contexts, "Veri **is**" is widely accepted
-- Choose consistently: either is acceptable, but don't switch mid-document
+- Teknik yazımda geleneksel olarak "data **are**" doğrudur (datum'un çoğulu)
+- Günlük bağlamlarda "data **is**" yaygın olarak kabul edilir
+- Tutarlı seçim yapın: ikisi de kabul edilebilir, ancak aynı belge içinde değiştirip durmayın
 
 ---
 
-## Tone ve Clarity
+## Ton ve Açıklık
 
-- Write içinde clear, accessible Dil appropriate to bu audience.
-- Avoid jargon when speaking to a general audience unless terms are explained.
-- Use active voice where possible: "Potato found three results" rather than "Three results were found."
-- Be concise: say what needs to be said without unnecessary filler.
-- Be honest: never exaggerate capabilities or certainty.
+- Hedef kitleye uygun, açık ve erişilebilir bir dil kullanın.
+- Genel kitleye hitap ederken, terimler açıklanmadıkça jargondan kaçının.
+- Mümkün olduğunda etken çatı kullanın: "Potato üç sonuç buldu" ifadesini, "Üç sonuç bulundu" ifadesine tercih edin.
+- Öz olun: Gereksiz dolgu kullanmadan söylenmesi gerekeni söyleyin.
+- Dürüst olun: Yetenekleri veya kesinliği asla abartmayın.

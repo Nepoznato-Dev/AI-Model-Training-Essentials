@@ -1,69 +1,62 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: networking_basics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Ağ Temelleri
 
-# Networking Temeller
-
-A practical Referans için developers ve sysadmins — core concepts, protocols, Komutlar, ve troubleshooting.
+Geliştiriciler ve sistem yöneticileri için temel kavramları, protokolleri, komutları ve sorun gidermeyi kapsayan pratik bir başvuru.
 
 ---
 
-## bu OSI Model (7 Layers)
+## OSI Modeli (7 Katman)
 
-A conceptual framework için understanding Ağ İletişim.
+Ağ iletişimini anlamaya yönelik kavramsal bir çerçeve.
 
 | Layer | Name | Function | Example protocols |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Veri formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection Yönetim | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Ağ | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | Veri Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | Application | Son kullanıcı hizmetleri | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Presentation | Veri biçimlendirme, şifreleme, sıkıştırma | TLS, JPEG, ASCII |
+| 5 | Session | Bağlantı yönetimi | NetBIOS, RPC |
+| 4 | Transport | Uçtan uca teslimat, hata düzeltme, akış kontrolü | TCP, UDP |
+| 3 | Network | Yönlendirme, adresleme | IP, ICMP, OSPF, BGP |
+| 2 | Data Link | Çerçeveleme, hata tespiti, MAC adresleri | Ethernet, Wi-Fi, PPP |
+| 1 | Physical | Ham bit iletimi | Ethernet kabloları, fiber optik, radyo dalgaları |
 
-içinde practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used için bu internet.
+Pratikte, internet için **TCP/IP model** (4 katman: Link, Internet, Transport, Application) daha yaygın kullanılır.
 
 ---
 
-## IP Addressing
+## IP Adresleme
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted içinde practice).
+- 32 bit adres, dört oktet olarak yazılır: `192.168.1.1`
+- Toplam: yaklaşık 4,3 milyar adres (ancak pratikte tükenmiştir).
 
 ### IPv6
-- 128-bit address, written içinde hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128 bit adres, hexadecimal biçimde yazılır: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Toplam: 2¹²⁸ adres (pratikte sınırsız).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on bu internet; used inside local networks:
+### Private IP Aralıkları (RFC 1918)
+Bunlar internet üzerinde yönlendirilemez; yerel ağların içinde kullanılır:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means bu first 24 bits are bu Ağ prefix; bu last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR Gösterimi
+`192.168.1.0/24`, ilk 24 bitin ağ öneki, son 8 bitin ise host kısmı olduğu anlamına gelir. `192.168.1.0` ile `192.168.1.255` arasındaki adresleri kapsar.
 
 ---
 
 ## DNS (Domain Name System)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+Alan adlarını (ör. `example.com`) IP adreslerine eşler.
 
-### Record Types
+### Record Türleri
 | Type | Purpose |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver için bu domain |
-| **SRV** | Service record (e.g., için SIP) |
+| **A** | Alan adını IPv4 adresine eşler |
+| **AAAA** | Alan adını IPv6 adresine eşler |
+| **CNAME** | Başka bir alan adına takma ad |
+| **MX** | Mail exchange sunucusu |
+| **TXT** | Serbest metin (SPF, DKIM, doğrulama) |
+| **NS** | Alan adı için nameserver |
+| **SRV** | Hizmet kaydı (ör. SIP için) |
 
 ### Common Tools
 ```bash
@@ -72,7 +65,7 @@ nslookup example.com       # DNS lookup (simpler)
 host example.com           # Quick lookup
 dig -x 8.8.8.8             # Reverse lookup (IP to name)
 
-Ports and Protocols
+Bağlantı Noktaları ve Protokoller
 Well-Known Ports (0–1023)
 Port	Protocol	Service
 20, 21	TCP	FTP
@@ -93,71 +86,71 @@ Port	Protocol	Service
 5432	TCP	PostgreSQL
 6379	TCP	Redis
 27017	TCP	MongoDB
-Check open ports
+Açık portları kontrol et
 bash
 ss -tulpn                 # Linux: listen and established sockets
 netstat -an               # Older tool
 lsof -i :8080             # See process using port 8080
 nmap localhost            # Scan local ports
-TCP vs UDP
-Feature	TCP	UDP
-Connection	Connection-oriented (handshake)	Connectionless
-Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
-Ordering	Preserves order	No ordering guarantee
-Flow control	Yes (sliding window)	No
-Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
-Header size	20–60 bytes	8 bytes
-HTTP and HTTPS
+TCP ve UDP
+Özellik	TCP	UDP
+Bağlantı	Connection-oriented (handshake)	Connectionless
+Güvenilirlik	Guaranteed delivery, retransmission	Best effort (may drop packets)
+Sıralama	Preserves order	No ordering guarantee
+Akış kontrolü	Yes (sliding window)	No
+Kullanım alanları	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
+Başlık boyutu	20–60 bytes	8 bytes
+HTTP ve HTTPS
 HTTP Methods
-GET: Retrieve a resource (idempotent, safe).
+GET: Bir kaynağı alır (idempotent, safe).
 
-POST: Submit data (not idempotent).
+POST: Veri gönderir (idempotent değildir).
 
-PUT: Update/replace a resource (idempotent).
+PUT: Bir kaynağı günceller/değiştirir (idempotent).
 
-PATCH: Partial update.
+PATCH: Kısmi güncelleme.
 
-DELETE: Remove a resource (idempotent).
+DELETE: Bir kaynağı kaldırır (idempotent).
 
 Status Codes
-1xx: Informational (100 Continue).
+1xx: Bilgilendirme (100 Continue).
 
-2xx: Success (200 OK, 201 Created, 204 No Content).
+2xx: Başarı (200 OK, 201 Created, 204 No Content).
 
-3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
+3xx: Yönlendirme (301 Moved Permanently, 302 Found, 304 Not Modified).
 
-4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+4xx: İstemci hatası (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
 
-5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+5xx: Sunucu hatası (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
 
 Headers
-Content-Type: media type (application/json, text/html).
+Content-Type: medya türü (application/json, text/html).
 
-Authorization: credentials (e.g., Bearer <token>).
+Authorization: kimlik bilgileri (ör. ******
 
-Cache-Control: caching policy.
+Cache-Control: önbellekleme politikası.
 
-CORS headers: Access-Control-Allow-Origin, etc.
+CORS headers: Access-Control-Allow-Origin, vb.
 
 TLS/SSL
-Encrypts HTTP traffic (HTTPS = HTTP over TLS).
+HTTP trafiğini şifreler (HTTPS = TLS üzerinden HTTP).
 
-Certificates from Certificate Authorities (CAs) authenticate the server.
+Certificate Authority'lerden (CA) gelen sertifikalar sunucunun kimliğini doğrular.
 
-Verify certificate chain and hostname on the client side.
+İstemci tarafında sertifika zincirini ve hostname'i doğrulayın.
 
 Firewalls and NAT
 Firewall
-Filters traffic based on rules (source IP, dest IP, port, protocol).
+Kurallara göre trafiği filtreler (source IP, dest IP, port, protocol).
 
-Stateful firewalls track connection states.
+Stateful firewall'lar bağlantı durumlarını izler.
 
 NAT (Network Address Translation)
-Translates private IPs to a public IP for internet access.
+Private IP'leri internet erişimi için public IP'ye çevirir.
 
-Port forwarding: maps a public port to an internal host/port.
+Port forwarding: public bir portu içteki bir host/port'a eşler.
 
-Common Networking Commands
+Yaygın Ağ Komutları
 Connectivity Tests
 bash
 ping google.com            # ICMP echo request
@@ -178,7 +171,7 @@ bash
 dig example.com
 nslookup example.com
 host example.com
-Connectivity to a Port
+Bir Porta Erişim
 bash
 nc -zv google.com 443      # Netcat: check if port 443 is open
 telnet google.com 443      # Telnet to port
@@ -191,7 +184,7 @@ Network Statistics
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
+Subnetting (Hızlı Başvuru)
 CIDR	Netmask	Number of addresses	Usable hosts
 /32	255.255.255.255	1	1
 /30	255.255.255.252	4	2
@@ -206,7 +199,7 @@ CIDR	Netmask	Number of addresses	Usable hosts
 /16	255.255.0.0	65,536	65,534
 /8	255.0.0.0	16,777,216	16,777,214
 Load Balancing and Reverse Proxies
-Nginx as Reverse Proxy
+Reverse Proxy olarak Nginx
 nginx
 server {
     listen 80;
@@ -226,27 +219,27 @@ IP hash (session stickiness)
 
 Weighted round-robin
 
-Tools
-Nginx, HAProxy (software)
+Araçlar
+Nginx, HAProxy (yazılım)
 
-AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
+AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (bulut)
 
-Troubleshooting Checklist
-Is the physical link up? (Check cables, Wi-Fi connection).
+Sorun Giderme Kontrol Listesi
+Fiziksel bağlantı açık mı? (Kabloları, Wi-Fi bağlantısını kontrol edin.)
 
-Can you ping the gateway? (e.g., ping 192.168.1.1).
+Gateway'e ping atabiliyor musunuz? (ör. ping 192.168.1.1).
 
-Can you ping an external IP? (e.g., 8.8.8.8).
+Harici bir IP'ye ping atabiliyor musunuz? (ör. 8.8.8.8).
 
-Can you resolve a domain? (dig google.com).
+Bir alan adını çözümleyebiliyor musunuz? (dig google.com).
 
-Is the application listening on the expected port? (ss -tulpn | grep 8080).
+Uygulama beklenen portta dinliyor mu? (ss -tulpn | grep 8080).
 
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+Firewall portu engelliyor mu? (iptables/ufw veya cloud security group'ları kontrol edin.)
 
-Are there any errors in the application logs?
+Uygulama loglarında hata var mı?
 
-Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
+TLS sertifikası geçerli ve güvenilir mi? (openssl s_client -connect example.com:443).
 
 text
 
@@ -255,19 +248,19 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps ve System Administration
+# DevOps ve Sistem Yönetimi
 
-A practical Rehber to managing servers, automating operations, ve maintaining reliable infrastructure.
+Sunucuları yönetmek, operasyonları otomatikleştirmek ve güvenilir altyapıyı sürdürmek için pratik bir rehber.
 
 ---
 
 ## SSH (Secure Shell)
 
-### Key Generation
+### Anahtar Üretimi
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
-Copy Public Key to Server
+Public Key'yi Sunucuya Kopyalama
 bash
 ssh-copy-id user@host
 # Manual alternative:
@@ -279,24 +272,24 @@ Host myserver
     User ubuntu
     IdentityFile ~/.ssh/mykey
     Port 2222
-Common SSH Commands
+Yaygın SSH Komutları
 bash
 ssh user@host                    # Connect
 ssh -J jumpuser@jumphost user@target   # Proxy jump
 scp file.txt user@host:/path/     # Copy file to remote
 scp user@host:/path/file.txt .    # Copy from remote
 rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
-Hardening SSH
+SSH'yi Sıkılaştırma
 Disable root login: PermitRootLogin no
 
 Use key-based auth only: PasswordAuthentication no
 
-Change default port (optional, security through obscurity).
+Varsayılan portu değiştirin (isteğe bağlı, security through obscurity).
 
-Enable AllowUsers or AllowGroups to restrict access.
+Erişimi kısıtlamak için AllowUsers veya AllowGroups'u etkinleştirin.
 
-Systemd (Linux Service Management)
-Common Commands
+Systemd (Linux Hizmet Yönetimi)
+Yaygın Komutlar
 bash
 systemctl status nginx           # Check service status
 systemctl start nginx            # Start service
@@ -307,7 +300,7 @@ systemctl enable nginx           # Start on boot
 systemctl disable nginx
 systemctl list-units --type=service --all   # List all services
 systemctl daemon-reload          # Reload unit files after editing
-Creating a systemd Service Unit
+Bir systemd Service Unit Oluşturma
 Create /etc/systemd/system/myapp.service:
 
 ini
@@ -326,46 +319,46 @@ Environment="ENV=production"
 
 [Install]
 WantedBy=multi-user.target
-Then:
+Ardından:
 
 bash
 sudo systemctl daemon-reload
 sudo systemctl enable myapp
 sudo systemctl start myapp
-Journalctl (View Logs)
+Journalctl (Logları Görüntüleme)
 bash
 journalctl -u myapp              # Logs for service
 journalctl -f                    # Follow (tail) logs
 journalctl --since "1 hour ago"
 journalctl _PID=1234             # Filter by process ID
-Logging Strategies
+Logging Stratejileri
 Structured Logging
-Use JSON format to make logs machine-parseable:
+Logları makine tarafından ayrıştırılabilir hale getirmek için JSON formatı kullanın:
 
 python
 import structlog
 logger = structlog.get_logger()
 logger.info("user_login", user_id=123, ip="192.168.1.1")
-Log Levels
-DEBUG: detailed diagnostic.
+Log Seviyeleri
+DEBUG: ayrıntılı teşhis.
 
-INFO: general events (start, stop, normal transactions).
+INFO: genel olaylar (başlatma, durdurma, normal işlemler).
 
-WARN: unexpected but not fatal.
+WARN: beklenmedik ama kritik olmayan durum.
 
-ERROR: error that prevents a specific operation.
+ERROR: belirli bir işlemi engelleyen hata.
 
-FATAL/CRITICAL: system shutdown.
+FATAL/CRITICAL: sistem kapanması.
 
 Log Aggregation
-ELK Stack (Elasticsearch, Logstash, Kibana) or Elastic Cloud.
+ELK Stack (Elasticsearch, Logstash, Kibana) veya Elastic Cloud.
 
-Loki + Grafana (lightweight alternative).
+Loki + Grafana (hafif alternatif).
 
 Datadog, Splunk, Sumo Logic (SaaS).
 
 Log Rotation (logrotate)
-Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
+Logların diskleri doldurmasını önleyin. /etc/logrotate.d/myapp yapılandırması:
 
 logrotate
 /var/log/myapp/*.log {
@@ -378,47 +371,47 @@ logrotate
     create 0640 myuser mygroup
 }
 Monitoring and Alerting
-Metrics to Monitor
-System: CPU, RAM, disk usage, load average, network I/O.
+İzlenecek Metrikler
+Sistem: CPU, RAM, disk kullanımı, load average, network I/O.
 
-Application: request rate, latency (p50, p95, p99), error rate, active sessions.
+Uygulama: istek oranı, gecikme (p50, p95, p99), hata oranı, aktif oturumlar.
 
-Database: query count, slow queries, connection pool usage.
+Veritabanı: sorgu sayısı, yavaş sorgular, connection pool kullanımı.
 
-Business: user signups, conversion rate, revenue.
+İş: kullanıcı kayıtları, dönüşüm oranı, gelir.
 
-Tools
-Prometheus + Grafana: Standard open-source stack.
+Araçlar
+Prometheus + Grafana: Standart open-source yığın.
 
-Node Exporter for system metrics.
+Sistem metrikleri için Node Exporter.
 
-Blackbox Exporter for endpoint availability.
+Uç nokta erişilebilirliği için Blackbox Exporter.
 
-Alertmanager for alert routing.
+Uyarı yönlendirme için Alertmanager.
 
 Cloud native: AWS CloudWatch, Azure Monitor, GCP Monitoring.
 
 Uptime Monitoring
 Pingdom, Statuspage, Better Uptime, Uptime Kuma (self-hosted).
 
-Health checks: expose a /health endpoint that returns 200 if the service is healthy.
+Health check'ler: hizmet sağlıklıysa 200 döndüren bir /health endpoint'i sunun.
 
 Backup Strategies
-The 3-2-1 Rule
-3 copies of data.
+3-2-1 Kuralı
+3 veri kopyası.
 
-2 different media types (e.g., SSD + tape, or local + cloud).
+2 farklı ortam türü (ör. SSD + tape veya local + cloud).
 
-1 copy off-site (e.g., cloud or remote data centre).
+1 off-site kopya (ör. cloud veya uzak veri merkezi).
 
-Backup Types
-Full backup: copy everything (slow, space-heavy).
+Backup Türleri
+Full backup: her şeyi kopyalar (yavaş, çok yer kaplar).
 
-Incremental backup: copy only changes since last full or incremental (fast, complex restore).
+Incremental backup: son full veya incremental yedekten beri yalnızca değişiklikleri kopyalar (hızlı, restore karmaşık).
 
-Differential backup: copy changes since last full (middle ground).
+Differential backup: son full backup'tan beri değişiklikleri kopyalar (orta yol).
 
-Database Backups
+Veritabanı Yedekleri
 bash
 # PostgreSQL
 pg_dump dbname > backup.sql
@@ -430,7 +423,7 @@ mysqldump -u root -p dbname > backup.sql
 # Restore
 psql dbname < backup.sql
 mysql -u root -p dbname < backup.sql
-File Backups
+Dosya Yedekleri
 bash
 # Tar archive
 tar -czf backup.tar.gz /var/lib/data
@@ -444,8 +437,8 @@ Automated Backup Scheduling (cron)
 cron
 # Run daily at 2am
 0 2 * * * /usr/local/bin/backup_script.sh
-Cron and Scheduled Jobs
-Cron Syntax
+Cron ve Zamanlanmış İşler
+Cron Söz Dizimi
 text
 * * * * * command
 │ │ │ │ │
@@ -454,7 +447,7 @@ text
 │ │ └───── Day of month (1-31)
 │ └─────── Hour (0-23)
 └───────── Minute (0-59)
-Examples
+Örnekler
 cron
 # Every 5 minutes
 */5 * * * * /path/to/script
@@ -467,15 +460,15 @@ cron
 
 # Every hour
 0 * * * * /path/to/script
-Managing Cron
+Cron Yönetimi
 bash
 crontab -l          # List current user's cron jobs
 crontab -e          # Edit
 crontab -r          # Remove all
 Anacron
-Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
+24/7 çalışmayan sistemlerde (ör. laptop'lar) kullanılır, işlerin eninde sonunda çalışmasını sağlar.
 
-Package Management and Updates
+Paket Yönetimi ve Güncellemeler
 Debian/Ubuntu (apt)
 bash
 sudo apt update                # Update package list
@@ -490,27 +483,27 @@ sudo dnf update
 sudo dnf install git nginx
 sudo dnf remove git
 Security Updates
-Enable unattended-upgrades on Ubuntu for security patches:
+Ubuntu'da güvenlik yamaları için unattended-upgrades'ı etkinleştirin:
 
 bash
 sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
-Docker in Production
-Best Practices
-Use specific image tags (python:3.12-slim) not latest.
+Production'da Docker
+En İyi Uygulamalar
+latest yerine belirli image tag'leri kullanın (python:3.12-slim).
 
-Run containers as non-root user.
+Container'ları non-root kullanıcıyla çalıştırın.
 
-Scan images for vulnerabilities (docker scan, trivy).
+Image'ları açıklar için tarayın (docker scan, trivy).
 
-Set resource limits (--memory, --cpus).
+Kaynak sınırları belirleyin (--memory, --cpus).
 
-Use secrets (via Docker secrets or environment with care).
+Secret'ları kullanın (Docker secrets veya dikkatli çevre değişkeni kullanımıyla).
 
-Keep images small: multi-stage builds, alpine base.
+Image'ları küçük tutun: multi-stage build'ler, alpine base.
 
-Docker Compose in Production
-Set resource limits in docker-compose.yml:
+Production'da Docker Compose
+docker-compose.yml içinde kaynak sınırları belirleyin:
 
 yaml
 services:
@@ -521,30 +514,30 @@ services:
         limits:
           memory: 512M
           cpus: '0.5'
-CI/CD Basics
-Pipeline Stages
-Build: Compile code, install dependencies.
+CI/CD Temelleri
+Pipeline Aşamaları
+Build: Kodu derle, bağımlılıkları kur.
 
-Test: Run unit, integration, and lint checks.
+Test: Unit, integration ve lint kontrollerini çalıştır.
 
-Containerise: Build Docker image.
+Containerise: Docker image'ını oluştur.
 
-Push: Push image to container registry.
+Push: Image'ı container registry'ye gönder.
 
-Deploy: Update staging/production environment.
+Deploy: Staging/production ortamını güncelle.
 
-Tools
-GitHub Actions: Integrated with GitHub.
+Araçlar
+GitHub Actions: GitHub ile entegre.
 
-GitLab CI: Built into GitLab.
+GitLab CI: GitLab'a yerleşik.
 
-Jenkins: Traditional, highly configurable.
+Jenkins: Geleneksel, yüksek düzeyde yapılandırılabilir.
 
-CircleCI, Travis CI: Popular third-party.
+CircleCI, Travis CI: Popüler üçüncü taraf araçlar.
 
-ArgoCD: GitOps for Kubernetes.
+ArgoCD: Kubernetes için GitOps.
 
-Example GitHub Action (simple):
+Örnek GitHub Action (basit):
 yaml
 name: CI
 on: push
@@ -558,32 +551,32 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: pytest
-System Tuning and Troubleshooting
-Check Disk Space
+Sistem Ayarı ve Sorun Giderme
+Disk Alanını Kontrol Et
 bash
 df -h                      # Human-readable disk usage
 du -sh /* | sort -h        # Size of top-level directories
-Check Memory Usage
+Bellek Kullanımını Kontrol Et
 bash
 free -m                    # Memory in MB
 vmstat 1 10                # Virtual memory statistics
 top -o %MEM                # Sort processes by memory
-Check CPU Load
+CPU Yükünü Kontrol Et
 bash
 uptime                     # Load average over 1,5,15 minutes
 top -o %CPU                # Sort processes by CPU
 mpstat -P ALL 1 5          # Per-core CPU usage
-Check Network
+Ağı Kontrol Et
 bash
 netstat -i                 # Interface statistics
 iftop                      # Live bandwidth usage (requires install)
 nload                      # Another bandwidth monitor
-Find Large Files
+Büyük Dosyaları Bul
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
 Infrastructure as Code (IaC)
 Terraform
-Declare cloud resources in HCL.
+Cloud kaynaklarını HCL ile tanımlayın.
 
 hcl
 provider "aws" {
@@ -594,7 +587,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 }
 Ansible
-Agentless configuration management using YAML.
+YAML kullanan agentsız yapılandırma yönetimi.
 
 yaml
 - name: Install nginx
@@ -604,29 +597,29 @@ yaml
       apt:
         name: nginx
         state: present
-Best Practices
-Use modules and roles for reusability.
+En İyi Uygulamalar
+Yeniden kullanılabilirlik için module ve role'ler kullanın.
 
-Store state remotely (S3, Terraform Cloud).
+State'i uzakta saklayın (S3, Terraform Cloud).
 
-Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
+Değişken ve secret kullanın (AWS_SECRET_ACCESS_KEY'i hardcode etmeyin, environment üzerinden verin).
 
-Version control your IaC code.
+IaC kodunuzu sürüm kontrolünde tutun.
 
 Incident Response (On-call)
-Checklist for Service Outage
-Acknowledge the alert.
+Hizmet Kesintisi İçin Kontrol Listesi
+Uyarıyı kabul edin.
 
-Assess scope: Which services/users are affected?
+Kapsamı değerlendirin: Hangi hizmetler/kullanıcılar etkilendi?
 
-Identify the issue (look at logs, metrics, recent deployments).
+Sorunu belirleyin (loglara, metriklere, son dağıtımlara bakın).
 
-Contain if possible (circuit breakers, feature flags).
+Mümkünse sınırlandırın (circuit breaker'lar, feature flag'ler).
 
-Rollback or fix forward.
+Rollback yapın veya ileriye dönük düzeltin.
 
-Communicate status to stakeholders and users (status page).
+Durumu paydaşlara ve kullanıcılara iletin (status page).
 
-Document the incident timeline and actions.
+Olay zaman çizelgesini ve yapılan işlemleri belgelendirin.
 
-Post-mortem: within 24–48 hours, write a root cause analysis (RCA) and action items to prevent recurrence.
+Post-mortem: 24–48 saat içinde root cause analysis (RCA) ve tekrarını önleyecek action item'lar yazın.

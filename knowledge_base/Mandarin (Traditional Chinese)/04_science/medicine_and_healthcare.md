@@ -1,48 +1,41 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: medicine_and_healthcare.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 醫學與醫療系統
 
-# 醫學 和 醫療 系統
+## 醫學專科
 
-## Medical Specialties
+醫學涵蓋眾多專業領域。內科專注於成人疾病和器官系統。心臟病學處理心臟和心血管疾病。神經學處理神經系統疾病。胃腸病學涵蓋消化系統疾病。肺病學治療呼吸系統疾病。內分泌學管理包括糖尿病在內的荷爾蒙失調。腎臟病學專注於腎臟疾病。腫瘤學診斷和治療癌症。血液學研究血液疾病。風濕病學處理自體免疫和肌肉骨骼疾病。感染病專科醫師治療感染。皮膚病學處理皮膚疾病。精神病學管理心理健康疾病。小兒科照顧兒童健康。老年病學專注於老年照護。急診醫學處理急性疾病和傷害。外科包括一般外科和骨科、神經外科、心胸外科、整形外科和泌尿外科等專科。放射學使用影像進行診斷和治療。麻醉學管理手術期間的疼痛和鎮靜。病理學通過組織和實驗室分析研究疾病原因。家庭醫學提供全面的基層照護。婦產科涵蓋女性生殖健康。眼科治療眼睛疾病。耳鼻喉科（ENT）處理耳、鼻和喉嚨疾病。
 
-醫學 encompasses numerous specialized fields. Internal 醫學 focuses on adult diseases 和 organ 系統. Cardiology deals 與 heart 和 cardiovascular conditions. Neurology addresses disorders 的 這 nervous system. Gastroenterology covers digestive system diseases. Pulmonology treats respiratory conditions. Endocrinology manages hormonal disorders including diabetes. Nephrology focuses on kidney diseases. Oncology diagnoses 和 treats cancer. Hematology studies blood disorders. Rheumatology handles autoimmune 和 musculoskeletal conditions. Infectious disease specialists treat infections. Dermatology addresses skin conditions. Psychiatry manages mental health disorders. Pediatrics cares 為 children's health. Geriatrics focuses on elderly care. Emergency 醫學 handles acute illnesses 和 injuries. Surgery includes general surgery 和 subspecialties like orthopedic, neurosurgery, cardiothoracic, plastic, 和 urologic surgery. Radiology uses imaging 為 diagnosis 和 treatment. Anesthesiology manages pain 和 sedation during procedures. Pathology studies disease causes through tissue 和 lab analysis. Family 醫學 provides comprehensive primary care. Obstetrics 和 gynecology covers women's reproductive health. Ophthalmology treats eye conditions. Otolaryngology (ENT) addresses ear, nose, 和 throat disorders.
+## 醫療系統
 
-## 醫療 系統
+醫療系統在全球各異。單一支付者系統（英國的NHS、加拿大）由政府資助全民覆蓋。多支付者系統（美國、德國）涉及多個保險提供者。社會健康保險模式（法國、日本）要求雇主和員工繳費。自付系統在低收入國家占主導地位。基層照護作為第一接觸點，協調持續照護。二級照護涉及專科諮詢和醫院服務。三級照護在主要中心提供高度專業化的治療。預防照護旨在通過篩檢、疫苗接種和生活方式諮詢預防疾病。緊急照護處理非急診的即時需求。遠距醫療通過技術提供遠端醫療照護。電子健康記錄（EHRs）數位儲存病患資訊。健康保險通過保費、自付額、共付額和共同保險涵蓋醫療費用。全民醫療確保所有公民都能獲得所需服務。
 
-醫療 系統 vary globally. Single-payer 系統 (UK's NHS, Canada) have government-funded universal coverage. Multi-payer 系統 (US, Germany) involve multiple insurance providers. Social health insurance models (France, Japan) mandate contributions from employers 和 employees. Out-的-pocket 系統 dominate 在 low-income countries. Primary care serves as 這 first contact point, coordinating ongoing care. Secondary care involves specialist consultations 和 hospital services. Tertiary care provides highly specialized treatments at major centers. Preventive care aims to prevent illness through screening, vaccination, 和 lifestyle counseling. Urgent care handles non-emergency immediate needs. Telemedicine delivers remote 醫療 via 技術. Electronic health records (EHRs) store patient information digitally. Health insurance covers medical costs through premiums, deductibles, copayments, 和 coinsurance. Universal 醫療 ensures all citizens have access to needed services.
+## 藥理學與藥物
 
-## Pharmacology 和 Medications
+藥理學研究藥物作用和效果。處方藥需要醫生授權。非處方（OTC）藥物無需處方即可獲得。學名藥含有與品牌藥相同的活性成分，但成本較低。藥物類別包括抗生素（對抗細菌感染）、抗病毒藥物（治療病毒感染）、止痛藥（緩解疼痛）、抗炎藥（減少發炎）、降壓藥（降低血壓）、他汀類藥物（降低膽固醇）、抗凝血劑（防止血栓）、抗憂鬱藥（治療憂鬱症）、抗精神病藥（管理精神病）、支氣管擴張劑（打開氣道）、胰島素（管理糖尿病）和化療藥劑（治療癌症）。藥物動力學檢查藥物吸收、分佈、代謝和排泄。藥物交互作用發生在藥物相互影響時。副作用是非預期的藥物反應。過敏反應是對藥物的免疫反應。劑量指給藥的數量和頻率。臨床試驗在批准前測試藥物安全性和療效。FDA（美國）和EMA（歐洲）監管藥品。
 
-Pharmacology studies drug actions 和 effects. Prescription medications require doctor authorization. Over-這-counter (OTC) drugs are 可用 without prescription. Generic drugs contain same active ingredients as brand names at lower cost. Drug classes include antibiotics (fight bacterial infections), antivirals (treat viral infections), analgesics (pain relievers), anti-inflammatories (reduce inflammation), antihypertensives (lower blood pressure), statins (lower cholesterol), anticoagulants (prevent blood clots), antidepressants (treat depression), antipsychotics (manage psychosis), bronchodilators (open airways), insulin (manages diabetes), 和 chemotherapy agents (treat cancer). Pharmacokinetics examines drug absorption, distribution, metabolism, 和 excretion. Drug interactions occur when medications affect each other. Side effects are unintended drug reactions. Allergic reactions are immune responses to medications. Dosage refers to amount 和 frequency 的 administration. Clinical trials test drug safety 和 efficacy before approval. 這 FDA (US) 和 EMA (Europe) regulate pharmaceuticals.
+## 醫學倫理
 
-## Medical Ethics
+醫學倫理指導醫療決策。自主性尊重病患做出知情決定的權利。善行要求以病患的最佳利益行事。不傷害原則意味著「不造成傷害」。正義要求公平分配資源。知情同意確保病患在手術前了解風險和益處。保密性保護病患隱私（美國的HIPAA）。誠實要求與病患誠實溝通。臨終照護引發關於生命支持、緩和照護和安樂死的問題。資源分配涉及關於稀缺治療的困難決定。利益衝突必須披露和管理。研究倫理通過機構審查委員會（IRBs）保護人類受試者。文化能力尊重多元信仰和實踐。專業界限維持適當的醫療提供者-病患關係。
 
-Medical ethics guides 醫療 decision-making. Autonomy respects patients' right to make informed decisions. Beneficence requires acting 在 patients' best interests. Non-maleficence means "do no harm." Justice demands fair resource distribution. Informed consent ensures patients understand risks 和 benefits before procedures. Confidentiality protects patient privacy (HIPAA 在 US). Truth-telling requires honest 溝通 與 patients. End-的-life care raises questions about life 支援, palliative care, 和 euthanasia. Resource allocation involves difficult decisions about scarce treatments. Conflicts 的 interest must be disclosed 和 managed. Research ethics protects human subjects through institutional review boards (IRBs). Cultural competence respects diverse beliefs 和 practices. Professional boundaries maintain appropriate provider-patient relationships.
+## 公共衛生
 
-## Public Health
+公共衛生專注於人口層面的健康促進和疾病預防。流行病學研究疾病模式和原因。疫苗接種計畫預防傳染病。健康教育促進健康行為。環境衛生處理周遭的危害。職業衛生保護工作者。營養計畫對抗營養不良。孕產婦和兒童健康服務支持家庭。傷害預防減少事故。慢性病管理處理長期疾病。衛生政策塑造醫療提供和獲取。全球衛生應對國際衛生挑戰。大流行防備規劃疾病爆發。接觸者追蹤在爆發期間識別暴露個體。隔離隔離潛在感染者。群體免疫發生在足夠的人免疫以保護弱勢群體時。健康的社會決定因素包括影響健康結果的收入、教育、住房和環境。健康差異是跨人口的不平等健康結果。
 
-Public health focuses on population-level health promotion 和 disease prevention. Epidemiology studies disease patterns 和 causes. Vaccination programs prevent infectious diseases. Health education promotes healthy behaviors. 環境 health addresses hazards 在 surroundings. Occupational health protects workers. 營養 programs combat malnutrition. Maternal 和 child health services 支援 families. Injury prevention reduces accidents. Chronic disease 管理 addresses long-term conditions. Health policy shapes 醫療 delivery 和 access. Global health tackles international health challenges. Pandemic preparedness plans 為 disease outbreaks. Contact tracing identifies exposed individuals during outbreaks. Quarantine isolates potentially infected people. Herd immunity occurs when enough people are immune to protect 這 vulnerable. Social determinants 的 health include income, education, housing, 和 environment affecting health outcomes. Health disparities are unequal health outcomes across populations.
+## 診斷方法
 
-## Diagnostic Methods
+診斷通過各種方法識別疾病。身體檢查評估可見和可觸及的體徵。病史收集症狀和背景資訊。實驗室檢驗分析血液、尿液和其他樣本。全血細胞計數（CBC）測量血球。代謝組評估器官功能。影像包括X光（骨骼和緻密組織）、CT掃描（詳細橫切面）、MRI（軟組織細節）、超音波（聲波）、PET掃描（代謝活動）和乳房攝影（乳房影像）。活組織檢查移除組織進行病理檢查。內視鏡檢查使用攝影機查看內部器官。心電圖（ECG/EKG）記錄心臟電活動。腦電圖（EEG）測量腦波。肺量測定測試肺功能。基因檢測識別遺傳疾病。篩檢測試在症狀出現前檢測疾病。鑑別診斷列出解釋症狀的可能疾病。
 
-Diagnosis identifies diseases through various methods. Physical examination assesses visible 和 palpable signs. Medical 歷史 gathers symptom 和 background information. Laboratory tests analyze blood, urine, 和 other samples. 完整 blood count (CBC) measures blood cells. Metabolic panels assess organ function. Imaging includes X-rays (bone 和 dense tissue), CT scans (detailed cross-sections), MRI (soft tissue detail), ultrasound (sound waves), PET scans (metabolic activity), 和 mammography (breast imaging). Biopsy removes tissue 為 pathological examination. Endoscopy uses cameras to view internal organs. Electrocardiogram (ECG/EKG) records heart electrical activity. Electroencephalogram (EEG) measures brain waves. Spirometry tests lung function. Genetic 測試 identifies inherited conditions. Screening tests detect diseases before symptoms appear. Differential diagnosis lists possible conditions explaining symptoms.
+## 治療方法
 
-## Treatment Approaches
+治療策略因疾病而異。藥物治療使用藥物。外科手術物理修復或移除患病組織。放射治療用高能射線殺死癌細胞。免疫治療利用免疫系統對抗疾病。物理治療恢復運動和功能。職能治療協助日常生活技能。語言治療處理溝通障礙。心理治療通過談話療法治療心理健康。生活方式改變包括飲食、運動和壓力管理。替代醫學包括針灸、草藥療法和脊骨神經醫學（證據各異）。緩和照護專注於症狀緩解和生活品質。復健協助疾病或傷害後的恢復。基因治療修改基因以治療疾病。幹細胞移植替換受損細胞。透析在腎臟衰竭時過濾血液。器官移植替換衰竭的器官。臨床指引提供基於證據的治療建議。
 
-Treatment strategies vary by condition. Pharmacotherapy uses medications. Surgery physically repairs or removes diseased tissue. Radiation therapy kills cancer cells 與 high-energy rays. Immunotherapy harnesses 這 immune system against disease. Physical therapy restores movement 和 function. Occupational therapy helps daily living skills. Speech therapy addresses 溝通 disorders. Psychotherapy treats mental health through talk therapy. Lifestyle modifications include diet, exercise, 和 stress 管理. Alternative 醫學 includes acupuncture, herbal remedies, 和 chiropractic care (evidence varies). Palliative care focuses on symptom relief 和 quality 的 life. Rehabilitation helps recovery after illness or injury. Gene therapy modifies genes to treat disease. Stem cell transplantation replaces damaged cells. Dialysis filters blood when kidneys fail. Transplantation replaces failing organs. Clinical guidelines provide evidence-based treatment recommendations.
+## 解剖學與生理學基礎
 
-## Anatomy 和 Physiology 基礎
+解剖學研究身體結構。生理學檢查身體系統如何運作。皮膚系統（皮膚、毛髮、指甲）保護並調節溫度。骨骼系統（206塊骨頭）提供結構和保護。肌肉系統實現運動。神經系統（大腦、脊髓、神經）控制身體功能。內分泌系統產生調節代謝和生長的荷爾蒙。心血管系統（心臟、血管）循環血液。淋巴系統對抗感染並排出液體。呼吸系統（肺、氣道）交換氣體。消化系統處理食物並吸收營養。泌尿系統（腎臟、膀胱）排除廢物。生殖系統實現繁殖。免疫系統防禦病原體。恆定性維持穩定的內部條件。細胞是生命的基本單位。組織將相似細胞分組。器官執行特定功能。器官系統共同運作以維持生存。
 
-Anatomy studies body structure. Physiology examines how body 系統 function. 這 integumentary system (skin, hair, nails) protects 和 regulates temperature. 這 skeletal system (206 bones) provides structure 和 protection. 這 muscular system enables movement. 這 nervous system (brain, spinal cord, nerves) controls body functions. 這 endocrine system produces hormones regulating metabolism 和 growth. 這 cardiovascular system (heart, blood vessels) circulates blood. 這 lymphatic system fights infection 和 drains fluids. 這 respiratory system (lungs, airways) exchanges gases. 這 digestive system processes 食物 和 absorbs nutrients. 這 urinary system (kidneys, bladder) eliminates waste. 這 reproductive system enables reproduction. 這 immune system defends against pathogens. Homeostasis maintains stable internal conditions. Cells are 這 basic units 的 life. Tissues group similar cells. Organs perform specific functions. Organ 系統 work together 為 survival.
+## 常見醫療疾病
 
-## Common Medical Conditions
+心血管疾病包括高血壓（高血壓）、冠狀動脈疾病、心臟病發作、中風和心臟衰竭。呼吸系統疾病包括哮喘、慢性阻塞性肺病、肺炎和肺癌。消化系統疾病包括胃食道逆流、潰瘍、發炎性腸道疾病和肝病。內分泌疾病包括糖尿病（第1型和第2型）、甲狀腺疾病和肥胖。神經系統疾病包括阿茲海默症、帕金森氏症、癲癇、偏頭痛和多發性硬化症。心理健康疾病包括憂鬱症、焦慮症、躁鬱症、思覺失調症和創傷後壓力症候群。肌肉骨骼問題包括關節炎、骨質疏鬆症、背痛和骨折。癌症影響各種器官，預後不同。傳染病範圍從普通感冒到結核病、HIV/AIDS和新興病原體。自體免疫疾病包括紅斑性狼瘡、類風濕性關節炎和第1型糖尿病。腎臟疾病範圍從急性損傷到慢性衰竭。皮膚疾病包括濕疹、乾癬、痤瘡和皮膚癌。
 
-Cardiovascular diseases include hypertension (high blood pressure), coronary artery disease, heart attack, stroke, 和 heart failure. Respiratory conditions include asthma, COPD, pneumonia, 和 lung cancer. Digestive disorders include GERD, ulcers, inflammatory bowel disease, 和 liver disease. Endocrine disorders include diabetes (types 1 和 2), thyroid disease, 和 obesity. Neurological conditions include Alzheimer's disease, Parkinson's disease, epilepsy, migraines, 和 multiple sclerosis. Mental health conditions include depression, anxiety disorders, bipolar disorder, schizophrenia, 和 PTSD. Musculoskeletal issues include arthritis, osteoporosis, back pain, 和 fractures. Cancer affects various organs 與 different prognoses. Infectious diseases range from common cold to tuberculosis, HIV/AIDS, 和 emerging pathogens. Autoimmune diseases include lupus, rheumatoid arthritis, 和 type 1 diabetes. Kidney disease ranges from acute injury to chronic failure. Skin conditions include eczema, psoriasis, acne, 和 skin cancer.
+## 健康促進與預防
 
-## Health Promotion 和 Prevention
-
-Preventive 醫療 reduces disease risk. Regular check-ups monitor health status. Screenings detect early disease (mammograms, colonoscopies, Pap smears, PSA tests). Vaccinations prevent infectious diseases (flu, measles, HPV, COVID-19). Healthy diet emphasizes fruits, vegetables, whole grains, lean proteins, 和 limits processed foods, sugar, 和 saturated fats. Physical activity recommendations suggest 150 minutes moderate exercise weekly. Weight 管理 maintains healthy BMI. Smoking cessation dramatically reduces health risks. Moderate alcohol consumption limits intake. Stress 管理 techniques include meditation, yoga, 和 counseling. Sleep hygiene promotes 7-9 hours quality sleep nightly. Sun protection prevents skin damage. 安全 sex practices prevent STIs. Injury prevention includes seatbelts, helmets, 和 fall prevention. Dental care maintains oral health. Mental health awareness reduces stigma 和 encourages help-seeking.
+預防性醫療降低疾病風險。定期檢查監測健康狀況。篩檢檢測早期疾病（乳房攝影、大腸鏡、子宮頸抹片檢查、PSA測試）。疫苗接種預防傳染病（流感、麻疹、HPV、COVID-19）。健康飲食強調水果、蔬菜、全穀物、瘦蛋白，並限制加工食品、糖和飽和脂肪。身體活動建議建議每週150分鐘中等強度運動。體重管理維持健康BMI。戒菸大幅降低健康風險。適度飲酒限制攝取量。壓力管理技術包括冥想、瑜伽和諮詢。睡眠衛生促進每晚7-9小時優質睡眠。防曬防止皮膚損傷。安全性行為實踐預防性傳染病。傷害預防包括安全帶、頭盔和跌倒預防。牙科護理維持口腔健康。心理健康意識減少污名並鼓勵尋求幫助。

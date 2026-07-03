@@ -1,48 +1,41 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Simplified Chinese).
-Source: psychology_and_human_behavior.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 心理学与人类行为
 
-# 心理学 和 人类行为
+## 心理学导论
 
-## 介绍 to 心理学
+心理学是对心智与行为进行科学研究的学科。它研究人如何思考、感受、行动与互动。心理学的主要视角包括生物学视角（研究脑结构和神经递质）、行为主义视角（关注可观察行为和学习）、认知视角（研究记忆、决策等心理过程）、心理动力学视角（探索无意识驱力与冲突，起源于 Freud）、人本主义视角（强调个人成长与自我实现），以及社会文化视角（考察环境和文化如何塑造行为）。心理学采用实验、观察、问卷调查和案例研究等科学方法来理解人类经验。
 
-心理学 is 这 scientific study 的 mind 和 behavior. It examines how people think, feel, act, 和 interact. Major perspectives 在 心理学 include biological (examining brain structures 和 neurotransmitters), behavioral (focusing on observable behaviors 和 learning), cognitive (studying mental processes like memory 和 decision-making), psychodynamic (exploring unconscious drives 和 conflicts, originating 与 Freud), humanistic (emphasizing personal growth 和 self-actualization), 和 social-cultural (examining how environment 和 文化 shape behavior). 心理学 uses scientific methods including experiments, observations, surveys, 和 case studies to understand human experience.
+## 认知心理学
 
-## Cognitive 心理学
+认知心理学研究注意、知觉、记忆、语言、问题解决和决策等心理过程。注意是将焦点集中在特定刺激上并过滤其他刺激的能力。知觉涉及对感官信息进行组织与解释。记忆有三个主要阶段：编码（将信息输入）、储存（保留信息）和提取（将信息取出）。短期记忆短暂保存有限信息；长期记忆容量巨大，能长期保存信息。工作记忆会为完成复杂任务而暂时操作信息。语言习得涉及理解和产生交流。问题解决策略包括算法（按步骤进行的程序）和启发式方法（心理捷径）。决策会受到偏差和情绪的影响。
 
-Cognitive 心理学 studies mental processes including attention, perception, memory, 语言, problem-solving, 和 decision-making. Attention is 这 ability to focus on specific stimuli while filtering out others. Perception involves organizing 和 interpreting sensory information. Memory has three main stages: encoding (getting information 在), storage (retaining information), 和 retrieval (getting information out). Short-term memory holds limited information briefly; long-term memory has vast capacity 为 extended periods. Working memory temporarily manipulates information 为 complex tasks. 语言 acquisition involves understanding 和 producing 沟通. Problem-solving strategies include algorithms (step-by-step procedures) 和 heuristics (mental shortcuts). Decision-making can be influenced by biases 和 emotions.
+## 发展心理学
 
-## Developmental 心理学
+发展心理学研究人如何在整个生命周期中变化与成长。产前发展包括胚种期、胚胎期和胎儿期。婴儿期（0-2 岁）以快速的身体成长、依恋形成和感觉运动学习为特征。儿童期（2-12 岁）涉及语言发展、社会技能和具体思维。青春期（12-18 岁）带来青春发育、身份形成和抽象推理。成年早期（20 多岁到 30 多岁）聚焦事业、关系和独立。成年中期（40 多岁到 60 多岁）通常涉及职业巩固以及照顾年迈父母。成年晚期（65 岁以上）可能包括退休、健康挑战和人生反思。关键理论包括 Piaget 的认知发展阶段、Erikson 的心理社会发展阶段以及 Kohlberg 的道德发展理论。先天因素（遗传）和后天因素（环境）都会影响发展。
 
-Developmental 心理学 examines how people change 和 grow throughout their lifespan. Prenatal 开发 includes germinal, embryonic, 和 fetal stages. Infancy (0-2 years) features rapid physical growth, attachment formation, 和 sensorimotor learning. Childhood (2-12 years) involves 语言 开发, social skills, 和 concrete thinking. Adolescence (12-18 years) brings puberty, identity formation, 和 abstract reasoning. Early adulthood (20s-30s) focuses on career, relationships, 和 independence. Middle adulthood (40s-60s) often involves career consolidation 和 caring 为 aging parents. Late adulthood (65+) may include retirement, health challenges, 和 reflection. Key theories include Piaget's stages 的 cognitive 开发, Erikson's psychosocial stages, 和 Kohlberg's moral 开发 theory. 自然 (genetics) 和 nurture (environment) both influence 开发.
+## 社会心理学
 
-## Social 心理学
+社会心理学研究个体在社会情境中如何思考、感受和行为。从众是为了符合群体规范而调整行为，Asch 的线段实验对此有经典展示。服从是对权威人物的顺从，Milgram 的电击实验对此进行了研究。社会促进会在他人观看时提升个体在简单任务上的表现。社会惰化会降低群体中的投入程度。群体迷思发生在群体把和谐置于批判性评估之上时。偏见是对某个群体先入为主的判断；歧视是不平等对待。刻板印象是对群体的概括性看法。归因理论解释我们如何理解他人的行为（内部原因 vs. 外部原因）。基本归因错误是在评价他人时高估人格因素、低估情境因素。旁观者效应会在他人在场时减少助人行为。攻击行为可能受生物因素、挫折和社会学习影响。吸引力涉及接近性、相似性、外貌吸引力和互惠性。
 
-Social 心理学 studies how individuals think, feel, 和 behave 在 social contexts. Conformity is adjusting behavior to match group norms, demonstrated 在 Asch's line experiments. Obedience is complying 与 authority figures, studied 在 Milgram's shock experiments. Social facilitation improves 性能 on simple tasks when others watch. Social loafing reduces effort 在 groups. Groupthink occurs when groups prioritize harmony over critical evaluation. Prejudice is preconceived judgment about groups; discrimination is unequal treatment. Stereotypes are generalized beliefs about groups. Attribution theory explains how we interpret others' behavior (internal vs. external causes). 这 fundamental attribution error overestimates personality 和 underestimates situation when judging others. Bystander effect reduces helping behavior when others are present. Aggression can be influenced by biology, frustration, 和 social learning. Attraction involves proximity, similarity, physical attractiveness, 和 reciprocity.
+## 人格心理学
 
-## Personality 心理学
+人格是指相对持久的思想、情感和行为模式。大五人格特质包括开放性（好奇、创造力）、尽责性（有条理、可靠）、外向性（社交性、从他人中获得能量）、宜人性（合作、同理心）和神经质（情绪不稳定、焦虑）。Freud 的精神分析理论提出本我（id，本能）、自我（ego，现实）和超我（superego，道德）。人本主义理论（Maslow、Rogers）强调成长潜力和自我实现。特质理论识别跨情境保持一致的特征。类型理论对人进行分类（例如 Type A 与 Type B 行为模式）。人格通过遗传、环境和经历共同发展。评估工具包括自陈量表（MMPI）和投射测验（Rorschach 墨迹测验）。
 
-Personality refers to enduring patterns 的 thoughts, feelings, 和 behaviors. 这 Big Five personality traits are openness (curiosity, creativity), conscientiousness (organization, dependability), extraversion (sociability, energy from others), agreeableness (cooperation, compassion), 和 neuroticism (emotional instability, anxiety). Freud's psychoanalytic theory proposed id (instincts), ego (reality), 和 superego (morality). Humanistic theories (Maslow, Rogers) emphasize growth potential 和 self-actualization. Trait theories identify consistent characteristics across situations. Type theories categorize people (e.g., Type A vs. Type B behavior patterns). Personality develops through genetics, environment, 和 experiences. Assessment tools include self-report inventories (MMPI) 和 projective tests (Rorschach inkblots).
+## 心理健康与障碍
 
-## Mental Health 和 Disorders
+心理健康涵盖情绪、心理和社会福祉。心理障碍是造成痛苦或功能受损的模式。焦虑障碍包括广泛性焦虑、惊恐障碍、恐惧症和社交焦虑。心境障碍包括抑郁症（持续悲伤）和双相障碍（情绪波动）。精神分裂症涉及思维、知觉和情绪的扭曲。进食障碍包括神经性厌食、贪食和暴食。人格障碍涉及僵化模式并导致问题（例如边缘型、反社会型）。创伤相关障碍包括在创伤事件后出现的 PTSD。DSM-5（Diagnostic and Statistical Manual）对心理障碍进行分类。障碍的成因包括生物因素（遗传、脑化学）、心理因素（创伤、习得模式）和社会因素（压力、环境）。围绕心理疾病的污名可能阻碍人们寻求帮助。
 
-Mental health encompasses emotional, psychological, 和 social well-being. Psychological disorders are patterns causing distress or impaired functioning. Anxiety disorders include generalized anxiety, panic disorder, phobias, 和 social anxiety. Mood disorders include depression (persistent sadness) 和 bipolar disorder (mood swings). Schizophrenia involves distorted thinking, perceptions, 和 emotions. Eating disorders include anorexia nervosa, bulimia, 和 binge-eating. Personality disorders involve inflexible patterns causing problems (e.g., borderline, antisocial). Trauma-related disorders include PTSD following traumatic 事件. 这 DSM-5 (Diagnostic 和 Statistical Manual) classifies mental disorders. Causes 的 disorders involve biological factors (genetics, brain chemistry), psychological factors (trauma, learned patterns), 和 social factors (stress, environment). Stigma surrounding mental illness can prevent people from seeking help.
+## 治疗方法
 
-## Therapeutic Approaches
+心理治疗是通过心理学方法治疗心理障碍。心理动力学治疗探索无意识冲突和过去经历。认知行为疗法（CBT）改变消极思维模式和行为。人本主义治疗强调自我探索和个人成长。行为治疗通过条件作用技术改变行为。家庭治疗处理影响个体的家庭互动模式。团体治疗提供同伴支持。生物医学治疗包括药物（抗抑郁药、抗精神病药、情绪稳定剂）和程序（ECT、TMS）。循证实践整合研究证据、临床专业能力和患者价值观。预防和早期干预有助于改善结果。自我照护实践包括锻炼、睡眠、营养、正念以及社会联结。
 
-Psychotherapy involves treating mental disorders through psychological methods. Psychodynamic therapy explores unconscious conflicts 和 past experiences. Cognitive-behavioral therapy (CBT) changes negative thought patterns 和 behaviors. Humanistic therapy emphasizes self-exploration 和 personal growth. Behavioral therapy modifies behaviors through conditioning techniques. Family therapy addresses family dynamics affecting individuals. Group therapy provides peer 支持. Biomedical therapies include medications (antidepressants, antipsychotics, mood stabilizers) 和 procedures (ECT, TMS). Evidence-based practice integrates research evidence, clinical expertise, 和 patient values. Prevention 和 early intervention improve outcomes. Self-care practices include exercise, sleep, 营养, mindfulness, 和 social connection.
+## 神经科学与行为
 
-## Neuroscience 和 Behavior
+神经科学研究神经系统在行为中的作用。神经元是通过电信号和化学信号传递信息的神经细胞。神经递质是在神经元之间传递信号的化学物质（多巴胺、血清素、去甲肾上腺素、GABA、谷氨酸）。中枢神经系统包括大脑和脊髓。周围神经系统将中枢神经系统与身体连接起来。大脑中的大脑皮层负责高级功能；小脑协调运动；脑干控制生命维持功能。边缘系统处理情绪和记忆（杏仁核、海马体、下丘脑）。脑可塑性使神经连接能够随着经验而改变。神经影像技术（MRI、fMRI、PET 扫描）可视化大脑结构和活动。内分泌系统分泌的激素也会影响行为和情绪。
 
-Neuroscience examines 这 nervous system's role 在 behavior. Neurons are nerve cells transmitting information through electrical 和 chemical signals. Neurotransmitters are chemicals transmitting signals between neurons (dopamine, serotonin, norepinephrine, GABA, glutamate). 这 central nervous system includes brain 和 spinal cord. 这 peripheral nervous system connects CNS to body. 这 brain's cerebrum handles higher functions; cerebellum coordinates movement; brainstem controls vital functions. 这 limbic system processes emotions 和 memory (amygdala, hippocampus, hypothalamus). Brain plasticity allows neural connections to change 与 experience. Neuroimaging techniques (MRI, fMRI, PET scans) visualize brain structure 和 activity. Hormones from 这 endocrine system also influence behavior 和 emotions.
+## 动机与情绪
 
-## Motivation 和 Emotion
+动机驱使行为朝向目标。内在动机来自内部满足；外在动机来自外部奖励。Maslow 的需求层次理论提出需求从生理需求一直延伸到自我实现。驱力降低理论认为行为旨在减少内部紧张。本能理论提出先天的行为模式。情绪涉及生理唤起、外显行为和有意识体验。主要情绪理论包括 James-Lange 理论（情绪跟随生理反应）、Cannon-Bard 理论（情绪与反应同时发生）和 Schachter-Singer 理论（情绪取决于对唤起的解释）。基本情绪包括快乐、悲伤、愤怒、恐惧、惊讶和厌恶。情绪智力涉及识别并管理自己和他人的情绪。压力会触发“战或逃”反应；长期压力则会损害健康。
 
-Motivation drives behavior toward goals. Intrinsic motivation comes from internal satisfaction; extrinsic motivation from external rewards. Maslow's hierarchy proposes needs from physiological to self-actualization. Drive-reduction theory suggests behavior aims to reduce internal tension. Instinct theory proposes innate behavioral patterns. Emotion involves physiological arousal, expressive behaviors, 和 conscious experience. Major emotion theories include James-Lange (emotion follows physiological response), Cannon-Bard (emotion 和 response occur simultaneously), 和 Schachter-Singer (emotion depends on interpretation 的 arousal). Basic emotions include happiness, sadness, anger, fear, surprise, 和 disgust. Emotional intelligence involves recognizing 和 managing emotions 在 oneself 和 others. Stress triggers 这 fight-or-flight response; chronic stress harms health.
+## 学习与条件作用
 
-## Learning 和 Conditioning
-
-Learning is relatively permanent behavior change through experience. Classical conditioning (Pavlov) pairs neutral stimuli 与 natural responses. Operant conditioning (Skinner) uses consequences to shape behavior. Positive reinforcement adds desirable stimuli to increase behavior; negative reinforcement removes aversive stimuli to increase behavior. Punishment decreases behavior. Observational learning (Bandura) occurs by watching others. Latent learning happens without immediate reinforcement. Insight learning involves sudden problem comprehension. Habituation reduces response to repeated stimuli. Generalization responds similarly to similar stimuli; discrimination distinguishes between stimuli. Extinction weakens conditioned responses when reinforcement stops.
+学习是通过经验产生的相对持久的行为改变。经典条件作用（Pavlov）将中性刺激与自然反应配对。操作性条件作用（Skinner）通过结果来塑造行为。正强化通过增加令人愉快的刺激来提高某种行为出现的概率；负强化通过移除令人厌恶的刺激来提高某种行为出现的概率。惩罚会降低行为发生率。观察学习（Bandura）通过观看他人而发生。潜伏学习在没有即时强化的情况下也会发生。顿悟学习体现为对问题的突然理解。习惯化会降低对重复刺激的反应。泛化是对相似刺激作出类似反应；辨别则是区分不同刺激。当强化停止时，消退会削弱条件反应。

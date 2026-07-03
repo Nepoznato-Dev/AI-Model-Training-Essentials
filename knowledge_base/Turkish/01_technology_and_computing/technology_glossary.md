@@ -1,209 +1,91 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: technology_glossary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Teknoloji Sözlüğü
 
-# Teknoloji Glossary
-
-A Referans glossary covering AI models, hardware, benchmarks, ve core concepts
-içinde bu modern AI ve Bilişim landscape.
+Modern AI ve bilişim dünyasındaki AI modellerini, donanımı, benchmark'ları ve temel kavramları kapsayan bir başvuru sözlüğü.
 
 ---
 
-## AI Dil Models ve Assistants
+## AI Dil Modelleri ve Asistanlar
 
 ### ChatGPT
-ChatGPT is an AI chatbot developed by OpenAI, first released içinde November 2022.
-It is powered by bu GPT series içinde large Dil models (LLMs). ChatGPT is one
-içinde bu fastest-growing consumer AI products içinde Tarih, reaching 100 million
-users within two months içinde launch. It supports text-based conversation, code
-generation, summarisation, ve creative writing. Paid tiers provide access to
-more powerful models such as GPT-4 ve GPT-4o.
+ChatGPT, OpenAI tarafından geliştirilen ve ilk kez Kasım 2022'de yayımlanan bir AI sohbet botudur. GPT serisindeki large language model'ler (LLM'ler) tarafından desteklenir. ChatGPT, piyasaya çıktıktan sonraki iki ay içinde 100 milyon kullanıcıya ulaşarak tarihin en hızlı büyüyen tüketici AI ürünlerinden biri olmuştur. Metin tabanlı konuşma, kod üretimi, özetleme ve yaratıcı yazma destekler. Ücretli katmanlar GPT-4 ve GPT-4o gibi daha güçlü modellere erişim sunar.
 
 ### GPT (Generative Pre-trained Transformer)
-GPT is a family içinde large Dil models created by OpenAI. bu Mimari
-uses a decoder-only Transformer trained ile a next-token prediction objective on
-massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
-için "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via bu API), GPT-3.5 (bu backbone içinde bu original ChatGPT), ve GPT-4
-(2023, multimodal, Performans close to human expert level on many benchmarks).
+GPT, OpenAI tarafından oluşturulan bir large language model ailesidir. Mimari, çok büyük metin külliyatları üzerinde next-token prediction hedefiyle eğitilmiş yalnızca decoder içeren bir Transformer kullanır. Öne çıkan sürümler arasında GPT-2 (2019, 1.5B parametre, "too dangerous to release" söylemiyle dikkat çekti), GPT-3 (2020, 175B parametre, API üzerinden yaygın kullanım), GPT-3.5 (ilk ChatGPT'nin omurgası) ve GPT-4 (2023, multimodal, birçok benchmark'ta insan uzman düzeyine yakın performans) yer alır.
 
 ### Claude
-Claude is an AI assistant developed by Anthropic. It is named after Claude
-Shannon, bu founder içinde information theory. Anthropic was founded by former
-OpenAI researchers ve focuses on "constitutional AI" — a technique to make
-models safer by training them to follow a set içinde principles. Claude models
-(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known için long context windows (up
-to 200,000 tokens), nuanced reasoning, ve reduced harmful output compared to
-baseline LLMs.
+Claude, Anthropic tarafından geliştirilen bir AI asistanıdır. Adını bilgi kuramının kurucusu Claude Shannon'dan alır. Anthropic, eski OpenAI araştırmacıları tarafından kurulmuştur ve modelleri bir ilke setini izleyecek şekilde eğiterek daha güvenli hale getirmeyi amaçlayan "constitutional AI" yaklaşımına odaklanır. Claude modelleri (Claude 1, 2, 3 Haiku / Sonnet / Opus), uzun context window'ları (200.000 token'a kadar), incelikli muhakeme yeteneği ve temel LLM'lere kıyasla daha düşük zararlı çıktı üretmesiyle bilinir.
 
 ### Gemini
-Gemini is Google DeepMind's family içinde multimodal AI models, announced içinde
-December 2023. Gemini is natively multimodal — trained from bu ground up on
-text, images, audio, ve video simultaneously, unlike earlier models that had
-modalities added via fine-tuning. Versions include Gemini Nano (on-device),
-Gemini Flash (fast, cost-efficient), ve Gemini Ultra (highest-capability).
-Gemini powers Google's AI chatbot Bard (renamed Gemini) ve Google Search AI
-Overviews.
+Gemini, Google DeepMind'ın Aralık 2023'te duyurduğu multimodal AI model ailesidir. Gemini, sonradan fine-tuning ile modality eklenen önceki modellerden farklı olarak, metin, görsel, ses ve videoyu aynı anda işlemek üzere baştan itibaren multimodal biçimde eğitilmiştir. Sürümler arasında Gemini Nano (on-device), Gemini Flash (hızlı, maliyet etkin) ve Gemini Ultra (en yüksek yetenek) bulunur. Gemini, Google'ın AI sohbet botu Bard'a (sonradan Gemini olarak yeniden adlandırıldı) ve Google Search AI Overviews'e güç verir.
 
 ### Phi-3-mini
-Phi-3-mini is a small Dil model (SLM) developed by Microsoft ile 3.8B
-parameters. It was released içinde April 2024. Unlike most large models, Phi-3-mini
-was trained on a carefully curated "textbook-quality" dataset — a technique
-pioneered by Microsoft Research — that prioritises Veri quality over raw volume.
-Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
-outperforms models several times larger on reasoning benchmarks such as MMLU ve
-HumanEval. It supports a 4k token context window içinde its base variant ve a 128k
-window içinde bu long-context variant. Phi-3-mini can run on a single consumer GPU
-or even on-device on a modern smartphone ile sufficient RAM.
+Phi-3-mini, Microsoft tarafından geliştirilen ve 3.8B parametreye sahip küçük bir language model'dir (SLM). Nisan 2024'te yayımlanmıştır. Çoğu büyük modelin aksine Phi-3-mini, Microsoft Research öncülüğünde geliştirilen ve ham hacim yerine veri kalitesine öncelik veren dikkatle seçilmiş "textbook-quality" bir veri kümesi üzerinde eğitilmiştir. GPT-4 veya Claude 3 Opus'tan çok daha küçük olmasına rağmen MMLU ve HumanEval gibi muhakeme benchmark'larında kendisinden birkaç kat büyük modelleri yakalar veya geçer. Temel varyantında 4k token, long-context varyantında ise 128k token context window sunar. Phi-3-mini, tek bir tüketici GPU'sunda hatta yeterli RAM'e sahip modern bir akıllı telefonda on-device çalışabilir.
 
 ### Llama (Meta AI)
-Llama (Large Dil Model Meta AI) is an open-weights family içinde models
-released by Meta. Llama 2 (2023) was released için research ve commercial use
-ile sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
-Performans significantly, ile models ranging from 8B to 70B (ve later 400B+).
-Because bu weights are publicly downloadable, Llama models are bu foundation
-için a large ecosystem içinde fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
-ve are widely used için local/private AI deployments.
+Llama (Large Language Model Meta AI), Meta tarafından yayımlanan open-weights model ailesidir. Llama 2 (2023), 7B ile 70B parametre arasında değişen boyutlarıyla araştırma ve ticari kullanım için sunuldu. Llama 3 (2024), 8B ile 70B (ve daha sonra 400B+) aralığındaki modellerle performansı önemli ölçüde artırdı. Ağırlıklar herkes tarafından indirilebildiği için Llama modelleri, fine-tuning ile oluşturulan geniş bir varyant ekosisteminin (Mistral, Alpaca, Vicuna vb.) temelini oluşturur ve yerel/özel AI dağıtımlarında yaygın olarak kullanılır.
 
 ### Mistral
-Mistral AI is a French AI company that develops open ve proprietary LLMs.
-Mistral 7B (2023) demonstrated that a 7B-parameter model can match bu
-Performans içinde much larger models using efficient techniques such as sliding
-window attention ve grouped-query attention. Mixtral 8x7B (2024) is a mixture-
-içinde-experts model — it routes each token to a subset içinde 8 expert networks,
-achieving GPT-3.5-level Performans while being computationally cheaper.
-Mistral's models are fully open-weight ve can be run locally.
+Mistral AI, open ve proprietary LLM'ler geliştiren Fransız bir AI şirketidir. Mistral 7B (2023), sliding window attention ve grouped-query attention gibi verimli tekniklerle 7B parametreli bir modelin çok daha büyük modellerin performansını yakalayabileceğini gösterdi. Mixtral 8x7B (2024) ise mixture-of-experts modelidir — her token'ı 8 uzman ağdan oluşan bir alt kümeye yönlendirir ve hesaplama maliyetini düşürürken GPT-3.5 düzeyinde performans sağlar. Mistral'ın modelleri tamamen open-weight'tir ve yerel olarak çalıştırılabilir.
 
 ---
 
-## GPU Hardware ve Graphics Cards
+## GPU Donanımı ve Ekran Kartları
 
 ### GPU (Graphics Processing Unit)
-A GPU is a processor designed için massively parallel computation. Originally
-built için rendering 3D graphics, GPUs have become essential için AI/ML training
-ve inference because they can perform thousands içinde floating-point operations
-simultaneously using thousands içinde small cores. bu two main GPU manufacturers
-için AI are NVIDIA ve AMD.
+A GPU, büyük ölçüde paralel hesaplama için tasarlanmış bir işlemcidir. Başlangıçta 3D grafikleri işlemek için geliştirilmiş olsa da, binlerce küçük çekirdek kullanarak aynı anda binlerce floating-point işlemi yapabildiğinden AI/ML eğitimi ve inference için vazgeçilmez hale gelmiştir. AI alanındaki iki ana GPU üreticisi NVIDIA ve AMD'dir.
 
 ### NVIDIA GeForce RTX Series
-bu RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
-30xx (Ampere, 2020) ve RTX 40xx (Ada Lovelace, 2022) generations include
-dedicated Tensor Cores için accelerating AI operations. VRAM (video RAM) is
-critical için running AI models locally — an 8GB GPU can handle 7B parameter
-models içinde 4-bit quantisation; a 24GB GPU can handle 70B models içinde 4-bit.
+RTX (Ray Tracing Texel eXtreme) serisi, NVIDIA'nın tüketici GPU ürün hattıdır. RTX 30xx (Ampere, 2020) ve RTX 40xx (Ada Lovelace, 2022) nesilleri, AI işlemlerini hızlandırmak için özel Tensor Cores içerir. AI modellerini yerelde çalıştırmak için VRAM (video RAM) kritik önemdedir — 8GB bir GPU, 4-bit quantisation ile 7B parametreli modelleri; 24GB bir GPU ise 4-bit ile 70B modelleri çalıştırabilir.
 
-### NVIDIA A-Series ve H-Series (Veri Centre)
-bu A100 (Ampere, 2020) ve H100 (Hopper, 2022) are NVIDIA's professional AI
-accelerators. An H100 has up to 80GB içinde HBM3 memory ve is bu standard
-hardware behind most large-scale LLM training today. These GPUs cost $25,000–
-$40,000 each but offer 10–30× bu AI throughput içinde consumer RTX cards.
+### NVIDIA A-Series ve H-Series (Data Centre)
+A100 (Ampere, 2020) ve H100 (Hopper, 2022), NVIDIA'nın profesyonel AI hızlandırıcılarıdır. H100, 80GB'a kadar HBM3 bellek sunar ve günümüzde büyük ölçekli LLM eğitimlerinin çoğunun arkasındaki standart donanımdır. Bu GPU'lar adet başına 25.000–40.000 dolar aralığında olsa da, tüketici sınıfı RTX kartlarına göre 10–30× daha yüksek AI throughput sağlar.
 
 ### AMD Radeon RX Series
-AMD's consumer GPU line. bu RX 7900 XTX (2022) has 24GB VRAM ve can run
-local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA için AI frameworks, though Destek is improving.
+AMD'nin tüketici GPU ürün hattıdır. RX 7900 XTX (2022), 24GB VRAM'e sahiptir ve ROCm (AMD'nin GPU compute yığını) üzerinden yerel LLM'leri çalıştırabilir. AMD GPU'lar, AI framework'leri açısından genelde NVIDIA kadar iyi desteklenmez, ancak destek giderek iyileşmektedir.
 
 ### Intel Arc
-Intel Arc is Intel's discrete GPU product line, released starting içinde 2022. Arc
-GPUs Destek XeSS (Intel's super-sampling) ve have limited but growing Destek
-için AI inference tasks via OpenVINO ve IPEX-LLM frameworks.
+Intel Arc, Intel'in 2022'den itibaren piyasaya sürülen ayrık GPU ürün serisidir. Arc GPU'lar XeSS'i (Intel'in super-sampling teknolojisi) destekler ve OpenVINO ile IPEX-LLM framework'leri üzerinden AI inference görevleri için sınırlı ama büyüyen destek sunar.
 
 ### ARK Intel (ark.intel.com)
-ARK is Intel's official product specifications Veritabanı at ark.intel.com. It
-provides detailed technical specifications için every Intel CPU, GPU, FPGA, ve
-NUC product, including core counts, clock speeds, TDP, supported memory types,
-ve instruction-set features. When you hear "check ARK için specs," it means
-visiting that Veritabanı için authoritative hardware information.
+ARK, Intel'in ark.intel.com adresindeki resmî ürün teknik özellikleri veritabanıdır. Her Intel CPU, GPU, FPGA ve NUC ürünü için çekirdek sayısı, saat hızları, TDP, desteklenen bellek türleri ve instruction-set özellikleri dâhil ayrıntılı teknik bilgiler sağlar. "Özellikler için ARK'a bak" ifadesi, yetkili donanım bilgisi için bu veritabanına başvurmak anlamına gelir.
 
 ---
 
-## AI Performans Benchmarks
+## AI Performans Benchmark'ları
 
-### MMLU (Massive Multitask Dil Understanding)
-MMLU is a benchmark Test Etme LLM knowledge across 57 academic subjects including
-mathematics, Tarih, Hukuk, Tıp, ve computer Bilim. It consists içinde
-multiple-choice questions drawn from real university-level exams. A score içinde
-70% is roughly human undergraduate level; GPT-4 ve Claude 3 score above 86%.
-Phi-3-mini scores around 70% despite its small size.
+### MMLU (Massive Multitask Language Understanding)
+MMLU, matematik, tarih, hukuk, tıp ve bilgisayar bilimi dâhil 57 akademik konuda LLM bilgisini ölçen bir benchmark'tır. Gerçek üniversite düzeyi sınavlardan alınmış çoktan seçmeli sorulardan oluşur. %70 civarı puan, kabaca lisans öğrencisi düzeyine karşılık gelir; GPT-4 ve Claude 3 %86'nın üzerinde skor alır. Phi-3-mini ise küçük boyutuna rağmen yaklaşık %70 skor elde eder.
 
 ### HumanEval
-HumanEval is OpenAI's benchmark için code generation. It consists içinde 164 Python
-programming problems ile automated test cases. Models are measured on
-pass@k — bu probability that at least one içinde k generated solutions passes all
-tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
+HumanEval, OpenAI'ın kod üretimi benchmark'ıdır. Otomatik test vakalarına sahip 164 Python programlama probleminden oluşur. Modeller, üretilen k çözümden en az birinin tüm testleri geçme olasılığını ölçen pass@k metriğiyle değerlendirilir. GPT-4 yaklaşık %87 (pass@1) skor alır; iyi ayarlanmış 7B'lik bir model ise yaklaşık %50–60 seviyesine çıkabilir.
 
 ### HellaSwag
-HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
-describing a mundane activity ve must choose bu most likely continuation from
-four options. bu incorrect options are specially designed to be plausible but
-subtly wrong. It tests whether a model has a grounded understanding içinde physical
-ve social situations.
+HellaSwag, sağduyu muhakemesini ölçen bir benchmark'tır. Modeller, sıradan bir etkinliği betimleyen bir cümle alır ve dört seçenek arasından en olası devamı seçer. Yanlış seçenekler özellikle makul ama ince biçimde hatalı olacak şekilde tasarlanmıştır. Bu benchmark, modelin fiziksel ve sosyal durumlara dair temellendirilmiş bir anlayışa sahip olup olmadığını ölçer.
 
 ### ARC (AI2 Reasoning Challenge)
-ARC is a benchmark from bu Allen Institute için AI. It consists içinde grade-school
-Bilim questions, split into "Easy" ve "Challenge" sets. bu Challenge set
-contains questions that retrieval-based methods ve simple statistical models
-struggle ile, requiring multi-step reasoning.
+ARC, Allen Institute for AI tarafından geliştirilen bir benchmark'tır. İlköğretim düzeyinde fen sorularından oluşur ve "Easy" ile "Challenge" kümelerine ayrılır. Challenge kümesindeki sorular, retrieval tabanlı yöntemlerin ve basit istatistiksel modellerin zorlandığı, çok adımlı muhakeme gerektiren sorulardır.
 
 ---
 
-## Core AI/ML Concepts
+## Temel AI/ML Kavramları
 
 ### RAG (Retrieval-Augmented Generation)
-RAG is a technique that combines a retrieval system (typically a vector
-Veritabanı) ile a Dil model. Instead içinde relying solely on bu model's
-parametric knowledge, RAG first retrieves relevant documents from an external
-Bilgi Tabanı ve then includes them içinde bu model's context. This allows bu
-model to answer questions about up-to-date or domain-specific information
-without retraining. Potato.ai uses a form içinde RAG — it retrieves from its KB
-ve includes bu results içinde bu context before generating a response.
+RAG, bir retrieval sistemiyle (genellikle bir vector database) bir language model'i birleştiren tekniktir. Modelin yalnızca parametrelerine gömülü bilgiye dayanması yerine, RAG önce harici bir knowledge base'den ilgili belgeleri getirir ve ardından bunları modelin context'ine ekler. Bu sayede model, yeniden eğitilmeye gerek kalmadan güncel veya alana özgü bilgiler hakkında yanıt verebilir. Potato.ai, RAG'in bir türünü kullanır — KB'den içerik getirir ve yanıt oluşturmadan önce sonuçları context'e ekler.
 
 ### Fine-tuning
-Fine-tuning is bu process içinde continuing to train a pre-trained model on a
-smaller, domain-specific dataset. This adapts bu model's weights için a
-particular task or domain. için example, a base LLM might be fine-tuned on
-medical records to create a medical Q&A assistant. Fine-tuning is
-computationally expensive but much cheaper than training from scratch.
+Fine-tuning, önceden eğitilmiş bir modeli daha küçük, alana özgü bir veri kümesi üzerinde eğitmeye devam etme sürecidir. Bu, model ağırlıklarını belirli bir görev veya alana uyarlar. Örneğin bir temel LLM, tıbbi kayıtlarda fine-tuning yapılarak tıbbi soru-cevap asistanına dönüştürülebilir. Fine-tuning hesaplama açısından maliyetlidir, ancak sıfırdan eğitimden çok daha ucuzdur.
 
 ### Quantisation
-Quantisation reduces bu numerical precision içinde model weights (e.g. from 32-bit
-float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
-içinde 16-bit precision requires ~14GB VRAM; bu same model içinde 4-bit (GGUF format)
-requires ~4GB. Quantisation typically causes a small but acceptable accuracy
-degradation ve is bu main technique enabling large models to run on consumer
-hardware or even mobile devices.
+Quantisation, model ağırlıklarının sayısal hassasiyetini düşürür (ör. 32-bit float'tan 4-bit integer'a). Bu, bellek ayak izini dramatik biçimde azaltır — 16-bit hassasiyette 7B'lik bir model yaklaşık 14GB VRAM gerektirirken, aynı model 4-bit'te (GGUF formatı) yaklaşık 4GB gerektirir. Quantisation genellikle küçük ama kabul edilebilir bir doğruluk kaybına yol açar ve büyük modellerin tüketici donanımında hatta mobil cihazlarda çalışmasını sağlayan başlıca tekniktir.
 
 ### Context Window
-bu context window is bu maximum number içinde tokens a model can process at once,
-including both bu prompt ve bu generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo ve Claude 3 Destek 128,000 tokens; Gemini 1.5 Pro
-supports 1,000,000 tokens. A larger context window allows bu model to "see"
-more içinde a conversation or document at once, improving coherence over long
-exchanges.
+Context window, bir modelin aynı anda işleyebileceği azami token sayısıdır; buna hem prompt hem de üretilen yanıt dâhildir. GPT-3.5'in 4.096 token'lık bir penceresi vardı; GPT-4 Turbo ve Claude 3, 128.000 token destekler; Gemini 1.5 Pro ise 1.000.000 token destekler. Daha büyük bir context window, modelin aynı anda daha fazla konuşmayı veya belgeyi "görebilmesini" sağlar ve uzun etkileşimlerde tutarlılığı artırır.
 
-### RLHF (Reinforcement Learning from Human Geri Bildirim)
-RLHF is bu training technique that transforms a base Dil model (which
-simply predicts bu next token) into an assistant that follows instructions ve
-behaves helpfully. Human raters score model outputs, a reward model is trained
-on their preferences, ve bu Dil model is then optimised against this
-reward model using reinforcement learning. ChatGPT, Claude, ve Gemini all use
-variants içinde RLHF or similar alignment techniques (e.g. Constitutional AI,
-Direct Preference Optimisation).
+### RLHF (Reinforcement Learning from Human Feedback)
+RLHF, yalnızca sonraki token'ı tahmin eden temel bir language model'i, yönergeleri izleyen ve yardımcı davranan bir asistana dönüştüren eğitim tekniğidir. İnsan değerlendiriciler model çıktılarının puanını verir, bu tercihler üzerinden bir reward model eğitilir ve ardından language model, reinforcement learning kullanılarak bu reward model'e göre optimize edilir. ChatGPT, Claude ve Gemini; RLHF'in veya benzer hizalama tekniklerinin (ör. Constitutional AI, Direct Preference Optimisation) varyantlarını kullanır.
 
-### Transformer Mimari
-bu Transformer is bu neural Ağ Mimari underlying all modern LLMs.
-Introduced içinde bu 2017 paper "Attention Is All You Need" by Vaswani et al., it
-uses self-attention mechanisms to process all tokens içinde parallel rather than
-sequentially. Encoder-only Transformers (BERT) are used için understanding tasks;
-decoder-only Transformers (GPT, Llama, Mistral) are used için generation tasks;
-encoder-decoder Transformers (T5, BART) are used için translation ve summarisation.
+### Transformer Architecture
+Transformer, tüm modern LLM'lerin temelindeki neural network mimarisidir. Vaswani ve arkadaşlarının 2017 tarihli "Attention Is All You Need" makalesiyle tanıtılmıştır ve token'ları sıralı biçimde değil paralel olarak işlemek için self-attention mekanizmaları kullanır. Yalnızca encoder kullanan Transformer'lar (BERT) anlama görevlerinde; yalnızca decoder kullanan Transformer'lar (GPT, Llama, Mistral) üretim görevlerinde; encoder-decoder Transformer'lar (T5, BART) ise çeviri ve özetleme görevlerinde kullanılır.
 
 ### Embeddings ve Vector Databases
-Embeddings are dense numerical representations içinde text (or images) produced by
-a neural Ağ. Semantically similar texts have embeddings that are close içinde
-vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings ve Destek fast approximate nearest-neighbour search. They are
-bu storage backbone içinde RAG Sistemler, including Potato.ai's cold-memory layer.
+Embedding'ler, bir neural network tarafından üretilen yoğun sayısal metin (veya görsel) temsilleridir. Anlamsal olarak benzer metinlerin embedding'leri vector space içinde birbirine yakın olur. Vector database'ler (ChromaDB, Pinecone, Weaviate, Qdrant) bu embedding'leri depolar ve hızlı approximate nearest-neighbour aramasını destekler. Bunlar, Potato.ai'ın cold-memory katmanı dâhil olmak üzere RAG sistemlerinin depolama omurgasını oluşturur.

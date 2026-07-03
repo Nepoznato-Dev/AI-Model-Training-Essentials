@@ -1,367 +1,360 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: finance_and_investing.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 金融與投資
 
-# 金融 和 投資
+## 個人理財基礎
 
-## Personal 金融 基礎
+### 財務規劃基礎
+- **預算編列**:追蹤收入和支出,50/30/20法則(需求/想要/儲蓄)
+- **緊急基金**:3-6個月的生活費存放在流動帳戶中
+- **淨資產**:資產減去負債,隨時間追蹤
+- **現金流管理**:資金流入與流出,正現金流至關重要
+- **財務目標**:短期(<1年)、中期(1-5年)、長期(5年以上)
 
-### Financial Planning 基礎
-- **Budgeting**: Track income 和 expenses, 50/30/20 rule (needs/wants/savings)
-- **Emergency Fund**: 3-6 months 的 living expenses 在 liquid account
-- **Net Worth**: Assets minus liabilities, track over time
-- **Cash Flow 管理**: Money 在 vs. money out, positive cash flow essential
-- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+### 銀行產品
+- **支票帳戶**:日常交易、金融卡、帳單支付
+- **儲蓄帳戶**:計息、提款有限
+- **貨幣市場帳戶**:較高利率、支票開立特權
+- **定期存款(CD)**:固定期限、固定利率、提前解約罰款
+- **高收益儲蓄**:線上銀行、具競爭力的利率
 
-### Banking Products
-- **Checking Accounts**: Daily transactions, debit cards, bill payments
-- **Savings Accounts**: Interest-bearing, limited withdrawals
-- **Money Market Accounts**: Higher interest, check-writing privileges
-- **Certificates 的 Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
-- **High-Yield Savings**: Online banks, competitive rates
+### 信用與債務
+- **信用評分**:FICO(300-850),影響因素:付款記錄、使用率、長度、組合、查詢
+- **信用報告**:Equifax、Experian、TransUnion每年免費報告
+- **債務類型**:
+  - 好債務:房貸、學生貸款(潛在投資報酬率)
+  - 壞債務:信用卡、發薪日貸款(高利率)
+- **債務償還策略**:
+  - 雪崩法:先償還最高利率(數學上最優)
+  - 雪球法:先償還最小餘額(心理上的成就感)
+- **債務收入比**:每月債務支付/每月總收入
 
-### Credit 和 Debt
-- **Credit Score**: FICO (300-850), factors: payment 歷史, utilization, length, mix, inquiries
-- **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
-- **Types 的 Debt**: 
-  - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high interest)
-- **Debt Repayment Strategies**:
-  - Avalanche: Pay highest interest first (mathematically optimal)
-  - Snowball: Pay smallest balance first (psychological wins)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
+## 投資基礎
 
-## Investment 基礎
+### 資產類別
 
-### Asset Classes
+#### 股票
+- **普通股**:所有權股份、投票權、股利
+- **優先股**:固定股利、破產時優先、無投票權
+- **市值**:大型股、中型股、小型股
+- **投資風格**:成長型、價值型、混合型、收益型
+- **產業**:科技、醫療、金融、消費、工業、能源、公用事業、原物料、房地產、通訊服務
 
-#### Equities (Stocks)
-- **Common Stock**: Ownership share, voting rights, dividends
-- **Preferred Stock**: Fixed dividends, priority 在 bankruptcy, no voting
-- **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, income
-- **Sectors**: 技術, 醫療, financials, consumer, industrial, energy, utilities, materials, real estate, 溝通 services
+#### 固定收益(債券)
+- **政府債券**:國庫券、票據、公債(最低風險)
+- **市政債券**:州/地方政府、免稅利息
+- **公司債券**:投資等級、高收益/垃圾債券
+- **債券特性**:面值、票面利率、到期日、收益率
+- **利率風險**:債券價格與利率反向移動
+- **信用風險**:違約機率、信用評等(AAA到D)
 
-#### Fixed Income (Bonds)
-- **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt interest
-- **Corporate Bonds**: Investment grade, high-yield/junk
-- **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move inversely to rates
-- **Credit Risk**: Default probability, credit ratings (AAA to D)
+#### 現金及約當現金
+- **國庫券**:短期政府債務
+- **貨幣市場基金**:穩定淨資產價值、流動性
+- **商業票據**:短期公司債務
+- **特性**:低風險、低報酬、高流動性
 
-#### Cash 和 Cash Equivalents
-- **Treasury Bills**: Short-term government debt
-- **Money Market Funds**: Stable NAV, liquid
-- **Commercial Paper**: Short-term corporate debt
-- **Characteristics**: Low risk, low return, high liquidity
+#### 房地產
+- **直接所有權**:實體房產、租金收入
+- **REITs**:不動產投資信託、公開交易
+- **房地產群眾募資**:基於平台的房產投資
+- **特性**:收入產生、增值、抗通膨
 
-#### Real Estate
-- **Direct Ownership**: Physical properties, rental income
-- **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfunding**: Platform-based property investment
-- **Characteristics**: Income generation, appreciation, inflation hedge
+#### 另類投資
+- **商品**:黃金、白銀、石油、農產品
+- **加密貨幣**:Bitcoin、Ethereum、數位資產
+- **私募股權**:直接公司所有權、流動性低
+- **避險基金**:主動管理、多元策略
+- **收藏品**:藝術品、葡萄酒、稀有物品
 
-#### Alternative Investments
-- **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
-- **Private Equity**: Direct company ownership, illiquid
-- **Hedge Funds**: Active 管理, diverse strategies
-- **Collectibles**: Art, wine, rare items
+### 投資工具
 
-### Investment Vehicles
+#### 共同基金
+- 專業管理的投資組合
+- 以日終淨資產價值定價
+- 主動或被動管理
+- 有手續費與無手續費基金
+- 費用率差異很大
 
-#### Mutual Funds
-- Professionally managed portfolios
-- Priced at end-的-day NAV
-- Active or passive 管理
-- Load vs. no-load funds
-- Expense ratios vary widely
+#### 交易所交易基金(ETF)
+- 像股票一樣全天交易
+- 通常是被動式、追蹤指數
+- 費用率低於共同基金
+- 稅務效率高的結構
+- 範例:SPY(S&P 500)、QQQ(Nasdaq)、VTI(總市場)
 
-#### Exchange-Traded Funds (ETFs)
-- Trade like stocks throughout day
-- Typically passive, index-tracking
-- Lower expense ratios than mutual funds
-- Tax-efficient structure
-- 範例: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
+#### 指數基金
+- 被動管理追蹤特定指數
+- 低成本、廣泛分散
+- 範例:總股市、S&P 500、國際
 
-#### Index Funds
-- Passive 管理 tracking specific index
-- Low costs, broad diversification
-- 範例: Total stock market, S&P 500, international
+#### 年金
+- 提供收入流的保險產品
+- 固定、變動或指數型報酬
+- 立即或遞延支付
+- 稅務遞延成長
 
-#### Annuities
-- Insurance products providing income streams
-- Fixed, variable, or indexed returns
-- Immediate or deferred payout
-- Tax-deferred growth
+## 投資策略
 
-## Investment Strategies
+### 投資組合建構
+- **資產配置**:跨資產類別的分配
+- **多元化**:將風險分散於證券、產業、地理區域
+- **現代投資組合理論**:透過多元化優化風險報酬
+- **效率前緣**:給定風險水準下的最大報酬
+- **相關性**:資產彼此相對移動的方式
 
-### Portfolio Construction
-- **Asset Allocation**: Distribution across asset classes
-- **Diversification**: Spread risk across securities, sectors, geographies
-- **Modern Portfolio Theory**: Optimize risk-return through diversification
-- **Efficient Frontier**: Maximum return 為 given risk level
-- **Correlation**: How assets move relative to each other
+### 投資方法
+- **被動投資**:指數基金、買入持有、低成本
+- **主動投資**:選股、擇時、較高成本
+- **定期定額投資**:不論價格定期投資固定金額
+- **價值投資**:買入被低估的證券(Warren Buffett方法)
+- **成長投資**:專注於高於平均成長的公司
+- **收益投資**:優先考慮股利和利息支付
+- **ESG投資**:環境、社會、治理因素
 
-### Investment Approaches
-- **Passive 投資**: Index funds, buy-和-hold, low costs
-- **Active 投資**: Stock picking, market timing, higher costs
-- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless 的 price
-- **Value 投資**: Buy undervalued securities (Warren Buffett approach)
-- **Growth 投資**: Focus on companies 與 above-average growth
-- **Income 投資**: Prioritize dividends 和 interest payments
-- **ESG 投資**: 環境, social, governance factors
+### 風險管理
+- **風險承受度**:承受虧損的能力和意願
+- **投資期限**:何時需要資金影響風險能力
+- **部位規模**:不要在單一投資上過度集中
+- **停損單**:在預定價格自動賣出
+- **再平衡**:定期恢復目標配置
+- **避險**:選擇權、反向ETF以降低下檔風險
 
-### Risk 管理
-- **Risk Tolerance**: Ability 和 willingness to lose money
-- **Time Horizon**: When you need 這 money affects risk capacity
-- **Position Sizing**: Don't concentrate too much 在 single investment
-- **Stop-Loss Orders**: Automatic sell at predetermined price
-- **Rebalancing**: Restore target allocation periodically
-- **Hedging**: Options, inverse ETFs to reduce downside
+## 退休規劃
 
-## Retirement Planning
+### 退休帳戶(美國)
 
-### Retirement Accounts (US)
-
-#### Traditional IRA
-- Tax-deductible contributions (income limits apply)
-- Tax-deferred growth
-- Taxed upon withdrawal
-- Required Minimum Distributions (RMDs) at age 73
+#### 傳統IRA
+- 可抵稅的供款(適用收入限制)
+- 稅務遞延成長
+- 提領時課稅
+- 73歲起要求最低提領(RMD)
 
 #### Roth IRA
-- After-tax contributions
-- Tax-free growth 和 withdrawals
-- No RMDs during lifetime
-- Income limits 為 eligibility
+- 稅後供款
+- 免稅成長和提領
+- 一生中無RMD
+- 資格有收入限制
 
-#### 401(k) Plans
-- Employer-sponsored retirement plans
-- Pre-tax or Roth (after-tax) options
-- Employer matching (free money)
-- Higher contribution limits than IRAs
-- Vesting schedules 為 employer contributions
+#### 401(k)計畫
+- 雇主贊助的退休計畫
+- 稅前或Roth(稅後)選項
+- 雇主配對(免費資金)
+- 供款限額高於IRA
+- 雇主供款的歸屬時程
 
-#### Other Plans
-- **403(b)**: Non-profit organizations
-- **457**: Government employees
-- **SEP IRA**: Self-employed, small 商業
-- **Solo 401(k)**: Self-employed 與 no employees
+#### 其他計畫
+- **403(b)**:非營利組織
+- **457**:政府僱員
+- **SEP IRA**:自僱、小企業
+- **Solo 401(k)**:無僱員的自僱者
 
-### Retirement Planning Concepts
-- **Replacement Ratio**: 70-80% 的 pre-retirement income typically needed
-- **Social 安全**: Government benefit, claim between 62-70
-- **Pension Plans**: Defined benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
-- **醫療 Costs**: Medicare, supplemental insurance, long-term care
+### 退休規劃概念
+- **替代率**:通常需要退休前收入的70-80%
+- **社會安全**:政府福利,62-70歲間申請
+- **退休金計畫**:確定給付(雇主保證支付)
+- **提領策略**:4%法則、動態支出、分層策略
+- **醫療成本**:Medicare、補充保險、長期照護
 
-## Market Mechanics
+## 市場機制
 
-### Stock Exchanges
-- **NYSE**: New York Stock Exchange, auction-based
-- **Nasdaq**: Electronic exchange, 技術-heavy
-- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+### 證券交易所
+- **NYSE**:紐約證券交易所、拍賣式
+- **Nasdaq**:電子交易所、科技股密集
+- **其他交易所**:倫敦證券交易所、東京證券交易所、上海證券交易所
 
-### Order Types
-- **Market Order**: Execute immediately at current price
-- **Limit Order**: Execute only at specified price or better
-- **Stop Order**: Becomes market order when stop price reached
-- **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailing Stop**: Stop price follows stock price movement
+### 訂單類型
+- **市價單**:立即以當前價格執行
+- **限價單**:僅在指定價格或更好的價格執行
+- **停損單**:達到停損價時成為市價單
+- **停損限價單**:達到停損價時成為限價單
+- **移動停損**:停損價跟隨股價移動
 
-### Trading Concepts
-- **Bid-Ask Spread**: Difference between buying 和 selling price
-- **Volume**: Number 的 shares traded
-- **Liquidity**: Ease 的 buying/selling without affecting price
-- **Volatility**: Price fluctuation magnitude
-- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
-- **Margin Trading**: Borrow money to invest, amplified gains/losses
+### 交易概念
+- **買賣價差**:買入和賣出價格的差異
+- **成交量**:交易的股數
+- **流動性**:買賣不影響價格的容易度
+- **波動性**:價格波動幅度
+- **賣空**:借股票賣出,希望以更低價買回
+- **保證金交易**:借錢投資,放大獲利/虧損
 
-### Market Indicators
-- **S&P 500**: 500 largest US companies
-- **Dow Jones Industrial Average**: 30 large blue-chip companies
-- **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
-- **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility index, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic indicator
+### 市場指標
+- **S&P 500**:500家最大的美國公司
+- **道瓊工業平均指數**:30家大型藍籌公司
+- **Nasdaq綜合指數**:所有Nasdaq上市股票,科技股密集
+- **Russell 2000**:美國小型股
+- **VIX**:波動率指數,「恐慌指標」
+- **殖利率曲線**:不同到期日的債券收益率,經濟指標
 
-## Fundamental Analysis
+## 基本面分析
 
-### Financial Statements
-- **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
-- **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operating, 投資, financing activities
+### 財務報表
+- **資產負債表**:資產 = 負債 + 股東權益
+- **損益表**:收入 - 支出 = 淨利
+- **現金流量表**:營運、投資、融資活動
 
-### Key Ratios
-- **Valuation Ratios**:
-  - P/E (Price-to-Earnings): Share price / earnings per share
-  - P/B (Price-to-Book): Market value / book value
-  - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
+### 關鍵比率
+- **評價比率**:
+  - 本益比(P/E):股價/每股盈餘
+  - 股價淨值比(P/B):市值/帳面價值
+  - 股價營收比(P/S):市值/營收
+  - EV/EBITDA:企業價值/息稅折舊攤銷前盈餘
 
-- **Profitability Ratios**:
-  - Gross Margin: Gross profit / revenue
-  - Operating Margin: Operating income / revenue
-  - Net Margin: Net income / revenue
-  - ROE (Return on Equity): Net income / shareholders' equity
-  - ROA (Return on Assets): Net income / total assets
+- **獲利能力比率**:
+  - 毛利率:毛利/營收
+  - 營業利益率:營業利益/營收
+  - 淨利率:淨利/營收
+  - 股東權益報酬率(ROE):淨利/股東權益
+  - 資產報酬率(ROA):淨利/總資產
 
-- **Liquidity Ratios**:
-  - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - inventory) / current liabilities
+- **流動性比率**:
+  - 流動比率:流動資產/流動負債
+  - 速動比率:(流動資產-存貨)/流動負債
 
-- **Leverage Ratios**:
-  - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / interest expense
+- **槓桿比率**:
+  - 負債權益比:總負債/股東權益
+  - 利息保障倍數:息稅前盈餘/利息支出
 
-### Qualitative Factors
-- **管理 Quality**: Track record, alignment 與 shareholders
-- **Competitive Advantage**: Moat, barriers to entry
-- **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board independence, shareholder rights
+### 質化因素
+- **管理品質**:過往紀錄、與股東利益一致性
+- **競爭優勢**:護城河、進入障礙
+- **產業動態**:成長、競爭、監管
+- **公司治理**:董事會獨立性、股東權利
 
-## Technical Analysis
+## 技術分析
 
-### Chart Types
-- **Line Charts**: Closing prices over time
-- **Bar Charts**: Open, high, low, close (OHLC)
-- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
+### 圖表類型
+- **線圖**:隨時間的收盤價
+- **柱狀圖**:開盤、最高、最低、收盤(OHLC)
+- **K線圖**:視覺化OHLC、看漲/看跌型態
 
-### Trend Analysis
-- **支援**: Price level where buying pressure exceeds selling
-- **Resistance**: Price level where selling pressure exceeds buying
-- **Trendlines**: Connect highs or lows to show direction
-- **Moving Averages**: SMA (simple), EMA (exponential)
-- **Golden Cross**: Short MA crosses above long MA (bullish)
-- **Death Cross**: Short MA crosses below long MA (bearish)
+### 趨勢分析
+- **支撐**:買壓超過賣壓的價格水準
+- **阻力**:賣壓超過買壓的價格水準
+- **趨勢線**:連接高點或低點以顯示方向
+- **移動平均線**:簡單移動平均(SMA)、指數移動平均(EMA)
+- **黃金交叉**:短期均線向上穿越長期均線(看漲)
+- **死亡交叉**:短期均線向下穿越長期均線(看跌)
 
-### Technical Indicators
-- **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Moving Average Convergence Divergence
-- **Bollinger Bands**: Volatility bands around moving average
-- **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: 支援/resistance levels based on ratios
+### 技術指標
+- **相對強弱指標(RSI)**:動能震盪指標(0-100)
+- **MACD**:移動平均收斂發散
+- **布林通道**:圍繞移動平均線的波動帶
+- **成交量指標**:平衡成交量、成交量加權平均價
+- **斐波那契回撤**:基於比率的支撐/阻力水準
 
-### Chart Patterns
-- **Reversal Patterns**: Head 和 shoulders, double top/bottom
-- **Continuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defined range
+### 圖表型態
+- **反轉型態**:頭肩頂、雙頂/雙底
+- **持續型態**:三角形、旗形、三角旗
+- **突破**:價格超越定義範圍
 
-## Tax Considerations
+## 稅務考量
 
-### Investment Taxes
-- **Capital Gains**: Profit from selling investments
-  - Short-term: Held <1 year, taxed as ordinary income
-  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
-- **Dividends**: 
-  - Qualified: Lower tax rates
-  - Ordinary: Taxed as income
-- **Interest Income**: Generally taxed as ordinary income
-- **Tax-Loss Harvesting**: Sell losers to offset gains
+### 投資稅務
+- **資本利得**:出售投資的獲利
+  - 短期:持有<1年,按一般所得課稅
+  - 長期:持有>1年,優惠稅率(0%、15%、20%)
+- **股利**:
+  - 合格股利:較低稅率
+  - 一般股利:按所得課稅
+- **利息收入**:通常按一般所得課稅
+- **稅損收穫**:賣出虧損以抵銷獲利
 
-### Tax-Advantaged Accounts
-- **Traditional IRA/401(k)**: Tax deduction now, taxed later
-- **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Savings Account)**: Triple tax advantage 為 medical expenses
-- **529 Plans**: Tax-advantaged education savings
+### 稅務優惠帳戶
+- **傳統IRA/401(k)**:現在扣稅,之後課稅
+- **Roth IRA/401(k)**:現在不扣稅,之後免稅
+- **HSA(健康儲蓄帳戶)**:醫療支出的三重稅務優惠
+- **529計畫**:教育儲蓄的稅務優惠
 
-### Tax Efficiency Strategies
-- Asset location (which accounts hold which investments)
-- Hold investments long-term 為 preferential rates
-- Use tax-efficient funds (ETFs, index funds)
-- Consider municipal bonds 為 taxable accounts
+### 稅務效率策略
+- 資產配置(哪些帳戶持有哪些投資)
+- 長期持有投資以獲得優惠稅率
+- 使用稅務效率高的基金(ETF、指數基金)
+- 考慮應稅帳戶的市政債券
 
-## Economic Factors
+## 經濟因素
 
-### Macroeconomic Indicators
-- **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasing power erosion
-- **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowing costs
-- **Consumer Confidence**: Spending sentiment
-- **Manufacturing 資料**: PMI, industrial production
+### 總體經濟指標
+- **GDP**:國內生產總值、經濟成長
+- **通膨**:CPI、PCE、購買力侵蝕
+- **失業率**:勞動市場健康度
+- **利率**:聯邦準備政策、借貸成本
+- **消費者信心**:支出情緒
+- **製造業數據**:PMI、工業生產
 
-### Federal Reserve 和 Monetary Policy
-- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easing
-- **Impact**: Interest rates affect bonds, stocks, currency, economy
+### 聯邦準備與貨幣政策
+- **雙重使命**:最大就業、穩定物價(2%通膨)
+- **工具**:聯邦基金利率、公開市場操作、量化寬鬆
+- **影響**:利率影響債券、股票、貨幣、經濟
 
-### 商業 Cycle
-- **Expansion**: Economic growth, rising employment
-- **Peak**: Maximum growth, potential overheating
-- **Contraction/Recession**: Economic decline, rising unemployment
-- **Trough**: Bottom, recovery begins
+### 景氣循環
+- **擴張**:經濟成長、就業上升
+- **高峰**:最大成長、可能過熱
+- **收縮/衰退**:經濟衰退、失業上升
+- **谷底**:底部、復甦開始
 
-## Behavioral 金融
+## 行為金融
 
-### Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gains please
-- **Confirmation Bias**: Seek information confirming existing beliefs
-- **Overconfidence**: Overestimate knowledge 和 abilities
-- **Anchoring**: Rely too heavily on first piece 的 information
-- **Herd Mentality**: Follow crowd behavior
-- **Recency Bias**: overweight recent 事件
-- **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Continue based on past investment, not 未來 prospects
+### 常見偏誤
+- **損失規避**:損失帶來的痛苦大於等量獲利的快樂
+- **確認偏誤**:尋求確認既有信念的資訊
+- **過度自信**:高估知識和能力
+- **定錨**:過度依賴第一條資訊
+- **從眾心理**:跟隨群眾行為
+- **近因偏誤**:過度重視近期事件
+- **稟賦效應**:更高估擁有的物品
+- **沉沒成本謬誤**:基於過去投資繼續,而非未來前景
 
-### Emotional 投資 Pitfalls
-- Panic selling during downturns
-- FOMO (Fear 的 Missing Out) buying at tops
-- Trading too frequently
-- Chasing past 效能
-- Timing 這 market (nearly impossible consistently)
+### 情緒投資陷阱
+- 下跌時恐慌性拋售
+- 在高點因害怕錯過(FOMO)而買入
+- 交易過於頻繁
+- 追逐過去績效
+- 擇時進出市場(持續做到幾乎不可能)
 
 ### 最佳實踐
-- Create 和 stick to investment plan
-- Automate contributions
-- Avoid checking portfolio too frequently
-- Focus on controllables (savings rate, costs, asset allocation)
-- Maintain long-term perspective
+- 制定並堅持投資計畫
+- 自動化供款
+- 避免過於頻繁查看投資組合
+- 專注於可控因素(儲蓄率、成本、資產配置)
+- 保持長期視角
 
-## Current Investment Trends
+## 當前投資趨勢
 
-### Thematic 投資
-- **技術**: AI, cloud 計算, cybersecurity, semiconductors
-- **醫療**: Biotechnology, genomics, telemedicine
-- **Clean Energy**: Solar, wind, electric vehicles, battery 技術
-- **Fintech**: Digital payments, blockchain, robo-advisors
-- **E-commerce**: Online retail, logistics, digital advertising
+### 主題投資
+- **科技**:AI、雲端運算、網路安全、半導體
+- **醫療**:生物科技、基因組學、遠距醫療
+- **清潔能源**:太陽能、風能、電動車、電池技術
+- **金融科技**:數位支付、區塊鏈、機器人顧問
+- **電子商務**:線上零售、物流、數位廣告
 
-### Demographic Trends
-- Aging population (醫療, retirement services)
-- Millennial/Gen Z preferences (永續性, 技術)
-- Urbanization (real estate, infrastructure)
-- Emerging markets middle class growth
+### 人口趨勢
+- 人口老化(醫療、退休服務)
+- 千禧世代/Z世代偏好(永續性、科技)
+- 都市化(房地產、基礎設施)
+- 新興市場中產階級成長
 
-### Sustainable 投資
-- **ESG Integration**: 環境, social, governance factors
-- **Impact 投資**: Generate positive social/環境 impact
-- **Green Bonds**: Fund 環境 projects
-- **Carbon Credits**: Trade emissions allowances
+### 永續投資
+- **ESG整合**:環境、社會、治理因素
+- **影響力投資**:產生正面社會/環境影響
+- **綠色債券**:資助環境專案
+- **碳權**:交易排放額度
 
-## Financial Advisors 和 Services
+## 財務顧問與服務
 
-### Types 的 Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
-- **Broker-Dealer**: Suitability standard, commission-based
-- **Robo-Advisors**: Automated 投資, lower costs
-- **Financial Planner**: Comprehensive planning, may be fee-only or commission
+### 顧問類型
+- **註冊投資顧問(RIA)**:受託標準、收費制
+- **券商自營商**:適當性標準、佣金制
+- **機器人顧問**:自動化投資、較低成本
+- **財務規劃師**:全面規劃,可能是純收費或佣金制
 
-### Compensation Models
-- **Fee-Only**: Percentage 的 assets, hourly, flat fee (no commissions)
-- **Commission**: Paid on product sales
-- **Fee-Based**: Combination 的 fees 和 commissions
-- **Assets Under 管理 (AUM)**: Typically 0.5%-1.5% annually
+### 報酬模式
+- **純收費**:資產百分比、時薪、固定費用(無佣金)
+- **佣金**:產品銷售支付
+- **收費制**:費用和佣金的組合
+- **管理資產(AUM)**:通常每年0.5%-1.5%
 
-### Choosing an Advisor
-- Verify credentials (CFP, CFA, CPA)
-- Understand compensation structure
-- Check regulatory 歷史 (SEC, FINRA BrokerCheck)
-- Ensure fiduciary duty
-- Assess 溝通 style 和 compatibility
+### 選擇顧問
+- 驗證資格(CFP、CFA、CPA)
+- 了解報酬結構
+- 檢查監管歷史(SEC、FINRA BrokerCheck)
+- 確保受託責任
+- 評估溝通風格和契合度

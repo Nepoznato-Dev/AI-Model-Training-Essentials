@@ -1,71 +1,64 @@
-<!-- 
-This file was automatically translated from English to Mandarin (Traditional Chinese).
-Source: networking_basics.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# 網路基礎
 
-# Networking 基礎
-
-A practical 參考 為 developers 和 sysadmins — core concepts, protocols, 命令, 和 troubleshooting.
+面向開發者和系統管理員的實用參考資料——涵蓋核心概念、協議、命令和故障排查。
 
 ---
 
-## 這 OSI Model (7 Layers)
+## OSI 模型（7 層）
 
-A conceptual framework 為 understanding 網路 溝通.
+這是一個用於理解網路通訊的概念性框架。
 
-| Layer | Name | Function | Example protocols |
+| 層 | 名稱 | 功能 | 範例協議 |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | 資料 formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection 管理 | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | 網路 | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | 資料 Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | 應用層 | 面向終端使用者的服務 | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | 表示層 | 資料格式化、加密、壓縮 | TLS, JPEG, ASCII |
+| 5 | 會話層 | 連線管理 | NetBIOS, RPC |
+| 4 | 傳輸層 | 端到端傳輸、糾錯、流量控制 | TCP, UDP |
+| 3 | 網路層 | 路由、定址 | IP, ICMP, OSPF, BGP |
+| 2 | 資料鏈路層 | 成幀、差錯檢測、MAC 地址 | Ethernet, Wi-Fi, PPP |
+| 1 | 物理層 | 原始位元傳輸 | Ethernet cables, fiber optics, radio waves |
 
-在 practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used 為 這 internet.
+在實際中，**TCP/IP 模型**（4 層：Link、Internet、Transport、Application）更常用於網際網路。
 
 ---
 
-## IP Addressing
+## IP 編址
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted 在 practice).
+- 32 位地址，寫作四個八位組：`192.168.1.1`
+- 總量：約 43 億個地址（但實際上已基本耗盡）。
 
 ### IPv6
-- 128-bit address, written 在 hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128 位地址，以十六進位制表示：`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- 總量：2¹²⁸ 個地址（幾乎可視為無限）。
 
-### Private IP Ranges (RFC 1918)
-These are not routable on 這 internet; used inside local networks:
+### 私有 IP 地址範圍（RFC 1918）
+這些地址不能在網際網路上路由，用於本地網路內部：
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means 這 first 24 bits are 這 網路 prefix; 這 last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR 表示法
+`192.168.1.0/24` 表示前 24 位是網路前綴，後 8 位是主機位。它包含 `192.168.1.0` 到 `192.168.1.255` 之間的地址。
 
 ---
 
-## DNS (Domain Name System)
+## DNS（網域名稱系統）
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+將網域名稱（例如 `example.com`）映射到 IP 地址。
 
-### Record Types
-| Type | Purpose |
+### 記錄型別
+| 型別 | 用途 |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver 為 這 domain |
-| **SRV** | Service record (e.g., 為 SIP) |
+| **A** | 將網域名稱映射到 IPv4 地址 |
+| **AAAA** | 將網域名稱映射到 IPv6 地址 |
+| **CNAME** | 指向另一個網域名稱的別名 |
+| **MX** | 郵件交換伺服器 |
+| **TXT** | 任意文字（SPF、DKIM、驗證資訊） |
+| **NS** | 網域名稱的權威名稱伺服器 |
+| **SRV** | 服務記錄（例如用於 SIP） |
 
-### Common Tools
+### 常用工具
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -255,9 +248,9 @@ text
 ## File 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps 和 System Administration
+# DevOps and System Administration
 
-A practical 指南 to managing servers, automating operations, 和 maintaining reliable infrastructure.
+A practical guide to managing servers, automating operations, and maintaining reliable infrastructure.
 
 ---
 

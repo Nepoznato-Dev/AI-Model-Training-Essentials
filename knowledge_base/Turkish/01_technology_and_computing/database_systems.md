@@ -1,38 +1,31 @@
-<!-- 
-This file was automatically translated from English to Turkish.
-Source: database_systems.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Veritabanı Sistemleri
 
-# Veritabanı Sistemler
+## Veritabanı Temelleri
 
-## Veritabanı Temeller
+### Veritabanı Nedir?
+Veritabanı, verinin verimli şekilde alınması, eklenmesi, güncellenmesi ve silinmesi için tasarlanmış, elektronik olarak saklanan yapılandırılmış bilgilerin organize edilmiş bir koleksiyonudur.
 
-### What is a Veritabanı?
-A Veritabanı is an organized collection içinde structured information stored electronically, designed için efficient retrieval, insertion, updating, ve deletion içinde Veri.
+### Database Management Systems (DBMS)
+Son kullanıcılar, uygulamalar ve veritabanının kendisiyle etkileşime girerek veriyi toplamak ve analiz etmek için kullanılan yazılımlardır. Örnekler: MySQL, PostgreSQL, Oracle, MongoDB.
 
-### Veritabanı Yönetim Sistemler (DBMS)
-Software that interacts ile end users, applications, ve bu Veritabanı itself to capture ve analyze Veri. Örnekler: MySQL, PostgreSQL, Oracle, MongoDB.
-
-### Key Concepts
-- **Schema**: Structure/organization içinde Veritabanı (tables, fields, relationships)
-- **Instance**: Actual Veri stored at a particular moment
+### Temel Kavramlar
+- **Schema**: Veritabanının yapısı/organizasyonu (tablolar, alanlar, ilişkiler)
+- **Instance**: Belirli bir andaki gerçek veri
 - **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing Veri to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read Performans
+- **CAP Theorem**: Consistency, Availability, Partition Tolerance (2'si seçilir)
+- **Normalization**: Fazlalığı azaltmak için veriyi düzenleme
+- **Denormalization**: Okuma performansını artırmak için fazlalık ekleme
 
 ## Relational Databases (SQL)
 
-### Core Concepts
-- **Tables**: Rows (records) ve columns (fields)
-- **Primary Key**: Unique identifier için each row
-- **Foreign Key**: Referans to primary key içinde another table
-- **Indexes**: Veri structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on Veri changes
+### Temel Kavramlar
+- **Tables**: Satırlar (records) ve sütunlar (fields)
+- **Primary Key**: Her satır için benzersiz tanımlayıcı
+- **Foreign Key**: Başka bir tablodaki primary key'e referans
+- **Indexes**: Sorgu hızını artıran veri yapıları
+- **Views**: Sorgu sonuçlarına dayalı sanal tablolar
+- **Stored Procedures**: Önceden derlenmiş SQL kod blokları
+- **Triggers**: Veri değişikliklerinde otomatik çalışan işlemler
 
 ### SQL Operations (CRUD)
 ```sql
@@ -51,222 +44,222 @@ DELETE FROM users WHERE id = 1;
 ```
 
 ### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product içinde both tables
-- **SELF JOIN**: Table joined ile itself
+- **INNER JOIN**: Her iki tablodaki eşleşen satırları döndürür
+- **LEFT JOIN**: Sol tablodaki tüm satırlar, sağdan eşleşenler
+- **RIGHT JOIN**: Sağ tablodaki tüm satırlar, soldan eşleşenler
+- **FULL OUTER JOIN**: Her iki tablodaki tüm satırlar
+- **CROSS JOIN**: Her iki tablonun Kartezyen çarpımı
+- **SELF JOIN**: Tabloyun kendisiyle join edilmesi
 
 ### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+- **1NF**: Atomik değerler, tekrar eden grup yok
+- **2NF**: 1NF + kısmi bağımlılık yok (tüm non-key öznitelikler tam primary key'e bağlıdır)
+- **3NF**: 2NF + geçişli bağımlılık yok (non-key öznitelikler başka non-key özniteliklere bağlı değildir)
+- **BCNF**: 3NF'in daha güçlü hali, her determinant bir candidate key'dir
+- **4NF**: Çok değerli bağımlılık yok
+- **5NF**: Join bağımlılığı yok
 
-### Popular RDBMS
-- **PostgreSQL**: İleri Düzey features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, Web applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### Popüler RDBMS'ler
+- **PostgreSQL**: Gelişmiş özellikler, genişletilebilirlik, ACID uyumluluğu
+- **MySQL**: Yaygın kullanım, hızlı okumalar, web uygulamaları
+- **Oracle**: Kurumsal özellikler, ölçeklenebilirlik, yüksek maliyet
+- **SQL Server**: Microsoft ekosistemi, entegre araçlar
+- **SQLite**: Embedded, serverless, hafif
+- **MariaDB**: MySQL fork'u, open-source
 
 ## NoSQL Databases
 
-### Types içinde NoSQL Databases
+### NoSQL Veritabanı Türleri
 
 #### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Yönetim, catalogs, user profiles
-- **Örnekler**: MongoDB, CouchDB, DocumentDB
+- **Structure**: JSON benzeri belgeler (BSON)
+- **Use Cases**: İçerik yönetimi, kataloglar, kullanıcı profilleri
+- **Examples**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
 #### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
-- **Örnekler**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+- **Structure**: Basit anahtar-değer çiftleri
+- **Use Cases**: Caching, session'lar, alışveriş sepetleri
+- **Examples**: Redis, DynamoDB, Riak
+- **Characteristics**: Hızlı, basit, sınırlı sorgulama
 
 #### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **Use Cases**: Big Veri, analytics, time-series
-- **Örnekler**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+- **Structure**: Family'ler halinde gruplanmış sütunlar
+- **Use Cases**: Büyük veri, analitik, time-series
+- **Examples**: Cassandra, HBase, ScyllaDB
+- **Characteristics**: Yazma odaklı, dağıtık, ölçeklenebilir
 
 #### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
-- **Örnekler**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Dil**: Cypher (Neo4j), Gremlin
+- **Structure**: Düğümler, kenarlar, özellikler
+- **Use Cases**: Sosyal ağlar, dolandırıcılık tespiti, öneriler
+- **Examples**: Neo4j, Amazon Neptune, ArangoDB
+- **Query Language**: Cypher (Neo4j), Gremlin
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested Veri
-- Distributed Sistemler
-- Real-time applications
+### NoSQL Ne Zaman Kullanılır?
+- Esnek/gelişen schema
+- Yatay ölçekleme gereksinimleri
+- Yüksek yazma hacmi
+- Hiyerarşik/iç içe veri
+- Dağıtık sistemler
+- Gerçek zamanlı uygulamalar
 
-## Veritabanı Design
+## Veritabanı Tasarımı
 
 ### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties içinde entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number içinde instances içinde relationship
+- **Entities**: Nesneler/kavramlar (Customer, Product, Order)
+- **Attributes**: Varlıkların özellikleri (name, price, date)
+- **Relationships**: Varlıklar arası bağlantılar (one-to-one, one-to-many, many-to-many)
+- **Cardinality**: İlişkideki örnek sayısı
 
 ### Schema Design Patterns
-- **Single Table Inheritance**: All types içinde one table ile type discriminator
-- **Class Table Inheritance**: Separate tables için base ve subclasses
-- **Concrete Table Inheritance**: Separate table için each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+- **Single Table Inheritance**: Tür ayracıyla tüm tiplerin tek tabloda tutulması
+- **Class Table Inheritance**: Base ve alt sınıflar için ayrı tablolar
+- **Concrete Table Inheritance**: Her somut sınıf için ayrı tablo
+- **Junction Tables**: Many-to-many ilişkileri çözme
+- **Audit Tables**: Değişiklikleri izleme (created_at, updated_at, deleted_at)
 
 ### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic Veri (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed için query
+- **B-Tree**: Varsayılan, aralık sorguları, sıralama
+- **Hash**: Tam eşleşme aramaları
+- **Bitmap**: Düşük kardinaliteli sütunlar (gender, status)
+- **Full-Text**: Metin arama yetenekleri
+- **Spatial**: Coğrafi veri (GIS)
+- **Composite**: Birleştirilmiş çoklu sütunlar
+- **Covering**: Sorgunun ihtiyaç duyduğu tüm sütunları içerir
 
 ## Query Optimization
 
 ### Execution Plans
-- Understanding how Veritabanı executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
-- Tools: EXPLAIN, EXPLAIN ANALYZE
+- Veritabanının sorguları nasıl çalıştırdığını anlamak
+- Darboğazları belirlemek (full table scan, eksik index)
+- Araçlar: EXPLAIN, EXPLAIN ANALYZE
 
 ### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types ve order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+- **Index Usage**: Sorguların uygun index'leri kullandığından emin olma
+- **Query Rewriting**: Karmaşık sorguları sadeleştirme
+- **Join Optimization**: Doğru join türlerini ve sırasını seçme
+- **Partitioning**: Büyük tabloları bölme (range, hash, list)
+- **Materialized Views**: Önceden hesaplanmış sorgu sonuçları
+- **Query Caching**: Sık kullanılan sorgu sonuçlarını saklama
 
-### Common Performans Issues
-- **N+1 Query Problem**: Fetching related Veri inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting için locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### Yaygın Performans Sorunları
+- **N+1 Query Problem**: İlişkili veriyi verimsiz şekilde çekme
+- **Missing Indexes**: Büyük tablolarda full table scan
+- **Over-indexing**: Çok fazla index nedeniyle yavaş yazma
+- **Lock Contention**: Transaction'ların lock beklemesi
+- **Inefficient Queries**: SELECT *, gereksiz join'ler
 
 ## Transactions ve Concurrency
 
 ### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed Veri visible (default içinde most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+- **READ UNCOMMITTED**: En düşük izolasyon, dirty read mümkün
+- **READ COMMITTED**: Yalnızca commit edilmiş veri görünür (çoğu DB'de varsayılan)
+- **REPEATABLE READ**: Aynı transaction içinde aynı sorgu aynı sonucu döndürür
+- **SERIALIZABLE**: En yüksek izolasyon, transaction'lar sıralı yürür
 
 ### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions içinde rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+- **Pessimistic Locking**: Erişimden önce kaynakları kilitleme
+- **Optimistic Locking**: Commit'ten önce sürüm kontrolü
+- **MVCC (Multi-Version Concurrency Control)**: Satırların birden fazla sürümünü tutma
+- **Row-Level Locking**: Belirli satırları kilitleme
+- **Table-Level Locking**: Tüm tabloyu kilitleme
 
 ### Deadlocks
-- Circular dependency where transactions wait için each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+- Transaction'ların birbirini beklediği döngüsel bağımlılık durumu
+- Önleme: Tutarlı kilit sıralaması, timeout'lar, deadlock tespiti
+- Çözüm: Bir transaction'ı iptal etme
 
 ## Replication ve Scaling
 
 ### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+- **Master-Slave**: Bir primary, birden çok read replica
+- **Master-Master**: Birden çok primary, çift yönlü çoğaltma
+- **Multi-Master**: N adet primary, çatışma çözümü gerekir
+- **Chain Replication**: Düğümler üzerinden sıralı çoğaltma
 
 ### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split Veri across servers by key/range/hash
-- **Federation**: Split by function/service
+- **Vertical Scaling**: Sunucu kaynaklarını artırma (CPU, RAM, storage)
+- **Horizontal Scaling**: Daha fazla sunucu ekleme (sharding, partitioning)
+- **Read Replicas**: Okuma trafiğini başka düğümlere aktarma
+- **Sharding**: Veriyi key/range/hash'e göre sunuculara bölme
+- **Federation**: İşleve/hizmete göre ayırma
 
 ### Consistency Models
-- **Strong Consistency**: All nodes see same Veri at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+- **Strong Consistency**: Tüm düğümler aynı anda aynı veriyi görür
+- **Eventual Consistency**: Düğümler zaman içinde yakınsar
+- **Causal Consistency**: Neden-sonuç ilişkileri korunur
+- **Read-Your-Writes**: Kullanıcı kendi güncellemelerini hemen görür
 
 ## Backup ve Recovery
 
 ### Backup Strategies
-- **Full Backup**: Tam Veritabanı copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-içinde-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+- **Full Backup**: Veritabanının tam kopyası
+- **Incremental Backup**: Son yedekten beri değişenler
+- **Differential Backup**: Son full backup'tan beri değişenler
+- **Point-in-Time Recovery**: Belirli bir ana geri dönme
+- **Continuous Backup**: Yedek ortama gerçek zamanlı çoğaltma
 
 ### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable Veri loss
-- **Disaster Recovery Plan**: Documented procedures için failures
-- **Test Etme**: Regular recovery drills
+- **RTO (Recovery Time Objective)**: Kabul edilebilir azami kesinti süresi
+- **RPO (Recovery Point Objective)**: Kabul edilebilir azami veri kaybı
+- **Disaster Recovery Plan**: Arızalar için belgelenmiş prosedürler
+- **Testing**: Düzenli kurtarma tatbikatları
 
 ## Güvenlik
 
 ### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions için easier Yönetim
-- **Principle içinde Least Privilege**: Minimum necessary access
+- **Authentication**: Kullanıcı kimliğini doğrulama
+- **Authorization**: Yetki verme (GRANT, REVOKE)
+- **Roles**: Yönetimi kolaylaştırmak için izinleri gruplama
+- **Principle of Least Privilege**: Gereken en düşük erişim seviyesi
 
-### Veri Protection
-- **Encryption at Rest**: Encrypt stored Veri
-- **Encryption içinde Transit**: TLS/SSL için connections
-- **Masking**: Hide sensitive Veri içinde non-production
-- **Tokenization**: Replace sensitive Veri ile tokens
+### Veri Koruma
+- **Encryption at Rest**: Saklanan veriyi şifreleme
+- **Encryption in Transit**: Bağlantılar için TLS/SSL
+- **Masking**: Production dışı ortamlarda hassas veriyi gizleme
+- **Tokenization**: Hassas veriyi token'larla değiştirme
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL içinde user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all Veritabanı activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+### Yaygın Açıklar
+- **SQL Injection**: Kullanıcı girdisindeki kötü amaçlı SQL
+- **Privilege Escalation**: Yetkisiz erişim elde etme
+- **Audit Logging**: Tüm veritabanı etkinliklerini izleme
+- **Compliance**: GDPR, HIPAA, PCI-DSS gereksinimleri
 
-## Modern Veritabanı Technologies
+## Modern Veritabanı Teknolojileri
 
 ### Cloud Databases
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Veritabanı, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+- **Azure**: SQL Database, Cosmos DB, Synapse
+- **Benefits**: Managed service, auto-scaling, dahil yedekleme
 
 ### NewSQL Databases
-- Combine SQL consistency ile NoSQL scalability
-- **Örnekler**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+- SQL tutarlılığını NoSQL ölçeklenebilirliğiyle birleştirir
+- **Examples**: CockroachDB, TiDB, YugabyteDB, Google Spanner
+- **Features**: Dağıtık yapı, ACID transaction'lar, yatay ölçekleme
 
 ### Time-Series Databases
-- Optimized için timestamped Veri
-- **Örnekler**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial Veri
+- Zaman damgalı veri için optimize edilmiştir
+- **Examples**: InfluxDB, TimescaleDB, Prometheus
+- **Use Cases**: IoT, izleme, finansal veri
 
 ### Vector Databases
-- Store ve query embedding vectors
-- **Örnekler**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation Sistemler, AI applications
+- Embedding vektörlerini saklar ve sorgular
+- **Examples**: Pinecone, Milvus, Weaviate, Qdrant
+- **Use Cases**: Semantic search, öneri sistemleri, AI uygulamaları
 
 ### Multi-Model Databases
-- Destek multiple Veri models içinde single system
-- **Örnekler**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
+- Tek sistem içinde birden fazla veri modelini destekler
+- **Examples**: ArangoDB, OrientDB, Azure Cosmos DB
+- **Benefit**: Birden fazla veritabanı olmadan esneklik
 
-## ORMs ve Veri Access
+## ORMs ve Veri Erişimi
 
 ### Object-Relational Mapping
-- **Purpose**: Map Veritabanı tables to programming objects
+- **Purpose**: Veritabanı tablolarını programlama nesnelerine eşleme
 - **Popular ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
@@ -274,41 +267,41 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration Yönetim
-- Query building APIs
+### Faydalar
+- SQL'den soyutlama
+- Tür güvenliği
+- Migration yönetimi
+- Query building API'leri
 
-### Drawbacks
-- Performans overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
+### Dezavantajlar
+- Performans ek yükü
+- Karmaşık sorguların daha zor yazılması
+- N+1 query problemleri
+- Öğrenme eğrisi
 
-## Veritabanı Administration
+## Veritabanı Yönetimi
 
-### DBA Responsibilities
-- Installation ve configuration
-- Performans tuning
-- Backup ve recovery
-- Güvenlik Yönetim
-- Capacity planning
-- Monitoring ve alerting
-- Patch Yönetim
+### DBA Sorumlulukları
+- Kurulum ve yapılandırma
+- Performans ayarı
+- Yedekleme ve kurtarma
+- Güvenlik yönetimi
+- Kapasite planlama
+- İzleme ve uyarı yönetimi
+- Yama yönetimi
 
 ### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
+- Sorgu yanıt süresi
+- Throughput (saniye başına transaction)
+- Bağlantı sayısı
 - Cache hit ratio
 - Disk I/O
-- Lock wait time
-- Replication lag
+- Lock bekleme süresi
+- Replication gecikmesi
 
 ### Maintenance Tasks
-- **Vacuum/Analyze**: Update İstatistikler, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **İstatistikler Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+- **Vacuum/Analyze**: İstatistikleri güncelleme, alan geri kazanımı
+- **Index Rebuilding**: Index parçalanmasını giderme
+- **Statistics Updates**: Sorgu optimizer'ını güncel tutma
+- **Log Rotation**: Log dosyası boyutlarını yönetme
+- **Capacity Planning**: Büyümeyi öngörme, yükseltmeleri planlama

@@ -1,875 +1,868 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: dictionary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Dicionário de Inglês — Definições de Palavras Comuns
 
-# Inglês Dicionário — Common Word Definitions
-
-A Referência list de frequently used Inglês words e their meanings,
-covering everyday vocabulary, academic terms, e words commonly encountered
-em questions e discussions.
+Uma lista de referência de palavras inglesas frequentemente usadas e seus significados,
+abrangendo vocabulário do dia a dia, termos acadêmicos e palavras comumente encontradas
+em perguntas e discussões.
 
 ---
 
 ## A
 
-**abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — o/a power or skill to do something.
-**abstract** — existing as a concept rather than a concrete thing; a summary de a document.
-**accurate** — correct e precise; free from errors.
-**achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit o/a truth de something; to show recognition.
-**acquire** — to obtain or gain something, usually through effort or purchase.
-**adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough para a purpose.
-**adjacent** — next to or adjoining something else.
-**adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead de o/a current time.
-**advantage** — a condition that gives a favourable position over others.
-**adverse** — unfavourable; harmful.
-**affect** — to have an impact on something (verb); emotion (noun, formal).
-**aggregate** — a whole formed by combining several elements.
-**algorithm** — a set de rules or steps para solving a problem or task.
-**allocate** — to assign resources para a particular purpose.
-**alter** — to change something, usually partially.
-**ambiguous** — unclear; can be interpreted em more than one way.
-**analyse** — to examine em detail to understand or explain.
-**annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare para something before it happens.
-**apparent** — clearly visible or understood; seeming to be true.
-**approach** — a way de dealing com something; to come near.
-**approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge o/a quality, value, or Natureza de something.
-**assign** — to give a task or role to someone; to allocate.
-**assume** — to accept something as true without proof.
-**attribute** — a quality or feature; to credit something to a cause (verb).
-**automate** — to make a process operate automatically without human intervention.
+**abandon** — deixar para trás permanentemente; desistir de um objetivo ou lugar.
+**ability** — a capacidade ou habilidade de fazer algo.
+**abstract** — existente como conceito em vez de algo concreto; um resumo de um documento.
+**accurate** — correto e preciso; livre de erros.
+**achieve** — alcançar com sucesso um objetivo por meio de esforço.
+**acknowledge** — aceitar ou admitir a verdade de algo; demonstrar reconhecimento.
+**acquire** — obter ou adquirir algo, geralmente por esforço ou compra.
+**adapt** — ajustar-se a novas condições ou exigências.
+**adequate** — satisfatório; suficiente para um propósito.
+**adjacent** — ao lado de ou contíguo a outra coisa.
+**adjust** — fazer pequenas mudanças para melhorar o encaixe ou o funcionamento.
+**advance** — avançar; progredir; também, adiantado em relação ao tempo atual.
+**advantage** — uma condição que proporciona posição favorável em relação aos outros.
+**adverse** — desfavorável; prejudicial.
+**affect** — causar impacto em algo (verbo); emoção (substantivo, formal).
+**aggregate** — um todo formado pela combinação de vários elementos.
+**algorithm** — um conjunto de regras ou etapas para resolver um problema ou tarefa.
+**allocate** — destinar recursos para um propósito específico.
+**alter** — modificar algo, geralmente de forma parcial.
+**ambiguous** — incerto; passível de mais de uma interpretação.
+**analyse** — examinar em detalhe para compreender ou explicar.
+**annotate** — adicionar notas explicativas a um texto ou diagrama.
+**anticipate** — esperar ou preparar-se para algo antes que aconteça.
+**apparent** — claramente visível ou compreendido; aparentemente verdadeiro.
+**approach** — uma maneira de lidar com algo; aproximar-se.
+**approximate** — quase correto; não exato.
+**assess** — avaliar ou julgar a qualidade, o valor ou a natureza de algo.
+**assign** — atribuir uma tarefa ou função a alguém; alocar.
+**assume** — aceitar algo como verdadeiro sem prova.
+**attribute** — uma qualidade ou característica; atribuir algo a uma causa (verbo).
+**automate** — fazer um processo operar automaticamente, sem intervenção humana.
 
 ## B
 
-**benefit** — an advantage or positive outcome.
-**bias** — an unfair preference para or against something; systematic error.
-**brief** — short em time or length; a summary or instructions.
+**benefit** — uma vantagem ou resultado positivo.
+**bias** — uma preferência injusta a favor de ou contra algo; erro sistemático.
+**brief** — curto em tempo ou extensão; um resumo ou instruções.
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having o/a ability or qualities needed para something.
-**capacity** — o/a maximum amount something can hold or do.
-**categorise** — to place into groups based on shared characteristics.
-**clarify** — to make something easier to understand.
-**classify** — to arrange into categories or groups.
-**coherent** — logical e consistent; easy to understand.
-**collaborate** — to work together com others towards a common goal.
-**compile** — to gather e organise information; to convert source code into executable code.
-**complex** — consisting de many interconnected parts; not simple.
-**component** — a part or element de a larger whole.
-**comprehend** — to understand fully.
-**compute** — to calculate or process Dados.
-**concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or finish something.
-**condition** — a requirement; a state de being; circumstances.
-**configure** — to arrange or set up a system em a particular way.
-**confirm** — to establish o/a truth or accuracy de something.
-**conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving em o/a same way; not contradictory.
-**context** — o/a circumstances surrounding something; background information.
-**contrast** — to compare em order to show differences.
-**convert** — to change from one form, unit, or use to another.
-**coordinate** — to organise different elements to work together.
-**criteria** — standards by which something is judged (plural de criterion).
+**calculate** — determinar um valor usando matemática.
+**capable** — que possui a capacidade ou as qualidades necessárias para algo.
+**capacity** — a quantidade máxima que algo pode conter ou realizar.
+**categorise** — colocar em grupos com base em características compartilhadas.
+**clarify** — tornar algo mais fácil de entender.
+**classify** — organizar em categorias ou grupos.
+**coherent** — lógico e consistente; fácil de entender.
+**collaborate** — trabalhar em conjunto com outros em direção a um objetivo comum.
+**compile** — reunir e organizar informações; converter código-fonte em código executável.
+**complex** — composto por muitas partes interligadas; não simples.
+**component** — uma parte ou elemento de um todo maior.
+**comprehend** — compreender plenamente.
+**compute** — calcular ou processar dados.
+**concept** — uma ideia abstrata ou noção geral.
+**conclude** — chegar a uma decisão ou finalizar algo.
+**condition** — uma exigência; um estado de ser; circunstâncias.
+**configure** — organizar ou configurar um sistema de uma determinada maneira.
+**confirm** — estabelecer a verdade ou a precisão de algo.
+**conflict** — um desacordo sério; um choque entre forças opostas.
+**consistent** — que se comporta sempre da mesma forma; não contraditório.
+**context** — as circunstâncias que cercam algo; informações de contexto.
+**contrast** — comparar para mostrar diferenças.
+**convert** — mudar de uma forma, unidade ou uso para outro.
+**coordinate** — organizar diferentes elementos para que trabalhem em conjunto.
+**criteria** — padrões pelos quais algo é julgado (plural de criterion).
 
 ## D
 
-**Dados** — facts e Estatísticas collected para analysis.
-**debug** — to find e fix errors em computer code.
-**define** — to give o/a meaning de a word or describe o/a limits de something.
-**demonstrate** — to show how something works or is done.
-**deploy** — to put into use; to install e run software em a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
-**determine** — to find out or establish something conclusively.
-**develop** — to build, grow, or make something more elaborate over time.
-**differ** — to be unlike; to disagree.
-**distinct** — clearly different e separate.
-**distribute** — to spread or share across multiple locations or people.
-**domain** — a field de knowledge or activity; a Web address.
-**duplicate** — an exact copy; to copy something.
+**data** — fatos e estatísticas coletados para análise.
+**debug** — encontrar e corrigir erros em código de computador.
+**define** — dar o significado de uma palavra ou descrever os limites de algo.
+**demonstrate** — mostrar como algo funciona ou é feito.
+**deploy** — colocar em uso; instalar e executar software em um ambiente de produção.
+**derive** — obter algo de uma fonte; chegar a uma conclusão por raciocínio.
+**determine** — descobrir ou estabelecer algo de forma conclusiva.
+**develop** — construir, ampliar ou tornar algo mais elaborado ao longo do tempo.
+**differ** — ser diferente; discordar.
+**distinct** — claramente diferente e separado.
+**distribute** — espalhar ou compartilhar entre vários locais ou pessoas.
+**domain** — um campo de conhecimento ou atividade; um endereço web.
+**duplicate** — uma cópia exata; copiar algo.
 
 ## E
 
-**efficient** — achieving results com minimum waste de time or resources.
-**element** — a basic component; one de o/a chemical substances em o/a periodic table.
-**embed** — to fix firmly within; to incorporate into a larger structure.
-**enable** — to make possible; to activate a feature.
-**enhance** — to improve o/a quality or value de something.
-**entity** — a thing com distinct existence; an object em a system.
-**enumerate** — to list items one by one; to count.
-**environment** — surroundings; em Computação, o/a system e configuration em which software runs.
-**error** — a mistake; a deviation from correct behaviour.
-**estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to form an opinion after careful consideration.
-**execute** — to carry out a plan or instruction; to run a computer program.
-**explicit** — clearly stated e leaving nothing implied.
-**extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtain from a source.
+**efficient** — alcançar resultados com o mínimo desperdício de tempo ou recursos.
+**element** — um componente básico; uma das substâncias químicas da tabela periódica.
+**embed** — fixar firmemente dentro de algo; incorporar a uma estrutura maior.
+**enable** — tornar possível; ativar um recurso.
+**enhance** — melhorar a qualidade ou o valor de algo.
+**entity** — algo com existência distinta; um objeto em um sistema.
+**enumerate** — listar itens um a um; contar.
+**environment** — ambiente; em computação, o sistema e a configuração em que o software é executado.
+**error** — um erro; um desvio do comportamento correto.
+**estimate** — um cálculo aproximado; avaliar de forma aproximada.
+**evaluate** — formar uma opinião após análise cuidadosa.
+**execute** — realizar um plano ou instrução; executar um programa de computador.
+**explicit** — claramente declarado e sem deixar nada implícito.
+**extend** — tornar mais longo ou maior; adicionar funcionalidade.
+**extract** — retirar ou obter de uma fonte.
 
 ## F
 
-**factor** — an element that contributes to a result; to break into components (math).
-**feature** — a distinctive aspect or capability.
-**filter** — to remove unwanted elements; a device or function that selects items.
-**flexible** — able to adapt to different conditions.
-**format** — o/a arrangement or layout de Dados; to prepare para use.
-**framework** — a basic structure providing Suporte para building something.
-**function** — o/a purpose de something; a reusable block de code (programming).
-**fundamental** — forming o/a base or foundation; essential.
+**factor** — um elemento que contribui para um resultado; decompor em componentes (matemática).
+**feature** — um aspecto distintivo ou funcionalidade.
+**filter** — remover elementos indesejados; um dispositivo ou função que seleciona itens.
+**flexible** — capaz de se adaptar a diferentes condições.
+**format** — a organização ou o layout de dados; preparar para uso.
+**framework** — uma estrutura básica que oferece suporte para construir algo.
+**function** — a finalidade de algo; um bloco reutilizável de código (programação).
+**fundamental** — que forma a base ou o alicerce; essencial.
 
 ## G
 
-**generate** — to produce or create.
-**global** — relating to o/a whole world; applying to an entire system.
-**guideline** — a general rule or recommendation.
+**generate** — produzir ou criar.
+**global** — relativo ao mundo inteiro; aplicável a um sistema inteiro.
+**guideline** — uma regra geral ou recomendação.
 
 ## H
 
-**hierarchy** — a system ranked by levels de authority or importance.
-**hypothesis** — a proposed explanation that can be tested.
+**hierarchy** — um sistema organizado por níveis de autoridade ou importância.
+**hypothesis** — uma explicação proposta que pode ser testada.
 
 ## I
 
-**identify** — to recognise e name something.
-**implement** — to put a plan or system into effect.
-**implicit** — implied without being directly stated.
-**index** — a pointer to Dados location; an alphabetical list (noun); to categorise (verb).
-**infer** — to reach a conclusion from evidence without explicit statement.
-**initialise** — to set a variable or system to a starting state.
-**input** — Dados provided to a system; to enter Dados.
-**integrate** — to combine parts into a whole; to add a feature to an existing system.
-**interface** — a point where two Sistemas meet e interact; a contract em programming.
-**interpret** — to explain o/a meaning de something; to execute code line by line.
-**iterate** — to repeat a process, often com incremental changes.
+**identify** — reconhecer e nomear algo.
+**implement** — colocar um plano ou sistema em prática.
+**implicit** — implícito, sem ser afirmado diretamente.
+**index** — um indicador da localização de dados; uma lista alfabética (substantivo); categorizar (verbo).
+**infer** — chegar a uma conclusão a partir de evidências sem declaração explícita.
+**initialise** — definir uma variável ou sistema em um estado inicial.
+**input** — dados fornecidos a um sistema; inserir dados.
+**integrate** — combinar partes em um todo; adicionar um recurso a um sistema existente.
+**interface** — um ponto em que dois sistemas se encontram e interagem; um contrato em programação.
+**interpret** — explicar o significado de algo; executar código linha por linha.
+**iterate** — repetir um processo, frequentemente com mudanças incrementais.
 
 ## J
 
-**justify** — to give reasons para a decision; to align text along a margin.
+**justify** — apresentar razões para uma decisão; alinhar texto a uma margem.
 
 ## K
 
-**key** — essential; a value used to look up Dados; a cryptographic secret.
+**key** — essencial; um valor usado para localizar dados; um segredo criptográfico.
 
 ## L
 
-**layer** — a level em a hierarchy; a component stacked on others.
-**legacy** — inherited from o/a past; old software still em use.
-**limit** — a boundary; o/a maximum or minimum value allowed.
-**linear** — arranged em a straight line; proportional increase.
-**link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; em Computação, running on o/a same machine.
-**logic** — reasoning according to rules; o/a flow de control em a program.
+**layer** — um nível em uma hierarquia; um componente empilhado sobre outros.
+**legacy** — herdado do passado; software antigo ainda em uso.
+**limit** — um limite; o valor máximo ou mínimo permitido.
+**linear** — disposto em linha reta; aumento proporcional.
+**link** — uma conexão entre duas coisas; um hiperlink.
+**local** — relativo a uma área próxima; em computação, executado na mesma máquina.
+**logic** — raciocínio segundo regras; o fluxo de controle em um programa.
 
 ## M
 
-**maintain** — to keep em good condition; to continue over time.
-**manipulate** — to handle or control, sometimes com skill; to influence unfairly.
-**map** — to associate keys com values (Dados structure); to show spatial relationships.
-**merge** — to combine into one; to join code branches.
-**method** — a way de doing something; a function attached to an object (OOP).
-**migrate** — to move Dados or Sistemas from one environment to another.
-**model** — a representation de something; a trained AI system.
-**modify** — to change partially.
-**monitor** — to observe e check over time; a display screen.
+**maintain** — manter em bom estado; continuar ao longo do tempo.
+**manipulate** — manusear ou controlar, às vezes com habilidade; influenciar de forma injusta.
+**map** — associar chaves a valores (estrutura de dados); mostrar relações espaciais.
+**merge** — combinar em um só; unir ramificações de código.
+**method** — uma forma de fazer algo; uma função associada a um objeto (POO).
+**migrate** — mover dados ou sistemas de um ambiente para outro.
+**model** — uma representação de algo; um sistema de IA treinado.
+**modify** — alterar parcialmente.
+**monitor** — observar e verificar ao longo do tempo; uma tela de exibição.
 
 ## N
 
-**navigate** — to find a path through; to move between pages or screens.
-**node** — a point em a Rede or tree structure.
-**normalise** — to scale values to a standard range; to reduce redundancy em a Banco de dados.
+**navigate** — encontrar um caminho por algo; mover-se entre páginas ou telas.
+**node** — um ponto em uma rede ou estrutura em árvore.
+**normalise** — escalar valores para uma faixa padrão; reduzir redundância em um banco de dados.
 
 ## O
 
-**objective** — a goal or aim; not influenced by personal feelings (adjective).
-**obtain** — to get or acquire.
-**optimise** — to make as effective or efficient as possible.
-**output** — Dados produced by a system; o/a result de a computation.
-**override** — to take control over an existing setting or method.
+**objective** — uma meta ou objetivo; não influenciado por sentimentos pessoais (adjetivo).
+**obtain** — obter ou adquirir.
+**optimise** — tornar o mais eficaz ou eficiente possível.
+**output** — dados produzidos por um sistema; o resultado de um cálculo.
+**override** — assumir o controle sobre uma configuração ou método existente.
 
 ## P
 
-**parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text into components; to interpret structured Dados.
-**pattern** — a repeated arrangement; a template para solving a common problem.
-**persist** — to continue to exist; to save Dados so it survives restarts.
-**pipeline** — a series de connected stages where o/a output de one feeds o/a next.
-**precise** — exact; accurate to fine detail.
-**predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance e address o/a most important first.
-**process** — a series de steps; a running program instance (verb: to handle or transform).
-**prompt** — a cue or instruction given to an AI model or user.
-**property** — a characteristic or attribute; a value belonging to an object.
-**protocol** — a set de rules para Comunicação between Sistemas.
+**parameter** — um valor passado a uma função; uma característica mensurável.
+**parse** — analisar texto em componentes; interpretar dados estruturados.
+**pattern** — um arranjo repetido; um modelo para resolver um problema comum.
+**persist** — continuar a existir; salvar dados para que sobrevivam a reinicializações.
+**pipeline** — uma série de etapas conectadas em que a saída de uma alimenta a seguinte.
+**precise** — exato; preciso em detalhes finos.
+**predict** — dizer o que acontecerá antes que aconteça.
+**prioritise** — classificar tarefas por importância e tratar primeiro as mais importantes.
+**process** — uma série de etapas; uma instância de programa em execução (verbo: tratar ou transformar).
+**prompt** — uma instrução ou comando dado a um modelo de IA ou a um usuário.
+**property** — uma característica ou atributo; um valor pertencente a um objeto.
+**protocol** — um conjunto de regras para comunicação entre sistemas.
 
 ## Q
 
-**query** — a request para information from a Banco de dados; a question.
-**queue** — a line de items waiting to be processed (first em, first out).
+**query** — uma solicitação de informação a um banco de dados; uma pergunta.
+**queue** — uma fila de itens aguardando processamento (primeiro a entrar, primeiro a sair).
 
 ## R
 
-**recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates existing functionality; extra para backup.
-**refactor** — to restructure existing code without changing its external behaviour.
-**Referência** — a pointer to a value; a source cited para information.
-**relevant** — closely connected to o/a topic at hand.
-**render** — to produce output (graphics, text, or HTML).
-**represent** — to stand para or describe something.
-**requirement** — a necessary condition or feature.
-**resolve** — to find a solution; to determine a value (e.g. a DNS name).
-**retrieve** — to get back stored information.
-**robust** — strong e reliable, especially under stress.
+**recursive** — uma função ou processo que chama ou faz referência a si mesmo.
+**redundant** — desnecessário porque duplica funcionalidade existente; extra para backup.
+**refactor** — reestruturar código existente sem alterar seu comportamento externo.
+**reference** — um ponteiro para um valor; uma fonte citada como informação.
+**relevant** — estreitamente relacionado ao tema em questão.
+**render** — produzir saída (gráficos, texto ou HTML).
+**represent** — representar ou descrever algo.
+**requirement** — uma condição ou funcionalidade necessária.
+**resolve** — encontrar uma solução; determinar um valor (por exemplo, um nome DNS).
+**retrieve** — recuperar informações armazenadas.
+**robust** — forte e confiável, especialmente sob pressão.
 
 ## S
 
-**scalable** — able to handle increased workload without degrading Desempenho.
-**schema** — o/a structure or layout de a Banco de dados or Dados format.
-**scope** — o/a range de effect; o/a section de code where a variable is visible.
-**segment** — a distinct section or part.
-**semantic** — relating to meaning, especially em Idioma or code.
-**sequence** — a set de things em a particular order.
-**session** — a period de activity; a connection between client e server.
-**simulate** — to imitate o/a behaviour de a system.
-**source** — o/a origin de something; original code before compilation.
-**specify** — to state clearly e em detail.
-**static** — not changing; em Computação, fixed at compile time or not associated com instances.
-**store** — to save Dados para later use.
-**structure** — o/a arrangement de parts; a composite Dados type.
-**summarise** — to give a brief statement de o/a main points.
-**synchronise** — to cause to happen at o/a same time or rate.
-**Sintaxe** — o/a rules governing o/a structure de statements em a Idioma.
+**scalable** — capaz de lidar com aumento de carga sem perder desempenho.
+**schema** — a estrutura ou o layout de um banco de dados ou formato de dados.
+**scope** — o alcance de efeito; a seção de código em que uma variável é visível.
+**segment** — uma seção ou parte distinta.
+**semantic** — relativo ao significado, especialmente em linguagem ou código.
+**sequence** — um conjunto de coisas em uma ordem específica.
+**session** — um período de atividade; uma conexão entre cliente e servidor.
+**simulate** — imitar o comportamento de um sistema.
+**source** — a origem de algo; código original antes da compilação.
+**specify** — declarar com clareza e em detalhe.
+**static** — que não muda; em computação, fixo em tempo de compilação ou não associado a instâncias.
+**store** — salvar dados para uso posterior.
+**structure** — a organização das partes; um tipo de dado composto.
+**summarise** — apresentar uma declaração breve dos pontos principais.
+**synchronise** — fazer com que ocorra ao mesmo tempo ou na mesma taxa.
+**syntax** — as regras que governam a estrutura de instruções em uma linguagem.
 
 ## T
 
-**template** — a model or pattern used as a starting point.
-**threshold** — a level or point that triggers an action when reached.
-**token** — a unit de text em NLP; an authentication credential.
-**trace** — to follow a path; a record de program execution para debugging.
-**transform** — to change em form, Natureza, or appearance.
-**transmit** — to send Dados from one place to another.
+**template** — um modelo ou padrão usado como ponto de partida.
+**threshold** — um nível ou ponto que aciona uma ação quando alcançado.
+**token** — uma unidade de texto em PLN; uma credencial de autenticação.
+**trace** — seguir um caminho; um registro da execução de um programa para depuração.
+**transform** — mudar de forma, natureza ou aparência.
+**transmit** — enviar dados de um lugar para outro.
 
 ## U
 
-**uniform** — consistent e unchanged throughout.
-**unique** — o/a only one de its kind; occurring just once.
-**update** — to bring to a more current state.
-**utilise** — to make use de something.
+**uniform** — consistente e inalterado em toda a extensão.
+**unique** — o único do seu tipo; que ocorre apenas uma vez.
+**update** — trazer para um estado mais atual.
+**utilise** — fazer uso de algo.
 
 ## V
 
-**validate** — to confirm something meets requirements or is correct.
-**variable** — a named container para a value that can change.
-**verify** — to check correctness or truth.
-**version** — a specific form de a product at a particular point em its Desenvolvimento.
+**validate** — confirmar que algo atende aos requisitos ou está correto.
+**variable** — um contêiner nomeado para um valor que pode mudar.
+**verify** — verificar a correção ou a veracidade.
+**version** — uma forma específica de um produto em determinado ponto de seu desenvolvimento.
 
 ## W
 
-**workflow** — a series de steps followed to Completo a task.
-**warrant** — justification para an action; a Jurídico document authorizing something.
+**workflow** — uma série de etapas seguidas para concluir uma tarefa.
+**warrant** — justificativa para uma ação; um documento legal que autoriza algo.
 
 ## X
 
-**xenophobia** — fear or hatred de foreigners or strangers.
+**xenophobia** — medo ou ódio de estrangeiros ou estranhos.
 
 ## Y
 
-**yield** — to produce or provide; to give way; o/a amount produced.
+**yield** — produzir ou fornecer; ceder passagem; a quantidade produzida.
 
 ## Z
 
-**zero-sum** — a situation where one person's gain equals another's loss.
-**zone** — an area com distinct characteristics or boundaries.
+**zero-sum** — uma situação em que o ganho de uma pessoa equivale à perda de outra.
+**zone** — uma área com características ou limites distintos.
 
 ---
 
-## Additional Technical Terms
+## Termos Técnicos Adicionais
 
-**abstraction** — hiding complex implementation details while showing only essential features.
-**acronym** — a word formed from initial letters de a phrase (e.g., NASA, ASCII).
-**adjective** — a word describing a noun or pronoun.
-**adverb** — a word modifying a verb, adjective, or other adverb, often ending em -ly.
-**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
-**agile** — a software Desenvolvimento methodology emphasizing iterative progress e flexibility.
-**analogy** — a comparison between two things to explain or clarify.
-**antonym** — a word opposite em meaning to another word.
-**aphorism** — a concise statement expressing a general truth or principle.
-**apocryphal** — de doubtful authenticity; widely circulated but likely false.
-**archetype** — an original model or typical example de something.
-**artifact** — an object made by humans; em Computação, an unintended byproduct de processing.
-**assertion** — a confident statement; em programming, a check that a condition is true.
-**asynchronous** — not occurring at o/a same time; allowing operations to proceed without waiting.
-**attenuate** — to reduce em force, value, or intensity.
-**axiom** — a statement accepted as true without proof; a fundamental principle.
+**abstraction** — ocultar detalhes complexos de implementação enquanto mostra apenas os recursos essenciais.
+**acronym** — uma palavra formada pelas letras iniciais de uma expressão (por exemplo, NASA, ASCII).
+**adjective** — uma palavra que descreve um substantivo ou pronome.
+**adverb** — uma palavra que modifica um verbo, adjetivo ou outro advérbio, frequentemente terminada em -ly.
+**affix** — um morfema adicionado à raiz de uma palavra (prefixo no início, sufixo no fim).
+**agile** — uma metodologia de desenvolvimento de software que enfatiza progresso iterativo e flexibilidade.
+**analogy** — uma comparação entre duas coisas para explicar ou esclarecer.
+**antonym** — uma palavra com significado oposto ao de outra.
+**aphorism** — uma afirmação concisa que expressa uma verdade geral ou princípio.
+**apocryphal** — de autenticidade duvidosa; amplamente difundido, mas provavelmente falso.
+**archetype** — um modelo original ou exemplo típico de algo.
+**artifact** — um objeto feito por humanos; em computação, um subproduto não intencional do processamento.
+**assertion** — uma afirmação confiante; em programação, uma verificação de que uma condição é verdadeira.
+**asynchronous** — que não ocorre ao mesmo tempo; que permite que operações prossigam sem esperar.
+**attenuate** — reduzir em força, valor ou intensidade.
+**axiom** — uma afirmação aceita como verdadeira sem prova; um princípio fundamental.
 
-**backpropagation** — an algorithm para training Redes neurais by propagating errors backward.
-**bandwidth** — o/a range de frequencies Disponível; Dados transfer capacity.
-**binary** — consisting de two parts; base-2 number system using 0s e 1s.
-**bit** — o/a smallest unit de Dados (0 or 1); short para binary digit.
-**blockchain** — a distributed ledger Tecnologia recording transactions across multiple computers.
-**boolean** — relating to logic com values true or false; named after George Boole.
-**bottleneck** — a point de congestion slowing down a process or system.
-**byte** — a unit de digital information typically consisting de 8 bits.
+**backpropagation** — um algoritmo para treinar redes neurais propagando erros para trás.
+**bandwidth** — a faixa de frequências disponível; capacidade de transferência de dados.
+**binary** — composto por duas partes; sistema numérico de base 2 que usa 0 e 1.
+**bit** — a menor unidade de dados (0 ou 1); abreviação de binary digit.
+**blockchain** — uma tecnologia de registro distribuído que registra transações em vários computadores.
+**boolean** — relativo à lógica com valores verdadeiro ou falso; nomeado em homenagem a George Boole.
+**bottleneck** — um ponto de congestionamento que desacelera um processo ou sistema.
+**byte** — uma unidade de informação digital que normalmente consiste em 8 bits.
 
-**cache** — a hardware or software component storing Dados para faster Futuro access.
-**calibrate** — to adjust precisely para accurate measurement or Desempenho.
-**cascade** — a series de stages where each triggers o/a next; waterfall effect.
-**catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — o/a relationship between cause e effect.
-**centroid** — o/a geometric center de a shape; average position de points.
-**checksum** — a value computed from Dados to detect errors or tampering.
-**cipher** — an algorithm para encryption or decryption; a secret code.
-**coalesce** — to come together to form one whole.
-**cognitive** — relating to mental processes de perception, memory, judgment, e reasoning.
-**cohort** — a group sharing a common characteristic or experience within a defined period.
-**collateral** — assets pledged as Segurança para a loan; secondary or accompanying.
-**colloquial** — informal Idioma used em ordinary conversation.
-**combinatorics** — o/a branch de mathematics dealing com combinations e permutations.
-**commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happening during overlapping periods.
-**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
-**conjunction** — a word connecting clauses or sentences (e, but, or); logical e operator.
-**consensus** — general agreement among a group.
-**constraint** — a limitation or restriction on what is possible.
-**corollary** — a proposition following from one already proved.
-**correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
-**crystalize** — to form into crystals; to make clear or definite.
+**cache** — um componente de hardware ou software que armazena dados para acesso futuro mais rápido.
+**calibrate** — ajustar com precisão para medição ou desempenho exatos.
+**cascade** — uma série de etapas em que cada uma aciona a seguinte; efeito cascata.
+**catalyst** — uma substância que acelera uma reação química; qualquer coisa que provoque mudança.
+**causality** — a relação entre causa e efeito.
+**centroid** — o centro geométrico de uma forma; a posição média de pontos.
+**checksum** — um valor calculado a partir de dados para detectar erros ou adulteração.
+**cipher** — um algoritmo de criptografia ou descriptografia; um código secreto.
+**coalesce** — reunir-se para formar um todo único.
+**cognitive** — relativo a processos mentais de percepção, memória, julgamento e raciocínio.
+**cohort** — um grupo que compartilha uma característica ou experiência comum dentro de um período definido.
+**collateral** — ativos dados como garantia de um empréstimo; secundário ou acompanhante.
+**colloquial** — linguagem informal usada na conversa cotidiana.
+**combinatorics** — o ramo da matemática que trata de combinações e permutações.
+**commutative** — uma propriedade em que a ordem não importa (a+b = b+a).
+**concurrency** — múltiplos cálculos acontecendo em períodos sobrepostos.
+**conjecture** — uma conclusão formada com informação incompleta; uma hipótese matemática.
+**conjunction** — uma palavra que liga orações ou frases (and, but, or); operador lógico AND.
+**consensus** — acordo geral entre um grupo.
+**constraint** — uma limitação ou restrição sobre o que é possível.
+**corollary** — uma proposição que decorre de outra já provada.
+**correlation** — uma relação mútua entre duas variáveis; não implica causalidade.
+**cryptocurrency** — uma moeda digital protegida por criptografia, frequentemente descentralizada.
+**crystalize** — formar cristais; tornar claro ou definido.
 
-**daisy-chain** — to connect devices or tasks em a sequential series.
-**deconvolution** — reversing convolution; separating mixed signals or images.
-**deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — o/a act de throwing someone out de a window.
-**deictic** — referring to something by pointing (this, that, here, there).
-**demographic** — statistical Dados about populations or groups.
-**denotation** — o/a literal or primary meaning de a word.
-**deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure de rate de change (calculus); derived from something else.
-**deterministic** — producing o/a same output given o/a same input; predictable.
-**diachronic** — studying phenomena as they change over time.
-**didactic** — intended to teach, particularly com moral instruction.
-**diffraction** — o/a bending de waves around obstacles or through openings.
-**digraph** — two characters representing one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make something clearer.
-**discrete** — separate e distinct; individual (opposite de continuous).
-**disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — o/a process de separating or moving apart.
-**docstring** — documentation embedded em source code explaining function purpose.
+**daisy-chain** — conectar dispositivos ou tarefas em uma série sequencial.
+**deconvolution** — reversão da convolução; separação de sinais ou imagens misturados.
+**deduction** — raciocínio que vai de princípios gerais a conclusões específicas.
+**defenestration** — o ato de atirar alguém para fora de uma janela.
+**deictic** — que se refere a algo por apontamento (this, that, here, there).
+**demographic** — dados estatísticos sobre populações ou grupos.
+**denotation** — o significado literal ou principal de uma palavra.
+**deprecated** — marcado como obsoleto, mas ainda funcional; desencorajado para uso.
+**derivative** — uma medida da taxa de variação (cálculo); derivado de outra coisa.
+**deterministic** — que produz a mesma saída dada a mesma entrada; previsível.
+**diachronic** — que estuda fenômenos à medida que mudam ao longo do tempo.
+**didactic** — destinado a ensinar, especialmente com instrução moral.
+**diffraction** — a curvatura de ondas em torno de obstáculos ou através de aberturas.
+**digraph** — dois caracteres que representam um único som (sh, ch, th).
+**disambiguate** — remover ambiguidade; tornar algo mais claro.
+**discrete** — separado e distinto; individual (o oposto de contínuo).
+**disjunctive** — que apresenta alternativas; operação lógica OR.
+**divergence** — o processo de separação ou afastamento.
+**docstring** — documentação embutida no código-fonte que explica a finalidade de uma função.
 
-**eccentric** — unconventional or slightly strange; off-center.
-**eclectic** — selecting from diverse sources or styles.
-**edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament para o/a dead.
-**elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission de words; three dots (...) indicating continuation or pause.
-**embargo** — an official ban on trade or publication.
-**empathy** — o/a ability to understand e share others' feelings.
-**empirical** — based on observation or experience rather than theory.
-**emulate** — to imitate or match, especially em Computação (software emulation).
-**endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — lasting para a very short time; temporary.
-**epistemology** — o/a study de knowledge, its Natureza e scope.
-**epoch** — a significant period em História; em ML, one pass through training Dados.
-**equilibrium** — a state de balance between opposing forces.
-**equivocate** — to use ambiguous Idioma to conceal o/a truth.
-**ergodic** — having statistical properties uniform throughout; random yet representative.
-**esoteric** — intended para or understood by a small, specialized group.
-**ethnography** — o/a systematic study de people e cultures through observation.
-**etymology** — o/a study de word origins e historical Desenvolvimento.
-**euphemism** — a mild expression substituting para a harsh or unpleasant one.
-**evanescent** — fleeting; vanishing like vapor.
-**exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certain goods.
-**existential** — relating to existence; concerning human freedom e choice.
-**exogenous** — originating from external factors.
-**expedite** — to make happen sooner; accelerate.
-**exponential** — involving exponentiation; growth accelerating over time.
-**extrapolate** — to estimate beyond known Dados by extending trends.
+**eccentric** — incomum ou ligeiramente estranho; fora do centro.
+**eclectic** — que seleciona de fontes ou estilos diversos.
+**edge case** — um cenário extremo ou raro que exige tratamento especial.
+**elegy** — um poema triste ou lamento pelos mortos.
+**elide** — omitir ou suprimir sons ou sílabas.
+**ellipsis** — omissão de palavras; três pontos (...) que indicam continuação ou pausa.
+**embargo** — uma proibição oficial de comércio ou publicação.
+**empathy** — a capacidade de compreender e compartilhar os sentimentos de outras pessoas.
+**empirical** — baseado em observação ou experiência, e não em teoria.
+**emulate** — imitar ou igualar, especialmente em computação (emulação de software).
+**endemic** — nativo ou restrito a uma região específica; constantemente presente.
+**ephemeral** — que dura por muito pouco tempo; temporário.
+**epistemology** — o estudo do conhecimento, sua natureza e seu alcance.
+**epoch** — um período significativo na história; em ML, uma passagem pelos dados de treinamento.
+**equilibrium** — um estado de equilíbrio entre forças opostas.
+**equivocate** — usar linguagem ambígua para ocultar a verdade.
+**ergodic** — que possui propriedades estatísticas uniformes em toda parte; aleatório, mas representativo.
+**esoteric** — destinado a ou compreendido por um grupo pequeno e especializado.
+**ethnography** — o estudo sistemático de pessoas e culturas por meio de observação.
+**etymology** — o estudo da origem das palavras e de seu desenvolvimento histórico.
+**euphemism** — uma expressão suave que substitui outra dura ou desagradável.
+**evanescent** — fugaz; que desaparece como vapor.
+**exacerbate** — piorar um problema.
+**excise** — cortar para remover; um imposto sobre certos produtos.
+**existential** — relativo à existência; relacionado à liberdade e à escolha humanas.
+**exogenous** — originado de fatores externos.
+**expedite** — fazer acontecer mais cedo; acelerar.
+**exponential** — que envolve exponenciação; crescimento que se acelera com o tempo.
+**extrapolate** — estimar além dos dados conhecidos estendendo tendências.
 
-**facade** — o/a front de a building; a deceptive outward appearance.
-**fallacy** — a mistaken belief; flawed reasoning em argument.
-**falsifiable** — capable de being proven false; a criterion para scientific claims.
-**Feedback loop** — a system where outputs influence inputs, amplifying or stabilizing.
-**ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**finite** — having limits or bounds; not infinite.
-**flux** — continuous change; flow or movement.
-**formalism** — strict adherence to rules or forms; emphasis on structure.
-**fortuitous** — happening by chance; lucky.
-**fractal** — a self-similar pattern repeating at different scales.
-**frequency** — o/a rate de occurrence; number de cycles per second (Hertz).
-**full-stack** — involving both front-end e back-end Desenvolvimento.
+**facade** — a frente de um edifício; uma aparência externa enganosa.
+**fallacy** — uma crença equivocada; raciocínio falho em um argumento.
+**falsifiable** — passível de ser provado falso; um critério para afirmações científicas.
+**feedback loop** — um sistema em que saídas influenciam entradas, amplificando ou estabilizando.
+**ferment** — decomposição química por microrganismos; agitação ou inquietação.
+**finite** — que possui limites ou fronteiras; não infinito.
+**flux** — mudança contínua; fluxo ou movimento.
+**formalism** — adesão rigorosa a regras ou formas; ênfase na estrutura.
+**fortuitous** — que acontece por acaso; afortunado.
+**fractal** — um padrão autossimilar que se repete em diferentes escalas.
+**frequency** — a taxa de ocorrência; número de ciclos por segundo (Hertz).
+**full-stack** — que envolve desenvolvimento tanto de front-end quanto de back-end.
 
-**garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — o/a study de family lineages e descent.
-**generic** — general rather than specific; lacking brand identification.
-**genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than o/a sum de its parts.
-**gibberish** — unintelligible or meaningless speech or writing.
-**granular** — composed de small particles; detailed e fine-grained.
-**graph** — a diagram showing relationships; a Dados structure com nodes e edges.
-**gregarious** — sociable; fond de company.
-**grok** — to understand deeply e intuitively (from Ciência fiction).
+**garrulous** — excessivamente falante, especialmente sobre assuntos triviais.
+**gaussian** — relativo à distribuição normal; curva em forma de sino.
+**genealogy** — o estudo de linhagens familiares e descendência.
+**generic** — geral em vez de específico; sem identificação de marca.
+**genitive** — caso gramatical que indica posse.
+**gestalt** — um todo organizado percebido como mais do que a soma de suas partes.
+**gibberish** — fala ou escrita ininteligível ou sem sentido.
+**granular** — composto de pequenas partículas; detalhado e minucioso.
+**graph** — um diagrama que mostra relações; uma estrutura de dados com nós e arestas.
+**gregarious** — sociável; que gosta de companhia.
+**grok** — compreender de forma profunda e intuitiva (da ficção científica).
 
-**halcyon** — calm e peaceful; prosperous e happy.
-**haplotype** — a set de DNA variations inherited together.
-**hegemony** — dominance or leadership, especially de one state over others.
-**hermeneutics** — o/a theory e methodology de interpretation.
-**heuristic** — a practical method not guaranteed optimal; a rule de thumb.
-**hologram** — a 3D image created by laser interference patterns.
-**homogeneous** — uniform em composition or character.
-**homomorphism** — a structure-preserving map between algebraic structures.
-**homophone** — words sounding alike but differing em meaning or spelling.
-**homonym** — words com same spelling or pronunciation but different meanings.
-**hyperbole** — deliberate exaggeration para effect.
-**hyperparameter** — a configuration setting para Aprendizado de máquina models set before training.
-**hypertext** — text containing links to other texts; foundational to o/a Web.
-**hypothesize** — to propose an explanation as a starting point para investigation.
+**halcyon** — calmo e pacífico; próspero e feliz.
+**haplotype** — um conjunto de variações de DNA herdadas em conjunto.
+**hegemony** — domínio ou liderança, especialmente de um Estado sobre outros.
+**hermeneutics** — a teoria e a metodologia da interpretação.
+**heuristic** — um método prático sem garantia de ser ótimo; uma regra prática.
+**hologram** — uma imagem 3D criada por padrões de interferência de laser.
+**homogeneous** — uniforme em composição ou caráter.
+**homomorphism** — um mapeamento entre estruturas algébricas que preserva a estrutura.
+**homophone** — palavras com som igual, mas significado ou grafia diferentes.
+**homonym** — palavras com a mesma grafia ou pronúncia, mas significados diferentes.
+**hyperbole** — exagero deliberado para efeito.
+**hyperparameter** — uma configuração de modelo de aprendizado de máquina definida antes do treinamento.
+**hypertext** — texto que contém links para outros textos; fundamental para a web.
+**hypothesize** — propor uma explicação como ponto de partida para investigação.
 
-**iconoclast** — one who attacks cherished beliefs or institutions.
-**idiom** — a phrase whose meaning cannot be deduced from individual words.
-**idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing o/a same result regardless de how many times applied.
-**igneous** — rock formed from cooled magma or lava.
-**immutable** — unchanging over time; unable to be modified.
-**impedance** — opposition to alternating current; metaphorically, resistance to flow.
-**imperative** — crucial; a command; programming paradigm focused on statements.
-**implicit** — implied though not plainly expressed.
-**imponderable** — impossible to estimate or assess.
-**impromptu** — done without preparation; spontaneous.
-**inchoate** — just begun; not fully formed.
-**inductive** — reasoning from specific observations to general conclusions.
-**ineffable** — too great or extreme to be expressed em words.
-**inference** — a conclusion reached from evidence; em AI, generating outputs from models.
-**inflection** — change em pitch or tone; modification de words para grammar.
-**innate** — inborn; natural rather than acquired.
-**inoculate** — to vaccinate; introduce an idea or attitude gradually.
-**insidious** — proceeding subtly but harmfully.
-**instantiation** — creating a specific instance de a class or concept.
-**intentionality** — o/a quality de being about something; directedness de consciousness.
-**interoperability** — o/a ability de Sistemas to work together seamlessly.
-**interpolate** — to estimate values between known Dados points.
-**introspection** — examining one's own thoughts e feelings; em code, examining types at runtime.
-**invariant** — unchanging; a condition that remains constant during execution.
-**invective** — abusive or insulting Idioma.
-**inverse** — opposite em position, direction, or effect.
-**iterable** — an object capable de returning its members one at a time.
+**iconoclast** — alguém que ataca crenças ou instituições consagradas.
+**idiom** — uma expressão cujo significado não pode ser deduzido das palavras individuais.
+**idiosyncratic** — peculiar a um indivíduo; distintivo.
+**idempotent** — que produz o mesmo resultado independentemente do número de vezes que é aplicado.
+**igneous** — rocha formada a partir do resfriamento de magma ou lava.
+**immutable** — imutável ao longo do tempo; incapaz de ser modificado.
+**impedance** — oposição à corrente alternada; metaforicamente, resistência ao fluxo.
+**imperative** — crucial; um comando; paradigma de programação focado em instruções.
+**implicit** — implícito, embora não expresso claramente.
+**imponderable** — impossível de estimar ou avaliar.
+**impromptu** — feito sem preparação; espontâneo.
+**inchoate** — recém-iniciado; ainda não plenamente formado.
+**inductive** — raciocínio que vai de observações específicas a conclusões gerais.
+**ineffable** — grande ou extremo demais para ser expresso em palavras.
+**inference** — uma conclusão alcançada a partir de evidências; em IA, geração de saídas a partir de modelos.
+**inflection** — mudança de tom ou entonação; modificação de palavras por razões gramaticais.
+**innate** — inato; natural em vez de adquirido.
+**inoculate** — vacinar; introduzir gradualmente uma ideia ou atitude.
+**insidious** — que avança de forma sutil, mas prejudicial.
+**instantiation** — criação de uma instância específica de uma classe ou conceito.
+**intentionality** — a qualidade de ser sobre algo; o direcionamento da consciência.
+**interoperability** — a capacidade de sistemas trabalharem juntos sem atritos.
+**interpolate** — estimar valores entre pontos de dados conhecidos.
+**introspection** — examinar os próprios pensamentos e sentimentos; em código, examinar tipos em tempo de execução.
+**invariant** — que não muda; uma condição que permanece constante durante a execução.
+**invective** — linguagem abusiva ou insultuosa.
+**inverse** — oposto em posição, direção ou efeito.
+**iterable** — um objeto capaz de retornar seus membros um de cada vez.
 
-**jargon** — specialized terminology used by a particular group.
-**juxtapose** — to place side by side para comparison or contrast.
+**jargon** — terminologia especializada usada por um grupo específico.
+**juxtapose** — colocar lado a lado para comparação ou contraste.
 
-**kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — o/a core de an operating system; a seed; em ML, a function transforming Dados.
-**kinetic** — relating to motion; active rather than static.
-**kiosk** — a small booth para information or sales; a locked-down computer terminal.
+**kafkaesque** — pesadelescamente complexo ou burocrático (de Franz Kafka).
+**kernel** — o núcleo de um sistema operacional; uma semente; em ML, uma função que transforma dados.
+**kinetic** — relativo ao movimento; ativo em vez de estático.
+**kiosk** — uma pequena cabine para informações ou vendas; um terminal de computador bloqueado.
 
-**lacuna** — a gap or missing part, especially em a manuscript.
-**latency** — delay between stimulus e response; em networking, time para Dados to travel.
-**latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — o/a vocabulary de a Idioma or field; a Dicionário.
-**liability** — Jurídico responsibility; a disadvantage; debts owed.
-**linear regression** — a statistical method modeling linear relationships between variables.
-**lingua franca** — a common Idioma used between speakers de different native languages.
-**literal** — taking words em their usual sense; not figurative.
-**litmus test** — a decisive test revealing true Natureza or quality.
-**locus** — o/a set de points satisfying a condition; a center de activity.
-**loquacious** — very talkative.
-**lucid** — clear e easy to understand; mentally sharp.
-**lumen** — a unit de luminous flux; light output.
-**lyric** — expressing personal emotions; song-like poetry.
+**lacuna** — uma lacuna ou parte ausente, especialmente em um manuscrito.
+**latency** — atraso entre estímulo e resposta; em redes, tempo para os dados viajarem.
+**latent** — existente, mas ainda não desenvolvido nem manifesto; oculto.
+**lexicon** — o vocabulário de uma língua ou área; um dicionário.
+**liability** — responsabilidade legal; uma desvantagem; dívidas devidas.
+**linear regression** — um método estatístico que modela relações lineares entre variáveis.
+**lingua franca** — uma língua comum usada entre falantes de idiomas nativos diferentes.
+**literal** — que toma as palavras em seu sentido usual; não figurado.
+**litmus test** — um teste decisivo que revela a verdadeira natureza ou qualidade.
+**locus** — o conjunto de pontos que satisfaz uma condição; um centro de atividade.
+**loquacious** — muito falante.
+**lucid** — claro e fácil de entender; mentalmente lúcido.
+**lumen** — uma unidade de fluxo luminoso; emissão de luz.
+**lyric** — que expressa emoções pessoais; poesia em forma de canção.
 
-**macro** — a large-scale view; a rule specifying pattern replacement.
-**malapropism** — mistaken use de a word em place de a similar-sounding one.
-**manifest** — obvious; a list de cargo or passengers; to display or show.
-**mantissa** — o/a significant digits de a floating-point number.
-**mapreduce** — a programming model para processing large datasets em parallel.
-**marginal** — minimal; at o/a edge; additional or incremental.
-**markup** — text formatting codes (HTML, XML); price increase.
-**matrix** — a rectangular array de numbers; environment or surroundings.
-**maxim** — a short statement expressing a general truth or rule de conduct.
-**mechanism** — a system de parts working together; an underlying process.
-**mediator** — one who facilitates resolution between parties.
-**membrane** — a thin flexible layer; em biology, cell boundary.
-**memoization** — caching function results to avoid recomputation.
-**metaphor** — a figure de speech comparing unlike things without "like" or "as".
-**metastable** — apparently stable but easily disrupted.
-**metonymy** — referring to something by something closely associated (crown para monarchy).
-**microservice** — a small, independent service em a distributed Arquitetura.
-**millisecond** — one thousandth de a second.
-**mnemonic** — a memory aid or device.
-**modality** — o/a mode or form de something; sensory channel.
-**model** — a representation; em ML, a trained system making predictions.
-**modulate** — to adjust or regulate; vary em strength or tone.
-**monad** — a structure em functional programming handling side effects.
-**monolithic** — a single massive structure; not modular.
-**monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — o/a study de forms e structures; word formation em linguistics.
-**multicast** — sending Dados to multiple destinations simultaneously.
-**multimodal** — combining multiple modes (text, image, audio).
-**mutable** — capable de change; modifiable.
-**mutual** — held em common; reciprocal.
+**macro** — uma visão em larga escala; uma regra que especifica substituição de padrões.
+**malapropism** — uso equivocado de uma palavra no lugar de outra de som parecido.
+**manifest** — óbvio; uma lista de carga ou passageiros; exibir ou mostrar.
+**mantissa** — os dígitos significativos de um número de ponto flutuante.
+**mapreduce** — um modelo de programação para processar grandes conjuntos de dados em paralelo.
+**marginal** — mínimo; na borda; adicional ou incremental.
+**markup** — códigos de formatação de texto (HTML, XML); aumento de preço.
+**matrix** — uma matriz retangular de números; ambiente ou entorno.
+**maxim** — uma afirmação breve que expressa uma verdade geral ou regra de conduta.
+**mechanism** — um sistema de partes que trabalham juntas; um processo subjacente.
+**mediator** — alguém que facilita a resolução entre partes.
+**membrane** — uma camada fina e flexível; em biologia, o limite de uma célula.
+**memoization** — armazenamento em cache de resultados de função para evitar recomputação.
+**metaphor** — uma figura de linguagem que compara coisas diferentes sem usar "como".
+**metastable** — aparentemente estável, mas facilmente perturbado.
+**metonymy** — referir-se a algo por outra coisa estreitamente associada (coroa por monarquia).
+**microservice** — um serviço pequeno e independente em uma arquitetura distribuída.
+**millisecond** — um milésimo de segundo.
+**mnemonic** — um recurso ou técnica de memorização.
+**modality** — o modo ou a forma de algo; canal sensorial.
+**model** — uma representação; em ML, um sistema treinado que faz previsões.
+**modulate** — ajustar ou regular; variar em intensidade ou tom.
+**monad** — uma estrutura de programação funcional para lidar com efeitos colaterais.
+**monolithic** — uma estrutura única e maciça; não modular.
+**monotonic** — sempre crescente ou sempre decrescente; nunca muda de direção.
+**morphology** — o estudo das formas e estruturas; formação de palavras na linguística.
+**multicast** — envio de dados para vários destinos simultaneamente.
+**multimodal** — que combina múltiplos modos (texto, imagem, áudio).
+**mutable** — passível de mudança; modificável.
+**mutual** — compartilhado em comum; recíproco.
 
-**nascent** — just coming into existence; beginning to develop.
-**native** — inherent; belonging to a place by birth; em Computação, built para a specific platform.
-**natural Idioma** — human Idioma as spoken or written, not formal or programming.
-**negation** — denial or contradiction; logical NOT.
-**neologism** — a newly coined word or expression.
-**nested** — contained within something similar; hierarchical layers.
-**netizen** — an active internet user.
-**neural Rede** — a Computação system inspired by biological brains.
-**nominal** — em name only; very small; stated or face value.
-**non sequitur** — a conclusion not following from premises.
-**normalization** — organizing Dados to reduce redundancy; scaling to standard range.
-**notwithstanding** — em spite de; nevertheless.
-**nuance** — subtle distinction or variation.
-**null** — having no value; zero; invalid.
-**numerator** — o/a top number em a fraction.
+**nascent** — que está apenas surgindo; começando a se desenvolver.
+**native** — inerente; pertencente a um lugar por nascimento; em computação, feito para uma plataforma específica.
+**natural language** — linguagem humana falada ou escrita, não formal nem de programação.
+**negation** — negação ou contradição; operador lógico NOT.
+**neologism** — uma palavra ou expressão recém-criada.
+**nested** — contido dentro de algo semelhante; em camadas hierárquicas.
+**netizen** — um usuário ativo da internet.
+**neural network** — um sistema computacional inspirado em cérebros biológicos.
+**nominal** — apenas no nome; muito pequeno; valor declarado ou nominal.
+**non sequitur** — uma conclusão que não decorre das premissas.
+**normalization** — organização de dados para reduzir redundância; escalonamento para uma faixa padrão.
+**notwithstanding** — apesar de; ainda assim.
+**nuance** — distinção ou variação sutil.
+**null** — sem valor; zero; inválido.
+**numerator** — o número superior em uma fração.
 
-**objective** — not influenced by personal feelings; a goal.
-**obligatory** — required; mandatory.
-**obfuscate** — to deliberately make unclear or confusing.
-**objective function** — a function to maximize or minimize em optimization.
-**observable** — capable de being observed; em programming, a stream de Eventos.
-**obsolescence** — o/a process de becoming outdated.
-**occasional** — happening sometimes; irregular.
-**occlusion** — blockage or obstruction; hiding de objects em vision.
-**octet** — a group de eight; em networking, 8 bits (byte).
-**offload** — to transfer work to another system or person.
-**omnibus** — containing multiple items; a collection.
-**ontology** — o/a study de being; em CS, a formal representation de knowledge.
-**opaque** — not transparent; difficult to understand.
-**operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — o/a value de o/a best alternative forgone.
-**optimization** — making something as effective as possible; finding best solutions.
-**oracle** — a source de wisdom; em Computação, a theoretical black box answering questions.
-**orthogonal** — at right angles; independent; unrelated.
-**oscillate** — to swing back e forth; fluctuate.
-**ostensible** — appearing or claimed to be true, though possibly not so.
-**overfit** — when a model learns training Dados too well, failing to generalize.
-**overhead** — extra resources required beyond o/a core task.
-**oxide** — a chemical compound containing oxygen.
+**objective** — não influenciado por sentimentos pessoais; uma meta.
+**obligatory** — exigido; obrigatório.
+**obfuscate** — tornar deliberadamente obscuro ou confuso.
+**objective function** — uma função a ser maximizada ou minimizada em otimização.
+**observable** — passível de observação; em programação, um fluxo de eventos.
+**obsolescence** — o processo de se tornar ultrapassado.
+**occasional** — que acontece às vezes; irregular.
+**occlusion** — bloqueio ou obstrução; ocultação de objetos na visão.
+**octet** — um grupo de oito; em redes, 8 bits (byte).
+**offload** — transferir trabalho para outro sistema ou pessoa.
+**omnibus** — que contém múltiplos itens; uma coletânea.
+**ontology** — o estudo do ser; em ciência da computação, uma representação formal do conhecimento.
+**opaque** — não transparente; difícil de entender.
+**operationalize** — colocar em operação; definir indicadores mensuráveis.
+**opportunity cost** — o valor da melhor alternativa renunciada.
+**optimization** — tornar algo o mais eficaz possível; encontrar as melhores soluções.
+**oracle** — uma fonte de sabedoria; em computação, uma caixa-preta teórica que responde perguntas.
+**orthogonal** — em ângulos retos; independente; não relacionado.
+**oscillate** — oscilar para frente e para trás; flutuar.
+**ostensible** — que parece ou se afirma verdadeiro, embora possivelmente não seja.
+**overfit** — quando um modelo aprende os dados de treinamento bem demais e falha em generalizar.
+**overhead** — recursos extras exigidos além da tarefa principal.
+**oxide** — um composto químico que contém oxigênio.
 
-**pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading o/a same backward e forward.
-**paradigm** — a typical example or pattern; a framework de thought.
-**parallel** — side by side; occurring simultaneously.
-**parameterize** — to express em terms de parameters.
-**parity** — equality; evenness; error-checking bit.
-**parsimony** — extreme frugality; simplicity em explanation (Occam's razor).
-**partial** — incomplete; biased toward one side.
-**partition** — to divide into parts; a section.
-**passive** — accepting without resistance; not active.
-**patent** — a government license granting exclusive rights; obvious.
-**pathological** — relating to disease; extremely abnormal.
-**peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed para breaking rules.
-**pending** — awaiting decision; not yet settled.
-**permutation** — an arrangement de items em a specific order.
-**persona** — o/a aspect de someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; o/a art de representing 3D on 2D.
-**pertinent** — relevant to o/a matter at hand.
-**pervasive** — spreading widely; omnipresent.
-**pessimistic** — expecting negative outcomes; assuming worst case.
-**phantom** — ghostly; illusory; em databases, rows appearing unexpectedly.
-**phenomenology** — o/a study de structures de consciousness.
-**philosophy** — o/a study de fundamental questions about existence, knowledge, values.
-**phishing** — fraudulent attempts to obtain sensitive information via electronic Comunicação.
-**phoneme** — o/a smallest unit de sound distinguishing meaning.
-**phrase** — a group de words forming a unit; an expression.
-**pi** — o/a ratio de circle circumference to diameter (~3.14159).
-**placeholder** — a temporary stand-em; a token to be replaced.
-**plagiarism** — presenting others' work as one's own.
-**platform** — a raised surface; a Computação environment; a service foundation.
-**plethora** — an excess; abundance.
-**pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program Disponível para download.
-**polar** — relating to poles; having opposite extremes.
-**politic** — prudent; tactful; relating to government.
-**polymorphic** — having multiple forms; em OOP, methods behaving differently by type.
-**polysemy** — a word having multiple related meanings.
-**posterior** — coming after; later; buttocks.
-**postulate** — assume as fact; a fundamental assumption.
-**pragmatic** — practical; concerned com actual results.
-**precedent** — an earlier event serving as Guia.
-**precision** — exactness; em ML, true positives divided by predicted positives.
-**predicate** — o/a part de a sentence stating something about o/a subject; a function returning boolean.
-**predictive** — relating to prediction; forecasting Futuro Eventos.
-**prefix** — a morpheme added to o/a beginning de a word.
-**premise** — a statement forming o/a basis de an argument.
-**prescient** — having knowledge before it happens.
-**presupposition** — an assumption underlying an argument.
-**primordial** — existing from o/a beginning; primitive.
-**prior** — earlier; preceding; em Bayesian Estatísticas, initial belief.
-**probe** — to investigate; a device para exploration.
-**procedural** — relating to procedures; a programming paradigm.
-**proclivity** — a tendency or inclination.
-**prodigious** — remarkably large; extraordinary.
-**proficient** — skilled; competent.
-**prognosis** — a forecast de disease outcome; prediction.
-**prolific** — highly productive.
-**promissory** — containing a promise.
-**propagate** — to spread; reproduce; transmit signals.
-**proponent** — a supporter; advocate.
-**proprietary** — owned exclusively; private.
-**prosody** — rhythm e intonation em speech; poetry structure.
-**protocol** — a set de rules para Comunicação.
-**prototype** — an early model; original form.
-**provenance** — origin; source; História de ownership.
-**proximal** — nearest; close to a Referência point.
-**proxy** — an agent; a substitute; a server forwarding requests.
-**pseudo** — false; fake; pretending to be.
-**psycholinguistics** — study de psychological aspects de Idioma.
-**public** — open to all; relating to people as a whole.
-**pundit** — an expert offering opinions em media.
-**purport** — to claim; intended meaning.
-**pyramid** — a structure com triangular sides; hierarchical organization.
+**pacify** — trazer paz; acalmar ou tranquilizar.
+**palindrome** — uma palavra ou frase que se lê da mesma forma de trás para frente e de frente para trás.
+**paradigm** — um exemplo ou padrão típico; uma estrutura de pensamento.
+**parallel** — lado a lado; ocorrendo simultaneamente.
+**parameterize** — expressar em termos de parâmetros.
+**parity** — igualdade; paridade; bit de verificação de erros.
+**parsimony** — extrema frugalidade; simplicidade na explicação (navalha de Occam).
+**partial** — incompleto; tendencioso para um lado.
+**partition** — dividir em partes; uma seção.
+**passive** — que aceita sem resistência; não ativo.
+**patent** — uma licença governamental que concede direitos exclusivos; óbvio.
+**pathological** — relativo a doença; extremamente anormal.
+**peer** — um igual; olhar atentamente.
+**penalty** — uma punição; desvantagem imposta por quebrar regras.
+**pending** — aguardando decisão; ainda não resolvido.
+**permutation** — um arranjo de itens em uma ordem específica.
+**persona** — o aspecto do caráter de alguém; uma representação fictícia de usuário.
+**perspective** — um ponto de vista específico; a arte de representar 3D em 2D.
+**pertinent** — relevante para a questão em pauta.
+**pervasive** — amplamente disseminado; onipresente.
+**pessimistic** — que espera resultados negativos; que assume o pior caso.
+**phantom** — fantasmagórico; ilusório; em bancos de dados, linhas que aparecem inesperadamente.
+**phenomenology** — o estudo das estruturas da consciência.
+**philosophy** — o estudo de questões fundamentais sobre existência, conhecimento e valores.
+**phishing** — tentativas fraudulentas de obter informações sensíveis por comunicação eletrônica.
+**phoneme** — a menor unidade de som que distingue significado.
+**phrase** — um grupo de palavras que forma uma unidade; uma expressão.
+**pi** — a razão entre a circunferência de um círculo e seu diâmetro (~3,14159).
+**placeholder** — um substituto temporário; um token a ser substituído.
+**plagiarism** — apresentar o trabalho de outros como se fosse próprio.
+**platform** — uma superfície elevada; um ambiente computacional; a base de um serviço.
+**plethora** — um excesso; abundância.
+**pluripotent** — capaz de se desenvolver em muitos tipos de células.
+**podcast** — um programa de áudio digital disponível para download.
+**polar** — relativo aos polos; que tem extremos opostos.
+**politic** — prudente; diplomático; relativo ao governo.
+**polymorphic** — que tem múltiplas formas; em POO, métodos que se comportam de modo diferente conforme o tipo.
+**polysemy** — uma palavra com múltiplos significados relacionados.
+**posterior** — que vem depois; posterior; nádegas.
+**postulate** — assumir como fato; uma premissa fundamental.
+**pragmatic** — prático; preocupado com resultados reais.
+**precedent** — um evento anterior que serve de guia.
+**precision** — exatidão; em ML, verdadeiros positivos divididos pelos positivos previstos.
+**predicate** — a parte de uma frase que afirma algo sobre o sujeito; uma função que retorna booleano.
+**predictive** — relativo à previsão; que antecipa eventos futuros.
+**prefix** — um morfema adicionado ao início de uma palavra.
+**premise** — uma afirmação que forma a base de um argumento.
+**prescient** — que tem conhecimento antes que algo aconteça.
+**presupposition** — uma suposição subjacente a um argumento.
+**primordial** — existente desde o começo; primitivo.
+**prior** — anterior; precedente; em estatística bayesiana, crença inicial.
+**probe** — investigar; um dispositivo de exploração.
+**procedural** — relativo a procedimentos; um paradigma de programação.
+**proclivity** — uma tendência ou inclinação.
+**prodigious** — extraordinariamente grande; excepcional.
+**proficient** — habilidoso; competente.
+**prognosis** — um prognóstico de evolução de doença; previsão.
+**prolific** — altamente produtivo.
+**promissory** — que contém uma promessa.
+**propagate** — espalhar; reproduzir; transmitir sinais.
+**proponent** — um apoiador; defensor.
+**proprietary** — de propriedade exclusiva; privado.
+**prosody** — ritmo e entonação na fala; estrutura poética.
+**protocol** — um conjunto de regras para comunicação.
+**prototype** — um modelo inicial; forma original.
+**provenance** — origem; fonte; histórico de propriedade.
+**proximal** — mais próximo; perto de um ponto de referência.
+**proxy** — um agente; um substituto; um servidor que encaminha solicitações.
+**pseudo** — falso; fake; que finge ser.
+**psycholinguistics** — o estudo dos aspectos psicológicos da linguagem.
+**public** — aberto a todos; relativo às pessoas como um todo.
+**pundit** — um especialista que oferece opiniões na mídia.
+**purport** — alegar; significado pretendido.
+**pyramid** — uma estrutura com lados triangulares; organização hierárquica.
 
-**quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relating to quantum mechanics.
-**quarantine** — isolation to prevent disease spread; Segurança isolation.
-**query** — a question; a Banco de dados request.
-**quintessential** — representing o/a perfect example.
-**quotient** — o/a result de division; a ratio.
+**quantify** — expressar como número; medir.
+**quantum** — uma quantidade discreta; relativo à mecânica quântica.
+**quarantine** — isolamento para evitar a propagação de doenças; isolamento de segurança.
+**query** — uma pergunta; uma solicitação a banco de dados.
+**quintessential** — que representa o exemplo perfeito.
+**quotient** — o resultado de uma divisão; uma razão.
 
-**radical** — thoroughgoing; extreme; relating to roots.
-**random** — lacking pattern; unpredictable.
-**range** — o/a set de output values; extent; distance.
-**raster** — a grid de pixels; bitmap image.
-**ratify** — to formally approve; confirm.
-**rational** — based on reason; expressible as a fraction.
-**recursion** — a function calling itself; self-Referência.
-**redundancy** — repetition; backup; unnecessary duplication.
-**refinement** — improvement; making more precise.
-**reflection** — thinking deeply; em programming, examining structure at runtime.
-**regression** — return to earlier state; em Estatísticas, modeling relationships.
-**regularization** — preventing overfitting by adding penalties.
-**relational** — concerning relationships; Banco de dados model using tables.
-**reliance** — dependence; trust.
-**remediation** — correction; fixing problems.
-**rendezvous** — a meeting; to meet at an appointed time.
-**replication** — copying; reproducing experiments.
-**repository** — a storage location; a code archive.
-**representational** — depicting something; standing para.
-**resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solving a problem.
-**resonance** — reinforcement by vibration; emotional connection.
-**restitution** — restoration; compensation para loss.
-**retrospective** — looking back; review de past Eventos.
-**reverberate** — echo; resonate.
-**revision** — review e alteration; new version.
-**rhizome** — underground stem; non-hierarchical structure (philosophy).
-**robustness** — strength; resilience to errors.
-**root cause** — o/a fundamental reason para a problem.
-**rotation** — turning around an axis.
-**rudimentary** — basic; undeveloped.
-**runtime** — o/a time when a program executes; execution environment.
+**radical** — profundo; extremo; relativo a raízes.
+**random** — sem padrão; imprevisível.
+**range** — o conjunto de valores de saída; extensão; distância.
+**raster** — uma grade de pixels; imagem bitmap.
+**ratify** — aprovar formalmente; confirmar.
+**rational** — baseado na razão; expressável como fração.
+**recursion** — uma função que chama a si mesma; autorreferência.
+**redundancy** — repetição; backup; duplicação desnecessária.
+**refinement** — aprimoramento; tornar mais preciso.
+**reflection** — reflexão profunda; em programação, exame de estrutura em tempo de execução.
+**regression** — retorno a um estado anterior; em estatística, modelagem de relações.
+**regularization** — prevenção de overfitting por adição de penalidades.
+**relational** — relativo a relações; modelo de banco de dados que usa tabelas.
+**reliance** — dependência; confiança.
+**remediation** — correção; solução de problemas.
+**rendezvous** — um encontro; encontrar-se em hora marcada.
+**replication** — cópia; reprodução de experimentos.
+**repository** — um local de armazenamento; um repositório de código.
+**representational** — que representa algo; substitutivo.
+**resilience** — capacidade de se recuperar; resiliência.
+**resolution** — nível de detalhe; decisão; solução de um problema.
+**resonance** — reforço por vibração; conexão emocional.
+**restitution** — restauração; compensação por perda.
+**retrospective** — olhar para trás; revisão de eventos passados.
+**reverberate** — ecoar; ressoar.
+**revision** — revisão e alteração; nova versão.
+**rhizome** — caule subterrâneo; estrutura não hierárquica (filosofia).
+**robustness** — força; resistência a erros.
+**root cause** — a razão fundamental de um problema.
+**rotation** — rotação em torno de um eixo.
+**rudimentary** — básico; pouco desenvolvido.
+**runtime** — o momento em que um programa é executado; ambiente de execução.
 
-**sacrifice** — giving up something valued; offering.
-**salient** — prominent; noticeable.
-**sanction** — approval; penalty.
-**sandbox** — a Seguro Teste environment; a play area.
-**saturation** — full capacity; intense color.
-**scalar** — a single number; magnitude without direction.
-**schema** — a structured framework; Banco de dados design.
-**schism** — a split or division.
-**scope** — extent; range de effect; variable visibility.
-**scrutable** — understandable; comprehensible.
-**semantic** — relating to meaning.
-**semaphore** — a signaling mechanism; flag.
-**senescence** — aging; deterioration com age.
-**sentient** — capable de feeling; conscious.
-**sequential** — em order; one after another.
-**serendipity** — fortunate accidental discovery.
-**serialization** — converting objects to storable/transmittable format.
-**set** — a collection de distinct elements.
-**shader** — a program determining pixel colors em graphics.
-**shard** — a fragment; Banco de dados partition.
-**sigmoid** — S-shaped curve; activation function.
-**similarity** — resemblance; degree de likeness.
-**simulation** — imitation de real processes.
-**singular** — unique; extraordinary; grammatical form.
-**skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; o/a / character.
-**snapshot** — a momentary view; backup at a point em time.
-**socket** — an endpoint para Rede Comunicação.
-**softmax** — a function converting values to probabilities.
-**sovereign** — supreme ruler; independent nation.
-**sparse** — thinly scattered; mostly empty.
-**specification** — a detailed description de requirements.
-**spectrum** — a range; band de colors.
-**spherical** — shaped like a sphere.
-**spurious** — false; fake; not genuine.
-**stability** — firmness; resistance to change.
-**stack** — a Dados structure (LIFO); layers; pile.
-**stakeholder** — anyone affected by decisions.
-**stall** — to stop progressing; delay.
-**standardize** — to make conform to standards.
-**state** — condition; em Computação, stored information; political entity.
-**static** — unchanging; stationary; compile-time.
-**statistical** — relating to Dados analysis e probability.
-**status** — position; standing; state.
-**stochastic** — randomly determined; probabilistic.
-**stratify** — to arrange em layers or classes.
-**stream** — a continuous flow; sequence de Dados.
-**stress** — pressure; emphasis; strain.
-**stride** — a long step; step size em iteration.
-**string** — a sequence de characters; cord.
-**structural** — relating to structure or organization.
-**subroutine** — a procedure within a program; function.
-**subset** — a set contained within another.
-**substantiate** — to provide evidence; prove.
-**subtle** — delicate; not obvious.
-**suffix** — a morpheme added to word ends.
-**summation** — o/a addition de a sequence.
-**superposition** — placement on top; quantum state combination.
-**supervised** — com oversight; ML com labeled Dados.
-**supplant** — to replace; supersede.
-**surrogate** — a substitute; proxy.
-**susceptible** — vulnerable; likely to be affected.
-**Sustentabilidade** — ability to continue long-term.
-**suture** — to stitch; surgical stitching.
-**syllable** — a unit de pronunciation.
-**symbolic** — representing something else; using symbols.
-**symmetry** — balanced proportions; invariance under transformation.
-**synapse** — junction between neurons.
-**synchrony** — simultaneous occurrence.
-**syndrome** — a set de symptoms; pattern de characteristics.
-**synonym** — a word similar em meaning.
-**synopsis** — a brief summary.
-**Sintaxe** — grammatical structure; rules para valid expressions.
-**synthesis** — combination forming a whole.
-**systemic** — affecting o/a entire system.
+**sacrifice** — abrir mão de algo valioso; oferta.
+**salient** — proeminente; perceptível.
+**sanction** — aprovação; penalidade.
+**sandbox** — um ambiente seguro de testes; uma área de recreação.
+**saturation** — capacidade total; cor intensa.
+**scalar** — um único número; magnitude sem direção.
+**schema** — uma estrutura organizada; projeto de banco de dados.
+**schism** — uma cisão ou divisão.
+**scope** — extensão; alcance de efeito; visibilidade de variável.
+**scrutable** — compreensível; inteligível.
+**semantic** — relativo ao significado.
+**semaphore** — um mecanismo de sinalização; bandeira.
+**senescence** — envelhecimento; deterioração com a idade.
+**sentient** — capaz de sentir; consciente.
+**sequential** — em ordem; um após o outro.
+**serendipity** — descoberta afortunada por acaso.
+**serialization** — conversão de objetos para formato armazenável ou transmissível.
+**set** — uma coleção de elementos distintos.
+**shader** — um programa que determina as cores dos pixels em gráficos.
+**shard** — um fragmento; uma partição de banco de dados.
+**sigmoid** — curva em forma de S; função de ativação.
+**similarity** — semelhança; grau de similaridade.
+**simulation** — imitação de processos reais.
+**singular** — único; extraordinário; forma gramatical.
+**skeuomorphic** — design que imita objetos físicos.
+**slash** — cortar; o caractere /.
+**snapshot** — uma visão momentânea; backup em um ponto do tempo.
+**socket** — um ponto terminal para comunicação em rede.
+**softmax** — uma função que converte valores em probabilidades.
+**sovereign** — governante supremo; nação independente.
+**sparse** — pouco distribuído; majoritariamente vazio.
+**specification** — uma descrição detalhada de requisitos.
+**spectrum** — uma faixa; banda de cores.
+**spherical** — em forma de esfera.
+**spurious** — falso; espúrio; não genuíno.
+**stability** — firmeza; resistência à mudança.
+**stack** — uma estrutura de dados (LIFO); camadas; pilha.
+**stakeholder** — qualquer pessoa afetada por decisões.
+**stall** — parar de progredir; atrasar.
+**standardize** — fazer com que esteja conforme padrões.
+**state** — condição; em computação, informação armazenada; entidade política.
+**static** — imutável; estacionário; em tempo de compilação.
+**statistical** — relativo à análise de dados e probabilidade.
+**status** — posição; situação; estado.
+**stochastic** — determinado aleatoriamente; probabilístico.
+**stratify** — organizar em camadas ou classes.
+**stream** — um fluxo contínuo; sequência de dados.
+**stress** — pressão; ênfase; tensão.
+**stride** — um passo longo; tamanho do passo em iteração.
+**string** — uma sequência de caracteres; corda.
+**structural** — relativo à estrutura ou organização.
+**subroutine** — um procedimento dentro de um programa; função.
+**subset** — um conjunto contido dentro de outro.
+**substantiate** — fornecer evidências; comprovar.
+**subtle** — delicado; não óbvio.
+**suffix** — um morfema adicionado ao final das palavras.
+**summation** — a soma de uma sequência.
+**superposition** — colocação por cima; combinação de estados quânticos.
+**supervised** — com supervisão; em ML, com dados rotulados.
+**supplant** — substituir; tomar o lugar de.
+**surrogate** — um substituto; procurador.
+**susceptible** — vulnerável; propenso a ser afetado.
+**sustainability** — capacidade de continuar a longo prazo.
+**suture** — suturar; costura cirúrgica.
+**syllable** — uma unidade de pronúncia.
+**symbolic** — que representa algo mais; que usa símbolos.
+**symmetry** — proporções equilibradas; invariância sob transformação.
+**synapse** — junção entre neurônios.
+**synchrony** — ocorrência simultânea.
+**syndrome** — um conjunto de sintomas; padrão de características.
+**synonym** — uma palavra de significado semelhante.
+**synopsis** — um breve resumo.
+**syntax** — estrutura gramatical; regras para expressões válidas.
+**synthesis** — combinação que forma um todo.
+**systemic** — que afeta o sistema inteiro.
 
-**tacit** — understood without being stated.
-**tactical** — relating to strategy; short-term planning.
-**tangent** — touching at one point; diverging from topic.
-**tautology** — saying o/a same thing twice; logically always true.
-**taxonomy** — classification scheme.
-**teleology** — explanation by purpose or design.
-**tempered** — moderated; hardened (metal).
-**temporal** — relating to time; worldly.
-**tendency** — inclination; trend.
-**tensor** — a multi-dimensional array; em physics, generalized vector.
-**terminology** — specialized vocabulary.
-**ternary** — consisting de three parts; base-3.
-**terrestrial** — relating to Earth; land-based.
-**testament** — evidence; will; covenant.
-**theorem** — a provable mathematical statement.
-**theory** — a well-substantiated explanation; conjecture.
-**thermal** — relating to heat.
-**threshold** — a limit triggering action.
-**throughput** — amount processed em given time.
-**timbre** — tone quality; sound color.
-**topology** — study de spatial properties; Rede layout.
-**torque** — rotational force.
-**trace** — to follow; record; sum de diagonal elements.
-**trademark** — a registered brand identifier.
-**trajectory** — path de a projectile; course de Desenvolvimento.
-**transcend** — to go beyond; surpass.
-**transcript** — written record; RNA copy de DNA.
-**transformation** — thorough change; mathematical mapping.
-**transient** — temporary; passing.
-**transpose** — to reverse position; swap rows e columns.
-**triage** — prioritizing by urgency.
-**trigonometry** — study de triangle relationships.
-**trivial** — simple; unimportant; mathematically obvious.
-**trope** — a common theme or device.
-**troubleshoot** — to diagnose e fix problems.
-**truncate** — to shorten by cutting off.
-**trust** — confidence; reliance; Jurídico arrangement.
-**turbulence** — chaotic fluid motion; instability.
-**tutorial** — instructional lesson.
-**tuple** — an ordered list de elements.
-**turing-Completo** — capable de universal computation.
-**typology** — study de types or classifications.
+**tacit** — compreendido sem ser declarado.
+**tactical** — relativo à estratégia; planejamento de curto prazo.
+**tangent** — que toca em um ponto; que se desvia do assunto.
+**tautology** — dizer a mesma coisa duas vezes; logicamente sempre verdadeiro.
+**taxonomy** — esquema de classificação.
+**teleology** — explicação por propósito ou desígnio.
+**tempered** — moderado; temperado/endurecido (metal).
+**temporal** — relativo ao tempo; mundano.
+**tendency** — inclinação; tendência.
+**tensor** — um arranjo multidimensional; em física, vetor generalizado.
+**terminology** — vocabulário especializado.
+**ternary** — composto por três partes; de base 3.
+**terrestrial** — relativo à Terra; terrestre.
+**testament** — evidência; testamento; pacto.
+**theorem** — uma afirmação matemática passível de prova.
+**theory** — uma explicação bem fundamentada; conjectura.
+**thermal** — relativo ao calor.
+**threshold** — um limite que aciona uma ação.
+**throughput** — quantidade processada em determinado tempo.
+**timbre** — qualidade tonal; cor do som.
+**topology** — estudo de propriedades espaciais; layout de rede.
+**torque** — força rotacional.
+**trace** — seguir; registro; soma dos elementos da diagonal.
+**trademark** — um identificador de marca registrado.
+**trajectory** — trajetória de um projétil; curso de desenvolvimento.
+**transcend** — ir além; superar.
+**transcript** — registro escrito; cópia de RNA do DNA.
+**transformation** — mudança profunda; mapeamento matemático.
+**transient** — temporário; passageiro.
+**transpose** — inverter posição; trocar linhas e colunas.
+**triage** — priorização por urgência.
+**trigonometry** — estudo das relações entre triângulos.
+**trivial** — simples; sem importância; matematicamente óbvio.
+**trope** — um tema ou recurso comum.
+**troubleshoot** — diagnosticar e corrigir problemas.
+**truncate** — encurtar por corte.
+**trust** — confiança; dependência; acordo jurídico.
+**turbulence** — movimento caótico de fluidos; instabilidade.
+**tutorial** — lição instrucional.
+**tuple** — uma lista ordenada de elementos.
+**turing-complete** — capaz de computação universal.
+**typology** — estudo de tipos ou classificações.
 
-**ubiquitous** — present everywhere.
-**ulterior** — hidden; beyond what is evident.
-**uncanny** — strangely familiar; eerie.
-**unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; o/a _ character.
-**underwrite** — to guarantee financially; Suporte.
-**uniform** — consistent; a distinctive outfit.
-**unilateral** — one-sided; by one party.
-**unique** — one de a kind.
-**universal** — applicable everywhere; general.
-**unix** — a family de operating Sistemas.
-**unsupervised** — without labels; ML finding patterns alone.
-**utilitarian** — practical; maximizing overall happiness.
-**utterance** — something spoken; vocal expression.
+**ubiquitous** — presente em todos os lugares.
+**ulterior** — oculto; além do que é evidente.
+**uncanny** — estranhamente familiar; inquietante.
+**unconscious** — inconsciente; não consciente.
+**underscore** — enfatizar; o caractere _.
+**underwrite** — garantir financeiramente; dar suporte.
+**uniform** — consistente; um traje distintivo.
+**unilateral** — unilateral; feito por uma só parte.
+**unique** — único.
+**universal** — aplicável em toda parte; geral.
+**unix** — uma família de sistemas operacionais.
+**unsupervised** — sem rótulos; em ML, que encontra padrões sozinho.
+**utilitarian** — prático; voltado à maximização da felicidade geral.
+**utterance** — algo dito; expressão vocal.
 
-**vacuous** — empty; lacking content.
-**vagrant** — wandering; homeless.
-**valid** — logically sound; legally acceptable.
-**valence** — combining power; emotional charge.
-**vanilla** — plain; standard; unmodified.
-**variable** — changeable; a named storage location.
-**variance** — variability; statistical dispersion.
-**vector** — a quantity com direction e magnitude; an array.
-**vegetative** — relating to plants; automatic bodily functions.
-**velocity** — speed com direction.
-**vendor** — a seller; supplier.
-**verbose** — using more words than needed.
-**verification** — confirming truth or accuracy.
-**vernacular** — everyday Idioma; local dialect.
-**versatile** — adaptable; multi-purpose.
-**vertex** — a corner point; highest point.
-**vertical** — upright; industry-specific.
-**vested** — secured; guaranteed.
-**viable** — capable de working; feasible.
-**vicarious** — experienced through another.
-**virtual** — simulated; nearly; em Computação, emulated.
-**viscosity** — resistance to flow; thickness.
-**visual** — relating to sight.
-**volatile** — unstable; evaporating easily; memory losing Dados without power.
-**volume** — amount; loudness; 3D space.
-**vulnerability** — weakness; susceptibility to attack.
+**vacuous** — vazio; sem conteúdo.
+**vagrant** — errante; sem-teto.
+**valid** — logicamente válido; legalmente aceitável.
+**valence** — poder de combinação; carga emocional.
+**vanilla** — simples; padrão; sem modificações.
+**variable** — variável; um local nomeado de armazenamento.
+**variance** — variabilidade; dispersão estatística.
+**vector** — uma grandeza com direção e magnitude; um arranjo.
+**vegetative** — relativo a plantas; funções corporais automáticas.
+**velocity** — velocidade com direção.
+**vendor** — vendedor; fornecedor.
+**verbose** — que usa mais palavras do que o necessário.
+**verification** — confirmação da verdade ou precisão.
+**vernacular** — linguagem do dia a dia; dialeto local.
+**versatile** — adaptável; multifuncional.
+**vertex** — um ponto de canto; o ponto mais alto.
+**vertical** — vertical; específico de um setor.
+**vested** — garantido; assegurado.
+**viable** — capaz de funcionar; viável.
+**vicarious** — vivido por meio de outra pessoa.
+**virtual** — simulado; quase; em computação, emulado.
+**viscosity** — resistência ao fluxo; espessura.
+**visual** — relativo à visão.
+**volatile** — instável; que evapora facilmente; memória que perde dados sem energia.
+**volume** — quantidade; volume sonoro; espaço tridimensional.
+**vulnerability** — fraqueza; suscetibilidade a ataque.
 
-**waive** — to give up; refrain from enforcing.
-**wanderlust** — strong desire to travel.
-**want** — to desire; lack.
-**warfare** — armed conflict; competitive struggle.
-**warrant** — authorization; justification.
-**warranty** — a guarantee; assurance.
-**waveform** — shape de a wave.
-**weakness** — lack de strength; vulnerability.
-**Web** — a Rede; o/a World Wide Web.
-**weight** — importance; heaviness; parameter value em ML.
-**well-formed** — correctly structured.
-**what-if** — hypothetical scenario analysis.
-**whitelist** — approved list; allowlist.
-**wildcard** — a placeholder matching any character; unpredictable element.
-**window** — an opening; a viewing area; time interval.
-**wireframe** — a skeletal visual Guia.
-**wisdom** — deep understanding; good judgment.
-**workaround** — a temporary solution bypassing a problem.
-**worldview** — a comprehensive perspective on life.
-**wrapper** — something enclosing; code adapting interfaces.
-**write-up** — a report; documentation.
+**waive** — abrir mão de; deixar de exigir.
+**wanderlust** — forte desejo de viajar.
+**want** — desejar; faltar.
+**warfare** — conflito armado; disputa competitiva.
+**warrant** — autorização; justificativa.
+**warranty** — uma garantia; asseguração.
+**waveform** — forma de onda.
+**weakness** — falta de força; vulnerabilidade.
+**web** — uma rede; a World Wide Web.
+**weight** — importância; peso; valor de parâmetro em ML.
+**well-formed** — corretamente estruturado.
+**what-if** — análise de cenário hipotético.
+**whitelist** — lista aprovada; lista de permissões.
+**wildcard** — um curinga que corresponde a qualquer caractere; elemento imprevisível.
+**window** — uma abertura; uma área de visualização; intervalo de tempo.
+**wireframe** — um guia visual em forma de esqueleto.
+**wisdom** — compreensão profunda; bom julgamento.
+**workaround** — uma solução temporária que contorna um problema.
+**worldview** — uma perspectiva abrangente sobre a vida.
+**wrapper** — algo que envolve; código que adapta interfaces.
+**write-up** — um relatório; documentação.
 
-**x-axis** — horizontal axis em coordinates.
-**xenon** — a noble gas element.
-**xerox** — to photocopy; brand name.
-**xml** — Extensible Markup Idioma.
-**xpath** — a query Idioma para XML.
-**xylophone** — a percussion instrument.
+**x-axis** — eixo horizontal em coordenadas.
+**xenon** — um elemento gasoso nobre.
+**xerox** — fotocopiar; nome de marca.
+**xml** — Extensible Markup Language.
+**xpath** — uma linguagem de consulta para XML.
+**xylophone** — um instrumento de percussão.
 
-**yacht** — a recreational boat.
-**yaml** — a human-readable Dados serialization format.
-**yardstick** — a measuring stick; standard de comparison.
-**yearning** — a longing desire.
-**yield** — to produce; give way; return value.
+**yacht** — um barco de recreio.
+**yaml** — um formato de serialização de dados legível por humanos.
+**yardstick** — uma régua de medição; padrão de comparação.
+**yearning** — um desejo intenso.
+**yield** — produzir; ceder passagem; valor de retorno.
 
-**zenith** — o/a highest point; peak.
-**zero** — nothing; o/a number 0.
-**zip** — to fasten; compress files; move quickly.
-**zone** — an area com specific characteristics.
-**zoom** — to magnify; change focal length.
+**zenith** — o ponto mais alto; ápice.
+**zero** — nada; o número 0.
+**zip** — fechar com zíper; comprimir arquivos; mover-se rapidamente.
+**zone** — uma área com características específicas.
+**zoom** — ampliar; alterar a distância focal.

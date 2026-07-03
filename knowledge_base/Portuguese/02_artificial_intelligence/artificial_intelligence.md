@@ -1,91 +1,84 @@
-<!-- 
-This file was automatically translated from English to Portuguese.
-Source: artificial_intelligence.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
--->
+# Inteligência Artificial
 
-# Artificial Intelligence
+## O que é Inteligência Artificial?
 
-## What is Artificial Intelligence?
+Inteligência Artificial (IA) refere-se à simulação da inteligência humana em máquinas programadas para pensar, aprender e resolver problemas. Sistemas de IA podem executar tarefas que normalmente exigem inteligência humana, como reconhecer fala, tomar decisões, traduzir idiomas e identificar objetos em imagens. O termo foi cunhado por John McCarthy em 1956 na Conferência de Dartmouth, amplamente considerada o evento fundador da IA como campo de estudo.
 
-Artificial Intelligence (AI) refers to o/a simulation de human intelligence em machines programmed to think, learn, e solve problems. AI Sistemas can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, e identifying objects em images. o/a term was coined by John McCarthy em 1956 at o/a Dartmouth Conference, widely regarded as o/a founding event de AI as a field.
+A IA moderna é amplamente dividida em IA Restrita (também chamada de IA Fraca), projetada para tarefas específicas, e a teórica Inteligência Artificial Geral (AGI), que igualaria ou superaria a capacidade cognitiva humana em todos os domínios. Todos os sistemas de IA atuais são IA Restrita.
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed para specific tasks, e o/a theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Sistemas are Narrow AI.
+## História da IA
 
-## História de AI
+A história da IA abrange quase oito décadas. Os primeiros fundamentos teóricos foram estabelecidos por Alan Turing, cujo artigo de 1950, "Computing Machinery and Intelligence", apresentou o Teste de Turing — uma medida da capacidade de uma máquina de exibir um comportamento inteligente indistinguível do de um ser humano. A Conferência de Dartmouth de 1956 estabeleceu formalmente a IA como uma disciplina acadêmica.
 
-o/a História de AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Computação Machinery e Intelligence" introduced o/a Turing Test — a measure de a machine's ability to exhibit intelligent behaviour indistinguishable from a human. o/a 1956 Dartmouth Conference formally established AI as an academic discipline.
+As décadas de 1950 a 1970 viram programas iniciais otimistas como ELIZA (um chatbot simples) e LISP (uma linguagem de programação projetada para IA). Os "invernos da IA" das décadas de 1970 e 1980 foram períodos de redução de financiamento e interesse após expectativas não atendidas. Um ressurgimento nos anos 1980 veio com os sistemas especialistas — programas baseados em regras que codificavam conhecimento humano especializado. Os anos 2000 trouxeram avanços em aprendizado de máquina impulsionados pela internet e por conjuntos de dados crescentes. A década de 2010 marcou a ascensão do deep learning, transformando visão computacional, processamento de linguagem natural (NLP) e aprendizado por reforço.
 
-o/a 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) e LISP (a programming Idioma designed para AI). o/a "AI winters" de o/a 1970s e 1980s were periods de reduced funding e interest following unmet expectations. A resurgence em o/a 1980s came com expert Sistemas — rule-based programs that encoded human expertise. o/a 2000s brought Aprendizado de máquina breakthroughs fuelled by o/a internet e growing datasets. o/a 2010s saw o/a rise de Aprendizado profundo, transforming computer vision, natural Idioma processing (NLP), e reinforcement learning.
+## Aprendizado de Máquina
 
-## Aprendizado de máquina
+Aprendizado de Máquina (ML) é um subconjunto da IA que permite que sistemas aprendam com dados sem serem explicitamente programados. As principais categorias de ML incluem:
 
-Aprendizado de máquina (ML) is a subset de AI that enables Sistemas to learn from Dados without being explicitly programmed. Key ML categories include:
+**Aprendizado Supervisionado**: O modelo é treinado com pares rotulados de entrada e saída. Exemplos incluem detecção de spam e classificação de imagens. Os algoritmos incluem regressão linear, árvores de decisão, support vector machines e redes neurais.
 
-**Supervised Learning**: o/a model is trained on labelled input-output pairs. Exemplos include spam detection e image classification. Algorithms include linear regression, decision trees, Suporte vector machines, e Redes neurais.
+**Aprendizado Não Supervisionado**: O modelo encontra padrões em dados não rotulados. Exemplos incluem segmentação de clientes e detecção de anomalias. Os algoritmos incluem clustering k-means e análise de componentes principais (PCA).
 
-**Unsupervised Learning**: o/a model finds patterns em unlabelled Dados. Exemplos include customer segmentation e anomaly detection. Algorithms include k-means clustering e principal component analysis (PCA).
+**Aprendizado por Reforço**: Um agente aprende ao interagir com um ambiente, recebendo recompensas ou penalidades. É usado em IA para jogos (AlphaGo, AlphaZero), robótica e sistemas de recomendação.
 
-**Reinforcement Learning**: An agent learns by interacting com an environment, receiving rewards or penalties. Used em game-playing AI (AlphaGo, AlphaZero), robotics, e recommendation Sistemas.
+**Aprendizado Semissupervisionado e Autossupervisionado**: Combina pequenas quantidades de dados rotulados com grandes conjuntos de dados não rotulados. Modelos GPT usam uma abordagem autossupervisionada durante o pré-treinamento.
 
-**Semi-Supervised e Self-Supervised Learning**: Combine small amounts de labelled Dados com large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+## Deep Learning
 
-## Aprendizado profundo
+Deep Learning é um subconjunto do aprendizado de máquina que usa redes neurais artificiais com muitas camadas (redes profundas). Inspiradas de forma livre na estrutura neural do cérebro, essas redes aprendem representações hierárquicas dos dados. O deep learning impulsiona:
 
-Aprendizado profundo is a subset de Aprendizado de máquina that uses artificial Redes neurais com many layers (deep networks). Inspired loosely by o/a brain's neural structure, these networks learn hierarchical representations de Dados. Aprendizado profundo powers:
+- **Visão Computacional**: Reconhecimento de imagens, detecção de objetos, imagens médicas
+- **Processamento de Linguagem Natural**: Tradução automática, análise de sentimento, resposta a perguntas
+- **Reconhecimento de Fala**: Assistentes de voz como Siri, Alexa e Google Assistant
+- **IA Generativa**: Geração de imagens (DALL-E, Stable Diffusion), geração de texto (GPT)
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural Idioma Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+As principais arquiteturas de deep learning incluem redes neurais convolucionais (CNNs) para imagens, redes neurais recorrentes (RNNs) e LSTMs para sequências, transformers para linguagem e generative adversarial networks (GANs) para síntese.
 
-Key Aprendizado profundo architectures include convolutional Redes neurais (CNNs) para images, recurrent Redes neurais (RNNs) e LSTMs para sequences, transformers para Idioma, e generative adversarial networks (GANs) para synthesis.
+## Large Language Models (LLMs)
 
-## Large Idioma Models (LLMs)
+Large Language Models (LLMs) são sistemas de IA treinados em enormes volumes de dados textuais para compreender e gerar linguagem humana. Eles se baseiam na arquitetura Transformer, apresentada no artigo de 2017 "Attention is All You Need", de Vaswani et al. Os LLMs preveem o próximo token (parte de palavra) em uma sequência, o que lhes permite gerar texto coerente, responder perguntas, escrever código e realizar tarefas de raciocínio.
 
-Large Idioma Models (LLMs) are AI Sistemas trained on vast amounts de text Dados to understand e generate human Idioma. They are based on o/a Transformer Arquitetura, introduced em o/a 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict o/a next token (word piece) em a sequence, allowing them to generate coherent text, answer questions, write code, e perform reasoning tasks.
+LLMs notáveis incluem:
+- **GPT series** (OpenAI): GPT-3, GPT-4 e sucessores — amplamente usados para chat e código
+- **Claude** (Anthropic): Focado em segurança e utilidade
+- **Gemini** (Google DeepMind): Multimodal, integrando texto, imagens e código
+- **LLaMA / Llama 3** (Meta): Modelos open-weight para pesquisa e implantação local
+- **Mistral** (Mistral AI): Modelos abertos eficientes, competitivos com LLMs muito maiores
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, e successors — widely used para chat e code
-- **Claude** (Anthropic): Focused on safety e helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, e code
-- **LLaMA / Llama 3** (Meta): Open-weight models para research e local Implantação
-- **Mistral** (Mistral AI): Efficient open models competitive com much larger LLMs
+Os LLMs são treinados em duas etapas: pré-treinamento (não supervisionado em grandes corpora de texto) e fine-tuning (supervisionado ou via aprendizado por reforço com feedback humano, RLHF). As janelas de contexto descrevem quanto texto um LLM consegue processar de uma vez, variando de 4K tokens (GPT-3 inicial) a mais de 1 milhão de tokens nos modelos mais avançados de 2024.
 
-LLMs are trained em two stages: pre-training (unsupervised on large text corpora) e fine-tuning (supervised or via reinforcement learning from human Feedback, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens em o/a most Avançado 2024 models.
+## Ética e Segurança em IA
 
-## AI Ethics e Safety
+A IA levanta importantes questões éticas, incluindo viés, privacidade, substituição de empregos e risco de uso indevido. O viés algorítmico ocorre quando os dados de treinamento refletem desigualdades históricas, levando sistemas de IA a produzir saídas discriminatórias. Sistemas de reconhecimento facial já demonstraram taxas de erro maiores para pessoas de pele mais escura. Algoritmos de contratação já foram identificados como favorecendo candidatos do sexo masculino.
 
-AI raises important ethical questions including bias, privacy, job displacement, e o/a risk de misuse. Algorithmic bias occurs when training Dados reflects historical inequalities, causing AI Sistemas to produce discriminatory outputs. Facial recognition Sistemas have shown higher error rates para darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+A segurança em IA é o campo dedicado a garantir que sistemas de IA se comportem como o pretendido, sem causar danos não intencionais. Entre as principais preocupações estão:
+- **Alinhamento**: Garantir que os objetivos da IA correspondam aos valores humanos
+- **Interpretabilidade / Explicabilidade**: Entender por que uma IA tomou uma decisão (crítico em medicina, direito e finanças)
+- **Uso indevido**: Deepfakes gerados por IA, desinformação, ciberataques
+- **Risco existencial**: Preocupação teórica de que uma futura AGI possa perseguir objetivos desalinhados da sobrevivência humana
 
-AI safety is o/a field dedicated to ensuring AI Sistemas behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical em Medicina, Direito, Finanças)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a Futuro AGI could pursue goals misaligned com human survival
+Entre as organizações que trabalham com segurança em IA estão a equipe de Safety da OpenAI, a Anthropic (fundada por ex-pesquisadores de segurança da OpenAI), a equipe de segurança da DeepMind e institutos independentes como MIRI e ARC.
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, e independent institutes like MIRI e ARC.
+## IA na Sociedade
 
-## AI em Society
+A IA está transformando quase todos os setores:
 
-AI is transforming nearly every industry:
+- **Saúde**: A IA auxilia no diagnóstico de câncer a partir de imagens médicas, na previsão de desfechos de pacientes, na aceleração da descoberta de medicamentos (o AlphaFold resolveu a predição da estrutura de dobramento de proteínas) e na personalização de planos de tratamento.
+- **Finanças**: Detecção de fraude, trading algorítmico, credit scoring e robo-advisors usam modelos de ML.
+- **Transporte**: Veículos autônomos usam visão computacional, lidar e aprendizado por reforço. Tesla Autopilot, Waymo e Cruise estão entre os principais esforços.
+- **Educação**: Plataformas de aprendizagem personalizada adaptam o conteúdo ao ritmo e ao estilo de aprendizagem de cada estudante.
+- **Áreas criativas**: A IA gera música, arte e escrita; ferramentas como Midjourney, DALL-E e GitHub Copilot mudaram os fluxos de trabalho criativos.
+- **Cibersegurança**: A IA detecta anomalias, identifica ameaças e impulsiona tanto ataques quanto defesas.
 
-- **Saúde**: AI assists em diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), e personalising treatment plans.
-- **Finanças**: Fraud detection, algorithmic trading, credit scoring, e robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, e reinforcement learning. Tesla Autopilot, Waymo, e Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace e learning style.
-- **Creative fields**: AI generates music, art, e writing; tools like Midjourney, DALL-E, e GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, e powers both attacks e defences.
+## Robótica e IA Incorporada
 
-## Robotics e Embodied AI
+A robótica combina IA com máquinas físicas. Robôs modernos usam percepção (câmeras, lidar), planejamento e controle para navegar e manipular ambientes. O Atlas, da Boston Dynamics, demonstra movimento bípede avançado. Robôs industriais de empresas como ABB e FANUC automatizam a manufatura. Robôs domésticos (Roomba) e robôs cirúrgicos (da Vinci System) aplicam IA em contextos cotidianos e médicos. A pesquisa em IA incorporada concentra-se em agentes que aprendem habilidades físicas por meio da interação com o mundo, reduzindo a distância entre ambientes simulados e reais.
 
-Robotics combines AI com physical machines. Modern robots use perception (cameras, lidar), planning, e control to navigate e manipulate environments. Boston Dynamics' Atlas demonstrates Avançado bipedal movement. Industrial robots from companies like ABB e FANUC automate manufacturing. Household robots (Roomba) e surgical robots (da Vinci System) apply AI em everyday e medical settings. Embodied AI research focuses on agents that learn physical skills through interaction com o/a world, bridging o/a gap between simulated e real environments.
+## Tendências Atuais em IA (anos 2020)
 
-## Current AI Trends (2020s)
-
-- **Multimodal AI**: Sistemas that process text, images, audio, e video together (GPT-4V, Gemini)
-- **Agents e agentic AI**: LLMs that can use tools, browse o/a Web, write code, e take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models para researchers
-- **On-device AI**: Running AI models locally on phones e laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: o/a EU AI Act (2024) is o/a world's first comprehensive AI Direito, classifying AI Sistemas by risk level
+- **IA multimodal**: Sistemas que processam texto, imagens, áudio e vídeo em conjunto (GPT-4V, Gemini)
+- **Agentes e IA agêntica**: LLMs que podem usar ferramentas, navegar na web, escrever código e executar ações em múltiplas etapas (Operator da OpenAI, Computer Use da Anthropic)
+- **Modelos open-weight**: O LLaMA da Meta democratizou o acesso a grandes modelos para pesquisadores
+- **IA on-device**: Execução local de modelos de IA em celulares e laptops sem conectividade com a nuvem (Apple Intelligence, NPUs da Qualcomm)
+- **Regulação de IA**: O EU AI Act (2024) é a primeira lei abrangente de IA do mundo, classificando sistemas de IA por nível de risco
