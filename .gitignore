@@ -1,16 +1,2 @@
-# Examples and common markdown files
-*.md
-*.txt
-*.json
-*.yml
-*.yaml
-*.toml
-*.cfg
-*.ini
-
-# Build artifacts and dependencies would go here if present
-# But based on the changes shown, only documentation/markdown files are being tracked
-
-# The changes consist only of .md files in a knowledge base structure
-# No build artifacts, dependencies, or temporary files are present
-# Therefore, keeping .gitignore minimal to track these documentation files
+# Examples and documentation
+knowledge_base/English/09_bad_examples_and_failures/*
