@@ -14,7 +14,7 @@ from deep_translator import GoogleTranslator
 
 # Configuration
 SOURCE_DIR = Path("/workspace/knowledge_base/English")
-OUTPUT_BASE = Path("/workspace")
+OUTPUT_BASE = Path("/workspace/knowledge_base")
 TARGET_LANGUAGES = {
     "Thai": "th",
     "Persian": "fa",
@@ -49,9 +49,10 @@ def extract_code_blocks(text):
         return placeholder
     
     # Match ``` + optional lang + newline + content + closing ```
-    text = re.sub(r'```([^\n]*)\n(.*?)```', replace_code_block, text, flags=re.DOTALL)
+    # Be more careful: the closing ``` must be on its own line
+    text = re.sub(r'```([^\n]*)\n(.*?)\n```', replace_code_block, text, flags=re.DOTALL)
     
-    # Extract inline code
+    # Extract inline code - be more conservative to avoid matching inside words
     idx = 0
     def replace_inline_code(match):
         nonlocal idx
@@ -60,7 +61,8 @@ def extract_code_blocks(text):
         idx += 1
         return placeholder
     
-    text = re.sub(r'`([^`\s][^`]*[^`\s]|[^`\s])`', replace_inline_code, text)
+    # Match `...` but not if it's part of a larger word or already inside a placeholder
+    text = re.sub(r'(?<![`])`([^`]+)`(?![`])', replace_inline_code, text)
     
     return text, code_blocks, inline_codes
 
