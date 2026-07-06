@@ -1,4 +1,3 @@
-```markdown
 ```
 # Compiled and build artifacts
 *.pyc
@@ -11,9 +10,6 @@ __pycache__/
 *.so
 *.a
 *.out
-dist/
-build/
-target/
 
 # Dependencies
 .venv/
@@ -21,6 +17,11 @@ venv/
 node_modules/
 .mypy_cache/
 .pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Build directories
 dist/
 build/
 target/
@@ -32,13 +33,12 @@ target/
 *.swp
 *.swo
 
-# Environment
+# Environment files
 .env
 .env.local
-.env.*
 *.env.*
 
-# Editors
+# Editors and IDEs
 .vscode/
 .idea/
 *.swp
@@ -47,11 +47,6 @@ target/
 # System files
 .DS_Store
 Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
 
 # Compressed files
 *.zip
