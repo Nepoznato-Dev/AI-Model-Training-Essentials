@@ -90,7 +90,7 @@ This repository serves as a foundational framework for AI agent development, pro
 └── README.md                # This file
 ```
 
-Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits. Or open a branch and ask me to translate it for you.
+Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits, you can also open a branch and ask me to translate it for you.
 
 ---
 
@@ -279,7 +279,7 @@ The knowledge base supports **18 languages**: 18 currently available and 6 plann
 | Urdu | `Urdu/` | 🟡 Planned |
 | Tagalog (Filipino) | `Tagalog (Filipino)/` | 🟡 Planned |
 
-Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **before** or **During** September.
+Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **before** or **during** July is over.
 
 ---
 
