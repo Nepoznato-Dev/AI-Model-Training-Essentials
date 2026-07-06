@@ -7,15 +7,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud Architektur
 
-## Cloud Datenverarbeitung Grundlagen
+## Grundlagen der Cloud-Datenverarbeitung
 
 ### What is Cloud Datenverarbeitung?
-On-demand delivery von Datenverarbeitung resources (servers, storage, databases, networking, software) over der/die/das internet mit pay-as-you-go pricing.
+Bedarfsgerechte Bereitstellung von Rechenressourcen (servers, storage, databases, networking, software) über das Internet mit pay-as-you-go pricing.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
 - **Broad Netzwerk Access**: Verfügbar over Netzwerk via standard mechanisms
-- **Resource Pooling**: Multi-tenant model mit dynamic assignment
+- **Resource Pooling**: Mandantenfähiges Modell mit dynamischer Zuweisung
 - **Rapid Elasticity**: Scale outward und inward rapidly
 - **Measured Service**: Resource usage monitored und billed
 
@@ -39,7 +39,7 @@ On-demand delivery von Datenverarbeitung resources (servers, storage, databases,
 - **Use Cases**: Application Entwicklung, API Bereitstellung, microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Vollständig applications over internet
+- **Provides**: Vollständige Anwendungen over internet
 - **Beispiele**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Use Cases**: Email, CRM, collaboration, Geschäft applications
 
@@ -110,7 +110,7 @@ On-demand delivery von Datenverarbeitung resources (servers, storage, databases,
 - Manage change in automation
 
 #### Leistung Efficiency
-- Democratize Fortgeschritten technologies
+- Democratize Fortgeschrittene Technologien
 - Go global in minutes
 - Use serverless architectures
 - Experiment more often

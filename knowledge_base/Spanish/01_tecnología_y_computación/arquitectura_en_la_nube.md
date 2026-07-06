@@ -5,12 +5,12 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud Arquitectura
+# Arquitectura en la Nube
 
-## Cloud Informática Fundamentos
+## Fundamentos de la Computación en la Nube
 
 ### What is Cloud Informática?
-On-demand delivery de Informática resources (servers, storage, databases, networking, software) over el/la internet con pay-as-you-go pricing.
+Entrega bajo demanda de recursos informáticos (servers, storage, databases, networking, software) a través de Internet con precios de pago por uso.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
@@ -31,7 +31,7 @@ On-demand delivery de Informática resources (servers, storage, databases, netwo
 #### Infrastructure as a Service (IaaS)
 - **Provides**: Virtual machines, storage, networks, operating Sistemas
 - **Ejemplos**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-y-shift migrations, Desarrollo environments, high-control needs
+- **Use Cases**: Migraciones de traslado directo, Desarrollo environments, high-control needs
 
 #### Platform as a Service (PaaS)
 - **Provides**: Desarrollo platforms, databases, middleware
@@ -85,7 +85,7 @@ On-demand delivery de Informática resources (servers, storage, databases, netwo
 - **Alibaba Cloud**: Dominant en Asia-Pacific
 - **DigitalOcean**: Developer-friendly, simplified offerings
 
-## Cloud Arquitectura Patterns
+## Arquitectura en la Nube Patterns
 
 ### Well-Architected Framework Principles
 

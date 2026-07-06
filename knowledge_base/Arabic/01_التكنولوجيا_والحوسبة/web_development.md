@@ -33,7 +33,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **DOM Manipulation**: Selecting, creating, modifying elements
 - **الأحداث**: Click, submit, keyboard, custom الأحداث, event delegation
 - **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
-- **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
+- **واجهات البرمجة**: Fetch, XMLHttpRequest, localStorage, sessionStorage
 - **TypeScript**: Static typing, interfaces, generics, decorators
 
 ### Modern Frontend Frameworks
@@ -86,7 +86,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 #### Node.js
 - **Runtime**: JavaScript on ال server (V8 engine)
-- **Express.js**: Minimal الويب framework, middleware العمارة
+- **Express.js**: Minimal الويب framework, برمجيات وسيطة العمارة
 - **NestJS**: Angular-inspired العمارة, TypeScript
 - **Fastify**: High-الأداء framework
 - **Koa**: Modern Express by same creators
@@ -124,7 +124,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### API التطوير
 
-#### REST APIs
+#### REST واجهات البرمجة
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
 - **Status Codes**: 200, 201, 400, 401, 403, 404, 500
 - **Resource Naming**: Nouns, plural, hierarchical
@@ -142,7 +142,7 @@ For accuracy improvements, please contribute edits via pull requests.
 #### gRPC
 - **Protocol Buffers**: Interface definition اللغة
 - **HTTP/2**: Bidirectional streaming
-- **Use Cases**: Microservices التواصل, real-time applications
+- **حالات الاستخدام**: Microservices التواصل, real-time applications
 
 ### Authentication و Authorization
 - **Session-based**: Cookies, server-side sessions
@@ -170,7 +170,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Orchestration
 - **Kubernetes**: Container orchestration, pods, services, deployments
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Linkerd لأجل microservices networking
+- **Service Mesh**: Istio, Linkerd لأجل الخدمات المصغرة networking
 
 ### Cloud Platforms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
@@ -178,7 +178,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Azure**: Virtual Machines, Blob Storage, Functions, AKS
 - **Vercel**: Frontend النشر, serverless functions
 - **Netlify**: Static site hosting, serverless functions
-- **Heroku**: Platform as a Service (PaaS)
+- **Heroku**: المنصة كخدمة (PaaS)
 - **DigitalOcean**: Simplified cloud infrastructure
 
 ### CI/CD Pipelines
@@ -304,16 +304,16 @@ For accuracy improvements, please contribute edits via pull requests.
 ### WebAssembly (Wasm)
 - **Purpose**: Run compiled code في browser at near-native speed
 - **Languages**: C++, Rust, Go compilation targets
-- **Use Cases**: Games, video editing, cryptography, ML inference
+- **حالات الاستخدام**: Games, video editing, cryptography, ML inference
 
-### Serverless العمارة
+### بدون خادم العمارة
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Benefits**: No server الإدارة, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-في, debugging complexity
+- **Considerations**: Cold starts, vendor lock-in, debugging complexity
 
 ### Jamstack العمارة
 - **JavaScript**: Client-side interactivity
-- **APIs**: Serverless functions, third-party services
+- **واجهات البرمجة**: بدون خادم functions, third-party services
 - **Markup**: Pre-built static files
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
 - **Benefits**: الأداء, الأمان, scalability, developer experience
@@ -322,10 +322,10 @@ For accuracy improvements, please contribute edits via pull requests.
 - **WebSockets**: Bidirectional التواصل
 - **Server-Sent الأحداث**: Server-to-client streaming
 - **WebRTC**: Peer-to-peer video, audio, البيانات
-- **Use Cases**: Chat, collaboration, live streaming, gaming
+- **حالات الاستخدام**: Chat, التعاون, live streaming, gaming
 
 ### Micro Frontends
-- **Concept**: Extend microservices to frontend
+- **Concept**: Extend الخدمات المصغرة to frontend
 - **Approaches**: Build-time, run-time, edge-side integration
 - **Benefits**: Independent deployments, team autonomy
 - **Challenges**: Consistency, الأداء, complexity

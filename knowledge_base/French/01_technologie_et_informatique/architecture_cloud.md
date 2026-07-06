@@ -5,16 +5,16 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud Architecture
+# Architecture Cloud
 
-## Cloud Informatique Fondamentaux
+## Fondamentaux du Cloud Computing
 
 ### What is Cloud Informatique?
-On-demand delivery de Informatique resources (servers, storage, databases, networking, software) over le/la internet avec pay-as-you-go pricing.
+Livraison à la demande de ressources informatiques (servers, storage, databases, networking, software) via Internet avec une tarification à l'usage.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Réseau Access**: Disponible over Réseau via standard mechanisms
+- **Accès réseau large**: Disponible via le réseau via standard mechanisms
 - **Resource Pooling**: Multi-tenant model avec dynamic assignment
 - **Rapid Elasticity**: Scale outward et inward rapidly
 - **Measured Service**: Resource usage monitored et billed
@@ -85,7 +85,7 @@ On-demand delivery de Informatique resources (servers, storage, databases, netwo
 - **Alibaba Cloud**: Dominant dans Asia-Pacific
 - **DigitalOcean**: Developer-friendly, simplified offerings
 
-## Cloud Architecture Patterns
+## Architecture Cloud Patterns
 
 ### Well-Architected Framework Principles
 
@@ -100,7 +100,7 @@ On-demand delivery de Informatique resources (servers, storage, databases, netwo
 - Enable traceability
 - Apply Sécurité at all layers
 - Automate Sécurité Meilleures pratiques
-- Protect Données dans transit et at rest
+- Protéger les données en transit et au repos
 
 #### Reliability
 - Test recovery procedures

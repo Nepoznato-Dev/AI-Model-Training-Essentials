@@ -5,12 +5,12 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud 아키텍처
+# 클라우드 아키텍처
 
-## Cloud 컴퓨팅 기초
+## 클라우드 컴퓨팅 기초
 
 ### What is Cloud 컴퓨팅?
-On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, networking, software) over 그 internet 와 함께 pay-as-you-go pricing.
+온디맨드 컴퓨팅 리소스 제공 (servers, storage, databases, networking, software) 인터넷을 통한 종량제 가격 책정.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
@@ -31,7 +31,7 @@ On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, network
 #### Infrastructure as a Service (IaaS)
 - **Provides**: Virtual machines, storage, networks, operating 시스템
 - **예시**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-와-shift migrations, 개발 environments, high-control needs
+- **Use Cases**: 리프트앤시프트 마이그레이션, 개발 environments, high-control needs
 
 #### Platform as a Service (PaaS)
 - **Provides**: 개발 platforms, databases, middleware
@@ -85,7 +85,7 @@ On-demand delivery 의 컴퓨팅 resources (servers, storage, databases, network
 - **Alibaba Cloud**: Dominant 에서 Asia-Pacific
 - **DigitalOcean**: Developer-friendly, simplified offerings
 
-## Cloud 아키텍처 Patterns
+## 클라우드 아키텍처 Patterns
 
 ### Well-Architected Framework Principles
 

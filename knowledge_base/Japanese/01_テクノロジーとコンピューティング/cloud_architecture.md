@@ -5,12 +5,12 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud アーキテクチャ
+# クラウドアーキテクチャ
 
-## Cloud コンピューティング 基礎
+## クラウドコンピューティングの基礎
 
 ### What is Cloud コンピューティング?
-On-demand delivery の コンピューティング resources (servers, storage, databases, networking, software) over その internet と pay-as-you-go pricing.
+オンデマンドでのコンピューティングリソースの提供 (servers, storage, databases, networking, software) インターネット経由で従量課金制.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
@@ -31,7 +31,7 @@ On-demand delivery の コンピューティング resources (servers, storage, 
 #### Infrastructure as a Service (IaaS)
 - **Provides**: Virtual machines, storage, networks, operating システム
 - **例**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-と-shift migrations, 開発 environments, high-control needs
+- **Use Cases**: リフトアンドシフト移行, 開発 environments, high-control needs
 
 #### Platform as a Service (PaaS)
 - **Provides**: 開発 platforms, databases, middleware
@@ -85,7 +85,7 @@ On-demand delivery の コンピューティング resources (servers, storage, 
 - **Alibaba Cloud**: Dominant で Asia-Pacific
 - **DigitalOcean**: Developer-friendly, simplified offerings
 
-## Cloud アーキテクチャ Patterns
+## クラウドアーキテクチャ Patterns
 
 ### Well-Architected Framework Principles
 

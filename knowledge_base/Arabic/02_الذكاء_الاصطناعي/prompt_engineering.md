@@ -39,7 +39,7 @@ Tell ال model what to do, not what to avoid. "Don't include jargon" is weaker 
 ## Prompt Structures
 
 ### System / User / Assistant Roles
-Most LLM APIs الدعم a multi-turn structure:
+Most LLM واجهات البرمجة الدعم a multi-turn structure:
 
 - **System message**: Sets ال model's behaviour, persona, و constraints (persists لأجل ال whole session).
 - **User message**: ال current query or instruction.
@@ -74,7 +74,7 @@ Encourage ال model to show its reasoning step by step. This improves accuracy 
 
 ### Structured Outputs
 Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
-User: List three pros و three cons من microservices. Return only a valid JSON object مع keys "pros" و "cons", each an array من strings.
+User: List three pros و three cons من الخدمات المصغرة. Return only a valid JSON object مع keys "pros" و "cons", each an array من strings.
 
 ---
 

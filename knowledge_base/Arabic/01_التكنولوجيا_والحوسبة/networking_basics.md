@@ -454,7 +454,7 @@ text
 │ │ └───── Day of month (1-31)
 │ └─────── Hour (0-23)
 └───────── Minute (0-59)
-Examples
+أمثلة
 cron
 # Every 5 minutes
 */5 * * * * /path/to/script

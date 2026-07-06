@@ -5,48 +5,48 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud العمارة
+# عمارة الحوسبة السحابية
 
-## Cloud الحوسبة الأساسيات
+## أساسيات الحوسبة السحابية
 
 ### What is Cloud الحوسبة?
-On-demand delivery من الحوسبة resources (servers, storage, databases, networking, software) over ال internet مع pay-as-you-go pricing.
+تسليم حسب الطلب لموارد الحوسبة (الخوادم، التخزين، قواعد البيانات، الشبكات، البرمجيات) عبر الإنترنت مع تسعير الدفع حسب الاستخدام.
 
 ### Essential Characteristics (NIST Definition)
 - **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad الشبكة Access**: متاح over الشبكة via standard mechanisms
-- **Resource Pooling**: Multi-tenant model مع dynamic assignment
-- **Rapid Elasticity**: Scale outward و inward rapidly
-- **Measured Service**: Resource usage monitored و billed
+- **الوصول الواسع للشبكة**: متاح عبر الشبكة عبر الآليات القياسية
+- **Resource Pooling**: نموذج متعدد المستأجرين مع التعيين الديناميكي
+- **Rapid Elasticity**: التوسع والتقلص بسرعة
+- **Measured Service**: مراقبة استخدام الموارد وإصدار الفواتير
 
-### Cloud النشر Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination من public و private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations مع common concerns
+### نماذج نشر الحوسبة السحابية
+- **الحوسبة السحابية العامة**: مملوكة من قبل المزودين، بنية تحتية مشتركة (AWS, Azure, GCP)
+- **الحوسبة السحابية الخاصة**: مخصصة لمنظمة واحدة (محلية أو مستضافة)
+- **الحوسبة السحابية الهجينة**: مزيج من الحوسبة السحابية العامة والخاصة
+- **حوسبة سحابية متعددة**: استخدام مزودي حوسبة سحابية عامة متعددين
+- **حوسبة سحابية مجتمعية**: مشتركة بين منظمات ذات اهتمامات مشتركة
 
-### Service Models
+### نماذج الخدمة
 
-#### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating الأنظمة
+#### البنية التحتية كخدمة (IaaS)
+- **يوفر**: آلات افتراضية, storage, networks, أنظمة التشغيل
 - **أمثلة**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-و-shift migrations, التطوير environments, high-control needs
+- **حالات الاستخدام**: هجرات الرفع والنقل, بيئات التطوير, احتياجات تحكم عالي
 
-#### Platform as a Service (PaaS)
-- **Provides**: التطوير platforms, databases, middleware
+#### المنصة كخدمة (PaaS)
+- **يوفر**: التطوير platforms, databases, برمجيات وسيطة
 - **أمثلة**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application التطوير, API النشر, microservices
+- **حالات الاستخدام**: تطوير التطبيقات, نشر واجهات البرمجة, الخدمات المصغرة
 
-#### Software as a Service (SaaS)
-- **Provides**: مكتمل applications over internet
+#### البرمجيات كخدمة (SaaS)
+- **يوفر**: مكتمل applications over internet
 - **أمثلة**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, الأعمال applications
+- **حالات الاستخدام**: البريد الإلكتروني, إدارة علاقات العملاء, التعاون, الأعمال applications
 
-#### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
+#### الدالة كخدمة (FaaS) / بدون خادم
+- **يوفر**: تنفيذ الدوال المدفوعة بالأحداث
 - **أمثلة**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+- **حالات الاستخدام**: معالجة الأحداث, واجهات البرمجة, مهام مجدولة, معالجة في الوقت الفعلي
 
 ## Major Cloud Providers
 
@@ -85,7 +85,7 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 - **Alibaba Cloud**: Dominant في Asia-Pacific
 - **DigitalOcean**: Developer-friendly, simplified offerings
 
-## Cloud العمارة Patterns
+## عمارة الحوسبة السحابية Patterns
 
 ### Well-Architected Framework Principles
 
@@ -128,7 +128,7 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 #### Microservices العمارة
 - Decompose applications into small, independent services
 - Each service owns its البيانات و logic
-- Communicate via APIs (REST, gRPC, messaging)
+- Communicate via واجهات البرمجة (REST, gRPC, messaging)
 - Deploy independently
 - **Benefits**: Scalability, fault isolation, التكنولوجيا diversity
 - **Challenges**: Distributed complexity, البيانات consistency, monitoring
@@ -138,15 +138,15 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 - Producers emit الأحداث, consumers react
 - **Patterns**: Event sourcing, CQRS, pub/sub
 - **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, real-time processing
+- **Benefits**: Loose coupling, scalability, معالجة في الوقت الفعلي
 
-#### Serverless العمارة
+#### بدون خادم العمارة
 - No server الإدارة required
 - Pay per execution
 - Automatic scaling
 - **Components**: Functions, API Gateway, managed services
 - **Benefits**: Cost efficiency, reduced operations, rapid النشر
-- **Considerations**: Cold starts, vendor lock-في, execution limits
+- **Considerations**: Cold starts, vendor lock-in, execution limits
 
 #### Layered العمارة (N-Tier)
 - Presentation layer (UI)
@@ -160,7 +160,7 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 - Handle high concurrency مع distributed البيانات
 - Virtualized memory across servers
 - Processing nodes scale independently
-- **Use Cases**: High-volume, low-latency applications
+- **حالات الاستخدام**: High-volume, low-latency applications
 
 ## Compute Services
 
@@ -176,10 +176,10 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 - **Benefits**: Portability, efficiency, consistency
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
-### Serverless Functions
+### بدون خادم Functions
 - **Execution Model**: Event-triggered, stateless
 - **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
+- **حالات الاستخدام**: واجهات البرمجة, file processing, scheduled jobs, IoT backends
 - **Monitoring**: Invocation counts, errors, duration, cold starts
 
 ## Storage Solutions
@@ -187,24 +187,24 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 ### Object Storage
 - **Characteristics**: Flat structure, metadata, HTTP access
 - **أمثلة**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, البيانات lakes, archives
+- **حالات الاستخدام**: Static assets, backups, البيانات lakes, archives
 - **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
 
 ### Block Storage
 - **Characteristics**: Raw volumes, attached to VMs
 - **أمثلة**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Databases, boot volumes, high-الأداء needs
+- **حالات الاستخدام**: Databases, boot volumes, high-الأداء needs
 - **Types**: SSD, HDD, provisioned IOPS
 
 ### File Storage
 - **Characteristics**: Shared file الأنظمة, NFS/SMB protocols
 - **أمثلة**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content الإدارة, shared configs, lift-و-shift
+- **حالات الاستخدام**: Content الإدارة, shared configs, lift-و-shift
 
 ### Archive Storage
 - **Characteristics**: Lowest cost, retrieval delays
 - **أمثلة**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical البيانات
+- **حالات الاستخدام**: Compliance, long-term backups, historical البيانات
 
 ## قاعدة البيانات Services
 
@@ -222,12 +222,12 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 ### البيانات Warehousing
 - **Services**: Snowflake, Redshift, BigQuery, Synapse
 - **Characteristics**: Columnar storage, MPP العمارة
-- **Use Cases**: Analytics, BI, large-scale البيانات analysis
+- **حالات الاستخدام**: Analytics, BI, large-scale البيانات analysis
 
 ### Caching Services
 - **في-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
 - **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query caching, content delivery
+- **حالات الاستخدام**: Session storage, query caching, content delivery
 
 ## Networking
 
@@ -377,10 +377,10 @@ On-demand delivery من الحوسبة resources (servers, storage, databases, n
 ### Edge الحوسبة
 - Process البيانات closer to source
 - **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **Use Cases**: IoT, real-time analytics, low-latency applications
+- **حالات الاستخدام**: IoT, real-time analytics, low-latency applications
 
-### Multi-Cloud و Hybrid Cloud
-- Avoid vendor lock-في
+### حوسبة سحابية متعددة و الحوسبة السحابية الهجينة
+- Avoid vendor lock-in
 - Leverage best-من-breed services
 - **Tools**: Terraform, Anthos, Arc, CloudHealth
 

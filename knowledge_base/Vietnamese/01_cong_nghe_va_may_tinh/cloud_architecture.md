@@ -32,7 +32,7 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **Trường hợp sử dụng**: Phát triển ứng dụng, triển khai API, vi dịch vụ
 
 #### Phần mềm dưới dạng dịch vụ (SaaS)
-- **Cung cấp**: Hoàn thiện hồ sơ qua internet
+- **Cung cấp**: Cung cấp: Qua internet
 - **Ví dụ**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Trường hợp sử dụng**: Email, CRM, ứng dụng cộng tác, kinh doanh
 
