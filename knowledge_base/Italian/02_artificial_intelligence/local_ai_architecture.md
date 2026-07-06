@@ -52,7 +52,7 @@ La quantizzazione riduce la precisione numerica dei pesi, riducendo drasticament
 ### Formati popolari
 
 | Formato | Bit | Descrizione | Uso tipico |
-|--------|------|-----|-----|
+|--------|------|-----|-------------|
 | **GGUF** | 4–8 | Formato llama.cpp, ottimizzato per CPU/GPU ibrida | Ideale per l'inferenza locale |
 | **GPTQ** | 4–8 | Solo GPU, efficiente su CUDA | Il meglio per le GPU NVIDIA |
 | **AWQ** | 4| Con riconoscimento dell'attivazione, solo GPU | Buono per l'inferenza batch sulle GPU |
