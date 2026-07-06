@@ -90,7 +90,7 @@ This repository serves as a foundational framework for AI agent development, pro
 └── README.md                # This file
 ```
 
-Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits.
+Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits. Or open a branch and ask me to translate it for you.
 
 ---
 
@@ -395,7 +395,6 @@ YAML frontmatter with configuration:
 ---
 name: ModeName
 description: What this mode does
-target: vscode
 tools: ['list', 'of', 'tools']
 ---
 
@@ -434,7 +433,7 @@ We welcome contributions! Please follow these guidelines:
 ### Contribution Areas
 - 📚 New knowledge files
 - 🛠️ New skill definitions
-- 🌍 Translations for existing content
+- 🌍 More translations for existing content
 - 🐛 Bug fixes and corrections
 - 📝 Documentation improvements
 
@@ -457,7 +456,7 @@ For questions, suggestions, or issues:
 
 <div align="center">
 
-**Built with ❤️ for the local and open source AI community**
+**Built with ❤️ for the local and open source local AI community**
 
 [⬆ Back to Top ⬆](#ai-model-training-essentials)
 
