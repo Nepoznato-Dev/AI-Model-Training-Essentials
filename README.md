@@ -456,8 +456,8 @@ For questions, suggestions, or issues:
 
 <div align="center">
 
-**Built with ❤️ for the local and open source local AI community**
+**Built with ♡ for the local and open source local AI community**
 
-[⬆ Back to Top ⬆](#ai-model-training-essentials)
+[↑ Back to Top ↑](#ai-model-training-essentials)
 
 </div>
