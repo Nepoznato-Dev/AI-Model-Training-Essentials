@@ -1,9 +1,16 @@
+```markdown
 ```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
 *.o
 *.obj
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
 dist/
 build/
 target/
@@ -14,6 +21,9 @@ venv/
 node_modules/
 .mypy_cache/
 .pytest_cache/
+dist/
+build/
+target/
 .gradle/
 
 # Logs and temp files
@@ -30,6 +40,8 @@ node_modules/
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # System files
 .DS_Store
