@@ -1,4 +1,4 @@
-```markdown
+```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
@@ -31,13 +31,11 @@ target/
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # System files
 .DS_Store
