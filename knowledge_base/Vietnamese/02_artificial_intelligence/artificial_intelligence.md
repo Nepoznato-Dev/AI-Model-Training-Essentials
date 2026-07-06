@@ -1,4 +1,4 @@
-#trí tuệ nhân tạo
+# trí tuệ nhân tạo
 
 ## Trí tuệ nhân tạo là gì?
 
