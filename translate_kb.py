@@ -28,8 +28,8 @@ TARGET_LANGUAGES = {
     "Italian": "it",
 }
 
-# Folders to translate (starting with 01)
-FOLDERS_TO_TRANSLATE = ["01_technology_and_computing"]
+# Folders to translate (starting with 02)
+FOLDERS_TO_TRANSLATE = ["02_artificial_intelligence"]
 
 # Retry settings
 MAX_RETRIES = 3
