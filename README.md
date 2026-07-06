@@ -41,8 +41,7 @@ This repository serves as a foundational framework for AI agent development, pro
 
 ```
 /workspace
-├── knowledge_base/           # Multi-language knowledge files
-├── knowledge_base/           # Multi-language knowledge files
+├── knowledge_base/          # Multi-language knowledge files
 │   ├── Arabic/              # Arabic knowledge base
 │   ├── English/             # English knowledge base (36 files)
 │   ├── French/              # French knowledge base
@@ -62,7 +61,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Turkish/             # Turkish knowledge base
 │   ├── Vietnamese/          # Vietnamese knowledge base
 │   └── 6 planned languages are documented in the Multi-Language Support table below, in addition to the 18 existing directories above.
-├── skills/                   # AI agent skill definitions
+├── skills/                  # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
 │   ├── data-skills/         # Data handling
@@ -90,7 +89,7 @@ This repository serves as a foundational framework for AI agent development, pro
 └── README.md                # This file
 ```
 
-Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits, you can also open a branch and ask me to translate it for you.
+Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits, you can also open a issue and ask me to translate it for you.
 
 ---
 
