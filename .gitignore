@@ -15,12 +15,10 @@ __pycache__/
 .venv/
 venv/
 node_modules/
-target/
-.gradle/
 .mypy_cache/
 .pytest_cache/
-dist/
-build/
+target/
+.gradle/
 
 # Logs and temp files
 *.log
@@ -28,7 +26,7 @@ build/
 *.swp
 *.swo
 
-# Environment variables
+# Environment
 .env
 .env.local
 .env.*
