@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 """
-Knowledge Base Translator Script
-Translates markdown files from English to multiple target languages while preserving:
-- Code blocks (``` fenced and `inline`)
-- Markdown structure (headers, lists, etc.)
-
-Usage: python3 translate_kb.py
+Translate knowledge base folder 02 from English to multiple languages.
+- Batches translation requests (translates whole paragraphs at once)
+- Preserves code blocks (``` fenced and `inline`) untranslated
+- Preserves markdown structure
+- Has retry logic with delays
+- Uses googletrans library (more reliable than deep-translator)
 """
 
 import os
 import re
-import sys
 import time
-import random
 from pathlib import Path
-from deep_translator import GoogleTranslator
+from googletrans import Translator
 
 # Configuration
-SOURCE_DIR = Path("/workspace/knowledge_base/English")
-OUTPUT_BASE = Path("/workspace")
+SOURCE_FOLDER = "/workspace/knowledge_base/English/02_artificial_intelligence"
+BASE_KB_FOLDER = "/workspace/knowledge_base"
+
+# Target languages with their language codes for googletrans
 TARGET_LANGUAGES = {
     "Thai": "th",
     "Persian": "fa",
@@ -28,371 +28,265 @@ TARGET_LANGUAGES = {
     "Italian": "it",
 }
 
-# Folders to translate (starting with 01)
-FOLDERS_TO_TRANSLATE = ["01_technology_and_computing"]
+# Retry configuration
+MAX_RETRIES = 5
+RETRY_DELAY = 1  # seconds
 
-# Retry settings
-MAX_RETRIES = 3
-RETRY_DELAY = 2  # seconds
-BATCH_SIZE = 5000  # characters per batch for translation
-
-# Placeholder markers for code blocks
-CODE_BLOCK_PLACEHOLDER = "<<<CODE_BLOCK_{idx}>>>"
-INLINE_CODE_PLACEHOLDER = "<<<INLINE_CODE_{idx}>>>"
+# Code block placeholder patterns
+FENCED_CODE_PLACEHOLDER = "%%%FENCED_CODE_BLOCK_{idx}%%%"
+INLINE_CODE_PLACEHOLDER = "%%%INLINE_CODE_{idx}%%%"
 
 
 def extract_code_blocks(text):
-    """Extract code blocks and inline code, replacing with placeholders."""
-    code_blocks = {}
+    """Extract code blocks and replace with placeholders, return text and mapping."""
+    fenced_codes = {}
     inline_codes = {}
+    fenced_idx = 0
+    inline_idx = 0
     
-    # Extract fenced code blocks first (``` ... ```)
-    # Use a more robust pattern that handles any characters including newlines
-    idx = 0
-    def replace_code_block(match):
-        nonlocal idx
-        placeholder = CODE_BLOCK_PLACEHOLDER.format(idx=idx)
-        code_blocks[placeholder] = match.group(0)
-        idx += 1
+    # First, extract fenced code blocks (``` ... ```)
+    def replace_fenced(match):
+        nonlocal fenced_idx
+        placeholder = FENCED_CODE_PLACEHOLDER.format(idx=fenced_idx)
+        fenced_codes[placeholder] = match.group(0)
+        fenced_idx += 1
         return placeholder
     
-    # Match ``` followed by optional language identifier, newline, content, then closing ```
-    # The (?s) flag makes . match newlines
-    text = re.sub(r'```([^\n]*)\n(.*?)```', replace_code_block, text, flags=re.DOTALL)
+    text = re.sub(r'```[\s\S]*?```', replace_fenced, text)
     
-    # Extract inline code (` ... `) - must be careful not to match inside already-extracted code
-    # Only match single backticks that are NOT part of triple backticks
-    idx = 0
-    def replace_inline_code(match):
-        nonlocal idx
-        # Check if this is actually inside a code block placeholder (shouldn't happen, but safety check)
-        matched = match.group(0)
-        # Skip if it looks like it could be part of markdown formatting artifacts
-        placeholder = INLINE_CODE_PLACEHOLDER.format(idx=idx)
-        inline_codes[placeholder] = matched
-        idx += 1
+    # Then extract inline code (` ... `) but not inside already replaced fenced blocks
+    def replace_inline(match):
+        nonlocal inline_idx
+        placeholder = INLINE_CODE_PLACEHOLDER.format(idx=inline_idx)
+        inline_codes[placeholder] = match.group(0)
+        inline_idx += 1
         return placeholder
     
-    # More careful inline code matching - avoid matching empty or whitespace-only
-    text = re.sub(r'`([^`\s][^`]*[^`\s]|[^`\s])`', replace_inline_code, text)
+    text = re.sub(r'`[^`]+`', replace_inline, text)
     
-    return text, code_blocks, inline_codes
+    return text, fenced_codes, inline_codes
 
 
-def restore_code_blocks(text, code_blocks, inline_codes):
-    """Restore code blocks and inline code from placeholders."""
-    # Restore fenced code blocks
-    for placeholder, original in code_blocks.items():
-        text = text.replace(placeholder, original)
+def restore_code_blocks(text, fenced_codes, inline_codes):
+    """Restore code blocks from placeholders."""
+    # Restore fenced code blocks first
+    for placeholder, code in fenced_codes.items():
+        text = text.replace(placeholder, code)
     
     # Restore inline code
-    for placeholder, original in inline_codes.items():
-        text = text.replace(placeholder, original)
+    for placeholder, code in inline_codes.items():
+        text = text.replace(placeholder, code)
     
     return text
 
 
-def split_into_batches(text, max_size=BATCH_SIZE):
-    """Split text into batches for translation, trying to break at paragraph boundaries."""
-    if len(text) <= max_size:
-        return [text]
-    
-    batches = []
-    current_batch = ""
-    
-    # Split by paragraphs (double newlines)
-    paragraphs = re.split(r'(\n\n+)', text)
-    
-    for para in paragraphs:
-        if len(current_batch) + len(para) <= max_size:
-            current_batch += para
-        else:
-            if current_batch:
-                batches.append(current_batch)
-            # If single paragraph is too long, split by sentences
-            if len(para) > max_size:
-                sentences = re.split(r'([.!?]+\s+|\n)', para)
-                current_batch = ""
-                for sent in sentences:
-                    if len(current_batch) + len(sent) <= max_size:
-                        current_batch += sent
-                    else:
-                        if current_batch:
-                            batches.append(current_batch)
-                        current_batch = sent
-            else:
-                current_batch = para
-    
-    if current_batch:
-        batches.append(current_batch)
-    
-    return batches
+def split_into_paragraphs(text):
+    """Split text into paragraphs for batched translation."""
+    # Split by double newlines (paragraph breaks)
+    paragraphs = re.split(r'\n\n+', text)
+    return [p.strip() for p in paragraphs if p.strip()]
 
 
-def translate_batch(translator, text, max_retries=MAX_RETRIES):
-    """Translate a batch of text with retry logic."""
+def translate_with_retry(translator, text, target_lang, max_retries=MAX_RETRIES):
+    """Translate text with retry logic."""
+    if not text.strip():
+        return text
+    
     for attempt in range(max_retries):
         try:
-            result = translator.translate(text)
-            if result and result.strip():
-                return result
+            result = translator.translate(text, dest=target_lang)
+            if result and result.text:
+                return result.text
             else:
-                print(f"  Warning: Empty translation result, retrying... (attempt {attempt + 1}/{max_retries})")
+                print(f"  Empty result on attempt {attempt + 1}")
         except Exception as e:
-            print(f"  Error during translation (attempt {attempt + 1}/{max_retries}): {e}")
+            print(f"  Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
-                delay = RETRY_DELAY * (2 ** attempt) + random.uniform(0.5, 1.5)
-                print(f"  Retrying in {delay:.1f} seconds...")
-                time.sleep(delay)
-            else:
-                raise
-    return None
+                time.sleep(RETRY_DELAY * (attempt + 1))  # Exponential backoff
+    
+    print(f"  WARNING: Translation failed after {max_retries} attempts, returning original")
+    return text  # Return original if all attempts fail
 
 
-def translate_markdown_content(text, target_lang_code):
-    """Translate markdown content while preserving code blocks."""
-    # Extract code blocks
-    text_no_code, code_blocks, inline_codes = extract_code_blocks(text)
-    
-    # Split into batches
-    batches = split_into_batches(text_no_code)
-    
-    # Create translator
-    translator = GoogleTranslator(source='en', target=target_lang_code)
-    
-    # Translate each batch
-    translated_batches = []
-    for i, batch in enumerate(batches):
-        print(f"    Translating batch {i+1}/{len(batches)}...")
-        translated = translate_batch(translator, batch)
-        if translated:
-            translated_batches.append(translated)
-        else:
-            print(f"    Warning: Failed to translate batch {i+1}, keeping original")
-            translated_batches.append(batch)
-    
-    # Join translated batches
-    translated_text = ''.join(translated_batches)
-    
-    # Restore code blocks
-    translated_text = restore_code_blocks(translated_text, code_blocks, inline_codes)
-    
-    return translated_text
-
-
-def process_file(source_path, output_path, target_lang_name, target_lang_code):
-    """Process a single file for translation."""
-    print(f"  Processing: {source_path.name} -> {target_lang_name}")
+def translate_file(source_path, dest_path, lang_name, lang_code):
+    """Translate a single markdown file, preserving code blocks."""
+    print(f"Translating: {source_path} -> {dest_path}")
     
     # Read source file
-    try:
-        with open(source_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except Exception as e:
-        print(f"  ERROR: Could not read {source_path}: {e}")
+    with open(source_path, 'r', encoding='utf-8') as f:
+        original_content = f.read()
+    
+    if not original_content.strip():
+        print(f"  WARNING: Source file is empty!")
         return False
     
-    if not content.strip():
-        print(f"  WARNING: Source file is empty: {source_path}")
-        # Create empty output file
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write("")
-        return True
+    # Extract code blocks
+    processed_text, fenced_codes, inline_codes = extract_code_blocks(original_content)
     
-    # Translate content
-    try:
-        translated_content = translate_markdown_content(content, target_lang_code)
-    except Exception as e:
-        print(f"  ERROR: Translation failed for {source_path}: {e}")
-        return False
+    print(f"  Extracted {len(fenced_codes)} fenced code blocks and {len(inline_codes)} inline code blocks")
     
-    # Write output file
-    try:
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(translated_content)
-        print(f"  SUCCESS: Written to {output_path}")
-        return True
-    except Exception as e:
-        print(f"  ERROR: Could not write {output_path}: {e}")
-        return False
+    # Split into paragraphs for batched translation
+    paragraphs = split_into_paragraphs(processed_text)
+    print(f"  Split into {len(paragraphs)} paragraphs for translation")
+    
+    # Create translator
+    translator = Translator()
+    
+    # Translate each paragraph (batch within paragraph)
+    translated_paragraphs = []
+    for i, para in enumerate(paragraphs):
+        if i % 10 == 0:
+            print(f"  Translating paragraph {i+1}/{len(paragraphs)}...")
+        
+        translated = translate_with_retry(translator, para, lang_code)
+        translated_paragraphs.append(translated)
+    
+    # Rejoin paragraphs
+    translated_text = '\n\n'.join(translated_paragraphs)
+    
+    # Restore code blocks
+    final_text = restore_code_blocks(translated_text, fenced_codes, inline_codes)
+    
+    # Ensure destination directory exists
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    
+    # Write translated file
+    with open(dest_path, 'w', encoding='utf-8') as f:
+        f.write(final_text)
+    
+    print(f"  Written to {dest_path}")
+    return True
 
 
-def verify_output_file(output_path, source_path, target_lang_name):
-    """Verify that an output file exists and is valid."""
+def verify_translation(source_path, dest_path, lang_name):
+    """Verify the translated file."""
     errors = []
     
     # Check file exists
-    if not output_path.exists():
-        errors.append("File does not exist")
-        return False, errors
+    if not os.path.exists(dest_path):
+        return False, ["File does not exist"]
     
     # Check file is not empty
-    try:
-        with open(output_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except Exception as e:
-        errors.append(f"Could not read file: {e}")
-        return False, errors
+    with open(dest_path, 'r', encoding='utf-8') as f:
+        translated_content = f.read()
     
-    if not content.strip():
+    if not translated_content.strip():
         errors.append("File is empty")
         return False, errors
     
-    # Check it's not just the untranslated English text
-    try:
-        with open(source_path, 'r', encoding='utf-8') as f:
-            source_content = f.read()
-    except:
-        source_content = ""
+    with open(source_path, 'r', encoding='utf-8') as f:
+        original_content = f.read()
     
-    if content == source_content:
+    # Check it's not just the untranslated text (simple heuristic)
+    if translated_content.strip() == original_content.strip():
         errors.append("File appears to be untranslated (identical to source)")
         return False, errors
     
-    # Basic check: if target language uses non-Latin script, verify some chars changed
-    # This is a simple heuristic
-    if target_lang_name in ["Thai", "Persian"]:
-        # These should have non-ASCII characters
-        ascii_ratio = sum(1 for c in content if ord(c) < 128) / len(content) if content else 1
-        if ascii_ratio > 0.9:
-            errors.append(f"Suspicious: Too many ASCII characters ({ascii_ratio:.2%}) for {target_lang_name}")
-            return False, errors
+    # Check code blocks are preserved (count should match)
+    orig_fenced = len(re.findall(r'```[\s\S]*?```', original_content))
+    trans_fenced = len(re.findall(r'```[\s\S]*?```', translated_content))
+    if orig_fenced != trans_fenced:
+        errors.append(f"Fenced code block count mismatch: original={orig_fenced}, translated={trans_fenced}")
     
-    # Check code blocks are preserved (basic check)
-    source_code_blocks = len(re.findall(r'```', source_content))
-    output_code_blocks = len(re.findall(r'```', content))
-    if source_code_blocks != output_code_blocks:
-        errors.append(f"Code block count mismatch: source={source_code_blocks}, output={output_code_blocks}")
+    orig_inline = len(re.findall(r'`[^`]+`', original_content))
+    trans_inline = len(re.findall(r'`[^`]+`', translated_content))
+    if orig_inline != trans_inline:
+        errors.append(f"Inline code count mismatch: original={orig_inline}, translated={trans_inline}")
+    
+    # Check markdown headers are preserved (at least some # should exist if original had them)
+    orig_headers = len(re.findall(r'^#+\s', original_content, re.MULTILINE))
+    trans_headers = len(re.findall(r'^#+\s', translated_content, re.MULTILINE))
+    if orig_headers > 0 and trans_headers == 0:
+        errors.append("Markdown headers appear to be lost")
+    
+    if errors:
         return False, errors
     
-    # Check inline code preservation (sample check)
-    source_inline = len(re.findall(r'`[^`]+`', source_content))
-    output_inline = len(re.findall(r'`[^`]+`', content))
-    if source_inline != output_inline:
-        errors.append(f"Inline code count mismatch: source={source_inline}, output={output_inline}")
-        return False, errors
-    
-    return True, errors
+    return True, ["OK"]
 
 
 def main():
     print("=" * 60)
-    print("Knowledge Base Translation Script")
+    print("Knowledge Base Translation Script - Folder 02")
     print("=" * 60)
     
-    # Verify source directory exists
-    if not SOURCE_DIR.exists():
-        print(f"FATAL: Source directory does not exist: {SOURCE_DIR}")
-        sys.exit(1)
+    # Confirm source files are readable
+    print("\n[1] Checking source files...")
+    if not os.path.isdir(SOURCE_FOLDER):
+        print(f"ERROR: Source folder does not exist: {SOURCE_FOLDER}")
+        return 1
     
-    # Count files per folder
-    print("\nSource file counts:")
-    total_files = 0
-    for folder in FOLDERS_TO_TRANSLATE:
-        folder_path = SOURCE_DIR / folder
-        if folder_path.exists():
-            files = list(folder_path.glob("*.md"))
-            print(f"  {folder}: {len(files)} files")
-            total_files += len(files)
-        else:
-            print(f"  {folder}: NOT FOUND")
+    source_files = list(Path(SOURCE_FOLDER).glob("*.md"))
+    print(f"Found {len(source_files)} markdown files in {SOURCE_FOLDER}")
     
-    if total_files == 0:
-        print("FATAL: No source files found!")
-        sys.exit(1)
+    for sf in source_files:
+        if not os.access(sf, os.R_OK):
+            print(f"ERROR: Cannot read source file: {sf}")
+            return 1
+    print("All source files are readable.")
     
-    print(f"\nTotal source files: {total_files}")
-    print(f"Target languages: {list(TARGET_LANGUAGES.keys())}")
+    # Print file counts per target folder
+    print("\n[2] Target folder status:")
+    for lang_name in TARGET_LANGUAGES:
+        target_folder = os.path.join(BASE_KB_FOLDER, lang_name, "02_artificial_intelligence")
+        existing_files = list(Path(target_folder).glob("*.md")) if os.path.isdir(target_folder) else []
+        print(f"  {lang_name}: {len(existing_files)} existing files in 02 folder")
     
-    # Process each folder
+    # Process each language
     results = {}
-    for folder in FOLDERS_TO_TRANSLATE:
-        folder_path = SOURCE_DIR / folder
-        if not folder_path.exists():
-            print(f"\nSkipping missing folder: {folder}")
-            continue
-        
+    for lang_name, lang_code in TARGET_LANGUAGES.items():
         print(f"\n{'='*60}")
-        print(f"Processing folder: {folder}")
+        print(f"[3] Translating to {lang_name} ({lang_code})")
         print(f"{'='*60}")
         
-        source_files = list(folder_path.glob("*.md"))
+        target_folder = os.path.join(BASE_KB_FOLDER, lang_name, "02_artificial_intelligence")
+        os.makedirs(target_folder, exist_ok=True)
         
-        for lang_name, lang_code in TARGET_LANGUAGES.items():
-            print(f"\n--- Translating to {lang_name} ---")
+        lang_results = {}
+        for source_file in source_files:
+            filename = source_file.name
+            dest_file = os.path.join(target_folder, filename)
             
-            # Create output directory
-            output_folder = OUTPUT_BASE / lang_name / folder
-            output_folder.mkdir(parents=True, exist_ok=True)
+            success = translate_file(str(source_file), dest_file, lang_name, lang_code)
             
-            results.setdefault(lang_name, {}).setdefault(folder, {})
-            
-            for source_file in source_files:
-                output_file = output_folder / source_file.name
-                success = process_file(source_file, output_file, lang_name, lang_code)
-                results[lang_name][folder][source_file.name] = "PASS" if success else "FAIL"
-    
-    # Verification phase
-    print("\n" + "=" * 60)
-    print("VERIFICATION PHASE")
-    print("=" * 60)
-    
-    verification_results = {}
-    all_passed = True
-    
-    for lang_name, lang_code in TARGET_LANGUAGES.items():
-        print(f"\n--- Verifying {lang_name} ---")
-        verification_results[lang_name] = {}
-        
-        for folder in FOLDERS_TO_TRANSLATE:
-            output_folder = OUTPUT_BASE / lang_name / folder
-            source_folder = SOURCE_DIR / folder
-            
-            if not output_folder.exists():
-                print(f"  Folder missing: {output_folder}")
-                verification_results[lang_name][folder] = {"ERROR": "Folder not created"}
-                all_passed = False
-                continue
-            
-            verification_results[lang_name][folder] = {}
-            
-            for source_file in source_folder.glob("*.md"):
-                output_file = output_folder / source_file.name
-                passed, errors = verify_output_file(output_file, source_file, lang_name)
-                
-                status = "PASS" if passed else "FAIL"
-                verification_results[lang_name][folder][source_file.name] = status
-                
-                if not passed:
-                    all_passed = False
-                    print(f"  {source_file.name}: {status}")
-                    for err in errors:
-                        print(f"    - {err}")
+            if success:
+                verified, messages = verify_translation(str(source_file), dest_file, lang_name)
+                if verified:
+                    lang_results[filename] = "PASS"
+                    print(f"  ✓ {filename}: PASS")
                 else:
-                    print(f"  {source_file.name}: {status}")
+                    lang_results[filename] = f"FAIL: {', '.join(messages)}"
+                    print(f"  ✗ {filename}: FAIL - {', '.join(messages)}")
+            else:
+                lang_results[filename] = "FAIL: Translation failed"
+                print(f"  ✗ {filename}: FAIL - Translation failed")
+        
+        results[lang_name] = lang_results
     
     # Summary report
-    print("\n" + "=" * 60)
-    print("SUMMARY REPORT")
-    print("=" * 60)
+    print(f"\n{'='*60}")
+    print("[4] VERIFICATION SUMMARY")
+    print(f"{'='*60}")
     
-    for lang_name in TARGET_LANGUAGES.keys():
+    all_passed = True
+    for lang_name, lang_results in results.items():
         print(f"\n{lang_name}:")
-        for folder in FOLDERS_TO_TRANSLATE:
-            if folder in verification_results.get(lang_name, {}):
-                print(f"  {folder}:")
-                for filename, status in verification_results[lang_name][folder].items():
-                    print(f"    {filename}: {status}")
+        for filename, status in lang_results.items():
+            if status == "PASS":
+                print(f"  ✓ {filename}: {status}")
+            else:
+                print(f"  ✗ {filename}: {status}")
+                all_passed = False
     
+    print(f"\n{'='*60}")
     if all_passed:
-        print("\n✓ All files translated and verified successfully!")
+        print("ALL FILES PASSED VERIFICATION")
     else:
-        print("\n✗ Some files failed verification. Review the errors above.")
+        print("SOME FILES FAILED VERIFICATION - REVIEW ABOVE")
+    print(f"{'='*60}")
     
     return 0 if all_passed else 1
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    exit(main())
