@@ -2,7 +2,7 @@
 
 > 🌍 **Multilingual Knowledge Base & AI Agent Configuration Repository**
 
-A comprehensive, structured knowledge base and configuration repository for AI agents, providing multi-language knowledge files, skill definitions, and agent mode configurations to enhance AI agent capabilities across diverse domains and interaction patterns.
+It is a organized central library that stores information, skills, and settings for AI agents. This helps them learn different languages, perform tasks, and adapt to different situations more effectively.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)
@@ -41,8 +41,7 @@ This repository serves as a foundational framework for AI agent development, pro
 
 ```
 /workspace
-├── knowledge_base/           # Multi-language knowledge files
-├── knowledge_base/           # Multi-language knowledge files
+├── knowledge_base/          # Multi-language knowledge files
 │   ├── Arabic/              # Arabic knowledge base
 │   ├── English/             # English knowledge base (36 files)
 │   ├── French/              # French knowledge base
@@ -62,7 +61,7 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Turkish/             # Turkish knowledge base
 │   ├── Vietnamese/          # Vietnamese knowledge base
 │   └── 6 planned languages are documented in the Multi-Language Support table below, in addition to the 18 existing directories above.
-├── skills/                   # AI agent skill definitions
+├── skills/                  # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
 │   ├── data-skills/         # Data handling
@@ -90,7 +89,7 @@ This repository serves as a foundational framework for AI agent development, pro
 └── README.md                # This file
 ```
 
-Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits.
+Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits, you can also open a issue and ask me to translate it for you.
 
 ---
 
@@ -279,7 +278,7 @@ The knowledge base supports **18 languages**: 18 currently available and 6 plann
 | Urdu | `Urdu/` | 🟡 Planned |
 | Tagalog (Filipino) | `Tagalog (Filipino)/` | 🟡 Planned |
 
-Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **before** or **During** September.
+Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **during** or **after** July.
 
 ---
 
@@ -395,7 +394,6 @@ YAML frontmatter with configuration:
 ---
 name: ModeName
 description: What this mode does
-target: vscode
 tools: ['list', 'of', 'tools']
 ---
 
@@ -434,7 +432,7 @@ We welcome contributions! Please follow these guidelines:
 ### Contribution Areas
 - 📚 New knowledge files
 - 🛠️ New skill definitions
-- 🌍 Translations for existing content
+- 🌍 More translations for existing content
 - 🐛 Bug fixes and corrections
 - 📝 Documentation improvements
 
@@ -457,8 +455,8 @@ For questions, suggestions, or issues:
 
 <div align="center">
 
-**Built with ❤️ for the local and open source AI community**
+**Built with ♡ for the local and open source local AI community**
 
-[⬆ Back to Top ⬆](#ai-model-training-essentials)
+[↑ Back to Top ↑](#ai-model-training-essentials)
 
 </div>
