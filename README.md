@@ -459,6 +459,6 @@ For questions, suggestions, or issues:
 
 **Built with ❤️ for the local and open source AI community**
 
-[⬆ Back to Top](#ai-model-training-essentials)
+[⬆ Back to Top ⬆](#ai-model-training-essentials)
 
 </div>
