@@ -25,27 +25,27 @@ W praktyce w Internecie częściej stosowany jest **model TCP/IP** (4 warstwy: �
 ## Adresowanie IP
 
 ### IPv4
-- 32-bitowy adres zapisany w postaci czterech oktetów: `192.168.1.1`
+- 32-bitowy adres zapisany w postaci czterech oktetów: INLINECODE_0_END
 - Razem: ~4,3 miliarda adresów (ale w praktyce wyczerpane).
 
 ### IPv6
-- Adres 128-bitowy, zapisany w formacie szesnastkowym: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Adres 128-bitowy zapisany w formacie szesnastkowym: INLINECODE_1_END
 - Łącznie: 2¹²⁸ adresów (praktycznie nieskończona liczba).
 
 ### Zakresy prywatnych adresów IP (RFC 1918)
 Nie można ich trasować w Internecie; używany w sieciach lokalnych:
-- `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
-- `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
-- `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
+- INLINECODE_2_END (10.0.0.0 – 10.255.255.255)
+- INLINECODE_3_END (172.16.0.0 – 172.31.255.255)
+- INLINECODE_4_END (192.168.0.0 – 192.168.255.255)
 
 ### Notacja CIDR
-`192.168.1.0/24` oznacza, że pierwsze 24 bity to prefiks sieci; ostatnie 8 bitów to hosty. Zawiera adresy `192.168.1.0` do `192.168.1.255`.
+INLINECODE_5_END oznacza, że pierwsze 24 bity to prefiks sieci; ostatnie 8 bitów to hosty. Zawiera adresy od INLINECODE_6_END do INLINECODE_7_END.
 
 ---
 
 ## DNS (system nazw domen)
 
-Mapuje nazwy domen (np. `example.com`) na adresy IP.
+Mapuje nazwy domen (np. INLINECODE_8_END) na adresy IP.
 
 ### Typy rekordów
 | Wpisz | Cel |
@@ -59,195 +59,7 @@ Mapuje nazwy domen (np. `example.com`) na adresy IP.
 | **SRV** | Historia służby (np. dla SIP) |
 
 ### Typowe narzędzia
-```bash
-dig example.com            # DNS lookup (detailed)
-nslookup example.com       # DNS lookup (simpler)
-host example.com           # Quick lookup
-dig -x 8.8.8.8             # Reverse lookup (IP to name)
-
-Ports and Protocols
-Well-Known Ports (0–1023)
-Port	Protocol	Service
-20, 21	TCP	FTP
-22	TCP	SSH
-23	TCP	Telnet
-25	TCP	SMTP
-53	UDP/TCP	DNS
-80	TCP	HTTP
-110	TCP	POP3
-123	UDP	NTP
-143	TCP	IMAP
-443	TCP	HTTPS
-465	TCP	SMTPS
-587	TCP	SMTP (submission)
-993	TCP	IMAPS
-995	TCP	POP3S
-3306	TCP	MySQL
-5432	TCP	PostgreSQL
-6379	TCP	Redis
-27017	TCP	MongoDB
-Check open ports
-bash
-ss -tulpn                 # Linux: listen and established sockets
-netstat -an               # Older tool
-lsof -i :8080             # See process using port 8080
-nmap localhost            # Scan local ports
-TCP vs UDP
-Feature	TCP	UDP
-Connection	Connection-oriented (handshake)	Connectionless
-Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
-Ordering	Preserves order	No ordering guarantee
-Flow control	Yes (sliding window)	No
-Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
-Header size	20–60 bytes	8 bytes
-HTTP and HTTPS
-HTTP Methods
-GET: Retrieve a resource (idempotent, safe).
-
-POST: Submit data (not idempotent).
-
-PUT: Update/replace a resource (idempotent).
-
-PATCH: Partial update.
-
-DELETE: Remove a resource (idempotent).
-
-Status Codes
-1xx: Informational (100 Continue).
-
-2xx: Success (200 OK, 201 Created, 204 No Content).
-
-3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
-
-4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
-
-5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
-
-Headers
-Content-Type: media type (application/json, text/html).
-
-Authorization: credentials (e.g., Bearer <token>).
-
-Cache-Control: caching policy.
-
-CORS headers: Access-Control-Allow-Origin, etc.
-
-TLS/SSL
-Encrypts HTTP traffic (HTTPS = HTTP over TLS).
-
-Certificates from Certificate Authorities (CAs) authenticate the server.
-
-Verify certificate chain and hostname on the client side.
-
-Firewalls and NAT
-Firewall
-Filters traffic based on rules (source IP, dest IP, port, protocol).
-
-Stateful firewalls track connection states.
-
-NAT (Network Address Translation)
-Translates private IPs to a public IP for internet access.
-
-Port forwarding: maps a public port to an internal host/port.
-
-Common Networking Commands
-Connectivity Tests
-bash
-ping google.com            # ICMP echo request
-ping -c 4 8.8.8.8          # ping 4 times
-traceroute google.com      # Trace the route (Linux)
-tracert google.com         # Windows version
-Routing
-bash
-ip route show              # Linux: routing table
-route -n                   # Older Linux
-netstat -r                 # Windows/Mac
-Network Interfaces
-bash
-ip addr show               # List interfaces and IPs
-ifconfig                   # Older command
-DNS
-bash
-dig example.com
-nslookup example.com
-host example.com
-Connectivity to a Port
-bash
-nc -zv google.com 443      # Netcat: check if port 443 is open
-telnet google.com 443      # Telnet to port
-curl -v https://google.com # Verbose output
-Firewall (Linux iptables/nftables)
-bash
-sudo ufw status            # Ubuntu: simple firewall
-sudo iptables -L -n        # List rules
-Network Statistics
-bash
-ss -tulpn                  # Show listening sockets (Linux)
-netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
-CIDR	Netmask	Number of addresses	Usable hosts
-/32	255.255.255.255	1	1
-/30	255.255.255.252	4	2
-/29	255.255.255.248	8	6
-/28	255.255.255.240	16	14
-/27	255.255.255.224	32	30
-/26	255.255.255.192	64	62
-/25	255.255.255.128	128	126
-/24	255.255.255.0	256	254
-/23	255.255.254.0	512	510
-/22	255.255.252.0	1,024	1,022
-/16	255.255.0.0	65,536	65,534
-/8	255.0.0.0	16,777,216	16,777,214
-Load Balancing and Reverse Proxies
-Nginx as Reverse Proxy
-nginx
-server {
-    listen 80;
-    server_name example.com;
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-    }
-}
-Load Balancing Algorithms
-Round-robin
-
-Least connections
-
-IP hash (session stickiness)
-
-Weighted round-robin
-
-Tools
-Nginx, HAProxy (software)
-
-AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
-
-Troubleshooting Checklist
-Is the physical link up? (Check cables, Wi-Fi connection).
-
-Can you ping the gateway? (e.g., ping 192.168.1.1).
-
-Can you ping an external IP? (e.g., 8.8.8.8).
-
-Can you resolve a domain? (dig google.com).
-
-Is the application listening on the expected port? (ss -tulpn | grep 8080).
-
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
-
-Are there any errors in the application logs?
-
-Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
-
-text
-
----
-
-## File 6: `devops_sysadmin.md`
-
-```przecena
+Przecena CODEBLOCK_0_END
 # DevOps i administracja systemem
 
 Praktyczny przewodnik po zarządzaniu serwerami, automatyzacji operacji i utrzymywaniu niezawodnej infrastruktury.
@@ -351,7 +163,9 @@ BŁĄD: błąd uniemożliwiający wykonanie określonej operacji.
 KRYTYCZNY/KRYTYCZNY: zamknięcie systemu.
 
 Agregacja dziennika
-ELK Stack (Elasticsearch, Logstash, Kibana) lub Elastic Cloud.Loki + Grafana (lekka alternatywa).
+ELK Stack (Elasticsearch, Logstash, Kibana) lub Elastic Cloud.
+
+Loki + Grafana (lekka alternatywa).
 
 Datadog, Splunk, Sumo Logic (SaaS).
 
@@ -533,7 +347,9 @@ Jenkins: tradycyjny, wysoce konfigurowalny.
 
 CircleCI, Travis CI: popularne strony trzecie.
 
-ArgoCD: GitOps dla Kubernetesa.Przykładowa akcja GitHub (prosta):
+ArgoCD: GitOps dla Kubernetesa.
+
+Przykładowa akcja GitHub (prosta):
 yaml
 nazwa: CI
 wł.: pchnij

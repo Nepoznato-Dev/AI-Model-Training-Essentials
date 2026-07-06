@@ -5,7 +5,7 @@
 ### Podstawowe technologie
 
 #### HTML (język znaczników hipertekstowych)
-- **Semantyczny HTML**: Używanie znaczących tagów (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+- **Semantyczny HTML**: używanie znaczących tagów (INLINECODE_0_END, INLINECODE_1_END, INLINECODE_2_END, INLINECODE_3_END, INLINECODE_4_END, INLINECODE_5_END, INLINECODE_6_END)
 - **Formularze**: Typy danych wejściowych, sprawdzanie poprawności, etykiety dostępności
 - **Media**: Obrazy, wideo, osadzanie dźwięku
 - **Metagi**: SEO, rzutnia, kodowanie znaków
@@ -115,7 +115,9 @@
 - **pymongo**: sterownik MongoDB dla Pythona
 - **redis**: Klient Redis dla wielu języków
 
-### Rozwój API#### Interfejsy API REST
+### Rozwój API
+
+#### Interfejsy API REST
 - **Metody HTTP**: GET, POST, PUT, PATCH, DELETE
 - **Kody stanu**: 200, 201, 400, 401, 403, 404, 500
 - **Nazewnictwo zasobów**: Rzeczowniki w liczbie mnogiej, hierarchiczne
@@ -236,7 +238,9 @@
 - **Nagłówki zabezpieczeń**: Opcje X-Frame, Opcje typu zawartości X
 - **Skanowanie zależności**: audyt npm, Snyk, Depabot
 
-## Testowanie### Typy testowania
+## Testowanie
+
+### Typy testowania
 - **Testowanie jednostkowe**: Poszczególne komponenty/funkcje
 - **Testowanie integracyjne**: Interakcje komponentów
 - **Kompleksowy (E2E)**: Pełny przepływ pracy użytkownika

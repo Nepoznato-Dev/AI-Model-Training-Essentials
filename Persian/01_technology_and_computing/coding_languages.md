@@ -6,72 +6,34 @@
 
 ### اصول نحو
 
-```python
-# Variables and types
-name: str = "Alice"
-age: int = 30
-score: float = 9.5
-active: bool = True
-
-# Conditionals
-if age >= 18:
-    print("adult")
-elif age >= 13:
-    print("teenager")
-else:
-    print("child")
-
-# Loops
-for i in range(5):
-    print(i)
-
-while active:
-    active = False
-```
+CODEBLOCK_0_END
 
 ### توابع و تایپ نکات
 
-```python
-def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
-```
+CODEBLOCK_1_END
 
 ### مطالب را فهرست کنید
 
-```python
-squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
-```
+CODEBLOCK_2_END
 
 ### کلاس ها و OOP
 
-```python
-class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def speak(self) -> str:
-        raise NotImplementedError
-
-class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
-```
+CODEBLOCK_3_END
 
 ### الگوهای رایج
 
-- از `with open(path) as f:` برای ورودی/خروجی فایل استفاده کنید.
-- رشته های f (`f"hello {name}"`) را به `%` یا `.format()` ترجیح دهید.
-- از `dataclasses.dataclass` برای کلاس های فقط داده استفاده کنید.
-- از `pathlib.Path` به جای `os.path` برای مسیرهای فایل استفاده کنید.
+- از INLINECODE_0_END برای ورودی/خروجی فایل استفاده کنید.
+- رشته‌های f (INLINECODE_1_END) را به INLINECODE_2_END یا INLINECODE_3_END ترجیح دهید.
+- از INLINECODE_4_END برای کلاس‌های فقط داده استفاده کنید.
+- برای مسیرهای فایل به جای INLINECODE_6_END از INLINECODE_5_END استفاده کنید.
 
 ### ابزار
 
-- `pip install <package>` بسته ها را نصب می کند.
-- `python -m venv .venv && source .venv/bin/activate` یک محیط مجازی ایجاد می کند.
-- `pip freeze > requirements.txt` وابستگی ها را ذخیره می کند.
-- `pip install -r requirements.txt` آنها را بازیابی می کند.
-- `pyproject.toml` استاندارد پیکربندی پروژه مدرن است.
+- INLINECODE_7_END بسته ها را نصب می کند.
+- INLINECODE_8_END یک محیط مجازی ایجاد می کند.
+- INLINECODE_9_END وابستگی ها را ذخیره می کند.
+- INLINECODE_10_END آنها را بازیابی می کند.
+- INLINECODE_11_END استاندارد پیکربندی پروژه مدرن است.
 
 ---
 
@@ -81,68 +43,26 @@ class Dog(Animal):
 
 ### نحو مدرن (ES6+)
 
-```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
-
-// Arrow functions
-const add = (a, b) => a + b;
-
-// Template literals
-const greet = name => `Hello, ${name}!`;
-
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
-
-// Spread
-const merged = { ...defaults, ...overrides };
-```
+CODEBLOCK_4_END
 
 ### برنامه نویسی Async
 
-```javascript
-// Promises
-fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
-```
+CODEBLOCK_5_END
 
 ### روش های آرایه
 
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
+CODEBLOCK_6_END
 
 ### دستکاری DOM
 
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
-});
-```
+CODEBLOCK_7_END
 
 ### ابزار
 
-- `npm init -y` یک پروژه را مقداردهی اولیه می کند.
-- `npm install <package>` یک وابستگی اضافه می کند.
-- `npm run <script>` یک اسکریپت تعریف شده در `package.json` را اجرا می کند.
-- `node index.js` یک اسکریپت را با Node.js اجرا می کند.
+- INLINECODE_12_END یک پروژه را راه اندازی می کند.
+- INLINECODE_13_END یک وابستگی اضافه می کند.
+- INLINECODE_14_END یک اسکریپت تعریف شده در INLINECODE_15_END را اجرا می کند.
+- INLINECODE_16_END یک اسکریپت را با Node.js اجرا می کند.
 
 ---
 
@@ -152,72 +72,29 @@ TypeScript یک ابر مجموعه جاوا اسکریپت تایپ شده اس
 
 ### حاشیه نویسی را تایپ کنید
 
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
+CODEBLOCK_8_END
 
 ### رابط ها و انواع
 
-```typescript
-interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
-}
-
-type Status = "active" | "inactive" | "banned";
-```
+CODEBLOCK_9_END
 
 ### ژنریک
 
-```typescript
-function identity<T>(value: T): T {
-  return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
-  return arr[0];
-}
-```
+CODEBLOCK_10_END
 
 ### کلاس هایی با اصلاح کننده های دسترسی
 
-```typescript
-class Counter {
-  private count: number = 0;
-
-  increment(): void {
-    this.count++;
-  }
-
-  get value(): number {
-    return this.count;
-  }
-}
-```
+CODEBLOCK_11_END
 
 ### tsconfig.json ملزومات
 
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
-}
-```
+CODEBLOCK_12_END
 
 ### ابزار
 
-- `npm install -g typescript` کامپایلر را نصب می کند.
-- `tsc` پروژه را کامپایل می کند.
-- `ts-node src/index.ts` TypeScript را مستقیماً اجرا می کند.
+- INLINECODE_17_END کامپایلر را نصب می کند.
+- INLINECODE_18_END پروژه را گردآوری می کند.
+- INLINECODE_19_END TypeScript را مستقیماً اجرا می کند.
 
 ---
 
@@ -229,73 +106,34 @@ Rust یک زبان برنامه نویسی سیستمی است که بر ایم�
 
 هر مقدار در Rust دقیقاً یک مالک دارد. هنگامی که مالک از محدوده خارج می شود، ارزش حذف می شود. وام گرفتن به مراجع بدون انتقال مالکیت اجازه می دهد.
 
-```rust
-fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
-}
+CODEBLOCK_13_END
 
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
-
-قرض‌های قابل تغییر (<<INLINE_CODE_20>>>) مستلزم آن است که وام‌های دیگری همزمان وجود نداشته باشند.
+وام‌های قابل تغییر (INLINECODE_20_END) مستلزم این است که وام‌های دیگری همزمان وجود نداشته باشند.
 
 ### طول عمر
 
 مادام‌العمر تضمین می‌کند که منابع از داده‌هایی که به آنها اشاره می‌کنند بیشتر زنده نمی‌مانند.
 
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
-}
-```
+CODEBLOCK_14_END
 
 ### شماره ها و تطبیق الگو
 
-```rust
-enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
-    }
-}
-```
+CODEBLOCK_15_END
 
 ### رسیدگی به خطا
 
-```rust
-use std::fs;
+CODEBLOCK_16_END
 
-fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
-}
-
-fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
-}
-```
-
-عملگر `?` خطاها را به طور خودکار در توابعی منتشر می کند که `Result` را برمی گرداند.
+عملگر INLINECODE_21_END خطاها را به طور خودکار در توابعی منتشر می کند که INLINECODE_22_END را برمی گرداند.
 
 ### ابزار کاری (محموله)
 
-- `cargo new project_name` یک پروژه جدید ایجاد می کند.
-- `cargo build` کامپایل می کند.
-- `cargo run` کامپایل و اجرا می شود.
-- `cargo test` آزمایش ها را اجرا می کند.
-- `cargo add <crate>` یک وابستگی به `Cargo.toml` اضافه می کند.
-- `cargo fmt` کد قالب‌ها. `cargo clippy` پرزها.
+- INLINECODE_23_END یک پروژه جدید ایجاد می کند.
+- INLINECODE_24_END کامپایل می کند.
+- INLINECODE_25_END کامپایل و اجرا می شود.
+- INLINECODE_26_END آزمایش‌ها را اجرا می‌کند.
+- INLINECODE_27_END یک وابستگی به INLINECODE_28_END اضافه می کند.
+- کد قالب‌های INLINECODE_29_END. INLINECODE_30_END پرز.
 
 ---
 
@@ -305,90 +143,34 @@ Go (Golang) یک زبان تایپ شده و کامپایل شده است که �
 
 ### اصول
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
-}
-```
+CODEBLOCK_17_END
 
 ### توابع و مقادیر چندگانه بازگشتی
 
-```go
-func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
-}
-```
+CODEBLOCK_18_END
 
 ### رابط ها
 
-```go
-type Speaker interface {
-    Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
+CODEBLOCK_19_END
 
 هر نوع که تمام روش های یک رابط را پیاده سازی کند، آن را برآورده می کند - هیچ اعلان صریحی لازم نیست.
 
 ### برنامه ها و کانال ها
 
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
-}
-
-func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
-
-    go worker(1, jobs, results)
-
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
-
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
-}
-```
+CODEBLOCK_20_END
 
 ### به تعویق انداختن
 
-```go
-func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
-}
-```
+CODEBLOCK_21_END
 
 ### ابزار
 
-- `go mod init module/name` یک ماژول را مقداردهی اولیه می کند.
-- `go get ./...` وابستگی های دانلودها.
-- `go build ./...` کامپایل می کند.
-- `go test ./...` آزمایش ها را اجرا می کند.
-- `go fmt ./...` کد قالب‌ها.
-- `go vet ./...` اشتباهات رایج را بررسی می کند.
+- INLINECODE_31_END یک ماژول را مقداردهی اولیه می کند.
+- وابستگی های INLINECODE_32_END دانلود می شود.
+- INLINECODE_33_END کامپایل می کند.
+- INLINECODE_34_END آزمایش ها را اجرا می کند.
+- کد قالب‌های INLINECODE_35_END.
+- INLINECODE_36_END اشتباهات رایج را بررسی می کند.
 
 ---
 
@@ -398,82 +180,38 @@ C یک زبان رویه ای، کامپایل شده و سطح پایین اس�
 
 ### اصول C
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
-
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
-
-    return 0;
-}
-```
+CODEBLOCK_22_END
 
 ### اشاره گر
 
-یک اشاره گر آدرس حافظه متغیر دیگری را ذخیره می کند. `*ptr` ارجاع آن را لغو می کند. `&var` یک آدرس می گیرد.
+یک اشاره گر آدرس حافظه متغیر دیگری را ذخیره می کند. INLINECODE_37_END آن را لغو می کند. INLINECODE_38_END یک آدرس می گیرد.
 
-```c
-int a = 10;
-int *p = &a;
-*p = 20;   /* a is now 20 */
-```
+CODEBLOCK_23_END
 
 ### کلاس های C++ و RAII
 
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
-
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
-
-private:
-    std::string name_;
-    int age_;
-};
-```
+CODEBLOCK_24_END
 
 RAII (Resource Acquisition Is Initialization) طول عمر منابع را به طول عمر اشیا مرتبط می کند، و تضمین می کند که پاکسازی به طور خودکار در تخریب کننده ها انجام می شود.
 
 ### ظروف STL
 
-```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
-
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"]   = 87;
-```
+CODEBLOCK_25_END
 
 ### C++ مدرن (C++17 / C++20).
 
-- `auto` کسر نوع.
-- حلقه های `for` مبتنی بر محدوده: `for (auto& item : container)`.
-- نشانگرهای هوشمند: `std::unique_ptr`، `std::shared_ptr` — از خام `new`/<<INLINE_CODE_45>>> اجتناب کنید.
-- اتصالات ساختاری: `auto [key, val] = pair;`.
-- `std::optional`، `std::variant`، `std::string_view`.
+- کسر نوع INLINECODE_39_END.
+- حلقه‌های INLINECODE_40_END مبتنی بر محدوده: INLINECODE_41_END.
+- نشانگرهای هوشمند: INLINECODE_42_END، INLINECODE_43_END — از INLINECODE_44_END / INLINECODE_45_END خام اجتناب کنید.
+- اتصالات ساختاریافته: INLINECODE_46_END.
+- INLINECODE_47_END، INLINECODE_48_END، INLINECODE_49_END.
 
-### تالیف- `gcc main.c -o main` C را کامپایل می کند.
-- `g++ -std=c++20 -Wall main.cpp -o main` C++ را کامپایل می کند.
-- `make` ساخت های چند فایلی را از طریق `Makefile` خودکار می کند.
-- `cmake` تولید کننده سیستم ساخت استاندارد برای پروژه های بزرگتر است.
+### تالیف
+
+- INLINECODE_50_END C را کامپایل می کند.
+- INLINECODE_51_END C++ را کامپایل می کند.
+- INLINECODE_52_END ساخت‌های چند فایلی را از طریق INLINECODE_53_END خودکار می‌کند.
+- INLINECODE_54_END تولید کننده سیستم ساخت استاندارد برای پروژه های بزرگتر است.
 
 ---
 
@@ -483,107 +221,42 @@ Swift یک زبان برنامه نویسی مدرن و ایستا است که �
 
 ### اصول
 
-```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
+CODEBLOCK_26_END
 
 ### اختیاری
 
-یک اختیاری (<<INLINE_CODE_55>>>) مقداری را نشان می دهد که ممکن است وجود داشته باشد یا نباشد.
+یک اختیاری ( INLINECODE_55_END ) مقداری را نشان می دهد که ممکن است وجود داشته باشد یا نباشد.
 
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
-    print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
+CODEBLOCK_27_END
 
 ### عملکرد و بسته شدن
 
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
+CODEBLOCK_28_END
 
 ### کلاس ها و ساختارها
 
 سوئیفت دارای هر دو کلاس (انواع مرجع) و ساختارها (انواع ارزش) است. ساختارها را برای مدل‌های داده ساده ترجیح دهید.
 
-```swift
-struct Point {
-    var x: Double
-    var y: Double
-}
-
-class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
-}
-```
+CODEBLOCK_29_END
 
 ### پروتکل ها
 
-```swift
-protocol Describable {
-    var description: String { get }
-}
-
-struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
-}
-```
+CODEBLOCK_30_END
 
 ### قابل کدگذاری (کدگذاری / رمزگشایی JSON)
 
-```swift
-struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
+CODEBLOCK_31_END
 
 ### اصول اولیه SwiftUI
 
-```swift
-import SwiftUI
-
-struct ContentView: View {
-    @State private var count = 0
-
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
-}
-```
+CODEBLOCK_32_END
 
 ### ابزار
 
-- `swift build` یک پروژه مدیریت بسته Swift را کامپایل می کند.
-- `swift run` پروژه را اجرا می کند.
-- `swift test` آزمایش ها را اجرا می کند.
-- `swift package init --type executable` یک پروژه اجرایی جدید ایجاد می کند.
+- INLINECODE_56_END یک پروژه مدیریت بسته Swift را گردآوری می کند.
+- INLINECODE_57_END پروژه را اجرا می کند.
+- INLINECODE_58_END آزمایش ها را اجرا می کند.
+- INLINECODE_59_END یک پروژه اجرایی جدید ایجاد می کند.
 - Xcode IDE اولیه برای توسعه پلتفرم اپل است.
 
 ---

@@ -86,7 +86,9 @@ Seria RTX (Ray Tracing Texel eXtreme) to linia konsumenckich procesorów graficz
 Do generacji 30xx (Ampere, 2020) i RTX 40xx (Ada Lovelace, 2022) zaliczają się
 dedykowane rdzenie Tensor do przyspieszania operacji AI. VRAM (pamięć wideo) to
 ma kluczowe znaczenie dla lokalnego uruchamiania modeli AI — procesor graficzny 8 GB może obsłużyć parametr 7B
-modele w kwantyzacji 4-bitowej; procesor graficzny o pojemności 24 GB może obsłużyć modele 70B w trybie 4-bitowym.### Seria NVIDIA A i H (centrum danych)
+modele w kwantyzacji 4-bitowej; procesor graficzny o pojemności 24 GB może obsłużyć modele 70B w trybie 4-bitowym.
+
+### Seria NVIDIA A i H (centrum danych)
 A100 (Ampere, 2020) i H100 (Hopper, 2022) to profesjonalna sztuczna inteligencja firmy NVIDIA
 akceleratory. H100 ma do 80 GB pamięci HBM3 i jest standardem
 sprzęt stojący za większością dzisiejszych szkoleń LLM na dużą skalę. Te procesory graficzne kosztują 25 000 USD–
@@ -173,7 +175,9 @@ włączając zarówno monit, jak i wygenerowaną odpowiedź. GPT-3.5 miał 4096 
 okno; GPT-4 Turbo i Claude 3 obsługują 128 000 tokenów; Bliźnięta 1.5 Pro
 obsługuje 1 000 000 tokenów. Większe okno kontekstowe pozwala modelowi „widzieć”
 bardziej rozmowę lub dokument na raz, poprawiając spójność na dłużej
-wymiany.### RLHF (uczenie się ze wzmocnieniem na podstawie informacji zwrotnej od ludzi)
+wymiany.
+
+### RLHF (uczenie się ze wzmocnieniem na podstawie informacji zwrotnej od ludzi)
 RLHF to technika szkoleniowa, która przekształca model języka podstawowego (który
 po prostu przewiduje następny żeton) do asystenta, który postępuje zgodnie z instrukcjami i
 zachowuje się pomocnie. Osoby oceniające oceniają wyniki modelu, szkolony jest model nagrody

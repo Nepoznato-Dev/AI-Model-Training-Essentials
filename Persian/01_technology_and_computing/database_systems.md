@@ -28,20 +28,7 @@
 - **محرک**: اقدامات خودکار روی تغییرات داده ها
 
 ### عملیات SQL (CRUD)
-```sql
--- Create
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
-
--- Read
-SELECT * FROM users WHERE id = 1;
-SELECT name, email FROM users ORDER BY name LIMIT 10;
-
--- Update
-UPDATE users SET email = 'new@example.com' WHERE id = 1;
-
--- Delete
-DELETE FROM users WHERE id = 1;
-```
+CODEBLOCK_0_END
 
 ### ملحق می شود
 - **پیوستن داخلی **: ردیف های منطبق از هر دو جدول را برمی گرداند
@@ -76,9 +63,7 @@ DELETE FROM users WHERE id = 1;
 - ** موارد استفاده **: مدیریت محتوا، کاتالوگ ها، پروفایل های کاربر
 - **مثال**: MongoDB، CouchDB، DocumentDB
 - **مثال پرس و جو** (MongoDB):
-```javascript
-db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
-```
+CODEBLOCK_1_END
 
 #### فروشگاه های کلیدی ارزش
 - **ساختار**: جفت های کلید-مقدار ساده
@@ -135,7 +120,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### برنامه های اجرایی
 - درک نحوه اجرای پرس و جو توسط پایگاه داده
 - شناسایی تنگناها (اسکن جدول کامل، نمایه های گم شده)
-- ابزار: EXPLAIN، EXPLAIN ANALYZE### تکنیک های بهینه سازی
+- ابزار: EXPLAIN، EXPLAIN ANALYZE
+
+### تکنیک های بهینه سازی
 - **استفاده از فهرست**: اطمینان حاصل کنید که پرس و جوها از نمایه های مناسب استفاده می کنند
 - **بازنویسی پرس و جو**: پرس و جوهای پیچیده را ساده می کند
 - **بهینه سازی پیوستن**: انواع اتصال و ترتیب صحیح را انتخاب کنید
@@ -263,7 +250,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - جاوا اسکریپت: Sequelize، Prisma، TypeORM
   - جاوا: Hibernate، JPA
   - Ruby: ActiveRecord
-  - دات نت: Entity Framework### مزایا
+  - دات نت: Entity Framework
+
+### مزایا
 - انتزاع از SQL
 - ایمنی را تایپ کنید
 - مدیریت مهاجرت

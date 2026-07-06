@@ -28,20 +28,7 @@ Oprogramowanie współpracujące z użytkownikami końcowymi, aplikacjami i sam�
 - **Wyzwalacze**: Automatyczne działania w przypadku zmian danych
 
 ### Operacje SQL (CRUD)
-```sql
--- Create
-INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
-
--- Read
-SELECT * FROM users WHERE id = 1;
-SELECT name, email FROM users ORDER BY name LIMIT 10;
-
--- Update
-UPDATE users SET email = 'new@example.com' WHERE id = 1;
-
--- Delete
-DELETE FROM users WHERE id = 1;
-```
+CODEBLOCK_0_END
 
 ### Dołącza
 - **INNER JOIN**: Zwraca pasujące wiersze z obu tabel
@@ -76,9 +63,7 @@ DELETE FROM users WHERE id = 1;
 - **Przypadki użycia**: Zarządzanie treścią, katalogi, profile użytkowników
 - **Przykłady**: MongoDB, CouchDB, DocumentDB
 - **Przykład zapytania** (MongoDB):
-```javascript
-db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
-```
+CODEBLOCK_1_END
 
 #### Magazyny klucz-wartość
 - **Struktura**: Proste pary klucz-wartość
@@ -135,7 +120,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Plany wykonania
 - Zrozumienie sposobu, w jaki baza danych wykonuje zapytania
 - Identyfikacja wąskich gardeł (skanowanie pełnych tabel, brakujące indeksy)
-- Narzędzia: WYJAŚNIJ, WYJAŚNIJ, ANALIZUJ### Techniki optymalizacji
+- Narzędzia: WYJAŚNIJ, WYJAŚNIJ, ANALIZUJ
+
+### Techniki optymalizacji
 - **Wykorzystanie indeksu**: Upewnij się, że zapytania korzystają z odpowiednich indeksów
 - **Przepisywanie zapytań**: Uprość złożone zapytania
 - **Optymalizacja łączenia**: Wybierz odpowiednie typy łączenia i kolejność
@@ -263,7 +250,9 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - JavaScript: Sequelize, Prisma, TypeORM
   - Java: Hibernacja, JPA
   - Ruby: ActiveRecord
-  - .NET: Entity Framework### Korzyści
+  - .NET: Entity Framework
+
+### Korzyści
 - Abstrakcja z SQL
 - Bezpieczeństwo typu
 - Zarządzanie migracjami

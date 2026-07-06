@@ -6,72 +6,34 @@ Python to interpretowany, dynamicznie typowany język programowania wysokiego po
 
 ### Podstawy składni
 
-```python
-# Variables and types
-name: str = "Alice"
-age: int = 30
-score: float = 9.5
-active: bool = True
-
-# Conditionals
-if age >= 18:
-    print("adult")
-elif age >= 13:
-    print("teenager")
-else:
-    print("child")
-
-# Loops
-for i in range(5):
-    print(i)
-
-while active:
-    active = False
-```
+CODEBLOCK_0_END
 
 ### Funkcje i wskazówki dotyczące typów
 
-```python
-def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
-```
+CODEBLOCK_1_END
 
 ### Lista wyrażeń
 
-```python
-squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
-```
+CODEBLOCK_2_END
 
 ### Klasy i OOP
 
-```python
-class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def speak(self) -> str:
-        raise NotImplementedError
-
-class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
-```
+CODEBLOCK_3_END
 
 ### Typowe wzorce
 
-- Użyj `with open(path) as f:` dla wejścia/wyjścia pliku.
-- Preferuj ciągi f (`f"hello {name}"`) zamiast `%` lub `.format()`.
-- Użyj `dataclasses.dataclass` dla klas zawierających tylko dane.
-- Użyj `pathlib.Path` zamiast `os.path` dla ścieżek plików.
+- Użyj INLINECODE_0_END dla wejścia/wyjścia pliku.
+- Preferuj ciągi f (INLINECODE_1_END) zamiast INLINECODE_2_END lub INLINECODE_3_END.
+- Użyj INLINECODE_4_END w przypadku zajęć zawierających tylko dane.
+- Użyj INLINECODE_5_END zamiast INLINECODE_6_END dla ścieżek plików.
 
 ### Oprzyrządowanie
 
-- `pip install <package>` instaluje pakiety.
-- `python -m venv .venv && source .venv/bin/activate` tworzy środowisko wirtualne.
-- `pip freeze > requirements.txt` zapisuje zależności.
-- `pip install -r requirements.txt` przywraca je.
-- `pyproject.toml` to nowoczesny standard konfiguracji projektów.
+- INLINECODE_7_END instaluje pakiety.
+- INLINECODE_8_END tworzy środowisko wirtualne.
+- INLINECODE_9_END zapisuje zależności.
+- INLINECODE_10_END przywraca je.
+- INLINECODE_11_END to nowoczesny standard konfiguracji projektu.
 
 ---
 
@@ -81,68 +43,26 @@ JavaScript jest głównym językiem sieci. Działa w przeglądarkach i na serwer
 
 ### Nowoczesna składnia (ES6+)
 
-```javascript
-// Variable declarations
-const PI = 3.14159;
-let counter = 0;
-
-// Arrow functions
-const add = (a, b) => a + b;
-
-// Template literals
-const greet = name => `Hello, ${name}!`;
-
-// Destructuring
-const { x, y } = point;
-const [first, ...rest] = array;
-
-// Spread
-const merged = { ...defaults, ...overrides };
-```
+CODEBLOCK_4_END
 
 ### Programowanie asynchroniczne
 
-```javascript
-// Promises
-fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Async / await
-async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
-```
+CODEBLOCK_5_END
 
 ### Metody tablicowe
 
-```javascript
-const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
-```
+CODEBLOCK_6_END
 
 ### Manipulacja DOM
 
-```javascript
-const btn = document.getElementById("submit");
-btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
-});
-```
+CODEBLOCK_7_END
 
 ### Oprzyrządowanie
 
-- `npm init -y` inicjuje projekt.
-- `npm install <package>` dodaje zależność.
-- `npm run <script>` uruchamia skrypt zdefiniowany w `package.json`.
-- `node index.js` uruchamia skrypt z Node.js.
+- INLINECODE_12_END inicjuje projekt.
+- INLINECODE_13_END dodaje zależność.
+- INLINECODE_14_END uruchamia skrypt zdefiniowany w INLINECODE_15_END .
+- INLINECODE_16_END uruchamia skrypt w Node.js.
 
 ---
 
@@ -152,72 +72,29 @@ TypeScript to statycznie typowany nadzbiór kodu JavaScript, który kompiluje si
 
 ### Wpisz adnotacje
 
-```typescript
-let username: string = "alice";
-let count: number = 42;
-let flags: boolean[] = [true, false];
-let anything: unknown = "could be anything";
-```
+CODEBLOCK_8_END
 
 ### Interfejsy i typy
 
-```typescript
-interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
-}
-
-type Status = "active" | "inactive" | "banned";
-```
+CODEBLOCK_9_END
 
 ### Ogólne
 
-```typescript
-function identity<T>(value: T): T {
-  return value;
-}
-
-function first<T>(arr: T[]): T | undefined {
-  return arr[0];
-}
-```
+CODEBLOCK_10_END
 
 ### Klasy z modyfikatorami dostępu
 
-```typescript
-class Counter {
-  private count: number = 0;
-
-  increment(): void {
-    this.count++;
-  }
-
-  get value(): number {
-    return this.count;
-  }
-}
-```
+CODEBLOCK_11_END
 
 ### Podstawowe informacje o pliku tsconfig.json
 
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
-}
-```
+CODEBLOCK_12_END
 
 ### Oprzyrządowanie
 
-- `npm install -g typescript` instaluje kompilator.
-- `tsc` kompiluje projekt.
-- `ts-node src/index.ts` bezpośrednio uruchamia TypeScript.
+- INLINECODE_17_END instaluje kompilator.
+- INLINECODE_18_END kompiluje projekt.
+- INLINECODE_19_END bezpośrednio uruchamia TypeScript.
 
 ---
 
@@ -229,166 +106,71 @@ Rust to język programowania systemów skupiający się na bezpieczeństwie, szy
 
 Każda wartość w Rust ma dokładnie jednego właściciela. Gdy właściciel wyjdzie poza zakres, wartość zostanie usunięta. Wypożyczanie umożliwia referencje bez przeniesienia własności.
 
-```rust
-fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
-}
+CODEBLOCK_13_END
 
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
-
-Zmienne zapożyczenia (`&mut T`) wymagają, aby w tym samym czasie nie istniały żadne inne zapożyczenia.
+Zmienne zapożyczenia (INLINECODE_20_END) wymagają, aby w tym samym czasie nie istniały żadne inne zapożyczenia.
 
 ### Całe życie
 
 Okresy istnienia zapewniają, że referencje nie przetrwają dłużej niż dane, na które wskazują.
 
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
-}
-```
+CODEBLOCK_14_END
 
 ### Wyliczenia i dopasowywanie wzorców
 
-```rust
-enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
-}
-
-fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
-    }
-}
-```
+CODEBLOCK_15_END
 
 ### Obsługa błędów
 
-```rust
-use std::fs;
+CODEBLOCK_16_END
 
-fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
-}
-
-fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
-}
-```
-
-Operator `?` automatycznie propaguje błędy wewnątrz funkcji zwracających `Result`.
+Operator INLINECODE_21_END automatycznie propaguje błędy wewnątrz funkcji zwracających INLINECODE_22_END.
 
 ### Oprzyrządowanie (ładunek)
 
-- `cargo new project_name` tworzy nowy projekt.
-- `cargo build` kompiluje.
-- `cargo run` kompiluje i uruchamia.
-- `cargo test` uruchamia testy.
-- `cargo add <crate>` dodaje zależność do `Cargo.toml`.
-- `cargo fmt` formatuje kod. `cargo clippy` linty.
+- INLINECODE_23_END tworzy nowy projekt.
+- INLINECODE_24_END się kompiluje.
+- INLINECODE_25_END kompiluje i uruchamia.
+- INLINECODE_26_END uruchamia testy.
+- INLINECODE_27_END dodaje zależność do INLINECODE_28_END .
+- INLINECODE_29_END formatuje kod. INLINECODE_30_END lint.
 
 ---
 
-## Idź
+## Iść
 
 Go (Golang) to skompilowany język ze statycznym typem, zaprojektowany z myślą o prostocie i wysokiej wydajności programów współbieżnych.
 
 ### Podstawy
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
-}
-```
+CODEBLOCK_17_END
 
 ### Funkcje i wiele zwracanych wartości
 
-```go
-func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
-}
-```
+CODEBLOCK_18_END
 
 ### Interfejsy
 
-```go
-type Speaker interface {
-    Speak() string
-}
-
-type Dog struct{ Name string }
-
-func (d Dog) Speak() string { return d.Name + " says woof" }
-```
+CODEBLOCK_19_END
 
 Spełnia go każdy typ, który implementuje wszystkie metody interfejsu — nie jest wymagana żadna jawna deklaracja.
 
 ### Goroutines i kanały
 
-```go
-func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
-}
-
-func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
-
-    go worker(1, jobs, results)
-
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
-
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
-}
-```
+CODEBLOCK_20_END
 
 ### Odłóż
 
-```go
-func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
-}
-```
+CODEBLOCK_21_END
 
 ### Oprzyrządowanie
 
-- `go mod init module/name` inicjuje moduł.
-- `go get ./...` pobiera zależności.
-- `go build ./...` kompiluje.
-- `go test ./...` uruchamia testy.
-- `go fmt ./...` formatuje kod.
-- `go vet ./...` sprawdza typowe błędy.
+- INLINECODE_31_END inicjuje moduł.
+- INLINECODE_32_END pobiera zależności.
+- INLINECODE_33_END się kompiluje.
+- INLINECODE_34_END uruchamia testy.
+- INLINECODE_35_END formatuje kod.
+- INLINECODE_36_END sprawdza typowe błędy.
 
 ---
 
@@ -398,82 +180,38 @@ C jest skompilowanym językiem proceduralnym niskiego poziomu. C++ rozszerza C o
 
 ### Podstawy języka C
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
-
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
-
-    return 0;
-}
-```
+CODEBLOCK_22_END
 
 ### Wskazówki
 
-Wskaźnik przechowuje adres pamięci innej zmiennej. `*ptr` usuwa referencje; `&var` pobiera adres.
+Wskaźnik przechowuje adres pamięci innej zmiennej. INLINECODE_37_END usuwa odniesienie do tego; INLINECODE_38_END pobiera adres.
 
-```c
-int a = 10;
-int *p = &a;
-*p = 20;   /* a is now 20 */
-```
+CODEBLOCK_23_END
 
 ### Klasy C++ i RAII
 
-```cpp
-#include <string>
-#include <iostream>
-
-class Person {
-public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
-
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
-
-private:
-    std::string name_;
-    int age_;
-};
-```
+CODEBLOCK_24_END
 
 RAII (Resource Acquisition Is Inicjalizacja) wiąże czasy życia zasobów z okresami istnienia obiektów, zapewniając, że czyszczenie w destruktorach odbywa się automatycznie.
 
 ### Kontenery STL
 
-```cpp
-#include <vector>
-#include <map>
-#include <algorithm>
-
-std::vector<int> v = {3, 1, 4, 1, 5, 9};
-std::sort(v.begin(), v.end());
-
-std::map<std::string, int> scores;
-scores["Alice"] = 95;
-scores["Bob"]   = 87;
-```
+CODEBLOCK_25_END
 
 ### Najważniejsze cechy współczesnego C++ (C++17 / C++20).
 
-- `auto` wpisz odliczenie.
-- Pętle `for` oparte na zakresach: `for (auto& item : container)`.
-- Inteligentne wskaźniki: `std::unique_ptr`, `std::shared_ptr` — unikaj surowych `new`>/`delete`.
-- Wiązania strukturalne: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::string_view`.
+- Odliczenie typu INLINECODE_39_END.
+- Pętle INLINECODE_40_END oparte na zakresie: INLINECODE_41_END .
+- Inteligentne wskaźniki: INLINECODE_42_END, INLINECODE_43_END — unikaj surowych INLINECODE_44_END / INLINECODE_45_END.
+- Powiązania strukturalne: INLINECODE_46_END .
+- INLINECODE_47_END, INLINECODE_48_END, INLINECODE_49_END.
 
-### Kompilacja- `gcc main.c -o main` kompiluje C.
-- `g++ -std=c++20 -Wall main.cpp -o main` kompiluje C++.
-- `make` automatyzuje kompilacje wielu plików za pomocą `Makefile`.
-- `cmake` to standardowy generator systemu kompilacji dla większych projektów.
+### Kompilacja
+
+- INLINECODE_50_END kompiluje C.
+- INLINECODE_51_END kompiluje C++.
+- INLINECODE_52_END automatyzuje kompilacje wielu plików za pomocą INLINECODE_53_END .
+- INLINECODE_54_END to standardowy generator systemu kompilacji dla większych projektów.
 
 ---
 
@@ -483,107 +221,42 @@ Swift to nowoczesny język programowania ze statycznym typem opracowany przez fi
 
 ### Podstawy
 
-```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
-counter += 1
-
-let pi: Double = 3.14159
-```
+CODEBLOCK_26_END
 
 ### Opcjonalne
 
-Opcjonalny (`T?`) reprezentuje wartość, która może występować lub nie.
+Opcjonalny (INLINECODE_55_END) reprezentuje wartość, która może występować lub nie.
 
-```swift
-var name: String? = nil
-name = "Alice"
-
-// Safe unwrapping
-if let n = name {
-    print("Hello, \(n)")
-}
-
-// Nil-coalescing
-let display = name ?? "Guest"
-
-// Optional chaining
-let length = name?.count
-```
+CODEBLOCK_27_END
 
 ### Funkcje i zamknięcia
 
-```swift
-func add(_ a: Int, _ b: Int) -> Int { a + b }
-
-let multiply: (Int, Int) -> Int = { $0 * $1 }
-```
+CODEBLOCK_28_END
 
 ### Klasy i struktury
 
 Swift ma zarówno klasy (typy referencyjne), jak i struktury (typy wartości). Preferuj struktury dla prostych modeli danych.
 
-```swift
-struct Point {
-    var x: Double
-    var y: Double
-}
-
-class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
-}
-```
+CODEBLOCK_29_END
 
 ### Protokoły
 
-```swift
-protocol Describable {
-    var description: String { get }
-}
-
-struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
-}
-```
+CODEBLOCK_30_END
 
 ### Kodowalne (kodowanie/dekodowanie JSON)
 
-```swift
-struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
-}
-
-let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
-let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
-```
+CODEBLOCK_31_END
 
 ### Podstawy SwiftUI
 
-```swift
-import SwiftUI
-
-struct ContentView: View {
-    @State private var count = 0
-
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
-}
-```
+CODEBLOCK_32_END
 
 ### Oprzyrządowanie
 
-- `swift build` kompiluje projekt Swift Package Manager.
-- `swift run` uruchamia projekt.
-- `swift test` uruchamia testy.
-- `swift package init --type executable` tworzy nowy projekt wykonywalny.
+- INLINECODE_56_END kompiluje projekt Swift Package Manager.
+- INLINECODE_57_END uruchamia projekt.
+- INLINECODE_58_END uruchamia testy.
+- INLINECODE_59_END tworzy nowy projekt wykonywalny.
 - Xcode jest podstawowym IDE do programowania platformy Apple.
 
 ---

@@ -131,7 +131,9 @@ Dostarczanie na żądanie zasobów obliczeniowych (serwerów, pamięci masowej, 
 - Producenci emitują zdarzenia, konsumenci reagują
 - **Wzorce**: pozyskiwanie zdarzeń, CQRS, pub/sub
 - **Technologie**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Korzyści**: Luźne powiązanie, skalowalność, przetwarzanie w czasie rzeczywistym#### Architektura bezserwerowa
+- **Korzyści**: Luźne powiązanie, skalowalność, przetwarzanie w czasie rzeczywistym
+
+#### Architektura bezserwerowa
 - Nie jest wymagane zarządzanie serwerem
 - Zapłać za wykonanie
 - Automatyczne skalowanie
@@ -262,7 +264,9 @@ Dostarczanie na żądanie zasobów obliczeniowych (serwerów, pamięci masowej, 
 - **Grupy**: Kolekcje użytkowników
 - **Role**: Tymczasowe dane uwierzytelniające dla usług/użytkowników
 - **Zasady**: dokumenty JSON definiujące uprawnienia
-- **Zasady**: Najmniejsze przywileje, rozdział obowiązków### Bezpieczeństwo sieci
+- **Zasady**: Najmniejsze przywileje, rozdział obowiązków
+
+### Bezpieczeństwo sieci
 - **Grupy zabezpieczeń**: Zapory stanowe dla instancji
 - **Sieciowe listy ACL**: Bezstanowe zapory ogniowe dla podsieci
 - **Zapora aplikacji internetowej (WAF)**: Ochrona przed exploitami internetowymi
