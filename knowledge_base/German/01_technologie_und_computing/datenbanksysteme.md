@@ -2,313 +2,313 @@
 This file was automatically translated from English to German.
 Source: database_systems.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Datenbank Systeme
+# Datenbanksysteme
 
-## Datenbank Grundlagen
+## Datenbankgrundlagen
 
-### What is a Datenbank?
-A Datenbank is an organized collection von structured information stored electronically, designed für efficient retrieval, insertion, updating, und deletion von Daten.
+### Was ist eine Datenbank?
+Eine Datenbank ist eine organisierte Sammlung strukturierter Informationen, die elektronisch gespeichert wird und für effizientes Abrufen, Einfügen, Aktualisieren und Löschen von Daten ausgelegt ist.
 
-### Datenbank Verwaltung Systeme (DBMS)
-Software that interacts mit end users, applications, und der/die/das Datenbank itself to capture und analyze Daten. Beispiele: MySQL, PostgreSQL, Oracle, MongoDB.
+### Datenbankverwaltungssysteme (DBMS)
+Software, die mit Endbenutzern, Anwendungen und der Datenbank selbst interagiert, um Daten zu erfassen und zu analysieren. Beispiele: MySQL, PostgreSQL, Oracle, MongoDB.
 
-### Key Concepts
-- **Schema**: Structure/organization von Datenbank (tables, fields, relationships)
-- **Instance**: Actual Daten stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing Daten to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read Leistung
+### Schlüsselkonzepte
+- **Schema**: Struktur/Organisation der Datenbank (Tabellen, Felder, Beziehungen)
+- **Instanz**: Tatsächliche Daten, die zu einem bestimmten Zeitpunkt gespeichert sind
+- **ACID-Eigenschaften**: Atomarität, Konsistenz, Isolation, Dauerhaftigkeit
+- **CAP-Theorem**: Konsistenz, Verfügbarkeit, Partitionstoleranz (wähle 2)
+- **Normalisierung**: Organisieren von Daten zur Reduzierung von Redundanz
+- **Denormalisierung**: Hinzufügen von Redundanz zur Verbesserung der Leseleistung
 
-## Relational Databases (SQL)
+## Relationale Datenbanken (SQL)
 
-### Core Concepts
-- **Tables**: Rows (records) und columns (fields)
-- **Primary Key**: Unique identifier für each row
-- **Foreign Key**: Referenz to primary key in another table
-- **Indexes**: Daten structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on Daten changes
+### Kernkonzepte
+- **Tabellen**: Zeilen (Datensätze) und Spalten (Felder)
+- **Primärschlüssel**: Eindeutiger Identifikator für jede Zeile
+- **Fremdschlüssel**: Verweis auf Primärschlüssel in einer anderen Tabelle
+- **Indizes**: Datenstrukturen zur Verbesserung der Abfragegeschwindigkeit
+- **Sichten**: Virtuelle Tabellen basierend auf Abfrageergebnissen
+- **Gespeicherte Prozeduren**: Vorkompilierte SQL-Codeblöcke
+- **Trigger**: Automatische Aktionen bei Datenänderungen
 
-### SQL Operations (CRUD)
+### SQL-Operationen (CRUD)
 ```sql
--- Create
+-- Erstellen
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
 
--- Read
+-- Lesen
 SELECT * FROM users WHERE id = 1;
 SELECT name, email FROM users ORDER BY name LIMIT 10;
 
--- Update
+-- Aktualisieren
 UPDATE users SET email = 'new@example.com' WHERE id = 1;
 
--- Delete
+-- Löschen
 DELETE FROM users WHERE id = 1;
 ```
 
 ### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product von both tables
-- **SELF JOIN**: Table joined mit itself
+- **INNER JOIN**: Gibt übereinstimmende Zeilen aus beiden Tabellen zurück
+- **LEFT JOIN**: Alle Zeilen der linken Tabelle, Übereinstimmungen von der rechten
+- **RIGHT JOIN**: Alle Zeilen der rechten Tabelle, Übereinstimmungen von der linken
+- **FULL OUTER JOIN**: Alle Zeilen aus beiden Tabellen
+- **CROSS JOIN**: Kartesisches Produkt beider Tabellen
+- **SELF JOIN**: Tabelle wird mit sich selbst verknüpft
 
-### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+### Normalisierungsformen
+- **1NF**: Atomare Werte, keine wiederholenden Gruppen
+- **2NF**: 1NF + keine partiellen Abhängigkeiten (alle Nicht-Schlüssel-Attribute hängen vom gesamten Primärschlüssel ab)
+- **3NF**: 2NF + keine transitiven Abhängigkeiten (Nicht-Schlüssel-Attribute hängen nicht von anderen Nicht-Schlüssel-Attributen ab)
+- **BCNF**: Stärkere 3NF, jeder Determinant ist ein Kandidatenschlüssel
+- **4NF**: Keine mehrwertigen Abhängigkeiten
+- **5NF**: Keine Join-Abhängigkeiten
 
-### Popular RDBMS
-- **PostgreSQL**: Fortgeschritten features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, Web applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### Beliebte RDBMS
+- **PostgreSQL**: Fortgeschrittene Funktionen, erweiterbar, ACID-konform
+- **MySQL**: Weit verbreitet, schnelle Lesevorgänge, Webanwendungen
+- **Oracle**: Enterprise-Funktionen, Skalierbarkeit, teuer
+- **SQL Server**: Microsoft-Ökosystem, integrierte Tools
+- **SQLite**: Eingebettet, serverlos, leichtgewichtig
+- **MariaDB**: MySQL-Abspaltung, Open-Source
 
-## NoSQL Databases
+## NoSQL-Datenbanken
 
-### Types von NoSQL Databases
+### Typen von NoSQL-Datenbanken
 
-#### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Verwaltung, catalogs, user profiles
+#### Dokumentenspeicher
+- **Struktur**: JSON-ähnliche Dokumente (BSON)
+- **Einsatzgebiete**: Content-Verwaltung, Kataloge, Benutzerprofile
 - **Beispiele**: MongoDB, CouchDB, DocumentDB
-- **Query Example** (MongoDB):
+- **Abfragebeispiel** (MongoDB):
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
 #### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
+- **Struktur**: Einfache Schlüssel-Wert-Paare
+- **Einsatzgebiete**: Caching, Sitzungen, Einkaufswagen
 - **Beispiele**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+- **Eigenschaften**: Schnell, einfach, begrenzte Abfragemöglichkeiten
 
-#### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **Use Cases**: Big Daten, analytics, time-series
+#### Spaltenorientierte Speicher
+- **Struktur**: Spalten gruppiert in Familien
+- **Einsatzgebiete**: Big Data, Analysen, Zeitreihen
 - **Beispiele**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+- **Eigenschaften**: Schreiboptimiert, verteilt, skalierbar
 
-#### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
+#### Graphdatenbanken
+- **Struktur**: Knoten, Kanten, Eigenschaften
+- **Einsatzgebiete**: Soziale Netzwerke, Betrugserkennung, Empfehlungen
 - **Beispiele**: Neo4j, Amazon Neptune, ArangoDB
-- **Query Sprache**: Cypher (Neo4j), Gremlin
+- **Abfragesprache**: Cypher (Neo4j), Gremlin
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested Daten
-- Distributed Systeme
-- Real-time applications
+### Wann NoSQL verwenden?
+- Flexibles/sich entwickelndes Schema
+- Anforderungen an horizontale Skalierung
+- Hoher Schreibdurchsatz
+- Hierarchische/genestete Daten
+- Verteilte Systeme
+- Echtzeitanwendungen
 
-## Datenbank Design
+## Datenbankdesign
 
-### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties von entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number von instances in relationship
+### Entity-Relationship-Modellierung
+- **Entitäten**: Objekte/Konzepte (Kunde, Produkt, Bestellung)
+- **Attribute**: Eigenschaften von Entitäten (Name, Preis, Datum)
+- **Beziehungen**: Verbindungen zwischen Entitäten (eins-zu-eins, eins-zu-viele, viele-zu-viele)
+- **Kardinalität**: Anzahl von Instanzen in einer Beziehung
 
-### Schema Design Patterns
-- **Single Table Inheritance**: All types in one table mit type discriminator
-- **Class Table Inheritance**: Separate tables für base und subclasses
-- **Concrete Table Inheritance**: Separate table für each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+### Schema-Design-Muster
+- **Single Table Inheritance**: Alle Typen in einer Tabelle mit Typ-Diskriminator
+- **Class Table Inheritance**: Separate Tabellen für Basis- und Unterklassen
+- **Concrete Table Inheritance**: Separate Tabelle für jede konkrete Klasse
+- **Verknüpfungstabellen**: Lösen von viele-zu-viele-Beziehungen
+- **Audit-Tabellen**: Verfolgen von Änderungen (created_at, updated_at, deleted_at)
 
-### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic Daten (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed für query
+### Indexierungsstrategien
+- **B-Baum**: Standardbereichsabfragen, Sortierung
+- **Hash**: Exakte Übereinstimmungssuchen
+- **Bitmap**: Spalten mit geringer Kardinalität (Geschlecht, Status)
+- **Volltext**: Textsuchfunktionen
+- **Räumlich**: Geografische Daten (GIS)
+- **Zusammengesetzt**: Mehrere Spalten kombiniert
+- **Covering**: Enthält alle für die Abfrage benötigten Spalten
 
-## Query Optimization
+## Abfrageoptimierung
 
-### Execution Plans
-- Understanding how Datenbank executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
+### Ausführungspläne
+- Verstehen, wie die Datenbank Abfragen ausführt
+- Engpässe identifizieren (vollständige Tabellenscans, fehlende Indizes)
 - Tools: EXPLAIN, EXPLAIN ANALYZE
 
-### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types und order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+### Optimierungstechniken
+- **Indexverwendung**: Sicherstellen, dass Abfragen geeignete Indizes verwenden
+- **Abfrageumschreibung**: Komplexe Abfragen vereinfachen
+- **Join-Optimierung**: Richtige Join-Typen und Reihenfolge wählen
+- **Partitionierung**: Große Tabellen aufteilen (Bereich, Hash, Liste)
+- **Materialisierte Sichten**: Vorberechnete Abfrageergebnisse
+- **Abfrage-Caching**: Häufige Abfrageergebnisse speichern
 
-### Common Leistung Issues
-- **N+1 Query Problem**: Fetching related Daten inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting für locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### Häufige Leistungsprobleme
+- **N+1-Abfrageproblem**: Ineffizientes Abrufen verknüpfter Daten
+- **Fehlende Indizes**: Vollständige Tabellenscans bei großen Tabellen
+- **Überindexierung**: Langsame Schreibvorgänge durch zu viele Indizes
+- **Lock-Konflikte**: Transaktionen warten auf Sperren
+- **Ineffiziente Abfragen**: SELECT *, unnötige Joins
 
-## Transactions und Concurrency
+## Transaktionen und Nebenläufigkeit
 
-### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed Daten visible (default in most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+### Transaktionsisolationslevel
+- **READ UNCOMMITTED**: Niedrigste Isolation, Dirty Reads möglich
+- **READ COMMITTED**: Nur committete Daten sichtbar (Standard in den meisten DBs)
+- **REPEATABLE READ**: Gleiche Abfrage liefert innerhalb der Transaktion gleiche Ergebnisse
+- **SERIALIZABLE**: Höchste Isolation, Transaktionen werden sequenziell ausgeführt
 
-### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions von rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+### Nebenläufigkeitskontrolle
+- **Pessimistic Locking**: Ressourcen vor dem Zugriff sperren
+- **Optimistic Locking**: Version vor dem Commit prüfen
+- **MVCC (Multi-Version Concurrency Control)**: Mehrere Versionen von Zeilen verwalten
+- **Row-Level Locking**: Bestimmte Zeilen sperren
+- **Table-Level Locking**: Gesamte Tabelle sperren
 
 ### Deadlocks
-- Circular dependency where transactions wait für each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+- Zirkuläre Abhängigkeit, bei der Transaktionen aufeinander warten
+- Prävention: Konsistente Sperrreihenfolge, Timeouts, Deadlock-Erkennung
+- Lösung: Eine Transaktion abbrechen
 
-## Replication und Scaling
+## Replikation und Skalierung
 
-### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+### Replikationstypen
+- **Master-Slave**: Ein Primärer, mehrere Lesereplikate
+- **Master-Master**: Mehrere Primäre, bidirektionale Replikation
+- **Multi-Master**: N Primäre, Konfliktlösung erforderlich
+- **Chain Replication**: Sequenzielle Replikation durch Knoten
 
-### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split Daten across servers by key/range/hash
-- **Federation**: Split by function/service
+### Skalierungsansätze
+- **Vertikale Skalierung**: Serverressourcen erhöhen (CPU, RAM, Speicher)
+- **Horizontale Skalierung**: Weitere Server hinzufügen (Sharding, Partitionierung)
+- **Lesereplikate**: Last von Lesevorgängen verteilen
+- **Sharding**: Daten auf Server nach Schlüssel/Bereich/Hash verteilen
+- **Föderation**: Aufteilung nach Funktion/Dienst
 
-### Consistency Models
-- **Strong Consistency**: All nodes see same Daten at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+### Konsistenzmodelle
+- **Starke Konsistenz**: Alle Knoten sehen gleiche Daten zur gleichen Zeit
+- **Eventuelle Konsistenz**: Knoten konvergieren über die Zeit
+- **Kausale Konsistenz**: Ursache-Wirkungs-Beziehungen erhalten
+- **Read-Your-Writes**: Benutzer sieht eigene Updates sofort
 
-## Backup und Recovery
+## Backup und Wiederherstellung
 
-### Backup Strategies
-- **Full Backup**: Vollständig Datenbank copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-in-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+### Backup-Strategien
+- **Vollbackup**: Vollständige Datenbankkopie
+- **Inkrementelles Backup**: Änderungen seit dem letzten Backup
+- **Differenzielles Backup**: Änderungen seit dem letzten Vollbackup
+- **Point-in-Time Recovery**: Wiederherstellung zu einem bestimmten Zeitpunkt
+- **Kontinuierliches Backup**: Echtzeit-Replikation zum Backup
 
-### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable Daten loss
-- **Disaster Recovery Plan**: Documented procedures für failures
-- **Testen**: Regular recovery drills
+### Wiederherstellungsverfahren
+- **RTO (Recovery Time Objective)**: Maximal akzeptable Ausfallzeit
+- **RPO (Recovery Point Objective)**: Maximal akzeptabler Datenverlust
+- **Disaster Recovery Plan**: Dokumentierte Verfahren für Ausfälle
+- **Tests**: Regelmäßige Wiederherstellungsübungen
 
 ## Sicherheit
 
-### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions für easier Verwaltung
-- **Principle von Least Privilege**: Minimum necessary access
+### Zugriffskontrolle
+- **Authentifizierung**: Benutzeridentität überprüfen
+- **Autorisierung**: Berechtigungen erteilen (GRANT, REVOKE)
+- **Rollen**: Gruppenberechtigungen für einfachere Verwaltung
+- **Prinzip der geringsten Rechte**: Minimal notwendiger Zugriff
 
-### Daten Protection
-- **Encryption at Rest**: Encrypt stored Daten
-- **Encryption in Transit**: TLS/SSL für connections
-- **Masking**: Hide sensitive Daten in non-production
-- **Tokenization**: Replace sensitive Daten mit tokens
+### Datenschutz
+- **Verschlüsselung im Ruhezustand**: Gespeicherte Daten verschlüsseln
+- **Verschlüsselung während der Übertragung**: TLS/SSL für Verbindungen
+- **Maskierung**: Sensible Daten in Nicht-Produktionsumgebungen verbergen
+- **Tokenisierung**: Sensible Daten durch Tokens ersetzen
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL in user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all Datenbank activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+### Häufige Schwachstellen
+- **SQL-Injection**: Bösartiges SQL in Benutzereingaben
+- **Privilegienausweitung**: Unbefugter Zugriff erlangen
+- **Audit-Logging**: Alle Datenbankaktivitäten protokollieren
+- **Compliance**: GDPR, HIPAA, PCI-DSS Anforderungen
 
-## Modern Datenbank Technologies
+## Moderne Datenbanktechnologien
 
-### Cloud Databases
+### Cloud-Datenbanken
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL Datenbank, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+- **Azure**: SQL Database, Cosmos DB, Synapse
+- **Vorteile**: Verwalteter Dienst, Auto-Scaling, Backups inklusive
 
-### NewSQL Databases
-- Combine SQL consistency mit NoSQL scalability
+### NewSQL-Datenbanken
+- Kombinieren SQL-Konsistenz mit NoSQL-Skalierbarkeit
 - **Beispiele**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+- **Funktionen**: Verteilt, ACID-Transaktionen, horizontale Skalierung
 
-### Time-Series Databases
-- Optimized für timestamped Daten
+### Zeitreihendatenbanken
+- Optimiert für zeitgestempelte Daten
 - **Beispiele**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial Daten
+- **Einsatzgebiete**: IoT, Monitoring, Finanzdaten
 
-### Vector Databases
-- Store und query embedding vectors
+### Vektordatenbanken
+- Speichern und abfragen von Einbettungsvektoren
 - **Beispiele**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation Systeme, AI applications
+- **Einsatzgebiete**: Semantische Suche, Empfehlungssysteme, KI-Anwendungen
 
-### Multi-Model Databases
-- Support multiple Daten models in single system
+### Multimodelldatenbanken
+- Unterstützen mehrere Datenmodelle in einem System
 - **Beispiele**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
+- **Vorteil**: Flexibilität ohne mehrere Datenbanken
 
-## ORMs und Daten Access
+## ORMs und Datenzugriff
 
 ### Object-Relational Mapping
-- **Purpose**: Map Datenbank tables to programming objects
-- **Popular ORMs**:
+- **Zweck**: Datenbanktabellen auf Programmierobjekte abbilden
+- **Beliebte ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
   - JavaScript: Sequelize, Prisma, TypeORM
   - Java: Hibernate, JPA
   - Ruby: ActiveRecord
   - .NET: Entity Framework
 
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration Verwaltung
-- Query building APIs
+### Vorteile
+- Abstraktion von SQL
+- Typsicherheit
+- Migrationsverwaltung
+- Abfrage-Building-APIs
 
-### Drawbacks
-- Leistung overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
+### Nachteile
+- Leistungsoverhead
+- Komplexe Abfragen schwerer zu schreiben
+- N+1-Abfrageprobleme
+- Lernkurve
 
-## Datenbank Administration
+## Datenbankadministration
 
-### DBA Responsibilities
-- Installation und configuration
-- Leistung tuning
-- Backup und recovery
-- Sicherheit Verwaltung
-- Capacity planning
-- Monitoring und alerting
-- Patch Verwaltung
+### DBA-Aufgaben
+- Installation und Konfiguration
+- Leistungsoptimierung
+- Backup und Wiederherstellung
+- Sicherheitsverwaltung
+- Kapazitätsplanung
+- Monitoring und Alarmierung
+- Patch-Verwaltung
 
-### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
+### Überwachungsmetriken
+- Abfrageantwortzeit
+- Durchsatz (Transaktionen pro Sekunde)
+- Verbindungsanzahl
+- Cache-Trefferquote
+- Festplatten-E/A
+- Sperrwartezeit
+- Replikationsverzögerung
 
-### Maintenance Tasks
-- **Vacuum/Analyze**: Update Statistiken, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **Statistiken Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+### Wartungsaufgaben
+- **Vacuum/Analyze**: Statistiken aktualisieren, Speicher zurückgewinnen
+- **Index-Rebuilding**: Indizes defragmentieren
+- **Statistiken-Updates**: Abfrageoptimizer informiert halten
+- **Log Rotation**: Log-Dateigrößen verwalten
+- **Kapazitätsplanung**: Wachstum vorhersagen, Upgrades planen

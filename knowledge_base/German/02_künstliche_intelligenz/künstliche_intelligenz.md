@@ -2,90 +2,90 @@
 This file was automatically translated from English to German.
 Source: artificial_intelligence.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Artificial Intelligence
+# Künstliche Intelligenz
 
-## What is Artificial Intelligence?
+## Was ist Künstliche Intelligenz?
 
-Artificial Intelligence (AI) refers to der/die/das simulation von human intelligence in machines programmed to think, learn, und solve problems. AI Systeme can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, und identifying objects in images. der/die/das term was coined by John McCarthy in 1956 at der/die/das Dartmouth Conference, widely regarded as der/die/das founding event von AI as a field.
+Künstliche Intelligenz (KI) bezeichnet die Simulation menschlicher Intelligenz in Maschinen, die programmiert sind zu denken, zu lernen und Probleme zu lösen. KI-Systeme können Aufgaben ausführen, die typischerweise menschliche Intelligenz erfordern, wie Spracherkennung, Entscheidungsfindung, Übersetzung von Sprachen und Identifizierung von Objekten in Bildern. Der Begriff wurde 1956 von John McCarthy auf der Dartmouth-Konferenz geprägt, die weithin als das Gründungsereignis der KI als wissenschaftliches Feld gilt.
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed für specific tasks, und der/die/das theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Systeme are Narrow AI.
+Moderne KI wird grob in Narrow AI (auch Weak AI genannt) unterteilt, die für spezifische Aufgaben entwickelt wurde, und die theoretische Artificial General Intelligence (AGI), die menschliche kognitive Fähigkeiten in allen Bereichen erreichen oder übertreffen würde. Alle aktuellen KI-Systeme sind Narrow AI.
 
-## Geschichte von AI
+## Geschichte der KI
 
-der/die/das Geschichte von AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Datenverarbeitung Machinery und Intelligence" introduced der/die/das Turing Test — a measure von a machine's ability to exhibit intelligent behaviour indistinguishable from a human. der/die/das 1956 Dartmouth Conference formally established AI as an academic discipline.
+Die Geschichte der KI umfasst fast acht Jahrzehnte. Frühe theoretische Grundlagen wurden von Alan Turing gelegt, dessen 1950 erschienenes Papier "Computing Machinery and Intelligence" den Turing-Test einführte – ein Maß für die Fähigkeit einer Maschine, intelligentes Verhalten zu zeigen, das von einem Menschen nicht zu unterscheiden ist. Die Dartmouth-Konferenz von 1956 etablierte die KI formell als akademische Disziplin.
 
-der/die/das 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) und LISP (a programming Sprache designed für AI). der/die/das "AI winters" von der/die/das 1970s und 1980s were periods von reduced funding und interest following unmet expectations. A resurgence in der/die/das 1980s came mit expert Systeme — rule-based programs that encoded human expertise. der/die/das 2000s brought Maschinelles Lernen breakthroughs fuelled by der/die/das internet und growing datasets. der/die/das 2010s saw der/die/das rise von Tiefes Lernen, transforming computer vision, natural Sprache processing (NLP), und reinforcement learning.
+Die 1950er bis 1970er Jahre sahen optimistische frühe Programme wie ELIZA (einen einfachen Chatbot) und LISP (eine Programmiersprache, die für KI entwickelt wurde). Die "KI-Winter" der 1970er und 1980er Jahre waren Perioden reduzierter Finanzierung und des Interesses nach unerfüllten Erwartungen. Eine Wiederbelebung in den 1980er Jahren kam mit Expertensystemen – regelbasierten Programmen, die menschliches Fachwissen kodierten. Die 2000er Jahre brachten Durchbrüche im Maschinellen Lernen, angetrieben durch das Internet und wachsende Datensätze. Die 2010er Jahre sahen den Aufstieg des Deep Learning, der Computer Vision, Natural Language Processing (NLP) und Reinforcement Learning transformierte.
 
 ## Maschinelles Lernen
 
-Maschinelles Lernen (ML) is a subset von AI that enables Systeme to learn from Daten without being explicitly programmed. Key ML categories include:
+Maschinelles Lernen (ML) ist ein Teilbereich der KI, der es Systemen ermöglicht, aus Daten zu lernen, ohne explizit programmiert zu werden. Wichtige ML-Kategorien umfassen:
 
-**Supervised Learning**: der/die/das model is trained on labelled input-output pairs. Beispiele include spam detection und image classification. Algorithms include linear regression, decision trees, Support vector machines, und Neuronale Netze.
+**Überwachtes Lernen**: Das Modell wird auf beschrifteten Eingabe-Ausgabe-Paaren trainiert. Beispiele umfassen Spam-Erkennung und Bildklassifizierung. Algorithmen umfassen lineare Regression, Entscheidungsbäume, Support Vector Machines und Neuronale Netze.
 
-**Unsupervised Learning**: der/die/das model finds patterns in unlabelled Daten. Beispiele include customer segmentation und anomaly detection. Algorithms include k-means clustering und principal component analysis (PCA).
+**Unüberwachtes Lernen**: Das Modell findet Muster in unbeschrifteten Daten. Beispiele umfassen Kundensegmentierung und Anomalieerkennung. Algorithmen umfassen k-Means-Clustering und Hauptkomponentenanalyse (PCA).
 
-**Reinforcement Learning**: An agent learns by interacting mit an environment, receiving rewards or penalties. Used in game-playing AI (AlphaGo, AlphaZero), robotics, und recommendation Systeme.
+**Bestärkendes Lernen**: Ein Agent lernt durch Interaktion mit einer Umgebung und erhält Belohnungen oder Strafen. Wird in spielenden KIs (AlphaGo, AlphaZero), Robotik und Empfehlungssystemen verwendet.
 
-**Semi-Supervised und Self-Supervised Learning**: Combine small amounts von labelled Daten mit large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+**Semi-überwachtes und selbstüberwachtes Lernen**: Kombinieren kleine Mengen beschrifteter Daten mit großen unbeschrifteten Datensätzen. GPT-Modelle verwenden einen selbstüberwachten Ansatz während des Pre-Trainings.
 
-## Tiefes Lernen
+## Deep Learning
 
-Tiefes Lernen is a subset von Maschinelles Lernen that uses artificial Neuronale Netze mit many layers (deep networks). Inspired loosely by der/die/das brain's neural structure, these networks learn hierarchical representations von Daten. Tiefes Lernen powers:
+Deep Learning ist ein Teilbereich des Maschinellen Lernens, der künstliche Neuronale Netze mit vielen Schichten (tiefe Netzwerke) verwendet. Lose inspiriert von der neuronalen Struktur des Gehirns, lernen diese Netzwerke hierarchische Darstellungen von Daten. Deep Learning treibt an:
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural Sprache Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+- **Computer Vision**: Bilderkennung, Objekterkennung, medizinische Bildgebung
+- **Natural Language Processing**: Maschinelle Übersetzung, Sentiment-Analyse, Fragebeantwortung
+- **Spracherkennung**: Sprachassistenten wie Siri, Alexa, Google Assistant
+- **Generative KI**: Bilderstellung (DALL-E, Stable Diffusion), Textgenerierung (GPT)
 
-Key Tiefes Lernen architectures include convolutional Neuronale Netze (CNNs) für images, recurrent Neuronale Netze (RNNs) und LSTMs für sequences, transformers für Sprache, und generative adversarial networks (GANs) für synthesis.
+Wichtige Deep-Learning-Architekturen umfassen Convolutional Neural Networks (CNNs) für Bilder, Recurrent Neural Networks (RNNs) und LSTMs für Sequenzen, Transformer für Sprache und Generative Adversarial Networks (GANs) für Synthese.
 
-## Large Sprache Models (LLMs)
+## Large Language Models (LLMs)
 
-Large Sprache Models (LLMs) are AI Systeme trained on vast amounts von text Daten to understand und generate human Sprache. They are based on der/die/das Transformer Architektur, introduced in der/die/das 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict der/die/das next token (word piece) in a sequence, allowing them to generate coherent text, answer questions, write code, und perform reasoning tasks.
+Large Language Models (LLMs) sind KI-Systeme, die auf riesigen Mengen von Textdaten trainiert werden, um menschliche Sprache zu verstehen und zu generieren. Sie basieren auf der Transformer-Architektur, eingeführt im 2017er Papier "Attention Is All You Need" von Vaswani et al. LLMs sagen das nächste Token (Wortteil) in einer Sequenz vorher, was es ihnen ermöglicht, kohärenten Text zu generieren, Fragen zu beantworten, Code zu schreiben und Schlussfolgerungsaufgaben durchzuführen.
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, und successors — widely used für chat und code
-- **Claude** (Anthropic): Focused on safety und helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, und code
-- **LLaMA / Llama 3** (Meta): Open-weight models für research und local Bereitstellung
-- **Mistral** (Mistral AI): Efficient open models competitive mit much larger LLMs
+Bemerkenswerte LLMs umfassen:
+- **GPT-Serie** (OpenAI): GPT-3, GPT-4 und Nachfolger – weit verbreitet für Chat und Code
+- **Claude** (Anthropic): Fokussiert auf Sicherheit und Hilfsbereitschaft
+- **Gemini** (Google DeepMind): Multimodal, integriert Text, Bilder und Code
+- **LLaMA / Llama 3** (Meta): Open-Weight-Modelle für Forschung und lokale Bereitstellung
+- **Mistral** (Mistral AI): Effiziente offene Modelle, die mit viel größeren LLMs konkurrieren
 
-LLMs are trained in two stages: pre-training (unsupervised on large text corpora) und fine-tuning (supervised or via reinforcement learning from human Rückmeldung, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens in der/die/das most Fortgeschritten 2024 models.
+LLMs werden in zwei Phasen trainiert: Pre-Training (unüberwacht auf großen Textkorpora) und Fine-Tuning (überwacht oder via Reinforcement Learning from Human Feedback, RLHF). Kontextfenster beschreiben, wie viel Text ein LLM auf einmal verarbeiten kann, von 4K-Token (frühes GPT-3) bis über 1 Million Token in den fortschrittlichsten Modellen von 2024.
 
-## AI Ethics und Safety
+## KI-Ethik und Sicherheit
 
-AI raises important ethical questions including bias, privacy, job displacement, und der/die/das risk von misuse. Algorithmic bias occurs when training Daten reflects historical inequalities, causing AI Systeme to produce discriminatory outputs. Facial recognition Systeme have shown higher error rates für darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+KI wirft wichtige ethische Fragen auf, einschließlich Bias, Privatsphäre, Arbeitsplatzverlagerung und das Risiko des Missbrauchs. Algorithmischer Bias tritt auf, wenn Trainingsdaten historische Ungleichheiten widerspiegeln, wodurch KI-Systeme diskriminierende Ausgaben produzieren. Gesichtserkennungssysteme haben höhere Fehlerraten bei dunkelhäutigen Personen gezeigt. Einstellungsalgorithmen bevorzugen nachweislich männliche Kandidaten.
 
-AI safety is der/die/das field dedicated to ensuring AI Systeme behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical in Medizin, Recht, Finanzen)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a Zukunft AGI could pursue goals misaligned mit human survival
+KI-Sicherheit ist das Feld, das sich der Gewährleistung widmet, dass KI-Systeme wie beabsichtigt verhalten, ohne unbeabsichtigten Schaden zu verursachen. Wichtige Bedenken umfassen:
+- **Alignment**: Sicherstellen, dass KI-Ziele mit menschlichen Werten übereinstimmen
+- **Interpretierbarkeit / Erklärbarkeit**: Verstehen, warum eine KI eine Entscheidung getroffen hat (kritisch in Medizin, Recht, Finanzen)
+- **Missbrauch**: KI-generierte Deepfakes, Desinformation, Cyberangriffe
+- **Existenzielles Risiko**: Theoretische Sorge, dass eine zukünftige AGI Ziele verfolgen könnte, die mit dem menschlichen Überleben nicht vereinbar sind
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, und independent institutes like MIRI und ARC.
+Organisationen, die an KI-Sicherheit arbeiten, umfassen OpenAIs Safety-Team, Anthropic (gegründet von ehemaligen OpenAI-Sicherheitsforschern), DeepMinds Safety-Team und unabhängige Institute wie MIRI und ARC.
 
-## AI in Society
+## KI in der Gesellschaft
 
-AI is transforming nearly every industry:
+KI transformiert nahezu jede Branche:
 
-- **Gesundheitswesen**: AI assists in diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), und personalising treatment plans.
-- **Finanzen**: Fraud detection, algorithmic trading, credit scoring, und robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, und reinforcement learning. Tesla Autopilot, Waymo, und Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace und learning style.
-- **Creative fields**: AI generates music, art, und writing; tools like Midjourney, DALL-E, und GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, und powers both attacks und defences.
+- **Gesundheitswesen**: KI unterstützt bei der Diagnose von Krebs aus medizinischen Bildern, der Vorhersage von Patientenergebnissen, der Beschleunigung der Arzneimittelentdeckung (AlphaFold löste die Vorhersage der Proteinfaltungsstruktur) und der Personalisierung von Behandlungsplänen.
+- **Finanzen**: Betrugserkennung, algorithmischer Handel, Kredit-Scoring und Robo-Advisors verwenden ML-Modelle.
+- **Transport**: Selbstfahrende Fahrzeuge verwenden Computer Vision, Lidar und bestärkendes Lernen. Tesla Autopilot, Waymo und Cruise sind führende Bemühungen.
+- **Bildung**: Personalisierte Lernplattformen passen Inhalte an das individuelle Lerntempo und den Lernstil der Schüler an.
+- **Kreative Bereiche**: KI generiert Musik, Kunst und Schreiben; Tools wie Midjourney, DALL-E und GitHub Copilot haben kreative Workflows verändert.
+- **Cybersicherheit**: KI erkennt Anomalien, identifiziert Bedrohungen und treibt sowohl Angriffe als auch Verteidigungen an.
 
-## Robotics und Embodied AI
+## Robotik und Embodied AI
 
-Robotics combines AI mit physical machines. Modern robots use perception (cameras, lidar), planning, und control to navigate und manipulate environments. Boston Dynamics' Atlas demonstrates Fortgeschritten bipedal movement. Industrial robots from companies like ABB und FANUC automate manufacturing. Household robots (Roomba) und surgical robots (da Vinci System) apply AI in everyday und medical settings. Embodied AI research focuses on agents that learn physical skills through interaction mit der/die/das world, bridging der/die/das gap between simulated und real environments.
+Robotik kombiniert KI mit physischen Maschinen. Moderne Roboter verwenden Wahrnehmung (Kameras, Lidar), Planung und Steuerung, um sich in Umgebungen zu bewegen und diese zu manipulieren. Boston Dynamics' Atlas demonstriert fortgeschrittene zweibeinige Bewegung. Industrieroboter von Unternehmen wie ABB und FANUC automatisieren die Fertigung. Haushaltsroboter (Roomba) und chirurgische Roboter (da Vinci-System) wenden KI in alltäglichen und medizinischen settings an. Embodied-AI-Forschung konzentriert sich auf Agenten, die physische Fähigkeiten durch Interaktion mit der Welt lernen und überbrücken die Lücke zwischen simulierten und realen Umgebungen.
 
-## Current AI Trends (2020s)
+## Aktuelle KI-Trends (2020er)
 
-- **Multimodal AI**: Systeme that process text, images, audio, und video together (GPT-4V, Gemini)
-- **Agents und agentic AI**: LLMs that can use tools, browse der/die/das Web, write code, und take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models für researchers
-- **On-device AI**: Running AI models locally on phones und laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: der/die/das EU AI Act (2024) is der/die/das world's first comprehensive AI Recht, classifying AI Systeme by risk level
+- **Multimodale KI**: Systeme, die Text, Bilder, Audio und Video zusammen verarbeiten (GPT-4V, Gemini)
+- **Agenten und agentische KI**: LLMs, die Tools verwenden, im Web surfen, Code schreiben und mehrstufige Aktionen ausführen können (OpenAIs Operator, Anthropic Computer Use)
+- **Open-Weight-Modelle**: Metas LLaMA demokratisierte den Zugang zu großen Modellen für Forscher
+- **On-Device-KI**: Ausführen von KI-Modellen lokal auf Telefonen und Laptops ohne Cloud-Konnektivität (Apple Intelligence, Qualcomm NPUs)
+- **KI-Regulierung**: Der EU AI Act (2024) ist das weltweit erste umfassende KI-Gesetz, das KI-Systeme nach Risikostufen klassifiziert

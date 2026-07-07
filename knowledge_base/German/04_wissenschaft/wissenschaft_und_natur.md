@@ -2,47 +2,47 @@
 This file was automatically translated from English to German.
 Source: science_and_nature.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Wissenschaft und Natur
 
-## Physics
+## Physik
 
-Physics is der/die/das natural Wissenschaft that studies matter, energy, und der/die/das fundamental forces von der/die/das universe. der/die/das four fundamental forces are gravity, electromagnetism, der/die/das strong nuclear force, und der/die/das weak nuclear force. Gravity is der/die/das weakest von der/die/das four forces but has infinite range und affects all objects mit mass. Newton's Recht von gravity states that every object attracts every other object mit a force proportional to their masses und inversely proportional to der/die/das square von der/die/das distance between them.
+Physik ist die Naturwissenschaft, die Materie, Energie und die fundamentalen Kräfte des Universums untersucht. Die vier fundamentalen Kräfte sind Gravitation, Elektromagnetismus, die starke Kernkraft und die schwache Kernkraft. Die Gravitation ist die schwächste der vier Kräfte, hat aber eine unendliche Reichweite und beeinflusst alle Objekte mit Masse. Newtons Gravitationsgesetz besagt, dass jedes Objekt jedes andere Objekt mit einer Kraft anzieht, die proportional zu ihren Massen und umgekehrt proportional zum Quadrat des Abstands zwischen ihnen ist.
 
-Einstein's theory von general relativity describes gravity as a curvature von spacetime caused by mass und energy. Einstein's theory von special relativity established that der/die/das speed von light is constant in all inertial frames von Referenz und that mass und energy are equivalent, expressed as E = mc squared.
+Einsteins allgemeine Relativitätstheorie beschreibt die Gravitation als eine Krümmung der Raumzeit, die durch Masse und Energie verursacht wird. Einsteins spezielle Relativitätstheorie stellte fest, dass die Lichtgeschwindigkeit in allen Inertialsystemen konstant ist und dass Masse und Energie äquivalent sind, ausgedrückt als E = mc².
 
-## Atoms und Matter
+## Atome und Materie
 
-An atom is der/die/das smallest unit von an element that retains der/die/das chemical properties von that element. Atoms consist von a nucleus containing protons und neutrons, surrounded by electrons. der/die/das number von protons in an atom determines which element it is, called der/die/das atomic number. Elements are organized in der/die/das periodic table by atomic number. There are 118 known elements. Hydrogen is der/die/das lightest und most abundant element in der/die/das universe. Carbon is der/die/das basis von all known life due to its ability to form four chemical bonds.
+Ein Atom ist die kleinste Einheit eines Elements, die die chemischen Eigenschaften dieses Elements beibehält. Atome bestehen aus einem Kern, der Protonen und Neutronen enthält, umgeben von Elektronen. Die Anzahl der Protonen in einem Atom bestimmt, welches Element es ist, genannt die Ordnungszahl. Elemente sind im Periodensystem nach der Ordnungszahl organisiert. Es gibt 118 bekannte Elemente. Wasserstoff ist das leichteste und häufigste Element im Universum. Kohlenstoff ist die Basis allen bekannten Lebens aufgrund seiner Fähigkeit, vier chemische Bindungen einzugehen.
 
-Matter exists in four common states: solid, liquid, gas, und plasma. in a solid, atoms are tightly packed. in a liquid, atoms can flow but remain close. in a gas, atoms move freely. Plasma is an ionized gas und is der/die/das most common state von matter in der/die/das universe, found in stars.
+Materie existiert in vier gemeinsamen Zuständen: fest, flüssig, gasförmig und Plasma. In einem Feststoff sind Atome dicht gepackt. In einer Flüssigkeit können Atome fließen, bleiben aber nahe beieinander. In einem Gas bewegen sich Atome frei. Plasma ist ein ionisiertes Gas und der häufigste Zustand der Materie im Universum, gefunden in Sternen.
 
-## Chemistry
+## Chemie
 
-Chemistry is der/die/das study von matter und der/die/das changes it undergoes. Chemical reactions involve der/die/das breaking und forming von chemical bonds. An acid is a substance that donates hydrogen ions (protons) in a solution. A base is a substance that accepts hydrogen ions. der/die/das pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), mit 7 being neutral. Water has a pH von 7.
+Chemie ist die Untersuchung der Materie und der Veränderungen, die sie durchläuft. Chemische Reaktionen beinhalten das Brechen und Bilden chemischer Bindungen. Eine Säure ist eine Substanz, die in einer Lösung Wasserstoffionen (Protonen) abgibt. Eine Base ist eine Substanz, die Wasserstoffionen aufnimmt. Die pH-Skala misst, wie sauer oder basisch eine Lösung ist, von 0 (am sauersten) bis 14 (am basischsten), wobei 7 neutral ist. Wasser hat einen pH-Wert von 7.
 
-Photosynthesis is der/die/das process by which plants, algae, und some bacteria convert light energy, usually from der/die/das Sun, into chemical energy stored in glucose. der/die/das equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential für life on Earth as it produces oxygen und forms der/die/das base von most Essen chains.
+Photosynthese ist der Prozess, bei dem Pflanzen, Algen und einige Bakterien Lichtenergie, normalerweise von der Sonne, in chemische Energie umwandeln, die in Glukose gespeichert wird. Die Gleichung lautet: Kohlendioxid + Wasser + Lichtenergie → Glukose + Sauerstoff. Photosynthese ist für das Leben auf der Erde unerlässlich, da sie Sauerstoff produziert und die Basis der meisten Nahrungsketten bildet.
 
-## Biology
+## Biologie
 
-Biology is der/die/das study von living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, und uses energy. DNA (deoxyribonucleic acid) carries der/die/das genetic information von living organisms. DNA is a double helix made von four nucleotide bases: adenine, thymine, cytosine, und guanine. Cells are der/die/das basic structural unit von life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) und eukaryotic cells (mit a nucleus, like plants und animals).
+Biologie ist die Untersuchung lebender Organismen. Alles Leben teilt bestimmte Eigenschaften: Es ist organisiert, reagiert auf Reize, wächst, vermehrt sich und verwendet Energie. DNA (Desoxyribonukleinsäure) trägt die genetische Information lebender Organismen. DNA ist eine Doppelhelix, die aus vier Nukleotidbasen besteht: Adenin, Thymin, Cytosin und Guanin. Zellen sind die grundlegende strukturelle Einheit des Lebens. Es gibt zwei Haupttypen: prokaryotische Zellen (kein membranbegrenzter Kern, wie Bakterien) und eukaryotische Zellen (mit einem Kern, wie Pflanzen und Tiere).
 
-Evolution is der/die/das change in der/die/das heritable characteristics von biological populations over successive generations. Charles Darwin proposed der/die/das theory von natural selection, which states that individuals mit advantageous traits are more likely to survive und reproduce. der/die/das theory von evolution by natural selection is der/die/das unifying framework von modern biology.
+Evolution ist die Veränderung der vererbbaren Merkmale biologischer Populationen über aufeinanderfolgende Generationen. Charles Darwin schlug die Theorie der natürlichen Selektion vor, die besagt, dass Individuen mit vorteilhaften Merkmalen eher überleben und sich fortpflanzen. Die Evolutionstheorie durch natürliche Selektion ist das vereinheitlichende Rahmenwerk der modernen Biologie.
 
-## Electricity und Magnetism
+## Elektrizität und Magnetismus
 
-Electricity is der/die/das flow von electric charge, usually electrons. Voltage (measured in volts) is der/die/das electrical potential difference between two points. Current (measured in amperes) is der/die/das rate von flow von electric charge. Resistance (measured in ohms) is opposition to der/die/das flow von current. Ohm's Recht states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric und magnetic fields are two aspects von der/die/das same phenomenon: electromagnetism.
+Elektrizität ist der Fluss elektrischer Ladung, normalerweise von Elektronen. Spannung (gemessen in Volt) ist die elektrische Potentialdifferenz zwischen zwei Punkten. Stromstärke (gemessen in Ampere) ist die Rate des Flusses elektrischer Ladung. Widerstand (gemessen in Ohm) ist der Widerstand gegen den Stromfluss. Das Ohmsche Gesetz besagt, dass Spannung gleich Stromstärke multipliziert mit Widerstand ist (V = IR). Magnetismus ist eine Kraft, die durch bewegte elektrische Ladungen erzeugt wird. Elektrische und magnetische Felder sind zwei Aspekte desselben Phänomens: Elektromagnetismus.
 
-## der/die/das Universe und Cosmology
+## Das Universum und Kosmologie
 
-der/die/das universe is approximately 13.8 billion years old, beginning mit der/die/das Big Bang. der/die/das universe contains approximately 2 trillion galaxies, each containing billions to trillions von stars. der/die/das Milky Way is our home galaxy, a spiral galaxy containing between 100 und 400 billion stars. der/die/das nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter und dark energy together make up about 95% von der/die/das universe's total content, though their Natur is not fully understood.
+Das Universum ist ungefähr 13,8 Milliarden Jahre alt und begann mit dem Urknall. Das Universum enthält ungefähr 2 Billionen Galaxien, von denen jede Milliarden bis Billionen von Sternen enthält. Die Milchstraße ist unsere Heimatgalaxie, eine Spiralgalaxie mit zwischen 100 und 400 Milliarden Sternen. Der nächste Stern zu unserer Sonne ist Proxima Centauri, etwa 4,24 Lichtjahre entfernt. Dunkle Materie und dunkle Energie machen zusammen etwa 95% des Gesamtinhalts des Universums aus, obwohl ihre Natur nicht vollständig verstanden wird.
 
-## Geology
+## Geologie
 
-Earth is composed von layers: der/die/das inner core (solid iron und nickel), outer core (liquid iron und nickel), mantle (semi-solid rock), und crust (solid rock). der/die/das tectonic plates are large pieces von Earth's crust und upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches der/die/das surface. der/die/das rock cycle describes how rocks are formed, broken down, und reformed over millions von years.
+Die Erde besteht aus Schichten: innerer Kern (festes Eisen und Nickel), äußerer Kern (flüssiges Eisen und Nickel), Mantel (halb-festes Gestein) und Kruste (festes Gestein). Die tektonischen Platten sind große Stücke der Erdkruste und des oberen Mantels, die sich langsam über die Zeit bewegen. Erdbeben treten auf, wenn tektonische Platten aneinander reiben oder rutschen. Vulkane entstehen dort, wo Magma aus dem Erdinneren an die Oberfläche gelangt. Der Gesteinszyklus beschreibt, wie Gesteine über Millionen von Jahren gebildet, abgebaut und neu gebildet werden.
 
-## Energy
+## Energie
 
-Energy exists in many forms: kinetic (energy von motion), potential (stored energy), thermal (heat), chemical, electrical, und nuclear. der/die/das Recht von conservation von energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, und tidal energy. Fossil fuels (coal, oil, und natural gas) are non-renewable energy sources formed from der/die/das remains von ancient organisms.
+Energie existiert in vielen Formen: kinetisch (Bewegungsenergie), potenziell (gespeicherte Energie), thermisch (Wärme), chemisch, elektrisch und nuklear. Der Energieerhaltungssatz besagt, dass Energie nicht erzeugt oder zerstört werden kann, sondern nur von einer Form in eine andere umgewandelt wird. Erneuerbare Energiequellen umfassen Solar-, Wind-, Wasserkraft-, Geothermie- und Gezeitenenergie. Fossile Brennstoffe (Kohle, Öl und Erdgas) sind nicht-erneuerbare Energiequellen, die aus den Überresten alter Organismen entstanden sind.
