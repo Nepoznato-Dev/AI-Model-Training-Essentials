@@ -10,11 +10,11 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Visualizzazione dei dati**: Comunicare efficacemente i risultati
 
 ### Tipi di dati
-- **dati Strutturati**: Organizzati in righe/colonne (database, fogli di calcolo)
-- **dati Non Strutturati**: Nessun formato predefinito (testo, immagini, audio, video)
-- **dati Semi-strutturati**: Qualche organizzazione ma non rigida (JSON, XML, HTML)
-- **dati di Serie Temporali**: Punti dati sequenziali indicizzati in ordine temporale
-- **dati Spaziali**: Informazioni geografiche/basate sulla posizione
+- **Dati strutturati**: Organizzati in righe/colonne (database, fogli di calcolo)
+- **Dati non strutturati**: Nessun formato predefinito (testo, immagini, audio, video)
+- **Dati semi-strutturati**: Qualche organizzazione ma non rigida (JSON, XML, HTML)
+- **Dati di serie temporali**: Punti dati sequenziali indicizzati in ordine temporale
+- **Dati spaziali**: Informazioni geografiche/basate sulla posizione
 - **dati a Grafo**: Nodi e archi che rappresentano relazioni
 
 ### Il Processo di Data Science (CRISP-DM)
