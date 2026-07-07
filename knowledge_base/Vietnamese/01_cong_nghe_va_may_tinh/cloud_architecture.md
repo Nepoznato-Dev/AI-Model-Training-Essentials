@@ -17,7 +17,7 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **Đám mây riêng**: Dành riêng cho một tổ chức (tại chỗ hoặc được lưu trữ trên máy chủ)
 - **Đám mây lai**: Kết hợp giữa đám mây công cộng và đám mây riêng
 - **Đa đám mây**: Sử dụng nhiều nhà cung cấp đám mây công cộng
-- **Community Cloud**: Được chia sẻ bởi các tổ chức có chung mối quan tâm
+- **Đám mây cộng đồng**: Được chia sẻ bởi các tổ chức có chung mối quan tâm
 
 ###Mô hình dịch vụ
 
@@ -75,7 +75,7 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 ### Nhà cung cấp khác
 - **IBM Cloud**: Trọng tâm doanh nghiệp, Watson AI
 - **Oracle Cloud**: Khối lượng công việc cơ sở dữ liệu, ứng dụng doanh nghiệp
-- **Đám mây Alibaba**: Thống trị ở Châu Á - Thái Bình Dương
+- **Alibaba Cloud**: Thống trị ở Châu Á - Thái Bình Dương
 - **DigitalOcean**: Các dịch vụ đơn giản, thân thiện với nhà phát triển
 
 ## Các mẫu kiến trúc đám mây
@@ -131,7 +131,9 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - Nhà sản xuất phát ra sự kiện, người tiêu dùng phản ứng
 - **Mẫu**: Tìm nguồn cung ứng sự kiện, CQRS, pub/sub
 - **Công nghệ**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Lợi ích**: Khớp nối lỏng lẻo, khả năng mở rộng, xử lý thời gian thực#### Kiến trúc không máy chủ
+- **Lợi ích**: Khớp nối lỏng lẻo, khả năng mở rộng, xử lý thời gian thực
+
+#### Kiến trúc không máy chủ
 - Không cần quản lý máy chủ
 - Trả tiền cho mỗi lần thực hiện
 - Tự động chia tỷ lệ
@@ -202,11 +204,11 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 ### Cơ sở dữ liệu quan hệ được quản lý
 - **Dịch vụ**: AWS RDS/Aurora, Google Cloud SQL, Cơ sở dữ liệu SQL Azure
 - **Tính năng**: Tự động sao lưu, vá lỗi, mở rộng quy mô, sao chép
-- **Công cụ**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+- **Công cụ**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server (các tên sản phẩm được giữ nguyên)
 
 ### Cơ sở dữ liệu NoSQL
 - **Tài liệu**: DocumentDB, Firestore, Cosmos DB
-- **Khóa-giá trị**: DynamoDB, Redis Cache
+- **Khóa-giá trị**: DynamoDB, Redis Cache (tên dịch vụ)
 - **Cột rộng**: Bigtable, Cassandra (được quản lý)
 - **Đồ thị**: Neptune, Cosmos DB (API đồ thị)
 
@@ -262,11 +264,13 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **Nhóm**: Tập hợp người dùng
 - **Vai trò**: Thông tin xác thực tạm thời cho dịch vụ/người dùng
 - **Chính sách**: Tài liệu JSON xác định quyền
-- **Nguyên tắc**: Đặc quyền tối thiểu, phân chia nhiệm vụ### An ninh mạng
+- **Nguyên tắc**: Đặc quyền tối thiểu, phân chia nhiệm vụ
+
+### An ninh mạng
 - **Nhóm bảo mật**: Tường lửa trạng thái cho các phiên bản
-- **Network ACL**: Tường lửa không trạng thái cho mạng con
+- **Network ACL (Danh sách kiểm soát truy cập mạng)**: Tường lửa không trạng thái cho mạng con
 - **Tường lửa ứng dụng web (WAF)**: Bảo vệ khỏi việc khai thác web
-- **Bảo vệ DDoS**: Khiên, Áo giáp đám mây, Bảo vệ DDoS
+- **Bảo vệ DDoS**: Shield, Cloud Armor, Azure DDoS Protection
 
 ### Bảo vệ dữ liệu
 - **Mã hóa ở trạng thái lưu trữ**: KMS, khóa do khách hàng quản lý
@@ -302,16 +306,16 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **SaltStack**: Nhanh, dựa trên Python
 
 ### Giám sát và quan sát
-- **Số liệu**: CloudWatch, Giám sát đám mây, Azure Monitor
-- **Ghi nhật ký**: Nhật ký CloudWatch, Nhật ký đám mây, Phân tích nhật ký
-- **Theo dõi**: X-Ray, Cloud Trace, Thông tin chi tiết về ứng dụng
-- **Trang tổng quan**: Bảng thông tin CloudWatch, Bảng điều khiển đám mây
-- **Cảnh báo**: SNS, Cảnh báo giám sát đám mây, Nhóm hành động
+- **Số liệu**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Ghi nhật ký**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **Theo dõi**: X-Ray, Cloud Trace, Application Insights (tên dịch vụ)
+- **Trang tổng quan**: CloudWatch Dashboards, Cloud Console, Azure Portal
+- **Cảnh báo**: SNS, Cloud Monitoring Alerts, Action Groups
 
 ### Điều phối vùng chứa
 - **Kubernetes**: Điều phối tiêu chuẩn ngành
 - **Dịch vụ được quản lý**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (quản lý lưu lượng, bảo mật)
+- **Service Mesh (Lưới dịch vụ)**: Istio, Linkerd (quản lý lưu lượng, bảo mật)
 - **GitOps**: ArgoCD, Flux (triển khai khai báo)
 
 ##Quản lý chi phí
@@ -351,10 +355,10 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **Sao chép cơ sở dữ liệu**: Triển khai Multi-AZ, đọc bản sao
 
 ### Chiến lược khắc phục thảm họa
-- **Backup and Restore**: Backup định kỳ, khôi phục khi cần (chi phí thấp nhất)
-- **Đèn thí điểm**: Các yếu tố cốt lõi đang chạy, mở rộng quy mô trong thảm họa
-- **Chế độ chờ ấm**: Phiên bản thu nhỏ luôn chạy
-- **Đang hoạt động/Đang hoạt động nhiều địa điểm**: Sản xuất đầy đủ ở nhiều vùng (chi phí cao nhất)
+- **Sao lưu và Khôi phục**: Sao lưu định kỳ, khôi phục khi cần (chi phí thấp nhất)
+- **Phiên bản thí điểm**: Các yếu tố cốt lõi đang chạy, mở rộng quy mô trong thảm họa
+- **Chế độ chờ dự phòng ấm**: Phiên bản thu nhỏ luôn chạy
+- **Hoạt động song song tại nhiều địa điểm**: Sản xuất đầy đủ ở nhiều vùng (chi phí cao nhất)
 
 ### RTO và RPO
 - **Mục tiêu về thời gian phục hồi (RTO)**: Thời gian ngừng hoạt động tối đa có thể chấp nhận được

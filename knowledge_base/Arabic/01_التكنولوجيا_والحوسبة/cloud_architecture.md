@@ -9,15 +9,15 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## أساسيات الحوسبة السحابية
 
-### What is Cloud الحوسبة?
+### ما هي الحوسبة السحابية؟
 تسليم حسب الطلب لموارد الحوسبة (الخوادم، التخزين، قواعد البيانات، الشبكات، البرمجيات) عبر الإنترنت مع تسعير الدفع حسب الاستخدام.
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
+### الخصائص الأساسية (تعريف NIST)
+- **الخدمة الذاتية عند الطلب**: توفير الموارد دون تفاعل بشري
 - **الوصول الواسع للشبكة**: متاح عبر الشبكة عبر الآليات القياسية
-- **Resource Pooling**: نموذج متعدد المستأجرين مع التعيين الديناميكي
-- **Rapid Elasticity**: التوسع والتقلص بسرعة
-- **Measured Service**: مراقبة استخدام الموارد وإصدار الفواتير
+- **تجمع الموارد**: نموذج متعدد المستأجرين مع التعيين الديناميكي
+- **المرونة السريعة**: التوسع والتقلص بسرعة
+- **الخدمة المقاسة**: مراقبة استخدام الموارد وإصدار الفواتير
 
 ### نماذج نشر الحوسبة السحابية
 - **الحوسبة السحابية العامة**: مملوكة من قبل المزودين، بنية تحتية مشتركة (AWS, Azure, GCP)
@@ -29,373 +29,373 @@ For accuracy improvements, please contribute edits via pull requests.
 ### نماذج الخدمة
 
 #### البنية التحتية كخدمة (IaaS)
-- **يوفر**: آلات افتراضية, storage, networks, أنظمة التشغيل
+- **يوفر**: آلات افتراضية، تخزين، شبكات، أنظمة التشغيل
 - **أمثلة**: AWS EC2, Google Compute Engine, Azure VMs
-- **حالات الاستخدام**: هجرات الرفع والنقل, بيئات التطوير, احتياجات تحكم عالي
+- **حالات الاستخدام**: هجرات الرفع والنقل، بيئات التطوير، احتياجات تحكم عالي
 
 #### المنصة كخدمة (PaaS)
-- **يوفر**: التطوير platforms, databases, برمجيات وسيطة
+- **يوفر**: منصات التطوير، قواعد البيانات، برمجيات وسيطة
 - **أمثلة**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **حالات الاستخدام**: تطوير التطبيقات, نشر واجهات البرمجة, الخدمات المصغرة
+- **حالات الاستخدام**: تطوير التطبيقات، نشر واجهات البرمجة، الخدمات المصغرة
 
 #### البرمجيات كخدمة (SaaS)
-- **يوفر**: مكتمل applications over internet
+- **يوفر**: تطبيقات كاملة عبر الإنترنت
 - **أمثلة**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **حالات الاستخدام**: البريد الإلكتروني, إدارة علاقات العملاء, التعاون, الأعمال applications
+- **حالات الاستخدام**: البريد الإلكتروني، إدارة علاقات العملاء، التعاون، تطبيقات الأعمال
 
 #### الدالة كخدمة (FaaS) / بدون خادم
 - **يوفر**: تنفيذ الدوال المدفوعة بالأحداث
 - **أمثلة**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **حالات الاستخدام**: معالجة الأحداث, واجهات البرمجة, مهام مجدولة, معالجة في الوقت الفعلي
+- **حالات الاستخدام**: معالجة الأحداث، واجهات البرمجة، مهام مجدولة، معالجة في الوقت الفعلي
 
-## Major Cloud Providers
+## مزودو الحوسبة السحابية الرئيسيون
 
-### Amazon الويب Services (AWS)
-- **Market Share**: ~32% (largest provider)
-- **Key Services**:
-  - Compute: EC2, Lambda, ECS, EKS
-  - Storage: S3, EBS, Glacier
-  - قاعدة البيانات: RDS, DynamoDB, Aurora
-  - Networking: VPC, Route 53, CloudFront
-  - AI/ML: SageMaker, Rekognition, Comprehend
+### خدمات الويب أمازون (AWS)
+- **الحصة السوقية**: ~32% (أكبر مزود)
+- **الخدمات الرئيسية**:
+  - الحوسبة: EC2, Lambda, ECS, EKS
+  - التخزين: S3, EBS, Glacier
+  - قواعد البيانات: RDS, DynamoDB, Aurora
+  - الشبكات: VPC, Route 53, CloudFront
+  - الذكاء الاصطناعي/التعلم الآلي: SageMaker, Rekognition, Comprehend
 
-### Microsoft Azure
-- **Market Share**: ~23%
-- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
-- **Key Services**:
-  - Compute: Virtual Machines, Azure Functions, AKS
-  - Storage: Blob Storage, Disk Storage
-  - قاعدة البيانات: SQL قاعدة البيانات, Cosmos DB
-  - Networking: Virtual الشبكة, Traffic Manager
-  - AI/ML: Azure ML, Cognitive Services
+### مايكروسوفت أزور
+- **الحصة السوقية**: ~23%
+- **نقاط القوة**: تكامل المؤسسات، الحوسبة السحابية الهجينة، نظام مايكروسوفت البيئي
+- **الخدمات الرئيسية**:
+  - الحوسبة: Virtual Machines, Azure Functions, AKS
+  - التخزين: Blob Storage, Disk Storage
+  - قواعد البيانات: SQL Database, Cosmos DB
+  - الشبكات: Virtual Network, Traffic Manager
+  - الذكاء الاصطناعي/التعلم الآلي: Azure ML, Cognitive Services
 
-### Google Cloud Platform (GCP)
-- **Market Share**: ~10%
-- **Strengths**: البيانات analytics, AI/ML, Kubernetes
-- **Key Services**:
-  - Compute: Compute Engine, Cloud Functions, GKE
-  - Storage: Cloud Storage, Persistent Disk
-  - قاعدة البيانات: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dataflow, Pub/Sub
-  - AI/ML: Vertex AI, AutoML
+### منصة جوجل السحابية (GCP)
+- **الحصة السوقية**: ~10%
+- **نقاط القوة**: تحليلات البيانات، الذكاء الاصطناعي/التعلم الآلي، Kubernetes
+- **الخدمات الرئيسية**:
+  - الحوسبة: Compute Engine, Cloud Functions, GKE
+  - التخزين: Cloud Storage, Persistent Disk
+  - قواعد البيانات: Cloud SQL, Firestore, Bigtable
+  - التحليلات: BigQuery, Dataflow, Pub/Sub
+  - الذكاء الاصطناعي/التعلم الآلي: Vertex AI, AutoML
 
-### Other Providers
-- **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: قاعدة البيانات workloads, enterprise applications
-- **Alibaba Cloud**: Dominant في Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified offerings
+### مزودون آخرون
+- **IBM Cloud**: تركيز على المؤسسات، Watson AI
+- **Oracle Cloud**: أحمال عمل قواعد البيانات، تطبيقات المؤسسات
+- **Alibaba Cloud**: المهيمنة في آسيا والمحيط الهادئ
+- **DigitalOcean**: صديق للمطورين، عروض مبسطة
 
-## عمارة الحوسبة السحابية Patterns
+## أنماط عمارة الحوسبة السحابية
 
-### Well-Architected Framework Principles
+### مبادئ إطار العمل جيد العمارة
 
-#### Operational Excellence
-- Automate operations
-- Make frequent, reversible changes
-- Refine procedures continuously
-- Anticipate failure
+#### التميز التشغيلي
+- أتمتة العمليات
+- إجراء تغييرات متكررة وقابلة للعكس
+- تحسين الإجراءات باستمرار
+- توقع الفشل
 
 #### الأمان
-- Implement strong identity foundation
-- Enable traceability
-- Apply الأمان at all layers
-- Automate الأمان أفضل الممارسات
-- Protect البيانات في transit و at rest
+- تنفيذ أساس هوية قوي
+- تمكين إمكانية التتبع
+- تطبيق الأمان على جميع الطبقات
+- أتمتة أفضل ممارسات الأمان
+- حماية البيانات أثناء النقل وفي حالة السكون
 
-#### Reliability
-- Test recovery procedures
-- Automatically recover from failure
-- Scale horizontally لأجل availability
-- Stop guessing capacity
-- Manage change في automation
+#### الموثوقية
+- اختبار إجراءات الاسترداد
+- الاسترداد تلقائيًا من الفشل
+- التوسع أفقيًا للتوفر
+- التوقف عن تخمين السعة
+- إدارة التغيير في الأتمتة
 
-#### الأداء Efficiency
-- Democratize متقدم technologies
-- Go global في minutes
-- Use serverless architectures
-- Experiment more often
-- Consider mechanical sympathy
+#### كفاءة الأداء
+- إضفاء الطابع الديمقراطي على التقنيات المتقدمة
+- الانتقال إلى العالمية في دقائق
+- استخدام عمارات بدون خادم
+- التجربة أكثر غالبًا
+- مراعاة التعاطف الميكانيكي
 
-#### Cost Optimization
-- Adopt consumption model
-- Measure overall efficiency
-- Stop spending money on undifferentiated work
-- Analyze و attribute expenditure
-- Use managed services
+#### تحسين التكلفة
+- اعتماد نموذج الاستهلاك
+- قياس الكفاءة الإجمالية
+- التوقف عن إنفاق المال على عمل غير متمايز
+- تحليل وإسناد النفقات
+- استخدام الخدمات المدارة
 
-### Common العمارة Patterns
+### أنماط العمارة الشائعة
 
-#### Microservices العمارة
-- Decompose applications into small, independent services
-- Each service owns its البيانات و logic
-- Communicate via واجهات البرمجة (REST, gRPC, messaging)
-- Deploy independently
-- **Benefits**: Scalability, fault isolation, التكنولوجيا diversity
-- **Challenges**: Distributed complexity, البيانات consistency, monitoring
+#### عمارة الخدمات المصغرة
+- تقسيم التطبيقات إلى خدمات صغيرة ومستقلة
+- كل خدمة تمتلك بياناتها ومنطقها
+- التواصل عبر واجهات البرمجة (REST, gRPC, المراسلة)
+- النشر بشكل مستقل
+- **الفوائد**: القابلية للتوسع، عزل الأعطال، تنوع التقنيات
+- **التحديات**: تعقيد موزع، اتساق البيانات، المراقبة
 
-#### Event-Driven العمارة
-- Components communicate through الأحداث
-- Producers emit الأحداث, consumers react
-- **Patterns**: Event sourcing, CQRS, pub/sub
-- **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, معالجة في الوقت الفعلي
+#### عمارة مدفوعة بالأحداث
+- تتواصل المكونات من خلال الأحداث
+- يصدر المنتجون الأحداث، ويتفاعل المستهلكون
+- **الأنماط**: مصدر الأحداث، CQRS، نشر/اشتراك
+- **التقنيات**: Kafka, SNS/SQS, EventBridge, Pub/Sub
+- **الفوائد**: اقتران فضفاض، قابلية التوسع، معالجة في الوقت الفعلي
 
-#### بدون خادم العمارة
-- No server الإدارة required
-- Pay per execution
-- Automatic scaling
-- **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid النشر
-- **Considerations**: Cold starts, vendor lock-in, execution limits
+#### عمارة بدون خادم
+- لا требуется إدارة الخادم
+- الدفع لكل تنفيذ
+- توسيع تلقائي
+- **المكونات**: الدوال، API Gateway، خدمات مدارة
+- **الفوائد**: كفاءة التكلفة، عمليات مخفضة، نشر سريع
+- **اعتبارات**: بدايات باردة، قفل البائع، حدود التنفيذ
 
-#### Layered العمارة (N-Tier)
-- Presentation layer (UI)
-- Application/الأعمال logic layer
-- البيانات access layer
-- قاعدة البيانات layer
-- **Benefits**: Separation من concerns, maintainability
-- **Common**: 3-tier الويب applications
+#### عمارة طبقية (N-Tier)
+- طبقة العرض (واجهة المستخدم)
+- طبقة منطق التطبيق/الأعمال
+- طبقة الوصول إلى البيانات
+- طبقة قاعدة البيانات
+- **الفوائد**: فصل الاهتمامات، سهولة الصيانة
+- **شائع**: تطبيقات الويب ذات الثلاث طبقات
 
-#### Space-Based العمارة
-- Handle high concurrency مع distributed البيانات
-- Virtualized memory across servers
-- Processing nodes scale independently
-- **حالات الاستخدام**: High-volume, low-latency applications
+#### عمارة قائمة على الفضاء
+- التعامل مع التزامن العالي مع بيانات موزعة
+- ذاكرة افتراضية عبر الخوادم
+- عقد المعالجة تتوسع بشكل مستقل
+- **حالات الاستخدام**: تطبيقات عالية الحجم ومنخفضة الكمون
 
-## Compute Services
+## خدمات الحوسبة
 
-### Virtual Machines
-- **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pricing**: On-demand, reserved instances, spot instances
-- **الإدارة**: Auto-scaling groups, load balancers
-- **أفضل الممارسات**: Right-sizing, tagging, monitoring, patching
+### الآلات الافتراضية
+- **الأنواع**: للأغراض العامة، محسنة للحوسبة، محسنة للذاكرة، GPU
+- **التسعير**: عند الطلب، مثيلات محجوزة، مثيلات فورية
+- **الإدارة**: مجموعات التوسع التلقائي، موازنات الحمل
+- **أفضل الممارسات**: التحجيم الصحيح، وضع العلامات، المراقبة، التصحيح
 
-### Containers
-- **Docker**: Container runtime standard
-- **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
-- **Benefits**: Portability, efficiency, consistency
-- **Registry**: ECR, GCR, ACR, Docker Hub
+### الحاويات
+- **Docker**: معيار وقت تشغيل الحاوية
+- **الأوركسترا**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
+- **الفوائد**: إمكانية النقل، الكفاءة، الاتساق
+- **السجل**: ECR, GCR, ACR, Docker Hub
 
-### بدون خادم Functions
-- **Execution Model**: Event-triggered, stateless
-- **Limits**: Execution time, memory, concurrent executions
-- **حالات الاستخدام**: واجهات البرمجة, file processing, scheduled jobs, IoT backends
-- **Monitoring**: Invocation counts, errors, duration, cold starts
+### دوال بدون خادم
+- **نموذج التنفيذ**: مدفوع بالأحداث، بلا حالة
+- **الحدود**: وقت التنفيذ، الذاكرة، التنفيذات المتزامنة
+- **حالات الاستخدام**: واجهات البرمجة، معالجة الملفات، الوظائف المجدولة، خلفيات IoT
+- **المراقبة**: أعداد الاستدعاء، الأخطاء، المدة، البدايات الباردة
 
-## Storage Solutions
+## حلول التخزين
 
-### Object Storage
-- **Characteristics**: Flat structure, metadata, HTTP access
+### تخزين الكائنات
+- **الخصائص**: بنية مسطحة، بيانات وصفية، وصول HTTP
 - **أمثلة**: AWS S3, Google Cloud Storage, Azure Blob
-- **حالات الاستخدام**: Static assets, backups, البيانات lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
+- **حالات الاستخدام**: الأصول الثابتة، النسخ الاحتياطية، بحيرات البيانات، الأرشيفات
+- **فئات التخزين**: ساخن، بارد، بارد جدًا، أرشيف (تكلفة/وصول متفاوت)
 
-### Block Storage
-- **Characteristics**: Raw volumes, attached to VMs
+### تخزين الكتل
+- **الخصائص**: أحجام خام، مرفقة بـ VMs
 - **أمثلة**: AWS EBS, Google Persistent Disk, Azure Disks
-- **حالات الاستخدام**: Databases, boot volumes, high-الأداء needs
-- **Types**: SSD, HDD, provisioned IOPS
+- **حالات الاستخدام**: قواعد البيانات، أحجام التمهيد، احتياجات أداء عالي
+- **الأنواع**: SSD, HDD, IOPS provisioned
 
-### File Storage
-- **Characteristics**: Shared file الأنظمة, NFS/SMB protocols
+### تخزين الملفات
+- **الخصائص**: أنظمة ملفات مشتركة، بروتوكولات NFS/SMB
 - **أمثلة**: AWS EFS, Google Filestore, Azure Files
-- **حالات الاستخدام**: Content الإدارة, shared configs, lift-و-shift
+- **حالات الاستخدام**: إدارة المحتوى، تكوينات مشتركة، رفع ونقل
 
-### Archive Storage
-- **Characteristics**: Lowest cost, retrieval delays
+### تخزين الأرشيف
+- **الخصائص**: أدنى تكلفة، تأخيرات استرجاع
 - **أمثلة**: S3 Glacier, Azure Archive Storage
-- **حالات الاستخدام**: Compliance, long-term backups, historical البيانات
+- **حالات الاستخدام**: الامتثال، نسخ احتياطية طويلة الأجل، بيانات تاريخية
 
-## قاعدة البيانات Services
+## خدمات قواعد البيانات
 
-### Managed Relational Databases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL قاعدة البيانات
-- **Features**: Automated backups, patching, scaling, replication
-- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### قواعد البيانات العلائقية المدارة
+- **الخدمات**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Database
+- **الميزات**: نسخ احتياطية تلقائية، تصحيح، توسيع، تكرار
+- **المحركات**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-### NoSQL Databases
-- **Document**: DocumentDB, Firestore, Cosmos DB
-- **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassandra (managed)
-- **Graph**: Neptune, Cosmos DB (graph API)
+### قواعد البيانات NoSQL
+- **مستند**: DocumentDB, Firestore, Cosmos DB
+- **مفتاح-قيمة**: DynamoDB, Redis Cache
+- **عمود عريض**: Bigtable, Cassandra (مدارة)
+- **رسم بياني**: Neptune, Cosmos DB (graph API)
 
-### البيانات Warehousing
-- **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP العمارة
-- **حالات الاستخدام**: Analytics, BI, large-scale البيانات analysis
+### مستودعات البيانات
+- **الخدمات**: Snowflake, Redshift, BigQuery, Synapse
+- **الخصائص**: تخزين عمودي، عمارة MPP
+- **حالات الاستخدام**: تحليلات، ذكاء أعمال، تحليل بيانات واسع النطاق
 
-### Caching Services
-- **في-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **حالات الاستخدام**: Session storage, query caching, content delivery
+### خدمات التخزين المؤقت
+- **في الذاكرة**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **تخزين مؤقت CDN**: CloudFront, Cloud CDN, Azure CDN
+- **حالات الاستخدام**: تخزين الجلسات، تخزين مؤقت للاستعلامات، تسليم المحتوى
 
-## Networking
+## الشبكات
 
-### Virtual Networks
-- **VPC/VNet**: Isolated الشبكة environments
-- **Subnets**: Public (internet-facing), private (internal only)
-- **IP Addressing**: CIDR blocks, IPv4/IPv6
-- **Route Tables**: Control traffic flow
+### الشبكات الافتراضية
+- **VPC/VNet**: بيئات شبكة معزولة
+- **الشبكة الفرعية**: عامة (مواجهة للإنترنت)، خاصة (داخلية فقط)
+- **عنونة IP**: كتل CIDR، IPv4/IPv6
+- **جداول التوجيه**: التحكم في تدفق حركة المرور
 
-### Load Balancing
-- **Types**: Application (L7), الشبكة (L4), Gateway
-- **Features**: Health checks, SSL termination, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
+### موازنة الحمل
+- **الأنواع**: تطبيق (L7)، شبكة (L4)، بوابة
+- **الميزات**: فحوصات صحية، إنهاء SSL، جلسات ثابتة
+- **الخدمات**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-### Content Delivery Networks (CDN)
-- **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origin load, global distribution
-- **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
+### شبكات تسليم المحتوى (CDN)
+- **الغرض**: تخزين محتوى مؤقت في مواقع الحافة
+- **الفوائد**: تقليل الكمون، خفض حمل المصدر، توزيع عالمي
+- **الخدمات**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-### DNS Services
-- **Functions**: Domain registration, routing, health checks
-- **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
+### خدمات DNS
+- **الوظائف**: تسجيل النطاق، التوجيه، فحوصات صحية
+- **الخدمات**: Route 53, Cloud DNS, Azure DNS
+- **سياسات التوجيه**: بسيطة، مرجحة، قائمة على الكمون، جغرافية الموقع، تعطل
 
-### Connectivity Options
-- **Internet Gateway**: Public internet access
-- **NAT Gateway**: Private subnet outbound access
-- **VPN**: Encrypted tunnels to on-premises
-- **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peering**: Connect VPCs within/between accounts
+### خيارات الاتصال
+- **بوابة الإنترنت**: وصول عام إلى الإنترنت
+- **بوابة NAT**: وصول صادر للشبكة الفرعية الخاصة
+- **VPN**: أنفاق مشفرة إلى الموقع المحلي
+- **Direct Connect/ExpressRoute**: اتصالات خاصة مخصصة
+- **VPC Peering**: ربط VPCs داخل/بين الحسابات
 
-## الأمان في ال Cloud
+## الأمان في السحابة
 
-### Shared Responsibility Model
-- **Provider Responsibility**: الأمان من ال cloud (infrastructure)
-- **Customer Responsibility**: الأمان في ال cloud (البيانات, applications, access)
-- **Varies By Service**: More managed = more provider responsibility
+### نموذج المسؤولية المشتركة
+- **مسؤولية المزود**: أمان السحابة (البنية التحتية)
+- **مسؤولية العميل**: الأمان في السحابة (البيانات، التطبيقات، الوصول)
+- **يختلف حسب الخدمة**: أكثر إدارة = المزيد من مسؤولية المزود
 
-### Identity و Access الإدارة (IAM)
-- **Users**: Individual identities
-- **Groups**: Collections من users
-- **Roles**: Temporary credentials لأجل services/users
-- **Policies**: JSON documents defining permissions
-- **Principles**: Least privilege, separation من duties
+### إدارة الهوية والوصول (IAM)
+- **المستخدمون**: هويات فردية
+- **المجموعات**: مجموعات من المستخدمين
+- **الأدوار**: بيانات اعتماد مؤقتة للخدمات/المستخدمين
+- **السياسات**: مستندات JSON تحدد الأذونات
+- **المبادئ**: أقل امتياز، فصل الواجبات
 
-### الشبكة الأمان
-- **الأمان Groups**: Stateful firewalls لأجل instances
-- **الشبكة ACLs**: Stateless firewalls لأجل subnets
-- **الويب Application Firewall (WAF)**: Protect against الويب exploits
-- **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
+### أمان الشبكة
+- **مجموعات الأمان**: جدران حماية ذات حالة للمثيلات
+- **قوائم ACL للشبكة**: جدران حماية بلا حالة للشبكات الفرعية
+- **جدار حماية تطبيقات الويب (WAF)**: الحماية من ثغرات الويب
+- **حماية DDoS**: Shield, Cloud Armor, DDoS Protection
 
-### البيانات Protection
-- **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption في Transit**: TLS/SSL, HTTPS
-- **Key الإدارة**: HSM, key rotation, audit trails
-- **Secrets الإدارة**: Secrets Manager, Key Vault
+### حماية البيانات
+- **التشفير في حالة السكون**: KMS، مفاتيح يديرها العميل
+- **التشفير أثناء النقل**: TLS/SSL، HTTPS
+- **إدارة المفاتيح**: HSM، دوران المفاتيح، مسارات التدقيق
+- **إدارة الأسرار**: Secrets Manager, Key Vault
 
-### Compliance و Governance
-- **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enforcement, compliance reporting, audit logs
-- **Frameworks**: Cloud الأمان Alliance, NIST CSF
+### الامتثال والحوكمة
+- **الشهادات**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
+- **الأدوات**: إنفاذ السياسات، تقارير الامتثال، سجلات التدقيق
+- **الأطر**: Cloud Security Alliance, NIST CSF
 
-## DevOps في ال Cloud
+## DevOps في السحابة
 
-### CI/CD Services
+### خدمات CI/CD
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkins, CircleCI, GitLab CI
+- **طرف ثالث**: Jenkins, CircleCI, GitLab CI
 
-### Infrastructure as Code (IaC)
-- **Terraform**: Multi-cloud, declarative, state الإدارة
-- **CloudFormation**: AWS native, YAML/JSON templates
-- **ARM Templates**: Azure native
-- **النشر Manager**: GCP native
-- **Pulumi**: Infrastructure using programming languages
-- **Benefits**: Version control, repeatability, documentation
+### البنية التحتية كرمز (IaC)
+- **Terraform**: متعدد السحابة، تصريحي، إدارة الحالة
+- **CloudFormation**: أصلي لـ AWS، قوالب YAML/JSON
+- **ARM Templates**: أصلي لـ Azure
+- **Deployment Manager**: أصلي لـ GCP
+- **Pulumi**: بنية تحتية باستخدام لغات البرمجة
+- **الفوائد**: التحكم في الإصدار، إمكانية التكرار، التوثيق
 
-### Configuration الإدارة
-- **Ansible**: Agentless, YAML playbooks
-- **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reporting
-- **SaltStack**: Fast, Python-based
+### إدارة التكوين
+- **Ansible**: بدون وكيل، كتب تشغيل YAML
+- **Chef**: قائم على Ruby، نظام بيئي ناضج
+- **Puppet**: تصريحي، تقارير قوية
+- **SaltStack**: سريع، قائم على Python
 
-### Monitoring و Observability
-- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
-- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
-- **Tracing**: X-Ray, Cloud Trace, Application Insights
-- **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
+### المراقبة والملاحظة
+- **المقاييس**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **التسجيل**: CloudWatch Logs, Cloud Logging, Log Analytics
+- **التتبع**: X-Ray, Cloud Trace, Application Insights
+- **لوحات المعلومات**: CloudWatch Dashboards, Cloud Console
+- **التنبيه**: SNS, Cloud Monitoring alerts, Action Groups
 
-### Container Orchestration
-- **Kubernetes**: Industry standard orchestration
-- **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (traffic الإدارة, الأمان)
-- **GitOps**: ArgoCD, Flux (declarative deployments)
+### أوركسترا الحاويات
+- **Kubernetes**: معيار صناعي للأوركسترا
+- **الخدمات المدارة**: EKS, AKS, GKE
+- **شبكة الخدمة**: Istio, Linkerd (إدارة حركة المرور، الأمان)
+- **GitOps**: ArgoCD, Flux (عمليات نشر تصريحية)
 
-## Cost الإدارة
+## إدارة التكلفة
 
-### Pricing Models
-- **Pay-as-you-go**: Pay لأجل what you use
-- **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid لأجل unused capacity, can be interrupted
-- **Savings Plans**: Flexible commitment pricing
-- **Free Tier**: Limited free usage لأجل new accounts
+### نماذج التسعير
+- **الدفع حسب الاستخدام**: تدفع مقابل ما تستخدمه
+- **المثيلات المحجوزة**: التزامات 1-3 سنوات، خصومات كبيرة
+- **المثيلات الفورية**: المزايدة على السعة غير المستخدمة، يمكن مقاطعتها
+- **خطط التوفير**: تسعير التزام مرن
+- **الطبقة المجانية**: استخدام مجاني محدود للحسابات الجديدة
 
-### Cost Optimization Strategies
-- **Right-sizing**: Match instance types to workload needs
-- **Auto-scaling**: Scale based on demand
-- **Reserved Capacity**: Commit to steady-state workloads
-- **Spot Usage**: Use لأجل fault-tolerant, flexible workloads
-- **Storage Tiers**: Move infrequent البيانات to cheaper tiers
-- **Cleanup**: Delete unused resources, snapshots, AMIs
+### استراتيجيات تحسين التكلفة
+- **التحجيم الصحيح**: مطابقة أنواع المثيلات لاحتياجات حمل العمل
+- **التوسع التلقائي**: التوسع بناءً على الطلب
+- **السعة المحجوزة**: الالتزام بأحمال العمل ذات الحالة المستقرة
+- **استخدام فوري**: استخدام لأحمال العمل المتسامحة مع الأخطاء والمرنة
+- **طبقات التخزين**: نقل البيانات غير المتكررة إلى طبقات أرخص
+- **التنظيف**: حذف الموارد غير المستخدمة، اللقطات، AMIs
 
-### Cost الإدارة Tools
+### أدوات إدارة التكلفة
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
-- **Azure**: Cost الإدارة, Advisor
-- **GCP**: Billing reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Datadog
+- **Azure**: Cost Management, Advisor
+- **GCP**: تقارير الفواتير، Recommender
+- **طرف ثالث**: CloudHealth, CloudCheckr, Datadog
 
-## High Availability و Disaster Recovery
+## التوفر العالي والاسترداد من الكوارث
 
-### Availability Concepts
-- **Availability Zones**: Physically separate البيانات centers within region
-- **Regions**: Geographic areas مع multiple AZs
-- **Edge Locations**: CDN cache locations globally
+### مفاهيم التوفر
+- **مناطق التوفر**: مراكز بيانات منفصلة ماديًا داخل المنطقة
+- **المناطق**: مناطق جغرافية مع مناطق توفر متعددة
+- **مواقع الحافة**: مواقع تخزين مؤقت CDN عالميًا
 
-### HA Strategies
-- **Multi-AZ**: Deploy across availability zones
-- **Auto-healing**: Auto-replace failed instances
-- **Load Balancing**: Distribute traffic across healthy instances
-- **قاعدة البيانات Replication**: Multi-AZ deployments, read replicas
+### استراتيجيات HA
+- **Multi-AZ**: النشر عبر مناطق التوفر
+- **الإصلاح التلقائي**: استبدال المثيلات الفاشلة تلقائيًا
+- **موازنة الحمل**: توزيع حركة المرور عبر المثيلات الصحية
+- **تكرار قاعدة البيانات**: عمليات نشر Multi-AZ، نسخ قراءة
 
-### Disaster Recovery Strategies
-- **Backup و Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements running, scale up during disaster
-- **Warm Standby**: Scaled-down version always running
-- **Multi-Site Active/Active**: Full production في multiple regions (highest cost)
+### استراتيجيات الاسترداد من الكوارث
+- **النسخ الاحتياطي والاسترداد**: نسخ احتياطية دورية، استرداد عند الحاجة (أدنى تكلفة)
+- **Pilot Light**: عناصر أساسية تعمل، توسيع أثناء الكارثة
+- **Standby دافئ**: نسخة مصغرة تعمل دائمًا
+- **موقع متعدد نشط/نشط**: إنتاج كامل في مناطق متعددة (أعلى تكلفة)
 
 ### RTO و RPO
-- **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Point Objective (RPO)**: Maximum acceptable البيانات loss
-- **Strategy Selection**: Based on الأعمال requirements و budget
+- **هدف وقت الاسترداد (RTO)**: أقصى توقف مقبول
+- **هدف نقطة الاسترداد (RPO)**: أقصى فقدان بيانات مقبول
+- **اختيار الاستراتيجية**: بناءً على متطلبات الأعمال والميزانية
 
-## Emerging Trends
+## الاتجاهات الناشئة
 
-### Edge الحوسبة
-- Process البيانات closer to source
-- **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **حالات الاستخدام**: IoT, real-time analytics, low-latency applications
+### الحوسبة الطرفية
+- معالجة البيانات أقرب إلى المصدر
+- **الخدمات**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
+- **حالات الاستخدام**: IoT، تحليلات في الوقت الفعلي، تطبيقات منخفضة الكمون
 
-### حوسبة سحابية متعددة و الحوسبة السحابية الهجينة
-- Avoid vendor lock-in
-- Leverage best-من-breed services
-- **Tools**: Terraform, Anthos, Arc, CloudHealth
+### حوسبة سحابية متعددة وحوسبة سحابية هجينة
+- تجنب قفل البائع
+- الاستفادة من خدمات أفضل ما في الفئة
+- **الأدوات**: Terraform, Anthos, Arc, CloudHealth
 
-### AI/ML Services
-- Pre-trained models: Vision, speech, اللغة
-- Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model النشر, monitoring, governance
+### خدمات AI/ML
+- نماذج مدربة مسبقًا: رؤية، كلام، لغة
+- تدريب نموذج مخصص: SageMaker, Vertex AI, Azure ML
+- MLOps: نشر النموذج، المراقبة، الحوكمة
 
-### Quantum الحوسبة
-- **Services**: AWS Braket, Azure Quantum
-- **Status**: Early stage, experimental
-- **Potential**: Cryptography, optimization, drug discovery
+### الحوسبة الكمومية
+- **الخدمات**: AWS Braket, Azure Quantum
+- **الحالة**: مرحلة مبكرة، تجريبية
+- **الإمكانات**: التشفير، التحسين، اكتشاف الأدوية
 
-### Sustainable Cloud
-- Carbon footprint tracking
-- Renewable energy commitments
-- Efficient resource utilization
-- Green العمارة patterns
+### السحابة المستدامة
+- تتبع البصمة الكربونية
+- التزامات الطاقة المتجددة
+- كفاءة استخدام الموارد
+- أنماط العمارة الخضراء
