@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: finance_and_investing.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Finanzen und Investieren
@@ -119,7 +119,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Risk Verwaltung
 - **Risk Tolerance**: Ability und willingness to lose money
-- **Time Horizon**: When you need der/die/das money affects risk capacity
+- **Time Horizon**: When you need das money affects risk capacity
 - **Position Sizing**: Don't concentrate too much in single investment
 - **Stop-Loss Orders**: Automatic sell at predetermined price
 - **Rebalancing**: Restore target allocation periodically
@@ -315,7 +315,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - FOMO (Fear von Missing Out) buying at tops
 - Trading too frequently
 - Chasing past Leistung
-- Timing der/die/das market (nearly impossible consistently)
+- Timing das market (nearly impossible consistently)
 
 ### Best Practices
 - Create und stick to investment plan

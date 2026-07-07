@@ -2,131 +2,131 @@
 This file was automatically translated from English to German.
 Source: tool_usage.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Tool Usage
+# Tool-Nutzung
 
-## Git — Version Control
+## Git — Versionskontrolle
 
-Git is a distributed version control system. Every developer has a full copy von der/die/das repository Geschichte on their local machine.
+Git ist ein verteiltes Versionskontrollsystem. Jeder Entwickler hat eine vollständige Kopie der Repository-Historie auf seinem lokalen Rechner.
 
-### Core workflow
+### Kern-Workflow
 
 ```bash
-# Start a new repository
+# Ein neues Repository initialisieren
 git init
 
-# Clone an existing repository
+# Ein bestehendes Repository klonen
 git clone https://github.com/owner/repo.git
 
-# Check status and recent history
+# Status und aktuelle Historie prüfen
 git status
 git log --oneline -10
 
-# Stage changes
-git add file.py            # stage a specific file
-git add .                  # stage all changes in the working directory
+# Änderungen stagen
+git add file.py            # eine bestimmte Datei stagen
+git add .                  # alle Änderungen im Arbeitsverzeichnis stagen
 
-# Commit
-git commit -m "Short, imperative description of change"
+# Committen
+git commit -m "Kurze, imperativische Beschreibung der Änderung"
 
-# Push to a remote
+# Zu einem Remote pushen
 git push origin main
 ```
 
 ### Branching
 
 ```bash
-git branch feature/new-thing        # create a branch
-git checkout feature/new-thing      # switch to it
-# shortcut: git checkout -b feature/new-thing
+git branch feature/new-thing        # einen Branch erstellen
+git checkout feature/new-thing      # dorthin wechseln
+# Abkürzung: git checkout -b feature/new-thing
 
-git branch -d feature/new-thing     # delete branch after merging
+git branch -d feature/new-thing     # Branch nach dem Mergen löschen
 ```
 
-### Merging und rebasing
+### Merging und Rebasing
 
 ```bash
-# Merge feature branch into main
+# Feature-Branch in main mergen
 git checkout main
 git merge feature/new-thing
 
-# Rebase keeps a linear history
+# Rebase hält eine lineare Historie
 git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### Pull-Request (PR)-Workflow
 
-1. Create a feature branch from `main`.
-2. Make commits on der/die/das feature branch.
-3. Push der/die/das branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review Rückmeldung mit additional commits.
-6. Merge der/die/das PR once approved.
+1. Erstelle einen Feature-Branch von `main`.
+2. Mache Commits auf dem Feature-Branch.
+3. Pushe den Branch: `git push origin feature/new-thing`.
+4. Öffne einen Pull Request auf GitHub / GitLab.
+5. Adressiere Code-Review-Feedback mit zusätzlichen Commits.
+6. Merge den PR, sobald er genehmigt wurde.
 
-### Undoing changes
+### Änderungen rückgängig machen
 
 ```bash
-git restore file.py            # discard unstaged changes
-git restore --staged file.py   # unstage a file
-git revert <commit-sha>        # create a new commit that undoes a previous one
-git reset --soft HEAD~1        # undo last commit, keep changes staged
+git restore file.py            # unstaged Änderungen verwerfen
+git restore --staged file.py   # eine Datei unstagen
+git revert <commit-sha>        # erstellt einen neuen Commit, der einen vorherigen rückgängig macht
+git reset --soft HEAD~1        # letzten Commit rückgängig machen, Änderungen gestaged lassen
 ```
 
 ---
 
-## Package Managers
+## Paketmanager
 
 ### pip (Python)
 
 ```bash
-pip install requests            # install a package
-pip install "requests>=2.28"    # with version constraint
-pip install -r requirements.txt # install from a file
+pip install requests            # ein Paket installieren
+pip install "requests>=2.28"    # mit Versionsbeschränkung
+pip install -r requirements.txt # aus einer Datei installieren
 pip uninstall requests
-pip list                        # show installed packages
-pip show requests               # info about a package
+pip list                        # installierte Pakete anzeigen
+pip show requests               # Informationen über ein Paket
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+Arbeite immer in einer virtuellen Umgebung, um Projektabhängigkeiten isoliert zu halten.
 
 ### npm (Node.js / JavaScript)
 
 ```bash
-npm init -y                     # create package.json
-npm install express             # install as a runtime dependency
-npm install --save-dev jest     # install as a dev dependency
+npm init -y                     # package.json erstellen
+npm install express             # als Runtime-Abhängigkeit installieren
+npm install --save-dev jest     # als Entwicklungsabhängigkeit installieren
 npm uninstall express
 npm update
-npm run test                    # run the "test" script from package.json
+npm run test                    # das "test"-Skript aus package.json ausführen
 npm run build
-npx create-react-app my-app     # run a package without installing globally
+npx create-react-app my-app     # ein Paket ausführen, ohne es global zu installieren
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` erfasst exakte Versionen; commite es zur Quellcodeverwaltung.
 
 ### Cargo (Rust)
 
 ```bash
-cargo new my_project            # new binary project
-cargo new --lib my_lib          # new library project
+cargo new my_project            # neues Binary-Projekt
+cargo new --lib my_lib          # neues Bibliotheksprojekt
 cargo add serde --features derive
 cargo build
 cargo run
 cargo test
-cargo clippy                    # lint
-cargo fmt                       # format
-cargo update                    # update dependencies within constraints
+cargo clippy                    # Linten
+cargo fmt                       # Formatieren
+cargo update                    # Abhängigkeiten innerhalb der Beschränkungen aktualisieren
 ```
 
-### Go modules (Go)
+### Go Modules (Go)
 
 ```bash
 go mod init github.com/user/repo
 go get github.com/some/package@v1.2.3
-go mod tidy                     # remove unused dependencies
+go mod tidy                     # ungenutzte Abhängigkeiten entfernen
 go build ./...
 go test ./...
 go vet ./...
@@ -135,135 +135,135 @@ go vet ./...
 ### apt (Debian / Ubuntu Linux)
 
 ```bash
-sudo apt update                 # refresh package lists
-sudo apt install git curl wget  # install packages
+sudo apt update                 # Paketlisten aktualisieren
+sudo apt install git curl wget  # Pakete installieren
 sudo apt remove package-name
-sudo apt upgrade                # upgrade all installed packages
-apt search keyword              # search for packages
-apt show package-name           # details about a package
+sudo apt upgrade                # alle installierten Pakete aktualisieren
+apt search keyword              # nach Paketen suchen
+apt show package-name           # Details über ein Paket
 ```
 
 ---
 
-## Command-Line Grundlagen
+## Kommandozeilen-Grundlagen
 
 ### Navigation
 
 ```bash
-pwd                             # print working directory
-ls                              # list directory contents
-ls -la                          # detailed listing including hidden files
-cd /path/to/dir                 # change directory
-cd ..                           # go up one level
-cd ~                            # go to home directory
+pwd                             # aktuelles Verzeichnis ausgeben
+ls                              # Verzeichnisinhalt auflisten
+ls -la                          # detaillierte Auflistung einschließlich versteckter Dateien
+cd /path/to/dir                 # Verzeichnis wechseln
+cd ..                           # eine Ebene nach oben gehen
+cd ~                            # zum Home-Verzeichnis gehen
 mkdir new_folder
-rm file.txt                     # remove a file
-rm -r folder/                   # remove a directory recursively
+rm file.txt                     # eine Datei löschen
+rm -r folder/                   # ein Verzeichnis rekursiv löschen
 cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### Textverarbeitung
 
 ```bash
-cat file.txt                    # print file contents
-less file.txt                   # scroll through a file
-head -n 20 file.txt             # first 20 lines
-tail -n 20 file.txt             # last 20 lines
-tail -f log.txt                 # follow a growing log file
-grep "pattern" file.txt         # search for a pattern
-grep -r "pattern" ./src/        # recursive search
+cat file.txt                    # Dateiinhalte ausgeben
+less file.txt                   # durch eine Datei scrollen
+head -n 20 file.txt             # erste 20 Zeilen
+tail -n 20 file.txt             # letzte 20 Zeilen
+tail -f log.txt                 # einer wachsenden Logdatei folgen
+grep "pattern" file.txt         # nach einem Muster suchen
+grep -r "pattern" ./src/        # rekursive Suche
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes und redirection
+### Pipes und Umleitung
 
 ```bash
-command1 | command2             # pipe output of command1 into command2
-ls -la | grep ".py"             # list only Python files
-cat file.txt | wc -l            # count lines
-command > output.txt            # redirect stdout to a file (overwrite)
-command >> output.txt           # append stdout to a file
-command 2>&1                    # merge stderr into stdout
+command1 | command2             # Ausgabe von command1 in command2 leiten
+ls -la | grep ".py"             # nur Python-Dateien auflisten
+cat file.txt | wc -l            # Zeilen zählen
+command > output.txt            # stdout in eine Datei umleiten (überschreiben)
+command >> output.txt           # stdout an eine Datei anhängen
+command 2>&1                    # stderr in stdout zusammenführen
 ```
 
-### Netzwerk und file transfer
+### Netzwerk und Dateiübertragung
 
 ```bash
-curl https://example.com                     # fetch a URL
-curl -o file.zip https://example.com/f.zip   # download to a file
+curl https://example.com                     # eine URL abrufen
+curl -o file.zip https://example.com/f.zip   # in eine Datei herunterladen
 curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.example.com/endpoint
 
-wget https://example.com/file.zip            # download with wget
+wget https://example.com/file.zip            # mit wget herunterladen
 ```
 
-### Permissions
+### Berechtigungen
 
 ```bash
-chmod +x script.sh              # make executable
-chmod 644 file.txt              # owner read/write, group/others read
-chown user:group file.txt       # change owner and group
+chmod +x script.sh              # ausführbar machen
+chmod 644 file.txt              # Owner lesen/schreiben, Gruppe/andere lesen
+chown user:group file.txt       # Owner und Gruppe ändern
 ```
 
-### Process Verwaltung
+### Prozessverwaltung
 
 ```bash
-ps aux                          # list running processes
-kill <PID>                      # send SIGTERM to a process
-kill -9 <PID>                   # force kill
-top / htop                      # interactive process monitor
+ps aux                          # laufende Prozesse auflisten
+kill <PID>                      # SIGTERM an einen Prozess senden
+kill -9 <PID>                   # gewaltsam beenden
+top / htop                      # interaktiver Prozessmonitor
 ```
 
 ---
 
-## Editors und IDEs
+## Editoren und IDEs
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor mit a rich extension ecosystem.
+VS Code ist ein leichter, plattformübergreifender Code-Editor mit einem reichen Erweiterungsökosystem.
 
-- Open a folder: `File > Open Folder` or `code .` in der/die/das terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install Sprache Support (Python, Rust, Go, etc.), linters, und formatters from der/die/das Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures der/die/das debugger.
+- Ordner öffnen: `File > Open Folder` oder `code .` im Terminal.
+- Befehlspalette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
+- Integriertes Terminal: `Ctrl+`` (Backtick)`.
+- Multi-Cursor: `Alt+Click`, um zusätzliche Cursor zu platzieren.
+- Zur Definition gehen: `F12`.
+- Symbol umbenennen: `F2`.
+- Dokument formatieren: `Shift+Alt+F`.
+- Erweiterungen: Installiere Sprachunterstützung (Python, Rust, Go usw.), Linter und Formatter aus dem Erweiterungen-Panel (`Ctrl+Shift+X`).
+- `settings.json` (Benutzer oder Workspace) steuert das Editorverhalten.
+- `launch.json` konfiguriert den Debugger.
 
 ### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion und refactoring are core features.
-- Run/debug configurations let you launch und debug programs mit one click.
-- Built-in Git Support in der/die/das VCS menu.
-- `Shift+Shift` opens der/die/das Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Sprache Support und add tools.
+- Smart Code Completion und Refactoring sind Kernfunktionen.
+- Run/Debug-Konfigurationen ermöglichen das Starten und Debuggen von Programmen mit einem Klick.
+- Eingebaute Git-Unterstützung im VCS-Menü.
+- `Shift+Shift` öffnet den „Search Everywhere"-Dialog.
+- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) formatiert Code neu.
+- Plugins erweitern die Sprachunterstützung und fügen Tools hinzu.
 
-### Terminal tips
+### Terminal-Tipps
 
-- Use tab completion to finish file names und Befehle quickly.
-- Press `Ctrl+R` to search command Geschichte interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows der/die/das manual page für any built-in command.
+- Verwende Tab-Vervollständigung, um Dateinamen und Befehle schnell zu vervollständigen.
+- Drücke `Ctrl+R`, um die Befehlshistorie interaktiv zu durchsuchen.
+- `alias ll='ls -la'` erstellt eine Abkürzung — füge sie zu `~/.bashrc` oder `~/.zshrc` hinzu.
+- Verwende `tmux` oder `screen`, um Sitzungen am Leben zu erhalten, wenn du von einem Remote-Server getrennt wirst.
+- `man <command>` zeigt die Manual-Seite für jeden eingebauten Befehl.
 
 ---
 
 ## Docker
 
-Docker packages applications und their dependencies into portable containers.
+Docker packt Anwendungen und ihre Abhängigkeiten in portable Container.
 
-### Core concepts
+### Kernkonzepte
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance von an image.
-- **Registry**: a storage und distribution service für images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **Image**: Eine schreibgeschützte Vorlage, die aus einer `Dockerfile` erstellt wird.
+- **Container**: Eine laufende Instanz eines Images.
+- **Registry**: Ein Speicher- und Verteildienst für Images (Docker Hub, GHCR).
+- **Volume**: Persistenter Speicher, der einen Container überlebt.
 
-### Common Befehle
+### Häufige Befehle
 
 ```bash
 # Images
@@ -272,21 +272,21 @@ docker images
 docker rmi ubuntu:22.04
 
 # Containers
-docker run -it ubuntu:22.04 bash        # interactive shell
-docker run -d -p 8080:80 nginx          # detached, port mapping
-docker ps                               # running containers
-docker ps -a                            # all containers
+docker run -it ubuntu:22.04 bash        # interaktive Shell
+docker run -d -p 8080:80 nginx          # detached, Port-Mapping
+docker ps                               # laufende Container
+docker ps -a                            # alle Container
 docker stop <container_id>
 docker rm <container_id>
 docker logs <container_id>
-docker exec -it <container_id> bash     # open shell in running container
+docker exec -it <container_id> bash     # Shell in laufendem Container öffnen
 
 # Building
 docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### Dockerfile-Beispiel
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +299,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications mit a `docker-compose.yml` file.
+Docker Compose verwaltet Multi-Container-Anwendungen mit einer `docker-compose.yml`-Datei.
 
 ```yaml
 version: "3.9"
@@ -321,8 +321,8 @@ volumes:
 ```
 
 ```bash
-docker compose up -d       # start all services in the background
-docker compose down        # stop and remove containers
-docker compose logs -f     # stream logs
-docker compose build       # rebuild images
+docker compose up -d       # alle Services im Hintergrund starten
+docker compose down        # Container stoppen und entfernen
+docker compose logs -f     # Logs streamen
+docker compose build       # Images neu bauen
 ```

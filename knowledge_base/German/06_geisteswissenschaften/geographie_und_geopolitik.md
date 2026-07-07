@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: geography_and_geopolitics.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Geographie und Geopolitik
@@ -198,7 +198,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Key Geopolitical Theorists
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Befehle der/die/das Heartland"
+- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Befehle das Heartland"
 - **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
 - **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
 - **Karl Haushofer** (1869-1946): Geopolitik, German geographical school
