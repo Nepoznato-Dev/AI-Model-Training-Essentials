@@ -24,7 +24,7 @@ knowledge_base/English/
 ├── 03_data_science/                 # Analytique, statistiques, mathématiques
 ├── 04_science/                      # Sciences naturelles, médecine, environnement
 ├── 05_business_and_finance/         # Économie, finance, droit
-├── 06_humanities/                   # Histoire, géographie, arts, psychologie
+├── 06_humanities/                   # historique, géographie, arts, psychologie
 ├── 07_reference/                    # Dictionnaire, connaissances générales, communication
 ├── 08_future/                       # Projections futures et événements à venir
 ├── 09_practical_skills/             # Guides pratiques et tutoriels (en croissance)

@@ -83,7 +83,7 @@ Hallucination — producing false but plausible-sounding information — is a si
 
 ## Subject-Verb Agreement
 
-A response avec grammatical errors undermines trust et can cause confusion. Subject-verb agreement is one de le/la most common grammar rules to respect.
+A response avec grammatical errors undermines trust et can cause confusion. Subject-verb agreement is one du  most common grammar rules to respect.
 
 ### le/la basic rule
 
@@ -111,7 +111,7 @@ A singular subject takes a singular verb; a plural subject takes a plural verb.
   - "Alice et Bob **are** here." (correct)
   - "Alice et Bob **is** here." (incorrect)
 
-- Joined by "or"/"nor": agree avec le/la nearest subject
+- Joined by "or"/"nor": agree avec le  nearest subject
   - "Neither le/la students nor le/la teacher **was** ready." (correct — "teacher" is singular)
   - "Neither le/la teacher nor le/la students **were** ready." (correct — "students" is plural)
 

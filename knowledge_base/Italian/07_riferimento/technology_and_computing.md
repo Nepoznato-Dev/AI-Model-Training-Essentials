@@ -1,4 +1,4 @@
-# Technology and Computing
+# Tecnologia e informatica
 
 ## What is a Computer?
 

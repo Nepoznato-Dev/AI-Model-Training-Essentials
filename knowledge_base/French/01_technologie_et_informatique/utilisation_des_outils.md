@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Tool Usage
+# Utilisation des outils
 
-## Git — Version Control
+## Git — Contrôle de version
 
-Git is a distributed version control system. Every developer has a full copy de le/la repository Histoire on their local machine.
+Git est un système de contrôle de version distribué. Chaque développeur possède une copie complète du dépôt et de l'historique sur sa machine locale.
 
-### Core workflow
+### Flux de travail de base
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-### Branching
+### Branches
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging et rebasing
+### Fusion et rebasage
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### Flux de travail des pull requests (PR)
 
-1. Create a feature branch from `main`.
-2. Make commits on le/la feature branch.
-3. Push le/la branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review Retour avec additional commits.
-6. Merge le/la PR once approved.
+1. Créez une branche de fonctionnalité depuis `main`.
+2. Faites des commits sur la branche de fonctionnalité.
+3. Poussez la branche : `git push origin feature/new-thing`.
+4. Ouvrez une pull request sur GitHub / GitLab.
+5. Répondez aux retours de revue de code avec des commits supplémentaires.
+6. Fusionnez la PR une fois approuvée.
 
-### Undoing changes
+### Annuler des modifications
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,7 +77,7 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-## Package Managers
+## Gestionnaires de paquets
 
 ### pip (Python)
 
@@ -90,7 +90,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+Travaillez toujours dans un environnement virtuel pour isoler les dépendances du projet.
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +105,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` enregistre les versions exactes ; commitez-le dans le contrôle de source.
 
 ### Cargo (Rust)
 
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-### Go modules (Go)
+### Modules Go (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -145,7 +145,7 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line Bases
+## Bases de la ligne de commande
 
 ### Navigation
 
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### Traitement de texte
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes et redirection
+### Pipelines et redirection
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### Réseau et file transfer
+### Réseau et transfert de fichiers
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Process Gestion
+### gestion des processus
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editors et IDEs
+## Éditeurs et IDE
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor avec a rich extension ecosystem.
+VS Code est un éditeur de code léger et multiplateforme avec un riche écosystème d'extensions.
 
-- Open a folder: `File > Open Folder` or `code .` dans le/la terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install Langue Assistance (Python, Rust, Go, etc.), linters, et formatters from le/la Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures le/la debugger.
+- Ouvrir un dossier : `File > Open Folder` ou `code .` dans le terminal.
+- Palette de commandes : `Ctrl+Shift+P` (macOS : `Cmd+Shift+P`).
+- Terminal intégré : `Ctrl+`` (accent grave)`.
+- Multi-curseur : `Alt+Clic` pour placer des curseurs supplémentaires.
+- Aller à la définition : `F12`.
+- Renommer un symbole : `F2`.
+- Formater le document : `Shift+Alt+F`.
+- Extensions : installez l'assistance linguistique (Python, Rust, Go, etc.), les linters et les formatters depuis le panneau Extensions (`Ctrl+Shift+X`).
+- `settings.json` (utilisateur ou espace de travail) contrôle le comportement de l'éditeur.
+- `launch.json` configure le débogueur.
 
-### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+### IDE JetBrains (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion et refactoring are core features.
-- Run/debug configurations let you launch et debug programs avec one click.
-- Built-dans Git Assistance dans le/la VCS menu.
-- `Shift+Shift` opens le/la Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend Langue Assistance et add tools.
+- L'auto-complétion intelligente et le refactoring sont des fonctionnalités principales.
+- Les configurations d'exécution/débogage vous permettent de lancer et déboguer des programmes en un clic.
+- Assistance Git intégrée dans le menu VCS.
+- `Shift+Shift` ouvre la boîte de dialogue Search Everywhere.
+- `Ctrl+Alt+L` (macOS : `Cmd+Option+L`) reformate le code.
+- Les plugins étendent l'assistance linguistique et ajoutent des outils.
 
-### Terminal tips
+### Astuces pour le terminal
 
-- Use tab completion to finish file names et Commandes quickly.
-- Press `Ctrl+R` to search command Histoire interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows le/la manual page pour any built-dans command.
+- Utilisez l'auto-complétion par tabulation pour terminer rapidement les noms de fichiers et les commandes.
+- Appuyez sur `Ctrl+R` pour rechercher dans l'historique des commandes de manière interactive.
+- `alias ll='ls -la'` crée un raccourci — ajoutez-le à `~/.bashrc` ou `~/.zshrc`.
+- Utilisez `tmux` ou `screen` pour maintenir les sessions actives lors de la déconnexion d'un serveur distant.
+- `man <command>` affiche la page de manuel pour toute commande intégrée.
 
 ---
 
 ## Docker
 
-Docker packages applications et their dependencies into portable containers.
+Docker empaquette les applications et leurs dépendances dans des conteneurs portables.
 
-### Core concepts
+### Concepts de base
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance de an image.
-- **Registry**: a storage et distribution service pour images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **Image** : un modèle en lecture seule construit à partir d'un `Dockerfile`.
+- **Conteneur** : une instance en cours d'exécution d'une image.
+- **Registre** : un service de stockage et de distribution pour les images (Docker Hub, GHCR).
+- **Volume** : stockage persistant qui survit au conteneur.
 
-### Common Commandes
+### commandes courantes
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### Exemple de Dockerfile
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +299,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications avec a `docker-compose.yml` file.
+Docker Compose gère les applications multi-conteneurs avec un fichier `docker-compose.yml`.
 
 ```yaml
 version: "3.9"

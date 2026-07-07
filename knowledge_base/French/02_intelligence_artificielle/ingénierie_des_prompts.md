@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Prompt Engineering
+# Ingenierie des prompts
 
 Prompt engineering is le/la practice de designing, refining, et optimising input prompts to get le/la best possible output from a Langue model. It is both an art et a Science, et it is le/la primary interface pour controlling LLM behaviour without fine-tuning.
 
@@ -41,7 +41,7 @@ Tell le/la model what to do, not what to avoid. "Don't include jargon" is weaker
 ### System / User / Assistant Roles
 Most LLM APIs Assistance a multi-turn structure:
 
-- **System message**: Sets le/la model's behaviour, persona, et constraints (persists pour le/la whole session).
+- **System message**: Sets le/la model's behaviour, persona, et constraints (persists pour le  whole session).
 - **User message**: le/la current query or instruction.
 - **Assistant message**: le/la model's previous responses (used pour continuity).
 
@@ -50,7 +50,7 @@ System: You are a helpful coding assistant. You reply avec concise code Exemples
 User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-Provide 2–3 Exemples de le/la desired input-output format before asking le/la model to perform le/la task. This teaches le/la pattern.
+Provide 2–3 Exemples du  desired input-output format before asking le/la model to perform le/la task. This teaches le/la pattern.
 
 **Example:**
 User: Convert these sentences to passive voice:
@@ -81,7 +81,7 @@ User: List three pros et three cons de microservices. Return only a valid JSON o
 ## Avancé Techniques
 
 ### Self-Consistency
-Generate multiple responses pour le/la same prompt (avec a temperature > 0) et take a majority vote on le/la final answer. This is especially effective pour reasoning tasks.
+Generate multiple responses pour le  same prompt (avec a temperature > 0) et take a majority vote on le/la final answer. This is especially effective pour reasoning tasks.
 
 ### Tree-de-Thoughts
 Explore multiple reasoning paths dans parallel, evaluate each, et choose le/la best one. This is a research-level technique but can be approximated by asking le/la model to "explore alternative solutions."
@@ -100,7 +100,7 @@ Observation: (tool output)
 Assign a specific persona to frame le/la response.
 
 **Exemples:**
-- "You are a Linux kernel developer explaining memory Gestion to a new graduate."
+- "You are a Linux kernel developer explaining memory gestion to a new graduate."
 - "You are a friendly nutritionist giving general advice to a client."
 - "You are a cynical tech critic reviewing a new gadget."
 
@@ -110,8 +110,8 @@ Assign a specific persona to frame le/la response.
 
 - **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 pour factual answers; 0.7–1.0 pour creative writing.
 - **Top-p** (nucleus sampling): Cuts off le/la probability mass at a certain cumulative threshold. 0.9 means le/la model samples from le/la top 90% de likely tokens. Usually adjust either temperature or top-p, not both.
-- **Max tokens**: Sets le/la maximum output length. Remember to reserve space pour le/la response within le/la context window.
-- **Frequency penalty**: Reduces repetition de le/la same tokens.
+- **Max tokens**: Sets le/la maximum output length. Remember to reserve space pour le  response within le/la context window.
+- **Frequency penalty**: Reduces repetition du  same tokens.
 - **Presence penalty**: Encourages le/la model to introduce new topics.
 
 ---
@@ -176,6 +176,6 @@ Treat prompts as code: version them, test them, et iterate.
 
 - **A/B test** different prompt variants on a held-out set de queries.
 - **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
-- **Keep a prompt registry** (a simple text file or spreadsheet) avec le/la prompt, version, et observed Performance.
+- **Keep a prompt registry** (a simple text file or spreadsheet) avec le  prompt, version, et observed Performance.
 
 ---

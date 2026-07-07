@@ -77,7 +77,7 @@ pour time-series Données, split chronologically (train on past, test on Futur) 
 - **Precision@k**: Fraction de relevant items among top-k recommendations.
 - **Recall@k**: Fraction de all relevant items that appear dans top-k.
 - **NDCG** (Normalised Discounted Cumulative Gain): Accounts pour position relevance.
-- **Hit Rate**: Whether a relevant item appears dans le/la top-k.
+- **Hit Rate**: Whether a relevant item appears dans le  top-k.
 
 ### Generative / LLM Metrics
 - **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
@@ -116,7 +116,7 @@ le/la relationship between features et target changes over time.
 
 - **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
 - **Random Search**: Sample random combinations from distributions. More efficient than grid search pour high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model de le/la objective function et selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Bayesian Optimisation**: Builds a probabilistic model du  objective function et selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
 - **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps pour distributed tuning.
 
 **Suggested search ranges pour common hyperparameters:**
@@ -153,7 +153,7 @@ le/la relationship between features et target changes over time.
 ### Model Monitoring
 - **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is Disponible).
 - **Données drift**: Monitor changes dans input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes dans le/la relationship between inputs et outputs.
+- **Concept drift**: Monitor changes dans le  relationship between inputs et outputs.
 - **Prediction drift**: Track le/la distribution de predicted outputs.
 - **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
 

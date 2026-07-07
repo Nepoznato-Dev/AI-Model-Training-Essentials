@@ -1,4 +1,4 @@
-# Scienza dei Dati e Analitica
+# Scienza dei dati e Analitica
 
 ## Concetti Fondamentali
 
@@ -7,20 +7,20 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Statistica**: Fondamento matematico per l'analisi
 - **Informatica**: Programmazione, algoritmi, strutture dati
 - **Competenza di Dominio**: Conoscenza della materia
-- **Visualizzazione dei Dati**: Comunicare efficacemente i risultati
+- **Visualizzazione dei dati**: Comunicare efficacemente i risultati
 
-### Tipi di Dati
-- **Dati Strutturati**: Organizzati in righe/colonne (database, fogli di calcolo)
-- **Dati Non Strutturati**: Nessun formato predefinito (testo, immagini, audio, video)
-- **Dati Semi-strutturati**: Qualche organizzazione ma non rigida (JSON, XML, HTML)
-- **Dati di Serie Temporali**: Punti dati sequenziali indicizzati in ordine temporale
-- **Dati Spaziali**: Informazioni geografiche/basate sulla posizione
-- **Dati a Grafo**: Nodi e archi che rappresentano relazioni
+### Tipi di dati
+- **dati Strutturati**: Organizzati in righe/colonne (database, fogli di calcolo)
+- **dati Non Strutturati**: Nessun formato predefinito (testo, immagini, audio, video)
+- **dati Semi-strutturati**: Qualche organizzazione ma non rigida (JSON, XML, HTML)
+- **dati di Serie Temporali**: Punti dati sequenziali indicizzati in ordine temporale
+- **dati Spaziali**: Informazioni geografiche/basate sulla posizione
+- **dati a Grafo**: Nodi e archi che rappresentano relazioni
 
 ### Il Processo di Data Science (CRISP-DM)
 1. **Comprensione del Business**: Definire obiettivi e requisiti
-2. **Comprensione dei Dati**: Raccogliere ed esplorare i dati iniziali
-3. **Preparazione dei Dati**: Pulire, trasformare e formattare i dati (80% del lavoro)
+2. **Comprensione dei dati**: Raccogliere ed esplorare i dati iniziali
+3. **Preparazione dei dati**: Pulire, trasformare e formattare i dati (80% del lavoro)
 4. **Modellazione**: Selezionare e applicare tecniche di modellazione
 5. **Valutazione**: Valutare le prestazioni del modello rispetto agli obiettivi
 6. **Distribuzione**: Implementare il modello in ambiente di produzione
@@ -59,20 +59,20 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Correlazione di Spearman**: Relazione monotona (basata sui ranghi)
 - **Kolmogorov-Smirnov**: Confrontare distribuzioni
 
-## Raccolta e Archiviazione dei Dati
+## Raccolta e Archiviazione dei dati
 
-### Fonti di Dati
+### Fonti di dati
 - **Database**: SQL, NoSQL, relazionali, archivi documentali
 - **API**: REST, GraphQL, web scraping
 - **File**: CSV, JSON, XML, Parquet, Avro
-- **Dati in Streaming**: Kafka, Kinesis, feed in tempo reale
+- **dati in Streaming**: Kafka, Kinesis, feed in tempo reale
 - **Sondaggi ed Esperimenti**: Raccolta di dati primari
-- **Dataset Pubblici**: Dati governativi, Kaggle, repository accademici
+- **Dataset Pubblici**: dati governativi, Kaggle, repository accademici
 
 ### Data Warehousing
 - **ETL**: Processo Extract, Transform, Load
 - **Data Lake**: Archiviazione di dati grezzi in formato nativo
-- **Data Warehouse**: Dati strutturati e elaborati per l'analisi
+- **Data Warehouse**: dati strutturati e elaborati per l'analisi
 - **Data Mart**: Sottoinsieme del warehouse per dipartimento specifico
 - **OLAP**: Online Analytical Processing, query multidimensionali
 - **Schema a Stella**: Tabelle fatti circondate da tabelle dimensioni
@@ -87,16 +87,16 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Serie Temporali**: InfluxDB, TimescaleDB (dati con timestamp)
 - **Vettoriali**: Pinecone, Milvus (archiviazione embedding per ML)
 
-## Pre-elaborazione dei Dati
+## Pre-elaborazione dei dati
 
-### Pulizia dei Dati
+### Pulizia dei dati
 - **Valori Mancanti**: Imputazione (media, mediana, moda, previsione), eliminazione
 - **Outlier**: Rilevamento (IQR, Z-score), trattamento (limitazione, trasformazione)
 - **Duplicati**: Identificazione e rimozione
 - **Incoerenze**: Standardizzazione dei formati, correzione errori di battitura
-- **Validazione dei Dati**: Verifica di vincoli, intervalli, tipi
+- **Validazione dei dati**: Verifica di vincoli, intervalli, tipi
 
-### Trasformazione dei Dati
+### Trasformazione dei dati
 - **Normalizzazione**: Scalatura a intervallo 0-1
 - **Standardizzazione**: Normalizzazione Z-score (media=0, dev.std=1)
 - **Codifica**: One-hot, label, ordinale, target encoding
@@ -194,7 +194,7 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
 - **Apache Spark**: Elaborazione in-memory, più veloce di Hadoop
   - Spark SQL: Elaborazione dati strutturati
-  - Spark Streaming: Dati in tempo reale
+  - Spark Streaming: dati in tempo reale
   - MLlib: Libreria di machine learning
   - GraphX: Elaborazione di grafi
 - **Apache Flink**: Elaborazione di stream con bassa latenza
@@ -206,9 +206,9 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Azure**: Synapse Analytics, Databricks, Machine Learning, Data Lake
 - **Snowflake**: Data warehouse cloud
 
-### Strumenti per Pipeline Dati
+### Strumenti per Pipeline dati
 - **Apache Airflow**: Orchestrazione del workflow
-- **Luigi**: Gestione pipeline (Spotify)
+- **Luigi**: gestione pipeline (Spotify)
 - **Prefect**: Orchestrazione moderna del workflow
 - **Dagster**: Orchestratore dati con focus sugli asset
 - **dbt**: Trasformazione dati nel warehouse
@@ -263,21 +263,21 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Classificazione del Testo**: Rilevamento spam, categorizzazione
 - **Word Embeddings**: Word2Vec, GloVe, BERT
 
-## Etica e Governance dei Dati
+## Etica e Governance dei dati
 
-### Privacy dei Dati
-- **GDPR**: Regolamento Generale sulla Protezione dei Dati UE
+### Privacy dei dati
+- **GDPR**: Regolamento Generale sulla Protezione dei dati UE
 - **CCPA**: California Consumer Privacy Act
 - **HIPAA**: Health Insurance Portability and Accountability Act (sanità USA)
 - **Anonimizzazione**: Rimozione delle informazioni identificative personali
 - **Privacy Differenziale**: Aggiunta di rumore per proteggere gli individui
-- **Gestione del Consenso**: Meccanismi opt-in/opt-out
+- **gestione del Consenso**: Meccanismi opt-in/opt-out
 
-### Qualità dei Dati
+### Qualità dei dati
 - **Accuratezza**: Correttezza dei dati
 - **Completezza**: Tutti i dati richiesti presenti
 - **Consistenza**: Nessuna contraddizione tra fonti
-- **Tempestività**: Dati disponibili quando necessario
+- **Tempestività**: dati disponibili quando necessario
 - **Validità**: Conforme alle regole definite
 - **Unicità**: Nessun duplicato
 
@@ -288,9 +288,9 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Metriche di Equità**: Parità demografica, pari opportunità
 - **Mitigazione del Bias**: Pre-elaborazione, in-processing, post-processing
 
-### Framework di Governance dei Dati
+### Framework di Governance dei dati
 - **Data Stewardship**: Responsabilità per gli asset dati
-- **Gestione dei Metadati**: Documentazione dei dati sui dati
+- **gestione dei Metadati**: Documentazione dei dati sui dati
 - **Data Lineage**: Tracciamento del flusso e delle trasformazioni dei dati
 - **Controllo degli Accessi**: Permessi basati sui ruoli
 - **Audit Trail**: Registrazione accessi e modifiche ai dati
@@ -319,7 +319,7 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 ### Sviluppi Attuali
 - **AutoML**: Creazione automatica di pipeline di machine learning
 - **MLOps**: Pratiche DevOps per il machine learning
-- **Feature Store**: Gestione centralizzata delle feature
+- **Feature Store**: gestione centralizzata delle feature
 - **Data Mesh**: Architettura dati decentralizzata
 - **LLM e AI Generativa**: Large language models, generazione di contenuti
 - **Edge Analytics**: Elaborazione dati sui dispositivi sorgente
@@ -331,4 +331,4 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Federated Learning**: Addestramento modelli su dati decentralizzati
 - **Inferenza Causale**: Andare oltre la correlazione alla causalità
 - **AI Responsabile**: Etica, spiegabilità, trasparenza
-- **Data Fabric**: Gestione dati integrata tra ambienti
+- **Data Fabric**: gestione dati integrata tra ambienti

@@ -1,4 +1,4 @@
-# 2026 and Future Events
+# 2026 ed eventi futuri
 
 ## Overview of 2026
 

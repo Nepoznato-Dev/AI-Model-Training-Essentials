@@ -9,7 +9,7 @@ Un'analisi del modello Phi-3-mini di Microsoft (la sua filosofia di progettazion
 Phi-3-mini è un Small Language Model (SLM) sviluppato da Microsoft Research, rilasciato nell'aprile 2024. Le sue caratteristiche distintive sono:
 
 - **3,8 miliardi di parametri** — circa 6 volte più piccolo del Llama 3 8B di Meta
-- **Dati di formazione di qualità da libro di testo**: la chiave delle sue prestazioni fuori misura
+- **dati di formazione di qualità da libro di testo**: la chiave delle sue prestazioni fuori misura
 - **Due varianti di contesto**: 4.096 token (standard) e 128.000 token (contesto lungo)
 - **Funziona su hardware consumer**: si adatta comodamente a 8 GB di VRAM con quantizzazione a 4 bit
 - **Distribuzione mobile**: Microsoft ha dimostrato l'esecuzione di Phi-3-mini su un iPhone 14
@@ -31,17 +31,17 @@ L'articolo originale Phi-1 ("I libri di testo sono tutto ciò di cui hai bisogno
 ### Phi-1.5 e Phi-2
 I modelli successivi hanno esteso l’approccio al ragionamento generale, utilizzando un mix di:
 - Testo web di alta qualità selezionato per valore didattico
-- Dati sintetici generati da GPT-4 nello stile di libri di testo ed esercizi
+- dati sintetici generati da GPT-4 nello stile di libri di testo ed esercizi
 - Set di dati attentamente deduplicati e filtrati
 
 ### Phi-3-mini: la ricetta su larga scala
 Phi-3-mini utilizza circa 3,3 trilioni di token per la formazione: grandi per standard assoluti, ma molto più piccoli dei token da 15T utilizzati per Llama 3. L'elemento chiave di differenziazione è la pipeline di filtraggio e curation che seleziona solo contenuti di alta qualità.
 
 Il set di dati di addestramento include:
-1. **Dati web fortemente filtrati**: solo pagine con contenuti didattici o esplicativi, filtrate da più indicatori di qualità
-2. **Dati sintetici dei libri di testo**: spiegazioni generate da GPT-4 di concetti di ambito STEM, discipline umanistiche, codifica e ragionamento
+1. **dati web fortemente filtrati**: solo pagine con contenuti didattici o esplicativi, filtrate da più indicatori di qualità
+2. **dati sintetici dei libri di testo**: spiegazioni generate da GPT-4 di concetti di ambito STEM, discipline umanistiche, codifica e ragionamento
 3. **Esercizi sintetici**: coppie di domande e risposte con ragionamento passo passo (stile catena di pensiero)
-4. **Dati del codice**: esempi di programmazione e documentazione curati
+4. **dati del codice**: esempi di programmazione e documentazione curati
 
 ---
 

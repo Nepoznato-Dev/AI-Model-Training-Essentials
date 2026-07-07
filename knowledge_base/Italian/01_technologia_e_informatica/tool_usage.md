@@ -180,7 +180,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### Rete e trasferimento di file
+### rete e trasferimento di file
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -198,7 +198,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Gestione dei processi
+### gestione dei processi
 
 ```bash
 ps aux                          # list running processes
@@ -256,7 +256,7 @@ Docker impacchetta le applicazioni e le relative dipendenze in contenitori porta
 - **Registry**: un servizio di archiviazione e distribuzione di immagini (Docker Hub, GHCR).
 - **Volume**: spazio di archiviazione persistente che sopravvive a un contenitore.
 
-### Comandi comuni
+### comandi comuni
 
 ```bash
 # Images

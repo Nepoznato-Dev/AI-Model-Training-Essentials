@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Aperçu de 2026
 
-2026 is a common year starting on Thursday dans le/la Gregorian calendar. It marks le/la 250th anniversary (semiquincentennial) de le/la United States Declaration de Independence, avec major celebrations Prévu throughout le/la US including special Événements dans Philadelphia, Boston, et Washington D.C. le/la year falls within le/la UN Decade de Action pour Sustainable Développement Goals (2020-2030), making it a critical midpoint pour assessing global progress on poverty, climate, health, et education targets. Technologically, 2026 represents an important milestone pour many corporate roadmaps dans AI, electric vehicles, space exploration, et renewable energy Déploiement.
+2026 is a common year starting on Thursday dans le  Gregorian calendar. It marks le/la 250th anniversary (semiquincentennial) du  United States Declaration de Independence, avec major celebrations Prévu throughout le/la US including special Événements dans Philadelphia, Boston, et Washington D.C. le/la year falls within le/la UN Decade de Action pour Sustainable Développement Goals (2020-2030), making it a critical midpoint pour assessing global progress on poverty, climate, health, et education targets. Technologically, 2026 represents an important milestone pour many corporate roadmaps dans AI, electric vehicles, space exploration, et renewable energy Déploiement.
 
 ## Space Exploration Milestones
 
@@ -25,7 +25,7 @@ By 2026, artificial intelligence is expected to reach new capability levels avec
 
 ## Sports et Major Événements
 
-le/la 2026 FIFA World Cup will be hosted jointly by le/la United States, Canada, et Mexico from June to July 2026, featuring an expanded 48-team format pour le/la first time. This will be le/la first World Cup across three nations et le/la largest dans Histoire by matches played. le/la Winter Olympics will not occur dans 2026 (Milano Cortina was 2026, but actually scheduled pour February 2026). le/la Commonwealth Games location et timing depend on decisions made dans preceding years. Major tennis, golf, et motorsport championships continue annual cycles. Baseball's MLB, basketball's NBA, football's NFL, et hockey's NHL proceed avec regular seasons et playoffs. Esports continues rapid growth avec larger prize pools et mainstream recognition.
+le/la 2026 FIFA World Cup will be hosted jointly by le/la United States, Canada, et Mexico from June to July 2026, featuring an expanded 48-team format pour le  first time. This will be le/la first World Cup across three nations et le/la largest dans historique by matches played. le/la Winter Olympics will not occur dans 2026 (Milano Cortina was 2026, but actually scheduled pour February 2026). le/la Commonwealth Games location et timing depend on decisions made dans preceding years. Major tennis, golf, et motorsport championships continue annual cycles. Baseball's MLB, basketball's NBA, football's NFL, et hockey's NHL proceed avec regular seasons et playoffs. Esports continues rapid growth avec larger prize pools et mainstream recognition.
 
 ## Political et Governmental Événements
 

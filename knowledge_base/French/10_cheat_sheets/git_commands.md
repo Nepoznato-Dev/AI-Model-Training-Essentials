@@ -1,6 +1,6 @@
-# Guide de Référence Rapide des Commandes Git
+# Guide de Référence Rapide des commandes Git
 
-Commandes Git essentielles pour le contrôle de version.
+commandes Git essentielles pour le contrôle de version.
 
 ---
 

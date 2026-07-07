@@ -9,11 +9,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## le/la Solar System
 
-le/la solar system consists de le/la Sun et eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, et Neptune. Earth is le/la third planet from le/la Sun, located approximately 150 million kilometers away. le/la Sun is a star at le/la center de le/la solar system that provides light et energy to all planets through nuclear fusion. Jupiter is le/la largest planet, avec a mass greater than all other planets combined. Saturn is known pour its prominent ring system made de ice et rock. Mars is called le/la Red Planet because de iron oxide on its surface. Neptune is le/la farthest planet from le/la Sun.
+le/la solar system consists du  Sun et eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, et Neptune. Earth is le/la third planet from le/la Sun, located approximately 150 million kilometers away. le/la Sun is a star at le/la center du  solar system that provides light et energy to all planets through nuclear fusion. Jupiter is le/la largest planet, avec a mass greater than all other planets combined. Saturn is known pour its prominent ring system made de ice et rock. Mars is called le/la Red Planet because de iron oxide on its surface. Neptune is le/la farthest planet from le/la Sun.
 
 ## Earth
 
-Earth is le/la fifth-largest planet dans le/la solar system et le/la only known planet to harbor life. Its surface is approximately 71% water et 29% land. le/la atmosphere is composed de approximately 78% nitrogen, 21% oxygen, et 1% other gases including carbon dioxide et argon. Earth has one natural satellite called le/la Moon. le/la Moon orbits Earth roughly every 27.3 days et is approximately 384,400 kilometers away. Earth has a diameter de approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Earth is le/la fifth-largest planet dans le  solar system et le/la only known planet to harbor life. Its surface is approximately 71% water et 29% land. le/la atmosphere is composed de approximately 78% nitrogen, 21% oxygen, et 1% other gases including carbon dioxide et argon. Earth has one natural satellite called le/la Moon. le/la Moon orbits Earth roughly every 27.3 days et is approximately 384,400 kilometers away. Earth has a diameter de approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
 
 ## Weather et Climate
 
@@ -21,7 +21,7 @@ Weather refers to short-term atmospheric conditions dans a specific location, in
 
 ## Oceans
 
-Earth has five oceans: le/la Pacific, Atlantic, Indian, Southern, et Arctic. le/la Pacific Ocean is le/la largest, covering more than 165 million square kilometers, et le/la deepest, avec le/la Mariana Trench reaching approximately 11 kilometers deep. le/la oceans cover about 361 million square kilometers dans total. le/la average depth de le/la ocean is approximately 3,688 meters. le/la oceans regulate Earth's temperature et are home to le/la majority de life on le/la planet.
+Earth has five oceans: le/la Pacific, Atlantic, Indian, Southern, et Arctic. le/la Pacific Ocean is le/la largest, covering more than 165 million square kilometers, et le/la deepest, avec le  Mariana Trench reaching approximately 11 kilometers deep. le/la oceans cover about 361 million square kilometers dans total. le/la average depth du  ocean is approximately 3,688 meters. le/la oceans regulate Earth's temperature et are home to le/la majority de life on le/la planet.
 
 ## Continents
 
@@ -29,7 +29,7 @@ Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europ
 
 ## Time et Calendars
 
-A year is le/la time it takes Earth to orbit le/la Sun, approximately 365.25 days. A leap year has 366 days et occurs every four years to account pour le/la extra quarter-day. A day is one full rotation de Earth on its axis, approximately 24 hours. le/la Gregorian calendar is le/la most widely used calendar dans le/la world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+A year is le/la time it takes Earth to orbit le/la Sun, approximately 365.25 days. A leap year has 366 days et occurs every four years to account pour le  extra quarter-day. A day is one full rotation de Earth on its axis, approximately 24 hours. le/la Gregorian calendar is le/la most widely used calendar dans le  world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
 
 ## Light et Speed
 
@@ -37,7 +37,7 @@ le/la speed de light dans a vacuum is approximately 299,792 kilometers per secon
 
 ## Human Body
 
-le/la human body contains approximately 37 trillion cells. le/la adult human skeleton has 206 bones. le/la heart pumps blood through approximately 100,000 kilometers de blood vessels. le/la brain is le/la most complex organ et contains approximately 86 billion neurons. le/la human body is approximately 60% water. le/la longest bone dans le/la body is le/la femur (thigh bone). le/la smallest bone is le/la stapes dans le/la ear.
+le/la human body contains approximately 37 trillion cells. le/la adult human skeleton has 206 bones. le/la heart pumps blood through approximately 100,000 kilometers de blood vessels. le/la brain is le/la most complex organ et contains approximately 86 billion neurons. le/la human body is approximately 60% water. le/la longest bone dans le  body is le/la femur (thigh bone). le/la smallest bone is le/la stapes dans le  ear.
 
 ## Water
 
@@ -49,7 +49,7 @@ Mammals are warm-blooded animals that give birth to live young et nurse them ave
 
 ## Géographie et Population
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India et China are le/la two most populous countries. le/la largest country by area is Russia, followed by Canada et China. le/la Nile et le/la Amazon are among le/la world's longest river Systèmes. Mount Everest, dans le/la Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India et China are le/la two most populous countries. le/la largest country by area is Russia, followed by Canada et China. le/la Nile et le/la Amazon are among le/la world's longest river Systèmes. Mount Everest, dans le  Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
 
 ## Energy et Resources
 
@@ -65,8 +65,8 @@ Many modern states use one de three broad Systèmes: democracies, authoritarian 
 
 ## Health et Public Safety
 
-Vaccines train le/la immune system to recognize et fight specific pathogens. Hand hygiene et clean water are among le/la most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as le/la common cold. Sleep, Nutrition, physical activity, et stress Gestion are foundational contributors to long-term health outcomes.
+Vaccines train le/la immune system to recognize et fight specific pathogens. Hand hygiene et clean water are among le/la most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as le/la common cold. Sleep, Nutrition, physical activity, et stress gestion are foundational contributors to long-term health outcomes.
 
 ## Communication et Media Literacy
 
-Reliable information is usually supported by evidence, transparent sourcing, et independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Données, while secondary sources interpret primary material. dans le/la digital era, checking publication date, author credibility, et source quality is important pour avoiding misinformation.
+Reliable information is usually supported by evidence, transparent sourcing, et independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Données, while secondary sources interpret primary material. dans le  digital era, checking publication date, author credibility, et source quality is important pour avoiding misinformation.
