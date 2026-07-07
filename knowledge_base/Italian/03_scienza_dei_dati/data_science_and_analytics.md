@@ -65,7 +65,7 @@ La data science è un campo interdisciplinare che utilizza metodi scientifici, p
 - **Database**: SQL, NoSQL, relazionali, archivi documentali
 - **API**: REST, GraphQL, web scraping
 - **File**: CSV, JSON, XML, Parquet, Avro
-- **dati in Streaming**: Kafka, Kinesis, feed in tempo reale
+- **Dati in streaming**: Kafka, Kinesis, feed in tempo reale
 - **Sondaggi ed Esperimenti**: Raccolta di dati primari
 - **Dataset Pubblici**: dati governativi, Kaggle, repository accademici
 
