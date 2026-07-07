@@ -13,7 +13,7 @@ A practical Guía to running large Idioma models entirely on-device — hardware
 
 ## Why Run AI Locally?
 
-- **Privacy**: No Datos leaves el/la device.
+- **Privacy**: No Datos leaves el device.
 - **Cost**: No API fees per token.
 - **Latency**: Predictable, Red-free inference.
 - **Offline availability**: Works without internet.
@@ -24,14 +24,14 @@ A practical Guía to running large Idioma models entirely on-device — hardware
 ## Hardware Requirements
 
 ### GPU Memory (VRAM)
-el/la most critical resource. Model size en memory ≈ **parameters × bytes per parameter**.
+el most critical resource. Model size en memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
-| FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
-| FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
-| INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
-| INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
+| FP32 | 4 | ~15 GB | ~28 GB | ~52 GB | ~280 GB |
+| FP16 | 2 | ~7.6 GB | ~14 GB | ~26 GB | ~140 GB |
+| INT8 (8-bit) | 1 | ~3.8 GB | ~7 GB | ~13 GB | ~70 GB |
+| INT4 (4-bit) | 0.5 | ~1.9 GB | ~3.5 GB | ~6.5 GB | ~35 GB |
 
 **Practical guidelines:**
 - 8GB VRAM → up to 7B models at 4-bit.
@@ -40,21 +40,21 @@ el/la most critical resource. Model size en memory ≈ **parameters × bytes per
 - Apple Silicon (unified memory) can run 70B models on 64GB+ Sistemas.
 
 ### RAM (System Memory)
-- para CPU inference, you need enough system RAM to load el/la model (similar to VRAM numbers).
-- para GPU inference, system RAM matters para loading el/la model into memory before offloading to VRAM.
+- para CPU inference, you need enough system RAM to load el model (similar to VRAM numbers).
+- para GPU inference, system RAM matters para loading el model into memory before offloading to VRAM.
 
 ### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free para multiple models.
 
 ### CPU
 - para prompt processing (prefill) y CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Rendimiento para LLMs due to el/la unified memory y Neural Engine.
+- Apple M-series chips have excellent Rendimiento para LLMs due to el unified memory y Neural Engine.
 
 ---
 
 ## Quantisation
 
-Quantisation reduces el/la numerical precision de weights, dramatically cutting memory y increasing speed at a small accuracy cost.
+Quantisation reduces el numerical precision de weights, dramatically cutting memory y increasing speed at a small accuracy cost.
 
 ### Popular Formats
 
@@ -200,8 +200,8 @@ python
 import requests
 
 response = requests.post(
-    "http://localhost:11434/api/generate",
-    json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
+ "http://localhost:11434/api/generate",
+ json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
 5. (Alternative) Use llama.cpp directly
@@ -223,7 +223,7 @@ Track time to first token (latency).
 Use built-in logging from llama.cpp or Ollama.
 
 Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
+Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex razóning.
 
 Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
 
@@ -317,7 +317,7 @@ A practical Guía to securing applications, infrastructure, y Datos — from Des
 
 ### CORS (Cross-Origin Resource Sharing)
 - Allow only specific origins (never `*` en production).
-- Validate `Origin` header on el/la server side.
+- Validate `Origin` header on el server side.
 
 ### Input Validation
 - Validate all request parameters, including headers y body.
@@ -385,11 +385,11 @@ A practical Guía to securing applications, infrastructure, y Datos — from Des
 ### Red Segmentation
 - Place databases y caches en private subnets con no internet access.
 - Use a DMZ para public-facing services.
-- Apply el/la principle de least privilege to Red access.
+- Apply el principle de least privilege to Red access.
 
 ### Secrets en Infrastructure
 - Never store secrets en CI/CD environment variables unless encrypted.
-- Use el/la cloud provider's IAM roles para EC2/VM instances instead de long-lived keys.
+- Use el cloud provider's IAM roles para EC2/VM instances instead de long-lived keys.
 
 ---
 
@@ -409,10 +409,10 @@ A practical Guía to securing applications, infrastructure, y Datos — from Des
 
 ### Alerting
 - Set up alerts para:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
+ - Multiple failed logins (potential brute force).
+ - Unusual access patterns (e.g., from new locations, at odd hours).
+ - New admin accounts created.
+ - High error rates or latency spikes.
 - Use a SIEM (Seguridad Information y Event Gestión) para Avanzado correlation.
 
 ### Log Retention
@@ -438,10 +438,10 @@ A practical Guía to securing applications, infrastructure, y Datos — from Des
 ## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** el/la affected Sistemas (disconnect from Red if needed).
+2. **Isolate** el affected Sistemas (disconnect from Red if needed).
 3. **Preserve evidence**: Capture logs, memory dumps, y disk images.
-4. **Identify** el/la scope: which Sistemas, which Datos.
+4. **Identify** el scope: which Sistemas, which Datos.
 5. **Rotate** all compromised credentials y secrets.
-6. **Patch** el/la vulnerability.
+6. **Patch** el vulnerability.
 7. **Notify** affected users y regulatory bodies if required (within Legal timeframes).
 8. **Conduct a post-mortem** to understand root cause y improve processes.

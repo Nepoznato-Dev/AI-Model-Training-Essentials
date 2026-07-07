@@ -11,7 +11,7 @@ A practical Referencia para developers y sysadmins — core concepts, protocols,
 
 ---
 
-## el/la OSI Model (7 Layers)
+## el OSI Model (7 Layers)
 
 A conceptual framework para understanding Red Comunicación.
 
@@ -25,7 +25,7 @@ A conceptual framework para understanding Red Comunicación.
 | 2 | Datos Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
 | 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-en practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used para el/la internet.
+en practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used para el internet.
 
 ---
 
@@ -40,13 +40,13 @@ en practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application)
 - Total: 2¹²⁸ addresses (practically infinite).
 
 ### Private IP Ranges (RFC 1918)
-These are not routable on el/la internet; used inside local networks:
+These are not routable on el internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
 ### CIDR Notation
-`192.168.1.0/24` means el/la first 24 bits are el/la Red prefix; el/la last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+`192.168.1.0/24` means el first 24 bits are el Red prefix; el last 8 bits are hosts. It incluyens addresses `192.168.1.0` to `192.168.1.255`.
 
 ---
 
@@ -62,15 +62,15 @@ Maps domain names (e.g., `example.com`) to IP addresses.
 | **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver para el/la domain |
+| **NS** | Nameserver para el domain |
 | **SRV** | Service record (e.g., para SIP) |
 
 ### Common Tools
 ```bash
-dig example.com            # DNS lookup (detailed)
-nslookup example.com       # DNS lookup (simpler)
-host example.com           # Quick lookup
-dig -x 8.8.8.8             # Reverse lookup (IP to name)
+dig example.com # DNS lookup (detailed)
+nslookup example.com # DNS lookup (simpler)
+host example.com # Quick lookup
+dig -x 8.8.8.8 # Reverse lookup (IP to name)
 
 Ports and Protocols
 Well-Known Ports (0–1023)
@@ -95,10 +95,10 @@ Port	Protocol	Service
 27017	TCP	MongoDB
 Check open ports
 bash
-ss -tulpn                 # Linux: listen and established sockets
-netstat -an               # Older tool
-lsof -i :8080             # See process using port 8080
-nmap localhost            # Scan local ports
+ss -tulpn # Linux: listen and established sockets
+netstat -an # Older tool
+lsof -i :8080 # See process using port 8080
+nmap localhost # Scan local ports
 TCP vs UDP
 Feature	TCP	UDP
 Connection	Connection-oriented (handshake)	Connectionless
@@ -155,24 +155,24 @@ Stateful firewalls track connection states.
 NAT (Network Address Translation)
 Translates private IPs to a public IP for internet access.
 
-Port forwarding: maps a public port to an internal host/port.
+Port forwarding: mapears a public port to an internal host/port.
 
 Common Networking Commands
 Connectivity Tests
 bash
-ping google.com            # ICMP echo request
-ping -c 4 8.8.8.8          # ping 4 times
-traceroute google.com      # Trace the route (Linux)
-tracert google.com         # Windows version
+ping google.com # ICMP echo request
+ping -c 4 8.8.8.8 # ping 4 times
+traceroute google.com # Trace the route (Linux)
+tracert google.com # Windows version
 Routing
 bash
-ip route show              # Linux: routing table
-route -n                   # Older Linux
-netstat -r                 # Windows/Mac
+ip route show # Linux: routing table
+route -n # Older Linux
+netstat -r # Windows/Mac
 Network Interfaces
 bash
-ip addr show               # List interfaces and IPs
-ifconfig                   # Older command
+ip addr show # List interfaces and IPs
+ifconfig # Older command
 DNS
 bash
 dig example.com
@@ -180,17 +180,17 @@ nslookup example.com
 host example.com
 Connectivity to a Port
 bash
-nc -zv google.com 443      # Netcat: check if port 443 is open
-telnet google.com 443      # Telnet to port
+nc -zv google.com 443 # Netcat: check if port 443 is open
+telnet google.com 443 # Telnet to port
 curl -v https://google.com # Verbose output
 Firewall (Linux iptables/nftables)
 bash
-sudo ufw status            # Ubuntu: simple firewall
-sudo iptables -L -n        # List rules
+sudo ufw status # Ubuntu: simple firewall
+sudo iptables -L -n # List rules
 Network Statistics
 bash
-ss -tulpn                  # Show listening sockets (Linux)
-netstat -an                # All sockets (all OS)
+ss -tulpn # Show listening sockets (Linux)
+netstat -an # All sockets (all OS)
 Subnetting (Quick Reference)
 CIDR	Netmask	Number of addresses	Usable hosts
 /32	255.255.255.255	1	1
@@ -209,13 +209,13 @@ Load Balancing and Reverse Proxies
 Nginx as Reverse Proxy
 nginx
 server {
-    listen 80;
-    server_name example.com;
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-    }
+ listen 80;
+ server_name example.com;
+ location / {
+ proxy_pass http://localhost:3000;
+ proxy_set_header Host $host;
+ proxy_set_header X-Real-IP $remote_addr;
+ }
 }
 Load Balancing Algorithms
 Round-robin
@@ -265,7 +265,7 @@ A practical Guía to managing servers, automating operations, y maintaining reli
 
 ### Key Generation
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
+ssh-keygen -t ed25519 -C "your_email@example.com" # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
 Copy Public Key to Server
 bash
@@ -275,17 +275,17 @@ cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/auth
 SSH Config (~/.ssh/config)
 ssh-config
 Host myserver
-    HostName 192.168.1.10
-    User ubuntu
-    IdentityFile ~/.ssh/mykey
-    Port 2222
+ HostName 192.168.1.10
+ User ubuntu
+ IdentityFile ~/.ssh/mykey
+ Port 2222
 Common SSH Commands
 bash
-ssh user@host                    # Connect
-ssh -J jumpuser@jumphost user@target   # Proxy jump
-scp file.txt user@host:/path/     # Copy file to remote
-scp user@host:/path/file.txt .    # Copy from remote
-rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
+ssh user@host # Connect
+ssh -J jumpuser@jumphost user@target # Proxy jump
+scp file.txt user@host:/path/ # Copy file to remote
+scp user@host:/path/file.txt . # Copy from remote
+rsync -avz -e ssh ./local/ user@host:/remote/ # Efficient sync
 Hardening SSH
 Disable root login: PermitRootLogin no
 
@@ -298,15 +298,15 @@ Enable AllowUsers or AllowGroups to restrict access.
 Systemd (Linux Service Management)
 Common Commands
 bash
-systemctl status nginx           # Check service status
-systemctl start nginx            # Start service
+systemctl status nginx # Check service status
+systemctl start nginx # Start service
 systemctl stop nginx
 systemctl restart nginx
-systemctl reload nginx           # Graceful reload (re-read config)
-systemctl enable nginx           # Start on boot
+systemctl reload nginx # Graceful reload (re-read config)
+systemctl enable nginx # Start on boot
 systemctl disable nginx
-systemctl list-units --type=service --all   # List all services
-systemctl daemon-reload          # Reload unit files after editing
+systemctl list-units --type=service --all # List all services
+systemctl daemon-reload # Reload unit files after editing
 Creating a systemd Service Unit
 Create /etc/systemd/system/myapp.service:
 
@@ -334,10 +334,10 @@ sudo systemctl enable myapp
 sudo systemctl start myapp
 Journalctl (View Logs)
 bash
-journalctl -u myapp              # Logs for service
-journalctl -f                    # Follow (tail) logs
+journalctl -u myapp # Logs for service
+journalctl -f # Follow (tail) logs
 journalctl --since "1 hour ago"
-journalctl _PID=1234             # Filter by process ID
+journalctl _PID=1234 # Filter by process ID
 Logging Strategies
 Structured Logging
 Use JSON format to make logs machine-parseable:
@@ -369,13 +369,13 @@ Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
 
 logrotate
 /var/log/myapp/*.log {
-    daily
-    rotate 7
-    compress
-    delaycompress
-    missingok
-    notifempty
-    create 0640 myuser mygroup
+ daily
+ rotate 7
+ compress
+ delaycompress
+ missingok
+ notifempty
+ create 0640 myuser mygroup
 }
 Monitoring and Alerting
 Metrics to Monitor
@@ -469,20 +469,20 @@ cron
 0 * * * * /path/to/script
 Managing Cron
 bash
-crontab -l          # List current user's cron jobs
-crontab -e          # Edit
-crontab -r          # Remove all
+crontab -l # List current user's cron jobs
+crontab -e # Edit
+crontab -r # Remove all
 Anacron
-Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
+Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventualmente.
 
 Package Management and Updates
 Debian/Ubuntu (apt)
 bash
-sudo apt update                # Update package list
-sudo apt upgrade               # Upgrade all packages
+sudo apt update # Update package list
+sudo apt upgrade # Upgrade all packages
 sudo apt install git nginx
 sudo apt remove git
-sudo apt autoremove            # Remove unused dependencies
+sudo apt autoremove # Remove unused dependencies
 RHEL/CentOS/Fedora (dnf/yum)
 bash
 sudo dnf check-update
@@ -514,13 +514,13 @@ Set resource limits in docker-compose.yml:
 
 yaml
 services:
-  app:
-    image: myapp:1.0
-    deploy:
-      resources:
-        limits:
-          memory: 512M
-          cpus: '0.5'
+ app:
+ image: myapp:1.0
+ deploy:
+ resources:
+ limits:
+ memory: 512M
+ cpus: '0.5'
 CI/CD Basics
 Pipeline Stages
 Build: Compile code, install dependencies.
@@ -549,35 +549,35 @@ yaml
 name: CI
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: pytest
+ build:
+ runs-on: ubuntu-latest
+ steps:
+ - uses: actions/checkout@v4
+ - uses: actions/setup-python@v5
+ with:
+ python-version: '3.12'
+ - run: pip install -r requirements.txt
+ - run: pytest
 System Tuning and Troubleshooting
 Check Disk Space
 bash
-df -h                      # Human-readable disk usage
-du -sh /* | sort -h        # Size of top-level directories
+df -h # Human-readable disk usage
+du -sh /* | sort -h # Size of top-level directories
 Check Memory Usage
 bash
-free -m                    # Memory in MB
-vmstat 1 10                # Virtual memory statistics
-top -o %MEM                # Sort processes by memory
+free -m # Memory in MB
+vmstat 1 10 # Virtual memory statistics
+top -o %MEM # Sort processes by memory
 Check CPU Load
 bash
-uptime                     # Load average over 1,5,15 minutes
-top -o %CPU                # Sort processes by CPU
-mpstat -P ALL 1 5          # Per-core CPU usage
+uptime # Load average over 1,5,15 minutes
+top -o %CPU # Sort processes by CPU
+mpstat -P ALL 1 5 # Per-core CPU usage
 Check Network
 bash
-netstat -i                 # Interface statistics
-iftop                      # Live bandwidth usage (requires install)
-nload                      # Another bandwidth monitor
+netstat -i # Interface statistics
+iftop # Live bandwidth usage (requires install)
+nload # Another bandwidth monitor
 Find Large Files
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
@@ -587,23 +587,23 @@ Declare cloud resources in HCL.
 
 hcl
 provider "aws" {
-  region = "us-east-1"
+ region = "us-east-1"
 }
 resource "aws_instance" "web" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
+ ami = "ami-0c55b159cbfafe1f0"
+ instance_type = "t2.micro"
 }
 Ansible
 Agentless configuration management using YAML.
 
 yaml
 - name: Install nginx
-  hosts: webservers
-  tasks:
-    - name: Install nginx
-      apt:
-        name: nginx
-        state: present
+ hosts: webservers
+ tasks:
+ - name: Install nginx
+ apt:
+ name: nginx
+ state: present
 Best Practices
 Use modules and roles for reusability.
 

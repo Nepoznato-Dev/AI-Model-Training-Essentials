@@ -9,8 +9,8 @@ For accuracy improvements, please contribute edits via pull requests.
 
 Una colección completa de documentos de referencia que cubren tecnología, ciencia, negocios, humanidades y habilidades prácticas.
 
-**Última actualización:** Junio 2025  
-**Archivos totales:** 34+ documentos markdown  
+**Última actualización:** Junio 2025 
+**Archivos totales:** 34+ documentos markdown 
 **Organización:** Categorizado en 10 directorios temáticos
 
 ---
@@ -19,16 +19,16 @@ Una colección completa de documentos de referencia que cubren tecnología, cien
 
 ```
 knowledge_base/English/
-├── 01_technology_and_computing/    # Programación, bases de datos, nube, redes
-├── 02_artificial_intelligence/      # IA, ML, LLMs, ingeniería de prompts
-├── 03_data_science/                 # Analítica, estadística, matemáticas
-├── 04_science/                      # Ciencias naturales, medicina, medio ambiente
-├── 05_business_and_finance/         # Economía, finanzas, derecho
-├── 06_humanities/                   # Historia, geografía, artes, psicología
-├── 07_reference/                    # Diccionario, conocimiento general, comunicación
-├── 08_future/                       # Proyecciones futuras y próximos eventos
-├── 09_practical_skills/             # Guías prácticas y tutoriales (en crecimiento)
-└── 10_cheat_sheets/                 # Guías de referencia rápida (en crecimiento)
+├── 01_technology_and_computing/ # Programación, bases de datos, nube, redes
+├── 02_artificial_intelligence/ # IA, ML, LLMs, ingeniería de prompts
+├── 03_data_science/ # Analítica, estadística, matemáticas
+├── 04_science/ # Ciencias naturales, medicina, medio ambiente
+├── 05_business_and_finance/ # Economía, finanzas, derecho
+├── 06_humanities/ # Historia, geografía, artes, psicología
+├── 07_reference/ # Diccionario, conocimiento general, comunicación
+├── 08_future/ # Proyecciones futuras y próximos eventos
+├── 09_practical_skills/ # Guías prácticas y tutoriales (en crecimiento)
+└── 10_cheat_sheets/ # Guías de referencia rápida (en crecimiento)
 ```
 
 ---
@@ -191,11 +191,11 @@ knowledge_base/English/
 Al agregar o modificar contenido:
 
 1. **Siga la guía de estilo:**
-   - Use `#` solo para el título del archivo
-   - Use `##` para secciones principales
-   - Use `###` para subsecciones
-   - Use `-` para listas desordenadas
-   - Incluya resaltado de sintaxis en bloques de código
+ - Use `#` solo para el título del archivo
+ - Use `##` para secciones principales
+ - Use `###` para subsecciones
+ - Use `-` para listas desordenadas
+ - Incluya resaltado de sintaxis en bloques de código
 
 2. **Agregue metadatos** (frontmatter YAML):
 ```yaml

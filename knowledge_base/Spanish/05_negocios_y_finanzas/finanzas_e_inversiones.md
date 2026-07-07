@@ -27,11 +27,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Credit Score**: FICO (300-850), factors: payment Historia, utilization, length, mix, inquiries
 - **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
 - **Types de Debt**: 
-  - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high interest)
+ - Good debt: Mortgage, student loans (potential ROI)
+ - Bad debt: Credit cards, payday loans (high interest)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest interest first (mathematically optimal)
-  - Snowball: Pay smallest balance first (psychological wins)
+ - Avalanche: Pay highest interest first (mathematically optimal)
+ - Snowball: Pay smallest balance first (psychological wins)
 - **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
 
 ## Investment Fundamentos
@@ -115,11 +115,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Value Inversión**: Buy undervalued securities (Warren Buffett approach)
 - **Growth Inversión**: Focus on companies con above-average growth
 - **Income Inversión**: Prioritize dividends y interest payments
-- **ESG Inversión**: Ambiental, social, governance factors
+- **ESG Inversión**: Ambiental, social, gobernanza factors
 
 ### Risk Gestión
 - **Risk Tolerance**: Ability y willingness to lose money
-- **Time Horizon**: When you need el/la money affects risk capacity
+- **Time Horizon**: When you need el money affects risk capacity
 - **Position Sizing**: Don't concentrate too much en single investment
 - **Stop-Loss Orders**: Automatic sell at predetermined price
 - **Rebalancing**: Restore target allocation periodically
@@ -171,8 +171,8 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Order Types
 - **Market Order**: Execute immediately at current price
 - **Limit Order**: Execute only at specified price or better
-- **Stop Order**: Becomes market order when stop price reached
-- **Stop-Limit Order**: Becomes limit order when stop price reached
+- **Stop Order**: Becomes market order when stop price llegó a
+- **Stop-Limit Order**: Becomes limit order when stop price llegó a
 - **Trailing Stop**: Stop price follows stock price movement
 
 ### Trading Concepts
@@ -200,25 +200,25 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Key Ratios
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnings): Share price / earnings per share
-  - P/B (Price-to-Book): Market value / book value
-  - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
+ - P/E (Price-to-Earnings): Share price / earnings per share
+ - P/B (Price-to-Book): Market value / book value
+ - P/S (Price-to-Sales): Market cap / revenue
+ - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
 
 - **Profitability Ratios**:
-  - Gross Margin: Gross profit / revenue
-  - Operating Margin: Operating income / revenue
-  - Net Margin: Net income / revenue
-  - ROE (Return on Equity): Net income / shareholders' equity
-  - ROA (Return on Assets): Net income / total assets
+ - Gross Margin: Gross profit / revenue
+ - Operating Margin: Operating income / revenue
+ - Net Margin: Net income / revenue
+ - ROE (Return on Equity): Net income / shareholders' equity
+ - ROA (Return on Assets): Net income / total assets
 
 - **Liquidity Ratios**:
-  - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - inventory) / current liabilities
+ - Current Ratio: Current assets / current liabilities
+ - Quick Ratio: (Current assets - inventory) / current liabilities
 
 - **Leverage Ratios**:
-  - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / interest expense
+ - Debt-to-Equity: Total debt / shareholders' equity
+ - Interest Coverage: EBIT / interest expense
 
 ### Qualitative Factors
 - **Gestión Quality**: Track record, alignment con shareholders
@@ -244,7 +244,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Technical Indicators
 - **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
 - **MACD**: Moving Average Convergence Divergence
-- **Bollinger Bands**: Volatility bands around moving average
+- **Bollinger Bands**: Volatility bands alrededor de moving average
 - **Volume Indicators**: On-Balance Volume, volume-weighted average price
 - **Fibonacci Retracement**: Soporte/resistance levels based on ratios
 
@@ -257,11 +257,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Investment Taxes
 - **Capital Gains**: Profit from selling investments
-  - Short-term: Held <1 year, taxed as ordinary income
-  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
+ - Short-term: Held <1 year, taxed as ordinary income
+ - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
 - **Dividends**: 
-  - Qualified: Lower tax rates
-  - Ordinary: Taxed as income
+ - Qualified: Lower tax rates
+ - Ordinary: Taxed as income
 - **Interest Income**: Generally taxed as ordinary income
 - **Tax-Loss Harvesting**: Sell losers to offset gains
 
@@ -315,7 +315,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - FOMO (Fear de Missing Out) buying at tops
 - Trading too frequently
 - Chasing past Rendimiento
-- Timing el/la market (nearly impossible consistently)
+- Timing el market (nearly impossible consistently)
 
 ### Mejores prácticas
 - Create y stick to investment plan
@@ -340,7 +340,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - Emerging markets middle class growth
 
 ### Sustainable Inversión
-- **ESG Integration**: Ambiental, social, governance factors
+- **ESG Integration**: Ambiental, social, gobernanza factors
 - **Impact Inversión**: Generate positive social/Ambiental impact
 - **Green Bonds**: Fund Ambiental projects
 - **Carbon Credits**: Trade emissions allowances
