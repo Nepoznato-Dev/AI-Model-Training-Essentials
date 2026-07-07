@@ -9,44 +9,44 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Fundamentos de la Computación en la Nube
 
-### What is Cloud Informática?
-Entrega bajo demanda de recursos informáticos (servers, storage, databases, networking, software) a través de Internet con precios de pago por uso.
+### ¿Qué es la Computación en la Nube?
+Entrega bajo demanda de recursos informáticos (servidores, almacenamiento, bases de datos, redes, software) a través de Internet con precios de pago por uso.
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Red Access**: Disponible over Red via standard mechanisms
-- **Resource Pooling**: Multi-tenant model con dynamic assignment
-- **Rapid Elasticity**: Scale outward y inward rapidly
-- **Measured Service**: Resource usage monitored y billed
+### Características Esenciales (Definición NIST)
+- **Autoservicio Bajo Demanda**: Aprovisionar recursos sin interacción humana
+- **Acceso Amplio a la Red**: Disponible a través de la red mediante mecanismos estándar
+- **Agrupación de Recursos**: Modelo multiinquilino con asignación dinámica
+- **Elasticidad Rápida**: Escalar hacia afuera y hacia adentro rápidamente
+- **Servicio Medido**: Uso de recursos monitoreado y facturado
 
-### Cloud Implementación Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination de public y private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations con common concerns
+### Modelos de Implementación en la Nube
+- **Nube Pública**: Propiedad de proveedores, infraestructura compartida (AWS, Azure, GCP)
+- **Nube Privada**: Dedicada a una sola organización (on-premises or hosted)
+- **Nube Híbrida**: Combinación de nubes públicas y privadas
+- **Multi-Nube**: Uso de múltiples proveedores de nube pública
+- **Nube Comunitaria**: Compartida por organizaciones con preocupaciones comunes
 
-### Service Models
+### Modelos de Servicio
 
 #### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating Sistemas
+- **Proporciona**: Máquinas virtuales, almacenamiento, redes, sistemas operativos
 - **Ejemplos**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Migraciones de traslado directo, Desarrollo environments, high-control needs
+- **Casos de Uso**: Migraciones lift-and-shift, entornos de desarrollo, necesidades de alto control
 
 #### Platform as a Service (PaaS)
-- **Provides**: Desarrollo platforms, databases, middleware
+- **Proporciona**: Plataformas de desarrollo, bases de datos, middleware
 - **Ejemplos**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application Desarrollo, API Implementación, microservices
+- **Casos de Uso**: Desarrollo de aplicaciones, implementación de API, microservicios
 
 #### Software as a Service (SaaS)
-- **Provides**: Completo applications over internet
+- **Proporciona**: Aplicaciones completas a través de Internet
 - **Ejemplos**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, Negocios applications
+- **Casos de Uso**: Correo electrónico, CRM, colaboración, aplicaciones empresariales
 
 #### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
+- **Proporciona**: Ejecución de funciones impulsada por eventos
 - **Ejemplos**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+- **Casos de Uso**: Procesamiento de eventos, API, tareas programadas, procesamiento en tiempo real
 
 ## Major Cloud Providers
 

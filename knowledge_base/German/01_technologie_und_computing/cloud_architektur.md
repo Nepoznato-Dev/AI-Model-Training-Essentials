@@ -7,395 +7,395 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # Cloud Architektur
 
-## Grundlagen der Cloud-Datenverarbeitung
+## Grundlagen des Cloud Computing
 
-### What is Cloud Datenverarbeitung?
-Bedarfsgerechte Bereitstellung von Rechenressourcen (servers, storage, databases, networking, software) über das Internet mit pay-as-you-go pricing.
+### Was ist Cloud Computing?
+Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbanken, Netzwerke, Software) über das Internet mit nutzungsbasierter Preisgestaltung.
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad Netzwerk Access**: Verfügbar over Netzwerk via standard mechanisms
-- **Resource Pooling**: Mandantenfähiges Modell mit dynamischer Zuweisung
-- **Rapid Elasticity**: Scale outward und inward rapidly
-- **Measured Service**: Resource usage monitored und billed
+### Wesentliche Merkmale (NIST-Definition)
+- **On-Demand Self-Service**: Ressourcen ohne menschliche Interaktion bereitstellen
+- **Breiter Netzwerkzugriff**: Über Netzwerk via Standardmechanismen verfügbar
+- **Ressourcen-Pooling**: Mandantenfähiges Modell mit dynamischer Zuweisung
+- **Schnelle Elastizität**: Schnell nach außen und innen skalieren
+- **Gemessener Service**: Ressourcennutzung überwacht und abgerechnet
 
-### Cloud Bereitstellung Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination von public und private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations mit common concerns
+### Cloud-Bereitstellungsmodelle
+- **Public Cloud**: Im Besitz von Anbietern, gemeinsame Infrastruktur (AWS, Azure, GCP)
+- **Private Cloud**: Dedicated für eine einzelne Organisation (vor Ort oder gehostet)
+- **Hybrid Cloud**: Kombination von Public und Private Clouds
+- **Multi-Cloud**: Verwendung mehrerer Public Cloud-Anbieter
+- **Community Cloud**: Gemeinsam genutzt von Organisationen mit gemeinsamen Anliegen
 
-### Service Models
+### Servicemodelle
 
 #### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating Systeme
+- **Bietet**: Virtuelle Maschinen, Speicher, Netzwerke, Betriebssysteme
 - **Beispiele**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-und-shift migrations, Entwicklung environments, high-control needs
+- **Anwendungsfälle**: Lift-and-Shift-Migrationen, Entwicklungsumgebungen, hohe Kontrollanforderungen
 
 #### Platform as a Service (PaaS)
-- **Provides**: Entwicklung platforms, databases, middleware
+- **Bietet**: Entwicklungsplattformen, Datenbanken, Middleware
 - **Beispiele**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application Entwicklung, API Bereitstellung, microservices
+- **Anwendungsfälle**: Anwendungsentwicklung, API-Bereitstellung, Microservices
 
 #### Software as a Service (SaaS)
-- **Provides**: Vollständige Anwendungen over internet
+- **Bietet**: Vollständige Anwendungen über das Internet
 - **Beispiele**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, Geschäft applications
+- **Anwendungsfälle**: E-Mail, CRM, Zusammenarbeit, Geschäftsanwendungen
 
 #### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
+- **Bietet**: Ereignisgesteuerte Funktionsausführung
 - **Beispiele**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+- **Anwendungsfälle**: Ereignisverarbeitung, APIs, geplante Aufgaben, Echtzeitverarbeitung
 
-## Major Cloud Providers
+## Wichtige Cloud-Anbieter
 
 ### Amazon Web Services (AWS)
-- **Market Share**: ~32% (largest provider)
-- **Key Services**:
+- **Marktanteil**: ~32% (größter Anbieter)
+- **Hauptdienste**:
   - Compute: EC2, Lambda, ECS, EKS
   - Storage: S3, EBS, Glacier
   - Datenbank: RDS, DynamoDB, Aurora
   - Networking: VPC, Route 53, CloudFront
-  - AI/ML: SageMaker, Rekognition, Comprehend
+  - KI/ML: SageMaker, Rekognition, Comprehend
 
 ### Microsoft Azure
-- **Market Share**: ~23%
-- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
-- **Key Services**:
+- **Marktanteil**: ~23%
+- **Stärken**: Enterprise-Integration, Hybrid-Cloud, Microsoft-Ökosystem
+- **Hauptdienste**:
   - Compute: Virtual Machines, Azure Functions, AKS
   - Storage: Blob Storage, Disk Storage
   - Datenbank: SQL Datenbank, Cosmos DB
-  - Networking: Virtual Netzwerk, Traffic Manager
-  - AI/ML: Azure ML, Cognitive Services
+  - Networking: Virtual Network, Traffic Manager
+  - KI/ML: Azure ML, Cognitive Services
 
 ### Google Cloud Platform (GCP)
-- **Market Share**: ~10%
-- **Strengths**: Daten analytics, AI/ML, Kubernetes
-- **Key Services**:
+- **Marktanteil**: ~10%
+- **Stärken**: Datenanalyse, KI/ML, Kubernetes
+- **Hauptdienste**:
   - Compute: Compute Engine, Cloud Functions, GKE
   - Storage: Cloud Storage, Persistent Disk
   - Datenbank: Cloud SQL, Firestore, Bigtable
   - Analytics: BigQuery, Dataflow, Pub/Sub
-  - AI/ML: Vertex AI, AutoML
+  - KI/ML: Vertex AI, AutoML
 
-### Other Providers
-- **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: Datenbank workloads, enterprise applications
-- **Alibaba Cloud**: Dominant in Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified offerings
+### Andere Anbieter
+- **IBM Cloud**: Enterprise-Fokus, Watson AI
+- **Oracle Cloud**: Datenbank-Workloads, Enterprise-Anwendungen
+- **Alibaba Cloud**: Dominant im asiatisch-pazifischen Raum
+- **DigitalOcean**: Entwicklerfreundlich, vereinfachte Angebote
 
-## Cloud Architektur Patterns
+## Cloud-Architekturmuster
 
-### Well-Architected Framework Principles
+### Prinzipien des Well-Architected Framework
 
-#### Operational Excellence
-- Automate operations
-- Make frequent, reversible changes
-- Refine procedures continuously
-- Anticipate failure
+#### Operative Exzellenz
+- Operationen automatisieren
+- Häufige, reversible Änderungen vornehmen
+- Verfahren kontinuierlich verbessern
+- Ausfälle antizipieren
 
 #### Sicherheit
-- Implement strong identity foundation
-- Enable traceability
-- Apply Sicherheit at all layers
-- Automate Sicherheit Best Practices
-- Protect Daten in transit und at rest
+- Starke Identitätsgrundlage implementieren
+- Nachverfolgbarkeit ermöglichen
+- Sicherheit auf allen Ebenen anwenden
+- Sicherheits-Best-Practices automatisieren
+- Daten während der Übertragung und im Ruhezustand schützen
 
-#### Reliability
-- Test recovery procedures
-- Automatically recover from failure
-- Scale horizontally für availability
-- Stop guessing capacity
-- Manage change in automation
+#### Zuverlässigkeit
+- Wiederherstellungsverfahren testen
+- Automatisch von Ausfällen erholen
+- Horizontal für Verfügbarkeit skalieren
+- Kapazität nicht schätzen
+- Änderungen in der Automatisierung verwalten
 
-#### Leistung Efficiency
-- Democratize Fortgeschrittene Technologien
-- Go global in minutes
-- Use serverless architectures
-- Experiment more often
-- Consider mechanical sympathy
+#### Leistungseffizienz
+- Fortschrittliche Technologien demokratisieren
+- In Minuten global gehen
+- Serverlose Architekturen verwenden
+- Häufiger experimentieren
+- Mechanische Sympathie berücksichtigen
 
-#### Cost Optimization
-- Adopt consumption model
-- Measure overall efficiency
-- Stop spending money on undifferentiated work
-- Analyze und attribute expenditure
-- Use managed services
+#### Kostenoptimierung
+- Verbrauchsmodell übernehmen
+- Gesamteffizienz messen
+- Kein Geld für undifferenzierte Arbeit ausgeben
+- Ausgaben analysieren und zuordnen
+- Verwaltete Dienste verwenden
 
-### Common Architektur Patterns
+### Häufige Architekturmuster
 
-#### Microservices Architektur
-- Decompose applications into small, independent services
-- Each service owns its Daten und logic
-- Communicate via APIs (REST, gRPC, messaging)
-- Deploy independently
-- **Benefits**: Scalability, fault isolation, Technologie diversity
-- **Challenges**: Distributed complexity, Daten consistency, monitoring
+#### Microservices-Architektur
+- Anwendungen in kleine, unabhängige Dienste zerlegen
+- Jeder Dienst besitzt seine Daten und Logik
+- Kommunikation über APIs (REST, gRPC, Messaging)
+- Unabhängig bereitstellen
+- **Vorteile**: Skalierbarkeit, Fehlerisolierung, Technologievielfalt
+- **Herausforderungen**: Verteilte Komplexität, Datenkonsistenz, Monitoring
 
-#### Event-Driven Architektur
-- Components communicate through Ereignisse
-- Producers emit Ereignisse, consumers react
-- **Patterns**: Event sourcing, CQRS, pub/sub
-- **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, real-time processing
+#### Ereignisgesteuerte Architektur
+- Komponenten kommunizieren über Ereignisse
+- Produzenten emittieren Ereignisse, Konsumenten reagieren
+- **Muster**: Event Sourcing, CQRS, Pub/Sub
+- **Technologien**: Kafka, SNS/SQS, EventBridge, Pub/Sub
+- **Vorteile**: Lose Kopplung, Skalierbarkeit, Echtzeitverarbeitung
 
-#### Serverless Architektur
-- No server Verwaltung required
-- Pay per execution
-- Automatic scaling
-- **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid Bereitstellung
-- **Considerations**: Cold starts, vendor lock-in, execution limits
+#### Serverlose Architektur
+- Keine Serververwaltung erforderlich
+- Bezahlung pro Ausführung
+- Automatische Skalierung
+- **Komponenten**: Funktionen, API Gateway, verwaltete Dienste
+- **Vorteile**: Kosteneffizienz, reduzierte Operationen, schnelle Bereitstellung
+- **Überlegungen**: Cold Starts, Vendor Lock-in, Ausführungslimits
 
-#### Layered Architektur (N-Tier)
-- Presentation layer (UI)
-- Application/Geschäft logic layer
-- Daten access layer
-- Datenbank layer
-- **Benefits**: Separation von concerns, maintainability
-- **Common**: 3-tier Web applications
+#### Schichtenarchitektur (N-Tier)
+- Präsentationsschicht (UI)
+- Anwendungs-/Geschäftslogikschicht
+- Datenzugriffsschicht
+- Datenbankschicht
+- **Vorteile**: Trennung der Belange, Wartbarkeit
+- **Häufig**: 3-stufige Webanwendungen
 
-#### Space-Based Architektur
-- Handle high concurrency mit distributed Daten
-- Virtualized memory across servers
-- Processing nodes scale independently
-- **Use Cases**: High-volume, low-latency applications
+#### Space-Based-Architektur
+- Hohe Nebenläufigkeit mit verteilten Daten handhaben
+- Virtualisierter Speicher über Server hinweg
+- Verarbeitungsknoten skalieren unabhängig
+- **Anwendungsfälle**: Hochvolumige, latenzarme Anwendungen
 
-## Compute Services
+## Compute-Dienste
 
-### Virtual Machines
-- **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pricing**: On-demand, reserved instances, spot instances
-- **Verwaltung**: Auto-scaling groups, load balancers
-- **Best Practices**: Right-sizing, tagging, monitoring, patching
+### Virtuelle Maschinen
+- **Typen**: Allgemein, rechenoptimiert, speicheroptimiert, GPU
+- **Preise**: On-Demand, reservierte Instanzen, Spot-Instanzen
+- **Verwaltung**: Auto-Scaling-Gruppen, Load Balancer
+- **Best Practices**: Right-Sizing, Tagging, Monitoring, Patching
 
-### Containers
-- **Docker**: Container runtime standard
-- **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
-- **Benefits**: Portability, efficiency, consistency
+### Container
+- **Docker**: Container-Runtime-Standard
+- **Orchestrierung**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
+- **Vorteile**: Portabilität, Effizienz, Konsistenz
 - **Registry**: ECR, GCR, ACR, Docker Hub
 
-### Serverless Functions
-- **Execution Model**: Event-triggered, stateless
-- **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
-- **Monitoring**: Invocation counts, errors, duration, cold starts
+### Serverlose Funktionen
+- **Ausführungsmodell**: Ereignisgesteuert, zustandslos
+- **Limits**: Ausführungszeit, Speicher, gleichzeitige Ausführungen
+- **Anwendungsfälle**: APIs, Dateiverarbeitung, geplante Jobs, IoT-Backends
+- **Monitoring**: Aufrufzählungen, Fehler, Dauer, Cold Starts
 
-## Storage Solutions
+## Speicherlösungen
 
-### Object Storage
-- **Characteristics**: Flat structure, metadata, HTTP access
+### Objektspeicher
+- **Merkmale**: Flache Struktur, Metadaten, HTTP-Zugriff
 - **Beispiele**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, Daten lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
+- **Anwendungsfälle**: Statische Assets, Backups, Datenseen, Archive
+- **Speicherklassen**: Hot, Cool, Cold, Archive (unterschiedliche Kosten/Zugriff)
 
-### Block Storage
-- **Characteristics**: Raw volumes, attached to VMs
+### Blockspeicher
+- **Merkmale**: Raw-Volumes, an VMs angehängt
 - **Beispiele**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Databases, boot volumes, high-Leistung needs
-- **Types**: SSD, HDD, provisioned IOPS
+- **Anwendungsfälle**: Datenbanken, Boot-Volumes, hohe Leistungsanforderungen
+- **Typen**: SSD, HDD, provisionierte IOPS
 
-### File Storage
-- **Characteristics**: Shared file Systeme, NFS/SMB protocols
+### Dateispeicher
+- **Merkmale**: Gemeinsame Dateisysteme, NFS/SMB-Protokolle
 - **Beispiele**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content Verwaltung, shared configs, lift-und-shift
+- **Anwendungsfälle**: Content-Management, gemeinsame Konfigurationen, Lift-and-Shift
 
-### Archive Storage
-- **Characteristics**: Lowest cost, retrieval delays
+### Archivespeicher
+- **Merkmale**: Niedrigste Kosten, Abrufverzögerungen
 - **Beispiele**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical Daten
+- **Anwendungsfälle**: Compliance, langfristige Backups, historische Daten
 
-## Datenbank Services
+## Datenbankdienste
 
-### Managed Relational Databases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Datenbank
-- **Features**: Automated backups, patching, scaling, replication
+### Verwaltete relationale Datenbanken
+- **Dienste**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL Datenbank
+- **Funktionen**: Automatisierte Backups, Patching, Skalierung, Replikation
 - **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
 
-### NoSQL Databases
-- **Document**: DocumentDB, Firestore, Cosmos DB
+### NoSQL-Datenbanken
+- **Dokument**: DocumentDB, Firestore, Cosmos DB
 - **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassandra (managed)
-- **Graph**: Neptune, Cosmos DB (graph API)
+- **Wide-Column**: Bigtable, Cassandra (verwaltet)
+- **Graph**: Neptune, Cosmos DB (Graph-API)
 
-### Daten Warehousing
-- **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP Architektur
-- **Use Cases**: Analytics, BI, large-scale Daten analysis
+### Data Warehousing
+- **Dienste**: Snowflake, Redshift, BigQuery, Synapse
+- **Merkmale**: Spaltenorientierter Speicher, MPP-Architektur
+- **Anwendungsfälle**: Analytics, BI, groß angelegte Datenanalyse
 
-### Caching Services
-- **in-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query caching, content delivery
+### Caching-Dienste
+- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN-Caching**: CloudFront, Cloud CDN, Azure CDN
+- **Anwendungsfälle**: Sitzungsspeicher, Abfrage-Caching, Content-Bereitstellung
 
-## Networking
+## Netzwerke
 
-### Virtual Networks
-- **VPC/VNet**: Isolated Netzwerk environments
-- **Subnets**: Public (internet-facing), private (internal only)
-- **IP Addressing**: CIDR blocks, IPv4/IPv6
-- **Route Tables**: Control traffic flow
+### Virtuelle Netzwerke
+- **VPC/VNet**: Isolierte Netzwerkumgebungen
+- **Subnetze**: Öffentlich (internetzugänglich), privat (nur intern)
+- **IP-Adressierung**: CIDR-Blöcke, IPv4/IPv6
+- **Routentabellen**: Steuern des Datenverkehrsflusses
 
 ### Load Balancing
-- **Types**: Application (L7), Netzwerk (L4), Gateway
-- **Features**: Health checks, SSL termination, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
+- **Typen**: Application (L7), Netzwerk (L4), Gateway
+- **Funktionen**: Health Checks, SSL-Terminierung, Sticky Sessions
+- **Dienste**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
 ### Content Delivery Networks (CDN)
-- **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origin load, global distribution
-- **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
+- **Zweck**: Inhalte an Edge-Standorten cachen
+- **Vorteile**: Reduzierte Latenz, geringere Origin-Last, globale Verteilung
+- **Dienste**: CloudFront, Cloud CDN, Azure CDN, Akamai
 
-### DNS Services
-- **Functions**: Domain registration, routing, health checks
-- **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
+### DNS-Dienste
+- **Funktionen**: Domain-Registrierung, Routing, Health Checks
+- **Dienste**: Route 53, Cloud DNS, Azure DNS
+- **Routing-Richtlinien**: Einfach, gewichtet, latenzbasiert, Geolokation, Failover
 
-### Connectivity Options
-- **Internet Gateway**: Public internet access
-- **NAT Gateway**: Private subnet outbound access
-- **VPN**: Encrypted tunnels to on-premises
-- **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peering**: Connect VPCs within/between accounts
+### Konnektivitätsoptionen
+- **Internet Gateway**: Öffentlicher Internetzugang
+- **NAT Gateway**: Ausgehender Zugriff für private Subnetze
+- **VPN**: Verschlüsselte Tunnel zu On-Premises
+- **Direct Connect/ExpressRoute**: Dedizierte private Verbindungen
+- **VPC Peering**: VPCs innerhalb/zwischen Konten verbinden
 
-## Sicherheit in der/die/das Cloud
+## Sicherheit in der Cloud
 
 ### Shared Responsibility Model
-- **Provider Responsibility**: Sicherheit von der/die/das cloud (infrastructure)
-- **Customer Responsibility**: Sicherheit in der/die/das cloud (Daten, applications, access)
-- **Varies By Service**: More managed = more provider responsibility
+- **Anbieterverantwortung**: Sicherheit DER Cloud (Infrastruktur)
+- **Kundenverantwortung**: Sicherheit IN der Cloud (Daten, Anwendungen, Zugriff)
+- **Variiert nach Dienst**: Mehr verwaltet = mehr Anbieterverantwortung
 
-### Identity und Access Verwaltung (IAM)
-- **Users**: Individual identities
-- **Groups**: Collections von users
-- **Roles**: Temporary credentials für services/users
-- **Policies**: JSON documents defining permissions
-- **Principles**: Least privilege, separation von duties
+### Identity and Access Management (IAM)
+- **Benutzer**: Einzelne Identitäten
+- **Gruppen**: Sammlungen von Benutzern
+- **Rollen**: Temporäre Anmeldeinformationen für Dienste/Benutzer
+- **Richtlinien**: JSON-Dokumente, die Berechtigungen definieren
+- **Prinzipien**: Geringste Privilegien, Trennung der Aufgaben
 
-### Netzwerk Sicherheit
-- **Sicherheit Groups**: Stateful firewalls für instances
-- **Netzwerk ACLs**: Stateless firewalls für subnets
-- **Web Application Firewall (WAF)**: Protect against Web exploits
-- **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
+### Netzwerksicherheit
+- **Sicherheitsgruppen**: Stateful-Firewalls für Instanzen
+- **Netzwerk-ACLs**: Stateless-Firewalls für Subnetze
+- **Web Application Firewall (WAF)**: Schutz vor Web-Exploits
+- **DDoS-Schutz**: Shield, Cloud Armor, DDoS Protection
 
-### Daten Protection
-- **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption in Transit**: TLS/SSL, HTTPS
-- **Key Verwaltung**: HSM, key rotation, audit trails
-- **Secrets Verwaltung**: Secrets Manager, Key Vault
+### Datenschutz
+- **Verschlüsselung im Ruhezustand**: KMS, kundenseitig verwaltete Schlüssel
+- **Verschlüsselung während der Übertragung**: TLS/SSL, HTTPS
+- **Schlüsselverwaltung**: HSM, Schlüsselrotation, Audit-Trails
+- **Secrets-Verwaltung**: Secrets Manager, Key Vault
 
 ### Compliance und Governance
-- **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enforcement, compliance reporting, audit logs
+- **Zertifizierungen**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
+- **Tools**: Richtliniendurchsetzung, Compliance-Berichterstattung, Audit-Logs
 - **Frameworks**: Cloud Sicherheit Alliance, NIST CSF
 
-## DevOps in der/die/das Cloud
+## DevOps in der Cloud
 
-### CI/CD Services
+### CI/CD-Dienste
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, GitHub Actions
 - **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkins, CircleCI, GitLab CI
+- **Drittanbieter**: Jenkins, CircleCI, GitLab CI
 
 ### Infrastructure as Code (IaC)
-- **Terraform**: Multi-cloud, declarative, state Verwaltung
-- **CloudFormation**: AWS native, YAML/JSON templates
-- **ARM Templates**: Azure native
-- **Bereitstellung Manager**: GCP native
-- **Pulumi**: Infrastructure using programming languages
-- **Benefits**: Version control, repeatability, documentation
+- **Terraform**: Multi-Cloud, deklarativ, Statusverwaltung
+- **CloudFormation**: AWS nativ, YAML/JSON-Vorlagen
+- **ARM-Vorlagen**: Azure nativ
+- **Deployment Manager**: GCP nativ
+- **Pulumi**: Infrastruktur mit Programmiersprachen
+- **Vorteile**: Versionskontrolle, Wiederholbarkeit, Dokumentation
 
-### Configuration Verwaltung
-- **Ansible**: Agentless, YAML playbooks
-- **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reporting
-- **SaltStack**: Fast, Python-based
+### Konfigurationsverwaltung
+- **Ansible**: Agentenlos, YAML-Playbooks
+- **Chef**: Ruby-basiert, ausgereiftes Ökosystem
+- **Puppet**: Deklarativ, starke Berichterstattung
+- **SaltStack**: Schnell, Python-basiert
 
 ### Monitoring und Observability
-- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Metriken**: CloudWatch, Cloud Monitoring, Azure Monitor
 - **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
 - **Tracing**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
+- **Alerting**: SNS, Cloud Monitoring-Warnungen, Action Groups
 
-### Container Orchestration
-- **Kubernetes**: Industry standard orchestration
-- **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (traffic Verwaltung, Sicherheit)
-- **GitOps**: ArgoCD, Flux (declarative deployments)
+### Container-Orchestrierung
+- **Kubernetes**: Industriestandard für Orchestrierung
+- **Verwaltete Dienste**: EKS, AKS, GKE
+- **Service Mesh**: Istio, Linkerd (Datenverkehrsverwaltung, Sicherheit)
+- **GitOps**: ArgoCD, Flux (deklarative Bereitstellungen)
 
-## Cost Verwaltung
+## Kostenverwaltung
 
-### Pricing Models
-- **Pay-as-you-go**: Pay für what you use
-- **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid für unused capacity, can be interrupted
-- **Savings Plans**: Flexible commitment pricing
-- **Free Tier**: Limited free usage für new accounts
+### Preismodelle
+- **Pay-as-you-go**: Bezahlung nach Nutzung
+- **Reservierte Instanzen**: 1-3-Jahres-Verpflichtungen, erhebliche Rabatte
+- **Spot-Instanzen**: Gebot für ungenutzte Kapazität, kann unterbrochen werden
+- **Savings Plans**: Flexible Verpflichtungspreise
+- **Free Tier**: Begrenzte kostenlose Nutzung für neue Konten
 
-### Cost Optimization Strategies
-- **Right-sizing**: Match instance types to workload needs
-- **Auto-scaling**: Scale based on demand
-- **Reserved Capacity**: Commit to steady-state workloads
-- **Spot Usage**: Use für fault-tolerant, flexible workloads
-- **Storage Tiers**: Move infrequent Daten to cheaper tiers
-- **Cleanup**: Delete unused resources, snapshots, AMIs
+### Kostenoptimierungsstrategien
+- **Right-Sizing**: Instanztypen an Workload-Anforderungen anpassen
+- **Auto-Scaling**: Skalierung basierend auf Nachfrage
+- **Reservierte Kapazität**: Verpflichtung für gleichmäßige Workloads
+- **Spot-Nutzung**: Für fehlertolerante, flexible Workloads verwenden
+- **Speicherebenen**: Selten genutzte Daten in günstigere Ebenen verschieben
+- **Bereinigung**: Nicht verwendete Ressourcen, Snapshots, AMIs löschen
 
-### Cost Verwaltung Tools
+### Kostenverwaltungstools
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
-- **Azure**: Cost Verwaltung, Advisor
-- **GCP**: Billing reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Datadog
+- **Azure**: Cost Management, Advisor
+- **GCP**: Abrechnungsberichte, Recommender
+- **Drittanbieter**: CloudHealth, CloudCheckr, Datadog
 
-## High Availability und Disaster Recovery
+## Hochverfügbarkeit und Disaster Recovery
 
-### Availability Concepts
-- **Availability Zones**: Physically separate Daten centers within region
-- **Regions**: Geographic areas mit multiple AZs
-- **Edge Locations**: CDN cache locations globally
+### Verfügbarkeitskonzepte
+- **Availability Zones**: Physisch getrennte Rechenzentren innerhalb einer Region
+- **Regionen**: Geografische Bereiche mit mehreren AZs
+- **Edge Locations**: CDN-Cache-Standorte weltweit
 
-### HA Strategies
-- **Multi-AZ**: Deploy across availability zones
-- **Auto-healing**: Auto-replace failed instances
-- **Load Balancing**: Distribute traffic across healthy instances
-- **Datenbank Replication**: Multi-AZ deployments, read replicas
+### HA-Strategien
+- **Multi-AZ**: Bereitstellung über Availability Zones hinweg
+- **Auto-Healing**: Fehlgeschlagene Instanzen automatisch ersetzen
+- **Load Balancing**: Datenverkehr auf gesunde Instanzen verteilen
+- **Datenbank-Replikation**: Multi-AZ-Bereitstellungen, Lesereplikate
 
-### Disaster Recovery Strategies
-- **Backup und Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements running, scale up during disaster
-- **Warm Standby**: Scaled-down version always running
-- **Multi-Site Active/Active**: Full production in multiple regions (highest cost)
+### Disaster Recovery-Strategien
+- **Backup und Wiederherstellung**: Periodische Backups, bei Bedarf wiederherstellen (niedrigste Kosten)
+- **Pilot Light**: Kernelemente laufen, während der Katastrophe hochskalieren
+- **Warm Standby**: Verkleinerte Version läuft immer
+- **Multi-Site Active/Active**: Vollständige Produktion in mehreren Regionen (höchste Kosten)
 
 ### RTO und RPO
-- **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Point Objective (RPO)**: Maximum acceptable Daten loss
-- **Strategy Selection**: Based on Geschäft requirements und budget
+- **Recovery Time Objective (RTO)**: Maximal akzeptable Ausfallzeit
+- **Recovery Point Objective (RPO)**: Maximal akzeptabler Datenverlust
+- **Strategieauswahl**: Basierend auf Geschäftsanforderungen und Budget
 
-## Emerging Trends
+## Aufkommende Trends
 
-### Edge Datenverarbeitung
-- Process Daten closer to source
-- **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **Use Cases**: IoT, real-time analytics, low-latency applications
+### Edge Computing
+- Daten näher an der Quelle verarbeiten
+- **Dienste**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
+- **Anwendungsfälle**: IoT, Echtzeit-Analytics, latenzarme Anwendungen
 
 ### Multi-Cloud und Hybrid Cloud
-- Avoid vendor lock-in
-- Leverage best-von-breed services
+- Vendor Lock-in vermeiden
+- Best-of-Breed-Dienste nutzen
 - **Tools**: Terraform, Anthos, Arc, CloudHealth
 
-### AI/ML Services
-- Pre-trained models: Vision, speech, Sprache
-- Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model Bereitstellung, monitoring, governance
+### KI/ML-Dienste
+- Vorgefertigte Modelle: Vision, Sprache, Sprachverarbeitung
+- Benutzerdefiniertes Modelltraining: SageMaker, Vertex AI, Azure ML
+- MLOps: Modellbereitstellung, Monitoring, Governance
 
-### Quantum Datenverarbeitung
-- **Services**: AWS Braket, Azure Quantum
-- **Status**: Early stage, experimental
-- **Potential**: Cryptography, optimization, drug discovery
+### Quantencomputing
+- **Dienste**: AWS Braket, Azure Quantum
+- **Status**: Frühphase, experimentell
+- **Potenzial**: Kryptographie, Optimierung, Arzneimittelentwicklung
 
-### Sustainable Cloud
-- Carbon footprint tracking
-- Renewable energy commitments
-- Efficient resource utilization
-- Green Architektur patterns
+### Nachhaltige Cloud
+- CO2-Fußabdruck-Tracking
+- Verpflichtungen zu erneuerbaren Energien
+- Effiziente Ressourcennutzung
+- Green Architecture-Muster
