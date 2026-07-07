@@ -1,6 +1,6 @@
 # Linguaggi di codifica
 
-## Pitone
+## Python
 
 Python è un linguaggio di programmazione di alto livello, interpretato, tipizzato dinamicamente e di uso generale. Enfatizza la leggibilità e utilizza rientri significativi come delimitatori di blocco.
 
@@ -269,7 +269,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Gestione degli errori
+### gestione degli errori
 
 ```rust
 use std::fs;

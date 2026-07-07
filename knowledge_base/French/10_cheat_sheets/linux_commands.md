@@ -1,4 +1,4 @@
-# Linux Commands Quick Reference
+# Linux Commands Quick reference
 
 Essential Linux/Unix commands for system navigation and administration.
 

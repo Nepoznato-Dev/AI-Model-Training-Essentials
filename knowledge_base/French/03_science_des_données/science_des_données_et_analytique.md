@@ -215,7 +215,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 
 ### Données Pipeline Tools
 - **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline Gestion (Spotify)
+- **Luigi**: Pipeline gestion (Spotify)
 - **Prefect**: Modern workflow orchestration
 - **Dagster**: Données orchestrator avec asset focus
 - **dbt**: Données transformation dans warehouse
@@ -278,7 +278,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 - **HIPAA**: Health Insurance Portability et Accountability Act (US Soins de santé)
 - **Anonymization**: Removing personally identifiable information
 - **Differential Privacy**: Adding noise to protect individuals
-- **Consent Gestion**: Opt-dans/opt-out mechanisms
+- **Consent gestion**: Opt-dans/opt-out mechanisms
 
 ### Données Quality
 - **Accuracy**: Correctness de Données
@@ -297,7 +297,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 
 ### Données Governance Framework
 - **Données Stewardship**: Responsibility pour Données assets
-- **Metadata Gestion**: Données about Données documentation
+- **Metadata gestion**: Données about Données documentation
 - **Données Lineage**: Tracking Données flow et transformations
 - **Access Control**: Role-based permissions
 - **Audit Trails**: Logging Données access et changes
@@ -310,7 +310,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 - **Données Scientist**: Statistical modeling, Apprentissage automatique, Avancé analytics
 - **ML Engineer**: Production ML Systèmes, model Déploiement, MLOps
 - **Données Engineer**: Données pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder Gestion
+- **Analytics Manager**: Team leadership, strategy, stakeholder gestion
 - **BI Developer**: Dashboard creation, report Développement
 - **Research Scientist**: Novel algorithms, publications, Avancé research
 
@@ -318,7 +318,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 - **Technical**: Python/R, SQL, Statistiques, ML frameworks, cloud platforms
 - **Analytical**: Problem-solving, critical thinking, experimental design
 - **Communication**: Storytelling, visualization, presentation skills
-- **Entreprise**: Domain knowledge, stakeholder Gestion, ROI analysis
+- **Entreprise**: Domain knowledge, stakeholder gestion, ROI analysis
 - **Tools**: Git, Jupyter, Docker, CI/CD, version control pour models
 
 ## Emerging Trends
@@ -326,7 +326,7 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 ### Current Developments
 - **AutoML**: Automated Apprentissage automatique pipeline creation
 - **MLOps**: DevOps practices pour Apprentissage automatique
-- **Feature Stores**: Centralized feature Gestion
+- **Feature Stores**: Centralized feature gestion
 - **Données Mesh**: Decentralized Données Architecture
 - **LLMs et Generative AI**: Large Langue models, content generation
 - **Edge Analytics**: Processing Données at source devices
@@ -338,4 +338,4 @@ Données Science is an interdisciplinary field that uses scientific methods, pro
 - **Federated Learning**: Training models across decentralized Données
 - **Causal Inference**: Moving beyond correlation to causation
 - **Responsible AI**: Ethics, explainability, transparency
-- **Données Fabric**: Integrated Données Gestion across environments
+- **Données Fabric**: Integrated Données gestion across environments

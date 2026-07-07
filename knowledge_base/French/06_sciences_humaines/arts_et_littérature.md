@@ -12,7 +12,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Fiction Genres
 - **Literary Fiction**: Character-driven narratives focusing on themes, style, et psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
 - **Science Fiction**: Speculative fiction exploring futuristic Technologie, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "le/la Lord de le/la Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "le/la Lord du  Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
 - **Mystery/Detective**: Crime-solving narratives avec puzzles et investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
 - **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "le/la Shining" by Stephen King, "Dracula" by Bram Stoker)
 - **Romance**: Focus on romantic relationships et emotional journeys (e.g., Jane Austen's "Pride et Prejudice", Nicholas Sparks novels)
@@ -104,7 +104,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
 - **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
 - **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "le/la Phantom de le/la Opera")
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "le/la Phantom du  Opera")
 - **Experimental/Avant-Garde**: Non-traditional forms, audience participation
 
 ### Famous Playwrights
@@ -180,7 +180,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Unreliable Narrator**: Narrator whose credibility is compromised
 - **Non-linear Narrative**: Événements presented out de chronological order
 - **Foreshadowing**: Hints about Futur Événements
-- **Flashback**: Scenes from earlier dans le/la story
+- **Flashback**: Scenes from earlier dans le  story
 
 ### Structural Elements
 - **Plot**: Exposition, rising action, climax, falling action, resolution
@@ -195,7 +195,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Museums et Galleries
 - Louvre (Paris): World's largest art museum
 - Metropolitan Museum de Art (New York): Comprehensive collections
-- British Museum (London): Human Histoire et Culture
+- British Museum (London): Human historique et Culture
 - Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
 - Uffizi Gallery (Florence): Italian Renaissance masterpieces
 - Hermitage Museum (St. Petersburg): One de oldest et largest museums
@@ -203,7 +203,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Literary Awards
 - Nobel Prize dans Littérature: International recognition
-- Pulitzer Prize (USA): Fiction, drama, Histoire, poetry
+- Pulitzer Prize (USA): Fiction, drama, historique, poetry
 - Booker Prize (UK/Commonwealth): Best original novel
 - Hugo Award: Science fiction et fantasy
 - National Book Award (USA): American Littérature

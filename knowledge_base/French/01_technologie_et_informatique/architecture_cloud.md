@@ -167,7 +167,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 ### Machines Virtuelles
 - **Types**: Usage général, optimisé pour le calcul, optimisé pour la mémoire, GPU
 - **Tarification**: À la demande, instances réservées, instances spot
-- **Gestion**: Groupes de mise à l'échelle automatique, équilibreurs de charge
+- **gestion**: Groupes de mise à l'échelle automatique, équilibreurs de charge
 - **Meilleures pratiques**: Dimensionnement correct, étiquetage, surveillance, correction
 
 ### Conteneurs
@@ -199,7 +199,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 ### Stockage de Fichiers
 - **Caractéristiques**: Systèmes de fichiers partagés, protocoles NFS/SMB
 - **Exemples**: AWS EFS, Google Filestore, Azure Files
-- **Cas d'utilisation**: Gestion de contenu, configurations partagées, lift-and-shift
+- **Cas d'utilisation**: gestion de contenu, configurations partagées, lift-and-shift
 
 ### Stockage d'Archive
 - **Caractéristiques**: Coût le plus bas, délais de récupération
@@ -266,7 +266,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 - **Responsabilité du client**: Sécurité dans le cloud (données, applications, accès)
 - **Varie selon le service**: Plus géré = plus de responsabilité du fournisseur
 
-### Gestion des Identités et des Accès (IAM)
+### gestion des Identités et des Accès (IAM)
 - **Utilisateurs**: Identités individuelles
 - **Groupes**: Collections d'utilisateurs
 - **Rôles**: Identifiants temporaires pour les services/utilisateurs
@@ -282,8 +282,8 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 ### Protection des Données
 - **Chiffrement au repos**: KMS, clés gérées par le client
 - **Chiffrement en transit**: TLS/SSL, HTTPS
-- **Gestion des clés**: HSM, rotation des clés, pistes d'audit
-- **Gestion des secrets**: Secrets Manager, Key Vault
+- **gestion des clés**: HSM, rotation des clés, pistes d'audit
+- **gestion des secrets**: Secrets Manager, Key Vault
 
 ### Conformité et Gouvernance
 - **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
@@ -306,7 +306,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 - **Pulumi**: Infrastructure utilisant des langages de programmation
 - **Avantages**: Contrôle de version, reproductibilité, documentation
 
-### Gestion de Configuration
+### gestion de Configuration
 - **Ansible**: Sans agent, playbooks YAML
 - **Chef**: Basé sur Ruby, écosystème mature
 - **Puppet**: Déclaratif, reporting solide
@@ -325,7 +325,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 - **Service Mesh**: Istio, Linkerd (gestion du trafic, sécurité)
 - **GitOps**: ArgoCD, Flux (déploiements déclaratifs)
 
-## Gestion des Coûts
+## gestion des Coûts
 
 ### Modèles de Tarification
 - **Pay-as-you-go**: Payez ce que vous utilisez
@@ -342,7 +342,7 @@ Livraison à la demande de ressources informatiques (serveurs, stockage, bases d
 - **Niveaux de stockage**: Déplacer les données peu fréquentes vers des niveaux moins chers
 - **Nettoyage**: Supprimer les ressources inutilisées, instantanés, AMI
 
-### Outils de Gestion des Coûts
+### Outils de gestion des Coûts
 - **AWS**: Cost Explorer, Budgets, Trusted Advisor
 - **Azure**: Cost Management, Advisor
 - **GCP**: Rapports de facturation, Recommender

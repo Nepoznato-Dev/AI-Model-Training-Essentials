@@ -34,7 +34,7 @@
 #### Reagisci
 - **Componenti**: componenti funzionali, componenti di classe
 - **Hook**: useState, useEffect, useContext, useReducer, hook personalizzati
-- **Gestione dello stato**: API contesto, Redux, Zustand, Recoil
+- **gestione dello stato**: API contesto, Redux, Zustand, Recoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosistema**: Next.js (SSR, SSG), Remix, Gatsby
 - ** DOM virtuale **: rendering efficiente tramite algoritmo di differenza
@@ -83,9 +83,9 @@
 - **NestJS**: architettura di ispirazione angolare, TypeScript
 - **Fastify**: framework ad alte prestazioni
 - **Koa**: Modern Express degli stessi creatori
-- **Gestione pacchetti**: npm, filato, pnpm
+- **gestione pacchetti**: npm, filato, pnpm
 
-#### Pitone
+#### Python
 - **Django**: framework completo, ORM, pannello di amministrazione, batterie incluse
 - **Flask**: Microframework, ecosistema di estensioni
 - **FastAPI**: documentazione API moderna, asincrona e automatica
@@ -268,7 +268,7 @@
 ### Implementazione
 - **HTML semantico**: corretta gerarchia delle intestazioni, punti di riferimento
 - **Attributi ARIA**: Ruoli, stati, proprietà
-- **Gestione focus**: indicatori focus visibili, ordine logico delle schede
+- **gestione focus**: indicatori focus visibili, ordine logico delle schede
 - **Contrasto colore**: rapporto minimo 4,5:1 per il testo
 - **Test del lettore di schermo**: NVDA, JAWS, VoiceOver
 - **Navigazione tramite tastiera**: tutti gli elementi interattivi accessibili

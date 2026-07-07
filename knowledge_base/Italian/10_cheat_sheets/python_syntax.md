@@ -1,4 +1,4 @@
-# Scheda di Riferimento Sintassi Python
+# Scheda di riferimento Sintassi Python
 
 Quick reference for Python 3.x syntax and common patterns.
 

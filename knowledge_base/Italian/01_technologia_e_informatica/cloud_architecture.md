@@ -49,7 +49,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
   - Calcolo: EC2, Lambda, ECS, EKS
   - Stoccaggio: S3, EBS, Glacier
   - Banca dati: RDS, DynamoDB, Aurora
-  - Rete: VPC, Route 53, CloudFront
+  - rete: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
 ###Microsoft Azure
@@ -158,7 +158,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ### Macchine virtuali
 - **Tipi**: uso generico, ottimizzato per il calcolo, ottimizzato per la memoria, GPU
 - **Prezzi**: istanze on-demand, riservate, istanze spot
-- **Gestione**: gruppi con scalabilità automatica, bilanciatori del carico
+- **gestione**: gruppi con scalabilità automatica, bilanciatori del carico
 - **Best practice**: dimensionamento corretto, tagging, monitoraggio, applicazione di patch
 
 ### Contenitori
@@ -220,7 +220,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Memoria nella cache CDN**: CloudFront, Cloud CDN, CDN di Azure
 - **Casi d'uso**: archiviazione delle sessioni, memorizzazione nella cache delle query, distribuzione dei contenuti
 
-##Rete
+## Rete
 
 ### Reti virtuali
 - **VPC/VNet**: ambienti di rete isolati
@@ -229,7 +229,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Tabelle di percorso**: controlla il flusso del traffico
 
 ### Bilanciamento del carico
-- **Tipi**: Applicazione (L7), Rete (L4), Gateway
+- **Tipi**: Applicazione (L7), rete (L4), Gateway
 - **Caratteristiche**: controlli di integrità, terminazione SSL, sessioni permanenti
 - **Servizi**: ELB/ALB/NLB, bilanciamento del carico nel cloud, bilanciatore del carico di Azure
 
@@ -257,7 +257,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Responsabilità del cliente**: Sicurezza NEL cloud (dati, applicazioni, accesso)
 - **Varia in base al servizio**: Più gestione = più responsabilità del fornitore
 
-### Gestione delle identità e degli accessi (IAM)
+### gestione delle identità e degli accessi (IAM)
 - **Utenti**: identità individuali
 - **Gruppi**: raccolte di utenti
 - **Ruoli**: Credenziali temporanee per servizi/utenti
@@ -271,8 +271,8 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ### Protezione dei dati
 - **Crittografia a riposo**: KMS, chiavi gestite dal cliente
 - **Crittografia in transito**: TLS/SSL, HTTPS
-- **Gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
-- **Gestione dei segreti**: Gestione dei segreti, Key Vault
+- **gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
+- **gestione dei segreti**: gestione dei segreti, Key Vault
 
 ### Conformità e governance
 - **Certificazioni**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
@@ -295,7 +295,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Pulumi**: Infrastruttura che utilizza linguaggi di programmazione
 - **Vantaggi**: controllo della versione, ripetibilità, documentazione
 
-### Gestione della configurazione
+### gestione della configurazione
 - **Ansible**: playbook YAML senza agente
 - **Chef**: ecosistema maturo, basato su Ruby
 - **Burattino**: resoconto dichiarativo e forte
@@ -314,7 +314,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Service Mesh**: Istio, Linkerd (gestione del traffico, sicurezza)
 - **GitOps**: ArgoCD, Flux (distribuzioni dichiarative)
 
-## Gestione dei costi
+## gestione dei costi
 
 ### Modelli di prezzo
 - **Pagamento in base al consumo**: paga in base all'utilizzo

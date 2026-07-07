@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Coding Languages
+# Langages de programmation
 
 ## Python
 
@@ -84,7 +84,7 @@ class Dog(Animal):
 
 ## JavaScript
 
-JavaScript is le/la primary Langue de le/la Web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
+JavaScript is le/la primary Langue du  Web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
 
 ### Modern Syntaxe (ES6+)
 
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Gestion des erreurs
+### gestion des erreurs
 
 ```rust
 use std::fs;

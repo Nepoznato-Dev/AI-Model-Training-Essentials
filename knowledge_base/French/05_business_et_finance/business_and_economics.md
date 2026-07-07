@@ -1,4 +1,4 @@
-# Business and Economics
+# Commerce et économie
 
 ## Corporate Structures
 

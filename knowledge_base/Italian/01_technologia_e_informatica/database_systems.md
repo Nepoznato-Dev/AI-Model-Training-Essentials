@@ -102,7 +102,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Schema flessibile/in evoluzione
 - Requisiti di scala orizzontale
 - Elevata velocità di scrittura
-- Dati gerarchici/annidati
+- dati gerarchici/annidati
 - Sistemi distribuiti
 - Applicazioni in tempo reale
 
@@ -266,7 +266,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
   - .NET: struttura dell'entità### Vantaggi
 - Astrazione da SQL
 - Digitare la sicurezza
-- Gestione della migrazione
+- gestione della migrazione
 - API per la creazione di query
 
 ### Inconvenienti
@@ -281,10 +281,10 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Installazione e configurazione
 - Ottimizzazione delle prestazioni
 - Backup e ripristino
-- Gestione della sicurezza
+- gestione della sicurezza
 - Pianificazione della capacità
 - Monitoraggio e allerta
-- Gestione delle patch
+- gestione delle patch
 
 ### Metriche di monitoraggio
 -Tempo di risposta alla domanda

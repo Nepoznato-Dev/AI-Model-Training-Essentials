@@ -1,4 +1,4 @@
-# General Knowledge
+# Conoscenza generale
 
 ## The Solar System
 

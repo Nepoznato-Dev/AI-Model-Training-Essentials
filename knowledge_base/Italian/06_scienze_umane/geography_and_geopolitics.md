@@ -181,7 +181,7 @@
 ### Applicazioni
 - **Pianificazione urbana**: uso del territorio, trasporti, zonizzazione
 - **Monitoraggio ambientale**: Deforestazione, inquinamento, cambiamenti climatici
-- **Disaster Response**: Gestione delle emergenze, percorsi di evacuazione
+- **Disaster Response**: gestione delle emergenze, percorsi di evacuazione
 - **Business Intelligence**: Analisi di mercato, selezione del sito, logistica
 - **Salute pubblica**: monitoraggio delle malattie, accesso all'assistenza sanitaria
 

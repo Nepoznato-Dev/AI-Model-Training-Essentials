@@ -1,4 +1,4 @@
-# Finance and Investing
+# Finance et investissement
 
 ## Personal Finance Fundamentals
 

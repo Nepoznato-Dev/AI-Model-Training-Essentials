@@ -1,4 +1,4 @@
-# Law and Legal Systems
+# Droit et systèmes juridiques
 
 ## Legal Systems Overview
 
