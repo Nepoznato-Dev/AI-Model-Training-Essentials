@@ -12,7 +12,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Continents y Major Regions
 - **Africa**: 54 countries, diverse climates from Sahara Desert to tropical rainforests, Nile River (longest river)
 - **Antarctica**: Southernmost continent, ice-covered, research stations, no permanent residents
-- **Asia**: Largest continent, includes Middle East, Central Asia, East Asia, South Asia, Southeast Asia
+- **Asia**: Largest continent, incluyens Middle East, Central Asia, East Asia, South Asia, Southeast Asia
 - **Europe**: Western peninsula de Eurasia, diverse cultures, European Union political bloc
 - **North America**: Canada, United States, Mexico, Central American isthmus, Caribbean islands
 - **Oceania**: Australia, New Zealand, Pacific island nations (Melanesia, Micronesia, Polynesia)
@@ -23,11 +23,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Andes**: South America, longest continental mountain range (~7,000km), volcanic activity
 - **Rocky Mountains**: North America, extends from Canada to New Mexico
 - **Alps**: Europe, central European range, major tourism y skiing destination
-- **Atlas Mountains**: North Africa, Morocco to Tunisia, separates Mediterranean from Sahara
-- **Ural Mountains**: Russia, traditional boundary between Europe y Asia
+- **Atlas Mountains**: North África, Morocco to Tunisia, separates Mediterranean from Sahara
+- **Ural Mountains**: Russia, tradiciónal boundary between Europe y Asia
 
 ### Major Rivers
-- **Nile**: Northeast Africa, ~6,650km, flows through 11 countries to Mediterranean
+- **Nile**: Northeast África, ~6,650km, flows through 11 countries to Mediterranean
 - **Amazon**: South America, largest by discharge volume, Amazon Basin biodiversity
 - **Yangtze**: China, longest en Asia, Three Gorges Dam
 - **Mississippi-Missouri**: North America, major drainage system de United States
@@ -35,10 +35,10 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Danube**: Europe, flows through 10 countries, important trade route
 
 ### Deserts
-- **Sahara**: North Africa, largest hot desert (~9.2 million km²)
+- **Sahara**: North África, largest hot desert (~9.2 million km²)
 - **Arabian Desert**: Middle East, covers most de Arabian Peninsula
 - **Gobi**: East Asia, China/Mongolia, cold desert
-- **Kalahari**: Southern Africa, semi-arid savanna
+- **Kalahari**: Southern África, semi-arid savanna
 - **Antarctic Desert**: Largest desert overall (cold desert)
 - **Atacama**: South America, driest non-polar desert
 
@@ -65,7 +65,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Economic Geografía
 - **GDP Leaders**: USA, China, Japan, Germany, India, UK, France, Italy, Brazil, Canada
-- **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), African Continental Free Trade Area
+- **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), Áfrican Continental Free Trade Area
 - **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (China dominant), Lithium (Australia, Chile, Argentina)
 
 ## Political Geografía
@@ -102,7 +102,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Regional Studies
 
-### Middle East y North Africa (MENA)
+### Middle East y North África (MENA)
 - **Key Issues**: Oil resources, water scarcity, religious conflicts (Sunni-Shia), Arab-Israeli conflict
 - **Major Powers**: Saudi Arabia, Iran, Turkey, Israel, Egypt, UAE
 - **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestinian conflict, Kurdish independence movements
@@ -125,11 +125,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Latin America**: Inequality, drug trafficking, populist movements, Venezuela crisis
 - **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
 
-### Africa
+### África
 - **Colonial Legacy**: Artificial borders, ethnic divisions, Idioma policies
-- **Desarrollo Challenges**: Poverty, infrastructure, governance, debt
-- **Rising Powers**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
-- **Regional Issues**: Sahel instability, Horn de Africa conflicts, Great Lakes region
+- **Desarrollo Challenges**: Poverty, infrastructure, gobernanza, debt
+- **Rising Powers**: Nigeria (largest economy), South África (industrialized), Ethiopia (fast-growing)
+- **Regional Issues**: Sahel instability, Horn de África conflicts, Great Lakes region
 
 ## Contemporary Geopolitical Issues
 
@@ -157,7 +157,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
 - **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
 - **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
-- **Brain Drain**: Skilled workers emigrating from developing to developed nations
+- **Brain Drain**: Skilled workers emigrating from developing to desarrolló nations
 
 ## Strategic Concepts
 
@@ -198,7 +198,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Key Geopolitical Theorists
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Comandos el/la Heartland"
+- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Comandos el Heartland"
 - **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
 - **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
 - **Karl Haushofer** (1869-1946): Geopolitik, German geographical school

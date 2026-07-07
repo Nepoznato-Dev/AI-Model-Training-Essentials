@@ -12,15 +12,15 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Fiction Genres
 - **Literary Fiction**: Character-driven narratives focusing on themes, style, y psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
 - **Ciencia Fiction**: Speculative fiction exploring futuristic Tecnología, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "el/la Lord de el/la Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "el Lord del Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
 - **Mystery/Detective**: Crime-solving narratives con puzzles y investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "el/la Shining" by Stephen King, "Dracula" by Bram Stoker)
+- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "el Shining" by Stephen King, "Dracula" by Bram Stoker)
 - **Romance**: Focus on romantic relationships y emotional journeys (e.g., Jane Austen's "Pride y Prejudice", Nicholas Sparks novels)
-- **Historical Fiction**: Set en specific historical periods con accurate details (e.g., "el/la Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
+- **Historical Fiction**: Set en specific historical periods con accurate details (e.g., "el Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
 - **Magical Realism**: Realistic settings con magical elements treated as ordinary (e.g., "One Hundred Years de Solitude" by Gabriel García Márquez)
 
 ### Non-Fiction Genres
-- **Biography/Autobiography**: Life stories de real people (e.g., "el/la Diary de a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
+- **Biography/Autobiography**: Life stories de real people (e.g., "el Diary de a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
 - **Memoir**: Personal accounts focusing on specific experiences or themes
 - **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
 - **Journalism**: News reporting, investigative pieces, feature articles
@@ -34,15 +34,15 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Free Verse**: No regular meter or rhyme pattern
 - **Villanelle**: 19 lines con specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
 - **Ode**: Lyrical poem praising a person, event, or thing
-- **Epic**: Long narrative poem about heroic deeds (e.g., "el/la Odyssey" by Homer, "Beowulf")
+- **Epic**: Long narrative poem about heroic deeds (e.g., "el Odyssey" by Homer, "Beowulf")
 
 ## Major Literary Movements
 
 ### Historical Periods
-- **Classical Literatura** (8th century BCE - 5th century CE): Greek y Roman works emphasizing reason, order, y humanism
-- **Medieval Literatura** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "el/la Divine Comedy" by Dante)
+- **Classical Literatura** (8th century BCE - 5th century CE): Greek y Roman works emphasizing razón, order, y humanism
+- **Medieval Literatura** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "el Divine Comedy" by Dante)
 - **Renaissance** (14th - 17th century): Humanism, revival de classical learning (e.g., Shakespeare, Cervantes)
-- **Enlightenment** (17th - 18th century): Reason, Ciencia, individual rights (e.g., Voltaire, Jonathan Swift)
+- **Enlightenment** (17th - 18th century): Reason, Ciencia, derechos individuales (e.g., Voltaire, Jonathan Swift)
 - **Romanticism** (late 18th - mid-19th century): Emotion, Naturaleza, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
 - **Realism** (mid-19th century): Accurate depiction de everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
 - **Modernism** (late 19th - mid-20th century): Experimental forms, stream de consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
@@ -87,7 +87,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
 - **Hip Hop/Rap**: Rhythmic speech, beats, DJ Cultura (e.g., Tupac, Kendrick Lamar, Jay-Z)
 - **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
-- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
+- **Country**: Folk tradicións, storytelling (e.g., Johnny Cash, Dolly Parton)
 - **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
 - **Classical Crossover**: Fusion de classical y popular styles
 
@@ -104,14 +104,14 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
 - **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
 - **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "el/la Phantom de el/la Opera")
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "el Phantom del Opera")
 - **Experimental/Avant-Garde**: Non-traditional forms, audience participation
 
 ### Famous Playwrights
 - William Shakespeare (Inglés, 1564-1616): "Hamlet", "Macbeth", "Romeo y Juliet"
-- Anton Chekhov (Russian, 1860-1904): "el/la Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "el/la Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death de a Salesman", "el/la Crucible"
+- Anton Chekhov (Russian, 1860-1904): "el Cherry Orchard", "Three Sisters"
+- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "el Glass Menagerie"
+- Arthur Miller (American, 1915-2005): "Death de a Salesman", "el Crucible"
 - Samuel Beckett (Irish, 1906-1989): "Waiting para Godot", "Endgame"
 - August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
 
@@ -128,7 +128,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Ciencia Fiction**: Futuristic Tecnología, space, time travel
 
 ### Film Movements
-- **German Expressionism** (1920s): Distorted visuals, psychological themes ("el/la Cabinet de Dr. Caligari")
+- **German Expressionism** (1920s): Distorted visuals, psychological themes ("el Cabinet de Dr. Caligari")
 - **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
 - **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
 - **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
@@ -145,22 +145,22 @@ For accuracy improvements, please contribute edits via pull requests.
 ## Famous Authors y Works
 
 ### Classic Literatura
-- Homer: "el/la Iliad", "el/la Odyssey" (Ancient Greece)
-- Dante Alighieri: "el/la Divine Comedy" (Italy, 1308-1320)
+- Homer: "el Iliad", "el Odyssey" (Ancient Greece)
+- Dante Alighieri: "el Divine Comedy" (Italy, 1308-1320)
 - Miguel de Cervantes: "Don Quixote" (Spain, 1605)
 - Jane Austen: "Pride y Prejudice", "Sense y Sensibility" (England, 1810s)
 - Leo Tolstoy: "War y Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime y Punishment", "el/la Brothers Karamazov" (Russia, 1860s-1880s)
+- Fyodor Dostoevsky: "Crime y Punishment", "el Brothers Karamazov" (Russia, 1860s-1880s)
 - Charles Dickens: "Great Expectations", "A Tale de Two Cities" (England, 1850s-1860s)
 - Mark Twain: "Adventures de Huckleberry Finn" (USA, 1884)
 
 ### Modern Literatura
 - James Joyce: "Ulysses" (Ireland, 1922)
-- Virginia Woolf: "Mrs. Dalloway", "To el/la Lighthouse" (England, 1920s)
-- Franz Kafka: "el/la Metamorphosis", "el/la Trial" (Czechoslovakia, 1910s-1920s)
+- Virginia Woolf: "Mrs. Dalloway", "To el Lighthouse" (England, 1920s)
+- Franz Kafka: "el Metamorphosis", "el Trial" (Czechoslovakia, 1910s-1920s)
 - Gabriel García Márquez: "One Hundred Years de Solitude" (Colombia, 1967)
 - Toni Morrison: "Beloved", "Song de Solomon" (USA, 1970s-1980s)
-- Haruki Murakami: "Norwegian Wood", "Kafka on el/la Shore" (Japan, 1980s-present)
+- Haruki Murakami: "Norwegian Wood", "Kafka on el Shore" (Japan, 1980s-present)
 - Chimamanda Ngozi Adichie: "Half de a Yellow Sun", "Americanah" (Nigeria, 2000s)
 
 ## Literary Devices y Techniques
@@ -180,7 +180,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Unreliable Narrator**: Narrator whose credibility is compromised
 - **Non-linear Narrative**: Eventos presented out de chronological order
 - **Foreshadowing**: Hints about Futuro Eventos
-- **Flashback**: Scenes from earlier en el/la story
+- **Flashback**: Scenes from earlier en el story
 
 ### Structural Elements
 - **Plot**: Exposition, rising action, climax, falling action, resolution

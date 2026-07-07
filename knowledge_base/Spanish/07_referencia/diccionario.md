@@ -16,17 +16,17 @@ en questions y discussions.
 ## A
 
 **abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — el/la power or skill to do something.
+**ability** — el power or skill to do something.
 **abstract** — existing as a concept rather than a concrete thing; a summary de a document.
 **accurate** — correct y precise; free from errors.
 **achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit el/la truth de something; to show recognition.
+**acknowledge** — to accept or admit el truth de something; to show recognition.
 **acquire** — to obtain or gain something, usually through effort or purchase.
 **adapt** — to adjust to new conditions or requirements.
 **adequate** — satisfactory; just enough para a purpose.
 **adjacent** — next to or adjoining something else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead de el/la current time.
+**advance** — to move forward; progress; also, ahead del current time.
 **advantage** — a condition that gives a favourable position over others.
 **adverse** — unfavourable; harmful.
 **affect** — to have an impact on something (verb); emotion (noun, formal).
@@ -41,7 +41,7 @@ en questions y discussions.
 **apparent** — clearly visible or understood; seeming to be true.
 **approach** — a way de dealing con something; to come near.
 **approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge el/la quality, value, or Naturaleza de something.
+**assess** — to evaluate or judge el quality, value, or Naturaleza de something.
 **assign** — to give a task or role to someone; to allocate.
 **assume** — to accept something as true without proof.
 **attribute** — a quality or feature; to credit something to a cause (verb).
@@ -55,9 +55,9 @@ en questions y discussions.
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having el/la ability or qualities needed para something.
-**capacity** — el/la maximum amount something can hold or do.
+**calculate** — to determine a value using matemáticas.
+**capable** — having el ability or qualities needed para something.
+**capacity** — el maximum amount something can hold or do.
 **categorise** — to place into groups based on shared characteristics.
 **clarify** — to make something easier to understand.
 **classify** — to arrange into categories or groups.
@@ -72,10 +72,10 @@ en questions y discussions.
 **conclude** — to reach a decision or finish something.
 **condition** — a requirement; a state de being; circumstances.
 **configure** — to arrange or set up a system en a particular way.
-**confirm** — to establish el/la truth or accuracy de something.
+**confirm** — to establish el truth or accuracy de something.
 **conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving en el/la same way; not contradictory.
-**context** — el/la circumstances surrounding something; background information.
+**consistent** — always behaving en el same way; not contradictory.
+**context** — el circumstances surrounding something; background information.
 **contrast** — to compare en order to show differences.
 **convert** — to change from one form, unit, or use to another.
 **coordinate** — to organise different elements to work together.
@@ -85,10 +85,10 @@ en questions y discussions.
 
 **Datos** — facts y Estadísticas collected para analysis.
 **debug** — to find y fix errors en computer code.
-**define** — to give el/la meaning de a word or describe el/la limits de something.
+**define** — to give el meaning de a word or describe el limits de something.
 **demonstrate** — to show how something works or is done.
 **deploy** — to put into use; to install y run software en a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
+**derive** — to obtain something from a source; to reach a conclusion by razóning.
 **determine** — to find out or establish something conclusively.
 **develop** — to build, grow, or make something more elaborate over time.
 **differ** — to be unlike; to disagree.
@@ -100,13 +100,13 @@ en questions y discussions.
 ## E
 
 **efficient** — achieving results con minimum waste de time or resources.
-**element** — a basic component; one de el/la chemical substances en el/la periodic table.
+**element** — a basic component; una de las chemical substances en el periodic table.
 **embed** — to fix firmly within; to incorporate into a larger structure.
 **enable** — to make possible; to activate a feature.
-**enhance** — to improve el/la quality or value de something.
+**enhance** — to improve el quality or value de something.
 **entity** — a thing con distinct existence; an object en a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surroundings; en Informática, el/la system y configuration en which software runs.
+**environment** — surroundings; en Informática, el system y configuration en which software runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
 **evaluate** — to form an opinion after careful consideration.
@@ -121,15 +121,15 @@ en questions y discussions.
 **feature** — a distinctive aspect or capability.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
-**format** — el/la arrangement or layout de Datos; to prepare para use.
+**format** — el arrangement or layout de Datos; to prepare para use.
 **framework** — a basic structure providing Soporte para building something.
-**function** — el/la purpose de something; a reusable block de code (programming).
-**fundamental** — forming el/la base or foundation; essential.
+**function** — el purpose de something; a reusable block de code (programming).
+**fundamental** — forming el base or foundation; essential.
 
 ## G
 
 **generate** — to produce or create.
-**global** — relating to el/la whole world; applying to an entire system.
+**global** — relating to el whole world; applying to an entire system.
 **guideline** — a general rule or recommendation.
 
 ## H
@@ -148,12 +148,12 @@ en questions y discussions.
 **input** — Datos provided to a system; to enter Datos.
 **integrate** — to combine parts into a whole; to add a feature to an existing system.
 **interface** — a point where two Sistemas meet y interact; a contract en programming.
-**interpret** — to explain el/la meaning de something; to execute code line by line.
+**interpret** — to explain el meaning de something; to execute code line by line.
 **iterate** — to repeat a process, often con incremental changes.
 
 ## J
 
-**justify** — to give reasons para a decision; to align text along a margin.
+**justify** — to give razóns para a decision; to align text a lo largo de a margin.
 
 ## K
 
@@ -162,12 +162,12 @@ en questions y discussions.
 ## L
 
 **layer** — a level en a hierarchy; a component stacked on others.
-**legacy** — inherited from el/la past; old software still en use.
-**limit** — a boundary; el/la maximum or minimum value allowed.
+**legacy** — inherited from el past; old software still en use.
+**limit** — a boundary; el maximum or minimum value allowed.
 **linear** — arranged en a straight line; proportional increase.
 **link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; en Informática, running on el/la same machine.
-**logic** — reasoning according to rules; el/la flow de control en a program.
+**local** — relating to a nearby area; en Informática, running on el same machine.
+**logic** — razóning according to rules; el flow de control en a program.
 
 ## M
 
@@ -192,7 +192,7 @@ en questions y discussions.
 **objective** — a goal or aim; not influenced by personal feelings (adjective).
 **obtain** — to get or acquire.
 **optimise** — to make as effective or efficient as possible.
-**output** — Datos produced by a system; el/la result de a computation.
+**output** — Datos produced by a system; el result de a computation.
 **override** — to take control over an existing setting or method.
 
 ## P
@@ -201,10 +201,10 @@ en questions y discussions.
 **parse** — to analyse text into components; to interpret structured Datos.
 **pattern** — a repeated arrangement; a template para solving a common problem.
 **persist** — to continue to exist; to save Datos so it survives restarts.
-**pipeline** — a series de connected stages where el/la output de one feeds el/la next.
+**pipeline** — a series de connected stages where el output de one feeds el next.
 **precise** — exact; accurate to fine detail.
 **predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance y address el/la most important first.
+**prioritise** — to rank tasks by importance y address el most important first.
 **process** — a series de steps; a running program instance (verb: to handle or transform).
 **prompt** — a cue or instruction given to an AI model or user.
 **property** — a characteristic or attribute; a value belonging to an object.
@@ -221,7 +221,7 @@ en questions y discussions.
 **redundant** — unnecessary because it duplicates existing functionality; extra para backup.
 **refactor** — to restructure existing code without changing its external behaviour.
 **Referencia** — a pointer to a value; a source cited para information.
-**relevant** — closely connected to el/la topic at hand.
+**relevant** — closely connected to el topic at hand.
 **render** — to produce output (graphics, text, or HTML).
 **represent** — to stand para or describe something.
 **requirement** — a necessary condition or feature.
@@ -232,26 +232,26 @@ en questions y discussions.
 ## S
 
 **scalable** — able to handle increased workload without degrading Rendimiento.
-**schema** — el/la structure or layout de a Base de datos or Datos format.
-**scope** — el/la range de effect; el/la section de code where a variable is visible.
+**schema** — el structure or layout de a Base de datos or Datos format.
+**scope** — el range de effect; el section de code where a variable is visible.
 **segment** — a distinct section or part.
 **semantic** — relating to meaning, especially en Idioma or code.
 **sequence** — a set de things en a particular order.
 **session** — a period de activity; a connection between client y server.
-**simulate** — to imitate el/la behaviour de a system.
-**source** — el/la origin de something; original code before compilation.
+**simulate** — to imitate el behaviour de a system.
+**source** — el origin de something; original code before compilation.
 **specify** — to state clearly y en detail.
 **static** — not changing; en Informática, fixed at compile time or not associated con instances.
 **store** — to save Datos para later use.
-**structure** — el/la arrangement de parts; a composite Datos type.
-**summarise** — to give a brief statement de el/la main points.
-**synchronise** — to cause to happen at el/la same time or rate.
-**Sintaxis** — el/la rules governing el/la structure de statements en a Idioma.
+**structure** — el arrangement de parts; a composite Datos type.
+**summarise** — to give a brief statement del main points.
+**synchronise** — to cause to happen at el same time or rate.
+**Sintaxis** — el rules governing el structure de statements en a Idioma.
 
 ## T
 
 **template** — a model or pattern used as a starting point.
-**threshold** — a level or point that triggers an action when reached.
+**threshold** — a level or point that triggers an action when llegó a.
 **token** — a unit de text en NLP; an authentication credential.
 **trace** — to follow a path; a record de program execution para debugging.
 **transform** — to change en form, Naturaleza, or appearance.
@@ -260,7 +260,7 @@ en questions y discussions.
 ## U
 
 **uniform** — consistent y unchanged throughout.
-**unique** — el/la only one de its kind; occurring just once.
+**unique** — el only one de its kind; occurring just once.
 **update** — to bring to a more current state.
 **utilise** — to make use de something.
 
@@ -273,7 +273,7 @@ en questions y discussions.
 
 ## W
 
-**workflow** — a series de steps followed to Completo a task.
+**workflow** — a series de steps siguió to Completo a task.
 **warrant** — justification para an action; a Legal document authorizing something.
 
 ## X
@@ -282,7 +282,7 @@ en questions y discussions.
 
 ## Y
 
-**yield** — to produce or provide; to give way; el/la amount produced.
+**yield** — to produce or provide; to give way; el amount produced.
 
 ## Z
 
@@ -306,14 +306,14 @@ en questions y discussions.
 **archetype** — an original model or typical example de something.
 **artifact** — an object made by humans; en Informática, an unintended byproduct de processing.
 **assertion** — a confident statement; en programming, a check that a condition is true.
-**asynchronous** — not occurring at el/la same time; allowing operations to proceed without waiting.
+**asynchronous** — not occurring at el same time; allowing operations to proceed without waiting.
 **attenuate** — to reduce en force, value, or intensity.
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm para training Redes neuronales by propagating errors backward.
-**bandwidth** — el/la range de frequencies Disponible; Datos transfer capacity.
+**bandwidth** — el range de frequencies Disponible; Datos transfer capacity.
 **binary** — consisting de two parts; base-2 number system using 0s y 1s.
-**bit** — el/la smallest unit de Datos (0 or 1); short para binary digit.
+**bit** — el smallest unit de Datos (0 or 1); short para binary digit.
 **blockchain** — a distributed ledger Tecnología recording transactions across multiple computers.
 **boolean** — relating to logic con values true or false; named after George Boole.
 **bottleneck** — a point de congestion slowing down a process or system.
@@ -321,18 +321,18 @@ en questions y discussions.
 
 **cache** — a hardware or software component storing Datos para faster Futuro access.
 **calibrate** — to adjust precisely para accurate measurement or Rendimiento.
-**cascade** — a series de stages where each triggers el/la next; waterfall effect.
+**cascade** — a series de stages where each triggers el next; waterfall effect.
 **catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — el/la relationship between cause y effect.
-**centroid** — el/la geometric center de a shape; average position de points.
+**causality** — el relationship between cause y effect.
+**centroid** — el geometric center de a shape; average position de points.
 **checksum** — a value computed from Datos to detect errors or tampering.
 **cipher** — an algorithm para encryption or decryption; a secret code.
 **coalesce** — to come together to form one whole.
-**cognitive** — relating to mental processes de perception, memory, judgment, y reasoning.
+**cognitive** — relating to mental processes de perception, memory, judgment, y razóning.
 **cohort** — a group sharing a common characteristic or experience within a defined period.
 **collateral** — assets pledged as Seguridad para a loan; secondary or accompanying.
 **colloquial** — informal Idioma used en ordinary conversation.
-**combinatorics** — el/la branch de mathematics dealing con combinations y permutations.
+**combinatorics** — el branch de matemáticas dealing con combinations y permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
 **concurrency** — multiple computations happening during overlapping periods.
 **conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
@@ -346,44 +346,44 @@ en questions y discussions.
 
 **daisy-chain** — to connect devices or tasks en a sequential series.
 **deconvolution** — reversing convolution; separating mixed signals or images.
-**deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — el/la act de throwing someone out de a window.
+**deduction** — razóning from general principles to specific conclusions.
+**defenestration** — el act de throwing someone out de a window.
 **deictic** — referring to something by pointing (this, that, here, there).
 **demographic** — statistical Datos about populations or groups.
-**denotation** — el/la literal or primary meaning de a word.
+**denotation** — el literal or primary meaning de a word.
 **deprecated** — marked as obsolete but still functional; discouraged from use.
 **derivative** — a measure de rate de change (calculus); derived from something else.
-**deterministic** — producing el/la same output given el/la same input; predictable.
+**deterministic** — producing el same output given el same input; predictable.
 **diachronic** — studying phenomena as they change over time.
 **didactic** — intended to teach, particularly con moral instruction.
-**diffraction** — el/la bending de waves around obstacles or through openings.
+**diffraction** — el bending de waves alrededor de obstacles or through openings.
 **digraph** — two characters representing one sound (sh, ch, th).
 **disambiguate** — to remove ambiguity; make something clearer.
 **discrete** — separate y distinct; individual (opposite de continuous).
 **disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — el/la process de separating or moving apart.
+**divergence** — el process de separating or moving apart.
 **docstring** — documentation embedded en source code explaining function purpose.
 
 **eccentric** — unconventional or slightly strange; off-center.
 **eclectic** — selecting from diverse sources or styles.
 **edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament para el/la dead.
+**elegy** — a mournful poem or lament para el dead.
 **elide** — to omit or slur over sounds or syllables.
 **ellipsis** — omission de words; three dots (...) indicating continuation or pause.
 **embargo** — an official ban on trade or publication.
-**empathy** — el/la ability to understand y share others' feelings.
+**empathy** — el ability to understand y share others' feelings.
 **empirical** — based on observation or experience rather than theory.
 **emulate** — to imitate or match, especially en Informática (software emulation).
 **endemic** — native or restricted to a particular region; constantly present.
 **ephemeral** — lasting para a very short time; temporary.
-**epistemology** — el/la study de knowledge, its Naturaleza y scope.
+**epistemology** — el study de knowledge, its Naturaleza y scope.
 **epoch** — a significant period en Historia; en ML, one pass through training Datos.
 **equilibrium** — a state de balance between opposing forces.
-**equivocate** — to use ambiguous Idioma to conceal el/la truth.
+**equivocate** — to use ambiguous Idioma to conceal el truth.
 **ergodic** — having statistical properties uniform throughout; random yet representative.
 **esoteric** — intended para or understood by a small, specialized group.
-**ethnography** — el/la systematic study de people y cultures through observation.
-**etymology** — el/la study de word origins y historical Desarrollo.
+**ethnography** — el systematic study de people y cultures through observation.
+**etymology** — el study de word origins y historical Desarrollo.
 **euphemism** — a mild expression substituting para a harsh or unpleasant one.
 **evanescent** — fleeting; vanishing like vapor.
 **exacerbate** — to make a problem worse.
@@ -394,8 +394,8 @@ en questions y discussions.
 **exponential** — involving exponentiation; growth accelerating over time.
 **extrapolate** — to estimate beyond known Datos by extending trends.
 
-**facade** — el/la front de a building; a deceptive outward appearance.
-**fallacy** — a mistaken belief; flawed reasoning en argument.
+**facade** — el front de a building; a deceptive outward appearance.
+**fallacy** — a mistaken belief; flawed razóning en argument.
 **falsifiable** — capable de being proven false; a criterion para scientific claims.
 **Comentarios loop** — a system where outputs influence inputs, amplifying or stabilizing.
 **ferment** — chemical breakdown by microorganisms; agitation or unrest.
@@ -404,15 +404,15 @@ en questions y discussions.
 **formalism** — strict adherence to rules or forms; emphasis on structure.
 **fortuitous** — happening by chance; lucky.
 **fractal** — a self-similar pattern repeating at different scales.
-**frequency** — el/la rate de occurrence; number de cycles per second (Hertz).
+**frequency** — el rate de occurrence; number de cycles per second (Hertz).
 **full-stack** — involving both front-end y back-end Desarrollo.
 
 **garrulous** — excessively talkative, especially about trivial matters.
 **gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — el/la study de family lineages y descent.
+**genealogy** — el study de family lineages y descent.
 **generic** — general rather than specific; lacking brand identification.
 **genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than el/la sum de its parts.
+**gestalt** — an organized whole perceived as more than el sum de its parts.
 **gibberish** — unintelligible or meaningless speech or writing.
 **granular** — composed de small particles; detailed y fine-grained.
 **graph** — a diagram showing relationships; a Datos structure con nodes y edges.
@@ -422,22 +422,22 @@ en questions y discussions.
 **halcyon** — calm y peaceful; prosperous y happy.
 **haplotype** — a set de DNA variations inherited together.
 **hegemony** — dominance or leadership, especially de one state over others.
-**hermeneutics** — el/la theory y methodology de interpretation.
+**hermeneutics** — el theory y methodology de interpretation.
 **heuristic** — a practical method not guaranteed optimal; a rule de thumb.
 **hologram** — a 3D image created by laser interference patterns.
 **homogeneous** — uniform en composition or character.
-**homomorphism** — a structure-preserving map between algebraic structures.
+**homomorphism** — a structure-preserving mapear between algebraic structures.
 **homophone** — words sounding alike but differing en meaning or spelling.
 **homonym** — words con same spelling or pronunciation but different meanings.
 **hyperbole** — deliberate exaggeration para effect.
 **hyperparameter** — a configuration setting para Aprendizaje automático models set before training.
-**hypertext** — text containing links to other texts; foundational to el/la Web.
+**hypertext** — text containing links to other texts; foundational to el Web.
 **hypothesize** — to propose an explanation as a starting point para investigation.
 
 **iconoclast** — one who attacks cherished beliefs or institutions.
 **idiom** — a phrase whose meaning cannot be deduced from individual words.
 **idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing el/la same result regardless de how many times applied.
+**idempotent** — producing el same result regardless de how many times applied.
 **igneous** — rock formed from cooled magma or lava.
 **immutable** — unchanging over time; unable to be modified.
 **impedance** — opposition to alternating current; metaphorically, resistance to flow.
@@ -446,16 +446,16 @@ en questions y discussions.
 **imponderable** — impossible to estimate or assess.
 **impromptu** — done without preparation; spontaneous.
 **inchoate** — just begun; not fully formed.
-**inductive** — reasoning from specific observations to general conclusions.
+**inductive** — razóning from specific observations to general conclusions.
 **ineffable** — too great or extreme to be expressed en words.
-**inference** — a conclusion reached from evidence; en AI, generating outputs from models.
+**inference** — a conclusion llegó a from evidence; en AI, generating outputs from models.
 **inflection** — change en pitch or tone; modification de words para grammar.
 **innate** — inborn; natural rather than acquired.
 **inoculate** — to vaccinate; introduce an idea or attitude gradually.
 **insidious** — proceeding subtly but harmfully.
 **instantiation** — creating a specific instance de a class or concept.
-**intentionality** — el/la quality de being about something; directedness de consciousness.
-**interoperability** — el/la ability de Sistemas to work together seamlessly.
+**intentionality** — el quality de being about something; directedness de consciousness.
+**interoperability** — el ability de Sistemas to work together seamlessly.
 **interpolate** — to estimate values between known Datos points.
 **introspection** — examining one's own thoughts y feelings; en code, examining types at runtime.
 **invariant** — unchanging; a condition that remains constant during execution.
@@ -467,20 +467,20 @@ en questions y discussions.
 **juxtapose** — to place side by side para comparison or contrast.
 
 **kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — el/la core de an operating system; a seed; en ML, a function transforming Datos.
+**kernel** — el core de an operating system; a seed; en ML, a function transforming Datos.
 **kinetic** — relating to motion; active rather than static.
 **kiosk** — a small booth para information or sales; a locked-down computer terminal.
 
 **lacuna** — a gap or missing part, especially en a manuscript.
 **latency** — delay between stimulus y response; en networking, time para Datos to travel.
-**latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — el/la vocabulary de a Idioma or field; a Diccionario.
+**latent** — existing but not yet desarrolló or manifest; hidden.
+**lexicon** — el vocabulary de a Idioma or field; a Diccionario.
 **liability** — Legal responsibility; a disadvantage; debts owed.
 **linear regression** — a statistical method modeling linear relationships between variables.
 **lingua franca** — a common Idioma used between speakers de different native languages.
 **literal** — taking words en their usual sense; not figurative.
 **litmus test** — a decisive test revealing true Naturaleza or quality.
-**locus** — el/la set de points satisfying a condition; a center de activity.
+**locus** — el set de points satisfying a condition; a center de activity.
 **loquacious** — very talkative.
 **lucid** — clear y easy to understand; mentally sharp.
 **lumen** — a unit de luminous flux; light output.
@@ -489,9 +489,9 @@ en questions y discussions.
 **macro** — a large-scale view; a rule specifying pattern replacement.
 **malapropism** — mistaken use de a word en place de a similar-sounding one.
 **manifest** — obvious; a list de cargo or passengers; to display or show.
-**mantissa** — el/la significant digits de a floating-point number.
+**mantissa** — el significant digits de a floating-point number.
 **mapreduce** — a programming model para processing large datasets en parallel.
-**marginal** — minimal; at el/la edge; additional or incremental.
+**marginal** — minimal; at el edge; additional or incremental.
 **markup** — text formatting codes (HTML, XML); price increase.
 **matrix** — a rectangular array de numbers; environment or surroundings.
 **maxim** — a short statement expressing a general truth or rule de conduct.
@@ -505,13 +505,13 @@ en questions y discussions.
 **microservice** — a small, independent service en a distributed Arquitectura.
 **millisecond** — one thousandth de a second.
 **mnemonic** — a memory aid or device.
-**modality** — el/la mode or form de something; sensory channel.
+**modality** — el mode or form de something; sensory channel.
 **model** — a representation; en ML, a trained system making predictions.
 **modulate** — to adjust or regulate; vary en strength or tone.
 **monad** — a structure en functional programming handling side effects.
 **monolithic** — a single massive structure; not modular.
 **monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — el/la study de forms y structures; word formation en linguistics.
+**morphology** — el study de forms y structures; word formation en linguistics.
 **multicast** — sending Datos to multiple destinations simultaneously.
 **multimodal** — combining multiple modes (text, image, audio).
 **mutable** — capable de change; modifiable.
@@ -531,34 +531,34 @@ en questions y discussions.
 **notwithstanding** — en spite de; nevertheless.
 **nuance** — subtle distinction or variation.
 **null** — having no value; zero; invalid.
-**numerator** — el/la top number en a fraction.
+**numerator** — el top number en a fraction.
 
 **objective** — not influenced by personal feelings; a goal.
 **obligatory** — required; mandatory.
 **obfuscate** — to deliberately make unclear or confusing.
 **objective function** — a function to maximize or minimize en optimization.
 **observable** — capable de being observed; en programming, a stream de Eventos.
-**obsolescence** — el/la process de becoming outdated.
+**obsolescence** — el process de becoming outdated.
 **occasional** — happening sometimes; irregular.
 **occlusion** — blockage or obstruction; hiding de objects en vision.
 **octet** — a group de eight; en networking, 8 bits (byte).
 **offload** — to transfer work to another system or person.
 **omnibus** — containing multiple items; a collection.
-**ontology** — el/la study de being; en CS, a formal representation de knowledge.
+**ontology** — el study de being; en CS, a formal representation de knowledge.
 **opaque** — not transparent; difficult to understand.
 **operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — el/la value de el/la best alternative forgone.
+**opportunity cost** — el value del best alternative forgone.
 **optimization** — making something as effective as possible; finding best solutions.
 **oracle** — a source de wisdom; en Informática, a theoretical black box answering questions.
 **orthogonal** — at right angles; independent; unrelated.
 **oscillate** — to swing back y forth; fluctuate.
 **ostensible** — appearing or claimed to be true, though possibly not so.
 **overfit** — when a model learns training Datos too well, failing to generalize.
-**overhead** — extra resources required beyond el/la core task.
+**overhead** — extra resources required beyond el core task.
 **oxide** — a chemical compound containing oxygen.
 
 **pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading el/la same backward y forward.
+**palindrome** — a word or phrase reading el same backward y forward.
 **paradigm** — a typical example or pattern; a framework de thought.
 **parallel** — side by side; occurring simultaneously.
 **parameterize** — to express en terms de parameters.
@@ -568,23 +568,23 @@ en questions y discussions.
 **partition** — to divide into parts; a section.
 **passive** — accepting without resistance; not active.
 **patent** — a government license granting exclusive rights; obvious.
-**pathological** — relating to disease; extremely abnormal.
+**pathological** — relating to enfermedades; extremely abnormal.
 **peer** — an equal; to look closely.
 **penalty** — a punishment; disadvantage imposed para breaking rules.
 **pending** — awaiting decision; not yet settled.
 **permutation** — an arrangement de items en a specific order.
-**persona** — el/la aspect de someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; el/la art de representing 3D on 2D.
-**pertinent** — relevant to el/la matter at hand.
+**persona** — el aspect de someone's character; a fictional user representation.
+**perspective** — a particular viewpoint; el art de representing 3D on 2D.
+**pertinent** — relevant to el matter at hand.
 **pervasive** — spreading widely; omnipresent.
 **pessimistic** — expecting negative outcomes; assuming worst case.
 **phantom** — ghostly; illusory; en databases, rows appearing unexpectedly.
-**phenomenology** — el/la study de structures de consciousness.
-**philosophy** — el/la study de fundamental questions about existence, knowledge, values.
+**phenomenology** — el study de structures de consciousness.
+**philosophy** — el study de fundamental questions about existence, knowledge, values.
 **phishing** — fraudulent attempts to obtain sensitive information via electronic Comunicación.
-**phoneme** — el/la smallest unit de sound distinguishing meaning.
+**phoneme** — el smallest unit de sound distinguishing meaning.
 **phrase** — a group de words forming a unit; an expression.
-**pi** — el/la ratio de circle circumference to diameter (~3.14159).
+**pi** — el ratio de circle circumference to diameter (~3.14159).
 **placeholder** — a temporary stand-en; a token to be replaced.
 **plagiarism** — presenting others' work as one's own.
 **platform** — a raised surface; a Informática environment; a service foundation.
@@ -600,20 +600,20 @@ en questions y discussions.
 **pragmatic** — practical; concerned con actual results.
 **precedent** — an earlier event serving as Guía.
 **precision** — exactness; en ML, true positives divided by predicted positives.
-**predicate** — el/la part de a sentence stating something about el/la subject; a function returning boolean.
+**predicate** — el part de a sentence stating something about el subject; a function returning boolean.
 **predictive** — relating to prediction; forecasting Futuro Eventos.
-**prefix** — a morpheme added to el/la beginning de a word.
-**premise** — a statement forming el/la basis de an argument.
+**prefix** — a morpheme added to el beginning de a word.
+**premise** — a statement forming el basis de an argument.
 **prescient** — having knowledge before it happens.
 **presupposition** — an assumption underlying an argument.
-**primordial** — existing from el/la beginning; primitive.
+**primordial** — existing from el beginning; primitive.
 **prior** — earlier; preceding; en Bayesian Estadísticas, initial belief.
 **probe** — to investigate; a device para exploration.
 **procedural** — relating to procedures; a programming paradigm.
 **proclivity** — a tendency or inclination.
 **prodigious** — remarkably large; extraordinary.
 **proficient** — skilled; competent.
-**prognosis** — a forecast de disease outcome; prediction.
+**prognosis** — a forecast de enfermedades outcome; prediction.
 **prolific** — highly productive.
 **promissory** — containing a promise.
 **propagate** — to spread; reproduce; transmit signals.
@@ -634,17 +634,17 @@ en questions y discussions.
 
 **quantify** — to express as a number; measure.
 **quantum** — a discrete quantity; relating to quantum mechanics.
-**quarantine** — isolation to prevent disease spread; Seguridad isolation.
+**quarantine** — isolation to prevent enfermedades spread; Seguridad isolation.
 **query** — a question; a Base de datos request.
-**quintessential** — representing el/la perfect example.
-**quotient** — el/la result de division; a ratio.
+**quintessential** — representing el perfect example.
+**quotient** — el result de division; a ratio.
 
 **radical** — thoroughgoing; extreme; relating to roots.
 **random** — lacking pattern; unpredictable.
-**range** — el/la set de output values; extent; distance.
+**range** — el set de output values; extent; distance.
 **raster** — a grid de pixels; bitmap image.
 **ratify** — to formally approve; confirm.
-**rational** — based on reason; expressible as a fraction.
+**rational** — based on razón; expressible as a fraction.
 **recursion** — a function calling itself; self-Referencia.
 **redundancy** — repetition; backup; unnecessary duplication.
 **refinement** — improvement; making more precise.
@@ -667,10 +667,10 @@ en questions y discussions.
 **revision** — review y alteration; new version.
 **rhizome** — underground stem; non-hierarchical structure (philosophy).
 **robustness** — strength; resilience to errors.
-**root cause** — el/la fundamental reason para a problem.
-**rotation** — turning around an axis.
+**root cause** — el fundamental razón para a problem.
+**rotation** — turning alrededor de an axis.
 **rudimentary** — basic; undeveloped.
-**runtime** — el/la time when a program executes; execution environment.
+**runtime** — el time when a program executes; execution environment.
 
 **sacrifice** — giving up something valued; offering.
 **salient** — prominent; noticeable.
@@ -697,7 +697,7 @@ en questions y discussions.
 **simulation** — imitation de real processes.
 **singular** — unique; extraordinary; grammatical form.
 **skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; el/la / character.
+**slash** — to cut; el / character.
 **snapshot** — a momentary view; backup at a point en time.
 **socket** — an endpoint para Red Comunicación.
 **softmax** — a function converting values to probabilities.
@@ -728,7 +728,7 @@ en questions y discussions.
 **substantiate** — to provide evidence; prove.
 **subtle** — delicate; not obvious.
 **suffix** — a morpheme added to word ends.
-**summation** — el/la addition de a sequence.
+**summation** — el addition de a sequence.
 **superposition** — placement on top; quantum state combination.
 **supervised** — con oversight; ML con labeled Datos.
 **supplant** — to replace; supersede.
@@ -746,12 +746,12 @@ en questions y discussions.
 **synopsis** — a brief summary.
 **Sintaxis** — grammatical structure; rules para valid expressions.
 **synthesis** — combination forming a whole.
-**systemic** — affecting el/la entire system.
+**systemic** — affecting el entire system.
 
 **tacit** — understood without being stated.
 **tactical** — relating to strategy; short-term planning.
 **tangent** — touching at one point; diverging from topic.
-**tautology** — saying el/la same thing twice; logically always true.
+**tautology** — saying el same thing twice; logically always true.
 **taxonomy** — classification scheme.
 **teleology** — explanation by purpose or design.
 **tempered** — moderated; hardened (metal).
@@ -775,7 +775,7 @@ en questions y discussions.
 **trajectory** — path de a projectile; course de Desarrollo.
 **transcend** — to go beyond; surpass.
 **transcript** — written record; RNA copy de DNA.
-**transformation** — thorough change; mathematical mapping.
+**transformation** — thorough change; mathematical mapearping.
 **transient** — temporary; passing.
 **transpose** — to reverse position; swap rows y columns.
 **triage** — prioritizing by urgency.
@@ -795,7 +795,7 @@ en questions y discussions.
 **ulterior** — hidden; beyond what is evident.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; el/la _ character.
+**underscore** — to emphasize; el _ character.
 **underwrite** — to guarantee financially; Soporte.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
@@ -841,7 +841,7 @@ en questions y discussions.
 **warranty** — a guarantee; assurance.
 **waveform** — shape de a wave.
 **weakness** — lack de strength; vulnerability.
-**Web** — a Red; el/la World Wide Web.
+**Web** — a Red; el World Wide Web.
 **weight** — importance; heaviness; parameter value en ML.
 **well-formed** — correctly structured.
 **what-if** — hypothetical scenario analysis.
@@ -868,8 +868,8 @@ en questions y discussions.
 **yearning** — a longing desire.
 **yield** — to produce; give way; return value.
 
-**zenith** — el/la highest point; peak.
-**zero** — nothing; el/la number 0.
+**zenith** — el highest point; peak.
+**zero** — nothing; el number 0.
 **zip** — to fasten; compress files; move quickly.
 **zone** — an area con specific characteristics.
 **zoom** — to magnify; change focal length.

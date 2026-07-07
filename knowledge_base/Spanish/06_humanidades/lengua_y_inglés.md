@@ -9,28 +9,28 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## What is Idioma?
 
-Idioma is a system de Comunicación using sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human Idioma is unique en its complexity, creativity, y capacity to express abstract ideas. There are approximately 7,000 languages spoken en el/la world today. Inglés is el/la most widely spoken Idioma as a second Idioma y is el/la dominant Idioma de international Comunicación, Negocios, Ciencia, y el/la internet.
+Idioma is a system de Comunicación using sounds, symbols, or gestures that follows a shared set de rules understood by a community. Human Idioma is unique en its complexity, creativity, y capacity to express abstract ideas. There are approximately 7,000 languages spoken en el world today. Inglés is el most widely spoken Idioma as a second Idioma y is el dominant Idioma de international Comunicación, Negocios, Ciencia, y el internet.
 
 ## Inglés Grammar
 
-Grammar is el/la set de rules governing how words are combined to form sentences en a Idioma. A sentence must contain a subject (who or what el/la sentence is about) y a predicate (what el/la subject does or is).
+Grammar is el set de rules governing how words are combined to form sentences en a Idioma. A sentence must contain a subject (who or what el sentence is about) y a predicate (what el subject does or is).
 
 A **noun** is a word that names a person, place, thing, or idea.
 A **verb** is a word that expresses an action or state de being.
 An **adjective** modifies a noun.
 An **adverb** modifies a verb, adjective, or another adverb.
-A **pronoun** takes el/la place de a noun.
+A **pronoun** takes el place de a noun.
 
 A **clause** is a group de words containing a subject y a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone y depends on an independent clause. A **phrase** is a group de words that does not contain both a subject y a predicate.
 
 ## Parts de Speech
 
-el/la eight traditional parts de speech en Inglés are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, y interjection.
+el eight tradiciónal parts de speech en Inglés are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, y interjection.
 
-A **preposition** shows el/la relationship between a noun or pronoun y another word (e.g., en, on, at, by, con).
+A **preposition** shows el relationship between a noun or pronoun y another word (e.g., en, on, at, by, con).
 A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because).
 
-**Common coordinating conjunctions** can be remembered con el/la acronym FANBOYS:
+**Common coordinating conjunctions** can be remembered con el acronym FANBOYS:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
 ## Punctuation
@@ -47,8 +47,8 @@ A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because
 
 **Common spelling rules:**
 - "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "Ciencia")
-- Words ending en a silent "e" drop el/la "e" before adding a vowel suffix (make → making)
-- Double el/la final consonant before adding a vowel suffix when el/la last syllable is stressed y ends en a single consonant (run → running)
+- Words ending en a silent "e" drop el "e" before adding a vowel suffix (make → making)
+- Double el final consonant before adding a vowel suffix when el last syllable is stressed y ends en a single consonant (run → running)
 
 **Common confusable word pairs:**
 - their / there / they're
@@ -59,10 +59,10 @@ A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because
 
 ## Vocabulary y Word Formation
 
-**Etymology** is el/la study de el/la origins y historical Desarrollo de words. Many Inglés words come from Latin, Greek, French, y Germanic roots.
+**Etymology** is el study del origins y historical Desarrollo de words. Many Inglés words come from Latin, Greek, French, y Germanic roots.
 
-**Prefixes** are added to el/la beginning de words to change their meaning (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to el/la end de words (e.g., -tion, -ness, -ing, -ly).
+**Prefixes** are added to el beginning de words to change their meaning (e.g., un-, re-, pre-, mis-).
+**Suffixes** are added to el end de words (e.g., -tion, -ness, -ing, -ly).
 
 - **Synonyms**: words con similar meanings
 - **Antonyms**: words con opposite meanings
@@ -73,35 +73,35 @@ A **conjunction** connects words, phrases, or clauses (e.g., y, but, or, because
 
 Good writing is clear, concise, coherent, y engaging.
 
-- A **paragraph** should have a topic sentence (el/la main idea), supporting sentences, y a concluding sentence.
-- el/la **five-paragraph essay** structure consists de an Introducción, three body paragraphs, y a conclusion.
-- **Revision** is el/la process de improving a draft.
-- **Editing** focuses on correcting grammar, spelling, y punctuation errors.
-- **Proofreading** is el/la final check before publication.
+- A **paragraph** should have a topic sentence (el main idea), supporting sentences, y a concluding sentence.
+- el **five-paragraph essay** structure consists de an Introducción, three body paragraphs, y a conclusion.
+- **Revision** is el process de improving a draft.
+- **Editing** se centra en correcting grammar, spelling, y punctuation errors.
+- **Proofreading** is el final check before publication.
 
 ## Reading y Comprehension
 
-**Active reading** involves engaging con el/la text by asking questions, making predictions, summarizing, y making connections.
+**Active reading** involves engaging con el text by asking questions, making predictions, summarizing, y making connections.
 
-- el/la **main idea** is el/la central point de a passage.
-- Details, Ejemplos, y evidence Soporte el/la main idea.
+- el **main idea** is el central point de a passage.
+- Details, Ejemplos, y evidence Soporte el main idea.
 - **Inference** involves drawing conclusions from information that is implied but not stated directly.
 - **Context clues** are words y phrases surrounding an unfamiliar word that help determine its meaning.
 
 ## Comunicación y Rhetoric
 
-**Rhetoric** is el/la art de effective Comunicación y persuasion.
-- **Ethos** appeals to el/la credibility de el/la speaker.
+**Rhetoric** is el art de effective Comunicación y persuasion.
+- **Ethos** appeals to el credibility del speaker.
 - **Pathos** appeals to emotion.
-- **Logos** appeals to logic y reason.
+- **Logos** appeals to logic y razón.
 
-A **thesis statement** clearly expresses el/la main argument de an essay.
-**Tone** refers to el/la writer's attitude toward el/la subject y audience.
-**Register** refers to el/la level de formality en Idioma use, ranging from casual conversation to formal academic writing.
+A **thesis statement** clearly expresses el main argument de an essay.
+**Tone** refers to el writer's attitude toward el subject y audience.
+**Register** refers to el level de formality en Idioma use, ranging from casual conversation to formal academic writing.
 
 ## Subject-Verb Agreement (Expanded)
 
-One de el/la most important grammar rules en Inglés is that a subject y its verb must agree en number: a singular subject takes a singular verb, y a plural subject takes a plural verb.
+One del most important grammar rules en Inglés is that a subject y its verb must agree en number: a singular subject takes a singular verb, y a plural subject takes a plural verb.
 
 ### Gerunds as Subjects
 
@@ -119,39 +119,39 @@ A gerund (a verb used as a noun, ending en -ing) is always singular.
 ### Compound Subjects
 
 - Joined by "y": plural verb
-  - "Alice y Bob **are** here."
-  - "el/la teacher y el/la student **agree**."
+ - "Alice y Bob **are** here."
+ - "el teacher y el student **agree**."
 
-- Joined by "or"/"nor": agree con el/la subject closest to el/la verb
-  - "Neither el/la students nor el/la teacher **was** ready."
-  - "Neither el/la teacher nor el/la students **were** ready."
+- Joined by "or"/"nor": agree con el subject closest to el verb
+ - "Neither el students nor el teacher **was** ready."
+ - "Neither el teacher nor el students **were** ready."
 
 ### Collective Nouns
 
 Collective nouns (team, committee, group, family) take a singular verb en American Inglés:
-- "el/la team **is** practising."
-- "el/la committee **has** made a decision."
+- "el team **is** practising."
+- "el committee **has** made a decision."
 
 en British Inglés, plural verbs are also accepted depending on context.
 
 ### Indefinite Pronouns
 
-el/la following indefinite pronouns are **always singular**:
+el following indefinite pronouns are **always singular**:
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
 **Correct:**
 - "Everyone **is** invited."
-- "Each de el/la students **has** completed el/la assignment."
+- "Each del students **has** completed el assignment."
 
 **Incorrect:**
 - "Everyone **are** invited."
 
 ## Epistemic Honesty — Knowing When to Say "I Don't Know"
 
-**Epistemic honesty** means being truthful about el/la limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
+**Epistemic honesty** means being truthful about el limits de one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
 
-**Hallucination** is el/la tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponible knowledge y responding con an honest acknowledgement de uncertainty rather than an invented answer.
+**Hallucination** is el tendency de AI Sistemas to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside Disponible knowledge y responding con an honest acknowledgement de uncertainty rather than an invented answer.
 
 **Useful phrases para expressing uncertainty:**
 - "I'm not certain, but…"
@@ -160,4 +160,4 @@ el/la following indefinite pronouns are **always singular**:
 - "This is outside my Base de conocimientos."
 
 **para health, medical, Legal, or safety questions:**
-It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose de a substance, a treatment para a disease, or a Legal ruling without professional context can cause real harm y must be avoided.
+It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose de a substance, a treatment para a enfermedades, or a Legal ruling without professional context can cause real harm y must be avoided.

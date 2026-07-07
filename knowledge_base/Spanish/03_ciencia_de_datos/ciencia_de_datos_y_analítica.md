@@ -24,7 +24,7 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
 - **Spatial Datos**: Geographic/location-based information
 - **Graph Datos**: Nodes y edges representing relationships
 
-### el/la Datos Ciencia Process (CRISP-DM)
+### el Datos Ciencia Process (CRISP-DM)
 1. **Negocios Understanding**: Define objectives y requirements
 2. **Datos Understanding**: Collect y explore initial Datos
 3. **Datos Preparation**: Clean, transform, y format Datos (80% de work)
@@ -114,9 +114,9 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
 ### Feature Engineering
 - **Feature Creation**: Deriving new features from existing ones
 - **Feature Selection**: Choosing most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimination)
-  - Embedded methods (LASSO, tree-based importance)
+ - Filter methods (correlation, chi-square)
+ - Wrapper methods (recursive feature elimination)
+ - Embedded methods (LASSO, tree-based importance)
 - **Dimensionality Reduction**: PCA, t-SNE, UMAP
 - **Interaction Terms**: Combining features multiplicatively
 - **Polynomial Features**: Creating higher-order terms
@@ -153,40 +153,40 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
 
 ### Supervised Learning
 - **Regression**: Predict continuous values
-  - Linear Regression
-  - Polynomial Regression
-  - Ridge/LASSO/Elastic Net
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - Gradient Boosting (XGBoost, LightGBM, CatBoost)
-  
+ - Linear Regression
+ - Polynomial Regression
+ - Ridge/LASSO/Elastic Net
+ - Decision Tree Regressor
+ - Random Forest Regressor
+ - Gradient Boosting (XGBoost, LightGBM, CatBoost)
+ 
 - **Classification**: Predict categorical labels
-  - Logistic Regression
-  - k-Nearest Neighbors
-  - Naive Bayes
-  - Soporte Vector Machines
-  - Decision Trees
-  - Random Forest
-  - Gradient Boosting
-  - Redes neuronales
+ - Logistic Regression
+ - k-Nearest Neighbors
+ - Naive Bayes
+ - Soporte Vector Machines
+ - Decision Trees
+ - Random Forest
+ - Gradient Boosting
+ - Redes neuronales
 
 ### Unsupervised Learning
 - **Clustering**: Group similar observations
-  - k-Means
-  - Hierarchical Clustering
-  - DBSCAN (density-based)
-  - Gaussian Mixture Models
-  - Spectral Clustering
-  
+ - k-Means
+ - Hierarchical Clustering
+ - DBSCAN (density-based)
+ - Gaussian Mixture Models
+ - Spectral Clustering
+ 
 - **Dimensionality Reduction**: Reduce feature count
-  - Principal Component Analysis (PCA)
-  - t-Distributed Stochastic Neighbor Embedding (t-SNE)
-  - Uniform Manifold Approximation (UMAP)
-  - Autoencoders
-  
+ - Principal Component Analysis (PCA)
+ - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+ - Uniform Manifold Approximation (UMAP)
+ - Autoencoders
+ 
 - **Association Rules**: Find co-occurring items
-  - Apriori Algorithm
-  - FP-Growth
+ - Apriori Algorithm
+ - FP-Growth
 
 ### Model Evaluation
 - **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
@@ -200,10 +200,10 @@ Datos Ciencia is an interdisciplinary field that uses scientific methods, proces
 ### Distributed Informática Frameworks
 - **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
 - **Apache Spark**: en-memory processing, faster than Hadoop
-  - Spark SQL: Structured Datos processing
-  - Spark Streaming: Real-time Datos
-  - MLlib: Aprendizaje automático library
-  - GraphX: Graph processing
+ - Spark SQL: Structured Datos processing
+ - Spark Streaming: Real-time Datos
+ - MLlib: Aprendizaje automático library
+ - GraphX: Graph processing
 - **Apache Flink**: Stream processing con low latency
 - **Apache Beam**: Unified batch y streaming
 

@@ -53,31 +53,31 @@ Entrega bajo demanda de recursos informáticos (servidores, almacenamiento, base
 ### Amazon Web Services (AWS)
 - **Market Share**: ~32% (largest provider)
 - **Key Services**:
-  - Compute: EC2, Lambda, ECS, EKS
-  - Storage: S3, EBS, Glacier
-  - Base de datos: RDS, DynamoDB, Aurora
-  - Networking: VPC, Route 53, CloudFront
-  - AI/ML: SageMaker, Rekognition, Comprehend
+ - Compute: EC2, Lambda, ECS, EKS
+ - Storage: S3, EBS, Glacier
+ - Base de datos: RDS, DynamoDB, Aurora
+ - Networking: VPC, Route 53, CloudFront
+ - AI/ML: SageMaker, Rekognition, Comprehend
 
 ### Microsoft Azure
 - **Market Share**: ~23%
 - **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
 - **Key Services**:
-  - Compute: Virtual Machines, Azure Functions, AKS
-  - Storage: Blob Storage, Disk Storage
-  - Base de datos: SQL Base de datos, Cosmos DB
-  - Networking: Virtual Red, Traffic Manager
-  - AI/ML: Azure ML, Cognitive Services
+ - Compute: Virtual Machines, Azure Functions, AKS
+ - Storage: Blob Storage, Disk Storage
+ - Base de datos: SQL Base de datos, Cosmos DB
+ - Networking: Virtual Red, Traffic Manager
+ - AI/ML: Azure ML, Cognitive Services
 
 ### Google Cloud Platform (GCP)
 - **Market Share**: ~10%
 - **Strengths**: Datos analytics, AI/ML, Kubernetes
 - **Key Services**:
-  - Compute: Compute Engine, Cloud Functions, GKE
-  - Storage: Cloud Storage, Persistent Disk
-  - Base de datos: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dataflow, Pub/Sub
-  - AI/ML: Vertex AI, AutoML
+ - Compute: Compute Engine, Cloud Functions, GKE
+ - Storage: Cloud Storage, Persistent Disk
+ - Base de datos: Cloud SQL, Firestore, Bigtable
+ - Analytics: BigQuery, Dataflow, Pub/Sub
+ - AI/ML: Vertex AI, AutoML
 
 ### Other Providers
 - **IBM Cloud**: Enterprise focus, Watson AI
@@ -259,11 +259,11 @@ Entrega bajo demanda de recursos informáticos (servidores, almacenamiento, base
 - **Direct Connect/ExpressRoute**: Dedicated private connections
 - **VPC Peering**: Connect VPCs within/between accounts
 
-## Seguridad en el/la Cloud
+## Seguridad en el Cloud
 
 ### Shared Responsibility Model
-- **Provider Responsibility**: Seguridad de el/la cloud (infrastructure)
-- **Customer Responsibility**: Seguridad en el/la cloud (Datos, applications, access)
+- **Provider Responsibility**: Seguridad del cloud (infrastructure)
+- **Customer Responsibility**: Seguridad en el cloud (Datos, applications, access)
 - **Varies By Service**: More managed = more provider responsibility
 
 ### Identity y Access Gestión (IAM)
@@ -290,7 +290,7 @@ Entrega bajo demanda de recursos informáticos (servidores, almacenamiento, base
 - **Tools**: Policy enforcement, compliance reporting, audit logs
 - **Frameworks**: Cloud Seguridad Alliance, NIST CSF
 
-## DevOps en el/la Cloud
+## DevOps en el Cloud
 
 ### CI/CD Services
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
@@ -387,7 +387,7 @@ Entrega bajo demanda de recursos informáticos (servidores, almacenamiento, base
 ### AI/ML Services
 - Pre-trained models: Vision, speech, Idioma
 - Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model Implementación, monitoring, governance
+- MLOps: Model Implementación, monitoring, gobernanza
 
 ### Quantum Informática
 - **Services**: AWS Braket, Azure Quantum
