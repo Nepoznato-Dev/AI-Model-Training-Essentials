@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## その Solar System
 
-その solar system consists の その Sun と eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, と Neptune. Earth is その third planet from その Sun, located approximately 150 million kilometers away. その Sun is a star at その center の その solar system that provides light と energy to all planets through nuclear fusion. Jupiter is その largest planet, と a mass greater than all other planets combined. Saturn is known のために its prominent ring system made の ice と rock. Mars is called その Red Planet because の iron oxide on its surface. Neptune is その farthest planet from その Sun.
+その solar system consists の Sun と eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, と Neptune. Earth is その third planet from その Sun, located approximately 150 million kilometers away. その Sun is a star at その center の solar system that provides light と energy to all planets through nuclear fusion. Jupiter is その largest planet, と a mass greater than all other planets combined. Saturn is known のために its prominent ring system made の ice と rock. Mars is called その Red Planet because の iron oxide on its surface. Neptune is その farthest planet from その Sun.
 
 ## Earth
 
@@ -21,7 +21,7 @@ Weather refers to short-term atmospheric conditions で a specific location, inc
 
 ## Oceans
 
-Earth has five oceans: その Pacific, Atlantic, Indian, Southern, と Arctic. その Pacific Ocean is その largest, covering more than 165 million square kilometers, と その deepest, と その Mariana Trench reaching approximately 11 kilometers deep. その oceans cover about 361 million square kilometers で total. その average depth の その ocean is approximately 3,688 meters. その oceans regulate Earth's temperature と are home to その majority の life on その planet.
+Earth has five oceans: その Pacific, Atlantic, Indian, Southern, と Arctic. その Pacific Ocean is その largest, covering more than 165 million square kilometers, と その deepest, と その Mariana Trench reaching approximately 11 kilometers deep. その oceans cover about 361 million square kilometers で total. その average depth の ocean is approximately 3,688 meters. その oceans regulate Earth's temperature と are home to その majority の life on その planet.
 
 ## Continents
 

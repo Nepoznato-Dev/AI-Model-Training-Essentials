@@ -13,7 +13,7 @@ A corporation is a 法的 entity separate from its owners, providing limited lia
 
 ## Marketing 基礎
 
-Marketing is その process の promoting, selling, と distributing products or services. その marketing mix consists の その 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), と Promotion (how you advertise it). Market segmentation divides customers into groups based on demographics, 地理, behavior, or psychographics. Brand identity is その visible elements の a brand (logo, colors, design) that distinguish it from competitors. Customer acquisition cost (CAC) is その expense incurred to acquire a new customer. Customer lifetime value (CLV) estimates その total revenue a ビジネス can expect from a single customer account.
+Marketing は products や services の promoting, selling, distributing を行う process です。marketing mix はその 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), Promotion (how you advertise it) から構成されます。Market segmentation は customers を demographics, 地理, behavior, psychographics に基づいてグループ分けします。Brand identity は logo, colors, design など、競合他社と差別化を図る brand の visible elements です。Customer acquisition cost (CAC) は新規顧客を獲得するためにかかる expense です。Customer lifetime value (CLV) は、1 つの顧客アカウントからビジネスが期待できる total revenue を推定したものです。
 
 ## Accounting 基本
 
@@ -25,7 +25,7 @@ Accounting is その systematic recording, reporting, と analysis の financial
 
 ## Economic Indicators
 
-Gross Domestic Product (GDP) measures その total value の goods と services produced で a country. Inflation is その rate at which prices rise over time, reducing purchasing power. その Consumer Price Index (CPI) measures changes で その price level の consumer goods と services. Unemployment rate is その percentage の その labor force that is jobless と actively seeking employment. Interest rates, set by central banks, influence borrowing costs と economic activity. その Federal Reserve (US), European Central Bank (ECB), と Bank の England are major central banks. Recession is typically defined as two consecutive quarters の negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
+Gross Domestic Product (GDP) は、ある国で生産された goods と services の total value を測定する指標です。Inflation は時間とともに物価が上昇し、購買力を低下させる rate です。Consumer Price Index (CPI) は consumer goods と services の price level の変化を測定します。Unemployment rate は、労働力の中で jobless で actively seeking employment している人の percentage です。Interest rates は中央銀行によって設定され、borrowing costs や経済活動に影響を与えます。Federal Reserve (US)、European Central Bank (ECB)、Bank of England は主要な中央銀行です。Recession は通常、2 四半期連続の negative GDP growth として定義されます。Bull markets は株価の上昇を示し、bear markets は株価の下落を示します。
 
 ## Supply Chain と Operations
 

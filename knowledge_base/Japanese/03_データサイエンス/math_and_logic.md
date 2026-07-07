@@ -22,9 +22,9 @@ Arithmetic is その branch の mathematics dealing と basic operations on numb
 
 ## Algebra
 
-Algebra uses letters と symbols to represent numbers と quantities で equations と formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding その value(s) の その variable(s) that make その equation true.
+Algebra uses letters と symbols to represent numbers と quantities で equations と formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding その value(s) の variable(s) that make その equation true.
 
-その **quadratic formula** solves equations の その form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
+その **quadratic formula** solves equations の form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
 
 A **function** maps each input to exactly one output. Common functions include:

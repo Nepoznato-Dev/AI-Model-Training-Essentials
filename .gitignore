@@ -1,3 +1,4 @@
+```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
@@ -9,9 +10,6 @@ __pycache__/
 *.so
 *.a
 *.out
-dist/
-build/
-target/
 
 # Dependencies
 .venv/
@@ -19,6 +17,9 @@ venv/
 node_modules/
 .mypy_cache/
 .pytest_cache/
+dist/
+build/
+target/
 .gradle/
 
 # Logs and temp files
@@ -30,15 +31,17 @@ node_modules/
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
 # Editors
 .vscode/
 .idea/
 
-# System files
+# System
 .DS_Store
 Thumbs.db
+
+# Coverage
 coverage/
 htmlcov/
 .coverage
@@ -66,3 +69,4 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+```

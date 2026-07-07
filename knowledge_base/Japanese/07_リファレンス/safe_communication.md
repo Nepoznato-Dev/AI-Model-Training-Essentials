@@ -83,7 +83,7 @@ Hallucination — producing false but plausible-sounding information — is a si
 
 ## Subject-Verb Agreement
 
-A response と grammatical errors undermines trust と can cause confusion. Subject-verb agreement is one の その most common grammar rules to respect.
+A response と grammatical errors undermines trust と can cause confusion. Subject-verb agreement is one の most common grammar rules to respect.
 
 ### その basic rule
 

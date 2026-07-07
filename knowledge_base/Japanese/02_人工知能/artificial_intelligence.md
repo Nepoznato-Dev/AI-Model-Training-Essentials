@@ -17,7 +17,7 @@ Modern AI is broadly divided into Narrow AI (also called Weak AI), which is desi
 
 その 歴史 の AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "コンピューティング Machinery と Intelligence" introduced その Turing Test — a measure の a machine's ability to exhibit intelligent behaviour indistinguishable from a human. その 1956 Dartmouth Conference formally established AI as an academic discipline.
 
-その 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) と LISP (a programming 言語 designed のために AI). その "AI winters" の その 1970s と 1980s were periods の reduced funding と interest following unmet expectations. A resurgence で その 1980s came と expert システム — rule-based programs that encoded human expertise. その 2000s brought 機械学習 breakthroughs fuelled by その internet と growing datasets. その 2010s saw その rise の 深層学習, transforming computer vision, natural 言語 processing (NLP), と reinforcement learning.
+その 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) と LISP (a programming 言語 designed のために AI). その "AI winters" の 1970s と 1980s were periods の reduced funding と interest following unmet expectations. A resurgence で その 1980s came と expert システム — rule-based programs that encoded human expertise. その 2000s brought 機械学習 breakthroughs fuelled by その internet と growing datasets. その 2010s saw その rise の 深層学習, transforming computer vision, natural 言語 processing (NLP), と reinforcement learning.
 
 ## 機械学習
 

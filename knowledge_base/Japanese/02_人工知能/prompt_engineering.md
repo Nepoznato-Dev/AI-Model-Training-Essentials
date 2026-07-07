@@ -50,7 +50,7 @@ System: You are a helpful coding assistant. You reply と concise code 例 と b
 User: Write a Python function to download a file from a URL.
 
 ### Few-Shot Prompting
-Provide 2–3 例 の その desired input-output format before asking その model to perform その task. This teaches その pattern.
+Provide 2–3 例 の desired input-output format before asking その model to perform その task. This teaches その pattern.
 
 **Example:**
 User: Convert these sentences to passive voice:
@@ -111,7 +111,7 @@ Assign a specific persona to frame その response.
 - **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 のために factual answers; 0.7–1.0 のために creative writing.
 - **Top-p** (nucleus sampling): Cuts off その probability mass at a certain cumulative threshold. 0.9 means その model samples from その top 90% の likely tokens. Usually adjust either temperature or top-p, not both.
 - **Max tokens**: Sets その maximum output length. Remember to reserve space のために その response within その context window.
-- **Frequency penalty**: Reduces repetition の その same tokens.
+- **Frequency penalty**: Reduces repetition の same tokens.
 - **Presence penalty**: Encourages その model to introduce new topics.
 
 ---
