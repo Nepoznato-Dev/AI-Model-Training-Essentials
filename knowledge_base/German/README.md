@@ -2,12 +2,12 @@
 This file was automatically translated from English to German.
 Source: README.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Englische Wissensdatenbank
 
-Eine umfassende Sammlung von Referenzdokumenten covering Technologie, Wissenschaft, Wirtschaft, Geisteswissenschaften und praktische Fähigkeiten.
+Eine umfassende Sammlung von Referenzdokumenten, die Technologie, Wissenschaft, Wirtschaft, Geisteswissenschaften und praktische Fähigkeiten abdecken.
 
 **Zuletzt aktualisiert:** Juni 2025  
 **Gesamtdateien:** 34+ Markdown-Dokumente  

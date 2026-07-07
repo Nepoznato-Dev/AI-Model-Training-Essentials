@@ -1,32 +1,32 @@
 <!-- 
-This file was automatically translated from English to German.
-Source: dictionary.md
-Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Diese Datei wurde automatisch aus dem Englischen ins Deutsche übersetzt.
+Quelle: dictionary.md
+Hinweis: Technische Begriffe, Codebeispiele und Eigennamen können auf Englisch bleiben.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Englisch Wörterbuch — Common Word Definitions
+# Englisch-Wörterbuch — Häufige Wortdefinitionen
 
-A Referenz list von frequently used Englisch words und their meanings,
-covering everyday vocabulary, academic terms, und words commonly encountered
-in questions und discussions.
+Eine Referenzliste von häufig verwendeten englischen Wörtern und ihren Bedeutungen,
+die alltägliches Vokabular, akademische Begriffe und Wörter abdeckt, die häufig in
+Fragen und Diskussionen vorkommen.
 
 ---
 
 ## A
 
 **abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — der/die/das power or skill to do something.
+**ability** — das power or skill to do something.
 **abstract** — existing as a concept rather than a concrete thing; a summary von a document.
 **accurate** — correct und precise; free from errors.
 **achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit der/die/das truth von something; to show recognition.
+**acknowledge** — to accept or admit das truth von something; to show recognition.
 **acquire** — to obtain or gain something, usually through effort or purchase.
 **adapt** — to adjust to new conditions or requirements.
 **adequate** — satisfactory; just enough für a purpose.
 **adjacent** — next to or adjoining something else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead von der/die/das current time.
+**advance** — to move forward; progress; also, ahead von das current time.
 **advantage** — a condition that gives a favourable position over others.
 **adverse** — unfavourable; harmful.
 **affect** — to have an impact on something (verb); emotion (noun, formal).
@@ -41,7 +41,7 @@ in questions und discussions.
 **apparent** — clearly visible or understood; seeming to be true.
 **approach** — a way von dealing mit something; to come near.
 **approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge der/die/das quality, value, or Natur von something.
+**assess** — to evaluate or judge das quality, value, or Natur von something.
 **assign** — to give a task or role to someone; to allocate.
 **assume** — to accept something as true without proof.
 **attribute** — a quality or feature; to credit something to a cause (verb).
@@ -56,8 +56,8 @@ in questions und discussions.
 ## C
 
 **calculate** — to determine a value using mathematics.
-**capable** — having der/die/das ability or qualities needed für something.
-**capacity** — der/die/das maximum amount something can hold or do.
+**capable** — having das ability or qualities needed für something.
+**capacity** — das maximum amount something can hold or do.
 **categorise** — to place into groups based on shared characteristics.
 **clarify** — to make something easier to understand.
 **classify** — to arrange into categories or groups.
@@ -72,10 +72,10 @@ in questions und discussions.
 **conclude** — to reach a decision or finish something.
 **condition** — a requirement; a state von being; circumstances.
 **configure** — to arrange or set up a system in a particular way.
-**confirm** — to establish der/die/das truth or accuracy von something.
+**confirm** — to establish das truth or accuracy von something.
 **conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving in der/die/das same way; not contradictory.
-**context** — der/die/das circumstances surrounding something; background information.
+**consistent** — always behaving in das same way; not contradictory.
+**context** — das circumstances surrounding something; background information.
 **contrast** — to compare in order to show differences.
 **convert** — to change from one form, unit, or use to another.
 **coordinate** — to organise different elements to work together.
@@ -85,7 +85,7 @@ in questions und discussions.
 
 **Daten** — facts und Statistiken collected für analysis.
 **debug** — to find und fix errors in computer code.
-**define** — to give der/die/das meaning von a word or describe der/die/das limits von something.
+**define** — to give das meaning von a word or describe das limits von something.
 **demonstrate** — to show how something works or is done.
 **deploy** — to put into use; to install und run software in a live environment.
 **derive** — to obtain something from a source; to reach a conclusion by reasoning.
@@ -100,13 +100,13 @@ in questions und discussions.
 ## E
 
 **efficient** — achieving results mit minimum waste von time or resources.
-**element** — a basic component; one von der/die/das chemical substances in der/die/das periodic table.
+**element** — a basic component; one von das chemical substances in das periodic table.
 **embed** — to fix firmly within; to incorporate into a larger structure.
 **enable** — to make possible; to activate a feature.
-**enhance** — to improve der/die/das quality or value von something.
+**enhance** — to improve das quality or value von something.
 **entity** — a thing mit distinct existence; an object in a system.
 **enumerate** — to list items one by one; to count.
-**environment** — surroundings; in Datenverarbeitung, der/die/das system und configuration in which software runs.
+**environment** — surroundings; in Datenverarbeitung, das system und configuration in which software runs.
 **error** — a mistake; a deviation from correct behaviour.
 **estimate** — an approximate calculation; to judge roughly.
 **evaluate** — to form an opinion after careful consideration.
@@ -121,15 +121,15 @@ in questions und discussions.
 **feature** — a distinctive aspect or capability.
 **filter** — to remove unwanted elements; a device or function that selects items.
 **flexible** — able to adapt to different conditions.
-**format** — der/die/das arrangement or layout von Daten; to prepare für use.
+**format** — das arrangement or layout von Daten; to prepare für use.
 **framework** — a basic structure providing Support für building something.
-**function** — der/die/das purpose von something; a reusable block von code (programming).
-**fundamental** — forming der/die/das base or foundation; essential.
+**function** — das purpose von something; a reusable block von code (programming).
+**fundamental** — forming das base or foundation; essential.
 
 ## G
 
 **generate** — to produce or create.
-**global** — relating to der/die/das whole world; applying to an entire system.
+**global** — relating to das whole world; applying to an entire system.
 **guideline** — a general rule or recommendation.
 
 ## H
@@ -148,7 +148,7 @@ in questions und discussions.
 **input** — Daten provided to a system; to enter Daten.
 **integrate** — to combine parts into a whole; to add a feature to an existing system.
 **interface** — a point where two Systeme meet und interact; a contract in programming.
-**interpret** — to explain der/die/das meaning von something; to execute code line by line.
+**interpret** — to explain das meaning von something; to execute code line by line.
 **iterate** — to repeat a process, often mit incremental changes.
 
 ## J
@@ -162,12 +162,12 @@ in questions und discussions.
 ## L
 
 **layer** — a level in a hierarchy; a component stacked on others.
-**legacy** — inherited from der/die/das past; old software still in use.
-**limit** — a boundary; der/die/das maximum or minimum value allowed.
+**legacy** — inherited from das past; old software still in use.
+**limit** — a boundary; das maximum or minimum value allowed.
 **linear** — arranged in a straight line; proportional increase.
 **link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; in Datenverarbeitung, running on der/die/das same machine.
-**logic** — reasoning according to rules; der/die/das flow von control in a program.
+**local** — relating to a nearby area; in Datenverarbeitung, running on das same machine.
+**logic** — reasoning according to rules; das flow von control in a program.
 
 ## M
 
@@ -192,7 +192,7 @@ in questions und discussions.
 **objective** — a goal or aim; not influenced by personal feelings (adjective).
 **obtain** — to get or acquire.
 **optimise** — to make as effective or efficient as possible.
-**output** — Daten produced by a system; der/die/das result von a computation.
+**output** — Daten produced by a system; das result von a computation.
 **override** — to take control over an existing setting or method.
 
 ## P
@@ -201,10 +201,10 @@ in questions und discussions.
 **parse** — to analyse text into components; to interpret structured Daten.
 **pattern** — a repeated arrangement; a template für solving a common problem.
 **persist** — to continue to exist; to save Daten so it survives restarts.
-**pipeline** — a series von connected stages where der/die/das output von one feeds der/die/das next.
+**pipeline** — a series von connected stages where das output von one feeds das next.
 **precise** — exact; accurate to fine detail.
 **predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance und address der/die/das most important first.
+**prioritise** — to rank tasks by importance und address das most important first.
 **process** — a series von steps; a running program instance (verb: to handle or transform).
 **prompt** — a cue or instruction given to an AI model or user.
 **property** — a characteristic or attribute; a value belonging to an object.
@@ -221,7 +221,7 @@ in questions und discussions.
 **redundant** — unnecessary because it duplicates existing functionality; extra für backup.
 **refactor** — to restructure existing code without changing its external behaviour.
 **Referenz** — a pointer to a value; a source cited für information.
-**relevant** — closely connected to der/die/das topic at hand.
+**relevant** — closely connected to das topic at hand.
 **render** — to produce output (graphics, text, or HTML).
 **represent** — to stand für or describe something.
 **requirement** — a necessary condition or feature.
@@ -232,21 +232,21 @@ in questions und discussions.
 ## S
 
 **scalable** — able to handle increased workload without degrading Leistung.
-**schema** — der/die/das structure or layout von a Datenbank or Daten format.
-**scope** — der/die/das range von effect; der/die/das section von code where a variable is visible.
+**schema** — das structure or layout von a Datenbank or Daten format.
+**scope** — das range von effect; das section von code where a variable is visible.
 **segment** — a distinct section or part.
 **semantic** — relating to meaning, especially in Sprache or code.
 **sequence** — a set von things in a particular order.
 **session** — a period von activity; a connection between client und server.
-**simulate** — to imitate der/die/das behaviour von a system.
-**source** — der/die/das origin von something; original code before compilation.
+**simulate** — to imitate das behaviour von a system.
+**source** — das origin von something; original code before compilation.
 **specify** — to state clearly und in detail.
 **static** — not changing; in Datenverarbeitung, fixed at compile time or not associated mit instances.
 **store** — to save Daten für later use.
-**structure** — der/die/das arrangement von parts; a composite Daten type.
-**summarise** — to give a brief statement von der/die/das main points.
-**synchronise** — to cause to happen at der/die/das same time or rate.
-**Syntax** — der/die/das rules governing der/die/das structure von statements in a Sprache.
+**structure** — das arrangement von parts; a composite Daten type.
+**summarise** — to give a brief statement von das main points.
+**synchronise** — to cause to happen at das same time or rate.
+**Syntax** — das rules governing das structure von statements in a Sprache.
 
 ## T
 
@@ -260,7 +260,7 @@ in questions und discussions.
 ## U
 
 **uniform** — consistent und unchanged throughout.
-**unique** — der/die/das only one von its kind; occurring just once.
+**unique** — das only one von its kind; occurring just once.
 **update** — to bring to a more current state.
 **utilise** — to make use von something.
 
@@ -282,7 +282,7 @@ in questions und discussions.
 
 ## Y
 
-**yield** — to produce or provide; to give way; der/die/das amount produced.
+**yield** — to produce or provide; to give way; das amount produced.
 
 ## Z
 
@@ -306,14 +306,14 @@ in questions und discussions.
 **archetype** — an original model or typical example von something.
 **artifact** — an object made by humans; in Datenverarbeitung, an unintended byproduct von processing.
 **assertion** — a confident statement; in programming, a check that a condition is true.
-**asynchronous** — not occurring at der/die/das same time; allowing operations to proceed without waiting.
+**asynchronous** — not occurring at das same time; allowing operations to proceed without waiting.
 **attenuate** — to reduce in force, value, or intensity.
 **axiom** — a statement accepted as true without proof; a fundamental principle.
 
 **backpropagation** — an algorithm für training Neuronale Netze by propagating errors backward.
-**bandwidth** — der/die/das range von frequencies Verfügbar; Daten transfer capacity.
+**bandwidth** — das range von frequencies Verfügbar; Daten transfer capacity.
 **binary** — consisting von two parts; base-2 number system using 0s und 1s.
-**bit** — der/die/das smallest unit von Daten (0 or 1); short für binary digit.
+**bit** — das smallest unit von Daten (0 or 1); short für binary digit.
 **blockchain** — a distributed ledger Technologie recording transactions across multiple computers.
 **boolean** — relating to logic mit values true or false; named after George Boole.
 **bottleneck** — a point von congestion slowing down a process or system.
@@ -321,10 +321,10 @@ in questions und discussions.
 
 **cache** — a hardware or software component storing Daten für faster Zukunft access.
 **calibrate** — to adjust precisely für accurate measurement or Leistung.
-**cascade** — a series von stages where each triggers der/die/das next; waterfall effect.
+**cascade** — a series von stages where each triggers das next; waterfall effect.
 **catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — der/die/das relationship between cause und effect.
-**centroid** — der/die/das geometric center von a shape; average position von points.
+**causality** — das relationship between cause und effect.
+**centroid** — das geometric center von a shape; average position von points.
 **checksum** — a value computed from Daten to detect errors or tampering.
 **cipher** — an algorithm für encryption or decryption; a secret code.
 **coalesce** — to come together to form one whole.
@@ -332,7 +332,7 @@ in questions und discussions.
 **cohort** — a group sharing a common characteristic or experience within a defined period.
 **collateral** — assets pledged as Sicherheit für a loan; secondary or accompanying.
 **colloquial** — informal Sprache used in ordinary conversation.
-**combinatorics** — der/die/das branch von mathematics dealing mit combinations und permutations.
+**combinatorics** — das branch von mathematics dealing mit combinations und permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
 **concurrency** — multiple computations happening during overlapping periods.
 **conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
@@ -347,43 +347,43 @@ in questions und discussions.
 **daisy-chain** — to connect devices or tasks in a sequential series.
 **deconvolution** — reversing convolution; separating mixed signals or images.
 **deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — der/die/das act von throwing someone out von a window.
+**defenestration** — das act von throwing someone out von a window.
 **deictic** — referring to something by pointing (this, that, here, there).
 **demographic** — statistical Daten about populations or groups.
-**denotation** — der/die/das literal or primary meaning von a word.
+**denotation** — das literal or primary meaning von a word.
 **deprecated** — marked as obsolete but still functional; discouraged from use.
 **derivative** — a measure von rate von change (calculus); derived from something else.
-**deterministic** — producing der/die/das same output given der/die/das same input; predictable.
+**deterministic** — producing das same output given das same input; predictable.
 **diachronic** — studying phenomena as they change over time.
 **didactic** — intended to teach, particularly mit moral instruction.
-**diffraction** — der/die/das bending von waves around obstacles or through openings.
+**diffraction** — das bending von waves around obstacles or through openings.
 **digraph** — two characters representing one sound (sh, ch, th).
 **disambiguate** — to remove ambiguity; make something clearer.
 **discrete** — separate und distinct; individual (opposite von continuous).
 **disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — der/die/das process von separating or moving apart.
+**divergence** — das process von separating or moving apart.
 **docstring** — documentation embedded in source code explaining function purpose.
 
 **eccentric** — unconventional or slightly strange; off-center.
 **eclectic** — selecting from diverse sources or styles.
 **edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament für der/die/das dead.
+**elegy** — a mournful poem or lament für das dead.
 **elide** — to omit or slur over sounds or syllables.
 **ellipsis** — omission von words; three dots (...) indicating continuation or pause.
 **embargo** — an official ban on trade or publication.
-**empathy** — der/die/das ability to understand und share others' feelings.
+**empathy** — das ability to understand und share others' feelings.
 **empirical** — based on observation or experience rather than theory.
 **emulate** — to imitate or match, especially in Datenverarbeitung (software emulation).
 **endemic** — native or restricted to a particular region; constantly present.
 **ephemeral** — lasting für a very short time; temporary.
-**epistemology** — der/die/das study von knowledge, its Natur und scope.
+**epistemology** — das study von knowledge, its Natur und scope.
 **epoch** — a significant period in Geschichte; in ML, one pass through training Daten.
 **equilibrium** — a state von balance between opposing forces.
-**equivocate** — to use ambiguous Sprache to conceal der/die/das truth.
+**equivocate** — to use ambiguous Sprache to conceal das truth.
 **ergodic** — having statistical properties uniform throughout; random yet representative.
 **esoteric** — intended für or understood by a small, specialized group.
-**ethnography** — der/die/das systematic study von people und cultures through observation.
-**etymology** — der/die/das study von word origins und historical Entwicklung.
+**ethnography** — das systematic study von people und cultures through observation.
+**etymology** — das study von word origins und historical Entwicklung.
 **euphemism** — a mild expression substituting für a harsh or unpleasant one.
 **evanescent** — fleeting; vanishing like vapor.
 **exacerbate** — to make a problem worse.
@@ -394,7 +394,7 @@ in questions und discussions.
 **exponential** — involving exponentiation; growth accelerating over time.
 **extrapolate** — to estimate beyond known Daten by extending trends.
 
-**facade** — der/die/das front von a building; a deceptive outward appearance.
+**facade** — das front von a building; a deceptive outward appearance.
 **fallacy** — a mistaken belief; flawed reasoning in argument.
 **falsifiable** — capable von being proven false; a criterion für scientific claims.
 **Rückmeldung loop** — a system where outputs influence inputs, amplifying or stabilizing.
@@ -404,15 +404,15 @@ in questions und discussions.
 **formalism** — strict adherence to rules or forms; emphasis on structure.
 **fortuitous** — happening by chance; lucky.
 **fractal** — a self-similar pattern repeating at different scales.
-**frequency** — der/die/das rate von occurrence; number von cycles per second (Hertz).
+**frequency** — das rate von occurrence; number von cycles per second (Hertz).
 **full-stack** — involving both front-end und back-end Entwicklung.
 
 **garrulous** — excessively talkative, especially about trivial matters.
 **gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — der/die/das study von family lineages und descent.
+**genealogy** — das study von family lineages und descent.
 **generic** — general rather than specific; lacking brand identification.
 **genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than der/die/das sum von its parts.
+**gestalt** — an organized whole perceived as more than das sum von its parts.
 **gibberish** — unintelligible or meaningless speech or writing.
 **granular** — composed von small particles; detailed und fine-grained.
 **graph** — a diagram showing relationships; a Daten structure mit nodes und edges.
@@ -422,7 +422,7 @@ in questions und discussions.
 **halcyon** — calm und peaceful; prosperous und happy.
 **haplotype** — a set von DNA variations inherited together.
 **hegemony** — dominance or leadership, especially von one state over others.
-**hermeneutics** — der/die/das theory und methodology von interpretation.
+**hermeneutics** — das theory und methodology von interpretation.
 **heuristic** — a practical method not guaranteed optimal; a rule von thumb.
 **hologram** — a 3D image created by laser interference patterns.
 **homogeneous** — uniform in composition or character.
@@ -431,13 +431,13 @@ in questions und discussions.
 **homonym** — words mit same spelling or pronunciation but different meanings.
 **hyperbole** — deliberate exaggeration für effect.
 **hyperparameter** — a configuration setting für Maschinelles Lernen models set before training.
-**hypertext** — text containing links to other texts; foundational to der/die/das Web.
+**hypertext** — text containing links to other texts; foundational to das Web.
 **hypothesize** — to propose an explanation as a starting point für investigation.
 
 **iconoclast** — one who attacks cherished beliefs or institutions.
 **idiom** — a phrase whose meaning cannot be deduced from individual words.
 **idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing der/die/das same result regardless von how many times applied.
+**idempotent** — producing das same result regardless von how many times applied.
 **igneous** — rock formed from cooled magma or lava.
 **immutable** — unchanging over time; unable to be modified.
 **impedance** — opposition to alternating current; metaphorically, resistance to flow.
@@ -454,8 +454,8 @@ in questions und discussions.
 **inoculate** — to vaccinate; introduce an idea or attitude gradually.
 **insidious** — proceeding subtly but harmfully.
 **instantiation** — creating a specific instance von a class or concept.
-**intentionality** — der/die/das quality von being about something; directedness von consciousness.
-**interoperability** — der/die/das ability von Systeme to work together seamlessly.
+**intentionality** — das quality von being about something; directedness von consciousness.
+**interoperability** — das ability von Systeme to work together seamlessly.
 **interpolate** — to estimate values between known Daten points.
 **introspection** — examining one's own thoughts und feelings; in code, examining types at runtime.
 **invariant** — unchanging; a condition that remains constant during execution.
@@ -467,20 +467,20 @@ in questions und discussions.
 **juxtapose** — to place side by side für comparison or contrast.
 
 **kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — der/die/das core von an operating system; a seed; in ML, a function transforming Daten.
+**kernel** — das core von an operating system; a seed; in ML, a function transforming Daten.
 **kinetic** — relating to motion; active rather than static.
 **kiosk** — a small booth für information or sales; a locked-down computer terminal.
 
 **lacuna** — a gap or missing part, especially in a manuscript.
 **latency** — delay between stimulus und response; in networking, time für Daten to travel.
 **latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — der/die/das vocabulary von a Sprache or field; a Wörterbuch.
+**lexicon** — das vocabulary von a Sprache or field; a Wörterbuch.
 **liability** — Rechtlich responsibility; a disadvantage; debts owed.
 **linear regression** — a statistical method modeling linear relationships between variables.
 **lingua franca** — a common Sprache used between speakers von different native languages.
 **literal** — taking words in their usual sense; not figurative.
 **litmus test** — a decisive test revealing true Natur or quality.
-**locus** — der/die/das set von points satisfying a condition; a center von activity.
+**locus** — das set von points satisfying a condition; a center von activity.
 **loquacious** — very talkative.
 **lucid** — clear und easy to understand; mentally sharp.
 **lumen** — a unit von luminous flux; light output.
@@ -489,9 +489,9 @@ in questions und discussions.
 **macro** — a large-scale view; a rule specifying pattern replacement.
 **malapropism** — mistaken use von a word in place von a similar-sounding one.
 **manifest** — obvious; a list von cargo or passengers; to display or show.
-**mantissa** — der/die/das significant digits von a floating-point number.
+**mantissa** — das significant digits von a floating-point number.
 **mapreduce** — a programming model für processing large datasets in parallel.
-**marginal** — minimal; at der/die/das edge; additional or incremental.
+**marginal** — minimal; at das edge; additional or incremental.
 **markup** — text formatting codes (HTML, XML); price increase.
 **matrix** — a rectangular array von numbers; environment or surroundings.
 **maxim** — a short statement expressing a general truth or rule von conduct.
@@ -505,13 +505,13 @@ in questions und discussions.
 **microservice** — a small, independent service in a distributed Architektur.
 **millisecond** — one thousandth von a second.
 **mnemonic** — a memory aid or device.
-**modality** — der/die/das mode or form von something; sensory channel.
+**modality** — das mode or form von something; sensory channel.
 **model** — a representation; in ML, a trained system making predictions.
 **modulate** — to adjust or regulate; vary in strength or tone.
 **monad** — a structure in functional programming handling side effects.
 **monolithic** — a single massive structure; not modular.
 **monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — der/die/das study von forms und structures; word formation in linguistics.
+**morphology** — das study von forms und structures; word formation in linguistics.
 **multicast** — sending Daten to multiple destinations simultaneously.
 **multimodal** — combining multiple modes (text, image, audio).
 **mutable** — capable von change; modifiable.
@@ -531,34 +531,34 @@ in questions und discussions.
 **notwithstanding** — in spite von; nevertheless.
 **nuance** — subtle distinction or variation.
 **null** — having no value; zero; invalid.
-**numerator** — der/die/das top number in a fraction.
+**numerator** — das top number in a fraction.
 
 **objective** — not influenced by personal feelings; a goal.
 **obligatory** — required; mandatory.
 **obfuscate** — to deliberately make unclear or confusing.
 **objective function** — a function to maximize or minimize in optimization.
 **observable** — capable von being observed; in programming, a stream von Ereignisse.
-**obsolescence** — der/die/das process von becoming outdated.
+**obsolescence** — das process von becoming outdated.
 **occasional** — happening sometimes; irregular.
 **occlusion** — blockage or obstruction; hiding von objects in vision.
 **octet** — a group von eight; in networking, 8 bits (byte).
 **offload** — to transfer work to another system or person.
 **omnibus** — containing multiple items; a collection.
-**ontology** — der/die/das study von being; in CS, a formal representation von knowledge.
+**ontology** — das study von being; in CS, a formal representation von knowledge.
 **opaque** — not transparent; difficult to understand.
 **operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — der/die/das value von der/die/das best alternative forgone.
+**opportunity cost** — das value von das best alternative forgone.
 **optimization** — making something as effective as possible; finding best solutions.
 **oracle** — a source von wisdom; in Datenverarbeitung, a theoretical black box answering questions.
 **orthogonal** — at right angles; independent; unrelated.
 **oscillate** — to swing back und forth; fluctuate.
 **ostensible** — appearing or claimed to be true, though possibly not so.
 **overfit** — when a model learns training Daten too well, failing to generalize.
-**overhead** — extra resources required beyond der/die/das core task.
+**overhead** — extra resources required beyond das core task.
 **oxide** — a chemical compound containing oxygen.
 
 **pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading der/die/das same backward und forward.
+**palindrome** — a word or phrase reading das same backward und forward.
 **paradigm** — a typical example or pattern; a framework von thought.
 **parallel** — side by side; occurring simultaneously.
 **parameterize** — to express in terms von parameters.
@@ -573,18 +573,18 @@ in questions und discussions.
 **penalty** — a punishment; disadvantage imposed für breaking rules.
 **pending** — awaiting decision; not yet settled.
 **permutation** — an arrangement von items in a specific order.
-**persona** — der/die/das aspect von someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; der/die/das art von representing 3D on 2D.
-**pertinent** — relevant to der/die/das matter at hand.
+**persona** — das aspect von someone's character; a fictional user representation.
+**perspective** — a particular viewpoint; das art von representing 3D on 2D.
+**pertinent** — relevant to das matter at hand.
 **pervasive** — spreading widely; omnipresent.
 **pessimistic** — expecting negative outcomes; assuming worst case.
 **phantom** — ghostly; illusory; in databases, rows appearing unexpectedly.
-**phenomenology** — der/die/das study von structures von consciousness.
-**philosophy** — der/die/das study von fundamental questions about existence, knowledge, values.
+**phenomenology** — das study von structures von consciousness.
+**philosophy** — das study von fundamental questions about existence, knowledge, values.
 **phishing** — fraudulent attempts to obtain sensitive information via electronic Kommunikation.
-**phoneme** — der/die/das smallest unit von sound distinguishing meaning.
+**phoneme** — das smallest unit von sound distinguishing meaning.
 **phrase** — a group von words forming a unit; an expression.
-**pi** — der/die/das ratio von circle circumference to diameter (~3.14159).
+**pi** — das ratio von circle circumference to diameter (~3.14159).
 **placeholder** — a temporary stand-in; a token to be replaced.
 **plagiarism** — presenting others' work as one's own.
 **platform** — a raised surface; a Datenverarbeitung environment; a service foundation.
@@ -600,13 +600,13 @@ in questions und discussions.
 **pragmatic** — practical; concerned mit actual results.
 **precedent** — an earlier event serving as Leitfaden.
 **precision** — exactness; in ML, true positives divided by predicted positives.
-**predicate** — der/die/das part von a sentence stating something about der/die/das subject; a function returning boolean.
+**predicate** — das part von a sentence stating something about das subject; a function returning boolean.
 **predictive** — relating to prediction; forecasting Zukunft Ereignisse.
-**prefix** — a morpheme added to der/die/das beginning von a word.
-**premise** — a statement forming der/die/das basis von an argument.
+**prefix** — a morpheme added to das beginning von a word.
+**premise** — a statement forming das basis von an argument.
 **prescient** — having knowledge before it happens.
 **presupposition** — an assumption underlying an argument.
-**primordial** — existing from der/die/das beginning; primitive.
+**primordial** — existing from das beginning; primitive.
 **prior** — earlier; preceding; in Bayesian Statistiken, initial belief.
 **probe** — to investigate; a device für exploration.
 **procedural** — relating to procedures; a programming paradigm.
@@ -636,12 +636,12 @@ in questions und discussions.
 **quantum** — a discrete quantity; relating to quantum mechanics.
 **quarantine** — isolation to prevent disease spread; Sicherheit isolation.
 **query** — a question; a Datenbank request.
-**quintessential** — representing der/die/das perfect example.
-**quotient** — der/die/das result von division; a ratio.
+**quintessential** — representing das perfect example.
+**quotient** — das result von division; a ratio.
 
 **radical** — thoroughgoing; extreme; relating to roots.
 **random** — lacking pattern; unpredictable.
-**range** — der/die/das set von output values; extent; distance.
+**range** — das set von output values; extent; distance.
 **raster** — a grid von pixels; bitmap image.
 **ratify** — to formally approve; confirm.
 **rational** — based on reason; expressible as a fraction.
@@ -667,10 +667,10 @@ in questions und discussions.
 **revision** — review und alteration; new version.
 **rhizome** — underground stem; non-hierarchical structure (philosophy).
 **robustness** — strength; resilience to errors.
-**root cause** — der/die/das fundamental reason für a problem.
+**root cause** — das fundamental reason für a problem.
 **rotation** — turning around an axis.
 **rudimentary** — basic; undeveloped.
-**runtime** — der/die/das time when a program executes; execution environment.
+**runtime** — das time when a program executes; execution environment.
 
 **sacrifice** — giving up something valued; offering.
 **salient** — prominent; noticeable.
@@ -697,7 +697,7 @@ in questions und discussions.
 **simulation** — imitation von real processes.
 **singular** — unique; extraordinary; grammatical form.
 **skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; der/die/das / character.
+**slash** — to cut; das / character.
 **snapshot** — a momentary view; backup at a point in time.
 **socket** — an endpoint für Netzwerk Kommunikation.
 **softmax** — a function converting values to probabilities.
@@ -728,7 +728,7 @@ in questions und discussions.
 **substantiate** — to provide evidence; prove.
 **subtle** — delicate; not obvious.
 **suffix** — a morpheme added to word ends.
-**summation** — der/die/das addition von a sequence.
+**summation** — das addition von a sequence.
 **superposition** — placement on top; quantum state combination.
 **supervised** — mit oversight; ML mit labeled Daten.
 **supplant** — to replace; supersede.
@@ -746,12 +746,12 @@ in questions und discussions.
 **synopsis** — a brief summary.
 **Syntax** — grammatical structure; rules für valid expressions.
 **synthesis** — combination forming a whole.
-**systemic** — affecting der/die/das entire system.
+**systemic** — affecting das entire system.
 
 **tacit** — understood without being stated.
 **tactical** — relating to strategy; short-term planning.
 **tangent** — touching at one point; diverging from topic.
-**tautology** — saying der/die/das same thing twice; logically always true.
+**tautology** — saying das same thing twice; logically always true.
 **taxonomy** — classification scheme.
 **teleology** — explanation by purpose or design.
 **tempered** — moderated; hardened (metal).
@@ -795,7 +795,7 @@ in questions und discussions.
 **ulterior** — hidden; beyond what is evident.
 **uncanny** — strangely familiar; eerie.
 **unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; der/die/das _ character.
+**underscore** — to emphasize; das _ character.
 **underwrite** — to guarantee financially; Support.
 **uniform** — consistent; a distinctive outfit.
 **unilateral** — one-sided; by one party.
@@ -841,7 +841,7 @@ in questions und discussions.
 **warranty** — a guarantee; assurance.
 **waveform** — shape von a wave.
 **weakness** — lack von strength; vulnerability.
-**Web** — a Netzwerk; der/die/das World Wide Web.
+**Web** — a Netzwerk; das World Wide Web.
 **weight** — importance; heaviness; parameter value in ML.
 **well-formed** — correctly structured.
 **what-if** — hypothetical scenario analysis.
@@ -868,8 +868,8 @@ in questions und discussions.
 **yearning** — a longing desire.
 **yield** — to produce; give way; return value.
 
-**zenith** — der/die/das highest point; peak.
-**zero** — nothing; der/die/das number 0.
+**zenith** — das highest point; peak.
+**zero** — nothing; das number 0.
 **zip** — to fasten; compress files; move quickly.
 **zone** — an area mit specific characteristics.
 **zoom** — to magnify; change focal length.
