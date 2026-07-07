@@ -1,3 +1,4 @@
+```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
@@ -20,6 +21,10 @@ target/
 .gradle/
 .mypy_cache/
 .pytest_cache/
+dist/
+build/
+target/
+.gradle/
 coverage/
 htmlcov/
 .coverage
@@ -41,9 +46,14 @@ htmlcov/
 *.swp
 *.swo
 
-# System files
+# System
 .DS_Store
 Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
 # Compressed files
 *.zip
@@ -68,3 +78,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+```

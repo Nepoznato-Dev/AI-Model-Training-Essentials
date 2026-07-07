@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## Git — Version Control
 
-Git is a distributed version control system. Every developer has a full copy の その repository 歴史 on their local machine.
+Git は分散型バージョン管理システムです。各開発者はリポジトリの完全なコピーと履歴をローカルマシンに持っています。
 
 ### Core workflow
 
@@ -45,39 +45,39 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging と rebasing
+### マージとリベース
 
 ```bash
-# Merge feature branch into main
+# メインブランチにフィーチャーブランチをマージ
 git checkout main
 git merge feature/new-thing
 
-# Rebase keeps a linear history
+# リベースは履歴を直線的に保つ
 git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### プルリクエスト (PR) ワークフロー
 
-1. Create a feature branch from `main`.
-2. Make commits on その feature branch.
-3. Push その branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review フィードバック と additional commits.
-6. Merge その PR once approved.
+1. `main` からフィーチャーブランチを作成する。
+2. フィーチャーブランチでコミットを行う。
+3. ブランチをプッシュする：`git push origin feature/new-thing`。
+4. GitHub / GitLab でプルリクエストを開く。
+5. コードレビューのフィードバックに対応し、追加コミットを行う。
+6. 承認されたら PR をマージする。
 
-### Undoing changes
+### 変更の取り消し
 
 ```bash
-git restore file.py            # discard unstaged changes
-git restore --staged file.py   # unstage a file
-git revert <commit-sha>        # create a new commit that undoes a previous one
-git reset --soft HEAD~1        # undo last commit, keep changes staged
+git restore file.py            # ステージされていない変更を破棄
+git restore --staged file.py   # ファイルをステージから外す
+git revert <commit-sha>        # 以前のコミットを取り消す新しいコミットを作成
+git reset --soft HEAD~1        # 最後のコミットを取り消し、変更はステージされたままにする
 ```
 
 ---
 
-## Package Managers
+## パッケージマネージャー
 
 ### pip (Python)
 
@@ -90,7 +90,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+プロジェクトの依存関係を分離するために、常に仮想環境内で作業してください。
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +105,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` は正確なバージョンを記録します。ソースコントロールにコミットしてください。
 
 ### Cargo (Rust)
 
@@ -145,125 +145,125 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line 基本
+## コマンドライン基本
 
-### Navigation
+### ナビゲーション
 
 ```bash
-pwd                             # print working directory
-ls                              # list directory contents
-ls -la                          # detailed listing including hidden files
-cd /path/to/dir                 # change directory
-cd ..                           # go up one level
-cd ~                            # go to home directory
+pwd                             # 作業ディレクトリを表示
+ls                              # ディレクトリ内容を一覧表示
+ls -la                          # 隠しファイルを含む詳細一覧
+cd /path/to/dir                 # ディレクトリを変更
+cd ..                           # 1 つ上の階層へ移動
+cd ~                            # ホームディレクトリへ移動
 mkdir new_folder
-rm file.txt                     # remove a file
-rm -r folder/                   # remove a directory recursively
+rm file.txt                     # ファイルを削除
+rm -r folder/                   # ディレクトリを再帰的に削除
 cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### テキスト処理
 
 ```bash
-cat file.txt                    # print file contents
-less file.txt                   # scroll through a file
-head -n 20 file.txt             # first 20 lines
-tail -n 20 file.txt             # last 20 lines
-tail -f log.txt                 # follow a growing log file
-grep "pattern" file.txt         # search for a pattern
-grep -r "pattern" ./src/        # recursive search
-grep -i "pattern" file.txt      # case-insensitive
+cat file.txt                    # ファイル内容を表示
+less file.txt                   # ファイルをスクロールして閲覧
+head -n 20 file.txt             # 最初の 20 行
+tail -n 20 file.txt             # 最後の 20 行
+tail -f log.txt                 # 増加するログファイルを追跡
+grep "pattern" file.txt         # パターンを検索
+grep -r "pattern" ./src/        # 再帰的に検索
+grep -i "pattern" file.txt      # 大文字小文字を区別しない
 ```
 
-### Pipes と redirection
+### パイプとリダイレクト
 
 ```bash
-command1 | command2             # pipe output of command1 into command2
-ls -la | grep ".py"             # list only Python files
-cat file.txt | wc -l            # count lines
-command > output.txt            # redirect stdout to a file (overwrite)
-command >> output.txt           # append stdout to a file
-command 2>&1                    # merge stderr into stdout
+command1 | command2             # command1 の出力を command2 へパイプ
+ls -la | grep ".py"             # Python ファイルのみを一覧表示
+cat file.txt | wc -l            # 行数をカウント
+command > output.txt            # 標準出力をファイルへリダイレクト（上書き）
+command >> output.txt           # 標準出力をファイルへ追加
+command 2>&1                    # 標準エラーを標準出力にマージ
 ```
 
-### ネットワーク と file transfer
+### ネットワークとファイル転送
 
 ```bash
-curl https://example.com                     # fetch a URL
-curl -o file.zip https://example.com/f.zip   # download to a file
+curl https://example.com                     # URL を取得
+curl -o file.zip https://example.com/f.zip   # ファイルへダウンロード
 curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.example.com/endpoint
 
-wget https://example.com/file.zip            # download with wget
+wget https://example.com/file.zip            # wget でダウンロード
 ```
 
-### Permissions
+### パーミッション
 
 ```bash
-chmod +x script.sh              # make executable
-chmod 644 file.txt              # owner read/write, group/others read
-chown user:group file.txt       # change owner and group
+chmod +x script.sh              # 実行可能にする
+chmod 644 file.txt              # オーナーは読み書き、グループ/その他は読み取り
+chown user:group file.txt       # オーナーとグループを変更
 ```
 
-### Process 管理
+### プロセス管理
 
 ```bash
-ps aux                          # list running processes
-kill <PID>                      # send SIGTERM to a process
-kill -9 <PID>                   # force kill
-top / htop                      # interactive process monitor
+ps aux                          # 実行中のプロセスを一覧表示
+kill <PID>                      # プロセスに SIGTERM を送信
+kill -9 <PID>                   # 強制終了
+top / htop                      # インタラクティブなプロセスモニター
 ```
 
 ---
 
-## Editors と IDEs
+## エディタと IDE
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor と a rich extension ecosystem.
+VS Code は軽量なクロスプラットフォームコードエディタで、豊富な拡張機能エコシステムを持ちます。
 
-- Open a folder: `File > Open Folder` or `code .` で その terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install 言語 サポート (Python, Rust, Go, etc.), linters, と formatters from その Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures その debugger.
+- フォルダを開く：`File > Open Folder` またはターミナルで `code .`
+- コマンドパレット：`Ctrl+Shift+P`（macOS: `Cmd+Shift+P`）
+- 統合ターミナル：`Ctrl+``（バッククォート）`
+- マルチカーソル：`Alt+Click` で追加カーソルを配置
+- 定義へ移動：`F12`
+- シンボルの名前変更：`F2`
+- ドキュメントのフォーマット：`Shift+Alt+F`
+- 拡張機能：拡張機能パネル（`Ctrl+Shift+X`）から言語サポート（Python、Rust、Go など）、リンター、フォーマッターをインストール
+- `settings.json`（ユーザーまたはワークスペース）でエディタの動作を制御
+- `launch.json` でデバッガーを設定
 
-### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+### JetBrains IDEs (IntelliJ IDEA、PyCharm、WebStorm、CLion、GoLand)
 
-- Smart code completion と refactoring are core features.
-- Run/debug configurations let you launch と debug programs と one click.
-- Built-で Git サポート で その VCS menu.
-- `Shift+Shift` opens その Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend 言語 サポート と add tools.
+- スマートコード補完とリファクタリングが主要機能です。
+- 実行/デバッグ設定でワンクリックでプログラムを実行・デバッグできます。
+- VCS メニューに Git サポートが組み込まれています。
+- `Shift+Shift` で「Search Everywhere」ダイアログを開きます。
+- `Ctrl+Alt+L`（macOS: `Cmd+Option+L`）でコードをフォーマットします。
+- プラグインで言語サポートやツールを追加できます。
 
-### Terminal tips
+### ターミナルのヒント
 
-- Use tab completion to finish file names と コマンド quickly.
-- Press `Ctrl+R` to search command 歴史 interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows その manual page のために any built-で command.
+- タブ補完を使ってファイル名やコマンドを素早く入力できます。
+- `Ctrl+R` でコマンド履歴をインタラクティブに検索できます。
+- `alias ll='ls -la'` のようにショートカットを作成 — `~/.bashrc` または `~/.zshrc` に追加します。
+- `tmux` や `screen` を使って、リモートサーバーから切断された場合でもセッションを維持できます。
+- `man <command>` で組み込みコマンドのマニュアルページを表示できます。
 
 ---
 
 ## Docker
 
-Docker packages applications と their dependencies into portable containers.
+Docker はアプリケーションとその依存関係をポータブルなコンテナにパッケージ化します。
 
-### Core concepts
+### 主要概念
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance の an image.
-- **Registry**: a storage と distribution service のために images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **イメージ**: `Dockerfile` から構築される読み取り専用テンプレート
+- **コンテナ**: イメージの実行中インスタンス
+- **レジストリ**: イメージの保存・配信サービス（Docker Hub、GHCR）
+- **ボリューム**: コンテナより長く存続する永続ストレージ
 
-### Common コマンド
+### 一般的なコマンド
 
 ```bash
 # Images

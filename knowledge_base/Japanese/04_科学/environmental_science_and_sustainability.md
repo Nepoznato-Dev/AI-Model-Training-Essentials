@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## はじめに to 環境 科学
 
-環境 科学 is an interdisciplinary field studying interactions between physical, chemical, biological, と social components の その environment. It integrates ecology, geology, atmospheric 科学, chemistry, biology, 地理, と social sciences to understand 環境 problems と develop solutions. Key themes include energy flow, nutrient cycling, biodiversity, population dynamics, と human impacts on natural システム. 環境 scientists use field studies, laboratory experiments, modeling, と データ analysis to investigate issues like climate change, pollution, resource depletion, と habitat loss.
+環境 科学 is an interdisciplinary field studying interactions between physical, chemical, biological, と social components の environment. It integrates ecology, geology, atmospheric 科学, chemistry, biology, 地理, と social sciences to understand 環境 problems と develop solutions. Key themes include energy flow, nutrient cycling, biodiversity, population dynamics, と human impacts on natural システム. 環境 scientists use field studies, laboratory experiments, modeling, と データ analysis to investigate issues like climate change, pollution, resource depletion, と habitat loss.
 
 ## Ecosystems と Ecology
 

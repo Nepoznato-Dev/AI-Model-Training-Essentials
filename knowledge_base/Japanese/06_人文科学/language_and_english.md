@@ -59,7 +59,7 @@ A **conjunction** connects words, phrases, or clauses (e.g., と, but, or, becau
 
 ## Vocabulary と Word Formation
 
-**Etymology** is その study の その origins と historical 開発 の words. Many 英語 words come from Latin, Greek, French, と Germanic roots.
+**Etymology** は words の origins と historical 開発 を研究する分野です。Many 英語 words come from Latin, Greek, French, と Germanic roots.
 
 **Prefixes** are added to その beginning の words to change their meaning (e.g., un-, re-, pre-, mis-).
 **Suffixes** are added to その end の words (e.g., -tion, -ness, -ing, -ly).
@@ -91,7 +91,7 @@ Good writing is clear, concise, coherent, と engaging.
 ## コミュニケーション と Rhetoric
 
 **Rhetoric** is その art の effective コミュニケーション と persuasion.
-- **Ethos** appeals to その credibility の その speaker.
+- **Ethos** は speaker の credibility に訴えかけます。
 - **Pathos** appeals to emotion.
 - **Logos** appeals to logic と reason.
 
@@ -101,7 +101,7 @@ A **thesis statement** clearly expresses その main argument の an essay.
 
 ## Subject-Verb Agreement (Expanded)
 
-One の その most important grammar rules で 英語 is that a subject と its verb must agree で number: a singular subject takes a singular verb, と a plural subject takes a plural verb.
+英語 で最も重要な grammar rules の一つは、subject と verb は number において一致しなければならないということです。singular subject は singular verb を取り、plural subject は plural verb を取ります。
 
 ### Gerunds as Subjects
 
@@ -142,7 +142,7 @@ Collective nouns (team, committee, group, family) take a singular verb で Ameri
 
 **Correct:**
 - "Everyone **is** invited."
-- "Each の その students **has** completed その assignment."
+- "Each of the students **has** completed their assignment."
 
 **Incorrect:**
 - "Everyone **are** invited."
