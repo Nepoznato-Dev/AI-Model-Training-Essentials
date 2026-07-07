@@ -220,7 +220,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Memoria nella cache CDN**: CloudFront, Cloud CDN, CDN di Azure
 - **Casi d'uso**: archiviazione delle sessioni, memorizzazione nella cache delle query, distribuzione dei contenuti
 
-##rete
+## Rete
 
 ### Reti virtuali
 - **VPC/VNet**: ambienti di rete isolati
