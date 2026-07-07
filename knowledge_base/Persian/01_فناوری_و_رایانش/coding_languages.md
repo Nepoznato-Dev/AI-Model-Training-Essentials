@@ -7,13 +7,13 @@
 ### اصول نحو
 
 ```python
-# Variables and types
+# متغیرها و انواع
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# شرطی‌ها
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# حلقه‌ها
 for i in range(5):
     print(i)
 

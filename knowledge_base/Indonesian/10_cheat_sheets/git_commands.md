@@ -4,7 +4,7 @@ Essential Git commands for version control.
 
 ---
 
-## Setup & Configuration
+## Persiapan & Configuration
 
 ```bash
 # Configure user info

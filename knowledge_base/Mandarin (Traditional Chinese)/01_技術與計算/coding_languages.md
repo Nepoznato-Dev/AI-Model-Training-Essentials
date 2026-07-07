@@ -7,13 +7,13 @@ Python 是一種高階、解釋型、動態型別、通用程式語言。它強�
 ### 語法基礎
 
 ```python
-# Variables and types
+# 變數和類型
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 條件語句
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# 循環
 for i in range(5):
     print(i)
 

@@ -7,13 +7,13 @@ Python เป็นภาษาการเขียนโปรแกรมส�
 ### พื้นฐานไวยากรณ์
 
 ```python
-# Variables and types
+# ตัวแปรและประเภท
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# เงื่อนไข
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# ลูป
 for i in range(5):
     print(i)
 

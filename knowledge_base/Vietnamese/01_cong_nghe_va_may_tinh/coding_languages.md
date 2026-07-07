@@ -7,13 +7,13 @@ Python là ngôn ngữ lập trình có mục đích chung, được giải thí
 ###Cú pháp cơ bản
 
 ```python
-# Variables and types
+# Biến và kiểu
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Điều kiện
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Vòng lặp
 for i in range(5):
     print(i)
 

@@ -181,7 +181,7 @@ The transition to a sustainable future represents one of humanity's most pressin
 - **Anaerobic Digestion**: Food waste to energy
 - **Upcycled Foods**: Creating products from food byproducts
 
-### Enabling Conditions
+### Pengaktifan Conditions
 
 #### Policy Frameworks
 - **Extended Producer Responsibility (EPR)**: Producer accountability for end-of-life
@@ -550,7 +550,7 @@ The transition to a sustainable future represents one of humanity's most pressin
 
 ## Integration and Synergies
 
-### Connecting the Pillars
+### Penghubungan the Pillars
 
 #### Renewable Energy + Circular Economy
 - **Panel Recycling**: End-of-life solar panel recovery

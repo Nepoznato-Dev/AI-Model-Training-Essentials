@@ -49,7 +49,7 @@ f"Value: {x}"     # f-string formatting
 
 ## Control Flow
 
-### Conditionals
+### Conditionnels
 ```python
 if x > 10:
     print("Greater than 10")
@@ -62,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### Boucles
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -142,7 +142,7 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## Fonctions
 
 ### Definition
 ```python
