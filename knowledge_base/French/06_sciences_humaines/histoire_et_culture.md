@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# historique et Culture
+# Histoire et Culture
 
 ## Ancient Civilizations
 
