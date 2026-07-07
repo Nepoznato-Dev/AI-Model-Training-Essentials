@@ -14,13 +14,13 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### بناء الجملة الأساسيات
 
 ```python
-# Variables and types
+# المتغيرات والأنواع
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# الشروط
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -28,7 +28,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# الحلقات
 for i in range(5):
     print(i)
 
@@ -36,7 +36,7 @@ while active:
     active = False
 ```
 
-### Functions و type hints
+### الدوال و type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
@@ -50,7 +50,7 @@ squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Classes و OOP
+### الفئات و OOP
 
 ```python
 class Animal:
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Classes مع access modifiers
+### الفئات مع access modifiers
 
 ```typescript
 class Counter {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### معالجة الأخطاء
 
 ```rust
 use std::fs;
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions و multiple return values
+### الدوال و multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions و closures
+### الدوال و closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,7 +528,7 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Classes و structs
+### الفئات و structs
 
 Swift has both classes (مرجع types) و structs (value types). Prefer structs لأجل simple البيانات models.
 

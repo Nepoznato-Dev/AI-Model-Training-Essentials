@@ -261,7 +261,7 @@ A practical دليل to securing applications, infrastructure, و البيانا
 
 ---
 
-## Input Validation و Output Encoding
+## إدخال Validation و Output Encoding
 
 ### Validation Rules
 - **Whitelist > Blacklist**: Define allowed patterns (e.g., regex لأجل email) rather than blocking known bad patterns.
@@ -269,7 +269,7 @@ A practical دليل to securing applications, infrastructure, و البيانا
 - **Type checking**: Ensure integers are integers, booleans are booleans.
 - **Use well-tested libraries**: لأجل email, URL, و date validation, use standard libraries (e.g., `email-validator` في Python, `validator.js` في Node).
 
-### Output Encoding
+### إخراج Encoding
 - **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
 - **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
 - **Shell escaping**: Avoid building shell الأوامر from user input; if unavoidable, use `shlex.quote()` or similar.
@@ -319,7 +319,7 @@ A practical دليل to securing applications, infrastructure, و البيانا
 - Allow only specific origins (never `*` في production).
 - Validate `Origin` header on ال server side.
 
-### Input Validation
+### إدخال Validation
 - Validate all request parameters, including headers و body.
 - Reject unexpected fields (`"strict": true` or `additionalProperties: false` في JSON Schema).
 

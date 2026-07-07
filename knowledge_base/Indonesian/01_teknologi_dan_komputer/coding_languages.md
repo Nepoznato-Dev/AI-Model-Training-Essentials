@@ -7,13 +7,13 @@ Python adalah bahasa pemrograman tujuan umum tingkat tinggi, ditafsirkan, diketi
 ### Dasar-dasar sintaksis
 
 ```python
-# Variables and types
+# Variabel dan tipe
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Kondisional
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Perulangan
 for i in range(5):
     print(i)
 

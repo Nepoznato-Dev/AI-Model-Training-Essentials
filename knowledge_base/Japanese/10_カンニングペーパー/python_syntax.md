@@ -56,7 +56,7 @@ f"Value: {x}"     # f-string formatting
 
 ## Control Flow
 
-### Conditionals
+### 条件分岐
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +69,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### ループ
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -149,7 +149,7 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## 関数
 
 ### Definition
 ```python
@@ -178,7 +178,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## クラス
 
 ```python
 class Person:

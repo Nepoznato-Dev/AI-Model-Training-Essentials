@@ -14,13 +14,13 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### Sintaxe Básico
 
 ```python
-# Variables and types
+# Variáveis e tipos
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Condicionais
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -36,7 +36,7 @@ while active:
     active = False
 ```
 
-### Functions e type hints
+### Funções e type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### Tratamento de erros
 
 ```rust
 use std::fs;
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions e multiple return values
+### Funções e multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions e closures
+### Funções e closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }

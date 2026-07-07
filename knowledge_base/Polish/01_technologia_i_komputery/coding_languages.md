@@ -7,13 +7,13 @@ Python to interpretowany, dynamicznie typowany język programowania wysokiego po
 ### Podstawy składni
 
 ```python
-# Variables and types
+# Zmienne i typy
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Instrukcje warunkowe
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Pętle
 for i in range(5):
     print(i)
 

@@ -7,13 +7,13 @@ Python, yüksek seviyeli, yorumlanan, dinamik tipli ve genel amaçlı bir progra
 ### Sözdizimi temelleri
 
 ```python
-# Variables and types
+# Değişkenler ve türler
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Koşullar
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Döngüler
 for i in range(5):
     print(i)
 

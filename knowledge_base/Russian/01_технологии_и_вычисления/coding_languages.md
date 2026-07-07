@@ -7,13 +7,13 @@ Python — это высокоуровневый интерпретируемы�
 ### Основы синтаксиса
 
 ```python
-# Variables and types
+# Переменные и типы
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Условные операторы
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Циклы
 for i in range(5):
     print(i)
 

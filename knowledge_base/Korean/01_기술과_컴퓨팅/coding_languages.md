@@ -14,13 +14,13 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### 구문 기본
 
 ```python
-# Variables and types
+# 변수와 타입
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 조건문
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -28,7 +28,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# 루프
 for i in range(5):
     print(i)
 
@@ -36,7 +36,7 @@ while active:
     active = False
 ```
 
-### Functions 와 type hints
+### 함수 와 type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
@@ -50,7 +50,7 @@ squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Classes 와 OOP
+### 클래스 와 OOP
 
 ```python
 class Animal:
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Classes 와 함께 access modifiers
+### 클래스 와 함께 access modifiers
 
 ```typescript
 class Counter {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### 오류 처리
 
 ```rust
 use std::fs;
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions 와 multiple return values
+### 함수 와 multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions 와 closures
+### 함수 와 closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,7 +528,7 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Classes 와 structs
+### 클래스 와 structs
 
 Swift has both classes (참조 types) 와 structs (value types). Prefer structs 위한 simple 데이터 models.
 

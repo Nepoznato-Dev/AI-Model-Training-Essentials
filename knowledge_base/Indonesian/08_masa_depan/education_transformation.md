@@ -432,7 +432,7 @@ Education stands at an inflection point as artificial intelligence, changing wor
 - Inequitable access
 - Measurement challenges
 
-### Enabling Ecosystem
+### Pengaktifan Ecosystem
 
 #### Technology Infrastructure
 - Learning management systems

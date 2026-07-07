@@ -14,13 +14,13 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### Sintaxis Conceptos básicos
 
 ```python
-# Variables and types
+# Variables y tipos
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Condicionales
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -28,7 +28,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Bucles
 for i in range(5):
     print(i)
 
@@ -36,7 +36,7 @@ while active:
     active = False
 ```
 
-### Functions y type hints
+### Funciones y type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
@@ -50,7 +50,7 @@ squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Classes y OOP
+### Clases y OOP
 
 ```python
 class Animal:
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Classes con access modifiers
+### Clases con access modifiers
 
 ```typescript
 class Counter {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### Manejo de errores
 
 ```rust
 use std::fs;
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions y multiple return values
+### Funciones y multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions y closures
+### Funciones y closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,7 +528,7 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Classes y structs
+### Clases y structs
 
 Swift has both classes (Referencia types) y structs (value types). Prefer structs para simple Datos models.
 

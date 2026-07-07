@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# الإنجليزية قاعدة المعرفة
+# قاعدة المعرفة الإنجليزية
 
-مجموعة شاملة من مرجع documents covering التكنولوجيا, العلوم, الأعمال, humanities, و practical skills.
+مجموعة شاملة من وثائق المرجع التي تغطي التكنولوجيا، العلوم، الأعمال، العلوم الإنسانية، والمهارات العملية.
 
-**آخر تحديث:** June 2025  
-**إجمالي الملفات:** 34+ markdown documents  
-**Organization:** Categorized into 10 thematic directories
+**آخر تحديث:** يونيو 2025  
+**إجمالي الملفات:** 34+ وثيقة بصيغة Markdown  
+**التنظيم:** مصنفة في 10 مجلدات موضوعية
 
 ---
 
@@ -35,70 +35,70 @@ knowledge_base/English/
 
 ## 📚 تنقل سريع
 
-### التكنولوجيا & الحوسبة (`01_technology_and_computing/`)
-| File | Description | Lines |
+### التكنولوجيا والحوسبة (`01_technology_and_computing/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
 | [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, الأمان | 350+ |
 | [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, العمارة patterns, الأمان | 350+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, أنماط العمارة، الأمان | 350+ |
 | [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, الأمان | 400+ |
-| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
-| [tool_usage.md](01_technology_and_computing/tool_usage.md) | التطوير tools و utilities | 200+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | المصطلحات التقنية | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | أدوات التطوير والمرافق | 200+ |
 
-### Artificial Intelligence (`02_artificial_intelligence/`)
-| File | Description | Lines |
+### الذكاء الاصطناعي (`02_artificial_intelligence/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI نظرة عامة, ML, التعلم العميق, LLMs | 200+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | نظرة عامة على AI, ML, التعلم العميق، LLMs | 200+ |
 | [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, أفضل الممارسات | 200+ |
-| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
-| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI النشر architectures | 400+ |
-| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques و strategies | 150+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | تشغيل النماذج محليًا | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | بنى نشر AI المحلي | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | تقنيات واستراتيجيات كتابة الأوامر | 150+ |
 
-### البيانات العلوم (`03_data_science/`)
-| File | Description | Lines |
+### علم البيانات (`03_data_science/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | البيانات processing, ML, big البيانات, BI | 350+ |
-| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | معالجة البيانات، ML, big data, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | الرياضيات، المنطق، البراهين | 250+ |
 
 ### العلوم (`04_science/`)
-| File | Description | Lines |
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology الأساسيات | 100+ |
-| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, الرعاية الصحية الأنظمة | 250+ |
-| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
-| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | الزراعة, التغذية, طعام الأنظمة | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | أساسيات الفيزياء، الكيمياء، الأحياء | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | التخصصات الطبية، أنظمة الرعاية الصحية | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | النظم البيئية، المناخ، الحفظ | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | الزراعة، التغذية، أنظمة الغذاء | 150+ |
 
-### الأعمال & المالية (`05_business_and_finance/`)
-| File | Description | Lines |
+### الأعمال والمالية (`05_business_and_finance/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, الاقتصاد | 150+ |
-| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal المالية, الاستثمار, markets | 350+ |
-| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | قانوني الأنظمة, contracts, IP, constitutional القانون | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | هياكل الشركات، التسويق، الاقتصاد | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | المالية الشخصية، الاستثمار، الأسواق | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | الأنظمة القانونية، العقود، الملكية الفكرية، القانون الدستوري | 200+ |
 
-### Humanities (`06_humanities/`)
-| File | Description | Lines |
+### العلوم الإنسانية (`06_humanities/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
-| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human الجغرافيا, political الأنظمة | 300+ |
-| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual الفنون, music, film | 400+ |
-| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental علم النفس | 200+ |
-| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | الفترات التاريخية، الحركات الثقافية | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | الجغرافيا الطبيعية/البشرية، الأنظمة السياسية | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | الأنواع الأدبية، الفنون البصرية، الموسيقى، السينما | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | علم النفس المعرفي، الاجتماعي، التنموي | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | القواعد، اللسانيات، الكتابة | 180+ |
 
-### مرجع (`07_reference/`)
-| File | Description | Lines |
+### المرجع (`07_reference/`)
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [القاموس.md](07_reference/القاموس.md) | Comprehensive word definitions (A-Z) | 868 |
-| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about ال world | 150+ |
-| [technology_and_computing.md](07_reference/technology_and_computing.md) | الحوسبة الأساسيات و الأساسيات | 250+ |
-| [safe_communication.md](07_reference/safe_communication.md) | التواصل guidelines و أفضل الممارسات | 150+ |
+| [القاموس.md](07_reference/القاموس.md) | تعريفات شاملة للكلمات (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | حقائق أساسية عن العالم | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | أساسيات الحوسبة والأساسيات | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | إرشادات التواصل وأفضل الممارسات | 150+ |
 
 ### المستقبل (`08_future/`)
-| File | Description | Lines |
+| الملف | الوصف | الأسطر |
 |------|-------------|-------|
-| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming الأحداث, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | الأحداث القادمة، بعثات الفضاء، اتجاهات التكنولوجيا | 200+ |
 
-### Practical Skills (`09_practical_skills/`)
+### المهارات العملية (`09_practical_skills/`)
 *دليل متنامٍ - قريبًا:*
 - research_methods.md
 - critical_thinking.md
@@ -118,26 +118,26 @@ knowledge_base/English/
 
 ## 🎯 مسارات التعلم
 
-### لأجل Beginners
-1. Start مع `07_reference/general_knowledge.md`
-2. Move to `07_reference/technology_and_computing.md`
-3. Explore `06_humanities/language_and_english.md`
-4. Begin `01_technology_and_computing/coding_languages.md`
+### للمبتدئين
+1. ابدأ مع `07_reference/general_knowledge.md`
+2. انتقل إلى `07_reference/technology_and_computing.md`
+3. استكشف `06_humanities/language_and_english.md`
+4. ابدأ `01_technology_and_computing/coding_languages.md`
 
-### لأجل Software Developers
+### لمطوري البرمجيات
 1. `01_technology_and_computing/coding_languages.md`
 2. `01_technology_and_computing/web_development.md`
 3. `01_technology_and_computing/database_systems.md`
 4. `01_technology_and_computing/cloud_architecture.md`
 5. `02_artificial_intelligence/artificial_intelligence.md`
 
-### لأجل البيانات Scientists
+### لعلماء البيانات
 1. `03_data_science/math_and_logic.md`
 2. `03_data_science/data_science_and_analytics.md`
 3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
 4. `01_technology_and_computing/database_systems.md`
 
-### لأجل الأعمال Professionals
+### لمحترفي الأعمال
 1. `05_business_and_finance/business_and_economics.md`
 2. `05_business_and_finance/finance_and_investing.md`
 3. `05_business_and_finance/law_and_legal_systems.md`
@@ -147,91 +147,91 @@ knowledge_base/English/
 
 ## 📊 إحصائيات
 
-| Category | Files | Total Lines | Avg Lines/File |
+| الفئة | الملفات | إجمالي الأسطر | متوسط الأسطر/ملف |
 |----------|-------|-------------|----------------|
-| التكنولوجيا & الحوسبة | 7 | ~2,800 | 400 |
-| Artificial Intelligence | 5 | ~1,500 | 300 |
-| البيانات العلوم | 2 | ~600 | 300 |
+| التكنولوجيا والحوسبة | 7 | ~2,800 | 400 |
+| الذكاء الاصطناعي | 5 | ~1,500 | 300 |
+| علم البيانات | 2 | ~600 | 300 |
 | العلوم | 4 | ~700 | 175 |
-| الأعمال & المالية | 3 | ~700 | 233 |
-| Humanities | 5 | ~1,100 | 220 |
-| مرجع | 4 | ~1,400 | 350 |
+| الأعمال والمالية | 3 | ~700 | 233 |
+| العلوم الإنسانية | 5 | ~1,100 | 220 |
+| المرجع | 4 | ~1,400 | 350 |
 | المستقبل | 1 | ~200 | 200 |
-| **Total** | **31** | **~9,000** | **290** |
+| **الإجمالي** | **31** | **~9,000** | **290** |
 
 ---
 
 ## ⚠️ إخلاءات مسؤولية مهمة
 
-- **Medical Information:** Content في `medicine_and_healthcare.md` is لأجل educational purposes only و should not replace professional medical advice.
-- **قانوني Information:** Content في `law_and_legal_systems.md` is informational و does not constitute قانوني advice.
-- **Financial Information:** Content في `finance_and_investing.md` is educational و should not be considered financial advice.
-- **المستقبل Projections:** Content في `2026_and_future_events.md` contains speculative information و projections that may change.
+- **المعلومات الطبية:** المحتوى في `medicine_and_healthcare.md` هو لأغراض تعليمية فقط ولا يجب أن يحل محل الاستشارة الطبية المهنية.
+- **المعلومات القانونية:** المحتوى في `law_and_legal_systems.md` هو معلوماتي ولا يشكل نصيحة قانونية.
+- **المعلومات المالية:** المحتوى في `finance_and_investing.md` هو تعليمي ولا يجب اعتباره نصيحة مالية.
+- **توقعات المستقبل:** المحتوى في `2026_and_future_events.md` يحتوي على معلومات وتوقعات تخمينية قد تتغير.
 
 ---
 
 ## 🔧 إرشادات الاستخدام
 
-### لأجل AI الأنظمة
-- All files are structured مع clear hierarchical headings
-- Technical terms are defined inline or في `القاموس.md`
-- Cross-references use markdown links
-- Code أمثلة include بناء الجملة highlighting
+### لأنظمة AI
+- جميع الملفات منظمة مع عناوين هرمية واضحة
+- المصطلحات التقنية معرفة ضمن النص أو في `القاموس.md`
+- الإشارات المتبادلة تستخدم روابط Markdown
+- أمثلة الكود تتضمن تمييز بناء الجملة
 
-### لأجل Human Readers
-- Each file includes learning objectives at ال beginning
-- Difficulty levels are noted where applicable
-- Exercises و practice problems included في technical files
-- Visual aids (diagrams, tables) used where helpful
+### للقراء البشريين
+- كل ملف يتضمن أهداف تعليمية في البداية
+- مستويات الصعوبة موضحة حيثما ينطبق
+- التمارين ومسائل الممارسة متضمنة في الملفات التقنية
+- المعينات البصرية (الرسوم البيانية، الجداول) مستخدمة حيثما تكون مفيدة
 
 ---
 
 ## 📝 المساهمة
 
-When adding or modifying content:
+عند إضافة أو تعديل المحتوى:
 
-1. **Follow ال style دليل:**
-   - Use `#` لأجل file title only
-   - Use `##` لأجل major sections
-   - Use `###` لأجل subsections
-   - Use `-` لأجل unordered lists
-   - Include بناء الجملة highlighting في code blocks
+1. **اتبع دليل الأسلوب:**
+   - استخدم `#` لعنوان الملف فقط
+   - استخدم `##` للأقسام الرئيسية
+   - استخدم `###` للأقسام الفرعية
+   - استخدم `-` للقوائم غير المرتبة
+   - ضمّن تمييز بناء الجملة في كتل الكود
 
-2. **Add metadata** (YAML frontmatter):
+2. **أضف البيانات الوصفية** (YAML frontmatter):
 ```yaml
 ---
-title: "File Title"
-description: "Brief description"
+title: "عنوان الملف"
+description: "وصف موجز"
 topics: [topic1, topic2, topic3]
 difficulty: beginner|intermediate|advanced
 last_updated: YYYY-MM-DD
 ---
 ```
 
-3. **Include citations** لأجل factual claims
-4. **Add cross-references** to related files
-5. **Update this README** if adding new files
+3. **ضمّن المراجع** للمطالبات الواقعية
+4. **أضف إشارات متبادلة** للملفات ذات الصلة
+5. **حدّث ملف README هذا** عند إضافة ملفات جديدة
 
 ---
 
-## 🔄 Update Cycle
+## 🔄 دورة التحديث
 
-- **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checking:** إحصائيات و time-sensitive information verified
-- **Content expansion:** Underdeveloped files expanded progressively
-- **New topics:** Added based on emerging fields و user needs
+- **المراجعات الفصلية:** جميع الملفات تُراجع كل 3 أشهر
+- **التحقق من الحقائق:** الإحصائيات والمعلومات الحساسة للوقت يتم التحقق منها
+- **توسيع المحتوى:** الملفات غير المكتملة تُوسع تدريجيًا
+- **مواضيع جديدة:** تُضاف بناءً على المجالات الناشئة واحتياجات المستخدمين
 
-**Next scheduled review:** Q3 2025
+**المراجعة المجدولة التالية:** Q3 2025
 
 ---
 
 ## 📞 ملاحظات
 
-Found errors? Have suggestions? Please note:
-- Check لأجل duplicates before suggesting new topics
-- Verify claims against authoritative sources
-- Consider scope و audience when proposing additions
+هل وجدت أخطاءً؟ لديك اقتراحات؟ يرجى الملاحظة:
+- تحقق من التكرارات قبل اقتراح مواضيع جديدة
+- تحقّق من المطالبات مقابل المصادر الموثوقة
+- ضع في الاعتبار النطاق والجمهور عند اقتراح إضافات
 
 ---
 
-*This قاعدة المعرفة is a living document collection, continuously improved و expanded.*
+*قاعدة المعرفة هذه هي مجموعة وثائق حية، يتم تحسينها وتوسيعها باستمرار.*

@@ -7,13 +7,13 @@ Python 是一种高级、解释型、动态类型、通用编程语言。它强�
 ### 语法基础
 
 ```python
-# Variables and types
+# 变量和类型
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 条件语句
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# 循环
 for i in range(5):
     print(i)
 

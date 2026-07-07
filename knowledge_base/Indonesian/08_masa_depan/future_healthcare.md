@@ -16,7 +16,7 @@ Healthcare is on the cusp of revolutionary transformations driven by advances in
 - Integrating genetics, environment, lifestyle, and biomarkers
 - Predictive, preventive, personalized, participatory (P4 medicine)
 
-#### Enabling Technologies
+#### Pengaktifan Technologies
 
 **Genomics**
 - Human Genome Project completion (2003): $3 billion, 13 years
