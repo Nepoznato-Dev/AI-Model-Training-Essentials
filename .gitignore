@@ -1,3 +1,4 @@
+```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
@@ -11,34 +12,71 @@ __pycache__/
 *.out
 
 # Dependencies
-node_modules/
-venv/
 .venv/
+venv/
+node_modules/
+pip-log.txt
+pipenv.lock
+requirements.txt.bak
+*.egg-info/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.backup
+
+# Environment variables
 .env
 .env.local
 .env.*
 
-# Build directories
-dist/
-build/
-target/
-.mypy_cache/
-.pytest_cache/
-.coverage
-coverage/
-htmlcov/
-
-# Editors/IDE
+# Editors and IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
-
-# System files
 .DS_Store
 Thumbs.db
-*.log
+
+# Build directories
+build/
+dist/
+target/
+.coverage
+htmlcov/
+coverage/
+
+# Python specific
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+.Python
+env/
+venv/
+ENV/
+.venv
+.env
+.envrc
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
 
 # Compressed files
 *.zip
@@ -63,12 +101,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Gradle
-.gradle/
-
-# Julia
-julia-*/
-
-# Zig
-zig*/
+```

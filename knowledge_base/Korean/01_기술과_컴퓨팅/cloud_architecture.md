@@ -221,7 +221,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### 데이터 웨어하우징
 - **서비스**: Snowflake, Redshift, BigQuery, Synapse
-- **특징**: 컬럼nar 스토리지, MPP 아키텍처
+- **특징**: 컬럼나 스토리지, MPP 아키텍처
 - **사용 사례**: 분석, BI, 대규모 데이터 분석
 
 ### 캐싱 서비스
@@ -339,7 +339,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **오토스케일링**: 수요에 따라 확장
 - **리저브드 용량**: 안정적 워크로드에 약정
 - **스팟 사용**: 내결함성 있고 유연한 워크로드에 사용
-- **스토리지 티어**:低频度 데이터를 저렴한 티어로 이동
+- **스토리지 티어**: 저빈도 데이터를 저렴한 티어로 이동
 - **정리**: 미사용 리소스, 스냅샷, AMI 삭제
 
 ### 비용 관리 도구

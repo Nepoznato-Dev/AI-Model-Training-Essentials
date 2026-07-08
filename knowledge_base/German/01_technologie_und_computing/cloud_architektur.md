@@ -21,7 +21,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 
 ### Cloud-Bereitstellungsmodelle
 - **Public Cloud**: Im Besitz von Anbietern, gemeinsame Infrastruktur (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated für eine einzelne Organisation (vor Ort oder gehostet)
+- **Private Cloud**: Dediziert für eine einzelne Organisation (vor Ort oder gehostet)
 - **Hybrid Cloud**: Kombination von Public und Private Clouds
 - **Multi-Cloud**: Verwendung mehrerer Public Cloud-Anbieter
 - **Community Cloud**: Gemeinsam genutzt von Organisationen mit gemeinsamen Anliegen
