@@ -26,7 +26,7 @@ covering everyday vocabulary, academic terms, と words commonly encountered
 **adequate** — satisfactory; just enough のために a purpose.
 **adjacent** — next to or adjoining something else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead の その current time.
+**advance** — to move forward; progress; also, ahead の current time.
 **advantage** — a condition that gives a favourable position over others.
 **adverse** — unfavourable; harmful.
 **affect** — to have an impact on something (verb); emotion (noun, formal).
@@ -100,7 +100,7 @@ covering everyday vocabulary, academic terms, と words commonly encountered
 ## E
 
 **efficient** — achieving results と minimum waste の time or resources.
-**element** — a basic component; one の その chemical substances で その periodic table.
+**element** — a basic component; one の chemical substances で その periodic table.
 **embed** — to fix firmly within; to incorporate into a larger structure.
 **enable** — to make possible; to activate a feature.
 **enhance** — to improve その quality or value の something.
@@ -244,7 +244,7 @@ covering everyday vocabulary, academic terms, と words commonly encountered
 **static** — not changing; で コンピューティング, fixed at compile time or not associated と instances.
 **store** — to save データ のために later use.
 **structure** — その arrangement の parts; a composite データ type.
-**summarise** — to give a brief statement の その main points.
+**summarise** — to give a brief statement の main points.
 **synchronise** — to cause to happen at その same time or rate.
 **構文** — その rules governing その structure の statements で a 言語.
 
@@ -547,7 +547,7 @@ covering everyday vocabulary, academic terms, と words commonly encountered
 **ontology** — その study の being; で CS, a formal representation の knowledge.
 **opaque** — not transparent; difficult to understand.
 **operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — その value の その best alternative forgone.
+**opportunity cost** — その value の best alternative forgone.
 **optimization** — making something as effective as possible; finding best solutions.
 **oracle** — a source の wisdom; で コンピューティング, a theoretical black box answering questions.
 **orthogonal** — at right angles; independent; unrelated.

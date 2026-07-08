@@ -236,7 +236,7 @@
 - **Tiêu đề bảo mật**: X-Frame-Options, X-Content-Type-Options
 - **Quét phụ thuộc**: kiểm toán npm, Snyk, Dependabot
 
-##Thử nghiệm### Các loại thử nghiệm
+## Thử nghiệm### Các loại thử nghiệm
 - **Kiểm tra đơn vị**: Các thành phần/chức năng riêng lẻ
 - **Thử nghiệm tích hợp**: Tương tác thành phần
 - **End-to-End (E2E)**: Quy trình làm việc đầy đủ của người dùng

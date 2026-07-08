@@ -35,7 +35,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### Penyaringan (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -53,7 +53,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting and Limiting
+### Pengurutan and Limiting
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -70,7 +70,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## Agregasi Functions
 
 ```sql
 -- Count rows

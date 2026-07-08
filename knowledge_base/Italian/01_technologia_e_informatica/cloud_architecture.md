@@ -47,16 +47,16 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Quota di mercato**: ~32% (maggior fornitore)
 - **Servizi chiave**:
   - Calcolo: EC2, Lambda, ECS, EKS
-  - Stoccaggio: S3, EBS, Glacier
-  - Banca dati: RDS, DynamoDB, Aurora
+  - Archiviazione: S3, EBS, Glacier
+  - Database: RDS, DynamoDB, Aurora
   - Rete: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
-###Microsoft Azure
+### Microsoft Azure
 - **Quota di mercato**: ~23%
 - **Punti di forza**: integrazione aziendale, cloud ibrido, ecosistema Microsoft
 - **Servizi chiave**:
-  -Calcolo: macchine virtuali, funzioni di Azure, AKS
+  - Calcolo: macchine virtuali, funzioni di Azure, AKS
   - Archiviazione: archiviazione BLOB, archiviazione su disco
   - Database: database SQL, Cosmos DB
   - Networking: rete virtuale, gestione del traffico
@@ -131,13 +131,15 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - I produttori emettono eventi, i consumatori reagiscono
 - **Modelli**: sourcing di eventi, CQRS, pub/sub
 - **Tecnologie**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Vantaggi**: accoppiamento flessibile, scalabilità, elaborazione in tempo reale#### Architettura senza server
+- **Vantaggi**: accoppiamento flessibile, scalabilità, elaborazione in tempo reale
+
+#### Architettura senza server
 - Nessuna gestione del server richiesta
 - Paga per esecuzione
 - Ridimensionamento automatico
 - **Componenti**: Funzioni, API Gateway, servizi gestiti
 - **Vantaggi**: efficienza dei costi, operazioni ridotte, implementazione rapida
-- **Considerazioni**: avviamenti a freddo, vincoli al fornitore, limiti di esecuzione
+- **Considerazioni**: avviamenti a freddo, vincoli del fornitore, limiti di esecuzione
 
 #### Architettura a più livelli (N livelli)
 - Livello di presentazione (interfaccia utente)
@@ -220,7 +222,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Memoria nella cache CDN**: CloudFront, Cloud CDN, CDN di Azure
 - **Casi d'uso**: archiviazione delle sessioni, memorizzazione nella cache delle query, distribuzione dei contenuti
 
-##Rete
+## Rete
 
 ### Reti virtuali
 - **VPC/VNet**: ambienti di rete isolati
@@ -229,7 +231,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Tabelle di percorso**: controlla il flusso del traffico
 
 ### Bilanciamento del carico
-- **Tipi**: Applicazione (L7), Rete (L4), Gateway
+- **Tipi**: Applicazione (L7), rete (L4), Gateway
 - **Caratteristiche**: controlli di integrità, terminazione SSL, sessioni permanenti
 - **Servizi**: ELB/ALB/NLB, bilanciamento del carico nel cloud, bilanciatore del carico di Azure
 
@@ -262,7 +264,9 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Gruppi**: raccolte di utenti
 - **Ruoli**: Credenziali temporanee per servizi/utenti
 - **Politiche**: documenti JSON che definiscono le autorizzazioni
-- **Principi**: Privilegio minimo, separazione dei compiti### Sicurezza della rete
+- **Principi**: Privilegio minimo, separazione dei compiti
+
+### Sicurezza della rete
 - **Gruppi di sicurezza**: firewall con stato per le istanze
 - **ACL di rete**: firewall stateless per sottoreti
 - **Web Application Firewall (WAF)**: protezione dagli exploit web
@@ -272,7 +276,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Crittografia a riposo**: KMS, chiavi gestite dal cliente
 - **Crittografia in transito**: TLS/SSL, HTTPS
 - **Gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
-- **Gestione dei segreti**: Gestione dei segreti, Key Vault
+- **Gestione dei segreti**: gestione dei segreti, Key Vault
 
 ### Conformità e governance
 - **Certificazioni**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
@@ -333,8 +337,8 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ### Strumenti di gestione dei costi
 - **AWS**: Cost Explorer, Budget, Trusted Advisor
-- **Azzurro**: gestione dei costi, consulente
-- **GCP**: rapporti di fatturazione, suggeritore
+- **Azure**: gestione dei costi, advisor
+- **GCP**: rapporti di fatturazione, recommender
 - **Di terze parti**: CloudHealth, CloudCheckr, Datadog
 
 ## Alta disponibilità e ripristino di emergenza

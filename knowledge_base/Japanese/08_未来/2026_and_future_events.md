@@ -9,7 +9,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## 概要 の 2026
 
-2026 is a common year starting on Thursday で その Gregorian calendar. It marks その 250th anniversary (semiquincentennial) の その United States Declaration の Independence, と major celebrations 予定 throughout その US including special イベント で Philadelphia, Boston, と Washington D.C. その year falls within その UN Decade の Action のために Sustainable 開発 Goals (2020-2030), making it a critical midpoint のために assessing global progress on poverty, climate, health, と education targets. Technologically, 2026 represents an important milestone のために many corporate roadmaps で AI, electric vehicles, space exploration, と renewable energy デプロイ.
+2026 is a common year starting on Thursday で その Gregorian calendar. It marks その 250th anniversary (semiquincentennial) の United States Declaration の Independence, と major celebrations 予定 throughout その US including special イベント で Philadelphia, Boston, と Washington D.C. その year falls within その UN Decade の Action のために Sustainable 開発 Goals (2020-2030), making it a critical midpoint のために assessing global progress on poverty, climate, health, と education targets. Technologically, 2026 represents an important milestone のために many corporate roadmaps で AI, electric vehicles, space exploration, と renewable energy デプロイ.
 
 ## Space Exploration Milestones
 

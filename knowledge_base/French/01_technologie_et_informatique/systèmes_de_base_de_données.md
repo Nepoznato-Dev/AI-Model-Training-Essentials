@@ -12,7 +12,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### What is a Base de données?
 A Base de données is an organized collection de structured information stored electronically, designed pour efficient retrieval, insertion, updating, et deletion de Données.
 
-### Base de données Gestion Systèmes (DBMS)
+### Base de données gestion Systèmes (DBMS)
 Software that interacts avec end users, applications, et le/la Base de données itself to capture et analyze Données. Exemples: MySQL, PostgreSQL, Oracle, MongoDB.
 
 ### Key Concepts
@@ -80,7 +80,7 @@ DELETE FROM users WHERE id = 1;
 
 #### Document Stores
 - **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content Gestion, catalogs, user profiles
+- **Use Cases**: Content gestion, catalogs, user profiles
 - **Exemples**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
@@ -220,7 +220,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Access Control
 - **Authentication**: Verify user identity
 - **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions pour easier Gestion
+- **Roles**: Group permissions pour easier gestion
 - **Principle de Least Privilege**: Minimum necessary access
 
 ### Données Protection
@@ -277,7 +277,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Benefits
 - Abstraction from SQL
 - Type safety
-- Migration Gestion
+- Migration gestion
 - Query building APIs
 
 ### Drawbacks
@@ -292,10 +292,10 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Installation et configuration
 - Performance tuning
 - Backup et recovery
-- Sécurité Gestion
+- Sécurité gestion
 - Capacity planning
 - Monitoring et alerting
-- Patch Gestion
+- Patch gestion
 
 ### Monitoring Metrics
 - Query response time

@@ -2,193 +2,193 @@
 This file was automatically translated from English to German.
 Source: math_and_logic.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Mathematics und Logic
+# Mathematik und Logik
 
-## What is Mathematics?
+## Was ist Mathematik?
 
-Mathematics is der/die/das study von numbers, shapes, patterns, und logical relationships. It is both a Wissenschaft und a Sprache used to describe der/die/das universe. Mathematics is divided into branches including arithmetic, algebra, geometry, calculus, Statistiken, und logic. Mathematics is der/die/das foundation von physics, engineering, computer Wissenschaft, Wirtschaft, und many other fields.
+Mathematik ist das Studium von Zahlen, Formen, Mustern und logischen Beziehungen. Sie ist sowohl eine Wissenschaft als auch eine Sprache, die verwendet wird, um das Universum zu beschreiben. Die Mathematik ist in Zweige unterteilt, darunter Arithmetik, Algebra, Geometrie, Analysis, Statistik und Logik. Mathematik ist die Grundlage für Physik, Ingenieurwesen, Informatik, Wirtschaft und viele andere Bereiche.
 
-## Arithmetic
+## Arithmetik
 
-Arithmetic is der/die/das branch von mathematics dealing mit basic operations on numbers. der/die/das four fundamental operations are addition (+), subtraction (−), multiplication (×), und division (÷). der/die/das order von operations specifies der/die/das sequence in which calculations must be performed: Parentheses, Exponents, Multiplication und Division (left to right), Addition und Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 und itself. der/die/das first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, und 29.
+Die Arithmetik ist der Zweig der Mathematik, der sich mit Grundrechenarten von Zahlen befasst. Die vier Grundrechenarten sind Addition (+), Subtraktion (−), Multiplikation (×) und Division (÷). Die Reihenfolge der Operationen legt die Sequenz fest, in der Berechnungen durchgeführt werden müssen: Klammern, Exponenten, Multiplikation und Division (von links nach rechts), Addition und Subtraktion (von links nach rechts). Dies wird oft als **PEMDAS** oder **BODMAS** bezeichnet. Eine Primzahl ist eine ganze Zahl größer als 1, die keine Teiler außer 1 und sich selbst hat. Die ersten Primzahlen sind 2, 3, 5, 7, 11, 13, 17, 19, 23 und 29.
 
 **Beispiele:**
-- Prime factorization: 84 = 2² × 3 × 7
-- Greatest Common Divisor (GCD) von 24 und 36: 12
-- Least Common Multiple (LCM) von 4 und 6: 12
+- Primfaktorzerlegung: 84 = 2² × 3 × 7
+- Größter gemeinsamer Teiler (ggT) von 24 und 36: 12
+- Kleinstes gemeinsames Vielfaches (kgV) von 4 und 6: 12
 
 ## Algebra
 
-Algebra uses letters und symbols to represent numbers und quantities in equations und formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding der/die/das value(s) von der/die/das variable(s) that make der/die/das equation true.
+Die Algebra verwendet Buchstaben und Symbole, um Zahlen und Größen in Gleichungen und Formeln darzustellen. Eine **Variable** ist ein Symbol (meist ein Buchstabe), das eine unbekannte oder sich ändernde Größe repräsentiert. Eine **Gleichung** besagt, dass zwei Ausdrücke gleich sind. Das Lösen einer Gleichung bedeutet, den Wert/die Werte der Variablen zu finden, die die Gleichung wahr machen.
 
-der/die/das **quadratic formula** solves equations von der/die/das form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
-
-
-A **function** maps each input to exactly one output. Common functions include:
-- Linear: y = mx + b (straight line, constant rate von change)
-- Quadratic: y = ax² + bx + c (parabola, curved)
-- Exponential: y = a × bˣ (growth or decay, rapid change)
-- Logarithmic: y = log_b(x) (inverse von exponential)
-
-**Key concepts:**
-- Domain: der/die/das set von all possible input values
-- Range: der/die/das set von all possible output values
-- Slope: rate von change (m in y = mx + b)
-- Intercept: where der/die/das function crosses der/die/das y-axis (b in y = mx + b)
-
-## Geometry
-
-Geometry is der/die/das branch von mathematics that studies shapes, sizes, positions, und properties von figures. A point has no size; it represents a location. A line extends infinitely in both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
-
-**Key rules:**
-- der/die/das sum von angles in a triangle is always 180 degrees.
-- der/die/das sum von angles in a quadrilateral is always 360 degrees.
-- der/die/das Pythagorean theorem: in a right triangle, a² + b² = c² (where c is der/die/das hypotenuse).
-- Circle circumference: 2πr
-- Circle area: πr²
-- Sphere volume: (4/3)πr³
-
-**π (pi)** is approximately 3.14159 und is der/die/das ratio von a circle's circumference to its diameter.
-
-**Common geometric shapes:**
-- Triangle: 3 sides, angles sum to 180°
-- Square: 4 equal sides, 4 right angles
-- Rectangle: 4 sides, opposite sides equal, 4 right angles
-- Circle: no sides, continuous curved boundary
-- Pentagon: 5 sides, angles sum to 540°
-- Hexagon: 6 sides, angles sum to 720°
-
-## Statistiken und Probability
-
-Statistiken is der/die/das Wissenschaft von collecting, analysing, interpreting, und presenting Daten.
-
-**Measures von central tendency:**
-- **Mean** (average): sum von all values divided by der/die/das number von values
-- **Median**: middle value when Daten is sorted (less sensitive to outliers)
-- **Mode**: most frequently occurring value (can have multiple modes)
-
-**Measures von spread:**
-- **Range**: maximum - minimum
-- **Variance**: average von squared deviations from der/die/das mean
-- **Standard deviation**: square root von variance (in same units as Daten)
-
-Probability measures der/die/das likelihood von an event occurring, ranging from 0 (impossible) to 1 (certain). der/die/das probability von two independent Ereignisse both occurring is der/die/das product von their individual probabilities.
-
-**Example:** Probability von rolling a 6 on a fair die: 1/6. Probability von rolling two 6s in a row: (1/6) × (1/6) = 1/36.
-
-## Probability für Datenverarbeitung und ML
-
-A **random variable** is a variable whose value depends on der/die/das outcome von a random process. A **probability distribution** describes how likely each outcome is.
-
-**Common distributions:**
-- **Bernoulli**: single trial mit two outcomes (e.g., coin flip)
-- **Binomial**: number von successes in n independent Bernoulli trials
-- **Normal (Gaussian)**: bell curve, symmetric around der/die/das mean (common in natural phenomena)
-- **Poisson**: number von Ereignisse in a fixed interval (e.g., emails per hour)
-
-**Expected value** is der/die/das long-run average outcome von a random variable. **Variance** measures spread around that expectation.
-
-**Conditional probability** describes der/die/das probability von an event given another event has occurred: P(A|B) = P(A ∩ B) / P(B) [if P(B) > 0].
-
-**Bayes' theorem** updates beliefs using evidence: P(A|B) = P(B|A) × P(A) / P(B).
+Die **quadratische Formel** löst Gleichungen der Form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
 
-in Maschinelles Lernen, probability underpins classification confidence, uncertainty estimation, Bayesian methods, und many loss functions (such as cross-entropy).
+Eine **Funktion** ordnet jeder Eingabe genau eine Ausgabe zu. Häufige Funktionen umfassen:
+- Linear: y = mx + b (Gerade, konstante Änderungsrate)
+- Quadratisch: y = ax² + bx + c (Parabel, gekrümmt)
+- Exponential: y = a × bˣ (Wachstum oder Zerfall, schnelle Änderung)
+- Logarithmisch: y = log_b(x) (Umkehrung der Exponentialfunktion)
 
-## Calculus
+**Schlüsselkonzepte:**
+- Definitionsbereich: die Menge aller möglichen Eingangswerte
+- Wertebereich: die Menge aller möglichen Ausgangswerte
+- Steigung: Änderungsrate (m in y = mx + b)
+- Achsenabschnitt: wo die Funktion die y-Achse schneidet (b in y = mx + b)
 
-Calculus is der/die/das branch von mathematics that studies continuous change.
+## Geometrie
 
-**Differential calculus** deals mit rates von change und slopes von curves, using **derivatives**. der/die/das derivative von a function f(x) represents der/die/das rate von change von f mit respect to x at a point. Notation: f'(x) or df/dx.
+Die Geometrie ist der Zweig der Mathematik, der Formen, Größen, Positionen und Eigenschaften von Figuren untersucht. Ein Punkt hat keine Größe; er repräsentiert einen Ort. Eine Linie erstreckt sich unendlich in beide Richtungen. Ein Liniensegment hat zwei Endpunkte. Ein Winkel wird von zwei Strahlen gebildet, die einen Endpunkt teilen.
 
-**Common derivatives:**
+**Schlüsselregeln:**
+- Die Summe der Winkel in einem Dreieck beträgt immer 180 Grad.
+- Die Summe der Winkel in einem Viereck beträgt immer 360 Grad.
+- Der Satz des Pythagoras: In einem rechtwinkligen Dreieck gilt a² + b² = c² (wobei c die Hypotenuse ist).
+- Kreisumfang: 2πr
+- Kreisfläche: πr²
+- Kugelvolumen: (4/3)πr³
+
+**π (Pi)** ist ungefähr 3,14159 und ist das Verhältnis des Umfangs eines Kreises zu seinem Durchmesser.
+
+**Häufige geometrische Formen:**
+- Dreieck: 3 Seiten, Winkelsumme 180°
+- Quadrat: 4 gleich lange Seiten, 4 rechte Winkel
+- Rechteck: 4 Seiten, gegenüberliegende Seiten gleich lang, 4 rechte Winkel
+- Kreis: keine Seiten, kontinuierlich gekrümmte Begrenzung
+- Fünfeck: 5 Seiten, Winkelsumme 540°
+- Sechseck: 6 Seiten, Winkelsumme 720°
+
+## Statistik und Wahrscheinlichkeit
+
+Die Statistik ist die Wissenschaft vom Sammeln, Analysieren, Interpretieren und Präsentieren von Daten.
+
+**Maße der zentralen Tendenz:**
+- **Mittelwert** (Durchschnitt): Summe aller Werte geteilt durch die Anzahl der Werte
+- **Median**: mittlerer Wert, wenn Daten sortiert sind (weniger empfindlich gegenüber Ausreißern)
+- **Modus**: am häufigsten vorkommender Wert (kann mehrere Modi haben)
+
+**Maße der Streuung:**
+- **Spannweite**: Maximum - Minimum
+- **Varianz**: Durchschnitt der quadrierten Abweichungen vom Mittelwert
+- **Standardabweichung**: Quadratwurzel der Varianz (in denselben Einheiten wie die Daten)
+
+Die Wahrscheinlichkeit misst die Wahrscheinlichkeit, dass ein Ereignis eintritt, im Bereich von 0 (unmöglich) bis 1 (sicher). Die Wahrscheinlichkeit, dass zwei unabhängige Ereignisse beide eintreten, ist das Produkt ihrer einzelnen Wahrscheinlichkeiten.
+
+**Beispiel:** Wahrscheinlichkeit, eine 6 mit einem fairen Würfel zu würfeln: 1/6. Wahrscheinlichkeit, zwei 6er hintereinander zu würfeln: (1/6) × (1/6) = 1/36.
+
+## Wahrscheinlichkeit für Datenverarbeitung und ML
+
+Eine **Zufallsvariable** ist eine Variable, deren Wert vom Ergebnis eines Zufallsprozesses abhängt. Eine **Wahrscheinlichkeitsverteilung** beschreibt, wie wahrscheinlich jedes Ergebnis ist.
+
+**Häufige Verteilungen:**
+- **Bernoulli**: einzelner Versuch mit zwei Ergebnissen (z.B. Münzwurf)
+- **Binomial**: Anzahl der Erfolge in n unabhängigen Bernoulli-Versuchen
+- **Normal (Gauß)**: Glockenkurve, symmetrisch um den Mittelwert (häufig bei natürlichen Phänomenen)
+- **Poisson**: Anzahl der Ereignisse in einem festen Intervall (z.B. E-Mails pro Stunde)
+
+**Erwartungswert** ist der langfristige Durchschnittsausgang einer Zufallsvariablen. **Varianz** misst die Streuung um diese Erwartung.
+
+**Bedingte Wahrscheinlichkeit** beschreibt die Wahrscheinlichkeit eines Ereignisses, gegeben dass ein anderes Ereignis eingetreten ist: P(A|B) = P(A ∩ B) / P(B) [wenn P(B) > 0].
+
+**Satz von Bayes** aktualisiert Überzeugungen anhand von Beweisen: P(A|B) = P(B|A) × P(A) / P(B).
+
+
+Beim Maschinellen Lernen bildet Wahrscheinlichkeit die Grundlage für Klassifizierungskonfidenz, Unsicherheitsschätzung, bayessche Methoden und viele Verlustfunktionen (wie Kreuzentropie).
+
+## Analysis (Calculus)
+
+Die Analysis ist der Zweig der Mathematik, der kontinuierliche Veränderung untersucht.
+
+**Differentialrechnung** befasst sich mit Änderungsraten und Steigungen von Kurven unter Verwendung von **Ableitungen**. Die Ableitung einer Funktion f(x) repräsentiert die Änderungsrate von f in Bezug auf x an einem Punkt. Notation: f'(x) oder df/dx.
+
+**Häufige Ableitungen:**
 - d/dx [x^n] = n·x^(n−1)
 - d/dx [e^x] = e^x
 - d/dx [ln(x)] = 1/x
 - d/dx [sin(x)] = cos(x)
 
-**Integral calculus** deals mit accumulation von quantities und areas under curves, using **integrals**. der/die/das integral represents der/die/das area under der/die/das curve between two points.
+**Integralrechnung** befasst sich mit der Akkumulation von Größen und Flächen unter Kurven unter Verwendung von **Integralen**. Das Integral repräsentiert die Fläche unter der Kurve zwischen zwei Punkten.
 
-der/die/das **fundamental theorem von calculus** connects differentiation und integration: differentiation und integration are inverse operations.
+Der **Hauptsatz der Analysis** verbindet Differentiation und Integration: Differentiation und Integration sind inverse Operationen.
 
-Calculus was developed independently by Isaac Newton und Gottfried Wilhelm Leibniz in der/die/das 17th century.
+Die Analysis wurde unabhängig von Isaac Newton und Gottfried Wilhelm Leibniz im 17. Jahrhundert entwickelt.
 
-## Number Systeme
+## Zahlensysteme
 
-- **Natural numbers**: 1, 2, 3, 4, ... (counting numbers)
-- **Whole numbers**: 0, 1, 2, 3, ... (natural numbers plus zero)
-- **Integers**: ..., −2, −1, 0, 1, 2, ... (all whole numbers und their negatives)
-- **Rational numbers**: numbers expressible as p/q where p und q are integers und q ≠ 0 (e.g., 1/2, 3/4, −5/3)
-- **Irrational numbers**: cannot be expressed as a fraction (e.g., √2, π, e)
-- **Real numbers**: all rational und irrational numbers (der/die/das number line)
-- **Imaginary numbers**: involve der/die/das square root von negative numbers; i = √(−1)
-- **Complex numbers**: combine real und imaginary parts (a + bi)
+- **Natürliche Zahlen**: 1, 2, 3, 4, ... (Zählzahlen)
+- **Ganze Zahlen (nicht-negativ)**: 0, 1, 2, 3, ... (natürliche Zahlen plus Null)
+- **Ganze Zahlen (Integer)**: ..., −2, −1, 0, 1, 2, ... (alle ganzen Zahlen und ihre Negativen)
+- **Rationale Zahlen**: Zahlen, die als p/q ausgedrückt werden können, wobei p und q ganze Zahlen sind und q ≠ 0 (z.B. 1/2, 3/4, −5/3)
+- **Irrationale Zahlen**: können nicht als Bruch ausgedrückt werden (z.B. √2, π, e)
+- **Reelle Zahlen**: alle rationalen und irrationalen Zahlen (die Zahlengerade)
+- **Imaginäre Zahlen**: beinhalten die Quadratwurzel negativer Zahlen; i = √(−1)
+- **Komplexe Zahlen**: kombinieren reelle und imaginäre Teile (a + bi)
 
-## Logic und Reasoning
+## Logik und Schlussfolgern
 
-Logic is der/die/das study von valid reasoning.
+Die Logik ist das Studium des gültigen Schlussfolgerns.
 
-**Deductive reasoning** draws specific conclusions from general premises. If der/die/das premises are true und der/die/das argument is valid, der/die/das conclusion must be true.
-- **Example:** All humans are mortal. Socrates is human. Therefore, Socrates is mortal.
+**Deduktives Schlussfolgern** zieht spezifische Schlussfolgerungen aus allgemeinen Prämissen. Wenn die Prämissen wahr sind und das Argument gültig ist, muss die Schlussfolgerung wahr sein.
+- **Beispiel:** Alle Menschen sind sterblich. Sokrates ist ein Mensch. Daher ist Sokrates sterblich.
 
-**Inductive reasoning** draws general conclusions from specific observations. It does not guarantee der/die/das conclusion is true, but makes it probable.
-- **Example:** Every swan I've seen is white. Therefore, all swans are white. (Note: this is false; black swans exist!)
+**Induktives Schlussfolgern** zieht allgemeine Schlussfolgerungen aus spezifischen Beobachtungen. Es garantiert nicht, dass die Schlussfolgerung wahr ist, macht sie aber wahrscheinlich.
+- **Beispiel:** Jeder Schwan, den ich gesehen habe, ist weiß. Daher sind alle Schwäne weiß. (Hinweis: Dies ist falsch; es gibt schwarze Schwäne!)
 
-**Common logical fallacies (errors in reasoning):**
-- **Ad hominem**: attacking der/die/das person rather than der/die/das argument
-- **Straw man**: misrepresenting an argument to make it easier to attack
-- **False dichotomy**: presenting only two options when more exist
-- **Circular reasoning**: using der/die/das conclusion as a premise
-- **Appeal to authority**: claiming something is true because an authority says so
-- **Post hoc fallacy**: assuming that because A happened before B, A caused B
+**Häufige logische Fehlschlüsse (Fehler im Schlussfolgern):**
+- **Ad hominem**: Angriff auf die Person statt auf das Argument
+- **Strohmann-Argument**: Verdrehen eines Arguments, um es leichter angreifen zu können
+- **Falsches Dilemma**: Nur zwei Optionen präsentieren, wenn mehr existieren
+- **Zirkelschluss**: Verwendung der Schlussfolgerung als Prämisse
+- **Autoritätsgläubigkeit**: Behaupten, etwas sei wahr, weil eine Autorität es sagt
+- **Post-hoc-Fehlschluss**: Annehmen, dass, weil A vor B geschah, A B verursacht hat
 
-## Sets
+## Mengen
 
-A **set** is a collection von distinct objects.
-- **Union** (A ∪ B): all elements from both sets
-- **Intersection** (A ∩ B): only elements common to both
-- **Empty set** (∅ or {}): contains no elements
-- **Subset** (A ⊆ B): all elements von A are also in B
-- **Venn diagrams**: visually represent relationships between sets
+Eine **Menge** ist eine Sammlung von distincten Objekten.
+- **Vereinigung** (A ∪ B): alle Elemente aus beiden Mengen
+- **Schnittmenge** (A ∩ B): nur Elemente, die beiden gemeinsam sind
+- **Leere Menge** (∅ oder {}): enthält keine Elemente
+- **Teilmenge** (A ⊆ B): alle Elemente von A sind auch in B enthalten
+- **Venn-Diagramme**: veranschaulichen Beziehungen zwischen Mengen visuell
 
-Set theory is der/die/das foundation von modern mathematics und logic.
+Die Mengenlehre ist die Grundlage der modernen Mathematik und Logik.
 
-## Binary und Number Bases
+## Binärsysteme und Zahlbasen
 
-Computers represent Daten in **binary** (base 2), using only digits 0 und 1. Each binary digit is called a **bit**. Eight bits make one **byte**.
+Computer repräsentieren Daten im **Binärsystem** (Basis 2) und verwenden nur die Ziffern 0 und 1. Jede Binärziffer wird als **Bit** bezeichnet. Acht Bits ergeben ein **Byte**.
 
-**Decimal** is der/die/das base-10 number system humans typically use.
+Das **Dezimalsystem** ist das Basis-10-Zahlensystem, das Menschen typischerweise verwenden.
 
-**Hexadecimal** is base 16, using digits 0–9 und letters A–F, often used in Datenverarbeitung to represent binary Daten compactly.
+Das **Hexadezimalsystem** ist Basis 16 und verwendet die Ziffern 0–9 und die Buchstaben A–F. Es wird in der Informatik häufig verwendet, um Binärdaten kompakt darzustellen.
 
-**Conversions:**
-- Binary 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (decimal)
-- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (decimal)
+**Umrechnungen:**
+- Binär 1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (dezimal)
+- Hex A3 = 10×16¹ + 3×16⁰ = 160 + 3 = 163 (dezimal)
 
-Converting between number bases is a fundamental concept in computer Wissenschaft.
+Die Umrechnung zwischen Zahlbasen ist ein fundamentales Konzept in der Informatik.
 
-## Linear Algebra für Developers und ML
+## Lineare Algebra für Entwickler und ML
 
-Linear algebra studies vectors, matrices, und linear transformations.
+Die lineare Algebra untersucht Vektoren, Matrizen und lineare Transformationen.
 
-A **vector** is an ordered list von numbers (e.g., features in an ML sample).
-- Example: [23, 1.8, 175] represents a person's age, height, und weight
+Ein **Vektor** ist eine geordnete Liste von Zahlen (z.B. Merkmale in einer ML-Stichprobe).
+- Beispiel: [23, 1.8, 175] repräsentiert das Alter, die Größe und das Gewicht einer Person
 
-A **matrix** is a 2D array von numbers (e.g., model weights or dataset batches).
-- Example: [[1, 2], [3, 4]] is a 2×2 matrix
+Eine **Matrix** ist ein 2D-Array von Zahlen (z.B. Modellgewichte oder Datensatz-Batches).
+- Beispiel: [[1, 2], [3, 4]] ist eine 2×2-Matrix
 
-**Matrix multiplication** combines linear transformations und is a core operation in graphics, simulation, und Neuronale Netze.
+**Matrixmultiplikation** kombiniert lineare Transformationen und ist eine Kernoperation in Grafik, Simulation und neuronalen Netzen.
 
-**Dot product** measures similarity und projection between vectors:
+**Skalarprodukt** misst Ähnlichkeit und Projektion zwischen Vektoren:
 - a·b = Σ(a_i × b_i)
-- **Cosine similarity** = (a·b) / (||a|| × ||b||)
-- Cosine similarity ranges from -1 (opposite) to 1 (same direction)
+- **Kosinus-Ähnlichkeit** = (a·b) / (||a|| × ||b||)
+- Die Kosinus-Ähnlichkeit reicht von -1 (entgegengesetzt) bis 1 (gleiche Richtung)
 
-**Eigenvalues und eigenvectors** describe directions that are scaled (not rotated) by a matrix und are used in methods such as PCA (Principal Component Analysis).
+**Eigenwerte und Eigenvektoren** beschreiben Richtungen, die von einer Matrix skaliert (nicht rotiert) werden, und werden in Methoden wie der PCA (Hauptkomponentenanalyse) verwendet.
 
-**Rank** indicates how much independent information a matrix contains. Low-rank approximations are useful für compression und dimensionality reduction.
+**Rang** gibt an, wie viele unabhängige Informationen eine Matrix enthält. Niedrigrangige Approximationen sind nützlich für Kompression und Dimensionsreduktion.
 
-Most modern ML workloads rely heavily on optimized linear algebra libraries und hardware acceleration.
+Die meisten modernen ML-Workloads verlassen sich stark auf optimierte Lineare-Algebra-Bibliotheken und Hardwarebeschleunigung.

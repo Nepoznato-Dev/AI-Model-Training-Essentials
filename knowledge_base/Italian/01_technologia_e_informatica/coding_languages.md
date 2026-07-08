@@ -1,19 +1,19 @@
 # Linguaggi di codifica
 
-## Pitone
+## Python
 
 Python è un linguaggio di programmazione di alto livello, interpretato, tipizzato dinamicamente e di uso generale. Enfatizza la leggibilità e utilizza rientri significativi come delimitatori di blocco.
 
 ### Nozioni di base sulla sintassi
 
 ```python
-# Variables and types
+# Variabili e tipi
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Condizionali
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -21,7 +21,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Cicli
 for i in range(5):
     print(i)
 
@@ -269,7 +269,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Gestione degli errori
+### gestione degli errori
 
 ```rust
 use std::fs;

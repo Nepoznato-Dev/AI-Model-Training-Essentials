@@ -29,7 +29,7 @@ bool(1)           # True
 ```python
 s = "Hello, World!"
 
-# Slicing
+# Pengirisan
 s[0]              # 'H'
 s[-1]             # '!'
 s[0:5]            # 'Hello'
@@ -49,7 +49,7 @@ f"Value: {x}"     # f-string formatting
 
 ## Control Flow
 
-### Conditionals
+### Kondisional
 ```python
 if x > 10:
     print("Greater than 10")
@@ -62,7 +62,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### Perulangan
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -142,7 +142,7 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## Fungsi
 
 ### Definition
 ```python
@@ -171,7 +171,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## Kelas
 
 ```python
 class Person:
@@ -203,12 +203,12 @@ class Employee(Person):
 ## File I/O
 
 ```python
-# Reading files
+# Pembacaan files
 with open("file.txt", "r") as f:
     content = f.read()        # Read entire file
     lines = f.readlines()     # Read as list of lines
 
-# Writing files
+# Penulisan files
 with open("file.txt", "w") as f:
     f.write("Hello\n")
 

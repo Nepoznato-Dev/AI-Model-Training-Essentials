@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Coding Languages
+# Langages de programmation
 
 ## Python
 
@@ -14,13 +14,13 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### Syntaxe Bases
 
 ```python
-# Variables and types
+# Variables et types
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Conditionnels
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -28,7 +28,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# Boucles
 for i in range(5):
     print(i)
 
@@ -36,7 +36,7 @@ while active:
     active = False
 ```
 
-### Functions et type hints
+### Fonctions et type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
@@ -84,7 +84,7 @@ class Dog(Animal):
 
 ## JavaScript
 
-JavaScript is le/la primary Langue de le/la Web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
+JavaScript is le/la primary Langue du  Web. It runs dans browsers et on servers via Node.js. It is dynamically typed et prototype-based.
 
 ### Modern Syntaxe (ES6+)
 
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### gestion des erreurs
 
 ```rust
 use std::fs;
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions et multiple return values
+### Fonctions et multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions et closures
+### Fonctions et closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }

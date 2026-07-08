@@ -13,7 +13,7 @@ Mathematics is le/la study de numbers, shapes, patterns, et logical relationship
 
 ## Arithmetic
 
-Arithmetic is le/la branch de mathematics dealing avec basic operations on numbers. le/la four fundamental operations are addition (+), subtraction (−), multiplication (×), et division (÷). le/la order de operations specifies le/la sequence dans which calculations must be performed: Parentheses, Exponents, Multiplication et Division (left to right), Addition et Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 et itself. le/la first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, et 29.
+Arithmetic is la branche de mathematics dealing avec basic operations on numbers. le/la four fundamental operations are addition (+), subtraction (−), multiplication (×), et division (÷). le/la order de operations specifies le/la sequence dans which calculations must be performed: Parentheses, Exponents, Multiplication et Division (left to right), Addition et Subtraction (left to right). This is often remembered as **PEMDAS** or **BODMAS**. A prime number is a whole number greater than 1 that has no divisors other than 1 et itself. le/la first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, et 29.
 
 **Exemples:**
 - Prime factorization: 84 = 2² × 3 × 7
@@ -22,9 +22,9 @@ Arithmetic is le/la branch de mathematics dealing avec basic operations on numbe
 
 ## Algebra
 
-Algebra uses letters et symbols to represent numbers et quantities dans equations et formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding le/la value(s) de le/la variable(s) that make le/la equation true.
+Algebra uses letters et symbols to represent numbers et quantities dans equations et formulas. A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **equation** states that two expressions are equal. Solving an equation means finding le/la value(s) du  variable(s) that make le/la equation true.
 
-le/la **quadratic formula** solves equations de le/la form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
+le/la **quadratic formula** solves equations du  form ax² + bx + c = 0: x = (−b ± √(b²−4ac)) / (2a)
 
 
 A **function** maps each input to exactly one output. Common functions include:
@@ -41,7 +41,7 @@ A **function** maps each input to exactly one output. Common functions include:
 
 ## Geometry
 
-Geometry is le/la branch de mathematics that studies shapes, sizes, positions, et properties de figures. A point has no size; it represents a location. A line extends infinitely dans both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
+Geometry is la branche de mathematics that studies shapes, sizes, positions, et properties de figures. A point has no size; it represents a location. A line extends infinitely dans both directions. A line segment has two endpoints. An angle is formed by two rays sharing an endpoint.
 
 **Key rules:**
 - le/la sum de angles dans a triangle is always 180 degrees.
@@ -100,7 +100,7 @@ dans Apprentissage automatique, probability underpins classification confidence,
 
 ## Calculus
 
-Calculus is le/la branch de mathematics that studies continuous change.
+Calculus is la branche de mathematics that studies continuous change.
 
 **Differential calculus** deals avec rates de change et slopes de curves, using **derivatives**. le/la derivative de a function f(x) represents le/la rate de change de f avec respect to x at a point. Notation: f'(x) or df/dx.
 
@@ -114,7 +114,7 @@ Calculus is le/la branch de mathematics that studies continuous change.
 
 le/la **fundamental theorem de calculus** connects differentiation et integration: differentiation et integration are inverse operations.
 
-Calculus was developed independently by Isaac Newton et Gottfried Wilhelm Leibniz dans le/la 17th century.
+Calculus was developed independently by Isaac Newton et Gottfried Wilhelm Leibniz dans le  17th century.
 
 ## Number Systèmes
 

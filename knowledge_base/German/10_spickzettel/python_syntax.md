@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: python_syntax.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Python Syntax Cheat Sheet
@@ -56,7 +56,7 @@ f"Value: {x}"     # f-string formatting
 
 ## Control Flow
 
-### Conditionals
+### Bedingte Anweisungen
 ```python
 if x > 10:
     print("Greater than 10")
@@ -69,7 +69,7 @@ else:
 result = "yes" if condition else "no"
 ```
 
-### Loops
+### Schleifen
 ```python
 # For loop
 for i in range(5):      # 0 to 4
@@ -149,7 +149,7 @@ x, y, z = t             # Unpacking
 
 ---
 
-## Functions
+## Funktionen
 
 ### Definition
 ```python
@@ -178,7 +178,7 @@ sorted(lst, key=lambda x: x[1])
 
 ---
 
-## Classes
+## Klassen
 
 ```python
 class Person:

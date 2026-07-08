@@ -12,9 +12,9 @@ Un quadro concettuale per comprendere la comunicazione di rete.
 |-------|------|----------|------|
 | 7| Applicazione | Servizi per l'utente finale | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
 | 6| Presentazione | Formattazione, crittografia, compressione dei dati | TLS, JPEG, ASCII |
-| 5| Sessione | Gestione della connessione | NetBIOS, RPC |
+| 5| Sessione | gestione della connessione | NetBIOS, RPC |
 | 4| Trasporti | Consegna end-to-end, correzione errori, controllo del flusso | TCP, UDP |
-| 3| Rete | Routing, indirizzamento | IP, ICMP, OSPF, BGP |
+| 3| rete | Routing, indirizzamento | IP, ICMP, OSPF, BGP |
 | 2| Collegamento dati | Framing, rilevamento errori, indirizzi MAC | Ethernet, Wi-Fi, PPP |
 | 1| Fisico | Trasmissione in bit grezzo | Cavi Ethernet, fibre ottiche, onde radio |
 
@@ -272,7 +272,7 @@ Ospita il mioserver
     Utente Ubuntu
     FileIdentità ~/.ssh/mykey
     Porto 2222
-Comandi SSH comuni
+comandi SSH comuni
 bash
 ssh utente@host # Connetti
 ssh -J utentejump@utentejumphost@destinazione # Salto proxy
@@ -289,7 +289,7 @@ Modifica la porta predefinita (opzionale, sicurezza attraverso l'oscurità).
 Abilita PermettereUtenti o ConsentiGruppi per limitare l'accesso.
 
 Systemd (gestione dei servizi Linux)
-Comandi comuni
+comandi comuni
 bash
 systemctl status nginx # Controlla lo stato del servizio
 systemctl start nginx # Avvia il servizio
@@ -458,7 +458,7 @@ cron
 
 # Ogni ora
 0 * * * * /percorso/dello/script
-Gestione Cron
+gestione Cron
 bash
 crontab -l # Elenca i processi cron dell'utente corrente
 crontab -e # Modifica
@@ -466,7 +466,7 @@ crontab -r # Rimuove tutto
 Anacron
 Utilizzato per i sistemi non in esecuzione 24 ore su 24, 7 giorni su 7 (ad esempio, laptop), garantisce che i lavori vengano eseguiti alla fine.
 
-Gestione dei pacchetti e aggiornamenti
+gestione dei pacchetti e aggiornamenti
 Debian/Ubuntu (adatto)
 bash
 sudo apt update # Aggiorna l'elenco dei pacchetti
@@ -583,7 +583,7 @@ risorsa "aws_instance" "web" {
   tipo_istanza = "t2.micro"
 }
 Ansible
-Gestione della configurazione senza agente tramite YAML.
+gestione della configurazione senza agente tramite YAML.
 
 yaml
 - nome: installa nginx

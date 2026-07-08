@@ -1,4 +1,4 @@
-# Referenza Rapida Comandi Git
+# Referenza Rapida comandi Git
 
 Essential Git commands for version control.
 

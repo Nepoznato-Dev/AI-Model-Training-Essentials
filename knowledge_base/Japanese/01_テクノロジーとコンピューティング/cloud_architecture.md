@@ -5,397 +5,397 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Cloud アーキテクチャ
+# クラウドアーキテクチャ
 
-## Cloud コンピューティング 基礎
+## クラウドコンピューティングの基礎
 
-### What is Cloud コンピューティング?
-On-demand delivery の コンピューティング resources (servers, storage, databases, networking, software) over その internet と pay-as-you-go pricing.
+### クラウドコンピューティングとは何か？
+インターネット経由で従量課金制により、コンピューティングリソース（サーバー、ストレージ、データベース、ネットワーキング、ソフトウェア）をオンデマンドで提供。
 
-### Essential Characteristics (NIST Definition)
-- **On-Demand Self-Service**: Provision resources without human interaction
-- **Broad ネットワーク Access**: 利用可能 over ネットワーク via standard mechanisms
-- **Resource Pooling**: Multi-tenant model と dynamic assignment
-- **Rapid Elasticity**: Scale outward と inward rapidly
-- **Measured Service**: Resource usage monitored と billed
+### 基本的な特性（NIST 定義）
+- **オンデマンド・セルフサービス**：人とのやり取りなしにリソースをプロビジョニング
+- **広範なネットワークアクセス**：標準的なメカニズムを通じてネットワーク経由で利用可能
+- **リソースプーリング**：マルチテナントモデルと動的割り当て
+- **迅速な弾力性**：急速にスケールアウトおよびスケールイン
+- **測定されたサービス**：リソース使用量の監視と課金
 
-### Cloud デプロイ Models
-- **Public Cloud**: Owned by providers, shared infrastructure (AWS, Azure, GCP)
-- **Private Cloud**: Dedicated to single organization (on-premises or hosted)
-- **Hybrid Cloud**: Combination の public と private clouds
-- **Multi-Cloud**: Using multiple public cloud providers
-- **Community Cloud**: Shared by organizations と common concerns
+### クラウド導入モデル
+- **パブリッククラウド**：プロバイダーが所有、共有インフラ（AWS、Azure、GCP）
+- **プライベートクラウド**：単一組織専用（オンプレミスまたはホスト型）
+- **ハイブリッドクラウド**：パブリッククラウドとプライベートクラウドの組み合わせ
+- **マルチクラウド**：複数のパブリッククラウドプロバイダーの使用
+- **コミュニティクラウド**：共通の関心事を持つ組織で共有
 
-### Service Models
+### サービスモデル
 
 #### Infrastructure as a Service (IaaS)
-- **Provides**: Virtual machines, storage, networks, operating システム
-- **例**: AWS EC2, Google Compute Engine, Azure VMs
-- **Use Cases**: Lift-と-shift migrations, 開発 environments, high-control needs
+- **提供内容**：仮想マシン、ストレージ、ネットワーク、オペレーティングシステム
+- **例**：AWS EC2、Google Compute Engine、Azure VMs
+- **ユースケース**：リフトアンドシフト移行、開発環境、高い制御が必要な場合
 
 #### Platform as a Service (PaaS)
-- **Provides**: 開発 platforms, databases, middleware
-- **例**: Heroku, Google App Engine, AWS Elastic Beanstalk
-- **Use Cases**: Application 開発, API デプロイ, microservices
+- **提供内容**：開発プラットフォーム、データベース、ミドルウェア
+- **例**：Heroku、Google App Engine、AWS Elastic Beanstalk
+- **ユースケース**：アプリケーション開発、API デプロイ、マイクロサービス
 
 #### Software as a Service (SaaS)
-- **Provides**: 完全 applications over internet
-- **例**: Salesforce, Google Workspace, Microsoft 365, Slack
-- **Use Cases**: Email, CRM, collaboration, ビジネス applications
+- **提供内容**：完全なアプリケーションをインターネット経由で提供
+- **例**：Salesforce、Google Workspace、Microsoft 365、Slack
+- **ユースケース**：メール、CRM、コラボレーション、ビジネスアプリケーション
 
-#### Function as a Service (FaaS) / Serverless
-- **Provides**: Event-driven function execution
-- **例**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Use Cases**: Event processing, APIs, scheduled tasks, real-time processing
+#### Function as a Service (FaaS) / サーバーレス
+- **提供内容**：イベント駆動型の関数実行
+- **例**：AWS Lambda、Azure Functions、Google Cloud Functions
+- **ユースケース**：イベント処理、API、スケジュールタスク、リアルタイム処理
 
-## Major Cloud Providers
+## 主要クラウドプロバイダー
 
-### Amazon ウェブ Services (AWS)
-- **Market Share**: ~32% (largest provider)
-- **Key Services**:
-  - Compute: EC2, Lambda, ECS, EKS
-  - Storage: S3, EBS, Glacier
-  - データベース: RDS, DynamoDB, Aurora
-  - Networking: VPC, Route 53, CloudFront
-  - AI/ML: SageMaker, Rekognition, Comprehend
+### Amazon Web Services (AWS)
+- **マーケットシェア**：約 32%（最大プロバイダー）
+- **主要サービス**：
+  - コンピュート：EC2、Lambda、ECS、EKS
+  - ストレージ：S3、EBS、Glacier
+  - データベース：RDS、DynamoDB、Aurora
+  - ネットワーキング：VPC、Route 53、CloudFront
+  - AI/ML：SageMaker、Rekognition、Comprehend
 
 ### Microsoft Azure
-- **Market Share**: ~23%
-- **Strengths**: Enterprise integration, hybrid cloud, Microsoft ecosystem
-- **Key Services**:
-  - Compute: Virtual Machines, Azure Functions, AKS
-  - Storage: Blob Storage, Disk Storage
-  - データベース: SQL データベース, Cosmos DB
-  - Networking: Virtual ネットワーク, Traffic Manager
-  - AI/ML: Azure ML, Cognitive Services
+- **マーケットシェア**：約 23%
+- **強み**：エンタープライズ統合、ハイブリッドクラウド、Microsoft エコシステム
+- **主要サービス**：
+  - コンピュート：Virtual Machines、Azure Functions、AKS
+  - ストレージ：Blob Storage、Disk Storage
+  - データベース：SQL Database、Cosmos DB
+  - ネットワーキング：Virtual Network、Traffic Manager
+  - AI/ML：Azure ML、Cognitive Services
 
 ### Google Cloud Platform (GCP)
-- **Market Share**: ~10%
-- **Strengths**: データ analytics, AI/ML, Kubernetes
-- **Key Services**:
-  - Compute: Compute Engine, Cloud Functions, GKE
-  - Storage: Cloud Storage, Persistent Disk
-  - データベース: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dataflow, Pub/Sub
-  - AI/ML: Vertex AI, AutoML
+- **マーケットシェア**：約 10%
+- **強み**：データ分析、AI/ML、Kubernetes
+- **主要サービス**：
+  - コンピュート：Compute Engine、Cloud Functions、GKE
+  - ストレージ：Cloud Storage、Persistent Disk
+  - データベース：Cloud SQL、Firestore、Bigtable
+  - 分析：BigQuery、Dataflow、Pub/Sub
+  - AI/ML：Vertex AI、AutoML
 
-### Other Providers
-- **IBM Cloud**: Enterprise focus, Watson AI
-- **Oracle Cloud**: データベース workloads, enterprise applications
-- **Alibaba Cloud**: Dominant で Asia-Pacific
-- **DigitalOcean**: Developer-friendly, simplified offerings
+### その他のプロバイダー
+- **IBM Cloud**：エンタープライズ重視、Watson AI
+- **Oracle Cloud**：データベースワークロード、エンタープライズアプリケーション
+- **Alibaba Cloud**：アジア太平洋地域で優位
+- **DigitalOcean**：開発者に優しい、簡素化されたオファリング
 
-## Cloud アーキテクチャ Patterns
+## クラウドアーキテクチャパターン
 
-### Well-Architected Framework Principles
+### Well-Architected Framework の原則
 
-#### Operational Excellence
-- Automate operations
-- Make frequent, reversible changes
-- Refine procedures continuously
-- Anticipate failure
+#### オペレーショナル・エクセレンス
+- 運用を自動化
+- 頻繁に、かつ元に戻せる変更を行う
+- プロセスを継続的に改善
+- 障害を予測
 
 #### セキュリティ
-- Implement strong identity foundation
-- Enable traceability
-- Apply セキュリティ at all layers
-- Automate セキュリティ ベストプラクティス
-- Protect データ で transit と at rest
+- 強力なアイデンティティ基盤を実装
+- 追跡可能性を有効化
+- すべてのレイヤーにセキュリティを適用
+- セキュリティベストプラクティスを自動化
+- 転送中および保存中のデータを保護
 
-#### Reliability
-- Test recovery procedures
-- Automatically recover from failure
-- Scale horizontally のために availability
-- Stop guessing capacity
-- Manage change で automation
+#### 信頼性
+- 回復手順をテスト
+- 障害から自動的に回復
+- 可用性のために水平スケーリング
+- 容量推測を停止
+- 変更を自動化で管理
 
-#### パフォーマンス Efficiency
-- Democratize 上級 technologies
-- Go global で minutes
-- Use serverless architectures
-- Experiment more often
-- Consider mechanical sympathy
+#### パフォーマンス効率
+- 先進技術を民主化
+- 数分でグローバル展開
+- サーバーレスアーキテクチャを使用
+- より頻繁に実験
+- 機械的共感を考慮
 
-#### Cost Optimization
-- Adopt consumption model
-- Measure overall efficiency
-- Stop spending money on undifferentiated work
-- Analyze と attribute expenditure
-- Use managed services
+#### コスト最適化
+- 消費モデルを採用
+- 全体的な効率を測定
+- 差別化のない作業への支出を停止
+- 支出を分析し帰属
+- 管理サービスを使用
 
-### Common アーキテクチャ Patterns
+### 一般的なアーキテクチャパターン
 
-#### Microservices アーキテクチャ
-- Decompose applications into small, independent services
-- Each service owns its データ と logic
-- Communicate via APIs (REST, gRPC, messaging)
-- Deploy independently
-- **Benefits**: Scalability, fault isolation, テクノロジー diversity
-- **Challenges**: Distributed complexity, データ consistency, monitoring
+#### マイクロサービスアーキテクチャ
+- アプリケーションを小さく独立したサービスに分解
+- 各サービスが独自のデータとロジックを所有
+- API（REST、gRPC、メッセージング）を介して通信
+- 独立してデプロイ
+- **メリット**：スケーラビリティ、障害分離、技術の多様性
+- **課題**：分散の複雑さ、データの一貫性、モニタリング
 
-#### Event-Driven アーキテクチャ
-- Components communicate through イベント
-- Producers emit イベント, consumers react
-- **Patterns**: Event sourcing, CQRS, pub/sub
-- **Technologies**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Benefits**: Loose coupling, scalability, real-time processing
+#### イベント駆動アーキテクチャ
+- コンポーネントはイベントを介して通信
+- プロデューサーがイベントを発行、コンシューマーが反応
+- **パターン**：イベントソーシング、CQRS、pub/sub
+- **技術**：Kafka、SNS/SQS、EventBridge、Pub/Sub
+- **メリット**：疎結合、スケーラビリティ、リアルタイム処理
 
-#### Serverless アーキテクチャ
-- No server 管理 required
-- Pay per execution
-- Automatic scaling
-- **Components**: Functions, API Gateway, managed services
-- **Benefits**: Cost efficiency, reduced operations, rapid デプロイ
-- **Considerations**: Cold starts, vendor lock-で, execution limits
+#### サーバーレスアーキテクチャ
+- サーバー管理不要
+- 実行ごとに課金
+- 自動スケーリング
+- **コンポーネント**：関数、API Gateway、管理サービス
+- **メリット**：コスト効率、運用削減、迅速なデプロイ
+- **考慮事項**：コールドスタート、ベンダーロックイン、実行制限
 
-#### Layered アーキテクチャ (N-Tier)
-- Presentation layer (UI)
-- Application/ビジネス logic layer
-- データ access layer
-- データベース layer
-- **Benefits**: Separation の concerns, maintainability
-- **Common**: 3-tier ウェブ applications
+#### レイヤードアーキテクチャ（N ティア）
+- プレゼンテーション層（UI）
+- アプリケーション/ビジネスロジック層
+- データアクセス層
+- データベース層
+- **メリット**：関心の分離、保守性
+- **一般的**：3 ティア Web アプリケーション
 
-#### Space-Based アーキテクチャ
-- Handle high concurrency と distributed データ
-- Virtualized memory across servers
-- Processing nodes scale independently
-- **Use Cases**: High-volume, low-latency applications
+#### スペースベースアーキテクチャ
+- 分散データで高同時実行性を処理
+- サーバー全体で仮想化メモリ
+- 処理ノードが独立してスケーリング
+- **ユースケース**：高ボリューム、低レイテンシーアプリケーション
 
-## Compute Services
+## コンピュートサービス
 
-### Virtual Machines
-- **Types**: General purpose, compute optimized, memory optimized, GPU
-- **Pricing**: On-demand, reserved instances, spot instances
-- **管理**: Auto-scaling groups, load balancers
-- **ベストプラクティス**: Right-sizing, tagging, monitoring, patching
+### 仮想マシン
+- **タイプ**：汎用、コンピューティング最適化、メモリ最適化、GPU
+- **価格設定**：オンデマンド、リザーブドインスタンス、スポットインスタンス
+- **管理**：オートスケーリンググループ、ロードバランサー
+- **ベストプラクティス**：適正サイズ、タグ付け、モニタリング、パッチ適用
 
-### Containers
-- **Docker**: Container runtime standard
-- **Orchestration**: Kubernetes (EKS, AKS, GKE), ECS, Fargate
-- **Benefits**: Portability, efficiency, consistency
-- **Registry**: ECR, GCR, ACR, Docker Hub
+### コンテナ
+- **Docker**：コンテナランタイム標準
+- **オーケストレーション**：Kubernetes（EKS、AKS、GKE）、ECS、Fargate
+- **メリット**：ポータビリティ、効率性、一貫性
+- **レジストリ**：ECR、GCR、ACR、Docker Hub
 
-### Serverless Functions
-- **Execution Model**: Event-triggered, stateless
-- **Limits**: Execution time, memory, concurrent executions
-- **Use Cases**: APIs, file processing, scheduled jobs, IoT backends
-- **Monitoring**: Invocation counts, errors, duration, cold starts
+### サーバーレス関数
+- **実行モデル**：イベントトリガー、ステートレス
+- **制限**：実行時間、メモリ、同時実行数
+- **ユースケース**：API、ファイル処理、スケジュールジョブ、IoT バックエンド
+- **モニタリング**：呼び出し回数、エラー、期間、コールドスタート
 
-## Storage Solutions
+## ストレージソリューション
 
-### Object Storage
-- **Characteristics**: Flat structure, metadata, HTTP access
-- **例**: AWS S3, Google Cloud Storage, Azure Blob
-- **Use Cases**: Static assets, backups, データ lakes, archives
-- **Storage Classes**: Hot, cool, cold, archive (varying cost/access)
+### オブジェクトストレージ
+- **特性**：フラット構造、メタデータ、HTTP アクセス
+- **例**：AWS S3、Google Cloud Storage、Azure Blob
+- **ユースケース**：静的アセット、バックアップ、データレイク、アーカイブ
+- **ストレージクラス**：ホット、クール、コールド、アーカイブ（コスト/アクセスが異なる）
 
-### Block Storage
-- **Characteristics**: Raw volumes, attached to VMs
-- **例**: AWS EBS, Google Persistent Disk, Azure Disks
-- **Use Cases**: Databases, boot volumes, high-パフォーマンス needs
-- **Types**: SSD, HDD, provisioned IOPS
+### ブロックストレージ
+- **特性**：生ボリューム、VM に接続
+- **例**：AWS EBS、Google Persistent Disk、Azure Disks
+- **ユースケース**：データベース、ブートボリューム、高性能要件
+- **タイプ**：SSD、HDD、プロビジョンド IOPS
 
-### File Storage
-- **Characteristics**: Shared file システム, NFS/SMB protocols
-- **例**: AWS EFS, Google Filestore, Azure Files
-- **Use Cases**: Content 管理, shared configs, lift-と-shift
+### ファイルストレージ
+- **特性**：共有ファイルシステム、NFS/SMB プロトコル
+- **例**：AWS EFS、Google Filestore、Azure Files
+- **ユースケース**：コンテンツ管理、共有設定、リフトアンドシフト
 
-### Archive Storage
-- **Characteristics**: Lowest cost, retrieval delays
-- **例**: S3 Glacier, Azure Archive Storage
-- **Use Cases**: Compliance, long-term backups, historical データ
+### アーカイブストレージ
+- **特性**：最低コスト、取得遅延
+- **例**：S3 Glacier、Azure Archive Storage
+- **ユースケース**：コンプライアンス、長期バックアップ、履歴データ
 
-## データベース Services
+## データベースサービス
 
-### Managed Relational Databases
-- **Services**: AWS RDS/Aurora, Google Cloud SQL, Azure SQL データベース
-- **Features**: Automated backups, patching, scaling, replication
-- **Engines**: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server
+### 管理型リレーショナルデータベース
+- **サービス**：AWS RDS/Aurora、Google Cloud SQL、Azure SQL Database
+- **機能**：自動バックアップ、パッチ適用、スケーリング、レプリケーション
+- **エンジン**：MySQL、PostgreSQL、MariaDB、Oracle、SQL Server
 
-### NoSQL Databases
-- **Document**: DocumentDB, Firestore, Cosmos DB
-- **Key-Value**: DynamoDB, Redis Cache
-- **Wide-Column**: Bigtable, Cassandra (managed)
-- **Graph**: Neptune, Cosmos DB (graph API)
+### NoSQL データベース
+- **ドキュメント**：DocumentDB、Firestore、Cosmos DB
+- **キーバリュー**：DynamoDB、Redis Cache
+- **ワイドカラム**：Bigtable、Cassandra（管理型）
+- **グラフ**：Neptune、Cosmos DB（グラフ API）
 
-### データ Warehousing
-- **Services**: Snowflake, Redshift, BigQuery, Synapse
-- **Characteristics**: Columnar storage, MPP アーキテクチャ
-- **Use Cases**: Analytics, BI, large-scale データ analysis
+### データウェアハウジング
+- **サービス**：Snowflake、Redshift、BigQuery、Synapse
+- **特性**：カラムナーストレージ、MPP アーキテクチャ
+- **ユースケース**：分析、BI、大規模データ分析
 
-### Caching Services
-- **で-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN Caching**: CloudFront, Cloud CDN, Azure CDN
-- **Use Cases**: Session storage, query caching, content delivery
+### キャッシングサービス
+- **インメモリ**：ElastiCache（Redis/Memcached）、Cloud Memorystore
+- **CDN キャッシュ**：CloudFront、Cloud CDN、Azure CDN
+- **ユースケース**：セッションストレージ、クエリキャッシュ、コンテンツ配信
 
-## Networking
+## ネットワーキング
 
-### Virtual Networks
-- **VPC/VNet**: Isolated ネットワーク environments
-- **Subnets**: Public (internet-facing), private (internal only)
-- **IP Addressing**: CIDR blocks, IPv4/IPv6
-- **Route Tables**: Control traffic flow
+### 仮想ネットワーク
+- **VPC/VNet**：隔離されたネットワーク環境
+- **サブネット**：パブリック（インターネットFacing）、プライベート（内部のみ）
+- **IP アドレス指定**：CIDR ブロック、IPv4/IPv6
+- **ルートテーブル**：トラフィックフローを制御
 
-### Load Balancing
-- **Types**: Application (L7), ネットワーク (L4), Gateway
-- **Features**: Health checks, SSL termination, sticky sessions
-- **Services**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
+### ロードバランシング
+- **タイプ**：アプリケーション（L7）、ネットワーク（L4）、ゲートウェイ
+- **機能**：ヘルスチェック、SSL ターミネーション、スティッキーセッション
+- **サービス**：ELB/ALB/NLB、Cloud Load Balancing、Azure Load Balancer
 
-### Content Delivery Networks (CDN)
-- **Purpose**: Cache content at edge locations
-- **Benefits**: Reduced latency, lower origin load, global distribution
-- **Services**: CloudFront, Cloud CDN, Azure CDN, Akamai
+### コンテンツデリバリーネットワーク（CDN）
+- **目的**：エッジロケーションでコンテンツをキャッシュ
+- **メリット**：レイテンシー削減、オリジン負荷低減、グローバル配布
+- **サービス**：CloudFront、Cloud CDN、Azure CDN、Akamai
 
-### DNS Services
-- **Functions**: Domain registration, routing, health checks
-- **Services**: Route 53, Cloud DNS, Azure DNS
-- **Routing Policies**: Simple, weighted, latency-based, geolocation, failover
+### DNS サービス
+- **機能**：ドメイン登録、ルーティング、ヘルスチェック
+- **サービス**：Route 53、Cloud DNS、Azure DNS
+- **ルーティングポリシー**：シンプル、加重、レイテンシーベース、ジオロケーション、フェイルオーバー
 
-### Connectivity Options
-- **Internet Gateway**: Public internet access
-- **NAT Gateway**: Private subnet outbound access
-- **VPN**: Encrypted tunnels to on-premises
-- **Direct Connect/ExpressRoute**: Dedicated private connections
-- **VPC Peering**: Connect VPCs within/between accounts
+### 接続オプション
+- **インターネットゲートウェイ**：パブリックインターネットアクセス
+- **NAT ゲートウェイ**：プライベートサブネットのアウトバウンドアクセス
+- **VPN**：オンプレミスへの暗号化トンネル
+- **Direct Connect/ExpressRoute**：専用プライベート接続
+- **VPC ピアリング**：アカウント内/間の VPC 接続
 
-## セキュリティ で その Cloud
+## クラウドセキュリティ
 
-### Shared Responsibility Model
-- **Provider Responsibility**: セキュリティ の その cloud (infrastructure)
-- **Customer Responsibility**: セキュリティ で その cloud (データ, applications, access)
-- **Varies By Service**: More managed = more provider responsibility
+### 共有責任モデル
+- **プロバイダーの責任**：クラウドのセキュリティ（インフラストラクチャ）
+- **顧客の責任**：クラウド内のセキュリティ（データ、アプリケーション、アクセス）
+- **サービスによって異なる**：より管理型 = より多くのプロバイダー責任
 
-### Identity と Access 管理 (IAM)
-- **Users**: Individual identities
-- **Groups**: Collections の users
-- **Roles**: Temporary credentials のために services/users
-- **Policies**: JSON documents defining permissions
-- **Principles**: Least privilege, separation の duties
+### アイデンティティ・アクセス管理（IAM）
+- **ユーザー**：個別のアイデンティティ
+- **グループ**：ユーザーのコレクション
+- **ロール**：サービス/ユーザー向けの一時認証情報
+- **ポリシー**：権限を定義する JSON ドキュメント
+- **原則**：最小権限、職務分離
 
-### ネットワーク セキュリティ
-- **セキュリティ Groups**: Stateful firewalls のために instances
-- **ネットワーク ACLs**: Stateless firewalls のために subnets
-- **ウェブ Application Firewall (WAF)**: Protect against ウェブ exploits
-- **DDoS Protection**: Shield, Cloud Armor, DDoS Protection
+### ネットワークセキュリティ
+- **セキュリティグループ**：インスタンス向けのステートフルファイアウォール
+- **ネットワーク ACL**：サブネット向けのステートレスファイアウォール
+- **Web アプリケーションファイアウォール（WAF）**：Web 侵害から保護
+- **DDoS 保護**：Shield、Cloud Armor、DDoS Protection
 
-### データ Protection
-- **Encryption at Rest**: KMS, customer-managed keys
-- **Encryption で Transit**: TLS/SSL, HTTPS
-- **Key 管理**: HSM, key rotation, audit trails
-- **Secrets 管理**: Secrets Manager, Key Vault
+### データ保護
+- **保存時の暗号化**：KMS、カスタマー管理キー
+- **転送時の暗号化**：TLS/SSL、HTTPS
+- **キー管理**：HSM、キーローテーション、監査ログ
+- **シークレット管理**：Secrets Manager、Key Vault
 
-### Compliance と Governance
-- **Certifications**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
-- **Tools**: Policy enforcement, compliance reporting, audit logs
-- **Frameworks**: Cloud セキュリティ Alliance, NIST CSF
+### コンプライアンスとガバナンス
+- **認証**：SOC 2、ISO 27001、HIPAA、PCI-DSS、GDPR
+- **ツール**：ポリシー施行、コンプライアンスレポート、監査ログ
+- **フレームワーク**：Cloud Security Alliance、NIST CSF
 
-## DevOps で その Cloud
+## クラウド DevOps
 
-### CI/CD Services
-- **AWS**: CodePipeline, CodeBuild, CodeDeploy
-- **Azure**: Azure DevOps, GitHub Actions
-- **GCP**: Cloud Build, Cloud Deploy
-- **Third-party**: Jenkins, CircleCI, GitLab CI
+### CI/CD サービス
+- **AWS**：CodePipeline、CodeBuild、CodeDeploy
+- **Azure**：Azure DevOps、GitHub Actions
+- **GCP**：Cloud Build、Cloud Deploy
+- **サードパーティ**：Jenkins、CircleCI、GitLab CI
 
-### Infrastructure as Code (IaC)
-- **Terraform**: Multi-cloud, declarative, state 管理
-- **CloudFormation**: AWS native, YAML/JSON templates
-- **ARM Templates**: Azure native
-- **デプロイ Manager**: GCP native
-- **Pulumi**: Infrastructure using programming languages
-- **Benefits**: Version control, repeatability, documentation
+### インフラストラクチャ・アズ・コード（IaC）
+- **Terraform**：マルチクラウド、宣言的、状態管理
+- **CloudFormation**：AWS ネイティブ、YAML/JSON テンプレート
+- **ARM テンプレート**：Azure ネイティブ
+- **Deployment Manager**：GCP ネイティブ
+- **Pulumi**：プログラミング言語を使用したインフラストラクチャ
+- **メリット**：バージョン管理、再現性、ドキュメント化
 
-### Configuration 管理
-- **Ansible**: Agentless, YAML playbooks
-- **Chef**: Ruby-based, mature ecosystem
-- **Puppet**: Declarative, strong reporting
-- **SaltStack**: Fast, Python-based
+### 構成管理
+- **Ansible**：エージェントレス、YAML プレイブック
+- **Chef**：Ruby ベース、成熟したエコシステム
+- **Puppet**：宣言的、強力なレポート機能
+- **SaltStack**：高速、Python ベース
 
-### Monitoring と Observability
-- **Metrics**: CloudWatch, Cloud Monitoring, Azure Monitor
-- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
-- **Tracing**: X-Ray, Cloud Trace, Application Insights
-- **Dashboards**: CloudWatch Dashboards, Cloud Console
-- **Alerting**: SNS, Cloud Monitoring alerts, Action Groups
+### モニタリングとオブザーバビリティ
+- **メトリクス**：CloudWatch、Cloud Monitoring、Azure Monitor
+- **ログ**：CloudWatch Logs、Cloud Logging、Log Analytics
+- **トレーシング**：X-Ray、Cloud Trace、Application Insights
+- **ダッシュボード**：CloudWatch ダッシュボード、Cloud コンソール
+- **アラート**：SNS、Cloud Monitoring アラート、Action Groups
 
-### Container Orchestration
-- **Kubernetes**: Industry standard orchestration
-- **Managed Services**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (traffic 管理, セキュリティ)
-- **GitOps**: ArgoCD, Flux (declarative deployments)
+### コンテナオーケストレーション
+- **Kubernetes**：業界標準オーケストレーション
+- **管理サービス**：EKS、AKS、GKE
+- **サービスメッシュ**：Istio、Linkerd（トラフィック管理、セキュリティ）
+- **GitOps**：ArgoCD、Flux（宣言的デプロイ）
 
-## Cost 管理
+## コスト管理
 
-### Pricing Models
-- **Pay-as-you-go**: Pay のために what you use
-- **Reserved Instances**: 1-3 year commitments, significant discounts
-- **Spot Instances**: Bid のために unused capacity, can be interrupted
-- **Savings Plans**: Flexible commitment pricing
-- **Free Tier**: Limited free usage のために new accounts
+### 価格モデル
+- **従量課金**：使用分のみ支払い
+- **リザーブドインスタンス**：1〜3 年契約、大幅割引
+- **スポットインスタンス**：未使用容量を入札、中断可能性あり
+- **セービングプラン**：柔軟なコミットメント価格
+- **無料枠**：新規アカウント向け限定無料利用
 
-### Cost Optimization Strategies
-- **Right-sizing**: Match instance types to workload needs
-- **Auto-scaling**: Scale based on demand
-- **Reserved Capacity**: Commit to steady-state workloads
-- **Spot Usage**: Use のために fault-tolerant, flexible workloads
-- **Storage Tiers**: Move infrequent データ to cheaper tiers
-- **Cleanup**: Delete unused resources, snapshots, AMIs
+### コスト最適化戦略
+- **適正サイズ**：ワークロードニーズにインスタンスタイプを一致
+- **オートスケーリング**：需要に基づいてスケーリング
+- **リザーブドキャパシティ**：定常ワークロードにコミット
+- **スポット使用**：フォールトトレラントで柔軟なワークロードに使用
+- **ストレージティア**：低頻度データを安価なティアに移動
+- **クリーンアップ**：未使用リソース、スナップショット、AMI を削除
 
-### Cost 管理 Tools
-- **AWS**: Cost Explorer, Budgets, Trusted Advisor
-- **Azure**: Cost 管理, Advisor
-- **GCP**: Billing reports, Recommender
-- **Third-party**: CloudHealth, CloudCheckr, Datadog
+### コスト管理ツール
+- **AWS**：Cost Explorer、Budgets、Trusted Advisor
+- **Azure**：Cost Management、Advisor
+- **GCP**：Billing レポート、Recommender
+- **サードパーティ**：CloudHealth、CloudCheckr、Datadog
 
-## High Availability と Disaster Recovery
+## 高可用性とディザスタリカバリ
 
-### Availability Concepts
-- **Availability Zones**: Physically separate データ centers within region
-- **Regions**: Geographic areas と multiple AZs
-- **Edge Locations**: CDN cache locations globally
+### 可用性の概念
+- **アベイラビリティーゾーン**：リージョン内の物理的に分離したデータセンター
+- **リージョン**：複数の AZ を持つ地理的エリア
+- **エッジロケーション**：全球的な CDN キャッシュロケーション
 
-### HA Strategies
-- **Multi-AZ**: Deploy across availability zones
-- **Auto-healing**: Auto-replace failed instances
-- **Load Balancing**: Distribute traffic across healthy instances
-- **データベース Replication**: Multi-AZ deployments, read replicas
+### HA 戦略
+- **マルチ AZ**：アベイラビリティーゾーン全体にデプロイ
+- **自動修復**：失敗したインスタンスを自動置換
+- **ロードバランシング**：正常なインスタンス全体にトラフィックを分散
+- **データベースレプリケーション**：マルチ AZ デプロイ、リードレプリカ
 
-### Disaster Recovery Strategies
-- **Backup と Restore**: Periodic backups, restore when needed (lowest cost)
-- **Pilot Light**: Core elements running, scale up during disaster
-- **Warm Standby**: Scaled-down version always running
-- **Multi-Site Active/Active**: Full production で multiple regions (highest cost)
+### ディザスタリカバリ戦略
+- **バックアップとリストア**：定期バックアップ、必要時にリストア（最低コスト）
+- **パイロットライト**：コア要素を実行、災害時にスケールアップ
+- **ウォームスタンバイ**：縮小版を常に実行
+- **マルチサイトアクティブ/アクティブ**：複数リージョンで完全稼働（最高コスト）
 
 ### RTO と RPO
-- **Recovery Time Objective (RTO)**: Maximum acceptable downtime
-- **Recovery Point Objective (RPO)**: Maximum acceptable データ loss
-- **Strategy Selection**: Based on ビジネス requirements と budget
+- **目標復旧時間（RTO）**：許容される最大ダウンタイム
+- **目標復旧時点（RPO）**：許容される最大データ損失
+- **戦略選択**：ビジネス要件と予算に基づく
 
-## Emerging Trends
+## 新興トレンド
 
-### Edge コンピューティング
-- Process データ closer to source
-- **Services**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
-- **Use Cases**: IoT, real-time analytics, low-latency applications
+### エッジコンピューティング
+- ソースに近い場所でデータを処理
+- **サービス**：AWS Outposts、Wavelength、Azure Edge、Cloud CDN
+- **ユースケース**：IoT、リアルタイム分析、低レイテンシーアプリケーション
 
-### Multi-Cloud と Hybrid Cloud
-- Avoid vendor lock-で
-- Leverage best-の-breed services
-- **Tools**: Terraform, Anthos, Arc, CloudHealth
+### マルチクラウドとハイブリッドクラウド
+- ベンダーロックインを回避
+- ベストオブブリードサービスを活用
+- **ツール**：Terraform、Anthos、Arc、CloudHealth
 
-### AI/ML Services
-- Pre-trained models: Vision, speech, 言語
-- Custom model training: SageMaker, Vertex AI, Azure ML
-- MLOps: Model デプロイ, monitoring, governance
+### AI/ML サービス
+- 事前トレーニング済みモデル：ビジョン、音声、言語
+- カスタムモデルトレーニング：SageMaker、Vertex AI、Azure ML
+- MLOps：モデルデプロイ、モニタリング、ガバナンス
 
-### Quantum コンピューティング
-- **Services**: AWS Braket, Azure Quantum
-- **Status**: Early stage, experimental
-- **Potential**: Cryptography, optimization, drug discovery
+### 量子コンピューティング
+- **サービス**：AWS Braket、Azure Quantum
+- **状況**：初期段階、実験的
+- **可能性**：暗号化、最適化、創薬
 
-### Sustainable Cloud
-- Carbon footprint tracking
-- Renewable energy commitments
-- Efficient resource utilization
-- Green アーキテクチャ patterns
+### サステナブルクラウド
+- 炭素フットプリント追跡
+- 再生可能エネルギーへのコミットメント
+- 効率的なリソース活用
+- グリーンアーキテクチャパターン

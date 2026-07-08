@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Networking Bases
+# Bases des reseaux
 
-A practical Référence pour developers et sysadmins — core concepts, protocols, Commandes, et troubleshooting.
+A practical Référence pour developers et sysadmins — core concepts, protocols, commandes, et troubleshooting.
 
 ---
 
-## le/la OSI Model (7 Layers)
+## Le modele OSI (7 couches)
 
 A conceptual framework pour understanding Réseau Communication.
 
@@ -19,17 +19,17 @@ A conceptual framework pour understanding Réseau Communication.
 |-------|------|----------|-------------------|
 | 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
 | 6 | Presentation | Données formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection Gestion | NetBIOS, RPC |
+| 5 | Session | Connection gestion | NetBIOS, RPC |
 | 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
 | 3 | Réseau | Routing, addressing | IP, ICMP, OSPF, BGP |
 | 2 | Données Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
 | 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
 
-dans practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used pour le/la internet.
+dans practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used pour le  internet.
 
 ---
 
-## IP Addressing
+## Adressage IP
 
 ### IPv4
 - 32-bit address, written as four octets: `192.168.1.1`
@@ -40,7 +40,7 @@ dans practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Applicatio
 - Total: 2¹²⁸ addresses (practically infinite).
 
 ### Private IP Ranges (RFC 1918)
-These are not routable on le/la internet; used inside local networks:
+These are not routable on l'internet; used inside local networks:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
@@ -62,7 +62,7 @@ Maps domain names (e.g., `example.com`) to IP addresses.
 | **CNAME** | Alias to another domain name |
 | **MX** | Mail exchange server |
 | **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver pour le/la domain |
+| **NS** | Nameserver pour le  domain |
 | **SRV** | Service record (e.g., pour SIP) |
 
 ### Common Tools
@@ -191,7 +191,7 @@ Network Statistics
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
+Subnetting (Quick reference)
 CIDR	Netmask	Number of addresses	Usable hosts
 /32	255.255.255.255	1	1
 /30	255.255.255.252	4	2

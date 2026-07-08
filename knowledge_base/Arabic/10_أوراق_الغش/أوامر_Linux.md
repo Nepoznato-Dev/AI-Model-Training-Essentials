@@ -278,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Input/Output Redirection
+## إدخال/Output Redirection
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -287,7 +287,7 @@ command < file.txt      # Redirect input
 command 2> error.log    # Redirect stderr
 command &> all.log      # Redirect stdout and stderr
 command | grep pattern  # Pipe output to another command
-tee file.txt            # Output to file and screen
+tee file.txt            # إخراج to file and screen
 ```
 
 ---

@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: linux_commands.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Linux Befehle Schnellreferenz

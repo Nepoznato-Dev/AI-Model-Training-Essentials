@@ -2,7 +2,6 @@
 
 > 🌍 **Multilingual Knowledge Base & AI Agent Configuration Repository**
 
-It is a organized central library that stores information, skills, and settings for AI agents. This helps them learn different languages, perform tasks, and adapt to different situations more effectively.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)

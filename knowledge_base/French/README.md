@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Anglais Base de connaissances
+# Base de connaissances en anglais
 
-Une collection complète de Référence documents covering Technologie, Science, Entreprise, humanities, et practical skills.
+Une collection complète de documents de référence couvrant la technologie, la science, les affaires, les sciences humaines et les compétences pratiques.
 
-**Dernière mise à jour:** June 2025  
-**Fichiers totaux:** 34+ markdown documents  
-**Organization:** Categorized into 10 thematic directories
+**Dernière mise à jour:** Juin 2025  
+**Fichiers totaux:** 34+ documents markdown  
+**Organisation:** Catégorisé en 10 répertoires thématiques
 
 ---
 
@@ -19,84 +19,84 @@ Une collection complète de Référence documents covering Technologie, Science,
 
 ```
 knowledge_base/English/
-├── 01_technology_and_computing/    # Programming, databases, cloud, networking
-├── 02_artificial_intelligence/      # AI, ML, LLMs, prompt engineering
-├── 03_data_science/                 # Analytics, statistics, mathematics
-├── 04_science/                      # Natural sciences, medicine, environment
-├── 05_business_and_finance/         # Economics, finance, law
-├── 06_humanities/                   # History, geography, arts, psychology
-├── 07_reference/                    # Dictionary, general knowledge, communication
-├── 08_future/                       # Future projections and upcoming events
-├── 09_practical_skills/             # Practical guides and how-tos (growing)
-└── 10_cheat_sheets/                 # Quick reference guides (growing)
+├── 01_technology_and_computing/    # Programmation, bases de données, cloud, réseaux
+├── 02_artificial_intelligence/      # IA, ML, LLMs, ingénierie de prompts
+├── 03_data_science/                 # Analytique, statistiques, mathématiques
+├── 04_science/                      # Sciences naturelles, médecine, environnement
+├── 05_business_and_finance/         # Économie, finance, droit
+├── 06_humanities/                   # histoire, géographie, arts, psychologie
+├── 07_reference/                    # Dictionnaire, connaissances générales, communication
+├── 08_future/                       # Projections futures et événements à venir
+├── 09_practical_skills/             # Guides pratiques et tutoriels (en croissance)
+└── 10_cheat_sheets/                 # Guides de référence rapide (en croissance)
 ```
 
 ---
 
 ## 📚 Navigation rapide
 
-### Technologie & Informatique (`01_technology_and_computing/`)
-| File | Description | Lines |
+### Technologie et Informatique (`01_technology_and_computing/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
 | [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Sécurité | 350+ |
 | [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, Architecture patterns, Sécurité | 350+ |
-| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, Sécurité | 400+ |
-| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Technical terminology | 250+ |
-| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Développement tools et utilities | 200+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Fournisseurs cloud, modèles d'architecture, Sécurité | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | Modèle OSI, TCP/IP, protocoles, Sécurité | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Terminologie technique | 250+ |
+| [tool_usage.md](01_technology_and_computing/tool_usage.md) | Outils et utilitaires de développement | 200+ |
 
-### Artificial Intelligence (`02_artificial_intelligence/`)
-| File | Description | Lines |
+### Intelligence Artificielle (`02_artificial_intelligence/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI Aperçu, ML, Apprentissage profond, LLMs | 200+ |
-| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, Meilleures pratiques | 200+ |
-| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Running models locally | 200+ |
-| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Local AI Déploiement architectures | 400+ |
-| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Prompt techniques et strategies | 150+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | Aperçu IA, ML, apprentissage profond, LLMs | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | Pipelines ML, métriques, meilleures pratiques | 200+ |
+| [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Exécution de modèles en local | 200+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Architectures de déploiement IA local | 400+ |
+| [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Techniques et stratégies de prompt | 150+ |
 
-### Données Science (`03_data_science/`)
-| File | Description | Lines |
+### Science des données (`03_data_science/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Données processing, ML, big Données, BI | 350+ |
-| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathematics, logic, proofs | 250+ |
+| [data_science_and_analytics.md](03_data_science/data_science_and_analytics.md) | Traitement de données, ML, big data, BI | 350+ |
+| [math_and_logic.md](03_data_science/math_and_logic.md) | Mathématiques, logique, preuves | 250+ |
 
-### Science (`04_science/`)
-| File | Description | Lines |
+### Sciences (`04_science/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [science_and_nature.md](04_science/science_and_nature.md) | Physics, chemistry, biology Bases | 100+ |
-| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Medical specialties, Soins de santé Systèmes | 250+ |
-| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Ecosystems, climate, conservation | 200+ |
-| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Agriculture, Nutrition, Alimentation Systèmes | 150+ |
+| [science_and_nature.md](04_science/science_and_nature.md) | Bases de physique, chimie, biologie | 100+ |
+| [medicine_and_healthcare.md](04_science/medicine_and_healthcare.md) | Spécialités médicales, systèmes de santé | 250+ |
+| [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Écosystèmes, climat, conservation | 200+ |
+| [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Agriculture, nutrition, systèmes alimentaires | 150+ |
 
-### Entreprise & Finance (`05_business_and_finance/`)
-| File | Description | Lines |
+### Affaires et Finance (`05_business_and_finance/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Corporate structures, marketing, Économie | 150+ |
-| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Personal Finance, Investissement, markets | 350+ |
-| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Juridique Systèmes, contracts, IP, constitutional Droit | 200+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Structures d'entreprise, marketing, économie | 150+ |
+| [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | Finance personnelle, investissement, marchés | 350+ |
+| [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | Systèmes juridiques, contrats, propriété intellectuelle, droit constitutionnel | 200+ |
 
-### Humanities (`06_humanities/`)
-| File | Description | Lines |
+### Sciences humaines (`06_humanities/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [history_and_culture.md](06_humanities/history_and_culture.md) | Historical periods, cultural movements | 200+ |
-| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Physical/human Géographie, political Systèmes | 300+ |
-| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Literary genres, visual Arts, music, film | 400+ |
-| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Cognitive, social, developmental Psychologie | 200+ |
-| [language_and_english.md](06_humanities/language_and_english.md) | Grammar, linguistics, writing | 180+ |
+| [history_and_culture.md](06_humanities/history_and_culture.md) | Périodes historiques, mouvements culturels | 200+ |
+| [geography_and_geopolitics.md](06_humanities/geography_and_geopolitics.md) | Géographie physique/humaine, systèmes politiques | 300+ |
+| [arts_and_literature.md](06_humanities/arts_and_literature.md) | Genres littéraires, arts visuels, musique, cinéma | 400+ |
+| [psychology_and_human_behavior.md](06_humanities/psychology_and_human_behavior.md) | Psychologie cognitive, sociale, développementale | 200+ |
+| [language_and_english.md](06_humanities/language_and_english.md) | Grammaire, linguistique, écriture | 180+ |
 
 ### Référence (`07_reference/`)
-| File | Description | Lines |
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [Dictionnaire.md](07_reference/Dictionnaire.md) | Comprehensive word definitions (A-Z) | 868 |
-| [general_knowledge.md](07_reference/general_knowledge.md) | Fundamental facts about le/la world | 150+ |
-| [technology_and_computing.md](07_reference/technology_and_computing.md) | Informatique Bases et Fondamentaux | 250+ |
-| [safe_communication.md](07_reference/safe_communication.md) | Communication guidelines et Meilleures pratiques | 150+ |
+| [Dictionnaire.md](07_reference/Dictionnaire.md) | Définitions complètes de mots (A-Z) | 868 |
+| [general_knowledge.md](07_reference/general_knowledge.md) | Faits fondamentaux sur le monde | 150+ |
+| [technology_and_computing.md](07_reference/technology_and_computing.md) | Bases et fondamentaux de l'informatique | 250+ |
+| [safe_communication.md](07_reference/safe_communication.md) | Directives de communication et meilleures pratiques | 150+ |
 
-### Futur (`08_future/`)
-| File | Description | Lines |
+### Avenir (`08_future/`)
+| Fichier | Description | Lignes |
 |------|-------------|-------|
-| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Upcoming Événements, space missions, tech trends | 200+ |
+| [2026_and_future_events.md](08_future/2026_and_future_events.md) | Événements à venir, missions spatiales, tendances technologiques | 200+ |
 
 ### Practical Skills (`09_practical_skills/`)
 *Répertoire en croissance - bientôt disponible:*

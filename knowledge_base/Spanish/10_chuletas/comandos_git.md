@@ -55,13 +55,13 @@ git diff
 git diff --staged
 
 # Stage files
-git add file.txt          # Specific file
-git add .                 # All files
-git add *.py              # Pattern match
+git add file.txt # Specific file
+git add . # All files
+git add *.py # Pattern match
 
 # Commit changes
 git commit -m "Commit message"
-git commit -am "Message"  # Stage and commit tracked files
+git commit -am "Message" # Stage and commit tracked files
 
 # View commit history
 git log
@@ -75,24 +75,24 @@ git log --graph --oneline --all
 
 ```bash
 # List branches
-git branch                # Local branches
-git branch -a             # All branches
-git branch -r             # Remote branches
+git branch # Local branches
+git branch -a # All branches
+git branch -r # Remote branches
 
 # Create branch
 git branch branch-name
-git checkout -b branch-name   # Create and switch
+git checkout -b branch-name # Create and switch
 
 # Switch branches
 git checkout branch-name
-git switch branch-name        # Newer syntax
+git switch branch-name # Newer syntax
 
 # Rename current branch
 git branch -m new-name
 
 # Delete branch
-git branch -d branch-name     # Safe delete (merged)
-git branch -D branch-name     # Force delete
+git branch -d branch-name # Safe delete (merged)
+git branch -D branch-name # Force delete
 
 # Merge branch
 git merge branch-name
@@ -122,8 +122,8 @@ git pull --rebase origin main
 
 # Push changes
 git push origin main
-git push -u origin main     # Set upstream
-git push --force            # Force push (use carefully)
+git push -u origin main # Set upstream
+git push --force # Force push (use carefully)
 git push --force-with-lease # Safer force push
 
 # Push tags
@@ -151,9 +151,9 @@ git commit --amend --no-edit
 git revert commit-hash
 
 # Reset to previous commit
-git reset --soft HEAD~1     # Keep changes staged
-git reset --mixed HEAD~1    # Keep changes unstaged (default)
-git reset --hard HEAD~1     # Discard all changes (dangerous)
+git reset --soft HEAD~1 # Keep changes staged
+git reset --mixed HEAD~1 # Keep changes unstaged (default)
+git reset --hard HEAD~1 # Discard all changes (dangerous)
 ```
 
 ---
@@ -169,8 +169,8 @@ git stash save "message"
 git stash list
 
 # Apply stash
-git stash apply             # Most recent
-git stash apply stash@{1}   # Specific stash
+git stash apply # Most recent
+git stash apply stash@{1} # Specific stash
 
 # Apply and remove
 git stash pop
@@ -193,7 +193,7 @@ git tag -l "v1.*"
 
 # Create tag
 git tag v1.0.0
-git tag -a v1.0.0 -m "Version 1.0.0"  # Annotated tag
+git tag -a v1.0.0 -m "Version 1.0.0" # Annotated tag
 
 # Checkout tag
 git checkout v1.0.0
@@ -259,7 +259,7 @@ git submodule update --init --recursive
 ```bash
 # Remove untracked files (dry run)
 git clean -n
-git clean -f                # Actually remove
+git clean -f # Actually remove
 
 # Remove untracked directories
 git clean -fd

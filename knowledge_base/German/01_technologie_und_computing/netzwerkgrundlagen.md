@@ -2,111 +2,119 @@
 This file was automatically translated from English to German.
 Source: networking_basics.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Networking Grundlagen
+# Netzwerkgrundlagen
 
-A practical Referenz für developers und sysadmins — core concepts, protocols, Befehle, und troubleshooting.
+Eine praktische Referenz für Entwickler und Systemadministratoren – Kernkonzepte, Protokolle, Befehle und Fehlerbehebung.
 
 ---
 
-## der/die/das OSI Model (7 Layers)
+## Das OSI-Modell (7 Schichten)
 
-A conceptual framework für understanding Netzwerk Kommunikation.
+Ein konzeptioneller Rahmen zum Verständnis der Netzwerkkommunikation.
 
-| Layer | Name | Function | Example protocols |
+| Schicht | Name | Funktion | Beispielprotokolle |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Daten formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection Verwaltung | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Netzwerk | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | Daten Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | Anwendung | Endbenutzerdienste | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Darstellung | Datenformatierung, Verschlüsselung, Kompression | TLS, JPEG, ASCII |
+| 5 | Sitzung | Verbindungsverwaltung | NetBIOS, RPC |
+| 4 | Transport | Ende-zu-Ende-Zustellung, Fehlerkorrektur, Flusskontrolle | TCP, UDP |
+| 3 | Netzwerk | Routing, Adressierung | IP, ICMP, OSPF, BGP |
+| 2 | Datenverbindung | Framing, Fehlererkennung, MAC-Adressen | Ethernet, Wi-Fi, PPP |
+| 1 | Physikalisch | Rohe Bitübertragung | Ethernet-Kabel, Glasfaser, Radiowellen |
 
-in practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used für der/die/das internet.
+In der Praxis wird das **TCP/IP-Modell** (4 Schichten: Verbindung, Internet, Transport, Anwendung) häufiger für das Internet verwendet.
 
 ---
 
-## IP Addressing
+## IP-Adressierung
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted in practice).
+- 32-Bit-Adresse, geschrieben als vier Oktette: `192.168.1.1`
+- Gesamt: ~4,3 Milliarden Adressen (in der Praxis jedoch erschöpft).
 
 ### IPv6
-- 128-bit address, written in hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- 128-Bit-Adresse, geschrieben in Hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Gesamt: 2¹²⁸ Adressen (praktisch unendlich).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on der/die/das internet; used inside local networks:
+### Private IP-Bereiche (RFC 1918)
+Diese sind nicht im Internet routbar; werden in lokalen Netzwerken verwendet:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means der/die/das first 24 bits are der/die/das Netzwerk prefix; der/die/das last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### CIDR-Notation
+`192.168.1.0/24` bedeutet, dass die ersten 24 Bits das Netzwerkpräfix sind; die letzten 8 Bits sind für Hosts. Es umfasst die Adressen `192.168.1.0` bis `192.168.1.255`.
 
 ---
 
 ## DNS (Domain Name System)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+Ordnet Domainnamen (z. B. `example.com`) IP-Adressen zu.
 
-### Record Types
-| Type | Purpose |
+### Rekordtypen
+| Typ | Zweck |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver für der/die/das domain |
-| **SRV** | Service record (e.g., für SIP) |
+| **A** | Ordnet Domain einer IPv4-Adresse zu |
+| **AAAA** | Ordnet Domain einer IPv6-Adresse zu |
+| **CNAME** | Alias zu einem anderen Domainnamen |
+| **MX** | Mail-Exchange-Server |
+| **TXT** | Beliebiger Text (SPF, DKIM, Verifizierung) |
+| **NS** | Nameserver für die Domain |
+| **SRV** | Dienst-Rekord (z. B. für SIP) |
 
-### Common Tools
+### Häufige Tools
 ```bash
-dig example.com            # DNS lookup (detailed)
-nslookup example.com       # DNS lookup (simpler)
-host example.com           # Quick lookup
-dig -x 8.8.8.8             # Reverse lookup (IP to name)
+dig example.com            # DNS-Lookup (detailliert)
+nslookup example.com       # DNS-Lookup (einfacher)
+host example.com           # Schneller Lookup
+dig -x 8.8.8.8             # Reverse-Lookup (IP zu Name)
+```
 
-Ports and Protocols
-Well-Known Ports (0–1023)
-Port	Protocol	Service
-20, 21	TCP	FTP
-22	TCP	SSH
-23	TCP	Telnet
-25	TCP	SMTP
-53	UDP/TCP	DNS
-80	TCP	HTTP
-110	TCP	POP3
-123	UDP	NTP
-143	TCP	IMAP
-443	TCP	HTTPS
-465	TCP	SMTPS
-587	TCP	SMTP (submission)
-993	TCP	IMAPS
-995	TCP	POP3S
-3306	TCP	MySQL
-5432	TCP	PostgreSQL
-6379	TCP	Redis
-27017	TCP	MongoDB
-Check open ports
-bash
-ss -tulpn                 # Linux: listen and established sockets
-netstat -an               # Older tool
-lsof -i :8080             # See process using port 8080
-nmap localhost            # Scan local ports
-TCP vs UDP
-Feature	TCP	UDP
-Connection	Connection-oriented (handshake)	Connectionless
-Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
-Ordering	Preserves order	No ordering guarantee
-Flow control	Yes (sliding window)	No
-Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
-Header size	20–60 bytes	8 bytes
+## Ports und Protokolle
+
+### Bekannte Ports (0–1023)
+| Port | Protokoll | Dienst |
+|------|-----------|--------|
+| 20, 21 | TCP | FTP |
+| 22 | TCP | SSH |
+| 23 | TCP | Telnet |
+| 25 | TCP | SMTP |
+| 53 | UDP/TCP | DNS |
+| 80 | TCP | HTTP |
+| 110 | TCP | POP3 |
+| 123 | UDP | NTP |
+| 143 | TCP | IMAP |
+| 443 | TCP | HTTPS |
+| 465 | TCP | SMTPS |
+| 587 | TCP | SMTP (Submission) |
+| 993 | TCP | IMAPS |
+| 995 | TCP | POP3S |
+| 3306 | TCP | MySQL |
+| 5432 | TCP | PostgreSQL |
+| 6379 | TCP | Redis |
+| 27017 | TCP | MongoDB |
+
+### Offene Ports prüfen
+```bash
+ss -tulpn                 # Linux: lauschende und etablierte Sockets
+netstat -an               # Älteres Tool
+lsof -i :8080             # Prozess auf Port 8080 anzeigen
+nmap localhost            # Lokale Ports scannen
+```
+
+## TCP vs UDP
+
+| Merkmal | TCP | UDP |
+|---------|-----|-----|
+| Verbindung | Verbindungsorientiert (Handshake) | Verbindungslos |
+| Zuverlässigkeit | Garantierte Zustellung, Neuübertragung | Best Effort (Pakete können verloren gehen) |
+| Reihenfolge | Erhält Reihenfolge | Keine Reihenfolgegarantie |
+| Flusskontrolle | Ja (Sliding Window) | Nein |
+| Einsatzgebiete | Web (HTTP), E-Mail, SSH, Dateiübertragung | DNS, Streaming, VoIP, Gaming, SNMP |
+| Header-Größe | 20–60 Bytes | 8 Bytes |
 HTTP and HTTPS
 HTTP Methods
 GET: Retrieve a resource (idempotent, safe).

@@ -1,4 +1,4 @@
-# SQL Quick Reference Guide
+# SQL Quick reference Guide
 
 Essential SQL commands for database operations.
 
@@ -319,7 +319,7 @@ CREATE TABLE users (
     id INT PRIMARY KEY
 );
 
--- FOREIGN KEY: Reference to another table
+-- FOREIGN KEY: reference to another table
 CREATE TABLE orders (
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id)

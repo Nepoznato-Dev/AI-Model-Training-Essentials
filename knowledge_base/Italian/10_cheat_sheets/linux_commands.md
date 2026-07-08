@@ -1,4 +1,4 @@
-# Referenza Rapida Comandi Linux
+# Referenza Rapida comandi Linux
 
 Essential Linux/Unix commands for system navigation and administration.
 

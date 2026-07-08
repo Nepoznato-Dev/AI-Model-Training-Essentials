@@ -41,7 +41,7 @@ For accuracy improvements, please contribute edits via pull requests.
 #### React
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State Gestion**: Context API, Redux, Zustand, Recoil
+- **State gestion**: Context API, Redux, Zustand, Recoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
 - **Virtual DOM**: Efficient rendering through diffing algorithm
@@ -50,7 +50,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Options API**: Données, methods, computed, watch
 - **Composition API**: setup(), ref, reactive, computed
 - **Directives**: v-if, v-pour, v-bind, v-on, v-model
-- **Vuex/Pinia**: State Gestion
+- **Vuex/Pinia**: State gestion
 - **Vue Router**: Client-side routing
 - **Nuxt.js**: Server-side rendering framework
 
@@ -60,7 +60,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **RxJS**: Reactive programming, observables
 - **Routing**: RouterModule, guards, resolvers
 - **Forms**: Template-driven, reactive forms
-- **NgRx**: Redux-style state Gestion
+- **NgRx**: Redux-style state gestion
 
 ### Build Tools et Bundlers
 - **Webpack**: Module bundling, code splitting, loaders, plugins
@@ -90,7 +90,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **NestJS**: Angular-inspired Architecture, TypeScript
 - **Fastify**: High-Performance framework
 - **Koa**: Modern Express by same creators
-- **Package Gestion**: npm, yarn, pnpm
+- **Package gestion**: npm, yarn, pnpm
 
 #### Python
 - **Django**: Full-featured framework, ORM, admin panel, batteries-included
@@ -183,7 +183,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### CI/CD Pipelines
 - **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-dans continuous integration
+- **GitLab CI**: Integree continuous integration
 - **Jenkins**: Extensible automation server
 - **CircleCI**: Cloud-based CI/CD
 - **Travis CI**: Continuous integration service
@@ -279,7 +279,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Implementation
 - **Semantic HTML**: Proper heading hierarchy, landmarks
 - **ARIA Attributes**: Roles, states, properties
-- **Focus Gestion**: Visible focus indicators, logical tab order
+- **Focus gestion**: Visible focus indicators, logical tab order
 - **Color Contrast**: Minimum 4.5:1 ratio pour text
 - **Screen Reader Test**: NVDA, JAWS, VoiceOver
 - **Keyboard Navigation**: All interactive elements accessible
@@ -308,7 +308,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### Serverless Architecture
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Benefits**: No server Gestion, auto-scaling, pay-per-use
+- **Benefits**: No server gestion, auto-scaling, pay-per-use
 - **Considerations**: Cold starts, vendor lock-dans, debugging complexity
 
 ### Jamstack Architecture

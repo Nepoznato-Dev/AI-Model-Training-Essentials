@@ -7,7 +7,7 @@ trong bối cảnh điện toán và AI hiện đại.
 
 ## Mô hình và trợ lý ngôn ngữ AI
 
-###Trò chuyệnGPT
+### ChatGPT
 ChatGPT là chatbot AI được phát triển bởi OpenAI, phát hành lần đầu vào tháng 11 năm 2022.
 Nó được hỗ trợ bởi loạt mô hình ngôn ngữ lớn (LLM) GPT. ChatGPT là một
 trong số các sản phẩm AI tiêu dùng phát triển nhanh nhất trong lịch sử, đạt 100 triệu
@@ -32,16 +32,16 @@ mô hình an toàn hơn bằng cách đào tạo họ tuân theo một bộ nguy
 đến 200.000 token), lý luận sắc thái và giảm sản lượng có hại so với
 LLM cơ bản.
 
-### Song Tử
+### Gemini
 Gemini là nhóm mô hình AI đa phương thức của Google DeepMind, được công bố vào năm
-Tháng 12 năm 2023. Song Tử vốn là người đa phương thức - được đào tạo từ đầu
+Tháng 12 năm 2023. Gemini vốn là người đa phương thức - được đào tạo từ đầu
 văn bản, hình ảnh, âm thanh và video cùng một lúc, không giống như các mẫu trước đó có
 các phương thức được thêm vào thông qua tinh chỉnh. Các phiên bản bao gồm Gemini Nano (trên thiết bị),
 Gemini Flash (nhanh, tiết kiệm chi phí) và Gemini Ultra (dung lượng cao nhất).
 Gemini hỗ trợ chatbot AI của Google Bard (đã đổi tên thành Gemini) và AI Tìm kiếm của Google
 Tổng quan.
 
-###Phi-3-mini
+### Phi-3-mini
 Phi-3-mini là mô hình ngôn ngữ nhỏ (SLM) được Microsoft phát triển với 3.8B
 các thông số. Nó được phát hành vào tháng 4 năm 2024. Không giống như hầu hết các mẫu lớn, Phi-3-mini
 đã được đào tạo về bộ dữ liệu "chất lượng sách giáo khoa" được quản lý cẩn thận - một kỹ thuật
@@ -61,7 +61,7 @@ Vì trọng lượng có thể tải xuống công khai nên mô hình Llama là
 cho một hệ sinh thái rộng lớn gồm các biến thể được tinh chỉnh (Mistral, Alpaca, Vicuna, v.v.)
 và được sử dụng rộng rãi để triển khai AI cục bộ/riêng tư.
 
-###Mistral
+### Mistral
 Mistral AI là một công ty AI của Pháp chuyên phát triển LLM mở và độc quyền.
 Mistral 7B (2023) đã chứng minh rằng mô hình tham số 7B có thể phù hợp với
 hiệu suất của các mô hình lớn hơn nhiều bằng cách sử dụng các kỹ thuật hiệu quả như trượt
@@ -86,7 +86,9 @@ Dòng RTX (Ray Tracing Texel eXtreme) là dòng GPU tiêu dùng của NVIDIA. RT
 Thế hệ 30xx (Ampere, 2020) và RTX 40xx (Ada Lovelace, 2022) bao gồm
 Lõi Tensor chuyên dụng để tăng tốc hoạt động AI. VRAM (RAM video) là
 rất quan trọng để chạy cục bộ các mô hình AI - GPU 8GB có thể xử lý tham số 7B
-mô hình lượng tử hóa 4 bit; GPU 24 GB có thể xử lý các mô hình 70B ở 4 bit.### NVIDIA A-Series và H-Series (Trung tâm dữ liệu)
+mô hình lượng tử hóa 4 bit; GPU 24 GB có thể xử lý các mô hình 70B ở 4 bit.
+
+### NVIDIA A-Series và H-Series (Trung tâm dữ liệu)
 A100 (Ampere, 2020) và H100 (Hopper, 2022) là AI chuyên nghiệp của NVIDIA
 máy gia tốc. H100 có bộ nhớ HBM3 lên tới 80GB và là tiêu chuẩn
 phần cứng đằng sau hầu hết các chương trình đào tạo LLM quy mô lớn hiện nay. Những GPU này có giá 25.000 USD–
@@ -126,7 +128,7 @@ vấn đề lập trình với các trường hợp kiểm thử tự động. C
 pass@k - xác suất để ít nhất một trong k giải pháp được tạo vượt qua tất cả
 các bài kiểm tra. Điểm GPT-4 ~87% (pass@1); một mô hình 7B được điều chỉnh tốt có thể đạt ~ 50–60%.
 
-### Xin chào Swag
+### HellaSwag
 HellaSwag là một tiêu chuẩn lý luận thông thường. Người mẫu được đưa ra một câu
 mô tả một hoạt động trần tục và phải chọn sự tiếp tục có khả năng nhất từ
 bốn lựa chọn. Các lựa chọn sai được thiết kế đặc biệt để hợp lý nhưng
@@ -170,10 +172,12 @@ phần cứng hoặc thậm chí cả thiết bị di động.
 ### Cửa sổ ngữ cảnh
 Cửa sổ ngữ cảnh là số lượng mã thông báo tối đa mà một mô hình có thể xử lý cùng một lúc,
 bao gồm cả lời nhắc và phản hồi được tạo ra. GPT-3.5 có 4.096 mã thông báo
-cửa sổ; GPT-4 Turbo và Claude 3 hỗ trợ 128.000 token; Song Tử 1.5 Pro
+cửa sổ; GPT-4 Turbo và Claude 3 hỗ trợ 128.000 token; Gemini 1.5 Pro
 hỗ trợ 1.000.000 token. Cửa sổ ngữ cảnh lớn hơn cho phép mô hình "nhìn thấy"
 giống một cuộc trò chuyện hoặc tài liệu cùng một lúc hơn, cải thiện tính mạch lạc trong thời gian dài
-trao đổi.### RLHF (Học tập tăng cường từ phản hồi của con người)
+trao đổi.
+
+### RLHF (Học tập tăng cường từ phản hồi của con người)
 RLHF là kỹ thuật đào tạo chuyển đổi mô hình ngôn ngữ cơ sở (mà
 chỉ cần dự đoán mã thông báo tiếp theo) vào một trợ lý làm theo hướng dẫn và
 cư xử hữu ích. Đầu ra của mô hình chấm điểm của người đánh giá là con người, mô hình phần thưởng được đào tạo

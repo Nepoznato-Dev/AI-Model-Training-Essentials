@@ -269,14 +269,14 @@ Una guida pratica per proteggere applicazioni, infrastrutture e dati, dallo svil
 
 ## Autenticazione e autorizzazione
 
-### Gestione delle password
+### gestione delle password
 - **Hashing**: archivia le password con un algoritmo di hashing potente e lento: **Argon2id** (preferito), **bcrypt**, **scrypt** o **PBKDF2**.
 - **Salting**: aggiungi un salt univoco per utente.
 - **Lunghezza minima**: applica almeno 12-16 caratteri.
 - **MFA (Multi-Factor Authentication)**: richiede un secondo fattore (TOTP, SMS, chiave hardware) per operazioni sensibili.
 - **Limitazione della velocità**: impedisce i tentativi di forza bruta sugli endpoint di accesso (ad esempio, 5 tentativi ogni 5 minuti per IP/utente).
 
-### Gestione delle sessioni
+### gestione delle sessioni
 - Utilizzare cookie sicuri, solo HTTP, SameSite per i token di sessione.
 - Impostare tempi di scadenza appropriati.
 - Invalidare le sessioni al logout e al cambio password.
@@ -321,7 +321,7 @@ Una guida pratica per proteggere applicazioni, infrastrutture e dati, dallo svil
 
 ---
 
-## Gestione dei segreti
+## gestione dei segreti
 
 ### Non codificare mai i segreti
 - Non impegnare segreti (chiavi API, password, URL di database) nel controllo del codice sorgente.
@@ -339,7 +339,7 @@ Una guida pratica per proteggere applicazioni, infrastrutture e dati, dallo svil
 
 ---
 
-## Gestione delle dipendenze
+## gestione delle dipendenze
 
 ### Scansione delle vulnerabilità
 - **Python**: `safety`, `pip-audit`, `bandit`.

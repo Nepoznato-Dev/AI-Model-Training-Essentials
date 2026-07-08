@@ -192,13 +192,13 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Applications
 - **Urban Planning**: Land use, transportation, zoning
 - **Environnemental Monitoring**: Deforestation, pollution, climate change
-- **Disaster Response**: Emergency Gestion, evacuation routes
+- **Disaster Response**: Emergency gestion, evacuation routes
 - **Entreprise Intelligence**: Market analysis, site selection, logistics
 - **Public Health**: Disease tracking, Soins de santé access
 
 ## Key Geopolitical Theorists
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Commandes le/la Heartland"
+- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe commandes le/la Heartland"
 - **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
 - **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
 - **Karl Haushofer** (1869-1946): Geopolitik, German geographical school

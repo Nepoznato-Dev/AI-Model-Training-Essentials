@@ -116,7 +116,7 @@ Model performs poorly on both training と validation.
 
 - **Grid Search**: Exhaustively try all combinations の a predefined set の hyperparameters. Simple but computationally expensive.
 - **Random Search**: Sample random combinations from distributions. More efficient than grid search のために high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model の その objective function と selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
+- **Bayesian Optimisation**: Builds a probabilistic model の objective function と selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
 - **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps のために distributed tuning.
 
 **Suggested search ranges のために common hyperparameters:**

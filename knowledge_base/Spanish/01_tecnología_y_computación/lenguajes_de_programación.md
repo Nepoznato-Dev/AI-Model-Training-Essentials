@@ -14,55 +14,55 @@ Python is a high-level, interpreted, dynamically typed, general-purpose programm
 ### Sintaxis Conceptos básicos
 
 ```python
-# Variables and types
+# Variables y tipos
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# Condicionales
 if age >= 18:
-    print("adult")
+ print("adult")
 elif age >= 13:
-    print("teenager")
+ print("teenager")
 else:
-    print("child")
+ print("child")
 
-# Loops
+# Bucles
 for i in range(5):
-    print(i)
+ print(i)
 
 while active:
-    active = False
+ active = False
 ```
 
-### Functions y type hints
+### Funciones y type hints
 
 ```python
 def greet(name: str, times: int = 1) -> str:
-    return (f"Hello, {name}! " * times).strip()
+ return (f"Hello, {name}! " * times).strip()
 ```
 
 ### List comprehensions
 
 ```python
 squares = [x**2 for x in range(10)]
-evens   = [x for x in range(20) if x % 2 == 0]
+evens = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Classes y OOP
+### Clases y OOP
 
 ```python
 class Animal:
-    def __init__(self, name: str) -> None:
-        self.name = name
+ def __init__(self, name: str) -> None:
+ self.name = name
 
-    def speak(self) -> str:
-        raise NotImplementedError
+ def speak(self) -> str:
+ raise NotImplementedError
 
 class Dog(Animal):
-    def speak(self) -> str:
-        return f"{self.name} says woof"
+ def speak(self) -> str:
+ return f"{self.name} says woof"
 ```
 
 ### Common patterns
@@ -78,13 +78,13 @@ class Dog(Animal):
 - `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
 - `pip freeze > requirements.txt` saves dependencies.
 - `pip install -r requirements.txt` restores them.
-- `pyproject.toml` is el/la modern project-configuration standard.
+- `pyproject.toml` is el modern project-configuration standard.
 
 ---
 
 ## JavaScript
 
-JavaScript is el/la primary Idioma de el/la Web. It runs en browsers y on servers via Node.js. It is dynamically typed y prototype-based.
+JavaScript is el primary Idioma del Web. It runs en browsers y on servers via Node.js. It is dynamically typed y prototype-based.
 
 ### Modern Sintaxis (ES6+)
 
@@ -112,18 +112,18 @@ const merged = { ...defaults, ...overrides };
 ```javascript
 // Promises
 fetch("/api/data")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
+ .then(res => res.json())
+ .then(data => console.log(data))
+ .catch(err => console.error(err));
 
 // Async / await
 async function loadUser(id) {
-  try {
-    const res = await fetch(`/users/${id}`);
-    return await res.json();
-  } catch (err) {
-    console.error(err);
-  }
+ try {
+ const res = await fetch(`/users/${id}`);
+ return await res.json();
+ } catch (err) {
+ console.error(err);
+ }
 }
 ```
 
@@ -131,8 +131,8 @@ async function loadUser(id) {
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
-const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
-const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
+const evens = [1, 2, 3, 4].filter(n => n % 2 === 0);
+const sum = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
 ### DOM manipulation
@@ -140,7 +140,7 @@ const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```javascript
 const btn = document.getElementById("submit");
 btn.addEventListener("click", () => {
-  document.querySelector(".result").textContent = "Done!";
+ document.querySelector(".result").textContent = "Done!";
 });
 ```
 
@@ -170,9 +170,9 @@ let anything: unknown = "could be anything";
 
 ```typescript
 interface User {
-  id: number;
-  name: string;
-  email?: string;   // optional property
+ id: number;
+ name: string;
+ email?: string; // optional property
 }
 
 type Status = "active" | "inactive" | "banned";
@@ -182,27 +182,27 @@ type Status = "active" | "inactive" | "banned";
 
 ```typescript
 function identity<T>(value: T): T {
-  return value;
+ return value;
 }
 
 function first<T>(arr: T[]): T | undefined {
-  return arr[0];
+ return arr[0];
 }
 ```
 
-### Classes con access modifiers
+### Clases con access modifiers
 
 ```typescript
 class Counter {
-  private count: number = 0;
+ private count: number = 0;
 
-  increment(): void {
-    this.count++;
-  }
+ increment(): void {
+ this.count++;
+ }
 
-  get value(): number {
-    return this.count;
-  }
+ get value(): number {
+ return this.count;
+ }
 }
 ```
 
@@ -210,20 +210,20 @@ class Counter {
 
 ```json
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strict": true,
-    "outDir": "dist",
-    "rootDir": "src"
-  }
+ "compilerOptions": {
+ "target": "ES2020",
+ "module": "CommonJS",
+ "strict": true,
+ "outDir": "dist",
+ "rootDir": "src"
+ }
 }
 ```
 
 ### Tooling
 
-- `npm install -g typescript` installs el/la compiler.
-- `tsc` compiles el/la project.
+- `npm install -g typescript` installs el compiler.
+- `tsc` compiles el project.
 - `ts-node src/index.ts` runs TypeScript directly.
 
 ---
@@ -234,29 +234,29 @@ Rust is a Sistemas programming Idioma focused on safety, speed, y concurrency. I
 
 ### Ownership y borrowing
 
-Every value en Rust has exactly one owner. When el/la owner goes out de scope el/la value is dropped. Borrowing allows references without transferring ownership.
+Every value en Rust has exactly one owner. When el owner goes out de scope el value is dropped. Borrowing allows references without transferring ownership.
 
 ```rust
 fn main() {
-    let s = String::from("hello");  // s owns the string
-    let len = calculate_length(&s); // borrow s
-    println!("{} has length {}", s, len); // s still valid
+ let s = String::from("hello"); // s owns the string
+ let len = calculate_length(&s); // borrow s
+ println!("{} has length {}", s, len); // s still valid
 }
 
 fn calculate_length(s: &String) -> usize {
-    s.len()
+ s.len()
 }
 ```
 
-Mutable borrows (`&mut T`) require that no other borrows exist at el/la same time.
+Mutable borrows (`&mut T`) require that no other borrows exist at el same time.
 
 ### Lifetimes
 
-Lifetimes ensure references do not outlive el/la Datos they point to.
+Lifetimes ensure references do not outlive el Datos they point to.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() { x } else { y }
+ if x.len() > y.len() { x } else { y }
 }
 ```
 
@@ -264,36 +264,36 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 ```rust
 enum Shape {
-    Circle(f64),
-    Rectangle(f64, f64),
+ Circle(f64),
+ Rectangle(f64, f64),
 }
 
 fn area(shape: &Shape) -> f64 {
-    match shape {
-        Shape::Circle(r)       => std::f64::consts::PI * r * r,
-        Shape::Rectangle(w, h) => w * h,
-    }
+ match shape {
+ Shape::Circle(r) => std::f64::consts::PI * r * r,
+ Shape::Rectangle(w, h) => w * h,
+ }
 }
 ```
 
-### Error handling
+### Manejo de errores
 
 ```rust
 use std::fs;
 
 fn read_file(path: &str) -> Result<String, std::io::Error> {
-    fs::read_to_string(path)
+ fs::read_to_string(path)
 }
 
 fn main() {
-    match read_file("data.txt") {
-        Ok(content) => println!("{}", content),
-        Err(e)      => eprintln!("Error: {}", e),
-    }
+ match read_file("data.txt") {
+ Ok(content) => println!("{}", content),
+ Err(e) => eprintln!("Error: {}", e),
+ }
 }
 ```
 
-el/la `?` operator propagates errors automatically inside functions that return `Result`.
+el `?` operator propagates errors automatically inside functions that return `Result`.
 
 ### Tooling (Cargo)
 
@@ -318,19 +318,19 @@ package main
 import "fmt"
 
 func main() {
-    name := "world"          // short variable declaration
-    fmt.Printf("Hello, %s!\n", name)
+ name := "world" // short variable declaration
+ fmt.Printf("Hello, %s!\n", name)
 }
 ```
 
-### Functions y multiple return values
+### Funciones y multiple return values
 
 ```go
 func divide(a, b float64) (float64, error) {
-    if b == 0 {
-        return 0, fmt.Errorf("division by zero")
-    }
-    return a / b, nil
+ if b == 0 {
+ return 0, fmt.Errorf("division by zero")
+ }
+ return a / b, nil
 }
 ```
 
@@ -338,7 +338,7 @@ func divide(a, b float64) (float64, error) {
 
 ```go
 type Speaker interface {
-    Speak() string
+ Speak() string
 }
 
 type Dog struct{ Name string }
@@ -352,25 +352,25 @@ Any type that implements all methods de an interface satisfies it — no explici
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
-    for j := range jobs {
-        results <- j * j
-    }
+ for j := range jobs {
+ results <- j * j
+ }
 }
 
 func main() {
-    jobs    := make(chan int, 5)
-    results := make(chan int, 5)
+ jobs := make(chan int, 5)
+ results := make(chan int, 5)
 
-    go worker(1, jobs, results)
+ go worker(1, jobs, results)
 
-    for i := 1; i <= 5; i++ {
-        jobs <- i
-    }
-    close(jobs)
+ for i := 1; i <= 5; i++ {
+ jobs <- i
+ }
+ close(jobs)
 
-    for i := 0; i < 5; i++ {
-        fmt.Println(<-results)
-    }
+ for i := 0; i < 5; i++ {
+ fmt.Println(<-results)
+ }
 }
 ```
 
@@ -378,13 +378,13 @@ func main() {
 
 ```go
 func readFile(path string) error {
-    f, err := os.Open(path)
-    if err != nil {
-        return err
-    }
-    defer f.Close()   // runs when function returns
-    // … process f …
-    return nil
+ f, err := os.Open(path)
+ if err != nil {
+ return err
+ }
+ defer f.Close() // runs when function returns
+ // … process f …
+ return nil
 }
 ```
 
@@ -401,7 +401,7 @@ func readFile(path string) error {
 
 ## C y C++
 
-C is a low-level, compiled, procedural Idioma. C++ extends C con classes, templates, y el/la Standard Template Library (STL).
+C is a low-level, compiled, procedural Idioma. C++ extends C con classes, templates, y el Standard Template Library (STL).
 
 ### C Conceptos básicos
 
@@ -410,26 +410,26 @@ C is a low-level, compiled, procedural Idioma. C++ extends C con classes, templa
 #include <stdlib.h>
 
 int main(void) {
-    int x = 42;
-    printf("x = %d\n", x);
+ int x = 42;
+ printf("x = %d\n", x);
 
-    /* Dynamic memory */
-    int *arr = malloc(5 * sizeof(int));
-    for (int i = 0; i < 5; i++) arr[i] = i;
-    free(arr);   /* always free what you malloc */
+ /* Dynamic memory */
+ int *arr = malloc(5 * sizeof(int));
+ for (int i = 0; i < 5; i++) arr[i] = i;
+ free(arr); /* always free what you malloc */
 
-    return 0;
+ return 0;
 }
 ```
 
 ### Pointers
 
-A pointer stores el/la memory address de another variable. `*ptr` dereferences it; `&var` takes an address.
+A pointer stores el memory address de another variable. `*ptr` dereferences it; `&var` takes an address.
 
 ```c
 int a = 10;
 int *p = &a;
-*p = 20;   /* a is now 20 */
+*p = 20; /* a is now 20 */
 ```
 
 ### C++ classes y RAII
@@ -440,15 +440,15 @@ int *p = &a;
 
 class Person {
 public:
-    Person(std::string name, int age) : name_(name), age_(age) {}
+ Person(std::string name, int age) : name_(name), age_(age) {}
 
-    void greet() const {
-        std::cout << "Hi, I'm " << name_ << "\n";
-    }
+ void greet() const {
+ std::cout << "Hi, I'm " << name_ << "\n";
+ }
 
 private:
-    std::string name_;
-    int age_;
+ std::string name_;
+ int age_;
 };
 ```
 
@@ -466,7 +466,7 @@ std::sort(v.begin(), v.end());
 
 std::map<std::string, int> scores;
 scores["Alice"] = 95;
-scores["Bob"]   = 87;
+scores["Bob"] = 87;
 ```
 
 ### Modern C++ (C++17 / C++20) highlights
@@ -482,19 +482,19 @@ scores["Bob"]   = 87;
 - `gcc main.c -o main` compiles C.
 - `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
 - `make` automates multi-file builds via a `Makefile`.
-- `cmake` is el/la standard build-system generator para larger projects.
+- `cmake` is el standard build-system generator para larger projects.
 
 ---
 
 ## Swift
 
-Swift is a modern, statically typed programming Idioma developed by Apple para iOS, macOS, watchOS, y tvOS. It is also Disponible on Linux.
+Swift is a modern, statically typed programming Idioma desarrolló by Apple para iOS, macOS, watchOS, y tvOS. It is also Disponible on Linux.
 
 ### Conceptos básicos
 
 ```swift
-let greeting = "Hello, world!"   // constant (immutable)
-var counter  = 0                  // variable (mutable)
+let greeting = "Hello, world!" // constant (immutable)
+var counter = 0 // variable (mutable)
 counter += 1
 
 let pi: Double = 3.14159
@@ -510,7 +510,7 @@ name = "Alice"
 
 // Safe unwrapping
 if let n = name {
-    print("Hello, \(n)")
+ print("Hello, \(n)")
 }
 
 // Nil-coalescing
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions y closures
+### Funciones y closures
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,19 +528,19 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Classes y structs
+### Clases y structs
 
 Swift has both classes (Referencia types) y structs (value types). Prefer structs para simple Datos models.
 
 ```swift
 struct Point {
-    var x: Double
-    var y: Double
+ var x: Double
+ var y: Double
 }
 
 class Vehicle {
-    var speed: Double = 0.0
-    func accelerate(by amount: Double) { speed += amount }
+ var speed: Double = 0.0
+ func accelerate(by amount: Double) { speed += amount }
 }
 ```
 
@@ -548,12 +548,12 @@ class Vehicle {
 
 ```swift
 protocol Describable {
-    var description: String { get }
+ var description: String { get }
 }
 
 struct Cat: Describable {
-    var name: String
-    var description: String { "Cat named \(name)" }
+ var name: String
+ var description: String { "Cat named \(name)" }
 }
 ```
 
@@ -561,9 +561,9 @@ struct Cat: Describable {
 
 ```swift
 struct User: Codable {
-    let id: Int
-    let name: String
-    let email: String
+ let id: Int
+ let name: String
+ let email: String
 }
 
 let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
@@ -576,24 +576,24 @@ let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 import SwiftUI
 
 struct ContentView: View {
-    @State private var count = 0
+ @State private var count = 0
 
-    var body: some View {
-        VStack {
-            Text("Count: \(count)")
-            Button("Increment") { count += 1 }
-        }
-    }
+ var body: some View {
+ VStack {
+ Text("Count: \(count)")
+ Button("Increment") { count += 1 }
+ }
+ }
 }
 ```
 
 ### Tooling
 
 - `swift build` compiles a Swift Package Manager project.
-- `swift run` runs el/la project.
+- `swift run` runs el project.
 - `swift test` runs tests.
 - `swift package init --type executable` creates a new executable project.
-- Xcode is el/la primary IDE para Apple-platform Desarrollo.
+- Xcode is el primary IDE para Apple-platform Desarrollo.
 
 ---
 
@@ -601,15 +601,15 @@ struct ContentView: View {
 
 ### Problem-solving workflow
 
-1. Define el/la input, output, y constraints before writing code.
-2. Break el/la task into smaller sub-problems.
+1. Define el input, output, y constraints before writing code.
+2. Break el task into smaller sub-problems.
 3. Start con a simple correct solution, then optimise if needed.
 4. Validate con tests, edge cases, y realistic inputs.
 
 ### Core Datos structures
 
 - **Array / List**: ordered collection con fast indexed reads.
-- **Hash map / Diccionario**: key-value store con average O(1) lookup.
+- **Hash mapear / Diccionario**: key-value store con average O(1) lookup.
 - **Set**: unique values, useful para membership checks.
 - **Stack**: LIFO (last en, first out), common en parsing y recursion.
 - **Queue**: FIFO (first en, first out), useful para scheduling y BFS.
@@ -619,20 +619,20 @@ struct ContentView: View {
 
 - Big O describes how runtime or memory grows con input size.
 - Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): binary search.
-  - O(n): single pass through Datos.
-  - O(n log n): efficient sorting.
-  - O(n²): nested loops over similar-size inputs.
+ - O(1): constant-time lookup (e.g., hash mapear access).
+ - O(log n): binary search.
+ - O(n): single pass through Datos.
+ - O(n log n): efficient sorting.
+ - O(n²): nested loops over similar-size inputs.
 - Prefer clear, maintainable code unless profiling shows a bottleneck.
 
 ### Debugging principles
 
-- Reproduce el/la bug reliably first.
-- Minimise el/la failing case to isolate cause.
+- Reproduce el bug reliably first.
+- Minimise el failing case to isolate cause.
 - Inspect logs, inputs, y assumptions.
 - Change one variable at a time while Pruebas.
-- Add regression tests so el/la same bug does not return.
+- Add regression tests so el same bug does not return.
 
 ### Pruebas pyramid
 

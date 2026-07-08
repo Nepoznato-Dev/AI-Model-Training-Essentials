@@ -21,9 +21,9 @@ For accuracy improvements, please contribute edits via pull requests.
 #### CSS (Cascading Style Sheets)
 - **Box Model**: Content, padding, border, margin
 - **Layout Sistemas**:
-  - **Flexbox**: One-dimensional layouts, justify-content, align-items
-  - **Grid**: Two-dimensional layouts, grid-template, grid-area
-  - **Positioning**: Static, relative, absolute, fixed, sticky
+ - **Flexbox**: One-dimensional layouts, justify-content, align-items
+ - **Grid**: Two-dimensional layouts, grid-template, grid-area
+ - **Positioning**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
 - **CSS Variables**: Custom properties para theming
 - **Animations**: Transitions, keyframes, transforms
@@ -78,14 +78,14 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Chakra UI**: Accessible component library
 - **Ant Design**: Enterprise-level UI components
 - **Styled Components**: CSS-en-JS library
-- **Emotion**: CSS-en-JS con source maps
+- **Emotion**: CSS-en-JS con source mapears
 
 ## Backend Desarrollo
 
 ### Server-Side Languages
 
 #### Node.js
-- **Runtime**: JavaScript on el/la server (V8 engine)
+- **Runtime**: JavaScript on el server (V8 engine)
 - **Express.js**: Minimal Web framework, middleware Arquitectura
 - **NestJS**: Angular-inspired Arquitectura, TypeScript
 - **Fastify**: High-Rendimiento framework
@@ -205,7 +205,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Compression**: Gzip, Brotli
 - **Caching**: Browser cache, CDN, service workers
 - **Image Optimization**: WebP, AVIF, lazy loading, responsive images
-- **Critical CSS**: Inlining above-el/la-fold styles
+- **Critical CSS**: Inlining above-el-fold styles
 - **Base de datos Optimization**: Indexing, query optimization, connection pooling
 
 ### Core Web Vitals
@@ -309,7 +309,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Serverless Arquitectura
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Benefits**: No server Gestión, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-en, debugging complexity
+- **Consideraciones**: Cold starts, vendor lock-in, complejidad de depuración
 
 ### Jamstack Arquitectura
 - **JavaScript**: Client-side interactivity

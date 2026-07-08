@@ -17,7 +17,7 @@ A リファレンス glossary covering AI models, hardware, benchmarks, と core
 ### ChatGPT
 ChatGPT is an AI chatbot developed by OpenAI, first released で November 2022.
 It is powered by その GPT series の large 言語 models (LLMs). ChatGPT is one
-の その fastest-growing consumer AI products で 歴史, reaching 100 million
+の fastest-growing consumer AI products で 歴史, reaching 100 million
 users within two months の launch. It supports text-based conversation, code
 generation, summarisation, と creative writing. Paid tiers provide access to
 more powerful models such as GPT-4 と GPT-4o.
@@ -27,7 +27,7 @@ GPT is a family の large 言語 models created by OpenAI. その アーキテ�
 uses a decoder-only Transformer trained と a next-token prediction objective on
 massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
 のために "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via その API), GPT-3.5 (その backbone の その original ChatGPT), と GPT-4
+used via その API), GPT-3.5 (その backbone の original ChatGPT), と GPT-4
 (2023, multimodal, パフォーマンス close to human expert level on many benchmarks).
 
 ### Claude

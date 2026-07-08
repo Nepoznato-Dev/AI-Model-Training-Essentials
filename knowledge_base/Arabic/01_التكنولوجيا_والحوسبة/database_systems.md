@@ -80,7 +80,7 @@ DELETE FROM users WHERE id = 1;
 
 #### Document Stores
 - **Structure**: JSON-like documents (BSON)
-- **Use Cases**: Content الإدارة, catalogs, user profiles
+- **حالات الاستخدام**: Content الإدارة, catalogs, user profiles
 - **أمثلة**: MongoDB, CouchDB, DocumentDB
 - **Query Example** (MongoDB):
 ```javascript
@@ -89,19 +89,19 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 #### Key-Value Stores
 - **Structure**: Simple key-value pairs
-- **Use Cases**: Caching, sessions, shopping carts
+- **حالات الاستخدام**: Caching, sessions, shopping carts
 - **أمثلة**: Redis, DynamoDB, Riak
 - **Characteristics**: Fast, simple, limited querying
 
 #### Column-Family Stores
 - **Structure**: Columns grouped into families
-- **Use Cases**: Big البيانات, analytics, time-series
+- **حالات الاستخدام**: Big البيانات, analytics, time-series
 - **أمثلة**: Cassandra, HBase, ScyllaDB
 - **Characteristics**: Write-optimized, distributed, scalable
 
 #### Graph Databases
 - **Structure**: Nodes, edges, properties
-- **Use Cases**: Social networks, fraud detection, recommendations
+- **حالات الاستخدام**: Social networks, fraud detection, recommendations
 - **أمثلة**: Neo4j, Amazon Neptune, ArangoDB
 - **Query اللغة**: Cypher (Neo4j), Gremlin
 
@@ -251,12 +251,12 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Time-Series Databases
 - Optimized لأجل timestamped البيانات
 - **أمثلة**: InfluxDB, TimescaleDB, Prometheus
-- **Use Cases**: IoT, monitoring, financial البيانات
+- **حالات الاستخدام**: IoT, monitoring, financial البيانات
 
 ### Vector Databases
 - Store و query embedding vectors
 - **أمثلة**: Pinecone, Milvus, Weaviate, Qdrant
-- **Use Cases**: Semantic search, recommendation الأنظمة, AI applications
+- **حالات الاستخدام**: Semantic search, recommendation الأنظمة, AI applications
 
 ### Multi-Model Databases
 - الدعم multiple البيانات models في single system
@@ -278,7 +278,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Abstraction from SQL
 - Type safety
 - Migration الإدارة
-- Query building APIs
+- Query building واجهات البرمجة
 
 ### Drawbacks
 - الأداء overhead

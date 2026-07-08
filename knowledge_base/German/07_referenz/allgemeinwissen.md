@@ -2,71 +2,71 @@
 This file was automatically translated from English to German.
 Source: general_knowledge.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Allgemeinwissen
 
-## der/die/das Solar System
+## Das Sonnensystem
 
-der/die/das solar system consists von der/die/das Sun und eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, und Neptune. Earth is der/die/das third planet from der/die/das Sun, located approximately 150 million kilometers away. der/die/das Sun is a star at der/die/das center von der/die/das solar system that provides light und energy to all planets through nuclear fusion. Jupiter is der/die/das largest planet, mit a mass greater than all other planets combined. Saturn is known für its prominent ring system made von ice und rock. Mars is called der/die/das Red Planet because von iron oxide on its surface. Neptune is der/die/das farthest planet from der/die/das Sun.
+Das Sonnensystem besteht aus der Sonne und acht Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Die Erde ist der dritte Planet von der Sonne entfernt, etwa 150 Millionen Kilometer. Die Sonne ist ein Stern im Zentrum des Sonnensystems, der durch Kernfusion allen Planeten Licht und Energie liefert. Jupiter ist der größte Planet mit einer Masse, die größer ist als die aller anderen Planeten zusammen. Saturn ist bekannt für sein ausgeprägtes Ringsystem aus Eis und Gestein. Mars wird der Rote Planet genannt wegen Eisenoxid auf seiner Oberfläche. Neptun ist der am weitesten von der Sonne entfernte Planet.
 
-## Earth
+## Erde
 
-Earth is der/die/das fifth-largest planet in der/die/das solar system und der/die/das only known planet to harbor life. Its surface is approximately 71% water und 29% land. der/die/das atmosphere is composed von approximately 78% nitrogen, 21% oxygen, und 1% other gases including carbon dioxide und argon. Earth has one natural satellite called der/die/das Moon. der/die/das Moon orbits Earth roughly every 27.3 days und is approximately 384,400 kilometers away. Earth has a diameter von approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Die Erde ist der fünftgrößte Planet im Sonnensystem und der einzige bekannte Planet, der Leben beherbergt. Ihre Oberfläche besteht zu etwa 71 % aus Wasser und zu 29 % aus Land. Die Atmosphäre besteht aus etwa 78 % Stickstoff, 21 % Sauerstoff und 1 % anderen Gasen einschließlich Kohlendioxid und Argon. Die Erde hat einen natürlichen Satelliten namens Mond. Der Mond umkreist die Erde ungefähr alle 27,3 Tage und ist etwa 384.400 Kilometer entfernt. Die Erde hat einen Durchmesser von etwa 12.742 Kilometern. Die Erde ist etwa 4,5 Milliarden Jahre alt.
 
-## Weather und Climate
+## Wetter und Klima
 
-Weather refers to short-term atmospheric conditions in a specific location, including temperature, humidity, precipitation, und wind. Climate refers to long-term weather patterns in a region over many years. der/die/das greenhouse effect occurs when gases in Earth's atmosphere trap heat from der/die/das Sun, warming der/die/das planet. Carbon dioxide, water vapor, und methane are der/die/das main greenhouse gases. Climate change refers to long-term shifts in global temperatures und weather patterns, largely driven by human activity since der/die/das Industrial Revolution.
+Wetter bezieht sich auf kurzfristige atmosphärische Bedingungen an einem bestimmten Ort, einschließlich Temperatur, Luftfeuchtigkeit, Niederschlag und Wind. Klima bezieht sich auf langfristige Wettermuster in einer Region über viele Jahre. Der Treibhauseffekt tritt auf, wenn Gase in der Erdatmosphäre Wärme von der Sonne einfangen und den Planeten erwärmen. Kohlendioxid, Wasserdampf und Methan sind die wichtigsten Treibhausgase. Klimawandel bezieht sich auf langfristige Verschiebungen der globalen Temperaturen und Wettermuster, die seit der Industriellen Revolution größtenteils durch menschliche Aktivitäten verursacht werden.
 
-## Oceans
+## Ozeane
 
-Earth has five oceans: der/die/das Pacific, Atlantic, Indian, Southern, und Arctic. der/die/das Pacific Ocean is der/die/das largest, covering more than 165 million square kilometers, und der/die/das deepest, mit der/die/das Mariana Trench reaching approximately 11 kilometers deep. der/die/das oceans cover about 361 million square kilometers in total. der/die/das average depth von der/die/das ocean is approximately 3,688 meters. der/die/das oceans regulate Earth's temperature und are home to der/die/das majority von life on der/die/das planet.
+Die Erde hat fünf Ozeane: den Pazifik, den Atlantik, den Indischen Ozean, den Südlichen Ozean und den Arktischen Ozean. Der Pazifische Ozean ist der größte und erstreckt sich über mehr als 165 Millionen Quadratkilometer, und der tiefste, wobei der Marianengraben etwa 11 Kilometer tief ist. Die Ozeane bedecken insgesamt etwa 361 Millionen Quadratkilometer. Die durchschnittliche Tiefe der Ozeane beträgt etwa 3.688 Meter. Die Ozeane regulieren die Temperatur der Erde und beherbergen die Mehrheit des Lebens auf dem Planeten.
 
-## Continents
+## Kontinente
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, und South America. Asia is der/die/das largest continent by area und population. Africa has der/die/das most countries von any continent. Antarctica is der/die/das coldest, driest, und windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe und Asia are sometimes considered a single landmass called Eurasia.
+Die Erde hat sieben Kontinente: Afrika, Antarktis, Asien, Australien (Ozeanien), Europa, Nordamerika und Südamerika. Asien ist der größte Kontinent nach Fläche und Bevölkerung. Afrika hat die meisten Länder aller Kontinente. Antarktis ist der kälteste, trockenste und windigste Kontinent, bedeckt von einer Eisschicht mit einer durchschnittlichen Dicke von 2,1 Kilometern. Europa und Asien werden manchmal als eine einzige Landmasse namens Eurasien betrachtet.
 
-## Time und Calendars
+## Zeit und Kalender
 
-A year is der/die/das time it takes Earth to orbit der/die/das Sun, approximately 365.25 days. A leap year has 366 days und occurs every four years to account für der/die/das extra quarter-day. A day is one full rotation von Earth on its axis, approximately 24 hours. der/die/das Gregorian calendar is der/die/das most widely used calendar in der/die/das world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+Ein Jahr ist die Zeit, die die Erde benötigt, um die Sonne zu umkreisen, etwa 365,25 Tage. Ein Schaltjahr hat 366 Tage und tritt alle vier Jahre auf, um den zusätzlichen Vierteltag auszugleichen. Ein Tag ist eine volle Rotation der Erde um ihre Achse, etwa 24 Stunden. Der Gregorianische Kalender ist der am weitesten verbreitete Kalender in der Welt heute. Eine Woche hat sieben Tage. Eine Stunde hat 60 Minuten. Eine Minute hat 60 Sekunden.
 
-## Light und Speed
+## Licht und Geschwindigkeit
 
-der/die/das speed von light in a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from der/die/das Sun takes about 8 minutes to reach Earth. A light-year is der/die/das distance light travels in one year, approximately 9.46 trillion kilometers. Nothing mit mass can travel as fast as der/die/das speed von light according to Einstein's theory von special relativity.
+Die Lichtgeschwindigkeit im Vakuum beträgt etwa 299.792 Kilometer pro Sekunde, ungefähr 186.000 Meilen pro Sekunde. Licht von der Sonne benötigt etwa 8 Minuten, um die Erde zu erreichen. Ein Lichtjahr ist die Entfernung, die Licht in einem Jahr zurücklegt, etwa 9,46 Billionen Kilometer. Nichts mit Masse kann sich gemäß Einsteins spezieller Relativitätstheorie so schnell wie die Lichtgeschwindigkeit bewegen.
 
-## Human Body
+## Menschlicher Körper
 
-der/die/das human body contains approximately 37 trillion cells. der/die/das adult human skeleton has 206 bones. der/die/das heart pumps blood through approximately 100,000 kilometers von blood vessels. der/die/das brain is der/die/das most complex organ und contains approximately 86 billion neurons. der/die/das human body is approximately 60% water. der/die/das longest bone in der/die/das body is der/die/das femur (thigh bone). der/die/das smallest bone is der/die/das stapes in der/die/das ear.
+Der menschliche Körper enthält etwa 37 Billionen Zellen. Das erwachsene menschliche Skelett hat 206 Knochen. Das Herz pumpt Blut durch etwa 100.000 Kilometer Blutgefäße. Das Gehirn ist das komplexeste Organ und enthält etwa 86 Milliarden Neuronen. Der menschliche Körper besteht zu etwa 60 % aus Wasser. Der längste Knochen im Körper ist der Femur (Oberschenkelknochen). Der kleinste Knochen ist der Steigbügel im Ohr.
 
-## Water
+## Wasser
 
-Water is a chemical compound made von two hydrogen atoms und one oxygen atom (H2O). It exists in three states: liquid (water), solid (ice), und gas (steam or water vapor). Water freezes at 0 degrees Celsius und boils at 100 degrees Celsius at sea level. Water is essential für all known forms von life. About 97.5% von Earth's water is saltwater; only 2.5% is freshwater.
+Wasser ist eine chemische Verbindung aus zwei Wasserstoffatomen und einem Sauerstoffatom (H₂O). Es existiert in drei Zuständen: flüssig (Wasser), fest (Eis) und gasförmig (Dampf oder Wasserdampf). Wasser gefriert bei 0 Grad Celsius und siedet bei 100 Grad Celsius auf Meereshöhe. Wasser ist essentiell für alle bekannten Lebensformen. Etwa 97,5 % des Wassers der Erde ist Salzwasser; nur 2,5 % ist Süßwasser.
 
-## Animals
+## Tiere
 
-Mammals are warm-blooded animals that give birth to live young und nurse them mit milk. Birds are warm-blooded animals covered in feathers that lay eggs. Reptiles are cold-blooded animals mit scales. Amphibians can live both on land und in water. Fish breathe through gills und live in water. Insects are der/die/das most numerous class von animals on Earth. der/die/das blue whale is der/die/das largest animal ever known to have lived, reaching up to 30 meters in length.
+Säugetiere sind warmblütige Tiere, die lebende Junge gebären und sie mit Milch säugen. Vögel sind warmblütige Tiere, die mit Federn bedeckt sind und Eier legen. Reptilien sind kaltblütige Tiere mit Schuppen. Amphibien können sowohl an Land als auch im Wasser leben. Fische atmen durch Kiemen und leben im Wasser. Insekten sind die zahlreichste Klasse von Tieren auf der Erde. Der Blauwal ist das größte Tier, das jemals gelebt hat, und erreicht eine Länge von bis zu 30 Metern.
 
 ## Geographie und Population
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India und China are der/die/das two most populous countries. der/die/das largest country by area is Russia, followed by Canada und China. der/die/das Nile und der/die/das Amazon are among der/die/das world's longest river Systeme. Mount Everest, in der/die/das Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+Die Gesamtoberfläche der Erde beträgt etwa 510 Millionen Quadratkilometer. Etwa 8 Milliarden Menschen leben auf der Erde. Indien und China sind die beiden bevölkerungsreichsten Länder. Das größte Land nach Fläche ist Russland, gefolgt von Kanada und China. Der Nil und der Amazonas gehören zu den längsten Flusssystemen der Welt. Der Mount Everest im Himalaya ist mit 8.848,86 Metern der höchste Berg der Erde über dem Meeresspiegel.
 
-## Energy und Resources
+## Energie und Ressourcen
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, und solar. Fossil fuels formed over millions von years from ancient organic matter. Renewable energy sources such as wind und solar are replenished naturally und are central to many decarbonisation strategies. Electrical energy is measured in joules; in households und industry, usage is commonly measured in kilowatt-hours (kWh).
+Zu den primären globalen Energiequellen gehören Öl, Erdgas, Kohle, Kernenergie, Wasserkraft, Wind und Sonne. Fossile Brennstoffe entstanden über Millionen von Jahren aus altem organischem Material. Erneuerbare Energiequellen wie Wind und Sonne werden natürlich aufgefüllt und sind zentral für viele Dekarbonisierungsstrategien. Elektrische Energie wird in Joule gemessen; in Haushalten und in der Industrie wird der Verbrauch üblicherweise in Kilowattstunden (kWh) gemessen.
 
 ## Wirtschaft Grundlagen
 
-Wirtschaft studies how people und societies allocate limited resources. Supply und demand influence market prices. Inflation is a general rise in prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates der/die/das total value von goods und services produced in a country. Interest rates influence borrowing, saving, und investment behavior.
+Wirtschaft untersucht, wie Menschen und Gesellschaften begrenzte Ressourcen verteilen. Angebot und Nachfrage beeinflussen die Marktpreise. Inflation ist ein allgemeiner Anstieg der Preise im Laufe der Zeit, der die Kaufkraft verringert. Das Bruttoinlandsprodukt (BIP) schätzt den Gesamtwert aller Waren und Dienstleistungen, die in einem Land produziert werden. Zinssätze beeinflussen das Verhalten beim Borrowing, Sparen und Investieren.
 
-## Government und Civics
+## Regierung und Bürgerkunde
 
-Many modern states use one von three broad Systeme: democracies, authoritarian Systeme, or mixed forms. in constitutional democracies, power is typically distributed across branches such as legislative, executive, und judicial institutions. Laws define rights und responsibilities, while courts interpret und apply those laws. Local government often manages services such as schools, roads, und sanitation.
+Viele moderne Staaten verwenden eines von drei breiten Systemen: Demokratien, autoritäre Systeme oder Mischformen. In konstitutionellen Demokratien ist die Macht typischerweise auf Zweige wie legislative, exekutive und judikative Institutionen verteilt. Gesetze definieren Rechte und Pflichten, während Gerichte diese Gesetze interpretieren und anwenden. Lokale Regierungen verwalten oft Dienstleistungen wie Schulen, Straßen und Abwasserentsorgung.
 
-## Health und Public Safety
+## Gesundheit und öffentliche Sicherheit
 
-Vaccines train der/die/das immune system to recognize und fight specific pathogens. Hand hygiene und clean water are among der/die/das most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as der/die/das common cold. Sleep, Ernährung, physical activity, und stress Verwaltung are foundational contributors to long-term health outcomes.
+Impfstoffe trainieren das Immunsystem, spezifische Krankheitserreger zu erkennen und zu bekämpfen. Händehygiene und sauberes Wasser gehören zu den effektivsten Maßnahmen im Bereich der öffentlichen Gesundheit. Antibiotika behandeln bakterielle Infektionen, heilen aber keine viralen Erkrankungen wie die gewöhnliche Erkältung. Schlaf, Ernährung, körperliche Aktivität und Stressmanagement sind grundlegende Beiträge zu langfristigen Gesundheitsergebnissen.
 
-## Kommunikation und Media Literacy
+## Kommunikation und Medienkompetenz
 
-Reliable information is usually supported by evidence, transparent sourcing, und independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand Daten, while secondary sources interpret primary material. in der/die/das digital era, checking publication date, author credibility, und source quality is important für avoiding misinformation.
+Zuverlässige Informationen werden normalerweise durch Beweise, transparente Quellen und unabhängige Verifizierung unterstützt. Korrelation bedeutet nicht unbedingt Kausalität. Primärquellen liefern Daten aus erster Hand, während Sekundärquellen primäres Material interpretieren. Im digitalen Zeitalter ist es wichtig, Veröffentlichungsdatum, Glaubwürdigkeit des Autors und Quellenqualität zu überprüfen, um Fehlinformationen zu vermeiden.

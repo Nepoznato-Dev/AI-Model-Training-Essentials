@@ -8,7 +8,7 @@ For accuracy improvements, please contribute edits via pull requests.
 # Technologie Glossary
 
 A Référence glossary covering AI models, hardware, benchmarks, et core concepts
-dans le/la modern AI et Informatique landscape.
+dans le  modern AI et Informatique landscape.
 
 ---
 
@@ -17,7 +17,7 @@ dans le/la modern AI et Informatique landscape.
 ### ChatGPT
 ChatGPT is an AI chatbot developed by OpenAI, first released dans November 2022.
 It is powered by le/la GPT series de large Langue models (LLMs). ChatGPT is one
-de le/la fastest-growing consumer AI products dans Histoire, reaching 100 million
+du  fastest-growing consumer AI products dans historique, reaching 100 million
 users within two months de launch. It supports text-based conversation, code
 generation, summarisation, et creative writing. Paid tiers provide access to
 more powerful models such as GPT-4 et GPT-4o.
@@ -27,7 +27,7 @@ GPT is a family de large Langue models created by OpenAI. le/la Architecture
 uses a decoder-only Transformer trained avec a next-token prediction objective on
 massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
 pour "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via le/la API), GPT-3.5 (le/la backbone de le/la original ChatGPT), et GPT-4
+used via le/la API), GPT-3.5 (le/la backbone du  original ChatGPT), et GPT-4
 (2023, multimodal, Performance close to human expert level on many benchmarks).
 
 ### Claude
@@ -56,7 +56,7 @@ pioneered by Microsoft Research — that prioritises Données quality over raw v
 Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
 outperforms models several times larger on reasoning benchmarks such as MMLU et
 HumanEval. It supports a 4k token context window dans its base variant et a 128k
-window dans le/la long-context variant. Phi-3-mini can run on a single consumer GPU
+window dans le  long-context variant. Phi-3-mini can run on a single consumer GPU
 or even on-device on a modern smartphone avec sufficient RAM.
 
 ### Llama (Meta AI)
@@ -124,7 +124,7 @@ visiting that Base de données pour authoritative hardware information.
 
 ### MMLU (Massive Multitask Langue Understanding)
 MMLU is a benchmark Test LLM knowledge across 57 academic subjects including
-mathematics, Histoire, Droit, Médecine, et computer Science. It consists de
+mathematics, historique, Droit, Médecine, et computer Science. It consists de
 multiple-choice questions drawn from real university-level exams. A score de
 70% is roughly human undergraduate level; GPT-4 et Claude 3 score above 86%.
 Phi-3-mini scores around 70% despite its small size.
@@ -156,10 +156,10 @@ struggle avec, requiring multi-step reasoning.
 RAG is a technique that combines a retrieval system (typically a vector
 Base de données) avec a Langue model. Instead de relying solely on le/la model's
 parametric knowledge, RAG first retrieves relevant documents from an external
-Base de connaissances et then includes them dans le/la model's context. This allows le/la
+Base de connaissances et then includes them dans le  model's context. This allows le/la
 model to answer questions about up-to-date or domain-specific information
 without retraining. Potato.ai uses a form de RAG — it retrieves from its KB
-et includes le/la results dans le/la context before generating a response.
+et includes le/la results dans le  context before generating a response.
 
 ### Fine-tuning
 Fine-tuning is le/la process de continuing to train a pre-trained model on a
@@ -195,7 +195,7 @@ Direct Preference Optimisation).
 
 ### Transformer Architecture
 le/la Transformer is le/la neural Réseau Architecture underlying all modern LLMs.
-Introduced dans le/la 2017 paper "Attention Is All You Need" by Vaswani et al., it
+Introduced dans le  2017 paper "Attention Is All You Need" by Vaswani et al., it
 uses self-attention mechanisms to process all tokens dans parallel rather than
 sequentially. Encoder-only Transformers (BERT) are used pour understanding tasks;
 decoder-only Transformers (GPT, Llama, Mistral) are used pour generation tasks;

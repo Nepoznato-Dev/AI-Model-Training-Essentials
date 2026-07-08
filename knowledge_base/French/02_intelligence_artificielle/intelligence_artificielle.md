@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Artificial Intelligence
+# Intelligence artificielle
 
 ## What is Artificial Intelligence?
 
@@ -13,11 +13,11 @@ Artificial Intelligence (AI) refers to le/la simulation de human intelligence da
 
 Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed pour specific tasks, et le/la theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI Systèmes are Narrow AI.
 
-## Histoire de AI
+## historique de AI
 
-le/la Histoire de AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Informatique Machinery et Intelligence" introduced le/la Turing Test — a measure de a machine's ability to exhibit intelligent behaviour indistinguishable from a human. le/la 1956 Dartmouth Conference formally established AI as an academic discipline.
+le/la historique de AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "Informatique Machinery et Intelligence" introduced le/la Turing Test — a measure de a machine's ability to exhibit intelligent behaviour indistinguishable from a human. le/la 1956 Dartmouth Conference formally established AI as an academic discipline.
 
-le/la 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) et LISP (a programming Langue designed pour AI). le/la "AI winters" de le/la 1970s et 1980s were periods de reduced funding et interest following unmet expectations. A resurgence dans le/la 1980s came avec expert Systèmes — rule-based programs that encoded human expertise. le/la 2000s brought Apprentissage automatique breakthroughs fuelled by le/la internet et growing datasets. le/la 2010s saw le/la rise de Apprentissage profond, transforming computer vision, natural Langue processing (NLP), et reinforcement learning.
+le/la 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) et LISP (a programming Langue designed pour AI). le/la "AI winters" du  1970s et 1980s were periods de reduced funding et interest following unmet expectations. A resurgence dans le  1980s came avec expert Systèmes — rule-based programs that encoded human expertise. le/la 2000s brought Apprentissage automatique breakthroughs fuelled by l'internet et growing datasets. le/la 2010s saw le/la rise de Apprentissage profond, transforming computer vision, natural Langue processing (NLP), et reinforcement learning.
 
 ## Apprentissage automatique
 
@@ -44,7 +44,7 @@ Key Apprentissage profond architectures include convolutional Réseaux de neuron
 
 ## Large Langue Models (LLMs)
 
-Large Langue Models (LLMs) are AI Systèmes trained on vast amounts de text Données to understand et generate human Langue. They are based on le/la Transformer Architecture, introduced dans le/la 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict le/la next token (word piece) dans a sequence, allowing them to generate coherent text, answer questions, write code, et perform reasoning tasks.
+Large Langue Models (LLMs) are AI Systèmes trained on vast amounts de text Données to understand et generate human Langue. They are based on le/la Transformer Architecture, introduced dans le  2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict le/la next token (word piece) dans a sequence, allowing them to generate coherent text, answer questions, write code, et perform reasoning tasks.
 
 Notable LLMs include:
 - **GPT series** (OpenAI): GPT-3, GPT-4, et successors — widely used pour chat et code
@@ -53,7 +53,7 @@ Notable LLMs include:
 - **LLaMA / Llama 3** (Meta): Open-weight models pour research et local Déploiement
 - **Mistral** (Mistral AI): Efficient open models competitive avec much larger LLMs
 
-LLMs are trained dans two stages: pre-training (unsupervised on large text corpora) et fine-tuning (supervised or via reinforcement learning from human Retour, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens dans le/la most Avancé 2024 models.
+LLMs are trained dans two stages: pre-training (unsupervised on large text corpora) et fine-tuning (supervised or via reinforcement learning from human Retour, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens dans le  most Avancé 2024 models.
 
 ## AI Ethics et Safety
 
@@ -80,7 +80,7 @@ AI is transforming nearly every industry:
 
 ## Robotics et Embodied AI
 
-Robotics combines AI avec physical machines. Modern robots use perception (cameras, lidar), planning, et control to navigate et manipulate environments. Boston Dynamics' Atlas demonstrates Avancé bipedal movement. Industrial robots from companies like ABB et FANUC automate manufacturing. Household robots (Roomba) et surgical robots (da Vinci System) apply AI dans everyday et medical settings. Embodied AI research focuses on agents that learn physical skills through interaction avec le/la world, bridging le/la gap between simulated et real environments.
+Robotics combines AI avec physical machines. Modern robots use perception (cameras, lidar), planning, et control to navigate et manipulate environments. Boston Dynamics' Atlas demonstrates Avancé bipedal movement. Industrial robots from companies like ABB et FANUC automate manufacturing. Household robots (Roomba) et surgical robots (da Vinci System) apply AI dans everyday et medical settings. Embodied AI research focuses on agents that learn physical skills through interaction avec le  world, bridging le/la gap between simulated et real environments.
 
 ## Current AI Trends (2020s)
 

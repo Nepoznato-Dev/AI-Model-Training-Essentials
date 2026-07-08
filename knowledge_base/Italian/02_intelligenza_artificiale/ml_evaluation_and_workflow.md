@@ -96,7 +96,7 @@ Il modello funziona bene con i dati di training ma male con la convalida/test.
 Il modello ha prestazioni scarse sia in termini di formazione che di convalida.
 - **Mitigazione:** utilizza un modello più complesso, aggiungi funzionalità o riduci la regolarizzazione.
 
-### Dati sbilanciati
+### dati sbilanciati
 - **Mitigazione:** utilizza pesi di classe, sovracampionamento (SMOTE), sottocampionamento o utilizza metriche appropriate (F1, AUC-PR) anziché l'accuratezza.
 
 ### Deriva temporale (deriva dei concetti)

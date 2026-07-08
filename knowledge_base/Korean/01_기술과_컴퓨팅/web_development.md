@@ -309,7 +309,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Serverless 아키텍처
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Benefits**: No server 관리, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-에서, debugging complexity
+- **고려사항**: Cold starts, vendor lock-in, 디버깅 복잡성
 
 ### Jamstack 아키텍처
 - **JavaScript**: Client-side interactivity

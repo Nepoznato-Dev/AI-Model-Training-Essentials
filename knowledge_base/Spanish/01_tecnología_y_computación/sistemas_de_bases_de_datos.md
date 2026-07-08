@@ -13,7 +13,7 @@ For accuracy improvements, please contribute edits via pull requests.
 A Base de datos is an organized collection de structured information stored electronically, designed para efficient retrieval, insertion, updating, y deletion de Datos.
 
 ### Base de datos Gestión Sistemas (DBMS)
-Software that interacts con end users, applications, y el/la Base de datos itself to capture y analyze Datos. Ejemplos: MySQL, PostgreSQL, Oracle, MongoDB.
+Software that interacts con end users, applications, y el Base de datos itself to capture y analyze Datos. Ejemplos: MySQL, PostgreSQL, Oracle, MongoDB.
 
 ### Key Concepts
 - **Schema**: Structure/organization de Base de datos (tables, fields, relationships)
@@ -241,7 +241,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
 - **Azure**: SQL Base de datos, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+- **Benefits**: Managed service, auto-scaling, backups incluyend
 
 ### NewSQL Databases
 - Combine SQL consistency con NoSQL scalability
@@ -268,11 +268,11 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Object-Relational Mapping
 - **Purpose**: Map Base de datos tables to programming objects
 - **Popular ORMs**:
-  - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelize, Prisma, TypeORM
-  - Java: Hibernate, JPA
-  - Ruby: ActiveRecord
-  - .NET: Entity Framework
+ - Python: SQLAlchemy, Django ORM, Peewee
+ - JavaScript: Sequelize, Prisma, TypeORM
+ - Java: Hibernate, JPA
+ - Ruby: ActiveRecord
+ - .NET: Entity Framework
 
 ### Benefits
 - Abstraction from SQL

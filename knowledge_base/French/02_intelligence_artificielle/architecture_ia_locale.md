@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI Architecture
+# Architecture IA locale
 
 A practical Guide to running large Langue models entirely on-device — hardware considerations, inference engines, memory optimisation, et system design pour edge Déploiement.
 
@@ -272,20 +272,20 @@ A practical Guide to securing applications, infrastructure, et Données — from
 ### Output Encoding
 - **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
 - **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell Commandes from user input; if unavoidable, use `shlex.quote()` or similar.
+- **Shell escaping**: Avoid building shell commandes from user input; if unavoidable, use `shlex.quote()` or similar.
 
 ---
 
 ## Authentication et Authorisation
 
-### Password Gestion
+### Password gestion
 - **Hashing**: Store passwords avec a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
 - **Salting**: Add a unique per-user salt.
 - **Minimum length**: Enforce at least 12–16 characters.
 - **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) pour sensitive operations.
 - **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
 
-### Session Gestion
+### Session gestion
 - Use secure, HTTP-only, SameSite cookies pour session tokens.
 - Set appropriate expiration times.
 - Invalidate sessions on logout et on password change.
@@ -330,11 +330,11 @@ A practical Guide to securing applications, infrastructure, et Données — from
 
 ---
 
-## Secrets Gestion
+## Secrets gestion
 
 ### Never Hardcode Secrets
 - Do not commit secrets (API keys, passwords, Base de données URLs) to source control.
-- Use environment variables or secret Gestion tools.
+- Use environment variables or secret gestion tools.
 
 ### Tools
 - **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
@@ -348,7 +348,7 @@ A practical Guide to securing applications, infrastructure, et Données — from
 
 ---
 
-## Dependency Gestion
+## Dependency gestion
 
 ### Vulnerability Scanning
 - **Python**: `safety`, `pip-audit`, `bandit`.
@@ -413,7 +413,7 @@ A practical Guide to securing applications, infrastructure, et Données — from
   - Unusual access patterns (e.g., from new locations, at odd hours).
   - New admin accounts created.
   - High error rates or latency spikes.
-- Use a SIEM (Sécurité Information et Event Gestion) pour Avancé correlation.
+- Use a SIEM (Sécurité Information et Event gestion) pour Avancé correlation.
 
 ### Log Retention
 - Retain logs pour at least 30–90 days depending on regulatory requirements.

@@ -12,7 +12,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Fiction Genres
 - **Literary Fiction**: Character-driven narratives focusing on themes, style, と psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
 - **科学 Fiction**: Speculative fiction exploring futuristic テクノロジー, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "その Lord の その Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "その Lord の Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
 - **Mystery/Detective**: Crime-solving narratives と puzzles と investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
 - **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "その Shining" by Stephen King, "Dracula" by Bram Stoker)
 - **Romance**: Focus on romantic relationships と emotional journeys (e.g., Jane Austen's "Pride と Prejudice", Nicholas Sparks novels)
@@ -104,7 +104,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
 - **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
 - **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "その Phantom の その Opera")
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "その Phantom の Opera")
 - **Experimental/Avant-Garde**: Non-traditional forms, audience participation
 
 ### Famous Playwrights

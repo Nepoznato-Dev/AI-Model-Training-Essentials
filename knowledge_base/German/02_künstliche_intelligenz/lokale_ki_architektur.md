@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: local_ai_architecture.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Local AI Architektur
@@ -13,7 +13,7 @@ A practical Leitfaden to running large Sprache models entirely on-device — har
 
 ## Why Run AI Locally?
 
-- **Privacy**: No Daten leaves der/die/das device.
+- **Privacy**: No Daten leaves das Gerät.
 - **Cost**: No API fees per token.
 - **Latency**: Predictable, Netzwerk-free inference.
 - **Offline availability**: Works without internet.
@@ -24,7 +24,7 @@ A practical Leitfaden to running large Sprache models entirely on-device — har
 ## Hardware Requirements
 
 ### GPU Memory (VRAM)
-der/die/das most critical resource. Model size in memory ≈ **parameters × bytes per parameter**.
+Die kritischste Ressource. Model size in memory ≈ **parameters × bytes per parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
@@ -40,21 +40,21 @@ der/die/das most critical resource. Model size in memory ≈ **parameters × byt
 - Apple Silicon (unified memory) can run 70B models on 64GB+ Systeme.
 
 ### RAM (System Memory)
-- für CPU inference, you need enough system RAM to load der/die/das model (similar to VRAM numbers).
-- für GPU inference, system RAM matters für loading der/die/das model into memory before offloading to VRAM.
+- für CPU inference, you need enough system RAM to load das Modell (similar to VRAM numbers).
+- für GPU inference, system RAM matters für loading das Modell into memory before offloading to VRAM.
 
 ### Storage
 - Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free für multiple models.
 
 ### CPU
 - für prompt processing (prefill) und CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Leistung für LLMs due to der/die/das unified memory und Neural Engine.
+- Apple M-series chips have excellent Leistung für LLMs due to den einheitlichen Speicher und Neural Engine.
 
 ---
 
 ## Quantisation
 
-Quantisation reduces der/die/das numerical precision von weights, dramatically cutting memory und increasing speed at a small accuracy cost.
+Quantisation reduces die numerische Präzision von weights, dramatically cutting memory und increasing speed at a small accuracy cost.
 
 ### Popular Formats
 
@@ -317,7 +317,7 @@ A practical Leitfaden to securing applications, infrastructure, und Daten — fr
 
 ### CORS (Cross-Origin Resource Sharing)
 - Allow only specific origins (never `*` in production).
-- Validate `Origin` header on der/die/das server side.
+- Validate `Origin` header on der Serverseite.
 
 ### Input Validation
 - Validate all request parameters, including headers und body.
@@ -385,11 +385,11 @@ A practical Leitfaden to securing applications, infrastructure, und Daten — fr
 ### Netzwerk Segmentation
 - Place databases und caches in private subnets mit no internet access.
 - Use a DMZ für public-facing services.
-- Apply der/die/das principle von least privilege to Netzwerk access.
+- Apply das Prinzip von least privilege to Netzwerk access.
 
 ### Secrets in Infrastructure
 - Never store secrets in CI/CD environment variables unless encrypted.
-- Use der/die/das cloud provider's IAM roles für EC2/VM instances instead von long-lived keys.
+- Use des Cloud-Anbieters's IAM roles für EC2/VM instances instead von long-lived keys.
 
 ---
 
@@ -438,10 +438,10 @@ A practical Leitfaden to securing applications, infrastructure, und Daten — fr
 ## Emergency Checklist (When a Breach is Suspected)
 
 1. **Do not panic** — but act quickly.
-2. **Isolate** der/die/das affected Systeme (disconnect from Netzwerk if needed).
+2. **Isolate** das betroffene System (disconnect from Netzwerk if needed).
 3. **Preserve evidence**: Capture logs, memory dumps, und disk images.
-4. **Identify** der/die/das scope: which Systeme, which Daten.
+4. **Identify** den Umfang: which Systeme, which Daten.
 5. **Rotate** all compromised credentials und secrets.
-6. **Patch** der/die/das vulnerability.
+6. **Patch** die Schwachstelle.
 7. **Notify** affected users und regulatory bodies if required (within Rechtlich timeframes).
 8. **Conduct a post-mortem** to understand root cause und improve processes.

@@ -26,7 +26,7 @@ dans questions et discussions.
 **adequate** — satisfactory; just enough pour a purpose.
 **adjacent** — next to or adjoining something else.
 **adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead de le/la current time.
+**advance** — to move forward; progress; also, ahead du  current time.
 **advantage** — a condition that gives a favourable position over others.
 **adverse** — unfavourable; harmful.
 **affect** — to have an impact on something (verb); emotion (noun, formal).
@@ -74,7 +74,7 @@ dans questions et discussions.
 **configure** — to arrange or set up a system dans a particular way.
 **confirm** — to establish le/la truth or accuracy de something.
 **conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving dans le/la same way; not contradictory.
+**consistent** — always behaving dans le  same way; not contradictory.
 **context** — le/la circumstances surrounding something; background information.
 **contrast** — to compare dans order to show differences.
 **convert** — to change from one form, unit, or use to another.
@@ -100,7 +100,7 @@ dans questions et discussions.
 ## E
 
 **efficient** — achieving results avec minimum waste de time or resources.
-**element** — a basic component; one de le/la chemical substances dans le/la periodic table.
+**element** — a basic component; one du  chemical substances dans le  periodic table.
 **embed** — to fix firmly within; to incorporate into a larger structure.
 **enable** — to make possible; to activate a feature.
 **enhance** — to improve le/la quality or value de something.
@@ -244,7 +244,7 @@ dans questions et discussions.
 **static** — not changing; dans Informatique, fixed at compile time or not associated avec instances.
 **store** — to save Données pour later use.
 **structure** — le/la arrangement de parts; a composite Données type.
-**summarise** — to give a brief statement de le/la main points.
+**summarise** — to give a brief statement du  main points.
 **synchronise** — to cause to happen at le/la same time or rate.
 **Syntaxe** — le/la rules governing le/la structure de statements dans a Langue.
 
@@ -332,7 +332,7 @@ dans questions et discussions.
 **cohort** — a group sharing a common characteristic or experience within a defined period.
 **collateral** — assets pledged as Sécurité pour a loan; secondary or accompanying.
 **colloquial** — informal Langue used dans ordinary conversation.
-**combinatorics** — le/la branch de mathematics dealing avec combinations et permutations.
+**combinatorics** — la branche de mathematics dealing avec combinations et permutations.
 **commutative** — a property where order doesn't matter (a+b = b+a).
 **concurrency** — multiple computations happening during overlapping periods.
 **conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
@@ -367,7 +367,7 @@ dans questions et discussions.
 **eccentric** — unconventional or slightly strange; off-center.
 **eclectic** — selecting from diverse sources or styles.
 **edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament pour le/la dead.
+**elegy** — a mournful poem or lament pour le  dead.
 **elide** — to omit or slur over sounds or syllables.
 **ellipsis** — omission de words; three dots (...) indicating continuation or pause.
 **embargo** — an official ban on trade or publication.
@@ -377,7 +377,7 @@ dans questions et discussions.
 **endemic** — native or restricted to a particular region; constantly present.
 **ephemeral** — lasting pour a very short time; temporary.
 **epistemology** — le/la study de knowledge, its Nature et scope.
-**epoch** — a significant period dans Histoire; dans ML, one pass through training Données.
+**epoch** — a significant period dans historique; dans ML, one pass through training Données.
 **equilibrium** — a state de balance between opposing forces.
 **equivocate** — to use ambiguous Langue to conceal le/la truth.
 **ergodic** — having statistical properties uniform throughout; random yet representative.
@@ -547,7 +547,7 @@ dans questions et discussions.
 **ontology** — le/la study de being; dans CS, a formal representation de knowledge.
 **opaque** — not transparent; difficult to understand.
 **operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — le/la value de le/la best alternative forgone.
+**opportunity cost** — le/la value du  best alternative forgone.
 **optimization** — making something as effective as possible; finding best solutions.
 **oracle** — a source de wisdom; dans Informatique, a theoretical black box answering questions.
 **orthogonal** — at right angles; independent; unrelated.
@@ -622,7 +622,7 @@ dans questions et discussions.
 **prosody** — rhythm et intonation dans speech; poetry structure.
 **protocol** — a set de rules pour Communication.
 **prototype** — an early model; original form.
-**provenance** — origin; source; Histoire de ownership.
+**provenance** — origin; source; historique de ownership.
 **proximal** — nearest; close to a Référence point.
 **proxy** — an agent; a substitute; a server forwarding requests.
 **pseudo** — false; fake; pretending to be.

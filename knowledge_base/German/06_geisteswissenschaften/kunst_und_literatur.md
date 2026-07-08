@@ -2,7 +2,7 @@
 This file was automatically translated from English to German.
 Source: arts_and_literature.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-For accuracy improvements, please contribute edits via pull requests.
+Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
 # Künste und Literatur
@@ -12,15 +12,15 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Fiction Genres
 - **Literary Fiction**: Character-driven narratives focusing on themes, style, und psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
 - **Wissenschaft Fiction**: Speculative fiction exploring futuristic Technologie, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "der/die/das Lord von der/die/das Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
+- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "das Lord von das Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
 - **Mystery/Detective**: Crime-solving narratives mit puzzles und investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "der/die/das Shining" by Stephen King, "Dracula" by Bram Stoker)
+- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "das Shining" by Stephen King, "Dracula" by Bram Stoker)
 - **Romance**: Focus on romantic relationships und emotional journeys (e.g., Jane Austen's "Pride und Prejudice", Nicholas Sparks novels)
-- **Historical Fiction**: Set in specific historical periods mit accurate details (e.g., "der/die/das Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
+- **Historical Fiction**: Set in specific historical periods mit accurate details (e.g., "das Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
 - **Magical Realism**: Realistic settings mit magical elements treated as ordinary (e.g., "One Hundred Years von Solitude" by Gabriel García Márquez)
 
 ### Non-Fiction Genres
-- **Biography/Autobiography**: Life stories von real people (e.g., "der/die/das Diary von a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
+- **Biography/Autobiography**: Life stories von real people (e.g., "das Diary von a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
 - **Memoir**: Personal accounts focusing on specific experiences or themes
 - **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
 - **Journalism**: News reporting, investigative pieces, feature articles
@@ -34,13 +34,13 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Free Verse**: No regular meter or rhyme pattern
 - **Villanelle**: 19 lines mit specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
 - **Ode**: Lyrical poem praising a person, event, or thing
-- **Epic**: Long narrative poem about heroic deeds (e.g., "der/die/das Odyssey" by Homer, "Beowulf")
+- **Epic**: Long narrative poem about heroic deeds (e.g., "das Odyssey" by Homer, "Beowulf")
 
 ## Major Literary Movements
 
 ### Historical Periods
 - **Classical Literatur** (8th century BCE - 5th century CE): Greek und Roman works emphasizing reason, order, und humanism
-- **Medieval Literatur** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "der/die/das Divine Comedy" by Dante)
+- **Medieval Literatur** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "das Divine Comedy" by Dante)
 - **Renaissance** (14th - 17th century): Humanism, revival von classical learning (e.g., Shakespeare, Cervantes)
 - **Enlightenment** (17th - 18th century): Reason, Wissenschaft, individual rights (e.g., Voltaire, Jonathan Swift)
 - **Romanticism** (late 18th - mid-19th century): Emotion, Natur, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
@@ -104,14 +104,14 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
 - **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
 - **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "der/die/das Phantom von der/die/das Opera")
+- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "das Phantom von das Opera")
 - **Experimental/Avant-Garde**: Non-traditional forms, audience participation
 
 ### Famous Playwrights
 - William Shakespeare (Englisch, 1564-1616): "Hamlet", "Macbeth", "Romeo und Juliet"
-- Anton Chekhov (Russian, 1860-1904): "der/die/das Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "der/die/das Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death von a Salesman", "der/die/das Crucible"
+- Anton Chekhov (Russian, 1860-1904): "das Cherry Orchard", "Three Sisters"
+- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "das Glass Menagerie"
+- Arthur Miller (American, 1915-2005): "Death von a Salesman", "das Crucible"
 - Samuel Beckett (Irish, 1906-1989): "Waiting für Godot", "Endgame"
 - August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
 
@@ -128,7 +128,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Wissenschaft Fiction**: Futuristic Technologie, space, time travel
 
 ### Film Movements
-- **German Expressionism** (1920s): Distorted visuals, psychological themes ("der/die/das Cabinet von Dr. Caligari")
+- **German Expressionism** (1920s): Distorted visuals, psychological themes ("das Cabinet von Dr. Caligari")
 - **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
 - **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
 - **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
@@ -145,22 +145,22 @@ For accuracy improvements, please contribute edits via pull requests.
 ## Famous Authors und Works
 
 ### Classic Literatur
-- Homer: "der/die/das Iliad", "der/die/das Odyssey" (Ancient Greece)
-- Dante Alighieri: "der/die/das Divine Comedy" (Italy, 1308-1320)
+- Homer: "das Iliad", "das Odyssey" (Ancient Greece)
+- Dante Alighieri: "das Divine Comedy" (Italy, 1308-1320)
 - Miguel de Cervantes: "Don Quixote" (Spain, 1605)
 - Jane Austen: "Pride und Prejudice", "Sense und Sensibility" (England, 1810s)
 - Leo Tolstoy: "War und Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime und Punishment", "der/die/das Brothers Karamazov" (Russia, 1860s-1880s)
+- Fyodor Dostoevsky: "Crime und Punishment", "das Brothers Karamazov" (Russia, 1860s-1880s)
 - Charles Dickens: "Great Expectations", "A Tale von Two Cities" (England, 1850s-1860s)
 - Mark Twain: "Adventures von Huckleberry Finn" (USA, 1884)
 
 ### Modern Literatur
 - James Joyce: "Ulysses" (Ireland, 1922)
-- Virginia Woolf: "Mrs. Dalloway", "To der/die/das Lighthouse" (England, 1920s)
-- Franz Kafka: "der/die/das Metamorphosis", "der/die/das Trial" (Czechoslovakia, 1910s-1920s)
+- Virginia Woolf: "Mrs. Dalloway", "To das Lighthouse" (England, 1920s)
+- Franz Kafka: "das Metamorphosis", "das Trial" (Czechoslovakia, 1910s-1920s)
 - Gabriel García Márquez: "One Hundred Years von Solitude" (Colombia, 1967)
 - Toni Morrison: "Beloved", "Song von Solomon" (USA, 1970s-1980s)
-- Haruki Murakami: "Norwegian Wood", "Kafka on der/die/das Shore" (Japan, 1980s-present)
+- Haruki Murakami: "Norwegian Wood", "Kafka on das Shore" (Japan, 1980s-present)
 - Chimamanda Ngozi Adichie: "Half von a Yellow Sun", "Americanah" (Nigeria, 2000s)
 
 ## Literary Devices und Techniques
@@ -180,7 +180,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Unreliable Narrator**: Narrator whose credibility is compromised
 - **Non-linear Narrative**: Ereignisse presented out von chronological order
 - **Foreshadowing**: Hints about Zukunft Ereignisse
-- **Flashback**: Scenes from earlier in der/die/das story
+- **Flashback**: Scenes from earlier in das story
 
 ### Structural Elements
 - **Plot**: Exposition, rising action, climax, falling action, resolution

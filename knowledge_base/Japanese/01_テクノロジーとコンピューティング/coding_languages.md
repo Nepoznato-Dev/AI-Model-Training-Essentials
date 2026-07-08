@@ -5,22 +5,22 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Coding Languages
+# プログラミング言語
 
 ## Python
 
-Python is a high-level, interpreted, dynamically typed, general-purpose programming 言語. It emphasises readability と uses significant indentation as block delimiters.
+Python は高レベル、インタプリタ型、動的型付けの汎用プログラミング言語です。可読性を重視し、インデントをブロックの区切りとして使用します。
 
-### 構文 基本
+### 構文の基本
 
 ```python
-# Variables and types
+# 変数と型
 name: str = "Alice"
 age: int = 30
 score: float = 9.5
 active: bool = True
 
-# Conditionals
+# 条件分岐
 if age >= 18:
     print("adult")
 elif age >= 13:
@@ -28,7 +28,7 @@ elif age >= 13:
 else:
     print("child")
 
-# Loops
+# ループ
 for i in range(5):
     print(i)
 
@@ -36,21 +36,21 @@ while active:
     active = False
 ```
 
-### Functions と type hints
+### 関数と型ヒント
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### List comprehensions
+### リスト内包表記
 
 ```python
 squares = [x**2 for x in range(10)]
 evens   = [x for x in range(20) if x % 2 == 0]
 ```
 
-### Classes と OOP
+### クラスと OOP
 
 ```python
 class Animal:
@@ -65,28 +65,28 @@ class Dog(Animal):
         return f"{self.name} says woof"
 ```
 
-### Common patterns
+### 一般的なパターン
 
-- Use `と open(path) as f:` のために file I/O.
-- Prefer f-strings (`f"hello {name}"`) over `%` or `.format()`.
-- Use `dataclasses.dataclass` のために データ-only classes.
-- Use `pathlib.Path` instead の `os.path` のために file paths.
+- ファイル I/O には `with open(path) as f:` を使用
+- `%` や `.format()` よりも f-strings (`f"hello {name}"`) を推奨
+- データのみのクラスには `dataclasses.dataclass` を使用
+- ファイルパスには `os.path` の代わりに `pathlib.Path` を使用
 
-### Tooling
+### ツール
 
-- `pip install <package>` installs packages.
-- `python -m venv .venv && source .venv/bin/activate` creates a virtual environment.
-- `pip freeze > requirements.txt` saves dependencies.
-- `pip install -r requirements.txt` restores them.
-- `pyproject.toml` is その modern project-configuration standard.
+- `pip install <package>` でパッケージをインストール
+- `python -m venv .venv && source .venv/bin/activate` で仮想環境を作成
+- `pip freeze > requirements.txt` で依存関係を保存
+- `pip install -r requirements.txt` で依存関係を復元
+- `pyproject.toml` がモダンなプロジェクト設定の標準
 
 ---
 
 ## JavaScript
 
-JavaScript is その primary 言語 の その ウェブ. It runs で browsers と on servers via Node.js. It is dynamically typed と prototype-based.
+JavaScript はウェブの主要言語です。ブラウザ上および Node.js を介してサーバー上で実行されます。動的型付けでプロトタイプベースです。
 
-### Modern 構文 (ES6+)
+### モダン構文 (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### Async programming
+### 非同期プログラミング
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-### Array methods
+### 配列メソッド
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-### DOM manipulation
+### DOM 操作
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,20 +144,20 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### Tooling
+### ツール
 
-- `npm init -y` initialises a project.
-- `npm install <package>` adds a dependency.
-- `npm run <script>` runs a script defined で `package.json`.
-- `node index.js` runs a script と Node.js.
+- `npm init -y` でプロジェクトを初期化
+- `npm install <package>` で依存関係を追加
+- `npm run <script>` で `package.json` に定義されたスクリプトを実行
+- `node index.js` で Node.js スクリプトを実行
 
 ---
 
 ## TypeScript
 
-TypeScript is a statically typed superset の JavaScript that compiles to plain JavaScript. It adds type annotations, interfaces, generics, と enums.
+TypeScript は JavaScript の静的型付けスーパーセットで、通常の JavaScript にコンパイルされます。型アノテーション、インターフェース、ジェネリクス、列挙型を追加します。
 
-### Type annotations
+### 型アノテーション
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-### Interfaces と types
+### インターフェースと型
 
 ```typescript
 interface User {
@@ -178,7 +178,7 @@ interface User {
 type Status = "active" | "inactive" | "banned";
 ```
 
-### Generics
+### ジェネリクス
 
 ```typescript
 function identity<T>(value: T): T {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Classes と access modifiers
+### クラスとアクセス修飾子
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-### tsconfig.json essentials
+### tsconfig.json の基本
 
 ```json
 {
@@ -220,21 +220,21 @@ class Counter {
 }
 ```
 
-### Tooling
+### ツール
 
-- `npm install -g typescript` installs その compiler.
-- `tsc` compiles その project.
-- `ts-node src/index.ts` runs TypeScript directly.
+- `npm install -g typescript` でコンパイラをインストール
+- `tsc` でプロジェクトをコンパイル
+- `ts-node src/index.ts` で TypeScript を直接実行
 
 ---
 
 ## Rust
 
-Rust is a システム programming 言語 focused on safety, speed, と concurrency. It prevents memory-safety bugs at compile time through its ownership system.
+Rust は安全性、速度、並行性に焦点を当てたシステムプログラミング言語です。所有権システムにより、コンパイル時にメモリー安全性のバグを防止します。
 
-### Ownership と borrowing
+### 所有権と借用
 
-Every value で Rust has exactly one owner. When その owner goes out の scope その value is dropped. Borrowing allows references without transferring ownership.
+Rust では、すべての値は正確に 1 つの所有者を持ちます。所有者がスコープを出ると、その値はドロップされます。借用は、所有権を移譲せずに参照を許可します。
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable borrows (`&mut T`) require that no other borrows exist at その same time.
+可変借用（`&mut T`）は、同時に他の借用が存在しないことを要求します。
 
-### Lifetimes
+### ライフタイム
 
-Lifetimes ensure references do not outlive その データ they point to.
+ライフタイムは、参照が指し先のデータより長く存続しないことを保証します。
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-### Enums と pattern matching
+### 列挙型とパターンマッチング
 
 ```rust
 enum Shape {
@@ -276,7 +276,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### Error handling
+### エラーハンドリング
 
 ```rust
 use std::fs;
@@ -293,22 +293,22 @@ fn main() {
 }
 ```
 
-その `?` operator propagates errors automatically inside functions that return `Result`.
+`?` 演算子は、`Result` を返す関数内でエラーを自動的に伝播します。
 
-### Tooling (Cargo)
+### ツール (Cargo)
 
-- `cargo new project_name` creates a new project.
-- `cargo build` compiles.
-- `cargo run` compiles と runs.
-- `cargo test` runs tests.
-- `cargo add <crate>` adds a dependency to `Cargo.toml`.
-- `cargo fmt` formats code. `cargo clippy` lints.
+- `cargo new project_name` で新しいプロジェクトを作成
+- `cargo build` でコンパイル
+- `cargo run` でコンパイルして実行
+- `cargo test` でテストを実行
+- `cargo add <crate>` で `Cargo.toml` に依存関係を追加
+- `cargo fmt` でコードをフォーマット。`cargo clippy` でリント
 
 ---
 
 ## Go
 
-Go (Golang) is a statically typed, compiled 言語 designed のために simplicity と high-パフォーマンス concurrent programs.
+Go（Golang）は、シンプルさと高性能な並行プログラムのために設計された静的型付けのコンパイル言語です。
 
 ### 基本
 
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Functions と multiple return values
+### 関数と複数の戻り値
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -334,7 +334,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-### Interfaces
+### インターフェース
 
 ```go
 type Speaker interface {
@@ -346,9 +346,9 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Any type that implements all methods の an interface satisfies it — no explicit declaration is needed.
+インターフェースのすべてのメソッドを実装する型は、明示的な宣言なしにそのインターフェースを満たします。
 
-### Goroutines と channels
+### ゴルーチンとチャネル
 
 ```go
 func worker(id int, jobs <-chan int, results chan<- int) {
@@ -388,22 +388,22 @@ func readFile(path string) error {
 }
 ```
 
-### Tooling
+### ツール
 
-- `go mod init module/name` initialises a module.
-- `go get ./...` downloads dependencies.
-- `go build ./...` compiles.
-- `go test ./...` runs tests.
-- `go fmt ./...` formats code.
-- `go vet ./...` checks のために common mistakes.
+- `go mod init module/name` でモジュールを初期化
+- `go get ./...` で依存関係をダウンロード
+- `go build ./...` でコンパイル
+- `go test ./...` でテストを実行
+- `go fmt ./...` でコードをフォーマット
+- `go vet ./...` で一般的なミスをチェック
 
 ---
 
 ## C と C++
 
-C is a low-level, compiled, procedural 言語. C++ extends C と classes, templates, と その Standard Template Library (STL).
+C は低レベルのコンパイル型プロシージャル言語です。C++ は C をクラス、テンプレート、標準テンプレートライブラリ（STL）で拡張します。
 
-### C 基本
+### C の基本
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-### Pointers
+### ポインタ
 
-A pointer stores その memory address の another variable. `*ptr` dereferences it; `&var` takes an address.
+ポインタは別の変数のメモリアドレスを格納します。`*ptr` で参照外しを行い、`&var` でアドレスを取得します。
 
 ```c
 int a = 10;
@@ -432,7 +432,7 @@ int *p = &a;
 *p = 20;   /* a is now 20 */
 ```
 
-### C++ classes と RAII
+### C++ クラスと RAII
 
 ```cpp
 #include <string>
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) ties resource lifetimes to object lifetimes, ensuring cleanup happens automatically で destructors.
+RAII（Resource Acquisition Is Initialization）は、リソースのライフタイムをオブジェクトのライフタイムに結びつけ、デストラクタで自動的にクリーンアップが行われることを保証します。
 
-### STL containers
+### STL コンテナ
 
 ```cpp
 #include <vector>
@@ -469,26 +469,26 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### Modern C++ (C++17 / C++20) highlights
+### モダン C++（C++17 / C++20）のハイライト
 
-- `auto` type deduction.
-- Range-based `のために` loops: `のために (auto& item : container)`.
-- Smart pointers: `std::unique_ptr`, `std::shared_ptr` — avoid raw `new`/`delete`.
-- Structured bindings: `auto [key, val] = pair;`.
-- `std::optional`, `std::variant`, `std::string_view`.
+- `auto` 型推論
+- 範囲ベースの `for` ループ：`for (auto& item : container)`
+- スマートポインタ：`std::unique_ptr`、`std::shared_ptr` — 生の `new`/`delete` は避ける
+- 構造化束縛：`auto [key, val] = pair;`
+- `std::optional`、`std::variant`、`std::string_view`
 
-### Compilation
+### コンパイル
 
-- `gcc main.c -o main` compiles C.
-- `g++ -std=c++20 -Wall main.cpp -o main` compiles C++.
-- `make` automates multi-file builds via a `Makefile`.
-- `cmake` is その standard build-system generator のために larger projects.
+- `gcc main.c -o main` で C をコンパイル
+- `g++ -std=c++20 -Wall main.cpp -o main` で C++ をコンパイル
+- `make` は `Makefile` を介してマルチファイルビルドを自動化
+- `cmake` は大規模プロジェクトの標準ビルドシステムジェネレーター
 
 ---
 
 ## Swift
 
-Swift is a modern, statically typed programming 言語 developed by Apple のために iOS, macOS, watchOS, と tvOS. It is also 利用可能 on Linux.
+Swift は Apple が iOS、macOS、watchOS、tvOS 用に開発したモダンな静的型付けプログラミング言語です。Linux でも利用可能です。
 
 ### 基本
 
@@ -500,9 +500,9 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-### Optionals
+### オプショナル
 
-An optional (`T?`) represents a value that may or may not be present.
+オプショナル（`T?`）は、値が存在する場合としない場合の両方を表します。
 
 ```swift
 var name: String? = nil
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Functions と closures
+### 関数とクロージャ
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Classes と structs
+### クラスと構造体
 
-Swift has both classes (リファレンス types) と structs (value types). Prefer structs のために simple データ models.
+Swift にはクラス（参照型）と構造体（値型）の両方があります。シンプルなデータモデルには構造体を推奨します。
 
 ```swift
 struct Point {
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-### Protocols
+### プロトコル
 
 ```swift
 protocol Describable {
@@ -557,7 +557,7 @@ struct Cat: Describable {
 }
 ```
 
-### Codable (JSON encoding / decoding)
+### Codable（JSON エンコード/デコード）
 
 ```swift
 struct User: Codable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-### SwiftUI 基本
+### SwiftUI の基本
 
 ```swift
 import SwiftUI
@@ -587,72 +587,72 @@ struct ContentView: View {
 }
 ```
 
-### Tooling
+### ツール
 
-- `swift build` compiles a Swift Package Manager project.
-- `swift run` runs その project.
-- `swift test` runs tests.
-- `swift package init --type executable` creates a new executable project.
-- Xcode is その primary IDE のために Apple-platform 開発.
+- `swift build` で Swift Package Manager プロジェクトをコンパイル
+- `swift run` でプロジェクトを実行
+- `swift test` でテストを実行
+- `swift package init --type executable` で新しい実行可能プロジェクトを作成
+- Xcode は Apple プラットフォーム開発の主要 IDE
 
 ---
 
-## Coding 基礎 (言語-Agnostic)
+## コーディングの基礎（言語に依存しない）
 
-### Problem-solving workflow
+### 問題解決のワークフロー
 
-1. Define その input, output, と constraints before writing code.
-2. Break その task into smaller sub-problems.
-3. Start と a simple correct solution, then optimise if needed.
-4. Validate と tests, edge cases, と realistic inputs.
+1. コードを書く前に、入力、出力、制約を定義する
+2. タスクをより小さなサブ問題に分割する
+3. シンプルで正しいソリューションから始め、必要に応じて最適化する
+4. テスト、エッジケース、現実的な入力で検証する
 
-### Core データ structures
+### 基本的なデータ構造
 
-- **Array / List**: ordered collection と fast indexed reads.
-- **Hash map / 辞書**: key-value store と average O(1) lookup.
-- **Set**: unique values, useful のために membership checks.
-- **Stack**: LIFO (last で, first out), common で parsing と recursion.
-- **Queue**: FIFO (first で, first out), useful のために scheduling と BFS.
-- **Tree / Graph**: hierarchical と ネットワーク-style relationships.
+- **配列/リスト**: 順序付きコレクション、高速なインデックス読み取り
+- **ハッシュマップ/辞書**: キー値ストア、平均 O(1) のルックアップ
+- **セット**: 一意の値、メンバーシップチェックに便利
+- **スタック**: LIFO（後入れ先出し）、パーシングや再帰で一般的
+- **キュー**: FIFO（先入れ先出し）、スケジューリングや BFS に便利
+- **木/グラフ**: 階層的およびネットワークスタイルの関係
 
-### Algorithmic complexity (Big O)
+### アルゴリズムの計算量（Big O）
 
-- Big O describes how runtime or memory grows と input size.
-- Typical costs:
-  - O(1): constant-time lookup (e.g., hash map access).
-  - O(log n): binary search.
-  - O(n): single pass through データ.
-  - O(n log n): efficient sorting.
-  - O(n²): nested loops over similar-size inputs.
-- Prefer clear, maintainable code unless profiling shows a bottleneck.
+- Big O は、実行時間またはメモリが入力サイズとともにどのように増加するかを記述する
+- 代表的なコスト：
+  - O(1): 定数時間のルックアップ（例：ハッシュマップアクセス）
+  - O(log n): 二分探索
+  - O(n): データの単一パス
+  - O(n log n): 効率的なソート
+  - O(n²): 同サイズの入力に対するネステッドループ
+- プロファイリングでボトルネックが示されない限り、明確で保守しやすいコードを推奨
 
-### Debugging principles
+### デバッグの原則
 
-- Reproduce その bug reliably first.
-- Minimise その failing case to isolate cause.
-- Inspect logs, inputs, と assumptions.
-- Change one variable at a time while テスト.
-- Add regression tests so その same bug does not return.
+- まずバグを確実に再現する
+- 失敗するケースを最小化して原因を特定する
+- ログ、入力、仮定を検証する
+- テスト中は一度に 1 つの変数だけを変更する
+- 同じバグが戻らないように回帰テストを追加する
 
-### テスト pyramid
+### テストのピラミッド
 
-- **Unit tests**: fast, focused checks の small logic units.
-- **Integration tests**: verify interactions across modules/services.
-- **End-to-end tests**: validate user flows で realistic environments.
-- A balanced suite has many unit tests と fewer slow end-to-end tests.
+- **単体テスト**: 小さなロジックユニットの高速で焦点を絞ったチェック
+- **統合テスト**: モジュール/サービス間の相互作用を検証
+- **エンドツーエンドテスト**: 現実的な環境でユーザーフローを検証
+- バランスの取れたスイートは、多くの単体テストと少数の遅いエンドツーエンドテストを持つ
 
-### Code quality practices
+### コード品質のプラクティス
 
-- Use meaningful names と small focused functions.
-- Prefer pure functions (fewer side effects) when practical.
-- Keep modules cohesive と interfaces explicit.
-- Use linters/formatters のために consistency.
-- Review code のために correctness, clarity, と セキュリティ.
+- 意味のある名前と小さく焦点を絞った関数を使用する
+- 実用的な場合は純粋な関数（副作用が少ない）を推奨
+- モジュールを凝集させ、インターフェースを明示的に保つ
+- 一貫性のためにリンター/フォーマッターを使用する
+- 正しさ、明確さ、セキュリティのためにコードをレビューする
 
-### セキュリティ 基本 のために developers
+### 開発者のためのセキュリティ基本
 
-- Validate と sanitise external input.
-- Use parameterised queries to prevent SQL injection.
-- Store passwords と strong hashing algorithms (e.g., Argon2, bcrypt).
-- Avoid embedding secrets で source code.
-- Apply least privilege のために credentials と services.
+- 外部入力を検証しサニタイズする
+- SQL インジェクションを防ぐためにパラメータ化クエリを使用する
+- パスワードは強力なハッシュアルゴリズム（例：Argon2、bcrypt）で保存する
+- ソースコードにシークレットを埋め込まない
+- 認証情報とサービスには最小権限を適用する

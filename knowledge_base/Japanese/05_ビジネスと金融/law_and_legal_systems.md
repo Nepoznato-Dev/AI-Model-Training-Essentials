@@ -29,7 +29,7 @@ Tort 法律 addresses civil wrongs that cause harm or loss, resulting で 法的
 
 ## Property 法律
 
-Property 法律 governs ownership と use の real property (land と buildings) と personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, と disposition. Types の ownership include fee simple (absolute ownership), life estate (ownership のために lifetime), と leasehold (temporary possession). Landlord-tenant 法律 regulates rental agreements. Intellectual property is a form の intangible property protecting creations の その mind. Eminent domain allows governments to take private property のために public use と just compensation. Zoning laws regulate land use で specific areas.
+Property 法律 governs ownership と use の real property (land と buildings) と personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, と disposition. Types の ownership include fee simple (absolute ownership), life estate (ownership のために lifetime), と leasehold (temporary possession). Landlord-tenant 法律 regulates rental agreements. Intellectual property is a form の intangible property protecting creations の mind. Eminent domain allows governments to take private property のために public use と just compensation. Zoning laws regulate land use で specific areas.
 
 ## Criminal 法律 と Procedure
 
@@ -41,7 +41,7 @@ Family 法律 deals と domestic relations と family matters. Marriage is a 法
 
 ## Intellectual Property
 
-Intellectual property (IP) protects creations の その mind. Patents grant inventors exclusive rights to make, use, or sell inventions のために a limited period (typically 20 years). Copyright protects original works の authorship (books, music, art, software) のために その author's life plus 70 years で most countries. Trademarks protect brand identifiers (names, logos, slogans) used で commerce. Trade secrets protect confidential ビジネス information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use の copyrighted material without permission のために purposes like criticism, education, or parody.
+Intellectual property (IP) protects creations の mind. Patents grant inventors exclusive rights to make, use, or sell inventions のために a limited period (typically 20 years). Copyright protects original works の authorship (books, music, art, software) のために author's life plus 70 years で most countries. Trademarks protect brand identifiers (names, logos, slogans) used で commerce. Trade secrets protect confidential ビジネス information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use の copyrighted material without permission のために purposes like criticism, education, or parody.
 
 ## Employment と Labor 法律
 
