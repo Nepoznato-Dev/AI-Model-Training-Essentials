@@ -47,16 +47,16 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Quota di mercato**: ~32% (maggior fornitore)
 - **Servizi chiave**:
   - Calcolo: EC2, Lambda, ECS, EKS
-  - Stoccaggio: S3, EBS, Glacier
-  - Banca dati: RDS, DynamoDB, Aurora
-  - rete: VPC, Route 53, CloudFront
+  - Archiviazione: S3, EBS, Glacier
+  - Database: RDS, DynamoDB, Aurora
+  - Rete: VPC, Route 53, CloudFront
   - AI/ML: SageMaker, Rekognition, Comprehend
 
-###Microsoft Azure
+### Microsoft Azure
 - **Quota di mercato**: ~23%
 - **Punti di forza**: integrazione aziendale, cloud ibrido, ecosistema Microsoft
 - **Servizi chiave**:
-  -Calcolo: macchine virtuali, funzioni di Azure, AKS
+  - Calcolo: macchine virtuali, funzioni di Azure, AKS
   - Archiviazione: archiviazione BLOB, archiviazione su disco
   - Database: database SQL, Cosmos DB
   - Networking: rete virtuale, gestione del traffico
@@ -131,13 +131,15 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - I produttori emettono eventi, i consumatori reagiscono
 - **Modelli**: sourcing di eventi, CQRS, pub/sub
 - **Tecnologie**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Vantaggi**: accoppiamento flessibile, scalabilità, elaborazione in tempo reale#### Architettura senza server
+- **Vantaggi**: accoppiamento flessibile, scalabilità, elaborazione in tempo reale
+
+#### Architettura senza server
 - Nessuna gestione del server richiesta
 - Paga per esecuzione
 - Ridimensionamento automatico
 - **Componenti**: Funzioni, API Gateway, servizi gestiti
 - **Vantaggi**: efficienza dei costi, operazioni ridotte, implementazione rapida
-- **Considerazioni**: avviamenti a freddo, vincoli al fornitore, limiti di esecuzione
+- **Considerazioni**: avviamenti a freddo, vincoli del fornitore, limiti di esecuzione
 
 #### Architettura a più livelli (N livelli)
 - Livello di presentazione (interfaccia utente)
@@ -158,7 +160,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ### Macchine virtuali
 - **Tipi**: uso generico, ottimizzato per il calcolo, ottimizzato per la memoria, GPU
 - **Prezzi**: istanze on-demand, riservate, istanze spot
-- **gestione**: gruppi con scalabilità automatica, bilanciatori del carico
+- **Gestione**: gruppi con scalabilità automatica, bilanciatori del carico
 - **Best practice**: dimensionamento corretto, tagging, monitoraggio, applicazione di patch
 
 ### Contenitori
@@ -257,12 +259,14 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Responsabilità del cliente**: Sicurezza NEL cloud (dati, applicazioni, accesso)
 - **Varia in base al servizio**: Più gestione = più responsabilità del fornitore
 
-### gestione delle identità e degli accessi (IAM)
+### Gestione delle identità e degli accessi (IAM)
 - **Utenti**: identità individuali
 - **Gruppi**: raccolte di utenti
 - **Ruoli**: Credenziali temporanee per servizi/utenti
 - **Politiche**: documenti JSON che definiscono le autorizzazioni
-- **Principi**: Privilegio minimo, separazione dei compiti### Sicurezza della rete
+- **Principi**: Privilegio minimo, separazione dei compiti
+
+### Sicurezza della rete
 - **Gruppi di sicurezza**: firewall con stato per le istanze
 - **ACL di rete**: firewall stateless per sottoreti
 - **Web Application Firewall (WAF)**: protezione dagli exploit web
@@ -271,8 +275,8 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ### Protezione dei dati
 - **Crittografia a riposo**: KMS, chiavi gestite dal cliente
 - **Crittografia in transito**: TLS/SSL, HTTPS
-- **gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
-- **gestione dei segreti**: gestione dei segreti, Key Vault
+- **Gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
+- **Gestione dei segreti**: gestione dei segreti, Key Vault
 
 ### Conformità e governance
 - **Certificazioni**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
@@ -295,7 +299,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Pulumi**: Infrastruttura che utilizza linguaggi di programmazione
 - **Vantaggi**: controllo della versione, ripetibilità, documentazione
 
-### gestione della configurazione
+### Gestione della configurazione
 - **Ansible**: playbook YAML senza agente
 - **Chef**: ecosistema maturo, basato su Ruby
 - **Burattino**: resoconto dichiarativo e forte
@@ -314,7 +318,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Service Mesh**: Istio, Linkerd (gestione del traffico, sicurezza)
 - **GitOps**: ArgoCD, Flux (distribuzioni dichiarative)
 
-## gestione dei costi
+## Gestione dei costi
 
 ### Modelli di prezzo
 - **Pagamento in base al consumo**: paga in base all'utilizzo
@@ -333,8 +337,8 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ### Strumenti di gestione dei costi
 - **AWS**: Cost Explorer, Budget, Trusted Advisor
-- **Azzurro**: gestione dei costi, consulente
-- **GCP**: rapporti di fatturazione, suggeritore
+- **Azure**: gestione dei costi, advisor
+- **GCP**: rapporti di fatturazione, recommender
 - **Di terze parti**: CloudHealth, CloudCheckr, Datadog
 
 ## Alta disponibilità e ripristino di emergenza

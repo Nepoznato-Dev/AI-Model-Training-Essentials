@@ -131,7 +131,9 @@ Pengiriman sumber daya komputasi berdasarkan permintaan (server, penyimpanan, da
 - Produsen mengeluarkan peristiwa, konsumen bereaksi
 - **Pola**: Sumber acara, CQRS, pub/sub
 - **Teknologi**: Kafka, SNS/SQS, EventBridge, Pub/Sub
-- **Manfaat**: Kopling longgar, skalabilitas, pemrosesan real-time#### Arsitektur Tanpa Server
+- **Manfaat**: Kopling longgar, skalabilitas, pemrosesan real-time
+
+#### Arsitektur Tanpa Server
 - Tidak diperlukan manajemen server
 - Bayar per eksekusi
 - Penskalaan otomatis
@@ -262,7 +264,9 @@ Pengiriman sumber daya komputasi berdasarkan permintaan (server, penyimpanan, da
 - **Grup**: Koleksi pengguna
 - **Peran**: Kredensial sementara untuk layanan/pengguna
 - **Kebijakan**: Dokumen JSON yang menjelaskan izin
-- **Prinsip**: Hak istimewa paling kecil, pemisahan tugas### Keamanan Jaringan
+- **Prinsip**: Hak istimewa paling kecil, pemisahan tugas
+
+### Keamanan Jaringan
 - **Grup Keamanan**: Misalnya, firewall stateful
 - **ACL Jaringan**: Firewall tanpa status untuk subnet
 - **Web Application Firewall (WAF)**: Melindungi dari eksploitasi web

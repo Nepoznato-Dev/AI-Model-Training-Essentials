@@ -309,7 +309,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Serverless Arquitectura
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Benefits**: No server Gestión, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-en, debugging complexity
+- **Consideraciones**: Cold starts, vendor lock-in, complejidad de depuración
 
 ### Jamstack Arquitectura
 - **JavaScript**: Client-side interactivity
