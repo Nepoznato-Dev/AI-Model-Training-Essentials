@@ -75,7 +75,7 @@ class Dog(Animal):
 
 ---
 
-##Javascript
+## Javascript
 
 JavaScript là ngôn ngữ chính của web. Nó chạy trong trình duyệt và trên máy chủ thông qua Node.js. Nó được gõ động và dựa trên nguyên mẫu.
 
@@ -392,7 +392,7 @@ func readFile(path string) error {
 
 ---
 
-##C và C++
+## C và C++
 
 C là một ngôn ngữ thủ tục, được biên dịch, cấp thấp. C++ mở rộng C với các lớp, mẫu và Thư viện mẫu chuẩn (STL).
 
@@ -477,7 +477,7 @@ scores["Bob"]   = 87;
 
 ---
 
-##Nhanh
+## Nhanh
 
 Swift là ngôn ngữ lập trình hiện đại, kiểu tĩnh được Apple phát triển cho iOS, macOS, watchOS và tvOS. Nó cũng có sẵn trên Linux.
 

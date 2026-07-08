@@ -39,7 +39,7 @@ Nguồn lực quan trọng nhất. Kích thước mô hình trong bộ nhớ ≈
 ### Lưu trữ
 - Trọng lượng mô hình lượng tử hóa chiếm vài GB (ví dụ: 4-bit 7B ≈ 4 GB trên đĩa). Đảm bảo có ít nhất 20–50 GB dung lượng trống cho nhiều kiểu máy.
 
-###CPU
+### CPU
 - Để xử lý nhanh chóng (điền trước) và giảm tải CPU, CPU đa lõi hiện đại sẽ trợ giúp.
 - Chip Apple M-series có hiệu năng tuyệt vời dành cho LLM nhờ bộ nhớ hợp nhất và Neural Engine.
 
@@ -260,7 +260,9 @@ Hướng dẫn thực tế để bảo mật ứng dụng, cơ sở hạ tầng 
 - **Danh sách trắng > Danh sách đen**: Xác định các mẫu được phép (ví dụ: biểu thức chính quy cho email) thay vì chặn các mẫu xấu đã biết.
 - **Giới hạn độ dài**: Thực thi độ dài tối đa để tránh tràn bộ đệm và DoS.
 - **Kiểm tra kiểu**: Đảm bảo số nguyên là số nguyên, boolean là boolean.
-- **Sử dụng các thư viện đã được kiểm tra kỹ**: Để xác thực email, URL và ngày, hãy sử dụng các thư viện tiêu chuẩn (ví dụ: `email-validator` trong Python, `validator.js` trong Node).### Mã hóa đầu ra
+- **Sử dụng các thư viện đã được kiểm tra kỹ**: Để xác thực email, URL và ngày, hãy sử dụng các thư viện tiêu chuẩn (ví dụ: `email-validator` trong Python, `validator.js` trong Node).
+
+### Mã hóa đầu ra
 - **Mã hóa HTML**: Mã hóa `<`, `>`, `&`, `"`, `'` để ngăn chặn XSS.
 - **Tham số hóa SQL**: Không bao giờ ghép dữ liệu đầu vào của người dùng vào các truy vấn SQL. Sử dụng các truy vấn được tham số hóa (các câu lệnh đã chuẩn bị sẵn) hoặc ORM.
 - **Thoát Shell**: Tránh xây dựng các lệnh shell từ đầu vào của người dùng; nếu không thể tránh khỏi, hãy sử dụng `shlex.quote()` hoặc tương tự.
@@ -371,7 +373,9 @@ Hướng dẫn thực tế để bảo mật ứng dụng, cơ sở hạ tầng 
 - Áp dụng các bản cập nhật bảo mật thường xuyên (`sudo apt upgrade`, `yum update`).
 - Vô hiệu hóa các dịch vụ không cần thiết và tài khoản mặc định.
 - Sử dụng Fail2ban để chặn các nỗ lực bạo lực trên SSH.
-- Harden SSH: vô hiệu hóa đăng nhập root, sử dụng xác thực dựa trên khóa, thay đổi cổng mặc định (tùy chọn).### Phân đoạn mạng
+- Harden SSH: vô hiệu hóa đăng nhập root, sử dụng xác thực dựa trên khóa, thay đổi cổng mặc định (tùy chọn).
+
+### Phân đoạn mạng
 - Đặt cơ sở dữ liệu và bộ nhớ đệm trong các mạng con riêng tư không có quyền truy cập internet.
 - Sử dụng DMZ cho các dịch vụ công cộng.
 - Áp dụng nguyên tắc đặc quyền tối thiểu trong truy cập mạng.

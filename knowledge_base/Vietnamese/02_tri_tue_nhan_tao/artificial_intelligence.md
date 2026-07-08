@@ -24,7 +24,7 @@ Machine Learning (ML) là một tập hợp con của AI cho phép các hệ th�
 
 **Học bán giám sát và tự giám sát**: Kết hợp một lượng nhỏ dữ liệu được gắn nhãn với các tập dữ liệu lớn không được gắn nhãn. Các mô hình GPT sử dụng phương pháp tự giám sát trong quá trình đào tạo trước.
 
-##Học sâu
+## Học sâu
 
 Deep Learning là một tập hợp con của machine learning sử dụng mạng lưới thần kinh nhân tạo với nhiều lớp (mạng sâu). Lấy cảm hứng từ cấu trúc thần kinh của não, các mạng này học cách biểu diễn dữ liệu theo cấp bậc. Sức mạnh học sâu:
 

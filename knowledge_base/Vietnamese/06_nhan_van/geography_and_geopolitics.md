@@ -56,7 +56,7 @@
 - **Các nhóm ngôn ngữ**: Ấn-Âu, Trung-Tây Tạng, Phi-Á, Nam Đảo, Niger-Congo
 - **Ngôn ngữ có nguy cơ tuyệt chủng**: UNESCO ước tính 40% ngôn ngữ có nguy cơ tuyệt chủng
 
-###Địa lý kinh tế
+### Địa lý kinh tế
 - **Dẫn đầu GDP**: Mỹ, Trung Quốc, Nhật Bản, Đức, Ấn Độ, Anh, Pháp, Ý, Brazil, Canada
 - **Khối thương mại**: EU (Liên minh Châu Âu), USMCA (US-Mexico-Canada), ASEAN (Đông Nam Á), Mercosur (Nam Mỹ), Khu vực thương mại tự do lục địa châu Phi
 - **Phân phối tài nguyên**: Dầu (Trung Đông, Nga, Mỹ), Khí đốt tự nhiên (Nga, Iran, Qatar), Các nguyên tố đất hiếm (Trung Quốc chiếm ưu thế), Lithium (Úc, Chile, Argentina)
@@ -70,7 +70,9 @@
 - **Độc tài**: Tự do chính trị hạn chế, quyền lực tập trung
 - **Toàn trị**: Nhà nước kiểm soát hoàn toàn đời sống công cộng và riêng tư
 - **Liên bang**: Quyền lực được phân chia giữa chính quyền quốc gia và khu vực
-- **Đơn nhất**: Chính quyền tập trung, cấp dưới chính quyền khu vực###Tổ chức quốc tế
+- **Đơn nhất**: Chính quyền tập trung, cấp dưới chính quyền khu vực
+
+### Tổ chức quốc tế
 - **Liên hợp quốc (LHQ)**: 193 quốc gia thành viên, gìn giữ hòa bình, viện trợ nhân đạo, luật pháp quốc tế
 - **NATO**: Tổ chức Hiệp ước Bắc Đại Tây Dương, liên minh quân sự (32 thành viên tính đến năm 2024)
 - **Liên minh Châu Âu (EU)**: 27 quốc gia thành viên, liên minh kinh tế và chính trị, đồng euro (20 thành viên)
