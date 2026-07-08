@@ -374,6 +374,488 @@ def find_duplicates(items):
 
 ## Related Topics
 
-- **Security Vulnerabilities**: See `02_security_vulnerabilities.md` for security-related issues
-- **Code Quality**: See `05_code_quality_issues.md` for maintainability concerns
-- **API Design**: See `07_api_system_design.md` for system architecture patterns
+- **Security Vulnerabilities**: See `security_vulnerabilities.md` for security-related issues
+- **Code Quality**: See `code_quality_issues.md` for maintainability concerns
+- **API Design**: See `../07_api_system_design/api_system_design.md` for system architecture patterns
+- **AI/LLM Failures**: See `ai_llm_failures.md` for AI-specific reliability issues
+
+---
+
+## Additional System Reliability Patterns
+
+### Resource Exhaustion
+
+**What It Is:** Depleting system resources (file handles, connections, memory) through unbounded allocation.
+
+**Bad Example:**
+```python
+# Unbounded connection creation
+@app.route('/api/data')
+def get_data():
+    conn = create_database_connection()  # Never closed!
+    return conn.query("SELECT * FROM data")
+# Each request leaks a connection
+# Eventually: "Too many open connections" error
+```
+
+**Better Approach:**
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def get_db_connection():
+    conn = create_database_connection()
+    try:
+        yield conn
+    finally:
+        conn.close()
+
+@app.route('/api/data')
+def get_data():
+    with get_db_connection() as conn:
+        return conn.query("SELECT * FROM data")
+```
+
+### Cascade Failures
+
+**What It Is:** Failure in one component triggers failures in dependent components.
+
+**Bad Example:**
+```python
+def process_order(order):
+    # No timeout, no circuit breaker
+    inventory_response = check_inventory(order.items)
+    payment_response = process_payment(order.payment)
+    shipping_response = calculate_shipping(order.address)
+    
+    # If any service is slow, this blocks indefinitely
+    # All threads eventually blocked = system down
+```
+
+**Better Approach:**
+```python
+from circuitbreaker import circuit
+
+@circuit(failure_threshold=5, recovery_timeout=30)
+def process_order(order):
+    try:
+        inventory_response = check_inventory(
+            order.items, 
+            timeout=2.0  # Timeout prevents blocking
+        )
+        payment_response = process_payment(
+            order.payment,
+            timeout=3.0
+        )
+        shipping_response = calculate_shipping(
+            order.address,
+            timeout=1.0
+        )
+        return combine_responses(...)
+    except CircuitBreakerError:
+        # Fail fast when service is unhealthy
+        return queue_for_later_processing(order)
+    except TimeoutError:
+        # Graceful degradation
+        return partial_response_with_retry(order)
+```
+
+### Single Points of Failure
+
+**Bad Example:**
+```markdown
+Architecture:
+[Users] → [Web Server] → [Single Database]
+
+Problems:
+- Database failure = complete outage
+- No redundancy
+- Maintenance requires downtime
+```
+
+**Better Approach:**
+```markdown
+Resilient Architecture:
+[Users] → [Load Balancer] → [Multiple Web Servers]
+                              ↓
+                    [Database Primary]
+                              ↓
+                    [Database Replica] ← [Read Queries]
+                    
+Features:
+- Automatic failover
+- Read scaling
+- Zero-downtime maintenance
+```
+
+---
+
+## Monitoring and Observability Issues
+
+### Missing Health Checks
+
+**Bad Example:**
+```python
+# No health check endpoint
+app.run()
+
+# Load balancer can't detect unhealthy instances
+# Traffic continues to broken servers
+```
+
+**Better Approach:**
+```python
+@app.route('/health')
+def health_check():
+    checks = {
+        'database': check_database(),
+        'cache': check_redis(),
+        'external_api': check_external_service()
+    }
+    
+    if all(checks.values()):
+        return {'status': 'healthy', 'checks': checks}, 200
+    else:
+        return {'status': 'unhealthy', 'checks': checks}, 503
+
+@app.route('/ready')
+def readiness_check():
+    # Is this instance ready to receive traffic?
+    if is_warmed_up() and dependencies_healthy():
+        return {'status': 'ready'}, 200
+    return {'status': 'not ready'}, 503
+```
+
+### Insufficient Logging
+
+**Bad Example:**
+```python
+def process_payment(payment):
+    try:
+        result = charge_card(payment)
+        return result
+    except Exception as e:
+        print("Error occurred")  # No context!
+        return None
+```
+
+**Better Approach:**
+```python
+import logging
+import uuid
+
+def process_payment(payment):
+    correlation_id = str(uuid.uuid4())
+    
+    logging.info(
+        f"Processing payment",
+        extra={
+            'correlation_id': correlation_id,
+            'payment_id': payment.id,
+            'amount': payment.amount,
+            'currency': payment.currency
+        }
+    )
+    
+    try:
+        result = charge_card(payment)
+        logging.info(
+            f"Payment successful",
+            extra={'correlation_id': correlation_id, 'result': result}
+        )
+        return result
+    except PaymentError as e:
+        logging.error(
+            f"Payment failed: {str(e)}",
+            extra={
+                'correlation_id': correlation_id,
+                'error_code': e.code,
+                'error_details': e.details
+            },
+            exc_info=True  # Include stack trace
+        )
+        raise
+```
+
+### No Metrics Collection
+
+**Bad Example:**
+```python
+# No metrics exposed
+def handle_request(request):
+    process(request)
+    return response
+
+# Operators are blind to:
+# - Request rate
+# - Error rate  
+# - Latency distribution
+# - Resource usage
+```
+
+**Better Approach:**
+```python
+from prometheus_client import Counter, Histogram, Gauge
+
+REQUEST_COUNT = Counter('http_requests_total', 'Total requests', ['method', 'endpoint', 'status'])
+REQUEST_LATENCY = Histogram('http_request_duration_seconds', 'Request latency')
+ACTIVE_CONNECTIONS = Gauge('active_connections', 'Number of active connections')
+
+def handle_request(request):
+    with REQUEST_LATENCY.time():
+        ACTIVE_CONNECTIONS.inc()
+        try:
+            response = process(request)
+            REQUEST_COUNT.labels(
+                method=request.method,
+                endpoint=request.endpoint,
+                status=response.status_code
+            ).inc()
+            return response
+        finally:
+            ACTIVE_CONNECTIONS.dec()
+```
+
+---
+
+## Distributed System Challenges
+
+### Clock Skew Issues
+
+**Bad Example:**
+```python
+# Assuming synchronized clocks across servers
+def is_token_valid(token):
+    return token.expires_at > datetime.now()  # Which server's now?
+
+# Server A: 10:00:00
+# Server B: 10:00:05 (5 seconds ahead)
+# Token expires at 10:00:02
+# Server A says valid, Server B says expired = inconsistency
+```
+
+**Better Approach:**
+```python
+def is_token_valid(token):
+    # Use logical timestamps or vector clocks
+    # Or include server time in token
+    current_time = get_logical_time()
+    return token.logical_timestamp > current_time
+
+# Or use distributed tracing with consistent timestamps
+from opentelemetry import trace
+
+def validate_token(token):
+    span = trace.get_current_span()
+    span.set_attribute("token_expiry", token.expires_at.isoformat())
+    # Timestamps from trace context, not local clock
+```
+
+### Network Partition Handling
+
+**Bad Example:**
+```python
+# Assumes network is always reliable
+def update_user_preference(user_id, preference):
+    db.update(user_id, preference)  # Blocks if DB unreachable
+    cache.set(user_id, preference)  # What if cache is partitioned?
+    return "Success"  # May be wrong!
+```
+
+**Better Approach:**
+```python
+def update_user_preference(user_id, preference):
+    # Choose availability or consistency based on use case
+    
+    # For preferences (AP system - prefer availability):
+    try:
+        cache.set(user_id, preference)  # Fast, available
+        queue_for_async_db_update(user_id, preference)  # Eventually consistent
+        return "Preference saved"
+    except CacheUnavailable:
+        # Degrade gracefully
+        return "Unable to save preference, please try again"
+    
+    # For financial data (CP system - prefer consistency):
+    # try:
+    #     db.update_with_consensus(user_id, preference)
+    #     return "Updated"
+    # except ConsensusFailed:
+    #     return "Service temporarily unavailable"
+```
+
+---
+
+## Chaos Engineering Principles
+
+### Testing Failure Scenarios
+
+**What to Test:**
+1. **Instance failures**: Kill random pods/VMs
+2. **Network issues**: Add latency, drop packets
+3. **Resource exhaustion**: Fill disk, exhaust memory
+4. **Dependency failures**: Mock service outages
+5. **Clock skew**: Desynchronize server clocks
+
+**Example Chaos Experiment:**
+```yaml
+# Chaos Mesh experiment
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  name: kill-random-pods
+spec:
+  action: pod-kill
+  mode: random
+  selector:
+    namespaces: ["production"]
+    labelSelectors:
+      app: my-service
+  scheduler:
+    cron: "@every 10m"  # Kill pod every 10 minutes
+```
+
+### Game Days
+
+Regular exercises to test system resilience:
+
+1. **Schedule**: Quarterly game days
+2. **Scope**: Production-like environment
+3. **Scenarios**: Multiple simultaneous failures
+4. **Metrics**: Measure detection time, recovery time
+5. **Learnings**: Document and improve runbooks
+
+---
+
+## Capacity Planning
+
+### Under-Provisioning
+
+**Bad Example:**
+```markdown
+Traffic: 1000 requests/second average
+Capacity: Sized for exactly 1000 rps
+
+Result: Any spike causes overload and cascading failures
+```
+
+**Better Approach:**
+```markdown
+Traffic Analysis:
+- Average: 1000 rps
+- Peak (95th percentile): 2500 rps
+- Maximum observed: 4000 rps
+
+Capacity Planning:
+- Target capacity: 6000 rps (50% headroom above max)
+- Auto-scaling trigger: 70% utilization
+- Scale-up speed: 2x per minute
+- Buffer instances: Always keep 20% spare capacity
+```
+
+### Over-Provisioning Waste
+
+**Bad Example:**
+```markdown
+Running 100 servers "just in case"
+Average utilization: 5%
+Monthly cost: $50,000
+Wasted: $47,500/month
+```
+
+**Better Approach:**
+```markdown
+Right-sizing Strategy:
+1. Analyze historical usage patterns
+2. Implement auto-scaling based on metrics
+3. Use spot/preemptible instances for flexibility
+4. Set up cost alerts and budgets
+5. Regular capacity reviews
+
+Result:
+- Same reliability
+- Cost reduced to $15,000/month
+- 70% savings
+```
+
+---
+
+## Incident Response Best Practices
+
+### On-Call Burnout Prevention
+
+**Bad Practices:**
+- Same person on-call every week
+- No escalation path
+- Alerts for non-actionable items
+- Post-mortems that assign blame
+
+**Good Practices:**
+```markdown
+On-Call Rotation:
+- Weekly rotation, never back-to-back weeks
+- Secondary on-call for support
+- Clear escalation procedures
+- Alert fatigue reduction (page only for actionable issues)
+
+Post-Incident:
+- Blameless post-mortems
+- Focus on systemic fixes
+- Track action items to completion
+- Share learnings organization-wide
+```
+
+### Runbook Quality
+
+**Bad Runbook:**
+```markdown
+## Database Slow Query
+
+1. Check database
+2. Restart if needed
+3. Call DBA
+```
+
+**Good Runbook:**
+```markdown
+## Database Slow Query
+
+### Symptoms
+- Query latency > 5 seconds
+- Connection pool exhaustion
+- Application timeouts
+
+### Detection
+- Alert: `db_query_latency_p99 > 5s for 5m`
+- Dashboard: Database Performance
+
+### Immediate Actions
+1. Identify slow queries:
+   ```sql
+   SELECT * FROM pg_stat_activity 
+   WHERE state = 'active' 
+   ORDER BY query_start;
+   ```
+
+2. Check for locks:
+   ```sql
+   SELECT * FROM pg_locks WHERE granted = false;
+   ```
+
+3. If specific query identified:
+   - Kill query: `SELECT pg_terminate_backend(pid);`
+   - Add index if missing
+
+4. If general slowness:
+   - Check CPU/memory: `top`, `vmstat`
+   - Check disk I/O: `iostat`
+   - Consider read replica failover
+
+### Escalation
+- If not resolved in 15 min: Page DBA team
+- Contact: dba-oncall@example.com, +1-xxx-xxx-xxxx
+
+### Post-Incident
+- Create ticket for root cause analysis
+- Update runbook with new learnings
+```

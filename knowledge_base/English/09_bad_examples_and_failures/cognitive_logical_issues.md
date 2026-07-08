@@ -279,6 +279,389 @@ Assistant: Yes, there appears to be a causal relationship.
 
 ## Related Topics
 
-- **AI/LLM Failures**: See `01_ai_llm_failures.md` for hallucinations and reasoning issues
+- **AI/LLM Failures**: See `ai_llm_failures.md` for hallucinations and reasoning issues
 - **Contradictory Sources**: See documentation on evaluating conflicting information
 - **Critical Thinking**: Apply these concepts to evaluate arguments and evidence
+- **Prompt Engineering**: See `../02_artificial_intelligence/prompt_engineering.md` for techniques to reduce reasoning errors
+
+---
+
+## Additional Cognitive Biases in Software Development
+
+### Status Quo Bias
+
+**What It Is:** Preference for maintaining current state; any change is perceived as a loss.
+
+**Bad Example:**
+```markdown
+Team Lead: "Should we upgrade to Python 3.12? It has performance improvements 
+and security fixes."
+
+Developer: "Python 3.8 works fine. Why risk breaking things?"
+
+Reality: Staying on an older version increases technical debt, security risks,
+and makes future upgrades harder.
+```
+
+**Mitigation:**
+- Quantify costs of not changing
+- Set regular upgrade schedules
+- Create safe experimentation environments
+- Frame changes as opportunities, not threats
+
+### Optimism Bias
+
+**What It Is:** Underestimating time, costs, and risks while overestimating benefits.
+
+**Bad Example:**
+```markdown
+Project Plan:
+- Development: 2 weeks (realistic: 4 weeks)
+- Testing: 3 days (realistic: 1 week)
+- Bug fixes: 2 days (realistic: 1-2 weeks)
+- Contingency: None
+
+Result: Project takes 3x longer than planned.
+```
+
+**Mitigation:**
+- Use reference class forecasting (compare to similar past projects)
+- Add contingency buffers (20-50%)
+- Conduct pre-mortems
+- Track estimation accuracy over time
+
+### Survivorship Bias
+
+**What It Is:** Focusing on successful examples while ignoring failures.
+
+**Bad Example:**
+```markdown
+"Look at all these successful startups that didn't do market research!
+We don't need market research either."
+
+Reality: Many more startups failed without market research, but they're 
+not visible because they didn't survive.
+```
+
+**Mitigation:**
+- Study both successes AND failures
+- Look for base rates and statistics
+- Consider invisible data
+- Avoid cherry-picking examples
+
+### Fundamental Attribution Error
+
+**What It Is:** Attributing others' behavior to character rather than circumstances.
+
+**Bad Example:**
+```markdown
+"That developer made a bug because they're careless."
+
+Reality: The bug might be due to unclear requirements, time pressure,
+lack of testing infrastructure, or fatigue.
+```
+
+**Mitigation:**
+- Consider situational factors
+- Practice empathy
+- Focus on systems, not individuals
+- Use blameless post-mortems
+
+### Hindsight Bias
+
+**What It Is:** After an event occurs, believing it was predictable all along.
+
+**Bad Example:**
+```markdown
+After production outage:
+"I knew that deployment was risky. This was totally predictable."
+
+Reality: The outcome wasn't obvious beforehand; hindsight makes it seem clear.
+```
+
+**Mitigation:**
+- Document predictions before outcomes
+- Review decision context, not just outcomes
+- Avoid "I told you so" culture
+- Focus on improving processes, not assigning blame
+
+---
+
+## More Logical Fallacies
+
+### Appeal to Novelty
+
+**What It Is:** Assuming something is better because it's newer.
+
+**Bad Example:**
+```markdown
+"We should rewrite our entire backend in the latest framework. 
+It's the newest, so it must be better."
+
+Reality: Newer doesn't mean better for your specific use case.
+Mature technologies often have better support and stability.
+```
+
+### Appeal to Tradition
+
+**What It Is:** Arguing something is correct because it's always been done that way.
+
+**Bad Example:**
+```markdown
+"We've always deployed on Fridays at 5 PM. We shouldn't change that."
+
+Reality: Just because something is traditional doesn't make it optimal.
+(Actually, deploying on Friday at 5 PM is generally considered bad practice!)
+```
+
+### Tu Quoque (Appeal to Hypocrisy)
+
+**What It Is:** Dismissing criticism by pointing out the critic's inconsistency.
+
+**Bad Example:**
+```markdown
+Senior Dev: "You should write tests for this code."
+Junior Dev: "But you don't write tests for your code either!"
+
+Reality: The validity of the advice is independent of who gives it.
+```
+
+### Loaded Question
+
+**What It Is:** Asking a question that contains an assumption.
+
+**Bad Example:**
+```markdown
+"Why did you write such terrible code for this module?"
+
+Reality: The question assumes the code is terrible, putting the respondent
+on the defensive regardless of actual code quality.
+```
+
+### No True Scotsman
+
+**What It Is:** Making an exception to a universal claim when challenged.
+
+**Bad Example:**
+```markdown
+Person A: "No professional developer writes code without tests."
+Person B: "But John is a professional developer and doesn't write tests."
+Person A: "Well, no TRUE professional developer writes code without tests."
+
+Reality: This redefines the category to exclude counterexamples rather 
+than revising the claim.
+```
+
+### Genetic Fallacy
+
+**What It Is:** Judging something based on its origin rather than current merit.
+
+**Bad Example:**
+```markdown
+"That library came from a small startup, so it can't be enterprise-grade."
+
+Reality: The origin doesn't determine current quality. Evaluate based on
+actual characteristics, not source.
+```
+
+### Middle Ground Fallacy
+
+**What It Is:** Assuming the truth is always in the middle of two extremes.
+
+**Bad Example:**
+```markdown
+Developer A: "We should add comprehensive error handling."
+Developer B: "Error handling isn't important, skip it."
+Compromise: "Let's add some error handling, but not too much."
+
+Reality: One position might be clearly correct. Compromise isn't always wise.
+```
+
+---
+
+## Cognitive Biases in AI Systems
+
+### Training Data Bias
+
+AI models inherit biases present in their training data.
+
+**Example:**
+```markdown
+Training data contains: "The doctor said..." (mostly male pronouns)
+                       "The nurse said..." (mostly female pronouns)
+
+Model learns: Doctors are typically male, nurses are typically female.
+
+Result: Model exhibits gender bias in profession associations.
+```
+
+**Mitigation:**
+- Audit training data for biases
+- Use debiasing techniques
+- Test for biased outputs
+- Diverse data collection
+
+### Automation Bias
+
+**What It Is:** Over-relying on automated systems, even when they're wrong.
+
+**Example:**
+```markdown
+AI suggests code with a subtle bug.
+Developer accepts it without review because "the AI is usually right."
+
+Result: Bug makes it to production.
+```
+
+**Mitigation:**
+- Maintain human oversight
+- Encourage critical evaluation of AI outputs
+- Don't treat AI as infallible
+- Implement review processes
+
+### Illusion of Understanding
+
+**What It Is:** Believing you understand how an AI works when you don't.
+
+**Example:**
+```markdown
+User: "The AI understands what I mean, it's like talking to a person."
+
+Reality: LLMs predict tokens based on patterns, they don't truly 
+"understand" in the human sense. This illusion leads to over-trust.
+```
+
+**Mitigation:**
+- Educate users about AI limitations
+- Be transparent about how systems work
+- Avoid anthropomorphizing AI
+- Set appropriate expectations
+
+---
+
+## Case Studies
+
+### Case Study 1: Confirmation Bias in Architecture Selection
+
+**Incident:** A team chose a microservices architecture for a small application.
+
+**Root Cause:** Team lead had read several articles praising microservices and 
+only sought information confirming this choice, ignoring warnings about complexity.
+
+**Impact:**
+- Massive overhead for a team of 3 developers
+- Deployment complexity increased 10x
+- Performance degraded due to network calls
+- Project delayed by 6 months
+
+**Lesson:** Evaluate architectures based on your specific context, not just 
+positive testimonials. Consider trade-offs explicitly.
+
+### Case Study 2: Sunk Cost in Legacy System
+
+**Incident:** Company continued maintaining a custom-built CRM for 5 years 
+despite better alternatives.
+
+**Root Cause:** "We've invested $2M already, we can't abandon it now."
+
+**Impact:**
+- Annual maintenance cost: $500K
+- Opportunity cost: Couldn't use modern features
+- Talent retention issues (developers wanted to work with modern tech)
+- Total 5-year cost: $4.5M vs. $1.5M for SaaS alternative
+
+**Lesson:** Past investment is sunk. Make decisions based on future value.
+
+### Case Study 3: Availability Heuristic in Security
+
+**Incident:** Team prioritized defending against a recently publicized attack 
+vector while ignoring more likely threats.
+
+**Root Cause:** Recent news coverage made one threat type highly available 
+in memory, skewing risk assessment.
+
+**Impact:**
+- Spent $100K on mitigating low-probability threat
+- Actual breach occurred through neglected vector
+- Recovery cost: $500K+
+
+**Lesson:** Use data-driven threat modeling, not recency-based prioritization.
+
+---
+
+## Practical Exercises
+
+### Bias Detection Exercise
+
+Review recent decisions and ask:
+
+1. What assumptions did we make?
+2. What evidence would contradict our conclusion?
+3. Did we consider multiple options or anchor on the first idea?
+4. Are we continuing because of future value or past investment?
+5. What would we recommend if someone else asked us?
+
+### Logical Fallacy Spotting
+
+Practice identifying fallacies in everyday discussions:
+
+```markdown
+Statement: "If we don't adopt AI now, we'll be left behind forever."
+
+Analysis: This is a slippery slope fallacy. It assumes inevitable 
+progression to being "left behind" without evidence. Also presents 
+a false dichotomy (adopt AI or be left behind).
+```
+
+### Pre-Mortem Technique
+
+Before starting a project:
+
+1. Imagine it's 6 months in the future
+2. The project has failed spectacularly
+3. Write the story of why it failed
+4. Work backward to prevent those failure modes
+
+This counters optimism bias and availability heuristic.
+
+---
+
+## Tools and Frameworks
+
+### Decision Journal Template
+
+```markdown
+Date: [When]
+Decision: [What we decided]
+Context: [Situation and constraints]
+Options Considered: [Alternatives evaluated]
+Expected Outcome: [What we think will happen]
+Confidence Level: [How sure we are]
+Review Date: [When to revisit]
+
+[Later] Actual Outcome: [What actually happened]
+Lessons Learned: [What we'd do differently]
+```
+
+### Bias Checklist
+
+Before making important decisions:
+
+- [ ] Have we sought disconfirming evidence?
+- [ ] Are we anchored on initial information?
+- [ ] Is sunk cost influencing us?
+- [ ] Are we overconfident in our estimates?
+- [ ] Have we considered base rates?
+- [ ] Are we falling for availability/recency bias?
+- [ ] Would we make the same choice if starting fresh?
+
+### Red Team Exercise
+
+Assign someone to argue against the proposed decision:
+
+- Their role is to find flaws
+- They must present alternative viewpoints
+- Team practices responding to criticism constructively
+- Document concerns raised and addressed
+
+This counters confirmation bias and groupthink.

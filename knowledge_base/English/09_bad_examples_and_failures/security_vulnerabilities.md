@@ -297,6 +297,533 @@ def login():
 
 ## Related Topics
 
-- **AI/LLM Failures**: See `01_ai_llm_failures.md` for prompt injection and AI-specific security issues
+- **AI/LLM Failures**: See `ai_llm_failures.md` for prompt injection and AI-specific security issues
 - **Unsafe Code Patterns**: See code examples for memory safety and undefined behavior
 - **Authentication Best Practices**: Implement proper auth flows and session management
+- **Code Quality**: See `code_quality_issues.md` for secure coding practices
+
+---
+
+## Additional Security Vulnerabilities
+
+### Command Injection
+
+**What It Is:** Executing arbitrary system commands through unsanitized user input.
+
+**Bad Example (Vulnerable Code):**
+```python
+# VULNERABLE: User input passed to shell
+def get_file_info(filename):
+    os.system(f"ls -la {filename}")  # Command injection possible!
+```
+
+**Attack:**
+```
+Input: file.txt; rm -rf /
+Executed: ls -la file.txt; rm -rf /
+```
+
+**Why It's Bad:**
+- Attacker can execute any system command
+- Potential for complete system compromise
+- Data destruction, malware installation possible
+
+**Better Approach:**
+```python
+# SAFE: Use subprocess with list arguments
+import subprocess
+
+def get_file_info(filename):
+    result = subprocess.run(
+        ["ls", "-la", filename],
+        capture_output=True,
+        text=True,
+        check=False
+    )
+    return result.stdout
+```
+
+### Path Traversal
+
+**What It Is:** Accessing files outside intended directories using ../ sequences.
+
+**Bad Example:**
+```python
+# VULNERABLE: No path validation
+def serve_file(filename):
+    filepath = f"/var/www/files/{filename}"
+    return open(filepath).read()
+```
+
+**Attack:**
+```
+Input: ../../etc/passwd
+Result: Reads /etc/passwd (system file)
+```
+
+**Better Approach:**
+```python
+import os
+from pathlib import Path
+
+def serve_file(filename):
+    base_dir = Path("/var/www/files").resolve()
+    requested_path = (base_dir / filename).resolve()
+    
+    # Ensure path is within base directory
+    if not str(requested_path).startswith(str(base_dir)):
+        raise PermissionError("Access denied")
+    
+    return requested_path.read_text()
+```
+
+### Server-Side Request Forgery (SSRF)
+
+**What It Is:** Making the server make requests to unintended destinations.
+
+**Bad Example:**
+```python
+# VULNERABLE: User controls URL fetched by server
+@app.route('/fetch')
+def fetch_url():
+    url = request.args.get('url')
+    response = requests.get(url)  # Can access internal services!
+    return response.text
+```
+
+**Attack:**
+```
+Input: http://localhost:6379/  (Redis admin interface)
+Input: http://169.254.169.254/latest/meta-data/  (AWS metadata)
+```
+
+**Better Approach:**
+```python
+from urllib.parse import urlparse
+import ipaddress
+
+def is_safe_url(url):
+    parsed = urlparse(url)
+    
+    # Only allow HTTP/HTTPS
+    if parsed.scheme not in ['http', 'https']:
+        return False
+    
+    # Resolve hostname and check IP
+    try:
+        ip = socket.gethostbyname(parsed.hostname)
+        ip_obj = ipaddress.ip_address(ip)
+        
+        # Block private/internal IPs
+        if ip_obj.is_private or ip_obj.is_loopback:
+            return False
+        
+        return True
+    except:
+        return False
+
+@app.route('/fetch')
+def fetch_url():
+    url = request.args.get('url')
+    if not is_safe_url(url):
+        return "Invalid URL", 400
+    response = requests.get(url)
+    return response.text
+```
+
+---
+
+## Cryptographic Mistakes
+
+### Weak Hashing Algorithms
+
+**Bad Example:**
+```python
+import hashlib
+
+# NEVER use MD5 or SHA1 for security purposes
+def hash_password(password):
+    return hashlib.md5(password.encode()).hexdigest()  # BROKEN!
+```
+
+**Why It's Bad:**
+- MD5 and SHA1 are cryptographically broken
+- Fast to compute (enables brute force)
+- Collision attacks demonstrated
+
+**Better Approach:**
+```python
+import bcrypt
+import argon2
+
+# Use password-specific hashing functions
+def hash_password(password):
+    return bcrypt.hashpw(password.encode(), bcrypt.gensalt(rounds=12))
+
+# Or use Argon2 (winner of Password Hashing Competition)
+def hash_password_argon2(password):
+    ph = argon2.PasswordHasher()
+    return ph.hash(password)
+```
+
+### Hardcoded Encryption Keys
+
+**Bad Example:**
+```python
+# NEVER hardcode encryption keys
+ENCRYPTION_KEY = b'0123456789abcdef'  # Visible in source code!
+
+def encrypt_data(data):
+    cipher = AES.new(ENCRYPTION_KEY, AES.MODE_ECB)
+    return cipher.encrypt(pad(data))
+```
+
+**Better Approach:**
+```python
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+import os
+
+# Derive key from password + salt
+def derive_key(password, salt):
+    kdf = PBKDF2HMAC(
+        algorithm=hashes.SHA256(),
+        length=32,
+        salt=salt,
+        iterations=100000,
+    )
+    return kdf.derive(password.encode())
+
+# Store salt with encrypted data, derive key at runtime
+salt = os.urandom(16)
+key = derive_key(user_password, salt)
+```
+
+### Using ECB Mode
+
+**Bad Example:**
+```python
+# ECB mode reveals patterns in plaintext
+cipher = AES.new(key, AES.MODE_ECB)
+ciphertext = cipher.encrypt(plaintext)
+```
+
+**Why It's Bad:**
+- Identical plaintext blocks produce identical ciphertext
+- Patterns in data are visible
+- Famous "ECB penguin" demonstrates the problem
+
+**Better Approach:**
+```python
+# Use authenticated encryption modes
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+def encrypt_authenticated(data, key):
+    aesgcm = AESGCM(key)
+    nonce = os.urandom(12)
+    ciphertext = aesgcm.encrypt(nonce, data, None)
+    return nonce + ciphertext  # Store nonce with ciphertext
+
+def decrypt_authenticated(ciphertext, key):
+    aesgcm = AESGCM(key)
+    nonce = ciphertext[:12]
+    data = ciphertext[12:]
+    return aesgcm.decrypt(nonce, data, None)
+```
+
+---
+
+## API Security Issues
+
+### Missing Input Validation
+
+**Bad Example:**
+```python
+@app.route('/api/user/<user_id>')
+def get_user(user_id):
+    # user_id could be anything - SQL injection, XSS, etc.
+    return db.query(f"SELECT * FROM users WHERE id = {user_id}")
+```
+
+**Better Approach:**
+```python
+from marshmallow import Schema, fields, validate
+
+class UserSchema(Schema):
+    id = fields.Integer(required=True, validate=validate.Range(min=1))
+    email = fields.Email(required=True)
+    username = fields.String(
+        required=True,
+        validate=[
+            validate.Length(min=3, max=50),
+            validate.Regexp(r'^[a-zA-Z0-9_]+$')
+        ]
+    )
+
+@app.route('/api/user/<int:user_id>')  # Type constraint in route
+def get_user(user_id):
+    schema = UserSchema()
+    validated = schema.load({'id': user_id})
+    return db.get_user(validated['id'])
+```
+
+### Insecure API Authentication
+
+**Bad Example:**
+```python
+# Sending credentials in URL parameters
+GET /api/data?api_key=sk-12345&user=admin
+
+# Problems:
+# - Logged in server logs
+# - Visible in browser history
+# - Sent in Referer header
+```
+
+**Better Approach:**
+```python
+# Use Authorization header
+import requests
+
+headers = {
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'
+}
+response = requests.get('/api/data', headers=headers)
+
+# Or use API key in header
+headers = {
+    'X-API-Key': os.environ.get('API_KEY')
+}
+```
+
+### Missing Rate Limiting on APIs
+
+**Bad Example:**
+```python
+# API endpoint with no rate limiting
+@app.route('/api/search')
+def search():
+    results = perform_search(request.args.get('q'))
+    return jsonify(results)
+# Can be abused for scraping, DoS, resource exhaustion
+```
+
+**Better Approach:**
+```python
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+
+limiter = Limiter(
+    app,
+    key_func=get_remote_address,
+    default_limits=["100 per hour"]
+)
+
+@app.route('/api/search')
+@limiter.limit("10 per minute")
+def search():
+    results = perform_search(request.args.get('q'))
+    return jsonify(results)
+
+# Different limits for different endpoints
+@app.route('/api/login', methods=['POST'])
+@limiter.limit("5 per minute")  # Stricter for login
+def login():
+    ...
+```
+
+---
+
+## Security Headers and Configuration
+
+### Missing Security Headers
+
+**Bad Example:**
+```python
+# No security headers configured
+@app.route('/')
+def index():
+    return render_template('index.html')
+```
+
+**Better Approach:**
+```python
+from flask_talisman import Talisman
+
+app = Flask(__name__)
+
+# Configure security headers
+Talisman(app, 
+    content_security_policy={
+        'default-src': "'self'",
+        'script-src': "'self'",
+        'style-src': "'self'"
+    },
+    force_https=True,
+    strict_transport_security=True,
+    strict_transport_security_max_age=31536000
+)
+
+# Or manually add headers
+@app.after_request
+def add_security_headers(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    return response
+```
+
+### Insecure CORS Configuration
+
+**Bad Example:**
+```python
+# Allow all origins - DANGEROUS!
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'  # Too permissive!
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = '*'
+    return response
+```
+
+**Better Approach:**
+```python
+from flask_cors import CORS
+
+# Configure specific allowed origins
+CORS(app, 
+    resources={
+        r"/api/*": {
+            "origins": ["https://trusted-domain.com"],
+            "methods": ["GET", "POST"],
+            "allow_headers": ["Content-Type", "Authorization"],
+            "supports_credentials": True
+        }
+    }
+)
+```
+
+---
+
+## Case Studies
+
+### Case Study 1: Equifax Data Breach (2017)
+
+**Incident:** Attackers exploited Apache Struts vulnerability to access personal data of 147 million people.
+
+**Root Cause:**
+- Unpatched software (CVE-2017-5638)
+- No input validation on content-type header
+- Insufficient network segmentation
+
+**Impact:**
+- $1.4 billion in costs
+- Personal data exposed (SSN, birth dates, addresses)
+- Massive reputational damage
+
+**Lesson:** Keep dependencies updated; implement defense in depth.
+
+### Case Study 2: Target Breach (2013)
+
+**Incident:** Attackers stole 40 million credit card numbers.
+
+**Root Cause:**
+- Third-party vendor credentials compromised
+- No network segmentation between vendor and payment systems
+- Ignored security alerts
+
+**Impact:**
+- $202 million in costs
+- CEO and CIO fired
+- Payment system overhaul required
+
+**Lesson:** Segment networks; monitor third-party access; respond to alerts.
+
+### Case Study 3: SolarWinds Supply Chain Attack (2020)
+
+**Incident:** Malicious code inserted into software updates affected 18,000+ organizations.
+
+**Root Cause:**
+- Compromised build system
+- Signed malicious updates with valid certificates
+- Lateral movement once inside networks
+
+**Impact:**
+- Government agencies compromised
+- Fortune 500 companies affected
+- Ongoing investigation and remediation
+
+**Lesson:** Secure build pipelines; verify software integrity; zero-trust architecture.
+
+---
+
+## Security Testing Strategies
+
+### Static Application Security Testing (SAST)
+
+```yaml
+# GitHub Actions example
+- name: Run SAST
+  uses: github/super-linter/slim@v5
+  env:
+    VALIDATE_PYTHON_BLACK: true
+    VALIDATE_PYTHON_FLAKE8: true
+    PYTHON_BLACK_CONFIG_FILE: pyproject.toml
+```
+
+### Dynamic Application Security Testing (DAST)
+
+```bash
+# OWASP ZAP scan
+docker run -t owasp/zap2docker-stable zap-baseline.py \
+  -t https://your-app.com
+```
+
+### Dependency Scanning
+
+```bash
+# Python
+pip-audit
+
+# Node.js
+npm audit
+
+# General
+snyk test
+```
+
+### Penetration Testing Checklist
+
+- [ ] SQL injection testing
+- [ ] XSS testing (reflected, stored, DOM-based)
+- [ ] CSRF token validation
+- [ ] Authentication bypass attempts
+- [ ] Authorization checks (vertical/horizontal privilege escalation)
+- [ ] Rate limiting verification
+- [ ] Security headers presence
+- [ ] SSL/TLS configuration
+- [ ] Session management review
+- [ ] Error handling (no information leakage)
+
+---
+
+## Security Resources
+
+### OWASP Top 10 (2021)
+1. Broken Access Control
+2. Cryptographic Failures
+3. Injection
+4. Insecure Design
+5. Security Misconfiguration
+6. Vulnerable and Outdated Components
+7. Identification and Authentication Failures
+8. Software and Data Integrity Failures
+9. Security Logging and Monitoring Failures
+10. Server-Side Request Forgery
+
+### Recommended Tools
+- **Static Analysis**: SonarQube, Semgrep, CodeQL
+- **Dependency Scanning**: Dependabot, Renovate, Snyk
+- **Dynamic Testing**: OWASP ZAP, Burp Suite
+- **Secret Detection**: GitLeaks, TruffleHog
+- **Container Security**: Trivy, Clair, Anchore
