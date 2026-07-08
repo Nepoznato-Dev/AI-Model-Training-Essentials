@@ -977,7 +977,7 @@ Transportation is undergoing a revolutionary transformation driven by electrific
 - Smart charging algorithms
 - Backup power requirements
 
-#### Utamatenance Facilities
+#### Maintenance Facilities
 
 **New Skill Requirements**
 - High-voltage system expertise
