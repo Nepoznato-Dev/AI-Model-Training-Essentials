@@ -52,7 +52,9 @@
 - **Chủ nghĩa siêu thực** (thập niên 1920 - 1940): Hình ảnh trong mơ, tâm trí vô thức (ví dụ: Dalí, Magritte, Frida Kahlo)
 - **Chủ nghĩa Biểu hiện Trừu tượng** (thập niên 1940 - 1950): Tranh vẽ mang tính ngẫu hứng, mang tính cử chỉ (ví dụ: Pollock, Rothko, de Kooning)
 - **Nghệ thuật đại chúng** (thập niên 1950 - thập niên 1960): Hình ảnh văn hóa đại chúng (ví dụ: Warhol, Lichtenstein)
-- **Nghệ thuật đương đại** (thập niên 1970 - nay): Phương tiện truyền thông đa dạng, cách tiếp cận khái niệm, bình luận xã hội### Phương tiện và Kỹ thuật Nghệ thuật
+- **Nghệ thuật đương đại** (thập niên 1970 - nay): Phương tiện truyền thông đa dạng, cách tiếp cận khái niệm, bình luận xã hội
+
+### Phương tiện và Kỹ thuật Nghệ thuật
 - **Tranh**: Sơn dầu, acrylic, màu nước, bích họa, màu keo
 - **Vẽ**: Bút chì, than, mực, phấn màu, bút màu conte
 - **Điêu khắc**: Khắc (đá, gỗ), nặn (đất sét, sáp), đúc (đồng, kim loại), lắp ráp
@@ -106,7 +108,7 @@
 - Samuel Beckett (Ailen, 1906-1989): “Chờ Godot”, “Endgame”
 - August Wilson (Mỹ, 1945-2005): Pittsburgh Cycle, “Hàng rào”
 
-##Phim và Điện ảnh
+## Phim và Điện ảnh
 
 ### Thể loại phim
 - **Kịch**: Cách kể chuyện theo nhân vật, chiều sâu cảm xúc
@@ -133,7 +135,8 @@
 - **Nhà thiết kế sản xuất**: Bối cảnh, địa điểm, môi trường hình ảnh
 - **Nhà soạn nhạc**: Bản nhạc gốc
 
-## Tác giả và tác phẩm nổi tiếng### Văn học cổ điển
+## Tác giả và tác phẩm nổi tiếng
+### Văn học cổ điển
 - Homer: “The Iliad”, “The Odyssey” (Hy Lạp cổ đại)
 - Dante Alighieri: "Thần khúc" (Ý, 1308-1320)
 - Miguel de Cervantes: "Don Quixote" (Tây Ban Nha, 1605)
@@ -143,7 +146,7 @@
 - Charles Dickens: “Những kỳ vọng lớn lao”, “Câu chuyện về hai thành phố” (Anh, những năm 1850-1860)
 - Mark Twain: "Những cuộc phiêu lưu của Huckleberry Finn" (Mỹ, 1884)
 
-###Văn học hiện đại
+### Văn học hiện đại
 - James Joyce: “Ulysses” (Ireland, 1922)
 - Virginia Woolf: "Bà Dalloway", "To the Lighthouse" (Anh, những năm 1920)
 - Franz Kafka: “Sự biến thái”, “Phiên tòa” (Tiệp Khắc, những năm 1910-1920)

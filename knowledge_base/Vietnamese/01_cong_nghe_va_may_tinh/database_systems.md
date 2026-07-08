@@ -275,7 +275,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Vấn đề truy vấn N+1
 - Đường cong học tập
 
-##Quản trị cơ sở dữ liệu
+## Quản trị cơ sở dữ liệu
 
 ### Trách nhiệm của DBA
 - Cài đặt và cấu hình

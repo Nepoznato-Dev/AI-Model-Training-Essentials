@@ -318,7 +318,7 @@ Cung cấp tài nguyên máy tính theo yêu cầu (máy chủ, bộ lưu trữ,
 - **Service Mesh (Lưới dịch vụ)**: Istio, Linkerd (quản lý lưu lượng, bảo mật)
 - **GitOps**: ArgoCD, Flux (triển khai khai báo)
 
-##Quản lý chi phí
+## Quản lý chi phí
 
 ### Mô hình định giá
 - **Trả tiền theo nhu cầu**: Trả tiền cho những gì bạn sử dụng

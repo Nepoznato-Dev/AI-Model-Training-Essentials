@@ -72,7 +72,7 @@ Bài viết tốt là rõ ràng, ngắn gọn, mạch lạc và hấp dẫn.
 - **Chỉnh sửa** tập trung vào sửa lỗi ngữ pháp, chính tả và dấu câu.
 - ** Hiệu đính ** là bước kiểm tra cuối cùng trước khi xuất bản.
 
-##Đọc và hiểu
+## Đọc và hiểu
 
 **Đọc tích cực** liên quan đến việc tương tác với văn bản bằng cách đặt câu hỏi, đưa ra dự đoán, tóm tắt và tạo kết nối.
 

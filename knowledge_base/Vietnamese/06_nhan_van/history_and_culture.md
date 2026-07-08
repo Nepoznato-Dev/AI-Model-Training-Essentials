@@ -26,11 +26,11 @@ Thời đại thám hiểm (thế kỷ 15-17) chứng kiến các nhà thám hi�
 
 Cuộc cách mạng công nghiệp bắt đầu ở Anh vào cuối thế kỷ 18 và làm thay đổi ngành sản xuất, nông nghiệp và giao thông vận tải. Năng lượng hơi nước, máy dệt và sản xuất sắt đã thúc đẩy sự thay đổi kinh tế nhanh chóng. Cuộc cách mạng lan rộng khắp châu Âu và Bắc Mỹ vào thế kỷ 19. Nó dẫn đến đô thị hóa, các tầng lớp xã hội mới và những thay đổi đáng kể về môi trường. Nó cũng tạo ra những điều kiện làm việc nguy hiểm mà cuối cùng đã thúc đẩy các phong trào lao động và cải cách xã hội.
 
-##Chiến tranh thế giới
+## Chiến tranh thế giới
 
 Chiến tranh thế giới thứ nhất (1914–1918) bắt đầu sau vụ ám sát Thái tử Franz Ferdinand của Áo-Hungary và liên quan đến phần lớn châu Âu. Các công nghệ quân sự mới như súng máy, khí độc và xe tăng đã gây ra thương vong lớn. Khoảng 17 triệu người đã chết. Chiến tranh thế giới thứ hai (1939–1945) là cuộc xung đột đẫm máu nhất trong lịch sử loài người, với khoảng 70–85 triệu người chết. Nó là cuộc chiến giữa quân Đồng minh (bao gồm Hoa Kỳ, Liên Xô và Vương quốc Anh) và các cường quốc phe Trục (Đức, Nhật Bản và Ý). Chiến tranh kết thúc với sự thất bại của Đức Quốc xã và vụ đánh bom nguyên tử ở Hiroshima và Nagasaki ở Nhật Bản.
 
-##Chiến tranh Lạnh
+## Chiến tranh Lạnh
 
 Chiến tranh Lạnh (1947–1991) là thời kỳ căng thẳng địa chính trị giữa Hoa Kỳ và Liên Xô cũng như các đồng minh tương ứng của họ. Nó được đặc trưng bởi một cuộc chạy đua vũ trang, chiến tranh ủy nhiệm và cạnh tranh ý thức hệ giữa chủ nghĩa tư bản và chủ nghĩa cộng sản. Các sự kiện quan trọng bao gồm Bức tường Berlin (xây năm 1961, sụp đổ năm 1989), Chiến tranh Triều Tiên, Chiến tranh Việt Nam và Cuộc khủng hoảng tên lửa Cuba năm 1962. Chiến tranh Lạnh kết thúc với sự tan rã của Liên Xô vào năm 1991.
 
