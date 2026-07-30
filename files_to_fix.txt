@@ -1,64 +1,14 @@
 Total files checked: 672
-Files with potential issues: 485
+Files with potential issues: 474
 
 ================================================================================
 FILES REQUIRING REVIEW/FIXING:
 ================================================================================
 
-FILE: Arabic/02_الذكاء_الاصطناعي/local_ai_architecture.md
-  - Arabic mixed with English technical terms
-  - Contains 36 untranslated English technical terms
-  - High percentage of English words (1492/2461)
-
-FILE: Arabic/02_الذكاء_الاصطناعي/prompt_engineering.md
-  - Arabic mixed with English technical terms
-  - Contains 15 untranslated English technical terms
-  - High percentage of English words (642/1088)
-
-FILE: Arabic/02_الذكاء_الاصطناعي/artificial_intelligence.md
-  - Arabic mixed with English technical terms
-  - Contains 48 untranslated English technical terms
-  - High percentage of English words (736/1147)
-
-FILE: Arabic/02_الذكاء_الاصطناعي/phi3_and_local_models.md
-  - Arabic mixed with English technical terms
-  - Contains 28 untranslated English technical terms
-  - High percentage of English words (786/1342)
-
-FILE: Arabic/01_التكنولوجيا_والحوسبة/coding_languages.md
-  - Arabic mixed with English technical terms
-  - Contains 6 untranslated English technical terms
-  - High percentage of English words (1125/2151)
-
-FILE: Arabic/01_التكنولوجيا_والحوسبة/web_development.md
-  - Arabic mixed with English technical terms
-  - Contains 5 untranslated English technical terms
-  - High percentage of English words (1092/1607)
-
-FILE: Arabic/01_التكنولوجيا_والحوسبة/technology_glossary.md
-  - Arabic mixed with English technical terms
-  - Contains 38 untranslated English technical terms
-  - High percentage of English words (989/1647)
-
-FILE: Arabic/03_علم_البيانات/علم_البيانات_والتحليلات.md
-  - Arabic mixed with English technical terms
-  - Contains 17 untranslated English technical terms
-  - High percentage of English words (1201/1779)
-
-FILE: Arabic/07_المراجع/التكنولوجيا_والحوسبة.md
-  - Arabic mixed with English technical terms
-  - Contains 21 untranslated English technical terms
-  - High percentage of English words (984/1541)
-
 FILE: Arabic/07_المراجع/القاموس.md
   - Arabic mixed with English technical terms
   - Contains 28 untranslated English technical terms
   - High percentage of English words (4081/6806)
-
-FILE: Arabic/08_المستقبل/2026_وأحداث_المستقبل.md
-  - Arabic mixed with English technical terms
-  - Contains 4 untranslated English technical terms
-  - High percentage of English words (906/1300)
 
 FILE: Arabic/10_أوراق_الغش/أوامر_Linux.md
   - Arabic mixed with English technical terms
@@ -298,10 +248,6 @@ FILE: Arabic/02_الذكاء_الاصطناعي/ml_evaluation_and_workflow.md
 FILE: Arabic/01_التكنولوجيا_والحوسبة/networking_basics.md
   - Contains 17 untranslated English technical terms
   - High percentage of English words (1435/2265)
-
-FILE: Arabic/01_التكنولوجيا_والحوسبة/database_systems.md
-  - Arabic mixed with English technical terms
-  - High percentage of English words (999/1506)
 
 FILE: Arabic/05_الأعمال_والمالية/القانون_والأنظمة_القانونية.md
   - Arabic mixed with English technical terms

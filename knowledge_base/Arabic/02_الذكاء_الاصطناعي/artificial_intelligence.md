@@ -5,87 +5,87 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Artificial Intelligence
+# الذكاء الاصطناعي
 
-## What is Artificial Intelligence?
+## ما هو الذكاء الاصطناعي؟
 
-Artificial Intelligence (AI) refers to ال simulation من human intelligence في machines programmed to think, learn, و solve problems. AI الأنظمة can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, و identifying objects في images. ال term was coined by John McCarthy في 1956 at ال Dartmouth Conference, widely regarded as ال founding event من AI as a field.
+يشير الذكاء الاصطناعي (AI) إلى محاكاة الذكاء البشري في آلات مبرمجة على التفكير والتعلّم وحلّ المشكلات. تستطيع أنظمة الذكاء الاصطناعي أداء مهام تتطلب عادةً ذكاءً بشرياً، مثل التعرف إلى الكلام، واتخاذ القرارات، وترجمة اللغات، والتعرّف إلى الأشياء في الصور. صاغ جون مكارثي هذا المصطلح عام 1956 في مؤتمر دارتموث، الذي يُعد على نطاق واسع الحدث المؤسس للذكاء الاصطناعي بوصفه مجالاً علمياً.
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed لأجل specific tasks, و ال theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI الأنظمة are Narrow AI.
+ينقسم الذكاء الاصطناعي الحديث عموماً إلى الذكاء الاصطناعي الضيق، ويسمى أيضاً الذكاء الاصطناعي الضعيف، وهو مصمم لمهام محددة، وإلى الذكاء الاصطناعي العام (AGI) النظري، الذي يمكن أن يضاهي القدرة المعرفية البشرية أو يتجاوزها عبر جميع المجالات. جميع أنظمة الذكاء الاصطناعي الحالية هي أنظمة ضيقة النطاق.
 
-## التاريخ من AI
+## تاريخ الذكاء الاصطناعي
 
-ال التاريخ من AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "الحوسبة Machinery و Intelligence" introduced ال Turing Test — a measure من a machine's ability to exhibit intelligent behaviour indistinguishable from a human. ال 1956 Dartmouth Conference formally established AI as an academic discipline.
+يمتد تاريخ الذكاء الاصطناعي إلى ما يقرب من ثمانية عقود. وضع آلان تورنغ الأسس النظرية المبكرة، إذ قدّمت ورقته عام 1950 بعنوان "آلات الحوسبة والذكاء" اختبار تورنغ، وهو مقياس لقدرة الآلة على إظهار سلوك ذكي لا يمكن تمييزه عن سلوك الإنسان. وفي عام 1956 رسّخ مؤتمر دارتموث الذكاء الاصطناعي رسمياً بوصفه تخصصاً أكاديمياً.
 
-ال 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) و LISP (a programming اللغة designed لأجل AI). ال "AI winters" من ال 1970s و 1980s were periods من reduced funding و interest following unmet expectations. A resurgence في ال 1980s came مع expert الأنظمة — rule-based programs that encoded human expertise. ال 2000s brought التعلم الآلي breakthroughs fuelled by ال internet و growing datasets. ال 2010s saw ال rise من التعلم العميق, transforming computer vision, natural اللغة processing (NLP), و reinforcement learning.
+شهدت الفترة من خمسينيات إلى سبعينيات القرن العشرين برامج مبكرة متفائلة مثل ELIZA، وهو روبوت محادثة بسيط، وLISP، وهي لغة برمجة صُممت لاستخدامات الذكاء الاصطناعي. أما "شتاءات الذكاء الاصطناعي" في سبعينيات وثمانينيات القرن العشرين فكانت فترات تراجع في التمويل والاهتمام بعد عدم تحقق التوقعات. وجاءت عودة الاهتمام في ثمانينيات القرن العشرين مع الأنظمة الخبيرة، وهي برامج قائمة على القواعد ترمّز خبرة البشر. وفي العقد الأول من القرن الحادي والعشرين ظهرت اختراقات في تعلّم الآلة مدفوعة بالإنترنت ومجموعات البيانات المتنامية. وشهد عقد 2010 صعود التعلم العميق، مما غيّر الرؤية الحاسوبية، ومعالجة اللغة الطبيعية (NLP)، والتعلم المعزز.
 
-## التعلم الآلي
+## تعلّم الآلة
 
-التعلم الآلي (ML) is a subset من AI that enables الأنظمة to learn from البيانات without being explicitly programmed. Key ML categories include:
+تعلّم الآلة (ML) هو فرع من الذكاء الاصطناعي يمكّن الأنظمة من التعلم من البيانات من دون برمجة صريحة لكل قاعدة. وتشمل فئاته الرئيسية ما يلي:
 
-**Supervised Learning**: ال model is trained on labelled input-output pairs. أمثلة include spam detection و image classification. Algorithms include linear regression, decision trees, الدعم vector machines, و الشبكات العصبية.
+**التعلم الخاضع للإشراف**: يُدرَّب النموذج على أزواج من المدخلات والمخرجات الموسومة. تشمل الأمثلة اكتشاف الرسائل المزعجة وتصنيف الصور. وتشمل الخوارزميات الانحدار الخطي، وأشجار القرار، وآلات المتجهات الداعمة، والشبكات العصبية.
 
-**Unsupervised Learning**: ال model finds patterns في unlabelled البيانات. أمثلة include customer segmentation و anomaly detection. Algorithms include k-means clustering و principal component analysis (PCA).
+**التعلم غير الخاضع للإشراف**: يبحث النموذج عن أنماط في بيانات غير موسومة. تشمل الأمثلة تقسيم العملاء واكتشاف الشذوذ. وتشمل الخوارزميات التجميع بطريقة k-means وتحليل المكونات الرئيسية (PCA).
 
-**Reinforcement Learning**: An agent learns by interacting مع an environment, receiving rewards or penalties. Used في game-playing AI (AlphaGo, AlphaZero), robotics, و recommendation الأنظمة.
+**التعلم المعزز**: يتعلم وكيل ذكي من خلال التفاعل مع بيئة ما وتلقي مكافآت أو عقوبات. ويُستخدم في أنظمة الذكاء الاصطناعي للألعاب مثل AlphaGo وAlphaZero، وفي الروبوتات وأنظمة التوصية.
 
-**Semi-Supervised و Self-Supervised Learning**: Combine small amounts من labelled البيانات مع large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+**التعلم شبه الخاضع للإشراف والتعلم الذاتي الإشراف**: يجمعان كميات صغيرة من البيانات الموسومة مع مجموعات كبيرة من البيانات غير الموسومة. تستخدم نماذج GPT نهجاً ذاتي الإشراف أثناء التدريب المسبق.
 
 ## التعلم العميق
 
-التعلم العميق is a subset من التعلم الآلي that uses artificial الشبكات العصبية مع many layers (deep networks). Inspired loosely by ال brain's neural structure, these networks learn hierarchical representations من البيانات. التعلم العميق powers:
+التعلم العميق فرع من تعلّم الآلة يستخدم شبكات عصبية اصطناعية ذات طبقات كثيرة. تستلهم هذه الشبكات بصورة عامة بنية الدماغ العصبية، وتتعلم تمثيلات هرمية للبيانات. ويدعم التعلم العميق مجالات مثل:
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural اللغة Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+- **الرؤية الحاسوبية**: التعرف إلى الصور، واكتشاف الأجسام، والتصوير الطبي
+- **معالجة اللغة الطبيعية**: الترجمة الآلية، وتحليل المشاعر، والإجابة عن الأسئلة
+- **التعرف إلى الكلام**: المساعدات الصوتية مثل Siri وAlexa وGoogle Assistant
+- **الذكاء الاصطناعي التوليدي**: توليد الصور مثل DALL-E وStable Diffusion، وتوليد النصوص مثل GPT
 
-Key التعلم العميق architectures include convolutional الشبكات العصبية (CNNs) لأجل images, recurrent الشبكات العصبية (RNNs) و LSTMs لأجل sequences, transformers لأجل اللغة, و generative adversarial networks (GANs) لأجل synthesis.
+تشمل البنى الرئيسية للتعلم العميق الشبكات العصبية الالتفافية (CNNs) للصور، والشبكات العصبية المتكررة (RNNs) وLSTMs للتسلسلات، والمحوّلات للغة، والشبكات التوليدية الخصامية (GANs) للتوليف.
 
-## Large اللغة Models (LLMs)
+## نماذج اللغة الكبيرة (LLMs)
 
-Large اللغة Models (LLMs) are AI الأنظمة trained on vast amounts من text البيانات to understand و generate human اللغة. They are based on ال Transformer العمارة, introduced في ال 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict ال next token (word piece) في a sequence, allowing them to generate coherent text, answer questions, write code, و perform reasoning tasks.
+نماذج اللغة الكبيرة (LLMs) هي أنظمة ذكاء اصطناعي تُدرّب على كميات هائلة من البيانات النصية لفهم اللغة البشرية وتوليدها. تعتمد هذه النماذج على بنية المحوّل التي قُدمت في ورقة عام 2017 بعنوان "Attention is All You Need" لفاسواني وآخرين. تتنبأ نماذج اللغة الكبيرة بالرمز التالي، أو قطعة الكلمة التالية، في تسلسل ما، مما يتيح لها توليد نص مترابط، والإجابة عن الأسئلة، وكتابة الشيفرة، وأداء مهام الاستدلال.
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, و successors — widely used لأجل chat و code
-- **Claude** (Anthropic): Focused on safety و helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, و code
-- **LLaMA / Llama 3** (Meta): Open-weight models لأجل research و local النشر
-- **Mistral** (Mistral AI): Efficient open models competitive مع much larger LLMs
+تشمل النماذج البارزة ما يلي:
+- **سلسلة GPT** من OpenAI: مثل GPT-3 وGPT-4 وما تلاهما، وتُستخدم على نطاق واسع للمحادثة والبرمجة
+- **Claude** من Anthropic: يركز على السلامة وتقديم المساعدة
+- **Gemini** من Google DeepMind: متعدد الوسائط ويدمج النصوص والصور والشيفرة
+- **LLaMA / Llama 3** من Meta: نماذج مفتوحة الأوزان للبحث والتشغيل المحلي
+- **Mistral** من Mistral AI: نماذج مفتوحة فعّالة تنافس نماذج أكبر بكثير
 
-LLMs are trained في two stages: pre-training (unsupervised on large text corpora) و fine-tuning (supervised or via reinforcement learning from human ملاحظات, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens في ال most متقدم 2024 models.
+تُدرَّب نماذج اللغة الكبيرة على مرحلتين: التدريب المسبق، وهو تدريب غير خاضع للإشراف على مدونات نصية ضخمة، والضبط الدقيق، وهو تدريب خاضع للإشراف أو تدريب عبر التعلم المعزز من ملاحظات البشر (RLHF). تصف نوافذ السياق مقدار النص الذي يستطيع نموذج اللغة الكبير معالجته دفعة واحدة، من 4 آلاف رمز في نماذج GPT-3 المبكرة إلى أكثر من مليون رمز في أكثر نماذج عام 2024 تقدماً.
 
-## AI Ethics و Safety
+## أخلاقيات الذكاء الاصطناعي وسلامته
 
-AI raises important ethical questions including bias, privacy, job displacement, و ال risk من misuse. Algorithmic bias occurs when training البيانات reflects historical inequalities, causing AI الأنظمة to produce discriminatory outputs. Facial recognition الأنظمة have shown higher error rates لأجل darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+يثير الذكاء الاصطناعي أسئلة أخلاقية مهمة تشمل التحيز، والخصوصية، وإزاحة الوظائف، وخطر سوء الاستخدام. يحدث التحيز الخوارزمي عندما تعكس بيانات التدريب أوجه عدم مساواة تاريخية، فتنتج أنظمة الذكاء الاصطناعي مخرجات تمييزية. وقد أظهرت أنظمة التعرف إلى الوجوه معدلات خطأ أعلى لدى أصحاب البشرة الداكنة، كما وُجد أن بعض خوارزميات التوظيف تفضّل المرشحين الذكور.
 
-AI safety is ال field dedicated to ensuring AI الأنظمة behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical في الطب, القانون, المالية)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a المستقبل AGI could pursue goals misaligned مع human survival
+سلامة الذكاء الاصطناعي هي المجال المخصص لضمان أن تتصرف أنظمة الذكاء الاصطناعي كما هو مقصود من دون إحداث أضرار غير متوقعة. وتشمل أهم المخاوف:
+- **المواءمة**: ضمان توافق أهداف الذكاء الاصطناعي مع القيم البشرية
+- **قابلية التفسير والشرح**: فهم سبب اتخاذ نظام ذكاء اصطناعي قراراً معيناً، وهو أمر بالغ الأهمية في الطب والقانون والمال
+- **سوء الاستخدام**: التزييف العميق، والمعلومات المضللة، والهجمات السيبرانية المولّدة بالذكاء الاصطناعي
+- **الخطر الوجودي**: قلق نظري من أن ذكاءً اصطناعياً عاماً في المستقبل قد يسعى إلى أهداف غير متوافقة مع بقاء البشر
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, و independent institutes like MIRI و ARC.
+تشمل الجهات العاملة في سلامة الذكاء الاصطناعي فريق السلامة في OpenAI، وAnthropic التي أسسها باحثون سابقون في سلامة OpenAI، وفريق السلامة في DeepMind، ومعاهد مستقلة مثل MIRI وARC.
 
-## AI في Society
+## الذكاء الاصطناعي في المجتمع
 
-AI is transforming nearly every industry:
+يغيّر الذكاء الاصطناعي كل صناعة تقريباً:
 
-- **الرعاية الصحية**: AI assists في diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), و personalising treatment plans.
-- **المالية**: Fraud detection, algorithmic trading, credit scoring, و robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, و reinforcement learning. Tesla Autopilot, Waymo, و Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace و learning style.
-- **Creative fields**: AI generates music, art, و writing; tools like Midjourney, DALL-E, و GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, و powers both attacks و defences.
+- **الرعاية الصحية**: يساعد في تشخيص السرطان من الصور الطبية، والتنبؤ بنتائج المرضى، وتسريع اكتشاف الأدوية؛ وقد حل AlphaFold مشكلة التنبؤ ببنية طيّ البروتين، كما يساعد في تخصيص خطط العلاج.
+- **المال**: تستخدم نماذج تعلّم الآلة في اكتشاف الاحتيال، والتداول الخوارزمي، وتقييم الائتمان، والمستشارين الآليين.
+- **النقل**: تستخدم المركبات ذاتية القيادة الرؤية الحاسوبية والليدار والتعلم المعزز. وتُعد Tesla Autopilot وWaymo وCruise من الجهود البارزة في هذا المجال.
+- **التعليم**: تكيّف منصات التعلم المخصص المحتوى مع سرعة كل طالب وأسلوب تعلمه.
+- **المجالات الإبداعية**: يولّد الذكاء الاصطناعي الموسيقى والفن والكتابة؛ وقد غيّرت أدوات مثل Midjourney وDALL-E وGitHub Copilot سير العمل الإبداعي.
+- **الأمن السيبراني**: يكتشف الذكاء الاصطناعي الشذوذ، ويحدد التهديدات، ويدعم الهجمات والدفاعات على حد سواء.
 
-## Robotics و Embodied AI
+## الروبوتات والذكاء الاصطناعي المتجسد
 
-Robotics combines AI مع physical machines. Modern robots use perception (cameras, lidar), planning, و control to navigate و manipulate environments. Boston Dynamics' Atlas demonstrates متقدم bipedal movement. Industrial robots from companies like ABB و FANUC automate manufacturing. Household robots (Roomba) و surgical robots (da Vinci System) apply AI في everyday و medical settings. Embodied AI research focuses on agents that learn physical skills through interaction مع ال world, bridging ال gap between simulated و real environments.
+تجمع الروبوتات بين الذكاء الاصطناعي والآلات المادية. تستخدم الروبوتات الحديثة الإدراك، مثل الكاميرات والليدار، والتخطيط والتحكم للتنقل في البيئات والتعامل معها. يعرض روبوت Atlas من Boston Dynamics حركة ثنائية القدمين متقدمة. وتؤتمت الروبوتات الصناعية من شركات مثل ABB وFANUC عمليات التصنيع. وتطبّق الروبوتات المنزلية مثل Roomba والروبوتات الجراحية مثل da Vinci System الذكاء الاصطناعي في الاستخدامات اليومية والطبية. يركز بحث الذكاء الاصطناعي المتجسد على وكلاء يتعلمون مهارات مادية عبر التفاعل مع العالم، مما يردم الفجوة بين البيئات المحاكاة والحقيقية.
 
-## Current AI Trends (2020s)
+## اتجاهات الذكاء الاصطناعي الحالية في عقد 2020
 
-- **Multimodal AI**: الأنظمة that process text, images, audio, و video together (GPT-4V, Gemini)
-- **Agents و agentic AI**: LLMs that can use tools, browse ال الويب, write code, و take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models لأجل researchers
-- **On-device AI**: Running AI models locally on phones و laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: ال EU AI Act (2024) is ال world's first comprehensive AI القانون, classifying AI الأنظمة by risk level
+- **الذكاء الاصطناعي متعدد الوسائط**: أنظمة تعالج النصوص والصور والصوت والفيديو معاً، مثل GPT-4V وGemini
+- **الوكلاء والذكاء الاصطناعي الوكيلي**: نماذج لغة كبيرة تستطيع استخدام الأدوات، وتصفح الويب، وكتابة الشيفرة، وتنفيذ إجراءات متعددة الخطوات، مثل Operator من OpenAI وComputer Use من Anthropic
+- **النماذج مفتوحة الأوزان**: أتاحت LLaMA من Meta الوصول إلى النماذج الكبيرة للباحثين على نطاق أوسع
+- **الذكاء الاصطناعي على الجهاز**: تشغيل نماذج الذكاء الاصطناعي محلياً على الهواتف والحواسيب المحمولة من دون اتصال سحابي، مثل Apple Intelligence ووحدات المعالجة العصبية من Qualcomm
+- **تنظيم الذكاء الاصطناعي**: يُعد قانون الذكاء الاصطناعي في الاتحاد الأوروبي لعام 2024 أول قانون شامل في العالم للذكاء الاصطناعي، إذ يصنف أنظمة الذكاء الاصطناعي حسب مستوى المخاطر
