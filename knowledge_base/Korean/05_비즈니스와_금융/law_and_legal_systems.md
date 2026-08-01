@@ -5,56 +5,56 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 법률 와 법적 시스템
+# 법률과 법체계
 
-## 법적 시스템 개요
+## 법체계 개요
 
-A 법적 system is 그 framework 의 rules, institutions, 와 procedures that govern a society. 그 main 법적 시스템 worldwide include common 법률 (based on judicial precedents, used 에서 UK, US, Canada, Australia), civil 법률 (based on codified statutes, used 에서 most 의 Europe, Latin America, Japan), religious 법률 (based on religious texts, such as Islamic Sharia 법률), 와 customary 법률 (based on traditional practices). Common 법률 시스템 rely heavily on case 법률 와 그 principle 의 stare decisis (precedent must be followed). Civil 법률 시스템 use comprehensive 법적 codes that judges apply to cases.
+법체계는 사회를 통치하는 규범, 제도, 절차의 틀입니다. 전 세계의 주요 법체계로는 판례를 중시하는 보통법(common law) 체계(영국, 미국, 캐나다, 호주 등), 성문법전을 중심으로 하는 대륙법(civil law) 체계(유럽 대부분, 라틴아메리카, 일본 등), 종교 경전에 기반한 종교법(예: 이슬람 샤리아법), 그리고 전통 관습에 기반한 관습법이 있습니다. 보통법 체계는 판례와 `stare decisis` 원칙(선례 구속 원칙)에 크게 의존합니다. 반면 대륙법 체계에서는 포괄적인 법전을 바탕으로 판사가 사건에 법을 적용합니다.
 
-## Branches 의 법률
+## 법률의 분야
 
-법률 is typically divided into public 법률 와 private 법률. Public 법률 governs relationships between individuals 와 그 state, including constitutional 법률, administrative 법률, 와 criminal 법률. Private 법률 (civil 법률) governs relationships between individuals, including contract 법률, tort 법률, property 법률, 와 family 법률. Criminal 법률 deals 와 함께 offenses against society punishable by 그 state. Civil 법률 addresses disputes between parties where remedies typically involve compensation rather than punishment.
+법은 일반적으로 공법과 사법으로 나뉩니다. 공법은 개인과 국가 사이의 관계를 다루며, 헌법, 행정법, 형법 등이 여기에 포함됩니다. 사법(민사법)은 개인 사이의 관계를 규율하며, 계약법, 불법행위법, 재산법, 가족법 등이 대표적입니다. 형법은 국가가 처벌하는 사회적 범죄를 다루고, 민사법은 당사자 간 분쟁을 해결하며 보통 처벌보다 손해배상과 같은 구제수단에 초점을 둡니다.
 
-## Constitutional 법률
+## 헌법
 
-Constitutional 법률 concerns 그 interpretation 와 implementation 의 a country's constitution. A constitution is 그 supreme 법률 establishing 그 structure 의 government, distribution 의 powers, 와 fundamental rights. Judicial review allows courts to determine whether laws or government actions violate 그 constitution. 그 separation 의 powers divides government into legislative (makes laws), executive (enforces laws), 와 judicial (interprets laws) branches. Checks 와 balances prevent any one branch from becoming too powerful. Fundamental rights often include freedom 의 speech, religion, assembly, due process, 와 equal protection under 그 법률.
+헌법은 한 나라의 헌법을 해석하고 집행하는 문제를 다룹니다. 헌법은 국가의 최고법으로서 정부의 구조, 권한 배분, 기본권을 정합니다. 위헌심사는 법률이나 정부 행위가 헌법에 위반되는지를 법원이 판단할 수 있게 합니다. 권력분립 원칙에 따라 정부는 입법부(법률 제정), 행정부(법률 집행), 사법부(법률 해석)로 나뉩니다. 견제와 균형은 어느 한 기관도 과도한 권한을 갖지 못하도록 막습니다. 기본권에는 일반적으로 표현의 자유, 종교의 자유, 집회의 자유, 적법절차, 법 앞의 평등 등이 포함됩니다.
 
-## Contract 법률
+## 계약법
 
-A contract is a legally binding agreement between two or more parties. Essential elements 의 a valid contract include offer (a clear proposal), acceptance (agreement to 그 terms), consideration (something 의 value exchanged), capacity (법적 ability to contract), 와 legality (purpose must be 법적). Breach 의 contract occurs when a party fails to fulfill obligations. Remedies 위한 breach include damages (monetary compensation), specific 성능 (court orders fulfillment), or cancellation. Contracts can be written, oral, or implied by conduct, though certain types must be 에서 writing under 그 Statute 의 Frauds.
+계약은 둘 이상의 당사자 사이에 성립하는 법적 구속력이 있는 합의입니다. 유효한 계약의 핵심 요소로는 청약(명확한 제안), 승낙(조건에 대한 동의), 약인(서로 교환되는 가치 있는 것), 능력(계약을 체결할 법적 능력), 적법성(목적이 합법적이어야 함)이 있습니다. 계약 위반은 한 당사자가 의무를 이행하지 않을 때 발생합니다. 그에 대한 구제수단으로는 손해배상(금전 보상), 특정이행(법원이 이행을 명하는 것), 계약 해제·취소 등이 있습니다. 계약은 서면, 구두, 또는 당사자의 행위로 묵시적으로 성립할 수 있지만, 일부 유형의 계약은 `Statute of Frauds`에 따라 반드시 서면이어야 합니다.
 
-## Tort 법률
+## 불법행위법
 
-Tort 법률 addresses civil wrongs that cause harm or loss, resulting 에서 법적 liability. Negligence is 그 failure to exercise reasonable care, causing injury to another. To prove negligence, a plaintiff must show: duty 의 care existed, breach 의 that duty, causation, 와 damages. Intentional torts include assault, battery, false imprisonment, defamation (libel 와 slander), 와 trespass. Strict liability applies regardless 의 fault 에서 certain cases (defective products, dangerous activities). Damages 에서 tort cases compensate 위한 medical expenses, lost wages, pain 와 suffering, 와 sometimes punitive damages to punish egregious conduct.
+불법행위법은 손해나 손실을 초래하는 민사상 위법행위를 다루며, 그 결과 법적 책임이 발생합니다. 과실은 타인에게 피해를 주지 않도록 요구되는 합리적인 주의의무를 다하지 않은 상태를 말합니다. 과실을 입증하려면 원고는 주의의무의 존재, 그 의무의 위반, 인과관계, 손해를 보여야 합니다. 고의적 불법행위에는 폭행, 구타, 불법감금, 명예훼손(libel 및 slander), 무단침입 등이 포함됩니다. 엄격책임은 특정한 경우(결함 있는 제품, 위험한 활동 등) 과실 여부와 관계없이 적용됩니다. 불법행위 사건의 손해배상은 의료비, 임금 손실, 정신적·육체적 고통에 대한 보상을 포함하며, 때로는 악질적인 행위를 제재하기 위한 징벌적 손해배상도 인정됩니다.
 
-## Property 법률
+## 재산법
 
-Property 법률 governs ownership 와 use 의 real property (land 와 buildings) 와 personal property (movable items). Real property rights include possession, control, exclusion, enjoyment, 와 disposition. Types 의 ownership include fee simple (absolute ownership), life estate (ownership 위한 lifetime), 와 leasehold (temporary possession). Landlord-tenant 법률 regulates rental agreements. Intellectual property is a form 의 intangible property protecting creations 의 그 mind. Eminent domain allows governments to take private property 위한 public use 와 함께 just compensation. Zoning laws regulate land use 에서 specific areas.
+재산법은 부동산(토지와 건물)과 동산(이동 가능한 물건)의 소유와 이용을 규율합니다. 부동산에 대한 권리에는 점유, 지배, 배제, 사용·수익, 처분이 포함됩니다. 소유 형태로는 단순절대소유권(fee simple), 종신재산권(life estate), 임차권(leasehold) 등이 있습니다. 임대인-임차인 법은 임대차 계약을 규율합니다. 지식재산은 무형재산의 한 형태로서 인간의 정신적 창작물을 보호합니다. 공용수용권(eminent domain)은 정부가 정당한 보상을 전제로 공익을 위해 사유재산을 수용할 수 있게 합니다. 용도지역제(zoning laws)는 특정 지역의 토지 이용을 제한·조정합니다.
 
-## Criminal 법률 와 Procedure
+## 형법과 형사절차
 
-Criminal 법률 defines crimes 와 punishments. Crimes are classified as felonies (serious offenses punishable by imprisonment over one year) or misdemeanors (less serious offenses). Elements 의 a crime typically include actus reus (guilty act) 와 mens rea (guilty mind/intent). 그 presumption 의 innocence means defendants are innocent until proven guilty beyond a reasonable doubt. Constitutional protections 에서 criminal proceedings include protection against unreasonable searches 와 seizures, right to counsel, right to a speedy 와 public trial, protection against self-incrimination, 와 protection against double jeopardy. Sentencing may involve imprisonment, fines, probation, or capital punishment (에서 some jurisdictions).
+형법은 범죄와 그에 대한 처벌을 규정합니다. 범죄는 일반적으로 중범죄(felony)와 경범죄(misdemeanor)로 구분됩니다. 범죄의 구성요건에는 보통 `actus reus`(유죄 행위)와 `mens rea`(유죄의사 또는 범의)가 포함됩니다. 무죄추정 원칙에 따라 피고인은 합리적 의심의 여지 없이 유죄가 입증되기 전까지는 무죄로 간주됩니다. 형사절차에서의 헌법상 보호에는 부당한 수색·압수로부터의 보호, 변호인의 조력을 받을 권리, 신속하고 공개적인 재판을 받을 권리, 자기부죄거부권, 일사부재리의 보호 등이 있습니다. 형 선고에는 징역형, 벌금형, 보호관찰, 일부 관할에서는 사형도 포함될 수 있습니다.
 
-## Family 법률
+## 가족법
 
-Family 법률 deals 와 함께 domestic relations 와 family matters. Marriage is a 법적 union creating rights 와 obligations between spouses. Divorce (dissolution 의 marriage) involves division 의 assets, spousal 지원 (alimony), 와 child custody. Child custody determines where children live 와 who makes decisions about their welfare. Child 지원 is financial 지원 paid by non-custodial parents. Adoption creates a 법적 parent-child relationship. Domestic violence laws protect family members from abuse. Paternity establishes 법적 fatherhood. Prenuptial agreements specify asset division if marriage ends.
+가족법은 가정 내 관계와 가족 관련 문제를 다룹니다. 혼인은 배우자 사이에 권리와 의무를 발생시키는 법적 결합입니다. 이혼(혼인 해소)에서는 재산 분할, 배우자 부양(alimony), 자녀 양육권이 문제 됩니다. 자녀 양육권은 아이가 어디에서 생활할지, 복지에 관한 결정을 누가 내릴지를 정합니다. 자녀양육비는 비양육 부모가 부담하는 경제적 지원입니다. 입양은 법적인 부모-자녀 관계를 새롭게 형성합니다. 가정폭력 관련 법은 가족 구성원을 학대로부터 보호합니다. 친자관계 확인은 법적 부성을 확정합니다. 혼전계약(prenuptial agreement)은 혼인이 종료될 경우의 재산 분할 방식을 미리 정합니다.
 
-## Intellectual Property
+## 지식재산권
 
-Intellectual property (IP) protects creations 의 그 mind. Patents grant inventors exclusive rights to make, use, or sell inventions 위한 a limited period (typically 20 years). Copyright protects original works 의 authorship (books, music, art, software) 위한 그 author's life plus 70 years 에서 most countries. Trademarks protect brand identifiers (names, logos, slogans) used 에서 commerce. Trade secrets protect confidential 비즈니스 information providing competitive advantage. IP infringement occurs when someone uses protected material without permission. Fair use doctrines allow limited use 의 copyrighted material without permission 위한 purposes like criticism, education, or parody.
+지식재산권(IP)은 인간의 정신적 창작물을 보호합니다. 특허는 발명자에게 일정 기간(보통 20년) 동안 발명을 제조·사용·판매할 배타적 권리를 부여합니다. 저작권은 대부분의 국가에서 저작자의 생존 기간과 사후 70년 동안 원저작물(책, 음악, 미술, 소프트웨어 등)을 보호합니다. 상표는 상거래에서 사용되는 브랜드 식별자(이름, 로고, 슬로건 등)를 보호합니다. 영업비밀은 경쟁우위를 제공하는 비공개 사업 정보를 보호합니다. 지식재산 침해는 보호받는 자료를 허락 없이 사용할 때 발생합니다. 공정이용(fair use) 원칙은 비평, 교육, 패러디 같은 목적의 제한적인 이용을 허용하기도 합니다.
 
-## Employment 와 Labor 법률
+## 고용 및 노동법
 
-Employment 법률 governs relationships between employers 와 employees. At-will employment allows termination by either party at any time (common 에서 그 US). Employment contracts specify terms 의 employment. Minimum wage laws set 그 lowest 법적 hourly pay. Anti-discrimination laws prohibit workplace discrimination based on race, gender, age, religion, disability, or other protected characteristics. Workers' compensation provides benefits 위한 work-related injuries. Occupational safety regulations (like OSHA 에서 그 US) ensure 안전한 working conditions. Labor unions represent workers 에서 collective bargaining 와 함께 employers. Wrongful termination occurs when firing violates 법률 or public policy.
+고용법은 사용자와 근로자 사이의 관계를 규율합니다. 임의고용(at-will employment)은 어느 한쪽이 언제든 고용관계를 종료할 수 있는 제도이며, 미국에서 흔합니다. 고용계약은 근로 조건을 구체적으로 정합니다. 최저임금법은 시간당 지급할 수 있는 최저 수준을 규정합니다. 차별금지법은 인종, 성별, 연령, 종교, 장애 또는 기타 보호되는 특성을 이유로 한 직장 내 차별을 금지합니다. 산재보상제도는 업무상 재해에 대한 급여를 제공합니다. 산업안전 규정(미국의 OSHA 등)은 안전한 근로환경을 보장하는 데 목적이 있습니다. 노동조합은 사용자와의 단체교섭에서 근로자를 대표합니다. 부당해고는 해고가 법률이나 공공정책에 위반될 때 성립합니다.
 
-## International 법률
+## 국제법
 
-International 법률 governs relations between nations 와 international entities. Public international 법률 includes treaties, customs, 와 principles binding on states. 그 United Nations Charter is a foundational treaty establishing 그 UN system. International humanitarian 법률 (laws 의 war) regulates armed conflict 와 protects non-combatants. Human rights 법률 establishes universal rights inherent to all humans. International criminal 법률 prosecutes genocide, war crimes, crimes against humanity. Private international 법률 (conflict 의 laws) determines which jurisdiction's laws apply 에서 cross-border disputes. International trade 법률 regulates commerce between nations through organizations like 그 WTO.
+국제법은 국가와 국제기구 사이의 관계를 규율합니다. 공국제법에는 국가를 구속하는 조약, 국제관습, 일반 원칙이 포함됩니다. `United Nations Charter`는 UN 체계를 수립한 핵심 조약입니다. 국제인도법(전쟁법)은 무력충돌을 규율하고 비전투원을 보호합니다. 국제인권법은 모든 인간에게 본질적으로 귀속되는 보편적 권리를 정립합니다. 국제형사법은 집단학살, 전쟁범죄, 인도에 반한 죄를 처벌합니다. 사국제법(법률충돌)은 국경을 넘는 분쟁에 어떤 국가의 법을 적용할지 결정합니다. 국제무역법은 WTO 같은 기구를 통해 국가 간 상거래를 규율합니다.
 
-## 법적 Process 와 Courts
+## 법적 절차와 법원
 
-Civil procedure governs how civil lawsuits are conducted. A lawsuit begins when a plaintiff files a complaint. 그 defendant responds 와 함께 an answer. Discovery is 그 pre-trial exchange 의 information. Motions are requests 위한 court rulings. Trial involves presenting evidence 와 arguments to a judge or jury. Verdict is 그 decision; judgment is 그 court's final ruling. Appeals challenge lower court decisions to higher courts. Alternative dispute resolution includes mediation (neutral facilitator helps parties reach agreement) 와 arbitration (neutral third party makes binding decision). Class action lawsuits allow groups 와 함께 similar claims to sue collectively.
+민사소송절차는 민사소송이 어떻게 진행되는지를 정합니다. 소송은 원고가 소장을 제출하면서 시작되고, 피고는 답변서로 대응합니다. 증거개시(discovery)는 재판 전 단계에서 정보를 교환하는 절차입니다. 신청(motion)은 법원의 결정을 구하는 요청입니다. 재판에서는 판사나 배심원 앞에서 증거와 주장을 제시합니다. 평결(verdict)은 사실판단의 결론이고, 판결(judgment)은 법원의 최종 판단입니다. 항소는 하급심의 결정을 상급법원에서 다시 다투는 절차입니다. 대체적 분쟁해결(ADR)에는 당사자 간 합의를 돕는 조정(mediation)과 제3자가 구속력 있는 판단을 내리는 중재(arbitration)가 있습니다. 집단소송(class action)은 유사한 청구를 가진 다수가 함께 소송을 제기할 수 있게 합니다.
 
-## 법적 Ethics 와 Professional Responsibility
+## 법조윤리와 전문가 책임
 
-법적 ethics govern lawyer conduct. Attorneys must maintain client confidentiality (attorney-client privilege). Conflicts 의 interest must be avoided or disclosed. Lawyers owe duties 의 competence, diligence, 와 loyalty to clients. Pro bono service involves providing free 법적 assistance to those unable to pay. Bar associations regulate lawyer licensing 와 discipline. Attorney misconduct can result 에서 sanctions, suspension, or disbarment. 그 attorney-client privilege protects communications between lawyers 와 clients from disclosure. Work product doctrine protects materials prepared 에서 anticipation 의 litigation.
+법조윤리는 변호사의 직무수행 기준을 정합니다. 변호사는 의뢰인 비밀을 보호해야 하며(변호사-의뢰인 비밀유지 특권), 이해충돌은 피하거나 공개해야 합니다. 또한 의뢰인에 대해 능력, 성실성, 충실의무를 부담합니다. 프로보노(pro bono)는 비용을 감당하기 어려운 사람들에게 무료 법률지원을 제공하는 활동입니다. 변호사협회는 변호사 자격과 징계를 관리합니다. 변호사 비위는 제재, 자격정지, 제명으로 이어질 수 있습니다. 변호사-의뢰인 비밀유지 특권은 양자 사이의 의사소통을 공개로부터 보호합니다. Work product doctrine은 소송을 예상하고 준비한 자료를 보호합니다.

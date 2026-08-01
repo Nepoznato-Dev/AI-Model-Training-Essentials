@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Tool Usage
+# استخدام الأدوات
 
-## Git — Version Control
+## Git — التحكم في الإصدارات
 
-Git is a distributed version control system. Every developer has a full copy من ال repository التاريخ on their local machine.
+Git هو نظام موزّع للتحكم في الإصدارات. يمتلك كل مطوّر نسخة كاملة من تاريخ المستودع على جهازه المحلي.
 
-### Core workflow
+### سير العمل الأساسي
 
 ```bash
 # Start a new repository
@@ -35,7 +35,7 @@ git commit -m "Short, imperative description of change"
 git push origin main
 ```
 
-### Branching
+### التفرّع
 
 ```bash
 git branch feature/new-thing        # create a branch
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Merging و rebasing
+### الدمج وإعادة التأسيس
 
 ```bash
 # Merge feature branch into main
@@ -57,16 +57,16 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull request (PR) workflow
+### سير عمل طلب السحب (PR)
 
-1. Create a feature branch from `main`.
-2. Make commits on ال feature branch.
-3. Push ال branch: `git push origin feature/new-thing`.
-4. Open a pull request on GitHub / GitLab.
-5. Address code review ملاحظات مع additional commits.
-6. Merge ال PR once approved.
+1. أنشئ فرع ميزة انطلاقًا من `main`.
+2. سجّل التغييرات على فرع الميزة.
+3. ادفع الفرع: `git push origin feature/new-thing`.
+4. افتح طلب سحب على GitHub أو GitLab.
+5. عالج ملاحظات مراجعة الشيفرة عبر تسجيل تغييرات إضافية.
+6. ادمج طلب السحب بعد الموافقة عليه.
 
-### Undoing changes
+### التراجع عن التغييرات
 
 ```bash
 git restore file.py            # discard unstaged changes
@@ -77,7 +77,7 @@ git reset --soft HEAD~1        # undo last commit, keep changes staged
 
 ---
 
-## Package Managers
+## أدوات إدارة الحزم
 
 ### pip (Python)
 
@@ -90,7 +90,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Always work inside a virtual environment to keep project dependencies isolated.
+اعمل دائمًا داخل بيئة افتراضية للحفاظ على عزل تبعيات المشروع.
 
 ### npm (Node.js / JavaScript)
 
@@ -105,7 +105,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` records exact versions; commit it to source control.
+`package-lock.json` يسجّل الإصدارات الدقيقة؛ لذا أضِفه إلى نظام التحكم في الإصدارات.
 
 ### Cargo (Rust)
 
@@ -121,7 +121,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-### Go modules (Go)
+### وحدات Go (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -145,9 +145,9 @@ apt show package-name           # details about a package
 
 ---
 
-## Command-Line الأساسيات
+## أساسيات سطر الأوامر
 
-### Navigation
+### التنقّل
 
 ```bash
 pwd                             # print working directory
@@ -163,7 +163,7 @@ cp src.txt dst.txt
 mv old_name.txt new_name.txt
 ```
 
-### Text processing
+### معالجة النصوص
 
 ```bash
 cat file.txt                    # print file contents
@@ -176,7 +176,7 @@ grep -r "pattern" ./src/        # recursive search
 grep -i "pattern" file.txt      # case-insensitive
 ```
 
-### Pipes و redirection
+### الأنابيب وإعادة التوجيه
 
 ```bash
 command1 | command2             # pipe output of command1 into command2
@@ -187,7 +187,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### الشبكة و file transfer
+### الشبكة ونقل الملفات
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -197,7 +197,7 @@ curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" https://api.
 wget https://example.com/file.zip            # download with wget
 ```
 
-### Permissions
+### الأذونات
 
 ```bash
 chmod +x script.sh              # make executable
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### Process الإدارة
+### إدارة العمليات
 
 ```bash
 ps aux                          # list running processes
@@ -216,54 +216,54 @@ top / htop                      # interactive process monitor
 
 ---
 
-## Editors و IDEs
+## المحررات وبيئات التطوير المتكاملة
 
 ### VS Code
 
-VS Code is a lightweight, cross-platform code editor مع a rich extension ecosystem.
+VS Code هو محرر شيفرة خفيف ومتعدد المنصات، ويتميّز بمنظومة غنية من الإضافات.
 
-- Open a folder: `File > Open Folder` or `code .` في ال terminal.
-- Command palette: `Ctrl+Shift+P` (macOS: `Cmd+Shift+P`).
-- Integrated terminal: `Ctrl+`` (backtick)`.
-- Multi-cursor: `Alt+Click` to place additional cursors.
-- Go to definition: `F12`.
-- Rename symbol: `F2`.
-- Format document: `Shift+Alt+F`.
-- Extensions: install اللغة الدعم (Python, Rust, Go, etc.), linters, و formatters from ال Extensions panel (`Ctrl+Shift+X`).
-- `settings.json` (user or workspace) controls editor behaviour.
-- `launch.json` configures ال debugger.
+- افتح مجلدًا: `File > Open Folder` أو `code .` في الطرفية.
+- لوحة الأوامر: `Ctrl+Shift+P` ‏(على macOS: `Cmd+Shift+P`).
+- الطرفية المدمجة: `Ctrl+`` ‏(علامة الاقتباس الخلفية).
+- المؤشرات المتعددة: `Alt+Click` لإضافة مؤشرات إضافية.
+- الانتقال إلى التعريف: `F12`.
+- إعادة تسمية الرمز: `F2`.
+- تنسيق المستند: `Shift+Alt+F`.
+- الإضافات: ثبّت دعم اللغات (Python وRust وGo وغيرها)، وأدوات التدقيق، وأدوات التنسيق من لوحة الامتدادات (`Ctrl+Shift+X`).
+- يتحكم `settings.json` (على مستوى المستخدم أو مساحة العمل) في سلوك المحرر.
+- يضبط `launch.json` إعدادات المنقّح.
 
-### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
+### بيئات التطوير المتكاملة من JetBrains (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart code completion و refactoring are core features.
-- Run/debug configurations let you launch و debug programs مع one click.
-- Built-في Git الدعم في ال VCS menu.
-- `Shift+Shift` opens ال Search Everywhere dialog.
-- `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) reformats code.
-- Plugins extend اللغة الدعم و add tools.
+- يُعدّ الإكمال الذكي للشيفرة وإعادة الهيكلة من الميزات الأساسية.
+- تتيح لك إعدادات التشغيل/التنقيح تشغيل البرامج وتنقيحها بنقرة واحدة.
+- يتوفر دعم Git مدمجًا ضمن قائمة VCS.
+- يفتح `Shift+Shift` مربع حوار Search Everywhere.
+- يعيد `Ctrl+Alt+L` ‏(على macOS: `Cmd+Option+L`) تنسيق الشيفرة.
+- توسّع الإضافات دعم اللغات وتضيف أدوات جديدة.
 
-### Terminal tips
+### نصائح للطرفية
 
-- Use tab completion to finish file names و الأوامر quickly.
-- Press `Ctrl+R` to search command التاريخ interactively.
-- `alias ll='ls -la'` creates a shortcut — add it to `~/.bashrc` or `~/.zshrc`.
-- Use `tmux` or `screen` to keep sessions alive when disconnected from a remote server.
-- `man <command>` shows ال manual page لأجل any built-في command.
+- استخدم الإكمال بعلامة التبويب لإتمام أسماء الملفات والأوامر بسرعة.
+- اضغط `Ctrl+R` للبحث تفاعليًا في سجل الأوامر.
+- ينشئ `alias ll='ls -la'` اختصارًا — أضِفه إلى `~/.bashrc` أو `~/.zshrc`.
+- استخدم `tmux` أو `screen` للإبقاء على الجلسات قيد التشغيل عند انقطاع الاتصال بخادم بعيد.
+- يعرض `man <command>` صفحة الدليل لأي أمر مضمّن.
 
 ---
 
 ## Docker
 
-Docker packages applications و their dependencies into portable containers.
+يجمع Docker التطبيقات وتبعياتها داخل حاويات محمولة.
 
-### Core concepts
+### المفاهيم الأساسية
 
-- **Image**: a read-only template built from a `Dockerfile`.
-- **Container**: a running instance من an image.
-- **Registry**: a storage و distribution service لأجل images (Docker Hub, GHCR).
-- **Volume**: persistent storage that outlives a container.
+- **الصورة**: قالب للقراءة فقط يُبنى من ملف `Dockerfile`.
+- **الحاوية**: مثيل قيد التشغيل من صورة.
+- **السجل**: خدمة لتخزين الصور وتوزيعها (Docker Hub وGHCR).
+- **وحدة التخزين**: مساحة تخزين دائمة تستمر بعد انتهاء الحاوية.
 
-### Common الأوامر
+### الأوامر الشائعة
 
 ```bash
 # Images
@@ -286,7 +286,7 @@ docker build -t myapp:1.0 .
 docker push myrepo/myapp:1.0
 ```
 
-### Dockerfile example
+### مثال على Dockerfile
 
 ```dockerfile
 FROM python:3.12-slim
@@ -299,7 +299,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose manages multi-container applications مع a `docker-compose.yml` file.
+يدير Docker Compose التطبيقات متعددة الحاويات باستخدام ملف `docker-compose.yml`.
 
 ```yaml
 version: "3.9"

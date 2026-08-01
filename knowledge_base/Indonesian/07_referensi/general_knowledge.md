@@ -1,65 +1,65 @@
-# General Knowledge
+# Pengetahuan Umum
 
-## The Solar System
+## Tata Surya
 
-The solar system consists of the Sun and eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Earth is the third planet from the Sun, located approximately 150 million kilometers away. The Sun is a star at the center of the solar system that provides light and energy to all planets through nuclear fusion. Jupiter is the largest planet, with a mass greater than all other planets combined. Saturn is known for its prominent ring system made of ice and rock. Mars is called the Red Planet because of iron oxide on its surface. Neptune is the farthest planet from the Sun.
+Tata surya terdiri dari Matahari dan delapan planet: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan Neptunus. Bumi adalah planet ketiga dari Matahari, berjarak sekitar 150 juta kilometer. Matahari adalah bintang di pusat tata surya yang menyediakan cahaya dan energi bagi seluruh planet melalui fusi nuklir. Jupiter adalah planet terbesar, dengan massa lebih besar dari gabungan seluruh planet lainnya. Saturnus dikenal karena sistem cincinnya yang menonjol, terbuat dari es dan batu. Mars disebut Planet Merah karena adanya oksida besi di permukaannya. Neptunus adalah planet terjauh dari Matahari.
 
-## Earth
+## Bumi
 
-Earth is the fifth-largest planet in the solar system and the only known planet to harbor life. Its surface is approximately 71% water and 29% land. The atmosphere is composed of approximately 78% nitrogen, 21% oxygen, and 1% other gases including carbon dioxide and argon. Earth has one natural satellite called the Moon. The Moon orbits Earth roughly every 27.3 days and is approximately 384,400 kilometers away. Earth has a diameter of approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+Bumi adalah planet terbesar kelima di tata surya dan satu-satunya planet yang diketahui menopang kehidupan. Permukaannya sekitar 71% air dan 29% daratan. Atmosfer terdiri dari sekitar 78% nitrogen, 21% oksigen, dan 1% gas lain termasuk karbon dioksida dan argon. Bumi memiliki satu satelit alami bernama Bulan. Bulan mengorbit Bumi kurang lebih setiap 27,3 hari dan berjarak sekitar 384.400 kilometer. Bumi memiliki diameter sekitar 12.742 kilometer. Usia Bumi diperkirakan sekitar 4,5 miliar tahun.
 
-## Weather and Climate
+## Cuaca dan Iklim
 
-Weather refers to short-term atmospheric conditions in a specific location, including temperature, humidity, precipitation, and wind. Climate refers to long-term weather patterns in a region over many years. The greenhouse effect occurs when gases in Earth's atmosphere trap heat from the Sun, warming the planet. Carbon dioxide, water vapor, and methane are the main greenhouse gases. Climate change refers to long-term shifts in global temperatures and weather patterns, largely driven by human activity since the Industrial Revolution.
+Cuaca merujuk pada kondisi atmosfer jangka pendek di suatu lokasi tertentu, meliputi suhu, kelembapan, curah hujan, dan angin. Iklim merujuk pada pola cuaca jangka panjang di suatu wilayah selama bertahun-tahun. Efek rumah kaca terjadi ketika gas-gas di atmosfer Bumi menahan panas dari Matahari sehingga menghangatkan planet. Karbon dioksida, uap air, dan metana adalah gas rumah kaca utama. Perubahan iklim merujuk pada pergeseran jangka panjang pada suhu global dan pola cuaca, yang sebagian besar dipicu oleh aktivitas manusia sejak Revolusi Industri.
 
-## Oceans
+## Samudra
 
-Earth has five oceans: the Pacific, Atlantic, Indian, Southern, and Arctic. The Pacific Ocean is the largest, covering more than 165 million square kilometers, and the deepest, with the Mariana Trench reaching approximately 11 kilometers deep. The oceans cover about 361 million square kilometers in total. The average depth of the ocean is approximately 3,688 meters. The oceans regulate Earth's temperature and are home to the majority of life on the planet.
+Bumi memiliki lima samudra: Pasifik, Atlantik, Hindia, Selatan, dan Arktik. Samudra Pasifik adalah yang terbesar, mencakup lebih dari 165 juta kilometer persegi, dan yang terdalam, dengan Palung Mariana mencapai kedalaman sekitar 11 kilometer. Total luas samudra sekitar 361 juta kilometer persegi. Kedalaman rata-rata samudra sekitar 3.688 meter. Samudra mengatur suhu Bumi dan menjadi rumah bagi sebagian besar kehidupan di planet ini.
 
-## Continents
+## Benua
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, and South America. Asia is the largest continent by area and population. Africa has the most countries of any continent. Antarctica is the coldest, driest, and windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe and Asia are sometimes considered a single landmass called Eurasia.
+Bumi memiliki tujuh benua: Afrika, Antarktika, Asia, Australia (Oseania), Eropa, Amerika Utara, dan Amerika Selatan. Asia adalah benua terbesar dari segi luas maupun populasi. Afrika memiliki jumlah negara terbanyak dari semua benua. Antarktika adalah benua terdingin, terkering, dan berangin paling kencang, tertutup lapisan es dengan rata-rata ketebalan 2,1 kilometer. Eropa dan Asia terkadang dianggap sebagai satu daratan yang disebut Eurasia.
 
-## Time and Calendars
+## Waktu dan Kalender
 
-A year is the time it takes Earth to orbit the Sun, approximately 365.25 days. A leap year has 366 days and occurs every four years to account for the extra quarter-day. A day is one full rotation of Earth on its axis, approximately 24 hours. The Gregorian calendar is the most widely used calendar in the world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+Satu tahun adalah waktu yang dibutuhkan Bumi untuk mengorbit Matahari, sekitar 365,25 hari. Tahun kabisat memiliki 366 hari dan terjadi setiap empat tahun untuk mengompensasi seperempat hari tambahan. Satu hari adalah satu putaran penuh Bumi pada porosnya, sekitar 24 jam. Kalender Gregorian adalah kalender yang paling banyak digunakan di dunia saat ini. Satu minggu memiliki tujuh hari. Satu jam memiliki 60 menit. Satu menit memiliki 60 detik.
 
-## Light and Speed
+## Cahaya dan Kecepatan
 
-The speed of light in a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from the Sun takes about 8 minutes to reach Earth. A light-year is the distance light travels in one year, approximately 9.46 trillion kilometers. Nothing with mass can travel as fast as the speed of light according to Einstein's theory of special relativity.
+Kecepatan cahaya di ruang hampa sekitar 299.792 kilometer per detik, atau kira-kira 186.000 mil per detik. Cahaya dari Matahari membutuhkan sekitar 8 menit untuk mencapai Bumi. Satu tahun cahaya adalah jarak yang ditempuh cahaya dalam satu tahun, sekitar 9,46 triliun kilometer. Menurut teori relativitas khusus Einstein, tidak ada benda bermassa yang dapat bergerak secepat cahaya.
 
-## Human Body
+## Tubuh Manusia
 
-The human body contains approximately 37 trillion cells. The adult human skeleton has 206 bones. The heart pumps blood through approximately 100,000 kilometers of blood vessels. The brain is the most complex organ and contains approximately 86 billion neurons. The human body is approximately 60% water. The longest bone in the body is the femur (thigh bone). The smallest bone is the stapes in the ear.
+Tubuh manusia mengandung sekitar 37 triliun sel. Kerangka manusia dewasa memiliki 206 tulang. Jantung memompa darah melalui sekitar 100.000 kilometer pembuluh darah. Otak adalah organ paling kompleks dan mengandung sekitar 86 miliar neuron. Tubuh manusia sekitar 60% terdiri dari air. Tulang terpanjang di tubuh adalah tulang paha (femur). Tulang terkecil adalah stapes di telinga.
 
-## Water
+## Air
 
-Water is a chemical compound made of two hydrogen atoms and one oxygen atom (H2O). It exists in three states: liquid (water), solid (ice), and gas (steam or water vapor). Water freezes at 0 degrees Celsius and boils at 100 degrees Celsius at sea level. Water is essential for all known forms of life. About 97.5% of Earth's water is saltwater; only 2.5% is freshwater.
+Air adalah senyawa kimia yang terdiri dari dua atom hidrogen dan satu atom oksigen (H2O). Air ada dalam tiga wujud: cair (air), padat (es), dan gas (uap air). Air membeku pada 0 derajat Celsius dan mendidih pada 100 derajat Celsius di permukaan laut. Air sangat penting bagi semua bentuk kehidupan yang diketahui. Sekitar 97,5% air di Bumi adalah air asin; hanya 2,5% yang merupakan air tawar.
 
-## Animals
+## Hewan
 
-Mammals are warm-blooded animals that give birth to live young and nurse them with milk. Birds are warm-blooded animals covered in feathers that lay eggs. Reptiles are cold-blooded animals with scales. Amphibians can live both on land and in water. Fish breathe through gills and live in water. Insects are the most numerous class of animals on Earth. The blue whale is the largest animal ever known to have lived, reaching up to 30 meters in length.
+Mamalia adalah hewan berdarah panas yang melahirkan anak hidup dan menyusuinya. Burung adalah hewan berdarah panas yang ditutupi bulu dan bertelur. Reptil adalah hewan berdarah dingin bersisik. Amfibi dapat hidup di darat maupun di air. Ikan bernapas melalui insang dan hidup di air. Serangga adalah kelas hewan dengan jumlah terbanyak di Bumi. Paus biru adalah hewan terbesar yang pernah diketahui hidup, dapat mencapai panjang hingga 30 meter.
 
-## Geography and Population
+## Geografi dan Populasi
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India and China are the two most populous countries. The largest country by area is Russia, followed by Canada and China. The Nile and the Amazon are among the world's longest river systems. Mount Everest, in the Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+Total luas permukaan Bumi sekitar 510 juta kilometer persegi. Sekitar 8 miliar orang tinggal di Bumi. India dan Tiongkok adalah dua negara dengan populasi terbanyak. Negara terluas adalah Rusia, diikuti oleh Kanada dan Tiongkok. Sungai Nil dan Amazon termasuk sistem sungai terpanjang di dunia. Gunung Everest, di Pegunungan Himalaya, adalah gunung tertinggi Bumi di atas permukaan laut dengan ketinggian 8.848,86 meter.
 
-## Energy and Resources
+## Energi dan Sumber Daya
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, and solar. Fossil fuels formed over millions of years from ancient organic matter. Renewable energy sources such as wind and solar are replenished naturally and are central to many decarbonisation strategies. Electrical energy is measured in joules; in households and industry, usage is commonly measured in kilowatt-hours (kWh).
+Sumber energi global utama meliputi minyak bumi, gas alam, batu bara, tenaga nuklir, tenaga air, angin, dan surya. Bahan bakar fosil terbentuk selama jutaan tahun dari materi organik purba. Sumber energi terbarukan seperti angin dan surya dapat diperbarui secara alami dan menjadi inti dari banyak strategi dekarbonisasi. Energi listrik diukur dalam joule; dalam rumah tangga dan industri, penggunaannya biasanya diukur dalam kilowatt-jam (kWh).
 
-## Economics Basics
+## Dasar-dasar Ekonomi
 
-Economics studies how people and societies allocate limited resources. Supply and demand influence market prices. Inflation is a general rise in prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates the total value of goods and services produced in a country. Interest rates influence borrowing, saving, and investment behavior.
+Ekonomi mempelajari bagaimana manusia dan masyarakat mengalokasikan sumber daya yang terbatas. Penawaran dan permintaan memengaruhi harga pasar. Inflasi adalah kenaikan harga secara umum seiring waktu, yang mengurangi daya beli. Produk Domestik Bruto (PDB) memperkirakan total nilai barang dan jasa yang dihasilkan suatu negara. Suku bunga memengaruhi perilaku pinjaman, tabungan, dan investasi.
 
-## Government and Civics
+## Pemerintahan dan Kewarganegaraan
 
-Many modern states use one of three broad systems: democracies, authoritarian systems, or mixed forms. In constitutional democracies, power is typically distributed across branches such as legislative, executive, and judicial institutions. Laws define rights and responsibilities, while courts interpret and apply those laws. Local government often manages services such as schools, roads, and sanitation.
+Banyak negara modern menggunakan salah satu dari tiga sistem luas: demokrasi, sistem otoriter, atau bentuk campuran. Dalam demokrasi konstitusional, kekuasaan biasanya didistribusikan ke berbagai cabang seperti lembaga legislatif, eksekutif, dan yudikatif. Hukum menetapkan hak dan tanggung jawab, sementara pengadilan menafsirkan dan menerapkan hukum tersebut. Pemerintah daerah sering mengelola layanan seperti sekolah, jalan, dan sanitasi.
 
-## Health and Public Safety
+## Kesehatan dan Keselamatan Publik
 
-Vaccines train the immune system to recognize and fight specific pathogens. Hand hygiene and clean water are among the most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as the common cold. Sleep, nutrition, physical activity, and stress management are foundational contributors to long-term health outcomes.
+Vaksin melatih sistem kekebalan tubuh untuk mengenali dan melawan patogen tertentu. Kebersihan tangan dan air bersih termasuk intervensi kesehatan masyarakat yang paling efektif. Antibiotik mengobati infeksi bakteri tetapi tidak menyembuhkan penyakit virus seperti flu biasa. Tidur, nutrisi, aktivitas fisik, dan manajemen stres adalah faktor dasar yang mendukung kesehatan jangka panjang.
 
-## Communication and Media Literacy
+## Komunikasi dan Literasi Media
 
-Reliable information is usually supported by evidence, transparent sourcing, and independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand data, while secondary sources interpret primary material. In the digital era, checking publication date, author credibility, and source quality is important for avoiding misinformation.
+Informasi yang dapat diandalkan biasanya didukung oleh bukti, sumber yang transparan, dan verifikasi independen. Korelasi tidak selalu berarti kausalitas. Sumber primer menyediakan data langsung, sedangkan sumber sekunder menafsirkan materi primer tersebut. Di era digital, memeriksa tanggal publikasi, kredibilitas penulis, dan kualitas sumber sangat penting untuk menghindari misinformasi.

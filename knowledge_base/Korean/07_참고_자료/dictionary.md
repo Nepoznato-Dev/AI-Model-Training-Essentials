@@ -5,871 +5,870 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 영어 사전 — Common Word Definitions
+# 영어 사전 — 자주 쓰는 단어 뜻풀이
 
-A 참조 list 의 frequently used 영어 words 와 their meanings,
-covering everyday vocabulary, academic terms, 와 words commonly encountered
-에서 questions 와 discussions.
+자주 쓰이는 영어 단어와 그 의미를 정리한 참고 목록입니다.
+일상 어휘, 학술 용어, 그리고 질문과 토론에서 흔히 마주치는 단어를 다룹니다.
 
 ---
 
 ## A
 
-**abandon** — to leave behind permanently; to give up on a goal or place.
-**ability** — 그 power or skill to do something.
-**abstract** — existing as a concept rather than a concrete thing; a summary 의 a document.
-**accurate** — correct 와 precise; free from errors.
-**achieve** — to successfully reach a goal through effort.
-**acknowledge** — to accept or admit 그 truth 의 something; to show recognition.
-**acquire** — to obtain or gain something, usually through effort or purchase.
-**adapt** — to adjust to new conditions or requirements.
-**adequate** — satisfactory; just enough 위한 a purpose.
-**adjacent** — next to or adjoining something else.
-**adjust** — to make small changes to improve fit or function.
-**advance** — to move forward; progress; also, ahead 의 그 current time.
-**advantage** — a condition that gives a favourable position over others.
-**adverse** — unfavourable; harmful.
-**affect** — to have an impact on something (verb); emotion (noun, formal).
-**aggregate** — a whole formed by combining several elements.
-**algorithm** — a set 의 rules or steps 위한 solving a problem or task.
-**allocate** — to assign resources 위한 a particular purpose.
-**alter** — to change something, usually partially.
-**ambiguous** — unclear; can be interpreted 에서 more than one way.
-**analyse** — to examine 에서 detail to understand or explain.
-**annotate** — to add explanatory notes to a text or diagram.
-**anticipate** — to expect or prepare 위한 something before it happens.
-**apparent** — clearly visible or understood; seeming to be true.
-**approach** — a way 의 dealing 와 함께 something; to come near.
-**approximate** — nearly correct; not exact.
-**assess** — to evaluate or judge 그 quality, value, or 자연 의 something.
-**assign** — to give a task or role to someone; to allocate.
-**assume** — to accept something as true without proof.
-**attribute** — a quality or feature; to credit something to a cause (verb).
-**automate** — to make a process operate automatically without human intervention.
+**abandon** — 영원히 버리다; 목표나 장소를 포기하다.
+**ability** — 어떤 일을 할 수 있는 능력이나 기술.
+**abstract** — 구체적 실체가 아니라 개념으로 존재하는 것; 문서의 요약.
+**accurate** — 정확하고 정밀한; 오류가 없는.
+**achieve** — 노력으로 목표를 이루다.
+**acknowledge** — 어떤 사실을 인정하다; 존재나 공로를 알아주다.
+**acquire** — 보통 노력이나 구매를 통해 얻다.
+**adapt** — 새로운 조건이나 요구에 맞게 조정하다.
+**adequate** — 충분한; 목적에 맞을 만큼 만족스러운.
+**adjacent** — 바로 옆에 있는; 인접한.
+**adjust** — 맞춤이나 기능을 개선하기 위해 조금 바꾸다.
+**advance** — 앞으로 나아가다; 진전; 현재보다 앞선 시점의.
+**advantage** — 다른 사람보다 유리한 위치를 주는 조건; 이점.
+**adverse** — 불리한; 해로운.
+**affect** — 어떤 것에 영향을 미치다(동사); 감정(명사, 격식체).
+**aggregate** — 여러 요소를 합쳐 이루어진 전체; 집합체.
+**algorithm** — 문제나 작업을 해결하기 위한 규칙이나 단계의 집합.
+**allocate** — 특정 목적을 위해 자원을 배정하다.
+**alter** — 보통 일부를 바꾸다; 수정하다.
+**ambiguous** — 모호한; 둘 이상으로 해석될 수 있는.
+**analyse** — 자세히 살펴 이해하거나 설명하다.
+**annotate** — 글이나 도표에 설명 주석을 달다.
+**anticipate** — 어떤 일이 일어나기 전에 예상하거나 대비하다.
+**apparent** — 분명히 보이거나 이해되는; 겉보기에는 그런.
+**approach** — 어떤 일을 다루는 방식; 가까이 다가가다.
+**approximate** — 대략적인; 거의 맞지만 정확하지는 않은.
+**assess** — 품질, 가치, 상태 등을 평가하다.
+**assign** — 임무나 역할을 맡기다; 배정하다.
+**assume** — 증거 없이 사실이라고 받아들이다.
+**attribute** — 속성, 특성; 어떤 원인을 돌리다(동사).
+**automate** — 사람의 개입 없이 자동으로 작동하게 하다.
 
 ## B
 
-**benefit** — an advantage or positive outcome.
-**bias** — an unfair preference 위한 or against something; systematic error.
-**brief** — short 에서 time or length; a summary or instructions.
+**benefit** — 이점; 긍정적인 결과.
+**bias** — 어떤 것에 대한 불공정한 편향; 체계적인 오차.
+**brief** — 짧은; 요약문이나 지침.
 
 ## C
 
-**calculate** — to determine a value using mathematics.
-**capable** — having 그 ability or qualities needed 위한 something.
-**capacity** — 그 maximum amount something can hold or do.
-**categorise** — to place into groups based on shared characteristics.
-**clarify** — to make something easier to understand.
-**classify** — to arrange into categories or groups.
-**coherent** — logical 와 consistent; easy to understand.
-**collaborate** — to work together 와 함께 others towards a common goal.
-**compile** — to gather 와 organise information; to convert source code into executable code.
-**complex** — consisting 의 many interconnected parts; not simple.
-**component** — a part or element 의 a larger whole.
-**comprehend** — to understand fully.
-**compute** — to calculate or process 데이터.
-**concept** — an abstract idea or general notion.
-**conclude** — to reach a decision or finish something.
-**condition** — a requirement; a state 의 being; circumstances.
-**configure** — to arrange or set up a system 에서 a particular way.
-**confirm** — to establish 그 truth or accuracy 의 something.
-**conflict** — a serious disagreement; a clash between opposing forces.
-**consistent** — always behaving 에서 그 same way; not contradictory.
-**context** — 그 circumstances surrounding something; background information.
-**contrast** — to compare 에서 order to show differences.
-**convert** — to change from one form, unit, or use to another.
-**coordinate** — to organise different elements to work together.
-**criteria** — standards by which something is judged (plural 의 criterion).
+**calculate** — 수학을 이용해 값을 구하다.
+**capable** — 어떤 일을 할 능력이나 자질이 있는.
+**capacity** — 담을 수 있거나 해낼 수 있는 최대량; 용량.
+**categorise** — 공통된 특성에 따라 분류하다.
+**clarify** — 더 이해하기 쉽게 만들다.
+**classify** — 범주나 집단으로 나누다.
+**coherent** — 논리적이고 일관된; 이해하기 쉬운.
+**collaborate** — 공동의 목표를 위해 다른 사람과 함께 일하다.
+**compile** — 정보를 모아 정리하다; 소스 코드를 실행 파일로 변환하다.
+**complex** — 서로 연결된 많은 부분으로 이루어진; 복잡한.
+**component** — 더 큰 전체를 이루는 부분이나 요소.
+**comprehend** — 완전히 이해하다.
+**compute** — 계산하거나 데이터를 처리하다.
+**concept** — 추상적인 생각이나 일반적인 개념.
+**conclude** — 결론에 이르다; 끝내다.
+**condition** — 조건; 상태; 상황.
+**configure** — 시스템을 특정 방식으로 설정하다.
+**confirm** — 사실이나 정확성을 확인하다.
+**conflict** — 심각한 불일치; 충돌.
+**consistent** — 항상 같은 방식인; 모순되지 않는.
+**context** — 어떤 일을 둘러싼 상황; 배경 정보.
+**contrast** — 차이를 드러내기 위해 비교하다.
+**convert** — 한 형태, 단위, 용도에서 다른 것으로 바꾸다.
+**coordinate** — 여러 요소가 함께 작동하도록 조정하다.
+**criteria** — 판단의 기준들(`criterion`의 복수형).
 
 ## D
 
-**데이터** — facts 와 통계 collected 위한 analysis.
-**debug** — to find 와 fix errors 에서 computer code.
-**define** — to give 그 meaning 의 a word or describe 그 limits 의 something.
-**demonstrate** — to show how something works or is done.
-**deploy** — to put into use; to install 와 run software 에서 a live environment.
-**derive** — to obtain something from a source; to reach a conclusion by reasoning.
-**determine** — to find out or establish something conclusively.
-**develop** — to build, grow, or make something more elaborate over time.
-**differ** — to be unlike; to disagree.
-**distinct** — clearly different 와 separate.
-**distribute** — to spread or share across multiple locations or people.
-**domain** — a field 의 knowledge or activity; a 웹 address.
-**duplicate** — an exact copy; to copy something.
+**데이터** — 분석을 위해 수집된 사실과 통계.
+**debug** — 컴퓨터 코드의 오류를 찾아 고치다.
+**define** — 단어의 뜻을 설명하다; 어떤 것의 범위를 규정하다.
+**demonstrate** — 어떻게 작동하거나 이루어지는지 보여 주다.
+**deploy** — 실제 사용 환경에 배치하다; 소프트웨어를 설치하고 실행하다.
+**derive** — 어떤 근원에서 얻다; 추론을 통해 결론에 이르다.
+**determine** — 알아내다; 확정하다.
+**develop** — 구축하다; 성장시키다; 시간이 지나며 더 정교하게 만들다.
+**differ** — 서로 다르다; 의견이 다르다.
+**distinct** — 분명히 다른; 구별되는.
+**distribute** — 여러 장소나 사람에게 나누어 퍼뜨리다.
+**domain** — 지식이나 활동의 분야; 웹 주소의 도메인.
+**duplicate** — 똑같은 사본; 복제하다.
 
 ## E
 
-**efficient** — achieving results 와 함께 minimum waste 의 time or resources.
-**element** — a basic component; one 의 그 chemical substances 에서 그 periodic table.
-**embed** — to fix firmly within; to incorporate into a larger structure.
-**enable** — to make possible; to activate a feature.
-**enhance** — to improve 그 quality or value 의 something.
-**entity** — a thing 와 함께 distinct existence; an object 에서 a system.
-**enumerate** — to list items one by one; to count.
-**environment** — surroundings; 에서 컴퓨팅, 그 system 와 configuration 에서 which software runs.
-**error** — a mistake; a deviation from correct behaviour.
-**estimate** — an approximate calculation; to judge roughly.
-**evaluate** — to form an opinion after careful consideration.
-**execute** — to carry out a plan or instruction; to run a computer program.
-**explicit** — clearly stated 와 leaving nothing implied.
-**extend** — to make longer or larger; to add functionality.
-**extract** — to take out or obtain from a source.
+**efficient** — 시간이나 자원의 낭비를 최소화하면서 성과를 내는.
+**element** — 기본 구성 요소; 주기율표의 원소.
+**embed** — 단단히 내장하다; 더 큰 구조 안에 포함시키다.
+**enable** — 가능하게 하다; 기능을 활성화하다.
+**enhance** — 품질이나 가치를 높이다.
+**entity** — 독립적으로 존재하는 것; 시스템 안의 개체.
+**enumerate** — 항목을 하나씩 나열하다; 수를 세다.
+**environment** — 주변 환경; 컴퓨팅에서는 소프트웨어가 실행되는 시스템과 설정.
+**error** — 실수; 올바른 동작에서 벗어난 상태.
+**estimate** — 대략적인 계산; 어림잡아 판단하다.
+**evaluate** — 신중히 검토한 뒤 평가하다.
+**execute** — 계획이나 지시를 수행하다; 컴퓨터 프로그램을 실행하다.
+**explicit** — 분명하게 드러난; 암시를 남기지 않는.
+**extend** — 더 길거나 크게 만들다; 기능을 추가하다.
+**extract** — 어떤 원천에서 꺼내거나 추출하다.
 
 ## F
 
-**factor** — an element that contributes to a result; to break into components (math).
-**feature** — a distinctive aspect or capability.
-**filter** — to remove unwanted elements; a device or function that selects items.
-**flexible** — able to adapt to different conditions.
-**format** — 그 arrangement or layout 의 데이터; to prepare 위한 use.
-**framework** — a basic structure providing 지원 위한 building something.
-**function** — 그 purpose 의 something; a reusable block 의 code (programming).
-**fundamental** — forming 그 base or foundation; essential.
+**factor** — 결과에 영향을 주는 요소; 수학에서 인수분해하다.
+**feature** — 두드러진 특징; 기능.
+**filter** — 원치 않는 요소를 걸러내다; 선택 기능이나 장치.
+**flexible** — 다양한 조건에 맞게 조정할 수 있는.
+**format** — 데이터의 배열이나 형식; 사용에 맞게 준비하다.
+**framework** — 무언가를 만들기 위한 기본 구조나 틀.
+**function** — 어떤 것의 기능이나 목적; 재사용 가능한 코드 블록.
+**fundamental** — 기초를 이루는; 필수적인.
 
 ## G
 
-**generate** — to produce or create.
-**global** — relating to 그 whole world; applying to an entire system.
-**guideline** — a general rule or recommendation.
+**generate** — 만들어 내다; 생성하다.
+**global** — 전 세계와 관련된; 전체 시스템에 적용되는.
+**guideline** — 일반적인 지침이나 권고.
 
 ## H
 
-**hierarchy** — a system ranked by levels 의 authority or importance.
-**hypothesis** — a proposed explanation that can be tested.
+**hierarchy** — 권한이나 중요도에 따라 단계가 매겨진 체계.
+**hypothesis** — 검증할 수 있는 잠정적 설명; 가설.
 
 ## I
 
-**identify** — to recognise 와 name something.
-**implement** — to put a plan or system into effect.
-**implicit** — implied without being directly stated.
-**index** — a pointer to 데이터 location; an alphabetical list (noun); to categorise (verb).
-**infer** — to reach a conclusion from evidence without explicit statement.
-**initialise** — to set a variable or system to a starting state.
-**input** — 데이터 provided to a system; to enter 데이터.
-**integrate** — to combine parts into a whole; to add a feature to an existing system.
-**interface** — a point where two 시스템 meet 와 interact; a contract 에서 programming.
-**interpret** — to explain 그 meaning 의 something; to execute code line by line.
-**iterate** — to repeat a process, often 와 함께 incremental changes.
+**identify** — 알아보고 이름을 밝히다; 식별하다.
+**implement** — 계획이나 시스템을 실제로 시행하다.
+**implicit** — 직접 말하지 않아도 암시된.
+**index** — 데이터 위치를 가리키는 표지; 색인(명사); 색인을 만들다(동사).
+**infer** — 명시되지 않은 증거로부터 결론을 이끌어 내다.
+**initialise** — 변수나 시스템을 초기 상태로 설정하다.
+**input** — 시스템에 제공되는 데이터; 데이터를 입력하다.
+**integrate** — 여러 부분을 하나로 결합하다; 기존 시스템에 기능을 추가하다.
+**interface** — 두 시스템이 만나 상호작용하는 지점; 프로그래밍의 인터페이스.
+**interpret** — 의미를 설명하다; 코드를 한 줄씩 실행하다.
+**iterate** — 보통 조금씩 바꾸며 과정을 반복하다.
 
 ## J
 
-**justify** — to give reasons 위한 a decision; to align text along a margin.
+**justify** — 결정의 이유를 대다; 텍스트를 여백에 맞추다.
 
 ## K
 
-**key** — essential; a value used to look up 데이터; a cryptographic secret.
+**key** — 핵심적인; 데이터를 조회하는 데 쓰는 값; 암호학적 비밀값.
 
 ## L
 
-**layer** — a level 에서 a hierarchy; a component stacked on others.
-**legacy** — inherited from 그 past; old software still 에서 use.
-**limit** — a boundary; 그 maximum or minimum value allowed.
-**linear** — arranged 에서 a straight line; proportional increase.
-**link** — a connection between two things; a hyperlink.
-**local** — relating to a nearby area; 에서 컴퓨팅, running on 그 same machine.
-**logic** — reasoning according to rules; 그 flow 의 control 에서 a program.
+**layer** — 계층의 한 단계; 다른 것 위에 겹쳐진 구성 요소.
+**legacy** — 과거에서 물려받은 것; 아직 사용 중인 오래된 소프트웨어.
+**limit** — 경계; 허용되는 최대값이나 최소값.
+**linear** — 직선형의; 비례하여 증가하는.
+**link** — 두 대상을 잇는 연결; 하이퍼링크.
+**local** — 가까운 지역의; 컴퓨팅에서는 같은 기기에서 실행되는.
+**logic** — 규칙에 따른 추론; 프로그램의 제어 흐름.
 
 ## M
 
-**maintain** — to keep 에서 good condition; to continue over time.
-**manipulate** — to handle or control, sometimes 와 함께 skill; to influence unfairly.
-**map** — to associate keys 와 함께 values (데이터 structure); to show spatial relationships.
-**merge** — to combine into one; to join code branches.
-**method** — a way 의 doing something; a function attached to an object (OOP).
-**migrate** — to move 데이터 or 시스템 from one environment to another.
-**model** — a representation 의 something; a trained AI system.
-**modify** — to change partially.
-**monitor** — to observe 와 check over time; a display screen.
+**maintain** — 좋은 상태로 유지하다; 계속 이어 가다.
+**manipulate** — 능숙하게 다루거나 통제하다; 부당하게 영향을 미치다.
+**map** — 키와 값을 연결한 데이터 구조; 공간적 관계를 나타내다.
+**merge** — 하나로 합치다; 코드 브랜치를 병합하다.
+**method** — 어떤 일을 하는 방법; 객체에 속한 함수.
+**migrate** — 데이터나 시스템을 다른 환경으로 옮기다.
+**model** — 어떤 것의 모형이나 표현; 훈련된 AI 시스템.
+**modify** — 일부를 변경하다.
+**monitor** — 계속 관찰하고 점검하다; 모니터 화면.
 
 ## N
 
-**navigate** — to find a path through; to move between pages or screens.
-**node** — a point 에서 a 네트워크 or tree structure.
-**normalise** — to scale values to a standard range; to reduce redundancy 에서 a 데이터베이스.
+**navigate** — 길을 찾다; 페이지나 화면 사이를 이동하다.
+**node** — 네트워크나 트리 구조의 한 점; 노드.
+**normalise** — 값을 표준 범위로 맞추다; 데이터베이스의 중복을 줄이다.
 
 ## O
 
-**objective** — a goal or aim; not influenced by personal feelings (adjective).
-**obtain** — to get or acquire.
-**optimise** — to make as effective or efficient as possible.
-**output** — 데이터 produced by a system; 그 result 의 a computation.
-**override** — to take control over an existing setting or method.
+**objective** — 목표; 개인적 감정에 좌우되지 않는(형용사).
+**obtain** — 얻다; 획득하다.
+**optimise** — 가능한 한 효과적이거나 효율적으로 만들다.
+**output** — 시스템이 만들어 내는 데이터; 계산 결과.
+**override** — 기존 설정이나 메서드보다 우선하여 적용하다.
 
 ## P
 
-**parameter** — a value passed to a function; a measurable characteristic.
-**parse** — to analyse text into components; to interpret structured 데이터.
-**pattern** — a repeated arrangement; a template 위한 solving a common problem.
-**persist** — to continue to exist; to save 데이터 so it survives restarts.
-**pipeline** — a series 의 connected stages where 그 output 의 one feeds 그 next.
-**precise** — exact; accurate to fine detail.
-**predict** — to say what will happen before it does.
-**prioritise** — to rank tasks by importance 와 address 그 most important first.
-**process** — a series 의 steps; a running program instance (verb: to handle or transform).
-**prompt** — a cue or instruction given to an AI model or user.
-**property** — a characteristic or attribute; a value belonging to an object.
-**protocol** — a set 의 rules 위한 의사소통 between 시스템.
+**parameter** — 함수에 전달되는 값; 측정 가능한 특성.
+**parse** — 텍스트를 구성 요소로 분석하다; 구조화된 데이터를 해석하다.
+**pattern** — 반복되는 배열이나 양식; 자주 나타나는 문제를 해결하는 틀.
+**persist** — 계속 존재하다; 재시작 후에도 남도록 데이터를 저장하다.
+**pipeline** — 한 단계의 출력이 다음 단계로 이어지는 연결된 처리 과정.
+**precise** — 아주 세밀하게 정확한.
+**predict** — 일이 일어나기 전에 무엇이 일어날지 말하다.
+**prioritise** — 중요도에 따라 우선순위를 매기고 가장 중요한 것부터 처리하다.
+**process** — 일련의 단계; 실행 중인 프로그램 인스턴스; 처리하다(동사).
+**prompt** — AI 모델이나 사용자에게 주는 지시나 입력 문구.
+**property** — 특성이나 속성; 객체에 속한 값.
+**protocol** — 시스템 간 의사소통을 위한 규칙의 집합.
 
 ## Q
 
-**query** — a request 위한 information from a 데이터베이스; a question.
-**queue** — a line 의 items waiting to be processed (first 에서, first out).
+**query** — 데이터베이스에서 정보를 요청하는 질의; 질문.
+**queue** — 먼저 들어온 것이 먼저 나가는 대기열.
 
 ## R
 
-**recursive** — a function or process that calls or refers to itself.
-**redundant** — unnecessary because it duplicates existing functionality; extra 위한 backup.
-**refactor** — to restructure existing code without changing its external behaviour.
-**참조** — a pointer to a value; a source cited 위한 information.
-**relevant** — closely connected to 그 topic at hand.
-**render** — to produce output (graphics, text, or HTML).
-**represent** — to stand 위한 or describe something.
-**requirement** — a necessary condition or feature.
-**resolve** — to find a solution; to determine a value (e.g. a DNS name).
-**retrieve** — to get back stored information.
-**robust** — strong 와 reliable, especially under stress.
+**recursive** — 함수나 과정이 자기 자신을 호출하거나 참조하는.
+**redundant** — 기존 기능과 중복되어 불필요한; 여분의.
+**refactor** — 외부 동작은 바꾸지 않고 기존 코드를 재구성하다.
+**참조** — 어떤 값을 가리키는 포인터; 정보를 위해 인용한 출처.
+**relevant** — 현재 주제와 밀접하게 관련된.
+**render** — 출력물을 만들어 내다(그래픽, 텍스트, HTML 등).
+**represent** — 어떤 것을 대신 나타내거나 설명하다.
+**requirement** — 반드시 필요한 조건이나 기능.
+**resolve** — 해결하다; 값을 결정하다(예: DNS 이름).
+**retrieve** — 저장된 정보를 다시 가져오다.
+**robust** — 특히 부담이 있어도 강하고 신뢰할 수 있는.
 
 ## S
 
-**scalable** — able to handle increased workload without degrading 성능.
-**schema** — 그 structure or layout 의 a 데이터베이스 or 데이터 format.
-**scope** — 그 range 의 effect; 그 section 의 code where a variable is visible.
-**segment** — a distinct section or part.
-**semantic** — relating to meaning, especially 에서 언어 or code.
-**sequence** — a set 의 things 에서 a particular order.
-**session** — a period 의 activity; a connection between client 와 server.
-**simulate** — to imitate 그 behaviour 의 a system.
-**source** — 그 origin 의 something; original code before compilation.
-**specify** — to state clearly 와 에서 detail.
-**static** — not changing; 에서 컴퓨팅, fixed at compile time or not associated 와 함께 instances.
-**store** — to save 데이터 위한 later use.
-**structure** — 그 arrangement 의 parts; a composite 데이터 type.
-**summarise** — to give a brief statement 의 그 main points.
-**synchronise** — to cause to happen at 그 same time or rate.
-**구문** — 그 rules governing 그 structure 의 statements 에서 a 언어.
+**scalable** — 작업량이 늘어나도 성능 저하 없이 처리할 수 있는.
+**schema** — 데이터베이스나 데이터 형식의 구조.
+**scope** — 영향이 미치는 범위; 변수가 보이는 코드 영역.
+**segment** — 뚜렷이 구분되는 부분.
+**semantic** — 의미와 관련된; 특히 언어나 코드의 의미에 관한.
+**sequence** — 일정한 순서로 배열된 집합.
+**session** — 활동이 이루어지는 기간; 클라이언트와 서버 사이의 연결.
+**simulate** — 시스템의 동작을 흉내 내다.
+**source** — 어떤 것의 출처; 컴파일 전의 원본 코드.
+**specify** — 명확하고 구체적으로 밝히다.
+**static** — 변하지 않는; 컴퓨팅에서는 컴파일 시점에 고정되거나 인스턴스와 무관한.
+**store** — 나중에 쓰기 위해 데이터를 저장하다.
+**structure** — 부분들의 배열 방식; 복합 데이터형.
+**summarise** — 핵심만 간단히 요약하다.
+**synchronise** — 같은 시점이나 속도로 맞추다.
+**구문** — 언어에서 문장이 구성되는 규칙.
 
 ## T
 
-**template** — a model or pattern used as a starting point.
-**threshold** — a level or point that triggers an action when reached.
-**token** — a unit 의 text 에서 NLP; an authentication credential.
-**trace** — to follow a path; a record 의 program execution 위한 debugging.
-**transform** — to change 에서 form, 자연, or appearance.
-**transmit** — to send 데이터 from one place to another.
+**template** — 시작점으로 사용하는 본보기나 틀.
+**threshold** — 도달하면 어떤 동작이 일어나는 기준점.
+**token** — NLP에서의 텍스트 단위; 인증 자격 증명.
+**trace** — 경로를 따라가다; 디버깅을 위한 프로그램 실행 기록.
+**transform** — 형태, 성질, 모양을 바꾸다.
+**transmit** — 한 곳에서 다른 곳으로 데이터를 보내다.
 
 ## U
 
-**uniform** — consistent 와 unchanged throughout.
-**unique** — 그 only one 의 its kind; occurring just once.
-**update** — to bring to a more current state.
-**utilise** — to make use 의 something.
+**uniform** — 전체에 걸쳐 한결같고 변함없는.
+**unique** — 같은 것이 하나뿐인; 한 번만 나타나는.
+**update** — 더 최신 상태로 바꾸다.
+**utilise** — 활용하다; 이용하다.
 
 ## V
 
-**validate** — to confirm something meets requirements or is correct.
-**variable** — a named container 위한 a value that can change.
-**verify** — to check correctness or truth.
-**version** — a specific form 의 a product at a particular point 에서 its 개발.
+**validate** — 요구사항을 충족하거나 올바른지 확인하다.
+**variable** — 값이 바뀔 수 있는 이름 붙은 저장 공간.
+**verify** — 정확성이나 진실 여부를 점검하다.
+**version** — 특정 시점의 제품 형태; 버전.
 
 ## W
 
-**workflow** — a series 의 steps followed to 완전한 a task.
-**warrant** — justification 위한 an action; a 법적 document authorizing something.
+**workflow** — 작업을 완료하기 위해 따르는 일련의 단계.
+**warrant** — 어떤 행동을 정당화하는 근거; 권한을 부여하는 법적 문서.
 
 ## X
 
-**xenophobia** — fear or hatred 의 foreigners or strangers.
+**xenophobia** — 외국인이나 낯선 사람에 대한 두려움 또는 혐오.
 
 ## Y
 
-**yield** — to produce or provide; to give way; 그 amount produced.
+**yield** — 생산하다; 양보하다; 생산량.
 
 ## Z
 
-**zero-sum** — a situation where one person's gain equals another's loss.
-**zone** — an area 와 함께 distinct characteristics or boundaries.
+**zero-sum** — 한쪽의 이익이 다른 쪽의 손실과 같은 상황.
+**zone** — 뚜렷한 특성이나 경계를 가진 구역.
 
 ---
 
-## Additional Technical Terms
+## 추가 기술 용어
 
-**abstraction** — hiding complex implementation details while showing only essential features.
-**acronym** — a word formed from initial letters 의 a phrase (e.g., NASA, ASCII).
-**adjective** — a word describing a noun or pronoun.
-**adverb** — a word modifying a verb, adjective, or other adverb, often ending 에서 -ly.
-**affix** — a morpheme added to a word root (prefix at beginning, suffix at end).
-**agile** — a software 개발 methodology emphasizing iterative progress 와 flexibility.
-**analogy** — a comparison between two things to explain or clarify.
-**antonym** — a word opposite 에서 meaning to another word.
-**aphorism** — a concise statement expressing a general truth or principle.
-**apocryphal** — 의 doubtful authenticity; widely circulated but likely false.
-**archetype** — an original model or typical example 의 something.
-**artifact** — an object made by humans; 에서 컴퓨팅, an unintended byproduct 의 processing.
-**assertion** — a confident statement; 에서 programming, a check that a condition is true.
-**asynchronous** — not occurring at 그 same time; allowing operations to proceed without waiting.
-**attenuate** — to reduce 에서 force, value, or intensity.
-**axiom** — a statement accepted as true without proof; a fundamental principle.
+**abstraction** — 복잡한 구현 세부 사항은 숨기고 핵심 기능만 드러내는 것.
+**acronym** — 구의 첫 글자를 따서 만든 단어(예: NASA, ASCII).
+**adjective** — 명사나 대명사를 꾸며 주는 말; 형용사.
+**adverb** — 동사, 형용사, 다른 부사를 수식하는 말; 부사.
+**affix** — 어근에 붙는 형태소로, 앞에 붙으면 접두사, 뒤에 붙으면 접미사.
+**agile** — 반복적 개선과 유연성을 중시하는 소프트웨어 개발 방법론.
+**analogy** — 설명이나 이해를 돕기 위한 유추, 비유.
+**antonym** — 다른 단어와 반대 의미를 가진 말; 반의어.
+**aphorism** — 일반적 진리나 원칙을 간결하게 표현한 말.
+**apocryphal** — 진위가 불확실한; 널리 퍼졌지만 사실이 아닐 가능성이 큰.
+**archetype** — 원형; 전형적인 본보기.
+**artifact** — 사람이 만든 물건; 컴퓨팅에서는 처리 과정에서 생긴 의도치 않은 부산물.
+**assertion** — 단정적 진술; 프로그래밍에서는 어떤 조건이 참인지 검사하는 문장.
+**asynchronous** — 동시에 일어나지 않는; 기다리지 않고 작업을 진행할 수 있는.
+**attenuate** — 세기, 값, 강도를 줄이다.
+**axiom** — 증명 없이 참으로 받아들이는 명제; 공리.
 
-**backpropagation** — an algorithm 위한 training 신경망 by propagating errors backward.
-**bandwidth** — 그 range 의 frequencies 사용 가능; 데이터 transfer capacity.
-**binary** — consisting 의 two parts; base-2 number system using 0s 와 1s.
-**bit** — 그 smallest unit 의 데이터 (0 or 1); short 위한 binary digit.
-**blockchain** — a distributed ledger 기술 recording transactions across multiple computers.
-**boolean** — relating to logic 와 함께 values true or false; named after George Boole.
-**bottleneck** — a point 의 congestion slowing down a process or system.
-**byte** — a unit 의 digital information typically consisting 의 8 bits.
+**backpropagation** — 오류를 뒤로 전파해 신경망을 학습시키는 알고리즘.
+**bandwidth** — 사용 가능한 주파수 범위; 데이터 전송 용량.
+**binary** — 두 부분으로 이루어진; 0과 1을 쓰는 2진수 체계.
+**bit** — 데이터의 가장 작은 단위(0 또는 1); binary digit의 줄임말.
+**blockchain** — 여러 컴퓨터에 걸쳐 거래를 기록하는 분산 원장 기술.
+**boolean** — 참과 거짓 값을 다루는 논리의; George Boole의 이름에서 유래한.
+**bottleneck** — 과정이나 시스템을 느리게 만드는 병목 지점.
+**byte** — 보통 8비트로 이루어진 디지털 정보 단위.
 
-**cache** — a hardware or software component storing 데이터 위한 faster 미래 access.
-**calibrate** — to adjust precisely 위한 accurate measurement or 성능.
-**cascade** — a series 의 stages where each triggers 그 next; waterfall effect.
-**catalyst** — a substance speeding up a chemical reaction; anything causing change.
-**causality** — 그 relationship between cause 와 effect.
-**centroid** — 그 geometric center 의 a shape; average position 의 points.
-**checksum** — a value computed from 데이터 to detect errors or tampering.
-**cipher** — an algorithm 위한 encryption or decryption; a secret code.
-**coalesce** — to come together to form one whole.
-**cognitive** — relating to mental processes 의 perception, memory, judgment, 와 reasoning.
-**cohort** — a group sharing a common characteristic or experience within a defined period.
-**collateral** — assets pledged as 보안 위한 a loan; secondary or accompanying.
-**colloquial** — informal 언어 used 에서 ordinary conversation.
-**combinatorics** — 그 branch 의 mathematics dealing 와 함께 combinations 와 permutations.
-**commutative** — a property where order doesn't matter (a+b = b+a).
-**concurrency** — multiple computations happening during overlapping periods.
-**conjecture** — a conclusion formed on incomplete information; a mathematical hypothesis.
-**conjunction** — a word connecting clauses or sentences (와, but, or); logical 와 operator.
-**consensus** — general agreement among a group.
-**constraint** — a limitation or restriction on what is possible.
-**corollary** — a proposition following from one already proved.
-**correlation** — a mutual relationship between two variables; does not imply causation.
-**cryptocurrency** — a digital currency secured by cryptography, often decentralized.
-**crystalize** — to form into crystals; to make clear or definite.
+**cache** — 이후 더 빠르게 접근하기 위해 데이터를 저장해 두는 하드웨어 또는 소프트웨어 구성 요소.
+**calibrate** — 정확한 측정이나 성능을 위해 정밀하게 조정하다.
+**cascade** — 각 단계가 다음 단계를 유발하는 연쇄적 구조; 폭포 효과.
+**catalyst** — 화학 반응을 빠르게 하는 물질; 변화를 촉진하는 것.
+**causality** — 원인과 결과의 관계.
+**centroid** — 도형의 기하학적 중심; 점들의 평균 위치.
+**checksum** — 오류나 변조를 감지하기 위해 데이터에서 계산한 값.
+**cipher** — 암호화·복호화 알고리즘; 암호문 체계.
+**coalesce** — 하나의 전체로 합쳐지다.
+**cognitive** — 지각, 기억, 판단, 추론 같은 정신 과정과 관련된.
+**cohort** — 일정 기간 동안 공통된 특성이나 경험을 공유하는 집단.
+**collateral** — 대출의 담보 자산; 부수적인 것.
+**colloquial** — 일상 대화에서 쓰는 비격식적 언어.
+**combinatorics** — 조합과 순열을 다루는 수학 분야.
+**commutative** — 순서를 바꿔도 결과가 같은 성질(`a+b = b+a`).
+**concurrency** — 여러 계산이 겹치는 시간 동안 동시에 진행되는 상태.
+**conjecture** — 불완전한 정보에 근거한 추측; 수학적 가설.
+**conjunction** — 절이나 문장을 잇는 말(예: and, but, or); 논리곱 연산.
+**consensus** — 집단 내의 일반적인 합의.
+**constraint** — 가능성을 제한하는 조건이나 제약.
+**corollary** — 이미 증명된 명제에서 따라 나오는 결과.
+**correlation** — 두 변수 사이의 상관관계; 인과관계를 뜻하지는 않는다.
+**cryptocurrency** — 보통 탈중앙화되어 있고 암호기술로 보호되는 디지털 통화.
+**crystalize** — 결정체를 이루다; 생각이나 개념을 분명하게 하다.
 
-**daisy-chain** — to connect devices or tasks 에서 a sequential series.
-**deconvolution** — reversing convolution; separating mixed signals or images.
-**deduction** — reasoning from general principles to specific conclusions.
-**defenestration** — 그 act 의 throwing someone out 의 a window.
-**deictic** — referring to something by pointing (this, that, here, there).
-**demographic** — statistical 데이터 about populations or groups.
-**denotation** — 그 literal or primary meaning 의 a word.
-**deprecated** — marked as obsolete but still functional; discouraged from use.
-**derivative** — a measure 의 rate 의 change (calculus); derived from something else.
-**deterministic** — producing 그 same output given 그 same input; predictable.
-**diachronic** — studying phenomena as they change over time.
-**didactic** — intended to teach, particularly 와 함께 moral instruction.
-**diffraction** — 그 bending 의 waves around obstacles or through openings.
-**digraph** — two characters representing one sound (sh, ch, th).
-**disambiguate** — to remove ambiguity; make something clearer.
-**discrete** — separate 와 distinct; individual (opposite 의 continuous).
-**disjunctive** — presenting alternatives; logical OR operation.
-**divergence** — 그 process 의 separating or moving apart.
-**docstring** — documentation embedded 에서 source code explaining function purpose.
+**daisy-chain** — 장치나 작업을 차례대로 연결한 연쇄 구조.
+**deconvolution** — 합성곱을 역으로 풀어 섞인 신호나 이미지를 분리하는 것.
+**deduction** — 일반 원리에서 구체적 결론을 이끌어 내는 추론.
+**defenestration** — 사람을 창밖으로 던지는 행위.
+**deictic** — 이것, 저것, 여기처럼 가리킴으로 대상을 지시하는.
+**demographic** — 인구 집단에 관한 통계 정보의.
+**denotation** — 단어의 문자적·기본적 의미.
+**deprecated** — 더는 권장되지 않지만 아직은 동작하는 것으로 표시된.
+**derivative** — 변화율을 나타내는 도함수; 다른 것에서 파생된 것.
+**deterministic** — 같은 입력이면 항상 같은 출력을 내는; 결정론적인.
+**diachronic** — 시간이 흐르며 변하는 양상을 연구하는.
+**didactic** — 교훈이나 교육을 목적으로 하는.
+**diffraction** — 파동이 장애물 주변이나 좁은 틈을 지날 때 휘는 현상.
+**digraph** — 두 글자가 하나의 소리를 나타내는 것(sh, ch, th 등).
+**disambiguate** — 모호함을 없애다; 뜻을 분명히 하다.
+**discrete** — 서로 분리되고 구별되는; 연속적이지 않은.
+**disjunctive** — 대안을 제시하는; 논리적 OR 연산의.
+**divergence** — 서로 갈라지거나 멀어지는 과정.
+**docstring** — 함수의 목적 등을 설명하기 위해 소스 코드 안에 넣는 문서 문자열.
 
-**eccentric** — unconventional or slightly strange; off-center.
-**eclectic** — selecting from diverse sources or styles.
-**edge case** — an extreme or rare scenario requiring special handling.
-**elegy** — a mournful poem or lament 위한 그 dead.
-**elide** — to omit or slur over sounds or syllables.
-**ellipsis** — omission 의 words; three dots (...) indicating continuation or pause.
-**embargo** — an official ban on trade or publication.
-**empathy** — 그 ability to understand 와 share others' feelings.
-**empirical** — based on observation or experience rather than theory.
-**emulate** — to imitate or match, especially 에서 컴퓨팅 (software emulation).
-**endemic** — native or restricted to a particular region; constantly present.
-**ephemeral** — lasting 위한 a very short time; temporary.
-**epistemology** — 그 study 의 knowledge, its 자연 와 scope.
-**epoch** — a significant period 에서 역사; 에서 ML, one pass through training 데이터.
-**equilibrium** — a state 의 balance between opposing forces.
-**equivocate** — to use ambiguous 언어 to conceal 그 truth.
-**ergodic** — having statistical properties uniform throughout; random yet representative.
-**esoteric** — intended 위한 or understood by a small, specialized group.
-**ethnography** — 그 systematic study 의 people 와 cultures through observation.
-**etymology** — 그 study 의 word origins 와 historical 개발.
-**euphemism** — a mild expression substituting 위한 a harsh or unpleasant one.
-**evanescent** — fleeting; vanishing like vapor.
-**exacerbate** — to make a problem worse.
-**excise** — to cut out; a tax on certain goods.
-**existential** — relating to existence; concerning human freedom 와 choice.
-**exogenous** — originating from external factors.
-**expedite** — to make happen sooner; accelerate.
-**exponential** — involving exponentiation; growth accelerating over time.
-**extrapolate** — to estimate beyond known 데이터 by extending trends.
+**eccentric** — 관습에서 벗어난; 약간 괴짜 같은; 중심에서 벗어난.
+**eclectic** — 다양한 출처나 양식에서 절충해 선택하는.
+**edge case** — 특별한 처리가 필요한 극단적이거나 드문 상황.
+**elegy** — 죽은 이를 애도하는 시가; 비가.
+**elide** — 소리나 음절을 생략하거나 뭉개어 발음하다.
+**ellipsis** — 단어의 생략; 계속됨이나 머뭇거림을 나타내는 줄임표(...).
+**embargo** — 무역이나 발표에 대한 공식적인 금지 조치.
+**empathy** — 다른 사람의 감정을 이해하고 함께 느끼는 능력.
+**empirical** — 이론보다 관찰이나 경험에 근거한.
+**emulate** — 특히 컴퓨팅에서 다른 시스템을 모방하거나 재현하다.
+**endemic** — 특정 지역에 토착하거나 한정된; 늘 존재하는.
+**ephemeral** — 매우 짧은 시간만 지속되는; 덧없는.
+**epistemology** — 지식의 본질과 범위를 탐구하는 철학 분야; 인식론.
+**epoch** — 역사에서 중요한 시기; ML에서는 학습 데이터 전체를 한 번 도는 과정.
+**equilibrium** — 서로 맞서는 힘 사이의 균형 상태.
+**equivocate** — 진실을 숨기기 위해 모호한 말을 하다.
+**ergodic** — 전체에 걸쳐 통계적 성질이 고르게 나타나는.
+**esoteric** — 소수의 전문 집단만 이해할 수 있는.
+**ethnography** — 관찰을 통해 사람과 문화를 체계적으로 연구하는 방법; 민족지.
+**etymology** — 단어의 기원과 역사적 발전을 연구하는 분야.
+**euphemism** — 거칠거나 불쾌한 표현을 완화해 바꾸는 말; 완곡어법.
+**evanescent** — 금세 사라지는; 덧없는.
+**exacerbate** — 문제를 더 악화시키다.
+**excise** — 도려내다; 특정 상품에 부과하는 소비세.
+**existential** — 존재와 관련된; 인간의 자유와 선택을 다루는.
+**exogenous** — 외부 요인에서 비롯된.
+**expedite** — 더 빨리 이루어지도록 촉진하다.
+**exponential** — 지수와 관련된; 시간이 갈수록 가속적으로 증가하는.
+**extrapolate** — 알려진 데이터를 바탕으로 그 범위를 넘어 추정하다.
 
-**facade** — 그 front 의 a building; a deceptive outward appearance.
-**fallacy** — a mistaken belief; flawed reasoning 에서 argument.
-**falsifiable** — capable 의 being proven false; a criterion 위한 scientific claims.
-**피드백 loop** — a system where outputs influence inputs, amplifying or stabilizing.
-**ferment** — chemical breakdown by microorganisms; agitation or unrest.
-**finite** — having limits or bounds; not infinite.
-**flux** — continuous change; flow or movement.
-**formalism** — strict adherence to rules or forms; emphasis on structure.
-**fortuitous** — happening by chance; lucky.
-**fractal** — a self-similar pattern repeating at different scales.
-**frequency** — 그 rate 의 occurrence; number 의 cycles per second (Hertz).
-**full-stack** — involving both front-end 와 back-end 개발.
+**facade** — 건물의 정면; 겉으로만 보이는 모습.
+**fallacy** — 잘못된 믿음; 논증상의 오류.
+**falsifiable** — 거짓임이 증명될 수 있는; 과학적 주장에 필요한 성질.
+**피드백 루프** — 출력이 다시 입력에 영향을 주어 증폭하거나 안정화하는 구조.
+**ferment** — 미생물에 의한 분해; 동요나 격앙.
+**finite** — 한계가 있는; 유한한.
+**flux** — 끊임없는 변화; 흐름.
+**formalism** — 규칙과 형식에 엄격히 따르는 태도; 구조 중시 경향.
+**fortuitous** — 우연히 일어난; 운 좋은.
+**fractal** — 서로 다른 규모에서 비슷한 모습이 반복되는 자기유사 패턴.
+**frequency** — 발생 빈도; 초당 주기의 수(Hz).
+**full-stack** — front-end와 back-end 개발을 모두 아우르는.
 
-**garrulous** — excessively talkative, especially about trivial matters.
-**gaussian** — relating to normal distribution; bell-shaped curve.
-**genealogy** — 그 study 의 family lineages 와 descent.
-**generic** — general rather than specific; lacking brand identification.
-**genitive** — grammatical case showing possession.
-**gestalt** — an organized whole perceived as more than 그 sum 의 its parts.
-**gibberish** — unintelligible or meaningless speech or writing.
-**granular** — composed 의 small particles; detailed 와 fine-grained.
-**graph** — a diagram showing relationships; a 데이터 structure 와 함께 nodes 와 edges.
-**gregarious** — sociable; fond 의 company.
-**grok** — to understand deeply 와 intuitively (from 과학 fiction).
+**garrulous** — 특히 사소한 이야기를 지나치게 많이 하는.
+**gaussian** — 정규분포와 관련된; 종 모양 곡선의.
+**genealogy** — 가계와 혈통을 연구하는 것.
+**generic** — 특정하지 않고 일반적인; 브랜드 구분이 없는.
+**genitive** — 소유를 나타내는 문법 격.
+**gestalt** — 부분의 합 이상으로 지각되는 조직화된 전체.
+**gibberish** — 알아들을 수 없는 말이나 글.
+**granular** — 작은 입자로 이루어진; 세밀한.
+**graph** — 관계를 나타내는 도표; 노드와 간선으로 이루어진 데이터 구조.
+**gregarious** — 사교적인; 사람들과 어울리기 좋아하는.
+**grok** — 깊이 있고 직관적으로 이해하다.
 
-**halcyon** — calm 와 peaceful; prosperous 와 happy.
-**haplotype** — a set 의 DNA variations inherited together.
-**hegemony** — dominance or leadership, especially 의 one state over others.
-**hermeneutics** — 그 theory 와 methodology 의 interpretation.
-**heuristic** — a practical method not guaranteed optimal; a rule 의 thumb.
-**hologram** — a 3D image created by laser interference patterns.
-**homogeneous** — uniform 에서 composition or character.
-**homomorphism** — a structure-preserving map between algebraic structures.
-**homophone** — words sounding alike but differing 에서 meaning or spelling.
-**homonym** — words 와 함께 same spelling or pronunciation but different meanings.
-**hyperbole** — deliberate exaggeration 위한 effect.
-**hyperparameter** — a configuration setting 위한 기계 학습 models set before training.
-**hypertext** — text containing links to other texts; foundational to 그 웹.
-**hypothesize** — to propose an explanation as a starting point 위한 investigation.
+**halcyon** — 평온하고 행복한; 번영하던.
+**haplotype** — 함께 유전되는 DNA 변이의 집합.
+**hegemony** — 특히 한 국가가 다른 국가들 위에 행사하는 지배권; 패권.
+**hermeneutics** — 해석의 이론과 방법론; 해석학.
+**heuristic** — 최적을 보장하지는 않지만 실용적인 해결 방법; 경험 법칙.
+**hologram** — 레이저 간섭 무늬로 만든 3차원 영상.
+**homogeneous** — 구성이나 성격이 균일한.
+**homomorphism** — 대수적 구조를 보존하는 사상.
+**homophone** — 발음은 같지만 뜻이나 철자가 다른 단어.
+**homonym** — 철자나 발음이 같지만 의미가 다른 단어.
+**hyperbole** — 효과를 위한 의도적 과장.
+**hyperparameter** — 기계 학습 모델에서 학습 전에 정하는 설정값.
+**hypertext** — 다른 텍스트로 연결되는 링크를 포함한 텍스트; 웹의 기반 개념.
+**hypothesize** — 탐구의 출발점으로 설명을 가정하다.
 
-**iconoclast** — one who attacks cherished beliefs or institutions.
-**idiom** — a phrase whose meaning cannot be deduced from individual words.
-**idiosyncratic** — peculiar to an individual; distinctive.
-**idempotent** — producing 그 same result regardless 의 how many times applied.
-**igneous** — rock formed from cooled magma or lava.
-**immutable** — unchanging over time; unable to be modified.
-**impedance** — opposition to alternating current; metaphorically, resistance to flow.
-**imperative** — crucial; a command; programming paradigm focused on statements.
-**implicit** — implied though not plainly expressed.
-**imponderable** — impossible to estimate or assess.
-**impromptu** — done without preparation; spontaneous.
-**inchoate** — just begun; not fully formed.
-**inductive** — reasoning from specific observations to general conclusions.
-**ineffable** — too great or extreme to be expressed 에서 words.
-**inference** — a conclusion reached from evidence; 에서 AI, generating outputs from models.
-**inflection** — change 에서 pitch or tone; modification 의 words 위한 grammar.
-**innate** — inborn; natural rather than acquired.
-**inoculate** — to vaccinate; introduce an idea or attitude gradually.
-**insidious** — proceeding subtly but harmfully.
-**instantiation** — creating a specific instance 의 a class or concept.
-**intentionality** — 그 quality 의 being about something; directedness 의 consciousness.
-**interoperability** — 그 ability 의 시스템 to work together seamlessly.
-**interpolate** — to estimate values between known 데이터 points.
-**introspection** — examining one's own thoughts 와 feelings; 에서 code, examining types at runtime.
-**invariant** — unchanging; a condition that remains constant during execution.
-**invective** — abusive or insulting 언어.
-**inverse** — opposite 에서 position, direction, or effect.
-**iterable** — an object capable 의 returning its members one at a time.
+**iconoclast** — 기존의 신념이나 제도를 과감히 부정하는 사람.
+**idiom** — 낱말 뜻만으로는 의미를 알기 어려운 관용구.
+**idiosyncratic** — 개인에게 특유한; 개성적인.
+**idempotent** — 몇 번 적용해도 결과가 같은.
+**igneous** — 마그마나 용암이 식어 형성된 화성암의.
+**immutable** — 시간이 지나도 바뀌지 않는; 수정할 수 없는.
+**impedance** — 교류 전류에 대한 저항; 비유적으로 흐름을 막는 저항.
+**imperative** — 매우 중요한; 명령; 명령형 프로그래밍의.
+**implicit** — 분명히 드러나지 않았지만 내포된.
+**imponderable** — 가늠하거나 평가하기 어려운.
+**impromptu** — 준비 없이 즉흥적으로 하는.
+**inchoate** — 막 시작된; 아직 충분히 형성되지 않은.
+**inductive** — 개별 관찰에서 일반 결론으로 나아가는 귀납적.
+**ineffable** — 말로 표현하기 어려울 만큼 큰.
+**inference** — 증거를 바탕으로 내리는 추론; AI에서는 모델이 출력을 생성하는 과정.
+**inflection** — 음높이나 어조의 변화; 문법을 위한 단어 형태 변화.
+**innate** — 타고난; 후천적이지 않은.
+**inoculate** — 예방 접종하다; 생각이나 태도를 서서히 주입하다.
+**insidious** — 서서히 진행되며 해로운.
+**instantiation** — 클래스나 개념의 구체적 인스턴스를 만드는 것.
+**intentionality** — 무엇인가를 향하고 있는 의식의 성질.
+**interoperability** — 시스템들이 매끄럽게 함께 작동할 수 있는 능력.
+**interpolate** — 알려진 데이터 점들 사이의 값을 추정하다.
+**introspection** — 자신의 생각과 감정을 들여다봄; 코드에서 런타임에 타입 등을 조사하는 것.
+**invariant** — 변하지 않는 것; 실행 중에도 항상 유지되는 조건.
+**invective** — 모욕적이거나 공격적인 언어.
+**inverse** — 위치, 방향, 효과가 반대인 것.
+**iterable** — 구성원을 하나씩 차례로 반환할 수 있는 객체.
 
-**jargon** — specialized terminology used by a particular group.
-**juxtapose** — to place side by side 위한 comparison or contrast.
+**jargon** — 특정 집단이 쓰는 전문 용어.
+**juxtapose** — 비교나 대조를 위해 나란히 두다.
 
-**kafkaesque** — nightmarishly complex or bureaucratic (from Franz Kafka).
-**kernel** — 그 core 의 an operating system; a seed; 에서 ML, a function transforming 데이터.
-**kinetic** — relating to motion; active rather than static.
-**kiosk** — a small booth 위한 information or sales; a locked-down computer terminal.
+**kafkaesque** — 악몽처럼 복잡하거나 관료적인.
+**kernel** — 운영체제의 핵심 부분; 씨앗의 속알; ML에서는 데이터를 변환하는 함수.
+**kinetic** — 움직임과 관련된; 정적이기보다 활동적인.
+**kiosk** — 정보 제공이나 판매를 위한 작은 부스; 제한된 기능의 단말기.
 
-**lacuna** — a gap or missing part, especially 에서 a manuscript.
-**latency** — delay between stimulus 와 response; 에서 networking, time 위한 데이터 to travel.
-**latent** — existing but not yet developed or manifest; hidden.
-**lexicon** — 그 vocabulary 의 a 언어 or field; a 사전.
-**liability** — 법적 responsibility; a disadvantage; debts owed.
-**linear regression** — a statistical method modeling linear relationships between variables.
-**lingua franca** — a common 언어 used between speakers 의 different native languages.
-**literal** — taking words 에서 their usual sense; not figurative.
-**litmus test** — a decisive test revealing true 자연 or quality.
-**locus** — 그 set 의 points satisfying a condition; a center 의 activity.
-**loquacious** — very talkative.
-**lucid** — clear 와 easy to understand; mentally sharp.
-**lumen** — a unit 의 luminous flux; light output.
-**lyric** — expressing personal emotions; song-like poetry.
+**lacuna** — 특히 문헌에서의 공백이나 빠진 부분.
+**latency** — 자극과 반응 사이의 지연; 네트워킹에서는 데이터가 이동하는 데 걸리는 시간.
+**latent** — 존재하지만 아직 드러나지 않은; 잠재적인.
+**lexicon** — 어떤 언어·분야의 어휘 전체; 사전.
+**liability** — 법적 책임; 불리한 요소; 부채.
+**linear regression** — 변수 사이의 선형 관계를 모델링하는 통계 기법.
+**lingua franca** — 서로 다른 모국어 화자들이 공통으로 사용하는 언어.
+**literal** — 비유가 아니라 글자 그대로의 의미인.
+**litmus test** — 본질이나 진가를 드러내는 결정적 시험.
+**locus** — 조건을 만족하는 점들의 집합; 활동의 중심.
+**loquacious** — 몹시 말이 많은.
+**lucid** — 명료하고 이해하기 쉬운; 정신이 또렷한.
+**lumen** — 광속의 단위; 빛의 밝기.
+**lyric** — 개인적 감정을 표현하는; 서정적인.
 
-**macro** — a large-scale view; a rule specifying pattern replacement.
-**malapropism** — mistaken use 의 a word 에서 place 의 a similar-sounding one.
-**manifest** — obvious; a list 의 cargo or passengers; to display or show.
-**mantissa** — 그 significant digits 의 a floating-point number.
-**mapreduce** — a programming model 위한 processing large datasets 에서 parallel.
-**marginal** — minimal; at 그 edge; additional or incremental.
-**markup** — text formatting codes (HTML, XML); price increase.
-**matrix** — a rectangular array 의 numbers; environment or surroundings.
-**maxim** — a short statement expressing a general truth or rule 의 conduct.
-**mechanism** — a system 의 parts working together; an underlying process.
-**mediator** — one who facilitates resolution between parties.
-**membrane** — a thin flexible layer; 에서 biology, cell boundary.
-**memoization** — caching function results to avoid recomputation.
-**metaphor** — a figure 의 speech comparing unlike things without "like" or "as".
-**metastable** — apparently stable but easily disrupted.
-**metonymy** — referring to something by something closely associated (crown 위한 monarchy).
-**microservice** — a small, independent service 에서 a distributed 아키텍처.
-**millisecond** — one thousandth 의 a second.
-**mnemonic** — a memory aid or device.
-**modality** — 그 mode or form 의 something; sensory channel.
-**model** — a representation; 에서 ML, a trained system making predictions.
-**modulate** — to adjust or regulate; vary 에서 strength or tone.
-**monad** — a structure 에서 functional programming handling side effects.
-**monolithic** — a single massive structure; not modular.
-**monotonic** — always increasing or always decreasing; never changing direction.
-**morphology** — 그 study 의 forms 와 structures; word formation 에서 linguistics.
-**multicast** — sending 데이터 to multiple destinations simultaneously.
-**multimodal** — combining multiple modes (text, image, audio).
-**mutable** — capable 의 change; modifiable.
-**mutual** — held 에서 common; reciprocal.
+**macro** — 큰 범위의 관점; 특정 패턴을 다른 패턴으로 바꾸는 규칙.
+**malapropism** — 비슷한 소리의 다른 단어를 잘못 쓰는 실수.
+**manifest** — 분명한; 화물·승객 목록; 드러내다.
+**mantissa** — 부동소수점 수의 유효숫자 부분.
+**mapreduce** — 큰 데이터셋을 병렬로 처리하는 프로그래밍 모델.
+**marginal** — 아주 적은; 가장자리의; 추가적인.
+**markup** — HTML, XML 같은 텍스트 표기 코드; 가격 인상분.
+**matrix** — 직사각형 형태의 수 배열; 환경이나 주변 상황.
+**maxim** — 일반적 진리나 행동 규범을 간단히 표현한 말.
+**mechanism** — 여러 부분이 함께 작동하는 체계; 작동 원리.
+**mediator** — 당사자 사이의 해결을 돕는 중재자.
+**membrane** — 얇고 유연한 막; 생물학에서는 세포막.
+**memoization** — 재계산을 피하기 위해 함수 결과를 캐시에 저장하는 기법.
+**metaphor** — “like”나 “as” 없이 서로 다른 대상을 빗대는 은유.
+**metastable** — 겉보기에는 안정적이지만 쉽게 흔들릴 수 있는.
+**metonymy** — 밀접하게 관련된 다른 것으로 대상을 대신 가리키는 표현.
+**microservice** — 분산 아키텍처에서 독립적으로 동작하는 작은 서비스.
+**millisecond** — 1초의 1000분의 1.
+**mnemonic** — 기억을 돕는 장치나 요령.
+**modality** — 어떤 것의 양식이나 형태; 감각 채널.
+**model** — 어떤 것의 표현; ML에서는 예측을 수행하는 훈련된 시스템.
+**modulate** — 강도나 음조를 조절하다.
+**monad** — 함수형 프로그래밍에서 부수효과를 다루는 구조.
+**monolithic** — 거대한 하나의 덩어리로 된; 모듈화되지 않은.
+**monotonic** — 계속 증가하거나 계속 감소하는; 방향이 바뀌지 않는.
+**morphology** — 형태와 구조를 연구하는 분야; 언어학에서는 단어 형성론.
+**multicast** — 데이터를 여러 목적지로 동시에 보내는 것.
+**multimodal** — 텍스트, 이미지, 오디오 등 여러 모드를 결합한.
+**mutable** — 바뀔 수 있는; 수정 가능한.
+**mutual** — 서로 공통의; 상호적인.
 
-**nascent** — just coming into existence; beginning to develop.
-**native** — inherent; belonging to a place by birth; 에서 컴퓨팅, built 위한 a specific platform.
-**natural 언어** — human 언어 as spoken or written, not formal or programming.
-**negation** — denial or contradiction; logical NOT.
-**neologism** — a newly coined word or expression.
-**nested** — contained within something similar; hierarchical layers.
-**netizen** — an active internet user.
-**neural 네트워크** — a 컴퓨팅 system inspired by biological brains.
-**nominal** — 에서 name only; very small; stated or face value.
-**non sequitur** — a conclusion not following from premises.
-**normalization** — organizing 데이터 to reduce redundancy; scaling to standard range.
-**notwithstanding** — 에서 spite 의; nevertheless.
-**nuance** — subtle distinction or variation.
-**null** — having no value; zero; invalid.
-**numerator** — 그 top number 에서 a fraction.
+**nascent** — 막 생겨나기 시작한; 발전 초기의.
+**native** — 본래의; 태어난 곳에 속한; 컴퓨팅에서는 특정 플랫폼용으로 만들어진.
+**자연어** — 사람이 말하거나 쓰는 언어로, 형식 언어나 프로그래밍 언어가 아닌 것.
+**negation** — 부정; 논리적 NOT.
+**neologism** — 새로 만들어진 단어나 표현.
+**nested** — 비슷한 것 안에 들어 있는; 중첩된.
+**netizen** — 적극적으로 인터넷을 사용하는 사람.
+**신경망** — 생물학적 뇌를 본떠 만든 계산 시스템.
+**nominal** — 이름뿐인; 아주 작은; 명목상의.
+**non sequitur** — 전제에서 따라 나오지 않는 결론.
+**normalization** — 중복을 줄이도록 데이터를 조직하는 것; 표준 범위로 스케일링하는 것.
+**notwithstanding** — ~에도 불구하고; 그럼에도 불구하고.
+**nuance** — 미묘한 차이 또는 뉘앙스.
+**null** — 값이 없음; 무효.
+**numerator** — 분수의 윗수; 분자.
 
-**objective** — not influenced by personal feelings; a goal.
-**obligatory** — required; mandatory.
-**obfuscate** — to deliberately make unclear or confusing.
-**objective function** — a function to maximize or minimize 에서 optimization.
-**observable** — capable 의 being observed; 에서 programming, a stream 의 이벤트.
-**obsolescence** — 그 process 의 becoming outdated.
-**occasional** — happening sometimes; irregular.
-**occlusion** — blockage or obstruction; hiding 의 objects 에서 vision.
-**octet** — a group 의 eight; 에서 networking, 8 bits (byte).
-**offload** — to transfer work to another system or person.
-**omnibus** — containing multiple items; a collection.
-**ontology** — 그 study 의 being; 에서 CS, a formal representation 의 knowledge.
-**opaque** — not transparent; difficult to understand.
-**operationalize** — to put into operation; define measurable indicators.
-**opportunity cost** — 그 value 의 그 best alternative forgone.
-**optimization** — making something as effective as possible; finding best solutions.
-**oracle** — a source 의 wisdom; 에서 컴퓨팅, a theoretical black box answering questions.
-**orthogonal** — at right angles; independent; unrelated.
-**oscillate** — to swing back 와 forth; fluctuate.
-**ostensible** — appearing or claimed to be true, though possibly not so.
-**overfit** — when a model learns training 데이터 too well, failing to generalize.
-**overhead** — extra resources required beyond 그 core task.
-**oxide** — a chemical compound containing oxygen.
+**objective** — 개인적 감정에 좌우되지 않는; 목표.
+**obligatory** — 반드시 필요한; 의무적인.
+**obfuscate** — 일부러 불분명하고 혼란스럽게 만들다.
+**objective function** — 최적화에서 최대화하거나 최소화하려는 함수.
+**observable** — 관찰 가능한; 프로그래밍에서는 이벤트 스트림.
+**obsolescence** — 구식이 되어 가는 과정.
+**occasional** — 가끔 일어나는; 불규칙한.
+**occlusion** — 막힘이나 가림; 시야에서 물체가 가려지는 현상.
+**octet** — 8개의 집합; 네트워킹에서는 8비트(바이트).
+**offload** — 작업을 다른 시스템이나 사람에게 넘기다.
+**omnibus** — 여러 항목을 한데 담은; 종합적인 것.
+**ontology** — 존재에 대한 철학적 탐구; CS에서는 지식의 형식적 표현 체계.
+**opaque** — 불투명한; 이해하기 어려운.
+**operationalize** — 실제 운영에 옮기다; 측정 가능한 지표로 정의하다.
+**opportunity cost** — 최선의 대안을 포기함으로써 잃는 가치; 기회비용.
+**optimization** — 가능한 한 효과적으로 만드는 것; 최적해를 찾는 과정.
+**oracle** — 지혜의 원천; 컴퓨팅에서는 질문에 답하는 이론적 블랙박스.
+**orthogonal** — 직각의; 서로 독립적이고 무관한.
+**oscillate** — 앞뒤로 흔들리다; 변동하다.
+**ostensible** — 겉보기에 또는 주장상으로는 그런.
+**overfit** — 모델이 학습 데이터를 지나치게 익혀 일반화에 실패하는 것.
+**overhead** — 핵심 작업 외에 추가로 드는 자원이나 비용.
+**oxide** — 산소를 포함하는 화합물; 산화물.
 
-**pacify** — to bring peace; calm or soothe.
-**palindrome** — a word or phrase reading 그 same backward 와 forward.
-**paradigm** — a typical example or pattern; a framework 의 thought.
-**parallel** — side by side; occurring simultaneously.
-**parameterize** — to express 에서 terms 의 parameters.
-**parity** — equality; evenness; error-checking bit.
-**parsimony** — extreme frugality; simplicity 에서 explanation (Occam's razor).
-**partial** — incomplete; biased toward one side.
-**partition** — to divide into parts; a section.
-**passive** — accepting without resistance; not active.
-**patent** — a government license granting exclusive rights; obvious.
-**pathological** — relating to disease; extremely abnormal.
-**peer** — an equal; to look closely.
-**penalty** — a punishment; disadvantage imposed 위한 breaking rules.
-**pending** — awaiting decision; not yet settled.
-**permutation** — an arrangement 의 items 에서 a specific order.
-**persona** — 그 aspect 의 someone's character; a fictional user representation.
-**perspective** — a particular viewpoint; 그 art 의 representing 3D on 2D.
-**pertinent** — relevant to 그 matter at hand.
-**pervasive** — spreading widely; omnipresent.
-**pessimistic** — expecting negative outcomes; assuming worst case.
-**phantom** — ghostly; illusory; 에서 databases, rows appearing unexpectedly.
-**phenomenology** — 그 study 의 structures 의 consciousness.
-**philosophy** — 그 study 의 fundamental questions about existence, knowledge, values.
-**phishing** — fraudulent attempts to obtain sensitive information via electronic 의사소통.
-**phoneme** — 그 smallest unit 의 sound distinguishing meaning.
-**phrase** — a group 의 words forming a unit; an expression.
-**pi** — 그 ratio 의 circle circumference to diameter (~3.14159).
-**placeholder** — a temporary stand-에서; a token to be replaced.
-**plagiarism** — presenting others' work as one's own.
-**platform** — a raised surface; a 컴퓨팅 environment; a service foundation.
-**plethora** — an excess; abundance.
-**pluripotent** — able to develop into many cell types.
-**podcast** — a digital audio program 사용 가능 위한 download.
-**polar** — relating to poles; having opposite extremes.
-**politic** — prudent; tactful; relating to government.
-**polymorphic** — having multiple forms; 에서 OOP, methods behaving differently by type.
-**polysemy** — a word having multiple related meanings.
-**posterior** — coming after; later; buttocks.
-**postulate** — assume as fact; a fundamental assumption.
-**pragmatic** — practical; concerned 와 함께 actual results.
-**precedent** — an earlier event serving as 가이드.
-**precision** — exactness; 에서 ML, true positives divided by predicted positives.
-**predicate** — 그 part 의 a sentence stating something about 그 subject; a function returning boolean.
-**predictive** — relating to prediction; forecasting 미래 이벤트.
-**prefix** — a morpheme added to 그 beginning 의 a word.
-**premise** — a statement forming 그 basis 의 an argument.
-**prescient** — having knowledge before it happens.
-**presupposition** — an assumption underlying an argument.
-**primordial** — existing from 그 beginning; primitive.
-**prior** — earlier; preceding; 에서 Bayesian 통계, initial belief.
-**probe** — to investigate; a device 위한 exploration.
-**procedural** — relating to procedures; a programming paradigm.
-**proclivity** — a tendency or inclination.
-**prodigious** — remarkably large; extraordinary.
-**proficient** — skilled; competent.
-**prognosis** — a forecast 의 disease outcome; prediction.
-**prolific** — highly productive.
-**promissory** — containing a promise.
-**propagate** — to spread; reproduce; transmit signals.
-**proponent** — a supporter; advocate.
-**proprietary** — owned exclusively; private.
-**prosody** — rhythm 와 intonation 에서 speech; poetry structure.
-**protocol** — a set 의 rules 위한 의사소통.
-**prototype** — an early model; original form.
-**provenance** — origin; source; 역사 의 ownership.
-**proximal** — nearest; close to a 참조 point.
-**proxy** — an agent; a substitute; a server forwarding requests.
-**pseudo** — false; fake; pretending to be.
-**psycholinguistics** — study 의 psychological aspects 의 언어.
-**public** — open to all; relating to people as a whole.
-**pundit** — an expert offering opinions 에서 media.
-**purport** — to claim; intended meaning.
-**pyramid** — a structure 와 함께 triangular sides; hierarchical organization.
+**pacify** — 평온하게 만들다; 달래다.
+**palindrome** — 앞에서 읽어도 뒤에서 읽어도 같은 단어나 구절.
+**paradigm** — 전형적 예시나 패턴; 사고의 틀.
+**parallel** — 나란한; 동시에 일어나는.
+**parameterize** — 매개변수의 형태로 표현하다.
+**parity** — 동등함; 짝수성; 오류 검사용 비트.
+**parsimony** — 지나친 절약; 설명에서의 단순성.
+**partial** — 불완전한; 한쪽으로 치우친.
+**partition** — 여러 부분으로 나누다; 구획.
+**passive** — 저항하지 않고 받아들이는; 능동적이지 않은.
+**patent** — 독점권을 주는 특허; 명백한.
+**pathological** — 질병과 관련된; 극도로 비정상적인.
+**peer** — 동등한 사람; 자세히 들여다보다.
+**penalty** — 벌이나 불이익; 규칙 위반에 대한 제재.
+**pending** — 결정이나 처리를 기다리는; 미결의.
+**permutation** — 일정한 순서를 고려한 배열; 순열.
+**persona** — 한 사람의 성격이나 이미지의 한 측면; 가상의 사용자 유형.
+**perspective** — 특정한 관점; 2D 평면에 3D를 표현하는 원근법.
+**pertinent** — 현재 문제와 관련 있는.
+**pervasive** — 널리 퍼진; 어디에나 있는.
+**pessimistic** — 부정적 결과를 예상하는; 최악을 가정하는.
+**phantom** — 유령 같은; 실체가 없는; 데이터베이스에서 예상치 않게 나타나는 행.
+**phenomenology** — 의식 구조를 연구하는 철학 분야.
+**philosophy** — 존재, 지식, 가치 같은 근본 문제를 탐구하는 학문.
+**phishing** — 전자적 의사소통을 통해 민감한 정보를 빼내려는 사기 수법.
+**phoneme** — 의미를 구별하는 가장 작은 소리 단위; 음소.
+**phrase** — 하나의 단위를 이루는 단어 묶음; 표현.
+**pi** — 원의 둘레와 지름의 비(~3.14159).
+**placeholder** — 임시로 대신 넣어 두는 것; 나중에 바꿀 토큰.
+**plagiarism** — 다른 사람의 작업을 자기 것처럼 제시하는 행위.
+**platform** — 받침대; 컴퓨팅 환경; 서비스의 기반.
+**plethora** — 과도할 정도로 많은 양; 풍부함.
+**pluripotent** — 여러 종류의 세포로 발달할 수 있는.
+**podcast** — 내려받아 들을 수 있는 디지털 오디오 프로그램.
+**polar** — 극지와 관련된; 서로 반대 극단을 가진.
+**politic** — 신중하고 처세에 밝은; 정치와 관련된.
+**polymorphic** — 여러 형태를 가진; OOP에서는 타입에 따라 다르게 동작하는.
+**polysemy** — 하나의 단어가 여러 관련 의미를 갖는 현상.
+**posterior** — 뒤에 오는; 후방의; 엉덩이.
+**postulate** — 사실로 가정하다; 기본 가정.
+**pragmatic** — 실용적인; 실제 결과를 중시하는.
+**precedent** — 이전 사례로서 기준이 되는 것; 선례.
+**precision** — 정밀도; ML에서는 예측한 양성 중 실제 양성의 비율.
+**predicate** — 주어에 대해 말하는 문장의 부분; 불리언 값을 돌려주는 함수.
+**predictive** — 예측과 관련된; 미래 사건을 전망하는.
+**prefix** — 단어 앞에 붙는 형태소; 접두사.
+**premise** — 논증의 기초가 되는 진술; 전제.
+**prescient** — 일이 일어나기 전에 미리 아는 듯한.
+**presupposition** — 논의의 바탕에 깔린 전제.
+**primordial** — 태초부터 존재한; 원시적인.
+**prior** — 더 이른; 앞선; 베이지안 통계에서의 사전 믿음.
+**probe** — 탐사하거나 조사하다; 탐사용 장치.
+**procedural** — 절차와 관련된; 절차형 프로그래밍의.
+**proclivity** — 성향; 기울어짐.
+**prodigious** — 엄청나게 큰; 놀라운.
+**proficient** — 능숙한; 숙련된.
+**prognosis** — 병의 경과 예측; 전망.
+**prolific** — 생산성이 매우 높은.
+**promissory** — 약속을 담고 있는.
+**propagate** — 퍼뜨리다; 번식시키다; 신호를 전달하다.
+**proponent** — 지지자; 옹호자.
+**proprietary** — 독점적으로 소유된; 비공개인.
+**prosody** — 말의 리듬과 억양; 시의 운율 구조.
+**protocol** — 의사소통을 위한 규칙의 집합.
+**prototype** — 초기 모델; 원형.
+**provenance** — 기원; 출처; 소유 이력.
+**proximal** — 가장 가까운; 기준점에 인접한.
+**proxy** — 대리인; 대체물; 요청을 전달하는 서버.
+**pseudo** — 거짓의; 가짜의; 가장한.
+**psycholinguistics** — 언어의 심리적 측면을 연구하는 분야.
+**public** — 모두에게 열려 있는; 공공의.
+**pundit** — 매체에서 의견을 제시하는 전문가.
+**purport** — 주장하다; 의도된 의미.
+**pyramid** — 피라미드 형태의 구조; 위계적 조직.
 
-**quantify** — to express as a number; measure.
-**quantum** — a discrete quantity; relating to quantum mechanics.
-**quarantine** — isolation to prevent disease spread; 보안 isolation.
-**query** — a question; a 데이터베이스 request.
-**quintessential** — representing 그 perfect example.
-**quotient** — 그 result 의 division; a ratio.
+**quantify** — 수치로 나타내다; 측정하다.
+**quantum** — 불연속적인 양; 양자역학과 관련된.
+**quarantine** — 질병 확산을 막기 위한 격리; 보안 격리.
+**query** — 질문; 데이터베이스 질의.
+**quintessential** — 어떤 것의 완벽한 전형을 보여 주는.
+**quotient** — 나눗셈의 결과; 몫.
 
-**radical** — thoroughgoing; extreme; relating to roots.
-**random** — lacking pattern; unpredictable.
-**range** — 그 set 의 output values; extent; distance.
-**raster** — a grid 의 pixels; bitmap image.
-**ratify** — to formally approve; confirm.
-**rational** — based on reason; expressible as a fraction.
-**recursion** — a function calling itself; self-참조.
-**redundancy** — repetition; backup; unnecessary duplication.
-**refinement** — improvement; making more precise.
-**reflection** — thinking deeply; 에서 programming, examining structure at runtime.
-**regression** — return to earlier state; 에서 통계, modeling relationships.
-**regularization** — preventing overfitting by adding penalties.
-**relational** — concerning relationships; 데이터베이스 model using tables.
-**reliance** — dependence; trust.
-**remediation** — correction; fixing problems.
-**rendezvous** — a meeting; to meet at an appointed time.
-**replication** — copying; reproducing experiments.
-**repository** — a storage location; a code archive.
-**representational** — depicting something; standing 위한.
-**resilience** — ability to recover; bounce back.
-**resolution** — detail level; decision; solving a problem.
-**resonance** — reinforcement by vibration; emotional connection.
-**restitution** — restoration; compensation 위한 loss.
-**retrospective** — looking back; review 의 past 이벤트.
-**reverberate** — echo; resonate.
-**revision** — review 와 alteration; new version.
-**rhizome** — underground stem; non-hierarchical structure (philosophy).
-**robustness** — strength; resilience to errors.
-**root cause** — 그 fundamental reason 위한 a problem.
-**rotation** — turning around an axis.
-**rudimentary** — basic; undeveloped.
-**runtime** — 그 time when a program executes; execution environment.
+**radical** — 철저한; 급진적인; 뿌리와 관련된.
+**random** — 규칙성이 없는; 예측할 수 없는.
+**range** — 출력값의 집합; 범위; 거리.
+**raster** — 픽셀 격자; 비트맵 이미지.
+**ratify** — 공식적으로 승인하다; 비준하다.
+**rational** — 이성에 근거한; 분수로 나타낼 수 있는.
+**recursion** — 함수가 자기 자신을 호출하는 것; 재귀.
+**redundancy** — 반복; 백업; 불필요한 중복.
+**refinement** — 개선; 더 정밀하게 다듬는 것.
+**reflection** — 깊이 생각함; 프로그래밍에서는 런타임에 구조를 조사하는 것.
+**regression** — 이전 상태로 돌아감; 통계에서는 관계를 모델링하는 기법.
+**regularization** — 패널티를 추가해 과적합을 막는 기법.
+**relational** — 관계와 관련된; 테이블을 사용하는 데이터베이스 모델의.
+**reliance** — 의존; 신뢰.
+**remediation** — 교정; 문제 해결 조치.
+**rendezvous** — 미리 정한 만남; 회합.
+**replication** — 복제; 실험 반복 재현.
+**repository** — 저장소; 코드 보관소.
+**representational** — 어떤 것을 묘사하거나 대변하는.
+**resilience** — 회복력; 다시 튀어 오르는 힘.
+**resolution** — 해상도; 결정; 문제 해결.
+**resonance** — 공명; 감정적 울림.
+**restitution** — 원상회복; 손실 보상.
+**retrospective** — 되돌아보는; 과거를 검토하는 회고.
+**reverberate** — 메아리치다; 울리다.
+**revision** — 검토와 수정; 새 판본.
+**rhizome** — 땅속줄기; 비위계적 구조를 가리키는 철학 개념.
+**robustness** — 견고함; 오류에 대한 강인함.
+**root cause** — 문제의 근본 원인.
+**rotation** — 축을 중심으로 도는 회전.
+**rudimentary** — 기초적인; 덜 발달한.
+**runtime** — 프로그램이 실행되는 시간; 실행 환경.
 
-**sacrifice** — giving up something valued; offering.
-**salient** — prominent; noticeable.
-**sanction** — approval; penalty.
-**sandbox** — a 안전한 테스트 environment; a play area.
-**saturation** — full capacity; intense color.
-**scalar** — a single number; magnitude without direction.
-**schema** — a structured framework; 데이터베이스 design.
-**schism** — a split or division.
-**scope** — extent; range 의 effect; variable visibility.
-**scrutable** — understandable; comprehensible.
-**semantic** — relating to meaning.
-**semaphore** — a signaling mechanism; flag.
-**senescence** — aging; deterioration 와 함께 age.
-**sentient** — capable 의 feeling; conscious.
-**sequential** — 에서 order; one after another.
-**serendipity** — fortunate accidental discovery.
-**serialization** — converting objects to storable/transmittable format.
-**set** — a collection 의 distinct elements.
-**shader** — a program determining pixel colors 에서 graphics.
-**shard** — a fragment; 데이터베이스 partition.
-**sigmoid** — S-shaped curve; activation function.
-**similarity** — resemblance; degree 의 likeness.
-**simulation** — imitation 의 real processes.
-**singular** — unique; extraordinary; grammatical form.
-**skeuomorphic** — design mimicking physical objects.
-**slash** — to cut; 그 / character.
-**snapshot** — a momentary view; backup at a point 에서 time.
-**socket** — an endpoint 위한 네트워크 의사소통.
-**softmax** — a function converting values to probabilities.
-**sovereign** — supreme ruler; independent nation.
-**sparse** — thinly scattered; mostly empty.
-**specification** — a detailed description 의 requirements.
-**spectrum** — a range; band 의 colors.
-**spherical** — shaped like a sphere.
-**spurious** — false; fake; not genuine.
-**stability** — firmness; resistance to change.
-**stack** — a 데이터 structure (LIFO); layers; pile.
-**stakeholder** — anyone affected by decisions.
-**stall** — to stop progressing; delay.
-**standardize** — to make conform to standards.
-**state** — condition; 에서 컴퓨팅, stored information; political entity.
-**static** — unchanging; stationary; compile-time.
-**statistical** — relating to 데이터 analysis 와 probability.
-**status** — position; standing; state.
-**stochastic** — randomly determined; probabilistic.
-**stratify** — to arrange 에서 layers or classes.
-**stream** — a continuous flow; sequence 의 데이터.
-**stress** — pressure; emphasis; strain.
-**stride** — a long step; step size 에서 iteration.
-**string** — a sequence 의 characters; cord.
-**structural** — relating to structure or organization.
-**subroutine** — a procedure within a program; function.
-**subset** — a set contained within another.
-**substantiate** — to provide evidence; prove.
-**subtle** — delicate; not obvious.
-**suffix** — a morpheme added to word ends.
-**summation** — 그 addition 의 a sequence.
-**superposition** — placement on top; quantum state combination.
-**supervised** — 와 함께 oversight; ML 와 함께 labeled 데이터.
-**supplant** — to replace; supersede.
-**surrogate** — a substitute; proxy.
-**susceptible** — vulnerable; likely to be affected.
-**지속 가능성** — ability to continue long-term.
-**suture** — to stitch; surgical stitching.
-**syllable** — a unit 의 pronunciation.
-**symbolic** — representing something else; using symbols.
-**symmetry** — balanced proportions; invariance under transformation.
-**synapse** — junction between neurons.
-**synchrony** — simultaneous occurrence.
-**syndrome** — a set 의 symptoms; pattern 의 characteristics.
-**synonym** — a word similar 에서 meaning.
-**synopsis** — a brief summary.
-**구문** — grammatical structure; rules 위한 valid expressions.
-**synthesis** — combination forming a whole.
-**systemic** — affecting 그 entire system.
+**sacrifice** — 소중한 것을 포기함; 제물이나 희생.
+**salient** — 두드러진; 눈에 띄는.
+**sanction** — 승인; 제재나 처벌.
+**sandbox** — 안전한 테스트 환경; 모래놀이 공간.
+**saturation** — 포화 상태; 짙은 색감.
+**scalar** — 하나의 수로 표현되는 값; 방향 없는 크기.
+**schema** — 구조화된 틀; 데이터베이스 설계.
+**schism** — 분열; 갈라짐.
+**scope** — 범위; 영향력; 변수의 유효 범위.
+**scrutable** — 이해할 수 있는; 파악 가능한.
+**semantic** — 의미와 관련된.
+**semaphore** — 신호 전달 장치; 세마포어.
+**senescence** — 노화; 나이 들며 진행되는 쇠퇴.
+**sentient** — 감각이나 의식을 지닌.
+**sequential** — 순서대로 진행되는.
+**serendipity** — 뜻밖의 행운에서 오는 발견.
+**serialization** — 객체를 저장·전송 가능한 형식으로 바꾸는 것.
+**set** — 서로 다른 원소들의 모임; 집합.
+**shader** — 그래픽에서 픽셀 색을 결정하는 프로그램.
+**shard** — 조각; 데이터베이스 파티션.
+**sigmoid** — S자 모양 곡선; 활성화 함수.
+**similarity** — 닮음; 유사성의 정도.
+**simulation** — 실제 과정을 모방한 것; 시뮬레이션.
+**singular** — 유일한; 특별한; 문법의 단수형.
+**skeuomorphic** — 실제 물건의 형태를 본뜬 디자인의.
+**slash** — 베다; `/` 문자.
+**snapshot** — 특정 시점의 상태를 담은 것; 스냅샷 백업.
+**socket** — 네트워크 의사소통의 종단점.
+**softmax** — 값을 확률로 변환하는 함수.
+**sovereign** — 최고 통치자; 독립 국가의.
+**sparse** — 드문드문한; 대부분 비어 있는.
+**specification** — 요구사항의 상세한 설명.
+**spectrum** — 범위; 색의 띠.
+**spherical** — 구 모양의.
+**spurious** — 거짓의; 진짜가 아닌.
+**stability** — 안정성; 변화에 대한 저항.
+**stack** — 후입선출(LIFO) 데이터 구조; 층; 더미.
+**stakeholder** — 의사결정의 영향을 받는 사람이나 집단.
+**stall** — 진행이 멈추다; 지연되다.
+**standardize** — 기준에 맞추어 표준화하다.
+**state** — 상태; 컴퓨팅에서는 저장된 정보; 국가.
+**static** — 변하지 않는; 정적인; 컴파일 시점의.
+**statistical** — 데이터 분석과 확률에 관련된.
+**status** — 현재 상태; 지위.
+**stochastic** — 무작위성에 의해 결정되는; 확률적인.
+**stratify** — 층이나 계층으로 나누다.
+**stream** — 연속적인 흐름; 데이터의 연속열.
+**stress** — 압박; 강조; 부담.
+**stride** — 큰 걸음; 반복에서의 간격.
+**string** — 문자열; 문자들의 연속; 끈.
+**structural** — 구조나 조직과 관련된.
+**subroutine** — 프로그램 안의 절차; 함수.
+**subset** — 다른 집합 안에 포함된 집합; 부분집합.
+**substantiate** — 증거를 제시해 입증하다.
+**subtle** — 미묘한; 뚜렷하지 않은.
+**suffix** — 단어 끝에 붙는 형태소; 접미사.
+**summation** — 수열이나 항들의 합.
+**superposition** — 위에 겹쳐 놓는 것; 양자 상태의 중첩.
+**supervised** — 감독이 있는; ML에서는 라벨이 있는 데이터로 학습하는.
+**supplant** — 대신 차지하다; 대체하다.
+**surrogate** — 대리물; 대체물; 프록시.
+**susceptible** — 영향을 받기 쉬운; 취약한.
+**지속 가능성** — 장기간 계속될 수 있는 능력; 지속가능성.
+**suture** — 꿰매다; 수술용 봉합.
+**syllable** — 발음의 한 단위; 음절.
+**symbolic** — 다른 것을 상징하는; 기호를 사용하는.
+**symmetry** — 균형 잡힌 비례; 변환 후에도 성질이 유지되는 대칭성.
+**synapse** — 뉴런 사이의 연결 부위; 시냅스.
+**synchrony** — 동시에 일어남; 동시성.
+**syndrome** — 일련의 증상; 특징적 패턴.
+**synonym** — 비슷한 뜻을 가진 단어; 동의어.
+**synopsis** — 짧은 개요; 줄거리 요약.
+**구문** — 올바른 표현을 이루는 문법적 구조와 규칙.
+**synthesis** — 여러 요소를 결합해 하나의 전체를 만드는 것.
+**systemic** — 시스템 전체에 영향을 미치는.
 
-**tacit** — understood without being stated.
-**tactical** — relating to strategy; short-term planning.
-**tangent** — touching at one point; diverging from topic.
-**tautology** — saying 그 same thing twice; logically always true.
-**taxonomy** — classification scheme.
-**teleology** — explanation by purpose or design.
-**tempered** — moderated; hardened (metal).
-**temporal** — relating to time; worldly.
-**tendency** — inclination; trend.
-**tensor** — a multi-dimensional array; 에서 physics, generalized vector.
-**terminology** — specialized vocabulary.
-**ternary** — consisting 의 three parts; base-3.
-**terrestrial** — relating to Earth; land-based.
-**testament** — evidence; will; covenant.
-**theorem** — a provable mathematical statement.
-**theory** — a well-substantiated explanation; conjecture.
-**thermal** — relating to heat.
-**threshold** — a limit triggering action.
-**throughput** — amount processed 에서 given time.
-**timbre** — tone quality; sound color.
-**topology** — study 의 spatial properties; 네트워크 layout.
-**torque** — rotational force.
-**trace** — to follow; record; sum 의 diagonal elements.
-**trademark** — a registered brand identifier.
-**trajectory** — path 의 a projectile; course 의 개발.
-**transcend** — to go beyond; surpass.
-**transcript** — written record; RNA copy 의 DNA.
-**transformation** — thorough change; mathematical mapping.
-**transient** — temporary; passing.
-**transpose** — to reverse position; swap rows 와 columns.
-**triage** — prioritizing by urgency.
-**trigonometry** — study 의 triangle relationships.
-**trivial** — simple; unimportant; mathematically obvious.
-**trope** — a common theme or device.
-**troubleshoot** — to diagnose 와 fix problems.
-**truncate** — to shorten by cutting off.
-**trust** — confidence; reliance; 법적 arrangement.
-**turbulence** — chaotic fluid motion; instability.
-**tutorial** — instructional lesson.
-**tuple** — an ordered list 의 elements.
-**turing-완전한** — capable 의 universal computation.
-**typology** — study 의 types or classifications.
+**tacit** — 말로 드러내지 않아도 이해되는.
+**tactical** — 전략과 관련된; 단기 계획의.
+**tangent** — 한 점에서 접하는; 주제에서 벗어난 이야기.
+**tautology** — 같은 말을 되풀이하는 것; 논리적으로 항상 참인 명제.
+**taxonomy** — 분류 체계.
+**teleology** — 목적이나 설계로 설명하는 관점; 목적론.
+**tempered** — 절제된; 담금질된.
+**temporal** — 시간과 관련된; 세속적인.
+**tendency** — 경향; 성향.
+**tensor** — 다차원 배열; 물리학에서는 일반화된 벡터량.
+**terminology** — 전문 어휘 체계; 용어.
+**ternary** — 세 부분으로 이루어진; 3진법의.
+**terrestrial** — 지구와 관련된; 육상에 사는.
+**testament** — 증거; 유언; 계약.
+**theorem** — 증명 가능한 수학 명제; 정리.
+**theory** — 잘 뒷받침된 설명; 이론.
+**thermal** — 열과 관련된.
+**threshold** — 행동을 촉발하는 한계점.
+**throughput** — 일정 시간 동안 처리되는 양.
+**timbre** — 음색; 소리의 질감.
+**topology** — 공간적 성질을 연구하는 분야; 네트워크 배치 구조.
+**torque** — 회전시키는 힘; 토크.
+**trace** — 따라가다; 기록; 대각 원소의 합.
+**trademark** — 등록된 브랜드 식별자; 상표.
+**trajectory** — 투사체의 경로; 발전의 방향과 과정.
+**transcend** — 넘어서다; 초월하다.
+**transcript** — 글로 옮긴 기록; DNA를 옮긴 RNA 사본.
+**transformation** — 철저한 변화; 수학적 사상.
+**transient** — 일시적인; 잠깐 지나가는.
+**transpose** — 위치를 바꾸다; 행과 열을 맞바꾸다.
+**triage** — 긴급도에 따라 우선순위를 정하는 것.
+**trigonometry** — 삼각형의 관계를 연구하는 수학 분야; 삼각법.
+**trivial** — 단순한; 중요하지 않은; 수학적으로 자명한.
+**trope** — 흔히 쓰이는 주제나 표현 장치.
+**troubleshoot** — 문제를 진단하고 고치다.
+**truncate** — 잘라서 짧게 만들다.
+**trust** — 신뢰; 의존; 법적 신탁 관계.
+**turbulence** — 난류; 불안정한 혼란 상태.
+**tutorial** — 학습용 안내 자료; 튜토리얼.
+**tuple** — 순서가 있는 원소들의 목록.
+**튜링 완전** — 범용 계산을 수행할 수 있는.
+**typology** — 유형이나 분류를 연구하는 분야.
 
-**ubiquitous** — present everywhere.
-**ulterior** — hidden; beyond what is evident.
-**uncanny** — strangely familiar; eerie.
-**unconscious** — not aware; below consciousness.
-**underscore** — to emphasize; 그 _ character.
-**underwrite** — to guarantee financially; 지원.
-**uniform** — consistent; a distinctive outfit.
-**unilateral** — one-sided; by one party.
-**unique** — one 의 a kind.
-**universal** — applicable everywhere; general.
-**unix** — a family 의 operating 시스템.
-**unsupervised** — without labels; ML finding patterns alone.
-**utilitarian** — practical; maximizing overall happiness.
-**utterance** — something spoken; vocal expression.
+**ubiquitous** — 어디에나 존재하는.
+**ulterior** — 숨겨진; 겉으로 보이는 것 너머의.
+**uncanny** — 묘하게 익숙하면서도 섬뜩한.
+**unconscious** — 의식하지 못하는; 무의식의.
+**underscore** — 강조하다; `_` 문자.
+**underwrite** — 재정적으로 보증하다; 지원하다.
+**uniform** — 일관된; 제복.
+**unilateral** — 한쪽만의; 일방적인.
+**unique** — 유일무이한.
+**universal** — 어디에나 적용되는; 보편적인.
+**unix** — 운영체제 계열의 하나.
+**unsupervised** — 라벨 없이 패턴을 스스로 찾는 ML 방식의.
+**utilitarian** — 실용적인; 전체 행복의 극대화를 중시하는.
+**utterance** — 말해진 것; 발화.
 
-**vacuous** — empty; lacking content.
-**vagrant** — wandering; homeless.
-**valid** — logically sound; legally acceptable.
-**valence** — combining power; emotional charge.
-**vanilla** — plain; standard; unmodified.
-**variable** — changeable; a named storage location.
-**variance** — variability; statistical dispersion.
-**vector** — a quantity 와 함께 direction 와 magnitude; an array.
-**vegetative** — relating to plants; automatic bodily functions.
-**velocity** — speed 와 함께 direction.
-**vendor** — a seller; supplier.
-**verbose** — using more words than needed.
-**verification** — confirming truth or accuracy.
-**vernacular** — everyday 언어; local dialect.
-**versatile** — adaptable; multi-purpose.
-**vertex** — a corner point; highest point.
-**vertical** — upright; industry-specific.
-**vested** — secured; guaranteed.
-**viable** — capable 의 working; feasible.
-**vicarious** — experienced through another.
-**virtual** — simulated; nearly; 에서 컴퓨팅, emulated.
-**viscosity** — resistance to flow; thickness.
-**visual** — relating to sight.
-**volatile** — unstable; evaporating easily; memory losing 데이터 without power.
-**volume** — amount; loudness; 3D space.
-**vulnerability** — weakness; susceptibility to attack.
+**vacuous** — 텅 빈; 내용이 없는.
+**vagrant** — 떠돌아다니는; 부랑의.
+**valid** — 논리적으로 타당한; 법적으로 유효한.
+**valence** — 결합력; 감정적 가치나 강도.
+**vanilla** — 꾸밈없는 기본형의; 표준적인.
+**variable** — 변할 수 있는; 이름 붙은 저장 위치.
+**variance** — 변동성; 통계적 분산.
+**vector** — 방향과 크기를 가진 양; 벡터; 배열.
+**vegetative** — 식물과 관련된; 자동적인 생리 기능의.
+**velocity** — 방향을 포함한 속도.
+**vendor** — 판매자; 공급업체.
+**verbose** — 필요 이상으로 말이 많은; 장황한.
+**verification** — 진실이나 정확성의 확인.
+**vernacular** — 일상 언어; 지역 방언.
+**versatile** — 적응력이 뛰어난; 다목적의.
+**vertex** — 모서리점; 꼭짓점.
+**vertical** — 수직의; 특정 산업 분야에 특화된.
+**vested** — 이미 보장된; 확정된.
+**viable** — 실행 가능하거나 작동 가능한.
+**vicarious** — 다른 사람을 통해 간접적으로 경험하는.
+**virtual** — 가상적인; 거의 그런; 컴퓨팅에서는 에뮬레이션된.
+**viscosity** — 흐름에 대한 저항; 점성.
+**visual** — 시각과 관련된.
+**volatile** — 불안정한; 쉽게 증발하는; 전원이 꺼지면 데이터를 잃는 메모리의.
+**volume** — 양; 음량; 3차원 공간의 부피.
+**vulnerability** — 취약점; 공격받기 쉬운 약점.
 
-**waive** — to give up; refrain from enforcing.
-**wanderlust** — strong desire to travel.
-**want** — to desire; lack.
-**warfare** — armed conflict; competitive struggle.
-**warrant** — authorization; justification.
-**warranty** — a guarantee; assurance.
-**waveform** — shape 의 a wave.
-**weakness** — lack 의 strength; vulnerability.
-**웹** — a 네트워크; 그 World Wide 웹.
-**weight** — importance; heaviness; parameter value 에서 ML.
-**well-formed** — correctly structured.
-**what-if** — hypothetical scenario analysis.
-**whitelist** — approved list; allowlist.
-**wildcard** — a placeholder matching any character; unpredictable element.
-**window** — an opening; a viewing area; time interval.
-**wireframe** — a skeletal visual 가이드.
-**wisdom** — deep understanding; good judgment.
-**workaround** — a temporary solution bypassing a problem.
-**worldview** — a comprehensive perspective on life.
-**wrapper** — something enclosing; code adapting interfaces.
-**write-up** — a report; documentation.
+**waive** — 권리나 요구를 포기하다.
+**wanderlust** — 여행하고 싶은 강한 욕구.
+**want** — 원하다; 부족하다.
+**warfare** — 무력 충돌; 경쟁적 투쟁.
+**warrant** — 권한 부여; 정당화 근거.
+**warranty** — 품질 보증; 보증서.
+**waveform** — 파형; 파도의 모양.
+**weakness** — 힘이 부족함; 취약점.
+**웹** — 네트워크; World Wide Web.
+**weight** — 중요성; 무게; ML에서의 파라미터 값.
+**well-formed** — 형식이 올바르게 갖추어진.
+**what-if** — 가정을 바탕으로 한 시나리오 분석.
+**whitelist** — 허용된 항목 목록; allowlist.
+**wildcard** — 어떤 문자와도 대응하는 자리표시자; 예측 불가능한 요소.
+**window** — 창; 화면 영역; 시간 구간.
+**wireframe** — 기본 골격만 보여 주는 시각적 설계안.
+**wisdom** — 깊은 이해와 올바른 판단력.
+**workaround** — 문제를 우회하는 임시 해결책.
+**worldview** — 삶과 세상을 보는 포괄적 관점.
+**wrapper** — 무언가를 감싸는 것; 인터페이스를 맞추는 코드.
+**write-up** — 보고서; 문서화된 정리.
 
-**x-axis** — horizontal axis 에서 coordinates.
-**xenon** — a noble gas element.
-**xerox** — to photocopy; brand name.
-**xml** — Extensible Markup 언어.
-**xpath** — a query 언어 위한 XML.
-**xylophone** — a percussion instrument.
+**x-axis** — 좌표계의 가로축; x축.
+**xenon** — 비활성 기체 원소인 제논.
+**xerox** — 복사하다; 상표명 Xerox.
+**xml** — Extensible Markup Language.
+**xpath** — XML을 위한 질의 언어.
+**xylophone** — 실로폰; 타악기.
 
-**yacht** — a recreational boat.
-**yaml** — a human-readable 데이터 serialization format.
-**yardstick** — a measuring stick; standard 의 comparison.
-**yearning** — a longing desire.
-**yield** — to produce; give way; return value.
+**yacht** — 레저용 보트; 요트.
+**yaml** — 사람이 읽기 쉬운 데이터 직렬화 형식.
+**yardstick** — 길이를 재는 막대; 비교 기준.
+**yearning** — 간절한 그리움이나 열망.
+**yield** — 생산하다; 양보하다; 반환값.
 
-**zenith** — 그 highest point; peak.
-**zero** — nothing; 그 number 0.
-**zip** — to fasten; compress files; move quickly.
-**zone** — an area 와 함께 specific characteristics.
-**zoom** — to magnify; change focal length.
+**zenith** — 가장 높은 지점; 절정.
+**zero** — 아무것도 없음; 숫자 0.
+**zip** — 잠그다; 파일을 압축하다; 빠르게 움직이다.
+**zone** — 특정한 특성을 지닌 구역.
+**zoom** — 확대하다; 초점 거리를 바꾸다.

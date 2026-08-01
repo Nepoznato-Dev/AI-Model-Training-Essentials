@@ -5,7 +5,7 @@ Hinweis: Technische Begriffe, Codebeispiele und Eigennamen können auf Englisch 
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Technologie und Datenverarbeitung
+# Technologie und Informatik
 
 ## Was ist ein Computer?
 
@@ -53,11 +53,11 @@ Objektorientierte Programmierung (OOP) organisiert Code in Objekten, die Daten u
 
 ## Grundlagen von Cloud und DevOps
 
-Cloud-Computing bietet On-Demand-Infrastruktur und verwaltete Dienste über das Internet. Die drei großen öffentlichen Cloud-Anbieter sind AWS (Amazon Web Services), Microsoft Azure und Google Cloud Platform (GCP). Gängige Servicemodelle sind IaaS (Infrastruktur), PaaS (Plattform) und SaaS (Software). Zu den wichtigsten Cloud-Bausteinen gehören Compute-Instanzen/Container, Objektspeicher, verwaltete Datenbanken, Netzwerke und IAM (Identity and Access Management). CI/CD (Continuous Integration und Continuous Delivery/Bereitstellung) automatisiert Build-, Test- und Release-Pipelines, sodass Code sicher vom Commit bis zur Produktion gelangen kann. Docker packt Anwendungen und Abhängigkeiten in portable Container; in der Produktion werden diese Container typischerweise über Orchestratoren (wie Kubernetes), serverlose Plattformen oder verwaltete Containerdienste bereitgestellt.
+Cloud-Computing bietet bedarfsgerechte Infrastruktur und verwaltete Dienste über das Internet. Die drei großen öffentlichen Cloud-Anbieter sind AWS (Amazon Web Services), Microsoft Azure und Google Cloud Platform (GCP). Gängige Servicemodelle sind IaaS (Infrastruktur), PaaS (Plattform) und SaaS (Software). Zu den wichtigsten Cloud-Bausteinen gehören Compute-Instanzen/Container, Objektspeicher, verwaltete Datenbanken, Netzwerke und IAM (Identity and Access Management). CI/CD (Continuous Integration und Continuous Delivery/Bereitstellung) automatisiert Build-, Test- und Release-Pipelines, sodass Code sicher vom Commit bis zur Produktion gelangen kann. Docker packt Anwendungen und Abhängigkeiten in portable Container; in der Produktion werden diese Container typischerweise über Orchestratoren (wie Kubernetes), serverlose Plattformen oder verwaltete Containerdienste bereitgestellt.
 
 ## Datenformate und Werkzeuge
 
-JSON (JavaScript Object Notation) ist ein leichtgewichtiges Textformat, das aus Objekten (Schlüssel/Wert-Paaren), Arrays, Strings, Zahlen, Booleschen Werten und Null aufgebaut ist; es wird häufig in APIs verwendet. YAML ist ein benutzerfreundliches Konfigurationsformat, das verschachtelte Strukturen und Kommentare unterstützt und häufig in CI/CD und Infrastrukturdefinitionen verwendet wird. CSV (Comma-Separated Values) speichert Tabellendaten als Zeilen von getrenntem Text und ist üblich für Datenimport-/exportpipelines. XML (eXtensible Markup Language) ist ein tagbasiertes strukturiertes Format, das in Legacy-Systemen, Konfigurationen und Dokumentenworkflows verwendet wird. Entwickler validieren und transformieren diese Formate häufig mit Lintern, Schemavalidatoren (wie JSON Schema), Abfragetools (`jq`, XPath) und Parsing-Bibliotheken in ihrer Programmiersprache.
+JSON (JavaScript Object Notation) ist ein leichtgewichtiges Textformat, das aus Objekten (Schlüssel/Wert-Paaren), Arrays, Strings, Zahlen, Booleschen Werten und Null aufgebaut ist; es wird häufig in APIs verwendet. YAML ist ein benutzerfreundliches Konfigurationsformat, das verschachtelte Strukturen und Kommentare unterstützt und häufig in CI/CD und Infrastrukturdefinitionen verwendet wird. CSV (Comma-Separated Values) speichert Tabellendaten als Zeilen getrennten Texts und ist ein übliches Format für Datenimport- und -exportpipelines. XML (eXtensible Markup Language) ist ein tagbasiertes strukturiertes Format, das in Legacy-Systemen, Konfigurationen und Dokumentenworkflows verwendet wird. Entwickler validieren und transformieren diese Formate häufig mit Lintern, Schemavalidatoren (wie JSON Schema), Abfragetools (`jq`, XPath) und Parsing-Bibliotheken in ihrer Programmiersprache.
 
 ## Reguläre Ausdrücke (Regex)
 

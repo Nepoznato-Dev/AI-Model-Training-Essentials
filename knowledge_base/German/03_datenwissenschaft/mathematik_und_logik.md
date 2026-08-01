@@ -9,7 +9,7 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 ## Was ist Mathematik?
 
-Mathematik ist das Studium von Zahlen, Formen, Mustern und logischen Beziehungen. Sie ist sowohl eine Wissenschaft als auch eine Sprache, die verwendet wird, um das Universum zu beschreiben. Die Mathematik ist in Zweige unterteilt, darunter Arithmetik, Algebra, Geometrie, Analysis, Statistik und Logik. Mathematik ist die Grundlage für Physik, Ingenieurwesen, Informatik, Wirtschaft und viele andere Bereiche.
+Mathematik ist die Beschäftigung mit Zahlen, Formen, Mustern und logischen Beziehungen. Sie ist sowohl eine Wissenschaft als auch eine Sprache, die verwendet wird, um das Universum zu beschreiben. Die Mathematik ist in Zweige unterteilt, darunter Arithmetik, Algebra, Geometrie, Analysis, Statistik und Logik. Mathematik ist die Grundlage für Physik, Ingenieurwesen, Informatik, Wirtschaft und viele andere Bereiche.
 
 ## Arithmetik
 
@@ -98,7 +98,7 @@ Eine **Zufallsvariable** ist eine Variable, deren Wert vom Ergebnis eines Zufall
 
 Beim Maschinellen Lernen bildet Wahrscheinlichkeit die Grundlage für Klassifizierungskonfidenz, Unsicherheitsschätzung, bayessche Methoden und viele Verlustfunktionen (wie Kreuzentropie).
 
-## Analysis (Calculus)
+## Analysis (Infinitesimalrechnung)
 
 Die Analysis ist der Zweig der Mathematik, der kontinuierliche Veränderung untersucht.
 
@@ -112,7 +112,7 @@ Die Analysis ist der Zweig der Mathematik, der kontinuierliche Veränderung unte
 
 **Integralrechnung** befasst sich mit der Akkumulation von Größen und Flächen unter Kurven unter Verwendung von **Integralen**. Das Integral repräsentiert die Fläche unter der Kurve zwischen zwei Punkten.
 
-Der **Hauptsatz der Analysis** verbindet Differentiation und Integration: Differentiation und Integration sind inverse Operationen.
+Der **Hauptsatz der Analysis** verbindet Ableitung und Integration: Beide sind inverse Operationen.
 
 Die Analysis wurde unabhängig von Isaac Newton und Gottfried Wilhelm Leibniz im 17. Jahrhundert entwickelt.
 
@@ -147,7 +147,7 @@ Die Logik ist das Studium des gültigen Schlussfolgerns.
 
 ## Mengen
 
-Eine **Menge** ist eine Sammlung von distincten Objekten.
+Eine **Menge** ist eine Sammlung von verschiedenen Objekten.
 - **Vereinigung** (A ∪ B): alle Elemente aus beiden Mengen
 - **Schnittmenge** (A ∩ B): nur Elemente, die beiden gemeinsam sind
 - **Leere Menge** (∅ oder {}): enthält keine Elemente

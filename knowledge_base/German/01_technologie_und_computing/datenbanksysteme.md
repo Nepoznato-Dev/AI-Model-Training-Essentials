@@ -72,7 +72,7 @@ DELETE FROM users WHERE id = 1;
 - **Oracle**: Enterprise-Funktionen, Skalierbarkeit, teuer
 - **SQL Server**: Microsoft-Ökosystem, integrierte Tools
 - **SQLite**: Eingebettet, serverlos, leichtgewichtig
-- **MariaDB**: MySQL-Abspaltung, Open-Source
+- **MariaDB**: Quelloffene MySQL-Abspaltung
 
 ## NoSQL-Datenbanken
 
@@ -87,7 +87,7 @@ DELETE FROM users WHERE id = 1;
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### Key-Value Stores
+#### Schlüssel-Wert-Speicher
 - **Struktur**: Einfache Schlüssel-Wert-Paare
 - **Einsatzgebiete**: Caching, Sitzungen, Einkaufswagen
 - **Beispiele**: Redis, DynamoDB, Riak
@@ -115,16 +115,16 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 ## Datenbankdesign
 
-### Entity-Relationship-Modellierung
+### Entitäts-Beziehungs-Modellierung
 - **Entitäten**: Objekte/Konzepte (Kunde, Produkt, Bestellung)
 - **Attribute**: Eigenschaften von Entitäten (Name, Preis, Datum)
 - **Beziehungen**: Verbindungen zwischen Entitäten (eins-zu-eins, eins-zu-viele, viele-zu-viele)
 - **Kardinalität**: Anzahl von Instanzen in einer Beziehung
 
-### Schema-Design-Muster
-- **Single Table Inheritance**: Alle Typen in einer Tabelle mit Typ-Diskriminator
-- **Class Table Inheritance**: Separate Tabellen für Basis- und Unterklassen
-- **Concrete Table Inheritance**: Separate Tabelle für jede konkrete Klasse
+### Schemadesign-Muster
+- **Vererbung in einer Tabelle**: Alle Typen in einer Tabelle mit Typ-Diskriminator
+- **Vererbung mit Klassentabellen**: Separate Tabellen für Basis- und Unterklassen
+- **Vererbung mit konkreten Tabellen**: Separate Tabelle für jede konkrete Klasse
 - **Verknüpfungstabellen**: Lösen von viele-zu-viele-Beziehungen
 - **Audit-Tabellen**: Verfolgen von Änderungen (created_at, updated_at, deleted_at)
 
@@ -135,7 +135,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Volltext**: Textsuchfunktionen
 - **Räumlich**: Geografische Daten (GIS)
 - **Zusammengesetzt**: Mehrere Spalten kombiniert
-- **Covering**: Enthält alle für die Abfrage benötigten Spalten
+- **Abdeckend**: Enthält alle für die Abfrage benötigten Spalten
 
 ## Abfrageoptimierung
 
@@ -161,18 +161,18 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 ## Transaktionen und Nebenläufigkeit
 
-### Transaktionsisolationslevel
+### Transaktions-Isolationsebenen
 - **READ UNCOMMITTED**: Niedrigste Isolation, Dirty Reads möglich
 - **READ COMMITTED**: Nur committete Daten sichtbar (Standard in den meisten DBs)
 - **REPEATABLE READ**: Gleiche Abfrage liefert innerhalb der Transaktion gleiche Ergebnisse
 - **SERIALIZABLE**: Höchste Isolation, Transaktionen werden sequenziell ausgeführt
 
 ### Nebenläufigkeitskontrolle
-- **Pessimistic Locking**: Ressourcen vor dem Zugriff sperren
-- **Optimistic Locking**: Version vor dem Commit prüfen
+- **Pessimistisches Sperren**: Ressourcen vor dem Zugriff sperren
+- **Optimistisches Sperren**: Version vor dem Commit prüfen
 - **MVCC (Multi-Version Concurrency Control)**: Mehrere Versionen von Zeilen verwalten
-- **Row-Level Locking**: Bestimmte Zeilen sperren
-- **Table-Level Locking**: Gesamte Tabelle sperren
+- **Sperren auf Zeilenebene**: Bestimmte Zeilen sperren
+- **Sperren auf Tabellenebene**: Gesamte Tabelle sperren
 
 ### Deadlocks
 - Zirkuläre Abhängigkeit, bei der Transaktionen aufeinander warten
@@ -182,10 +182,10 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ## Replikation und Skalierung
 
 ### Replikationstypen
-- **Master-Slave**: Ein Primärer, mehrere Lesereplikate
-- **Master-Master**: Mehrere Primäre, bidirektionale Replikation
-- **Multi-Master**: N Primäre, Konfliktlösung erforderlich
-- **Chain Replication**: Sequenzielle Replikation durch Knoten
+- **Primär-Sekundär**: Ein primärer Knoten, mehrere Lesereplikate
+- **Primär-Primär**: Mehrere primäre Knoten, bidirektionale Replikation
+- **Multi-Primär**: N primäre Knoten, Konfliktlösung erforderlich
+- **Kettenreplikation**: Sequenzielle Replikation durch Knoten
 
 ### Skalierungsansätze
 - **Vertikale Skalierung**: Serverressourcen erhöhen (CPU, RAM, Speicher)
@@ -198,7 +198,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Starke Konsistenz**: Alle Knoten sehen gleiche Daten zur gleichen Zeit
 - **Eventuelle Konsistenz**: Knoten konvergieren über die Zeit
 - **Kausale Konsistenz**: Ursache-Wirkungs-Beziehungen erhalten
-- **Read-Your-Writes**: Benutzer sieht eigene Updates sofort
+- **Eigene Schreibvorgänge direkt lesen**: Benutzer sieht eigene Updates sofort
 
 ## Backup und Wiederherstellung
 
@@ -206,7 +206,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Vollbackup**: Vollständige Datenbankkopie
 - **Inkrementelles Backup**: Änderungen seit dem letzten Backup
 - **Differenzielles Backup**: Änderungen seit dem letzten Vollbackup
-- **Point-in-Time Recovery**: Wiederherstellung zu einem bestimmten Zeitpunkt
+- **Zeitpunktgenaue Wiederherstellung**: Wiederherstellung zu einem bestimmten Zeitpunkt
 - **Kontinuierliches Backup**: Echtzeit-Replikation zum Backup
 
 ### Wiederherstellungsverfahren
@@ -241,7 +241,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **AWS**: RDS, Aurora, DynamoDB, Redshift
 - **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
 - **Azure**: SQL Database, Cosmos DB, Synapse
-- **Vorteile**: Verwalteter Dienst, Auto-Scaling, Backups inklusive
+- **Vorteile**: Verwalteter Dienst, automatische Skalierung, Backups inklusive
 
 ### NewSQL-Datenbanken
 - Kombinieren SQL-Konsistenz mit NoSQL-Skalierbarkeit
@@ -265,7 +265,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 
 ## ORMs und Datenzugriff
 
-### Object-Relational Mapping
+### Objektrelationale Abbildung
 - **Zweck**: Datenbanktabellen auf Programmierobjekte abbilden
 - **Beliebte ORMs**:
   - Python: SQLAlchemy, Django ORM, Peewee
@@ -278,7 +278,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Abstraktion von SQL
 - Typsicherheit
 - Migrationsverwaltung
-- Abfrage-Building-APIs
+- APIs zum Erstellen von Abfragen
 
 ### Nachteile
 - Leistungsoverhead
@@ -307,8 +307,8 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Replikationsverzögerung
 
 ### Wartungsaufgaben
-- **Vacuum/Analyze**: Statistiken aktualisieren, Speicher zurückgewinnen
-- **Index-Rebuilding**: Indizes defragmentieren
-- **Statistiken-Updates**: Abfrageoptimizer informiert halten
-- **Log Rotation**: Log-Dateigrößen verwalten
+- **Vacuum/Analyze**: Statistiken aktualisieren und Speicher zurückgewinnen
+- **Neuaufbau von Indizes**: Indizes defragmentieren
+- **Aktualisierung von Statistiken**: Den Abfrageoptimierer auf dem neuesten Stand halten
+- **Log-Rotation**: Die Größe von Log-Dateien verwalten
 - **Kapazitätsplanung**: Wachstum vorhersagen, Upgrades planen

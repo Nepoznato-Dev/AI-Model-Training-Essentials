@@ -5,68 +5,68 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# テクノロジー と コンピューティング
+# テクノロジーとコンピューティング
 
-## What is a Computer?
+## コンピュータとは何か
 
-A computer is an electronic device that processes データ according to a set の instructions called a program. Modern computers are based on その von Neumann アーキテクチャ, which consists の a central processing unit (CPU), memory, storage, と input/output devices. その CPU executes instructions. RAM (random access memory) stores データ temporarily while その computer is running. Storage devices such as SSDs と hard drives store データ permanently.
+コンピュータは、プログラムと呼ばれる一連の命令に従ってデータを処理する電子機器です。現代のコンピュータは、中央処理装置（CPU）、メモリ、ストレージ、入出力装置から成る von Neumann アーキテクチャを基盤としています。CPU は命令を実行し、RAM（random access memory）は動作中のデータを一時的に保持します。SSD やハードドライブなどのストレージ装置は、データを永続的に保存します。
 
-## Programming Languages
+## プログラミング言語
 
-A programming 言語 is a formal 言語 used to write instructions のために computers. Python is a high-level, interpreted, general-purpose programming 言語 known のために its simple 構文 と readability. It is widely used で データ 科学, 機械学習, ウェブ 開発, と automation. JavaScript is その primary 言語 のために ウェブ 開発 と runs で browsers. Java is a compiled, object-oriented 言語 used widely で enterprise software と Android 開発. C と C++ are lower-level languages that give fine-grained control over hardware と are used で system programming, game 開発, と パフォーマンス-critical applications. Rust is a modern システム programming 言語 focused on safety と パフォーマンス.
+プログラミング言語は、コンピュータに与える命令を書くための形式言語です。Python は高水準のインタプリタ型汎用言語で、簡潔な構文と高い可読性で知られています。データサイエンス、機械学習、ウェブ開発、自動化で広く使われています。JavaScript はウェブ開発の主要言語であり、ブラウザ上で動作します。Java はコンパイル型のオブジェクト指向言語で、エンタープライズソフトウェアや Android 開発で多用されます。C と C++ はより低レベルで、ハードウェアを細かく制御できるため、システムプログラミング、ゲーム開発、高性能アプリケーションに使われます。Rust は安全性と性能を重視した現代的なシステムプログラミング言語です。
 
-## How その Internet Works
+## インターネットの仕組み
 
-その internet is a global ネットワーク の interconnected computers that communicate using standardized protocols. その World Wide ウェブ is a system の websites と ウェブ pages accessed through その internet via browsers. HTTP (HyperText Transfer Protocol) と HTTPS (secure HTTP) are その protocols used to transfer ウェブ pages. An IP address is a unique numerical address assigned to each device on a ネットワーク. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs ネットワーク traffic between devices と networks.
+インターネットは、標準化されたプロトコルで通信する相互接続されたコンピュータの世界的ネットワークです。World Wide Web は、ブラウザを介してインターネット上でアクセスされるウェブサイトやウェブページの仕組みです。HTTP（HyperText Transfer Protocol）と HTTPS（secure HTTP）は、ウェブページの転送に使われるプロトコルです。IP address は各機器に割り当てられた固有の数値アドレスで、DNS（Domain Name System）は google.com のような人間に読みやすいドメイン名を IP address に変換します。router は機器やネットワーク間の通信を振り分けます。
 
-## Networking と Protocols
+## ネットワーキングとプロトコル
 
-TCP/IP is その foundational protocol suite の internet. IP (Internet Protocol) handles addressing と routing packets between networks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery と retransmission と flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (のために example で streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol のために request/response コミュニケーション between clients と servers. HTTPS is HTTP over TLS, adding encryption と integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), と stateless interactions. WebSockets provide persistent, full-duplex connections so client と server can push messages で real time, which is useful のために chat, live dashboards, と collaborative apps.
+TCP/IP はインターネットの基盤となるプロトコル群です。IP（Internet Protocol）はアドレス指定と経路制御を担当し、TCP（Transmission Control Protocol）は信頼性のある順序付き配送、再送制御、フロー制御を提供します。UDP は接続レスの代替手段で、保証された配送より低遅延を優先したい場合に使われます（たとえば streaming、gaming、DNS query など）。HTTP は request/response 形式のための stateless な application-layer protocol です。HTTPS は TLS 上で動く HTTP であり、暗号化と完全性保護を追加します。REST（Representational State Transfer）は、resource、標準的な HTTP verbs（GET、POST、PUT、PATCH、DELETE）、stateless なやり取りを用いる API アーキテクチャスタイルです。WebSocket は永続的な双方向接続を提供し、chat、リアルタイムダッシュボード、共同編集アプリに向いています。
 
-## Artificial Intelligence
+## 人工知能
 
-Artificial intelligence (AI) is その simulation の human intelligence by machines, particularly computer システム. 機械学習 is a subset の AI で which システム learn from データ to make predictions or decisions without being explicitly programmed. 深層学習 is a subset の 機械学習 that uses ニューラルネットワーク と many layers. ニューラルネットワーク are computational models loosely inspired by その structure の biological brains. Large 言語 models (LLMs) are AI models trained on massive amounts の text to generate と understand natural 言語.
+人工知能（AI）は、機械、特にコンピュータシステムによって人間の知能を模倣する技術です。機械学習は AI の一分野で、システムが明示的にプログラムされなくてもデータから予測や意思決定を学びます。深層学習は機械学習の一分野で、多層のニューラルネットワークを利用します。ニューラルネットワークは生物の脳構造に着想を得た計算モデルです。Large Language Models（LLMs）は、膨大なテキストで学習し、自然言語を理解・生成する AI モデルです。
 
-## Algorithms と データ Structures
+## アルゴリズムとデータ構造
 
-An algorithm is a step-by-step procedure のために solving a problem. データ structures are ways の organizing データ で a computer so that it can be accessed と modified efficiently. Common データ structures include arrays, linked lists, stacks, queues, trees, graphs, と hash tables. Sorting algorithms arrange items で a specified order; common 例 are bubble sort, merge sort, と quicksort. Binary search is an efficient algorithm のために finding an item で a sorted list by repeatedly halving その search range.
+アルゴリズムは問題を解くための手順です。データ構造は、データを効率よく参照・更新できるようコンピュータ内で整理する方法です。代表的なデータ構造には、array、linked list、stack、queue、tree、graph、hash table があります。sorting algorithm は要素を一定の順序に並べる手法で、bubble sort、merge sort、quicksort などがよく知られています。binary search は、整列済みリストに対して探索範囲を半分ずつ絞り込みながら要素を見つける効率的な探索法です。
 
-## Databases
+## データベース
 
-A データベース is an organized collection の structured データ stored electronically. A relational データベース stores データ で tables と rows と columns. SQL (Structured Query 言語) is その standard 言語 のために managing と querying relational databases. NoSQL databases store データ で formats other than tabular relations, such as documents, key-value pairs, or graphs. Common データベース システム include PostgreSQL, MySQL, SQLite, MongoDB, と Redis. An index で a データベース speeds up データ retrieval at その cost の extra storage.
+データベースは、電子的に保存された構造化データの組織的な集合です。relational database は行と列から成る table でデータを保持します。SQL（Structured Query Language）は、relational database を管理・照会する標準言語です。NoSQL database は、document、key-value、graph など、表形式以外の形式でデータを保存します。よく使われるデータベースシステムには PostgreSQL、MySQL、SQLite、MongoDB、Redis があります。データベースの index は、追加の記憶領域と引き換えに検索速度を高めます。
 
-## System Design 基礎
+## システム設計の基礎
 
-System design focuses on building reliable, scalable, と maintainable software システム. Load balancing distributes traffic across multiple servers to improve availability と reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed データ で fast storage (のために example Redis, Memcached, or CDN edge caches) to reduce データベース load と response time. Databases at scale require replication, partitioning (sharding), backup strategies, と careful consistency tradeoffs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic で one deployable unit; both approaches involve tradeoffs で complexity, デプロイ speed, debugging, と team autonomy.
+システム設計は、信頼性が高く、拡張しやすく、保守しやすいソフトウェアシステムを構築するための考え方です。load balancing は複数サーバーにトラフィックを分散し、可用性向上と遅延低減に役立ちます。horizontal scaling はマシン台数を増やすことで、vertical scaling は 1 台の資源を増やすことで拡張します。caching は、よく使うデータを高速な記憶領域（Redis、Memcached、CDN edge cache など）に保存し、データベース負荷と応答時間を減らします。大規模データベースでは、replication、partitioning（sharding）、backup 戦略、一貫性のトレードオフを慎重に扱う必要があります。microservices は大きなアプリケーションを独立デプロイ可能な小さなサービスに分割し、monolith は大部分のロジックを 1 つの単位にまとめます。どちらにも、複雑さ、デプロイ速度、デバッグ、チーム自律性の面でトレードオフがあります。
 
-## Operating システム
+## オペレーティングシステム
 
-An operating system (OS) is software that manages computer hardware と provides services のために programs. Common operating システム include Windows, macOS, と Linux. Linux is an open-source OS kernel used で servers, embedded システム, と Android. その OS manages processes (running programs), memory, file システム, と input/output devices. A process is a running instance の a program. A thread is その smallest unit の execution within a process.
+オペレーティングシステム（OS）は、コンピュータのハードウェアを管理し、プログラムにサービスを提供するソフトウェアです。代表的な OS には Windows、macOS、Linux があります。Linux はオープンソースの OS kernel で、サーバー、組み込みシステム、Android などで広く使われています。OS は process（実行中のプログラム）、memory、file system、入出力装置を管理します。process はプログラムの実行中インスタンスであり、thread はその中での最小実行単位です。
 
-## Version Control
+## バージョン管理
 
-Version control システム track changes to code over time, allowing developers to collaborate と revert to previous states. Git is その most widely used version control system. A repository (repo) is a collection の files と their 歴史. A commit is a saved snapshot の changes. A branch is an independent line の 開発. A pull request is a proposal to merge changes from one branch into another.
+バージョン管理システムは、コードの変更履歴を追跡し、共同作業や過去状態への巻き戻しを可能にします。Git はもっとも広く使われているバージョン管理システムです。repository（repo）はファイルとその履歴の集合です。commit は変更の保存されたスナップショット、branch は独立した開発ライン、pull request はある branch の変更を別の branch に統合する提案です。
 
-## Software 開発 Practices
+## ソフトウェア開発プラクティス
 
-Object-oriented programming (OOP) organizes code into objects that combine データ と behavior. Key principles の OOP include encapsulation, inheritance, polymorphism, と abstraction. Test-driven 開発 (TDD) is a practice の writing tests before writing code. Agile is a set の software 開発 methodologies that emphasize iterative 開発, collaboration, と adaptability. DevOps combines software 開発 と IT operations to shorten その 開発 lifecycle. APIs (Application Programming Interfaces) allow different software システム to communicate と each other.
+Object-oriented programming（OOP）は、データと振る舞いをまとめた object を中心にコードを構成する考え方です。OOP の主要原則には encapsulation、inheritance、polymorphism、abstraction があります。test-driven development（TDD）は、実装前にテストを書く実践です。Agile は、反復的な開発、協調、適応性を重視するソフトウェア開発手法の総称です。DevOps はソフトウェア開発と IT 運用を結びつけ、開発ライフサイクルを短縮します。API（Application Programming Interface）は、異なるソフトウェアシステム同士が通信するための仕組みです。
 
-## Cloud と DevOps 基本
+## クラウドと DevOps の基礎
 
-Cloud コンピューティング provides on-demand infrastructure と managed services over その internet. その three major public cloud providers are AWS (Amazon ウェブ Services), Microsoft Azure, と Google Cloud Platform (GCP). Common service models are IaaS (infrastructure), PaaS (platform), と SaaS (software). Core cloud building blocks include compute instances/containers, object storage, managed databases, networking, と IAM (Identity と Access 管理). CI/CD (Continuous Integration と Continuous Delivery/デプロイ) automates build, test, と release pipelines so code can move safely from commit to production. Docker packages applications と dependencies into portable containers; で production these containers are typically deployed via orchestrators (such as Kubernetes), serverless platforms, or managed container services.
+cloud computing は、インターネット経由でオンデマンドにインフラやマネージドサービスを提供します。主要な public cloud provider は AWS（Amazon Web Services）、Microsoft Azure、Google Cloud Platform（GCP）です。代表的なサービスモデルは IaaS、PaaS、SaaS です。クラウドの基本要素には、compute instance / container、object storage、managed database、networking、IAM（Identity and Access Management）があります。CI/CD（Continuous Integration と Continuous Delivery / Deployment）は、build、test、release のパイプラインを自動化し、commit から production まで安全にコードを届けられるようにします。Docker はアプリケーションと依存関係を可搬な container にまとめる技術で、本番環境では Kubernetes のような orchestrator、serverless platform、managed container service 上で動かすことが一般的です。
 
-## データ Formats と Tooling
+## データ形式とツール
 
-JSON (JavaScript Object Notation) is a lightweight text format built from objects (key/value pairs), arrays, strings, numbers, booleans, と null; it is widely used で APIs. YAML is a human-friendly configuration format that supports nested structures と comments, commonly used で CI/CD と infrastructure definitions. CSV (Comma-Separated Values) stores tabular データ as rows の delimited text と is common のために データ import/export pipelines. XML (eXtensible Markup 言語) is a tag-based structured format used で legacy システム, configuration, と document workflows. Developers commonly validate と transform these formats と linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), と parsing libraries で their programming 言語.
+JSON（JavaScript Object Notation）は、object、array、string、number、boolean、null から成る軽量なテキスト形式で、API で広く使われます。YAML は人が読みやすい設定形式で、入れ子構造やコメントを扱え、CI/CD やインフラ定義でよく使われます。CSV（Comma-Separated Values）は表形式データを区切り文字付きテキストとして表現する形式で、データの入出力で一般的です。XML（eXtensible Markup Language）はタグベースの構造化形式で、レガシーシステム、設定、文書ワークフローで使われます。開発者は、linters、schema validator（JSON Schema など）、query tool（`jq`、XPath など）、各言語の parsing library を使って、これらの形式を検証・変換します。
 
-## Regular Expressions (Regex)
+## 正規表現（Regex）
 
-A regular expression is a pattern 言語 used to search, match, extract, と transform text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), と escaping special characters. Regex is heavily used のために input validation, log parsing, text extraction, と find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested と documented to avoid bugs.
+正規表現は、テキストを検索、照合、抽出、変換するためのパターン言語です。基本概念には、literal（`cat`）、character class（`[a-z]`、`\d`）、quantifier（`*`、`+`、`?`、`{n,m}`）、anchor（`^`、`$`）、group（`(...)`）、alternation（`a|b`）、特殊文字のエスケープがあります。Regex は、入力検証、ログ解析、テキスト抽出、検索置換の自動化で多用されます。engine ごとに機能差があり、PCRE、JavaScript、Python `re`、RE2 などで挙動が異なる場合があります。強力な一方で読みづらくなりやすいため、複雑なパターンは十分にテストし、必要なら説明を残すべきです。
 
-## Cybersecurity
+## サイバーセキュリティ
 
-Cybersecurity is その practice の protecting computer システム, networks, と データ from digital attacks. Common threats include malware (malicious software), phishing (fraudulent コミュニケーション designed to steal information), ransomware (malware that encrypts データ と demands payment), と denial-の-service attacks. Encryption transforms データ into an unreadable form that can only be decoded と a key. HTTPS uses TLS (Transport Layer セキュリティ) to encrypt ウェブ traffic. Strong, unique passwords と two-factor authentication are fundamental セキュリティ practices.
+cybersecurity は、コンピュータシステム、ネットワーク、データをデジタル攻撃から守る実践です。代表的な脅威には、malware、phishing、ransomware、denial-of-service attack があります。encryption はデータを読み取れない形に変換し、鍵を持つ者だけが復号できるようにします。HTTPS は TLS（Transport Layer Security）によってウェブ通信を暗号化します。強力で固有のパスワードと二要素認証は、基本かつ重要なセキュリティ対策です。
 
-## セキュリティ Concepts のために Developers
+## 開発者向けセキュリティ概念
 
-OAuth 2.0 is an authorization framework that lets users grant limited access to an application without sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 のために authentication. JWT (JSON ウェブ Token) is a compact token format containing claims, often used のために stateless auth, but it must be signed correctly と validated strictly (signature, expiration, issuer, audience). TLS secures データ で transit by providing encryption, integrity, と server authentication through certificates. その OWASP Top 10 is a widely used list の common ウェブ application セキュリティ risks, including broken access control, cryptographic failures, injection, insecure design, セキュリティ misconfiguration, vulnerable components, と insufficient logging/monitoring. Secure 開発 requires defense-で-depth: input validation, output encoding, least privilege, secret 管理, dependency patching, と regular セキュリティ テスト.
+OAuth 2.0 は、認証情報を直接共有せずに、利用者がアプリケーションへ限定的な権限を委譲できる認可フレームワークです。OpenID Connect（OIDC）は OAuth 2.0 上に構築された認証のための identity layer です。JWT（JSON Web Token）は claim を含むコンパクトな token 形式で、stateless auth によく使われますが、署名、期限、issuer、audience を厳密に検証する必要があります。TLS は暗号化、完全性、証明書によるサーバー認証によって、転送中データを保護します。OWASP Top 10 は、broken access control、cryptographic failure、injection、insecure design、security misconfiguration、脆弱な component、不十分な logging / monitoring など、一般的なウェブアプリケーションのリスクをまとめた広く使われる一覧です。安全な開発には defense-in-depth が必要であり、input validation、output encoding、least privilege、secret management、dependency patching、定期的な security testing が重要です。

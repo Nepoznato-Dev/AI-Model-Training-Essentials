@@ -2,16 +2,16 @@
 This file was automatically translated from English to German.
 Source: sql_quick_ref.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
+Please contribute improvements via pull requests.
 -->
 
-# SQL Schnellreferenz Leitfaden
+# SQL-Schnellreferenz
 
-Essential SQL Befehle für Datenbank operations.
+Wichtige SQL-Befehle für Datenbankoperationen.
 
 ---
 
-## Basic Query Structure
+## Grundlegende Abfragestruktur
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-## Daten Retrieval (SELECT)
+## Datenabfrage (`SELECT`)
 
-### Basic Selection
+### Grundauswahl
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### Filtern (`WHERE`)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting und Limiting
+### Sortieren und Begrenzen
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## Aggregatfunktionen
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## Verknüpfungen (Joins)
 
-### Inner Join
+### Innere Verknüpfung (`INNER JOIN`)
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-### Left/Right Join
+### Linke/rechte Verknüpfung (`LEFT/RIGHT JOIN`)
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Full Outer Join
+### Vollständige äußere Verknüpfung (`FULL OUTER JOIN`)
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Cross Join
+### Kreuzverknüpfung (`CROSS JOIN`)
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-### Self Join
+### Selbstverknüpfung (`SELF JOIN`)
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## Unterabfragen
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## Mengenoperationen
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,9 +210,9 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## Daten Modification
+## Datenänderung
 
-### INSERT
+### `INSERT`
 ```sql
 -- Insert single row
 INSERT INTO users (name, email, age)
@@ -229,7 +229,7 @@ INSERT INTO archived_users
 SELECT * FROM users WHERE last_login < '2023-01-01';
 ```
 
-### UPDATE
+### `UPDATE`
 ```sql
 -- Update single row
 UPDATE users 
@@ -248,7 +248,7 @@ SET o.status = 'processed'
 WHERE u.country = 'USA';
 ```
 
-### DELETE
+### `DELETE`
 ```sql
 -- Delete specific rows
 DELETE FROM users WHERE id = 1;
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## Tabellenoperationen
 
-### CREATE Table
+### `CREATE TABLE`
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-### ALTER Table
+### `ALTER TABLE`
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-### DROP Table
+### `DROP TABLE`
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-## Constraints
+## Einschränkungen
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## Indizes
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## Sichten (Views)
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## Gemeinsame Tabellenausdrücke (CTEs)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## Fensterfunktionen
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-## Daten Types
+## Datentypen
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### Numerisch
+- `INT` - Ganzzahl
+- `BIGINT` - Große Ganzzahl
+- `DECIMAL(p,s)` - Exakte Dezimalzahl (Präzision, Skalierung)
+- `FLOAT` - Ungefähre Gleitkommazahl
+- `DOUBLE` - Gleitkommazahl mit doppelter Genauigkeit
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### Zeichenketten
+- `CHAR(n)` - Zeichenkette fester Länge
+- `VARCHAR(n)` - Zeichenkette variabler Länge
+- `TEXT` - Längerer Text
+- `ENUM` - Aufzählungswerte
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date und time
-- `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+### Datum/Zeit
+- `DATE` - Datum (YYYY-MM-DD)
+- `TIME` - Uhrzeit (HH:MM:SS)
+- `DATETIME` - Datum und Uhrzeit
+- `TIMESTAMP` - Unix-Zeitstempel
+- `YEAR` - Jahreswert
 
-### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+### Boolesch
+- `BOOLEAN` oder `BOOL` - Wahr/Falsch
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### Binär
+- `BLOB` - Großes Binärobjekt
+- `BINARY` - Binärwert fester Länge
+- `VARBINARY` - Binärwert variabler Länge
 
 ---
 
-## Useful Functions
+## Nützliche Funktionen
 
-### String Functions
+### Zeichenkettenfunktionen
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### Datumsfunktionen
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### Numerische Funktionen
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### Bedingte Funktionen
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,25 +556,25 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## Leistung Tips
+## Leistungstipps
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query Leistung
-- Normalize Daten appropriately
-- Use prepared statements to prevent SQL injection
+✅ **Empfohlen:**
+- Indizes auf häufig abgefragten Spalten verwenden
+- Nur benötigte Spalten auswählen (`SELECT *` vermeiden)
+- `EXPLAIN` verwenden, um die Abfrageleistung zu analysieren
+- Daten sinnvoll normalisieren
+- Prepared Statements verwenden, um SQL-Injection zu verhindern
 
-❌ **Don't:**
-- Use functions on indexed columns in WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **Vermeiden Sie:**
+- Funktionen auf indizierten Spalten in `WHERE`-Klauseln zu verwenden
+- Zu viele Indizes anzulegen, da das Schreibvorgänge verlangsamt
+- `SELECT DISTINCT` unnötig zu verwenden
+- Ausführungspläne von Abfragen zu ignorieren
+- Berechnete Werte zu speichern, wenn sie zur Laufzeit berechnet werden können
 
 ---
 
-## Sicherheit Best Practices
+## Bewährte Sicherheitspraktiken
 
 ```sql
 -- Use parameterized queries (in application code)
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*Zuletzt aktualisiert: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*Zuletzt aktualisiert: Juni 2025 | SQL-Standard (MySQL/PostgreSQL-kompatibel)*

@@ -7,180 +7,180 @@
 
 # 프롬프트 엔지니어링
 
-프롬프트 엔지니어링은 언어 모델로부터 최상의 결과를 얻기 위해 입력 프롬프트를 설계, 정제, 최적화하는 실천법입니다. 이는 예술이자 과학이며, 파인튜닝 없이 LLM 동작을 제어하는 주요 인터페이스입니다.
+프롬프트 엔지니어링은 언어 모델로부터 가능한 한 좋은 출력을 얻기 위해 입력 프롬프트를 설계하고, 다듬고, 최적화하는 실천 방법입니다. 이는 예술이자 과학이며, 파인튜닝 없이 LLM의 동작을 제어하는 가장 중요한 인터페이스입니다.
 
 ---
 
 ## 핵심 원칙
 
 ### 명확성과 구체성
-명확한 프롬프트는 모호함의 여지를 남기지 않습니다. 형식, 길이, 관점을 포함하여 원하는 것을 정확히 명시하세요.
+명확한 프롬프트는 모호함의 여지를 남기지 않습니다. 형식, 길이, 관점까지 포함해 원하는 바를 정확히 지정하세요.
 
-**모호함:**
-> "Python 에 대해 알려주세요."
+**모호한 예시:**
+> "Python에 대해 알려주세요."
 
-**구체적:**
-> "Python 의 Global Interpreter Lock (GIL) 을 설명하세요. 멀티스레딩에 미치는 영향을 설명하고, 하나의 우회 방법을 제시하며, 답변을 200 단어 이내로 유지하세요."
+**구체적인 예시:**
+> "Python의 Global Interpreter Lock (GIL)을 설명하세요. 멀티스레딩에 미치는 영향을 설명하고, 우회 방법 하나를 제시하며, 답변은 200단어 이내로 작성하세요."
 
 ### 컨텍스트 제공
-모델은 역할, 대상, 목표를 알 때 더 잘 수행합니다.
+모델은 자신의 역할, 대상 독자, 목표를 알 때 더 잘 수행합니다.
 
 **컨텍스트 없음:**
 > "리스트를 정렬하는 함수를 작성하세요."
 
 **컨텍스트 있음:**
-> "당신은 시니어 Python 개발자입니다. 주어진 키를 기준으로 딕셔너리 리스트를 정렬하는 함수를 작성하세요. 타입 힌트를 사용하고 엣지 케이스를 처리하세요. 대상은 주니어 개발자입니다."
+> "당신은 시니어 Python 개발자입니다. 주어진 키를 기준으로 딕셔너리 리스트를 정렬하는 함수를 작성하세요. 타입 힌트를 사용하고 엣지 케이스를 처리하세요. 대상 독자는 주니어 개발자입니다."
 
 ### 긍정적인 지시 사용
-모델에게 무엇을 해야 하는지 말하지, 무엇을 피해야 하는지 말하지 마세요. "전문 용어를 포함하지 마세요"보다 "10 세도 이해할 수 있는 간단한 언어를 사용하세요"가 더 효과적입니다.
+모델에게 무엇을 피하라고 말하기보다 무엇을 하라고 말하는 편이 더 효과적입니다. "전문 용어를 사용하지 마세요"보다 "10살 어린이도 이해할 수 있는 쉬운 언어를 사용하세요"가 더 강력합니다.
 
 ---
 
 ## 프롬프트 구조
 
 ### 시스템 / 사용자 / 어시스턴트 역할
-대부분의 LLM API 는 다회전 구조를 지원합니다:
+대부분의 LLM API는 멀티턴 구조를 지원합니다.
 
-- **시스템 메시지**: 모델의 동작, 페르소나, 제약 조건을 설정합니다 (세션 전체에 지속됨).
-- **사용자 메시지**: 현재 쿼리 또는 지시사항.
-- **어시스턴트 메시지**: 모델의 이전 응답 (연속성을 위해 사용).
+- **시스템 메시지**: 모델의 동작, 페르소나, 제약 조건을 설정합니다(세션 전체에 유지됨).
+- **사용자 메시지**: 현재 질문이나 지시 사항입니다.
+- **어시스턴트 메시지**: 모델의 이전 응답으로, 맥락 유지를 위해 사용됩니다.
 
 **예시 (OpenAI API 스타일):**
 시스템: 당신은 도움이 되는 코딩 어시스턴트입니다. 간결한 코드 예시와 짧은 설명으로 답변합니다. 안전하지 않은 코드는 절대 제공하지 않습니다.
-사용자: URL 에서 파일을 다운로드하는 Python 함수를 작성하세요.
+사용자: URL에서 파일을 다운로드하는 Python 함수를 작성하세요.
 
 ### Few-Shot 프롬프팅
-모델에게 작업을 수행하도록 요청하기 전에 2-3 개의 원하는 입력 - 출력 형식 예시를 제공하세요. 이렇게 하면 패턴을 학습할 수 있습니다.
+모델에게 작업을 요청하기 전에 원하는 입력-출력 형식의 예시 2~3개를 먼저 제시하세요. 이렇게 하면 모델이 패턴을 학습할 수 있습니다.
 
 **예시:**
-사용자: 다음 문장을 수동태로 변환하세요:
-입력: 그 고양이가 쥐를 쫓았다.
+사용자: 다음 문장을 수동태로 바꾸세요.
+입력: 고양이가 쥐를 쫓았다.
 출력: 쥐가 고양이에게 쫓겼다.
-입력: 그 셰프가 식사를 준비했다.
-출력: 식사가 셰프에 의해 준비되었다.
-입력: 그 폭풍이 집을 파괴했다.
+입력: 요리사가 식사를 준비했다.
+출력: 식사가 요리사에 의해 준비되었다.
+입력: 폭풍이 집을 파괴했다.
 출력: (모델이 완성)
 
-### Chain-of-Thought (CoT, 연쇄 사고)
-모델에게 단계별로 추론 과정을 보여주도록 유도하세요. 이는 산수, 논리, 다단계 작업의 정확도를 향상시킵니다.
+### Chain-of-Thought (CoT)
+모델이 추론 과정을 단계별로 드러내도록 유도하세요. 이렇게 하면 산술, 논리, 다단계 작업에서 정확도가 높아집니다.
 
 **CoT 없음:**
-> "24 × 37 은 얼마인가요?"
+> "24 × 37은 얼마인가요?"
 
 **CoT 있음:**
-> "24 × 37 을 계산하세요. 추론 과정을 단계별로 보여주세요."
+> "24 × 37을 계산하세요. 추론 과정을 단계별로 보여주세요."
 
-모델은 중간 단계를 생성하여 산수 오류를 줄입니다.
+모델은 중간 단계를 생성하면서 산술 오류를 줄일 수 있습니다.
 
 ### 구조화된 출력
-JSON, YAML 또는 마크다운 테이블과 같은 특정 형식을 요청하여 파싱을 신뢰할 수 있게 만드세요.
-사용자: 마이크로서비스의 장단점을 각각 세 개씩 나열하세요. "pros" 와 "cons" 키를 가진 유효한 JSON 객체만 반환하세요. 각 키는 문자열 배열이어야 합니다.
+JSON, YAML, 마크다운 표처럼 특정 형식을 요구하면 결과를 더 안정적으로 파싱할 수 있습니다.
+사용자: 마이크로서비스의 장점 3개와 단점 3개를 나열하세요. `"pros"`와 `"cons"` 키를 가진 유효한 JSON 객체만 반환하세요. 각 키의 값은 문자열 배열이어야 합니다.
 
 ---
 
 ## 고급 기법
 
 ### 자기 일관성 (Self-Consistency)
-동일한 프롬프트에 대해 여러 응답을 생성하고 (temperature > 0 사용) 최종 답변에 대해 다수결 투표를 진행하세요. 이는 추론 작업에 특히 효과적입니다.
+같은 프롬프트에 대해 여러 응답을 생성하고(`temperature > 0` 사용) 최종 답변은 다수결로 선택하세요. 특히 추론 작업에서 효과적입니다.
 
-### Tree-of-Thoughts (사고 나무)
-여러 추론 경로를 병렬로 탐색하고, 각각을 평가한 후 최상의 것을 선택하세요. 이는 연구 수준의 기법이지만, 모델에게 "대안적 솔루션을 탐색하라"고 요청하여 근사할 수 있습니다.
+### Tree-of-Thoughts
+여러 추론 경로를 병렬로 탐색하고, 각각을 평가한 뒤 가장 좋은 경로를 선택하세요. 연구 수준의 기법이지만 모델에게 "대안적 해결책을 탐색하라"고 요청하는 방식으로 비슷하게 활용할 수 있습니다.
 
 ### ReAct (추론 + 행동)
-모델이 추론과 도구 호출을 교차하게 하세요. 생각한 후 행동하고 (예: 웹 검색, 코드 실행), 그 결과를 바탕으로 다시 생각할 수 있습니다.
+모델이 추론과 도구 사용을 번갈아 수행하도록 하세요. 먼저 생각하고, 그다음 행동한 뒤(예: 웹 검색, 코드 실행), 결과를 바탕으로 다시 생각할 수 있습니다.
 
 **프롬프트 구조:**
-당신은 계산기와 검색 엔진을 사용할 수 있습니다. 각 단계에서 다음을 출력하세요:
+당신은 계산기와 검색 엔진을 사용할 수 있습니다. 각 단계에서 다음 형식으로 출력하세요.
 Thought: (당신의 추론)
 Action: (도구 이름, 입력)
 Observation: (도구 출력)
 ... 최종 답을 얻을 때까지 계속합니다.
 
-### 페르소나 할당
-응답의 틀을 잡기 위해 특정 페르소나를 할당하세요.
+### 페르소나 부여
+원하는 응답의 톤과 관점을 만들기 위해 구체적인 페르소나를 부여하세요.
 
 **예시:**
-- "당신은 신입 졸업생에게 메모리 관리를 설명하는 리눅스 커널 개발자입니다."
-- "당신은 클라이언트에게 일반적인 조언을 제공하는 친절한 영양학자입니다."
-- "당신은 새로운 가제트를 검토하는 냉소적인 기술 비평가입니다."
+- "당신은 신입 개발자에게 메모리 관리를 설명하는 Linux kernel 개발자입니다."
+- "당신은 고객에게 일반적인 조언을 제공하는 친절한 영양사입니다."
+- "당신은 새로운 가젯을 리뷰하는 냉소적인 기술 평론가입니다."
 
 **예시:**
-- "You are a Linux kernel developer explaining memory 관리 to a new graduate."
-- "You are a friendly nutritionist giving general advice to a client."
-- "You are a cynical tech critic reviewing a new gadget."
+- "당신은 신입 졸업생에게 메모리 관리를 설명하는 Linux kernel 개발자입니다."
+- "당신은 고객에게 일반적인 조언을 제공하는 친절한 영양사입니다."
+- "당신은 새로운 가젯을 리뷰하는 냉소적인 기술 평론가입니다."
 
 ---
 
-## Parameter Tuning
+## 파라미터 조정
 
-- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 위한 factual answers; 0.7–1.0 위한 creative writing.
-- **Top-p** (nucleus sampling): Cuts off 그 probability mass at a certain cumulative threshold. 0.9 means 그 model samples from 그 top 90% 의 likely tokens. Usually adjust either temperature or top-p, not both.
-- **Max tokens**: Sets 그 maximum output length. Remember to reserve space 위한 그 response within 그 context window.
-- **Frequency penalty**: Reduces repetition 의 그 same tokens.
-- **Presence penalty**: Encourages 그 model to introduce new topics.
+- **Temperature** (0.0 – 1.0+): 무작위성을 조절합니다. 낮을수록 더 결정적이고, 높을수록 더 창의적입니다. 사실 기반 답변에는 0.0–0.3, 창의적 글쓰기에는 0.7–1.0을 사용하세요.
+- **Top-p** (nucleus sampling): 누적 확률이 일정 임계값에 도달할 때까지만 후보 토큰을 남깁니다. 0.9는 모델이 가능성이 높은 상위 90% 토큰 집합에서 샘플링한다는 뜻입니다. 보통은 temperature와 top-p 중 하나만 조정합니다.
+- **Max tokens**: 출력의 최대 길이를 설정합니다. context window 안에서 응답이 들어갈 공간을 남겨 두어야 합니다.
+- **Frequency penalty**: 같은 토큰의 반복을 줄입니다.
+- **Presence penalty**: 모델이 새로운 주제를 도입하도록 유도합니다.
 
 ---
 
-## Common Pitfalls 와 Fixes
+## 흔한 문제와 해결 방법
 
-| Problem | Likely cause | Fix |
+| 문제 | 원인 | 해결 방법 |
 |---------|--------------|-----|
-| Model ignores parts 의 prompt | Prompt too long or overloaded | Shorten; put 그 most important instruction at 그 end |
-| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
-| Output is too terse | Overly restrictive | Add "Explain 에서 detail" or lower temperature |
-| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" 와 provide a RAG context |
-| Inconsistent formatting | No explicit format instruction | Ask 위한 JSON, markdown table, or bullet list |
-| Model answers 에서 wrong 언어 | No 언어 instruction | Explicitly state "Respond 에서 영어" (or your target 언어) |
+| 프롬프트의 일부를 모델이 무시함 | 프롬프트가 너무 길거나 과도하게 많은 지시를 담고 있음 | 더 짧게 만들고, 가장 중요한 지시는 끝부분에 배치 |
+| 출력이 너무 장황함 | 길이 제한이 없음 | "3문장으로 제한하세요"를 추가하거나 `max_tokens` 설정 |
+| 출력이 너무 짧음 | 제약이 지나치게 강함 | "자세히 설명하세요"를 추가하거나 temperature를 낮춤 |
+| 사실과 다른 환각이 발생함 | 컨텍스트가 부족하거나 질문이 모호함 | "확실하지 않으면 '모르겠습니다'라고 답하세요"를 추가하고 RAG 컨텍스트 제공 |
+| 형식이 일관되지 않음 | 명시적인 형식 지시가 없음 | JSON, 마크다운 표, 글머리표 목록 중 하나를 요구 |
+| 모델이 잘못된 언어로 답함 | 언어 지시가 없음 | "영어로 답변하세요"처럼 목표 언어를 명시 |
 
 ---
 
-## Prompt Templates 위한 Common Tasks
+## 자주 쓰이는 작업용 프롬프트 템플릿
 
-### Summarisation
-Summarise 그 following text 에서 3 bullet points. Focus on 그 main arguments 와 avoid details.
+### 요약
+다음 텍스트를 글머리표 3개로 요약하세요. 핵심 주장에 집중하고 세부사항은 생략하세요.
 
-Text: [insert text]
-
-
-### Code Generation
-Write a [언어] function that [does X].
-Requirements:
-
-Use type hints.
-
-Include a docstring.
-
-Handle edge cases: [list].
-
-Do not use external libraries unless specified.
+텍스트: [insert text]
 
 
-### Explanation
-Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
+### 코드 생성
+[언어]로 [X를 수행하는] 함수를 작성하세요.
+요구 사항:
 
-### Brainstorming
-Generate 10 ideas 위한 [topic]. 위한 each idea, give a one-sentence description 와 one potential challenge.
+타입 힌트를 사용하세요.
 
-text
+docstring을 포함하세요.
 
-### Classification
-Classify 그 following customer 피드백 as [positive, neutral, negative].
-Provide a confidence score (0-100) 와 a brief reason.
+엣지 케이스를 처리하세요: [list].
+
+별도 지시가 없는 한 외부 라이브러리를 사용하지 마세요.
+
+
+### 설명
+[concept]를 [비전문가 / 대학생 / 어린이]에게 설명하세요. 적절하다면 비유를 사용하세요.
+
+### 브레인스토밍
+[topic]에 대한 아이디어 10개를 생성하세요. 각 아이디어마다 한 문장 설명과 잠재적인 과제 하나를 제시하세요.
+
+텍스트
+
+### 분류
+다음 고객 피드백을 [positive, neutral, negative]로 분류하세요.
+신뢰도 점수(0-100)와 간단한 이유도 함께 제공하세요.
 
 피드백: [insert text]
 
-### Translation 와 함께 Style
-Translate 그 following 영어 text to Spanish. Use an informal tone suitable 위한 a social media post.
-Text: [insert text]
+### 스타일을 반영한 번역
+다음 영어 텍스트를 Spanish로 번역하세요. 소셜 미디어 게시물에 어울리는 비격식체를 사용하세요.
+텍스트: [insert text]
 
 ---
 
-## Evaluation 의 Prompts
+## 프롬프트 평가
 
-Treat prompts as code: version them, test them, 와 iterate.
+프롬프트를 코드처럼 다루세요. 버전을 관리하고, 테스트하고, 반복적으로 개선해야 합니다.
 
-- **A/B test** different prompt variants on a held-out set 의 queries.
-- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
-- **Keep a prompt registry** (a simple text file or spreadsheet) 와 함께 그 prompt, version, 와 observed 성능.
+- **A/B test**: 별도로 떼어 둔 질의 집합에서 서로 다른 프롬프트 변형을 비교하세요.
+- **성공 측정**: 사람의 평가나 자동화된 지표(예: exact match, BLEU, custom scoring)로 성능을 측정하세요.
+- **프롬프트 레지스트리 유지**: 간단한 텍스트 파일이나 스프레드시트에 프롬프트, 버전, 관찰된 성능을 기록하세요.
 
 ---

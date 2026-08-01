@@ -1,360 +1,360 @@
 # Finance et investissement
 
-## Personal Finance Fundamentals
+## Fondamentaux des finances personnelles
 
-### Financial Planning Basics
-- **Budgeting**: Track income and expenses, 50/30/20 rule (needs/wants/savings)
-- **Emergency Fund**: 3-6 months of living expenses in liquid account
-- **Net Worth**: Assets minus liabilities, track over time
-- **Cash Flow Management**: Money in vs. money out, positive cash flow essential
-- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+### Bases de la planification financière
+- **Budgeting** : suivre les revenus et les dépenses, règle 50/30/20 (besoins/envies/épargne)
+- **Emergency Fund** : 3 à 6 mois de dépenses de vie sur un compte liquide
+- **Net Worth** : actifs moins passifs, à suivre dans le temps
+- **Cash Flow Management** : argent qui entre vs argent qui sort ; un cash flow positif est essentiel
+- **Financial Goals** : court terme (<1 an), moyen terme (1-5 ans), long terme (5+ ans)
 
-### Banking Products
-- **Checking Accounts**: Daily transactions, debit cards, bill payments
-- **Savings Accounts**: Interest-bearing, limited withdrawals
-- **Money Market Accounts**: Higher interest, check-writing privileges
-- **Certificates of Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
-- **High-Yield Savings**: Online banks, competitive rates
+### Produits bancaires
+- **Checking Accounts** : transactions quotidiennes, cartes de débit, paiement de factures
+- **Savings Accounts** : comptes rémunérés, retraits limités
+- **Money Market Accounts** : intérêt plus élevé, possibilité d'émettre des chèques
+- **Certificates of Deposit (CDs)** : durée fixe, taux fixe, pénalité en cas de retrait anticipé
+- **High-Yield Savings** : banques en ligne, taux compétitifs
 
-### Credit and Debt
-- **Credit Score**: FICO (300-850), factors: payment history, utilization, length, mix, inquiries
-- **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
-- **Types of Debt**: 
-  - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high interest)
+### Crédit et dette
+- **Credit Score** : FICO (300-850), facteurs : historique de paiement, utilisation, ancienneté, mix, inquiries
+- **Credit Reports** : rapports annuels gratuits auprès d'Equifax, Experian, TransUnion
+- **Types of Debt**:
+  - Bonne dette : hypothèque, prêts étudiants (ROI potentiel)
+  - Mauvaise dette : cartes de crédit, prêts sur salaire (intérêts élevés)
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest interest first (mathematically optimal)
-  - Snowball: Pay smallest balance first (psychological wins)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
+  - Avalanche : rembourser d'abord le taux d'intérêt le plus élevé (mathématiquement optimal)
+  - Snowball : rembourser d'abord le plus petit solde (victoires psychologiques)
+- **Debt-to-Income Ratio** : paiements mensuels de dette / revenu mensuel brut
 
-## Investment Fundamentals
+## Fondamentaux de l'investissement
 
-### Asset Classes
+### Classes d'actifs
 
 #### Equities (Stocks)
-- **Common Stock**: Ownership share, voting rights, dividends
-- **Preferred Stock**: Fixed dividends, priority in bankruptcy, no voting
-- **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, income
-- **Sectors**: Technology, healthcare, financials, consumer, industrial, energy, utilities, materials, real estate, communication services
+- **Common Stock** : part de propriété, droits de vote, dividendes
+- **Preferred Stock** : dividendes fixes, priorité en cas de faillite, pas de vote
+- **Market Capitalization** : large-cap, mid-cap, small-cap
+- **Investment Styles** : growth, value, blend, income
+- **Sectors** : technologie, santé, finance, consommation, industrie, énergie, utilities, matériaux, immobilier, services de communication
 
 #### Fixed Income (Bonds)
-- **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt interest
-- **Corporate Bonds**: Investment grade, high-yield/junk
-- **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move inversely to rates
-- **Credit Risk**: Default probability, credit ratings (AAA to D)
+- **Government Bonds** : Treasury bills, notes, bonds (risque le plus faible)
+- **Municipal Bonds** : émis par des États ou collectivités, intérêts exonérés d'impôt
+- **Corporate Bonds** : investment grade, high-yield/junk
+- **Bond Characteristics** : valeur faciale, coupon, maturité, rendement
+- **Interest Rate Risk** : le prix des obligations évolue inversement aux taux
+- **Credit Risk** : probabilité de défaut, notations de crédit (AAA à D)
 
 #### Cash and Cash Equivalents
-- **Treasury Bills**: Short-term government debt
-- **Money Market Funds**: Stable NAV, liquid
-- **Commercial Paper**: Short-term corporate debt
-- **Characteristics**: Low risk, low return, high liquidity
+- **Treasury Bills** : dette publique de court terme
+- **Money Market Funds** : NAV stable, liquidité élevée
+- **Commercial Paper** : dette d'entreprise à court terme
+- **Characteristics** : faible risque, faible rendement, forte liquidité
 
 #### Real Estate
-- **Direct Ownership**: Physical properties, rental income
-- **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfunding**: Platform-based property investment
-- **Characteristics**: Income generation, appreciation, inflation hedge
+- **Direct Ownership** : biens physiques, revenus locatifs
+- **REITs** : Real Estate Investment Trusts cotés en bourse
+- **Real Estate Crowdfunding** : investissement immobilier via plateforme
+- **Characteristics** : génération de revenus, appréciation, couverture contre l'inflation
 
-#### Alternative Investments
-- **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
-- **Private Equity**: Direct company ownership, illiquid
-- **Hedge Funds**: Active management, diverse strategies
-- **Collectibles**: Art, wine, rare items
+#### Investissements alternatifs
+- **Commodities** : or, argent, pétrole, produits agricoles
+- **Cryptocurrencies** : Bitcoin, Ethereum, actifs numériques
+- **Private Equity** : prise de participation directe dans des entreprises, peu liquide
+- **Hedge Funds** : gestion active, stratégies diverses
+- **Collectibles** : art, vin, objets rares
 
-### Investment Vehicles
+### Véhicules d'investissement
 
 #### Mutual Funds
-- Professionally managed portfolios
-- Priced at end-of-day NAV
-- Active or passive management
-- Load vs. no-load funds
-- Expense ratios vary widely
+- Portefeuilles gérés professionnellement
+- Valorisation à la NAV de fin de journée
+- Gestion active ou passive
+- Fonds avec frais d'entrée vs sans frais d'entrée
+- Les expense ratios varient fortement
 
 #### Exchange-Traded Funds (ETFs)
-- Trade like stocks throughout day
-- Typically passive, index-tracking
-- Lower expense ratios than mutual funds
-- Tax-efficient structure
-- Examples: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
+- Se négocient comme des actions tout au long de la journée
+- Souvent passifs, répliquant un indice
+- Expense ratios généralement plus faibles que les mutual funds
+- Structure fiscalement efficace
+- Exemples : SPY (S&P 500), QQQ (Nasdaq), VTI (marché total)
 
 #### Index Funds
-- Passive management tracking specific index
-- Low costs, broad diversification
-- Examples: Total stock market, S&P 500, international
+- Gestion passive suivant un indice précis
+- Faibles coûts, large diversification
+- Exemples : marché actions total, S&P 500, international
 
 #### Annuities
-- Insurance products providing income streams
-- Fixed, variable, or indexed returns
-- Immediate or deferred payout
-- Tax-deferred growth
+- Produits d'assurance fournissant des flux de revenus
+- Rendements fixes, variables ou indexés
+- Versement immédiat ou différé
+- Croissance à fiscalité différée
 
-## Investment Strategies
+## Stratégies d'investissement
 
-### Portfolio Construction
-- **Asset Allocation**: Distribution across asset classes
-- **Diversification**: Spread risk across securities, sectors, geographies
-- **Modern Portfolio Theory**: Optimize risk-return through diversification
-- **Efficient Frontier**: Maximum return for given risk level
-- **Correlation**: How assets move relative to each other
+### Construction de portefeuille
+- **Asset Allocation** : répartition entre classes d'actifs
+- **Diversification** : répartir le risque entre titres, secteurs et zones géographiques
+- **Modern Portfolio Theory** : optimiser le couple risque-rendement grâce à la diversification
+- **Efficient Frontier** : rendement maximal pour un niveau de risque donné
+- **Correlation** : manière dont les actifs évoluent les uns par rapport aux autres
 
-### Investment Approaches
-- **Passive Investing**: Index funds, buy-and-hold, low costs
-- **Active Investing**: Stock picking, market timing, higher costs
-- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless of price
-- **Value Investing**: Buy undervalued securities (Warren Buffett approach)
-- **Growth Investing**: Focus on companies with above-average growth
-- **Income Investing**: Prioritize dividends and interest payments
-- **ESG Investing**: Environmental, social, governance factors
+### Approches d'investissement
+- **Passive Investing** : fonds indiciels, buy-and-hold, faibles coûts
+- **Active Investing** : sélection de titres, market timing, coûts plus élevés
+- **Dollar-Cost Averaging** : investir des montants fixes régulièrement quel que soit le prix
+- **Value Investing** : acheter des titres sous-évalués (approche de Warren Buffett)
+- **Growth Investing** : privilégier les entreprises à croissance supérieure à la moyenne
+- **Income Investing** : donner la priorité aux dividendes et aux intérêts
+- **ESG Investing** : facteurs environnementaux, sociaux et de gouvernance
 
-### Risk Management
-- **Risk Tolerance**: Ability and willingness to lose money
-- **Time Horizon**: When you need the money affects risk capacity
-- **Position Sizing**: Don't concentrate too much in single investment
-- **Stop-Loss Orders**: Automatic sell at predetermined price
-- **Rebalancing**: Restore target allocation periodically
-- **Hedging**: Options, inverse ETFs to reduce downside
+### Gestion du risque
+- **Risk Tolerance** : capacité et volonté de perdre de l'argent
+- **Time Horizon** : le moment où l'on a besoin de l'argent détermine la capacité de risque
+- **Position Sizing** : ne pas trop concentrer sur un seul investissement
+- **Stop-Loss Orders** : vente automatique à un prix prédéterminé
+- **Rebalancing** : restaurer périodiquement l'allocation cible
+- **Hedging** : options, ETFs inverses pour réduire le risque baissier
 
-## Retirement Planning
+## Planification de la retraite
 
-### Retirement Accounts (US)
+### Comptes retraite (US)
 
 #### Traditional IRA
-- Tax-deductible contributions (income limits apply)
-- Tax-deferred growth
-- Taxed upon withdrawal
-- Required Minimum Distributions (RMDs) at age 73
+- Cotisations déductibles fiscalement (sous réserve de plafonds de revenu)
+- Croissance à fiscalité différée
+- Imposition au retrait
+- Required Minimum Distributions (RMDs) à partir de 73 ans
 
 #### Roth IRA
-- After-tax contributions
-- Tax-free growth and withdrawals
-- No RMDs during lifetime
-- Income limits for eligibility
+- Cotisations après impôt
+- Croissance et retraits exonérés d'impôt
+- Pas de RMD pendant la vie du titulaire
+- Plafonds de revenu pour l'éligibilité
 
 #### 401(k) Plans
-- Employer-sponsored retirement plans
-- Pre-tax or Roth (after-tax) options
-- Employer matching (free money)
-- Higher contribution limits than IRAs
-- Vesting schedules for employer contributions
+- Plans retraite parrainés par l'employeur
+- Options pre-tax ou Roth (after-tax)
+- Abondement de l'employeur (argent gratuit)
+- Limites de cotisation plus élevées que les IRA
+- Calendriers de vesting pour les cotisations employeur
 
 #### Other Plans
-- **403(b)**: Non-profit organizations
-- **457**: Government employees
-- **SEP IRA**: Self-employed, small business
-- **Solo 401(k)**: Self-employed with no employees
+- **403(b)** : organisations à but non lucratif
+- **457** : salariés du secteur public
+- **SEP IRA** : travailleurs indépendants, petites entreprises
+- **Solo 401(k)** : indépendants sans salariés
 
-### Retirement Planning Concepts
-- **Replacement Ratio**: 70-80% of pre-retirement income typically needed
-- **Social Security**: Government benefit, claim between 62-70
-- **Pension Plans**: Defined benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
-- **Healthcare Costs**: Medicare, supplemental insurance, long-term care
+### Concepts de planification retraite
+- **Replacement Ratio** : en général 70-80 % du revenu d'avant retraite sont nécessaires
+- **Social Security** : prestation publique, à demander entre 62 et 70 ans
+- **Pension Plans** : régimes à prestations définies (paiement garanti par l'employeur)
+- **Withdrawal Strategies** : règle des 4 %, dépenses dynamiques, stratégie par seaux
+- **Healthcare Costs** : Medicare, assurance complémentaire, prise en charge de longue durée
 
-## Market Mechanics
+## Mécanique des marchés
 
-### Stock Exchanges
-- **NYSE**: New York Stock Exchange, auction-based
-- **Nasdaq**: Electronic exchange, technology-heavy
-- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+### Bourses
+- **NYSE** : New York Stock Exchange, fonctionnement par enchères
+- **Nasdaq** : place de marché électronique, fortement technologique
+- **Other Exchanges** : London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
 
-### Order Types
-- **Market Order**: Execute immediately at current price
-- **Limit Order**: Execute only at specified price or better
-- **Stop Order**: Becomes market order when stop price reached
-- **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailing Stop**: Stop price follows stock price movement
+### Types d'ordres
+- **Market Order** : exécution immédiate au prix courant
+- **Limit Order** : exécution uniquement au prix fixé ou meilleur
+- **Stop Order** : devient un market order lorsque le prix stop est atteint
+- **Stop-Limit Order** : devient un limit order lorsque le prix stop est atteint
+- **Trailing Stop** : le prix stop suit l'évolution du cours
 
-### Trading Concepts
-- **Bid-Ask Spread**: Difference between buying and selling price
-- **Volume**: Number of shares traded
-- **Liquidity**: Ease of buying/selling without affecting price
-- **Volatility**: Price fluctuation magnitude
-- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
-- **Margin Trading**: Borrow money to invest, amplified gains/losses
+### Concepts de trading
+- **Bid-Ask Spread** : différence entre prix d'achat et de vente
+- **Volume** : nombre d'actions échangées
+- **Liquidity** : facilité d'achat/vente sans faire bouger le prix
+- **Volatility** : ampleur des variations de prix
+- **Short Selling** : emprunter des actions, vendre, puis espérer les racheter moins cher
+- **Margin Trading** : emprunter pour investir, avec gains/pertes amplifiés
 
-### Market Indicators
-- **S&P 500**: 500 largest US companies
-- **Dow Jones Industrial Average**: 30 large blue-chip companies
-- **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
-- **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility index, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic indicator
+### Indicateurs de marché
+- **S&P 500** : 500 plus grandes entreprises américaines
+- **Dow Jones Industrial Average** : 30 grandes blue chips
+- **Nasdaq Composite** : toutes les actions cotées au Nasdaq, dominante technologique
+- **Russell 2000** : petites capitalisations américaines
+- **VIX** : indice de volatilité, « baromètre de la peur »
+- **Yield Curve** : rendements obligataires selon la maturité, indicateur économique
 
-## Fundamental Analysis
+## Analyse fondamentale
 
-### Financial Statements
-- **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
-- **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operating, investing, financing activities
+### États financiers
+- **Balance Sheet** : Assets = Liabilities + Shareholders' Equity
+- **Income Statement** : Revenue - Expenses = Net Income
+- **Cash Flow Statement** : activités d'exploitation, d'investissement et de financement
 
-### Key Ratios
+### Ratios clés
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnings): Share price / earnings per share
-  - P/B (Price-to-Book): Market value / book value
-  - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
+  - P/E (Price-to-Earnings) : prix de l'action / bénéfice par action
+  - P/B (Price-to-Book) : valeur de marché / valeur comptable
+  - P/S (Price-to-Sales) : capitalisation boursière / chiffre d'affaires
+  - EV/EBITDA : valeur d'entreprise / bénéfice avant intérêts, impôts, dépréciation et amortissement
 
 - **Profitability Ratios**:
-  - Gross Margin: Gross profit / revenue
-  - Operating Margin: Operating income / revenue
-  - Net Margin: Net income / revenue
-  - ROE (Return on Equity): Net income / shareholders' equity
-  - ROA (Return on Assets): Net income / total assets
+  - Gross Margin : marge brute / chiffre d'affaires
+  - Operating Margin : résultat opérationnel / chiffre d'affaires
+  - Net Margin : résultat net / chiffre d'affaires
+  - ROE (Return on Equity) : résultat net / capitaux propres
+  - ROA (Return on Assets) : résultat net / total des actifs
 
 - **Liquidity Ratios**:
-  - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - inventory) / current liabilities
+  - Current Ratio : actifs courants / passifs courants
+  - Quick Ratio : (actifs courants - stocks) / passifs courants
 
 - **Leverage Ratios**:
-  - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / interest expense
+  - Debt-to-Equity : dette totale / capitaux propres
+  - Interest Coverage : EBIT / charges d'intérêts
 
-### Qualitative Factors
-- **Management Quality**: Track record, alignment with shareholders
-- **Competitive Advantage**: Moat, barriers to entry
-- **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board independence, shareholder rights
+### Facteurs qualitatifs
+- **Management Quality** : historique, alignement avec les actionnaires
+- **Competitive Advantage** : moat, barrières à l'entrée
+- **Industry Dynamics** : croissance, concurrence, réglementation
+- **Corporate Governance** : indépendance du conseil, droits des actionnaires
 
-## Technical Analysis
+## Analyse technique
 
-### Chart Types
-- **Line Charts**: Closing prices over time
-- **Bar Charts**: Open, high, low, close (OHLC)
-- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
+### Types de graphiques
+- **Line Charts** : cours de clôture dans le temps
+- **Bar Charts** : open, high, low, close (OHLC)
+- **Candlestick Charts** : représentation visuelle OHLC, motifs haussiers/baissiers
 
-### Trend Analysis
-- **Support**: Price level where buying pressure exceeds selling
-- **Resistance**: Price level where selling pressure exceeds buying
-- **Trendlines**: Connect highs or lows to show direction
-- **Moving Averages**: SMA (simple), EMA (exponential)
-- **Golden Cross**: Short MA crosses above long MA (bullish)
-- **Death Cross**: Short MA crosses below long MA (bearish)
+### Analyse de tendance
+- **Support** : niveau de prix où la pression acheteuse dépasse la pression vendeuse
+- **Resistance** : niveau de prix où la pression vendeuse dépasse la pression acheteuse
+- **Trendlines** : relier les sommets ou creux pour montrer la direction
+- **Moving Averages** : SMA (simple), EMA (exponentielle)
+- **Golden Cross** : moyenne mobile courte qui croise au-dessus de la longue (haussier)
+- **Death Cross** : moyenne mobile courte qui croise en dessous de la longue (baissier)
 
-### Technical Indicators
-- **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
-- **MACD**: Moving Average Convergence Divergence
-- **Bollinger Bands**: Volatility bands around moving average
-- **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: Support/resistance levels based on ratios
+### Indicateurs techniques
+- **Relative Strength Index (RSI)** : oscillateur de momentum (0-100)
+- **MACD** : Moving Average Convergence Divergence
+- **Bollinger Bands** : bandes de volatilité autour d'une moyenne mobile
+- **Volume Indicators** : On-Balance Volume, volume-weighted average price
+- **Fibonacci Retracement** : niveaux de support/résistance fondés sur des ratios
 
-### Chart Patterns
-- **Reversal Patterns**: Head and shoulders, double top/bottom
-- **Continuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defined range
+### Figures graphiques
+- **Reversal Patterns** : tête-épaules, double sommet/double creux
+- **Continuation Patterns** : triangles, flags, pennants
+- **Breakouts** : le prix sort d'une plage définie
 
-## Tax Considerations
+## Considérations fiscales
 
-### Investment Taxes
-- **Capital Gains**: Profit from selling investments
-  - Short-term: Held <1 year, taxed as ordinary income
-  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
-- **Dividends**: 
-  - Qualified: Lower tax rates
-  - Ordinary: Taxed as income
-- **Interest Income**: Generally taxed as ordinary income
-- **Tax-Loss Harvesting**: Sell losers to offset gains
+### Fiscalité des investissements
+- **Capital Gains** : profit réalisé lors de la vente d'investissements
+  - Court terme : détention <1 an, imposé comme revenu ordinaire
+  - Long terme : détention >1 an, taux préférentiels (0 %, 15 %, 20 %)
+- **Dividends**:
+  - Qualified : taux d'imposition plus faibles
+  - Ordinary : imposés comme revenu
+- **Interest Income** : généralement imposé comme revenu ordinaire
+- **Tax-Loss Harvesting** : vendre des positions perdantes pour compenser les gains
 
-### Tax-Advantaged Accounts
-- **Traditional IRA/401(k)**: Tax deduction now, taxed later
-- **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Savings Account)**: Triple tax advantage for medical expenses
-- **529 Plans**: Tax-advantaged education savings
+### Comptes fiscalement avantageux
+- **Traditional IRA/401(k)** : déduction fiscale aujourd'hui, imposition plus tard
+- **Roth IRA/401(k)** : pas de déduction aujourd'hui, exonération plus tard
+- **HSA (Health Savings Account)** : triple avantage fiscal pour les dépenses médicales
+- **529 Plans** : épargne études fiscalement avantageuse
 
-### Tax Efficiency Strategies
-- Asset location (which accounts hold which investments)
-- Hold investments long-term for preferential rates
-- Use tax-efficient funds (ETFs, index funds)
-- Consider municipal bonds for taxable accounts
+### Stratégies d'efficacité fiscale
+- L'emplacement des actifs (quels comptes détiennent quels investissements)
+- Détenir les investissements sur le long terme pour bénéficier de taux préférentiels
+- Utiliser des fonds fiscalement efficaces (ETFs, fonds indiciels)
+- Envisager les municipal bonds pour les comptes imposables
 
-## Economic Factors
+## Facteurs économiques
 
-### Macroeconomic Indicators
-- **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasing power erosion
-- **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowing costs
-- **Consumer Confidence**: Spending sentiment
-- **Manufacturing Data**: PMI, industrial production
+### Indicateurs macroéconomiques
+- **GDP** : Gross Domestic Product, croissance économique
+- **Inflation** : CPI, PCE, érosion du pouvoir d'achat
+- **Unemployment** : santé du marché du travail
+- **Interest Rates** : politique de la Federal Reserve, coût de l'emprunt
+- **Consumer Confidence** : sentiment des consommateurs
+- **Manufacturing Data** : PMI, production industrielle
 
-### Federal Reserve and Monetary Policy
-- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easing
-- **Impact**: Interest rates affect bonds, stocks, currency, economy
+### Federal Reserve et politique monétaire
+- **Dual Mandate** : emploi maximal, stabilité des prix (inflation à 2 %)
+- **Tools** : taux des federal funds, open market operations, quantitative easing
+- **Impact** : les taux d'intérêt influencent obligations, actions, devise et économie
 
-### Business Cycle
-- **Expansion**: Economic growth, rising employment
-- **Peak**: Maximum growth, potential overheating
-- **Contraction/Recession**: Economic decline, rising unemployment
-- **Trough**: Bottom, recovery begins
+### Cycle économique
+- **Expansion** : croissance économique, hausse de l'emploi
+- **Peak** : croissance maximale, risque de surchauffe
+- **Contraction/Recession** : recul économique, hausse du chômage
+- **Trough** : point bas, début de la reprise
 
-## Behavioral Finance
+## Finance comportementale
 
-### Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gains please
-- **Confirmation Bias**: Seek information confirming existing beliefs
-- **Overconfidence**: Overestimate knowledge and abilities
-- **Anchoring**: Rely too heavily on first piece of information
-- **Herd Mentality**: Follow crowd behavior
-- **Recency Bias**: overweight recent events
-- **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Continue based on past investment, not future prospects
+### Biais fréquents
+- **Loss Aversion** : les pertes font plus mal que des gains équivalents ne procurent de satisfaction
+- **Confirmation Bias** : rechercher les informations qui confirment ses croyances existantes
+- **Overconfidence** : surestimer ses connaissances et ses capacités
+- **Anchoring** : accorder trop d'importance à la première information reçue
+- **Herd Mentality** : suivre le comportement de la foule
+- **Recency Bias** : surpondérer les événements récents
+- **Endowment Effect** : attribuer plus de valeur à ce que l'on possède déjà
+- **Sunk Cost Fallacy** : continuer à cause d'un investissement passé plutôt qu'en fonction des perspectives futures
 
-### Emotional Investing Pitfalls
-- Panic selling during downturns
-- FOMO (Fear Of Missing Out) buying at tops
-- Trading too frequently
-- Chasing past performance
-- Timing the market (nearly impossible consistently)
+### Pièges émotionnels de l'investissement
+- Vendre dans la panique lors des baisses
+- Acheter au plus haut par FOMO (Fear Of Missing Out)
+- Trader trop fréquemment
+- Courir après les performances passées
+- Chercher à timer le marché (presque impossible de manière constante)
 
-### Best Practices
-- Create and stick to investment plan
-- Automate contributions
-- Avoid checking portfolio too frequently
-- Focus on controllables (savings rate, costs, asset allocation)
-- Maintain long-term perspective
+### Bonnes pratiques
+- Créer un plan d'investissement et s'y tenir
+- Automatiser les versements
+- Éviter de consulter le portefeuille trop souvent
+- Se concentrer sur ce qui est contrôlable (taux d'épargne, coûts, allocation d'actifs)
+- Garder une perspective de long terme
 
-## Current Investment Trends
+## Tendances actuelles de l'investissement
 
-### Thematic Investing
-- **Technology**: AI, cloud computing, cybersecurity, semiconductors
-- **Healthcare**: Biotechnology, genomics, telemedicine
-- **Clean Energy**: Solar, wind, electric vehicles, battery technology
-- **Fintech**: Digital payments, blockchain, robo-advisors
-- **E-commerce**: Online retail, logistics, digital advertising
+### Investissement thématique
+- **Technology** : IA, cloud computing, cybersécurité, semi-conducteurs
+- **Healthcare** : biotechnologie, génomique, télémédecine
+- **Clean Energy** : solaire, éolien, véhicules électriques, technologies de batterie
+- **Fintech** : paiements numériques, blockchain, robo-advisors
+- **E-commerce** : vente en ligne, logistique, publicité numérique
 
-### Demographic Trends
-- Aging population (healthcare, retirement services)
-- Millennial/Gen Z preferences (sustainability, technology)
-- Urbanization (real estate, infrastructure)
-- Emerging markets middle class growth
+### Tendances démographiques
+- Vieillissement de la population (santé, services de retraite)
+- Préférences des Millennials/Gen Z (durabilité, technologie)
+- Urbanisation (immobilier, infrastructures)
+- Croissance de la classe moyenne dans les marchés émergents
 
-### Sustainable Investing
-- **ESG Integration**: Environmental, social, governance factors
-- **Impact Investing**: Generate positive social/environmental impact
-- **Green Bonds**: Fund environmental projects
-- **Carbon Credits**: Trade emissions allowances
+### Investissement durable
+- **ESG Integration** : facteurs environnementaux, sociaux et de gouvernance
+- **Impact Investing** : générer un impact social/environnemental positif
+- **Green Bonds** : financer des projets environnementaux
+- **Carbon Credits** : échanger des quotas d'émissions
 
-## Financial Advisors and Services
+## Conseillers financiers et services
 
-### Types of Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
-- **Broker-Dealer**: Suitability standard, commission-based
-- **Robo-Advisors**: Automated investing, lower costs
-- **Financial Planner**: Comprehensive planning, may be fee-only or commission
+### Types de conseillers
+- **Registered Investment Advisor (RIA)** : obligation fiduciaire, rémunération à honoraires
+- **Broker-Dealer** : standard de convenance, rémunération à la commission
+- **Robo-Advisors** : investissement automatisé, coûts plus faibles
+- **Financial Planner** : planification globale, peut être rémunéré aux honoraires ou à la commission
 
-### Compensation Models
-- **Fee-Only**: Percentage of assets, hourly, flat fee (no commissions)
-- **Commission**: Paid on product sales
-- **Fee-Based**: Combination of fees and commissions
-- **Assets Under Management (AUM)**: Typically 0.5%-1.5% annually
+### Modèles de rémunération
+- **Fee-Only** : pourcentage des actifs, tarif horaire, forfait (pas de commissions)
+- **Commission** : rémunération sur les ventes de produits
+- **Fee-Based** : combinaison d'honoraires et de commissions
+- **Assets Under Management (AUM)** : généralement 0.5%-1.5% par an
 
-### Choosing an Advisor
-- Verify credentials (CFP, CFA, CPA)
-- Understand compensation structure
-- Check regulatory history (SEC, FINRA BrokerCheck)
-- Ensure fiduciary duty
-- Assess communication style and compatibility
+### Choisir un conseiller
+- Vérifier les certifications (CFP, CFA, CPA)
+- Comprendre la structure de rémunération
+- Vérifier l'historique réglementaire (SEC, FINRA BrokerCheck)
+- S'assurer du devoir fiduciaire
+- Évaluer le style de communication et la compatibilité

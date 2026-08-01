@@ -5,159 +5,159 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 언어 와 영어
+# 언어와 영어
 
-## What is 언어?
+## 언어란 무엇인가?
 
-언어 is a system 의 의사소통 using sounds, symbols, or gestures that follows a shared set 의 rules understood by a community. Human 언어 is unique 에서 its complexity, creativity, 와 capacity to express abstract ideas. There are approximately 7,000 languages spoken 에서 그 world today. 영어 is 그 most widely spoken 언어 as a second 언어 와 is 그 dominant 언어 의 international 의사소통, 비즈니스, 과학, 와 그 internet.
+언어는 한 공동체가 공유하는 규칙에 따라 소리, 기호, 몸짓 등을 사용해 의미를 전달하는 의사소통 체계입니다. 인간의 언어는 복잡성과 창의성, 그리고 추상적인 개념까지 표현할 수 있는 능력 때문에 특별합니다. 오늘날 전 세계에는 약 7,000개의 언어가 사용되고 있습니다. 영어는 제2언어로 가장 널리 쓰이는 언어이며, 국제 의사소통, 비즈니스, 과학, 인터넷에서 중심적인 역할을 합니다.
 
-## 영어 Grammar
+## 영어 문법
 
-Grammar is 그 set 의 rules governing how words are combined to form sentences 에서 a 언어. A sentence must contain a subject (who or what 그 sentence is about) 와 a predicate (what 그 subject does or is).
+문법은 언어에서 단어를 결합해 문장을 만드는 규칙의 체계입니다. 문장에는 반드시 주어(문장이 무엇 또는 누구에 관한지)와 서술부(주어가 무엇을 하거나 어떤 상태인지)가 있어야 합니다.
 
-A **noun** is a word that names a person, place, thing, or idea.
-A **verb** is a word that expresses an action or state 의 being.
-An **adjective** modifies a noun.
-An **adverb** modifies a verb, adjective, or another adverb.
-A **pronoun** takes 그 place 의 a noun.
+A **noun**은 사람, 장소, 사물, 개념의 이름을 나타내는 단어입니다.
+A **verb**는 동작이나 상태를 나타내는 단어입니다.
+An **adjective**는 명사를 수식합니다.
+An **adverb**는 동사, 형용사, 또는 다른 부사를 수식합니다.
+A **pronoun**은 명사를 대신하는 단어입니다.
 
-A **clause** is a group 의 words containing a subject 와 a verb. An independent clause can stand alone as a sentence. A dependent clause cannot stand alone 와 depends on an independent clause. A **phrase** is a group 의 words that does not contain both a subject 와 a predicate.
+A **clause**는 주어와 동사를 포함하는 단어 묶음입니다. Independent clause는 문장으로 홀로 설 수 있지만, dependent clause는 혼자 설 수 없고 independent clause에 의존합니다. A **phrase**는 주어와 서술부를 모두 갖추지 않은 단어 묶음입니다.
 
-## Parts 의 Speech
+## 품사
 
-그 eight traditional parts 의 speech 에서 영어 are: noun, pronoun, verb, adjective, adverb, preposition, conjunction, 와 interjection.
+영어의 전통적인 8품사는 명사, 대명사, 동사, 형용사, 부사, 전치사, 접속사, 감탄사입니다.
 
-A **preposition** shows 그 relationship between a noun or pronoun 와 another word (e.g., 에서, on, at, by, 와 함께).
-A **conjunction** connects words, phrases, or clauses (e.g., 와, but, or, because).
+A **preposition**은 명사나 대명사와 다른 단어 사이의 관계를 나타냅니다 (예: in, on, at, by, with).
+A **conjunction**은 단어, 구, 절을 이어 줍니다 (예: and, but, or, because).
 
-**Common coordinating conjunctions** can be remembered 와 함께 그 acronym FANBOYS:
+**자주 쓰이는 등위접속사**는 FANBOYS라는 약어로 기억할 수 있습니다:
 - **F**or, **A**nd, **N**or, **B**ut, **O**r, **Y**et, **S**o
 
-## Punctuation
+## 문장 부호
 
-- A period (.) ends a declarative sentence.
-- A question mark (?) ends an interrogative sentence.
-- An exclamation mark (!) ends an exclamatory sentence.
-- A comma (,) separates items 에서 a list, sets off introductory phrases, 와 separates independent clauses joined by a conjunction.
-- A semicolon (;) separates two closely related independent clauses.
-- A colon (:) introduces a list, explanation, or quotation.
-- An apostrophe (') indicates possession (John's book) or a contraction (don't = do not).
+- 마침표 (.)는 평서문을 끝낼 때 사용합니다.
+- 물음표 (?)는 의문문을 끝낼 때 사용합니다.
+- 느낌표 (!)는 감탄문을 끝낼 때 사용합니다.
+- 쉼표 (,)는 목록의 항목을 구분하고, 도입 구를 떼어 내며, 접속사로 연결된 독립절을 구분하는 데 사용합니다.
+- 세미콜론 (;)은 밀접하게 관련된 두 독립절을 구분합니다.
+- 콜론 (:)은 목록, 설명, 인용을 소개할 때 사용합니다.
+- 아포스트로피 (')는 소유를 나타내거나(John's book) 축약형을 표시할 때 사용합니다(don't = do not).
 
-## Spelling 와 Common Errors
+## 철자와 자주 하는 실수
 
-**Common spelling rules:**
-- "i before e except after c" (believe, receive) — though this rule has many exceptions (e.g., "weird", "과학")
-- Words ending 에서 a silent "e" drop 그 "e" before adding a vowel suffix (make → making)
-- Double 그 final consonant before adding a vowel suffix when 그 last syllable is stressed 와 ends 에서 a single consonant (run → running)
+**자주 언급되는 철자 규칙:**
+- "i before e except after c" (believe, receive) — 다만 이 규칙에는 예외가 많습니다(예: "weird", "science").
+- 묵음 "e"로 끝나는 단어는 모음으로 시작하는 접미사를 붙일 때 마지막 "e"를 탈락시키는 경우가 많습니다 (make → making).
+- 마지막 음절에 강세가 있고 단어가 단일 자음으로 끝나면, 모음 접미사를 붙이기 전에 마지막 자음을 한 번 더 쓰는 경우가 많습니다 (run → running).
 
-**Common confusable word pairs:**
+**헷갈리기 쉬운 단어 쌍:**
 - their / there / they're
 - your / you're
 - its / it's
 - affect / effect
 - then / than
 
-## Vocabulary 와 Word Formation
+## 어휘와 단어 형성
 
-**Etymology** is 그 study 의 그 origins 와 historical 개발 의 words. Many 영어 words come from Latin, Greek, French, 와 Germanic roots.
+**Etymology**는 단어의 기원과 역사적 발달을 연구하는 분야입니다. 영어 단어 가운데 상당수는 Latin, Greek, French, Germanic 계열의 어근에서 왔습니다.
 
-**Prefixes** are added to 그 beginning 의 words to change their meaning (e.g., un-, re-, pre-, mis-).
-**Suffixes** are added to 그 end 의 words (e.g., -tion, -ness, -ing, -ly).
+**Prefixes**는 단어 앞에 붙어 의미를 바꾸는 요소입니다 (예: un-, re-, pre-, mis-).
+**Suffixes**는 단어 뒤에 붙는 요소입니다 (예: -tion, -ness, -ing, -ly).
 
-- **Synonyms**: words 와 함께 similar meanings
-- **Antonyms**: words 와 함께 opposite meanings
-- **Metaphor**: describes something by saying it is something else ("Time is a thief")
-- **Simile**: compares two things using "like" or "as" ("Busy as a bee")
+- **Synonyms**: 비슷한 의미를 가진 단어
+- **Antonyms**: 반대 의미를 가진 단어
+- **Metaphor**: 어떤 대상을 다른 것이라고 직접 말해 비유하는 표현 ("Time is a thief")
+- **Simile**: "like" 또는 "as"를 사용해 두 대상을 비교하는 표현 ("Busy as a bee")
 
-## Writing Skills
+## 글쓰기 능력
 
-Good writing is clear, concise, coherent, 와 engaging.
+좋은 글은 명확하고, 간결하며, 일관성이 있고, 독자의 관심을 끌어야 합니다.
 
-- A **paragraph** should have a topic sentence (그 main idea), supporting sentences, 와 a concluding sentence.
-- 그 **five-paragraph essay** structure consists 의 an 소개, three body paragraphs, 와 a conclusion.
-- **Revision** is 그 process 의 improving a draft.
-- **Editing** focuses on correcting grammar, spelling, 와 punctuation errors.
-- **Proofreading** is 그 final check before publication.
+- **Paragraph**는 주제문, 이를 뒷받침하는 문장들, 마무리 문장으로 이루어지는 것이 일반적입니다.
+- **Five-paragraph essay** 구조는 서론, 세 개의 본문 단락, 결론으로 구성됩니다.
+- **Revision**은 초고를 더 나은 글로 다듬는 과정입니다.
+- **Editing**은 문법, 철자, 문장 부호 오류를 바로잡는 데 초점을 둡니다.
+- **Proofreading**은 출판이나 제출 전에 하는 마지막 점검입니다.
 
-## Reading 와 Comprehension
+## 읽기와 독해
 
-**Active reading** involves engaging 와 함께 그 text by asking questions, making predictions, summarizing, 와 making connections.
+**Active reading**은 질문을 던지고, 예측하고, 요약하고, 다른 지식과 연결 지으며 텍스트를 능동적으로 읽는 방식입니다.
 
-- 그 **main idea** is 그 central point 의 a passage.
-- Details, 예시, 와 evidence 지원 그 main idea.
-- **Inference** involves drawing conclusions from information that is implied but not stated directly.
-- **Context clues** are words 와 phrases surrounding an unfamiliar word that help determine its meaning.
+- **Main idea**는 글이나 단락의 중심 생각입니다.
+- 세부 내용, 예시, 근거는 **main idea**를 뒷받침합니다.
+- **Inference**는 직접적으로 쓰이지 않은 정보를 바탕으로 결론을 이끌어 내는 것입니다.
+- **Context clues**는 모르는 단어 주변의 단어와 구를 통해 그 의미를 추론하도록 돕는 단서입니다.
 
-## 의사소통 와 Rhetoric
+## 의사소통과 수사학
 
-**Rhetoric** is 그 art 의 effective 의사소통 와 persuasion.
-- **Ethos** appeals to 그 credibility 의 그 speaker.
-- **Pathos** appeals to emotion.
-- **Logos** appeals to logic 와 reason.
+**Rhetoric**은 효과적인 의사소통과 설득의 기술입니다.
+- **Ethos**는 화자의 신뢰성에 호소합니다.
+- **Pathos**는 감정에 호소합니다.
+- **Logos**는 논리와 이성에 호소합니다.
 
-A **thesis statement** clearly expresses 그 main argument 의 an essay.
-**Tone** refers to 그 writer's attitude toward 그 subject 와 audience.
-**Register** refers to 그 level 의 formality 에서 언어 use, ranging from casual conversation to formal academic writing.
+**Thesis statement**는 글의 핵심 주장이나 논지를 분명하게 제시하는 문장입니다.
+**Tone**은 주제와 독자에 대한 글쓴이의 태도를 말합니다.
+**Register**는 언어 사용의 격식 수준을 뜻하며, 일상적인 대화부터 형식적인 학술 글쓰기까지 폭넓게 나타납니다.
 
-## Subject-Verb Agreement (Expanded)
+## 주어-동사 수 일치 (심화)
 
-One 의 그 most important grammar rules 에서 영어 is that a subject 와 its verb must agree 에서 number: a singular subject takes a singular verb, 와 a plural subject takes a plural verb.
+영어 문법에서 가장 중요한 규칙 가운데 하나는 주어와 동사의 수 일치입니다. 단수 주어에는 단수 동사를, 복수 주어에는 복수 동사를 써야 합니다.
 
-### Gerunds as Subjects
+### 동명사가 주어일 때
 
-A gerund (a verb used as a noun, ending 에서 -ing) is always singular.
+동명사(동사가 명사처럼 쓰이며 -ing로 끝나는 형태)는 항상 단수로 취급합니다.
 
-**Correct:**
+**올바른 예:**
 - "Eating rocks **is** dangerous."
-- "Running every day **is** good 위한 your health."
+- "Running every day **is** good for your health."
 - "Reading **helps** improve vocabulary."
 
-**Incorrect:**
+**잘못된 예:**
 - "Eating rocks **are** dangerous." (gerund is singular)
-- "Running 와 swimming **is** good." (compound subject — plural, use "are")
+- "Running and swimming **is** good." (compound subject — plural, use "are")
 
-### Compound Subjects
+### 병렬 주어
 
-- Joined by "와": plural verb
-  - "Alice 와 Bob **are** here."
-  - "그 teacher 와 그 student **agree**."
+- "and"로 연결되면: 복수 동사 사용
+  - "Alice and Bob **are** here."
+  - "The teacher and the student **agree**."
 
-- Joined by "or"/"nor": agree 와 함께 그 subject closest to 그 verb
-  - "Neither 그 students nor 그 teacher **was** ready."
-  - "Neither 그 teacher nor 그 students **were** ready."
+- "or"/"nor"로 연결되면: 동사와 가장 가까운 주어에 수를 맞춤
+  - "Neither the students nor the teacher **was** ready."
+  - "Neither the teacher nor the students **were** ready."
 
-### Collective Nouns
+### 집합명사
 
-Collective nouns (team, committee, group, family) take a singular verb 에서 American 영어:
-- "그 team **is** practising."
-- "그 committee **has** made a decision."
+집합명사(team, committee, group, family)는 American English에서는 보통 단수 동사를 취합니다.
+- "The team **is** practising."
+- "The committee **has** made a decision."
 
-에서 British 영어, plural verbs are also accepted depending on context.
+British English에서는 문맥에 따라 복수 동사도 허용됩니다.
 
-### Indefinite Pronouns
+### 부정대명사
 
-그 following indefinite pronouns are **always singular**:
+다음과 같은 부정대명사는 **항상 단수**로 취급합니다.
 - everyone, everybody, anyone, anybody, someone, somebody, no one, nobody
 - each, either, neither
 
-**Correct:**
+**올바른 예:**
 - "Everyone **is** invited."
-- "Each 의 그 students **has** completed 그 assignment."
+- "Each of the students **has** completed the assignment."
 
-**Incorrect:**
+**잘못된 예:**
 - "Everyone **are** invited."
 
-## Epistemic Honesty — Knowing When to Say "I Don't Know"
+## 모를 때 "모른다"고 말하는 인식론적 정직성
 
-**Epistemic honesty** means being truthful about 그 limits 의 one's knowledge. It is better to say "I don't have reliable information on that" than to produce a confident-sounding but false answer.
+**Epistemic honesty**란 자신의 지식에 한계가 있음을 정직하게 인정하는 태도입니다. 근거 없는 확신에 찬 답을 내놓는 것보다, "그 점에 대해서는 신뢰할 만한 정보가 없습니다"라고 말하는 편이 낫습니다.
 
-**Hallucination** is 그 tendency 의 AI 시스템 to generate plausible-sounding but factually incorrect statements. Guarding against hallucination requires recognising when a question falls outside 사용 가능 knowledge 와 responding 와 함께 an honest acknowledgement 의 uncertainty rather than an invented answer.
+**Hallucination**은 AI 시스템이 그럴듯하지만 사실과 다른 내용을 만들어 내는 경향을 말합니다. 이를 막으려면 질문이 현재 가진 지식 범위를 벗어나는지 인식하고, 지어낸 답 대신 불확실성을 솔직하게 인정해야 합니다.
 
-**Useful phrases 위한 expressing uncertainty:**
+**불확실성을 표현할 때 유용한 문구:**
 - "I'm not certain, but…"
-- "You may want to verify this 와 함께 a specialist."
+- "You may want to verify this with a specialist."
 - "I don't have enough information to answer reliably."
-- "This is outside my 지식 기반."
+- "This is outside my knowledge base."
 
-**위한 health, medical, 법적, or safety questions:**
-It is always better to defer to qualified professionals rather than offer specific advice. Stating a recommended dose 의 a substance, a treatment 위한 a disease, or a 법적 ruling without professional context can cause real harm 와 must be avoided.
+**건강, 의료, 법률, 안전 관련 질문의 경우:**
+구체적인 조언을 섣불리 제공하기보다 자격을 갖춘 전문가에게 안내하는 편이 언제나 더 바람직합니다. 전문가의 맥락 없이 어떤 물질의 권장 용량, 질병의 치료법, 법적 판단을 단정적으로 제시하면 실제 피해를 초래할 수 있으므로 피해야 합니다.

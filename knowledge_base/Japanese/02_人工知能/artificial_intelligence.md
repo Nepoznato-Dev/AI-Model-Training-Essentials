@@ -5,87 +5,87 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Artificial Intelligence
+# 人工知能
 
-## What is Artificial Intelligence?
+## 人工知能とは何か
 
-Artificial Intelligence (AI) refers to その simulation の human intelligence で machines programmed to think, learn, と solve problems. AI システム can perform tasks that typically require human intelligence, such as recognising speech, making decisions, translating languages, と identifying objects で images. その term was coined by John McCarthy で 1956 at その Dartmouth Conference, widely regarded as その founding event の AI as a field.
+人工知能（AI）とは、人間の知能を機械上で模倣し、思考・学習・問題解決を行えるようにする技術を指します。AI システムは、音声認識、意思決定、言語翻訳、画像内の物体認識など、通常は人間の知能を必要とする作業を実行できます。AI という用語は 1956 年、Dartmouth Conference において John McCarthy によって提唱され、これが AI 分野の出発点と広く見なされています。
 
-Modern AI is broadly divided into Narrow AI (also called Weak AI), which is designed のために specific tasks, と その theoretical Artificial General Intelligence (AGI), which would match or exceed human cognitive ability across all domains. All current AI システム are Narrow AI.
+現代の AI は大きく、特定の課題に特化した Narrow AI（Weak AI）と、理論上あらゆる領域で人間に匹敵またはそれ以上の認知能力を持つ Artificial General Intelligence（AGI）に分けられます。現在実用化されている AI はすべて Narrow AI です。
 
-## 歴史 の AI
+## AI の歴史
 
-その 歴史 の AI spans nearly eight decades. Early theoretical foundations were laid by Alan Turing, whose 1950 paper "コンピューティング Machinery と Intelligence" introduced その Turing Test — a measure の a machine's ability to exhibit intelligent behaviour indistinguishable from a human. その 1956 Dartmouth Conference formally established AI as an academic discipline.
+AI の歴史はおよそ 80 年近くにわたります。理論的な基盤を築いた人物の一人が Alan Turing で、1950 年の論文 "Computing Machinery and Intelligence" では Turing Test を提案しました。これは、機械が人間と区別できない知的振る舞いを示せるかを測る考え方です。1956 年の Dartmouth Conference によって、AI は正式に学術分野として成立しました。
 
-その 1950s–1970s saw optimistic early programs like ELIZA (a simple chatbot) と LISP (a programming 言語 designed のために AI). その "AI winters" の 1970s と 1980s were periods の reduced funding と interest following unmet expectations. A resurgence で その 1980s came と expert システム — rule-based programs that encoded human expertise. その 2000s brought 機械学習 breakthroughs fuelled by その internet と growing datasets. その 2010s saw その rise の 深層学習, transforming computer vision, natural 言語 processing (NLP), と reinforcement learning.
+1950〜1970 年代には、ELIZA のような初期チャットボットや、AI 向けに設計されたプログラミング言語 LISP など、楽観的な初期プログラムが登場しました。一方で 1970 年代から 1980 年代には、期待に成果が追いつかず、資金や関心が低下した「AI 冬の時代」もありました。1980 年代には、人間の専門知識をルールとして表現する expert system の登場で再び注目が高まりました。2000 年代にはインターネットと大規模データセットを背景に機械学習が大きく進展し、2010 年代には deep learning が computer vision、natural language processing（NLP）、reinforcement learning を大きく変革しました。
 
 ## 機械学習
 
-機械学習 (ML) is a subset の AI that enables システム to learn from データ without being explicitly programmed. Key ML categories include:
+機械学習（ML）は AI の一分野であり、明示的にプログラムしなくてもデータから学べるようにする技術です。主な分類は次のとおりです。
 
-**Supervised Learning**: その model is trained on labelled input-output pairs. 例 include spam detection と image classification. Algorithms include linear regression, decision trees, サポート vector machines, と ニューラルネットワーク.
+**Supervised Learning**: ラベル付きの入力と出力の組で学習する方式です。例として、スパム検知や画像分類があります。代表的なアルゴリズムには linear regression、decision tree、support vector machine、neural network があります。
 
-**Unsupervised Learning**: その model finds patterns で unlabelled データ. 例 include customer segmentation と anomaly detection. Algorithms include k-means clustering と principal component analysis (PCA).
+**Unsupervised Learning**: ラベルのないデータからパターンを見つける方式です。例として、顧客セグメンテーションや異常検知があります。代表的な手法には k-means clustering や principal component analysis（PCA）があります。
 
-**Reinforcement Learning**: An agent learns by interacting と an environment, receiving rewards or penalties. Used で game-playing AI (AlphaGo, AlphaZero), robotics, と recommendation システム.
+**Reinforcement Learning**: エージェントが環境と相互作用し、報酬や罰を受け取りながら学ぶ方式です。ゲーム AI（AlphaGo、AlphaZero）、ロボティクス、推薦システムなどで使われます。
 
-**Semi-Supervised と Self-Supervised Learning**: Combine small amounts の labelled データ と large unlabelled datasets. GPT models use a self-supervised approach during pre-training.
+**Semi-Supervised Learning と Self-Supervised Learning**: 少量のラベル付きデータと大量のラベルなしデータを組み合わせる、あるいは自己生成した教師信号で学ぶ方式です。GPT 系モデルの事前学習は self-supervised な手法です。
 
 ## 深層学習
 
-深層学習 is a subset の 機械学習 that uses artificial ニューラルネットワーク と many layers (deep networks). Inspired loosely by その brain's neural structure, these networks learn hierarchical representations の データ. 深層学習 powers:
+深層学習は機械学習の一分野で、多数の層を持つ人工ニューラルネットワークを利用します。脳の神経構造に着想を得たこれらのネットワークは、データの階層的表現を学習します。深層学習は次のような分野を支えています。
 
-- **Computer Vision**: Image recognition, object detection, medical imaging
-- **Natural 言語 Processing**: Machine translation, sentiment analysis, question answering
-- **Speech Recognition**: Voice assistants like Siri, Alexa, Google Assistant
-- **Generative AI**: Image generation (DALL-E, Stable Diffusion), text generation (GPT)
+- **Computer Vision**: 画像認識、物体検出、医用画像解析
+- **Natural Language Processing**: 機械翻訳、感情分析、質問応答
+- **Speech Recognition**: Siri、Alexa、Google Assistant などの音声認識
+- **Generative AI**: 画像生成（DALL-E、Stable Diffusion）、文章生成（GPT）
 
-Key 深層学習 architectures include convolutional ニューラルネットワーク (CNNs) のために images, recurrent ニューラルネットワーク (RNNs) と LSTMs のために sequences, transformers のために 言語, と generative adversarial networks (GANs) のために synthesis.
+代表的なアーキテクチャには、画像向けの convolutional neural network（CNN）、系列データ向けの recurrent neural network（RNN）や LSTM、言語向けの transformer、生成向けの generative adversarial network（GAN）があります。
 
-## Large 言語 Models (LLMs)
+## Large Language Models（LLMs）
 
-Large 言語 Models (LLMs) are AI システム trained on vast amounts の text データ to understand と generate human 言語. They are based on その Transformer アーキテクチャ, introduced で その 2017 paper "Attention is All You Need" by Vaswani et al. LLMs predict その next token (word piece) で a sequence, allowing them to generate coherent text, answer questions, write code, と perform reasoning tasks.
+Large Language Models（LLMs）は、膨大なテキストデータで学習され、人間の言語を理解・生成する AI システムです。基盤となるのは、2017 年の論文 "Attention is All You Need" で Vaswani らが提案した Transformer アーキテクチャです。LLM は系列中の次の token を予測することで、自然な文章生成、質問応答、コード生成、推論などを行います。
 
-Notable LLMs include:
-- **GPT series** (OpenAI): GPT-3, GPT-4, と successors — widely used のために chat と code
-- **Claude** (Anthropic): Focused on safety と helpfulness
-- **Gemini** (Google DeepMind): Multimodal, integrating text, images, と code
-- **LLaMA / Llama 3** (Meta): Open-weight models のために research と local デプロイ
-- **Mistral** (Mistral AI): Efficient open models competitive と much larger LLMs
+代表的な LLM には次のようなものがあります。
+- **GPT series**（OpenAI）: GPT-3、GPT-4 以降のモデル群。対話やコード生成で広く利用される。
+- **Claude**（Anthropic）: 安全性と有用性を重視したモデル。
+- **Gemini**（Google DeepMind）: テキスト、画像、コードを統合するマルチモーダルモデル。
+- **LLaMA / Llama 3**（Meta）: 研究用途やローカル実行向けの open-weight モデル。
+- **Mistral**（Mistral AI）: より大きな LLM に匹敵する効率的な open model。
 
-LLMs are trained で two stages: pre-training (unsupervised on large text corpora) と fine-tuning (supervised or via reinforcement learning from human フィードバック, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens で その most 上級 2024 models.
+LLM の学習は通常 2 段階で行われます。まず大規模テキストコーパスによる pre-training を行い、その後 supervised fine-tuning や reinforcement learning from human feedback（RLHF）で対話向けに調整します。context window はモデルが一度に扱える文脈量を表し、初期の GPT-3 の 4K tokens から、2024 年の高度なモデルでは 100 万 tokens 超まで拡大しています。
 
-## AI Ethics と Safety
+## AI 倫理と安全性
 
-AI raises important ethical questions including bias, privacy, job displacement, と その risk の misuse. Algorithmic bias occurs when training データ reflects historical inequalities, causing AI システム to produce discriminatory outputs. Facial recognition システム have shown higher error rates のために darker-skinned individuals. Hiring algorithms have been found to favour male candidates.
+AI は、バイアス、プライバシー、雇用への影響、悪用リスクなど、重要な倫理的課題を伴います。学習データが歴史的な不平等を含んでいる場合、AI システムは差別的な出力を生み得ます。顔認識システムでは肌の色が濃い人への誤り率が高い例が報告されており、採用アルゴリズムが男性候補者を有利に扱った事例もあります。
 
-AI safety is その field dedicated to ensuring AI システム behave as intended without causing unintended harm. Key concerns include:
-- **Alignment**: Ensuring AI goals match human values
-- **Interpretability / Explainability**: Understanding why an AI made a decision (critical で 医学, 法律, 金融)
-- **Misuse**: AI-generated deepfakes, disinformation, cyberattacks
-- **Existential risk**: Theoretical concern that a 未来 AGI could pursue goals misaligned と human survival
+AI safety は、AI システムが意図どおりに振る舞い、意図しない害を生まないようにするための分野です。主な関心事は次のとおりです。
+- **Alignment**: AI の目標が人間の価値観と一致していること
+- **Interpretability / Explainability**: AI がなぜその判断をしたのか理解できること（医療、法律、金融で特に重要）
+- **Misuse**: AI による deepfake、偽情報、サイバー攻撃
+- **Existential risk**: 将来の AGI が人類の存続と整合しない目標を追うかもしれないという理論的懸念
 
-Organisations working on AI safety include OpenAI's Safety team, Anthropic (founded by former OpenAI safety researchers), DeepMind's safety team, と independent institutes like MIRI と ARC.
+AI safety に取り組む組織としては、OpenAI の Safety チーム、Anthropic、DeepMind の safety チーム、MIRI や ARC のような独立研究機関があります。
 
-## AI で Society
+## 社会における AI
 
-AI is transforming nearly every industry:
+AI はほぼすべての産業を変えつつあります。
 
-- **医療**: AI assists で diagnosing cancer from medical images, predicting patient outcomes, accelerating drug discovery (AlphaFold solved protein folding structure prediction), と personalising treatment plans.
-- **金融**: Fraud detection, algorithmic trading, credit scoring, と robo-advisors use ML models.
-- **Transportation**: Self-driving vehicles use computer vision, lidar, と reinforcement learning. Tesla Autopilot, Waymo, と Cruise are leading efforts.
-- **Education**: Personalised learning platforms adapt content to individual student pace と learning style.
-- **Creative fields**: AI generates music, art, と writing; tools like Midjourney, DALL-E, と GitHub Copilot have changed creative workflows.
-- **Cybersecurity**: AI detects anomalies, identifies threats, と powers both attacks と defences.
+- **医療**: 医用画像からのがん診断支援、患者転帰予測、創薬の加速（AlphaFold はタンパク質構造予測で大きな成果を出した）、治療計画の個別最適化
+- **金融**: 不正検知、アルゴリズム取引、信用スコアリング、robo-advisor などに ML が使われる
+- **Transportation**: 自動運転車は computer vision、lidar、reinforcement learning を活用する。Tesla Autopilot、Waymo、Cruise が代表例
+- **Education**: 個々の学習速度や学習スタイルに合わせて教材を調整する個別学習プラットフォーム
+- **Creative fields**: 音楽、アート、文章の生成。Midjourney、DALL-E、GitHub Copilot などが制作ワークフローを変えている
+- **Cybersecurity**: 異常検知や脅威分析を強化する一方、攻撃側にも防御側にも利用される
 
-## Robotics と Embodied AI
+## ロボティクスと Embodied AI
 
-Robotics combines AI と physical machines. Modern robots use perception (cameras, lidar), planning, と control to navigate と manipulate environments. Boston Dynamics' Atlas demonstrates 上級 bipedal movement. Industrial robots from companies like ABB と FANUC automate manufacturing. Household robots (Roomba) と surgical robots (da Vinci System) apply AI で everyday と medical settings. Embodied AI research focuses on agents that learn physical skills through interaction と その world, bridging その gap between simulated と real environments.
+ロボティクスは AI と物理的な機械を組み合わせる分野です。現代のロボットは、知覚（camera、lidar）、計画、制御によって移動や操作を行います。Boston Dynamics の Atlas は高度な二足歩行の例として知られています。ABB や FANUC の産業ロボットは製造業を自動化し、Roomba のような家庭用ロボットや da Vinci System のような手術支援ロボットも広く使われています。Embodied AI は、エージェントが環境との相互作用を通じて身体的スキルを学ぶ研究領域であり、シミュレーションと現実世界の橋渡しを目指します。
 
-## Current AI Trends (2020s)
+## 現在の AI トレンド（2020 年代）
 
-- **Multimodal AI**: システム that process text, images, audio, と video together (GPT-4V, Gemini)
-- **Agents と agentic AI**: LLMs that can use tools, browse その ウェブ, write code, と take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
-- **Open-weight models**: Meta's LLaMA democratised access to large models のために researchers
-- **On-device AI**: Running AI models locally on phones と laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: その EU AI Act (2024) is その world's first comprehensive AI 法律, classifying AI システム by risk level
+- **Multimodal AI**: テキスト、画像、音声、動画を統合的に扱うシステム（GPT-4V、Gemini）
+- **Agents と agentic AI**: ツール使用、ウェブ閲覧、コード生成、多段階行動ができる LLM（OpenAI Operator、Anthropic Computer Use）
+- **Open-weight models**: Meta の LLaMA により、研究者が大規模モデルへアクセスしやすくなった
+- **On-device AI**: クラウド接続なしで、スマートフォンやノート PC 上で AI モデルを動かす流れ（Apple Intelligence、Qualcomm NPU）
+- **AI regulation**: EU AI Act（2024）は、リスク水準ごとに AI システムを分類する包括的な AI 法規制として注目されている

@@ -1,4 +1,4 @@
-# Utilizzo dello strumento
+# Uso degli strumenti
 
 ## Git: controllo della versione
 
@@ -38,7 +38,7 @@ git checkout feature/new-thing      # switch to it
 git branch -d feature/new-thing     # delete branch after merging
 ```
 
-### Fusione e ribasamento
+### Merge e rebase
 
 ```bash
 # Merge feature branch into main
@@ -50,14 +50,14 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Flusso di lavoro della richiesta pull (PR).
+### Flusso di lavoro della pull request (PR)
 
 1. Crea un ramo di funzionalità da `main`.
-2. Effettuare commit sul ramo della funzionalità.
-3. Premere il ramo: `git push origin feature/new-thing`.
-4. Apri una richiesta pull su GitHub/GitLab.
-5. Affrontare il feedback sulla revisione del codice con commit aggiuntivi.
-6. Unisci il PR una volta approvato.
+2. Effettua i commit sul branch di funzionalità.
+3. Pubblica il branch: `git push origin feature/new-thing`.
+4. Apri una pull request su GitHub o GitLab.
+5. Affronta il feedback della code review con commit aggiuntivi.
+6. Unisci la PR una volta approvata.
 
 ### Annullamento delle modifiche
 
@@ -83,7 +83,7 @@ pip list                        # show installed packages
 pip show requests               # info about a package
 ```
 
-Lavora sempre all'interno di un ambiente virtuale per mantenere isolate le dipendenze del progetto.
+Lavora sempre in un ambiente virtuale, così le dipendenze del progetto restano isolate.
 
 ### npm (Node.js/JavaScript)
 
@@ -98,9 +98,9 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` registra le versioni esatte; impegnarlo nel controllo del codice sorgente.
+`package-lock.json` blocca le versioni esatte delle dipendenze; conviene includerlo nel controllo di versione.
 
-### Carico (Ruggine)
+### `cargo` (Rust)
 
 ```bash
 cargo new my_project            # new binary project
@@ -114,7 +114,7 @@ cargo fmt                       # format
 cargo update                    # update dependencies within constraints
 ```
 
-### Moduli Vai (Vai)
+### Go Modules (Go)
 
 ```bash
 go mod init github.com/user/repo
@@ -180,7 +180,7 @@ command >> output.txt           # append stdout to a file
 command 2>&1                    # merge stderr into stdout
 ```
 
-### rete e trasferimento di file
+### Rete e trasferimento file
 
 ```bash
 curl https://example.com                     # fetch a URL
@@ -198,7 +198,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### gestione dei processi
+### Gestione dei processi
 
 ```bash
 ps aux                          # list running processes
@@ -211,7 +211,7 @@ top / htop                      # interactive process monitor
 
 ## Editor e IDE
 
-### Codice VS
+### VS Code
 
 VS Code è un editor di codice leggero e multipiattaforma con un ricco ecosistema di estensioni.
 
@@ -223,7 +223,7 @@ VS Code è un editor di codice leggero e multipiattaforma con un ricco ecosistem
 - Rinomina il simbolo: `F2`.
 - Formato documento: `Shift+Alt+F`.
 - Estensioni: installa il supporto della lingua (Python, Rust, Go, ecc.), linter e formattatori dal pannello Estensioni (`Ctrl+Shift+X`).
-- `settings.json` (utente o spazio di lavoro) controlla il comportamento dell'editor.
+- `settings.json` (utente o workspace) controlla il comportamento dell’editor.
 - `launch.json` configura il debugger.
 
 ### IDE JetBrains (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
@@ -240,12 +240,12 @@ VS Code è un editor di codice leggero e multipiattaforma con un ricco ecosistem
 - Utilizza il completamento tramite tabulazione per completare rapidamente i nomi dei file e i comandi.
 - Premere `Ctrl+R` per cercare la cronologia dei comandi in modo interattivo.
 - `alias ll='ls -la'` crea un collegamento: aggiungilo a `~/.bashrc` o `~/.zshrc`.
-- Utilizzare `tmux` o `screen` per mantenere attive le sessioni quando si è disconnessi da un server remoto.
+- Usa `tmux` o `screen` per mantenere attive le sessioni anche dopo la disconnessione da un server remoto.
 - `man <command>` mostra la pagina di manuale per qualsiasi comando integrato.
 
 ---
 
-##Docker
+## Docker
 
 Docker impacchetta le applicazioni e le relative dipendenze in contenitori portatili.
 
@@ -256,7 +256,7 @@ Docker impacchetta le applicazioni e le relative dipendenze in contenitori porta
 - **Registry**: un servizio di archiviazione e distribuzione di immagini (Docker Hub, GHCR).
 - **Volume**: spazio di archiviazione persistente che sopravvive a un contenitore.
 
-### comandi comuni
+### Comandi comuni
 
 ```bash
 # Images
@@ -290,9 +290,9 @@ COPY . .
 CMD ["python", "main.py"]
 ```
 
-### Docker Componi
+### Docker Compose
 
-Docker Compose gestisce applicazioni multi-contenitore con un file `docker-compose.yml`.
+Docker Compose gestisce applicazioni multi-contenitore tramite un file `docker-compose.yml`.
 
 ```yaml
 version: "3.9"

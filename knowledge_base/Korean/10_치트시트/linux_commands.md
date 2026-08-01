@@ -5,15 +5,15 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Linux 명령 빠른 참조
+# Linux 명령어 빠른 참조
 
-Essential Linux/Unix 명령 위한 system navigation 와 administration.
+시스템 탐색과 관리를 위해 자주 쓰는 Linux/Unix 명령어를 한곳에 정리한 문서입니다.
 
 ---
 
-## File & Directory Operations
+## 파일 및 디렉터리 작업
 
-### Navigation
+### 탐색
 ```bash
 pwd                     # Print working directory
 ls                      # List files
@@ -25,7 +25,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-### File Operations
+### 파일 작업
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-### Viewing Files
+### 파일 보기
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,7 +53,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-## File Permissions
+## 파일 권한
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -65,7 +65,7 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-### Permission Numbers
+### 권한 숫자
 - `7` = rwx (read + write + execute)
 - `6` = rw- (read + write)
 - `5` = r-x (read + execute)
@@ -73,9 +73,9 @@ umask                   # Show default permission mask
 
 ---
 
-## Text Processing
+## 텍스트 처리
 
-### Search & Replace
+### 검색 및 치환
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +86,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-### Find Files
+### 파일 찾기
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +98,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-### Text Manipulation
+### 텍스트 조작
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +116,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-## Process 관리
+## 프로세스 관리
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +138,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-## System Information
+## 시스템 정보
 
 ```bash
 uname -a                # System information
@@ -181,7 +181,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-## Archive & Compression
+## 압축 및 보관
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,7 +198,7 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-## Package 관리
+## 패키지 관리
 
 ### Debian/Ubuntu (apt)
 ```bash
@@ -231,7 +231,7 @@ brew list                               # List installed packages
 
 ---
 
-## User 관리
+## 사용자 관리
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +246,7 @@ groups username                         # Show user groups
 
 ---
 
-## Disk 관리
+## 디스크 관리
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +260,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-## Shell Variables & Environment
+## 셸 변수 및 환경 변수
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Input/Output Redirection
+## 입출력 리디렉션
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +292,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-## Useful One-Liners
+## 유용한 한 줄 명령
 
 ```bash
 # Count files in directory
@@ -322,40 +322,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-## Keyboard Shortcuts
+## 키보드 단축키
 
-| Shortcut | Action |
+| 단축키 | 동작 |
 |----------|--------|
-| `Tab` | Auto-완전한 |
-| `Ctrl+C` | Kill current command |
-| `Ctrl+Z` | Suspend command |
-| `Ctrl+D` | Exit shell/EOF |
-| `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to line start |
-| `Ctrl+E` | Go to line end |
-| `Ctrl+U` | Delete to line start |
-| `Ctrl+K` | Delete to line end |
-| `Ctrl+R` | Search 역사 |
-| `Ctrl+W` | Delete word before cursor |
+| `Tab` | 자동 완성 |
+| `Ctrl+C` | 현재 명령 종료 |
+| `Ctrl+Z` | 명령 일시 중단 |
+| `Ctrl+D` | 셸 종료/EOF |
+| `Ctrl+L` | 화면 지우기 |
+| `Ctrl+A` | 줄의 시작으로 이동 |
+| `Ctrl+E` | 줄의 끝으로 이동 |
+| `Ctrl+U` | 줄 시작까지 삭제 |
+| `Ctrl+K` | 줄 끝까지 삭제 |
+| `Ctrl+R` | 기록 검색 |
+| `Ctrl+W` | 커서 앞 단어 삭제 |
 
 ---
 
 ## 모범 사례
 
-✅ **Do:**
-- Use `sudo` sparingly 와 carefully
-- Test destructive 명령 without execution flags first
-- Keep backups before major changes
-- Use meaningful filenames (no spaces)
-- Learn to use `man` pages (`man command`)
+✅ **권장 사항:**
+- `sudo`는 꼭 필요할 때만 신중하게 사용합니다.
+- 파괴적인 명령은 실제 실행 전에 먼저 안전한 옵션으로 확인합니다.
+- 큰 변경을 하기 전에는 항상 백업을 준비합니다.
+- 의미 있는 파일명을 사용하고 공백은 가능하면 피합니다.
+- `man` 페이지(`man command`)를 활용해 명령어 사용법을 익힙니다.
 
-❌ **Don't:**
-- Run `rm -rf /` or similar dangerous 명령
-- Use `chmod 777` on sensitive files
-- Ignore warning messages
-- Edit system files without backups
-- Run unknown scripts as root
+❌ **주의할 점:**
+- `rm -rf /` 같은 위험한 명령은 실행하지 않습니다.
+- 민감한 파일에 `chmod 777`을 사용하지 않습니다.
+- 경고 메시지를 무시하지 않습니다.
+- 백업 없이 시스템 파일을 편집하지 않습니다.
+- 출처를 모르는 스크립트를 root 권한으로 실행하지 않습니다.
 
 ---
 
-*최종 업데이트: June 2025 | Linux/Unix compatible*
+*최종 업데이트: 2025년 6월 | Linux/Unix 호환*

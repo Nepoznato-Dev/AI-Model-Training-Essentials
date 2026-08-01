@@ -7,11 +7,11 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # SQL 빠른 참조 가이드
 
-Essential SQL 명령 위한 데이터베이스 operations.
+데이터베이스 작업에 자주 쓰는 핵심 SQL 명령 모음입니다.
 
 ---
 
-## Basic Query Structure
+## 기본 쿼리 구조
 
 ```sql
 SELECT column1, column2, ...
@@ -25,9 +25,9 @@ LIMIT number;
 
 ---
 
-## 데이터 Retrieval (SELECT)
+## 데이터 조회 (SELECT)
 
-### Basic Selection
+### 기본 선택
 ```sql
 -- Select all columns
 SELECT * FROM users;
@@ -42,7 +42,7 @@ SELECT name AS user_name, email AS contact FROM users;
 SELECT DISTINCT country FROM users;
 ```
 
-### Filtering (WHERE)
+### 필터링 (WHERE)
 ```sql
 -- Comparison operators
 SELECT * FROM products WHERE price > 100;
@@ -60,7 +60,7 @@ SELECT * FROM users WHERE age < 18 OR guardian IS NOT NULL;
 SELECT * FROM products WHERE NOT discontinued;
 ```
 
-### Sorting 와 Limiting
+### 정렬과 제한
 ```sql
 -- Order by single column
 SELECT * FROM products ORDER BY price DESC;
@@ -77,7 +77,7 @@ SELECT * FROM users LIMIT 10 OFFSET 20;  -- Skip 20, take 10
 
 ---
 
-## Aggregation Functions
+## 집계 함수
 
 ```sql
 -- Count rows
@@ -104,16 +104,16 @@ HAVING AVG(salary) > 50000;
 
 ---
 
-## Joins
+## 조인
 
-### Inner Join
+### 내부 조인
 ```sql
 SELECT u.name, o.order_date, o.total
 FROM users u
 INNER JOIN orders o ON u.id = o.user_id;
 ```
 
-### Left/Right Join
+### 왼쪽/오른쪽 조인
 ```sql
 -- All users, even those without orders
 SELECT u.name, o.order_id
@@ -126,7 +126,7 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Full Outer Join
+### 전체 외부 조인
 ```sql
 -- All users and all orders (MySQL doesn't support FULL OUTER)
 SELECT u.name, o.order_id
@@ -138,13 +138,13 @@ FROM users u
 RIGHT JOIN orders o ON u.id = o.user_id;
 ```
 
-### Cross Join
+### 교차 조인
 ```sql
 -- Cartesian product (all combinations)
 SELECT * FROM colors CROSS JOIN sizes;
 ```
 
-### Self Join
+### 자기 조인
 ```sql
 -- Find employees and their managers
 SELECT e.name AS employee, m.name AS manager
@@ -154,7 +154,7 @@ LEFT JOIN employees m ON e.manager_id = m.id;
 
 ---
 
-## Subqueries
+## 서브쿼리
 
 ```sql
 -- In WHERE clause
@@ -184,7 +184,7 @@ WHERE EXISTS (
 
 ---
 
-## Set Operations
+## 집합 연산
 
 ```sql
 -- UNION (remove duplicates)
@@ -210,7 +210,7 @@ SELECT user_id FROM banned_users;
 
 ---
 
-## 데이터 Modification
+## 데이터 수정
 
 ### INSERT
 ```sql
@@ -268,9 +268,9 @@ TRUNCATE TABLE temp_data;
 
 ---
 
-## Table Operations
+## 테이블 작업
 
-### CREATE Table
+### CREATE 테이블
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -286,7 +286,7 @@ CREATE TABLE users (
 );
 ```
 
-### ALTER Table
+### ALTER 테이블
 ```sql
 -- Add column
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -311,14 +311,14 @@ ALTER TABLE orders DROP FOREIGN KEY fk_user;
 ALTER TABLE old_name RENAME TO new_name;
 ```
 
-### DROP Table
+### DROP 테이블
 ```sql
 DROP TABLE IF EXISTS temp_table;
 ```
 
 ---
 
-## Constraints
+## 제약 조건
 
 ```sql
 -- PRIMARY KEY: Unique identifier
@@ -357,7 +357,7 @@ CREATE TABLE users (
 
 ---
 
-## Indexes
+## 인덱스
 
 ```sql
 -- Create index
@@ -378,7 +378,7 @@ SHOW INDEX FROM users;
 
 ---
 
-## Views
+## 뷰
 
 ```sql
 -- Create view
@@ -402,7 +402,7 @@ DROP VIEW IF EXISTS active_users;
 
 ---
 
-## Common Table Expressions (CTEs)
+## 공통 테이블 표현식 (CTE)
 
 ```sql
 -- Simple CTE
@@ -432,7 +432,7 @@ SELECT * FROM org_chart ORDER BY level, name;
 
 ---
 
-## Window Functions
+## 윈도 함수
 
 ```sql
 -- ROW_NUMBER
@@ -465,41 +465,41 @@ FROM daily_sales;
 
 ---
 
-## 데이터 Types
+## 데이터 타입
 
-### Numeric
-- `INT` - Integer
-- `BIGINT` - Large integer
-- `DECIMAL(p,s)` - Exact decimal (precision, scale)
-- `FLOAT` - Approximate floating point
-- `DOUBLE` - Double precision float
+### 숫자형
+- `INT` - 정수
+- `BIGINT` - 큰 정수
+- `DECIMAL(p,s)` - 정확한 소수(precision, scale)
+- `FLOAT` - 근사 부동소수점 수
+- `DOUBLE` - 배정밀도 부동소수점 수
 
-### String
-- `CHAR(n)` - Fixed length string
-- `VARCHAR(n)` - Variable length string
-- `TEXT` - Large text
-- `ENUM` - Enumerated values
+### 문자열
+- `CHAR(n)` - 고정 길이 문자열
+- `VARCHAR(n)` - 가변 길이 문자열
+- `TEXT` - 큰 텍스트 데이터
+- `ENUM` - 열거형 값
 
-### Date/Time
-- `DATE` - Date (YYYY-MM-DD)
-- `TIME` - Time (HH:MM:SS)
-- `DATETIME` - Date 와 time
-- `TIMESTAMP` - Unix timestamp
-- `YEAR` - Year value
+### 날짜/시간
+- `DATE` - 날짜 (YYYY-MM-DD)
+- `TIME` - 시간 (HH:MM:SS)
+- `DATETIME` - 날짜와 시간
+- `TIMESTAMP` - Unix 타임스탬프
+- `YEAR` - 연도 값
 
-### Boolean
-- `BOOLEAN` or `BOOL` - True/False
+### 불리언
+- `BOOLEAN` or `BOOL` - 참/거짓
 
-### Binary
-- `BLOB` - Binary large object
-- `BINARY` - Fixed binary
-- `VARBINARY` - Variable binary
+### 바이너리
+- `BLOB` - 바이너리 대용량 객체
+- `BINARY` - 고정 길이 바이너리
+- `VARBINARY` - 가변 길이 바이너리
 
 ---
 
-## Useful Functions
+## 유용한 함수
 
-### String Functions
+### 문자열 함수
 ```sql
 CONCAT(first_name, ' ', last_name)  -- Concatenate strings
 UPPER(name)                          -- Convert to uppercase
@@ -510,7 +510,7 @@ TRIM(name)                           -- Remove whitespace
 REPLACE(text, 'old', 'new')          -- Replace substring
 ```
 
-### Date Functions
+### 날짜 함수
 ```sql
 NOW()                                -- Current date/time
 CURDATE()                            -- Current date
@@ -522,7 +522,7 @@ MONTH(date_column)                   -- Extract month
 DAY(date_column)                     -- Extract day
 ```
 
-### Numeric Functions
+### 숫자 함수
 ```sql
 ROUND(value, 2)                      -- Round to decimals
 CEIL(value)                          -- Round up
@@ -533,7 +533,7 @@ SQRT(value)                          -- Square root
 RAND()                               -- Random number
 ```
 
-### Conditional Functions
+### 조건 함수
 ```sql
 -- CASE statement
 SELECT name,
@@ -556,21 +556,21 @@ SELECT NULLIF(value, 0) AS safe_value FROM data;
 
 ---
 
-## 성능 Tips
+## 성능 팁
 
-✅ **Do:**
-- Use indexes on frequently queried columns
-- Select only needed columns (avoid `SELECT *`)
-- Use `EXPLAIN` to analyze query 성능
-- Normalize 데이터 appropriately
-- Use prepared statements to prevent SQL injection
+✅ **권장 사항:**
+- 자주 조회하는 컬럼에는 인덱스를 사용합니다
+- 필요한 컬럼만 조회합니다(`SELECT *` 지양)
+- `EXPLAIN`으로 쿼리 성능을 분석합니다
+- 데이터는 적절하게 정규화합니다
+- SQL injection 방지를 위해 prepared statement를 사용합니다
 
-❌ **Don't:**
-- Use functions on indexed columns 에서 WHERE clauses
-- Create too many indexes (slows writes)
-- Use `SELECT DISTINCT` unnecessarily
-- Ignore query execution plans
-- Store computed values when they can be calculated
+❌ **피해야 할 사항:**
+- WHERE 절에서 인덱스가 걸린 컬럼에 함수를 적용하지 않습니다
+- 인덱스를 지나치게 많이 만들지 않습니다(쓰기 성능 저하)
+- 불필요하게 `SELECT DISTINCT`를 사용하지 않습니다
+- 쿼리 실행 계획을 무시하지 않습니다
+- 계산으로 구할 수 있는 값을 불필요하게 저장하지 않습니다
 
 ---
 
@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*최종 업데이트: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*최종 업데이트: 2025년 6월 | SQL 표준 (MySQL/PostgreSQL 호환)*

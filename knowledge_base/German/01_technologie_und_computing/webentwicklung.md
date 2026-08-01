@@ -19,53 +19,53 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **HTML5-Features**: Canvas, SVG, Local Storage, Geolocation, WebSockets
 
 #### CSS (Cascading Style Sheets)
-- **Box-Modell**: Content, Padding, Border, Margin
+- **Box-Modell**: Inhalt, Innenabstand, Rahmen, Außenabstand
 - **Layout-Systeme**:
   - **Flexbox**: Eindimensionale Layouts, justify-content, align-items
   - **Grid**: Zweidimensionale Layouts, grid-template, grid-area
   - **Positionierung**: Static, Relative, Absolute, Fixed, Sticky
 - **Responsive Design**: Media Queries, Mobile-First-Ansatz
-- **CSS-Variablen**: Custom Properties für Theming
-- **Animationen**: Transitions, Keyframes, Transforms
-- **Preprozessoren**: Sass, Less (Variablen, Mixins, Nesting)
+- **CSS-Variablen**: Custom Properties für Themes
+- **Animationen**: Übergänge, Keyframes, Transformationen
+- **Preprozessoren**: Sass, Less (Variablen, Mixins, Verschachtelung)
 
 #### JavaScript
 - **DOM-Manipulation**: Auswählen, Erstellen, Modifizieren von Elementen
-- **Ereignisse**: Click, Submit, Keyboard, Custom Events, Event Delegation
-- **ES6+-Features**: Arrow Functions, Destructuring, Spread/Rest, Modules, Async/Await
+- **Ereignisse**: Click, Submit, Tastaturereignisse, Custom Events, Event Delegation
+- **ES6+-Features**: Arrow Functions, Destructuring, Spread/Rest, Module, Async/Await
 - **APIs**: Fetch, XMLHttpRequest, localStorage, sessionStorage
 - **TypeScript**: Statische Typisierung, Interfaces, Generics, Decorators
 
 ### Moderne Frontend-Frameworks
 
 #### React
-- **Komponenten**: Funktionale Komponenten, Klassen-Komponenten
-- **Hooks**: useState, useEffect, useContext, useReducer, Custom Hooks
+- **Komponenten**: Funktionale Komponenten, Klassenkomponenten
+- **Hooks**: useState, useEffect, useContext, useReducer, benutzerdefinierte Hooks
 - **State-Verwaltung**: Context API, Redux, Zustand, Recoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ökosystem**: Next.js (SSR, SSG), Remix, Gatsby
-- **Virtual DOM**: Effizientes Rendering durch Diffing-Algorithmus
+- **Virtual DOM**: Effizientes Rendering durch einen Diffing-Algorithmus
 
 #### Vue.js
 - **Options API**: Data, Methods, Computed, Watch
 - **Composition API**: setup(), ref, reactive, computed
-- **Directives**: v-if, v-for, v-bind, v-on, v-model
+- **Direktiven**: v-if, v-for, v-bind, v-on, v-model
 - **Vuex/Pinia**: State-Verwaltung
 - **Vue Router**: Client-seitiges Routing
-- **Nuxt.js**: Server-side Rendering Framework
+- **Nuxt.js**: Framework für Server-side Rendering
 
 #### Angular
 - **Komponenten**: Decorators, Templates, Lifecycle-Hooks
-- **Services**: Dependency Injection, Singleton-Pattern
-- **RxJS**: Reactive Programming, Observables
+- **Services**: Dependency Injection, Singleton-Muster
+- **RxJS**: Reaktive Programmierung, Observables
 - **Routing**: RouterModule, Guards, Resolvers
 - **Formulare**: Template-driven, Reactive Forms
 - **NgRx**: Redux-artige State-Verwaltung
 
-### Build-Tools und Bundler
+### Build-Tools und Bündler
 - **Webpack**: Module-Bundling, Code-Splitting, Loader, Plugins
 - **Vite**: Schnelles Build-Tool mit nativen ES-Modulen
-- **Parcel**: Zero-Configuration-Bundler
+- **Parcel**: Bündler ohne zusätzliche Konfiguration
 - **Rollup**: Optimiert für Bibliotheken
 - **esbuild**: Extrem schneller JavaScript-Bundler
 - **Babel**: JavaScript-Transpiler für Abwärtskompatibilität
@@ -74,18 +74,18 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 ### CSS-Frameworks und Bibliotheken
 - **Bootstrap**: Komponenten-Bibliothek, Grid-System, Utilities
 - **Tailwind CSS**: Utility-First-CSS-Framework
-- **Material UI**: Google's Material-Design-Implementierung
+- **Material UI**: Googles Material-Design-Implementierung
 - **Chakra UI**: Barrierefreie Komponenten-Bibliothek
 - **Ant Design**: UI-Komponenten auf Enterprise-Niveau
 - **Styled Components**: CSS-in-JS-Bibliothek
-- **Emotion**: CSS-in-JS mit Source Maps
+- **Emotion**: CSS-in-JS mit Quellzuordnungen
 
 ## Backend-Entwicklung
 
 ### Serverseitige Sprachen
 
 #### Node.js
-- **Runtime**: JavaScript auf dem Server (V8-Engine)
+- **Laufzeitumgebung**: JavaScript auf dem Server (V8-Engine)
 - **Express.js**: Minimales Web-Framework, Middleware-Architektur
 - **NestJS**: Angular-inspirierte Architektur, TypeScript
 - **Fastify**: Hochleistungs-Framework
@@ -93,24 +93,24 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **Paketverwaltung**: npm, yarn, pnpm
 
 #### Python
-- **Django**: Vollständiges Framework, ORM, Admin-Panel, Batteries-Included
-- **Flask**: Microframework, Erweiterungs-Ökosystem
+- **Django**: Vollständiges Framework, ORM, Admin-Panel, viele Funktionen bereits eingebaut
+- **Flask**: Mikro-Framework, reiches Erweiterungsökosystem
 - **FastAPI**: Modern, asynchron, automatische API-Dokumentation
 - **Pyramid**: Flexibles, skalierbares Framework
 
 #### Andere Backend-Sprachen
 - **Ruby on Rails**: Convention over Configuration, ActiveRecord-ORM
 - **Java Spring**: Enterprise-Framework, Dependency Injection
-- **PHP Laravel**: Elegante Syntax, Eloquent-ORM, Blade-Templating
+- **PHP Laravel**: Elegante Syntax, Eloquent-ORM, Blade-Templates
 - **Go Gin**: Hohe Leistung, minimales Framework
 - **Rust Actix**: Speichersicherheit, Leistung
-- **C# ASP.NET Core**: Plattformübergreifend, Enterprise-Features
+- **C# ASP.NET Core**: Plattformübergreifend, Funktionen für Unternehmen
 
 ### Datenbank-Integration
 
 #### ORMs (Object-Relational Mapping)
 - **Sequelize**: Node.js-ORM für SQL-Datenbanken
-- **Prisma**: Typsicherer Datenbankzugriff, auto-generierter Client
+- **Prisma**: Typsicherer Datenbankzugriff, automatisch generierter Client
 - **SQLAlchemy**: Python-SQL-Toolkit und ORM
 - **ActiveRecord**: Ruby-on-Rails-ORM
 - **Hibernate**: Java-ORM
@@ -129,15 +129,15 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **Status-Codes**: 200, 201, 400, 401, 403, 404, 500
 - **Ressourcen-Benennung**: Substantive, Plural, hierarchisch
 - **Versionierung**: URL-Pfad, Header, Query-Parameter
-- **Authentifizierung**: JWT, OAuth, API-Keys
+- **Authentifizierung**: JWT, OAuth, API-Schlüssel
 - **Dokumentation**: OpenAPI/Swagger, Postman
 
 #### GraphQL
 - **Schema-Definition**: Types, Queries, Mutations, Subscriptions
-- **Resolver**: Feldweises Daten-Fetching
+- **Resolver**: Feldweises Abrufen von Daten
 - **Apollo Server**: GraphQL-Server-Implementierung
-- **Relay**: Facebooks GraphQL-Client
-- **Vorteile**: Kein Over-Fetching, einzelner Endpunkt, starke Typisierung
+- **Relay**: GraphQL-Client von Facebook
+- **Vorteile**: Kein Over-Fetching, ein einzelner Endpunkt, starke Typisierung
 
 #### gRPC
 - **Protocol Buffers**: Interface-Definitionssprache
@@ -145,32 +145,32 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **Anwendungsfälle**: Microservices-Kommunikation, Echtzeitanwendungen
 
 ### Authentifizierung und Autorisierung
-- **Session-basiert**: Cookies, serverseitige Sessions
+- **Sitzungsbasiert**: Cookies, serverseitige Sitzungen
 - **Token-basiert**: JWT (JSON Web Tokens), zustandslos
-- **OAuth 2.0**: Autorisierungs-Framework, Drittanbieter-Login
+- **OAuth 2.0**: Autorisierungs-Framework, Anmeldung über Drittanbieter
 - **OpenID Connect**: Identitätsschicht auf OAuth 2.0
-- **SAML**: Enterprise Single Sign-On
+- **SAML**: Single Sign-On für Unternehmen
 - **Passwort-Hashing**: bcrypt, argon2, scrypt
 - **Multi-Faktor-Authentifizierung**: TOTP, SMS, E-Mail-Codes
 
 ## DevOps und Bereitstellung
 
 ### Versionskontrolle
-- **Git**: Distribuierte Versionskontrolle
+- **Git**: Verteilte Versionskontrolle
 - **GitHub/GitLab/Bitbucket**: Repository-Hosting
 - **Branching-Strategien**: Git Flow, GitHub Flow, Trunk-Based Development
-- **CI/CD**: Automatisiertes Testen und Bereitstellungs-Pipelines
+- **CI/CD**: Automatisierte Test- und Bereitstellungspipelines
 
 ### Containerisierung
 - **Docker**: Container-Runtime, Dockerfile, Images
-- **Docker Compose**: Multi-Container-Orchestrierung
+- **Docker Compose**: Orchestrierung mehrerer Container
 - **Container-Registries**: Docker Hub, AWS ECR, Google GCR
-- **Best Practices**: Multi-Stage-Builds, minimale Basis-Images
+- **Bewährte Praktiken**: Multi-Stage-Builds, minimale Basis-Images
 
 ### Orchestrierung
 - **Kubernetes**: Container-Orchestrierung, Pods, Services, Deployments
 - **Helm**: Kubernetes-Paketmanager
-- **Service Mesh**: Istio, Linkerd für Microservices-Networking
+- **Service Mesh**: Istio, Linkerd für die Vernetzung von Microservices
 
 ### Cloud-Plattformen
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
@@ -178,81 +178,81 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **Azure**: Virtual Machines, Blob Storage, Functions, AKS
 - **Vercel**: Frontend-Bereitstellung, Serverless-Funktionen
 - **Netlify**: Static-Site-Hosting, Serverless-Funktionen
-- **Heroku**: Platform as a Service (PaaS)
+- **Heroku**: Plattform als Dienst (PaaS)
 - **DigitalOcean**: Vereinfachte Cloud-Infrastruktur
 
 ### CI/CD-Pipelines
 - **GitHub Actions**: Workflow-Automatisierung
-- **GitLab CI**: Integrierte Continuous Integration
-- **Jenkins**: Erweiterbarer Automation-Server
+- **GitLab CI**: Integrierte kontinuierliche Integration
+- **Jenkins**: Erweiterbarer Automatisierungsserver
 - **CircleCI**: Cloud-basierte CI/CD
-- **Travis CI**: Continuous-Integration-Service
-- **ArgoCD**: GitOps Continuous Delivery für Kubernetes
+- **Travis CI**: Dienst für kontinuierliche Integration
+- **ArgoCD**: GitOps-Continuous-Delivery für Kubernetes
 
 ### Monitoring und Logging
-- **Application Performance**: New Relic, Datadog, AppDynamics
-- **Error Tracking**: Sentry, Rollbar, Bugsnag
+- **Anwendungsleistung**: New Relic, Datadog, AppDynamics
+- **Fehlerverfolgung**: Sentry, Rollbar, Bugsnag
 - **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
 - **Uptime-Monitoring**: Pingdom, UptimeRobot
 - **Analytics**: Google Analytics, Mixpanel, Amplitude
 
-## Web-Performance
+## Leistung im Web
 
 ### Optimierungstechniken
-- **Code-Splitting**: Lazy Loading, Dynamic Imports
+- **Code-Splitting**: Lazy Loading, dynamische Importe
 - **Tree Shaking**: Entfernen ungenutzten Codes
 - **Minifizierung**: Reduzierung der Dateigrößen
 - **Komprimierung**: Gzip, Brotli
-- **Caching**: Browser-Cache, CDN, Service Workers
-- **Bildoptimierung**: WebP, AVIF, Lazy Loading, Responsive Images
-- **Critical CSS**: Inline-Styling für Above-the-Fold-Bereiche
-- **Datenbankoptimierung**: Indexierung, Query-Optimierung, Connection Pooling
+- **Caching**: Browser-Cache, CDN, Service Worker
+- **Bildoptimierung**: WebP, AVIF, Lazy Loading, responsive Bilder
+- **Critical CSS**: Inline-Styling für sofort sichtbare Bereiche
+- **Datenbankoptimierung**: Indexierung, Abfrageoptimierung, Connection Pooling
 
-### Core Web Vitals
+### Zentrale Webmetriken (Core Web Vitals)
 - **LCP (Largest Contentful Paint)**: Ladeleistung (<2,5s)
 - **FID (First Input Delay)**: Interaktivität (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visuelle Stabilität (<0,1)
-- **INP (Interaction to Next Paint)**: Responsiveness-Metrik
+- **INP (Interaction to Next Paint)**: Kennzahl für Reaktionsfähigkeit
 
-### Content Delivery Networks (CDNs)
-- **Cloudflare**: Sicherheit, Performance, DNS
-- **Akamai**: Enterprise-CDN
+### Inhaltsauslieferungsnetzwerke (CDNs)
+- **Cloudflare**: Sicherheit, Leistung, DNS
+- **Akamai**: CDN für Unternehmen
 - **Amazon CloudFront**: AWS-CDN
 - **Fastly**: Edge-Cloud-Plattform
-- **StackPath**: Edge-Services
+- **StackPath**: Edge-Dienste
 
 ## Websicherheit
 
 ### Häufige Schwachstellen (OWASP Top 10)
-- **Injection**: SQL-Injection, Command-Injection
-- **Broken Authentication**: Session Hijacking, Credential Stuffing
-- **Sensitive Data Exposure**: Unverschlüsselte Daten, schwache Kryptographie
+- **Injection-Angriffe**: SQL-Injection, Command-Injection
+- **Fehlerhafte Authentifizierung**: Session Hijacking, Credential Stuffing
+- **Offenlegung sensibler Daten**: Unverschlüsselte Daten, schwache Kryptografie
 - **XML External Entities (XXE)**: XML-Parser-Schwachstellen
-- **Broken Access Control**: Privilege Escalation, unbefugter Zugriff
-- **Security Misconfiguration**: Standard-Anmeldedaten, ausführliche Fehlermeldungen
+- **Fehlerhafte Zugriffskontrolle**: Privilegienausweitung, unbefugter Zugriff
+- **Sicherheitsfehlkonfiguration**: Standard-Anmeldedaten, ausführliche Fehlermeldungen
 - **Cross-Site Scripting (XSS)**: Reflected, Stored, DOM-based
-- **Insecure Deserialization**: Object-Injection-Angriffe
-- **Using Components with Known Vulnerabilities**: Veraltete Abhängigkeiten
-- **Insufficient Logging & Monitoring**: Unentdeckte Sicherheitsverletzungen
+- **Unsichere Deserialisierung**: Angriffe durch Object Injection
+- **Verwendung von Komponenten mit bekannten Schwachstellen**: Veraltete Abhängigkeiten
+- **Unzureichendes Logging und Monitoring**: Unentdeckte Sicherheitsverletzungen
 
-### Sicherheits-Best-Practices
+### Bewährte Sicherheitspraktiken
 - **HTTPS**: TLS/SSL-Verschlüsselung, HSTS
-- **Content Security Policy (CSP)**: XSS-Angriffe verhindern
-- **Input-Validierung**: Benutzer-Eingaben bereinigen
-- **Output-Encoding**: Injection-Angriffe verhindern
+- **Content Security Policy (CSP)**: Schutz vor XSS-Angriffen
+- **Eingabevalidierung**: Benutzereingaben bereinigen
+- **Ausgabekodierung**: Injection-Angriffe verhindern
 - **CSRF-Schutz**: Anti-CSRF-Tokens, SameSite-Cookies
 - **Rate Limiting**: Brute-Force-Angriffe verhindern
-- **Security-Header**: X-Frame-Options, X-Content-Type-Options
-- **Dependency Scanning**: npm audit, Snyk, Dependabot
+- **Sicherheitsheader**: X-Frame-Options, X-Content-Type-Options
+- **Abhängigkeitsprüfung**: npm audit, Snyk, Dependabot
 
 ## Testen
 
 ### Testarten
 - **Unit-Tests**: Individuelle Komponenten/Funktionen
 - **Integrationstests**: Komponenten-Interaktionen
-- **End-to-End (E2E)**: Vollständige User-Workflows
+- **End-to-End (E2E)**: Vollständige Benutzerabläufe
 - **Visuelle Regression**: UI-Änderungserkennung
-- **Leistungstests**: Load-, Stress-, Spike-Tests
+- **Leistungstests**: Last-, Stress- und Spike-Tests
 - **Barrierefreiheitstests**: WCAG-Compliance
 
 ### Test-Frameworks
@@ -262,10 +262,10 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 - **RSpec**: Ruby-Test-Framework
 - **JUnit**: Java-Test-Framework
 
-### E2E-Test-Tools
+### E2E-Test-Werkzeuge
 - **Selenium**: Browser-Automatisierung
 - **Cypress**: Modernes E2E-Testen
-- **Playwright**: Cross-Browser-Automatisierung
+- **Playwright**: Browserübergreifende Automatisierung
 - **Puppeteer**: Headless-Chrome-Steuerung
 
 ## Barrierefreiheit (a11y)
@@ -279,53 +279,53 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 ### Implementierung
 - **Semantisches HTML**: Korrekte Überschriftenhierarchie, Landmarks
 - **ARIA-Attribute**: Rollen, Zustände, Eigenschaften
-- **Focus-Verwaltung**: Sichtbare Focus-Indikatoren, logische Tab-Reihenfolge
+- **Fokus-Verwaltung**: Sichtbare Fokus-Indikatoren, logische Tab-Reihenfolge
 - **Farbkontrast**: Mindestens 4,5:1 Verhältnis für Text
 - **Screen-Reader-Tests**: NVDA, JAWS, VoiceOver
 - **Tastaturnavigation**: Alle interaktiven Elemente zugänglich
 
-## Progressive Web Apps (PWAs)
+## Progressive-Web-Apps (PWAs)
 
-### PWA-Features
-- **Service Workers**: Offline-Funktionalität, Background-Sync
-- **Web App Manifest**: Installations-Prompt, Icons, Theme-Farben
+### PWA-Funktionen
+- **Service Worker**: Offline-Funktionalität, Hintergrundsynchronisierung
+- **Web-App-Manifest**: Installationsaufforderung, Icons, Theme-Farben
 - **App Shell**: Zwischengespeichertes UI-Gerüst
-- **Push-Benachrichtigungen**: User-Engagement
+- **Push-Benachrichtigungen**: Nutzerbindung
 - **Responsive Design**: Funktioniert auf allen Geräten
 - **HTTPS erforderlich**: Sicherer Kontext
 
-### Tools
+### Werkzeuge
 - **Workbox**: Service-Worker-Bibliotheken
 - **Lighthouse**: PWA-Auditing
-- **PWA Builder**: Manifeste und Icons generieren
+- **PWA Builder**: Manifeste und Icons erzeugen
 
 ## Aufkommende Technologien
 
 ### WebAssembly (Wasm)
 - **Zweck**: Kompilierten Code im Browser mit nahezu nativer Geschwindigkeit ausführen
-- **Sprachen**: C++, Rust, Go als Kompilierungsziele
+- **Sprachen**: C++, Rust, Go als Zielsprachen der Kompilierung
 - **Anwendungsfälle**: Spiele, Videobearbeitung, Kryptographie, ML-Inferenz
 
 ### Serverless-Architektur
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
-- **Vorteile**: Keine Server-Verwaltung, Auto-Scaling, Pay-per-Use
+- **Vorteile**: Keine Serververwaltung, automatische Skalierung, nutzungsbasierte Abrechnung
 - **Überlegungen**: Cold Starts, Vendor Lock-in, Debugging-Komplexität
 
 ### Jamstack-Architektur
 - **JavaScript**: Client-seitige Interaktivität
-- **APIs**: Serverless-Funktionen, Drittanbieter-Services
+- **APIs**: Serverless-Funktionen, Dienste von Drittanbietern
 - **Markup**: Vorab erstellte statische Dateien
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
-- **Vorteile**: Performance, Sicherheit, Skalierbarkeit, Developer Experience
+- **Vorteile**: Hohe Leistung, Sicherheit, Skalierbarkeit, gute Entwicklererfahrung
 
 ### Echtzeit-Kommunikation
 - **WebSockets**: Bidirektionale Kommunikation
 - **Server-Sent Events**: Server-zu-Client-Streaming
-- **WebRTC**: Peer-to-Peer-Video, Audio, Daten
+- **WebRTC**: Peer-to-Peer-Übertragung von Video, Audio und Daten
 - **Anwendungsfälle**: Chat, Zusammenarbeit, Live-Streaming, Gaming
 
-### Micro Frontends
-- **Konzept**: Microservices auf das Frontend erweitern
+### Micro-Frontends
+- **Konzept**: Den Microservices-Ansatz auf das Frontend ausdehnen
 - **Ansätze**: Build-Time, Run-Time, Edge-Side-Integration
-- **Vorteile**: Unabhängige Deployments, Team-Autonomie
-- **Herausforderungen**: Konsistenz, Performance, Komplexität
+- **Vorteile**: Unabhängige Bereitstellungen, Teamautonomie
+- **Herausforderungen**: Konsistenz, Leistung, Komplexität

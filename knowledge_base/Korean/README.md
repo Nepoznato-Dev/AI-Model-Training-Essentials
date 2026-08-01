@@ -9,9 +9,9 @@ For accuracy improvements, please contribute edits via pull requests.
 
 기술, 과학, 비즈니스, 인문학, 실용적 기술을 포괄하는 참조 문서들의 종합 컬렉션입니다.
 
-**최종 업데이트:** 2025 년 6 월  
-**전체 파일 수:** 34+ markdown 문서  
-**구성:** 10 개의 주제별 디렉터리로 분류
+**최종 업데이트:** 2025년 6월  
+**전체 파일 수:** 34개 이상의 Markdown 문서  
+**구성:** 10개의 주제별 디렉터리로 구성
 
 ---
 
@@ -39,18 +39,18 @@ knowledge_base/English/
 | 파일 | 설명 | 줄 수 |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, 보안 | 350+ |
-| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Cloud providers, 아키텍처 패턴, 보안 | 350+ |
-| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI model, TCP/IP, protocols, 보안 | 400+ |
-| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | 기술 용어 | 250+ |
+| [web_development.md](01_technology_and_computing/web_development.md) | 프론트엔드, 백엔드, DevOps, 보안 | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, 설계 패턴, 최적화 | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | 클라우드 제공업체, 아키텍처 패턴, 보안 | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | OSI 모델, TCP/IP, 프로토콜, 보안 | 400+ |
+| [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | 기술 용어집 | 250+ |
 | [tool_usage.md](01_technology_and_computing/tool_usage.md) | 개발 도구 및 유틸리티 | 200+ |
 
 ### 인공지능 (`02_artificial_intelligence/`)
 | 파일 | 설명 | 줄 수 |
 |------|-------------|-------|
 | [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | AI 개요, ML, 딥러닝, LLMs | 200+ |
-| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML pipelines, metrics, 모범 사례 | 200+ |
+| [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | ML 파이프라인, 지표, 모범 사례 | 200+ |
 | [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | 로컬에서 모델 실행 | 200+ |
 | [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | 로컬 AI 배포 아키텍처 | 400+ |
 | [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | 프롬프트 기법 및 전략 | 150+ |
@@ -72,7 +72,7 @@ knowledge_base/English/
 ### 비즈니스 및 금융 (`05_business_and_finance/`)
 | 파일 | 설명 | 줄 수 |
 |------|-------------|-------|
-| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | 기업 구조, 마케팅, 경제 | 150+ |
+| [business_and_economics.md](05_business_and_finance/business_and_economics.md) | 기업 구조, 마케팅, 경제학 | 150+ |
 | [finance_and_investing.md](05_business_and_finance/finance_and_investing.md) | 개인 금융, 투자, 시장 | 350+ |
 | [law_and_legal_systems.md](05_business_and_finance/law_and_legal_systems.md) | 법체계, 계약, 지식재산권, 헌법 | 200+ |
 
@@ -91,7 +91,7 @@ knowledge_base/English/
 | [사전.md](07_reference/사전.md) | 종합 단어 정의 (A-Z) | 868 |
 | [general_knowledge.md](07_reference/general_knowledge.md) | 세상에 대한 기본 사실 | 150+ |
 | [technology_and_computing.md](07_reference/technology_and_computing.md) | 컴퓨팅 기초 및 기본 | 250+ |
-| [safe_communication.md](07_reference/safe_communication.md) | 의사소통 지침 및 모범 사례 | 150+ |
+| [safe_communication.md](07_reference/safe_communication.md) | 의사소통 지침과 모범 사례 | 150+ |
 
 ### 미래 (`08_future/`)
 | 파일 | 설명 | 줄 수 |
@@ -174,15 +174,15 @@ knowledge_base/English/
 
 ### AI 시스템을 위한
 - 모든 파일은 명확한 계층적 제목으로 구조화되어 있습니다
-- 기술 용어는 인라인 또는 `사전.md` 에서 정의됩니다
+- 기술 용어집는 인라인 또는 `사전.md` 에서 정의됩니다
 - 상호 참조는 markdown 링크를 사용합니다
 - 코드 예시에는 구문 강조가 포함되어 있습니다
 
 ### 인간 독자를 위한
 - 각 파일은 시작 부분에 학습 목표를 포함합니다
-- 해당되는 경우 난이도 수준이 표시되어 있습니다
-- 기술 파일에는 연습 문제와 연습 문제가 포함되어 있습니다
-- 도움이 되는 경우 시각 자료 (다이어그램, 표) 가 사용됩니다
+- 해당되는 경우 난이도 수준이 표시됩니다
+- 기술 문서에는 연습 문제와 실습 예제가 포함되어 있습니다
+- 도움이 되는 경우 필요한 경우 시각 자료(다이어그램, 표)가 사용됩니다
 
 ---
 
@@ -197,7 +197,7 @@ knowledge_base/English/
    - 순서 없는 목록에는 `-` 사용
    - 코드 블록에는 구문 강조 포함
 
-2. **메타데이터 추가** (YAML frontmatter):
+2. **메타데이터 추가하기** (YAML frontmatter):
 ```yaml
 ---
 title: "파일 제목"
@@ -216,10 +216,10 @@ last_updated: YYYY-MM-DD
 
 ## 🔄 업데이트 주기
 
-- **분기별 검토:** 모든 파일은 3 개월마다 검토됩니다
-- **사실 확인:** 통계 및 시간에 민감한 정보 검증
-- **콘텐츠 확장:** 미개발 파일은 점진적으로 확장됨
-- **새 주제:** 신흥 분야와 사용자 요구에 따라 추가됨
+- **분기별 검토:** 모든 파일은 3개월마다 검토됩니다
+- **사실 확인:** 통계와 시의성 있는 정보를 검증합니다
+- **콘텐츠 확장:** 미완성 파일은 점진적으로 보강됩니다
+- **새 주제:** 신흥 분야와 사용자 요구에 따라 추가됩니다
 
 **다음 예정된 검토:** Q3 2025
 
@@ -228,10 +228,10 @@ last_updated: YYYY-MM-DD
 ## 📞 피드백
 
 오류를 발견하셨나요? 제안 사항이 있으신가요? 다음을 참고하세요:
-- 새 주제를 제안하기 전에 중복 확인
-- 권위 있는 출처에 대해 주장 검증
-- 추가 제안 시 범위와 대상 고려
+- 새 주제를 제안하기 전에 중복 여부를 확인하세요
+- 권위 있는 출처를 바탕으로 주장을 검증하세요
+- 추가 제안 시 범위와 대상 독자를 고려하세요
 
 ---
 
-*이 지식 베이스는 지속적으로 개선되고 확장되는 생생한 문서 컬렉션입니다.*
+*이 지식 베이스는 지속적으로 개선되고 확장되는 살아 있는 문서 컬렉션입니다.*

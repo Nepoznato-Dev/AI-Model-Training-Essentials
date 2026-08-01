@@ -5,182 +5,182 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Apprentissage automatique Evaluation et Workflow
+# Évaluation et workflow du machine learning
 
-A practical Guide to le/la ML lifecycle — from problem framing to production monitoring — avec a focus on metrics, validation, et debugging.
-
----
-
-## le/la ML Workflow (CRISP-ML)
-
-1. **Entreprise Understanding**: Define le/la objective et success criteria.
-2. **Données Understanding**: Explore Disponible Données, identify quality issues.
-3. **Données Preparation**: Clean, transform, et split Données.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess Performance against metrics.
-6. **Déploiement**: Serve le/la model dans production.
-7. **Monitoring**: Track drift, Performance, et anomalies.
-
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
+Guide pratique du cycle de vie du ML — du cadrage du problème à la supervision en production — avec un accent sur les métriques, la validation et le débogage.
 
 ---
 
-## Données Splitting
+## Workflow ML (CRISP-ML)
 
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit le/la model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters et select model variants.
-- **Test set** (~15%): Used only once at le/la very end to estimate generalisation Performance.
+1. **Compréhension métier** : définir l'objectif et les critères de réussite.
+2. **Compréhension des données** : explorer les données disponibles, identifier les problèmes de qualité.
+3. **Préparation des données** : nettoyer, transformer et découper les données.
+4. **Modélisation** : entraîner les modèles, régler les hyperparamètres.
+5. **Évaluation** : mesurer les performances à l'aide de métriques.
+6. **Déploiement** : mettre le modèle en production.
+7. **Supervision** : suivre la dérive, les performances et les anomalies.
 
-**Important:** le/la test set must be kept completely untouched until final evaluation to avoid Données leakage.
-
-### Cross-Validation (k-fold)
-pour small datasets, use k-fold cross-validation: split Données into k folds, train on k-1, validate on le/la remaining, et repeat k times. Average le/la Performance. k=5 or k=10 is common.
-
-### Stratified Splitting
-pour classification avec imbalanced classes, use stratified splits to preserve class proportions dans each subset.
-
-### Time-Based Splitting
-pour time-series Données, split chronologically (train on past, test on Futur) rather than randomly.
+Il s'agit d'une boucle itérative — vous reviendrez sur les étapes précédentes en fonction des résultats d'évaluation.
 
 ---
 
-## Evaluation Metrics
+## Découpage des données
 
-### Classification Metrics
+### Séparation entraînement / validation / test
+- **Jeu d'entraînement** (~70 %) : utilisé pour ajuster les paramètres du modèle.
+- **Jeu de validation** (~15 %) : utilisé pour régler les hyperparamètres et sélectionner les variantes de modèle.
+- **Jeu de test** (~15 %) : utilisé une seule fois, tout à la fin, pour estimer les performances de généralisation.
 
-| Metric | What it measures | Best used pour |
+**Important :** le jeu de test doit rester totalement intact jusqu'à l'évaluation finale afin d'éviter toute fuite de données.
+
+### Validation croisée (k-fold)
+Pour les petits jeux de données, utilisez la validation croisée en k plis : divisez les données en k blocs, entraînez sur k-1 blocs, validez sur le bloc restant, puis répétez k fois. Faites ensuite la moyenne des performances. k=5 ou k=10 est courant.
+
+### Découpage stratifié
+Pour la classification avec classes déséquilibrées, utilisez un découpage stratifié afin de préserver les proportions de classes dans chaque sous-ensemble.
+
+### Découpage temporel
+Pour les données de séries temporelles, effectuez le découpage de manière chronologique (apprendre sur le passé, tester sur le futur) plutôt qu'aléatoirement.
+
+---
+
+## Métriques d'évaluation
+
+### Métriques de classification
+
+| Metric | What it measures | Best used for |
 |--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean de precision et recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under le/la ROC curve; tradeoff between TPR et FPR | General classifier Performance independent de threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Jeux de données équilibrés |
+| **Precision** | TP / (TP + FP) | Quand les faux positifs coûtent cher (ex. détection de spam) |
+| **Recall** | TP / (TP + FN) | Quand les faux négatifs coûtent cher (ex. dépistage du cancer) |
+| **F1-score** | Moyenne harmonique de la precision et du recall | Jeux de données déséquilibrés, métrique synthétique |
+| **AUC-ROC** | Aire sous la courbe ROC ; compromis entre TPR et FPR | Performance générale d'un classifieur indépendamment du seuil |
+| **AUC-PR** | Aire sous la courbe Precision-Recall | Jeux de données très déséquilibrés |
 
-**Definitions:**
+**Définitions :**
 - TP = True Positive
 - TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+- FP = False Positive (erreur de type I)
+- FN = False Negative (erreur de type II)
 
-### Regression Metrics
+### Métriques de régression
 
 | Metric | What it measures | Sensitivity to outliers |
 |--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root de MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient de Determination) | Proportion de variance explained | None directly, but sensitive to outliers indirectly |
+| **MSE** (Mean Squared Error) | Différence quadratique moyenne | Élevée |
+| **RMSE** (Root Mean Squared Error) | Racine carrée de la MSE (mêmes unités que la cible) | Élevée |
+| **MAE** (Mean Absolute Error) | Différence absolue moyenne | Faible |
+| **R²** (Coefficient of Determination) | Proportion de variance expliquée | Pas directement, mais sensible indirectement aux valeurs aberrantes |
 
-### Ranking et Retrieval Metrics
-- **Precision@k**: Fraction de relevant items among top-k recommendations.
-- **Recall@k**: Fraction de all relevant items that appear dans top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts pour position relevance.
-- **Hit Rate**: Whether a relevant item appears dans le  top-k.
+### Métriques de ranking et de retrieval
+- **Precision@k** : fraction d'éléments pertinents parmi les k premières recommandations.
+- **Recall@k** : fraction de tous les éléments pertinents qui apparaissent dans le top-k.
+- **NDCG** (Normalised Discounted Cumulative Gain) : tient compte de la pertinence selon la position.
+- **Hit Rate** : indique si un élément pertinent apparaît dans le top-k.
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" le/la model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap avec Référence translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap pour summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms et stems.
-
----
-
-## Evaluation Pitfalls
-
-### Données Leakage
-Occurs when information from le/la test set inadvertently influences training.
-- **Prevent:** Never use test Données pour feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
-
-### Overfitting
-Model performs well on training Données but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify Architecture, or collect more Données.
-
-### Underfitting
-Model performs poorly on both training et validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
-
-### Imbalanced Données
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
-
-### Temporal Drift (Concept Drift)
-le/la relationship between features et target changes over time.
-- **Mitigate:** Retrain periodically, monitor Performance, use drift detection algorithms.
+### Métriques génératives / LLM
+- **Perplexity** : mesure à quel point le modèle est « surpris » par un texte mis de côté (plus bas = mieux).
+- **BLEU** : chevauchement des n-grammes avec des traductions de référence (centré sur la précision).
+- **ROUGE** : chevauchement orienté rappel pour le résumé.
+- **BERTScore** : similarité sémantique fondée sur des embeddings contextuels (plus robuste que BLEU).
+- **METEOR** : aligne les synonymes et les racines via WordNet.
 
 ---
 
-## Hyperparameter Tuning
+## Pièges d'évaluation
 
-- **Grid Search**: Exhaustively try all combinations de a predefined set de hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search pour high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model du  objective function et selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps pour distributed tuning.
+### Fuite de données
+Cela se produit lorsque des informations issues du jeu de test influencent involontairement l'entraînement.
+- **Prévenir :** n'utilisez jamais les données de test pour le feature engineering, la normalisation ou le réglage d'hyperparamètres.
+- **Détecter :** si votre modèle obtient des scores anormalement élevés, soupçonnez une fuite de données.
 
-**Suggested search ranges pour common hyperparameters:**
+### Surapprentissage (overfitting)
+Le modèle fonctionne bien sur les données d'entraînement mais mal sur les jeux de validation/test.
+- **Limiter :** utilisez de la régularisation, l'early stopping, une architecture plus simple ou davantage de données.
+
+### Sous-apprentissage (underfitting)
+Le modèle obtient de mauvaises performances à la fois sur l'entraînement et la validation.
+- **Limiter :** utilisez un modèle plus complexe, ajoutez des features ou réduisez la régularisation.
+
+### Données déséquilibrées
+- **Limiter :** utilisez des poids de classe, du suréchantillonnage (SMOTE), du sous-échantillonnage ou des métriques adaptées (F1, AUC-PR) plutôt que l'accuracy.
+
+### Dérive temporelle (concept drift)
+La relation entre les features et la cible change avec le temps.
+- **Limiter :** réentraînez régulièrement, surveillez les performances et utilisez des algorithmes de détection de dérive.
+
+---
+
+## Réglage des hyperparamètres
+
+- **Grid Search** : essaie exhaustivement toutes les combinaisons d'un ensemble prédéfini d'hyperparamètres. Simple, mais coûteux en calcul.
+- **Random Search** : échantillonne des combinaisons aléatoires à partir de distributions. Plus efficace que la grid search dans les espaces de grande dimension.
+- **Bayesian Optimisation** : construit un modèle probabiliste de la fonction objectif et sélectionne intelligemment les hyperparamètres. Bibliothèques : Optuna, Hyperopt, scikit-optimise.
+- **Automated Tuning** : utilisez des outils comme Optuna, Ray Tune ou Weights & Biases Sweeps pour un réglage distribué.
+
+**Plages de recherche suggérées pour des hyperparamètres courants :**
 
 | Parameter | Suggested range (log-scale) |
 |-----------|-----------------------------|
 | Learning rate | 1e-5 to 1e-1 |
 | Batch size | 16, 32, 64, 128, 256 |
-| Number de layers (NN) | 2 to 6 |
-| Number de neurons (NN) | 32 to 1024 |
+| Number of layers (NN) | 2 to 6 |
+| Number of neurons (NN) | 32 to 1024 |
 | Regularisation (L2) | 1e-6 to 1e-2 |
 | Tree depth (XGBoost) | 3 to 12 |
 
 ---
 
-## Model Selection et Validation
+## Sélection et validation des modèles
 
-1. **Baseline model**: Start avec a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural Réseau).
-3. **Cross-validate** each candidate on le/la validation set.
-4. **Compare metrics** (avec confidence intervals) et select le/la best candidate.
-5. **Final evaluation** on le/la held-out test set.
-6. **Error analysis**: Look at Exemples le/la model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) et feed insights back into Données preparation or feature engineering.
-
----
-
-## Déploiement et Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes de Données offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time avec low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **Performance monitoring**: Track accuracy/F1 over time on live Données (when ground truth is Disponible).
-- **Données drift**: Monitor changes dans input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes dans le  relationship between inputs et outputs.
-- **Prediction drift**: Track le/la distribution de predicted outputs.
-- **Latency et throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging et Alerting
-- Log all prediction requests et responses (avec anonymisation).
-- Set alerts pour:
-  - Significant drop dans Performance.
-  - High percentage de missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning et Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store et version models, metadata, et evaluation results.
-- Store le/la training code et Données version (via DVC or Git LFS) alongside le/la model.
+1. **Modèle de base** : commencez par une heuristique simple ou un modèle simple (par exemple régression logistique, prédicteur moyen) pour établir un plancher de performance.
+2. **Modèles candidats** : entraînez plusieurs familles de modèles (par exemple Random Forest, XGBoost, réseau de neurones).
+3. **Validez en croisé** chaque candidat sur le jeu de validation.
+4. **Comparez les métriques** (avec des intervalles de confiance) et sélectionnez le meilleur candidat.
+5. **Évaluation finale** sur le jeu de test conservé à part.
+6. **Analyse des erreurs** : examinez les exemples que le modèle traite mal. Identifiez les motifs récurrents (par exemple classes rares, entrées ambiguës) et réinjectez ces enseignements dans la préparation des données ou le feature engineering.
 
 ---
 
-## Practical Workflow Checklist
+## Déploiement et supervision
 
-- [ ] Problem framed et success metric defined.
-- [ ] Données exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained et validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] Déploiement plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (Données card, model card) completed.
+### Modes de service
+- **Batch inference** : traiter de gros volumes de données hors ligne (par exemple des recommandations nocturnes).
+- **Online inference** : prédictions en temps réel via API (par exemple credit scoring, détection de fraude).
+- **Streaming inference** : traitement piloté par événements, en temps réel et à faible latence (par exemple alertes issues de capteurs IoT).
+
+### Supervision du modèle
+- **Suivi des performances** : suivez accuracy/F1 dans le temps sur les données en production (quand la vérité terrain est disponible).
+- **Data drift** : surveillez l'évolution des distributions des features d'entrée (par exemple avec le PSI – Population Stability Index).
+- **Concept drift** : surveillez les changements dans la relation entre entrées et sorties.
+- **Prediction drift** : suivez la distribution des sorties prédites.
+- **Latence et débit** : vérifiez le respect des SLA (Service Level Agreements).
+
+### Logging et alertes
+- Journalisez toutes les requêtes de prédiction et leurs réponses (avec anonymisation).
+- Définissez des alertes pour :
+  - une baisse significative des performances ;
+  - un pourcentage élevé d'entrées manquantes ou invalides ;
+  - des sorties du modèle en dehors des bornes attendues.
+
+### Versioning et registry des modèles
+- Utilisez un model registry (par exemple MLflow, Weights & Biases, Sagemaker Model Registry) pour stocker et versionner les modèles, les métadonnées et les résultats d'évaluation.
+- Stockez le code d'entraînement et la version des données (via DVC ou Git LFS) aux côtés du modèle.
+
+---
+
+## Checklist pratique du workflow
+
+- [ ] Problème cadré et métrique de succès définie.
+- [ ] Exploration des données effectuée (valeurs manquantes, outliers, distribution).
+- [ ] Découpage entraînement/validation/test créé (stratifié si nécessaire).
+- [ ] Modèle de base établi.
+- [ ] Modèles candidats entraînés et validés.
+- [ ] Hyperparamètres réglés.
+- [ ] Meilleur modèle sélectionné via validation croisée.
+- [ ] Évaluation finale sur le jeu de test.
+- [ ] Analyse des erreurs effectuée.
+- [ ] Plan de déploiement prêt (infrastructure de service).
+- [ ] Tableau de bord de supervision en place.
+- [ ] Documentation (data card, model card) terminée.

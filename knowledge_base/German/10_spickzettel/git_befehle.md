@@ -2,16 +2,16 @@
 This file was automatically translated from English to German.
 Source: git_commands.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
+Please contribute improvements via pull requests.
 -->
 
-# Git Befehle Schnellreferenz
+# Git-Befehle – Schnellreferenz
 
-Essential Git Befehle für version control.
+Wichtige Git-Befehle für die Versionsverwaltung.
 
 ---
 
-## Setup & Configuration
+## Einrichtung und Konfiguration
 
 ```bash
 # Configure user info
@@ -28,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Repository Initialization
+## Repository-Initialisierung
 
 ```bash
 # Initialize new repository
@@ -44,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Basic Workflow
+## Grundlegender Arbeitsablauf
 
 ```bash
 # Check status
@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-## Branching
+## Verzweigungen (Branches)
 
 ```bash
 # List branches
@@ -103,7 +103,7 @@ git rebase main
 
 ---
 
-## Remote Operations
+## Remote-Operationen
 
 ```bash
 # View remotes
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-## Undoing Changes
+## Änderungen rückgängig machen
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stashing
+## Stash verwenden
 
 ```bash
 # Save work in progress
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Viewing & Searching
+## Anzeigen und durchsuchen
 
 ```bash
 # Show commit details
@@ -228,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-## Fortgeschritten Operations
+## Fortgeschrittene Operationen
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-## Cleanup
+## Bereinigung
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +271,9 @@ git remote prune origin
 
 ---
 
-## Common Workflows
+## Häufige Arbeitsabläufe
 
-### Start New Feature
+### Neue Funktion beginnen
 ```bash
 git checkout main
 git pull
@@ -285,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Sync mit Main
+### Mit `main` synchronisieren
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Hotfix Workflow
+### Hotfix-Ablauf
 ```bash
 git checkout main
 git pull
@@ -310,7 +310,7 @@ git push --tags
 
 ---
 
-## .gitignore Patterns
+## `.gitignore`-Muster
 
 ```gitignore
 # Ignore specific file
@@ -332,37 +332,37 @@ __pycache__/
 
 ---
 
-## Keyboard Shortcuts (Git Bash)
+## Tastenkürzel (Git Bash)
 
-| Shortcut | Action |
+| Kürzel | Aktion |
 |----------|--------|
-| `Ctrl+R` | Reverse search Geschichte |
-| `Tab` | Auto-Vollständig |
-| `Ctrl+C` | Cancel command |
-| `Ctrl+Z` | Suspend process |
-| `fg` | Resume suspended process |
+| `Ctrl+R` | Rückwärtssuche im Verlauf |
+| `Tab` | Automatische Vervollständigung |
+| `Ctrl+C` | Befehl abbrechen |
+| `Ctrl+Z` | Prozess anhalten |
+| `fg` | Angehaltenen Prozess fortsetzen |
 
 ---
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
-✅ **Do:**
-- Write clear, descriptive commit messages
-- Commit frequently mit logical groupings
-- Use branches für features/fixes
-- Pull before starting work
-- Review `git status` often
+✅ **Empfohlen:**
+- Klare und aussagekräftige Commit-Nachrichten schreiben
+- Häufig und in logisch zusammenhängenden Einheiten committen
+- Für Features und Fehlerbehebungen Branches verwenden
+- Vor Arbeitsbeginn zuerst pullen
+- `git status` regelmäßig prüfen
 
-❌ **Don't:**
-- Commit sensitive Daten (API keys, passwords)
-- Force push to shared branches
-- Commit large binary files
-- Ignore merge conflicts
-- Work directly on main/master
+❌ **Vermeiden Sie:**
+- Sensible Daten committen, etwa API-Schlüssel oder Passwörter
+- Auf gemeinsam genutzte Branches mit Force-Pushes arbeiten
+- Große Binärdateien committen
+- Merge-Konflikte ignorieren
+- Direkt auf `main` oder `master` arbeiten
 
 ---
 
-## Commit Message Convention
+## Konvention für Commit-Nachrichten
 
 ```
 type(scope): subject
@@ -372,16 +372,16 @@ body (optional)
 footer (optional)
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code restructuring
+**Typen:**
+- `feat`: Neue Funktion
+- `fix`: Fehlerbehebung
+- `docs`: Dokumentation
+- `style`: Formatierung
+- `refactor`: Umstrukturierung von Code
 - `test`: Tests
-- `chore`: Maintenance
+- `chore`: Wartung
 
-**Example:**
+**Beispiel:**
 ```
 feat(auth): add password reset functionality
 
@@ -393,4 +393,4 @@ Closes #123
 
 ---
 
-*Zuletzt aktualisiert: June 2025 | Git 2.x*
+*Zuletzt aktualisiert: Juni 2025 | Git 2.x*

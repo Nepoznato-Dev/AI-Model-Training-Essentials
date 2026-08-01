@@ -2,16 +2,16 @@
 This file was automatically translated from English to German.
 Source: linux_commands.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
+Please contribute improvements via pull requests.
 -->
 
-# Linux Befehle Schnellreferenz
+# Linux-Befehle – Schnellreferenz
 
-Essential Linux/Unix Befehle für system navigation und administration.
+Wichtige Linux/Unix-Befehle für Systemnavigation und Administration.
 
 ---
 
-## File & Directory Operations
+## Datei- und Verzeichnisoperationen
 
 ### Navigation
 ```bash
@@ -25,7 +25,7 @@ cd ~                    # Go to home directory
 cd -                    # Go to previous directory
 ```
 
-### File Operations
+### Dateioperationen
 ```bash
 touch file.txt          # Create empty file
 cp source dest          # Copy file
@@ -40,7 +40,7 @@ mkdir -p path/to/dir    # Create nested directories
 ln -s target link       # Create symbolic link
 ```
 
-### Viewing Files
+### Dateien anzeigen
 ```bash
 cat file.txt            # Display entire file
 less file.txt           # View file page by page (q to quit)
@@ -53,7 +53,7 @@ tail -f logfile.log     # Follow file (live updates)
 
 ---
 
-## File Permissions
+## Dateiberechtigungen
 
 ```bash
 chmod 755 file          # Set permissions (rwxr-xr-x)
@@ -65,17 +65,17 @@ chgrp group file        # Change group only
 umask                   # Show default permission mask
 ```
 
-### Permission Numbers
-- `7` = rwx (read + write + execute)
-- `6` = rw- (read + write)
-- `5` = r-x (read + execute)
-- `4` = r-- (read only)
+### Zahlen für Berechtigungen
+- `7` = rwx (lesen + schreiben + ausführen)
+- `6` = rw- (lesen + schreiben)
+- `5` = r-x (lesen + ausführen)
+- `4` = r-- (nur lesen)
 
 ---
 
-## Text Processing
+## Textverarbeitung
 
-### Search & Replace
+### Suchen und Ersetzen
 ```bash
 grep "pattern" file.txt                 # Search for pattern
 grep -r "pattern" dir/                  # Recursive search
@@ -86,7 +86,7 @@ grep -c "pattern" file.txt              # Count matches
 grep -E "pattern1|pattern2" file.txt    # Extended regex
 ```
 
-### Find Files
+### Dateien finden
 ```bash
 find /path -name "file.txt"             # Find by name
 find /path -name "*.py"                 # Find by extension
@@ -98,7 +98,7 @@ find /path -perm 755                    # Find by permissions
 find /path -exec command {} \;          # Execute command on results
 ```
 
-### Text Manipulation
+### Textmanipulation
 ```bash
 wc file.txt             # Word count (lines, words, bytes)
 wc -l file.txt          # Line count only
@@ -116,7 +116,7 @@ awk '{print $1}' file   # Print first column
 
 ---
 
-## Process Verwaltung
+## Prozessverwaltung
 
 ```bash
 ps                      # Show running processes
@@ -138,7 +138,7 @@ Ctrl+Z                  # Suspend current job
 
 ---
 
-## System Information
+## Systeminformationen
 
 ```bash
 uname -a                # System information
@@ -159,7 +159,7 @@ fdisk -l                # Disk partitions (requires sudo)
 
 ---
 
-## Netzwerk Befehle
+## Netzwerkbefehle
 
 ```bash
 ifconfig                # Network interfaces (deprecated)
@@ -181,7 +181,7 @@ rsync -av src/ dest/    # Sync files/directories
 
 ---
 
-## Archive & Compression
+## Archivierung und Komprimierung
 
 ```bash
 tar -cvf archive.tar file1 file2        # Create tar archive
@@ -198,7 +198,7 @@ unzip archive.zip                       # Extract zip archive
 
 ---
 
-## Package Verwaltung
+## Paketverwaltung
 
 ### Debian/Ubuntu (apt)
 ```bash
@@ -231,7 +231,7 @@ brew list                               # List installed packages
 
 ---
 
-## User Verwaltung
+## Benutzerverwaltung
 
 ```bash
 sudo adduser username                   # Create new user
@@ -246,7 +246,7 @@ groups username                         # Show user groups
 
 ---
 
-## Disk Verwaltung
+## Datenträgerverwaltung
 
 ```bash
 mount /dev/sda1 /mnt                    # Mount filesystem
@@ -260,7 +260,7 @@ dd if=/dev/sda of=backup.img            # Disk image (careful!)
 
 ---
 
-## Shell Variables & Environment
+## Shell-Variablen und Umgebung
 
 ```bash
 echo $HOME              # Show environment variable
@@ -278,7 +278,7 @@ Ctrl+R                  # Search history
 
 ---
 
-## Input/Output Redirection
+## Ein-/Ausgabe-Umleitung
 
 ```bash
 command > file.txt      # Redirect output (overwrite)
@@ -292,7 +292,7 @@ tee file.txt            # Output to file and screen
 
 ---
 
-## Useful One-Liners
+## Nützliche Einzeiler
 
 ```bash
 # Count files in directory
@@ -322,40 +322,40 @@ du -ah | sort -hr | head -20
 
 ---
 
-## Keyboard Shortcuts
+## Tastenkürzel
 
-| Shortcut | Action |
+| Kürzel | Aktion |
 |----------|--------|
-| `Tab` | Auto-Vollständig |
-| `Ctrl+C` | Kill current command |
-| `Ctrl+Z` | Suspend command |
-| `Ctrl+D` | Exit shell/EOF |
-| `Ctrl+L` | Clear screen |
-| `Ctrl+A` | Go to line start |
-| `Ctrl+E` | Go to line end |
-| `Ctrl+U` | Delete to line start |
-| `Ctrl+K` | Delete to line end |
-| `Ctrl+R` | Search Geschichte |
-| `Ctrl+W` | Delete word before cursor |
+| `Tab` | Automatische Vervollständigung |
+| `Ctrl+C` | Aktuellen Befehl abbrechen |
+| `Ctrl+Z` | Befehl anhalten |
+| `Ctrl+D` | Shell beenden/EOF |
+| `Ctrl+L` | Bildschirm leeren |
+| `Ctrl+A` | Zum Zeilenanfang springen |
+| `Ctrl+E` | Zum Zeilenende springen |
+| `Ctrl+U` | Bis zum Zeilenanfang löschen |
+| `Ctrl+K` | Bis zum Zeilenende löschen |
+| `Ctrl+R` | Verlauf durchsuchen |
+| `Ctrl+W` | Wort vor dem Cursor löschen |
 
 ---
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
-✅ **Do:**
-- Use `sudo` sparingly und carefully
-- Test destructive Befehle without execution flags first
-- Keep backups before major changes
-- Use meaningful filenames (no spaces)
-- Learn to use `man` pages (`man command`)
+✅ **Empfohlen:**
+- `sudo` sparsam und mit Bedacht verwenden
+- Zerstörerische Befehle zuerst ohne Ausführungs-Flags testen
+- Vor größeren Änderungen Backups anlegen
+- Aussagekräftige Dateinamen verwenden (ohne Leerzeichen)
+- Den Umgang mit `man`-Seiten lernen (`man command`)
 
-❌ **Don't:**
-- Run `rm -rf /` or similar dangerous Befehle
-- Use `chmod 777` on sensitive files
-- Ignore warning messages
-- Edit system files without backups
-- Run unknown scripts as root
+❌ **Vermeiden Sie:**
+- `rm -rf /` oder ähnlich gefährliche Befehle auszuführen
+- `chmod 777` auf sensible Dateien anzuwenden
+- Warnmeldungen zu ignorieren
+- Systemdateien ohne Backup zu bearbeiten
+- Unbekannte Skripte als `root` auszuführen
 
 ---
 
-*Zuletzt aktualisiert: June 2025 | Linux/Unix compatible*
+*Zuletzt aktualisiert: Juni 2025 | Linux/Unix-kompatibel*
