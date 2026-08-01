@@ -1,7 +1,53 @@
-Nothing should be ignored in this case, as the changes only include markdown documentation files (.md) which are source files that should be tracked in version control. No build artifacts, dependencies, or temporary files are present in the change list.
+# Examples 1:
+# Input:
+# ### Added files:
+# [src/main.py, README.md, config.json]
+# 
+# ### Deleted files:
+# [old/unused.py]
+# ### Modified files:
+# [utils.py]
+# ###current .gitignore Content
+# (empty)
+# Expected Output:
+# (empty — output nothing)
 
-Therefore, the output is empty:
+# Example 2 (Project with artifacts):
+# Input:
+# ### Added files:
+# [pycache/main.cpython-310.pyc, dist/app.js, .env.local, .vscode/settings.json
+# 
+# ### Deleted files:
+#     []
+# 
+# ### Modified files:
+# []
+# ### current .gitignore Content
+# *.log
+# Expected Output:
+#     #Compiled and build artifacts
+#     *.pyc
+#     pycache/
+#     *.o
+#     *.obj
+#     dist/
+#     build/
+#     #Dependencies
+#     .venv/
+#     venv/
+#     node_modules/
+#     #Logs and temp files
+#     *.log
+#     *.tmp
+#     *.swp
+#     #Environment
+#     .env
+#     .env.local
+#     .env.
+#     #Editors
+#     .vscode/
+#     .idea/
+#     #Original rules preserved
+#     *.log
 
-```markdown
-
-```
+# Final reminder: Output ONLY the .gitignore content. If nothing should be ignored, output NOTHING.
