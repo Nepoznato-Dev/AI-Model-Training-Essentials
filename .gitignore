@@ -1,1 +1,3 @@
-Nothing needs to be added to .gitignore since the only change is adding a markdown documentation file (.md), which is source content that should be tracked.
+```markdown
+guides/advanced_ai_training_guide.md
+```
