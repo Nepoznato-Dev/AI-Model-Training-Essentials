@@ -1,1 +1,7 @@
-(files_to_fix.txt)
+```
+# Documentation and guides
+guides/**/.DS_Store
+guides/**/Thumbs.db
+guides/**/*.tmp
+guides/**/*.log
+```
