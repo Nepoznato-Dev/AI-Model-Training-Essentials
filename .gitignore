@@ -1,3 +1,4 @@
+```markdown
 # Compiled and build artifacts
 *.pyc
 __pycache__/
@@ -16,7 +17,7 @@ venv/
 .venv/
 .env
 .env.local
-*.env.*
+.env.*
 
 # Logs and temp files
 *.log
@@ -46,8 +47,12 @@ target/
 # Python specific
 .mypy_cache/
 .pytest_cache/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
 
-# Compressed files
+# Compression
 *.zip
 *.gz
 *.tar
@@ -70,3 +75,4 @@ target/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+```
