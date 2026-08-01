@@ -1,4 +1,5 @@
 ```markdown
 # Documentation and guides
 guides/**/chapter_*.md
+guides/advanced_ai_training_guide.md
 ```
