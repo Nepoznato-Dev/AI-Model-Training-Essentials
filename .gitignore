@@ -1,7 +1,3 @@
-```
-# Documentation and guides
-guides/**/.DS_Store
-guides/**/Thumbs.db
-guides/**/*.tmp
-guides/**/*.log
-```
+# Documentation
+guides/RAG/*.md
+guides/RAG/README.md
