@@ -5,9 +5,9 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Git 명령 빠른 참조
+# Git 명령어 빠른 참조
 
-버전 관리를 위한 필수 Git 명령어 모음입니다.
+버전 관리를 위해 자주 쓰는 필수 Git 명령어를 정리한 문서입니다.
 
 ---
 

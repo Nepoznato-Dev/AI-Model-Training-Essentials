@@ -5,7 +5,7 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Datenwissenschaft und Analytics
+# Datenwissenschaft und Analytik
 
 ## Kernkonzepte
 
@@ -76,7 +76,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
 - **Umfragen und Experimente**: Primäre Datenerhebung
 - **Öffentliche Datensätze**: Regierungsdaten, Kaggle, akademische Repositories
 
-### Data Warehousing
+### Data Warehousing und Analysespeicher
 - **ETL**: Extract, Transform, Load-Prozess
 - **Data Lake**: Rohdatenspeicherung im nativen Format
 - **Data Warehouse**: Strukturierte, verarbeitete Daten für Analysen
@@ -184,7 +184,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
   - Uniform Manifold Approximation (UMAP)
   - Autoencoder
   
-- **Assoziationsregeln**: Co-occurring Items finden
+- **Assoziationsregeln**: Gemeinsam auftretende Elemente identifizieren
   - Apriori-Algorithmus
   - FP-Growth
 
@@ -220,7 +220,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
 - **Dagster**: Datenorchestrator mit Fokus auf Assets
 - **dbt**: Datentransformation im Warehouse
 
-## Business Intelligence und Analytics
+## Business Intelligence und Analytik
 
 ### BI-Tools
 - **Tableau**: Visuelle Analyseplattform
@@ -239,7 +239,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
 - **Leistung optimieren**: Schnelles Laden, effiziente Abfragen
 - **Mobile-Überlegungen**: Responsives Design
 
-### Key Performance Indicators (KPIs)
+### Leistungskennzahlen (Key Performance Indicators, KPIs)
 - **Finanziell**: Umsatz, Gewinnmarge, ROI, Customer Lifetime Value
 - **Kunde**: Akquisitionskosten, Churn-Rate, Zufriedenheitswert, NPS
 - **Operativ**: Effizienzraten, Zykluszeit, Fehlerraten
@@ -253,7 +253,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
 - **Risikomodellierung**: Kredit-Scoring, Betrugserkennung, Versicherung
 - **Kundenanalytik**: Churn-Vorhersage, Propensity-Modellierung
 - **Bedarfsprognose**: Bestandsoptimierung, Lieferkette
-- **Wartungsvorhersage**: anticipation von Geräteausfällen
+- **Wartungsvorhersage**: Vorhersage von Geräteausfällen
 
 ### Präskriptive Analytik
 - **Optimierung**: Lineare Programmierung, ganzzahlige Programmierung
@@ -321,7 +321,7 @@ Datenwissenschaft ist ein interdisziplinäres Feld, das wissenschaftliche Method
 - **Geschäftlich**: Domänenwissen, Stakeholder-Verwaltung, ROI-Analyse
 - **Tools**: Git, Jupyter, Docker, CI/CD, Versionskontrolle für Modelle
 
-## Emerging Trends
+## Neue Trends
 
 ### Aktuelle Entwicklungen
 - **AutoML**: Automatisierte Erstellung von ML-Pipelines

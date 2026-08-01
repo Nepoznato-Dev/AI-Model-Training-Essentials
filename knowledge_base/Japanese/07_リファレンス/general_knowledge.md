@@ -7,66 +7,66 @@ For accuracy improvements, please contribute edits via pull requests.
 
 # 一般知識
 
-## その Solar System
+## 太陽系
 
-その solar system consists の Sun と eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, と Neptune. Earth is その third planet from その Sun, located approximately 150 million kilometers away. その Sun is a star at その center の solar system that provides light と energy to all planets through nuclear fusion. Jupiter is その largest planet, と a mass greater than all other planets combined. Saturn is known のために its prominent ring system made の ice と rock. Mars is called その Red Planet because の iron oxide on its surface. Neptune is その farthest planet from その Sun.
+太陽系は、太陽と 8 つの惑星、すなわち Mercury、Venus、Earth、Mars、Jupiter、Saturn、Uranus、Neptune から成ります。Earth は太陽から 3 番目の惑星で、およそ 1 億 5,000 万キロメートル離れています。太陽は太陽系の中心にある恒星で、核融合によって全惑星に光とエネルギーを供給しています。Jupiter は最大の惑星で、その質量は他のすべての惑星を合わせたより大きいです。Saturn は氷と岩でできた目立つ環で知られています。Mars は表面に酸化鉄が多いため「赤い惑星」と呼ばれます。Neptune は太陽から最も遠い惑星です。
 
-## Earth
+## 地球
 
-Earth is その fifth-largest planet で その solar system と その only known planet to harbor life. Its surface is approximately 71% water と 29% land. その atmosphere is composed の approximately 78% nitrogen, 21% oxygen, と 1% other gases including carbon dioxide と argon. Earth has one natural satellite called その Moon. その Moon orbits Earth roughly every 27.3 days と is approximately 384,400 kilometers away. Earth has a diameter の approximately 12,742 kilometers. Earth is approximately 4.5 billion years old.
+地球は太陽系で 5 番目に大きい惑星であり、生命の存在が確認されている唯一の惑星です。表面の約 71% が水、約 29% が陸地です。大気はおよそ 78% の窒素、21% の酸素、そして二酸化炭素やアルゴンなど約 1% のその他の気体から成ります。地球には Moon と呼ばれる 1 つの自然衛星があります。Moon は約 27.3 日で地球を一周し、地球からの距離は約 384,400 キロメートルです。地球の直径は約 12,742 キロメートル、年齢は約 45 億年です。
 
-## Weather と Climate
+## 天気と気候
 
-Weather refers to short-term atmospheric conditions で a specific location, including temperature, humidity, precipitation, と wind. Climate refers to long-term weather patterns で a region over many years. その greenhouse effect occurs when gases で Earth's atmosphere trap heat from その Sun, warming その planet. Carbon dioxide, water vapor, と methane are その main greenhouse gases. Climate change refers to long-term shifts で global temperatures と weather patterns, largely driven by human activity since その Industrial Revolution.
+天気とは、ある場所における短期的な大気の状態を指し、気温、湿度、降水、風などを含みます。気候とは、ある地域における長期的な天候パターンのことです。温室効果は、地球の大気中の気体が太陽からの熱を閉じ込め、地球を暖める現象です。主な温室効果ガスには、二酸化炭素、水蒸気、メタンがあります。気候変動とは、主として産業革命以降の人間活動によって引き起こされる、長期的な気温や気象パターンの変化を指します。
 
-## Oceans
+## 海洋
 
-Earth has five oceans: その Pacific, Atlantic, Indian, Southern, と Arctic. その Pacific Ocean is その largest, covering more than 165 million square kilometers, と その deepest, と その Mariana Trench reaching approximately 11 kilometers deep. その oceans cover about 361 million square kilometers で total. その average depth の ocean is approximately 3,688 meters. その oceans regulate Earth's temperature と are home to その majority の life on その planet.
+地球には Pacific、Atlantic、Indian、Southern、Arctic の 5 つの海があります。Pacific Ocean は最大かつ最深の海で、面積は 1 億 6,500 万平方キロメートルを超え、Mariana Trench は約 11 キロメートルの深さに達します。海洋全体の面積は約 3 億 6,100 万平方キロメートルです。海の平均深度は約 3,688 メートルで、海洋は地球の気温調整に大きな役割を果たし、地球上の生命の大半の生息地でもあります。
 
-## Continents
+## 大陸
 
-Earth has seven continents: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, と South America. Asia is その largest continent by area と population. Africa has その most countries の any continent. Antarctica is その coldest, driest, と windiest continent, covered by an ice sheet averaging 2.1 kilometers thick. Europe と Asia are sometimes considered a single landmass called Eurasia.
+地球には Africa、Antarctica、Asia、Australia（Oceania）、Europe、North America、South America の 7 大陸があります。Asia は面積・人口ともに最大の大陸です。Africa は最も多くの国を持つ大陸です。Antarctica は最も寒冷で乾燥しており、風も強く、平均 2.1 キロメートルの厚さの氷床に覆われています。Europe と Asia は、Eurasia という 1 つの陸塊として扱われることもあります。
 
-## Time と Calendars
+## 時間と暦
 
-A year is その time it takes Earth to orbit その Sun, approximately 365.25 days. A leap year has 366 days と occurs every four years to account のために その extra quarter-day. A day is one full rotation の Earth on its axis, approximately 24 hours. その Gregorian calendar is その most widely used calendar で その world today. A week has seven days. An hour has 60 minutes. A minute has 60 seconds.
+1 年は地球が太陽を 1 周する時間で、約 365.25 日です。うるう年は 366 日で、余分な 0.25 日を調整するために 4 年ごとに設けられます。1 日は地球が自転軸を 1 回転する時間で、約 24 時間です。Gregorian calendar は現在世界でもっとも広く使われている暦です。1 週間は 7 日、1 時間は 60 分、1 分は 60 秒です。
 
-## Light と Speed
+## 光と速度
 
-その speed の light で a vacuum is approximately 299,792 kilometers per second, roughly 186,000 miles per second. Light from その Sun takes about 8 minutes to reach Earth. A light-year is その distance light travels で one year, approximately 9.46 trillion kilometers. Nothing と mass can travel as fast as その speed の light according to Einstein's theory の special relativity.
+真空中での光の速度は毎秒約 299,792 キロメートル、つまりおよそ毎秒 186,000 マイルです。太陽の光が地球に届くまでには約 8 分かかります。1 light-year は光が 1 年間に進む距離で、約 9.46 兆キロメートルです。Einstein の special relativity によれば、質量を持つ物体は光速と同じ速さでは移動できません。
 
-## Human Body
+## 人体
 
-その human body contains approximately 37 trillion cells. その adult human skeleton has 206 bones. その heart pumps blood through approximately 100,000 kilometers の blood vessels. その brain is その most complex organ と contains approximately 86 billion neurons. その human body is approximately 60% water. その longest bone で その body is その femur (thigh bone). その smallest bone is その stapes で その ear.
+人体にはおよそ 37 兆個の細胞があります。成人の骨格は 206 個の骨で構成されています。心臓は約 100,000 キロメートルの血管を通して血液を送り出します。脳は人体でもっとも複雑な器官で、約 860 億個のニューロンを含みます。人体の約 60% は水です。人体で最も長い骨は femur（大腿骨）、最も小さい骨は耳の stapes です。
 
-## Water
+## 水
 
-Water is a chemical compound made の two hydrogen atoms と one oxygen atom (H2O). It exists で three states: liquid (water), solid (ice), と gas (steam or water vapor). Water freezes at 0 degrees Celsius と boils at 100 degrees Celsius at sea level. Water is essential のために all known forms の life. About 97.5% の Earth's water is saltwater; only 2.5% is freshwater.
+水は 2 個の水素原子と 1 個の酸素原子から成る化学物質で、化学式は H2O です。液体（水）、固体（氷）、気体（水蒸気）の 3 つの状態をとります。海面気圧では、0 ℃で凍り、100 ℃で沸騰します。水は既知のすべての生命に不可欠です。地球上の水の約 97.5% は海水で、淡水はわずか 2.5% しかありません。
 
-## Animals
+## 動物
 
-Mammals are warm-blooded animals that give birth to live young と nurse them と milk. Birds are warm-blooded animals covered で feathers that lay eggs. Reptiles are cold-blooded animals と scales. Amphibians can live both on land と で water. Fish breathe through gills と live で water. Insects are その most numerous class の animals on Earth. その blue whale is その largest animal ever known to have lived, reaching up to 30 meters で length.
+哺乳類は恒温動物で、子を産み、乳で育てます。鳥類も恒温動物で、羽毛に覆われ、卵を産みます。爬虫類は変温動物で、うろこを持ちます。両生類は陸上と水中の両方で生きられます。魚はえら呼吸をし、水中で生活します。昆虫は地球上で最も数の多い動物群です。blue whale はこれまで地球上に生息したことが知られている中で最大の動物で、体長 30 メートルに達します。
 
-## 地理 と Population
+## 地理と人口
 
-Earth's total surface area is about 510 million square kilometers. Around 8 billion people live on Earth. India と China are その two most populous countries. その largest country by area is Russia, followed by Canada と China. その Nile と その Amazon are among その world's longest river システム. Mount Everest, で その Himalayas, is Earth's highest mountain above sea level at 8,848.86 meters.
+地球の総表面積は約 5 億 1,000 万平方キロメートルです。地球には約 80 億人が暮らしています。人口が最も多い国は India と China です。面積最大の国は Russia で、続いて Canada と China が並びます。Nile と Amazon は、世界でもっとも長い河川系の一つです。Himalayas にある Mount Everest は、標高 8,848.86 メートルで、海抜世界最高峰です。
 
-## Energy と Resources
+## エネルギーと資源
 
-Primary global energy sources include oil, natural gas, coal, nuclear power, hydroelectricity, wind, と solar. Fossil fuels formed over millions の years from ancient organic matter. Renewable energy sources such as wind と solar are replenished naturally と are central to many decarbonisation strategies. Electrical energy is measured で joules; で households と industry, usage is commonly measured で kilowatt-hours (kWh).
+世界の主要なエネルギー源には、石油、天然ガス、石炭、原子力、水力、風力、太陽光があります。化石燃料は、古代の有機物が何百万年もかけて変化してできたものです。風力や太陽光のような再生可能エネルギーは自然に補充され、多くの脱炭素戦略の中核になっています。電気エネルギーは joule で測定され、家庭や産業では kilowatt-hour（kWh）がよく使われます。
 
-## 経済 基本
+## 経済の基礎
 
-経済 studies how people と societies allocate limited resources. Supply と demand influence market prices. Inflation is a general rise で prices over time, reducing purchasing power. Gross Domestic Product (GDP) estimates その total value の goods と services produced で a country. Interest rates influence borrowing, saving, と investment behavior.
+経済学は、人々や社会が限られた資源をどのように配分するかを研究する学問です。需要と供給は市場価格に影響します。インフレとは、時間とともに物価が全般的に上昇し、購買力が低下することです。Gross Domestic Product（GDP）は、ある国で生産された財とサービスの総価値を推定する指標です。金利は、借入、貯蓄、投資行動に大きく影響します。
 
-## Government と Civics
+## 政府と市民社会
 
-Many modern states use one の three broad システム: democracies, authoritarian システム, or mixed forms. で constitutional democracies, power is typically distributed across branches such as legislative, executive, と judicial institutions. Laws define rights と responsibilities, while courts interpret と apply those laws. Local government often manages services such as schools, roads, と sanitation.
+現代国家の多くは、民主制、権威主義体制、またはその混合形態のいずれかに分類されます。立憲民主制では、権力は通常、立法、行政、司法の各機関に分配されます。法律は権利と義務を定め、裁判所はそれを解釈し適用します。地方政府は、学校、道路、衛生などの公共サービスを担うことが多いです。
 
-## Health と Public Safety
+## 健康と公衆安全
 
-Vaccines train その immune system to recognize と fight specific pathogens. Hand hygiene と clean water are among その most effective public health interventions. Antibiotics treat bacterial infections but do not cure viral illnesses such as その common cold. Sleep, 栄養, physical activity, と stress 管理 are foundational contributors to long-term health outcomes.
+ワクチンは、免疫系に特定の病原体を認識し、対抗する方法を学習させます。手指衛生と安全な水の確保は、公衆衛生でもっとも効果的な介入の一つです。抗生物質は細菌感染の治療に有効ですが、一般的な風邪のようなウイルス性疾患には効きません。睡眠、栄養、運動、ストレス管理は、長期的な健康を支える基本要素です。
 
-## コミュニケーション と Media Literacy
+## コミュニケーションとメディア・リテラシー
 
-Reliable information is usually supported by evidence, transparent sourcing, と independent verification. Correlation does not necessarily imply causation. Primary sources provide first-hand データ, while secondary sources interpret primary material. で その digital era, checking publication date, author credibility, と source quality is important のために avoiding misinformation.
+信頼できる情報は、通常、証拠、透明な情報源、独立した検証によって支えられています。相関関係があっても、必ずしも因果関係を意味するわけではありません。一次資料は直接得られたデータや証言を提供し、二次資料はそれを解釈・整理します。デジタル時代では、誤情報を避けるために、公開日、著者の信頼性、情報源の質を確認することが重要です。

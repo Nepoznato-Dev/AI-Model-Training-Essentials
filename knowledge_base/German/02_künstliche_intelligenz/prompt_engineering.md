@@ -7,32 +7,32 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 # Prompt Engineering
 
-Prompt Engineering ist die Praxis des Entwerfens, Verfeinerns und Optimierens von Eingabeaufforderungen, um die bestmögliche Ausgabe von einem Sprachmodell zu erhalten. Es ist sowohl eine Kunst als auch eine Wissenschaft und es ist die primäre Schnittstelle zur Steuerung des LLM-Verhaltens ohne Fine-Tuning.
+Prompt Engineering ist die Praxis, Eingabeaufforderungen so zu entwerfen, zu verfeinern und zu optimieren, dass ein Sprachmodell die bestmögliche Ausgabe erzeugt. Es ist zugleich Handwerk und Wissenschaft und die wichtigste Schnittstelle, um das Verhalten eines LLM ohne Fine-Tuning zu steuern.
 
 ---
 
 ## Grundprinzipien
 
 ### Klarheit und Spezifität
-Eine klare Aufforderung lässt keinen Raum für Mehrdeutigkeiten. Geben Sie genau an, was Sie wünschen, einschließlich Format, Länge und Perspektive.
+Eine klare Eingabeaufforderung lässt keinen Raum für Mehrdeutigkeiten. Geben Sie genau an, was Sie möchten, einschließlich Format, Länge und Perspektive.
 
 **Unpräzise:**
 > "Erzählen Sie mir etwas über Python."
 
 **Spezifisch:**
-> "Erklären Sie den Global Interpreter Lock (GIL) von Python. Beschreiben Sie dessen Auswirkung auf Multithreading, nennen Sie einen Workaround und halten Sie Ihre Antwort unter 200 Wörtern."
+> "Erklären Sie den Global Interpreter Lock (GIL) von Python. Beschreiben Sie seine Auswirkungen auf Multithreading, nennen Sie einen Workaround und halten Sie Ihre Antwort unter 200 Wörtern."
 
 ### Kontext bereitstellen
-Modelle leisten bessere Arbeit, wenn sie die Rolle, das Publikum und das Ziel kennen.
+Modelle liefern bessere Ergebnisse, wenn sie Rolle, Zielgruppe und Ziel kennen.
 
 **Ohne Kontext:**
 > "Schreiben Sie eine Funktion zum Sortieren einer Liste."
 
 **Mit Kontext:**
-> "Sie sind ein erfahrener Python-Entwickler. Schreiben Sie eine Funktion zum Sortieren einer Liste von Wörterbüchern nach einem gegebenen Schlüssel. Verwenden Sie Typ-Hinweise und behandeln Sie Grenzfälle. Das Publikum sind Junior-Entwickler."
+> "Sie sind ein erfahrener Python-Entwickler. Schreiben Sie eine Funktion, die eine Liste von Wörterbüchern nach einem angegebenen Schlüssel sortiert. Verwenden Sie Typ-Hinweise und berücksichtigen Sie Randfälle. Die Zielgruppe sind Junior-Entwickler."
 
 ### Positive Anweisungen verwenden
-Sagen Sie dem Modell, was es tun soll, nicht was es vermeiden soll. "Vermeiden Sie Fachjargon" ist schwächer als "Verwenden Sie eine einfache Sprache, die für einen 10-Jährigen verständlich ist."
+Sagen Sie dem Modell lieber, was es tun soll, als nur, was es vermeiden soll. "Vermeiden Sie Fachjargon" ist schwächer als "Verwenden Sie einfache Sprache, die ein 10-jähriges Kind verstehen kann."
 
 ---
 
@@ -41,19 +41,19 @@ Sagen Sie dem Modell, was es tun soll, nicht was es vermeiden soll. "Vermeiden S
 ### System-/Benutzer-/Assistenten-Rollen
 Die meisten LLM-APIs unterstützen eine Multi-Turn-Struktur:
 
-- **Systemnachricht**: Legt das Verhalten, die Persona und die Einschränkungen des Modells fest (bleibt für die gesamte Sitzung bestehen).
+- **Systemnachricht**: Legt Verhalten, Persona und Einschränkungen des Modells fest und gilt für die gesamte Sitzung.
 - **Benutzernachricht**: Die aktuelle Anfrage oder Anweisung.
-- **Assistentennachricht**: Vorherige Antworten des Modells (wird für Kontinuität verwendet).
+- **Assistentennachricht**: Frühere Antworten des Modells, die für Kontinuität sorgen.
 
 **Beispiel (OpenAI API-Stil):**
-System: Sie sind ein hilfreicher Coding-Assistent. Sie antworten mit prägnanten Codebeispielen und kurzen Erklärungen. Liefern Sie niemals unsicheren Code.
+System: Sie sind ein hilfreicher Coding-Assistent. Sie antworten mit prägnanten Codebeispielen und kurzen Erklärungen. Geben Sie niemals unsicheren Code aus.
 Benutzer: Schreiben Sie eine Python-Funktion zum Herunterladen einer Datei von einer URL.
 
 ### Few-Shot Prompting
-Geben Sie 2–3 Beispiele für das gewünschte Eingabe-Ausgabe-Format an, bevor Sie das Modell auffordern, die Aufgabe auszuführen. Dies lehrt das Muster.
+Geben Sie vor der eigentlichen Aufgabe 2–3 Beispiele für das gewünschte Ein- und Ausgabeformat an. So lernt das Modell das Muster.
 
 **Beispiel:**
-Benutzer: Wandeln Sie diese Sätze in die Passivform um:
+Benutzer: Wandeln Sie diese Sätze ins Passiv um:
 Eingabe: Die Katze jagte die Maus.
 Ausgabe: Die Maus wurde von der Katze gejagt.
 Eingabe: Der Koch kochte die Mahlzeit.
@@ -62,7 +62,7 @@ Eingabe: Der Sturm zerstörte das Haus.
 Ausgabe: (Modell vervollständigt)
 
 ### Chain-of-Thought (CoT)
-Ermutigen Sie das Modell, seine Überlegungen Schritt für Schritt darzulegen. Dies verbessert die Genauigkeit bei arithmetischen, logischen und mehrstufigen Aufgaben.
+Ermutigen Sie das Modell, seine Überlegungen Schritt für Schritt offenzulegen. Das verbessert die Genauigkeit bei arithmetischen, logischen und mehrstufigen Aufgaben.
 
 **Ohne CoT:**
 > "Was ist 24 × 37?"
@@ -70,37 +70,37 @@ Ermutigen Sie das Modell, seine Überlegungen Schritt für Schritt darzulegen. D
 **Mit CoT:**
 > "Berechnen Sie 24 × 37. Zeigen Sie Ihre Überlegungen Schritt für Schritt."
 
-Das Modell wird Zwischenschritte produzieren und dadurch Rechenfehler reduzieren.
+Das Modell erzeugt Zwischenschritte und reduziert dadurch Rechenfehler.
 
 ### Strukturierte Ausgaben
-Fordern Sie ein bestimmtes Format wie JSON, YAML oder Markdown-Tabellen an, um das Parsing zuverlässig zu machen.
-Benutzer: Listen Sie drei Vorteile und drei Nachteile von Microservices auf. Geben Sie nur ein gültiges JSON-Objekt mit den Schlüsseln "pros" und "cons" zurück, wobei jeder ein Array von Strings ist.
+Fordern Sie ein bestimmtes Format wie JSON, YAML oder Markdown-Tabellen an, damit die Ausgabe zuverlässig weiterverarbeitet werden kann.
+Benutzer: Nennen Sie drei Vorteile und drei Nachteile von Microservices. Geben Sie nur ein gültiges JSON-Objekt mit den Schlüsseln "pros" und "cons" zurück, wobei jeder Schlüssel ein Array aus Strings enthält.
 
 ---
 
 ## Fortgeschrittene Techniken
 
 ### Selbstkonsistenz
-Generieren Sie mehrere Antworten für dieselbe Aufforderung (mit einer Temperatur > 0) und bilden Sie eine Mehrheitsentscheidung über die endgültige Antwort. Dies ist besonders effektiv für reasoning tasks.
+Erzeugen Sie mehrere Antworten auf denselben Prompt (mit einer Temperatur > 0) und bestimmen Sie per Mehrheitsentscheidung die endgültige Antwort. Das ist besonders wirksam bei Aufgaben mit starkem reasoning-Anteil.
 
 ### Tree-of-Thoughts
-Erkunden Sie mehrere Denkwege parallel, bewerten Sie jeden und wählen Sie den besten aus. Dies ist eine Forschungstechnik, kann aber angenähert werden, indem man das Modell auffordert, "alternative Lösungen zu erkunden".
+Erkunden Sie mehrere Denkpfade parallel, bewerten Sie diese und wählen Sie anschließend den besten aus. Das ist eine Forschungstechnik, lässt sich aber annähern, indem man das Modell auffordert, „alternative Lösungen zu erkunden“.
 
 ### ReAct (Reasoning + Acting)
-Lassen Sie das Modell Überlegungen mit Tool-Aufrufen abwechseln. Es kann denken, dann handeln (z.B. das Web durchsuchen, Code ausführen), dann basierend auf dem Ergebnis wieder denken.
+Lassen Sie das Modell Überlegungen und Tool-Aufrufe abwechseln. Es kann erst denken, dann handeln (z. B. das Web durchsuchen oder Code ausführen) und auf Grundlage des Ergebnisses weiterdenken.
 
 **Prompt-Struktur:**
-Sie haben Zugriff auf einen Taschenrechner und eine Suchmaschine. Für jeden Schritt geben Sie aus:
+Sie haben Zugriff auf einen Taschenrechner und eine Suchmaschine. Geben Sie für jeden Schritt Folgendes aus:
 Thought: (Ihre Überlegung)
 Action: (Tool-Name, Eingabe)
 Observation: (Tool-Ausgabe)
 ... fahren Sie fort, bis Sie die endgültige Antwort haben.
 
 ### Persona-Zuweisung
-Weisen Sie eine spezifische Persona zu, um die Antwort zu rahmen.
+Weisen Sie dem Modell eine bestimmte Persona zu, um die Antwort passend zu rahmen.
 
 **Beispiele:**
-- "Sie sind ein Linux-Kernel-Entwickler, der einem Absolventen die Speicherverwaltung erklärt."
+- "Sie sind ein Linux-Kernel-Entwickler, der einem Berufseinsteiger die Speicherverwaltung erklärt."
 - "Sie sind eine freundliche Ernährungsberaterin, die einem Klienten allgemeine Ratschläge gibt."
 - "Sie sind ein zynischer Tech-Kritiker, der ein neues Gadget rezensiert."
 
@@ -108,11 +108,11 @@ Weisen Sie eine spezifische Persona zu, um die Antwort zu rahmen.
 
 ## Parameter-Tuning
 
-- **Temperatur** (0,0 – 1,0+): Steuert die Zufälligkeit. Niedriger = deterministischer, höher = kreativer. Verwenden Sie 0,0–0,3 für faktische Antworten; 0,7–1,0 für kreatives Schreiben.
-- **Top-p** (Nucleus Sampling): Schneidet die Wahrscheinlichkeitsmasse bei einem bestimmten kumulativen Schwellenwert ab. 0,9 bedeutet, dass das Modell aus den obersten 90% der wahrscheinlichen Tokens sampelt. Normalerweise passen Sie entweder die Temperatur oder top-p an, nicht beides.
-- **Max tokens**: Legt die maximale Ausgabelänge fest. Denken Sie daran, Platz für die Antwort innerhalb des Kontextfensters zu reservieren.
-- **Frequency penalty**: Reduziert die Wiederholung derselben Tokens.
-- **Presence penalty**: Ermutigt das Modell, neue Themen einzuführen.
+- **Temperatur** (0,0 – 1,0+): Steuert die Zufälligkeit. Niedriger = deterministischer, höher = kreativer. Verwenden Sie 0,0–0,3 für faktische Antworten und 0,7–1,0 für kreatives Schreiben.
+- **Top-p** (Nucleus Sampling): Schneidet die Wahrscheinlichkeitsmasse bei einem bestimmten kumulativen Schwellenwert ab. 0,9 bedeutet, dass das Modell aus den wahrscheinlichsten 90 % der Tokens sampelt. Normalerweise passt man entweder Temperatur oder top-p an, nicht beides.
+- **Max tokens**: Legt die maximale Ausgabelänge fest. Reservieren Sie im Kontextfenster genügend Platz für die Antwort.
+- **Frequency penalty**: Verringert die Wiederholung derselben Tokens.
+- **Presence penalty**: Ermutigt das Modell, neue Themen einzubringen.
 
 ---
 
@@ -120,12 +120,12 @@ Weisen Sie eine spezifische Persona zu, um die Antwort zu rahmen.
 
 | Problem | Wahrscheinliche Ursache | Lösung |
 |---------|--------------|-----|
-| Modell ignoriert Teile der Aufforderung | Aufforderung zu lang oder überladen | Kürzen; setzen Sie die wichtigste Anweisung ans Ende |
-| Ausgabe ist zu ausführlich | Keine Längeneinschränkung | Fügen Sie "Auf 3 Sätze beschränken" hinzu oder setzen Sie max_tokens |
-| Ausgabe ist zu kurz | Zu einschränkend | Fügen Sie "Ausführlich erklären" hinzu oder senken Sie die Temperatur |
-| Faktische Halluzinationen | Unzureichender Kontext oder unklare Frage | Fügen Sie "Wenn Sie unsicher sind, sagen Sie 'Ich weiß es nicht'" hinzu und stellen Sie einen RAG-Kontext bereit |
-| Inkonsistente Formatierung | Keine explizite Formatierungsanweisung | Fordern Sie JSON, Markdown-Tabelle oder Aufzählungsliste an |
-| Modell antwortet in falscher Sprache | Keine Sprachanweisung | Geben Sie explizit an "Antworten Sie auf Deutsch" (oder Ihre Zielsprache) |
+| Modell ignoriert Teile der Aufforderung | Prompt zu lang oder überladen | Kürzen; die wichtigste Anweisung ans Ende setzen |
+| Ausgabe ist zu ausführlich | Keine Längenbegrenzung | "Auf 3 Sätze beschränken" hinzufügen oder `max_tokens` setzen |
+| Ausgabe ist zu kurz | Zu stark eingeschränkt | "Ausführlicher erklären" hinzufügen oder die Temperatur erhöhen |
+| Faktische Halluzinationen | Unzureichender Kontext oder unklare Frage | "Wenn Sie unsicher sind, sagen Sie 'Ich weiß es nicht'" ergänzen und RAG-Kontext bereitstellen |
+| Inkonsistente Formatierung | Keine explizite Formatvorgabe | JSON, Markdown-Tabelle oder Aufzählungsliste verlangen |
+| Modell antwortet in der falschen Sprache | Keine Sprachvorgabe | Explizit anweisen: "Antworten Sie auf Deutsch" (oder in der gewünschten Sprache) |
 
 ---
 
@@ -145,37 +145,37 @@ Verwenden Sie Typ-Hinweise.
 
 Fügen Sie einen Docstring hinzu.
 
-Behandeln Sie Grenzfälle: [Liste].
+Behandeln Sie Randfälle: [Liste].
 
-Verwenden Sie keine externen Bibliotheken, sofern nicht angegeben.
+Verwenden Sie keine externen Bibliotheken, sofern nicht anders angegeben.
 
 
 ### Erklärung
-Erklären Sie [Konzept] für einen [Laien / Universitätsstudenten / Kind]. Verwenden Sie gegebenenfalls eine Analogie.
+Erklären Sie [Konzept] für einen [Laien / Universitätsstudenten / ein Kind]. Verwenden Sie bei Bedarf eine Analogie.
 
 ### Brainstorming
-Generieren Sie 10 Ideen für [Thema]. Geben Sie für jede Idee eine Ein-Satz-Beschreibung und eine potenzielle Herausforderung an.
+Generieren Sie 10 Ideen für [Thema]. Geben Sie zu jeder Idee eine Ein-Satz-Beschreibung und eine mögliche Herausforderung an.
 
-text
+Text
 
 ### Klassifizierung
 Klassifizieren Sie das folgende Kundenfeedback als [positiv, neutral, negativ].
-Geben Sie einen Konfidenzwert (0-100) und einen kurzen Grund an.
+Geben Sie einen Konfidenzwert (0–100) und eine kurze Begründung an.
 
 Feedback: [Text einfügen]
 
 ### Übersetzung mit Stil
-Übersetzen Sie den folgenden englischen Text ins Spanische. Verwenden Sie einen informellen Ton, der für einen Social-Media-Beitrag geeignet ist.
+Übersetzen Sie den folgenden englischen Text ins Spanische. Verwenden Sie einen informellen Ton, der sich für einen Social-Media-Beitrag eignet.
 Text: [Text einfügen]
 
 ---
 
-## Evaluation von Prompts
+## Bewertung von Prompts
 
-Behandeln Sie Prompts wie Code: versionieren Sie sie, testen Sie sie und iterieren Sie.
+Behandeln Sie Prompts wie Code: versionieren Sie sie, testen Sie sie und verbessern Sie sie iterativ.
 
-- **A/B-Test** verschiedener Prompt-Varianten auf einem zurückgehaltenen Satz von Abfragen.
-- **Erfolg messen** durch menschliche Bewertung oder automatisierte Metriken (z.B. exakte Übereinstimmung, BLEU, benutzerdefinierte Bewertung).
-- **Prompt-Registry führen** (eine einfache Textdatei oder Tabelle) mit dem Prompt, Version und beobachteter Leistung.
+- **A/B-Tests** verschiedener Prompt-Varianten auf einem zurückgehaltenen Satz von Abfragen.
+- **Erfolg messen** durch menschliche Bewertung oder automatisierte Metriken (z. B. exakte Übereinstimmung, BLEU, benutzerdefinierte Bewertung).
+- **Prompt-Registry führen** (z. B. als einfache Textdatei oder Tabelle) mit Prompt, Version und beobachteter Leistung.
 
 ---

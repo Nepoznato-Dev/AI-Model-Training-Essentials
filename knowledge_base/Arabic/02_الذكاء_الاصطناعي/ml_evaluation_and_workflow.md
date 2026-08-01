@@ -5,182 +5,182 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# التعلم الآلي Evaluation و Workflow
+# تقييم التعلم الآلي وسير العمل
 
-A practical دليل to ال ML lifecycle — from problem framing to production monitoring — مع a focus on metrics, validation, و debugging.
-
----
-
-## ال ML Workflow (CRISP-ML)
-
-1. **الأعمال Understanding**: Define ال objective و success criteria.
-2. **البيانات Understanding**: Explore متاح البيانات, identify quality issues.
-3. **البيانات Preparation**: Clean, transform, و split البيانات.
-4. **Modelling**: Train models, tune hyperparameters.
-5. **Evaluation**: Assess الأداء against metrics.
-6. **النشر**: Serve ال model في production.
-7. **Monitoring**: Track drift, الأداء, و anomalies.
-
-This is an iterative loop — you will revisit earlier steps based on evaluation results.
+دليل عملي لدورة حياة التعلم الآلي — من صياغة المشكلة إلى المراقبة في بيئة الإنتاج — مع التركيز على المقاييس، والتحقق، واستكشاف الأخطاء وإصلاحها.
 
 ---
 
-## البيانات Splitting
+## سير عمل التعلم الآلي (CRISP-ML)
 
-### Train / Validation / Test Split
-- **Training set** (~70%): Used to fit ال model parameters.
-- **Validation set** (~15%): Used to tune hyperparameters و select model variants.
-- **Test set** (~15%): Used only once at ال very end to estimate generalisation الأداء.
+1. **فهم الأعمال**: حدِّد الهدف ومعايير النجاح.
+2. **فهم البيانات**: استكشف البيانات المتاحة وحدِّد مشكلات الجودة.
+3. **إعداد البيانات**: نظِّف البيانات، وحوِّلها، وقسِّمها.
+4. **النمذجة**: درِّب النماذج واضبط المعلمات الفائقة.
+5. **التقييم**: قيِّم الأداء مقابل المقاييس.
+6. **النشر**: شغِّل النموذج في بيئة الإنتاج.
+7. **المراقبة**: تتبَّع الانجراف، والأداء، والحالات الشاذة.
 
-**Important:** ال test set must be kept completely untouched until final evaluation to avoid البيانات leakage.
-
-### Cross-Validation (k-fold)
-لأجل small datasets, use k-fold cross-validation: split البيانات into k folds, train on k-1, validate on ال remaining, و repeat k times. Average ال الأداء. k=5 or k=10 is common.
-
-### Stratified Splitting
-لأجل classification مع imbalanced classes, use stratified splits to preserve class proportions في each subset.
-
-### Time-Based Splitting
-لأجل time-series البيانات, split chronologically (train on past, test on المستقبل) rather than randomly.
+هذه عملية تكرارية — ستعود إلى الخطوات السابقة استنادًا إلى نتائج التقييم.
 
 ---
 
-## Evaluation Metrics
+## تقسيم البيانات
 
-### Classification Metrics
+### تقسيم التدريب / التحقق / الاختبار
+- **مجموعة التدريب** (~70%): تُستخدم لملاءمة معلمات النموذج.
+- **مجموعة التحقق** (~15%): تُستخدم لضبط المعلمات الفائقة واختيار متغيرات النموذج.
+- **مجموعة الاختبار** (~15%): تُستخدم مرة واحدة فقط في النهاية لتقدير أداء التعميم.
 
-| Metric | What it measures | Best used لأجل |
+**مهم:** يجب إبقاء مجموعة الاختبار دون أي مساس تمامًا حتى التقييم النهائي لتجنب تسرّب البيانات.
+
+### التحقق المتقاطع (k-fold)
+بالنسبة إلى مجموعات البيانات الصغيرة، استخدم التحقق المتقاطع بطريقة k-fold: قسِّم البيانات إلى k طيات، ودرِّب على k-1، وتحقق على الطية المتبقية، وكرِّر ذلك k مرات. ثم خذ متوسط الأداء. ويُعد k=5 أو k=10 شائعًا.
+
+### التقسيم الطبقي
+بالنسبة إلى التصنيف مع فئات غير متوازنة، استخدم التقسيم الطبقي للحفاظ على نسب الفئات في كل مجموعة فرعية.
+
+### التقسيم الزمني
+بالنسبة إلى بيانات السلاسل الزمنية، قسِّم البيانات زمنيًا (درِّب على الماضي واختبر على المستقبل) بدلًا من التقسيم العشوائي.
+
+---
+
+## مقاييس التقييم
+
+### مقاييس التصنيف
+
+| المقياس | ما الذي يقيسه | أفضل استخدام له |
 |--------|------------------|---------------|
-| **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | Balanced datasets |
-| **Precision** | TP / (TP + FP) | When false positives are costly (e.g., spam detection) |
-| **Recall** | TP / (TP + FN) | When false negatives are costly (e.g., cancer screening) |
-| **F1-score** | Harmonic mean من precision و recall | Imbalanced datasets, single-number metric |
-| **AUC-ROC** | Area under ال ROC curve; tradeoff between TPR و FPR | General classifier الأداء independent من threshold |
-| **AUC-PR** | Area under Precision-Recall curve | Highly imbalanced datasets |
+| **الدقة الكلية (Accuracy)** | (TP + TN) / (TP + TN + FP + FN) | مجموعات البيانات المتوازنة |
+| **دقة الإيجابيات (Precision)** | TP / (TP + FP) | عندما تكون الإيجابيات الكاذبة مكلفة (مثل كشف الرسائل المزعجة) |
+| **الاستدعاء (Recall)** | TP / (TP + FN) | عندما تكون السلبيات الكاذبة مكلفة (مثل فحوص السرطان) |
+| **درجة F1** | المتوسط التوافقي بين Precision و Recall | مجموعات البيانات غير المتوازنة، أو عند الحاجة إلى مقياس واحد مختصر |
+| **AUC-ROC** | المساحة تحت منحنى ROC؛ وتوضح المفاضلة بين TPR و FPR | الأداء العام للمصنِّف بصورة مستقلة عن العتبة |
+| **AUC-PR** | المساحة تحت منحنى Precision-Recall | مجموعات البيانات شديدة الاختلال |
 
-**Definitions:**
-- TP = True Positive
-- TN = True Negative
-- FP = False Positive (Type I error)
-- FN = False Negative (Type II error)
+**التعريفات:**
+- TP = إيجابي صحيح (True Positive)
+- TN = سلبي صحيح (True Negative)
+- FP = إيجابي كاذب (خطأ من النوع الأول)
+- FN = سلبي كاذب (خطأ من النوع الثاني)
 
-### Regression Metrics
+### مقاييس الانحدار
 
-| Metric | What it measures | Sensitivity to outliers |
+| المقياس | ما الذي يقيسه | الحساسية للقيم الشاذة |
 |--------|------------------|--------------------------|
-| **MSE** (Mean Squared Error) | Average squared difference | High |
-| **RMSE** (Root Mean Squared Error) | Square root من MSE (same units as target) | High |
-| **MAE** (Mean Absolute Error) | Average absolute difference | Low |
-| **R²** (Coefficient من Determination) | Proportion من variance explained | None directly, but sensitive to outliers indirectly |
+| **MSE** (متوسط مربع الخطأ) | متوسط الفرق المربّع | مرتفعة |
+| **RMSE** (الجذر التربيعي لمتوسط مربع الخطأ) | الجذر التربيعي لـ MSE (بنفس وحدات الهدف) | مرتفعة |
+| **MAE** (متوسط الخطأ المطلق) | متوسط الفرق المطلق | منخفضة |
+| **R²** (معامل التحديد) | نسبة التباين التي يفسرها النموذج | لا توجد مباشرة، لكنه حساس للقيم الشاذة بصورة غير مباشرة |
 
-### Ranking و Retrieval Metrics
-- **Precision@k**: Fraction من relevant items among top-k recommendations.
-- **Recall@k**: Fraction من all relevant items that appear في top-k.
-- **NDCG** (Normalised Discounted Cumulative Gain): Accounts لأجل position relevance.
-- **Hit Rate**: Whether a relevant item appears في ال top-k.
+### مقاييس الترتيب والاسترجاع
+- **Precision@k**: نسبة العناصر ذات الصلة ضمن أعلى k توصيات.
+- **Recall@k**: نسبة جميع العناصر ذات الصلة التي تظهر ضمن أعلى k نتائج.
+- **NDCG** (المكسب التراكمي المخصوم المُطبَّع): يراعي أهمية موضع العنصر.
+- **معدل الإصابة (Hit Rate)**: ما إذا كان عنصر ذو صلة يظهر ضمن أعلى k نتائج.
 
-### Generative / LLM Metrics
-- **Perplexity**: How "surprised" ال model is by a held-out text (lower is better).
-- **BLEU**: n-gram overlap مع مرجع translations (precision-focused).
-- **ROUGE**: Recall-oriented overlap لأجل summarisation.
-- **BERTScore**: Semantic similarity using contextual embeddings (more robust than BLEU).
-- **METEOR**: Aligns to WordNet synonyms و stems.
-
----
-
-## Evaluation Pitfalls
-
-### البيانات Leakage
-Occurs when information from ال test set inadvertently influences training.
-- **Prevent:** Never use test البيانات لأجل feature engineering, normalisation, or hyperparameter tuning.
-- **Detect:** If your model scores suspiciously high, suspect leakage.
-
-### Overfitting
-Model performs well on training البيانات but poorly on validation/test.
-- **Mitigate:** Use regularisation, early stopping, simplify العمارة, or collect more البيانات.
-
-### Underfitting
-Model performs poorly on both training و validation.
-- **Mitigate:** Use a more complex model, add features, or reduce regularisation.
-
-### Imbalanced البيانات
-- **Mitigate:** Use class weights, oversample (SMOTE), undersample, or use appropriate metrics (F1, AUC-PR) rather than accuracy.
-
-### Temporal Drift (Concept Drift)
-ال relationship between features و target changes over time.
-- **Mitigate:** Retrain periodically, monitor الأداء, use drift detection algorithms.
+### مقاييس النماذج التوليدية / نماذج اللغة الكبيرة
+- **Perplexity**: مدى "دهشة" النموذج من نص محجوب عنه أثناء التدريب (كلما انخفض كان أفضل).
+- **BLEU**: مقدار تداخل n-gram مع الترجمات المرجعية (يركز على الدقة).
+- **ROUGE**: مقياس تداخل موجَّه نحو الاستدعاء ومفيد للتلخيص.
+- **BERTScore**: تشابه دلالي باستخدام تمثيلات سياقية مضمَّنة (أكثر متانة من BLEU).
+- **METEOR**: يحاذي المرادفات والجذور اعتمادًا على WordNet.
 
 ---
 
-## Hyperparameter Tuning
+## أخطاء شائعة في التقييم
 
-- **Grid Search**: Exhaustively try all combinations من a predefined set من hyperparameters. Simple but computationally expensive.
-- **Random Search**: Sample random combinations from distributions. More efficient than grid search لأجل high-dimensional spaces.
-- **Bayesian Optimisation**: Builds a probabilistic model من ال objective function و selects hyperparameters intelligently. Libraries: Optuna, Hyperopt, scikit-optimise.
-- **Automated Tuning**: Use tools like Optuna, Ray Tune, or Weights & Biases Sweeps لأجل distributed tuning.
+### تسرّب البيانات
+يحدث عندما تؤثر معلومات من مجموعة الاختبار، من دون قصد، في التدريب.
+- **الوقاية:** لا تستخدم بيانات الاختبار مطلقًا في هندسة السمات، أو التطبيع، أو ضبط المعلمات الفائقة.
+- **الاكتشاف:** إذا كانت درجات النموذج مرتفعة على نحو يثير الشك، فافترض وجود تسرّب.
 
-**Suggested search ranges لأجل common hyperparameters:**
+### فرط التخصيص
+يؤدي النموذج أداءً جيدًا على بيانات التدريب لكنه يضعف على التحقق/الاختبار.
+- **التخفيف:** استخدم التنظيم، أو الإيقاف المبكر، أو بسِّط البنية، أو اجمع مزيدًا من البيانات.
 
-| Parameter | Suggested range (log-scale) |
+### نقص التخصيص
+يؤدي النموذج أداءً ضعيفًا على التدريب والتحقق معًا.
+- **التخفيف:** استخدم نموذجًا أكثر تعقيدًا، أو أضف سمات، أو قلِّل التنظيم.
+
+### اختلال توازن البيانات
+- **التخفيف:** استخدم أوزان الفئات، أو زيادة العينات (SMOTE)، أو تقليل العينات، أو استخدم مقاييس مناسبة مثل F1 و AUC-PR بدلًا من الدقة الكلية.
+
+### الانجراف الزمني (Concept Drift)
+تتغير العلاقة بين السمات والهدف مع مرور الوقت.
+- **التخفيف:** أعد التدريب دوريًا، وراقب الأداء، واستخدم خوارزميات اكتشاف الانجراف.
+
+---
+
+## ضبط المعلمات الفائقة
+
+- **البحث الشبكي (Grid Search)**: جرِّب جميع التركيبات الممكنة من مجموعة معرَّفة مسبقًا من المعلمات الفائقة. هذا الأسلوب بسيط لكنه مرتفع الكلفة حسابيًا.
+- **البحث العشوائي (Random Search)**: خذ عينات عشوائية من توزيعات المعلمات. وهو أكثر كفاءة من البحث الشبكي في المساحات عالية الأبعاد.
+- **التحسين البايزي (Bayesian Optimisation)**: يبني نموذجًا احتماليًا لدالة الهدف ويختار المعلمات الفائقة بذكاء. من المكتبات الشائعة: Optuna و Hyperopt و scikit-optimise.
+- **الضبط الآلي**: استخدم أدوات مثل Optuna أو Ray Tune أو Weights & Biases Sweeps لإجراء الضبط الموزع.
+
+**نطاقات البحث المقترحة للمعلمات الفائقة الشائعة:**
+
+| المعامل | النطاق المقترح (مقياس لوغاريتمي) |
 |-----------|-----------------------------|
-| Learning rate | 1e-5 to 1e-1 |
-| Batch size | 16, 32, 64, 128, 256 |
-| Number من layers (NN) | 2 to 6 |
-| Number من neurons (NN) | 32 to 1024 |
-| Regularisation (L2) | 1e-6 to 1e-2 |
-| Tree depth (XGBoost) | 3 to 12 |
+| معدل التعلّم | 1e-5 إلى 1e-1 |
+| حجم الدفعة | 16, 32, 64, 128, 256 |
+| عدد الطبقات (NN) | 2 إلى 6 |
+| عدد العصبونات (NN) | 32 إلى 1024 |
+| التنظيم (L2) | 1e-6 إلى 1e-2 |
+| عمق الشجرة (XGBoost) | 3 إلى 12 |
 
 ---
 
-## Model Selection و Validation
+## اختيار النموذج والتحقق
 
-1. **Baseline model**: Start مع a simple heuristic or simple model (e.g., logistic regression, mean predictor) to establish a lower bound.
-2. **Candidate models**: Train multiple model families (e.g., Random Forest, XGBoost, Neural الشبكة).
-3. **Cross-validate** each candidate on ال validation set.
-4. **Compare metrics** (مع confidence intervals) و select ال best candidate.
-5. **Final evaluation** on ال held-out test set.
-6. **Error analysis**: Look at أمثلة ال model gets wrong. Identify patterns (e.g., rare classes, ambiguous inputs) و feed insights back into البيانات preparation or feature engineering.
-
----
-
-## النشر و Monitoring
-
-### Serving Patterns
-- **Batch inference**: Process large volumes من البيانات offline (e.g., nightly recommendations).
-- **Online inference**: Real-time predictions via API (e.g., credit scoring, fraud detection).
-- **Streaming inference**: Event-driven, real-time مع low latency (e.g., IoT sensor alerts).
-
-### Model Monitoring
-- **الأداء monitoring**: Track accuracy/F1 over time on live البيانات (when ground truth is متاح).
-- **البيانات drift**: Monitor changes في input feature distributions (e.g., using PSI – Population Stability Index).
-- **Concept drift**: Monitor changes في ال relationship between inputs و outputs.
-- **Prediction drift**: Track ال distribution من predicted outputs.
-- **Latency و throughput**: Ensure SLAs (Service Level Agreements) are met.
-
-### Logging و Alerting
-- Log all prediction requests و responses (مع anonymisation).
-- Set alerts لأجل:
-  - Significant drop في الأداء.
-  - High percentage من missing or invalid inputs.
-  - Model outputs outside expected bounds.
-
-### Model Versioning و Registry
-- Use a model registry (e.g., MLflow, Weights & Biases, Sagemaker Model Registry) to store و version models, metadata, و evaluation results.
-- Store ال training code و البيانات version (via DVC or Git LFS) alongside ال model.
+1. **النموذج الأساسي**: ابدأ باستدلال بسيط أو نموذج بسيط (مثل الانحدار اللوجستي أو متنبئ المتوسط) لوضع حد أدنى مرجعي.
+2. **النماذج المرشحة**: درِّب عدة عائلات من النماذج (مثل Random Forest و XGBoost والشبكات العصبية).
+3. **أجرِ تحققًا متقاطعًا** لكل نموذج مرشح على مجموعة التحقق.
+4. **قارن المقاييس** (مع فترات الثقة) واختر أفضل مرشح.
+5. **التقييم النهائي** على مجموعة الاختبار المحجوزة.
+6. **تحليل الأخطاء**: انظر إلى الأمثلة التي يخطئ فيها النموذج. حدِّد الأنماط (مثل الفئات النادرة أو المدخلات الملتبسة) وأعِد توظيف هذه الرؤى في إعداد البيانات أو هندسة السمات.
 
 ---
 
-## Practical Workflow Checklist
+## النشر والمراقبة
 
-- [ ] Problem framed و success metric defined.
-- [ ] البيانات exploration performed (missing values, outliers, distribution).
-- [ ] Train/validation/test split created (stratified if needed).
-- [ ] Baseline model established.
-- [ ] Candidate models trained و validated.
-- [ ] Hyperparameters tuned.
-- [ ] Best model selected via cross-validation.
-- [ ] Final evaluation on test set.
-- [ ] Error analysis performed.
-- [ ] النشر plan ready (serving infrastructure).
-- [ ] Monitoring dashboard set up.
-- [ ] Documentation (البيانات card, model card) completed.
+### أنماط تقديم النموذج
+- **الاستدلال الدفعي (Batch inference)**: عالج كميات كبيرة من البيانات دون اتصال مباشر (مثل التوصيات الليلية).
+- **الاستدلال عبر الإنترنت (Online inference)**: تنبؤات آنية عبر واجهة API (مثل التقييم الائتماني وكشف الاحتيال).
+- **الاستدلال المتدفق (Streaming inference)**: استدلال لحظي موجَّه بالأحداث مع زمن استجابة منخفض (مثل تنبيهات حساسات إنترنت الأشياء).
+
+### مراقبة النموذج
+- **مراقبة الأداء**: تتبَّع الدقة الكلية وF1 بمرور الوقت على البيانات الحية (عندما تكون القيم الحقيقية متاحة).
+- **انجراف البيانات**: راقب التغيرات في توزيعات سمات الإدخال (مثل استخدام PSI، أي مؤشر استقرار المجتمع الإحصائي).
+- **انجراف المفهوم**: راقب التغيرات في العلاقة بين المدخلات والمخرجات.
+- **انجراف التنبؤات**: تتبَّع توزيع المخرجات المتنبأ بها.
+- **زمن الاستجابة ومعدل الإنجاز**: تأكد من الوفاء باتفاقيات مستوى الخدمة (SLAs).
+
+### التسجيل والتنبيه
+- سجِّل جميع طلبات التنبؤ والاستجابات (مع إخفاء الهوية).
+- اضبط تنبيهات من أجل:
+  - انخفاض كبير في الأداء.
+  - نسبة مرتفعة من المدخلات المفقودة أو غير الصالحة.
+  - مخرجات نموذج تقع خارج الحدود المتوقعة.
+
+### إصدار النماذج وسجلها
+- استخدم سجلًا للنماذج (مثل MLflow أو Weights & Biases أو Sagemaker Model Registry) لتخزين النماذج وإصدارها وبياناتها الوصفية ونتائج التقييم.
+- خزِّن شيفرة التدريب وإصدار البيانات (عبر DVC أو Git LFS) إلى جانب النموذج.
+
+---
+
+## قائمة تحقق عملية لسير العمل
+
+- [ ] تمت صياغة المشكلة وتحديد مقياس النجاح.
+- [ ] أُجري استكشاف البيانات (القيم المفقودة، والقيم الشاذة، والتوزيع).
+- [ ] أُنشئ تقسيم التدريب/التحقق/الاختبار (بطريقة طبقية عند الحاجة).
+- [ ] جرى تحديد نموذج أساسي.
+- [ ] دُرِّبت النماذج المرشحة وتم التحقق منها.
+- [ ] ضُبطت المعلمات الفائقة.
+- [ ] اختير أفضل نموذج عبر التحقق المتقاطع.
+- [ ] أُجري التقييم النهائي على مجموعة الاختبار.
+- [ ] أُجري تحليل الأخطاء.
+- [ ] أصبحت خطة النشر جاهزة (بنية تقديم الخدمة).
+- [ ] جرى إعداد لوحة متابعة للمراقبة.
+- [ ] اكتمل التوثيق (بطاقة البيانات، وبطاقة النموذج).

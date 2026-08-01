@@ -11,7 +11,7 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 Physik ist die Naturwissenschaft, die Materie, Energie und die fundamentalen Kräfte des Universums untersucht. Die vier fundamentalen Kräfte sind Gravitation, Elektromagnetismus, die starke Kernkraft und die schwache Kernkraft. Die Gravitation ist die schwächste der vier Kräfte, hat aber eine unendliche Reichweite und beeinflusst alle Objekte mit Masse. Newtons Gravitationsgesetz besagt, dass jedes Objekt jedes andere Objekt mit einer Kraft anzieht, die proportional zu ihren Massen und umgekehrt proportional zum Quadrat des Abstands zwischen ihnen ist.
 
-Einsteins allgemeine Relativitätstheorie beschreibt die Gravitation als eine Krümmung der Raumzeit, die durch Masse und Energie verursacht wird. Einsteins spezielle Relativitätstheorie stellte fest, dass die Lichtgeschwindigkeit in allen Inertialsystemen konstant ist und dass Masse und Energie äquivalent sind, ausgedrückt als E = mc².
+Einsteins allgemeine Relativitätstheorie beschreibt die Gravitation als eine Krümmung der Raumzeit, die durch Masse und Energie verursacht wird. Einsteins spezielle Relativitätstheorie besagt, dass die Lichtgeschwindigkeit in allen Inertialsystemen konstant ist und dass Masse und Energie äquivalent sind, ausgedrückt als E = mc².
 
 ## Atome und Materie
 

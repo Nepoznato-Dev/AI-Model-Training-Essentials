@@ -7,212 +7,212 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 # Geographie und Geopolitik
 
-## Physical Geographie
+## Physische Geographie
 
-### Continents und Major Regions
-- **Africa**: 54 countries, diverse climates from Sahara Desert to tropical rainforests, Nile River (longest river)
-- **Antarctica**: Southernmost continent, ice-covered, research stations, no permanent residents
-- **Asia**: Largest continent, includes Middle East, Central Asia, East Asia, South Asia, Southeast Asia
-- **Europe**: Western peninsula von Eurasia, diverse cultures, European Union political bloc
-- **North America**: Canada, United States, Mexico, Central American isthmus, Caribbean islands
-- **Oceania**: Australia, New Zealand, Pacific island nations (Melanesia, Micronesia, Polynesia)
-- **South America**: Andes Mountains, Amazon Rainforest, 12 sovereign nations
+### Kontinente und große Regionen
+- **Afrika**: 54 Länder, vielfältige Klimazonen von der Sahara bis zu tropischen Regenwäldern, Nil als längster Fluss
+- **Antarktika**: Südlichster Kontinent, eisbedeckt, Forschungsstationen, keine ständige Bevölkerung
+- **Asien**: Größter Kontinent, umfasst den Nahen Osten, Zentralasien, Ostasien, Südasien und Südostasien
+- **Europa**: Westliche Halbinsel Eurasiens, kulturell vielfältig, mit der Europäischen Union als politischem Staatenverbund
+- **Nordamerika**: Kanada, Vereinigte Staaten, Mexiko, mittelamerikanische Landenge und karibische Inseln
+- **Ozeanien**: Australien, Neuseeland und pazifische Inselstaaten (Melanesien, Mikronesien, Polynesien)
+- **Südamerika**: Anden, Amazonas-Regenwald, 12 souveräne Staaten
 
-### Major Mountain Ranges
-- **Himalayas**: Asia, highest peaks including Mount Everest (8,849m), formed by Indian-Eurasian plate collision
-- **Andes**: South America, longest continental mountain range (~7,000km), volcanic activity
-- **Rocky Mountains**: North America, extends from Canada to New Mexico
-- **Alps**: Europe, central European range, major tourism und skiing destination
-- **Atlas Mountains**: North Africa, Morocco to Tunisia, separates Mediterranean from Sahara
-- **Ural Mountains**: Russia, traditional boundary between Europe und Asia
+### Große Gebirgszüge
+- **Himalaya**: Asien, höchste Gipfel einschließlich Mount Everest (8.849 m), entstanden durch die Kollision der indischen mit der eurasischen Platte
+- **Anden**: Südamerika, längstes kontinentales Gebirge (~7.000 km), starke vulkanische Aktivität
+- **Rocky Mountains**: Nordamerika, erstrecken sich von Kanada bis New Mexico
+- **Alpen**: Europa, zentrales europäisches Gebirge, wichtiges Tourismus- und Skigebiet
+- **Atlasgebirge**: Nordafrika, von Marokko bis Tunesien, trennt Mittelmeerraum und Sahara
+- **Uralgebirge**: Russland, traditionelle Grenze zwischen Europa und Asien
 
-### Major Rivers
-- **Nile**: Northeast Africa, ~6,650km, flows through 11 countries to Mediterranean
-- **Amazon**: South America, largest by discharge volume, Amazon Basin biodiversity
-- **Yangtze**: China, longest in Asia, Three Gorges Dam
-- **Mississippi-Missouri**: North America, major drainage system von United States
-- **Ganges**: India/Bangladesh, sacred river, densely populated basin
-- **Danube**: Europe, flows through 10 countries, important trade route
+### Große Flüsse
+- **Nil**: Nordostafrika, ~6.650 km, fließt durch 11 Länder ins Mittelmeer
+- **Amazonas**: Südamerika, weltweit größter Fluss nach Abflussmenge, Zentrum einer enormen Artenvielfalt
+- **Jangtse**: China, längster Fluss Asiens, Standort des Drei-Schluchten-Staudamms
+- **Mississippi-Missouri**: Nordamerika, zentrales Entwässerungssystem der Vereinigten Staaten
+- **Ganges**: Indien/Bangladesch, heiliger Fluss, dicht besiedeltes Einzugsgebiet
+- **Donau**: Europa, fließt durch 10 Länder, wichtige Handelsroute
 
-### Deserts
-- **Sahara**: North Africa, largest hot desert (~9.2 million km²)
-- **Arabian Desert**: Middle East, covers most von Arabian Peninsula
-- **Gobi**: East Asia, China/Mongolia, cold desert
-- **Kalahari**: Southern Africa, semi-arid savanna
-- **Antarctic Desert**: Largest desert overall (cold desert)
-- **Atacama**: South America, driest non-polar desert
+### Wüsten
+- **Sahara**: Nordafrika, größte heiße Wüste (~9,2 Millionen km²)
+- **Arabische Wüste**: Naher Osten, bedeckt den größten Teil der Arabischen Halbinsel
+- **Gobi**: Ostasien, China/Mongolei, kalte Wüste
+- **Kalahari**: Südliches Afrika, halbtrockene Savanne
+- **Antarktische Wüste**: Größte Wüste insgesamt, allerdings eine Kältewüste
+- **Atacama**: Südamerika, trockenste nichtpolare Wüste
 
-### Climate Zones
-- **Tropical**: Near equator, warm year-round, high rainfall (rainforests, monsoons)
-- **Arid/Subtropical**: Hot summers, mild winters, low precipitation (deserts)
-- **Temperate**: Moderate temperatures, distinct seasons (Mediterranean, oceanic, humid continental)
-- **Continental**: Large temperature variations, cold winters (interior continents)
-- **Polar**: Extremely cold, ice caps, tundra (Arctic, Antarctic)
-- **Highland**: Varies mit elevation, cooler at altitude
+### Klimazonen
+- **Tropisch**: Nahe am Äquator, ganzjährig warm, hohe Niederschläge (Regenwälder, Monsungebiete)
+- **Arid/Subtropisch**: Heiße Sommer, milde Winter, geringe Niederschläge (Wüsten)
+- **Gemäßigt**: Mäßige Temperaturen, ausgeprägte Jahreszeiten (Mittelmeerklima, ozeanisch, feucht-kontinental)
+- **Kontinental**: Große Temperaturschwankungen, kalte Winter (Binnenlagen der Kontinente)
+- **Polar**: Extrem kalt, Eiskappen, Tundra (Arktis, Antarktis)
+- **Hochland**: Stark von der Höhe abhängig, in großen Höhen kühler
 
-## Human Geographie
+## Humangeographie
 
-### Population Distribution
-- **Most Populous Countries** (2024): India (~1.43B), China (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
-- **Population Density**: Monaco (highest), Macau, Singapore, Hong Kong, Bahrain
-- **Urbanization**: Over 55% global population lives in cities, projected 68% by 2050
-- **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijing, Dhaka, Osaka
+### Bevölkerungsverteilung
+- **Bevölkerungsreichste Länder** (2024): Indien (~1,43 Mrd.), China (~1,42 Mrd.), USA (~340 Mio.), Indonesien (~280 Mio.), Pakistan (~240 Mio.)
+- **Bevölkerungsdichte**: Monaco (höchste), Macau, Singapur, Hongkong, Bahrain
+- **Urbanisierung**: Mehr als 55 % der Weltbevölkerung leben in Städten; bis 2050 werden etwa 68 % erwartet
+- **Megastädte** (10 Mio.+): Tokio, Delhi, Shanghai, São Paulo, Mexiko-Stadt, Kairo, Mumbai, Peking, Dhaka, Osaka
 
-### Languages
-- **Most Spoken** (native + second Sprache): Englisch (~1.5B), Mandarin Chinese (~1.1B), Hindi (~600M), Spanish (~550M), French (~300M), Arabic (~275M)
-- **Sprache Families**: Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian, Niger-Congo
-- **Endangered Languages**: UNESCO estimates 40% von languages at risk von extinction
+### Sprachen
+- **Am meisten gesprochen** (Muttersprachler + Zweitsprache): Englisch (~1,5 Mrd.), Mandarin-Chinesisch (~1,1 Mrd.), Hindi (~600 Mio.), Spanisch (~550 Mio.), Französisch (~300 Mio.), Arabisch (~275 Mio.)
+- **Sprachfamilien**: Indogermanisch, Sinotibetisch, Afroasiatisch, Austronesisch, Niger-Kongo
+- **Bedrohte Sprachen**: Die UNESCO schätzt, dass rund 40 % aller Sprachen vom Aussterben bedroht sind
 
-### Economic Geographie
-- **GDP Leaders**: USA, China, Japan, Germany, India, UK, France, Italy, Brazil, Canada
-- **Trade Blocs**: EU (European Union), USMCA (US-Mexico-Canada), ASEAN (Southeast Asia), Mercosur (South America), African Continental Free Trade Area
-- **Resource Distribution**: Oil (Middle East, Russia, USA), Natural Gas (Russia, Iran, Qatar), Rare Earth Elements (China dominant), Lithium (Australia, Chile, Argentina)
+### Wirtschaftsgeographie
+- **BIP-Spitzenreiter**: USA, China, Japan, Deutschland, Indien, Vereinigtes Königreich, Frankreich, Italien, Brasilien, Kanada
+- **Handelsblöcke**: EU (Europäische Union), USMCA (USA-Mexiko-Kanada), ASEAN (Südostasien), Mercosur (Südamerika), Afrikanische Kontinentale Freihandelszone
+- **Ressourcenverteilung**: Öl (Naher Osten, Russland, USA), Erdgas (Russland, Iran, Katar), Seltene Erden (China dominiert), Lithium (Australien, Chile, Argentinien)
 
-## Political Geographie
+## Politische Geographie
 
-### Types von Governments
-- **Democracy**: Power held by people through voting (representative, direct)
-- **Republic**: State without monarchy, representatives elected
-- **Monarchy**: Ruled by king/queen (constitutional, absolute)
-- **Authoritarian**: Limited political freedom, centralized power
-- **Totalitarian**: Vollständig state control over public und private life
-- **Federal**: Power divided between national und regional governments
-- **Unitary**: Centralized government, regional authorities subordinate
+### Regierungsformen
+- **Demokratie**: Macht liegt beim Volk durch Wahlen (repräsentativ oder direkt)
+- **Republik**: Staat ohne Monarchie, mit gewählten Vertretern
+- **Monarchie**: Herrschaft durch König oder Königin (konstitutionell oder absolut)
+- **Autoritär**: Begrenzte politische Freiheit, zentralisierte Macht
+- **Totalitär**: Umfassende staatliche Kontrolle über öffentliches und privates Leben
+- **Föderal**: Macht zwischen nationaler und regionaler Ebene aufgeteilt
+- **Einheitsstaat**: Zentralisierte Regierung, regionale Behörden sind untergeordnet
 
-### International Organizations
-- **United Nations (UN)**: 193 member states, peacekeeping, humanitarian aid, international Recht
-- **NATO**: North Atlantic Treaty Organization, military alliance (32 members as von 2024)
-- **European Union (EU)**: 27 member states, economic und political union, euro currency (20 members)
-- **World Trade Organization (WTO)**: Regulates international trade
-- **World Health Organization (WHO)**: Global public health coordination
-- **International Monetary Fund (IMF)**: Financial stability, loans to countries
-- **World Bank**: Entwicklung financing, poverty reduction
-- **G7/G20**: Economic cooperation forums
+### Internationale Organisationen
+- **United Nations (UN)**: 193 Mitgliedstaaten, Friedenssicherung, humanitäre Hilfe, internationales Recht
+- **NATO**: Nordatlantisches Bündnis, Militärallianz (32 Mitglieder im Jahr 2024)
+- **European Union (EU)**: 27 Mitgliedstaaten, wirtschaftliche und politische Union, Euro als Währung in 20 Mitgliedsländern
+- **World Trade Organization (WTO)**: Regelt den internationalen Handel
+- **World Health Organization (WHO)**: Koordiniert globale öffentliche Gesundheit
+- **International Monetary Fund (IMF)**: Finanzstabilität und Kredite für Staaten
+- **World Bank**: Entwicklungsfinanzierung und Armutsbekämpfung
+- **G7/G20**: Foren für wirtschaftliche Zusammenarbeit
 
-### Geopolitical Concepts
-- **Sovereignty**: Supreme authority within territory
-- **Borders**: Political boundaries (natural, artificial, disputed)
-- **Exclusive Economic Zone (EEZ)**: 200 nautical miles from coast, resource rights
-- **Territorial Waters**: 12 nautical miles from baseline, full sovereignty
-- **Enclave**: Territory surrounded by another state (e.g., Lesotho, Vatican City)
-- **Exclave**: Part von country separated from main territory (e.g., Kaliningrad, Alaska)
-- **Buffer State**: Country between rival powers (historical: Afghanistan, Mongolia)
-- **Heartland Theory**: Control von Eastern Europe controls Heartland, controls World Island (Eurasia-Africa)
-- **Rimland Theory**: Coastal regions more important than interior
+### Geopolitische Konzepte
+- **Souveränität**: Höchste Autorität innerhalb eines Territoriums
+- **Grenzen**: Politische Trennlinien (natürlich, künstlich, umstritten)
+- **Ausschließliche Wirtschaftszone (EEZ)**: 200 Seemeilen vor der Küste, mit besonderen Rohstoffrechten
+- **Küstenmeer**: 12 Seemeilen ab der Basislinie, unter voller Souveränität des Staates
+- **Enklave**: Gebiet, das vollständig von einem anderen Staat umgeben ist (z. B. Lesotho, Vatikanstadt)
+- **Exklave**: Teil eines Landes, der vom Hauptgebiet getrennt ist (z. B. Kaliningrad, Alaska)
+- **Pufferstaat**: Staat zwischen rivalisierenden Mächten (historisch z. B. Afghanistan, Mongolei)
+- **Heartland-Theorie**: Wer Osteuropa kontrolliert, beherrscht das Heartland und damit die „Weltinsel“ Eurasien-Afrika
+- **Rimland-Theorie**: Küstenregionen sind geopolitisch wichtiger als das Binnenland
 
-## Regional Studies
+## Regionale Studien
 
-### Middle East und North Africa (MENA)
-- **Key Issues**: Oil resources, water scarcity, religious conflicts (Sunni-Shia), Arab-Israeli conflict
-- **Major Powers**: Saudi Arabia, Iran, Turkey, Israel, Egypt, UAE
-- **Conflicts**: Syrian Civil War, Yemen War, Israeli-Palestinian conflict, Kurdish independence movements
-- **Resources**: ~48% von world's proven oil reserves, natural gas
+### Naher Osten und Nordafrika (MENA)
+- **Zentrale Themen**: Ölvorkommen, Wasserknappheit, religiöse Konflikte (Sunniten-Schiiten), arabisch-israelischer Konflikt
+- **Wichtige Mächte**: Saudi-Arabien, Iran, Türkei, Israel, Ägypten, Vereinigte Arabische Emirate
+- **Konflikte**: Syrischer Bürgerkrieg, Krieg im Jemen, israelisch-palästinensischer Konflikt, kurdische Unabhängigkeitsbewegungen
+- **Ressourcen**: Rund 48 % der nachgewiesenen weltweiten Ölreserven sowie große Erdgasvorkommen
 
-### Asia-Pacific
-- **East Asia**: China (rising superpower), Japan (economic powerhouse), South Korea (Technologie leader), North Korea (nuclear tensions)
-- **South Asia**: India (demographic giant), Pakistan (nuclear state), Bangladesh (rapid growth)
-- **Southeast Asia**: ASEAN cooperation, South China Sea disputes, economic growth
-- **Key Tensions**: Taiwan Strait, Korean Peninsula, India-China border, South China Sea
+### Asien-Pazifik
+- **Ostasien**: China (aufstrebende Supermacht), Japan (Wirtschaftsmacht), Südkorea (Technologieführer), Nordkorea (nukleare Spannungen)
+- **Südasien**: Indien (demografischer Gigant), Pakistan (Atomstaat), Bangladesch (rasches Wachstum)
+- **Südostasien**: ASEAN-Kooperation, Konflikte im Südchinesischen Meer, wirtschaftliches Wachstum
+- **Wichtige Spannungsfelder**: Taiwanstraße, Koreanische Halbinsel, indisch-chinesische Grenze, Südchinesisches Meer
 
-### Europe
-- **European Integration**: EU expansion, Brexit (UK left 2020), eurozone challenges
-- **Russia-Ukraine Conflict**: 2022 invasion, NATO expansion, energy dependence
-- **Balkan Region**: Post-Yugoslav states, EU accession processes
-- **Caucasus**: Armenia-Azerbaijan conflicts, Russian influence
+### Europa
+- **Europäische Integration**: EU-Erweiterung, Brexit (Austritt des Vereinigten Königreichs 2020), Herausforderungen der Eurozone
+- **Russland-Ukraine-Konflikt**: Invasion 2022, NATO-Erweiterung, Energieabhängigkeit
+- **Balkanregion**: Nachfolgestaaten Jugoslawiens, EU-Beitrittsprozesse
+- **Kaukasus**: Konflikte zwischen Armenien und Aserbaidschan, russischer Einfluss
 
-### Americas
-- **North America**: US-Canada-Mexico relations, immigration, trade (USMCA)
-- **Latin America**: Inequality, drug trafficking, populist movements, Venezuela crisis
-- **Caribbean**: Tourism-dependent economies, climate vulnerability, Cuban embargo
+### Amerika
+- **Nordamerika**: Beziehungen zwischen USA, Kanada und Mexiko, Migration, Handel (USMCA)
+- **Lateinamerika**: Ungleichheit, Drogenhandel, populistische Bewegungen, Krise in Venezuela
+- **Karibik**: Vom Tourismus abhängige Volkswirtschaften, Anfälligkeit für den Klimawandel, Embargo gegen Kuba
 
-### Africa
-- **Colonial Legacy**: Artificial borders, ethnic divisions, Sprache policies
-- **Entwicklung Challenges**: Poverty, infrastructure, governance, debt
-- **Rising Powers**: Nigeria (largest economy), South Africa (industrialized), Ethiopia (fast-growing)
-- **Regional Issues**: Sahel instability, Horn von Africa conflicts, Great Lakes region
+### Afrika
+- **Koloniales Erbe**: Künstlich gezogene Grenzen, ethnische Spannungen, Sprachpolitik
+- **Entwicklungsherausforderungen**: Armut, Infrastruktur, Regierungsführung, Verschuldung
+- **Aufstrebende Mächte**: Nigeria (größte Volkswirtschaft), Südafrika (industrialisiert), Äthiopien (schnell wachsend)
+- **Regionale Themen**: Instabilität im Sahel, Konflikte am Horn von Afrika, Region der Großen Seen
 
-## Contemporary Geopolitical Issues
+## Gegenwärtige geopolitische Fragen
 
-### Climate Change und Geographie
-- **Rising Sea Levels**: Threatens island nations (Maldives, Tuvalu), coastal cities
-- **Arctic Melting**: New shipping routes, resource access, territorial claims
-- **Climate Migration**: Displacement from drought, flooding, extreme weather
-- **Water Conflicts**: Nile Dam dispute (Ethiopia-Egypt-Sudan), Indus Waters Treaty (India-Pakistan)
+### Klimawandel und Geographie
+- **Steigender Meeresspiegel**: Bedroht Inselstaaten wie die Malediven und Tuvalu sowie Küstenstädte
+- **Schmelzende Arktis**: Neue Schifffahrtsrouten, Zugriff auf Ressourcen, territoriale Ansprüche
+- **Klimamigration**: Vertreibung durch Dürre, Überschwemmungen und Extremwetter
+- **Wasserkonflikte**: Streit um den Nil-Staudamm (Äthiopien-Ägypten-Sudan), Indus-Wasservertrag (Indien-Pakistan)
 
-### Resource Geopolitik
-- **Energy Transition**: Shift from fossil fuels, critical minerals (lithium, cobalt, rare earths)
-- **Essen Sicherheit**: Agricultural land, water access, supply chains
-- **Rare Earth Elements**: China controls ~80% von processing, essential für electronics und green tech
-- **Semiconductor Supply Chains**: Taiwan produces ~60% von world's chips, geopolitical flashpoint
+### Ressourcen-Geopolitik
+- **Energiewende**: Verschiebung weg von fossilen Brennstoffen, Bedeutung kritischer Mineralien wie Lithium, Kobalt und Seltene Erden
+- **Ernährungssicherheit**: Landwirtschaftliche Flächen, Wasserzugang und Lieferketten
+- **Seltene Erden**: China kontrolliert rund 80 % der Weiterverarbeitung und ist damit für Elektronik und grüne Technologien zentral
+- **Halbleiter-Lieferketten**: Taiwan produziert rund 60 % der weltweiten Chips und ist deshalb ein geopolitischer Brennpunkt
 
-### Territorial Disputes
-- **South China Sea**: China's nine-dash line vs. Philippines, Vietnam, Malaysia, Brunei, Taiwan
-- **Kashmir**: India-Pakistan-China competing claims
-- **Western Sahara**: Morocco vs. Polisario Front
-- **Crimea**: Russia annexed 2014, internationally recognized as Ukrainian
-- **Taiwan**: China claims sovereignty, operates as independent state
-- **Kurds**: Stateless nation across Turkey, Syria, Iraq, Iran
+### Territorialkonflikte
+- **Südchinesisches Meer**: Chinas Nine-Dash-Line gegenüber Ansprüchen der Philippinen, Vietnams, Malaysias, Bruneis und Taiwans
+- **Kaschmir**: Konkurrenzierende Ansprüche von Indien, Pakistan und China
+- **Westsahara**: Konflikt zwischen Marokko und der Polisario Front
+- **Krim**: 2014 von Russland annektiert, international weiterhin als Teil der Ukraine anerkannt
+- **Taiwan**: Von China beansprucht, faktisch mit eigenständiger Staatsführung
+- **Kurden**: Staatenlose Nation über Türkei, Syrien, Irak und Iran hinweg
 
-### Migration und Borders
-- **Refugee Crises**: Syria, Afghanistan, Venezuela, Ukraine, Sudan
-- **Border Walls**: US-Mexico, Hungary-Serbia, India-Bangladesh, Greece-Turkey
-- **Migration Routes**: Central Mediterranean, Eastern Mediterranean, US Southwest, Balkan route
-- **Brain Drain**: Skilled workers emigrating from developing to developed nations
+### Migration und Grenzen
+- **Flüchtlingskrisen**: Syrien, Afghanistan, Venezuela, Ukraine, Sudan
+- **Grenzmauern**: USA-Mexiko, Ungarn-Serbien, Indien-Bangladesch, Griechenland-Türkei
+- **Migrationsrouten**: Zentrale und östliche Mittelmeerroute, Südwesten der USA, Balkanroute
+- **Brain Drain**: Abwanderung qualifizierter Arbeitskräfte von Entwicklungs- in Industrieländer
 
-## Strategic Concepts
+## Strategische Konzepte
 
-### Power Projection
-- **Hard Power**: Military force, economic sanctions, coercion
-- **Soft Power**: Cultural influence, diplomacy, values attraction
-- **Smart Power**: Combination von hard und soft power strategies
-- **Naval Power**: Control von sea lanes, chokepoints (Strait von Hormuz, Malacca, Suez, Panama)
-- **Air Power**: Strategic bombing, air superiority, drone warfare
-- **Cyber Power**: Digital warfare, information operations, infrastructure attacks
+### Machtprojektion
+- **Hard Power**: Militärische Gewalt, Wirtschaftssanktionen, Zwang
+- **Soft Power**: Kultureller Einfluss, Diplomatie, Anziehungskraft von Werten
+- **Smart Power**: Kombination aus Hard Power und Soft Power
+- **Seemacht**: Kontrolle von Seewegen und Engpässen (Straße von Hormus, Malakka, Suez, Panama)
+- **Luftmacht**: Strategische Bombardierung, Lufthoheit, Drohnenkrieg
+- **Cybermacht**: Digitale Kriegsführung, Informationsoperationen, Angriffe auf Infrastruktur
 
-### Spheres von Influence
-- **Monroe Doctrine**: US opposition to European colonization in Americas (1823)
-- **Russian Near Abroad**: Former Soviet states considered Russian sphere
-- **Chinese Belt und Road**: Infrastructure investments creating economic influence
-- **American Hegemony**: Post-WWII global leadership role
+### Einflusssphären
+- **Monroe-Doktrin**: Ablehnung europäischer Kolonisierung in Amerika durch die USA (1823)
+- **Russisches nahes Ausland**: Ehemalige Sowjetstaaten gelten als russische Einflusssphäre
+- **Chinesische Belt and Road Initiative**: Infrastrukturinvestitionen als Mittel wirtschaftlichen Einflusses
+- **Amerikanische Hegemonie**: Führungsrolle der USA nach dem Zweiten Weltkrieg
 
-### Balance von Power
-- **Unipolar**: Single dominant power (US post-Cold War)
-- **Bipolar**: Two competing powers (US-USSR Cold War)
-- **Multipolar**: Multiple great powers (pre-WWI Europe, emerging order)
-- **Hegemonic Stability**: Dominant power provides global public goods
+### Machtgleichgewicht
+- **Unipolar**: Eine dominante Macht (USA nach dem Kalten Krieg)
+- **Bipolar**: Zwei konkurrierende Mächte (USA-UdSSR im Kalten Krieg)
+- **Multipolar**: Mehrere Großmächte (Europa vor dem Ersten Weltkrieg, mögliche neue Weltordnung)
+- **Hegemoniale Stabilität**: Eine dominante Macht stellt globale öffentliche Güter bereit
 
-## Geographic Information Systeme (GIS)
+## Geographische Informationssysteme (GIS)
 
-### Mapping Technologies
-- **GPS**: Global Positioning System, satellite navigation
-- **Remote Sensing**: Satellite imagery, aerial photography
-- **Spatial Analysis**: Pattern recognition, proximity analysis, Netzwerk analysis
-- **Cartography**: Map-making, projections, scale, symbology
+### Kartierungstechnologien
+- **GPS**: Global Positioning System, satellitengestützte Navigation
+- **Fernerkundung**: Satellitenbilder, Luftbildfotografie
+- **Räumliche Analyse**: Mustererkennung, Näheanalysen, Netzwerkanalysen
+- **Kartographie**: Kartenherstellung, Projektionen, Maßstäbe, Symbolik
 
-### Applications
-- **Urban Planning**: Land use, transportation, zoning
-- **Umwelt Monitoring**: Deforestation, pollution, climate change
-- **Disaster Response**: Emergency Verwaltung, evacuation routes
-- **Geschäft Intelligence**: Market analysis, site selection, logistics
-- **Public Health**: Disease tracking, Gesundheitswesen access
+### Anwendungen
+- **Stadtplanung**: Flächennutzung, Verkehr, Zonierung
+- **Umweltmonitoring**: Abholzung, Verschmutzung, Klimawandel
+- **Katastrophenhilfe**: Krisenmanagement, Evakuierungsrouten
+- **Business Intelligence**: Marktanalyse, Standortwahl, Logistik
+- **Öffentliche Gesundheit**: Krankheitsverfolgung, Zugang zum Gesundheitswesen
 
-## Key Geopolitical Theorists
+## Wichtige geopolitische Theoretiker
 
-- **Halford Mackinder** (1861-1947): Heartland Theory, "Who rules East Europe Befehle das Heartland"
-- **Alfred Thayer Mahan** (1840-1914): Sea power importance, naval strategy
-- **Nicholas Spykman** (1893-1943): Rimland Theory, containment strategy influence
-- **Karl Haushofer** (1869-1946): Geopolitik, German geographical school
-- **Saul Bernard Cohen** (1921-2022): Geopolitical Systeme analysis
+- **Halford Mackinder** (1861–1947): Heartland-Theorie, „Wer Osteuropa beherrscht, kontrolliert das Heartland“
+- **Alfred Thayer Mahan** (1840–1914): Bedeutung der Seemacht und der Marinenstrategie
+- **Nicholas Spykman** (1893–1943): Rimland-Theorie, Einfluss auf die Containment-Strategie
+- **Karl Haushofer** (1869–1946): Geopolitik, deutsche geographische Schule
+- **Saul Bernard Cohen** (1921–2022): Analyse geopolitischer Systeme
 
-## Important Geographic Terms
+## Wichtige geographische Begriffe
 
-- **Chokepoint**: Narrow passage critical für trade/military movement
-- **Hinterland**: Area serving a port or city economically
-- **Irredentism**: Claiming territory based on historical/ethnic ties
-- **Nation-State**: Political unit where nation und state boundaries align
-- **Realpolitik**: Politics based on practical objectives rather than ideals
-- **Self-Determination**: Right von peoples to choose their sovereignty
-- **Shatterbelt**: Region caught between stronger external powers
-- **Stateless Nation**: Ethnic group without own state (Kurds, Palestinians, Tibetans)
-- **Supranational Organization**: Entity above national level (EU, UN)
-- **Terminal Moraine**: Geological feature marking glacier's furthest advance
+- **Chokepoint**: Engpass, der für Handel oder militärische Bewegung entscheidend ist
+- **Hinterland**: Gebiet, das wirtschaftlich zu einem Hafen oder einer Stadt gehört
+- **Irredentismus**: Anspruch auf Gebiete aufgrund historischer oder ethnischer Bindungen
+- **Nationalstaat**: Politische Einheit, in der sich Nation und Staat weitgehend decken
+- **Realpolitik**: Politik auf Grundlage praktischer Ziele statt idealistischer Vorstellungen
+- **Selbstbestimmung**: Recht von Völkern, über ihre Souveränität selbst zu entscheiden
+- **Shatterbelt**: Region, die zwischen stärkeren äußeren Mächten zerrieben wird
+- **Staatenlose Nation**: Ethnische Gruppe ohne eigenen Staat (z. B. Kurden, Palästinenser, Tibeter)
+- **Supranationale Organisation**: Organisation oberhalb der Nationalstaatsebene (z. B. EU, UN)
+- **Endmoräne**: Geologische Form, die den weitesten Vorstoß eines Gletschers markiert

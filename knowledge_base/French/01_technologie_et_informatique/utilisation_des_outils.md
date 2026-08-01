@@ -59,10 +59,10 @@ git rebase main
 
 ### Flux de travail des pull requests (PR)
 
-1. Créez une branche de fonctionnalité depuis `main`.
-2. Faites des commits sur la branche de fonctionnalité.
+1. Créez une branche de fonctionnalité à partir de `main`.
+2. Effectuez vos commits sur la branche de fonctionnalité.
 3. Poussez la branche : `git push origin feature/new-thing`.
-4. Ouvrez une pull request sur GitHub / GitLab.
+4. Ouvrez une pull request sur GitHub ou GitLab.
 5. Répondez aux retours de revue de code avec des commits supplémentaires.
 6. Fusionnez la PR une fois approuvée.
 
@@ -105,7 +105,7 @@ npm run build
 npx create-react-app my-app     # run a package without installing globally
 ```
 
-`package-lock.json` enregistre les versions exactes ; commitez-le dans le contrôle de source.
+`package-lock.json` enregistre les versions exactes ; validez-le dans le contrôle de version.
 
 ### Cargo (Rust)
 
@@ -205,7 +205,7 @@ chmod 644 file.txt              # owner read/write, group/others read
 chown user:group file.txt       # change owner and group
 ```
 
-### gestion des processus
+### Gestion des processus
 
 ```bash
 ps aux                          # list running processes
@@ -220,11 +220,11 @@ top / htop                      # interactive process monitor
 
 ### VS Code
 
-VS Code est un éditeur de code léger et multiplateforme avec un riche écosystème d'extensions.
+VS Code est un éditeur de code léger et multiplateforme doté d'un riche écosystème d'extensions.
 
 - Ouvrir un dossier : `File > Open Folder` ou `code .` dans le terminal.
 - Palette de commandes : `Ctrl+Shift+P` (macOS : `Cmd+Shift+P`).
-- Terminal intégré : `Ctrl+`` (accent grave)`.
+- Terminal intégré : `Ctrl+`` (accent grave).
 - Multi-curseur : `Alt+Clic` pour placer des curseurs supplémentaires.
 - Aller à la définition : `F12`.
 - Renommer un symbole : `F2`.
@@ -235,9 +235,9 @@ VS Code est un éditeur de code léger et multiplateforme avec un riche écosyst
 
 ### IDE JetBrains (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- L'auto-complétion intelligente et le refactoring sont des fonctionnalités principales.
-- Les configurations d'exécution/débogage vous permettent de lancer et déboguer des programmes en un clic.
-- Assistance Git intégrée dans le menu VCS.
+- L'auto-complétion intelligente et le refactoring sont des fonctionnalités clés.
+- Les configurations d'exécution et de débogage permettent de lancer et déboguer des programmes en un clic.
+- L'intégration de Git est disponible dans le menu VCS.
 - `Shift+Shift` ouvre la boîte de dialogue Search Everywhere.
 - `Ctrl+Alt+L` (macOS : `Cmd+Option+L`) reformate le code.
 - Les plugins étendent l'assistance linguistique et ajoutent des outils.
@@ -245,10 +245,10 @@ VS Code est un éditeur de code léger et multiplateforme avec un riche écosyst
 ### Astuces pour le terminal
 
 - Utilisez l'auto-complétion par tabulation pour terminer rapidement les noms de fichiers et les commandes.
-- Appuyez sur `Ctrl+R` pour rechercher dans l'historique des commandes de manière interactive.
+- Appuyez sur `Ctrl+R` pour rechercher de façon interactive dans l'historique des commandes.
 - `alias ll='ls -la'` crée un raccourci — ajoutez-le à `~/.bashrc` ou `~/.zshrc`.
 - Utilisez `tmux` ou `screen` pour maintenir les sessions actives lors de la déconnexion d'un serveur distant.
-- `man <command>` affiche la page de manuel pour toute commande intégrée.
+- `man <command>` affiche la page de manuel de n'importe quelle commande.
 
 ---
 
@@ -258,12 +258,12 @@ Docker empaquette les applications et leurs dépendances dans des conteneurs por
 
 ### Concepts de base
 
-- **Image** : un modèle en lecture seule construit à partir d'un `Dockerfile`.
-- **Conteneur** : une instance en cours d'exécution d'une image.
-- **Registre** : un service de stockage et de distribution pour les images (Docker Hub, GHCR).
+- **Image** : modèle en lecture seule construit à partir d'un `Dockerfile`.
+- **Conteneur** : instance en cours d'exécution d'une image.
+- **Registre** : service de stockage et de distribution des images (Docker Hub, GHCR).
 - **Volume** : stockage persistant qui survit au conteneur.
 
-### commandes courantes
+### Commandes courantes
 
 ```bash
 # Images
@@ -299,7 +299,7 @@ CMD ["python", "main.py"]
 
 ### Docker Compose
 
-Docker Compose gère les applications multi-conteneurs avec un fichier `docker-compose.yml`.
+Docker Compose gère les applications multi-conteneurs à l'aide d'un fichier `docker-compose.yml`.
 
 ```yaml
 version: "3.9"

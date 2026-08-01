@@ -11,7 +11,7 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 Python ist eine hochlevelige, interpretierte, dynamisch typisierte, allgemeine Programmiersprache. Sie betont Lesbarkeit und verwendet signifikante Einrückung als Blockbegrenzer.
 
-### Syntax Grundlagen
+### Syntax-Grundlagen
 
 ```python
 # Variablen und Typen
@@ -36,14 +36,14 @@ while active:
     active = False
 ```
 
-### Funktionen und type hints
+### Funktionen und Typ-Hinweise
 
 ```python
 def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### List comprehensions
+### Listenkomprehensionen
 
 ```python
 squares = [x**2 for x in range(10)]
@@ -72,7 +72,7 @@ class Dog(Animal):
 - Verwende `dataclasses.dataclass` für reine Datenklassen.
 - Verwende `pathlib.Path` statt `os.path` für Dateipfade.
 
-### Tooling
+### Werkzeuge
 
 - `pip install <package>` installiert Pakete.
 - `python -m venv .venv && source .venv/bin/activate` erstellt eine virtuelle Umgebung.
@@ -86,7 +86,7 @@ class Dog(Animal):
 
 JavaScript ist die primäre Sprache des Webs. Sie läuft in Browsern und auf Servern via Node.js. Sie ist dynamisch typisiert und prototypbasiert.
 
-### Modern Syntax (ES6+)
+### Moderne Syntax (ES6+)
 
 ```javascript
 // Variable declarations
@@ -107,7 +107,7 @@ const [first, ...rest] = array;
 const merged = { ...defaults, ...overrides };
 ```
 
-### Async programming
+### Asynchrone Programmierung
 
 ```javascript
 // Promises
@@ -127,7 +127,7 @@ async function loadUser(id) {
 }
 ```
 
-### Array methods
+### Array-Methoden
 
 ```javascript
 const doubled = [1, 2, 3].map(n => n * 2);
@@ -135,7 +135,7 @@ const evens   = [1, 2, 3, 4].filter(n => n % 2 === 0);
 const sum     = [1, 2, 3].reduce((acc, n) => acc + n, 0);
 ```
 
-### DOM manipulation
+### DOM-Manipulation
 
 ```javascript
 const btn = document.getElementById("submit");
@@ -144,7 +144,7 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### Tooling
+### Werkzeuge
 
 - `npm init -y` initialisiert ein Projekt.
 - `npm install <package>` fügt eine Abhängigkeit hinzu.
@@ -157,7 +157,7 @@ btn.addEventListener("click", () => {
 
 TypeScript ist ein statisch typisiertes Superset von JavaScript, das zu reinem JavaScript kompiliert. Es fügt Typannotationen, Interfaces, Generics und Enums hinzu.
 
-### Type annotations
+### Typannotationen
 
 ```typescript
 let username: string = "alice";
@@ -166,7 +166,7 @@ let flags: boolean[] = [true, false];
 let anything: unknown = "could be anything";
 ```
 
-### Interfaces und types
+### Interfaces und Typen
 
 ```typescript
 interface User {
@@ -190,7 +190,7 @@ function first<T>(arr: T[]): T | undefined {
 }
 ```
 
-### Klassen mit access modifiers
+### Klassen mit Zugriffsmodifikatoren
 
 ```typescript
 class Counter {
@@ -206,7 +206,7 @@ class Counter {
 }
 ```
 
-### tsconfig.json essentials
+### Wichtige tsconfig.json-Optionen
 
 ```json
 {
@@ -220,7 +220,7 @@ class Counter {
 }
 ```
 
-### Tooling
+### Werkzeuge
 
 - `npm install -g typescript` installiert den Compiler.
 - `tsc` kompiliert das Projekt.
@@ -230,11 +230,11 @@ class Counter {
 
 ## Rust
 
-Rust ist eine Systemprogrammiersprache, die auf Sicherheit, Geschwindigkeit und Nebenläufigkeit fokussiert ist. Sie verhindert Speicher-Sicherheitsfehler zur Compile-Zeit durch ihr Ownership-System.
+Rust ist eine Systemprogrammiersprache, die auf Sicherheit, Geschwindigkeit und Nebenläufigkeit ausgerichtet ist. Durch ihr Ownership-System verhindert sie Speichersicherheitsfehler bereits zur Compile-Zeit.
 
-### Ownership und Borrowing
+### Besitzmodell und Borrowing
 
-Jeder Wert in Rust hat genau einen Owner. Wenn der Owner den Scope verlässt, wird der Wert gedroppt. Borrowing erlaubt Referenzen ohne Eigentumsübertragung.
+Jeder Wert in Rust hat genau einen Besitzer. Wenn dieser den Gültigkeitsbereich verlässt, wird der Wert freigegeben. Borrowing erlaubt Referenzen, ohne den Besitz zu übertragen.
 
 ```rust
 fn main() {
@@ -248,11 +248,11 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-Mutable Borrows (`&mut T`) erfordern, dass keine anderen Borrows gleichzeitig existieren.
+Veränderbare Referenzen (`&mut T`) erfordern, dass keine anderen Referenzen gleichzeitig existieren.
 
-### Lifetimes
+### Lebensdauern
 
-Lifetimes stellen sicher, dass Referenzen nicht länger leben als die Daten, auf die sie zeigen.
+Lebensdauern stellen sicher, dass Referenzen nicht länger gültig bleiben als die Daten, auf die sie verweisen.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -260,7 +260,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-### Enums und pattern matching
+### Enums und Mustervergleich
 
 ```rust
 enum Shape {
@@ -295,7 +295,7 @@ fn main() {
 
 Der `?`-Operator propagiert Fehler automatisch innerhalb von Funktionen, die `Result` zurückgeben.
 
-### Tooling (Cargo)
+### Werkzeuge (Cargo)
 
 - `cargo new project_name` erstellt ein neues Projekt.
 - `cargo build` kompiliert.
@@ -323,7 +323,7 @@ func main() {
 }
 ```
 
-### Funktionen und multiple return values
+### Funktionen und mehrere Rückgabewerte
 
 ```go
 func divide(a, b float64) (float64, error) {
@@ -346,7 +346,7 @@ type Dog struct{ Name string }
 func (d Dog) Speak() string { return d.Name + " says woof" }
 ```
 
-Jeder Typ, der alle Methoden eines Interfaces implementiert, erfüllt es – eine explizite Deklaration ist nicht erforderlich.
+Jeder Typ, der alle Methoden eines Interfaces implementiert, erfüllt dieses automatisch – eine explizite Deklaration ist nicht erforderlich.
 
 ### Goroutines und Channels
 
@@ -388,7 +388,7 @@ func readFile(path string) error {
 }
 ```
 
-### Tooling
+### Werkzeuge
 
 - `go mod init module/name` initialisiert ein Modul.
 - `go get ./...` lädt Abhängigkeiten herunter.
@@ -401,9 +401,9 @@ func readFile(path string) error {
 
 ## C und C++
 
-C ist eine low-level, kompilierte, prozedurale Sprache. C++ erweitert C um Klassen, Templates und die Standard Template Library (STL).
+C ist eine systemnahe, kompilierte, prozedurale Sprache. C++ erweitert C um Klassen, Templates und die Standard Template Library (STL).
 
-### C Grundlagen
+### C-Grundlagen
 
 ```c
 #include <stdio.h>
@@ -422,9 +422,9 @@ int main(void) {
 }
 ```
 
-### Pointer
+### Zeiger
 
-Ein Pointer speichert die Speicheradresse einer anderen Variable. `*ptr` dereferenziert sie; `&var` nimmt eine Adresse.
+Ein Zeiger speichert die Speicheradresse einer anderen Variablen. `*ptr` dereferenziert sie; `&var` liefert eine Adresse.
 
 ```c
 int a = 10;
@@ -452,9 +452,9 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Initialization) koppelt Ressourcenlebensdauern an Objektlebensdauern und stellt sicher, dass die Bereinigung automatisch in Destruktoren erfolgt.
+RAII (Resource Acquisition Is Initialization) koppelt die Lebensdauer von Ressourcen an die Lebensdauer von Objekten und stellt sicher, dass die Bereinigung automatisch in Destruktoren erfolgt.
 
-### STL containers
+### STL-Container
 
 ```cpp
 #include <vector>
@@ -469,11 +469,11 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### Modern C++ (C++17 / C++20) Highlights
+### Moderne C++-Highlights (C++17 / C++20)
 
-- `auto` Typableitung.
-- Range-based `for`-Schleifen: `for (auto& item : container)`.
-- Smart Pointer: `std::unique_ptr`, `std::shared_ptr` — vermeide rohe `new`/`delete`.
+- `auto` zur Typableitung.
+- Bereichsbasierte `for`-Schleifen: `for (auto& item : container)`.
+- Smarte Zeiger: `std::unique_ptr`, `std::shared_ptr` — vermeide rohe `new`/`delete`.
 - Strukturierte Bindungen: `auto [key, val] = pair;`.
 - `std::optional`, `std::variant`, `std::string_view`.
 
@@ -500,9 +500,9 @@ counter += 1
 let pi: Double = 3.14159
 ```
 
-### Optionals
+### Optionale Werte
 
-An optional (`T?`) represents a value that may or may not be present.
+Ein Optional (`T?`) steht für einen Wert, der vorhanden sein kann oder auch nicht.
 
 ```swift
 var name: String? = nil
@@ -520,7 +520,7 @@ let display = name ?? "Guest"
 let length = name?.count
 ```
 
-### Funktionen und closures
+### Funktionen und Abschlussfunktionen (Closures)
 
 ```swift
 func add(_ a: Int, _ b: Int) -> Int { a + b }
@@ -528,9 +528,9 @@ func add(_ a: Int, _ b: Int) -> Int { a + b }
 let multiply: (Int, Int) -> Int = { $0 * $1 }
 ```
 
-### Klassen und Structs
+### Klassen und Strukturen
 
-Swift hat sowohl Klassen (Referenztypen) als auch Structs (Werttypen). Bevorzuge Structs für einfache Datenmodelle.
+Swift bietet sowohl Klassen (Referenztypen) als auch Strukturen (Werttypen). Für einfache Datenmodelle sind Strukturen meist die bessere Wahl.
 
 ```swift
 struct Point {
@@ -544,7 +544,7 @@ class Vehicle {
 }
 ```
 
-### Protocols
+### Protokolle
 
 ```swift
 protocol Describable {
@@ -570,7 +570,7 @@ let json = """{"id":1,"name":"Alice","email":"a@example.com"}"""
 let user = try JSONDecoder().decode(User.self, from: json.data(using: .utf8)!)
 ```
 
-### SwiftUI Grundlagen
+### SwiftUI-Grundlagen
 
 ```swift
 import SwiftUI
@@ -587,7 +587,7 @@ struct ContentView: View {
 }
 ```
 
-### Tooling
+### Werkzeuge
 
 - `swift build` kompiliert ein Swift Package Manager Projekt.
 - `swift run` führt das Projekt aus.
@@ -599,9 +599,9 @@ struct ContentView: View {
 
 ## Programmiergrundlagen (Sprachunabhängig)
 
-### Problemlösungs-Workflow
+### Problemlösungsablauf
 
-1. Definiere Input, Output und Constraints, bevor du Code schreibst.
+1. Definiere Eingaben, Ausgaben und Randbedingungen, bevor du Code schreibst.
 2. Zerlege die Aufgabe in kleinere Teilprobleme.
 3. Beginne mit einer einfachen korrekten Lösung, optimiere dann bei Bedarf.
 4. Validiere mit Tests, Edge Cases und realistischen Eingaben.
@@ -609,15 +609,15 @@ struct ContentView: View {
 ### Kern-Datenstrukturen
 
 - **Array / Liste**: geordnete Sammlung mit schnellen indexbasierten Zugriffen.
-- **Hash Map / Wörterbuch**: Key-Value-Speicher mit durchschnittlicher O(1)-Lookup-Zeit.
+- **Hash-Map / Wörterbuch**: Schlüssel-Wert-Speicher mit einer durchschnittlichen O(1)-Nachschlagezeit.
 - **Set**: eindeutige Werte, nützlich für Mitgliedschaftsprüfungen.
 - **Stack**: LIFO (Last In, First Out), häufig beim Parsen und in Rekursion.
-- **Queue**: FIFO (First In, First Out), nützlich für Scheduling und BFS.
+- **Queue**: FIFO (First In, First Out), nützlich für Planung und BFS.
 - **Baum / Graph**: hierarchische und netzwerkartige Beziehungen.
 
 ### Algorithmische Komplexität (Big O)
 
-- Big O beschreibt, wie Laufzeit oder Speicher mit der Eingabegröße wächst.
+- Big O beschreibt, wie Laufzeit oder Speicherbedarf mit der Eingabegröße wachsen.
 - Typische Kosten:
   - O(1): konstantzeitlicher Zugriff (z.B. Hash Map Zugriff).
   - O(log n): binäre Suche.
@@ -652,7 +652,7 @@ struct ContentView: View {
 ### Sicherheitsgrundlagen für Entwickler
 
 - Validiere und sanitisiere externe Eingaben.
-- Verwende parametrisierte Queries, um SQL-Injection zu verhindern.
+- Verwende parametrisierte Abfragen, um SQL-Injection zu verhindern.
 - Speichere Passwörter mit starken Hashing-Algorithmen (z.B. Argon2, bcrypt).
-- Vermeide das Einbetten von Secrets im Quellcode.
-- Wende Least Privilege für Credentials und Services an.
+- Vermeide das Einbetten von Geheimnissen im Quellcode.
+- Wende das Prinzip der geringsten Rechte auf Anmeldeinformationen und Dienste an.

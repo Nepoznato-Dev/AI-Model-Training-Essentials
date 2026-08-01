@@ -5,40 +5,40 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 비즈니스 와 경제
+# 비즈니스와 경제
 
-## Corporate Structures
+## 기업 구조
 
-A corporation is a 법적 entity separate from its owners, providing limited liability protection to shareholders. 그 main types 의 비즈니스 structures include sole proprietorships (owned by one person), partnerships (owned by two or more people), limited liability companies (LLCs), 와 corporations (C-corp, S-corp). Corporations are governed by a board 의 directors elected by shareholders. 그 chief executive officer (CEO) is 그 highest-ranking executive, responsible 위한 making major corporate decisions. Other C-suite executives include 그 Chief Financial Officer (CFO), Chief Operating Officer (COO), 와 Chief 기술 Officer (CTO).
+기업은 소유자와 법적으로 분리된 독립된 법인이며, 주주에게 유한책임 보호를 제공합니다. 대표적인 사업 구조에는 개인사업자(1인 소유), 파트너십(2인 이상 소유), 유한책임회사(LLC), 주식회사(C-corp, S-corp)가 있습니다. 주식회사는 주주가 선출한 이사회가 운영을 감독합니다. 최고경영자(CEO)는 주요 경영 결정을 책임지는 최고위 임원입니다. 그 밖의 C-level 임원으로는 최고재무책임자(CFO), 최고운영책임자(COO), 최고기술책임자(CTO)가 있습니다.
 
-## Marketing 기초
+## 마케팅 기초
 
-Marketing is 그 process 의 promoting, selling, 와 distributing products or services. 그 marketing mix consists 의 그 4 Ps: Product (what you sell), Price (how much you charge), Place (where you sell it), 와 Promotion (how you advertise it). Market segmentation divides customers into groups based on demographics, 지리, behavior, or psychographics. Brand identity is 그 visible elements 의 a brand (logo, colors, design) that distinguish it from competitors. Customer acquisition cost (CAC) is 그 expense incurred to acquire a new customer. Customer lifetime value (CLV) estimates 그 total revenue a 비즈니스 can expect from a single customer account.
+마케팅은 제품이나 서비스를 홍보하고 판매하며 유통하는 과정입니다. 마케팅 믹스는 4P로 구성됩니다: Product(무엇을 판매하는가), Price(얼마에 판매하는가), Place(어디서 판매하는가), Promotion(어떻게 알리고 광고하는가). 시장 세분화는 인구통계, 지역, 행동, 심리 특성에 따라 고객을 여러 집단으로 나누는 것입니다. 브랜드 아이덴티티는 로고, 색상, 디자인처럼 경쟁사와 구별해 주는 브랜드의 시각적 요소를 뜻합니다. 고객획득비용(CAC)은 신규 고객 1명을 확보하는 데 드는 비용이고, 고객생애가치(CLV)는 한 고객 계정에서 기대할 수 있는 총수익을 추정한 값입니다.
 
-## Accounting 기본
+## 회계 기본
 
-Accounting is 그 systematic recording, reporting, 와 analysis 의 financial transactions. 그 fundamental accounting equation is: Assets = Liabilities + Equity. Assets are resources owned by a 비즈니스 (cash, inventory, equipment). Liabilities are obligations or debts owed to others. Equity represents 그 owner's claim on assets after liabilities are deducted. 그 balance sheet shows a company's financial position at a specific point 에서 time. 그 income statement (profit 와 loss statement) shows revenues, expenses, 와 profits over a period. Cash flow statements track 그 movement 의 cash 에서 와 out 의 a 비즈니스. Generally Accepted Accounting Principles (GAAP) 와 International Financial Reporting Standards (IFRS) are 그 main accounting frameworks.
+회계는 재무 거래를 체계적으로 기록하고 보고하며 분석하는 활동입니다. 회계의 기본 방정식은 다음과 같습니다: Assets = Liabilities + Equity. 자산은 기업이 보유한 자원(현금, 재고, 장비 등)을 말합니다. 부채는 타인에게 갚아야 할 의무나 채무입니다. 자본은 부채를 차감한 뒤 소유자에게 귀속되는 잔여 지분을 의미합니다. 대차대조표는 특정 시점의 재무 상태를 보여 줍니다. 손익계산서(income statement)는 일정 기간의 매출, 비용, 이익을 나타냅니다. 현금흐름표는 기업 안팎으로 이동한 현금의 흐름을 추적합니다. 일반적으로 사용되는 회계 기준으로는 GAAP와 IFRS가 있습니다.
 
-## 투자 와 금융
+## 투자와 금융
 
-투자 involves allocating money 와 함께 그 expectation 의 generating income or profit. Stocks represent ownership shares 에서 a corporation. Bonds are debt securities where investors loan money to entities (corporations or governments) 위한 a fixed interest rate. Mutual funds pool money from many investors to purchase a diversified portfolio 의 securities. Exchange-traded funds (ETFs) are similar to mutual funds but trade on stock exchanges like individual stocks. Diversification spreads investments across different assets to reduce risk. Compound interest is interest calculated on both 그 initial principal 와 accumulated interest. 그 risk-return tradeoff states that potential return rises 와 함께 increased risk. Blue-chip stocks are shares 에서 large, well-established companies 와 함께 reliable 성능. Dividends are payments made by corporations to shareholders from profits.
+투자는 수익이나 이익을 얻을 것을 기대하고 자금을 배분하는 행위입니다. 주식은 기업의 소유 지분을 나타냅니다. 채권은 투자자가 기업이나 정부 등에 일정한 이자율로 돈을 빌려주고 받는 부채 증권입니다. 뮤추얼 펀드는 여러 투자자의 자금을 모아 분산된 증권 포트폴리오를 매입합니다. ETF는 뮤추얼 펀드와 유사하지만 개별 주식처럼 거래소에서 매매됩니다. 분산 투자는 여러 자산에 자금을 나누어 위험을 낮추는 전략입니다. 복리 이자는 원금뿐 아니라 누적된 이자에도 다시 이자가 붙는 방식입니다. 위험-수익 상충 관계는 더 높은 수익 가능성이 일반적으로 더 큰 위험을 동반한다는 뜻입니다. 블루칩 주식은 신뢰할 만한 실적을 갖춘 대형 우량 기업의 주식을 말합니다. 배당금은 기업이 이익의 일부를 주주에게 지급하는 금액입니다.
 
-## Economic Indicators
+## 경제 지표
 
-Gross Domestic Product (GDP) measures 그 total value 의 goods 와 services produced 에서 a country. Inflation is 그 rate at which prices rise over time, reducing purchasing power. 그 Consumer Price Index (CPI) measures changes 에서 그 price level 의 consumer goods 와 services. Unemployment rate is 그 percentage 의 그 labor force that is jobless 와 actively seeking employment. Interest rates, set by central banks, influence borrowing costs 와 economic activity. 그 Federal Reserve (US), European Central Bank (ECB), 와 Bank 의 England are major central banks. Recession is typically defined as two consecutive quarters 의 negative GDP growth. Bull markets indicate rising stock prices; bear markets indicate falling prices.
+국내총생산(GDP)은 한 나라에서 생산된 재화와 서비스의 총가치를 측정합니다. 인플레이션은 시간이 지남에 따라 물가가 상승해 구매력이 낮아지는 현상입니다. 소비자물가지수(CPI)는 소비재와 서비스의 가격 수준 변화를 측정합니다. 실업률은 일할 의사가 있고 구직 활동을 하는 노동 인구 가운데 실업 상태인 비율입니다. 중앙은행이 결정하는 금리는 차입 비용과 경제 활동에 영향을 미칩니다. Federal Reserve(미국), European Central Bank(ECB), Bank of England는 대표적인 중앙은행입니다. 일반적으로 경기침체는 GDP가 두 분기 연속 감소하는 상태로 정의됩니다. 불마켓은 주가 상승 국면을, 베어마켓은 주가 하락 국면을 뜻합니다.
 
-## Supply Chain 와 Operations
+## 공급망과 운영
 
-Supply chain 관리 oversees 그 flow 의 goods 와 services from raw materials to final products. Logistics involves 그 coordination 의 moving resources from origin to consumption. Inventory 관리 balances having enough stock to meet demand without excess holding costs. Just-에서-time (JIT) manufacturing minimizes inventory by receiving goods only as needed. Quality control ensures products meet specified standards. Six Sigma is a methodology 위한 eliminating defects 와 improving processes. Lean manufacturing focuses on minimizing waste while maximizing productivity.
+공급망 관리는 원자재부터 최종 제품에 이르기까지 재화와 서비스의 흐름을 관리하는 일입니다. 물류는 자원이 출발지에서 소비 지점까지 이동하도록 조정하는 활동입니다. 재고 관리는 수요를 충족할 만큼 충분한 재고를 확보하면서도 과도한 보관 비용을 피하도록 균형을 맞춥니다. Just-in-time(JIT) 생산은 필요한 시점에만 자재를 받아 재고를 최소화하는 방식입니다. 품질 관리는 제품이 정해진 기준을 충족하도록 보장합니다. Six Sigma는 결함을 줄이고 프로세스를 개선하기 위한 방법론입니다. 린 생산 방식은 낭비를 최소화하면서 생산성을 극대화하는 데 초점을 둡니다.
 
-## Entrepreneurship 와 Startups
+## 기업가정신과 스타트업
 
-Entrepreneurship is 그 process 의 designing, launching, 와 running a new 비즈니스. A startup is a young company founded to develop a unique product or service. Venture capital is funding provided by investors to startups 와 함께 high growth potential. Angel investors are affluent individuals who provide capital 위한 startups, often 에서 exchange 위한 equity. Crowdfunding raises small amounts 의 money from many people via online platforms. A minimum viable product (MVP) is a version 의 a product 와 함께 just enough features to satisfy early customers. Pivot refers to a fundamental change 에서 비즈니스 strategy. Scalability is 그 ability to grow without being hampered by structure or resources.
+기업가정신은 새로운 사업을 구상하고 출범시키며 운영하는 과정입니다. 스타트업은 독창적인 제품이나 서비스를 개발하기 위해 설립된 초기 단계의 젊은 기업입니다. 벤처캐피털은 높은 성장 가능성을 지닌 스타트업에 투자자가 제공하는 자금입니다. 엔젤 투자자는 대개 지분을 대가로 스타트업에 자본을 제공하는 고액 자산가입니다. 크라우드펀딩은 온라인 플랫폼을 통해 다수의 사람에게서 소액을 모아 자금을 조달하는 방식입니다. MVP는 초기 고객을 만족시킬 만큼의 최소 기능만 갖춘 제품 버전입니다. 피벗은 사업 전략의 근본적인 전환을 뜻합니다. 확장성은 구조나 자원에 크게 제약받지 않고 성장할 수 있는 능력입니다.
 
-## International Trade
+## 국제 무역
 
-International trade involves 그 exchange 의 goods 와 services across borders. Imports are goods brought into a country; exports are goods sent out. A trade deficit occurs when imports exceed exports; a trade surplus is 그 opposite. Tariffs are taxes on imported goods. Free trade agreements reduce barriers between countries. 그 World Trade Organization (WTO) regulates international trade. Currency exchange rates affect 그 relative cost 의 imports 와 exports. Globalization has increased interconnectedness 의 economies worldwide.
+국제 무역은 국경을 넘어 재화와 서비스를 교환하는 활동입니다. 수입은 해외에서 들여오는 상품이고, 수출은 자국에서 해외로 내보내는 상품입니다. 무역 적자는 수입이 수출을 초과할 때 발생하며, 무역 흑자는 그 반대입니다. 관세는 수입품에 부과되는 세금입니다. 자유무역협정은 국가 간 무역 장벽을 낮춥니다. World Trade Organization(WTO)은 국제 무역 질서를 조정합니다. 환율은 수입과 수출의 상대적인 비용에 영향을 줍니다. 세계화는 전 세계 경제의 상호연결성을 크게 높였습니다.
 
-## 비즈니스 Ethics 와 Corporate Social Responsibility
+## 비즈니스 윤리와 기업의 사회적 책임
 
-비즈니스 ethics involves moral principles guiding 비즈니스 behavior. Corporate social responsibility (CSR) is a company's commitment to operate sustainably 와 contribute positively to society. 환경, Social, 와 Governance (ESG) criteria evaluate company practices on 지속 가능성 와 ethical impact. Stakeholders include anyone affected by a company's actions (employees, customers, communities, shareholders). Ethical dilemmas arise when 비즈니스 decisions conflict 와 함께 moral values. Transparency 와 accountability are key principles 의 ethical 비즈니스 practice.
+비즈니스 윤리는 기업 활동을 이끄는 도덕적 원칙을 다룹니다. 기업의 사회적 책임(CSR)은 지속 가능한 방식으로 운영하고 사회에 긍정적으로 기여하려는 기업의 약속입니다. ESG 기준은 기업의 지속 가능성과 윤리적 영향을 환경(Environment), 사회(Social), 지배구조(Governance) 측면에서 평가합니다. 이해관계자는 직원, 고객, 지역사회, 주주처럼 기업의 행동에 영향을 받는 모든 사람을 포함합니다. 비즈니스 의사결정이 도덕적 가치와 충돌할 때 윤리적 딜레마가 발생합니다. 투명성과 책임성은 윤리적 경영의 핵심 원칙입니다.

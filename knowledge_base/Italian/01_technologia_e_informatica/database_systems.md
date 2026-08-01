@@ -11,7 +11,7 @@ Software che interagisce con gli utenti finali, le applicazioni e il database st
 ### Concetti chiave
 - **Schema**: Struttura/organizzazione del database (tabelle, campi, relazioni)
 - **Istanza**: dati effettivi memorizzati in un momento particolare
-- **Proprietà dell'ACIDO**: Atomicità, Consistenza, Isolamento, Durabilità
+- **Proprietà ACID**: atomicità, consistenza, isolamento, durabilità
 - **Teorema CAP**: Coerenza, Disponibilità, Tolleranza di partizione (scegliere 2)
 - **Normalizzazione**: organizzazione dei dati per ridurre la ridondanza
 - **Denormalizzazione**: aggiunta di ridondanza per migliorare le prestazioni di lettura
@@ -43,15 +43,15 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-### Si unisce
+### Join
 - **INNER JOIN**: restituisce le righe corrispondenti da entrambe le tabelle
 - **LEFT JOIN**: tutte le righe dalla tabella a sinistra, corrispondenze da destra
 - **RIGHT JOIN**: tutte le righe dalla tabella a destra, corrispondenze da sinistra
 - **FULL OUTER JOIN**: tutte le righe di entrambe le tabelle
 - **CROSS JOIN**: prodotto cartesiano di entrambe le tabelle
-- **SELF JOIN**: Tabella unita a se stessa
+- **SELF JOIN**: una tabella unita a se stessa
 
-### Moduli di normalizzazione
+### Forme normali
 - **1NF**: valori atomici, nessun gruppo ripetitivo
 - **2NF**: 1NF + nessuna dipendenza parziale (tutti gli attributi non chiave dipendono dall'intera chiave primaria)
 - **3NF**: 2NF + nessuna dipendenza transitiva (gli attributi non chiave non dipendono da altri attributi non chiave)
@@ -59,7 +59,7 @@ DELETE FROM users WHERE id = 1;
 - **4NF**: nessuna dipendenza multivalore
 - **5NF**: nessuna dipendenza di join
 
-### RDBMS popolare
+### RDBMS più diffusi
 - **PostgreSQL**: funzionalità avanzate, estensibile, compatibile con ACID
 - **MySQL**: applicazioni web ampiamente utilizzate, letture veloci
 - **Oracle**: funzionalità aziendali, scalabilità, costose
@@ -80,13 +80,13 @@ DELETE FROM users WHERE id = 1;
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### Negozi di valori-chiave
+#### Archivi chiave-valore
 - **Struttura**: coppie chiave-valore semplici
 - **Casi d'uso**: memorizzazione nella cache, sessioni, carrelli della spesa
 - **Esempi**: Redis, DynamoDB, Riak
 - **Caratteristiche**: interrogazioni veloci, semplici e limitate
 
-#### Negozi di famiglie di colonne
+#### Archivi a famiglie di colonne
 - **Struttura**: colonne raggruppate in famiglie
 - **Casi d'uso**: Big Data, analisi, serie temporali
 - **Esempi**: Cassandra, HBase, ScyllaDB
@@ -102,14 +102,14 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Schema flessibile/in evoluzione
 - Requisiti di scala orizzontale
 - Elevata velocità di scrittura
-- dati gerarchici/annidati
+- dati gerarchici o annidati
 - Sistemi distribuiti
 - Applicazioni in tempo reale
 
 ## Progettazione di database
 
 ### Modellazione entità-relazione
-- **Entità**: Oggetti/concetti (Cliente, Prodotto, Ordine)
+- **Entità**: oggetti o concetti (Cliente, Prodotto, Ordine)
 - **Attributi**: Proprietà delle entità (nome, prezzo, data)
 - **Relazioni**: Connessioni tra entità (uno-a-uno, uno-a-molti, molti-a-molti)
 - **Cardinalità**: Numero di istanze in relazione
@@ -119,7 +119,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Ereditarietà della tabella delle classi**: tabelle separate per base e sottoclassi
 - **Eredità della tabella concreta**: tabella separata per ogni classe concreta
 - **Tabelle di giunzione**: risolvi le relazioni molti-a-molti
-- **Tabelle di controllo**: tenere traccia delle modifiche (created_at, aggiornato_at, cancellato_at)
+- **Tabelle di audit**: tengono traccia delle modifiche (`created_at`, `updated_at`, `deleted_at`)
 
 ### Strategie di indicizzazione
 - **B-Tree**: impostazione predefinita, query su intervallo, ordinamento
@@ -135,10 +135,12 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Piani di esecuzione
 - Comprendere come il database esegue le query
 - Identificazione dei colli di bottiglia (scansioni complete di tabelle, indici mancanti)
-- Strumenti: SPIEGARE, SPIEGARE ANALIZZARE### Tecniche di ottimizzazione
-- **Utilizzo dell'indice**: assicurati che le query utilizzino indici appropriati
+- Strumenti: `EXPLAIN`, `EXPLAIN ANALYZE`
+
+### Tecniche di ottimizzazione
+- **Uso degli indici**: assicurarsi che le query sfruttino gli indici corretti
 - **Riscrittura delle query**: semplifica le query complesse
-- **Ottimizzazione della partecipazione**: scegli i tipi e l'ordine di partecipazione corretti
+- **Ottimizzazione delle join**: scegliere tipo e ordine corretti delle join
 - **Partizionamento**: suddivisione di tabelle di grandi dimensioni (intervallo, hash, elenco)
 - **Visualizzazioni materializzate**: risultati della query precalcolati
 - **Memorizzazione nella cache delle query**: archivia i risultati delle query frequenti
@@ -206,11 +208,11 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Piano di ripristino di emergenza**: procedure documentate in caso di guasti
 - **Test**: esercizi di recupero regolari
 
-##Sicurezza
+## Sicurezza
 
 ### Controllo degli accessi
 - **Autenticazione**: verifica l'identità dell'utente
-- **Autorizzazione**: Concedere autorizzazioni (GRANT, REVOKE)
+- **Autorizzazione**: concedere permessi (`GRANT`, `REVOKE`)
 - **Ruoli**: autorizzazioni di gruppo per una gestione più semplice
 - **Principio del privilegio minimo**: accesso minimo necessario
 
@@ -218,7 +220,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Crittografia a riposo**: crittografa i dati archiviati
 - **Crittografia in transito**: TLS/SSL per le connessioni
 - **Mascheramento**: nasconde i dati sensibili nella non produzione
-- **Tokenizzazione**: sostituisci i dati sensibili con token
+- **Tokenizzazione**: sostituire i dati sensibili con token
 
 ### Vulnerabilità comuni
 - **SQL Injection**: SQL dannoso nell'input dell'utente
@@ -237,7 +239,7 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ### Database NewSQL
 - Combina la coerenza SQL con la scalabilità NoSQL
 - **Esempi**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Caratteristiche**: Distribuito, transazioni ACID, ridimensionamento orizzontale
+- **Caratteristiche**: distribuzione nativa, transazioni ACID, scalabilità orizzontale
 
 ### Database di serie temporali
 - Ottimizzato per dati con timestamp
@@ -245,33 +247,35 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - **Casi d'uso**: IoT, monitoraggio, dati finanziari
 
 ### Database vettoriali
-- Memorizza ed interroga i vettori di incorporamento
-- **Esempi**: Pigna, Milvus, Weaviate, Qdrant
+- Memorizza e interroga vettori di embedding
+- **Esempi**: Pinecone, Milvus, Weaviate, Qdrant
 - **Casi d'uso**: ricerca semantica, sistemi di raccomandazione, applicazioni AI
 
 ### Database multimodello
 - Supporta più modelli di dati in un unico sistema
 - **Esempi**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Vantaggio**: flessibilità senza più database
+- **Vantaggio**: flessibilità senza dover gestire più database separati
 
 ## ORM e accesso ai dati
 
 ### Mappatura relazionale degli oggetti
-- **Scopo**: mappare le tabelle del database sugli oggetti di programmazione
+- **Scopo**: mappare le tabelle del database sugli oggetti del linguaggio di programmazione
 - **ORM popolari**:
   - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelizza, Prisma, TypeORM
-  - Java: ibernazione, JPA
-  - Rubino: ActiveRecord
-  - .NET: struttura dell'entità### Vantaggi
-- Astrazione da SQL
-- Digitare la sicurezza
-- gestione della migrazione
-- API per la creazione di query
+  - JavaScript: Sequelize, Prisma, TypeORM
+  - Java: Hibernate, JPA
+  - Ruby: ActiveRecord
+  - .NET: Entity Framework
+
+### Vantaggi
+- Astrazione rispetto a SQL
+- Type safety
+- Gestione delle migrazioni
+- API per costruire query
 
 ### Inconvenienti
 - Spese generali delle prestazioni
--Query complesse più difficili da scrivere
+- Query complesse più difficili da scrivere
 - N+1 problemi di query
 - Curva di apprendimento
 
@@ -281,23 +285,23 @@ db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 - Installazione e configurazione
 - Ottimizzazione delle prestazioni
 - Backup e ripristino
-- gestione della sicurezza
+- Gestione della sicurezza
 - Pianificazione della capacità
 - Monitoraggio e allerta
-- gestione delle patch
+- Gestione delle patch
 
 ### Metriche di monitoraggio
--Tempo di risposta alla domanda
+- Tempo di risposta delle query
 - Throughput (transazioni al secondo)
-- Conteggio delle connessioni
-- Rapporto di riscontro nella cache
+- Numero di connessioni
+- Percentuale di cache hit
 - I/O del disco
-- Blocca il tempo di attesa
+- Tempo di attesa sui lock
 - Ritardo di replica
 
 ### Attività di manutenzione
-- **Aspira/Analizza**: aggiorna le statistiche, recupera spazio
+- **VACUUM/ANALYZE**: aggiornano le statistiche e recuperano spazio
 - **Ricostruzione dell'indice**: deframmentazione degli indici
-- **Aggiornamenti statistici**: tieni informato Query Optimizer
-- **Rotazione registri**: gestisci le dimensioni dei file di registro
+- **Aggiornamento delle statistiche**: mantiene informato l’optimizer
+- **Rotazione dei log**: gestire la dimensione dei file di log
 - **Pianificazione della capacità**: prevedere la crescita, pianificare gli aggiornamenti

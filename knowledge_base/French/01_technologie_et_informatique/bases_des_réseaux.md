@@ -5,67 +5,67 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Bases des reseaux
+# Bases des réseaux
 
-A practical Référence pour developers et sysadmins — core concepts, protocols, commandes, et troubleshooting.
+Une référence pratique pour les développeurs et les administrateurs système, couvrant les concepts essentiels, les protocoles, les commandes et le dépannage.
 
 ---
 
-## Le modele OSI (7 couches)
+## Le modèle OSI (7 couches)
 
-A conceptual framework pour understanding Réseau Communication.
+Un cadre conceptuel pour comprendre la communication réseau.
 
-| Layer | Name | Function | Example protocols |
+| Couche | Nom | Fonction | Exemples de protocoles |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | Données formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection gestion | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | Réseau | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | Données Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | Application | Services destinés à l'utilisateur final | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | Présentation | Formatage des données, chiffrement, compression | TLS, JPEG, ASCII |
+| 5 | Session | Gestion des connexions | NetBIOS, RPC |
+| 4 | Transport | Livraison de bout en bout, correction d'erreurs, contrôle de flux | TCP, UDP |
+| 3 | Réseau | Routage, adressage | IP, ICMP, OSPF, BGP |
+| 2 | Liaison de données | Tramage, détection d'erreurs, adresses MAC | Ethernet, Wi-Fi, PPP |
+| 1 | Physique | Transmission brute des bits | Câbles Ethernet, fibre optique, ondes radio |
 
-dans practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used pour le  internet.
+En pratique, le **modèle TCP/IP** (4 couches : liaison, Internet, transport, application) est plus couramment utilisé pour Internet.
 
 ---
 
 ## Adressage IP
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted dans practice).
+- Adresse sur 32 bits, écrite sous forme de quatre octets : `192.168.1.1`
+- Total : environ 4,3 milliards d'adresses (mais l'espace est épuisé en pratique).
 
 ### IPv6
-- 128-bit address, written dans hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- Adresse sur 128 bits, écrite en hexadécimal : `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- Total : 2¹²⁸ adresses (pratiquement illimité).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on l'internet; used inside local networks:
+### Plages d'IP privées (RFC 1918)
+Elles ne sont pas routables sur Internet ; elles sont utilisées à l'intérieur des réseaux locaux :
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means le/la first 24 bits are le/la Réseau prefix; le/la last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### Notation CIDR
+`192.168.1.0/24` signifie que les 24 premiers bits constituent le préfixe réseau et que les 8 derniers bits identifient les hôtes. Cette plage couvre les adresses `192.168.1.0` à `192.168.1.255`.
 
 ---
 
 ## DNS (Domain Name System)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+Associe des noms de domaine (par exemple `example.com`) à des adresses IP.
 
-### Record Types
-| Type | Purpose |
+### Types d'enregistrements
+| Type | Rôle |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver pour le  domain |
-| **SRV** | Service record (e.g., pour SIP) |
+| **A** | Associe le domaine à une adresse IPv4 |
+| **AAAA** | Associe le domaine à une adresse IPv6 |
+| **CNAME** | Alias vers un autre nom de domaine |
+| **MX** | Serveur de messagerie |
+| **TXT** | Texte arbitraire (SPF, DKIM, vérification) |
+| **NS** | Serveur de noms pour le domaine |
+| **SRV** | Enregistrement de service (par ex. pour SIP) |
 
-### Common Tools
+### Outils courants
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
@@ -133,7 +133,7 @@ Status Codes
 Headers
 Content-Type: media type (application/json, text/html).
 
-Authorization: credentials (e.g., Bearer <token>).
+Authorization: credentials (e.g., ******
 
 Cache-Control: caching policy.
 

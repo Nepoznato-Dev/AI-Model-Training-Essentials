@@ -1,4 +1,4 @@
-# Linguaggi di codifica
+# Linguaggi di programmazione
 
 ## Python
 
@@ -36,7 +36,7 @@ def greet(name: str, times: int = 1) -> str:
     return (f"Hello, {name}! " * times).strip()
 ```
 
-### Elenca le comprensioni
+### List comprehension
 
 ```python
 squares = [x**2 for x in range(10)]
@@ -60,12 +60,12 @@ class Dog(Animal):
 
 ### Modelli comuni
 
-- Utilizzare `with open(path) as f:` per I/O file.
+- Utilizzare `with open(path) as f:` per la lettura e scrittura di file.
 - Preferisci le stringhe f (`f"hello {name}"`) rispetto a `%` o `.format()`.
 - Utilizzare `dataclasses.dataclass` per le classi di soli dati.
 - Utilizzare `pathlib.Path` invece di `os.path` per i percorsi dei file.
 
-### Utensili
+### Strumenti
 
 - `pip install <package>` installa i pacchetti.
 - `python -m venv .venv && source .venv/bin/activate` crea un ambiente virtuale.
@@ -75,7 +75,7 @@ class Dog(Animal):
 
 ---
 
-##JavaScript
+## JavaScript
 
 JavaScript è il linguaggio principale del web. Funziona nei browser e sui server tramite Node.js. È tipizzato dinamicamente e basato su prototipi.
 
@@ -137,7 +137,7 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### Utensili
+### Strumenti
 
 - `npm init -y` inizializza un progetto.
 - `npm install <package>` aggiunge una dipendenza.
@@ -146,11 +146,11 @@ btn.addEventListener("click", () => {
 
 ---
 
-## Dattiloscritto
+## TypeScript
 
 TypeScript è un superset di JavaScript tipizzato staticamente che viene compilato in JavaScript semplice. Aggiunge annotazioni di tipo, interfacce, generici ed enumerazioni.
 
-### Digita le annotazioni
+### Annotazioni di tipo
 
 ```typescript
 let username: string = "alice";
@@ -213,7 +213,7 @@ class Counter {
 }
 ```
 
-### Utensili
+### Strumenti
 
 - `npm install -g typescript` installa il compilatore.
 - `tsc` compila il progetto.
@@ -221,7 +221,7 @@ class Counter {
 
 ---
 
-## Ruggine
+## Rust
 
 Rust è un linguaggio di programmazione di sistemi incentrato su sicurezza, velocità e concorrenza. Previene i bug di sicurezza della memoria in fase di compilazione attraverso il suo sistema di proprietà.
 
@@ -243,7 +243,7 @@ fn calculate_length(s: &String) -> usize {
 
 I prestiti mutabili (`&mut T`) richiedono che non esistano altri prestiti contemporaneamente.
 
-### A vita
+### Lifetime
 
 La durata garantisce che i riferimenti non sopravvivano ai dati a cui puntano.
 
@@ -269,7 +269,7 @@ fn area(shape: &Shape) -> f64 {
 }
 ```
 
-### gestione degli errori
+### Gestione degli errori
 
 ```rust
 use std::fs;
@@ -288,7 +288,7 @@ fn main() {
 
 L'operatore `?` propaga automaticamente gli errori all'interno delle funzioni che restituiscono `Result`.
 
-### Utensili (carico)
+### Strumenti (carico)
 
 - `cargo new project_name` crea un nuovo progetto.
 - `cargo build` compila.
@@ -299,7 +299,7 @@ L'operatore `?` propaga automaticamente gli errori all'interno delle funzioni ch
 
 ---
 
-## Vai
+## Go
 
 Go (Golang) è un linguaggio compilato tipizzato staticamente progettato per semplicità e programmi simultanei ad alte prestazioni.
 
@@ -367,7 +367,7 @@ func main() {
 }
 ```
 
-### Differisci
+### `defer`
 
 ```go
 func readFile(path string) error {
@@ -381,7 +381,7 @@ func readFile(path string) error {
 }
 ```
 
-### Utensili
+### Strumenti
 
 - `go mod init module/name` inizializza un modulo.
 - `go get ./...` scarica le dipendenze.
@@ -392,7 +392,7 @@ func readFile(path string) error {
 
 ---
 
-##C e C++
+## C e C++
 
 C è un linguaggio procedurale compilato di basso livello. C++ estende C con classi, modelli e la libreria di modelli standard (STL).
 
@@ -445,7 +445,7 @@ private:
 };
 ```
 
-RAII (Resource Acquisition Is Inizializzazione) lega la durata delle risorse alla durata degli oggetti, garantendo che la pulizia avvenga automaticamente nei distruttori.
+RAII (Resource Acquisition Is Initialization) lega il ciclo di vita delle risorse a quello degli oggetti, così il rilascio avviene automaticamente nei distruttori.
 
 ### Contenitori STL
 
@@ -462,22 +462,23 @@ scores["Alice"] = 95;
 scores["Bob"]   = 87;
 ```
 
-### Punti salienti del C++ moderno (C++17 / C++20).
+### Punti chiave del C++ moderno (C++17 / C++20)
 
-- `auto` tipo detrazione.
+- deduzione del tipo con `auto`.
 - Cicli `for` basati su intervalli: `for (auto& item : container)`.
-- Puntatori intelligenti: `std::unique_ptr`, `std::shared_ptr` — evita i caratteri grezzi `new`/`delete`.
+- Puntatori intelligenti: `std::unique_ptr`, `std::shared_ptr` — evitare l’uso diretto di `new`/`delete` quando possibile.
 - Associazioni strutturate: `auto [key, val] = pair;`.
 - `std::optional`, `std::variant`, `std::string_view`.
 
-### Compilazione- `gcc main.c -o main` compila C.
+### Compilazione
+- `gcc main.c -o main` compila C.
 - `g++ -std=c++20 -Wall main.cpp -o main` compila C++.
 - `make` automatizza le build multi-file tramite un `Makefile`.
 - `cmake` è il generatore di sistemi di compilazione standard per progetti più grandi.
 
 ---
 
-## Veloce
+## Swift
 
 Swift è un linguaggio di programmazione moderno e tipizzato staticamente sviluppato da Apple per iOS, macOS, watchOS e tvOS. È disponibile anche su Linux.
 
@@ -548,7 +549,7 @@ struct Cat: Describable {
 }
 ```
 
-### Codificabile (codifica/decodifica JSON)
+### `Codable` (codifica/decodifica JSON)
 
 ```swift
 struct User: Codable {
@@ -578,7 +579,7 @@ struct ContentView: View {
 }
 ```
 
-### Utensili
+### Strumenti
 
 - `swift build` compila un progetto Swift Package Manager.
 - `swift run` esegue il progetto.
@@ -588,13 +589,13 @@ struct ContentView: View {
 
 ---
 
-## Fondamenti di codifica (indipendentemente dalla lingua)
+## Fondamenti di programmazione (indipendenti dal linguaggio)
 
 ### Flusso di lavoro per la risoluzione dei problemi
 
 1. Definire l'input, l'output e i vincoli prima di scrivere il codice.
 2. Suddividere l'attività in sottoproblemi più piccoli.
-3. Inizia con una soluzione semplice e corretta, quindi ottimizza se necessario.
+3. Parti da una soluzione semplice e corretta, poi ottimizzala solo se necessario.
 4. Convalida con test, casi limite e input realistici.
 
 ### Strutture dati fondamentali
@@ -623,7 +624,7 @@ struct ContentView: View {
 - Minimizzare il caso di guasto per isolare la causa.
 - Esaminare registri, input e ipotesi.
 - Modificare una variabile alla volta durante il test.
-- Aggiungi test di regressione in modo che lo stesso bug non ritorni.
+- Aggiungi test di regressione per evitare che lo stesso bug si ripresenti.
 
 ### Piramide dei test
 
@@ -644,6 +645,6 @@ struct ContentView: View {
 
 - Convalidare e disinfettare l'input esterno.
 - Utilizzare query con parametri per impedire l'iniezione SQL.
-- Memorizza le password con algoritmi di hashing avanzati (ad esempio Argon2, bcrypt).
+- Memorizza le password usando algoritmi di hashing robusti, come Argon2 o bcrypt.
 - Evitare di incorporare segreti nel codice sorgente.
 - Applicare il privilegio minimo per credenziali e servizi.

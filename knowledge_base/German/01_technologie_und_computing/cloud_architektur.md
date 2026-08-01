@@ -5,45 +5,45 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Cloud Architektur
+# Cloud-Architektur
 
-## Grundlagen des Cloud Computing
+## Grundlagen des Cloud-Computing
 
-### Was ist Cloud Computing?
+### Was ist Cloud-Computing?
 Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbanken, Netzwerke, Software) über das Internet mit nutzungsbasierter Preisgestaltung.
 
 ### Wesentliche Merkmale (NIST-Definition)
-- **On-Demand Self-Service**: Ressourcen ohne menschliche Interaktion bereitstellen
+- **Selbstbedienung auf Abruf**: Ressourcen ohne menschliche Interaktion bereitstellen
 - **Breiter Netzwerkzugriff**: Über Netzwerk via Standardmechanismen verfügbar
 - **Ressourcen-Pooling**: Mandantenfähiges Modell mit dynamischer Zuweisung
 - **Schnelle Elastizität**: Schnell nach außen und innen skalieren
-- **Gemessener Service**: Ressourcennutzung überwacht und abgerechnet
+- **Messbarer Service**: Ressourcennutzung wird überwacht und abgerechnet
 
 ### Cloud-Bereitstellungsmodelle
-- **Public Cloud**: Im Besitz von Anbietern, gemeinsame Infrastruktur (AWS, Azure, GCP)
-- **Private Cloud**: Dediziert für eine einzelne Organisation (vor Ort oder gehostet)
-- **Hybrid Cloud**: Kombination von Public und Private Clouds
-- **Multi-Cloud**: Verwendung mehrerer Public Cloud-Anbieter
-- **Community Cloud**: Gemeinsam genutzt von Organisationen mit gemeinsamen Anliegen
+- **Öffentliche Cloud**: Im Besitz von Anbietern, gemeinsame Infrastruktur (AWS, Azure, GCP)
+- **Private Cloud**: Ausschließlich für eine einzelne Organisation vorgesehen (vor Ort oder gehostet)
+- **Hybrid-Cloud**: Kombination aus öffentlicher und privater Cloud
+- **Multi-Cloud**: Nutzung mehrerer Public-Cloud-Anbieter
+- **Community-Cloud**: Gemeinsam von Organisationen mit ähnlichen Anforderungen genutzt
 
 ### Servicemodelle
 
-#### Infrastructure as a Service (IaaS)
+#### Infrastruktur als Dienst (IaaS)
 - **Bietet**: Virtuelle Maschinen, Speicher, Netzwerke, Betriebssysteme
 - **Beispiele**: AWS EC2, Google Compute Engine, Azure VMs
 - **Anwendungsfälle**: Lift-and-Shift-Migrationen, Entwicklungsumgebungen, hohe Kontrollanforderungen
 
-#### Platform as a Service (PaaS)
+#### Plattform als Dienst (PaaS)
 - **Bietet**: Entwicklungsplattformen, Datenbanken, Middleware
 - **Beispiele**: Heroku, Google App Engine, AWS Elastic Beanstalk
 - **Anwendungsfälle**: Anwendungsentwicklung, API-Bereitstellung, Microservices
 
-#### Software as a Service (SaaS)
+#### Software als Dienst (SaaS)
 - **Bietet**: Vollständige Anwendungen über das Internet
 - **Beispiele**: Salesforce, Google Workspace, Microsoft 365, Slack
 - **Anwendungsfälle**: E-Mail, CRM, Zusammenarbeit, Geschäftsanwendungen
 
-#### Function as a Service (FaaS) / Serverless
+#### Funktionen als Dienst (FaaS) / Serverless
 - **Bietet**: Ereignisgesteuerte Funktionsausführung
 - **Beispiele**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Anwendungsfälle**: Ereignisverarbeitung, APIs, geplante Aufgaben, Echtzeitverarbeitung
@@ -53,30 +53,30 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 ### Amazon Web Services (AWS)
 - **Marktanteil**: ~32% (größter Anbieter)
 - **Hauptdienste**:
-  - Compute: EC2, Lambda, ECS, EKS
-  - Storage: S3, EBS, Glacier
-  - Datenbank: RDS, DynamoDB, Aurora
-  - Networking: VPC, Route 53, CloudFront
+  - Rechenleistung: EC2, Lambda, ECS, EKS
+  - Speicher: S3, EBS, Glacier
+  - Datenbanken: RDS, DynamoDB, Aurora
+  - Netzwerk: VPC, Route 53, CloudFront
   - KI/ML: SageMaker, Rekognition, Comprehend
 
 ### Microsoft Azure
 - **Marktanteil**: ~23%
 - **Stärken**: Enterprise-Integration, Hybrid-Cloud, Microsoft-Ökosystem
 - **Hauptdienste**:
-  - Compute: Virtual Machines, Azure Functions, AKS
-  - Storage: Blob Storage, Disk Storage
-  - Datenbank: SQL Datenbank, Cosmos DB
-  - Networking: Virtual Network, Traffic Manager
+  - Rechenleistung: Virtual Machines, Azure Functions, AKS
+  - Speicher: Blob Storage, Disk Storage
+  - Datenbanken: SQL-Datenbank, Cosmos DB
+  - Netzwerk: Virtual Network, Traffic Manager
   - KI/ML: Azure ML, Cognitive Services
 
 ### Google Cloud Platform (GCP)
 - **Marktanteil**: ~10%
 - **Stärken**: Datenanalyse, KI/ML, Kubernetes
 - **Hauptdienste**:
-  - Compute: Compute Engine, Cloud Functions, GKE
-  - Storage: Cloud Storage, Persistent Disk
-  - Datenbank: Cloud SQL, Firestore, Bigtable
-  - Analytics: BigQuery, Dataflow, Pub/Sub
+  - Rechenleistung: Compute Engine, Cloud Functions, GKE
+  - Speicher: Cloud Storage, Persistent Disk
+  - Datenbanken: Cloud SQL, Firestore, Bigtable
+  - Analytik: BigQuery, Dataflow, Pub/Sub
   - KI/ML: Vertex AI, AutoML
 
 ### Andere Anbieter
@@ -87,7 +87,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 
 ## Cloud-Architekturmuster
 
-### Prinzipien des Well-Architected Framework
+### Prinzipien des Well-Architected-Frameworks
 
 #### Operative Exzellenz
 - Operationen automatisieren
@@ -162,7 +162,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - Verarbeitungsknoten skalieren unabhängig
 - **Anwendungsfälle**: Hochvolumige, latenzarme Anwendungen
 
-## Compute-Dienste
+## Rechendienste
 
 ### Virtuelle Maschinen
 - **Typen**: Allgemein, rechenoptimiert, speicheroptimiert, GPU
@@ -219,14 +219,14 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **Wide-Column**: Bigtable, Cassandra (verwaltet)
 - **Graph**: Neptune, Cosmos DB (Graph-API)
 
-### Data Warehousing
+### Data-Warehouse-Lösungen
 - **Dienste**: Snowflake, Redshift, BigQuery, Synapse
 - **Merkmale**: Spaltenorientierter Speicher, MPP-Architektur
 - **Anwendungsfälle**: Analytics, BI, groß angelegte Datenanalyse
 
 ### Caching-Dienste
-- **In-Memory**: ElastiCache (Redis/Memcached), Cloud Memorystore
-- **CDN-Caching**: CloudFront, Cloud CDN, Azure CDN
+- **Arbeitsspeicherbasiert**: ElastiCache (Redis/Memcached), Cloud Memorystore
+- **CDN-Zwischenspeicherung**: CloudFront, Cloud CDN, Azure CDN
 - **Anwendungsfälle**: Sitzungsspeicher, Abfrage-Caching, Content-Bereitstellung
 
 ## Netzwerke
@@ -237,12 +237,12 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **IP-Adressierung**: CIDR-Blöcke, IPv4/IPv6
 - **Routentabellen**: Steuern des Datenverkehrsflusses
 
-### Load Balancing
-- **Typen**: Application (L7), Netzwerk (L4), Gateway
+### Lastverteilung
+- **Typen**: Anwendung (L7), Netzwerk (L4), Gateway
 - **Funktionen**: Health Checks, SSL-Terminierung, Sticky Sessions
 - **Dienste**: ELB/ALB/NLB, Cloud Load Balancing, Azure Load Balancer
 
-### Content Delivery Networks (CDN)
+### Inhaltsauslieferungsnetzwerke (CDNs)
 - **Zweck**: Inhalte an Edge-Standorten cachen
 - **Vorteile**: Reduzierte Latenz, geringere Origin-Last, globale Verteilung
 - **Dienste**: CloudFront, Cloud CDN, Azure CDN, Akamai
@@ -261,12 +261,12 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 
 ## Sicherheit in der Cloud
 
-### Shared Responsibility Model
+### Modell der geteilten Verantwortung
 - **Anbieterverantwortung**: Sicherheit DER Cloud (Infrastruktur)
 - **Kundenverantwortung**: Sicherheit IN der Cloud (Daten, Anwendungen, Zugriff)
 - **Variiert nach Dienst**: Mehr verwaltet = mehr Anbieterverantwortung
 
-### Identity and Access Management (IAM)
+### Identitäts- und Zugriffsmanagement (IAM)
 - **Benutzer**: Einzelne Identitäten
 - **Gruppen**: Sammlungen von Benutzern
 - **Rollen**: Temporäre Anmeldeinformationen für Dienste/Benutzer
@@ -276,7 +276,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 ### Netzwerksicherheit
 - **Sicherheitsgruppen**: Stateful-Firewalls für Instanzen
 - **Netzwerk-ACLs**: Stateless-Firewalls für Subnetze
-- **Web Application Firewall (WAF)**: Schutz vor Web-Exploits
+- **Web Application Firewall (WAF)**: Schutz vor Angriffen auf Webanwendungen
 - **DDoS-Schutz**: Shield, Cloud Armor, DDoS Protection
 
 ### Datenschutz
@@ -288,7 +288,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 ### Compliance und Governance
 - **Zertifizierungen**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
 - **Tools**: Richtliniendurchsetzung, Compliance-Berichterstattung, Audit-Logs
-- **Frameworks**: Cloud Sicherheit Alliance, NIST CSF
+- **Frameworks**: Cloud Security Alliance, NIST CSF
 
 ## DevOps in der Cloud
 
@@ -298,11 +298,11 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **GCP**: Cloud Build, Cloud Deploy
 - **Drittanbieter**: Jenkins, CircleCI, GitLab CI
 
-### Infrastructure as Code (IaC)
+### Infrastruktur als Code (IaC)
 - **Terraform**: Multi-Cloud, deklarativ, Statusverwaltung
 - **CloudFormation**: AWS nativ, YAML/JSON-Vorlagen
 - **ARM-Vorlagen**: Azure nativ
-- **Deployment Manager**: GCP nativ
+- **Deployment Manager**: nativ für GCP
 - **Pulumi**: Infrastruktur mit Programmiersprachen
 - **Vorteile**: Versionskontrolle, Wiederholbarkeit, Dokumentation
 
@@ -312,17 +312,17 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **Puppet**: Deklarativ, starke Berichterstattung
 - **SaltStack**: Schnell, Python-basiert
 
-### Monitoring und Observability
+### Monitoring und Beobachtbarkeit
 - **Metriken**: CloudWatch, Cloud Monitoring, Azure Monitor
 - **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
-- **Tracing**: X-Ray, Cloud Trace, Application Insights
+- **Verteiltes Tracing**: X-Ray, Cloud Trace, Application Insights
 - **Dashboards**: CloudWatch Dashboards, Cloud Console
 - **Alerting**: SNS, Cloud Monitoring-Warnungen, Action Groups
 
 ### Container-Orchestrierung
 - **Kubernetes**: Industriestandard für Orchestrierung
 - **Verwaltete Dienste**: EKS, AKS, GKE
-- **Service Mesh**: Istio, Linkerd (Datenverkehrsverwaltung, Sicherheit)
+- **Service Mesh**: Istio, Linkerd (Verwaltung des Datenverkehrs, Sicherheit)
 - **GitOps**: ArgoCD, Flux (deklarative Bereitstellungen)
 
 ## Kostenverwaltung
@@ -348,7 +348,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **GCP**: Abrechnungsberichte, Recommender
 - **Drittanbieter**: CloudHealth, CloudCheckr, Datadog
 
-## Hochverfügbarkeit und Disaster Recovery
+## Hochverfügbarkeit und Wiederherstellung nach Ausfällen
 
 ### Verfügbarkeitskonzepte
 - **Availability Zones**: Physisch getrennte Rechenzentren innerhalb einer Region
@@ -361,7 +361,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **Load Balancing**: Datenverkehr auf gesunde Instanzen verteilen
 - **Datenbank-Replikation**: Multi-AZ-Bereitstellungen, Lesereplikate
 
-### Disaster Recovery-Strategien
+### Strategien zur Notfallwiederherstellung
 - **Backup und Wiederherstellung**: Periodische Backups, bei Bedarf wiederherstellen (niedrigste Kosten)
 - **Pilot Light**: Kernelemente laufen, während der Katastrophe hochskalieren
 - **Warm Standby**: Verkleinerte Version läuft immer
@@ -374,18 +374,18 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 
 ## Aufkommende Trends
 
-### Edge Computing
+### Edge-Computing
 - Daten näher an der Quelle verarbeiten
 - **Dienste**: AWS Outposts, Wavelength, Azure Edge, Cloud CDN
 - **Anwendungsfälle**: IoT, Echtzeit-Analytics, latenzarme Anwendungen
 
-### Multi-Cloud und Hybrid Cloud
+### Multi-Cloud und Hybrid-Cloud
 - Vendor Lock-in vermeiden
 - Best-of-Breed-Dienste nutzen
 - **Tools**: Terraform, Anthos, Arc, CloudHealth
 
 ### KI/ML-Dienste
-- Vorgefertigte Modelle: Vision, Sprache, Sprachverarbeitung
+- Vorgefertigte Modelle: Bilderkennung, Sprache, Sprachverarbeitung
 - Benutzerdefiniertes Modelltraining: SageMaker, Vertex AI, Azure ML
 - MLOps: Modellbereitstellung, Monitoring, Governance
 
@@ -395,7 +395,7 @@ Bedarfsgerechte Bereitstellung von Rechenressourcen (Server, Speicher, Datenbank
 - **Potenzial**: Kryptographie, Optimierung, Arzneimittelentwicklung
 
 ### Nachhaltige Cloud
-- CO2-Fußabdruck-Tracking
+- Nachverfolgung des CO2-Fußabdrucks
 - Verpflichtungen zu erneuerbaren Energien
 - Effiziente Ressourcennutzung
-- Green Architecture-Muster
+- Muster für nachhaltige Architekturen

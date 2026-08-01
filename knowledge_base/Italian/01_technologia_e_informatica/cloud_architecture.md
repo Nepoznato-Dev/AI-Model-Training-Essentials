@@ -3,21 +3,21 @@
 ## Fondamenti di cloud computing
 
 ### Cos'è il cloud computing?
-Fornitura su richiesta di risorse informatiche (server, storage, database, reti, software) su Internet con prezzi a consumo.
+Fornitura on-demand di risorse informatiche — come server, storage, database, reti e software — tramite Internet, con un modello di prezzo a consumo.
 
 ### Caratteristiche essenziali (definizione NIST)
 - **Self-service su richiesta**: fornitura di risorse senza interazione umana
 - **Ampio accesso alla rete**: disponibile in rete tramite meccanismi standard
-- **Resource Pooling**: modello multi-tenant con assegnazione dinamica
+- **Condivisione delle risorse**: modello multi-tenant con allocazione dinamica
 - **Elasticità rapida**: scala rapidamente verso l'esterno e verso l'interno
 - **Servizio misurato**: utilizzo delle risorse monitorato e fatturato
 
 ### Modelli di distribuzione cloud
 - **Cloud pubblico**: di proprietà dei fornitori, infrastruttura condivisa (AWS, Azure, GCP)
-- **Private Cloud**: dedicato alla singola organizzazione (on-premise o ospitato)
-- **Hybrid Cloud**: combinazione di cloud pubblici e privati
-- **Multi-Cloud**: utilizzo di più provider di cloud pubblici
-- **Community Cloud**: condiviso da organizzazioni con preoccupazioni comuni
+- **Cloud privato**: dedicato a una singola organizzazione, on-premise o ospitato
+- **Cloud ibrido**: combinazione di ambienti pubblici e privati
+- **Multi-cloud**: utilizzo di più provider di cloud pubblico
+- **Cloud di comunità**: condiviso da organizzazioni con esigenze o vincoli comuni
 
 ### Modelli di servizio
 
@@ -43,7 +43,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ## Principali fornitori di servizi cloud
 
-### Servizi Web di Amazon (AWS)
+### Amazon Web Services (AWS)
 - **Quota di mercato**: ~32% (maggior fornitore)
 - **Servizi chiave**:
   - Calcolo: EC2, Lambda, ECS, EKS
@@ -80,7 +80,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ## Modelli di architettura cloud
 
-### Principi quadro ben architettati
+### Principi del Well-Architected Framework
 
 #### Eccellenza operativa
 - Automatizzare le operazioni
@@ -90,29 +90,29 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 #### Sicurezza
 - Implementare una solida base identitaria
-- Abilita la tracciabilità
+- Abilitare la tracciabilità
 - Applicare la sicurezza a tutti i livelli
 - Automatizzare le migliori pratiche di sicurezza
-- Proteggi i dati in transito e a riposo
+- Proteggere i dati in transito e a riposo
 
 #### Affidabilità
-- Procedure di recupero test
+- Testare le procedure di ripristino
 - Ripristino automatico in caso di errore
 - Scala orizzontalmente per la disponibilità
-- Smettila di indovinare la capacità
-- Gestire il cambiamento nell'automazione
+- Evitare di stimare la capacità "a intuito"
+- Gestire il cambiamento tramite l'automazione
 
 #### Efficienza prestazionale
-- Democratizzare le tecnologie avanzate
-- Diventa globale in pochi minuti
+- Rendere accessibili le tecnologie avanzate
+- Espandersi a livello globale in pochi minuti
 - Utilizzare architetture serverless
-- Sperimenta più spesso
-- Considera la simpatia meccanica
+- Sperimentare più spesso
+- Considerare le caratteristiche intrinseche dei sistemi
 
 #### Ottimizzazione dei costi
-- Adottare un modello di consumo
+- Adottare un modello basato sul consumo
 - Misurare l'efficienza complessiva
-- Smettere di spendere soldi per il lavoro indifferenziato
+- Evitare di spendere per attività poco differenzianti
 - Analizzare e attribuire le spese
 - Utilizzare i servizi gestiti
 
@@ -124,7 +124,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - Comunicare tramite API (REST, gRPC, messaggistica)
 - Distribuire in modo indipendente
 - **Vantaggi**: scalabilità, isolamento dei guasti, diversità tecnologica
-- **Sfide**: Complessità distribuita, coerenza dei dati, monitoraggio
+- **Sfide**: complessità distribuita, coerenza dei dati, monitoraggio
 
 #### Architettura guidata dagli eventi
 - I componenti comunicano attraverso eventi
@@ -133,11 +133,11 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Tecnologie**: Kafka, SNS/SQS, EventBridge, Pub/Sub
 - **Vantaggi**: accoppiamento flessibile, scalabilità, elaborazione in tempo reale
 
-#### Architettura senza server
+#### Architettura serverless
 - Nessuna gestione del server richiesta
 - Paga per esecuzione
 - Ridimensionamento automatico
-- **Componenti**: Funzioni, API Gateway, servizi gestiti
+- **Componenti**: funzioni, API Gateway, servizi gestiti
 - **Vantaggi**: efficienza dei costi, operazioni ridotte, implementazione rapida
 - **Considerazioni**: avviamenti a freddo, vincoli del fornitore, limiti di esecuzione
 
@@ -146,7 +146,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - Livello applicazione/logica aziendale
 - Livello di accesso ai dati
 - Livello database
-- **Vantaggi**: Separazione delle preoccupazioni, manutenibilità
+- **Vantaggi**: separazione delle responsabilità, manutenibilità
 - **Comune**: applicazioni Web a 3 livelli
 
 #### Architettura basata sullo spazio
@@ -181,7 +181,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Caratteristiche**: struttura piatta, metadati, accesso HTTP
 - **Esempi**: AWS S3, Google Cloud Storage, BLOB di Azure
 - **Casi d'uso**: risorse statiche, backup, data lake, archivi
-- **Classi di archiviazione**: caldo, freddo, freddo, archivio (costo/accesso variabile)
+- **Classi di archiviazione**: standard, accesso infrequente, cold, archive (con costi e tempi di accesso differenti)
 
 ### Archiviazione a blocchi
 - **Caratteristiche**: volumi grezzi, collegati alle VM
@@ -189,12 +189,12 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Casi d'uso**: database, volumi di avvio, esigenze di prestazioni elevate
 - **Tipi**: SSD, HDD, IOPS con provisioning
 
-### Archiviazione file
+### Archiviazione di file
 - **Caratteristiche**: file system condivisi, protocolli NFS/SMB
 - **Esempi**: AWS EFS, Google Filestore, File di Azure
 - **Casi d'uso**: gestione dei contenuti, configurazioni condivise, lift-and-shift
 
-### Archiviazione
+### Archiviazione di archivio
 - **Caratteristiche**: costo più basso, ritardi nel recupero
 - **Esempi**: S3 Glacier, Azure Archive Storage
 - **Casi d'uso**: conformità, backup a lungo termine, dati storici
@@ -212,9 +212,9 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **Colonna ampia**: Bigtable, Cassandra (gestito)
 - **Grafico**: Nettuno, Cosmos DB (API grafico)
 
-### Archiviazione dati
+### Data warehouse
 - **Servizi**: Snowflake, Redshift, BigQuery, Synapse
-- **Caratteristiche**: Memoria colonnare, architettura MPP
+- **Caratteristiche**: archiviazione colonnare, architettura MPP
 - **Casi d'uso**: analisi, BI, analisi dei dati su larga scala
 
 ### Servizi di memorizzazione nella cache
@@ -255,28 +255,28 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ## Sicurezza nel cloud
 
 ### Modello di responsabilità condivisa
-- **Responsabilità del fornitore**: Sicurezza del cloud (infrastruttura)
-- **Responsabilità del cliente**: Sicurezza NEL cloud (dati, applicazioni, accesso)
-- **Varia in base al servizio**: Più gestione = più responsabilità del fornitore
+- **Responsabilità del fornitore**: sicurezza del cloud, cioè dell’infrastruttura sottostante
+- **Responsabilità del cliente**: sicurezza nel cloud, quindi dati, applicazioni e accessi
+- **Varia in base al servizio**: più il servizio è gestito dal provider, più responsabilità ricadono su di lui
 
 ### Gestione delle identità e degli accessi (IAM)
 - **Utenti**: identità individuali
 - **Gruppi**: raccolte di utenti
-- **Ruoli**: Credenziali temporanee per servizi/utenti
+- **Ruoli**: credenziali temporanee assegnate a servizi o utenti
 - **Politiche**: documenti JSON che definiscono le autorizzazioni
-- **Principi**: Privilegio minimo, separazione dei compiti
+- **Principi**: privilegio minimo e separazione dei compiti
 
 ### Sicurezza della rete
 - **Gruppi di sicurezza**: firewall con stato per le istanze
 - **ACL di rete**: firewall stateless per sottoreti
 - **Web Application Firewall (WAF)**: protezione dagli exploit web
-- **Protezione DDoS**: Scudo, Cloud Armor, Protezione DDoS
+- **Protezione DDoS**: Shield, Cloud Armor, protezione DDoS gestita
 
 ### Protezione dei dati
 - **Crittografia a riposo**: KMS, chiavi gestite dal cliente
 - **Crittografia in transito**: TLS/SSL, HTTPS
 - **Gestione delle chiavi**: HSM, rotazione delle chiavi, audit trail
-- **Gestione dei segreti**: gestione dei segreti, Key Vault
+- **Gestione dei segreti**: Secrets Manager, Key Vault e strumenti equivalenti
 
 ### Conformità e governance
 - **Certificazioni**: SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR
@@ -288,7 +288,7 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 ### Servizi CI/CD
 - **AWS**: CodePipeline, CodeBuild, CodeDeploy
 - **Azure**: Azure DevOps, azioni GitHub
-- **GCP**: creazione nel cloud, distribuzione nel cloud
+- **GCP**: Cloud Build, Cloud Deploy
 - **Terze parti**: Jenkins, CircleCI, GitLab CI
 
 ### Infrastruttura come codice (IaC)
@@ -296,21 +296,21 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 - **CloudFormation**: modelli YAML/JSON nativi AWS
 - **Modelli ARM**: nativo di Azure
 - **Gestore distribuzione**: nativo di GCP
-- **Pulumi**: Infrastruttura che utilizza linguaggi di programmazione
+- **Pulumi**: infrastruttura definita tramite linguaggi di programmazione
 - **Vantaggi**: controllo della versione, ripetibilità, documentazione
 
 ### Gestione della configurazione
 - **Ansible**: playbook YAML senza agente
 - **Chef**: ecosistema maturo, basato su Ruby
-- **Burattino**: resoconto dichiarativo e forte
+- **Puppet**: approccio dichiarativo e ampio ecosistema
 - **SaltStack**: veloce, basato su Python
 
 ### Monitoraggio e osservabilità
-- **Metriche**: CloudWatch, monitoraggio cloud, monitoraggio di Azure
-- **Logging**: CloudWatch Logs, Cloud Logging, Log Analytics
-- **Tracciamento**: X-Ray, Cloud Trace, Application Insights
-- **Dashboard**: dashboard CloudWatch, console Cloud
-- **Avvisi**: SNS, avvisi Cloud Monitoring, gruppi di azioni
+- **Metriche**: CloudWatch, Cloud Monitoring, Azure Monitor
+- **Logging**: CloudWatch Logs, Cloud Logging, Azure Log Analytics
+- **Tracing**: X-Ray, Cloud Trace, Application Insights
+- **Dashboard**: dashboard di CloudWatch, Cloud Console e strumenti equivalenti
+- **Avvisi**: SNS, alert di Cloud Monitoring, action group di Azure
 
 ### Orchestrazione dei contenitori
 - **Kubernetes**: orchestrazione standard del settore
@@ -345,19 +345,19 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ### Concetti di disponibilità
 - **Zone di disponibilità**: data center fisicamente separati all'interno della regione
-- **Regioni**: aree geografiche con più zone di disponibilità
-- **Edge Locations**: posizioni della cache CDN a livello globale
+- **Regioni**: aree geografiche che comprendono più zone di disponibilità
+- **Edge location**: nodi CDN distribuiti a livello globale
 
 ### Strategie HA
 - **Multi-AZ**: distribuzione in zone di disponibilità
 - **Riparazione automatica**: sostituzione automatica delle istanze non riuscite
-- **Bilanciamento del carico**: distribuisci il traffico tra istanze integre
+- **Bilanciamento del carico**: distribuire il traffico tra istanze sane
 - **Replica del database**: implementazioni Multi-AZ, repliche di lettura
 
 ### Strategie di ripristino di emergenza
 - **Backup e ripristino**: backup periodici, ripristino quando necessario (costo più basso)
-- **Pilot Light**: elementi principali in funzione, ingranditi durante il disastro
-- **Warm Standby**: versione ridotta sempre in esecuzione
+- **Pilot Light**: componenti essenziali sempre attivi, ampliati solo in caso di emergenza
+- **Warm Standby**: ambiente ridotto ma sempre operativo
 - **Multi-sito attivo/attivo**: produzione completa in più regioni (costo più elevato)
 
 ### RTO e RPO
@@ -384,8 +384,8 @@ Fornitura su richiesta di risorse informatiche (server, storage, database, reti,
 
 ### Informatica quantistica
 - **Servizi**: AWS Braket, Azure Quantum
-- **Stato**: Fase iniziale, sperimentale
-- **Potenziale**: Crittografia, ottimizzazione, scoperta di farmaci
+- **Stato**: tecnologia ancora iniziale e sperimentale
+- **Potenziale**: crittografia, ottimizzazione, scoperta di farmaci
 
 ### Cloud sostenibile
 - Monitoraggio dell'impronta di carbonio

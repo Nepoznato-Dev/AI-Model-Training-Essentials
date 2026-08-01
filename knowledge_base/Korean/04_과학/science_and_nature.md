@@ -5,44 +5,44 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 과학 와 자연
+# 과학과 자연
 
-## Physics
+## 물리학
 
-Physics is 그 natural 과학 that studies matter, energy, 와 그 fundamental forces 의 그 universe. 그 four fundamental forces are gravity, electromagnetism, 그 strong nuclear force, 와 그 weak nuclear force. Gravity is 그 weakest 의 그 four forces but has infinite range 와 affects all objects 와 함께 mass. Newton's 법률 의 gravity states that every object attracts every other object 와 함께 a force proportional to their masses 와 inversely proportional to 그 square 의 그 distance between them.
+물리학은 물질, 에너지, 그리고 우주의 근본적인 힘을 연구하는 자연과학입니다. 네 가지 기본 힘은 중력, 전자기력, 강한 핵력, 약한 핵력입니다. 중력은 네 힘 가운데 가장 약하지만 작용 범위가 무한하며 질량을 가진 모든 물체에 영향을 줍니다. Newton의 중력 법칙에 따르면 모든 물체는 서로를 끌어당기며, 그 힘의 크기는 질량에 비례하고 물체 사이 거리의 제곱에 반비례합니다.
 
-Einstein's theory 의 general relativity describes gravity as a curvature 의 spacetime caused by mass 와 energy. Einstein's theory 의 special relativity established that 그 speed 의 light is constant 에서 all inertial frames 의 참조 와 that mass 와 energy are equivalent, expressed as E = mc squared.
+Einstein의 일반 상대성 이론은 중력을 질량과 에너지 때문에 시공간이 휘어지는 현상으로 설명합니다. 특수 상대성 이론은 모든 관성 좌표계에서 빛의 속도가 일정하다는 점과 질량과 에너지가 서로 등가라는 점을 밝혔으며, 이는 E = mc²로 표현됩니다.
 
-## Atoms 와 Matter
+## 원자와 물질
 
-An atom is 그 smallest unit 의 an element that retains 그 chemical properties 의 that element. Atoms consist 의 a nucleus containing protons 와 neutrons, surrounded by electrons. 그 number 의 protons 에서 an atom determines which element it is, called 그 atomic number. Elements are organized 에서 그 periodic table by atomic number. There are 118 known elements. Hydrogen is 그 lightest 와 most abundant element 에서 그 universe. Carbon is 그 basis 의 all known life due to its ability to form four chemical bonds.
+원자는 어떤 원소의 화학적 성질을 유지하는 가장 작은 단위입니다. 원자는 양성자와 중성자를 담고 있는 원자핵, 그리고 그 주위를 도는 전자로 이루어집니다. 원자 안의 양성자 수는 그 원자가 어떤 원소인지 결정하며, 이를 원자번호라고 합니다. 원소들은 원자번호 순서에 따라 주기율표에 배열됩니다. 현재 알려진 원소는 118개입니다. 수소는 우주에서 가장 가볍고 가장 풍부한 원소입니다. 탄소는 네 개의 화학 결합을 형성할 수 있기 때문에 알려진 모든 생명체의 기반이 됩니다.
 
-Matter exists 에서 four common states: solid, liquid, gas, 와 plasma. 에서 a solid, atoms are tightly packed. 에서 a liquid, atoms can flow but remain close. 에서 a gas, atoms move freely. Plasma is an ionized gas 와 is 그 most common state 의 matter 에서 그 universe, found 에서 stars.
+물질은 보통 고체, 액체, 기체, 플라스마의 네 가지 상태로 존재합니다. 고체에서는 원자들이 촘촘히 모여 있고, 액체에서는 서로 가까이 있으면서도 흐를 수 있습니다. 기체에서는 원자들이 자유롭게 움직입니다. 플라스마는 이온화된 기체로, 별에서 발견되며 우주에서 가장 흔한 물질 상태입니다.
 
-## Chemistry
+## 화학
 
-Chemistry is 그 study 의 matter 와 그 changes it undergoes. Chemical reactions involve 그 breaking 와 forming 의 chemical bonds. An acid is a substance that donates hydrogen ions (protons) 에서 a solution. A base is a substance that accepts hydrogen ions. 그 pH scale measures how acidic or basic a solution is, ranging from 0 (most acidic) to 14 (most basic), 와 함께 7 being neutral. Water has a pH 의 7.
+화학은 물질과 그 물질이 겪는 변화를 연구하는 학문입니다. 화학 반응은 화학 결합이 끊어지고 새로 형성되는 과정입니다. 산은 용액에서 수소 이온(양성자)을 내놓는 물질이고, 염기는 수소 이온을 받아들이는 물질입니다. pH 척도는 용액이 얼마나 산성인지 또는 염기성인지를 나타내며, 0(가장 산성)부터 14(가장 염기성)까지 범위를 가집니다. 7은 중성이며, 물의 pH는 7입니다.
 
-Photosynthesis is 그 process by which plants, algae, 와 some bacteria convert light energy, usually from 그 Sun, into chemical energy stored 에서 glucose. 그 equation is: carbon dioxide + water + light energy → glucose + oxygen. Photosynthesis is essential 위한 life on Earth as it produces oxygen 와 forms 그 base 의 most 음식 chains.
+광합성은 식물, 조류, 일부 박테리아가 보통 태양빛에서 얻은 빛에너지를 glucose에 저장된 화학에너지로 바꾸는 과정입니다. 식은 다음과 같습니다: carbon dioxide + water + light energy → glucose + oxygen. 광합성은 산소를 만들어 내고 대부분의 먹이사슬의 기초를 이루기 때문에 지구 생명에 필수적입니다.
 
-## Biology
+## 생물학
 
-Biology is 그 study 의 living organisms. All life shares certain characteristics: it is organized, responds to stimuli, grows, reproduces, 와 uses energy. DNA (deoxyribonucleic acid) carries 그 genetic information 의 living organisms. DNA is a double helix made 의 four nucleotide bases: adenine, thymine, cytosine, 와 guanine. Cells are 그 basic structural unit 의 life. There are two main types: prokaryotic cells (no membrane-bound nucleus, like bacteria) 와 eukaryotic cells (와 함께 a nucleus, like plants 와 animals).
+생물학은 생명체를 연구하는 학문입니다. 모든 생명은 몇 가지 공통된 특징을 지닙니다. 조직화되어 있고, 자극에 반응하며, 성장하고, 번식하며, 에너지를 사용합니다. DNA (deoxyribonucleic acid)는 생명체의 유전 정보를 담고 있습니다. DNA는 adenine, thymine, cytosine, guanine의 네 가지 nucleotide base로 이루어진 이중 나선 구조입니다. 세포는 생명의 기본 구조 단위입니다. 세포에는 크게 두 종류가 있습니다. 세균처럼 막으로 둘러싸인 핵이 없는 원핵세포와, 식물과 동물처럼 핵을 가진 진핵세포입니다.
 
-Evolution is 그 change 에서 그 heritable characteristics 의 biological populations over successive generations. Charles Darwin proposed 그 theory 의 natural selection, which states that individuals 와 함께 advantageous traits are more likely to survive 와 reproduce. 그 theory 의 evolution by natural selection is 그 unifying framework 의 modern biology.
+진화는 생물 집단의 유전되는 형질이 세대를 거치며 변화하는 현상입니다. Charles Darwin은 자연선택 이론을 제안했으며, 이는 유리한 형질을 가진 개체가 더 잘 생존하고 번식할 가능성이 높다는 내용입니다. 자연선택에 의한 진화 이론은 현대 생물학을 통합하는 핵심 틀입니다.
 
-## Electricity 와 Magnetism
+## 전기와 자기
 
-Electricity is 그 flow 의 electric charge, usually electrons. Voltage (measured 에서 volts) is 그 electrical potential difference between two points. Current (measured 에서 amperes) is 그 rate 의 flow 의 electric charge. Resistance (measured 에서 ohms) is opposition to 그 flow 의 current. Ohm's 법률 states that voltage equals current multiplied by resistance (V = IR). Magnetism is a force produced by moving electric charges. Electric 와 magnetic fields are two aspects 의 그 same phenomenon: electromagnetism.
+전기는 보통 전자인 전하의 흐름입니다. 전압(voltage, 단위 volts)은 두 지점 사이의 전기적 위치 에너지 차이입니다. 전류(current, 단위 amperes)는 전하가 흐르는 속도입니다. 저항(resistance, 단위 ohms)은 전류의 흐름을 방해하는 정도입니다. Ohm의 법칙은 전압이 전류와 저항의 곱과 같다고 설명하며, 식으로는 V = IR입니다. 자기력은 움직이는 전하에 의해 생기는 힘입니다. 전기장과 자기장은 같은 현상의 두 측면이며, 이를 전자기라고 부릅니다.
 
-## 그 Universe 와 Cosmology
+## 우주와 우주론
 
-그 universe is approximately 13.8 billion years old, beginning 와 함께 그 Big Bang. 그 universe contains approximately 2 trillion galaxies, each containing billions to trillions 의 stars. 그 Milky Way is our home galaxy, a spiral galaxy containing between 100 와 400 billion stars. 그 nearest star to our Sun is Proxima Centauri, about 4.24 light-years away. Dark matter 와 dark energy together make up about 95% 의 그 universe's total content, though their 자연 is not fully understood.
+우주는 약 138억 년 전에 Big Bang으로 시작한 것으로 추정됩니다. 우주에는 약 2조 개의 은하가 있으며, 각 은하에는 수십억 개에서 수조 개의 별이 들어 있습니다. Milky Way는 우리가 속한 나선은하로, 약 1,000억 개에서 4,000억 개의 별을 포함합니다. 태양에 가장 가까운 별은 Proxima Centauri이며, 약 4.24광년 떨어져 있습니다. 암흑물질과 암흑에너지는 합쳐서 우주 전체의 약 95%를 차지하지만, 그 정확한 본질은 아직 완전히 밝혀지지 않았습니다.
 
-## Geology
+## 지질학
 
-Earth is composed 의 layers: 그 inner core (solid iron 와 nickel), outer core (liquid iron 와 nickel), mantle (semi-solid rock), 와 crust (solid rock). 그 tectonic plates are large pieces 의 Earth's crust 와 upper mantle that move slowly over time. Earthquakes occur when tectonic plates grind or slip against each other. Volcanoes form where magma from Earth's interior reaches 그 surface. 그 rock cycle describes how rocks are formed, broken down, 와 reformed over millions 의 years.
+지구는 여러 층으로 이루어져 있습니다. 중심에는 고체 상태의 철과 니켈로 된 내핵이 있고, 그 바깥에는 액체 상태의 철과 니켈로 된 외핵이 있습니다. 그 위를 반고체 암석으로 이루어진 맨틀이 둘러싸고, 가장 바깥에는 고체 암석층인 지각이 있습니다. 판 구조론에서 말하는 tectonic plates는 지각과 상부 맨틀의 거대한 조각으로, 오랜 시간에 걸쳐 천천히 움직입니다. 지진은 이러한 판들이 서로 맞부딪히거나 미끄러질 때 발생합니다. 화산은 지구 내부의 마그마가 지표에 도달하면서 형성됩니다. 암석 순환은 암석이 수백만 년에 걸쳐 생성되고, 분해되고, 다시 만들어지는 과정을 설명합니다.
 
-## Energy
+## 에너지
 
-Energy exists 에서 many forms: kinetic (energy 의 motion), potential (stored energy), thermal (heat), chemical, electrical, 와 nuclear. 그 법률 의 conservation 의 energy states that energy cannot be created or destroyed, only transformed from one form to another. Renewable energy sources include solar, wind, hydroelectric, geothermal, 와 tidal energy. Fossil fuels (coal, oil, 와 natural gas) are non-renewable energy sources formed from 그 remains 의 ancient organisms.
+에너지는 운동에너지, 위치에너지, 열에너지, 화학에너지, 전기에너지, 핵에너지 등 다양한 형태로 존재합니다. 에너지 보존 법칙에 따르면 에너지는 새로 만들어지거나 사라지지 않고, 한 형태에서 다른 형태로 전환될 뿐입니다. 재생 가능 에너지원에는 태양광, 풍력, 수력, 지열, 조력 에너지가 있습니다. 화석연료(석탄, 석유, 천연가스)는 고대 생물의 유해가 오랜 시간에 걸쳐 변해 형성된 비재생 에너지원입니다.

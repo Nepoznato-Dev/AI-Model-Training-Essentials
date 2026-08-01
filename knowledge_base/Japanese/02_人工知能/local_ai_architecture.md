@@ -5,26 +5,26 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI アーキテクチャ
+# ローカル AI アーキテクチャ
 
-A practical ガイド to running large 言語 models entirely on-device — hardware considerations, inference engines, memory optimisation, と system design のために edge デプロイ.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No データ leaves その device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, ネットワーク-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, と fine-tuning.
+大規模言語モデルを完全にオンデバイスで動かすための実践的ガイドです。ハードウェア要件、推論エンジン、メモリ最適化、エッジデプロイ向けシステム設計を扱います。
 
 ---
 
-## Hardware Requirements
+## なぜ AI をローカルで動かすのか
 
-### GPU Memory (VRAM)
-その most critical resource. Model size で memory ≈ **parameters × bytes per parameter**.
+- **Privacy**: データが端末の外に出ない
+- **Cost**: token ごとの API 料金がかからない
+- **Latency**: ネットワークに依存しない、安定した低遅延推論ができる
+- **Offline availability**: インターネットがなくても動く
+- **Control**: モデルのバージョン、カスタマイズ、fine-tuning を自分で管理できる
+
+---
+
+## ハードウェア要件
+
+### GPU メモリ（VRAM）
+もっとも重要な資源です。メモリ上のモデルサイズはおおむね **パラメータ数 × 1 パラメータ当たりのバイト数** で見積もれます。
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
@@ -33,170 +33,178 @@ A practical ガイド to running large 言語 models entirely on-device — hard
 | INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
 | INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ システム.
+**実用上の目安:**
+- 8GB VRAM → 4-bit なら 7B モデル程度まで
+- 12GB VRAM → 4-bit なら 13B モデル程度まで
+- 24GB VRAM → 4-bit なら 70B モデル、8-bit なら 13B モデル程度まで
+- Apple Silicon（unified memory）は 64GB 以上あれば 70B モデルも動かせることがある
 
-### RAM (System Memory)
-- のために CPU inference, you need enough system RAM to load その model (similar to VRAM numbers).
-- のために GPU inference, system RAM matters のために loading その model into memory before offloading to VRAM.
+### RAM（システムメモリ）
+- CPU 推論では、モデル全体を読み込めるだけの RAM が必要です（概ね VRAM と同程度の目安）。
+- GPU 推論でも、VRAM にオフロードする前にモデルを読み込むためのシステム RAM が重要です。
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free のために multiple models.
+### ストレージ
+- 量子化済みモデルの重みでも数 GB を使います（例: 4-bit の 7B でディスク上約 4 GB）。複数モデルを扱うなら、少なくとも 20〜50 GB 程度の空きがあると安心です。
 
 ### CPU
-- のために prompt processing (prefill) と CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent パフォーマンス のために LLMs due to その unified memory と Neural Engine.
+- prompt 処理（prefill）や CPU offloading では、現代的なマルチコア CPU が役立ちます。
+- Apple M シリーズは unified memory と Neural Engine により、LLM 実行に非常に相性が良いです。
 
 ---
 
-## Quantisation
+## 量子化（Quantisation）
 
-Quantisation reduces その numerical precision の weights, dramatically cutting memory と increasing speed at a small accuracy cost.
+量子化は重みの数値精度を下げることで、精度低下を小さく抑えつつ、メモリ使用量を大幅に減らし、速度を高める手法です。
 
-### Popular Formats
+### よく使われる形式
 
-| Format | Bits | Description | Typical use |
+| Format | Bits | 説明 | 主な用途 |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised のために CPU/GPU hybrid | Best のために local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best のために NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good のために batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | llama.cpp 形式。CPU / GPU ハイブリッドに最適化 | ローカル推論向けの定番 |
+| **GPTQ** | 4–8 | GPU 専用で CUDA 上で効率的 | NVIDIA GPU 向け |
+| **AWQ** | 4 | activation-aware な量子化。GPU 専用 | GPU での batch inference 向け |
+| **ONNX** | variable | 標準化され、クロスプラットフォーム | 本番サービング向け |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality のために most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation と better perplexity at 4/3 bits.
+### 量子化レベルの選び方
+- **Q8_0**（8-bit）: 品質低下が最小で、サイズは大きい
+- **Q6_K**（6-bit）: 品質と圧縮率のバランスが良い
+- **Q5_K_M**（5-bit）: 実用上の定番バランス
+- **Q4_K_M**（4-bit）: もっとも軽く、多くの用途で十分な品質
+- **IQ4_XS** / **IQ3_XS**: 4 / 3 bit 帯で perplexity 改善を狙った量子化
 
-**Rule の thumb:** Use Q4_K_M のために a good balance の quality と size. If you have extra VRAM, use Q5 or Q6.
+**経験則:** 品質とサイズのバランスを取るなら Q4_K_M が無難です。VRAM に余裕があるなら Q5 や Q6 を選ぶとよいでしょう。
 
 ---
 
-## Inference Engines (Local)
+## ローカル推論エンジン
 
 ### llama.cpp
-- Written で C++.
-- Supports GGUF format.
-- Optimised のために CPU と GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, と Python bindings.
+- C++ で書かれている
+- GGUF 形式に対応している
+- CUDA、Metal、OpenCL を通じて CPU / GPU の両方を活用できる
+- 特に CPU 上で高速
+- コマンドライン、server mode、Python binding がある
 
-**Example command:**
+**例:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+```
 
-Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+`-ngl 32` は 32 層を GPU にオフロードする指定です。
 
-Auto-downloads models, manages them.
+### Ollama
+- llama.cpp を、使いやすい CLI と REST API で包んだツール
+- モデルの自動ダウンロードや管理を行う
+- プロトタイピングやデスクトップアプリに向く
+- system prompt を定義する custom Modelfile に対応
 
-Great for prototyping and desktop apps.
-
-Supports custom Modelfiles for system prompts.
-
-Usage:
-
-bash
+**使い方:**
+```bash
 ollama run phi3:3.8b
 ollama run llama3:8b
-LM Studio
-Graphical desktop app for Windows, macOS, Linux.
+```
 
-One-click download and chat interface.
+### LM Studio
+- Windows、macOS、Linux 向けの GUI デスクトップアプリ
+- ワンクリックのダウンロードとチャット UI を備える
+- OpenAI 互換 API を持つローカルサーバーを内蔵
+- 非技術者や素早い試用に向いている
 
-Built-in local server with OpenAI-compatible API.
+### Hugging Face Transformers + bitsandbytes
+- Hugging Face モデル向けの標準的な Python ライブラリ群
+- `load_in_4bit=True` などで bitsandbytes による 4-bit 量子化を使える
+- fine-tuning の自由度は高いが、推論は llama.cpp より遅いことが多い
 
-Good for non-technical users and quick testing.
+### ExLlamaV2
+- GPTQ と AWQ 向けの非常に高速な GPU 推論エンジン
+- NVIDIA GPU で特に高性能
+- batched generation に対応
 
-Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
+### mlx（Apple）
+- Apple が M シリーズ向けに提供するフレームワーク
+- Apple Silicon 上で高度に最適化されている
+- Python API を利用できる
 
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
+---
 
-More flexible for fine-tuning but slower than llama.cpp for inference.
+## メモリ管理
 
-ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
+### Context Window と KV Cache
+KV cache は、各層・各 token の key-value pair を保存する領域で、context length に比例して増えます。
 
-Best performance on NVIDIA GPUs.
+メモリコストのおおまかな式:
 
-Supports batched generation.
+`2 × layers × (KV heads × head dim) × tokens × bytes per value`
 
-mlx (Apple)
-Apple's framework for M-series chips.
+たとえば 32 層、KV heads が 8、head dim が 128 のモデルでは、1 token 当たり約 65 KB が必要です。128k tokens になると、cache だけで約 8 GB になります。
 
-Highly optimised for Apple Silicon.
+### オフロード戦略
+- **Layer offloading**: 一部の層を GPU、残りを CPU に置く。純 CPU より速く、必要 VRAM を抑えられる
+- **Token streaming**: まとめてではなく token を逐次処理する
 
-Python API.
+### Prompt Caching
+類似した prompt 間で KV cache を再利用し、prefill を再計算しないようにする方法です。vLLM や `llama.cpp --prompt-cache` などで利用できます。
 
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
+### Memory-Mapped Files
+巨大モデルで RAM が限られる環境では、重み全体を RAM に載せず、ディスクから直接 memory-map して扱う方法が有効です。llama.cpp はデフォルトでこれを使います。
 
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
+---
 
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
+## デプロイアーキテクチャ
 
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
+### Single-Device Mode
+1 台のマシン（ノート PC、スマートフォン、エッジデバイス）で 1 つのモデルを動かす方式です。個人アシスタント、ノートアプリ、コード補完などに向きます。
 
-Token streaming: Process tokens incrementally rather than all at once.
+### Hybrid Edge-Cloud
+一般的な問い合わせはローカルモデルで処理し、複雑な質問だけクラウドモデルへフォールバックする方式です。速度とプライバシーを確保しつつ、難問への対応力も得られます。
 
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
+### Distributed Inference（Multi-GPU）
+大きなモデルでは、層を複数 GPU に分散したり（tensor parallelism）、context を機器間で分けたり（pipeline parallelism）します。llama.cpp の `-ngl` や ExLlamaV2 の `--num-gpu-layers` などが使われます。
 
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
+### モバイルデプロイ
+- **Android**: JNI binding や ML Kit 経由で llama.cpp を使う
+- **iOS**: Swift binding や mlx 経由で llama.cpp を使う
+- **Web**: WebLLM（WebGPU + ONNX runtime）や transformers.js を使う
 
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
+---
 
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
+## パフォーマンス最適化
 
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
+### Flash Attention
+attention 計算を高速化し、メモリ使用量も減らす手法です。llama.cpp、ExLlamaV2、近年の transformers library で利用できます。
 
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
+### Batch Inference
+複数の prompt を 1 回の forward pass で処理する方法です。throughput を大きく高められます。llama-batch や vLLM が代表的です。
 
-iOS: Use llama.cpp via Swift bindings or mlx.
+### Early Stopping / Token Budgeting
+生成が際限なく続かないよう、最大 token 数の上限を設けます。
 
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
+### Speculative Decoding
+小型高速モデル（draft model）で token を先読みし、大型モデルで並列に検証する方法です。2〜3 倍の高速化が得られることがあります。
 
-Performance Optimisation
-Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
+---
 
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
+## 実践セットアップガイド
 
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
-
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
-
-Practical Setup Guide
-1. Install Ollama
-bash
+1. **Ollama をインストールする**
+```bash
 curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
-bash
-ollama pull phi3:3.8b-q4_K_M
-3. Run with API
-bash
-ollama serve
-Then send requests to http://localhost:11434/api/generate.
+```
 
-4. Python Integration
-python
+2. **モデルを取得する**
+```bash
+ollama pull phi3:3.8b-q4_K_M
+```
+
+3. **API として起動する**
+```bash
+ollama serve
+```
+
+その後、`http://localhost:11434/api/generate` にリクエストを送ります。
+
+4. **Python から連携する**
+```python
 import requests
 
 response = requests.post(
@@ -204,244 +212,34 @@ response = requests.post(
     json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
-bash
+```
+
+5. **別案: llama.cpp を直接使う**
+```bash
 # Download GGUF from Hugging Face
 wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
 
 # Run server
 ./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
-
-Track memory usage (RAM and VRAM).
-
-Track tokens per second (throughput).
-
-Track time to first token (latency).
-
-Use built-in logging from llama.cpp or Ollama.
-
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
-
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
-
-Multilingual: Smaller models may have less multilingual capability.
-
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
-
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
-
-text
+```
 
 ---
 
-## File 4: `security_best_practices.md`
+## 監視と可観測性
 
-```markdown
-# セキュリティ ベストプラクティス
-
-A practical ガイド to securing applications, infrastructure, と データ — from 開発 to production.
-
----
-
-## OWASP Top 10 (2021) — 概要
-
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **セキュリティ Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable と Outdated Components**: Known CVEs で dependencies.
-7. **Identification と Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software と データ Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **セキュリティ Logging と Monitoring Failures**: No detection の breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse の server to make requests to internal システム.
+- GPU 使用率を追跡する（Linux では `nvidia-smi`、macOS では Activity Monitor など）
+- メモリ使用量（RAM と VRAM）を確認する
+- 1 秒当たりの token 数（throughput）を測る
+- 最初の token が返るまでの時間（latency）を測る
+- llama.cpp や Ollama の組み込みログを活用する
 
 ---
 
-## Input Validation と Output Encoding
+## 制約とトレードオフ
 
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex のために email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows と DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: のために email, URL, と date validation, use standard libraries (e.g., `email-validator` で Python, `validator.js` で Node).
+- **品質差**: 小型ローカルモデル（3.8B〜7B）は、複雑な推論では GPT-4 や Claude 3.5 などの大型クラウドモデルに及ばないことが多い
+- **Knowledge cutoff**: モデルの知識は学習時点で固定されるため、最新情報には RAG などで補う必要がある
+- **多言語性能**: 小型モデルは多言語能力が弱い場合がある
+- **Tool use**: function calling を含む agentic workflow は、小型モデルでは信頼性が低いことがある
 
-### Output Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell コマンド from user input; if unavoidable, use `shlex.quote()` or similar.
-
----
-
-## Authentication と Authorisation
-
-### Password 管理
-- **Hashing**: Store passwords と a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) のために sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
-
-### Session 管理
-- Use secure, HTTP-only, SameSite cookies のために session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout と on password change.
-- Avoid exposing session IDs で URLs.
-
-### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring セキュリティ).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
-
-### JWT (JSON ウェブ Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) のために better セキュリティ; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), と expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes のために access tokens; use refresh tokens のために longer sessions.
-- **Store securely**: Never store JWTs で localStorage (vulnerable to XSS); use HTTP-only cookies instead.
-
----
-
-## API セキュリティ
-
-### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
-
-### Rate Limiting と Throttling
-- Apply per-user と per-IP rate limits to prevent abuse と DoS.
-- Return `429 Too Many Requests` と a `Retry-After` header.
-
-### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` で production).
-- Validate `Origin` header on その server side.
-
-### Input Validation
-- Validate all request parameters, including headers と body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` で JSON Schema).
-
-### HTTPS / TLS
-- Enforce HTTPS で production.
-- Use HSTS (HTTP Strict Transport セキュリティ) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
-
----
-
-## Secrets 管理
-
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, データベース URLs) to source control.
-- Use environment variables or secret 管理 tools.
-
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets で files と commit them (と KMS or GPG).
-- **Docker secrets**: のために Swarm mode; Kubernetes secrets (base64-encoded, but use と care; consider external Secrets Store CSI driver).
-
-### Rotation
-- Regularly rotate secrets と service accounts.
-- Automate rotation where possible.
-
----
-
-## Dependency 管理
-
-### Vulnerability Scanning
-- **Python**: `safety`, `pip-audit`, `bandit`.
-- **Node**: `npm audit`, `yarn audit`, `snyk`.
-- **Rust**: `cargo audit`.
-- **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
-
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests のために minor/patch updates.
-- Review changelogs のために breaking changes.
-
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums の downloaded dependencies.
-- Prefer official registries と trust only verified publishers.
-
----
-
-## Infrastructure セキュリティ
-
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use セキュリティ groups (AWS) or NSGs (Azure) のために fine-grained control.
-
-### OS Hardening
-- Apply セキュリティ updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services と default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### ネットワーク Segmentation
-- Place databases と caches で private subnets と no internet access.
-- Use a DMZ のために public-facing services.
-- Apply その principle の least privilege to ネットワーク access.
-
-### Secrets で Infrastructure
-- Never store secrets で CI/CD environment variables unless encrypted.
-- Use その cloud provider's IAM roles のために EC2/VM instances instead の long-lived keys.
-
----
-
-## Logging と Monitoring
-
-### What to Log
-- Authentication イベント (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- データベース schema changes.
-- System errors と exceptions.
-- API requests と responses (redact sensitive データ).
-
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
-
-### Alerting
-- Set up alerts のために:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (セキュリティ Information と Event 管理) のために 上級 correlation.
-
-### Log Retention
-- Retain logs のために at least 30–90 days depending on regulatory requirements.
-- Store logs で a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
-
----
-
-## Secure 開発 Lifecycle (SDL)
-
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early で design.
-3. **Secure coding standards**: Enforce via linters と code review checklists.
-4. **SAST** (Static Application セキュリティ テスト): Scan source code のために vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application セキュリティ テスト): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration テスト**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan のために when a breach is detected.
-
----
-
-## Emergency Checklist (When a Breach is Suspected)
-
-1. **Do not panic** — but act quickly.
-2. **Isolate** その affected システム (disconnect from ネットワーク if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, と disk images.
-4. **Identify** その scope: which システム, which データ.
-5. **Rotate** all compromised credentials と secrets.
-6. **Patch** その vulnerability.
-7. **Notify** affected users と regulatory bodies if required (within 法的 timeframes).
-8. **Conduct a post-mortem** to understand root cause と improve processes.
+それでも、要約、Q&A、コード補完、分類といった日常的な多くのタスクでは、ローカルモデルはすでに十分実用的であり、今も急速に改善しています。

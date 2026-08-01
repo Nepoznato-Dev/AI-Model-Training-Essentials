@@ -1,4 +1,4 @@
-#Sviluppo Web
+# Sviluppo web
 
 ## Sviluppo frontend
 
@@ -7,19 +7,19 @@
 #### HTML (linguaggio di markup per ipertesto)
 - **HTML semantico**: utilizzo di tag significativi (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
 - **Moduli**: tipi di input, convalida, etichette di accessibilità
-- **Media**: immagini, video, incorporamento audio
+- **Media**: immagini, video e audio incorporato
 - **Meta tag**: SEO, viewport, codifica dei caratteri
 - **Funzionalità HTML5**: Canvas, SVG, archiviazione locale, geolocalizzazione, socket web
 
 #### CSS (fogli di stile a cascata)
-- **Box Model**: contenuto, riempimento, bordo, margine
+- **Box model**: contenuto, padding, bordo, margine
 - **Sistemi di layout**:
   - **Flexbox**: layout unidimensionali, giustificazione del contenuto, allineamento degli elementi
   - **Griglia**: layout bidimensionali, modello di griglia, area di griglia
   - **Posizionamento**: statico, relativo, assoluto, fisso, appiccicoso
-- **Responsive Design**: query multimediali, approccio mobile-first
+- **Responsive design**: media query, approccio mobile-first
 - **Variabili CSS**: proprietà personalizzate per i temi
-- **Animazioni**: transizioni, fotogrammi chiave, trasformazioni
+- **Animazioni**: transizioni, keyframe, trasformazioni
 - **Preprocessori**: Sass, Less (variabili, mixin, nidificazione)
 
 #### JavaScript
@@ -31,13 +31,13 @@
 
 ### Framework frontend moderni
 
-#### Reagisci
+#### React
 - **Componenti**: componenti funzionali, componenti di classe
 - **Hook**: useState, useEffect, useContext, useReducer, hook personalizzati
-- **gestione dello stato**: API contesto, Redux, Zustand, Recoil
+- **Gestione dello stato**: Context API, Redux, Zustand, Recoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosistema**: Next.js (SSR, SSG), Remix, Gatsby
-- ** DOM virtuale **: rendering efficiente tramite algoritmo di differenza
+- **DOM virtuale**: rendering efficiente tramite algoritmo di diff
 
 #### Vue.js
 - **API Opzioni**: dati, metodi, calcolati, guarda
@@ -47,12 +47,12 @@
 - **Vue Router**: routing lato client
 - **Nuxt.js**: framework di rendering lato server
 
-#### Angolare
+#### Angular
 - **Componenti**: decoratori, modelli, ganci del ciclo di vita
 - **Servizi**: inserimento delle dipendenze, modello singleton
 - **RxJS**: programmazione reattiva, osservabili
 - **Routing**: RouterModule, guardie, risolutori
-- **Moduli**: moduli reattivi basati su modelli
+- **Form**: template-driven forms e reactive forms
 - **NgRx**: gestione dello stato in stile Redux
 
 ### Crea strumenti e bundler
@@ -67,11 +67,11 @@
 ### Framework e librerie CSS
 - **Bootstrap**: libreria di componenti, sistema a griglia, utilità
 - **Tailwind CSS**: framework CSS incentrato sull'utilità
-- **IU dei materiali**: implementazione del Material Design di Google
+- **Material UI**: implementazione del Material Design di Google
 - **Chakra UI**: libreria di componenti accessibili
 - **Ant Design**: componenti dell'interfaccia utente di livello aziendale
-- **Componenti con stile**: libreria CSS-in-JS
-- **Emozione**: CSS-in-JS con mappe sorgente
+- **Styled Components**: libreria CSS-in-JS
+- **Emotion**: CSS-in-JS con source map
 
 ## Sviluppo del back-end
 
@@ -80,21 +80,21 @@
 #### Node.js
 - **Runtime**: JavaScript sul server (motore V8)
 - **Express.js**: framework web minimo, architettura middleware
-- **NestJS**: architettura di ispirazione angolare, TypeScript
+- **NestJS**: architettura ispirata ad Angular, TypeScript
 - **Fastify**: framework ad alte prestazioni
-- **Koa**: Modern Express degli stessi creatori
-- **gestione pacchetti**: npm, filato, pnpm
+- **Koa**: framework moderno creato dagli autori di Express
+- **Gestione pacchetti**: npm, Yarn, pnpm
 
 #### Python
 - **Django**: framework completo, ORM, pannello di amministrazione, batterie incluse
-- **Flask**: Microframework, ecosistema di estensioni
+- **Flask**: microframework con un ampio ecosistema di estensioni
 - **FastAPI**: documentazione API moderna, asincrona e automatica
-- **Piramide**: framework flessibile e scalabile
+- **Pyramid**: framework flessibile e scalabile
 
 #### Altri linguaggi di backend
 - **Ruby on Rails**: Convenzione sulla configurazione, ActiveRecord ORM
 - **Java Spring**: framework aziendale, inserimento delle dipendenze
-- **PHP Laravel**: sintassi elegante, ORM eloquente, template Blade
+- **PHP Laravel**: sintassi elegante, ORM Eloquent, template Blade
 - **Go Gin**: prestazioni elevate, struttura minima
 - **Rust Actix**: sicurezza della memoria, prestazioni
 - **C# ASP.NET Core**: funzionalità aziendali multipiattaforma
@@ -102,11 +102,11 @@
 ### Integrazione del database
 
 #### ORM (mappatura relazionale a oggetti)
-- **Sequelizza**: Node.js ORM per database SQL
+- **Sequelize**: ORM Node.js per database SQL
 - **Prisma**: accesso al database indipendente dai tipi, client generato automaticamente
 - **SQLAlchemy**: toolkit SQL Python e ORM
 - **ActiveRecord**: Ruby on Rails ORM
-- **Ibernazione**: Java ORM
+- **Hibernate**: ORM per Java
 - **Entity Framework**: .NET ORM
 
 #### Driver del database
@@ -115,22 +115,24 @@
 - **pymongo**: driver MongoDB per Python
 - **redis**: client Redis per più lingue
 
-### Sviluppo dell'API#### API REST
+### Sviluppo delle API
+
+#### API REST
 - **Metodi HTTP**: GET, POST, PUT, PATCH, DELETE
 - **Codici di stato**: 200, 201, 400, 401, 403, 404, 500
 - **Nominazione delle risorse**: sostantivi, plurale, gerarchico
-- **Versione**: percorso URL, intestazioni, parametri di query
+- **Versionamento**: percorso URL, header o parametri di query
 - **Autenticazione**: JWT, OAuth, chiavi API
 - **Documentazione**: OpenAPI/Swagger, Postman
 
-####GraficoQL
+#### GraphQL
 - **Definizione dello schema**: tipi, query, mutazioni, abbonamenti
 - **Resolver**: recupero dei dati a livello di campo
 - **Apollo Server**: implementazione del server GraphQL
-- **Relay**: client GraphQL di Facebook
-- **Vantaggi**: nessun recupero eccessivo, endpoint singolo, tipizzazione forte
+- **Relay**: client GraphQL sviluppato da Facebook
+- **Vantaggi**: niente over-fetching, endpoint unico, tipizzazione forte
 
-####gRPC
+#### gRPC
 - **Buffer di protocollo**: linguaggio di definizione dell'interfaccia
 - **HTTP/2**: streaming bidirezionale
 - **Casi d'uso**: comunicazione di microservizi, applicazioni in tempo reale
@@ -160,7 +162,7 @@
 
 ### Orchestrazione
 - **Kubernetes**: orchestrazione dei contenitori, pod, servizi, distribuzioni
-- **Timone**: gestore di pacchetti Kubernetes
+- **Helm**: package manager per Kubernetes
 - **Service Mesh**: Istio, Linkerd per la rete di microservizi
 
 ### Piattaforme cloud
@@ -169,11 +171,11 @@
 - **Azure**: macchine virtuali, archiviazione BLOB, funzioni, AKS
 - **Vercel**: distribuzione frontend, funzioni serverless
 - **Netlify**: hosting di siti statici, funzioni serverless
-- **Heroku**: Piattaforma come servizio (PaaS)
+- **Heroku**: piattaforma come servizio (PaaS)
 - **DigitalOcean**: infrastruttura cloud semplificata
 
 ### Pipeline CI/CD
-- **Azioni GitHub**: automazione del flusso di lavoro
+- **GitHub Actions**: automazione del flusso di lavoro
 - **GitLab CI**: integrazione continua integrata
 - **Jenkins**: server di automazione estensibile
 - **CircleCI**: CI/CD basato su cloud
@@ -182,7 +184,7 @@
 
 ### Monitoraggio e registrazione
 - **Prestazioni dell'applicazione**: New Relic, Datadog, AppDynamics
-- **Tracciamento errori**: Sentinella, Rollbar, Bugsnag
+- **Tracciamento errori**: Sentry, Rollbar, Bugsnag
 - **Registrazione**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
 - **Monitoraggio del tempo di attività**: Pingdom, UptimeRobot
 - **Analisi**: Google Analytics, Mixpanel, Amplitude
@@ -194,14 +196,14 @@
 - **Tree Shaking**: rimozione del codice inutilizzato
 - **Minificazione**: riduzione delle dimensioni dei file
 - **Compressione**: Gzip, Brotli
-- **Caching**: cache del browser, CDN, addetti ai servizi
+- **Caching**: cache del browser, CDN, service worker
 - **Ottimizzazione delle immagini**: WebP, AVIF, caricamento lento, immagini reattive
-- **CSS critici**: incorporazione di stili Above the Fold
+- **CSS critici**: inclusione inline degli stili necessari per i contenuti iniziali
 - **Ottimizzazione del database**: indicizzazione, ottimizzazione delle query, pooling delle connessioni
 
 ### Segnali web fondamentali
 - **LCP (Largest Contentful Paint)**: prestazioni di caricamento (<2,5 s)
-- **FID (First Input Delay)**: Interattività (<100ms)
+- **FID (First Input Delay)**: interattività (<100 ms)
 - **CLS (Cumulative Layout Shift)**: stabilità visiva (<0,1)
 - **INP (Interazione con Next Paint)**: metrica di reattività
 
@@ -212,14 +214,14 @@
 - **Fastly**: piattaforma cloud Edge
 - **StackPath**: servizi Edge
 
-##Sicurezza web
+## Sicurezza web
 
 ### Vulnerabilità comuni (Top 10 OWASP)
 - **Iniezione**: iniezione SQL, iniezione di comandi
-- **Autenticazione interrotta**: dirottamento della sessione, riempimento di credenziali
+- **Autenticazione compromessa**: hijacking di sessione, credential stuffing
 - **Esposizione di dati sensibili**: dati non crittografati, crittografia debole
 - **Entità esterne XML (XXE)**: vulnerabilità del parser XML
-- **Controllo accesso interrotto**: escalation di privilegi, accesso non autorizzato
+- **Controllo degli accessi compromesso**: escalation di privilegi, accesso non autorizzato
 - **Errore di configurazione della sicurezza**: credenziali predefinite, errori dettagliati
 - **Cross-Site Scripting (XSS)**: riflesso, archiviato, basato su DOM
 - **Deserializzazione non sicura**: attacchi con iniezione di oggetti
@@ -228,15 +230,17 @@
 
 ### Migliori pratiche di sicurezza
 - **HTTPS**: crittografia TLS/SSL, HSTS
-- **Politica di sicurezza dei contenuti (CSP)**: previeni gli attacchi XSS
+- **Content Security Policy (CSP)**: previene gli attacchi XSS
 - **Convalida input**: disinfetta l'input dell'utente
-- **Codifica output**: previene gli attacchi injection
+- **Codifica dell’output**: previene gli attacchi di injection
 - **Protezione CSRF**: token anti-CSRF, cookie SameSite
 - **Limitazione della velocità**: previene gli attacchi di forza bruta
-- **Intestazioni di sicurezza**: Opzioni X-Frame, Opzioni X-Content-Type
+- **Intestazioni di sicurezza**: `X-Frame-Options`, `X-Content-Type-Options`
 - **Scansione delle dipendenze**: audit npm, Snyk, Dependabot
 
-## Test### Tipi di test
+## Test
+
+### Tipi di test
 - **Test unitario**: singoli componenti/funzioni
 - **Test di integrazione**: interazioni dei componenti
 - **End-to-End (E2E)**: flussi di lavoro utente completi
@@ -252,12 +256,12 @@
 - **JUnit**: framework di test Java
 
 ### Strumenti di test E2E
-- **Selenio**: automazione del browser
+- **Selenium**: automazione del browser
 - **Cypress**: test E2E moderni
-- **Drammaturgo**: automazione cross-browser
-- **Burattinaio**: controllo di Chrome senza testa
+- **Playwright**: automazione cross-browser
+- **Puppeteer**: controllo headless di Chrome
 
-## Accessibilità (a11a)
+## Accessibilità (a11y)
 
 ### Linee guida WCAG
 - **Percepibile**: alternative testuali, didascalie, contenuti adattabili
@@ -267,8 +271,8 @@
 
 ### Implementazione
 - **HTML semantico**: corretta gerarchia delle intestazioni, punti di riferimento
-- **Attributi ARIA**: Ruoli, stati, proprietà
-- **gestione focus**: indicatori focus visibili, ordine logico delle schede
+- **Attributi ARIA**: ruoli, stati, proprietà
+- **Gestione del focus**: indicatori visibili e ordine logico di tabulazione
 - **Contrasto colore**: rapporto minimo 4,5:1 per il testo
 - **Test del lettore di schermo**: NVDA, JAWS, VoiceOver
 - **Navigazione tramite tastiera**: tutti gli elementi interattivi accessibili
@@ -276,16 +280,16 @@
 ## App Web progressive (PWA)
 
 ### Funzionalità PWA
-- **Operatori di servizio**: funzionalità offline, sincronizzazione in background
-- **Manifesto app Web**: installazione di prompt, icone e colori del tema
+- **Service worker**: funzionalità offline, sincronizzazione in background
+- **Web App Manifest**: prompt di installazione, icone e colori del tema
 - **App Shell**: scheletro dell'interfaccia utente memorizzato nella cache
 - **Notifiche push**: coinvolgimento degli utenti
 - **Design reattivo**: funziona su tutti i dispositivi
 - **HTTPS obbligatorio**: contesto protetto
 
 ### Strumenti
-- **Workbox**: librerie dei lavoratori del servizio
-- **Faro**: controllo PWA
+- **Workbox**: librerie per i service worker
+- **Lighthouse**: audit PWA
 - **PWA Builder**: genera manifest e icone
 
 ## Tecnologie emergenti
@@ -296,7 +300,7 @@
 - **Casi d'uso**: giochi, editing video, crittografia, inferenza ML
 
 ### Architettura senza server
-- **Funzioni come servizio**: AWS Lambda, Funzioni di Azure, Funzioni Google Cloud
+- **Function as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Vantaggi**: nessuna gestione del server, scalabilità automatica, pagamento in base all'uso
 - **Considerazioni**: avviamenti a freddo, vincoli al fornitore, complessità del debug
 

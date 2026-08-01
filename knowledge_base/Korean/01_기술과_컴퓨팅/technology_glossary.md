@@ -5,205 +5,95 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 기술 Glossary
+# 기술 용어집
 
-A 참조 glossary covering AI models, hardware, benchmarks, 와 core concepts
-에서 그 modern AI 와 컴퓨팅 landscape.
+현대 AI와 컴퓨팅 환경에서 자주 등장하는 AI 모델, 하드웨어, benchmark, 핵심 개념을 정리한 참고용 glossary입니다.
 
 ---
 
-## AI 언어 Models 와 Assistants
+## AI 언어 모델과 어시스턴트
 
 ### ChatGPT
-ChatGPT is an AI chatbot developed by OpenAI, first released 에서 November 2022.
-It is powered by 그 GPT series 의 large 언어 models (LLMs). ChatGPT is one
-의 그 fastest-growing consumer AI products 에서 역사, reaching 100 million
-users within two months 의 launch. It supports text-based conversation, code
-generation, summarisation, 와 creative writing. Paid tiers provide access to
-more powerful models such as GPT-4 와 GPT-4o.
+ChatGPT는 OpenAI가 개발한 AI chatbot으로, 2022년 11월에 처음 공개되었습니다.
+GPT 계열의 large language model(LLM)을 기반으로 하며, 출시 두 달 만에 사용자 1억 명에 도달해 역사상 가장 빠르게 성장한 소비자용 AI 제품 가운데 하나로 꼽힙니다. 텍스트 대화, 코드 생성, 요약, 창의적 글쓰기를 지원하며, 유료 플랜에서는 GPT-4와 GPT-4o 같은 더 강력한 모델을 사용할 수 있습니다.
 
 ### GPT (Generative Pre-trained Transformer)
-GPT is a family 의 large 언어 models created by OpenAI. 그 아키텍처
-uses a decoder-only Transformer trained 와 함께 a next-token prediction objective on
-massive text corpora. Key versions include GPT-2 (2019, 1.5B parameters, notable
-위한 "too dangerous to release" publicity), GPT-3 (2020, 175B parameters, widely
-used via 그 API), GPT-3.5 (그 backbone 의 그 original ChatGPT), 와 GPT-4
-(2023, multimodal, 성능 close to human expert level on many benchmarks).
+GPT는 OpenAI가 만든 large language model 계열입니다. 이 아키텍처는 방대한 텍스트 말뭉치를 대상으로 다음 토큰 예측(next-token prediction) 방식으로 학습한 decoder-only Transformer를 사용합니다. 대표적인 버전으로는 GPT-2(2019, 15억 파라미터, "too dangerous to release" 논란으로 유명), GPT-3(2020, 1750억 파라미터, API를 통해 널리 사용), GPT-3.5(초기 ChatGPT의 기반), GPT-4(2023, multimodal 지원, 여러 benchmark에서 인간 전문가 수준에 가까운 성능)가 있습니다.
 
 ### Claude
-Claude is an AI assistant developed by Anthropic. It is named after Claude
-Shannon, 그 founder 의 information theory. Anthropic was founded by former
-OpenAI researchers 와 focuses on "constitutional AI" — a technique to make
-models safer by training them to follow a set 의 principles. Claude models
-(Claude 1, 2, 3 Haiku / Sonnet / Opus) are known 위한 long context windows (up
-to 200,000 tokens), nuanced reasoning, 와 reduced harmful output compared to
-baseline LLMs.
+Claude는 Anthropic이 개발한 AI assistant입니다. 이름은 information theory의 창시자인 Claude Shannon에서 따왔습니다. Anthropic은 전 OpenAI 연구진이 설립했으며, 모델이 일련의 원칙을 따르도록 훈련해 더 안전하게 만드는 "constitutional AI" 접근법에 집중하고 있습니다. Claude 1, 2, 3 Haiku / Sonnet / Opus 등 Claude 계열 모델은 긴 context window(최대 200,000 tokens), 섬세한 추론, 그리고 기본형 LLM보다 낮은 유해 출력으로 잘 알려져 있습니다.
 
 ### Gemini
-Gemini is Google DeepMind's family 의 multimodal AI models, announced 에서
-December 2023. Gemini is natively multimodal — trained from 그 ground up on
-text, images, audio, 와 video simultaneously, unlike earlier models that had
-modalities added via fine-tuning. Versions include Gemini Nano (on-device),
-Gemini Flash (fast, cost-efficient), 와 Gemini Ultra (highest-capability).
-Gemini powers Google's AI chatbot Bard (renamed Gemini) 와 Google Search AI
-Overviews.
+Gemini는 Google DeepMind가 발표한 multimodal AI 모델 계열로, 2023년 12월에 공개되었습니다. Gemini는 text, images, audio, video를 처음부터 함께 학습한 네이티브 multimodal 모델로, 기존 모델처럼 나중에 fine-tuning으로 모달리티를 덧붙인 형태와 구분됩니다. Gemini Nano(on-device), Gemini Flash(빠르고 비용 효율적), Gemini Ultra(최고 성능) 같은 버전이 있으며, Google의 AI chatbot Bard(현재 이름은 Gemini)와 Google Search AI Overviews를 구동합니다.
 
 ### Phi-3-mini
-Phi-3-mini is a small 언어 model (SLM) developed by Microsoft 와 함께 3.8B
-parameters. It was released 에서 April 2024. Unlike most large models, Phi-3-mini
-was trained on a carefully curated "textbook-quality" dataset — a technique
-pioneered by Microsoft Research — that prioritises 데이터 quality over raw volume.
-Despite being far smaller than GPT-4 or Claude 3 Opus, Phi-3-mini matches or
-outperforms models several times larger on reasoning benchmarks such as MMLU 와
-HumanEval. It supports a 4k token context window 에서 its base variant 와 a 128k
-window 에서 그 long-context variant. Phi-3-mini can run on a single consumer GPU
-or even on-device on a modern smartphone 와 함께 sufficient RAM.
+Phi-3-mini는 Microsoft가 개발한 38억 파라미터 규모의 small language model(SLM)입니다. 2024년 4월에 공개되었으며, 대부분의 대형 모델과 달리 Microsoft Research가 개척한 "textbook-quality" 데이터셋 구성 방식을 사용해 단순한 데이터 양보다 품질을 우선했습니다. GPT-4나 Claude 3 Opus보다 훨씬 작지만, MMLU와 HumanEval 같은 추론 benchmark에서는 자신보다 몇 배 큰 모델과 맞먹거나 더 나은 성능을 보입니다. 기본 버전은 4k token context window를, long-context 버전은 128k window를 지원합니다. 충분한 RAM이 있다면 일반 소비자용 GPU 한 장이나 최신 스마트폰 on-device 환경에서도 실행할 수 있습니다.
 
 ### Llama (Meta AI)
-Llama (Large 언어 Model Meta AI) is an open-weights family 의 models
-released by Meta. Llama 2 (2023) was released 위한 research 와 commercial use
-와 함께 sizes ranging from 7B to 70B parameters. Llama 3 (2024) improved
-성능 significantly, 와 함께 models ranging from 8B to 70B (와 later 400B+).
-Because 그 weights are publicly downloadable, Llama models are 그 foundation
-위한 a large ecosystem 의 fine-tuned variants (Mistral, Alpaca, Vicuna, etc.)
-와 are widely used 위한 local/private AI deployments.
+Llama(Large Language Model Meta AI)는 Meta가 공개한 open-weights 모델 계열입니다. Llama 2(2023)는 7B부터 70B까지 다양한 크기로 연구 및 상업적 활용을 위해 공개되었고, Llama 3(2024)는 성능을 크게 끌어올리며 8B부터 70B, 이후에는 400B+ 규모까지 확장되었습니다. 가중치를 공개 다운로드할 수 있기 때문에 Llama는 Mistral, Alpaca, Vicuna 같은 수많은 fine-tuned 변형 모델 생태계의 기반이 되었고, 로컬 또는 프라이빗 AI 배포에도 널리 사용됩니다.
 
 ### Mistral
-Mistral AI is a French AI company that develops open 와 proprietary LLMs.
-Mistral 7B (2023) demonstrated that a 7B-parameter model can match 그
-성능 의 much larger models using efficient techniques such as sliding
-window attention 와 grouped-query attention. Mixtral 8x7B (2024) is a mixture-
-의-experts model — it routes each token to a subset 의 8 expert networks,
-achieving GPT-3.5-level 성능 while being computationally cheaper.
-Mistral's models are fully open-weight 와 can be run locally.
+Mistral AI는 open 및 proprietary LLM을 개발하는 프랑스 AI 기업입니다. Mistral 7B(2023)는 sliding window attention, grouped-query attention 같은 효율적 기법을 활용해 70억 파라미터 모델이 훨씬 큰 모델과 비슷한 성능을 낼 수 있음을 보여주었습니다. Mixtral 8x7B(2024)는 mixture-of-experts 구조를 사용해 각 token을 8개의 expert network 중 일부로만 보내면서, GPT-3.5 수준의 성능을 더 낮은 계산 비용으로 달성합니다. Mistral의 일부 모델은 완전한 open-weight 형태로 공개되어 로컬 실행이 가능합니다.
 
 ---
 
-## GPU Hardware 와 Graphics Cards
+## GPU 하드웨어와 그래픽 카드
 
 ### GPU (Graphics Processing Unit)
-A GPU is a processor designed 위한 massively parallel computation. Originally
-built 위한 rendering 3D graphics, GPUs have become essential 위한 AI/ML training
-와 inference because they can perform thousands 의 floating-point operations
-simultaneously using thousands 의 small cores. 그 two main GPU manufacturers
-위한 AI are NVIDIA 와 AMD.
+GPU는 대규모 병렬 계산을 위해 설계된 프로세서입니다. 원래는 3D graphics 렌더링을 위해 만들어졌지만, 수천 개의 작은 코어로 부동소수점 연산을 동시에 수행할 수 있기 때문에 오늘날에는 AI/ML 학습과 inference에 필수적인 하드웨어가 되었습니다. AI 분야의 대표적인 GPU 제조사는 NVIDIA와 AMD입니다.
 
 ### NVIDIA GeForce RTX Series
-그 RTX (Ray Tracing Texel eXtreme) series is NVIDIA's consumer GPU line. RTX
-30xx (Ampere, 2020) 와 RTX 40xx (Ada Lovelace, 2022) generations include
-dedicated Tensor Cores 위한 accelerating AI operations. VRAM (video RAM) is
-critical 위한 running AI models locally — an 8GB GPU can handle 7B parameter
-models 에서 4-bit quantisation; a 24GB GPU can handle 70B models 에서 4-bit.
+RTX(Ray Tracing Texel eXtreme) 시리즈는 NVIDIA의 소비자용 GPU 제품군입니다. RTX 30xx(Ampere, 2020)와 RTX 40xx(Ada Lovelace, 2022) 세대에는 AI 연산을 가속하는 전용 Tensor Cores가 포함되어 있습니다. 로컬에서 AI 모델을 실행할 때는 VRAM(video RAM)이 특히 중요합니다. 예를 들어 8GB GPU는 4-bit quantisation 기준으로 7B 모델을 다룰 수 있고, 24GB GPU는 70B 모델을 4-bit로 실행할 수 있습니다.
 
-### NVIDIA A-Series 와 H-Series (데이터 Centre)
-그 A100 (Ampere, 2020) 와 H100 (Hopper, 2022) are NVIDIA's professional AI
-accelerators. An H100 has up to 80GB 의 HBM3 memory 와 is 그 standard
-hardware behind most large-scale LLM training today. These GPUs cost $25,000–
-$40,000 each but offer 10–30× 그 AI throughput 의 consumer RTX cards.
+### NVIDIA A-Series와 H-Series (데이터 센터)
+A100(Ampere, 2020)과 H100(Hopper, 2022)은 NVIDIA의 전문 AI accelerator입니다. H100은 최대 80GB의 HBM3 memory를 탑재하며, 오늘날 대부분의 대규모 LLM 학습을 뒷받침하는 사실상의 표준 하드웨어입니다. 가격은 장당 $25,000-$40,000 수준이지만, 소비자용 RTX 카드보다 10-30배 높은 AI 처리량을 제공합니다.
 
 ### AMD Radeon RX Series
-AMD's consumer GPU line. 그 RX 7900 XTX (2022) has 24GB VRAM 와 can run
-local LLMs via ROCm (AMD's GPU compute stack). AMD GPUs are generally less
-well-supported than NVIDIA 위한 AI frameworks, though 지원 is improving.
+AMD의 소비자용 GPU 제품군입니다. RX 7900 XTX(2022)는 24GB VRAM을 갖추고 있으며, ROCm(AMD의 GPU compute stack)을 통해 로컬 LLM을 실행할 수 있습니다. 아직은 AI framework 지원 면에서 NVIDIA보다 불리하지만, 지원 범위는 점차 개선되고 있습니다.
 
 ### Intel Arc
-Intel Arc is Intel's discrete GPU product line, released starting 에서 2022. Arc
-GPUs 지원 XeSS (Intel's super-sampling) 와 have limited but growing 지원
-위한 AI inference tasks via OpenVINO 와 IPEX-LLM frameworks.
+Intel Arc는 2022년부터 출시된 Intel의 discrete GPU 라인업입니다. Arc GPU는 XeSS(Intel의 super-sampling 기술)를 지원하며, OpenVINO와 IPEX-LLM framework를 통해 제한적이지만 점점 확대되는 AI inference 지원을 제공합니다.
 
 ### ARK Intel (ark.intel.com)
-ARK is Intel's official product specifications 데이터베이스 at ark.intel.com. It
-provides detailed technical specifications 위한 every Intel CPU, GPU, FPGA, 와
-NUC product, including core counts, clock speeds, TDP, supported memory types,
-와 instruction-set features. When you hear "check ARK 위한 specs," it means
-visiting that 데이터베이스 위한 authoritative hardware information.
+ARK는 Intel이 운영하는 공식 제품 사양 데이터베이스로, 주소는 ark.intel.com입니다. 여기에는 CPU, GPU, FPGA, NUC를 포함한 모든 Intel 제품의 코어 수, 클럭 속도, TDP, 지원 메모리 종류, instruction set 기능 등 상세한 기술 사양이 정리되어 있습니다. "spec은 ARK에서 확인하라"는 말은, 신뢰할 수 있는 하드웨어 정보를 얻기 위해 그 데이터베이스를 보라는 뜻입니다.
 
 ---
 
-## AI 성능 Benchmarks
+## AI 성능 벤치마크
 
-### MMLU (Massive Multitask 언어 Understanding)
-MMLU is a benchmark 테스트 LLM knowledge across 57 academic subjects including
-mathematics, 역사, 법률, 의학, 와 computer 과학. It consists 의
-multiple-choice questions drawn from real university-level exams. A score 의
-70% is roughly human undergraduate level; GPT-4 와 Claude 3 score above 86%.
-Phi-3-mini scores around 70% despite its small size.
+### MMLU (Massive Multitask Language Understanding)
+MMLU는 mathematics, history, law, medicine, computer science를 포함한 57개 학문 분야에서 LLM의 지식을 평가하는 benchmark입니다. 실제 대학 수준 시험에서 가져온 객관식 문제로 구성되어 있습니다. 대략 70% 점수면 학부생 수준으로 간주되며, GPT-4와 Claude 3는 86%를 넘는 점수를 기록합니다. Phi-3-mini는 작은 규모에도 불구하고 약 70% 수준을 보입니다.
 
 ### HumanEval
-HumanEval is OpenAI's benchmark 위한 code generation. It consists 의 164 Python
-programming problems 와 함께 automated test cases. Models are measured on
-pass@k — 그 probability that at least one 의 k generated solutions passes all
-tests. GPT-4 scores ~87% (pass@1); a well-tuned 7B model can reach ~50–60%.
+HumanEval은 OpenAI가 만든 코드 생성 benchmark입니다. 자동 테스트 케이스가 포함된 164개의 Python programming 문제로 이루어져 있습니다. 평가는 pass@k, 즉 생성된 k개의 해답 가운데 하나 이상이 모든 테스트를 통과할 확률로 측정합니다. GPT-4는 pass@1 기준 약 87%를 기록하며, 잘 조정된 7B 모델은 대략 50-60% 수준에 도달할 수 있습니다.
 
 ### HellaSwag
-HellaSwag is a commonsense reasoning benchmark. Models are given a sentence
-describing a mundane activity 와 must choose 그 most likely continuation from
-four options. 그 incorrect options are specially designed to be plausible but
-subtly wrong. It tests whether a model has a grounded understanding 의 physical
-와 social situations.
+HellaSwag는 상식 추론을 평가하는 benchmark입니다. 모델은 일상적인 활동을 설명하는 문장을 받고, 네 개의 선택지 중 가장 그럴듯한 다음 문장을 골라야 합니다. 오답 선택지는 그럴듯해 보이지만 미묘하게 틀리도록 설계되어 있어, 모델이 물리적·사회적 상황을 실제로 이해하는지 시험합니다.
 
 ### ARC (AI2 Reasoning Challenge)
-ARC is a benchmark from 그 Allen Institute 위한 AI. It consists 의 grade-school
-과학 questions, split into "Easy" 와 "Challenge" sets. 그 Challenge set
-contains questions that retrieval-based methods 와 simple statistical models
-struggle 와 함께, requiring multi-step reasoning.
+ARC는 Allen Institute for AI가 만든 benchmark입니다. 초등·중등 수준의 과학 문제로 구성되며, "Easy"와 "Challenge" 세트로 나뉩니다. Challenge 세트는 단순 검색 기반 방식이나 통계적 모델로는 풀기 어렵고, 여러 단계를 거치는 추론을 요구합니다.
 
 ---
 
-## Core AI/ML Concepts
+## 핵심 AI/ML 개념
 
 ### RAG (Retrieval-Augmented Generation)
-RAG is a technique that combines a retrieval system (typically a vector
-데이터베이스) 와 함께 a 언어 model. Instead 의 relying solely on 그 model's
-parametric knowledge, RAG first retrieves relevant documents from an external
-지식 기반 와 then includes them 에서 그 model's context. This allows 그
-model to answer questions about up-to-date or domain-specific information
-without retraining. Potato.ai uses a form 의 RAG — it retrieves from its KB
-와 includes 그 results 에서 그 context before generating a response.
+RAG는 retrieval system(보통 vector database)과 language model을 결합하는 기법입니다. 모델의 내부 파라미터 지식에만 의존하는 대신, 먼저 외부 지식 기반에서 관련 문서를 찾아온 뒤 그 내용을 model context에 넣어 응답을 생성합니다. 이 방식 덕분에 재학습 없이도 최신 정보나 도메인 특화 정보를 다룰 수 있습니다. Potato.ai도 RAG의 한 형태를 사용하며, KB에서 관련 내용을 검색해 context에 포함한 뒤 답변을 생성합니다.
 
 ### Fine-tuning
-Fine-tuning is 그 process 의 continuing to train a pre-trained model on a
-smaller, domain-specific dataset. This adapts 그 model's weights 위한 a
-particular task or domain. 위한 example, a base LLM might be fine-tuned on
-medical records to create a medical Q&A assistant. Fine-tuning is
-computationally expensive but much cheaper than training from scratch.
+Fine-tuning은 사전 학습된 모델을 더 작은 도메인 특화 데이터셋으로 추가 학습시키는 과정입니다. 이를 통해 모델 가중치를 특정 작업이나 분야에 맞게 조정할 수 있습니다. 예를 들어 기본 LLM을 medical records 기반으로 fine-tune하면 의료 Q&A assistant를 만들 수 있습니다. 계산 비용은 적지 않지만, 처음부터 모델을 새로 학습하는 것보다는 훨씬 저렴합니다.
 
 ### Quantisation
-Quantisation reduces 그 numerical precision 의 model weights (e.g. from 32-bit
-float to 4-bit integer). This dramatically reduces memory footprint — a 7B model
-에서 16-bit precision requires ~14GB VRAM; 그 same model 에서 4-bit (GGUF format)
-requires ~4GB. Quantisation typically causes a small but acceptable accuracy
-degradation 와 is 그 main technique enabling large models to run on consumer
-hardware or even mobile devices.
+Quantisation은 모델 가중치의 수치 정밀도를 낮추는 방법입니다(예: 32-bit float → 4-bit integer). 이렇게 하면 메모리 사용량이 크게 줄어듭니다. 예를 들어 16-bit 정밀도의 7B 모델은 약 14GB VRAM이 필요하지만, 같은 모델을 4-bit(GGUF format)로 양자화하면 약 4GB 정도면 됩니다. 정확도는 소폭 떨어질 수 있지만, 대형 모델을 소비자용 하드웨어나 모바일 기기에서 실행 가능하게 만드는 핵심 기법입니다.
 
 ### Context Window
-그 context window is 그 maximum number 의 tokens a model can process at once,
-including both 그 prompt 와 그 generated response. GPT-3.5 had a 4,096-token
-window; GPT-4 Turbo 와 Claude 3 지원 128,000 tokens; Gemini 1.5 Pro
-supports 1,000,000 tokens. A larger context window allows 그 model to "see"
-more 의 a conversation or document at once, improving coherence over long
-exchanges.
+Context window는 모델이 한 번에 처리할 수 있는 최대 token 수를 말하며, prompt와 생성된 응답을 모두 포함합니다. GPT-3.5는 4,096-token window를 가졌고, GPT-4 Turbo와 Claude 3는 128,000 tokens를 지원하며, Gemini 1.5 Pro는 1,000,000 tokens까지 지원합니다. Context window가 클수록 긴 대화나 긴 문서를 한 번에 더 많이 볼 수 있어 장문의 일관성이 좋아집니다.
 
-### RLHF (Reinforcement Learning from Human 피드백)
-RLHF is 그 training technique that transforms a base 언어 model (which
-simply predicts 그 next token) into an assistant that follows instructions 와
-behaves helpfully. Human raters score model outputs, a reward model is trained
-on their preferences, 와 그 언어 model is then optimised against this
-reward model using reinforcement learning. ChatGPT, Claude, 와 Gemini all use
-variants 의 RLHF or similar alignment techniques (e.g. Constitutional AI,
-Direct Preference Optimisation).
+### RLHF (Reinforcement Learning from Human Feedback)
+RLHF는 단순히 다음 token을 예측하던 base language model을 지시를 따르는 assistant로 바꾸는 학습 기법입니다. 사람 평가자가 모델 출력을 비교·평가하면, 그 선호를 바탕으로 reward model을 학습시키고, 이후 reinforcement learning으로 language model을 최적화합니다. ChatGPT, Claude, Gemini는 모두 RLHF 또는 유사한 alignment 기법(예: Constitutional AI, Direct Preference Optimisation)의 변형을 사용합니다.
 
 ### Transformer 아키텍처
-그 Transformer is 그 neural 네트워크 아키텍처 underlying all modern LLMs.
-Introduced 에서 그 2017 paper "Attention Is All You Need" by Vaswani et al., it
-uses self-attention mechanisms to process all tokens 에서 parallel rather than
-sequentially. Encoder-only Transformers (BERT) are used 위한 understanding tasks;
-decoder-only Transformers (GPT, Llama, Mistral) are used 위한 generation tasks;
-encoder-decoder Transformers (T5, BART) are used 위한 translation 와 summarisation.
+Transformer는 현대 LLM 전반의 기반이 되는 neural network 아키텍처입니다. 2017년 Vaswani et al.의 논문 "Attention Is All You Need"에서 처음 소개되었으며, 토큰을 순차적으로 처리하는 대신 self-attention 메커니즘으로 병렬 처리합니다. Encoder-only Transformer(BERT)는 이해 작업에, decoder-only Transformer(GPT, Llama, Mistral)는 생성 작업에, encoder-decoder Transformer(T5, BART)는 번역과 요약 작업에 주로 사용됩니다.
 
-### Embeddings 와 Vector Databases
-Embeddings are dense numerical representations 의 text (or images) produced by
-a neural 네트워크. Semantically similar texts have embeddings that are close 에서
-vector space. Vector databases (ChromaDB, Pinecone, Weaviate, Qdrant) store
-these embeddings 와 지원 fast approximate nearest-neighbour search. They are
-그 storage backbone 의 RAG 시스템, including Potato.ai's cold-memory layer.
+### 임베딩과 벡터 데이터베이스
+Embeddings는 neural network가 만들어낸 텍스트(또는 이미지)의 밀집 수치 표현입니다. 의미가 비슷한 텍스트는 vector space에서 서로 가까운 embedding을 갖습니다. Vector databases(ChromaDB, Pinecone, Weaviate, Qdrant)는 이러한 embedding을 저장하고 빠른 approximate nearest-neighbour 검색을 지원합니다. 이런 저장 계층은 RAG 시스템의 핵심 기반이며, Potato.ai의 cold-memory layer도 여기에 해당합니다.

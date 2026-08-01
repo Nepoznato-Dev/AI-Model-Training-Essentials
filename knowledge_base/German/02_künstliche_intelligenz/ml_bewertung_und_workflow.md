@@ -5,9 +5,9 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Maschinelles Lernen Evaluation und Workflow
+# Bewertung und Workflow im maschinellen Lernen
 
-Ein praktischer Leitfaden für den ML-Lebenszyklus – von der Problemdefinition bis zum Production-Monitoring – mit Fokus auf Metriken, Validierung und Debugging.
+Ein praktischer Leitfaden für den ML-Lebenszyklus – von der Problemdefinition bis zum Produktionsmonitoring – mit Fokus auf Metriken, Validierung und Fehlersuche.
 
 ---
 
@@ -21,7 +21,7 @@ Ein praktischer Leitfaden für den ML-Lebenszyklus – von der Problemdefinition
 6. **Bereitstellung**: Das Modell in Produktion bereitstellen.
 7. **Monitoring**: Drift, Leistung und Anomalien verfolgen.
 
-Dies ist eine iterative Schleife – Sie werden basierend auf den Evaluationsergebnissen frühere Schritte erneut besuchen.
+Dies ist ein iterativer Prozess – auf Grundlage der Bewertungsergebnisse kehren Sie immer wieder zu früheren Schritten zurück.
 
 ---
 
@@ -96,11 +96,11 @@ Tritt auf, wenn Informationen aus dem Testdatensatz versehentlich das Training b
 - **Erkennen:** Wenn Ihr Modell verdächtig hohe Scores erzielt, vermuten Sie ein Leck.
 
 ### Overfitting
-Das Modell performs gut auf Trainingsdaten, aber schlecht auf Validierung/Test.
+Das Modell schneidet auf den Trainingsdaten gut ab, aber auf Validierungs- und Testdaten schlecht.
 - **Abschwächen:** Verwenden Sie Regularisierung, Early Stopping, vereinfachen Sie die Architektur oder sammeln Sie mehr Daten.
 
 ### Underfitting
-Das Modell performs schlecht sowohl auf Trainings- als auch auf Validierungsdaten.
+Das Modell schneidet sowohl auf Trainings- als auch auf Validierungsdaten schlecht ab.
 - **Abschwächen:** Verwenden Sie ein komplexeres Modell, fügen Sie Features hinzu oder reduzieren Sie die Regularisierung.
 
 ### Unausgewogene Daten
