@@ -9,9 +9,9 @@ For accuracy improvements, please contribute edits via pull requests.
 
 Une collection complète de documents de référence couvrant la technologie, la science, les affaires, les sciences humaines et les compétences pratiques.
 
-**Dernière mise à jour:** Juin 2025  
-**Fichiers totaux:** 34+ documents markdown  
-**Organisation:** Catégorisé en 10 répertoires thématiques
+**Dernière mise à jour :** Juin 2025  
+**Nombre total de fichiers :** 34+ documents Markdown  
+**Organisation :** Répartie en 10 répertoires thématiques
 
 ---
 
@@ -35,24 +35,24 @@ knowledge_base/English/
 
 ## 📚 Navigation rapide
 
-### Technologie et Informatique (`01_technology_and_computing/`)
+### Technologie et informatique (`01_technology_and_computing/`)
 | Fichier | Description | Lignes |
 |------|-------------|-------|
 | [coding_languages.md](01_technology_and_computing/coding_languages.md) | Python, JavaScript, Java, C++, Go, Rust | 651 |
-| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, Sécurité | 350+ |
-| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, design patterns, optimization | 300+ |
-| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Fournisseurs cloud, modèles d'architecture, Sécurité | 350+ |
-| [networking_basics.md](01_technology_and_computing/networking_basics.md) | Modèle OSI, TCP/IP, protocoles, Sécurité | 400+ |
+| [web_development.md](01_technology_and_computing/web_development.md) | Frontend, backend, DevOps, sécurité | 350+ |
+| [database_systems.md](01_technology_and_computing/database_systems.md) | SQL, NoSQL, modèles de conception, optimisation | 300+ |
+| [cloud_architecture.md](01_technology_and_computing/cloud_architecture.md) | Fournisseurs cloud, modèles d'architecture, sécurité | 350+ |
+| [networking_basics.md](01_technology_and_computing/networking_basics.md) | Modèle OSI, TCP/IP, protocoles, sécurité | 400+ |
 | [technology_glossary.md](01_technology_and_computing/technology_glossary.md) | Terminologie technique | 250+ |
 | [tool_usage.md](01_technology_and_computing/tool_usage.md) | Outils et utilitaires de développement | 200+ |
 
-### Intelligence Artificielle (`02_artificial_intelligence/`)
+### Intelligence artificielle (`02_artificial_intelligence/`)
 | Fichier | Description | Lignes |
 |------|-------------|-------|
-| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | Aperçu IA, ML, apprentissage profond, LLMs | 200+ |
+| [artificial_intelligence.md](02_artificial_intelligence/artificial_intelligence.md) | Vue d'ensemble de l'IA, ML, apprentissage profond, LLMs | 200+ |
 | [ml_evaluation_and_workflow.md](02_artificial_intelligence/ml_evaluation_and_workflow.md) | Pipelines ML, métriques, meilleures pratiques | 200+ |
 | [phi3_and_local_models.md](02_artificial_intelligence/phi3_and_local_models.md) | Exécution de modèles en local | 200+ |
-| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Architectures de déploiement IA local | 400+ |
+| [local_ai_architecture.md](02_artificial_intelligence/local_ai_architecture.md) | Architectures de déploiement local de l'IA | 400+ |
 | [prompt_engineering.md](02_artificial_intelligence/prompt_engineering.md) | Techniques et stratégies de prompt | 150+ |
 
 ### Science des données (`03_data_science/`)
@@ -69,7 +69,7 @@ knowledge_base/English/
 | [environmental_science_and_sustainability.md](04_science/environmental_science_and_sustainability.md) | Écosystèmes, climat, conservation | 200+ |
 | [food_agriculture_and_nutrition.md](04_science/food_agriculture_and_nutrition.md) | Agriculture, nutrition, systèmes alimentaires | 150+ |
 
-### Affaires et Finance (`05_business_and_finance/`)
+### Affaires et finance (`05_business_and_finance/`)
 | Fichier | Description | Lignes |
 |------|-------------|-------|
 | [business_and_economics.md](05_business_and_finance/business_and_economics.md) | Structures d'entreprise, marketing, économie | 150+ |
@@ -88,7 +88,7 @@ knowledge_base/English/
 ### Référence (`07_reference/`)
 | Fichier | Description | Lignes |
 |------|-------------|-------|
-| [Dictionnaire.md](07_reference/Dictionnaire.md) | Définitions complètes de mots (A-Z) | 868 |
+| [Dictionnaire.md](07_reference/Dictionnaire.md) | Définitions détaillées de mots (A-Z) | 868 |
 | [general_knowledge.md](07_reference/general_knowledge.md) | Faits fondamentaux sur le monde | 150+ |
 | [technology_and_computing.md](07_reference/technology_and_computing.md) | Bases et fondamentaux de l'informatique | 250+ |
 | [safe_communication.md](07_reference/safe_communication.md) | Directives de communication et meilleures pratiques | 150+ |
@@ -98,8 +98,8 @@ knowledge_base/English/
 |------|-------------|-------|
 | [2026_and_future_events.md](08_future/2026_and_future_events.md) | Événements à venir, missions spatiales, tendances technologiques | 200+ |
 
-### Practical Skills (`09_practical_skills/`)
-*Répertoire en croissance - bientôt disponible:*
+### Compétences pratiques (`09_practical_skills/`)
+*Répertoire en développement — bientôt disponible :*
 - research_methods.md
 - critical_thinking.md
 - technical_writing.md
@@ -107,7 +107,7 @@ knowledge_base/English/
 - career_development.md
 
 ### Aide-mémoire (`10_cheat_sheets/`)
-*Répertoire en croissance - bientôt disponible:*
+*Répertoire en développement — bientôt disponible :*
 - python_syntax.md
 - git_commands.md
 - sql_quick_ref.md
@@ -118,26 +118,26 @@ knowledge_base/English/
 
 ## 🎯 Parcours d'apprentissage
 
-### pour Beginners
-1. Start avec `07_reference/general_knowledge.md`
-2. Move to `07_reference/technology_and_computing.md`
-3. Explore `06_humanities/language_and_english.md`
-4. Begin `01_technology_and_computing/coding_languages.md`
+### Pour les débutants
+1. Commencez par `07_reference/general_knowledge.md`
+2. Passez ensuite à `07_reference/technology_and_computing.md`
+3. Explorez `06_humanities/language_and_english.md`
+4. Poursuivez avec `01_technology_and_computing/coding_languages.md`
 
-### pour Software Developers
+### Pour les développeurs logiciels
 1. `01_technology_and_computing/coding_languages.md`
 2. `01_technology_and_computing/web_development.md`
 3. `01_technology_and_computing/database_systems.md`
 4. `01_technology_and_computing/cloud_architecture.md`
 5. `02_artificial_intelligence/artificial_intelligence.md`
 
-### pour Données Scientists
+### Pour les data scientists
 1. `03_data_science/math_and_logic.md`
 2. `03_data_science/data_science_and_analytics.md`
 3. `02_artificial_intelligence/ml_evaluation_and_workflow.md`
 4. `01_technology_and_computing/database_systems.md`
 
-### pour Entreprise Professionals
+### Pour les professionnels des affaires
 1. `05_business_and_finance/business_and_economics.md`
 2. `05_business_and_finance/finance_and_investing.md`
 3. `05_business_and_finance/law_and_legal_systems.md`
@@ -147,57 +147,57 @@ knowledge_base/English/
 
 ## 📊 Statistiques
 
-| Category | Files | Total Lines | Avg Lines/File |
+| Catégorie | Fichiers | Nombre total de lignes | Moyenne de lignes/fichier |
 |----------|-------|-------------|----------------|
 | Technologie & Informatique | 7 | ~2,800 | 400 |
-| Artificial Intelligence | 5 | ~1,500 | 300 |
-| Données Science | 2 | ~600 | 300 |
+| Intelligence artificielle | 5 | ~1,500 | 300 |
+| Science des données | 2 | ~600 | 300 |
 | Science | 4 | ~700 | 175 |
-| Entreprise & Finance | 3 | ~700 | 233 |
-| Humanities | 5 | ~1,100 | 220 |
+| Affaires et finance | 3 | ~700 | 233 |
+| Sciences humaines | 5 | ~1,100 | 220 |
 | Référence | 4 | ~1,400 | 350 |
-| Futur | 1 | ~200 | 200 |
+| Avenir | 1 | ~200 | 200 |
 | **Total** | **31** | **~9,000** | **290** |
 
 ---
 
 ## ⚠️ Avertissements importants
 
-- **Medical Information:** Content dans `medicine_and_healthcare.md` is pour educational purposes only et should not replace professional medical advice.
-- **Juridique Information:** Content dans `law_and_legal_systems.md` is informational et does not constitute Juridique advice.
-- **Financial Information:** Content dans `finance_and_investing.md` is educational et should not be considered financial advice.
-- **Futur Projections:** Content dans `2026_and_future_events.md` contains speculative information et projections that may change.
+- **Informations médicales :** Le contenu de `medicine_and_healthcare.md` est fourni uniquement à des fins éducatives et ne doit pas remplacer l'avis d'un professionnel de santé.
+- **Informations juridiques :** Le contenu de `law_and_legal_systems.md` a une vocation informative et ne constitue pas un conseil juridique.
+- **Informations financières :** Le contenu de `finance_and_investing.md` est éducatif et ne doit pas être considéré comme un conseil financier.
+- **Projections sur l'avenir :** Le contenu de `2026_and_future_events.md` contient des informations spéculatives et des projections susceptibles d'évoluer.
 
 ---
 
 ## 🔧 Consignes d'utilisation
 
-### pour AI Systèmes
-- All files are structured avec clear hierarchical headings
-- Technical terms are defined inline or dans `Dictionnaire.md`
-- Cross-references use markdown links
-- Code Exemples include Syntaxe highlighting
+### Pour les systèmes d'AI
+- Tous les fichiers sont structurés avec des titres hiérarchiques clairs
+- Les termes techniques sont définis dans le texte ou dans `Dictionnaire.md`
+- Les références croisées utilisent des liens Markdown
+- Les exemples de code incluent une coloration syntaxique
 
-### pour Human Readers
-- Each file includes learning objectives at le/la beginning
-- Difficulty levels are noted where applicable
-- Exercises et practice problems included dans technical files
-- Visual aids (diagrams, tables) used where helpful
+### Pour les lecteurs humains
+- Chaque fichier présente des objectifs d'apprentissage au début
+- Les niveaux de difficulté sont indiqués lorsque c'est pertinent
+- Les fichiers techniques incluent des exercices et des problèmes d'entraînement
+- Des supports visuels (diagrammes, tableaux) sont utilisés lorsque cela est utile
 
 ---
 
 ## 📝 Contribuer
 
-When adding or modifying content:
+Lors de l'ajout ou de la modification de contenu :
 
-1. **Follow le/la style Guide:**
-   - Use `#` pour file title only
-   - Use `##` pour major sections
-   - Use `###` pour subsections
-   - Use `-` pour unordered lists
-   - Include Syntaxe highlighting dans code blocks
+1. **Suivez le guide de style :**
+   - Utilisez `#` uniquement pour le titre du fichier
+   - Utilisez `##` pour les sections principales
+   - Utilisez `###` pour les sous-sections
+   - Utilisez `-` pour les listes non ordonnées
+   - Incluez une coloration syntaxique dans les blocs de code
 
-2. **Add metadata** (YAML frontmatter):
+2. **Ajoutez des métadonnées** (front matter YAML) :
 ```yaml
 ---
 title: "File Title"
@@ -208,30 +208,30 @@ last_updated: YYYY-MM-DD
 ---
 ```
 
-3. **Include citations** pour factual claims
-4. **Add cross-references** to related files
-5. **Update this README** if adding new files
+3. **Ajoutez des citations** pour les affirmations factuelles
+4. **Ajoutez des références croisées** vers les fichiers associés
+5. **Mettez à jour ce README** si vous ajoutez de nouveaux fichiers
 
 ---
 
-## 🔄 Update Cycle
+## 🔄 Cycle de mise à jour
 
-- **Quarterly reviews:** All files reviewed every 3 months
-- **Fact-checking:** Statistiques et time-sensitive information verified
-- **Content expansion:** Underdeveloped files expanded progressively
-- **New topics:** Added based on emerging fields et user needs
+- **Révisions trimestrielles :** tous les fichiers sont relus tous les 3 mois
+- **Vérification des faits :** les statistiques et les informations sensibles au temps sont vérifiées
+- **Enrichissement du contenu :** les fichiers encore peu développés sont étoffés progressivement
+- **Nouveaux sujets :** ajoutés en fonction des domaines émergents et des besoins des utilisateurs
 
-**Next scheduled review:** Q3 2025
-
----
-
-## 📞 Retour
-
-Found errors? Have suggestions? Please note:
-- Check pour duplicates before suggesting new topics
-- Verify claims against authoritative sources
-- Consider scope et audience when proposing additions
+**Prochaine révision prévue :** T3 2025
 
 ---
 
-*This Base de connaissances is a living document collection, continuously improved et expanded.*
+## 📞 Retours
+
+Vous avez trouvé des erreurs ? Vous avez des suggestions ? Merci de noter que :
+- vérifiez l'absence de doublons avant de proposer de nouveaux sujets
+- vérifiez les affirmations à l'aide de sources faisant autorité
+- tenez compte du périmètre et du public visé lorsque vous proposez des ajouts
+
+---
+
+*Cette base de connaissances est une collection de documents vivante, continuellement enrichie et améliorée.*

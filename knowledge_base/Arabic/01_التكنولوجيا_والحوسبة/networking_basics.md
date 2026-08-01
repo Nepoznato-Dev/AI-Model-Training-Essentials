@@ -5,76 +5,76 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Networking الأساسيات
+# أساسيات الشبكات
 
-A practical مرجع لأجل developers و sysadmins — core concepts, protocols, الأوامر, و troubleshooting.
+مرجع عملي للمطورين ومسؤولي الأنظمة — يغطي المفاهيم الأساسية، والبروتوكولات، والأوامر، واستكشاف الأخطاء وإصلاحها.
 
 ---
 
-## ال OSI Model (7 Layers)
+## نموذج OSI (الطبقات السبع)
 
-A conceptual framework لأجل understanding الشبكة التواصل.
+إطار تصوري لفهم كيفية الاتصال عبر الشبكات.
 
-| Layer | Name | Function | Example protocols |
+| الطبقة | الاسم | الوظيفة | أمثلة على البروتوكولات |
 |-------|------|----------|-------------------|
-| 7 | Application | End-user services | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
-| 6 | Presentation | البيانات formatting, encryption, compression | TLS, JPEG, ASCII |
-| 5 | Session | Connection الإدارة | NetBIOS, RPC |
-| 4 | Transport | End-to-end delivery, error correction, flow control | TCP, UDP |
-| 3 | الشبكة | Routing, addressing | IP, ICMP, OSPF, BGP |
-| 2 | البيانات Link | Framing, error detection, MAC addresses | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | Ethernet cables, fiber optics, radio waves |
+| 7 | التطبيق | خدمات المستخدم النهائي | HTTP, HTTPS, FTP, SMTP, DNS, SSH |
+| 6 | العرض | تنسيق البيانات، والتشفير، والضغط | TLS, JPEG, ASCII |
+| 5 | الجلسة | إدارة الاتصال | NetBIOS, RPC |
+| 4 | النقل | التسليم من طرف إلى طرف، وتصحيح الأخطاء، والتحكم في التدفق | TCP, UDP |
+| 3 | الشبكة | التوجيه والعنونة | IP, ICMP, OSPF, BGP |
+| 2 | ربط البيانات | التأطير، واكتشاف الأخطاء، وعناوين MAC | Ethernet, Wi-Fi, PPP |
+| 1 | الفيزيائية | نقل البِتّات الخام | كابلات Ethernet، والألياف الضوئية، والموجات الراديوية |
 
-في practice, **TCP/IP model** (4 layers: Link, Internet, Transport, Application) is more commonly used لأجل ال internet.
+عمليًا، يُستخدم **نموذج TCP/IP** (أربع طبقات: الربط، والإنترنت، والنقل، والتطبيق) بصورة أكثر شيوعًا على الإنترنت.
 
 ---
 
-## IP Addressing
+## عنونة IP
 
 ### IPv4
-- 32-bit address, written as four octets: `192.168.1.1`
-- Total: ~4.3 billion addresses (but exhausted في practice).
+- عنوان بطول 32 بت، ويُكتب على شكل أربع مجموعات ثُمانية: `192.168.1.1`
+- الإجمالي: نحو 4.3 مليارات عنوان (لكنه نَفِد عمليًا).
 
 ### IPv6
-- 128-bit address, written في hex: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
-- Total: 2¹²⁸ addresses (practically infinite).
+- عنوان بطول 128 بت، ويُكتب بالنظام الست عشري: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+- الإجمالي: 2¹²⁸ عنوانًا (عدد شبه غير محدود عمليًا).
 
-### Private IP Ranges (RFC 1918)
-These are not routable on ال internet; used inside local networks:
+### نطاقات IP الخاصة (RFC 1918)
+هذه العناوين غير قابلة للتوجيه على الإنترنت، وتُستخدم داخل الشبكات المحلية:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
 
-### CIDR Notation
-`192.168.1.0/24` means ال first 24 bits are ال الشبكة prefix; ال last 8 bits are hosts. It includes addresses `192.168.1.0` to `192.168.1.255`.
+### ترميز CIDR
+يعني `192.168.1.0/24` أن أول 24 بت تمثل بادئة الشبكة، بينما تمثل آخر 8 بتات المضيفين. ويشمل العناوين من `192.168.1.0` إلى `192.168.1.255`.
 
 ---
 
-## DNS (Domain Name System)
+## DNS (نظام أسماء النطاقات)
 
-Maps domain names (e.g., `example.com`) to IP addresses.
+يربط أسماء النطاقات (مثل `example.com`) بعناوين IP.
 
-### Record Types
-| Type | Purpose |
+### أنواع السجلات
+| النوع | الغرض |
 |------|---------|
-| **A** | Maps domain to IPv4 address |
-| **AAAA** | Maps domain to IPv6 address |
-| **CNAME** | Alias to another domain name |
-| **MX** | Mail exchange server |
-| **TXT** | Arbitrary text (SPF, DKIM, verification) |
-| **NS** | Nameserver لأجل ال domain |
-| **SRV** | Service record (e.g., لأجل SIP) |
+| **A** | يربط النطاق بعنوان IPv4 |
+| **AAAA** | يربط النطاق بعنوان IPv6 |
+| **CNAME** | اسم مستعار يشير إلى اسم نطاق آخر |
+| **MX** | خادم تبادل البريد |
+| **TXT** | نص حر (SPF و DKIM والتحقق) |
+| **NS** | خادم الأسماء الخاص بالنطاق |
+| **SRV** | سجل خدمة (مثلًا لـ SIP) |
 
-### Common Tools
+### الأدوات الشائعة
 ```bash
 dig example.com            # DNS lookup (detailed)
 nslookup example.com       # DNS lookup (simpler)
 host example.com           # Quick lookup
 dig -x 8.8.8.8             # Reverse lookup (IP to name)
 
-Ports and Protocols
-Well-Known Ports (0–1023)
-Port	Protocol	Service
+المنافذ والبروتوكولات
+المنافذ المعروفة (0–1023)
+المنفذ	البروتوكول	الخدمة
 20, 21	TCP	FTP
 22	TCP	SSH
 23	TCP	Telnet
@@ -93,83 +93,83 @@ Port	Protocol	Service
 5432	TCP	PostgreSQL
 6379	TCP	Redis
 27017	TCP	MongoDB
-Check open ports
+فحص المنافذ المفتوحة
 bash
 ss -tulpn                 # Linux: listen and established sockets
 netstat -an               # Older tool
 lsof -i :8080             # See process using port 8080
 nmap localhost            # Scan local ports
-TCP vs UDP
-Feature	TCP	UDP
-Connection	Connection-oriented (handshake)	Connectionless
-Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
-Ordering	Preserves order	No ordering guarantee
-Flow control	Yes (sliding window)	No
-Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
-Header size	20–60 bytes	8 bytes
-HTTP and HTTPS
-HTTP Methods
-GET: Retrieve a resource (idempotent, safe).
+TCP مقابل UDP
+الميزة	TCP	UDP
+الاتصال	معتمد على الاتصال (مصافحة)	من دون اتصال
+الاعتمادية	تسليم مضمون مع إعادة الإرسال	أفضل جهد ممكن (قد تُفقَد الحزم)
+الترتيب	يحافظ على الترتيب	لا يوجد ضمان للترتيب
+التحكم في التدفق	نعم (sliding window)	لا
+حالات الاستخدام	الويب (HTTP)، والبريد الإلكتروني، و SSH، ونقل الملفات	DNS، والبث، و VoIP، والألعاب، و SNMP
+حجم الترويسة	20–60 بايت	8 بايت
+HTTP و HTTPS
+طرائق HTTP
+GET: استرجاع مورد (idempotent وآمن).
 
-POST: Submit data (not idempotent).
+POST: إرسال بيانات (غير idempotent).
 
-PUT: Update/replace a resource (idempotent).
+PUT: تحديث مورد أو استبداله (idempotent).
 
-PATCH: Partial update.
+PATCH: تحديث جزئي.
 
-DELETE: Remove a resource (idempotent).
+DELETE: إزالة مورد (idempotent).
 
-Status Codes
-1xx: Informational (100 Continue).
+رموز الحالة
+1xx: معلوماتية (100 Continue).
 
-2xx: Success (200 OK, 201 Created, 204 No Content).
+2xx: نجاح (200 OK، و 201 Created، و 204 No Content).
 
-3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
+3xx: إعادة توجيه (301 Moved Permanently، و 302 Found، و 304 Not Modified).
 
-4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+4xx: خطأ من جهة العميل (400 Bad Request، و 401 Unauthorized، و 403 Forbidden، و 404 Not Found، و 429 Too Many Requests).
 
-5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+5xx: خطأ من جهة الخادم (500 Internal Server Error، و 502 Bad Gateway، و 503 Service Unavailable).
 
-Headers
-Content-Type: media type (application/json, text/html).
+الترويسات
+Content-Type: نوع الوسائط (application/json, text/html).
 
-Authorization: credentials (e.g., Bearer <token>).
+Authorization: بيانات الاعتماد (مثل: ******
 
-Cache-Control: caching policy.
+Cache-Control: سياسة التخزين المؤقت.
 
-CORS headers: Access-Control-Allow-Origin, etc.
+ترويسات CORS: مثل Access-Control-Allow-Origin وغيرها.
 
 TLS/SSL
-Encrypts HTTP traffic (HTTPS = HTTP over TLS).
+يشفّر حركة HTTP (أي أن HTTPS = HTTP over TLS).
 
-Certificates from Certificate Authorities (CAs) authenticate the server.
+تتحقق الشهادات الصادرة من هيئات إصدار الشهادات (CAs) من هوية الخادم.
 
-Verify certificate chain and hostname on the client side.
+تحقّق من سلسلة الشهادات واسم المضيف على جهة العميل.
 
-Firewalls and NAT
-Firewall
-Filters traffic based on rules (source IP, dest IP, port, protocol).
+الجدران النارية و NAT
+الجدار الناري
+يُرشّح حركة المرور وفق القواعد (عنوان IP للمصدر، وعنوان IP للوجهة، والمنفذ، والبروتوكول).
 
-Stateful firewalls track connection states.
+تتعقب الجدران النارية ذات الحالة حالات الاتصال.
 
-NAT (Network Address Translation)
-Translates private IPs to a public IP for internet access.
+NAT (ترجمة عناوين الشبكة)
+يحوّل عناوين IP الخاصة إلى عنوان IP عام للوصول إلى الإنترنت.
 
-Port forwarding: maps a public port to an internal host/port.
+إعادة توجيه المنافذ: تربط منفذًا عامًا بمضيف/منفذ داخلي.
 
-Common Networking Commands
-Connectivity Tests
+أوامر الشبكات الشائعة
+اختبارات الاتصال
 bash
 ping google.com            # ICMP echo request
 ping -c 4 8.8.8.8          # ping 4 times
 traceroute google.com      # Trace the route (Linux)
 tracert google.com         # Windows version
-Routing
+التوجيه
 bash
 ip route show              # Linux: routing table
 route -n                   # Older Linux
 netstat -r                 # Windows/Mac
-Network Interfaces
+واجهات الشبكة
 bash
 ip addr show               # List interfaces and IPs
 ifconfig                   # Older command
@@ -178,21 +178,21 @@ bash
 dig example.com
 nslookup example.com
 host example.com
-Connectivity to a Port
+اختبار الاتصال بمنفذ
 bash
 nc -zv google.com 443      # Netcat: check if port 443 is open
 telnet google.com 443      # Telnet to port
 curl -v https://google.com # Verbose output
-Firewall (Linux iptables/nftables)
+الجدار الناري (Linux iptables/nftables)
 bash
 sudo ufw status            # Ubuntu: simple firewall
 sudo iptables -L -n        # List rules
-Network Statistics
+إحصاءات الشبكة
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
-CIDR	Netmask	Number of addresses	Usable hosts
+تقسيم الشبكات الفرعية (مرجع سريع)
+CIDR	قناع الشبكة	عدد العناوين	المضيفون القابلون للاستخدام
 /32	255.255.255.255	1	1
 /30	255.255.255.252	4	2
 /29	255.255.255.248	8	6
@@ -205,8 +205,8 @@ CIDR	Netmask	Number of addresses	Usable hosts
 /22	255.255.252.0	1,024	1,022
 /16	255.255.0.0	65,536	65,534
 /8	255.0.0.0	16,777,216	16,777,214
-Load Balancing and Reverse Proxies
-Nginx as Reverse Proxy
+موازنة الحمل والوكالات العكسية
+استخدام Nginx كوكيل عكسي
 nginx
 server {
     listen 80;
@@ -217,86 +217,86 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-Load Balancing Algorithms
-Round-robin
+خوارزميات موازنة الحمل
+التوزيع الدوري
 
-Least connections
+أقل الاتصالات
 
-IP hash (session stickiness)
+تجزئة IP (ثبات الجلسة)
 
-Weighted round-robin
+التوزيع الدوري المُرجّح
 
-Tools
-Nginx, HAProxy (software)
+الأدوات
+Nginx و HAProxy (برمجيات)
 
-AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
+AWS ELB و Azure Load Balancer و GCP Cloud Load Balancing (سحابية)
 
-Troubleshooting Checklist
-Is the physical link up? (Check cables, Wi-Fi connection).
+قائمة التحقق لاستكشاف الأخطاء وإصلاحها
+هل الوصلة الفيزيائية تعمل؟ (تحقق من الكابلات أو اتصال Wi-Fi).
 
-Can you ping the gateway? (e.g., ping 192.168.1.1).
+هل يمكنك تنفيذ ping على البوابة؟ (مثلًا: ping 192.168.1.1).
 
-Can you ping an external IP? (e.g., 8.8.8.8).
+هل يمكنك تنفيذ ping على عنوان IP خارجي؟ (مثلًا: 8.8.8.8).
 
-Can you resolve a domain? (dig google.com).
+هل يمكنك تحليل اسم نطاق؟ (dig google.com).
 
-Is the application listening on the expected port? (ss -tulpn | grep 8080).
+هل التطبيق يستمع على المنفذ المتوقع؟ (ss -tulpn | grep 8080).
 
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+هل يحجب الجدار الناري هذا المنفذ؟ (تحقق من iptables/ufw أو مجموعات الأمان السحابية).
 
-Are there any errors in the application logs?
+هل توجد أي أخطاء في سجلات التطبيق؟
 
-Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
+هل شهادة TLS صالحة وموثوق بها؟ (openssl s_client -connect example.com:443).
 
 text
 
 ---
 
-## File 6: `devops_sysadmin.md`
+## الملف 6: `devops_sysadmin.md`
 
 ```markdown
-# DevOps و System Administration
+# التشغيل والتطوير وإدارة الأنظمة
 
-A practical دليل to managing servers, automating operations, و maintaining reliable infrastructure.
+دليل عملي لإدارة الخوادم، وأتمتة العمليات، والحفاظ على بنية تحتية موثوقة.
 
 ---
 
 ## SSH (Secure Shell)
 
-### Key Generation
+### إنشاء المفاتيح
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
-Copy Public Key to Server
+نسخ المفتاح العام إلى الخادم
 bash
 ssh-copy-id user@host
 # Manual alternative:
 cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
-SSH Config (~/.ssh/config)
+إعداد SSH (~/.ssh/config)
 ssh-config
 Host myserver
     HostName 192.168.1.10
     User ubuntu
     IdentityFile ~/.ssh/mykey
     Port 2222
-Common SSH Commands
+أوامر SSH الشائعة
 bash
 ssh user@host                    # Connect
 ssh -J jumpuser@jumphost user@target   # Proxy jump
 scp file.txt user@host:/path/     # Copy file to remote
 scp user@host:/path/file.txt .    # Copy from remote
 rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
-Hardening SSH
-Disable root login: PermitRootLogin no
+تقوية إعدادات SSH
+تعطيل تسجيل دخول root: PermitRootLogin no
 
-Use key-based auth only: PasswordAuthentication no
+استخدم المصادقة بالمفاتيح فقط: PasswordAuthentication no
 
-Change default port (optional, security through obscurity).
+غيّر المنفذ الافتراضي (اختياريًا، كإجراء أمني محدود الفاعلية).
 
-Enable AllowUsers or AllowGroups to restrict access.
+فعّل AllowUsers أو AllowGroups لتقييد الوصول.
 
-Systemd (Linux Service Management)
-Common Commands
+Systemd (إدارة الخدمات في Linux)
+الأوامر الشائعة
 bash
 systemctl status nginx           # Check service status
 systemctl start nginx            # Start service
@@ -307,8 +307,8 @@ systemctl enable nginx           # Start on boot
 systemctl disable nginx
 systemctl list-units --type=service --all   # List all services
 systemctl daemon-reload          # Reload unit files after editing
-Creating a systemd Service Unit
-Create /etc/systemd/system/myapp.service:
+إنشاء وحدة خدمة systemd
+أنشئ الملف /etc/systemd/system/myapp.service:
 
 ini
 [Unit]
@@ -326,46 +326,46 @@ Environment="ENV=production"
 
 [Install]
 WantedBy=multi-user.target
-Then:
+ثم:
 
 bash
 sudo systemctl daemon-reload
 sudo systemctl enable myapp
 sudo systemctl start myapp
-Journalctl (View Logs)
+Journalctl (عرض السجلات)
 bash
 journalctl -u myapp              # Logs for service
 journalctl -f                    # Follow (tail) logs
 journalctl --since "1 hour ago"
 journalctl _PID=1234             # Filter by process ID
-Logging Strategies
-Structured Logging
-Use JSON format to make logs machine-parseable:
+استراتيجيات التسجيل
+التسجيل المنظّم
+استخدم تنسيق JSON لجعل السجلات قابلة للتحليل آليًا:
 
 python
 import structlog
 logger = structlog.get_logger()
 logger.info("user_login", user_id=123, ip="192.168.1.1")
-Log Levels
-DEBUG: detailed diagnostic.
+مستويات السجل
+DEBUG: تشخيص تفصيلي.
 
-INFO: general events (start, stop, normal transactions).
+INFO: أحداث عامة (البدء، والتوقف، والمعاملات العادية).
 
-WARN: unexpected but not fatal.
+WARN: أمر غير متوقع لكنه غير قاتل.
 
-ERROR: error that prevents a specific operation.
+ERROR: خطأ يمنع تنفيذ عملية محددة.
 
-FATAL/CRITICAL: system shutdown.
+FATAL/CRITICAL: توقف النظام.
 
-Log Aggregation
-ELK Stack (Elasticsearch, Logstash, Kibana) or Elastic Cloud.
+تجميع السجلات
+ELK Stack (Elasticsearch, Logstash, Kibana) أو Elastic Cloud.
 
-Loki + Grafana (lightweight alternative).
+Loki + Grafana (بديل خفيف الوزن).
 
-Datadog, Splunk, Sumo Logic (SaaS).
+Datadog و Splunk و Sumo Logic (SaaS).
 
-Log Rotation (logrotate)
-Prevent logs from filling up disks. Configure /etc/logrotate.d/myapp:
+تدوير السجلات (logrotate)
+امنع السجلات من ملء الأقراص. اضبط /etc/logrotate.d/myapp كما يلي:
 
 logrotate
 /var/log/myapp/*.log {
@@ -377,48 +377,48 @@ logrotate
     notifempty
     create 0640 myuser mygroup
 }
-Monitoring and Alerting
-Metrics to Monitor
-System: CPU, RAM, disk usage, load average, network I/O.
+المراقبة والتنبيه
+المقاييس التي ينبغي مراقبتها
+النظام: CPU، و RAM، واستخدام القرص، ومتوسط الحمل، وإدخال/إخراج الشبكة.
 
-Application: request rate, latency (p50, p95, p99), error rate, active sessions.
+التطبيق: معدل الطلبات، وزمن الاستجابة (p50 و p95 و p99)، ومعدل الأخطاء، والجلسات النشطة.
 
-Database: query count, slow queries, connection pool usage.
+قاعدة البيانات: عدد الاستعلامات، والاستعلامات البطيئة، واستخدام مجمع الاتصالات.
 
-Business: user signups, conversion rate, revenue.
+الأعمال: تسجيلات المستخدمين، ومعدل التحويل، والإيرادات.
 
-Tools
-Prometheus + Grafana: Standard open-source stack.
+الأدوات
+Prometheus + Grafana: الحزمة المفتوحة المصدر القياسية.
 
-Node Exporter for system metrics.
+Node Exporter لمقاييس النظام.
 
-Blackbox Exporter for endpoint availability.
+Blackbox Exporter لتوافر نقاط النهاية.
 
-Alertmanager for alert routing.
+Alertmanager لتوجيه التنبيهات.
 
-Cloud native: AWS CloudWatch, Azure Monitor, GCP Monitoring.
+حلول سحابية أصلية: AWS CloudWatch و Azure Monitor و GCP Monitoring.
 
-Uptime Monitoring
-Pingdom, Statuspage, Better Uptime, Uptime Kuma (self-hosted).
+مراقبة التوافر
+Pingdom و Statuspage و Better Uptime و Uptime Kuma (مستضاف ذاتيًا).
 
-Health checks: expose a /health endpoint that returns 200 if the service is healthy.
+فحوصات السلامة: وفّر نقطة نهاية /health تُرجع 200 إذا كانت الخدمة سليمة.
 
-Backup Strategies
-The 3-2-1 Rule
-3 copies of data.
+استراتيجيات النسخ الاحتياطي
+قاعدة 3-2-1
+3 نسخ من البيانات.
 
-2 different media types (e.g., SSD + tape, or local + cloud).
+نوعان مختلفان من وسائط التخزين (مثل SSD + tape، أو محلي + سحابي).
 
-1 copy off-site (e.g., cloud or remote data centre).
+نسخة واحدة خارج الموقع (مثل السحابة أو مركز بيانات بعيد).
 
-Backup Types
-Full backup: copy everything (slow, space-heavy).
+أنواع النسخ الاحتياطي
+نسخ احتياطي كامل: نسخ كل شيء (بطيء ويستهلك مساحة كبيرة).
 
-Incremental backup: copy only changes since last full or incremental (fast, complex restore).
+نسخ احتياطي تزايدي: ينسخ التغييرات فقط منذ آخر نسخة كاملة أو تزايدية (سريع لكن الاستعادة معقدة).
 
-Differential backup: copy changes since last full (middle ground).
+نسخ احتياطي تفاضلي: ينسخ التغييرات منذ آخر نسخة كاملة (حل وسط).
 
-Database Backups
+النسخ الاحتياطي لقواعد البيانات
 bash
 # PostgreSQL
 pg_dump dbname > backup.sql
@@ -430,7 +430,7 @@ mysqldump -u root -p dbname > backup.sql
 # Restore
 psql dbname < backup.sql
 mysql -u root -p dbname < backup.sql
-File Backups
+النسخ الاحتياطي للملفات
 bash
 # Tar archive
 tar -czf backup.tar.gz /var/lib/data
@@ -440,12 +440,12 @@ rsync -avz /local/data/ user@backup-server:/backup/data/
 
 # Cloud CLI (e.g., AWS S3)
 aws s3 sync /local/data s3://my-bucket/backup/
-Automated Backup Scheduling (cron)
+جدولة النسخ الاحتياطي تلقائيًا (cron)
 cron
 # Run daily at 2am
 0 2 * * * /usr/local/bin/backup_script.sh
-Cron and Scheduled Jobs
-Cron Syntax
+Cron والمهام المجدولة
+صيغة Cron
 text
 * * * * * command
 │ │ │ │ │
@@ -467,15 +467,15 @@ cron
 
 # Every hour
 0 * * * * /path/to/script
-Managing Cron
+إدارة Cron
 bash
 crontab -l          # List current user's cron jobs
 crontab -e          # Edit
 crontab -r          # Remove all
 Anacron
-Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
+يُستخدم للأنظمة التي لا تعمل على مدار الساعة طوال أيام الأسبوع (مثل الحواسيب المحمولة)، ويضمن تشغيل المهام في نهاية المطاف.
 
-Package Management and Updates
+إدارة الحزم والتحديثات
 Debian/Ubuntu (apt)
 bash
 sudo apt update                # Update package list
@@ -489,28 +489,28 @@ sudo dnf check-update
 sudo dnf update
 sudo dnf install git nginx
 sudo dnf remove git
-Security Updates
-Enable unattended-upgrades on Ubuntu for security patches:
+تحديثات الأمان
+فعّل unattended-upgrades في Ubuntu لتثبيت التصحيحات الأمنية:
 
 bash
 sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
-Docker in Production
-Best Practices
-Use specific image tags (python:3.12-slim) not latest.
+Docker في بيئة الإنتاج
+أفضل الممارسات
+استخدم وسوم صور محددة (python:3.12-slim) بدلًا من latest.
 
-Run containers as non-root user.
+شغّل الحاويات كمستخدم غير root.
 
-Scan images for vulnerabilities (docker scan, trivy).
+افحص الصور بحثًا عن الثغرات (docker scan و trivy).
 
-Set resource limits (--memory, --cpus).
+اضبط حدود الموارد (--memory و --cpus).
 
-Use secrets (via Docker secrets or environment with care).
+استخدم الأسرار (عبر Docker secrets أو متغيرات البيئة بحذر).
 
-Keep images small: multi-stage builds, alpine base.
+اجعل الصور صغيرة: بنى متعددة المراحل وقاعدة alpine.
 
-Docker Compose in Production
-Set resource limits in docker-compose.yml:
+Docker Compose في بيئة الإنتاج
+اضبط حدود الموارد في docker-compose.yml:
 
 yaml
 services:
@@ -521,30 +521,30 @@ services:
         limits:
           memory: 512M
           cpus: '0.5'
-CI/CD Basics
-Pipeline Stages
-Build: Compile code, install dependencies.
+أساسيات CI/CD
+مراحل خط الأنابيب
+البناء: ترجمة الشيفرة وتثبيت الاعتماديات.
 
-Test: Run unit, integration, and lint checks.
+الاختبار: تشغيل اختبارات الوحدة، والتكامل، وفحوص lint.
 
-Containerise: Build Docker image.
+التحويل إلى حاوية: بناء صورة Docker.
 
-Push: Push image to container registry.
+الدفع: رفع الصورة إلى سجل الحاويات.
 
-Deploy: Update staging/production environment.
+النشر: تحديث بيئة staging/production.
 
-Tools
-GitHub Actions: Integrated with GitHub.
+الأدوات
+GitHub Actions: مدمج مع GitHub.
 
-GitLab CI: Built into GitLab.
+GitLab CI: مدمج في GitLab.
 
-Jenkins: Traditional, highly configurable.
+Jenkins: تقليدي وقابل للتخصيص بدرجة عالية.
 
-CircleCI, Travis CI: Popular third-party.
+CircleCI و Travis CI: أدوات خارجية شائعة.
 
-ArgoCD: GitOps for Kubernetes.
+ArgoCD: GitOps لـ Kubernetes.
 
-Example GitHub Action (simple):
+مثال على GitHub Action (بسيط):
 yaml
 name: CI
 on: push
@@ -558,32 +558,32 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: pytest
-System Tuning and Troubleshooting
-Check Disk Space
+ضبط النظام واستكشاف الأخطاء وإصلاحها
+التحقق من مساحة القرص
 bash
 df -h                      # Human-readable disk usage
 du -sh /* | sort -h        # Size of top-level directories
-Check Memory Usage
+التحقق من استخدام الذاكرة
 bash
 free -m                    # Memory in MB
 vmstat 1 10                # Virtual memory statistics
 top -o %MEM                # Sort processes by memory
-Check CPU Load
+التحقق من حمل CPU
 bash
 uptime                     # Load average over 1,5,15 minutes
 top -o %CPU                # Sort processes by CPU
 mpstat -P ALL 1 5          # Per-core CPU usage
-Check Network
+التحقق من الشبكة
 bash
 netstat -i                 # Interface statistics
 iftop                      # Live bandwidth usage (requires install)
 nload                      # Another bandwidth monitor
-Find Large Files
+العثور على الملفات الكبيرة
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
-Infrastructure as Code (IaC)
+البنية التحتية كرمز (IaC)
 Terraform
-Declare cloud resources in HCL.
+تعريف الموارد السحابية بلغة HCL.
 
 hcl
 provider "aws" {
@@ -594,7 +594,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 }
 Ansible
-Agentless configuration management using YAML.
+إدارة التهيئة من دون وكيل باستخدام YAML.
 
 yaml
 - name: Install nginx
@@ -604,29 +604,27 @@ yaml
       apt:
         name: nginx
         state: present
-Best Practices
-Use modules and roles for reusability.
+أفضل الممارسات
+استخدم الوحدات والأدوار لتعزيز إعادة الاستخدام.
 
-Store state remotely (S3, Terraform Cloud).
+خزّن الحالة عن بُعد (S3 أو Terraform Cloud).
 
-Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
+استخدم المتغيرات والأسرار (مثل AWS_SECRET_ACCESS_KEY عبر البيئة، وليس بشكل مُضمَّن في الشيفرة).
 
-Version control your IaC code.
+استخدم التحكم بالإصدارات لشيفرة IaC الخاصة بك.
 
-Incident Response (On-call)
-Checklist for Service Outage
-Acknowledge the alert.
+الاستجابة للحوادث (المناوبة)
+قائمة التحقق عند انقطاع الخدمة
+أقِرّ التنبيه.
 
-Assess scope: Which services/users are affected?
+قيّم النطاق: ما الخدمات أو المستخدمون المتأثرون؟
 
-Identify the issue (look at logs, metrics, recent deployments).
+حدّد المشكلة (راجع السجلات، والمقاييس، وعمليات النشر الأخيرة).
 
-Contain if possible (circuit breakers, feature flags).
+احتوِ المشكلة إن أمكن (قواطع الدارات وأعلام الميزات).
 
-Rollback or fix forward.
+نفّذ التراجع أو أصلح بالمضي قدمًا.
 
-Communicate status to stakeholders and users (status page).
+أبلغ أصحاب المصلحة والمستخدمين بالحالة (صفحة الحالة).
 
-Document the incident timeline and actions.
-
-Post-mortem: within 24–48 hours, write a root cause analysis (RCA) and action items to prevent recurrence.
+وثّق التسلسل الزمني للحادث والإجراءات المتخذة.

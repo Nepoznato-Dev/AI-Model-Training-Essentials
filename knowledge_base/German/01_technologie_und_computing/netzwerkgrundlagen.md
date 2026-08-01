@@ -65,7 +65,7 @@ Ordnet Domainnamen (z. B. `example.com`) IP-Adressen zu.
 | **NS** | Nameserver für die Domain |
 | **SRV** | Dienst-Rekord (z. B. für SIP) |
 
-### Häufige Tools
+### Häufige Werkzeuge
 ```bash
 dig example.com            # DNS-Lookup (detailliert)
 nslookup example.com       # DNS-Lookup (einfacher)
@@ -110,63 +110,63 @@ nmap localhost            # Lokale Ports scannen
 | Merkmal | TCP | UDP |
 |---------|-----|-----|
 | Verbindung | Verbindungsorientiert (Handshake) | Verbindungslos |
-| Zuverlässigkeit | Garantierte Zustellung, Neuübertragung | Best Effort (Pakete können verloren gehen) |
+| Zuverlässigkeit | Garantierte Zustellung, Neuübertragung | Best-Effort-Übertragung (Pakete können verloren gehen) |
 | Reihenfolge | Erhält Reihenfolge | Keine Reihenfolgegarantie |
 | Flusskontrolle | Ja (Sliding Window) | Nein |
-| Einsatzgebiete | Web (HTTP), E-Mail, SSH, Dateiübertragung | DNS, Streaming, VoIP, Gaming, SNMP |
+| Einsatzgebiete | Webzugriffe (HTTP), E-Mail, SSH, Dateiübertragung | DNS, Streaming, VoIP, Online-Spiele, SNMP |
 | Header-Größe | 20–60 Bytes | 8 Bytes |
-HTTP and HTTPS
-HTTP Methods
-GET: Retrieve a resource (idempotent, safe).
+HTTP und HTTPS
+HTTP-Methoden
+GET: Ruft eine Ressource ab (idempotent, sicher).
 
-POST: Submit data (not idempotent).
+POST: Sendet Daten an den Server (nicht idempotent).
 
-PUT: Update/replace a resource (idempotent).
+PUT: Aktualisiert oder ersetzt eine Ressource (idempotent).
 
-PATCH: Partial update.
+PATCH: Führt eine teilweise Aktualisierung durch.
 
-DELETE: Remove a resource (idempotent).
+DELETE: Entfernt eine Ressource (idempotent).
 
-Status Codes
-1xx: Informational (100 Continue).
+Statuscodes
+1xx: Informativ (100 Continue).
 
-2xx: Success (200 OK, 201 Created, 204 No Content).
+2xx: Erfolg (200 OK, 201 Created, 204 No Content).
 
-3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
+3xx: Umleitung (301 Moved Permanently, 302 Found, 304 Not Modified).
 
-4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+4xx: Clientfehler (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
 
-5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+5xx: Serverfehler (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
 
-Headers
-Content-Type: media type (application/json, text/html).
+Header
+Content-Type: Medientyp (application/json, text/html).
 
 Authorization: credentials (e.g., Bearer <token>).
 
-Cache-Control: caching policy.
+Cache-Control: Caching-Richtlinie.
 
-CORS headers: Access-Control-Allow-Origin, etc.
+CORS-Header: Access-Control-Allow-Origin usw.
 
 TLS/SSL
-Encrypts HTTP traffic (HTTPS = HTTP over TLS).
+Verschlüsselt HTTP-Datenverkehr (HTTPS = HTTP über TLS).
 
-Certificates from Certificate Authorities (CAs) authenticate the server.
+Zertifikate von Certificate Authorities (CAs) authentifizieren den Server.
 
-Verify certificate chain and hostname on the client side.
+Prüfe auf Client-Seite die Zertifikatskette und den Hostnamen.
 
-Firewalls and NAT
+Firewalls und NAT
 Firewall
-Filters traffic based on rules (source IP, dest IP, port, protocol).
+Filtert Datenverkehr anhand von Regeln (Quell-IP, Ziel-IP, Port, Protokoll).
 
-Stateful firewalls track connection states.
+Zustandsbehaftete Firewalls verfolgen den Zustand von Verbindungen.
 
-NAT (Network Address Translation)
-Translates private IPs to a public IP for internet access.
+NAT (Netzwerkadressübersetzung)
+Übersetzt private IPs für den Internetzugang in eine öffentliche IP.
 
-Port forwarding: maps a public port to an internal host/port.
+Portweiterleitung: Ordnet einen öffentlichen Port einem internen Host/Port zu.
 
-Common Networking Commands
-Connectivity Tests
+Häufige Netzwerkbefehle
+Verbindungstests
 bash
 ping google.com            # ICMP echo request
 ping -c 4 8.8.8.8          # ping 4 times
@@ -177,7 +177,7 @@ bash
 ip route show              # Linux: routing table
 route -n                   # Older Linux
 netstat -r                 # Windows/Mac
-Network Interfaces
+Netzwerkschnittstellen
 bash
 ip addr show               # List interfaces and IPs
 ifconfig                   # Older command
@@ -186,7 +186,7 @@ bash
 dig example.com
 nslookup example.com
 host example.com
-Connectivity to a Port
+Verbindung zu einem Port
 bash
 nc -zv google.com 443      # Netcat: check if port 443 is open
 telnet google.com 443      # Telnet to port
@@ -195,12 +195,12 @@ Firewall (Linux iptables/nftables)
 bash
 sudo ufw status            # Ubuntu: simple firewall
 sudo iptables -L -n        # List rules
-Network Statistics
+Netzwerkstatistiken
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
-CIDR	Netmask	Number of addresses	Usable hosts
+Subnetting (Kurzreferenz)
+CIDR	Netzmaske	Anzahl der Adressen	Nutzbare Hosts
 /32	255.255.255.255	1	1
 /30	255.255.255.252	4	2
 /29	255.255.255.248	8	6
@@ -213,8 +213,8 @@ CIDR	Netmask	Number of addresses	Usable hosts
 /22	255.255.252.0	1,024	1,022
 /16	255.255.0.0	65,536	65,534
 /8	255.0.0.0	16,777,216	16,777,214
-Load Balancing and Reverse Proxies
-Nginx as Reverse Proxy
+Load Balancing und Reverse Proxys
+Nginx als Reverse Proxy
 nginx
 server {
     listen 80;
@@ -225,42 +225,42 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-Load Balancing Algorithms
-Round-robin
+Load-Balancing-Algorithmen
+Round-Robin
 
-Least connections
+Wenigste Verbindungen
 
-IP hash (session stickiness)
+IP-Hash (Sitzungsbindung)
 
-Weighted round-robin
+Gewichtetes Round-Robin
 
-Tools
-Nginx, HAProxy (software)
+Werkzeuge
+Nginx, HAProxy (Software)
 
-AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
+AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (Cloud)
 
-Troubleshooting Checklist
-Is the physical link up? (Check cables, Wi-Fi connection).
+Checkliste zur Fehlerbehebung
+Ist die physische Verbindung aktiv? (Kabel, Wi-Fi-Verbindung prüfen.)
 
-Can you ping the gateway? (e.g., ping 192.168.1.1).
+Lässt sich das Gateway pingen? (z. B. `ping 192.168.1.1`).
 
-Can you ping an external IP? (e.g., 8.8.8.8).
+Lässt sich eine externe IP pingen? (z. B. `8.8.8.8`).
 
-Can you resolve a domain? (dig google.com).
+Lässt sich eine Domain auflösen? (`dig google.com`).
 
-Is the application listening on the expected port? (ss -tulpn | grep 8080).
+Lauscht die Anwendung auf dem erwarteten Port? (`ss -tulpn | grep 8080`).
 
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+Blockiert die Firewall den Port? (iptables/ufw oder Cloud-Sicherheitsgruppen prüfen.)
 
-Are there any errors in the application logs?
+Gibt es Fehler in den Anwendungsprotokollen?
 
-Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
+Ist das TLS-Zertifikat gültig und vertrauenswürdig? (`openssl s_client -connect example.com:443`).
 
 text
 
 ---
 
-## File 6: `devops_sysadmin.md`
+## Datei 6: `devops_sysadmin.md`
 
 ```markdown
 # DevOps und System Administration
@@ -271,40 +271,40 @@ A practical Leitfaden to managing servers, automating operations, und maintainin
 
 ## SSH (Secure Shell)
 
-### Key Generation
+### Schlüsselerzeugung
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"   # Modern and secure
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # Fallback
-Copy Public Key to Server
+Öffentlichen Schlüssel auf den Server kopieren
 bash
 ssh-copy-id user@host
 # Manual alternative:
 cat ~/.ssh/id_ed25519.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
-SSH Config (~/.ssh/config)
+SSH-Konfiguration (`~/.ssh/config`)
 ssh-config
 Host myserver
     HostName 192.168.1.10
     User ubuntu
     IdentityFile ~/.ssh/mykey
     Port 2222
-Common SSH Commands
+Häufige SSH-Befehle
 bash
 ssh user@host                    # Connect
 ssh -J jumpuser@jumphost user@target   # Proxy jump
 scp file.txt user@host:/path/     # Copy file to remote
 scp user@host:/path/file.txt .    # Copy from remote
 rsync -avz -e ssh ./local/ user@host:/remote/  # Efficient sync
-Hardening SSH
-Disable root login: PermitRootLogin no
+SSH absichern
+Root-Anmeldung deaktivieren: PermitRootLogin no
 
-Use key-based auth only: PasswordAuthentication no
+Nur schlüsselbasierte Authentifizierung verwenden: PasswordAuthentication no
 
-Change default port (optional, security through obscurity).
+Standardport ändern (optional, Sicherheit durch Unauffälligkeit).
 
-Enable AllowUsers or AllowGroups to restrict access.
+AllowUsers oder AllowGroups aktivieren, um den Zugriff einzuschränken.
 
-Systemd (Linux Service Management)
-Common Commands
+Systemd (Linux-Dienstverwaltung)
+Häufige Befehle
 bash
 systemctl status nginx           # Check service status
 systemctl start nginx            # Start service
@@ -315,8 +315,8 @@ systemctl enable nginx           # Start on boot
 systemctl disable nginx
 systemctl list-units --type=service --all   # List all services
 systemctl daemon-reload          # Reload unit files after editing
-Creating a systemd Service Unit
-Create /etc/systemd/system/myapp.service:
+Erstellen einer systemd-Service-Unit
+Erstelle `/etc/systemd/system/myapp.service`:
 
 ini
 [Unit]
@@ -334,38 +334,38 @@ Environment="ENV=production"
 
 [Install]
 WantedBy=multi-user.target
-Then:
+Danach:
 
 bash
 sudo systemctl daemon-reload
 sudo systemctl enable myapp
 sudo systemctl start myapp
-Journalctl (View Logs)
+Journalctl (Logs anzeigen)
 bash
 journalctl -u myapp              # Logs for service
 journalctl -f                    # Follow (tail) logs
 journalctl --since "1 hour ago"
 journalctl _PID=1234             # Filter by process ID
-Logging Strategies
-Structured Logging
-Use JSON format to make logs machine-parseable:
+Logging-Strategien
+Strukturiertes Logging
+Verwende JSON, damit Logs maschinell auswertbar sind:
 
 python
 import structlog
 logger = structlog.get_logger()
 logger.info("user_login", user_id=123, ip="192.168.1.1")
-Log Levels
-DEBUG: detailed diagnostic.
+Log-Level
+DEBUG: detaillierte Diagnoseinformationen.
 
-INFO: general events (start, stop, normal transactions).
+INFO: allgemeine Ereignisse (Start, Stopp, normale Transaktionen).
 
-WARN: unexpected but not fatal.
+WARN: unerwartet, aber nicht kritisch.
 
-ERROR: error that prevents a specific operation.
+ERROR: Fehler, der eine bestimmte Operation verhindert.
 
-FATAL/CRITICAL: system shutdown.
+FATAL/CRITICAL: Systemausfall oder sofortiges Eingreifen erforderlich.
 
-Log Aggregation
+Log-Aggregation
 ELK Stack (Elasticsearch, Logstash, Kibana) or Elastic Cloud.
 
 Loki + Grafana (lightweight alternative).
@@ -385,48 +385,48 @@ logrotate
     notifempty
     create 0640 myuser mygroup
 }
-Monitoring and Alerting
-Metrics to Monitor
-System: CPU, RAM, disk usage, load average, network I/O.
+Monitoring und Alarmierung
+Zu überwachende Metriken
+System: CPU, RAM, Festplattennutzung, Load Average, Netzwerk-I/O.
 
-Application: request rate, latency (p50, p95, p99), error rate, active sessions.
+Anwendung: Anfragevolumen, Latenz (p50, p95, p99), Fehlerrate, aktive Sitzungen.
 
-Database: query count, slow queries, connection pool usage.
+Datenbank: Anzahl der Abfragen, langsame Abfragen, Nutzung des Connection Pools.
 
-Business: user signups, conversion rate, revenue.
+Geschäftsmetriken: Nutzeranmeldungen, Konversionsrate, Umsatz.
 
-Tools
-Prometheus + Grafana: Standard open-source stack.
+Werkzeuge
+Prometheus + Grafana: Standard-Stack aus der Open-Source-Welt.
 
-Node Exporter for system metrics.
+Node Exporter für Systemmetriken.
 
-Blackbox Exporter for endpoint availability.
+Blackbox Exporter für die Verfügbarkeit von Endpunkten.
 
-Alertmanager for alert routing.
+Alertmanager für die Weiterleitung von Alarmen.
 
-Cloud native: AWS CloudWatch, Azure Monitor, GCP Monitoring.
+Cloud-nativ: AWS CloudWatch, Azure Monitor, GCP Monitoring.
 
-Uptime Monitoring
-Pingdom, Statuspage, Better Uptime, Uptime Kuma (self-hosted).
+Verfügbarkeitsüberwachung
+Pingdom, Statuspage, Better Uptime, Uptime Kuma (selbst gehostet).
 
-Health checks: expose a /health endpoint that returns 200 if the service is healthy.
+Health Checks: Stelle einen `/health`-Endpunkt bereit, der bei gesundem Dienst `200` zurückgibt.
 
-Backup Strategies
-The 3-2-1 Rule
-3 copies of data.
+Backup-Strategien
+Die 3-2-1-Regel
+3 Kopien der Daten.
 
-2 different media types (e.g., SSD + tape, or local + cloud).
+2 unterschiedliche Speichermedien (z. B. SSD + Band oder lokal + Cloud).
 
-1 copy off-site (e.g., cloud or remote data centre).
+1 Kopie an einem externen Standort (z. B. Cloud oder entferntes Rechenzentrum).
 
-Backup Types
-Full backup: copy everything (slow, space-heavy).
+Backup-Typen
+Vollbackup: Kopiert alles (langsam, hoher Speicherbedarf).
 
-Incremental backup: copy only changes since last full or incremental (fast, complex restore).
+Inkrementelles Backup: Kopiert nur Änderungen seit dem letzten Voll- oder inkrementellen Backup (schnell, aber komplexere Wiederherstellung).
 
-Differential backup: copy changes since last full (middle ground).
+Differenzielles Backup: Kopiert Änderungen seit dem letzten Vollbackup (Mittelweg).
 
-Database Backups
+Datenbank-Backups
 bash
 # PostgreSQL
 pg_dump dbname > backup.sql
@@ -438,7 +438,7 @@ mysqldump -u root -p dbname > backup.sql
 # Restore
 psql dbname < backup.sql
 mysql -u root -p dbname < backup.sql
-File Backups
+Datei-Backups
 bash
 # Tar archive
 tar -czf backup.tar.gz /var/lib/data
@@ -448,21 +448,21 @@ rsync -avz /local/data/ user@backup-server:/backup/data/
 
 # Cloud CLI (e.g., AWS S3)
 aws s3 sync /local/data s3://my-bucket/backup/
-Automated Backup Scheduling (cron)
+Automatisierte Backup-Planung (cron)
 cron
 # Run daily at 2am
 0 2 * * * /usr/local/bin/backup_script.sh
-Cron and Scheduled Jobs
-Cron Syntax
+Cron und geplante Aufgaben
+Cron-Syntax
 text
 * * * * * command
 │ │ │ │ │
-│ │ │ │ └─ Day of week (0-7, 0=Sun)
-│ │ │ └─── Month (1-12)
-│ │ └───── Day of month (1-31)
-│ └─────── Hour (0-23)
+│ │ │ │ └─ Wochentag (0-7, 0=So)
+│ │ │ └─── Monat (1-12)
+│ │ └───── Tag des Monats (1-31)
+│ └─────── Stunde (0-23)
 └───────── Minute (0-59)
-Examples
+Beispiele
 cron
 # Every 5 minutes
 */5 * * * * /path/to/script
@@ -475,15 +475,15 @@ cron
 
 # Every hour
 0 * * * * /path/to/script
-Managing Cron
+Cron verwalten
 bash
 crontab -l          # List current user's cron jobs
 crontab -e          # Edit
 crontab -r          # Remove all
 Anacron
-Used for systems not running 24/7 (e.g., laptops), ensures jobs run eventually.
+Wird für Systeme verwendet, die nicht rund um die Uhr laufen (z. B. Laptops), und stellt sicher, dass Aufgaben schließlich ausgeführt werden.
 
-Package Management and Updates
+Paketverwaltung und Updates
 Debian/Ubuntu (apt)
 bash
 sudo apt update                # Update package list
@@ -497,28 +497,28 @@ sudo dnf check-update
 sudo dnf update
 sudo dnf install git nginx
 sudo dnf remove git
-Security Updates
-Enable unattended-upgrades on Ubuntu for security patches:
+Sicherheitsupdates
+Aktiviere unter Ubuntu `unattended-upgrades` für Sicherheitspatches:
 
 bash
 sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
-Docker in Production
-Best Practices
-Use specific image tags (python:3.12-slim) not latest.
+Docker in Produktion
+Bewährte Praktiken
+Verwende konkrete Image-Tags (`python:3.12-slim`) statt `latest`.
 
-Run containers as non-root user.
+Lass Container nicht als Root-Benutzer laufen.
 
-Scan images for vulnerabilities (docker scan, trivy).
+Prüfe Images auf Schwachstellen (`docker scan`, `trivy`).
 
-Set resource limits (--memory, --cpus).
+Setze Ressourcenlimits (`--memory`, `--cpus`).
 
-Use secrets (via Docker secrets or environment with care).
+Verwende Geheimnisse sorgfältig (etwa über Docker secrets oder Umgebungsvariablen).
 
-Keep images small: multi-stage builds, alpine base.
+Halte Images klein: Multi-Stage-Builds, schlanke Basis-Images.
 
-Docker Compose in Production
-Set resource limits in docker-compose.yml:
+Docker Compose in Produktion
+Setze Ressourcenlimits in `docker-compose.yml`:
 
 yaml
 services:
@@ -529,30 +529,30 @@ services:
         limits:
           memory: 512M
           cpus: '0.5'
-CI/CD Basics
-Pipeline Stages
-Build: Compile code, install dependencies.
+CI/CD-Grundlagen
+Pipeline-Stufen
+Build: Code kompilieren, Abhängigkeiten installieren.
 
-Test: Run unit, integration, and lint checks.
+Test: Unit-, Integrations- und Lint-Prüfungen ausführen.
 
-Containerise: Build Docker image.
+Containerise: Docker-Image bauen.
 
-Push: Push image to container registry.
+Push: Image in die Container-Registry hochladen.
 
-Deploy: Update staging/production environment.
+Deploy: Staging- oder Produktionsumgebung aktualisieren.
 
-Tools
-GitHub Actions: Integrated with GitHub.
+Werkzeuge
+GitHub Actions: In GitHub integriert.
 
-GitLab CI: Built into GitLab.
+GitLab CI: Direkt in GitLab integriert.
 
-Jenkins: Traditional, highly configurable.
+Jenkins: Traditionell und stark konfigurierbar.
 
-CircleCI, Travis CI: Popular third-party.
+CircleCI, Travis CI: Beliebte Drittanbieter.
 
-ArgoCD: GitOps for Kubernetes.
+ArgoCD: GitOps für Kubernetes.
 
-Example GitHub Action (simple):
+Beispiel für eine einfache GitHub Action:
 yaml
 name: CI
 on: push
@@ -566,32 +566,32 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: pytest
-System Tuning and Troubleshooting
-Check Disk Space
+Systemoptimierung und Fehlerbehebung
+Festplattenspeicher prüfen
 bash
 df -h                      # Human-readable disk usage
 du -sh /* | sort -h        # Size of top-level directories
-Check Memory Usage
+Speicherauslastung prüfen
 bash
 free -m                    # Memory in MB
 vmstat 1 10                # Virtual memory statistics
 top -o %MEM                # Sort processes by memory
-Check CPU Load
+CPU-Last prüfen
 bash
 uptime                     # Load average over 1,5,15 minutes
 top -o %CPU                # Sort processes by CPU
 mpstat -P ALL 1 5          # Per-core CPU usage
-Check Network
+Netzwerk prüfen
 bash
 netstat -i                 # Interface statistics
 iftop                      # Live bandwidth usage (requires install)
 nload                      # Another bandwidth monitor
-Find Large Files
+Große Dateien finden
 bash
 find / -type f -size +100M -exec ls -lh {} \; 2>/dev/null
-Infrastructure as Code (IaC)
+Infrastruktur als Code (IaC)
 Terraform
-Declare cloud resources in HCL.
+Definiere Cloud-Ressourcen in HCL.
 
 hcl
 provider "aws" {
@@ -602,7 +602,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 }
 Ansible
-Agentless configuration management using YAML.
+Agentenlose Konfigurationsverwaltung mit YAML.
 
 yaml
 - name: Install nginx
@@ -612,29 +612,29 @@ yaml
       apt:
         name: nginx
         state: present
-Best Practices
-Use modules and roles for reusability.
+Bewährte Praktiken
+Verwende Module und Rollen für bessere Wiederverwendbarkeit.
 
-Store state remotely (S3, Terraform Cloud).
+Speichere den Zustand remote (S3, Terraform Cloud).
 
-Use variables and secrets (AWS_SECRET_ACCESS_KEY via environment, not hardcoded).
+Verwende Variablen und Geheimnisse (`AWS_SECRET_ACCESS_KEY` über die Umgebung, nicht fest im Code).
 
-Version control your IaC code.
+Verwalte deinen IaC-Code in der Versionskontrolle.
 
-Incident Response (On-call)
-Checklist for Service Outage
-Acknowledge the alert.
+Incident Response (Bereitschaftsdienst)
+Checkliste für Dienstausfälle
+Alarm bestätigen.
 
-Assess scope: Which services/users are affected?
+Umfang bewerten: Welche Dienste oder Nutzer sind betroffen?
 
-Identify the issue (look at logs, metrics, recent deployments).
+Problem eingrenzen (Logs, Metriken, aktuelle Deployments prüfen).
 
-Contain if possible (circuit breakers, feature flags).
+Wenn möglich eindämmen (Circuit Breaker, Feature Flags).
 
-Rollback or fix forward.
+Rollback durchführen oder vorwärts beheben.
 
-Communicate status to stakeholders and users (status page).
+Status an Stakeholder und Nutzer kommunizieren (Statusseite).
 
-Document the incident timeline and actions.
+Zeitverlauf und Maßnahmen des Vorfalls dokumentieren.
 
-Post-mortem: within 24–48 hours, write a root cause analysis (RCA) and action items to prevent recurrence.
+Post-Mortem: Innerhalb von 24–48 Stunden eine Ursachenanalyse (RCA) und Maßnahmen zur Vermeidung von Wiederholungen verfassen.

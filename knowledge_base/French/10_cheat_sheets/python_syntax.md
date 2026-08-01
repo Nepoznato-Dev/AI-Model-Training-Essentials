@@ -1,12 +1,12 @@
-# Python Syntax Cheat Sheet
+# Aide-mémoire de syntaxe Python
 
-Quick reference for Python 3.x syntax and common patterns.
+Référence rapide de la syntaxe Python 3.x et des motifs courants.
 
 ---
 
-## Basic Syntax
+## Syntaxe de base
 
-### Variables and Data Types
+### Variables et types de données
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -25,7 +25,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### Chaînes de caractères
 ```python
 s = "Hello, World!"
 
@@ -47,9 +47,9 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## Contrôle du flux
 
-### Conditionnels
+### Conditions
 ```python
 if x > 10:
     print("Greater than 10")
@@ -86,9 +86,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## Data Structures
+## Structures de données
 
-### Lists
+### Listes
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -106,7 +106,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### Dictionnaires
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -121,7 +121,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### Ensembles
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -144,7 +144,7 @@ x, y, z = t             # Unpacking
 
 ## Fonctions
 
-### Definition
+### Définition
 ```python
 def greet(name, greeting="Hello"):
     """Docstring: Describe the function"""
@@ -163,7 +163,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Fonctions lambda
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -200,7 +200,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## Entrées/sorties de fichiers
 
 ```python
 # Reading files
@@ -219,7 +219,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## Gestion des erreurs
 
 ```python
 try:
@@ -241,7 +241,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules and Imports
+## Modules et imports
 
 ```python
 import math
@@ -256,9 +256,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## Motifs courants
 
-### List Operations
+### Opérations sur les listes
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -274,7 +274,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### Opérations sur les chaînes
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -290,7 +290,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### Dictionary Operations
+### Opérations sur les dictionnaires
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -306,7 +306,7 @@ for k, v in d.items():
 
 ---
 
-## Built-in Functions
+## Fonctions intégrées
 
 ```python
 len(), str(), int(), float(), bool()
@@ -322,16 +322,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## Conseils rapides
 
-- Use `#` for single-line comments
-- Use `"""triple quotes"""` for docstrings and multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` for variables/functions, `PascalCase` for classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` for project isolation
-- Install packages with `pip install package_name`
+- Utiliser `#` pour les commentaires sur une seule ligne
+- Utiliser `"""triple quotes"""` pour les docstrings et les chaînes multilignes
+- L'indentation est importante (généralement 4 espaces)
+- Convention de nommage : `snake_case` pour les variables/fonctions, `PascalCase` pour les classes
+- Utiliser `__name__ == "__main__"` pour vérifier si le script est exécuté directement
+- Utiliser `virtualenv` ou `venv` pour isoler les projets
+- Installer les paquets avec `pip install package_name`
 
 ---
 
-*Last updated: June 2025 | Python 3.x*
+*Dernière mise à jour : Juin 2025 | Python 3.x*

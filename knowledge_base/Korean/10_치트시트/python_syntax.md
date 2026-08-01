@@ -5,9 +5,9 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Python 구문 치트시트
+# Python 문법 치트시트
 
-빠른 참조를 위한 Python 3.x 구문과 일반적인 패턴.
+빠르게 참고할 수 있도록 Python 3.x 문법과 자주 쓰는 패턴을 정리했습니다.
 
 ---
 
@@ -331,13 +331,13 @@ any(), all()
 
 ## 빠른 팁
 
-- `#` 는 한 줄 주석에 사용
-- `"""triple quotes"""` 는 독스트링과 여러 줄 문자열에 사용
-- 들여쓰기는 중요함 (보통 4칸)
-- 명명 규칙: 변수/함수는 `snake_case`, 클래스는 `PascalCase`
-- 스크립트가 직접 실행되었는지 확인할 때 `__name__ == "__main__"` 사용
-- 프로젝트 격리를 위해 `virtualenv` 또는 `venv` 사용
-- 패키지 설치는 `pip install package_name` 사용
+- `#`는 한 줄 주석에 사용합니다.
+- `"""triple quotes"""`는 독스트링과 여러 줄 문자열에 사용합니다.
+- 들여쓰기는 중요하며, 보통 4칸을 사용합니다.
+- 명명 규칙으로는 변수/함수에 `snake_case`, 클래스에 `PascalCase`를 사용합니다.
+- 스크립트가 직접 실행되었는지 확인할 때는 `__name__ == "__main__"`를 사용합니다.
+- 프로젝트 격리를 위해 `virtualenv` 또는 `venv`를 사용합니다.
+- 패키지 설치에는 `pip install package_name`을 사용합니다.
 
 ---
 

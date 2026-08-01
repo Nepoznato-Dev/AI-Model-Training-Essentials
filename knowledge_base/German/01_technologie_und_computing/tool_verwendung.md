@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Tool-Nutzung
+# Werkzeugnutzung
 
 ## Git — Versionskontrolle
 
 Git ist ein verteiltes Versionskontrollsystem. Jeder Entwickler hat eine vollständige Kopie der Repository-Historie auf seinem lokalen Rechner.
 
-### Kern-Workflow
+### Grundlegender Ablauf
 
 ```bash
 # Ein neues Repository initialisieren
@@ -35,7 +35,7 @@ git commit -m "Kurze, imperativische Beschreibung der Änderung"
 git push origin main
 ```
 
-### Branching
+### Arbeiten mit Branches
 
 ```bash
 git branch feature/new-thing        # einen Branch erstellen
@@ -45,7 +45,7 @@ git checkout feature/new-thing      # dorthin wechseln
 git branch -d feature/new-thing     # Branch nach dem Mergen löschen
 ```
 
-### Merging und Rebasing
+### Mergen und Rebasen
 
 ```bash
 # Feature-Branch in main mergen
@@ -57,14 +57,14 @@ git checkout feature/new-thing
 git rebase main
 ```
 
-### Pull-Request (PR)-Workflow
+### Pull-Request-(PR)-Ablauf
 
 1. Erstelle einen Feature-Branch von `main`.
 2. Mache Commits auf dem Feature-Branch.
 3. Pushe den Branch: `git push origin feature/new-thing`.
 4. Öffne einen Pull Request auf GitHub / GitLab.
 5. Adressiere Code-Review-Feedback mit zusätzlichen Commits.
-6. Merge den PR, sobald er genehmigt wurde.
+6. Führe den PR zusammen, sobald er genehmigt wurde.
 
 ### Änderungen rückgängig machen
 
@@ -105,7 +105,7 @@ npm run build
 npx create-react-app my-app     # ein Paket ausführen, ohne es global zu installieren
 ```
 
-`package-lock.json` erfasst exakte Versionen; commite es zur Quellcodeverwaltung.
+`package-lock.json` hält exakte Versionen fest; committe die Datei zusammen mit dem Quellcode.
 
 ### Cargo (Rust)
 
@@ -235,19 +235,19 @@ VS Code ist ein leichter, plattformübergreifender Code-Editor mit einem reichen
 
 ### JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, CLion, GoLand)
 
-- Smart Code Completion und Refactoring sind Kernfunktionen.
-- Run/Debug-Konfigurationen ermöglichen das Starten und Debuggen von Programmen mit einem Klick.
+- Intelligente Codevervollständigung und Refactoring gehören zu den Kernfunktionen.
+- Run-/Debug-Konfigurationen ermöglichen das Starten und Debuggen von Programmen mit einem Klick.
 - Eingebaute Git-Unterstützung im VCS-Menü.
 - `Shift+Shift` öffnet den „Search Everywhere"-Dialog.
 - `Ctrl+Alt+L` (macOS: `Cmd+Option+L`) formatiert Code neu.
-- Plugins erweitern die Sprachunterstützung und fügen Tools hinzu.
+- Plugins erweitern die Sprachunterstützung und ergänzen zusätzliche Werkzeuge.
 
 ### Terminal-Tipps
 
 - Verwende Tab-Vervollständigung, um Dateinamen und Befehle schnell zu vervollständigen.
 - Drücke `Ctrl+R`, um die Befehlshistorie interaktiv zu durchsuchen.
 - `alias ll='ls -la'` erstellt eine Abkürzung — füge sie zu `~/.bashrc` oder `~/.zshrc` hinzu.
-- Verwende `tmux` oder `screen`, um Sitzungen am Leben zu erhalten, wenn du von einem Remote-Server getrennt wirst.
+- Verwende `tmux` oder `screen`, damit Sitzungen erhalten bleiben, wenn die Verbindung zu einem Remote-Server abbricht.
 - `man <command>` zeigt die Manual-Seite für jeden eingebauten Befehl.
 
 ---

@@ -1,4 +1,4 @@
-# Nozioni di base sulla rete
+# Fondamenti di networking
 
 Un riferimento pratico per sviluppatori e amministratori di sistema: concetti fondamentali, protocolli, comandi e risoluzione dei problemi.
 
@@ -33,7 +33,7 @@ In pratica, il **modello TCP/IP** (4 livelli: collegamento, Internet, trasporto,
 - Totale: 2¹²⁸ indirizzi (praticamente infiniti).
 
 ### Intervalli IP privati (RFC 1918)
-Questi non sono instradabili su Internet; utilizzato all'interno delle reti locali:
+Questi intervalli non sono instradabili su Internet e vengono usati nelle reti locali:
 - `10.0.0.0/8` (10.0.0.0 – 10.255.255.255)
 - `172.16.0.0/12` (172.16.0.0 – 172.31.255.255)
 - `192.168.0.0/16` (192.168.0.0 – 192.168.255.255)
@@ -48,7 +48,7 @@ Questi non sono instradabili su Internet; utilizzato all'interno delle reti loca
 Associa i nomi di dominio (ad esempio, `example.com`) agli indirizzi IP.
 
 ### Tipi di record
-| Digitare | Scopo |
+| Tipo | Scopo |
 |------|---------|
 | **A** | Mappa il dominio sull'indirizzo IPv4 |
 | **AAAA** | Mappa il dominio sull'indirizzo IPv6 |
@@ -65,8 +65,8 @@ nslookup example.com       # DNS lookup (simpler)
 host example.com           # Quick lookup
 dig -x 8.8.8.8             # Reverse lookup (IP to name)
 
-Ports and Protocols
-Well-Known Ports (0–1023)
+Porte e protocolli
+Porte note (0–1023)
 Port	Protocol	Service
 20, 21	TCP	FTP
 22	TCP	SSH
@@ -86,72 +86,72 @@ Port	Protocol	Service
 5432	TCP	PostgreSQL
 6379	TCP	Redis
 27017	TCP	MongoDB
-Check open ports
+Verificare le porte aperte
 bash
 ss -tulpn                 # Linux: listen and established sockets
 netstat -an               # Older tool
 lsof -i :8080             # See process using port 8080
 nmap localhost            # Scan local ports
 TCP vs UDP
-Feature	TCP	UDP
-Connection	Connection-oriented (handshake)	Connectionless
-Reliability	Guaranteed delivery, retransmission	Best effort (may drop packets)
-Ordering	Preserves order	No ordering guarantee
-Flow control	Yes (sliding window)	No
-Use cases	Web (HTTP), email, SSH, file transfer	DNS, streaming, VoIP, gaming, SNMP
-Header size	20–60 bytes	8 bytes
-HTTP and HTTPS
-HTTP Methods
-GET: Retrieve a resource (idempotent, safe).
+Caratteristica	TCP	UDP
+Connessione	Orientata alla connessione (handshake)	Senza connessione
+Affidabilità	Consegna garantita, ritrasmissione	Best effort (i pacchetti possono andare persi)
+Ordine	Mantiene l’ordine	Nessuna garanzia di ordine
+Controllo di flusso	Sì (sliding window)	No
+Casi d'uso	Web (HTTP), email, SSH, trasferimento file	DNS, streaming, VoIP, gaming, SNMP
+Dimensione header	20–60 byte	8 byte
+HTTP e HTTPS
+Metodi HTTP
+GET: recupera una risorsa (idempotente, sicuro).
 
-POST: Submit data (not idempotent).
+POST: invia dati (non idempotente).
 
-PUT: Update/replace a resource (idempotent).
+PUT: aggiorna o sostituisce una risorsa (idempotente).
 
-PATCH: Partial update.
+PATCH: aggiornamento parziale.
 
-DELETE: Remove a resource (idempotent).
+DELETE: rimuove una risorsa (idempotente).
 
-Status Codes
-1xx: Informational (100 Continue).
+Codici di stato
+1xx: informativi (100 Continue).
 
-2xx: Success (200 OK, 201 Created, 204 No Content).
+2xx: successo (200 OK, 201 Created, 204 No Content).
 
-3xx: Redirection (301 Moved Permanently, 302 Found, 304 Not Modified).
+3xx: reindirizzamento (301 Moved Permanently, 302 Found, 304 Not Modified).
 
-4xx: Client error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
+4xx: errore del client (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests).
 
-5xx: Server error (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
+5xx: errore del server (500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable).
 
-Headers
-Content-Type: media type (application/json, text/html).
+Header
+Content-Type: tipo di contenuto (application/json, testo/html).
 
 Authorization: credentials (e.g., Bearer <token>).
 
-Cache-Control: caching policy.
+Cache-Control: politica di caching.
 
-CORS headers: Access-Control-Allow-Origin, etc.
+Header CORS: Access-Control-Allow-Origin, ecc.
 
 TLS/SSL
-Encrypts HTTP traffic (HTTPS = HTTP over TLS).
+Cifra il traffico HTTP (HTTPS = HTTP su TLS).
 
-Certificates from Certificate Authorities (CAs) authenticate the server.
+I certificati emessi da Certificate Authority (CA) autenticano il server.
 
-Verify certificate chain and hostname on the client side.
+Sul client vanno verificati sia la catena del certificato sia il nome host.
 
-Firewalls and NAT
+Firewall e NAT
 Firewall
-Filters traffic based on rules (source IP, dest IP, port, protocol).
+Filtra il traffico in base a regole come IP sorgente, IP destinazione, porta e protocollo.
 
-Stateful firewalls track connection states.
+I firewall stateful tengono traccia dello stato delle connessioni.
 
 NAT (Network Address Translation)
-Translates private IPs to a public IP for internet access.
+Traduce indirizzi IP privati in un IP pubblico per consentire l’accesso a Internet.
 
-Port forwarding: maps a public port to an internal host/port.
+Il port forwarding mappa una porta pubblica verso un host e una porta interni.
 
-Common Networking Commands
-Connectivity Tests
+Comandi di networking più comuni
+Test di connettività
 bash
 ping google.com            # ICMP echo request
 ping -c 4 8.8.8.8          # ping 4 times
@@ -162,7 +162,7 @@ bash
 ip route show              # Linux: routing table
 route -n                   # Older Linux
 netstat -r                 # Windows/Mac
-Network Interfaces
+Interfacce di rete
 bash
 ip addr show               # List interfaces and IPs
 ifconfig                   # Older command
@@ -171,7 +171,7 @@ bash
 dig example.com
 nslookup example.com
 host example.com
-Connectivity to a Port
+Connettività verso una porta
 bash
 nc -zv google.com 443      # Netcat: check if port 443 is open
 telnet google.com 443      # Telnet to port
@@ -180,12 +180,12 @@ Firewall (Linux iptables/nftables)
 bash
 sudo ufw status            # Ubuntu: simple firewall
 sudo iptables -L -n        # List rules
-Network Statistics
+Statistiche di rete
 bash
 ss -tulpn                  # Show listening sockets (Linux)
 netstat -an                # All sockets (all OS)
-Subnetting (Quick Reference)
-CIDR	Netmask	Number of addresses	Usable hosts
+Subnetting (riferimento rapido)
+CIDR	Netmask	Numero di indirizzi	Host utilizzabili
 /32	255.255.255.255	1	1
 /30	255.255.255.252	4	2
 /29	255.255.255.248	8	6
@@ -198,8 +198,8 @@ CIDR	Netmask	Number of addresses	Usable hosts
 /22	255.255.252.0	1,024	1,022
 /16	255.255.0.0	65,536	65,534
 /8	255.0.0.0	16,777,216	16,777,214
-Load Balancing and Reverse Proxies
-Nginx as Reverse Proxy
+Bilanciamento del carico e reverse proxy
+Nginx come reverse proxy
 nginx
 server {
     listen 80;
@@ -210,7 +210,7 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-Load Balancing Algorithms
+Algoritmi di bilanciamento del carico
 Round-robin
 
 Least connections
@@ -219,29 +219,29 @@ IP hash (session stickiness)
 
 Weighted round-robin
 
-Tools
+Strumenti
 Nginx, HAProxy (software)
 
 AWS ELB, Azure Load Balancer, GCP Cloud Load Balancing (cloud)
 
-Troubleshooting Checklist
-Is the physical link up? (Check cables, Wi-Fi connection).
+Checklist di troubleshooting
+Il collegamento fisico è attivo? Controlla cavi e connessione Wi-Fi.
 
-Can you ping the gateway? (e.g., ping 192.168.1.1).
+Riesci a fare ping al gateway? Per esempio `ping 192.168.1.1`.
 
-Can you ping an external IP? (e.g., 8.8.8.8).
+Riesci a fare ping a un IP esterno? Per esempio `8.8.8.8`.
 
-Can you resolve a domain? (dig google.com).
+Riesci a risolvere un dominio? Per esempio con `dig google.com`.
 
-Is the application listening on the expected port? (ss -tulpn | grep 8080).
+L’applicazione è in ascolto sulla porta prevista? Per esempio `ss -tulpn | grep 8080`.
 
-Is the firewall blocking the port? (Check iptables/ufw or cloud security groups).
+Il firewall sta bloccando la porta? Controlla `iptables`, `ufw` o i security group cloud.
 
-Are there any errors in the application logs?
+Ci sono errori nei log dell’applicazione?
 
-Is TLS certificate valid and trusted? (openssl s_client -connect example.com:443).
+Il certificato TLS è valido e attendibile? Verificalo con `openssl s_client -connect example.com:443`.
 
-text
+testo
 
 ---
 

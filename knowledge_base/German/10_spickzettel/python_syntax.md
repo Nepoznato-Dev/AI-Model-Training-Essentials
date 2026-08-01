@@ -2,18 +2,18 @@
 This file was automatically translated from English to German.
 Source: python_syntax.md
 Note: Technical terms, code examples, and proper nouns may remain in English.
-Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
+Please contribute improvements via pull requests.
 -->
 
-# Python Syntax Cheat Sheet
+# Python-Syntax-Spickzettel
 
-Schnellreferenz für Python 3.x Syntax und common patterns.
+Schnellreferenz für Python-3.x-Syntax und häufige Muster.
 
 ---
 
-## Basic Syntax
+## Grundlegende Syntax
 
-### Variables und Daten Types
+### Variablen und Datentypen
 ```python
 # Variable assignment (no declaration needed)
 x = 5
@@ -32,7 +32,7 @@ float(5)          # 5.0
 bool(1)           # True
 ```
 
-### Strings
+### Zeichenketten
 ```python
 s = "Hello, World!"
 
@@ -54,7 +54,7 @@ f"Value: {x}"     # f-string formatting
 
 ---
 
-## Control Flow
+## Kontrollfluss
 
 ### Bedingte Anweisungen
 ```python
@@ -93,9 +93,9 @@ else:       # Execute if loop completes without break
 
 ---
 
-## Daten Structures
+## Datenstrukturen
 
-### Lists
+### Listen
 ```python
 lst = [1, 2, 3, 4, 5]
 
@@ -113,7 +113,7 @@ lst[1:4]                # Slice
 [i*2 for i in lst]      # List comprehension
 ```
 
-### Dictionaries
+### Wörterbücher (Dictionaries)
 ```python
 d = {"name": "Alice", "age": 30}
 
@@ -128,7 +128,7 @@ del d["age"]            # Delete key
 {k: v*2 for k, v in d.items()}  # Dict comprehension
 ```
 
-### Sets
+### Mengen
 ```python
 s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
 
@@ -140,7 +140,7 @@ s.intersection({2, 3})  # Common elements
 s.difference({3, 4})    # Elements in s but not other
 ```
 
-### Tuples
+### Tupel
 ```python
 t = (1, 2, 3)
 t[0]                    # Access (immutable)
@@ -170,7 +170,7 @@ def print_all(**kwargs):
         print(f"{k}: {v}")
 ```
 
-### Lambda Functions
+### Lambda-Funktionen
 ```python
 square = lambda x: x ** 2
 sorted(lst, key=lambda x: x[1])
@@ -207,7 +207,7 @@ class Employee(Person):
 
 ---
 
-## File I/O
+## Datei-Ein/Ausgabe
 
 ```python
 # Reading files
@@ -226,7 +226,7 @@ with open("file.txt", "a") as f:
 
 ---
 
-## Error Handling
+## Fehlerbehandlung
 
 ```python
 try:
@@ -248,7 +248,7 @@ raise ValueError("Invalid value")
 
 ---
 
-## Modules und Imports
+## Module und Importe
 
 ```python
 import math
@@ -263,9 +263,9 @@ os, sys, json, re, random, itertools, functools, pathlib
 
 ---
 
-## Common Patterns
+## Häufige Muster
 
-### List Operations
+### Listenoperationen
 ```python
 # Filter
 evens = [x for x in lst if x % 2 == 0]
@@ -281,7 +281,7 @@ for i, val in enumerate(lst):
     print(f"{i}: {val}")
 ```
 
-### String Operations
+### Zeichenkettenoperationen
 ```python
 # Join list of strings
 ", ".join(["a", "b", "c"])  # "a, b, c"
@@ -297,7 +297,7 @@ for i, val in enumerate(lst):
 f"{value:.2f}"              # 2 decimal places
 ```
 
-### Wörterbuch Operations
+### Operationen mit Dictionaries
 ```python
 # Merge dictionaries
 {**d1, **d2}
@@ -313,7 +313,7 @@ for k, v in d.items():
 
 ---
 
-## Built-in Functions
+## Eingebaute Funktionen
 
 ```python
 len(), str(), int(), float(), bool()
@@ -329,16 +329,16 @@ any(), all()
 
 ---
 
-## Quick Tips
+## Kurze Hinweise
 
-- Use `#` für single-line comments
-- Use `"""triple quotes"""` für docstrings und multi-line strings
-- Indentation matters (typically 4 spaces)
-- Naming conventions: `snake_case` für variables/functions, `PascalCase` für classes
-- `__name__ == "__main__"` to check if script is run directly
-- Use `virtualenv` or `venv` für project isolation
-- Install packages mit `pip install package_name`
+- Verwenden Sie `#` für einzeilige Kommentare
+- Verwenden Sie `"""triple quotes"""` für Docstrings und mehrzeilige Strings
+- Einrückung ist wichtig (typischerweise 4 Leerzeichen)
+- Namenskonventionen: `snake_case` für Variablen/Funktionen, `PascalCase` für Klassen
+- `__name__ == "__main__"`, um zu prüfen, ob ein Skript direkt ausgeführt wird
+- Verwenden Sie `virtualenv` oder `venv` für die Projektisolierung
+- Installieren Sie Pakete mit `pip install package_name`
 
 ---
 
-*Zuletzt aktualisiert: June 2025 | Python 3.x*
+*Zuletzt aktualisiert: Juni 2025 | Python 3.x*

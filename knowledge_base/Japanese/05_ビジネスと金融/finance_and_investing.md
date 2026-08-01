@@ -5,363 +5,363 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 金融 と 投資
+# 金融と投資
 
-## Personal 金融 基礎
+## 個人金融の基礎
 
-### Financial Planning 基本
-- **Budgeting**: Track income と expenses, 50/30/20 rule (needs/wants/savings)
-- **Emergency Fund**: 3-6 months の living expenses で liquid account
-- **Net Worth**: Assets minus liabilities, track over time
-- **Cash Flow 管理**: Money で vs. money out, positive cash flow essential
-- **Financial Goals**: Short-term (<1 year), medium-term (1-5 years), long-term (5+ years)
+### ファイナンシャルプランニングの基本
+- **Budgeting**: 収入と支出を把握し、50/30/20 ルール（必要支出 / 欲しいもの / 貯蓄）などを活用する
+- **Emergency Fund**: 生活費 3〜6 か月分を、すぐ使える流動性の高い口座で確保する
+- **Net Worth**: 資産から負債を差し引いた純資産で、時間を追って確認する
+- **Cash Flow Management**: 入ってくるお金と出ていくお金を管理し、プラスのキャッシュフローを維持する
+- **Financial Goals**: 短期（1 年未満）、中期（1〜5 年）、長期（5 年超）で目標を分ける
 
-### Banking Products
-- **Checking Accounts**: Daily transactions, debit cards, bill payments
-- **Savings Accounts**: Interest-bearing, limited withdrawals
-- **Money Market Accounts**: Higher interest, check-writing privileges
-- **Certificates の Deposit (CDs)**: Fixed term, fixed rate, early withdrawal penalty
-- **High-Yield Savings**: Online banks, competitive rates
+### 銀行商品
+- **Checking Accounts**: 日常決済向け口座。デビットカードや請求書支払いに使う
+- **Savings Accounts**: 利息がつく貯蓄口座。引き出し回数に制限がある場合もある
+- **Money Market Accounts**: 比較的高い金利と小切手機能を備える口座
+- **Certificates of Deposit（CDs）**: 固定期間・固定金利の商品。中途解約にはペナルティがある
+- **High-Yield Savings**: 主にオンライン銀行が提供する高金利の貯蓄口座
 
-### Credit と Debt
-- **Credit Score**: FICO (300-850), factors: payment 歴史, utilization, length, mix, inquiries
-- **Credit Reports**: Annual free reports from Equifax, Experian, TransUnion
-- **Types の Debt**: 
-  - Good debt: Mortgage, student loans (potential ROI)
-  - Bad debt: Credit cards, payday loans (high interest)
+### クレジットと負債
+- **Credit Score**: FICO（300〜850）。支払い履歴、利用率、履歴の長さ、借入の種類、照会履歴などで決まる
+- **Credit Reports**: Equifax、Experian、TransUnion から年 1 回無料で取得できる信用情報
+- **Types of Debt**:
+  - Good debt: 住宅ローン、学生ローンなど、将来の収益や資産形成につながる可能性がある負債
+  - Bad debt: クレジットカード、payday loan など、高金利で負担が大きい負債
 - **Debt Repayment Strategies**:
-  - Avalanche: Pay highest interest first (mathematically optimal)
-  - Snowball: Pay smallest balance first (psychological wins)
-- **Debt-to-Income Ratio**: Monthly debt payments / gross monthly income
+  - Avalanche: もっとも金利の高い負債から返済する方法。数学的には有利
+  - Snowball: 残高が小さい負債から返済する方法。心理的に継続しやすい
+- **Debt-to-Income Ratio**: 月々の返済額を月間総所得で割った比率
 
-## Investment 基礎
+## 投資の基礎
 
-### Asset Classes
+### 資産クラス
 
-#### Equities (Stocks)
-- **Common Stock**: Ownership share, voting rights, dividends
-- **Preferred Stock**: Fixed dividends, priority で bankruptcy, no voting
-- **Market Capitalization**: Large-cap, mid-cap, small-cap
-- **Investment Styles**: Growth, value, blend, income
-- **Sectors**: テクノロジー, 医療, financials, consumer, industrial, energy, utilities, materials, real estate, コミュニケーション services
+#### Equities（Stocks）
+- **Common Stock**: 議決権や配当を伴う通常株式
+- **Preferred Stock**: 固定配当を受けられ、破綻時の優先順位が高いが、議決権がないことが多い
+- **Market Capitalization**: Large-cap、mid-cap、small-cap など、時価総額による分類
+- **Investment Styles**: Growth、value、blend、income などの投資スタイル
+- **Sectors**: テクノロジー、医療、金融、一般消費財、工業、エネルギー、公益、不動産、通信サービスなど
 
-#### Fixed Income (Bonds)
-- **Government Bonds**: Treasury bills, notes, bonds (lowest risk)
-- **Municipal Bonds**: State/local government, tax-exempt interest
-- **Corporate Bonds**: Investment grade, high-yield/junk
-- **Bond Characteristics**: Face value, coupon rate, maturity, yield
-- **Interest Rate Risk**: Bond prices move inversely to rates
-- **Credit Risk**: Default probability, credit ratings (AAA to D)
+#### Fixed Income（Bonds）
+- **Government Bonds**: Treasury bills、notes、bonds などの国債。一般にリスクがもっとも低い
+- **Municipal Bonds**: 州や地方政府が発行し、利子が非課税となる場合がある債券
+- **Corporate Bonds**: 企業が発行する債券。investment grade と high-yield / junk がある
+- **Bond Characteristics**: 額面、coupon rate、満期、yield などの属性
+- **Interest Rate Risk**: 金利が上がると債券価格は下がる傾向がある
+- **Credit Risk**: 債務不履行の可能性。AAA から D までの格付けで表される
 
 #### Cash と Cash Equivalents
-- **Treasury Bills**: Short-term government debt
-- **Money Market Funds**: Stable NAV, liquid
-- **Commercial Paper**: Short-term corporate debt
-- **Characteristics**: Low risk, low return, high liquidity
+- **Treasury Bills**: 短期の政府債務
+- **Money Market Funds**: 安定した NAV と高い流動性を持つ資金運用商品
+- **Commercial Paper**: 短期の企業債務
+- **Characteristics**: 低リスク・低リターン・高流動性
 
 #### Real Estate
-- **Direct Ownership**: Physical properties, rental income
-- **REITs**: Real Estate Investment Trusts, publicly traded
-- **Real Estate Crowdfunding**: Platform-based property investment
-- **Characteristics**: Income generation, appreciation, inflation hedge
+- **Direct Ownership**: 物件を直接保有し、賃料収入を得る
+- **REITs**: 上場不動産投資信託
+- **Real Estate Crowdfunding**: プラットフォーム経由で行う不動産投資
+- **Characteristics**: インカム獲得、値上がり益、インフレヘッジ
 
 #### Alternative Investments
-- **Commodities**: Gold, silver, oil, agricultural products
-- **Cryptocurrencies**: Bitcoin, Ethereum, digital assets
-- **Private Equity**: Direct company ownership, illiquid
-- **Hedge Funds**: Active 管理, diverse strategies
-- **Collectibles**: Art, wine, rare items
+- **Commodities**: 金、銀、原油、農産物など
+- **Cryptocurrencies**: Bitcoin、Ethereum などのデジタル資産
+- **Private Equity**: 未公開企業への直接投資。流動性は低い
+- **Hedge Funds**: 多様な戦略をとるアクティブ運用ファンド
+- **Collectibles**: 美術品、ワイン、希少品など
 
-### Investment Vehicles
+### 投資ビークル
 
 #### Mutual Funds
-- Professionally managed portfolios
-- Priced at end-の-day NAV
-- Active or passive 管理
-- Load vs. no-load funds
-- Expense ratios vary widely
+- 専門家が運用する分散ポートフォリオ
+- 1 日の取引終了時点の NAV で価格が決まる
+- アクティブ運用とパッシブ運用がある
+- Load / no-load の違いがある
+- Expense ratio は商品ごとに大きく異なる
 
-#### Exchange-Traded Funds (ETFs)
-- Trade like stocks throughout day
-- Typically passive, index-tracking
-- Lower expense ratios than mutual funds
-- Tax-efficient structure
-- 例: SPY (S&P 500), QQQ (Nasdaq), VTI (total market)
+#### Exchange-Traded Funds（ETFs）
+- 株式のように日中取引できる
+- 多くはインデックス連動のパッシブ運用
+- Mutual Funds より expense ratio が低いことが多い
+- 税効率の高い仕組みを持つ
+- 例: SPY（S&P 500）、QQQ（Nasdaq）、VTI（total market）
 
 #### Index Funds
-- Passive 管理 tracking specific index
-- Low costs, broad diversification
-- 例: Total stock market, S&P 500, international
+- 特定の index に連動するパッシブ運用商品
+- 低コストで幅広い分散が可能
+- 例: Total stock market、S&P 500、international index
 
 #### Annuities
-- Insurance products providing income streams
-- Fixed, variable, or indexed returns
-- Immediate or deferred payout
-- Tax-deferred growth
+- 継続的な収入を提供する保険商品
+- fixed、variable、indexed などの種類がある
+- 即時受取型と据置型がある
+- 運用益に課税繰延べのメリットがあることが多い
 
-## Investment Strategies
+## 投資戦略
 
-### Portfolio Construction
-- **Asset Allocation**: Distribution across asset classes
-- **Diversification**: Spread risk across securities, sectors, geographies
-- **Modern Portfolio Theory**: Optimize risk-return through diversification
-- **Efficient Frontier**: Maximum return のために given risk level
-- **Correlation**: How assets move relative to each other
+### ポートフォリオ構築
+- **Asset Allocation**: 資産クラスごとの配分
+- **Diversification**: 銘柄、セクター、地域に分散してリスクを抑える
+- **Modern Portfolio Theory**: 分散によってリスクとリターンを最適化する考え方
+- **Efficient Frontier**: 一定のリスクに対して最大リターンを目指す組み合わせ
+- **Correlation**: 資産同士がどの程度同じ方向に動くか
 
-### Investment Approaches
-- **Passive 投資**: Index funds, buy-と-hold, low costs
-- **Active 投資**: Stock picking, market timing, higher costs
-- **Dollar-Cost Averaging**: Invest fixed amounts regularly regardless の price
-- **Value 投資**: Buy undervalued securities (Warren Buffett approach)
-- **Growth 投資**: Focus on companies と above-average growth
-- **Income 投資**: Prioritize dividends と interest payments
-- **ESG 投資**: 環境, social, governance factors
+### 投資アプローチ
+- **Passive Investing**: Index fund や buy-and-hold を中心に、低コストで運用する
+- **Active Investing**: 個別株選定や market timing を行う。コストは高くなりやすい
+- **Dollar-Cost Averaging**: 価格にかかわらず一定額を定期的に投資する
+- **Value Investing**: 割安な証券を買う手法（Warren Buffett のアプローチで有名）
+- **Growth Investing**: 平均以上の成長を見込める企業に注目する
+- **Income Investing**: 配当や利息収入を重視する
+- **ESG Investing**: 環境・社会・ガバナンス要因を考慮する投資
 
-### Risk 管理
-- **Risk Tolerance**: Ability と willingness to lose money
-- **Time Horizon**: When you need その money affects risk capacity
-- **Position Sizing**: Don't concentrate too much で single investment
-- **Stop-Loss Orders**: Automatic sell at predetermined price
-- **Rebalancing**: Restore target allocation periodically
-- **Hedging**: Options, inverse ETFs to reduce downside
+### リスク管理
+- **Risk Tolerance**: どれだけ損失に耐えられるか、またそれを心理的に受け入れられるか
+- **Time Horizon**: いつお金が必要になるかによって取れるリスクが変わる
+- **Position Sizing**: 1 つの投資先に集中しすぎない
+- **Stop-Loss Orders**: あらかじめ決めた価格で自動売却する注文
+- **Rebalancing**: 定期的に配分を目標値へ戻す
+- **Hedging**: option や inverse ETF で下落リスクを抑える
 
-## Retirement Planning
+## 退職後資金の計画
 
-### Retirement Accounts (US)
+### Retirement Accounts（US）
 
 #### Traditional IRA
-- Tax-deductible contributions (income limits apply)
-- Tax-deferred growth
-- Taxed upon withdrawal
-- Required Minimum Distributions (RMDs) at age 73
+- 拠出時に税控除を受けられる場合がある（所得制限あり）
+- 運用益は課税繰延べ
+- 引き出し時に課税される
+- 73 歳から Required Minimum Distributions（RMDs）が必要
 
 #### Roth IRA
-- After-tax contributions
-- Tax-free growth と withdrawals
-- No RMDs during lifetime
-- Income limits のために eligibility
+- 税引後資金を拠出する
+- 運用益と引き出しが非課税
+- 生涯にわたり RMD が不要
+- 利用資格には所得制限がある
 
 #### 401(k) Plans
-- Employer-sponsored retirement plans
-- Pre-tax or Roth (after-tax) options
-- Employer matching (free money)
-- Higher contribution limits than IRAs
-- Vesting schedules のために employer contributions
+- 雇用主提供の退職年金制度
+- 税引前拠出と Roth 型の選択肢がある
+- 企業の matching は実質的な追加報酬となる
+- IRA より拠出上限が高い
+- 企業拠出には vesting schedule があることが多い
 
 #### Other Plans
-- **403(b)**: Non-profit organizations
-- **457**: Government employees
-- **SEP IRA**: Self-employed, small ビジネス
-- **Solo 401(k)**: Self-employed と no employees
+- **403(b)**: 非営利団体向け
+- **457**: 政府職員向け
+- **SEP IRA**: 自営業者や小規模事業者向け
+- **Solo 401(k)**: 従業員のいない自営業者向け
 
-### Retirement Planning Concepts
-- **Replacement Ratio**: 70-80% の pre-retirement income typically needed
-- **Social セキュリティ**: Government benefit, claim between 62-70
-- **Pension Plans**: Defined benefit (employer guarantees payout)
-- **Withdrawal Strategies**: 4% rule, dynamic spending, bucket strategy
-- **医療 Costs**: Medicare, supplemental insurance, long-term care
+### 退職設計の概念
+- **Replacement Ratio**: 退職前所得の 70〜80% を目安に必要額を考えることが多い
+- **Social Security**: 62〜70 歳の間で受給開始を選べる公的給付
+- **Pension Plans**: 雇用主が給付額を保証する確定給付型制度
+- **Withdrawal Strategies**: 4% ルール、動的支出、bucket strategy など
+- **Healthcare Costs**: Medicare、補完保険、長期介護費用も考慮する
 
-## Market Mechanics
+## 市場の仕組み
 
-### Stock Exchanges
-- **NYSE**: New York Stock Exchange, auction-based
-- **Nasdaq**: Electronic exchange, テクノロジー-heavy
-- **Other Exchanges**: London Stock Exchange, Tokyo Stock Exchange, Shanghai Stock Exchange
+### 株式取引所
+- **NYSE**: auction-based の New York Stock Exchange
+- **Nasdaq**: 電子的な取引所で、テクノロジー銘柄が多い
+- **Other Exchanges**: London Stock Exchange、Tokyo Stock Exchange、Shanghai Stock Exchange など
 
-### Order Types
-- **Market Order**: Execute immediately at current price
-- **Limit Order**: Execute only at specified price or better
-- **Stop Order**: Becomes market order when stop price reached
-- **Stop-Limit Order**: Becomes limit order when stop price reached
-- **Trailing Stop**: Stop price follows stock price movement
+### 注文の種類
+- **Market Order**: 現在価格で即時に執行する注文
+- **Limit Order**: 指定価格以上 / 以下でのみ執行する注文
+- **Stop Order**: stop price に達すると market order になる注文
+- **Stop-Limit Order**: stop price 到達後に limit order へ変わる注文
+- **Trailing Stop**: 株価の動きに応じて stop price が追従する注文
 
-### Trading Concepts
-- **Bid-Ask Spread**: Difference between buying と selling price
-- **Volume**: Number の shares traded
-- **Liquidity**: Ease の buying/selling without affecting price
-- **Volatility**: Price fluctuation magnitude
-- **Short Selling**: Borrow shares, sell, hope to buy back cheaper
-- **Margin Trading**: Borrow money to invest, amplified gains/losses
+### 取引の概念
+- **Bid-Ask Spread**: 買値と売値の差
+- **Volume**: 売買された株数
+- **Liquidity**: 価格へ大きな影響を与えずに売買しやすい度合い
+- **Volatility**: 価格変動の大きさ
+- **Short Selling**: 株を借りて売り、後で安く買い戻すことを狙う取引
+- **Margin Trading**: 借入資金で投資し、利益も損失も拡大する取引
 
-### Market Indicators
-- **S&P 500**: 500 largest US companies
-- **Dow Jones Industrial Average**: 30 large blue-chip companies
-- **Nasdaq Composite**: All Nasdaq-listed stocks, tech-heavy
-- **Russell 2000**: Small-cap US stocks
-- **VIX**: Volatility index, "fear gauge"
-- **Yield Curve**: Bond yields across maturities, economic indicator
+### 市場指標
+- **S&P 500**: 米国の大企業 500 社の指標
+- **Dow Jones Industrial Average**: 大型 blue-chip 30 社の株価平均
+- **Nasdaq Composite**: Nasdaq 上場銘柄全体を表す指数
+- **Russell 2000**: 米国 small-cap 株の代表指数
+- **VIX**: ボラティリティ指数。「恐怖指数」とも呼ばれる
+- **Yield Curve**: 満期別の債券利回りを示し、景気指標としても使われる
 
-## Fundamental Analysis
+## ファンダメンタル分析
 
-### Financial Statements
+### 財務諸表
 - **Balance Sheet**: Assets = Liabilities + Shareholders' Equity
 - **Income Statement**: Revenue - Expenses = Net Income
-- **Cash Flow Statement**: Operating, 投資, financing activities
+- **Cash Flow Statement**: 営業・投資・財務活動による資金の流れ
 
-### Key Ratios
+### 主要な比率
 - **Valuation Ratios**:
-  - P/E (Price-to-Earnings): Share price / earnings per share
-  - P/B (Price-to-Book): Market value / book value
-  - P/S (Price-to-Sales): Market cap / revenue
-  - EV/EBITDA: Enterprise value / earnings before interest, taxes, depreciation, amortization
+  - P/E（Price-to-Earnings）: 株価 / 1 株当たり利益
+  - P/B（Price-to-Book）: 時価 / 純資産簿価
+  - P/S（Price-to-Sales）: 時価総額 / 売上高
+  - EV/EBITDA: Enterprise Value / 金利・税・減価償却前利益
 
 - **Profitability Ratios**:
-  - Gross Margin: Gross profit / revenue
-  - Operating Margin: Operating income / revenue
-  - Net Margin: Net income / revenue
-  - ROE (Return on Equity): Net income / shareholders' equity
-  - ROA (Return on Assets): Net income / total assets
+  - Gross Margin: 粗利益 / 売上高
+  - Operating Margin: 営業利益 / 売上高
+  - Net Margin: 純利益 / 売上高
+  - ROE（Return on Equity）: 純利益 / 自己資本
+  - ROA（Return on Assets）: 純利益 / 総資産
 
 - **Liquidity Ratios**:
-  - Current Ratio: Current assets / current liabilities
-  - Quick Ratio: (Current assets - inventory) / current liabilities
+  - Current Ratio: 流動資産 / 流動負債
+  - Quick Ratio: （流動資産 - 棚卸資産）/ 流動負債
 
 - **Leverage Ratios**:
-  - Debt-to-Equity: Total debt / shareholders' equity
-  - Interest Coverage: EBIT / interest expense
+  - Debt-to-Equity: 総負債 / 自己資本
+  - Interest Coverage: EBIT / 支払利息
 
-### Qualitative Factors
-- **管理 Quality**: Track record, alignment と shareholders
-- **Competitive Advantage**: Moat, barriers to entry
-- **Industry Dynamics**: Growth, competition, regulation
-- **Corporate Governance**: Board independence, shareholder rights
+### 定性的な観点
+- **Management Quality**: 経営陣の実績と株主との利害一致
+- **Competitive Advantage**: moat や参入障壁
+- **Industry Dynamics**: 成長性、競争、規制環境
+- **Corporate Governance**: 取締役会の独立性や株主権利
 
-## Technical Analysis
+## テクニカル分析
 
-### Chart Types
-- **Line Charts**: Closing prices over time
-- **Bar Charts**: Open, high, low, close (OHLC)
-- **Candlestick Charts**: Visual OHLC, bullish/bearish patterns
+### チャートの種類
+- **Line Charts**: 終値の推移を線で示す
+- **Bar Charts**: 始値・高値・安値・終値（OHLC）を示す
+- **Candlestick Charts**: OHLC を視覚的に示し、bullish / bearish パターンを読みやすい
 
-### Trend Analysis
-- **サポート**: Price level where buying pressure exceeds selling
-- **Resistance**: Price level where selling pressure exceeds buying
-- **Trendlines**: Connect highs or lows to show direction
-- **Moving Averages**: SMA (simple), EMA (exponential)
-- **Golden Cross**: Short MA crosses above long MA (bullish)
-- **Death Cross**: Short MA crosses below long MA (bearish)
+### トレンド分析
+- **Support**: 買い圧力が売り圧力を上回りやすい価格帯
+- **Resistance**: 売り圧力が買い圧力を上回りやすい価格帯
+- **Trendlines**: 高値や安値を結んで方向性を示す線
+- **Moving Averages**: SMA（simple）、EMA（exponential）
+- **Golden Cross**: 短期移動平均が長期移動平均を上抜く bullish シグナル
+- **Death Cross**: 短期移動平均が長期移動平均を下抜く bearish シグナル
 
-### Technical Indicators
-- **Relative Strength Index (RSI)**: Momentum oscillator (0-100)
+### テクニカル指標
+- **Relative Strength Index（RSI）**: 0〜100 のモメンタム指標
 - **MACD**: Moving Average Convergence Divergence
-- **Bollinger Bands**: Volatility bands around moving average
-- **Volume Indicators**: On-Balance Volume, volume-weighted average price
-- **Fibonacci Retracement**: サポート/resistance levels based on ratios
+- **Bollinger Bands**: 移動平均の周囲にボラティリティ帯を描く指標
+- **Volume Indicators**: On-Balance Volume、VWAP など
+- **Fibonacci Retracement**: 比率に基づく support / resistance 水準
 
-### Chart Patterns
-- **Reversal Patterns**: Head と shoulders, double top/bottom
-- **Continuation Patterns**: Triangles, flags, pennants
-- **Breakouts**: Price moves beyond defined range
+### チャートパターン
+- **Reversal Patterns**: head and shoulders、double top / bottom
+- **Continuation Patterns**: triangle、flag、pennant
+- **Breakouts**: 定義されたレンジを価格が抜ける動き
 
-## Tax Considerations
+## 税金に関する考慮点
 
-### Investment Taxes
-- **Capital Gains**: Profit from selling investments
-  - Short-term: Held <1 year, taxed as ordinary income
-  - Long-term: Held >1 year, preferential rates (0%, 15%, 20%)
-- **Dividends**: 
-  - Qualified: Lower tax rates
-  - Ordinary: Taxed as income
-- **Interest Income**: Generally taxed as ordinary income
-- **Tax-Loss Harvesting**: Sell losers to offset gains
+### 投資課税
+- **Capital Gains**: 投資売却で得る利益
+  - Short-term: 保有 1 年未満。通常所得として課税
+  - Long-term: 保有 1 年超。優遇税率（0%、15%、20%）
+- **Dividends**:
+  - Qualified: 低い税率が適用される配当
+  - Ordinary: 通常所得として課税される配当
+- **Interest Income**: 一般に通常所得として課税
+- **Tax-Loss Harvesting**: 含み損銘柄を売って利益と相殺する戦略
 
-### Tax-Advantaged Accounts
-- **Traditional IRA/401(k)**: Tax deduction now, taxed later
-- **Roth IRA/401(k)**: No deduction now, tax-free later
-- **HSA (Health Savings Account)**: Triple tax advantage のために medical expenses
-- **529 Plans**: Tax-advantaged education savings
+### 税制優遇口座
+- **Traditional IRA / 401(k)**: 今は控除、将来引き出し時に課税
+- **Roth IRA / 401(k)**: 今は控除なし、将来は非課税
+- **HSA（Health Savings Account）**: 医療費向けに三重の税優遇がある
+- **529 Plans**: 教育資金向けの税優遇制度
 
-### Tax Efficiency Strategies
-- Asset location (which accounts hold which investments)
-- Hold investments long-term のために preferential rates
-- Use tax-efficient funds (ETFs, index funds)
-- Consider municipal bonds のために taxable accounts
+### 税効率化の戦略
+- どの口座にどの資産を置くかを考える（asset location）
+- 優遇税率を狙って長期保有する
+- 税効率の高いファンド（ETF、index fund）を使う
+- 課税口座では municipal bond も検討する
 
-## Economic Factors
+## 経済要因
 
-### Macroeconomic Indicators
-- **GDP**: Gross Domestic Product, economic growth
-- **Inflation**: CPI, PCE, purchasing power erosion
-- **Unemployment**: Labor market health
-- **Interest Rates**: Federal Reserve policy, borrowing costs
-- **Consumer Confidence**: Spending sentiment
-- **Manufacturing データ**: PMI, industrial production
+### マクロ経済指標
+- **GDP**: Gross Domestic Product。経済成長を測る指標
+- **Inflation**: CPI や PCE で見る物価上昇と購買力低下
+- **Unemployment**: 労働市場の健全性を示す指標
+- **Interest Rates**: Federal Reserve の政策や借入コストに影響する
+- **Consumer Confidence**: 消費者の支出意欲を示す
+- **Manufacturing Data**: PMI や鉱工業生産など
 
-### Federal Reserve と Monetary Policy
-- **Dual Mandate**: Maximum employment, stable prices (2% inflation)
-- **Tools**: Federal funds rate, open market operations, quantitative easing
-- **Impact**: Interest rates affect bonds, stocks, currency, economy
+### Federal Reserve と金融政策
+- **Dual Mandate**: 最大雇用と物価安定（インフレ 2% 目標）
+- **Tools**: Federal funds rate、open market operations、quantitative easing
+- **Impact**: 金利は債券、株式、通貨、景気全体に影響する
 
-### ビジネス Cycle
-- **Expansion**: Economic growth, rising employment
-- **Peak**: Maximum growth, potential overheating
-- **Contraction/Recession**: Economic decline, rising unemployment
-- **Trough**: Bottom, recovery begins
+### 景気循環
+- **Expansion**: 経済成長と雇用増加の局面
+- **Peak**: 成長が最大化し、過熱の可能性がある局面
+- **Contraction / Recession**: 景気後退と失業増加の局面
+- **Trough**: 底打ちし、回復が始まる局面
 
-## Behavioral 金融
+## 行動ファイナンス
 
-### Common Biases
-- **Loss Aversion**: Losses hurt more than equivalent gains please
-- **Confirmation Bias**: Seek information confirming existing beliefs
-- **Overconfidence**: Overestimate knowledge と abilities
-- **Anchoring**: Rely too heavily on first piece の information
-- **Herd Mentality**: Follow crowd behavior
-- **Recency Bias**: overweight recent イベント
-- **Endowment Effect**: Value owned items more highly
-- **Sunk Cost Fallacy**: Continue based on past investment, not 未来 prospects
+### よくあるバイアス
+- **Loss Aversion**: 同じ大きさなら利益より損失の痛みを強く感じる
+- **Confirmation Bias**: 既存の信念を支持する情報ばかり集める
+- **Overconfidence**: 自分の知識や判断力を過大評価する
+- **Anchoring**: 最初に得た情報に過度に引きずられる
+- **Herd Mentality**: 群衆行動に流される
+- **Recency Bias**: 最近の出来事を過大評価する
+- **Endowment Effect**: 自分が持っているものを高く評価しがち
+- **Sunk Cost Fallacy**: 将来性ではなく、過去に払ったコストに縛られる
 
-### Emotional 投資 Pitfalls
-- Panic selling during downturns
-- FOMO (Fear の Missing Out) buying at tops
-- Trading too frequently
-- Chasing past パフォーマンス
-- Timing その market (nearly impossible consistently)
+### 感情的な投資の落とし穴
+- 下落局面での panic selling
+- 高値圏での FOMO（Fear of Missing Out）買い
+- 売買のしすぎ
+- 過去のパフォーマンス追随
+- 一貫して market timing を当てようとすること
 
 ### ベストプラクティス
-- Create と stick to investment plan
-- Automate contributions
-- Avoid checking portfolio too frequently
-- Focus on controllables (savings rate, costs, asset allocation)
-- Maintain long-term perspective
+- 投資計画を作り、それを守る
+- 拠出を自動化する
+- ポートフォリオを頻繁に見すぎない
+- コントロール可能な要素（貯蓄率、コスト、資産配分）に集中する
+- 長期視点を保つ
 
-## Current Investment Trends
+## 最近の投資トレンド
 
-### Thematic 投資
-- **テクノロジー**: AI, cloud コンピューティング, cybersecurity, semiconductors
-- **医療**: Biotechnology, genomics, telemedicine
-- **Clean Energy**: Solar, wind, electric vehicles, battery テクノロジー
-- **Fintech**: Digital payments, blockchain, robo-advisors
-- **E-commerce**: Online retail, logistics, digital advertising
+### テーマ型投資
+- **テクノロジー**: AI、cloud computing、cybersecurity、semiconductor
+- **医療**: biotechnology、genomics、telemedicine
+- **Clean Energy**: solar、wind、electric vehicle、battery technology
+- **Fintech**: digital payment、blockchain、robo-advisor
+- **E-commerce**: online retail、logistics、digital advertising
 
-### Demographic Trends
-- Aging population (医療, retirement services)
-- Millennial/Gen Z preferences (持続可能性, テクノロジー)
-- Urbanization (real estate, infrastructure)
-- Emerging markets middle class growth
+### 人口動態トレンド
+- 高齢化社会（医療、退職後サービス）
+- Millennial / Gen Z 世代の嗜好（持続可能性、テクノロジー）
+- 都市化（不動産、インフラ）
+- 新興国中間層の拡大
 
-### Sustainable 投資
-- **ESG Integration**: 環境, social, governance factors
-- **Impact 投資**: Generate positive social/環境 impact
-- **Green Bonds**: Fund 環境 projects
-- **Carbon Credits**: Trade emissions allowances
+### サステナブル投資
+- **ESG Integration**: 環境・社会・ガバナンス要因を投資判断に組み込む
+- **Impact Investing**: 社会的・環境的な良い影響も狙う投資
+- **Green Bonds**: 環境プロジェクト資金を調達する債券
+- **Carbon Credits**: 排出枠の取引
 
-## Financial Advisors と Services
+## ファイナンシャルアドバイザーとサービス
 
-### Types の Advisors
-- **Registered Investment Advisor (RIA)**: Fiduciary standard, fee-based
-- **Broker-Dealer**: Suitability standard, commission-based
-- **Robo-Advisors**: Automated 投資, lower costs
-- **Financial Planner**: Comprehensive planning, may be fee-only or commission
+### アドバイザーの種類
+- **Registered Investment Advisor（RIA）**: 受託者責任を負う fee-based の助言業者
+- **Broker-Dealer**: 適合性基準に基づき、commission を受け取る形態
+- **Robo-Advisors**: 自動化された投資サービスで、一般に低コスト
+- **Financial Planner**: 包括的な資金計画を支援。fee-only または commission 型がある
 
-### Compensation Models
-- **Fee-Only**: Percentage の assets, hourly, flat fee (no commissions)
-- **Commission**: Paid on product sales
-- **Fee-Based**: Combination の fees と commissions
-- **Assets Under 管理 (AUM)**: Typically 0.5%-1.5% annually
+### 報酬モデル
+- **Fee-Only**: 資産残高連動、時間料金、定額料金など。commission を受け取らない
+- **Commission**: 商品販売に応じて報酬を得る
+- **Fee-Based**: fee と commission の組み合わせ
+- **Assets Under Management（AUM）**: 年率 0.5%〜1.5% 程度が一般的
 
-### Choosing an Advisor
-- Verify credentials (CFP, CFA, CPA)
-- Understand compensation structure
-- Check regulatory 歴史 (SEC, FINRA BrokerCheck)
-- Ensure fiduciary duty
-- Assess コミュニケーション style と compatibility
+### アドバイザー選び
+- 資格（CFP、CFA、CPA）を確認する
+- 報酬体系を理解する
+- 規制上の履歴（SEC、FINRA BrokerCheck）を確認する
+- 受託者責任を負うか確かめる
+- コミュニケーションの相性や説明スタイルを見極める

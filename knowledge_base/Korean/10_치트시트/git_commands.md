@@ -5,13 +5,13 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Git 명령 빠른 참조
+# Git 명령어 빠른 참조
 
-Essential Git 명령 위한 version control.
+버전 관리를 위해 자주 쓰는 필수 Git 명령어를 정리한 문서입니다.
 
 ---
 
-## Setup & Configuration
+## 설정 및 구성
 
 ```bash
 # Configure user info
@@ -28,7 +28,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Repository Initialization
+## 저장소 초기화
 
 ```bash
 # Initialize new repository
@@ -44,7 +44,7 @@ git clone -b branch-name <url>
 
 ---
 
-## Basic Workflow
+## 기본 워크플로
 
 ```bash
 # Check status
@@ -71,7 +71,7 @@ git log --graph --oneline --all
 
 ---
 
-## Branching
+## 브랜치 관리
 
 ```bash
 # List branches
@@ -103,7 +103,7 @@ git rebase main
 
 ---
 
-## Remote Operations
+## 원격 작업
 
 ```bash
 # View remotes
@@ -132,7 +132,7 @@ git push --tags
 
 ---
 
-## Undoing Changes
+## 변경 사항 되돌리기
 
 ```bash
 # Unstage file (keep changes)
@@ -158,7 +158,7 @@ git reset --hard HEAD~1     # Discard all changes (dangerous)
 
 ---
 
-## Stashing
+## 스태시
 
 ```bash
 # Save work in progress
@@ -184,7 +184,7 @@ git stash clear
 
 ---
 
-## Tags
+## 태그
 
 ```bash
 # List tags
@@ -205,7 +205,7 @@ git push origin --delete v1.0.0
 
 ---
 
-## Viewing & Searching
+## 조회 및 검색
 
 ```bash
 # Show commit details
@@ -228,7 +228,7 @@ git show commit-hash:file.txt
 
 ---
 
-## 고급 Operations
+## 고급 작업
 
 ```bash
 # Cherry-pick commit
@@ -254,7 +254,7 @@ git submodule update --init --recursive
 
 ---
 
-## Cleanup
+## 정리
 
 ```bash
 # Remove untracked files (dry run)
@@ -271,9 +271,9 @@ git remote prune origin
 
 ---
 
-## Common Workflows
+## 일반 워크플로
 
-### Start New Feature
+### 새 기능 시작
 ```bash
 git checkout main
 git pull
@@ -285,7 +285,7 @@ git push -u origin feature/new-feature
 # Create PR/MR on platform
 ```
 
-### Sync 와 함께 Main
+### main과 동기화
 ```bash
 git checkout feature-branch
 git fetch origin
@@ -294,7 +294,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Hotfix Workflow
+### 핫픽스 워크플로
 ```bash
 git checkout main
 git pull
@@ -310,7 +310,7 @@ git push --tags
 
 ---
 
-## .gitignore Patterns
+## .gitignore 패턴
 
 ```gitignore
 # Ignore specific file
@@ -332,37 +332,37 @@ __pycache__/
 
 ---
 
-## Keyboard Shortcuts (Git Bash)
+## 키보드 단축키 (Git Bash)
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+R` | Reverse search 역사 |
-| `Tab` | Auto-완전한 |
-| `Ctrl+C` | Cancel command |
-| `Ctrl+Z` | Suspend process |
-| `fg` | Resume suspended process |
+| 단축키 | 동작 |
+|----------|------|
+| `Ctrl+R` | 기록 역방향 검색 |
+| `Tab` | 자동 완성 |
+| `Ctrl+C` | 명령 취소 |
+| `Ctrl+Z` | 프로세스 일시 중단 |
+| `fg` | 중단된 프로세스 재개 |
 
 ---
 
 ## 모범 사례
 
-✅ **Do:**
-- Write clear, descriptive commit messages
-- Commit frequently 와 함께 logical groupings
-- Use branches 위한 features/fixes
-- Pull before starting work
-- Review `git status` often
+✅ **해야 할 일:**
+- 명확하고 설명적인 커밋 메시지 작성하기
+- 논리적으로 묶어서 자주 커밋하기
+- 기능/수정 작업에는 브랜치 사용하기
+- 작업 시작 전에 pull 하기
+- `git status`를 자주 확인하기
 
-❌ **Don't:**
-- Commit sensitive 데이터 (API keys, passwords)
-- Force push to shared branches
-- Commit large binary files
-- Ignore merge conflicts
-- Work directly on main/master
+❌ **하지 말아야 할 일:**
+- 민감한 데이터(API 키, 비밀번호)를 커밋하기
+- 공유 브랜치에 강제 푸시하기
+- 큰 이진 파일을 커밋하기
+- 머지 충돌을 무시하기
+- main/master에서 직접 작업하기
 
 ---
 
-## Commit Message Convention
+## 커밋 메시지 규칙
 
 ```
 type(scope): subject
@@ -372,16 +372,16 @@ body (optional)
 footer (optional)
 ```
 
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Formatting
-- `refactor`: Code restructuring
-- `test`: Tests
-- `chore`: Maintenance
+**유형:**
+- `feat`: 새 기능
+- `fix`: 버그 수정
+- `docs`: 문서
+- `style`: 서식 조정
+- `refactor`: 코드 구조 개선
+- `test`: 테스트
+- `chore`: 유지보수
 
-**Example:**
+**예시:**
 ```
 feat(auth): add password reset functionality
 
@@ -393,4 +393,4 @@ Closes #123
 
 ---
 
-*최종 업데이트: June 2025 | Git 2.x*
+*최종 업데이트: 2025년 6월 | Git 2.x*

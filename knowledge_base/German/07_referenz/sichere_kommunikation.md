@@ -123,8 +123,8 @@ Kollektive Substantive (Team, Gruppe, Ausschuss, Familie) verwenden im amerikani
 
 ### Unbestimmte Pronomen
 
-Die folgenden sind immer singulär:
-- Jeder, anybody, jemand, niemand, jeder, entweder, weder
+Die folgenden englischen Pronomen stehen immer im Singular:
+- everyone, anybody, someone, nobody, each, either, neither
 - "Jeder **ist** eingeladen." (korrekt)
 - "Jeder **sind** eingeladen." (inkorrekt)
 

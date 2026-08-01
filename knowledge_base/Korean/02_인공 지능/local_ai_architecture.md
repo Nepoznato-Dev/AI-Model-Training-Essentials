@@ -5,26 +5,26 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI 아키텍처
+# 로컬 AI 아키텍처
 
-A practical 가이드 to running large 언어 models entirely on-device — hardware considerations, inference engines, memory optimisation, 와 system design 위한 edge 배포.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No 데이터 leaves 그 device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, 네트워크-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, 와 fine-tuning.
+대규모 언어 모델을 완전히 온디바이스에서 실행하기 위한 실용 가이드입니다. 하드웨어 고려 사항, 추론 엔진, 메모리 최적화, 엣지 배포를 위한 시스템 설계를 다룹니다.
 
 ---
 
-## Hardware Requirements
+## 왜 AI를 로컬에서 실행할까?
 
-### GPU Memory (VRAM)
-그 most critical resource. Model size 에서 memory ≈ **parameters × bytes per parameter**.
+- **Privacy**: 데이터가 기기 밖으로 나가지 않습니다.
+- **Cost**: 토큰당 API 비용이 들지 않습니다.
+- **Latency**: 네트워크에 의존하지 않아 지연 시간이 예측 가능합니다.
+- **Offline availability**: 인터넷 없이도 동작합니다.
+- **Control**: 모델 버전, 커스터마이징, fine-tuning을 완전히 통제할 수 있습니다.
+
+---
+
+## 하드웨어 요구 사항
+
+### GPU 메모리 (VRAM)
+가장 중요한 자원입니다. 메모리에서의 모델 크기 ≈ **parameters × bytes per parameter**입니다.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
@@ -33,169 +33,169 @@ A practical 가이드 to running large 언어 models entirely on-device — hard
 | INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
 | INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ 시스템.
+**실전 가이드라인:**
+- 8GB VRAM → 4-bit 기준 최대 7B 모델
+- 12GB VRAM → 4-bit 기준 최대 13B 모델
+- 24GB VRAM → 4-bit 기준 최대 70B 모델(또는 8-bit 기준 13B)
+- Apple Silicon(통합 메모리)은 64GB+ 시스템에서 70B 모델까지 실행할 수 있습니다.
 
 ### RAM (System Memory)
-- 위한 CPU inference, you need enough system RAM to load 그 model (similar to VRAM numbers).
-- 위한 GPU inference, system RAM matters 위한 loading 그 model into memory before offloading to VRAM.
+- CPU 추론을 위해서는 모델을 메모리에 올릴 수 있을 만큼 충분한 시스템 RAM이 필요합니다(VRAM 수치와 비슷한 수준).
+- GPU 추론에서는 모델을 VRAM으로 오프로딩하기 전에 메모리에 적재해야 하므로 시스템 RAM도 중요합니다.
 
 ### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free 위한 multiple models.
+- 양자화된 모델 가중치는 수 GB 정도의 공간을 차지합니다(예: 4-bit 7B ≈ 디스크에서 4 GB). 여러 모델을 위해 최소 20–50 GB의 여유 공간을 확보하세요.
 
 ### CPU
-- 위한 prompt processing (prefill) 와 CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent 성능 위한 LLMs due to 그 unified memory 와 Neural Engine.
+- 프롬프트 처리(prefill)와 CPU 오프로딩에는 최신 멀티코어 CPU가 도움이 됩니다.
+- Apple M-series 칩은 통합 메모리와 Neural Engine 덕분에 LLM 실행 성능이 매우 뛰어납니다.
 
 ---
 
-## Quantisation
+## 양자화
 
-Quantisation reduces 그 numerical precision 의 weights, dramatically cutting memory 와 increasing speed at a small accuracy cost.
+양자화는 가중치의 수치 정밀도를 낮춰, 약간의 정확도 손실만으로 메모리 사용량을 크게 줄이고 속도를 높이는 방법입니다.
 
-### Popular Formats
+### 널리 쓰이는 형식
 
 | Format | Bits | Description | Typical use |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised 위한 CPU/GPU hybrid | Best 위한 local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best 위한 NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good 위한 batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | llama.cpp 형식, CPU/GPU 하이브리드에 최적화 | 로컬 추론에 가장 적합 |
+| **GPTQ** | 4–8 | GPU 전용, CUDA에서 효율적 | NVIDIA GPU에 가장 적합 |
+| **AWQ** | 4 | activation-aware 방식, GPU 전용 | GPU 배치 추론에 적합 |
+| **ONNX** | variable | 표준화된 크로스플랫폼 형식 | 프로덕션 서빙 |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality 위한 most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation 와 함께 better perplexity at 4/3 bits.
+### 양자화 수준 선택
+- **Q8_0** (8-bit): 품질 손실이 거의 없지만 크기가 가장 큽니다.
+- **Q6_K** (6-bit): 품질이 좋고 압축률도 준수합니다.
+- **Q5_K_M** (5-bit): 흔히 쓰이는 균형점입니다.
+- **Q4_K_M** (4-bit): 가장 작고, 대부분의 작업에서 수용 가능한 품질을 제공합니다.
+- **IQ4_XS** / **IQ3_XS**: 4/3-bit에서 더 나은 perplexity를 제공하는 개선된 양자화 방식입니다.
 
-**Rule 의 thumb:** Use Q4_K_M 위한 a good balance 의 quality 와 size. If you have extra VRAM, use Q5 or Q6.
+**실전 요령:** 품질과 크기의 균형을 위해 Q4_K_M을 우선 고려하세요. VRAM에 여유가 있다면 Q5나 Q6를 사용하세요.
 
 ---
 
-## Inference Engines (Local)
+## 로컬 추론 엔진
 
 ### llama.cpp
-- Written 에서 C++.
-- Supports GGUF format.
-- Optimised 위한 CPU 와 GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, 와 Python bindings.
+- C++로 작성되었습니다.
+- GGUF 형식을 지원합니다.
+- CPU와 GPU(CUDA, Metal, OpenCL 경유)에 최적화되어 있습니다.
+- 특히 CPU에서 매우 빠릅니다.
+- 명령줄, 서버 모드, Python 바인딩을 제공합니다.
 
-**Example command:**
+**예시 명령어:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+(-ngl 32는 32개 레이어를 GPU로 오프로딩한다는 뜻입니다.)
 
 Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+llama.cpp를 간단한 CLI와 REST API로 감싼 도구입니다.
 
-Auto-downloads models, manages them.
+모델을 자동으로 다운로드하고 관리합니다.
 
-Great for prototyping and desktop apps.
+프로토타이핑과 데스크톱 앱에 매우 적합합니다.
 
-Supports custom Modelfiles for system prompts.
+시스템 프롬프트를 위한 사용자 정의 Modelfiles를 지원합니다.
 
-Usage:
+사용 방법:
 
 bash
 ollama run phi3:3.8b
 ollama run llama3:8b
 LM Studio
-Graphical desktop app for Windows, macOS, Linux.
+Windows, macOS, Linux용 그래픽 데스크톱 앱입니다.
 
-One-click download and chat interface.
+원클릭 다운로드와 채팅 인터페이스를 제공합니다.
 
-Built-in local server with OpenAI-compatible API.
+OpenAI 호환 API를 제공하는 내장 로컬 서버가 있습니다.
 
-Good for non-technical users and quick testing.
+비기술 사용자와 빠른 테스트에 적합합니다.
 
 Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
+HF 모델을 위한 표준 Python 라이브러리입니다.
 
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
+`load_in_4bit=True`와 함께 bitsandbytes를 사용하면 4-bit 양자화를 적용할 수 있습니다.
 
-More flexible for fine-tuning but slower than llama.cpp for inference.
+fine-tuning에는 더 유연하지만, 추론 속도는 llama.cpp보다 느립니다.
 
 ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
+GPTQ와 AWQ를 위한 매우 빠른 GPU 추론 엔진입니다.
 
-Best performance on NVIDIA GPUs.
+NVIDIA GPU에서 최고의 성능을 발휘합니다.
 
-Supports batched generation.
+배치 생성도 지원합니다.
 
 mlx (Apple)
-Apple's framework for M-series chips.
+Apple의 M-series 칩을 위한 프레임워크입니다.
 
-Highly optimised for Apple Silicon.
+Apple Silicon에 매우 최적화되어 있습니다.
 
-Python API.
+Python API를 제공합니다.
 
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
+메모리 관리
+컨텍스트 윈도우와 KV 캐시
+KV cache는 컨텍스트의 모든 레이어와 모든 토큰에 대한 key-value 쌍을 저장합니다. 컨텍스트 길이가 길어질수록 선형적으로 증가합니다.
 
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
+메모리 비용 ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
 
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
+32-layer 모델에서 KV heads가 8개이고 head dim이 128이라면, 토큰 하나당 비용은 약 ~32 × 8 × 128 × 2 bytes = 65 KB입니다. 128k tokens라면 cache만으로 약 8 GB가 필요합니다.
 
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
+오프로딩 전략
+레이어 오프로딩: 일부 레이어는 GPU에, 나머지는 CPU에 배치합니다. 순수 CPU보다 빠르고 필요한 VRAM도 더 적습니다.
 
-Token streaming: Process tokens incrementally rather than all at once.
+토큰 스트리밍: 한 번에 모두 처리하지 않고 토큰을 점진적으로 처리합니다.
 
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
+프롬프트 캐싱
+유사한 프롬프트 사이에서 KV cache를 재사용해 prefill 단계를 다시 계산하는 비용을 줄입니다. 일부 프레임워크는 이를 지원합니다(예: vLLM, `--prompt-cache`를 사용하는 llama.cpp).
 
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
+메모리 매핑 파일
+모델 가중치를 전부 RAM에 올리지 않고 디스크에서 직접 읽습니다. 메모리가 제한된 시스템에서 대형 모델을 다룰 때 유용하며, llama.cpp는 기본적으로 memory-mapping을 사용합니다.
 
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
+배포 아키텍처
+단일 기기 모드
+하나의 모델을 하나의 기기(노트북, 스마트폰, 엣지 디바이스)에서 실행하는 방식입니다. 개인 비서, 메모 앱, 코드 완성 등에 활용됩니다.
 
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
+하이브리드 엣지-클라우드
+로컬 모델이 일반적인 질의를 처리하고, 복잡한 질문은 클라우드 모델로 넘깁니다. 대부분의 경우에는 속도와 프라이버시를, 예외적인 경우에는 높은 성능을 얻을 수 있어 양쪽의 장점을 모두 살릴 수 있습니다.
 
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
+분산 추론(Multi-GPU)
+더 큰 모델은 여러 GPU에 레이어를 나눠 배치하거나(tensor parallelism), 컨텍스트를 여러 장치에 나눌 수 있습니다(pipeline parallelism). llama.cpp에서는 `-ngl`, ExLlamaV2에서는 `--num-gpu-layers`를 사용합니다.
 
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
+모바일 배포
+Android: JNI bindings 또는 ML Kit를 통해 llama.cpp를 사용할 수 있습니다.
 
-iOS: Use llama.cpp via Swift bindings or mlx.
+iOS: Swift bindings 또는 mlx를 통해 llama.cpp를 사용할 수 있습니다.
 
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
+Web: WebLLM(WebGPU에서 ONNX runtime으로 실행) 또는 transformers.js를 사용할 수 있습니다.
 
-Performance Optimisation
+성능 최적화
 Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
+attention 계산을 더 빠르게 하고 메모리 사용량도 줄여 줍니다. llama.cpp, ExLlamaV2, 최신 transformers 라이브러리에서 사용할 수 있습니다.
 
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
+배치 추론
+여러 프롬프트를 하나의 forward pass로 함께 처리합니다. 처리량이 크게 증가하며 llama-batch 또는 vLLM을 사용할 수 있습니다.
 
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
+조기 종료 / 토큰 예산 관리
+최대 token budget을 설정해 생성이 무한정 길어지는 것을 막습니다.
 
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
+추측적 디코딩
+작고 빠른 모델(draft model)이 토큰을 먼저 예측하고, 큰 모델이 이를 병렬로 검증하는 방식입니다. 2–3배의 속도 향상을 얻을 수 있습니다.
 
-Practical Setup Guide
-1. Install Ollama
+실전 설정 가이드
+1. Ollama 설치
 bash
 curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
+2. 모델 가져오기
 bash
 ollama pull phi3:3.8b-q4_K_M
-3. Run with API
+3. API로 실행
 bash
 ollama serve
-Then send requests to http://localhost:11434/api/generate.
+그다음 `http://localhost:11434/api/generate`로 요청을 보내면 됩니다.
 
-4. Python Integration
+4. Python 연동
 python
 import requests
 
@@ -204,244 +204,243 @@ response = requests.post(
     json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
+5. (Alternative) llama.cpp 직접 사용
 bash
 # Download GGUF from Hugging Face
 wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
 
 # Run server
 ./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
+모니터링과 가시성
+Linux에서는 `nvidia-smi`, macOS에서는 Activity Monitor로 GPU 사용률을 추적하세요.
 
-Track memory usage (RAM and VRAM).
+메모리 사용량(RAM과 VRAM)을 추적하세요.
 
-Track tokens per second (throughput).
+초당 토큰 수(throughput)를 추적하세요.
 
-Track time to first token (latency).
+첫 토큰이 출력되기까지 걸리는 시간(latency)을 추적하세요.
 
-Use built-in logging from llama.cpp or Ollama.
+llama.cpp 또는 Ollama의 내장 로깅을 활용하세요.
 
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
+한계와 트레이드오프
+품질 격차: 소형 로컬 모델(3.8B–7B)은 복잡한 추론에서 일반적으로 대형 클라우드 모델(GPT-4, Claude 3.5)보다 성능이 낮습니다.
 
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
+지식 cutoff: 모델의 지식은 학습 시점에 고정되므로, 최신 정보가 필요하면 RAG를 사용해 보완해야 합니다.
 
-Multilingual: Smaller models may have less multilingual capability.
+다국어 성능: 작은 모델은 다국어 처리 능력이 상대적으로 떨어질 수 있습니다.
 
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
+도구 사용: 소형 모델에서는 agentic workflow(function calling)의 신뢰성이 낮을 수 있습니다.
 
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
+그럼에도 일상적인 많은 작업(요약, Q&A, 코드 완성, 분류)에서는 로컬 모델이 이미 충분히 실용적이며 빠르게 개선되고 있습니다.
 
-text
+텍스트
 
 ---
 
-## File 4: `security_best_practices.md`
+## 파일 4: `security_best_practices.md`
 
 ```markdown
 # 보안 모범 사례
 
-A practical 가이드 to securing applications, infrastructure, 와 데이터 — from 개발 to production.
+애플리케이션, 인프라, 데이터를 개발 단계부터 프로덕션까지 안전하게 보호하기 위한 실용 가이드입니다.
 
 ---
 
 ## OWASP Top 10 (2021) — 개요
 
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **보안 Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable 와 Outdated Components**: Known CVEs 에서 dependencies.
-7. **Identification 와 Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software 와 데이터 Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **보안 Logging 와 Monitoring Failures**: No detection 의 breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse 의 server to make requests to internal 시스템.
+1. **Broken Access Control**: 사용자가 접근해서는 안 되는 리소스에 접근할 수 있는 문제입니다.
+2. **Cryptographic Failures**: 암호화가 약하거나 아예 적용되지 않은 상태입니다.
+3. **Injection**: SQL, NoSQL, OS command, LDAP injection과 같은 주입 공격입니다.
+4. **Insecure Design**: 아키텍처 수준의 설계 결함입니다.
+5. **Security Misconfiguration**: 기본 비밀번호, 열린 포트, 과도하게 자세한 오류 메시지 같은 설정 문제입니다.
+6. **Vulnerable and Outdated Components**: 의존성에 알려진 CVE가 존재하는 상태입니다.
+7. **Identification and Authentication Failures**: 취약한 비밀번호나 잘못된 세션 관리 같은 인증 실패입니다.
+8. **Software and Data Integrity Failures**: 공급망 공격, 서명되지 않은 업데이트 같은 무결성 문제입니다.
+9. **Security Logging and Monitoring Failures**: 침해를 탐지하지 못하는 로깅·모니터링 문제입니다.
+10. **Server-Side Request Forgery (SSRF)**: 서버를 악용해 내부 시스템으로 요청을 보내게 만드는 취약점입니다.
 
 ---
 
-## Input Validation 와 Output Encoding
+## 입력 검증과 출력 인코딩
 
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex 위한 email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows 와 DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: 위한 email, URL, 와 date validation, use standard libraries (e.g., `email-validator` 에서 Python, `validator.js` 에서 Node).
+### 검증 규칙
+- **Whitelist > Blacklist**: 알려진 나쁜 패턴을 막는 것보다 허용할 패턴을 먼저 정의하세요(예: email 검사용 regex).
+- **Length limits**: buffer overflow와 DoS를 막기 위해 최대 길이를 강제하세요.
+- **Type checking**: 정수는 정수인지, 불리언은 불리언인지 확인하세요.
+- **Use well-tested libraries**: email, URL, date validation에는 표준 라이브러리를 사용하세요(예: Python의 `email-validator`, Node의 `validator.js`).
 
-### Output Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell 명령 from user input; if unavoidable, use `shlex.quote()` or similar.
+### 출력 인코딩
+- **HTML encoding**: XSS를 막기 위해 `<`, `>`, `&`, `"`, `'`를 인코딩하세요.
+- **SQL parameterisation**: 사용자 입력을 SQL 쿼리에 직접 이어 붙이지 마세요. parameterised queries(prepared statements)나 ORM을 사용하세요.
+- **Shell escaping**: 사용자 입력으로 shell 명령을 구성하는 일은 피하고, 불가피하다면 `shlex.quote()` 같은 방법을 사용하세요.
 
 ---
 
-## Authentication 와 Authorisation
+## 인증과 권한 부여
 
-### Password 관리
-- **Hashing**: Store passwords 와 함께 a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) 위한 sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
+### 비밀번호 관리
+- **Hashing**: 비밀번호는 **Argon2id**(권장), **bcrypt**, **scrypt**, **PBKDF2** 같은 강력하고 느린 해시 알고리즘으로 저장하세요.
+- **Salting**: 사용자마다 고유한 salt를 추가하세요.
+- **Minimum length**: 최소 12–16자를 강제하세요.
+- **MFA (Multi-Factor Authentication)**: 민감한 작업에는 두 번째 인증 수단(TOTP, SMS, hardware key)을 요구하세요.
+- **Rate limiting**: 로그인 엔드포인트에서 brute-force 시도를 막으세요(예: IP/사용자당 5분에 5회).
 
-### Session 관리
-- Use secure, HTTP-only, SameSite cookies 위한 session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout 와 on password change.
-- Avoid exposing session IDs 에서 URLs.
+### 세션 관리
+- session token에는 secure, HTTP-only, SameSite cookie를 사용하세요.
+- 적절한 만료 시간을 설정하세요.
+- 로그아웃 시와 비밀번호 변경 시 세션을 무효화하세요.
+- URL에 session ID를 노출하지 마세요.
 
 ### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring 보안).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
+- 검증된 라이브러리를 사용하세요(예: Authlib, PyJWT, Passport.js, Spring Security).
+- ID token은 signature, issuer, audience, expiration을 철저히 검증하세요.
+- CSRF 방지를 위해 state parameter를 사용하세요.
+- client secret은 안전하게 보호하세요.
 
-### JWT (JSON 웹 Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) 위한 better 보안; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), 와 expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes 위한 access tokens; use refresh tokens 위한 longer sessions.
-- **Store securely**: Never store JWTs 에서 localStorage (vulnerable to XSS); use HTTP-only cookies instead.
+### JWT (JSON Web Tokens)
+- **Sign**: 더 강한 보안을 위해 RS256 또는 ES256(비대칭 방식)을 사용하세요. 공유 비밀을 잘 관리할 수 있다면 HS256(대칭 방식)도 사용할 수 있습니다.
+- **Validate**: signature, issuer (`iss`), audience (`aud`), expiration (`exp`)을 항상 검증하세요.
+- **Keep short expiration**: access token은 15–60분 정도의 짧은 만료 시간을 두고, 더 긴 세션에는 refresh token을 사용하세요.
+- **Store securely**: JWT를 localStorage에 저장하지 마세요(XSS에 취약함). 대신 HTTP-only cookie를 사용하세요.
 
 ---
 
 ## API 보안
 
-### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
+### 인증
+- 공개 엔드포인트를 제외한 모든 API 호출은 항상 인증하세요.
+- basic auth보다 API key나 OAuth2 token을 우선 사용하세요. basic auth는 매 요청마다 자격 증명을 전송합니다.
 
-### Rate Limiting 와 Throttling
-- Apply per-user 와 per-IP rate limits to prevent abuse 와 DoS.
-- Return `429 Too Many Requests` 와 함께 a `Retry-After` header.
+### 속도 제한과 스로틀링
+- abuse와 DoS를 방지하기 위해 사용자별·IP별 rate limit을 적용하세요.
+- `Retry-After` 헤더와 함께 `429 Too Many Requests`를 반환하세요.
 
 ### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` 에서 production).
-- Validate `Origin` header on 그 server side.
+- 허용할 origin만 명시적으로 열어 두세요(프로덕션에서는 절대 `*` 사용 금지).
+- 서버 측에서 `Origin` 헤더를 검증하세요.
 
-### Input Validation
-- Validate all request parameters, including headers 와 body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` 에서 JSON Schema).
+### 입력 검증
+- header와 body를 포함한 모든 요청 파라미터를 검증하세요.
+- 예상하지 못한 필드는 거부하세요(JSON Schema의 `"strict": true` 또는 `additionalProperties: false`).
 
 ### HTTPS / TLS
-- Enforce HTTPS 에서 production.
-- Use HSTS (HTTP Strict Transport 보안) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
+- 프로덕션에서는 HTTPS를 강제하세요.
+- HSTS (HTTP Strict Transport Security)를 사용해 브라우저가 HTTPS만 사용하도록 하세요.
+- TLS 1.2 또는 1.3을 사용하고 TLS 1.0/1.1은 비활성화하세요.
 
 ---
 
-## Secrets 관리
+## 비밀정보 관리
 
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, 데이터베이스 URLs) to source control.
-- Use environment variables or secret 관리 tools.
+### 비밀정보를 하드코딩하지 말 것
+- secrets(API keys, passwords, database URLs)를 source control에 커밋하지 마세요.
+- environment variables 또는 secret management 도구를 사용하세요.
 
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets 에서 files 와 commit them (와 함께 KMS or GPG).
-- **Docker secrets**: 위한 Swarm mode; Kubernetes secrets (base64-encoded, but use 와 함께 care; consider external Secrets Store CSI driver).
+### 도구
+- **HashiCorp Vault**: 엔터프라이즈급 동적 secret 관리 도구입니다.
+- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: 클라우드 네이티브 secret 관리 서비스입니다.
+- **SOPS**: 파일 안의 secrets를 암호화하고 KMS 또는 GPG와 함께 커밋할 수 있게 해줍니다.
+- **Docker secrets**: Swarm mode용 기능입니다. Kubernetes secrets는 base64 인코딩일 뿐이므로 주의해서 사용하고, 필요하다면 external Secrets Store CSI driver를 검토하세요.
 
 ### Rotation
-- Regularly rotate secrets 와 service accounts.
-- Automate rotation where possible.
+- secrets와 service account를 정기적으로 교체하세요.
+- 가능하다면 rotation을 자동화하세요.
 
 ---
 
-## Dependency 관리
+## 의존성 관리
 
-### Vulnerability Scanning
+### 취약점 스캔
 - **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
+- **General**: `Dependabot`(GitHub), `Renovate`, `Trivy`.
 
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests 위한 minor/patch updates.
-- Review changelogs 위한 breaking changes.
+### 패치 관리
+- 의존성은 패치된 버전으로 계속 업데이트하세요.
+- minor/patch 업데이트를 위한 자동 pull request를 설정하세요.
+- breaking change 여부를 changelog로 검토하세요.
 
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums 의 downloaded dependencies.
-- Prefer official registries 와 trust only verified publishers.
-
----
-
-## Infrastructure 보안
-
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use 보안 groups (AWS) or NSGs (Azure) 위한 fine-grained control.
-
-### OS Hardening
-- Apply 보안 updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services 와 default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### 네트워크 Segmentation
-- Place databases 와 caches 에서 private subnets 와 함께 no internet access.
-- Use a DMZ 위한 public-facing services.
-- Apply 그 principle 의 least privilege to 네트워크 access.
-
-### Secrets 에서 Infrastructure
-- Never store secrets 에서 CI/CD environment variables unless encrypted.
-- Use 그 cloud provider's IAM roles 위한 EC2/VM instances instead 의 long-lived keys.
+### 공급망 무결성
+- 재현 가능한 빌드를 위해 `package-lock.json`, `Cargo.lock`, `go.sum` 같은 package lockfile을 사용하세요.
+- 다운로드한 의존성의 checksum을 검증하세요.
+- 공식 registry를 우선 사용하고 검증된 게시자만 신뢰하세요.
 
 ---
 
-## Logging 와 Monitoring
+## 인프라 보안
 
-### What to Log
-- Authentication 이벤트 (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- 데이터베이스 schema changes.
-- System errors 와 exceptions.
-- API requests 와 responses (redact sensitive 데이터).
+### 방화벽
+- 반드시 필요한 포트(예: 80, 443)를 제외한 모든 inbound port를 차단하세요.
+- SSH 접근은 특정 IP 범위로 제한하거나 VPN/bastion host를 사용하세요.
+- 세밀한 제어를 위해 security groups(AWS) 또는 NSGs(Azure)를 사용하세요.
 
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
+### OS 하드닝
+- `sudo apt upgrade`, `yum update` 등으로 보안 업데이트를 정기적으로 적용하세요.
+- 불필요한 서비스와 기본 계정을 비활성화하세요.
+- SSH에 대한 brute-force 시도를 막기 위해 fail2ban을 사용하세요.
+- SSH 보안을 강화하세요: root login 비활성화, key-based auth 사용, 기본 포트 변경(선택 사항).
 
-### Alerting
-- Set up alerts 위한:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (보안 Information 와 Event 관리) 위한 고급 correlation.
+### 네트워크 분리
+- database와 cache는 인터넷 접근이 없는 private subnet에 두세요.
+- public-facing 서비스에는 DMZ를 사용하세요.
+- 네트워크 접근에도 least privilege 원칙을 적용하세요.
 
-### Log Retention
-- Retain logs 위한 at least 30–90 days depending on regulatory requirements.
-- Store logs 에서 a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
+### 인프라 내 비밀정보
+- 암호화되지 않았다면 CI/CD environment variables에 secrets를 저장하지 마세요.
+- 장기적으로 살아 있는 key 대신 클라우드 제공자의 IAM role을 EC2/VM instance에 부여하세요.
 
 ---
 
-## Secure 개발 Lifecycle (SDL)
+## 로깅과 모니터링
 
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early 에서 design.
-3. **Secure coding standards**: Enforce via linters 와 code review checklists.
-4. **SAST** (Static Application 보안 테스트): Scan source code 위한 vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application 보안 테스트): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration 테스트**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan 위한 when a breach is detected.
+### 무엇을 기록할 것인가
+- 인증 이벤트(success/failure)
+- 접근 제어 결정(authorisation failure)
+- 관리자 작업(사용자 생성, 삭제, 권한 변경)
+- database schema 변경
+- 시스템 오류와 exception
+- API 요청과 응답(민감한 데이터는 마스킹)
+
+### 무엇을 기록하지 말아야 하는가
+- 비밀번호, secrets, tokens, PII(Personal Identifiable Information)는 해시 처리 또는 마스킹 없이 기록하지 마세요.
+- 전체 신용카드 번호를 기록하지 마세요.
+
+### 경보 설정
+- 다음 상황에 대한 알림을 설정하세요.
+  - 여러 차례의 로그인 실패(brute force 가능성)
+  - 비정상적인 접근 패턴(예: 새로운 위치, 이상한 시간대)
+  - 새로운 관리자 계정 생성
+  - 높은 오류율 또는 지연 시간 급증
+- 고급 상관 분석을 위해 SIEM(Security Information and Event Management)을 사용할 수 있습니다.
+
+### 로그 보존
+- 규제 요구 사항에 따라 최소 30–90일 동안 로그를 보관하세요.
+- ELK Stack, Splunk, Datadog 같은 중앙 집중식 위변조 방지 시스템에 로그를 저장하세요.
+
+---
+
+## Secure Development Lifecycle (SDL)
+
+1. **Training**: 개발자가 흔한 취약점을 이해하도록 교육하세요.
+2. **Threat modelling**: 설계 초기 단계에서 잠재적 위협을 식별하세요.
+3. **Secure coding standards**: linter와 code review checklist를 통해 강제하세요.
+4. **SAST** (Static Application Security Testing): SonarQube, CodeQL 같은 도구로 source code의 취약점을 스캔하세요.
+5. **DAST** (Dynamic Application Security Testing): OWASP ZAP, Burp Suite 같은 도구로 실행 중인 애플리케이션을 스캔하세요.
+6. **SCA** (Software Composition Analysis): 의존성을 스캔하세요.
+7. **Penetration testing**: 정기적인 윤리적 해킹 점검을 수행하세요.
+8. **Bug bounty**: 외부 연구자들이 책임 있게 취약점을 찾도록 장려하세요.
+9. **Incident response plan**: 침해가 탐지되었을 때를 위한 명확한 대응 계획을 마련하세요.
 
 ---
 
 ## Emergency Checklist (When a Breach is Suspected)
 
-1. **Do not panic** — but act quickly.
-2. **Isolate** 그 affected 시스템 (disconnect from 네트워크 if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, 와 disk images.
-4. **Identify** 그 scope: which 시스템, which 데이터.
-5. **Rotate** all compromised credentials 와 secrets.
-6. **Patch** 그 vulnerability.
-7. **Notify** affected users 와 regulatory bodies if required (within 법적 timeframes).
-8. **Conduct a post-mortem** to understand root cause 와 improve processes.
+1. **Do not panic** — 당황하지 말되 빠르게 행동하세요.
+2. **Isolate** 영향을 받은 시스템을 격리하세요(필요하다면 네트워크에서 분리).
+3. **Preserve evidence**: 로그, 메모리 덤프, 디스크 이미지를 확보하세요.
+4. **Identify** 범위를 파악하세요. 어떤 시스템과 어떤 데이터가 영향을 받았는지 확인하세요.
+5. **Rotate** 유출된 모든 자격 증명과 secrets를 교체하세요.
+6. **Patch** 취약점을 수정하세요.
+7. **Notify** 필요한 경우 법적 기한 안에 영향받은 사용자와 규제 기관에 통지하세요.

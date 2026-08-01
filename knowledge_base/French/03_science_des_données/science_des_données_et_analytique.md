@@ -5,337 +5,337 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Données Science et Analytics
+# Science des données et analytique
 
-## Core Concepts
+## Concepts fondamentaux
 
-### What is Données Science?
-Données Science is an interdisciplinary field that uses scientific methods, processes, algorithms, et Systèmes to extract knowledge et insights from structured et unstructured Données. It combines:
-- **Statistiques**: Mathematical foundation pour analysis
-- **Computer Science**: Programming, algorithms, Données structures
-- **Domain Expertise**: Subject matter knowledge
-- **Données Visualization**: Communicating findings effectively
+### Qu'est-ce que la science des données ?
+La science des données est un domaine interdisciplinaire qui utilise des méthodes scientifiques, des processus, des algorithmes et des systèmes pour extraire des connaissances et des insights à partir de données structurées et non structurées. Elle combine :
+- **Statistiques** : base mathématique de l'analyse
+- **Informatique** : programmation, algorithmes, structures de données
+- **Expertise métier** : connaissance du domaine
+- **Visualisation des données** : communication efficace des résultats
 
-### Données Types
-- **Structured Données**: Organized dans rows/columns (databases, spreadsheets)
-- **Unstructured Données**: No predefined format (text, images, audio, video)
-- **Semi-structured Données**: Some organization but not rigid (JSON, XML, HTML)
-- **Time Series Données**: Sequential Données points indexed dans time order
-- **Spatial Données**: Geographic/location-based information
-- **Graph Données**: Nodes et edges representing relationships
+### Types de données
+- **Données structurées** : organisées en lignes et colonnes (bases de données, feuilles de calcul)
+- **Données non structurées** : sans format prédéfini (texte, images, audio, vidéo)
+- **Données semi-structurées** : un certain niveau d'organisation, mais non rigide (JSON, XML, HTML)
+- **Données de séries temporelles** : points de données séquentiels indexés dans l'ordre du temps
+- **Données spatiales** : informations géographiques ou liées à la localisation
+- **Données de graphe** : nœuds et arêtes représentant des relations
 
-### le/la Données Science Process (CRISP-DM)
-1. **Entreprise Understanding**: Define objectives et requirements
-2. **Données Understanding**: Collect et explore initial Données
-3. **Données Preparation**: Clean, transform, et format Données (80% de work)
-4. **Modeling**: Select et apply modeling techniques
-5. **Evaluation**: Assess model Performance against objectives
-6. **Déploiement**: Implement model dans production environment
+### Le processus de science des données (CRISP-DM)
+1. **Compréhension métier** : définir les objectifs et les exigences
+2. **Compréhension des données** : collecter et explorer les données initiales
+3. **Préparation des données** : nettoyer, transformer et mettre en forme les données (80 % du travail)
+4. **Modélisation** : sélectionner et appliquer des techniques de modélisation
+5. **Évaluation** : mesurer la performance du modèle par rapport aux objectifs
+6. **Déploiement** : mettre le modèle en œuvre dans un environnement de production
 
-## Statistiques Fondamentaux
+## Fondamentaux des statistiques
 
-### Descriptive Statistiques
-- **Measures de Central Tendency**: Mean, median, mode
-- **Measures de Dispersion**: Range, variance, standard deviation, interquartile range
-- **Distribution Shape**: Skewness (asymmetry), kurtosis (tailedness)
-- **Percentiles et Quartiles**: Position within distribution
+### Statistiques descriptives
+- **Mesures de tendance centrale** : moyenne, médiane, mode
+- **Mesures de dispersion** : étendue, variance, écart-type, intervalle interquartile
+- **Forme de la distribution** : asymétrie (skewness), kurtosis (aplatissement ou lourdeur des queues)
+- **Percentiles et quartiles** : position dans la distribution
 
-### Inferential Statistiques
-- **Hypothesis Test**: Null hypothesis, alternative hypothesis, p-values
-- **Confidence Intervals**: Range de values likely containing population parameter
-- **Statistical Significance**: Likelihood results occurred by chance
-- **Type I Error**: False positive (rejecting true null hypothesis)
-- **Type II Error**: False negative (failing to reject false null hypothesis)
-- **Power**: Probability de correctly rejecting false null hypothesis
+### Statistiques inférentielles
+- **Test d'hypothèse** : hypothèse nulle, hypothèse alternative, p-values
+- **Intervalles de confiance** : plage de valeurs susceptible de contenir le paramètre de population
+- **Significativité statistique** : probabilité que les résultats soient dus au hasard
+- **Erreur de type I** : faux positif (rejet d'une hypothèse nulle vraie)
+- **Erreur de type II** : faux négatif (non-rejet d'une hypothèse nulle fausse)
+- **Puissance** : probabilité de rejeter correctement une hypothèse nulle fausse
 
-### Probability Distributions
-- **Normal Distribution**: Bell curve, mean = median = mode
-- **Binomial Distribution**: Success/failure outcomes
-- **Poisson Distribution**: Count de Événements dans fixed interval
-- **Uniform Distribution**: All outcomes equally likely
-- **Exponential Distribution**: Time between Événements
-- **t-Distribution**: Small sample sizes, unknown population variance
-- **Chi-Square Distribution**: Categorical Données analysis
+### Distributions de probabilité
+- **Normal Distribution** : courbe en cloche, mean = median = mode
+- **Binomial Distribution** : issues succès/échec
+- **Poisson Distribution** : dénombrement d'événements dans un intervalle fixe
+- **Uniform Distribution** : toutes les issues sont équiprobables
+- **Exponential Distribution** : temps entre événements
+- **t-Distribution** : petits échantillons, variance de population inconnue
+- **Chi-Square Distribution** : analyse de données catégorielles
 
-### Statistical Tests
-- **t-test**: Compare means between two groups
-- **ANOVA**: Compare means across multiple groups
-- **Chi-Square Test**: Test independence de categorical variables
-- **Mann-Whitney U**: Non-parametric alternative to t-test
-- **Pearson Correlation**: Linear relationship between continuous variables
-- **Spearman Correlation**: Monotonic relationship (rank-based)
-- **Kolmogorov-Smirnov**: Compare distributions
+### Tests statistiques
+- **t-test** : comparer les moyennes entre deux groupes
+- **ANOVA** : comparer les moyennes entre plusieurs groupes
+- **Chi-Square Test** : tester l'indépendance de variables catégorielles
+- **Mann-Whitney U** : alternative non paramétrique au t-test
+- **Pearson Correlation** : relation linéaire entre variables continues
+- **Spearman Correlation** : relation monotone (fondée sur les rangs)
+- **Kolmogorov-Smirnov** : comparer des distributions
 
-## Données Collection et Storage
+## Collecte et stockage des données
 
-### Données Sources
-- **Databases**: SQL, NoSQL, relational, document stores
-- **APIs**: REST, GraphQL, Web scraping
-- **Files**: CSV, JSON, XML, Parquet, Avro
-- **Streaming Données**: Kafka, Kinesis, real-time feeds
-- **Surveys et Experiments**: Primary Données collection
-- **Public Datasets**: Government Données, Kaggle, academic repositories
+### Sources de données
+- **Databases** : SQL, NoSQL, relationnelles, document stores
+- **APIs** : REST, GraphQL, web scraping
+- **Files** : CSV, JSON, XML, Parquet, Avro
+- **Streaming data** : Kafka, Kinesis, flux en temps réel
+- **Surveys and experiments** : collecte primaire de données
+- **Public datasets** : données gouvernementales, Kaggle, dépôts académiques
 
-### Données Warehousing
-- **ETL**: Extract, Transform, Load process
-- **Données Lake**: Raw Données storage dans native format
-- **Données Warehouse**: Structured, processed Données pour analysis
-- **Données Mart**: Subset de warehouse pour specific department
-- **OLAP**: Online Analytical Processing, multidimensional queries
-- **Star Schema**: Fact tables surrounded by dimension tables
-- **Snowflake Schema**: Normalized dimension tables
+### Entrepôts de données
+- **ETL** : processus Extract, Transform, Load
+- **Data Lake** : stockage de données brutes dans leur format natif
+- **Data Warehouse** : données structurées et préparées pour l'analyse
+- **Data Mart** : sous-ensemble d'un entrepôt pour un service spécifique
+- **OLAP** : Online Analytical Processing, requêtes multidimensionnelles
+- **Star Schema** : tables de faits entourées de tables de dimensions
+- **Snowflake Schema** : tables de dimensions normalisées
 
-### Base de données Types
-- **Relational (SQL)**: MySQL, PostgreSQL, Oracle, SQL Server
-- **Document**: MongoDB, CouchDB (JSON-like documents)
-- **Key-Value**: Redis, DynamoDB (simple key-value pairs)
-- **Column-Family**: Cassandra, HBase (optimized pour columns)
-- **Graph**: Neo4j, Amazon Neptune (nodes et relationships)
-- **Time-Series**: InfluxDB, TimescaleDB (timestamped Données)
-- **Vector**: Pinecone, Milvus (embedding storage pour ML)
+### Types de bases de données
+- **Relational (SQL)** : MySQL, PostgreSQL, Oracle, SQL Server
+- **Document** : MongoDB, CouchDB (documents de type JSON)
+- **Key-Value** : Redis, DynamoDB (paires clé-valeur simples)
+- **Column-Family** : Cassandra, HBase (optimisés pour les colonnes)
+- **Graph** : Neo4j, Amazon Neptune (nœuds et relations)
+- **Time-Series** : InfluxDB, TimescaleDB (données horodatées)
+- **Vector** : Pinecone, Milvus (stockage d'embeddings pour le ML)
 
-## Données Preprocessing
+## Prétraitement des données
 
-### Données Cleaning
-- **Missing Values**: Imputation (mean, median, mode, prediction), deletion
-- **Outliers**: Detection (IQR, Z-score), treatment (capping, transformation)
-- **Duplicates**: Identification et removal
-- **Inconsistencies**: Standardizing formats, fixing typos
-- **Données Validation**: Checking constraints, ranges, types
+### Nettoyage des données
+- **Missing values** : imputation (moyenne, médiane, mode, prédiction), suppression
+- **Outliers** : détection (IQR, Z-score), traitement (capping, transformation)
+- **Duplicates** : identification et suppression
+- **Inconsistencies** : standardisation des formats, correction des fautes
+- **Validation des données** : vérification des contraintes, des plages et des types
 
-### Données Transformation
-- **Normalization**: Scaling to 0-1 range
-- **Standardization**: Z-score normalization (mean=0, std=1)
-- **Encoding**: One-hot, label, ordinal, target encoding
-- **Binning**: Grouping continuous values into categories
-- **Log Transformation**: Reducing skewness
-- **Feature Scaling**: Making features comparable
+### Transformation des données
+- **Normalization** : mise à l'échelle dans l'intervalle 0-1
+- **Standardization** : normalisation Z-score (mean=0, std=1)
+- **Encoding** : one-hot, label, ordinal, target encoding
+- **Binning** : regroupement de valeurs continues en catégories
+- **Log Transformation** : réduction de l'asymétrie
+- **Feature Scaling** : rendre les features comparables
 
-### Feature Engineering
-- **Feature Creation**: Deriving new features from existing ones
-- **Feature Selection**: Choosing most relevant features
-  - Filter methods (correlation, chi-square)
-  - Wrapper methods (recursive feature elimination)
-  - Embedded methods (LASSO, tree-based importance)
-- **Dimensionality Reduction**: PCA, t-SNE, UMAP
-- **Interaction Terms**: Combining features multiplicatively
-- **Polynomial Features**: Creating higher-order terms
+### Feature engineering
+- **Feature creation** : création de nouvelles features à partir de celles qui existent déjà
+- **Feature selection** : choix des features les plus pertinentes
+  - méthodes de filtrage (corrélation, chi-square)
+  - méthodes wrapper (recursive feature elimination)
+  - méthodes embarquées (LASSO, importance basée sur des arbres)
+- **Dimensionality reduction** : PCA, t-SNE, UMAP
+- **Interaction terms** : combinaison multiplicative de features
+- **Polynomial features** : création de termes d'ordre supérieur
 
-## Exploratory Données Analysis (EDA)
+## Analyse exploratoire des données (EDA)
 
-### EDA Techniques
-- **Summary Statistiques**: Describe central tendency, spread, shape
-- **Univariate Analysis**: Single variable distributions
-- **Bivariate Analysis**: Relationships between two variables
-- **Multivariate Analysis**: Multiple variable interactions
-- **Correlation Analysis**: Identify relationships et multicollinearity
-- **Segmentation**: Group similar observations
+### Techniques d'EDA
+- **Summary statistics** : décrire la tendance centrale, la dispersion et la forme
+- **Univariate analysis** : distributions d'une seule variable
+- **Bivariate analysis** : relations entre deux variables
+- **Multivariate analysis** : interactions entre plusieurs variables
+- **Correlation analysis** : identifier les relations et la multicolinéarité
+- **Segmentation** : regrouper des observations similaires
 
-### Visualization Tools
-- **Histograms**: Distribution de single variable
-- **Box Plots**: Five-number summary, outlier detection
-- **Scatter Plots**: Relationship between two continuous variables
-- **Heatmaps**: Correlation matrices, density
-- **Bar Charts**: Categorical comparisons
-- **Line Charts**: Trends over time
-- **Violin Plots**: Distribution density avec box plot elements
-- **Pair Plots**: Multiple scatter plots pour variable pairs
+### Outils de visualisation
+- **Histograms** : distribution d'une variable unique
+- **Box plots** : résumé en cinq nombres, détection des valeurs aberrantes
+- **Scatter plots** : relation entre deux variables continues
+- **Heatmaps** : matrices de corrélation, densité
+- **Bar charts** : comparaisons catégorielles
+- **Line charts** : tendances dans le temps
+- **Violin plots** : densité de distribution avec éléments de box plot
+- **Pair plots** : multiples scatter plots pour des paires de variables
 
-### Python Libraries pour EDA
-- **pandas**: Données manipulation et analysis
-- **numpy**: Numerical Informatique
-- **matplotlib**: Basic plotting
-- **seaborn**: Statistical visualization
-- **plotly**: Interactive visualizations
-- **scipy**: Scientific Informatique et Statistiques
+### Bibliothèques Python pour l'EDA
+- **pandas** : manipulation et analyse de données
+- **numpy** : calcul numérique
+- **matplotlib** : graphiques de base
+- **seaborn** : visualisation statistique
+- **plotly** : visualisations interactives
+- **scipy** : calcul scientifique et statistiques
 
-## Apprentissage automatique dans Données Science
+## Machine learning dans la science des données
 
 ### Supervised Learning
-- **Regression**: Predict continuous values
+- **Regression** : prédire des valeurs continues
   - Linear Regression
   - Polynomial Regression
   - Ridge/LASSO/Elastic Net
   - Decision Tree Regressor
   - Random Forest Regressor
   - Gradient Boosting (XGBoost, LightGBM, CatBoost)
-  
-- **Classification**: Predict categorical labels
+
+- **Classification** : prédire des étiquettes catégorielles
   - Logistic Regression
   - k-Nearest Neighbors
   - Naive Bayes
-  - Assistance Vector Machines
+  - Support Vector Machines
   - Decision Trees
   - Random Forest
   - Gradient Boosting
   - Réseaux de neurones
 
 ### Unsupervised Learning
-- **Clustering**: Group similar observations
+- **Clustering** : regrouper des observations similaires
   - k-Means
   - Hierarchical Clustering
-  - DBSCAN (density-based)
+  - DBSCAN (fondé sur la densité)
   - Gaussian Mixture Models
   - Spectral Clustering
-  
-- **Dimensionality Reduction**: Reduce feature count
+
+- **Dimensionality Reduction** : réduire le nombre de features
   - Principal Component Analysis (PCA)
   - t-Distributed Stochastic Neighbor Embedding (t-SNE)
   - Uniform Manifold Approximation (UMAP)
   - Autoencoders
-  
-- **Association Rules**: Find co-occurring items
+
+- **Association Rules** : trouver des éléments apparaissant ensemble
   - Apriori Algorithm
   - FP-Growth
 
-### Model Evaluation
-- **Classification Metrics**: Accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix
-- **Regression Metrics**: MAE, MSE, RMSE, R², Adjusted R²
-- **Cross-Validation**: k-fold, stratified, leave-one-out, time series split
-- **Hyperparameter Tuning**: Grid search, random search, Bayesian optimization
-- **Learning Curves**: Diagnose bias-variance tradeoff
+### Évaluation des modèles
+- **Classification metrics** : accuracy, precision, recall, F1-score, ROC-AUC, matrice de confusion
+- **Regression metrics** : MAE, MSE, RMSE, R², R² ajusté
+- **Cross-validation** : k-fold, stratified, leave-one-out, time series split
+- **Hyperparameter tuning** : grid search, random search, Bayesian optimization
+- **Learning curves** : diagnostiquer le compromis biais-variance
 
-## Big Données Technologies
+## Technologies Big Data
 
-### Distributed Informatique Frameworks
-- **Apache Hadoop**: MapReduce, HDFS (Hadoop Distributed File System)
-- **Apache Spark**: dans-memory processing, faster than Hadoop
-  - Spark SQL: Structured Données processing
-  - Spark Streaming: Real-time Données
-  - MLlib: Apprentissage automatique library
-  - GraphX: Graph processing
-- **Apache Flink**: Stream processing avec low latency
-- **Apache Beam**: Unified batch et streaming
+### Frameworks de calcul distribué
+- **Apache Hadoop** : MapReduce, HDFS (Hadoop Distributed File System)
+- **Apache Spark** : traitement en mémoire, plus rapide que Hadoop
+  - Spark SQL : traitement de données structurées
+  - Spark Streaming : données en temps réel
+  - MLlib : bibliothèque de machine learning
+  - GraphX : traitement de graphes
+- **Apache Flink** : traitement de flux à faible latence
+- **Apache Beam** : unification du batch et du streaming
 
-### Cloud Platforms
-- **AWS**: S3, EMR, Redshift, SageMaker, Glue
-- **Google Cloud**: BigQuery, Dataproc, AI Platform, Cloud Storage
-- **Azure**: Synapse Analytics, Databricks, Apprentissage automatique, Données Lake
-- **Snowflake**: Cloud Données warehouse
+### Plateformes cloud
+- **AWS** : S3, EMR, Redshift, SageMaker, Glue
+- **Google Cloud** : BigQuery, Dataproc, AI Platform, Cloud Storage
+- **Azure** : Synapse Analytics, Databricks, Machine Learning, Data Lake
+- **Snowflake** : data warehouse cloud
 
-### Données Pipeline Tools
-- **Apache Airflow**: Workflow orchestration
-- **Luigi**: Pipeline gestion (Spotify)
-- **Prefect**: Modern workflow orchestration
-- **Dagster**: Données orchestrator avec asset focus
-- **dbt**: Données transformation dans warehouse
+### Outils de pipeline de données
+- **Apache Airflow** : orchestration de workflows
+- **Luigi** : gestion de pipelines (Spotify)
+- **Prefect** : orchestration moderne de workflows
+- **Dagster** : orchestrateur de données orienté assets
+- **dbt** : transformation de données dans l'entrepôt
 
-## Entreprise Intelligence et Analytics
+## Business Intelligence et analytique
 
-### BI Tools
-- **Tableau**: Visual analytics platform
-- **Power BI**: Microsoft Entreprise analytics
-- **Looker**: Données exploration et insights (Google)
-- **Qlik Sense**: Associative analytics
-- **Metabase**: Open-source BI
-- **Superset**: Apache open-source BI
+### Outils de BI
+- **Tableau** : plateforme d'analyse visuelle
+- **Power BI** : analytique métier de Microsoft
+- **Looker** : exploration de données et insights (Google)
+- **Qlik Sense** : analytique associative
+- **Metabase** : BI open source
+- **Superset** : BI open source de l'écosystème Apache
 
-### Dashboard Design Principles
-- **Know Your Audience**: Tailor to user needs
-- **Choose Right Visualizations**: Match chart to Données type
-- **Use Color Strategically**: Highlight important information
-- **Maintain Consistency**: Standardize formats et scales
-- **Enable Interactivity**: Filters, drill-downs, tooltips
-- **Optimize Performance**: Fast loading, efficient queries
-- **Mobile Considerations**: Responsive design
+### Principes de conception de tableaux de bord
+- **Know Your Audience** : adaptez-vous aux besoins des utilisateurs
+- **Choose Right Visualizations** : choisissez le bon graphique selon le type de données
+- **Use Color Strategically** : utilisez la couleur pour mettre en valeur l'information importante
+- **Maintain Consistency** : standardisez les formats et les échelles
+- **Enable Interactivity** : filtres, drill-downs, tooltips
+- **Optimize Performance** : chargement rapide, requêtes efficaces
+- **Mobile Considerations** : conception responsive
 
-### Key Performance Indicators (KPIs)
-- **Financial**: Revenue, profit margin, ROI, customer lifetime value
-- **Customer**: Acquisition cost, churn rate, satisfaction score, NPS
-- **Operational**: Efficiency rates, cycle time, defect rates
-- **Marketing**: Conversion rates, click-through rates, attribution
-- **Product**: Active users, engagement, retention, feature adoption
+### Indicateurs clés de performance (KPIs)
+- **Financial** : revenus, marge bénéficiaire, ROI, customer lifetime value
+- **Customer** : coût d'acquisition, churn rate, score de satisfaction, NPS
+- **Operational** : taux d'efficacité, temps de cycle, taux de défauts
+- **Marketing** : taux de conversion, taux de clic, attribution
+- **Product** : utilisateurs actifs, engagement, rétention, adoption des fonctionnalités
 
-## Avancé Analytics
+## Analytique avancée
 
-### Predictive Analytics
-- **Forecasting**: Time series prediction (ARIMA, Prophet, LSTM)
-- **Risk Modeling**: Credit scoring, fraud detection, insurance
-- **Customer Analytics**: Churn prediction, propensity modeling
-- **Demand Forecasting**: Inventory optimization, supply chain
-- **Maintenance Prediction**: Equipment failure anticipation
+### Predictive analytics
+- **Forecasting** : prévision de séries temporelles (ARIMA, Prophet, LSTM)
+- **Risk modeling** : credit scoring, détection de fraude, assurance
+- **Customer analytics** : prédiction du churn, modèles de propension
+- **Demand forecasting** : optimisation des stocks, supply chain
+- **Maintenance prediction** : anticipation des pannes d'équipement
 
-### Prescriptive Analytics
-- **Optimization**: Linear programming, integer programming
-- **Simulation**: Monte Carlo methods, discrete event simulation
-- **Decision Analysis**: Decision trees, influence diagrams
-- **A/B Test**: Experimental design, statistical significance
-- **Multi-Armed Bandits**: Adaptive experimentation
+### Prescriptive analytics
+- **Optimization** : programmation linéaire, programmation en nombres entiers
+- **Simulation** : méthodes de Monte Carlo, simulation à événements discrets
+- **Decision analysis** : arbres de décision, diagrammes d'influence
+- **A/B test** : plan d'expérience, significativité statistique
+- **Multi-Armed Bandits** : expérimentation adaptative
 
-### Text Analytics (NLP)
-- **Text Preprocessing**: Tokenization, stemming, lemmatization
-- **Sentiment Analysis**: Positive/negative/neutral classification
-- **Topic Modeling**: LDA, NMF pour theme discovery
-- **Named Entity Recognition**: Identifying people, places, organizations
-- **Text Classification**: Spam detection, categorization
-- **Word Embeddings**: Word2Vec, GloVe, BERT
+### Text analytics (NLP)
+- **Text preprocessing** : tokenization, stemming, lemmatization
+- **Sentiment analysis** : classification positive/négative/neutre
+- **Topic modeling** : LDA, NMF pour découvrir des thèmes
+- **Named Entity Recognition** : identification des personnes, lieux et organisations
+- **Text classification** : détection de spam, catégorisation
+- **Word embeddings** : Word2Vec, GloVe, BERT
 
-## Données Ethics et Governance
+## Éthique et gouvernance des données
 
-### Données Privacy
-- **GDPR**: EU General Données Protection Regulation
-- **CCPA**: California Consumer Privacy Act
-- **HIPAA**: Health Insurance Portability et Accountability Act (US Soins de santé)
-- **Anonymization**: Removing personally identifiable information
-- **Differential Privacy**: Adding noise to protect individuals
-- **Consent gestion**: Opt-dans/opt-out mechanisms
+### Confidentialité des données
+- **GDPR** : règlement général sur la protection des données de l'UE
+- **CCPA** : California Consumer Privacy Act
+- **HIPAA** : Health Insurance Portability and Accountability Act (santé aux États-Unis)
+- **Anonymization** : suppression des informations personnellement identifiables
+- **Differential Privacy** : ajout de bruit pour protéger les individus
+- **Consent management** : mécanismes d'opt-in/opt-out
 
-### Données Quality
-- **Accuracy**: Correctness de Données
-- **Completeness**: All required Données present
-- **Consistency**: No contradictions across sources
-- **Timeliness**: Données Disponible when needed
-- **Validity**: Conforms to defined rules
-- **Uniqueness**: No duplicates
+### Qualité des données
+- **Accuracy** : exactitude des données
+- **Completeness** : toutes les données requises sont présentes
+- **Consistency** : absence de contradictions entre sources
+- **Timeliness** : données disponibles au moment voulu
+- **Validity** : conformité aux règles définies
+- **Uniqueness** : absence de doublons
 
-### Bias et Fairness
-- **Sampling Bias**: Non-representative Données collection
-- **Measurement Bias**: Flawed Données collection instruments
-- **Algorithmic Bias**: Discriminatory model predictions
-- **Fairness Metrics**: Demographic parity, equal opportunity
-- **Bias Mitigation**: Pre-processing, dans-processing, post-processing
+### Biais et équité
+- **Sampling bias** : collecte de données non représentative
+- **Measurement bias** : instruments de collecte défaillants
+- **Algorithmic bias** : prédictions de modèles discriminatoires
+- **Fairness metrics** : parité démographique, égalité des chances
+- **Bias mitigation** : prétraitement, mitigation pendant l'entraînement, post-traitement
 
-### Données Governance Framework
-- **Données Stewardship**: Responsibility pour Données assets
-- **Metadata gestion**: Données about Données documentation
-- **Données Lineage**: Tracking Données flow et transformations
-- **Access Control**: Role-based permissions
-- **Audit Trails**: Logging Données access et changes
-- **Compliance**: Regulatory adherence
+### Cadre de gouvernance des données
+- **Data stewardship** : responsabilité sur les actifs de données
+- **Metadata management** : documentation sur les données
+- **Data lineage** : suivi des flux et transformations de données
+- **Access control** : permissions fondées sur les rôles
+- **Audit trails** : journalisation des accès et des changements
+- **Compliance** : respect des réglementations
 
-## Career Paths dans Données Science
+## Parcours professionnels en science des données
 
-### Roles
-- **Données Analyst**: Focus on descriptive analytics, dashboards, reporting
-- **Données Scientist**: Statistical modeling, Apprentissage automatique, Avancé analytics
-- **ML Engineer**: Production ML Systèmes, model Déploiement, MLOps
-- **Données Engineer**: Données pipelines, infrastructure, ETL processes
-- **Analytics Manager**: Team leadership, strategy, stakeholder gestion
-- **BI Developer**: Dashboard creation, report Développement
-- **Research Scientist**: Novel algorithms, publications, Avancé research
+### Rôles
+- **Data Analyst** : focalisé sur l'analytique descriptive, les tableaux de bord et le reporting
+- **Data Scientist** : modélisation statistique, machine learning, analytique avancée
+- **ML Engineer** : systèmes ML en production, déploiement de modèles, MLOps
+- **Data Engineer** : pipelines de données, infrastructure, processus ETL
+- **Analytics Manager** : direction d'équipe, stratégie, gestion des parties prenantes
+- **BI Developer** : création de tableaux de bord, développement de rapports
+- **Research Scientist** : nouveaux algorithmes, publications, recherche avancée
 
-### Skills Matrix
-- **Technical**: Python/R, SQL, Statistiques, ML frameworks, cloud platforms
-- **Analytical**: Problem-solving, critical thinking, experimental design
-- **Communication**: Storytelling, visualization, presentation skills
-- **Entreprise**: Domain knowledge, stakeholder gestion, ROI analysis
-- **Tools**: Git, Jupyter, Docker, CI/CD, version control pour models
+### Matrice de compétences
+- **Technique** : Python/R, SQL, statistiques, frameworks ML, plateformes cloud
+- **Analytique** : résolution de problèmes, pensée critique, plan d'expérience
+- **Communication** : storytelling, visualisation, compétences de présentation
+- **Métier** : connaissance du domaine, gestion des parties prenantes, analyse du ROI
+- **Outils** : Git, Jupyter, Docker, CI/CD, contrôle de version pour les modèles
 
-## Emerging Trends
+## Tendances émergentes
 
-### Current Developments
-- **AutoML**: Automated Apprentissage automatique pipeline creation
-- **MLOps**: DevOps practices pour Apprentissage automatique
-- **Feature Stores**: Centralized feature gestion
-- **Données Mesh**: Decentralized Données Architecture
-- **LLMs et Generative AI**: Large Langue models, content generation
-- **Edge Analytics**: Processing Données at source devices
-- **Real-Time Analytics**: Streaming Données analysis
-- **Augmented Analytics**: AI-assisted Données preparation et insights
+### Développements actuels
+- **AutoML** : création automatisée de pipelines de machine learning
+- **MLOps** : pratiques DevOps appliquées au machine learning
+- **Feature Stores** : gestion centralisée des features
+- **Data Mesh** : architecture de données décentralisée
+- **LLMs and Generative AI** : grands modèles de langage, génération de contenu
+- **Edge Analytics** : traitement des données à la source sur les appareils
+- **Real-Time Analytics** : analyse de flux en temps réel
+- **Augmented Analytics** : préparation des données et insights assistés par IA
 
-### Futur Directions
-- **Quantum Apprentissage automatique**: Quantum Informatique pour ML
-- **Federated Learning**: Training models across decentralized Données
-- **Causal Inference**: Moving beyond correlation to causation
-- **Responsible AI**: Ethics, explainability, transparency
-- **Données Fabric**: Integrated Données gestion across environments
+### Orientations futures
+- **Quantum Machine Learning** : calcul quantique appliqué au ML
+- **Federated Learning** : entraînement de modèles sur des données décentralisées
+- **Causal Inference** : aller au-delà de la corrélation pour atteindre la causalité
+- **Responsible AI** : éthique, explicabilité, transparence
+- **Data Fabric** : gestion intégrée des données à travers différents environnements

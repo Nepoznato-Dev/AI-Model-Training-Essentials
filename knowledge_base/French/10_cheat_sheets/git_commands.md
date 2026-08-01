@@ -1,10 +1,10 @@
-# Guide de Référence Rapide des commandes Git
+# Guide de référence rapide des commandes Git
 
-commandes Git essentielles pour le contrôle de version.
+Commandes Git essentielles pour le contrôle de version.
 
 ---
 
-## Configuration et Initialisation
+## Configuration et initialisation
 
 ```bash
 # Configurer les informations utilisateur
@@ -21,7 +21,7 @@ git config --global init.defaultBranch main
 
 ---
 
-## Initialisation du Dépôt
+## Initialisation du dépôt
 
 ```bash
 # Initialiser un nouveau dépôt
@@ -37,7 +37,7 @@ git clone -b nom-branche <url>
 
 ---
 
-## Flux de Travail de Base
+## Flux de travail de base
 
 ```bash
 # Vérifier le statut
@@ -96,7 +96,7 @@ git rebase main
 
 ---
 
-## Opérations Distantes
+## Opérations distantes
 
 ```bash
 # Voir les dépôts distants
@@ -125,7 +125,7 @@ git push --tags
 
 ---
 
-## Annuler des Modifications
+## Annuler des modifications
 
 ```bash
 # Désindexer un fichier (garder les modifications)
@@ -177,7 +177,7 @@ git stash clear
 
 ---
 
-## Tags (Étiquettes)
+## Tags (étiquettes)
 
 ```bash
 # Lister les tags
@@ -221,7 +221,7 @@ git show commit-hash:fichier.txt
 
 ---
 
-## Opérations Avancées
+## Opérations avancées
 
 ```bash
 # Cherry-pick un commit
@@ -264,9 +264,9 @@ git remote prune origin
 
 ---
 
-## Flux de Travail Courants
+## Flux de travail courants
 
-### Démarrer une Nouvelle Fonctionnalité
+### Démarrer une nouvelle fonctionnalité
 ```bash
 git checkout main
 git pull
@@ -278,7 +278,7 @@ git push -u origin feature/nouvelle-fonctionnalite
 # Créer une PR/MR sur la plateforme
 ```
 
-### Synchroniser avec Main
+### Synchroniser avec `main`
 ```bash
 git checkout feature-branche
 git fetch origin
@@ -287,7 +287,7 @@ git rebase origin/main
 git push --force-with-lease
 ```
 
-### Flux de Travail Hotfix
+### Flux de travail de correctif urgent
 ```bash
 git checkout main
 git pull
@@ -325,7 +325,7 @@ __pycache__/
 
 ---
 
-## Raccourcis Clavier (Git Bash)
+## Raccourcis clavier (Git Bash)
 
 | Raccourci | Action |
 |----------|--------|
@@ -337,16 +337,16 @@ __pycache__/
 
 ---
 
-## Bonnes Pratiques
+## Bonnes pratiques
 
-✅ **À faire:**
+✅ **À faire :**
 - Écrire des messages de commit clairs et descriptifs
 - Committer fréquemment avec des regroupements logiques
 - Utiliser des branches pour les fonctionnalités/corrections
 - Tirer avant de commencer le travail
 - Vérifier souvent `git status`
 
-❌ **À ne pas faire:**
+❌ **À éviter :**
 - Committer des données sensibles (clés API, mots de passe)
 - Force push sur des branches partagées
 - Committer de gros fichiers binaires
@@ -355,7 +355,7 @@ __pycache__/
 
 ---
 
-## Convention de Message de Commit
+## Convention des messages de commit
 
 ```
 type(portée): sujet
@@ -386,4 +386,4 @@ Ferme #123
 
 ---
 
-*Dernière mise à jour: Juin 2025 | Git 2.x*
+*Dernière mise à jour : Juin 2025 | Git 2.x*

@@ -29,7 +29,7 @@ Die Erde hat sieben Kontinente: Afrika, Antarktis, Asien, Australien (Ozeanien),
 
 ## Zeit und Kalender
 
-Ein Jahr ist die Zeit, die die Erde benötigt, um die Sonne zu umkreisen, etwa 365,25 Tage. Ein Schaltjahr hat 366 Tage und tritt alle vier Jahre auf, um den zusätzlichen Vierteltag auszugleichen. Ein Tag ist eine volle Rotation der Erde um ihre Achse, etwa 24 Stunden. Der Gregorianische Kalender ist der am weitesten verbreitete Kalender in der Welt heute. Eine Woche hat sieben Tage. Eine Stunde hat 60 Minuten. Eine Minute hat 60 Sekunden.
+Ein Jahr ist die Zeit, die die Erde benötigt, um die Sonne zu umkreisen, etwa 365,25 Tage. Ein Schaltjahr hat 366 Tage und tritt alle vier Jahre auf, um den zusätzlichen Vierteltag auszugleichen. Ein Tag ist eine volle Rotation der Erde um ihre Achse, etwa 24 Stunden. Der Gregorianische Kalender ist heute weltweit der am weitesten verbreitete Kalender. Eine Woche hat sieben Tage. Eine Stunde hat 60 Minuten. Eine Minute hat 60 Sekunden.
 
 ## Licht und Geschwindigkeit
 
@@ -55,9 +55,9 @@ Die Gesamtoberfläche der Erde beträgt etwa 510 Millionen Quadratkilometer. Etw
 
 Zu den primären globalen Energiequellen gehören Öl, Erdgas, Kohle, Kernenergie, Wasserkraft, Wind und Sonne. Fossile Brennstoffe entstanden über Millionen von Jahren aus altem organischem Material. Erneuerbare Energiequellen wie Wind und Sonne werden natürlich aufgefüllt und sind zentral für viele Dekarbonisierungsstrategien. Elektrische Energie wird in Joule gemessen; in Haushalten und in der Industrie wird der Verbrauch üblicherweise in Kilowattstunden (kWh) gemessen.
 
-## Wirtschaft Grundlagen
+## Grundlagen der Wirtschaft
 
-Wirtschaft untersucht, wie Menschen und Gesellschaften begrenzte Ressourcen verteilen. Angebot und Nachfrage beeinflussen die Marktpreise. Inflation ist ein allgemeiner Anstieg der Preise im Laufe der Zeit, der die Kaufkraft verringert. Das Bruttoinlandsprodukt (BIP) schätzt den Gesamtwert aller Waren und Dienstleistungen, die in einem Land produziert werden. Zinssätze beeinflussen das Verhalten beim Borrowing, Sparen und Investieren.
+Wirtschaft untersucht, wie Menschen und Gesellschaften begrenzte Ressourcen verteilen. Angebot und Nachfrage beeinflussen die Marktpreise. Inflation ist ein allgemeiner Anstieg der Preise im Laufe der Zeit, der die Kaufkraft verringert. Das Bruttoinlandsprodukt (BIP) schätzt den Gesamtwert aller Waren und Dienstleistungen, die in einem Land produziert werden. Zinssätze beeinflussen das Verhalten bei Kreditaufnahme, Sparen und Investieren.
 
 ## Regierung und Bürgerkunde
 

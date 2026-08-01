@@ -5,225 +5,225 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Künste und Literatur
+# Kunst und Literatur
 
-## Literary Genres und Forms
+## Literarische Gattungen und Formen
 
-### Fiction Genres
-- **Literary Fiction**: Character-driven narratives focusing on themes, style, und psychological depth (e.g., "To Kill a Mockingbird" by Harper Lee)
-- **Wissenschaft Fiction**: Speculative fiction exploring futuristic Technologie, space exploration, time travel, parallel universes (e.g., "Dune" by Frank Herbert, "1984" by George Orwell)
-- **Fantasy**: Magical worlds, mythical creatures, supernatural elements (e.g., "das Lord von das Rings" by J.R.R. Tolkien, "Harry Potter" by J.K. Rowling)
-- **Mystery/Detective**: Crime-solving narratives mit puzzles und investigations (e.g., Agatha Christie's Hercule Poirot series, Arthur Conan Doyle's Sherlock Holmes)
-- **Horror**: Intended to frighten, unsettle, or create suspense (e.g., "das Shining" by Stephen King, "Dracula" by Bram Stoker)
-- **Romance**: Focus on romantic relationships und emotional journeys (e.g., Jane Austen's "Pride und Prejudice", Nicholas Sparks novels)
-- **Historical Fiction**: Set in specific historical periods mit accurate details (e.g., "das Book Thief" by Markus Zusak, "Wolf Hall" by Hilary Mantel)
-- **Magical Realism**: Realistic settings mit magical elements treated as ordinary (e.g., "One Hundred Years von Solitude" by Gabriel García Márquez)
+### Genres der Fiktion
+- **Literary Fiction**: Figurenorientierte Erzählungen mit Fokus auf Themen, Stil und psychologische Tiefe (z. B. "To Kill a Mockingbird" von Harper Lee)
+- **Science-Fiction**: Spekulative Literatur über zukünftige Technologie, Weltraumforschung, Zeitreisen und Paralleluniversen (z. B. "Dune" von Frank Herbert, "1984" von George Orwell)
+- **Fantasy**: Magische Welten, mythische Wesen und übernatürliche Elemente (z. B. "The Lord of the Rings" von J.R.R. Tolkien, "Harry Potter" von J.K. Rowling)
+- **Mystery/Detektivliteratur**: Kriminalgeschichten mit Rätseln und Ermittlungen (z. B. Agatha Christies Hercule-Poirot-Reihe, Arthur Conan Doyles Sherlock Holmes)
+- **Horror**: Soll Angst erzeugen, verstören oder Spannung aufbauen (z. B. "The Shining" von Stephen King, "Dracula" von Bram Stoker)
+- **Romance**: Im Mittelpunkt stehen romantische Beziehungen und emotionale Entwicklungen (z. B. Jane Austens "Pride and Prejudice", Romane von Nicholas Sparks)
+- **Historischer Roman**: Spielt in einer bestimmten geschichtlichen Epoche und arbeitet mit sorgfältigen historischen Details (z. B. "The Book Thief" von Markus Zusak, "Wolf Hall" von Hilary Mantel)
+- **Magischer Realismus**: Realistische Schauplätze, in denen magische Elemente als selbstverständlich behandelt werden (z. B. "One Hundred Years of Solitude" von Gabriel García Márquez)
 
-### Non-Fiction Genres
-- **Biography/Autobiography**: Life stories von real people (e.g., "das Diary von a Young Girl" by Anne Frank, "Becoming" by Michelle Obama)
-- **Memoir**: Personal accounts focusing on specific experiences or themes
-- **Essay**: Short prose compositions on particular subjects (e.g., works by James Baldwin, Joan Didion)
-- **Journalism**: News reporting, investigative pieces, feature articles
-- **Academic Writing**: Research papers, scholarly articles, dissertations
-- **Self-Help**: Personal Entwicklung und improvement guides
+### Genres der Sachliteratur
+- **Biografie/Autobiografie**: Lebensgeschichten realer Personen (z. B. "The Diary of a Young Girl" von Anne Frank, "Becoming" von Michelle Obama)
+- **Memoir**: Persönliche Rückblicke, die sich auf bestimmte Erfahrungen oder Themen konzentrieren
+- **Essay**: Kürzere Prosatexte zu einem bestimmten Thema (z. B. Werke von James Baldwin oder Joan Didion)
+- **Journalismus**: Nachrichtenberichte, investigative Texte und Reportagen
+- **Wissenschaftliches Schreiben**: Forschungsarbeiten, Fachartikel, Dissertationen
+- **Ratgeberliteratur**: Leitfäden zur persönlichen Entwicklung und Verbesserung
 
-### Poetry Forms
-- **Sonnet**: 14-line poem mit specific rhyme scheme (Shakespearean: ABAB CDCD EFEF GG; Petrarchan: ABBAABBA CDECDE)
-- **Haiku**: Japanese form mit 5-7-5 syllable pattern
-- **Limerick**: Five-line humorous poem mit AABBA rhyme scheme
-- **Free Verse**: No regular meter or rhyme pattern
-- **Villanelle**: 19 lines mit specific repetition pattern (e.g., "Do Not Go Gentle into That Good Night" by Dylan Thomas)
-- **Ode**: Lyrical poem praising a person, event, or thing
-- **Epic**: Long narrative poem about heroic deeds (e.g., "das Odyssey" by Homer, "Beowulf")
+### Gedichtformen
+- **Sonett**: Gedicht mit 14 Zeilen und festem Reimschema (Shakespeare-Sonett: ABAB CDCD EFEF GG; Petrarca-Sonett: ABBAABBA CDECDE)
+- **Haiku**: Japanische Form mit dem Silbenmuster 5-7-5
+- **Limerick**: Humorvolles fünfzeiliges Gedicht mit dem Reimschema AABBA
+- **Freier Vers**: Ohne regelmäßiges Metrum oder Reimschema
+- **Villanelle**: 19 Zeilen mit festem Wiederholungsmuster (z. B. "Do Not Go Gentle into That Good Night" von Dylan Thomas)
+- **Ode**: Lyrisches Gedicht zum Lob einer Person, eines Ereignisses oder einer Sache
+- **Epos**: Langes erzählendes Gedicht über heldenhafte Taten (z. B. "The Odyssey" von Homer, "Beowulf")
 
-## Major Literary Movements
+## Bedeutende literarische Strömungen
 
-### Historical Periods
-- **Classical Literatur** (8th century BCE - 5th century CE): Greek und Roman works emphasizing reason, order, und humanism
-- **Medieval Literatur** (5th - 15th century): Religious themes, chivalric romances, allegories (e.g., "das Divine Comedy" by Dante)
-- **Renaissance** (14th - 17th century): Humanism, revival von classical learning (e.g., Shakespeare, Cervantes)
-- **Enlightenment** (17th - 18th century): Reason, Wissenschaft, individual rights (e.g., Voltaire, Jonathan Swift)
-- **Romanticism** (late 18th - mid-19th century): Emotion, Natur, individualism (e.g., Wordsworth, Goethe, Mary Shelley)
-- **Realism** (mid-19th century): Accurate depiction von everyday life (e.g., Tolstoy, George Eliot, Mark Twain)
-- **Modernism** (late 19th - mid-20th century): Experimental forms, stream von consciousness (e.g., James Joyce, Virginia Woolf, T.S. Eliot)
-- **Postmodernism** (mid-20th century - present): Fragmentation, metafiction, irony (e.g., Thomas Pynchon, Don DeLillo)
+### Historische Epochen
+- **Klassische Literatur** (8. Jahrhundert v. Chr. – 5. Jahrhundert n. Chr.): Griechische und römische Werke mit Betonung von Vernunft, Ordnung und Humanismus
+- **Mittelalterliche Literatur** (5.–15. Jahrhundert): Religiöse Themen, höfische Romane, Allegorien (z. B. "The Divine Comedy" von Dante)
+- **Renaissance** (14.–17. Jahrhundert): Humanismus, Wiederentdeckung der Antike (z. B. Shakespeare, Cervantes)
+- **Aufklärung** (17.–18. Jahrhundert): Vernunft, Wissenschaft, individuelle Rechte (z. B. Voltaire, Jonathan Swift)
+- **Romantik** (spätes 18. bis mittleres 19. Jahrhundert): Gefühl, Natur, Individualismus (z. B. Wordsworth, Goethe, Mary Shelley)
+- **Realismus** (mittleres 19. Jahrhundert): Möglichst genaue Darstellung des Alltagslebens (z. B. Tolstoi, George Eliot, Mark Twain)
+- **Modernismus** (spätes 19. bis mittleres 20. Jahrhundert): Experimentelle Formen, stream of consciousness (z. B. James Joyce, Virginia Woolf, T.S. Eliot)
+- **Postmodernismus** (mittleres 20. Jahrhundert bis heute): Fragmentierung, Metafiktion, Ironie (z. B. Thomas Pynchon, Don DeLillo)
 
-## Visual Künste
+## Bildende Kunst
 
-### Art Movements
-- **Renaissance** (14th - 17th century): Realism, perspective, human anatomy (e.g., Leonardo da Vinci, Michelangelo, Raphael)
-- **Baroque** (17th century): Dramatic lighting, emotional intensity (e.g., Caravaggio, Rembrandt, Bernini)
-- **Impressionism** (late 19th century): Light, color, visible brushstrokes (e.g., Monet, Renoir, Degas)
-- **Post-Impressionism** (late 19th century): Bold colors, geometric forms (e.g., Van Gogh, Cézanne, Gauguin)
-- **Cubism** (early 20th century): Geometric shapes, multiple perspectives (e.g., Picasso, Braque)
-- **Surrealism** (1920s - 1940s): Dream imagery, unconscious mind (e.g., Dalí, Magritte, Frida Kahlo)
-- **Abstract Expressionism** (1940s - 1950s): Spontaneous, gestural painting (e.g., Pollock, Rothko, de Kooning)
-- **Pop Art** (1950s - 1960s): Popular Kultur imagery (e.g., Warhol, Lichtenstein)
-- **Contemporary Art** (1970s - present): Diverse media, conceptual approaches, social commentary
+### Kunstströmungen
+- **Renaissance** (14.–17. Jahrhundert): Realismus, Perspektive, menschliche Anatomie (z. B. Leonardo da Vinci, Michelangelo, Raphael)
+- **Barock** (17. Jahrhundert): Dramatische Lichtführung, starke emotionale Intensität (z. B. Caravaggio, Rembrandt, Bernini)
+- **Impressionismus** (spätes 19. Jahrhundert): Licht, Farbe, sichtbare Pinselstriche (z. B. Monet, Renoir, Degas)
+- **Post-Impressionismus** (spätes 19. Jahrhundert): Kräftige Farben, geometrische Formen (z. B. Van Gogh, Cézanne, Gauguin)
+- **Kubismus** (frühes 20. Jahrhundert): Geometrische Formen, mehrere Perspektiven zugleich (z. B. Picasso, Braque)
+- **Surrealismus** (1920er bis 1940er): Traumbilder, Unbewusstes (z. B. Dalí, Magritte, Frida Kahlo)
+- **Abstrakter Expressionismus** (1940er bis 1950er): Spontane, gestische Malerei (z. B. Pollock, Rothko, de Kooning)
+- **Pop Art** (1950er bis 1960er): Bildwelten der Popkultur (z. B. Warhol, Lichtenstein)
+- **Zeitgenössische Kunst** (seit den 1970ern): Vielfältige Medien, konzeptuelle Ansätze, sozialer Kommentar
 
-### Art Mediums und Techniques
-- **Painting**: Oil, acrylic, watercolor, fresco, tempera
-- **Drawing**: Pencil, charcoal, ink, pastel, conte crayon
-- **Sculpture**: Carving (stone, wood), modeling (clay, wax), casting (bronze, metal), assembling
-- **Printmaking**: Etching, lithography, screen printing, woodcut
-- **Photography**: Digital, film, documentary, portrait, landscape, street photography
-- **Digital Art**: 3D modeling, digital painting, generative art, NFTs
-- **Installation Art**: Site-specific, immersive environments
-- **Leistung Art**: Live actions, body art, happenings
+### Medien und Techniken der Kunst
+- **Malerei**: Öl, Acryl, Aquarell, Fresko, Tempera
+- **Zeichnung**: Bleistift, Kohle, Tinte, Pastell, Conté-Kreide
+- **Skulptur**: Schnitzen (Stein, Holz), Modellieren (Ton, Wachs), Gießen (Bronze, Metall), Assemblage
+- **Druckgrafik**: Radierung, Lithografie, Siebdruck, Holzschnitt
+- **Fotografie**: Digital, analog, dokumentarisch, Porträt, Landschaft, Street Photography
+- **Digitale Kunst**: 3D-Modellierung, digitales Malen, generative Kunst, NFTs
+- **Installationskunst**: Ortsgebundene, immersive Umgebungen
+- **Performance-Kunst**: Live-Aktionen, Body Art, Happenings
 
-## Music
+## Musik
 
-### Classical Music Periods
-- **Medieval** (500-1400): Gregorian chant, early polyphony
-- **Renaissance** (1400-1600): Vocal polyphony, madrigals (e.g., Palestrina, Josquin des Prez)
-- **Baroque** (1600-1750): Ornate melodies, basso continuo (e.g., Bach, Handel, Vivaldi)
-- **Classical** (1750-1820): Balanced forms, clarity (e.g., Mozart, Haydn, Beethoven early works)
-- **Romantic** (1820-1900): Emotional expression, expanded orchestras (e.g., Chopin, Wagner, Tchaikovsky)
-- **20th Century/Contemporary**: Atonality, minimalism, experimental (e.g., Stravinsky, Schoenberg, Philip Glass)
+### Epochen der klassischen Musik
+- **Mittelalter** (500–1400): Gregorianischer Choral, frühe Mehrstimmigkeit
+- **Renaissance** (1400–1600): Vokale Polyphonie, Madrigale (z. B. Palestrina, Josquin des Prez)
+- **Barock** (1600–1750): Ornamente, Basso continuo (z. B. Bach, Händel, Vivaldi)
+- **Klassik** (1750–1820): Ausgewogene Formen, Klarheit (z. B. Mozart, Haydn, früher Beethoven)
+- **Romantik** (1820–1900): Emotionaler Ausdruck, größere Orchester (z. B. Chopin, Wagner, Tschaikowski)
+- **20. Jahrhundert/Zeitgenössisch**: Atonalität, Minimalismus, experimentelle Ansätze (z. B. Strawinsky, Schönberg, Philip Glass)
 
-### Music Genres
-- **Jazz**: Improvisation, swing rhythm, blues influence (e.g., Louis Armstrong, Miles Davis, John Coltrane)
-- **Blues**: 12-bar structure, expressive vocals (e.g., B.B. King, Muddy Waters)
-- **Rock**: Electric guitars, strong rhythms (e.g., Beatles, Led Zeppelin, Nirvana)
-- **Hip Hop/Rap**: Rhythmic speech, beats, DJ Kultur (e.g., Tupac, Kendrick Lamar, Jay-Z)
-- **Electronic**: Synthesizers, digital production (e.g., Kraftwerk, Daft Punk, Aphex Twin)
-- **Country**: Folk traditions, storytelling (e.g., Johnny Cash, Dolly Parton)
-- **R&B/Soul**: Emotional vocals, groove (e.g., Aretha Franklin, Stevie Wonder, Beyoncé)
-- **Classical Crossover**: Fusion von classical und popular styles
+### Musikgenres
+- **Jazz**: Improvisation, Swing-Rhythmus, Blues-Einfluss (z. B. Louis Armstrong, Miles Davis, John Coltrane)
+- **Blues**: Zwölf-Takt-Schema, ausdrucksstarker Gesang (z. B. B.B. King, Muddy Waters)
+- **Rock**: E-Gitarren, starke Rhythmen (z. B. Beatles, Led Zeppelin, Nirvana)
+- **Hip-Hop/Rap**: Rhythmische Sprechweise, Beats, DJ-Kultur (z. B. Tupac, Kendrick Lamar, Jay-Z)
+- **Elektronische Musik**: Synthesizer, digitale Produktion (z. B. Kraftwerk, Daft Punk, Aphex Twin)
+- **Country**: Folk-Traditionen, erzählende Liedtexte (z. B. Johnny Cash, Dolly Parton)
+- **R&B/Soul**: Emotionale Stimmen, Groove (z. B. Aretha Franklin, Stevie Wonder, Beyoncé)
+- **Classical Crossover**: Verbindung klassischer und populärer Stile
 
-### Music Theory Grundlagen
-- **Notes und Scales**: Major, minor, chromatic, pentatonic, modes
-- **Chords und Harmony**: Triads, seventh chords, chord progressions
-- **Rhythm und Meter**: Time signatures, tempo, syncopation
-- **Melody und Counterpoint**: Thematic Entwicklung, voice leading
-- **Form und Structure**: Sonata form, symphony movements, verse-chorus structure
+### Grundlagen der Musiktheorie
+- **Noten und Tonleitern**: Dur, Moll, chromatisch, pentatonisch, Modi
+- **Akkorde und Harmonie**: Dreiklänge, Septakkorde, Akkordfolgen
+- **Rhythmus und Metrum**: Taktarten, Tempo, Synkopen
+- **Melodie und Kontrapunkt**: Thematische Entwicklung, Stimmführung
+- **Form und Struktur**: Sonatenform, Sinfoniesätze, Strophe-Refrain-Struktur
 
-## Theater und Leistung
+## Theater und Performance
 
-### Theater Types
-- **Tragedy**: Serious themes, protagonist's downfall (e.g., Greek tragedies, Shakespeare's "Hamlet")
-- **Comedy**: Humorous situations, happy endings (e.g., Shakespeare's comedies, Oscar Wilde)
-- **Drama**: Serious narratives exploring human conflict
-- **Musical Theater**: Songs, dance, dialogue integrated (e.g., "Hamilton", "Les Misérables", "das Phantom von das Opera")
-- **Experimental/Avant-Garde**: Non-traditional forms, audience participation
+### Theaterformen
+- **Tragödie**: Ernste Themen, Untergang der Hauptfigur (z. B. griechische Tragödien, Shakespeares "Hamlet")
+- **Komödie**: Humorvolle Situationen, glückliche Ausgänge (z. B. Shakespeares Komödien, Oscar Wilde)
+- **Drama**: Ernsthafte Erzählungen über menschliche Konflikte
+- **Musical**: Integriert Gesang, Tanz und Dialog (z. B. "Hamilton", "Les Misérables", "The Phantom of the Opera")
+- **Experimentell/Avantgarde**: Nicht traditionelle Formen, Beteiligung des Publikums
 
-### Famous Playwrights
-- William Shakespeare (Englisch, 1564-1616): "Hamlet", "Macbeth", "Romeo und Juliet"
-- Anton Chekhov (Russian, 1860-1904): "das Cherry Orchard", "Three Sisters"
-- Tennessee Williams (American, 1911-1983): "A Streetcar Named Desire", "das Glass Menagerie"
-- Arthur Miller (American, 1915-2005): "Death von a Salesman", "das Crucible"
-- Samuel Beckett (Irish, 1906-1989): "Waiting für Godot", "Endgame"
-- August Wilson (American, 1945-2005): Pittsburgh Cycle, "Fences"
+### Berühmte Dramatiker
+- William Shakespeare (englisch, 1564–1616): "Hamlet", "Macbeth", "Romeo and Juliet"
+- Anton Tschechow (russisch, 1860–1904): "The Cherry Orchard", "Three Sisters"
+- Tennessee Williams (amerikanisch, 1911–1983): "A Streetcar Named Desire", "The Glass Menagerie"
+- Arthur Miller (amerikanisch, 1915–2005): "Death of a Salesman", "The Crucible"
+- Samuel Beckett (irisch, 1906–1989): "Waiting for Godot", "Endgame"
+- August Wilson (amerikanisch, 1945–2005): Pittsburgh Cycle, "Fences"
 
-## Film und Cinema
+## Film und Kino
 
-### Film Genres
-- **Drama**: Character-driven narratives, emotional depth
-- **Action**: Physical feats, chases, fights, explosions
-- **Comedy**: Humor, satire, parody
-- **Horror**: Fear, suspense, supernatural elements
-- **Documentary**: Non-fiction, real Ereignisse, educational
-- **Animation**: Hand-drawn, CGI, stop-motion
-- **Film Noir**: Dark themes, moral ambiguity, visual style (1940s-1950s)
-- **Wissenschaft Fiction**: Futuristic Technologie, space, time travel
+### Filmgenres
+- **Drama**: Figurenorientierte Erzählungen mit emotionaler Tiefe
+- **Action**: Körperliche Höchstleistungen, Verfolgungsjagden, Kämpfe, Explosionen
+- **Komödie**: Humor, Satire, Parodie
+- **Horror**: Angst, Spannung, übernatürliche Elemente
+- **Dokumentarfilm**: Sachlich, reale Ereignisse, bildend
+- **Animation**: Handgezeichnet, CGI, Stop-Motion
+- **Film Noir**: Dunkle Themen, moralische Ambivalenz, markanter Stil (1940er–1950er)
+- **Science-Fiction**: Zukunftstechnologie, Weltraum, Zeitreisen
 
-### Film Movements
-- **German Expressionism** (1920s): Distorted visuals, psychological themes ("das Cabinet von Dr. Caligari")
-- **Italian Neorealism** (1940s-1950s): Working-class stories, location shooting ("Bicycle Thieves")
-- **French New Wave** (1950s-1960s): Innovative editing, auteur theory (Godard, Truffaut)
-- **New Hollywood** (1960s-1980s): Director-driven, mature themes (Scorsese, Coppola, Spielberg)
-- **Dogme 95** (1990s): Minimalist rules, natural lighting (von Trier, Vinterberg)
+### Filmbewegungen
+- **Deutscher Expressionismus** (1920er): Verzerrte Bildwelten, psychologische Themen ("The Cabinet of Dr. Caligari")
+- **Italienischer Neorealismus** (1940er–1950er): Geschichten aus der Arbeiterklasse, Dreh an Originalschauplätzen ("Bicycle Thieves")
+- **Französische Nouvelle Vague** (1950er–1960er): Innovative Montagetechniken, Auteur-Theorie (Godard, Truffaut)
+- **New Hollywood** (1960er–1980er): Regiegetriebene Filme, reifere Themen (Scorsese, Coppola, Spielberg)
+- **Dogme 95** (1990er): Minimalistische Regeln, natürliches Licht (von Trier, Vinterberg)
 
-### Filmmaking Roles
-- **Director**: Creative vision, actor direction, overall control
-- **Cinematographer/Director von Photography**: Camera work, lighting, visual style
-- **Screenwriter**: Script writing, dialogue, story structure
-- **Editor**: Footage assembly, pacing, narrative flow
-- **Production Designer**: Sets, locations, visual environment
-- **Composer**: Original music score
+### Rollen in der Filmproduktion
+- **Regie**: Kreative Vision, Arbeit mit Schauspielern, Gesamtverantwortung
+- **Kamera/Director of Photography**: Bildgestaltung, Licht, visueller Stil
+- **Drehbuch**: Skript, Dialoge, Struktur der Geschichte
+- **Schnitt**: Montage des Materials, Rhythmus, Erzählfluss
+- **Szenenbild**: Sets, Schauplätze, visuelle Umgebung
+- **Komposition**: Originalmusik für den Film
 
-## Famous Authors und Works
+## Berühmte Autoren und Werke
 
-### Classic Literatur
-- Homer: "das Iliad", "das Odyssey" (Ancient Greece)
-- Dante Alighieri: "das Divine Comedy" (Italy, 1308-1320)
-- Miguel de Cervantes: "Don Quixote" (Spain, 1605)
-- Jane Austen: "Pride und Prejudice", "Sense und Sensibility" (England, 1810s)
-- Leo Tolstoy: "War und Peace", "Anna Karenina" (Russia, 1860s-1870s)
-- Fyodor Dostoevsky: "Crime und Punishment", "das Brothers Karamazov" (Russia, 1860s-1880s)
-- Charles Dickens: "Great Expectations", "A Tale von Two Cities" (England, 1850s-1860s)
-- Mark Twain: "Adventures von Huckleberry Finn" (USA, 1884)
+### Klassische Literatur
+- Homer: "The Iliad", "The Odyssey" (Antikes Griechenland)
+- Dante Alighieri: "The Divine Comedy" (Italien, 1308–1320)
+- Miguel de Cervantes: "Don Quixote" (Spanien, 1605)
+- Jane Austen: "Pride and Prejudice", "Sense and Sensibility" (England, 1810er)
+- Leo Tolstoi: "War and Peace", "Anna Karenina" (Russland, 1860er–1870er)
+- Fjodor Dostojewski: "Crime and Punishment", "The Brothers Karamazov" (Russland, 1860er–1880er)
+- Charles Dickens: "Great Expectations", "A Tale of Two Cities" (England, 1850er–1860er)
+- Mark Twain: "Adventures of Huckleberry Finn" (USA, 1884)
 
-### Modern Literatur
-- James Joyce: "Ulysses" (Ireland, 1922)
-- Virginia Woolf: "Mrs. Dalloway", "To das Lighthouse" (England, 1920s)
-- Franz Kafka: "das Metamorphosis", "das Trial" (Czechoslovakia, 1910s-1920s)
-- Gabriel García Márquez: "One Hundred Years von Solitude" (Colombia, 1967)
-- Toni Morrison: "Beloved", "Song von Solomon" (USA, 1970s-1980s)
-- Haruki Murakami: "Norwegian Wood", "Kafka on das Shore" (Japan, 1980s-present)
-- Chimamanda Ngozi Adichie: "Half von a Yellow Sun", "Americanah" (Nigeria, 2000s)
+### Moderne Literatur
+- James Joyce: "Ulysses" (Irland, 1922)
+- Virginia Woolf: "Mrs. Dalloway", "To the Lighthouse" (England, 1920er)
+- Franz Kafka: "The Metamorphosis", "The Trial" (Tschechoslowakei, 1910er–1920er)
+- Gabriel García Márquez: "One Hundred Years of Solitude" (Kolumbien, 1967)
+- Toni Morrison: "Beloved", "Song of Solomon" (USA, 1970er–1980er)
+- Haruki Murakami: "Norwegian Wood", "Kafka on the Shore" (Japan, 1980er bis heute)
+- Chimamanda Ngozi Adichie: "Half of a Yellow Sun", "Americanah" (Nigeria, 2000er)
 
-## Literary Devices und Techniques
+## Stilmittel und Techniken der Literatur
 
-### Figurative Sprache
-- **Metaphor**: Direct comparison without "like" or "as"
-- **Simile**: Comparison using "like" or "as"
-- **Personification**: Giving human qualities to non-human things
-- **Hyperbole**: Deliberate exaggeration
-- **Irony**: Contrast between expectation und reality (verbal, situational, dramatic)
-- **Symbolism**: Objects representing abstract ideas
-- **Imagery**: Descriptive Sprache appealing to senses
+### Bildhafte Sprache
+- **Metapher**: Unmittelbarer Vergleich ohne "like" oder "as"
+- **Vergleich (Simile)**: Vergleich mithilfe von "like" oder "as"
+- **Personifikation**: Menschliche Eigenschaften werden Nicht-Menschlichem zugeschrieben
+- **Hyperbel**: Bewusste Übertreibung
+- **Ironie**: Gegensatz zwischen Erwartung und Wirklichkeit (verbal, situativ, dramatisch)
+- **Symbolik**: Gegenstände stehen für abstrakte Ideen
+- **Bildlichkeit (Imagery)**: Sinnlich beschreibende Sprache
 
-### Narrative Techniques
-- **Point von View**: First person, second person, third person (limited, omniscient)
-- **Stream von Consciousness**: Continuous flow von thoughts
-- **Unreliable Narrator**: Narrator whose credibility is compromised
-- **Non-linear Narrative**: Ereignisse presented out von chronological order
-- **Foreshadowing**: Hints about Zukunft Ereignisse
-- **Flashback**: Scenes from earlier in das story
+### Erzähltechniken
+- **Erzählperspektive**: Erste Person, zweite Person, dritte Person (begrenzt oder allwissend)
+- **Stream of Consciousness**: Ununterbrochener Gedankenfluss
+- **Unzuverlässiger Erzähler**: Erzähler, dessen Glaubwürdigkeit eingeschränkt ist
+- **Nichtlineares Erzählen**: Ereignisse werden außerhalb der chronologischen Reihenfolge dargestellt
+- **Foreshadowing**: Vorausdeutungen auf spätere Ereignisse
+- **Rückblende**: Szene aus einem früheren Zeitpunkt der Handlung
 
-### Structural Elements
-- **Plot**: Exposition, rising action, climax, falling action, resolution
-- **Character Entwicklung**: Protagonist, antagonist, dynamic/static characters
-- **Setting**: Time, place, social context
-- **Theme**: Central message or underlying meaning
-- **Tone**: Author's attitude toward subject
-- **Mood**: Emotional atmosphere created für reader
+### Strukturelle Elemente
+- **Handlung**: Exposition, steigende Handlung, Höhepunkt, fallende Handlung, Auflösung
+- **Figurenentwicklung**: Protagonist, Antagonist, dynamische/statische Figuren
+- **Setting**: Zeit, Ort, sozialer Kontext
+- **Thema**: Zentrale Aussage oder tieferliegende Bedeutung
+- **Ton**: Haltung des Autors gegenüber dem Gegenstand
+- **Stimmung**: Emotionale Atmosphäre für den Leser
 
-## Cultural Institutions
+## Kulturelle Institutionen
 
-### Museums und Galleries
-- Louvre (Paris): World's largest art museum
-- Metropolitan Museum von Art (New York): Comprehensive collections
-- British Museum (London): Human Geschichte und Kultur
-- Vatican Museums (Vatican City): Renaissance art, Sistine Chapel
-- Uffizi Gallery (Florence): Italian Renaissance masterpieces
-- Hermitage Museum (St. Petersburg): One von oldest und largest museums
-- Museum von Modern Art - MoMA (New York): Modern und contemporary art
+### Museen und Galerien
+- Louvre (Paris): Größtes Kunstmuseum der Welt
+- Metropolitan Museum of Art (New York): Umfassende Sammlungen
+- British Museum (London): Menschheitsgeschichte und Kultur
+- Vatikanische Museen (Vatikanstadt): Renaissance-Kunst, Sixtinische Kapelle
+- Uffizien (Florenz): Meisterwerke der italienischen Renaissance
+- Eremitage (Sankt Petersburg): Eines der ältesten und größten Museen
+- Museum of Modern Art - MoMA (New York): Moderne und zeitgenössische Kunst
 
-### Literary Awards
-- Nobel Prize in Literatur: International recognition
-- Pulitzer Prize (USA): Fiction, drama, Geschichte, poetry
-- Booker Prize (UK/Commonwealth): Best original novel
-- Hugo Award: Wissenschaft fiction und fantasy
-- National Book Award (USA): American Literatur
-- Man Booker International Prize: Translated fiction
+### Literaturpreise
+- Nobelpreis für Literatur: Internationale Anerkennung
+- Pulitzer-Preis (USA): Für Fiktion, Drama, Geschichte und Lyrik
+- Booker Prize (UK/Commonwealth): Bester Originalroman
+- Hugo Award: Science-Fiction und Fantasy
+- National Book Award (USA): Amerikanische Literatur
+- International Booker Prize: Übersetzte Belletristik
 
-## Key Concepts in Art Criticism
+## Zentrale Konzepte der Kunstkritik
 
-### Analysis Frameworks
-- **Formalism**: Focus on visual elements (line, color, composition)
-- **Iconography**: Symbolic meanings und cultural references
-- **Contextual Analysis**: Historical, social, political context
-- **Feminist Criticism**: Gender representation, women artists
-- **Postcolonial Criticism**: Colonial legacy, cultural identity
-- **Psychoanalytic Criticism**: Unconscious motivations, symbolism
+### Analyseansätze
+- **Formalismus**: Fokus auf visuelle Elemente wie Linie, Farbe und Komposition
+- **Ikonographie**: Symbolische Bedeutungen und kulturelle Verweise
+- **Kontextanalyse**: Historischer, sozialer und politischer Hintergrund
+- **Feministische Kritik**: Geschlechterdarstellung, Künstlerinnen
+- **Postkoloniale Kritik**: Koloniales Erbe, kulturelle Identität
+- **Psychoanalytische Kritik**: Unbewusste Motive, Symbolik
 
-### Aesthetic Principles
-- **Balance**: Visual weight distribution (symmetrical, asymmetrical)
-- **Contrast**: Differences in elements (light/dark, large/small)
-- **Emphasis**: Focal points, areas von interest
-- **Movement**: Visual flow guiding viewer's eye
-- **Pattern**: Repetition von elements
-- **Proportion**: Size relationships between parts
-- **Unity**: Coherence und harmony von whole composition
+### Ästhetische Prinzipien
+- **Balance**: Verteilung des visuellen Gewichts (symmetrisch, asymmetrisch)
+- **Kontrast**: Unterschiede zwischen Elementen (hell/dunkel, groß/klein)
+- **Betonung**: Blickfang, hervorgehobene Bereiche
+- **Bewegung**: Visueller Fluss, der den Blick lenkt
+- **Muster**: Wiederholung von Elementen
+- **Proportion**: Größenverhältnisse zwischen Teilen
+- **Einheit**: Zusammenhalt und Harmonie der Gesamtkomposition

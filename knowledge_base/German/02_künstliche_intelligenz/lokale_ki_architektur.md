@@ -5,26 +5,26 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 -->
 
-# Local AI Architektur
+# Lokale KI-Architektur
 
-A practical Leitfaden to running large Sprache models entirely on-device — hardware considerations, inference engines, memory optimisation, und system design für edge Bereitstellung.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No Daten leaves das Gerät.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, Netzwerk-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, und fine-tuning.
+Ein praktischer Leitfaden zum vollständigen Betrieb großer Sprachmodelle auf dem eigenen Gerät – mit Schwerpunkt auf Hardwareanforderungen, Inferenz-Engines, Speicheroptimierung und Systemdesign für Edge-Bereitstellung.
 
 ---
 
-## Hardware Requirements
+## Warum KI lokal ausführen?
 
-### GPU Memory (VRAM)
-Die kritischste Ressource. Model size in memory ≈ **parameters × bytes per parameter**.
+- **Datenschutz**: Keine Daten verlassen das Gerät.
+- **Kosten**: Keine API-Gebühren pro Token.
+- **Latenz**: Vorhersagbare Inferenz ohne Netzwerkabhängigkeit.
+- **Offline-Verfügbarkeit**: Funktioniert auch ohne Internet.
+- **Kontrolle**: Volle Kontrolle über Modellversion, Anpassung und Fine-Tuning.
+
+---
+
+## Hardwareanforderungen
+
+### GPU-Speicher (VRAM)
+Das ist die kritischste Ressource. Die Modellgröße im Speicher lässt sich grob abschätzen als **Parameter × Bytes pro Parameter**.
 
 | Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
 |-----------|---------------------|------------|----------|-----------|-----------|
@@ -33,59 +33,59 @@ Die kritischste Ressource. Model size in memory ≈ **parameters × bytes per pa
 | INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
 | INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ Systeme.
+**Praktische Richtwerte:**
+- 8 GB VRAM → bis zu 7B-Modelle in 4-Bit
+- 12 GB VRAM → bis zu 13B-Modelle in 4-Bit
+- 24 GB VRAM → bis zu 70B-Modelle in 4-Bit (oder 13B in 8-Bit)
+- Apple Silicon mit Unified Memory kann auf Systemen mit 64 GB+ auch 70B-Modelle ausführen
 
-### RAM (System Memory)
-- für CPU inference, you need enough system RAM to load das Modell (similar to VRAM numbers).
-- für GPU inference, system RAM matters für loading das Modell into memory before offloading to VRAM.
+### RAM (Arbeitsspeicher)
+- Für CPU-Inferenz benötigen Sie genügend Arbeitsspeicher, um das Modell vollständig zu laden (ähnlich wie bei den VRAM-Werten).
+- Für GPU-Inferenz ist System-RAM wichtig, um das Modell zunächst in den Speicher zu laden, bevor es in den VRAM ausgelagert wird.
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free für multiple models.
+### Speicherplatz
+- Quantisierte Modellgewichte belegen einige GB (z. B. 4-Bit-7B ≈ 4 GB auf der Festplatte). Für mehrere Modelle sollten mindestens 20–50 GB frei sein.
 
 ### CPU
-- für prompt processing (prefill) und CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent Leistung für LLMs due to den einheitlichen Speicher und Neural Engine.
+- Für die Prompt-Verarbeitung (Prefill) und CPU-Offloading hilft eine moderne Multi-Core-CPU.
+- Apple-M-Series-Chips liefern dank Unified Memory und Neural Engine sehr gute Leistung für LLMs.
 
 ---
 
-## Quantisation
+## Quantisierung
 
-Quantisation reduces die numerische Präzision von weights, dramatically cutting memory und increasing speed at a small accuracy cost.
+Quantisierung verringert die numerische Präzision der Gewichte und spart dadurch erheblich Speicher, während die Geschwindigkeit steigt und die Genauigkeit nur leicht sinkt.
 
-### Popular Formats
+### Gängige Formate
 
-| Format | Bits | Description | Typical use |
+| Format | Bits | Beschreibung | Typische Nutzung |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised für CPU/GPU hybrid | Best für local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best für NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good für batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | llama.cpp-Format, optimiert für CPU/GPU-Hybridbetrieb | Am besten für lokale Inferenz |
+| **GPTQ** | 4–8 | Nur für GPU, effizient auf CUDA | Am besten für NVIDIA-GPUs |
+| **AWQ** | 4 | Aktivierungsbewusst, nur für GPU | Gut für Batch-Inferenz auf GPUs |
+| **ONNX** | variable | Standardisiert, plattformübergreifend | Produktives Serving |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality für most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation mit better perplexity at 4/3 bits.
+### Wahl des Quantisierungsgrads
+- **Q8_0** (8-bit): minimaler Qualitätsverlust, größte Größe.
+- **Q6_K** (6-bit): gute Qualität, ordentliche Kompression.
+- **Q5_K_M** (5-bit): häufig der beste Kompromiss.
+- **Q4_K_M** (4-bit): kleinste Größe bei für viele Aufgaben noch akzeptabler Qualität.
+- **IQ4_XS** / **IQ3_XS**: Verbesserte Quantisierung mit besserer Perplexity bei 4 bzw. 3 Bit.
 
-**Rule von thumb:** Use Q4_K_M für a good balance von quality und size. If you have extra VRAM, use Q5 or Q6.
+**Faustregel:** Verwenden Sie Q4_K_M als guten Kompromiss zwischen Qualität und Größe. Wenn Sie zusätzlichen VRAM haben, sind Q5 oder Q6 oft die bessere Wahl.
 
 ---
 
-## Inference Engines (Local)
+## Lokale Inferenz-Engines
 
 ### llama.cpp
-- Written in C++.
-- Supports GGUF format.
-- Optimised für CPU und GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, und Python bindings.
+- In C++ geschrieben.
+- Unterstützt das GGUF-Format.
+- Für CPU und GPU optimiert (via CUDA, Metal, OpenCL).
+- Sehr schnell, besonders auf der CPU.
+- Bietet Kommandozeilenbetrieb, Servermodus und Python-Bindings.
 
-**Example command:**
+**Beispielbefehl:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
 (-ngl 32 offloads 32 layers to GPU)

@@ -5,68 +5,68 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# 기술 와 컴퓨팅
+# 기술과 컴퓨팅
 
-## What is a Computer?
+## 컴퓨터란 무엇인가?
 
-A computer is an electronic device that processes 데이터 according to a set 의 instructions called a program. Modern computers are based on 그 von Neumann 아키텍처, which consists 의 a central processing unit (CPU), memory, storage, 와 input/output devices. 그 CPU executes instructions. RAM (random access memory) stores 데이터 temporarily while 그 computer is running. Storage devices such as SSDs 와 hard drives store 데이터 permanently.
+컴퓨터는 프로그램이라고 하는 일련의 명령에 따라 데이터를 처리하는 전자 장치입니다. 현대의 컴퓨터는 중앙 처리 장치(CPU), 메모리, 저장 장치, 입력/출력 장치로 이루어진 폰 노이만 아키텍처를 기반으로 합니다. CPU는 명령을 실행합니다. RAM(random access memory)은 컴퓨터가 작동하는 동안 데이터를 임시로 저장합니다. SSD나 하드 드라이브 같은 저장 장치는 데이터를 영구적으로 저장합니다.
 
-## Programming Languages
+## 프로그래밍 언어
 
-A programming 언어 is a formal 언어 used to write instructions 위한 computers. Python is a high-level, interpreted, general-purpose programming 언어 known 위한 its simple 구문 와 readability. It is widely used 에서 데이터 과학, 기계 학습, 웹 개발, 와 automation. JavaScript is 그 primary 언어 위한 웹 개발 와 runs 에서 browsers. Java is a compiled, object-oriented 언어 used widely 에서 enterprise software 와 Android 개발. C 와 C++ are lower-level languages that give fine-grained control over hardware 와 are used 에서 system programming, game 개발, 와 성능-critical applications. Rust is a modern 시스템 programming 언어 focused on safety 와 성능.
+프로그래밍 언어는 컴퓨터에 내릴 명령을 작성할 때 사용하는 형식 언어입니다. Python은 간단한 문법과 높은 가독성으로 잘 알려진 고수준 인터프리터형 범용 프로그래밍 언어입니다. 데이터 과학, 기계 학습, 웹 개발, 자동화 분야에서 널리 쓰입니다. JavaScript는 웹 개발의 핵심 언어이며 브라우저에서 실행됩니다. Java는 컴파일되는 객체 지향 언어로, 엔터프라이즈 소프트웨어와 Android 개발에 폭넓게 사용됩니다. C와 C++는 하드웨어를 세밀하게 제어할 수 있는 저수준 언어로, 시스템 프로그래밍, 게임 개발, 성능이 중요한 애플리케이션에 활용됩니다. Rust는 안전성과 성능에 초점을 맞춘 현대적인 시스템 프로그래밍 언어입니다.
 
-## How 그 Internet Works
+## 인터넷은 어떻게 동작하는가
 
-그 internet is a global 네트워크 의 interconnected computers that communicate using standardized protocols. 그 World Wide 웹 is a system 의 websites 와 웹 pages accessed through 그 internet via browsers. HTTP (HyperText Transfer Protocol) 와 HTTPS (secure HTTP) are 그 protocols used to transfer 웹 pages. An IP address is a unique numerical address assigned to each device on a 네트워크. DNS (Domain Name System) translates human-readable domain names (like google.com) into IP addresses. A router directs 네트워크 traffic between devices 와 networks.
+인터넷은 표준화된 프로토콜을 사용해 서로 통신하는 전 세계 컴퓨터들의 거대한 네트워크입니다. World Wide Web은 브라우저를 통해 인터넷에서 접근하는 웹사이트와 웹페이지의 체계입니다. HTTP(HyperText Transfer Protocol)와 HTTPS(secure HTTP)는 웹페이지를 전송할 때 사용하는 프로토콜입니다. IP 주소는 네트워크에 연결된 각 장치에 할당되는 고유한 숫자 주소입니다. DNS(Domain Name System)는 `google.com` 같은 사람이 읽기 쉬운 도메인 이름을 IP 주소로 변환합니다. 라우터는 장치와 네트워크 사이에서 네트워크 트래픽을 전달합니다.
 
-## Networking 와 Protocols
+## 네트워킹과 프로토콜
 
-TCP/IP is 그 foundational protocol suite 의 그 internet. IP (Internet Protocol) handles addressing 와 routing packets between networks, while TCP (Transmission Control Protocol) provides reliable, ordered delivery 와 함께 retransmission 와 flow control. UDP is a connectionless alternative used when low latency matters more than guaranteed delivery (위한 example 에서 streaming, gaming, or DNS queries). HTTP is a stateless application-layer protocol 위한 request/response 의사소통 between clients 와 servers. HTTPS is HTTP over TLS, adding encryption 와 integrity protection. REST (Representational State Transfer) is an API architectural style that uses resources, standard HTTP verbs (GET, POST, PUT, PATCH, DELETE), 와 stateless interactions. WebSockets provide persistent, full-duplex connections so client 와 server can push messages 에서 real time, which is useful 위한 chat, live dashboards, 와 collaborative apps.
+TCP/IP는 인터넷의 기반이 되는 프로토콜 모음입니다. IP(Internet Protocol)는 네트워크 사이에서 패킷의 주소 지정과 라우팅을 담당하고, TCP(Transmission Control Protocol)는 재전송과 흐름 제어를 통해 신뢰할 수 있고 순서가 보장되는 전송을 제공합니다. UDP는 전달 보장보다 낮은 지연 시간이 더 중요할 때 사용하는 비연결형 대안으로, 스트리밍, 게임, DNS 질의 등에 적합합니다. HTTP는 클라이언트와 서버 사이의 요청/응답 통신을 위한 상태 비저장 애플리케이션 계층 프로토콜입니다. HTTPS는 HTTP 위에 TLS를 적용해 암호화와 무결성 보호를 더한 형태입니다. REST(Representational State Transfer)는 리소스, 표준 HTTP 메서드(GET, POST, PUT, PATCH, DELETE), 상태 비저장 상호작용을 활용하는 API 아키텍처 스타일입니다. WebSocket은 지속적인 전이중 연결을 제공하여 클라이언트와 서버가 실시간으로 메시지를 주고받을 수 있게 하므로 채팅, 실시간 대시보드, 협업 앱에 유용합니다.
 
-## Artificial Intelligence
+## 인공 지능
 
-Artificial intelligence (AI) is 그 simulation 의 human intelligence by machines, particularly computer 시스템. 기계 학습 is a subset 의 AI 에서 which 시스템 learn from 데이터 to make predictions or decisions without being explicitly programmed. 딥 러닝 is a subset 의 기계 학습 that uses 신경망 와 함께 many layers. 신경망 are computational models loosely inspired by 그 structure 의 biological brains. Large 언어 models (LLMs) are AI models trained on massive amounts 의 text to generate 와 understand natural 언어.
+인공 지능(AI)은 특히 컴퓨터 시스템을 통해 인간의 지능을 기계가 모사하는 기술입니다. 기계 학습은 AI의 한 분야로, 시스템이 명시적으로 프로그래밍되지 않아도 데이터로부터 학습해 예측이나 결정을 내리게 합니다. 딥 러닝은 여러 층의 신경망을 사용하는 기계 학습의 하위 분야입니다. 신경망은 생물학적 뇌의 구조에서 느슨하게 영감을 받은 계산 모델입니다. 대규모 언어 모델(LLM)은 방대한 양의 텍스트로 학습되어 자연어를 생성하고 이해하는 AI 모델입니다.
 
-## Algorithms 와 데이터 Structures
+## 알고리즘과 데이터 구조
 
-An algorithm is a step-by-step procedure 위한 solving a problem. 데이터 structures are ways 의 organizing 데이터 에서 a computer so that it can be accessed 와 modified efficiently. Common 데이터 structures include arrays, linked lists, stacks, queues, trees, graphs, 와 hash tables. Sorting algorithms arrange items 에서 a specified order; common 예시 are bubble sort, merge sort, 와 quicksort. Binary search is an efficient algorithm 위한 finding an item 에서 a sorted list by repeatedly halving 그 search range.
+알고리즘은 문제를 해결하기 위한 단계별 절차입니다. 데이터 구조는 컴퓨터 안에서 데이터를 효율적으로 접근하고 수정할 수 있도록 조직하는 방식입니다. 대표적인 데이터 구조로는 배열, 연결 리스트, 스택, 큐, 트리, 그래프, 해시 테이블이 있습니다. 정렬 알고리즘은 항목을 특정 순서로 배치하며, 대표적인 예로 버블 정렬, 병합 정렬, 퀵 정렬이 있습니다. 이진 탐색은 정렬된 목록에서 탐색 범위를 반복해서 절반으로 줄여 원하는 항목을 찾는 효율적인 알고리즘입니다.
 
-## Databases
+## 데이터베이스
 
-A 데이터베이스 is an organized collection 의 structured 데이터 stored electronically. A relational 데이터베이스 stores 데이터 에서 tables 와 함께 rows 와 columns. SQL (Structured Query 언어) is 그 standard 언어 위한 managing 와 querying relational databases. NoSQL databases store 데이터 에서 formats other than tabular relations, such as documents, key-value pairs, or graphs. Common 데이터베이스 시스템 include PostgreSQL, MySQL, SQLite, MongoDB, 와 Redis. An index 에서 a 데이터베이스 speeds up 데이터 retrieval at 그 cost 의 extra storage.
+데이터베이스는 전자적으로 저장된 구조화된 데이터의 체계적인 모음입니다. 관계형 데이터베이스는 행과 열로 이루어진 테이블에 데이터를 저장합니다. SQL(Structured Query Language)은 관계형 데이터베이스를 관리하고 조회하는 표준 언어입니다. NoSQL 데이터베이스는 문서, 키-값 쌍, 그래프처럼 테이블 관계 이외의 형식으로 데이터를 저장합니다. 대표적인 데이터베이스 시스템에는 PostgreSQL, MySQL, SQLite, MongoDB, Redis가 있습니다. 데이터베이스의 인덱스는 추가 저장 공간을 사용하는 대신 데이터 조회 속도를 높여 줍니다.
 
-## System Design 기초
+## 시스템 설계 기초
 
-System design focuses on building reliable, scalable, 와 maintainable software 시스템. Load balancing distributes traffic across multiple servers to improve availability 와 reduce latency. Horizontal scaling adds more machines; vertical scaling adds more resources to one machine. Caching stores frequently accessed 데이터 에서 fast storage (위한 example Redis, Memcached, or CDN edge caches) to reduce 데이터베이스 load 와 response time. Databases at scale require replication, partitioning (sharding), backup strategies, 와 careful consistency tradeoffs. Microservices split large applications into smaller independently deployable services, while monoliths keep most logic 에서 one deployable unit; both approaches involve tradeoffs 에서 complexity, 배포 speed, debugging, 와 team autonomy.
+시스템 설계는 신뢰할 수 있고, 확장 가능하며, 유지보수하기 쉬운 소프트웨어 시스템을 만드는 데 초점을 둡니다. 로드 밸런싱은 여러 서버에 트래픽을 분산해 가용성을 높이고 지연 시간을 줄입니다. 수평 확장은 머신 수를 늘리는 방식이고, 수직 확장은 한 머신의 자원을 늘리는 방식입니다. 캐싱은 자주 접근하는 데이터를 빠른 저장소(예: Redis, Memcached, CDN 엣지 캐시)에 저장해 데이터베이스 부하와 응답 시간을 줄입니다. 대규모 데이터베이스는 복제, 파티셔닝(sharding), 백업 전략, 일관성 사이의 신중한 절충이 필요합니다. 마이크로서비스는 큰 애플리케이션을 독립적으로 배포 가능한 작은 서비스로 나누고, 모놀리식 구조는 대부분의 로직을 하나의 배포 단위에 유지합니다. 두 접근 모두 복잡성, 배포 속도, 디버깅, 팀 자율성 측면에서 장단점이 있습니다.
 
-## Operating 시스템
+## 운영 체제
 
-An operating system (OS) is software that manages computer hardware 와 provides services 위한 programs. Common operating 시스템 include Windows, macOS, 와 Linux. Linux is an open-source OS kernel used 에서 servers, embedded 시스템, 와 Android. 그 OS manages processes (running programs), memory, file 시스템, 와 input/output devices. A process is a running instance 의 a program. A thread is 그 smallest unit 의 execution within a process.
+운영 체제(OS)는 컴퓨터 하드웨어를 관리하고 프로그램에 필요한 서비스를 제공하는 소프트웨어입니다. 대표적인 운영 체제로는 Windows, macOS, Linux가 있습니다. Linux는 서버, 임베디드 시스템, Android에서 사용되는 오픈소스 OS 커널입니다. OS는 프로세스(실행 중인 프로그램), 메모리, 파일 시스템, 입력/출력 장치를 관리합니다. 프로세스는 실행 중인 프로그램의 인스턴스이며, 스레드는 프로세스 안에서 실행되는 가장 작은 단위입니다.
 
-## Version Control
+## 버전 관리
 
-Version control 시스템 track changes to code over time, allowing developers to collaborate 와 revert to previous states. Git is 그 most widely used version control system. A repository (repo) is a collection 의 files 와 their 역사. A commit is a saved snapshot 의 changes. A branch is an independent line 의 개발. A pull request is a proposal to merge changes from one branch into another.
+버전 관리 시스템은 코드의 변경 사항을 시간에 따라 추적하여 개발자가 협업하고 이전 상태로 되돌릴 수 있게 합니다. Git은 가장 널리 사용되는 버전 관리 시스템입니다. 리포지토리(repo)는 파일과 그 변경 이력의 모음입니다. 커밋은 변경 사항을 저장한 스냅샷입니다. 브랜치는 독립적인 개발 흐름입니다. 풀 리퀘스트는 한 브랜치의 변경 사항을 다른 브랜치에 병합하자는 제안입니다.
 
-## Software 개발 Practices
+## 소프트웨어 개발 관행
 
-Object-oriented programming (OOP) organizes code into objects that combine 데이터 와 behavior. Key principles 의 OOP include encapsulation, inheritance, polymorphism, 와 abstraction. Test-driven 개발 (TDD) is a practice 의 writing tests before writing code. Agile is a set 의 software 개발 methodologies that emphasize iterative 개발, collaboration, 와 adaptability. DevOps combines software 개발 와 IT operations to shorten 그 개발 lifecycle. APIs (Application Programming Interfaces) allow different software 시스템 to communicate 와 함께 each other.
+객체 지향 프로그래밍(OOP)은 데이터와 동작을 결합한 객체를 중심으로 코드를 구성하는 방식입니다. OOP의 핵심 원칙에는 캡슐화, 상속, 다형성, 추상화가 있습니다. 테스트 주도 개발(TDD)은 코드를 작성하기 전에 먼저 테스트를 작성하는 개발 방식입니다. Agile은 반복적 개발, 협업, 적응성을 강조하는 소프트웨어 개발 방법론의 집합입니다. DevOps는 소프트웨어 개발과 IT 운영을 결합해 개발 수명 주기를 단축합니다. API(Application Programming Interface)는 서로 다른 소프트웨어 시스템이 통신할 수 있게 해 줍니다.
 
-## Cloud 와 DevOps 기본
+## 클라우드와 DevOps 기초
 
-Cloud 컴퓨팅 provides on-demand infrastructure 와 managed services over 그 internet. 그 three major public cloud providers are AWS (Amazon 웹 Services), Microsoft Azure, 와 Google Cloud Platform (GCP). Common service models are IaaS (infrastructure), PaaS (platform), 와 SaaS (software). Core cloud building blocks include compute instances/containers, object storage, managed databases, networking, 와 IAM (Identity 와 Access 관리). CI/CD (Continuous Integration 와 Continuous Delivery/배포) automates build, test, 와 release pipelines so code can move safely from commit to production. Docker packages applications 와 dependencies into portable containers; 에서 production these containers are typically deployed via orchestrators (such as Kubernetes), serverless platforms, or managed container services.
+클라우드 컴퓨팅은 인터넷을 통해 필요할 때마다 인프라와 관리형 서비스를 제공하는 방식입니다. 3대 퍼블릭 클라우드 사업자는 AWS(Amazon Web Services), Microsoft Azure, Google Cloud Platform(GCP)입니다. 대표적인 서비스 모델은 IaaS(infrastructure), PaaS(platform), SaaS(software)입니다. 클라우드의 핵심 구성 요소에는 컴퓨트 인스턴스/컨테이너, 객체 스토리지, 관리형 데이터베이스, 네트워킹, IAM(Identity and Access Management)이 있습니다. CI/CD(Continuous Integration and Continuous Delivery/Deployment)는 빌드, 테스트, 릴리스 파이프라인을 자동화해 코드가 커밋에서 프로덕션까지 안전하게 이동하도록 돕습니다. Docker는 애플리케이션과 의존성을 이식 가능한 컨테이너에 패키징하며, 프로덕션에서는 이러한 컨테이너를 보통 Kubernetes 같은 오케스트레이터, 서버리스 플랫폼, 또는 관리형 컨테이너 서비스로 배포합니다.
 
-## 데이터 Formats 와 Tooling
+## 데이터 형식과 도구
 
-JSON (JavaScript Object Notation) is a lightweight text format built from objects (key/value pairs), arrays, strings, numbers, booleans, 와 null; it is widely used 에서 APIs. YAML is a human-friendly configuration format that supports nested structures 와 comments, commonly used 에서 CI/CD 와 infrastructure definitions. CSV (Comma-Separated Values) stores tabular 데이터 as rows 의 delimited text 와 is common 위한 데이터 import/export pipelines. XML (eXtensible Markup 언어) is a tag-based structured format used 에서 legacy 시스템, configuration, 와 document workflows. Developers commonly validate 와 transform these formats 와 함께 linters, schema validators (such as JSON Schema), query tools (`jq`, XPath), 와 parsing libraries 에서 their programming 언어.
+JSON(JavaScript Object Notation)은 객체(키/값 쌍), 배열, 문자열, 숫자, 불리언, null로 이루어진 가벼운 텍스트 형식으로, API에서 널리 사용됩니다. YAML은 중첩 구조와 주석을 지원하는 사람이 읽기 쉬운 설정 형식으로, CI/CD와 인프라 정의에 자주 쓰입니다. CSV(Comma-Separated Values)는 구분자로 나뉜 텍스트 행으로 표 형식 데이터를 저장하며, 데이터 가져오기/내보내기 파이프라인에서 흔히 사용됩니다. XML(eXtensible Markup Language)은 태그 기반의 구조화된 형식으로, 레거시 시스템, 설정, 문서 워크플로에서 활용됩니다. 개발자는 보통 자신이 사용하는 프로그래밍 언어의 린터, 스키마 검증기(JSON Schema 등), 질의 도구(`jq`, XPath), 파싱 라이브러리를 이용해 이러한 형식을 검증하고 변환합니다.
 
-## Regular Expressions (Regex)
+## 정규 표현식 (Regex)
 
-A regular expression is a pattern 언어 used to search, match, extract, 와 transform text. Core regex concepts include literals (`cat`), character classes (`[a-z]`, `\d`), quantifiers (`*`, `+`, `?`, `{n,m}`), anchors (`^`, `$`), groups (`(...)`), alternation (`a|b`), 와 escaping special characters. Regex is heavily used 위한 input validation, log parsing, text extraction, 와 find/replace automation. Different engines (PCRE, JavaScript, Python `re`, RE2) have different feature sets, so behavior may vary between tools. Regex is powerful but can become hard to read; complex patterns should be tested 와 documented to avoid bugs.
+정규 표현식은 텍스트를 검색하고, 일치시키고, 추출하고, 변환하기 위한 패턴 언어입니다. 핵심 개념에는 리터럴(`cat`), 문자 클래스(`[a-z]`, `\d`), 수량자(`*`, `+`, `?`, `{n,m}`), 앵커(`^`, `$`), 그룹(`(...)`), 선택(`a|b`), 특수 문자의 이스케이프가 있습니다. Regex는 입력 검증, 로그 파싱, 텍스트 추출, 찾기/바꾸기 자동화에 널리 사용됩니다. PCRE, JavaScript, Python `re`, RE2 등 엔진마다 지원 기능이 달라 동작이 도구별로 다를 수 있습니다. Regex는 강력하지만 읽기 어려워질 수 있으므로, 복잡한 패턴은 테스트하고 문서화해 버그를 줄여야 합니다.
 
-## Cybersecurity
+## 사이버 보안
 
-Cybersecurity is 그 practice 의 protecting computer 시스템, networks, 와 데이터 from digital attacks. Common threats include malware (malicious software), phishing (fraudulent 의사소통 designed to steal information), ransomware (malware that encrypts 데이터 와 demands payment), 와 denial-의-service attacks. Encryption transforms 데이터 into an unreadable form that can only be decoded 와 함께 a key. HTTPS uses TLS (Transport Layer 보안) to encrypt 웹 traffic. Strong, unique passwords 와 two-factor authentication are fundamental 보안 practices.
+사이버 보안은 컴퓨터 시스템, 네트워크, 데이터를 디지털 공격으로부터 보호하는 실천입니다. 대표적인 위협으로는 악성코드(malware), 피싱(phishing), 랜섬웨어(ransomware), 서비스 거부 공격(denial-of-service attack)이 있습니다. 암호화는 데이터를 키가 있어야만 해독할 수 있는 읽을 수 없는 형태로 변환합니다. HTTPS는 TLS(Transport Layer Security)를 사용해 웹 트래픽을 암호화합니다. 강력하고 고유한 비밀번호와 2단계 인증은 기본적인 보안 수칙입니다.
 
-## 보안 Concepts 위한 Developers
+## 개발자를 위한 보안 개념
 
-OAuth 2.0 is an authorization framework that lets users grant limited access to an application without sharing credentials directly. OpenID Connect (OIDC) is an identity layer built on OAuth 2.0 위한 authentication. JWT (JSON 웹 Token) is a compact token format containing claims, often used 위한 stateless auth, but it must be signed correctly 와 validated strictly (signature, expiration, issuer, audience). TLS secures 데이터 에서 transit by providing encryption, integrity, 와 server authentication through certificates. 그 OWASP Top 10 is a widely used list 의 common 웹 application 보안 risks, including broken access control, cryptographic failures, injection, insecure design, 보안 misconfiguration, vulnerable components, 와 insufficient logging/monitoring. Secure 개발 requires defense-에서-depth: input validation, output encoding, least privilege, secret 관리, dependency patching, 와 regular 보안 테스트.
+OAuth 2.0은 사용자가 자격 증명을 직접 공유하지 않고도 애플리케이션에 제한된 접근 권한을 부여할 수 있게 하는 인가 프레임워크입니다. OpenID Connect(OIDC)는 인증을 위해 OAuth 2.0 위에 구축된 신원 계층입니다. JWT(JSON Web Token)는 클레임을 담는 간결한 토큰 형식으로, 상태 비저장 인증에 자주 사용되지만 서명, 만료 시간, 발급자, 대상 등의 검증을 엄격하게 해야 합니다. TLS는 인증서를 통해 암호화, 무결성, 서버 인증을 제공함으로써 전송 중 데이터를 보호합니다. OWASP Top 10은 깨진 접근 제어, 암호화 실패, 인젝션, 안전하지 않은 설계, 보안 설정 오류, 취약한 구성 요소, 불충분한 로깅/모니터링 등 일반적인 웹 애플리케이션 보안 위험을 정리한 널리 쓰이는 목록입니다. 안전한 개발을 위해서는 입력 검증, 출력 인코딩, 최소 권한, 비밀 정보 관리, 의존성 패치, 정기적인 보안 테스트를 포함한 defense-in-depth가 필요합니다.
