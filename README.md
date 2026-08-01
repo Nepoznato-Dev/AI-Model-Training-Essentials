@@ -1,6 +1,6 @@
 # AI-Model-Training-Essentials
 
-> 🌍 **Multilingual Knowledge Base & AI Agent Configuration Repository**
+> 🌍 **Multilingual Knowledge Base & AI Agent Configuration Repository. For small local models**
 
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
