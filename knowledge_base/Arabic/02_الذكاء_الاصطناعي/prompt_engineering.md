@@ -5,177 +5,188 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Prompt Engineering
+# هندسة الـ Prompt
 
-Prompt engineering is ال practice من designing, refining, و optimising input prompts to get ال best possible output from a اللغة model. It is both an art و a العلوم, و it is ال primary interface لأجل controlling LLM behaviour without fine-tuning.
+هندسة الـ Prompt هي ممارسة تصميم prompts الإدخال وتنقيحها وتحسينها للحصول على أفضل مخرجات ممكنة من نموذج لغوي. وهي تجمع بين الفن والعلم، وتمثل الواجهة الأساسية للتحكم في سلوك LLMs دون الحاجة إلى fine-tuning.
 
 ---
 
-## Core Principles
+## المبادئ الأساسية
 
-### Clarity و Specificity
-A clear prompt leaves no room لأجل ambiguity. Specify exactly what you want, including format, length, و perspective.
+### الوضوح والتحديد
+يترك الـ prompt الواضح مساحة قليلة للغموض. حدد ما تريده بدقة، بما في ذلك الصيغة، والطول، والمنظور.
 
-**Vague:**
+**غامض:**
 > "Tell me about Python."
 
-**Specific:**
-> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, و keep your answer under 200 words."
+**محدد:**
+> "Explain Python's Global Interpreter Lock (GIL). Describe its impact on multithreading, give one workaround, and keep your answer under 200 words."
 
-### Provide Context
-Models perform better when they know ال role, audience, و goal.
+### تقديم السياق
+تؤدي النماذج أداءً أفضل عندما تعرف الدور، والجمهور، والهدف.
 
-**Without context:**
+**دون سياق:**
 > "Write a function to sort a list."
 
-**مع context:**
-> "You are a senior Python developer. Write a function to sort a list من dictionaries by a given key. Use type hints و handle edge cases. ال audience is junior developers."
+**مع سياق:**
+> "You are a senior Python developer. Write a function to sort a list of dictionaries by a given key. Use type hints and handle edge cases. The audience is junior developers."
 
-### Use Positive Instructions
-Tell ال model what to do, not what to avoid. "Don't include jargon" is weaker than "Use simple اللغة accessible to a 10-year-old."
+### استخدام التعليمات الإيجابية
+أخبر النموذج بما يجب فعله، لا بما يجب تجنبه فقط. عبارة "Don't include jargon" أضعف من "Use simple language accessible to a 10-year-old."
 
 ---
 
-## Prompt Structures
+## هياكل الـ Prompt
 
-### System / User / Assistant Roles
-Most LLM واجهات البرمجة الدعم a multi-turn structure:
+### أدوار System / User / Assistant
+تدعم معظم واجهات LLMs بنية محادثة متعددة الأدوار:
 
-- **System message**: Sets ال model's behaviour, persona, و constraints (persists لأجل ال whole session).
-- **User message**: ال current query or instruction.
-- **Assistant message**: ال model's previous responses (used لأجل continuity).
+- **System message**: يحدد سلوك النموذج، وشخصيته، وقيوده، ويستمر عادة طوال الجلسة.
+- **User message**: الاستعلام أو التعليمة الحالية.
+- **Assistant message**: ردود النموذج السابقة، وتستخدم للحفاظ على الاستمرارية.
 
-**Example (OpenAI API style):**
-System: You are a helpful coding assistant. You reply مع concise code أمثلة و brief explanations. Never provide unsafe code.
+**مثال بأسلوب OpenAI API:**
+```text
+System: You are a helpful coding assistant. You reply with concise code examples and brief explanations. Never provide unsafe code.
 User: Write a Python function to download a file from a URL.
+```
 
 ### Few-Shot Prompting
-Provide 2–3 أمثلة من ال desired input-output format before asking ال model to perform ال task. This teaches ال pattern.
+قدّم مثالين أو ثلاثة من صيغة الإدخال والمخرجات المطلوبة قبل أن تطلب من النموذج تنفيذ المهمة. يعلّم ذلك النموذج النمط المطلوب.
 
-**Example:**
+**مثال:**
+```text
 User: Convert these sentences to passive voice:
-Input: ال cat chased ال mouse.
-Output: ال mouse was chased by ال cat.
-Input: ال chef cooked ال meal.
-Output: ال meal was cooked by ال chef.
-Input: ال storm destroyed ال house.
+Input: The cat chased the mouse.
+Output: The mouse was chased by the cat.
+Input: The chef cooked the meal.
+Output: The meal was cooked by the chef.
+Input: The storm destroyed the house.
 Output: (model completes)
+```
 
-### Chain-من-Thought (CoT)
-Encourage ال model to show its reasoning step by step. This improves accuracy on arithmetic, logic, و multi-step tasks.
+### Chain-of-Thought (CoT)
+شجّع النموذج على عرض تفكيره خطوة بخطوة. يحسّن ذلك الدقة في الحساب، والمنطق، والمهام متعددة الخطوات.
 
-**Without CoT:**
+**دون CoT:**
 > "What is 24 × 37?"
 
 **مع CoT:**
 > "Calculate 24 × 37. Show your reasoning step by step."
 
-ال model will produce intermediate steps, reducing arithmetic errors.
+سينتج النموذج خطوات وسيطة، مما يقلل أخطاء الحساب.
 
-### Structured Outputs
-Request a specific format like JSON, YAML, or markdown tables to make parsing reliable.
-User: List three pros و three cons من الخدمات المصغرة. Return only a valid JSON object مع keys "pros" و "cons", each an array من strings.
+### المخرجات المنظمة
+اطلب صيغة محددة مثل JSON أو YAML أو جداول Markdown لجعل التحليل الآلي للمخرجات أكثر موثوقية.
+
+```text
+User: List three pros and three cons of microservices. Return only a valid JSON object with keys "pros" and "cons", each an array of strings.
+```
 
 ---
 
-## متقدم Techniques
+## تقنيات متقدمة
 
 ### Self-Consistency
-Generate multiple responses لأجل ال same prompt (مع a temperature > 0) و take a majority vote on ال final answer. This is especially effective لأجل reasoning tasks.
+ولّد عدة إجابات للـ prompt نفسه، مع `temperature > 0`، ثم استخدم تصويت الأغلبية على الإجابة النهائية. تكون هذه التقنية فعالة خصوصاً في مهام الاستدلال.
 
-### Tree-من-Thoughts
-Explore multiple reasoning paths في parallel, evaluate each, و choose ال best one. This is a research-level technique but can be approximated by asking ال model to "explore alternative solutions."
+### Tree-of-Thoughts
+استكشف عدة مسارات استدلالية بالتوازي، وقيّم كلاً منها، ثم اختر الأفضل. هذه تقنية بحثية متقدمة، لكن يمكن تقريبها بطلب "explore alternative solutions" من النموذج.
 
 ### ReAct (Reasoning + Acting)
-Let ال model interleave reasoning مع tool calls. It can think, then act (e.g., search ال الويب, run code), then think again based on ال result.
+اسمح للنموذج بالمزج بين الاستدلال واستدعاءات الأدوات. يمكنه أن يفكر، ثم ينفذ إجراءً مثل البحث في الويب أو تشغيل كود، ثم يعيد التفكير بناءً على النتيجة.
 
-**Prompt structure:**
-You have access to a calculator و a search engine. لأجل each step, output:
+**بنية الـ prompt:**
+```text
+You have access to a calculator and a search engine. For each step, output:
 Thought: (your reasoning)
 Action: (tool name, input)
 Observation: (tool output)
-... continue until you have ال final answer.
+... continue until you have the final answer.
+```
 
-### Persona Assignment
-Assign a specific persona to frame ال response.
+### إسناد شخصية
+امنح النموذج شخصية محددة لتأطير الإجابة.
 
 **أمثلة:**
-- "You are a Linux kernel developer explaining memory الإدارة to a new graduate."
+- "You are a Linux kernel developer explaining memory management to a new graduate."
 - "You are a friendly nutritionist giving general advice to a client."
 - "You are a cynical tech critic reviewing a new gadget."
 
 ---
 
-## Parameter Tuning
+## ضبط المعاملات
 
-- **Temperature** (0.0 – 1.0+): Controls randomness. Lower = more deterministic, higher = more creative. Use 0.0–0.3 لأجل factual answers; 0.7–1.0 لأجل creative writing.
-- **Top-p** (nucleus sampling): Cuts off ال probability mass at a certain cumulative threshold. 0.9 means ال model samples from ال top 90% من likely tokens. Usually adjust either temperature or top-p, not both.
-- **Max tokens**: Sets ال maximum output length. Remember to reserve space لأجل ال response within ال context window.
-- **Frequency penalty**: Reduces repetition من ال same tokens.
-- **Presence penalty**: Encourages ال model to introduce new topics.
+- **Temperature** (0.0 – 1.0+): يتحكم في العشوائية. القيم الأقل أكثر حتمية، والقيم الأعلى أكثر إبداعاً. استخدم 0.0–0.3 للإجابات الواقعية، و0.7–1.0 للكتابة الإبداعية.
+- **Top-p** (nucleus sampling): يقتطع كتلة الاحتمالات عند عتبة تراكمية معينة. تعني 0.9 أن النموذج يختار من أعلى 90% من tokens المرجحة. عادةً اضبط إما temperature أو top-p، لا كليهما.
+- **Max tokens**: يحدد الحد الأقصى لطول المخرجات. تذكّر حجز مساحة للإجابة ضمن نافذة السياق.
+- **Frequency penalty**: يقلل تكرار tokens نفسها.
+- **Presence penalty**: يشجع النموذج على إدخال موضوعات جديدة.
 
 ---
 
-## Common Pitfalls و Fixes
+## أخطاء شائعة وإصلاحاتها
 
-| Problem | Likely cause | Fix |
+| المشكلة | السبب المحتمل | الإصلاح |
 |---------|--------------|-----|
-| Model ignores parts من prompt | Prompt too long or overloaded | Shorten; put ال most important instruction at ال end |
-| Output is too verbose | No length constraint | Add "Limit to 3 sentences" or set max_tokens |
-| Output is too terse | Overly restrictive | Add "Explain في detail" or lower temperature |
-| Factual hallucinations | Insufficient context or ambiguous question | Add "If you are unsure, say 'I don't know'" و provide a RAG context |
-| Inconsistent formatting | No explicit format instruction | Ask لأجل JSON, markdown table, or bullet list |
-| Model answers في wrong اللغة | No اللغة instruction | Explicitly state "Respond في الإنجليزية" (or your target اللغة) |
+| يتجاهل النموذج أجزاء من الـ prompt | الـ prompt طويل جداً أو محمّل بتعليمات كثيرة | اختصره؛ وضع أهم تعليمة في النهاية |
+| المخرجات مطولة جداً | لا يوجد قيد على الطول | أضف "Limit to 3 sentences" أو اضبط `max_tokens` |
+| المخرجات مقتضبة جداً | القيود صارمة أكثر من اللازم | أضف "Explain in detail" أو خفّض temperature |
+| هلوسات معرفية | سياق غير كافٍ أو سؤال ملتبس | أضف "If you are unsure, say 'I don't know'" ووفّر سياق RAG |
+| تنسيق غير متسق | لا توجد تعليمة صريحة للتنسيق | اطلب JSON أو جدول Markdown أو قائمة نقطية |
+| يجيب النموذج بلغة خاطئة | لا توجد تعليمة لغة | اذكر صراحة "Respond in English" أو اللغة المطلوبة |
 
 ---
 
-## Prompt Templates لأجل Common Tasks
+## قوالب Prompt لمهام شائعة
 
-### Summarisation
-Summarise ال following text في 3 bullet points. Focus on ال main arguments و avoid details.
+### التلخيص
+```text
+Summarise the following text in 3 bullet points. Focus on the main arguments and avoid details.
 
 Text: [insert text]
+```
 
-
-### Code Generation
-Write a [اللغة] function that [does X].
+### توليد الكود
+```text
+Write a [language] function that [does X].
 Requirements:
+- Use type hints.
+- Include a docstring.
+- Handle edge cases: [list].
+- Do not use external libraries unless specified.
+```
 
-Use type hints.
-
-Include a docstring.
-
-Handle edge cases: [list].
-
-Do not use external libraries unless specified.
-
-
-### Explanation
+### الشرح
+```text
 Explain [concept] to a [non-expert / university student / child]. Use an analogy where appropriate.
+```
 
-### Brainstorming
-Generate 10 ideas لأجل [topic]. لأجل each idea, give a one-sentence description و one potential challenge.
+### العصف الذهني
+```text
+Generate 10 ideas for [topic]. For each idea, give a one-sentence description and one potential challenge.
+```
 
-text
+### التصنيف
+```text
+Classify the following customer feedback as [positive, neutral, negative].
+Provide a confidence score (0-100) and a brief reason.
 
-### Classification
-Classify ال following customer ملاحظات as [positive, neutral, negative].
-Provide a confidence score (0-100) و a brief reason.
+Feedback: [insert text]
+```
 
-ملاحظات: [insert text]
-
-### Translation مع Style
-Translate ال following الإنجليزية text to Spanish. Use an informal tone suitable لأجل a social media post.
+### الترجمة مع الأسلوب
+```text
+Translate the following English text to Spanish. Use an informal tone suitable for a social media post.
 Text: [insert text]
+```
 
 ---
 
-## Evaluation من Prompts
+## تقييم الـ Prompts
 
-Treat prompts as code: version them, test them, و iterate.
+عامل prompts كما تعامل الكود: ضع لها إصدارات، واختبرها، وكرر تحسينها.
 
-- **A/B test** different prompt variants on a held-out set من queries.
-- **Measure success** via human evaluation or automated metrics (e.g., exact match, BLEU, custom scoring).
-- **Keep a prompt registry** (a simple text file or spreadsheet) مع ال prompt, version, و observed الأداء.
-
----
+- **اختبار A/B**: جرّب نسخاً مختلفة من الـ prompt على مجموعة محفوظة من الاستعلامات.
+- **قياس النجاح**: استخدم التقييم البشري أو مقاييس آلية مثل exact match وBLEU أو مقاييس مخصصة.
+- **الاحتفاظ بسجل prompts**: استخدم ملفاً نصياً بسيطاً أو جدولاً يضم الـ prompt، والإصدار، والأداء المرصود.

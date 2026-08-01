@@ -5,36 +5,36 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# قاعدة البيانات الأنظمة
+# أنظمة قواعد البيانات
 
-## قاعدة البيانات الأساسيات
+## أساسيات قواعد البيانات
 
-### What is a قاعدة البيانات?
-A قاعدة البيانات is an organized collection من structured information stored electronically, designed لأجل efficient retrieval, insertion, updating, و deletion من البيانات.
+### ما هي قاعدة البيانات؟
+قاعدة البيانات هي مجموعة منظمة من المعلومات المهيكلة المخزنة إلكترونياً، ومصممة لاسترجاع البيانات وإدراجها وتحديثها وحذفها بكفاءة.
 
-### قاعدة البيانات الإدارة الأنظمة (DBMS)
-Software that interacts مع end users, applications, و ال قاعدة البيانات itself to capture و analyze البيانات. أمثلة: MySQL, PostgreSQL, Oracle, MongoDB.
+### أنظمة إدارة قواعد البيانات (DBMS)
+هي برمجيات تتفاعل مع المستخدمين النهائيين والتطبيقات وقاعدة البيانات نفسها لالتقاط البيانات وتحليلها. من أمثلتها: MySQL وPostgreSQL وOracle وMongoDB.
 
-### Key Concepts
-- **Schema**: Structure/organization من قاعدة البيانات (tables, fields, relationships)
-- **Instance**: Actual البيانات stored at a particular moment
-- **ACID Properties**: Atomicity, Consistency, Isolation, Durability
-- **CAP Theorem**: Consistency, Availability, Partition Tolerance (choose 2)
-- **Normalization**: Organizing البيانات to reduce redundancy
-- **Denormalization**: Adding redundancy to improve read الأداء
+### مفاهيم رئيسية
+- **المخطط (Schema)**: بنية قاعدة البيانات وتنظيمها، مثل الجداول والحقول والعلاقات
+- **المثيل (Instance)**: البيانات الفعلية المخزنة في لحظة معينة
+- **خصائص ACID**: الذرية، والاتساق، والعزل، والديمومة
+- **مبرهنة CAP**: الاتساق، والتوافر، وتحمل التقسيم الشبكي؛ وغالباً ما يُختار اثنان منها
+- **التطبيع**: تنظيم البيانات لتقليل التكرار
+- **إلغاء التطبيع**: إضافة تكرار محسوب لتحسين أداء القراءة
 
-## Relational Databases (SQL)
+## قواعد البيانات العلائقية (SQL)
 
-### Core Concepts
-- **Tables**: Rows (records) و columns (fields)
-- **Primary Key**: Unique identifier لأجل each row
-- **Foreign Key**: مرجع to primary key في another table
-- **Indexes**: البيانات structures improving query speed
-- **Views**: Virtual tables based on query results
-- **Stored Procedures**: Precompiled SQL code blocks
-- **Triggers**: Automatic actions on البيانات changes
+### مفاهيم أساسية
+- **الجداول**: صفوف، وتسمى سجلات، وأعمدة، وتسمى حقولاً
+- **المفتاح الأساسي**: معرّف فريد لكل صف
+- **المفتاح الخارجي**: مرجع إلى مفتاح أساسي في جدول آخر
+- **الفهارس**: بنى بيانات تحسن سرعة الاستعلامات
+- **العروض (Views)**: جداول افتراضية مبنية على نتائج الاستعلامات
+- **الإجراءات المخزنة**: كتل شيفرة SQL مترجمة مسبقاً
+- **المشغلات (Triggers)**: إجراءات تلقائية تُنفذ عند تغير البيانات
 
-### SQL Operations (CRUD)
+### عمليات SQL ‏(CRUD)
 ```sql
 -- Create
 INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com');
@@ -50,265 +50,210 @@ UPDATE users SET email = 'new@example.com' WHERE id = 1;
 DELETE FROM users WHERE id = 1;
 ```
 
-### Joins
-- **INNER JOIN**: Returns matching rows from both tables
-- **LEFT JOIN**: All rows from left table, matches from right
-- **RIGHT JOIN**: All rows from right table, matches from left
-- **FULL OUTER JOIN**: All rows from both tables
-- **CROSS JOIN**: Cartesian product من both tables
-- **SELF JOIN**: Table joined مع itself
+### عمليات الربط
+- **INNER JOIN**: تعيد الصفوف المتطابقة من الجدولين
+- **LEFT JOIN**: تعيد كل الصفوف من الجدول الأيسر وما يطابقها من الجدول الأيمن
+- **RIGHT JOIN**: تعيد كل الصفوف من الجدول الأيمن وما يطابقها من الجدول الأيسر
+- **FULL OUTER JOIN**: تعيد كل الصفوف من كلا الجدولين
+- **CROSS JOIN**: تنتج الضرب الديكارتي للجدولين
+- **SELF JOIN**: تربط الجدول بنفسه
 
-### Normalization Forms
-- **1NF**: Atomic values, no repeating groups
-- **2NF**: 1NF + no partial dependencies (all non-key attributes depend on whole primary key)
-- **3NF**: 2NF + no transitive dependencies (non-key attributes don't depend on other non-key attributes)
-- **BCNF**: Stronger 3NF, every determinant is a candidate key
-- **4NF**: No multi-valued dependencies
-- **5NF**: No join dependencies
+### صيغ التطبيع
+- **1NF**: قيم ذرية بلا مجموعات مكررة
+- **2NF**: الصيغة الأولى مع عدم وجود اعتماديات جزئية؛ أي إن كل السمات غير المفتاحية تعتمد على المفتاح الأساسي كاملاً
+- **3NF**: الصيغة الثانية مع عدم وجود اعتماديات انتقالية؛ أي إن السمات غير المفتاحية لا تعتمد على سمات غير مفتاحية أخرى
+- **BCNF**: صيغة أقوى من الصيغة الثالثة يكون فيها كل محدِّد مفتاحاً مرشحاً
+- **4NF**: لا توجد اعتماديات متعددة القيم
+- **5NF**: لا توجد اعتماديات ربط
 
-### Popular RDBMS
-- **PostgreSQL**: متقدم features, extensible, ACID-compliant
-- **MySQL**: Widely used, fast reads, الويب applications
-- **Oracle**: Enterprise features, scalability, expensive
-- **SQL Server**: Microsoft ecosystem, integrated tools
-- **SQLite**: Embedded, serverless, lightweight
-- **MariaDB**: MySQL fork, open-source
+### أنظمة RDBMS شائعة
+- **PostgreSQL**: ميزات متقدمة، وقابلية للتوسعة، وامتثال لخصائص ACID
+- **MySQL**: واسع الاستخدام، وسريع في القراءة، وشائع في تطبيقات الويب
+- **Oracle**: ميزات مؤسسية وقابلية توسع عالية، لكنه مكلف
+- **SQL Server**: مدمج مع منظومة Microsoft وأدواتها
+- **SQLite**: مضمّن، ومن دون خادم، وخفيف الوزن
+- **MariaDB**: تفرع مفتوح المصدر من MySQL
 
-## NoSQL Databases
+## قواعد بيانات NoSQL
 
-### Types من NoSQL Databases
+### أنواع قواعد بيانات NoSQL
 
-#### Document Stores
-- **Structure**: JSON-like documents (BSON)
-- **حالات الاستخدام**: Content الإدارة, catalogs, user profiles
-- **أمثلة**: MongoDB, CouchDB, DocumentDB
-- **Query Example** (MongoDB):
+#### مخازن المستندات
+- **البنية**: مستندات شبيهة بصيغة JSON، مثل BSON
+- **حالات الاستخدام**: إدارة المحتوى، والفهارس، وملفات تعريف المستخدمين
+- **أمثلة**: MongoDB وCouchDB وDocumentDB
+- **مثال استعلام** باستخدام MongoDB:
 ```javascript
 db.users.find({ age: { $gt: 25 } }).sort({ name: 1 });
 ```
 
-#### Key-Value Stores
-- **Structure**: Simple key-value pairs
-- **حالات الاستخدام**: Caching, sessions, shopping carts
-- **أمثلة**: Redis, DynamoDB, Riak
-- **Characteristics**: Fast, simple, limited querying
+#### مخازن المفتاح والقيمة
+- **البنية**: أزواج بسيطة من مفتاح وقيمة
+- **حالات الاستخدام**: التخزين المؤقت، والجلسات، وعربات التسوق
+- **أمثلة**: Redis وDynamoDB وRiak
+- **الخصائص**: سريعة وبسيطة، لكنها محدودة في إمكانات الاستعلام
 
-#### Column-Family Stores
-- **Structure**: Columns grouped into families
-- **حالات الاستخدام**: Big البيانات, analytics, time-series
-- **أمثلة**: Cassandra, HBase, ScyllaDB
-- **Characteristics**: Write-optimized, distributed, scalable
+#### مخازن عائلات الأعمدة
+- **البنية**: أعمدة مجمعة في عائلات
+- **حالات الاستخدام**: البيانات الضخمة، والتحليلات، والسلاسل الزمنية
+- **أمثلة**: Cassandra وHBase وScyllaDB
+- **الخصائص**: محسنة للكتابة، وموزعة، وقابلة للتوسع
 
-#### Graph Databases
-- **Structure**: Nodes, edges, properties
-- **حالات الاستخدام**: Social networks, fraud detection, recommendations
-- **أمثلة**: Neo4j, Amazon Neptune, ArangoDB
-- **Query اللغة**: Cypher (Neo4j), Gremlin
+#### قواعد البيانات البيانية
+- **البنية**: عقد، وحواف، وخصائص
+- **حالات الاستخدام**: الشبكات الاجتماعية، واكتشاف الاحتيال، وأنظمة التوصية
+- **أمثلة**: Neo4j وAmazon Neptune وArangoDB
+- **لغة الاستعلام**: Cypher في Neo4j وGremlin
 
-### When to Use NoSQL
-- Flexible/evolving schema
-- Horizontal scaling requirements
-- High write throughput
-- Hierarchical/nested البيانات
-- Distributed الأنظمة
-- Real-time applications
+### متى تستخدم NoSQL؟
+- عند الحاجة إلى مخطط مرن أو متغير
+- عند وجود متطلبات توسع أفقي
+- عند الحاجة إلى إنتاجية كتابة عالية
+- عند تخزين بيانات هرمية أو متداخلة
+- في الأنظمة الموزعة
+- في التطبيقات الآنية
 
-## قاعدة البيانات Design
+## تصميم قواعد البيانات
 
-### Entity-Relationship Modeling
-- **Entities**: Objects/concepts (Customer, Product, Order)
-- **Attributes**: Properties من entities (name, price, date)
-- **Relationships**: Connections between entities (one-to-one, one-to-many, many-to-many)
-- **Cardinality**: Number من instances في relationship
+### نمذجة الكيانات والعلاقات
+- **الكيانات**: كائنات أو مفاهيم مثل العميل والمنتج والطلب
+- **السمات**: خصائص الكيانات مثل الاسم والسعر والتاريخ
+- **العلاقات**: روابط بين الكيانات، مثل واحد إلى واحد، وواحد إلى متعدد، ومتعدد إلى متعدد
+- **الكاردينالية**: عدد المثيلات المشاركة في العلاقة
 
-### Schema Design Patterns
-- **Single Table Inheritance**: All types في one table مع type discriminator
-- **Class Table Inheritance**: Separate tables لأجل base و subclasses
-- **Concrete Table Inheritance**: Separate table لأجل each concrete class
-- **Junction Tables**: Resolve many-to-many relationships
-- **Audit Tables**: Track changes (created_at, updated_at, deleted_at)
+### أنماط تصميم المخطط
+- **وراثة الجدول الواحد**: وضع جميع الأنواع في جدول واحد مع عمود يميز النوع
+- **وراثة جدول الصنف**: جداول منفصلة للصنف الأساسي والأصناف الفرعية
+- **وراثة الجدول الملموس**: جدول منفصل لكل صنف ملموس
+- **جداول الربط**: حل علاقات متعدد إلى متعدد
+- **جداول التدقيق**: تتبع التغييرات مثل created_at وupdated_at وdeleted_at
 
-### Indexing Strategies
-- **B-Tree**: Default, range queries, sorting
-- **Hash**: Exact match lookups
-- **Bitmap**: Low-cardinality columns (gender, status)
-- **Full-Text**: Text search capabilities
-- **Spatial**: Geographic البيانات (GIS)
-- **Composite**: Multiple columns combined
-- **Covering**: Includes all columns needed لأجل query
+### استراتيجيات الفهرسة
+- **B-Tree**: الخيار الافتراضي للاستعلامات النطاقية والفرز
+- **Hash**: للبحث عن تطابق دقيق
+- **Bitmap**: للأعمدة ذات الكاردينالية المنخفضة مثل الجنس والحالة
+- **Full-Text**: لإمكانات البحث النصي
+- **Spatial**: للبيانات الجغرافية ونظم GIS
+- **Composite**: فهرس يجمع عدة أعمدة
+- **Covering**: فهرس يتضمن كل الأعمدة اللازمة للاستعلام
 
-## Query Optimization
+## تحسين الاستعلامات
 
-### Execution Plans
-- Understanding how قاعدة البيانات executes queries
-- Identifying bottlenecks (full table scans, missing indexes)
-- Tools: EXPLAIN, EXPLAIN ANALYZE
+### خطط التنفيذ
+- فهم كيفية تنفيذ قاعدة البيانات للاستعلامات
+- تحديد الاختناقات مثل مسح الجدول كاملاً أو غياب الفهارس
+- الأدوات: EXPLAIN وEXPLAIN ANALYZE
 
-### Optimization Techniques
-- **Index Usage**: Ensure queries use appropriate indexes
-- **Query Rewriting**: Simplify complex queries
-- **Join Optimization**: Choose correct join types و order
-- **Partitioning**: Split large tables (range, hash, list)
-- **Materialized Views**: Pre-computed query results
-- **Query Caching**: Store frequent query results
+### تقنيات التحسين
+- **استخدام الفهارس**: ضمان أن تستخدم الاستعلامات الفهارس المناسبة
+- **إعادة كتابة الاستعلام**: تبسيط الاستعلامات المعقدة
+- **تحسين الربط**: اختيار أنواع الربط وترتيبها بصورة صحيحة
+- **التقسيم**: تقسيم الجداول الكبيرة حسب النطاق أو التجزئة أو القائمة
+- **العروض المادية**: نتائج استعلامات محسوبة مسبقاً
+- **التخزين المؤقت للاستعلامات**: حفظ نتائج الاستعلامات المتكررة
 
-### Common الأداء Issues
-- **N+1 Query Problem**: Fetching related البيانات inefficiently
-- **Missing Indexes**: Full table scans on large tables
-- **Over-indexing**: Slow writes due to too many indexes
-- **Lock Contention**: Transactions waiting لأجل locks
-- **Inefficient Queries**: SELECT *, unnecessary joins
+### مشكلات أداء شائعة
+- **مشكلة استعلامات N+1**: جلب البيانات المرتبطة بطريقة غير فعالة
+- **الفهارس المفقودة**: مسح كامل لجداول كبيرة
+- **الإفراط في الفهرسة**: بطء عمليات الكتابة بسبب كثرة الفهارس
+- **تنازع الأقفال**: انتظار المعاملات للأقفال
+- **استعلامات غير فعالة**: استخدام SELECT * أو عمليات ربط غير ضرورية
 
-## Transactions و Concurrency
+## المعاملات والتزامن
 
-### Transaction Isolation Levels
-- **READ UNCOMMITTED**: Lowest isolation, dirty reads possible
-- **READ COMMITTED**: Only committed البيانات visible (default في most DBs)
-- **REPEATABLE READ**: Same query returns same results within transaction
-- **SERIALIZABLE**: Highest isolation, transactions execute sequentially
+### مستويات عزل المعاملات
+- **READ UNCOMMITTED**: أدنى مستوى عزل، ويمكن فيه حدوث قراءات قذرة
+- **READ COMMITTED**: لا تظهر إلا البيانات المثبتة، وهو الافتراضي في معظم قواعد البيانات
+- **REPEATABLE READ**: يعيد الاستعلام نفسه النتائج نفسها داخل المعاملة
+- **SERIALIZABLE**: أعلى مستوى عزل، وتنفذ فيه المعاملات كما لو كانت متسلسلة
 
-### Concurrency Control
-- **Pessimistic Locking**: Lock resources before access
-- **Optimistic Locking**: Check version before commit
-- **MVCC (Multi-Version Concurrency Control)**: Maintain multiple versions من rows
-- **Row-Level Locking**: Lock specific rows
-- **Table-Level Locking**: Lock entire table
+### التحكم في التزامن
+- **القفل المتشائم**: قفل الموارد قبل الوصول إليها
+- **القفل المتفائل**: التحقق من الإصدار قبل التثبيت
+- **MVCC، التحكم المتعدد الإصدارات في التزامن**: الاحتفاظ بعدة إصدارات من الصفوف
+- **قفل مستوى الصف**: قفل صفوف محددة
+- **قفل مستوى الجدول**: قفل الجدول بالكامل
 
-### Deadlocks
-- Circular dependency where transactions wait لأجل each other
-- Prevention: Consistent lock ordering, timeouts, deadlock detection
-- Resolution: Abort one transaction
+### حالات الجمود
+- اعتماد دائري تنتظر فيه المعاملات بعضها بعضاً
+- الوقاية: ترتيب أقفال ثابت، ومهل زمنية، وكشف الجمود
+- المعالجة: إلغاء إحدى المعاملات
 
-## Replication و Scaling
+## النسخ المتماثل والتوسع
 
-### Replication Types
-- **Master-Slave**: One primary, multiple read replicas
-- **Master-Master**: Multiple primaries, bidirectional replication
-- **Multi-Master**: N primaries, conflict resolution needed
-- **Chain Replication**: Sequential replication through nodes
+### أنواع النسخ المتماثل
+- **رئيسي-تابع**: عقدة أساسية واحدة وعدة نسخ قراءة
+- **رئيسي-رئيسي**: عدة عقد أساسية مع نسخ ثنائي الاتجاه
+- **متعدد الرؤساء**: عدد من العقد الأساسية مع حاجة إلى حل التعارضات
+- **النسخ المتسلسل**: نسخ متتابع عبر العقد
 
-### Scaling Approaches
-- **Vertical Scaling**: Increase server resources (CPU, RAM, storage)
-- **Horizontal Scaling**: Add more servers (sharding, partitioning)
-- **Read Replicas**: Offload read traffic
-- **Sharding**: Split البيانات across servers by key/range/hash
-- **Federation**: Split by function/service
+### أساليب التوسع
+- **التوسع الرأسي**: زيادة موارد الخادم مثل المعالج والذاكرة والتخزين
+- **التوسع الأفقي**: إضافة خوادم أكثر، باستخدام التجزئة أو التقسيم
+- **نسخ القراءة**: تحويل حمل القراءة إلى نسخ متماثلة
+- **التجزئة (Sharding)**: توزيع البيانات عبر الخوادم حسب مفتاح أو نطاق أو تجزئة
+- **الاتحاد (Federation)**: التقسيم حسب الوظيفة أو الخدمة
 
-### Consistency Models
-- **Strong Consistency**: All nodes see same البيانات at same time
-- **Eventual Consistency**: Nodes converge over time
-- **Causal Consistency**: Cause-effect relationships preserved
-- **Read-Your-Writes**: User sees their own updates immediately
+### نماذج الاتساق
+- **الاتساق القوي**: ترى جميع العقد البيانات نفسها في الوقت نفسه
+- **الاتساق النهائي**: تتقارب العقد بمرور الوقت
+- **الاتساق السببي**: الحفاظ على علاقات السبب والنتيجة
+- **قراءة ما كتبته**: يرى المستخدم تحديثاته فوراً
 
-## Backup و Recovery
+## النسخ الاحتياطي والاسترداد
 
-### Backup Strategies
-- **Full Backup**: مكتمل قاعدة البيانات copy
-- **Incremental Backup**: Changes since last backup
-- **Differential Backup**: Changes since last full backup
-- **Point-في-Time Recovery**: Restore to specific moment
-- **Continuous Backup**: Real-time replication to backup
+### استراتيجيات النسخ الاحتياطي
+- **نسخ احتياطي كامل**: نسخة كاملة من قاعدة البيانات
+- **نسخ احتياطي تزايدي**: التغييرات منذ آخر نسخة احتياطية
+- **نسخ احتياطي تفاضلي**: التغييرات منذ آخر نسخة كاملة
+- **استرداد إلى نقطة زمنية**: الاستعادة إلى لحظة محددة
+- **نسخ احتياطي مستمر**: نسخ آني إلى نظام احتياطي
 
-### Recovery Procedures
-- **RTO (Recovery Time Objective)**: Maximum acceptable downtime
-- **RPO (Recovery Point Objective)**: Maximum acceptable البيانات loss
-- **Disaster Recovery Plan**: Documented procedures لأجل failures
-- **الاختبار**: Regular recovery drills
+### إجراءات الاسترداد
+- **RTO، هدف زمن الاسترداد**: أقصى توقف مقبول
+- **RPO، هدف نقطة الاسترداد**: أقصى فقد بيانات مقبول
+- **خطة التعافي من الكوارث**: إجراءات موثقة للتعامل مع الأعطال
+- **الاختبار**: تدريبات استرداد منتظمة
 
 ## الأمان
 
-### Access Control
-- **Authentication**: Verify user identity
-- **Authorization**: Grant permissions (GRANT, REVOKE)
-- **Roles**: Group permissions لأجل easier الإدارة
-- **Principle من Least Privilege**: Minimum necessary access
+### التحكم في الوصول
+- **المصادقة**: التحقق من هوية المستخدم
+- **التفويض**: منح الصلاحيات باستخدام GRANT وREVOKE
+- **الأدوار**: تجميع الصلاحيات لتسهيل الإدارة
+- **مبدأ أقل امتياز**: منح الحد الأدنى الضروري من الوصول
 
-### البيانات Protection
-- **Encryption at Rest**: Encrypt stored البيانات
-- **Encryption في Transit**: TLS/SSL لأجل connections
-- **Masking**: Hide sensitive البيانات في non-production
-- **Tokenization**: Replace sensitive البيانات مع tokens
+### حماية البيانات
+- **التشفير أثناء التخزين**: تشفير البيانات المخزنة
+- **التشفير أثناء النقل**: استخدام TLS/SSL للاتصالات
+- **الإخفاء**: إخفاء البيانات الحساسة في بيئات غير إنتاجية
+- **الترميز الرمزي**: استبدال البيانات الحساسة برموز
 
-### Common Vulnerabilities
-- **SQL Injection**: Malicious SQL في user input
-- **Privilege Escalation**: Gaining unauthorized access
-- **Audit Logging**: Track all قاعدة البيانات activities
-- **Compliance**: GDPR, HIPAA, PCI-DSS requirements
+### ثغرات شائعة
+- **حقن SQL**: إدخال SQL خبيث ضمن مدخلات المستخدم
+- **تصعيد الامتيازات**: الحصول على وصول غير مصرح به
+- **سجلات التدقيق**: تتبع جميع أنشطة قاعدة البيانات
+- **الامتثال**: متطلبات GDPR وHIPAA وPCI-DSS
 
-## Modern قاعدة البيانات Technologies
+## تقنيات قواعد البيانات الحديثة
 
-### Cloud Databases
-- **AWS**: RDS, Aurora, DynamoDB, Redshift
-- **Google Cloud**: Cloud SQL, Spanner, Bigtable, Firestore
-- **Azure**: SQL قاعدة البيانات, Cosmos DB, Synapse
-- **Benefits**: Managed service, auto-scaling, backups included
+### قواعد البيانات السحابية
+- **AWS**: ‏RDS وAurora وDynamoDB وRedshift
+- **Google Cloud**: ‏Cloud SQL وSpanner وBigtable وFirestore
+- **Azure**: ‏SQL Database وCosmos DB وSynapse
+- **الفوائد**: خدمة مُدارة، وتوسع تلقائي، ونسخ احتياطية مضمنة
 
-### NewSQL Databases
-- Combine SQL consistency مع NoSQL scalability
-- **أمثلة**: CockroachDB, TiDB, YugabyteDB, Google Spanner
-- **Features**: Distributed, ACID transactions, horizontal scaling
+### قواعد بيانات NewSQL
+- تجمع اتساق SQL مع قابلية توسع NoSQL
+- **أمثلة**: CockroachDB وTiDB وYugabyteDB وGoogle Spanner
+- **الميزات**: موزعة، وتدعم معاملات ACID، وتوسعاً أفقياً
 
-### Time-Series Databases
-- Optimized لأجل timestamped البيانات
-- **أمثلة**: InfluxDB, TimescaleDB, Prometheus
-- **حالات الاستخدام**: IoT, monitoring, financial البيانات
+### قواعد بيانات السلاسل الزمنية
+- محسنة للبيانات ذات الطوابع الزمنية
+- **أمثلة**: InfluxDB وTimescaleDB وPrometheus
+- **حالات الاستخدام**: إنترنت الأشياء، والمراقبة، والبيانات المالية
 
-### Vector Databases
-- Store و query embedding vectors
-- **أمثلة**: Pinecone, Milvus, Weaviate, Qdrant
-- **حالات الاستخدام**: Semantic search, recommendation الأنظمة, AI applications
-
-### Multi-Model Databases
-- الدعم multiple البيانات models في single system
-- **أمثلة**: ArangoDB, OrientDB, Azure Cosmos DB
-- **Benefit**: Flexibility without multiple databases
-
-## ORMs و البيانات Access
-
-### Object-Relational Mapping
-- **Purpose**: Map قاعدة البيانات tables to programming objects
-- **Popular ORMs**:
-  - Python: SQLAlchemy, Django ORM, Peewee
-  - JavaScript: Sequelize, Prisma, TypeORM
-  - Java: Hibernate, JPA
-  - Ruby: ActiveRecord
-  - .NET: Entity Framework
-
-### Benefits
-- Abstraction from SQL
-- Type safety
-- Migration الإدارة
-- Query building واجهات البرمجة
-
-### Drawbacks
-- الأداء overhead
-- Complex queries harder to write
-- N+1 query problems
-- Learning curve
-
-## قاعدة البيانات Administration
-
-### DBA Responsibilities
-- Installation و configuration
-- الأداء tuning
-- Backup و recovery
-- الأمان الإدارة
-- Capacity planning
-- Monitoring و alerting
-- Patch الإدارة
-
-### Monitoring Metrics
-- Query response time
-- Throughput (transactions per second)
-- Connection count
-- Cache hit ratio
-- Disk I/O
-- Lock wait time
-- Replication lag
-
-### Maintenance Tasks
-- **Vacuum/Analyze**: Update إحصائيات, reclaim space
-- **Index Rebuilding**: Defragment indexes
-- **إحصائيات Updates**: Keep query optimizer informed
-- **Log Rotation**: Manage log file sizes
-- **Capacity Planning**: Predict growth, plan upgrades
+### قواعد البيانات المتجهية
+- تخزن متجهات التضمين وتستعلم عنها
+- **أمثلة**: Pinecone وMilvus وWeaviate وQdrant
+- **حالات الاستخدام**: البحث الدلالي، وأنظمة التوصية، وتطبيقات الذكاء الاصطناعي

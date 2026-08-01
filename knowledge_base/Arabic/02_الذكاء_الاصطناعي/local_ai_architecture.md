@@ -5,198 +5,204 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# Local AI العمارة
+# بنية الذكاء الاصطناعي المحلي
 
-A practical دليل to running large اللغة models entirely on-device — hardware considerations, inference engines, memory optimisation, و system design لأجل edge النشر.
-
----
-
-## Why Run AI Locally?
-
-- **Privacy**: No البيانات leaves ال device.
-- **Cost**: No API fees per token.
-- **Latency**: Predictable, الشبكة-free inference.
-- **Offline availability**: Works without internet.
-- **Control**: Full control over model version, customisation, و fine-tuning.
+دليل عملي لتشغيل نماذج اللغة الكبيرة بالكامل على الجهاز نفسه، مع تناول اعتبارات العتاد، ومحركات الاستدلال، وتحسين الذاكرة، وتصميم الأنظمة للنشر على أجهزة الحافة.
 
 ---
 
-## Hardware Requirements
+## لماذا نشغّل الذكاء الاصطناعي محلياً؟
 
-### GPU Memory (VRAM)
-ال most critical resource. Model size في memory ≈ **parameters × bytes per parameter**.
+- **الخصوصية**: لا تغادر البيانات الجهاز.
+- **التكلفة**: لا توجد رسوم API لكل token.
+- **زمن الاستجابة**: استدلال متوقع وخالٍ من الاعتماد على الشبكة.
+- **الإتاحة دون اتصال**: يعمل بلا إنترنت.
+- **التحكم**: تحكم كامل في إصدار النموذج، والتخصيص، وfine-tuning.
 
-| Precision | Bytes per parameter | 3.8B model | 7B model | 13B model | 70B model |
+---
+
+## متطلبات العتاد
+
+### ذاكرة GPU (VRAM)
+هي المورد الأهم. حجم النموذج في الذاكرة ≈ **عدد المعاملات × عدد البايتات لكل معامل**.
+
+| الدقة | البايتات لكل معامل | نموذج 3.8B | نموذج 7B | نموذج 13B | نموذج 70B |
 |-----------|---------------------|------------|----------|-----------|-----------|
 | FP32      | 4                   | ~15 GB     | ~28 GB   | ~52 GB    | ~280 GB   |
 | FP16      | 2                   | ~7.6 GB    | ~14 GB   | ~26 GB    | ~140 GB   |
 | INT8 (8-bit) | 1              | ~3.8 GB    | ~7 GB    | ~13 GB    | ~70 GB    |
 | INT4 (4-bit) | 0.5            | ~1.9 GB    | ~3.5 GB  | ~6.5 GB   | ~35 GB    |
 
-**Practical guidelines:**
-- 8GB VRAM → up to 7B models at 4-bit.
-- 12GB VRAM → up to 13B models at 4-bit.
-- 24GB VRAM → up to 70B models at 4-bit (or 13B at 8-bit).
-- Apple Silicon (unified memory) can run 70B models on 64GB+ الأنظمة.
+**إرشادات عملية:**
+- 8GB VRAM → حتى نماذج 7B بدقة 4-bit.
+- 12GB VRAM → حتى نماذج 13B بدقة 4-bit.
+- 24GB VRAM → حتى نماذج 70B بدقة 4-bit (أو 13B بدقة 8-bit).
+- يمكن لأجهزة Apple Silicon ذات الذاكرة الموحّدة تشغيل نماذج 70B على أنظمة بذاكرة 64GB أو أكثر.
 
-### RAM (System Memory)
-- لأجل CPU inference, you need enough system RAM to load ال model (similar to VRAM numbers).
-- لأجل GPU inference, system RAM matters لأجل loading ال model into memory before offloading to VRAM.
+### RAM (ذاكرة النظام)
+- للاستدلال على CPU، تحتاج إلى RAM كافية لتحميل النموذج، بأحجام قريبة من أرقام VRAM أعلاه.
+- للاستدلال على GPU، تظل RAM مهمة لتحميل النموذج في الذاكرة قبل نقل طبقاته إلى VRAM.
 
-### Storage
-- Quantised model weights take up a few GB (e.g., 4-bit 7B ≈ 4 GB on disk). Ensure at least 20–50 GB free لأجل multiple models.
+### التخزين
+- تشغل أوزان النماذج المكمّمة بضعة GB (مثلاً: نموذج 7B بدقة 4-bit ≈ 4 GB على القرص). احرص على توفر 20–50 GB على الأقل لعدة نماذج.
 
 ### CPU
-- لأجل prompt processing (prefill) و CPU-offloading, a modern multi-core CPU helps.
-- Apple M-series chips have excellent الأداء لأجل LLMs due to ال unified memory و Neural Engine.
+- تساعد المعالجات الحديثة متعددة الأنوية في معالجة prompt الأولية (prefill) وفي CPU-offloading.
+- تقدم شرائح Apple M-series أداءً ممتازاً مع LLMs بفضل الذاكرة الموحّدة وNeural Engine.
 
 ---
 
-## Quantisation
+## التكميم (Quantisation)
 
-Quantisation reduces ال numerical precision من weights, dramatically cutting memory و increasing speed at a small accuracy cost.
+يقلل التكميم الدقة العددية للأوزان، ما يخفض استهلاك الذاكرة بدرجة كبيرة ويزيد السرعة مقابل انخفاض محدود في الدقة.
 
-### Popular Formats
+### الصيغ الشائعة
 
-| Format | Bits | Description | Typical use |
+| الصيغة | عدد البتات | الوصف | الاستخدام المعتاد |
 |--------|------|-------------|-------------|
-| **GGUF** | 4–8 | llama.cpp format, optimised لأجل CPU/GPU hybrid | Best لأجل local inference |
-| **GPTQ** | 4–8 | GPU-only, efficient on CUDA | Best لأجل NVIDIA GPUs |
-| **AWQ** | 4 | Activation-aware, GPU-only | Good لأجل batch inference on GPUs |
-| **ONNX** | variable | Standardised, cross-platform | Production serving |
+| **GGUF** | 4–8 | صيغة llama.cpp، محسّنة للتشغيل الهجين على CPU/GPU | الأفضل للاستدلال المحلي |
+| **GPTQ** | 4–8 | مخصصة غالباً لـ GPU وفعّالة على CUDA | الأفضل لوحدات NVIDIA GPU |
+| **AWQ** | 4 | تكميم يراعي activations ومخصص غالباً لـ GPU | جيد للاستدلال على دفعات في GPU |
+| **ONNX** | متغير | معيار موحد ومتعدد المنصات | التقديم في الإنتاج |
 
-### Choosing a Quantisation Level
-- **Q8_0** (8-bit): minimal quality loss, largest size.
-- **Q6_K** (6-bit): good quality, decent compression.
-- **Q5_K_M** (5-bit): common sweet spot.
-- **Q4_K_M** (4-bit): smallest, acceptable quality لأجل most tasks.
-- **IQ4_XS** / **IQ3_XS**: Improved quantisation مع better perplexity at 4/3 bits.
+### اختيار مستوى التكميم
+- **Q8_0** (8-bit): أقل فقدان في الجودة وأكبر حجم.
+- **Q6_K** (6-bit): جودة جيدة مع ضغط مناسب.
+- **Q5_K_M** (5-bit): خيار شائع ومتوازن.
+- **Q4_K_M** (4-bit): الأصغر حجماً وجودته مقبولة لمعظم المهام.
+- **IQ4_XS** / **IQ3_XS**: تكميم محسّن يحقق perplexity أفضل عند 4/3 bits.
 
-**Rule من thumb:** Use Q4_K_M لأجل a good balance من quality و size. If you have extra VRAM, use Q5 or Q6.
+**قاعدة عامة:** استخدم Q4_K_M لتحقيق توازن جيد بين الجودة والحجم. إذا كانت لديك VRAM إضافية، فاستخدم Q5 أو Q6.
 
 ---
 
-## Inference Engines (Local)
+## محركات الاستدلال المحلية
 
 ### llama.cpp
-- Written في C++.
-- Supports GGUF format.
-- Optimised لأجل CPU و GPU (via CUDA, Metal, OpenCL).
-- Very fast, especially on CPU.
-- Command-line, server mode, و Python bindings.
+- مكتوب بلغة C++.
+- يدعم صيغة GGUF.
+- محسّن للعمل على CPU وGPU عبر CUDA وMetal وOpenCL.
+- سريع جداً، خصوصاً على CPU.
+- يوفر واجهة سطر أوامر، ووضع خادم، وربطاً مع Python.
 
-**Example command:**
+**أمر مثال:**
 ```bash
 ./llama-cli -m model.Q4_K_M.gguf -p "Tell me a joke" -n 100 -ngl 32
-(-ngl 32 offloads 32 layers to GPU)
+```
 
-Ollama
-Wraps llama.cpp with a simple CLI and REST API.
+يقوم الخيار `-ngl 32` بنقل 32 طبقة إلى GPU.
 
-Auto-downloads models, manages them.
+### Ollama
+- يغلّف llama.cpp بواجهة CLI بسيطة وREST API.
+- ينزّل النماذج تلقائياً ويديرها.
+- ممتاز للنمذجة الأولية وتطبيقات سطح المكتب.
+- يدعم Modelfiles مخصصة من أجل system prompts.
 
-Great for prototyping and desktop apps.
-
-Supports custom Modelfiles for system prompts.
-
-Usage:
-
-bash
+**الاستخدام:**
+```bash
 ollama run phi3:3.8b
 ollama run llama3:8b
-LM Studio
-Graphical desktop app for Windows, macOS, Linux.
+```
 
-One-click download and chat interface.
+### LM Studio
+- تطبيق سطح مكتب رسومي لـ Windows وmacOS وLinux.
+- تنزيل بنقرة واحدة وواجهة محادثة جاهزة.
+- خادم محلي مدمج بواجهة API متوافقة مع OpenAI.
+- مناسب للمستخدمين غير التقنيين وللاختبار السريع.
 
-Built-in local server with OpenAI-compatible API.
+### Hugging Face Transformers + bitsandbytes
+- مكتبة Python القياسية لنماذج Hugging Face.
+- استخدم bitsandbytes للتكميم إلى 4-bit عبر `load_in_4bit=True`.
+- أكثر مرونة لـ fine-tuning، لكنها أبطأ من llama.cpp في الاستدلال.
 
-Good for non-technical users and quick testing.
+### ExLlamaV2
+- استدلال سريع جداً على GPU لصيغتي GPTQ وAWQ.
+- يقدم أفضل أداء على NVIDIA GPUs.
+- يدعم التوليد على دفعات.
 
-Hugging Face Transformers + bitsandbytes
-The standard Python library for HF models.
+### mlx (Apple)
+- إطار عمل من Apple لشرائح M-series.
+- محسّن بدرجة كبيرة لـ Apple Silicon.
+- يوفر Python API.
 
-Use bitsandbytes for 4-bit quantisation (load_in_4bit=True).
+---
 
-More flexible for fine-tuning but slower than llama.cpp for inference.
+## إدارة الذاكرة
 
-ExLlamaV2
-Very fast GPU inference for GPTQ and AWQ.
+### نافذة السياق وKV Cache
+تخزن KV cache أزواج key-value لكل طبقة ولكل token في السياق. وهي تنمو خطياً مع طول السياق.
 
-Best performance on NVIDIA GPUs.
+تكلفة الذاكرة ≈ 2 × عدد الطبقات × (عدد KV heads × بُعد الرأس) × عدد tokens × عدد البايتات لكل قيمة
 
-Supports batched generation.
+في نموذج من 32 طبقة مع 8 KV heads وبُعد رأس 128، يكلف كل token نحو 32 × 8 × 128 × 2 bytes = 65 KB لكل token. وعند 128k tokens، تصبح الذاكرة المطلوبة نحو 8 GB للـ cache وحدها.
 
-mlx (Apple)
-Apple's framework for M-series chips.
+### استراتيجيات النقل (Offloading)
+- **Layer offloading**: وضع بعض الطبقات على GPU وترك أخرى على CPU. أسرع من CPU فقط ويقلل متطلبات VRAM.
+- **Token streaming**: معالجة tokens تدريجياً بدلاً من معالجتها كلها دفعة واحدة.
 
-Highly optimised for Apple Silicon.
+### Prompt Caching
+أعد استخدام KV caches بين prompts المتشابهة لتجنب إعادة حساب مرحلة prefill. تدعم بعض الأطر ذلك، مثل vLLM وllama.cpp عبر `--prompt-cache`.
 
-Python API.
+### الملفات المعينة في الذاكرة
+حمّل أوزان النموذج مباشرة من القرص دون تحميلها بالكامل إلى RAM، وهو مفيد للنماذج الضخمة على الأنظمة محدودة الذاكرة. يستخدم llama.cpp الذاكرة المعينة افتراضياً.
 
-Memory Management
-Context Window and KV Cache
-The KV cache stores key-value pairs for every layer and every token in the context. It grows linearly with context length.
+---
 
-Memory cost ≈ 2 × layers × (KV heads × head dim) × tokens × bytes per value
+## معماريات النشر
 
-For a 32-layer model with 8 KV heads and 128 head dim, each token costs ~32 × 8 × 128 × 2 bytes = 65 KB per token. For 128k tokens, that's ~8 GB just for the cache.
+### وضع الجهاز الواحد
+يعمل نموذج واحد على جهاز واحد، مثل حاسوب محمول أو هاتف ذكي أو جهاز حافة. يستخدم ذلك للمساعدين الشخصيين، وتطبيقات تدوين الملاحظات، وإكمال الكود.
 
-Offloading Strategies
-Layer offloading: Put some layers on GPU, others on CPU. Faster than pure CPU, lower VRAM requirement.
+### الهجين بين الحافة والسحابة
+يتولى النموذج المحلي الاستعلامات الشائعة، مع الرجوع إلى نموذج سحابي للأسئلة المعقدة. يمنح ذلك أفضل ما في العالمين: سرعة وخصوصية في معظم الحالات، وقدرة أعلى للحالات الاستثنائية.
 
-Token streaming: Process tokens incrementally rather than all at once.
+### الاستدلال الموزع (Multi-GPU)
+للنماذج الأكبر، يمكن تقسيم الطبقات عبر عدة GPUs (tensor parallelism) أو تقسيم السياق عبر الأجهزة (pipeline parallelism). استخدم llama.cpp مع `-ngl` أو ExLlamaV2 مع `--num-gpu-layers`.
 
-Prompt Caching
-Reuse KV caches across similar prompts to avoid recomputing the prefill phase. Some frameworks support this (e.g., vLLM, llama.cpp with --prompt-cache).
+### النشر على الأجهزة المحمولة
+- Android: استخدم llama.cpp عبر JNI bindings أو ML Kit.
+- iOS: استخدم llama.cpp عبر Swift bindings أو mlx.
+- Web: استخدم WebLLM، الذي يعمل على WebGPU عبر ONNX runtime، أو transformers.js.
 
-Memory-Mapped Files
-Load model weights directly from disk without loading them entirely into RAM (useful for huge models on memory-limited systems). llama.cpp uses memory-mapping by default.
+---
 
-Deployment Architectures
-Single-Device Mode
-One model runs on one machine (laptop, smartphone, edge device). Used for personal assistants, note-taking apps, code completion.
+## تحسين الأداء
 
-Hybrid Edge-Cloud
-Local model handles common queries; fallback to a cloud model for complex questions. This gives the best of both worlds — speed/private for most, capability for edge cases.
+### Flash Attention
+يسرّع حساب attention ويقلل استخدام الذاكرة. وهو متاح في llama.cpp وExLlamaV2 ومكتبات transformers الحديثة.
 
-Distributed Inference (Multi-GPU)
-For larger models, split layers across multiple GPUs (tensor parallelism) or split context across devices (pipeline parallelism). Use llama.cpp with -ngl or ExLlamaV2 with --num-gpu-layers.
+### الاستدلال على دفعات
+يعالج عدة prompts في تمريرة أمامية واحدة. يزيد throughput بدرجة كبيرة. استخدم llama-batch أو vLLM.
 
-Mobile Deployment
-Android: Use llama.cpp via JNI bindings or ML Kit.
+### الإيقاف المبكر / ميزانية tokens
+حدد حداً أقصى لعدد tokens لمنع التوليد غير المحدود.
 
-iOS: Use llama.cpp via Swift bindings or mlx.
+### Speculative Decoding
+استخدم نموذجاً صغيراً وسريعاً (draft) لتوقع tokens، ثم تحقق منها بالنموذج الكبير بالتوازي. يمكن أن يحقق تسريعاً بمقدار 2–3×.
 
-Web: Use WebLLM (runs on WebGPU via ONNX runtime) or transformers.js.
+---
 
-Performance Optimisation
-Flash Attention
-Speeds up attention computation and reduces memory usage. Available in llama.cpp, ExLlamaV2, and modern transformers libraries.
+## دليل إعداد عملي
 
-Batch Inference
-Process multiple prompts in a single forward pass. Increases throughput dramatically. Use llama-batch or vLLM.
-
-Early Stopping / Token Budgeting
-Set a maximum token budget to prevent unbounded generation.
-
-Speculative Decoding
-Use a small fast model (draft) to predict tokens, then verify with the large model in parallel. Can yield 2–3× speedup.
-
-Practical Setup Guide
-1. Install Ollama
-bash
+### 1. تثبيت Ollama
+```bash
 curl -fsSL https://ollama.com/install.sh | sh
-2. Pull a Model
-bash
-ollama pull phi3:3.8b-q4_K_M
-3. Run with API
-bash
-ollama serve
-Then send requests to http://localhost:11434/api/generate.
+```
 
-4. Python Integration
-python
+### 2. تنزيل نموذج
+```bash
+ollama pull phi3:3.8b-q4_K_M
+```
+
+### 3. التشغيل عبر API
+```bash
+ollama serve
+```
+
+بعد ذلك أرسل الطلبات إلى `http://localhost:11434/api/generate`.
+
+### 4. التكامل مع Python
+```python
 import requests
 
 response = requests.post(
@@ -204,244 +210,246 @@ response = requests.post(
     json={"model": "phi3:3.8b", "prompt": "Hello", "stream": False}
 )
 print(response.json()["response"])
-5. (Alternative) Use llama.cpp directly
-bash
+```
+
+### 5. بديل: استخدام llama.cpp مباشرة
+```bash
 # Download GGUF from Hugging Face
 wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-q4_K_M.gguf
 
 # Run server
 ./llama-server -m Phi-3-mini-4k-instruct-q4_K_M.gguf --host 0.0.0.0 --port 8080
-Monitoring and Observability
-Track GPU utilisation (nvidia-smi on Linux, Activity Monitor on macOS).
+```
 
-Track memory usage (RAM and VRAM).
+---
 
-Track tokens per second (throughput).
+## المراقبة وقابلية الرصد
 
-Track time to first token (latency).
+- راقب استخدام GPU عبر `nvidia-smi` على Linux أو Activity Monitor على macOS.
+- راقب استخدام الذاكرة، بما في ذلك RAM وVRAM.
+- راقب عدد tokens في الثانية (throughput).
+- راقب زمن الوصول إلى أول token (latency).
+- استخدم التسجيل المدمج في llama.cpp أو Ollama.
 
-Use built-in logging from llama.cpp or Ollama.
+---
 
-Limitations and Tradeoffs
-Quality gap: Small local models (3.8B–7B) generally underperform large cloud models (GPT-4, Claude 3.5) on complex reasoning.
+## القيود والمفاضلات
 
-Knowledge cutoff: Model knowledge is frozen at training time; use RAG to inject current information.
+- **فجوة الجودة**: عادة ما تكون النماذج المحلية الصغيرة (3.8B–7B) أضعف من النماذج السحابية الكبيرة مثل GPT-4 وClaude 3.5 في الاستدلال المعقد.
+- **حد المعرفة الزمني**: معرفة النموذج ثابتة عند وقت التدريب؛ استخدم RAG لإدخال المعلومات الحديثة.
+- **تعدد اللغات**: قد تكون قدرة النماذج الصغيرة على اللغات المتعددة أضعف.
+- **استخدام الأدوات**: قد تكون سير العمل الوكيلة (function calling) أقل موثوقية في النماذج الصغيرة.
 
-Multilingual: Smaller models may have less multilingual capability.
-
-Tool use: Agentic workflows (function calling) may be less reliable on small models.
-
-For many everyday tasks (summarisation, Q&A, code completion, classification), local models are already sufficient and improving rapidly.
-
-text
+في كثير من المهام اليومية، مثل التلخيص وQ&A وإكمال الكود والتصنيف، أصبحت النماذج المحلية كافية بالفعل وتتحسن بسرعة.
 
 ---
 
 ## File 4: `security_best_practices.md`
 
 ```markdown
-# الأمان أفضل الممارسات
+# أفضل ممارسات الأمان
 
-A practical دليل to securing applications, infrastructure, و البيانات — from التطوير to production.
+دليل عملي لتأمين التطبيقات والبنية التحتية والبيانات، من مرحلة التطوير إلى الإنتاج.
 
 ---
 
 ## OWASP Top 10 (2021) — نظرة عامة
 
-1. **Broken Access Control**: Users can access resources they shouldn't.
-2. **Cryptographic Failures**: Weak or missing encryption.
-3. **Injection**: SQL, NoSQL, OS command, or LDAP injection.
-4. **Insecure Design**: Architectural flaws.
-5. **الأمان Misconfiguration**: Default passwords, open ports, verbose errors.
-6. **Vulnerable و Outdated Components**: Known CVEs في dependencies.
-7. **Identification و Authentication Failures**: Weak passwords, session mismanagement.
-8. **Software و البيانات Integrity Failures**: Supply chain attacks, unsigned updates.
-9. **الأمان Logging و Monitoring Failures**: No detection من breaches.
-10. **Server-Side Request Forgery (SSRF)**: Abuse من server to make requests to internal الأنظمة.
+1. **Broken Access Control**: يستطيع المستخدمون الوصول إلى موارد لا ينبغي لهم الوصول إليها.
+2. **Cryptographic Failures**: تشفير ضعيف أو مفقود.
+3. **Injection**: حقن SQL أو NoSQL أو أوامر نظام التشغيل أو LDAP.
+4. **Insecure Design**: عيوب معمارية في التصميم.
+5. **Security Misconfiguration**: كلمات مرور افتراضية، أو منافذ مفتوحة، أو رسائل أخطاء تفصيلية.
+6. **Vulnerable and Outdated Components**: ثغرات CVEs معروفة في الاعتماديات.
+7. **Identification and Authentication Failures**: كلمات مرور ضعيفة أو إدارة جلسات سيئة.
+8. **Software and Data Integrity Failures**: هجمات سلسلة التوريد أو تحديثات غير موقعة.
+9. **Security Logging and Monitoring Failures**: غياب القدرة على اكتشاف الاختراقات.
+10. **Server-Side Request Forgery (SSRF)**: استغلال الخادم لإرسال طلبات إلى أنظمة داخلية.
 
 ---
 
-## إدخال Validation و Output Encoding
+## التحقق من الإدخال وترميز الإخراج
 
-### Validation Rules
-- **Whitelist > Blacklist**: Define allowed patterns (e.g., regex لأجل email) rather than blocking known bad patterns.
-- **Length limits**: Enforce maximum lengths to prevent buffer overflows و DoS.
-- **Type checking**: Ensure integers are integers, booleans are booleans.
-- **Use well-tested libraries**: لأجل email, URL, و date validation, use standard libraries (e.g., `email-validator` في Python, `validator.js` في Node).
+### قواعد التحقق
+- **القائمة البيضاء أفضل من السوداء**: عرّف الأنماط المسموحة، مثل regex للبريد الإلكتروني، بدلاً من حظر أنماط سيئة معروفة.
+- **حدود الطول**: افرض أطوالاً قصوى لمنع buffer overflows وDoS.
+- **التحقق من النوع**: تأكد من أن الأعداد الصحيحة أعداد صحيحة، والقيم المنطقية قيم منطقية.
+- **استخدام مكتبات مجرّبة**: للتحقق من البريد الإلكتروني وURL والتاريخ، استخدم مكتبات قياسية مثل `email-validator` في Python و`validator.js` في Node.
 
-### إخراج Encoding
-- **HTML encoding**: Encode `<`, `>`, `&`, `"`, `'` to prevent XSS.
-- **SQL parameterisation**: Never concatenate user input into SQL queries. Use parameterised queries (prepared statements) or an ORM.
-- **Shell escaping**: Avoid building shell الأوامر from user input; if unavoidable, use `shlex.quote()` or similar.
+### ترميز الإخراج
+- **HTML encoding**: رمّز `<` و`>` و`&` و`"` و`'` لمنع XSS.
+- **SQL parameterisation**: لا تدمج إدخال المستخدم مباشرة في استعلامات SQL. استخدم الاستعلامات ذات المعاملات أو ORM.
+- **Shell escaping**: تجنب بناء أوامر shell من إدخال المستخدم؛ وإن كان ذلك ضرورياً فاستخدم `shlex.quote()` أو ما شابهه.
 
 ---
 
-## Authentication و Authorisation
+## Authentication وAuthorisation
 
-### Password الإدارة
-- **Hashing**: Store passwords مع a strong, slow hashing algorithm: **Argon2id** (preferred), **bcrypt**, **scrypt**, or **PBKDF2**.
-- **Salting**: Add a unique per-user salt.
-- **Minimum length**: Enforce at least 12–16 characters.
-- **MFA (Multi-Factor Authentication)**: Require a second factor (TOTP, SMS, hardware key) لأجل sensitive operations.
-- **Rate limiting**: Prevent brute-force attempts on login endpoints (e.g., 5 attempts per 5 minutes per IP/user).
+### إدارة كلمات المرور
+- **Hashing**: خزّن كلمات المرور بخوارزمية قوية وبطيئة مثل **Argon2id** (المفضلة)، أو **bcrypt**، أو **scrypt**، أو **PBKDF2**.
+- **Salting**: أضف salt فريداً لكل مستخدم.
+- **الحد الأدنى للطول**: افرض 12–16 حرفاً على الأقل.
+- **MFA (Multi-Factor Authentication)**: اطلب عاملاً ثانياً للعمليات الحساسة.
+- **Rate limiting**: امنع محاولات التخمين على نقاط تسجيل الدخول.
 
-### Session الإدارة
-- Use secure, HTTP-only, SameSite cookies لأجل session tokens.
-- Set appropriate expiration times.
-- Invalidate sessions on logout و on password change.
-- Avoid exposing session IDs في URLs.
+### إدارة الجلسات
+- استخدم cookies آمنة، وHTTP-only، وSameSite من أجل session tokens.
+- اضبط أوقات انتهاء مناسبة.
+- أبطل الجلسات عند تسجيل الخروج أو تغيير كلمة المرور.
+- تجنب كشف session IDs في URLs.
 
 ### OAuth2 / OIDC
-- Use well-established libraries (e.g., Authlib, PyJWT, Passport.js, Spring الأمان).
-- Validate ID tokens thoroughly (signature, issuer, audience, expiration).
-- Use state parameters to prevent CSRF.
-- Keep client secrets confidential.
+- استخدم مكتبات راسخة مثل Authlib وPyJWT وPassport.js وSpring Security.
+- تحقق من ID tokens بدقة: التوقيع، والمُصدر، والجمهور، ووقت الانتهاء.
+- استخدم state parameters لمنع CSRF.
+- حافظ على سرية client secrets.
 
-### JWT (JSON الويب Tokens)
-- **Sign**: Use RS256 or ES256 (asymmetric) لأجل better الأمان; HS256 (symmetric) is acceptable if shared secrets are managed well.
-- **Validate**: Always verify signature, issuer (`iss`), audience (`aud`), و expiration (`exp`).
-- **Keep short expiration**: 15–60 minutes لأجل access tokens; use refresh tokens لأجل longer sessions.
-- **Store securely**: Never store JWTs في localStorage (vulnerable to XSS); use HTTP-only cookies instead.
+### JWT (JSON Web Tokens)
+- **التوقيع**: استخدم RS256 أو ES256 لأمان أفضل؛ ويمكن قبول HS256 إذا أُديرت الأسرار المشتركة جيداً.
+- **التحقق**: تحقق دائماً من التوقيع، و`iss`، و`aud`، و`exp`.
+- **انتهاء قصير**: 15–60 دقيقة لـ access tokens، واستخدم refresh tokens للجلسات الأطول.
+- **التخزين الآمن**: لا تخزن JWTs في localStorage؛ استخدم HTTP-only cookies بدلاً من ذلك.
 
 ---
 
-## API الأمان
+## أمان API
 
 ### Authentication
-- Always authenticate API calls (except public endpoints).
-- Prefer API keys or OAuth2 tokens over basic auth (which sends credentials on every request).
+- صادق دائماً على استدعاءات API باستثناء النقاط العامة.
+- فضّل API keys أو OAuth2 tokens على basic auth.
 
-### Rate Limiting و Throttling
-- Apply per-user و per-IP rate limits to prevent abuse و DoS.
-- Return `429 Too Many Requests` مع a `Retry-After` header.
+### Rate Limiting وThrottling
+- طبّق حدوداً لكل مستخدم ولكل IP لمنع إساءة الاستخدام وDoS.
+- أرجع `429 Too Many Requests` مع ترويسة `Retry-After`.
 
 ### CORS (Cross-Origin Resource Sharing)
-- Allow only specific origins (never `*` في production).
-- Validate `Origin` header on ال server side.
+- اسمح لمصادر محددة فقط، ولا تستخدم `*` في الإنتاج.
+- تحقق من ترويسة `Origin` على الخادم.
 
-### إدخال Validation
-- Validate all request parameters, including headers و body.
-- Reject unexpected fields (`"strict": true` or `additionalProperties: false` في JSON Schema).
+### التحقق من الإدخال
+- تحقق من كل معاملات الطلب، بما في ذلك الترويسات والجسم.
+- ارفض الحقول غير المتوقعة عبر `"strict": true` أو `additionalProperties: false` في JSON Schema.
 
 ### HTTPS / TLS
-- Enforce HTTPS في production.
-- Use HSTS (HTTP Strict Transport الأمان) to force browsers to use HTTPS.
-- Use TLS 1.2 or 1.3 (disable TLS 1.0/1.1).
+- افرض HTTPS في الإنتاج.
+- استخدم HSTS لإجبار المتصفحات على HTTPS.
+- استخدم TLS 1.2 أو 1.3 وعطّل TLS 1.0/1.1.
 
 ---
 
-## Secrets الإدارة
+## إدارة الأسرار
 
-### Never Hardcode Secrets
-- Do not commit secrets (API keys, passwords, قاعدة البيانات URLs) to source control.
-- Use environment variables or secret الإدارة tools.
+### لا تضع الأسرار داخل الكود
+- لا تودع الأسرار مثل API keys وكلمات المرور وروابط قواعد البيانات في نظام التحكم بالمصدر.
+- استخدم متغيرات البيئة أو أدوات إدارة الأسرار.
 
-### Tools
-- **HashiCorp Vault**: Enterprise-grade, dynamic secrets.
-- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: Cloud-native.
-- **SOPS**: Encrypt secrets في files و commit them (مع KMS or GPG).
-- **Docker secrets**: لأجل Swarm mode; Kubernetes secrets (base64-encoded, but use مع care; consider external Secrets Store CSI driver).
+### الأدوات
+- **HashiCorp Vault**: أسرار ديناميكية بمستوى مؤسسي.
+- **AWS Secrets Manager / Azure Key Vault / GCP Secret Manager**: أدوات سحابية أصلية.
+- **SOPS**: تشفير الأسرار في الملفات وإيداعها باستخدام KMS أو GPG.
+- **Docker secrets**: لوضع Swarm؛ أما Kubernetes secrets فهي مرمزة بـ base64 وينبغي استخدامها بحذر.
 
-### Rotation
-- Regularly rotate secrets و service accounts.
-- Automate rotation where possible.
+### التدوير
+- دوّر الأسرار وحسابات الخدمة بانتظام.
+- أتمت التدوير حيثما أمكن.
 
 ---
 
-## Dependency الإدارة
+## إدارة الاعتماديات
 
-### Vulnerability Scanning
+### فحص الثغرات
 - **Python**: `safety`, `pip-audit`, `bandit`.
 - **Node**: `npm audit`, `yarn audit`, `snyk`.
 - **Rust**: `cargo audit`.
 - **Go**: `govulncheck`.
-- **General**: `Dependabot` (GitHub), `Renovate`, `Trivy`.
+- **عام**: `Dependabot`, `Renovate`, `Trivy`.
 
-### Patching
-- Keep dependencies updated to patched versions.
-- Set up automated pull requests لأجل minor/patch updates.
-- Review changelogs لأجل breaking changes.
+### الترقيع
+- أبق الاعتماديات محدثة إلى الإصدارات التي تحتوي على التصحيحات.
+- أنشئ pull requests آلية لتحديثات minor/patch.
+- راجع changelogs للتغييرات الكاسرة.
 
-### Supply Chain Integrity
-- Use package lockfiles (`package-lock.json`, `Cargo.lock`, `go.sum`) to ensure reproducible builds.
-- Verify checksums من downloaded dependencies.
-- Prefer official registries و trust only verified publishers.
-
----
-
-## Infrastructure الأمان
-
-### Firewalls
-- Block all inbound ports except those explicitly needed (e.g., 80, 443).
-- Limit SSH access to specific IP ranges (or use a VPN/bastion host).
-- Use الأمان groups (AWS) or NSGs (Azure) لأجل fine-grained control.
-
-### OS Hardening
-- Apply الأمان updates regularly (`sudo apt upgrade`, `yum update`).
-- Disable unnecessary services و default accounts.
-- Use fail2ban to block brute-force attempts on SSH.
-- Harden SSH: disable root login, use key-based auth, change default port (optional).
-
-### الشبكة Segmentation
-- Place databases و caches في private subnets مع no internet access.
-- Use a DMZ لأجل public-facing services.
-- Apply ال principle من least privilege to الشبكة access.
-
-### Secrets في Infrastructure
-- Never store secrets في CI/CD environment variables unless encrypted.
-- Use ال cloud provider's IAM roles لأجل EC2/VM instances instead من long-lived keys.
+### سلامة سلسلة التوريد
+- استخدم lockfiles مثل `package-lock.json` و`Cargo.lock` و`go.sum` لضمان بناء قابل للتكرار.
+- تحقق من checksums للاعتماديات المنزّلة.
+- فضّل السجلات الرسمية ولا تثق إلا بالناشرين الموثقين.
 
 ---
 
-## Logging و Monitoring
+## أمان البنية التحتية
 
-### What to Log
-- Authentication الأحداث (success/failure).
-- Access control decisions (authorisation failures).
-- Admin actions (user creation, deletion, permission changes).
-- قاعدة البيانات schema changes.
-- System errors و exceptions.
-- API requests و responses (redact sensitive البيانات).
+### الجدران النارية
+- احظر كل المنافذ الواردة باستثناء المطلوبة صراحة، مثل 80 و443.
+- احصر SSH في نطاقات IP محددة أو استخدم VPN/bastion host.
+- استخدم security groups في AWS أو NSGs في Azure للتحكم الدقيق.
 
-### What Not to Log
-- Passwords, secrets, tokens, PII (Personal Identifiable Information) unless hashed/redacted.
-- Full credit card numbers.
+### تقوية نظام التشغيل
+- طبّق تحديثات الأمان بانتظام عبر `sudo apt upgrade` أو `yum update`.
+- عطّل الخدمات والحسابات الافتراضية غير الضرورية.
+- استخدم fail2ban لحظر محاولات brute-force على SSH.
+- قوِّ SSH بتعطيل root login، واستخدام key-based auth، وتغيير المنفذ الافتراضي اختيارياً.
 
-### Alerting
-- Set up alerts لأجل:
-  - Multiple failed logins (potential brute force).
-  - Unusual access patterns (e.g., from new locations, at odd hours).
-  - New admin accounts created.
-  - High error rates or latency spikes.
-- Use a SIEM (الأمان Information و Event الإدارة) لأجل متقدم correlation.
+### تقسيم الشبكة
+- ضع قواعد البيانات وcaches في private subnets بلا وصول مباشر إلى الإنترنت.
+- استخدم DMZ للخدمات المواجهة للعامة.
+- طبّق مبدأ least privilege على الوصول الشبكي.
 
-### Log Retention
-- Retain logs لأجل at least 30–90 days depending on regulatory requirements.
-- Store logs في a centralised, tamper-evident system (e.g., ELK Stack, Splunk, Datadog).
+### الأسرار في البنية التحتية
+- لا تخزن الأسرار في متغيرات بيئة CI/CD إلا إذا كانت مشفرة.
+- استخدم IAM roles الخاصة بمزود السحابة لمثيلات EC2/VM بدلاً من مفاتيح طويلة العمر.
 
 ---
 
-## Secure التطوير Lifecycle (SDL)
+## التسجيل والمراقبة
 
-1. **Training**: Ensure developers understand common vulnerabilities.
-2. **Threat modelling**: Identify potential threats early في design.
-3. **Secure coding standards**: Enforce via linters و code review checklists.
-4. **SAST** (Static Application الأمان الاختبار): Scan source code لأجل vulnerabilities (SonarQube, CodeQL).
-5. **DAST** (Dynamic Application الأمان الاختبار): Scan running applications (OWASP ZAP, Burp Suite).
-6. **SCA** (Software Composition Analysis): Scan dependencies.
-7. **Penetration الاختبار**: Regular ethical hacking exercises.
-8. **Bug bounty**: Encourage external researchers to find vulnerabilities responsibly.
-9. **Incident response plan**: Have a clear plan لأجل when a breach is detected.
+### ما ينبغي تسجيله
+- أحداث Authentication، نجاحاً وفشلاً.
+- قرارات التحكم في الوصول، خصوصاً إخفاقات authorisation.
+- إجراءات المسؤولين مثل إنشاء المستخدمين أو حذفهم أو تغيير الأذونات.
+- تغييرات مخطط قاعدة البيانات.
+- أخطاء النظام والاستثناءات.
+- طلبات API وردودها مع حجب البيانات الحساسة.
+
+### ما لا ينبغي تسجيله
+- كلمات المرور، والأسرار، وtokens، وPII إلا بعد hashing أو redaction.
+- أرقام بطاقات الائتمان الكاملة.
+
+### التنبيهات
+- أنشئ تنبيهات لـ:
+  - محاولات تسجيل دخول فاشلة متعددة.
+  - أنماط وصول غير معتادة.
+  - إنشاء حسابات مسؤول جديدة.
+  - ارتفاع معدلات الأخطاء أو قفزات زمن الاستجابة.
+- استخدم SIEM لربط الأحداث المتقدمة.
+
+### الاحتفاظ بالسجلات
+- احتفظ بالسجلات 30–90 يوماً على الأقل حسب المتطلبات التنظيمية.
+- خزّن السجلات في نظام مركزي مقاوم للعبث مثل ELK Stack أو Splunk أو Datadog.
 
 ---
 
-## Emergency Checklist (When a Breach is Suspected)
+## دورة حياة التطوير الآمن (SDL)
 
-1. **Do not panic** — but act quickly.
-2. **Isolate** ال affected الأنظمة (disconnect from الشبكة if needed).
-3. **Preserve evidence**: Capture logs, memory dumps, و disk images.
-4. **Identify** ال scope: which الأنظمة, which البيانات.
-5. **Rotate** all compromised credentials و secrets.
-6. **Patch** ال vulnerability.
-7. **Notify** affected users و regulatory bodies if required (within قانوني timeframes).
-8. **Conduct a post-mortem** to understand root cause و improve processes.
+1. **التدريب**: تأكد من فهم المطورين للثغرات الشائعة.
+2. **نمذجة التهديدات**: حدد التهديدات المحتملة مبكراً في التصميم.
+3. **معايير البرمجة الآمنة**: افرضها عبر linters ومراجعات الكود.
+4. **SAST**: افحص كود المصدر بحثاً عن الثغرات.
+5. **DAST**: افحص التطبيقات أثناء التشغيل.
+6. **SCA**: افحص الاعتماديات.
+7. **Penetration testing**: نفّذ اختبارات اختراق أخلاقية منتظمة.
+8. **Bug bounty**: شجع الباحثين الخارجيين على الإبلاغ المسؤول.
+9. **Incident response plan**: ضع خطة واضحة عند اكتشاف اختراق.
+
+---
+
+## قائمة طوارئ عند الاشتباه في اختراق
+
+1. **لا تفزع** — لكن تصرف بسرعة.
+2. **اعزل** الأنظمة المتأثرة، وافصلها عن الشبكة عند الحاجة.
+3. **احفظ الأدلة**: اجمع السجلات، وmemory dumps، وصور الأقراص.
+4. **حدد** النطاق: أي أنظمة وأي بيانات.
+5. **دوّر** كل الاعتمادات والأسرار المخترقة.
+6. **رقّع** الثغرة.
+7. **أبلغ** المستخدمين المتأثرين والجهات التنظيمية إذا كان ذلك مطلوباً.
+8. **نفّذ post-mortem** لفهم السبب الجذري وتحسين العمليات.
+```

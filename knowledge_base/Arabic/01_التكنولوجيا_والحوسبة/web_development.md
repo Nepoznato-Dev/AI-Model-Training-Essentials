@@ -5,43 +5,43 @@ Note: Technical terms, code examples, and proper nouns may remain in English.
 For accuracy improvements, please contribute edits via pull requests.
 -->
 
-# الويب التطوير
+# تطوير الويب
 
-## Frontend التطوير
+## تطوير الواجهة الأمامية
 
-### Core Technologies
+### التقنيات الأساسية
 
-#### HTML (HyperText Markup اللغة)
-- **Semantic HTML**: Using meaningful tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
-- **Forms**: Input types, validation, accessibility labels
-- **Media**: Images, video, audio embedding
-- **Meta Tags**: SEO, viewport, character encoding
-- **HTML5 Features**: Canvas, SVG, local storage, geolocation, الويب sockets
+#### HTML (HyperText Markup Language)
+- **Semantic HTML**: استخدام وسوم ذات معنى مثل (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`)
+- **Forms**: أنواع الإدخال، التحقق، وتسميات إتاحة الوصول
+- **Media**: تضمين الصور والفيديو والصوت
+- **Meta Tags**: تحسين SEO، إطار العرض، وترميز المحارف
+- **HTML5 Features**: Canvas وSVG والتخزين المحلي وتحديد الموقع الجغرافي وWebSockets
 
 #### CSS (Cascading Style Sheets)
 - **Box Model**: Content, padding, border, margin
-- **Layout الأنظمة**:
+- **أنظمة التخطيط**:
   - **Flexbox**: One-dimensional layouts, justify-content, align-items
   - **Grid**: Two-dimensional layouts, grid-template, grid-area
   - **Positioning**: Static, relative, absolute, fixed, sticky
 - **Responsive Design**: Media queries, mobile-first approach
-- **CSS Variables**: Custom properties لأجل theming
+- **CSS Variables**: خصائص مخصصة للسمات
 - **Animations**: Transitions, keyframes, transforms
 - **Preprocessors**: Sass, Less (variables, mixins, nesting)
 
 #### JavaScript
-- **DOM Manipulation**: Selecting, creating, modifying elements
+- **DOM Manipulation**: تحديد العناصر وإنشاؤها وتعديلها
 - **الأحداث**: Click, submit, keyboard, custom الأحداث, event delegation
 - **ES6+ Features**: Arrow functions, destructuring, spread/rest, modules, async/await
 - **واجهات البرمجة**: Fetch, XMLHttpRequest, localStorage, sessionStorage
 - **TypeScript**: Static typing, interfaces, generics, decorators
 
-### Modern Frontend Frameworks
+### أطر الواجهة الأمامية الحديثة
 
 #### React
 - **Components**: Functional components, class components
 - **Hooks**: useState, useEffect, useContext, useReducer, custom hooks
-- **State الإدارة**: Context API, Redux, Zustand, Recoil
+- **إدارة الحالة**: Context API وRedux وZustand وRecoil
 - **Routing**: React Router (BrowserRouter, Routes, Route, Link)
 - **Ecosystem**: Next.js (SSR, SSG), Remix, Gatsby
 - **Virtual DOM**: Efficient rendering through diffing algorithm
@@ -62,31 +62,31 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Forms**: Template-driven, reactive forms
 - **NgRx**: Redux-style state الإدارة
 
-### Build Tools و Bundlers
+### أدوات البناء والحزم
 - **Webpack**: Module bundling, code splitting, loaders, plugins
 - **Vite**: Fast build tool using native ES modules
 - **Parcel**: Zero-configuration bundler
-- **Rollup**: Optimized لأجل libraries
+- **Rollup**: Optimized لـlibraries
 - **esbuild**: Extremely fast JavaScript bundler
-- **Babel**: JavaScript transpiler لأجل backward compatibility
+- **Babel**: JavaScript transpiler لـbackward compatibility
 - **PostCSS**: CSS processing مع plugins
 
-### CSS Frameworks و Libraries
+### أطر ومكتبات CSS
 - **Bootstrap**: Component library, grid system, utilities
 - **Tailwind CSS**: Utility-first CSS framework
 - **Material UI**: Google's Material Design implementation
 - **Chakra UI**: Accessible component library
 - **Ant Design**: Enterprise-level UI components
-- **Styled Components**: CSS-في-JS library
-- **Emotion**: CSS-في-JS مع source maps
+- **Styled Components**: مكتبة CSS-in-JS
+- **Emotion**: CSS-in-JS مع خرائط المصدر
 
-## Backend التطوير
+## تطوير الواجهة الخلفية
 
-### Server-Side Languages
+### لغات جانب الخادم
 
 #### Node.js
-- **Runtime**: JavaScript on ال server (V8 engine)
-- **Express.js**: Minimal الويب framework, برمجيات وسيطة العمارة
+- **Runtime**: تشغيل JavaScript على الخادم (محرك V8)
+- **Express.js**: إطار ويب خفيف وبنية للبرمجيات الوسيطة
 - **NestJS**: Angular-inspired العمارة, TypeScript
 - **Fastify**: High-الأداء framework
 - **Koa**: Modern Express by same creators
@@ -98,7 +98,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **FastAPI**: Modern, async, automatic API documentation
 - **Pyramid**: Flexible, scalable framework
 
-#### Other Backend Languages
+#### لغات خلفية أخرى
 - **Ruby on Rails**: Convention over configuration, ActiveRecord ORM
 - **Java Spring**: Enterprise framework, dependency injection
 - **PHP Laravel**: Elegant بناء الجملة, Eloquent ORM, Blade templating
@@ -106,23 +106,23 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Rust Actix**: Memory safety, الأداء
 - **C# ASP.NET Core**: Cross-platform, enterprise features
 
-### قاعدة البيانات Integration
+### تكامل قواعد البيانات
 
 #### ORMs (Object-Relational Mapping)
-- **Sequelize**: Node.js ORM لأجل SQL databases
+- **Sequelize**: Node.js ORM لـSQL databases
 - **Prisma**: Type-آمن قاعدة البيانات access, auto-generated client
-- **SQLAlchemy**: Python SQL toolkit و ORM
+- **SQLAlchemy**: Python SQL toolkit وORM
 - **ActiveRecord**: Ruby on Rails ORM
 - **Hibernate**: Java ORM
 - **Entity Framework**: .NET ORM
 
-#### قاعدة البيانات Drivers
-- **pg**: PostgreSQL client لأجل Node.js
+#### مشغلات قواعد البيانات
+- **pg**: PostgreSQL client لـNode.js
 - **mysql2**: MySQL client مع promises
-- **pymongo**: MongoDB driver لأجل Python
-- **redis**: Redis client لأجل multiple languages
+- **pymongo**: MongoDB driver لـPython
+- **redis**: Redis client لـmultiple languages
 
-### API التطوير
+### تطوير API
 
 #### REST واجهات البرمجة
 - **HTTP Methods**: GET, POST, PUT, PATCH, DELETE
@@ -144,7 +144,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **HTTP/2**: Bidirectional streaming
 - **حالات الاستخدام**: Microservices التواصل, real-time applications
 
-### Authentication و Authorization
+### المصادقة والتفويض
 - **Session-based**: Cookies, server-side sessions
 - **Token-based**: JWT (JSON الويب Tokens), stateless
 - **OAuth 2.0**: Authorization framework, third-party login
@@ -153,13 +153,13 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Password Hashing**: bcrypt, argon2, scrypt
 - **Multi-Factor Authentication**: TOTP, SMS, email codes
 
-## DevOps و النشر
+## DevOps والنشر
 
-### Version Control
+### إدارة الإصدارات
 - **Git**: Distributed version control
 - **GitHub/GitLab/Bitbucket**: Repository hosting
 - **Branching Strategies**: Git Flow, GitHub Flow, trunk-based التطوير
-- **CI/CD**: Automated الاختبار و النشر pipelines
+- **CI/CD**: Automated الاختبار والنشر pipelines
 
 ### Containerization
 - **Docker**: Container runtime, Dockerfile, images
@@ -170,7 +170,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Orchestration
 - **Kubernetes**: Container orchestration, pods, services, deployments
 - **Helm**: Kubernetes package manager
-- **Service Mesh**: Istio, Linkerd لأجل الخدمات المصغرة networking
+- **Service Mesh**: Istio, Linkerd لـالخدمات المصغرة networking
 
 ### Cloud Platforms
 - **AWS**: EC2, S3, Lambda, RDS, CloudFront, ECS/EKS
@@ -183,32 +183,32 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### CI/CD Pipelines
 - **GitHub Actions**: Workflow automation
-- **GitLab CI**: Built-في continuous integration
+- **GitLab CI**: مدمج continuous integration
 - **Jenkins**: Extensible automation server
 - **CircleCI**: Cloud-based CI/CD
 - **Travis CI**: Continuous integration service
-- **ArgoCD**: GitOps continuous delivery لأجل Kubernetes
+- **ArgoCD**: GitOps continuous delivery لـKubernetes
 
-### Monitoring و Logging
+### المراقبة وتسجيل السجلات
 - **Application الأداء**: New Relic, Datadog, AppDynamics
 - **Error Tracking**: Sentry, Rollbar, Bugsnag
 - **Logging**: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
 - **Uptime Monitoring**: Pingdom, UptimeRobot
 - **Analytics**: Google Analytics, Mixpanel, Amplitude
 
-## الويب الأداء
+## أداء الويب
 
-### Optimization Techniques
+### تقنيات التحسين
 - **Code Splitting**: Lazy loading, dynamic imports
 - **Tree Shaking**: Removing unused code
 - **Minification**: Reducing file sizes
 - **Compression**: Gzip, Brotli
 - **Caching**: Browser cache, CDN, service workers
 - **Image Optimization**: WebP, AVIF, lazy loading, responsive images
-- **Critical CSS**: Inlining above-ال-fold styles
+- **Critical CSS**: Inlining الجزء المرئي الأول styles
 - **قاعدة البيانات Optimization**: Indexing, query optimization, connection pooling
 
-### Core الويب Vitals
+### مؤشرات Core Web Vitals
 - **LCP (Largest Contentful Paint)**: Loading الأداء (<2.5s)
 - **FID (First Input Delay)**: Interactivity (<100ms)
 - **CLS (Cumulative Layout Shift)**: Visual stability (<0.1)
@@ -221,9 +221,9 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Fastly**: Edge cloud platform
 - **StackPath**: Edge services
 
-## الويب الأمان
+## أمان الويب
 
-### Common Vulnerabilities (OWASP Top 10)
+### الثغرات الشائعة (OWASP Top 10)
 - **Injection**: SQL injection, command injection
 - **Broken Authentication**: Session hijacking, credential stuffing
 - **Sensitive البيانات Exposure**: Unencrypted البيانات, weak cryptography
@@ -235,7 +235,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Using Components مع Known Vulnerabilities**: Outdated dependencies
 - **Insufficient Logging & Monitoring**: Undetected breaches
 
-### الأمان أفضل الممارسات
+### أفضل ممارسات الأمان
 - **HTTPS**: TLS/SSL encryption, HSTS
 - **Content الأمان Policy (CSP)**: Prevent XSS attacks
 - **Input Validation**: Sanitize user input
@@ -247,7 +247,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ## الاختبار
 
-### الاختبار Types
+### أنواع الاختبار
 - **Unit الاختبار**: Individual components/functions
 - **Integration الاختبار**: Component interactions
 - **End-to-End (E2E)**: Full user workflows
@@ -255,7 +255,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **الأداء الاختبار**: Load, stress, spike الاختبار
 - **Accessibility الاختبار**: WCAG compliance
 
-### الاختبار Frameworks
+### أطر الاختبار
 - **Jest**: JavaScript الاختبار framework
 - **Mocha**: Flexible test runner
 - **pytest**: Python الاختبار framework
@@ -268,7 +268,7 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Playwright**: Cross-browser automation
 - **Puppeteer**: Headless Chrome control
 
-## Accessibility (a11y)
+## إتاحة الوصول (a11y)
 
 ### WCAG Guidelines
 - **Perceivable**: Text alternatives, captions, adaptable content
@@ -280,11 +280,11 @@ For accuracy improvements, please contribute edits via pull requests.
 - **Semantic HTML**: Proper heading hierarchy, landmarks
 - **ARIA Attributes**: Roles, states, properties
 - **Focus الإدارة**: Visible focus indicators, logical tab order
-- **Color Contrast**: Minimum 4.5:1 ratio لأجل text
+- **Color Contrast**: Minimum 4.5:1 ratio لـtext
 - **Screen Reader الاختبار**: NVDA, JAWS, VoiceOver
 - **Keyboard Navigation**: All interactive elements accessible
 
-## Progressive الويب Apps (PWAs)
+## تطبيقات الويب التقدمية (PWAs)
 
 ### PWA Features
 - **Service Workers**: Offline functionality, background sync
@@ -297,28 +297,28 @@ For accuracy improvements, please contribute edits via pull requests.
 ### Tools
 - **Workbox**: Service worker libraries
 - **Lighthouse**: PWA auditing
-- **PWA Builder**: Generate manifests و icons
+- **PWA Builder**: Generate manifests وicons
 
-## Emerging Technologies
+## التقنيات الناشئة
 
 ### WebAssembly (Wasm)
 - **Purpose**: Run compiled code في browser at near-native speed
 - **Languages**: C++, Rust, Go compilation targets
 - **حالات الاستخدام**: Games, video editing, cryptography, ML inference
 
-### بدون خادم العمارة
+### البنية عديمة الخوادم
 - **Functions as a Service**: AWS Lambda, Azure Functions, Google Cloud Functions
 - **Benefits**: No server الإدارة, auto-scaling, pay-per-use
-- **Considerations**: Cold starts, vendor lock-in, debugging complexity
+- **الاعتبارات**: البدء البارد، الارتباط بالمورّد، وتعقيد تصحيح الأخطاء
 
-### Jamstack العمارة
+### بنية Jamstack
 - **JavaScript**: Client-side interactivity
 - **واجهات البرمجة**: بدون خادم functions, third-party services
 - **Markup**: Pre-built static files
 - **Tools**: Next.js, Gatsby, Hugo, Eleventy
 - **Benefits**: الأداء, الأمان, scalability, developer experience
 
-### Real-Time التواصل
+### التواصل في الوقت الحقيقي
 - **WebSockets**: Bidirectional التواصل
 - **Server-Sent الأحداث**: Server-to-client streaming
 - **WebRTC**: Peer-to-peer video, audio, البيانات
