@@ -278,7 +278,7 @@ class Transformer(nn.Module):
         
         return x
     
-    def decode(self, x, tgt, src_mask, tgt_mask):
+    def decode(self, encoder_output, tgt, src_mask, tgt_mask):
         x = self.dropout(self.pos_encoding(self.tgt_embedding(tgt) * math.sqrt(self.d_model)))
         
         for layer in self.decoder_layers:
