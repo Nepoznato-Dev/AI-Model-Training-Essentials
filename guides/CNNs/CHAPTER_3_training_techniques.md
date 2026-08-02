@@ -492,7 +492,7 @@ class StochasticDepth(nn.Module):
         
         # Sample survival
         keep_prob = 1 - drop_prob
-        mask = torch.bernoulli(torch.full_like(x[:, 0, 0, 0], fill_value=keep_prob))
+        mask = torch.bernoulli(torch.tensor(keep_prob, device=x.device))
         
         if mask.item() == 0:
             # Skip this layer (identity)
