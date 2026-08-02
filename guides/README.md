@@ -61,14 +61,14 @@ Any Architecture Guide → Infrastructure Layers → Orchestration Patterns
 | Guide | What You'll Build | Beginner-Friendly | Status | Chapters |
 |-------|------------------|-------------------|--------|----------|
 | **[RAG](./RAG/)** | AI that answers questions using your documents | ⭐⭐⭐⭐⭐ Yes! Start here | ✅ Complete | 4/4 |
-| **[Transformers](./Transformers/)** | Language models like ChatGPT | ⭐⭐⭐⭐ Very accessible | 📝 Chapter 1 done | 1/4 |
+| **[Transformers](./Transformers/)** | Language models like ChatGPT | ⭐⭐⭐⭐ Very accessible | ✅ Complete | 4/4 |
 | **[CNNs](./CNNs/)** | Image classifiers (cat vs dog) | ⭐⭐⭐⭐ Very accessible | ✅ Complete | 4/4 |
 | **[GANs](./GANs/)** | AI that generates fake images | ⭐⭐⭐ Some math needed | ✅ Complete | 3/3 |
 | **[MoE](./MoE/)** | Sparse mixture of experts for efficient scaling | ⭐⭐⭐ Need basics first | ✅ Complete | 3/3 |
-| **[GNNs](./GNNs/)** | AI for social networks, molecules | ⭐⭐ Graph theory helpful | 📋 Outline ready | 0/4 |
-| **[Agentic Systems](./Agentic_Systems/)** | Autonomous AI assistants | ⭐⭐⭐ Need basics first | 📋 Outline ready | 0/4 |
-| **[Orchestration Patterns](./Orchestration_Patterns/)** | Multi-AI workflows | ⭐⭐ Need deployment knowledge | 📋 Outline ready | 0/4 |
-| **[Infrastructure Layers](./Infrastructure_Layers/)** | Deploy AI at scale | ⭐⭐ Need coding experience | 📋 Outline ready | 0/4 |
+| **[GNNs](./GNNs/)** | AI for social networks, molecules | ⭐⭐ Graph theory helpful | ✅ Complete | 4/4 |
+| **[Agentic Systems](./Agentic_Systems/)** | Autonomous AI assistants | ⭐⭐⭐ Need basics first | ✅ Complete | 4/4 |
+| **[Orchestration Patterns](./Orchestration_Patterns/)** | Multi-AI workflows | ⭐⭐ Need deployment knowledge | ✅ Complete | 4/4 |
+| **[Infrastructure Layers](./Infrastructure_Layers/)** | Deploy AI at scale | ⭐⭐ Need coding experience | ✅ Complete | 4/4 |
 
 ### Status Legend
 - ✅ **Complete**: Full guide with all chapters, exercises, and solutions
