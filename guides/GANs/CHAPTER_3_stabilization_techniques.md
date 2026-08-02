@@ -133,7 +133,7 @@ class SpectralNormConv2d(nn.Module):
     
     def _power_iteration(self, weight, n_iterations):
         """Estimate largest singular value using power iteration"""
-        v = torch.randn(weight.size(1), 1, device=weight.device)
+        v = torch.randn(weight.size(1), device=weight.device)
         
         for _ in range(n_iterations):
             # u = Wv / ||Wv||
@@ -153,10 +153,11 @@ class SpectralNormConv2d(nn.Module):
         weight = self.conv.weight
         
         if self.training:
-            sigma, self.u.data, v = self._power_iteration(
+            sigma, u, v = self._power_iteration(
                 weight.view(weight.size(0), -1), 
                 self.n_power_iterations
             )
+            self.u.copy_(u.unsqueeze(0))
         else:
             sigma, _, _ = self._power_iteration(
                 weight.view(weight.size(0), -1), 
