@@ -1,115 +1,72 @@
-# Prerequisites: Start Here if You're New! 🚀
+# Prerequisites: Getting Started with AI Development
 
-**Never coded before? Never used a terminal?** No problem! Start here.
+Welcome! Before diving into the AI guides, make sure you're comfortable with these basics.
 
-These ultra-short tutorials will get you up to speed in under 1 hour total.
+## 📚 Available Mini-Tutorials
 
----
+### 1. Terminal Basics
+**What it covers:** Opening a terminal, running commands, navigating directories  
+**Time needed:** 5-10 minutes  
+**Start here if:** You've never used a command line before  
+👉 [Open Terminal Basics](terminal_basics.md)
 
-## 📋 What You'll Learn
+### 2. Python Basics
+**What it covers:** Variables, loops, functions, list comprehensions, importing libraries  
+**Time needed:** 15-20 minutes  
+**Start here if:** You're new to Python or need a refresher  
+👉 [Open Python Basics](python_basics.md)
 
-| Tutorial | Time | What You'll Learn |
-|----------|------|-------------------|
-| [Terminal Basics](./terminal_basics.md) | 10 min | Navigate your computer with commands |
-| [Python Basics](./python_basics.md) | 20 min | 10 essential Python concepts for AI |
-| [Git Basics](./git_basics.md) | 15 min | Version control and GitHub |
-
-**Total time:** ~45 minutes  
-**After this:** You're ready for the [RAG Guide](../guides/RAG/)!
-
----
-
-## 🎯 Recommended Order
-
-```
-Start → Terminal Basics (10 min)
-          ↓
-        Python Basics (20 min)
-          ↓
-        Git Basics (15 min)
-          ↓
-    Ready for AI Guides! 🎉
-```
+### 3. Git Basics
+**What it covers:** Cloning repositories, basic Git commands, version control  
+**Time needed:** 10-15 minutes  
+**Start here if:** You've never used Git before  
+👉 [Open Git Basics](git_basics.md)
 
 ---
 
-## ✅ Quick Self-Check
+## 🎯 Quick Self-Assessment
 
-Before starting the AI guides, make sure you can:
+Answer these questions to see if you're ready:
 
-### Terminal Skills
-- [ ] Open a terminal on your computer
-- [ ] Navigate between folders (`cd`, `pwd`)
-- [ ] List files (`ls` or `dir`)
-- [ ] Create/delete folders (`mkdir`, `rm`)
+### Terminal
+- [ ] Can you open a terminal/command prompt on your computer?
+- [ ] Do you know how to navigate to a specific folder using `cd`?
+- [ ] Have you run a Python script from the terminal before?
 
-### Python Skills
-- [ ] Run a Python script
-- [ ] Create variables and lists
-- [ ] Write a simple function
-- [ ] Use a for loop
-- [ ] Import a library
+### Python
+- [ ] Can you create variables and print them?
+- [ ] Do you understand `for` loops and `if` statements?
+- [ ] Can you write a simple function?
+- [ ] Have you installed packages using `pip`?
 
-### Git Skills
-- [ ] Clone a repository
-- [ ] Make a commit
-- [ ] Push to GitHub
+### Git
+- [ ] Do you have Git installed on your computer?
+- [ ] Can you clone a repository from GitHub?
+- [ ] Do you know what `git pull` does?
 
-If you checked all boxes, you're ready! If not, spend 45 minutes on these tutorials.
-
----
-
-## 🆘 I'm Still Stuck!
-
-### "I don't know what programming is"
-→ Complete all three tutorials in order. They assume zero knowledge!
-
-### "I installed Python but it doesn't work"
-→ Try [Google Colab](https://colab.research.google.com/) - no installation needed!
-
-### "This is too overwhelming"
-→ Take it one tutorial at a time. Come back tomorrow. Learning is a marathon, not a sprint!
-
-### "I've never used a computer much"
-→ That's okay! Start with [Terminal Basics](./terminal_basics.md) and go slow. Ask for help in forums.
+**If you checked most boxes:** Great! You're ready to start with the guides.  
+**If you missed several:** Start with the tutorials above—they're short and will save you time later!
 
 ---
 
-## 💡 Pro Tips
+## 🚀 Installation Checklist
 
-1. **Don't memorize everything** - These are reference guides. Come back when you forget!
-2. **Practice as you go** - Type the commands, don't just read
-3. **It's okay to make mistakes** - Errors are how you learn
-4. **Use Google** - Every developer Googles basic things daily
+Before starting any guide, ensure you have:
 
----
-
-## 🔗 After Completing Prerequisites
-
-Once you finish these three tutorials, you're ready to start the main content:
-
-### Beginner Path (Recommended)
-➡️ [RAG Guide](../guides/RAG/) - Build your first AI system
-
-### Choose Your Adventure
-- 💬 Language lover? → [Transformers Guide](../guides/Transformers/)
-- 🖼️ Visual thinker? → [CNNs Guide](../guides/CNNs/)
-- 🤖 Want autonomous AI? → [Agentic Systems Guide](../guides/Agentic_Systems/)
-
-See the full roadmap in the [Guides README](../guides/README.md).
+- [ ] **Python 3.8+** installed ([Download Python](https://www.python.org/downloads/))
+- [ ] **Git** installed ([Download Git](https://git-scm.com/downloads))
+- [ ] **A code editor** (VS Code recommended: [Download VS Code](https://code.visualstudio.com/))
+- [ ] **A Google account** (for Colab access—optional but recommended)
 
 ---
 
-## 📞 Getting Help
+## 💡 Tips for Success
 
-- **Error messages?** Check our [Common Errors](../errors/) directory
-- **Stuck on a concept?** Re-read the section, then try the exercises
-- **Need human help?** Reddit r/learnmachinelearning, Stack Overflow
+1. **Don't rush:** Take 30 minutes to complete these prerequisites—it will save hours of frustration later.
+2. **Practice as you go:** Type out the examples; don't just read them.
+3. **It's okay to look things up:** Even experienced developers Google basic commands daily.
+4. **Ask for help:** If you get stuck, check the [Common Errors](../errors/) directory.
 
 ---
 
-<div align="center">
-
-**Ready to begin? Open [Terminal Basics](./terminal_basics.md) and start your journey!** 🚀
-
-</div>
+**Ready?** Pick a tutorial above and let's get started! 🎓

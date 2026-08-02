@@ -1,94 +1,121 @@
-# Torch Not Installed / PyTorch Import Error 🔥
+# ModuleNotFoundError: No module named 'torch'
 
-**Error Message:**
+## 🔴 Error Message
+
 ```
 ModuleNotFoundError: No module named 'torch'
 ```
 
-or
-
+Or:
 ```
-ImportError: No module named 'torch'
-```
-
----
-
-## What This Means
-
-PyTorch (the most popular deep learning library) is not installed in your Python environment.
-
----
-
-## Quick Fixes (Try in Order)
-
-### Fix 1: Install PyTorch ⭐
-
-**IMPORTANT:** Use the official installer for your system!
-
-#### Option A: CPU Only (Smaller, works everywhere)
-```bash
-pip install torch torchvision torchaudio
-```
-
-#### Option B: With CUDA GPU Support (Faster, needs NVIDIA GPU)
-```bash
-# For CUDA 11.8 (most common)
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
-# For CUDA 12.1 (newer GPUs)
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-```
-
-#### Option C: Use the Official Installer
-Visit [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) and select your configuration!
-
----
-
-### Fix 2: Verify Installation
-
-```bash
-# Check if installed
-python -c "import torch; print(f'PyTorch {torch.__version__} installed!')"
-
-# Check CUDA availability
-python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
-
-# If CUDA available, check GPU
-python -c "import torch; print(f'GPU count: {torch.cuda.device_count()}'); print(f'GPU name: {torch.cuda.get_device_name(0)}')"
-```
-
-Expected output:
-```
-PyTorch 2.0.0+cu118 installed!
-CUDA available: True
-GPU count: 1
-GPU name: Tesla T4
+ImportError: No module named torch
 ```
 
 ---
 
-### Fix 3: Check Your Python Environment
+## 🎯 What This Means
 
-You might have installed it in a different environment!
+PyTorch (the `torch` library) is not installed in your current Python environment. PyTorch is essential for deep learning and required by most AI tutorials.
 
+---
+
+## ✅ Solutions (Try in Order)
+
+### Solution 1: Install PyTorch (Basic)
+
+**Quick install:**
 ```bash
-# Which Python are you using?
-which python        # Mac/Linux
+pip install torch
+```
+
+**For CPU-only (smaller, faster to install):**
+```bash
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+```
+
+**Verify installation:**
+```python
+import torch
+print(f"PyTorch version: {torch.__version__}")
+print(f"CUDA available: {torch.cuda.is_available()}")
+```
+
+---
+
+### Solution 2: Use the Official Installer Command
+
+PyTorch has different versions for different systems. Get the right one:
+
+1. Go to [pytorch.org/get-started](https://pytorch.org/get-started/locally/)
+2. Select your configuration:
+   - **PyTorch Build:** Stable
+   - **Your OS:** Windows/Linux/macOS
+   - **Package:** pip
+   - **Language:** Python
+   - **Compute Platform:** CUDA (if you have NVIDIA GPU) or CPU
+
+3. Copy and run the generated command
+
+**Example for Windows with CUDA 11.8:**
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+**Example for macOS (CPU only):**
+```bash
+pip3 install torch torchvision torchaudio
+```
+
+---
+
+### Solution 3: Check Your Python Environment
+
+**Problem:** You installed torch in one environment but are running code in another.
+
+**Diagnose:**
+```bash
+# In terminal
+which python        # Linux/Mac
 where python        # Windows
 
-# Which pip?
-which pip
-pip --version
+# In Python
+import sys
+print(sys.executable)
+```
 
-# They should match! If not:
-python -m pip install torch
+**Fix for virtual environments:**
+
+```bash
+# Activate your environment FIRST
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
+
+# Then install
+pip install torch
+
+# Verify
+python -c "import torch; print(torch.__version__)"
+```
+
+**Fix for conda:**
+```bash
+conda activate your_env
+conda install pytorch torchvision torchaudio -c pytorch
+```
+
+**Fix for Jupyter:**
+```python
+# In a notebook cell
+!pip install torch
+
+# Then restart kernel: Kernel → Restart
 ```
 
 ---
 
-### Fix 4: Upgrade pip First
+### Solution 4: Upgrade pip First
 
-Old pip versions can't install new PyTorch:
+**Old pip versions can't find recent PyTorch releases:**
 
 ```bash
 # Upgrade pip
@@ -100,324 +127,241 @@ pip install torch
 
 ---
 
-### Fix 5: Check System Requirements
+### Solution 5: Check System Compatibility
 
-#### Windows Users:
-- Need Visual C++ Redistributable
-- Download from: https://aka.ms/vs/17/release/vc_redist.x64.exe
+**PyTorch requires:**
+- Python 3.8 or newer
+- 64-bit system
+- For GPU: NVIDIA card with CUDA support
 
-#### Mac Users:
-- M1/M2 chips need special version:
+**Check your setup:**
 ```bash
-pip install torch torchvision torchaudio
+python --version           # Should be 3.8+
+python -c "import struct; print(struct.calcsize('P') * 8)"  # Should be 64
 ```
-(Currently no CUDA support on Mac, but MPS acceleration available!)
 
-#### Linux Users:
-- May need to install system dependencies:
+**If Python is too old:**
 ```bash
-sudo apt-get update
-sudo apt-get install libopenblas-base libomp-dev
+# Create new conda environment with modern Python
+conda create -n ai_env python=3.10
+conda activate ai_env
+pip install torch
 ```
 
 ---
 
-## Virtual Environment Setup (Recommended)
+### Solution 6: Fix Installation Issues
 
-Always use virtual environments!
+**If standard install fails:**
 
+**Clear pip cache:**
 ```bash
-# 1. Create environment
-python -m venv ai_env
-
-# 2. Activate
-# Mac/Linux:
-source ai_env/bin/activate
-
-# Windows:
-ai_env\Scripts\activate
-
-# 3. Upgrade pip
-pip install --upgrade pip
-
-# 4. Install PyTorch
-# CPU version:
-pip install torch torchvision torchaudio
-
-# OR GPU version (if you have NVIDIA GPU):
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
-# 5. Test
-python -c "import torch; print(torch.__version__)"
+pip cache purge
+pip install --no-cache-dir torch
 ```
 
----
-
-## Google Colab Specific
-
-### Good News: PyTorch is Pre-installed!
-
-```python
-# Just import and use!
-import torch
-print(f"PyTorch {torch.__version__}")
-print(f"CUDA {torch.version.cuda}")
-```
-
-### If You Need a Different Version:
-
-```python
-# Uninstall existing
-!pip uninstall torch torchvision torchaudio -y
-
-# Install specific version
-!pip install torch==2.0.0 torchvision==0.15.0 --index-url https://download.pytorch.org/whl/cu118
-```
-
-### Enable GPU in Colab:
-1. Go to **Runtime** → **Change runtime type**
-2. Select **GPU** under Hardware accelerator
-3. Click **Save**
-4. Restart the runtime
-
----
-
-## Common Errors & Fixes
-
-### Error 1: "No module named 'torch'" after installation
-
-**Cause:** Installed in wrong environment
-
-**Fix:**
+**Use specific version:**
 ```bash
-# Make sure you're using the right pip
-python -m pip install torch
+pip install torch==2.1.0
+```
+
+**Add verbose output to see what's wrong:**
+```bash
+pip install torch -vvv
 ```
 
 ---
 
-### Error 2: "DLL load failed" (Windows)
+## 💻 Platform-Specific Instructions
 
-**Cause:** Missing Visual C++ redistributables
+### Windows
 
-**Fix:**
-1. Download from: https://aka.ms/vs/17/release/vc_redist.x64.exe
-2. Install and restart computer
-3. Reinstall PyTorch
-
----
-
-### Error 3: "CUDA not available" even after GPU install
-
-**Cause:** Driver mismatch or no NVIDIA GPU
-
-**Fix:**
-```python
-# Check if you have NVIDIA GPU
-# Windows: Open Task Manager → Performance → GPU
-# Mac/Linux: Run nvidia-smi in terminal
-
-# If no NVIDIA GPU, use CPU version:
-pip install torch torchvision torchaudio
+**With CUDA (NVIDIA GPU):**
+```powershell
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-**For Mac M1/M2:** Use MPS acceleration instead:
+**CPU only:**
+```powershell
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+**Common Windows issues:**
+
+1. **Visual C++ Redistributable needed:**
+   Download from: [Microsoft VC++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+2. **Long path issues:**
+   Enable long paths in Windows:
+   ```powershell
+   # Run as Administrator
+   New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
+   -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+   ```
+
+### macOS
+
+**Intel Mac:**
+```bash
+pip3 install torch torchvision torchaudio
+```
+
+**Apple Silicon (M1/M2/M3):**
+```bash
+# PyTorch now has native M1/M2 support
+pip3 install torch torchvision torchaudio
+```
+
+**Verify MPS (Metal Performance Shaders) on M1/M2:**
 ```python
 import torch
-device = torch.device("mps")  # Instead of "cuda"
+print(f"MPS available: {torch.backends.mps.is_available()}")
 ```
 
----
+### Linux
 
-### Error 4: Import works but "undefined symbol" error
-
-**Cause:** Version conflict with numpy
-
-**Fix:**
+**With pip:**
 ```bash
-# Upgrade numpy
-pip install --upgrade numpy
-
-# Or install compatible version
-pip install numpy==1.24.0
+pip3 install torch torchvision torchaudio
 ```
 
----
-
-### Error 5: Works in terminal but not Jupyter
-
-**Cause:** Jupyter using different Python kernel
-
-**Fix for Jupyter:**
-```python
-# In notebook cell:
-import sys
-!{sys.executable} -m pip install torch
-```
-
-**Or install ipykernel:**
+**With CUDA:**
 ```bash
-pip install ipykernel
-python -m ipykernel install --user --name=ai_env
+# First check your CUDA version
+nvcc --version
+
+# Then install matching PyTorch
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-Then in Jupyter: Kernel → Change kernel → ai_env
+**With conda (recommended on Linux):**
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+```
 
 ---
 
-## Verify Everything Works
+## 🔍 Verification Script
 
-Run this comprehensive test:
+Create this file to test your installation:
 
 ```python
-# test_pytorch.py
+# test_torch.py
 import torch
-import numpy as np
 
 print("=" * 50)
 print("PyTorch Installation Test")
 print("=" * 50)
 
-# Basic info
-print(f"\n✓ PyTorch version: {torch.__version__}")
-print(f"✓ CUDA available: {torch.cuda.is_available()}")
+print(f"\n✅ PyTorch version: {torch.__version__}")
+print(f"✅ CUDA available: {torch.cuda.is_available()}")
 
 if torch.cuda.is_available():
-    print(f"✓ CUDA version: {torch.version.cuda}")
-    print(f"✓ GPU count: {torch.cuda.device_count()}")
-    print(f"✓ GPU name: {torch.cuda.get_device_name(0)}")
+    print(f"✅ GPU name: {torch.cuda.get_device_name(0)}")
+    print(f"✅ CUDA version: {torch.version.cuda}")
     
-    # Test GPU tensor
-    gpu_tensor = torch.randn(3, 3).cuda()
-    print(f"✓ GPU tensor created: {gpu_tensor.device}")
+    # Test GPU computation
+    x = torch.rand(5, 3).cuda()
+    y = torch.rand(5, 3).cuda()
+    z = x + y
+    print(f"✅ GPU computation works! Result shape: {z.shape}")
 else:
-    print("⚠ Using CPU only (that's okay for learning!)")
+    print("⚠️ Running on CPU (GPU not detected or not available)")
 
 # Test basic operations
-x = torch.rand(5, 3)
-y = torch.rand(3, 5)
-z = torch.matmul(x, y)
-print(f"\n✓ Matrix multiplication works: {z.shape}")
+a = torch.randn(3, 3)
+b = torch.randn(3, 3)
+c = torch.matmul(a, b)
+print(f"✅ Matrix multiplication works! Result shape: {c.shape}")
 
-# Test autograd (core feature)
-a = torch.tensor([2.0], requires_grad=True)
-b = a ** 2
-b.backward()
-print(f"✓ Autograd works: gradient = {a.grad}")
-
-# Test neural network module
-import torch.nn as nn
-model = nn.Linear(10, 1)
-output = model(torch.randn(1, 10))
-print(f"✓ Neural network module works: output shape = {output.shape}")
-
-print("\n🎉 All tests passed! PyTorch is ready!")
-print("=" * 50)
+print("\n✅ All tests passed!")
 ```
 
-Run it:
+**Run it:**
 ```bash
-python test_pytorch.py
+python test_torch.py
+```
+
+**Expected output (with GPU):**
+```
+==================================================
+PyTorch Installation Test
+==================================================
+
+✅ PyTorch version: 2.1.0+cu118
+✅ CUDA available: True
+✅ GPU name: NVIDIA GeForce RTX 3060
+✅ CUDA version: 11.8
+✅ GPU computation works! Result shape: torch.Size([5, 3])
+✅ Matrix multiplication works! Result shape: torch.Size([3, 3])
+
+✅ All tests passed!
 ```
 
 ---
 
-## Version Compatibility
+## 📊 Quick Reference: Which Version to Install?
 
-| PyTorch | Python | CUDA | Status |
-|---------|--------|------|--------|
-| 2.0.x | 3.8-3.11 | 11.7/11.8 | ✅ Latest |
-| 1.13.x | 3.7-3.10 | 11.6/11.7 | ✅ Stable |
-| 1.12.x | 3.7-3.10 | 11.3/11.6 | ⚠️ Older |
-| < 1.10 | Any | Any | ❌ Deprecated |
-
-Check versions:
-```python
-import torch, sys
-print(f"PyTorch: {torch.__version__}")
-print(f"Python: {sys.version}")
-print(f"CUDA: {torch.version.cuda if torch.cuda.is_available() else 'N/A'}")
-```
+| Your Setup | Install Command |
+|------------|----------------|
+| **Beginner, no GPU** | `pip install torch --index-url https://download.pytorch.org/whl/cpu` |
+| **Windows + NVIDIA GPU** | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
+| **macOS (any)** | `pip3 install torch torchvision torchaudio` |
+| **Linux + NVIDIA GPU** | `pip3 install torch torchvision torchaudio` |
+| **Using Conda** | `conda install pytorch torchvision torchaudio -c pytorch` |
+| **Google Colab** | Pre-installed! Just `import torch` |
 
 ---
 
-## Hardware Reality Check
+## 🆘 Still Not Working?
 
-### Do You Need a GPU?
-
-**For Learning:** NO! 
-- CPU is fine for tutorials and small models
-- Google Colab gives free GPU when needed
-
-**For Serious Training:** YES
-- GPU is 10-100x faster than CPU
-- But start with free cloud GPUs first!
-
-### GPU Options:
-
-| Option | Cost | Speed | Best For |
-|--------|------|-------|----------|
-| **Colab Free** | $0 | Medium | Learning, small projects |
-| **Colab Pro** | $10/mo | Fast | Regular usage |
-| **Kaggle** | $0 | Fast | Occasional training |
-| **RTX 3060** | $300 | Very Fast | Local development |
-| **RTX 4090** | $1600 | Extreme | Production work |
-
----
-
-## Still Not Working?
-
-### Debug Checklist:
-
-- [ ] Is Python installed? (`python --version`)
-- [ ] Is pip working? (`pip --version`)
-- [ ] Enough disk space? (~2GB for PyTorch + CUDA)
-- [ ] Internet connection? (downloads packages)
-- [ ] Antivirus blocking? (temporarily disable)
-
-### Get Help:
-
-1. **Check PyTorch forums:**
-   - https://discuss.pytorch.org/
-
-2. **GitHub Issues:**
-   - https://github.com/pytorch/pytorch/issues
-
-3. **Stack Overflow:**
-   - Tag: `[pytorch]`
-
-4. **PyTorch Discord:**
-   - https://discord.gg/pytorch
-
----
-
-## Related Errors
-
-- [ImportError_Transformers](./ImportError_Transformers.md)
-- [CUDA_OOM](./CUDA_OOM.md)
-
----
-
-## Prevention Tips
-
-1. **Use virtual environments** - Avoid system-wide conflicts
-2. **Pin versions** - `requirements.txt` with exact versions
-3. **Test immediately** - Run verification after install
-4. **Document your setup** - Note what worked for future reference
-
-Example `requirements.txt`:
-```
-torch==2.0.0
-torchvision==0.15.0
-torchaudio==2.0.0
-numpy==1.24.0
-```
-
-Install all at once:
+### Check pip list
 ```bash
-pip install -r requirements.txt
+pip list | grep torch
+```
+
+Should show something like:
+```
+torch                    2.1.0
+torchaudio               2.1.0
+torchvision              0.16.0
+```
+
+### Try uninstalling completely and reinstalling
+```bash
+pip uninstall torch torchvision torchaudio -y
+pip cache purge
+pip install torch torchvision torchaudio
+```
+
+### Check for conflicting packages
+```bash
+pip list | grep -i pytorch
+```
+
+If you see `pytorch` (different from `torch`), remove it:
+```bash
+pip uninstall pytorch -y
 ```
 
 ---
 
-**Remember:** Installation issues are the most common problem in ML! Don't get discouraged—everyone deals with this! 💪
+## 📚 Related Errors
+
+- [ImportError_Transformers.md](ImportError_Transformers.md) - Can't import transformers
+- [Device_Cuda_Not_Available.md](Device_Cuda_Not_Available.md) - GPU not detected
+- [PIP_Install_Fails.md](PIP_Install_Fails.md) - pip installation errors
+- [Virtual_Environment_Not_Active.md](Virtual_Environment_Not_Active.md) - Wrong Python environment
+
+---
+
+## 🎓 Key Takeaway
+
+To fix `No module named 'torch'`:
+
+1. ✅ **Install with the right command** for your system
+2. ✅ **Activate your virtual environment** before installing
+3. ✅ **Upgrade pip** if installation fails
+4. ✅ **Verify** with the test script above
+
+Most importantly: **Start with CPU version** if you're a beginner—it's easier and works great for learning! 🚀

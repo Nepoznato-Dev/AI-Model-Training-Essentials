@@ -7,6 +7,7 @@
 [![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)
 [![Knowledge Files](https://img.shields.io/badge/knowledge_files-36+-green)](knowledge_base/English/)
 [![Skills](https://img.shields.io/badge/skills-40+-orange)](skills/)
+[![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](projects/)
 
 ---
 
@@ -14,8 +15,11 @@
 
 - [Overview](#overview)
 - [Repository Structure](#-repository-structure)
+- [Quick Start for Beginners](#-quick-start-for-beginners)
 - [Knowledge Base](#-knowledge-base)
 - [Skills Library](#-skills-library)
+- [Runnable Projects](#-runnable-projects)
+- [Common Errors](#-common-errors)
 - [Agent Modes](#-agent-modes)
 - [Multi-Language Support](#-multi-language-support)
 - [Usage Guide](#-usage-guide)
@@ -31,6 +35,9 @@ This repository serves as a foundational framework for AI agent development, pro
 
 - **Structured Knowledge**: 36+ domain-specific knowledge files organized by category
 - **Skill Definitions**: 40+ skill modules covering behavior, design, communication, and technical capabilities
+- **Runnable Projects**: Hands-on implementations for RAG, Transformers, CNNs, and more
+- **Error Solutions**: Common debugging guide for beginners
+- **Prerequisites**: Mini-tutorials on terminal, Python, and Git basics
 - **Agent Configurations**: 9 pre-configured agent modes for different interaction patterns
 - **Multi-Language Support**: Knowledge base available in 18 languages
 
@@ -93,6 +100,27 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── testing-skills/      # Testing methodologies
 │   ├── skill-creator.md     # Skill creation guide
 │   └── writing-knowledge.md # Writing best practices
+├── guides/                  # AI/ML learning guides
+│   ├── RAG/                 # Retrieval-Augmented Generation
+│   ├── Transformers/        # Transformer architectures
+│   ├── CNNs/                # Convolutional Neural Networks
+│   ├── GANs/                # Generative Adversarial Networks
+│   ├── Agentic_Systems/     # AI Agent systems
+│   └── ...                  # More guides
+├── projects/                # Runnable code examples
+│   ├── rag_simple/          # Simple RAG implementation (~150 lines)
+│   ├── transformers_intro/  # Coming soon
+│   └── cnn_basics/          # Coming soon
+├── errors/                  # Common error solutions
+│   ├── README.md            # Error index
+│   ├── CUDA_OOM.md          # GPU memory errors
+│   ├── ImportError_Transformers.md
+│   └── Torch_Not_Installed.md
+├── prerequisites/           # Beginner tutorials
+│   ├── README.md            # Getting started checklist
+│   ├── terminal_basics.md   # Command line fundamentals
+│   ├── python_basics.md     # Python essentials
+│   └── git_basics.md        # Version control basics
 ├── agent_modes/             # Agent configuration files
 │   ├── Agent.Agent.md       # Full coding agent
 │   ├── Ask.Agent.md         # Q&A mode
@@ -108,6 +136,52 @@ This repository serves as a foundational framework for AI agent development, pro
 ```
 
 Note: If you don't actually speak any other languages it's fine, you can use tools like Qwen Coder for completely free or GitHub Copilot if you don't mind using your Copilot credits, you can also open a issue and ask me to translate it for you.
+
+---
+
+## 🚀 Quick Start for Beginners
+
+New to AI/ML development? Start here!
+
+### Step 1: Check Prerequisites (5-30 minutes)
+
+Before diving into AI guides, make sure you know the basics:
+
+- **[Terminal Basics](prerequisites/terminal_basics.md)** - Command line fundamentals (5 min)
+- **[Python Basics](prerequisites/python_basics.md)** - Essential Python concepts (15 min)
+- **[Git Basics](prerequisites/git_basics.md)** - Version control basics (10 min)
+
+**Not sure if you're ready?** Take the [self-assessment quiz](prerequisites/README.md)!
+
+### Step 2: Run Your First Project (15 minutes)
+
+Get hands-on immediately with a runnable project:
+
+```bash
+cd projects/rag_simple
+pip install -r requirements.txt
+python main.py
+```
+
+See all [Runnable Projects](projects/README.md) →
+
+### Step 3: Pick a Learning Path
+
+Choose based on your interest:
+
+| Path | Start Here | Projects | Career Goal |
+|------|-----------|----------|-------------|
+| **NLP Engineer** | [RAG Guide](guides/RAG/) | RAG Simple | Search, Q&A systems |
+| **Deep Learning** | [Transformers Guide](guides/Transformers/) | Coming soon | NLP, Translation |
+| **Computer Vision** | [CNNs Guide](guides/CNNs/) | Coming soon | Image recognition |
+| **AI Agents** | [Agentic Systems](guides/Agentic_Systems/) | Coming soon | Autonomous agents |
+
+### Step 4: Get Help When Stuck
+
+You'll encounter errors—that's normal! Check our [Common Errors](errors/README.md) database:
+- [CUDA Out of Memory](errors/CUDA_OOM.md)
+- [Import Errors](errors/ImportError_Transformers.md)
+- [PyTorch Not Installed](errors/Torch_Not_Installed.md)
 
 ---
 

@@ -1,196 +1,162 @@
-# Common Errors Knowledge Base 🔧
+# Common Errors Knowledge Base
 
-**Beginners spend 80% of their time debugging.** This directory turns frustration into learning moments!
+Quick solutions to the most common errors you'll encounter when learning AI development.
 
----
+## 🔍 How to Use This Guide
 
-## 📚 Available Error Guides
-
-| Error | What It Means | Quick Fix |
-|-------|---------------|-----------|
-| [CUDA Out of Memory](./CUDA_OOM.md) | GPU ran out of video memory | Reduce batch size |
-| [ImportError: transformers](./ImportError_Transformers.md) | Can't find transformers library | Install with pip |
-| [Torch Not Installed](./Torch_Not_Installed.md) | PyTorch not found | Install from pytorch.org |
+1. **Copy your error message** into a text editor
+2. **Search for keywords** in this guide (Ctrl+F / Cmd+F)
+3. **Follow the solution steps** exactly as written
+4. **Still stuck?** Check the "Related Errors" section at the bottom of each entry
 
 ---
 
-## 🎯 How to Use This Directory
+## 📦 Installation Errors
 
-### When You Get an Error:
+### [CUDA_Out_Of_Memory.md](errors/CUDA_OOM.md)
+**Error:** `torch.cuda.OutOfMemoryError: CUDA out of memory`  
+**When:** Training models or running inference on GPU
 
-1. **Copy the error message** (exact text)
-2. **Search this directory** for matching error files
-3. **Follow the fixes in order** (they're ranked by effectiveness)
-4. **Still stuck?** Check the "Still Not Working?" section
+### [ImportError_Transformers.md](errors/ImportError_Transformers.md)
+**Error:** `ImportError: cannot import name 'transformers'`  
+**When:** Trying to import Hugging Face transformers
 
----
+### [Torch_Not_Installed.md](errors/Torch_Not_Installed.md)
+**Error:** `ModuleNotFoundError: No module named 'torch'`  
+**When:** Running any PyTorch code
 
-## 🔍 Quick Diagnostic Flowchart
+### [PIP_Install_Fails.md](errors/PIP_Install_Fails.md)
+**Error:** `ERROR: Could not find a version that satisfies the requirement`  
+**When:** Installing packages with pip
 
-```
-Got an error?
-    ↓
-Is it about memory/CUDA? 
-    → Yes → [CUDA_OOM.md](./CUDA_OOM.md)
-    ↓ No
-Is it about importing a library?
-    → transformers → [ImportError_Transformers.md](./ImportError_Transformers.md)
-    → torch → [Torch_Not_Installed.md](./Torch_Not_Installed.md)
-    ↓ No
-Google the exact error message + "github"
-```
+### [Python_Version_Mismatch.md](errors/Python_Version_Mismatch.md)
+**Error:** `This version of X requires Python Y.Z or greater`  
+**When:** Installing or running Python packages
 
 ---
 
-## 💡 Pro Tips for Debugging
+## 🏗️ Runtime Errors
 
-### Tip 1: Read the Full Error
+### [Shape_Mismatch_Error.md](errors/Shape_Mismatch_Error.md)
+**Error:** `RuntimeError: size mismatch` or `ValueError: shapes not aligned`  
+**When:** Matrix operations, model forward pass
 
-Most errors have helpful messages at the bottom:
-```python
-RuntimeError: CUDA out of memory. Tried to allocate 2.00 GiB...
-← This tells you exactly what went wrong!
-```
+### [Device_Cuda_Not_Available.md](errors/Device_Cuda_Not_Available.md)
+**Error:** `Torch not compiled with CUDA enabled` or `Found no NVIDIA driver`  
+**When:** Trying to use GPU acceleration
 
-### Tip 2: Search Smart
+### [DataLoader_Worker_Error.md](errors/DataLoader_Worker_Error.md)
+**Error:** `RuntimeError: DataLoader worker (pid(s) XXXXX) exited unexpectedly`  
+**When:** Loading data during training
 
-Good search queries:
-- `"CUDA out of memory" site:github.com`
-- `"No module named transformers" stackoverflow`
-- `pytorch import error reddit`
-
-### Tip 3: Check Your Versions
-
-Many errors are version mismatches:
-```python
-import torch, transformers, sys
-print(f"PyTorch: {torch.__version__}")
-print(f"Transformers: {transformers.__version__}")
-print(f"Python: {sys.version}")
-```
-
-### Tip 4: Start Fresh
-
-When all else fails:
-```bash
-# Create new environment
-python -m venv fresh_env
-source fresh_env/bin/activate  # Windows: fresh_env\Scripts\activate
-
-# Install only what you need
-pip install torch transformers
-
-# Test immediately
-python -c "import torch; print('Works!')"
-```
+### [Gradient_Explosion.md](errors/Gradient_Explosion.md)
+**Error:** `RuntimeError: NaN detected in loss` or gradients become `inf`  
+**When:** Training deep neural networks
 
 ---
 
-## 🆘 Emergency Checklist
+## 📁 File & Data Errors
 
-Can't solve your error? Gather this info before asking for help:
+### [File_Not_Found_Error.md](errors/File_Not_Found_Error.md)
+**Error:** `FileNotFoundError: [Errno 2] No such file or directory`  
+**When:** Loading datasets, models, or configuration files
 
-- [ ] Exact error message (copy-paste, don't paraphrase)
-- [ ] Python version (`python --version`)
-- [ ] Installed packages (`pip list`)
-- [ ] Operating system (Windows/Mac/Linux + version)
-- [ ] What you were trying to do
-- [ ] Code that caused the error (minimal example)
-- [ ] What you've already tried
+### [JSON_Decode_Error.md](errors/JSON_Decode_Error.md)
+**Error:** `json.decoder.JSONDecodeError: Expecting value`  
+**When:** Loading JSON configuration or data files
 
----
-
-## 📖 Learning from Errors
-
-Every error teaches you something:
-
-| Error Type | What You Learn |
-|------------|----------------|
-| Import errors | Package management, environments |
-| Memory errors | Resource optimization, model sizing |
-| Type errors | Data structures, Python typing |
-| Runtime errors | Logic flow, edge cases |
-| Syntax errors | Python grammar, attention to detail |
-
-**Remember:** Professional developers get errors daily. The skill isn't avoiding errors—it's solving them efficiently!
+### [Encoding_Error.md](errors/Encoding_Error.md)
+**Error:** `UnicodeDecodeError: 'utf-8' codec can't decode byte`  
+**When:** Reading text files or datasets
 
 ---
 
-## 🔗 Linked from Guides
+## 🤗 Hugging Face Specific
 
-These errors are referenced throughout the guides:
+### [HF_Connection_Error.md](errors/HF_Connection_Error.md)
+**Error:** `ConnectionError: Couldn't reach hub.huggingface.co`  
+**When:** Downloading models from Hugging Face Hub
 
-### From RAG Guide:
-- [CUDA_OOM.md](./CUDA_OOM.md) - Chapter 3 (Training Retrievers)
-- [ImportError_Transformers.md](./ImportError_Transformers.md) - Chapter 1 (Setup)
+### [HF_Cache_Corrupted.md](errors/HF_Cache_Corrupted.md)
+**Error:** `OSError: Unable to load weights from pytorch checkpoint`  
+**When:** Loading cached Hugging Face models
 
-### From Transformers Guide:
-- [Torch_Not_Installed.md](./Torch_Not_Installed.md) - Chapter 1 (Setup)
-- [CUDA_OOM.md](./CUDA_OOM.md) - Chapter 4 (Fine-tuning)
-
-### From CNNs Guide:
-- [Torch_Not_Installed.md](./Torch_Not_Installed.md) - Chapter 1 (Setup)
-- [CUDA_OOM.md](./CUDA_OOM.md) - Chapter 3 (Training)
+### [Tokenizer_Error.md](errors/Tokenizer_Error.md)
+**Error:** `TypeError: Argument 'input_ids' has incorrect type`  
+**When:** Tokenizing text for transformers
 
 ---
 
-## 🙏 Contributing
+## 💻 System & Environment
 
-Found an error not covered here? Contribute!
+### [Virtual_Environment_Not_Active.md](errors/Virtual_Environment_Not_Active.md)
+**Error:** Packages installed but still getting `ModuleNotFoundError`  
+**When:** Running Python scripts
 
-1. Create a new file: `Error_Name.md`
-2. Follow the template below
-3. Submit a pull request
+### [Path_Too_Long_Windows.md](errors/Path_Too_Long_Windows.md)
+**Error:** `OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect`  
+**When:** Working with deeply nested directories on Windows
 
-### Error File Template:
-
-```markdown
-# Error Title 🔥
-
-**Error Message:**
-```
-[paste exact error]
-```
-
-## What This Means
-
-[Simple explanation]
-
-## Quick Fixes (Try in Order)
-
-### Fix 1: [Most common solution]
-[Code/example]
-
-### Fix 2: [Second most common]
-[Code/example]
-
-## Prevention Tips
-
-[How to avoid this error]
-
-## Related Errors
-
-- [Link to related error files]
-```
+### [Permission_Denied.md](errors/Permission_Denied.md)
+**Error:** `PermissionError: [Errno 13] Permission denied`  
+**When:** Writing files or installing packages
 
 ---
 
-## 📞 Getting More Help
+## 🧠 Model Training Errors
 
-If these guides don't solve your problem:
+### [Loss_Is_NaN.md](errors/Loss_Is_NaN.md)
+**Error:** Loss becomes `nan` during training  
+**When:** Training neural networks
 
-1. **Stack Overflow** - https://stackoverflow.com/questions/tagged/pytorch
-2. **GitHub Issues** - Check the library's issue tracker
-3. **Reddit** - r/MachineLearning, r/learnmachinelearning
-4. **Discord** - PyTorch Discord, Hugging Face Discord
-5. **Forums** - https://discuss.pytorch.org/, https://discuss.huggingface.co/
+### [Overfitting_Early.md](errors/Overfitting_Early.md)
+**Error:** Training accuracy high, validation accuracy low  
+**When:** Model memorizes training data
+
+### [Slow_Training.md](errors/Slow_Training.md)
+**Error:** Training is taking hours/days instead of minutes  
+**When:** Model training performance
 
 ---
 
-<div align="center">
+## 📝 How to Report an Error
 
-**Errors are not failures—they're learning opportunities!** 💪
+If you encounter an error not listed here:
 
-[← Back to Prerequisites](../prerequisites/) | [Start RAG Guide](../guides/RAG/)
+1. **Copy the full error message** (not just the last line!)
+2. **Note what you were doing** when it occurred
+3. **Include your environment:**
+   ```bash
+   python --version
+   pip list | grep torch
+   pip list | grep transformers
+   ```
+4. **Check existing issues** in the repository
+5. **Create a new issue** with all the information above
 
-</div>
+---
+
+## 🎯 Quick Troubleshooting Checklist
+
+Before diving deep, try these universal fixes:
+
+- [ ] **Restart your Python kernel** (in Jupyter/Colab)
+- [ ] **Clear cache:** `rm -rf ~/.cache/huggingface`
+- [ ] **Update packages:** `pip install --upgrade package_name`
+- [ ] **Check internet connection** (for downloading models)
+- [ ] **Verify disk space:** `df -h` (Linux/Mac) or check Drive properties (Windows)
+- [ ] **Try CPU instead of GPU** (add `.to('cpu')` to tensors)
+- [ ] **Reduce batch size** (halve it and try again)
+- [ ] **Reinstall problematic package:** `pip uninstall pkg && pip install pkg`
+
+---
+
+## 🆘 Getting Help
+
+1. **Read the error carefully** - Python errors are usually descriptive
+2. **Google the exact error message** (in quotes)
+3. **Check Stack Overflow** for similar issues
+4. **Look at the library's GitHub issues**
+5. **Ask in community forums** (Reddit r/MachineLearning, Discord servers)
+
+Remember: Every expert was once a beginner who learned to debug! 💪
