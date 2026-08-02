@@ -68,7 +68,7 @@ Any Architecture Guide → Infrastructure Layers → Orchestration Patterns
 | **[GNNs](./GNNs/)** | AI for social networks, molecules | ⭐⭐ Graph theory helpful | ✅ Complete | 4/4 |
 | **[Agentic Systems](./Agentic_Systems/)** | Autonomous AI assistants | ⭐⭐⭐ Need basics first | ✅ Complete | 4/4 |
 | **[Orchestration Patterns](./Orchestration_Patterns/)** | Multi-AI workflows | ⭐⭐ Need deployment knowledge | ✅ Complete | 4/4 |
-| **[Infrastructure Layers](./Infrastructure_Layers/)** | Deploy AI at scale | ⭐⭐ Need coding experience | 📝 In Progress | 1/4 |
+| **[Infrastructure Layers](./Infrastructure_Layers/)** | Deploy AI at scale | ⭐⭐ Need coding experience | ✅ Complete | 4/4 |
 
 ### Status Legend
 - ✅ **Complete**: Full guide with all chapters, exercises, and solutions
