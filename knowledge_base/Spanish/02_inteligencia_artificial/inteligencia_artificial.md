@@ -53,7 +53,7 @@ Notable LLMs incluyen:
 - **LLaMA / Llama 3** (Meta): Open-weight models para research y local Implementación
 - **Mistral** (Mistral AI): Efficient open models competitive con much larger LLMs
 
-LLMs are trained en two stages: pre-training (unsupervised on large text corpora) y fine-tuning (supervised or via reinforcement learning from human Comentarios, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens en el most Avanzado 2024 models.
+LLMs are trained en two stages: pre-training (unsupervised on large text corpora) y fine-tuning (supervised or via reinforcement learning from human Comentarios, RLHF). Context windows describe how much text an LLM can process at once, ranging from 4K tokens (early GPT-3) to over 1 million tokens en el most Avanzado 2026 models.
 
 ## AI Ethics y Safety
 
@@ -88,4 +88,4 @@ Robotics combines AI con physical machines. Modern robots use perception (camera
 - **Agents y agentic AI**: LLMs that can use tools, browse el Web, write code, y take multi-step actions (OpenAI's Operator, Anthropic Computer Use)
 - **Open-weight models**: Meta's LLaMA democratised access to large models para researchers
 - **On-device AI**: Running AI models locally on phones y laptops without cloud connectivity (Apple Intelligence, Qualcomm NPUs)
-- **AI regulation**: el EU AI Act (2024) is el world's first comprehensive AI Derecho, classifying AI Sistemas by risk level
+- **AI regulation**: el EU AI Act (2026) is el world's first comprehensive AI Derecho, classifying AI Sistemas by risk level

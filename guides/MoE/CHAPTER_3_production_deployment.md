@@ -851,6 +851,6 @@ Continue exploring:
 
 1. Fedus, W., et al. (2021). "Switch Transformers: Scaling to Trillion Parameter Models"
 2. Lepikhin, A., et al. (2020). "GShard: Scaling Giant Models with Conditional Computation"
-3. Jiang, A.Q., et al. (2024). "Mixtral of Experts"
+3. Jiang, A.Q., et al. (2026). "Mixtral of Experts"
 4. Shazeer, N., et al. (2017). "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
 5. Liu, H., et al. (2022). "Swin Transformer V2: Scaling Up Capacity and Resolution"

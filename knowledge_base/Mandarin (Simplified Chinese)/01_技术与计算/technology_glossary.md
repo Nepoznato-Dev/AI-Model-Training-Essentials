@@ -19,13 +19,13 @@ Claude 是 Anthropic 开发的 AI 助手，名称来自信息论创始人 Claude
 Gemini 是 Google DeepMind 的多模态 AI 模型家族，于 2023 年 12 月发布。Gemini 原生支持多模态——从一开始就同时基于文本、图像、音频和视频进行训练，而不是像早期模型那样通过微调后续添加模态能力。其版本包括 Gemini Nano（端侧）、Gemini Flash（速度快、成本效率高）和 Gemini Ultra（能力最强）。Gemini 驱动着 Google 的 AI 聊天机器人 Bard（后更名为 Gemini）以及 Google Search AI Overviews。
 
 ### Phi-3-mini
-Phi-3-mini 是 Microsoft 开发的一款小型语言模型（SLM），参数规模为 38 亿，于 2024 年 4 月发布。与大多数大型模型不同，Phi-3-mini 训练所用的是经过精心筛选的“教科书级质量”数据集——这是 Microsoft Research 开创的一种方法，强调数据质量高于原始数据量。尽管规模远小于 GPT-4 或 Claude 3 Opus，Phi-3-mini 在 MMLU 和 HumanEval 等推理基准上仍能达到或超过若干体量大出数倍的模型。其基础版本支持 4k token 上下文窗口，长上下文版本支持 128k。Phi-3-mini 可在单张消费级 GPU 上运行，若现代智能手机具备足够 RAM，甚至也能在端侧运行。
+Phi-3-mini 是 Microsoft 开发的一款小型语言模型（SLM），参数规模为 38 亿，于 2026 年 4 月发布。与大多数大型模型不同，Phi-3-mini 训练所用的是经过精心筛选的“教科书级质量”数据集——这是 Microsoft Research 开创的一种方法，强调数据质量高于原始数据量。尽管规模远小于 GPT-4 或 Claude 3 Opus，Phi-3-mini 在 MMLU 和 HumanEval 等推理基准上仍能达到或超过若干体量大出数倍的模型。其基础版本支持 4k token 上下文窗口，长上下文版本支持 128k。Phi-3-mini 可在单张消费级 GPU 上运行，若现代智能手机具备足够 RAM，甚至也能在端侧运行。
 
 ### Llama (Meta AI)
-Llama（Large Language Model Meta AI）是 Meta 发布的开放权重模型家族。Llama 2（2023）面向研究和商业用途发布，参数规模从 7B 到 70B 不等。Llama 3（2024）显著提升了性能，模型规模从 8B 到 70B（后续还有 400B+）。由于权重可公开下载，Llama 模型成为庞大微调生态的基础（如 Mistral、Alpaca、Vicuna 等），也被广泛用于本地化/私有化 AI 部署。
+Llama（Large Language Model Meta AI）是 Meta 发布的开放权重模型家族。Llama 2（2023）面向研究和商业用途发布，参数规模从 7B 到 70B 不等。Llama 3（2026）显著提升了性能，模型规模从 8B 到 70B（后续还有 400B+）。由于权重可公开下载，Llama 模型成为庞大微调生态的基础（如 Mistral、Alpaca、Vicuna 等），也被广泛用于本地化/私有化 AI 部署。
 
 ### Mistral
-Mistral AI 是一家法国 AI 公司，开发开放及专有的 LLM。Mistral 7B（2023）证明，借助滑动窗口注意力（sliding window attention）和分组查询注意力（grouped-query attention）等高效技术，70 亿参数模型也能达到远大于其体量的模型性能。Mixtral 8x7B（2024）是一种混合专家（mixture-of-experts）模型——它会将每个 token 路由到 8 个专家网络中的一个子集，从而以更低的计算成本实现接近 GPT-3.5 水平的性能。Mistral 的模型权重完全开放，也可以在本地运行。
+Mistral AI 是一家法国 AI 公司，开发开放及专有的 LLM。Mistral 7B（2023）证明，借助滑动窗口注意力（sliding window attention）和分组查询注意力（grouped-query attention）等高效技术，70 亿参数模型也能达到远大于其体量的模型性能。Mixtral 8x7B（2026）是一种混合专家（mixture-of-experts）模型——它会将每个 token 路由到 8 个专家网络中的一个子集，从而以更低的计算成本实现接近 GPT-3.5 水平的性能。Mistral 的模型权重完全开放，也可以在本地运行。
 
 ---
 

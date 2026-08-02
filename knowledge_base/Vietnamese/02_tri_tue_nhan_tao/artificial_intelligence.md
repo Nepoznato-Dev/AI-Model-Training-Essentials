@@ -46,7 +46,7 @@ LLM đáng chú ý bao gồm:
 - **LLaMA / Llama 3** (Meta): Các mô hình trọng lượng mở dành cho nghiên cứu và triển khai tại địa phương
 - **Mistral** (Mistral AI): Các mô hình mở hiệu quả cạnh tranh với các LLM lớn hơn nhiều
 
-LLM được đào tạo theo hai giai đoạn: đào tạo trước (không được giám sát trên kho văn bản lớn) và tinh chỉnh (được giám sát hoặc thông qua học tập tăng cường từ phản hồi của con người, RLHF). Cửa sổ ngữ cảnh mô tả lượng văn bản mà LLM có thể xử lý cùng một lúc, từ 4K mã thông báo (GPT-3 đầu tiên) đến hơn 1 triệu mã thông báo trong các mô hình tiên tiến nhất năm 2024.
+LLM được đào tạo theo hai giai đoạn: đào tạo trước (không được giám sát trên kho văn bản lớn) và tinh chỉnh (được giám sát hoặc thông qua học tập tăng cường từ phản hồi của con người, RLHF). Cửa sổ ngữ cảnh mô tả lượng văn bản mà LLM có thể xử lý cùng một lúc, từ 4K mã thông báo (GPT-3 đầu tiên) đến hơn 1 triệu mã thông báo trong các mô hình tiên tiến nhất năm 2026.
 
 ## Đạo đức và An toàn AIAI đặt ra các câu hỏi đạo đức quan trọng bao gồm sự thiên vị, quyền riêng tư, dịch chuyển công việc và nguy cơ lạm dụng. Sai lệch thuật toán xảy ra khi dữ liệu huấn luyện phản ánh sự bất bình đẳng trong lịch sử, khiến hệ thống AI tạo ra kết quả đầu ra mang tính phân biệt đối xử. Hệ thống nhận dạng khuôn mặt cho thấy tỷ lệ lỗi cao hơn đối với những người có làn da sẫm màu. Các thuật toán tuyển dụng được cho là có lợi cho các ứng viên nam.
 
@@ -79,4 +79,4 @@ Robotics kết hợp AI với máy móc vật lý. Robot hiện đại sử dụ
 - **Đại lý và AI tác nhân**: LLM có thể sử dụng các công cụ, duyệt web, viết mã và thực hiện các hành động gồm nhiều bước (Người vận hành OpenAI, Sử dụng máy tính nhân loại)
 - **Mô hình trọng lượng mở**: LLaMA của Meta đã dân chủ hóa quyền truy cập vào các mô hình lớn cho các nhà nghiên cứu
 - **AI trên thiết bị**: Chạy cục bộ các mô hình AI trên điện thoại và máy tính xách tay không có kết nối đám mây (Apple Intelligence, NPU Qualcomm)
-- **Quy định về AI**: Đạo luật AI của EU (2024) là luật AI toàn diện đầu tiên trên thế giới, phân loại hệ thống AI theo mức độ rủi ro
+- **Quy định về AI**: Đạo luật AI của EU (2026) là luật AI toàn diện đầu tiên trên thế giới, phân loại hệ thống AI theo mức độ rủi ro

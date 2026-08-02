@@ -49,7 +49,7 @@ an.
 
 ### Phi-3-mini
 Phi-3-mini ist ein kleines Sprachmodell (SLM), das von Microsoft mit 3,8 Mrd.
-Parametern entwickelt wurde. Es wurde im April 2024 veröffentlicht. Im Gegensatz zu den meisten großen Modellen
+Parametern entwickelt wurde. Es wurde im April 2026 veröffentlicht. Im Gegensatz zu den meisten großen Modellen
 wurde Phi-3-mini auf einem sorgfältig kuratierten Datensatz in Lehrbuchqualität trainiert — eine Technik,
 die von Microsoft Research maßgeblich vorangetrieben wurde — und priorisiert damit Datenqualität gegenüber bloßem Volumen.
 Trotz seiner im Vergleich zu GPT-4 oder Claude 3 Opus viel kleineren Größe erreicht oder
@@ -61,7 +61,7 @@ oder sogar on-device auf einem modernen Smartphone mit ausreichend RAM laufen.
 ### Llama (Meta AI)
 Llama (Large Language Model Meta AI) ist eine Familie von Open-Weight-Modellen,
 die von Meta veröffentlicht wurde. Llama 2 (2023) wurde für Forschung und kommerzielle Nutzung
-in Größen von 7B bis 70B Parametern veröffentlicht. Llama 3 (2024) verbesserte
+in Größen von 7B bis 70B Parametern veröffentlicht. Llama 3 (2026) verbesserte
 die Leistung erheblich, mit Modellen von 8B bis 70B (und später 400B+).
 Da die Gewichte öffentlich herunterladbar sind, bilden Llama-Modelle die Grundlage
 für ein großes Ökosystem feinabgestimmter Varianten (Mistral, Alpaca, Vicuna usw.)
@@ -71,7 +71,7 @@ und werden häufig für lokale oder private KI-Bereitstellungen verwendet.
 Mistral AI ist ein französisches KI-Unternehmen, das offene und proprietäre LLMs entwickelt.
 Mistral 7B (2023) zeigte, dass ein Modell mit 7 Mrd. Parametern dank effizienter Techniken wie Sliding-
 Window-Attention und Grouped-Query-Attention die
-Leistung deutlich größerer Modelle erreichen kann. Mixtral 8x7B (2024) ist ein Mixture-
+Leistung deutlich größerer Modelle erreichen kann. Mixtral 8x7B (2026) ist ein Mixture-
 of-Experts-Modell — es leitet jedes Token an eine Teilmenge von 8 Expertennetzwerken weiter
 und erreicht GPT-3.5-Niveau bei geringeren Rechenkosten.
 Mistrals Modelle sind vollständig Open-Weight und können lokal ausgeführt werden.

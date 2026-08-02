@@ -17,7 +17,7 @@ NASA의 Artemis 프로그램은 인간을 다시 Moon으로 보내는 것을 목
 
 ## 기술과 AI 발전
 
-2026년에는 인공지능의 역량이 한층 높아져, 더 발전된 large language model, multimodal AI 시스템, 그리고 기업 전반의 폭넓은 도입이 기대됩니다. 많은 정부는 2023-2024년에 마련된 틀을 바탕으로 AI 규제를 시행하고 있으며, 여기에는 EU AI Act의 전면 시행도 포함됩니다. Quantum computing은 신약 개발, materials science, cryptography 분야에서 실용적 응용에 조금씩 다가가고 있습니다. Extended reality(VR/AR/MR) 기술은 Apple Vision Pro 후속 기기와 Meta의 지속적인 투자에 힘입어 성숙 단계로 나아가고 있습니다. Autonomous vehicle 배치는 통제된 환경과 일부 도시를 중심으로 확대되겠지만, 완전 자율주행차의 보편화는 아직 제한적일 전망입니다. 6G 무선 기술 연구도 초기 시험 배치와 함께 가속화되지만, 상용화는 2030년대가 될 가능성이 큽니다. Edge computing과 IoT 기기는 더 널리 확산되어 도시와 가정을 더욱 스마트하게 만들고, AI 기반 공격이 늘어나는 만큼 cybersecurity의 중요성도 한층 커질 것입니다.
+2026년에는 인공지능의 역량이 한층 높아져, 더 발전된 large language model, multimodal AI 시스템, 그리고 기업 전반의 폭넓은 도입이 기대됩니다. 많은 정부는 2023-2026년에 마련된 틀을 바탕으로 AI 규제를 시행하고 있으며, 여기에는 EU AI Act의 전면 시행도 포함됩니다. Quantum computing은 신약 개발, materials science, cryptography 분야에서 실용적 응용에 조금씩 다가가고 있습니다. Extended reality(VR/AR/MR) 기술은 Apple Vision Pro 후속 기기와 Meta의 지속적인 투자에 힘입어 성숙 단계로 나아가고 있습니다. Autonomous vehicle 배치는 통제된 환경과 일부 도시를 중심으로 확대되겠지만, 완전 자율주행차의 보편화는 아직 제한적일 전망입니다. 6G 무선 기술 연구도 초기 시험 배치와 함께 가속화되지만, 상용화는 2030년대가 될 가능성이 큽니다. Edge computing과 IoT 기기는 더 널리 확산되어 도시와 가정을 더욱 스마트하게 만들고, AI 기반 공격이 늘어나는 만큼 cybersecurity의 중요성도 한층 커질 것입니다.
 
 ## 기후와 환경 목표
 

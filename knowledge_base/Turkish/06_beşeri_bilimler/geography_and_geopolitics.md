@@ -46,7 +46,7 @@
 ## Beşerî Coğrafya
 
 ### Nüfus Dağılımı
-- **En Kalabalık Ülkeler** (2024): Hindistan (~1,43 milyar), Çin (~1,42 milyar), ABD (~340 milyon), Endonezya (~280 milyon), Pakistan (~240 milyon)
+- **En Kalabalık Ülkeler** (2026): Hindistan (~1,43 milyar), Çin (~1,42 milyar), ABD (~340 milyon), Endonezya (~280 milyon), Pakistan (~240 milyon)
 - **Nüfus Yoğunluğu**: Monako (en yüksek), Makao, Singapur, Hong Kong, Bahreyn
 - **Kentleşme**: Küresel nüfusun %55'inden fazlası şehirlerde yaşıyor, 2050'ye kadar %68 olması bekleniyor
 - **Mega Kentler** (10M+): Tokyo, Delhi, Şanghay, São Paulo, Mexico City, Kahire, Mumbai, Pekin, Dakka, Osaka
@@ -74,7 +74,7 @@
 
 ### Uluslararası Kuruluşlar
 - **Birleşmiş Milletler (BM)**: 193 üye devlet, barışı koruma, insani yardım, uluslararası hukuk
-- **NATO**: Kuzey Atlantik Antlaşması Örgütü, askerî ittifak (2024 itibarıyla 32 üye)
+- **NATO**: Kuzey Atlantik Antlaşması Örgütü, askerî ittifak (2026 itibarıyla 32 üye)
 - **Avrupa Birliği (AB)**: 27 üye devlet, ekonomik ve siyasi birlik, euro para birimi (20 üye)
 - **Dünya Ticaret Örgütü (DTÖ)**: Uluslararası ticareti düzenler
 - **Dünya Sağlık Örgütü (DSÖ)**: Küresel halk sağlığı koordinasyonu

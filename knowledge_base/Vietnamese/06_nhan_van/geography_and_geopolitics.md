@@ -46,7 +46,7 @@
 ## Địa lý nhân văn
 
 ### Phân bổ dân số
-- **Quốc gia đông dân nhất** (2024): Ấn Độ (~1,43B), Trung Quốc (~1,42B), Hoa Kỳ (~340M), Indonesia (~280M), Pakistan (~240M)
+- **Quốc gia đông dân nhất** (2026): Ấn Độ (~1,43B), Trung Quốc (~1,42B), Hoa Kỳ (~340M), Indonesia (~280M), Pakistan (~240M)
 - **Mật độ dân số**: Monaco (cao nhất), Ma Cao, Singapore, Hồng Kông, Bahrain
 - **Đô thị hóa**: Hơn 55% dân số toàn cầu sống ở các thành phố, dự kiến 68% vào năm 2050
 - **Siêu đô thị** (10 triệu+): Tokyo, Delhi, Thượng Hải, São Paulo, Thành phố Mexico, Cairo, Mumbai, Bắc Kinh, Dhaka, Osaka
@@ -74,7 +74,7 @@
 
 ### Tổ chức quốc tế
 - **Liên hợp quốc (LHQ)**: 193 quốc gia thành viên, gìn giữ hòa bình, viện trợ nhân đạo, luật pháp quốc tế
-- **NATO**: Tổ chức Hiệp ước Bắc Đại Tây Dương, liên minh quân sự (32 thành viên tính đến năm 2024)
+- **NATO**: Tổ chức Hiệp ước Bắc Đại Tây Dương, liên minh quân sự (32 thành viên tính đến năm 2026)
 - **Liên minh Châu Âu (EU)**: 27 quốc gia thành viên, liên minh kinh tế và chính trị, đồng euro (20 thành viên)
 - **Tổ chức Thương mại Thế giới (WHO)**: Điều tiết thương mại quốc tế
 - **Tổ chức Y tế Thế giới (WHO)**: Điều phối y tế công cộng toàn cầu

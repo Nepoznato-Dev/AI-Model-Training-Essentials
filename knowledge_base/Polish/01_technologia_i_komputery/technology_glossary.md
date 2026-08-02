@@ -43,7 +43,7 @@ Przeglądy.
 
 ### Phi-3-mini
 Phi-3-mini to model małego języka (SLM) opracowany przez firmę Microsoft w wersji 3.8B
-parametry. Został wydany w kwietniu 2024 roku. W przeciwieństwie do większości dużych modeli, Phi-3-mini
+parametry. Został wydany w kwietniu 2026 roku. W przeciwieństwie do większości dużych modeli, Phi-3-mini
 został przeszkolony na starannie dobranym zbiorze danych o jakości podręcznikowej – jest to technika
 którego pionierem jest dział Microsoft Research — który przedkłada jakość danych nad ich surową objętość.
 Pomimo tego, że jest znacznie mniejszy niż GPT-4 lub Claude 3 Opus, Phi-3-mini pasuje lub
@@ -55,7 +55,7 @@ lub nawet na urządzeniu na nowoczesnym smartfonie z wystarczającą ilością p
 ### Lama (Meta AI)
 Lama (Large Language Model Meta AI) to rodzina modeli z otwartymi ciężarami
 wydany przez Metę. Lama 2 (2023) została wypuszczona do celów badawczych i komercyjnych
-o rozmiarach w zakresie parametrów od 7B do 70B. Ulepszona Lama 3 (2024).
+o rozmiarach w zakresie parametrów od 7B do 70B. Ulepszona Lama 3 (2026).
 znacznie wydajność, w przypadku modeli od 8B do 70B (a później 400B+).
 Ponieważ ciężary można pobrać publicznie, podstawą są modele lamy
 dla dużego ekosystemu dopracowanych wariantów (Mistral, Alpaca, Vicuna itp.)
@@ -65,7 +65,7 @@ i są szeroko stosowane w lokalnych/prywatnych wdrożeniach sztucznej inteligenc
 Mistral AI to francuska firma zajmująca się sztuczną inteligencją, która rozwija otwarte i zastrzeżone LLM.
 Mistral 7B (2023) wykazał, że model o parametrach 7B może odpowiadać
 wydajność znacznie większych modeli przy użyciu wydajnych technik, takich jak przesuwanie
-uwaga okna i uwaga skupiona na zapytaniach. Mixtral 8x7B (2024) to mieszanka-
+uwaga okna i uwaga skupiona na zapytaniach. Mixtral 8x7B (2026) to mieszanka-
 model ekspertów — kieruje każdy token do podzbioru 8 sieci eksperckich,
 osiągnięcie wydajności na poziomie GPT-3.5, będąc jednocześnie tańszym obliczeniowo.
 Modele Mistrala są w pełni otwarte i można je uruchamiać lokalnie.

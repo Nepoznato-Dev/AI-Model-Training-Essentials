@@ -53,7 +53,7 @@ Parmi les LLM notables, on trouve :
 - **LLaMA / Llama 3** (Meta) : modèles à poids ouverts pour la recherche et le déploiement local
 - **Mistral** (Mistral AI) : modèles ouverts efficaces et compétitifs face à des LLM bien plus grands
 
-Les LLM sont entraînés en deux étapes : le pré-entraînement (non supervisé sur de grands corpus textuels) puis le fine-tuning (supervisé ou via reinforcement learning from human feedback, RLHF). Les fenêtres de contexte décrivent la quantité de texte qu'un LLM peut traiter en une fois, allant de 4K tokens (premiers GPT-3) à plus d'un million de tokens pour les modèles les plus avancés de 2024.
+Les LLM sont entraînés en deux étapes : le pré-entraînement (non supervisé sur de grands corpus textuels) puis le fine-tuning (supervisé ou via reinforcement learning from human feedback, RLHF). Les fenêtres de contexte décrivent la quantité de texte qu'un LLM peut traiter en une fois, allant de 4K tokens (premiers GPT-3) à plus d'un million de tokens pour les modèles les plus avancés de 2026.
 
 ## Éthique et sécurité de l'IA
 
@@ -88,4 +88,4 @@ La robotique combine l'IA et les machines physiques. Les robots modernes utilise
 - **Agents et agentic AI** : LLM capables d'utiliser des outils, de naviguer sur le Web, d'écrire du code et d'accomplir des actions en plusieurs étapes (OpenAI's Operator, Anthropic Computer Use)
 - **Modèles à poids ouverts** : LLaMA de Meta a démocratisé l'accès aux grands modèles pour les chercheurs
 - **IA sur appareil** : exécution de modèles d'IA localement sur téléphones et ordinateurs portables sans dépendance au cloud (Apple Intelligence, Qualcomm NPUs)
-- **Régulation de l'IA** : l'EU AI Act (2024) est la première législation globale de grande ampleur sur l'IA, classant les systèmes selon leur niveau de risque
+- **Régulation de l'IA** : l'EU AI Act (2026) est la première législation globale de grande ampleur sur l'IA, classant les systèmes selon leur niveau de risque

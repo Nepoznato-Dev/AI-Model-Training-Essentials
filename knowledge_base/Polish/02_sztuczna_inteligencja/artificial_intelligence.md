@@ -46,7 +46,7 @@ Wybitne LLM obejmują:
 - **LLaMA / Lama 3** (Meta): Modele o otwartej wadze do badań i zastosowań lokalnych
 - **Mistral** (Mistral AI): Wydajne modele otwarte, konkurencyjne w stosunku do znacznie większych LLM
 
-LLM są szkoleni w dwóch etapach: szkolenie wstępne (bez nadzoru na korpusach z dużym tekstem) i dostrajanie (pod nadzorem lub poprzez uczenie się przez wzmacnianie na podstawie informacji zwrotnych od ludzi, RLHF). Okna kontekstowe opisują, ile tekstu może przetworzyć LLM na raz, od tokenów 4K (wczesne GPT-3) do ponad 1 miliona tokenów w najbardziej zaawansowanych modelach z 2024 roku.
+LLM są szkoleni w dwóch etapach: szkolenie wstępne (bez nadzoru na korpusach z dużym tekstem) i dostrajanie (pod nadzorem lub poprzez uczenie się przez wzmacnianie na podstawie informacji zwrotnych od ludzi, RLHF). Okna kontekstowe opisują, ile tekstu może przetworzyć LLM na raz, od tokenów 4K (wczesne GPT-3) do ponad 1 miliona tokenów w najbardziej zaawansowanych modelach z 2026 roku.
 
 ## Etyka i bezpieczeństwo AISztuczna inteligencja rodzi ważne pytania etyczne, w tym uprzedzenia, prywatność, zmianę miejsca pracy i ryzyko niewłaściwego wykorzystania. Błąd algorytmiczny występuje, gdy dane szkoleniowe odzwierciedlają nierówności historyczne, co powoduje, że systemy sztucznej inteligencji generują dyskryminujące wyniki. Systemy rozpoznawania twarzy wykazały wyższy poziom błędów w przypadku osób o ciemniejszej karnacji. Stwierdzono, że algorytmy zatrudniania faworyzują kandydatów płci męskiej.
 
@@ -79,4 +79,4 @@ Robotyka łączy sztuczną inteligencję z maszynami fizycznymi. Nowoczesne robo
 - **Agenci i agentyczna sztuczna inteligencja**: LLM, które mogą korzystać z narzędzi, przeglądać sieć, pisać kod i podejmować wieloetapowe działania (operator OpenAI, użycie komputera antropicznego)
 - **Modele o otwartej wadze**: LLaMA firmy Meta zdemokratyzowała dostęp badaczy do dużych modeli
 - **AI na urządzeniu**: Uruchamianie modeli AI lokalnie na telefonach i laptopach bez łączności z chmurą (Apple Intelligence, jednostki NPU Qualcomm)
-- **Rozporządzenie dotyczące sztucznej inteligencji**: Ustawa UE dotycząca sztucznej inteligencji (2024) to pierwsze na świecie kompleksowe prawo dotyczące sztucznej inteligencji, klasyfikujące systemy sztucznej inteligencji według poziomu ryzyka
+- **Rozporządzenie dotyczące sztucznej inteligencji**: Ustawa UE dotycząca sztucznej inteligencji (2026) to pierwsze na świecie kompleksowe prawo dotyczące sztucznej inteligencji, klasyfikujące systemy sztucznej inteligencji według poziomu ryzyka

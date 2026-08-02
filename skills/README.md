@@ -180,7 +180,7 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 ---
 
-**Copyright (c) 2024 Skills Repository Contributors**
+**Copyright (c) 2026 Skills Repository Contributors**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Skills"), to deal

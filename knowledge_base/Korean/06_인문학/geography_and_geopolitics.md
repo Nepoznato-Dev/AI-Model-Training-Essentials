@@ -53,7 +53,7 @@ For accuracy improvements, please contribute edits via pull requests.
 ## 인간지리
 
 ### 인구 분포
-- **인구가 가장 많은 국가** (2024): India(~1.43B), China(~1.42B), USA(~340M), Indonesia(~280M), Pakistan(~240M)
+- **인구가 가장 많은 국가** (2026): India(~1.43B), China(~1.42B), USA(~340M), Indonesia(~280M), Pakistan(~240M)
 - **인구 밀도**: Monaco(최고), Macau, Singapore, Hong Kong, Bahrain
 - **도시화**: 전 세계 인구의 55% 이상이 도시에 거주하며, 2050년에는 68%에 이를 것으로 전망됩니다.
 - **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijing, Dhaka, Osaka
@@ -81,7 +81,7 @@ For accuracy improvements, please contribute edits via pull requests.
 
 ### 국제기구
 - **United Nations (UN)**: 193개 회원국으로 구성되며, 평화유지·인도주의 지원·국제법을 다룹니다.
-- **NATO**: North Atlantic Treaty Organization으로, 2024년 기준 32개 회원국을 둔 군사 동맹입니다.
+- **NATO**: North Atlantic Treaty Organization으로, 2026년 기준 32개 회원국을 둔 군사 동맹입니다.
 - **European Union (EU)**: 27개 회원국으로 이루어진 경제·정치 연합이며, 이 중 20개국이 euro를 사용합니다.
 - **World Trade Organization (WTO)**: 국제 무역을 규율합니다.
 - **World Health Organization (WHO)**: 세계 공중보건 협력을 조정합니다.

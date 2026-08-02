@@ -46,7 +46,7 @@
 ## Geografia Humana
 
 ### Distribuição da População
-- **Países Mais Populosos** (2024): Índia (~1,43 bi), China (~1,42 bi), EUA (~340 mi), Indonésia (~280 mi), Paquistão (~240 mi)
+- **Países Mais Populosos** (2026): Índia (~1,43 bi), China (~1,42 bi), EUA (~340 mi), Indonésia (~280 mi), Paquistão (~240 mi)
 - **Densidade Populacional**: Mônaco (mais alta), Macau, Singapura, Hong Kong, Bahrein
 - **Urbanização**: Mais de 55% da população global vive em cidades, com projeção de 68% até 2050
 - **Megacidades** (10M+): Tóquio, Délhi, Xangai, São Paulo, Cidade do México, Cairo, Mumbai, Pequim, Daca, Osaka
@@ -74,7 +74,7 @@
 
 ### Organizações Internacionais
 - **Nações Unidas (ONU)**: 193 Estados-membros, manutenção da paz, ajuda humanitária, direito internacional
-- **OTAN**: Organização do Tratado do Atlântico Norte, aliança militar (32 membros em 2024)
+- **OTAN**: Organização do Tratado do Atlântico Norte, aliança militar (32 membros em 2026)
 - **União Europeia (UE)**: 27 Estados-membros, união econômica e política, moeda euro (20 membros)
 - **Organização Mundial do Comércio (OMC)**: Regula o comércio internacional
 - **Organização Mundial da Saúde (OMS)**: Coordenação global da saúde pública

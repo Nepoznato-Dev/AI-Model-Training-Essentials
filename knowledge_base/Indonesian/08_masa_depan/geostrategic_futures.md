@@ -233,7 +233,7 @@ Lanskap geopolitik global sedang mengalami transformasi mendalam ketika kekuasaa
 #### Pengelompokan Baru
 - **Quad**: AS, Jepang, India, Australia (fokus Indo-Pasifik)
 - **AUKUS**: Australia-UK-AS (berbagi teknologi, kapal selam)
-- **BRICS+**: Diperluas mencakup Iran, Ethiopia, Mesir, UAE (2024)
+- **BRICS+**: Diperluas mencakup Iran, Ethiopia, Mesir, UAE (2026)
 - **SCO**: Shanghai Cooperation Organisation (dipimpin China-Rusia)
 
 #### Koalisi Fleksibel

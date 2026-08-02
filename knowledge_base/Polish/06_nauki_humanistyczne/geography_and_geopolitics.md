@@ -46,7 +46,7 @@
 ## Geografia człowieka
 
 ### Rozkład populacji
-- **Najbardziej zaludnione kraje** (2024): Indie (~1,43 mld), Chiny (~1,42 mld), USA (~340 mln), Indonezja (~280 mln), Pakistan (~240 mln)
+- **Najbardziej zaludnione kraje** (2026): Indie (~1,43 mld), Chiny (~1,42 mld), USA (~340 mln), Indonezja (~280 mln), Pakistan (~240 mln)
 - **Gęstość zaludnienia**: Monako (najwyższa), Makau, Singapur, Hongkong, Bahrajn
 - **Urbanizacja**: Ponad 55% światowej populacji mieszka w miastach, prognozuje się, że do 2050 r. będzie to 68%
 - **Megamiast** (10M+): Tokio, Delhi, Szanghaj, São Paulo, Meksyk, Kair, Bombaj, Pekin, Dhaka, Osaka
@@ -72,7 +72,7 @@
 - **Federalny**: Władza podzielona pomiędzy rządy krajowe i regionalne
 - **Unitarny**: Scentralizowany rząd, podległy władzom regionalnym### Organizacje międzynarodowe
 - **Organizacja Narodów Zjednoczonych (ONZ)**: 193 państwa członkowskie, operacje pokojowe, pomoc humanitarna, prawo międzynarodowe
-- **NATO**: Organizacja Traktatu Północnoatlantyckiego, sojusz wojskowy (32 członków od 2024 r.)
+- **NATO**: Organizacja Traktatu Północnoatlantyckiego, sojusz wojskowy (32 członków od 2026 r.)
 - **Unia Europejska (UE)**: 27 państw członkowskich, unia gospodarcza i polityczna, waluta euro (20 członków)
 - **Światowa Organizacja Handlu (WTO)**: Reguluje handel międzynarodowy
 - **Światowa Organizacja Zdrowia (WHO)**: Globalna koordynacja zdrowia publicznego

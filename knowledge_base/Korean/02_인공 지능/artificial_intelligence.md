@@ -53,7 +53,7 @@ AI의 역사는 거의 80년에 걸쳐 이어집니다. 초기 이론적 토대�
 - **LLaMA / Llama 3** (Meta): 연구와 로컬 배포에 적합한 open-weight 모델입니다.
 - **Mistral** (Mistral AI): 훨씬 더 큰 LLM과 경쟁할 수 있는 효율적인 오픈 모델입니다.
 
-LLM은 두 단계로 학습됩니다. 첫 번째는 대규모 텍스트 코퍼스에 대한 비지도 사전학습(pre-training)이고, 두 번째는 supervised 방식 또는 인간 피드백 기반 강화학습(RLHF)을 활용한 fine-tuning입니다. Context window는 LLM이 한 번에 처리할 수 있는 텍스트 양을 뜻하며, 초기 GPT-3의 4K tokens부터 2024년 최상위 모델의 100만 tokens 이상까지 다양합니다.
+LLM은 두 단계로 학습됩니다. 첫 번째는 대규모 텍스트 코퍼스에 대한 비지도 사전학습(pre-training)이고, 두 번째는 supervised 방식 또는 인간 피드백 기반 강화학습(RLHF)을 활용한 fine-tuning입니다. Context window는 LLM이 한 번에 처리할 수 있는 텍스트 양을 뜻하며, 초기 GPT-3의 4K tokens부터 2026년 최상위 모델의 100만 tokens 이상까지 다양합니다.
 
 ## AI 윤리와 안전
 
@@ -88,4 +88,4 @@ AI는 거의 모든 산업을 변화시키고 있습니다.
 - **Agents and agentic AI**: 도구를 사용하고, 웹을 탐색하고, 코드를 작성하며, 여러 단계의 행동을 수행할 수 있는 LLM입니다(OpenAI's Operator, Anthropic Computer Use).
 - **Open-weight models**: Meta의 LLaMA는 연구자들이 대규모 모델에 접근할 수 있는 길을 넓혔습니다.
 - **On-device AI**: 클라우드 연결 없이 휴대폰과 노트북에서 AI 모델을 로컬로 실행하는 방식입니다(Apple Intelligence, Qualcomm NPUs).
-- **AI regulation**: EU AI Act(2024)는 위험 수준에 따라 AI 시스템을 분류하는 세계 최초의 포괄적 AI 법률입니다.
+- **AI regulation**: EU AI Act(2026)는 위험 수준에 따라 AI 시스템을 분류하는 세계 최초의 포괄적 AI 법률입니다.

@@ -48,7 +48,7 @@ Overviews da Busca Google.
 
 ### Phi-3-mini
 Phi-3-mini é um pequeno modelo de linguagem (SLM) desenvolvido pela Microsoft
-com 3,8B parâmetros. Foi lançado em abril de 2024. Ao contrário da maioria dos
+com 3,8B parâmetros. Foi lançado em abril de 2026. Ao contrário da maioria dos
 grandes modelos, o Phi-3-mini foi treinado em um conjunto de dados
 cuidadosamente curado de "qualidade de livro didático" — uma técnica
 pioneirada pela Microsoft Research — que prioriza a qualidade dos dados em vez
@@ -62,7 +62,7 @@ no dispositivo em um smartphone moderno com RAM suficiente.
 ### Llama (Meta AI)
 Llama (Large Language Model Meta AI) é uma família de modelos com pesos abertos
 lançada pela Meta. O Llama 2 (2023) foi disponibilizado para pesquisa e uso
-comercial em tamanhos que variam de 7B a 70B parâmetros. O Llama 3 (2024)
+comercial em tamanhos que variam de 7B a 70B parâmetros. O Llama 3 (2026)
 melhorou significativamente o desempenho, com modelos variando de 8B a 70B (e
 posteriormente 400B+). Como os pesos podem ser baixados publicamente, os
 modelos Llama formam a base de um grande ecossistema de variantes ajustadas
@@ -73,7 +73,7 @@ ou privadas de IA.
 Mistral AI é uma empresa francesa de IA que desenvolve LLMs abertos e
 proprietários. O Mistral 7B (2023) demonstrou que um modelo de 7B parâmetros
 pode igualar o desempenho de modelos muito maiores usando técnicas eficientes,
-como sliding window attention e grouped-query attention. O Mixtral 8x7B (2024)
+como sliding window attention e grouped-query attention. O Mixtral 8x7B (2026)
 é um modelo mixture-of-experts — ele direciona cada token para um subconjunto
 de 8 redes especialistas, alcançando desempenho de nível GPT-3.5 com menor
 custo computacional. Os modelos da Mistral têm pesos totalmente abertos e podem

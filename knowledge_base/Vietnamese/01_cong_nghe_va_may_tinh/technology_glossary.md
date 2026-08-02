@@ -43,7 +43,7 @@ Tổng quan.
 
 ### Phi-3-mini
 Phi-3-mini là mô hình ngôn ngữ nhỏ (SLM) được Microsoft phát triển với 3.8B
-các thông số. Nó được phát hành vào tháng 4 năm 2024. Không giống như hầu hết các mẫu lớn, Phi-3-mini
+các thông số. Nó được phát hành vào tháng 4 năm 2026. Không giống như hầu hết các mẫu lớn, Phi-3-mini
 đã được đào tạo về bộ dữ liệu "chất lượng sách giáo khoa" được quản lý cẩn thận - một kỹ thuật
 được tiên phong bởi Microsoft Research — ưu tiên chất lượng dữ liệu hơn khối lượng thô.
 Mặc dù nhỏ hơn nhiều so với GPT-4 hay Claude 3 Opus, nhưng các trận đấu Phi-3-mini hay
@@ -55,7 +55,7 @@ hoặc thậm chí trên thiết bị trên điện thoại thông minh hiện �
 ### Llama (Meta AI)
 Llama (Mô hình ngôn ngữ lớn Meta AI) là một nhóm mô hình có trọng lượng mở
 được phát hành bởi Meta. Llama 2 (2023) được phát hành để nghiên cứu và sử dụng thương mại
-với kích thước khác nhau, từ các thông số 7B đến 70B. Llama 3 (2024) cải tiến
+với kích thước khác nhau, từ các thông số 7B đến 70B. Llama 3 (2026) cải tiến
 hiệu suất đáng kể, với các model từ 8B đến 70B (và sau này là 400B+).
 Vì trọng lượng có thể tải xuống công khai nên mô hình Llama là nền tảng
 cho một hệ sinh thái rộng lớn gồm các biến thể được tinh chỉnh (Mistral, Alpaca, Vicuna, v.v.)
@@ -65,7 +65,7 @@ và được sử dụng rộng rãi để triển khai AI cục bộ/riêng tư
 Mistral AI là một công ty AI của Pháp chuyên phát triển LLM mở và độc quyền.
 Mistral 7B (2023) đã chứng minh rằng mô hình tham số 7B có thể phù hợp với
 hiệu suất của các mô hình lớn hơn nhiều bằng cách sử dụng các kỹ thuật hiệu quả như trượt
-sự chú ý của cửa sổ và sự chú ý truy vấn được nhóm. Mixtral 8x7B (2024) là hỗn hợp-
+sự chú ý của cửa sổ và sự chú ý truy vấn được nhóm. Mixtral 8x7B (2026) là hỗn hợp-
 mô hình chuyên gia - nó định tuyến từng mã thông báo đến một tập hợp con gồm 8 mạng chuyên gia,
 đạt được hiệu suất ở mức GPT-3.5 trong khi rẻ hơn về mặt tính toán.
 Các mẫu xe của Mistral hoàn toàn có trọng lượng mở và có thể chạy cục bộ.

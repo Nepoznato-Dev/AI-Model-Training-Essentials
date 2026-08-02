@@ -689,4 +689,4 @@ You've mastered test automation when you can:
 
 ---
 
-*Version: 1.0.0 | Last Updated: 2024 | Next Review: Q2 2025*
+*Version: 1.0.0 | Last Updated: 2026 | Next Review: Q2 2025*

@@ -49,7 +49,7 @@ filetype: - Specific format: filetype:pdf
 intitle:  - In title: intitle:"best practices"
 related:  - Similar sites: related:stackoverflow.com
 *         - Wildcard: "how to * in python"
-..        - Number range: python 2020..2024
+..        - Number range: python 2020..2026
 ```
 
 ### Research Workflow
@@ -229,7 +229,7 @@ Date: [YYYY-MM-DD]
 **Step 2: Initial Search**
 ```
 "real-time analytics database" comparison
-"time-series database" benchmark 2024
+"time-series database" benchmark 2026
 "streaming data" database performance
 ```
 

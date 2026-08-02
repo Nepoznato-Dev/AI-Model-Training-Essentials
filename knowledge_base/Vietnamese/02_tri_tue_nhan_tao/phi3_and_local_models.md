@@ -6,7 +6,7 @@ Phân tích về mô hình Phi-3-mini của Microsoft — triết lý thiết k�
 
 ## Tổng quan về Phi-3-mini
 
-Phi-3-mini là mô hình ngôn ngữ nhỏ (SLM) do Microsoft Research phát triển, phát hành vào tháng 4 năm 2024. Đặc điểm xác định của nó là:
+Phi-3-mini là mô hình ngôn ngữ nhỏ (SLM) do Microsoft Research phát triển, phát hành vào tháng 4 năm 2026. Đặc điểm xác định của nó là:
 
 - **3,8 tỷ tham số** — nhỏ hơn khoảng 6× so với Llama 3 8B của Meta
 - **Dữ liệu đào tạo có chất lượng như sách giáo khoa** — chìa khóa cho hiệu suất vượt trội của nó
@@ -85,7 +85,7 @@ Phi-3-mini hoạt động rất tốt so với số lượng thông số của n
 - Nó vượt trội hơn Mistral 7B trên mọi điểm chuẩn được liệt kê mặc dù nhỏ hơn
 - Nó gần bằng Llama 3 8B trong khi nhỏ hơn 2× (3,8B so với 8B)
 
-*Nguồn: Báo cáo kỹ thuật Microsoft Phi-3 (tháng 4 năm 2024)*
+*Nguồn: Báo cáo kỹ thuật Microsoft Phi-3 (tháng 4 năm 2026)*
 
 ---
 
@@ -123,9 +123,9 @@ Triết lý thiết kế Phi-3 phù hợp chặt chẽ với cách tiếp cận 
 
 ---
 
-## Các mô hình địa phương đáng chú ý khác (2024)
+## Các mô hình địa phương đáng chú ý khác (2026)
 
-### Llama 3 (Meta, 2024)
+### Llama 3 (Meta, 2026)
 - Các biến thể 8B và 70B (sắp có 400B+)
 - Mẫu có trọng lượng mở tốt nhất ở mỗi kích cỡ
 - Cửa sổ ngữ cảnh 8.192 mã thông báo (có thể mở rộng)
@@ -136,21 +136,21 @@ Triết lý thiết kế Phi-3 phù hợp chặt chẽ với cách tiếp cận 
 - **Mixtral 8x7B**: hỗn hợp của các chuyên gia, hiệu suất cấp GPT-3.5 tại địa phương
 - **Mistral-Nemo 12B**: lớn hơn, hiện đại nhất trong phân khúc của nó
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - Các biến thể 2B và 9B từ Google
 - Lý luận mạnh mẽ cho kích thước của chúng
 - Có sẵn theo giấy phép cho phép sử dụng tại địa phương
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - Các biến thể 0,5B đến 72B
 - Khả năng đa ngôn ngữ mạnh mẽ
 - Đặc biệt tốt cho các tác vụ mã hóa ở kích thước nhỏ
 
 ---
 
-## Thị trường mô hình AI địa phương năm 2024–2025
+## Thị trường mô hình AI địa phương năm 2026–2025
 
-Khoảng cách giữa mô hình cục bộ và mô hình đám mây được thu hẹp đáng kể vào năm 2024:
+Khoảng cách giữa mô hình cục bộ và mô hình đám mây được thu hẹp đáng kể vào năm 2026:
 
 - Phi-3-mini lượng tử hóa 4-bit miễn phí chạy trên máy tính xách tay vượt trội hơn GPT-3.5 (mẫu máy tốn hàng triệu USD để đào tạo) trên nhiều điểm chuẩn
 - GPU 24GB dành cho người tiêu dùng (NVIDIA RTX 3090, 4090) có thể chạy các mẫu 70B ở 4-bit

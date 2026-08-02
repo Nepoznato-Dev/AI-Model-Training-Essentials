@@ -211,7 +211,7 @@ GET /articles?author=john&tag=tech&sort=-created_at&limit=10&fields=id,title,exc
       "attributes": {
         "title": "API Design Best Practices",
         "excerpt": "Learn how to design great APIs...",
-        "created_at": "2024-01-15T10:30:00Z"
+        "created_at": "2026-01-15T10:30:00Z"
       },
       "relationships": {
         "author": {

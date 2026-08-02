@@ -351,4 +351,4 @@ MIT License - See [LICENSE](../LICENSE) file for details.
 
 ---
 
-**Copyright (c) 2024 Skills Repository Contributors**
+**Copyright (c) 2026 Skills Repository Contributors**

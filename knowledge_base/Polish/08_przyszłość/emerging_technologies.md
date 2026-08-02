@@ -56,7 +56,7 @@ Quantum computing leverages quantum mechanical phenomena to process information 
 ### Post-Quantum Cryptography
 
 #### Transition Timeline
-- **NIST Standardization**: Selected algorithms announced (2022-2024)
+- **NIST Standardization**: Selected algorithms announced (2022-2026)
 - **Migration Period**: Organizations advised to begin crypto-agility planning
 - **Harvest Now, Decrypt Later**: Concern about adversaries storing encrypted data
 

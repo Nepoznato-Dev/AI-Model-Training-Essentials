@@ -46,7 +46,7 @@ LLM terkenal meliputi:
 - **LLaMA / Llama 3** (Meta): Model bobot terbuka untuk penelitian dan penerapan lokal
 - **Mistral** (Mistral AI): Model terbuka yang efisien bersaing dengan LLM yang jauh lebih besar
 
-LLM dilatih dalam dua tahap: pra-pelatihan (tanpa pengawasan pada korpora teks besar) dan penyesuaian (diawasi atau melalui pembelajaran penguatan dari umpan balik manusia, RLHF). Jendela konteks menjelaskan berapa banyak teks yang dapat diproses LLM sekaligus, mulai dari token 4K (GPT-3 awal) hingga lebih dari 1 juta token pada model paling canggih tahun 2024.
+LLM dilatih dalam dua tahap: pra-pelatihan (tanpa pengawasan pada korpora teks besar) dan penyesuaian (diawasi atau melalui pembelajaran penguatan dari umpan balik manusia, RLHF). Jendela konteks menjelaskan berapa banyak teks yang dapat diproses LLM sekaligus, mulai dari token 4K (GPT-3 awal) hingga lebih dari 1 juta token pada model paling canggih tahun 2026.
 
 ## Etika dan Keamanan AIAI menimbulkan pertanyaan etika yang penting termasuk bias, privasi, perpindahan pekerjaan, dan risiko penyalahgunaan. Bias algoritmik terjadi ketika data pelatihan mencerminkan ketidaksetaraan historis, sehingga menyebabkan sistem AI menghasilkan keluaran yang diskriminatif. Sistem pengenalan wajah menunjukkan tingkat kesalahan yang lebih tinggi pada individu berkulit gelap. Algoritme perekrutan terbukti lebih menguntungkan kandidat laki-laki.
 
@@ -79,4 +79,4 @@ Robotika menggabungkan AI dengan mesin fisik. Robot modern menggunakan persepsi 
 - **Agen dan AI agen**: LLM yang dapat menggunakan alat, menjelajahi web, menulis kode, dan melakukan tindakan multi-langkah (Operator OpenAI, Penggunaan Komputer Antropis)
 - **Model bobot terbuka**: LLaMA Meta mendemokratisasikan akses ke model besar bagi para peneliti
 - **AI pada perangkat**: Menjalankan model AI secara lokal di ponsel dan laptop tanpa konektivitas cloud (Apple Intelligence, Qualcomm NPU)
-- **Regulasi AI**: EU AI Act (2024) adalah undang-undang AI komprehensif pertama di dunia, yang mengklasifikasikan sistem AI berdasarkan tingkat risiko
+- **Regulasi AI**: EU AI Act (2026) adalah undang-undang AI komprehensif pertama di dunia, yang mengklasifikasikan sistem AI berdasarkan tingkat risiko

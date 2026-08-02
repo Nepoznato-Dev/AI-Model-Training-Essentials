@@ -73,7 +73,7 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 **Chang'e Missions**
 - Chang'e 4: First landing on far side (2019)
 - Chang'e 5: Sample return (2020)
-- Chang'e 6: Far side sample return (2024)
+- Chang'e 6: Far side sample return (2026)
 - Chang'e 7/8: South pole reconnaissance (2026-2028)
 
 **Crewed Lunar Plans**
@@ -91,7 +91,7 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 - Considering crewed lunar mission
 
 **Japan (JAXA)**
-- SLIM precision landing demonstration (2024)
+- SLIM precision landing demonstration (2026)
 - Planning lunar sample return
 - Contributing to Gateway
 
@@ -113,8 +113,8 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 - Supports science and technology demonstrations
 
 #### Selected Providers
-- **Intuitive Machines**: Nova-C lander, first commercial landing (2024)
-- **Astrobotic**: Peregrine lander (attempted 2024)
+- **Intuitive Machines**: Nova-C lander, first commercial landing (2026)
+- **Astrobotic**: Peregrine lander (attempted 2026)
 - **Firefly Aerospace**: Blue Ghost lander
 - **Draper**: Series 2 lander
 - **Blue Origin**: Blue Moon lander
@@ -261,7 +261,7 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 
 **Orbital Tourism**
 - **Axiom Space**: Private missions to ISS
-  - Ax-1 (2022), Ax-2 (2023), Ax-3 (2024)
+  - Ax-1 (2022), Ax-2 (2023), Ax-3 (2026)
   - Building private space station
 - **SpaceX Inspiration4** (2021): First all-civilian orbital mission
 - **Polaris Program**: SpaceX missions including first commercial spacewalk
@@ -292,7 +292,7 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 **Commercial Resupply Services (CRS)**
 - SpaceX Dragon: Primary ISS cargo provider
 - Northrop Grumman Cygnus: Secondary provider
-- Sierra Nevada Dream Chaser: Winged cargo vehicle (first flight 2024)
+- Sierra Nevada Dream Chaser: Winged cargo vehicle (first flight 2026)
 - Future lunar cargo delivery via CLPS
 
 #### Satellite Servicing
@@ -314,16 +314,16 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 #### Reusable Rockets
 
 **Falcon 9 Dominance**
-- Over 300 launches through 2024
+- Over 300 launches through 2026
 - First stage reuse up to 20+ times
 - Dramatically reduced launch costs
 - Enabled new mission architectures
 
 **Competitor Responses**
 - **Rocket Lab**: Electron recoverable, developing Neutron
-- **Blue Origin**: New Glenn orbital rocket (maiden flight expected 2024)
-- **United Launch Alliance**: Vulcan Centaur (first launch 2024)
-- **Arianespace**: Ariane 6 (maiden flight 2024)
+- **Blue Origin**: New Glenn orbital rocket (maiden flight expected 2026)
+- **United Launch Alliance**: Vulcan Centaur (first launch 2026)
+- **Arianespace**: Ariane 6 (maiden flight 2026)
 
 **Next Generation**
 - **SpaceX Starship**: Full reusability, 100+ ton capacity
@@ -483,7 +483,7 @@ Humanity stands at a pivotal moment in space exploration, with government agenci
 - Recognizes resource extraction rights
 - Safety zones around operations
 - Interoperability standards
-- 30+ signatories as of 2024
+- 30+ signatories as of 2026
 
 #### National Laws
 - **US Commercial Space Launch Competitiveness Act (2015)**: Right to own extracted resources

@@ -46,7 +46,7 @@ LLMs de destaque incluem:
 - **LLaMA / Llama 3** (Meta): Modelos com pesos abertos para pesquisa e implantação local
 - **Mistral** (Mistral AI): Modelos abertos eficientes e competitivos com LLMs muito maiores
 
-Os LLMs são treinados em duas etapas: pré-treinamento (não supervisionado em grandes corpus de texto) e ajuste fino (supervisionado ou por aprendizado por reforço a partir de feedback humano, RLHF). Janelas de contexto descrevem quanto texto um LLM pode processar de uma só vez, variando de 4 mil tokens (GPT-3 inicial) a mais de 1 milhão de tokens nos modelos mais avançados de 2024.
+Os LLMs são treinados em duas etapas: pré-treinamento (não supervisionado em grandes corpus de texto) e ajuste fino (supervisionado ou por aprendizado por reforço a partir de feedback humano, RLHF). Janelas de contexto descrevem quanto texto um LLM pode processar de uma só vez, variando de 4 mil tokens (GPT-3 inicial) a mais de 1 milhão de tokens nos modelos mais avançados de 2026.
 
 ## Ética e Segurança em IA
 
@@ -81,4 +81,4 @@ A robótica combina IA com máquinas físicas. Robôs modernos usam percepção 
 - **Agentes e IA agêntica**: LLMs que podem usar ferramentas, navegar na web, escrever código e realizar ações em múltiplas etapas (Operator da OpenAI, Computer Use da Anthropic)
 - **Modelos com pesos abertos**: O LLaMA da Meta democratizou o acesso a grandes modelos para pesquisadores
 - **IA no dispositivo**: Execução local de modelos de IA em celulares e laptops sem conectividade com a nuvem (Apple Intelligence, NPUs da Qualcomm)
-- **Regulação da IA**: O EU AI Act (2024) é a primeira lei abrangente de IA do mundo, classificando sistemas de IA por nível de risco
+- **Regulação da IA**: O EU AI Act (2026) é a primeira lei abrangente de IA do mundo, classificando sistemas de IA por nível de risco
