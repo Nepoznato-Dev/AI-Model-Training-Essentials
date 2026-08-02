@@ -1,0 +1,12 @@
+# Simple RAG System - Requirements
+
+# Core dependencies for RAG system
+transformers>=4.36.0
+torch>=2.0.0
+sentence-transformers>=2.2.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Optional: For Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
