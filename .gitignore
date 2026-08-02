@@ -1,21 +1,5 @@
 # Examples
 
-Input:
-### Added files:
-['guides/MoE/CHAPTER_1_fundamentals.md', 'guides/MoE/CHAPTER_2_advanced_architectures.md', 'guides/MoE/CHAPTER_3_production_deployment.md']
-
-### Deleted files:
-[]
-
-### Modified files:
-['guides/README.md']
-
-###current .gitignore Content
-
-Your output: Only the optimized .gitignore content (or empty if no ignores needed).
-
-#Examples 1:
-
     Input:
     ### Added files:
     [src/main.py, README.md, config.json]
@@ -67,5 +51,3 @@ Expected Output:
     #Original rules preserved
     *.log
 Final reminder: Output ONLY the .gitignore content. If nothing should be ignored, output NOTHING.
-
-(empty)
