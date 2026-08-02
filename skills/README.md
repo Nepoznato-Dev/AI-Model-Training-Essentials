@@ -17,6 +17,20 @@ This repository contains structured skill documentation organized by category. E
 
 ## Categories
 
+### 🎯 Focused Skills Library (`focused-skills/`)
+**NEW!** 10 well-developed ML/AI skills with practice projects and deliberately broken code to debug.
+
+Each skill includes:
+- Clear learning objectives tied to specific guides
+- Hands-on practice exercises
+- Broken code to fix (learn by debugging!)
+- Real-world applications
+- Mastery checklists
+
+[**Start Here →**](./focused-skills/README.md)
+
+---
+
 ### 🧠 Behavior Skills (`behavior-skills/`)
 Cognitive and personal effectiveness skills for individual contributors.
 
