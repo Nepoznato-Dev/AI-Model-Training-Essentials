@@ -237,6 +237,7 @@ class Mixup:
             return images, targets
         
         # Sample mixing coefficient
+        import numpy as np
         lam = np.random.beta(self.alpha, self.alpha)
         
         # Random permutation
