@@ -56,7 +56,7 @@ Komputasi kuantum memanfaatkan fenomena mekanika kuantum untuk memproses informa
 ### Kriptografi Pasca-Kuantum
 
 #### Jadwal Transisi
-- **NIST Standardization**: Algoritme terpilih diumumkan (2022-2024)
+- **NIST Standardization**: Algoritme terpilih diumumkan (2022-2026)
 - **Migration Period**: Organisasi disarankan mulai merencanakan crypto-agility
 - **Harvest Now, Decrypt Later**: Kekhawatiran tentang pihak lawan yang menyimpan data terenkripsi
 

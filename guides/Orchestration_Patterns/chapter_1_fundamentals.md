@@ -528,7 +528,7 @@ def lookup_order(context):
         "order_id": order_id,
         "customer": "Alice Johnson",
         "items": ["Wireless Headphones"],
-        "order_date": "2024-01-01",
+        "order_date": "2026-01-01",
         "status": "shipped",
         "tracking_number": "TRK123456789"
     }
@@ -545,7 +545,7 @@ def check_shipping(context):
         "tracking_number": tracking,
         "carrier": "FedEx",
         "status": "in_transit",
-        "estimated_delivery": "2024-01-20",
+        "estimated_delivery": "2026-01-20",
         "current_location": "Memphis, TN",
         "delay_reason": "weather"
     }
@@ -730,7 +730,7 @@ We sincerely apologize for the delay with your order...
 Dear Alice Johnson,
 We sincerely apologize for the delay with your order containing Wireless Headphones.
 The delay is due to weather.
-Your new estimated delivery date is 2024-01-20.
+Your new estimated delivery date is 2026-01-20.
 As compensation, we're offering 10_percent_discount on your next order.
 
 Thank you for your patience!

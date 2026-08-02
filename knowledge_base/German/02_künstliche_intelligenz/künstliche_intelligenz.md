@@ -53,7 +53,7 @@ Bemerkenswerte LLMs sind:
 - **LLaMA / Llama 3** (Meta): Open-Weight-Modelle für Forschung und lokale Bereitstellung
 - **Mistral** (Mistral AI): Effiziente offene Modelle, die mit deutlich größeren LLMs konkurrieren
 
-LLMs werden in zwei Phasen trainiert: Pre-Training (unüberwacht auf großen Textkorpora) und Fine-Tuning (überwacht oder mithilfe von Reinforcement Learning from Human Feedback, RLHF). Kontextfenster beschreiben, wie viel Text ein LLM auf einmal verarbeiten kann – von 4K-Token bei frühem GPT-3 bis zu mehr als 1 Million Token in den fortschrittlichsten Modellen des Jahres 2024.
+LLMs werden in zwei Phasen trainiert: Pre-Training (unüberwacht auf großen Textkorpora) und Fine-Tuning (überwacht oder mithilfe von Reinforcement Learning from Human Feedback, RLHF). Kontextfenster beschreiben, wie viel Text ein LLM auf einmal verarbeiten kann – von 4K-Token bei frühem GPT-3 bis zu mehr als 1 Million Token in den fortschrittlichsten Modellen des Jahres 2026.
 
 ## KI-Ethik und Sicherheit
 
@@ -88,4 +88,4 @@ Robotik verbindet KI mit physischen Maschinen. Moderne Roboter nutzen Wahrnehmun
 - **Agenten und agentische KI**: LLMs, die Werkzeuge verwenden, im Web surfen, Code schreiben und mehrstufige Aktionen ausführen können (OpenAIs Operator, Anthropic Computer Use)
 - **Open-Weight-Modelle**: Metas LLaMA hat den Zugang zu großen Modellen für Forschende demokratisiert
 - **On-Device-KI**: Ausführung von KI-Modellen lokal auf Telefonen und Laptops ohne Cloud-Konnektivität (Apple Intelligence, Qualcomm NPUs)
-- **KI-Regulierung**: Der EU AI Act (2024) ist das weltweit erste umfassende KI-Gesetz, das KI-Systeme nach Risikostufen klassifiziert
+- **KI-Regulierung**: Der EU AI Act (2026) ist das weltweit erste umfassende KI-Gesetz, das KI-Systeme nach Risikostufen klassifiziert

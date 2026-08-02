@@ -6,7 +6,7 @@ Microsoft'un Phi-3-mini modeline; tasarım felsefesine, mimari tercihlerine ve p
 
 ## Phi-3-mini'ye Genel Bakış
 
-Phi-3-mini, Microsoft Research tarafından geliştirilen ve Nisan 2024'te yayımlanan küçük bir dil modelidir (SLM). Ayırt edici özellikleri şunlardır:
+Phi-3-mini, Microsoft Research tarafından geliştirilen ve Nisan 2026'te yayımlanan küçük bir dil modelidir (SLM). Ayırt edici özellikleri şunlardır:
 
 - **3.8 milyar parametre** — Meta'nın Llama 3 8B modelinden yaklaşık 6× daha küçüktür
 - **Ders kitabı kalitesinde eğitim verisi** — beklenenden yüksek performansının anahtarıdır
@@ -85,7 +85,7 @@ Phi-3-mini, parametre sayısına göre dikkat çekici derecede iyi performans g�
 - Daha küçük olmasına rağmen listelenen her kıyaslama testinde Mistral 7B'yi geçer
 - 2× daha küçük olmasına karşın (3.8B vs 8B), Llama 3 8B ile neredeyse aynı düzeydedir
 
-*Kaynak: Microsoft Phi-3 Technical Report (Nisan 2024)*
+*Kaynak: Microsoft Phi-3 Technical Report (Nisan 2026)*
 
 ---
 
@@ -125,9 +125,9 @@ Phi-3 tasarım felsefesi, Potato.ai'nin KB merkezli yaklaşımıyla yakından ö
 
 ---
 
-## Diğer Dikkat Çekici Yerel Modeller (2024)
+## Diğer Dikkat Çekici Yerel Modeller (2026)
 
-### Llama 3 (Meta, 2024)
+### Llama 3 (Meta, 2026)
 - 8B ve 70B varyantları (ve yakında 400B+)
 - Her boyutta sınıfının en iyisi açık ağırlıklı modeller
 - 8,192 token bağlam penceresi (genişletilebilir)
@@ -138,21 +138,21 @@ Phi-3 tasarım felsefesi, Potato.ai'nin KB merkezli yaklaşımıyla yakından ö
 - **Mixtral 8x7B**: Mixture of experts, yerelde GPT-3.5 düzeyinde performans
 - **Mistral-Nemo 12B**: Daha büyük, sınıfı için son teknoloji
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - Google'dan 2B ve 9B varyantları
 - Boyutlarına göre güçlü akıl yürütme
 - Yerel kullanım için izin verici bir lisansla sunulur
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - 0.5B ile 72B arasında varyantlar
 - Güçlü çok dilli yetenek
 - Özellikle küçük boyutlarda kodlama görevlerinde iyidir
 
 ---
 
-## 2024–2025'te Yerel Yapay Zekâ Model Pazarı
+## 2026–2025'te Yerel Yapay Zekâ Model Pazarı
 
-2024'te yerel ve bulut modelleri arasındaki fark dramatik biçimde daraldı:
+2026'te yerel ve bulut modelleri arasındaki fark dramatik biçimde daraldı:
 
 - Laptop üzerinde çalışan ücretsiz, 4-bit kuantize bir Phi-3-mini; eğitimi milyonlarca dolara mal olmuş GPT-3.5'i birçok kıyaslama testinde geride bırakıyor
 - Tüketici sınıfı 24GB GPU'lar (NVIDIA RTX 3090, 4090), 70B modelleri 4-bit çalıştırabiliyor

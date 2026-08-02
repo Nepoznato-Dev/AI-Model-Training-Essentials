@@ -169,7 +169,7 @@ Step 7: You Receive the Answer
    - Searches medical database
 
 3. **Retriever finds these documents:**
-   - Document A: "Metformin remains first-line therapy for type 2 diabetes (2024 guidelines)"
+   - Document A: "Metformin remains first-line therapy for type 2 diabetes (2026 guidelines)"
    - Document B: "Lifestyle modifications including diet and exercise show significant improvement"
    - Document C: "GLP-1 receptor agonists demonstrate superior cardiovascular outcomes"
 
@@ -193,8 +193,8 @@ To understand why RAG exists, let's look at the problems with regular AI:
 **Regular AI:** When asked about something it doesn't know well, might confidently state incorrect information.
 
 **Example of hallucination:**
-- Question: "Who won the 2024 Nobel Prize in Physics?"
-- Regular AI (trained before 2024): Might make up a name or say it doesn't know
+- Question: "Who won the 2026 Nobel Prize in Physics?"
+- Regular AI (trained before 2026): Might make up a name or say it doesn't know
 - RAG System: Looks up the actual winner from a news database
 
 ### Problem 2: Outdated Knowledge
@@ -202,7 +202,7 @@ To understand why RAG exists, let's look at the problems with regular AI:
 **Regular AI:** Knowledge is frozen at training time.
 
 **Example:**
-- AI trained in 2023 doesn't know about events in 2024
+- AI trained in 2023 doesn't know about events in 2026
 - Can't access new scientific discoveries
 - Doesn't know current laws or regulations
 

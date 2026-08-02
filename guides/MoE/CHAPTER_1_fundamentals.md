@@ -520,4 +520,4 @@ In Chapter 3, we'll cover production deployment strategies, optimization techniq
 1. Shazeer, N., et al. (2017). "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
 2. Fedus, W., et al. (2021). "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
 3. Lepikhin, A., et al. (2020). "GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding"
-4. Jiang, A.Q., et al. (2024). "Mixtral of Experts"
+4. Jiang, A.Q., et al. (2026). "Mixtral of Experts"

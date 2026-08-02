@@ -27,13 +27,13 @@ Claude는 Anthropic이 개발한 AI assistant입니다. 이름은 information th
 Gemini는 Google DeepMind가 발표한 multimodal AI 모델 계열로, 2023년 12월에 공개되었습니다. Gemini는 text, images, audio, video를 처음부터 함께 학습한 네이티브 multimodal 모델로, 기존 모델처럼 나중에 fine-tuning으로 모달리티를 덧붙인 형태와 구분됩니다. Gemini Nano(on-device), Gemini Flash(빠르고 비용 효율적), Gemini Ultra(최고 성능) 같은 버전이 있으며, Google의 AI chatbot Bard(현재 이름은 Gemini)와 Google Search AI Overviews를 구동합니다.
 
 ### Phi-3-mini
-Phi-3-mini는 Microsoft가 개발한 38억 파라미터 규모의 small language model(SLM)입니다. 2024년 4월에 공개되었으며, 대부분의 대형 모델과 달리 Microsoft Research가 개척한 "textbook-quality" 데이터셋 구성 방식을 사용해 단순한 데이터 양보다 품질을 우선했습니다. GPT-4나 Claude 3 Opus보다 훨씬 작지만, MMLU와 HumanEval 같은 추론 benchmark에서는 자신보다 몇 배 큰 모델과 맞먹거나 더 나은 성능을 보입니다. 기본 버전은 4k token context window를, long-context 버전은 128k window를 지원합니다. 충분한 RAM이 있다면 일반 소비자용 GPU 한 장이나 최신 스마트폰 on-device 환경에서도 실행할 수 있습니다.
+Phi-3-mini는 Microsoft가 개발한 38억 파라미터 규모의 small language model(SLM)입니다. 2026년 4월에 공개되었으며, 대부분의 대형 모델과 달리 Microsoft Research가 개척한 "textbook-quality" 데이터셋 구성 방식을 사용해 단순한 데이터 양보다 품질을 우선했습니다. GPT-4나 Claude 3 Opus보다 훨씬 작지만, MMLU와 HumanEval 같은 추론 benchmark에서는 자신보다 몇 배 큰 모델과 맞먹거나 더 나은 성능을 보입니다. 기본 버전은 4k token context window를, long-context 버전은 128k window를 지원합니다. 충분한 RAM이 있다면 일반 소비자용 GPU 한 장이나 최신 스마트폰 on-device 환경에서도 실행할 수 있습니다.
 
 ### Llama (Meta AI)
-Llama(Large Language Model Meta AI)는 Meta가 공개한 open-weights 모델 계열입니다. Llama 2(2023)는 7B부터 70B까지 다양한 크기로 연구 및 상업적 활용을 위해 공개되었고, Llama 3(2024)는 성능을 크게 끌어올리며 8B부터 70B, 이후에는 400B+ 규모까지 확장되었습니다. 가중치를 공개 다운로드할 수 있기 때문에 Llama는 Mistral, Alpaca, Vicuna 같은 수많은 fine-tuned 변형 모델 생태계의 기반이 되었고, 로컬 또는 프라이빗 AI 배포에도 널리 사용됩니다.
+Llama(Large Language Model Meta AI)는 Meta가 공개한 open-weights 모델 계열입니다. Llama 2(2023)는 7B부터 70B까지 다양한 크기로 연구 및 상업적 활용을 위해 공개되었고, Llama 3(2026)는 성능을 크게 끌어올리며 8B부터 70B, 이후에는 400B+ 규모까지 확장되었습니다. 가중치를 공개 다운로드할 수 있기 때문에 Llama는 Mistral, Alpaca, Vicuna 같은 수많은 fine-tuned 변형 모델 생태계의 기반이 되었고, 로컬 또는 프라이빗 AI 배포에도 널리 사용됩니다.
 
 ### Mistral
-Mistral AI는 open 및 proprietary LLM을 개발하는 프랑스 AI 기업입니다. Mistral 7B(2023)는 sliding window attention, grouped-query attention 같은 효율적 기법을 활용해 70억 파라미터 모델이 훨씬 큰 모델과 비슷한 성능을 낼 수 있음을 보여주었습니다. Mixtral 8x7B(2024)는 mixture-of-experts 구조를 사용해 각 token을 8개의 expert network 중 일부로만 보내면서, GPT-3.5 수준의 성능을 더 낮은 계산 비용으로 달성합니다. Mistral의 일부 모델은 완전한 open-weight 형태로 공개되어 로컬 실행이 가능합니다.
+Mistral AI는 open 및 proprietary LLM을 개발하는 프랑스 AI 기업입니다. Mistral 7B(2023)는 sliding window attention, grouped-query attention 같은 효율적 기법을 활용해 70억 파라미터 모델이 훨씬 큰 모델과 비슷한 성능을 낼 수 있음을 보여주었습니다. Mixtral 8x7B(2026)는 mixture-of-experts 구조를 사용해 각 token을 8개의 expert network 중 일부로만 보내면서, GPT-3.5 수준의 성능을 더 낮은 계산 비용으로 달성합니다. Mistral의 일부 모델은 완전한 open-weight 형태로 공개되어 로컬 실행이 가능합니다.
 
 ---
 

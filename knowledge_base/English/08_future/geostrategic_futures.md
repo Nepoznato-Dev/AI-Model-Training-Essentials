@@ -233,7 +233,7 @@ The global geopolitical landscape is undergoing profound transformation as power
 #### New Groupings
 - **Quad**: US, Japan, India, Australia (Indo-Pacific focus)
 - **AUKUS**: Australia-UK-US (technology sharing, submarines)
-- **BRICS+**: Expanded to include Iran, Ethiopia, Egypt, UAE (2024)
+- **BRICS+**: Expanded to include Iran, Ethiopia, Egypt, UAE (2026)
 - **SCO**: Shanghai Cooperation Organisation (China-Russia led)
 
 #### Flexible Coalitions

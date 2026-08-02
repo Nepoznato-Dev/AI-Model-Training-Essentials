@@ -6,7 +6,7 @@ Analiza modelu Phi-3-mini firmy Microsoft — jego filozofii projektowania, wybo
 
 ## Przegląd Phi-3-mini
 
-Phi-3-mini to model małego języka (SLM) opracowany przez firmę Microsoft Research i wydany w kwietniu 2024 r. Jego charakterystyczne cechy to:
+Phi-3-mini to model małego języka (SLM) opracowany przez firmę Microsoft Research i wydany w kwietniu 2026 r. Jego charakterystyczne cechy to:
 
 - **3,8 miliarda parametrów** — około 6 razy mniej niż Meta Llama 3 8B
 - **Dane szkoleniowe o jakości podręcznikowej** – klucz do jego ponadprzeciętnej wydajności
@@ -85,7 +85,7 @@ Phi-3-mini działa wyjątkowo dobrze pod względem liczby parametrów:
 - Przewyższa Mistral 7B w każdym wymienionym benchmarku, mimo że jest mniejszy
 - Prawie pasuje do Lamy 3 8B, choć jest 2 razy mniejszy (3,8B vs 8B)
 
-*Źródło: Raport techniczny Microsoft Phi-3 (kwiecień 2024 r.)*
+*Źródło: Raport techniczny Microsoft Phi-3 (kwiecień 2026 r.)*
 
 ---
 
@@ -123,9 +123,9 @@ Filozofia projektowania Phi-3 jest ściśle zgodna z podejściem Potato.ai skonc
 
 ---
 
-## Inne godne uwagi lokalne modele (2024)
+## Inne godne uwagi lokalne modele (2026)
 
-### Lama 3 (Meta, 2024)
+### Lama 3 (Meta, 2026)
 - Warianty 8B i 70B (w przygotowaniu 400B+)
 - Najlepsze w swojej klasie modele z otwartą wagą w każdym rozmiarze
 - Okno kontekstowe tokenów 8192 (z możliwością rozszerzenia)
@@ -136,21 +136,21 @@ Filozofia projektowania Phi-3 jest ściśle zgodna z podejściem Potato.ai skonc
 - **Mixtral 8x7B**: mieszanka ekspertów, lokalnie wydajność na poziomie GPT-3.5
 - **Mistral-Nemo 12B**: większy, najnowocześniejszy w swojej klasie
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - Warianty 2B i 9B od Google
 - Mocne uzasadnienie ich wielkości
 - Dostępne na licencji zezwalającej do użytku lokalnego
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - Warianty od 0,5B do 72B
 - Silne możliwości wielojęzyczne
 - Szczególnie dobry do zadań związanych z kodowaniem w małych rozmiarach
 
 ---
 
-## Lokalny rynek modeli AI w latach 2024–2025
+## Lokalny rynek modeli AI w latach 2026–2025
 
-W 2024 r. różnica między modelami lokalnymi i chmurowymi dramatycznie się zmniejszyła:
+W 2026 r. różnica między modelami lokalnymi i chmurowymi dramatycznie się zmniejszyła:
 
 - Bezpłatny, 4-bitowy, skwantowany Phi-3-mini działający na laptopie przewyższa GPT-3.5 (model, którego wyszkolenie kosztuje miliony) w wielu testach porównawczych
 - Konsumenckie procesory graficzne 24 GB (NVIDIA RTX 3090, 4090) mogą obsługiwać modele 70B w trybie 4-bitowym

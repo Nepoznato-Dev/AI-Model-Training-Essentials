@@ -569,7 +569,7 @@ Transportation is undergoing a revolutionary transformation driven by electrific
 - **Speed**: 110 km/h
 - **Status**: EASA certification process
 - **Partnerships**: Various city partnerships
-- **Timeline**: Targeting 2024-2025 (Paris Olympics was goal)
+- **Timeline**: Targeting 2026-2025 (Paris Olympics was goal)
 
 #### EHang
 - **Headquarters**: China
@@ -762,7 +762,7 @@ Transportation is undergoing a revolutionary transformation driven by electrific
 
 ### Timeline and Outlook
 
-#### 2024-2026
+#### 2026-2026
 - First commercial launches (limited)
 - Paris Olympics showcased technology
 - Early routes: airports, specific corridors
@@ -1068,7 +1068,7 @@ Transportation is undergoing a revolutionary transformation driven by electrific
 
 ### Timeline Projections
 
-#### 2024-2027
+#### 2026-2027
 - Electric training aircraft common
 - First certified electric regional aircraft
 - eVTOL launches in parallel

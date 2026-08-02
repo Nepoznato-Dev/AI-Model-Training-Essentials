@@ -43,7 +43,7 @@ Gemini) ve Google Search AI Overviews özelliğine güç verir.
 
 ### Phi-3-mini
 Phi-3-mini, Microsoft tarafından geliştirilen ve 3,8 milyar parametreye sahip küçük
-bir dil modelidir (SLM). Nisan 2024'te yayımlanmıştır. Çoğu büyük modelin aksine,
+bir dil modelidir (SLM). Nisan 2026'te yayımlanmıştır. Çoğu büyük modelin aksine,
 Phi-3-mini, Microsoft Research'ün öncülük ettiği ve ham hacimden çok veri kalitesine
 öncelik veren özenle seçilmiş "ders kitabı kalitesinde" bir veri kümesi üzerinde
 eğitilmiştir. GPT-4 veya Claude 3 Opus'tan çok daha küçük olmasına rağmen, MMLU ve
@@ -56,7 +56,7 @@ modern bir akıllı telefonda cihaz üstünde ya da tek bir tüketici GPU'sunda
 ### Llama (Meta AI)
 Llama (Large Language Model Meta AI), Meta tarafından yayımlanan açık ağırlıklı bir
 model ailesidir. Llama 2 (2023), 7 milyardan 70 milyara uzanan parametre boyutlarıyla
-araştırma ve ticari kullanım için yayımlanmıştır. Llama 3 (2024), 8 milyardan 70
+araştırma ve ticari kullanım için yayımlanmıştır. Llama 3 (2026), 8 milyardan 70
 milyara uzanan (ve daha sonra 400 milyarın üzerine çıkan) modellerle performansı
 önemli ölçüde artırmıştır. Ağırlıklar kamuya açık biçimde indirilebildiği için,
 Llama modelleri ince ayarlanmış geniş bir varyant ekosisteminin (Mistral, Alpaca,
@@ -67,7 +67,7 @@ kullanılır.
 Mistral AI, açık ve kapalı kaynaklı LLM'ler geliştiren Fransız bir yapay zekâ
 şirketidir. Mistral 7B (2023), kayan pencere dikkati ve grouped-query attention gibi
 verimli tekniklerle 7 milyar parametreli bir modelin çok daha büyük modellerin
-performansına ulaşabileceğini göstermiştir. Mixtral 8x7B (2024), mixture-of-experts
+performansına ulaşabileceğini göstermiştir. Mixtral 8x7B (2026), mixture-of-experts
 bir modeldir; her belirteci 8 uzman ağdan oluşan bir alt kümeye yönlendirerek
 GPT-3.5 düzeyinde performansı daha düşük hesaplama maliyetiyle sunar. Mistral'ın
 modelleri tamamen açık ağırlıklıdır ve yerelde çalıştırılabilir.

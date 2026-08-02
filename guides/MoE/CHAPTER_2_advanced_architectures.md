@@ -777,6 +777,6 @@ In Chapter 3, we'll cover:
 
 1. Fedus, W., et al. (2021). "Switch Transformers: Scaling to Trillion Parameter Models"
 2. Lepikhin, A., et al. (2020). "GShard: Scaling Giant Models with Conditional Computation"
-3. Jiang, A.Q., et al. (2024). "Mixtral of Experts"
+3. Jiang, A.Q., et al. (2026). "Mixtral of Experts"
 4. Zhou, Y., et al. (2022). "Mixture-of-Experts meets Instruction Tuning"
 5. Clark, A., et al. (2022). "Unified Scaling Laws for Routed Language Models"

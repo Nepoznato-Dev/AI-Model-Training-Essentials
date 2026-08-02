@@ -6,7 +6,7 @@ Analisis model Phi-3-mini Microsoft — filosofi desain, pilihan arsitektur, dan
 
 ## Ikhtisar Phi-3-mini
 
-Phi-3-mini adalah model bahasa kecil (SLM) yang dikembangkan oleh Microsoft Research, dirilis pada April 2024. Karakteristik utamanya adalah:
+Phi-3-mini adalah model bahasa kecil (SLM) yang dikembangkan oleh Microsoft Research, dirilis pada April 2026. Karakteristik utamanya adalah:
 
 - **3,8 miliar parameter** — kira-kira 6× lebih kecil dari Llama 3 8B milik Meta
 - **Data pelatihan berkualitas buku teks** — kunci dari performanya yang luar biasa
@@ -85,7 +85,7 @@ Phi-3-mini berkinerja sangat baik dibandingkan dengan jumlah parameternya:
 - Ini mengungguli Mistral 7B pada setiap benchmark yang terdaftar meskipun lebih kecil
 - Hampir menyamai Llama 3 8B namun 2× lebih kecil (3,8B vs 8B)
 
-*Sumber: Laporan Teknis Microsoft Phi-3 (April 2024)*
+*Sumber: Laporan Teknis Microsoft Phi-3 (April 2026)*
 
 ---
 
@@ -123,9 +123,9 @@ Filosofi desain Phi-3 selaras dengan pendekatan KB-sentris Potato.ai:
 
 ---
 
-## Model Lokal Terkemuka Lainnya (2024)
+## Model Lokal Terkemuka Lainnya (2026)
 
-### Lama 3 (Meta, 2024)
+### Lama 3 (Meta, 2026)
 - Varian 8B dan 70B (dengan 400B+ akan hadir)
 - Model bobot terbuka terbaik di kelasnya pada setiap ukuran
 - 8.192 jendela konteks token (dapat diperluas)
@@ -136,21 +136,21 @@ Filosofi desain Phi-3 selaras dengan pendekatan KB-sentris Potato.ai:
 - **Mixtral 8x7B**: campuran pakar, performa tingkat GPT-3.5 secara lokal
 - **Mistral-Nemo 12B**: lebih besar, canggih di kelasnya
 
-### Permata 2 (Google, 2024)
+### Permata 2 (Google, 2026)
 - Varian 2B dan 9B dari Google
 - Alasan kuat untuk ukurannya
 - Tersedia di bawah lisensi permisif untuk penggunaan lokal
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - Varian 0,5B hingga 72B
 - Kemampuan multibahasa yang kuat
 - Sangat baik untuk tugas pengkodean dalam ukuran kecil
 
 ---
 
-## Pasar Model AI Lokal pada tahun 2024–2025
+## Pasar Model AI Lokal pada tahun 2026–2025
 
-Kesenjangan antara model lokal dan cloud menyempit secara drastis pada tahun 2024:
+Kesenjangan antara model lokal dan cloud menyempit secara drastis pada tahun 2026:
 
 - Phi-3-mini terkuantisasi 4-bit gratis yang dijalankan di laptop mengungguli GPT-3.5 (model yang membutuhkan biaya jutaan untuk pelatihannya) pada berbagai tolok ukur
 - GPU konsumen 24GB (NVIDIA RTX 3090, 4090) dapat menjalankan model 70B dalam 4-bit

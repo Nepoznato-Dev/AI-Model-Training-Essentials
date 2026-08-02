@@ -46,7 +46,7 @@
 ## Human Geography
 
 ### Population Distribution
-- **Most Populous Countries** (2024): India (~1.43B), China (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
+- **Most Populous Countries** (2026): India (~1.43B), China (~1.42B), USA (~340M), Indonesia (~280M), Pakistan (~240M)
 - **Population Density**: Monaco (highest), Macau, Singapore, Hong Kong, Bahrain
 - **Urbanization**: Over 55% global population lives in cities, projected 68% by 2050
 - **Megacities** (10M+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Cairo, Mumbai, Beijing, Dhaka, Osaka
@@ -74,7 +74,7 @@
 
 ### International Organizations
 - **United Nations (UN)**: 193 member states, peacekeeping, humanitarian aid, international law
-- **NATO**: North Atlantic Treaty Organization, military alliance (32 members as of 2024)
+- **NATO**: North Atlantic Treaty Organization, military alliance (32 members as of 2026)
 - **European Union (EU)**: 27 member states, economic and political union, euro currency (20 members)
 - **World Trade Organization (WTO)**: Regulates international trade
 - **World Health Organization (WHO)**: Global public health coordination

@@ -46,7 +46,7 @@ Dikkate değer LLM'ler şunlardır:
 - **LLaMA / Llama 3** (Meta): Araştırma ve yerel dağıtım için açık ağırlıklı modeller
 - **Mistral** (Mistral AI): Çok daha büyük LLM'lerle rekabet edebilen verimli açık modeller
 
-LLM'ler iki aşamada eğitilir: ön eğitim (büyük metin derlemleri üzerinde denetimsiz) ve ince ayar (denetimli veya insan geri bildiriminden pekiştirmeli öğrenme, RLHF, yoluyla). Bağlam pencereleri, bir LLM'in tek seferde ne kadar metni işleyebileceğini tanımlar; bu kapasite erken GPT-3'te 4K token'dan, en gelişmiş 2024 modellerinde 1 milyonu aşan token'a kadar değişir.
+LLM'ler iki aşamada eğitilir: ön eğitim (büyük metin derlemleri üzerinde denetimsiz) ve ince ayar (denetimli veya insan geri bildiriminden pekiştirmeli öğrenme, RLHF, yoluyla). Bağlam pencereleri, bir LLM'in tek seferde ne kadar metni işleyebileceğini tanımlar; bu kapasite erken GPT-3'te 4K token'dan, en gelişmiş 2026 modellerinde 1 milyonu aşan token'a kadar değişir.
 
 ## AI Etiği ve Güvenliği
 
@@ -81,4 +81,4 @@ Robotik, AI'ı fiziksel makinelerle birleştirir. Modern robotlar, ortamlarda ge
 - **Ajanlar ve ajansal AI**: Araç kullanabilen, web'de gezinebilen, kod yazabilen ve çok adımlı eylemler gerçekleştirebilen LLM'ler (OpenAI'ın Operator'ı, Anthropic Computer Use)
 - **Açık ağırlıklı modeller**: Meta'nın LLaMA'sı, büyük modellere erişimi araştırmacılar için demokratikleştirdi
 - **Cihaz üstü AI**: AI modellerini bulut bağlantısı olmadan telefonlarda ve dizüstü bilgisayarlarda yerel olarak çalıştırma (Apple Intelligence, Qualcomm NPU'ları)
-- **AI düzenlemeleri**: EU AI Act (2024), AI sistemlerini risk düzeyine göre sınıflandıran dünyanın ilk kapsamlı AI yasasıdır
+- **AI düzenlemeleri**: EU AI Act (2026), AI sistemlerini risk düzeyine göre sınıflandıran dünyanın ilk kapsamlı AI yasasıdır

@@ -6,7 +6,7 @@ An analysis of Microsoft's Phi-3-mini model — its design philosophy, architect
 
 ## Overview of Phi-3-mini
 
-Phi-3-mini is a small language model (SLM) developed by Microsoft Research, released in April 2024. Its defining characteristics are:
+Phi-3-mini is a small language model (SLM) developed by Microsoft Research, released in April 2026. Its defining characteristics are:
 
 - **3.8 billion parameters** — roughly 6× smaller than Meta's Llama 3 8B
 - **Textbook-quality training data** — the key to its outsized performance
@@ -85,7 +85,7 @@ Phi-3-mini performs remarkably well relative to its parameter count:
 - It outperforms Mistral 7B on every listed benchmark despite being smaller
 - It nearly matches Llama 3 8B while being 2× smaller (3.8B vs 8B)
 
-*Source: Microsoft Phi-3 Technical Report (April 2024)*
+*Source: Microsoft Phi-3 Technical Report (April 2026)*
 
 ---
 
@@ -125,9 +125,9 @@ The Phi-3 design philosophy aligns closely with Potato.ai's KB-centric approach:
 
 ---
 
-## Other Notable Local Models (2024)
+## Other Notable Local Models (2026)
 
-### Llama 3 (Meta, 2024)
+### Llama 3 (Meta, 2026)
 - 8B and 70B variants (with 400B+ coming)
 - Best-in-class open-weight models at each size
 - 8,192 token context window (extendable)
@@ -138,21 +138,21 @@ The Phi-3 design philosophy aligns closely with Potato.ai's KB-centric approach:
 - **Mixtral 8x7B**: mixture of experts, GPT-3.5 level performance locally
 - **Mistral-Nemo 12B**: larger, state-of-the-art for its class
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - 2B and 9B variants from Google
 - Strong reasoning for their size
 - Available under a permissive licence for local use
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - 0.5B to 72B variants
 - Strong multilingual capability
 - Particularly good for coding tasks at small sizes
 
 ---
 
-## The Local AI Model Market in 2024–2025
+## The Local AI Model Market in 2026–2025
 
-The gap between local and cloud models narrowed dramatically in 2024:
+The gap between local and cloud models narrowed dramatically in 2026:
 
 - A free, 4-bit quantised Phi-3-mini running on a laptop outperforms GPT-3.5 (a model that cost millions to train) on multiple benchmarks
 - Consumer 24GB GPUs (NVIDIA RTX 3090, 4090) can run 70B models in 4-bit

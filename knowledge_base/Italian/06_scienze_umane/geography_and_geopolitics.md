@@ -46,7 +46,7 @@
 ## Geografia umana
 
 ### Distribuzione della popolazione
-- **Paesi più popolosi** (2024): India (~1,43 miliardi), Cina (~1,42 miliardi), Stati Uniti (~340 milioni), Indonesia (~280 milioni), Pakistan (~240 milioni)
+- **Paesi più popolosi** (2026): India (~1,43 miliardi), Cina (~1,42 miliardi), Stati Uniti (~340 milioni), Indonesia (~280 milioni), Pakistan (~240 milioni)
 - **Densità di popolazione**: Monaco (la più alta), Macao, Singapore, Hong Kong, Bahrein
 - **Urbanizzazione**: oltre il 55% della popolazione mondiale vive nelle città, secondo le proiezioni il 68% entro il 2050
 - **Megalopoli** (oltre 10 milioni): Tokyo, Delhi, Shanghai, San Paolo, Città del Messico, Il Cairo, Mumbai, Pechino, Dacca, Osaka
@@ -72,7 +72,7 @@
 - **Federale**: potere diviso tra governi nazionali e regionali
 - **Unitario**: governo centralizzato, autorità regionali subordinate### Organizzazioni internazionali
 - **Nazioni Unite (ONU)**: 193 stati membri, mantenimento della pace, aiuti umanitari, diritto internazionale
-- **NATO**: Organizzazione del Trattato del Nord Atlantico, alleanza militare (32 membri nel 2024)
+- **NATO**: Organizzazione del Trattato del Nord Atlantico, alleanza militare (32 membri nel 2026)
 - **Unione Europea (UE)**: 27 stati membri, unione economica e politica, valuta euro (20 membri)
 - **Organizzazione mondiale del commercio (OMC)**: regola il commercio internazionale
 - **Organizzazione Mondiale della Sanità (OMS)**: coordinamento globale della sanità pubblica

@@ -6,7 +6,7 @@ Un'analisi del modello Phi-3-mini di Microsoft (la sua filosofia di progettazion
 
 ## Panoramica di Phi-3-mini
 
-Phi-3-mini è un Small Language Model (SLM) sviluppato da Microsoft Research, rilasciato nell'aprile 2024. Le sue caratteristiche distintive sono:
+Phi-3-mini è un Small Language Model (SLM) sviluppato da Microsoft Research, rilasciato nell'aprile 2026. Le sue caratteristiche distintive sono:
 
 - **3,8 miliardi di parametri** — circa 6 volte più piccolo del Llama 3 8B di Meta
 - **dati di formazione di qualità da libro di testo**: la chiave delle sue prestazioni fuori misura
@@ -85,7 +85,7 @@ Phi-3-mini si comporta molto bene in relazione al conteggio dei parametri:
 - Supera Mistral 7B su ogni benchmark elencato nonostante sia più piccolo
 - Corrisponde quasi al Lama 3 8B pur essendo 2 volte più piccolo (3,8B contro 8B)
 
-*Fonte: rapporto tecnico Microsoft Phi-3 (aprile 2024)*
+*Fonte: rapporto tecnico Microsoft Phi-3 (aprile 2026)*
 
 ---
 
@@ -123,9 +123,9 @@ La filosofia di progettazione di Phi-3 è strettamente in linea con l'approccio 
 
 ---
 
-## Altri modelli locali degni di nota (2024)
+## Altri modelli locali degni di nota (2026)
 
-### Lama 3 (Meta, 2024)
+### Lama 3 (Meta, 2026)
 - Varianti 8B e 70B (con 400B+ in arrivo)
 - I migliori modelli a peso aperto della categoria in ogni dimensione
 - Finestra di contesto di 8.192 token (estendibile)
@@ -136,21 +136,21 @@ La filosofia di progettazione di Phi-3 è strettamente in linea con l'approccio 
 - **Mixtral 8x7B**: mix di esperti, prestazioni di livello GPT-3.5 a livello locale
 - **Mistral-Nemo 12B**: più grande, all'avanguardia per la sua categoria
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - Varianti 2B e 9B di Google
 - Motivazione forte per la loro dimensione
 - Disponibile con una licenza permissiva per l'uso locale
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - Varianti da 0,5B a 72B
 - Forte capacità multilingue
 - Particolarmente indicato per attività di codifica di piccole dimensioni
 
 ---
 
-## Il mercato locale dei modelli di intelligenza artificiale nel 2024-2025
+## Il mercato locale dei modelli di intelligenza artificiale nel 2026-2025
 
-Il divario tra i modelli locali e quelli cloud si è ridotto drasticamente nel 2024:
+Il divario tra i modelli locali e quelli cloud si è ridotto drasticamente nel 2026:
 
 - Un Phi-3-mini quantizzato a 4 bit gratuito in esecuzione su un laptop supera GPT-3.5 (un modello che è costato milioni per l'addestramento) su più benchmark
 - Le GPU consumer da 24 GB (NVIDIA RTX 3090, 4090) possono eseguire modelli da 70B a 4 bit

@@ -53,7 +53,7 @@ Large Language Models（LLMs）は、膨大なテキストデータで学習さ�
 - **LLaMA / Llama 3**（Meta）: 研究用途やローカル実行向けの open-weight モデル。
 - **Mistral**（Mistral AI）: より大きな LLM に匹敵する効率的な open model。
 
-LLM の学習は通常 2 段階で行われます。まず大規模テキストコーパスによる pre-training を行い、その後 supervised fine-tuning や reinforcement learning from human feedback（RLHF）で対話向けに調整します。context window はモデルが一度に扱える文脈量を表し、初期の GPT-3 の 4K tokens から、2024 年の高度なモデルでは 100 万 tokens 超まで拡大しています。
+LLM の学習は通常 2 段階で行われます。まず大規模テキストコーパスによる pre-training を行い、その後 supervised fine-tuning や reinforcement learning from human feedback（RLHF）で対話向けに調整します。context window はモデルが一度に扱える文脈量を表し、初期の GPT-3 の 4K tokens から、2026 年の高度なモデルでは 100 万 tokens 超まで拡大しています。
 
 ## AI 倫理と安全性
 
@@ -88,4 +88,4 @@ AI はほぼすべての産業を変えつつあります。
 - **Agents と agentic AI**: ツール使用、ウェブ閲覧、コード生成、多段階行動ができる LLM（OpenAI Operator、Anthropic Computer Use）
 - **Open-weight models**: Meta の LLaMA により、研究者が大規模モデルへアクセスしやすくなった
 - **On-device AI**: クラウド接続なしで、スマートフォンやノート PC 上で AI モデルを動かす流れ（Apple Intelligence、Qualcomm NPU）
-- **AI regulation**: EU AI Act（2024）は、リスク水準ごとに AI システムを分類する包括的な AI 法規制として注目されている
+- **AI regulation**: EU AI Act（2026）は、リスク水準ごとに AI システムを分類する包括的な AI 法規制として注目されている

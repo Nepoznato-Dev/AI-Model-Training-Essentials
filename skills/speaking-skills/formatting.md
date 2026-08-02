@@ -296,7 +296,7 @@ with open('output.csv', 'w', newline='', encoding='utf-8') as f:
   ],
   "metadata": {
     "author": "Skills Repository",
-    "created": "2024-01-15",
+    "created": "2026-01-15",
     "tags": ["formatting", "conversion", "documentation"]
   }
 }
@@ -397,7 +397,7 @@ python -m json.tool input.json
         </formats>
         <metadata>
             <author>Skills Repository</author>
-            <created>2024-01-15</created>
+            <created>2026-01-15</created>
             <tags>
                 <tag>formatting</tag>
                 <tag>conversion</tag>
@@ -1099,7 +1099,7 @@ def generate_monthly_report(data_df, month, year):
 
 # Usage
 df = pd.read_csv('monthly_data.csv')
-paths = generate_monthly_report(df, 1, 2024)
+paths = generate_monthly_report(df, 1, 2026)
 print(f"Reports generated: {paths}")
 ```
 

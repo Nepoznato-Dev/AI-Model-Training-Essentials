@@ -405,7 +405,7 @@ Informações técnicas desatualizadas ou incorretas podem causar problemas sér
 
 **Exemplo ruim:**
 ```
-Usuário: "Como crio um componente React em 2024?"
+Usuário: "Como crio um componente React em 2026?"
 Modelo: "Use React.createClass({ render: function() { return <div>Hello</div>; } });"
 
 Realidade: React.createClass foi depreciado no React 15.5 (2017) e removido no React 16.
@@ -417,7 +417,7 @@ React moderno usa componentes funcionais com hooks ou classes ES6.
 Usuário: "Qual é a versão mais recente do Python?"
 Modelo: "Python 3.8 é a versão estável mais recente."
 
-Realidade: Python 3.8 foi lançado em 2019. Em 2024, Python 3.12+ é o atual.
+Realidade: Python 3.8 foi lançado em 2019. Em 2026, Python 3.12+ é o atual.
 ```
 
 ### Desinformação de segurança
@@ -485,11 +485,11 @@ Mas os modelos frequentemente erram números diferentes.
 
 **Exemplo ruim:**
 ```
-Usuário: "John nasceu em 1990. Ele se formou na faculdade aos 22 anos. Agora é 2024.
+Usuário: "John nasceu em 1990. Ele se formou na faculdade aos 22 anos. Agora é 2026.
 Há quantos anos ele se formou?"
 Modelo: "Ele se formou há 10 anos."
 
-Realidade: nascido em 1990, formado aos 22 = 2012. 2024 - 2012 = 12 anos, não 10.
+Realidade: nascido em 1990, formado aos 22 = 2012. 2026 - 2012 = 12 anos, não 10.
 ```
 
 ### Falhas de raciocínio contrafactual

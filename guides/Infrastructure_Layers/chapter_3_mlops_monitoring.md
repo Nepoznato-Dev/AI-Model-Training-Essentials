@@ -535,7 +535,7 @@ Training Data Distribution (2023):
 Age: Mean=35, Std=10
 Income: Mean=$50K, Std=$15K
 
-Production Data Distribution (2024):
+Production Data Distribution (2026):
 Age: Mean=45, Std=12  ⚠️ DRIFT!
 Income: Mean=$65K, Std=$20K  ⚠️ DRIFT!
 
@@ -782,7 +782,7 @@ from datetime import datetime, timedelta
 default_args = {
     'owner': 'ml-team',
     'depends_on_past': False,
-    'start_date': datetime(2024, 1, 1),
+    'start_date': datetime(2026, 1, 1),
     'email_on_failure': True,
     'email_on_retry': False,
     'retries': 1,
@@ -940,7 +940,7 @@ sns.distplot(prod_data['feature_1'], label='Production')
 **Diagnosis:**
 ```bash
 # Check Airflow logs
-airflow tasks logs model-retraining fetch_data 2024-01-15T02:00:00
+airflow tasks logs model-retraining fetch_data 2026-01-15T02:00:00
 
 # Check Kubernetes pod logs
 kubectl logs -l app=training-job

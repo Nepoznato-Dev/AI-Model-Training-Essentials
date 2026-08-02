@@ -1003,7 +1003,7 @@ spec:
 
 ---
 version: 1.0.0
-last_updated: 2024-01-15
+last_updated: 2026-01-15
 reviewed_by: DevOps Team
-next_review: 2024-07-15
+next_review: 2026-07-15
 ---

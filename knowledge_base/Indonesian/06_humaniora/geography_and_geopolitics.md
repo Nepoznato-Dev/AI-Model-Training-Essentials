@@ -46,7 +46,7 @@
 ## Geografi Manusia
 
 ### Distribusi Populasi
-- **Negara dengan Penduduk Terbanyak** (2024): India (~1,43 miliar), Tiongkok (~1,42 miliar), AS (~340 juta), Indonesia (~280 juta), Pakistan (~240 juta)
+- **Negara dengan Penduduk Terbanyak** (2026): India (~1,43 miliar), Tiongkok (~1,42 miliar), AS (~340 juta), Indonesia (~280 juta), Pakistan (~240 juta)
 - **Kepadatan Penduduk**: Monako (tertinggi), Makau, Singapura, Hong Kong, Bahrain
 - **Urbanisasi**: Lebih dari 55% populasi global tinggal di perkotaan, diproyeksikan sebesar 68% pada tahun 2050
 - **Kota besar** (10 juta+): Tokyo, Delhi, Shanghai, São Paulo, Mexico City, Kairo, Mumbai, Beijing, Dhaka, Osaka
@@ -72,7 +72,7 @@
 - **Federal**: Kekuasaan terbagi antara pemerintah pusat dan daerah
 - **Kesatuan**: Pemerintahan terpusat, otoritas daerah berada di bawahnya### Organisasi Internasional
 - **Perserikatan Bangsa-Bangsa (PBB)**: 193 negara anggota, pemeliharaan perdamaian, bantuan kemanusiaan, hukum internasional
-- **NATO**: Pakta Pertahanan Atlantik Utara, aliansi militer (32 anggota pada tahun 2024)
+- **NATO**: Pakta Pertahanan Atlantik Utara, aliansi militer (32 anggota pada tahun 2026)
 - **Uni Eropa (UE)**: 27 negara anggota, kesatuan ekonomi dan politik, mata uang euro (20 anggota)
 - **Organisasi Perdagangan Dunia (WTO)**: Mengatur perdagangan internasional
 - **Organisasi Kesehatan Dunia (WHO)**: Koordinasi kesehatan masyarakat global

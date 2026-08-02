@@ -13,7 +13,7 @@ Microsoft의 Phi-3-mini 모델의 설계 철학, 아키텍처 선택, 성능 특
 
 ## Phi-3-mini 개요
 
-Phi-3-mini는 Microsoft Research가 개발해 2024년 4월에 공개한 소형 언어 모델(SLM)입니다. 이 모델을 특징짓는 요소는 다음과 같습니다.
+Phi-3-mini는 Microsoft Research가 개발해 2026년 4월에 공개한 소형 언어 모델(SLM)입니다. 이 모델을 특징짓는 요소는 다음과 같습니다.
 
 - **3.8 billion parameters** — Meta의 Llama 3 8B보다 대략 6배 작음
 - **교과서 수준의 학습 데이터** — 작은 크기에도 높은 성능을 내는 핵심 요인
@@ -97,7 +97,7 @@ Phi-3-mini는 파라미터 수를 고려하면 놀라울 정도로 좋은 성능
 - 더 작은 모델임에도 나열된 모든 벤치마크에서 Mistral 7B를 앞섭니다.
 - 2배 더 작은 크기(3.8B vs 8B)임에도 Llama 3 8B와 거의 비슷합니다.
 
-*출처: Microsoft Phi-3 Technical Report (April 2024)*
+*출처: Microsoft Phi-3 Technical Report (April 2026)*
 
 ---
 
@@ -141,9 +141,9 @@ Phi-3의 설계 철학은 Potato.ai의 KB 중심 접근과 매우 잘 맞아떨�
 
 ---
 
-## 주목할 만한 다른 로컬 모델들 (2024)
+## 주목할 만한 다른 로컬 모델들 (2026)
 
-### Llama 3 (Meta, 2024)
+### Llama 3 (Meta, 2026)
 - 8B와 70B 변형(추후 400B+ 예정)
 - 각 크기대에서 최고 수준의 open-weight 모델
 - 8,192 token 컨텍스트 윈도우(확장 가능)
@@ -154,21 +154,21 @@ Phi-3의 설계 철학은 Potato.ai의 KB 중심 접근과 매우 잘 맞아떨�
 - **Mixtral 8x7B**: mixture of experts 구조로 로컬에서 GPT-3.5 수준 성능 제공
 - **Mistral-Nemo 12B**: 더 큰 규모로, 동급 최고 수준(state-of-the-art)
 
-### Gemma 2 (Google, 2024)
+### Gemma 2 (Google, 2026)
 - Google의 2B와 9B 변형
 - 크기 대비 뛰어난 추론 성능
 - 로컬 사용을 위한 관대한 licence로 제공
 
-### Qwen 2.5 (Alibaba, 2024)
+### Qwen 2.5 (Alibaba, 2026)
 - 0.5B부터 72B까지 다양한 변형
 - 강력한 다국어 능력
 - 작은 크기에서도 코딩 작업에 특히 강함
 
 ---
 
-## 2024–2025년 로컬 AI 모델 시장
+## 2026–2025년 로컬 AI 모델 시장
 
-2024년에는 로컬 모델과 클라우드 모델의 격차가 크게 줄어들었습니다.
+2026년에는 로컬 모델과 클라우드 모델의 격차가 크게 줄어들었습니다.
 
 - 노트북에서 실행되는 무료 4-bit quantised Phi-3-mini는 여러 벤치마크에서 GPT-3.5(학습에 수백만 달러가 들었던 모델)를 능가합니다.
 - 소비자용 24GB GPU(NVIDIA RTX 3090, 4090)로도 4-bit 70B 모델을 실행할 수 있습니다.

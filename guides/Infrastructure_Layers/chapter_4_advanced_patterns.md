@@ -798,7 +798,7 @@ backup_key = backup_manager.backup_model(
     metadata={
         'version': '1.2.3',
         'accuracy': 0.95,
-        'trained_on': '2024-01-15'
+        'trained_on': '2026-01-15'
     }
 )
 ```
@@ -820,7 +820,7 @@ pg_basebackup -D /backups/base -Ft -z -P -X stream
 -- Restore to specific point in time
 -- recovery.conf
 restore_command = 'aws s3 cp s3://my-bucket/wal/%f %p'
-recovery_target_time = '2024-01-15 14:30:00'
+recovery_target_time = '2026-01-15 14:30:00'
 ```
 
 ### Disaster Recovery Plan

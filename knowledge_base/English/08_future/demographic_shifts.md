@@ -576,31 +576,31 @@ Global demographics are undergoing profound transformations that will reshape so
 ### Defining the Generations
 
 #### Generation Z (born ~1997-2012)
-- **Current Age**: 12-27 years (2024)
+- **Current Age**: 12-27 years (2026)
 - **Characteristics**: Digital natives, diverse, pragmatic
 - **Formative Events**: Great Recession, COVID-19, climate crisis, social media
 - **Size**: ~2 billion globally, largest generation
 
 #### Generation Alpha (born ~2013-2025)
-- **Current Age**: 0-11 years (2024)
+- **Current Age**: 0-11 years (2026)
 - **Characteristics**: AI natives, post-pandemic childhood
 - **Formative Events**: COVID pandemic, AI emergence, climate action
 - **Size**: Projected 2+ billion
 
 #### Millennials (born ~1981-1996)
-- **Current Age**: 28-43 years (2024)
+- **Current Age**: 28-43 years (2026)
 - **Characteristics**: Tech-adaptive, educated, delayed milestones
 - **Formative Events**: 9/11, Great Recession, smartphone revolution
 - **Size**: ~1.8 billion globally
 
 #### Generation X (born ~1965-1980)
-- **Current Age**: 44-59 years (2024)
+- **Current Age**: 44-59 years (2026)
 - **Characteristics**: Independent, skeptical, work-life balance pioneers
 - **Formative Events**: End of Cold War, internet emergence, latchkey childhood
 - **Size**: ~1 billion globally
 
 #### Baby Boomers (born ~1946-1964)
-- **Current Age**: 60-78 years (2024)
+- **Current Age**: 60-78 years (2026)
 - **Characteristics**: Large cohort, shaped post-war world
 - **Formative Events**: Post-war prosperity, civil rights, Cold War
 - **Size**: Peaked at ~80 million in US, now declining

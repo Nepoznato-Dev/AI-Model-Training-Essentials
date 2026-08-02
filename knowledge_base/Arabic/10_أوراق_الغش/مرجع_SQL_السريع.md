@@ -200,7 +200,7 @@ SELECT name FROM suppliers;
 -- INTERSECT (common rows)
 SELECT product_id FROM orders_2023
 INTERSECT
-SELECT product_id FROM orders_2024;
+SELECT product_id FROM orders_2026;
 
 -- EXCEPT/MINUS (rows in first but not second)
 SELECT user_id FROM active_users

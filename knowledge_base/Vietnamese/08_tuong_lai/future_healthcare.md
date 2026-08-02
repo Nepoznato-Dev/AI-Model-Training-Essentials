@@ -669,7 +669,7 @@ Healthcare is on the cusp of revolutionary transformations driven by advances in
 **Xenotransplantation**
 - Pig organs for humans
 - Gene editing to reduce rejection
-- First human transplants (2022-2024)
+- First human transplants (2022-2026)
 - Infectious disease concerns
 
 **Bioartificial Organs**

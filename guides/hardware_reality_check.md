@@ -305,4 +305,4 @@ Check if your university provides **GPU clusters** or has partnerships with clou
 
 ---
 
-*Last updated: 2024 | Prices subject to change*
+*Last updated: 2026 | Prices subject to change*

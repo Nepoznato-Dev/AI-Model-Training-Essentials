@@ -53,7 +53,7 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 ## Humangeographie
 
 ### Bevölkerungsverteilung
-- **Bevölkerungsreichste Länder** (2024): Indien (~1,43 Mrd.), China (~1,42 Mrd.), USA (~340 Mio.), Indonesien (~280 Mio.), Pakistan (~240 Mio.)
+- **Bevölkerungsreichste Länder** (2026): Indien (~1,43 Mrd.), China (~1,42 Mrd.), USA (~340 Mio.), Indonesien (~280 Mio.), Pakistan (~240 Mio.)
 - **Bevölkerungsdichte**: Monaco (höchste), Macau, Singapur, Hongkong, Bahrain
 - **Urbanisierung**: Mehr als 55 % der Weltbevölkerung leben in Städten; bis 2050 werden etwa 68 % erwartet
 - **Megastädte** (10 Mio.+): Tokio, Delhi, Shanghai, São Paulo, Mexiko-Stadt, Kairo, Mumbai, Peking, Dhaka, Osaka
@@ -81,7 +81,7 @@ Für Verbesserungen der Genauigkeit bitten wir um Beiträge via Pull Requests.
 
 ### Internationale Organisationen
 - **United Nations (UN)**: 193 Mitgliedstaaten, Friedenssicherung, humanitäre Hilfe, internationales Recht
-- **NATO**: Nordatlantisches Bündnis, Militärallianz (32 Mitglieder im Jahr 2024)
+- **NATO**: Nordatlantisches Bündnis, Militärallianz (32 Mitglieder im Jahr 2026)
 - **European Union (EU)**: 27 Mitgliedstaaten, wirtschaftliche und politische Union, Euro als Währung in 20 Mitgliedsländern
 - **World Trade Organization (WTO)**: Regelt den internationalen Handel
 - **World Health Organization (WHO)**: Koordiniert globale öffentliche Gesundheit

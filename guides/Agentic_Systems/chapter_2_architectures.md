@@ -156,7 +156,7 @@ class ReActAgent:
         mock_results = {
             'climate change effects': 'Rising temperatures, sea level rise, extreme weather',
             'python benefits': 'Easy syntax, large ecosystem, versatile applications',
-            'best programming language 2024': 'Depends on use case: Python for ML, JS for web',
+            'best programming language 2026': 'Depends on use case: Python for ML, JS for web',
         }
         return mock_results.get(query.lower(), f"No results for '{query}'")
     

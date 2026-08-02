@@ -46,7 +46,7 @@ AI 的歷史跨越近八十年。早期的理論基礎由 Alan Turing 奠定，�
 - **LLaMA / Llama 3**（Meta）：開放權重模型，用於研究和本地部署
 - **Mistral**（Mistral AI）：高效的開放模型，可與更大的 LLMs 競爭
 
-LLMs 的訓練分為兩個階段：預訓練（在大型文本語料庫上進行非監督式學習）和微調（監督式學習或透過人類反饋的強化學習，RLHF）。上下文視窗描述了 LLM 一次可以處理多少文字，從 4K tokens（早期的 GPT-3）到 2024 年最先進模型的超過 100 萬 tokens。
+LLMs 的訓練分為兩個階段：預訓練（在大型文本語料庫上進行非監督式學習）和微調（監督式學習或透過人類反饋的強化學習，RLHF）。上下文視窗描述了 LLM 一次可以處理多少文字，從 4K tokens（早期的 GPT-3）到 2026 年最先進模型的超過 100 萬 tokens。
 
 ## AI 倫理與安全
 
@@ -81,4 +81,4 @@ AI 正在改變幾乎每個產業：
 - **代理與代理式 AI（Agents and agentic AI）**：可以使用工具、瀏覽網路、撰寫程式碼並採取多步驟行動的 LLMs（OpenAI 的 Operator、Anthropic Computer Use）
 - **開放權重模型（Open-weight models）**：Meta 的 LLaMA 使研究人員能夠民主化地存取大型模型
 - **裝置端 AI（On-device AI）**：在手機和筆記型電腦上本地運行 AI 模型，無需雲端連接（Apple Intelligence、Qualcomm NPUs）
-- **AI 法規（AI regulation）**：歐盟 AI 法案（2024）是世界上第一部全面的 AI 法律，按風險等級對 AI 系統進行分類
+- **AI 法規（AI regulation）**：歐盟 AI 法案（2026）是世界上第一部全面的 AI 法律，按風險等級對 AI 系統進行分類

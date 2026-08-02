@@ -421,7 +421,7 @@ Retrieved chunk (from 2022): "Django 4.0 is the latest LTS release"
 
 Model responds: "Django 4.0 is the latest version"
 
-Reality: Django 5.0 was released in 2024
+Reality: Django 5.0 was released in 2026
 ```
 
 **Mitigation:**

@@ -407,7 +407,7 @@ Outdated or incorrect technical information can cause serious problems.
 
 **Bad Example:**
 ```
-User: "How do I create a React component in 2024?"
+User: "How do I create a React component in 2026?"
 Model: "Use React.createClass({ render: function() { return <div>Hello</div>; } });"
 
 Reality: React.createClass was deprecated in React 15.5 (2017) and removed in React 16.
@@ -419,7 +419,7 @@ Modern React uses function components with hooks or ES6 classes.
 User: "What's the latest Python version?"
 Model: "Python 3.8 is the latest stable release."
 
-Reality: Python 3.8 was released in 2019. As of 2024, Python 3.12+ is current.
+Reality: Python 3.8 was released in 2019. As of 2026, Python 3.12+ is current.
 ```
 
 ### Security Misinformation
@@ -487,11 +487,11 @@ But models often get these wrong with different numbers.
 
 **Bad Example:**
 ```
-User: "John was born in 1990. He graduated college at age 22. It's now 2024. 
+User: "John was born in 1990. He graduated college at age 22. It's now 2026. 
 How many years ago did he graduate?"
 Model: "He graduated 10 years ago."
 
-Reality: Born 1990, graduated at 22 = 2012. 2024 - 2012 = 12 years ago, not 10.
+Reality: Born 1990, graduated at 22 = 2012. 2026 - 2012 = 12 years ago, not 10.
 ```
 
 ### Counterfactual Reasoning Failures
