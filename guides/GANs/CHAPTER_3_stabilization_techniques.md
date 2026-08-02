@@ -409,9 +409,8 @@ class MiniBatchDiscrimination(nn.Module):
         batch_size = x.size(0)
         
         # Compute activation tensor
-        # M_i = sum_j |x_i * T - c_j * T|
-        activation = torch.bmm(x.unsqueeze(1), self.T.unsqueeze(0).expand(batch_size, -1, -1, -1))
-        activation = activation.squeeze(1)  # (batch, out_features, kernel_dims)
+        # activation: (batch, out_features, kernel_dims)
+        activation = torch.einsum('bi,iok->bok', x, self.T)
         
         # Compute distances between all pairs
         activation_expanded = activation.unsqueeze(0).expand(batch_size, -1, -1, -1)
