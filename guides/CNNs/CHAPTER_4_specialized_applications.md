@@ -794,6 +794,7 @@ def detect_objects(image, model, threshold=0.5):
     model.eval()
     
     # Prepare image
+    import numpy as np
     if isinstance(image, np.ndarray):
         image = torch.from_numpy(image).permute(2, 0, 1).float() / 255.0
     
