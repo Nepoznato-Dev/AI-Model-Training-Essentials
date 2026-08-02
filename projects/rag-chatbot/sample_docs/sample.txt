@@ -1,0 +1,6 @@
+Artificial Intelligence (AI) is transforming industries worldwide.
+Machine Learning (ML) is a subset of AI that enables systems to learn from data.
+Deep Learning uses neural networks with many layers.
+Natural Language Processing (NLP) helps computers understand human language.
+Computer Vision enables machines to interpret visual information.
+AI applications include chatbots, recommendation systems, and autonomous vehicles.
