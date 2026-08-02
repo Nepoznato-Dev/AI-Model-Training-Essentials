@@ -139,8 +139,8 @@ Ready to build AI that can see? Turn the page to Chapter 1, where we'll dive int
 ### Option A: Free Cloud Setup (Recommended for Beginners!)
 No installation needed! Just:
 1. Go to [Google Colab](https://colab.research.google.com/)
-2. Click "New Notebook"
-3. You instantly have a free GPU ready!
+2. Click "Runtime" → "Change runtime type" → Select "GPU" (optional, but faster)
+3. Click "New Notebook"
 4. Copy-paste code from any chapter
 
 ### Option B: Local Setup
