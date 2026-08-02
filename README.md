@@ -4,10 +4,10 @@
 
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Languages](https://img.shields.io/badge/languages-18-multicolor)](knowledge_base/)
-[![Knowledge Files](https://img.shields.io/badge/knowledge_files-36+-green)](knowledge_base/English/)
-[![Skills](https://img.shields.io/badge/skills-40+-orange)](skills/)
-[![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](projects/)
+[![Languages](https://img.shields.io/badge/languages-20-multicolor)](knowledge_base/)
+[![Knowledge Files](https://img.shields.io/badge/knowledge_files-52+-green)](knowledge_base/English/)
+[![Skills](https://img.shields.io/badge/skills-50+-orange)](skills/)
+[![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](guides/projects/)
 
 ---
 
@@ -33,13 +33,11 @@
 
 This repository serves as a foundational framework for AI agent development, providing:
 
-- **Structured Knowledge**: 36+ domain-specific knowledge files organized by category
-- **Skill Definitions**: 40+ skill modules covering behavior, design, communication, and technical capabilities
-- **Runnable Projects**: Hands-on implementations for RAG, Transformers, CNNs, and more
-- **Error Solutions**: Common debugging guide for beginners
-- **Prerequisites**: Mini-tutorials on terminal, Python, and Git basics
+- **Structured Knowledge**: 52+ domain-specific knowledge files organized by category
+- **Skill Definitions**: 50+ skill modules covering behavior, design, communication, and technical capabilities
+- **Runnable Projects**: Hands-on implementations for RAG and more (located in `guides/projects/`)
 - **Agent Configurations**: 9 pre-configured agent modes for different interaction patterns
-- **Multi-Language Support**: Knowledge base available in 18 languages
+- **Multi-Language Support**: Knowledge base available in 20 languages
 
 ---
 
@@ -47,26 +45,25 @@ This repository serves as a foundational framework for AI agent development, pro
 
 ```
 /workspace
-├── knowledge_base/          # Multi-language knowledge files
+├── knowledge_base/          # Multi-language knowledge files (20 languages)
 │   ├── Arabic/              # Arabic knowledge base
-│   ├── English/             # English knowledge base (36 files)
+│   ├── English/             # English knowledge base (52+ files)
 │   ├── French/              # French knowledge base
 │   ├── German/              # German knowledge base
-│   ├── Hindi/               # Hindi knowledge base
 │   ├── Indonesian/          # Indonesian knowledge base
 │   ├── Italian/             # Italian knowledge base
 │   ├── Japanese/            # Japanese knowledge base
 │   ├── Korean/              # Korean knowledge base
-│   ├── Mandarin_Simplified/ # Simplified Chinese knowledge base
-│   ├── Mandarin_Traditional/# Traditional Chinese knowledge base
+│   ├── Mandarin (Simplified Chinese)/   # Simplified Chinese knowledge base
+│   ├── Mandarin (Traditional Chinese)/  # Traditional Chinese knowledge base
 │   ├── Persian/             # Persian knowledge base
 │   ├── Polish/              # Polish knowledge base
 │   ├── Portuguese/          # Portuguese knowledge base
 │   ├── Russian/             # Russian knowledge base
+│   ├── Spanish/             # Spanish knowledge base
 │   ├── Thai/                # Thai knowledge base
 │   ├── Turkish/             # Turkish knowledge base
-│   ├── Vietnamese/          # Vietnamese knowledge base
-│   └── 6 planned languages are documented in the Multi-Language Support table below, in addition to the 18 existing directories above.
+│   └── Vietnamese/          # Vietnamese knowledge base
 ├── guides/                  # Complete AI training guides
 │   ├── RAG/                 # Retrieval-Augmented Generation
 │   ├── Transformers/        # Language models
@@ -74,24 +71,24 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── GANs/                # Generative Adversarial Networks
 │   ├── GNNs/                # Graph Neural Networks
 │   ├── Agentic_Systems/     # Autonomous AI agents
-│   └── more...              # Additional guides
-├── projects/                # Runnable example projects
-│   ├── rag-chatbot/         # First AI chatbot (beginner)
-│   └── more coming soon!    # Projects for each guide
-├── prerequisites/           # Ultra-short beginner tutorials
-│   ├── terminal_basics.md   # Command line fundamentals
-│   ├── python_basics.md     # 10 essential Python concepts
-│   └── git_basics.md        # Version control basics
-├── errors/                  # Common error solutions
-│   ├── CUDA_OOM.md          # GPU memory errors
-│   ├── ImportError_Transformers.md  # Import issues
-│   └── Torch_Not_Installed.md       # PyTorch setup
-├── skills/                  # AI agent skill definitions
+│   ├── MoE/                 # Mixture of Experts
+│   ├── Infrastructure_Layers/      # Infrastructure patterns
+│   ├── Orchestration_Patterns/     # Orchestration patterns
+│   ├── User Questions/      # User-submitted questions
+│   ├── projects/            # Runnable projects
+│   │   ├── rag_simple/      # Simple RAG implementation
+│   │   └── rag-chatbot/     # RAG chatbot project
+│   ├── README.md            # Guides overview
+│   ├── hardware_reality_check.md    # Hardware requirements
+│   ├── how_to_build_ai.md   # AI building guide
+│   └── progression_map.md   # Learning progression
+├── skills/                  # AI agent skill definitions (50+ skills)
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
 │   ├── data-skills/         # Data handling
 │   ├── designing-skills/    # Design capabilities
 │   ├── devops-skills/       # DevOps practices
+│   ├── focused-skills/      # Focused skill modules
 │   ├── management-skills/   # Management capabilities
 │   ├── research-skills/     # Research methods
 │   ├── security-skills/     # Security practices
@@ -99,29 +96,9 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── technical-skills/    # Technical capabilities
 │   ├── testing-skills/      # Testing methodologies
 │   ├── skill-creator.md     # Skill creation guide
+│   ├── focused_skills.md    # Focused skills documentation
 │   └── writing-knowledge.md # Writing best practices
-├── guides/                  # AI/ML learning guides
-│   ├── RAG/                 # Retrieval-Augmented Generation
-│   ├── Transformers/        # Transformer architectures
-│   ├── CNNs/                # Convolutional Neural Networks
-│   ├── GANs/                # Generative Adversarial Networks
-│   ├── Agentic_Systems/     # AI Agent systems
-│   └── ...                  # More guides
-├── projects/                # Runnable code examples
-│   ├── rag_simple/          # Simple RAG implementation (~150 lines)
-│   ├── transformers_intro/  # Coming soon
-│   └── cnn_basics/          # Coming soon
-├── errors/                  # Common error solutions
-│   ├── README.md            # Error index
-│   ├── CUDA_OOM.md          # GPU memory errors
-│   ├── ImportError_Transformers.md
-│   └── Torch_Not_Installed.md
-├── prerequisites/           # Beginner tutorials
-│   ├── README.md            # Getting started checklist
-│   ├── terminal_basics.md   # Command line fundamentals
-│   ├── python_basics.md     # Python essentials
-│   └── git_basics.md        # Version control basics
-├── agent_modes/             # Agent configuration files
+├── agent_modes/             # Agent configuration files (9 modes)
 │   ├── Agent.Agent.md       # Full coding agent
 │   ├── Ask.Agent.md         # Q&A mode
 │   ├── Chat.Agent.md        # Chat mode
@@ -143,29 +120,19 @@ Note: If you don't actually speak any other languages it's fine, you can use too
 
 New to AI/ML development? Start here!
 
-### Step 1: Check Prerequisites (5-30 minutes)
-
-Before diving into AI guides, make sure you know the basics:
-
-- **[Terminal Basics](prerequisites/terminal_basics.md)** - Command line fundamentals (5 min)
-- **[Python Basics](prerequisites/python_basics.md)** - Essential Python concepts (15 min)
-- **[Git Basics](prerequisites/git_basics.md)** - Version control basics (10 min)
-
-**Not sure if you're ready?** Take the [self-assessment quiz](prerequisites/README.md)!
-
-### Step 2: Run Your First Project (15 minutes)
+### Step 1: Run Your First Project (15 minutes)
 
 Get hands-on immediately with a runnable project:
 
 ```bash
-cd projects/rag_simple
+cd guides/projects/rag_simple
 pip install -r requirements.txt
 python main.py
 ```
 
-See all [Runnable Projects](projects/README.md) →
+See all [Runnable Projects](guides/projects/README.md) →
 
-### Step 3: Pick a Learning Path
+### Step 2: Pick a Learning Path
 
 Choose based on your interest:
 
@@ -176,12 +143,12 @@ Choose based on your interest:
 | **Computer Vision** | [CNNs Guide](guides/CNNs/) | Coming soon | Image recognition |
 | **AI Agents** | [Agentic Systems](guides/Agentic_Systems/) | Coming soon | Autonomous agents |
 
-### Step 4: Get Help When Stuck
+### Step 3: Explore the Guides
 
-You'll encounter errors—that's normal! Check our [Common Errors](errors/README.md) database:
-- [CUDA Out of Memory](errors/CUDA_OOM.md)
-- [Import Errors](errors/ImportError_Transformers.md)
-- [PyTorch Not Installed](errors/Torch_Not_Installed.md)
+Browse the complete guide collection in the [guides/](guides/) directory:
+- [Hardware Reality Check](guides/hardware_reality_check.md) - Understanding hardware requirements
+- [How to Build AI](guides/how_to_build_ai.md) - Comprehensive AI building guide
+- [Progression Map](guides/progression_map.md) - Learning path roadmap
 
 ---
 
@@ -189,7 +156,7 @@ You'll encounter errors—that's normal! Check our [Common Errors](errors/README
 
 ### English Knowledge Base Structure
 
-The English knowledge base contains **36 files** organized into 10 categories:
+The English knowledge base contains **52+ files** organized into 10 categories:
 
 #### 01 Technology and Computing (7 files)
 | File | Description |
@@ -266,7 +233,7 @@ The English knowledge base contains **36 files** organized into 10 categories:
 
 ## 🛠️ Skills Library
 
-The skills library contains **40+ skill modules** organized by capability type:
+The skills library contains **50+ skill modules** organized by capability type:
 
 ### Behavior Skills (`behavior-skills/`)
 Core behavioral capabilities for AI interactions:
@@ -309,8 +276,12 @@ Specialized technical capabilities across multiple domains:
 - **Research**: Information retrieval and critical thinking
 - **Data**: Data handling and processing
 
+### Focused Skills (`focused-skills/`)
+Specialized focused skill modules for targeted tasks.
+
 ### Core Documentation
 - `skill-creator.md` — Guidelines for creating new skills
+- `focused_skills.md` — Focused skills documentation
 - `writing-knowledge.md` — Writing best practices and standards
 
 ---
@@ -341,7 +312,7 @@ Each agent mode includes:
 
 ## 🌍 Multi-Language Support
 
-The knowledge base supports **18 languages**: 18 currently available and 6 planned.
+The knowledge base supports **20 languages** currently available.
 
 | Language | Directory | Status |
 |----------|-----------|--------|
@@ -363,14 +334,6 @@ The knowledge base supports **18 languages**: 18 currently available and 6 plann
 | Thai | `Thai/` | ✅ Available |
 | Turkish | `Turkish/` | ✅ Available |
 | Vietnamese | `Vietnamese/` | ✅ Available |
-| Hindi | `Hindi/` | 🟡 Planned |
-| Ukrainian | `Ukrainian/` | 🟡 Planned |
-| Romanian | `Romanian/` | 🟡 Planned |
-| Bengali (Bangla)  | `Bengali (Bangla)/` | 🟡 Planned |
-| Urdu | `Urdu/` | 🟡 Planned |
-| Tagalog (Filipino) | `Tagalog (Filipino)/` | 🟡 Planned |
-
-Note: I may not start working on Hindi, Ukrainian, Bengali, Urdu, or Tagalog, until next week or month or whenever I have time. But they are planned and expected to come out **during** or **after** July.
 
 ---
 
@@ -500,10 +463,11 @@ Detailed behavioral guidelines and interaction patterns.
 
 This repository serves as:
 
-- **Structured Knowledge Base**: Organized, domain-specific information for AI reference
--  **Skill Library**: Modular capabilities for enhancing agent performance
--  **Configuration Hub**: Centralized agent mode definitions
--  **Multi-Language Resource**: Globally accessible knowledge in 18 languages
+- **Structured Knowledge Base**: Organized, domain-specific information for AI reference (52+ files)
+-  **Skill Library**: Modular capabilities for enhancing agent performance (50+ skills)
+-  **Configuration Hub**: Centralized agent mode definitions (9 modes)
+-  **Multi-Language Resource**: Globally accessible knowledge in 20 languages
+-  **Runnable Projects**: Hands-on implementations for practical learning
 -  **Extensible Framework**: Maintainable and scalable architecture for AI development
 -  **Collaboration Platform**: Standardized formats for team contributions
 
