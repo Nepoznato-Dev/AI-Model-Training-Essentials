@@ -497,7 +497,7 @@ class DeepLabV3Plus(nn.Module):
         
         # Upsample to input size
         x = nn.functional.interpolate(
-            x, size=x.shape[2:] * 4, mode='bilinear', align_corners=False
+            x, scale_factor=4, mode='bilinear', align_corners=False
         )
         
         return x
