@@ -216,7 +216,7 @@ class DetectionLoss(nn.Module):
     def forward(self, predictions, targets):
         """
         predictions: dict with 'rpn_cls', 'rpn_reg', 'cls_scores', 'bbox_preds'
-        targets: list of dicts with 'boxes' and 'labels'
+        targets: dict with 'rpn_labels', 'rpn_boxes', 'labels', and 'boxes'
         """
         total_loss = 0
         
