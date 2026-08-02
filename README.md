@@ -60,6 +60,25 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Turkish/             # Turkish knowledge base
 │   ├── Vietnamese/          # Vietnamese knowledge base
 │   └── 6 planned languages are documented in the Multi-Language Support table below, in addition to the 18 existing directories above.
+├── guides/                  # Complete AI training guides
+│   ├── RAG/                 # Retrieval-Augmented Generation
+│   ├── Transformers/        # Language models
+│   ├── CNNs/                # Convolutional Neural Networks
+│   ├── GANs/                # Generative Adversarial Networks
+│   ├── GNNs/                # Graph Neural Networks
+│   ├── Agentic_Systems/     # Autonomous AI agents
+│   └── more...              # Additional guides
+├── projects/                # Runnable example projects
+│   ├── rag-chatbot/         # First AI chatbot (beginner)
+│   └── more coming soon!    # Projects for each guide
+├── prerequisites/           # Ultra-short beginner tutorials
+│   ├── terminal_basics.md   # Command line fundamentals
+│   ├── python_basics.md     # 10 essential Python concepts
+│   └── git_basics.md        # Version control basics
+├── errors/                  # Common error solutions
+│   ├── CUDA_OOM.md          # GPU memory errors
+│   ├── ImportError_Transformers.md  # Import issues
+│   └── Torch_Not_Installed.md       # PyTorch setup
 ├── skills/                  # AI agent skill definitions
 │   ├── behavior-skills/     # Behavioral capabilities
 │   ├── collaboration-skills/# Team collaboration
