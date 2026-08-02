@@ -35,7 +35,22 @@ This chatbot:
 2. Run all cells (Runtime → Run all)
 3. Start chatting!
 
-### Option B: Local Setup
+### Option B: Jupyter Notebook (Interactive Learning)
+
+```bash
+# 1. Navigate to project folder
+cd projects/rag-chatbot
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Launch notebook
+jupyter notebook rag_chatbot.ipynb
+```
+
+Then follow the interactive tutorial with quizzes!
+
+### Option C: Local Setup (Python Script)
 
 ```bash
 # 1. Clone or download this project
@@ -46,9 +61,6 @@ pip install -r requirements.txt
 
 # 3. Run the script
 python rag_chatbot.py
-
-# 4. Or run the notebook
-jupyter notebook rag_chatbot.ipynb
 ```
 
 ---
