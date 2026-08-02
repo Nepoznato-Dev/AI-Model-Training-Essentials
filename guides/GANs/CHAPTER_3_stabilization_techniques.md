@@ -552,8 +552,8 @@ class GANMonitor:
             return False
         
         recent = self.metrics['d_fake_scores'][-100:]
+        import numpy as np
         variance = np.var(recent)
-        
         return variance < threshold
     
     def plot_metrics(self):
