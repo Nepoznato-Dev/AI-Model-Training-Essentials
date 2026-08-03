@@ -57,7 +57,7 @@ graph TD
 | 2 | ML Fundamentals | [Infrastructure Layers](./Infrastructure_Layers/) | Simple Classifier | 2 weeks |
 | 3 | **RAG Systems** | [RAG Guide](./RAG/) | [RAG Project](../projects/rag_simple/) | 2 weeks |
 | 4 | **Transformers** | [Transformers Guide](./Transformers/) | Text Classification | 3 weeks |
-| 5 | LLM Fine-tuning | Coming Soon | Custom Chatbot | 3 weeks |
+| 5 | LLM Fine-tuning | [LLM Guide](./LLMs/) | Custom Chatbot | 3 weeks |
 | 6 | Production NLP | [Orchestration](./Orchestration_Patterns/) | Deployed API | 2 weeks |
 
 **Total Time:** ~13 weeks (3 months)
@@ -80,7 +80,7 @@ graph TD
 | 2 | Deep Learning Basics | [Infrastructure Layers](./Infrastructure_Layers/) | Neural Network | 2 weeks |
 | 3 | **CNNs** | [CNNs Guide](./CNNs/) | [CNN Project](../projects/cnn_basics/) | 3 weeks |
 | 4 | **GANs** | [GANs Guide](./GANs/) | Image Generation | 3 weeks |
-| 5 | Object Detection | Coming Soon | YOLO Implementation | 3 weeks |
+| 5 | Object Detection | [Object Detection Guide](./Object_Detection/) | YOLO Implementation | 3 weeks |
 | 6 | Vision Deployment | [Orchestration](./Orchestration_Patterns/) | Mobile Vision App | 2 weeks |
 
 **Total Time:** ~14 weeks (3.5 months)
@@ -126,7 +126,7 @@ graph TD
 | 2 | Classical ML | [Infrastructure Layers](./Infrastructure_Layers/) | Prediction Model | 3 weeks |
 | 3 | Deep Learning | [CNNs Guide](./CNNs/) | Image Classifier | 3 weeks |
 | 4 | **Transformers** | [Transformers Guide](./Transformers/) | Text Analysis | 3 weeks |
-| 5 | MLOps | Coming Soon | Model Pipeline | 3 weeks |
+| 5 | MLOps | [MLOps Guide](./MLOps/) | Model Pipeline | 3 weeks |
 | 6 | Advanced Topics | Choose specialization | Capstone Project | 4 weeks |
 
 **Total Time:** ~18 weeks (4.5 months)

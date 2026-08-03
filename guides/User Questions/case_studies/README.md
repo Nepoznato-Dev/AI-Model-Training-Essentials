@@ -128,7 +128,7 @@ Multi-agent system with specialized agents for orders, returns, products, and es
 
 ---
 
-## More Coming Soon!
+## More Case Studies Available!
 
 New case studies added monthly covering:
 - Legal document search
