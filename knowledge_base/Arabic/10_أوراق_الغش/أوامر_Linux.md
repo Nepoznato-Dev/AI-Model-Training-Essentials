@@ -358,4 +358,4 @@ du -ah | sort -hr | head -20
 
 ---
 
-*آخر تحديث: June 2025 | Linux/Unix compatible*
+*آخر تحديث: July 2026 | Linux/Unix compatible*
