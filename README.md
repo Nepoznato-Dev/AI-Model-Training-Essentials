@@ -7,6 +7,7 @@
 [![Languages](https://img.shields.io/badge/languages-20-multicolor)](knowledge_base/)
 [![Knowledge Files](https://img.shields.io/badge/knowledge_files-52+-green)](knowledge_base/English/)
 [![Skills](https://img.shields.io/badge/skills-50+-orange)](skills/)
+[![Wiki](https://img.shields.io/badge/wiki-documentation-purple)](wiki/)
 [![Projects](https://img.shields.io/badge/projects-runnable-lightgrey)](guides/projects/)
 
 ---
@@ -18,6 +19,7 @@
 - [Quick Start for Beginners](#-quick-start-for-beginners)
 - [Knowledge Base](#-knowledge-base)
 - [Skills Library](#-skills-library)
+- [Wiki Documentation](#-wiki-documentation)
 - [Runnable Projects](#-runnable-projects)
 - [Common Errors](#-common-errors)
 - [Agent Modes](#-agent-modes)
@@ -35,6 +37,7 @@ This repository serves as a foundational framework for AI agent development, pro
 
 - **Structured Knowledge**: 52+ domain-specific knowledge files organized by category
 - **Skill Definitions**: 50+ skill modules covering behavior, design, communication, and technical capabilities
+- **Wiki Documentation**: Comprehensive guides on architecture, deployment, monitoring, security, and learning paths
 - **Runnable Projects**: Hands-on implementations for RAG and more (located in `guides/projects/`)
 - **Agent Configurations**: 9 pre-configured agent modes for different interaction patterns
 - **Multi-Language Support**: Knowledge base available in 20 languages
@@ -98,6 +101,23 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── skill-creator.md     # Skill creation guide
 │   ├── focused_skills.md    # Focused skills documentation
 │   └── writing-knowledge.md # Writing best practices
+├── wiki/                    # AI Engineering Knowledge Base Wiki
+│   ├── README.md            # Wiki navigation and structure
+│   ├── getting_started.md   # Installation and setup guide
+│   ├── architecture_patterns.md  # System design patterns
+│   ├── model_development.md      # Model training and optimization
+│   ├── deployment.md             # Production deployment strategies
+│   ├── monitoring.md             # Observability and monitoring
+│   ├── security.md               # Security best practices
+│   ├── learning_paths/      # Structured learning paths
+│   │   ├── beginner.md
+│   │   ├── intermediate.md
+│   │   └── advanced.md
+│   └── references/          # Quick reference materials
+│       ├── api_reference.md
+│       ├── glossary.md
+│       ├── troubleshooting.md
+│       └── checklist.md
 ├── agent_modes/             # Agent configuration files (9 modes)
 │   ├── Agent.Agent.md       # Full coding agent
 │   ├── Ask.Agent.md         # Q&A mode
@@ -283,6 +303,40 @@ Specialized focused skill modules for targeted tasks.
 - `skill-creator.md` — Guidelines for creating new skills
 - `focused_skills.md` — Focused skills documentation
 - `writing-knowledge.md` — Writing best practices and standards
+
+---
+
+## 📖 Wiki Documentation
+
+The Wiki provides comprehensive documentation on AI engineering topics:
+
+### Core Topics
+
+| Topic | Description | Link |
+|-------|-------------|------|
+| **Getting Started** | Setup, installation, and first steps | [View](wiki/getting_started.md) |
+| **Architecture Patterns** | System design patterns for AI applications | [View](wiki/architecture_patterns.md) |
+| **Model Development** | Training, fine-tuning, and optimization | [View](wiki/model_development.md) |
+| **Deployment** | Production deployment strategies | [View](wiki/deployment.md) |
+| **Monitoring & Observability** | Tracking model performance and system health | [View](wiki/monitoring.md) |
+| **Security** | Security best practices for AI systems | [View](wiki/security.md) |
+
+### Learning Paths
+
+| Path | Target Audience | Link |
+|------|-----------------|------|
+| **Beginner** | New to AI/ML | [Start Here](wiki/learning_paths/beginner.md) |
+| **Intermediate** | Some ML experience | [Continue Here](wiki/learning_paths/intermediate.md) |
+| **Advanced** | Production AI engineers | [Deep Dive](wiki/learning_paths/advanced.md) |
+
+### Quick References
+
+- [API Reference](wiki/references/api_reference.md)
+- [Glossary](wiki/references/glossary.md)
+- [Troubleshooting Guide](wiki/references/troubleshooting.md)
+- [Best Practices Checklist](wiki/references/checklist.md)
+
+For complete wiki navigation, see the [Wiki README](wiki/README.md) →
 
 ---
 
@@ -491,6 +545,18 @@ We welcome contributions! Please follow these guidelines:
 - 🌍 More translations for existing content
 - 🐛 Bug fixes and corrections
 - 📝 Documentation improvements
+- 📖 Wiki pages and learning paths
+
+### Contributing to the Wiki
+
+To contribute to the Wiki documentation:
+
+1. Create a new `.md` file in the appropriate `wiki/` subdirectory
+2. Follow the existing format and structure
+3. Update [wiki/README.md](wiki/README.md) with links to new pages
+4. Submit a pull request
+
+For detailed contribution guidelines, see the [Wiki Contributing Guide](wiki/README.md#-contributing).
 
 ---
 

@@ -1,3 +1,1 @@
-```
-# Wiki documentation files are source content, no need to ignore
-```
+Nothing should be ignored since only a README.md file was modified and no build artifacts, dependencies, or temporary files were detected in the changes.
