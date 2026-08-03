@@ -9,6 +9,8 @@ Application security, secure coding practices, and threat protection for buildin
 - **Authentication & Authorization** - Secure access control implementation
 - **Cryptography** - Proper use of encryption and hashing
 - **Security Testing** - Finding vulnerabilities through testing
+- **AI Security** - Protecting ML models and AI systems
+- **Incident Response** - Handling security breaches and vulnerabilities
 
 ## Why Security Matters
 
@@ -18,10 +20,15 @@ Security practices protect:
 - Regulatory compliance
 - Financial assets
 - System availability
+- Model integrity and intellectual property
 
-## Getting Started
+## Available Documents
 
-Start with [`secure_coding.md`](secure_coding.md) for fundamental secure coding practices.
+- [Secure Coding](secure_coding.md) - Fundamental secure coding practices
+- [Threat Modeling](threat_modeling.md) - Systematic threat identification
+- [Authentication & Authorization](authentication_authorization.md) - Access control patterns
+- [Security Testing](security_testing.md) (coming soon) - Vulnerability assessment
+- [AI Security](ai_security.md) (coming soon) - ML-specific security concerns
 
 ## License
 
