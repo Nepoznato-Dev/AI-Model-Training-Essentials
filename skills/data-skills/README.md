@@ -9,6 +9,9 @@ Data engineering, analysis, database design, and data management for building da
 - **Data Engineering** - ETL processes and data pipelines
 - **Data Modeling** - Conceptual, logical, and physical data models
 - **Big Data** - Handling large-scale data processing
+- **Data Quality** - Ensuring accuracy, completeness, and consistency
+- **Data Governance** - Policies and standards for data management
+- **ML Data Operations** - Data versioning, feature stores, and pipelines for ML
 
 ## Why Data Skills Matter
 
@@ -18,10 +21,15 @@ Effective data practices enable:
 - Efficient data processing
 - Data quality and integrity
 - Scalable data architectures
+- Better model training and performance
+- Regulatory compliance (GDPR, CCPA, etc.)
 
-## Coming Soon
+## Available Documents
 
-Detailed skill documents are being developed.
+- [Database Design](database_design.md) - Principles of effective database design
+- [Data Analysis](data_analysis.md) - Techniques for analyzing data
+- [Data Engineering](data_engineering.md) (coming soon) - Building data pipelines
+- [ML Data Operations](ml_data_ops.md) (coming soon) - Data practices for ML systems
 
 ## License
 

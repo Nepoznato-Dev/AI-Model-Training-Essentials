@@ -358,4 +358,4 @@ du -ah | sort -hr | head -20
 
 ---
 
-*Última actualización: June 2025 | Linux/Unix compatible*
+*Última actualización: July 2026 | Linux/Unix compatible*

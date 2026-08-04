@@ -9,6 +9,9 @@ Leadership, people management, and strategic decision-making for technical leade
 - **Strategic Planning** - Long-term technical and business alignment
 - **Decision Making** - Making effective technical and business decisions
 - **Stakeholder Management** - Managing expectations and communication
+- **Team Building** - Creating high-performing teams
+- **Conflict Resolution** - Addressing disagreements constructively
+- **Performance Management** - Setting goals and evaluating progress
 
 ## Why Management Skills Matter
 
@@ -18,10 +21,14 @@ Effective management enables:
 - Efficient resource allocation
 - Risk mitigation
 - Career growth for team members
+- Better work-life balance for the team
+- Increased productivity and morale
 
-## Coming Soon
+## Available Documents
 
-Detailed skill documents are being developed.
+- [Project Management](project_management.md) - Core project management practices
+- [Team Leadership](team_leadership.md) (coming soon) - Building and leading teams
+- [Strategic Planning](strategic_planning.md) (coming soon) - Long-term planning
 
 ## License
 

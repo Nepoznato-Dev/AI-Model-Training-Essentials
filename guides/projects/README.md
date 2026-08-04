@@ -35,29 +35,53 @@ python main.py
 
 ---
 
-### 2. Transformers Introduction *(Coming Soon)*
-**What it will do:** Load and use pre-trained transformer models for text classification.
+### 2. Transformers Introduction
+**What it does:** Load and use pre-trained transformer models for text classification.
 
-**Concepts to be covered:**
+**Concepts covered:**
 - Transformer architecture basics
 - Loading pre-trained models
 - Tokenization
 - Fine-tuning fundamentals
 
-**Status:** 🚧 In development
+**Files:**
+- [`transformers_intro/`](transformers_intro/) - Complete transformer implementation
+- [README](transformers_intro/README.md) - Full documentation
+- [main.py](transformers_intro/main.py) - Heavily commented code (~180 lines)
+
+**Quick start:**
+```bash
+cd projects/transformers_intro
+pip install -r requirements.txt
+python main.py
+```
+
+**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/transformers_intro/transformers_intro.ipynb)
 
 ---
 
-### 3. CNN Basics *(Coming Soon)*
-**What it will do:** Build a simple convolutional neural network for image classification.
+### 3. CNN Basics
+**What it does:** Build a simple convolutional neural network for image classification.
 
-**Concepts to be covered:**
+**Concepts covered:**
 - Convolutional layers
 - Pooling operations
 - Training loops
 - Image preprocessing
 
-**Status:** 🚧 In development
+**Files:**
+- [`cnn_basics/`](cnn_basics/) - Complete CNN implementation
+- [README](cnn_basics/README.md) - Full documentation
+- [main.py](cnn_basics/main.py) - Heavily commented code (~250 lines)
+
+**Quick start:**
+```bash
+cd projects/cnn_basics
+pip install -r requirements.txt
+python main.py
+```
+
+**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/cnn_basics/cnn_basics.ipynb)
 
 ---
 

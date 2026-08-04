@@ -591,4 +591,4 @@ REVOKE DELETE ON database.table FROM 'user'@'localhost';
 
 ---
 
-*آخر تحديث: June 2025 | SQL Standard (MySQL/PostgreSQL compatible)*
+*آخر تحديث: July 2026 | SQL Standard (MySQL/PostgreSQL compatible)*

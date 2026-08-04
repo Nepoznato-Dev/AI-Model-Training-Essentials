@@ -341,4 +341,4 @@ any(), all()
 
 ---
 
-*最終更新: June 2025 | Python 3.x*
+*最終更新: July 2026 | Python 3.x*

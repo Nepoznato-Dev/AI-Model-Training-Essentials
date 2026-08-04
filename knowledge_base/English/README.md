@@ -2,7 +2,7 @@
 
 A comprehensive collection of reference documents covering technology, science, business, humanities, and practical skills.
 
-**Last Updated:** June 2025  
+**Last Updated:** July 2026  
 **Total Files:** 34+ markdown documents  
 **Organization:** Categorized into 10 thematic directories
 
