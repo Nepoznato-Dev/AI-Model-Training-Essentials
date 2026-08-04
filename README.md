@@ -15,19 +15,19 @@
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [Repository Structure](#-repository-structure)
-- [Quick Start for Beginners](#-quick-start-for-beginners)
-- [Knowledge Base](#-knowledge-base)
-- [Skills Library](#-skills-library)
-- [Wiki Documentation](#-wiki-documentation)
-- [Runnable Projects](#-runnable-projects)
-- [Common Errors](#-common-errors)
-- [Agent Modes](#-agent-modes)
-- [Multi-Language Support](#-multi-language-support)
-- [Usage Guide](#-usage-guide)
-- [Contributing](#-contributing)
-- [File Formats](#-file-formats)
-- [License](#-license)
+- [Repository Structure](#repository-structure)
+- [Quick Start for Beginners](#quick-start-for-beginners)
+- [Knowledge Base](#knowledge-base)
+- [Skills Library](#skills-library)
+- [Wiki Documentation](#wiki-documentation)
+- [Runnable Projects](#runnable-projects)
+- [Common Errors](#common-errors)
+- [Agent Modes](#agent-modes)
+- [Multi-Language Support](#multi-language-support)
+- [Usage Guide](#usage-guide)
+- [Contributing](#contributing)
+- [File Formats](#file-formats)
+- [License](#license)
 
 ---
 
@@ -119,15 +119,15 @@ This repository serves as a foundational framework for AI agent development, pro
 │       ├── troubleshooting.md
 │       └── checklist.md
 ├── agent_modes/             # Agent configuration files (9 modes)
-│   ├── Agent.Agent.md       # Full coding agent
-│   ├── Ask.Agent.md         # Q&A mode
-│   ├── Chat.Agent.md        # Chat mode
-│   ├── Debug.Agent.md       # Debugging mode
-│   ├── Explore.Agent.md     # Exploration mode
-│   ├── Plan.Agent.md        # Planning mode
-│   ├── Review.Agent.md      # Review mode
-│   ├── Secure.Agent.md      # Security mode
-│   └── Test.Agent.md        # Testing mode
+│   ├── Agent.md             # Full coding agent
+│   ├── Ask.md               # Q&A mode
+│   ├── Chat.md              # Chat mode
+│   ├── Debug.md             # Debugging mode
+│   ├── Explore.md           # Exploration mode
+│   ├── Plan.md              # Planning mode
+│   ├── Review.md            # Review mode
+│   ├── Secure.md            # Security mode
+│   └── Test.md              # Testing mode
 ├── LICENSE                  # License file
 └── README.md                # This file
 ```
@@ -158,10 +158,10 @@ Choose based on your interest:
 
 | Path | Start Here | Projects | Career Goal |
 |------|-----------|----------|-------------|
-| **NLP Engineer** | [RAG Guide](guides/RAG/) | RAG Simple | Search, Q&A systems |
-| **Deep Learning** | [Transformers Guide](guides/Transformers/) | Coming soon | NLP, Translation |
-| **Computer Vision** | [CNNs Guide](guides/CNNs/) | Coming soon | Image recognition |
-| **AI Agents** | [Agentic Systems](guides/Agentic_Systems/) | Coming soon | Autonomous agents |
+| **NLP Engineer** | [RAG Guide](guides/RAG/) | [RAG Simple](guides/projects/rag_simple/) | Search, Q&A systems |
+| **Deep Learning** | [Transformers Guide](guides/Transformers/) | [Transformers Intro](guides/projects/transformers_intro/) | NLP, Translation |
+| **Computer Vision** | [CNNs Guide](guides/CNNs/) | [CNN Basics](guides/projects/cnn_basics/) | Image recognition |
+| **AI Agents** | [Agentic Systems](guides/Agentic_Systems/) | See guide projects | Autonomous agents |
 
 ### Step 3: Explore the Guides
 
@@ -240,6 +240,10 @@ The English knowledge base contains **52+ files** organized into 10 categories:
 | File | Description |
 |------|-------------|
 | `2026_and_future_events.md` | Future predictions and emerging trends |
+
+#### 09 Bad Examples and Failures (Coming Soon)
+This category will contain real-world AI failures, common mistakes, and lessons learned from bad implementations.
+*Currently available in English and Portuguese knowledge bases.*
 
 #### 10 Cheat Sheets (4 files)
 | File | Description |
@@ -346,15 +350,15 @@ Pre-configured agent modes for different interaction patterns:
 
 | Mode | File | Use Case |
 |------|------|----------|
-| **Agent** | `Agent.Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
-| **Ask** | `Ask.Agent.md` | Question-answering mode for direct queries and information retrieval |
-| **Chat** | `Chat.Agent.md` | Conversational mode for natural dialogue and interactive discussions |
-| **Debug** | `Debug.Agent.md` | Debugging mode for identifying and fixing code issues |
-| **Explore** | `Explore.Agent.md` | Exploration mode for discovering and investigating new topics |
-| **Plan** | `Plan.Agent.md` | Planning mode for structured task breakdown and roadmap creation |
-| **Review** | `Review.Agent.md` | Review mode for code analysis, content review, and quality assurance |
-| **Secure** | `Secure.Agent.md` | Security mode for secure coding practices and vulnerability analysis |
-| **Test** | `Test.Agent.md` | Testing mode for test creation and validation |
+| **Agent** | `Agent.md` | Full coding agent for research, planning, editing, testing, and code improvement |
+| **Ask** | `Ask.md` | Question-answering mode for direct queries and information retrieval |
+| **Chat** | `Chat.md` | Conversational mode for natural dialogue and interactive discussions |
+| **Debug** | `Debug.md` | Debugging mode for identifying and fixing code issues |
+| **Explore** | `Explore.md` | Exploration mode for discovering and investigating new topics |
+| **Plan** | `Plan.md` | Planning mode for structured task breakdown and roadmap creation |
+| **Review** | `Review.md` | Review mode for code analysis, content review, and quality assurance |
+| **Secure** | `Secure.md` | Security mode for secure coding practices and vulnerability analysis |
+| **Test** | `Test.md` | Testing mode for test creation and validation |
 
 Each agent mode includes:
 - YAML frontmatter configuration
@@ -412,11 +416,11 @@ The knowledge base supports **20 languages** currently available.
 3. **Mode Selection**
    ```
    - Choose agent mode based on interaction type:
-     * Coding tasks → Agent.Agent.md
-     * Questions → Ask.Agent.md
-     * Research → Explore.Agent.md
-     * Planning → Plan.Agent.md
-     * Reviews → Review.Agent.md
+     * Coding tasks → Agent.md
+     * Questions → Ask.md
+     * Research → Explore.md
+     * Planning → Plan.md
+     * Reviews → Review.md
    ```
 
 ### For Contributors

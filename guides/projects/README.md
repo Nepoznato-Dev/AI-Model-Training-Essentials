@@ -26,7 +26,7 @@ Hands-on, minimal implementations for each major AI topic. Each project is:
 
 **Quick start:**
 ```bash
-cd projects/rag_simple
+cd guides/projects/rag_simple
 pip install -r requirements.txt
 python main.py
 ```
@@ -51,7 +51,7 @@ python main.py
 
 **Quick start:**
 ```bash
-cd projects/transformers_intro
+cd guides/projects/transformers_intro
 pip install -r requirements.txt
 python main.py
 ```
@@ -76,7 +76,7 @@ python main.py
 
 **Quick start:**
 ```bash
-cd projects/cnn_basics
+cd guides/projects/cnn_basics
 pip install -r requirements.txt
 python main.py
 ```
@@ -157,7 +157,7 @@ python main.py
 ```bash
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/AI-Model-Training-Essentials.git
-cd AI-Model-Training-Essentials/projects
+cd AI-Model-Training-Essentials/guides/projects
 
 # Choose a project
 cd rag_simple
