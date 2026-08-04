@@ -1,16 +1,16 @@
-# RAG and Vector Search Failures
+# فشل بحث RAG وVector
 
-This document consolidates common failures in Retrieval-Augmented Generation (RAG) systems, embedding usage, and vector search implementations.
+تعمل هذه الوثيقة على دمج حالات الفشل الشائعة في أنظمة إنشاء الاسترجاع المعزز (RAG)، واستخدام التضمين، وتطبيقات بحث المتجهات.
 
 ---
 
-## Bad RAG (Retrieval-Augmented Generation)
+## Bad RAG (جيل الاسترجاع المعزز)
 
-Retrieval-Augmented Generation (RAG) combines retrieval systems with generative AI to produce more accurate and contextually relevant responses. Bad RAG implementations suffer from poor retrieval quality, inadequate context handling, or generation issues.
+يجمع الجيل المعزز للاسترجاع (RAG) بين أنظمة الاسترجاع والذكاء الاصطناعي التوليدي لإنتاج استجابات أكثر دقة وملاءمة للسياق. تعاني تطبيقات RAG السيئة من ضعف جودة الاسترجاع، أو عدم كفاية التعامل مع السياق، أو مشكلات في الإنشاء.
 
-### Poor Chunking Strategy
+### استراتيجية التقطيع الضعيفة
 
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Chunking by fixed character count regardless of content
 def chunk_document(text, chunk_size=500):
@@ -22,14 +22,13 @@ def chunk_document(text, chunk_size=500):
 # Results in chunks that cut sentences mid-way
 # "The quick brown fox jumps over the l" + "azy dog..."
 ```
+**المشاكل:**
+- يتم تقسيم الجمل والفقرات بشكل تعسفي
+- يتم فقدان السياق عند حدود القطعة
+- المعنى الدلالي مجزأ
+- استرجاع إرجاع معلومات غير كاملة
 
-**Problems:**
-- Sentences and paragraphs are split arbitrarily
-- Context is lost at chunk boundaries
-- Semantic meaning is fragmented
-- Retrieval returns incomplete information
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Chunk by semantic boundaries (paragraphs, sections)
 def chunk_by_paragraphs(text, max_chunk_size=500):
@@ -53,24 +52,21 @@ def chunk_by_paragraphs(text, max_chunk_size=500):
     
     return chunks
 ```
+### تداخل السياق المفقود
 
-### Missing Context Overlap
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # No overlap between chunks - context lost at boundaries
 chunks = chunk_document(text, chunk_size=500, overlap=0)
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Add overlap to preserve context across chunk boundaries
 chunks = chunk_document(text, chunk_size=500, overlap=100)
 ```
+### تجاهل نية الاستعلام
 
-### Ignoring Query Intent
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using same retrieval for all query types
 def retrieve(query, documents):
@@ -78,8 +74,7 @@ def retrieve(query, documents):
     return semantic_search(query_embedding, documents, top_k=5)
 # Doesn't consider if user wants definition, example, comparison, etc.
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 def retrieve_with_intent(query, documents):
     # Classify query intent first
@@ -94,18 +89,16 @@ def retrieve_with_intent(query, documents):
     else:
         return semantic_search(query, documents, top_k=5)
 ```
+### تجاوز سعة نافذة السياق
 
-### Context Window Overflow
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Blindly concatenating all retrieved chunks
 def build_context(retrieved_chunks):
     return '\n\n'.join([chunk.text for chunk in retrieved_chunks])
 # May exceed LLM's context window limit
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 def build_context_within_limit(retrieved_chunks, max_tokens=4000):
     context_parts = []
@@ -121,16 +114,15 @@ def build_context_within_limit(retrieved_chunks, max_tokens=4000):
     
     return '\n\n'.join(context_parts)
 ```
-
 ---
 
-## Bad Embeddings
+## التضمينات السيئة
 
-Embeddings are vector representations of data that capture semantic meaning. Bad embeddings result from poor model selection, inadequate training, or improper usage.
+التضمينات هي تمثيلات متجهة للبيانات التي تلتقط المعنى الدلالي. تنجم عمليات التضمين السيئة عن سوء اختيار النموذج أو التدريب غير الكافي أو الاستخدام غير السليم.
 
-### Wrong Model for Domain
+### نموذج خاطئ للمجال
 
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using general-purpose embeddings for legal documents
 from sentence_transformers import SentenceTransformer
@@ -141,24 +133,21 @@ legal_embeddings = model.encode(legal_contracts)
 # Fails to capture legal terminology nuances
 # "force majeure" and "act of god" may not be close
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Use domain-specific embedding model
 model = SentenceTransformer('law-bert-base')  # Trained on legal corpus
 legal_embeddings = model.encode(legal_contracts)
 ```
+### عدم تطبيع المتجهات
 
-### Not Normalizing Vectors
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using raw embeddings without normalization
 embeddings = model.encode(documents)
 # Cosine similarity will be affected by vector magnitude
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 from sklearn.preprocessing import normalize
 
@@ -166,18 +155,16 @@ embeddings = model.encode(documents)
 embeddings_normalized = normalize(embeddings)  # L2 normalization
 # Now cosine similarity works correctly
 ```
+### تجاهل أبعاد التضمين
 
-### Ignoring Embedding Dimensions
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Mixing embeddings from different models
 embedding1 = model_768.encode(text1)  # 768 dimensions
 embedding2 = model_384.encode(text2)  # 384 dimensions
 similarity = cosine_similarity(embedding1, embedding2)  # ERROR!
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Always use the same model for all embeddings in a system
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -185,16 +172,15 @@ embedding1 = model.encode(text1)
 embedding2 = model.encode(text2)
 similarity = cosine_similarity(embedding1, embedding2)
 ```
-
 ---
 
-## Bad Vector Search
+## بحث متجه سيء
 
-Vector search enables semantic similarity search over high-dimensional embeddings. Bad implementations suffer from poor index configuration, inappropriate distance metrics, or scalability issues.
+يتيح البحث المتجه إمكانية البحث عن التشابه الدلالي عبر التضمينات عالية الأبعاد. تعاني التطبيقات السيئة من ضعف تكوين الفهرس، أو مقاييس المسافة غير المناسبة، أو مشكلات قابلية التوسع.
 
-### Wrong Distance Metric
+### قياس المسافة الخاطئة
 
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using Euclidean distance for normalized embeddings
 from qdrant_client import QdrantClient
@@ -208,13 +194,12 @@ client.create_collection(
     )
 )
 ```
+**لماذا هو سيء:**
+- المسافة الإقليدية تتأثر بحجم المتجه
+- بالنسبة للمتجهات المقيسة، يكون تشابه جيب التمام (المنتج النقطي) مناسبًا
+- النتائج ستكون أقل دقة للبحث الدلالي
 
-**Why It's Bad:**
-- Euclidean distance is affected by vector magnitude
-- For normalized vectors, cosine similarity (dot product) is appropriate
-- Results will be less accurate for semantic search
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 client.create_collection(
     collection_name="docs",
@@ -224,10 +209,9 @@ client.create_collection(
     )
 )
 ```
+### تحسين الفهرس مفقود
 
-### Missing Index Optimization
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # No index configuration - slow searches at scale
 client.create_collection(
@@ -236,8 +220,7 @@ client.create_collection(
 )
 # Will do brute-force search - O(n) complexity
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Configure HNSW index for fast approximate nearest neighbor search
 client.create_collection(
@@ -251,17 +234,15 @@ client.create_collection(
 )
 # O(log n) search complexity
 ```
+### عدم التعامل مع البيانات عالية الأبعاد
 
-### Not Handling High-Dimensional Data
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using very high-dimensional embeddings without consideration
 embeddings = model.encode(documents)  # 4096 dimensions
 # Curse of dimensionality makes all distances similar
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Use dimensionality reduction or choose appropriate embedding size
 from sklearn.decomposition import PCA
@@ -271,17 +252,15 @@ pca = PCA(n_components=256)
 embeddings_reduced = pca.fit_transform(embeddings)  # 256 dimensions
 # Better distance discrimination, faster search
 ```
+### تجاهل الاستدعاء مقابل مقايضة زمن الوصول
 
-### Ignoring Recall vs Latency Tradeoff
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Always using default search parameters
 results = client.search(collection_name="docs", query_vector=query, limit=10)
 # May be too slow or inaccurate for your use case
 ```
-
-**Better Approach:**
+** نهج أفضل: **
 ```python
 # Tune search parameters based on requirements
 # For high recall (accuracy-critical):
@@ -300,48 +279,47 @@ results = client.search(
     params=models.SearchParams(hnsw_ef=32)  # Lower = faster, less accurate
 )
 ```
+---
+
+## ملخص أفضل الممارسات
+
+### أنظمة RAG
+1. **التقسيم بشكل استراتيجي**: احترم الحدود الدلالية وأضف التداخل
+2. **ضع في اعتبارك غرض الاستعلام**: قم بتكييف عملية الاسترجاع بناءً على ما يريده المستخدم
+3. **إدارة السياق**: ابق ضمن حدود رموز LLM المميزة
+4. **التقييم الشامل**: اختبار مسار RAG الكامل، وليس الاسترجاع فقط
+
+### التضمينات
+1. **اختر النماذج المناسبة للمجال**: قم بمطابقة النموذج مع نوع المحتوى الخاص بك
+2. **تطبيع المتجهات**: ضروري لتشابه جيب التمام
+3. **الاتساق**: استخدم نفس النموذج في نظامك بأكمله
+4. **Monitor Drift**: إعادة تدريب التضمينات أو تحديثها مع تطور البيانات
+
+### بحث المتجهات
+1. **حدد مقياس المسافة الصحيح**: COSINE للدلالات، وEUCLID للمكانية
+2. **تكوين الفهارس**: استخدم HNSW لمجموعات البيانات الكبيرة
+3. **ضبط المعلمات**: موازنة الاستدعاء مقابل زمن الوصول لحالة الاستخدام الخاصة بك
+4. **مراقبة الأداء**: تتبع جودة البحث ووقت الاستجابة مع مرور الوقت
 
 ---
 
-## Best Practices Summary
+## موضوعات ذات صلة
 
-### RAG Systems
-1. **Chunk Strategically**: Respect semantic boundaries, add overlap
-2. **Consider Query Intent**: Adapt retrieval based on what user wants
-3. **Manage Context**: Stay within LLM token limits
-4. **Evaluate End-to-End**: Test full RAG pipeline, not just retrieval
-
-### Embeddings
-1. **Choose Domain-Appropriate Models**: Match model to your content type
-2. **Normalize Vectors**: Essential for cosine similarity
-3. **Consistency**: Use same model throughout your system
-4. **Monitor Drift**: Retrain or update embeddings as data evolves
-
-### Vector Search
-1. **Select Right Distance Metric**: COSINE for semantic, EUCLID for spatial
-2. **Configure Indexes**: Use HNSW for large datasets
-3. **Tune Parameters**: Balance recall vs latency for your use case
-4. **Monitor Performance**: Track search quality and latency over time
+- **إخفاقات AI/LLM**: راجع `ai_llm_failures.md` للتعرف على مشكلات الهلوسة والاستدلال
+- **تصميم الوكيل**: راجع `../05_agents/agent_system_design.md` للتعرف على وكلاء البناء باستخدام RAG
+- **جودة مجموعة البيانات**: راجع `../08_machine_learning/ml_data_issues.md` للتعرف على اعتبارات بيانات التدريب
+- **الهندسة الفورية**: راجع `../02_artificial_intelligence/prompt_engineering.md` للتعرف على تقنيات التعامل مع السياق
 
 ---
 
-## Related Topics
+## أنماط فشل RAG المتقدمة
 
-- **AI/LLM Failures**: See `ai_llm_failures.md` for hallucinations and reasoning issues
-- **Agent Design**: See `../05_agents/agent_system_design.md` for building agents with RAG
-- **Dataset Quality**: See `../08_machine_learning/ml_data_issues.md` for training data considerations
-- **Prompt Engineering**: See `../02_artificial_intelligence/prompt_engineering.md` for context handling techniques
+### ظاهرة الضياع في الوسط
 
----
+**ما هو:** يميل حاملو ماجستير إدارة الأعمال إلى التركيز على المعلومات في بداية السياق ونهايته، 
+تجاهل المحتوى الأوسط.
 
-## Advanced RAG Failure Patterns
-
-### Lost in the Middle Phenomenon
-
-**What It Is:** LLMs tend to focus on information at the beginning and end of context, 
-ignoring middle content.
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Retrieving 10 chunks and concatenating all
 context = "\n\n".join(retrieved_chunks)  # 10,000+ tokens
@@ -349,13 +327,12 @@ response = llm.generate(query, context)
 
 # Information in chunk 4-7 often ignored
 ```
+**لماذا هو سيء:**
+- قد يتم التغاضي عن المعلومات الهامة في الأجزاء الوسطى
+- يتضاءل الاهتمام بالنموذج بالنسبة للمحتوى المتوسط
+- إهدار الرموز المميزة على محتوى مسترد غير ذي صلة
 
-**Why It's Bad:**
-- Critical information in middle chunks may be overlooked
-- Model attention diminishes for middle content
-- Wastes tokens on irrelevant retrieved content
-
-**Mitigation:**
+**التخفيف:**
 ```python
 # Re-rank retrieved results by relevance
 reranked_chunks = rerank(query, retrieved_chunks, top_k=5)
@@ -370,12 +347,11 @@ for iteration in range(3):
         more_chunks = retrieve_remaining_info()
         current_context = combine(current_context, more_chunks)
 ```
+### فشل استرداد القفزات المتعددة
 
-### Multi-Hop Retrieval Failures
+**ما هو:** الفشل في استرداد المعلومات التي تتطلب عدة أجزاء متصلة.
 
-**What It Is:** Failing to retrieve information that requires multiple connected pieces.
-
-**Bad Example:**
+**مثال سيء:**
 ```markdown
 Query: "What programming language did the creator of Python work on before Python?"
 
@@ -389,8 +365,7 @@ But misses:
 
 Result: Incomplete answer
 ```
-
-**Mitigation:**
+**التخفيف:**
 ```python
 def multi_hop_retrieval(query):
     # First hop: initial retrieval
@@ -408,12 +383,11 @@ def multi_hop_retrieval(query):
     all_chunks = deduplicate(chunks_1 + chunks_2)
     return rerank(query, all_chunks)
 ```
+### فشل الاستدلال الزمني
 
-### Temporal Reasoning Failures
+**ما هو:** تواجه أنظمة RAG صعوبة في التعامل مع الاستعلامات الحساسة للوقت والمعلومات القديمة.
 
-**What It Is:** RAG systems struggle with time-sensitive queries and outdated information.
-
-**Bad Example:**
+**مثال سيء:**
 ```markdown
 Query: "What is the latest version of Django?"
 
@@ -423,8 +397,7 @@ Model responds: "Django 4.0 is the latest version"
 
 Reality: Django 5.0 was released in 2026
 ```
-
-**Mitigation:**
+**التخفيف:**
 ```python
 def temporal_aware_retrieval(query, documents):
     # Detect if query is time-sensitive
@@ -443,12 +416,11 @@ def temporal_aware_retrieval(query, documents):
     else:
         return retrieve(query, documents)
 ```
+### فشل التعامل مع النفي
 
-### Negation Handling Failures
+**ما هو:** غالبًا ما يفتقد البحث الدلالي علامات النفي في الاستعلامات.
 
-**What It Is:** Semantic search often misses negations in queries.
-
-**Bad Example:**
+**مثال سيء:**
 ```markdown
 Query: "What frameworks don't require TypeScript?"
 
@@ -460,8 +432,7 @@ Misses:
 - "Vanilla JavaScript frameworks"     ✓
 - "Python web frameworks"             ✓
 ```
-
-**Mitigation:**
+**التخفيف:**
 ```python
 def handle_negation_query(query, documents):
     # Detect negation patterns
@@ -482,16 +453,15 @@ def handle_negation_query(query, documents):
     else:
         return retrieve(query, documents)
 ```
-
 ---
 
-## Embedding Anti-Patterns
+## تضمين الأنماط المضادة
 
-### Mixing Embedding Models
+### خلط نماذج التضمين
 
-**What It Is:** Using different models for indexing vs. querying breaks similarity.
+**ما هو:** يؤدي استخدام نماذج مختلفة للفهرسة مقابل الاستعلام إلى كسر التشابه.
 
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Indexing with model A
 index_embeddings = model_A.encode(documents)
@@ -503,13 +473,12 @@ results = vector_db.search(query_embedding)
 
 # Results are meaningless - different vector spaces!
 ```
+**لماذا هو سيء:**
+- تنتج النماذج المختلفة تضمينات في مساحات متجهة غير متوافقة
+- تشابه جيب التمام بين تضمينات النماذج المختلفة هو ضوضاء عشوائية
+- يبدو أن النظام يعمل ولكنه يُرجع البيانات المهملة
 
-**Why It's Bad:**
-- Different models produce embeddings in incompatible vector spaces
-- Cosine similarity between different model embeddings is random noise
-- System appears to work but returns garbage
-
-**Detection:**
+**الكشف:**
 ```python
 # Test embedding compatibility
 test_doc = "This is a test document"
@@ -520,19 +489,18 @@ similarity = cosine_similarity(emb_1, emb_2)
 if similarity < 0.8:  # Should be very high for same text
     print("WARNING: Embedding models are incompatible!")
 ```
+### تجاهل أبعاد التضمين
 
-### Ignoring Embedding Dimensions
+**ما هو:** عدم مراعاة تأثير تضمين البعد على الأداء.
 
-**What It Is:** Not considering the impact of embedding dimension on performance.
-
-**Trade-offs:**
-| Dimensions | Pros | Cons | Use Case |
+**المقايضات:**
+| الأبعاد | الايجابيات | سلبيات | حالة الاستخدام |
 |------------|------|------|----------|
-| Low (128-256) | Fast search, less memory | Less nuanced representations | Simple tasks, large scale |
-| Medium (384-768) | Good balance | Moderate resources | General purpose |
-| High (1024+) | Rich representations | Slow, memory-intensive | Complex semantic tasks |
+| منخفض (١٢٨-٢٥٦) | بحث سريع، ذاكرة أقل | تمثيلات أقل دقة | مهام بسيطة، واسعة النطاق |
+| المتوسطة (384-768) | توازن جيد | موارد معتدلة | غرض عام |
+| عالية (1024+) | تمثيلات غنية | بطيئة، كثيفة الذاكرة | المهام الدلالية المعقدة |
 
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Using 1024-dim embeddings for simple keyword-like search
 model = SentenceTransformer('all-mpnet-base-v2')  # 768 dims
@@ -542,12 +510,11 @@ model = SentenceTransformer('all-mpnet-base-v2')  # 768 dims
 model = TinyEmbedding(128)
 # Insufficient for nuanced semantic understanding
 ```
+### عدم التعامل مع الرموز الخاصة
 
-### Not Handling Special Tokens
+**ما هو:** الفشل في التعامل مع عناوين URL والأكواد والأرقام والأحرف الخاصة بشكل صحيح.
 
-**What It Is:** Failing to properly handle URLs, code, numbers, and special characters.
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Embedding URLs without preprocessing
 url = "https://api.example.com/v2/users?id=123&token=abc"
@@ -559,8 +526,7 @@ code = "def foo(x): return x + 1"
 embedding = model.encode(code)
 # Generic model doesn't understand programming semantics
 ```
-
-**Mitigation:**
+**التخفيف:**
 ```python
 def preprocess_for_embedding(text):
     # Handle URLs
@@ -580,21 +546,20 @@ def preprocess_for_embedding(text):
     # Store metadata for later
     return embedding, {'urls': urls, 'code': code_blocks}
 ```
-
 ---
 
-## Vector Search Performance Issues
+## مشكلات أداء بحث المتجهات
 
-### Scaling Problems
+### مشاكل القياس
 
-**What It Is:** Search quality or latency degrades as dataset grows.
+**ما هو:** تتدهور جودة البحث أو زمن الاستجابة مع نمو مجموعة البيانات.
 
-**Symptoms:**
-- Latency increases linearly with dataset size
-- Recall drops as more vectors are added
-- Memory usage explodes
+**الأعراض:**
+- يزداد زمن الوصول خطيًا مع حجم مجموعة البيانات
+- انخفاض الاستدعاء مع إضافة المزيد من المتجهات
+- استخدام الذاكرة ينفجر
 
-**Bad Architecture:**
+**الهندسة المعمارية السيئة:**
 ```python
 # Brute-force search on growing dataset
 def search(query, all_vectors):
@@ -604,8 +569,7 @@ def search(query, all_vectors):
         similarities.append(sim)
     return top_k(similarities)
 ```
-
-**Scalable Solution:**
+**حل قابل للتطوير:**
 ```python
 # Use approximate nearest neighbor (ANN) index
 import hnswlib
@@ -618,12 +582,11 @@ index.add_items(vectors, ids)
 # Search is now O(log n) instead of O(n)
 labels, distances = index.knn_query(query_vector, k=10)
 ```
+### مشكلة البداية الباردة
 
-### Cold Start Problem
+**ما هو:** لا يمكن استرجاع المستندات الجديدة إلا بعد إعادة بناء الفهرس.
 
-**What It Is:** New documents aren't retrievable until index is rebuilt.
-
-**Bad Example:**
+**مثال سيء:**
 ```python
 # Batch indexing - rebuild entire index nightly
 def nightly_job():
@@ -633,8 +596,7 @@ def nightly_job():
     
 # Documents added during day aren't searchable until next morning
 ```
-
-**Solution: Incremental Indexing**
+**الحل: الفهرسة التزايدية**
 ```python
 # Add documents as they arrive
 def add_document(doc):
@@ -646,15 +608,13 @@ def add_document(doc):
 def optimize_index():
     vector_db.optimize()  # Merge segments, improve performance
 ```
-
 ---
 
-## Evaluation Metrics for RAG
+## مقاييس التقييم لـ RAG
 
-### Context Precision
+### دقة السياق
 
-Measures how many retrieved chunks are actually relevant.
-
+يقيس عدد القطع المستردة ذات الصلة بالفعل.
 ```python
 def context_precision(retrieved_chunks, relevant_chunks):
     """
@@ -664,11 +624,9 @@ def context_precision(retrieved_chunks, relevant_chunks):
     relevant_retrieved = sum(1 for c in retrieved_chunks if c in relevant_chunks)
     return relevant_retrieved / len(retrieved_chunks) if retrieved_chunks else 0
 ```
+### صلة الإجابة
 
-### Answer Relevance
-
-Measures if generated answer actually addresses the query.
-
+التدابير إذا تم إنشاء الإجابة تعالج بالفعل الاستعلام.
 ```python
 def answer_relevance_score(query, answer, retrieved_chunks):
     """
@@ -683,11 +641,9 @@ def answer_relevance_score(query, answer, retrieved_chunks):
     rating = llm.generate(prompt)
     return parse_rating(rating)
 ```
+### الإخلاص
 
-### Faithfulness
-
-Measures if answer is grounded in retrieved context (not hallucinated).
-
+التدابير إذا كانت الإجابة مستندة إلى سياق مسترجع (غير مهلوس).
 ```python
 def faithfulness_score(answer, retrieved_chunks):
     """
@@ -702,67 +658,66 @@ def faithfulness_score(answer, retrieved_chunks):
     
     return supported_claims / len(claims) if claims else 0
 ```
-
 ---
 
-## Real-World Case Studies
+## دراسات الحالة في العالم الحقيقي
 
-### Case Study 1: Customer Support Chatbot
+### دراسة الحالة 1: Chatbot لدعم العملاء
 
-**Problem:** Chatbot gave incorrect answers about product features.
+**المشكلة:** قدم برنامج Chatbot إجابات غير صحيحة حول ميزات المنتج.
 
-**Root Cause Analysis:**
-- Chunking split feature descriptions across boundaries
-- Retrieval found partial information
-- LLM hallucinated missing details
+**تحليل السبب الجذري:**
+- تقطيع أوصاف ميزة الانقسام عبر الحدود
+- العثور على استرجاع معلومات جزئية
+- LLM هلوسة التفاصيل المفقودة
 
-**Solution:**
-- Implemented semantic chunking by feature sections
-- Added 150-token overlap between chunks
-- Increased top_k from 3 to 5
-- Added re-ranking step
+**الحل:**
+- تم تنفيذ التقطيع الدلالي حسب أقسام الميزة
+- تمت إضافة 150 رمزًا متداخلًا بين القطع
+- زيادة top_k من 3 إلى 5
+- أضيفت خطوة إعادة الترتيب
 
-**Results:**
-- Accuracy improved from 62% to 89%
-- Hallucination rate dropped from 23% to 4%
-- Customer satisfaction increased 35%
+**النتائج:**
+- تم تحسين الدقة من 62% إلى 89%
+- انخفضت نسبة الهلوسة من 23% إلى 4%
+- زيادة رضا العملاء بنسبة 35%
 
-### Case Study 2: Legal Document Search
+### دراسة الحالة 2: البحث في المستندات القانونية
 
-**Problem:** Lawyers couldn't find relevant precedents.
+**المشكلة:** لم يتمكن المحامون من العثور على سوابق ذات صلة.
 
-**Root Cause:**
-- Generic embeddings didn't capture legal semantics
-- Negation queries failed ("cases where liability was NOT established")
-- No temporal filtering for overturned cases
+**السبب الجذري:**
+- التضمينات العامة لم تلتقط الدلالات القانونية
+- فشلت استعلامات النفي ("الحالات التي لم يتم فيها إثبات المسؤولية")
+- لا يوجد تصفية زمنية للقضايا المنقلبة
 
-**Solution:**
-- Fine-tuned embeddings on legal corpus
-- Implemented negation handling
-- Added case status metadata and filtering
-- Built multi-hop retrieval for citation chains
+**الحل:**
+- التضمين الدقيق في النصوص القانونية
+- تنفيذ معالجة النفي
+- أضيفت البيانات الوصفية لحالة الحالة والتصفية
+- بناء استرجاع متعدد القفزات لسلاسل الاقتباس
 
-**Results:**
-- Recall@10 improved from 45% to 78%
-- Search time reduced from 8s to 1.2s
-- Adoption by legal team increased 3x
+**النتائج:**
+- تحسن معدل Recall@10 من 45% إلى 78%
+- تم تقليل وقت البحث من 8 ثوانٍ إلى 1.2 ثانية
+- زاد اعتماد الفريق القانوني 3 مرات
 
-### Case Study 3: Technical Documentation
+### دراسة الحالة 3: التوثيق الفني
 
-**Problem:** Developers couldn't find code examples.
+**المشكلة:** لم يتمكن المطورون من العثور على أمثلة للتعليمات البرمجية.
 
-**Root Cause:**
-- Code blocks embedded poorly with text-only models
-- Queries like "how to authenticate" matched theory, not examples
-- No distinction between API versions
+**السبب الجذري:**
+- كتل التعليمات البرمجية المضمنة بشكل سيئ في النماذج النصية فقط
+- استعلامات مثل "كيفية المصادقة" مطابقة للنظرية، وليس الأمثلة
+- لا يوجد تمييز بين إصدارات API
 
-**Solution:**
-- Used code-aware embedding model
-- Tagged chunks by content type (concept, tutorial, API reference, example)
-- Added version metadata
-- Implemented intent classification for query routing
+**الحل:**
+- نموذج التضمين المدرك للكود المستخدم
+- الأجزاء الموسومة حسب نوع المحتوى (المفهوم، البرنامج التعليمي، مرجع واجهة برمجة التطبيقات، مثال)
+- أضيفت البيانات الوصفية للنسخة
+- تم تنفيذ تصنيف النوايا لتوجيه الاستعلام
 
-**Results:**
-- Code example retrieval accuracy: 34% → 82%
-- Time-to-first-successful-query reduced 60%
-- Documentation traffic increased 45%
+**النتائج:**
+- دقة استرجاع مثال الكود: 34% → 82%
+- تم تقليل الوقت اللازم لأول استعلام ناجح بنسبة 60%
+- زيادة حركة التوثيق بنسبة 45%
