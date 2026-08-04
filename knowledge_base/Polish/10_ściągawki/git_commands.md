@@ -386,4 +386,4 @@ Closes #123
 
 ---
 
-*Last updated: June 2025 | Git 2.x*
+*Last updated: July 2026 | Git 2.x*

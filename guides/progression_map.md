@@ -57,7 +57,7 @@ graph TD
 | 2 | ML Fundamentals | [Infrastructure Layers](./Infrastructure_Layers/) | Simple Classifier | 2 weeks |
 | 3 | **RAG Systems** | [RAG Guide](./RAG/) | [RAG Project](../projects/rag_simple/) | 2 weeks |
 | 4 | **Transformers** | [Transformers Guide](./Transformers/) | Text Classification | 3 weeks |
-| 5 | LLM Fine-tuning | [LLM Guide](./LLMs/) | Custom Chatbot | 3 weeks |
+| 5 | LLM Fine-tuning | [Transformers Guide](./Transformers/) Chapter 4 | Custom Chatbot | 3 weeks |
 | 6 | Production NLP | [Orchestration](./Orchestration_Patterns/) | Deployed API | 2 weeks |
 
 **Total Time:** ~13 weeks (3 months)
@@ -253,4 +253,4 @@ graph LR
 
 ---
 
-*Last updated: 2026*
+*Last updated: July 2026*
