@@ -533,7 +533,9 @@ This repository serves as:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these guidelines:
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for detailed instructions.
+
+### Quick Start
 
 1. **Fork** the repository
 2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
@@ -544,12 +546,17 @@ We welcome contributions! Please follow these guidelines:
 7. **Open** a Pull Request
 
 ### Contribution Areas
+
 - 📚 New knowledge files
 - 🛠️ New skill definitions
 - 🌍 More translations for existing content
 - 🐛 Bug fixes and corrections
 - 📝 Documentation improvements
 - 📖 Wiki pages and learning paths
+- 🚀 Runnable projects
+- 📖 Comprehensive guides
+
+For detailed guidelines on each contribution type, file naming conventions, code standards, and the pull request process, please read the full [Contributing Guide](CONTRIBUTING.md).
 
 ### Contributing to the Wiki
 
