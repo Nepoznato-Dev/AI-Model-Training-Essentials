@@ -21,7 +21,6 @@
 - [Skills Library](#skills-library)
 - [Wiki Documentation](#wiki-documentation)
 - [Runnable Projects](#runnable-projects)
-- [Common Errors](#common-errors)
 - [Agent Modes](#agent-modes)
 - [Multi-Language Support](#multi-language-support)
 - [Usage Guide](#usage-guide)
@@ -78,8 +77,12 @@ This repository serves as a foundational framework for AI agent development, pro
 │   ├── Infrastructure_Layers/      # Infrastructure patterns
 │   ├── Orchestration_Patterns/     # Orchestration patterns
 │   ├── User Questions/      # User-submitted questions
+│   ├── prerequisites/       # Foundational knowledge (math, ML fundamentals)
+│   ├── errors/              # Common errors and troubleshooting guides
 │   ├── projects/            # Runnable projects
 │   │   ├── rag_simple/      # Simple RAG implementation
+│   │   ├── transformers_intro/  # Introduction to transformers
+│   │   ├── cnn_basics/      # CNN basics for image classification
 │   │   └── rag-chatbot/     # RAG chatbot project
 │   ├── README.md            # Guides overview
 │   ├── hardware_reality_check.md    # Hardware requirements
@@ -169,6 +172,7 @@ Browse the complete guide collection in the [guides/](guides/) directory:
 - [Hardware Reality Check](guides/hardware_reality_check.md) - Understanding hardware requirements
 - [How to Build AI](guides/how_to_build_ai.md) - Comprehensive AI building guide
 - [Progression Map](guides/progression_map.md) - Learning path roadmap
+- [Common Errors Guide](guides/errors/README.md) - Troubleshooting and debugging help
 
 ---
 

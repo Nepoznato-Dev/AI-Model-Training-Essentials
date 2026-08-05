@@ -31,7 +31,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/rag_simple/rag_simple.ipynb)
+**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/rag_simple/rag_simple.ipynb)
+
+*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
 
 ---
 
@@ -56,7 +58,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/transformers_intro/transformers_intro.ipynb)
+**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/transformers_intro/transformers_intro.ipynb)
+
+*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
 
 ---
 
@@ -81,7 +85,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/projects/cnn_basics/cnn_basics.ipynb)
+**Run on Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/AI-Model-Training-Essentials/blob/main/guides/projects/cnn_basics/cnn_basics.ipynb)
+
+*Note: To use this Colab link, fork the repository and replace `YOUR_USERNAME` with your GitHub username, or upload the notebook manually to Colab.*
 
 ---
 
@@ -90,9 +96,11 @@ python main.py
 ### For Complete Beginners:
 
 1. **Start with prerequisites:**
-   - [Terminal Basics](../prerequisites/terminal_basics.md)
-   - [Python Basics](../prerequisites/python_basics.md)
-   - [Git Basics](../prerequisites/git_basics.md)
+   - [Terminal Basics](../User%20Questions/prerequisites/terminal_basics.md)
+   - [Python Basics](../User%20Questions/prerequisites/python_basics.md)
+   - [Git Basics](../User%20Questions/prerequisites/git_basics.md)
+   - [Mathematics for ML](../prerequisites/mathematics_for_ml.md)
+   - [ML Fundamentals](../prerequisites/ml_fundamentals.md)
 
 2. **Pick your first project:** Start with RAG Simple
 
@@ -141,7 +149,7 @@ python main.py
 ### Option 1: Google Colab (Recommended)
 
 1. Create a free account at [colab.research.google.com](https://colab.research.google.com)
-2. Upload the `.ipynb` file from any project
+2. Upload the `.ipynb` file from any project (or create a new notebook and copy the code from `main.py`)
 3. Click **Runtime → Change runtime type**
 4. Select **GPU** (optional but faster)
 5. Run cells one by one
@@ -158,6 +166,8 @@ python main.py
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/AI-Model-Training-Essentials.git
 cd AI-Model-Training-Essentials/guides/projects
+
+# Note: Replace YOUR_USERNAME with the actual GitHub username/organization
 
 # Choose a project
 cd rag_simple
@@ -260,10 +270,11 @@ See existing projects for templates!
 
 ## 📖 Related Resources
 
-- [Prerequisites Tutorials](../prerequisites/README.md) - Learn terminal, Python, Git
+- [Prerequisites Tutorials](../prerequisites/README.md) - Learn mathematics and ML fundamentals
+- [Terminal, Python, Git Basics](../User%20Questions/prerequisites/README.md) - Essential tools
 - [Common Errors](../errors/README.md) - Debugging guide
-- [Guides](../guides/README.md) - In-depth theory and concepts
-- [Skills Library](../skills/README.md) - Practice specific skills
+- [Guides](../README.md) - In-depth theory and concepts
+- [Skills Library](../../skills/README.md) - Practice specific skills
 
 ---
 

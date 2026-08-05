@@ -24,10 +24,32 @@ License: MIT
 # ============================================================
 # We need these libraries for different parts of the RAG pipeline
 
-from sentence_transformers import SentenceTransformer  # For creating embeddings
-from sklearn.metrics.pairwise import cosine_similarity  # For finding similar documents
+import os
+import sys
+
+# Check for required packages and provide helpful error messages
+try:
+    from sentence_transformers import SentenceTransformer  # For creating embeddings
+except ImportError:
+    print("ERROR: sentence-transformers not installed!")
+    print("Please run: pip install sentence-transformers")
+    sys.exit(1)
+
+try:
+    from sklearn.metrics.pairwise import cosine_similarity  # For finding similar documents
+except ImportError:
+    print("ERROR: scikit-learn not installed!")
+    print("Please run: pip install scikit-learn")
+    sys.exit(1)
+
 import numpy as np  # For numerical operations
-from transformers import pipeline  # For the language model
+
+try:
+    from transformers import pipeline  # For the language model
+except ImportError:
+    print("ERROR: transformers not installed!")
+    print("Please run: pip install transformers")
+    sys.exit(1)
 
 print("=" * 60)
 print("Simple RAG System - Starting...")
