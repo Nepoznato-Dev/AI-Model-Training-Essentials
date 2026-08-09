@@ -1,0 +1,1 @@
+Each project under `guides/projects/<topic>/` is self-contained: `cd guides/projects/<topic>` → `pip install -r requirements.txt` → `python main.py` (or `python rag_chatbot.py`). All projects also work by uploading the script to Google Colab and running cells without local setup.

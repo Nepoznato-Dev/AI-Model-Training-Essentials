@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: guides
+title: AI Training Guides & Hands-On Projects
+scope:
+    - guides/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,1 @@
+None — the wiki is read-only documentation. Contributors add new `.md` files under the appropriate directory and update `wiki/README.md` to register links, per the template in the README.

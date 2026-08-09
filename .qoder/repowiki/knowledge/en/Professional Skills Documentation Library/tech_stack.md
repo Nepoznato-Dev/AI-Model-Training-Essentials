@@ -1,0 +1,1 @@
+Pure Markdown documentation with YAML frontmatter; no build tooling, scripts, or runtime dependencies.

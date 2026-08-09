@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: skills
+title: Professional Skills Documentation Library
+scope:
+    - skills/
+source_files: []
+depends_on: []
+related_to: []

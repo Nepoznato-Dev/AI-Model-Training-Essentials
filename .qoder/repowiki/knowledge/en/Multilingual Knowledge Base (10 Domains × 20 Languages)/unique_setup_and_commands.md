@@ -1,0 +1,1 @@
+No build or runtime commands — this is a static documentation repository. New content must follow the prescribed YAML frontmatter schema (five sections delimited by `---`) and SemVer-based version bumping in the changelog, and updates to any language require mirroring changes into the corresponding file under every language directory.

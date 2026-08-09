@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: wiki
+title: AI Engineering Knowledge Base Wiki
+scope:
+    - wiki/
+source_files: []
+depends_on: []
+related_to: []

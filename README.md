@@ -44,7 +44,7 @@ Before installing anything, check the [Getting Started wiki page](wiki/getting_s
 - [Guides](guides/README.md): sequenced tutorials, prerequisites, errors, and projects.
 - [Knowledge Base](knowledge_base/README.md): focused reference content in 20 languages.
 - [Skills Library](skills/README.md): reusable capabilities for AI agents.
-- [Agent Modes](agent_modes/): behavior configurations for coding, research, debugging, review, and testing.
+- [Agent Modes](agent_modes/): 16 behavior configurations for coding, research, debugging, review, testing, DevOps, database management, documentation, linting, migration, performance, security, and multi-agent orchestration.
 - [Wiki](wiki/README.md): architecture, model development, deployment, monitoring, security, learning paths, and references.
 
 ## Contributing

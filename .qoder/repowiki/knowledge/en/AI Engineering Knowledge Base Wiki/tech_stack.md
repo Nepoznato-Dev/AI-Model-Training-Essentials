@@ -1,0 +1,1 @@
+Plain Markdown documents; no framework, build tool, or static site generator is used within this scope.

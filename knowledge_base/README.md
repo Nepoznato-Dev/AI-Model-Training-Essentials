@@ -86,7 +86,7 @@ Beyond the language-specific knowledge base, the repository also contains:
 |----------|----------|-------------|
 | **Guides** | [`/guides`](../guides/) | In-depth chapter-based guides on CNNs, Transformers, RAG, GANs, GNNs, Agentic Systems, MoE, and more |
 | **Skills** | [`/skills`](../skills/) | 50+ skill modules for AI agents — behaviour, collaboration, design, DevOps, security, testing |
-| **Agent Modes** | [`/agent_modes`](../agent_modes/) | 9 pre-configured agent modes (Ask, Chat, Plan, Explore, Debug, Review, Test, Secure, Agent) |
+| **Agent Modes** | [`/agent_modes`](../agent_modes/) | 16 pre-configured agent modes across four categories: Core Workflow (Agent, Plan, Explore, Ask, Chat), Quality & Reliability (Debug, Test, Review, Lint, Performance), Security & Operations (Secure, DevOps, Database), and Specialized (Documentation, Migration, Orchestrator) |
 | **Wiki** | [`/wiki`](../wiki/) | Architecture patterns, deployment, monitoring, security, learning paths |
 | **Projects** | [`/guides/projects`](../guides/projects/) | Runnable code examples (RAG chatbot, CNN basics, Transformers intro) |
 

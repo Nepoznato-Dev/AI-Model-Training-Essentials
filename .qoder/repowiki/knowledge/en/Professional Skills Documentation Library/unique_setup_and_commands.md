@@ -1,0 +1,1 @@
+Contributions follow a GitHub issue → feature branch → PR workflow governed by the quality checklist in `skill-creator.md`; new skills require a full YAML frontmatter block and SemVer bump in the `version` field plus a changelog entry.

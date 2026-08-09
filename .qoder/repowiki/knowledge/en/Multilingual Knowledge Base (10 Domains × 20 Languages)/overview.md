@@ -1,0 +1,1 @@
+A multilingual, domain-structured collection of 138+ Markdown reference documents covering coding, AI, data science, sciences, business, humanities, general reference, future trends, failure lessons, and quick references.

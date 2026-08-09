@@ -1,0 +1,4 @@
+- Each page follows the contributor template from `wiki/README.md`: a top-level title, Overview section, numbered Sections, Examples with fenced code blocks, and a Related Resources list.
+- Cross-links between pages use relative Markdown links (e.g. `[View](getting_started.md)`, `[Start Here](learning_paths/beginner.md)`), keeping the wiki navigable without external tooling.
+- Learning paths are structured as progressive tiers (beginner → intermediate → advanced) that each compose the same core topic pages rather than duplicating content.
+- Reference materials in `references/` are kept short and lookup-oriented (glossary, API reference, troubleshooting, checklist) instead of narrative tutorials.

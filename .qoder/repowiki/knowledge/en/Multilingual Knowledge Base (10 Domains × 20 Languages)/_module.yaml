@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: knowledge_base
+title: Multilingual Knowledge Base (10 Domains × 20 Languages)
+scope:
+    - knowledge_base/
+source_files: []
+depends_on: []
+related_to: []

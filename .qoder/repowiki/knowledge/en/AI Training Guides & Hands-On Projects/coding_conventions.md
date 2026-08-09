@@ -1,0 +1,5 @@
+- Every guide directory follows a fixed chapter naming convention (`chapter_1_fundamentals.md`, `chapter_2_advanced.md`, etc.) plus a top-level `README.md` that serves as the entry point and table of contents.
+- Each hands-on project is a single-file Python script (`main.py` or `<name>.py`) accompanied by its own `requirements.txt` and `README.md`, keeping dependencies and instructions co-located.
+- Project scripts are written to be Colab-compatible: they detect GPU availability via `torch.cuda.is_available()`, use minimal synthetic or public datasets, and avoid heavy local setup.
+- Cross-references between guides, projects, prerequisites, and error pages are made through relative Markdown links rather than absolute URLs, keeping the documentation navigable offline.
+- Error troubleshooting entries are isolated into dedicated `.md` files under `errors/` and `User Questions/errors/`, each titled after the exact error message (e.g., `CUDA_OOM.md`, `ImportError_Transformers.md`) for easy lookup.
