@@ -129,7 +129,7 @@ Structured learning paths to help you progress from beginner to advanced AI engi
 ### Resources
 - [CNNs Guide](../../guides/CNNs/)
 - [Transformers Guide](../../guides/Transformers/)
-- [Deployment Guide](deployment.md)
+- [Deployment Guide](../deployment.md)
 
 ---
 
@@ -199,9 +199,9 @@ Structured learning paths to help you progress from beginner to advanced AI engi
 - Custom LLM application with RAG
 
 ### Resources
-- [Architecture Patterns](architecture_patterns.md)
-- [Monitoring Guide](monitoring.md)
-- [Security Guide](security.md)
+- [Architecture Patterns](../architecture_patterns.md)
+- [Monitoring Guide](../monitoring.md)
+- [Security Guide](../security.md)
 - [Agentic Systems Guide](../../guides/Agentic_Systems/)
 
 ---
@@ -238,6 +238,6 @@ Structured learning paths to help you progress from beginner to advanced AI engi
 
 ## Related Resources
 
-- [Getting Started](getting_started.md)
-- [Best Practices Checklist](references/checklist.md)
-- [Glossary](references/glossary.md)
+- [Getting Started](../getting_started.md)
+- [Best Practices Checklist](../references/checklist.md)
+- [Glossary](../references/glossary.md)

@@ -14,6 +14,7 @@ Welcome to the AI Engineering Knowledge Base Wiki! This wiki provides detailed d
 | **Deployment** | Production deployment strategies | [View](deployment.md) |
 | **Monitoring & Observability** | Tracking model performance and system health | [View](monitoring.md) |
 | **Security** | Security best practices for AI systems | [View](security.md) |
+| **Agent Modes** | Choose the right AI-assisted workflow | [View](agent_modes.md) |
 
 ### Learning Paths
 
@@ -63,6 +64,7 @@ wiki/
 - [Skills](../skills/) - Skill-based documentation
 - [Knowledge Base](../knowledge_base/) - Organized knowledge repository
 - [Agent Modes](../agent_modes/) - AI agent configurations
+- [Agent Modes Guide](agent_modes.md) - Mode selection and workflows
 
 ---
 

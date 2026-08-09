@@ -276,7 +276,7 @@ git-secrets --scan
 
 ## Related Resources
 
-- [Getting Started](getting_started.md)
-- [Architecture Patterns](architecture_patterns.md)
+- [Getting Started](../getting_started.md)
+- [Architecture Patterns](../architecture_patterns.md)
 - [Troubleshooting Guide](troubleshooting.md)
 - [Glossary](glossary.md)
