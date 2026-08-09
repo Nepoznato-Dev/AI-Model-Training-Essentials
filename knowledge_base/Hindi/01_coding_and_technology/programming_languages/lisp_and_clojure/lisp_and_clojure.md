@@ -1,0 +1,697 @@
+---
+# मेटाडेटा
+शीर्षक: "लिस्प और क्लोजर"
+विवरण: "लिस्प और क्लोजर प्रोग्रामिंग भाषा के लिए व्यापक संदर्भ जिसमें अवलोकन, ट्रेड-ऑफ, सिंटैक्स फंडामेंटल, इकोसिस्टम और इसका उपयोग कब करना है।"
+श्रेणी: "कोडिंग और प्रौद्योगिकी"
+संस्करण: "1.0.0"
+स्थिति: "सक्रिय"
+#योगदान
+लेखक:
+  - नाम: "एआई मॉडल ट्रेनिंग टीम"
+    ईमेल: ""
+    भूमिका: "मूल_लेखक"
+योगदानकर्ता: []
+चेंजलॉग:
+  - संस्करण: "1.0.0"
+    दिनांक: "2026-08-05"
+    लेखक: "एआई मॉडल ट्रेनिंग टीम"
+    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
+#समीक्षा
+बनाया गया: "2026-08-05"
+अंतिम_संशोधित: "2026-08-05"
+समीक्षा दिनांक: "2027-02-05"
+इनके द्वारा समीक्षा: "कोडिंग और प्रौद्योगिकी ज्ञान आधार टीम"
+अगली_समीक्षा: "2027-08-05"
+#वर्गीकरण
+टैग: [लिस्प-एंड-क्लोजर, प्रोग्रामिंग-लैंग्वेज, सिंटैक्स, इकोसिस्टम, कोडिंग-एंड-टेक्नोलॉजी]
+कठिनाई_स्तर: "उन्नत"
+पूर्वावश्यकताएँ: []
+अनुमानित_पढ़ने_का समय: "29 मिनट"
+# योगदान मार्गदर्शिका
+योगदान:
+  लाइसेंस: "एमआईटी"
+  फीडबैक_चैनल: "गिटहब मुद्दे"
+  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
+  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+---
+# लिस्प और क्लोजर
+लिस्प दूसरी सबसे पुरानी उच्च-स्तरीय प्रोग्रामिंग भाषा है जो अभी भी उपयोग में है (फोरट्रान के बाद), जिसे 1958 में जॉन मैक्कार्थी द्वारा बनाया गया था। इसने कई अवधारणाओं को जन्म दिया है जिन्हें अब मान लिया गया है: कचरा संग्रहण, रिकर्सन, ट्री डेटा संरचनाएं, गतिशील टाइपिंग, और डेटा के रूप में कार्यक्रमों का विचार (होमोइकोनिकिटी)। लिस्प की विशिष्ट विशेषता इसका वाक्यविन्यास है - कोड को नेस्टेड कोष्ठक (एस-एक्सप्रेशन) के रूप में लिखा जाता है, जो भाषा को तुच्छ रूप से पार्स करने योग्य बनाता है और **मैक्रो** के माध्यम से शक्तिशाली मेटाप्रोग्रामिंग को सक्षम बनाता है।
+क्लोजर 2007 में रिच हिक्की द्वारा डिजाइन की गई एक आधुनिक लिस्प बोली है। यह जेवीएम (जावास्क्रिप्ट के लिए क्लोजरस्क्रिप्ट) पर चलता है, कार्यात्मक प्रोग्रामिंग, अपरिवर्तनीयता और समवर्तीता को अपनाता है, और निर्बाध जावा इंटरऑपरेबिलिटी प्रदान करता है। क्लोजर का उपयोग वेब विकास, डेटा प्रोसेसिंग और वित्तीय प्रणालियों में किया जाता है।
+---
+
+## लिस्प/क्लोजर क्यों मायने रखता है
+- **होमोइकोनिकिटी**: कोड डेटा है - प्रोग्राम शक्तिशाली मैक्रोज़ को सक्षम करते हुए, अपनी स्वयं की संरचना में हेरफेर कर सकते हैं।
+- **मैक्रोज़**: लिस्प मैक्रोज़ डेटा के रूप में कोड पर काम करते हैं, जिससे आप भाषा का विस्तार कर सकते हैं।
+- **कार्यात्मक प्रोग्रामिंग**: लिस्प ने एफपी अवधारणाओं की शुरुआत की जो आज भी उपयोग की जाती है।
+- **जेवीएम पर क्लोजर**: पूर्ण जावा लाइब्रेरी एक्सेस, अपरिवर्तनीय डेटा संरचनाओं और उत्कृष्ट संगामिति के साथ आधुनिक लिस्प।
+- **आरईपीएल-संचालित विकास**: तत्काल प्रतिक्रिया के साथ इंटरैक्टिव विकास।
+- **सरलता**: क्लोजर में एक छोटी, सुसंगत भाषा डिज़ाइन है - कोई विशेष मामला नहीं।
+## समझौता
+| सीमा | विवरण | विशिष्ट समाधान |
+|----|---|-----|
+| **कोष्ठक** |`()`का भारी उपयोग प्रारंभ में पढ़ना कठिन हो सकता है | आईडीई समर्थन का प्रयोग करें; संरचना देखना सीखें |
+| **आला समुदाय** | मुख्यधारा की भाषाओं की तुलना में छोटा नौकरी बाज़ार | सक्रिय और भावुक समुदाय |
+| **क्लोजर स्टार्टअप समय** | जेवीएम-आधारित; सीएलआई के लिए धीमा स्टार्टअप | GraalVM नेटिव-इमेज का उपयोग करें |
+| **लिस्प बोलियाँ** | कई असंगत लिस्प (कॉमन लिस्प, स्कीम, एमएसीएस लिस्प) | आधुनिक कार्य के लिए क्लोजर चुनें |
+| **मुख्यधारा नहीं** | कम लाइब्रेरी, फ्रेमवर्क और ट्यूटोरियल | जावा पारिस्थितिकी तंत्र (क्लोजर) का लाभ उठाएं |
+---
+
+## क्लोजर सिंटैक्स
+```clojure
+;; Variables (immutable by default)
+(def name "Alice")
+(def age 30)
+(def score 9.5)
+
+;; Functions
+(defn greet [name greeting]
+  (str greeting ", " name "!"))
+
+(greet "Alice" "Hello")  ;; "Hello, Alice!"
+
+;; Higher-order functions
+(def numbers [1 2 3 4 5])
+(map #(* % 2) numbers)           ;; (2 4 6 8 10)
+(filter even? numbers)           ;; (2 4)
+(reduce + numbers)               ;; 15
+
+;; Maps (hash maps)
+(def user {:name "Alice" :age 30 :email "alice@example.com"})
+(:name user)                     ;; "Alice"
+(get user :age)                  ;; 30
+
+;; Immutability
+(def original [1 2 3])
+(def modified (conj original 4)) ;; original is unchanged: [1 2 3]
+                                  ;; modified: [1 2 3 4]
+
+;; Destructuring
+(let [{:keys [name age]} user]
+  (println name "is" age "years old"))
+
+;; Concurrency (atoms for shared mutable state)
+(def counter (atom 0))
+(swap! counter inc)              ;; 1
+(swap! counter + 5)              ;; 6
+
+;; Sequences and lazy evaluation
+(def fibs (lazy-cat [0 1] (map + fibs (rest fibs))))
+(take 10 fibs)                   ;; (0 1 1 2 3 5 8 13 21 34)
+
+;; Java interop
+(import 'java.util.Date)
+(def now (Date.))
+(.toUpperCase "hello")           ;; "HELLO"
+
+;; Macros (extend the language)
+(defmacro unless [condition & body]
+  `(when (not ~condition) ~@body))
+
+(unless false (println "This runs!"))
+```
+
+---
+
+## उन्नत सिंटैक्स और पैटर्न
+### मैक्रोज़ डीप डाइव
+```clojure
+;; Syntax quoting and unquoting
+(defmacro when-let [[binding expr] & body]
+  `(let [temp# ~expr]
+     (when temp#
+       (let [~binding temp#]
+         ~@body))))
+
+;; temp# generates a unique symbol to avoid name collisions (gensym)
+
+;; Macro that creates a DSL
+(defmacro defroutes [name & routes]
+  `(def ~name
+     (fn [request#]
+       (cond
+         ~@(mapcat (fn [[method path handler]]
+                     [`(and (= (:request-method request#) ~method)
+                            (= (:uri request#) ~path))
+                      `(~handler request#)])
+                   (partition 3 routes))))))
+
+;; Usage
+(defroutes app-routes
+  :get "/" index-handler
+  :get "/users" list-users-handler
+  :post "/users" create-user-handler)
+
+;; Reader conditionals for cross-platform code
+#?(:clj (def platform :jvm)
+   :cljs (def platform :js)
+   :default (def platform :unknown))
+
+;; Threading macros
+(-> "Hello World"
+    .toLowerCase
+    (.replace "world" "clojure")
+    (str "!!!"))
+;; "hello clojure!!!"
+
+(->> (range 20)
+     (filter even?)
+     (map #(* % %))
+     (take 5)
+     (reduce +))
+;; 120 (0 + 4 + 16 + 36 + 64)
+```
+
+### प्रोटोकॉल और रिकॉर्ड
+```clojure
+;; Protocols — Clojure's approach to polymorphism
+(defprotocol Serializable
+  (serialize [obj] "Convert object to a serializable string")
+  (deserialize [data] "Reconstruct object from string"))
+
+;; Records — efficient immutable data types
+(defrecord User [id name email created-at])
+
+(def alice (->User 1 "Alice" "alice@example.com" (java.time.Instant/now)))
+
+;; Implement protocol for a record
+(extend-type User
+  Serializable
+  (serialize [user]
+    (str "{\"id\":" (:id user)
+         ",\"name\":\"" (:name user)
+         "\",\"email\":\"" (:email user) "\"}"))
+  (deserialize [data]
+    ;; parse JSON back to User
+    user))
+
+;; Implement for built-in types
+(extend-type java.util.Map
+  Serializable
+  (serialize [m] (clojure.data.json/write-str m)))
+
+;; Usage
+(serialize alice)
+;; "{\"id\":1,\"name\":\"Alice\",\"email\":\"alice@example.com\"}"
+```
+
+### मल्टीमेथड्स
+```clojure
+;; Multimethods — dispatch on any function of arguments
+(defmulti area
+  "Calculate the area of a shape"
+  :type)
+
+(defmethod area :circle [{:keys [radius]}]
+  (* Math/PI radius radius))
+
+(defmethod area :rectangle [{:keys [width height]}]
+  (* width height))
+
+(defmethod area :triangle [{:keys [a b c]}]
+  (let [s (/ (+ a b c) 2)]
+    (Math/sqrt (* s (- s a) (- s b) (- s c)))))
+
+;; Default method
+(defmethod area :default [shape]
+  (throw (ex-info "Unknown shape" {:shape shape})))
+
+(area {:type :circle :radius 5})       ;; 78.539...
+(area {:type :rectangle :width 3 :height 4})  ;; 12
+
+;; Custom dispatch function
+(defmulti process-event (fn [event] [(::type event) (::version event)]))
+(defmethod process-event [:user-created 1] [event] ...)
+(defmethod process-event [:user-created 2] [event] ...)
+```
+
+
+---
+
+## समवर्ती एवं समांतरता
+### परमाणु, रेफरी, एजेंट और एसटीएम
+```clojure
+;; Atoms — uncoordinated, synchronous updates
+(def balance (atom 1000))
+(swap! balance - 200)         ;; 800
+(swap! balance (fn [b] (+ b 500)))  ;; 1300
+(compare-and-set! balance 1300 1500)  ;; true (CAS operation)
+
+;; Refs — coordinated, synchronous updates (STM)
+(def account-a (ref 1000))
+(def account-b (ref 500))
+
+(dosync
+  (alter account-a - 200)
+  (alter account-b + 200))
+
+;; Agents — asynchronous, independent updates
+(def logger (agent []))
+(send logger conj "Log entry 1")
+(send logger conj "Log entry 2")
+(await logger)
+(deref logger)  ;; ["Log entry 1" "Log entry 2"]
+
+;; Futures
+(let [f (future (Thread/sleep 1000) 42)]
+  (println "Doing other work...")
+  (println "Result:" @f))
+
+;; Core.async — CSP-style concurrency
+(require '[clojure.core.async :as async])
+
+(let [ch (async/chan)]
+  (async/go
+    (dotimes [i 5] (async/>! ch i)))
+  (async/go
+    (dotimes [i 5]
+      (println "Received:" (async/<! ch)))))
+```
+
+### समानांतर संचालन
+```clojure
+;; pmap — parallel map
+(defn slow-square [n]
+  (Thread/sleep 100)
+  (* n n))
+
+(pmap slow-square (range 10))  ;; uses all cores
+
+;; Reducers — parallel reduction
+(require '[clojure.core.reducers :as r])
+(def large-vec (vec (range 1000000)))
+(r/fold + (r/map #(* % %) large-vec))
+
+;; Transducers — composable transformations
+(def xform
+  (comp (filter even?) (map #(* % %)) (take 10)))
+
+(transduce xform + 0 (range 100))
+```
+
+
+---
+
+## परियोजना विन्यास एवं निर्माण प्रणाली
+### परियोजना संरचना (deps.edn)
+```
+my-clojure-project/
+├── src/
+│   └── my_project/
+│       ├── core.clj
+│       ├── handlers.clj
+│       ├── models.clj
+│       └── db.clj
+├── test/
+│   └── my_project/
+│       ├── core_test.clj
+│       └── handlers_test.clj
+├── resources/
+│   ├── config.edn
+│   └── logback.xml
+├── deps.edn
+├── build.clj
+├── .cljfmt.edn
+└── README.md
+```
+
+### deps.edn कॉन्फ़िगरेशन
+```clojure
+{:paths ["src" "resources"]
+
+ :deps
+ {org.clojure/clojure {:mvn/version "1.11.1"}
+  org.clojure/core.async {:mvn/version "1.6.681"}
+  ring/ring-core {:mvn/version "1.10.0"}
+  ring/ring-jetty-adapter {:mvn/version "1.10.0"}
+  compojure/compojure {:mvn/version "1.7.0"}
+  hiccup/hiccup {:mvn/version "2.0.0-RC2"}
+  next.jdbc {:mvn/version "1.3.894"}
+  org.postgresql/postgresql {:mvn/version "42.6.0"}
+  clojure.data/json {:mvn/version "2.4.0"}
+  mount/mount {:mvn/version "0.1.17"}
+  clojure.tools.logging {:mvn/version "1.2.4"}}
+
+ :aliases
+ {:dev {:extra-paths ["dev"]
+        :extra-deps {nrepl/nrepl {:mvn/version "1.1.0"}
+                     cider/cider-nrepl {:mvn/version "0.44.0"}}}
+
+  :test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
+         :main-opts ["-m" "cognitect.test-runner"]
+         :exec-fn cognitect.test-runner.runner/test}
+
+  :build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
+          :ns-default build}
+
+  :run {:main-opts ["-m" "my-project.core"]}}}
+```
+
+### कुंजी निर्माण आदेश
+| आदेश | विवरण |
+|---------|-----------------|
+|  __संरक्षित_0__ | आरईपीएल को देव निर्भरता के साथ प्रारंभ करें |
+|  __संरक्षित_1__ | परीक्षण सुइट चलाएँ |
+|  __संरक्षित_2__ | एप्लिकेशन चलाएँ |
+|  __संरक्षित_3__ | उबर जार बनाएं |
+|  __संरक्षित_4__ | लीनिंगेन प्रोजेक्ट बनाएं |
+|  __संरक्षित_5__ | परीक्षण चलाएँ (लेनिंगन) |
+|  __संरक्षित_6__ | उबेर जार (लेनिंगन) का निर्माण करें |
+### सीआई/सीडी पाइपलाइन (गिटहब क्रियाएँ)
+```yaml
+name: Clojure CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: DeLaGuardo/setup-clojure@12.1
+        with:
+          cli: latest
+      - name: Cache deps
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: clj-${{ hashFiles('deps.edn') }}
+      - run: clj -M:test
+      - run: clj -T:build uber
+```
+
+
+---
+
+## परीक्षण
+### क्लोजर.टेस्ट - अंतर्निहित परीक्षण
+```clojure
+(ns my-project.core-test
+  (:require [clojure.test :refer :all]
+            [my-project.core :as core]))
+
+(deftest test-add
+  (testing "adds two positive numbers"
+    (is (= 5 (core/add 2 3))))
+  (testing "handles negative numbers"
+    (is (= -3 (core/add -1 -2))))
+  (testing "handles zero"
+    (is (= 5 (core/add 0 5)))))
+
+(deftest test-factorial
+  (is (= 1 (core/factorial 0)))
+  (is (= 120 (core/factorial 5)))
+  (is (= 3628800 (core/factorial 10))))
+
+;; Testing with fixtures
+(defn setup-db [f]
+  ;; setup before tests
+  (core/init-test-db)
+  (f)
+  ;; teardown after tests
+  (core/drop-test-db))
+
+(use-fixtures :once setup-db)
+
+(deftest test-user-crud
+  (testing "create and retrieve user"
+    (let [user (core/create-user! {:name "Alice" :email "a@b.com"})]
+      (is (some? (:id user)))
+      (is (= "Alice" (:name (core/get-user (:id user))))))))
+```
+
+### test.check — संपत्ति-आधारित परीक्षण
+```clojure
+(require '[clojure.test.check :as tc]
+         '[clojure.test.check.generators :as gen]
+         '[clojure.test.check.properties :as prop])
+
+;; Properties
+(def reverse-involutive
+  (prop/for-all [v (gen/vector gen/int)]
+    (= v (reverse (reverse v)))))
+
+(tc/quick-check 100 reverse-involutive)
+;; {:result true, :num-tests 100, ...}
+
+;; Custom generators
+(def gen-email
+  (gen/fmap (fn [[user domain]]
+              (str user "@" domain ".com"))
+            (gen/tuple gen/string-alphanumeric
+                       gen/string-alphanumeric)))
+
+(def sort-preserves-length
+  (prop/for-all [v (gen/vector gen/int 1 100)]
+    (= (count v) (count (sort v)))))
+
+(tc/quick-check 100 sort-preserves-length)
+```
+
+---
+
+## अंतरसंचालनीयता
+### जावा इंटरऑप
+```clojure
+;; Creating Java objects
+(def date (java.util.Date.))
+(def list (java.util.ArrayList.))
+(def file (java.io.File. "/tmp/test.txt"))
+
+;; Calling Java methods
+(.toUpperCase "hello")           ;; "HELLO"
+(.length "hello")                ;; 5
+(.substring "hello world" 6)     ;; "world"
+
+;; Calling static methods
+(Math/sqrt 144)                  ;; 12.0
+(System/currentTimeMillis)       ;; epoch millis
+(Integer/parseInt "42")          ;; 42
+
+;; Accessing fields
+(.-PI Math)                      ;; 3.14159...
+
+;; Importing classes
+(import '[java.time LocalDate Duration]
+        '[java.util.concurrent ConcurrentHashMap])
+
+(def today (LocalDate/now))
+(def map (ConcurrentHashMap.))
+(.put map "key" "value")
+
+;; Implementing Java interfaces
+(def runnable
+  (reify Runnable
+    (run [_] (println "Running in thread!"))))
+
+(.start (Thread. runnable))
+
+;; Extending Java classes
+(def custom-exception
+  (proxy [RuntimeException] ["Custom error"]
+    (getMessage [] (str "Custom: " (.getMessage ^RuntimeException this)))))
+```
+
+---
+
+## डिज़ाइन पैटर्न
+### माउंट के साथ घटक प्रणाली
+```clojure
+;; Mount — lightweight state management
+(require '[mount.core :refer [defstate]])
+
+(defstate db
+  :start (do (println "Starting DB connection...")
+             (connect-to-db (config :db-url)))
+  :stop (do (println "Stopping DB connection...")
+            (disconnect db)))
+
+(defstate http-server
+  :start (do (println "Starting HTTP server...")
+             (start-server {:port (config :port)
+                            :handler (make-handler)}))
+  :stop (stop-server http-server))
+
+;; Start all components
+(mount.core/start)
+;; Stop all components (in reverse order)
+(mount.core/stop)
+```
+
+### थ्रेडिंग के साथ पाइपलाइन पैटर्न
+```clojure
+;; Data processing pipeline
+(defn process-order [order]
+  (-> order
+      validate-order
+      calculate-tax
+      apply-discounts
+      charge-payment
+      create-fulfillment
+      send-confirmation))
+
+;; Each function takes and returns the order map
+(defn validate-order [{:keys [items] :as order}]
+  (if (empty? items)
+    (throw (ex-info "Empty order" {:order order}))
+    order))
+
+(defn calculate-tax [order]
+  (let [subtotal (reduce + (map :price (:items order)))]
+    (assoc order :tax (* subtotal 0.08) :subtotal subtotal)))
+
+(defn apply-discounts [{:keys [subtotal] :as order}]
+  (let [discount (if (> subtotal 100) (* subtotal 0.1) 0)]
+    (assoc order :discount discount)))
+
+;; Transducer pipeline for streaming data
+(def process-pipeline
+  (comp
+    (map parse-line)
+    (filter valid-record?)
+    (map enrich-record)
+    (partition-all 100)))
+
+;; Apply to a data source
+(transduce process-pipeline conj [] (line-seq (reader "data.csv")))
+```
+
+
+---
+
+## प्रदर्शन एवं अनुकूलन
+### प्रोफाइलिंग उपकरण
+| उपकरण | उद्देश्य | उपयोग |
+|------|------|-------|
+| **मानदंड** | सांख्यिकीय बेंचमार्किंग |  __संरक्षित_0__ |
+| **विजुअलवीएम** | जेवीएम प्रोफाइलिंग |  __प्रोटेक्टेड_1__ कमांड |
+| **clj-async-प्रोफ़ाइल** | लो-ओवरहेड सीपीयू प्रोफाइलिंग |  __संरक्षित_2__ / __संरक्षित_3__ / __संरक्षित_4__ |
+| **टुफ़्टे** | रनटाइम प्रोफाइलिंग |  __संरक्षित_5__ |
+### मानदंड के साथ बेंचमार्किंग
+```clojure
+(require '[criterium.core :as crit])
+
+;; Benchmark an expression
+(crit/bench
+  (reduce + (map #(* % %) (range 10000))))
+
+;; Output: mean ~X ms, std deviation ~Y us
+;; Also reports GC pauses, overhead, etc.
+
+;; Compare two implementations
+(crit/with-progress-reporting
+  (crit/quick-bench
+    (into [] (comp (filter even?) (map #(* % %))) (range 10000))))
+```
+
+### अनुकूलन तकनीकें
+```clojure
+;; 1. Use transients for batch mutations
+(defn fast-merge [maps]
+  (persistent!
+    (reduce (fn [acc m]
+              (reduce-kv (fn [a k v] (assoc! a k v)) acc m))
+            (transient {})
+            maps)))
+
+;; 2. Use type hints to avoid reflection
+(defn ^String fast-upper [^String s]
+  (.toUpperCase s))
+
+;; 3. Use arrays for numeric computation
+(defn dot-product [^doubles a ^doubles b]
+  (areduce a i ret 0.0
+    (+ ret (* (aget a i) (aget b i)))))
+
+;; 4. Prefer persistent data structures with structural sharing
+;; Vectors: O(log32 n) access, efficient appends
+;; Maps: O(log32 n) access, efficient updates
+
+;; 5. Use unchecked math for tight numeric loops
+(defn fast-sum ^long [^longs arr]
+  (areduce arr i ret 0
+    (unchecked-add ret (aget arr i))))
+
+;; 6. Compile with :unchecked-math :warn-on-boxed for optimization
+```
+
+---
+
+## तैनाती
+### उबेर जार का निर्माण
+```clojure
+;; build.clj
+(ns build
+  (:require [clojure.tools.build.api :as b]))
+
+(def class-dir "target/classes")
+(def basis (b/create-basis {:project "deps.edn"}))
+(def uber-file "target/my-app.jar")
+
+(defn uber [_]
+  (b/copy-dir {:src-dirs ["src" "resources"]
+               :target-dir class-dir})
+  (b/compile-clj {:basis basis
+                  :src-dirs ["src"]
+                  :class-dir class-dir})
+  (b/uber {:class-dir class-dir
+           :uber-file uber-file
+           :basis basis
+           :main 'my-project.core}))
+```
+
+```bash
+# Build uber JAR
+clj -T:build uber
+
+# Run it
+java -jar target/my-app.jar
+```
+
+### डॉकर परिनियोजन
+```dockerfile
+FROM clojure:temurin-21-tools-deps AS builder
+WORKDIR /app
+COPY deps.edn ./
+RUN clojure -P -M:test
+COPY . .
+RUN clojure -T:build uber
+
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY --from=builder /app/target/my-app.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+### GraalVM मूल छवि
+```bash
+# Build with GraalVM for instant startup
+native-image --no-fallback \
+  --initialize-at-build-time \
+  -jar target/my-app.jar \
+  -o my-app-native
+
+# Startup time: <50ms vs ~2s for JVM
+```
+
+---
+
+## लिस्प/क्लोजर का उपयोग कब करें
+| परिदृश्य | क्लोजर क्यों | बेहतर विकल्प |
+|---|---|-----|
+| वेब बैकएंड | रिंग/कंपोजर उत्पादक हैं | सरल एपीआई के लिए Node.js पर जाएं |
+| डाटा प्रोसेसिंग | उत्कृष्ट अनुक्रम पुस्तकालय | पायथन (पांडा), स्काला (स्पार्क) |
+| समवर्ती प्रणालियाँ | अपरिवर्तनीय डेटा + एसटीएम | जाओ, एरलांग/एलिक्सिर |
+| डीएसएल/भाषा विस्तार | मैक्रोज़ बेजोड़ हैं | — |
+| आरईपीएल-संचालित विकास | अपनी श्रेणी में सर्वोत्तम इंटरैक्टिव वर्कफ़्लो | — |
+| सामान्य अनुप्रयोग विकास | संभव लेकिन आला | पायथन, जावा, गो |
+| मोबाइल ऐप्स | वेब ऐप्स के लिए क्लोजरस्क्रिप्ट; देशी नहीं | स्विफ्ट, कोटलिन |
+| डेटा विज्ञान | पारिस्थितिकी तंत्र नहीं | पायथन, आर |
+---
+
+## सारांश
+लिस्प प्रोग्रामिंग भाषा डिज़ाइन की जनक है - अधिकांश आधुनिक भाषाएँ उन विचारों को उधार लेती हैं जिन्हें लिस्प ने दशकों पहले आगे बढ़ाया था। क्लोजर लिस्प को अपरिवर्तनीयता, समवर्ती समर्थन और निर्बाध जेवीएम एकीकरण के साथ आधुनिक युग में लाता है। जबकि लिस्प/क्लोजर मुख्यधारा नहीं है, इसे सीखने से प्रोग्रामिंग के बारे में आपकी सोच मौलिक रूप से बदल जाएगी। अकेले मैक्रो सिस्टम ही निवेश के लायक है - यह उन संभावनाओं को प्रकट करता है जिनकी तुलना अन्य भाषाएँ नहीं कर सकतीं।

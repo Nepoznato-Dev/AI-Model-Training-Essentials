@@ -1,0 +1,135 @@
+# Compiled and build artifacts
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Dependencies
+.venv/
+venv/
+ENV/
+env/
+node_modules/
+*.egg-info/
+*.egg
+*.dist-info/
+*.egg-info
+dist/
+build/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.so
+*.dylib
+*.dll
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+var/
+.installed.cfg
+MANIFEST
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.cover
+*.py,cover
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing and coverage
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+.hypothesis/
+
+# Deep Learning Frameworks build artifacts
+*.manifest
+*.spec
+
+# Translations
+*.mo
+*.pot
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Sage
+*.sage.py
+
+# mkdocs documentation
+/site
+
+# Pyre
+.pyre/
+
+# ChromaDB persistent storage
+chroma_db/

@@ -1,0 +1,624 @@
+---
+# فراداده
+عنوان: "لوا"
+توضیحات: "مرجع جامع برای زبان برنامه نویسی Lua که شامل مرور کلی، مبادلات، اصول نحو، اکوسیستم و زمان استفاده از آن می شود."
+دسته بندی: "کدنویسی و فناوری"
+نسخه: "1.0.0"
+وضعیت: "فعال"
+# مشارکت
+نویسندگان:
+  - نام: "تیم آموزشی مدل AI"
+    ایمیل: ""
+    نقش: "نویسنده_اصلی"
+مشارکت کنندگان: []
+تغییرات ثبت شده:
+  - نسخه: "1.0.0"
+    تاریخ: "05-08-2026"
+    نویسنده: "تیم آموزشی مدل هوش مصنوعی"
+    تغییرات: "فراداده YAML frontmatter برای ردیابی مشارکت کنندگان اضافه شد"
+# نقد و بررسی
+ایجاد شده: "05-08-2026"
+last_modified: "05-08-2026"
+بازبینی_تاریخ: "05-02-2027"
+reviewed_by: "تیم پایگاه دانش کدنویسی و فناوری"
+next_review: "05-08-2027"
+# طبقه بندی
+برچسب ها: [lua، زبان برنامه نویسی، نحو، اکوسیستم، کدگذاری و فناوری]
+سطح سختی: "متوسط"
+پیش نیاز: []
+تخمینی_زمان_خواندن: "26 دقیقه"
+# راهنمای مشارکت
+مشارکت:
+  مجوز: "MIT"
+  feedback_channel: "مشکلات GitHub"
+  how_to_contribute: "ارسال روابط عمومی با تغییرات و به روز رسانی تغییرات"
+  review_process: "تغییرات توسط نگهبانان دسته قبل از ادغام بررسی می شود"
+---
+#لوا
+Lua یک زبان برنامه نویسی سبک و قابل جاسازی است که برای توسعه برنامه ها طراحی شده است. Lua که در سال 1993 در دانشگاه کاتولیک پاپی ریودوژانیرو در برزیل ایجاد شد، یکی از سریع ترین زبان های برنامه نویسی موجود است. ردپای کوچک آن (مفسر ~ 120 کیلوبایت است) و سادگی آن را به گزینه ای برای برنامه نویسی توسعه بازی، سیستم های تعبیه شده و پیکربندی تبدیل کرده است.
+Lua بیشتر به عنوان زبان برنامه نویسی پشت Roblox (پلتفرم بازی با بیش از 200 میلیون کاربر ماهانه)، افزونه های World of Warcraft و موتورهای بازی متعدد (Love2D، Defold، Corona SDK) شناخته می شود. همچنین در Nginx (OpenResty)، Redis و Wireshark استفاده می شود.
+---
+
+## چرا لوا مهم است
+- **Embeddable**: طراحی شده برای جاسازی در سایر برنامه ها - میزبان عملکرد را ارائه می دهد.
+- ** جای پای کوچک **: کل مترجم در ~ 120 کیلوبایت قرار می گیرد. ایده آل برای سیستم های تعبیه شده
+- **سریع**: یکی از سریع ترین زبان های اسکریپت نویسی تفسیر شده.
+- **ساده**: فقط 20 کلمه کلیدی. آسان برای یادگیری و ادغام.
+- **توسعه بازی**: زبان برنامه نویسی استاندارد برای بسیاری از موتورها و پلتفرم های بازی.
+- **Roblox**: کل اکوسیستم Roblox را تقویت می کند - میلیون ها بازی ساخته شده توسط کاربر.
+## مبادلات
+| محدودیت | جزئیات | راه حل معمولی |
+|-----------|---------|-------------------|
+| **کتابخانه استاندارد محدود** | حداقل عملکرد داخلی | با C/C++ گسترش دهید یا از بسته های LuaRocks |
+| ** نمایه سازی مبتنی بر 1 ** | آرایه ها با شاخص 1 شروع می شوند (برای برنامه نویسان غیر معمول) | به عنوان یک انتخاب طراحی بپذیرید؛ سازگار در سراسر |
+| **بدون کلاس** | فقط جداول و جدول های متا - OOP باید به صورت دستی پیاده سازی شود | از متاتبل ها یا کتابخانه های OOP |
+| **بازی های بیرون طاقچه ** | استفاده محدود در وب، علم داده یا سازمانی | استفاده برای اسکریپت / تعبیه. زبان های دیگر برای برنامه های کاربردی |
+| **بازار کار کوچک** | بیشتر بازی سازی و نقش های تعبیه شده | توسعه Roblox در حال رشد است |
+---
+
+## اصول نحو
+```lua
+-- Variables
+local name = "Alice"
+local age = 30
+local score = 9.5
+
+-- Tables (the only data structure — used as arrays, maps, objects)
+local user = {name = "Alice", age = 30}
+local fruits = {"apple", "banana", "cherry"}  -- Array (1-indexed!)
+
+print(user.name)        -- "Alice"
+print(fruits[1])        -- "apple" (Lua arrays start at 1)
+
+-- Functions
+local function greet(name, greeting)
+    greeting = greeting or "Hello"  -- Default value
+    return greeting .. ", " .. name .. "!"
+end
+
+-- Higher-order functions
+local function apply(fn, value)
+    return fn(value)
+end
+
+local double = function(x) return x * 2 end
+print(apply(double, 5))  -- 10
+
+-- Conditionals and loops
+if age >= 18 then
+    print("Adult")
+elseif age >= 13 then
+    print("Teenager")
+else
+    print("Child")
+end
+
+for i = 1, 10 do
+    print(i)
+end
+
+for index, fruit in ipairs(fruits) do
+    print(index, fruit)
+end
+
+-- Metatables (OOP-like behaviour)
+local Animal = {}
+Animal.__index = Animal
+
+function Animal.new(name)
+    local self = setmetatable({}, Animal)
+    self.name = name
+    return self
+end
+
+function Animal:speak()
+    return self.name .. " makes a sound"
+end
+
+local Dog = setmetatable({}, {__index = Animal})
+Dog.__index = Dog
+
+function Dog.new(name)
+    local self = Animal.new(name)
+    return setmetatable(self, Dog)
+end
+
+function Dog:speak()
+    return self.name .. " says woof"
+end
+
+local rex = Dog.new("Rex")
+print(rex:speak())  -- "Rex says woof"
+```
+
+---
+
+## نحو و الگوهای پیشرفته
+### Metatables - بنیاد قدرت Lua
+```lua
+-- Metatables allow custom behaviour for tables
+local Vector = {}
+Vector.__index = Vector
+
+function Vector.new(x, y)
+    return setmetatable({x = x, y = y}, Vector)
+end
+
+-- Operator overloading via metamethods
+function Vector.__add(a, b)
+    return Vector.new(a.x + b.x, a.y + b.y)
+end
+
+function Vector.__mul(a, b)
+    if type(b) == "number" then
+        return Vector.new(a.x * b, a.y * b)
+    end
+    return a.x * b.x + a.y * b.y  -- Dot product
+end
+
+function Vector.__tostring(v)
+    return string.format("Vector(%.1f, %.1f)", v.x, v.y)
+end
+
+function Vector.__eq(a, b)
+    return a.x == b.x and a.y == b.y
+end
+
+function Vector:magnitude()
+    return math.sqrt(self.x^2 + self.y^2)
+end
+
+local v1 = Vector.new(3, 4)
+local v2 = Vector.new(1, 2)
+print(v1 + v2)          -- Vector(4.0, 6.0)
+print(v1 * 2)           -- Vector(6.0, 8.0)
+print(v1 * v2)          -- 11 (dot product)
+print(v1:magnitude())   -- 5.0
+print(v1 == Vector.new(3, 4))  -- true
+```
+
+### بسته ها و الگوهای عملکردی
+```lua
+-- Closures — functions capture upvalues
+local function make_counter()
+    local count = 0
+    return function()
+        count = count + 1
+        return count
+    end
+end
+
+local counter = make_counter()
+print(counter())  -- 1
+print(counter())  -- 2
+print(counter())  -- 3
+
+-- Functional utilities
+local function map(t, fn)
+    local result = {}
+    for i, v in ipairs(t) do
+        result[i] = fn(v)
+    end
+    return result
+end
+
+local function filter(t, fn)
+    local result = {}
+    for _, v in ipairs(t) do
+        if fn(v) then result[#result + 1] = v end
+    end
+    return result
+end
+
+local function reduce(t, fn, init)
+    local acc = init
+    for _, v in ipairs(t) do
+        acc = fn(acc, v)
+    end
+    return acc
+end
+
+local numbers = {1, 2, 3, 4, 5}
+local doubled = map(numbers, function(x) return x * 2 end)
+local evens = filter(numbers, function(x) return x % 2 == 0 end)
+local sum = reduce(numbers, function(a, b) return a + b end, 0)
+```
+
+### چندین ارزش بازگشتی و تخریب
+```lua
+-- Lua functions can return multiple values
+local function minmax(t)
+    local min, max = math.huge, -math.huge
+    for _, v in ipairs(t) do
+        if v < min then min = v end
+        if v > max then max = v end
+    end
+    return min, max
+end
+
+local lo, hi = minmax({5, 2, 8, 1, 9, 3})
+print(lo, hi)  -- 1  9
+
+-- Variadic functions
+local function sum(...)
+    local total = 0
+    for _, v in ipairs({...}) do
+        total = total + v
+    end
+    return total
+end
+
+print(sum(1, 2, 3, 4, 5))  -- 15
+
+-- Table unpacking
+local a, b, c = table.unpack({10, 20, 30})
+print(a, b, c)  -- 10  20  30
+```
+
+### الگوهای رشته (جایگزین Regex Lua)
+```lua
+-- Lua patterns — simpler than regex but powerful
+local text = "Error 404: Page not found on 2024-01-15"
+
+-- Basic matching
+local code, msg = text:match("Error (%d+): (.+)")
+print(code)  -- "404"
+print(msg)   -- "Page not found on 2024-01-15"
+
+-- Find and replace
+local replaced = text:gsub("not found", "missing")
+
+-- Pattern character classes
+-- %a = letters, %d = digits, %w = alphanumeric
+-- %s = whitespace, %p = punctuation
+local email = "user@example.com"
+local valid = email:match("^[%w%.%-]+@[%w%.%-]+%.%a+$")
+
+-- Capture groups
+local date = "2024-01-15"
+local year, month, day = date:match("(%d+)-(%d+)-(%d+)")
+```
+
+---
+
+## همزمانی و موازی
+### کوروتین ها - چندوظیفه ای مشارکتی
+```lua
+-- Coroutines — Lua's built-in cooperative concurrency
+local function producer()
+    local items = {"apple", "banana", "cherry"}
+    for _, item in ipairs(items) do
+        print("Producing: " .. item)
+        coroutine.yield(item)
+    end
+    return "done"
+end
+
+local co = coroutine.create(producer)
+
+print(coroutine.status(co))  -- "suspended"
+local ok, value = coroutine.resume(co)
+print("Got:", value)         -- Got: apple
+print(coroutine.status(co))  -- "suspended"
+
+coroutine.resume(co)  -- banana
+coroutine.resume(co)  -- cherry
+print(coroutine.status(co))  -- "dead"
+```
+
+### الگوی تکرارکننده مبتنی بر کوروتین
+```lua
+-- Coroutine wrapping for clean iteration
+local function coroutine_iterator(body)
+    local co = coroutine.create(body)
+    return function()
+        local ok, value = coroutine.resume(co)
+        if not ok or coroutine.status(co) == "dead" then
+            return nil
+        end
+        return value
+    end
+end
+
+-- Usage: generate fibonacci numbers lazily
+local fib = coroutine_iterator(function()
+    local a, b = 0, 1
+    while true do
+        coroutine.yield(a)
+        a, b = b, a + b
+    end
+end)
+
+for i = 1, 10 do
+    io.write(fib() .. " ")  -- 0 1 1 2 3 5 8 13 21 34
+end
+
+-- Coroutine-based async I/O (with Copas or OpenResty)
+local copas = require("copas")
+
+local function fetch_url(url)
+    local sock = copas.tcp()
+    sock:connect(url, 80)
+    sock:send("GET / HTTP/1.1\r\nHost: " .. url .. "\r\n\r\n")
+    local response = sock:receive("*a")
+    sock:close()
+    return response
+end
+
+-- Multiple concurrent connections
+copas.addthread(fetch_url, "example.com")
+copas.addthread(fetch_url, "example.org")
+copas.loop()
+```
+
+---
+
+## پیکربندی پروژه و سیستم ساخت
+### ساختار پروژه
+```
+my-lua-project/
+├── src/
+│   ├── main.lua
+│   ├── config.lua
+│   ├── models/
+│   ├── utils/
+│   └── game/
+├── spec/
+│   └── test_main.lua
+├── rocks/           -- LuaRocks packages
+├── .luacheckrc      -- Linting config
+├── Makefile
+└── rockspec         -- Package spec
+```
+
+### LuaRocks - مدیریت بسته
+```bash
+# Install packages
+luarocks install luasocket       # Networking
+luarocks install lua-cjson       # JSON parsing
+luarocks install busted          # Testing framework
+luarocks install luacheck        -- Linting
+
+# Project dependencies via rockspec
+# myproject-1.0-1.rockspec
+```
+
+### Rockspec - مشخصات بسته
+```lua
+-- myproject-1.0-1.rockspec
+package = "myproject"
+version = "1.0-1"
+
+source = {
+    url = "git+https://github.com/user/myproject.git",
+    tag = "v1.0",
+}
+
+dependencies = {
+    "lua >= 5.3",
+    "luasocket",
+    "lua-cjson",
+}
+
+build = {
+    type = "builtin",
+    modules = {
+        ["myproject.core"] = "src/core.lua",
+        ["myproject.utils"] = "src/utils.lua",
+    },
+}
+```
+
+### خط لوله CI/CD (اقدامات GitHub)
+```yaml
+name: Lua CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        lua-version: ['5.3', '5.4', 'luajit']
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: ${{ matrix.lua-version }}
+      - uses: leafo/gh-actions-luarocks@v4
+      - run: luarocks install busted
+      - run: luarocks install luacheck
+      - run: luacheck src/
+      - run: busted spec/
+```
+---
+
+## تست
+### خراب شده - چارچوب تست
+```lua
+-- spec/utils_spec.lua
+local utils = require("src.utils")
+
+describe("utils", function()
+    describe("add", function()
+        it("adds two positive numbers", function()
+            assert.are.equal(utils.add(2, 3), 5)
+        end)
+        it("handles negative numbers", function()
+            assert.are.equal(utils.add(-1, 1), 0)
+        end)
+    end)
+    describe("format_name", function()
+        it("capitalizes first letter", function()
+            assert.are.equal(utils.format_name("alice"), "Alice")
+        end)
+    end)
+end)
+```
+
+### تمسخر با لواسرت
+```lua
+describe("UserService", function()
+    local service, mock_repo
+    before_each(function()
+        mock_repo = {
+            save = spy.new(function() return true end),
+            find = spy.new(function(id) return {id=id, name="Alice"} end),
+        }
+        service = require("src.user_service").new(mock_repo)
+    end)
+    it("saves user via repository", function()
+        service:create("Alice", "alice@example.com")
+        assert.spy(mock_repo.save).was_called(1)
+    end)
+end)
+```
+
+### دستورات تست
+```bash
+busted spec/                    # Run all tests
+busted spec/utils_spec.lua      # Run specific file
+busted --verbose spec/          # Verbose output
+```
+
+---
+
+## قابلیت همکاری
+### C API - جاسازی Lua در C
+```c
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+
+int main(void) {
+    lua_State *L = luaL_newstate();
+    luaL_openlibs(L);
+    luaL_dofile(L, "script.lua");
+    lua_getglobal(L, "greet");
+    lua_pushstring(L, "World");
+    lua_pcall(L, 1, 1, 0);
+    printf("Lua says: %s\n", lua_tostring(L, -1));
+    lua_close(L);
+    return 0;
+}
+// Compile: gcc -o host host.c -llua5.4
+```
+
+### LuaJIT FFI - تماس مستقیم C
+```lua
+local ffi = require("ffi")
+ffi.cdef[[
+    double sqrt(double x);
+    int abs(int n);
+]]
+local C = ffi.C
+print(C.sqrt(144))   -- 12.0
+print(C.abs(-42))    -- 42
+```
+
+---
+
+## الگوهای طراحی
+### الگوی ماژول (Singleton)
+```lua
+-- config.lua — modules are singletons by design
+local config = {
+    debug = false,
+    version = "1.0.0",
+}
+function config.get(key) return config[key] end
+function config.set(key, value) config[key] = value end
+return config
+```
+
+### ناظر / سیستم رویداد
+```lua
+local EventBus = {}
+EventBus.__index = EventBus
+
+function EventBus.new()
+    return setmetatable({listeners = {}}, EventBus)
+end
+
+function EventBus:on(event, callback)
+    self.listeners[event] = self.listeners[event] or {}
+    table.insert(self.listeners[event], callback)
+end
+
+function EventBus:emit(event, ...)
+    if self.listeners[event] then
+        for _, cb in ipairs(self.listeners[event]) do cb(...) end
+    end
+end
+
+local bus = EventBus.new()
+bus:on("player_died", function(p) print(p.name .. " died!") end)
+bus:emit("player_died", {name = "Hero"})
+```
+
+### الگوی فرمان
+```lua
+local Command = {}
+Command.__index = Command
+
+function Command.new(name, exec, undo)
+    return setmetatable({name=name, execute=exec, undo=undo}, Command)
+end
+
+local history = {}
+local cmd = Command.new("move",
+    function() print("Moving") end,
+    function() print("Undoing move") end)
+cmd.execute()
+table.insert(history, cmd)
+if #history > 0 then table.remove(history).undo() end
+```
+---
+
+## عملکرد و بهینه سازی
+```bash
+luajit -jp=v script.lua
+luajit -jv script.lua
+```
+
+```lua
+local sqrt = math.sqrt
+local tconcat = table.concat
+local parts = {}
+for i = 1, 1000 do parts[#parts + 1] = tostring(i) end
+local result = tconcat(parts, ',')
+```
+
+---
+
+## استقرار
+### استقرار داکر
+```dockerfile
+FROM alpine:3.19
+RUN apk add --no-cache lua5.4
+WORKDIR /app
+COPY . .
+CMD lua5.4 src/main.lua
+```
+
+---
+
+## چه زمانی از Lua استفاده کنیم
+| سناریو | چرا لوا | جایگزین بهتر |
+|----------|---------|-------------------|
+| برنامه نویسی بازی | سبک، سریع، قابل جاسازی | — |
+| توسعه Roblox | تنها گزینه | — |
+| سیستم های تعبیه شده | رد پای کوچک | سی، میکروپایتون |
+| پسوند برنامه | طراحی شده برای تعبیه | پایتون (بزرگتر)، جاوا اسکریپت (V8) |
+| فایل های پیکربندی | ساده و سریع | JSON، TOML، YAML |
+| توسعه وب | OpenResty وجود دارد اما جایگاه | جاوا اسکریپت، پایتون، برو |
+| توسعه برنامه عمومی | برای برنامه های مستقل طراحی نشده است | پایتون، برو، جاوا |
+| علم داده | نه اکوسیستم | پایتون، R |
+---
+
+## خلاصه
+Lua زبان اصلی جاسازی است. این برنامه کوچک، سریع و ساده است — طوری طراحی شده است که در داخل سایر برنامه ها زندگی کند و قابلیت های برنامه نویسی را برای آنها فراهم کند. برای توسعه بازی، Roblox و سیستم های جاسازی شده، Lua یک انتخاب عالی است. این یک زبان همه منظوره نیست، اما به دلیل جایگاه خاص خود (اسکریپت نویسی و جاسازی)، تقریباً بی همتا است.

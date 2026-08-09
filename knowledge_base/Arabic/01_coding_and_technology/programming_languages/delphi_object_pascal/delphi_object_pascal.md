@@ -1,0 +1,1087 @@
+---
+# البيانات الوصفية
+العنوان: "دلفي/كائن باسكال"
+الوصف: "مرجع شامل للغة البرمجة Delphi/Object Pascal يغطي نظرة عامة، والمقايضات، وأساسيات بناء الجملة، والنظام البيئي، ومتى يتم استخدامها."
+الفئة: "البرمجة والتكنولوجيا"
+الإصدار: "1.0.0"
+الحالة: "نشط"
+#مساهمة
+المؤلفين:
+  - الاسم: "فريق تدريب نموذج الذكاء الاصطناعي"
+    البريد الإلكتروني: ""
+    الدور: "original_author"
+المساهمين: []
+سجل التغيير:
+  - الإصدار: "1.0.0"
+    التاريخ: "2026-08-05"
+    المؤلف: "فريق تدريب نموذج الذكاء الاصطناعي"
+    التغييرات: "تمت إضافة بيانات تعريف YAML الأمامية لتتبع المساهمين"
+# مراجعة
+تم الإنشاء: "05-08-2026"
+آخر_تعديل: "05-08-2026"
+تاريخ_المراجعة: "05-02-2027"
+تمت المراجعة بواسطة: "فريق قاعدة معارف البرمجة والتكنولوجيا"
+next_review: "2027-08-05"
+# التصنيف
+العلامات: [كائن دلفي باسكال، لغة البرمجة، بناء الجملة، النظام البيئي، الترميز والتكنولوجيا]
+مستوى الصعوبة: "متوسط"
+المتطلبات الأساسية: []
+وقت_القراءة المقدر: "44 دقيقة"
+# دليل المساهمة
+المساهمة:
+  الترخيص: "MIT"
+  Feedback_channel: "مشكلات GitHub"
+  how_to_contribute: "أرسل رسالة عامة تحتوي على التغييرات وقم بتحديث سجل التغييرات"
+  review_process: "تتم مراجعة التغييرات بواسطة مشرفي الفئة قبل الدمج"
+---
+# دلفي / كائن باسكال
+دلفي هي لغة برمجة موجهة للكائنات تعتمد على لغة باسكال، وقد تم تطويرها في الأصل بواسطة بورلاند (لاحقًا إمباركاديرو، الآن إيديرا). تم إصداره لأول مرة في عام 1995 باسم "Delphi 1"، وقد تم تصميمه للتطوير السريع للتطبيقات (RAD) لتطبيقات سطح مكتب Windows. تُعرف اللغة رسميًا باسم Object Pascal، ويوفر Delphi IDE مصممًا للنماذج المرئية وأدوات قاعدة بيانات متكاملة ومترجمًا قويًا.
+كانت دلفي واحدة من أدوات تطوير Windows الأكثر شعبية في أواخر التسعينيات وأوائل العقد الأول من القرن الحادي والعشرين. على الرغم من انخفاض شعبيتها بشكل كبير، إلا أنها تحتفظ بقاعدة مستخدمين مخصصة، خاصة في تطبيقات سطح المكتب للمؤسسات، والواجهات الأمامية لقواعد البيانات، وصيانة الأنظمة القديمة. تدعم Modern Delphi (11/12) التطوير عبر الأنظمة الأساسية لأنظمة Windows وmacOS وiOS وAndroid من خلال إطار عمل FireMonkey (FMX).
+---
+
+## لماذا تعتبر دلفي مهمة
+- **التطوير السريع للتطبيقات**: أدى مصمم النماذج المرئية + التجميع الأصلي إلى جعل إنشاء واجهات المستخدم الرسومية لنظام التشغيل Windows سريعًا للغاية.
+- **الأداء الأصلي**: يُترجم مباشرة إلى كود الجهاز — لا يتطلب وقت تشغيل أو جهاز افتراضي.
+- **اتصال قاعدة البيانات**: مكونات قاعدة بيانات ممتازة تاريخيًا (dbExpress، وFireDAC، وADO).
+- **قواعد الأكواد القديمة**: لا تزال العديد من تطبيقات المؤسسات تعمل على دلفي؛ الصيانة هي مهارة متخصصة.
+- **نظام أساسي متعدد المنصات (حديث)**: يستهدف إطار عمل FireMonkey أنظمة التشغيل Windows وmacOS وiOS وAndroid من قاعدة تعليمات برمجية واحدة.
+##المقايضات
+| الحد | التفاصيل | الحل النموذجي |
+|-----------|------------------------|---|
+| **مجتمع متدهور** | أصغر بكثير من مجتمعات C# أو Java أو JavaScript | منتديات نشطة ولكن صغيرة. الدعم التجاري من Idera |
+| **نظام بيئي محدود** | مكتبات خارجية أقل من اللغات الحديثة | استخدم مكتبة مكونات VCL/FMX؛ كتابة مكونات مخصصة |
+| ** يركز بشكل أساسي على Windows ** | الدعم عبر الأنظمة الأساسية (FMX) أقل نضجًا | استخدم تقنيات C# أو Flutter أو الويب من أجل منصة حقيقية مشتركة |
+| **تكلفة الترخيص** | يتطلب IDE التجاري ترخيصًا مدفوعًا | بديل مفتوح المصدر: Free Pascal / Lazarus |
+| **صعوبة التوظيف** | عدد أقل من مطوري دلفي يدخلون السوق | الحفاظ على الأنظمة الحالية؛ ترحيل الميزات الجديدة إلى الأكوام الحديثة |
+---
+
+## أساسيات بناء الجملة
+```pascal
+program HelloWorld;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  Name: string;
+  Age: Integer;
+  Score: Double;
+
+// Procedure (no return value)
+procedure Greet(const AName: string);
+begin
+  WriteLn('Hello, ' + AName + '!');
+end;
+
+// Function (returns a value)
+function Add(A, B: Integer): Integer;
+begin
+  Result := A + B;
+end;
+
+// Object-oriented programming
+type
+  TAnimal = class
+  private
+    FName: string;
+  public
+    constructor Create(const AName: string);
+    function Speak: string; virtual; abstract;
+    property Name: string read FName;
+  end;
+
+  TDog = class(TAnimal)
+  public
+    function Speak: string; override;
+  end;
+
+constructor TAnimal.Create(const AName: string);
+begin
+  inherited Create;
+  FName := AName;
+end;
+
+function TDog.Speak: string;
+begin
+  Result := Name + ' says woof';
+end;
+
+// Main program
+begin
+  Name := 'Alice';
+  Age := 30;
+  Score := 9.5;
+  
+  Greet(Name);
+  WriteLn('Sum: ', Add(3, 5));
+  
+  ReadLn;  // Wait for Enter
+end.
+```
+
+---
+
+## بناء الجملة والأنماط المتقدمة
+### الأدوية العامة والمجموعات
+تدعم دلفي الأدوية العامة (منذ دلفي 2009)، مما يتيح فئات الحاويات الآمنة للنوع.
+```pascal
+unit GenericsDemo;
+
+interface
+
+uses
+  System.Generics.Collections,
+  System.Generics.Defaults,
+  SysUtils;
+
+type
+  // Generic pair class
+  TPair<TKey, TValue> = class
+  private
+    FKey: TKey;
+    FValue: TValue;
+  public
+    constructor Create(const AKey: TKey; const AValue: TValue);
+    property Key: TKey read FKey;
+    property Value: TValue read FValue;
+  end;
+
+  // Generic stack implementation
+  TStack<T> = class
+  private
+    FItems: TList<T>;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure Push(const AItem: T);
+    function Pop: T;
+    function Peek: T;
+    function Count: Integer;
+  end;
+
+  // Custom comparer for sorting
+  TEmployeeComparer = class(TComparer<TObject>)
+  public
+    function Compare(const Left, Right: TObject): Integer; override;
+  end;
+
+implementation
+
+{ TStack<T> }
+
+constructor TStack<T>.Create;
+begin
+  inherited Create;
+  FItems := TList<T>.Create;
+end;
+
+destructor TStack<T>.Destroy;
+begin
+  FItems.Free;
+  inherited;
+end;
+
+procedure TStack<T>.Push(const AItem: T);
+begin
+  FItems.Add(AItem);
+end;
+
+function TStack<T>.Pop: T;
+begin
+  if FItems.Count = 0 then
+    raise Exception.Create('Stack is empty');
+  Result := FItems[FItems.Count - 1];
+  FItems.Delete(FItems.Count - 1);
+end;
+
+function TStack<T>.Peek: T;
+begin
+  if FItems.Count = 0 then
+    raise Exception.Create('Stack is empty');
+  Result := FItems[FItems.Count - 1];
+end;
+
+function TStack<T>.Count: Integer;
+begin
+  Result := FItems.Count;
+end;
+
+end.
+```
+
+### الأساليب والإغلاقات المجهولة
+```pascal
+program AnonymousMethods;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils, System.Generics.Collections;
+
+type
+  TIntFunction = reference to function(X: Integer): Integer;
+  TVoidProc = reference to procedure(const AMsg: string);
+
+var
+  Square: TIntFunction;
+  Logger: TVoidProc;
+  Counter: TProc;
+
+begin
+  // Anonymous method — inline function
+  Square := function(X: Integer): Integer
+  begin
+    Result := X * X;
+  end;
+  WriteLn('5 squared = ', Square(5));
+
+  // Closure — captures outer variable
+  // The Count variable persists between calls
+  var Count: Integer := 0;
+  Counter := procedure
+  begin
+    Inc(Count);
+    WriteLn('Call count: ', Count);
+  end;
+  Counter;  // Call count: 1
+  Counter;  // Call count: 2
+  Counter;  // Call count: 3
+
+  // Using anonymous methods with collections
+  var Numbers := TList<Integer>.Create;
+  try
+    Numbers.AddRange([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+    // Filter: keep only even numbers
+    var Evens := TList<Integer>.Create;
+    try
+      Numbers.ForEach(
+        procedure(const N: Integer)
+        begin
+          if N mod 2 = 0 then
+            Evens.Add(N);
+        end
+      );
+      Write('Even numbers: ');
+      for var N in Evens do
+        Write(N, ' ');
+      WriteLn;
+    finally
+      Evens.Free;
+    end;
+  finally
+    Numbers.Free;
+  end;
+
+  ReadLn;
+end.
+```
+
+### الواجهات وحقن التبعية
+```pascal
+unit DIExample;
+
+interface
+
+uses
+  SysUtils;
+
+type
+  // Interface definitions
+  ILogger = interface
+    ['{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}']
+    procedure Log(const AMessage: string);
+  end;
+
+  IRepository = interface
+    ['{B2C3D4E5-F6A7-8901-BCDE-F12345678901}']
+    function FindById(const AId: Integer): string;
+    procedure Save(const AData: string);
+  end;
+
+  // Concrete implementations
+  TFileLogger = class(TInterfacedObject, ILogger)
+  public
+    procedure Log(const AMessage: string);
+  end;
+
+  TConsoleLogger = class(TInterfacedObject, ILogger)
+  public
+    procedure Log(const AMessage: string);
+  end;
+
+  TDatabaseRepository = class(TInterfacedObject, IRepository)
+  private
+    FLogger: ILogger;
+  public
+    constructor Create(const ALogger: ILogger);
+    function FindById(const AId: Integer): string;
+    procedure Save(const AData: string);
+  end;
+
+  // Service class using dependency injection
+  TUserService = class
+  private
+    FRepository: IRepository;
+    FLogger: ILogger;
+  public
+    constructor Create(const ARepo: IRepository; const ALogger: ILogger);
+    procedure CreateUser(const AName: string);
+  end;
+
+implementation
+
+{ TFileLogger }
+procedure TFileLogger.Log(const AMessage: string);
+begin
+  // Write to log file
+  WriteLn('[FILE LOG] ', AMessage);
+end;
+
+{ TConsoleLogger }
+procedure TConsoleLogger.Log(const AMessage: string);
+begin
+  WriteLn('[CONSOLE] ', AMessage);
+end;
+
+{ TDatabaseRepository }
+constructor TDatabaseRepository.Create(const ALogger: ILogger);
+begin
+  inherited Create;
+  FLogger := ALogger;
+end;
+
+function TDatabaseRepository.FindById(const AId: Integer): string;
+begin
+  FLogger.Log('Finding record ' + IntToStr(AId));
+  Result := 'Record_' + IntToStr(AId);
+end;
+
+procedure TDatabaseRepository.Save(const AData: string);
+begin
+  FLogger.Log('Saving: ' + AData);
+end;
+
+{ TUserService }
+constructor TUserService.Create(const ARepo: IRepository; const ALogger: ILogger);
+begin
+  FRepository := ARepo;
+  FLogger := ALogger;
+end;
+
+procedure TUserService.CreateUser(const AName: string);
+begin
+  FLogger.Log('Creating user: ' + AName);
+  FRepository.Save(AName);
+end;
+
+end.
+```
+
+### أنماط مكونات VCL
+```pascal
+unit MainForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages,
+  System.SysUtils, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms,
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Grids, Vcl.DBGrids, Data.DB;
+
+type
+  TfrmMain = class(TForm)
+    pnlTop: TPanel;
+    btnSearch: TButton;
+    btnExport: TButton;
+    edtSearch: TEdit;
+    dbgResults: TDBGrid;
+    StatusBar: TStatusBar;
+    procedure FormCreate(Sender: TObject);
+    procedure btnSearchClick(Sender: TObject);
+    procedure btnExportClick(Sender: TObject);
+    procedure dbgResultsDblClick(Sender: TObject);
+  private
+    procedure SetupDataSet;
+    procedure FilterData(const ASearchText: string);
+    procedure ExportToCSV(const AFileName: string);
+    procedure UpdateStatusBar(const AMessage: string);
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMain: TfrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+  SetupDataSet;
+  UpdateStatusBar('Ready');
+end;
+
+procedure TfrmMain.btnSearchClick(Sender: TObject);
+begin
+  if Trim(edtSearch.Text) = '' then
+  begin
+    ShowMessage('Please enter a search term');
+    edtSearch.SetFocus;
+    Exit;
+  end;
+  FilterData(edtSearch.Text);
+  UpdateStatusBar('Search complete');
+end;
+
+procedure TfrmMain.btnExportClick(Sender: TObject);
+begin
+  ExportToCSV('export_' + FormatDateTime('yyyymmdd', Now) + '.csv');
+  UpdateStatusBar('Export complete');
+end;
+
+procedure TfrmMain.dbgResultsDblClick(Sender: TObject);
+begin
+  ShowMessage('Selected: ' + dbgResults.Fields[1].AsString);
+end;
+
+procedure TfrmMain.SetupDataSet;
+begin
+  // Configure dataset and connect to DBGrid
+  StatusBar.SimpleText := 'Initializing...';
+end;
+
+procedure TfrmMain.FilterData(const ASearchText: string);
+begin
+  // Apply filter to dataset
+end;
+
+procedure TfrmMain.ExportToCSV(const AFileName: string);
+begin
+  // Export DBGrid data to CSV file
+end;
+
+procedure TfrmMain.UpdateStatusBar(const AMessage: string);
+begin
+  StatusBar.SimpleText := AMessage;
+end;
+
+end.
+```
+
+---
+
+## الهندسة المعمارية وتصميم النظام
+### بنية المكونات
+تم بناء VCL (مكتبة المكونات المرئية) من دلفي وFMX (FireMonkey) على التسلسل الهرمي للمكونات. يرث كل عنصر مرئي من`TComponent`.
+```
+TObject
+└── TPersistent
+    └── TComponent
+        ├── TControl
+        │   ├── TWinControl
+        │   │   ├── TForm          (window/form)
+        │   │   ├── TButton        (push button)
+        │   │   ├── TEdit          (text input)
+        │   │   ├── TPanel         (container panel)
+        │   │   ├── TDBGrid        (database grid)
+        │   │   └── TListBox       (list box)
+        │   └── TGraphicControl
+        │       ├── TLabel         (text label)
+        │       ├── TImage         (image display)
+        │       └── TShape         (geometric shapes)
+        ├── TDataSet               (database dataset base)
+        │   ├── TFDQuery           (FireDAC query)
+        │   ├── TClientDataSet     (in-memory dataset)
+        │   └── TADODataSet        (ADO database)
+        └── TDataModule            (non-visual container)
+```
+
+### هيكل دليل المشروع النموذجي
+```
+delphi-project/
+├── src/
+│   ├── Project.dpr              * Main project file
+│   ├── MainForm.pas             * Main form unit
+│   ├── MainForm.dfm             * Main form definition (binary)
+│   ├── MainForm.fmx             * FMX form definition (text XML)
+│   ├── DataModule.pas           * Data access module
+│   ├── BusinessLogic.pas        * Business logic unit
+│   └── Utils.pas                * Utility functions
+├── packages/
+│   ├── CustomComponents.bpl     * Component package
+│   └── CustomComponents.dpk     * Package source
+├── lib/                         * Compiled units
+├── dcu/                         * Delphi compiled units
+├── resources/
+│   ├── images/                  * Application images
+│   └── icons/                   * Application icons
+├── Project.dproj                * Project configuration (XML)
+└── README.md
+```
+
+### ملف المشروع dproj
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{12345678-ABCD-EF01-2345-6789ABCDEF01}</ProjectGuid>
+        <MainSource>Project.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform>Win32</Platform>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base'">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug'">
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release'">
+        <DCC_Optimize>true</DCC_Optimize>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    </PropertyGroup>
+</Project>
+```
+
+---
+
+## تكوين المشروع ونظام البناء
+### مرجع توجيهات المترجم
+| توجيه | الغرض | مثال |
+|-----------|--------|---------|
+|  __محمي_0__ | تطبيق وحدة التحكم |  __محمي_1__ |
+|  __محمي_2__ | تطبيق واجهة المستخدم الرسومية (افتراضي) |  __محمي_3__ |
+|  __محمي_4__ | تعريف الرمز الشرطي |  __محمي_5__ |
+|  __محمي_6__ | التجميع الشرطي |  __محمي_7__ |
+|  __محمي_8__ | تضمين مورد النموذج |  __محمي_9__ |
+|  __محمي_10__ | قمع التحذيرات |  __محمي_11__ |
+|  __محمي_12__ | قمع التلميحات |  __محمي_13__ |
+|  __محمي_14__ | تمكين المحسن |  __محمي_15__ |
+|  __محمي_16__ | تمكين عمليات التحقق من نطاق السلسلة |  __محمي_17__ |
+### البناء من سطر الأوامر
+```batch
+REM 32-bit Windows build (DCC32)
+dcc32 Project.dpr -NSVcl;System;Winapi -R resources -E bin\win32
+
+REM 64-bit Windows build (DCC64)
+dcc64 Project.dpr -NSVcl;System;Winapi -R resources -E bin\win64
+
+REM Using MSBuild (modern approach)
+msbuild Project.dproj /p:Config=Release /p:Platform=Win32
+
+REM Free Pascal / Lazarus (cross-platform, open source)
+fpc -Mdelphi -dLCL -Fu"lib/units" src/Project.lpr
+```
+
+### تكوين الحزمة (.dpk)
+```pascal
+package CustomComponents;
+
+{$R *.res}
+{$IFDEF RELEASE}
+  {$OPTIMIZATION ON}
+  {$DEBUG OFF}
+{$ENDIF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  CustomButton in 'src\CustomButton.pas',
+  CustomGrid in 'src\CustomGrid.pas',
+  CustomChart in 'src\CustomChart.pas';
+
+end.
+```
+
+---
+
+## الاختبار والتصحيح
+### ميزات مصحح أخطاء IDE
+يشتمل IDE الخاص بـ Delphi على مصحح أخطاء متكامل ومتكامل.
+| ميزة | الوصف |
+|---------|------------|
+| **نقاط التوقف** | تعيين على أي سطر قابل للتنفيذ؛ نقاط التوقف المشروطة مدعومة |
+| **نافذة المراقبة** | مراقبة القيم المتغيرة في الوقت الحقيقي |
+| ** مكدس المكالمات ** | عرض سلسلة الاتصال الكاملة مع المتغيرات المحلية |
+| **نافذة وحدة المعالجة المركزية** | عرض التجميع الذي تم إنشاؤه بجانب كود المصدر |
+| **عرض الذاكرة** | فحص الذاكرة الأولية في أي عنوان |
+| ** نقاط توقف الحدث ** | كسر الاستثناءات، تحميلات DLL، أحداث مؤشر الترابط |
+| ** التصحيح عن بعد ** | تصحيح أخطاء التطبيقات التي تعمل على الأجهزة البعيدة |
+| **تصور البيانات** | متخيلون مخصصون لمجموعات البيانات والسلاسل والمجموعات |
+### إطار اختبار DUnit
+```pascal
+unit TestBusinessLogic;
+
+interface
+
+uses
+  TestFramework, SysUtils, BusinessLogic;
+
+type
+  TestTPriceCalculator = class(TTestCase)
+  private
+    FCalc: TPriceCalculator;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+    procedure TestBasePrice;
+    procedure TestDiscountCalculation;
+    procedure TestTaxCalculation;
+    procedure TestFinalPrice;
+    procedure TestNegativePriceRaisesException;
+    procedure TestZeroQuantity;
+  end;
+
+implementation
+
+procedure TestTPriceCalculator.SetUp;
+begin
+  FCalc := TPriceCalculator.Create;
+end;
+
+procedure TestTPriceCalculator.TearDown;
+begin
+  FCalc.Free;
+end;
+
+procedure TestTPriceCalculator.TestBasePrice;
+begin
+  CheckEquals(100.00, FCalc.CalculateBasePrice(10, 10.00),
+    'Base price should be quantity * unit price');
+end;
+
+procedure TestTPriceCalculator.TestDiscountCalculation;
+begin
+  CheckEquals(90.00, FCalc.ApplyDiscount(100.00, 10),
+    '10% discount on 100 should be 90');
+  CheckEquals(100.00, FCalc.ApplyDiscount(100.00, 0),
+    '0% discount should not change price');
+end;
+
+procedure TestTPriceCalculator.TestTaxCalculation;
+begin
+  CheckEquals(122.00, FCalc.AddTax(100.00, 22),
+    '22% tax on 100 should be 122');
+end;
+
+procedure TestTPriceCalculator.TestFinalPrice;
+begin
+  CheckEquals(109.80,
+    FCalc.CalculateFinalPrice(10, 10.00, 10, 22),
+    'Final price: 100 base, 10% discount, 22% tax');
+end;
+
+procedure TestTPriceCalculator.TestNegativePriceRaisesException;
+begin
+  ExpectedException := EInvalidArgument;
+  FCalc.CalculateBasePrice(-1, 10.00);
+end;
+
+procedure TestTPriceCalculator.TestZeroQuantity;
+begin
+  CheckEquals(0.00, FCalc.CalculateBasePrice(0, 10.00),
+    'Zero quantity should give zero price');
+end;
+
+initialization
+  RegisterTest(TestTPriceCalculator.Suite);
+
+end.
+```
+
+### تصحيح سير العمل
+```
+1. Set breakpoints at suspicious code locations
+2. Run the application (F9)
+3. When breakpoint hits:
+   a. Inspect variables in the Watch window
+   b. Step through code (F7 = into, F8 = over)
+   c. Check the Call Stack window for execution path
+   d. Use Evaluate/Modify (Ctrl+F7) to test expressions
+4. For memory issues:
+   a. Enable ReportMemoryLeaksOnShutdown
+   b. Use FastMM full debug mode
+   c. Check for dangling pointers after Free
+```
+
+---
+
+## إمكانية التشغيل البيني
+### التكامل مع COM/ActiveX
+```pascal
+unit COMExample;
+
+interface
+
+uses
+  Winapi.Windows, System.Win.ComObj, ActiveX;
+
+// Create and use a COM object
+procedure UseExcelCOM;
+
+// Implement a COM server
+type
+  TMyCOMObject = class(TAutoObject, IMyCOMInterface)
+  protected
+    function Get_Version: string; safecall;
+    procedure ProcessData(const AInput: string); safecall;
+  end;
+
+implementation
+
+uses
+  ComServ;
+
+procedure UseExcelCOM;
+var
+  ExcelApp: OleVariant;
+  Workbook: OleVariant;
+begin
+  ExcelApp := CreateOleObject('Excel.Application');
+  try
+    ExcelApp.Visible := True;
+    Workbook := ExcelApp.Workbooks.Add;
+    Workbook.Sheets[1].Cells[1, 1] := 'Hello from Delphi';
+    Workbook.Sheets[1].Cells[1, 2] := 42;
+    Workbook.SaveAs('C:\temp\delphi_output.xlsx');
+  finally
+    ExcelApp.Quit;
+  end;
+end;
+
+end.
+```
+
+### استدعاء ملفات DLL الخاصة بـ C/C++
+```pascal
+unit DLLInterop;
+
+interface
+
+uses
+  Winapi.Windows, SysUtils;
+
+// Import functions from a C DLL
+function AddNumbers(A, B: Integer): Integer; cdecl;
+  external 'mathlib.dll' name 'add_numbers';
+
+function ProcessString(Input: PAnsiChar; Output: PAnsiChar;
+  MaxLen: Integer): Integer; cdecl;
+  external 'stringlib.dll' name 'process_string';
+
+// Import with dynamic loading
+type
+  TEncryptFunc = function(const AData: PAnsiChar;
+    AKey: Integer): PAnsiChar; cdecl;
+
+var
+  EncryptData: TEncryptFunc;
+
+procedure LoadCryptoLibrary;
+procedure UnloadCryptoLibrary;
+
+implementation
+
+var
+  CryptoLib: HMODULE;
+
+procedure LoadCryptoLibrary;
+begin
+  CryptoLib := LoadLibrary('crypto.dll');
+  if CryptoLib = 0 then
+    raise Exception.Create('Failed to load crypto.dll');
+  
+  @EncryptData := GetProcAddress(CryptoLib, 'encrypt_data');
+  if not Assigned(EncryptData) then
+    raise Exception.Create('encrypt_data not found');
+end;
+
+procedure UnloadCryptoLibrary;
+begin
+  if CryptoLib <> 0 then
+  begin
+    FreeLibrary(CryptoLib);
+    CryptoLib := 0;
+  end;
+end;
+
+end.
+```
+
+### إمكانية التشغيل التفاعلي .NET
+```pascal
+// Delphi Prism / Oxygene can interop with .NET assemblies
+// Modern approach: use Java2OP for Android, or WinRT for Windows
+
+// WinRT / Windows Runtime interop
+uses
+  Winapi.WinRT, Winapi.UI.Notifications;
+
+procedure ShowToastNotification(const AMessage: string);
+var
+  ToastXML: string;
+  ToastDoc: IXmlDocument;
+  Toast: IToastNotification;
+  Notifier: IToastNotifier;
+begin
+  ToastXML := '<toast><visual><binding template="ToastText01">' +
+    '<text id="1">' + AMessage + '</text>' +
+    '</binding></visual></toast>';
+  
+  ToastDoc := TXmlDocument.Create as IXmlDocument;
+  ToastDoc.LoadXml(ToastXML);
+  
+  Toast := TToastNotification.Create(ToastDoc) as IToastNotification;
+  Notifier := TToastNotificationManager.CreateToastNotifier('MyApp');
+  Notifier.Show(Toast);
+end;
+```
+
+---
+
+## أنماط التصميم
+### النموذج 1: مفرد (آمن للخيط)
+```pascal
+type
+  TAppConfig = class
+  private
+    class var FInstance: TAppConfig;
+    class var FLock: TObject;
+    FSettings: TStringList;
+    constructor CreatePrivate;
+  public
+    class function GetInstance: TAppConfig; static;
+    class procedure Release; static;
+    function GetSetting(const AKey: string): string;
+    procedure SetSetting(const AKey, AValue: string);
+  end;
+
+class constructor TAppConfig.Create;
+begin
+  FLock := TObject.Create;
+end;
+
+constructor TAppConfig.CreatePrivate;
+begin
+  inherited Create;
+  FSettings := TStringList.Create;
+  FSettings.LoadFromFile('config.ini');
+end;
+
+class function TAppConfig.GetInstance: TAppConfig;
+begin
+  TMonitor.Enter(FLock);
+  try
+    if FInstance = nil then
+      FInstance := TAppConfig.CreatePrivate;
+    Result := FInstance;
+  finally
+    TMonitor.Exit(FLock);
+  end;
+end;
+```
+
+### النموذج 2: المراقب (مدفوع بالحدث)
+```pascal
+type
+  TDataChangeEvent = procedure(Sender: TObject; const AFieldName: string;
+    const AOldValue, ANewValue: string) of object;
+
+  TDataStore = class
+  private
+    FData: TDictionary<string, string>;
+    FOnChange: TDataChangeEvent;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure SetValue(const AKey, AValue: string);
+    function GetValue(const AKey: string): string;
+    property OnChange: TDataChangeEvent read FOnChange write FOnChange;
+  end;
+
+procedure TDataStore.SetValue(const AKey, AValue: string);
+var
+  OldValue: string;
+begin
+  if FData.TryGetValue(AKey, OldValue) then
+  begin
+    if OldValue <> AValue then
+    begin
+      FData[AKey] := AValue;
+      if Assigned(FOnChange) then
+        FOnChange(Self, AKey, OldValue, AValue);
+    end;
+  end
+  else
+  begin
+    FData.Add(AKey, AValue);
+    if Assigned(FOnChange) then
+      FOnChange(Self, AKey, '', AValue);
+  end;
+end;
+```
+
+### النموذج 3: طريقة المصنع
+```pascal
+type
+  // Base report class
+  TReport = class
+  public
+    procedure Generate; virtual; abstract;
+    class function GetReportType: string; virtual; abstract;
+  end;
+
+  TReportClass = class of TReport;
+
+  // Concrete reports
+  TPDFReport = class(TReport)
+  public
+    procedure Generate; override;
+    class function GetReportType: string; override;
+  end;
+
+  TCSVReport = class(TReport)
+  public
+    procedure Generate; override;
+    class function GetReportType: string; override;
+  end;
+
+  // Factory
+  TReportFactory = class
+  private
+    class var FRegistry: TDictionary<string, TReportClass>;
+  public
+    class constructor Create;
+    class function CreateReport(const AType: string): TReport;
+    class procedure RegisterReport(const AType: string;
+      AClass: TReportClass);
+  end;
+
+class constructor TReportFactory.Create;
+begin
+  FRegistry := TDictionary<string, TReportClass>.Create;
+  RegisterReport('PDF', TPDFReport);
+  RegisterReport('CSV', TCSVReport);
+end;
+
+class function TReportFactory.CreateReport(const AType: string): TReport;
+var
+  ReportClass: TReportClass;
+begin
+  if not FRegistry.TryGetValue(AType, ReportClass) then
+    raise Exception.CreateFmt('Unknown report type: %s', [AType]);
+  Result := ReportClass.Create;
+end;
+```
+
+---
+
+## الأداء والتحسين
+### إدارة الذاكرة
+```pascal
+// Proper memory management pattern
+procedure ProcessLargeData;
+var
+  Buffer: TBytes;
+  Stream: TMemoryStream;
+begin
+  // Use TBytes (managed array) — automatically freed
+  SetLength(Buffer, 1024 * 1024);  // 1MB
+  try
+    // Process buffer...
+    FillChar(Buffer[0], Length(Buffer), 0);
+  finally
+    // Buffer is automatically freed when it goes out of scope
+  end;
+
+  // Use try-finally for unmanaged objects
+  Stream := TMemoryStream.Create;
+  try
+    Stream.WriteBuffer(Buffer[0], Length(Buffer));
+    Stream.SaveToFile('output.bin');
+  finally
+    Stream.Free;  // Always free in finally block
+  end;
+end;
+
+// Use interfaces for automatic reference counting
+procedure ProcessWithInterfaces;
+var
+  Processor: IDataProcessor;
+begin
+  Processor := TDataProcessor.Create;
+  // No Free needed — reference counting handles cleanup
+  Processor.Execute;
+end;
+```
+
+### نصائح لتحسين VCL/FMX
+| تقنية | التأثير | الوصف |
+|-----------|-------|-------------|
+| **بدء التحديث/تحديث النهاية** | عالية | التفاف تحديثات القائمة/الشبكة لمنع إعادة الطلاء |
+| ** التخزين المؤقت المزدوج ** | متوسطة | اضبط`DoubleBuffered := True`لتقليل الوميض |
+| **القوائم الافتراضية** | عالية | استخدم`TVirtualStringTree`لمجموعات البيانات الكبيرة |
+| ** التدريب على السلسلة ** | متوسطة | إعادة استخدام ثوابت السلسلة؛ تجنب التسلسل المتكرر |
+| **تجميع الكائنات** | متوسطة | إعادة استخدام الكائنات التي تم إنشاؤها/تدميرها بشكل متكرر |
+| **تحميل كسول** | عالية | تحميل البيانات/النماذج فقط عند الحاجة |
+| **تحسين المترجم** | متوسطة | قم بتمكين`{$O+}`لإصدارات الإصدار |
+---
+
+## النشر والاستخدام في العالم الحقيقي
+### خيارات النشر
+```
+Delphi Deployment Targets:
+├── Windows (VCL/FMX)
+│   ├── Standalone .exe (no dependencies)
+│   ├── Installer (Inno Setup, InstallShield)
+│   └── MSIX / Windows Store package
+├── macOS (FMX)
+│   └── .app bundle
+├── iOS (FMX)
+│   └── IPA via Xcode toolchain
+├── Android (FMX)
+│   └── APK/AAB via Android SDK
+└── Linux (FPC/Lazarus only)
+    └── ELF binary
+```
+
+### حالات الاستخدام في العالم الحقيقي
+| صناعة | التطبيق | لماذا دلفي |
+|----------|------------|-----------|
+| **المالية** | منصات التداول، لوحات المعلومات المصرفية | واجهة المستخدم الرسومية الأصلية السريعة، والاتصال بقاعدة البيانات |
+| **الرعاية الصحية** | التصوير الطبي وإدارة المرضى | مكونات VCL، الأداء الأصلي |
+| **التصنيع** | أنظمة SCADA للتحكم الصناعي | الوصول المباشر للأجهزة، والاستجابة في الوقت الحقيقي |
+| **الحكومة** | ادوات ادارية داخلية | استمرارية النظام القديم |
+| **الاتصالات** | لوحات مراقبة الشبكة | تصور سريع للبيانات |
+| **التعليم** | برامج تعليمية، أدوات التعلم الإلكتروني | التطور السريع ودعم الوسائط المتعددة |
+---
+
+## متى تستخدم دلفي
+| السيناريو | لماذا دلفي | البديل الأفضل |
+|----------|---------|------------------|
+| صيانة دلفي القديمة | قاعدة التعليمات البرمجية الموجودة | — |
+| تطبيقات سطح مكتب Windows (سريع) | VCL ناضج وسريع | C# (WPF/WinForms) |
+| الواجهات الأمامية لقاعدة البيانات | مكونات بيانات ممتازة | سي #، جافا |
+| سطح المكتب عبر الأنظمة الأساسية (المتخصصة) | فايرمونكي موجود | C#، الرفرفة، الإلكترون |
+| تطوير واجهة المستخدم الرسومية الجديدة لنظام التشغيل Windows | ممكن ولكن المجتمع يتقلص | C# (WPF/WinUI 3) |
+| تطوير الويب | غير مناسب | جافا سكريبت، بايثون، C# |
+| تطبيقات الجوال | ممكن عبر FMX ولكنه محدود | سويفت، كوتلين، رفرفة |
+---
+
+## ملخص
+تعد لغة دلفي لغة ذات أهمية تاريخية وكانت رائدة في التطوير السريع للتطبيقات لنظام التشغيل Windows. تظل دلفي الحديثة قادرة على التعامل مع تطبيقات Windows الأصلية والواجهات الأمامية لقاعدة البيانات، لكن مجتمعها ونظامها البيئي قد تقلصا إلى حد كبير. للحفاظ على قواعد تعليمات دلفي الموجودة، يظل ذلك ضروريًا. بالنسبة للمشاريع الجديدة، انتقل معظم المطورين إلى لغة C#، أو تقنيات الويب، أو أطر العمل المشتركة بين الأنظمة الأساسية. يوفر مشروع Free Pascal/Lazarus مفتوح المصدر بديلاً مجانيًا للمهتمين بلغة Object Pascal.

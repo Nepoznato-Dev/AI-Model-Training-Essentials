@@ -1,0 +1,346 @@
+---
+# मेटाडेटा
+शीर्षक: "पायथन सिंटेक्स चीट शीट"
+विवरण: "पायथन सिंटैक्स चीट शीट"
+श्रेणी: "त्वरित संदर्भ"
+संस्करण: "1.0.0"
+स्थिति: "सक्रिय"
+#योगदान
+लेखक:
+  - नाम: "एआई मॉडल ट्रेनिंग टीम"
+    ईमेल: ""
+    भूमिका: "मूल_लेखक"
+योगदानकर्ता: []
+चेंजलॉग:
+  - संस्करण: "1.0.0"
+    दिनांक: "2026-08-05"
+    लेखक: "एआई मॉडल ट्रेनिंग टीम"
+    परिवर्तन: "योगदानकर्ता ट्रैकिंग के लिए YAML फ्रंटमैटर मेटाडेटा जोड़ा गया"
+#समीक्षा
+बनाया गया: "2026-08-05"
+अंतिम_संशोधित: "2026-08-05"
+समीक्षा दिनांक: "2027-02-05"
+review_by: "त्वरित संदर्भ नॉलेज बेस टीम"
+अगली_समीक्षा: "2027-08-05"
+#वर्गीकरण
+टैग: [पायथन, वाक्यविन्यास, त्वरित-संदर्भ]
+कठिनाई_स्तर: "शुरुआती"
+पूर्वावश्यकताएँ: []
+अनुमानित_पढ़ने_का समय: "14 मिनट"
+# योगदान मार्गदर्शिका
+योगदान:
+  लाइसेंस: "एमआईटी"
+  फीडबैक_चैनल: "गिटहब मुद्दे"
+  कैसे_तो_योगदान करें: "परिवर्तनों के साथ एक पीआर सबमिट करें और चेंजलॉग अपडेट करें"
+  समीक्षा_प्रक्रिया: "विलय से पहले श्रेणी अनुरक्षकों द्वारा परिवर्तनों की समीक्षा की जाती है"
+---
+#पायथन सिंटैक्स चीट शीट
+पायथन 3.x सिंटैक्स और सामान्य पैटर्न के लिए त्वरित संदर्भ।
+---
+
+## मूल सिंटैक्स
+### चर और डेटा प्रकार```python
+# Variable assignment (no declaration needed)
+x = 5
+name = "Alice"
+is_active = True
+price = 19.99
+
+# Type checking
+type(x)           # <class 'int'>
+isinstance(x, int)  # True
+
+# Type conversion
+int("5")          # 5
+str(5)            # "5"
+float(5)          # 5.0
+bool(1)           # True
+```
+
+### तार```python
+s = "Hello, World!"
+
+# Slicing
+s[0]              # 'H'
+s[-1]             # '!'
+s[0:5]            # 'Hello'
+s[7:]             # 'World!'
+s[::-1]           # Reverse string
+
+# Methods
+s.lower()         # 'hello, world!'
+s.upper()         # 'HELLO, WORLD!'
+s.split(",")      # ['Hello', ' World!']
+s.replace("World", "Python")
+s.strip()         # Remove whitespace
+f"Value: {x}"     # f-string formatting
+```
+
+---
+
+## प्रवाह को नियंत्रित करें
+### सशर्त```python
+if x > 10:
+    print("Greater than 10")
+elif x == 10:
+    print("Equals 10")
+else:
+    print("Less than 10")
+
+# Ternary operator
+result = "yes" if condition else "no"
+```
+
+### लूप्स```python
+# For loop
+for i in range(5):      # 0 to 4
+    print(i)
+
+for item in [1, 2, 3]:
+    print(item)
+
+for key, value in dict.items():
+    print(key, value)
+
+# While loop
+while x < 10:
+    x += 1
+
+# Loop control
+break       # Exit loop
+continue    # Skip to next iteration
+else:       # Execute if loop completes without break
+```
+
+---
+
+## डेटा संरचनाएँ
+### सूचियाँ```python
+lst = [1, 2, 3, 4, 5]
+
+lst.append(6)           # Add to end
+lst.insert(0, 0)        # Insert at index
+lst.remove(3)           # Remove by value
+lst.pop()               # Remove and return last
+lst.pop(0)              # Remove and return first
+lst.index(2)            # Find index of value
+lst.count(2)            # Count occurrences
+lst.sort()              # Sort in place
+sorted(lst)             # Return sorted copy
+lst.reverse()           # Reverse in place
+lst[1:4]                # Slice
+[i*2 for i in lst]      # List comprehension
+```
+
+### शब्दकोश```python
+d = {"name": "Alice", "age": 30}
+
+d["age"]                # Access value
+d.get("age", 0)         # Safe access with default
+d.keys()                # Get all keys
+d.values()              # Get all values
+d.items()               # Get key-value pairs
+d.update({"city": "NYC"})
+del d["age"]            # Delete key
+
+{k: v*2 for k, v in d.items()}  # Dict comprehension
+```
+
+### सेट```python
+s = {1, 2, 3, 3, 4}     # {1, 2, 3, 4} - duplicates removed
+
+s.add(5)
+s.remove(3)
+s.discard(10)           # Remove if exists (no error)
+s.union({4, 5, 6})      # Combine sets
+s.intersection({2, 3})  # Common elements
+s.difference({3, 4})    # Elements in s but not other
+```
+
+### टुपल्स```python
+t = (1, 2, 3)
+t[0]                    # Access (immutable)
+x, y, z = t             # Unpacking
+```
+
+---
+
+## कार्य
+### परिभाषा```python
+def greet(name, greeting="Hello"):
+    """Docstring: Describe the function"""
+    return f"{greeting}, {name}!"
+
+# Call with positional and keyword args
+greet("Alice")
+greet("Bob", greeting="Hi")
+
+# Variable arguments
+def sum_all(*args):
+    return sum(args)
+
+def print_all(**kwargs):
+    for k, v in kwargs.items():
+        print(f"{k}: {v}")
+```
+
+### लैम्ब्डा फ़ंक्शंस```python
+square = lambda x: x ** 2
+sorted(lst, key=lambda x: x[1])
+```
+
+---
+
+## कक्षाएं
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name      # Instance variable
+        self.age = age
+    
+    def greet(self):          # Instance method
+        return f"Hi, I'm {self.name}"
+    
+    @classmethod
+    def from_birth_year(cls, name, year):
+        age = 2025 - year
+        return cls(name, age)
+    
+    @staticmethod
+    def is_adult(age):
+        return age >= 18
+
+# Inheritance
+class Employee(Person):
+    def __init__(self, name, age, employee_id):
+        super().__init__(name, age)
+        self.employee_id = employee_id
+```
+
+---
+
+## फ़ाइल I/O
+```python
+# Reading files
+with open("file.txt", "r") as f:
+    content = f.read()        # Read entire file
+    lines = f.readlines()     # Read as list of lines
+
+# Writing files
+with open("file.txt", "w") as f:
+    f.write("Hello\n")
+
+# Append mode
+with open("file.txt", "a") as f:
+    f.write("More content\n")
+```
+
+---
+
+## त्रुटि प्रबंधन
+```python
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+except (TypeError, ValueError):
+    print("Type or value error")
+except Exception as e:
+    print(f"General error: {e}")
+else:
+    print("No errors occurred")
+finally:
+    print("Always executes")
+
+# Raise exceptions
+raise ValueError("Invalid value")
+```
+
+---
+
+## मॉड्यूल और आयात
+```python
+import math
+from datetime import datetime
+from collections import defaultdict, Counter
+import numpy as np
+from mymodule import my_function as mf
+
+# Common standard library modules
+os, sys, json, re, random, itertools, functools, pathlib
+```
+
+---
+
+## सामान्य पैटर्न
+### सूची संचालन```python
+# Filter
+evens = [x for x in lst if x % 2 == 0]
+
+# Map
+squares = [x**2 for x in lst]
+
+# Zip
+list(zip([1, 2], ['a', 'b']))  # [(1, 'a'), (2, 'b')]
+
+# Enumerate
+for i, val in enumerate(lst):
+    print(f"{i}: {val}")
+```
+
+### स्ट्रिंग ऑपरेशन```python
+# Join list of strings
+", ".join(["a", "b", "c"])  # "a, b, c"
+
+# Split string
+"a,b,c".split(",")          # ['a', 'b', 'c']
+
+# Check substring
+"test" in "this is a test"  # True
+
+# Format strings
+"{} {}".format("Hello", "World")
+f"{value:.2f}"              # 2 decimal places
+```
+
+### शब्दकोश संचालन```python
+# Merge dictionaries
+{**d1, **d2}
+d1 | d2                     # Python 3.9+
+
+# Default value
+d.get("key", default_value)
+
+# Iterate
+for k, v in d.items():
+    pass
+```
+
+---
+
+## अंतर्निहित कार्य
+```python
+len(), str(), int(), float(), bool()
+range(), enumerate(), zip()
+map(), filter(), reduce()   # reduce from functools
+sorted(), reversed()
+min(), max(), sum()
+abs(), round(), pow()
+dir(), help(), type()
+isinstance(), issubclass()
+any(), all()
+```
+
+---
+
+## त्वरित सुझाव
+- एकल-पंक्ति टिप्पणियों के लिए`#`का उपयोग करें
+- डॉकस्ट्रिंग्स और मल्टी-लाइन स्ट्रिंग्स के लिए`"""triple quotes"""`का उपयोग करें
+- इंडेंटेशन मायने रखता है (आमतौर पर 4 स्थान)
+- नामकरण परंपराएँ: चर/कार्यों के लिए `snake_case`, कक्षाओं के लिए `PascalCase`
+-`__name__ == "__main__"`यह जांचने के लिए कि स्क्रिप्ट सीधे चलती है या नहीं
+- प्रोजेक्ट आइसोलेशन के लिए`virtualenv`या`venv`का उपयोग करें
+-`pip install package_name`के साथ पैकेज स्थापित करें
+---
+
+*अंतिम अद्यतन: जुलाई 2026 | पायथन 3.x*

@@ -1,0 +1,1091 @@
+---
+# Metadata
+title: "Delphi / Object Pascal"
+description: "Comprehensive reference for the Delphi/Object Pascal programming language covering overview, trade-offs, syntax fundamentals, ecosystem, and when to use it."
+category: "Coding and Technology"
+version: "1.0.0"
+status: "active"
+
+# Contribution
+authors:
+  - name: "AI Model Training Team"
+    email: ""
+    role: "original_author"
+contributors: []
+changelog:
+  - version: "1.0.0"
+    date: "2026-08-05"
+    author: "AI Model Training Team"
+    changes: "Added YAML frontmatter metadata for contributor tracking"
+
+# Review
+created: "2026-08-05"
+last_modified: "2026-08-05"
+review_date: "2027-02-05"
+reviewed_by: "Coding & Technology Knowledge Base Team"
+next_review: "2027-08-05"
+
+# Classification
+tags: [delphi-object-pascal, programming-language, syntax, ecosystem, coding-and-technology]
+difficulty_level: "intermediate"
+prerequisites: []
+estimated_reading_time: "44 min"
+
+# Contribution Guide
+contribution:
+  license: "MIT"
+  feedback_channel: "GitHub Issues"
+  how_to_contribute: "Submit a PR with changes and update the changelog"
+  review_process: "Changes are reviewed by category maintainers before merge"
+---
+# Delphi/Đối tượng Pascal
+Delphi là ngôn ngữ lập trình hướng đối tượng dựa trên Pascal, ban đầu được phát triển bởi Borland (sau này là Embarcadero, nay là Idera). Được phát hành lần đầu tiên vào năm 1995 với tên gọi "Delphi 1", nó được thiết kế để phát triển ứng dụng nhanh chóng (RAD) cho các ứng dụng máy tính để bàn Windows. Ngôn ngữ này có tên chính thức là Object Pascal và Delphi IDE cung cấp trình thiết kế biểu mẫu trực quan, các công cụ cơ sở dữ liệu tích hợp và trình biên dịch mạnh mẽ.
+Delphi là một trong những công cụ phát triển Windows phổ biến nhất vào cuối những năm 1990 và đầu những năm 2000. Mặc dù mức độ phổ biến của nó đã giảm đáng kể nhưng nó vẫn duy trì cơ sở người dùng chuyên dụng, đặc biệt là trong các ứng dụng máy tính để bàn dành cho doanh nghiệp, giao diện người dùng cơ sở dữ liệu và bảo trì hệ thống cũ. Modern Delphi (12/11) hỗ trợ phát triển đa nền tảng cho Windows, macOS, iOS và Android thông qua khung FireMonkey (FMX).
+---
+
+## Tại sao Delphi lại quan trọng
+- **Phát triển ứng dụng nhanh chóng**: Trình thiết kế biểu mẫu trực quan + trình biên dịch gốc giúp việc xây dựng GUI Windows cực kỳ nhanh chóng.
+- **Hiệu suất gốc**: Biên dịch trực tiếp thành mã máy — không cần thời gian chạy hoặc VM.
+- **Kết nối cơ sở dữ liệu**: Các thành phần cơ sở dữ liệu xuất sắc trong lịch sử (dbExpress, FireDAC, ADO).
+- **Cơ sở mã kế thừa**: Nhiều ứng dụng doanh nghiệp vẫn chạy trên Delphi; bảo trì là một kỹ năng thích hợp.
+- **Đa nền tảng (hiện đại)**: Khung FireMonkey nhắm mục tiêu Windows, macOS, iOS và Android từ một cơ sở mã duy nhất.
+## Sự đánh đổi
+| Hạn chế | Chi tiết | Cách giải quyết điển hình |
+|----------|----------|-------------------|
+| **Cộng đồng đang suy giảm** | Nhỏ hơn nhiều so với cộng đồng C#, Java hoặc JavaScript | Diễn đàn hoạt động nhưng nhỏ; hỗ trợ thương mại từ Idera |
+| **Hệ sinh thái hạn chế** | Ít thư viện của bên thứ ba hơn các ngôn ngữ hiện đại | Sử dụng thư viện thành phần VCL/FMX; viết các thành phần tùy chỉnh |
+| **Chủ yếu tập trung vào Windows** | Hỗ trợ đa nền tảng (FMX) chưa hoàn thiện | Sử dụng công nghệ C#, Flutter hoặc web cho đa nền tảng thực sự |
+| **Chi phí cấp phép** | IDE thương mại yêu cầu giấy phép phải trả phí | Nguồn mở thay thế: Pascal / Lazarus miễn phí |
+| **Khó khăn trong tuyển dụng** | Ít nhà phát triển Delphi tham gia thị trường hơn | Duy trì hệ thống hiện có; di chuyển các tính năng mới sang ngăn xếp hiện đại |
+---
+
+##Cơ bản về cú pháp
+```pascal
+program HelloWorld;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  Name: string;
+  Age: Integer;
+  Score: Double;
+
+// Procedure (no return value)
+procedure Greet(const AName: string);
+begin
+  WriteLn('Hello, ' + AName + '!');
+end;
+
+// Function (returns a value)
+function Add(A, B: Integer): Integer;
+begin
+  Result := A + B;
+end;
+
+// Object-oriented programming
+type
+  TAnimal = class
+  private
+    FName: string;
+  public
+    constructor Create(const AName: string);
+    function Speak: string; virtual; abstract;
+    property Name: string read FName;
+  end;
+
+  TDog = class(TAnimal)
+  public
+    function Speak: string; override;
+  end;
+
+constructor TAnimal.Create(const AName: string);
+begin
+  inherited Create;
+  FName := AName;
+end;
+
+function TDog.Speak: string;
+begin
+  Result := Name + ' says woof';
+end;
+
+// Main program
+begin
+  Name := 'Alice';
+  Age := 30;
+  Score := 9.5;
+  
+  Greet(Name);
+  WriteLn('Sum: ', Add(3, 5));
+  
+  ReadLn;  // Wait for Enter
+end.
+```
+
+---
+
+## Cú pháp & Mẫu nâng cao
+### Generics và Bộ sưu tập
+Delphi hỗ trợ generics (kể từ Delphi 2009), cho phép các lớp chứa loại an toàn.
+```pascal
+unit GenericsDemo;
+
+interface
+
+uses
+  System.Generics.Collections,
+  System.Generics.Defaults,
+  SysUtils;
+
+type
+  // Generic pair class
+  TPair<TKey, TValue> = class
+  private
+    FKey: TKey;
+    FValue: TValue;
+  public
+    constructor Create(const AKey: TKey; const AValue: TValue);
+    property Key: TKey read FKey;
+    property Value: TValue read FValue;
+  end;
+
+  // Generic stack implementation
+  TStack<T> = class
+  private
+    FItems: TList<T>;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure Push(const AItem: T);
+    function Pop: T;
+    function Peek: T;
+    function Count: Integer;
+  end;
+
+  // Custom comparer for sorting
+  TEmployeeComparer = class(TComparer<TObject>)
+  public
+    function Compare(const Left, Right: TObject): Integer; override;
+  end;
+
+implementation
+
+{ TStack<T> }
+
+constructor TStack<T>.Create;
+begin
+  inherited Create;
+  FItems := TList<T>.Create;
+end;
+
+destructor TStack<T>.Destroy;
+begin
+  FItems.Free;
+  inherited;
+end;
+
+procedure TStack<T>.Push(const AItem: T);
+begin
+  FItems.Add(AItem);
+end;
+
+function TStack<T>.Pop: T;
+begin
+  if FItems.Count = 0 then
+    raise Exception.Create('Stack is empty');
+  Result := FItems[FItems.Count - 1];
+  FItems.Delete(FItems.Count - 1);
+end;
+
+function TStack<T>.Peek: T;
+begin
+  if FItems.Count = 0 then
+    raise Exception.Create('Stack is empty');
+  Result := FItems[FItems.Count - 1];
+end;
+
+function TStack<T>.Count: Integer;
+begin
+  Result := FItems.Count;
+end;
+
+end.
+```
+
+### Phương thức và cách đóng ẩn danh
+```pascal
+program AnonymousMethods;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils, System.Generics.Collections;
+
+type
+  TIntFunction = reference to function(X: Integer): Integer;
+  TVoidProc = reference to procedure(const AMsg: string);
+
+var
+  Square: TIntFunction;
+  Logger: TVoidProc;
+  Counter: TProc;
+
+begin
+  // Anonymous method — inline function
+  Square := function(X: Integer): Integer
+  begin
+    Result := X * X;
+  end;
+  WriteLn('5 squared = ', Square(5));
+
+  // Closure — captures outer variable
+  // The Count variable persists between calls
+  var Count: Integer := 0;
+  Counter := procedure
+  begin
+    Inc(Count);
+    WriteLn('Call count: ', Count);
+  end;
+  Counter;  // Call count: 1
+  Counter;  // Call count: 2
+  Counter;  // Call count: 3
+
+  // Using anonymous methods with collections
+  var Numbers := TList<Integer>.Create;
+  try
+    Numbers.AddRange([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+    // Filter: keep only even numbers
+    var Evens := TList<Integer>.Create;
+    try
+      Numbers.ForEach(
+        procedure(const N: Integer)
+        begin
+          if N mod 2 = 0 then
+            Evens.Add(N);
+        end
+      );
+      Write('Even numbers: ');
+      for var N in Evens do
+        Write(N, ' ');
+      WriteLn;
+    finally
+      Evens.Free;
+    end;
+  finally
+    Numbers.Free;
+  end;
+
+  ReadLn;
+end.
+```
+
+### Giao diện và chèn phụ thuộc
+```pascal
+unit DIExample;
+
+interface
+
+uses
+  SysUtils;
+
+type
+  // Interface definitions
+  ILogger = interface
+    ['{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}']
+    procedure Log(const AMessage: string);
+  end;
+
+  IRepository = interface
+    ['{B2C3D4E5-F6A7-8901-BCDE-F12345678901}']
+    function FindById(const AId: Integer): string;
+    procedure Save(const AData: string);
+  end;
+
+  // Concrete implementations
+  TFileLogger = class(TInterfacedObject, ILogger)
+  public
+    procedure Log(const AMessage: string);
+  end;
+
+  TConsoleLogger = class(TInterfacedObject, ILogger)
+  public
+    procedure Log(const AMessage: string);
+  end;
+
+  TDatabaseRepository = class(TInterfacedObject, IRepository)
+  private
+    FLogger: ILogger;
+  public
+    constructor Create(const ALogger: ILogger);
+    function FindById(const AId: Integer): string;
+    procedure Save(const AData: string);
+  end;
+
+  // Service class using dependency injection
+  TUserService = class
+  private
+    FRepository: IRepository;
+    FLogger: ILogger;
+  public
+    constructor Create(const ARepo: IRepository; const ALogger: ILogger);
+    procedure CreateUser(const AName: string);
+  end;
+
+implementation
+
+{ TFileLogger }
+procedure TFileLogger.Log(const AMessage: string);
+begin
+  // Write to log file
+  WriteLn('[FILE LOG] ', AMessage);
+end;
+
+{ TConsoleLogger }
+procedure TConsoleLogger.Log(const AMessage: string);
+begin
+  WriteLn('[CONSOLE] ', AMessage);
+end;
+
+{ TDatabaseRepository }
+constructor TDatabaseRepository.Create(const ALogger: ILogger);
+begin
+  inherited Create;
+  FLogger := ALogger;
+end;
+
+function TDatabaseRepository.FindById(const AId: Integer): string;
+begin
+  FLogger.Log('Finding record ' + IntToStr(AId));
+  Result := 'Record_' + IntToStr(AId);
+end;
+
+procedure TDatabaseRepository.Save(const AData: string);
+begin
+  FLogger.Log('Saving: ' + AData);
+end;
+
+{ TUserService }
+constructor TUserService.Create(const ARepo: IRepository; const ALogger: ILogger);
+begin
+  FRepository := ARepo;
+  FLogger := ALogger;
+end;
+
+procedure TUserService.CreateUser(const AName: string);
+begin
+  FLogger.Log('Creating user: ' + AName);
+  FRepository.Save(AName);
+end;
+
+end.
+```
+
+### Các mẫu thành phần VCL
+```pascal
+unit MainForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages,
+  System.SysUtils, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms,
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Grids, Vcl.DBGrids, Data.DB;
+
+type
+  TfrmMain = class(TForm)
+    pnlTop: TPanel;
+    btnSearch: TButton;
+    btnExport: TButton;
+    edtSearch: TEdit;
+    dbgResults: TDBGrid;
+    StatusBar: TStatusBar;
+    procedure FormCreate(Sender: TObject);
+    procedure btnSearchClick(Sender: TObject);
+    procedure btnExportClick(Sender: TObject);
+    procedure dbgResultsDblClick(Sender: TObject);
+  private
+    procedure SetupDataSet;
+    procedure FilterData(const ASearchText: string);
+    procedure ExportToCSV(const AFileName: string);
+    procedure UpdateStatusBar(const AMessage: string);
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMain: TfrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+  SetupDataSet;
+  UpdateStatusBar('Ready');
+end;
+
+procedure TfrmMain.btnSearchClick(Sender: TObject);
+begin
+  if Trim(edtSearch.Text) = '' then
+  begin
+    ShowMessage('Please enter a search term');
+    edtSearch.SetFocus;
+    Exit;
+  end;
+  FilterData(edtSearch.Text);
+  UpdateStatusBar('Search complete');
+end;
+
+procedure TfrmMain.btnExportClick(Sender: TObject);
+begin
+  ExportToCSV('export_' + FormatDateTime('yyyymmdd', Now) + '.csv');
+  UpdateStatusBar('Export complete');
+end;
+
+procedure TfrmMain.dbgResultsDblClick(Sender: TObject);
+begin
+  ShowMessage('Selected: ' + dbgResults.Fields[1].AsString);
+end;
+
+procedure TfrmMain.SetupDataSet;
+begin
+  // Configure dataset and connect to DBGrid
+  StatusBar.SimpleText := 'Initializing...';
+end;
+
+procedure TfrmMain.FilterData(const ASearchText: string);
+begin
+  // Apply filter to dataset
+end;
+
+procedure TfrmMain.ExportToCSV(const AFileName: string);
+begin
+  // Export DBGrid data to CSV file
+end;
+
+procedure TfrmMain.UpdateStatusBar(const AMessage: string);
+begin
+  StatusBar.SimpleText := AMessage;
+end;
+
+end.
+```
+
+---
+
+## Thiết kế kiến ​​trúc & hệ thống
+### Kiến trúc thành phần
+VCL (Thư viện thành phần trực quan) và FMX (FireMonkey) của Delphi được xây dựng trên hệ thống phân cấp thành phần. Mọi phần tử hình ảnh đều kế thừa từ`TComponent`.
+```
+TObject
+└── TPersistent
+    └── TComponent
+        ├── TControl
+        │   ├── TWinControl
+        │   │   ├── TForm          (window/form)
+        │   │   ├── TButton        (push button)
+        │   │   ├── TEdit          (text input)
+        │   │   ├── TPanel         (container panel)
+        │   │   ├── TDBGrid        (database grid)
+        │   │   └── TListBox       (list box)
+        │   └── TGraphicControl
+        │       ├── TLabel         (text label)
+        │       ├── TImage         (image display)
+        │       └── TShape         (geometric shapes)
+        ├── TDataSet               (database dataset base)
+        │   ├── TFDQuery           (FireDAC query)
+        │   ├── TClientDataSet     (in-memory dataset)
+        │   └── TADODataSet        (ADO database)
+        └── TDataModule            (non-visual container)
+```
+
+### Cấu trúc thư mục dự án điển hình
+```
+delphi-project/
+├── src/
+│   ├── Project.dpr              * Main project file
+│   ├── MainForm.pas             * Main form unit
+│   ├── MainForm.dfm             * Main form definition (binary)
+│   ├── MainForm.fmx             * FMX form definition (text XML)
+│   ├── DataModule.pas           * Data access module
+│   ├── BusinessLogic.pas        * Business logic unit
+│   └── Utils.pas                * Utility functions
+├── packages/
+│   ├── CustomComponents.bpl     * Component package
+│   └── CustomComponents.dpk     * Package source
+├── lib/                         * Compiled units
+├── dcu/                         * Delphi compiled units
+├── resources/
+│   ├── images/                  * Application images
+│   └── icons/                   * Application icons
+├── Project.dproj                * Project configuration (XML)
+└── README.md
+```
+
+### Tệp dự án .dproj
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{12345678-ABCD-EF01-2345-6789ABCDEF01}</ProjectGuid>
+        <MainSource>Project.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform>Win32</Platform>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base'">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug'">
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release'">
+        <DCC_Optimize>true</DCC_Optimize>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    </PropertyGroup>
+</Project>
+```
+
+---
+
+## Cấu hình dự án & xây dựng hệ thống
+### Tham chiếu chỉ thị của trình biên dịch
+| Chỉ thị | Mục đích | Ví dụ |
+|----------||----------|----------|
+|  __BẢO VỆ_0__ | Ứng dụng bảng điều khiển |  __BẢO VỆ_1__ |
+|  __BẢO VỆ_2__ | Ứng dụng GUI (mặc định) |  __BẢO VỆ_3__ |
+|  __BẢO VỆ_4__ | Xác định ký hiệu có điều kiện |  __BẢO VỆ_5__ |
+|  __BẢO VỆ_6__ | Biên dịch có điều kiện |  __BẢO VỆ_7__ |
+|  __BẢO VỆ_8__ | Bao gồm tài nguyên biểu mẫu |  __BẢO VỆ_9__ |
+|  __BẢO VỆ_10__ | Ngăn chặn cảnh báo |  __BẢO VỆ_11__ |
+|  __BẢO VỆ_12__ | Ngăn chặn gợi ý |  __BẢO VỆ_13__ |
+|  __BẢO VỆ_14__ | Bật trình tối ưu hóa |  __BẢO VỆ_15__ |
+|  __BẢO VỆ_16__ | Bật kiểm tra phạm vi chuỗi |  __BẢO VỆ_17__ |
+### Xây dựng từ dòng lệnh
+```batch
+REM 32-bit Windows build (DCC32)
+dcc32 Project.dpr -NSVcl;System;Winapi -R resources -E bin\win32
+
+REM 64-bit Windows build (DCC64)
+dcc64 Project.dpr -NSVcl;System;Winapi -R resources -E bin\win64
+
+REM Using MSBuild (modern approach)
+msbuild Project.dproj /p:Config=Release /p:Platform=Win32
+
+REM Free Pascal / Lazarus (cross-platform, open source)
+fpc -Mdelphi -dLCL -Fu"lib/units" src/Project.lpr
+```
+
+### Cấu hình gói (.dpk)
+```pascal
+package CustomComponents;
+
+{$R *.res}
+{$IFDEF RELEASE}
+  {$OPTIMIZATION ON}
+  {$DEBUG OFF}
+{$ENDIF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  CustomButton in 'src\CustomButton.pas',
+  CustomGrid in 'src\CustomGrid.pas',
+  CustomChart in 'src\CustomChart.pas';
+
+end.
+```
+
+---
+
+## Kiểm tra & gỡ lỗi
+### Tính năng của trình gỡ lỗi IDE
+IDE của Delphi bao gồm một trình gỡ lỗi tích hợp đầy đủ tính năng.
+| Tính năng | Mô tả |
+|----------|-------------|
+| **Điểm dừng** | Đặt trên bất kỳ dòng thực thi nào; điểm dừng có điều kiện được hỗ trợ |
+| **Cửa sổ quan sát** | Theo dõi các giá trị biến trong thời gian thực |
+| **Ngăn xếp cuộc gọi** | Xem chuỗi cuộc gọi đầy đủ với các biến cục bộ |
+| **Cửa sổ CPU** | Xem tập hợp được tạo cùng với mã nguồn |
+| **Chế độ xem bộ nhớ** | Kiểm tra bộ nhớ thô tại bất kỳ địa chỉ nào |
+| **Điểm dừng sự kiện** | Phá vỡ các ngoại lệ, tải DLL, sự kiện luồng |
+| **Gỡ lỗi từ xa** | Gỡ lỗi ứng dụng chạy trên máy từ xa |
+| **Trực quan hóa dữ liệu** | Trình hiển thị tùy chỉnh cho tập dữ liệu, chuỗi, bộ sưu tập |
+### Khung kiểm tra DUnit
+```pascal
+unit TestBusinessLogic;
+
+interface
+
+uses
+  TestFramework, SysUtils, BusinessLogic;
+
+type
+  TestTPriceCalculator = class(TTestCase)
+  private
+    FCalc: TPriceCalculator;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+    procedure TestBasePrice;
+    procedure TestDiscountCalculation;
+    procedure TestTaxCalculation;
+    procedure TestFinalPrice;
+    procedure TestNegativePriceRaisesException;
+    procedure TestZeroQuantity;
+  end;
+
+implementation
+
+procedure TestTPriceCalculator.SetUp;
+begin
+  FCalc := TPriceCalculator.Create;
+end;
+
+procedure TestTPriceCalculator.TearDown;
+begin
+  FCalc.Free;
+end;
+
+procedure TestTPriceCalculator.TestBasePrice;
+begin
+  CheckEquals(100.00, FCalc.CalculateBasePrice(10, 10.00),
+    'Base price should be quantity * unit price');
+end;
+
+procedure TestTPriceCalculator.TestDiscountCalculation;
+begin
+  CheckEquals(90.00, FCalc.ApplyDiscount(100.00, 10),
+    '10% discount on 100 should be 90');
+  CheckEquals(100.00, FCalc.ApplyDiscount(100.00, 0),
+    '0% discount should not change price');
+end;
+
+procedure TestTPriceCalculator.TestTaxCalculation;
+begin
+  CheckEquals(122.00, FCalc.AddTax(100.00, 22),
+    '22% tax on 100 should be 122');
+end;
+
+procedure TestTPriceCalculator.TestFinalPrice;
+begin
+  CheckEquals(109.80,
+    FCalc.CalculateFinalPrice(10, 10.00, 10, 22),
+    'Final price: 100 base, 10% discount, 22% tax');
+end;
+
+procedure TestTPriceCalculator.TestNegativePriceRaisesException;
+begin
+  ExpectedException := EInvalidArgument;
+  FCalc.CalculateBasePrice(-1, 10.00);
+end;
+
+procedure TestTPriceCalculator.TestZeroQuantity;
+begin
+  CheckEquals(0.00, FCalc.CalculateBasePrice(0, 10.00),
+    'Zero quantity should give zero price');
+end;
+
+initialization
+  RegisterTest(TestTPriceCalculator.Suite);
+
+end.
+```
+
+### Quy trình gỡ lỗi
+```
+1. Set breakpoints at suspicious code locations
+2. Run the application (F9)
+3. When breakpoint hits:
+   a. Inspect variables in the Watch window
+   b. Step through code (F7 = into, F8 = over)
+   c. Check the Call Stack window for execution path
+   d. Use Evaluate/Modify (Ctrl+F7) to test expressions
+4. For memory issues:
+   a. Enable ReportMemoryLeaksOnShutdown
+   b. Use FastMM full debug mode
+   c. Check for dangling pointers after Free
+```
+
+---
+
+## Khả năng tương tác
+### Tích hợp COM/ActiveX
+```pascal
+unit COMExample;
+
+interface
+
+uses
+  Winapi.Windows, System.Win.ComObj, ActiveX;
+
+// Create and use a COM object
+procedure UseExcelCOM;
+
+// Implement a COM server
+type
+  TMyCOMObject = class(TAutoObject, IMyCOMInterface)
+  protected
+    function Get_Version: string; safecall;
+    procedure ProcessData(const AInput: string); safecall;
+  end;
+
+implementation
+
+uses
+  ComServ;
+
+procedure UseExcelCOM;
+var
+  ExcelApp: OleVariant;
+  Workbook: OleVariant;
+begin
+  ExcelApp := CreateOleObject('Excel.Application');
+  try
+    ExcelApp.Visible := True;
+    Workbook := ExcelApp.Workbooks.Add;
+    Workbook.Sheets[1].Cells[1, 1] := 'Hello from Delphi';
+    Workbook.Sheets[1].Cells[1, 2] := 42;
+    Workbook.SaveAs('C:\temp\delphi_output.xlsx');
+  finally
+    ExcelApp.Quit;
+  end;
+end;
+
+end.
+```
+
+### Gọi các DLL C/C++
+```pascal
+unit DLLInterop;
+
+interface
+
+uses
+  Winapi.Windows, SysUtils;
+
+// Import functions from a C DLL
+function AddNumbers(A, B: Integer): Integer; cdecl;
+  external 'mathlib.dll' name 'add_numbers';
+
+function ProcessString(Input: PAnsiChar; Output: PAnsiChar;
+  MaxLen: Integer): Integer; cdecl;
+  external 'stringlib.dll' name 'process_string';
+
+// Import with dynamic loading
+type
+  TEncryptFunc = function(const AData: PAnsiChar;
+    AKey: Integer): PAnsiChar; cdecl;
+
+var
+  EncryptData: TEncryptFunc;
+
+procedure LoadCryptoLibrary;
+procedure UnloadCryptoLibrary;
+
+implementation
+
+var
+  CryptoLib: HMODULE;
+
+procedure LoadCryptoLibrary;
+begin
+  CryptoLib := LoadLibrary('crypto.dll');
+  if CryptoLib = 0 then
+    raise Exception.Create('Failed to load crypto.dll');
+  
+  @EncryptData := GetProcAddress(CryptoLib, 'encrypt_data');
+  if not Assigned(EncryptData) then
+    raise Exception.Create('encrypt_data not found');
+end;
+
+procedure UnloadCryptoLibrary;
+begin
+  if CryptoLib <> 0 then
+  begin
+    FreeLibrary(CryptoLib);
+    CryptoLib := 0;
+  end;
+end;
+
+end.
+```
+
+### Khả năng tương tác .NET
+```pascal
+// Delphi Prism / Oxygene can interop with .NET assemblies
+// Modern approach: use Java2OP for Android, or WinRT for Windows
+
+// WinRT / Windows Runtime interop
+uses
+  Winapi.WinRT, Winapi.UI.Notifications;
+
+procedure ShowToastNotification(const AMessage: string);
+var
+  ToastXML: string;
+  ToastDoc: IXmlDocument;
+  Toast: IToastNotification;
+  Notifier: IToastNotifier;
+begin
+  ToastXML := '<toast><visual><binding template="ToastText01">' +
+    '<text id="1">' + AMessage + '</text>' +
+    '</binding></visual></toast>';
+  
+  ToastDoc := TXmlDocument.Create as IXmlDocument;
+  ToastDoc.LoadXml(ToastXML);
+  
+  Toast := TToastNotification.Create(ToastDoc) as IToastNotification;
+  Notifier := TToastNotificationManager.CreateToastNotifier('MyApp');
+  Notifier.Show(Toast);
+end;
+```
+
+---
+
+## Mẫu thiết kế
+### Mẫu 1: Singleton (An toàn cho luồng)
+```pascal
+type
+  TAppConfig = class
+  private
+    class var FInstance: TAppConfig;
+    class var FLock: TObject;
+    FSettings: TStringList;
+    constructor CreatePrivate;
+  public
+    class function GetInstance: TAppConfig; static;
+    class procedure Release; static;
+    function GetSetting(const AKey: string): string;
+    procedure SetSetting(const AKey, AValue: string);
+  end;
+
+class constructor TAppConfig.Create;
+begin
+  FLock := TObject.Create;
+end;
+
+constructor TAppConfig.CreatePrivate;
+begin
+  inherited Create;
+  FSettings := TStringList.Create;
+  FSettings.LoadFromFile('config.ini');
+end;
+
+class function TAppConfig.GetInstance: TAppConfig;
+begin
+  TMonitor.Enter(FLock);
+  try
+    if FInstance = nil then
+      FInstance := TAppConfig.CreatePrivate;
+    Result := FInstance;
+  finally
+    TMonitor.Exit(FLock);
+  end;
+end;
+```
+
+### Mẫu 2: Người quan sát (Theo hướng sự kiện)
+```pascal
+type
+  TDataChangeEvent = procedure(Sender: TObject; const AFieldName: string;
+    const AOldValue, ANewValue: string) of object;
+
+  TDataStore = class
+  private
+    FData: TDictionary<string, string>;
+    FOnChange: TDataChangeEvent;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure SetValue(const AKey, AValue: string);
+    function GetValue(const AKey: string): string;
+    property OnChange: TDataChangeEvent read FOnChange write FOnChange;
+  end;
+
+procedure TDataStore.SetValue(const AKey, AValue: string);
+var
+  OldValue: string;
+begin
+  if FData.TryGetValue(AKey, OldValue) then
+  begin
+    if OldValue <> AValue then
+    begin
+      FData[AKey] := AValue;
+      if Assigned(FOnChange) then
+        FOnChange(Self, AKey, OldValue, AValue);
+    end;
+  end
+  else
+  begin
+    FData.Add(AKey, AValue);
+    if Assigned(FOnChange) then
+      FOnChange(Self, AKey, '', AValue);
+  end;
+end;
+```
+
+### Mẫu 3: Factory Method
+```pascal
+type
+  // Base report class
+  TReport = class
+  public
+    procedure Generate; virtual; abstract;
+    class function GetReportType: string; virtual; abstract;
+  end;
+
+  TReportClass = class of TReport;
+
+  // Concrete reports
+  TPDFReport = class(TReport)
+  public
+    procedure Generate; override;
+    class function GetReportType: string; override;
+  end;
+
+  TCSVReport = class(TReport)
+  public
+    procedure Generate; override;
+    class function GetReportType: string; override;
+  end;
+
+  // Factory
+  TReportFactory = class
+  private
+    class var FRegistry: TDictionary<string, TReportClass>;
+  public
+    class constructor Create;
+    class function CreateReport(const AType: string): TReport;
+    class procedure RegisterReport(const AType: string;
+      AClass: TReportClass);
+  end;
+
+class constructor TReportFactory.Create;
+begin
+  FRegistry := TDictionary<string, TReportClass>.Create;
+  RegisterReport('PDF', TPDFReport);
+  RegisterReport('CSV', TCSVReport);
+end;
+
+class function TReportFactory.CreateReport(const AType: string): TReport;
+var
+  ReportClass: TReportClass;
+begin
+  if not FRegistry.TryGetValue(AType, ReportClass) then
+    raise Exception.CreateFmt('Unknown report type: %s', [AType]);
+  Result := ReportClass.Create;
+end;
+```
+
+---
+
+## Hiệu suất & Tối ưu hóa
+### Quản lý bộ nhớ
+```pascal
+// Proper memory management pattern
+procedure ProcessLargeData;
+var
+  Buffer: TBytes;
+  Stream: TMemoryStream;
+begin
+  // Use TBytes (managed array) — automatically freed
+  SetLength(Buffer, 1024 * 1024);  // 1MB
+  try
+    // Process buffer...
+    FillChar(Buffer[0], Length(Buffer), 0);
+  finally
+    // Buffer is automatically freed when it goes out of scope
+  end;
+
+  // Use try-finally for unmanaged objects
+  Stream := TMemoryStream.Create;
+  try
+    Stream.WriteBuffer(Buffer[0], Length(Buffer));
+    Stream.SaveToFile('output.bin');
+  finally
+    Stream.Free;  // Always free in finally block
+  end;
+end;
+
+// Use interfaces for automatic reference counting
+procedure ProcessWithInterfaces;
+var
+  Processor: IDataProcessor;
+begin
+  Processor := TDataProcessor.Create;
+  // No Free needed — reference counting handles cleanup
+  Processor.Execute;
+end;
+```
+
+### Mẹo tối ưu hóa VCL/FMX
+| Kỹ thuật | Tác động | Mô tả |
+|----------|----------|-------------|
+| **Bắt đầuCập nhật/Kết thúcCập nhật** | Cao | Gói danh sách/cập nhật lưới để ngăn chặn việc sơn lại |
+| **Đệm đôi** | Trung bình | Đặt`DoubleBuffered := True`để giảm nhấp nháy |
+| **Danh sách ảo** | Cao | Sử dụng`TVirtualStringTree`cho tập dữ liệu lớn |
+| **Thực tập chuỗi** | Trung bình | Tái sử dụng các hằng chuỗi; tránh nối lặp lại |
+| **Tổng hợp đối tượng** | Trung bình | Tái sử dụng các đối tượng được tạo/hủy thường xuyên |
+| **Tải lười biếng** | Cao | Chỉ tải dữ liệu/biểu mẫu khi cần |
+| **Tối ưu hóa trình biên dịch** | Trung bình | Bật`{$O+}`cho bản phát hành |
+---
+
+## Triển khai & Sử dụng trong Thế giới Thực
+### Tùy chọn triển khai
+```
+Delphi Deployment Targets:
+├── Windows (VCL/FMX)
+│   ├── Standalone .exe (no dependencies)
+│   ├── Installer (Inno Setup, InstallShield)
+│   └── MSIX / Windows Store package
+├── macOS (FMX)
+│   └── .app bundle
+├── iOS (FMX)
+│   └── IPA via Xcode toolchain
+├── Android (FMX)
+│   └── APK/AAB via Android SDK
+└── Linux (FPC/Lazarus only)
+    └── ELF binary
+```
+
+### Các trường hợp sử dụng trong thế giới thực
+| Công nghiệp | Ứng dụng | Tại sao Delphi |
+|----------|-------------|----------|
+| **Tài chính** | Nền tảng giao dịch, bảng điều khiển ngân hàng | GUI gốc nhanh, kết nối cơ sở dữ liệu |
+| **Chăm sóc sức khỏe** | Hình ảnh y tế, quản lý bệnh nhân | Các thành phần VCL, hiệu suất gốc |
+| **Sản xuất** | hệ thống SCADA, điều khiển công nghiệp | Truy cập phần cứng trực tiếp, phản hồi theo thời gian thực |
+| **Chính phủ** | Công cụ quản trị nội bộ | Tính liên tục của hệ thống kế thừa |
+| **Viễn thông** | Bảng điều khiển giám sát mạng | Trực quan hóa dữ liệu nhanh |
+| **Giáo dục** | Phần mềm giáo dục, công cụ học tập điện tử | Phát triển nhanh, hỗ trợ đa phương tiện |
+---
+
+## Khi nào nên sử dụng Delphi
+| Kịch bản | Tại sao Delphi | Thay thế tốt hơn |
+|----------|-------------|-------------------|
+| Bảo trì Delphi kế thừa | Cơ sở mã hiện có | — |
+| Ứng dụng máy tính để bàn Windows (nhanh) | VCL trưởng thành và nhanh chóng | C# (WPF/WinForms) |
+| Giao diện cơ sở dữ liệu | Thành phần dữ liệu xuất sắc | C#, Java |
+| Máy tính để bàn đa nền tảng (ngách) | FireMonkey tồn tại | C#, Rung, Điện tử |
+| Phát triển GUI Windows mới | Có thể nhưng cộng đồng đang bị thu hẹp | C# (WPF/WinUI 3) |
+| Phát triển web | Không phù hợp | JavaScript, Python, C# |
+| Ứng dụng di động | Có thể qua FMX nhưng bị hạn chế | Swift, Kotlin, Rung |
+---
+
+## Bản tóm tắt
+Delphi là ngôn ngữ quan trọng trong lịch sử, đi tiên phong trong việc phát triển ứng dụng nhanh chóng cho Windows. Delphi hiện đại vẫn có khả năng chạy các ứng dụng Windows gốc và giao diện cơ sở dữ liệu, nhưng cộng đồng và hệ sinh thái của nó đã bị thu hẹp đáng kể. Để duy trì cơ sở mã Delphi hiện có, nó vẫn cần thiết. Đối với các dự án mới, hầu hết các nhà phát triển đã chuyển sang C#, công nghệ web hoặc khung đa nền tảng. Dự án Pascal / Lazarus miễn phí mã nguồn mở cung cấp giải pháp thay thế miễn phí cho những ai quan tâm đến ngôn ngữ Object Pascal.
