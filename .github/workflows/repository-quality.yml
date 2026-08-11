@@ -19,3 +19,6 @@ jobs:
 
       - name: Validate repository structure and examples
         run: python tools/validate_repo.py
+
+      - name: Validate agent mode metadata
+        run: python tools/validate_agent_modes.py
