@@ -1,6 +1,6 @@
 # Changes for V2
 
-This file is an integration checklist for the next version of AI-Model-Training-Essentials. It summarizes the reliability work completed on the `agent/reliability-pass-v1` branch and is intentionally written so it can be copied into the V2 VS Code project.
+This file is the integration checklist for the next version of AI-Model-Training-Essentials. It summarizes the reliability work completed on `agent/reliability-pass-v1` and is written so it can be copied into the V2 VS Code project.
 
 ## 1. Repository validation
 
@@ -13,8 +13,8 @@ This file is an integration checklist for the next version of AI-Model-Training-
   - broken relative Markdown-link detection
   - Python syntax compilation checks
 
-### Add to V2
-Copy the validator into `tools/` and extend it as the V2 schema develops. The current validator is deliberately lightweight; it should eventually also validate project metadata, translation parity, protected dates, dependency references, and runnable examples.
+### V2 recommendation
+Extend the validator with project metadata, translation parity, protected dates, dependency references, runnable examples, and schema validation.
 
 ## 2. Continuous integration
 
@@ -24,13 +24,7 @@ Copy the validator into `tools/` and extend it as the V2 schema develops. The cu
 - Uses Python 3.11.
 
 ### V2 recommendation
-Expand CI into separate jobs:
-1. documentation/metadata validation
-2. Python syntax validation
-3. runnable-example tests
-4. link checking
-5. dependency/security scanning
-6. translation parity checks
+Expand CI into separate jobs for documentation/metadata validation, Python syntax, runnable examples, links, dependency/security scanning, and translation parity.
 
 ## 3. Dependency cleanup
 
@@ -38,11 +32,11 @@ Expand CI into separate jobs:
 - `requirements/base.txt`
 
 ### Changed
-- Root `requirements.txt` is now explicitly marked as a legacy compatibility file.
-- Broad dependencies were given upper bounds to reduce accidental major-version drift.
+- Root `requirements.txt` is explicitly marked as a legacy compatibility environment.
+- Broad dependencies have upper bounds to reduce accidental major-version drift.
 
 ### V2 recommendation
-Prefer a project-level `pyproject.toml`, lockfile, focused optional dependency groups, and per-project environments instead of one giant environment.
+Prefer `pyproject.toml`, a lockfile, focused optional dependency groups, and per-project environments rather than one giant environment.
 
 Suggested structure:
 
@@ -65,7 +59,7 @@ The first pass fixed scheduler signatures, gradient accumulation, Dropout/BatchN
 
 The first pass modernized FGSM/PGD gradient handling, adversarial training, SlowAPI, Pydantic v2, key handling, model artifact guidance, audit timestamps, and agent-specific security controls.
 
-## 6. Second-pass fixes
+## 6. Deployment/RAG fixes
 
 ### `wiki/deployment.md`
 - Fixed the Docker health check by installing `curl` and documented alternatives.
@@ -80,28 +74,57 @@ The first pass modernized FGSM/PGD gradient handling, adversarial training, Slow
 - Added warnings around credentials and provider SDK version drift.
 
 ### `guides/projects/rag_simple/main.py`
-- Corrected the `all-MiniLM-L6-v2` embedding documentation: the code now reports the actual dimension instead of claiming 768.
+- Corrected the `all-MiniLM-L6-v2` embedding documentation: the model produces 384-dimensional embeddings, not 768.
 - Normalized embeddings before cosine similarity.
 - Added empty-dataset and `top_k` validation.
 - Made multi-document context handling explicit.
 - Added a grounded-answer instruction telling the generator to admit when the context does not contain the answer.
 - Removed misleading claims about production readiness/runtime.
 
-## 7. Remaining high-priority audit work
+## 7. Transfer-learning fixes
+
+### `guides/projects/transfer_learning/main.py`
+- Added an explicit train/validation/test split.
+- Prevented the test set from being used for checkpoint/model selection.
+- Corrected the trainable-parameter count for the ResNet18 10-class head: 5,130 parameters.
+- Kept the pretrained backbone frozen for the feature-extraction example.
+- Added validation-based best-checkpoint selection.
+- Evaluated the held-out test set only after model selection.
+- Added reproducibility seeds.
+- Improved checkpoint metadata so the saved model can be reconstructed correctly.
+- Removed unsupported fixed claims such as guaranteed 85–90% accuracy, 5–10x speedup, and exact training times.
+- Clarified that fine-tuning requires a separate strategy for selectively unfreezing pretrained layers.
+
+## 8. Monitoring fixes
+
+### `wiki/monitoring.md`
+- Replaced universal GPU utilization thresholds with baseline/SLO-based guidance.
+- Separated service health, model quality, data drift, and concept/performance drift.
+- Replaced naive `datetime.utcnow()` usage with timezone-aware UTC timestamps.
+- Removed automatic logging of full request bodies and added privacy/retention guidance.
+- Fixed categorical drift guidance so category counts share the same category universe.
+- Made PSI robust to duplicate quantile edges and empty/constant features.
+- Clarified that statistical significance does not equal practical significance.
+- Added actual Prometheus `Counter`/`Histogram` instrumentation instead of referring to metrics that were never defined.
+- Added safer low-traffic handling to the error-rate alert expression.
+- Fixed the custom alert example's missing datetime import.
+- Removed the brittle hand-written Grafana JSON example and replaced it with version-aware guidance.
+- Removed automatic retraining as the default response to drift detection.
+
+## 9. Remaining high-priority audit work
 
 - CNN/ML examples need train/validation/test separation where hyperparameters are tuned.
-- Transfer-learning example has an incorrect trainable-parameter count and needs explicit BatchNorm/frozen-backbone behavior.
 - Decision-boundary plotting needs consistent scaled/raw coordinate handling.
 - Text-generation examples need correct `do_sample`/temperature semantics.
 - Remaining cloud examples need version/date verification and current-provider API validation.
-- Monitoring examples need real metric instrumentation rather than isolated metric names.
-- RAG examples need retrieval/generation evaluation, chunking guidance, and a clear grounded-answer policy.
+- RAG examples need stronger retrieval/generation evaluation, chunking guidance, and benchmarkable groundedness tests.
 - Agent-mode frontmatter needs a machine-readable schema and tool registry.
 - Translation files need source-revision metadata, review status, and parity checks.
 - Knowledge-base date fields need protection from content-processing scripts.
 - Add runnable-example CI where examples have deterministic/lightweight test paths.
+- Audit remaining project scripts for dependency isolation and executable correctness.
 
-## 8. Knowledge-base date incident
+## 10. Knowledge-base date incident
 
 A prior content-processing script accidentally changed dates to 2026 in parts of the knowledge base. Treat this as a data-pipeline bug rather than manually fixing individual files forever.
 
@@ -118,7 +141,7 @@ Protect these fields from translation/transformation scripts:
 
 Add a regression test that compares protected metadata before and after transformation.
 
-## 9. Recommended V2 validation gates
+## 11. Recommended V2 validation gates
 
 Before merging future content:
 
@@ -135,9 +158,11 @@ Before merging future content:
 [ ] Translation maps to the current English source revision
 [ ] Protected metadata is unchanged by automation
 [ ] Security examples are reviewed separately
+[ ] Test data is never used for hyperparameter/model selection
+[ ] Monitoring alerts reference real exported metrics
 ```
 
-## 10. Important philosophy for V2
+## 12. Important philosophy for V2
 
 Do not sacrifice the repository's breadth. The main improvement needed is **verification**, not a reduction in ambition.
 
