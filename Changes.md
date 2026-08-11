@@ -10,11 +10,16 @@ This file is the integration checklist for the next version of AI-Model-Training
   - UTF-8 BOM detection
   - suspicious mojibake detection
   - YAML frontmatter sanity checks for `skills/` and `agent_modes/`
+  - full YAML parsing for agent-mode metadata
+  - required agent-mode metadata fields and types
+  - filename/name consistency checks
+  - handoff structure/type checks
+  - agent-mode reference checks against files actually present in `agent_modes/`
   - broken relative Markdown-link detection
   - Python syntax compilation checks
 
 ### V2 recommendation
-Extend the validator with project metadata, translation parity, protected dates, dependency references, runnable examples, and schema validation.
+Extend the validator with project metadata, translation parity, protected dates, dependency references, runnable examples, and schema validation for other machine-readable content.
 
 ## 2. Continuous integration
 
@@ -111,20 +116,40 @@ The first pass modernized FGSM/PGD gradient handling, adversarial training, Slow
 - Removed the brittle hand-written Grafana JSON example and replaced it with version-aware guidance.
 - Removed automatic retraining as the default response to drift detection.
 
-## 9. Remaining high-priority audit work
+## 9. Agent-mode validation
+
+### `tools/validate_repo.py`
+Agent modes now have an explicit machine-checkable metadata contract:
+- `name`
+- `description`
+- `argument-hint`
+- `tools`
+- `agents`
+- `handoffs`
+
+The validator checks that:
+- YAML parses successfully.
+- Required fields exist and have the expected basic types.
+- Mode filename matches the declared mode name.
+- Tool and agent entries are non-empty strings.
+- Handoffs have the expected fields and types.
+- Referenced agents actually exist as `agent_modes/*.md` files.
+
+This is deliberately a validation layer rather than a runtime agent framework; V2 can later promote the metadata into a formal JSON Schema/tool registry.
+
+## 10. Remaining high-priority audit work
 
 - CNN/ML examples need train/validation/test separation where hyperparameters are tuned.
 - Decision-boundary plotting needs consistent scaled/raw coordinate handling.
 - Text-generation examples need correct `do_sample`/temperature semantics.
 - Remaining cloud examples need version/date verification and current-provider API validation.
 - RAG examples need stronger retrieval/generation evaluation, chunking guidance, and benchmarkable groundedness tests.
-- Agent-mode frontmatter needs a machine-readable schema and tool registry.
 - Translation files need source-revision metadata, review status, and parity checks.
 - Knowledge-base date fields need protection from content-processing scripts.
 - Add runnable-example CI where examples have deterministic/lightweight test paths.
 - Audit remaining project scripts for dependency isolation and executable correctness.
 
-## 10. Knowledge-base date incident
+## 11. Knowledge-base date incident
 
 A prior content-processing script accidentally changed dates to 2026 in parts of the knowledge base. Treat this as a data-pipeline bug rather than manually fixing individual files forever.
 
@@ -141,7 +166,7 @@ Protect these fields from translation/transformation scripts:
 
 Add a regression test that compares protected metadata before and after transformation.
 
-## 11. Recommended V2 validation gates
+## 12. Recommended V2 validation gates
 
 Before merging future content:
 
@@ -162,7 +187,7 @@ Before merging future content:
 [ ] Monitoring alerts reference real exported metrics
 ```
 
-## 12. Important philosophy for V2
+## 13. Important philosophy for V2
 
 Do not sacrifice the repository's breadth. The main improvement needed is **verification**, not a reduction in ambition.
 
