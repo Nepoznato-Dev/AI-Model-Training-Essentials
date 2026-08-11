@@ -137,19 +137,48 @@ The validator checks that:
 
 This is deliberately a validation layer rather than a runtime agent framework; V2 can later promote the metadata into a formal JSON Schema/tool registry.
 
-## 10. Remaining high-priority audit work
+## 10. Text-generation fixes
 
-- CNN/ML examples need train/validation/test separation where hyperparameters are tuned.
-- Decision-boundary plotting needs consistent scaled/raw coordinate handling.
-- Text-generation examples need correct `do_sample`/temperature semantics.
+### `guides/projects/text_generation/main.py`
+- Corrected the pipeline device argument to use the documented integer device convention (`0` for the first CUDA GPU, `-1` for CPU).
+- Corrected `temperature`/`top_p` examples so they explicitly enable sampling.
+- Clarified that temperature/top-p are sampling controls and are not meaningful as such when `do_sample=False`.
+- Corrected the tokenization demonstration so token IDs and token strings use the same special-token policy.
+- Renamed `max_words` to `max_new_tokens` because the setting counts tokens, not words.
+- Added input validation to the reusable generation function.
+- Improved repetition and generation-parameter documentation.
+
+### `guides/projects/text_generation/README.md`
+- Removed unsupported universal generation-time claims.
+- Corrected terminology around tokens, sampling, temperature, and top-p.
+- Added explicit notes about model download/cache requirements.
+- Clarified that GPT-2 output is not guaranteed to be factual or coherent.
+- Removed misleading quality guarantees and reframed the project as a learning example.
+
+## 11. Neural-network project fixes
+
+### `guides/projects/neural_network_basics/main.py`
+- Added a real validation split instead of selecting/model-tuning entirely against the test set.
+- Added stratification to the train/validation/test split.
+- Selects the best checkpoint using validation loss.
+- Uses the held-out test set only for final evaluation.
+- Kept the scaler fitted on training data only.
+- Fixed the decision-boundary visualization so inference happens on scaled coordinates while the plotted axes remain in the original feature space.
+- Added explicit raw-coordinate train/validation/test visualization.
+- Updated the model-save/load example to use modern PyTorch `weights_only=True` loading guidance.
+
+## 12. Remaining high-priority audit work
+
+- Remaining CNN/ML examples need train/validation/test separation where hyperparameters are tuned.
 - Remaining cloud examples need version/date verification and current-provider API validation.
 - RAG examples need stronger retrieval/generation evaluation, chunking guidance, and benchmarkable groundedness tests.
 - Translation files need source-revision metadata, review status, and parity checks.
 - Knowledge-base date fields need protection from content-processing scripts.
 - Add runnable-example CI where examples have deterministic/lightweight test paths.
 - Audit remaining project scripts for dependency isolation and executable correctness.
+- Review all time-sensitive knowledge-base claims for source/revision metadata.
 
-## 11. Knowledge-base date incident
+## 13. Knowledge-base date incident
 
 A prior content-processing script accidentally changed dates to 2026 in parts of the knowledge base. Treat this as a data-pipeline bug rather than manually fixing individual files forever.
 
@@ -166,7 +195,7 @@ Protect these fields from translation/transformation scripts:
 
 Add a regression test that compares protected metadata before and after transformation.
 
-## 12. Recommended V2 validation gates
+## 14. Recommended V2 validation gates
 
 Before merging future content:
 
@@ -187,7 +216,7 @@ Before merging future content:
 [ ] Monitoring alerts reference real exported metrics
 ```
 
-## 13. Important philosophy for V2
+## 15. Important philosophy for V2
 
 Do not sacrifice the repository's breadth. The main improvement needed is **verification**, not a reduction in ambition.
 
