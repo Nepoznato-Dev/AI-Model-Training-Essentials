@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-"""Validate multilingual knowledge-base structure and protected year metadata.
-
-This intentionally checks conservative invariants rather than trying to prove
-that translations are semantically identical. In particular, four-digit years
-found in a translated file must match the English source at the same relative
-path. This catches accidental bulk date rewrites (for example, changing every
-historical year to the current year) without attempting to normalize locale-
-specific date formatting.
-"""
+"""Validate multilingual knowledge-base structure and protected year metadata."""
 from __future__ import annotations
 
 import pathlib
 import re
 import sys
+from collections import Counter
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 KB = ROOT / "knowledge_base"
@@ -31,11 +24,7 @@ def read(path: pathlib.Path) -> str:
 
 
 def relative_files(root: pathlib.Path) -> set[pathlib.Path]:
-    return {
-        path.relative_to(root)
-        for path in root.rglob("*.md")
-        if path.is_file()
-    }
+    return {path.relative_to(root) for path in root.rglob("*.md") if path.is_file()}
 
 
 def check_language_parity() -> None:
@@ -44,54 +33,51 @@ def check_language_parity() -> None:
         return
 
     source_files = relative_files(SOURCE)
-    languages = sorted(
-        path for path in KB.iterdir()
-        if path.is_dir() and path.name != "English"
-    )
+    languages = sorted(path for path in KB.iterdir() if path.is_dir() and path.name != "English")
 
     for language in languages:
         files = relative_files(language)
-        missing = sorted(source_files - files)
-        extra = sorted(files - source_files)
-        for path in missing:
+        for path in sorted(source_files - files):
             WARNINGS.append(f"{language.name}: missing translation for {path}")
-        for path in extra:
+        for path in sorted(files - source_files):
             WARNINGS.append(f"{language.name}: extra translation file not in English source: {path}")
 
 
 def check_protected_years() -> None:
-    """Ensure translations do not silently change source years."""
+    """Catch translated files that introduce too many occurrences of a year."""
     if not SOURCE.exists():
         return
 
     source_files = relative_files(SOURCE)
     source_years = {
-        path: set(YEAR.findall(read(SOURCE / path)))
+        path: Counter(YEAR.findall(read(SOURCE / path)))
         for path in source_files
     }
 
-    for language in sorted(
-        path for path in KB.iterdir()
-        if path.is_dir() and path.name != "English"
-    ):
+    for language in sorted(path for path in KB.iterdir() if path.is_dir() and path.name != "English"):
         for relative in source_files:
             translated = language / relative
             if not translated.exists():
                 continue
-            years = set(YEAR.findall(read(translated)))
+
+            observed = Counter(YEAR.findall(read(translated)))
             expected = source_years[relative]
-            # Only flag years that appear in the translation but not the source.
-            # Missing years can be legitimate when a translation paraphrases text.
-            unexpected = sorted(years - expected)
-            if unexpected:
+            excessive = {
+                year: count
+                for year, count in observed.items()
+                if count > expected.get(year, 0)
+            }
+            if excessive:
                 ERRORS.append(
-                    f"{language.name}/{relative}: unexpected year(s) {unexpected}; "
-                    f"English source years are {sorted(expected)}"
+                    f"{language.name}/{relative}: year occurrence(s) exceed English source: "
+                    f"{dict(sorted(excessive.items()))}; source counts={dict(sorted(expected.items()))}"
                 )
 
 
 def check_empty_files() -> None:
-    for path in KB.rglob("*.md") if KB.exists() else []:
+    if not KB.exists():
+        return
+    for path in KB.rglob("*.md"):
         if path.is_file() and not read(path).strip():
             WARNINGS.append(f"Empty knowledge-base file: {path}")
 
