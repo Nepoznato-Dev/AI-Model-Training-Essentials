@@ -42,11 +42,7 @@ Expand CI into separate jobs:
 - Broad dependencies were given upper bounds to reduce accidental major-version drift.
 
 ### V2 recommendation
-Do not keep one giant environment as the primary installation method. Prefer:
-- project-level `pyproject.toml`
-- lockfiles (`uv.lock` or equivalent)
-- focused optional dependency groups
-- per-project environments
+Prefer a project-level `pyproject.toml`, lockfile, focused optional dependency groups, and per-project environments instead of one giant environment.
 
 Suggested structure:
 
@@ -61,54 +57,51 @@ requirements/
   dev.txt
 ```
 
-## 4. `wiki/model_development.md`
+## 4. Model-development fixes
 
-### Fixed
-- Scheduler examples now use the correct `step()` signature for each scheduler.
-- Gradient accumulation now handles a final partial accumulation group.
-- Dropout/BatchNorm examples now show actual `forward()` usage.
-- Added missing `SVC` import.
-- Updated Optuna examples away from deprecated `suggest_loguniform` / `suggest_uniform`.
-- Dynamic quantization example no longer incorrectly includes `Conv2d`.
-- Knowledge-distillation example explicitly runs the teacher under `no_grad()`.
-- Reproducibility wording no longer implies that seeds guarantee complete determinism.
+The first pass fixed scheduler signatures, gradient accumulation, Dropout/BatchNorm examples, a missing `SVC` import, deprecated Optuna calls, dynamic quantization, knowledge-distillation teacher gradients, and overconfident reproducibility wording.
 
-## 5. `wiki/security.md`
+## 5. Security fixes
 
-### Fixed/modernized
-- FGSM and PGD now use `torch.autograd.grad` rather than accumulating model gradients.
-- Adversarial training now accepts an optimizer and actually performs `optimizer.step()`.
-- Randomized smoothing is explicitly described as noisy prediction averaging rather than a complete certified implementation.
-- JPEG defense now imports `torchvision.transforms`.
-- Fixed SlowAPI example (`Limiter`, `Request`).
-- Updated Pydantic examples to v2 (`field_validator`, `ConfigDict`, `json_schema_extra`, `min_length`/`max_length`).
-- Removed the unsafe pattern of silently generating an ephemeral encryption key.
-- Warned against arbitrary pickle deserialization for untrusted model artifacts.
-- Replaced undefined `get_client_ip()` / `get_user_agent()` calls with explicit function parameters.
-- Switched audit timestamps to timezone-aware UTC.
-- Added agent-specific security requirements: least privilege, tool allowlists, prompt-injection-aware retrieval, secret isolation, and tool auditing.
+The first pass modernized FGSM/PGD gradient handling, adversarial training, SlowAPI, Pydantic v2, key handling, model artifact guidance, audit timestamps, and agent-specific security controls.
 
-## 6. Known issues still requiring V2 work
+## 6. Second-pass fixes
 
-The following were identified in the audit but are not all fixed by this first reliability branch:
+### `wiki/deployment.md`
+- Fixed the Docker health check by installing `curl` and documented alternatives.
+- Replaced the broken/missing `BatchPredictor._try_process_batch` path with an actual timeout flush implementation.
+- Added locking and exception propagation to the batching example so callers do not hang when inference fails.
+- Replaced process-randomized Python `hash()` cache keys with stable JSON serialization.
+- Made Redis cache serialization explicit.
+- Updated generic Docker/Compose examples toward Python 3.11 and modern `docker compose` usage.
+- Added safer API error handling and timezone-aware timestamps.
+- Removed obsolete Azure deployment code from the main example and replaced it with a version-aware warning.
+- Updated GitHub Actions examples from checkout/setup-python v3/v4 to v4/v5.
+- Added warnings around credentials and provider SDK version drift.
 
-- Deployment Docker health check references `curl` without installing it.
-- `BatchPredictor` contains a missing `_try_process_batch` implementation.
-- Some deployment examples use obsolete cloud SDKs and need current-provider rewrites.
-- Some FastAPI examples use older lifecycle patterns.
-- Monitoring examples need real metric instrumentation rather than isolated metric names.
-- RAG examples need retrieval/generation evaluation and a clear grounded-answer policy.
-- `rag_simple` contains an incorrect comment claiming `all-MiniLM-L6-v2` has 768-dimensional embeddings; it is 384-dimensional.
+### `guides/projects/rag_simple/main.py`
+- Corrected the `all-MiniLM-L6-v2` embedding documentation: the code now reports the actual dimension instead of claiming 768.
+- Normalized embeddings before cosine similarity.
+- Added empty-dataset and `top_k` validation.
+- Made multi-document context handling explicit.
+- Added a grounded-answer instruction telling the generator to admit when the context does not contain the answer.
+- Removed misleading claims about production readiness/runtime.
+
+## 7. Remaining high-priority audit work
+
 - CNN/ML examples need train/validation/test separation where hyperparameters are tuned.
 - Transfer-learning example has an incorrect trainable-parameter count and needs explicit BatchNorm/frozen-backbone behavior.
 - Decision-boundary plotting needs consistent scaled/raw coordinate handling.
 - Text-generation examples need correct `do_sample`/temperature semantics.
-- Cloud examples need version/date verification.
+- Remaining cloud examples need version/date verification and current-provider API validation.
+- Monitoring examples need real metric instrumentation rather than isolated metric names.
+- RAG examples need retrieval/generation evaluation, chunking guidance, and a clear grounded-answer policy.
 - Agent-mode frontmatter needs a machine-readable schema and tool registry.
 - Translation files need source-revision metadata, review status, and parity checks.
 - Knowledge-base date fields need protection from content-processing scripts.
+- Add runnable-example CI where examples have deterministic/lightweight test paths.
 
-## 7. Knowledge-base date incident
+## 8. Knowledge-base date incident
 
 A prior content-processing script accidentally changed dates to 2026 in parts of the knowledge base. Treat this as a data-pipeline bug rather than manually fixing individual files forever.
 
@@ -125,7 +118,7 @@ Protect these fields from translation/transformation scripts:
 
 Add a regression test that compares protected metadata before and after transformation.
 
-## 8. Recommended V2 validation gates
+## 9. Recommended V2 validation gates
 
 Before merging future content:
 
@@ -144,7 +137,7 @@ Before merging future content:
 [ ] Security examples are reviewed separately
 ```
 
-## 9. Important philosophy for V2
+## 10. Important philosophy for V2
 
 Do not sacrifice the repository's breadth. The main improvement needed is **verification**, not a reduction in ambition.
 
