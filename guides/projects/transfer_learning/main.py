@@ -25,7 +25,6 @@ if torch.cuda.is_available():
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-# ImageNet-pretrained ResNet18 expects ImageNet normalization.
 weights = models.ResNet18_Weights.DEFAULT
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
@@ -50,9 +49,6 @@ testloader = DataLoader(testset, batch_size=32, shuffle=False)
 classes = ("plane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck")
 print(f"Train: {len(trainset):,} | Validation: {len(valset):,} | Test: {len(testset):,}")
 
-# -----------------------------------------------------------------------------
-# Feature extraction: freeze the pretrained backbone and train a new head.
-# -----------------------------------------------------------------------------
 print("Loading pretrained ResNet18...")
 model = models.resnet18(weights=weights)
 for param in model.parameters():
@@ -73,19 +69,26 @@ optimizer = optim.Adam(model.fc.parameters(), lr=1e-3)
 
 
 def run_epoch(loader, training=False):
-    model.train(training)
+    # The backbone is frozen, including BatchNorm running statistics. Only the
+    # new classification head should enter training mode in feature-extraction mode.
+    model.eval()
+    if training:
+        model.fc.train()
+
     total_loss = 0.0
     correct = 0
     total = 0
-
     context = torch.enable_grad() if training else torch.inference_mode()
+
     with context:
         for images, labels in loader:
             images, labels = images.to(device), labels.to(device)
             if training:
                 optimizer.zero_grad(set_to_none=True)
+
             outputs = model(images)
             loss = criterion(outputs, labels)
+
             if training:
                 loss.backward()
                 optimizer.step()
@@ -116,7 +119,6 @@ for epoch in range(num_epochs):
         f"val loss={val_loss:.4f} acc={val_accuracy:.2%}"
     )
 
-# Select the best checkpoint using validation data only, then evaluate once on test data.
 assert best_state is not None
 model.load_state_dict(best_state)
 model = model.to(device)
@@ -126,7 +128,6 @@ print(f"Training time: {time.perf_counter() - start:.1f}s")
 print(f"Best validation accuracy: {best_val_accuracy:.2%}")
 print(f"Final test accuracy: {test_accuracy:.2%}")
 
-# Per-class test accuracy.
 model.eval()
 class_correct = [0] * len(classes)
 class_total = [0] * len(classes)
@@ -142,7 +143,6 @@ for index, class_name in enumerate(classes):
     if class_total[index]:
         print(f"{class_name:>6}: {class_correct[index] / class_total[index]:.2%}")
 
-# Save weights plus enough metadata to reconstruct the classifier correctly.
 save_path = "transfer_learning_model.pth"
 torch.save(
     {
