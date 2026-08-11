@@ -45,23 +45,38 @@ train_df.to_csv("train.csv", index=False)
 test_df.to_csv("test.csv", index=False)
 ```
 
+For workflows that tune hyperparameters or select checkpoints, create a validation split (or use cross-validation) from the training portion. Keep the final test set untouched until the end.
+
 ### 3. Baseline Model
+
+A baseline should be evaluated without turning the final test set into a tuning target. For a simple example, split training data into train/validation and reserve the test set for final evaluation.
 
 ```python
 from sklearn.dummy import DummyClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+
+X_fit, X_val, y_fit, y_val = train_test_split(
+    X_train,
+    y_train,
+    test_size=0.2,
+    random_state=42,
+    stratify=y_train,
+)
 
 dummy = DummyClassifier(strategy="most_frequent")
-dummy.fit(X_train, y_train)
-baseline_score = accuracy_score(y_test, dummy.predict(X_test))
+dummy.fit(X_fit, y_fit)
+baseline_score = accuracy_score(y_val, dummy.predict(X_val))
 
 lr = LogisticRegression(max_iter=1000)
-lr.fit(X_train, y_train)
-lr_score = accuracy_score(y_test, lr.predict(X_test))
+lr.fit(X_fit, y_fit)
+lr_score = accuracy_score(y_val, lr.predict(X_val))
 
-print(f"Baseline: {baseline_score:.3f}, LR: {lr_score:.3f}")
+print(f"Validation baseline: {baseline_score:.3f}, LR: {lr_score:.3f}")
 ```
+
+Only after model selection should the final model be evaluated on `X_test, y_test`.
 
 ### 4. Iterative Improvement
 
@@ -131,6 +146,8 @@ for epoch in range(num_epochs):
 torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 ```
 
+Call gradient clipping after `loss.backward()` and before `optimizer.step()`.
+
 **Gradient accumulation:**
 
 ```python
@@ -196,8 +213,10 @@ grid_search = GridSearchCV(SVC(), param_grid, cv=5, scoring="accuracy")
 grid_search.fit(X_train, y_train)
 
 print(f"Best params: {grid_search.best_params_}")
-print(f"Best score: {grid_search.best_score_:.3f}")
+print(f"Best cross-validation score: {grid_search.best_score_:.3f}")
 ```
+
+The cross-validation folds above are drawn from the training data. Keep the final test set outside the search.
 
 ### Random Search
 
@@ -241,6 +260,8 @@ study.optimize(objective, n_trials=100)
 
 print(f"Best trial: {study.best_trial.params}")
 ```
+
+`train_and_evaluate()` should evaluate against validation data or cross-validation folds, not the final test set.
 
 ---
 
@@ -305,7 +326,8 @@ with torch.no_grad():
     teacher_logits = teacher(inputs)
 
 student_logits = student(inputs)
-loss = criterion(student_logits, teacher_logits, targets)
+distill_criterion = DistillationLoss(temperature=4.0)
+loss = distill_criterion(student_logits, teacher_logits, targets)
 ```
 
 ---
@@ -367,6 +389,8 @@ scaler.fit(df)
 X_train, X_test = train_test_split(scaler.transform(df))
 ```
 
+The scaler has already seen the test data in this example.
+
 ✅ **Correct:**
 
 ```python
@@ -375,6 +399,8 @@ scaler.fit(X_train)
 X_train_scaled = scaler.transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
+
+In production pipelines, fit preprocessing only on training data and apply the fitted transformer to validation/test data.
 
 ### Evaluation Bias
 
@@ -388,6 +414,7 @@ best_params = grid_search.fit(X_test, y_test)
 
 ```python
 best_params = grid_search.fit(X_train, y_train)
+# Select/retrain the final model using the training data and chosen parameters.
 final_score = model.score(X_test, y_test)
 ```
 
