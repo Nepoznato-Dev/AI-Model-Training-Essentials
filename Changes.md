@@ -6,9 +6,10 @@ This file is the migration checklist for the V2 VS Code rebuild. The reliability
 
 ### Repository QA
 - Added lightweight repository validation for UTF-8, BOMs, mojibake, YAML frontmatter, agent-mode metadata, agent references, Markdown links, and Python syntax.
-- Added CI coverage for repository validation and agent-mode validation.
-- Added a multilingual knowledge-base validator to check language/file parity, empty files, and protected four-digit year metadata.
-- CI now runs the knowledge-base validator as well.
+- Added CI coverage for repository and knowledge-base validation.
+- Added a multilingual knowledge-base validator to check language/file parity, empty files, and protected year metadata.
+- Corrected the validator so the current agent-mode frontmatter contract does not require a nonexistent `handoffs` field.
+- Strengthened year validation to detect excessive occurrences of a year, including the case where an erroneous year already exists elsewhere in the English source.
 
 ### Model development
 - Fixed scheduler signatures and validation behavior.
@@ -24,6 +25,9 @@ This file is the migration checklist for the V2 VS Code rebuild. The reliability
 - Added validation-based checkpoint selection and held-out final testing.
 - Fixed the model-development baseline so hyperparameter/model selection does not use the final test set.
 - Clarified that cross-validation/grid/random search belongs on training data and that the final test set is reserved for final evaluation.
+
+### Transfer learning
+- Fixed feature-extraction mode so the frozen ResNet backbone stays in evaluation mode, preventing BatchNorm running statistics from changing while only the classification head is trained.
 
 ### Neural-network basics
 - Added train/validation/test separation.
@@ -80,7 +84,7 @@ This file is the migration checklist for the V2 VS Code rebuild. The reliability
 
 A content-processing script accidentally changed dates to 2026 in parts of the knowledge base. Treat this as a **data-pipeline regression**, not a reason to manually fix dates forever.
 
-The new `tools/validate_knowledge_base.py` checks translated files against their English source and flags unexpected four-digit years. This is deliberately conservative: it catches accidental year mutation while allowing locale-specific date formatting.
+The new `tools/validate_knowledge_base.py` compares translated year occurrence counts with the English source and flags excessive year occurrences. This is intentionally conservative: it catches bulk year mutation while allowing locale-specific date formatting and legitimate omission of source years.
 
 For V2 transformation/translation tooling, protect:
 
@@ -96,6 +100,10 @@ Identifiers
 ```
 
 The best long-term solution is to preserve structured metadata separately from prose and test that protected metadata is unchanged after every transformation.
+
+## Verification status
+
+The PR diff was re-checked after the initial edit pass. That review caught and corrected two defects in the newly added reliability layer itself: the agent-mode validators had inconsistent metadata requirements, and the transfer-learning example allowed frozen BatchNorm running statistics to update. GitHub Actions runs for the latest head were not available through the connected GitHub tooling, so the branch should not be described as CI-verified until GitHub reports a successful run.
 
 ## Remaining audit priorities
 
