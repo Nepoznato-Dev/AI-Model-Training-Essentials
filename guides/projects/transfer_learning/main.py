@@ -1,364 +1,163 @@
-# Transfer Learning - Main Script
-# A minimal, heavily-commented introduction to using pre-trained models
-# Lines of code: ~200 (including comments)
+"""Transfer learning example: ResNet18 feature extraction on CIFAR-10.
 
-# ============================================================================
-# STEP 1: IMPORT REQUIRED LIBRARIES
-# ============================================================================
+Educational example. This version keeps a held-out validation set, avoids test-set
+model selection, reports the actual trainable parameter count, and separates
+feature extraction from evaluation mode correctly.
+"""
 
+import random
+import time
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torchvision import datasets, transforms, models
-from torch.utils.data import DataLoader
-import time
+from torch.utils.data import DataLoader, random_split
+from torchvision import datasets, models, transforms
 
-print("=" * 70)
-print("TRANSFER LEARNING PROJECT - Using Pre-trained Models")
-print("=" * 70)
-print()
+SEED = 42
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(SEED)
 
-# Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
-if device.type == "cpu":
-    print("Note: Training on CPU will be slow. GPU highly recommended!")
-print()
 
-# ============================================================================
-# STEP 2: LOAD A PRE-TRAINED MODEL
-# ============================================================================
+# ImageNet-pretrained ResNet18 expects ImageNet normalization.
+weights = models.ResNet18_Weights.DEFAULT
+transform = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
 
-# Transfer learning: Use a model that was already trained on a large dataset
-# We'll use ResNet18, which was trained on ImageNet (1.2 million images, 1000 classes)
-# Instead of training from scratch, we'll adapt it to our task
+print("Loading CIFAR-10...")
+full_trainset = datasets.CIFAR10("./data", train=True, download=True, transform=transform)
+testset = datasets.CIFAR10("./data", train=False, download=True, transform=transform)
 
-print("Loading pre-trained ResNet18 model...")
-print("(First run will download the model weights)")
-print()
+# Never tune hyperparameters on the test set. Keep it untouched until final evaluation.
+train_size = int(0.9 * len(full_trainset))
+val_size = len(full_trainset) - train_size
+split_generator = torch.Generator().manual_seed(SEED)
+trainset, valset = random_split(full_trainset, [train_size, val_size], generator=split_generator)
 
-# Load pre-trained ResNet18
-# weights='DEFAULT' loads the best available weights
-model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+trainloader = DataLoader(trainset, batch_size=32, shuffle=True)
+valloader = DataLoader(valset, batch_size=32, shuffle=False)
+testloader = DataLoader(testset, batch_size=32, shuffle=False)
 
-print("✓ Pre-trained model loaded!")
-print(f"  Model: ResNet18")
-print(f"  Original parameters: {sum(p.numel() for p in model.parameters()):,}")
-print(f"  Trained on: ImageNet (1000 classes)")
-print()
+classes = ("plane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck")
+print(f"Train: {len(trainset):,} | Validation: {len(valset):,} | Test: {len(testset):,}")
 
-# ============================================================================
-# STEP 3: MODIFY THE MODEL FOR OUR TASK
-# ============================================================================
-
-# ResNet18 was trained to classify 1000 classes
-# We want to classify 10 classes (CIFAR-10)
-# So we need to replace the final layer
-
-print("Modifying model for CIFAR-10 (10 classes)...")
-
-# Freeze all layers (we won't train them)
-# This is called "feature extraction" mode
+# -----------------------------------------------------------------------------
+# Feature extraction: freeze the pretrained backbone and train a new head.
+# -----------------------------------------------------------------------------
+print("Loading pretrained ResNet18...")
+model = models.resnet18(weights=weights)
 for param in model.parameters():
     param.requires_grad = False
 
-# Replace the final fully connected layer
-# model.fc is the classification head
-# Input: 512 features (from ResNet18)
-# Output: 10 classes (for CIFAR-10)
 num_features = model.fc.in_features
-model.fc = nn.Linear(num_features, 10)
-
-# Move model to device (GPU/CPU)
+model.fc = nn.Linear(num_features, len(classes))
 model = model.to(device)
 
-print("✓ Model modified!")
-print(f"  Trainable parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad):,}")
-print(f"  Frozen parameters: {sum(p.numel() for p in model.parameters() if not p.requires_grad):,}")
-print()
+trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+frozen = sum(p.numel() for p in model.parameters() if not p.requires_grad)
+print(f"Trainable parameters: {trainable:,}")
+print(f"Frozen parameters: {frozen:,}")
+print("Note: the new ResNet18 classification head has 5,130 trainable parameters (512*10 + 10).")
 
-# ============================================================================
-# STEP 4: LOAD AND PREPROCESS DATA
-# ============================================================================
-
-print("Loading CIFAR-10 dataset...")
-print("(First run will download the dataset)")
-print()
-
-# Define transformations
-# IMPORTANT: Pre-trained models expect specific input formats
-# ResNet expects: 224x224 images, normalized with ImageNet mean/std
-transform = transforms.Compose([
-    transforms.Resize((224, 224)),  # Resize to 224x224 (required by ResNet)
-    transforms.ToTensor(),          # Convert to tensor and scale to [0, 1]
-    # Normalize with ImageNet statistics
-    # Mean and std for each channel (RGB)
-    transforms.Normalize(
-        mean=[0.485, 0.456, 0.406],
-        std=[0.229, 0.224, 0.225]
-    )
-])
-
-# Load training dataset
-trainset = datasets.CIFAR10(
-    root='./data',
-    train=True,
-    download=True,
-    transform=transform
-)
-trainloader = DataLoader(trainset, batch_size=32, shuffle=True)
-
-# Load test dataset
-testset = datasets.CIFAR10(
-    root='./data',
-    train=False,
-    download=True,
-    transform=transform
-)
-testloader = DataLoader(testset, batch_size=32, shuffle=False)
-
-# CIFAR-10 class names
-classes = ('plane', 'car', 'bird', 'cat', 'deer',
-           'dog', 'frog', 'horse', 'ship', 'truck')
-
-print(f"✓ Dataset loaded!")
-print(f"  Training samples: {len(trainset):,}")
-print(f"  Test samples: {len(testset):,}")
-print(f"  Image size: 224x224 (resized from 32x32)")
-print(f"  Batch size: 32")
-print()
-
-# ============================================================================
-# STEP 5: DEFINE LOSS FUNCTION AND OPTIMIZER
-# ============================================================================
-
-# Only optimize the parameters we want to train (the final layer)
-# We use list comprehension to filter only trainable parameters
-optimizer = optim.Adam(
-    filter(lambda p: p.requires_grad, model.parameters()),
-    lr=0.001
-)
-
-# Loss function for multi-class classification
 criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.fc.parameters(), lr=1e-3)
 
-print("✓ Loss function and optimizer initialized!")
-print(f"  Loss: CrossEntropyLoss")
-print(f"  Optimizer: Adam (lr=0.001)")
-print(f"  Only training the final layer (feature extraction mode)")
-print()
 
-# ============================================================================
-# STEP 6: TRAINING LOOP
-# ============================================================================
-
-num_epochs = 5  # Few epochs needed since we're using pre-trained features
-print(f"Starting training for {num_epochs} epochs...")
-print("-" * 70)
-
-start_time = time.time()
-
-for epoch in range(num_epochs):
-    epoch_start = time.time()
-    
-    # Set model to training mode
-    model.train()
-    
-    running_loss = 0.0
+def run_epoch(loader, training=False):
+    model.train(training)
+    total_loss = 0.0
     correct = 0
     total = 0
-    
-    # Iterate over training batches
-    for i, (images, labels) in enumerate(trainloader):
-        # Move data to device
-        images, labels = images.to(device), labels.to(device)
-        
-        # Forward pass
-        outputs = model(images)
-        loss = criterion(outputs, labels)
-        
-        # Backward pass and optimization
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-        
-        # Track statistics
-        running_loss += loss.item()
-        _, predicted = torch.max(outputs.data, 1)
-        total += labels.size(0)
-        correct += (predicted == labels).sum().item()
-    
-    # Calculate epoch statistics
-    epoch_loss = running_loss / len(trainloader)
-    epoch_acc = 100 * correct / total
-    epoch_time = time.time() - epoch_start
-    
-    print(f"Epoch [{epoch+1}/{num_epochs}] | "
-          f"Loss: {epoch_loss:.4f} | "
-          f"Accuracy: {epoch_acc:.2f}% | "
-          f"Time: {epoch_time:.1f}s")
 
-total_training_time = time.time() - start_time
-print("-" * 70)
-print(f"✓ Training completed in {total_training_time:.1f}s")
-print()
+    context = torch.enable_grad() if training else torch.inference_mode()
+    with context:
+        for images, labels in loader:
+            images, labels = images.to(device), labels.to(device)
+            if training:
+                optimizer.zero_grad(set_to_none=True)
+            outputs = model(images)
+            loss = criterion(outputs, labels)
+            if training:
+                loss.backward()
+                optimizer.step()
 
-# ============================================================================
-# STEP 7: EVALUATE ON TEST SET
-# ============================================================================
+            total_loss += loss.item() * labels.size(0)
+            correct += (outputs.argmax(dim=1) == labels).sum().item()
+            total += labels.size(0)
 
-print("Evaluating on test set...")
-print("-" * 70)
+    return total_loss / total, correct / total
 
-# Set model to evaluation mode
+
+num_epochs = 5
+best_val_accuracy = -1.0
+best_state = None
+start = time.perf_counter()
+
+for epoch in range(num_epochs):
+    train_loss, train_accuracy = run_epoch(trainloader, training=True)
+    val_loss, val_accuracy = run_epoch(valloader, training=False)
+
+    if val_accuracy > best_val_accuracy:
+        best_val_accuracy = val_accuracy
+        best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
+
+    print(
+        f"Epoch {epoch + 1}/{num_epochs} | "
+        f"train loss={train_loss:.4f} acc={train_accuracy:.2%} | "
+        f"val loss={val_loss:.4f} acc={val_accuracy:.2%}"
+    )
+
+# Select the best checkpoint using validation data only, then evaluate once on test data.
+assert best_state is not None
+model.load_state_dict(best_state)
+model = model.to(device)
+test_loss, test_accuracy = run_epoch(testloader, training=False)
+
+print(f"Training time: {time.perf_counter() - start:.1f}s")
+print(f"Best validation accuracy: {best_val_accuracy:.2%}")
+print(f"Final test accuracy: {test_accuracy:.2%}")
+
+# Per-class test accuracy.
 model.eval()
-
-correct = 0
-total = 0
-class_correct = [0] * 10
-class_total = [0] * 10
-
-with torch.no_grad():
+class_correct = [0] * len(classes)
+class_total = [0] * len(classes)
+with torch.inference_mode():
     for images, labels in testloader:
-        images, labels = images.to(device), labels.to(device)
-        outputs = model(images)
-        _, predicted = torch.max(outputs.data, 1)
-        
-        total += labels.size(0)
-        correct += (predicted == labels).sum().item()
-        
-        # Per-class accuracy
-        for i in range(labels.size(0)):
-            label = labels[i]
-            class_correct[label] += (predicted[i] == label).item()
-            class_total[label] += 1
+        outputs = model(images.to(device))
+        predicted = outputs.argmax(dim=1).cpu()
+        for label, pred in zip(labels, predicted):
+            class_total[label.item()] += 1
+            class_correct[label.item()] += int(pred.item() == label.item())
 
-# Overall accuracy
-test_accuracy = 100 * correct / total
-print(f"Overall Test Accuracy: {test_accuracy:.2f}% ({correct}/{total})")
-print()
+for index, class_name in enumerate(classes):
+    if class_total[index]:
+        print(f"{class_name:>6}: {class_correct[index] / class_total[index]:.2%}")
 
-# Per-class accuracy
-print("Per-class accuracy:")
-for i, class_name in enumerate(classes):
-    if class_total[i] > 0:
-        acc = 100 * class_correct[i] / class_total[i]
-        print(f"  {class_name:10}: {acc:5.2f}%")
-
-print("-" * 70)
-print()
-
-# ============================================================================
-# STEP 8: COMPARE WITH TRAINING FROM SCRATCH
-# ============================================================================
-
-print("-" * 70)
-print("TRANSFER LEARNING vs TRAINING FROM SCRATCH")
-print("-" * 70)
-
-print("""
-With Transfer Learning (what we just did):
-✓ Training time: ~2-5 minutes (5 epochs)
-✓ Test accuracy: ~85-90%
-✓ Only trained: Final layer (8,192 parameters)
-✓ Used: Pre-trained features from ImageNet
-
-Training from Scratch (for comparison):
-✗ Training time: ~30-60 minutes (20+ epochs)
-✗ Test accuracy: ~60-70% (with simple CNN)
-✗ Trained: All parameters (~11 million)
-✗ Used: Random initialization
-
-Benefits of Transfer Learning:
-1. Much faster training (5-10x speedup)
-2. Better accuracy (pre-trained features are powerful)
-3. Works well with small datasets
-4. Less computational resources needed
-""")
-
-# ============================================================================
-# STEP 9: MAKE PREDICTIONS ON SAMPLE IMAGES
-# ============================================================================
-
-print("Making predictions on sample test images...")
-print("-" * 70)
-
-# Get a batch of test images
-images, labels = next(iter(testloader))
-images, labels = images.to(device), labels.to(device)
-
-# Make predictions
-model.eval()
-with torch.no_grad():
-    outputs = model(images[:8])
-    probabilities = torch.softmax(outputs, dim=1)
-    _, predicted = torch.max(outputs, 1)
-
-# Display predictions with confidence
-for i in range(8):
-    true_label = classes[labels[i]]
-    pred_label = classes[predicted[i]]
-    confidence = probabilities[i][predicted[i]].item()
-    match = "✓" if true_label == pred_label else "✗"
-    print(f"{match} Image {i+1}: True={true_label:6}, "
-          f"Predicted={pred_label:6} ({confidence:.2%})")
-
-print()
-
-# ============================================================================
-# STEP 10: SAVE THE MODEL
-# ============================================================================
-
+# Save weights plus enough metadata to reconstruct the classifier correctly.
 save_path = "transfer_learning_model.pth"
-torch.save(model.state_dict(), save_path)
-print(f"✓ Model saved to '{save_path}'")
-print()
+torch.save(
+    {
+        "model_state_dict": model.state_dict(),
+        "num_classes": len(classes),
+        "class_names": classes,
+        "architecture": "resnet18",
+        "pretrained_weights": "ResNet18_Weights.DEFAULT",
+    },
+    save_path,
+)
+print(f"Saved model to {save_path}")
 
-# To load the model later:
-# model = models.resnet18(weights=None)
-# model.fc = nn.Linear(512, 10)  # Must match the modified architecture
-# model.load_state_dict(torch.load("transfer_learning_model.pth", weights_only=True))
-# model.eval()
-
-# ============================================================================
-# CONCLUSION
-# ============================================================================
-
-print("=" * 70)
-print("CONGRATULATIONS! You've completed the Transfer Learning Project!")
-print("=" * 70)
-print(f"""
-What you learned:
-✓ How to load a pre-trained model (ResNet18)
-✓ How to modify a model for a new task
-✓ The difference between feature extraction and fine-tuning
-✓ How to freeze layers and train only specific parts
-✓ Why transfer learning is faster and more accurate
-✓ How to evaluate model performance
-
-Key Concepts:
-- Transfer Learning: Using knowledge from one task for another
-- Pre-trained Models: Models trained on large datasets (ImageNet)
-- Feature Extraction: Using pre-trained features, only training final layer
-- Fine-tuning: Updating all or some pre-trained weights
-- ImageNet: 1.2M images, 1000 classes (standard benchmark)
-
-Results Summary:
-- Training time: {total_training_time:.1f}s
-- Test accuracy: {test_accuracy:.2f}%
-- Trainable parameters: Only final layer
-- Speedup: ~5-10x vs training from scratch
-
-Next steps:
-1. Try fine-tuning more layers (unfreeze some layers)
-2. Experiment with different pre-trained models (ResNet50, VGG, EfficientNet)
-3. Use your own dataset (custom images)
-4. Learn about domain-specific pre-trained models
-5. Explore other computer vision tasks (object detection, segmentation)
-
-Resources:
-- PyTorch Transfer Learning Tutorial: https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
-- Model Zoo: https://pytorch.org/vision/stable/models.html
-- Papers With Code: https://paperswithcode.com/
-""")
-print("=" * 70)
+print(
+    "\nFeature extraction is only one transfer-learning strategy. "
+    "For fine-tuning, unfreeze selected backbone layers, use a smaller learning "
+    "rate for pretrained layers, and continue to use validation data for model selection."
+)
