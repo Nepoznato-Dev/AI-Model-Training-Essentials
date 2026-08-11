@@ -59,6 +59,8 @@ def parse_frontmatter(path: pathlib.Path) -> dict[str, object] | None:
         if value == "[":
             current_list = key
             list_items = []
+        elif value == "[]":
+            result[key] = []
         else:
             result[key] = value
 
