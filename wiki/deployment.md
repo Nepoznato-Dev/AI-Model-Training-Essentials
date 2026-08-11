@@ -2,7 +2,7 @@
 
 ## Overview
 
-Guide to deploying machine learning models to production environments.
+Guide to deploying machine learning models to production environments. The examples below are intentionally educational; provider SDKs and framework APIs should be checked against the versions used by your project before production deployment.
 
 ---
 
@@ -19,42 +19,34 @@ Process data in batches on a schedule.
 
 **Implementation:**
 ```python
-from datetime import datetime
+from datetime import datetime, timezone
 import pandas as pd
 
-def batch_predict():
-    # Load new data
+
+def batch_predict(model):
     data = load_new_data()
-    
-    # Predict
     predictions = model.predict(data)
-    
-    # Store results
     results = pd.DataFrame({
-        'timestamp': datetime.now(),
-        'input_id': data.id,
-        'prediction': predictions
+        "timestamp": datetime.now(timezone.utc),
+        "input_id": data.id,
+        "prediction": predictions,
     })
-    results.to_csv(f'predictions/{datetime.now():%Y%m%d}.csv')
+    results.to_csv(f"predictions/{datetime.now(timezone.utc):%Y%m%d}.csv", index=False)
 ```
 
 ### 2. Real-time API
 
 Serve predictions via REST or gRPC API.
 
-**Use Cases:**
-- User-facing features
-- Fraud detection
-- Real-time recommendations
-
 **FastAPI Example:**
 ```python
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import torch
+import time
 
 app = FastAPI()
-model = torch.load('model.pt')
+model = load_model()  # Define this for your model/artifact format.
 model.eval()
 
 class InputData(BaseModel):
@@ -67,24 +59,24 @@ class PredictionResponse(BaseModel):
 
 @app.post("/predict", response_model=PredictionResponse)
 async def predict(input_data: InputData):
-    import time
-    start = time.time()
-    
+    start = time.perf_counter()
     try:
-        with torch.no_grad():
+        with torch.inference_mode():
             tensor = torch.tensor([input_data.features])
             output = model(tensor)
             probs = torch.softmax(output, dim=-1)
             confidence, pred = torch.max(probs, dim=-1)
-        
+
         return PredictionResponse(
             prediction=pred.item(),
             confidence=confidence.item(),
-            latency_ms=(time.time() - start) * 1000
+            latency_ms=(time.perf_counter() - start) * 1000,
         )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 ```
+
+> Do not return raw exception strings from production APIs unless they are intentionally sanitized. Avoid loading arbitrary untrusted model files.
 
 ### 3. Streaming Inference
 
@@ -97,24 +89,29 @@ Process data streams in real-time.
 
 **Kafka Consumer Example:**
 ```python
-from kafka import KafkaConsumer
+from kafka import KafkaConsumer, KafkaProducer
 import json
 
 consumer = KafkaConsumer(
-    'input-topic',
-    bootstrap_servers=['localhost:9092'],
-    value_deserializer=lambda x: json.loads(x.decode('utf-8'))
+    "input-topic",
+    bootstrap_servers=["localhost:9092"],
+    value_deserializer=lambda x: json.loads(x.decode("utf-8")),
+)
+producer = KafkaProducer(
+    bootstrap_servers=["localhost:9092"],
+    value_serializer=lambda x: json.dumps(x).encode("utf-8"),
 )
 
 for message in consumer:
     data = message.value
-    prediction = model.predict([data['features']])
-    
-    # Send to output topic
-    producer.send('output-topic', {
-        'input_id': data['id'],
-        'prediction': prediction.tolist()
-    })
+    prediction = model.predict([data["features"]])
+    producer.send(
+        "output-topic",
+        {
+            "input_id": data["id"],
+            "prediction": prediction.tolist(),
+        },
+    )
 ```
 
 ---
@@ -125,48 +122,43 @@ for message in consumer:
 
 **Dockerfile:**
 ```dockerfile
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for caching
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application
 COPY . .
 
-# Expose port
 EXPOSE 8000
 
-# Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
-# Run
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
+> For a production image, pin dependencies and use a dedicated non-root runtime user. If `curl` is undesirable, replace the health check with a tool already present in the image or an application-level check.
+
 **docker-compose.yml:**
 ```yaml
-version: '3.8'
-
 services:
   api:
     build: .
     ports:
       - "8000:8000"
     environment:
-      - MODEL_PATH=/app/models/model.pt
+      MODEL_PATH: /app/models/model.pt
     volumes:
-      - ./models:/app/models
+      - ./models:/app/models:ro
     restart: unless-stopped
-    
+
   redis:
     image: redis:alpine
     ports:
@@ -176,22 +168,17 @@ services:
 ### Building and Running
 
 ```bash
-# Build image
 docker build -t my-model-api:latest .
-
-# Run container
 docker run -p 8000:8000 -d my-model-api:latest
-
-# With docker-compose
-docker-compose up -d
-
-# Check logs
-docker-compose logs -f api
+docker compose up -d
+docker compose logs -f api
 ```
 
 ---
 
 ## Cloud Deployment
+
+Cloud SDKs change frequently. Treat these snippets as provider-specific patterns, not copy-paste production code. Pin and verify the SDK/framework versions in your own environment before deployment.
 
 ### AWS SageMaker
 
@@ -199,92 +186,46 @@ docker-compose logs -f api
 import sagemaker
 from sagemaker.pytorch import PyTorchModel
 
-# Create model
 pytorch_model = PyTorchModel(
-    model_data='s3://bucket/model.tar.gz',
-    role='arn:aws:iam::account:role/sagemaker-role',
-    entry_point='inference.py',
-    framework_version='1.9.0',
-    py_version='py38'
+    model_data="s3://bucket/model.tar.gz",
+    role="arn:aws:iam::account:role/sagemaker-role",
+    entry_point="inference.py",
+    # Set these to versions supported by the SageMaker SDK/runtime you pin.
+    framework_version="<verified-pytorch-version>",
+    py_version="py3<verified-version>",
 )
 
-# Deploy
 predictor = pytorch_model.deploy(
     initial_instance_count=1,
-    instance_type='ml.m5.large'
+    instance_type="ml.m5.large",
 )
-
-# Invoke
-response = predictor.predict({
-    'instances': [[1.0, 2.0, 3.0]]
-})
 ```
 
-### Google Cloud AI Platform
+### Google Cloud
 
 ```python
 from google.cloud import aiplatform
 
-aiplatform.init(project='my-project', location='us-central1')
+aiplatform.init(project="my-project", location="us-central1")
 
-# Deploy model
-endpoint = aiplatform.Endpoint.create(display_name='my-endpoint')
-
+# Verify the serving image and SDK API against the versions pinned by your project.
 model = aiplatform.Model.upload(
-    display_name='my-model',
-    artifact_uri='gs://bucket/model',
-    serving_container_image_uri='gcr.io/project/my-image'
+    display_name="my-model",
+    artifact_uri="gs://bucket/model",
+    serving_container_image_uri="<verified-serving-image>",
 )
 
+endpoint = aiplatform.Endpoint.create(display_name="my-endpoint")
 endpoint.deploy(
     model=model,
-    deployed_model_display_name='my-model-v1',
-    machine_type='n1-standard-4'
-)
-
-# Predict
-response = endpoint.predict(instances=[[1.0, 2.0, 3.0]])
-```
-
-### Azure ML
-
-```python
-from azureml.core import Workspace, Model, Environment
-from azureml.core.webservice import AciWebservice, AksWebservice
-from azureml.model.mgmt.models import ModelConfig
-
-# Register model
-model = Model.register(
-    workspace=ws,
-    model_path='model.pt',
-    model_name='my-model'
-)
-
-# Create inference config
-inference_config = InferenceConfig(
-    entry_script='score.py',
-    environment=env
-)
-
-# Deploy to ACI (dev)
-service = Model.deploy(
-    workspace=ws,
-    name='my-service',
-    models=[model],
-    inference_config=inference_config,
-    deployment_config=AciWebservice.deploy_configuration(cpu_cores=1, memory_gb=1)
-)
-
-# Deploy to AKS (prod)
-aks_service = Model.deploy(
-    workspace=ws,
-    name='my-aks-service',
-    models=[model],
-    inference_config=inference_config,
-    deployment_target=aks_cluster,
-    deployment_config=AksWebservice.deploy_configuration(replica_count=3)
+    deployed_model_display_name="my-model-v1",
+    machine_type="n1-standard-4",
 )
 ```
+
+### Azure Machine Learning
+
+Use the current Azure ML SDK/API for new deployments. The former `azureml.core`/ACI/AKS examples in older tutorials are version-sensitive and should not be copied into a new project without verification.
 
 ---
 
@@ -293,27 +234,19 @@ aks_service = Model.deploy(
 ### Model Optimization
 
 ```python
-# TorchScript compilation
+# TorchScript and ONNX APIs are version-sensitive; verify them against your
+# installed PyTorch/ONNX stack before using these examples in production.
 scripted_model = torch.jit.script(model)
-scripted_model.save('model-scripted.pt')
+scripted_model.save("model-scripted.pt")
 
-# ONNX export
 dummy_input = torch.randn(1, 3, 224, 224)
 torch.onnx.export(
     model,
     dummy_input,
-    'model.onnx',
-    input_names=['input'],
-    output_names=['output'],
-    dynamic_axes={'input': {0: 'batch_size'}, 'output': {0: 'batch_size'}}
-)
-
-# TensorRT optimization (NVIDIA GPUs)
-import torch_tensorrt
-trt_model = torch_tensorrt.compile(
-    model,
-    inputs=[torch_tensorrt.Input((1, 3, 224, 224))],
-    enabled_precisions={torch.float16}
+    "model.onnx",
+    input_names=["input"],
+    output_names=["output"],
+    dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}},
 )
 ```
 
@@ -321,26 +254,25 @@ trt_model = torch_tensorrt.compile(
 
 ```python
 from functools import lru_cache
+import json
 import redis
 
-# In-memory cache
 @lru_cache(maxsize=1000)
 def cached_predict(feature_tuple):
     features = list(feature_tuple)
     return model.predict([features])
 
-# Redis cache
-redis_client = redis.Redis(host='localhost', port=6379)
+redis_client = redis.Redis(host="localhost", port=6379, decode_responses=True)
 
 def predict_with_cache(features):
-    key = f"pred:{hash(tuple(features))}"
+    # Prefer a stable serialization over Python's process-randomized hash().
+    key = "pred:" + json.dumps(features, separators=(",", ":"), sort_keys=True)
     cached = redis_client.get(key)
-    
-    if cached:
+    if cached is not None:
         return json.loads(cached)
-    
+
     result = model.predict([features])
-    redis_client.setex(key, 3600, json.dumps(result))  # Cache for 1 hour
+    redis_client.setex(key, 3600, json.dumps(result.tolist()))
     return result
 ```
 
@@ -357,45 +289,59 @@ class BatchPredictor:
         self.max_wait = max_wait
         self.queue = deque()
         self.futures = deque()
-        
+        self._timer_scheduled = False
+        self._lock = asyncio.Lock()
+
     async def predict(self, features):
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         future = loop.create_future()
-        self.queue.append(features)
-        self.futures.append(future)
-        
-        if len(self.queue) >= self.batch_size:
-            await self._process_batch()
-        else:
-            asyncio.call_later(self.max_wait, self._try_process_batch)
-        
+        async with self._lock:
+            self.queue.append(features)
+            self.futures.append(future)
+            if len(self.queue) >= self.batch_size:
+                await self._process_batch()
+            elif not self._timer_scheduled:
+                self._timer_scheduled = True
+                loop.call_later(
+                    self.max_wait,
+                    lambda: asyncio.create_task(self._flush_after_timeout()),
+                )
         return await future
-    
+
+    async def _flush_after_timeout(self):
+        async with self._lock:
+            self._timer_scheduled = False
+            if self.queue:
+                await self._process_batch()
+
     async def _process_batch(self):
         if not self.queue:
             return
-            
-        batch = list(self.queue)[:self.batch_size]
-        futures = list(self.futures)[:len(batch)]
-        
-        # Remove processed items
+
+        batch = list(self.queue)[: self.batch_size]
+        futures = list(self.futures)[: len(batch)]
         for _ in range(len(batch)):
             self.queue.popleft()
             self.futures.popleft()
-        
-        # Predict
-        predictions = self.model.predict(batch)
-        
-        # Resolve futures
-        for future, pred in zip(futures, predictions):
-            future.set_result(pred)
+
+        try:
+            predictions = self.model.predict(batch)
+            for future, pred in zip(futures, predictions):
+                if not future.done():
+                    future.set_result(pred)
+        except Exception as exc:
+            for future in futures:
+                if not future.done():
+                    future.set_exception(exc)
 ```
+
+The example above fixes the missing `_try_process_batch` path and also propagates model errors to waiting callers instead of leaving futures unresolved.
 
 ---
 
 ## CI/CD for ML
 
-### GitHub Actions
+Use pinned action versions and separate build/deploy credentials in real CI. Do not place registry or cluster credentials directly in workflow source.
 
 ```yaml
 name: ML Pipeline
@@ -410,37 +356,29 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
-      
+          python-version: "3.11"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      
       - name: Run tests
         run: pytest tests/
-      
-      - name: Lint
-        run: flake8 .
-  
+
   deploy:
     needs: test
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Build and push Docker image
-        run: |
-          docker build -t registry/image:${{ github.sha }} .
-          docker push registry/image:${{ github.sha }}
-      
-      - name: Deploy to production
-        run: |
-          kubectl set image deployment/my-app my-app=registry/image:${{ github.sha }}
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t registry/image:${{ github.sha }} .
+      # Authenticate using GitHub Actions secrets/OIDC and push only after auth.
+      - name: Push image
+        run: docker push registry/image:${{ github.sha }}
+      # Configure kubectl using a short-lived identity before deploying.
+      - name: Deploy
+        run: kubectl set image deployment/my-app my-app=registry/image:${{ github.sha }}
 ```
 
 ---
@@ -455,31 +393,27 @@ async def health_check():
     return {
         "status": "healthy",
         "model_version": model_version,
-        "timestamp": datetime.now().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
 
 @app.get("/ready")
 async def readiness_check():
-    # Test model can make predictions
     try:
         test_input = torch.randn(1, *input_shape)
-        with torch.no_grad():
+        with torch.inference_mode():
             model(test_input)
         return {"status": "ready"}
-    except Exception as e:
-        raise HTTPException(status_code=503, detail=str(e))
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail="Model is not ready") from exc
 ```
+
+Keep liveness and readiness separate: liveness should normally answer whether the process is alive, while readiness should answer whether it can serve traffic.
 
 ### Rollback Strategy
 
 ```bash
-# Kubernetes rollback
 kubectl rollout undo deployment/my-app
-
-# Or rollback to specific revision
 kubectl rollout undo deployment/my-app --to-revision=2
-
-# Verify rollback
 kubectl rollout status deployment/my-app
 ```
 
