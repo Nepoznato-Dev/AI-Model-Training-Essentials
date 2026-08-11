@@ -17,10 +17,13 @@ This file is the migration checklist for the V2 VS Code rebuild. The reliability
 - Fixed missing imports and deprecated Optuna usage.
 - Corrected dynamic quantization guidance.
 - Prevented teacher-model gradients during knowledge distillation.
+- Fixed a distillation example that defined `DistillationLoss` but accidentally called an unrelated `criterion` variable.
 - Removed unsupported reproducibility/performance guarantees.
 - Added proper validation/test separation in transfer learning.
 - Corrected the ResNet18 10-class head parameter count to 5,130.
 - Added validation-based checkpoint selection and held-out final testing.
+- Fixed the model-development baseline so hyperparameter/model selection does not use the final test set.
+- Clarified that cross-validation/grid/random search belongs on training data and that the final test set is reserved for final evaluation.
 
 ### Neural-network basics
 - Added train/validation/test separation.
