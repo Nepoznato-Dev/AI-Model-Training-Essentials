@@ -1,126 +1,53 @@
 # Text Generation Project
 
-A minimal, beginner-friendly introduction to text generation using pre-trained language models.
+A minimal, beginner-friendly introduction to text generation using a pre-trained causal language model.
 
 ## What This Project Does
 
 This project demonstrates how to:
-- Load a pre-trained text generation model (GPT-2)
-- Generate coherent text from a prompt
-- Control generation with parameters (temperature, top-p)
-- Understand tokenization (how text becomes numbers)
-- Build a custom text completion function
+- Load GPT-2 with the Hugging Face Transformers pipeline
+- Generate continuations from a prompt
+- Control stochastic generation with temperature and top-p sampling
+- Understand tokenization (text becomes token IDs)
+- Build a reusable text-completion function
 
-## Concepts Covered
+## Important terminology
 
-- **Language Models**: Models that predict the next word/token
-- **Text Generation**: Creating new text from a starting prompt
-- **Tokenization**: Converting text into numbers the model can process
-- **Temperature**: Controlling randomness vs. predictability
-- **Top-p Sampling**: Controlling vocabulary size
-- **Causal Language Modeling**: The task of predicting next tokens
+**`max_new_tokens` counts tokens, not words.** A token can be a word, subword, punctuation mark, or other tokenizer unit.
+
+**Temperature and top-p are sampling controls.** They matter when `do_sample=True`. If `do_sample=False`, generation is deterministic for a fixed model/input and sampling parameters such as temperature are not used.
 
 ## Prerequisites
 
-Before running this project, you should be comfortable with:
-- Basic Python programming
-- Installing Python packages with pip
-- Running Python scripts from the command line
-
-If you're new to these concepts, check out:
-- [Python Basics](../User%20Questions/prerequisites/python_basics.md)
-- [Terminal Basics](../User%20Questions/prerequisites/terminal_basics.md)
+- Basic Python
+- `pip`
+- Ability to run a Python script
 
 ## Quick Start
 
-### Option 1: Google Colab (Recommended for Beginners)
-
-1. Visit [Google Colab](https://colab.research.google.com)
-2. Create a new notebook
-3. Copy the code from `main.py` into cells
-4. Click **Runtime → Change runtime type** and select **GPU** (optional but faster)
-5. Run each cell sequentially
-
-**Benefits:**
-- No setup required
-- Free GPU access (faster generation)
-- Pre-installed libraries
-- Easy to experiment and modify
-
-### Option 2: Local Installation
+### Local installation
 
 ```bash
-# Navigate to this project directory
 cd guides/projects/text_generation
-
-# Create a virtual environment (recommended)
 python -m venv venv
 
-# Activate the environment
-# On Linux/Mac:
+# Linux/macOS
 source venv/bin/activate
-# On Windows:
+
+# Windows
 venv\Scripts\activate
 
-# Install required packages
 pip install -r requirements.txt
-
-# Run the project
 python main.py
 ```
 
-## Files in This Project
+The first run downloads the model from Hugging Face. An internet connection is therefore required unless the model has already been cached locally.
 
-| File | Description |
-|------|-------------|
-| `main.py` | Main script with heavily commented code (~180 lines) |
-| `requirements.txt` | Python dependencies |
-| `README.md` | This documentation file |
+### Google Colab
 
-## Code Walkthrough
+You can also copy the project into a Colab notebook. A GPU is optional for GPT-2 but can reduce generation time.
 
-### Step 1: Import Required Libraries
-
-```python
-from transformers import pipeline
-import torch
-```
-
-We use the `transformers` library from Hugging Face, which provides:
-- Pre-trained models ready for text generation
-- Simple pipeline API for easy usage
-- Tokenizers for text preprocessing
-
-### Step 2: Load a Pre-trained Model
-
-```python
-generator = pipeline("text-generation", model="gpt2")
-```
-
-This single line:
-- Downloads the GPT-2 model (124 million parameters)
-- Loads the tokenizer
-- Sets up the generation pipeline
-
-GPT-2 is:
-- Small enough to run on most computers
-- Good at generating coherent English text
-- Trained on a diverse internet dataset
-
-### Step 3: Generate Text
-
-```python
-prompt = "Once upon a time in a magical land"
-generated = generator(prompt, max_new_tokens=50)
-```
-
-The model:
-1. Takes your prompt as input
-2. Predicts the most likely next token
-3. Adds it to the text
-4. Repeats until reaching max_new_tokens
-
-### Step 4: Control Generation
+## Generation controls
 
 ```python
 generated = generator(
@@ -128,179 +55,96 @@ generated = generator(
     max_new_tokens=50,
     temperature=0.7,
     top_p=0.95,
-    do_sample=True
+    do_sample=True,
 )
 ```
 
-Key parameters:
-- **temperature**: Higher = more creative, Lower = more predictable
-- **top_p**: Controls vocabulary size
-- **do_sample**: True for random sampling, False for greedy
+- **`max_new_tokens`** — maximum number of newly generated tokens.
+- **`temperature`** — rescales sampling probabilities. Lower values generally make sampling more conservative; higher values make it more varied.
+- **`top_p`** — nucleus sampling. The model samples from the smallest probability mass whose cumulative probability reaches `top_p`.
+- **`do_sample=True`** — enables stochastic sampling.
+- **`do_sample=False`** — disables sampling; temperature/top-p are not sampling controls in this mode.
+- **`repetition_penalty`** — can discourage repeated tokens when set above 1, but excessive values can reduce quality.
+
+These parameters do not guarantee a particular writing quality. Results depend on the model, prompt, seed, hardware/runtime, and generation configuration.
+
+## Tokenization
+
+The example shows the relationship between text, tokens, token IDs, and decoded text:
+
+```python
+tokens = tokenizer.tokenize(text)
+token_ids = tokenizer.encode(text, add_special_tokens=False)
+text_again = tokenizer.decode(token_ids)
+```
+
+The token list and token-ID list should use the same special-token policy when demonstrating a one-to-one mapping. The project therefore disables automatic special tokens for this simple mapping example.
+
+## Common issues
+
+### `ModuleNotFoundError`
+
+Install the project dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Slow CPU generation
+
+- Reduce `max_new_tokens`.
+- Try `distilgpt2`.
+- Use a supported GPU runtime if available.
+
+Generation speed varies substantially by CPU/GPU, software versions, batch size, and prompt length, so this project intentionally does not promise a universal generation-time number.
+
+### CUDA out of memory
+
+Use CPU or a smaller model. With the pipeline API, CPU is selected with `device=-1`.
+
+### Repetitive output
+
+Experiment with `repetition_penalty`, temperature, top-p, prompt structure, and maximum generation length. There is no universally correct setting.
+
+### Nonsensical output
+
+GPT-2 is an older, relatively small causal language model. Generation quality is model- and prompt-dependent; lower temperature alone does not guarantee factual or coherent output.
 
 ## Exercises
 
-Try these modifications to deepen your understanding:
+1. Generate the same prompt with `temperature=0.3`, `0.7`, and `1.2` while keeping `do_sample=True`.
+2. Compare sampling with deterministic generation using `do_sample=False`.
+3. Try different `top_p` values.
+4. Add a repetition penalty and observe the trade-off.
+5. Inspect how different strings are split into tokens.
+6. Build a small story generator around `complete_text()`.
 
-### Exercise 1: Creative Writing
-Write prompts for different genres:
-- Science fiction
-- Mystery
-- Comedy
-- Horror
+## Expected behavior
 
-### Exercise 2: Temperature Experiment
-Generate the same prompt with different temperatures:
-- 0.1 (very predictable)
-- 0.7 (balanced)
-- 1.5 (very creative)
-
-Compare the results.
-
-### Exercise 3: Story Completion
-Start a story and let the model continue it:
-```python
-prompt = "The detective walked into the dark room and noticed"
-```
-
-### Exercise 4: Code Generation
-Try generating code snippets:
-```python
-prompt = "def calculate_fibonacci(n):"
-```
-
-### Exercise 5: Build a Poem Generator
-Create a function that generates poems:
-```python
-def generate_poem(starting_line):
-    # Your code here
-    pass
-```
-
-## Common Issues & Solutions
-
-### Issue: "ModuleNotFoundError: No module named 'transformers'"
-
-**Solution:**
-```bash
-pip install transformers torch
-```
-
-### Issue: Slow generation on CPU
-
-**Solution:**
-1. Use Google Colab with GPU enabled
-2. Use a smaller model: `model="distilgpt2"`
-3. Reduce `max_new_tokens`
-
-### Issue: Repetitive text
-
-**Solution:**
-1. Add `repetition_penalty=1.2`
-2. Increase `temperature` slightly
-3. Use `top_p=0.9` instead of 1.0
-
-### Issue: Nonsensical output
-
-**Solution:**
-1. Lower the temperature (try 0.5)
-2. Provide a more detailed prompt
-3. Remember: GPT-2 is small and makes mistakes
-
-### Issue: CUDA out of memory
-
-**Solution:**
-```python
-# Use CPU instead
-generator = pipeline("text-generation", model="gpt2", device=-1)
-```
-
-Or use a smaller model like `distilgpt2`.
-
-## Understanding Generation Parameters
-
-### Temperature
-- **Range**: 0.1 to 2.0
-- **Low (0.1-0.5)**: Very predictable, may repeat
-- **Medium (0.7-1.0)**: Balanced creativity and coherence
-- **High (1.0-2.0)**: Very creative, may be nonsensical
-
-### Top-p (Nucleus Sampling)
-- **Range**: 0.0 to 1.0
-- **Low (0.5)**: Only considers most likely words
-- **High (0.95)**: Wider vocabulary
-- **Default**: 1.0 (consider all words)
-
-### Max New Tokens
-- How many new tokens to generate
-- More tokens = longer text but slower
-- Typical: 20-100 for short text
-
-### Repetition Penalty
-- **Range**: 1.0 to 2.0
-- **1.0**: No penalty
-- **1.2-1.5**: Reduces repetition
-- Higher = less repetition but may affect coherence
-
-## Expected Results
-
-With the default configuration:
-- **Model**: GPT-2 (124M parameters)
-- **Generation Time**: ~1-3 seconds per sample on CPU
-- **Text Quality**: Coherent short passages
-- **Best For**: Learning, experimentation, creative writing
-
-**Note:** GPT-2 is a small model. Larger models (GPT-3, GPT-4) produce much better results but require API access.
+The project is intended for learning and experimentation, not as a production text-generation service. GPT-2 can produce fluent-looking text but can also be incorrect, repetitive, biased, or nonsensical.
 
 ## Next Steps
 
-After completing this project:
-
-1. **Read the Guide**: Check out the full [Transformers Guide](../../Transformers/) for deeper theory
-
-2. **Try the Transformers Intro Project**: Learn about text classification
-
-3. **Experiment with Prompts**:
-   - Write story starters
-   - Create conversation openers
-   - Design creative writing prompts
-
-4. **Try Larger Models**:
-   - GPT-2 Large (774M parameters)
-   - GPT-Neo (1.3B, 2.7B parameters)
-   - Access via Hugging Face or APIs
-
-5. **Build Applications**:
-   - Story generator
-   - Chatbot
-   - Code completion tool
-   - Creative writing assistant
+- Learn more about Transformers and causal language modeling.
+- Compare different tokenizers and model architectures.
+- Experiment with larger or newer open-weight causal language models.
+- Learn about fine-tuning and evaluation.
+- Add automated tests around generation configuration and tokenization.
 
 ## Resources
 
-- [Hugging Face Documentation](https://huggingface.co/docs/transformers)
-- [GPT-2 Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
-- [Hugging Face Course](https://huggingface.co/course) - Free comprehensive course
-- [GPT-2 Demo](https://huggingface.co/spaces/akhaliq/gpt-2) - Try it online
+- [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers)
+- [GPT-2 paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+- [Hugging Face Course](https://huggingface.co/course)
 
 ## Project Stats
 
 | Metric | Value |
 |--------|-------|
-| Lines of Code | ~180 |
-| Time to Complete | 15-20 minutes |
-| GPU Required | No (but recommended) |
+| GPU Required | No |
 | Difficulty | ⭐☆☆ Beginner |
 | Prerequisites | Basic Python |
 
-## Contributing
-
-Found an issue? Have a suggestion? Feel free to:
-- Open an issue on GitHub
-- Submit a pull request with improvements
-- Share your extensions in the community
-
 ---
 
-**Happy Learning!** 🎉
-
-Remember: The best way to learn is by experimenting. Try different prompts, play with parameters, and see what creative text you can generate!
+The goal is to learn by changing one generation parameter at a time and observing what actually changes.
