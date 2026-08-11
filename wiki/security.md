@@ -4,6 +4,8 @@
 
 Security best practices for AI/ML systems, covering model security, application security, and compliance.
 
+> **Security note:** The examples below are educational patterns, not complete production security controls. Secrets, keys, model artifacts, and user data require environment-specific threat modeling and operational controls.
+
 ---
 
 ## Threat Modeling
@@ -13,403 +15,274 @@ Security best practices for AI/ML systems, covering model security, application 
 | Threat | Description | ML-Specific Examples |
 |--------|-------------|---------------------|
 | **Spoofing** | Impersonating legitimate users/entities | API key theft, credential stuffing |
-| **Tampering** | Modifying data or models | Training data poisoning, model weight manipulation |
-| **Repudiation** | Denying actions occurred | Lack of audit logs for predictions |
-| **Information Disclosure** | Exposing sensitive data | Model inversion attacks, training data leakage |
-| **Denial of Service** | Disrupting service availability | Adversarial examples causing resource exhaustion |
-| **Elevation of Privilege** | Gaining unauthorized access | Exploiting vulnerabilities to access model internals |
+| **Tampering** | Modifying data or models | Training-data poisoning, artifact manipulation |
+| **Repudiation** | Denying actions occurred | Missing or incomplete audit logs |
+| **Information Disclosure** | Exposing sensitive data | Model inversion, membership inference, prompt/data leakage |
+| **Denial of Service** | Disrupting availability | Expensive inference, adversarial resource exhaustion |
+| **Elevation of Privilege** | Gaining unauthorized access | Tool abuse, sandbox escape, compromised credentials |
 
-### AI-Specific Threats
-
-```python
-# Threat: Model Inversion Attack
-# Attacker reconstructs training data from model outputs
-
-def defend_against_inversion():
-    """
-    Defenses:
-    1. Limit prediction confidence output
-    2. Add differential privacy
-    3. Rate limit queries per user
-    4. Monitor for suspicious query patterns
-    """
-    pass
-
-# Threat: Membership Inference
-# Attacker determines if specific data was in training set
-
-def defend_against_membership_inference():
-    """
-    Defenses:
-    1. Regularization during training
-    2. Differential privacy
-    3. Limit model confidence
-    4. Ensemble methods
-    """
-    pass
-
-# Threat: Model Stealing
-# Attacker creates substitute model via queries
-
-def defend_against_model_stealing():
-    """
-    Defenses:
-    1. Rate limiting
-    2. Query watermarking
-    3. Reduce prediction precision
-    4. Legal agreements (ToS)
-    5. Monitor for systematic queries
-    """
-    pass
-```
+For agentic systems, also model prompt injection, indirect prompt injection, unsafe tool use, excessive agency, malicious retrieved documents, and secret exfiltration.
 
 ---
 
 ## Adversarial Robustness
 
-### Adversarial Attacks
+### FGSM
+
+Use `torch.autograd.grad` so the attack does not accidentally accumulate gradients in model parameters.
 
 ```python
 import torch
+import torch.nn.functional as F
 
-# Fast Gradient Sign Method (FGSM)
+
 def fgsm_attack(model, input_tensor, label, epsilon=0.01):
-    """Generate adversarial example using FGSM"""
-    input_tensor.requires_grad = True
-    output = model(input_tensor)
-    loss = torch.nn.functional.cross_entropy(output, label)
-    
-    loss.backward()
-    gradient = input_tensor.grad.detach()
-    sign_gradient = torch.sign(gradient)
-    
-    adversarial_input = input_tensor + epsilon * sign_gradient
-    return adversarial_input.clamp(0, 1)
+    """Generate an FGSM adversarial example."""
+    was_training = model.training
+    model.eval()
+    x = input_tensor.detach().clone().requires_grad_(True)
 
-# Projected Gradient Descent (PGD)
-def pgd_attack(model, input_tensor, label, epsilon=0.01, steps=10, alpha=0.001):
-    """Generate adversarial example using iterative PGD"""
-    adv_input = input_tensor.clone().detach()
-    
-    for _ in range(steps):
-        adv_input.requires_grad = True
-        output = model(adv_input)
-        loss = torch.nn.functional.cross_entropy(output, label)
-        
-        loss.backward()
-        gradient = adv_input.grad.detach()
-        
-        with torch.no_grad():
-            adv_input = adv_input + alpha * torch.sign(gradient)
-            # Project back to epsilon ball
-            diff = adv_input - input_tensor
-            diff = torch.clamp(diff, -epsilon, epsilon)
-            adv_input = torch.clamp(input_tensor + diff, 0, 1)
-    
-    return adv_input
+    output = model(x)
+    loss = F.cross_entropy(output, label)
+    gradient = torch.autograd.grad(loss, x)[0]
+
+    adversarial = (x + epsilon * gradient.sign()).clamp(0, 1).detach()
+    model.train(was_training)
+    return adversarial
 ```
 
-### Defenses
+### PGD
 
 ```python
-# Adversarial Training
-def adversarial_training_step(model, inputs, labels, epsilon=0.01):
-    """Train with adversarial examples"""
+import torch
+import torch.nn.functional as F
+
+
+def pgd_attack(model, input_tensor, label, epsilon=0.01, steps=10, alpha=0.001):
+    """Generate an L-infinity PGD adversarial example."""
+    original = input_tensor.detach()
+    adv = original.clone()
+    was_training = model.training
+    model.eval()
+
+    for _ in range(steps):
+        x = adv.detach().requires_grad_(True)
+        output = model(x)
+        loss = F.cross_entropy(output, label)
+        gradient = torch.autograd.grad(loss, x)[0]
+
+        with torch.no_grad():
+            adv = adv + alpha * gradient.sign()
+            delta = torch.clamp(adv - original, -epsilon, epsilon)
+            adv = (original + delta).clamp(0, 1)
+
+    model.train(was_training)
+    return adv.detach()
+```
+
+### Adversarial training step
+
+The optimizer must be supplied by the caller and stepped explicitly. The attack itself should not silently modify optimizer/model gradients.
+
+```python
+def adversarial_training_step(model, optimizer, inputs, labels, epsilon=0.01):
     model.train()
-    
-    # Generate adversarial examples
     adv_inputs = fgsm_attack(model, inputs, labels, epsilon)
-    
-    # Train on both clean and adversarial examples
+
+    optimizer.zero_grad(set_to_none=True)
     clean_outputs = model(inputs)
     adv_outputs = model(adv_inputs)
-    
-    clean_loss = torch.nn.functional.cross_entropy(clean_outputs, labels)
-    adv_loss = torch.nn.functional.cross_entropy(adv_outputs, labels)
-    
+
+    clean_loss = F.cross_entropy(clean_outputs, labels)
+    adv_loss = F.cross_entropy(adv_outputs, labels)
     total_loss = 0.5 * clean_loss + 0.5 * adv_loss
     total_loss.backward()
-    
+    optimizer.step()
+
     return total_loss.item()
+```
 
-# Randomized Smoothing
-class RandomizedSmoothing(torch.nn.Module):
-    def __init__(self, base_model, sigma=0.1, num_samples=100):
-        super().__init__()
-        self.base_model = base_model
-        self.sigma = sigma
-        self.num_samples = num_samples
-    
-    def forward(self, x):
-        # Add Gaussian noise and average predictions
-        predictions = []
-        for _ in range(self.num_samples):
-            noisy_x = x + torch.randn_like(x) * self.sigma
-            pred = self.base_model(noisy_x)
-            predictions.append(pred)
-        
-        return torch.stack(predictions).mean(dim=0)
+### Randomized smoothing
 
-# Input Transformation
+Averaging noisy predictions is useful as a robustness technique, but it is **not by itself a certified randomized-smoothing implementation**. Certified smoothing requires class-count statistics and an explicit confidence/abstention procedure.
+
+```python
+def noisy_prediction_average(model, x, sigma=0.1, num_samples=100):
+    predictions = []
+    with torch.no_grad():
+        for _ in range(num_samples):
+            noisy_x = x + torch.randn_like(x) * sigma
+            predictions.append(model(noisy_x))
+    return torch.stack(predictions).mean(dim=0)
+```
+
+### JPEG transformation
+
+```python
 def jpeg_compression_defense(input_tensor, quality=75):
-    """Apply JPEG compression as defense"""
+    """Apply JPEG round-trip to a single image tensor."""
     from PIL import Image
     import io
-    
-    # Convert tensor to PIL image
-    img = transforms.ToPILImage()(input_tensor.squeeze())
-    
-    # Compress and decompress
+    from torchvision import transforms
+
+    image = transforms.ToPILImage()(input_tensor.detach().cpu().squeeze())
     buffer = io.BytesIO()
-    img.save(buffer, format='JPEG', quality=quality)
+    image.save(buffer, format="JPEG", quality=quality)
     buffer.seek(0)
-    img_restored = Image.open(buffer)
-    
-    # Convert back to tensor
-    return transforms.ToTensor()(img_restored)
+    restored = Image.open(buffer).convert("RGB")
+    return transforms.ToTensor()(restored)
 ```
 
 ---
 
 ## Secure Deployment
 
-### Authentication & Authorization
+### Authentication
+
+Never put a real secret in source code. Use a secret manager or environment variable and restrict accepted JWT algorithms/claims according to the deployment's identity provider.
 
 ```python
-from fastapi import FastAPI, Depends, HTTPException, status
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+import os
 import jwt
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 app = FastAPI()
 security = HTTPBearer()
-
-SECRET_KEY = "your-secret-key"  # Use environment variable!
+SECRET_KEY = os.environ["SECRET_KEY"]
 ALGORITHM = "HS256"
 
+
 def verify_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
-    """Verify JWT token"""
     try:
-        payload = jwt.decode(
+        return jwt.decode(
             credentials.credentials,
             SECRET_KEY,
-            algorithms=[ALGORITHM]
+            algorithms=[ALGORITHM],
         )
-        return payload
-    except jwt.ExpiredSignatureError:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Token expired"
-        )
-    except jwt.InvalidTokenError:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token"
-        )
-
-@app.post("/predict")
-async def predict(payload: dict = Depends(verify_token)):
-    # User is authenticated, proceed with prediction
-    user_id = payload.get("sub")
-    # ... prediction logic
+    except jwt.ExpiredSignatureError as exc:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token expired") from exc
+    except jwt.InvalidTokenError as exc:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token") from exc
 ```
 
-### Rate Limiting
+### Rate limiting
+
+The previous example used a nonexistent `SlowAPISlow` class. SlowAPI uses `Limiter`, and the decorated route must receive the request object.
 
 ```python
-from slowapi import SlowAPISlow, _rate_limit_exceeded_handler
-from slowapi.util import get_remote_address
+from fastapi import FastAPI, Request
+from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 app = FastAPI()
-limiter = SlowAPISlow(key_func=get_remote_address)
+limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 @app.post("/predict")
-@limiter.limit("100/minute")  # 100 requests per minute per IP
+@limiter.limit("100/minute")
 async def predict(request: Request):
-    # ... prediction logic
+    return {"status": "ok"}
 ```
 
-### Input Validation
+### Input validation (Pydantic v2)
 
 ```python
-from pydantic import BaseModel, validator, Field
-import numpy as np
+from pydantic import BaseModel, ConfigDict, Field, field_validator
+import math
 
 class PredictionInput(BaseModel):
-    features: list[float] = Field(..., min_items=10, max_items=1000)
-    
-    @validator('features')
-    def validate_features(cls, v):
-        # Check for NaN values
-        if any(np.isnan(x) for x in v):
-            raise ValueError("Features cannot contain NaN values")
-        
-        # Check for reasonable ranges
-        if any(abs(x) > 1e6 for x in v):
+    features: list[float] = Field(..., min_length=10, max_length=1000)
+
+    @field_validator("features")
+    @classmethod
+    def validate_features(cls, values):
+        if any(not math.isfinite(x) for x in values):
+            raise ValueError("Features must contain only finite numbers")
+        if any(abs(x) > 1e6 for x in values):
             raise ValueError("Feature values out of expected range")
-        
-        return v
+        return values
 
 class PredictionOutput(BaseModel):
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {"prediction": 1, "confidence": 0.95}
+        }
+    )
     prediction: int
     confidence: float = Field(..., ge=0, le=1)
-    
-    class Config:
-        schema_extra = {
-            "example": {
-                "prediction": 1,
-                "confidence": 0.95
-            }
-        }
 ```
 
 ---
 
 ## Data Protection
 
-### Encryption at Rest
+Prefer safe, explicit model artifact formats over arbitrary pickle deserialization. Encryption does not make untrusted pickle data safe.
 
 ```python
 from cryptography.fernet import Fernet
-import pickle
 
-class EncryptedModelStorage:
-    def __init__(self, key: bytes = None):
-        if key is None:
-            key = Fernet.generate_key()
+class EncryptedBytesStorage:
+    def __init__(self, key: bytes):
         self.cipher = Fernet(key)
-        self.key = key  # Store securely!
-    
-    def save_model(self, model, path: str):
-        """Save encrypted model"""
-        # Serialize model
-        model_bytes = pickle.dumps(model)
-        
-        # Encrypt
-        encrypted = self.cipher.encrypt(model_bytes)
-        
-        # Save
-        with open(path, 'wb') as f:
-            f.write(encrypted)
-    
-    def load_model(self, path: str):
-        """Load and decrypt model"""
-        with open(path, 'rb') as f:
-            encrypted = f.read()
-        
-        # Decrypt
-        decrypted = self.cipher.decrypt(encrypted)
-        
-        # Deserialize
-        return pickle.loads(decrypted)
+
+    def save(self, data: bytes, path: str):
+        with open(path, "wb") as handle:
+            handle.write(self.cipher.encrypt(data))
+
+    def load(self, path: str) -> bytes:
+        with open(path, "rb") as handle:
+            return self.cipher.decrypt(handle.read())
 ```
 
-### Secure Secrets Management
+Generate/store the key outside the model artifact, preferably using a dedicated secrets-management system. Do not silently generate an ephemeral key that is lost when the process exits.
 
-```python
-# ❌ Wrong: Hardcoded secrets
-SECRET_KEY = "super-secret-key-123"
-DATABASE_URL = "postgresql://user:password@localhost/db"
-
-# ✅ Correct: Environment variables
-import os
-from dotenv import load_dotenv
-
-load_dotenv()  # Load from .env file
-
-SECRET_KEY = os.environ.get("SECRET_KEY")
-DATABASE_URL = os.environ.get("DATABASE_URL")
-
-# Or use a secrets manager
-import boto3
-
-secrets_client = boto3.client('secretsmanager')
-response = secrets_client.get_secret_value(SecretId='my-app-secrets')
-secrets = json.loads(response['SecretString'])
-```
+For PyTorch models, prefer a `state_dict`/`safetensors` workflow and load only artifacts you trust. Do not treat encrypted pickle as a general-purpose secure model format.
 
 ---
 
-## Compliance & Governance
-
-### Model Cards
-
-```markdown
-# Model Card: Fraud Detection Model
-
-## Model Details
-- **Developer**: AI Team
-- **Version**: 2.1.0
-- **Date**: 2024-01-15
-- **License**: Proprietary
-
-## Intended Use
-- Detecting fraudulent transactions in e-commerce
-- Not intended for medical or legal decisions
-
-## Training Data
-- **Source**: Internal transaction logs (2020-2023)
-- **Size**: 10M transactions
-- **Preprocessing**: Normalized, balanced with SMOTE
-
-## Evaluation Data
-- **Test Set**: Hold-out 20% of data
-- **Metrics**: 
-  - Accuracy: 98.5%
-  - Precision: 94.2%
-  - Recall: 96.8%
-  - F1 Score: 95.5%
-
-## Limitations
-- Performance may degrade on new fraud patterns
-- Requires retraining quarterly
-- Not validated for international transactions
-
-## Ethical Considerations
-- Regular bias audits conducted
-- False positives reviewed by human analysts
-- Appeals process available for flagged transactions
-```
-
-### Audit Logging
+## Secure Secrets Management
 
 ```python
-import logging
+import os
+
+SECRET_KEY = os.environ["SECRET_KEY"]
+DATABASE_URL = os.environ["DATABASE_URL"]
+```
+
+For production systems, use the platform's secrets manager instead of committing `.env` files or secrets to source control.
+
+---
+
+## Audit Logging
+
+Use timezone-aware UTC timestamps and explicitly pass request metadata into the logging function rather than relying on undefined helper functions.
+
+```python
 import json
-from datetime import datetime
+import logging
+from datetime import datetime, timezone
 
-audit_logger = logging.getLogger('audit')
-audit_logger.setLevel(logging.INFO)
+logger = logging.getLogger("audit")
 
-# Separate file handler for audit logs
-handler = logging.FileHandler('audit.log')
-handler.setFormatter(logging.Formatter('%(message)s'))
-audit_logger.addHandler(handler)
 
-def log_model_access(user_id: str, model_id: str, action: str, details: dict):
-    """Log model access for audit trail"""
-    audit_entry = {
-        "timestamp": datetime.utcnow().isoformat(),
+def log_model_access(*, user_id, model_id, action, details, ip_address=None, user_agent=None):
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "event_type": "model_access",
         "user_id": user_id,
         "model_id": model_id,
         "action": action,
         "details": details,
-        "ip_address": get_client_ip(),
-        "user_agent": get_user_agent()
+        "ip_address": ip_address,
+        "user_agent": user_agent,
     }
-    audit_logger.info(json.dumps(audit_entry))
-
-# Usage
-log_model_access(
-    user_id="user123",
-    model_id="fraud-detection-v2",
-    action="predict",
-    details={"request_id": "req-456", "latency_ms": 45}
-)
+    logger.info(json.dumps(entry, separators=(",", ":")))
 ```
+
+Define retention, access control, redaction, rotation, and tamper-resistance requirements separately for production deployments.
 
 ---
 
@@ -419,12 +292,21 @@ log_model_access(
 - [ ] Threat modeling completed
 - [ ] Security requirements defined
 - [ ] Input validation implemented
-- [ ] Error messages don't leak information
+- [ ] Error messages don't leak sensitive information
 - [ ] Dependencies scanned for vulnerabilities
+- [ ] Model/data artifacts have provenance and integrity checks
+
+### Agentic Systems
+- [ ] Tools use least privilege
+- [ ] Shell/filesystem/network access is allowlisted
+- [ ] Destructive actions require appropriate confirmation
+- [ ] Retrieved content is treated as untrusted input
+- [ ] Secrets are isolated from model/tool context
+- [ ] Tool calls are audited
 
 ### Deployment
 - [ ] HTTPS/TLS enabled
-- [ ] Authentication required
+- [ ] Authentication and authorization required
 - [ ] Rate limiting configured
 - [ ] Secrets managed securely
 - [ ] Network segmentation in place
@@ -434,14 +316,7 @@ log_model_access(
 - [ ] Monitoring for anomalies
 - [ ] Incident response plan ready
 - [ ] Regular security assessments
-- [ ] Patch management process
-
-### Compliance
-- [ ] Data privacy requirements met
-- [ ] Model documentation complete
-- [ ] Bias assessment conducted
-- [ ] Access controls documented
-- [ ] Retention policies defined
+- [ ] Patch management process defined
 
 ---
 
