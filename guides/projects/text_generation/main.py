@@ -2,11 +2,7 @@
 # A minimal, heavily-commented introduction to text generation with pre-trained models
 # Lines of code: ~180 (including comments)
 
-# ============================================================================
-# STEP 1: IMPORT REQUIRED LIBRARIES
-# ============================================================================
-
-from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+from transformers import pipeline
 import torch
 
 print("=" * 70)
@@ -14,27 +10,16 @@ print("TEXT GENERATION PROJECT - Creating Text with AI")
 print("=" * 70)
 print()
 
-# Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 if device.type == "cpu":
     print("Note: Text generation works on CPU but is slower. GPU recommended!")
 print()
 
-# ============================================================================
-# STEP 2: LOAD A PRE-TRAINED TEXT GENERATION MODEL
-# ============================================================================
-
-# We'll use GPT-2, a famous text generation model from OpenAI
-# It's small enough to run on most computers but powerful enough to generate
-# coherent text
-
 print("Loading GPT-2 model...")
 print("(First run will download the model, this may take a minute)")
 print()
 
-# Method 1: Using the pipeline API (easiest)
-# The pipeline handles everything: tokenization, generation, decoding
 generator = pipeline(
     "text-generation",
     model="gpt2",
@@ -42,31 +27,23 @@ generator = pipeline(
 )
 
 print("✓ Model loaded successfully!")
-print(f"  Model: GPT-2 (124 million parameters)")
+print("  Model: GPT-2 (124 million parameters)")
 print(f"  Device: {device}")
 print()
-
-# ============================================================================
-# STEP 3: BASIC TEXT GENERATION
-# ============================================================================
 
 print("-" * 70)
 print("EXAMPLE 1: Basic Text Generation")
 print("-" * 70)
 
-# Give the model a starting prompt
 prompt = "Once upon a time in a magical land"
-
 print(f"Prompt: {prompt}")
 print()
 
-# Generate text
-# max_new_tokens: how many new words/tokens to generate
-# num_return_sequences: how many different versions to create
 generated = generator(
     prompt,
     max_new_tokens=50,
     num_return_sequences=2,
+    do_sample=True,
     pad_token_id=generator.tokenizer.eos_token_id
 )
 
@@ -75,30 +52,18 @@ for i, text in enumerate(generated, 1):
     print(f"\n{i}. {text['generated_text']}")
 
 print()
-
-# ============================================================================
-# STEP 4: CONTROLLING GENERATION WITH PARAMETERS
-# ============================================================================
-
 print("-" * 70)
 print("EXAMPLE 2: Controlling Generation Parameters")
 print("-" * 70)
 
-# Temperature: Controls randomness
-# - Low (0.1-0.5): More predictable, repetitive
-# - Medium (0.7-1.0): Balanced
-# - High (1.0-2.0): More creative, random
-
-# Top-p (nucleus sampling): Controls vocabulary size
-# - Low (0.5): Only most likely words
-# - High (0.95): Wider vocabulary
+# Temperature only affects generation when sampling is enabled (do_sample=True).
+# Lower values make sampling more conservative; higher values make it more random.
+# Top-p (nucleus sampling) limits sampling to a probability mass of likely tokens.
 
 prompt = "The future of artificial intelligence is"
-
 print(f"Prompt: {prompt}")
 print()
 
-# Low temperature - more predictable
 print("With low temperature (0.3) - more predictable:")
 low_temp = generator(
     prompt,
@@ -111,7 +76,6 @@ low_temp = generator(
 print(f"  {low_temp[0]['generated_text']}")
 print()
 
-# High temperature - more creative
 print("With high temperature (1.2) - more creative:")
 high_temp = generator(
     prompt,
@@ -124,49 +88,34 @@ high_temp = generator(
 print(f"  {high_temp[0]['generated_text']}")
 print()
 
-# ============================================================================
-# STEP 5: UNDERSTANDING TOKENIZATION
-# ============================================================================
-
 print("-" * 70)
 print("EXAMPLE 3: Understanding Tokenization")
 print("-" * 70)
 
-# Before the model can process text, it must be converted to numbers
-# This process is called tokenization
-
 tokenizer = generator.tokenizer
-
 sample_text = "Artificial intelligence is amazing!"
 
 print(f"Original text: {sample_text}")
 print()
 
-# Tokenize the text
 tokens = tokenizer.tokenize(sample_text)
 print(f"Tokens: {tokens}")
 print()
 
-# Convert to token IDs
-token_ids = tokenizer.encode(sample_text)
+token_ids = tokenizer.encode(sample_text, add_special_tokens=False)
 print(f"Token IDs: {token_ids}")
 print()
 
-# Show the mapping
+# tokenizer.encode() may add special tokens for some models. We explicitly disable
+# them here so the displayed token-to-ID mapping has exactly matching lengths.
 print("Token → ID mapping:")
 for token, token_id in zip(tokens, token_ids):
     print(f"  '{token}' → {token_id}")
 
 print()
-
-# Decode back to text
 decoded = tokenizer.decode(token_ids)
 print(f"Decoded back: {decoded}")
 print()
-
-# ============================================================================
-# STEP 6: GENERATING WITH DIFFERENT PROMPTS
-# ============================================================================
 
 print("-" * 70)
 print("EXAMPLE 4: Generating Different Types of Text")
@@ -185,6 +134,7 @@ for prompt in prompts:
         prompt,
         max_new_tokens=25,
         temperature=0.7,
+        do_sample=True,
         pad_token_id=generator.tokenizer.eos_token_id
     )
     print(f"Result: {result[0]['generated_text']}")
@@ -192,37 +142,36 @@ for prompt in prompts:
 
 print()
 
-# ============================================================================
-# STEP 7: BUILDING A SIMPLE TEXT COMPLETION FUNCTION
-# ============================================================================
-
 print("-" * 70)
 print("EXAMPLE 5: Build Your Own Text Completion Function")
 print("-" * 70)
 
-def complete_text(prompt, max_words=30, creativity=0.7):
-    """
-    Generate text completion for a given prompt.
-    
+def complete_text(prompt, max_new_tokens=30, creativity=0.7):
+    """Generate a sampled text completion.
+
     Args:
-        prompt: Starting text
-        max_words: Maximum number of new tokens to generate
-        creativity: 0.1 (predictable) to 1.5 (very creative)
-    
+        prompt: Starting text.
+        max_new_tokens: Maximum number of new tokens to generate.
+        creativity: Sampling temperature. Higher values increase randomness.
+
     Returns:
-        Generated text as a string
+        Generated text as a string.
     """
+    if max_new_tokens < 1:
+        raise ValueError("max_new_tokens must be at least 1")
+    if creativity <= 0:
+        raise ValueError("creativity/temperature must be greater than 0")
+
     result = generator(
         prompt,
-        max_new_tokens=max_words,
+        max_new_tokens=max_new_tokens,
         temperature=creativity,
         top_p=0.95,
         do_sample=True,
         pad_token_id=generator.tokenizer.eos_token_id
     )
-    return result[0]['generated_text']
+    return result[0]["generated_text"]
 
-# Test our function
 print("\nTesting custom text completion function:\n")
 
 test_prompts = [
@@ -231,51 +180,42 @@ test_prompts = [
     ("In the year 2050,", 30, 1.0),
 ]
 
-for prompt, words, creativity in test_prompts:
+for prompt, max_new_tokens, creativity in test_prompts:
     print(f"Prompt: {prompt}")
-    print(f"Settings: max_words={words}, creativity={creativity}")
-    result = complete_text(prompt, words, creativity)
+    print(f"Settings: max_new_tokens={max_new_tokens}, temperature={creativity}")
+    result = complete_text(prompt, max_new_tokens, creativity)
     print(f"Result: {result}")
     print()
-
-# ============================================================================
-# STEP 8: UNDERSTANDING GENERATION PARAMETERS
-# ============================================================================
 
 print("-" * 70)
 print("KEY GENERATION PARAMETERS EXPLAINED")
 print("-" * 70)
 
 print("""
-1. max_new_tokens: 
+1. max_new_tokens:
    - How many new tokens (words/pieces) to generate
    - More tokens = longer text but slower
 
 2. temperature:
-   - Controls randomness (0.1 to 2.0)
-   - Low = predictable, repetitive
-   - High = creative, random
-   - Default = 1.0
+   - Controls randomness when do_sample=True
+   - Lower = more conservative sampling
+   - Higher = more random sampling
+   - Typical values are around 0.2-1.2, depending on the task
 
 3. top_p (nucleus sampling):
-   - Controls vocabulary size (0.0 to 1.0)
-   - Low = only most likely words
-   - High = wider vocabulary
-   - Default = 1.0
+   - Samples from the smallest set of tokens whose cumulative probability reaches p
+   - Lower = narrower candidate set
+   - Higher = wider candidate set
 
 4. do_sample:
-   - True = sample randomly (creative)
-   - False = always pick most likely (greedy)
+   - True = sample from the next-token distribution
+   - False = use deterministic decoding such as greedy decoding
+   - temperature/top_p do not control randomness when sampling is disabled
 
 5. repetition_penalty:
-   - Penalizes repeating words (1.0 to 2.0)
-   - Higher = less repetition
-   - Default = 1.0
+   - Penalizes tokens that have already appeared
+   - 1.0 means no penalty; larger values discourage repetition
 """)
-
-# ============================================================================
-# STEP 9: TRYING A DIFFERENT MODEL
-# ============================================================================
 
 print("-" * 70)
 print("EXAMPLE 6: Using a Different Model (Optional)")
@@ -291,31 +231,27 @@ try:
         model="distilgpt2",
         device=device
     )
-    
+
     prompt = "Deep learning is"
     print(f"Prompt: {prompt}")
-    
+
     result = small_generator(
         prompt,
         max_new_tokens=30,
         temperature=0.7,
+        do_sample=True,
         pad_token_id=small_generator.tokenizer.eos_token_id
     )
-    
+
     print(f"Result: {result[0]['generated_text']}")
     print()
     print("Note: Smaller models are faster but may produce less coherent text")
-    
+
 except Exception as e:
     print(f"Could not load alternative model: {e}")
     print("This is okay! The default GPT-2 model works great.")
 
 print()
-
-# ============================================================================
-# CONCLUSION
-# ============================================================================
-
 print("=" * 70)
 print("CONGRATULATIONS! You've completed the Text Generation Project!")
 print("=" * 70)
@@ -330,15 +266,15 @@ What you learned:
 
 Key Concepts:
 - Tokens: Pieces of text (words, subwords, characters)
-- Temperature: Controls randomness vs. predictability
-- Top-p sampling: Controls vocabulary size
+- Temperature: Controls sampling randomness when sampling is enabled
+- Top-p sampling: Restricts sampling to a probability mass
 - Causal language modeling: Predicting the next token
 
 Tips for Better Generation:
 1. Use detailed prompts for better results
-2. Experiment with temperature (0.7 is usually good)
+2. Experiment with temperature (0.7 is a reasonable starting point)
 3. Try top_p around 0.9-0.95
-4. Use repetition_penalty to avoid loops
+4. Use repetition_penalty to avoid loops when appropriate
 5. Longer prompts give more context
 
 Next steps:
