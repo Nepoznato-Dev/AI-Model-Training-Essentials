@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Logica e pensiero critico
 La logica è lo studio del ragionamento valido: come costruire argomentazioni valide e identificare quelle imperfette. Il pensiero critico è l’abitudine disciplinata di mettere in discussione le ipotesi, valutare le prove e ragionare attentamente. Queste competenze sono essenziali non solo in matematica e informatica, ma nel processo decisionale quotidiano, nella ricerca scientifica e nella navigazione in un mondo ricco di informazioni.
 ---

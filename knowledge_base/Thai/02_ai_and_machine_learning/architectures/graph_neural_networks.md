@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # กราฟโครงข่ายประสาทเทียม
 Graph Neural Networks (GNN) คือโครงข่ายประสาทเทียมที่ออกแบบมาเพื่อทำงานบนข้อมูลที่มีโครงสร้างกราฟ — เครือข่ายของโหนดที่เชื่อมต่อกันด้วย Edge ในขณะที่โครงข่ายประสาทเทียมแบบดั้งเดิมทำงานบนกริด (รูปภาพ) หรือลำดับ (ข้อความ) GNN จะจัดการโครงสร้างเชิงสัมพันธ์ตามอำเภอใจ เช่น เครือข่ายสังคม กราฟโมเลกุล กราฟความรู้ เครือข่ายถนน กราฟแนะนำ และอื่นๆ สิ่งเหล่านี้กลายเป็นสิ่งจำเป็นสำหรับการค้นคว้ายา การตรวจจับการฉ้อโกง ระบบการแนะนำ และขอบเขตใดๆ ที่ความสัมพันธ์ระหว่างหน่วยงานมีความสำคัญ
 ---

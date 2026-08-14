@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সমাবেশের ভাষা
 সমাবেশ ভাষা হল সর্বনিম্ন স্তরের মানব-পাঠযোগ্য প্রোগ্রামিং ভাষা। এটি কাঁচা বাইনারির পরিবর্তে মেমোনিক কোড (যেমন`MOV`,`ADD`,`JMP`) ব্যবহার করে কম্পিউটারের মেশিন কোড নির্দেশাবলীর সরাসরি উপস্থাপনা প্রদান করে। প্রতিটি অ্যাসেম্বলি ভাষা একটি নির্দিষ্ট প্রসেসর আর্কিটেকচারের জন্য নির্দিষ্ট (x86, ARM, MIPS, RISC-V) — একটি আর্কিটেকচারের জন্য লেখা কোড অন্যটিতে চলবে না।
 অ্যাসেম্বলি ভাষা নির্মাণ অ্যাপ্লিকেশনের জন্য ব্যবহার করা হয় না. এটি ব্যবহার করা হয় যখন আপনার হার্ডওয়্যারের উপর নিখুঁত নিয়ন্ত্রণের প্রয়োজন হয়: অপারেটিং সিস্টেমের কার্নেল, ডিভাইস ড্রাইভার, বুটলোডার, এমবেডেড ফার্মওয়্যার, কর্মক্ষমতা-সমালোচনামূলক কোড বিভাগ, রিভার্স ইঞ্জিনিয়ারিং এবং কম্পিউটারগুলি কীভাবে নির্দেশাবলী কার্যকর করে তা বোঝা।

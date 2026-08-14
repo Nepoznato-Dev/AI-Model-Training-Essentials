@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 法律和法律体系
 法律是社会同意通过其机构执行的一套规则。它与道德不同——你可以做一些合法但不道德的事情，也可以做一些非法但在道德上合理的事情。法律的存在是为了提供可预测性：规定什么是允许的，什么是禁止的，以及违反规则时会发生什么。没有它，争端就靠权力来解决。有了它，争议就可以通过程序解决。
 本文件涵盖了主要法律体系、主要法律分支以及影响法律体系在实践中如何运作的概念。

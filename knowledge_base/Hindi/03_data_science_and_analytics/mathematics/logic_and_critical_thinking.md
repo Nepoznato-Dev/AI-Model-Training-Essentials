@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # तर्क और आलोचनात्मक सोच
 तर्क वैध तर्क का अध्ययन है - अच्छे तर्कों का निर्माण कैसे करें और त्रुटिपूर्ण तर्कों की पहचान कैसे करें। आलोचनात्मक सोच धारणाओं पर सवाल उठाने, साक्ष्य का मूल्यांकन करने और सावधानीपूर्वक तर्क करने की अनुशासित आदत है। ये कौशल न केवल गणित और कंप्यूटर विज्ञान में आवश्यक हैं, बल्कि रोजमर्रा के निर्णय लेने, वैज्ञानिक अनुसंधान और सूचना-समृद्ध दुनिया में नेविगेट करने के लिए भी आवश्यक हैं।
 ---

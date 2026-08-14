@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #อนาคตที่ยั่งยืน
 ## ภาพรวม
 คำถามไม่ได้อยู่ที่ว่า *โลกจำเป็นต้องเปลี่ยนไปสู่เศรษฐกิจที่ยั่งยืนหรือไม่ แต่คำถามคือ *เร็วแค่ไหน* และ *ใครเป็นผู้นำ* ปัจจุบันพลังงานหมุนเวียนเป็นแหล่งพลังงานที่ถูกที่สุดในตลาดส่วนใหญ่ หลักการเศรษฐกิจหมุนเวียนกำลังเปลี่ยนจากแนวคิดเฉพาะไปสู่กลยุทธ์องค์กร เมืองต่างๆ กำลังคิดใหม่ทุกอย่างตั้งแต่การขนส่งไปจนถึงขยะ และการแย่งชิงคาร์บอนสุทธิเป็นศูนย์กำลังพลิกโฉมอุตสาหกรรมจากพลังงานไปสู่การเงิน ต่อไปนี้คือลักษณะของอนาคตที่ยั่งยืนในมิติหลักทั้งสี่ประการ

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شل و پاورشل
 شل اسکریپت به نوشتن اسکریپت برای مفسرهای خط فرمان اشاره دارد. دو پوسته مهم عبارتند از **Bash** (Bourne Again Shell) - پیش‌فرض در لینوکس و macOS - و **PowerShell** - پوسته و زبان اسکریپت‌نویسی چند پلتفرمی مدرن مایکروسافت. اسکریپت‌های شل، وظایف مدیریت سیستم، ساخت خطوط لوله، پردازش فایل و گردش‌های کاری استقرار را خودکار می‌کنند.
 هر توسعه دهنده، مهندس DevOps و مدیر سیستم به مهارت های پوسته نویسی نیاز دارد. چه در حال استقرار یک وب سرور، پردازش فایل های گزارش، راه اندازی خطوط لوله CI/CD یا پشتیبان گیری خودکار باشید، اسکریپت پوسته ابزاری برای این کار است.

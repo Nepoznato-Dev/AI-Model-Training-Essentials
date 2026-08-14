@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Быстрый
 Swift — это современный компилируемый язык программирования, разработанный Apple (под руководством Криса Латтнера) и впервые выпущенный в 2014 году. Он был разработан для замены Objective-C в качестве основного языка разработки платформ Apple (iOS, macOS, watchOS, tvOS, VisionOS). Swift сочетает в себе производительность скомпилированных языков с выразительностью языков сценариев и уделяет особое внимание безопасности — особенно в отношении нулевых значений, управления памятью и ошибок типов.
 Помимо платформ Apple, Swift все чаще используется для разработки на стороне сервера (Vapor, Hummingbird), кроссплатформенных приложений и даже машинного обучения (Apple Create ML). С появлением Swift on Server и кроссплатформенной поддержки Swift становится больше, чем просто «языком Apple».

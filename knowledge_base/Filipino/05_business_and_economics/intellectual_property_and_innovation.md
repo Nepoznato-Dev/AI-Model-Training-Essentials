@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Intellectual Property at Innovation
 Ang intelektwal na ari-arian (IP) ay tumutukoy sa mga likha ng isip — mga imbensyon, masining na gawa, mga pangalan ng tatak, disenyo, mga lihim ng kalakalan — na pinoprotektahan ng batas mula sa hindi awtorisadong paggamit. Ang inobasyon ay ang proseso ng paggawa ng mga ideya sa halaga. Umiiral ang batas ng IP upang balansehin ang dalawang magkatunggaling interes: nagbibigay-kasiyahan sa mga tagalikha (sa pamamagitan ng pagbibigay sa kanila ng mga pansamantalang monopolyo) at pakikinabang sa lipunan (sa pamamagitan ng pagtiyak na ang kaalaman ay magiging malayang magagamit). Ang pag-unawa sa IP ay mahalaga para sa sinumang gumagawa ng mga produkto, paglikha ng nilalaman, pagpapatakbo ng isang negosyo, o pagtatrabaho sa pananaliksik.
 ---

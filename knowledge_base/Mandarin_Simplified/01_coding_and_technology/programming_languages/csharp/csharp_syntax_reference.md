@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C# — 语法参考
 本文档为现代 C#（.NET 7/8 上的 C# 10/11/12）提供全面、结构化的语法参考。它通过关注详尽的语法模式、LINQ、异步/等待、模式匹配和现代功能来补充主要的 C# 参考。
 ---

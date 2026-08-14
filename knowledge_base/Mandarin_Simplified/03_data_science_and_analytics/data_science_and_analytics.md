@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 数据科学与分析
 数据科学是将原始数据转化为可操作的见解的学科。它位于统计学、计算机科学和领域专业知识的交叉点，并且已经成为从金融到医疗保健的各个领域的重要组成部分。该文件介绍了每个从业者都应该了解的核心概念、工具和工作流程。
 ---

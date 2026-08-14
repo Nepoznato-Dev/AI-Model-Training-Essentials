@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 論理と批判的思考
 論理学は、正当な推論、つまり健全な議論を構築し、欠陥のある議論を特定する方法の研究です。クリティカルシンキングとは、仮定に疑問を持ち、証拠を評価し、慎重に推論する規律ある習慣です。これらのスキルは、数学やコンピューター サイエンスだけでなく、日常の意思決定、科学研究、情報が豊富な世界をナビゲートする際にも不可欠です。
 ---

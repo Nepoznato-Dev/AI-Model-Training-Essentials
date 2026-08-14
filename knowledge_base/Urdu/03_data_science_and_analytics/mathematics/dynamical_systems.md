@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # متحرک نظام
 ایک **متحرک نظام** بیان کرتا ہے کہ ایک ریاست ایک مقررہ اصول کے مطابق وقت کے ساتھ کیسے تیار ہوتی ہے۔ سیاروں کے مدار سے لے کر آبادی کی حرکیات تک، موسم کے نمونوں سے لے کر نیورل نیٹ ورکس کی تربیت تک، متحرک نظام کا نظریہ یہ سمجھنے کے لیے زبان اور اوزار فراہم کرتا ہے کہ چیزیں کیسے بدلتی ہیں۔ یہ فائل عام تفریق مساوات (ODEs)، جزوی تفریق مساوات (PDEs)، استحکام تجزیہ، افراتفری، اور تقسیم کا احاطہ کرتی ہے۔
 ---

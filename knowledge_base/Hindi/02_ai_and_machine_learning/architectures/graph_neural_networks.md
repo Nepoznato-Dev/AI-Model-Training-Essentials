@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ग्राफ़ न्यूरल नेटवर्क
 ग्राफ न्यूरल नेटवर्क (जीएनएन) तंत्रिका नेटवर्क हैं जो ग्राफ-संरचित डेटा पर काम करने के लिए डिज़ाइन किए गए हैं - किनारों से जुड़े नोड्स के नेटवर्क। जबकि पारंपरिक तंत्रिका नेटवर्क ग्रिड (चित्र) या अनुक्रम (पाठ) पर काम करते हैं, जीएनएन मनमानी संबंधपरक संरचनाओं को संभालते हैं: सामाजिक नेटवर्क, आणविक ग्राफ, ज्ञान ग्राफ, सड़क नेटवर्क, अनुशंसा ग्राफ, और बहुत कुछ। वे दवा खोज, धोखाधड़ी का पता लगाने, अनुशंसा प्रणाली और किसी भी डोमेन के लिए आवश्यक हो गए हैं जहां संस्थाओं के बीच संबंध मायने रखते हैं।
 ---

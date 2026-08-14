@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # विज्ञान और शिक्षाशास्त्र सीखना
 विज्ञान सीखना इस बात का अंतःविषय अध्ययन है कि लोग कैसे सीखते हैं - मनोविज्ञान, तंत्रिका विज्ञान, शिक्षा और संज्ञानात्मक विज्ञान से। शिक्षाशास्त्र शिक्षण का अभ्यास और पद्धति है। साथ में, वे शिक्षण, प्रशिक्षण, मार्गदर्शन या शैक्षिक सामग्री डिज़ाइन करने वाले किसी भी व्यक्ति से संबंधित प्रश्नों को संबोधित करते हैं: कौन से तरीके लोगों को प्रभावी ढंग से सीखने में मदद करते हैं? कौन सी सामान्य अध्ययन तकनीकें अप्रभावी हैं? इष्टतम प्रतिधारण और स्थानांतरण के लिए निर्देश को कैसे संरचित किया जाना चाहिए?
 ---

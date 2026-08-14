@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #টেকসই ভবিষ্যৎ
 ## ওভারভিউ
 প্রশ্ন এখন আর নয় যে *বিশ্বকে একটি টেকসই অর্থনীতিতে রূপান্তর করতে হবে, তবে *কত দ্রুত* এবং *কে নেতৃত্ব দেয়*। নবায়নযোগ্য শক্তি এখন বেশিরভাগ বাজারে সবচেয়ে সস্তা শক্তির উৎস। বৃত্তাকার অর্থনীতি নীতিগুলি কুলুঙ্গি ধারণা থেকে কর্পোরেট কৌশলে চলে যাচ্ছে। শহরগুলি পরিবহন থেকে বর্জ্য সবকিছু পুনর্বিবেচনা করছে। এবং নেট শূন্যের দৌড় শিল্পগুলিকে শক্তি থেকে অর্থায়নে পুনর্নির্মাণ করছে। চারটি মূল মাত্রা জুড়ে টেকসই ভবিষ্যত কেমন দেখাচ্ছে তা এখানে।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # ब्लॉकचेन और वितरित सिस्टम
 ब्लॉकचेन एक विशिष्ट प्रकार की वितरित प्रणाली है - एक विकेन्द्रीकृत, केवल परिशिष्ट खाता बही जहां रिकॉर्ड (ब्लॉक) क्रिप्टोग्राफ़िक हैश द्वारा जुड़े होते हैं। वितरित सिस्टम कई कंप्यूटरों को एक साथ काम करने का व्यापक क्षेत्र है। दोनों अवधारणाएं आधुनिक बुनियादी ढांचे को समझने के लिए महत्वपूर्ण हैं, क्रिप्टोकरेंसी से लेकर वितरित डेटाबेस से लेकर सर्वसम्मति एल्गोरिदम तक जो वैश्विक सेवाओं को शक्ति प्रदान करते हैं।
 ---

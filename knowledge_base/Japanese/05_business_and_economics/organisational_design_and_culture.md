@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 組織設計と文化
 組織デザインとは、戦略を効果的に実行するための構造、プロセス、役割、意思決定権を意図的に配置することです。文化とは、人々が実際にどのように協力するかを形作る共有の価値観、信念、規範、行動です。構造はフレームワークを提供します。文化は行動を形成します。構造は紙の上で再設計できますが、文化がその変更をサポートしていなければ、実装は失敗します。同様に、強力な文化と非効率な構造が組み合わされると、組織のパフォーマンスは徐々に低下します。最も効果的な組織は両方に取り組み、それらが深く相互に関連していることを認識しています。
 ---

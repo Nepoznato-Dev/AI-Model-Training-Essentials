@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 物理
 物理学提出了科学中最基本的问题：物质和能量如何表现？其他一切——化学、生物学、工程学——都建立在答案的基础上。物理学的范围从亚原子尺度（量子力学）到宇宙尺度（广义相对论），其原理支撑着所有其他自然科学。
 ---

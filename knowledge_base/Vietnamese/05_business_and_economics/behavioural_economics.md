@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Kinh tế học hành vi và khoa học quyết định
 Kinh tế học hành vi nghiên cứu cách mọi người thực sự đưa ra quyết định - chứ không phải cách các tác nhân hợp lý sẽ đưa ra quyết định. Kinh tế học truyền thống cho rằng con người có lý trí, tư lợi và giỏi xử lý thông tin. Nhiều thập kỷ nghiên cứu của Kahneman, Tversky, Thaler và những người khác đã chỉ ra rằng điều này cực kỳ không chính xác. Mọi người sử dụng lối tắt tinh thần, bị ảnh hưởng bởi bối cảnh không liên quan, thừa nhận thông tin gần đây và mắc phải những lỗi có thể dự đoán được một cách có hệ thống. Hiểu những mô hình này là điều cần thiết để thiết kế các sản phẩm, chính sách, tổ chức và quyết định cá nhân tốt hơn.
 ---

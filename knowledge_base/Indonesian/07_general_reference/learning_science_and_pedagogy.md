@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pembelajaran Sains dan Pedagogi
 Pembelajaran sains adalah studi interdisipliner tentang bagaimana orang belajar — diambil dari psikologi, ilmu saraf, pendidikan, dan ilmu kognitif. Pedagogi adalah praktik dan metodologi pengajaran. Bersama-sama, mereka menjawab pertanyaan-pertanyaan yang relevan bagi siapa pun yang mengajar, melatih, membimbing, atau merancang konten pendidikan: Metode apa yang membantu orang belajar secara efektif? Teknik belajar umum apa yang tidak efisien? Bagaimana seharusnya pengajaran disusun untuk retensi dan transfer yang optimal?
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বিচ্ছিন্ন গণিত
 বিচ্ছিন্ন গণিত হল গাণিতিক কাঠামোর অধ্যয়ন যা মৌলিকভাবে গণনাযোগ্য বা পৃথক করা হয় — ক্রমাগত গণিতের বিপরীতে (ক্যালকুলাস, বাস্তব বিশ্লেষণ), যা মসৃণ, অবিচ্ছিন্ন পরিমাণ নিয়ে কাজ করে। বিচ্ছিন্ন গণিত কম্পিউটার বিজ্ঞান, ক্রিপ্টোগ্রাফি, অ্যালগরিদম ডিজাইন এবং ডেটা স্ট্রাকচারকে আন্ডারপিন করে। যদি ক্রমাগত গণিত ভৌত জগতকে বর্ণনা করে, তবে পৃথক গণিত গণনা জগতের বর্ণনা করে।
 ---

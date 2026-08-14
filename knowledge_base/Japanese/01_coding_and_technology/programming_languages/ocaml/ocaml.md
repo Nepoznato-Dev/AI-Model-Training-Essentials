@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #OCaml
 OCaml (Objective Caml) は、フランスの INRIA で開発され、1996 年に初めてリリースされた関数型プログラミング言語です。関数型プログラミングの表現力と、型推論 (Hindley-Milner) を備えた強力な型システム、パターン マッチング、代数データ型、およびオプションのオブジェクト指向プログラミングといった実用的な機能が組み合わされています。 OCaml は高速なネイティブ コードにコンパイルされ、バイトコードもサポートします。
 OCaml の最も有名な実際のアプリケーションは **Jane Street** 貿易会社で、取引インフラ全体に OCaml を使用しています。また、コンパイラ開発 (Rust コンパイラは元々 OCaml で書かれています)、形式検証、金融システム、定理証明にも使用されます。

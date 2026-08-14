@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mécanique quantique
 La mécanique quantique est la théorie de la physique aux plus petites échelles : les atomes, les électrons, les photons et les particules fondamentales de la nature. Il remplace le monde déterministe de la mécanique classique par les probabilités, les superpositions et l'intrication. Malgré sa nature contre-intuitive, la mécanique quantique est la théorie la plus précisément testée de toutes les sciences. Aujourd’hui, ses principes deviennent directement pertinents pour l’informatique grâce aux ordinateurs quantiques, qui promettent de résoudre certains problèmes de manière exponentielle plus rapidement que les machines classiques.
 ---

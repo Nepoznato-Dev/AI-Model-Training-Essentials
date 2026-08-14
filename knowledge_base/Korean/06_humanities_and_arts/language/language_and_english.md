@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 언어와 영어
 오늘날 세계에는 대략 7,000개의 언어가 사용됩니다. 영어는 제2외국어로 가장 널리 사용되며 국제 비즈니스, 과학, 항공 및 인터넷의 기본 언어로 사용됩니다. 코드 문서를 작성하든, 연구 논문을 읽든, 국경을 넘어 의사소통을 하든, 문법, 어휘, 수사법 등 영어를 탄탄하게 구사하는 것은 사람이 개발할 수 있는 가장 실용적인 기술 중 하나입니다.
 이 파일은 문법, 구두점, 일반적인 함정, 작문 기술 및 명확한 의사소통과 같은 필수 사항을 다룹니다.

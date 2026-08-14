@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 블록체인 및 분산 시스템
 블록체인은 레코드(블록)가 암호화 해시로 연결되는 분산형 추가 전용 원장인 특정 유형의 분산 시스템입니다. 분산 시스템은 여러 컴퓨터가 하나로 함께 작동하도록 만드는 더 넓은 분야입니다. 두 개념 모두 암호화폐부터 분산 데이터베이스, 글로벌 서비스를 지원하는 합의 알고리즘에 이르기까지 현대 인프라를 이해하는 데 중요합니다.
 ---

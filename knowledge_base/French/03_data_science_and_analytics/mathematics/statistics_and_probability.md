@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Statistiques et probabilités
 Les probabilités et les statistiques constituent les fondements mathématiques de la science des données, de l'apprentissage automatique et de la recherche scientifique. La probabilité vous indique la probabilité que les événements soient probables ; les statistiques vous indiquent comment tirer des conclusions à partir des données. Ensemble, ils transforment l’incertitude en connaissances quantifiables et gérables.
 ---

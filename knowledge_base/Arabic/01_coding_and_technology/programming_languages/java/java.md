@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جافا
 Java هي لغة برمجة موجهة للكائنات مكتوبة بشكل ثابت أنشأها جيمس جوسلينج في Sun Microsystems وتم إصدارها في عام 1995. ويتم تحقيق فلسفة التصميم الخاصة بها - "الكتابة مرة واحدة، والتشغيل في أي مكان" (WORA) - من خلال Java Virtual Machine (JVM)، والتي تسمح بتشغيل تعليمات Java البرمجية المترجمة على أي نظام أساسي يحتوي على تطبيق JVM. تعد Java واحدة من لغات البرمجة الأكثر استخدامًا في التاريخ، حيث تعمل على تشغيل الواجهات الخلفية للمؤسسات وتطبيقات Android وأنظمة البيانات الضخمة والخدمات المالية.
 على الرغم من أن عمرها ما يقرب من 30 عامًا، إلا أن Java مستمرة في التطور. تشتمل Java الحديثة (الإصدارات 17+) على سجلات وفئات مختومة ومطابقة الأنماط وخيوط افتراضية ونظام بيئي متنامي يتنافس مع اللغات الأحدث.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Основы письма и общения
 Письмо и общение — это навыки эффективной передачи идей — будь то посредством электронной почты, отчетов, документации, презентаций или бесед. Большая часть работы в области знаний — это, по сути, коммуникативная работа: профессионалам необходимо объяснять свои мысли, убеждать других, документировать решения, писать спецификации, представлять результаты и сотрудничать между командами. Разрыв между тем, что имеется в виду, и тем, что понимается, является источником большинства проблем, и улучшение коммуникации сокращает этот разрыв.
 ---

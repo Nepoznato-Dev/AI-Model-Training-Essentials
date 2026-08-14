@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # استنتاج علی
 استنتاج علّی علم تعیین اینکه آیا یک چیز واقعاً باعث دیگری می شود - نه فقط اینکه آیا آنها همبستگی دارند یا خیر. همبستگی به شما می گوید که دو متغیر با هم حرکت می کنند. علیت به شما می گوید که تغییر یکی، دیگری را تغییر می دهد. این تمایز در پزشکی (آیا این دارو کار می کند؟)، سیاست (آیا این مداخله فقر را کاهش می دهد؟)، تجارت (آیا این کمپین تبلیغاتی فروش را افزایش می دهد؟) و علم (آیا این مکانیسم پدیده را توضیح می دهد؟) اهمیت زیادی دارد.
 ---

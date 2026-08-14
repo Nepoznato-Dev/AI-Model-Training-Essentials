@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp at Clojure
 Ang Lisp ay ang pangalawa sa pinakamatandang high-level na programming language na ginagamit pa rin (pagkatapos ng Fortran), na nilikha ni John McCarthy noong 1958. Ito ang nagpasimuno sa maraming mga konsepto na ngayon ay kinuha para sa ipinagkaloob: pagkolekta ng basura, recursion, mga istruktura ng data ng puno, dynamic na pag-type, at ang ideya ng mga programa bilang data (homoiconicity). Ang natatanging tampok ng Lisp ay ang syntax nito — ang code ay isinulat bilang mga nested parentheses (S-expressions), na ginagawang hindi gaanong na-parseable ang wika at nagbibigay-daan sa makapangyarihang metaprogramming sa pamamagitan ng **macros**.
 Ang Clojure ay isang modernong Lisp dialect na idinisenyo ni Rich Hickey noong 2007. Gumagana ito sa JVM (din ClojureScript para sa JavaScript), tinatanggap ang functional programming, immutability, at concurrency, at nagbibigay ng tuluy-tuloy na interoperability ng Java. Ginagamit ang Clojure sa web development, pagproseso ng data, at mga financial system.

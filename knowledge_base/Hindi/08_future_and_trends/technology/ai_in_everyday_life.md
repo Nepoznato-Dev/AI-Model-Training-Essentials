@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # रोजमर्रा की जिंदगी में एआई
 कृत्रिम बुद्धिमत्ता अब भविष्य की अवधारणा नहीं रह गई है - यह दैनिक जीवन में अंतर्निहित हो गई है। जिस क्षण से आप जागते हैं और अपने फोन की जांच करते हैं (सिफारिश एल्गोरिदम तय करते हैं कि आप कौन सी सूचनाएं देखते हैं) से लेकर उस क्षण तक जब आप सो जाते हैं (आपका स्मार्ट स्पीकर आपके अंतिम कमांड को संसाधित करता है), एआई सिस्टम आपकी ओर से, आपके लिए और कभी-कभी आपके बारे में निर्णय ले रहे हैं। यह समझना कि एआई कहाँ प्रकट होता है, यह बुनियादी स्तर पर कैसे काम करता है, और इसके निहितार्थ क्या हैं, अब वैकल्पिक नहीं है - यह 21वीं सदी में सूचित नागरिकता के लिए एक आवश्यकता है।
 ---

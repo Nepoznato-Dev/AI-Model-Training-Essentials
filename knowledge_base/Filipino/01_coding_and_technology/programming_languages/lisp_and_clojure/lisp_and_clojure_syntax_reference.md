@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp at Clojure — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Common Lisp at Clojure. Kinukumpleto nito ang pangunahing sanggunian ng Lisp/Clojure sa pamamagitan ng pagtutok sa mga S-expression, macro, persistent data structures, at functional programming patterns.
 ---

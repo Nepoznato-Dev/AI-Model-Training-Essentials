@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Awarie potoku danych i ETL
 Potoki danych to hydraulika współczesnych organizacji — przenoszą dane z systemów źródłowych poprzez transformacje do baz danych, magazynów i jezior, gdzie są wykorzystywane do analiz, uczenia maszynowego i podejmowania decyzji. Kiedy pracują, nikt tego nie zauważa. W przypadku niepowodzenia decyzje podejmowane są na podstawie nieaktualnych danych, modele trenują na śmieciach, raporty pokazują niemożliwe liczby, a zaufanie do całej platformy danych ulega erozji. Awarie potoków danych należą do najczęstszych i najbardziej kosztownych awarii w organizacjach technologicznych.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Culture e società del mondo
 La cultura è la struttura di una società: le credenze, i valori, i costumi, i comportamenti e gli artefatti condivisi che i membri utilizzano per affrontare il loro mondo e tra loro. Comprendere la diversità culturale non significa memorizzare banalità; si tratta di riconoscere che un modo di vedere il mondo è tra migliaia e che altri sistemi sono internamente coerenti, storicamente radicati e meritevoli di essere compresi alle loro condizioni.
 ---

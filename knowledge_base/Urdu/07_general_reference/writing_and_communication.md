@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحریری اور مواصلات کے بنیادی اصول
 تحریر اور مواصلت خیالات کو مؤثر طریقے سے پہنچانے کی مہارتیں ہیں — خواہ ای میلز، رپورٹس، دستاویزات، پیشکشیں، یا بات چیت کے ذریعے۔ زیادہ تر علمی کام بنیادی طور پر مواصلاتی کام ہے: پیشہ ور افراد کو اپنی سوچ کی وضاحت کرنے، دوسروں کو قائل کرنے، دستاویزی فیصلے کرنے، وضاحتیں لکھنے، نتائج کو پیش کرنے، اور ٹیموں کے درمیان تعاون کرنے کی ضرورت ہے۔ کیا مطلب ہے اور جو سمجھا جاتا ہے اس کے درمیان فرق وہ ہے جہاں زیادہ تر مسائل پیدا ہوتے ہیں، اور بہتر مواصلات اس فرق کو کم کرتا ہے۔
 ---

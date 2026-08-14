@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Matematik
 Matematik yalnızca okulda çalışılan bir ders değildir; neredeyse her teknik alanın temelini oluşturur. Fizik bunu evreni tanımlamak için kullanır. Bilgisayar bilimi bunu algoritma tasarlamak için kullanır. Makine öğrenimi bunu ağırlıkları optimize etmek için kullanır. Finans bunu fiyat riskine karşı kullanıyor. Her dalda ustalık gerekli değildir, ancak ortamı anlamak ve her dalın nerede geçerli olduğunu bilmek diğer konuların anlaşılmasını kolaylaştırır.
 ---

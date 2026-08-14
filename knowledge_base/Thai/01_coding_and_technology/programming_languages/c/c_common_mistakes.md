@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — ข้อผิดพลาดทั่วไปและการต่อต้านรูปแบบ
 เอกสารนี้รวบรวมข้อผิดพลาด กับดัก และรูปแบบการต่อต้านที่พบบ่อยที่สุดในภาษา C แต่ละรายการจะแสดงแนวทางที่ไม่ถูกต้อง อธิบายว่าทำไมจึงล้มเหลว และให้แนวทางแก้ไขที่ถูกต้อง C ช่วยให้คุณควบคุมได้เต็มที่ ซึ่งหมายถึงความรับผิดชอบอย่างเต็มที่ต่อความปลอดภัยของหน่วยความจำ การตรวจสอบขอบเขต และพฤติกรรมที่ไม่ได้กำหนดไว้
 ---

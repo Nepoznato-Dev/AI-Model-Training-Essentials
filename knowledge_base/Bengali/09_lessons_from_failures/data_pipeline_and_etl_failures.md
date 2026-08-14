@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা পাইপলাইন এবং ETL ব্যর্থতা
 ডেটা পাইপলাইনগুলি হল আধুনিক সংস্থাগুলির নদীর গভীরতানির্ণয় — তারা ডেটাবেস, গুদাম এবং হ্রদে রূপান্তরের মাধ্যমে উৎস সিস্টেম থেকে ডেটা স্থানান্তর করে যেখানে এটি বিশ্লেষণ, মেশিন লার্নিং এবং সিদ্ধান্ত গ্রহণের জন্য ব্যবহৃত হয়। তারা যখন কাজ করে, কেউ খেয়াল করে না। যখন তারা ব্যর্থ হয়, তখন বাসি ডেটা নিয়ে সিদ্ধান্ত নেওয়া হয়, মডেলগুলি আবর্জনার উপর প্রশিক্ষণ দেয়, রিপোর্টগুলি অসম্ভব সংখ্যা দেখায় এবং সমগ্র ডেটা প্ল্যাটফর্মের উপর আস্থা নষ্ট হয়ে যায়। ডেটা পাইপলাইন ব্যর্থতাগুলি প্রযুক্তি সংস্থাগুলির মধ্যে সবচেয়ে সাধারণ এবং সবচেয়ে ব্যয়বহুল ব্যর্থতাগুলির মধ্যে একটি।
 ---

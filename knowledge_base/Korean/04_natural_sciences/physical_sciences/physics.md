@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 물리학
 물리학은 과학에서 가장 근본적인 질문을 던집니다. 물질과 에너지는 어떻게 행동하는가? 화학, 생물학, 공학 등 다른 모든 것은 답변을 기반으로 합니다. 물리학의 범위는 아원자 규모(양자 역학)부터 우주 규모(일반 상대성 이론)까지이며, 그 원리는 다른 모든 자연 과학을 뒷받침합니다.
 ---

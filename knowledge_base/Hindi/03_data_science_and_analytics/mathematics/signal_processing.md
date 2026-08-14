@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # संकेत आगे बढ़ाना
 सिग्नल प्रोसेसिंग संकेतों का विश्लेषण, संशोधन और संश्लेषण करने का विज्ञान है - समय, स्थान या आवृत्ति के साथ बदलती भौतिक मात्राओं का प्रतिनिधित्व। ऑडियो, चित्र, वीडियो, सेंसर डेटा, मस्तिष्क तरंगें, स्टॉक की कीमतें - सभी संकेत हैं। सिग्नल प्रोसेसिंग के गणितीय उपकरण (फूरियर ट्रांसफॉर्म, फिल्टर, सैंपलिंग सिद्धांत) मशीन लर्निंग, संचार, मेडिकल इमेजिंग और डेटा के साथ काम करने वाले लगभग हर क्षेत्र के लिए मूलभूत हैं।
 ---

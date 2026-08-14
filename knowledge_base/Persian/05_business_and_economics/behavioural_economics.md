@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # اقتصاد رفتاری و علم تصمیم
 اقتصاد رفتاری به مطالعه نحوه تصمیم‌گیری مردم می‌پردازد، نه اینکه چگونه عوامل منطقی تصمیم‌گیری می‌کنند. اقتصاد سنتی فرض می‌کند که مردم منطقی، علاقه‌مند و در پردازش اطلاعات خوب هستند. دهه‌ها تحقیق کانمن، تورسکی، تالر و دیگران نشان داده است که این به شدت نادرست است. افراد از میانبرهای ذهنی استفاده می کنند، تحت تأثیر زمینه نامربوط قرار می گیرند، اطلاعات اخیر اضافه وزن دارند و به طور سیستماتیک خطاهای قابل پیش بینی مرتکب می شوند. درک این الگوها برای طراحی محصولات، سیاست ها، سازمان ها و تصمیمات شخصی بهتر ضروری است.
 ---

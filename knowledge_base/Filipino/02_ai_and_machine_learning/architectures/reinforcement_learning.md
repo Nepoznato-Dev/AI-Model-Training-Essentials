@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Reinforcement Learning
 Ang reinforcement learning (RL) ay kung paano natututo ang mga machine na gumawa ng mga pagkakasunud-sunod ng mga desisyon sa pamamagitan ng trial at error. Hindi tulad ng pinangangasiwaang pag-aaral, kung saan ang tamang sagot ay ibinibigay para sa bawat halimbawa, ang RL ay nagbibigay lamang sa isang ahente ng signal ng reward — at dapat malaman ng ahente kung aling mga aksyon ang humahantong sa pinakamahusay na mga resulta sa paglipas ng panahon. Ito ang diskarte sa likod ng AlphaGo, robotic control, laro-playing AI, at — critically — RLHF, ang diskarteng ginamit upang ihanay ang modernong malalaking modelo ng wika sa mga kagustuhan ng tao.
 ---

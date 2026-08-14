@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ความปลอดภัยและการจัดตำแหน่ง AI
 ความปลอดภัยของ AI คือการศึกษาวิธีสร้างระบบ AI ที่ทำในสิ่งที่เราต้องการให้พวกเขาทำจริงๆ และไม่ทำสิ่งที่เราไม่ต้องการ แม้ว่าสิ่งเหล่านั้นจะไม่ได้ถูกตัดออกไปอย่างชัดเจนก็ตาม การจัดตำแหน่งเป็นความท้าทายเฉพาะในการทำให้เป้าหมายและพฤติกรรมของระบบ AI ตรงกับความตั้งใจของมนุษย์ เมื่อระบบ AI มีความสามารถมากขึ้น คำถามเหล่านี้จึงเปลี่ยนจากความอยากรู้ทางวิชาการไปสู่ข้อกำหนดทางวิศวกรรมเชิงปฏิบัติ
 ---

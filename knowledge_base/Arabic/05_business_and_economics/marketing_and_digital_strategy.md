@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التسويق والاستراتيجية الرقمية
 التسويق هو الطريقة التي تقوم بها الشركات بإنشاء القيمة وتواصلها وتقديمها للعملاء. وهو يشمل النظام الكامل لفهم احتياجات العملاء، وتحديد موضع المنتج لتلبية تلك الاحتياجات، وبناء العلاقات التي تحول المشترين إلى دعاة. لقد أحدثت الثورة الرقمية تحولاً في أدوات التسويق وقنواته وسرعته، في حين ظلت الأساسيات ثابتة.
 ---

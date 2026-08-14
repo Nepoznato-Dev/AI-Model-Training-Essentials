@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 教育の変革
 ＃＃ 概要
 12年間教室に座って、おそらく大学に行ってから働くという伝統的な教育モデルは崩壊しつつある。 AI 家庭教師は、個人に合わせた指導を大規模に提供できるようになりました。テクノロジーの変化のスピードにより、生涯学習はもはやオプションではなくなりました。そして雇用主は、あなたがどのような資格を持っているかだけでなく、あなたが「何ができる」かをますます重視しています。ここでは、教育がどのように見直されているかをご紹介します。

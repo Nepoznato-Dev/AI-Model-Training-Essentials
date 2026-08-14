@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Habilidades práticas para a vida
 A escola ensina cálculo, mas raramente ensina como declarar impostos, preparar uma refeição balanceada ou manter a casa. Estas são as competências práticas que afetam a sua qualidade de vida diária – o tipo de conhecimento que o torna autossuficiente e financeiramente resiliente. Este arquivo é uma referência densa para o essencial.
 ---

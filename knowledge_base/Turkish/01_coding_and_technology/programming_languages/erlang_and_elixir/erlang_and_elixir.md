@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang ve İksir
 Erlang, 1986 yılında Ericsson tarafından telefon anahtarlarına güç sağlamak için inşa edildi; bu da neden eşzamanlılığı, hata toleransını ve dağıtılmış sistemleri neredeyse her şeyden daha iyi yönettiğini açıklıyor. Erlang işlemleri hafiftir, yalıtılmıştır ve yalnızca mesaj aktarımı yoluyla iletişim kurar. Bir süreç çöktüğünde, bir yönetici onu yeniden başlatır. Bu "bırakın çöksün" felsefesi, yıllarca kesinti olmadan çalışan sistemler üretir.
 Elixir, 2012 yılında Jose Valim tarafından Erlang'ın VM'si (BEAM) üzerine oluşturulmuş modern bir dildir. Erlang'ın sunduğu her şeyi (eşzamanlılık, hata toleransı, dağıtım) korur, ancak kullanıcı dostu bir sözdizimi, metaprogramlama ve mükemmel araçlar (Mix paket yöneticisi, Hex paket kaydı) ekler. Elixir, web uygulamaları (Phoenix çerçevesi aracılığıyla), gerçek zamanlı sistemler ve gömülü cihazlar (Nerves aracılığıyla) için yaygın olarak kullanılmaktadır.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thermodynamics na Mechanics za Takwimu
 Thermodynamics inaelezea tabia ya jumla ya mifumo katika hali ya joto, shinikizo, na entropy - bila kujua atomi inaonekanaje. Mitambo ya takwimu inaelezea thermodynamics kutoka chini kwenda juu: hupata sifa za jumla kutoka kwa tabia ya microscopic ya idadi kubwa ya chembe. Kwa pamoja, hutoa uelewa wa kina wa nishati, entropy, na usawa - dhana ambazo zimehamia katika nadharia ya habari, kujifunza kwa mashine, na zaidi.
 ---

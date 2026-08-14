@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Scratch — 惯用模式和最佳实践
 本指南涵盖了编写干净、组织良好的 Scratch 项目的惯用模式。
 ---

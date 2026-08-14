@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الاستدلال السببي
 الاستدلال السببي هو علم تحديد ما إذا كان شيء ما يسبب شيئًا آخر بالفعل، وليس فقط ما إذا كانا مرتبطين. يخبرك الارتباط أن متغيرين يتحركان معًا. السببية تخبرك أن تغيير أحدهما سيغير الآخر. وهذا التمييز مهم للغاية في الطب (هل يعمل هذا الدواء؟)، والسياسة (هل يؤدي هذا التدخل إلى الحد من الفقر؟)، والأعمال التجارية (هل تعمل هذه الحملة الإعلانية على زيادة المبيعات؟)، والعلوم (هل تفسر هذه الآلية هذه الظاهرة؟).
 ---

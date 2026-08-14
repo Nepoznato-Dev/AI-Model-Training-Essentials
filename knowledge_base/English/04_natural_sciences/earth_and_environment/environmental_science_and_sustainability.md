@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Environmental Science and Sustainability
 
 Environmental science applies the methods of physics, chemistry, biology, geology, and economics to the question: "What is happening to our planet, and what can be done about it?" It is an interdisciplinary field — a convergence of multiple disciplines — which contributes to both its analytical depth and its policy relevance.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 실생활의 기술
 학교에서는 미적분학을 가르치지만 세금 신고, 균형 잡힌 식사 요리, 집을 관리하는 방법은 거의 가르치지 않습니다. 이는 일상적인 삶의 질에 영향을 미치는 실용적인 역량, 즉 자급자족하고 재정적으로 회복력을 갖추게 만드는 종류의 지식입니다. 이 파일은 필수 사항에 대한 밀집된 참조 자료입니다.
 ---

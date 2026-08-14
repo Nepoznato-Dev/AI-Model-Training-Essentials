@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเปลี่ยนแปลงทางประชากร
 ## ภาพรวม
 ข้อมูลประชากรคือโชคชะตา — หรืออย่างน้อยพวกเขาก็คล้องจองกับมันอย่างมาก ประชากรโลกกำลังสูงวัยอย่างรวดเร็ว โดยอพยพในรูปแบบใหม่ รวมตัวกันในเมืองในอัตราที่ไม่เคยมีมาก่อน และแบ่งตามรุ่นอายุที่หล่อหลอมทุกอย่างตั้งแต่พฤติกรรมการลงคะแนนเสียงไปจนถึงนิสัยผู้บริโภค การเปลี่ยนแปลงเหล่านี้จะเกิดขึ้นเป็นเวลาหลายทศวรรษ แต่ผลกระทบของมันปรากฏให้เห็นแล้ว ต่อไปนี้เป็นแนวโน้มสำคัญสี่ประการและความหมาย

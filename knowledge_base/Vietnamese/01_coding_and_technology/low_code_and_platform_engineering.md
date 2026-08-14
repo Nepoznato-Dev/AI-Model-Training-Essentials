@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Kỹ thuật nền tảng và mã thấp
 Nền tảng mã thấp cho phép mọi người xây dựng ứng dụng với lượng mã viết tay tối thiểu — thường thông qua giao diện kéo và thả, quy trình làm việc trực quan và trình kết nối dựng sẵn. Kỹ thuật nền tảng là nguyên tắc xây dựng nền tảng dành cho nhà phát triển nội bộ (IDP) giúp nhóm sản phẩm dễ dàng tự phục vụ cơ sở hạ tầng, CI/CD và công cụ vận hành. Cả hai xu hướng đều là phản ứng cho cùng một vấn đề: khoảng cách giữa nhu cầu về phần mềm và nguồn cung của các nhà phát triển có thể xây dựng nó.
 ---

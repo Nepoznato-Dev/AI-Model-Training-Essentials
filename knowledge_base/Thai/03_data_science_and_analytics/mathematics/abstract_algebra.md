@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # พีชคณิตนามธรรม
 พีชคณิตนามธรรมศึกษาโครงสร้างพีชคณิต - ชุดที่ติดตั้งการดำเนินการที่เป็นไปตามกฎเฉพาะ แทนที่จะทำงานกับตัวเลข พีชคณิตเชิงนามธรรมจะทำงานกับวัตถุใดๆ ที่เป็นไปตามสัจพจน์ ลักษณะทั่วไปนี้มีพลัง: ทฤษฎีบทที่พิสูจน์แล้วสำหรับ "กลุ่ม" ใช้กับจำนวนเต็ม สมมาตร เมทริกซ์ การเรียงสับเปลี่ยน และสถานะควอนตัมไปพร้อมๆ กัน พีชคณิตเชิงนามธรรมเป็นรากฐานของการเข้ารหัส รหัสแก้ไขข้อผิดพลาด การคำนวณควอนตัม และการวิเคราะห์สมมาตรที่ใช้ในวิชาฟิสิกส์
 ---

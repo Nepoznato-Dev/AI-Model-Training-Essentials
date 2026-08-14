@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript
 TypeScript, Microsoft (Anders Hejlsberg öncülüğünde) tarafından geliştirilen ve ilk kez 2012'de piyasaya sürülen, statik olarak yazılan bir JavaScript üst kümesidir. JavaScript'e isteğe bağlı tür açıklamaları, arayüzler, jenerikler ve gelişmiş tür sistemi özellikleri ekler ve ardından JavaScript'in çalıştığı her yerde çalışan düz JavaScript'e derler. TypeScript ayrı bir dil veya çalışma zamanı değildir; tür denetleyicili JavaScript'tir.
 TypeScript, büyük ölçekli JavaScript geliştirmenin standardı haline geldi. React, Angular, VS Code, Deno ve çoğu büyük açık kaynaklı JavaScript projesi TypeScript'te yazılmıştır. Önemli boyutta yeni bir JavaScript projesi başlatıyorsanız TypeScript önerilen varsayılandır.

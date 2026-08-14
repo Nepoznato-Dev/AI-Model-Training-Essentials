@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Shell et PowerShell
 Les scripts Shell font référence à l'écriture de scripts pour les interpréteurs de ligne de commande. Les deux shells les plus importants sont **Bash** (Bourne Again Shell) — la valeur par défaut sur Linux et macOS — et **PowerShell** — le shell multiplateforme moderne et le langage de script de Microsoft. Les scripts Shell automatisent les tâches d'administration système, créent des pipelines, le traitement des fichiers et les workflows de déploiement.
 Chaque développeur, ingénieur DevOps et administrateur système a besoin de compétences en script shell. Que vous déployiez un serveur Web, traitiez des fichiers journaux, configuriez des pipelines CI/CD ou automatisiez des sauvegardes, les scripts shell sont l'outil qu'il vous faut.

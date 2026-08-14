@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Haskell — 語法參考
 本文檔為 Haskell (GHC 9.x) 提供了全面、結構化的語法參考。它透過關注詳盡的語法模式、類型系統、單子、惰性求值和函數式程式設計習慣來補充主要的 Haskell 參考。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Investigación de operaciones
 La investigación de operaciones (IO) es la aplicación de métodos matemáticos a la toma de decisiones. Nacido durante la Segunda Guerra Mundial para la logística militar, ahora optimiza las cadenas de suministro, programa aerolíneas, enruta flotas de entrega, gestiona inventarios y asigna recursos en todas las industrias. OR proporciona el conjunto de herramientas matemáticas para tomar las mejores decisiones posibles bajo restricciones.
 ---

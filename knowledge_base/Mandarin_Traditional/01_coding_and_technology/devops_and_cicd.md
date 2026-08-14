@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps 和 CI/CD
 DevOps 是文化理念、實踐和工具的結合，使團隊能夠更快、更可靠地交付軟體。它打破了開發人員（想要發布更改）和營運人員（想要穩定性）之間的障礙。 CI/CD（持續整合和持續交付）是使其成為可能的自動化支柱。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Seni Rupa
 Seni visual adalah bentuk komunikasi tertua umat manusia — mulai dari lukisan gua Lascaux hingga instalasi digital saat ini. Memahami gerakan seni, medium, dan institusi yang melestarikan karya kreatif memberi Anda apresiasi lebih dalam tentang bagaimana masyarakat mengekspresikan keindahan, kekuatan, spiritualitas, dan perbedaan pendapat selama ribuan tahun.
 ---

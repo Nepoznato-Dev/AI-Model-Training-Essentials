@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Çizik
 Scratch, MIT Medya Laboratuvarı tarafından geliştirilen ve ilk olarak 2007'de piyasaya sürülen görsel, blok tabanlı bir programlama dilidir. Kullanıcılar, metin tabanlı kod yazmak yerine renkli blokları bir araya getirerek programlar oluşturur. Scratch, temel programlama kavramlarını (döngüler, koşullar, değişkenler, olaylar ve işlevler) sözdizimi hataları engeli olmadan öğretmek için özel olarak 8-16 yaş arası çocuklar için tasarlanmıştır (gerçi her yaştan öğrenci bunu kullanır).
 Scratch, 100 milyondan fazla kayıtlı kullanıcısı ve 70'ten fazla dilde kullanılabilirliği ile dünyada en yaygın kullanılan başlangıç ​​programlama dilidir. Bir web tarayıcısında çalışır ve ücretsizdir.

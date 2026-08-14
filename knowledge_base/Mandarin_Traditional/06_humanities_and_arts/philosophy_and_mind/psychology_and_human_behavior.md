@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 心理學與人類行為
 心理學是一門研究人們如何以及為何以他們的方式思考、感受和行為的科學。它不是讀心術，也不是常識──儘管它有時證實常識的暗示，有時又完全矛盾。心理學使用與其他科學相同的科學方法：觀察、假設、測驗、修正。它的挑戰性在於它的主題——人類思維——是我們所知的最複雜的對象。
 該文件涵蓋了心理學的主要領域：我們如何思考、我們如何發展、如何受到他人的影響、出了什麼問題以及可以採取什麼措施。

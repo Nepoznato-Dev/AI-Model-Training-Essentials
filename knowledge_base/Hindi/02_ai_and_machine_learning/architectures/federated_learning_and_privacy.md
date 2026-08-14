@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # फ़ेडरेटेड लर्निंग और गोपनीयता
 फ़ेडरेटेड लर्निंग कच्चे डेटा को साझा किए बिना कई उपकरणों या संगठनों में मशीन लर्निंग मॉडल को प्रशिक्षित करने की एक तकनीक है। केंद्रीय सर्वर पर डेटा भेजने के बजाय, प्रत्येक डिवाइस एक स्थानीय मॉडल को प्रशिक्षित करता है और केवल मॉडल अपडेट (ग्रेडिएंट या वज़न) साझा करता है। केंद्रीय सर्वर एक वैश्विक मॉडल तैयार करने के लिए इन अद्यतनों को एकत्रित करता है। इसे Google द्वारा एंड्रॉइड फोन पर कीबोर्ड भाषा मॉडल के प्रशिक्षण के लिए डिज़ाइन किया गया था - और तब से यह गोपनीयता-संरक्षण एआई के लिए एक प्रमुख तकनीक बन गई है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nguyên tắc cơ bản về viết và giao tiếp
 Viết và giao tiếp là kỹ năng truyền đạt ý tưởng một cách hiệu quả - cho dù thông qua email, báo cáo, tài liệu, thuyết trình hay hội thoại. Hầu hết công việc tri thức về cơ bản là công việc giao tiếp: các chuyên gia cần giải thích suy nghĩ của mình, thuyết phục người khác, ghi lại các quyết định, viết thông số kỹ thuật, trình bày các phát hiện và cộng tác giữa các nhóm. Khoảng cách giữa điều muốn nói và điều được hiểu là nguồn gốc của hầu hết các vấn đề và giao tiếp tốt hơn sẽ thu hẹp khoảng cách đó.
 ---

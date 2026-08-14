@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جاوا
 Java ایک مستحکم ٹائپ شدہ، آبجیکٹ پر مبنی پروگرامنگ لینگویج ہے جسے James Gosling نے Sun Microsystems میں تخلیق کیا تھا اور اسے 1995 میں ریلیز کیا گیا تھا۔ اس کا ڈیزائن فلسفہ — "ایک بار لکھیں، کہیں بھی چلائیں" (WORA) — جاوا ورچوئل مشین (JVM) کے ذریعے حاصل کیا جاتا ہے، جو مرتب کردہ جاوا کوڈ کو کسی بھی JVM پلیٹ فارم پر چلانے کی اجازت دیتا ہے۔ Java تاریخ میں سب سے زیادہ استعمال ہونے والی پروگرامنگ زبانوں میں سے ایک ہے، جو انٹرپرائز بیک اینڈز، اینڈرائیڈ ایپس، بڑے ڈیٹا سسٹمز، اور مالیاتی خدمات کو طاقتور بناتی ہے۔
 تقریباً 30 سال کی عمر کے باوجود، جاوا کا ارتقا جاری ہے۔ جدید جاوا (ورژن 17+) میں ریکارڈز، سیل شدہ کلاسز، پیٹرن میچنگ، ورچوئل تھریڈز، اور ایک بڑھتا ہوا ماحولیاتی نظام شامل ہے جو نئی زبانوں کے ساتھ مقابلہ کرتا ہے۔

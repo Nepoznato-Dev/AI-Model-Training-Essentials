@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB
 MATLAB (Matrix Laboratory) は、数値計算、行列演算、工学/科学アプリケーション向けに設計された、高レベルの解釈型プログラミング言語および環境です。 MathWorks によって開発され、1984 年に初めてリリースされた MATLAB は、電気工学、制御システム、信号処理、画像処理、通信など、多くの工学分野における標準ツールです。
 MATLAB は、強力な行列指向言語と、広範なツールボックス (アドオン パッケージ) および Simulink ビジュアル シミュレーション環境を組み合わせています。これは、実稼働コードに実装する前にアルゴリズムのプロトタイプを作成するために、学術界や産業界で広く使用されています。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # পাইথন
 পাইথন হল একটি উচ্চ-স্তরের, ব্যাখ্যা করা, সাধারণ-উদ্দেশ্যের প্রোগ্রামিং ভাষা যা Guido van Rossum দ্বারা তৈরি করা হয়েছিল এবং 1991 সালে প্রথম প্রকাশিত হয়েছিল। এটি উল্লেখযোগ্য ইন্ডেন্টেশন এবং একটি পরিষ্কার সিনট্যাক্সের মাধ্যমে কোড পাঠযোগ্যতাকে অগ্রাধিকার দেয় যা সাধারণ ইংরেজির কাছাকাছি পড়ে। পাইথন গতিশীলভাবে টাইপ করা, আবর্জনা-সংগৃহীত, এবং পদ্ধতিগত, অবজেক্ট-ওরিয়েন্টেড এবং কার্যকরী প্রোগ্রামিং সহ একাধিক প্রোগ্রামিং দৃষ্টান্ত সমর্থন করে।
 আজ, পাইথন হল AI/ML, ডেটা সায়েন্স, সায়েন্টিফিক কম্পিউটিং, এবং অটোমেশনে প্রভাবশালী ভাষা - যদিও নতুনদের জন্য সেরা ভাষাগুলির মধ্যে একটি। সেই দ্বৈত পরিচয় (প্রথম স্ক্রিপ্টের জন্য যথেষ্ট সহজ, বৃহৎ ভাষার মডেল প্রশিক্ষণের জন্য যথেষ্ট শক্তিশালী) যা এটিকে আলাদা করে।

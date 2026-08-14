@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C# — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C# - مرجع بناء الجملة
 يوفر هذا المستند مرجعًا شاملاً ومنظمًا لصيغة Modern C# (C# 10/11/12 على .NET 7/8). وهو يكمل مرجع C# الرئيسي من خلال التركيز على أنماط بناء الجملة الشاملة، وLINQ، والمزامنة/الانتظار، ومطابقة الأنماط، والميزات الحديثة.
 ---

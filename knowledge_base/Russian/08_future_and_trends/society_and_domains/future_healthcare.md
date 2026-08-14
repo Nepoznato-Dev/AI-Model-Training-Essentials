@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Здравоохранение будущего
 ## Обзор
 Медицина переходит от реактивной модели (лечения симптомов после их появления) к модели прогнозирующей, персонализированной и все более профилактической. Геномика превратилась из проекта стоимостью в 3 миллиарда долларов в рутинный тест стоимостью менее 1000 долларов. ИИ учится выявлять болезни при сканировании раньше, чем это смогут сделать врачи. А регенеративная медицина превращает научную фантастику в клинические испытания. Вот что происходит на трех крупнейших фронтах: персонализированная медицина, исследования долголетия и регенеративная медицина.

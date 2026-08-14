@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tapuscrit
 TypeScript est un sur-ensemble de JavaScript typé statiquement développé par Microsoft (dirigé par Anders Hejlsberg) et publié pour la première fois en 2012. Il ajoute des annotations de type facultatives, des interfaces, des génériques et des fonctionnalités avancées de système de type à JavaScript, puis se compile en JavaScript simple qui s'exécute partout où JavaScript s'exécute. TypeScript n'est pas un langage ou un moteur d'exécution distinct ; c'est du JavaScript avec un vérificateur de type.
 TypeScript est devenu la norme pour le développement JavaScript à grande échelle. React, Angular, VS Code, Deno et la plupart des principaux projets JavaScript open source sont écrits en TypeScript. Si vous démarrez un nouveau projet JavaScript de taille importante, TypeScript est la valeur par défaut recommandée.

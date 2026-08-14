@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Swift — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for Swift (5.9+). It complements the main Swift reference by focusing on exhaustive syntax patterns, optionals, protocol-oriented programming, and modern concurrency.

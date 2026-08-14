@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Méthodes numériques
 Les méthodes numériques constituent le pont entre la théorie mathématique et le calcul pratique. Alors que les mathématiques pures prouvent que des solutions existent, les méthodes numériques calculent en réalité des réponses approximatives avec une précision finie. Chaque modèle d'apprentissage automatique, simulation physique et pipeline d'analyse de données repose en fin de compte sur le calcul numérique. Comprendre ces méthodes (leur précision, leur stabilité et leurs limites) est essentiel pour créer des logiciels fiables.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भौतिक विज्ञान
 भौतिकी विज्ञान में सबसे बुनियादी सवाल पूछती है: पदार्थ और ऊर्जा कैसे व्यवहार करते हैं? बाकी सब कुछ - रसायन विज्ञान, जीव विज्ञान, इंजीनियरिंग - उत्तरों पर आधारित है। भौतिकी उपपरमाण्विक पैमाने (क्वांटम यांत्रिकी) से लेकर ब्रह्मांडीय पैमाने (सामान्य सापेक्षता) तक फैली हुई है, और इसके सिद्धांत अन्य सभी प्राकृतिक विज्ञानों का आधार हैं।
 ---

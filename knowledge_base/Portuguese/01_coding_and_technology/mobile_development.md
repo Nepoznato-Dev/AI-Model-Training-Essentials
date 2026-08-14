@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Desenvolvimento Móvel
 O desenvolvimento móvel é a prática de construir aplicativos para smartphones e tablets — principalmente para iOS (Apple) e Android (Google). Ele abrange tudo, desde o design da interface do usuário para telas pequenas até o gerenciamento da vida útil da bateria, o tratamento da instabilidade da rede e a distribuição de aplicativos nas lojas. O campo amadureceu significativamente, com estruturas multiplataforma competindo agora com o desenvolvimento nativo na maioria dos casos de uso.
 ---

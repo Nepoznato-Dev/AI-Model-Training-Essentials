@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # دلفي / كائن باسكال
 دلفي هي لغة برمجة موجهة للكائنات تعتمد على لغة باسكال، وقد تم تطويرها في الأصل بواسطة بورلاند (لاحقًا إمباركاديرو، الآن إيديرا). تم إصداره لأول مرة في عام 1995 باسم "Delphi 1"، وقد تم تصميمه للتطوير السريع للتطبيقات (RAD) لتطبيقات سطح مكتب Windows. تُعرف اللغة رسميًا باسم Object Pascal، ويوفر Delphi IDE مصممًا للنماذج المرئية وأدوات قاعدة بيانات متكاملة ومترجمًا قويًا.
 كانت دلفي واحدة من أدوات تطوير Windows الأكثر شعبية في أواخر التسعينيات وأوائل العقد الأول من القرن الحادي والعشرين. على الرغم من انخفاض شعبيتها بشكل كبير، إلا أنها تحتفظ بقاعدة مستخدمين مخصصة، خاصة في تطبيقات سطح المكتب للمؤسسات، والواجهات الأمامية لقواعد البيانات، وصيانة الأنظمة القديمة. تدعم Modern Delphi (11/12) التطوير عبر الأنظمة الأساسية لأنظمة Windows وmacOS وiOS وAndroid من خلال إطار عمل FireMonkey (FMX).

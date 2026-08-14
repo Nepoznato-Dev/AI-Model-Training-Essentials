@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 테스트 방법론
 테스트는 코드가 작동한다는 확신을 얻는 방법입니다. 더 중요한 것은 코드 변경이 이미 작동하는 코드를 손상시키지 않는다는 것입니다. 좋은 테스트는 사용자보다 먼저 버그를 포착하고 예상되는 동작을 문서화하며 두려움 없는 리팩토링을 가능하게 합니다. 이 파일은 단위 테스트부터 엔드투엔드 테스트까지 테스트 전략의 전체 범위와 테스트를 효과적으로 만드는 원칙을 다루고 있습니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 2026 และเหตุการณ์ในอนาคต
 ปี 2569 เป็นปีที่แผนระยะยาวจำนวนมากมาบรรจบกัน โดยเป็นวันครบรอบ 250 ปีของปฏิญญาอิสรภาพของสหรัฐอเมริกา จุดตรวจกึ่งกลางของเป้าหมายการพัฒนาที่ยั่งยืนของสหประชาชาติ (พ.ศ. 2563-2573) และเป็นปีสำคัญสำหรับแผนงานขององค์กรในด้าน AI การสำรวจอวกาศ ยานพาหนะไฟฟ้า และพลังงานหมุนเวียน ไม่ว่าจะมีการคาดการณ์อย่างเจาะจงหรือไม่ก็ตาม แนวโน้มในปี 2026 จะให้ภาพที่เป็นประโยชน์ว่าสิ่งต่างๆ กำลังมุ่งหน้าไปทางใด
 ---

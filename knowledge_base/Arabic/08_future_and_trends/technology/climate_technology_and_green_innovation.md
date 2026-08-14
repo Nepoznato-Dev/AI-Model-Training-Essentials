@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تكنولوجيا المناخ والابتكار الأخضر
 تشمل تكنولوجيا المناخ الأدوات والأنظمة والابتكارات المصممة للحد من انبعاثات الغازات الدفيئة، والتكيف مع تغير المناخ، ونقل الاقتصاد العالمي إلى أساس مستدام. يمكن القول إن هذا هو المجال التكنولوجي الأكثر أهمية في القرن الحادي والعشرين - فالفرق بين ارتفاع حرارة يمكن التحكم فيه بمقدار 1.5 درجة مئوية و3 درجات مئوية + كارثية يعتمد إلى حد كبير على مدى سرعة نشر هذه التقنيات على نطاق واسع. إن التحدي ليس علميًا فحسب، بل اقتصاديًا وسياسيًا واجتماعيًا.
 ---

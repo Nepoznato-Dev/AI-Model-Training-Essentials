@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सी++
 C++ एक सामान्य-उद्देश्यीय, संकलित प्रोग्रामिंग भाषा है, जो बर्जने स्ट्रॉस्ट्रुप द्वारा बनाई गई है, जिसे पहली बार 1985 में जारी किया गया था। यह C को ऑब्जेक्ट-ओरिएंटेड फीचर्स, जेनरिक और - आधुनिक संस्करणों (C++11 और बाद में) में - लैम्ब्डा, स्मार्ट पॉइंटर्स और स्टैंडर्ड टेम्पलेट लाइब्रेरी (STL) जैसे उच्च-स्तरीय अमूर्तता के साथ विस्तारित करता है। C++ "शून्य-ओवरहेड एब्स्ट्रैक्शन" सिद्धांत का पालन करता है: आपको उन सुविधाओं के लिए भुगतान नहीं करना चाहिए जिनका आप उपयोग नहीं करते हैं।
 जब आपको उच्च प्रदर्शन और अभिव्यंजक शक्ति दोनों की आवश्यकता होती है तो C++ पसंदीदा भाषा है। यह गेम इंजन (अवास्तविक इंजन), ब्राउज़र (क्रोम, फ़ायरफ़ॉक्स), डेटाबेस (MongoDB), ऑपरेटिंग सिस्टम (विंडोज़ और macOS के हिस्से), वित्तीय ट्रेडिंग सिस्टम और वास्तविक समय सिमुलेशन को शक्ति प्रदान करता है।

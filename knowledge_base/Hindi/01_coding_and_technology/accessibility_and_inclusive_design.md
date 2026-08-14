@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # अभिगम्यता और समावेशी डिज़ाइन
 एक्सेसिबिलिटी (जिसे अक्सर a11y के रूप में संक्षिप्त किया जाता है) सॉफ़्टवेयर को सभी के लिए उपयोग करने योग्य बनाने का अभ्यास है - जिसमें दृश्य, श्रवण, मोटर, संज्ञानात्मक और तंत्रिका संबंधी विकलांगता वाले लोग भी शामिल हैं। यह कई न्यायक्षेत्रों में एक कानूनी आवश्यकता और एक मानक इंजीनियरिंग अभ्यास है। सुलभ सॉफ़्टवेयर सभी के लिए बेहतर सॉफ़्टवेयर है, क्योंकि डिज़ाइन निर्णय जो अक्षम उपयोगकर्ताओं का समर्थन करते हैं - स्पष्ट संरचना, कीबोर्ड नेविगेशन, पर्याप्त कंट्रास्ट, पठनीय पाठ - सभी उपयोगकर्ताओं के लिए अनुभव में सुधार करते हैं।
 ---

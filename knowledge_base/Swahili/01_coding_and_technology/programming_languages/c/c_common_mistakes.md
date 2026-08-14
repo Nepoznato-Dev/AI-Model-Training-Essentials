@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C - Makosa ya Kawaida & Miundo ya Kupinga
 Hati hii inaorodhesha makosa ya kawaida, mitego, na mifumo ya kupingana katika C. Kila ingizo linaonyesha mbinu isiyo sahihi, inaelezea kwa nini inashindwa, na hutoa suluhisho sahihi. C hukupa udhibiti kamili - ambayo inamaanisha uwajibikaji kamili kwa usalama wa kumbukumbu, ukaguzi wa mipaka, na tabia isiyobainishwa.
 ---

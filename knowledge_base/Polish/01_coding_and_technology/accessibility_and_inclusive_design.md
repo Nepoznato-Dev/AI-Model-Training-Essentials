@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dostępność i projektowanie włączające
 Dostępność (często w skrócie a11y) to praktyka polegająca na sprawianiu, aby oprogramowanie było użyteczne dla każdego – w tym osób z niepełnosprawnością wzrokową, słuchową, motoryczną, poznawczą i neurologiczną. Jest to wymóg prawny obowiązujący w wielu jurysdykcjach i standardowa praktyka inżynierska. Dostępne oprogramowanie to lepsze oprogramowanie dla każdego, ponieważ decyzje projektowe wspierające niepełnosprawnych użytkowników — przejrzysta struktura, nawigacja za pomocą klawiatury, wystarczający kontrast, czytelny tekst — poprawiają wygodę wszystkich użytkowników.
 ---

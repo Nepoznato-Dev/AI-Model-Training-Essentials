@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বিশ্ব সংস্কৃতি এবং সমাজ
 সংস্কৃতি হল একটি সমাজের কাঠামো — ভাগ করা বিশ্বাস, মূল্যবোধ, রীতিনীতি, আচার-আচরণ এবং নিদর্শন যা সদস্যরা তাদের বিশ্বের সাথে এবং একে অপরের সাথে মানিয়ে নিতে ব্যবহার করে। সাংস্কৃতিক বৈচিত্র্য বোঝা তুচ্ছ বিষয় মুখস্থ করা নয়; এটি স্বীকার করা যে বিশ্বকে দেখার একটি উপায় হাজার হাজারের মধ্যে রয়েছে এবং অন্যান্য সিস্টেমগুলি অভ্যন্তরীণভাবে সুসংগত, ঐতিহাসিকভাবে ভিত্তি করে এবং তাদের নিজস্ব শর্তে বোঝার যোগ্য।
 ---

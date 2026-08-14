@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 추상 대수학
 추상 대수학은 대수적 구조, 즉 특정 규칙을 따르는 연산을 갖춘 집합을 연구합니다. 숫자로 작업하는 대신 추상 대수학은 공리를 충족하는 모든 객체로 작동합니다. 이 일반성은 강력합니다. "그룹"에 대해 증명된 정리는 정수, 대칭, 행렬, 순열 및 양자 상태에 동시에 적용됩니다. 추상 대수학은 물리학 전반에 걸쳐 사용되는 암호화, 오류 수정 코드, 양자 컴퓨팅 및 대칭 분석을 뒷받침합니다.
 ---

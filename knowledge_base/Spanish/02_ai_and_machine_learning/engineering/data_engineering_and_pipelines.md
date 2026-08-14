@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ingeniería de datos y oleoductos
 La ingeniería de datos es la disciplina de construir sistemas que mueven, transforman y almacenan datos a escala. Sin canales de datos confiables, los modelos de aprendizaje automático no se pueden entrenar, los paneles muestran números obsoletos y las decisiones comerciales se basan en conjeturas. Este archivo cubre la arquitectura, las herramientas y las prácticas para construir una infraestructura de datos que funcione.
 ---

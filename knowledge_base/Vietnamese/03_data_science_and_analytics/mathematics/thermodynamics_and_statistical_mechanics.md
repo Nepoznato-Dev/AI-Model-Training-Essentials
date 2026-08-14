@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nhiệt động lực học và Cơ học thống kê
 Nhiệt động lực học mô tả hành vi vĩ mô của các hệ thống về nhiệt độ, áp suất và entropy - mà không biết các nguyên tử trông như thế nào. Cơ học thống kê giải thích nhiệt động lực học từ dưới lên: nó rút ra các tính chất vĩ mô từ hành vi vi mô của một số lượng lớn các hạt. Cùng nhau, chúng cung cấp sự hiểu biết sâu sắc nhất về năng lượng, entropy và trạng thái cân bằng — các khái niệm đã được áp dụng vào lý thuyết thông tin, học máy và hơn thế nữa.
 ---

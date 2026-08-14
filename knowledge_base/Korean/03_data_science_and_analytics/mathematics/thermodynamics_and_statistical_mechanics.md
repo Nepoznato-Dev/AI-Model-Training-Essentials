@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 열역학과 통계역학
 열역학은 원자가 어떻게 생겼는지 알지 못한 채 온도, 압력, 엔트로피 측면에서 시스템의 거시적 동작을 설명합니다. 통계역학은 열역학을 아래에서 위로 설명합니다. 즉, 수많은 입자의 미세한 거동에서 거시적인 특성을 도출합니다. 이를 통해 정보 이론, 기계 학습 및 그 이상으로 이동한 개념인 에너지, 엔트로피 및 평형에 대한 가장 깊은 이해를 제공합니다.
 ---

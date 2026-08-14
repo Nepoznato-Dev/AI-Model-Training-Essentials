@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Java — 관용적 패턴 및 모범 사례
 이 가이드에서는 깔끔하고 현대적인 Java(17+) 코드를 작성하기 위한 관용적 패턴과 모범 사례를 다룹니다.
 ---

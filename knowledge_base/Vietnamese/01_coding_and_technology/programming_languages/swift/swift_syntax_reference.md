@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Swift — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Swift (5.9+). Nó bổ sung cho tham chiếu Swift chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, các tùy chọn, lập trình hướng giao thức và tính tương tranh hiện đại.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Accessibility at Inclusive Design
 Ang pagiging naa-access (kadalasang dinadaglat bilang a11y) ay ang kasanayan sa paggawa ng software na magagamit ng lahat — kabilang ang mga taong may kapansanan sa visual, auditory, motor, cognitive, at neurological. Ito ay isang legal na kinakailangan sa maraming hurisdiksyon at isang karaniwang kasanayan sa engineering. Ang naa-access na software ay mas mahusay na software para sa lahat, dahil ang mga desisyon sa disenyo na sumusuporta sa mga hindi pinaganang user — malinaw na istraktura, nabigasyon sa keyboard, sapat na kaibahan, nababasang teksto — ay nagpapahusay sa karanasan para sa lahat ng mga user.
 ---

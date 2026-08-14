@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Keterampilan Hidup Praktis
 Sekolah mengajarkan Anda kalkulus tetapi jarang mengajari Anda cara mengajukan pajak, memasak makanan seimbang, atau memelihara rumah. Ini adalah kompetensi praktis yang mempengaruhi kualitas hidup Anda sehari-hari — jenis pengetahuan yang membuat Anda mandiri dan tangguh secara finansial. File ini adalah referensi padat untuk hal-hal penting.
 ---

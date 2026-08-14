@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kimia
 Jika fisika adalah aturan mainnya, kimia adalah apa yang terjadi ketika potongan-potongan tersebut berinteraksi. Kimia mempelajari bagaimana atom-atom berikatan, terpecah, dan tersusun ulang — artinya, bagaimana semua bahan berperilaku. Ini menjembatani kesenjangan antara fisika dasar dan kompleksitas biologi, geologi, dan teknik.
 ---

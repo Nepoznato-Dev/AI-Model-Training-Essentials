@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps dan CI/CD
 DevOps adalah kombinasi filosofi budaya, praktik, dan alat yang memungkinkan tim menghadirkan perangkat lunak dengan lebih cepat dan andal. Ini meruntuhkan tembok antara pengembang (yang ingin melakukan perubahan) dan operasi (yang menginginkan stabilitas). CI/CD — Integrasi Berkelanjutan dan Pengiriman Berkelanjutan — adalah tulang punggung otomatisasi yang memungkinkan hal ini.
 ---

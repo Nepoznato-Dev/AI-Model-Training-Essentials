@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সংকেত প্রক্রিয়াকরণ
 সিগন্যাল প্রসেসিং হল সংকেত বিশ্লেষণ, পরিবর্তন এবং সংশ্লেষণ করার বিজ্ঞান — সময়, স্থান বা ফ্রিকোয়েন্সির সাথে পরিবর্তিত ভৌত পরিমাণের উপস্থাপনা। অডিও, ছবি, ভিডিও, সেন্সর ডেটা, মস্তিষ্কের তরঙ্গ, স্টকের দাম - সবই সংকেত। সিগন্যাল প্রসেসিং এর গাণিতিক টুলস (ফুরিয়ার ট্রান্সফর্মস, ফিল্টার, স্যাম্পলিং থিওরি) মেশিন লার্নিং, যোগাযোগ, মেডিকেল ইমেজিং এবং ডাটা নিয়ে কাজ করে এমন প্রতিটি ক্ষেত্রের ভিত্তি।
 ---

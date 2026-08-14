@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Blockchain والأنظمة الموزعة
 Blockchain هو نوع محدد من الأنظمة الموزعة - وهو دفتر أستاذ لا مركزي وملحق فقط حيث يتم ربط السجلات (الكتل) عن طريق تجزئات التشفير. الأنظمة الموزعة هي المجال الأوسع لجعل أجهزة الكمبيوتر المتعددة تعمل معًا كجهاز واحد. كلا المفهومين مهمان لفهم البنية التحتية الحديثة، من العملات المشفرة إلى قواعد البيانات الموزعة إلى خوارزميات الإجماع التي تدعم الخدمات العالمية.
 ---

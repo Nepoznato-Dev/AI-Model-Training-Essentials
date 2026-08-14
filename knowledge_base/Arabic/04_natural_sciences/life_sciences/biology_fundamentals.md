@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أساسيات علم الأحياء
 علم الأحياء هو علم الحياة. تشترك جميع الكائنات الحية في سمات معينة: فهي مكونة من خلايا، وتستخدم الطاقة، وتنمو، وتستجيب لبيئتها، وتتكاثر، وتتطور. يمتد علم الأحياء من الآلية الجزيئية داخل خلية واحدة إلى التفاعلات بين الأنظمة البيئية بأكملها، وهو أساس الطب والزراعة والتكنولوجيا الحيوية والحفاظ على البيئة.
 ---

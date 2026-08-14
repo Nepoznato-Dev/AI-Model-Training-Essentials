@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ج - اشتباهات رایج و ضد الگوها
 این سند رایج‌ترین اشتباهات، تله‌ها و ضد الگوها را در C فهرست می‌کند. هر ورودی رویکرد نادرست را نشان می‌دهد، توضیح می‌دهد که چرا شکست می‌خورد و راه‌حل صحیح را ارائه می‌دهد. C به شما کنترل کامل می دهد - که به معنای مسئولیت کامل در قبال ایمنی حافظه، بررسی محدوده ها و رفتار نامشخص است.
 ---

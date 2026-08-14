@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Fortran — Mga Karaniwang Pagkakamali at Anti-Pattern
 Ang dokumentong ito ay katalogo ng mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa Fortran na may mga pagwawasto.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحسين الأداء
 تحسين الأداء هو ممارسة جعل البرامج أسرع — تقليل أوقات الاستجابة، وزيادة الإنتاجية، وخفض استخدام الذاكرة، والقضاء على الاختناقات. إنها واحدة من أكثر المهارات تأثيرًا التي يمكن أن يتمتع بها المطور، لأن البرامج البطيئة تفقد المستخدمين، وتهدر الموارد، وتحبط الجميع. ولكنها أيضًا واحدة من أكثر الأخطاء شيوعًا، حيث يقوم المطورون بتحسين الأشياء الخاطئة بناءً على الحدس بدلاً من الأدلة.
 ---

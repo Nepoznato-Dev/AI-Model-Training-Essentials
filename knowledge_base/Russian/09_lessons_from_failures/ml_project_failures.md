@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # неудачных проектов машинного обучения
 Проекты машинного обучения терпят неудачу с угрожающей скоростью — по отраслевым оценкам, 60-85% проектов ML никогда не доходят до производства. Сбои обычно не в алгоритмах; они находятся в процессе, данных, ожиданиях и организационном контексте. Понимание того, почему проекты ML терпят неудачу, важно для любого, кто создает системы ML, поскольку виды сбоев предсказуемы и в значительной степени их можно избежать.
 ---

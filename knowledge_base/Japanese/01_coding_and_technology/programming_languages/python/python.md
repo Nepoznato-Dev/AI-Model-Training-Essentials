@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # パイソン
 Python は、Guido van Rossum によって作成され、1991 年に初めてリリースされた、高レベルのインタプリタ型汎用プログラミング言語です。Python は、大幅なインデントと、平易な英語に近いきれいな構文によって、コードの可読性を優先しています。 Python は動的に型指定され、ガベージ コレクションが行われ、手続き型プログラミング、オブジェクト指向プログラミング、関数型プログラミングなどの複数のプログラミング パラダイムをサポートします。
 現在、Python は AI/ML、データ サイエンス、科学技術コンピューティング、オートメーションの分野で主流の言語でありながら、初心者にとって最適な言語の 1 つであり続けています。この二重のアイデンティティ (最初のスクリプトとして十分シンプルであること、大規模な言語モデルをトレーニングするのに十分強力であること) が、それを区別するものです。

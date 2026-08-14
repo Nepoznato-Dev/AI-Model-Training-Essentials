@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ulinganisho wa Huduma za Wingu
 Ulinganisho wa kando wa watoa huduma wakuu watatu wa wingu - AWS, Azure, na Google Cloud - kwenye kompyuta, hifadhi, hifadhidata, AI/ML, mitandao, ufuatiliaji, na miundombinu-kama-misimbo. Inafaa kwa wasanifu kuamua ni jukwaa gani la kutumia, au huduma za uchoraji ramani kutoka kwa wingu moja hadi nyingine.
 ---

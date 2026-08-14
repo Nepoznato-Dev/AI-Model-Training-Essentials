@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # อุณหพลศาสตร์และกลศาสตร์ทางสถิติ
 อุณหพลศาสตร์อธิบายพฤติกรรมมหภาคของระบบในแง่ของอุณหภูมิ ความดัน และเอนโทรปี โดยไม่รู้ว่าอะตอมมีลักษณะอย่างไร กลศาสตร์ทางสถิติอธิบายอุณหพลศาสตร์จากล่างขึ้นบน โดยได้คุณสมบัติระดับมหภาคจากพฤติกรรมระดับจุลภาคของอนุภาคจำนวนมหาศาล เมื่อรวมกันแล้วจะทำให้เกิดความเข้าใจที่ลึกซึ้งที่สุดเกี่ยวกับพลังงาน เอนโทรปี และสมดุล ซึ่งเป็นแนวคิดที่ได้ย้ายไปสู่ทฤษฎีข้อมูล การเรียนรู้ของเครื่อง และอื่นๆ
 ---

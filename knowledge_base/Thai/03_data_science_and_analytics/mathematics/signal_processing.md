@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การประมวลผลสัญญาณ
 การประมวลผลสัญญาณเป็นศาสตร์แห่งการวิเคราะห์ ดัดแปลง และสังเคราะห์สัญญาณ ซึ่งเป็นตัวแทนของปริมาณทางกายภาพที่แปรผันตามเวลา พื้นที่ หรือความถี่ เสียง รูปภาพ วิดีโอ ข้อมูลเซ็นเซอร์ คลื่นสมอง ราคาหุ้น ล้วนเป็นสัญญาณ เครื่องมือทางคณิตศาสตร์ในการประมวลผลสัญญาณ (การแปลงฟูเรียร์ ตัวกรอง ทฤษฎีการสุ่มตัวอย่าง) ถือเป็นรากฐานของการเรียนรู้ของเครื่อง การสื่อสาร การสร้างภาพทางการแพทย์ และแทบทุกสาขาที่ทำงานกับข้อมูล
 ---

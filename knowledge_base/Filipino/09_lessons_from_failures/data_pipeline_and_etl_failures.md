@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Data Pipeline at ETL Failures
 Ang mga pipeline ng data ay ang pagtutubero ng mga modernong organisasyon — inililipat nila ang data mula sa mga source system sa pamamagitan ng mga pagbabago sa mga database, warehouse, at lawa kung saan ito ginagamit para sa analytics, machine learning, at paggawa ng desisyon. Kapag nagtatrabaho sila, walang nakakapansin. Kapag nabigo ang mga ito, ang mga pagpapasya ay ginagawa sa lipas na data, ang mga modelo ay nagsasanay sa basura, ang mga ulat ay nagpapakita ng mga imposibleng numero, at ang tiwala sa buong data platform ay nawawala. Ang mga pagkabigo sa pipeline ng data ay kabilang sa mga pinakakaraniwan at pinakamahal na pagkabigo sa mga organisasyong teknolohiya.
 ---

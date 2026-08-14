@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usumakuumeme
 Usumakuumeme ni utafiti wa nyanja za umeme na sumaku na mwingiliano wao. Iliyounganishwa na Maxwell katika miaka ya 1860, sumaku-umeme inaeleza mwanga, umeme, sumaku, mawimbi ya redio, na muundo wa atomi. Ilikuwa nguvu ya kwanza ya msingi kueleweka kikamilifu kihisabati, na milinganyo yake iliongoza uhusiano maalum wa Einstein na nadharia ya kisasa ya uwanja.
 ---

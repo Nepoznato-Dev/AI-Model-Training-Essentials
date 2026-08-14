@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การอนุมานเชิงสาเหตุ
 การอนุมานเชิงสาเหตุเป็นศาสตร์ในการพิจารณาว่าสิ่งหนึ่งทำให้เกิดสิ่งอื่นจริงหรือไม่ ไม่ใช่แค่ว่าสิ่งเหล่านั้นมีความสัมพันธ์กันหรือไม่ สหสัมพันธ์จะบอกคุณว่าตัวแปรสองตัวเคลื่อนที่ไปด้วยกัน สาเหตุบอกคุณว่าการเปลี่ยนแปลงอันหนึ่งจะเปลี่ยนอันอื่น ความแตกต่างนี้มีความสำคัญอย่างมากในด้านการแพทย์ (ยานี้ใช้ได้ผลหรือไม่) นโยบาย (การแทรกแซงนี้ช่วยลดความยากจนหรือไม่) ธุรกิจ (แคมเปญโฆษณานี้เพิ่มยอดขายหรือไม่) และวิทยาศาสตร์ (กลไกนี้อธิบายปรากฏการณ์นี้หรือไม่)
 ---

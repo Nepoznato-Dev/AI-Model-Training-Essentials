@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #علم زمین
 علم زمین سیاره ای را که در آن زندگی می کنیم - ساختار، فرآیندها، تاریخچه و سیستم هایی که آن را قابل سکونت می کنند، مطالعه می کند. زمین شناسی (زمین جامد)، اقیانوس شناسی (اقیانوس ها)، هواشناسی (اتمسفر و آب و هوا) و اقلیم شناسی (الگوهای آب و هوایی بلندمدت) را در بر می گیرد. چیزی که این میدان ها را متحد می کند درک این موضوع است که زمین یک سیستم پویا است: درون آن دائماً در حال حرکت است، سطح آن در حال تغییر شکل است، و جو و اقیانوس های آن به روش های پیچیده ای با هم تعامل دارند.
 ---

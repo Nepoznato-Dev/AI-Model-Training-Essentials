@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Michakato ya Stochastic
 **mchakato wa kistokasi** ni mkusanyiko wa vigeu vya nasibu vilivyoorodheshwa kulingana na wakati (au nafasi). Ingawa nadharia ya uwezekano inachunguza matukio ya nasibu ya mtu binafsi, michakato ya kistochastiki huchunguza jinsi unasihi unavyobadilika kwa wakati. Wanatoa mfano wa bei za hisa, urefu wa foleni, kuenea kwa magonjwa, uzalishaji wa lugha na mienendo ya mafunzo ya miundo ya kujifunza kwa mashine.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # パール
 Perl は、実用的なテキスト処理ツールとして 1987 年にラリー ウォールによって作成されました。これは、初期の Web 開発 (CGI スクリプト)、システム管理、バイオインフォマティクス、ネットワーク プログラミングのバックボーンとなりました。 Perl の哲学は「There's More Than One Way To Do It」(TMTOWTDI) です。この言語はあらゆる問題に対して複数のアプローチを提供し、統一性よりも表現力を優先します。
 Perl が現代のプログラミングに与えた影響は多大ですが、目に見えないことも多くあります。Perl のパターン マッチングの影響を受けた正規表現は、現在、Python、JavaScript、Java、およびその他のほとんどの言語で標準となっています。 CPAN (Comprehensive Perl Archive Network) は最初のソフトウェア パッケージ リポジトリの 1 つで、Python の PyPI や Node の npm などの後のシステムに影響を与えました。

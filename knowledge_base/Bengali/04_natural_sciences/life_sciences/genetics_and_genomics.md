@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জেনেটিক্স এবং জিনোমিক্স
 জেনেটিক্স হল বংশগতির অধ্যয়ন — কীভাবে বৈশিষ্ট্যগুলি ডিএনএর মাধ্যমে পিতামাতা থেকে সন্তানদের মধ্যে স্থানান্তরিত হয়। জিনোমিক্স হল সমগ্র জিনোমের অধ্যয়ন: সমস্ত জিন, নন-কোডিং অঞ্চল, তারা কীভাবে মিথস্ক্রিয়া করে এবং কীভাবে তারা ব্যক্তি এবং জনসংখ্যা জুড়ে পরিবর্তিত হয়। জেনেটিক্স থেকে জিনোমিক্সে রূপান্তরটি সিকোয়েন্সিং প্রযুক্তির দ্বারা চালিত হয়েছিল — আমরা এক সময়ে একটি জিন অধ্যয়ন করা থেকে ঘন্টার মধ্যে পুরো জিনোম পড়তে গিয়েছিলাম, এমন ডেটা তৈরি করেছি যা ওষুধ, কৃষি, ফরেনসিক এবং বিবর্তন সম্পর্কে আমাদের বোঝার পরিবর্তন করছে।
 ---

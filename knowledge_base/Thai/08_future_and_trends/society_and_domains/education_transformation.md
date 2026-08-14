@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเปลี่ยนแปลงการศึกษา
 ## ภาพรวม
 รูปแบบการศึกษาแบบดั้งเดิม ซึ่งนั่งอยู่ในห้องเรียนเป็นเวลา 12 ปี อาจจะไปมหาวิทยาลัย แล้วทำงาน กำลังพังทลายลง ขณะนี้ผู้สอน AI สามารถให้คำแนะนำแบบเฉพาะบุคคลได้ในวงกว้าง การเปลี่ยนแปลงทางเทคโนโลยีที่รวดเร็วทำให้การเรียนรู้ตลอดชีวิตไม่ใช่ทางเลือกอีกต่อไป และนายจ้างให้ความสำคัญกับสิ่งที่คุณ *ทำได้* มากขึ้น ไม่ใช่แค่ข้อมูลประจำตัวที่คุณมี นี่คือวิธีการพลิกโฉมการศึกษา

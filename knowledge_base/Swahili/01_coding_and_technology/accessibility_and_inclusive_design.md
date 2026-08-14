@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ufikiaji na Ubunifu wa Pamoja
 Ufikivu (mara nyingi hufupishwa kama a11y) ni mazoezi ya kufanya programu itumike na kila mtu - ikiwa ni pamoja na watu wenye ulemavu wa kuona, kusikia, motor, utambuzi na nyurolojia. Ni hitaji la kisheria katika mamlaka nyingi na mazoezi ya kawaida ya uhandisi. Programu zinazoweza kufikiwa ni programu bora kwa kila mtu, kwa sababu maamuzi ya muundo ambayo yanaauni watumiaji walemavu - muundo wazi, usogezaji wa kibodi, utofautishaji wa kutosha, maandishi yanayosomeka - huboresha matumizi kwa watumiaji wote.
 ---

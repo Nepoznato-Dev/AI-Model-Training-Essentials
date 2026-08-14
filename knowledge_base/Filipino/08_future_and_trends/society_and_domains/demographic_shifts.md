@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Pagbabago ng Demograpiko
 ## Pangkalahatang-ideya
 Ang mga demograpiko ay tadhana — o hindi bababa sa malakas silang tumutugon dito. Ang populasyon ng mundo ay mabilis na tumatanda, lumilipat sa mga bagong pattern, kumpol-kumpol sa mga lungsod sa hindi pa naganap na mga rate, at naghahati-hati sa mga henerasyong linya na humuhubog sa lahat mula sa pag-uugali sa pagboto hanggang sa mga gawi ng mamimili. Ang mga pagbabagong ito ay gaganap sa loob ng mga dekada, ngunit ang mga epekto nito ay nakikita na. Narito ang apat na malalaking uso at kung ano ang ibig sabihin ng mga ito.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 生成式人工智慧深入研究
 生成式人工智慧是指創建新內容（圖像、文字、音訊、視訊、程式碼）的模型，而不僅僅是對現有資料進行分類或預測。雖然大型語言模型受到了大部分關注，但生成式人工智慧的前景要廣闊得多。該文件涵蓋了現代生成系統背後的架構、技術和權衡，從擴散模型到變分自動編碼器再到流模型。
 ---

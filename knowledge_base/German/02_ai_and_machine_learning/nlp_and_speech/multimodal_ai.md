@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Multimodale KI
 Multimodale KI-Systeme verarbeiten und kombinieren Informationen aus mehreren Datentypen – Text, Bilder, Audio, Video und mehr – gleichzeitig. Während frühere KI-Systeme typischerweise auf einer einzigen Modalität beruhten (nur Text, nur Bilder), sind die leistungsfähigsten modernen Systeme multimodal. GPT-4V liest Bilder und Text zusammen; Gemini verarbeitet Text, Bilder, Audio und Video nativ; und Systeme wie Sora generieren Videos aus Textbeschreibungen. In dieser Datei wird erläutert, wie multimodale KI funktioniert, welche Architekturen dahinter stecken und warum die Kombination von Modalitäten so leistungsstark ist.
 ---

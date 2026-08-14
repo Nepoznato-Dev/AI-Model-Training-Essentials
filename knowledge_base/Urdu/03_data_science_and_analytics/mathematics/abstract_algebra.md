@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # خلاصہ الجبرا
 خلاصہ الجبرا الجبری ڈھانچے کا مطالعہ کرتا ہے - مخصوص اصولوں پر عمل کرنے والے آپریشنز سے لیس سیٹ۔ اعداد کے ساتھ کام کرنے کے بجائے، تجریدی الجبرا کسی بھی ایسی شے کے ساتھ کام کرتا ہے جو محور کو پورا کرتی ہے۔ یہ عمومیت طاقتور ہے: ایک نظریہ جو "گروپوں" کے لیے ثابت ہوتا ہے، انٹیجرز، symmetries، میٹرکس، permutations، اور کوانٹم سٹیٹس پر بیک وقت لاگو ہوتا ہے۔ تجریدی الجبرا خفیہ نگاری، غلطی کو درست کرنے والے کوڈز، کوانٹم کمپیوٹنگ، اور ہم آہنگی کے تجزیے کو پوری طبیعیات میں استعمال کرتا ہے۔
 ---

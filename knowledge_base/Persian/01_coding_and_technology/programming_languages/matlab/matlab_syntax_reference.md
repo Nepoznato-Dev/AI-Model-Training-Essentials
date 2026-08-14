@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای MATLAB (R2024+) ارائه می دهد. این مرجع اصلی MATLAB را با تمرکز بر الگوهای نحو جامع، عملیات ماتریس، رسم و اصطلاحات محاسباتی علمی تکمیل می کند.
 ---

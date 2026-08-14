@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cybersecurity Fundamentals
 Ang seguridad ay isang disiplina na dapat isama sa bawat layer ng isang system mula sa simula, sa halip na idagdag bilang isang nahuling pag-iisip. Kung ang pagbuo ng isang web application, pamamahala ng imprastraktura, o pagpapadala ng isang API, ang pag-unawa sa landscape ng pagbabanta at ang mga pangunahing kaalaman sa pagtatanggol ay mahalaga.
 ---

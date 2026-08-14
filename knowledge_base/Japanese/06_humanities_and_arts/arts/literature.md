@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 文学
 文学は、人類の思考、感情、経験の最も永続的な記録です。古代文明の口承叙事詩から今日のデジタル時代の小説に至るまで、すべての作品は以前のものと対話しています。文学のジャンル、動き、技法を理解することで、読書やそれらの作品を生み出した文化を理解するためのより豊かなレンズが得られます。
 ---

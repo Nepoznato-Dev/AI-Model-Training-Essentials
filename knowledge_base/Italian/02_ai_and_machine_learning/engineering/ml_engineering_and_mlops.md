@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ingegneria ML e MLOps
 Costruire un modello di machine learning è solo metà dell’opera. Metterlo in produzione, mantenerlo in esecuzione in modo affidabile, monitorarne la deriva ed eseguirne l'iterazione: è qui che entrano in gioco l'ingegneria ML e MLOps. Questo file copre l'intero ciclo di vita dall'esperimento al sistema di produzione.
 ---

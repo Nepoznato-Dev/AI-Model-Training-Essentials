@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ความตระหนักด้านสิ่งแวดล้อม
 สภาพแวดล้อมไม่ใช่สิ่งที่แยกจากกัน "ข้างนอกนั่น" แต่เป็นระบบที่ทำให้ทุกสิ่งทุกอย่างเป็นไปได้ ทุกลมหายใจที่คุณหายใจ น้ำทุกแก้วที่คุณดื่ม ทุกมื้อที่คุณกิน ขึ้นอยู่กับองค์ประกอบของบรรยากาศ วัฏจักรของน้ำ สุขภาพของดิน และเครือข่ายการผสมเกสร การทำความเข้าใจว่าระบบเหล่านี้ทำงานอย่างไร และมีการเปลี่ยนแปลงอย่างไร ไม่ใช่ทางเลือกสำหรับผู้ที่มีความรู้ ไฟล์นี้ครอบคลุมพื้นฐานของวิทยาศาสตร์สิ่งแวดล้อม ความท้าทายที่เราเผชิญ และความหมายของความยั่งยืนในทางปฏิบัติ
 ---

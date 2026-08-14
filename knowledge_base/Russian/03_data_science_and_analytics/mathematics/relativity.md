@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Относительность
 Теории относительности Эйнштейна произвели революцию в нашем понимании пространства, времени и гравитации. **Специальная теория относительности** (1905 г.) показала, что пространство и время не разделены, а сплетены в единую ткань, называемую пространством-временем, и что скорость света одинакова для всех наблюдателей. **Общая теория относительности** (1915 г.) представила гравитацию не как силу, а как искривление пространства-времени, вызванное массой и энергией. Эти теории лежат в основе GPS-навигации, ускорителей частиц и нашего понимания черных дыр и эволюции Вселенной.
 ---

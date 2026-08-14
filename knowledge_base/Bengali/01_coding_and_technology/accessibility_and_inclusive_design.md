@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # অ্যাক্সেসিবিলিটি এবং ইনক্লুসিভ ডিজাইন
 অ্যাক্সেসিবিলিটি (প্রায়শই a11y হিসাবে সংক্ষিপ্ত করা হয়) হল সফ্টওয়্যারকে প্রত্যেকের দ্বারা ব্যবহারযোগ্য করে তোলার অভ্যাস - যার মধ্যে চাক্ষুষ, শ্রবণ, মোটর, জ্ঞানীয় এবং স্নায়বিক অক্ষমতা রয়েছে। এটি অনেক বিচারব্যবস্থায় একটি আইনি প্রয়োজনীয়তা এবং একটি প্রমিত প্রকৌশল অনুশীলন। অ্যাক্সেসযোগ্য সফ্টওয়্যার প্রত্যেকের জন্য আরও ভাল সফ্টওয়্যার, কারণ ডিজাইনের সিদ্ধান্তগুলি যা অক্ষম ব্যবহারকারীদের সমর্থন করে — পরিষ্কার কাঠামো, কীবোর্ড নেভিগেশন, যথেষ্ট বৈসাদৃশ্য, পাঠযোগ্য পাঠ্য — সমস্ত ব্যবহারকারীর অভিজ্ঞতা উন্নত করে৷
 ---

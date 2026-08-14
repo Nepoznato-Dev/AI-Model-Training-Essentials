@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cadel & Clojure
 Lisp adalah bahasa pemrograman tingkat tinggi tertua kedua yang masih digunakan (setelah Fortran), dibuat oleh John McCarthy pada tahun 1958. Lisp memelopori banyak konsep yang sekarang dianggap remeh: pengumpulan sampah, rekursi, struktur data pohon, pengetikan dinamis, dan gagasan program sebagai data (homoikonisitas). Fitur khas Lisp adalah sintaksisnya — kode ditulis sebagai tanda kurung bersarang (ekspresi S), yang membuat bahasa mudah diurai dan memungkinkan metaprogramming yang kuat melalui **makro**.
 Clojure adalah dialek Lisp modern yang dirancang oleh Rich Hickey pada tahun 2007. Clojure berjalan pada JVM (juga ClojureScript untuk JavaScript), mencakup pemrograman fungsional, kekekalan, dan konkurensi, serta menyediakan interoperabilitas Java yang lancar. Clojure digunakan dalam pengembangan web, pemrosesan data, dan sistem keuangan.

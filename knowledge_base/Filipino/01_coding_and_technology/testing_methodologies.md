@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Paraan ng Pagsubok
 Ang pagsubok ay kung paano ka magkakaroon ng kumpiyansa na gumagana ang iyong code — at higit sa lahat, ang mga pagbabago dito ay hindi masisira kung ano ang gumagana na. Ang mahusay na pagsubok ay nakakakuha ng mga bug bago gawin ng mga gumagamit, mga dokumento na inaasahang pag-uugali, at nagbibigay-daan sa walang takot na refactoring. Sinasaklaw ng file na ito ang buong spectrum ng mga diskarte sa pagsubok, mula sa mga unit test hanggang sa end-to-end na mga pagsubok, at ang mga prinsipyong ginagawang epektibo ang pagsubok.
 ---

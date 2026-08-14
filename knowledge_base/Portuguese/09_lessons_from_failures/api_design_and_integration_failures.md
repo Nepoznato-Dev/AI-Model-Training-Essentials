@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Falhas de design e integração de API
 APIs (Interfaces de Programação de Aplicativos) são o tecido conjuntivo do software moderno – elas permitem que os serviços se comuniquem, permitem a integração de terceiros e permitem que as equipes trabalhem de forma independente. Quando o design da API dá errado, as consequências se espalham por todos os sistemas que dependem dela: integrações quebradas, vulnerabilidades de segurança, frustração do desenvolvedor e reescritas dispendiosas. Falhas de integração — onde os sistemas não conseguem se comunicar de maneira confiável — estão entre as fontes mais comuns de incidentes de produção.
 ---

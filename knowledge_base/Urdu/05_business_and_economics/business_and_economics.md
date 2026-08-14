@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کاروبار اور معاشیات
 ہر وہ تنظیم جو کوئی پروڈکٹ یا سروس بیچتی ہے ایک کاروبار ہے، اور ہر وہ معاشرہ جو سامان پیدا کرتا ہے اور تقسیم کرتا ہے ایک معیشت ہے۔ اس فائل میں موجود تصورات لاگو ہوتے ہیں چاہے آپ فری لانس آپریشن چلا رہے ہو، کسی کارپوریشن میں کام کر رہے ہو، خبروں کو سمجھنے کی کوشش کر رہے ہو، یا صرف یہ معلوم کر رہے ہو کہ پیسہ دنیا میں کیسے منتقل ہوتا ہے۔
 ---

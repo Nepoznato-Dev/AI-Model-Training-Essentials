@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Федеративное обучение и конфиденциальность
 Федеративное обучение — это метод обучения моделей машинного обучения на нескольких устройствах или в организациях без совместного использования необработанных данных. Вместо отправки данных на центральный сервер каждое устройство обучает локальную модель и передает только обновления модели (градиенты или веса). Центральный сервер объединяет эти обновления для создания глобальной модели. Он был разработан Google для обучения моделей языка клавиатуры на телефонах Android — и с тех пор стал ключевым методом для сохранения конфиденциальности ИИ.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # データサイエンスと分析
 データ サイエンスは、生のデータを実用的な洞察に変える学問です。これは統計、コンピューター サイエンス、専門知識の交差点に位置し、金融から医療に至るまであらゆる分野で不可欠なものとなっています。このファイルでは、すべての実務者が知っておくべき中心的な概念、ツール、ワークフローについて説明します。
 ---

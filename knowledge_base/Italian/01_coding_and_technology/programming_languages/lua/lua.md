@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Lua
 Lua è un linguaggio di scripting leggero e integrabile progettato per estendere le applicazioni. Creato nel 1993 presso la Pontificia Università Cattolica di Rio de Janeiro in Brasile, Lua è uno dei linguaggi di scripting più veloci disponibili. Il suo ingombro ridotto (l'interprete è di circa 120 KB) e la semplicità lo rendono la scelta ideale per lo scripting di sviluppo di giochi, i sistemi embedded e la configurazione.
 Lua è meglio conosciuto come il linguaggio di scripting dietro Roblox (la piattaforma di gioco con oltre 200 milioni di utenti mensili), i componenti aggiuntivi di World of Warcraft e numerosi motori di gioco (Love2D, Defold, Corona SDK). Viene utilizzato anche in Nginx (OpenResty), Redis e Wireshark.

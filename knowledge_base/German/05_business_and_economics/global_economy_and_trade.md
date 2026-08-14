@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Globale Wirtschaft und Handel
 Die Weltwirtschaft ist das größte und komplexeste System, das die Menschheit je aufgebaut hat. Im Jahr 2025 überstieg das globale BIP 110 Billionen US-Dollar. Über 8 Milliarden Menschen produzieren, handeln und konsumieren täglich Waren und Dienstleistungen über Grenzen hinweg. Um sich in der modernen Welt zurechtzufinden, ist es wichtig zu verstehen, wie dieses System funktioniert – wer womit handelt, warum manche Länder reich und andere arm sind, wie Geld über Grenzen hinweg fließt und was passiert, wenn das System zusammenbricht.
 ---

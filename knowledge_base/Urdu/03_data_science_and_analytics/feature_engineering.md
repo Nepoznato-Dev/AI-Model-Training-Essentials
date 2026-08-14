@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فیچر انجینئرنگ
 فیچر انجینئرنگ خام ڈیٹا کو نمائندگی میں تبدیل کرنے کا عمل ہے جو مشین لرننگ ماڈلز کو زیادہ موثر بناتا ہے۔ اسے اکثر ML پائپ لائن میں سب سے اہم قدم کے طور پر بیان کیا جاتا ہے — وہ خصوصیات جو آپ کسی ماڈل کو اپنے منتخب کردہ الگورتھم سے زیادہ اہمیت دیتے ہیں۔ اچھی طرح سے تیار کردہ خصوصیات کے ساتھ ایک سادہ ماڈل عام طور پر خام، غیر پروسیس شدہ ان پٹ کے ساتھ ایک پیچیدہ ماڈل کو پیچھے چھوڑ دے گا۔ یہ فن ڈومین اور ڈیٹا دونوں کو اچھی طرح سے سمجھنے میں مضمر ہے تاکہ وہ سگنلز بنائے جن سے ماڈل سیکھ سکتا ہے۔
 ---

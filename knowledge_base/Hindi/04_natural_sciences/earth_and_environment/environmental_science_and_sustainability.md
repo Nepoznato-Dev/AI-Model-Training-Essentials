@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # पर्यावरण विज्ञान और स्थिरता
 पर्यावरण विज्ञान इस प्रश्न पर भौतिकी, रसायन विज्ञान, जीवविज्ञान, भूविज्ञान और अर्थशास्त्र के तरीकों को लागू करता है: "हमारे ग्रह पर क्या हो रहा है, और इसके बारे में क्या किया जा सकता है?" यह एक अंतःविषय क्षेत्र है - कई विषयों का एक अभिसरण - जो इसकी विश्लेषणात्मक गहराई और इसकी नीति प्रासंगिकता दोनों में योगदान देता है।
 पर्यावरण विज्ञान में मुख्य तनाव यह है: मानव सभ्यता पर्यावरण से संसाधनों को निकालने पर निर्भर करती है, लेकिन उन संसाधनों को निकालने से पर्यावरण में ऐसे बदलाव आते हैं जो उन प्रणालियों को कमजोर कर सकते हैं जिन पर हम निर्भर हैं। यह समझना कि फीडबैक लूप संक्षेप में संपूर्ण क्षेत्र है।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # علم داده و تجزیه و تحلیل
 علم داده رشته تبدیل داده های خام به بینش عملی است. این در تقاطع آمار، علوم کامپیوتر و تخصص حوزه قرار دارد - و در هر بخش از مالی تا مراقبت های بهداشتی ضروری شده است. این فایل در میان مفاهیم اصلی، ابزارها و گردش کار که هر پزشک باید بداند، می پردازد.
 ---

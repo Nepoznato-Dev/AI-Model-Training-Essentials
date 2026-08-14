@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Conception et architecture des API
 Une API (Application Programming Interface) est la façon dont les composants logiciels communiquent entre eux. Une API bien conçue est intuitive, cohérente et agréable à utiliser. Un système mal conçu provoque de la confusion, des bugs et de la frustration. Ce fichier couvre les principes, modèles et pratiques de création d'API que les développeurs souhaitent réellement utiliser.
 ---

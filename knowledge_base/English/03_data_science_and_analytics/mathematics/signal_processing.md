@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Signal Processing
 
 Signal processing is the science of analysing, modifying, and synthesising signals — representations of physical quantities varying over time, space, or frequency. Audio, images, video, sensor data, brain waves, stock prices — all are signals. The mathematical tools of signal processing (Fourier transforms, filters, sampling theory) are foundational to machine learning, communications, medical imaging, and virtually every field that works with data.

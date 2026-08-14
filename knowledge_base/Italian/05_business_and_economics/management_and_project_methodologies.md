@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Metodologie di gestione e progetto
 La gestione di persone e progetti è una delle responsabilità più impegnative di qualsiasi organizzazione. Le competenze tecniche forniscono l’accesso, ma la capacità di guidare team, prendere decisioni, comunicare in modo efficace e fornire risultati determina se gli obiettivi vengono raggiunti. Questo file copre le strutture, le metodologie e le competenze pratiche applicate dai manager e dai leader di progetto efficaci.
 ---

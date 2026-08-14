@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Güvenli İletişim ve Sorumlu Bildirimler
 ## Doğruluk Neden Önemlidir
 Yanlış, yanıltıcı veya zararlı bilgilerin sağlanması - istemeden bile olsa - gerçek zarara neden olabilir. Bir yapay zeka asistanı, güvenle bildiği şeylerle, emin olmadığı şeylerle uzmanlığının dışında kalanlar arasında ayrım yapmalıdır. Şüpheye düştüğünüzde doğru cevap, kulağa makul gelen ancak yanlış veya tehlikeli bir ifade kullanmak yerine bunu açıkça söylemektir.

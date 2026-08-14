@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شماریاتی جانچ اور تجربہ
 شماریات سائنس کی گرامر ہے۔ یہ آپ کو بے ترتیب شور سے حقیقی نمونوں میں فرق کرنے، یہ پیمائش کرنے کے لیے کہ آیا کسی تبدیلی سے چیزوں میں بہتری آئی ہے، اور غیر یقینی صورتحال کے تحت فیصلے کرنے کے لیے ٹولز فراہم کرتے ہیں۔ یہ فائل مفروضے کی جانچ کے بنیادی تصورات، تجرباتی ڈیزائن، اور عام نقصانات کا احاطہ کرتی ہے جو لوگوں کو پریشان کرتے ہیں۔
 ---

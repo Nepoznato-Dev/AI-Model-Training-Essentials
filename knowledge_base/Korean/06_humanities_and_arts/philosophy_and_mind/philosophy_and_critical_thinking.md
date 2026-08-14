@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 철학과 비판적 사고
 철학은 지식, 현실, 존재에 대한 근본적인 질문을 체계적으로 연구하는 학문입니다. 이는 지식으로 간주되는 것, 수행할 가치가 있는 것, 타당한 주장과 약한 주장을 구별하는 방법을 평가하기 위한 프레임워크를 제공합니다. 비판적 사고는 주장을 분석하고, 결함이 있는 추론을 식별하고, 더 나은 정보를 바탕으로 결정을 내리는 기술인 이 프레임워크의 실제 적용입니다. 이 파일은 주요 아이디어, 이를 평가하는 도구, 모든 사람에게 영향을 미치는 인지 편향을 다루고 있습니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Meccanica Quantistica
 La meccanica quantistica è la teoria della fisica su scala più piccola: atomi, elettroni, fotoni e le particelle fondamentali della natura. Sostituisce il mondo deterministico della meccanica classica con probabilità, sovrapposizioni ed entanglement. Nonostante la sua natura controintuitiva, la meccanica quantistica è la teoria testata più precisamente in tutta la scienza. Oggi i suoi principi stanno diventando direttamente rilevanti per l’informatica attraverso i computer quantistici, che promettono di risolvere determinati problemi in modo esponenziale più veloce rispetto alle macchine classiche.
 ---

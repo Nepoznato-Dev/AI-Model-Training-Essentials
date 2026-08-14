@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #โพรมีธีอุสและกราฟาน่า
 Prometheus เป็นชุดเครื่องมือตรวจสอบและแจ้งเตือนแบบโอเพ่นซอร์สที่ออกแบบมาเพื่อความน่าเชื่อถือและความสามารถในการปรับขนาด Grafana เป็นแพลตฟอร์มโอเพ่นซอร์สชั้นนำสำหรับการแสดงภาพข้อมูลอนุกรมเวลา เมื่อรวมกันแล้วจะก่อให้เกิดสแต็กการตรวจสอบที่ได้รับความนิยมสูงสุดสำหรับโครงสร้างพื้นฐานและแอปพลิเคชันสมัยใหม่ Prometheus รวบรวมและจัดเก็บหน่วยวัด Grafana แสดงในแดชบอร์ด
 ---

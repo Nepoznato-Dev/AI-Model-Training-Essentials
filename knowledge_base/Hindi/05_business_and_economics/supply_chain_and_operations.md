@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # आपूर्ति श्रृंखला और संचालन प्रबंधन
 आपूर्ति श्रृंखला प्रबंधन सोर्सिंग, खरीद, रूपांतरण और लॉजिस्टिक्स में शामिल सभी गतिविधियों का समन्वय है - कच्चे माल से लेकर ग्राहक के हाथों में तैयार उत्पाद तक। संचालन प्रबंधन उत्पादन प्रणालियों का दैनिक संचालन है। साथ में, वे यह निर्धारित करते हैं कि कोई कंपनी सही उत्पाद, सही समय पर, सही कीमत पर, सही गुणवत्ता के साथ वितरित कर सकती है या नहीं। महामारी, चिप की कमी और नहर की रुकावटों ने दिखाया है कि विश्व स्तर पर आपूर्ति श्रृंखलाएं कितनी नाजुक और परस्पर जुड़ी हुई हैं।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tư duy logic và phản biện
 Logic là nghiên cứu về lý luận hợp lý - cách xây dựng các lập luận hợp lý và xác định những lập luận còn thiếu sót. Tư duy phê phán là thói quen có kỷ luật trong việc đặt câu hỏi về các giả định, đánh giá bằng chứng và lập luận cẩn thận. Những kỹ năng này rất cần thiết không chỉ trong toán học và khoa học máy tính mà còn trong việc ra quyết định hàng ngày, nghiên cứu khoa học và điều hướng trong một thế giới giàu thông tin.
 ---

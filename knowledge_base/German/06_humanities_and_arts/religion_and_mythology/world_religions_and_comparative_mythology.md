@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Weltreligionen und vergleichende Mythologie
 Weltreligionen sind die wichtigsten Glaubens-, Praxis- und Gemeinschaftssysteme, die die menschliche Zivilisation über Jahrtausende hinweg geprägt haben. Die vergleichende Mythologie untersucht die Geschichten, die verschiedene Kulturen über die Schöpfung, Helden, Götter und den Sinn der Existenz erzählen – und die auffälligen Muster, die sich in Traditionen wiederholen, die Tausende von Meilen und Jahrtausende voneinander entfernt sind. Beides zu verstehen ist wichtig, um zu verstehen, warum Menschen glauben, was sie glauben, wie sich Kulturen unterscheiden und was die menschliche Erfahrung verbindet.
 ---

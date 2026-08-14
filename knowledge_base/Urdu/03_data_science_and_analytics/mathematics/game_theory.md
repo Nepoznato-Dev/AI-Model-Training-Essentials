@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # گیم تھیوری
 گیم تھیوری سٹریٹجک تعامل کی ریاضی ہے — ایسے حالات جہاں آپ کے نتائج کا انحصار نہ صرف آپ کی اپنی پسند پر ہوتا ہے، بلکہ دوسروں کے انتخاب پر ہوتا ہے۔ کمپنیوں کے درمیان قیمتوں کے تعین کی جنگوں سے لے کر جوہری ہتھیاروں کی دوڑ تک، آن لائن نیلامی سے لے کر ارتقائی حیاتیات تک، گیم تھیوری تنازعات اور تعاون کا تجزیہ کرنے کے لیے اوزار فراہم کرتی ہے۔ یہ ملٹی ایجنٹ ری انفورسمنٹ لرننگ، جنریٹیو ایڈورسریل نیٹ ورکس (GANs) اور آن لائن پلیٹ فارمز کے لیے میکانزم ڈیزائن کے ذریعے مشین لرننگ کے لیے تیزی سے متعلقہ ہو گیا ہے۔
 ---

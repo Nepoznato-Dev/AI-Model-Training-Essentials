@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آپٹکس اور لہریں۔
 لہریں ہر جگہ موجود ہیں: آواز، روشنی، پانی، ریڈیو سگنلز، کوانٹم امکانی طول و عرض، اسٹاک مارکیٹ کے اتار چڑھاؤ، اور نیورل نیٹ ورک ایکٹیویشن کی کمپن۔ آپٹکس - روشنی کا مطالعہ - سب سے زیادہ ترقی یافتہ لہر سائنس ہے، اور اس کے ریاضی کے اوزار (فورئیر تجزیہ، مداخلت، تفریق) ہر لہر کے رجحان پر لاگو ہوتے ہیں۔ سگنل پروسیسنگ، تصویری تجزیہ، مواصلات، اور تمام جدید ٹیکنالوجی کی جسمانی تہہ کے لیے لہروں کو سمجھنا ضروری ہے۔
 ---

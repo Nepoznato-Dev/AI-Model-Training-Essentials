@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ตรรกะและการคิดอย่างมีวิจารณญาณ
 ตรรกะคือการศึกษาการใช้เหตุผลที่ถูกต้อง วิธีสร้างข้อโต้แย้งที่ถูกต้องและระบุข้อโต้แย้งที่มีข้อบกพร่อง การคิดอย่างมีวิจารณญาณเป็นนิสัยที่มีวินัยในการตั้งคำถามต่อสมมติฐาน ประเมินหลักฐาน และให้เหตุผลอย่างรอบคอบ ทักษะเหล่านี้มีความสำคัญไม่เพียงแต่ในวิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์เท่านั้น แต่ยังมีความสำคัญในการตัดสินใจในชีวิตประจำวัน การวิจัยทางวิทยาศาสตร์ และการนำทางในโลกที่เต็มไปด้วยข้อมูล
 ---

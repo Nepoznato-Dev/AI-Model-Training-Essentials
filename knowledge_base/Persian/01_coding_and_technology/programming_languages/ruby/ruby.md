@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #یاقوت
 روبی یک زبان برنامه نویسی پویا، تفسیر شده و شی گرا است که توسط Yukihiro "Matz" Matsumoto ایجاد شد و اولین بار در سال 1995 در ژاپن منتشر شد. روبی با تمرکز بر شادی برنامه نویس طراحی شده است - نحو آن زیبا و طبیعی است و تقریباً مانند انگلیسی خوانده می شود. همه چیز در روبی یک شی است، از جمله انواع اولیه مانند اعداد صحیح و بولی. روبی بیشتر برای چارچوب وب Ruby on Rails شناخته می‌شود، که توسعه وب را با رایج کردن قراردادها بر روی پیکربندی و نمونه‌سازی سریع، متحول کرد.
 Beyond Rails، Ruby برای اسکریپت نویسی، اتوماسیون، ابزار DevOps (Cef، Puppet) و به عنوان یک زبان همه منظوره استفاده می شود. نحو بیانی و قابلیت های فرابرنامه نویسی قدرتمند آن، نوشتن را لذت بخش می کند.

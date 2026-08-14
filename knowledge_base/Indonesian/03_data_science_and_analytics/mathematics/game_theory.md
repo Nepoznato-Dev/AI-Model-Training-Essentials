@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teori Permainan
 Teori permainan adalah matematika interaksi strategis - situasi di mana hasil Anda tidak hanya bergantung pada pilihan Anda sendiri, namun juga pada pilihan orang lain. Dari perang harga antar perusahaan hingga perlombaan senjata nuklir, dari lelang online hingga biologi evolusi, teori permainan menyediakan alat untuk menganalisis konflik dan kerja sama. Hal ini menjadi semakin relevan dengan pembelajaran mesin melalui pembelajaran penguatan multi-agen, jaringan permusuhan generatif (GAN), dan desain mekanisme untuk platform online.
 ---

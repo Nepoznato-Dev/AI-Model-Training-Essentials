@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Neuroscience
 Neuroscience ni utafiti wa mfumo wa neva - ubongo, uti wa mgongo, na mishipa yote inayowaunganisha na mwili. Inachukua viwango vingi: kutoka kwa molekuli na jeni, hadi neuroni na sinepsi za mtu binafsi, hadi saketi na maeneo ya ubongo, hadi tabia, utambuzi, na fahamu. Ubongo ndio muundo changamano zaidi katika ulimwengu unaojulikana, unao na takribani niuroni bilioni 86 zilizounganishwa na matrilioni ya sinepsi, na kuelewa jinsi inavyofanya kazi ni mojawapo ya changamoto kubwa za sayansi.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اصول NLP
 پردازش زبان طبیعی (NLP) حوزه آموزش ماشین‌ها برای درک، تولید و کار با زبان انسان است. موتورهای جستجو، ربات‌های گفتگو، سیستم‌های ترجمه، تحلیل احساسات و مدل‌های زبان بزرگ (LLM) را که از سال 2020 هوش مصنوعی را متحول کرده‌اند، نیرو می‌دهد. این فایل تکامل از تکنیک‌های کلاسیک به معماری‌های مبتنی بر ترانسفورماتور مدرن را پوشش می‌دهد.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 序言
 Prolog（邏輯程式設計）是一種邏輯程式語言，由 Alain Colmerauer 和 Philippe Roussel 於 1972 年創建。與此列表中的所有其他語言不同，Prolog 不會告訴計算機“如何”解決問題 - 您聲明“什麼”是真實的（事實和規則），Prolog 的推理引擎通過邏輯演繹找出答案。
 Prolog 是 20 世紀 80 年代專家系統、自然語言處理和人工智慧研究的首選語言。它為日本第五代電腦系統專案提供了動力，並在 IBM 的 Watson 中用於自然語言理解。如今，Prolog 被用於約束求解、調度、類型推斷、法律推理以及任何自然地表達為邏輯關係的問題。

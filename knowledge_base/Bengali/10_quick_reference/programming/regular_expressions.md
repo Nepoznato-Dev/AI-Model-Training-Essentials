@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to programming/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # রেগুলার এক্সপ্রেশন চিট শীট
 রেগুলার এক্সপ্রেশন (regex) হল টেক্সট মেলানোর জন্য প্যাটার্ন। এগুলি সর্বত্র ব্যবহৃত হয় — অনুসন্ধান এবং প্রতিস্থাপন, ইনপুট বৈধতা, লগ পার্সিং, ডেটা নিষ্কাশন এবং আরও অনেক কিছু৷ এটি একটি ব্যবহারিক রেফারেন্স, পাঠ্যপুস্তক নয়।
 ---

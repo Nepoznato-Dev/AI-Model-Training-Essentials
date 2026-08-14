@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #SQL
 SQL (Structured Query Language) to język specyficzny dla domeny, przeznaczony do zarządzania danymi i wysyłania zapytań do danych w relacyjnych bazach danych. Język SQL, opracowany po raz pierwszy w IBM w latach 70. XX wieku i ustandaryzowany w 1987 r., pozostaje głównym interfejsem między aplikacjami i ich danymi. Każdy większy system zarządzania relacyjnymi bazami danych (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — używa języka SQL jako języka zapytań.
 SQL nie jest językiem programowania ogólnego przeznaczenia. Nie napisałbyś aplikacji internetowej w SQL. Jeśli jednak Twoja aplikacja przechowuje dane — a prawie wszystkie aplikacje to robią — wówczas SQL jest językiem, którego używasz do pobierania, przekształcania i zarządzania tymi danymi. Jest to prawdopodobnie najbardziej uniwersalnie przydatna umiejętność techniczna po ogólnym programowaniu.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Física
 A física levanta a questão mais fundamental da ciência: como se comportam a matéria e a energia? Todo o resto – química, biologia, engenharia – baseia-se nas respostas. A física abrange desde a escala subatômica (mecânica quântica) até a escala cósmica (relatividade geral), e seus princípios sustentam todas as outras ciências naturais.
 ---

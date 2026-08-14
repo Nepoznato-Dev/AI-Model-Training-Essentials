@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 管理とプロジェクトの方法論
 人材とプロジェクトの管理は、あらゆる組織の中で最も要求の厳しい責任の 1 つです。技術的なスキルがあれば入門できますが、チームを率い、意思決定をし、効果的にコミュニケーションをとり、結果をもたらす能力が目標を達成できるかどうかを左右します。このファイルには、有能なマネージャーやプロジェクト リーダーが適用するフレームワーク、方法論、実践的なスキルが含まれています。
 ---

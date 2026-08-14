@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Климатические технологии и зеленые инновации
 Климатические технологии включают в себя инструменты, системы и инновации, предназначенные для сокращения выбросов парниковых газов, адаптации к изменению климата и перевода мировой экономики на устойчивую основу. Это, пожалуй, самая важная технологическая область 21-го века — разница между управляемым потеплением на 1,5°C и катастрофическим потеплением на 3°C+ во многом зависит от того, насколько быстро эти технологии могут быть развернуты в больших масштабах. Проблема не только научная, но и экономическая, политическая и социальная.
 ---

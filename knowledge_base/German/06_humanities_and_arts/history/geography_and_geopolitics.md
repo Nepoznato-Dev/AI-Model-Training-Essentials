@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Geographie und Geopolitik
 Die Geographie prägt das Schicksal. Die Lage von Bergen, Flüssen und natürlichen Ressourcen hat über Jahrtausende hinweg Handelsrouten bestimmt, Kriege entfacht und Zivilisationen aufgebaut. Geopolitik – das Zusammenspiel von Geographie, Macht und Politik – ist auch heute noch von entscheidender Bedeutung für das Verständnis, warum sich Nationen so verhalten, wie sie es tun.
 ---

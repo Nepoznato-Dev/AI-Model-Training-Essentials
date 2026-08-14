@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp & Clojure
 لِسپ دوسری سب سے پرانی اعلیٰ سطحی پروگرامنگ زبان ہے جو اب بھی استعمال میں ہے (فورٹران کے بعد)، جسے جان میک کارتھی نے 1958 میں تخلیق کیا تھا۔ اس نے بہت سے تصورات کو آگے بڑھایا جنہیں اب قدر کی نگاہ سے دیکھا جاتا ہے: کوڑا اٹھانا، تکرار، درختوں کے ڈیٹا کا ڈھانچہ، متحرک ٹائپنگ، اور پروگراموں کا خیال بطور ڈیٹا (ہومیکونیسیٹی)۔ Lisp کی مخصوص خصوصیت اس کا نحو ہے — کوڈ کو نیسٹڈ قوسین (S-expressions) کے طور پر لکھا جاتا ہے، جو زبان کو معمولی طور پر قابل تجزیہ بناتا ہے اور **میکروز** کے ذریعے طاقتور میٹا پروگرامنگ کو قابل بناتا ہے۔
 Clojure ایک جدید Lisp بولی ہے جسے Rich Hickey نے 2007 میں ڈیزائن کیا تھا۔ یہ JVM (JavaScript کے لیے ClojureScript بھی) پر چلتا ہے، فنکشنل پروگرامنگ، تغیر پذیری، اور ہم آہنگی کو اپناتا ہے، اور بغیر کسی رکاوٹ کے جاوا انٹرآپریبلٹی فراہم کرتا ہے۔ Clojure ویب ڈویلپمنٹ، ڈیٹا پروسیسنگ، اور مالیاتی نظام میں استعمال ہوتا ہے۔

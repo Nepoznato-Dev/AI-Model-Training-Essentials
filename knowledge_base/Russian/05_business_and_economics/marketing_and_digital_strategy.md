@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Маркетинг и цифровая стратегия
 Маркетинг — это то, как компании создают, общаются и доставляют ценность клиентам. Он охватывает всю систему понимания потребностей клиентов, позиционирования продукта для удовлетворения этих потребностей и построения отношений, которые превращают покупателей в сторонников. Цифровая революция изменила инструменты, каналы и скорость маркетинга, при этом основы остались неизменными.
 ---

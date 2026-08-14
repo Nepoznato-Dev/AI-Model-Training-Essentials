@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Kusanyiko — Miundo ya nahau na Mbinu Bora
 Mwongozo huu unashughulikia mifumo ya nahau ya kuandika msimbo safi wa Kusanyiko unaoweza kudumishwa (lengo la x86/x64 kwa sintaksia ya NASM).
 ---

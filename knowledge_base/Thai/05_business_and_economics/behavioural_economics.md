@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เศรษฐศาสตร์พฤติกรรมและวิทยาศาสตร์การตัดสินใจ
 เศรษฐศาสตร์พฤติกรรมศึกษาว่าผู้คนตัดสินใจอย่างไรจริงๆ ไม่ใช่ว่าตัวแทนที่มีเหตุผลจะตัดสินใจอย่างไร เศรษฐศาสตร์แบบดั้งเดิมถือว่าผู้คนมีเหตุผล สนใจในตนเอง และประมวลผลข้อมูลได้ดี การวิจัยหลายทศวรรษโดย Kahneman, Tversky, Thaler และคนอื่นๆ แสดงให้เห็นว่าสิ่งนี้ไม่ถูกต้องอย่างมาก ผู้คนใช้ทางลัดทางจิต ได้รับอิทธิพลจากบริบทที่ไม่เกี่ยวข้อง ข้อมูลล่าสุดที่มีน้ำหนักเกิน และทำข้อผิดพลาดที่คาดเดาได้อย่างเป็นระบบ การทำความเข้าใจรูปแบบเหล่านี้ถือเป็นสิ่งสำคัญสำหรับการออกแบบผลิตภัณฑ์ นโยบาย องค์กร และการตัดสินใจส่วนบุคคลที่ดีขึ้น
 ---

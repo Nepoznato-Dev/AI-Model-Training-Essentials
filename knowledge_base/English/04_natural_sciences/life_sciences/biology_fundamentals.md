@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Biology Fundamentals
 
 Biology is the science of life. All living things share certain features: they are made of cells, they use energy, they grow, they respond to their environment, they reproduce, and they evolve. Biology spans from the molecular machinery inside a single cell to the interactions of entire ecosystems, and it is the foundation of medicine, agriculture, biotechnology, and conservation.

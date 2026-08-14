@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 信号処理
 信号処理は、時間、空間、または周波数とともに変化する物理量の表現である信号を分析、変更、合成する科学です。音声、画像、ビデオ、センサーデータ、脳波、株価、すべてが信号です。信号処理の数学的ツール (フーリエ変換、フィルター、サンプリング理論) は、機械学習、通信、医療画像処理、およびデータを扱うほぼすべての分野の基礎です。
 ---

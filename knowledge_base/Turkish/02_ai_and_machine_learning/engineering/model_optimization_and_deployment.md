@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Model Optimizasyonu ve Dağıtımı
 Büyük bir yapay zeka modelini eğitmek önemli bir başarıdır, ancak onu verimli bir şekilde dağıtmak, mühendislik çabalarının çoğunun gerekli olduğu yerdir. Yanıt vermesi 10 saniye süren veya sekiz A100 GPU gerektiren bir model, çoğu gerçek dünya uygulaması için pratik değildir. Model optimizasyonu, kabul edilebilir kaliteyi korurken modelleri daha küçük, daha hızlı ve daha uygun maliyetli hale getirme sürecidir. Bu dosya niceleme, budama, damıtma ve modellerin üretimde dağıtımına yönelik pratik araçları kapsar.
 ---

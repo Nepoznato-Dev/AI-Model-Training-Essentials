@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Metode Numerik
 Metode numerik adalah jembatan antara teori matematika dan komputasi praktis. Meskipun matematika murni membuktikan adanya solusi, metode numerik sebenarnya menghitung perkiraan jawaban dengan presisi terbatas. Setiap model pembelajaran mesin, simulasi fisika, dan saluran analisis data pada akhirnya bergantung pada komputasi numerik. Memahami metode ini – keakuratan, stabilitas, dan keterbatasannya – sangat penting untuk membangun perangkat lunak yang andal.
 ---

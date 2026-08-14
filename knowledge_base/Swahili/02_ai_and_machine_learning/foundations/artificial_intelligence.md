@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Akili Bandia
 Akili ya Bandia ni jaribio la kuunda mashine zinazoweza kufanya mambo ambayo yangehitaji akili ikiwa mwanadamu angeyafanya: kutambua nyuso, kuelewa usemi, kufanya maamuzi, kuandika maandishi, kucheza michezo, kuendesha magari, kutambua magonjwa. Sehemu ni ya zamani kama kompyuta yenyewe - Alan Turing alikuwa akiuliza "Je, mashine zinaweza kufikiria?" mnamo 1950 - lakini mlipuko wa hivi karibuni wa uwezo (miaka ya 2020) umefanya AI kuwa moja ya teknolojia muhimu na iliyoshindaniwa katika historia ya mwanadamu.
 ---

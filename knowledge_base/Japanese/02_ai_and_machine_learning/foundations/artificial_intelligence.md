@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 人工知能
 人工知能とは、人間が行う場合に知能が必要となるようなことを実行できる機械を構築する試みです。顔の認識、音声の理解、意思決定、テキストの書き込み、ゲームのプレイ、車の運転、病気の診断などです。この分野はコンピューティングそのものと同じくらい古いものです。アラン・チューリングは「機械は考えることができるのか?」と問いかけていました。しかし、最近（2020 年代）の能力の爆発的な進歩により、AI は人類の歴史の中で最も重要かつ争点となっているテクノロジーの 1 つになりました。
 ---

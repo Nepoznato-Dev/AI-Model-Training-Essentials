@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Python
 Python là ngôn ngữ lập trình cấp cao, được diễn giải, có mục đích chung do Guido van Rossum tạo ra và phát hành lần đầu tiên vào năm 1991. Python ưu tiên khả năng đọc mã thông qua khả năng thụt lề đáng kể và cú pháp rõ ràng, đọc gần giống tiếng Anh đơn giản. Python được gõ động, thu thập rác và hỗ trợ nhiều mô hình lập trình bao gồm lập trình thủ tục, hướng đối tượng và chức năng.
 Ngày nay, Python là ngôn ngữ thống trị trong AI/ML, khoa học dữ liệu, máy tính khoa học và tự động hóa - đồng thời vẫn là một trong những ngôn ngữ tốt nhất cho người mới bắt đầu. Bản sắc kép đó (đủ đơn giản cho tập lệnh đầu tiên, đủ mạnh để huấn luyện các mô hình ngôn ngữ lớn) là điều làm nên sự khác biệt của nó.

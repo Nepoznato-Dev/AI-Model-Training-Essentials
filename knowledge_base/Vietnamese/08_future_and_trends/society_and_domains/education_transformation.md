@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chuyển đổi giáo dục
 ## Tổng quan
 Mô hình giáo dục truyền thống – ngồi trong lớp 12 năm, có thể vào đại học, rồi đi làm – đang bị phá vỡ. Gia sư AI hiện có thể cung cấp hướng dẫn cá nhân hóa trên quy mô lớn. Tốc độ thay đổi công nghệ có nghĩa là việc học tập suốt đời không còn là điều bắt buộc nữa. Và nhà tuyển dụng ngày càng quan tâm đến những gì bạn có thể *làm*, chứ không chỉ những bằng cấp bạn có. Đây là cách giáo dục đang được hình dung lại.

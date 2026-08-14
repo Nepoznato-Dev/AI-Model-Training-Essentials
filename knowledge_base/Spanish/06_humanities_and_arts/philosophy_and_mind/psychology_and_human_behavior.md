@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Psicología y Comportamiento Humano
 La psicología es la ciencia de cómo y por qué las personas piensan, sienten y actúan como lo hacen. No es lectura de la mente ni sentido común, aunque a veces confirma lo que sugiere el sentido común y otras veces lo contradice por completo. La psicología utiliza el mismo método científico que cualquier otra ciencia: observar, formular hipótesis, probar, revisar. Lo que lo hace desafiante es que su tema –la mente humana– es el objeto más complejo que conocemos.
 Este archivo cubre las principales áreas de la psicología: cómo pensamos, cómo nos desarrollamos, cómo somos influenciados por los demás, qué va mal y qué se puede hacer al respecto.

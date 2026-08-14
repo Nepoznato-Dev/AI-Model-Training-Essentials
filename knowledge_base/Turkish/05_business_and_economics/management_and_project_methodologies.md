@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yönetim ve Proje Metodolojileri
 İnsanları ve projeleri yönetmek, herhangi bir kuruluştaki en zorlu sorumluluklar arasındadır. Teknik beceriler giriş sağlar ancak ekiplere liderlik etme, karar verme, etkili iletişim kurma ve sonuçları sunma yeteneği hedeflere ulaşılıp ulaşılamayacağını belirler. Bu dosya, etkili yöneticilerin ve proje liderlerinin uyguladığı çerçeveleri, metodolojileri ve pratik becerileri kapsar.
 ---

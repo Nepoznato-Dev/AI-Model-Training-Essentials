@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Data Visualization
 Ang isang mahusay na disenyo na tsart ay maaaring magbunyag ng mga pattern na itinatago ng mga talahanayan ng mga numero. Ang isang hindi maganda ang disenyo ay maaaring iligaw, lituhin, o mainip. Ang data visualization ay ang craft ng paggawa ng data sa mga visual na kwento na nagbibigay-alam sa mga desisyon. Sinasaklaw ng file na ito ang pagpili ng tsart, mga prinsipyo ng disenyo, karaniwang pagkakamali, at ang mga tool na ginagawang posible ang lahat ng ito.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # NLP 기초
 자연어 처리(NLP)는 인간의 언어를 이해하고, 생성하고, 사용하도록 기계를 가르치는 분야입니다. 이는 2020년 이후 AI를 변화시킨 검색 엔진, 챗봇, 번역 시스템, 감정 분석 및 대규모 언어 모델(LLM)을 지원합니다. 이 파일은 고전 기술에서 현대 Transformer 기반 아키텍처로의 진화를 다룹니다.
 ---

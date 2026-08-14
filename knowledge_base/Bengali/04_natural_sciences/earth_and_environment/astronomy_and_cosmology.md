@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জ্যোতির্বিদ্যা এবং সৃষ্টিতত্ত্ব
 জ্যোতির্বিদ্যা হল মহাকাশীয় বস্তুর অধ্যয়ন - তারা, গ্রহ, গ্যালাক্সি এবং পৃথিবীর বায়ুমণ্ডলের বাইরের সবকিছু। কসমোলজি হল সামগ্রিকভাবে মহাবিশ্বের অধ্যয়ন: এর উৎপত্তি, গঠন, বিবর্তন এবং চূড়ান্ত ভাগ্য। একসাথে, তারা কিছু মৌলিক প্রশ্নগুলির সমাধান করে যা মানুষ কখনও জিজ্ঞাসা করেছে: মহাবিশ্ব কিভাবে শুরু হয়েছিল? এটা কত বড়? আমরা কি একা? শেষ পর্যন্ত এর কী হবে?
 ---

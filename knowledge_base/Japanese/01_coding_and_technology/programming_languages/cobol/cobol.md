@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # COBOL
 COBOL (Common Business-Oriented Language) は、現在でも使用されている最も古いプログラミング言語の 1 つで、1959 年に初めて開発されました。これは、金融システム、給与計算、銀行業務、保険、政府アプリケーションなどのビジネス データ処理用に設計されました。 COBOL の英語に似た構文は、プログラマだけでなくビジネス管理者にも読みやすいように設計されています。
 COBOL は古いものであるにもかかわらず、世界中のすべてのビジネス トランザクションの推定 30% を処理しています。大手銀行、政府機関 (米国社会保障局を含む)、保険会社は依然として COBOL メインフレーム システムに依存しています。 1999 年の Y2K バグ恐怖により、COBOL は再び世間の注目を集めるようになり、この言語は世界中で重要なインフラストラクチャを実行し続けています。

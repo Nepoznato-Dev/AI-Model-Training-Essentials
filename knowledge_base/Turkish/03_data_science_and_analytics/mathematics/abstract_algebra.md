@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Soyut Cebir
 Soyut cebir, cebirsel yapıları inceler; belirli kuralları takip eden işlemlerle donatılmış kümeler. Soyut cebir sayılarla çalışmak yerine aksiyomları karşılayan nesnelerle çalışır. Bu genellik güçlüdür: "Gruplar" için kanıtlanmış bir teorem tamsayılara, simetrilere, matrislere, permütasyonlara ve kuantum durumlarına aynı anda uygulanır. Soyut cebir, kriptografiyi, hata düzeltme kodlarını, kuantum hesaplamayı ve fizik genelinde kullanılan simetri analizini destekler.
 ---

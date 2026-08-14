@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কর্মক্ষমতা অপ্টিমাইজেশান
 পারফরম্যান্স অপ্টিমাইজেশান হল সফ্টওয়্যারকে দ্রুততর করার অভ্যাস — প্রতিক্রিয়ার সময় হ্রাস করা, থ্রুপুট বৃদ্ধি করা, মেমরির ব্যবহার কমানো এবং বাধাগুলি দূর করা। এটি একজন বিকাশকারীর সবচেয়ে প্রভাবশালী দক্ষতাগুলির মধ্যে একটি, কারণ ধীর সফ্টওয়্যার ব্যবহারকারীদের হারায়, সম্পদ নষ্ট করে এবং সবাইকে হতাশ করে। তবে এটি সবচেয়ে সাধারণভাবে করা ভুলগুলির মধ্যে একটি, বিকাশকারীরা প্রমাণের পরিবর্তে অন্তর্দৃষ্টির উপর ভিত্তি করে ভুল জিনিসগুলিকে অপ্টিমাইজ করে।
 ---

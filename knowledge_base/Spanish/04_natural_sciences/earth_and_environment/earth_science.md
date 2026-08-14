@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ciencias de la Tierra
 Las ciencias de la Tierra estudian el planeta en el que vivimos: su estructura, procesos, historia y los sistemas que lo hacen habitable. Abarca geología (la Tierra sólida), oceanografía (los océanos), meteorología (la atmósfera y el tiempo) y climatología (patrones climáticos a largo plazo). Lo que unifica estos campos es la comprensión de que la Tierra es un sistema dinámico: su interior se mueve constantemente, su superficie está cambiando de forma y su atmósfera y océanos interactúan de maneras complejas.
 ---

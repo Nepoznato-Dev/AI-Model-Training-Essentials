@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سلامة الذكاء الاصطناعي والمواءمة
 سلامة الذكاء الاصطناعي هي دراسة كيفية بناء أنظمة الذكاء الاصطناعي التي تفعل ما نريدها أن تفعله بالفعل، ولا تفعل أشياء لا نريدها، حتى لو لم يتم استبعادها صراحة. تمثل المواءمة التحدي المحدد المتمثل في جعل أهداف أنظمة الذكاء الاصطناعي وسلوكياتها تتوافق مع نوايا الإنسان. ومع زيادة قدرة أنظمة الذكاء الاصطناعي، تتحول هذه الأسئلة من الفضول الأكاديمي إلى المتطلبات الهندسية العملية.
 ---

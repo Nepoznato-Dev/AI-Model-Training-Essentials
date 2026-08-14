@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Jeo-uzaysal Analiz
 Jeo-uzaysal analiz, coğrafi bir bileşeni olan verileri (koordinatlar, adresler, sınırlar veya Dünya üzerindeki bir konuma bağlı herhangi bir veri) inceleme sürecidir. "Müşterilerimiz nerede?", "en uygun rota nedir?" ve "arazi kullanımı zaman içinde nasıl değişiyor?" gibi sorulara yanıt verir. Her veri kümesinin uzamsal bir boyutu vardır ve bunu anlamak, saf istatistiksel analizin gözden kaçırdığı içgörülerin kilidini açar.
 ---

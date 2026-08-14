@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Численные методы
 Численные методы являются мостом между математической теорией и практическими вычислениями. Хотя чистая математика доказывает, что решения существуют, численные методы на самом деле вычисляют приблизительные ответы с конечной точностью. Каждая модель машинного обучения, физическое моделирование и конвейер анализа данных в конечном итоге опираются на численные вычисления. Понимание этих методов — их точности, стабильности и ограничений — необходимо для создания надежного программного обеспечения.
 ---

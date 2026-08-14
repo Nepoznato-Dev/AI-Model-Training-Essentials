@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Абстрактная алгебра
 Абстрактная алгебра изучает алгебраические структуры — множества, оснащенные операциями, подчиняющимися определенным правилам. Вместо работы с числами абстрактная алгебра работает с любыми объектами, удовлетворяющими аксиомам. Эта общность сильна: теорема, доказанная для «групп», применима к целым числам, симметриям, матрицам, перестановкам и квантовым состояниям одновременно. Абстрактная алгебра лежит в основе криптографии, кодов, исправляющих ошибки, квантовых вычислений и анализа симметрии, используемого в физике.
 ---

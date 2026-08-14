@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sprach- und Audioverarbeitung
 Sprach- und Audioverarbeitung umfasst die Technologien, die es Maschinen ermöglichen, Geräusche zu hören, zu verstehen, zu erzeugen und zu manipulieren. Dazu gehören Spracherkennung (Umwandlung gesprochener Wörter in Text), Sprachsynthese (Umwandlung von Text in gesprochene Wörter), Sprecheridentifikation, Musikerzeugung und Verständnis von Umgebungsgeräuschen. Das Gebiet hat sich durch Deep Learning verändert – moderne Systeme nähern sich der Genauigkeit der Spracherkennung auf menschlichem Niveau und erzeugen unheimlich natürliche synthetische Stimmen.
 ---

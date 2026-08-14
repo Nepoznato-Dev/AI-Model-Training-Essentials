@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جغرافیائی تجزیہ
 جغرافیائی تجزیہ ڈیٹا کو جانچنے کا عمل ہے جس میں ایک جغرافیائی جزو ہوتا ہے — نقاط، پتے، حدود، یا زمین پر کسی مقام سے منسلک کوئی ڈیٹا۔ یہ سوالات کا جواب دیتا ہے جیسے "ہمارے گاہک کہاں ہیں؟"، "بہترین راستہ کیا ہے؟"، اور "وقت کے ساتھ ساتھ زمین کا استعمال کیسے بدل رہا ہے؟"۔ ہر ڈیٹاسیٹ کی ایک مقامی جہت ہوتی ہے، اور اسے سمجھنا ان بصیرتوں کو کھول دیتا ہے جو خالص شماریاتی تجزیہ سے محروم رہتی ہے۔
 ---

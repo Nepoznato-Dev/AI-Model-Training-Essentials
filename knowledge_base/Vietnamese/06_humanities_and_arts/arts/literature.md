@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Văn học
 Văn học là kỷ lục lâu dài nhất của nhân loại về suy nghĩ, cảm xúc và kinh nghiệm. Từ sử thi truyền miệng của các nền văn minh cổ đại cho đến tiểu thuyết thời đại kỹ thuật số ngày nay, mọi tác phẩm đều đối thoại với những gì có trước đó. Hiểu các thể loại, chuyển động và kỹ thuật văn học mang lại cho bạn một lăng kính phong phú hơn để đọc - và để hiểu các nền văn hóa đã tạo ra những tác phẩm này.
 ---

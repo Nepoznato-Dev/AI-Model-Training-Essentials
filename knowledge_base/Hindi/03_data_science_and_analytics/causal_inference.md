@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #कारण अनुमान
 कारणात्मक अनुमान यह निर्धारित करने का विज्ञान है कि क्या एक चीज़ वास्तव में दूसरे का कारण बनती है - न कि केवल यह कि क्या वे सहसंबद्ध हैं। सहसंबंध आपको बताता है कि दो चर एक साथ चलते हैं। कारण-कारण आपको बताता है कि एक को बदलने से दूसरा बदल जाएगा। चिकित्सा (क्या यह दवा काम करती है?), नीति (क्या इस हस्तक्षेप से गरीबी कम होती है?), व्यवसाय (क्या यह विज्ञापन अभियान बिक्री बढ़ाता है?), और विज्ञान (क्या यह तंत्र घटना की व्याख्या करता है?) में यह अंतर बहुत मायने रखता है।
 ---

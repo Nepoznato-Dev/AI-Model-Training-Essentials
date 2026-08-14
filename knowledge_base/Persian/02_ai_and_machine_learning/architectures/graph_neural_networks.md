@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # گراف شبکه های عصبی
 شبکه‌های عصبی گراف (GNN) شبکه‌های عصبی هستند که برای کار بر روی داده‌های ساختاریافته گراف طراحی شده‌اند - شبکه‌هایی از گره‌هایی که با لبه‌ها به هم متصل هستند. در حالی که شبکه‌های عصبی سنتی بر روی شبکه‌ها (تصاویر) یا دنباله‌ها (متن) کار می‌کنند، GNN‌ها ساختارهای رابطه‌ای دلخواه را مدیریت می‌کنند: شبکه‌های اجتماعی، نمودارهای مولکولی، نمودارهای دانش، شبکه‌های جاده‌ای، نمودارهای توصیه‌ای و غیره. آنها برای کشف دارو، کشف تقلب، سیستم های توصیه و هر حوزه ای که روابط بین نهادها اهمیت دارد، ضروری هستند.
 ---

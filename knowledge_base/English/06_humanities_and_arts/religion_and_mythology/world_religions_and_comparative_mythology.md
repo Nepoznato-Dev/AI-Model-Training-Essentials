@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # World Religions and Comparative Mythology
 
 World religions are the major systems of belief, practice, and community that have shaped human civilisation for thousands of years. Comparative mythology studies the stories different cultures tell about creation, heroes, gods, and the meaning of existence — and the striking patterns that recur across traditions separated by thousands of miles and millennia. Understanding both is essential for grasping why people believe what they believe, how cultures differ, and what unites the human experience.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ทฤษฎีการควบคุม
 ทฤษฎีการควบคุมคือคณิตศาสตร์ในการทำให้ระบบทำงานตามที่คุณต้องการ ตั้งแต่เทอร์โมสตัทไปจนถึงระบบอัตโนมัติ จากแขนหุ่นยนต์ไปจนถึงเครื่องปฏิกรณ์เคมี ระบบควบคุมจะตรวจจับ ตัดสินใจ และดำเนินการเพื่อรักษาพฤติกรรมที่ต้องการ สาขานี้มอบเครื่องมือที่เข้มงวดสำหรับการวิเคราะห์ความเสถียร ประสิทธิภาพ และความทนทาน ซึ่งเป็นแนวคิดที่ได้ย้ายไปสู่การเรียนรู้แบบเสริมกำลัง การปรับแต่งไฮเปอร์พารามิเตอร์ และระบบที่ปรับเปลี่ยนได้
 ---

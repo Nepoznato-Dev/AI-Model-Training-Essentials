@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tamaduni na Jamii za Ulimwengu
 Utamaduni ni mfumo wa jamii - imani, maadili, desturi, mienendo na vitu vya sanaa vinavyoshirikiwa na washiriki ili kukabiliana na ulimwengu wao na wao kwa wao. Kuelewa tofauti za kitamaduni sio juu ya kukariri mambo madogo; ni juu ya kutambua kwamba njia moja ya kuona ulimwengu ni kati ya maelfu, na kwamba mifumo mingine inashikamana ndani, yenye msingi wa kihistoria, na inafaa kueleweka kwa masharti yao wenyewe.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মনোবিজ্ঞান এবং মানব আচরণ
 মনোবিজ্ঞান হল মানুষ কিভাবে এবং কেন চিন্তা করে, অনুভব করে এবং তারা যেভাবে কাজ করে তার বিজ্ঞান। এটি মন-পড়া নয়, এবং এটি সাধারণ জ্ঞান নয় - যদিও এটি কখনও কখনও সাধারণ জ্ঞানের পরামর্শ দেয় তা নিশ্চিত করে এবং কখনও কখনও এটি সম্পূর্ণরূপে বিরোধিতা করে। মনোবিজ্ঞান অন্যান্য বিজ্ঞানের মতো একই বৈজ্ঞানিক পদ্ধতি ব্যবহার করে: পর্যবেক্ষণ, অনুমান, পরীক্ষা, সংশোধন। যা এটিকে চ্যালেঞ্জিং করে তোলে তা হল এর বিষয় - মানুষের মন - আমরা জানি সবচেয়ে জটিল বস্তু।
 এই ফাইলটি মনোবিজ্ঞানের প্রধান ক্ষেত্রগুলিকে কভার করে: আমরা কীভাবে চিন্তা করি, কীভাবে আমরা বিকাশ করি, কীভাবে আমরা অন্যদের দ্বারা প্রভাবিত হই, কী ভুল হয় এবং এটি সম্পর্কে কী করা যেতে পারে।

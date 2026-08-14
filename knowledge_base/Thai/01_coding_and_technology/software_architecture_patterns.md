@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # รูปแบบสถาปัตยกรรมซอฟต์แวร์
 สถาปัตยกรรมคือชุดของการตัดสินใจเชิงโครงสร้างเกี่ยวกับวิธีการจัดระบบ — องค์ประกอบอะไรบ้างที่มี การสื่อสารอย่างไร และความรับผิดชอบอยู่ที่ใด สถาปัตยกรรมที่ดีทำให้ระบบเข้าใจ ปรับเปลี่ยน และปรับขนาดได้ง่าย สถาปัตยกรรมที่ไม่ดีทำให้ทุกการเปลี่ยนแปลงต้องดิ้นรน ไฟล์นี้ครอบคลุมถึงรูปแบบหลักๆ เวลาที่ควรใช้แต่ละรูปแบบ และข้อดีข้อเสียที่เกี่ยวข้อง
 ---

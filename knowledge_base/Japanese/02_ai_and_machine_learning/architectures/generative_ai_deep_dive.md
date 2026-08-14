@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 生成 AI の詳細
 生成 AI とは、既存のデータを単に分類または予測するのではなく、新しいコンテンツ (画像、テキスト、オーディオ、ビデオ、コード) を作成するモデルを指します。大規模な言語モデルが最も注目を集めていますが、生成 AI の状況ははるかに広範囲に及びます。このファイルは、拡散モデルから変分オートエンコーダ、フロー モデルに至るまで、最新の生成システムの背後にあるアーキテクチャ、技術、トレードオフをカバーしています。
 ---

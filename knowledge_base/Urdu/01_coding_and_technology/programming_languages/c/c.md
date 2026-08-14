@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C
 C ایک عام مقصد کی پروگرامنگ زبان ہے جسے ڈینس رچی نے بیل لیبز میں 1969 اور 1973 کے درمیان تخلیق کیا تھا۔ اسے یونکس آپریٹنگ سسٹم کو نافذ کرنے کے لیے ڈیزائن کیا گیا تھا، اور یہ 50 سال بعد بھی سب سے زیادہ استعمال ہونے والی پروگرامنگ زبانوں میں سے ایک ہے۔ C نچلی سطح کی میموری تک رسائی، ایک کم سے کم معیاری لائبریری، اور مشین کی ہدایات کے لیے ایک صاف نقشہ سازی فراہم کرتا ہے -- اسے وہ بنیاد بناتا ہے جس پر جدید ترین کمپیوٹنگ بنائی گئی ہے۔
 C آپریٹنگ سسٹمز (Linux، Windows kernel، macOS)، ایمبیڈڈ سسٹمز، ڈیٹا بیس انجن (SQLite، PostgreSQL)، کمپائلرز (Python's CPython، Ruby's MRI)، اور عملی طور پر ہر دوسری پروگرامنگ لینگویج کے رن ٹائم کے پیچھے زبان ہے۔ سی کو سمجھنا یہ سمجھنا ہے کہ کمپیوٹر اصل میں کیسے کام کرتے ہیں۔

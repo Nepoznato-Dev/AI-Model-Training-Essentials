@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #زنگ
 Rust ایک مستحکم طور پر ٹائپ کی گئی، مرتب کردہ پروگرامنگ زبان ہے جو پہلی بار 2015 میں جاری کی گئی تھی، جسے اصل میں Mozilla میں Graydon Hoare نے تیار کیا تھا۔ زنگ کا واضح وعدہ **کوڑا جمع کیے بغیر میموری کی حفاظت** ہے۔ یہ اسے اپنے ملکیتی نظام کے ذریعے حاصل کرتا ہے — مرتب وقت پر نافذ قوانین کا ایک مجموعہ جو C یا C++ جتنی تیزی سے کوڈ تیار کرتے ہوئے بگز (نال پوائنٹر ڈیریفرینس، ڈیٹا ریس، بفر اوور فلوز، استعمال کے بعد مفت) کو ختم کرتا ہے۔
 زنگ کو اسٹیک اوور فلو ڈویلپر سروے میں مسلسل کئی سالوں سے "سب سے زیادہ پسند کی جانے والی" پروگرامنگ زبان کے طور پر ووٹ دیا گیا ہے۔ یہ تیزی سے سسٹم پروگرامنگ، ویب اسمبلی، CLI ٹولز، کلاؤڈ انفراسٹرکچر، اور C/C++ کے متبادل کے طور پر سیکورٹی کے اہم سیاق و سباق میں استعمال ہوتا ہے۔ لینکس کرنل اب رسٹ کوڈ کو قبول کرتا ہے۔

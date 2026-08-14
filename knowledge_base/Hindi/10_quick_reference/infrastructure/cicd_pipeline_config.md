@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सीआई/सीडी पाइपलाइन कॉन्फ़िगरेशन
 सतत एकीकरण (सीआई) और सतत परिनियोजन (सीडी) पाइपलाइन सॉफ्टवेयर के निर्माण, परीक्षण और तैनाती की प्रक्रिया को स्वचालित करते हैं। यह संदर्भ सबसे लोकप्रिय CI/CD प्लेटफ़ॉर्म के लिए कॉन्फ़िगरेशन पैटर्न को कवर करता है: GitHub Actions, GitLab CI, और सामान्य पाइपलाइन डिज़ाइन सिद्धांत।
 ---

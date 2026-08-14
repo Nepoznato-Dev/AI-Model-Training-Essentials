@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Ada
 Ada adalah bahasa pemrograman yang dikompilasi dan diketik secara statis yang dirancang untuk sistem yang kritis terhadap keselamatan dan berintegritas tinggi. Awalnya dikembangkan pada tahun 1980an di bawah kontrak dengan Departemen Pertahanan AS (dinamai menurut Ada Lovelace, yang dianggap sebagai pemrogram komputer pertama), Ada menekankan keandalan, pemeliharaan, dan kebenaran. Ini dirancang untuk menggantikan ratusan bahasa pemrograman yang kemudian digunakan oleh Departemen Pertahanan dengan satu bahasa yang ditentukan dengan baik.
 Ada digunakan dalam penerbangan (sistem fly-by-wire), luar angkasa (ESA dan NASA), pertahanan (pemandu rudal, radar), transportasi kereta api, dan perangkat medis – di mana saja di mana kegagalan perangkat lunak dapat memakan korban jiwa.

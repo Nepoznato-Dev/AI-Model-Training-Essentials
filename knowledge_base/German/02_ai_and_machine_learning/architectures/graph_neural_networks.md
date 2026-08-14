@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Graphische neuronale Netze
 Graph Neural Networks (GNNs) sind neuronale Netzwerke, die für den Betrieb mit graphstrukturierten Daten konzipiert sind – Netzwerke aus Knoten, die durch Kanten verbunden sind. Während herkömmliche neuronale Netze mit Gittern (Bildern) oder Sequenzen (Texten) arbeiten, verarbeiten GNNs beliebige relationale Strukturen: soziale Netzwerke, molekulare Graphen, Wissensgraphen, Straßennetze, Empfehlungsgraphen und mehr. Sie sind für die Arzneimittelforschung, die Betrugserkennung, Empfehlungssysteme und alle Bereiche, in denen Beziehungen zwischen Unternehmen von Bedeutung sind, unverzichtbar geworden.
 ---

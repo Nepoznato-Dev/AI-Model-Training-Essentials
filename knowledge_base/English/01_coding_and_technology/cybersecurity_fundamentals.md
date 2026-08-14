@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cybersecurity Fundamentals
 
 Security is a discipline that must be integrated into every layer of a system from the outset, rather than added as an afterthought. Whether building a web application, managing infrastructure, or shipping an API, understanding the threat landscape and the fundamentals of defence is essential.

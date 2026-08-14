@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Series temporales y pronósticos
 Los datos de series temporales son cualquier dato recopilado a lo largo del tiempo: precios de acciones, lecturas de temperatura, tráfico del sitio web, cifras de ventas, monitores de frecuencia cardíaca, consumo de energía. Pronosticar significa predecir valores futuros basándose en patrones pasados. Es una de las aplicaciones de la ciencia de datos con mayor valor práctico, y una de las más difíciles, porque el futuro es genuinamente incierto y las series temporales del mundo real están llenas de ruido, estacionalidad y rupturas estructurales.
 ---

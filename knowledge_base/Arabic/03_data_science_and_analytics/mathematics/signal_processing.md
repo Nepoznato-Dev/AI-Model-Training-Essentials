@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # معالجة الإشارات
 معالجة الإشارات هي علم تحليل الإشارات وتعديلها وتركيبها - وهي تمثيلات للكميات الفيزيائية المتغيرة بمرور الوقت أو الفضاء أو التردد. الصوت والصور والفيديو وبيانات الاستشعار وموجات الدماغ وأسعار الأسهم - كلها إشارات. تعد الأدوات الرياضية لمعالجة الإشارات (تحويلات فورييه، والمرشحات، ونظرية أخذ العينات) أساسية للتعلم الآلي، والاتصالات، والتصوير الطبي، وكل مجال يتعامل مع البيانات تقريبًا.
 ---

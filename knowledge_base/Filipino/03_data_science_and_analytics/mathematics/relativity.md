@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Relativity
 Binago ng mga teorya ng relativity ni Einstein ang ating pag-unawa sa espasyo, oras, at grabidad. Ipinakita ng **Special relativity** (1905) na ang espasyo at oras ay hindi magkahiwalay ngunit hinabi sa iisang tela na tinatawag na spacetime, at ang bilis ng liwanag ay pareho para sa lahat ng mga nagmamasid. **General relativity** (1915) reimagined gravity hindi bilang isang puwersa kundi bilang ang curvature ng spacetime na dulot ng masa at enerhiya. Ang mga teoryang ito ay sumusuporta sa GPS navigation, particle accelerators, at ang ating pag-unawa sa mga black hole at sa ebolusyon ng uniberso.
 ---

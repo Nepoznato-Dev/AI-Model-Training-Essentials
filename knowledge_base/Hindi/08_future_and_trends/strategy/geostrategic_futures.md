@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भूरणनीतिक वायदा
 ## अवलोकन
 शीत युद्ध के बाद अमेरिकी प्रभुत्व का युग कुछ गड़बड़ियों की ओर ले जा रहा है: एक बहुध्रुवीय दुनिया जहां शक्ति फैली हुई है, प्रौद्योगिकी और संसाधनों पर प्रतिस्पर्धा तेज हो रही है, और जलवायु परिवर्तन और महामारी जैसी चुनौतियाँ सीमाओं का सम्मान नहीं करती हैं। 1945 के बाद बनी नियम-आधारित अंतर्राष्ट्रीय व्यवस्था का हर दिशा से परीक्षण किया जा रहा है। यहां बताया गया है कि क्या बदल रहा है, कौन बढ़ रहा है और घर्षण बिंदु कहां हैं।

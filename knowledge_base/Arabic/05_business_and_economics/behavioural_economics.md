@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الاقتصاد السلوكي وعلوم القرار
 يدرس الاقتصاد السلوكي كيف يتخذ الناس القرارات فعليا، وليس كيف يتخذها الوكلاء العقلانيون. يفترض الاقتصاد التقليدي أن الناس عقلانيون، وأنانيون، وجيدون في معالجة المعلومات. وقد أظهرت عقود من الأبحاث التي أجراها كانيمان، وتفرسكي، وثالر، وآخرون أن هذا غير دقيق إلى حد كبير. يستخدم الناس الاختصارات العقلية، ويتأثرون بسياق غير ذي صلة، ويثقلون المعلومات الحديثة، ويرتكبون أخطاء يمكن التنبؤ بها بشكل منهجي. يعد فهم هذه الأنماط أمرًا ضروريًا لتصميم منتجات وسياسات ومؤسسات وقرارات شخصية أفضل.
 ---

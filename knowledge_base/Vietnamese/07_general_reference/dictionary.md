@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "English Dictionary — Common Word Definitions"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Từ điển tiếng Anh — Định nghĩa từ thông dụng
 Danh sách tham khảo các từ tiếng Anh được sử dụng thường xuyên và ý nghĩa của chúng,
 bao gồm từ vựng hàng ngày, thuật ngữ học thuật và những từ thường gặp

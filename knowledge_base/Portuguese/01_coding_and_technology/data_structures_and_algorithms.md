@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Estruturas de dados e algoritmos
 Estruturas de dados são as formas como organizamos os dados na memória para que as operações neles sejam eficientes. Algoritmos são procedimentos passo a passo para resolver problemas. Juntos, eles formam a base da ciência da computação – todos os programas que você já usou dependem deles. Escolher a estrutura de dados correta pode transformar um programa incrivelmente lento em um programa rápido, e conhecer o algoritmo certo pode transformar um problema insolúvel em um problema trivial.
 ---

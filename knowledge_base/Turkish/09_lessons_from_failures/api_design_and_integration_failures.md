@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API Tasarımı ve Entegrasyon Hataları
 API'ler (Uygulama Programlama Arayüzleri) modern yazılımın bağ dokusudur; hizmetlerin iletişim kurmasına, üçüncü tarafların entegre olmasına ve ekiplerin bağımsız çalışmasına olanak tanır. API tasarımı yanlış gittiğinde sonuçları ona bağlı olan her sisteme yayılır: bozulan entegrasyonlar, güvenlik açıkları, geliştiricinin hayal kırıklığı ve maliyetli yeniden yazma işlemleri. Sistemlerin güvenilir bir şekilde iletişim kuramadığı entegrasyon hataları, üretim olaylarının en yaygın kaynakları arasındadır.
 ---

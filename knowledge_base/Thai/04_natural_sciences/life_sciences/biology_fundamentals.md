@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # พื้นฐานชีววิทยา
 ชีววิทยาเป็นศาสตร์แห่งชีวิต สิ่งมีชีวิตทุกชนิดมีคุณสมบัติบางอย่างร่วมกัน ได้แก่ พวกมันสร้างจากเซลล์ ใช้พลังงาน เติบโต ตอบสนองต่อสภาพแวดล้อม สืบพันธุ์ และพัฒนา ชีววิทยาครอบคลุมตั้งแต่กลไกระดับโมเลกุลภายในเซลล์เดียวไปจนถึงปฏิสัมพันธ์ของระบบนิเวศทั้งหมด และเป็นรากฐานของการแพทย์ เกษตรกรรม เทคโนโลยีชีวภาพ และการอนุรักษ์
 ---

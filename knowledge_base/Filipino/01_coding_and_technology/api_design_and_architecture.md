@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Disenyo at Arkitektura ng API
 Ang isang API (Application Programming Interface) ay kung paano nakikipag-usap ang mga bahagi ng software sa isa't isa. Ang isang mahusay na dinisenyo na API ay madaling maunawaan, pare-pareho, at kasiyahang magtrabaho kasama. Ang isang hindi maganda ang disenyo ay nagdudulot ng pagkalito, mga bug, at pagkabigo. Sinasaklaw ng file na ito ang mga prinsipyo, pattern, at kasanayan para sa pagbuo ng mga API na talagang gustong gamitin ng mga developer.
 ---

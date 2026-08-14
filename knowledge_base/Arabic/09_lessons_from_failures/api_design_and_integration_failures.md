@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فشل تصميم واجهة برمجة التطبيقات والتكامل
 تمثل واجهات برمجة التطبيقات (واجهات برمجة التطبيقات) النسيج الضام للبرامج الحديثة - فهي تسمح للخدمات بالتواصل، وتسمح للأطراف الثالثة بالتكامل، وتسمح للفرق بالعمل بشكل مستقل. عندما يحدث خطأ في تصميم واجهة برمجة التطبيقات، فإن العواقب تنعكس عبر كل نظام يعتمد عليها: عمليات التكامل المعطلة، والثغرات الأمنية، وإحباط المطورين، وإعادة الكتابة المكلفة. تعد حالات فشل التكامل — حيث لا تستطيع الأنظمة الاتصال بشكل موثوق — من بين المصادر الأكثر شيوعًا لحوادث الإنتاج.
 ---

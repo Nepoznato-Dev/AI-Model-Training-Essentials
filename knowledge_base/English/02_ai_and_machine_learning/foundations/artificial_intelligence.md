@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Artificial Intelligence
 
 Artificial intelligence is the attempt to build machines that can do things that would require intelligence if a human did them: recognize faces, understand speech, make decisions, write text, play games, drive cars, diagnose diseases. The field is as old as computing itself — Alan Turing was asking "Can machines think?" in 1950 — but the recent explosion in capability (2020s) has made AI one of the most important and contested technologies in human history.

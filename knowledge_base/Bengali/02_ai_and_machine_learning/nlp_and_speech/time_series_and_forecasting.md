@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সময় সিরিজ এবং পূর্বাভাস
 টাইম সিরিজ ডেটা হল সময়ের সাথে সংগৃহীত যেকোন ডেটা: স্টকের দাম, তাপমাত্রা রিডিং, ওয়েবসাইট ট্র্যাফিক, বিক্রয় পরিসংখ্যান, হার্ট রেট মনিটর, শক্তি খরচ। পূর্বাভাস মানে অতীতের নিদর্শনগুলির উপর ভিত্তি করে ভবিষ্যতের মানগুলির পূর্বাভাস। এটি ডেটা সায়েন্সের সবচেয়ে ব্যবহারিকভাবে মূল্যবান অ্যাপ্লিকেশনগুলির মধ্যে একটি — এবং সবচেয়ে কঠিন, কারণ ভবিষ্যত সত্যিকারের অনিশ্চিত এবং বাস্তব-বিশ্বের সময় সিরিজগুলি গোলমাল, ঋতুতা এবং কাঠামোগত বিরতিতে পূর্ণ।
 ---

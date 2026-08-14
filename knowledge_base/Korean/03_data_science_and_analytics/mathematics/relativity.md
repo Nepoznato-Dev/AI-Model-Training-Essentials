@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 상대성 이론
 아인슈타인의 상대성 이론은 공간, 시간, 중력에 대한 우리의 이해에 혁명을 일으켰습니다. **특수 상대성 이론**(1905)은 공간과 시간이 분리된 것이 아니라 시공간이라는 하나의 직물로 짜여져 있으며, 빛의 속도는 모든 관찰자에게 동일하다는 것을 보여주었습니다. **일반 상대성 이론**(1915)은 중력을 힘이 아니라 질량과 에너지로 인한 시공간 곡률로 재해석했습니다. 이러한 이론은 GPS 항법, 입자 가속기, 블랙홀과 우주의 진화에 대한 이해를 뒷받침합니다.
 ---

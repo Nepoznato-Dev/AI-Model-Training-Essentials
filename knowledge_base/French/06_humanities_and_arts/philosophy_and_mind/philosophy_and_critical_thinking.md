@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Philosophie et pensée critique
 La philosophie est l'étude systématique de questions fondamentales sur la connaissance, la réalité et l'existence. Il fournit le cadre permettant d’évaluer ce qui compte comme connaissance, ce qui vaut la peine d’être fait et comment distinguer les arguments bien argumentés des faibles. La pensée critique est l’application pratique de ce cadre : la capacité d’analyser des affirmations, d’identifier des raisonnements erronés et de prendre des décisions plus éclairées. Ce dossier couvre les idées majeures, les outils pour les évaluer et les biais cognitifs qui touchent chacun.
 ---

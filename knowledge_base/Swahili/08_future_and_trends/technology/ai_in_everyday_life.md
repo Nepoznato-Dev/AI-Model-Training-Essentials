@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI katika Maisha ya Kila Siku
 Akili Bandia si dhana ya wakati ujao tena - imejikita katika maisha ya kila siku. Kuanzia unapoamka na kuangalia simu yako (algorithms za mapendekezo huamua arifa zipi unazoona) hadi unapolala (spika yako mahiri huchakata amri yako ya mwisho), mifumo ya AI inafanya maamuzi kwa niaba yako, kwa ajili yako, na wakati mwingine kukuhusu. Kuelewa wapi AI inaonekana, jinsi inavyofanya kazi katika kiwango cha msingi, na madhara yake si hiari tena - ni hitaji la uraia ulioarifiwa katika karne ya 21.
 ---

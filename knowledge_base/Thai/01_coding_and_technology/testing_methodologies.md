@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิธีการทดสอบ
 การทดสอบเป็นวิธีที่ทำให้คุณมั่นใจว่าโค้ดของคุณใช้งานได้ และที่สำคัญกว่านั้น การเปลี่ยนแปลงจะไม่ทำลายสิ่งที่ใช้ได้ผลอยู่แล้ว การทดสอบที่ดีจะตรวจจับจุดบกพร่องก่อนที่ผู้ใช้จะดำเนินการ บันทึกพฤติกรรมที่คาดหวัง และเปิดใช้งานการปรับโครงสร้างใหม่อย่างไม่เกรงกลัว ไฟล์นี้ครอบคลุมกลยุทธ์การทดสอบทั้งหมด ตั้งแต่การทดสอบหน่วยไปจนถึงการทดสอบแบบ end-to-end และหลักการที่ทำให้การทดสอบมีประสิทธิภาพ
 ---

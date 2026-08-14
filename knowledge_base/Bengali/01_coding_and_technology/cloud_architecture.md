@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ক্লাউড আর্কিটেকচার
 ক্লাউড কম্পিউটিং সংস্থাগুলি কীভাবে সফ্টওয়্যার তৈরি, স্থাপন এবং স্কেল করে তা মৌলিকভাবে পরিবর্তন করেছে। প্রকৃত সার্ভার কেনা এবং রক্ষণাবেক্ষণ করার পরিবর্তে, আপনি চাহিদা অনুযায়ী কম্পিউটিং সংস্থান সরবরাহ করতে পারেন, আপনি যা ব্যবহার করেন তার জন্য অর্থ প্রদান করতে পারেন এবং মিনিটের মধ্যে বিশ্বব্যাপী স্কেল করতে পারেন। এই ফাইলটি মূল ধারণা, স্থাপত্য নিদর্শন, পরিষেবা এবং আপনার জানা প্রয়োজন সর্বোত্তম অনুশীলনগুলি কভার করে৷
 ---

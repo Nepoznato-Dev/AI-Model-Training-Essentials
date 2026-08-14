@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Software Architecture Patterns
 
 Architecture is the set of structural decisions about how a system is organised — what components it has, how they communicate, and where responsibilities lie. Good architecture makes a system easy to understand, modify, and scale. Bad architecture makes every change a struggle. This file covers the major patterns, when to use each, and the trade-offs involved.

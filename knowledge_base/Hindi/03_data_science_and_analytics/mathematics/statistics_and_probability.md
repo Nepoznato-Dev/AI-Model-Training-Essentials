@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #सांख्यिकी और संभाव्यता
 संभाव्यता और आँकड़े डेटा विज्ञान, मशीन लर्निंग और वैज्ञानिक अनुसंधान की गणितीय नींव हैं। संभाव्यता आपको बताती है कि घटनाएँ कितनी संभावित हैं; आँकड़े आपको बताते हैं कि डेटा से निष्कर्ष कैसे निकाला जाए। साथ में, वे अनिश्चितता को मात्रात्मक, प्रबंधनीय ज्ञान में बदल देते हैं।
 ---

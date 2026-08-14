@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 地緣戰略未來
 ＃＃ 概述
 美國主導地位的後冷戰時代正在讓位給更加混亂的局面：權力分散、技術和資源競爭加劇、氣候變遷和流行病等挑戰不分國界的多極世界。 1945年後建立的以規則為基礎的國際秩序正受到來自各方面的考驗。以下是正在發生的變化、誰在崛起、以及摩擦點在哪裡。

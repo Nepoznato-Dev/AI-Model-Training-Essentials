@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Éthique des données et confidentialité
 L'éthique des données est l'étude de la manière dont la collecte, l'analyse et le déploiement des données affectent les droits, l'autonomie et le bien-être des personnes. La confidentialité est la préoccupation spécifique de savoir qui contrôle les informations personnelles et comment elles sont partagées. Ces sujets sont passés des débats universitaires à la une des journaux : application du RGPD, violations de données affectant des milliards d’utilisateurs et prise de conscience croissante du public selon lequel les pratiques des entreprises technologiques en matière de données ont de réelles conséquences sur la démocratie, l’égalité et la liberté individuelle.
 ---

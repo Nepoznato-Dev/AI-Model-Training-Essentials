@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #طب اور صحت کی دیکھ بھال
 طب بیماری کی تشخیص، علاج اور روک تھام کی سائنس اور مشق ہے۔ یہ قدیم ترین انسانی کوششوں میں سے ایک ہے — Hippocratic Oath قدیم یونان سے تعلق رکھتا ہے — اور سب سے تیزی سے تبدیل ہونے والی کوششوں میں سے ایک ہے۔ اکیلے پچھلی صدی میں، ہم نے اینٹی بائیوٹکس نہ ہونے سے لے کر ایسے جین تھراپیز تک لے گئے جو مریض کے ڈی این اے کو دوبارہ لکھ سکتے ہیں۔
 یہ فائل اس بات کا احاطہ کرتی ہے کہ دوا کیسے کام کرتی ہے: اہم خصوصیات، بیماریوں کی تشخیص اور علاج کیسے کیا جاتا ہے، صحت کی دیکھ بھال کے نظام کو کس طرح منظم کیا جاتا ہے، اور اخلاقی سوالات جو اس وقت پیدا ہوتے ہیں جب انسانی زندگیاں داؤ پر لگ جاتی ہیں۔

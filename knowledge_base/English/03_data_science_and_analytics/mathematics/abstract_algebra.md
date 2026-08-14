@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Abstract Algebra
 
 Abstract algebra studies algebraic structures — sets equipped with operations that follow specific rules. Instead of working with numbers, abstract algebra works with any objects that satisfy the axioms. This generality is powerful: a theorem proved for "groups" applies to integers, symmetries, matrices, permutations, and quantum states simultaneously. Abstract algebra underpins cryptography, error-correcting codes, quantum computing, and the symmetry analysis used throughout physics.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเพิ่มประสิทธิภาพประสิทธิภาพ
 การเพิ่มประสิทธิภาพการทำงานเป็นแนวทางปฏิบัติในการทำให้ซอฟต์แวร์เร็วขึ้น — ลดเวลาตอบสนอง เพิ่มปริมาณงาน ลดการใช้หน่วยความจำ และขจัดปัญหาคอขวด นี่เป็นหนึ่งในทักษะที่มีผลกระทบมากที่สุดที่นักพัฒนาสามารถทำได้ เนื่องจากซอฟต์แวร์ที่ช้าทำให้สูญเสียผู้ใช้ เปลืองทรัพยากร และทำให้ทุกคนหงุดหงิด แต่มันก็เป็นหนึ่งในสิ่งที่ทำผิดบ่อยที่สุดเช่นกัน โดยนักพัฒนาจะปรับสิ่งที่ผิดให้เหมาะสมโดยยึดตามสัญชาตญาณมากกว่าหลักฐาน
 ---

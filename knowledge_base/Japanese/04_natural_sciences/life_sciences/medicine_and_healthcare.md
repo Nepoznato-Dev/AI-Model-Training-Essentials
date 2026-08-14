@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 医療とヘルスケア
 医学は、病気の診断、治療、予防を行う科学および実践です。これは人類の最も古い取り組みの 1 つであり、ヒポクラテスの誓いは古代ギリシャに遡りますが、最も急速に変化しているものの 1 つです。前世紀だけでも、抗生物質のない時代から、患者の DNA を書き換えることができる遺伝子治療が使えるようになりました。
 このファイルには、主な専門分野、病気の診断と治療の仕組み、医療システムの組織化、人命が危険にさらされているときに生じる倫理的な問題など、医療の仕組みが取り上げられています。

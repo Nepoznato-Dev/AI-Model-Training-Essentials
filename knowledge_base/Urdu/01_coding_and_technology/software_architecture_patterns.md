@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سافٹ ویئر آرکیٹیکچر پیٹرن
 فن تعمیر اس بارے میں ساختی فیصلوں کا مجموعہ ہے کہ ایک نظام کو کس طرح منظم کیا جاتا ہے — اس کے کون سے اجزاء ہیں، وہ کیسے بات چیت کرتے ہیں، اور ذمہ داریاں کہاں ہوتی ہیں۔ اچھا فن تعمیر نظام کو سمجھنے، ترمیم کرنے اور پیمانے پر آسان بناتا ہے۔ خراب فن تعمیر ہر تبدیلی کو ایک جدوجہد بنا دیتا ہے۔ اس فائل میں بڑے نمونوں کا احاطہ کیا گیا ہے، ہر ایک کو کب استعمال کرنا ہے، اور اس میں شامل تجارتی معاملات۔
 ---

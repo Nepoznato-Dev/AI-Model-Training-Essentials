@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #পদার্থবিদ্যা
 পদার্থবিদ্যা বিজ্ঞানের সবচেয়ে মৌলিক প্রশ্ন জিজ্ঞাসা করে: পদার্থ এবং শক্তি কীভাবে আচরণ করে? অন্য সবকিছু — রসায়ন, জীববিদ্যা, প্রকৌশল — উত্তরগুলির উপর ভিত্তি করে। পদার্থবিজ্ঞান সাবটমিক স্কেল (কোয়ান্টাম মেকানিক্স) থেকে মহাজাগতিক স্কেল (সাধারণ আপেক্ষিকতা) পর্যন্ত বিস্তৃত এবং এর নীতিগুলি অন্যান্য সমস্ত প্রাকৃতিক বিজ্ঞানের উপর ভিত্তি করে।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 روزمرہ کی زندگی میں # AI
 مصنوعی ذہانت اب کوئی مستقبل کا تصور نہیں ہے - یہ روزمرہ کی زندگی میں سرایت کر گیا ہے۔ جس لمحے سے آپ بیدار ہوتے ہیں اور اپنے فون کو چیک کرتے ہیں (تجویزی الگورتھم فیصلہ کرتے ہیں کہ آپ کونسی اطلاعات نظر آتی ہیں) اس لمحے تک جب آپ سوتے ہیں (آپ کا سمارٹ اسپیکر آپ کی آخری کمانڈ پر کارروائی کرتا ہے)، AI سسٹمز آپ کی طرف سے، آپ کے لیے اور کبھی کبھی آپ کے بارے میں فیصلے کر رہے ہیں۔ یہ سمجھنا کہ AI کہاں ظاہر ہوتا ہے، یہ بنیادی سطح پر کیسے کام کرتا ہے، اور اس کے کیا مضمرات ہیں یہ اب اختیاری نہیں ہے - یہ 21 ویں صدی میں باخبر شہریت کا تقاضا ہے۔
 ---

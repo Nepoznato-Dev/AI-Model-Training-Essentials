@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #बौद्धिक संपदा और नवाचार
 बौद्धिक संपदा (आईपी) दिमाग की रचनाओं को संदर्भित करता है - आविष्कार, कलात्मक कार्य, ब्रांड नाम, डिजाइन, व्यापार रहस्य - जिन्हें कानून अनधिकृत उपयोग से बचाता है। नवप्रवर्तन विचारों को मूल्य में बदलने की प्रक्रिया है। आईपी ​​कानून दो प्रतिस्पर्धी हितों को संतुलित करने के लिए मौजूद है: रचनाकारों को पुरस्कृत करना (उन्हें अस्थायी एकाधिकार देकर) और समाज को लाभ पहुंचाना (यह सुनिश्चित करके कि ज्ञान अंततः स्वतंत्र रूप से उपलब्ध हो)। उत्पाद बनाने, सामग्री बनाने, व्यवसाय चलाने या अनुसंधान में काम करने वाले किसी भी व्यक्ति के लिए आईपी को समझना आवश्यक है।
 ---

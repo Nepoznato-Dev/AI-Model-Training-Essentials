@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optimierung
 Optimierung ist die Mathematik, aus einer Menge möglicher Lösungen die beste Lösung zu finden. Es wird gefragt: Welche Eingabe minimiert (oder maximiert) bei gegebener Funktion und Einschränkungen die Ausgabe? Optimierung ist der Motor des maschinellen Lernens – das Trainieren eines Modells bedeutet die Minimierung einer Verlustfunktion. Es kommt in den Bereichen Operations Research, Wirtschaftswissenschaften, Ingenieurdesign und praktisch jedem quantitativen Bereich vor.
 ---

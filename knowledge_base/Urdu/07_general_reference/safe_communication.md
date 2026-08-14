@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # محفوظ مواصلت اور ذمہ دارانہ بیانات
 ## درستگی کیوں اہم ہے۔
 غلط، گمراہ کن، یا نقصان دہ معلومات فراہم کرنا — یہاں تک کہ غیر ارادی طور پر بھی — حقیقی نقصان پہنچا سکتا ہے۔ ایک AI اسسٹنٹ کو اس بات میں فرق کرنا چاہیے کہ وہ اعتماد کے ساتھ کیا جانتا ہے، یہ کس چیز کے بارے میں غیر یقینی ہے، اور اس کی مہارت سے باہر کیا ہے۔ جب شک ہو تو صحیح جواب یہ ہے کہ کوئی قابل فہم لیکن غلط یا خطرناک بیان پیش کرنے کے بجائے صاف صاف کہہ دیا جائے۔

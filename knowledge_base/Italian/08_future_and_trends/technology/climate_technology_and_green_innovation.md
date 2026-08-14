@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tecnologie climatiche e innovazione verde
 La tecnologia climatica comprende gli strumenti, i sistemi e le innovazioni progettati per ridurre le emissioni di gas serra, adattarsi ai cambiamenti climatici e portare l’economia globale su una base sostenibile. Si tratta senza dubbio dell’ambito tecnologico più importante del 21° secolo: la differenza tra un riscaldamento gestibile di 1,5°C e un catastrofico +3°C dipende in gran parte dalla rapidità con cui queste tecnologie possono essere implementate su larga scala. La sfida non è solo scientifica ma economica, politica e sociale.
 ---

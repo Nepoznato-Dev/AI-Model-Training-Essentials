@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # আপেক্ষিকতা
 আইনস্টাইনের আপেক্ষিকতার তত্ত্ব স্থান, সময় এবং মাধ্যাকর্ষণ সম্পর্কে আমাদের বোঝার বিপ্লব ঘটিয়েছে। **বিশেষ আপেক্ষিকতা** (1905) দেখিয়েছে যে স্থান এবং সময় আলাদা নয় বরং স্পেসটাইম নামক একক ফ্যাব্রিকে বোনা, এবং আলোর গতি সকল পর্যবেক্ষকের জন্য একই। **সাধারণ আপেক্ষিকতা** (1915) মাধ্যাকর্ষণকে শক্তি হিসেবে নয় বরং ভর এবং শক্তির কারণে স্থানকালের বক্রতা হিসেবে পুনর্কল্পনা করেছে। এই তত্ত্বগুলি জিপিএস নেভিগেশন, কণা ত্বরক, এবং ব্ল্যাক হোল এবং মহাবিশ্বের বিবর্তন সম্পর্কে আমাদের বোঝার উপর ভিত্তি করে।
 ---

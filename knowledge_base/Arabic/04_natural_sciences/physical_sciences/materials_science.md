@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #علم المواد
 علم المواد هو دراسة كيفية تحديد بنية المادة (على المستويات الذرية والمجهرية والعيانية) لخصائصها، وكيف يمكن استخدام طرق المعالجة للتحكم في تلك البنية لتحقيق الأداء المطلوب. إنه المجال الذي يجيب على أسئلة مثل: لماذا يكون الفولاذ قويًا ولكنه ثقيل؟ لماذا الزجاج شفاف ولكنه هش؟ كيف يمكننا أن نجعل البطاريات تشحن بشكل أسرع؟ ما هي المواد التي ستنجو من الظروف على المريخ؟ كل قطعة من التكنولوجيا التي استخدمتها على الإطلاق مصنوعة من مواد، والتقدم التكنولوجي يتطلب دائمًا تقدمًا في المواد.
 ---

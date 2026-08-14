@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 확률론적 과정
 **확률적 과정**은 시간(또는 공간)에 따라 색인이 지정된 무작위 변수의 모음입니다. 확률 이론이 개별 무작위 사건을 연구하는 반면, 확률론적 프로세스는 시간이 지남에 따라 무작위성이 어떻게 진화하는지 연구합니다. 주가, 대기열 길이, 질병 확산, 언어 생성 및 기계 학습 모델의 훈련 역학을 모델링합니다.
 ---

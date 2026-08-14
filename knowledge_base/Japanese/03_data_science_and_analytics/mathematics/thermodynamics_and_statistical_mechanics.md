@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 熱力学と統計力学
 熱力学は、原子がどのようなものであるかを知ることなく、温度、圧力、エントロピーの観点からシステムの巨視的な挙動を記述します。統計力学は熱力学をボトムアップで説明します。統計力学は、膨大な数の粒子の微視的な挙動から巨視的な特性を導き出します。これらを組み合わせることで、情報理論、機械学習などに移行した概念であるエネルギー、エントロピー、平衡についての最も深い理解を提供します。
 ---

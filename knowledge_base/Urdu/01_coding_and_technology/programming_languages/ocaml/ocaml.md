@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml (Objective Caml) ایک فنکشنل پروگرامنگ لینگویج ہے جو فرانس میں INRIA میں تیار کی گئی تھی، جو پہلی بار 1996 میں ریلیز ہوئی تھی۔ یہ فنکشنل پروگرامنگ کے اظہار کو عملی خصوصیات کے ساتھ جوڑتی ہے: ایک طاقتور قسم کا نظام جس میں ٹائپ انفرنس (Hindley-Milner)، پیٹرن میچنگ، الجبری ڈیٹا کی اقسام، اور اختیاری آبجیکٹ پر مبنی پروگرامنگ ہے۔ OCaml تیز مقامی کوڈ پر مرتب کرتا ہے اور بائیک کوڈ کو بھی سپورٹ کرتا ہے۔
 OCaml کی حقیقی دنیا کی سب سے مشہور ایپلی کیشن **Jane Street** ٹریڈنگ فرم ہے، جو اپنے پورے تجارتی انفراسٹرکچر کے لیے OCaml کا استعمال کرتی ہے۔ یہ کمپائلر ڈویلپمنٹ میں بھی استعمال ہوتا ہے (رسٹ کمپائلر اصل میں OCaml میں لکھا گیا تھا)، رسمی تصدیق، مالیاتی نظام، اور تھیوری ثابت کرنے میں۔

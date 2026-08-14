@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মহাকাশ অনুসন্ধান রোডম্যাপ
 ## ওভারভিউ
 আমরা মহাকাশ অনুসন্ধানের একটি নতুন স্বর্ণযুগের মধ্য দিয়ে বসবাস করছি। নাসার আর্টেমিস প্রোগ্রাম মানুষকে চাঁদে ফিরিয়ে দিচ্ছে। স্পেসএক্স মঙ্গল গ্রহের জন্য ডিজাইন করা সম্পূর্ণ পুনঃব্যবহারযোগ্য রকেট তৈরি করছে। চীনের নিজস্ব উচ্চাভিলাষী চন্দ্র ও মঙ্গলগ্রহের পরিকল্পনা রয়েছে। এবং প্রাইভেট কোম্পানিগুলির একটি ক্রমবর্ধমান নক্ষত্র বাণিজ্যের জন্য স্থান উন্মুক্ত করছে — স্যাটেলাইট ইন্টারনেট থেকে মহাকাশ পর্যটন পর্যন্ত। এখানে রোডম্যাপ, চাঁদ থেকে মঙ্গল এবং তার পরেও।

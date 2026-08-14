@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 神经科学
 神经科学是对神经系统（大脑、脊髓以及将它们连接到身体的所有神经）的研究。它跨越多个层面：从分子和基因，到单个神经元和突触，到电路和大脑区域，到行为、认知和意识。大脑是已知宇宙中最复杂的结构，包含约 860 亿个神经元，通过数万亿个突触连接，了解大脑的工作原理是科学面临的巨大挑战之一。
 ---

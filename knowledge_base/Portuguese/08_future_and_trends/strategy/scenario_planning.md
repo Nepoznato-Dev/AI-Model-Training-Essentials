@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Planejamento de cenário
 ## Visão geral
 Ninguém pode prever o futuro – mas você pode se preparar para vários futuros plausíveis. O planeamento de cenários, nascido nos grupos de reflexão da Guerra Fria e aperfeiçoado pela Shell durante as crises petrolíferas da década de 1970, é uma forma de pensar sistematicamente sobre a incerteza. Em vez de apostar em uma previsão, você constrói histórias coerentes sobre como as coisas podem acontecer e, em seguida, testa suas decisões em relação a todas elas. Veja como funciona a metodologia, juntamente com cenários em domínios-chave.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml (Objective Caml) হল একটি কার্যকরী প্রোগ্রামিং ভাষা যা ফ্রান্সের INRIA-এ বিকশিত হয়, যা প্রথম প্রকাশিত হয় 1996 সালে। এটি কার্যকরী প্রোগ্রামিং-এর ভাবকে ব্যবহারিক বৈশিষ্ট্যগুলির সাথে একত্রিত করে: টাইপ ইনফারেন্স (Hindley-Milner), প্যাটার্ন ম্যাচিং, বীজগণিতীয় ডেটা টাইপ এবং ঐচ্ছিক অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং সহ একটি শক্তিশালী টাইপ সিস্টেম। OCaml দ্রুত নেটিভ কোডে কম্পাইল করে এবং বাইটকোড সমর্থন করে।
 OCaml-এর সবচেয়ে বিখ্যাত বাস্তব-বিশ্বের অ্যাপ্লিকেশন হল **জেন স্ট্রিট** ট্রেডিং ফার্ম, যেটি তার পুরো ট্রেডিং অবকাঠামোর জন্য OCaml ব্যবহার করে। এটি কম্পাইলার ডেভেলপমেন্টেও ব্যবহৃত হয় (মরিচা কম্পাইলারটি মূলত OCaml-এ লেখা হয়েছিল), আনুষ্ঠানিক যাচাইকরণ, আর্থিক ব্যবস্থা এবং উপপাদ্য প্রমাণ।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # コンピューティングの未来
 コンピューティングの未来は、過去 60 年間の基本的な前提に疑問を投げかける勢力によって形作られています。ムーアの法則 (コンピューティング能力がおよそ 2 年ごとに 2 倍になるという観察) は減速しつつあります。 CPU とメモリを分離したフォン ノイマン アーキテクチャは、「メモリの壁」にぶつかっています。量子コンピューティングは、古典的なコンピューターが解決できない問題を解決できると期待されています。ニューロモーフィック チップは脳の構造を模倣します。エッジ コンピューティングは、処理を集中型データセンターから遠ざけます。そして AI は、命令を実行するツールから、学習、生成、推論を行うシステムへと、コンピューターの役割を変えつつあります。こうした変化を理解することは、テクノロジーを構築、購入、または依存している人にとって重要です。
 ---

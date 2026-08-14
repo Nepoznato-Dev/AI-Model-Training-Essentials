@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # จิตวิทยาและพฤติกรรมมนุษย์
 จิตวิทยาเป็นศาสตร์ที่ว่าผู้คนคิด รู้สึก และกระทำอย่างไรและทำไม ไม่ใช่การอ่านใจ และไม่ใช่สามัญสำนึก แม้ว่าบางครั้งจะยืนยันสิ่งที่สามัญสำนึกแนะนำและบางครั้งก็ขัดแย้งอย่างสิ้นเชิง จิตวิทยาใช้วิธีการทางวิทยาศาสตร์เช่นเดียวกับวิทยาศาสตร์อื่นๆ: สังเกต ตั้งสมมติฐาน ทดสอบ และแก้ไข สิ่งที่ท้าทายก็คือหัวเรื่อง — จิตใจมนุษย์ — เป็นวัตถุที่ซับซ้อนที่สุดที่เรารู้จัก
 ไฟล์นี้ครอบคลุมเนื้อหาหลักๆ ของจิตวิทยา: วิธีคิดของเรา วิธีการพัฒนา อิทธิพลจากผู้อื่นอย่างไร สิ่งที่ผิดพลาด และสิ่งที่สามารถทำได้เกี่ยวกับเรื่องนี้

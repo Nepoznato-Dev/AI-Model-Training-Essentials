@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Spieltheorie
 Die Spieltheorie ist die Mathematik der strategischen Interaktion – Situationen, in denen Ihr Ergebnis nicht nur von Ihren eigenen Entscheidungen, sondern auch von den Entscheidungen anderer abhängt. Von Preiskämpfen zwischen Unternehmen bis hin zu nuklearen Wettrüsten, von Online-Auktionen bis hin zur Evolutionsbiologie – die Spieltheorie liefert die Werkzeuge zur Analyse von Konflikten und Kooperationen. Durch Multiagenten-Verstärkungslernen, generative kontradiktorische Netzwerke (Generative Adversarial Networks, GANs) und Mechanismusdesign für Online-Plattformen ist es für maschinelles Lernen immer relevanter geworden.
 ---

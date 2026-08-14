@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #যাও
 গো (প্রায়ই এটির আসল ডোমেন নামের পরে "গোলাং" বলা হয়) হল একটি স্ট্যাটিকলি টাইপ করা, সংকলিত প্রোগ্রামিং ভাষা যা Google-এ রবার্ট গ্রিজেমার, রব পাইক এবং কেন থম্পসন দ্বারা ডিজাইন করা হয়েছে। এটি প্রথম 2012 সালে সিস্টেম প্রোগ্রামিংয়ের জন্য একটি ভাল ভাষা হওয়ার সুস্পষ্ট লক্ষ্য নিয়ে প্রকাশিত হয়েছিল -- যেটি পাইথনের মতো গতিশীল ভাষার উত্পাদনশীলতার সাথে C-এর কর্মক্ষমতাকে একত্রিত করে। Go তার সরলতা, দ্রুত সংকলন, অন্তর্নির্মিত একযোগে (গোরুটিন এবং চ্যানেল) এবং চমৎকার টুলিংয়ের জন্য পরিচিত।
 Go ক্লাউড ইনফ্রাস্ট্রাকচার ইকোসিস্টেমের বেশির ভাগকে ক্ষমতা দেয়: Docker, Kubernetes, Terraform, Prometheus, etcd এবং Go স্ট্যান্ডার্ড লাইব্রেরির HTTP সার্ভার সবই Go-তে লেখা। এটি ক্লাউড-নেটিভ ডেভেলপমেন্ট, মাইক্রোসার্ভিস এবং CLI টুলের জন্য ডিফল্ট ভাষা হয়ে উঠেছে।

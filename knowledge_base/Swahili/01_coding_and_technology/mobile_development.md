@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Maendeleo ya Simu
 Ukuzaji wa rununu ni mazoezi ya kuunda programu za simu mahiri na kompyuta kibao - haswa kwa iOS (Apple) na Android (Google). Inajumuisha kila kitu kutoka kwa muundo wa UI kwa skrini ndogo hadi kudhibiti maisha ya betri, kushughulikia uthabiti wa mtandao na kusambaza programu kupitia duka. Uga umekomaa kwa kiasi kikubwa, na mifumo ya majukwaa mtambuka sasa inashindana na ukuzaji asilia kwa hali nyingi za utumiaji.
 ---

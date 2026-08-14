@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভূ-স্থানিক বিশ্লেষণ
 ভূ-স্থানিক বিশ্লেষণ হল এমন ডেটা পরীক্ষা করার প্রক্রিয়া যার একটি ভৌগলিক উপাদান রয়েছে — স্থানাঙ্ক, ঠিকানা, সীমানা, বা পৃথিবীর কোনো অবস্থানের সাথে সংযুক্ত কোনো ডেটা। এটি "আমাদের গ্রাহকরা কোথায়?", "সর্বোত্তম রুট কী?" এবং "সময়ের সাথে সাথে জমির ব্যবহার কীভাবে পরিবর্তিত হচ্ছে?" এর মতো প্রশ্নের উত্তর দেয়। প্রতিটি ডেটাসেটের একটি স্থানিক মাত্রা আছে, এবং এটি বোঝার ফলে পরিসংখ্যানগত বিশ্লেষণ মিস করা অন্তর্দৃষ্টিগুলি আনলক করে।
 ---

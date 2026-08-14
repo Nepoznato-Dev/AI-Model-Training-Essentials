@@ -1,3 +1,4 @@
+<!--
 ---
 # Métadonnées
 titre : "Arts et Littérature"
@@ -34,6 +35,8 @@ apport :
   how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
   review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
 ---
+
+-->
 # Arts et littérature
 L’expression créative humaine – que ce soit dans les livres, les peintures, la musique ou les films – est l’un des témoignages les plus durables de la civilisation. Comprendre les principaux genres, mouvements et figures donne le contexte du monde dans lequel nous vivons aujourd'hui. Chaque roman, chaque symphonie, chaque film est en conversation avec ce qui l’a précédé.
 ---

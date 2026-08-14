@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Umweltwissenschaften und Nachhaltigkeit
 Umweltwissenschaft ist das, was passiert, wenn man die Werkzeuge der Physik, Chemie, Biologie, Geologie und Wirtschaft nutzt und sie auf die Frage richtet: „Was passiert mit unserem Planeten und was können wir dagegen tun?“ Es handelt sich nicht um eine einzelne Disziplin – es ist eine Kollision verschiedener Disziplinen, die es sowohl faszinierend als auch politisch brisant macht.
 Die Kernspannung in der Umweltwissenschaft ist folgende: Die menschliche Zivilisation ist darauf angewiesen, der Umwelt Ressourcen zu entziehen, aber die Entnahme dieser Ressourcen verändert die Umwelt auf eine Weise, die die Systeme, von denen wir abhängig sind, untergraben kann. Das Verständnis dieser Rückkopplungsschleife ist kurz gesagt das gesamte Feld.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 数据结构和算法
 数据结构是我们在内存中组织数据的方式，以便对其进行高效的操作。算法是解决问题的逐步过程。它们共同构成了计算机科学的基础——您使用过的每个程序都依赖于它们。选择正确的数据结构可以将一个极其缓慢的程序变成一个快速的程序，而了解正确的算法可以将一个无法解决的问题变成一个微不足道的问题。
 ---

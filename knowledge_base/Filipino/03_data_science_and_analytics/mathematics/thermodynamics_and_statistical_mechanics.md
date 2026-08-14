@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thermodynamics at Statistical Mechanics
 Inilalarawan ng Thermodynamics ang macroscopic na pag-uugali ng mga system sa mga tuntunin ng temperatura, presyon, at entropy — nang hindi nalalaman kung ano ang hitsura ng mga atomo. Ipinapaliwanag ng statistic mechanics ang thermodynamics mula sa ibaba pataas: nakukuha nito ang mga macroscopic na katangian mula sa microscopic na pag-uugali ng napakaraming particle. Magkasama, nagbibigay sila ng pinakamalalim na pag-unawa sa enerhiya, entropy, at equilibrium — mga konsepto na lumipat sa teorya ng impormasyon, machine learning, at higit pa.
 ---

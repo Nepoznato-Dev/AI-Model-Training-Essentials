@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #نجوم و کیهان شناسی
 نجوم مطالعه اجرام آسمانی - ستارگان، سیارات، کهکشان‌ها و هر چیزی فراتر از جو زمین است. کیهان شناسی مطالعه جهان به عنوان یک کل است: منشا، ساختار، تکامل و سرنوشت نهایی آن. آنها با هم به برخی از اساسی ترین سوالاتی که بشر تاکنون پرسیده اند پاسخ می دهند: جهان چگونه آغاز شد؟ چقدر بزرگ است؟ آیا ما تنها هستیم؟ در نهایت چه اتفاقی برای آن خواهد افتاد؟
 ---

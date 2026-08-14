@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # स्थानीय एआई आर्किटेक्चर
 बड़े भाषा मॉडल को पूरी तरह से डिवाइस पर चलाने के लिए एक व्यावहारिक मार्गदर्शिका - हार्डवेयर विचार, अनुमान इंजन, मेमोरी ऑप्टिमाइज़ेशन और एज परिनियोजन के लिए सिस्टम डिज़ाइन।
 ---

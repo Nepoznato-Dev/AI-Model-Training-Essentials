@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # پردازش گفتار و صدا
 پردازش گفتار و صدا فناوری هایی را پوشش می دهد که به ماشین ها اجازه می دهد صدا را بشنوند، درک کنند، تولید کنند و دستکاری کنند. این شامل تشخیص گفتار (تبدیل کلمات گفتاری به متن)، سنتز گفتار (تبدیل متن به کلمات گفتاری)، شناسایی گوینده، تولید موسیقی و درک صدای محیطی است. این زمینه با یادگیری عمیق متحول شده است - سیستم‌های مدرن برای تشخیص گفتار به دقت در سطح انسان نزدیک می‌شوند و صداهای مصنوعی طبیعی وهم‌آوری تولید می‌کنند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 지구과학
 지구과학은 우리가 살고 있는 행성, 즉 구조, 과정, 역사, 지구를 거주 가능하게 만드는 시스템을 연구합니다. 이는 지질학(고체 지구), 해양학(해양), 기상학(대기 및 날씨), 기후학(장기 기후 패턴)을 포괄합니다. 이러한 분야를 통합하는 것은 지구가 역동적인 시스템이라는 이해입니다. 지구 내부는 끊임없이 움직이고, 표면은 재형성되고, 대기와 해양은 복잡한 방식으로 상호 작용합니다.
 ---

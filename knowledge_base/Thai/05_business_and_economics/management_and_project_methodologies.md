@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การจัดการและระเบียบวิธีโครงการ
 การจัดการบุคลากรและโครงการถือเป็นความรับผิดชอบที่มีความต้องการมากที่สุดในองค์กร ทักษะทางเทคนิคทำให้เกิดการเข้าร่วม แต่ความสามารถในการเป็นผู้นำทีม การตัดสินใจ การสื่อสารอย่างมีประสิทธิภาพ และการส่งมอบผลลัพธ์จะเป็นตัวกำหนดว่าบรรลุวัตถุประสงค์หรือไม่ ไฟล์นี้ครอบคลุมกรอบการทำงาน วิธีการ และทักษะการปฏิบัติที่ผู้จัดการที่มีประสิทธิภาพและผู้นำโครงการนำไปใช้
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 飛鏢
 Dart 是 Google 開發的用戶端優化程式語言，於 2013 年首次發布。雖然 Dart 最初被定位為 Web 瀏覽器的潛在 JavaScript 替代品，但它發現其主要目的是作為 **Flutter** 背後的語言 - Google 的跨平台 UI 工具包，用於從單個程式碼庫建立行動、Web、桌面和嵌入式應用程式。
 Dart 結合了現代語言的最佳功能：它是物件導向的，具有可選類型（自 Dart 3 以來健全的 null 安全性），支援使用`async`/`await`進行非同步編程，並編譯為本機機器碼（用於行動/桌面）和 JavaScript（用於 Web）。

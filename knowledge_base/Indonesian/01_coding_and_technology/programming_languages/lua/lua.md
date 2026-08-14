@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #lua
 Lua adalah bahasa skrip yang ringan dan dapat disematkan yang dirancang untuk memperluas aplikasi. Dibuat pada tahun 1993 di Universitas Katolik Kepausan Rio de Janeiro di Brazil, Lua adalah salah satu bahasa scripting tercepat yang tersedia. Jejaknya yang kecil (penerjemahnya ~120KB) dan kesederhanaan menjadikannya pilihan utama untuk skrip pengembangan game, sistem tertanam, dan konfigurasi.
 Lua paling dikenal sebagai bahasa skrip di balik Roblox (platform game dengan 200+ juta pengguna bulanan), add-on World of Warcraft, dan berbagai mesin game (Love2D, Defold, Corona SDK). Itu juga digunakan di Nginx (OpenResty), Redis, dan Wireshark.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเพิ่มประสิทธิภาพ
 การเพิ่มประสิทธิภาพเป็นคณิตศาสตร์ในการค้นหาวิธีแก้ปัญหาที่ดีที่สุดจากชุดวิธีแก้ปัญหาที่เป็นไปได้ มันถามว่า: เมื่อพิจารณาจากฟังก์ชันและข้อจำกัดแล้ว อินพุตใดที่จะย่อ (หรือขยาย) เอาต์พุตให้เหลือน้อยที่สุด การเพิ่มประสิทธิภาพเป็นกลไกของการเรียนรู้ของเครื่อง การฝึกโมเดลหมายถึงการลดฟังก์ชันที่สูญเสียให้เหลือน้อยที่สุด ปรากฏอยู่ในการวิจัยการดำเนินงาน เศรษฐศาสตร์ การออกแบบทางวิศวกรรม และแทบทุกสาขาเชิงปริมาณ
 ---

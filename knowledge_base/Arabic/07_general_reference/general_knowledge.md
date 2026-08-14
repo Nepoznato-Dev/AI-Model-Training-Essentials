@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # المعرفة العامة
 هذا الملف عبارة عن مجموعة من الحقائق والمفاهيم التي تظهر بانتظام في المحادثات والأخبار والتعليم والحياة اليومية. فكر في الأمر على أنه معرفة خلفية - نوع الشيء الذي يساعدك على فهم ما تقرأه، أو تسمعه، أو تختبره.
 ---

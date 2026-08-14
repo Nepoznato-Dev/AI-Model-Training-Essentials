@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mbinu za Upimaji
 Kujaribu ni jinsi unavyopata imani kuwa msimbo wako hufanya kazi - na muhimu zaidi, mabadiliko yake hayavunji kile ambacho tayari kinafanya kazi. Upimaji mzuri hupata hitilafu kabla ya watumiaji kufanya, hati za tabia inayotarajiwa, na huwezesha urekebishaji bila woga. Faili hii inajumuisha wigo kamili wa mikakati ya majaribio, kutoka kwa majaribio ya vitengo hadi majaribio ya mwisho hadi mwisho, na kanuni zinazofanya majaribio kuwa na ufanisi.
 ---

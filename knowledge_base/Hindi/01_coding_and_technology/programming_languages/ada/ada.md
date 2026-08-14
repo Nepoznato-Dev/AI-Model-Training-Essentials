@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #अदा
 Ada एक सांख्यिकीय रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जिसे सुरक्षा-महत्वपूर्ण और उच्च-अखंडता प्रणालियों के लिए डिज़ाइन किया गया है। मूल रूप से 1980 के दशक में अमेरिकी रक्षा विभाग (एडीए लवलेस के नाम पर, जिसे पहला कंप्यूटर प्रोग्रामर माना जाता है) के साथ अनुबंध के तहत विकसित किया गया, एडा विश्वसनीयता, रखरखाव और शुद्धता पर जोर देता है। इसे DoD द्वारा उपयोग की जाने वाली सैकड़ों प्रोग्रामिंग भाषाओं को एक एकल, अच्छी तरह से निर्दिष्ट भाषा से बदलने के लिए डिज़ाइन किया गया था।
 एडीए का उपयोग विमानन (फ्लाई-बाय-वायर सिस्टम), अंतरिक्ष (ईएसए और नासा), रक्षा (मिसाइल मार्गदर्शन, रडार), रेल परिवहन और चिकित्सा उपकरणों में किया जाता है - जहां भी सॉफ्टवेयर विफलता से लोगों की जान जा सकती है।

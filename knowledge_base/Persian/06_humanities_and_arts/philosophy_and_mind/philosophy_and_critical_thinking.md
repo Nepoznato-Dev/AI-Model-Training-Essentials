@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فلسفه و تفکر انتقادی
 فلسفه مطالعه نظام مند پرسش های اساسی درباره معرفت، واقعیت و هستی است. چارچوبی را برای ارزیابی آنچه به عنوان دانش به حساب می آید، آنچه ارزش انجام دادن دارد و چگونگی تشخیص استدلال های مستدل از استدلال های ضعیف را فراهم می کند. تفکر انتقادی کاربرد عملی این چارچوب است: مهارت تجزیه و تحلیل ادعاها، شناسایی استدلال ناقص و تصمیم گیری با اطلاعات بهتر. این فایل ایده های اصلی، ابزارهای ارزیابی آنها و سوگیری های شناختی را پوشش می دهد که همه را تحت تاثیر قرار می دهد.
 ---

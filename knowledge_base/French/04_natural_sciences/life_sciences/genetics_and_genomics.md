@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Génétique et Génomique
 La génétique est l'étude de l'hérédité – comment les traits sont transmis des parents à la progéniture par l'ADN. La génomique est l'étude de génomes entiers : tous les gènes, les régions non codantes, la manière dont ils interagissent et varient selon les individus et les populations. La transition de la génétique à la génomique a été motivée par la technologie de séquençage : nous sommes passés de l’étude d’un gène à la fois à la lecture de génomes entiers en quelques heures, générant ainsi des données qui transforment la médecine, l’agriculture, la médecine légale et notre compréhension de l’évolution.
 ---

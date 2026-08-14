@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # नियंत्रण सिद्धांत
 नियंत्रण सिद्धांत सिस्टम को वैसा व्यवहार करने का गणित है जैसा आप चाहते हैं। थर्मोस्टैट से लेकर ऑटोपायलट तक, रोबोटिक हथियारों से लेकर रासायनिक रिएक्टर तक, नियंत्रण प्रणाली वांछित व्यवहार को बनाए रखने के लिए समझती है, निर्णय लेती है और कार्य करती है। यह क्षेत्र स्थिरता, प्रदर्शन और मजबूती का विश्लेषण करने के लिए कठोर उपकरण प्रदान करता है - अवधारणाएं जो सुदृढीकरण सीखने, हाइपरपैरामीटर ट्यूनिंग और अनुकूली प्रणालियों में स्थानांतरित हो गई हैं।
 ---

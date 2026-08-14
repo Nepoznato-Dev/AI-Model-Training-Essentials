@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mạng lưới thần kinh đồ thị
 Mạng thần kinh đồ thị (GNN) là mạng thần kinh được thiết kế để hoạt động trên dữ liệu có cấu trúc đồ thị - mạng gồm các nút được kết nối bởi các cạnh. Trong khi mạng thần kinh truyền thống hoạt động trên lưới (hình ảnh) hoặc chuỗi (văn bản), GNN xử lý các cấu trúc quan hệ tùy ý: mạng xã hội, biểu đồ phân tử, biểu đồ tri thức, mạng đường bộ, biểu đồ đề xuất, v.v. Chúng đã trở nên cần thiết cho việc khám phá ma túy, phát hiện gian lận, hệ thống khuyến nghị và bất kỳ lĩnh vực nào mà mối quan hệ giữa các thực thể là quan trọng.
 ---

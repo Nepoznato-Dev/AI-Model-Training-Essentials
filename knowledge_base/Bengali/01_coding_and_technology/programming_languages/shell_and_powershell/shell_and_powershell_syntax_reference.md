@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # শেল এবং পাওয়ারশেল — সিনট্যাক্স রেফারেন্স
 এই নথিটি Bash এবং PowerShell-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি উভয় শেলের জন্য সম্পূর্ণ স্ক্রিপ্টিং প্যাটার্ন, পাইপলাইন, প্রক্রিয়া পরিচালনা এবং অটোমেশন ইডিয়মগুলিতে ফোকাস করে প্রধান শেল রেফারেন্সের পরিপূরক।
 ---

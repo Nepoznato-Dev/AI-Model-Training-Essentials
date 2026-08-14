@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lua — 語法參考
 本文檔為 Lua (5.4) 提供了全面、結構化的語法參考。它透過關注詳盡的語法模式、表和元表、協程以及 Lua 獨特的設計理念來補充主要的 Lua 參考資料。
 ---

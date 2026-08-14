@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # R — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour R (4.x). Il complète la référence principale de R en se concentrant sur les modèles de syntaxe exhaustifs, l'écosystème Tidyverse, la manipulation des données, la modélisation statistique et la visualisation.
 ---

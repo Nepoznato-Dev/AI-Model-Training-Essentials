@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ทฤษฎีเกม
 ทฤษฎีเกมเป็นคณิตศาสตร์ของการโต้ตอบเชิงกลยุทธ์ ซึ่งเป็นสถานการณ์ที่ผลลัพธ์ของคุณไม่ได้ขึ้นอยู่กับการเลือกของคุณเองเท่านั้น แต่ยังขึ้นอยู่กับการเลือกของผู้อื่นด้วย ตั้งแต่สงครามราคาระหว่างบริษัทไปจนถึงการแข่งขันอาวุธนิวเคลียร์ จากการประมูลออนไลน์ไปจนถึงชีววิทยาเชิงวิวัฒนาการ ทฤษฎีเกมมอบเครื่องมือสำหรับการวิเคราะห์ความขัดแย้งและความร่วมมือ มีความเกี่ยวข้องมากขึ้นกับการเรียนรู้ของเครื่องผ่านการเรียนรู้การเสริมกำลังแบบหลายตัวแทน เครือข่ายปฏิปักษ์ทั่วไป (GAN) และการออกแบบกลไกสำหรับแพลตฟอร์มออนไลน์
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 멀티모달 AI
 멀티모달 AI 시스템은 텍스트, 이미지, 오디오, 비디오 등 여러 유형의 데이터에서 얻은 정보를 동시에 처리하고 결합합니다. 초기 AI 시스템은 일반적으로 단일 모드(텍스트 전용, 이미지 전용)였지만 가장 유능한 최신 시스템은 다중 모드입니다. GPT-4V는 이미지와 텍스트를 함께 읽습니다. Gemini는 텍스트, 이미지, 오디오 및 비디오를 기본적으로 처리합니다. Sora와 같은 시스템은 텍스트 설명에서 비디오를 생성합니다. 이 파일은 다중 모드 AI의 작동 방식, 그 뒤에 있는 아키텍처, 양식 결합이 왜 그렇게 강력한지를 다룹니다.
 ---

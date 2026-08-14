@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Y học và chăm sóc sức khỏe
 Y học là khoa học và thực hành chẩn đoán, điều trị và ngăn ngừa bệnh tật. Đó là một trong những nỗ lực lâu đời nhất của con người - Lời thề Hippocrates có từ thời Hy Lạp cổ đại - và là một trong những nỗ lực thay đổi nhanh chóng nhất. Chỉ trong thế kỷ trước, chúng ta đã đi từ chỗ không có thuốc kháng sinh đến việc có liệu pháp gen có thể viết lại DNA của bệnh nhân.
 Tệp này bao gồm cách thức hoạt động của y học: các chuyên khoa chính, cách chẩn đoán và điều trị bệnh, cách tổ chức hệ thống chăm sóc sức khỏe và các câu hỏi đạo đức nảy sinh khi mạng sống con người bị đe dọa.

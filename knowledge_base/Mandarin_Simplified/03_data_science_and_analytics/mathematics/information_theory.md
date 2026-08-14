@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 信息论
 信息论由克劳德·香农 (Claude Shannon) 于 1948 年创立，对信息本身进行量化。一条消息能告诉你多少信息？您可以将数据压缩到什么程度？在嘈杂的信道上您的通信速度有多快？这些问题都有精确的数学答案。除了通信之外，信息论已经成为机器学习的基础——交叉熵是分类的默认损失函数，KL 散度衡量分布相似性，互信息驱动特征选择。
 ---

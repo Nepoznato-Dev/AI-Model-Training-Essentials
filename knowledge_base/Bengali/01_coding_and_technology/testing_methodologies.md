@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # পরীক্ষা পদ্ধতি
 টেস্টিং হল আপনি কীভাবে আত্মবিশ্বাস অর্জন করেন যে আপনার কোড কাজ করে — এবং আরও গুরুত্বপূর্ণ, এটিতে পরিবর্তনগুলি ইতিমধ্যে যা কাজ করে তা ভেঙে দেয় না। ভাল পরীক্ষা ব্যবহারকারীদের করার আগে বাগ ধরা দেয়, নথি প্রত্যাশিত আচরণ, এবং নির্ভীক রিফ্যাক্টরিং সক্ষম করে। এই ফাইলটি পরীক্ষার কৌশলগুলির সম্পূর্ণ বর্ণালী কভার করে, ইউনিট পরীক্ষা থেকে শুরু করে শেষ থেকে শেষ পর্যন্ত পরীক্ষা, এবং নীতিগুলি যা পরীক্ষাকে কার্যকর করে।
 ---

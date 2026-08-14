@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #مصنوعی ذہانت
 مصنوعی ذہانت ایسی مشینیں بنانے کی کوشش ہے جو ایسی چیزیں کر سکتی ہیں جن کے لیے ذہانت کی ضرورت ہوتی ہے اگر انسان ایسا کرے: چہروں کو پہچاننا، تقریر کو سمجھنا، فیصلے کرنا، متن لکھنا، گیمز کھیلنا، کاریں چلانا، بیماریوں کی تشخیص کرنا۔ فیلڈ اتنا ہی پرانا ہے جتنا خود کمپیوٹنگ - ایلن ٹورنگ پوچھ رہا تھا "کیا مشینیں سوچ سکتی ہیں؟" 1950 میں - لیکن صلاحیت میں حالیہ دھماکے (2020s) نے AI کو انسانی تاریخ کی سب سے اہم اور مسابقتی ٹیکنالوجیز میں سے ایک بنا دیا ہے۔
 ---

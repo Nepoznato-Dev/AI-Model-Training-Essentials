@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ماحولیاتی آگاہی
 ماحول کوئی الگ چیز نہیں ہے "وہاں سے باہر" - یہ وہ نظام ہے جو ہر چیز کو ممکن بناتا ہے۔ ہر سانس جو آپ لیتے ہیں، ہر گلاس پانی جو آپ پیتے ہیں، ہر کھانا جو آپ کھاتے ہیں اس کا انحصار ماحول کی ساخت، پانی کے چکر، مٹی کی صحت، اور پولینیٹر نیٹ ورکس پر ہوتا ہے۔ یہ سمجھنا کہ یہ سسٹم کیسے کام کرتے ہیں — اور وہ کیسے بدل رہے ہیں — ایک باخبر شخص کے لیے اختیاری نہیں ہے۔ اس فائل میں ماحولیاتی سائنس کے بنیادی اصولوں، ہمیں درپیش چیلنجز، اور عملی طور پر پائیداری کا اصل مطلب کیا ہے۔
 ---

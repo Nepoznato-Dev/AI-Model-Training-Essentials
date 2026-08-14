@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp & Clojure — সিনট্যাক্স রেফারেন্স
 এই নথিটি কমন লিস্প এবং ক্লোজারের জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স সরবরাহ করে। এটি এস-এক্সপ্রেশন, ম্যাক্রো, স্থায়ী ডেটা স্ট্রাকচার এবং কার্যকরী প্রোগ্রামিং প্যাটার্নগুলিতে ফোকাস করে প্রধান লিস্প/ক্লোজার রেফারেন্সের পরিপূরক।
 ---

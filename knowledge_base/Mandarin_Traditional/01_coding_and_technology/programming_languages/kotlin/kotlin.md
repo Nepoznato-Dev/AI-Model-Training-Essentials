@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 科特林
 Kotlin 是一種靜態類型、編譯型程式語言，由 JetBrains 開發，於 2011 年首次發布（2016 年發布 1.0）。它在 Java 虛擬機器 (JVM) 上運行，並且與 Java 完全可互通——這意味著您可以使用 Kotlin 中的任何 Java 庫，並從 Java 呼叫 Kotlin 程式碼，而無需任何包裝器。 2017 年，Google 宣布 Kotlin 成為 Android 開發的首選語言，從此成為 Android 的主導語言。
 Kotlin 旨在解決 Java 的痛點：冗長、空指標異常和缺乏現代功能。結果是一種感覺像是現代化 Java 的語言——簡潔、安全且富有表現力——同時保持與龐大的 Java 生態系統的完全相容性。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Kotlin
 Kotlin ni lugha ya programu iliyoandikwa kwa kitakwimu, iliyotungwa na JetBrains na ilitolewa kwa mara ya kwanza mnamo 2011 (1.0 mnamo 2016). Inatumika kwenye Mashine ya Mtandaoni ya Java (JVM) na inashirikiana kikamilifu na Java - kumaanisha kuwa unaweza kutumia maktaba yoyote ya Java kutoka Kotlin na kupiga msimbo wa Kotlin kutoka Java bila kanga zozote. Mnamo 2017, Google ilitangaza Kotlin kama lugha inayopendekezwa kwa ukuzaji wa Android, na tangu wakati huo imekuwa lugha kuu ya Android.
 Kotlin iliundwa kurekebisha alama za maumivu za Java: kitenzi, vighairi vya vielelezo visivyo na maana, na kukosa vipengele vya kisasa. Matokeo yake ni lugha ambayo inahisi kama Java ya kisasa - fupi, salama, na ya kueleza - huku ikidumisha utangamano kamili na mfumo mkubwa wa ikolojia wa Java.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI sa Araw-araw na Buhay
 Ang artificial intelligence ay hindi na isang futuristic na konsepto — ito ay naka-embed sa pang-araw-araw na buhay. Mula sa oras na gumising ka at suriin ang iyong telepono (nagpapasya ang mga algorithm ng rekomendasyon kung anong mga notification ang makikita mo) hanggang sa sandaling makatulog ka (pinoproseso ng iyong smart speaker ang iyong huling command), ang mga AI system ay gumagawa ng mga desisyon para sa iyo, para sa iyo, at kung minsan ay tungkol sa iyo. Ang pag-unawa sa kung saan lumalabas ang AI, kung paano ito gumagana sa isang pangunahing antas, at kung ano ang mga implikasyon nito ay hindi na opsyonal — ito ay kinakailangan para sa kaalamang pagkamamamayan sa ika-21 siglo.
 ---

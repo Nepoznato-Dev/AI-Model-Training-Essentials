@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #視覺藝術
 視覺藝術是人類最古老的溝通形式——從拉斯科的洞穴壁畫到今天的數位裝置。了解藝術運動、媒介和保存創意作品的機構，可以讓您更深入地了解社會數千年來如何表達美、力量、靈性和異議。
 ---

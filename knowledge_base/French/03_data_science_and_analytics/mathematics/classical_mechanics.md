@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mécanique classique
 La mécanique classique décrit le mouvement d'objets sous l'influence de forces. Des pommes qui tombent aux planètes en orbite, des cordes vibrantes aux particules qui entrent en collision, ses principes régissent le monde macroscopique. Au-delà de ses applications physiques, la mécanique classique a donné naissance au calcul des variations, à la géométrie symplectique et au cadre hamiltonien qui sous-tend la mécanique quantique et l'optimisation moderne.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ক্লাসিক্যাল মেকানিক্স
 ক্লাসিক্যাল মেকানিক্স শক্তির প্রভাবে বস্তুর গতি বর্ণনা করে। পতিত আপেল থেকে শুরু করে প্রদক্ষিণকারী গ্রহ পর্যন্ত, কম্পনশীল স্ট্রিং থেকে সংঘর্ষকারী কণা পর্যন্ত, এর নীতিগুলি ম্যাক্রোস্কোপিক বিশ্বকে পরিচালনা করে। এর ভৌত প্রয়োগের বাইরে, ক্লাসিক্যাল মেকানিক্স বৈচিত্রের ক্যালকুলাস, সিমপ্লেটিক জ্যামিতি এবং হ্যামিলটোনিয়ান ফ্রেমওয়ার্কের জন্ম দিয়েছে যা কোয়ান্টাম মেকানিক্স এবং আধুনিক অপ্টিমাইজেশানকে আন্ডারপিন করে।
 ---

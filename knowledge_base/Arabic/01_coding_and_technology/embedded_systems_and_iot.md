@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #الأنظمة المدمجة وإنترنت الأشياء
 الأنظمة المضمنة هي أجهزة كمبيوتر مخفية داخل أجهزة أخرى - وحدة التحكم في محرك سيارتك، ووحدة التحكم في الغسالة، ووحدة التحكم الدقيقة في منظم الحرارة الذكي. على عكس أجهزة الكمبيوتر ذات الأغراض العامة، فهي مصممة لمهام محددة، غالبًا مع قيود صارمة على الطاقة والذاكرة وسرعة المعالجة. تعمل إنترنت الأشياء (IoT) على توسيع الأنظمة المدمجة من خلال ربطها بالشبكات، مما يتيح المراقبة والتحكم وجمع البيانات عن بعد. إنهم يمثلون معًا مليارات أجهزة الكمبيوتر التي تتفاعل مع العالم المادي.
 ---

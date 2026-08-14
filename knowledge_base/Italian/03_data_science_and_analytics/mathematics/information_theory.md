@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoria dell'informazione
 La teoria dell’informazione, fondata da Claude Shannon nel 1948, quantifica l’informazione stessa. Quanto ti dice un messaggio? Quanto puoi comprimere i dati? Quanto velocemente puoi comunicare su un canale rumoroso? Queste domande hanno risposte matematiche precise. Al di là della comunicazione, la teoria dell’informazione è diventata fondamentale per l’apprendimento automatico: l’entropia incrociata è la funzione di perdita predefinita per la classificazione, la divergenza KL misura la somiglianza della distribuzione e le informazioni reciproche guidano la selezione delle caratteristiche.
 ---

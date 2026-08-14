@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 科学与自然
 科学是我们如何弄清楚宇宙实际上在做什么——不是我们假设它在做什么，也不是古代文献所说的，而是仔细观察和实验揭示的。科学方法原则上很简单：观察某事，形成假设，测试它，并根据结果修改你的理解。科学之所以强大，是因为它具有自我修正的能力。每项主张都是临时的——只有在出现更好的证据之前才会被接受。
 该文件涵盖了自然科学的主要分支：物理学、化学、生物学以及地球和空间科学。将其视为物理世界的地图。

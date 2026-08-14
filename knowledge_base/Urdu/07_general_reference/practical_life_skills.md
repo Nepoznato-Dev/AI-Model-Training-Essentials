@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # عملی زندگی کی مہارتیں۔
 اسکول آپ کو حساب کتاب سکھاتا ہے لیکن شاذ و نادر ہی آپ کو ٹیکس جمع کرنے، متوازن کھانا پکانے یا گھر کو برقرار رکھنے کا طریقہ سکھاتا ہے۔ یہ وہ عملی قابلیتیں ہیں جو آپ کے روزمرہ کے معیارِ زندگی کو متاثر کرتی ہیں — علم کی وہ قسم جو آپ کو خود کفیل اور مالی طور پر لچکدار بناتی ہے۔ یہ فائل لوازم کے لئے ایک گھنے حوالہ ہے۔
 ---

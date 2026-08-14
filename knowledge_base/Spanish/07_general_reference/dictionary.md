@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadatos
 título: "Diccionario de inglés: definiciones de palabras comunes"
@@ -34,6 +35,8 @@ contribución:
   how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
   review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
 ---
+
+-->
 # Diccionario de inglés: definiciones de palabras comunes
 Una lista de referencia de palabras en inglés de uso frecuente y sus significados.
 que cubre vocabulario cotidiano, términos académicos y palabras que se encuentran comúnmente

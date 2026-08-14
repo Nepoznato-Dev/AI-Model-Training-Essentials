@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (Structured Query Language) ایک ڈومین کے لیے مخصوص زبان ہے جسے متعلقہ ڈیٹا بیس میں ڈیٹا کے انتظام اور استفسار کے لیے ڈیزائن کیا گیا ہے۔ سب سے پہلے 1970 کی دہائی میں IBM میں تیار کیا گیا اور 1987 میں معیاری بنایا گیا، SQL ایپلی کیشنز اور ان کے ڈیٹا کے درمیان بنیادی انٹرفیس ہے۔ ہر بڑا رشتہ دار ڈیٹا بیس مینجمنٹ سسٹم (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — SQL کو اپنی استفسار کی زبان کے طور پر استعمال کرتا ہے۔
 SQL ایک عام مقصد کی پروگرامنگ زبان نہیں ہے۔ آپ ایس کیو ایل میں ویب ایپلیکیشن نہیں لکھیں گے۔ لیکن اگر آپ کی ایپلی کیشن ڈیٹا کو اسٹور کرتی ہے — اور تقریباً تمام ایپلیکیشنز کرتی ہیں — تو SQL وہ زبان ہے جسے آپ ڈیٹا کو بازیافت کرنے، تبدیل کرنے اور اس کا نظم کرنے کے لیے استعمال کرتے ہیں۔ یہ عام پروگرامنگ کے بعد سب سے زیادہ عالمی طور پر مفید تکنیکی مہارت ہے۔

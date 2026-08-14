@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neuroscienze
 La neuroscienza è lo studio del sistema nervoso: il cervello, il midollo spinale e tutti i nervi che li collegano al corpo. Si estende su più livelli: dalle molecole e dai geni, ai singoli neuroni e sinapsi, ai circuiti e alle regioni del cervello, al comportamento, alla cognizione e alla coscienza. Il cervello è la struttura più complessa dell’universo conosciuto, contenente circa 86 miliardi di neuroni collegati da trilioni di sinapsi, e capire come funziona è una delle grandi sfide della scienza.
 ---

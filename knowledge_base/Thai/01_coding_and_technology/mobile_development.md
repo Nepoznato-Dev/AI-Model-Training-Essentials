@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การพัฒนามือถือ
 การพัฒนาอุปกรณ์เคลื่อนที่คือแนวทางปฏิบัติในการสร้างแอปพลิเคชันสำหรับสมาร์ทโฟนและแท็บเล็ต — สำหรับ iOS (Apple) และ Android (Google) เป็นหลัก ครอบคลุมทุกอย่างตั้งแต่การออกแบบ UI สำหรับหน้าจอขนาดเล็กไปจนถึงการจัดการอายุการใช้งานแบตเตอรี่ การจัดการความไม่เสถียรของเครือข่าย และการเผยแพร่แอปผ่านร้านค้า ฟิลด์นี้ได้รับการพัฒนาอย่างมาก โดยขณะนี้เฟรมเวิร์กข้ามแพลตฟอร์มกำลังแข่งขันกับการพัฒนาแบบเนทีฟสำหรับกรณีการใช้งานส่วนใหญ่
 ---

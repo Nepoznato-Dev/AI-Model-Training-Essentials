@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 人工智慧
 人工智慧是試圖建構機器，使其能夠完成人類需要智慧才能完成的事情：識別面孔、理解語音、做出決定、編寫文字、玩遊戲、駕駛汽車、診斷疾病。這個領域和計算本身一樣古老 — 艾倫圖靈問「機器能思考嗎？」1950 年，但最近（2020 年代）能力的爆炸性增長使人工智慧成為人類歷史上最重要和最具爭議的技術之一。
 ---

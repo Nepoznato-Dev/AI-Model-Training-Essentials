@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yazma ve İletişimin Temelleri
 Yazma ve iletişim, e-postalar, raporlar, belgeler, sunumlar veya konuşmalar aracılığıyla fikirleri etkili bir şekilde aktarma becerileridir. Bilgi çalışmalarının çoğu temelde iletişim çalışmasıdır: Profesyonellerin düşüncelerini açıklamaları, başkalarını ikna etmeleri, kararları belgelemeleri, spesifikasyonları yazmaları, bulguları sunmaları ve ekipler arasında işbirliği yapmaları gerekir. Kastedilen ile anlaşılan arasındaki uçurum çoğu sorunun ortaya çıktığı yerdir ve daha iyi iletişim bu açığı daraltır.
 ---

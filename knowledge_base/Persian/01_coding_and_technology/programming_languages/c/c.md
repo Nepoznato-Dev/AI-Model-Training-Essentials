@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #سی
 C یک زبان برنامه نویسی همه منظوره و رویه ای است که توسط دنیس ریچی در آزمایشگاه های بل بین سال های 1969 تا 1973 ایجاد شد. این زبان برای پیاده سازی سیستم عامل یونیکس طراحی شد و پس از 50 سال یکی از پرکاربردترین زبان های برنامه نویسی باقی مانده است. C دسترسی به حافظه سطح پایین، یک کتابخانه استاندارد حداقل، و یک نقشه برداری تمیز به دستورالعمل های ماشین را فراهم می کند - که آن را پایه ای می کند که اکثر محاسبات مدرن بر روی آن ساخته شده اند.
 C زبان پشت سیستم‌های عامل (لینوکس، هسته ویندوز، macOS)، سیستم‌های جاسازی شده، موتورهای پایگاه داده (SQLite، PostgreSQL)، کامپایلرها (CPython پایتون، MRI روبی)، و تقریباً هر زمان اجرای زبان برنامه‌نویسی دیگری است. درک C یعنی درک اینکه کامپیوترها واقعا چگونه کار می کنند.

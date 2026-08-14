@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optimizasyon
 Optimizasyon, bir dizi uygulanabilir çözüm arasından en iyi çözümü bulmanın matematiğidir. Şunu sorar: Bir fonksiyon ve kısıtlamalar verildiğinde, hangi girdi çıktıyı en aza indirir (veya en üst düzeye çıkarır)? Optimizasyon, makine öğreniminin motorudur; bir modelin eğitilmesi, kayıp fonksiyonunun en aza indirilmesi anlamına gelir. Yöneylem araştırmasında, ekonomide, mühendislik tasarımında ve hemen hemen her niceliksel alanda karşımıza çıkar.
 ---

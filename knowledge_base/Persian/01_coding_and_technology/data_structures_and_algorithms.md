@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # ساختارها و الگوریتم های داده
 ساختار داده روشی است که ما داده ها را در حافظه سازماندهی می کنیم تا عملیات روی آن کارآمد باشد. الگوریتم ها روش های گام به گام برای حل مسائل هستند. آنها با هم پایه و اساس علم کامپیوتر را تشکیل می دهند - هر برنامه ای که تا به حال استفاده کرده اید به آنها متکی است. انتخاب ساختار داده مناسب می تواند یک برنامه غیرممکن کند را به یک برنامه سریع تبدیل کند و دانستن الگوریتم مناسب می تواند یک مشکل غیر قابل حل را به یک مشکل پیش پاافتاده تبدیل کند.
 ---

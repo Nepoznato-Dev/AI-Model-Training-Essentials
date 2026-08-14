@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیٹا پائپ لائن اور ای ٹی ایل کی ناکامیاں
 ڈیٹا پائپ لائنز جدید تنظیموں کی پلمبنگ ہیں — وہ ماخذ کے نظام سے ڈیٹا کو ڈیٹا بیس، گوداموں اور جھیلوں میں منتقل کرتی ہیں جہاں اسے تجزیات، مشین لرننگ اور فیصلہ سازی کے لیے استعمال کیا جاتا ہے۔ جب وہ کام کرتے ہیں، کوئی بھی نوٹس نہیں کرتا۔ جب وہ ناکام ہو جاتے ہیں، فیصلے باسی ڈیٹا پر کیے جاتے ہیں، ماڈل کوڑے دان پر تربیت دیتے ہیں، رپورٹیں ناممکن نمبر دکھاتی ہیں، اور پورے ڈیٹا پلیٹ فارم پر اعتماد ختم ہو جاتا ہے۔ ڈیٹا پائپ لائن کی ناکامیاں ٹیکنالوجی کی تنظیموں میں سب سے زیادہ عام اور مہنگی ناکامیوں میں سے ہیں۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 수치해석법
 수치적 방법은 수학적 이론과 실제 계산 사이의 가교 역할을 합니다. 순수 수학은 해가 존재한다는 것을 증명하는 반면, 수치적 방법은 실제로 유한 정밀도에 대한 대략적인 답을 계산합니다. 모든 기계 학습 모델, 물리 시뮬레이션 및 데이터 분석 파이프라인은 궁극적으로 수치 계산에 의존합니다. 이러한 방법(정확성, 안정성 및 한계)을 이해하는 것은 안정적인 소프트웨어를 구축하는 데 필수적입니다.
 ---

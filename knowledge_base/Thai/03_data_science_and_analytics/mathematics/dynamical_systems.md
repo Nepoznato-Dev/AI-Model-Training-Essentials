@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ระบบไดนามิก
 **ระบบไดนามิก** อธิบายว่าสถานะมีการพัฒนาอย่างไรเมื่อเวลาผ่านไปตามกฎที่ตายตัว ตั้งแต่วงโคจรของดาวเคราะห์ไปจนถึงพลวัตของประชากร จากรูปแบบสภาพอากาศไปจนถึงการฝึกอบรมโครงข่ายประสาทเทียม ทฤษฎีระบบไดนามิกให้ภาษาและเครื่องมือในการทำความเข้าใจว่าสิ่งต่าง ๆ เปลี่ยนแปลงไปอย่างไร ไฟล์นี้ครอบคลุมถึงสมการเชิงอนุพันธ์สามัญ (ODE) สมการเชิงอนุพันธ์ย่อย (PDE) การวิเคราะห์เสถียรภาพ ความโกลาหล และการแยกไปสองทาง
 ---

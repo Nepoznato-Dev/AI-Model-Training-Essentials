@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # عصبی سائنس
 نیورو سائنس اعصابی نظام کا مطالعہ ہے - دماغ، ریڑھ کی ہڈی، اور تمام اعصاب جو انہیں جسم سے جوڑتے ہیں۔ یہ متعدد سطحوں پر محیط ہے: مالیکیولز اور جینز سے لے کر انفرادی نیورانز اور سینیپس تک، سرکٹس اور دماغی علاقوں تک، رویے، ادراک اور شعور تک۔ دماغ معلوم کائنات کا سب سے پیچیدہ ڈھانچہ ہے، جس میں تقریباً 86 بلین نیورونز ہیں جو کھربوں Synapses سے جڑے ہوئے ہیں، اور یہ سمجھنا کہ یہ کیسے کام کرتا ہے سائنس کے بڑے چیلنجز میں سے ایک ہے۔
 ---

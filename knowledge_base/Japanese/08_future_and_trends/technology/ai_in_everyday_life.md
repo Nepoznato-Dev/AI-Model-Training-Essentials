@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 日常生活における AI
 人工知能はもはや未来的な概念ではなく、日常生活に組み込まれています。あなたが朝起きてスマートフォンをチェックした瞬間（どのような通知が表示されるかは推奨アルゴリズムによって決定されます）から眠りにつく瞬間（スマート スピーカーが最後のコマンドを処理します）まで、AI システムはあなたに代わって、あなたのために、そして時にはあなたについて意思決定を行っています。 AI がどこに登場するか、AI が基本レベルでどのように機能するか、そしてその影響が何であるかを理解することは、もはやオプションではなく、21 世紀における情報に基づく市民権の要件です。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Grafik Teorisi
 **Grafik**, kenarlarla (bağlantılarla) birbirine bağlanan köşelerden (düğümlerden) oluşan matematiksel bir yapıdır. Grafikler ilişkileri modelliyor: sosyal ağlar, yol haritaları, sinir ağları, bağımlılıklar, iletişim kanalları. Bu yapıların incelenmesi olan grafik teorisi, bilgisayar bilimi, yöneylem araştırması ve veri biliminin merkezinde yer alan algoritmalar ve teoremler sağlar.
 ---

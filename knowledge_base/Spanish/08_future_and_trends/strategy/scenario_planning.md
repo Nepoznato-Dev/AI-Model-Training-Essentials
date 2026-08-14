@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Planificación de escenarios
 ## Descripción general
 Nadie puede predecir el futuro, pero puedes prepararte para varios posibles. La planificación de escenarios, nacida en los think tanks de la Guerra Fría y perfeccionada por Shell durante las crisis petroleras de los años 1970, es una forma de pensar sistemáticamente sobre la incertidumbre. En lugar de apostar por un pronóstico, construye historias coherentes sobre cómo podrían desarrollarse las cosas y luego prueba sus decisiones comparándolas con todas ellas. Así es como funciona la metodología, junto con escenarios en dominios clave.

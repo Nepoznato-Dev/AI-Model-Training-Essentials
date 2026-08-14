@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #علوم الأرض
 يدرس علم الأرض الكوكب الذي نعيش عليه - بنيته وعملياته وتاريخه والأنظمة التي تجعله صالحًا للسكن. وهي تشمل الجيولوجيا (الأرض الصلبة)، وعلم المحيطات (المحيطات)، والأرصاد الجوية (الغلاف الجوي والطقس)، وعلم المناخ (أنماط المناخ طويلة المدى). وما يوحد هذه المجالات هو فهم أن الأرض نظام ديناميكي: باطنها يتحرك باستمرار، وسطحها يعاد تشكيله، ويتفاعل غلافها الجوي ومحيطاتها بطرق معقدة.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #عالمی مذاہب اور تقابلی افسانہ
 عالمی مذاہب عقیدہ، عمل اور برادری کے بڑے نظام ہیں جنہوں نے ہزاروں سالوں سے انسانی تہذیب کو تشکیل دیا ہے۔ تقابلی افسانوی کہانیوں کا مطالعہ کرتی ہے جو مختلف ثقافتیں تخلیق، ہیروز، دیوتاؤں، اور وجود کے معنی کے بارے میں بتاتی ہیں — اور حیرت انگیز نمونے جو ہزاروں میل اور ہزار سال سے الگ ہونے والی روایات میں دہرائے جاتے ہیں۔ دونوں کو سمجھنا یہ سمجھنے کے لیے ضروری ہے کہ لوگ کیوں یقین کرتے ہیں کہ وہ کیا مانتے ہیں، ثقافتیں کیسے مختلف ہیں، اور کیا چیز انسانی تجربے کو متحد کرتی ہے۔
 ---

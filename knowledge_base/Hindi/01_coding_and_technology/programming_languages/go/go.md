@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जाना
 गो (अक्सर इसके मूल डोमेन नाम के बाद इसे "गोलंग" कहा जाता है) एक स्थिर रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जिसे रॉबर्ट ग्रिसेमर, रॉब पाइक और केन थॉम्पसन द्वारा Google पर डिज़ाइन किया गया है। इसे पहली बार 2012 में सिस्टम प्रोग्रामिंग के लिए एक बेहतर भाषा होने के स्पष्ट लक्ष्य के साथ जारी किया गया था - एक जो सी के प्रदर्शन को पायथन जैसी गतिशील भाषाओं की उत्पादकता के साथ जोड़ती है। गो अपनी सादगी, तेज़ संकलन, अंतर्निर्मित समवर्ती (गोरोइन और चैनल) और उत्कृष्ट टूलींग के लिए जाना जाता है।
 गो अधिकांश क्लाउड इंफ्रास्ट्रक्चर पारिस्थितिकी तंत्र को शक्ति प्रदान करता है: डॉकर, कुबेरनेट्स, टेराफॉर्म, प्रोमेथियस इत्यादि, और गो मानक लाइब्रेरी के HTTP सर्वर सभी गो में लिखे गए हैं। यह क्लाउड-नेटिव डेवलपमेंट, माइक्रोसर्विसेज और सीएलआई टूल्स के लिए डिफ़ॉल्ट भाषा बन गई है।

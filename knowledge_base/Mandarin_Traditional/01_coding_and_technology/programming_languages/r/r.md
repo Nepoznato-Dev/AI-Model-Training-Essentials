@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #R
 R是專為統計計算和資料分析而設計的程式語言和環境。它由奥克兰大学的 Ross Ihaka 和 Robert Gentleman 于 1993 年创建（因此称为“R”），是具有重大扩展的 S 语言的实现。 R 是開源的，由 R 核心團隊維護。它是學術界、醫療保健、金融和政府領域的統計學家、數據分析師和研究人員的標準工具。
 R 擅長資料操作、統計建模、視覺化和報告。其軟體包生態系統 (CRAN) 擁有超過 20,000 個軟體包，幾乎涵蓋了有史以來設計的所有統計方法。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # خط لوله داده و خرابی ETL
 خطوط لوله داده لوله‌کشی سازمان‌های مدرن هستند - آنها داده‌ها را از سیستم‌های منبع از طریق تبدیل به پایگاه‌های داده، انبارها و دریاچه‌ها منتقل می‌کنند که در آن‌ها برای تجزیه و تحلیل، یادگیری ماشینی و تصمیم‌گیری استفاده می‌شود. وقتی آنها کار می کنند، کسی متوجه نمی شود. هنگامی که آنها شکست می خورند، تصمیمات روی داده های قدیمی گرفته می شود، مدل ها روی زباله ها آموزش می بینند، گزارش ها اعداد غیرممکن را نشان می دهند و اعتماد به کل پلت فرم داده از بین می رود. خرابی خط لوله داده از رایج ترین و پرهزینه ترین خرابی ها در سازمان های فناوری است.
 ---

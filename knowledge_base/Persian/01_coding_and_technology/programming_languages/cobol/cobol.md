@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # COBOL
 COBOL (زبان تجاری متداول) یکی از قدیمی ترین زبان های برنامه نویسی است که هنوز مورد استفاده قرار می گیرد، اولین بار در سال 1959 توسعه یافت. این زبان برای پردازش داده های تجاری - سیستم های مالی، حقوق و دستمزد، بانکداری، بیمه و برنامه های دولتی طراحی شده است. دستور زبان انگلیسی COBOL برای مدیران تجاری و نه فقط برنامه نویسان قابل خواندن بود.
 COBOL علیرغم قدمتش، تقریباً 30 درصد از کل معاملات تجاری در سطح جهان را پردازش می کند. بانک‌های بزرگ، سازمان‌های دولتی (از جمله اداره تامین اجتماعی ایالات متحده) و شرکت‌های بیمه همچنان به سیستم‌های اصلی COBOL متکی هستند. ترس از اشکال Y2K در سال 1999 COBOL را به آگاهی عمومی بازگرداند و این زبان همچنان زیرساخت های حیاتی را در سراسر جهان اجرا می کند.

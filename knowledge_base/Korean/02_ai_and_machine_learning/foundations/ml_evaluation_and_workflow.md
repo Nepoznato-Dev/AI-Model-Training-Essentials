@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 머신러닝 평가 및 워크플로
 문제 프레이밍부터 프로덕션 모니터링까지, 측정항목, 검증, 디버깅에 초점을 맞춘 ML 수명주기에 대한 실용적인 가이드입니다.
 ---

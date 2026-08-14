@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্কেলা — সিনট্যাক্স রেফারেন্স
 এই নথিটি স্কালার জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে (2.x পার্থক্যের উপর নোট সহ 3.x)। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, টাইপ সিস্টেম, কার্যকরী প্রোগ্রামিং কনস্ট্রাক্ট এবং স্কালা ইডিয়মগুলির উপর ফোকাস করে মূল স্কালা রেফারেন্সের পরিপূরক।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # نظرية التحكم
 نظرية التحكم هي الرياضيات التي تجعل الأنظمة تتصرف بالطريقة التي تريدها. من منظمات الحرارة إلى الطيارين الآليين، ومن الأذرع الآلية إلى المفاعلات الكيميائية، تستشعر أنظمة التحكم وتقرر وتتصرف للحفاظ على السلوك المرغوب. يوفر هذا المجال أدوات صارمة لتحليل الاستقرار والأداء والمتانة - وهي المفاهيم التي انتقلت إلى التعلم المعزز وضبط المعلمات الفائقة والأنظمة التكيفية.
 ---

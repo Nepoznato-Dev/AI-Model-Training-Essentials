@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang & Elixir — 구문 참조
 이 문서는 Erlang과 Elixir에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 패턴 일치, 프로세스 관리, OTP 동작 및 내결함성 시스템 패턴에 중점을 두어 기본 참조를 보완합니다.
 ---

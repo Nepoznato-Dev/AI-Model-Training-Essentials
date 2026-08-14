@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কম্পিউটিং এর ভবিষ্যত
 কম্পিউটিংয়ের ভবিষ্যত এমন শক্তির দ্বারা তৈরি করা হচ্ছে যা গত 60 বছরের মৌলিক অনুমানকে চ্যালেঞ্জ করে। মুরের আইন - পর্যবেক্ষণ যে কম্পিউটিং শক্তি প্রায় প্রতি দুই বছরে দ্বিগুণ হয় - ধীর হচ্ছে। ভন নিউম্যান আর্কিটেকচার - আলাদা সিপিইউ এবং মেমরি - একটি "মেমরি প্রাচীর" আঘাত করছে। কোয়ান্টাম কম্পিউটিং ক্লাসিক্যাল কম্পিউটারের সমস্যা সমাধানের প্রতিশ্রুতি দেয়। নিউরোমর্ফিক চিপগুলি মস্তিষ্কের স্থাপত্যকে অনুকরণ করে। এজ কম্পিউটিং প্রক্রিয়াকরণকে কেন্দ্রীভূত ডেটা সেন্টার থেকে দূরে সরিয়ে দেয়। এবং AI কম্পিউটারগুলি কীসের জন্য তা পরিবর্তন করছে — যে সরঞ্জামগুলি নির্দেশাবলী কার্যকর করে এমন সিস্টেমগুলি যা শিখে, তৈরি করে এবং যুক্তি দেয়৷ এই পরিবর্তনগুলি বোঝা যে কেউ নির্মাণ, কেনা বা প্রযুক্তির উপর নির্ভর করার জন্য গুরুত্বপূর্ণ।
 ---

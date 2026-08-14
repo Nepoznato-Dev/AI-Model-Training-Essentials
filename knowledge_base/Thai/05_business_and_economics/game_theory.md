@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ทฤษฎีเกมและการคิดเชิงกลยุทธ์
 ทฤษฎีเกมคือการศึกษาทางคณิตศาสตร์ของการโต้ตอบเชิงกลยุทธ์ สถานการณ์ที่ผลลัพธ์ของคุณไม่ได้ขึ้นอยู่กับสิ่งที่คุณทำเท่านั้น แต่ยังขึ้นอยู่กับสิ่งที่ผู้อื่นทำด้วย มันใช้ได้กับทุกที่: การแข่งขันทางธุรกิจ ความสัมพันธ์ระหว่างประเทศ การประมูล การเจรจา ชีววิทยาเชิงวิวัฒนาการ และการตัดสินใจในชีวิตประจำวัน เช่น การเลือกเส้นทางผ่านการจราจร ข้อมูลเชิงลึกที่สำคัญคือ ผู้แสดงที่มีเหตุผลในสถานการณ์เชิงกลยุทธ์ไม่เพียงแต่ปรับกลยุทธ์ของตนเองให้เหมาะสมเท่านั้น แต่ยังคาดหวังถึงสิ่งที่ผู้อื่นจะทำ และคนอื่นๆ ก็ทำเช่นเดียวกัน
 ---

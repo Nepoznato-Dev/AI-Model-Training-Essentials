@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uzay Araştırmaları Yol Haritası
 ## Genel Bakış
 Uzay araştırmalarında yeni bir altın çağ yaşıyoruz. NASA'nın Artemis programı insanları Ay'a geri döndürüyor. SpaceX, Mars için tasarlanmış tamamen yeniden kullanılabilir bir roket inşa ediyor. Çin'in kendi iddialı ay ve Mars planları var. Ve giderek büyüyen özel şirketler grubu, uydu internetten uzay turizmine kadar alanı ticarete açıyor. İşte Ay'dan Mars'a ve ötesine giden yol haritası.

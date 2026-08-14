@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # যুক্তি এবং সমালোচনামূলক চিন্তা
 যুক্তি হল বৈধ যুক্তির অধ্যয়ন — কীভাবে শব্দযুক্ত আর্গুমেন্ট তৈরি করা যায় এবং ত্রুটিগুলি চিহ্নিত করা যায়। সমালোচনামূলক চিন্তা হল অনুমানকে প্রশ্ন করার, প্রমাণ মূল্যায়ন করা এবং সাবধানে যুক্তি দেওয়ার সুশৃঙ্খল অভ্যাস। এই দক্ষতাগুলি শুধুমাত্র গণিত এবং কম্পিউটার বিজ্ঞানে নয়, বরং দৈনন্দিন সিদ্ধান্ত গ্রহণ, বৈজ্ঞানিক গবেষণা এবং একটি তথ্য সমৃদ্ধ বিশ্বে নেভিগেট করার জন্য প্রয়োজনীয়।
 ---

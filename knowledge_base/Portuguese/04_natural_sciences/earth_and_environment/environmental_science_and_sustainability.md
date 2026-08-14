@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ciência Ambiental e Sustentabilidade
 A ciência ambiental aplica os métodos da física, da química, da biologia, da geologia e da economia à questão: "O que está a acontecer ao nosso planeta e o que pode ser feito a respeito?" É um campo interdisciplinar — uma convergência de múltiplas disciplinas — que contribui tanto para a sua profundidade analítica como para a sua relevância política.
 A tensão central na ciência ambiental é esta: a civilização humana depende da extracção de recursos do ambiente, mas a extracção desses recursos altera o ambiente de formas que podem minar os sistemas dos quais dependemos. Compreender esse ciclo de feedback é o campo inteiro em poucas palavras.

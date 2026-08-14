@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Projektowanie i architektura API
 API (interfejs programowania aplikacji) to sposób, w jaki komponenty oprogramowania komunikują się ze sobą. Dobrze zaprojektowane API jest intuicyjne, spójne, a praca z nim to przyjemność. Źle zaprojektowany powoduje zamieszanie, błędy i frustrację. Ten plik opisuje zasady, wzorce i praktyki tworzenia interfejsów API, z których programiści faktycznie chcą korzystać.
 ---

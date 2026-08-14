@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # টাইপস্ক্রিপ্ট — সিনট্যাক্স রেফারেন্স
 এই নথিটি TypeScript-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি টাইপ সিস্টেম, জেনেরিক, ইউটিলিটি প্রকার এবং উন্নত টাইপ-লেভেল প্রোগ্রামিং-এর উপর ফোকাস করে প্রধান টাইপস্ক্রিপ্ট রেফারেন্সের পরিপূরক।
 ---

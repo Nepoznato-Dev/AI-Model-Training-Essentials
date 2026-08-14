@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # اخلاق و حریم خصوصی داده ها
 اخلاق داده ها مطالعه چگونگی تأثیر جمع آوری، تجزیه و تحلیل و استقرار داده ها بر حقوق، استقلال و رفاه افراد است. حریم خصوصی نگرانی خاصی در مورد اینکه چه کسی اطلاعات شخصی را کنترل می کند و چگونه به اشتراک گذاشته می شود است. این موضوعات از بحث‌های دانشگاهی به اخبار صفحه اول منتقل شده‌اند - اجرای GDPR، نقض داده‌ها که میلیاردها کاربر را تحت تأثیر قرار می‌دهد، و افزایش آگاهی عمومی مبنی بر اینکه شیوه‌های داده‌ای شرکت‌های فناوری پیامدهای واقعی برای دموکراسی، برابری و آزادی فردی دارند.
 ---

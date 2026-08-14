@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ฮาสเคลล์
 Haskell เป็นภาษาการเขียนโปรแกรมที่ใช้งานได้จริง มีการพิมพ์แบบคงที่ และมีการประเมินอย่างเกียจคร้าน มาตรฐานครั้งแรกในปี 1990 (Haskell 90) และปรับปรุงผ่านหลายเวอร์ชัน (Haskell 2010 เป็นมาตรฐานปัจจุบัน) Haskell เป็นที่รู้จักในด้านความแม่นยำทางคณิตศาสตร์ ระบบประเภทที่ทรงพลัง (พร้อมคลาสประเภท monads และประเภทข้อมูลพีชคณิต) และเน้นความถูกต้องผ่านประเภท
 Haskell ไม่ใช่ภาษากระแสหลัก แต่มีอิทธิพลอย่างมาก แนวคิดเช่น monads การประเมินแบบขี้เกียจ และคลาสประเภทมีอิทธิพลต่อ Rust, Swift, Kotlin, Scala และ TypeScript Haskell ใช้ในด้านการเงิน (Standard Chartered, Barclays), ผู้เรียบเรียง (GHC) และการตรวจสอบอย่างเป็นทางการ

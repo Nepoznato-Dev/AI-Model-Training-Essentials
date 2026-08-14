@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ruggine
 Rust è un linguaggio di programmazione compilato e tipizzato staticamente rilasciato per la prima volta nel 2015, sviluppato originariamente da Graydon Hoare presso Mozilla. La promessa fondamentale di Rust è la **sicurezza della memoria senza garbage collection**. Raggiunge questo obiettivo attraverso il suo sistema di proprietà: un insieme di regole applicate in fase di compilazione che elimina intere categorie di bug (dereferenziazioni di puntatori null, gare di dati, buffer overflow, use-after-free) producendo codice veloce quanto C o C++.
 Rust è stato votato come il linguaggio di programmazione "più amato" nello Stack Overflow Developer Survey per diversi anni consecutivi. Viene sempre più utilizzato nella programmazione di sistemi, WebAssembly, strumenti CLI, infrastrutture cloud e come sostituto di C/C++ in contesti critici per la sicurezza. Il kernel Linux ora accetta il codice Rust.

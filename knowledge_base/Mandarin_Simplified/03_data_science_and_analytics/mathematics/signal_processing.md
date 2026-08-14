@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 信号处理
 信号处理是分析、修改和合成信号的科学——信号随时间、空间或频率变化的物理量的表示。音频、图像、视频、传感器数据、脑电波、股票价格——所有这些都是信号。信号处理的数学工具（傅里叶变换、滤波器、采样理论）是机器学习、通信、医学成像以及几乎所有与数据相关的领域的基础。
 ---

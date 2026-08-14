@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp 和 Clojure
 Lisp 是仍在使用的第二古老的高階程式語言（僅次於 Fortran），由 John McCarthy 於 1958 年創建。它開創了許多現在被視為理所當然的概念：垃圾收集、遞歸、樹資料結構、動態類型以及程式即資料的想法（同像性）。 Lisp 的顯著特徵是它的語法——程式碼被編寫為嵌套括號（S 表達式），這使得語言可以輕鬆解析，並透過**巨集**實現強大的元程式設計。
 Clojure 是 Rich Hickey 於 2007 年設計的現代 Lisp 方言。它運行在 JVM（也稱為 JavaScript 的 ClojureScript）上，支援函數式程式設計、不變性和並發性，並提供無縫的 Java 互通性。 Clojure 用於 Web 開發、資料處理和金融系統。

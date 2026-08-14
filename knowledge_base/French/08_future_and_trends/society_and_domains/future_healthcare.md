@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Soins de santé du futur
 ## Aperçu
 La médecine passe d'un modèle réactif – traiter les symptômes après leur apparition – à un modèle prédictif, personnalisé et de plus en plus préventif. La génomique est passée d'un projet de 3 milliards de dollars à un test de routine coûtant moins de 1 000 dollars. L’IA apprend à détecter les maladies grâce aux analyses avant que les médecins ne le puissent. Et la médecine régénérative transforme la science-fiction en essais cliniques. Voici ce qui se passe aux trois plus grandes frontières : la médecine personnalisée, la recherche sur la longévité et la médecine régénérative.

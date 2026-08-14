@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ฟิวเจอร์สเชิงกลยุทธ์
 ## ภาพรวม
 ยุคหลังสงครามเย็นของการครอบงำของอเมริกากำลังเปิดทางให้กับบางสิ่งที่ยุ่งเหยิง: โลกหลายขั้วที่อำนาจกระจาย การแข่งขันที่เข้มข้นขึ้นในด้านเทคโนโลยีและทรัพยากร และความท้าทายเช่นการเปลี่ยนแปลงสภาพภูมิอากาศและการระบาดใหญ่ที่ไม่เคารพพรมแดน ระเบียบระหว่างประเทศที่อิงกฎเกณฑ์ซึ่งสร้างขึ้นหลังปี 1945 กำลังได้รับการทดสอบจากทุกทิศทาง นี่คือสิ่งที่กำลังขยับ ใครกำลังเพิ่มขึ้น และจุดเสียดสีอยู่ที่ไหน

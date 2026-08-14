@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Topluluk Yöntemleri
 Topluluk yöntemleri, tek bir modelin tek başına başarabileceğinden daha iyi tahminler üretmek için birden fazla makine öğrenimi modelini birleştirir. Sezgi basittir: Her biri bir dereceye kadar doğru olan ancak farklı hatalar yapan birkaç modeliniz varsa, bunların tahminlerini birleştirmek bireysel hataları iptal edecek ve daha sağlam bir sonuç üretecektir. Topluluklar, çoğu rekabetçi makine öğrenimi çözümünün arkasında yer alır ve üretim sistemlerindeki en güvenilir tekniklerden bazıları olmaya devam etmektedir.
 ---

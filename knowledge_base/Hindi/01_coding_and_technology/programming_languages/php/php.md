@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #पीएचपी
 PHP (हाइपरटेक्स्ट प्रीप्रोसेसर) एक सर्वर-साइड स्क्रिप्टिंग भाषा है जो 1994 में रासमस लेरडॉर्फ द्वारा बनाई गई थी और पहली बार 1995 में जारी की गई थी। मूल रूप से गतिशील वेब पेज बनाने के लिए डिज़ाइन किया गया, PHP एक पूर्ण-विशेषताओं वाली सामान्य प्रयोजन भाषा में विकसित हुई है। यह वर्डप्रेस, फेसबुक (मूल रूप से), विकिपीडिया, स्लैक और लाखों अन्य साइटों सहित ज्ञात सर्वर-साइड भाषा वाली सभी वेबसाइटों में से लगभग 75% को संचालित करता है।
 आधुनिक PHP (8.x) 2000 के दशक की शुरुआत की PHP से बहुत अलग भाषा है। इसमें अब टाइप किए गए गुण, मिलान अभिव्यक्ति, एनम, फाइबर, केवल पढ़ने योग्य कक्षाएं और एक मजबूत प्रकार की प्रणाली है। डेवलपर्स के बीच इसकी प्रतिष्ठा (अक्सर विसंगतियों के लिए आलोचना) के बावजूद, PHP व्यावहारिक है, व्यापक रूप से तैनात है, और इसमें सुधार जारी है।

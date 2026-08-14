@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ada
 
 Ada is a statically typed, compiled programming language designed for safety-critical and high-integrity systems. Originally developed in the 1980s under contract with the U.S. Department of Defense (named after Ada Lovelace, considered the first computer programmer), Ada emphasises reliability, maintainability, and correctness. It was designed to replace the hundreds of programming languages then used by the DoD with a single, well-specified language.

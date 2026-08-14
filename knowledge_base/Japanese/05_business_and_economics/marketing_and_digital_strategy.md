@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # マーケティングとデジタル戦略
 マーケティングは、企業が価値を創造し、コミュニケーションし、顧客に提供する方法です。これには、顧客のニーズを理解し、それらのニーズを満たす製品を配置し、購入者を支持者に変える関係を構築するシステム全体が含まれます。デジタル革命により、マーケティングのツール、チャネル、スピードが変化しましたが、その基本は一貫したままです。
 ---

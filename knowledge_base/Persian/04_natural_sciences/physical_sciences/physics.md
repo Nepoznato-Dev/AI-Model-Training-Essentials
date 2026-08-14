@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فیزیک
 فیزیک اساسی ترین سوال در علم را مطرح می کند: ماده و انرژی چگونه رفتار می کنند؟ هر چیز دیگری - شیمی، زیست شناسی، مهندسی - بر اساس پاسخ ها است. فیزیک از مقیاس زیراتمی (مکانیک کوانتومی) تا مقیاس کیهانی (نسبیت عام) را در بر می گیرد، و اصول آن پایه همه علوم طبیعی دیگر است.
 ---

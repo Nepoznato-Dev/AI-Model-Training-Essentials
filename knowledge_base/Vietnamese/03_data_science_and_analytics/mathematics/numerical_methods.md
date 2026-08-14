@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Phương pháp số
 Phương pháp số là cầu nối giữa lý thuyết toán học và tính toán thực tế. Trong khi toán học thuần túy chứng minh rằng các nghiệm tồn tại thì các phương pháp số thực sự tính toán các câu trả lời gần đúng với độ chính xác hữu hạn. Mọi mô hình học máy, mô phỏng vật lý và quy trình phân tích dữ liệu cuối cùng đều dựa vào tính toán số. Hiểu các phương pháp này — độ chính xác, tính ổn định và hạn chế của chúng — là điều cần thiết để xây dựng phần mềm đáng tin cậy.
 ---

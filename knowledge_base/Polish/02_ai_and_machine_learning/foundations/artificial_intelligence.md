@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Sztuczna inteligencja
 Sztuczna inteligencja to próba zbudowania maszyn, które mogą robić rzeczy, które wymagałyby inteligencji, gdyby zrobił to człowiek: rozpoznawać twarze, rozumieć mowę, podejmować decyzje, pisać teksty, grać w gry, prowadzić samochody, diagnozować choroby. Dziedzina ta jest tak stara jak sama informatyka — Alan Turing pytał: „Czy maszyny potrafią myśleć?” w 1950 r., ale niedawny eksplozja możliwości (lata 20. XXI w.) uczyniła sztuczną inteligencję jedną z najważniejszych i najbardziej kwestionowanych technologii w historii ludzkości.
 ---

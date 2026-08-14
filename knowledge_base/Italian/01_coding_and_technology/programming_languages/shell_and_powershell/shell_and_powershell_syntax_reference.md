@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Shell e PowerShell: riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per Bash e PowerShell. Completa il riferimento principale alla Shell concentrandosi su modelli di scripting esaustivi, pipeline, gestione dei processi e idiomi di automazione per entrambe le shell.
 ---

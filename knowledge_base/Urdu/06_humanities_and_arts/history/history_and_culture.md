@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #تاریخ اور ثقافت
 تاریخ اس کی کہانی ہے جو انسانوں نے کیا ہے — وہ کامیابیاں، تباہیاں، ایجادات، اور نظریات جنہوں نے اس دنیا کو تشکیل دیا جس میں ہم آج رہتے ہیں۔ یہ صرف تاریخوں اور ناموں کی فہرست نہیں ہے۔ تاریخ کو سمجھنے سے آپ کو یہ سمجھنے میں مدد ملتی ہے کہ سرحدیں وہیں کیوں ہیں جہاں وہ ہیں، لوگ جو زبانیں بولتے ہیں وہ کیوں بولتے ہیں، کیوں کچھ ممالک دولت مند ہیں جبکہ دوسرے کیوں نہیں ہیں، اور کیوں تنازعات جو قدیم معلوم ہوتے ہیں اب بھی جل رہے ہیں۔
 یہ فائل پہلی تہذیبوں سے لے کر آج تک عالمی تاریخ کے اہم ادوار اور موضوعات کا احاطہ کرتی ہے۔

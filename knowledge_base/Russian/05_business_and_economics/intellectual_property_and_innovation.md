@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Интеллектуальная собственность и инновации
 Интеллектуальная собственность (ИС) относится к творениям ума — изобретениям, художественным произведениям, торговым маркам, образцам, коммерческой тайне — которые закон защищает от несанкционированного использования. Инновации – это процесс превращения идей в ценность. Законодательство об интеллектуальной собственности существует для того, чтобы сбалансировать два конкурирующих интереса: вознаграждение авторов (путем предоставления им временной монополии) и пользу обществу (путем обеспечения того, чтобы знания в конечном итоге стали бесплатными). Понимание интеллектуальной собственности необходимо каждому, кто создает продукты, создает контент, ведет бизнес или занимается исследованиями.
 ---

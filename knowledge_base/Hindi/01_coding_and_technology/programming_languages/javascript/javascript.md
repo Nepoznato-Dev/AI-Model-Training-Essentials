@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #जावास्क्रिप्ट
 जावास्क्रिप्ट एक गतिशील, व्याख्या की गई प्रोग्रामिंग भाषा है जिसे ब्रेंडन ईच ने 1995 में केवल 10 दिनों में बनाया था। मूल रूप से वेब पेजों में अन्तरक्रियाशीलता जोड़ने के लिए डिज़ाइन किया गया था, यह दुनिया में सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषा बन गई है। जावास्क्रिप्ट प्रत्येक वेब ब्राउज़र में, Node.js के माध्यम से सर्वर पर, डेस्कटॉप ऐप्स (इलेक्ट्रॉन), मोबाइल ऐप्स (रिएक्ट नेटिव) और यहां तक ​​कि एम्बेडेड सिस्टम में भी चलता है।
 यह भाषा इस मायने में अद्वितीय है कि यह अनिवार्य रूप से क्लाइंट-साइड वेब विकास के लिए एकमात्र विकल्प है - प्रत्येक ब्राउज़र मूल रूप से इसका समर्थन करता है। फुल-स्टैक जावास्क्रिप्ट (नोड.जेएस, डेनो, बन) के उदय के साथ मिलकर यह एकाधिकार इसे अपरिहार्य बनाता है।

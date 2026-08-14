@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # बैश और शैल स्क्रिप्टिंग चीट शीट
 बैश में शेल स्क्रिप्ट लिखने के लिए एक व्यावहारिक संदर्भ - अधिकांश लिनक्स और मैकओएस सिस्टम पर डिफ़ॉल्ट शेल। इसमें सिंटैक्स, सामान्य पैटर्न, टेक्स्ट प्रोसेसिंग और उपयोगी वन-लाइनर्स शामिल हैं।
 ---

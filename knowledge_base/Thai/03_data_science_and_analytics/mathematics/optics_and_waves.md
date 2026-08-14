@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ทัศนศาสตร์และคลื่น
 คลื่นมีอยู่ทุกหนทุกแห่ง: เสียง แสง น้ำ สัญญาณวิทยุ แอมพลิจูดของความน่าจะเป็นควอนตัม ความผันผวนของตลาดหุ้น และการสั่นสะเทือนของการเปิดใช้งานโครงข่ายประสาทเทียม ทัศนศาสตร์ — การศึกษาเรื่องแสง — เป็นศาสตร์เกี่ยวกับคลื่นที่ได้รับการพัฒนาอย่างดีที่สุด และเครื่องมือทางคณิตศาสตร์ของวิทยาศาสตร์ (การวิเคราะห์ฟูเรียร์ การรบกวน การเลี้ยวเบน) นำไปใช้กับปรากฏการณ์คลื่นทุกรูปแบบ การทำความเข้าใจคลื่นเป็นสิ่งจำเป็นสำหรับการประมวลผลสัญญาณ การวิเคราะห์ภาพ การสื่อสาร และเลเยอร์ทางกายภาพของเทคโนโลยีสมัยใหม่ทั้งหมด
 ---

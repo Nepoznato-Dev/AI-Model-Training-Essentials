@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 生物学の基礎
 生物学は生命の科学です。すべての生き物は、細胞で構成され、エネルギーを使用し、成長し、環境に反応し、繁殖し、進化するという特定の特徴を共有しています。生物学は単一細胞内の分子機構から生態系全体の相互作用にまで及び、医学、農業、バイオテクノロジー、保全の基礎となっています。
 ---

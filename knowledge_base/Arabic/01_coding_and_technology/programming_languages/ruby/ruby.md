@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #روبي
 روبي هي لغة برمجة ديناميكية ومفسرة وموجهة نحو الكائنات أنشأها يوكيهيرو "ماتز" ماتسوموتو وتم إصدارها لأول مرة في عام 1995 في اليابان. تم تصميم روبي مع التركيز على سعادة المبرمجين، حيث أن بناء الجملة الخاص بها أنيق وطبيعي، وقراءته تشبه اللغة الإنجليزية تقريبًا. كل شيء في روبي هو كائن، بما في ذلك الأنواع البدائية مثل الأعداد الصحيحة والقيم المنطقية. تشتهر روبي بإطار عمل الويب Ruby on Rails، الذي أحدث ثورة في تطوير الويب من خلال تعميم التقليد على التكوين والنماذج الأولية السريعة.
 بعيدًا عن Rails، تُستخدم لغة Ruby في البرمجة النصية والأتمتة وأدوات DevOps (Chef وPuppet) وكلغة للأغراض العامة. إن تركيبها التعبيري وقدرات البرمجة الفوقية القوية تجعل الكتابة ممتعة.

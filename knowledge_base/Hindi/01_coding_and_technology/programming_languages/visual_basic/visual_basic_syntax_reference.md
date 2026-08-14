@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # विज़ुअल बेसिक - सिंटैक्स संदर्भ
 यह दस्तावेज़ विज़ुअल बेसिक (VB.NET) के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, OOP फीचर्स, LINQ, async/प्रतीक्षा और .NET एकीकरण मुहावरों पर ध्यान केंद्रित करके मुख्य विज़ुअल बेसिक संदर्भ को पूरक करता है।
 ---

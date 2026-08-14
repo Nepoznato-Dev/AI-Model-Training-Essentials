@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # খাদ্য, কৃষি, এবং পুষ্টি
 খাদ্য মানুষের সবচেয়ে মৌলিক চাহিদা, এবং কৃষি সভ্যতার ভিত্তি। শিকার করা এবং সংগ্রহ করা থেকে কৃষিকাজে স্থানান্তর — প্রায় 10,000 বছর আগে নিওলিথিক বিপ্লব — যা মানুষকে শহর তৈরি করতে, লেখার বিকাশ করতে এবং যাকে আমরা "সভ্যতা" বলি যা কিছু তৈরি করতে দেয়। আজ, কৃষি বিশ্বব্যাপী কর্মশক্তির প্রায় 27% নিযুক্ত করে এবং প্রতিদিন প্রায় 10 ট্রিলিয়ন ক্যালোরি উত্পাদন করে। তবুও প্রায় 800 মিলিয়ন মানুষ এখনও ক্ষুধার্ত, যখন 2 বিলিয়নেরও বেশি ওজন বা স্থূল। সমস্যাটি উত্পাদন নয় - এটি বিতরণ, অ্যাক্সেস এবং পছন্দ।
 ---

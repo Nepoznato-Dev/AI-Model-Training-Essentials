@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 语音和音频处理
 语音和音频处理涵盖了让机器听到、理解、生成和操纵声音的技术。这包括语音识别（将口语单词转换为文本）、语音合成（将文本转换为口语单词）、说话人识别、音乐生成和环境声音理解。深度学习已经改变了这个领域——现代系统的语音识别精度达到了人类水平，并产生出奇自然的合成声音。
 ---

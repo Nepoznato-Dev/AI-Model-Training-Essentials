@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #علم الوراثة والجينوم
 علم الوراثة هو دراسة الوراثة، أي كيفية انتقال السمات من الآباء إلى الأبناء عبر الحمض النووي. علم الجينوم هو دراسة الجينوم بأكمله: جميع الجينات، والمناطق غير المشفرة، وكيفية تفاعلها، وكيف تختلف بين الأفراد والسكان. كان الانتقال من علم الوراثة إلى علم الجينوم مدفوعًا بتكنولوجيا التسلسل - فقد انتقلنا من دراسة جين واحد في كل مرة إلى قراءة جينومات كاملة في ساعات، وتوليد البيانات التي أحدثت تحولًا في الطب والزراعة والطب الشرعي وفهمنا للتطور.
 ---

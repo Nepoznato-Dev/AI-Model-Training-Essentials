@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 機器學習專案失敗
 机器学习项目的失败率惊人——行业估计表明 60-85% 的机器学习项目从未投入生产。失敗通常不在於演算法；而在於演算法。它们位于流程、数据、期望和组织环境中。了解機器學習專案失敗的原因對於任何建立機器學習系統的人來說都是至關重要的，因為失敗模式是可以預測的並且在很大程度上是可以避免的。
 ---

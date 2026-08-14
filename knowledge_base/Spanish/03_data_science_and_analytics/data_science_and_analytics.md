@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ciencia de datos y análisis
 La ciencia de datos es la disciplina de convertir datos sin procesar en información procesable. Se encuentra en la intersección de la estadística, la informática y la experiencia en el campo, y se ha vuelto esencial en todos los sectores, desde las finanzas hasta la atención médica. Este archivo recorre los conceptos, herramientas y flujos de trabajo principales que todo profesional debería conocer.
 ---

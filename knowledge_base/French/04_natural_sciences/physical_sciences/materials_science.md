@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Science des matériaux
 La science des matériaux est l'étude de la manière dont la structure d'un matériau (aux échelles atomique, microscopique et macroscopique) détermine ses propriétés et de la manière dont les méthodes de traitement peuvent être utilisées pour contrôler cette structure afin d'obtenir les performances souhaitées. C'est le domaine qui répond à des questions telles que : pourquoi l'acier est-il solide mais lourd ? Pourquoi le verre est-il transparent mais cassant ? Comment pouvons-nous fabriquer des batteries qui se chargent plus rapidement ? Quels matériaux survivront aux conditions sur Mars ? Chaque élément technologique que vous avez utilisé est constitué de matériaux, et les progrès technologiques nécessitent presque toujours des progrès dans les matériaux.
 ---

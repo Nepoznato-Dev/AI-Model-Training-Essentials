@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ماڈل کی اصلاح اور تعیناتی۔
 ایک بڑے AI ماڈل کو تربیت دینا ایک اہم کامیابی ہے، لیکن اسے موثر طریقے سے تعینات کرنا وہ جگہ ہے جہاں انجینئرنگ کی زیادہ تر کوششوں کی ضرورت ہوتی ہے۔ ایک ماڈل جو جواب دینے میں 10 سیکنڈ کا وقت لیتا ہے یا اسے آٹھ A100 GPUs کی ضرورت ہوتی ہے زیادہ تر حقیقی دنیا کی ایپلی کیشنز کے لیے ناقابل عمل ہے۔ ماڈل کی اصلاح قابل قبول معیار کو برقرار رکھتے ہوئے ماڈلز کو چھوٹا، تیز، اور زیادہ کفایت شعار بنانے کا عمل ہے۔ اس فائل میں کوانٹائزیشن، کٹائی، کشید، اور پروڈکشن میں ماڈلز کی تعیناتی کے لیے عملی ٹولز شامل ہیں۔
 ---

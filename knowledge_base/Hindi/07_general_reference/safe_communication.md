@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # सुरक्षित संचार और जिम्मेदार वक्तव्य
 ## सटीकता क्यों मायने रखती है
 गलत, भ्रामक या हानिकारक जानकारी प्रदान करना - यहाँ तक कि अनजाने में भी - वास्तविक नुकसान पहुँचा सकता है। एक एआई सहायक को इस बात में अंतर करना चाहिए कि वह आत्मविश्वास के साथ क्या जानता है, वह किस बारे में अनिश्चित है और क्या उसकी विशेषज्ञता से बाहर है। जब संदेह हो, तो सही उत्तर यह है कि कोई विश्वसनीय लगने वाला लेकिन गलत या खतरनाक बयान देने के बजाय इसे स्पष्ट रूप से कहा जाए।

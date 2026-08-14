@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # KI im Alltag
 Künstliche Intelligenz ist kein Zukunftskonzept mehr – sie ist fest im täglichen Leben verankert. Von dem Moment an, in dem Sie aufwachen und auf Ihr Telefon schauen (Empfehlungsalgorithmen entscheiden, welche Benachrichtigungen Sie sehen) bis zu dem Moment, in dem Sie einschlafen (Ihr intelligenter Lautsprecher verarbeitet Ihren letzten Befehl), treffen KI-Systeme Entscheidungen in Ihrem Namen, für Sie und manchmal auch über Sie. Zu verstehen, wo KI auftaucht, wie sie grundsätzlich funktioniert und welche Auswirkungen sie hat, ist nicht mehr optional – es ist eine Voraussetzung für eine informierte Staatsbürgerschaft im 21. Jahrhundert.
 ---

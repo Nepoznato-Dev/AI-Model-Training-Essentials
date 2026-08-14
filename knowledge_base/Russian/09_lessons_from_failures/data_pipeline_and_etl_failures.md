@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Сбои конвейера данных и ETL
 Конвейеры данных — это водопровод современных организаций: они перемещают данные из исходных систем посредством преобразований в базы данных, хранилища и озера, где они используются для аналитики, машинного обучения и принятия решений. Когда они работают, никто этого не замечает. Когда они терпят неудачу, решения принимаются на основе устаревших данных, модели тренируются на мусоре, отчеты показывают невозможные цифры, а доверие ко всей платформе данных подрывается. Сбои конвейеров данных являются одними из наиболее распространенных и дорогостоящих сбоев в технологических организациях.
 ---

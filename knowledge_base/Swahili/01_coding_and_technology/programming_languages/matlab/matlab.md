@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB
 MATLAB (Matrix Laboratory) ni lugha ya kiwango cha juu, iliyotafsiriwa ya programu na mazingira iliyoundwa kwa ajili ya kompyuta ya nambari, uendeshaji wa matrix, na uhandisi/matumizi ya kisayansi. Iliyoundwa na MathWorks na kutolewa kwa mara ya kwanza mnamo 1984, MATLAB ndio zana ya kawaida katika taaluma nyingi za uhandisi - uhandisi wa umeme, mifumo ya udhibiti, usindikaji wa mawimbi, usindikaji wa picha na mawasiliano.
 MATLAB inachanganya lugha yenye mwelekeo wa matrix na visanduku vingi vya zana (vifurushi vya nyongeza) na mazingira ya uigaji wa taswira ya Simulink. Inatumika sana katika taaluma na tasnia kwa algoriti za prototyping kabla ya kuzitekeleza katika msimbo wa uzalishaji.

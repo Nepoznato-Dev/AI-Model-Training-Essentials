@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্পিচ এবং অডিও প্রসেসিং
 বক্তৃতা এবং অডিও প্রক্রিয়াকরণ প্রযুক্তিগুলিকে কভার করে যা মেশিনগুলিকে শব্দ শুনতে, বুঝতে, উৎপন্ন করতে এবং ম্যানিপুলেট করতে দেয়৷ এর মধ্যে রয়েছে বক্তৃতা শনাক্তকরণ (কথ্য শব্দকে পাঠ্যে পরিণত করা), বক্তৃতা সংশ্লেষণ (পাঠ্যকে কথ্য শব্দে পরিণত করা), স্পীকার সনাক্তকরণ, সঙ্গীত তৈরি এবং পরিবেশগত শব্দ বোঝা। ক্ষেত্রটি গভীর শিক্ষার মাধ্যমে রূপান্তরিত হয়েছে — আধুনিক সিস্টেমগুলি বক্তৃতা সনাক্তকরণের জন্য মানব-স্তরের নির্ভুলতার সাথে যোগাযোগ করে এবং ভয়ঙ্কর প্রাকৃতিক সিন্থেটিক ভয়েস তৈরি করে।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডার্ট
 ডার্ট হল একটি ক্লায়েন্ট-অপ্টিমাইজড প্রোগ্রামিং ল্যাঙ্গুয়েজ যা Google দ্বারা বিকশিত হয়েছে, যা 2013 সালে প্রথম প্রকাশিত হয়েছিল। যদিও ডার্টকে প্রাথমিকভাবে ওয়েব ব্রাউজারগুলির জন্য একটি সম্ভাব্য জাভাস্ক্রিপ্ট প্রতিস্থাপন হিসাবে স্থান দেওয়া হয়েছিল, এটি **ফ্লটার** এর পিছনে ভাষা হিসাবে এর প্রাথমিক উদ্দেশ্য খুঁজে পেয়েছিল — মোবাইল, ওয়েব, ডেস্কটপ, এবং একটি একক কোডবা অ্যাপ্লিকেশন তৈরির জন্য Google এর ক্রস-প্ল্যাটফর্ম UI টুলকিট।
 ডার্ট আধুনিক ভাষার সেরা বৈশিষ্ট্যগুলিকে একত্রিত করে: এটি অবজেক্ট-ওরিয়েন্টেড, এতে ঐচ্ছিক টাইপিং রয়েছে (ডার্ট 3 থেকে শব্দ শূন্য নিরাপত্তা),`async`/`await`এর সাথে অ্যাসিঙ্ক্রোনাস প্রোগ্রামিং সমর্থন করে এবং স্থানীয় মেশিন কোড (মোবাইল/ডেস্কটপের জন্য) এবং জাভাস্ক্রিপ্ট (ওয়েব-এর জন্য) উভয়ের সাথে কম্পাইল করে।

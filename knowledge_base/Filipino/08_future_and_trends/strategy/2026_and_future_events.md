@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 2026 at Mga Panghinaharap na Kaganapan
 Ang 2026 ay isang taon kung saan maraming mga pangmatagalang plano ang nagtatagpo. Ito ang ika-250 anibersaryo ng US Declaration of Independence, isang midpoint checkpoint para sa UN Sustainable Development Goals (2020-2030), at isang milestone na taon para sa corporate roadmaps sa AI, space exploration, electric vehicles, at renewable energy. Maganap man o hindi ang mga partikular na hula, ang mga trend na humuhubog sa 2026 ay nagbibigay ng kapaki-pakinabang na larawan kung saan patungo ang mga bagay-bagay.
 ---

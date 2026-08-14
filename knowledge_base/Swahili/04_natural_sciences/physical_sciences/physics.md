@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Fizikia
 Fizikia inauliza swali la msingi zaidi katika sayansi: maada na nishati hufanyaje? Kila kitu kingine - kemia, biolojia, uhandisi - hujengwa juu ya majibu. Fizikia ni kati ya mizani ya subabatomic (quantum mechanics) hadi kipimo cha cosmic (uhusiano wa jumla), na kanuni zake ndizo msingi wa sayansi zingine zote asilia.
 ---

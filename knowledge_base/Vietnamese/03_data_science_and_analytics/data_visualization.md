@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Trực quan hóa dữ liệu
 Một biểu đồ được thiết kế tốt có thể tiết lộ các mẫu mà các bảng số ẩn giấu. Một thiết bị được thiết kế kém có thể gây nhầm lẫn, gây nhầm lẫn hoặc nhàm chán. Trực quan hóa dữ liệu là thủ công biến dữ liệu thành những câu chuyện trực quan để đưa ra quyết định. Tệp này bao gồm việc lựa chọn biểu đồ, nguyên tắc thiết kế, các lỗi phổ biến và các công cụ giúp thực hiện được tất cả.
 ---

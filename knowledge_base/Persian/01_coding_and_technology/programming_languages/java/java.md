@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جاوا
 جاوا یک زبان برنامه نویسی شی گرا و تایپ ایستا است که توسط جیمز گاسلینگ در Sun Microsystems ایجاد شد و در سال 1995 منتشر شد. فلسفه طراحی آن - "یک بار بنویس، هر کجا اجرا شود" (WORA) - از طریق ماشین مجازی جاوا (JVM) به دست می آید، که به کد جاوا کامپایل شده اجازه می دهد تا بر روی هر پلتفرم پیاده سازی JVM اجرا شود. جاوا یکی از پرکاربردترین زبان های برنامه نویسی در تاریخ است که به پشتوانه های سازمانی، برنامه های اندروید، سیستم های کلان داده و خدمات مالی نیرو می دهد.
 با وجود اینکه جاوا نزدیک به 30 سال سن دارد، همچنان به تکامل خود ادامه می دهد. جاوای مدرن (نسخه‌های 17+) شامل رکوردها، کلاس‌های مهر و موم شده، تطبیق الگو، رشته‌های مجازی و یک اکوسیستم در حال رشد است که با زبان‌های جدیدتر رقابت می‌کند.

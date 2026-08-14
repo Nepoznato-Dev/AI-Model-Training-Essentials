@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fortran – Syntaxreferenz
 Dieses Dokument bietet eine umfassende, strukturierte Syntaxreferenz für Modern Fortran (2008/2018). Es ergänzt die Hauptreferenz von Fortran, indem es sich auf umfassende Syntaxmuster, Array-Operationen, Module, OOP und Hochleistungsrechnen konzentriert.
 ---

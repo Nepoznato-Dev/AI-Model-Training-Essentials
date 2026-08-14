@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Julia
 Julia adalah bahasa pemrograman tingkat tinggi dan berkinerja tinggi yang dirancang untuk komputasi teknis dan ilmiah. Pertama kali dirilis pada tahun 2012 (1.0 pada tahun 2018), Julia diciptakan untuk memecahkan "masalah dua bahasa" — di mana para ilmuwan membuat prototipe dengan Python/R tetapi menulis ulang dalam C/C++/Fortran untuk kinerja produksi. Julia bertujuan untuk menjadi semudah Python tetapi secepat C.
 Julia menggunakan kompilasi just-in-time (JIT) melalui LLVM untuk mencapai kinerja mendekati C sambil mempertahankan nuansa interaktif dan dinamis. Ini memiliki dukungan kelas satu untuk komputasi paralel, pemrosesan terdistribusi, dan sistem tipe canggih dengan banyak pengiriman.

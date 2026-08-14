@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การจัดการห่วงโซ่อุปทานและการดำเนินงาน
 การจัดการห่วงโซ่อุปทานคือการประสานงานของกิจกรรมทั้งหมดที่เกี่ยวข้องกับการจัดหา การจัดซื้อ การแปลง และการขนส่ง ตั้งแต่วัตถุดิบไปจนถึงผลิตภัณฑ์สำเร็จรูปที่อยู่ในมือของลูกค้า การจัดการการดำเนินงานคือการดำเนินการระบบการผลิตแบบวันต่อวัน พวกเขาร่วมกันพิจารณาว่าบริษัทสามารถส่งมอบผลิตภัณฑ์ที่ถูกต้อง ในเวลาที่เหมาะสม ต้นทุนที่เหมาะสม และมีคุณภาพที่เหมาะสมได้หรือไม่ การแพร่ระบาด การขาดแคลนชิป และการอุดตันของคลองได้แสดงให้เห็นว่าห่วงโซ่อุปทานทั่วโลกมีความเปราะบางและเชื่อมโยงถึงกันเพียงใด
 ---

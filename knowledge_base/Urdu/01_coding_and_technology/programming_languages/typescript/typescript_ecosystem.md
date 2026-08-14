@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # TypeScript — ایکو سسٹم اور ٹولنگ گائیڈ
 یہ گائیڈ TypeScript ایکو سسٹم میں ضروری ٹولز، فریم ورک اور انفراسٹرکچر کا احاطہ کرتا ہے۔ TypeScript اپنے ایکو سسٹم کا زیادہ تر حصہ JavaScript کے ساتھ شیئر کرتا ہے لیکن اس کے اپنے مخصوص ٹولز ہیں۔
 ---

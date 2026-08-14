@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Scala
 Scala (Lugha Inayobadilika) ni lugha ya programu iliyochapwa kitakwimu, iliyokusanywa ambayo inachanganya dhana za upangaji zinazolenga kitu na utendakazi. Iliyoundwa na Martin Odersky na kutolewa kwa mara ya kwanza mnamo 2004, Scala inaendesha kwenye JVM (pia Scala.js kwa JavaScript na Scala Native). Iliundwa kushughulikia kitenzi cha Java huku ikidumisha mwingiliano kamili wa Java.
 Scala ndiyo lugha inayotumika nyuma ya Apache Spark (mfumo mkubwa wa kuchakata data), na inatumika sana katika uhandisi wa data, mifumo iliyosambazwa, na huduma za nyuma. Kampuni kama Twitter (sasa X), LinkedIn, Netflix, na The Guardian hutumia Scala.

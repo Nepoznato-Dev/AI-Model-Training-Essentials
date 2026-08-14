@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tôn giáo thế giới và thần thoại so sánh
 Tôn giáo thế giới là những hệ thống tín ngưỡng, thực hành và cộng đồng chính đã định hình nền văn minh nhân loại trong hàng nghìn năm. Thần thoại so sánh nghiên cứu những câu chuyện mà các nền văn hóa khác nhau kể về sự sáng tạo, các anh hùng, các vị thần và ý nghĩa của sự tồn tại - cũng như những khuôn mẫu nổi bật tái diễn trong các truyền thống cách nhau hàng ngàn dặm và thiên niên kỷ. Hiểu cả hai là điều cần thiết để hiểu lý do tại sao mọi người tin vào những gì họ tin, các nền văn hóa khác nhau như thế nào và điều gì hợp nhất trải nghiệm của con người.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Matematyka
 Matematyka to nie tylko przedmiot, którego uczy się w szkole — stanowi podstawę niemal każdej dziedziny techniki. Fizyka używa go do opisu wszechświata. Informatyka wykorzystuje go do projektowania algorytmów. Uczenie maszynowe wykorzystuje je do optymalizacji wag. Finanse wykorzystują to do wyceny ryzyka. Opanowanie każdej gałęzi nie jest konieczne, ale zrozumienie krajobrazu – i wiedza, gdzie każda gałąź ma zastosowanie – ułatwia zrozumienie innych tematów.
 ---

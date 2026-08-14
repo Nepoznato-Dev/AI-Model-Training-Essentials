@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C#
 Ang C# (binibigkas na "C-sharp") ay isang moderno, object-oriented, type-safe na programming language na binuo ng Microsoft sa pamumuno ni Anders Hejlsberg at unang inilabas noong 2002. Gumagana ito sa .NET platform at idinisenyo upang pagsamahin ang kapangyarihan ng C++ sa pagiging produktibo ng Visual Basic. Ngayon, ang C# ay isang versatile, cross-platform na wika na ginagamit para sa mga web application (ASP.NET), desktop software (Windows), game development (Unity), mobile app (MAUI), cloud services (Azure), at higit pa.
 Ang C# ay patuloy na nasisipsip ang pinakamahusay na mga ideya mula sa iba pang mga wika — LINQ, async/wait, mga tala, pagtutugma ng pattern — ginagawa itong isa sa mga pinaka-mayaman sa tampok at madaling gamitin na mga wika na magagamit.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 学习科学和教育学
 学习科学是对人们如何学习的跨学科研究——借鉴心理学、神经科学、教育和认知科学。教育学是教学的实践和方法。他们共同解决了与任何教学、培训、指导或设计教育内容的人相关的问题：什么方法可以帮助人们有效学习？哪些常见的学习方法效率低下？应如何构建教学以实现最佳保留和转移？
 ---

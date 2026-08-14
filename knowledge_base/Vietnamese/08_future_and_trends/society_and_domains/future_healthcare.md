@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chăm sóc sức khỏe tương lai
 ## Tổng quan
 Y học đang chuyển từ mô hình phản ứng - điều trị các triệu chứng sau khi chúng xuất hiện - sang mô hình mang tính dự đoán, cá nhân hóa và ngày càng phòng ngừa. Genomics đã chuyển từ một dự án trị giá 3 tỷ USD sang một cuộc thử nghiệm định kỳ trị giá dưới 1.000 USD. AI đang học cách phát hiện bệnh qua quá trình quét trước khi bác sĩ có thể. Và y học tái tạo đang biến khoa học viễn tưởng thành thử nghiệm lâm sàng. Đây là những gì đang diễn ra trên ba lĩnh vực lớn nhất: y học cá nhân hóa, nghiên cứu tuổi thọ và y học tái tạo.

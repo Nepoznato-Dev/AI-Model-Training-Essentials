@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fortran
 Fortran（公式翻譯）是仍在廣泛使用的最古老的高級程式語言，最初由 IBM 於 1957 年開發，用於科學和工程計算。儘管歷史悠久，但現代 Fortran (Fortran 2008/2018/2023) 仍然是一種功能強大的高效能語言，廣泛用於數值天氣預報、計算流體動力學、物理模擬、金融建模和高效能運算 (HPC)。世界上許多最快的超級電腦都運行 Fortran 程式碼。
 該語言與早期相比已經發生了顯著的發展。現代 Fortran 具有模組、衍生型別、泛型流程、coarray（平行程式設計）以及與 C 的互通性。它仍然是許多性能至關重要的科學計算應用程式的首選語言。

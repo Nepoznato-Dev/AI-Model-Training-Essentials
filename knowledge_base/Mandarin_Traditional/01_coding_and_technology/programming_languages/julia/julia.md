@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 茱莉亞
 Julia 是一種高階、高效能程式語言，專為技術和科學運算而設計。 Julia 於 2012 年首次發布（2018 年 1.0 版），旨在解決「雙語問題」—科學家使用 Python/R 建立原型，但為了提高生產效能而使用 C/C++/Fortran 重寫。 Julia 的目標是像 Python 一樣簡單，但像 C 一樣快。
 Julia 透過 LLVM 使用即時 (JIT) 編譯來實現接近 C 的效能，同時保持互動式、動態的感覺。它對平行計算、分散式處理以及具有多重調度的複雜類型系統具有一流的支援。

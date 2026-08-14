@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Triết học và tư duy phản biện
 Triết học là nghiên cứu có hệ thống các câu hỏi cơ bản về kiến ​​thức, thực tại và sự tồn tại. Nó cung cấp khuôn khổ để đánh giá những gì được coi là kiến ​​thức, những gì đáng làm và cách phân biệt những lập luận hợp lý với những lập luận yếu kém. Tư duy phê phán là ứng dụng thực tế của khuôn khổ này: kỹ năng phân tích các tuyên bố, xác định lý do thiếu sót và đưa ra quyết định sáng suốt hơn. Hồ sơ này bao gồm các ý tưởng chính, các công cụ để đánh giá chúng và những thành kiến ​​về nhận thức ảnh hưởng đến mọi người.
 ---

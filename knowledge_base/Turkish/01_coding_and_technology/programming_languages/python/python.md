@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Python
 Python, Guido van Rossum tarafından oluşturulan ve ilk kez 1991'de piyasaya sürülen üst düzey, yorumlanan, genel amaçlı bir programlama dilidir. Önemli girintiler ve düz İngilizceye yakın okunan temiz bir sözdizimi aracılığıyla kodun okunabilirliğine öncelik verir. Python dinamik olarak yazılmıştır, çöp toplanmıştır ve prosedürel, nesne yönelimli ve işlevsel programlama dahil olmak üzere birden fazla programlama paradigmasını destekler.
 Günümüzde Python, AI/ML, veri bilimi, bilimsel hesaplama ve otomasyon alanlarında baskın dil olmasına rağmen yeni başlayanlar için en iyi dillerden biri olmaya devam ediyor. Bu ikili kimlik (ilk komut dosyası için yeterince basit, büyük dil modellerini eğitmeye yetecek kadar güçlü) onu farklı kılan şeydir.

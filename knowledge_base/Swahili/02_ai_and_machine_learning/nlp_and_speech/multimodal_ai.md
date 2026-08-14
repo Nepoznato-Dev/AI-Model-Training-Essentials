@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Multimodal AI
 Mifumo ya Multimodal AI huchakata na kuchanganya taarifa kutoka kwa aina nyingi za data - maandishi, picha, sauti, video, na zaidi - kwa wakati mmoja. Ingawa mifumo ya awali ya AI kwa kawaida ilikuwa ya mtindo mmoja (maandishi pekee, picha pekee), mifumo ya kisasa yenye uwezo zaidi ni ya aina nyingi. GPT-4V inasoma picha na maandishi pamoja; Gemini huchakata maandishi, picha, sauti na video asili; na mifumo kama Sora hutoa video kutoka kwa maelezo ya maandishi. Faili hii inashughulikia jinsi AI ya multimodal inavyofanya kazi, usanifu nyuma yake, na kwa nini kuchanganya modaliti ni nguvu sana.
 ---

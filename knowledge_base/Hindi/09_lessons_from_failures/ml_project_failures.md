@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # मशीन लर्निंग प्रोजेक्ट विफलताएँ
 मशीन लर्निंग परियोजनाएँ चिंताजनक दर से विफल होती हैं - उद्योग का अनुमान है कि 60-85% एमएल परियोजनाएँ कभी उत्पादन तक नहीं पहुँच पाती हैं। विफलताएँ आमतौर पर एल्गोरिदम में नहीं होती हैं; वे प्रक्रिया, डेटा, अपेक्षाओं और संगठनात्मक संदर्भ में हैं। यह समझना कि एमएल प्रोजेक्ट विफल क्यों होते हैं, एमएल सिस्टम बनाने वाले किसी भी व्यक्ति के लिए आवश्यक है, क्योंकि विफलता मोड पूर्वानुमान योग्य हैं और काफी हद तक टाले जाने योग्य हैं।
 ---

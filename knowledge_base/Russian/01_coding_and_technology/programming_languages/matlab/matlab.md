@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # МАТЛАБ
 MATLAB (Matrix Laboratory) — это интерпретируемый язык программирования высокого уровня и среда, предназначенная для численных вычислений, матричных операций и инженерных/научных приложений. MATLAB, разработанный MathWorks и впервые выпущенный в 1984 году, является стандартным инструментом во многих инженерных дисциплинах — электротехнике, системах управления, обработке сигналов, обработке изображений и коммуникации.
 MATLAB сочетает в себе мощный матрично-ориентированный язык с обширным набором инструментов (дополнительными пакетами) и средой визуального моделирования Simulink. Он широко используется в научных кругах и промышленности для прототипирования алгоритмов перед их внедрением в производственный код.

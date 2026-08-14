@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Evaluation and Workflow"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Đánh giá và quy trình làm việc của Machine Learning
 Hướng dẫn thực tế về vòng đời ML — từ việc định khung vấn đề đến giám sát sản xuất — tập trung vào số liệu, xác thực và gỡ lỗi.
 ---

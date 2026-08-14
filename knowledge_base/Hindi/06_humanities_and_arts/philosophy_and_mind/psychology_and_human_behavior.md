@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # मनोविज्ञान और मानव व्यवहार
 मनोविज्ञान इस बात का विज्ञान है कि लोग कैसे और क्यों सोचते हैं, महसूस करते हैं और जिस तरह से कार्य करते हैं। यह दिमाग से पढ़ना नहीं है, और यह सामान्य ज्ञान नहीं है - हालांकि यह कभी-कभी सामान्य ज्ञान के सुझाव की पुष्टि करता है और कभी-कभी इसका पूरी तरह से खंडन करता है। मनोविज्ञान हर अन्य विज्ञान की तरह ही वैज्ञानिक पद्धति का उपयोग करता है: निरीक्षण करें, परिकल्पना करें, परीक्षण करें, संशोधित करें। जो चीज़ इसे चुनौतीपूर्ण बनाती है वह यह है कि इसका विषय - मानव मन - सबसे जटिल वस्तु है जिसके बारे में हम जानते हैं।
 यह फ़ाइल मनोविज्ञान के प्रमुख क्षेत्रों को कवर करती है: हम कैसे सोचते हैं, हम कैसे विकसित होते हैं, हम दूसरों से कैसे प्रभावित होते हैं, क्या गलत होता है, और इसके बारे में क्या किया जा सकता है।

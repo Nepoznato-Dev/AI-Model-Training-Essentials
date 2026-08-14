@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mifumo Iliyoingizwa na IoT
 Mifumo iliyopachikwa ni kompyuta iliyofichwa ndani ya vifaa vingine - kitengo cha kudhibiti injini ya gari lako, kidhibiti cha mashine yako ya kuosha, kidhibiti kidogo katika kidhibiti mahiri cha halijoto. Tofauti na kompyuta za madhumuni ya jumla, zimeundwa kwa kazi mahususi, mara nyingi zikiwa na vizuizi vikali vya nguvu, kumbukumbu, na kasi ya kuchakata. Mtandao wa Mambo (IoT) hupanua mifumo iliyopachikwa kwa kuiunganisha kwenye mitandao, kuwezesha ufuatiliaji, udhibiti na ukusanyaji wa data kwa mbali. Kwa pamoja, zinawakilisha mabilioni ya vifaa vya kompyuta vinavyoingiliana na ulimwengu halisi.
 ---

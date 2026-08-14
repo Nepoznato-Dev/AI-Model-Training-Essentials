@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wnioskowanie przyczynowe
 Wnioskowanie przyczynowe to nauka zajmująca się ustalaniem, czy jedna rzecz faktycznie powoduje drugą – a nie tylko to, czy są one skorelowane. Korelacja mówi, że dwie zmienne poruszają się razem. Przyczynowość mówi ci, że zmiana jednego spowoduje zmianę drugiego. To rozróżnienie ma ogromne znaczenie w medycynie (czy ten lek działa?), polityce (czy ta interwencja zmniejsza biedę?), biznesie (czy ta kampania reklamowa zwiększa sprzedaż?) i nauce (czy ten mechanizm wyjaśnia zjawisko?).
 ---

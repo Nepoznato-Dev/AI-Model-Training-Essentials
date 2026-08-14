@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #Lỗ hổng bảo mật
 Tài liệu này tổng hợp các lỗ hổng bảo mật phổ biến trong phát triển phần mềm, bao gồm các cuộc tấn công tiêm nhiễm, thực hành mã không an toàn và các lỗi bảo mật.
 ---

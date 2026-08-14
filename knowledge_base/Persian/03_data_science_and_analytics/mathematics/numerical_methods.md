@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # روشهای عددی
 روش های عددی پلی بین تئوری ریاضی و محاسبات عملی هستند. در حالی که ریاضیات محض ثابت می کند که راه حل ها وجود دارند، روش های عددی در واقع پاسخ های تقریبی را با دقت محدود محاسبه می کنند. هر مدل یادگیری ماشین، شبیه‌سازی فیزیک و خط لوله تجزیه و تحلیل داده‌ها در نهایت بر محاسبات عددی متکی است. درک این روش ها - دقت، ثبات و محدودیت های آنها - برای ساختن نرم افزار قابل اعتماد ضروری است.
 ---

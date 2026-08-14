@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #গণিত
 গণিত শুধুমাত্র স্কুলে অধ্যয়ন করা একটি বিষয় নয় - এটি প্রায় প্রতিটি প্রযুক্তিগত ক্ষেত্রের উপর ভিত্তি করে। পদার্থবিদ্যা মহাবিশ্ব বর্ণনা করতে এটি ব্যবহার করে। কম্পিউটার বিজ্ঞান অ্যালগরিদম ডিজাইন করতে এটি ব্যবহার করে। মেশিন লার্নিং ওজন অপ্টিমাইজ করতে এটি ব্যবহার করে। ফাইন্যান্স মূল্য ঝুঁকিতে এটি ব্যবহার করে। প্রতিটি শাখায় দক্ষতার প্রয়োজন নেই, তবে ল্যান্ডস্কেপ বোঝা — এবং প্রতিটি শাখা কোথায় প্রযোজ্য তা জানা — অন্যান্য বিষয়গুলিকে সহজে উপলব্ধি করে৷
 ---

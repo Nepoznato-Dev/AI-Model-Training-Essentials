@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aksesibilitas dan Desain Inklusif
 Aksesibilitas (sering disingkat a11y) adalah praktik membuat perangkat lunak dapat digunakan oleh semua orang — termasuk penyandang disabilitas penglihatan, pendengaran, motorik, kognitif, dan neurologis. Ini adalah persyaratan hukum di banyak yurisdiksi dan merupakan praktik teknik standar. Perangkat lunak yang dapat diakses adalah perangkat lunak yang lebih baik untuk semua orang, karena keputusan desain yang mendukung pengguna penyandang disabilitas — struktur yang jelas, navigasi keyboard, kontras yang memadai, teks yang dapat dibaca — meningkatkan pengalaman bagi semua pengguna.
 ---

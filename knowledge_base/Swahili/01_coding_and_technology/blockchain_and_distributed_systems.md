@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Blockchain na Mifumo Iliyosambazwa
 Blockchain ni aina mahususi ya mfumo unaosambazwa - leja iliyogatuliwa, ya nyongeza pekee ambapo rekodi (vizuizi) huunganishwa kwa heshi za kriptografia. Mifumo iliyosambazwa ni uwanja mpana wa kufanya kompyuta nyingi kufanya kazi pamoja kama moja. Dhana zote mbili ni muhimu kwa kuelewa miundombinu ya kisasa, kutoka sarafu ya cryptocurrency hadi hifadhidata iliyosambazwa hadi algoriti za makubaliano zinazotumia huduma za kimataifa.
 ---

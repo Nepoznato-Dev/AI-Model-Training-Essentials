@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #আদা
 Ada হল একটি স্ট্যাটিকলি টাইপ করা, সংকলিত প্রোগ্রামিং ভাষা যা নিরাপত্তা-সমালোচনামূলক এবং উচ্চ-অখণ্ডতা সিস্টেমের জন্য ডিজাইন করা হয়েছে। মূলত 1980 এর দশকে মার্কিন প্রতিরক্ষা বিভাগের সাথে চুক্তির অধীনে বিকশিত হয়েছিল (এডা লাভলেসের নামে নামকরণ করা হয়েছে, প্রথম কম্পিউটার প্রোগ্রামার হিসাবে বিবেচিত), অ্যাডা নির্ভরযোগ্যতা, রক্ষণাবেক্ষণযোগ্যতা এবং সঠিকতার উপর জোর দেয়। এটি একটি একক, সুনির্দিষ্ট ভাষা দিয়ে DoD দ্বারা ব্যবহৃত শত শত প্রোগ্রামিং ভাষা প্রতিস্থাপন করার জন্য ডিজাইন করা হয়েছিল।
 Ada বিমান চালনা (ফ্লাই-বাই-ওয়্যার সিস্টেম), স্পেস (ESA এবং NASA), প্রতিরক্ষা (ক্ষেপণাস্ত্র নির্দেশিকা, রাডার), রেল পরিবহন, এবং চিকিৎসা ডিভাইসে ব্যবহৃত হয় — যেখানে সফ্টওয়্যার ব্যর্থতার কারণে জীবন ব্যয় হতে পারে।

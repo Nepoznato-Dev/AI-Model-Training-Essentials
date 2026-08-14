@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho TypeScript. Nó bổ sung cho tham chiếu TypeScript chính bằng cách tập trung vào hệ thống kiểu, khái quát, kiểu tiện ích và lập trình cấp độ nâng cao.
 ---

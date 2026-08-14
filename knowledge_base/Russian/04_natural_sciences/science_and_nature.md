@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Наука и природа
 Наука — это то, как мы выясняем, что на самом деле делает Вселенная — не то, что мы предполагаем, что она делает, не то, что говорят древние тексты, а то, что показывают тщательные наблюдения и эксперименты. Научный метод в принципе прост: наблюдайте за чем-то, формируйте гипотезу, проверяйте ее и пересматривайте свое понимание на основе результатов. Сила науки заключается в том, что она самокорректируется. Каждое утверждение является предварительным и принимается только до тех пор, пока не появятся более убедительные доказательства.
 Этот файл охватывает основные отрасли естествознания: физику, химию, биологию, а также науки о Земле и космосе. Думайте об этом как о карте физического мира.

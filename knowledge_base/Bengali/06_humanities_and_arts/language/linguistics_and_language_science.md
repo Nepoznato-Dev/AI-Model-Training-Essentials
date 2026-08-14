@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভাষাবিজ্ঞান এবং ভাষা বিজ্ঞান
 ভাষাবিজ্ঞান হল ভাষার বৈজ্ঞানিক অধ্যয়ন — এর গঠন, অর্থ, ব্যবহার, অধিগ্রহণ এবং বিবর্তন। ভাষা মানুষের যোগাযোগের একটি সংজ্ঞায়িত বৈশিষ্ট্য: এটি অসীম উত্পাদনশীল (বক্তারা এমন বাক্য তৈরি করতে এবং বুঝতে পারে যা তারা আগে কখনও সম্মুখীন হয়নি), এটি সাংস্কৃতিকভাবে প্রেরণ করা হয় (এটি সম্পূর্ণ সহজাত নয় বরং শেখা হয়), এবং এটি ক্রমাগত বিকশিত হয়। ভাষা কীভাবে কাজ করে তা বোঝা প্রত্যেকের জন্য প্রাসঙ্গিক যে ভাষা প্রযুক্তি তৈরি করা, শেখানো, অনুবাদ করা বা আরও কার্যকরভাবে যোগাযোগ করার জন্য কাজ করা।
 ---

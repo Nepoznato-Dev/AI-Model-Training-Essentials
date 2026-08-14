@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Этика данных и конфиденциальность
 Этика данных — это исследование того, как сбор, анализ и использование данных влияют на права, автономию и благополучие людей. Конфиденциальность — это особый вопрос о том, кто контролирует личную информацию и как она передается. Эти темы переместились из академических дебатов на первые полосы новостей — соблюдение GDPR, утечки данных, затрагивающие миллиарды пользователей, и растущее осознание общественностью того, что практика обработки данных технологическими компаниями имеет реальные последствия для демократии, равенства и свободы личности.
 ---

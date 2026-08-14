@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml — Riferimento alla sintassi
 Questo documento fornisce un riferimento completo e strutturato alla sintassi per OCaml (4.x/5.x). Completa il riferimento principale di OCaml concentrandosi su modelli di sintassi esaustivi, tipi di dati algebrici, corrispondenza di modelli, moduli e idiomi di programmazione funzionale.
 ---

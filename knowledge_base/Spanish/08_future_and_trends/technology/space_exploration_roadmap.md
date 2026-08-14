@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hoja de ruta de exploración espacial
 ## Descripción general
 Estamos viviendo una nueva era dorada de la exploración espacial. El programa Artemis de la NASA está devolviendo humanos a la Luna. SpaceX está construyendo un cohete totalmente reutilizable diseñado para Marte. China tiene sus propios y ambiciosos planes lunares y marcianos. Y una constelación cada vez mayor de empresas privadas está abriendo espacio al comercio, desde Internet satelital hasta el turismo espacial. Aquí está la hoja de ruta, desde la Luna hasta Marte y más allá.

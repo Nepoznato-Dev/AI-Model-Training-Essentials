@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การวิเคราะห์เชิงพื้นที่
 การวิเคราะห์เชิงพื้นที่เป็นกระบวนการตรวจสอบข้อมูลที่มีองค์ประกอบทางภูมิศาสตร์ เช่น พิกัด ที่อยู่ ขอบเขต หรือข้อมูลใดๆ ที่เชื่อมโยงกับตำแหน่งบนโลก โดยตอบคำถามต่างๆ เช่น "ลูกค้าของเราอยู่ที่ไหน" "เส้นทางใดที่เหมาะสมที่สุด" และ "การใช้ที่ดินเปลี่ยนแปลงไปตามกาลเวลาอย่างไร" ชุดข้อมูลทุกชุดมีมิติเชิงพื้นที่ และการทำความเข้าใจจะปลดล็อกข้อมูลเชิงลึกที่การวิเคราะห์ทางสถิติเพียงอย่างเดียวพลาดไป
 ---

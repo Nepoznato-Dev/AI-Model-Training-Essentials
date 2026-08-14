@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 行動開發
 行動開發是為智慧型手機和平板電腦建立應用程式的實踐——主要針對 iOS (Apple) 和 Android (Google)。它涵蓋了從小螢幕的 UI 設計到管理電池壽命、處理網路不穩定以及透過商店分發應用程式的一切。該領域已經顯著成熟，跨平台框架現在在大多數用例中與本機開發競爭。
 ---

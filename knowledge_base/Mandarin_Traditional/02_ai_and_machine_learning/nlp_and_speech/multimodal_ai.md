@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 多模態人工智慧
 多模式人工智慧系統同時處理和組合來自多種類型資料（文字、圖像、音訊、視訊等）的資訊。雖然早期的人工智慧系統通常是單模態（僅文字、僅圖像），但最強大的現代系統是多模態的。 GPT-4V同時讀取圖像和文字； Gemini 原生處理文字、圖像、音訊和視訊；像 Sora 這樣的系統可以根據文字描述產生視訊。該文件介紹了多模式人工智慧的工作原理、背後的架構，以及為什麼組合模式如此強大。
 ---

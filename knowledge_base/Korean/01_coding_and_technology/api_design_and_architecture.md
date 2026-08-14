@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # API 디자인 및 아키텍처
 API(응용 프로그래밍 인터페이스)는 소프트웨어 구성 요소가 서로 통신하는 방식입니다. 잘 설계된 API는 직관적이고 일관되며 작업하기에 즐겁습니다. 제대로 설계되지 않은 것은 혼란, 버그, 좌절을 야기합니다. 이 파일은 개발자가 실제로 사용하고 싶은 API를 구축하기 위한 원칙, 패턴 및 사례를 다루고 있습니다.
 ---

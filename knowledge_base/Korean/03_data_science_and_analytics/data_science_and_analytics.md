@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 데이터 과학 및 분석
 데이터 과학은 원시 데이터를 실행 가능한 통찰력으로 전환하는 분야입니다. 이는 통계, 컴퓨터 과학 및 도메인 전문 지식의 교차점에 있으며 금융에서 의료에 이르기까지 모든 부문에서 필수적이 되었습니다. 이 파일은 모든 실무자가 알아야 할 핵심 개념, 도구 및 워크플로를 안내합니다.
 ---

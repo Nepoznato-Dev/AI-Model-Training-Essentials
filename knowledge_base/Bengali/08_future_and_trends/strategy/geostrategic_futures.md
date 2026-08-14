@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভূ-কৌশলগত ভবিষ্যত
 ## ওভারভিউ
 আমেরিকান আধিপত্যের স্নায়ুযুদ্ধ-পরবর্তী যুগ কিছু অগোছালো কিছুর পথ দেখাচ্ছে: একটি বহুমুখী বিশ্ব যেখানে শক্তি ছড়িয়ে পড়েছে, প্রযুক্তি এবং সংস্থান নিয়ে প্রতিযোগিতা তীব্র হচ্ছে এবং জলবায়ু পরিবর্তন এবং মহামারীর মতো চ্যালেঞ্জগুলি সীমানাকে সম্মান করে না। 1945 সালের পর নির্মিত নিয়ম-ভিত্তিক আন্তর্জাতিক ব্যবস্থা প্রতিটি দিক থেকে পরীক্ষা করা হচ্ছে। এখানে কী স্থানান্তরিত হচ্ছে, কে উঠছে এবং ঘর্ষণ পয়েন্টগুলি কোথায়।

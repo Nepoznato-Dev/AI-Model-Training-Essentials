@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آینده های ژئواستراتژیک
 ## بررسی اجمالی
 دوران تسلط آمریکا پس از جنگ سرد جای خود را به چیزی آشفته‌تر می‌دهد: جهانی چندقطبی که در آن قدرت پراکنده است، رقابت بر سر فناوری و منابع تشدید می‌شود، و چالش‌هایی مانند تغییرات آب و هوایی و همه‌گیری‌ها به مرزها احترام نمی‌گذارند. نظم بین المللی مبتنی بر قوانین که پس از سال 1945 ساخته شد، از هر جهت در حال آزمایش است. در اینجا چیزی است که تغییر می کند، چه کسی در حال افزایش است و نقاط اصطکاک کجا هستند.

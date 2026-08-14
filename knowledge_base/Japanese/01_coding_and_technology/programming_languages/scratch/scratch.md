@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 傷
 Scratch は、MIT メディア ラボによって開発され、2007 年に初めてリリースされたビジュアルなブロックベースのプログラミング言語です。ユーザーは、テキストベースのコードを記述する代わりに、色付きのブロックをスナップしてプログラムを作成します。 Scratch は、8 歳から 16 歳までの子供たち (ただし、あらゆる年齢層の学習者が使用します) を対象に、構文エラーの壁なしで基本的なプログラミングの概念 (ループ、条件文、変数、イベント、関数) を学べるように特別に設計されています。
 Scratch は世界で最も広く使用されている入門用プログラミング言語で、登録ユーザー数は 1 億人を超え、70 以上の言語で利用できます。 Web ブラウザ上で動作し、無料です。

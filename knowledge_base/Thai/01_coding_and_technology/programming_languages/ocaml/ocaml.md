@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #โอแคมล์
 OCaml (Objective Caml) เป็นภาษาโปรแกรมเชิงฟังก์ชันที่พัฒนาขึ้นที่ INRIA ในประเทศฝรั่งเศส เปิดตัวครั้งแรกในปี 1996 โดยผสมผสานความหมายของการเขียนโปรแกรมเชิงฟังก์ชันเข้ากับคุณลักษณะที่ใช้งานได้จริง ได้แก่ ระบบประเภทที่ทรงพลังพร้อมการอนุมานประเภท (Hindley-Milner) การจับคู่รูปแบบ ประเภทข้อมูลพีชคณิต และการเขียนโปรแกรมเชิงวัตถุเสริม OCaml คอมไพล์เป็นโค้ดเนทีฟที่รวดเร็วและยังรองรับ bytecode อีกด้วย
 แอปพลิเคชันในโลกแห่งความเป็นจริงที่มีชื่อเสียงที่สุดของ OCaml คือบริษัทการค้า **Jane Street** ซึ่งใช้ OCaml สำหรับโครงสร้างพื้นฐานการซื้อขายทั้งหมด นอกจากนี้ยังใช้ในการพัฒนาคอมไพเลอร์ (คอมไพเลอร์ Rust เขียนขึ้นครั้งแรกใน OCaml) การตรวจสอบอย่างเป็นทางการ ระบบการเงิน และการพิสูจน์ทฤษฎีบท

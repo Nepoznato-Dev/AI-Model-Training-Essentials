@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Rdza
 Rust to skompilowany język programowania ze statycznym typem, wydany po raz pierwszy w 2015 roku, opracowany pierwotnie przez Graydona Hoare'a z Mozilli. Najważniejszą obietnicą Rusta jest **bezpieczeństwo pamięci bez usuwania śmieci**. Osiąga to poprzez swój system własności — zestaw reguł egzekwowanych w czasie kompilacji, który eliminuje całe kategorie błędów (dereferencje zerowych wskaźników, wyścigi danych, przepełnienia bufora, użycie po zwolnieniu), jednocześnie tworząc kod tak szybko, jak C lub C++.
 Rust został uznany za „najbardziej lubiany” język programowania w ankiecie deweloperów Stack Overflow przez wiele lat z rzędu. Jest coraz częściej stosowany w programowaniu systemów, WebAssembly, narzędziach CLI, infrastrukturze chmurowej oraz jako zamiennik C/C++ w kontekstach krytycznych dla bezpieczeństwa. Jądro Linuksa akceptuje teraz kod Rust.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تئوری بازی
 تئوری بازی ریاضیات تعامل استراتژیک است - موقعیت‌هایی که نتیجه شما نه تنها به انتخاب‌های خودتان، بلکه به انتخاب‌های دیگران بستگی دارد. از جنگ قیمت‌گذاری بین شرکت‌ها گرفته تا مسابقات تسلیحات هسته‌ای، از حراج‌های آنلاین تا زیست‌شناسی تکاملی، نظریه بازی ابزارهایی را برای تجزیه و تحلیل درگیری و همکاری فراهم می‌کند. از طریق یادگیری تقویتی چند عاملی، شبکه های متخاصم مولد (GAN) و طراحی مکانیزم برای پلتفرم های آنلاین، به طور فزاینده ای به یادگیری ماشین مربوط می شود.
 ---

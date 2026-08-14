@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # शीघ्र इंजीनियरिंग
 प्रॉम्प्ट इंजीनियरिंग एक भाषा मॉडल से सर्वोत्तम संभव आउटपुट प्राप्त करने के लिए इनपुट संकेतों को डिजाइन करने, परिष्कृत करने और अनुकूलित करने का अभ्यास है। यह एक कला और विज्ञान दोनों है, और यह बिना किसी सुधार के एलएलएम व्यवहार को नियंत्रित करने के लिए प्राथमिक इंटरफ़ेस है।
 ---

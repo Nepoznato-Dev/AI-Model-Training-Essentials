@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Multimodal AI
 
 Multimodal AI systems process and combine information from multiple types of data — text, images, audio, video, and more — simultaneously. While earlier AI systems were typically single-modality (text-only, image-only), the most capable modern systems are multimodal. GPT-4V reads images and text together; Gemini processes text, images, audio, and video natively; and systems like Sora generate video from text descriptions. This file covers how multimodal AI works, the architectures behind it, and why combining modalities is so powerful.

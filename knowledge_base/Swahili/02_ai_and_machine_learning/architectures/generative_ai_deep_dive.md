@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kuzaa AI Deep Dive
 Kuzalisha AI inarejelea miundo inayounda maudhui mapya - picha, maandishi, sauti, video, msimbo - badala ya kuainisha au kutabiri data iliyopo. Ingawa miundo mikubwa ya lugha inaangaliwa zaidi, mandhari ya AI ya uzalishaji ni pana zaidi. Faili hii inashughulikia usanifu, mbinu, na ubadilishanaji nyuma ya mifumo ya kisasa ya uzalishaji, kutoka kwa miundo ya uenezi hadi visimbaji otomatiki tofauti hadi miundo ya mtiririko.
 ---

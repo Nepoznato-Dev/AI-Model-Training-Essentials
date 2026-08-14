@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Chatu
 Python ni lugha ya kiwango cha juu, iliyotafsiriwa, na ya kusudi la jumla iliyoundwa na Guido van Rossum na iliyotolewa kwa mara ya kwanza mnamo 1991. Inatanguliza usomaji wa msimbo kupitia ujongezaji muhimu na sintaksia safi inayosomeka karibu na Kiingereza cha kawaida. Python inachapwa kwa nguvu, inakusanywa takataka, na inasaidia dhana nyingi za programu ikiwa ni pamoja na utaratibu, uelekezaji wa kitu, na utendakazi wa programu.
 Leo, Python ndiyo lugha kuu katika AI/ML, sayansi ya data, kompyuta ya kisayansi na uwekaji otomatiki - huku ikisalia kuwa mojawapo ya lugha bora zaidi kwa wanaoanza. Kitambulisho hicho cha pande mbili (rahisi vya kutosha kwa hati ya kwanza, yenye nguvu ya kutosha kufunza miundo mikubwa ya lugha) ndicho kinachoitofautisha.

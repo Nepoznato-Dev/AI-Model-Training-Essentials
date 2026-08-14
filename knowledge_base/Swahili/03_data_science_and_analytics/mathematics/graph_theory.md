@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nadharia ya Grafu
 **grafu** ni muundo wa hisabati unaojumuisha vipeo (nodi) zilizounganishwa na kingo (viungo). Mahusiano ya kielelezo cha grafu: mitandao ya kijamii, ramani za barabara, mitandao ya neva, tegemezi, njia za mawasiliano. Nadharia ya grafu - utafiti wa miundo hii - hutoa algoriti na nadharia ambazo ni muhimu kwa sayansi ya kompyuta, utafiti wa uendeshaji na sayansi ya data.
 ---

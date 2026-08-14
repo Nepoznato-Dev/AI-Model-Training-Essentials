@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کمک سیکھنا
 ریانفورسمنٹ لرننگ (RL) یہ ہے کہ مشینیں آزمائش اور غلطی سے فیصلوں کی ترتیب بنانا سیکھتی ہیں۔ زیر نگرانی سیکھنے کے برعکس، جہاں ہر مثال کے لیے درست جواب فراہم کیا جاتا ہے، RL ایک ایجنٹ کو صرف ایک انعامی سگنل دیتا ہے — اور ایجنٹ کو یہ معلوم کرنا چاہیے کہ کون سے اعمال وقت کے ساتھ بہترین نتائج کی طرف لے جاتے ہیں۔ یہ AlphaGo، روبوٹک کنٹرول، گیم پلےنگ AI، اور — تنقیدی طور پر — RLHF، جدید بڑی زبان کے ماڈلز کو انسانی ترجیحات کے ساتھ ہم آہنگ کرنے کے لیے استعمال ہونے والی تکنیک کے پیچھے ہے۔
 ---

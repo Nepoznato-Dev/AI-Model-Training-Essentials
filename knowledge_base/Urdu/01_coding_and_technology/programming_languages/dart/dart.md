@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ڈارٹ
 ڈارٹ ایک کلائنٹ کی طرف سے تیار کردہ پروگرامنگ لینگویج ہے، جسے گوگل نے پہلی بار 2013 میں ریلیز کیا تھا۔ جبکہ ڈارٹ کو ابتدائی طور پر ویب براؤزرز کے لیے جاوا اسکرپٹ کے ممکنہ متبادل کے طور پر رکھا گیا تھا، لیکن اس نے اپنا بنیادی مقصد **فلٹر** کے پیچھے زبان کے طور پر پایا — موبائل، ویب، ڈیسک ٹاپ، اور سنگل کوڈبا ایپلی کیشنز کو ایمبیڈڈ کرنے کے لیے گوگل کی کراس پلیٹ فارم UI ٹول کٹ۔
 ڈارٹ جدید زبانوں کی بہترین خصوصیات کو یکجا کرتا ہے: یہ آبجیکٹ پر مبنی ہے، اس میں اختیاری ٹائپنگ ہے (ڈارٹ 3 کے بعد سے آواز کی حفاظت)،`async`/`await`کے ساتھ غیر مطابقت پذیر پروگرامنگ کو سپورٹ کرتا ہے، اور مقامی مشین کوڈ (موبائل/ڈیسک ٹاپ کے لیے) اور جاوا اسکرپٹ (ویب کے لیے) دونوں کو مرتب کرتا ہے۔

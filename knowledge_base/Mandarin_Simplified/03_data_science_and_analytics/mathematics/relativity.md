@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 相对论
 爱因斯坦的相对论彻底改变了我们对空间、时间和引力的理解。 **狭义相对论**（1905）表明，空间和时间不是分开的，而是编织成一个称为时空的单一结构，并且光速对于所有观察者来说都是相同的。 **广义相对论**（1915）将重力重新想象为由质量和能量引起的时空弯曲，而不是一种力。这些理论支撑着 GPS 导航、粒子加速器以及我们对黑洞和宇宙演化的理解。
 ---

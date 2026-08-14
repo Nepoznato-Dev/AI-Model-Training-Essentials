@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Security Vulnerabilities"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 보안 취약점
 이 문서에는 주입 공격, 안전하지 않은 코드 관행, 보안 실수 등 소프트웨어 개발 시 일반적인 보안 취약점이 통합되어 있습니다.
 ---

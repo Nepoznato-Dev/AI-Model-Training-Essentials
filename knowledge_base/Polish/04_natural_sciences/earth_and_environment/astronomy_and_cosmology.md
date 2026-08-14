@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Astronomia i kosmologia
 Astronomia zajmuje się badaniem obiektów niebieskich – gwiazd, planet, galaktyk i wszystkiego, co znajduje się poza ziemską atmosferą. Kosmologia to nauka o wszechświecie jako całości: jego pochodzeniu, strukturze, ewolucji i ostatecznym losie. Razem odpowiadają na niektóre z najbardziej fundamentalnych pytań, jakie kiedykolwiek zadawali sobie ludzie: Jak powstał wszechświat? Jak duży jest? Czy jesteśmy sami? Co się z nim ostatecznie stanie?
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # زبان و انگلیسی
 امروزه تقریباً 7000 زبان در جهان صحبت می شود. انگلیسی به عنوان زبان دوم رایج ترین زبان است و به عنوان پیش فرض برای تجارت بین المللی، علم، هوانوردی و اینترنت عمل می کند. خواه نوشتن اسناد کد، خواندن مقالات تحقیقاتی، یا برقراری ارتباط بین مرزها، تسلط کامل به زبان انگلیسی - دستور زبان، واژگان و بلاغت - یکی از کاربردی ترین مهارت هایی است که می توان توسعه داد.
 این فایل موارد ضروری را پوشش می دهد: گرامر، علائم نگارشی، مشکلات رایج، تکنیک نوشتن و ارتباط واضح.

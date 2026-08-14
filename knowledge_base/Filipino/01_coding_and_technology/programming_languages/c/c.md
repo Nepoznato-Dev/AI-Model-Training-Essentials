@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C
 Ang C ay isang general-purpose, procedural programming language na nilikha ni Dennis Ritchie sa Bell Labs sa pagitan ng 1969 at 1973. Ito ay idinisenyo upang ipatupad ang Unix operating system, at ito ay nananatiling isa sa pinakamalawak na ginagamit na programming language pagkalipas ng 50 taon. Ang C ay nagbibigay ng mababang antas ng pag-access sa memorya, isang minimal na karaniwang library, at isang malinis na pagmamapa sa mga tagubilin sa makina -- ginagawa itong pundasyon kung saan itinayo ang karamihan sa modernong computing.
 Ang C ay ang wika sa likod ng mga operating system (Linux, Windows kernel, macOS), naka-embed na system, database engine (SQLite, PostgreSQL), compiler (Python's CPython, Ruby's MRI), at halos lahat ng iba pang programming language runtime. Ang pag-unawa sa C ay pag-unawa kung paano gumagana ang mga computer.

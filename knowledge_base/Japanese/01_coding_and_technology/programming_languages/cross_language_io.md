@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — I/O & File Operations"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # 言語間の比較 - I/O とファイル操作
 ## コンソール出力
 |言語 |標準出力に出力 |

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آر
 R یک زبان برنامه نویسی و محیطی است که به طور خاص برای محاسبات آماری و تجزیه و تحلیل داده ها طراحی شده است. این زبان توسط راس ایهاکا و رابرت جنتلمن در دانشگاه اوکلند در سال 1993 ایجاد شد (از این رو "R")، اجرای زبان S با پسوندهای قابل توجه است. R منبع باز است و توسط تیم R Core نگهداری می شود. این ابزار استاندارد برای آماردانان، تحلیلگران داده، و محققان در دانشگاه، مراقبت های بهداشتی، مالی و دولت است.
 R در دستکاری داده ها، مدل سازی آماری، تجسم و گزارش دهی برتر است. اکوسیستم بسته آن (CRAN) دارای بیش از 20000 بسته است که تقریباً هر روش آماری ابداع شده را پوشش می دهد.

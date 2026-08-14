@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فرترن
 Fortran (ترجمه فرمول) قدیمی ترین زبان برنامه نویسی سطح بالا است که هنوز در حال استفاده گسترده است، اولین بار توسط IBM در سال 1957 برای محاسبات علمی و مهندسی توسعه یافت. با وجود قدمت، فرترن مدرن (فرترن 2008/2018/2023) یک زبان توانا و با کارایی بالا است که به طور گسترده در پیش‌بینی عددی آب و هوا، دینامیک سیالات محاسباتی، شبیه‌سازی‌های فیزیک، مدل‌سازی مالی و محاسبات با عملکرد بالا (HPC) استفاده می‌شود. بسیاری از سریع ترین ابررایانه های جهان کد فرترن را اجرا می کنند.
 این زبان از روزهای اولیه خود به طور قابل توجهی تکامل یافته است. فرترن مدرن دارای ماژول‌ها، انواع مشتق‌شده، رویه‌های عمومی، هم‌آهنگ‌ها (برنامه‌نویسی موازی) و قابلیت همکاری با C است. این زبان انتخابی برای بسیاری از برنامه‌های محاسباتی علمی است که در آن عملکرد در اولویت است.

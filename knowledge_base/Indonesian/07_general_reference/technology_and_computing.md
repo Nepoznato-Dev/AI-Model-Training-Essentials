@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Teknologi dan Komputasi
 Komputasi ada dimana-mana — di ponsel Anda, mobil Anda, lemari es Anda, perangkat medis Anda, dan infrastruktur yang menjalankan masyarakat modern. Anda tidak perlu menjadi seorang programmer untuk mendapatkan manfaat dari memahami cara kerjanya. File ini mencakup dasar-dasar: apa itu komputer, cara kerja internet, cara perangkat lunak dibuat, dan konsep yang membentuk dunia digital.
 > **Ingin mempelajari lebih dalam?** File ini adalah ikhtisar yang luas. Untuk liputan mendetail tentang topik apa pun, lihat file khusus di[`01_coding_and_technology/`](../01_coding_and_technology/)— termasuk[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), dan.

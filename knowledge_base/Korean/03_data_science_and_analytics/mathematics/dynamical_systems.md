@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 동적 시스템
 **동적 시스템**은 고정된 규칙에 따라 시간이 지남에 따라 상태가 어떻게 발전하는지 설명합니다. 행성 궤도에서 인구 역학, 날씨 패턴에서 신경망 훈련에 이르기까지 역학 시스템 이론은 사물이 어떻게 변화하는지 이해하기 위한 언어와 도구를 제공합니다. 이 파일은 상미분 방정식(ODE), 편미분 방정식(PDE), 안정성 분석, 혼돈 및 분기를 다룹니다.
 ---

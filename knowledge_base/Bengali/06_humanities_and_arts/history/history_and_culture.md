@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ইতিহাস ও সংস্কৃতি
 ইতিহাস হল মানুষ যা করেছে তার গল্প — সাফল্য, বিপর্যয়, উদ্ভাবন এবং ধারণা যা আমরা আজ যে বিশ্বে বাস করি তাকে রূপ দিয়েছে। এটি শুধুমাত্র তারিখ এবং নামের তালিকা নয়। ইতিহাস বোঝা আপনাকে বুঝতে সাহায্য করে কেন সীমানা যেখানে তারা আছে, কেন লোকেরা তারা যে ভাষায় কথা বলে সে ভাষায় কথা বলে, কেন কিছু দেশ ধনী যখন অন্যরা নয় এবং কেন দ্বন্দ্বগুলি প্রাচীন বলে মনে হয় এখনও জ্বলছে।
 এই ফাইলটি প্রথম সভ্যতা থেকে বর্তমান দিন পর্যন্ত বিশ্বের ইতিহাসের প্রধান সময়কাল এবং থিমগুলিকে কভার করে।

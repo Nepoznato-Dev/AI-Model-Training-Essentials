@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 逻辑和批判性思维
 逻辑是对有效推理的研究——如何构建合理的论证并识别有缺陷的论证。批判性思维是质疑假设、评估证据和仔细推理的纪律习惯。这些技能不仅在数学和计算机科学中至关重要，而且在日常决策、科学研究和驾驭信息丰富的世界中也至关重要。
 ---

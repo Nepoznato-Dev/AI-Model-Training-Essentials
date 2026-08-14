@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیٹا سائنس اور تجزیات
 ڈیٹا سائنس خام ڈیٹا کو قابل عمل بصیرت میں تبدیل کرنے کا نظم ہے۔ یہ شماریات، کمپیوٹر سائنس، اور ڈومین کی مہارت کے سنگم پر بیٹھا ہے - اور یہ فنانس سے لے کر صحت کی دیکھ بھال تک ہر شعبے میں ضروری ہو گیا ہے۔ یہ فائل بنیادی تصورات، ٹولز، اور ورک فلو کے ذریعے چلتی ہے جو ہر پریکٹیشنر کو معلوم ہونا چاہیے۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أوكامل
 OCaml (Objective Caml) هي لغة برمجة وظيفية تم تطويرها في INRIA في فرنسا، وتم إصدارها لأول مرة في عام 1996. وهي تجمع بين تعبير البرمجة الوظيفية والميزات العملية: نظام كتابة قوي مع استنتاج النوع (Hindley-Milner)، ومطابقة الأنماط، وأنواع البيانات الجبرية، والبرمجة الاختيارية الموجهة للكائنات. يقوم OCaml بتجميع التعليمات البرمجية الأصلية السريعة ويدعم أيضًا الرمز الثانوي.
 أشهر تطبيق OCaml في العالم الحقيقي هو شركة **Jane Street** التجارية، والتي تستخدم OCaml في بنيتها التحتية التجارية بالكامل. كما أنه يستخدم أيضًا في تطوير المترجم (تم كتابة مترجم Rust في الأصل بلغة OCaml)، والتحقق الرسمي، والأنظمة المالية، وإثبات النظرية.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 制御理論
 制御理論は、システムを希望どおりに動作させるための数学です。サーモスタットからオートパイロット、ロボットアームから化学反応器に至るまで、制御システムは望ましい動作を維持するために感知、決定、および動作します。この分野は、安定性、パフォーマンス、堅牢性を分析するための厳密なツールを提供します。これらの概念は、強化学習、ハイパーパラメータ調整、適応システムに移行しています。
 ---

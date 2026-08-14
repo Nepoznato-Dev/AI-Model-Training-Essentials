@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Tool Usage"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Paggamit ng Tool
 ## Git — Kontrol sa Bersyon
 Ang Git ay isang distributed version control system. Ang bawat developer ay may buong kopya ng kasaysayan ng repositoryo sa kanilang lokal na makina.

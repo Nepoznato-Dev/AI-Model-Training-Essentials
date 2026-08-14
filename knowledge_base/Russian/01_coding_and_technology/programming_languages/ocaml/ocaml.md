@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml (Objective Caml) — это язык функционального программирования, разработанный в INRIA во Франции и впервые выпущенный в 1996 году. Он сочетает в себе выразительность функционального программирования с практическими функциями: мощной системой типов с выводом типов (Хиндли-Милнер), сопоставлением с образцом, алгебраическими типами данных и дополнительным объектно-ориентированным программированием. OCaml компилируется в быстрый собственный код, а также поддерживает байт-код.
 Самым известным реальным приложением OCaml является торговая фирма **Jane Street**, которая использует OCaml для всей своей торговой инфраструктуры. Он также используется при разработке компиляторов (изначально компилятор Rust был написан на OCaml), формальной проверке, финансовых системах и доказательстве теорем.

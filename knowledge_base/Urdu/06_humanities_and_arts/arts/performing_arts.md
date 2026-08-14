@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # پرفارمنگ آرٹس
 پرفارمنگ آرٹس — تھیٹر، فلم، رقص، اور موسیقی کی کارکردگی — وہ ہیں جہاں آرٹ سامعین کی زندہ موجودگی کو پورا کرتا ہے۔ دیوار پر پینٹنگ یا شیلف پر کتاب کے برعکس، کارکردگی حقیقی وقت میں سامنے آتی ہے، جس سے فنکار اور تماشائی کے درمیان ایک مشترکہ تجربہ پیدا ہوتا ہے جو ہزاروں سالوں سے انسانی ثقافت میں مرکزی حیثیت رکھتا ہے۔
 ---

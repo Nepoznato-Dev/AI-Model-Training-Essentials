@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Sở hữu trí tuệ và đổi mới
 Sở hữu trí tuệ (IP) đề cập đến những sáng tạo của trí óc - phát minh, tác phẩm nghệ thuật, thương hiệu, thiết kế, bí mật thương mại - mà luật pháp bảo vệ khỏi việc sử dụng trái phép. Đổi mới là quá trình biến ý tưởng thành giá trị. Luật sở hữu trí tuệ tồn tại để cân bằng hai lợi ích cạnh tranh nhau: khen thưởng những người sáng tạo (bằng cách trao cho họ sự độc quyền tạm thời) và mang lại lợi ích cho xã hội (bằng cách đảm bảo kiến ​​thức cuối cùng sẽ được cung cấp miễn phí). Hiểu IP là điều cần thiết đối với bất kỳ ai xây dựng sản phẩm, tạo nội dung, điều hành doanh nghiệp hoặc làm việc trong lĩnh vực nghiên cứu.
 ---

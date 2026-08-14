@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — Mga Karaniwang Pagkakamali at Anti-Pattern
 Kino-catalog ng dokumentong ito ang mga pinakakaraniwang pagkakamali, traps, at anti-pattern sa C. Ang bawat entry ay nagpapakita ng maling diskarte, ipinapaliwanag kung bakit ito nabigo, at nagbibigay ng tamang solusyon. Binibigyan ka ng C ng ganap na kontrol — na nangangahulugan ng buong responsibilidad para sa kaligtasan ng memorya, pagsuri sa mga hangganan, at hindi natukoy na pag-uugali.
 ---

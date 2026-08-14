@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جاوا اسکریپت
 جاوا اسکریپت یک زبان برنامه نویسی پویا و تفسیر شده است که توسط Brendan Eich تنها در 10 روز در سال 1995 ایجاد شد. این زبان که در اصل برای افزودن تعامل به صفحات وب طراحی شده بود، به پرکاربردترین زبان برنامه نویسی در جهان تبدیل شده است. جاوا اسکریپت در هر مرورگر وب، روی سرورها از طریق Node.js، در برنامه های دسکتاپ (الکترون)، برنامه های موبایل (React Native) و حتی سیستم های جاسازی شده اجرا می شود.
 این زبان از این نظر منحصر به فرد است که اساساً تنها گزینه برای توسعه وب سمت مشتری است - هر مرورگر به طور بومی از آن پشتیبانی می کند. این انحصار، همراه با ظهور جاوا اسکریپت تمام پشته (Node.js، Deno، Bun)، آن را ضروری می کند.

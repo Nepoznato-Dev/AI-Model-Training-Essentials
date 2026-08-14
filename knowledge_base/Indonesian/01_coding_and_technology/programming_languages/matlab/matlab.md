@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #MATLAB
 MATLAB (Laboratorium Matriks) adalah bahasa pemrograman dan lingkungan interpretasi tingkat tinggi yang dirancang untuk komputasi numerik, operasi matriks, dan aplikasi teknik/ilmiah. Dikembangkan oleh MathWorks dan pertama kali dirilis pada tahun 1984, MATLAB adalah alat standar di banyak disiplin ilmu teknik — teknik elektro, sistem kontrol, pemrosesan sinyal, pemrosesan gambar, dan komunikasi.
 MATLAB menggabungkan bahasa berorientasi matriks yang kuat dengan kotak peralatan yang luas (paket tambahan) dan lingkungan simulasi visual Simulink. Ini banyak digunakan di dunia akademis dan industri untuk membuat prototipe algoritma sebelum mengimplementasikannya dalam kode produksi.

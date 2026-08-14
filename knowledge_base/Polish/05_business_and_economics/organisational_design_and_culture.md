@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Projekt organizacyjny i kultura
 Projekt organizacji to przemyślany układ struktury, procesów, ról i praw decyzyjnych w celu skutecznej realizacji strategii. Kultura to wspólne wartości, przekonania, normy i zachowania, które kształtują sposób, w jaki ludzie faktycznie ze sobą współpracują. Struktura zapewnia ramy; kultura kształtuje zachowanie. Strukturę można przeprojektować na papierze, ale jeśli kultura nie wspiera tej zmiany, wdrożenie się nie powiedzie. Podobnie silna kultura w połączeniu z nieefektywną strukturą będzie stopniowo osłabiać wydajność organizacji. Najbardziej efektywne organizacje zajmują się obydwoma i zdają sobie sprawę, że są one głęboko ze sobą powiązane.
 ---

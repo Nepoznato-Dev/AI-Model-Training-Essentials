@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C#
 سی شارپ (با تلفظ C-sharp) یک زبان برنامه نویسی مدرن، شی گرا و ایمن است که توسط مایکروسافت تحت رهبری آندرس هیلسبرگ توسعه یافته و اولین بار در سال 2002 منتشر شد. این زبان بر روی پلت فرم دات نت اجرا می شود و برای ترکیب قدرت C++ با بهره وری ویژوال بیسیک طراحی شده است. امروزه سی شارپ یک زبان همه کاره و چند پلتفرمی است که برای برنامه های کاربردی وب (ASP.NET)، نرم افزار دسکتاپ (ویندوز)، توسعه بازی (Unity)، برنامه های موبایل (MAUI)، خدمات ابری (Azure) و غیره استفاده می شود.
 C# به طور پیوسته بهترین ایده‌ها را از زبان‌های دیگر جذب کرده است - LINQ، async/wait، رکوردها، تطبیق الگوها - آن را به یکی از غنی‌ترین و توسعه‌دهنده‌ترین زبان‌های موجود تبدیل کرده است.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বুদ্ধিবৃত্তিক সম্পত্তি এবং উদ্ভাবন
 বুদ্ধিবৃত্তিক সম্পত্তি (IP) মনের সৃষ্টিকে বোঝায় — উদ্ভাবন, শৈল্পিক কাজ, ব্র্যান্ডের নাম, নকশা, ট্রেড সিক্রেট — যা আইন অননুমোদিত ব্যবহার থেকে রক্ষা করে। উদ্ভাবন হল ধারণাকে মূল্যে পরিণত করার প্রক্রিয়া। আইপি আইন দুটি প্রতিযোগী স্বার্থের ভারসাম্য বজায় রাখার জন্য বিদ্যমান: স্রষ্টাদের পুরস্কৃত করা (তাদের সাময়িক একচেটিয়া অধিকার দিয়ে) এবং সমাজকে উপকৃত করা (জ্ঞান শেষ পর্যন্ত অবাধে উপলব্ধ হয় তা নিশ্চিত করে)। আইপি বোঝা প্রত্যেকের জন্য পণ্য তৈরি করা, সামগ্রী তৈরি করা, ব্যবসা চালানো বা গবেষণায় কাজ করা অপরিহার্য।
 ---

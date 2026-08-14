@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #運籌學
 運籌學（OR）是數學方法在決策上的應用。它誕生於二戰期間的軍事物流領域，現在優化供應鏈、安排航空公司、安排運輸車隊路線、管理庫存以及在各個行業分配資源。 OR 提供了數學工具包，可以在限制條件下做出最佳決策。
 ---

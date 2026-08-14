@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript — 語法參考
 本文檔為 TypeScript 提供了全面、結構化的語法參考。它透過專注於類型系統、泛型、實用程式類型和高級類型級程式設計來補充主要的 TypeScript 參考。
 ---

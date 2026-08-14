@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #khoa học thần kinh
 Khoa học thần kinh là nghiên cứu về hệ thần kinh - não, tủy sống và tất cả các dây thần kinh kết nối chúng với cơ thể. Nó trải rộng trên nhiều cấp độ: từ phân tử và gen, đến các tế bào thần kinh và khớp thần kinh riêng lẻ, đến các mạch và vùng não, đến hành vi, nhận thức và ý thức. Bộ não là cấu trúc phức tạp nhất trong vũ trụ được biết đến, chứa khoảng 86 tỷ tế bào thần kinh được kết nối bởi hàng nghìn tỷ khớp thần kinh và hiểu cách thức hoạt động của nó là một trong những thách thức lớn của khoa học.
 ---

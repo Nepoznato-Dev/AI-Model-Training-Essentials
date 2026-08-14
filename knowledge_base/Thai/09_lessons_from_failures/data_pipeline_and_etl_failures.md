@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Data Pipeline และความล้มเหลวของ ETL
 ไปป์ไลน์ข้อมูลเป็นเหมือนระบบประปาขององค์กรยุคใหม่ โดยจะย้ายข้อมูลจากระบบต้นทางผ่านการเปลี่ยนแปลงไปยังฐานข้อมูล คลังสินค้า และทะเลสาบ ซึ่งใช้สำหรับการวิเคราะห์ การเรียนรู้ของเครื่อง และการตัดสินใจ เมื่อพวกเขาทำงานไม่มีใครสังเกตเห็น เมื่อล้มเหลว การตัดสินใจจะดำเนินการกับข้อมูลเก่า ฝึกแบบจำลองเกี่ยวกับขยะ รายงานแสดงตัวเลขที่เป็นไปไม่ได้ และความไว้วางใจในแพลตฟอร์มข้อมูลทั้งหมดก็กัดกร่อน ความล้มเหลวไปป์ไลน์ข้อมูลถือเป็นความล้มเหลวที่พบบ่อยที่สุดและมีค่าใช้จ่ายสูงที่สุดในองค์กรเทคโนโลยี
 ---

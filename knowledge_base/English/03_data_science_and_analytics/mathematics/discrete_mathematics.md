@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Discrete Mathematics
 
 Discrete mathematics is the study of mathematical structures that are fundamentally countable or separated — as opposed to continuous mathematics (calculus, real analysis), which deals with smooth, unbroken quantities. Discrete math underpins computer science, cryptography, algorithm design, and data structures. If continuous math describes the physical world, discrete math describes the computational world.

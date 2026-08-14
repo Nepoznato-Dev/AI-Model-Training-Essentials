@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Time Series and Forecasting
 
 Time series data is any data collected over time: stock prices, temperature readings, website traffic, sales figures, heart rate monitors, energy consumption. Forecasting means predicting future values based on past patterns. It's one of the most practically valuable applications of data science — and one of the hardest, because the future is genuinely uncertain and real-world time series are full of noise, seasonality, and structural breaks.

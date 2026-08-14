@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Testy statystyczne i eksperymenty
 Statystyka jest gramatyką nauki. Daje narzędzia umożliwiające odróżnienie rzeczywistych wzorców od przypadkowego szumu, zmierzenie, czy zmiana rzeczywiście poprawiła sytuację i podejmowanie decyzji w warunkach niepewności. W tym pliku omówiono podstawowe pojęcia związane z testowaniem hipotez, projektowaniem eksperymentów i typowymi pułapkami, w jakie wpadają ludzie.
 ---

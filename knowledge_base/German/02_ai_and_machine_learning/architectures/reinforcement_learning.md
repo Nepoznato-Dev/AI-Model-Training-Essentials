@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Verstärkungslernen
 Beim Reinforcement Learning (RL) lernen Maschinen durch Versuch und Irrtum, Entscheidungssequenzen zu treffen. Im Gegensatz zum überwachten Lernen, bei dem für jedes Beispiel die richtige Antwort bereitgestellt wird, gibt RL einem Agenten lediglich ein Belohnungssignal – und der Agent muss herausfinden, welche Aktionen im Laufe der Zeit zu den besten Ergebnissen führen. Es ist der Ansatz hinter AlphaGo, der Robotersteuerung, der Spiel-KI und – ganz entscheidend – RLHF, der Technik, die verwendet wird, um moderne große Sprachmodelle mit menschlichen Vorlieben in Einklang zu bringen.
 ---

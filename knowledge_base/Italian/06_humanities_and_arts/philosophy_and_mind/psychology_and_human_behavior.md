@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Psicologia e comportamento umano
 La psicologia è la scienza che studia come e perché le persone pensano, sentono e agiscono in un certo modo. Non è lettura del pensiero e non è buon senso, anche se a volte conferma ciò che suggerisce il buon senso e talvolta lo contraddice completamente. La psicologia utilizza lo stesso metodo scientifico di ogni altra scienza: osservare, ipotizzare, testare, rivedere. Ciò che lo rende impegnativo è che il suo soggetto – la mente umana – è l’oggetto più complesso che conosciamo.
 Questo file copre le principali aree della psicologia: come pensiamo, come ci sviluppiamo, come siamo influenzati dagli altri, cosa va storto e cosa si può fare al riguardo.

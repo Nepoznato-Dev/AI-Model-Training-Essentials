@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sayansi ya Nyenzo
 Sayansi ya nyenzo ni uchunguzi wa jinsi muundo wa nyenzo (kwenye mizani ya atomiki, hadubini, na makroskopu) huamua sifa zake, na jinsi mbinu za usindikaji zinaweza kutumika kudhibiti muundo huo kufikia utendakazi unaohitajika. Ni uwanja unaojibu maswali kama: kwa nini chuma ni kali lakini nzito? Kwa nini kioo ni uwazi lakini brittle? Je, tunawezaje kutengeneza betri zinazochaji haraka? Ni nyenzo gani zitaishi katika hali ya Mars? Kila teknolojia ambayo umewahi kutumia imetengenezwa kwa nyenzo, na maendeleo ya teknolojia karibu kila wakati yanahitaji maendeleo katika nyenzo.
 ---

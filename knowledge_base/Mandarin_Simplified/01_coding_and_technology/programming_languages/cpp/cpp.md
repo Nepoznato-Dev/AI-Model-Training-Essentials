@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++
 C++ 是一种通用的编译型编程语言，由 Bjarne Stroustrup 创建，于 1985 年首次发布。它通过面向对象的功能、泛型以及现代版本（C++11 及更高版本）中的高级抽象（如 lambda、智能指针和标准模板库 (STL)）扩展了 C。 C++ 遵循“零开销抽象”原则：您不应该为不使用的功能付费。
 当您需要高性能和表达能力时，C++ 是首选语言。它为游戏引擎（虚幻引擎）、浏览器（Chrome、Firefox）、数据库（MongoDB）、操作系统（Windows 和 macOS 的一部分）、金融交易系统和实时模拟提供支持。

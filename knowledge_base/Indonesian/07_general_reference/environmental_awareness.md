@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kesadaran Lingkungan
 Lingkungan bukanlah sesuatu yang terpisah “di luar sana” — lingkunganlah yang membuat segala sesuatu menjadi mungkin. Setiap napas yang Anda hirup, setiap gelas air yang Anda minum, setiap makanan yang Anda makan bergantung pada komposisi atmosfer, siklus air, kesehatan tanah, dan jaringan penyerbuk. Memahami cara kerja sistem ini – dan bagaimana sistem tersebut berubah – bukanlah suatu pilihan bagi orang yang berpengetahuan luas. File ini mencakup dasar-dasar ilmu lingkungan, tantangan yang kita hadapi, dan apa sebenarnya arti keberlanjutan dalam praktiknya.
 ---

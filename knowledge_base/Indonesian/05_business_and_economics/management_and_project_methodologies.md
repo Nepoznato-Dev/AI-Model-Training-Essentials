@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Manajemen dan Metodologi Proyek
 Mengelola orang dan proyek adalah salah satu tanggung jawab yang paling menuntut di organisasi mana pun. Keterampilan teknis memberikan jalan masuk, namun kemampuan untuk memimpin tim, membuat keputusan, berkomunikasi secara efektif, dan memberikan hasil menentukan apakah tujuan tercapai. File ini mencakup kerangka kerja, metodologi, dan keterampilan praktis yang diterapkan oleh manajer dan pemimpin proyek yang efektif.
 ---

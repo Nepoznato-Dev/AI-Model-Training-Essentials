@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # С++
 C++ — это компилируемый язык программирования общего назначения, созданный Бьярном Страуструпом и впервые выпущенный в 1985 году. Он расширяет C объектно-ориентированными функциями, обобщенными функциями и — в современных версиях (C++11 и более поздних) — абстракциями высокого уровня, такими как лямбда-выражения, интеллектуальные указатели и стандартная библиотека шаблонов (STL). C++ следует принципу «абстракции с нулевыми издержками»: вам не следует платить за функции, которые вы не используете.
 C++ — это язык выбора, когда вам нужна одновременно высокая производительность и выразительность. Он поддерживает игровые движки (Unreal Engine), браузеры (Chrome, Firefox), базы данных (MongoDB), операционные системы (части Windows и macOS), системы финансовой торговли и моделирование в реальном времени.

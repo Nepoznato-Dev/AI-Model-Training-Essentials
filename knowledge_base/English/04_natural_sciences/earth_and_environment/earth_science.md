@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Earth Science
 
 Earth science studies the planet we live on — its structure, processes, history, and the systems that make it habitable. It spans geology (the solid Earth), oceanography (the oceans), meteorology (the atmosphere and weather), and climatology (long-term climate patterns). What unifies these fields is the understanding that Earth is a dynamic system: its interior is constantly moving, its surface is being reshaped, and its atmosphere and oceans interact in complex ways.

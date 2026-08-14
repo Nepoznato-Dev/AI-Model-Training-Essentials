@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript — Referensi Sintaks
 Dokumen ini menyediakan referensi sintaksis yang komprehensif dan terstruktur untuk TypeScript. Ini melengkapi referensi TypeScript utama dengan berfokus pada sistem tipe, generik, tipe utilitas, dan pemrograman tingkat tipe lanjutan.
 ---

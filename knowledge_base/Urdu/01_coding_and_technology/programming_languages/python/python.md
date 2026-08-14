@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ازگر
 Python ایک اعلی سطحی، تشریح شدہ، عام مقصد کی پروگرامنگ زبان ہے جسے Guido van Rossum نے تخلیق کیا تھا اور اسے پہلی بار 1991 میں جاری کیا گیا تھا۔ یہ اہم انڈینٹیشن اور صاف نحو کے ذریعے کوڈ پڑھنے کی اہلیت کو ترجیح دیتا ہے جو سادہ انگریزی کے قریب پڑھتا ہے۔ Python متحرک طور پر ٹائپ کیا جاتا ہے، کوڑا کرکٹ جمع کیا جاتا ہے، اور متعدد پروگرامنگ پیراڈائمز بشمول طریقہ کار، آبجیکٹ اورینٹڈ، اور فنکشنل پروگرامنگ کی حمایت کرتا ہے۔
 آج، Python AI/ML، ڈیٹا سائنس، سائنسی کمپیوٹنگ، اور آٹومیشن میں غالب زبان ہے - جبکہ ابتدائی افراد کے لیے بہترین زبانوں میں سے ایک ہے۔ وہ دوہری شناخت (پہلے اسکرپٹ کے لیے کافی آسان، بڑی زبان کے ماڈلز کو تربیت دینے کے لیے کافی طاقتور) اسے الگ کرتا ہے۔

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 隨機過程
 **隨機過程**是按時間（或空間）索引的隨機變數的集合。機率論研究單一隨機事件，而隨機過程研究隨機性如何隨時間演變。他們對股票價格、隊列長度、疾病傳播、語言生成以及機器學習模型的訓練動態進行建模。
 ---

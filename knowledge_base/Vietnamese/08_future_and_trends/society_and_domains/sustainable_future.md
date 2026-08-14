@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Tương lai bền vững
 ## Tổng quan
 Câu hỏi không còn là *liệu* thế giới có cần chuyển đổi sang nền kinh tế bền vững hay không mà là *nhanh như thế nào* và *ai dẫn đầu*. Năng lượng tái tạo hiện là nguồn năng lượng rẻ nhất ở hầu hết các thị trường. Các nguyên tắc kinh tế tuần hoàn đang chuyển từ khái niệm thích hợp sang chiến lược doanh nghiệp. Các thành phố đang xem xét lại mọi thứ từ giao thông đến rác thải. Và cuộc đua đạt tới số 0 ròng đang định hình lại các ngành công nghiệp từ năng lượng đến tài chính. Đây là hình ảnh của tương lai bền vững qua bốn khía cạnh chính.

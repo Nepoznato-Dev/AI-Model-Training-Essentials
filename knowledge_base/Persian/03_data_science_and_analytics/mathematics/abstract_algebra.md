@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جبر انتزاعی
 جبر انتزاعی ساختارهای جبری را مطالعه می کند - مجموعه هایی مجهز به عملیاتی که از قوانین خاصی پیروی می کنند. به جای کار با اعداد، جبر انتزاعی با هر چیز که بدیهیات را برآورده می کند کار می کند. این کلیت قدرتمند است: یک قضیه اثبات شده برای "گروه ها" به طور همزمان برای اعداد صحیح، تقارن، ماتریس ها، جایگشت ها و حالات کوانتومی اعمال می شود. جبر انتزاعی زیربنای رمزنگاری، کدهای تصحیح خطا، محاسبات کوانتومی، و تجزیه و تحلیل تقارن مورد استفاده در سراسر فیزیک است.
 ---

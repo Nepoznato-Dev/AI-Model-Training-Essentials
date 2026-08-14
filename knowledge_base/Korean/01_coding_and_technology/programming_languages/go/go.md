@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 가다
 Go(원래 도메인 이름을 따서 "Golang"이라고도 함)는 Google에서 Robert Griesemer, Rob Pike 및 Ken Thompson이 디자인한 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. C의 성능과 Python과 같은 동적 언어의 생산성을 결합한 시스템 프로그래밍을 위한 더 나은 언어가 되겠다는 명확한 목표를 가지고 2012년에 처음 출시되었습니다. Go는 단순성, 빠른 컴파일, 내장된 동시성(고루틴 및 채널), 뛰어난 도구로 유명합니다.
 Go는 클라우드 인프라 생태계의 상당 부분을 지원합니다. Docker, Kubernetes, Terraform, Prometheus, etcd 및 Go 표준 라이브러리의 HTTP 서버는 모두 Go로 작성되었습니다. 클라우드 네이티브 개발, 마이크로서비스 및 CLI 도구의 기본 언어가 되었습니다.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # পার্ল
 পার্ল ল্যারি ওয়াল দ্বারা 1987 সালে একটি ব্যবহারিক পাঠ্য-প্রক্রিয়াকরণ সরঞ্জাম হিসাবে তৈরি করা হয়েছিল। এটি প্রারম্ভিক ওয়েব ডেভেলপমেন্ট (CGI স্ক্রিপ্ট), সিস্টেম অ্যাডমিনিস্ট্রেশন, বায়োইনফরমেটিক্স এবং নেটওয়ার্ক প্রোগ্রামিং এর মেরুদণ্ড হয়ে ওঠে। পার্লের দর্শন হল "দেয়ার ইজ মোর ওয়ান ওয়ে টু ডু ইট" (TMTOWTDI) — ভাষা আপনাকে প্রতিটি সমস্যার একাধিক পন্থা দেয়, অভিন্নতার চেয়ে অভিব্যক্তির পক্ষে।
 আধুনিক প্রোগ্রামিং-এ পার্লের প্রভাব প্রচুর কিন্তু প্রায়শই অদৃশ্য: পার্লের প্যাটার্ন ম্যাচিং দ্বারা প্রভাবিত রেগুলার এক্সপ্রেশনগুলি এখন পাইথন, জাভাস্ক্রিপ্ট, জাভা এবং অন্যান্য বেশিরভাগ ভাষায় আদর্শ। CPAN (কমপ্রিহেনসিভ পার্ল আর্কাইভ নেটওয়ার্ক) ছিল প্রথম সফ্টওয়্যার প্যাকেজ সংগ্রহস্থলগুলির মধ্যে একটি এবং পাইথনের PyPI এবং নোডের npm-এর মতো পরবর্তী সিস্টেমগুলিকে অনুপ্রাণিত করেছিল।

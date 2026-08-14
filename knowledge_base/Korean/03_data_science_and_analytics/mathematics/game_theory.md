@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 게임이론
 게임 이론은 전략적 상호 작용의 수학입니다. 즉, 결과가 자신의 선택뿐만 아니라 다른 사람의 선택에도 좌우되는 상황입니다. 기업 간의 가격 전쟁부터 핵무기 경쟁까지, 온라인 경매부터 진화생물학까지, 게임 이론은 갈등과 협력을 분석하는 도구를 제공합니다. 다중 에이전트 강화 학습, 생성적 적대 네트워크(GAN) 및 온라인 플랫폼을 위한 메커니즘 설계를 통해 기계 학습과의 관련성이 점점 높아지고 있습니다.
 ---

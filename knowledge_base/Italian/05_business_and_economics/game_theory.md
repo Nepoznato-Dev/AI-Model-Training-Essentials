@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Teoria dei giochi e pensiero strategico
 La teoria dei giochi è lo studio matematico delle interazioni strategiche: situazioni in cui il tuo risultato dipende non solo da ciò che fai, ma da ciò che fanno gli altri. Si applica ovunque: competizione commerciale, relazioni internazionali, aste, negoziazioni, biologia evolutiva e decisioni quotidiane come scegliere un percorso nel traffico. L’intuizione fondamentale è che gli attori razionali in situazioni strategiche non si limitano a ottimizzare la propria strategia, ma anticipano ciò che faranno gli altri e gli altri faranno lo stesso.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #सापेक्षता
 आइंस्टीन के सापेक्षता के सिद्धांतों ने अंतरिक्ष, समय और गुरुत्वाकर्षण के बारे में हमारी समझ में क्रांति ला दी। **विशेष सापेक्षता** (1905) ने दिखाया कि स्थान और समय अलग-अलग नहीं हैं बल्कि एक ही ताने-बाने में बुने हुए हैं जिसे स्पेसटाइम कहा जाता है, और प्रकाश की गति सभी पर्यवेक्षकों के लिए समान है। **सामान्य सापेक्षता** (1915) ने गुरुत्वाकर्षण को एक बल के रूप में नहीं बल्कि द्रव्यमान और ऊर्जा के कारण अंतरिक्ष-समय की वक्रता के रूप में पुनर्कल्पित किया। ये सिद्धांत जीपीएस नेविगेशन, कण त्वरक और ब्लैक होल और ब्रह्मांड के विकास के बारे में हमारी समझ को रेखांकित करते हैं।
 ---

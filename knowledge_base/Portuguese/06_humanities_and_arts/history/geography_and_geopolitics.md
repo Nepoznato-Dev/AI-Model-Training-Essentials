@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Geografia e Geopolítica
 A geografia molda o destino. A localização de montanhas, rios e recursos naturais determinou rotas comerciais, desencadeou guerras e construiu civilizações durante milénios. Hoje, a geopolítica — a interação entre geografia, poder e política — continua a ser essencial para compreender por que razão as nações se comportam daquela forma.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Обработка сигналов
 Обработка сигналов — это наука об анализе, изменении и синтезе сигналов — представлений физических величин, изменяющихся во времени, пространстве или частоте. Аудио, изображения, видео, данные датчиков, мозговые волны, цены на акции — все это сигналы. Математические инструменты обработки сигналов (преобразования Фурье, фильтры, теория выборки) лежат в основе машинного обучения, коммуникаций, медицинской визуализации и практически всех областей, связанных с данными.
 ---

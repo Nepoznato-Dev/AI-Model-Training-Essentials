@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #Phương pháp nghiên cứu
 Phương pháp nghiên cứu là cách tiếp cận có hệ thống để điều tra các câu hỏi, kiểm tra các giả thuyết và tạo ra kiến ​​thức đáng tin cậy. Cho dù bạn đang tiến hành các thí nghiệm khoa học, khảo sát khoa học xã hội, phân tích kinh doanh hay nghiên cứu học thuật thì phương pháp bạn chọn sẽ xác định xem phát hiện của bạn có đáng tin cậy, có thể tái sử dụng và hữu ích hay không. Một nghiên cứu được thiết kế tốt sẽ mang lại kết quả đáng tin cậy; một thiết kế kém sẽ tạo ra tiếng ồn - hoặc tệ hơn là tạo ra những câu trả lời sai một cách tự tin.
 ---

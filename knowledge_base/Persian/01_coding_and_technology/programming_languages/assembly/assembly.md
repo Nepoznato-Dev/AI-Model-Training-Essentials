@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # زبان اسمبلی
 زبان اسمبلی پایین ترین زبان برنامه نویسی قابل خواندن توسط انسان است. این یک نمایش مستقیم از دستورالعمل‌های کد ماشین کامپیوتر با استفاده از کدهای یادگاری (مانند `MOV`، `ADD`، `JMP`) به جای باینری خام ارائه می‌کند. هر زبان اسمبلی مختص معماری پردازنده خاصی است (x86، ARM، MIPS، RISC-V) – کد نوشته شده برای یک معماری روی معماری دیگر اجرا نمی شود.
 زبان اسمبلی برای ساخت برنامه ها استفاده نمی شود. زمانی استفاده می‌شود که به کنترل مطلق بر روی سخت‌افزار نیاز دارید: نوشتن هسته‌های سیستم‌عامل، درایورهای دستگاه، بوت‌لودرها، سفت‌افزار تعبیه‌شده، بخش‌های کد حیاتی عملکرد، مهندسی معکوس، و درک اینکه چگونه رایانه‌ها در واقع دستورالعمل‌ها را اجرا می‌کنند.

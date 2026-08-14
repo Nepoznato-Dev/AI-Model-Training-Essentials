@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิศวกรรมโค้ดต่ำและแพลตฟอร์ม
 แพลตฟอร์มที่ใช้โค้ดน้อยทำให้ผู้คนสามารถสร้างแอปพลิเคชันด้วยโค้ดที่เขียนด้วยลายมือเพียงเล็กน้อย — โดยทั่วไปผ่านทางอินเทอร์เฟซแบบลากและวาง เวิร์กโฟลว์แบบภาพ และตัวเชื่อมต่อที่สร้างไว้ล่วงหน้า วิศวกรรมแพลตฟอร์มเป็นวินัยในการสร้างแพลตฟอร์มสำหรับนักพัฒนาภายใน (IDP) ซึ่งช่วยให้ทีมผลิตภัณฑ์สามารถให้บริการโครงสร้างพื้นฐานด้วยตนเอง, CI/CD และเครื่องมือในการปฏิบัติงานได้อย่างง่ายดาย แนวโน้มทั้งสองเป็นการตอบสนองต่อปัญหาเดียวกัน นั่นคือช่องว่างระหว่างความต้องการซอฟต์แวร์และอุปทานของนักพัฒนาที่สามารถสร้างซอฟต์แวร์ได้
 ---

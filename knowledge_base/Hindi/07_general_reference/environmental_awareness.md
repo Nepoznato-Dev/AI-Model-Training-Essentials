@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #पर्यावरण जागरूकता
 पर्यावरण कोई अलग चीज नहीं है "बाहर" - यह वह प्रणाली है जो बाकी सब कुछ संभव बनाती है। आप जो भी सांस लेते हैं, जो भी पानी आप पीते हैं, जो भी आप खाते हैं, वह वायुमंडलीय संरचना, जल चक्र, मिट्टी के स्वास्थ्य और परागण नेटवर्क पर निर्भर करता है। यह समझना कि ये प्रणालियाँ कैसे काम करती हैं - और वे कैसे बदल रही हैं - एक जानकार व्यक्ति के लिए वैकल्पिक नहीं है। यह फ़ाइल पर्यावरण विज्ञान के मूल सिद्धांतों, हमारे सामने आने वाली चुनौतियों और व्यवहार में स्थिरता का वास्तव में क्या मतलब है, को कवर करती है।
 ---

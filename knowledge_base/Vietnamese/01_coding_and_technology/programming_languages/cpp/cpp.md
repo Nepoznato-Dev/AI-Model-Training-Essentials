@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C++
 C++ là ngôn ngữ lập trình được biên dịch, có mục đích chung do Bjarne Stroustrup tạo ra, được phát hành lần đầu tiên vào năm 1985. Nó mở rộng C với các tính năng hướng đối tượng, khái quát và -- trong các phiên bản hiện đại (C++ 11 trở lên) -- trừu tượng hóa cấp cao như lambdas, con trỏ thông minh và Thư viện mẫu tiêu chuẩn (STL). C++ tuân theo nguyên tắc "trừu tượng hóa không chi phí": bạn không nên trả tiền cho những tính năng mà bạn không sử dụng.
 C++ là ngôn ngữ được lựa chọn khi bạn cần cả hiệu suất cao và khả năng biểu đạt. Nó hỗ trợ các công cụ trò chơi (Unreal Engine), trình duyệt (Chrome, Firefox), cơ sở dữ liệu (MongoDB), hệ điều hành (các bộ phận của Windows và macOS), hệ thống giao dịch tài chính và mô phỏng thời gian thực.

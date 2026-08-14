@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فناوری های نوظهور
 ## بررسی اجمالی
 برخی فناوری‌ها به جای بهبود تدریجی قابلیت‌های موجود، دسته‌های کاملاً جدیدی از قابلیت‌ها را ایجاد می‌کنند. هدف محاسبات کوانتومی حل مسائلی است که ماشین‌های کلاسیک هزاران سال طول می‌کشند. انرژی همجوشی امکان قدرت پاک بی حد و حصر را ارائه می دهد. رابط های مغز و کامپیوتر پل ذهن و ماشین است. زیست شناسی مصنوعی امکان بازنویسی کدهای بیولوژیکی را فراهم می کند. بخش‌های بعدی توضیح می‌دهند که هر یک از این مرزها امروز کجا قرار دارند و روندهای فعلی نشان می‌دهند که به کجا می‌روند.

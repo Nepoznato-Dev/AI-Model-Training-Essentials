@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Propriedade Intelectual e Inovação
 Propriedade intelectual (PI) refere-se a criações da mente – invenções, obras artísticas, marcas, designs, segredos comerciais – que a lei protege contra uso não autorizado. Inovação é o processo de transformar ideias em valor. A lei de PI existe para equilibrar dois interesses concorrentes: recompensar os criadores (dando-lhes monopólios temporários) e beneficiar a sociedade (garantindo que o conhecimento eventualmente se torne livremente disponível). Compreender a PI é essencial para qualquer pessoa que construa produtos, crie conteúdo, administre um negócio ou trabalhe em pesquisa.
 ---

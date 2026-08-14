@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Oyun Teorisi ve Stratejik Düşünme
 Oyun teorisi, stratejik etkileşimlerin (sonucunuzun yalnızca sizin ne yaptığınıza değil, başkalarının ne yaptığına da bağlı olduğu durumların) matematiksel olarak incelenmesidir. Her yerde geçerlidir: iş rekabeti, uluslararası ilişkiler, müzayedeler, müzakereler, evrimsel biyoloji ve trafikte rota seçme gibi günlük kararlar. Temel anlayış, stratejik durumlardaki rasyonel aktörlerin sadece kendi stratejilerini optimize etmekle kalmayıp, diğerlerinin ne yapacağını tahmin etmeleri ve diğerlerinin de aynısını yapmasıdır.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ر
 R ایک پروگرامنگ زبان اور ماحول ہے جو خاص طور پر شماریاتی کمپیوٹنگ اور ڈیٹا کے تجزیہ کے لیے ڈیزائن کیا گیا ہے۔ 1993 میں آکلینڈ یونیورسٹی میں راس ایہاکا اور رابرٹ جنٹلمین کے ذریعہ تخلیق کیا گیا (اس وجہ سے "R")، یہ اہم توسیعات کے ساتھ ایس زبان کا نفاذ ہے۔ R اوپن سورس ہے اور اسے R کور ٹیم کے ذریعے برقرار رکھا جاتا ہے۔ یہ ماہرینِ شماریات، ڈیٹا تجزیہ کاروں، اور اکیڈمیا، ہیلتھ کیئر، فنانس اور حکومت کے محققین کے لیے معیاری ٹول ہے۔
 آر ڈیٹا ہیرا پھیری، شماریاتی ماڈلنگ، ویژولائزیشن اور رپورٹنگ میں مہارت رکھتا ہے۔ اس کے پیکج ایکو سسٹم (CRAN) میں 20,000 سے زیادہ پیکجز ہیں جن میں عملی طور پر ہر شماریاتی طریقہ وضع کیا گیا ہے۔

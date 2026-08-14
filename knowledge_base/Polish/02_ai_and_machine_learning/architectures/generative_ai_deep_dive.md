@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Głębokie nurkowanie generatywnej AI
 Generatywna sztuczna inteligencja odnosi się do modeli, które tworzą nową treść – obrazy, tekst, dźwięk, wideo, kod – zamiast po prostu klasyfikować lub przewidywać istniejące dane. Podczas gdy większość uwagi poświęca się dużym modelom językowym, krajobraz generatywnej sztucznej inteligencji jest znacznie szerszy. Ten plik opisuje architektury, techniki i kompromisy stojące za nowoczesnymi systemami generatywnymi, od modeli dyfuzyjnych, przez wariacyjne autoenkodery, po modele przepływu.
 ---

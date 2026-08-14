@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # أديان العالم والأساطير المقارنة
 أديان العالم هي الأنظمة الرئيسية للمعتقدات والممارسات والمجتمعات التي شكلت الحضارة الإنسانية لآلاف السنين. تدرس الأساطير المقارنة القصص التي ترويها الثقافات المختلفة عن الخلق، والأبطال، والآلهة، ومعنى الوجود - والأنماط المذهلة التي تتكرر عبر التقاليد التي تفصل بينها آلاف الأميال وآلاف السنين. إن فهم كليهما أمر ضروري لفهم سبب اعتقاد الناس بما يؤمنون به، وكيف تختلف الثقافات، وما الذي يوحد التجربة الإنسانية.
 ---

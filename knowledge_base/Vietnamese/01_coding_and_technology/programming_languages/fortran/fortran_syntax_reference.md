@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fortran — Tham khảo cú pháp
 Tài liệu này cung cấp tài liệu tham khảo cú pháp có cấu trúc, toàn diện cho Modern Fortran (2008/2018). Nó bổ sung cho tham chiếu Fortran chính bằng cách tập trung vào các mẫu cú pháp đầy đủ, hoạt động mảng, mô-đun, OOP và điện toán hiệu năng cao.
 ---

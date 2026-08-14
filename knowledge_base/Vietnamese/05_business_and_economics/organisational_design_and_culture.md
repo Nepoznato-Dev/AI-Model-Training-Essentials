@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thiết kế và Văn hóa Tổ chức
 Thiết kế tổ chức là sự sắp xếp có chủ ý về cơ cấu, quy trình, vai trò và quyền quyết định để thực hiện chiến lược một cách hiệu quả. Văn hóa là những giá trị, niềm tin, chuẩn mực và hành vi được chia sẻ, hình thành nên cách mọi người thực sự làm việc cùng nhau. Cấu trúc cung cấp khuôn khổ; văn hóa định hình hành vi. Một cấu trúc có thể được thiết kế lại trên giấy, nhưng nếu văn hóa không hỗ trợ sự thay đổi thì việc triển khai sẽ thất bại. Tương tự, một nền văn hóa mạnh mẽ kết hợp với một cơ cấu kém hiệu quả sẽ dần dần làm suy yếu hiệu quả hoạt động của tổ chức. Các tổ chức hiệu quả nhất giải quyết được cả hai vấn đề này - và nhận ra rằng chúng có mối liên kết chặt chẽ với nhau.
 ---

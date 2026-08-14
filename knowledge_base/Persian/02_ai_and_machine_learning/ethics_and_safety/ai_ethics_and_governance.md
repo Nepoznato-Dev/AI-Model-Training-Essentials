@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اخلاق و حکومت AI
 سیستم های هوش مصنوعی خنثی نیستند. آنها منعکس کننده داده هایی هستند که بر اساس آنها آموزش دیده اند، ارزش های سازندگان آنها و مشوق های سازمان هایی که آنها را به کار می گیرند. اخلاق این است که فقط بپرسیم "آیا ما می توانیم این را بسازیم؟" اما "آیا باید؟" حکمرانی در مورد ایجاد ساختارهایی است - قوانین، استانداردها، نهادهای نظارتی - که از توسعه و استفاده مسئولانه هوش مصنوعی اطمینان حاصل می کند. این فایل ابعاد اخلاقی کلیدی هوش مصنوعی و چارچوب‌های حاکمیتی را که برای رسیدگی به آنها پدیدار می‌شوند، پوشش می‌دهد.
 ---

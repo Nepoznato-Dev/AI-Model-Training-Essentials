@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آبادیاتی تبدیلیاں
 ## جائزہ
 ڈیموگرافکس تقدیر ہیں - یا کم از کم وہ اس کے ساتھ مضبوطی سے تال میل کرتے ہیں۔ دنیا کی آبادی تیزی سے بوڑھی ہو رہی ہے، نئے نمونوں میں ہجرت کر رہی ہے، بے مثال شرحوں پر شہروں میں جمع ہو رہی ہے، اور نسلی خطوط پر تقسیم ہو رہی ہے جو ووٹنگ کے رویے سے لے کر صارفین کی عادات تک ہر چیز کی تشکیل کرتی ہے۔ یہ تبدیلیاں کئی دہائیوں میں چلیں گی، لیکن ان کے اثرات پہلے ہی نظر آ رہے ہیں۔ یہاں چار بڑے رجحانات ہیں اور ان کا کیا مطلب ہے۔

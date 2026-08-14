@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 Ang OCaml (Objective Caml) ay isang functional programming language na binuo sa INRIA sa France, na unang inilabas noong 1996. Pinagsasama nito ang pagpapahayag ng functional programming na may mga praktikal na feature: isang malakas na uri ng system na may type inference (Hindley-Milner), pattern matching, algebraic data type, at opsyonal na object-oriented programming. Nag-compile ang OCaml sa mabilis na katutubong code at sinusuportahan din ang bytecode.
 Ang pinakasikat na real-world application ng OCaml ay ang **Jane Street** trading firm, na gumagamit ng OCaml para sa buong imprastraktura ng kalakalan nito. Ginagamit din ito sa pagpapaunlad ng compiler (ang Rust compiler ay orihinal na isinulat sa OCaml), pormal na pagpapatunay, mga sistema ng pananalapi, at pagpapatunay ng teorama.

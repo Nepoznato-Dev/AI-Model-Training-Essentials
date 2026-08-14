@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Üretken Yapay Zeka Derin İncelemesi
 Üretken yapay zeka, yalnızca mevcut verileri sınıflandırmak veya tahmin etmek yerine, görseller, metin, ses, video, kod gibi yeni içerikler oluşturan modelleri ifade eder. Büyük dil modelleri en çok ilgiyi çekse de üretken yapay zekanın kapsamı çok daha geniştir. Bu dosya, difüzyon modellerinden varyasyonel otomatik kodlayıcılara ve akış modellerine kadar modern üretken sistemlerin ardındaki mimarileri, teknikleri ve değiş tokuşları kapsar.
 ---

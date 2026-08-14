@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Phi-3-mini and the Local AI Model Landscape"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # फी-3-मिनी और स्थानीय एआई मॉडल लैंडस्केप
 Microsoft के Phi-3-मिनी मॉडल का विश्लेषण - इसका डिज़ाइन दर्शन, वास्तुशिल्प विकल्प और प्रदर्शन विशेषताएँ - और इसकी सफलता हमें प्रभावी, कुशल AI सिस्टम बनाने के बारे में क्या सिखाती है।
 ---

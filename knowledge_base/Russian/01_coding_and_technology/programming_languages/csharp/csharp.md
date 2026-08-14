@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # С#
 C# (произносится как «C-sharp») — это современный объектно-ориентированный типобезопасный язык программирования, разработанный Microsoft под руководством Андерса Хейлсберга и впервые выпущенный в 2002 году. Он работает на платформе .NET и был разработан для объединения возможностей C++ с производительностью Visual Basic. Сегодня C# — это универсальный кроссплатформенный язык, используемый для веб-приложений (ASP.NET), настольного программного обеспечения (Windows), разработки игр (Unity), мобильных приложений (MAUI), облачных сервисов (Azure) и многого другого.
 C# постепенно вобрал в себя лучшие идеи других языков — LINQ, async/await, записей, сопоставления с образцом — что сделало его одним из наиболее многофункциональных и удобных для разработчиков языков.

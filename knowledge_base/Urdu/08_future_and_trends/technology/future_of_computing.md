@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کمپیوٹنگ کا مستقبل
 کمپیوٹنگ کا مستقبل ان قوتوں کے ذریعے تشکیل دیا جا رہا ہے جو گزشتہ 60 سالوں کے بنیادی مفروضوں کو چیلنج کرتی ہیں۔ مور کا قانون - یہ مشاہدہ ہے کہ کمپیوٹنگ کی طاقت تقریبا ہر دو سال میں دوگنی ہوجاتی ہے - سست ہورہی ہے۔ وان نیومن فن تعمیر - الگ سی پی یو اور میموری - ایک "میموری وال" کو مار رہا ہے۔ کوانٹم کمپیوٹنگ کلاسیکی کمپیوٹرز کے مسائل کو حل کرنے کا وعدہ کرتا ہے۔ نیورومورفک چپس دماغ کے فن تعمیر کی نقل کرتے ہیں۔ ایج کمپیوٹنگ پروسیسنگ کو سنٹرلائزڈ ڈیٹا سینٹرز سے دور لے جاتی ہے۔ اور AI تبدیل کر رہا ہے کہ کمپیوٹر کس چیز کے لیے ہیں — ایسے ٹولز سے جو ہدایات پر عمل درآمد کرتے ہیں ان سسٹمز تک جو سیکھتے ہیں، پیدا کرتے ہیں اور وجہ۔ ان تبدیلیوں کو سمجھنا کسی بھی شخص کے لیے اہمیت رکھتا ہے جو ٹیکنالوجی بنا رہا ہے، خرید رہا ہے یا ٹیکنالوجی پر انحصار کر رہا ہے۔
 ---

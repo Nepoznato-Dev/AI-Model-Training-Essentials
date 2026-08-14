@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Análisis real
 El análisis real es la base rigurosa del cálculo. Mientras que la introducción al cálculo le enseña cómo calcular derivadas e integrales, el análisis real pregunta *por qué* estas técnicas funcionan y cuándo fallan. Proporciona las definiciones precisas de límites, continuidad, convergencia e integración que sustentan la teoría de la probabilidad, el análisis funcional, la optimización y las garantías teóricas detrás de los algoritmos de aprendizaje automático.
 ---

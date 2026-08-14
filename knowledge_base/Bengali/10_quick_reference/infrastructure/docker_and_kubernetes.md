@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Docker and Kubernetes Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডকার এবং কুবারনেটস চিট শীট
 ডকারের সাথে অ্যাপ্লিকেশানগুলিকে ধারণ করার জন্য একটি ব্যবহারিক রেফারেন্স এবং কুবারনেটসের সাথে সেগুলিকে সাজানোর জন্য। কমান্ড লাইনের সাথে প্রাথমিক পরিচিতি অনুমান করে।
 ---

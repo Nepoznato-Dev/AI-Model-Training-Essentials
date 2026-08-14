@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # بلاک چین و سیستم های توزیع شده
 بلاک چین نوع خاصی از سیستم توزیع شده است – یک دفتر کل غیرمتمرکز و فقط الحاقی که در آن رکوردها (بلوک ها) توسط هش های رمزنگاری به هم مرتبط می شوند. سیستم های توزیع شده حوزه وسیع تری است که باعث می شود چندین کامپیوتر با هم به عنوان یک کار کنند. هر دو مفهوم برای درک زیرساخت های مدرن مهم هستند، از ارزهای دیجیتال گرفته تا پایگاه های داده توزیع شده تا الگوریتم های اجماع که خدمات جهانی را تقویت می کنند.
 ---

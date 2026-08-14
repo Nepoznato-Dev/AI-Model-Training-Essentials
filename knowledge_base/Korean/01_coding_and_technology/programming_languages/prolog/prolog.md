@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 프롤로그
 Prolog(Programming in Logic)는 Alain Colmerauer와 Philippe Roussel이 1972년에 만든 논리 프로그래밍 언어입니다. 이 목록에 있는 다른 모든 언어와 달리 Prolog는 문제를 해결하는 *방법*을 컴퓨터에 알려주지 않습니다. 즉, *무엇*이 사실인지(사실과 규칙) 선언하면 Prolog의 추론 엔진이 논리적 추론을 통해 답을 찾아냅니다.
 프롤로그는 1980년대 전문가 시스템, 자연어 처리, AI 연구를 위해 선택된 언어였습니다. 이는 일본의 5세대 컴퓨터 시스템 프로젝트를 지원했으며 IBM의 Watson에서 자연어 이해를 위해 사용되었습니다. 오늘날 프롤로그는 제약 조건 해결, 스케줄링, 유형 추론, 법적 추론 등 어디에서나 문제가 자연스럽게 논리적 관계로 표현되는 데 사용됩니다.

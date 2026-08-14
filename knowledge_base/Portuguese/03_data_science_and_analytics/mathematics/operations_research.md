@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pesquisa Operacional
 A pesquisa operacional (PO) é a aplicação de métodos matemáticos à tomada de decisões. Nascida durante a Segunda Guerra Mundial para a logística militar, agora otimiza cadeias de abastecimento, programa companhias aéreas, encaminha frotas de entrega, gerencia estoques e aloca recursos em todos os setores. OR fornece o kit de ferramentas matemáticas para tomar as melhores decisões possíveis sob restrições.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ระบบฝังตัวและ IoT
 ระบบฝังตัวคือคอมพิวเตอร์ที่ซ่อนอยู่ในอุปกรณ์อื่นๆ เช่น หน่วยควบคุมเครื่องยนต์ของรถ ตัวควบคุมเครื่องซักผ้า ไมโครคอนโทรลเลอร์ในเทอร์โมสตัทอัจฉริยะ ต่างจากคอมพิวเตอร์ทั่วไปตรงที่ได้รับการออกแบบมาสำหรับงานเฉพาะ ซึ่งมักมีข้อจำกัดด้านพลังงาน หน่วยความจำ และความเร็วในการประมวลผลที่เข้มงวด Internet of Things (IoT) ขยายระบบฝังตัวโดยเชื่อมต่อกับเครือข่าย ทำให้สามารถตรวจสอบ การควบคุม และรวบรวมข้อมูลจากระยะไกลได้ เมื่อรวมกันแล้วจะเป็นตัวแทนของอุปกรณ์คอมพิวเตอร์หลายพันล้านเครื่องที่มีการโต้ตอบกับโลกทางกายภาพ
 ---

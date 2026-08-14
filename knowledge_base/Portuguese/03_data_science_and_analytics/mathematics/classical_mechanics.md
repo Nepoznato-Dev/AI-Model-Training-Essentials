@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mecânica Clássica
 A mecânica clássica descreve o movimento de objetos sob a influência de forças. Desde maçãs caindo até planetas em órbita, desde cordas vibrantes até partículas em colisão, seus princípios governam o mundo macroscópico. Além de suas aplicações físicas, a mecânica clássica deu origem ao cálculo de variações, à geometria simplética e à estrutura hamiltoniana que sustenta a mecânica quântica e a otimização moderna.
 ---

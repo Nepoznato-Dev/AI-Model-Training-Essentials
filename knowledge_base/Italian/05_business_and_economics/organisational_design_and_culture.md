@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Progettazione e Cultura Organizzativa
 La progettazione organizzativa è la disposizione deliberata di struttura, processi, ruoli e diritti decisionali per eseguire la strategia in modo efficace. La cultura è l’insieme di valori, credenze, norme e comportamenti condivisi che determinano il modo in cui le persone lavorano effettivamente insieme. La struttura fornisce il quadro; la cultura modella il comportamento. Una struttura può essere riprogettata sulla carta, ma se la cultura non supporta il cambiamento, l’implementazione fallirà. Allo stesso modo, una cultura forte abbinata a una struttura inefficace minerà gradualmente le prestazioni organizzative. Le organizzazioni più efficaci affrontano entrambi gli aspetti e riconoscono che sono profondamente interconnessi.
 ---

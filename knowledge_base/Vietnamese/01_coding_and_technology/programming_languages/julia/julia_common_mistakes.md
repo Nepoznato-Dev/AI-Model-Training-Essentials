@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Julia — Những sai lầm thường gặp và những khuôn mẫu phản cảm
 Tài liệu này liệt kê các lỗi, cạm bẫy và mô hình phản đối phổ biến nhất ở Julia kèm theo các chỉnh sửa.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nauka nauki i pedagogiki
 Nauki o uczeniu się to interdyscyplinarne badanie sposobu uczenia się ludzi, czerpiące z psychologii, neuronauki, edukacji i kognitywistyki. Pedagogika to praktyka i metodologia nauczania. Razem odpowiadają na pytania istotne dla każdego, kto uczy, szkoli, mentoruje lub projektuje treści edukacyjne: Jakie metody pomagają ludziom efektywnie się uczyć? Jakie powszechne techniki uczenia się są nieskuteczne? Jak powinna być zorganizowana instrukcja, aby zapewnić optymalne przechowywanie i przekazywanie?
 ---

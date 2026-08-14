@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml — Syntax Reference
 
 This document provides a comprehensive, structured syntax reference for OCaml (4.x/5.x). It complements the main OCaml reference by focusing on exhaustive syntax patterns, algebraic data types, pattern matching, modules, and functional programming idioms.

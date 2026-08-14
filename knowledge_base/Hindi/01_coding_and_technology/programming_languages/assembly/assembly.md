@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सभा की भाषा
 असेंबली भाषा निम्नतम स्तर की मानव-पठनीय प्रोग्रामिंग भाषा है। यह रॉ बाइनरी के बजाय मेमनोनिक कोड (जैसे `MOV`, `ADD`, `JMP`) का उपयोग करके कंप्यूटर के मशीन कोड निर्देशों का प्रत्यक्ष प्रतिनिधित्व प्रदान करता है। प्रत्येक असेंबली भाषा एक विशेष प्रोसेसर आर्किटेक्चर (x86, ARM, MIPS, RISC-V) के लिए विशिष्ट है - एक आर्किटेक्चर के लिए लिखा गया कोड दूसरे पर नहीं चलेगा।
 एप्लिकेशन बनाने के लिए असेंबली भाषा का उपयोग नहीं किया जाता है। इसका उपयोग तब किया जाता है जब आपको हार्डवेयर पर पूर्ण नियंत्रण की आवश्यकता होती है: ऑपरेटिंग सिस्टम कर्नेल, डिवाइस ड्राइवर, बूटलोडर, एम्बेडेड फ़र्मवेयर, प्रदर्शन-महत्वपूर्ण कोड अनुभाग, रिवर्स इंजीनियरिंग लिखना और यह समझना कि कंप्यूटर वास्तव में निर्देशों को कैसे निष्पादित करते हैं।

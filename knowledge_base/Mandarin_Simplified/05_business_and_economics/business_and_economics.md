@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 商业和经济
 每个销售产品或服务的组织都是一个企业，每个生产和分配商品的社会都是一个经济体。无论您是在经营自由职业、在公司工作、试图了解新闻，还是只是弄清楚金钱如何在世界上流动，本文件中的概念都适用。
 ---

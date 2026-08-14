@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Java: errores comunes y antipatrones
 Este documento cataloga los errores, trampas y antipatrones más comunes en Java. Cada entrada muestra el enfoque incorrecto, explica por qué falla y proporciona la solución correcta.
 ---

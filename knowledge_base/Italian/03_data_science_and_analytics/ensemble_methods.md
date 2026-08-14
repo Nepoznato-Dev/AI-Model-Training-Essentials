@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Metodi d'insieme
 I metodi ensemble combinano più modelli di machine learning per produrre previsioni migliori di quelle che un singolo modello potrebbe ottenere da solo. L’intuizione è semplice: se si hanno diversi modelli che sono ciascuno piuttosto accurato ma commettono errori diversi, combinando le loro previsioni si annulleranno i singoli errori e si produrrà un risultato più robusto. Gli ensemble sono alla base delle soluzioni di machine learning più competitive e rimangono alcune delle tecniche più affidabili nei sistemi di produzione.
 ---

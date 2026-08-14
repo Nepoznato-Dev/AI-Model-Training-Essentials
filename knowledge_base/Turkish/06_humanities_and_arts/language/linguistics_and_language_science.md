@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dilbilim ve Dil Bilimi
 Dilbilim, dilin yapısı, anlamı, kullanımı, edinimi ve evrimi üzerine bilimsel bir çalışmadır. Dil, insan iletişiminin tanımlayıcı bir özelliğidir: Sonsuz derecede üretkendir (konuşmacılar daha önce hiç karşılaşmadıkları cümleleri oluşturabilir ve anlayabilir), kültürel olarak aktarılır (tamamen doğuştan olmaktan ziyade öğrenilir) ve sürekli olarak gelişmektedir. Dilin nasıl çalıştığını anlamak, dil teknolojileri geliştiren, öğreten, çeviri yapan veya daha etkili iletişim kurmaya çalışan herkes için geçerlidir.
 ---

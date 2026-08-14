@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ব্যবস্থাপনা এবং প্রকল্প পদ্ধতি
 মানুষ এবং প্রকল্পগুলি পরিচালনা করা যে কোনও সংস্থার সবচেয়ে চাহিদাপূর্ণ দায়িত্বগুলির মধ্যে একটি। প্রযুক্তিগত দক্ষতা এন্ট্রি প্রদান করে, কিন্তু দলগুলিকে নেতৃত্ব দেওয়ার, সিদ্ধান্ত নেওয়ার, কার্যকরভাবে যোগাযোগ করার এবং ফলাফল প্রদান করার ক্ষমতা উদ্দেশ্যগুলি অর্জিত হয়েছে কিনা তা নির্ধারণ করে। এই ফাইলটি কার্যকর ব্যবস্থাপক এবং প্রকল্প নেতারা প্রয়োগ করা কাঠামো, পদ্ধতি এবং ব্যবহারিক দক্ষতাগুলি কভার করে।
 ---

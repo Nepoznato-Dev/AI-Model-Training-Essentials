@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Roadmap zur Weltraumforschung
 ## Übersicht
 Wir erleben ein neues goldenes Zeitalter der Weltraumforschung. Das Artemis-Programm der NASA bringt Menschen zum Mond zurück. SpaceX baut eine vollständig wiederverwendbare Rakete für den Mars. China hat seine eigenen ehrgeizigen Mond- und Marspläne. Und eine wachsende Konstellation privater Unternehmen öffnet den Weltraum für den Handel – vom Satelliteninternet bis zum Weltraumtourismus. Hier ist die Roadmap, vom Mond zum Mars und darüber hinaus.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Inżynieria niskokodowa i platformowa
 Platformy wymagające niewielkiej ilości kodu umożliwiają tworzenie aplikacji przy minimalnej liczbie ręcznie napisanego kodu — zazwyczaj za pomocą interfejsów typu „przeciągnij i upuść”, wizualnych przepływów pracy i gotowych łączników. Inżynieria platform to dyscyplina polegająca na budowaniu wewnętrznych platform programistycznych (IDP), które ułatwiają zespołom produktowym samoobsługę infrastruktury, CI/CD i narzędzi operacyjnych. Obydwa trendy są odpowiedzią na ten sam problem: lukę pomiędzy popytem na oprogramowanie a podażą programistów, którzy potrafią je zbudować.
 ---

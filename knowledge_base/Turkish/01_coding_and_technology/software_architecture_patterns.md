@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yazılım Mimarisi Kalıpları
 Mimarlık, bir sistemin nasıl organize edildiğine, hangi bileşenlere sahip olduğuna, bunların nasıl iletişim kurduğuna ve sorumlulukların nerede olduğuna ilişkin yapısal kararlar dizisidir. İyi mimari, sistemin anlaşılmasını, değiştirilmesini ve ölçeklendirilmesini kolaylaştırır. Kötü mimari her değişikliği bir mücadeleye dönüştürür. Bu dosya ana kalıpları, her birinin ne zaman kullanılacağını ve ilgili ödünleşimleri kapsar.
 ---

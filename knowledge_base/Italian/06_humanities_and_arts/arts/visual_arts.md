@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Arti visive
 L'arte visiva è la forma di comunicazione più antica dell'umanità: dalle pitture rupestri di Lascaux alle installazioni digitali di oggi. Comprendere i movimenti artistici, i mezzi e le istituzioni che preservano le opere creative ti dà un apprezzamento più profondo del modo in cui le società hanno espresso bellezza, potere, spiritualità e dissenso nel corso dei millenni.
 ---

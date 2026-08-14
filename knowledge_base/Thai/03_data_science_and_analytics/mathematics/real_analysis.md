@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิเคราะห์จริง
 การวิเคราะห์ที่แท้จริงคือรากฐานอันเข้มงวดของแคลคูลัส แม้ว่าแคลคูลัสเบื้องต้นจะสอนวิธีคำนวณอนุพันธ์และอินทิกรัล แต่การวิเคราะห์จริงจะถามว่า *ทำไม* เทคนิคเหล่านี้จึงได้ผล และเมื่อใดที่ล้มเหลว โดยให้คำจำกัดความที่แม่นยำของขีดจำกัด ความต่อเนื่อง การบรรจบกัน และการบูรณาการที่สนับสนุนทฤษฎีความน่าจะเป็น การวิเคราะห์เชิงฟังก์ชัน การเพิ่มประสิทธิภาพ และหลักประกันทางทฤษฎีที่อยู่เบื้องหลังอัลกอริธึมการเรียนรู้ของเครื่อง
 ---

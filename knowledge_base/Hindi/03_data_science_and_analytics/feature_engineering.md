@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # फ़ीचर इंजीनियरिंग
 फ़ीचर इंजीनियरिंग कच्चे डेटा को अभ्यावेदन में बदलने की प्रक्रिया है जो मशीन लर्निंग मॉडल को अधिक प्रभावी बनाती है। इसे अक्सर एमएल पाइपलाइन में सबसे महत्वपूर्ण चरण के रूप में वर्णित किया जाता है - आपके द्वारा किसी मॉडल को दी जाने वाली सुविधाएँ आपके द्वारा चुने गए एल्गोरिदम से अधिक मायने रखती हैं। अच्छी तरह से तैयार की गई सुविधाओं वाला एक सरल मॉडल आम तौर पर कच्चे, असंसाधित इनपुट वाले जटिल मॉडल से बेहतर प्रदर्शन करेगा। कला डोमेन और डेटा दोनों को अच्छी तरह से समझने में निहित है ताकि ऐसे सिग्नल तैयार किए जा सकें जिनसे मॉडल सीख सके।
 ---

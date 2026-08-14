@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #COBOL
 COBOL (Common Business-Oriented Language) è uno dei linguaggi di programmazione più antichi ancora in uso, sviluppato per la prima volta nel 1959. È stato progettato per l'elaborazione di dati aziendali: sistemi finanziari, buste paga, banche, assicurazioni e applicazioni governative. La sintassi simile all'inglese di COBOL doveva essere leggibile dai manager aziendali, non solo dai programmatori.
 Nonostante la sua età, COBOL elabora circa il 30% di tutte le transazioni commerciali a livello globale. Le principali banche, agenzie governative (inclusa la Social Security Administration) e compagnie assicurative si affidano ancora ai sistemi mainframe COBOL. La paura del bug Y2K nel 1999 ha riportato COBOL all'attenzione del pubblico e il linguaggio continua a gestire infrastrutture critiche in tutto il mondo.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 행동경제학과 의사결정과학
 행동경제학은 합리적인 대리인이 어떻게 결정을 내리는지가 아니라 사람들이 실제로 어떻게 결정을 내리는지를 연구합니다. 전통적인 경제학에서는 사람들이 합리적이고 이기적이며 정보 처리에 능숙하다고 가정합니다. Kahneman, Tversky, Thaler 등이 수십 년간 연구한 결과 이는 매우 부정확한 것으로 나타났습니다. 사람들은 정신적인 지름길을 사용하고, 관련 없는 상황에 영향을 받고, 최근 정보에 과중한 영향을 미치고, 체계적으로 예측 가능한 오류를 범합니다. 더 나은 제품, 정책, 조직 및 개인 결정을 설계하려면 이러한 패턴을 이해하는 것이 필수적입니다.
 ---

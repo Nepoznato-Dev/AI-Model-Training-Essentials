@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lenguaje ensamblador
 El lenguaje ensamblador es el lenguaje de programación legible por humanos de nivel más bajo. Proporciona una representación directa de las instrucciones del código máquina de una computadora utilizando códigos mnemotécnicos (como `MOV`, `ADD`, `JMP`) en lugar de binario sin formato. Cada lenguaje ensamblador es específico de una arquitectura de procesador particular (x86, ARM, MIPS, RISC-V): el código escrito para una arquitectura no se ejecutará en otra.
 El lenguaje ensamblador no se utiliza para crear aplicaciones. Se utiliza cuando se necesita un control absoluto sobre el hardware: escribir núcleos del sistema operativo, controladores de dispositivos, cargadores de arranque, firmware integrado, secciones de código críticas para el rendimiento, ingeniería inversa y comprender cómo las computadoras ejecutan realmente las instrucciones.

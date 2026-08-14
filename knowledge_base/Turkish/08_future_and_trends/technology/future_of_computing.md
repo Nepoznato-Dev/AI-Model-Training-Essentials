@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bilgi İşlemin Geleceği
 Bilgi işlemin geleceği, son 60 yılın temel varsayımlarına meydan okuyan güçler tarafından şekilleniyor. Moore Yasası (bilgi işlem gücünün kabaca her iki yılda bir ikiye katlandığı gözlemi) yavaşlıyor. Von Neumann mimarisi (CPU ve belleğin ayrı olması) bir "bellek duvarına" çarpıyor. Kuantum hesaplama, klasik bilgisayarların çözemediği sorunları çözmeyi vaat ediyor. Nöromorfik çipler beynin mimarisini taklit ediyor. Edge bilişim, işlemeyi merkezi veri merkezlerinden uzaklaştırır. Yapay zeka, talimatları uygulayan araçlardan öğrenen, üreten ve akıl yürüten sistemlere kadar bilgisayarların ne işe yaradığını değiştiriyor. Bu değişimleri anlamak, teknoloji inşa eden, satın alan veya teknolojiye güvenen herkes için önemlidir.
 ---

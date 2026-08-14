@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kedokteran dan Kesehatan
 Kedokteran adalah ilmu dan praktik mendiagnosis, mengobati, dan mencegah penyakit. Ini adalah salah satu upaya tertua manusia – Sumpah Hipokrates sudah ada sejak zaman Yunani kuno – dan salah satu yang paling cepat berubah. Pada abad terakhir saja, kita beralih dari tidak adanya antibiotik menjadi terapi gen yang dapat menulis ulang DNA pasien.
 File ini mencakup cara kerja pengobatan: spesialisasi utama, cara penyakit didiagnosis dan diobati, cara sistem layanan kesehatan diatur, dan pertanyaan etika yang muncul ketika nyawa manusia dipertaruhkan.

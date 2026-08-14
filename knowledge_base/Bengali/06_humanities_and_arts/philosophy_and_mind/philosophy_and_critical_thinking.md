@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # দর্শন এবং সমালোচনামূলক চিন্তাভাবনা
 দর্শন হল জ্ঞান, বাস্তবতা এবং অস্তিত্ব সম্পর্কে মৌলিক প্রশ্নগুলির পদ্ধতিগত অধ্যয়ন। এটি মূল্যায়নের জন্য কাঠামো প্রদান করে যা জ্ঞান হিসাবে গণ্য হয়, কী করা মূল্যবান এবং কীভাবে দুর্বল যুক্তিগুলি থেকে যুক্তিযুক্ত যুক্তিগুলিকে আলাদা করা যায়। সমালোচনামূলক চিন্তাভাবনা হল এই কাঠামোর ব্যবহারিক প্রয়োগ: দাবি বিশ্লেষণ করার দক্ষতা, ত্রুটিযুক্ত যুক্তি চিহ্নিত করা এবং আরও ভাল-জ্ঞাত সিদ্ধান্ত নেওয়া। এই ফাইলে প্রধান ধারনা, সেগুলিকে মূল্যায়ন করার সরঞ্জাম এবং সকলকে প্রভাবিত করে এমন জ্ঞানীয় পক্ষপাতগুলি কভার করে৷
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Điện từ
 Điện từ là nghiên cứu về điện trường và từ trường và sự tương tác của chúng. Được thống nhất bởi Maxwell vào những năm 1860, điện từ giải thích ánh sáng, điện, từ tính, sóng vô tuyến và cấu trúc của nguyên tử. Đó là lực cơ bản đầu tiên được hiểu đầy đủ về mặt toán học, và các phương trình của nó đã truyền cảm hứng cho thuyết tương đối đặc biệt và lý thuyết trường hiện đại của Einstein.
 ---

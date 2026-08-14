@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #पायथन
 पायथन एक उच्च-स्तरीय, व्याख्या की गई, सामान्य-उद्देश्य वाली प्रोग्रामिंग भाषा है जो गुइडो वैन रोसुम द्वारा बनाई गई थी और पहली बार 1991 में जारी की गई थी। यह महत्वपूर्ण इंडेंटेशन और एक साफ वाक्यविन्यास के माध्यम से कोड पठनीयता को प्राथमिकता देता है जो सादे अंग्रेजी के करीब पढ़ता है। पायथन गतिशील रूप से टाइप किया गया है, कचरा-संग्रहित है, और प्रक्रियात्मक, ऑब्जेक्ट-ओरिएंटेड और कार्यात्मक प्रोग्रामिंग सहित कई प्रोग्रामिंग प्रतिमानों का समर्थन करता है।
 आज, पायथन एआई/एमएल, डेटा साइंस, वैज्ञानिक कंप्यूटिंग और ऑटोमेशन में प्रमुख भाषा है - जबकि शुरुआती लोगों के लिए सबसे अच्छी भाषाओं में से एक बनी हुई है। वह दोहरी पहचान (पहली स्क्रिप्ट के लिए पर्याप्त सरल, बड़े भाषा मॉडल को प्रशिक्षित करने के लिए पर्याप्त शक्तिशाली) ही इसे अलग करती है।

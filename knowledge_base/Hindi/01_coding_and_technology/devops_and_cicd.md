@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps और CI/CD
 DevOps सांस्कृतिक दर्शन, प्रथाओं और उपकरणों का संयोजन है जो टीमों को तेज़ी से और अधिक विश्वसनीय रूप से सॉफ़्टवेयर वितरित करने में सक्षम बनाता है। यह डेवलपर्स (जो परिवर्तन भेजना चाहते हैं) और संचालन (जो स्थिरता चाहते हैं) के बीच की दीवार को तोड़ देता है। सीआई/सीडी - सतत एकीकरण और सतत वितरण - स्वचालन रीढ़ है जो इसे संभव बनाता है।
 ---

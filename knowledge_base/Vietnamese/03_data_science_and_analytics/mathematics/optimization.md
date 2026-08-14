@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tối ưu hóa
 Tối ưu hóa là toán học tìm ra giải pháp tốt nhất từ ​​một tập hợp các giải pháp khả thi. Nó hỏi: với một hàm và các ràng buộc, đầu vào nào sẽ giảm thiểu (hoặc tối đa hóa) đầu ra? Tối ưu hóa là động cơ của máy học - đào tạo một mô hình có nghĩa là giảm thiểu hàm mất mát. Nó xuất hiện trong nghiên cứu hoạt động, kinh tế, thiết kế kỹ thuật và hầu như mọi lĩnh vực định lượng.
 ---

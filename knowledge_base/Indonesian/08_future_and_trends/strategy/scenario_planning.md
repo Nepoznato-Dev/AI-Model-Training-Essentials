@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perencanaan Skenario
 ## Ringkasan
 Tidak ada yang bisa memprediksi masa depan — tapi Anda bisa bersiap menghadapi beberapa kemungkinan yang masuk akal. Perencanaan skenario, yang lahir dari lembaga pemikir Perang Dingin dan disempurnakan oleh Shell selama krisis minyak tahun 1970-an, merupakan cara berpikir sistematis tentang ketidakpastian. Alih-alih bertaruh pada satu ramalan, Anda membangun cerita yang koheren tentang bagaimana segala sesuatunya mungkin terjadi, lalu menguji keputusan Anda terhadap semuanya. Berikut cara kerja metodologi, beserta skenario di seluruh domain utama.

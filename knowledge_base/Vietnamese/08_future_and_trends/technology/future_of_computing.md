@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tương lai của máy tính
 Tương lai của điện toán đang được định hình bởi những thế lực thách thức các giả định cơ bản trong 60 năm qua. Định luật Moore - quan sát cho thấy sức mạnh tính toán tăng gấp đôi sau mỗi hai năm - đang chậm lại. Kiến trúc von Neumann – CPU và bộ nhớ riêng biệt – đang chạm vào “bức tường bộ nhớ”. Điện toán lượng tử hứa hẹn sẽ giải quyết được những vấn đề mà máy tính cổ điển không thể làm được. Chip thần kinh bắt chước cấu trúc của não. Điện toán biên di chuyển việc xử lý ra khỏi các trung tâm dữ liệu tập trung. Và AI đang thay đổi mục đích sử dụng của máy tính — từ các công cụ thực thi hướng dẫn đến các hệ thống học hỏi, tạo ra và suy luận. Hiểu được những thay đổi này là vấn đề quan trọng đối với bất kỳ ai xây dựng, mua hoặc dựa vào công nghệ.
 ---

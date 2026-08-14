@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI 안전 및 정렬
 AI 안전은 우리가 실제로 원하는 작업을 수행하고 명시적으로 배제되지 않은 경우에도 우리가 원하지 않는 작업을 수행하지 않는 AI 시스템을 구축하는 방법에 대한 연구입니다. 정렬은 AI 시스템의 목표와 행동을 인간의 의도와 일치시키는 구체적인 과제입니다. AI 시스템의 성능이 향상됨에 따라 이러한 질문은 학문적 호기심에서 실제 엔지니어링 요구 사항으로 전환됩니다.
 ---

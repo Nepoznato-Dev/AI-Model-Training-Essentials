@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Основы биологии
 Биология – наука о жизни. Все живые существа имеют общие черты: они состоят из клеток, используют энергию, растут, реагируют на окружающую среду, размножаются и развиваются. Биология простирается от молекулярных механизмов внутри одной клетки до взаимодействия целых экосистем и является основой медицины, сельского хозяйства, биотехнологии и охраны природы.
 ---

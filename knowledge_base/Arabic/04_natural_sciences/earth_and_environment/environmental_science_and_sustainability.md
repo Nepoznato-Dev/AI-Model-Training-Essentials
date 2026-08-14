@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # العلوم البيئية والاستدامة
 يطبق علم البيئة أساليب الفيزياء والكيمياء والأحياء والجيولوجيا والاقتصاد على السؤال التالي: "ما الذي يحدث لكوكبنا، وما الذي يمكن فعله حيال ذلك؟" إنه مجال متعدد التخصصات - تقارب بين تخصصات متعددة - مما يساهم في عمقه التحليلي وأهميته السياسية.
 إن التوتر الأساسي في العلوم البيئية هو أن الحضارة الإنسانية تعتمد على استخراج الموارد من البيئة، ولكن استخراج تلك الموارد يغير البيئة بطرق يمكن أن تؤدي إلى تقويض الأنظمة التي نعتمد عليها. إن فهم حلقة ردود الفعل هذه هو المجال بأكمله باختصار.

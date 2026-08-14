@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ingegneria dei dati e pipeline
 L'ingegneria dei dati è la disciplina che mira a costruire sistemi che spostano, trasformano e archiviano dati su larga scala. Senza pipeline di dati affidabili, i modelli di machine learning non possono essere addestrati, i dashboard mostrano numeri obsoleti e le decisioni aziendali si basano su congetture. Questo file copre l'architettura, gli strumenti e le pratiche per creare un'infrastruttura dati che funzioni.
 ---

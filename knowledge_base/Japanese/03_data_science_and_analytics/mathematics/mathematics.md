@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 数学
 数学は学校で学ぶだけの科目ではなく、ほぼすべての技術分野の基礎となっています。物理学では宇宙を説明するためにそれを使用します。コンピューターサイエンスではアルゴリズムの設計にそれを使用します。機械学習はこれを使用して重みを最適化します。金融はリスクの価格設定にそれを使用します。すべての分野を習得する必要はありませんが、状況を理解し、各分野がどこに当てはまるかを知ることで、他のトピックを理解しやすくなります。
 ---

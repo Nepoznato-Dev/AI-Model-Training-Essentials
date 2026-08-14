@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C++
 C++ adalah bahasa pemrograman terkompilasi untuk tujuan umum yang dibuat oleh Bjarne Stroustrup, pertama kali dirilis pada tahun 1985. C++ memperluas C dengan fitur berorientasi objek, generik, dan -- dalam versi modern (C++11 dan yang lebih baru) -- abstraksi tingkat tinggi seperti lambda, smart pointer, dan Standard Template Library (STL). C++ mengikuti prinsip "abstraksi nol-overhead": Anda tidak perlu membayar untuk fitur yang tidak Anda gunakan.
 C++ adalah bahasa pilihan saat Anda membutuhkan performa tinggi dan kekuatan ekspresif. Ini mendukung mesin game (Unreal Engine), browser (Chrome, Firefox), database (MongoDB), sistem operasi (bagian dari Windows dan macOS), sistem perdagangan keuangan, dan simulasi waktu nyata.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 组织设计和文化
 组织设计是为了有效执行战略而对结构、流程、角色和决策权进行的有意安排。文化是塑造人们实际合作方式的共同价值观、信仰、规范和行为。结构提供框架；文化塑造行为。可以在纸上重新设计结构，但如果文化不支持变革，实施就会失败。同样，强大的文化与无效的结构相结合也会逐渐损害组织绩效。最有效的组织会同时解决这两个问题，并认识到它们之间是紧密相连的。
 ---

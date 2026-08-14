@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # प्रौद्योगिकी और कंप्यूटिंग
 कंप्यूटिंग हर जगह है - आपके फोन में, आपकी कार में, आपके रेफ्रिजरेटर में, आपके चिकित्सा उपकरणों में, और आधुनिक समाज को चलाने वाले बुनियादी ढांचे में। यह सब कैसे काम करता है यह समझने से लाभ पाने के लिए आपको प्रोग्रामर होने की आवश्यकता नहीं है। यह फ़ाइल बुनियादी बातों को शामिल करती है: कंप्यूटर क्या है, इंटरनेट कैसे काम करता है, सॉफ़्टवेयर कैसे बनाया जाता है, और डिजिटल दुनिया को आकार देने वाली अवधारणाएँ।
 > **क्या आप गहराई में जाना चाहते हैं?** यह फ़ाइल एक व्यापक अवलोकन है। किसी भी विषय के विस्तृत कवरेज के लिए,[`01_coding_and_technology/`](../01_coding_and_technology/)में समर्पित फ़ाइलें देखें - जिनमें[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), औरशामिल हैं।

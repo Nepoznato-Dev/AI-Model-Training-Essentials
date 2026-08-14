@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভবিষ্যৎ স্বাস্থ্যসেবা
 ## ওভারভিউ
 ওষুধ একটি প্রতিক্রিয়াশীল মডেল থেকে স্থানান্তরিত হচ্ছে - লক্ষণগুলি উপস্থিত হওয়ার পরে চিকিত্সা করুন - যা ভবিষ্যদ্বাণীমূলক, ব্যক্তিগতকৃত এবং ক্রমবর্ধমান প্রতিরোধমূলক। জিনোমিক্স একটি $3 বিলিয়ন প্রকল্প থেকে একটি সাব-$1,000 রুটিন পরীক্ষায় চলে গেছে। চিকিত্সকরা করার আগে AI স্ক্যানে রোগগুলি চিহ্নিত করতে শিখছে। এবং পুনরুত্পাদনমূলক ওষুধ বিজ্ঞান কল্পকাহিনীকে ক্লিনিকাল ট্রায়ালে পরিণত করছে। এখানে তিনটি বৃহত্তম সীমান্ত জুড়ে কী ঘটছে: ব্যক্তিগতকৃত ওষুধ, দীর্ঘায়ু গবেষণা এবং পুনর্জন্মের ওষুধ৷

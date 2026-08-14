@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / Object Pascal — Référence de syntaxe
 Ce document fournit une référence de syntaxe complète et structurée pour Delphi/Object Pascal. Il complète la référence principale Delphi en se concentrant sur des modèles de syntaxe exhaustifs, des fonctionnalités de POO, des génériques, des enregistrements et des idiomes de langage.
 ---

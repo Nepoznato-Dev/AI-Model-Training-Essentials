@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 쉘 및 파워셸
 쉘 스크립팅은 명령줄 해석기용 스크립트 작성을 의미합니다. 가장 중요한 두 가지 셸은 Linux 및 macOS의 기본값인 **Bash**(Bourne Again Shell)와 Microsoft의 최신 크로스 플랫폼 셸 및 스크립팅 언어인 **PowerShell**입니다. 셸 스크립트는 시스템 관리 작업, 빌드 파이프라인, 파일 처리 및 배포 워크플로를 자동화합니다.
 모든 개발자, DevOps 엔지니어 및 시스템 관리자는 셸 스크립팅 기술이 필요합니다. 웹 서버 배포, 로그 파일 처리, CI/CD 파이프라인 설정, 백업 자동화 등 어떤 작업을 하든 셸 스크립팅은 작업을 위한 도구입니다.

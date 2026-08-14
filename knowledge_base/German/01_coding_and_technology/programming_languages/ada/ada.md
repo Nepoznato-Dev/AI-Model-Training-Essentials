@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Ada
 Ada ist eine statisch typisierte, kompilierte Programmiersprache, die für sicherheitskritische und hochintegrierte Systeme entwickelt wurde. Ursprünglich in den 1980er Jahren im Auftrag des US-Verteidigungsministeriums entwickelt (benannt nach Ada Lovelace, die als erste Computerprogrammiererin gilt), legt Ada Wert auf Zuverlässigkeit, Wartbarkeit und Korrektheit. Es wurde entwickelt, um die Hunderte von Programmiersprachen, die damals vom Verteidigungsministerium verwendet wurden, durch eine einzige, genau spezifizierte Sprache zu ersetzen.
 Ada wird in der Luftfahrt (Fly-by-Wire-Systeme), im Weltraum (ESA und NASA), in der Verteidigung (Raketenlenkung, Radar), im Schienenverkehr und bei medizinischen Geräten eingesetzt – überall dort, wo Softwarefehler Menschenleben kosten können.

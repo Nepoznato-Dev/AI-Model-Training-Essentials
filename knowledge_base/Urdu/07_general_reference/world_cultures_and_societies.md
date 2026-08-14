@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # عالمی ثقافتیں اور معاشرے
 ثقافت ایک معاشرے کا فریم ورک ہے — مشترکہ عقائد، اقدار، رسوم و رواج، رویے اور نوادرات جنہیں اراکین اپنی دنیا اور ایک دوسرے سے نمٹنے کے لیے استعمال کرتے ہیں۔ ثقافتی تنوع کو سمجھنا معمولی باتوں کو یاد کرنے کے بارے میں نہیں ہے۔ یہ اس بات کو تسلیم کرنے کے بارے میں ہے کہ دنیا کو دیکھنے کا ایک طریقہ ہزاروں میں ہے، اور یہ کہ دوسرے نظام اندرونی طور پر مربوط، تاریخی طور پر بنیاد، اور اپنی شرائط پر سمجھنے کے قابل ہیں۔
 ---

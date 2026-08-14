@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Царапать
 Scratch — это визуальный блочный язык программирования, разработанный Медиа-лабораторией Массачусетского технологического института и впервые выпущенный в 2007 году. Вместо написания текстового кода пользователи объединяют цветные блоки для создания программ. Scratch разработан специально для детей в возрасте от 8 до 16 лет (хотя его используют ученики всех возрастов) для обучения фундаментальным концепциям программирования — циклам, условным выражениям, переменным, событиям и функциям — без барьера синтаксических ошибок.
 Scratch — наиболее широко используемый вводный язык программирования в мире, с более чем 100 миллионами зарегистрированных пользователей и доступный на более чем 70 языках. Он запускается в веб-браузере и бесплатен.

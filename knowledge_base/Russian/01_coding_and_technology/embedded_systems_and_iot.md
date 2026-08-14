@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Встроенные системы и Интернет вещей
 Встроенные системы — это компьютеры, спрятанные внутри других устройств — блока управления двигателем вашего автомобиля, контроллера стиральной машины, микроконтроллера в умном термостате. В отличие от компьютеров общего назначения, они предназначены для конкретных задач, часто с жесткими ограничениями по мощности, памяти и скорости обработки. Интернет вещей (IoT) расширяет возможности встроенных систем, подключая их к сетям, обеспечивая удаленный мониторинг, управление и сбор данных. Вместе они представляют собой миллиарды вычислительных устройств, взаимодействующих с физическим миром.
 ---

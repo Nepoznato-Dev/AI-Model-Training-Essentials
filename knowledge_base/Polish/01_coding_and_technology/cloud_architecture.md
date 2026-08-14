@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Architektura chmurowa
 Przetwarzanie w chmurze zasadniczo zmieniło sposób, w jaki organizacje tworzą, wdrażają i skalują oprogramowanie. Zamiast kupować i utrzymywać serwery fizyczne, możesz udostępniać zasoby obliczeniowe na żądanie, płacić za to, czego używasz i skalować globalnie w ciągu kilku minut. Ten plik obejmuje podstawowe koncepcje, wzorce architektury, usługi i najlepsze praktyki, które musisz znać.
 ---

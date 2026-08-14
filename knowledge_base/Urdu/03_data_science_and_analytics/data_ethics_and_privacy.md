@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیٹا اخلاقیات اور رازداری
 ڈیٹا اخلاقیات اس بات کا مطالعہ ہے کہ ڈیٹا اکٹھا کرنا، تجزیہ کرنا، اور تعیناتی کس طرح لوگوں کے حقوق، خودمختاری اور فلاح و بہبود کو متاثر کرتی ہے۔ رازداری اس بارے میں مخصوص تشویش ہے کہ ذاتی معلومات کو کون کنٹرول کرتا ہے اور اس کا اشتراک کیسے کیا جاتا ہے۔ یہ موضوعات علمی مباحثوں سے صفحہ اول کی خبروں کی طرف منتقل ہو گئے ہیں — GDPR کا نفاذ، اربوں صارفین کو متاثر کرنے والے ڈیٹا کی خلاف ورزیاں، اور بڑھتی ہوئی عوامی بیداری کہ ٹیک کمپنیوں کے ڈیٹا کے طریقوں کے جمہوریت، مساوات اور انفرادی آزادی کے حقیقی نتائج ہیں۔
 ---

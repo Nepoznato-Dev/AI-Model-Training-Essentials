@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ترمودینامیک و مکانیک آماری
 ترمودینامیک رفتار ماکروسکوپی سیستم ها را از نظر دما، فشار و آنتروپی توصیف می کند - بدون اینکه بداند اتم ها چگونه به نظر می رسند. مکانیک آماری ترمودینامیک را از پایین به بالا توضیح می دهد: خواص ماکروسکوپی را از رفتار میکروسکوپی تعداد زیادی ذره به دست می آورد. آنها با هم عمیق ترین درک را از انرژی، آنتروپی و تعادل ارائه می دهند - مفاهیمی که به نظریه اطلاعات، یادگیری ماشین و فراتر از آن مهاجرت کرده اند.
 ---

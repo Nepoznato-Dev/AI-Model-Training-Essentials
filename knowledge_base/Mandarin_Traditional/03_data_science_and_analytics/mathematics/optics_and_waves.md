@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 光學和波
 波無所不在：聲音、光、水、無線電訊號、量子機率振幅、股市波動以及神經網路活化的振動。光學－對光的研究－是最發達的波動科學，其數學工具（傅立葉分析、干涉、繞射）適用於每一種波動現象。了解波對於訊號處理、影像分析、通訊和所有現代技術的物理層至關重要。
 ---

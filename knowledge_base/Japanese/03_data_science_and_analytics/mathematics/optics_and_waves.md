@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 光学と波
 音、光、水、無線信号、量子確率の振幅、株式市場の変動、ニューラルネットワークの活性化の振動など、波はあらゆるところに存在します。光学 (光の研究) は最もよく発達した波動科学であり、その数学的ツール (フーリエ解析、干渉、回折) はあらゆる波動現象に適用されます。波を理解することは、信号処理、画像分析、通信、そしてすべての現代テクノロジーの物理層にとって不可欠です。
 ---

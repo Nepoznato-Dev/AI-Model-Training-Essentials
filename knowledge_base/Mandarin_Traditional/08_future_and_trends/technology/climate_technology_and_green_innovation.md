@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 氣候科技與綠色創新
 氣候技術包括旨在減少溫室氣體排放、適應氣候變遷以及使全球經濟轉向永續發展的工具、系統和創新。這可以說是 21 世紀最重要的技術領域——可控的 1.5°C 升溫與災難性的 3°C+ 之間的差異在很大程度上取決於這些技術大規模部署的速度。挑戰不僅是科學方面的，而且是經濟、政治和社會方面的。
 ---

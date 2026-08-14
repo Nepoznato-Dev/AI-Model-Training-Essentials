@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # История и культура
 История — это история того, что сделали люди: успехов, катастроф, изобретений и идей, которые сформировали мир, в котором мы живем сегодня. Это не просто список дат и имен. Понимание истории поможет вам понять, почему границы находятся там, где они есть, почему люди говорят на тех языках, на которых говорят, почему некоторые страны богаты, а другие нет, и почему конфликты, которые кажутся древними, все еще горят.
 Этот файл охватывает основные периоды и темы мировой истории, от первых цивилизаций до наших дней.

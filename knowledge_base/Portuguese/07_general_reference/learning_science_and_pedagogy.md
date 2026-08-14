@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aprendendo Ciências e Pedagogia
 Aprender ciências é o estudo interdisciplinar de como as pessoas aprendem – com base na psicologia, neurociência, educação e ciências cognitivas. Pedagogia é a prática e metodologia de ensino. Juntos, eles abordam questões relevantes para qualquer pessoa que ensina, treina, orienta ou cria conteúdo educacional: Que métodos ajudam as pessoas a aprender de forma eficaz? Quais técnicas de estudo comuns são ineficientes? Como a instrução deve ser estruturada para uma retenção e transferência ideais?
 ---

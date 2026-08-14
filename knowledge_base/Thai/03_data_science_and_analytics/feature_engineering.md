@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # คุณสมบัติทางวิศวกรรม
 วิศวกรรมฟีเจอร์เป็นกระบวนการในการแปลงข้อมูลดิบให้เป็นตัวแทนที่ทำให้โมเดลการเรียนรู้ของเครื่องมีประสิทธิภาพมากขึ้น มักได้รับการอธิบายว่าเป็นขั้นตอนที่สำคัญที่สุดในไปป์ไลน์ ML คุณสมบัติที่คุณให้กับโมเดลมีความสำคัญมากกว่าอัลกอริทึมที่คุณเลือก โดยทั่วไปแล้ว โมเดลที่เรียบง่ายพร้อมคุณสมบัติที่ออกแบบมาอย่างดีจะมีประสิทธิภาพเหนือกว่าโมเดลที่ซับซ้อนด้วยอินพุตดิบที่ยังไม่ได้ประมวลผล ศิลปะอยู่ที่การทำความเข้าใจทั้งโดเมนและข้อมูลที่ดีพอที่จะสร้างสัญญาณที่โมเดลสามารถเรียนรู้ได้
 ---

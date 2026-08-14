@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #سیستم های دینامیک
 یک **سیستم دینامیکی** توضیح می دهد که چگونه یک حالت در طول زمان طبق یک قانون ثابت تکامل می یابد. از مدارهای سیاره‌ای تا پویایی جمعیت، از الگوهای آب و هوا تا آموزش شبکه‌های عصبی، نظریه سیستم‌های دینامیکی زبان و ابزارهایی را برای درک چگونگی تغییر چیزها فراهم می‌کند. این فایل معادلات دیفرانسیل معمولی (ODE)، معادلات دیفرانسیل جزئی (PDEs)، تجزیه و تحلیل پایداری، آشفتگی و دوشاخه ها را پوشش می دهد.
 ---

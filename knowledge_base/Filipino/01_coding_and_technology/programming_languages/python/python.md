@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sawa
 Ang Python ay isang high-level, interpreted, general-purpose programming language na nilikha ni Guido van Rossum at unang inilabas noong 1991. Inuuna nito ang pagiging madaling mabasa ng code sa pamamagitan ng makabuluhang indentation at malinis na syntax na malapit sa simpleng Ingles. Ang Python ay dynamic na na-type, kinokolekta ng basura, at sumusuporta sa maramihang mga paradigm sa programming kabilang ang procedural, object-oriented, at functional programming.
 Ngayon, ang Python ang nangingibabaw na wika sa AI/ML, data science, scientific computing, at automation — habang nananatiling isa sa mga pinakamahusay na wika para sa mga nagsisimula. Ang dalawahang pagkakakilanlan na iyon (sapat na simple para sa isang unang script, sapat na makapangyarihan upang sanayin ang malalaking modelo ng wika) ang nagpapahiwalay dito.

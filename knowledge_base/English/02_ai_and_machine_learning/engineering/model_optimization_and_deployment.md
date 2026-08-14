@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Model Optimisation and Deployment
 
 Training a large AI model is a significant achievement, but deploying it efficiently is where most of the engineering effort is required. A model that takes 10 seconds to respond or requires eight A100 GPUs is impractical for most real-world applications. Model optimisation is the process of making models smaller, faster, and more cost-effective — while maintaining acceptable quality. This file covers quantisation, pruning, distillation, and the practical tools for deploying models in production.

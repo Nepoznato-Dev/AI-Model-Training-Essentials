@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Философия и критическое мышление
 Философия — это систематическое исследование фундаментальных вопросов о познании, реальности и существовании. Он обеспечивает основу для оценки того, что считать знаниями, что стоит делать и как отличить хорошо аргументированные аргументы от слабых. Критическое мышление — это практическое применение этой концепции: умение анализировать утверждения, выявлять ошибочные рассуждения и принимать более обоснованные решения. В этом файле описаны основные идеи, инструменты для их оценки и когнитивные предубеждения, которые затрагивают каждого.
 ---

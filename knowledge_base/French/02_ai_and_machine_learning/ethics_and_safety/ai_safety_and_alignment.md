@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sécurité et alignement de l'IA
 La sécurité de l'IA est l'étude de la manière de construire des systèmes d'IA qui font ce que nous voulons réellement qu'ils fassent – ​​et ne font pas des choses que nous ne voulons pas, même si celles-ci n'ont pas été explicitement exclues. L'alignement est le défi spécifique consistant à faire en sorte que les objectifs et les comportements des systèmes d'IA correspondent aux intentions humaines. À mesure que les systèmes d’IA deviennent plus performants, ces questions passent des curiosités académiques aux exigences pratiques de l’ingénierie.
 ---

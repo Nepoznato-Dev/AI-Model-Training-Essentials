@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Grundlagen des Schreibens und der Kommunikation
 Schreiben und Kommunikation sind die Fähigkeiten, Ideen effektiv zu vermitteln – sei es durch E-Mails, Berichte, Dokumentationen, Präsentationen oder Gespräche. Die meiste Wissensarbeit ist im Grunde Kommunikationsarbeit: Fachkräfte müssen ihre Denkweise erklären, andere überzeugen, Entscheidungen dokumentieren, Spezifikationen schreiben, Ergebnisse präsentieren und teamübergreifend zusammenarbeiten. Die Kluft zwischen dem, was gemeint ist, und dem, was verstanden wird, ist der Ursprung der meisten Probleme, und eine bessere Kommunikation verringert diese Kluft.
 ---

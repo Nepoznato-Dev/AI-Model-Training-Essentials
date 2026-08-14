@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Trasformazione dell'istruzione
 ## Panoramica
 Il modello tradizionale di istruzione – stare in classe per dodici anni, magari andare all’università, poi lavorare – sta crollando. I tutor di intelligenza artificiale possono ora fornire istruzioni personalizzate su larga scala. Il ritmo del cambiamento tecnologico fa sì che l’apprendimento permanente non sia più un optional. E i datori di lavoro si preoccupano sempre più di ciò che puoi *fare*, non solo delle credenziali che possiedi. Ecco come viene reinventata l'istruzione.

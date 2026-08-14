@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # টাইপস্ক্রিপ্ট
 টাইপস্ক্রিপ্ট হল জাভাস্ক্রিপ্টের একটি স্ট্যাটিক্যালি টাইপ করা সুপারসেট যা মাইক্রোসফ্ট (অ্যান্ডার্স হেজলবার্গের নেতৃত্বে) দ্বারা তৈরি করা হয়েছিল এবং প্রথম 2012 সালে প্রকাশিত হয়েছিল। এটি জাভাস্ক্রিপ্টে ঐচ্ছিক টাইপ টীকা, ইন্টারফেস, জেনেরিক এবং উন্নত টাইপ-সিস্টেম বৈশিষ্ট্যগুলি যোগ করে — তারপর প্লেইন জাভাস্ক্রিপ্ট যেখানে চালায় সেখানে কম্পাইল করে। TypeScript একটি পৃথক ভাষা বা রানটাইম নয়; এটি একটি টাইপ চেকার সহ জাভাস্ক্রিপ্ট।
 টাইপস্ক্রিপ্ট বড় আকারের জাভাস্ক্রিপ্ট বিকাশের জন্য আদর্শ হয়ে উঠেছে। প্রতিক্রিয়া, কৌণিক, ভিএস কোড, ডেনো এবং বেশিরভাগ প্রধান ওপেন-সোর্স জাভাস্ক্রিপ্ট প্রকল্পগুলি টাইপস্ক্রিপ্টে লেখা হয়। আপনি যদি কোনো উল্লেখযোগ্য আকারের একটি নতুন জাভাস্ক্রিপ্ট প্রকল্প শুরু করেন, টাইপস্ক্রিপ্ট প্রস্তাবিত ডিফল্ট।

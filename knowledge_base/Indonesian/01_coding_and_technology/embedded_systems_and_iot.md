@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Sistem Tertanam dan IoT
 Sistem tertanam adalah komputer yang tersembunyi di dalam perangkat lain — unit kontrol mesin mobil Anda, pengontrol mesin cuci Anda, mikrokontroler dalam termostat cerdas. Tidak seperti komputer untuk tujuan umum, komputer ini dirancang untuk tugas-tugas tertentu, seringkali dengan batasan ketat pada daya, memori, dan kecepatan pemrosesan. Internet of Things (IoT) memperluas sistem tertanam dengan menghubungkannya ke jaringan, memungkinkan pemantauan, pengendalian, dan pengumpulan data jarak jauh. Bersama-sama, mereka mewakili miliaran perangkat komputasi yang berinteraksi dengan dunia fisik.
 ---

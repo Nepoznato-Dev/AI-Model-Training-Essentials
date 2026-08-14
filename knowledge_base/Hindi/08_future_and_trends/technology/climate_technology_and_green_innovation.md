@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जलवायु प्रौद्योगिकी और हरित नवाचार
 जलवायु प्रौद्योगिकी में ग्रीनहाउस गैस उत्सर्जन को कम करने, जलवायु परिवर्तन के अनुकूल होने और वैश्विक अर्थव्यवस्था को टिकाऊ स्तर पर स्थानांतरित करने के लिए डिज़ाइन किए गए उपकरण, सिस्टम और नवाचार शामिल हैं। यह यकीनन 21वीं सदी का सबसे महत्वपूर्ण प्रौद्योगिकी क्षेत्र है - प्रबंधनीय 1.5°C वार्मिंग और विनाशकारी 3°C+ के बीच का अंतर काफी हद तक इस बात पर निर्भर करता है कि इन तकनीकों को कितनी जल्दी बड़े पैमाने पर तैनात किया जा सकता है। चुनौती सिर्फ वैज्ञानिक नहीं बल्कि आर्थिक, राजनीतिक और सामाजिक है।
 ---

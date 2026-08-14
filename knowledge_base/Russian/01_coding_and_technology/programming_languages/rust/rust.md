@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ржавчина
 Rust — это статически типизированный компилируемый язык программирования, впервые выпущенный в 2015 году и первоначально разработанный Грейдоном Хоаром из Mozilla. Определяющее обещание Rust — **безопасность памяти без сборки мусора**. Это достигается за счет системы владения — набора правил, применяемых во время компиляции, который устраняет целые категории ошибок (разыменование нулевого указателя, гонки данных, переполнение буфера, использование после освобождения), создавая при этом код так же быстро, как C или C++.
 Rust уже несколько лет подряд признается «самым любимым» языком программирования в опросе разработчиков Stack Overflow. Он все чаще используется в системном программировании, WebAssembly, инструментах CLI, облачной инфраструктуре и в качестве замены C/C++ в контекстах, критически важных для безопасности. Ядро Linux теперь принимает код Rust.

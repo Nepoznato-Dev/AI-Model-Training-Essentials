@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Procesamiento de señales
 El procesamiento de señales es la ciencia de analizar, modificar y sintetizar señales: representaciones de cantidades físicas que varían en el tiempo, el espacio o la frecuencia. Audio, imágenes, vídeo, datos de sensores, ondas cerebrales, precios de acciones: todos son señales. Las herramientas matemáticas del procesamiento de señales (transformadas de Fourier, filtros, teoría de muestreo) son fundamentales para el aprendizaje automático, las comunicaciones, las imágenes médicas y prácticamente todos los campos que trabajan con datos.
 ---

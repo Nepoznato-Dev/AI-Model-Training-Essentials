@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 데이터 윤리 및 개인정보 보호
 데이터 윤리는 데이터 수집, 분석 및 배포가 사람들의 권리, 자율성 및 복지에 어떻게 영향을 미치는지에 대한 연구입니다. 개인 정보 보호는 개인 정보를 관리하는 사람과 공유 방법에 대한 구체적인 관심사입니다. 이러한 주제는 학문적 토론에서 일면 뉴스로 옮겨졌습니다. GDPR 시행, 수십억 명의 사용자에게 영향을 미치는 데이터 위반, 기술 기업의 데이터 관행이 민주주의, 평등 및 개인의 자유에 실질적인 영향을 미친다는 대중의 인식이 높아지는 것입니다.
 ---

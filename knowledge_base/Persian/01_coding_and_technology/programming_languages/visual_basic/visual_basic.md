@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ویژوال بیسیک
 ویژوال بیسیک (VB) یک زبان برنامه نویسی است که توسط مایکروسافت توسعه یافته است. در طی چندین نسل تکامل یافته است: ویژوال بیسیک اصلی (1991)، ویژوال بیسیک 6.0 (1998)، VB.NET (2002، بخشی از دات نت فریم ورک)، و ویژوال بیسیک ..NET (فعال، که اکنون به سادگی "ویژوال بیسیک" به عنوان بخشی از NET نامیده می شود). VB طوری طراحی شده است که برای مبتدیان و توسعه سریع برنامه (RAD) با تمرکز بر رابط های کاربر گرافیکی و برنامه نویسی رویداد محور قابل دسترسی باشد.
 امروزه VB.NET به عنوان بخشی از اکوسیستم دات نت در کنار سی شارپ ادامه می یابد، اگرچه مایکروسافت نشان داده است که C# زبان اصلی آینده است. VB همچنان به طور گسترده در محیط های سازمانی، به ویژه برای برنامه های قدیمی ویندوز، اتوماسیون اداری (VBA) و ابزارهای تجاری داخلی استفاده می شود.

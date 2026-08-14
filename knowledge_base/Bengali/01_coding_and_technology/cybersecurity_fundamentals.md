@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সাইবার সিকিউরিটি ফান্ডামেন্টাল
 নিরাপত্তা হল এমন একটি শৃঙ্খলা যা শুরু থেকেই একটি সিস্টেমের প্রতিটি স্তরে একত্রিত করা উচিত, একটি চিন্তাভাবনা হিসাবে যোগ করার পরিবর্তে। একটি ওয়েব অ্যাপ্লিকেশন তৈরি করা, পরিকাঠামো পরিচালনা করা, বা একটি API শিপিং করা হোক না কেন, হুমকির ল্যান্ডস্কেপ এবং প্রতিরক্ষার মৌলিক বিষয়গুলি বোঝা অপরিহার্য।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #پرولوگ
 پرولوگ (منطق میں پروگرامنگ) ایک منطقی پروگرامنگ زبان ہے جسے 1972 میں ایلین کولمراؤر اور فلپ روسل نے بنایا تھا۔ اس فہرست میں موجود ہر دوسری زبان کے برعکس، Prolog کمپیوٹر کو یہ نہیں بتاتا ہے کہ *کس طرح* کسی مسئلے کو حل کیا جائے — آپ اعلان کرتے ہیں کہ *کیا* سچ ہے (حقائق اور اصول)، اور پرولوگ کا انفرنس انجن منطقی کٹوتی کے ذریعے جواب کا پتہ لگاتا ہے۔
 1980 کی دہائی میں ماہرین کے نظام، قدرتی زبان کی پروسیسنگ، اور AI تحقیق کے لیے پرولوگ پسند کی زبان تھی۔ اس نے جاپان کے ففتھ جنریشن کمپیوٹر سسٹم پروجیکٹ کو تقویت بخشی اور اسے قدرتی زبان کی سمجھ کے لیے IBM کے واٹسن میں استعمال کیا گیا۔ آج، Prolog کا استعمال رکاوٹوں کو حل کرنے، شیڈولنگ، قسم کا اندازہ، قانونی استدلال، اور کہیں بھی مسائل کو قدرتی طور پر منطقی تعلقات کے طور پر ظاہر کیا جاتا ہے۔

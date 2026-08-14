@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 未来の交通
 ＃＃ 概要
 A から B に移動することは、まったく違ったものになるでしょう。自動運転車はすでに公道を走っています。電動航空機は試験飛行を完了しつつある。ハイパーループのコンセプトは、真空管での列車並みの速度での移動を約束します。そして、かつては漫画の世界だった空飛ぶタクシーが認証を取得しつつあります。私たちの移動方法を再構築するテクノロジー全体の現状をご紹介します。

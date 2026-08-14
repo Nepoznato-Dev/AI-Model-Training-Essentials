@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Özellik Mühendisliği
 Özellik mühendisliği, ham verileri makine öğrenimi modellerini daha etkili hale getiren temsillere dönüştürme sürecidir. Genellikle makine öğrenimi hattındaki en önemli adım olarak tanımlanır; bir modele verdiğiniz özellikler, seçtiğiniz algoritmadan daha önemlidir. İyi hazırlanmış özelliklere sahip basit bir model genellikle ham, işlenmemiş girdilere sahip karmaşık bir modelden daha iyi performans gösterecektir. Sanat, hem alanı hem de verileri, modelin öğrenebileceği sinyalleri yaratacak kadar iyi anlamakta yatmaktadır.
 ---

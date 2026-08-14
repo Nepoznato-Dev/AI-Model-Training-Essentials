@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lua
 
 Lua is a lightweight, embeddable scripting language designed for extending applications. Created in 1993 at the Pontifical Catholic University of Rio de Janeiro in Brazil, Lua is one of the fastest scripting languages available. Its small footprint (the interpreter is ~120KB) and simplicity make it the go-to choice for game development scripting, embedded systems, and configuration.

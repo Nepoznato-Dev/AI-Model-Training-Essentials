@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Эрланг и эликсир
 Erlang был создан компанией Ericsson в 1986 году для питания телефонных коммутаторов, что объясняет, почему он обеспечивает параллельную работу, отказоустойчивость и распределенные системы лучше, чем что-либо еще. Процессы Erlang легкие, изолированные и взаимодействуют только посредством передачи сообщений. При сбое процесса супервизор перезапускает его. Эта философия «пусть выйдет из строя» позволяет создавать системы, которые работают годами без простоев.
 Elixir — это современный язык, созданный Хосе Валимом на базе виртуальной машины Erlang (BEAM) в 2012 году. Он сохраняет все, что предлагает Erlang — параллелизм, отказоустойчивость, распределение — но добавляет дружественный синтаксис, метапрограммирование и отличные инструменты (менеджер пакетов Mix, реестр пакетов Hex). Elixir широко используется для веб-приложений (через платформу Phoenix), систем реального времени и встроенных устройств (через Nerves).

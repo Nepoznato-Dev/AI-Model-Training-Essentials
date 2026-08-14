@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ilmu Lingkungan dan Keberlanjutan
 Ilmu lingkungan menerapkan metode fisika, kimia, biologi, geologi, dan ekonomi untuk pertanyaan: "Apa yang terjadi pada planet kita, dan apa yang dapat dilakukan untuk mengatasinya?" Ini adalah bidang interdisipliner – sebuah konvergensi berbagai disiplin ilmu – yang berkontribusi terhadap kedalaman analitis dan relevansi kebijakannya.
 Ketegangan inti dalam ilmu lingkungan adalah: peradaban manusia bergantung pada pengambilan sumber daya dari lingkungan, namun pengambilan sumber daya tersebut akan mengubah lingkungan sehingga dapat merusak sistem tempat kita bergantung. Memahami bahwa putaran umpan balik adalah keseluruhan bidang secara singkat.

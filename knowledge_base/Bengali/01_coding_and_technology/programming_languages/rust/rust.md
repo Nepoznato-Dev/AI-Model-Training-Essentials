@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মরিচা
 মরিচা হল একটি স্থিতিশীলভাবে টাইপ করা, সংকলিত প্রোগ্রামিং ভাষা যা প্রথম 2015 সালে প্রকাশিত হয়েছিল, যা মূলত Mozilla-এ Graydon Hoare দ্বারা বিকশিত হয়েছিল। মরিচা এর সংজ্ঞায়িত প্রতিশ্রুতি হল **আবর্জনা সংগ্রহ ছাড়াই স্মৃতির নিরাপত্তা**। এটি তার মালিকানা ব্যবস্থার মাধ্যমে এটি অর্জন করে — কম্পাইলের সময় প্রয়োগ করা নিয়মের একটি সেট যা C বা C++ এর মতো দ্রুত কোড তৈরি করার সময় বাগগুলির সম্পূর্ণ বিভাগ (নাল পয়েন্টার ডিরেফারেন্স, ডেটা রেস, বাফার ওভারফ্লো, ব্যবহার-পর-মুক্ত) দূর করে।
 একাধিক বছর ধরে স্ট্যাক ওভারফ্লো ডেভেলপার সার্ভেতে রাস্টকে "সবচেয়ে প্রিয়" প্রোগ্রামিং ভাষা হিসেবে ভোট দেওয়া হয়েছে। এটি ক্রমবর্ধমানভাবে সিস্টেম প্রোগ্রামিং, ওয়েব অ্যাসেম্বলি, CLI টুলস, ক্লাউড অবকাঠামো এবং নিরাপত্তা-সমালোচনামূলক প্রসঙ্গে C/C++ এর প্রতিস্থাপন হিসাবে ব্যবহৃত হচ্ছে। লিনাক্স কার্নেল এখন মরিচা কোড গ্রহণ করে।

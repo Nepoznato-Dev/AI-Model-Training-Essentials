@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoria Musical e Acústica
 A teoria musical é o estudo de como a música funciona – os padrões, estruturas e princípios que tornam algumas combinações de sons agradáveis ​​ou significativas e outras discordantes ou caóticas. Acústica é a física do som – como as vibrações viajam pelo ar, como são produzidas e percebidas. Juntos, eles explicam por que um acorde de dó maior soa feliz, por que um tom menor parece triste, como as salas de concerto são projetadas e por que sua música favorita lhe dá arrepios.
 ---

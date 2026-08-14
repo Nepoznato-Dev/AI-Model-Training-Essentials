@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # بازاریابی و استراتژی دیجیتال
 بازاریابی نحوه ایجاد، برقراری ارتباط و ارائه ارزش به مشتریان است. این شامل کل سیستم درک نیازهای مشتری، قرار دادن یک محصول برای رفع آن نیازها و ایجاد روابطی است که خریداران را به طرفداران تبدیل می کند. انقلاب دیجیتال ابزارها، کانال‌ها و سرعت بازاریابی را متحول کرده است، در حالی که اصول اولیه ثابت هستند.
 ---

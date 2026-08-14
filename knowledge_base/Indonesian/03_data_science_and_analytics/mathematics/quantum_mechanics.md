@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mekanika Kuantum
 Mekanika kuantum adalah teori fisika pada skala terkecil — atom, elektron, foton, dan partikel dasar alam. Ini menggantikan dunia deterministik mekanika klasik dengan probabilitas, superposisi, dan keterjeratan. Meskipun sifatnya berlawanan dengan intuisi, mekanika kuantum adalah teori yang paling tepat diuji di seluruh ilmu pengetahuan. Saat ini, prinsip-prinsipnya menjadi relevan secara langsung dengan komputasi melalui komputer kuantum, yang menjanjikan penyelesaian masalah tertentu secara eksponensial lebih cepat daripada mesin klasik.
 ---

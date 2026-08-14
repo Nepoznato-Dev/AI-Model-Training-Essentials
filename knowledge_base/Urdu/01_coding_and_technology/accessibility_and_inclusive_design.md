@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # قابل رسائی اور جامع ڈیزائن
 رسائی پذیری (اکثر a11y کے طور پر مخفف) سافٹ ویئر کو ہر ایک کے لیے قابل استعمال بنانے کا عمل ہے — بشمول بصری، سمعی، موٹر، ​​علمی، اور اعصابی معذوری والے افراد۔ یہ بہت سے دائرہ اختیار میں ایک قانونی ضرورت ہے اور ایک معیاری انجینئرنگ پریکٹس ہے۔ قابل رسائی سافٹ ویئر ہر ایک کے لیے بہتر سافٹ ویئر ہے، کیونکہ ڈیزائن کے فیصلے جو معذور صارفین کی حمایت کرتے ہیں — واضح ڈھانچہ، کی بورڈ نیویگیشن، کافی کنٹراسٹ، پڑھنے کے قابل متن — تمام صارفین کے لیے تجربے کو بہتر بناتے ہیں۔
 ---

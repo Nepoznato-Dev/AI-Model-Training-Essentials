@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 一般知识
 该文件是对话、新闻、教育和日常生活中经常出现的事实和概念的集合。将其视为背景知识——帮助您理解您正在阅读、听到或经历的内容。
 ---

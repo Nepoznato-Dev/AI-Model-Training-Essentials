@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Matemáticas discretas
 Las matemáticas discretas son el estudio de estructuras matemáticas que son fundamentalmente contables o separadas, a diferencia de las matemáticas continuas (cálculo, análisis real), que se ocupan de cantidades uniformes e ininterrumpidas. Las matemáticas discretas sustentan la informática, la criptografía, el diseño de algoritmos y las estructuras de datos. Si las matemáticas continuas describen el mundo físico, las matemáticas discretas describen el mundo computacional.
 ---

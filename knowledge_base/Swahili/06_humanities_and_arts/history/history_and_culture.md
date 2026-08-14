@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Historia na Utamaduni
 Historia ni hadithi ya kile ambacho wanadamu wamefanya - mafanikio, majanga, uvumbuzi na mawazo ambayo yalitengeneza ulimwengu tunaoishi leo. Sio orodha tu ya tarehe na majina. Kuelewa historia hukusaidia kuelewa kwa nini mipaka iko mahali ilipo, kwa nini watu wanazungumza lugha wanazozungumza, kwa nini baadhi ya nchi ni tajiri huku nyingine hazina, na kwa nini migogoro inayoonekana kuwa ya kale bado inapamba moto.
 Faili hii inashughulikia vipindi na mada kuu katika historia ya ulimwengu, kutoka kwa ustaarabu wa kwanza hadi leo.

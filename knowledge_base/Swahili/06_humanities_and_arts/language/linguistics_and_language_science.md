@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Isimu na Sayansi ya Lugha
 Isimu ni uchunguzi wa kisayansi wa lugha - muundo wake, maana, matumizi, upatikanaji, na mageuzi. Lugha ni kipengele bainifu cha mawasiliano ya binadamu: huwa na tija kubwa (wazungumzaji wanaweza kuunda na kuelewa sentensi ambazo hawajawahi kukutana nazo hapo awali), hupitishwa kitamaduni (hufunzwa badala ya kuzaliwa tu), na inaendelea kubadilika. Kuelewa jinsi lugha inavyofanya kazi ni muhimu kwa mtu yeyote anayeunda teknolojia ya lugha, kufundisha, kutafsiri au kufanya kazi ili kuwasiliana kwa ufanisi zaidi.
 ---

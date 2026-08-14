@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Artes escénicas
 Las artes escénicas (teatro, cine, danza y música) son lugares donde el arte se encuentra con la presencia viva de una audiencia. A diferencia de una pintura en una pared o un libro en un estante, la performance se desarrolla en tiempo real, creando una experiencia compartida entre artista y espectador que ha sido fundamental para la cultura humana durante miles de años.
 ---

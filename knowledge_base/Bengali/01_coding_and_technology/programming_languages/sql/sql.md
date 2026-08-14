@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # এসকিউএল
 এসকিউএল (স্ট্রাকচার্ড কোয়েরি ল্যাঙ্গুয়েজ) একটি ডোমেন-নির্দিষ্ট ভাষা যা রিলেশনাল ডাটাবেসে ডেটা পরিচালনা এবং অনুসন্ধানের জন্য ডিজাইন করা হয়েছে। প্রথম 1970-এর দশকে IBM-এ বিকশিত হয়েছিল এবং 1987 সালে প্রমিত, এসকিউএল অ্যাপ্লিকেশন এবং তাদের ডেটার মধ্যে প্রাথমিক ইন্টারফেস হিসাবে রয়ে গেছে। প্রতিটি প্রধান রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (RDBMS) — PostgreSQL, MySQL, SQL সার্ভার, Oracle, SQLite — তার ক্যোয়ারী ভাষা হিসেবে SQL ব্যবহার করে।
 SQL একটি সাধারণ-উদ্দেশ্য প্রোগ্রামিং ভাষা নয়। আপনি SQL এ একটি ওয়েব অ্যাপ্লিকেশন লিখবেন না। কিন্তু যদি আপনার অ্যাপ্লিকেশান ডেটা সঞ্চয় করে — এবং প্রায় সব অ্যাপ্লিকেশানই করে — তাহলে SQL হল সেই ভাষা যা আপনি ডেটা পুনরুদ্ধার, রূপান্তর এবং পরিচালনা করতে ব্যবহার করেন৷ সাধারণ প্রোগ্রামিংয়ের পরে এটি তর্কযোগ্যভাবে সর্বজনীনভাবে দরকারী প্রযুক্তিগত দক্ষতা।

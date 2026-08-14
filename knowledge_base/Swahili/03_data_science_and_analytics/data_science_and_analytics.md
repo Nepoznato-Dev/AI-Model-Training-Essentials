@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sayansi ya Takwimu na Uchanganuzi
 Sayansi ya data ni taaluma ya kubadilisha data mbichi kuwa maarifa yanayotekelezeka. Inakaa katika makutano ya takwimu, sayansi ya kompyuta, na utaalam wa kikoa - na imekuwa muhimu katika kila sekta kutoka kwa fedha hadi huduma ya afya. Faili hii hupitia dhana za msingi, zana, na mtiririko wa kazi ambao kila mtaalamu anapaswa kujua.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C++
 C++, Bjarne Stroustrup tarafından oluşturulan ve ilk kez 1985'te piyasaya sürülen genel amaçlı, derlenmiş bir programlama dilidir. C'yi nesne yönelimli özellikler, jenerikler ve modern sürümlerde (C++ 11 ve sonrası) lambdalar, akıllı işaretçiler ve Standart Şablon Kitaplığı (STL) gibi yüksek düzeyli soyutlamalarla genişletir. C++ "sıfır genel gider soyutlaması" ilkesini izler: kullanmadığınız özellikler için ödeme yapmamalısınız.
 Hem yüksek performansa hem de ifade gücüne ihtiyaç duyduğunuzda C++ tercih ettiğiniz dildir. Oyun motorlarına (Unreal Engine), tarayıcılara (Chrome, Firefox), veritabanlarına (MongoDB), işletim sistemlerine (Windows ve macOS'un parçaları), finansal ticaret sistemlerine ve gerçek zamanlı simülasyonlara güç sağlar.

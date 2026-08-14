@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Делфи/Объект Паскаль
 Delphi — объектно-ориентированный язык программирования, основанный на Pascal, первоначально разработанный Borland (позже Embarcadero, теперь Idera). Впервые выпущенный в 1995 году как «Delphi 1», он был разработан для быстрой разработки приложений (RAD) для настольных приложений Windows. Язык формально известен как Object Pascal, а среда разработки Delphi предоставляет визуальный дизайнер форм, интегрированные инструменты баз данных и мощный компилятор.
 Delphi был одним из самых популярных инструментов разработки для Windows в конце 1990-х — начале 2000-х годов. Хотя его популярность значительно снизилась, он поддерживает выделенную базу пользователей, особенно в корпоративных настольных приложениях, интерфейсах баз данных и обслуживании устаревших систем. Modern Delphi (11/12) поддерживает кроссплатформенную разработку для Windows, macOS, iOS и Android с помощью платформы FireMonkey (FMX).

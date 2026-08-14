@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #व्यवहारिक अर्थशास्त्र और निर्णय विज्ञान
 व्यवहारिक अर्थशास्त्र यह अध्ययन करता है कि लोग वास्तव में कैसे निर्णय लेते हैं - यह नहीं कि तर्कसंगत एजेंट उन्हें कैसे लेंगे। पारंपरिक अर्थशास्त्र मानता है कि लोग तर्कसंगत, स्वार्थी और सूचना प्रसंस्करण में अच्छे हैं। कन्नमैन, टावर्सकी, थेलर और अन्य लोगों के दशकों के शोध से पता चला है कि यह बेहद गलत है। लोग मानसिक शॉर्टकट का उपयोग करते हैं, अप्रासंगिक संदर्भ से प्रभावित होते हैं, हाल की जानकारी को अधिक महत्व देते हैं, और व्यवस्थित रूप से पूर्वानुमानित गलतियाँ करते हैं। बेहतर उत्पादों, नीतियों, संगठनों और व्यक्तिगत निर्णयों को डिजाइन करने के लिए इन पैटर्न को समझना आवश्यक है।
 ---

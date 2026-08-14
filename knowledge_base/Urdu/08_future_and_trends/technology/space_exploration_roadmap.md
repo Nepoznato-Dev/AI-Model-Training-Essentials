@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اسپیس ایکسپلوریشن روڈ میپ
 ## جائزہ
 ہم خلائی تحقیق کے ایک نئے سنہری دور سے گزر رہے ہیں۔ ناسا کا آرٹیمس پروگرام انسانوں کو چاند پر واپس بھیج رہا ہے۔ SpaceX مریخ کے لیے ڈیزائن کیا گیا مکمل طور پر دوبارہ قابل استعمال راکٹ بنا رہا ہے۔ چین کے اپنے قمری اور مریخ کے اپنے مہتواکانکشی منصوبے ہیں۔ اور پرائیویٹ کمپنیوں کا بڑھتا ہوا برج کامرس کے لیے جگہ کھول رہا ہے - سیٹلائٹ انٹرنیٹ سے لے کر خلائی سیاحت تک۔ یہ ہے روڈ میپ، چاند سے مریخ تک اور اس سے آگے۔

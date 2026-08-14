@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # R
 R adalah bahasa pemrograman dan lingkungan yang dirancang khusus untuk komputasi statistik dan analisis data. Dibuat oleh Ross Ihaka dan Robert Gentleman di Universitas Auckland pada tahun 1993 (maka "R"), ini merupakan implementasi dari bahasa S dengan perluasan yang signifikan. R adalah open source dan dikelola oleh Tim Inti R. Ini adalah alat standar bagi ahli statistik, analis data, dan peneliti di bidang akademis, layanan kesehatan, keuangan, dan pemerintahan.
 R unggul dalam manipulasi data, pemodelan statistik, visualisasi, dan pelaporan. Ekosistem paketnya (CRAN) memiliki lebih dari 20.000 paket yang mencakup hampir semua metode statistik yang pernah dirancang.

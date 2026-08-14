@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 전자기학
 전자기학은 전기장과 자기장 및 이들의 상호 작용을 연구하는 학문입니다. 전자기학은 1860년대 맥스웰에 의해 통합되어 빛, 전기, 자기, 전파 및 원자 구조를 설명합니다. 이는 수학적으로 완전히 이해된 최초의 기본 힘이었으며, 그 방정식은 아인슈타인의 특수 상대성 이론과 현대 장 이론에 영감을 주었습니다.
 ---

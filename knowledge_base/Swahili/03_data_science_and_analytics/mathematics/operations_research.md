@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Utafiti wa Uendeshaji
 Utafiti wa uendeshaji (OR) ni matumizi ya mbinu za hisabati katika kufanya maamuzi. Ilizaliwa wakati wa Vita vya Pili vya Dunia kwa ajili ya vifaa vya kijeshi, sasa inaboresha misururu ya ugavi, inaratibu mashirika ya ndege, meli za uwasilishaji wa njia, inadhibiti orodha na kugawa rasilimali katika kila sekta. AU hutoa zana za hisabati kwa ajili ya kufanya maamuzi bora zaidi chini ya vikwazo.
 ---

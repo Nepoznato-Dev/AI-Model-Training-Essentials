@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kultury i społeczeństwa świata
 Kultura to szkielet społeczeństwa — wspólne przekonania, wartości, zwyczaje, zachowania i artefakty, których członkowie używają, aby radzić sobie ze swoim światem i sobą nawzajem. Zrozumienie różnorodności kulturowej nie polega na zapamiętywaniu ciekawostek; chodzi o uznanie, że jeden sposób widzenia świata należy do tysięcy, a inne systemy są wewnętrznie spójne, ugruntowane historycznie i warte zrozumienia na własnych zasadach.
 ---

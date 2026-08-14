@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 조직 디자인과 문화
 조직설계는 전략을 효과적으로 실행하기 위해 구조, 프로세스, 역할, 의사결정 권한을 의도적으로 배열하는 것입니다. 문화는 사람들이 실제로 함께 일하는 방식을 형성하는 공유된 가치, 신념, 규범 및 행동입니다. 구조는 프레임워크를 제공합니다. 문화는 행동을 형성한다. 구조는 서류상으로 재설계될 수 있지만 문화가 변경을 지원하지 않으면 구현이 실패합니다. 마찬가지로, 비효율적인 구조와 결합된 강력한 문화는 점차적으로 조직 성과를 약화시킬 것입니다. 가장 효과적인 조직은 두 가지 모두를 해결하고 두 가지가 서로 깊게 연결되어 있음을 인식합니다.
 ---

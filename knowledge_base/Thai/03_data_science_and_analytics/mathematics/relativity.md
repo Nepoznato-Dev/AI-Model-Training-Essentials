@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ทฤษฎีสัมพัทธภาพ
 ทฤษฎีสัมพัทธภาพของไอน์สไตน์ได้ปฏิวัติความเข้าใจเกี่ยวกับอวกาศ เวลา และแรงโน้มถ่วงของเรา **ทฤษฎีสัมพัทธภาพพิเศษ** (1905) แสดงให้เห็นว่าอวกาศและเวลาไม่ได้แยกจากกัน แต่ถักทอเป็นผืนผ้าเดียวที่เรียกว่ากาลอวกาศ และความเร็วแสงเท่ากันสำหรับผู้สังเกตการณ์ทุกคน **ทฤษฎีสัมพัทธภาพทั่วไป** (1915) จินตนาการถึงแรงโน้มถ่วงใหม่ไม่ใช่เป็นแรง แต่เป็นความโค้งของกาลอวกาศที่เกิดจากมวลและพลังงาน ทฤษฎีเหล่านี้สนับสนุนการนำทางด้วย GPS เครื่องเร่งอนุภาค และความเข้าใจของเราเกี่ยวกับหลุมดำและวิวัฒนาการของจักรวาล
 ---

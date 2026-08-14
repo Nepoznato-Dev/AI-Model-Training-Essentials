@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 网络安全基础知识
 安全性是一门学科，必须从一开始就集成到系统的每一层，而不是事后添加。无论是构建 Web 应用程序、管理基础设施还是发布 API，了解威胁形势和防御基础知识都是至关重要的。
 ---

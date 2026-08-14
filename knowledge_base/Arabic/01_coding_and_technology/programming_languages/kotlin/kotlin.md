@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #كوتلين
 Kotlin هي لغة برمجة مجمعة ومكتوبة بشكل ثابت تم تطويرها بواسطة JetBrains وتم إصدارها لأول مرة في عام 2011 (1.0 في عام 2016). إنه يعمل على Java Virtual Machine (JVM) وهو قابل للتشغيل بشكل كامل مع Java - مما يعني أنه يمكنك استخدام أي مكتبة Java من Kotlin واستدعاء كود Kotlin من Java دون أي أغلفة. في عام 2017، أعلنت جوجل أن Kotlin هي اللغة المفضلة لتطوير Android، ومنذ ذلك الحين أصبحت لغة Android المهيمنة.
 تم تصميم Kotlin لإصلاح نقاط الضعف في Java: الإسهاب، واستثناءات المؤشر الفارغ، والميزات الحديثة المفقودة. والنتيجة هي لغة تبدو وكأنها لغة Java حديثة - مختصرة وآمنة ومعبرة - مع الحفاظ على التوافق الكامل مع نظام Java البيئي الضخم.

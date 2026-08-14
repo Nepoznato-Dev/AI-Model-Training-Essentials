@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Number Theory
 
 Number theory is the study of the integers — whole numbers and their properties. Gauss called it "the queen of mathematics." Despite studying the simplest objects (1, 2, 3, ...), number theory produces some of the deepest and hardest problems in all of mathematics. Today, it underpins modern cryptography, hashing algorithms, error-correcting codes, and random number generation.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mantık ve Eleştirel Düşünme
 Mantık, geçerli akıl yürütmenin incelenmesidir; sağlam argümanların nasıl oluşturulacağı ve hatalı olanların nasıl belirleneceği. Eleştirel düşünme, varsayımları sorgulama, kanıtları değerlendirme ve dikkatli bir şekilde akıl yürütme gibi disiplinli bir alışkanlıktır. Bu beceriler yalnızca matematik ve bilgisayar bilimlerinde değil, aynı zamanda günlük karar vermede, bilimsel araştırmada ve bilgi açısından zengin bir dünyada gezinmede de gereklidir.
 ---

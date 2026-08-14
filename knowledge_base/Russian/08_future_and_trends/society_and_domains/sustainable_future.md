@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Устойчивое будущее
 ## Обзор
 Вопрос больше не в том, *нужен ли* миру переход к устойчивой экономике, а в том, *как быстро* и *кто руководит*. Возобновляемая энергия в настоящее время является самым дешевым источником энергии на большинстве рынков. Принципы экономики замкнутого цикла переходят от нишевой концепции к корпоративной стратегии. Города переосмысливают все: от транспорта до отходов. А гонка за нулевым результатом меняет отрасли от энергетики до финансов. Вот как выглядит устойчивое будущее в четырех ключевых измерениях.

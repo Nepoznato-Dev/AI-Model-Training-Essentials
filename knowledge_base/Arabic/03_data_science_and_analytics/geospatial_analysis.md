@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التحليل الجغرافي المكاني
 التحليل الجغرافي المكاني هو عملية فحص البيانات التي تحتوي على مكون جغرافي - الإحداثيات أو العناوين أو الحدود أو أي بيانات مرتبطة بموقع ما على الأرض. فهو يجيب على أسئلة مثل "أين عملاؤنا؟"، و"ما هو الطريق الأمثل؟"، و"كيف يتغير استخدام الأراضي بمرور الوقت؟". تحتوي كل مجموعة بيانات على بُعد مكاني، ويفتح فهمها رؤى يفتقدها التحليل الإحصائي البحت.
 ---

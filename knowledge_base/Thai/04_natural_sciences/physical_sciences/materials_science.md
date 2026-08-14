@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #วัสดุศาสตร์
 วัสดุศาสตร์คือการศึกษาว่าโครงสร้างของวัสดุ (ในระดับอะตอม จุลทรรศน์ และขนาดมหภาค) กำหนดคุณสมบัติของวัสดุอย่างไร และวิธีการประมวลผลสามารถใช้เพื่อควบคุมโครงสร้างนั้นเพื่อให้ได้ประสิทธิภาพตามที่ต้องการได้อย่างไร เป็นสาขาที่ตอบคำถามเช่น ทำไมเหล็กถึงแข็งแรงแต่หนัก? ทำไมกระจกถึงใสแต่เปราะ? เราจะทำให้แบตเตอรี่ชาร์จเร็วขึ้นได้อย่างไร? วัสดุอะไรจะอยู่รอดได้บนดาวอังคาร? เทคโนโลยีทุกชิ้นที่คุณเคยใช้นั้นทำจากวัสดุ และความก้าวหน้าทางเทคโนโลยีมักต้องการความก้าวหน้าในด้านวัสดุเสมอ
 ---

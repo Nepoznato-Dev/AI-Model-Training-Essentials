@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Рекомендательные системы
 Системы рекомендаций предсказывают, что пользователь захочет увидеть, купить или с чем взаимодействовать в следующий раз. Они обеспечивают подачу контента в социальных сетях, предложения продуктов на сайтах электронной коммерции, выбор фильмов на потоковых платформах и результаты поиска. Несмотря на то, что они невидимы для большинства пользователей, они входят в число наиболее коммерчески эффективных систем искусственного интеллекта в мире — по оценкам Netflix, их система рекомендаций экономит более 1 миллиарда долларов в год за счет сокращения оттока подписчиков.
 ---

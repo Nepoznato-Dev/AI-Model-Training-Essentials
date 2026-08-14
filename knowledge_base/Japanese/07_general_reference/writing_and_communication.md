@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ライティングとコミュニケーションの基礎
 ライティングとコミュニケーションは、電子メール、レポート、文書、プレゼンテーション、会話などを通じてアイデアを効果的に伝えるスキルです。ほとんどのナレッジワークは基本的にコミュニケーションワークです。専門家は自分の考えを説明し、他の人を説得し、決定事項を文書化し、仕様書を書き、調査結果を提示し、チーム間で協力する必要があります。ほとんどの問題は、意味することと理解されることとの間のギャップから生じますが、より良いコミュニケーションがそのギャップを縮めます。
 ---

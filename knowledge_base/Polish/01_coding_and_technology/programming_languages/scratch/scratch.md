@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Zadrapanie
 Scratch to wizualny język programowania oparty na blokach opracowany przez MIT Media Lab i wydany po raz pierwszy w 2007 roku. Zamiast pisać kod tekstowy, użytkownicy łączą kolorowe bloki, aby tworzyć programy. Scratch został zaprojektowany specjalnie dla dzieci w wieku 8–16 lat (chociaż używają go uczniowie w każdym wieku), aby uczyć podstawowych pojęć programistycznych — pętli, warunków warunkowych, zmiennych, zdarzeń i funkcji — bez bariery błędów składniowych.
 Scratch to najpopularniejszy na świecie język programowania dla początkujących, z ponad 100 milionami zarejestrowanych użytkowników i dostępny w ponad 70 językach. Działa w przeglądarce internetowej i jest bezpłatny.

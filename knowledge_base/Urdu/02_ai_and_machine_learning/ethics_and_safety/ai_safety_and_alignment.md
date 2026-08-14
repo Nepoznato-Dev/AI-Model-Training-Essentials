@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI سیفٹی اور صف بندی
 AI سیفٹی اس بات کا مطالعہ ہے کہ AI سسٹمز کو کیسے بنایا جائے جو وہ کرتے ہیں جو ہم ان سے کرنا چاہتے ہیں - اور وہ کام نہ کریں جو ہم نہیں چاہتے، چاہے ان کو واضح طور پر مسترد نہ کیا گیا ہو۔ صف بندی AI سسٹمز کے اہداف اور طرز عمل کو انسانی ارادوں کے مطابق بنانے کا ایک مخصوص چیلنج ہے۔ جیسے جیسے AI سسٹمز زیادہ قابل ہو جاتے ہیں، یہ سوالات علمی تجسس سے عملی انجینئرنگ کی ضروریات کی طرف منتقل ہو جاتے ہیں۔
 ---

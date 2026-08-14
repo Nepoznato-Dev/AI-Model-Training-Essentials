@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # প্রযুক্তি এবং কম্পিউটিং
 কম্পিউটিং সর্বত্র রয়েছে — আপনার ফোনে, আপনার গাড়িতে, আপনার রেফ্রিজারেটরে, আপনার চিকিৎসা ডিভাইসে, এবং আধুনিক সমাজের পরিকাঠামোতে। এটি কীভাবে কাজ করে তা বোঝার জন্য আপনাকে প্রোগ্রামার হতে হবে না। এই ফাইলটি মৌলিক বিষয়গুলি কভার করে: একটি কম্পিউটার কী, কীভাবে ইন্টারনেট কাজ করে, কীভাবে সফ্টওয়্যার তৈরি করা হয় এবং ধারণাগুলি যেগুলি ডিজিটাল বিশ্বকে রূপ দেয়৷
 > **গভীর যেতে চান?** এই ফাইলটি একটি বিস্তৃত ওভারভিউ। যেকোন বিষয়ের বিস্তারিত কভারেজের জন্য,[`01_coding_and_technology/`](../01_coding_and_technology/)-এ[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), এবং সহ ডেডিকেটেড ফাইলগুলি দেখুন৷

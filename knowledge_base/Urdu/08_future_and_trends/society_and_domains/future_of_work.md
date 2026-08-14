@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کام کا مستقبل
 ## جائزہ
 ہمارے کام کرنے کا طریقہ صنعتی انقلاب کے بعد سے کسی بھی موڑ سے زیادہ تیزی سے بدل رہا ہے۔ دور دراز کا کام راتوں رات نایاب پرک سے ڈیفالٹ تک چلا گیا۔ AI نیاپن سے ساتھی کی طرف بڑھ رہا ہے۔ ٹمٹم معیشت نئی شکل دے رہی ہے جس کا مطلب ہے "روزگار"۔ اور آٹومیشن تمام ملازمتوں کے لیے نہیں آ رہی ہے — لیکن یہ زیادہ تر ملازمتوں میں بہت سے کاموں کے لیے آ رہی ہے۔ یہاں کام کی جگہ کو نئی شکل دینے والی قوتوں پر ایک نظر ہے اور آگے کیا ہوتا ہے۔

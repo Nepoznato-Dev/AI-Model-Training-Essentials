@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 통계적 테스트 및 실험
 통계는 과학의 문법이다. 이는 실제 패턴을 무작위 노이즈와 구별하고, 변경 사항이 실제로 개선되었는지 여부를 측정하고, 불확실성 속에서 결정을 내릴 수 있는 도구를 제공합니다. 이 파일은 가설 테스트, 실험 설계 및 사람들을 당황하게 만드는 일반적인 함정의 핵심 개념을 다루고 있습니다.
 ---

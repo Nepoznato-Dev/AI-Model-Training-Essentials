@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # भू-स्थानिक विश्लेषण
 भू-स्थानिक विश्लेषण उस डेटा की जांच करने की प्रक्रिया है जिसमें एक भौगोलिक घटक होता है - निर्देशांक, पते, सीमाएं, या पृथ्वी पर किसी स्थान से जुड़ा कोई डेटा। यह "हमारे ग्राहक कहाँ हैं?", "सर्वोत्तम मार्ग क्या है?", और "समय के साथ भूमि उपयोग कैसे बदल रहा है?" जैसे सवालों का जवाब देता है। प्रत्येक डेटासेट का एक स्थानिक आयाम होता है, और इसे समझने से उन अंतर्दृष्टियों का पता चलता है जो शुद्ध सांख्यिकीय विश्लेषण से छूट जाती हैं।
 ---

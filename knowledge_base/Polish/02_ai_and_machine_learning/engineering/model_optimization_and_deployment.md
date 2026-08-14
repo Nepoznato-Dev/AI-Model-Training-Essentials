@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optymalizacja i wdrażanie modelu
 Wyszkolenie dużego modelu sztucznej inteligencji jest znaczącym osiągnięciem, ale jego efektywne wdrożenie wymaga najwięcej wysiłku inżynieryjnego. Model, który potrzebuje 10 sekund na reakcję lub wymaga ośmiu procesorów graficznych A100, jest niepraktyczny w większości rzeczywistych zastosowań. Optymalizacja modeli to proces zmniejszania, przyspieszania i opłacalności modeli przy jednoczesnym zachowaniu akceptowalnej jakości. Ten plik obejmuje kwantyzację, przycinanie, destylację i praktyczne narzędzia do wdrażania modeli w środowisku produkcyjnym.
 ---

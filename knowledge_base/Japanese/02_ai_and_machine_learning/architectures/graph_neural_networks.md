@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # グラフニューラルネットワーク
 グラフ ニューラル ネットワーク (GNN) は、グラフ構造のデータ (エッジで接続されたノードのネットワーク) を操作するように設計されたニューラル ネットワークです。従来のニューラル ネットワークはグリッド (画像) またはシーケンス (テキスト) で動作しますが、GNN はソーシャル ネットワーク、分子グラフ、ナレッジ グラフ、道路ネットワーク、推奨グラフなどの任意のリレーショナル構造を処理します。これらは、創薬、不正行為検出、推奨システム、およびエンティティ間の関係が重要となるあらゆる分野に不可欠なものとなっています。
 ---

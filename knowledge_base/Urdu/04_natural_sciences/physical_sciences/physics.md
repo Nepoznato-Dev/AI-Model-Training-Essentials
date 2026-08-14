@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #طبیعیات
 طبیعیات سائنس میں سب سے بنیادی سوال پوچھتی ہے: مادہ اور توانائی کیسے برتاؤ کرتے ہیں؟ باقی سب کچھ - کیمسٹری، بیالوجی، انجینئرنگ - جوابات پر استوار ہے۔ طبیعیات کا دائرہ ذیلی ایٹمی پیمانے (کوانٹم میکانکس) سے لے کر کائناتی پیمانے (جنرل ریلیٹیویٹی) تک ہے، اور اس کے اصول دیگر تمام قدرتی علوم کو زیر کرتے ہیں۔
 ---

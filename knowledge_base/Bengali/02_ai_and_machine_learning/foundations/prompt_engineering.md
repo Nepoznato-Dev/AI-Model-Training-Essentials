@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # প্রম্পট ইঞ্জিনিয়ারিং
 প্রম্পট ইঞ্জিনিয়ারিং হল একটি ভাষা মডেল থেকে সম্ভাব্য সর্বোত্তম আউটপুট পাওয়ার জন্য ইনপুট প্রম্পট ডিজাইন, পরিমার্জন এবং অপ্টিমাইজ করার অনুশীলন। এটি একটি শিল্প এবং একটি বিজ্ঞান উভয়ই, এবং এটি ফাইন-টিউনিং ছাড়াই এলএলএম আচরণ নিয়ন্ত্রণ করার প্রাথমিক ইন্টারফেস।
 ---

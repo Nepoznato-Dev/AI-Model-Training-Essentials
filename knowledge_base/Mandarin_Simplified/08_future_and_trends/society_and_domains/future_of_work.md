@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 工作的未来
 ＃＃ 概述
 我们工作方式的变化速度比工业革命以来的任何时候都快。远程工作一夜之间从罕见的福利变成了默认。人工智能正在从新颖性转向协作性。零工经济正在重塑“就业”的含义。自动化并不适用于所有工作，但它适用于大多数工作中的许多任务。以下是重塑工作场所的力量以及接下来会发生的事情。

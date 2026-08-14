@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Linguistique et sciences du langage
 La linguistique est l'étude scientifique du langage : sa structure, sa signification, son utilisation, son acquisition et son évolution. Le langage est une caractéristique déterminante de la communication humaine : il est infiniment productif (les locuteurs peuvent créer et comprendre des phrases qu’ils n’ont jamais rencontrées auparavant), il est transmis culturellement (il est appris plutôt que purement inné) et il évolue continuellement. Comprendre le fonctionnement d'une langue est pertinent pour quiconque développe des technologies linguistiques, enseigne, traduit ou travaille à communiquer plus efficacement.
 ---

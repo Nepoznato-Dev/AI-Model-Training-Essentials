@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ビジュアルベーシック
 Visual Basic (VB) は、Microsoft によって開発されたプログラミング言語です。オリジナルの Visual Basic (1991 年)、Visual Basic 6.0 (1998 年)、VB.NET (2002 年、.NET Framework の一部)、および Visual Basic ..NET (現在は .NET の一部として単に「Visual Basic」と呼ばれています) という数世代を経て進化してきました。 VB は、グラフィカル ユーザー インターフェイスとイベント駆動型プログラミングに重点を置き、初心者や迅速なアプリケーション開発 (RAD) にとっても親しみやすいように設計されています。
 現在、VB.NET は C# と並んで .NET エコシステムの一部として継続されていますが、Microsoft は今後は C# が主要言語になることを示唆しています。 VB は、エンタープライズ環境、特に従来の Windows アプリケーション、オフィス オートメーション (VBA)、および社内ビジネス ツールで広く使用され続けています。

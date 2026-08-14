@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang & Elixir — সিনট্যাক্স রেফারেন্স
 এই নথিটি Erlang এবং Elixir-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি প্যাটার্ন ম্যাচিং, প্রসেস ম্যানেজমেন্ট, ওটিপি আচরণ এবং ত্রুটি-সহনশীল সিস্টেম প্যাটার্নগুলিতে ফোকাস করে মূল রেফারেন্সের পরিপূরক।
 ---

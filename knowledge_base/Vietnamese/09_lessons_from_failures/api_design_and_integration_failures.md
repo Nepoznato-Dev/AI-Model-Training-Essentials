@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Lỗi thiết kế và tích hợp API
 API (Giao diện lập trình ứng dụng) là mô liên kết của phần mềm hiện đại — chúng cho phép các dịch vụ giao tiếp, cho phép các bên thứ ba tích hợp và cho phép các nhóm làm việc độc lập. Khi thiết kế API gặp trục trặc, hậu quả sẽ lan ra khắp mọi hệ thống phụ thuộc vào nó: tích hợp bị hỏng, lỗ hổng bảo mật, sự thất vọng của nhà phát triển và việc viết lại tốn kém. Lỗi tích hợp — khi hệ thống không thể giao tiếp một cách đáng tin cậy — là một trong những nguyên nhân phổ biến nhất gây ra sự cố sản xuất.
 ---

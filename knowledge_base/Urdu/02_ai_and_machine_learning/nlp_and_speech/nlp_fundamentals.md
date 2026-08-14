@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # NLP بنیادی باتیں
 نیچرل لینگویج پروسیسنگ (NLP) انسانی زبان کو سمجھنے، تخلیق کرنے اور اس کے ساتھ کام کرنے کے لیے مشینوں کی تدریس کا شعبہ ہے۔ یہ سرچ انجنز، چیٹ بوٹس، ترجمے کے نظام، جذبات کے تجزیے، اور بڑے لینگویج ماڈلز (LLMs) کو طاقت دیتا ہے جنہوں نے 2020 سے AI کو تبدیل کر دیا ہے۔ یہ فائل کلاسیکی تکنیک سے جدید ٹرانسفارمر پر مبنی آرکیٹیکچرز تک کے ارتقا کا احاطہ کرتی ہے۔
 ---

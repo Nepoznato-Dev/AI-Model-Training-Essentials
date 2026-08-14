@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Erlang & Elixir — Przewodnik po ekosystemie i narzędziach
 Ten przewodnik omawia podstawowe narzędzia, frameworki i infrastrukturę w ekosystemie Erlang i Elixir, współdzieląc BEAM VM i OTP.
 ---

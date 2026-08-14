@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI Safety at Alignment
 Ang kaligtasan ng AI ay ang pag-aaral kung paano bumuo ng mga AI system na ginagawa kung ano talaga ang gusto nating gawin nila — at hindi gumagawa ng mga bagay na hindi natin gusto, kahit na ang mga iyon ay hindi tahasang ibinukod. Ang pag-align ay ang partikular na hamon sa paggawa ng mga layunin at gawi ng AI system na tumutugma sa mga intensyon ng tao. Habang nagiging mas may kakayahan ang mga AI system, ang mga tanong na ito ay lumilipat mula sa mga pang-akademikong curiosity patungo sa mga praktikal na kinakailangan sa engineering.
 ---

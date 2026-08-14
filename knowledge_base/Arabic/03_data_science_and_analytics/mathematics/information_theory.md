@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #نظرية المعلومات
 نظرية المعلومات، التي أسسها كلود شانون في عام 1948، تقوم بقياس المعلومات نفسها. كم تخبرك الرسالة؟ إلى أي مدى يمكنك ضغط البيانات؟ ما مدى سرعة التواصل عبر قناة صاخبة؟ هذه الأسئلة لها إجابات رياضية دقيقة. وبعيدًا عن التواصل، أصبحت نظرية المعلومات أساسية للتعلم الآلي - فالإنتروبيا المتقاطعة هي دالة الخسارة الافتراضية للتصنيف، ويقيس تباعد KL تشابه التوزيع، وتدفع المعلومات المتبادلة اختيار الميزات.
 ---

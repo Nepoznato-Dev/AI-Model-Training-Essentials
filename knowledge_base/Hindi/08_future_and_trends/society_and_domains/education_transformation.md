@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # शिक्षा परिवर्तन
 ## अवलोकन
 शिक्षा का पारंपरिक मॉडल - बारह साल तक कक्षा में बैठना, शायद विश्वविद्यालय जाना, फिर काम करना - टूट रहा है। एआई ट्यूटर अब बड़े पैमाने पर वैयक्तिकृत निर्देश प्रदान कर सकते हैं। तकनीकी परिवर्तन की गति का मतलब है कि आजीवन सीखना अब वैकल्पिक नहीं है। और नियोक्ता तेजी से इस बात की परवाह कर रहे हैं कि आप क्या *कर* सकते हैं, न कि केवल यह कि आपके पास क्या योग्यताएं हैं। यहां बताया गया है कि शिक्षा की पुनर्कल्पना कैसे की जा रही है।

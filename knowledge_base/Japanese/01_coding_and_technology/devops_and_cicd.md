@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps と CI/CD
 DevOps は、チームがソフトウェアをより迅速かつ確実に提供できるようにする文化的な哲学、実践、ツールを組み合わせたものです。これにより、開発者 (変更を出荷したい) と運用者 (安定性を求める) の間の壁が取り払われます。 CI/CD (継続的インテグレーションと継続的デリバリー) は、それを可能にする自動化バックボーンです。
 ---

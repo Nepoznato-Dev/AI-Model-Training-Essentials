@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetyka i genomika
 Genetyka to nauka o dziedziczności – o tym, jak cechy przekazywane są z rodziców na potomstwo poprzez DNA. Genomika to badanie całych genomów: wszystkich genów, regionów niekodujących, ich interakcji oraz różnic między jednostkami i populacjami. Przejście od genetyki do genomiki było napędzane technologią sekwencjonowania — przeszliśmy od badania jednego genu na raz do odczytywania całych genomów w ciągu kilku godzin, generując dane, które zmieniają medycynę, rolnictwo, kryminalistykę i nasze rozumienie ewolucji.
 ---

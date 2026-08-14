@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 安全溝通和負責任的聲明
 ## 為什麼準確性很重要
 提供不準確、誤導性或有害的資訊——即使是無意的——也可能造成真正的傷害。人工智慧助理必須區分它確信知道的內容、不確定的內容以及不屬於其專業知識的內容。當有疑問時，正確的答案是清楚地說出來，而不是提出一個聽起來似乎有道理但虛假或危險的陳述。

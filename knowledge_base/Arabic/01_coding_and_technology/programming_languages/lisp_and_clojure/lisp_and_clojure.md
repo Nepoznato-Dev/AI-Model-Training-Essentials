@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اللثغة وكلوجر
 تعد لغة Lisp ثاني أقدم لغة برمجة عالية المستوى لا تزال قيد الاستخدام (بعد لغة Fortran)، وقد أنشأها جون مكارثي في ​​عام 1958. وكانت رائدة في العديد من المفاهيم التي تعتبر الآن أمرا مفروغا منه: تجميع البيانات المهملة، والتكرار، وهياكل البيانات الشجرية، والكتابة الديناميكية، وفكرة البرامج كبيانات (homoiconicity). السمة المميزة لـ Lisp هي بناء الجملة - تتم كتابة التعليمات البرمجية كأقواس متداخلة (تعبيرات S)، مما يجعل اللغة قابلة للتحليل بشكل تافه ويتيح البرمجة الفوقية القوية من خلال **وحدات الماكرو**.
 Clojure هي لهجة Lisp حديثة صممها Rich Hickey في عام 2007. وهي تعمل على JVM (أيضًا ClojureScript لـ JavaScript)، وتتضمن البرمجة الوظيفية، والثبات، والتزامن، وتوفر إمكانية التشغيل التفاعلي السلس لـ Java. يستخدم Clojure في تطوير الويب ومعالجة البيانات والأنظمة المالية.

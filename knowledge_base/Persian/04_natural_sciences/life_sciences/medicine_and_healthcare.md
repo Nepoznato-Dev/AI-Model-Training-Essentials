@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #پزشکی و بهداشت و درمان
 پزشکی علم و عمل تشخیص، درمان و پیشگیری از بیماری است. این یکی از قدیمی ترین تلاش های بشر است - سوگند بقراط به یونان باستان باز می گردد - و یکی از سریع ترین تلاش ها در حال تغییر است. تنها در قرن گذشته، ما از نداشتن آنتی بیوتیک به ژن درمانی که می تواند DNA بیمار را بازنویسی کند، تبدیل شد.
 این فایل به نحوه عملکرد پزشکی می‌پردازد: تخصص‌های اصلی، نحوه تشخیص و درمان بیماری‌ها، نحوه سازماندهی سیستم‌های مراقبت‌های بهداشتی، و سؤالات اخلاقی که هنگام به خطر افتادن جان انسان‌ها مطرح می‌شوند.

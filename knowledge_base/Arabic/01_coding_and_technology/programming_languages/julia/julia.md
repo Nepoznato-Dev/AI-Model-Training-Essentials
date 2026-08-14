@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جوليا
 جوليا هي لغة برمجة عالية المستوى وعالية الأداء مصممة للحوسبة التقنية والعلمية. تم إصدار جوليا لأول مرة في عام 2012 (1.0 في عام 2018)، وتم إنشاؤها لحل "مشكلة اللغتين" - حيث يقوم العلماء بإنشاء نموذج أولي في Python/R ولكنهم يعيدون كتابته في C/C++/Fortran لأداء الإنتاج. تهدف جوليا إلى أن تكون سهلة مثل Python ولكن بنفس سرعة لغة C.
 تستخدم جوليا التجميع في الوقت المناسب (JIT) عبر LLVM لتحقيق أداء قريب من C مع الحفاظ على إحساس تفاعلي وديناميكي. إنه يتمتع بدعم من الدرجة الأولى للحوسبة المتوازية والمعالجة الموزعة ونظام نوع متطور مع إرسال متعدد.

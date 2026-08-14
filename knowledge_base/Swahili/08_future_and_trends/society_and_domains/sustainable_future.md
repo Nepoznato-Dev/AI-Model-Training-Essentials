@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mustakabali Endelevu
 ## Muhtasari
 Swali sio *kama* ulimwengu unahitaji mpito kuelekea uchumi endelevu, bali ni *kasi gani* na *nani anaongoza*. Nishati mbadala sasa ndiyo chanzo cha bei nafuu zaidi cha nishati katika masoko mengi. Kanuni za uchumi wa mduara zinasonga kutoka kwa dhana ya niche hadi mkakati wa shirika. Miji inafikiria upya kila kitu kutoka kwa usafirishaji hadi upotevu. Na kinyang'anyiro cha kufikia sifuri ni kuunda upya viwanda kutoka nishati hadi fedha. Hivi ndivyo mustakabali endelevu unavyoonekana katika vipengele vinne muhimu.

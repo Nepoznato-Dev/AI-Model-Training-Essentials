@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 盧阿
 Lua 是一種輕量級、可嵌入的腳本語言，專為擴展應用程式而設計。 Lua 於 1993 年在巴西里約熱內盧天主教大學創建，是最快的腳本語言之一。它佔用空間小（解釋器約為 120KB）且簡單，使其成為遊戲開發腳本、嵌入式系統和配置的首選。
 Lua 最為人所知的是 Roblox（每月超過 2 億用戶的遊戲平台）、魔獸世界插件和眾多遊戲引擎（Love2D、Defold、Corona SDK）背後的腳本語言。它也用於 Nginx (OpenResty)、Redis 和 Wireshark。

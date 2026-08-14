@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa SQL (ANSI SQL na may mga tala sa PostgreSQL/MySQL/SQLite na mga pagkakaiba sa dialect). Kinukumpleto nito ang pangunahing sanggunian ng SQL sa pamamagitan ng pagtuon sa mga kumpletong pattern ng query, mga function ng window, CTE, at disenyo ng database.
 ---

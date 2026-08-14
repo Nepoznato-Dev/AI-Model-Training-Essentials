@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Misingi ya Maono ya Kompyuta
 Maono ya kompyuta huipa mashine uwezo wa kufasiri na kuelewa taarifa zinazoonekana kutoka ulimwenguni - picha, video na data ya 3D. Huwezesha kila kitu kuanzia utambuzi wa uso kwenye simu yako hadi magari yanayojiendesha, uchanganuzi wa picha za matibabu na udhibiti wa ubora wa viwanda. Faili hii inashughulikia dhana za msingi, usanifu, na mbinu.
 ---

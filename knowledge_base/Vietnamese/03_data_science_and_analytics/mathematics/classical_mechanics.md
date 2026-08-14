@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cơ học cổ điển
 Cơ học cổ điển mô tả chuyển động của vật dưới tác dụng của lực. Từ những quả táo rơi đến các hành tinh quay quanh, từ các dây dao động đến các hạt va chạm, các nguyên lý của nó chi phối thế giới vĩ mô. Ngoài các ứng dụng vật lý, cơ học cổ điển đã khai sinh ra phép tính biến phân, hình học đối xứng và khuôn khổ Hamilton làm nền tảng cho cơ học lượng tử và tối ưu hóa hiện đại.
 ---

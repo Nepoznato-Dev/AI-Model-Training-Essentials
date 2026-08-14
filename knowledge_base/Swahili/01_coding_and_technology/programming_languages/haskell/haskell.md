@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Haskell
 Haskell ni lugha ya programu inayofanya kazi kikamilifu, iliyoandikwa kwa takwimu, iliyotathminiwa kiuvivu. Iliyosawazishwa kwanza mnamo 1990 (Haskell 90) na kusasishwa kupitia matoleo mengi (Haskell 2010 ndio kiwango cha sasa), Haskell inajulikana kwa ukali wake wa hisabati, mfumo wa aina wenye nguvu (na madarasa ya aina, monadi, na aina za data za aljebra), na msisitizo juu ya usahihi kupitia aina.
 Haskell sio lugha ya kawaida, lakini ushawishi wake ni mkubwa. Dhana kama vile monadi, tathmini ya uvivu, na madarasa ya aina yameathiri Rust, Swift, Kotlin, Scala, na TypeScript. Haskell inatumika katika fedha (Standard Chartered, Barclays), compilers (GHC), na uthibitishaji rasmi.

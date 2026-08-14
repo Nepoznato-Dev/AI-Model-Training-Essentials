@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Méthodologies de test
 Les tests vous permettent d'être sûr que votre code fonctionne et, plus important encore, que les modifications apportées à celui-ci n'altèrent pas ce qui fonctionne déjà. De bons tests détectent les bogues avant les utilisateurs, documentent le comportement attendu et permettent une refactorisation sans peur. Ce fichier couvre l'ensemble des stratégies de test, des tests unitaires aux tests de bout en bout, ainsi que les principes qui rendent les tests efficaces.
 ---

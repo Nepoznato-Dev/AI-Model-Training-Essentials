@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วรรณกรรม
 วรรณกรรมคือบันทึกความคิด อารมณ์ และประสบการณ์ที่ยาวนานที่สุดของมนุษยชาติ ตั้งแต่มหากาพย์ปากเปล่าของอารยธรรมโบราณไปจนถึงนวนิยายยุคดิจิทัลในปัจจุบัน ทุกงานล้วนอยู่ในการสนทนากับสิ่งที่เกิดขึ้นก่อนหน้านี้ การทำความเข้าใจประเภทวรรณกรรม การเคลื่อนไหว และเทคนิคช่วยให้คุณมีมุมมองที่สมบูรณ์ยิ่งขึ้นในการอ่าน — และเพื่อทำความเข้าใจวัฒนธรรมที่สร้างผลงานเหล่านี้
 ---

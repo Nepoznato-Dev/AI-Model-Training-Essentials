@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hệ thống động lực
 **Hệ thống động** mô tả cách một trạng thái phát triển theo thời gian theo một quy tắc cố định. Từ quỹ đạo hành tinh đến động thái dân số, từ mô hình thời tiết đến mạng lưới thần kinh huấn luyện, lý thuyết hệ thống động lực cung cấp ngôn ngữ và công cụ để hiểu mọi thứ thay đổi như thế nào. Tệp này bao gồm các phương trình vi phân thông thường (ODE), phương trình vi phân từng phần (PDE), phân tích độ ổn định, hỗn loạn và phân nhánh.
 ---

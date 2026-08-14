@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #কৃত্রিম বুদ্ধিমত্তা
 কৃত্রিম বুদ্ধিমত্তা হল এমন মেশিন তৈরি করার প্রচেষ্টা যা এমন কিছু করতে পারে যেগুলির জন্য বুদ্ধির প্রয়োজন হবে যদি একজন মানুষ সেগুলি করে থাকে: মুখ চিনতে পারে, বক্তৃতা বুঝতে পারে, সিদ্ধান্ত নিতে পারে, পাঠ্য লিখতে পারে, গেম খেলতে পারে, গাড়ি চালাতে পারে, রোগ নির্ণয় করতে পারে। ক্ষেত্রটি কম্পিউটিংয়ের মতোই পুরানো - অ্যালান টুরিং জিজ্ঞাসা করছিলেন "মেশিন কি চিন্তা করতে পারে?" 1950 সালে - কিন্তু সামর্থ্যের সাম্প্রতিক বিস্ফোরণ (2020) AI কে মানব ইতিহাসের সবচেয়ে গুরুত্বপূর্ণ এবং প্রতিদ্বন্দ্বিতাপূর্ণ প্রযুক্তিগুলির মধ্যে একটি করে তুলেছে।
 ---

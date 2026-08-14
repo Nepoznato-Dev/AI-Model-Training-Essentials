@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Математика
 Математика — это не только предмет, изучаемый в школе, она лежит в основе почти всех технических областей. Физика использует его для описания Вселенной. Информатика использует его для разработки алгоритмов. Машинное обучение использует его для оптимизации весов. Финансы используют его для оценки риска. Овладение каждой отраслью не обязательно, но понимание ландшафта и знание того, где применяется каждая ветвь, облегчает понимание других тем.
 ---

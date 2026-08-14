@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Prometheus ve Grafana
 Prometheus, güvenilirlik ve ölçeklenebilirlik için tasarlanmış açık kaynaklı bir izleme ve uyarı araç setidir. Grafana, zaman serisi verilerini görselleştirmek için önde gelen açık kaynaklı platformdur. Birlikte modern altyapı ve uygulamalar için en popüler izleme yığınını oluştururlar. Prometheus metrikleri toplar ve saklar; Grafana bunları kontrol panellerinde görüntüler.
 ---

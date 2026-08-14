@@ -1,3 +1,4 @@
+<!--
 ---
 # Métadonnées
 titre : "Science et Nature"
@@ -34,6 +35,8 @@ apport :
   how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
   review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
 ---
+
+-->
 # Sciences et Nature
 La science nous permet de déterminer ce que fait réellement l’univers – non pas ce que nous supposons qu’il fait, ni ce que disent les textes anciens, mais ce que révèlent une observation et une expérimentation minutieuses. La méthode scientifique est simple en principe : observez quelque chose, formulez une hypothèse, testez-la et révisez votre compréhension en fonction des résultats. Ce qui rend la science puissante, c’est qu’elle s’autocorrige. Chaque affirmation est provisoire – acceptée seulement jusqu’à ce que de meilleures preuves soient disponibles.
 Ce dossier couvre les grandes branches des sciences naturelles : physique, chimie, biologie et sciences de la Terre et de l'espace. Considérez-le comme une carte du monde physique.

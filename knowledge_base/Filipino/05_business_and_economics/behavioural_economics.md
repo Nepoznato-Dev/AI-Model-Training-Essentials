@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Behavioral Economics at Desisyon Science
 Pinag-aaralan ng behavioral economics kung paano talaga gumagawa ng mga desisyon ang mga tao — hindi kung paano sila gagawin ng mga makatwirang ahente. Ipinapalagay ng tradisyunal na ekonomiya na ang mga tao ay makatuwiran, may interes sa sarili, at mahusay sa pagproseso ng impormasyon. Ang mga dekada ng pagsasaliksik nina Kahneman, Tversky, Thaler, at iba pa ay nagpakita na ito ay hindi tumpak. Gumagamit ang mga tao ng mga mental shortcut, naiimpluwensyahan ng hindi nauugnay na konteksto, sobrang timbang kamakailang impormasyon, at gumagawa ng mga sistematikong nahuhulaang error. Ang pag-unawa sa mga pattern na ito ay mahalaga para sa pagdidisenyo ng mas mahuhusay na produkto, patakaran, organisasyon, at personal na desisyon.
 ---

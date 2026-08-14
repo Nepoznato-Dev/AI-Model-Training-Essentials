@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ansible 및 구성 관리
 Ansible은 에이전트 없는 구성 관리 및 자동화 도구입니다. SSH(또는 Windows용 WinRM)를 사용하여 서버에 연결하고 YAML 플레이북에 정의된 작업을 실행합니다. 모든 머신에 에이전트를 설치해야 하는 도구와 달리 Ansible은 푸시 기반이므로 제어 노드에서 명령을 실행합니다. 서버 프로비저닝, 애플리케이션 배포, 구성 관리 및 임시 작업 실행에 사용됩니다.
 ---

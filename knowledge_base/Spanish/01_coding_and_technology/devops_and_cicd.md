@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps y CI/CD
 DevOps es la combinación de filosofía cultural, prácticas y herramientas que permite a los equipos entregar software de manera más rápida y confiable. Derriba el muro entre los desarrolladores (que quieren implementar cambios) y las operaciones (que quieren estabilidad). CI/CD (integración continua y entrega continua) es la columna vertebral de la automatización que lo hace posible.
 ---

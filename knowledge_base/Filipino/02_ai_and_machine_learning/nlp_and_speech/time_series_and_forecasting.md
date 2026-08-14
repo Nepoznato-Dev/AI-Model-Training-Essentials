@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Serye ng Oras at Pagtataya
 Ang data ng serye ng oras ay anumang data na nakolekta sa paglipas ng panahon: mga presyo ng stock, pagbabasa ng temperatura, trapiko sa website, mga numero ng benta, mga monitor ng tibok ng puso, pagkonsumo ng enerhiya. Ang pagtataya ay nangangahulugan ng paghula sa mga halaga sa hinaharap batay sa mga nakaraang pattern. Isa ito sa pinakamahalagang aplikasyon ng data science — at isa sa pinakamahirap, dahil ang hinaharap ay talagang hindi tiyak at ang real-world time series ay puno ng ingay, seasonality, at structural break.
 ---

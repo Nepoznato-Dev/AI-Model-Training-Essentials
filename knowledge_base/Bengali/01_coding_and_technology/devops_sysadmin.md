@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and System Administration"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps এবং সিস্টেম প্রশাসন
 সার্ভার পরিচালনা, স্বয়ংক্রিয় ক্রিয়াকলাপ এবং নির্ভরযোগ্য অবকাঠামো বজায় রাখার জন্য একটি ব্যবহারিক গাইড।
 ---

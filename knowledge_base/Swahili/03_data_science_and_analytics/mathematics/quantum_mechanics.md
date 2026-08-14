@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mitambo ya Quantum
 Mechanics ya quantum ni nadharia ya fizikia katika mizani ndogo zaidi - atomi, elektroni, fotoni, na chembe za kimsingi za asili. Inachukua nafasi ya ulimwengu wa kuamua wa mechanics ya zamani na uwezekano, nafasi kuu, na msongamano. Licha ya asili yake ya kupingana, mechanics ya quantum ndiyo nadharia iliyojaribiwa kwa usahihi zaidi katika sayansi yote. Leo, kanuni zake zinafaa moja kwa moja kwa kompyuta kupitia kompyuta za quantum, ambazo zinaahidi kutatua matatizo fulani kwa kasi zaidi kuliko mashine za classical.
 ---

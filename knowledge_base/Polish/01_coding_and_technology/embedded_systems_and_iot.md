@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Systemy wbudowane i IoT
 Systemy wbudowane to komputery ukryte w innych urządzeniach – sterowniku silnika w samochodzie, sterowniku pralki, mikrokontrolerze w inteligentnym termostacie. W przeciwieństwie do komputerów ogólnego przeznaczenia, są one przeznaczone do określonych zadań, często z dużymi ograniczeniami dotyczącymi mocy, pamięci i szybkości przetwarzania. Internet rzeczy (IoT) rozszerza systemy wbudowane, łącząc je z sieciami, umożliwiając zdalne monitorowanie, kontrolę i gromadzenie danych. Razem reprezentują miliardy urządzeń komputerowych, które wchodzą w interakcję ze światem fizycznym.
 ---

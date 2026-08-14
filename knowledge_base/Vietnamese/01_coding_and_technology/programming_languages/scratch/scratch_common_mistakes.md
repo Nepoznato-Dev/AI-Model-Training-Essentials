@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Scratch — Những lỗi thường gặp và các mẫu chống đối
 Tài liệu này liệt kê các lỗi và bẫy phổ biến nhất trong Scratch có sửa chữa.
 ---

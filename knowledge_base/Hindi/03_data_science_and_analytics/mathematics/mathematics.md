@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # अंक शास्त्र
 गणित केवल स्कूल में पढ़ा जाने वाला विषय नहीं है - यह लगभग हर तकनीकी क्षेत्र का आधार है। ब्रह्मांड का वर्णन करने के लिए भौतिकी इसका उपयोग करती है। कंप्यूटर विज्ञान इसका उपयोग एल्गोरिदम डिजाइन करने के लिए करता है। मशीन लर्निंग वजन को अनुकूलित करने के लिए इसका उपयोग करता है। वित्त इसका उपयोग मूल्य जोखिम के लिए करता है। प्रत्येक शाखा में महारत हासिल करना आवश्यक नहीं है, लेकिन परिदृश्य को समझना - और यह जानना कि प्रत्येक शाखा कहाँ लागू होती है - अन्य विषयों को समझना आसान बनाता है।
 ---

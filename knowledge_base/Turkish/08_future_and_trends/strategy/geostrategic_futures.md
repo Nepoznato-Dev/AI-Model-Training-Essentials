@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Jeostratejik Vadeli İşlemler
 ## Genel Bakış
 Soğuk Savaş sonrası Amerikan egemenliği dönemi yerini daha karmaşık bir şeye bırakıyor: Gücün yaygın olduğu, teknoloji ve kaynaklar üzerindeki rekabetin yoğunlaştığı ve iklim değişikliği ve salgın hastalıklar gibi zorlukların sınırlara saygı göstermediği çok kutuplu bir dünya. 1945'ten sonra inşa edilen kurallara dayalı uluslararası düzen her yönden sınanıyor. İşte neyin değiştiği, kimin yükseldiği ve sürtüşme noktalarının nerede olduğu.

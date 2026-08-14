@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # লেখা এবং যোগাযোগের মৌলিক বিষয়
 ইমেল, প্রতিবেদন, ডকুমেন্টেশন, উপস্থাপনা বা কথোপকথনের মাধ্যমে - লেখালেখি এবং যোগাযোগ হল কার্যকরভাবে ধারণাগুলি প্রকাশ করার দক্ষতা। বেশিরভাগ জ্ঞানের কাজ হল মৌলিকভাবে যোগাযোগের কাজ: পেশাদারদের তাদের চিন্তাভাবনা ব্যাখ্যা করতে হবে, অন্যদেরকে রাজি করাতে হবে, নথির সিদ্ধান্ত নিতে হবে, স্পেসিফিকেশন লিখতে হবে, ফলাফল উপস্থাপন করতে হবে এবং দল জুড়ে সহযোগিতা করতে হবে। যা বোঝায় এবং যা বোঝা যায় তার মধ্যে ব্যবধান যেখানে বেশিরভাগ সমস্যার উদ্ভব হয় এবং আরও ভাল যোগাযোগ সেই ব্যবধানকে সংকুচিত করে।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # サプライチェーンと運用管理
 サプライチェーン管理とは、原材料から顧客の手に渡る最終製品に至るまで、調達、調達、変換、物流に関わるすべての活動を調整することです。運用管理は、実稼働システムの日常的な実行です。これらを組み合わせて、企業が適切な製品を、適切なタイミング、適切なコスト、適切な品質で提供できるかどうかを判断します。パンデミック、チップ不足、運河の閉塞は、サプライチェーンがいかに脆弱で世界的に相互接続されているかを示しています。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # क्लाउड आर्किटेक्चर
 क्लाउड कंप्यूटिंग ने संगठनों के सॉफ़्टवेयर बनाने, तैनात करने और स्केल करने के तरीके को मौलिक रूप से बदल दिया है। भौतिक सर्वर खरीदने और बनाए रखने के बजाय, आप मांग पर कंप्यूटिंग संसाधनों का प्रावधान कर सकते हैं, जो भी आप उपयोग करते हैं उसके लिए भुगतान कर सकते हैं और मिनटों में विश्व स्तर पर स्केल कर सकते हैं। यह फ़ाइल उन मूल अवधारणाओं, वास्तुकला पैटर्न, सेवाओं और सर्वोत्तम प्रथाओं को शामिल करती है जिन्हें आपको जानना आवश्यक है।
 ---

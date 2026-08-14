@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Veri Bilimi ve Analitik
 Veri bilimi, ham verileri eyleme dönüştürülebilir içgörülere dönüştürme disiplinidir. İstatistik, bilgisayar bilimi ve alan uzmanlığının kesişim noktasında yer alır ve finanstan sağlık hizmetlerine kadar her sektörde vazgeçilmez hale gelmiştir. Bu dosyada her uygulayıcının bilmesi gereken temel kavramlar, araçlar ve iş akışları anlatılmaktadır.
 ---

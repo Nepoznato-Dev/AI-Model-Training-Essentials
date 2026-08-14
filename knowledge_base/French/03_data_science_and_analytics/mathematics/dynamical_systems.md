@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Systèmes dynamiques
 Un **système dynamique** décrit comment un état évolue dans le temps selon une règle fixe. Des orbites planétaires à la dynamique des populations, des conditions météorologiques à la formation des réseaux neuronaux, la théorie des systèmes dynamiques fournit le langage et les outils nécessaires pour comprendre comment les choses changent. Ce fichier couvre les équations différentielles ordinaires (ODE), les équations aux dérivées partielles (PDE), l'analyse de stabilité, le chaos et les bifurcations.
 ---

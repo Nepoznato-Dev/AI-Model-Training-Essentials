@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 特征工程
 特征工程是将原始数据转换为使机器学习模型更有效的表示的过程。它通常被描述为 ML 管道中最重要的步骤 - 您为模型提供的功能比您选择的算法更重要。具有精心设计的特征的简单模型通常会优于具有原始、未经处理的输入的复杂模型。艺术在于充分理解领域和数据，以创建模型可以学习的信号。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #التوعية البيئية
 البيئة ليست شيئًا منفصلاً "موجودًا" - إنها النظام الذي يجعل كل شيء آخر ممكنًا. كل نفس تأخذه، وكل كوب ماء تشربه، وكل وجبة تأكلها يعتمد على تكوين الغلاف الجوي، ودورات المياه، وصحة التربة، وشبكات الملقحات. إن فهم كيفية عمل هذه الأنظمة - وكيف تتغير - ليس أمرًا اختياريًا بالنسبة لشخص مطلع. يغطي هذا الملف أساسيات العلوم البيئية، والتحديات التي نواجهها، وما تعنيه الاستدامة فعليًا في الممارسة العملية.
 ---

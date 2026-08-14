@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # シェルとパワーシェル
 シェル スクリプトとは、コマンド ライン インタープリタ用のスクリプトを作成することを指します。最も重要な 2 つのシェルは、**Bash** (Bourne Again Shell) (Linux および macOS のデフォルト) と **PowerShell** (Microsoft の最新のクロスプラットフォーム シェルおよびスクリプト言語) です。シェル スクリプトは、システム管理タスク、パイプラインの構築、ファイル処理、展開ワークフローを自動化します。
 すべての開発者、DevOps エンジニア、システム管理者には、シェル スクリプトのスキルが必要です。 Web サーバーのデプロイ、ログ ファイルの処理、CI/CD パイプラインのセットアップ、またはバックアップの自動化のいずれを行う場合でも、シェル スクリプトはその作業のためのツールです。

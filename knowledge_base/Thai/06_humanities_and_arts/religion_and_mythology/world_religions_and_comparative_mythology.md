@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ศาสนาโลกและตำนานเปรียบเทียบ
 ศาสนาของโลกเป็นระบบหลักของความเชื่อ การปฏิบัติ และชุมชนที่หล่อหลอมอารยธรรมของมนุษย์มาเป็นเวลาหลายพันปี ตำนานเชิงเปรียบเทียบศึกษาเรื่องราวที่วัฒนธรรมต่างๆ บอกเล่าเกี่ยวกับการสร้างสรรค์ วีรบุรุษ เทพเจ้า และความหมายของการดำรงอยู่ และรูปแบบที่โดดเด่นซึ่งเกิดขึ้นตามประเพณีที่แยกจากกันหลายพันไมล์และนับพันปี การทำความเข้าใจทั้งสองอย่างถือเป็นสิ่งสำคัญในการทำความเข้าใจว่าเหตุใดผู้คนจึงเชื่อในสิ่งที่พวกเขาเชื่อ วัฒนธรรมต่างกันอย่างไร และอะไรที่ทำให้ประสบการณ์ของมนุษย์เป็นหนึ่งเดียวกัน
 ---

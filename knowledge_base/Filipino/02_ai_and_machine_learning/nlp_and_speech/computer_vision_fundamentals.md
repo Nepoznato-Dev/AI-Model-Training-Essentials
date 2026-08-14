@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Computer Vision Fundamentals
 Binibigyan ng computer vision ang mga makina ng kakayahang magbigay-kahulugan at maunawaan ang visual na impormasyon mula sa mundo — mga larawan, video, at 3D na data. Pinapatakbo nito ang lahat mula sa pagkilala sa mukha sa iyong telepono hanggang sa mga self-driving na kotse, pagsusuri ng medikal na larawan, at pang-industriyang kontrol sa kalidad. Sinasaklaw ng file na ito ang mga pangunahing konsepto, arkitektura, at diskarte.
 ---

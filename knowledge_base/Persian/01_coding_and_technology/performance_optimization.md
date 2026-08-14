@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # بهینه سازی عملکرد
 بهینه‌سازی عملکرد، عمل سریع‌تر کردن نرم‌افزار است - کاهش زمان پاسخ، افزایش توان عملیاتی، کاهش استفاده از حافظه و حذف تنگناها. این یکی از تاثیرگذارترین مهارت هایی است که یک توسعه دهنده می تواند داشته باشد، زیرا نرم افزار کند کاربران را از دست می دهد، منابع را هدر می دهد و همه را ناامید می کند. اما همچنین یکی از رایج‌ترین اشتباهات است که توسعه‌دهندگان به جای شواهد، چیزهای اشتباه را بر اساس شهود بهینه می‌کنند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Küresel Ekonomi ve Ticaret
 Küresel ekonomi, insanlığın bugüne kadar inşa ettiği en büyük ve en karmaşık sistemdir. 2025 yılında küresel GSYİH 110 trilyon doları aştı. Her gün 8 milyardan fazla insan sınırlar ötesinde mal ve hizmet üretiyor, ticaretini yapıyor ve tüketiyor. Bu sistemin nasıl çalıştığını anlamak (kim neyin ticaretini yapıyor, neden bazı ülkeler zengin ve diğerleri fakir, paranın sınırlar arasında nasıl hareket ettiği ve sistem bozulduğunda ne olacağı) modern dünyada gezinmek için çok önemli.
 ---

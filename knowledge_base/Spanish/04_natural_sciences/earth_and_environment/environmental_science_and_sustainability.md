@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ciencia Ambiental y Sostenibilidad
 Las ciencias ambientales aplican los métodos de la física, la química, la biología, la geología y la economía a la pregunta: "¿Qué le está pasando a nuestro planeta y qué se puede hacer al respecto?" Es un campo interdisciplinario –una convergencia de múltiples disciplinas– lo que contribuye tanto a su profundidad analítica como a su relevancia política.
 La tensión central en las ciencias ambientales es la siguiente: la civilización humana depende de la extracción de recursos del medio ambiente, pero la extracción de esos recursos cambia el medio ambiente de maneras que pueden socavar los sistemas de los que dependemos. Comprender ese circuito de retroalimentación es, en pocas palabras, todo el campo.

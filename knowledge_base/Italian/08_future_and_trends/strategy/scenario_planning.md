@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pianificazione degli scenari
 ## Panoramica
 Nessuno può prevedere il futuro, ma puoi prepararti per diversi scenari plausibili. La pianificazione degli scenari, nata nei think tank della Guerra Fredda e perfezionata dalla Shell durante le crisi petrolifere degli anni ’70, è un modo di pensare sistematicamente all’incertezza. Invece di scommettere su una previsione, costruisci storie coerenti su come potrebbero svolgersi le cose, quindi metti alla prova le tue decisioni confrontandole con tutte. Ecco come funziona la metodologia, insieme agli scenari nei settori chiave.

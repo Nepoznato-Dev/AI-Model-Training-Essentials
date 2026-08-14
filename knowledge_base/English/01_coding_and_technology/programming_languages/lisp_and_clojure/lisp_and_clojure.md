@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp & Clojure
 
 Lisp is the second-oldest high-level programming language still in use (after Fortran), created by John McCarthy in 1958. It pioneered many concepts now taken for granted: garbage collection, recursion, tree data structures, dynamic typing, and the idea of programs as data (homoiconicity). Lisp's distinctive feature is its syntax — code is written as nested parentheses (S-expressions), which makes the language trivially parseable and enables powerful metaprogramming through **macros**.

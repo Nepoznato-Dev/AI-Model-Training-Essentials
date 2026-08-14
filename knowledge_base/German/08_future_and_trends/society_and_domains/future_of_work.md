@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Zukunft der Arbeit
 ## Übersicht
 Die Art und Weise, wie wir arbeiten, verändert sich schneller als je zuvor seit der industriellen Revolution. Remote-Arbeit hat sich über Nacht von einem seltenen Vorteil zum Standard entwickelt. KI entwickelt sich von der Neuheit zum Kollaborateur. Die Gig Economy verändert, was „Beschäftigung“ überhaupt bedeutet. Und die Automatisierung kommt nicht für alle Jobs – aber für viele Aufgaben in den meisten Jobs. Hier ist ein Blick auf die Kräfte, die den Arbeitsplatz umgestalten, und was als nächstes kommt.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Technology and Computing
 
 Computing is everywhere — in your phone, your car, your refrigerator, your medical devices, and the infrastructure that runs modern society. You do not need to be a programmer to benefit from understanding how it all works. This file covers the fundamentals: what a computer is, how the internet works, how software is built, and the concepts that shape the digital world.

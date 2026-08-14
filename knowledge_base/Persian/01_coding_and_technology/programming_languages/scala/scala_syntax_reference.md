@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala - مرجع نحو
 این سند یک مرجع نحوی جامع و ساختار یافته برای Scala (3.x با یادداشت‌هایی در مورد تفاوت‌های 2.x) ارائه می‌کند. این مرجع اصلی Scala را با تمرکز بر الگوهای نحوی جامع، سیستم نوع، ساختارهای برنامه‌نویسی کاربردی و اصطلاحات Scala تکمیل می‌کند.
 ---

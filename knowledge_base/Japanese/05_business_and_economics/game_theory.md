@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ゲーム理論と戦略的思考
 ゲーム理論は戦略的相互作用、つまり自分の結果が自分の行動だけでなく他人の行動に依存する状況を数学的に研究したものです。これは、ビジネス競争、国際関係、オークション、交渉、進化生物学、交通機関のルート選択などの日常的な決定など、あらゆる場面に当てはまります。核となる洞察は、戦略的状況における合理的な主体は、自分の戦略を最適化するだけではなく、他の人が何をするかを予測し、他の人も同じことをしているということです。
 ---

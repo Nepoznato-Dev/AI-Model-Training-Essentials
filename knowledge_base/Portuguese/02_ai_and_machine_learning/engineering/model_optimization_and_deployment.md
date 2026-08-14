@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Otimização e implantação de modelo
 Treinar um grande modelo de IA é uma conquista significativa, mas implantá-lo com eficiência é onde a maior parte do esforço de engenharia é necessária. Um modelo que leva 10 segundos para responder ou requer oito GPUs A100 é impraticável para a maioria das aplicações do mundo real. A otimização de modelos é o processo de tornar modelos menores, mais rápidos e mais econômicos, mantendo ao mesmo tempo uma qualidade aceitável. Este arquivo cobre quantização, poda, destilação e as ferramentas práticas para implantação de modelos em produção.
 ---

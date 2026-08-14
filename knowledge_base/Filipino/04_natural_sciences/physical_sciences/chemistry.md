@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chemistry
 Kung physics ang mga panuntunan ng laro, chemistry ang mangyayari kapag nag-interact ang mga piraso. Pinag-aaralan ng kimika kung paano nagbubuklod, naghiwahiwalay, at muling nagsasaayos ang mga atomo — ibig sabihin, kung paano kumikilos ang lahat ng materyales. Tinutulay nito ang agwat sa pagitan ng pangunahing pisika at ang pagiging kumplikado ng biology, geology, at engineering.
 ---

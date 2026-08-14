@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #هوش مصنوعی
 هوش مصنوعی تلاش برای ساخت ماشین‌هایی است که می‌توانند کارهایی را انجام دهند که در صورت انجام آن‌ها به هوش نیاز دارند: تشخیص چهره‌ها، درک گفتار، تصمیم‌گیری، نوشتن متن، بازی کردن، رانندگی ماشین، تشخیص بیماری‌ها. این رشته به قدمت خود محاسبات است - آلن تورینگ می‌پرسید: «آیا ماشین‌ها می‌توانند فکر کنند؟» در سال 1950 - اما انفجار اخیر در توانایی (دهه 2020) هوش مصنوعی را به یکی از مهم ترین و بحث برانگیزترین فناوری ها در تاریخ بشر تبدیل کرده است.
 ---

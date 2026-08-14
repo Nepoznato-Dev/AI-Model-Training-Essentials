@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #لوا
 Lua ایک ہلکی پھلکی، ایمبیڈ ایبل اسکرپٹنگ زبان ہے جسے ایپلیکیشنز کو بڑھانے کے لیے ڈیزائن کیا گیا ہے۔ برازیل کی ریو ڈی جنیرو کی پونٹیفیکل کیتھولک یونیورسٹی میں 1993 میں تخلیق کی گئی، Lua سب سے تیز اسکرپٹنگ زبانوں میں سے ایک ہے۔ اس کا چھوٹا نقشہ (ترجمان ~120KB ہے) اور سادگی اسے گیم ڈویلپمنٹ اسکرپٹنگ، ایمبیڈڈ سسٹمز اور کنفیگریشن کے لیے بہترین انتخاب بناتی ہے۔
 Lua روبلوکس (200M+ ماہانہ صارفین کے ساتھ گیمنگ پلیٹ فارم)، ورلڈ آف وارکرافٹ ایڈونز، اور متعدد گیم انجنز (Love2D، Defold، Corona SDK) کے پیچھے اسکرپٹنگ زبان کے طور پر مشہور ہے۔ یہ Nginx (OpenResty)، Redis اور Wireshark میں بھی استعمال ہوتا ہے۔

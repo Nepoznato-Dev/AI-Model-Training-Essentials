@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # マルチモーダル AI
 マルチモーダル AI システムは、テキスト、画像、音声、ビデオなど、複数の種類のデータからの情報を同時に処理して組み合わせます。以前の AI システムは通常、単一モーダル (テキストのみ、画像のみ) でしたが、最も機能的な最新のシステムはマルチモーダルです。 GPT-4V は画像とテキストを一緒に読み取ります。 Gemini はテキスト、画像、オーディオ、ビデオをネイティブに処理します。 Sora のようなシステムはテキストの説明からビデオを生成します。このファイルでは、マルチモーダル AI の仕組み、その背後にあるアーキテクチャ、およびモダリティの組み合わせが非常に強力である理由について説明します。
 ---

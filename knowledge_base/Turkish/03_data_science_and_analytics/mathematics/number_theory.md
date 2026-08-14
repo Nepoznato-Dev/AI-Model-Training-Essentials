@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sayı Teorisi
 Sayı teorisi tamsayıların (tam sayılar ve bunların özelliklerinin) incelenmesidir. Gauss buna "matematiğin kraliçesi" adını verdi. En basit nesneleri (1, 2, 3, ...) incelemesine rağmen sayılar teorisi, matematikteki en derin ve en zor problemlerden bazılarını üretir. Günümüzde modern kriptografiyi, karma algoritmaları, hata düzeltme kodlarını ve rastgele sayı üretimini desteklemektedir.
 ---

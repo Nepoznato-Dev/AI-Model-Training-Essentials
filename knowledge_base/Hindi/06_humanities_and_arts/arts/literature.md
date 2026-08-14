@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # साहित्य
 साहित्य मानवता के विचार, भावना और अनुभव का सबसे स्थायी रिकॉर्ड है। प्राचीन सभ्यताओं के मौखिक महाकाव्यों से लेकर आज के डिजिटल युग के उपन्यासों तक, प्रत्येक कार्य पहले की बातों से बातचीत करता है। साहित्यिक शैलियों, आंदोलनों और तकनीकों को समझने से आपको पढ़ने के लिए एक समृद्ध दृष्टिकोण मिलता है - और उन संस्कृतियों को समझने के लिए जिन्होंने इन कार्यों का निर्माण किया है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # स्टचास्तिक प्रोसेसेज़
 एक **स्टोकेस्टिक प्रक्रिया** समय (या स्थान) द्वारा अनुक्रमित यादृच्छिक चर का एक संग्रह है। जबकि संभाव्यता सिद्धांत व्यक्तिगत यादृच्छिक घटनाओं का अध्ययन करता है, स्टोकेस्टिक प्रक्रियाएं अध्ययन करती हैं कि समय के साथ यादृच्छिकता कैसे विकसित होती है। वे स्टॉक की कीमतें, कतार की लंबाई, बीमारी का प्रसार, भाषा निर्माण और मशीन लर्निंग मॉडल की प्रशिक्षण गतिशीलता का मॉडल बनाते हैं।
 ---

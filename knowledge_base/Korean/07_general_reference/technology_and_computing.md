@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 기술과 컴퓨팅
 컴퓨팅은 휴대폰, 자동차, 냉장고, 의료 기기, 현대 사회를 운영하는 인프라 등 어디에나 있습니다. 모든 작동 방식을 이해함으로써 이익을 얻기 위해 프로그래머가 될 필요는 없습니다. 이 파일은 컴퓨터가 무엇인지, 인터넷이 작동하는 방식, 소프트웨어가 구축되는 방식, 디지털 세계를 형성하는 개념 등 기본 사항을 다룹니다.
 > **더 자세히 알고 싶으십니까?** 이 파일은 광범위한 개요입니다. 모든 주제에 대한 자세한 내용은[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)및를 포함하여 [`01_coding_and_technology/`](../01_coding_and_technology/)의 전용 파일을 참조하세요.

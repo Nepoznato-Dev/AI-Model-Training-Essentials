@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Chuỗi khối và hệ thống phân tán
 Blockchain là một loại hệ thống phân tán cụ thể — một sổ cái phi tập trung, chỉ bổ sung, trong đó các bản ghi (khối) được liên kết bằng các hàm băm mật mã. Hệ thống phân tán là lĩnh vực rộng hơn giúp nhiều máy tính hoạt động cùng nhau như một. Cả hai khái niệm đều quan trọng để hiểu cơ sở hạ tầng hiện đại, từ tiền điện tử đến cơ sở dữ liệu phân tán đến các thuật toán đồng thuận hỗ trợ các dịch vụ toàn cầu.
 ---

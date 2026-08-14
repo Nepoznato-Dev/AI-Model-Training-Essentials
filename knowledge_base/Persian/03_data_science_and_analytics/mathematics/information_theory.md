@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تئوری اطلاعات
 نظریه اطلاعات که توسط کلود شانون در سال 1948 تأسیس شد، خود اطلاعات را کمیت می کند. یک پیام چقدر به شما می گوید؟ چقدر می توانید داده ها را فشرده کنید؟ چقدر سریع می توانید از طریق یک کانال پر سر و صدا ارتباط برقرار کنید؟ این سوالات پاسخ های ریاضی دقیقی دارند. فراتر از ارتباطات، نظریه اطلاعات برای یادگیری ماشین پایه‌ای شده است - آنتروپی متقابل تابع ضرر پیش‌فرض برای طبقه‌بندی است، واگرایی KL شباهت توزیع را اندازه‌گیری می‌کند و انتخاب ویژگی درایوهای اطلاعات متقابل.
 ---

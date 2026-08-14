@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Zukünftige Gesundheitsversorgung
 ## Übersicht
 Die Medizin verlagert sich von einem reaktiven Modell – die Behandlung von Symptomen nach ihrem Auftreten – zu einem Modell, das vorausschauend, personalisiert und zunehmend präventiv ist. Genomics hat sich von einem 3-Milliarden-Dollar-Projekt zu einem Routinetest entwickelt, der weniger als 1.000 Dollar kostet. KI lernt, Krankheiten in Scans zu erkennen, bevor Ärzte es können. Und die regenerative Medizin verwandelt Science-Fiction in klinische Studien. Hier erfahren Sie, was an den drei größten Grenzen passiert: personalisierte Medizin, Langlebigkeitsforschung und regenerative Medizin.

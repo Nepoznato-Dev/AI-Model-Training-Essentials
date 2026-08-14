@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 제어 이론
 제어 이론은 시스템이 원하는 방식으로 작동하도록 만드는 수학입니다. 온도 조절기에서 자동 조종 장치, 로봇 팔에서 화학 반응기에 이르기까지 제어 시스템은 원하는 동작을 유지하기 위해 감지하고 결정하고 행동합니다. 이 현장에서는 강화 학습, 초매개변수 조정 및 적응형 시스템으로 마이그레이션된 개념인 안정성, 성능 및 견고성을 분석하기 위한 엄격한 도구를 제공합니다.
 ---

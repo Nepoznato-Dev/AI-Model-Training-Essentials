@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Динамические системы
 **Динамическая система** описывает, как государство развивается с течением времени в соответствии с фиксированным правилом. От орбит планет до динамики населения, от погодных условий до обучения нейронных сетей — теория динамических систем предоставляет язык и инструменты для понимания того, как все меняется. Этот файл охватывает обыкновенные дифференциальные уравнения (ОДУ), уравнения в частных производных (УЧП), анализ устойчивости, хаос и бифуркации.
 ---

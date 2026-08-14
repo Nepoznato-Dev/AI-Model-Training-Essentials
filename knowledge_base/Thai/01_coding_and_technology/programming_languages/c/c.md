@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ซี
 C เป็นภาษาโปรแกรมเชิงขั้นตอนสำหรับวัตถุประสงค์ทั่วไป สร้างขึ้นโดย Dennis Ritchie ที่ Bell Labs ระหว่างปี 1969 ถึง 1973 ออกแบบเพื่อใช้ระบบปฏิบัติการ Unix และยังคงเป็นหนึ่งในภาษาโปรแกรมที่ใช้กันอย่างแพร่หลายที่สุดในกว่า 50 ปีต่อมา C ให้การเข้าถึงหน่วยความจำระดับต่ำ ไลบรารีมาตรฐานขั้นต่ำ และการแมปคำสั่งเครื่องที่ชัดเจน ทำให้เป็นรากฐานในการสร้างคอมพิวเตอร์สมัยใหม่ส่วนใหญ่
 C คือภาษาที่อยู่เบื้องหลังระบบปฏิบัติการ (Linux, Windows kernel, macOS), ระบบฝังตัว, โปรแกรมฐานข้อมูล (SQLite, PostgreSQL), คอมไพเลอร์ (CPython ของ Python, MRI ของ Ruby) และรันไทม์ภาษาโปรแกรมอื่นๆ แทบทุกภาษา การทำความเข้าใจ C คือการทำความเข้าใจว่าคอมพิวเตอร์ทำงานอย่างไร

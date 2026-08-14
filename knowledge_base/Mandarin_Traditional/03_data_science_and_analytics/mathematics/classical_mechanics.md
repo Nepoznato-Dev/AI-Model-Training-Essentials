@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 經典力學
 經典力學描述了物體在力的影響下的運動。從下落的蘋果到繞著軌道運行的行星，從振動的弦到碰撞的粒子，它的原理支配著宏觀世界。除了物理應用之外，經典力學還催生了變分法、辛幾何以及支撐量子力學和現代最佳化的哈密頓框架。
 ---

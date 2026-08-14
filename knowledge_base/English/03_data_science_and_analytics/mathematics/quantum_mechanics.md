@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Quantum Mechanics
 
 Quantum mechanics is the theory of physics at the smallest scales — atoms, electrons, photons, and the fundamental particles of nature. It replaces the deterministic world of classical mechanics with probabilities, superpositions, and entanglement. Despite its counterintuitive nature, quantum mechanics is the most precisely tested theory in all of science. Today, its principles are becoming directly relevant to computing through quantum computers, which promise to solve certain problems exponentially faster than classical machines.

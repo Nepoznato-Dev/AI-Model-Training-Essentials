@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فورٹران
 فورٹران (فارمولہ ترجمہ) سب سے قدیم اعلیٰ سطحی پروگرامنگ زبان ہے جو اب بھی وسیع پیمانے پر استعمال میں ہے، جسے پہلی بار IBM نے 1957 میں سائنسی اور انجینئرنگ کمپیوٹیشن کے لیے تیار کیا تھا۔ اپنی عمر کے باوجود، جدید فورٹران (Fortran 2008/2018/2023) ایک قابل، اعلی کارکردگی والی زبان ہے جو عددی موسم کی پیشین گوئی، کمپیوٹیشنل فلوڈ ڈائنامکس، فزکس سمولیشنز، فنانشل ماڈلنگ، اور ہائی پرفارمنس کمپیوٹنگ (HPC) میں بڑے پیمانے پر استعمال ہوتی ہے۔ دنیا کے بہت سے تیز ترین سپر کمپیوٹرز فورٹران کوڈ چلاتے ہیں۔
 زبان اپنے ابتدائی دنوں سے نمایاں طور پر تیار ہوئی ہے۔ ماڈرن فورٹران میں ماڈیولز، اخذ کردہ اقسام، عام طریقہ کار، coarrays (متوازی پروگرامنگ) اور C کے ساتھ انٹرآپریبلٹی ہے۔ یہ بہت سی سائنسی کمپیوٹنگ ایپلی کیشنز کے لیے انتخاب کی زبان بنی ہوئی ہے جہاں کارکردگی سب سے اہم ہے۔

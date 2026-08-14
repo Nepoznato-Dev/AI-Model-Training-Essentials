@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الرياضيات
 الرياضيات ليست مجرد مادة تتم دراستها في المدرسة، بل إنها تدعم كل المجالات التقنية تقريبًا. تستخدمه الفيزياء لوصف الكون. يستخدمه علوم الكمبيوتر لتصميم الخوارزميات. يستخدمه التعلم الآلي لتحسين الأوزان. يستخدمه التمويل لتسعير المخاطر. ليس من الضروري إتقان كل فرع، ولكن فهم المشهد العام - ومعرفة مكان تطبيق كل فرع - يجعل فهم المواضيع الأخرى أسهل.
 ---

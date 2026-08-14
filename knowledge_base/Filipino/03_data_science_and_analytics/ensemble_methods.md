@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Paraan ng Ensemble
 Pinagsasama-sama ng mga pamamaraan ng ensemble ang maraming modelo ng machine learning para makagawa ng mas mahuhusay na hula kaysa sa anumang solong modelo na maaaring makamit nang mag-isa. Ang intuwisyon ay diretso: kung mayroon kang ilang mga modelo na ang bawat isa ay medyo tumpak ngunit gumagawa ng iba't ibang mga error, ang pagsasama-sama ng kanilang mga hula ay magkansela ng mga indibidwal na pagkakamali at magbubunga ng mas matatag na resulta. Ang mga ensemble ay nasa likod ng karamihan sa mga mapagkumpitensyang solusyon sa pag-aaral ng makina at nananatiling ilan sa mga pinaka maaasahang diskarte sa mga sistema ng produksyon.
 ---

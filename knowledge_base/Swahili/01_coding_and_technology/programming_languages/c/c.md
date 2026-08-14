@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C
 C ni lugha ya madhumuni ya jumla, ya kiutaratibu iliyoundwa na Dennis Ritchie katika Bell Labs kati ya 1969 na 1973. Iliundwa kutekeleza mfumo wa uendeshaji wa Unix, na inasalia kuwa mojawapo ya lugha za programu zinazotumiwa sana zaidi ya miaka 50 baadaye. C hutoa ufikiaji wa kumbukumbu ya kiwango cha chini, maktaba ya kiwango kidogo, na ramani safi ya maagizo ya mashine -- kuifanya msingi ambao kompyuta ya kisasa zaidi imejengwa.
 C ni lugha nyuma ya mifumo ya uendeshaji (Linux, Windows kernel, macOS), mifumo iliyopachikwa, injini za hifadhidata (SQLite, PostgreSQL), wakusanyaji (CPython ya Python, MRI ya Ruby), na karibu kila wakati mwingine wa matumizi ya lugha ya programu. Kuelewa C ni kuelewa jinsi kompyuta inavyofanya kazi.

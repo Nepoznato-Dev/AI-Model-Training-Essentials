@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آینده کار
 ## بررسی اجمالی
 روش کار ما سریعتر از هر زمان دیگری از زمان انقلاب صنعتی تغییر می کند. کار از راه دور یک شبه از امتیاز کمیاب به پیش‌فرض تبدیل شد. هوش مصنوعی از تازگی به یک همکار در حال حرکت است. اقتصاد گیگ در حال تغییر شکل معنای «اشتغال» است. و اتوماسیون برای همه مشاغل نمی آید - اما برای بسیاری از وظایف در بیشتر مشاغل می آید. در اینجا نگاهی به نیروهایی که محل کار را تغییر می دهند و آنچه در آینده می آید، می بینیم.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 特徴量エンジニアリング
 特徴エンジニアリングは、生データを機械学習モデルをより効果的な表現に変換するプロセスです。これは、ML パイプラインの最も重要なステップであるとよく説明されます。つまり、選択したアルゴリズムよりもモデルに与える機能の方が重要です。通常、巧みに作成された特徴を備えた単純なモデルは、生の未処理の入力を備えた複雑なモデルよりも優れたパフォーマンスを発揮します。技術の要点は、モデルが学習できる信号を作成できるよう、ドメインとデータの両方を十分に理解することにあります。
 ---

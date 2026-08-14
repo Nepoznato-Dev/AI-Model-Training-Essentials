@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # อนุกรมเวลาและการพยากรณ์
 ข้อมูลอนุกรมเวลาคือข้อมูลใดๆ ที่รวบรวมในช่วงเวลาหนึ่ง เช่น ราคาหุ้น การอ่านอุณหภูมิ การเข้าชมเว็บไซต์ ตัวเลขยอดขาย เครื่องวัดอัตราการเต้นของหัวใจ การใช้พลังงาน การพยากรณ์หมายถึงการทำนายมูลค่าในอนาคตตามรูปแบบในอดีต เป็นหนึ่งในการประยุกต์ใช้วิทยาศาสตร์ข้อมูลที่มีคุณค่าในทางปฏิบัติมากที่สุด และเป็นหนึ่งในการใช้งานที่ยากที่สุด เนื่องจากอนาคตมีความไม่แน่นอนอย่างแท้จริง และอนุกรมเวลาในโลกแห่งความเป็นจริงเต็มไปด้วยสัญญาณรบกวน ฤดูกาล และการพังทลายของโครงสร้าง
 ---

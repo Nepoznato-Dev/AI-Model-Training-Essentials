@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ابھرتی ہوئی ٹیکنالوجیز
 ## جائزہ
 کچھ ٹکنالوجی موجودہ کو بتدریج بہتر بنانے کے بجائے صلاحیت کے مکمل طور پر نئے زمرے تخلیق کرتی ہیں۔ کوانٹم کمپیوٹنگ کا مقصد ایسے مسائل کو حل کرنا ہے جو کلاسیکی مشینوں کو ہزاروں سال لگیں گے۔ فیوژن توانائی عملی طور پر لامحدود صاف طاقت کا امکان پیش کرتی ہے۔ دماغ کمپیوٹر انٹرفیس دماغ اور مشین کو پلتے ہیں۔ مصنوعی حیاتیات حیاتیاتی کوڈ کو دوبارہ لکھنے کے قابل بناتی ہے۔ مندرجہ ذیل حصے بیان کرتے ہیں کہ ان سرحدوں میں سے ہر ایک آج کہاں کھڑا ہے اور موجودہ رجحانات یہ بتاتے ہیں کہ یہ کہاں جا رہا ہے۔

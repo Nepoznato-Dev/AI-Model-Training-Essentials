@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ottimizzazione
 L'ottimizzazione è la matematica con cui si trova la soluzione migliore da un insieme di soluzioni fattibili. Si chiede: data una funzione e dei vincoli, quale input minimizza (o massimizza) l'output? L'ottimizzazione è il motore dell'apprendimento automatico: addestrare un modello significa ridurre al minimo una funzione di perdita. Appare nella ricerca operativa, nell'economia, nella progettazione ingegneristica e praticamente in ogni campo quantitativo.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #آگاهی زیست محیطی
 محیط یک چیز جداگانه "آن بیرون" نیست - این سیستم است که همه چیز را ممکن می کند. هر نفسی که می‌کشید، هر لیوان آبی که می‌نوشید، هر وعده غذایی که می‌خورید به ترکیب اتمسفر، چرخه‌های آب، سلامت خاک و شبکه‌های گرده‌افشان بستگی دارد. درک اینکه این سیستم ها چگونه کار می کنند - و چگونه در حال تغییر هستند - برای یک فرد آگاه اختیاری نیست. این فایل اصول علم محیط زیست، چالش‌هایی که با آن روبرو هستیم و معنای واقعی پایداری در عمل را پوشش می‌دهد.
 ---

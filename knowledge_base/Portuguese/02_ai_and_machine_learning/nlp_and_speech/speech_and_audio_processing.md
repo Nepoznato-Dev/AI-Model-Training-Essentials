@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Processamento de fala e áudio
 O processamento de fala e áudio abrange as tecnologias que permitem às máquinas ouvir, compreender, gerar e manipular o som. Isso inclui reconhecimento de fala (transformar palavras faladas em texto), síntese de fala (transformar texto em palavras faladas), identificação de locutor, geração de música e compreensão de som ambiental. O campo foi transformado pela aprendizagem profunda – os sistemas modernos aproximam-se da precisão do nível humano para o reconhecimento de voz e produzem vozes sintéticas assustadoramente naturais.
 ---

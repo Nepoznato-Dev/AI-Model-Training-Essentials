@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # R — 生态系统和工具指南
 本指南涵盖了 R 生态系统中的基本工具、包和基础设施。
 ---

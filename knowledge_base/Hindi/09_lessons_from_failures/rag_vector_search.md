@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # RAG और वेक्टर खोज विफलताएँ
 यह दस्तावेज़ पुनर्प्राप्ति-संवर्धित पीढ़ी (आरएजी) सिस्टम, एम्बेडिंग उपयोग और वेक्टर खोज कार्यान्वयन में सामान्य विफलताओं को समेकित करता है।
 ---

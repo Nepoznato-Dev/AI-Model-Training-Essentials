@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # পরিসংখ্যানগত পরীক্ষা এবং পরীক্ষা
 পরিসংখ্যান হল বিজ্ঞানের ব্যাকরণ। এটি আপনাকে এলোমেলো শব্দ থেকে বাস্তব নিদর্শনগুলিকে আলাদা করার সরঞ্জাম দেয়, একটি পরিবর্তন আসলে জিনিসগুলিকে উন্নত করেছে কিনা তা পরিমাপ করতে এবং অনিশ্চয়তার মধ্যে সিদ্ধান্ত নেওয়ার জন্য। এই ফাইলটি হাইপোথিসিস পরীক্ষার মূল ধারণা, পরীক্ষামূলক নকশা এবং সাধারণ সমস্যাগুলিকে কভার করে যা লোকেদের নিয়ে যায়।
 ---

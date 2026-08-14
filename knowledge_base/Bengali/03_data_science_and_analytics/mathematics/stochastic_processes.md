@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্টোকাস্টিক প্রসেস
 একটি **স্টোকাস্টিক প্রক্রিয়া** হল সময় (বা স্থান) দ্বারা সূচিত করা এলোমেলো ভেরিয়েবলের একটি সংগ্রহ। যদিও সম্ভাব্যতা তত্ত্ব পৃথক এলোমেলো ঘটনাগুলি অধ্যয়ন করে, স্টোকাস্টিক প্রক্রিয়াগুলি অধ্যয়ন করে যে কীভাবে এলোমেলোতা সময়ের সাথে বিকশিত হয়। তারা স্টকের দাম, সারির দৈর্ঘ্য, রোগের বিস্তার, ভাষা তৈরি এবং মেশিন লার্নিং মডেলের প্রশিক্ষণ গতিশীলতার মডেল করে।
 ---

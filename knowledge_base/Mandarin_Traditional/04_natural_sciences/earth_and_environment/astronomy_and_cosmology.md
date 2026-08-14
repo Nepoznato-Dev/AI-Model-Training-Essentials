@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 天文學與宇宙學
 天文學是對天體（恆星、行星、星係以及地球大氣層以外的一切）的研究。宇宙學是對整個宇宙的研究：它的起源、結構、演化和最終命運。他們共同解決了人類曾經提出過的一些最基本的問題：宇宙是如何開始的？有多大？我們孤獨嗎？它最終會發生什麼事情？
 ---

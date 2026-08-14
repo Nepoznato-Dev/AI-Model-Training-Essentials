@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Futures géostratégiques
 ## Aperçu
 L’ère de domination américaine de l’après-guerre froide cède la place à quelque chose de plus compliqué : un monde multipolaire où le pouvoir est diffus, où la concurrence s’intensifie pour la technologie et les ressources, et où les défis comme le changement climatique et les pandémies ne respectent pas les frontières. L’ordre international fondé sur des règles, construit après 1945, est mis à l’épreuve dans toutes les directions. Voici ce qui change, qui monte et où se situent les points de friction.

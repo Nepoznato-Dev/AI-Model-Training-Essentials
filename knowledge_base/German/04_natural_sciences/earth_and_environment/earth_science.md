@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Geowissenschaften
 Die Geowissenschaften erforschen den Planeten, auf dem wir leben – seine Struktur, Prozesse, Geschichte und die Systeme, die ihn bewohnbar machen. Es umfasst Geologie (die feste Erde), Ozeanographie (die Ozeane), Meteorologie (Atmosphäre und Wetter) und Klimatologie (langfristige Klimamuster). Was diese Bereiche eint, ist das Verständnis, dass die Erde ein dynamisches System ist: Ihr Inneres ist ständig in Bewegung, ihre Oberfläche verändert sich und ihre Atmosphäre und Ozeane interagieren auf komplexe Weise.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Мультимодальный ИИ
 Мультимодальные системы искусственного интеллекта обрабатывают и объединяют информацию из нескольких типов данных — текста, изображений, аудио, видео и т. д. — одновременно. В то время как более ранние системы искусственного интеллекта обычно были одномодальными (только текст, только изображения), наиболее эффективные современные системы являются мультимодальными. GPT-4V считывает изображения и текст вместе; Gemini обрабатывает текст, изображения, аудио и видео в исходном виде; и такие системы, как Sora, генерируют видео из текстовых описаний. В этом файле рассказывается, как работает мультимодальный ИИ, лежащие в его основе архитектуры и почему объединение модальностей так эффективно.
 ---

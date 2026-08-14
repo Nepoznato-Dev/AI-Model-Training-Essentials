@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # بهینه سازی
 بهینه سازی ریاضیات یافتن بهترین راه حل از مجموعه ای از راه حل های امکان پذیر است. می پرسد: با توجه به یک تابع و محدودیت ها، چه ورودی خروجی را به حداقل می رساند (یا حداکثر می کند)؟ بهینه سازی موتور یادگیری ماشینی است – آموزش یک مدل به معنای به حداقل رساندن یک تابع ضرر است. این در تحقیقات عملیات، اقتصاد، طراحی مهندسی و تقریباً در هر زمینه کمی ظاهر می شود.
 ---

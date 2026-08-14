@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #R
 R은 통계 컴퓨팅 및 데이터 분석을 위해 특별히 설계된 프로그래밍 언어 및 환경입니다. 1993년 오클랜드 대학교의 Ross Ihaka와 Robert Gentleman(따라서 "R")이 만든 이 언어는 상당한 확장이 포함된 S 언어를 구현한 것입니다. R은 오픈 소스이며 R Core Team에서 유지 관리합니다. 이는 학계, 의료, 금융 및 정부 분야의 통계학자, 데이터 분석가 및 연구원을 위한 표준 도구입니다.
 R은 데이터 조작, 통계 모델링, 시각화 및 보고에 탁월합니다. CRAN(패키지 생태계)에는 지금까지 고안된 거의 모든 통계 방법을 포괄하는 20,000개 이상의 패키지가 있습니다.

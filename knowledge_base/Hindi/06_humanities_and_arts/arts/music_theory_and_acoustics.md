@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # संगीत सिद्धांत और ध्वनिकी
 संगीत सिद्धांत इस बात का अध्ययन है कि संगीत कैसे काम करता है - पैटर्न, संरचनाएं और सिद्धांत जो ध्वनियों के कुछ संयोजनों को सुखद या सार्थक बनाते हैं और अन्य को असंगत या अराजक बनाते हैं। ध्वनिकी ध्वनि की भौतिकी है - कंपन हवा के माध्यम से कैसे यात्रा करते हैं, वे कैसे उत्पन्न होते हैं और कैसे महसूस किए जाते हैं। साथ में, वे समझाते हैं कि सी प्रमुख राग खुश क्यों लगता है, छोटी कुंजी उदास क्यों लगती है, कॉन्सर्ट हॉल कैसे डिज़ाइन किए जाते हैं, और आपका पसंदीदा गाना आपको ठंडक क्यों देता है।
 ---

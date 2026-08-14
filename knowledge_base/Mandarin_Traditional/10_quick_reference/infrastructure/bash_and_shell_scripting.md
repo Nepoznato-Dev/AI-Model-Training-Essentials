@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bash 和 Shell 腳本備忘單
 在 Bash（大多數 Linux 和 macOS 系統上的預設 shell）中編寫 shell 腳本的實用參考。涵蓋文法、常見模式、文字處理和有用的單行話。
 ---

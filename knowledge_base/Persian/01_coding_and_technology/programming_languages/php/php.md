@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP (پیش پردازشگر فرامتن) یک زبان برنامه نویسی سمت سرور است که توسط Rasmus Lerdorf در سال 1994 ایجاد شد و اولین بار در سال 1995 منتشر شد. PHP که در ابتدا برای تولید صفحات وب پویا طراحی شده بود، به یک زبان همه منظوره با امکانات کامل تبدیل شده است. تقریباً 75٪ از تمام وب سایت ها با زبان سمت سرور شناخته شده، از جمله WordPress، Facebook (در اصل)، Wikipedia، Slack و میلیون ها سایت دیگر را تامین می کند.
 PHP مدرن (8.x) یک زبان بسیار متفاوت از PHP در اوایل دهه 2000 است. اکنون دارای ویژگی‌های تایپ شده، عبارات مطابقت، enums، فیبرها، کلاس‌های فقط خواندنی و یک سیستم نوع قوی است. علیرغم شهرت آن در میان توسعه دهندگان (اغلب به دلیل ناسازگاری مورد انتقاد قرار می گیرد)، PHP عملی است، به طور گسترده مستقر شده است و همچنان در حال بهبود است.

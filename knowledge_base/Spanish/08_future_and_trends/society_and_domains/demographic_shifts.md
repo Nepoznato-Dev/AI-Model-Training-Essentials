@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cambios demográficos
 ## Descripción general
 La demografía es el destino, o al menos rima fuertemente con él. La población mundial está envejeciendo rápidamente, migrando según nuevos patrones, agrupándose en ciudades a un ritmo sin precedentes y dividiéndose a lo largo de líneas generacionales que moldean todo, desde el comportamiento electoral hasta los hábitos de consumo. Estos cambios se producirán a lo largo de décadas, pero sus efectos ya son visibles. Aquí están las cuatro grandes tendencias y lo que significan.

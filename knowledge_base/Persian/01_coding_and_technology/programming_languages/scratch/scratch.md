@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # خراش
 Scratch یک زبان برنامه نویسی بصری و مبتنی بر بلوک است که توسط آزمایشگاه MIT Media Lab توسعه یافته و برای اولین بار در سال 2007 منتشر شد. کاربران به جای نوشتن کد مبتنی بر متن، بلوک های رنگی را برای ایجاد برنامه به هم می چسبانند. Scratch به طور خاص برای کودکان 8 تا 16 ساله طراحی شده است (اگرچه زبان آموزان در تمام سنین از آن استفاده می کنند) تا مفاهیم اساسی برنامه نویسی - حلقه ها، شرطی ها، متغیرها، رویدادها و توابع - را بدون مانع از خطاهای نحوی آموزش دهد.
 اسکرچ پرکاربردترین زبان برنامه نویسی مقدماتی در جهان است، با بیش از 100 میلیون کاربر ثبت نام شده و در دسترس بودن به بیش از 70 زبان. این برنامه در یک مرورگر وب اجرا می شود و رایگان است.

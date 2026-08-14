@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 红宝石
 Ruby 是一种动态、解释性、面向对象的编程语言，由 Yukihiro "Matz" Matsumoto 创建，并于 1995 年在日本首次发布。 Ruby 的设计重点是程序员的幸福——它的语法优雅而自然，读起来几乎像英语一样。 Ruby 中的一切都是对象，包括整数和布尔值等基本类型。 Ruby 因 Ruby on Rails Web 框架而闻名，该框架通过普及约定优于配置和快速原型设计，彻底改变了 Web 开发。
 除了 Rails 之外，Ruby 还用于脚本编写、自动化、DevOps 工具（Chef、Puppet）以及作为通用语言。其富有表现力的语法和强大的元编程功能使其成为一种编写的乐趣。

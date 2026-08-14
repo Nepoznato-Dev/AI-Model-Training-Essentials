@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Batas at Legal na Sistema
 Ang batas ay ang hanay ng mga tuntunin na sinasang-ayunan ng isang lipunan na ipatupad sa pamamagitan ng mga institusyon nito. Ito ay hindi katulad ng moralidad — maaari kang gumawa ng isang bagay na legal na imoral, at isang bagay na ilegal na may katwiran sa moral. Umiiral ang batas upang magbigay ng predictability: upang itatag kung ano ang pinapayagan, kung ano ang ipinagbabawal, at kung ano ang mangyayari kapag nilabag ang mga patakaran. Kung wala ito, ang mga hindi pagkakaunawaan ay naaayos sa pamamagitan ng kapangyarihan. Sa pamamagitan nito, ang mga hindi pagkakaunawaan ay naaayos sa pamamagitan ng proseso.
 Sinasaklaw ng file na ito ang mga pangunahing legal na sistema, ang mga pangunahing sangay ng batas, at ang mga konseptong humuhubog sa kung paano gumagana ang mga legal na sistema sa pagsasanay.

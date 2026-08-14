@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optik dan Gelombang
 Gelombang ada dimana-mana: suara, cahaya, air, sinyal radio, amplitudo probabilitas kuantum, fluktuasi pasar saham, dan getaran aktivasi jaringan saraf. Optik - studi tentang cahaya - adalah ilmu gelombang yang paling berkembang, dan alat matematikanya (analisis Fourier, interferensi, difraksi) berlaku untuk setiap fenomena gelombang. Memahami gelombang sangat penting untuk pemrosesan sinyal, analisis gambar, komunikasi, dan lapisan fisik dari semua teknologi modern.
 ---

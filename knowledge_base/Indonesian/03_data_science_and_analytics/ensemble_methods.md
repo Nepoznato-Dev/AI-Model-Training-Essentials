@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Metode Ensembel
 Metode ansambel menggabungkan beberapa model pembelajaran mesin untuk menghasilkan prediksi yang lebih baik daripada yang dapat dicapai oleh satu model saja. Intuisinya sederhana: jika Anda memiliki beberapa model yang masing-masing agak akurat tetapi menghasilkan kesalahan yang berbeda, menggabungkan prediksi mereka akan menghilangkan kesalahan individual dan menghasilkan hasil yang lebih kuat. Ensembel berada di balik sebagian besar solusi pembelajaran mesin yang kompetitif dan tetap menjadi salah satu teknik paling andal dalam sistem produksi.
 ---

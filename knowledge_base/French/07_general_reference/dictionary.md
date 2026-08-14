@@ -1,3 +1,4 @@
+<!--
 ---
 # Métadonnées
 titre : "Dictionnaire anglais - Définitions de mots courantes"
@@ -34,6 +35,8 @@ apport :
   how_to_contribute : "Soumettez un PR avec les modifications et mettez à jour le journal des modifications"
   review_process : "Les modifications sont examinées par les responsables de la catégorie avant la fusion"
 ---
+
+-->
 # Dictionnaire anglais — Définitions de mots courantes
 Une liste de référence de mots anglais fréquemment utilisés et leurs significations,
 couvrant le vocabulaire quotidien, les termes académiques et les mots couramment rencontrés

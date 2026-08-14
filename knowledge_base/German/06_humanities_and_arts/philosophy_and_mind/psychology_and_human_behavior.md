@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Psychologie und menschliches Verhalten
 Psychologie ist die Wissenschaft davon, wie und warum Menschen so denken, fühlen und handeln, wie sie es tun. Es ist kein Gedankenlesen und es ist kein gesunder Menschenverstand – obwohl es manchmal bestätigt, was der gesunde Menschenverstand nahelegt, und manchmal völlig im Widerspruch dazu steht. Die Psychologie verwendet dieselbe wissenschaftliche Methode wie jede andere Wissenschaft: beobachten, Hypothesen aufstellen, testen, überarbeiten. Was es herausfordernd macht, ist, dass sein Subjekt – der menschliche Geist – das komplexeste Objekt ist, das wir kennen.
 Diese Datei deckt die wichtigsten Bereiche der Psychologie ab: wie wir denken, wie wir uns entwickeln, wie wir von anderen beeinflusst werden, was schief geht und was man dagegen tun kann.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মডেল অপ্টিমাইজেশান এবং স্থাপনা
 একটি বৃহৎ এআই মডেলকে প্রশিক্ষণ দেওয়া একটি উল্লেখযোগ্য অর্জন, তবে এটিকে দক্ষতার সাথে স্থাপন করা যেখানে বেশিরভাগ প্রকৌশল প্রচেষ্টার প্রয়োজন হয়। একটি মডেল যা সাড়া দিতে 10 সেকেন্ড সময় নেয় বা আটটি A100 GPU এর প্রয়োজন হয় বেশিরভাগ বাস্তব-বিশ্বের অ্যাপ্লিকেশনের জন্য অব্যবহারিক৷ মডেল অপ্টিমাইজেশান হল মডেলগুলিকে ছোট, দ্রুত এবং আরও সাশ্রয়ী করার প্রক্রিয়া — গ্রহণযোগ্য গুণমান বজায় রেখে। এই ফাইলটি কোয়ান্টাইজেশন, ছাঁটাই, পাতন, এবং উত্পাদনে মডেল স্থাপনের জন্য ব্যবহারিক সরঞ্জামগুলি কভার করে।
 ---

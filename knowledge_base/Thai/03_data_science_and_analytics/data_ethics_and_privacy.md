@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # จริยธรรมข้อมูลและความเป็นส่วนตัว
 จริยธรรมข้อมูลคือการศึกษาว่าการรวบรวม การวิเคราะห์ และการใช้งานข้อมูลส่งผลต่อสิทธิ ความเป็นอิสระ และความเป็นอยู่ของผู้คนอย่างไร ความเป็นส่วนตัวคือข้อกังวลเฉพาะเกี่ยวกับผู้ที่ควบคุมข้อมูลส่วนบุคคลและวิธีการแบ่งปันข้อมูล หัวข้อเหล่านี้ได้ย้ายจากการถกเถียงทางวิชาการไปสู่ข่าวหน้าหนึ่ง เช่น การบังคับใช้ GDPR การละเมิดข้อมูลที่ส่งผลกระทบต่อผู้ใช้หลายพันล้านคน และการรับรู้ของสาธารณชนที่เพิ่มมากขึ้นว่าหลักปฏิบัติด้านข้อมูลของบริษัทเทคโนโลยีมีผลกระทบที่แท้จริงต่อประชาธิปไตย ความเสมอภาค และเสรีภาพส่วนบุคคล
 ---

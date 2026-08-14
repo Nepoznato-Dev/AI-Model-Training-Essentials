@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 未來交通
 ＃＃ 概述
 從 A 地到 B 地的交通將會變得非常不同。自動駕駛汽車已經在公共道路上行駛。電動飛機正在完成試飛。超級高鐵概念承諾在真空管中以火車速度行駛。飛行計程車——曾經的卡通人物——正進入認證階段。以下是重塑我們出行方式的技術的發展現狀。

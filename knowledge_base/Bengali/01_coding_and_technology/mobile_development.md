@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মোবাইল ডেভেলপমেন্ট
 মোবাইল ডেভেলপমেন্ট হল স্মার্টফোন এবং ট্যাবলেটের জন্য অ্যাপ্লিকেশন তৈরি করার অনুশীলন — প্রাথমিকভাবে iOS (Apple) এবং Android (Google)-এর জন্য। এটি ছোট স্ক্রিনের জন্য UI ডিজাইন থেকে শুরু করে ব্যাটারি লাইফ পরিচালনা, নেটওয়ার্ক অস্থিরতা পরিচালনা এবং স্টোরের মাধ্যমে অ্যাপ বিতরণ পর্যন্ত সবকিছুকে অন্তর্ভুক্ত করে। ক্ষেত্রটি উল্লেখযোগ্যভাবে পরিপক্ক হয়েছে, ক্রস-প্ল্যাটফর্ম ফ্রেমওয়ার্কগুলি এখন বেশিরভাগ ব্যবহারের ক্ষেত্রে নেটিভ ডেভেলপমেন্টের সাথে প্রতিযোগিতা করছে।
 ---

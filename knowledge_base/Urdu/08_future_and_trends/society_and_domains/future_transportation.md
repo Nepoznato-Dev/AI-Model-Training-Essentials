@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مستقبل کی نقل و حمل
 ## جائزہ
 A سے B تک جانا بہت مختلف نظر آنے والا ہے۔ خود سے چلنے والی کاریں پہلے ہی عوامی سڑکوں پر موجود ہیں۔ الیکٹرک طیارے آزمائشی پروازیں مکمل کر رہے ہیں۔ ہائپر لوپ تصورات ویکیوم ٹیوبوں میں ٹرین کی رفتار کے سفر کا وعدہ کرتے ہیں۔ اور اڑنے والی ٹیکسیاں - ایک بار جب کارٹونوں کا سامان ہوتا ہے - سرٹیفیکیشن میں داخل ہو رہا ہے۔ ہم کس طرح حرکت کرتے ہیں اس کی نئی شکل دینے والی ٹیکنالوجیز میں کھیل کی حالت یہ ہے۔

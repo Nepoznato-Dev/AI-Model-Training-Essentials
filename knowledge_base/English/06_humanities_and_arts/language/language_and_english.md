@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Language and English
 
 There are roughly 7,000 languages spoken in the world today. English is the most widely spoken as a second language and serves as the default for international business, science, aviation, and the internet. Whether writing code documentation, reading research papers, or communicating across borders, a solid command of English — grammar, vocabulary, and rhetoric — is one of the most practical skills one can develop.

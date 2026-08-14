@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bash 및 쉘 스크립팅 치트 시트
 대부분의 Linux 및 macOS 시스템의 기본 셸인 Bash에서 셸 스크립트를 작성하기 위한 실용적인 참조입니다. 구문, 일반적인 패턴, 텍스트 처리 및 유용한 한 줄짜리 내용을 다룹니다.
 ---

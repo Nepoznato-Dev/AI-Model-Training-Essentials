@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #スウィフト
 Swift は、Apple (Chris Lattner 率いる) によって開発され、2014 年に初めてリリースされた最新のコンパイル済みプログラミング言語です。Swift は、Apple プラットフォーム開発 (iOS、macOS、watchOS、tvOS、visionOS) の主要言語として Objective-C に代わるように設計されました。 Swift は、コンパイル言語のパフォーマンスとスクリプト言語の表現力を組み合わせており、特に null 値、メモリ管理、および型エラーに関する安全性を重視しています。
 Apple プラットフォームを超えて、Swift はサーバーサイド開発 (Vapor、Hummingbird)、クロスプラットフォーム アプリケーション、さらには機械学習 (Apple の Create ML) にもますます使用されています。 Swift on Server の導入とクロスプラットフォームのサポートにより、Swift は単なる「Apple 言語」以上のものになりつつあります。

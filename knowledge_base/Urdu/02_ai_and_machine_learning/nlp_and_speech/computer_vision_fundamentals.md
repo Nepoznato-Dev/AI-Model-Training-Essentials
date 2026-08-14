@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کمپیوٹر وژن کے بنیادی اصول
 کمپیوٹر ویژن مشینوں کو دنیا سے بصری معلومات کی تشریح اور سمجھنے کی صلاحیت فراہم کرتا ہے - تصاویر، ویڈیو، اور 3D ڈیٹا۔ یہ آپ کے فون پر چہرے کی شناخت سے لے کر خود چلانے والی کاروں، طبی تصویر کے تجزیہ اور صنعتی کوالٹی کنٹرول تک ہر چیز کو طاقت دیتا ہے۔ یہ فائل بنیادی تصورات، فن تعمیرات اور تکنیکوں کا احاطہ کرتی ہے۔
 ---

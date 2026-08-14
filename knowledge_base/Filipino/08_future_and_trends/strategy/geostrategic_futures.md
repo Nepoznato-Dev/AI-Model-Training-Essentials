@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Geostrategic Futures
 ## Pangkalahatang-ideya
 Ang post-Cold War era ng pangingibabaw ng Amerika ay nagbibigay daan sa isang bagay na mas magulo: isang multipolar na mundo kung saan ang kapangyarihan ay nagkakalat, tumitindi ang kompetisyon sa teknolohiya at mga mapagkukunan, at ang mga hamon tulad ng pagbabago ng klima at mga pandemya ay hindi iginagalang ang mga hangganan. Ang internasyonal na order na nakabatay sa mga panuntunan na binuo pagkatapos ng 1945 ay sinusuri mula sa bawat direksyon. Narito kung ano ang nagbabago, sino ang tumataas, at kung saan ang mga punto ng friction.

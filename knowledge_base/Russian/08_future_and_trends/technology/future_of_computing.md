@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Будущее вычислений
 Будущее вычислений формируется силами, которые бросают вызов фундаментальным предположениям последних 60 лет. Закон Мура — наблюдение о том, что вычислительная мощность удваивается примерно каждые два года — замедляется. Архитектура фон Неймана — отдельные процессор и память — сталкивается с «стеной памяти». Квантовые вычисления обещают решить проблемы, которые не могут решить классические компьютеры. Нейроморфные чипы имитируют архитектуру мозга. Периферийные вычисления выводят обработку из централизованных центров обработки данных. И ИИ меняет то, для чего нужны компьютеры — от инструментов, выполняющих инструкции, до систем, которые учатся, генерируют и рассуждают. Понимание этих изменений важно для любого, кто создает, покупает или полагается на технологии.
 ---

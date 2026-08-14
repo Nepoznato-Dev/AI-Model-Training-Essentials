@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 一般知識
 このファイルは、会話、ニュース、教育、日常生活で定期的に登場する事実と概念を集めたものです。それは背景知識、つまり、読んだり、聞いたり、経験していることを理解するのに役立つ種類の知識であると考えてください。
 ---

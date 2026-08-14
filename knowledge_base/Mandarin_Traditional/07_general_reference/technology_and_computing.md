@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 技術與計算
 計算無所不在——在你的手機、你的汽車、你的冰箱、你的醫療設備以及運行現代社會的基礎設施中。您無需成為程式設計師即可從了解其工作原理中受益。該文件涵蓋了基礎知識：什麼是電腦、互聯網如何運作、軟體如何建構以及塑造數位世界的概念。
 > **想要深入了解嗎？ ** 該文件是一個廣泛的概述。任何主題的詳細介紹，請參閱[`01_coding_and_technology/`](../01_coding_and_technology/)中的專用檔案 — 包括、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)和。

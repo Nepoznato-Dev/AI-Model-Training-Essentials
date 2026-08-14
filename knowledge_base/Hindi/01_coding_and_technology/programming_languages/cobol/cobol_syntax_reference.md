@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # COBOL - सिंटैक्स संदर्भ
 यह दस्तावेज़ COBOL (2014+) के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह संपूर्ण सिंटैक्स पैटर्न, डेटा विवरण, फ़ाइल प्रोसेसिंग और व्यावसायिक तर्क पर ध्यान केंद्रित करके मुख्य COBOL संदर्भ को पूरक करता है।
 ---

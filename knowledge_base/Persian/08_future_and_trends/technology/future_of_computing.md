@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آینده محاسبات
 آینده محاسبات توسط نیروهایی شکل می گیرد که مفروضات اساسی 60 سال گذشته را به چالش می کشند. قانون مور - مشاهده ای که قدرت محاسباتی تقریباً هر دو سال دو برابر می شود - کند می شود. معماری فون نویمان - CPU و حافظه مجزا - در حال برخورد با "دیوار حافظه" است. محاسبات کوانتومی نوید حل مشکلاتی را می دهد که کامپیوترهای کلاسیک قادر به حل آن نیستند. تراشه های نورومورفیک معماری مغز را تقلید می کنند. محاسبات لبه پردازش را از مراکز داده متمرکز دور می کند. و هوش مصنوعی در حال تغییر است که رایانه‌ها برای آن استفاده می‌شوند - از ابزارهایی که دستورالعمل‌ها را اجرا می‌کنند تا سیستم‌هایی که یاد می‌گیرند، تولید می‌کنند و استدلال می‌کنند. درک این تغییرات برای هر کسی که بسازد، بخرد یا به تکنولوژی تکیه کند اهمیت دارد.
 ---

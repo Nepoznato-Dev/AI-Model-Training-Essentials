@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เกา
 Scratch เป็นภาษาโปรแกรมแบบบล็อกภาพซึ่งพัฒนาโดย MIT Media Lab และเปิดตัวครั้งแรกในปี 2550 แทนที่จะเขียนโค้ดแบบข้อความ ผู้ใช้จะรวมบล็อกสีเข้าด้วยกันเพื่อสร้างโปรแกรม Scratch ได้รับการออกแบบมาโดยเฉพาะสำหรับเด็กอายุ 8-16 ปี (แม้ว่าผู้เรียนทุกวัยจะใช้ก็ตาม) เพื่อสอนแนวคิดการเขียนโปรแกรมขั้นพื้นฐาน เช่น ลูป เงื่อนไข ตัวแปร เหตุการณ์ และฟังก์ชัน โดยไม่มีอุปสรรคจากข้อผิดพลาดทางไวยากรณ์
 Scratch เป็นภาษาการเขียนโปรแกรมเบื้องต้นที่ใช้กันอย่างแพร่หลายที่สุดในโลก โดยมีผู้ใช้ที่ลงทะเบียนมากกว่า 100 ล้านคน และพร้อมให้บริการในกว่า 70 ภาษา มันทำงานบนเว็บเบราว์เซอร์และฟรี

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Рубин
 Ruby — это динамический интерпретируемый объектно-ориентированный язык программирования, созданный Юкихиро «Мац» Мацумото и впервые выпущенный в 1995 году в Японии. Ruby был разработан с упором на счастье программистов — его синтаксис элегантен и естественен, он читается почти как английский. Все в Ruby является объектом, включая примитивные типы, такие как целые и логические значения. Ruby наиболее известен благодаря веб-фреймворку Ruby on Rails, который произвел революцию в веб-разработке, популяризировав соглашения по настройке и быстрому прототипированию.
 Помимо Rails, Ruby используется для создания сценариев, автоматизации, инструментов DevOps (Chef, Puppet) и в качестве языка общего назначения. Его выразительный синтаксис и мощные возможности метапрограммирования делают его написание удовольствием.

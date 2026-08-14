@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perł
 Perl został stworzony przez Larry'ego Walla w 1987 roku jako praktyczne narzędzie do przetwarzania tekstu. Stało się podstawą wczesnego tworzenia stron internetowych (skrypty CGI), administrowania systemami, bioinformatyki i programowania sieciowego. Filozofia Perla brzmi: „Jest więcej niż jeden sposób, aby to zrobić” (TMTOWTDI) — język zapewnia wiele podejść do każdego problemu, przedkładając ekspresję nad jednolitość.
 Wpływ Perla na współczesne programowanie jest ogromny, ale często niewidoczny: wyrażenia regularne, na które wpływa dopasowywanie wzorców Perla, są obecnie standardem w Pythonie, JavaScript, Javie i większości innych języków. CPAN (Comprehensive Perl Archive Network) była jednym z pierwszych repozytoriów pakietów oprogramowania i zainspirowała późniejsze systemy, takie jak PyPI Pythona i npm Node'a.

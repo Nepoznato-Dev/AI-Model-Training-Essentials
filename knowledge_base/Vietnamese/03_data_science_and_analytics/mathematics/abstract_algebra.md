@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Đại số trừu tượng
 Đại số trừu tượng nghiên cứu các cấu trúc đại số - các bộ được trang bị các phép toán tuân theo các quy tắc cụ thể. Thay vì làm việc với các con số, đại số trừu tượng làm việc với bất kỳ đối tượng nào thỏa mãn các tiên đề. Tính tổng quát này rất mạnh mẽ: một định lý đã được chứng minh cho "nhóm" áp dụng đồng thời cho các số nguyên, đối xứng, ma trận, hoán vị và trạng thái lượng tử. Đại số trừu tượng làm nền tảng cho mật mã, mã sửa lỗi, điện toán lượng tử và phân tích đối xứng được sử dụng trong vật lý.
 ---

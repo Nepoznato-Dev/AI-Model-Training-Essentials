@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ブロックチェーンと分散システム
 ブロックチェーンは、特定の種類の分散システムです。記録 (ブロック) が暗号化ハッシュによってリンクされている、分散型の追加専用台帳です。分散システムは、複数のコンピュータを 1 台として連携させる広範な分野です。どちらの概念も、暗号通貨から分散データベース、グローバル サービスを強化するコンセンサス アルゴリズムに至るまで、最新のインフラストラクチャを理解するために重要です。
 ---

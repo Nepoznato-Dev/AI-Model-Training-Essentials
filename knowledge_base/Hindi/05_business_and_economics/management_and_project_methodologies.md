@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # प्रबंधन और परियोजना पद्धतियाँ
 किसी भी संगठन में लोगों और परियोजनाओं का प्रबंधन करना सबसे अधिक मांग वाली जिम्मेदारियों में से एक है। तकनीकी कौशल प्रवेश प्रदान करते हैं, लेकिन टीमों का नेतृत्व करने, निर्णय लेने, प्रभावी ढंग से संवाद करने और परिणाम देने की क्षमता यह निर्धारित करती है कि उद्देश्य हासिल किए गए हैं या नहीं। यह फ़ाइल उन रूपरेखाओं, पद्धतियों और व्यावहारिक कौशलों को शामिल करती है जिन्हें प्रभावी प्रबंधक और परियोजना नेता लागू करते हैं।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 Ang SQL (Structured Query Language) ay isang domain-specific na wika na idinisenyo para sa pamamahala at pag-query ng data sa mga relational na database. Unang binuo sa IBM noong 1970s at na-standardize noong 1987, ang SQL ay nananatiling pangunahing interface sa pagitan ng mga application at ng kanilang data. Ang bawat pangunahing Relational Database Management System (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — ay gumagamit ng SQL bilang query language nito.
 Ang SQL ay hindi isang pangkalahatang layunin na programming language. Hindi ka magsulat ng isang web application sa SQL. Ngunit kung ang iyong application ay nag-iimbak ng data - at halos lahat ng mga application ay nag-iimbak - kung gayon ang SQL ay ang wikang ginagamit mo upang kunin, baguhin, at pamahalaan ang data na iyon. Ito ay arguably ang pinaka-unibersal na kapaki-pakinabang na teknikal na kasanayan pagkatapos ng pangkalahatang programming.

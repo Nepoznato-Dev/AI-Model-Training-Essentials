@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Visualización de datos
 Un gráfico bien diseñado puede revelar patrones que ocultan las tablas de números. Uno mal diseñado puede inducir a error, confundir o aburrir. La visualización de datos es el arte de convertir datos en historias visuales que informen las decisiones. Este archivo cubre la selección de gráficos, los principios de diseño, los errores comunes y las herramientas que lo hacen posible.
 ---

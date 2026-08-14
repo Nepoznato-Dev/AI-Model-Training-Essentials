@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التعلم الموحد والخصوصية
 التعلم الموحد هو أسلوب لتدريب نماذج التعلم الآلي عبر أجهزة أو مؤسسات متعددة دون مشاركة البيانات الأولية. بدلاً من إرسال البيانات إلى خادم مركزي، يقوم كل جهاز بتدريب نموذج محلي ويشارك فقط تحديثات النموذج (التدرجات أو الأوزان). يقوم الخادم المركزي بتجميع هذه التحديثات لإنتاج نموذج عالمي. تم تصميمه بواسطة Google لتدريب نماذج لغة لوحة المفاتيح على هواتف Android - ومنذ ذلك الحين أصبح أسلوبًا رئيسيًا للذكاء الاصطناعي للحفاظ على الخصوصية.
 ---

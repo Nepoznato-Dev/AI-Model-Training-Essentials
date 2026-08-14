@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जावा
 जावा एक सांख्यिकीय रूप से टाइप की गई, ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग भाषा है, जिसे सन माइक्रोसिस्टम्स में जेम्स गोस्लिंग द्वारा बनाया गया था और 1995 में जारी किया गया था। इसका डिज़ाइन दर्शन - "एक बार लिखें, कहीं भी चलाएं" (WORA) - जावा वर्चुअल मशीन (JVM) के माध्यम से प्राप्त किया जाता है, जो संकलित जावा कोड को JVM कार्यान्वयन वाले किसी भी प्लेटफ़ॉर्म पर चलाने की अनुमति देता है। जावा इतिहास में सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषाओं में से एक है, जो एंटरप्राइज़ बैकएंड, एंड्रॉइड ऐप्स, बड़े डेटा सिस्टम और वित्तीय सेवाओं को सशक्त बनाती है।
 लगभग 30 वर्ष पुराना होने के बावजूद, जावा का विकास जारी है। आधुनिक जावा (संस्करण 17+) में रिकॉर्ड, सीलबंद कक्षाएं, पैटर्न मिलान, आभासी धागे और एक बढ़ता हुआ पारिस्थितिकी तंत्र शामिल है जो नई भाषाओं के साथ प्रतिस्पर्धा करता है।

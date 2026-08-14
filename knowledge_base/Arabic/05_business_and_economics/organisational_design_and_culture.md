@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التصميم التنظيمي والثقافة
 التصميم التنظيمي هو الترتيب المتعمد للهيكل والعمليات والأدوار وحقوق اتخاذ القرار لتنفيذ الإستراتيجية بفعالية. الثقافة هي القيم والمعتقدات والأعراف والسلوكيات المشتركة التي تشكل كيفية عمل الناس معًا فعليًا. يوفر الهيكل الإطار؛ الثقافة تشكل السلوك ومن الممكن إعادة تصميم الهيكل على الورق، ولكن إذا لم تدعم الثقافة التغيير، فسوف يفشل التنفيذ. وبالمثل، فإن الثقافة القوية المقترنة بهيكل غير فعال ستؤدي تدريجياً إلى تقويض الأداء التنظيمي. وتتعامل المنظمات الأكثر فعالية مع الأمرين معًا، وتدرك أنهما مترابطان بشكل عميق.
 ---

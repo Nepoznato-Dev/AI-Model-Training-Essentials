@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সাধারণ জ্ঞান
 এই ফাইলটি তথ্য এবং ধারণার একটি সংগ্রহ যা কথোপকথন, সংবাদ, শিক্ষা এবং দৈনন্দিন জীবনে নিয়মিত আসে। এটিকে ব্যাকগ্রাউন্ড নলেজ হিসাবে ভাবুন - আপনি যা পড়ছেন, শুনছেন বা অনুভব করছেন তা বুঝতে সাহায্য করে এমন একটি জিনিস।
 ---

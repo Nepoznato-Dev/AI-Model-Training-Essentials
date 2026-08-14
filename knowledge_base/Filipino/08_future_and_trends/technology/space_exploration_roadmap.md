@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Roadmap ng Space Exploration
 ## Pangkalahatang-ideya
 Nabubuhay tayo sa isang bagong ginintuang panahon ng paggalugad sa kalawakan. Ang programang Artemis ng NASA ay nagbabalik ng mga tao sa Buwan. Gumagawa ang SpaceX ng isang ganap na magagamit muli na rocket na idinisenyo para sa Mars. Ang China ay may sariling ambisyosong lunar at Martian na mga plano. At isang lumalagong konstelasyon ng mga pribadong kumpanya ang nagbubukas ng espasyo sa komersyo — mula sa satellite internet hanggang sa turismo sa kalawakan. Narito ang roadmap, mula sa Buwan hanggang Mars at higit pa.

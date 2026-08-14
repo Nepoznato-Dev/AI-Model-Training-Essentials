@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Visual Basic — 語法參考
 本文檔提供了 Visual Basic (VB.NET) 的全面、結構化語法參考。它透過關注詳盡的語法模式、OOP 功能、LINQ、async/await 和 .NET 整合習慣用法來補充主要的 Visual Basic 參考。
 ---

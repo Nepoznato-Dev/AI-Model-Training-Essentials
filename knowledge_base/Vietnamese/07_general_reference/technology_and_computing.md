@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Công nghệ và Máy tính
 Máy tính có ở khắp mọi nơi — trong điện thoại, ô tô, tủ lạnh, thiết bị y tế và cơ sở hạ tầng vận hành xã hội hiện đại. Bạn không cần phải là một lập trình viên mới có thể hiểu được cách hoạt động của mọi thứ. Tệp này bao gồm các nguyên tắc cơ bản: máy tính là gì, Internet hoạt động như thế nào, cách xây dựng phần mềm và các khái niệm hình thành nên thế giới kỹ thuật số.
 > **Bạn muốn tìm hiểu sâu hơn?** Tệp này là một cái nhìn tổng quan. Để biết thông tin chi tiết về bất kỳ chủ đề nào, hãy xem các tệp chuyên dụng trong[`01_coding_and_technology/`](../01_coding_and_technology/)— bao gồm[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)và.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 경영과 경제
 제품이나 서비스를 판매하는 모든 조직은 기업이고, 제품을 생산하고 유통하는 모든 사회는 경제입니다. 이 파일의 개념은 프리랜서 작업을 하거나, 기업에서 일하거나, 뉴스를 이해하려고 하거나, 돈이 세상에서 어떻게 움직이는지 파악하려는 경우에 적용됩니다.
 ---

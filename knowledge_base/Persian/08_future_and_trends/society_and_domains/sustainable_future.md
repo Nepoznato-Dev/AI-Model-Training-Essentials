@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آینده پایدار
 ## بررسی اجمالی
 سوال دیگر *این است که آیا* دنیا نیاز به گذار به اقتصاد پایدار دارد یا خیر، بلکه سوال *چه سرعتی* و *چه کسی رهبری* دارد. انرژی های تجدیدپذیر در حال حاضر ارزان ترین منبع انرژی در بیشتر بازارها هستند. اصول اقتصاد دایره ای در حال حرکت از مفهوم خاص به استراتژی شرکتی است. شهرها در مورد همه چیز از حمل و نقل گرفته تا زباله تجدید نظر می کنند. و رقابت برای رسیدن به صفر خالص، صنایع را از انرژی به امور مالی تغییر شکل می دهد. در اینجا آینده پایدار در چهار بعد کلیدی چگونه به نظر می رسد.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Облачная архитектура
 Облачные вычисления коренным образом изменили способы создания, развертывания и масштабирования программного обеспечения в организациях. Вместо покупки и обслуживания физических серверов вы можете предоставлять вычислительные ресурсы по требованию, платить за то, что используете, и масштабироваться по всему миру за считанные минуты. В этом файле описаны основные концепции, шаблоны архитектуры, сервисы и лучшие практики, которые вам необходимо знать.
 ---

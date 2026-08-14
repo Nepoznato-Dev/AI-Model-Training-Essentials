@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Искусственный интеллект
 Искусственный интеллект — это попытка создать машины, которые могут делать вещи, которые потребовали бы интеллекта, если бы их делал человек: распознавать лица, понимать речь, принимать решения, писать текст, играть в игры, водить машины, диагностировать болезни. Эта область так же стара, как и сами вычисления. Алан Тьюринг задавался вопросом: «Могут ли машины думать?» в 1950 году, но недавний взрыв возможностей (2020-е годы) сделал ИИ одной из самых важных и спорных технологий в истории человечества.
 ---

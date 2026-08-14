@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wizualizacja danych
 Dobrze zaprojektowany wykres może ujawnić wzorce, które ukrywają tabele liczbowe. Źle zaprojektowany może wprowadzić w błąd, zmylić lub znudzić. Wizualizacja danych to sztuka przekształcania danych w wizualne historie, które wpływają na decyzje. W tym pliku omówiono wybór wykresów, zasady projektowania, typowe błędy i narzędzia, które to wszystko umożliwiają.
 ---

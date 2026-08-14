@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Đạo đức và Quản trị AI
 Hệ thống AI không trung lập. Chúng phản ánh dữ liệu mà họ đã được đào tạo, giá trị của người tạo ra chúng và động lực của các tổ chức triển khai chúng. Đạo đức không chỉ là việc hỏi "chúng ta có thể xây dựng cái này không?" nhưng "chúng ta có nên không?" Quản trị là tạo ra các cấu trúc - luật pháp, tiêu chuẩn, cơ quan giám sát - để đảm bảo AI được phát triển và sử dụng một cách có trách nhiệm. Tệp này bao gồm các khía cạnh đạo đức quan trọng của AI và các khuôn khổ quản trị đang nổi lên để giải quyết chúng.
 ---

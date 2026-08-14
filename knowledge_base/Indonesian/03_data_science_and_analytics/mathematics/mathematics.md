@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Matematika
 Matematika bukan hanya mata pelajaran yang dipelajari di sekolah — matematika mendasari hampir semua bidang teknis. Fisika menggunakannya untuk menggambarkan alam semesta. Ilmu komputer menggunakannya untuk merancang algoritma. Pembelajaran mesin menggunakannya untuk mengoptimalkan bobot. Keuangan menggunakannya untuk menilai risiko. Penguasaan setiap cabang tidak diperlukan, namun memahami lanskapnya — dan mengetahui di mana setiap cabang berlaku — membuat topik lain lebih mudah untuk dipahami.
 ---

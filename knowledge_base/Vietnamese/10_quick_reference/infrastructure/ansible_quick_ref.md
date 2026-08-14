@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Quản lý cấu hình và Ansible
 Ansible là một công cụ tự động hóa và quản lý cấu hình không cần tác nhân. Nó sử dụng SSH (hoặc WinRM cho Windows) để kết nối với máy chủ và thực thi các tác vụ được xác định trong sổ tay YAML. Không giống như các công cụ yêu cầu cài đặt tác nhân trên mọi máy, Ansible dựa trên cơ chế đẩy — bạn chạy lệnh từ nút điều khiển. Nó được sử dụng để cung cấp máy chủ, triển khai ứng dụng, quản lý cấu hình và thực thi tác vụ đặc biệt.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ramani ya Uchunguzi wa Nafasi
 ## Muhtasari
 Tunaishi katika enzi mpya ya dhahabu ya uchunguzi wa anga. Mpango wa NASA wa Artemis unawarudisha wanadamu kwenye Mwezi. SpaceX inaunda roketi inayoweza kutumika tena kikamilifu iliyoundwa kwa ajili ya Mihiri. China ina mipango yake kabambe ya mwezi na Martian. Na kundi la nyota linalokua la makampuni ya kibinafsi linafungua nafasi kwa biashara - kutoka kwa mtandao wa satelaiti hadi utalii wa anga. Hii hapa ramani ya barabara, kutoka Mwezi hadi Mirihi na kwingineko.

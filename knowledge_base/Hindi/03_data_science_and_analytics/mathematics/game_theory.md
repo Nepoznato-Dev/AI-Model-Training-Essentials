@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # खेल सिद्धांत
 गेम थ्योरी रणनीतिक बातचीत का गणित है - ऐसी स्थितियाँ जहाँ आपका परिणाम न केवल आपकी अपनी पसंद पर निर्भर करता है, बल्कि दूसरों की पसंद पर भी निर्भर करता है। कंपनियों के बीच मूल्य निर्धारण युद्ध से लेकर परमाणु हथियारों की दौड़ तक, ऑनलाइन नीलामी से लेकर विकासवादी जीव विज्ञान तक, गेम थ्योरी संघर्ष और सहयोग का विश्लेषण करने के लिए उपकरण प्रदान करती है। यह मल्टी-एजेंट रीइन्फोर्समेंट लर्निंग, जेनरेटिव एडवरसैरियल नेटवर्क (जीएएन) और ऑनलाइन प्लेटफॉर्म के लिए मैकेनिज्म डिजाइन के माध्यम से मशीन लर्निंग के लिए तेजी से प्रासंगिक हो गया है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Istraktura ng Data at Algorithm
 Ang mga istruktura ng data ay ang mga paraan ng pag-aayos ng data sa memorya upang ang mga operasyon dito ay mahusay. Ang mga algorithm ay ang mga hakbang-hakbang na pamamaraan para sa paglutas ng mga problema. Magkasama, sila ang bumubuo sa pundasyon ng computer science — lahat ng program na ginamit mo ay umaasa sa kanila. Ang pagpili ng tamang istraktura ng data ay maaaring gawing mabilis ang isang napakabagal na programa, at ang pag-alam sa tamang algorithm ay maaaring gawing isang maliit na problema ang isang hindi malulutas na problema.
 ---

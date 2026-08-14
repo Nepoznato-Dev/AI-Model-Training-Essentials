@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Kegagalan Saluran Data dan ETL
 Saluran data adalah saluran bagi organisasi modern — saluran ini memindahkan data dari sistem sumber melalui transformasi ke dalam database, gudang, dan danau yang digunakan untuk analisis, pembelajaran mesin, dan pengambilan keputusan. Saat mereka bekerja, tidak ada yang memperhatikan. Ketika mereka gagal, keputusan dibuat berdasarkan data yang sudah usang, model dilatih berdasarkan sampah, laporan menunjukkan angka yang mustahil, dan kepercayaan pada seluruh platform data terkikis. Kegagalan saluran data adalah salah satu kegagalan paling umum dan paling merugikan dalam organisasi teknologi.
 ---

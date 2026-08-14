@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 全球經濟與貿易
 全球經濟是人類迄今為止建立的最大、最複雜的系統。 2025年，全球GDP將超過110兆美元。每天有超過 80 億人跨境生產、貿易和消費商品和服務。了解這個系統是如何運作的——誰在交易什麼，為什麼有些國家富裕而另一些國家貧窮，資金如何跨境流動，以及當系統崩潰時會發生什麼——對於駕馭現代世界至關重要。
 ---

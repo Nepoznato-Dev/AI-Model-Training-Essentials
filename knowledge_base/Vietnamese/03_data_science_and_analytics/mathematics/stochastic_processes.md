@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Quá trình ngẫu nhiên
 **Quá trình ngẫu nhiên** là tập hợp các biến ngẫu nhiên được lập chỉ mục theo thời gian (hoặc không gian). Trong khi lý thuyết xác suất nghiên cứu các sự kiện ngẫu nhiên riêng lẻ thì các quá trình ngẫu nhiên nghiên cứu tính ngẫu nhiên phát triển như thế nào theo thời gian. Họ lập mô hình giá cổ phiếu, độ dài hàng đợi, sự lây lan của bệnh tật, tạo ra ngôn ngữ và động lực đào tạo của các mô hình học máy.
 ---

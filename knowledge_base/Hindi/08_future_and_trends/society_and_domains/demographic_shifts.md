@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जनसांख्यिकीय बदलाव
 ## अवलोकन
 जनसांख्यिकी नियति है - या कम से कम वे दृढ़ता से इसके साथ तालमेल बिठाते हैं। दुनिया की आबादी तेजी से बूढ़ी हो रही है, नए पैटर्न में पलायन कर रही है, अभूतपूर्व दरों पर शहरों में एकत्रित हो रही है, और पीढ़ीगत आधार पर विभाजित हो रही है जो मतदान व्यवहार से लेकर उपभोक्ता आदतों तक सब कुछ को आकार देती है। ये बदलाव दशकों तक चलेंगे, लेकिन उनका प्रभाव पहले से ही दिखाई देने लगा है। यहां चार बड़े रुझान हैं और उनका क्या मतलब है।

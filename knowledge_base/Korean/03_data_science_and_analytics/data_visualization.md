@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 데이터 시각화
 잘 디자인된 차트는 숫자표가 숨기고 있는 패턴을 드러낼 수 있습니다. 제대로 설계되지 않은 제품은 오해를 불러일으키거나 혼란을 주거나 지루할 수 있습니다. 데이터 시각화는 데이터를 결정을 알리는 시각적 스토리로 바꾸는 기술입니다. 이 파일에는 차트 선택, 디자인 원칙, 일반적인 실수 및 이를 가능하게 하는 도구가 포함되어 있습니다.
 ---

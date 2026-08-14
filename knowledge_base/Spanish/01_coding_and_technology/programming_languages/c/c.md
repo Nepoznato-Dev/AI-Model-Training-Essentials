@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C
 C es un lenguaje de programación procedimental de propósito general creado por Dennis Ritchie en Bell Labs entre 1969 y 1973. Fue diseñado para implementar el sistema operativo Unix y sigue siendo uno de los lenguajes de programación más utilizados más de 50 años después. C proporciona acceso a memoria de bajo nivel, una biblioteca estándar mínima y una asignación limpia a las instrucciones de la máquina, lo que lo convierte en la base sobre la que se construye la informática más moderna.
 C es el lenguaje detrás de los sistemas operativos (Linux, kernel de Windows, macOS), sistemas integrados, motores de bases de datos (SQLite, PostgreSQL), compiladores (CPython de Python, MRI de Ruby) y prácticamente todos los demás lenguajes de programación en tiempo de ejecución. Comprender C es comprender cómo funcionan realmente las computadoras.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetica e genomica
 La genetica è lo studio dell’ereditarietà: il modo in cui i tratti vengono trasmessi dai genitori alla prole attraverso il DNA. La genomica è lo studio di interi genomi: tutti i geni, le regioni non codificanti, come interagiscono e come variano tra individui e popolazioni. La transizione dalla genetica alla genomica è stata guidata dalla tecnologia di sequenziamento: siamo passati dallo studio di un gene alla volta alla lettura di interi genomi in poche ore, generando dati che stanno trasformando la medicina, l’agricoltura, la medicina legale e la nostra comprensione dell’evoluzione.
 ---

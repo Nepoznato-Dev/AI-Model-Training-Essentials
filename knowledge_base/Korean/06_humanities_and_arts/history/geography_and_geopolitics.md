@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 지리학과 지정학
 지리가 운명을 결정합니다. 산, 강, 천연자원의 위치는 수천 년 동안 무역로를 결정하고 전쟁을 촉발하며 문명을 건설해 왔습니다. 오늘날 지정학(지리, 권력, 정치의 상호 작용)은 국가가 왜 그렇게 행동하는지 이해하는 데 여전히 필수적입니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Environmental Awareness
 
 The environment is not a separate thing "out there" — it is the system that makes everything else possible. Every breath you take, every glass of water you drink, every meal you eat depends on atmospheric composition, water cycles, soil health, and pollinator networks. Understanding how these systems work — and how they are changing — is not optional for an informed person. This file covers the fundamentals of environmental science, the challenges we face, and what sustainability actually means in practice.

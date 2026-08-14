@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Gelişen Teknolojiler
 ## Genel Bakış
 Bazı teknolojiler, mevcut olanları aşamalı olarak geliştirmek yerine tamamen yeni yetenek kategorileri yaratır. Kuantum hesaplama, klasik makinelerin bin yıllarını alacak sorunları çözmeyi amaçlıyor. Füzyon enerjisi neredeyse sınırsız temiz güç olanağı sunuyor. Beyin-bilgisayar arayüzleri zihin ve makine arasında köprü kurar. Sentetik biyoloji, biyolojik kodun yeniden yazılmasını sağlar. Aşağıdaki bölümlerde bu sınırların her birinin bugün nerede durduğu ve mevcut eğilimlerin nereye doğru ilerlediğini gösterdiği açıklanmaktadır.

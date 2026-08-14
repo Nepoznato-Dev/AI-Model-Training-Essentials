@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # نظریه بازی و تفکر استراتژیک
 تئوری بازی مطالعه ریاضی تعاملات استراتژیک است - موقعیت هایی که نتیجه شما نه تنها به کاری که انجام می دهید، بلکه به کارهایی که دیگران انجام می دهند بستگی دارد. در همه جا کاربرد دارد: رقابت تجاری، روابط بین‌الملل، مزایده‌ها، مذاکرات، زیست‌شناسی تکاملی، و تصمیم‌گیری‌های روزمره مانند انتخاب مسیر از طریق ترافیک. بینش اصلی این است که بازیگران منطقی در موقعیت‌های استراتژیک فقط استراتژی خود را بهینه نمی‌کنند - آنها پیش‌بینی می‌کنند که دیگران چه خواهند کرد و دیگران نیز همین کار را انجام می‌دهند.
 ---

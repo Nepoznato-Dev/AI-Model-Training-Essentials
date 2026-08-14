@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Reinforcement Learning
 
 Reinforcement learning (RL) is how machines learn to make sequences of decisions by trial and error. Unlike supervised learning, where the correct answer is provided for every example, RL gives an agent only a reward signal — and the agent must figure out which actions lead to the best outcomes over time. It's the approach behind AlphaGo, robotic control, game-playing AI, and — critically — RLHF, the technique used to align modern large language models with human preferences.

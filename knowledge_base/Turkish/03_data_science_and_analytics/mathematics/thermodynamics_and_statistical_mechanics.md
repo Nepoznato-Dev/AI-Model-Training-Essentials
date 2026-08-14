@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Termodinamik ve İstatistik Mekanik
 Termodinamik, atomların neye benzediğini bilmeden sistemlerin makroskobik davranışını sıcaklık, basınç ve entropi açısından tanımlar. İstatistiksel mekanik, termodinamiği aşağıdan yukarıya doğru açıklar: çok sayıda parçacığın mikroskobik davranışından makroskobik özellikler elde eder. Birlikte, bilgi teorisine, makine öğrenimine ve ötesine taşınan enerji, entropi ve denge kavramlarına ilişkin en derin anlayışı sağlarlar.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #حقیقی تجزیہ
 حقیقی تجزیہ کیلکولس کی سخت بنیاد ہے۔ جب کہ تعارفی کیلکولس آپ کو مشتقات اور انٹیگرلز کی گنتی کرنے کا طریقہ سکھاتا ہے، حقیقی تجزیہ پوچھتا ہے کہ *کیوں* یہ تکنیکیں کام کرتی ہیں — اور کب ناکام ہوجاتی ہیں۔ یہ حدود، تسلسل، کنورجنسنس، اور انضمام کی درست تعریفیں فراہم کرتا ہے جو امکانی نظریہ، فنکشنل تجزیہ، اصلاح، اور مشین لرننگ الگورتھم کے پیچھے نظریاتی ضمانتوں کو اہمیت دیتا ہے۔
 ---

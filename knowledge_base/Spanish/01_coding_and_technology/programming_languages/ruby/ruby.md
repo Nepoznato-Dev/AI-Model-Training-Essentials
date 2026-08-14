@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # rubí
 Ruby es un lenguaje de programación dinámico, interpretado y orientado a objetos creado por Yukihiro "Matz" Matsumoto y lanzado por primera vez en 1995 en Japón. Ruby fue diseñado centrándose en la felicidad del programador: su sintaxis es elegante y natural, y se lee casi como en inglés. Todo en Ruby es un objeto, incluidos los tipos primitivos como números enteros y booleanos. Ruby es mejor conocido por el marco web Ruby on Rails, que revolucionó el desarrollo web al popularizar las convenciones sobre la configuración y la creación rápida de prototipos.
 Más allá de Rails, Ruby se utiliza para secuencias de comandos, automatización, herramientas DevOps (Chef, Puppet) y como lenguaje de propósito general. Su sintaxis expresiva y sus poderosas capacidades de metaprogramación hacen que escribir sea un placer.

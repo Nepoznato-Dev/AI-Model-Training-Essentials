@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Оптимизация
 Оптимизация — это математика поиска лучшего решения из набора возможных решений. Он спрашивает: при наличии функции и ограничений, какие входные данные минимизируют (или максимизируют) выходные данные? Оптимизация — это двигатель машинного обучения: обучение модели означает минимизацию функции потерь. Он появляется в исследованиях операций, экономике, инженерном проектировании и практически во всех количественных областях.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 測試方法
 測試是您如何獲得程式碼工作的信心——更重要的是，對程式碼的更改不會破壞已經工作的內容。良好的測試可以在使用者之前發現錯誤，記錄預期行為，並實現無畏的重構。該文件涵蓋了從單元測試到端到端測試的全部測試策略，以及使測試有效的原則。
 ---

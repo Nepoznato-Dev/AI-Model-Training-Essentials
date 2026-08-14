@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng isang komprehensibo, structured syntax reference para sa MATLAB (R2024+). Kinukumpleto nito ang pangunahing sanggunian ng MATLAB sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, mga operasyon ng matrix, pag-plot, at mga pang-agham na idyoma sa computing.
 ---

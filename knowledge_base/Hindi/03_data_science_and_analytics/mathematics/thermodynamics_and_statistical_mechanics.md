@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ऊष्मप्रवैगिकी और सांख्यिकीय यांत्रिकी
 थर्मोडायनामिक्स तापमान, दबाव और एन्ट्रापी के संदर्भ में प्रणालियों के स्थूल व्यवहार का वर्णन करता है - बिना यह जाने कि परमाणु कैसे दिखते हैं। सांख्यिकीय यांत्रिकी नीचे से ऊपर तक थर्मोडायनामिक्स की व्याख्या करती है: यह विशाल संख्या में कणों के सूक्ष्म व्यवहार से स्थूल गुण प्राप्त करती है। साथ में, वे ऊर्जा, एन्ट्रापी और संतुलन की सबसे गहरी समझ प्रदान करते हैं - ऐसी अवधारणाएँ जो सूचना सिद्धांत, मशीन लर्निंग और उससे आगे चली गई हैं।
 ---

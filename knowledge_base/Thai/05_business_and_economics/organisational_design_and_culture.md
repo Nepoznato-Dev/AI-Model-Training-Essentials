@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การออกแบบและวัฒนธรรมองค์กร
 การออกแบบองค์กรคือการจัดโครงสร้าง กระบวนการ บทบาท และสิทธิ์ในการตัดสินใจอย่างรอบคอบเพื่อดำเนินกลยุทธ์อย่างมีประสิทธิผล วัฒนธรรมคือค่านิยม ความเชื่อ บรรทัดฐาน และพฤติกรรมที่มีร่วมกัน ซึ่งกำหนดรูปแบบการทำงานร่วมกันของผู้คน โครงสร้างเป็นกรอบการทำงาน พฤติกรรมรูปร่างวัฒนธรรม โครงสร้างสามารถออกแบบใหม่บนกระดาษได้ แต่หากวัฒนธรรมไม่สนับสนุนการเปลี่ยนแปลง การนำไปปฏิบัติก็จะล้มเหลว ในทำนองเดียวกัน วัฒนธรรมที่เข้มแข็งควบคู่ไปกับโครงสร้างที่ไม่มีประสิทธิภาพจะค่อยๆ บ่อนทำลายประสิทธิภาพขององค์กร องค์กรที่มีประสิทธิภาพสูงสุดจัดการกับทั้งสองสิ่งนี้ — และตระหนักว่าพวกเขาเชื่อมโยงกันอย่างลึกซึ้ง
 ---

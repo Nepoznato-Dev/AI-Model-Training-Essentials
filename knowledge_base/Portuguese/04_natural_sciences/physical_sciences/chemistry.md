@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Química
 Se a física é a regra do jogo, a química é o que acontece quando as peças interagem. A química estuda como os átomos se ligam, se separam e se reorganizam – ou seja, como todos os materiais se comportam. Ele preenche a lacuna entre a física fundamental e a complexidade da biologia, geologia e engenharia.
 ---

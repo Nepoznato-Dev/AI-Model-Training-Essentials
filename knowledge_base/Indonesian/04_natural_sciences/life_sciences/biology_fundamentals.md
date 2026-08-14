@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dasar-Dasar Biologi
 Biologi adalah ilmu tentang kehidupan. Semua makhluk hidup mempunyai ciri-ciri tertentu: mereka terbuat dari sel, mereka menggunakan energi, mereka tumbuh, mereka merespons lingkungannya, mereka bereproduksi, dan mereka berevolusi. Biologi mencakup mesin molekuler di dalam sel tunggal hingga interaksi seluruh ekosistem, dan merupakan landasan kedokteran, pertanian, bioteknologi, dan konservasi.
 ---

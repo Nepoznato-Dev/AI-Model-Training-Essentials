@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # زبان اور انگریزی
 آج دنیا میں تقریباً 7000 زبانیں بولی جاتی ہیں۔ انگریزی دوسری زبان کے طور پر سب سے زیادہ بولی جاتی ہے اور بین الاقوامی کاروبار، سائنس، ہوا بازی اور انٹرنیٹ کے لیے پہلے سے طے شدہ کے طور پر کام کرتی ہے۔ چاہے کوڈ دستاویزات لکھنا ہوں، تحقیقی مقالے پڑھنا ہوں، یا سرحدوں کے پار بات چیت کرنا ہو، انگریزی کی ایک ٹھوس کمانڈ — گرامر، الفاظ اور بیان بازی — ان سب سے زیادہ عملی مہارتوں میں سے ایک ہے جو کوئی تیار کر سکتا ہے۔
 یہ فائل ضروری چیزوں کا احاطہ کرتی ہے: گرامر، اوقاف، عام خامیاں، تحریری تکنیک، اور واضح مواصلات۔

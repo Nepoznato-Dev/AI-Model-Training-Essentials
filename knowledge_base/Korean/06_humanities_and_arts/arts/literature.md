@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 문학
 문학은 인류의 사고, 감정, 경험에 대한 가장 지속적인 기록입니다. 고대 문명의 구전 서사시부터 오늘날의 디지털 시대 소설까지, ​​모든 작품은 이전의 내용과 대화를 나누고 있습니다. 문학 장르, 사조, 기술을 이해하면 독서와 이러한 작품을 생산한 문화를 이해하는 데 있어 더 풍부한 렌즈를 얻을 수 있습니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ร
 R คือภาษาการเขียนโปรแกรมและสภาพแวดล้อมที่ออกแบบมาโดยเฉพาะสำหรับการคำนวณทางสถิติและการวิเคราะห์ข้อมูล สร้างโดย Ross Ihaka และ Robert Gentleman ที่มหาวิทยาลัยโอ๊คแลนด์ในปี 1993 (จากนี้ไป "R") เป็นการนำภาษา S ไปใช้โดยมีส่วนขยายที่สำคัญ R เป็นโอเพ่นซอร์สและดูแลโดยทีมงาน R Core เป็นเครื่องมือมาตรฐานสำหรับนักสถิติ นักวิเคราะห์ข้อมูล และนักวิจัยในแวดวงวิชาการ การดูแลสุขภาพ การเงิน และภาครัฐ
 R เชี่ยวชาญด้านการจัดการข้อมูล การสร้างแบบจำลองทางสถิติ การแสดงภาพ และการรายงาน ระบบนิเวศแพ็คเกจ (CRAN) มีแพ็คเกจมากกว่า 20,000 แพ็คเกจครอบคลุมวิธีการทางสถิติทุกรูปแบบเท่าที่เคยมีมา

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Teknolojia na Kompyuta
 Kompyuta iko kila mahali - katika simu yako, gari lako, jokofu lako, vifaa vyako vya matibabu na miundombinu inayoendesha jamii ya kisasa. Huhitaji kuwa mtayarishaji programu ili kufaidika kutokana na kuelewa jinsi yote yanavyofanya kazi. Faili hii inashughulikia mambo ya msingi: kompyuta ni nini, jinsi mtandao unavyofanya kazi, jinsi programu inavyoundwa, na dhana zinazounda ulimwengu wa kidijitali.
 > **Je, ungependa kuingia ndani zaidi?** Faili hili ni muhtasari mpana. Kwa maelezo ya kina ya mada yoyote, angalia faili maalum katika[`01_coding_and_technology/`](../01_coding_and_technology/)— ikijumuisha[database systems](../01_coding_and_technology/database_systems.md),[cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md), na.

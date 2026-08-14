@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آپریشنز ریسرچ
 آپریشنز ریسرچ (OR) فیصلہ سازی میں ریاضیاتی طریقوں کا اطلاق ہے۔ ملٹری لاجسٹکس کے لیے جنگ عظیم دوم کے دوران پیدا ہوا، اب یہ سپلائی چین کو بہتر بناتا ہے، ایئر لائنز کا شیڈول کرتا ہے، راستوں کی ترسیل کے بیڑے، انوینٹری کا انتظام کرتا ہے، اور ہر صنعت میں وسائل مختص کرتا ہے۔ یا رکاوٹوں کے تحت بہترین ممکنہ فیصلے کرنے کے لیے ریاضیاتی ٹول کٹ فراہم کرتا ہے۔
 ---

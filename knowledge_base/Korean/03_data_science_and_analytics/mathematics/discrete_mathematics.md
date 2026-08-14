@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 이산수학
 이산 수학은 매끄럽고 깨지지 않는 수량을 다루는 연속 수학(미적분학, 실제 분석)과 달리 근본적으로 셀 수 있거나 분리된 수학적 구조에 대한 연구입니다. 이산 수학은 컴퓨터 과학, 암호화, 알고리즘 설계 및 데이터 구조를 뒷받침합니다. 연속 수학이 물리적 세계를 설명한다면 이산 수학은 계산 세계를 설명합니다.
 ---

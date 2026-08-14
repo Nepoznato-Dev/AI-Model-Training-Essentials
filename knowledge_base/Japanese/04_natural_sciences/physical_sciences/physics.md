@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 物理学
 物理学は、科学における最も基本的な質問、つまり物質とエネルギーはどのように振る舞うのかを問います。化学、生物学、工学など、その他すべては答えに基づいて構築されます。物理学は、素粒子スケール (量子力学) から宇宙スケール (一般相対性理論) にまで及び、その原理は他のすべての自然科学を支えています。
 ---

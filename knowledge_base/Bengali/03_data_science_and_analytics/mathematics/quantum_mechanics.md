@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কোয়ান্টাম মেকানিক্স
 কোয়ান্টাম মেকানিক্স হল ক্ষুদ্রতম স্কেলে পদার্থবিদ্যার তত্ত্ব — পরমাণু, ইলেকট্রন, ফোটন এবং প্রকৃতির মৌলিক কণা। এটি সম্ভাব্যতা, সুপারপজিশন এবং এনট্যাঙ্গলমেন্ট দিয়ে ধ্রুপদী মেকানিক্সের নির্ধারক জগতকে প্রতিস্থাপন করে। এর বিপরীত স্বভাব সত্ত্বেও, কোয়ান্টাম মেকানিক্স হল সমস্ত বিজ্ঞানের সবচেয়ে সঠিকভাবে পরীক্ষিত তত্ত্ব। আজ, এর নীতিগুলি কোয়ান্টাম কম্পিউটারের মাধ্যমে কম্পিউটিংয়ের সাথে সরাসরি প্রাসঙ্গিক হয়ে উঠছে, যা ক্লাসিক্যাল মেশিনের চেয়ে দ্রুতগতিতে কিছু সমস্যা সমাধানের প্রতিশ্রুতি দেয়।
 ---

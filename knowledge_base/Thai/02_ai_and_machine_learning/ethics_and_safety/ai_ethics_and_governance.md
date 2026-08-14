@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # จริยธรรมและการกำกับดูแลของ AI
 ระบบ AI ไม่เป็นกลาง สิ่งเหล่านี้สะท้อนให้เห็นถึงข้อมูลที่ได้รับการฝึกอบรม ค่านิยมของผู้สร้าง และสิ่งจูงใจขององค์กรที่ปรับใช้สิ่งเหล่านี้ จริยธรรมคือการถามว่าไม่ใช่แค่ "เราจะสร้างสิ่งนี้ได้หรือไม่" แต่ "เราควร?" การกำกับดูแลเป็นเรื่องเกี่ยวกับการสร้างโครงสร้าง — กฎหมาย มาตรฐาน หน่วยงานกำกับดูแล — เพื่อให้แน่ใจว่า AI ได้รับการพัฒนาและใช้งานอย่างมีความรับผิดชอบ ไฟล์นี้ครอบคลุมมิติทางจริยธรรมที่สำคัญของ AI และกรอบการกำกับดูแลที่เกิดขึ้นเพื่อจัดการกับสิ่งเหล่านี้
 ---

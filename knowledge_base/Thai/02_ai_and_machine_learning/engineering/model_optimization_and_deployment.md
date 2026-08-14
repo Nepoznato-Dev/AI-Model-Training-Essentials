@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเพิ่มประสิทธิภาพโมเดลและการปรับใช้
 การฝึกอบรมโมเดล AI ขนาดใหญ่ถือเป็นความสำเร็จที่สำคัญ แต่การปรับใช้อย่างมีประสิทธิภาพเป็นสิ่งที่ต้องใช้ความพยายามทางวิศวกรรมส่วนใหญ่ รุ่นที่ใช้เวลา 10 วินาทีในการตอบสนองหรือต้องใช้ A100 GPU แปดตัวนั้นไม่สามารถใช้งานได้กับแอปพลิเคชันส่วนใหญ่ในโลกแห่งความเป็นจริง การเพิ่มประสิทธิภาพโมเดลเป็นกระบวนการทำให้โมเดลมีขนาดเล็กลง เร็วขึ้น และคุ้มค่ามากขึ้น โดยที่ยังคงรักษาคุณภาพที่ยอมรับได้ ไฟล์นี้ครอบคลุมถึงการวัดปริมาณ การตัดแต่งกิ่ง การกลั่น และเครื่องมือที่ใช้งานได้จริงสำหรับการปรับใช้แบบจำลองในการผลิต
 ---

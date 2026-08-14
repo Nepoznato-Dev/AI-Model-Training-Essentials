@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Jenetiki na Genomics
 Jenetiki ni utafiti wa urithi - jinsi tabia hupitishwa kutoka kwa wazazi hadi kwa watoto kupitia DNA. Genomics ni utafiti wa jenomu nzima: jeni zote, maeneo yasiyo ya kusimba, jinsi yanavyoingiliana, na jinsi yanavyotofautiana kati ya watu binafsi na idadi ya watu. Mpito kutoka kwa jeni hadi jeni uliendeshwa na teknolojia ya kupanga mfuatano - tulitoka katika kusoma jeni moja kwa wakati hadi kusoma jenomu nzima kwa saa, na kutoa data ambayo inabadilisha dawa, kilimo, uchunguzi wa uchunguzi na uelewa wetu wa mageuzi.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Veri Görselleştirme
 İyi tasarlanmış bir grafik, sayı tablolarının gizlediği kalıpları ortaya çıkarabilir. Kötü tasarlanmış bir şey yanıltıcı olabilir, kafa karıştırabilir veya sıkıcı olabilir. Veri görselleştirme, verileri kararlara bilgi veren görsel hikayelere dönüştürme sanatıdır. Bu dosya grafik seçimini, tasarım ilkelerini, yaygın hataları ve bunları mümkün kılan araçları kapsar.
 ---

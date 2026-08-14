@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Blockchain และระบบกระจาย
 บล็อคเชนเป็นระบบกระจายประเภทเฉพาะ — บัญชีแยกประเภทแบบกระจายอำนาจที่ผนวกเฉพาะซึ่งมีการเชื่อมโยงบันทึก (บล็อก) ด้วยแฮชที่เข้ารหัสลับ ระบบแบบกระจายเป็นสาขาที่กว้างกว่าในการทำให้คอมพิวเตอร์หลายเครื่องทำงานร่วมกันเป็นหนึ่งเดียว แนวคิดทั้งสองมีความสำคัญต่อการทำความเข้าใจโครงสร้างพื้นฐานสมัยใหม่ ตั้งแต่สกุลเงินดิจิทัลไปจนถึงฐานข้อมูลแบบกระจายไปจนถึงอัลกอริธึมที่เป็นเอกฉันท์ที่ขับเคลื่อนบริการระดับโลก
 ---

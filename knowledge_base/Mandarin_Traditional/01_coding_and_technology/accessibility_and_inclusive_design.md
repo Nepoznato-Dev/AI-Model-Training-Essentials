@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 無障礙與包容性設計
 可訪問性（通常縮寫為 a11y）是讓軟體可供所有人使用的實踐，包括有視覺、聽覺、運動、認知和神經障礙的人。這是許多司法管轄區的法律要求和標準工程實務。無障礙軟體對每個人來說都是更好的軟體，因為支援殘疾用戶的設計決策——清晰的結構、鍵盤導航、足夠的對比度、可讀的文字——改善了所有用戶的體驗。
 ---

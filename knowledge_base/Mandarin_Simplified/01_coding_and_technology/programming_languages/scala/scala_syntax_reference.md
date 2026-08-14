@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala — 语法参考
 本文档提供了 Scala 的全面、结构化语法参考（3.x 以及有关 2.x 差异的注释）。它通过关注详尽的语法模式、类型系统、函数式编程结构和 Scala 习惯用法来补充主要的 Scala 参考。
 ---

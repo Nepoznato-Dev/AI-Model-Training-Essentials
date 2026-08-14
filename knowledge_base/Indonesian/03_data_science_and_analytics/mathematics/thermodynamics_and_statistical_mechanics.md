@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Termodinamika dan Mekanika Statistik
 Termodinamika menggambarkan perilaku makroskopis sistem dalam hal suhu, tekanan, dan entropi — tanpa mengetahui seperti apa bentuk atom. Mekanika statistik menjelaskan termodinamika dari bawah ke atas: ia memperoleh sifat makroskopis dari perilaku mikroskopis sejumlah besar partikel. Bersama-sama, mereka memberikan pemahaman terdalam tentang energi, entropi, dan keseimbangan – konsep yang telah bermigrasi ke teori informasi, pembelajaran mesin, dan seterusnya.
 ---

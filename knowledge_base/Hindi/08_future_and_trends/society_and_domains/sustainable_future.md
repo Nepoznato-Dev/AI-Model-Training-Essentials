@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # टिकाऊ भविष्य
 ## अवलोकन
 सवाल अब यह नहीं है कि *क्या* दुनिया को एक स्थायी अर्थव्यवस्था में परिवर्तन की आवश्यकता है, बल्कि *कितनी तेजी से* और *कौन नेतृत्व करता है* है। अधिकांश बाज़ारों में नवीकरणीय ऊर्जा अब सबसे सस्ता ऊर्जा स्रोत है। सर्कुलर अर्थव्यवस्था सिद्धांत विशिष्ट अवधारणा से कॉर्पोरेट रणनीति की ओर बढ़ रहे हैं। शहर परिवहन से लेकर कचरे तक हर चीज़ पर पुनर्विचार कर रहे हैं। और नेट ज़ीरो की दौड़ ऊर्जा से वित्त तक उद्योगों को नया आकार दे रही है। यहां चार प्रमुख आयामों में टिकाऊ भविष्य कैसा दिखता है।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP — Referencia de sintaxis
 Este documento proporciona una referencia de sintaxis estructurada y completa para PHP (8.x). Complementa la referencia principal de PHP centrándose en patrones de sintaxis exhaustivos, características modernas de PHP, programación orientada a objetos y modismos prácticos.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # KI-Sicherheit und Ausrichtung
 Bei der KI-Sicherheit geht es darum, wie man KI-Systeme baut, die das tun, was wir eigentlich wollen – und keine Dinge tun, die wir nicht wollen, auch wenn diese nicht ausdrücklich ausgeschlossen wurden. Die Ausrichtung ist die besondere Herausforderung, die Ziele und Verhaltensweisen von KI-Systemen an die menschlichen Absichten anzupassen. Je leistungsfähiger KI-Systeme werden, desto mehr verlagern sich diese Fragen von akademischen Kuriositäten hin zu praktischen technischen Anforderungen.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Graficar redes neuronales
 Las redes neuronales gráficas (GNN) son redes neuronales diseñadas para operar con datos estructurados en gráficos: redes de nodos conectados por bordes. Mientras que las redes neuronales tradicionales funcionan en cuadrículas (imágenes) o secuencias (texto), las GNN manejan estructuras relacionales arbitrarias: redes sociales, gráficos moleculares, gráficos de conocimiento, redes de carreteras, gráficos de recomendación y más. Se han vuelto esenciales para el descubrimiento de fármacos, la detección de fraudes, los sistemas de recomendación y cualquier ámbito donde las relaciones entre entidades sean importantes.
 ---

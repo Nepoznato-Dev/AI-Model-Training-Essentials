@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ج - مرجع بناء الجملة
 توفر هذه الوثيقة مرجعًا تركيبيًا شاملاً ومنظمًا للغة C (C11/C17 مع ملاحظات C23). وهو يكمل المرجع الرئيسي للغة C من خلال التركيز على أنماط بناء الجملة الشاملة وجداول المشغلين وميكانيكا المؤشر وإدارة الذاكرة.
 ---

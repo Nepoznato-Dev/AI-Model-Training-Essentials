@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # منهجيات الإدارة والمشاريع
 تعد إدارة الأفراد والمشاريع من بين المسؤوليات الأكثر تطلبًا في أي منظمة. توفر المهارات التقنية الدخول، ولكن القدرة على قيادة الفرق واتخاذ القرارات والتواصل بشكل فعال وتحقيق النتائج تحدد ما إذا كانت الأهداف قد تحققت أم لا. يغطي هذا الملف الأطر والمنهجيات والمهارات العملية التي يطبقها المديرون الفعالون وقادة المشاريع.
 ---

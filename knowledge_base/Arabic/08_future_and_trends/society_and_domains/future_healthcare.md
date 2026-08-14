@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #الرعاية الصحية المستقبلية
 ## ملخص
 يتحول الطب من نموذج تفاعلي - علاج الأعراض بعد ظهورها - إلى نموذج تنبؤي وشخصي ووقائي بشكل متزايد. لقد انتقل علم الجينوم من مشروع بقيمة 3 مليارات دولار إلى اختبار روتيني بقيمة أقل من 1000 دولار. يتعلم الذكاء الاصطناعي اكتشاف الأمراض من خلال عمليات الفحص قبل أن يتمكن الأطباء من ذلك. ويعمل الطب التجديدي على تحويل الخيال العلمي إلى تجارب سريرية. إليكم ما يحدث عبر الحدود الثلاث الكبرى: الطب الشخصي، وأبحاث طول العمر، والطب التجديدي.

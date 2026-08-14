@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جوڑا بنانے کے طریقے
 انسمبل کے طریقے متعدد مشین لرننگ ماڈلز کو یکجا کرتے ہیں تاکہ کسی ایک ماڈل سے بہتر پیشین گوئیاں اکیلے حاصل کی جا سکیں۔ وجدان سیدھا ہے: اگر آپ کے پاس متعدد ماڈلز ہیں جو ہر ایک قدرے درست ہیں لیکن مختلف غلطیاں کرتے ہیں، تو ان کی پیشین گوئیوں کو یکجا کرنے سے انفرادی غلطیاں ختم ہو جائیں گی اور زیادہ مضبوط نتیجہ نکلے گا۔ Ensembles سب سے زیادہ مسابقتی مشین سیکھنے کے حل کے پیچھے ہیں اور پیداوار کے نظام میں سب سے زیادہ قابل اعتماد تکنیکوں میں سے کچھ ہیں.
 ---

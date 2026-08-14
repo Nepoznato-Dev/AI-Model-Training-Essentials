@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript
 Ang TypeScript ay isang statically typed superset ng JavaScript na binuo ng Microsoft (pinununahan ni Anders Hejlsberg) at unang inilabas noong 2012. Nagdaragdag ito ng opsyonal na uri ng mga anotasyon, mga interface, generic, at mga advanced na feature ng type-system sa JavaScript — pagkatapos ay nag-compile hanggang sa simpleng JavaScript na tumatakbo saanman tumatakbo ang JavaScript. Ang TypeScript ay hindi isang hiwalay na wika o runtime; ito ay JavaScript na may uri ng checker.
 Ang TypeScript ay naging pamantayan para sa malakihang pagbuo ng JavaScript. Ang React, Angular, VS Code, Deno, at karamihan sa mga pangunahing open-source na proyekto ng JavaScript ay nakasulat sa TypeScript. Kung nagsisimula ka ng bagong proyekto ng JavaScript ng anumang makabuluhang laki, TypeScript ang inirerekomendang default.

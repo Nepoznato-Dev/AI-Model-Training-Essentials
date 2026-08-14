@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Экология и устойчивое развитие
 Наука об окружающей среде применяет методы физики, химии, биологии, геологии и экономики к вопросу: «Что происходит с нашей планетой и что с этим можно сделать?» Это междисциплинарная область – сближение множества дисциплин – что способствует как ее аналитической глубине, так и ее политической значимости.
 Основное противоречие в науке об окружающей среде заключается в следующем: человеческая цивилизация зависит от добычи ресурсов из окружающей среды, но добыча этих ресурсов меняет окружающую среду таким образом, что может подорвать системы, от которых мы зависим. Понимание этой петли обратной связи – это вся область в двух словах.

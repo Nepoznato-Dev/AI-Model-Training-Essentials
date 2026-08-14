@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # कोड के रूप में टेराफॉर्म और इन्फ्रास्ट्रक्चर
 टेराफ़ॉर्म सबसे व्यापक रूप से उपयोग किया जाने वाला इन्फ्रास्ट्रक्चर ऐज़ कोड (IaC) टूल है - यह आपको घोषणात्मक कॉन्फ़िगरेशन फ़ाइलों में क्लाउड इन्फ्रास्ट्रक्चर (सर्वर, डेटाबेस, नेटवर्क, अनुमतियाँ) को परिभाषित करने देता है जिसे संस्करणित, समीक्षा, परीक्षण और स्वचालित किया जा सकता है। क्लाउड कंसोल पर क्लिक करने के बजाय, आप कोड लिखते हैं जो आपके बुनियादी ढांचे की वांछित स्थिति का वर्णन करता है, और टेराफॉर्म यह पता लगाता है कि क्या बदलाव करने हैं।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مبانی نوشتن و ارتباطات
 نوشتن و ارتباط مهارت‌های انتقال ایده‌ها به طور مؤثر است - چه از طریق ایمیل، گزارش، مستندات، ارائه‌ها یا مکالمه. بیشتر کار دانش اساساً کار ارتباطی است: متخصصان باید تفکر خود را توضیح دهند، دیگران را متقاعد کنند، تصمیمات را مستند کنند، مشخصات بنویسند، یافته‌ها را ارائه دهند و در بین تیم‌ها همکاری کنند. شکاف بین آنچه که منظور است و آنچه درک می شود، جایی است که بیشتر مشکلات منشا می گیرند و ارتباط بهتر این شکاف را کاهش می دهد.
 ---

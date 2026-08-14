@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ปัญหาคุณภาพของโค้ด
 เอกสารนี้รวบรวมปัญหาคุณภาพโค้ดทั่วไป รวมถึงชื่อตัวแปรที่ไม่ดี เอกสารประกอบที่ไม่ดี โค้ดสปาเก็ตตี้ การขึ้นต่อกันแบบวงกลม และปัญหาด้านการบำรุงรักษาอื่นๆ
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bilgi Teorisi
 Claude Shannon tarafından 1948'de kurulan bilgi teorisi, bilginin kendisini nicelikselleştirir. Bir mesaj size ne kadar şey anlatır? Verileri ne kadar sıkıştırabilirsiniz? Gürültülü bir kanal üzerinden ne kadar hızlı iletişim kurabilirsiniz? Bu soruların kesin matematiksel cevapları vardır. İletişimin ötesinde, bilgi teorisi makine öğreniminin temeli haline geldi; çapraz entropi sınıflandırma için varsayılan kayıp fonksiyonudur, KL farklılığı dağıtım benzerliğini ölçer ve karşılıklı bilgi özellik seçimini yönlendirir.
 ---

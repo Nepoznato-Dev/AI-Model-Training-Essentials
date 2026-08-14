@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Grundlagen der Biologie
 Biologie ist die Wissenschaft vom Leben. Alle Lebewesen haben bestimmte Eigenschaften gemeinsam: Sie bestehen aus Zellen, sie verbrauchen Energie, sie wachsen, sie reagieren auf ihre Umgebung, sie vermehren sich und sie entwickeln sich weiter. Die Biologie reicht von der molekularen Maschinerie innerhalb einer einzelnen Zelle bis hin zu den Interaktionen ganzer Ökosysteme und ist die Grundlage für Medizin, Landwirtschaft, Biotechnologie und Naturschutz.
 ---

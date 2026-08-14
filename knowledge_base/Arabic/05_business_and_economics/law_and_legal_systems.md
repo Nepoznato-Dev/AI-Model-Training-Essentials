@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # القانون والأنظمة القانونية
 القانون هو مجموعة القواعد التي يوافق المجتمع على تنفيذها من خلال مؤسساته. إنها ليست مثل الأخلاق – يمكنك أن تفعل شيئًا قانونيًا غير أخلاقي، وشيئًا غير قانوني مبررًا أخلاقيًا. القانون موجود لتوفير القدرة على التنبؤ: لتحديد ما هو مسموح به، وما هو ممنوع، وما يحدث عندما يتم انتهاك القواعد. ومن دونها تحل الخلافات بالسلطة. مع ذلك، يتم تسوية النزاعات عن طريق العملية.
 يغطي هذا الملف الأنظمة القانونية الرئيسية، والفروع الرئيسية للقانون، والمفاهيم التي تشكل كيفية عمل الأنظمة القانونية في الممارسة العملية.

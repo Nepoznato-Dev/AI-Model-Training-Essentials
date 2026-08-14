@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fondamentaux de l'écriture et de la communication
 L'écriture et la communication sont les compétences nécessaires pour transmettre des idées efficacement, que ce soit par le biais d'e-mails, de rapports, de documentation, de présentations ou de conversations. La plupart des travaux de connaissance sont fondamentalement des travaux de communication : les professionnels doivent expliquer leur réflexion, persuader les autres, documenter les décisions, rédiger des spécifications, présenter leurs résultats et collaborer entre équipes. L’écart entre ce qui est signifié et ce qui est compris est à l’origine de la plupart des problèmes, et une meilleure communication réduit cet écart.
 ---

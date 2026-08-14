@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বৈশ্বিক অর্থনীতি এবং বাণিজ্য
 বৈশ্বিক অর্থনীতি মানুষের তৈরি করা সবচেয়ে বড় এবং সবচেয়ে জটিল ব্যবস্থা। 2025 সালে, বিশ্বব্যাপী জিডিপি $110 ট্রিলিয়ন ছাড়িয়ে গেছে। 8 বিলিয়নেরও বেশি মানুষ প্রতিদিন সীমান্তের ওপারে পণ্য ও পরিষেবা উত্পাদন, বাণিজ্য এবং ব্যবহার করে। এই সিস্টেমটি কীভাবে কাজ করে তা বোঝা — কে কী ব্যবসা করে, কেন কিছু দেশ ধনী এবং অন্যরা দরিদ্র, কীভাবে অর্থ সীমানা পেরিয়ে যায় এবং সিস্টেমটি ভেঙে গেলে কী ঘটে — আধুনিক বিশ্বে নেভিগেট করার জন্য অপরিহার্য।
 ---

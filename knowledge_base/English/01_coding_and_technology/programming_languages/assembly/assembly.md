@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Assembly Language
 
 Assembly language is the lowest-level human-readable programming language. It provides a direct representation of a computer's machine code instructions using mnemonic codes (like `MOV`, `ADD`, `JMP`) instead of raw binary. Each assembly language is specific to a particular processor architecture (x86, ARM, MIPS, RISC-V) — code written for one architecture will not run on another.

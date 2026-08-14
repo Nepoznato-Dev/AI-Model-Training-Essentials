@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # আইন ও আইনি ব্যবস্থা
 আইন হল নিয়মের সেট যা একটি সমাজ তার প্রতিষ্ঠানের মাধ্যমে প্রয়োগ করতে সম্মত হয়। এটি নৈতিকতার মতো নয় - আপনি এমন কিছু আইনি কাজ করতে পারেন যা অনৈতিক এবং কিছু অবৈধ যা নৈতিকভাবে ন্যায়সঙ্গত। ভবিষ্যদ্বাণী প্রদানের জন্য আইন বিদ্যমান: কোনটি অনুমোদিত, কোনটি নিষিদ্ধ এবং নিয়ম ভঙ্গ হলে কী ঘটে তা প্রতিষ্ঠা করতে। এটি ছাড়া, বিরোধ ক্ষমতা দ্বারা নিষ্পত্তি করা হয়. এটি দিয়ে, বিরোধ প্রক্রিয়া দ্বারা নিষ্পত্তি করা হয়।
 এই ফাইলটি প্রধান আইনি ব্যবস্থা, আইনের প্রধান শাখা এবং ধারণাগুলিকে কভার করে যেগুলি কীভাবে আইনী ব্যবস্থাগুলি বাস্তবে কাজ করে।

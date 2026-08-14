@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 珀爾
 Perl 由 Larry Wall 於 1987 年創建，作為一種實用的文字處理工具。它成為早期 Web 開發（CGI 腳本）、系統管理、生物資訊學和網路程式設計的支柱。 Perl 的哲學是「有不止一種方法可以做到這一點」（TMTOWTDI）——該語言為每個問題提供了多種方法，注重表現力而不是統一性。
 Perl 對現代程式設計的影響是巨大的，但往往是無形的：受 Perl 模式匹配影響的正規表示式現在已成為 Python、JavaScript、Java 和大多數其他語言的標準。 CPAN（綜合 Perl 存檔網路）是最早的軟體包儲存庫之一，並啟發了後來的系統，例如 Python 的 PyPI 和 Node 的 npm。

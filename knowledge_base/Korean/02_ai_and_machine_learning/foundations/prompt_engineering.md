@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prompt Engineering"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 프롬프트엔지니어링
 프롬프트 엔지니어링은 언어 모델에서 가능한 최상의 출력을 얻기 위해 입력 프롬프트를 설계, 개선 및 최적화하는 방법입니다. 이는 예술이자 과학이며, 미세 조정 없이 LLM 동작을 제어하기 위한 기본 인터페이스입니다.
 ---

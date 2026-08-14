@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ادیان جهانی و اسطوره شناسی تطبیقی
 ادیان جهانی نظام های اصلی اعتقادی، عملی و اجتماعی هستند که تمدن بشری را برای هزاران سال شکل داده اند. اسطوره‌شناسی تطبیقی ​​داستان‌هایی را که فرهنگ‌های مختلف درباره خلقت، قهرمانان، خدایان، و معنای هستی می‌گویند - و الگوهای خیره‌کننده‌ای که در سنت‌هایی که هزاران مایل و هزاره از هم جدا شده‌اند، مطالعه می‌کند. درک هر دو برای درک این موضوع ضروری است که چرا مردم به آنچه اعتقاد دارند، چگونه فرهنگ ها متفاوت هستند و چه چیزی تجربه انسانی را متحد می کند، باور دارند.
 ---

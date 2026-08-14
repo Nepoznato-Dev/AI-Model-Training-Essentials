@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++
 C++ 是一種通用的編譯型程式語言，由 Bjarne Stroustrup 創建，於 1985 年首次發布。它透過物件導向的功能、泛型以及現代版本（C++11 及更高版本）中的高階抽象（如 lambda、智慧型指標和標準範本庫 (STL)）擴展了 C。 C++ 遵循「零開銷抽象」原則：您不應該為不使用的功能付費。
 當您需要高效能和表達能力時，C++ 是首選語言。它為遊戲引擎（虛幻引擎）、瀏覽器（Chrome、Firefox）、資料庫（MongoDB）、作業系統（Windows 和 macOS 的一部分）、金融交易系統和即時模擬提供支援。

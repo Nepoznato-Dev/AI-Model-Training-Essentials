@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เจาะลึก AI เจนเนอเรชั่น
 AI เจนเนอเรชั่นหมายถึงโมเดลที่สร้างเนื้อหาใหม่ เช่น รูปภาพ ข้อความ เสียง วิดีโอ โค้ด แทนที่จะแค่จัดประเภทหรือทำนายข้อมูลที่มีอยู่ แม้ว่าโมเดลภาษาขนาดใหญ่จะได้รับความสนใจมากที่สุด แต่ภูมิทัศน์ AI เชิงสร้างสรรค์นั้นกว้างกว่ามาก ไฟล์นี้ครอบคลุมสถาปัตยกรรม เทคนิค และการแลกเปลี่ยนที่อยู่เบื้องหลังระบบกำเนิดสมัยใหม่ ตั้งแต่โมเดลการแพร่กระจายไปจนถึงตัวเข้ารหัสอัตโนมัติแบบแปรผัน ไปจนถึงโมเดลโฟลว์
 ---

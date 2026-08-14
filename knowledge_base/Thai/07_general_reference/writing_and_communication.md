@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # พื้นฐานการเขียนและการสื่อสาร
 การเขียนและการสื่อสารเป็นทักษะในการถ่ายทอดความคิดอย่างมีประสิทธิภาพ ไม่ว่าจะผ่านอีเมล รายงาน เอกสาร การนำเสนอ หรือการสนทนา งานความรู้ส่วนใหญ่เป็นงานการสื่อสารขั้นพื้นฐาน: ผู้เชี่ยวชาญจำเป็นต้องอธิบายการคิดของตนเอง โน้มน้าวผู้อื่น ตัดสินใจในเอกสาร เขียนข้อกำหนดเฉพาะ นำเสนอข้อค้นพบ และทำงานร่วมกันระหว่างทีม ช่องว่างระหว่างสิ่งที่สื่อความหมายกับสิ่งที่เข้าใจคือจุดที่ปัญหาส่วนใหญ่เกิดขึ้น และการสื่อสารที่ดีขึ้นจะช่วยลดช่องว่างนั้นให้แคบลง
 ---

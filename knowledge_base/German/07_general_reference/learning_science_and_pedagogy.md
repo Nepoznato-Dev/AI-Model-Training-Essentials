@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wissenschaft und Pädagogik lernen
 Lernwissenschaft ist die interdisziplinäre Untersuchung der Art und Weise, wie Menschen lernen – basierend auf Psychologie, Neurowissenschaften, Pädagogik und Kognitionswissenschaft. Pädagogik ist die Praxis und Methodik des Unterrichtens. Gemeinsam befassen sie sich mit Fragen, die für jeden relevant sind, der unterrichtet, ausbildet, betreut oder Bildungsinhalte gestaltet: Welche Methoden helfen Menschen, effektiv zu lernen? Welche gängigen Lerntechniken sind ineffizient? Wie sollte der Unterricht für optimale Behaltensleistung und Transfer strukturiert werden?
 ---

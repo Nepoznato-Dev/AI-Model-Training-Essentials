@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اسٹاکسٹک عمل
 ایک **اسٹاکسٹک عمل** وقت (یا جگہ) کے حساب سے ترتیب کردہ بے ترتیب متغیرات کا مجموعہ ہے۔ جبکہ امکانی نظریہ انفرادی بے ترتیب واقعات کا مطالعہ کرتا ہے، اسٹاکسٹک عمل اس بات کا مطالعہ کرتے ہیں کہ وقت کے ساتھ بے ترتیب پن کیسے تیار ہوتا ہے۔ وہ اسٹاک کی قیمتوں، قطار کی لمبائی، بیماری کے پھیلاؤ، زبان کی تخلیق، اور مشین لرننگ ماڈلز کی تربیتی حرکیات کا نمونہ بناتے ہیں۔
 ---

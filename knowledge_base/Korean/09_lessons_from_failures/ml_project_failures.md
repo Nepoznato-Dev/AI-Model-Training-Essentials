@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 머신러닝 프로젝트 실패
 기계 학습 프로젝트는 놀라운 속도로 실패합니다. 업계 추정에 따르면 ML 프로젝트의 60~85%는 프로덕션에 도달하지 못합니다. 실패는 일반적으로 알고리즘에 있지 않습니다. 그것은 프로세스, 데이터, 기대, 조직적 맥락에 있습니다. ML 시스템을 구축하는 모든 사람에게는 ML 프로젝트가 실패하는 이유를 이해하는 것이 필수적입니다. 실패 모드는 예측 가능하고 대부분 피할 수 있기 때문입니다.
 ---

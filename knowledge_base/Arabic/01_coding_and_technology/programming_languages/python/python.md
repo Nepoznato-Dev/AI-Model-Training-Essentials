@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #بايثون
 Python هي لغة برمجة عالية المستوى ومفسرة للأغراض العامة أنشأها جويدو فان روسوم وتم إصدارها لأول مرة في عام 1991. وهي تعطي الأولوية لقراءة التعليمات البرمجية من خلال مسافة بادئة كبيرة وبناء جملة واضح يُقرأ بالقرب من اللغة الإنجليزية البسيطة. تتم كتابة لغة بايثون ديناميكيًا، ويتم تجميع البيانات المهملة فيها، وتدعم نماذج برمجة متعددة بما في ذلك البرمجة الإجرائية والموجهة للكائنات والبرمجة الوظيفية.
 اليوم، بايثون هي اللغة المهيمنة في الذكاء الاصطناعي/التعلم الآلي، وعلوم البيانات، والحوسبة العلمية، والأتمتة - في حين تظل واحدة من أفضل اللغات للمبتدئين. هذه الهوية المزدوجة (بسيطة بما يكفي للنص الأول، وقوية بما يكفي لتدريب نماذج لغوية كبيرة) هي ما يميزها.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API Tasarımı ve Mimarisi
 API (Uygulama Programlama Arayüzü), yazılım bileşenlerinin birbirleriyle nasıl konuştuğudur. İyi tasarlanmış bir API sezgiseldir, tutarlıdır ve birlikte çalışması keyiflidir. Kötü tasarlanmış bir model kafa karışıklığına, hatalara ve hayal kırıklığına neden olur. Bu dosya, geliştiricilerin gerçekten kullanmak istediği API'leri oluşturmaya yönelik ilkeleri, kalıpları ve uygulamaları kapsar.
 ---

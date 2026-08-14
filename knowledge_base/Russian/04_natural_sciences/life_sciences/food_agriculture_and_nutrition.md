@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Продовольствие, сельское хозяйство и питание
 Еда – самая основная потребность человека, а сельское хозяйство – основа цивилизации. Переход от охоты и собирательства к земледелию – неолитическая революция, произошедшая около 10 000 лет назад – позволил людям строить города, развивать письменность и создавать все остальное, что мы называем «цивилизацией». Сегодня в сельском хозяйстве занято около 27% мировой рабочей силы, и в нем производится около 10 триллионов калорий в день. Тем не менее, около 800 миллионов человек по-прежнему голодают, а более 2 миллиардов имеют избыточный вес или страдают ожирением. Проблема не в производстве, а в распределении, доступе и выборе.
 ---

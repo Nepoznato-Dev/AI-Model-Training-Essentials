@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Artes Visuales
 El arte visual es la forma de comunicación más antigua de la humanidad, desde las pinturas rupestres de Lascaux hasta las instalaciones digitales de hoy. Comprender los movimientos artísticos, los medios y las instituciones que preservan las obras creativas le brindará una apreciación más profunda de cómo las sociedades han expresado la belleza, el poder, la espiritualidad y la disidencia a lo largo de milenios.
 ---

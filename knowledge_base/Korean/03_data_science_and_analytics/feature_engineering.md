@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 기능 엔지니어링
 기능 엔지니어링은 원시 데이터를 기계 학습 모델을 더욱 효과적으로 만드는 표현으로 변환하는 프로세스입니다. 이는 종종 ML 파이프라인에서 가장 중요한 단계로 설명됩니다. 모델에 제공하는 기능은 선택한 알고리즘보다 더 중요합니다. 잘 만들어진 기능을 갖춘 간단한 모델은 일반적으로 처리되지 않은 원시 입력이 있는 복잡한 모델보다 성능이 뛰어납니다. 기술은 모델이 학습할 수 있는 신호를 생성할 수 있을 만큼 도메인과 데이터를 모두 이해하는 데 있습니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Gestion de la Supply Chain et des Opérations
 La gestion de la chaîne d'approvisionnement est la coordination de toutes les activités impliquées dans l'approvisionnement, l'approvisionnement, la conversion et la logistique, depuis les matières premières jusqu'au produit fini entre les mains du client. La gestion des opérations est la gestion quotidienne des systèmes de production. Ensemble, ils déterminent si une entreprise peut fournir le bon produit, au bon moment, au bon coût et avec la bonne qualité. La pandémie, les pénuries de puces et les blocages de canaux ont montré à quel point les chaînes d’approvisionnement sont fragiles et interconnectées à l’échelle mondiale.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ML 工程和 MLOps
 构建机器学习模型只是成功的一半。将其投入生产、保持其可靠运行、监控漂移并对其进行迭代——这就是 ML 工程和 MLOps 的用武之地。该文件涵盖了从实验到生产系统的整个生命周期。
 ---

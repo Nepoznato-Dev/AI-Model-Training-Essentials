@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #روش تحقیق
 روش تحقیق رویکردی سیستماتیک برای بررسی سوالات، آزمون فرضیه ها و تولید دانش قابل اعتماد است. چه در حال انجام آزمایش‌های علمی، نظرسنجی‌های علوم اجتماعی، تجزیه و تحلیل تجاری یا تحقیقات آکادمیک باشید، روشی که انتخاب می‌کنید تعیین می‌کند که یافته‌های شما معتبر، قابل تکرار و مفید باشند. یک مطالعه خوب طراحی شده نتایج قابل اعتمادی تولید می کند. طراحی ضعیف صدا ایجاد می کند - یا بدتر از آن، پاسخ های اشتباه مطمئن.
 ---

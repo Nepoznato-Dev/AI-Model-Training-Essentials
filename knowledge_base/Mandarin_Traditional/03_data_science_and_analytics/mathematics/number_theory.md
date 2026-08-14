@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 數論
 數論是對整數——整數及其性質的研究。高斯稱之為「數學女王」。儘管數論研究的是最簡單的對象（1、2、3…），但它卻產生了所有數學中一些最深刻、最困難的問題。如今，它成為現代密碼學、雜湊演算法、糾錯碼和隨機數生成的基礎。
 ---

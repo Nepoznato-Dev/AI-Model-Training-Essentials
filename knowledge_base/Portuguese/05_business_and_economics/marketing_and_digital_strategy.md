@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Marketing e Estratégia Digital
 Marketing é como as empresas criam, comunicam e entregam valor aos clientes. Abrange todo o sistema de compreensão das necessidades do cliente, posicionamento de um produto para atender a essas necessidades e construção de relacionamentos que convertam compradores em defensores. A revolução digital transformou as ferramentas, os canais e a velocidade do marketing, enquanto os fundamentos permanecem consistentes.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การประมวลผลคำพูดและเสียง
 การประมวลผลเสียงพูดและเสียงครอบคลุมเทคโนโลยีที่ช่วยให้เครื่องได้ยิน เข้าใจ สร้าง และจัดการเสียง ซึ่งรวมถึงการรู้จำคำพูด (การเปลี่ยนคำพูดเป็นข้อความ) การสังเคราะห์เสียง (การเปลี่ยนข้อความเป็นคำพูด) การระบุผู้พูด การสร้างดนตรี และความเข้าใจเสียงสิ่งแวดล้อม สาขาวิชานี้ได้รับการเปลี่ยนแปลงโดยการเรียนรู้เชิงลึก ระบบสมัยใหม่ใช้ความแม่นยำระดับมนุษย์ในการรู้จำคำพูดและสร้างเสียงสังเคราะห์ที่เป็นธรรมชาติอย่างน่าขนลุก
 ---

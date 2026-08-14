@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neurowissenschaften
 Die Neurowissenschaften beschäftigen sich mit dem Nervensystem – dem Gehirn, dem Rückenmark und allen Nerven, die diese mit dem Körper verbinden. Es erstreckt sich über mehrere Ebenen: von Molekülen und Genen über einzelne Neuronen und Synapsen, Schaltkreise und Gehirnregionen bis hin zu Verhalten, Kognition und Bewusstsein. Das Gehirn ist die komplexeste Struktur im bekannten Universum und enthält etwa 86 Milliarden Neuronen, die durch Billionen von Synapsen verbunden sind, und zu verstehen, wie es funktioniert, ist eine der großen Herausforderungen der Wissenschaft.
 ---

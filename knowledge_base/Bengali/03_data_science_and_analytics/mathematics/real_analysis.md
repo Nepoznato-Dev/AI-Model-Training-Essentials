@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বাস্তব বিশ্লেষণ
 বাস্তব বিশ্লেষণ হল ক্যালকুলাসের শক্ত ভিত্তি। যদিও পরিচায়ক ক্যালকুলাস আপনাকে শেখায় কিভাবে ডেরিভেটিভ এবং ইন্টিগ্রেলগুলি গণনা করতে হয়, বাস্তব বিশ্লেষণ জিজ্ঞাসা করে *কেন* এই কৌশলগুলি কাজ করে — এবং কখন তারা ব্যর্থ হয়। এটি সীমা, ধারাবাহিকতা, অভিন্নতা এবং একীকরণের সুনির্দিষ্ট সংজ্ঞা প্রদান করে যা সম্ভাব্যতা তত্ত্ব, কার্যকরী বিশ্লেষণ, অপ্টিমাইজেশান, এবং মেশিন লার্নিং অ্যালগরিদমের পিছনে তাত্ত্বিক গ্যারান্টিগুলিকে আন্ডারপিন করে৷
 ---

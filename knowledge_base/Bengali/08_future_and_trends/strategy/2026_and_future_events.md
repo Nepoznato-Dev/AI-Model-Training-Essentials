@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 2026 এবং ভবিষ্যতের ঘটনা
 2026 এমন একটি বছর যেখানে অনেক দীর্ঘমেয়াদী পরিকল্পনা একত্রিত হয়। এটি মার্কিন যুক্তরাষ্ট্রের স্বাধীনতা ঘোষণার 250 তম বার্ষিকী, জাতিসংঘের টেকসই উন্নয়ন লক্ষ্যগুলির (2020-2030) জন্য একটি মধ্যবিন্দু চেকপয়েন্ট এবং AI, মহাকাশ অনুসন্ধান, বৈদ্যুতিক যান এবং পুনর্নবীকরণযোগ্য শক্তিতে কর্পোরেট রোডম্যাপের জন্য একটি মাইলফলক বছর। সুনির্দিষ্ট ভবিষ্যদ্বাণী করা হোক বা না হোক, 2026-এর প্রবণতাগুলি জিনিসগুলি কোন দিকে যাচ্ছে তার একটি দরকারী চিত্র দেয়৷
 ---

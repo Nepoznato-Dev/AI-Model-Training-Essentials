@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Statistics at Probability
 Ang probabilidad at istatistika ay ang mathematical na pundasyon ng data science, machine learning, at siyentipikong pananaliksik. Sinasabi sa iyo ng probabilidad kung gaano kalamang ang mga kaganapan; Sinasabi sa iyo ng mga istatistika kung paano gumawa ng mga konklusyon mula sa data. Magkasama, ginagawa nilang nasusukat, mapapamahalaan na kaalaman ang kawalan ng katiyakan.
 ---

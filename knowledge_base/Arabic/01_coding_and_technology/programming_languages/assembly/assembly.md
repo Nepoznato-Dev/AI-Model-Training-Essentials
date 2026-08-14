@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #لغة التجميع
 لغة التجميع هي أدنى لغة برمجة يمكن قراءتها بواسطة الإنسان. وهو يوفر تمثيلاً مباشرًا لتعليمات رمز جهاز الكمبيوتر باستخدام رموز ذاكري (مثل`MOV`و`ADD`و`JMP`) بدلاً من الثنائي الخام. كل لغة تجميع خاصة ببنية معالج معينة (x86، ARM، MIPS، RISC-V) - لن يتم تشغيل التعليمات البرمجية المكتوبة لبنية واحدة على بنية أخرى.
 لا يتم استخدام لغة التجميع لبناء التطبيقات. يتم استخدامه عندما تحتاج إلى التحكم المطلق في الأجهزة: كتابة نواة نظام التشغيل، وبرامج تشغيل الأجهزة، ومحملات التشغيل، والبرامج الثابتة المضمنة، وأقسام التعليمات البرمجية المهمة للأداء، والهندسة العكسية، وفهم كيفية تنفيذ أجهزة الكمبيوتر للتعليمات فعليًا.

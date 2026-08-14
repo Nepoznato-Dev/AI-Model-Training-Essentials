@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # এমবেডেড সিস্টেম এবং আইওটি
 এমবেডেড সিস্টেমগুলি হল অন্যান্য ডিভাইসের ভিতরে লুকানো কম্পিউটারগুলি — আপনার গাড়ির ইঞ্জিন নিয়ন্ত্রণ ইউনিট, আপনার ওয়াশিং মেশিনের নিয়ামক, একটি স্মার্ট থার্মোস্ট্যাটে মাইক্রোকন্ট্রোলার৷ সাধারণ-উদ্দেশ্যের কম্পিউটারগুলির বিপরীতে, এগুলি নির্দিষ্ট কাজের জন্য ডিজাইন করা হয়েছে, প্রায়শই শক্তি, মেমরি এবং প্রক্রিয়াকরণের গতিতে কঠোর সীমাবদ্ধতার সাথে। ইন্টারনেট অফ থিংস (IoT) এম্বেড করা সিস্টেমগুলিকে নেটওয়ার্কের সাথে সংযুক্ত করে, দূরবর্তী পর্যবেক্ষণ, নিয়ন্ত্রণ এবং ডেটা সংগ্রহ সক্ষম করে প্রসারিত করে। একসাথে, তারা বিলিয়ন কম্পিউটিং ডিভাইসের প্রতিনিধিত্ব করে যা ভৌত জগতের সাথে যোগাযোগ করে।
 ---

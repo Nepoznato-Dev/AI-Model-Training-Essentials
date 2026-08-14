@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala — 語法參考
 本文檔提供了 Scala 的全面、結構化語法參考（3.x 以及有關 2.x 差異的註釋）。它透過關注詳盡的語法模式、類型系統、函數式程式設計結構和 Scala 習慣用法來補充主要的 Scala 參考。
 ---

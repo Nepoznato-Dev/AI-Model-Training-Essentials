@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Błędy projektowania i integracji interfejsu API
 Interfejsy API (interfejsy programowania aplikacji) to tkanka łączna nowoczesnego oprogramowania — umożliwiają komunikację usług, integrację stron trzecich i niezależną pracę zespołów. Kiedy projekt API idzie nie tak, konsekwencje odbijają się na każdym systemie, który jest od niego zależny: wadliwe integracje, luki w zabezpieczeniach, frustracja programistów i kosztowne przepisywanie. Błędy integracji — gdy systemy nie mogą się niezawodnie komunikować — należą do najczęstszych źródeł incydentów produkcyjnych.
 ---

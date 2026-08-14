@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 數值方法
 數值方法是數學理論和實際計算之間的橋樑。雖然純數學證明了解的存在，但數值方法實際上計算的是有限精度的近似答案。每個機器學習模型、物理模擬和數據分析管道最終都依賴數值計算。了解這些方法——它們的準確性、穩定性和局限性——對於建立可靠的軟體至關重要。
 ---

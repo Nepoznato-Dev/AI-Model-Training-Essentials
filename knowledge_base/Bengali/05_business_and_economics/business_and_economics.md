@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ব্যবসা এবং অর্থনীতি
 প্রতিটি সংস্থা যা একটি পণ্য বা পরিষেবা বিক্রি করে একটি ব্যবসা, এবং প্রতিটি সমাজ যা পণ্য উত্পাদন এবং বিতরণ করে একটি অর্থনীতি। আপনি একটি ফ্রিল্যান্স অপারেশন চালাচ্ছেন, একটি কর্পোরেশনে কাজ করছেন, খবর বোঝার চেষ্টা করছেন, বা সারা বিশ্বে অর্থ কীভাবে চলে তা খুঁজে বের করছেন কিনা এই ফাইলের ধারণাগুলি প্রযোজ্য।
 ---

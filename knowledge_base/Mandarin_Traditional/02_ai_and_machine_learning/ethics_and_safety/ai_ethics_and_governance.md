@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 人工智慧道德與治理
 人工智慧系統不是中立的。它們反映了接受訓練的數據、創建者的價值觀以及部署它們的組織的激勵措施。道德不只是問「我們能建造這個嗎？」但「我們應該嗎？」治理就是建立法律、標準、監督機構等結構，以確保人工智慧的開發和使用是負責任的。該文件涵蓋了人工智慧的關鍵道德維度以及為解決這些問題而出現的治理框架。
 ---

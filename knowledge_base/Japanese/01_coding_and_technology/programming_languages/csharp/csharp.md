@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C#
 C# (「C シャープ」と発音) は、Anders Hejlsberg のリーダーシップの下で Microsoft によって開発され、2002 年に初めてリリースされた、最新のオブジェクト指向のタイプセーフ プログラミング言語です。 C# は .NET プラットフォーム上で動作し、C++ の能力と Visual Basic の生産性を組み合わせるように設計されました。現在、C# は、Web アプリケーション (ASP.NET)、デスクトップ ソフトウェア (Windows)、ゲーム開発 (Unity)、モバイル アプリ (MAUI)、クラウド サービス (Azure) などに使用される多用途のクロスプラットフォーム言語です。
 C# は、LINQ、async/await、レコード、パターン マッチングなど、他の言語から優れたアイデアを着実に吸収しており、利用可能な言語の中で最も機能が豊富で開発者に優しい言語の 1 つとなっています。

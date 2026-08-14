@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neuroscience
 
 Neuroscience is the study of the nervous system — the brain, spinal cord, and all the nerves that connect them to the body. It spans multiple levels: from molecules and genes, to individual neurons and synapses, to circuits and brain regions, to behaviour, cognition, and consciousness. The brain is the most complex structure in the known universe, containing roughly 86 billion neurons connected by trillions of synapses, and understanding how it works is one of the great challenges of science.

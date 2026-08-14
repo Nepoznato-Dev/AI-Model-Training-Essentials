@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیٹا انجینئرنگ اور پائپ لائنز
 ڈیٹا انجینئرنگ ایسے نظاموں کی تعمیر کا نظم و ضبط ہے جو ڈیٹا کو منتقل، تبدیل اور پیمانے پر ذخیرہ کرتا ہے۔ قابل اعتماد ڈیٹا پائپ لائنز کے بغیر، مشین لرننگ ماڈلز کو تربیت نہیں دی جا سکتی، ڈیش بورڈز پرانے نمبر دکھائے جاتے ہیں، اور کاروباری فیصلے اندازے پر مبنی ہوتے ہیں۔ یہ فائل کام کرنے والے ڈیٹا انفراسٹرکچر کی تعمیر کے لیے فن تعمیر، ٹولز اور طریقوں کا احاطہ کرتی ہے۔
 ---

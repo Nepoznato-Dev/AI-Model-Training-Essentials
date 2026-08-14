@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Học tập liên kết và quyền riêng tư
 Học liên kết là một kỹ thuật đào tạo các mô hình học máy trên nhiều thiết bị hoặc tổ chức mà không chia sẻ dữ liệu thô. Thay vì gửi dữ liệu đến máy chủ trung tâm, mỗi thiết bị sẽ huấn luyện một mô hình cục bộ và chỉ chia sẻ các bản cập nhật mô hình (độ dốc hoặc trọng lượng). Máy chủ trung tâm tổng hợp những cập nhật này để tạo ra một mô hình toàn cầu. Nó được Google thiết kế để đào tạo các mô hình ngôn ngữ bàn phím trên điện thoại Android - và từ đó nó đã trở thành một kỹ thuật quan trọng để bảo vệ quyền riêng tư của AI.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #trí tuệ nhân tạo
 Trí tuệ nhân tạo là nỗ lực chế tạo những cỗ máy có thể làm những việc đòi hỏi trí thông minh nếu con người làm: nhận diện khuôn mặt, hiểu lời nói, đưa ra quyết định, viết văn bản, chơi trò chơi, lái ô tô, chẩn đoán bệnh. Lĩnh vực này cũng lâu đời như chính máy tính vậy - Alan Turing đã hỏi "Máy móc có thể suy nghĩ được không?" vào năm 1950 - nhưng sự bùng nổ về năng lực gần đây (những năm 2020) đã khiến AI trở thành một trong những công nghệ quan trọng và gây tranh cãi nhất trong lịch sử loài người.
 ---

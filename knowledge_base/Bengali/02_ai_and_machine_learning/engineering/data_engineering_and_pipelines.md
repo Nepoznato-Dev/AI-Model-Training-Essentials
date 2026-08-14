@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা ইঞ্জিনিয়ারিং এবং পাইপলাইন
 ডেটা ইঞ্জিনিয়ারিং হল সিস্টেমগুলি তৈরি করার শৃঙ্খলা যা স্কেলে ডেটা স্থানান্তর, রূপান্তর এবং সঞ্চয় করে। নির্ভরযোগ্য ডেটা পাইপলাইন ব্যতীত, মেশিন লার্নিং মডেলগুলিকে প্রশিক্ষিত করা যায় না, ড্যাশবোর্ডগুলি পুরানো নম্বরগুলি দেখায় এবং ব্যবসায়িক সিদ্ধান্তগুলি অনুমানের উপর ভিত্তি করে। এই ফাইলটি কাজ করে এমন ডেটা অবকাঠামো তৈরির জন্য আর্কিটেকচার, টুলস এবং অনুশীলনগুলি কভার করে।
 ---

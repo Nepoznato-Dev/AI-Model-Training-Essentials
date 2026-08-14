@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การทดสอบและการทดลองทางสถิติ
 สถิติคือไวยากรณ์ของวิทยาศาสตร์ โดยจะให้เครื่องมือแก่คุณในการแยกแยะรูปแบบที่แท้จริงจากสัญญาณรบกวนแบบสุ่ม เพื่อวัดว่าการเปลี่ยนแปลงช่วยปรับปรุงสิ่งต่างๆ จริงหรือไม่ และเพื่อการตัดสินใจภายใต้ความไม่แน่นอน ไฟล์นี้ครอบคลุมแนวคิดหลักของการทดสอบสมมติฐาน การออกแบบการทดลอง และข้อผิดพลาดทั่วไปที่ทำให้ผู้คนสับสน
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Data Types & Structures"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # क्रॉस-लैंग्वेज तुलना - डेटा प्रकार और संरचनाएं
 ## आदिम प्रकार
 | प्रकार | पायथन | जावास्क्रिप्ट | जंग | जाओ | जावा | सी | सी++ | सी# |

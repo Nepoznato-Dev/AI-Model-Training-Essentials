@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language — Version History & Evolution"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # 어셈블리 언어 — 버전 기록 및 진화
 ## 타임라인
 | 시대 | 연도 | 주요 테마 |

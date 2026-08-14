@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Экологическая осведомленность
 Окружающая среда — это не отдельная вещь «где-то там», это система, которая делает все остальное возможным. Каждый ваш вдох, каждый стакан воды, который вы выпиваете, каждый прием пищи зависит от состава атмосферы, круговорота воды, здоровья почвы и сетей опылителей. Понимание того, как эти системы работают и как они меняются, не является обязательным для информированного человека. В этом файле рассматриваются основы науки об окружающей среде, проблемы, с которыми мы сталкиваемся, и то, что на самом деле означает устойчивое развитие на практике.
 ---

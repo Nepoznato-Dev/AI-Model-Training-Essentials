@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیٹا ویژولائزیشن
 ایک اچھی طرح سے ڈیزائن کردہ چارٹ ایسے نمونوں کو ظاہر کر سکتا ہے جو اعداد کی میزیں چھپتے ہیں۔ ایک ناقص ڈیزائن والا گمراہ، الجھن، یا بور کر سکتا ہے۔ ڈیٹا ویژولائزیشن ڈیٹا کو بصری کہانیوں میں تبدیل کرنے کا ہنر ہے جو فیصلوں سے آگاہ کرتی ہے۔ اس فائل میں چارٹ کے انتخاب، ڈیزائن کے اصول، عام غلطیاں، اور ان ٹولز کا احاطہ کیا گیا ہے جو یہ سب ممکن بناتے ہیں۔
 ---

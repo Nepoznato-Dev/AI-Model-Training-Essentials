@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Struktury danych i algorytmy
 Struktury danych to sposób, w jaki organizujemy dane w pamięci, aby operacje na nich były wydajne. Algorytmy to procedury rozwiązywania problemów krok po kroku. Razem stanowią one podstawę informatyki — opiera się na nich każdy program, którego kiedykolwiek używałeś. Wybór właściwej struktury danych może zamienić niemożliwie powolny program w szybki, a znajomość odpowiedniego algorytmu może zamienić nierozwiązywalny problem w trywialny.
 ---

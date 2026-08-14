@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شیرجه عمیق هوش مصنوعی
 هوش مصنوعی مولد به مدل هایی اشاره دارد که به جای طبقه بندی یا پیش بینی داده های موجود، محتوای جدیدی ایجاد می کنند - تصاویر، متن، صدا، ویدئو، کد. در حالی که مدل های زبان بزرگ بیشتر توجه را به خود جلب می کنند، چشم انداز هوش مصنوعی مولد بسیار گسترده تر است. این فایل معماری‌ها، تکنیک‌ها و مبادلات پشت سیستم‌های مولد مدرن، از مدل‌های انتشار گرفته تا رمزگذارهای خودکار متغیر و مدل‌های جریان را پوشش می‌دهد.
 ---

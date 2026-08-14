@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #PHP
 PHP (Hypertext Preprocessor) est un langage de script côté serveur créé par Rasmus Lerdorf en 1994 et lancé pour la première fois en 1995. Conçu à l'origine pour générer des pages Web dynamiques, PHP est devenu un langage polyvalent et complet. Il alimente environ 75 % de tous les sites Web dotés d’un langage côté serveur connu, notamment WordPress, Facebook (à l’origine), Wikipedia, Slack et des millions d’autres sites.
 Le PHP moderne (8.x) est un langage très différent du PHP du début des années 2000. Il possède désormais des propriétés typées, des expressions de correspondance, des énumérations, des fibres, des classes en lecture seule et un système de types robuste. Malgré sa réputation auprès des développeurs (souvent critiquée pour ses incohérences), PHP est pratique, largement déployé et ne cesse de s'améliorer.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Скала
 Scala (масштабируемый язык) — это статически типизированный компилируемый язык программирования, сочетающий в себе парадигмы объектно-ориентированного и функционального программирования. Созданный Мартином Одерски и впервые выпущенный в 2004 году, Scala работает на JVM (также Scala.js для JavaScript и Scala Native). Он был разработан для решения проблемы многословия Java, сохраняя при этом полную совместимость Java.
 Scala — это язык, лежащий в основе Apache Spark (инфраструктура обработки больших данных), и он широко используется в инженерии данных, распределенных системах и серверных службах. Такие компании, как Twitter (теперь X), LinkedIn, Netflix и The Guardian, используют Scala.

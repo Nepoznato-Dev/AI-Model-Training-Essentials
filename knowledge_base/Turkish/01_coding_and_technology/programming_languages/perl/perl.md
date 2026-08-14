@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Perl
 Perl, 1987 yılında Larry Wall tarafından pratik bir metin işleme aracı olarak yaratıldı. İlk web geliştirmenin (CGI komut dosyaları), sistem yönetiminin, biyoenformatik ve ağ programlamanın omurgası haline geldi. Perl'ün felsefesi "Bunu Yapmanın Birden Fazla Yolu Vardır" (TMTOWTDI)'dır - dil size her soruna birden fazla yaklaşım sunar ve tekdüzelik yerine ifadeyi tercih eder.
 Perl'ün modern programlama üzerindeki etkisi muazzamdır ancak çoğu zaman görünmez: Perl'ün kalıp eşleştirmesinden etkilenen düzenli ifadeler artık Python, JavaScript, Java ve diğer birçok dilde standarttır. CPAN (Kapsamlı Perl Arşiv Ağı) ilk yazılım paketi depolarından biriydi ve Python'un PyPI ve Node'un npm'si gibi daha sonraki sistemlere ilham kaynağı oldu.

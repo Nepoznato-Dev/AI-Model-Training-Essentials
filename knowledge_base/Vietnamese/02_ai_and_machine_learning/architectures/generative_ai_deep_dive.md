@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nghiên cứu chuyên sâu về AI sáng tạo
 AI sáng tạo đề cập đến các mô hình tạo ra nội dung mới - hình ảnh, văn bản, âm thanh, video, mã - thay vì chỉ phân loại hoặc dự đoán dữ liệu hiện có. Trong khi các mô hình ngôn ngữ lớn nhận được phần lớn sự chú ý, thì bối cảnh AI tổng quát lại rộng hơn nhiều. Tệp này bao gồm các kiến ​​trúc, kỹ thuật và sự cân bằng đằng sau các hệ thống tạo sinh hiện đại, từ mô hình khuếch tán đến bộ mã hóa biến thiên đến mô hình dòng chảy.
 ---

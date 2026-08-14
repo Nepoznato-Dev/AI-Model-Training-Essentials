@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kegagalan Proyek Pembelajaran Mesin
 Proyek pembelajaran mesin mengalami kegagalan pada tingkat yang mengkhawatirkan — perkiraan industri menunjukkan 60-85% proyek ML tidak pernah mencapai produksi. Kegagalan biasanya tidak terjadi pada algoritme; mereka sedang dalam proses, data, harapan, dan konteks organisasi. Memahami mengapa proyek ML gagal sangat penting bagi siapa pun yang membangun sistem ML, karena mode kegagalan dapat diprediksi dan sebagian besar dapat dihindari.
 ---

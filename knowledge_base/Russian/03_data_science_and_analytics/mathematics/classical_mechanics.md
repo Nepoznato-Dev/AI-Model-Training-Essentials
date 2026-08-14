@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Классическая механика
 Классическая механика описывает движение объектов под действием сил. От падающих яблок до вращающихся вокруг планет, от вибрирующих струн до сталкивающихся частиц — ее принципы управляют макроскопическим миром. Помимо физических приложений, классическая механика породила вариационное исчисление, симплектическую геометрию и гамильтонову структуру, лежащую в основе квантовой механики и современной оптимизации.
 ---

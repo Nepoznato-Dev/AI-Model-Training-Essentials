@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Electromagnetismo
 El electromagnetismo es el estudio de los campos eléctricos y magnéticos y sus interacciones. Unificado por Maxwell en la década de 1860, el electromagnetismo explica la luz, la electricidad, el magnetismo, las ondas de radio y la estructura de los átomos. Fue la primera fuerza fundamental que se entendió completamente matemáticamente, y sus ecuaciones inspiraron la relatividad especial de Einstein y la teoría de campos moderna.
 ---

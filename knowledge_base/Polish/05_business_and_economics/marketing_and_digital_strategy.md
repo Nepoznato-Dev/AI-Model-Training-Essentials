@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Marketing i strategia cyfrowa
 Marketing to sposób, w jaki firmy tworzą, komunikują się i dostarczają wartość klientom. Obejmuje cały system rozumienia potrzeb klienta, pozycjonowania produktu tak, aby zaspokajał te potrzeby oraz budowania relacji, które przekształcają kupujących w zwolenników. Rewolucja cyfrowa zmieniła narzędzia, kanały i szybkość marketingu, zachowując jednocześnie niezmienne podstawy.
 ---

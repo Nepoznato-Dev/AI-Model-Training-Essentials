@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # JavaScript
 JavaScript to dynamiczny, interpretowany język programowania stworzony przez Brendana Eicha w zaledwie 10 dni w 1995 roku. Pierwotnie zaprojektowany w celu dodania interaktywności do stron internetowych, stał się najpopularniejszym językiem programowania na świecie. JavaScript działa w każdej przeglądarce internetowej, na serwerach poprzez Node.js, w aplikacjach desktopowych (Electron), aplikacjach mobilnych (React Native), a nawet systemach wbudowanych.
 Język ten jest wyjątkowy, ponieważ jest w zasadzie jedyną opcją tworzenia stron internetowych po stronie klienta — każda przeglądarka obsługuje go natywnie. Ten monopol w połączeniu z rozwojem pełnego stosu JavaScript (Node.js, Deno, Bun) sprawia, że ​​jest on niezbędny.

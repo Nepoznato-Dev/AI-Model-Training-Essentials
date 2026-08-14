@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 দৈনন্দিন জীবনে # AI
 কৃত্রিম বুদ্ধিমত্তা আর একটি ভবিষ্যত ধারণা নয় - এটি দৈনন্দিন জীবনে এমবেড করা হয়েছে। আপনি ঘুম থেকে ওঠার মুহূর্ত থেকে এবং আপনার ফোন চেক করুন (সুপারিশ অ্যালগরিদমগুলি সিদ্ধান্ত নেয় আপনি কোন বিজ্ঞপ্তিগুলি দেখেন) আপনি ঘুমিয়ে পড়ার মুহুর্ত পর্যন্ত (আপনার স্মার্ট স্পিকার আপনার শেষ আদেশটি প্রক্রিয়া করে), AI সিস্টেমগুলি আপনার পক্ষে, আপনার জন্য এবং কখনও কখনও আপনার বিষয়ে সিদ্ধান্ত নিচ্ছে। AI কোথায় উপস্থিত হয়, এটি একটি মৌলিক স্তরে কীভাবে কাজ করে এবং এর প্রভাবগুলি কী তা বোঝা আর ঐচ্ছিক নয় - 21 শতকে অবহিত নাগরিকত্বের জন্য এটি একটি প্রয়োজনীয়তা।
 ---

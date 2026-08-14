@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ética y gobernanza de la IA
 Los sistemas de IA no son neutrales. Reflejan los datos con los que fueron capacitados, los valores de sus creadores y los incentivos de las organizaciones que los implementan. La ética consiste en preguntarse no sólo "¿podemos construir esto?" pero "¿deberíamos?" La gobernanza consiste en crear estructuras (leyes, estándares, órganos de supervisión) que garanticen que la IA se desarrolle y utilice de manera responsable. Este archivo cubre las dimensiones éticas clave de la IA y los marcos de gobernanza que surgen para abordarlas.
 ---

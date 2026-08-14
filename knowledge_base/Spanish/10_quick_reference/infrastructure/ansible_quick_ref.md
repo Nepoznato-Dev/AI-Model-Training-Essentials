@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ansible y gestión de configuración
 Ansible es una herramienta de automatización y gestión de configuración sin agentes. Utiliza SSH (o WinRM para Windows) para conectarse a servidores y ejecutar tareas definidas en los manuales YAML. A diferencia de las herramientas que requieren agentes instalados en cada máquina, Ansible se basa en push: ejecuta comandos desde un nodo de control. Se utiliza para el aprovisionamiento de servidores, la implementación de aplicaciones, la gestión de la configuración y la ejecución de tareas ad hoc.
 ---

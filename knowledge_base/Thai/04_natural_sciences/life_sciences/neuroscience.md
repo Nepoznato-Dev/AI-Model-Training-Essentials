@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ประสาทวิทยา
 ประสาทวิทยาศาสตร์คือการศึกษาระบบประสาท ได้แก่ สมอง ไขสันหลัง และเส้นประสาททั้งหมดที่เชื่อมต่อระบบประสาทเหล่านี้เข้ากับร่างกาย ครอบคลุมหลายระดับ ตั้งแต่โมเลกุลและยีน ไปจนถึงเซลล์ประสาทและไซแนปส์ส่วนบุคคล ไปจนถึงวงจรและบริเวณสมอง พฤติกรรม การรับรู้ และจิตสำนึก สมองเป็นโครงสร้างที่ซับซ้อนที่สุดในจักรวาลนี้ โดยมีเซลล์ประสาทประมาณ 86 พันล้านเซลล์เชื่อมต่อกันด้วยไซแนปส์หลายล้านล้านเซลล์ และการทำความเข้าใจว่ามันทำงานอย่างไรถือเป็นหนึ่งในความท้าทายที่ยิ่งใหญ่ของวิทยาศาสตร์
 ---

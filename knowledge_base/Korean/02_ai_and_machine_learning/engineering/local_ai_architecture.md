@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 로컬 AI 아키텍처
 하드웨어 고려 사항, 추론 엔진, 메모리 최적화, 엣지 배포를 위한 시스템 설계 등 대규모 언어 모델을 전체 기기에서 실행하기 위한 실용적인 가이드입니다.
 ---

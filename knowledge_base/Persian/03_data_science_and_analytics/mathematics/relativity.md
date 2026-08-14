@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #نسبیت
 نظریه‌های نسبیت انیشتین، درک ما از فضا، زمان و گرانش را متحول کرد. **نسبیت خاص** (1905) نشان داد که فضا و زمان از هم جدا نیستند بلکه در یک پارچه واحد به نام فضازمان بافته شده اند و سرعت نور برای همه ناظران یکسان است. **نسبیت عام** (1915) گرانش را نه به عنوان یک نیرو، بلکه به عنوان انحنای فضازمان ناشی از جرم و انرژی تصور کرد. این نظریه ها زیربنای ناوبری GPS، شتاب دهنده های ذرات و درک ما از سیاهچاله ها و تکامل کیهان هستند.
 ---

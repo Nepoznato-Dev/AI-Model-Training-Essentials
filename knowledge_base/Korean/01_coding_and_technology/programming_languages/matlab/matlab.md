@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB
 MATLAB(Matrix Laboratory)은 수치 계산, 행렬 연산 및 엔지니어링/과학 응용 프로그램을 위해 설계된 고급 해석 프로그래밍 언어 및 환경입니다. MathWorks에서 개발하고 1984년에 처음 출시된 MATLAB은 전기 공학, 제어 시스템, 신호 처리, 이미지 처리, 통신 등 다양한 엔지니어링 분야의 표준 도구입니다.
 MATLAB은 강력한 매트릭스 지향 언어와 광범위한 도구 상자(추가 패키지) 및 Simulink 시각적 시뮬레이션 환경을 결합합니다. 이는 프로덕션 코드에 구현하기 전에 알고리즘을 프로토타입화하기 위해 학계 및 업계에서 널리 사용됩니다.

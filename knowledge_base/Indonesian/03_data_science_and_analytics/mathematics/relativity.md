@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Relativitas
 Teori relativitas Einstein merevolusi pemahaman kita tentang ruang, waktu, dan gravitasi. **Relativitas khusus** (1905) menunjukkan bahwa ruang dan waktu tidak terpisah tetapi terjalin menjadi satu kesatuan yang disebut ruangwaktu, dan kecepatan cahaya adalah sama untuk semua pengamat. **Relativitas umum** (1915) menata ulang gravitasi bukan sebagai gaya, melainkan sebagai kelengkungan ruangwaktu yang disebabkan oleh massa dan energi. Teori-teori ini mendasari navigasi GPS, akselerator partikel, dan pemahaman kita tentang lubang hitam dan evolusi alam semesta.
 ---

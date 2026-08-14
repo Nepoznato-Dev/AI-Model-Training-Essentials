@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Przyszłość informatyki
 Przyszłość informatyki kształtują siły, które podważają podstawowe założenia ostatnich 60 lat. Prawo Moore’a – obserwacja, że ​​moc obliczeniowa podwaja się mniej więcej co dwa lata – zwalnia. Architektura von Neumanna — oddzielny procesor i pamięć — uderza w „ścianę pamięci”. Obliczenia kwantowe obiecują rozwiązać problemy, których nie potrafią klasyczne komputery. Chipy neuromorficzne naśladują architekturę mózgu. Przetwarzanie brzegowe przenosi przetwarzanie ze scentralizowanych centrów danych. Sztuczna inteligencja zmienia przeznaczenie komputerów — od narzędzi wykonujących instrukcje po systemy uczące się, generujące i rozumujące. Zrozumienie tych zmian ma znaczenie dla każdego, kto buduje, kupuje lub polega na technologii.
 ---

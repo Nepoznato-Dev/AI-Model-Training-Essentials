@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nhanh
 Swift là ngôn ngữ lập trình được biên dịch, hiện đại do Apple (do Chris Lattner dẫn đầu) phát triển và phát hành lần đầu tiên vào năm 2014. Nó được thiết kế để thay thế Objective-C làm ngôn ngữ chính để phát triển nền tảng Apple (iOS, macOS, watchOS, tvOS, VisionOS). Swift kết hợp hiệu suất của các ngôn ngữ được biên dịch với tính biểu cảm của các ngôn ngữ kịch bản và nó nhấn mạnh đến sự an toàn -- đặc biệt là về giá trị null, quản lý bộ nhớ và lỗi loại.
 Ngoài các nền tảng của Apple, Swift ngày càng được sử dụng nhiều để phát triển phía máy chủ (Vapor, Hummingbird), các ứng dụng đa nền tảng và thậm chí cả máy học (Creat ML của Apple). Với việc giới thiệu Swift trên Máy chủ và hỗ trợ đa nền tảng, Swift không chỉ trở thành một "ngôn ngữ của Apple".

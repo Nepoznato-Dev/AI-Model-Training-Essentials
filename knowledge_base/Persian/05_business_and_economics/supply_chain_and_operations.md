@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # زنجیره تامین و مدیریت عملیات
 مدیریت زنجیره تامین، هماهنگی تمامی فعالیت‌های مرتبط با منبع‌یابی، تدارکات، تبدیل و تدارکات است - از مواد خام تا محصول نهایی در دست مشتری. مدیریت عملیات، اجرای روزانه سیستم های تولیدی است. آنها با هم تعیین می کنند که آیا یک شرکت می تواند محصول مناسب، در زمان مناسب، با هزینه مناسب و با کیفیت مناسب را ارائه دهد یا خیر. همه‌گیری، کمبود تراشه و انسداد کانال نشان داده‌اند که زنجیره‌های تامین تا چه حد شکننده و به هم مرتبط هستند.
 ---

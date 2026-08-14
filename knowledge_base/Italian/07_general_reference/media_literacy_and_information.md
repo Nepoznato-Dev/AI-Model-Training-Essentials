@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Alfabetizzazione mediatica e valutazione dell'informazione
 Viviamo in un mondo saturo di informazioni. Ogni giorno, la persona media è esposta a migliaia di messaggi mediatici: articoli di notizie, post sui social media, pubblicità, discorsi politici, contenuti di influencer, testi generati dall’intelligenza artificiale. La maggior parte va bene. In parte è fuorviante. Una piccola quantità è deliberatamente falsa. L’alfabetizzazione mediatica è l’abilità di navigare in questo panorama – non fidandosi di tutto, non fidandosi di nulla, ma sviluppando un senso calibrato di cosa è affidabile e cosa non lo è.
 ---

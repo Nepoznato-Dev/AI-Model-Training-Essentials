@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadatos
 título: "Arte y literatura"
@@ -34,6 +35,8 @@ contribución:
   how_to_contribute: "Enviar un PR con cambios y actualizar el registro de cambios"
   review_process: "Los mantenedores de categorías revisan los cambios antes de fusionarlos"
 ---
+
+-->
 # Artes y Literatura
 La expresión creativa humana –ya sea en libros, pinturas, música o películas– es uno de los testimonios más duraderos de la civilización. Comprender los principales géneros, movimientos y figuras da contexto al mundo en el que vivimos hoy. Cada novela, cada sinfonía, cada película está en conversación con lo que vino antes.
 ---

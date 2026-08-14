@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nauka i natura
 Nauka pozwala nam dowiedzieć się, co faktycznie robi wszechświat — nie tego, co zakładamy, że robi, nie tego, co mówią starożytne teksty, ale tego, co ujawniają uważne obserwacje i eksperymenty. Metoda naukowa jest w zasadzie prosta: obserwuj coś, postaw hipotezę, przetestuj ją i zweryfikuj swoje zrozumienie na podstawie wyników. Siłą nauki jest to, że potrafi się ona samokorygować. Każde roszczenie jest tymczasowe – akceptowane tylko do czasu pojawienia się lepszych dowodów.
 Plik ten obejmuje główne gałęzie nauk przyrodniczych: fizykę, chemię, biologię oraz nauki o Ziemi i kosmosie. Pomyśl o tym jak o mapie świata fizycznego.

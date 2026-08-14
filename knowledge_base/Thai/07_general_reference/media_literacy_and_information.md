@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การประเมินความรู้ด้านสื่อและสารสนเทศ
 เราอาศัยอยู่ในโลกที่เต็มไปด้วยข้อมูล ทุกๆ วัน ผู้คนโดยเฉลี่ยจะถูกเปิดเผยข้อความจากสื่อหลายพันข้อความ ไม่ว่าจะเป็นบทความข่าว โพสต์บนโซเชียลมีเดีย โฆษณา สุนทรพจน์ทางการเมือง เนื้อหาที่มีอิทธิพล ข้อความที่สร้างโดย AI ส่วนใหญ่มันก็ดี บางส่วนก็ทำให้เข้าใจผิด จำนวนเล็กน้อยถือเป็นเท็จโดยเจตนา การรู้เท่าทันสื่อคือทักษะในการขับเคลื่อนภูมิทัศน์นี้ ไม่ใช่ด้วยการเชื่อใจในทุกสิ่ง ไม่ใช่โดยไม่ไว้วางใจอะไรเลย แต่โดยการพัฒนาความรู้สึกที่เทียบเคียงว่าอะไรน่าเชื่อถือและสิ่งที่ไม่น่าเชื่อถือ
 ---

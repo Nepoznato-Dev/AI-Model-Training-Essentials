@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aprendizaje federado y privacidad
 El aprendizaje federado es una técnica para entrenar modelos de aprendizaje automático en múltiples dispositivos u organizaciones sin compartir los datos sin procesar. En lugar de enviar datos a un servidor central, cada dispositivo entrena un modelo local y solo comparte las actualizaciones del modelo (gradientes o pesos). El servidor central agrega estas actualizaciones para producir un modelo global. Fue diseñado por Google para entrenar modelos de lenguaje de teclado en teléfonos Android y desde entonces se ha convertido en una técnica clave para la IA que preserva la privacidad.
 ---

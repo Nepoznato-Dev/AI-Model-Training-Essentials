@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ética y privacidad de los datos
 La ética de los datos es el estudio de cómo la recopilación, el análisis y la implementación de datos afectan los derechos, la autonomía y el bienestar de las personas. La privacidad es la preocupación específica sobre quién controla la información personal y cómo se comparte. Estos temas han pasado de los debates académicos a las noticias de primera plana: la aplicación del RGPD, las violaciones de datos que afectan a miles de millones de usuarios y la creciente conciencia pública de que las prácticas de datos de las empresas de tecnología tienen consecuencias reales para la democracia, la igualdad y la libertad individual.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hisabati
 Hisabati si somo linalosomwa shuleni pekee - inasimamia karibu kila nyanja ya kiufundi. Fizikia huitumia kuelezea ulimwengu. Sayansi ya kompyuta huitumia kuunda algoriti. Kujifunza kwa mashine huitumia kuongeza uzani. Fedha huitumia kuhatarisha bei. Umahiri wa kila tawi si lazima, lakini kuelewa mazingira - na kujua ambapo kila tawi linatumika - hufanya mada zingine kueleweka kwa urahisi.
 ---

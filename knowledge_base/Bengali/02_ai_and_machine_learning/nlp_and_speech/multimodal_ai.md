@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মাল্টিমোডাল এআই
 মাল্টিমোডাল এআই সিস্টেমগুলি একই সাথে একাধিক ধরণের ডেটা - পাঠ্য, চিত্র, অডিও, ভিডিও এবং আরও অনেক কিছু থেকে তথ্য একত্রিত করে এবং একত্রিত করে। যদিও পূর্বের AI সিস্টেমগুলি সাধারণত একক-মডালিটি ছিল (শুধুমাত্র পাঠ্য, কেবলমাত্র চিত্র), সবচেয়ে সক্ষম আধুনিক সিস্টেমগুলি হল মাল্টিমডাল। GPT-4V ছবি এবং টেক্সট একসাথে পড়ে; মিথুন টেক্সট, ছবি, অডিও এবং ভিডিও নেটিভভাবে প্রক্রিয়া করে; এবং Sora এর মত সিস্টেম টেক্সট বর্ণনা থেকে ভিডিও তৈরি করে। এই ফাইলটি কভার করে যে মাল্টিমডাল এআই কীভাবে কাজ করে, এর পিছনের স্থাপত্যগুলি এবং কেন পদ্ধতিগুলিকে একত্রিত করা এত শক্তিশালী।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # COBOL — Syntax Reference
 Nagbibigay ang dokumentong ito ng komprehensibo, structured na syntax na reference para sa COBOL (2014+). Kinukumpleto nito ang pangunahing sanggunian ng COBOL sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, paglalarawan ng data, pagproseso ng file, at lohika ng negosyo.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سواد رسانه ای و ارزشیابی اطلاعات
 ما در جهانی اشباع از اطلاعات زندگی می کنیم. هر روز، افراد عادی در معرض هزاران پیام رسانه ای قرار می گیرند - مقالات خبری، پست های رسانه های اجتماعی، تبلیغات، سخنرانی های سیاسی، محتوای تأثیرگذار، متن تولید شده توسط هوش مصنوعی. بیشترش خوبه برخی از آن گمراه کننده است. مقدار کم عمدا دروغ است. سواد رسانه ای مهارت پیمایش در این چشم انداز است - نه با اعتماد به همه چیز، نه با اعتماد به هیچ چیز، بلکه با ایجاد یک حس مدرج از اینکه چه چیزی قابل اعتماد است و چه چیزی نیست.
 ---

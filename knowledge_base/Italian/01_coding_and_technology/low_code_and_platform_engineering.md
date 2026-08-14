@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ingegneria low-code e piattaforma
 Le piattaforme low-code consentono agli utenti di creare applicazioni con un codice minimo scritto a mano, in genere tramite interfacce drag-and-drop, flussi di lavoro visivi e connettori predefiniti. L'ingegneria della piattaforma è la disciplina che consiste nella creazione di piattaforme di sviluppo interne (IDP) che consentono ai team di prodotto di gestire in modo autonomo l'infrastruttura, CI/CD e gli strumenti operativi. Entrambe le tendenze sono risposte allo stesso problema: il divario tra la domanda di software e l’offerta di sviluppatori in grado di realizzarlo.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoría del control
 La teoría del control es la matemática necesaria para hacer que los sistemas se comporten como usted desea. Desde termostatos hasta pilotos automáticos, desde brazos robóticos hasta reactores químicos, los sistemas de control detectan, deciden y actúan para mantener el comportamiento deseado. Este campo proporciona herramientas rigurosas para analizar la estabilidad, el rendimiento y la solidez, conceptos que han migrado al aprendizaje por refuerzo, el ajuste de hiperparámetros y los sistemas adaptativos.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fortran
 Fortran (Formula Translation) é a linguagem de programação de alto nível mais antiga ainda em uso generalizado, desenvolvida pela primeira vez pela IBM em 1957 para computação científica e de engenharia. Apesar de sua idade, o Fortran moderno (Fortran 2008/2018/2023) é uma linguagem capaz e de alto desempenho usada extensivamente em previsão numérica do tempo, dinâmica de fluidos computacional, simulações físicas, modelagem financeira e computação de alto desempenho (HPC). Muitos dos supercomputadores mais rápidos do mundo executam código Fortran.
 A linguagem evoluiu significativamente desde seus primeiros dias. O Fortran moderno possui módulos, tipos derivados, procedimentos genéricos, coarrays (programação paralela) e interoperabilidade com C. Continua sendo a linguagem preferida para muitas aplicações de computação científica onde o desempenho é fundamental.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 材料科学
 材料科学是研究材料的结构（原子、微观和宏观尺度）如何决定其特性，以及如何使用加工方法来控制该结构以实现所需性能的学科。这个领域回答了这样的问题：为什么钢很坚固但很重？玻璃为什么透明但易碎？我们怎样才能让电池充电更快？什么材料能够在火星上的条件下生存？您使用过的每一项技术都是由材料制成的，技术的进步几乎总是需要材料的进步。
 ---

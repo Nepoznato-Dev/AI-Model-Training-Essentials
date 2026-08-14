@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কাজের ভবিষ্যত
 ## ওভারভিউ
 শিল্প বিপ্লবের পর থেকে যে কোনো সময়ে আমাদের কাজ করার পদ্ধতি দ্রুত পরিবর্তন হচ্ছে। দূরবর্তী কাজ রাতারাতি বিরল সুবিধা থেকে ডিফল্ট হয়ে গেছে। AI অভিনবত্ব থেকে সহযোগীতে চলে যাচ্ছে। গিগ অর্থনীতিতে "কর্মসংস্থান" এর অর্থ কী তা পুনর্নির্মাণ করছে। এবং অটোমেশন সব কাজের জন্য আসছে না — তবে এটি বেশিরভাগ কাজের মধ্যে অনেক কাজের জন্য আসছে। কর্মক্ষেত্রের পুনর্নির্মাণকারী শক্তি এবং এর পরে কী আসে তা এখানে দেখুন।

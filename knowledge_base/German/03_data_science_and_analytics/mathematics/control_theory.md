@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kontrolltheorie
 Die Kontrolltheorie ist die Mathematik, mit der man Systeme dazu bringt, sich so zu verhalten, wie man es möchte. Von Thermostaten bis zu Autopiloten, von Roboterarmen bis zu chemischen Reaktoren: Steuerungssysteme erkennen, entscheiden und handeln, um das gewünschte Verhalten aufrechtzuerhalten. Das Fachgebiet bietet strenge Werkzeuge zur Analyse von Stabilität, Leistung und Robustheit – Konzepte, die in Reinforcement Learning, Hyperparameter-Tuning und adaptive Systeme übergegangen sind.
 ---

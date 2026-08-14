@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भाषा और अंग्रेजी
 आज विश्व में लगभग 7,000 भाषाएँ बोली जाती हैं। अंग्रेजी दूसरी भाषा के रूप में सबसे अधिक बोली जाने वाली भाषा है और अंतरराष्ट्रीय व्यापार, विज्ञान, विमानन और इंटरनेट के लिए डिफ़ॉल्ट भाषा के रूप में कार्य करती है। चाहे कोड दस्तावेज़ लिखना हो, शोध पत्र पढ़ना हो, या सीमाओं के पार संचार करना हो, अंग्रेजी पर एक ठोस पकड़ - व्याकरण, शब्दावली और बयानबाजी - सबसे व्यावहारिक कौशल में से एक है जिसे कोई भी विकसित कर सकता है।
 यह फ़ाइल आवश्यक चीज़ों को कवर करती है: व्याकरण, विराम चिह्न, सामान्य गलतियाँ, लेखन तकनीक और स्पष्ट संचार।

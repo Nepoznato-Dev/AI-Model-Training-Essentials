@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 2026 et événements futurs
 2026 est une année où convergent de nombreux projets à long terme. C'est le 250e anniversaire de la Déclaration d'indépendance des États-Unis, un point de contrôle à mi-parcours pour les objectifs de développement durable des Nations Unies (2020-2030) et une année charnière pour les feuilles de route des entreprises dans les domaines de l'IA, de l'exploration spatiale, des véhicules électriques et des énergies renouvelables. Que des prédictions spécifiques se réalisent ou non, les tendances qui façonneront 2026 donnent une idée utile de la direction que prendront les choses.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 앙상블 방법
 앙상블 방법은 여러 기계 학습 모델을 결합하여 단일 모델만으로 달성할 수 있는 것보다 더 나은 예측을 생성합니다. 직관은 간단합니다. 각각 어느 정도 정확하지만 서로 다른 오류를 내는 여러 모델이 있는 경우 해당 예측을 결합하면 개별 실수가 취소되고 보다 강력한 결과가 생성됩니다. 앙상블은 가장 경쟁력 있는 기계 학습 솔루션의 기반이 되며 생산 시스템에서 가장 신뢰할 수 있는 기술 중 하나로 남아 있습니다.
 ---

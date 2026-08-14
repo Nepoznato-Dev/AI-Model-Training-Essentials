@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # गेम थ्योरी और रणनीतिक सोच
 गेम थ्योरी रणनीतिक अंतःक्रियाओं का गणितीय अध्ययन है - ऐसी स्थितियाँ जहाँ आपका परिणाम न केवल इस बात पर निर्भर करता है कि आप क्या करते हैं, बल्कि इस पर भी निर्भर करता है कि दूसरे क्या करते हैं। यह हर जगह लागू होता है: व्यावसायिक प्रतिस्पर्धा, अंतर्राष्ट्रीय संबंध, नीलामी, बातचीत, विकासवादी जीव विज्ञान, और यातायात के माध्यम से मार्ग चुनने जैसे रोजमर्रा के फैसले। मुख्य अंतर्दृष्टि यह है कि रणनीतिक स्थितियों में तर्कसंगत अभिनेता केवल अपनी रणनीति का अनुकूलन नहीं करते हैं - वे अनुमान लगाते हैं कि दूसरे क्या करेंगे, और अन्य भी ऐसा ही कर रहे हैं।
 ---

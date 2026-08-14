@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Astronomi dan Kosmologi
 Astronomi adalah ilmu yang mempelajari benda-benda langit — bintang, planet, galaksi, dan segala sesuatu di luar atmosfer bumi. Kosmologi adalah studi tentang alam semesta secara keseluruhan: asal usulnya, strukturnya, evolusinya, dan nasib akhirnya. Bersama-sama, mereka menjawab beberapa pertanyaan paling mendasar yang pernah ditanyakan manusia: Bagaimana asal usul alam semesta? Seberapa besarnya? Apakah kita sendirian? Apa yang akan terjadi pada akhirnya?
 ---

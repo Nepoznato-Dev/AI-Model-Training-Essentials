@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # कोड गुणवत्ता संबंधी समस्याएं
 यह दस्तावेज़ खराब चर नाम, खराब दस्तावेज़ीकरण, स्पेगेटी कोड, सर्कुलर निर्भरता और अन्य रखरखाव संबंधी मुद्दों सहित सामान्य कोड गुणवत्ता समस्याओं को समेकित करता है।
 ---

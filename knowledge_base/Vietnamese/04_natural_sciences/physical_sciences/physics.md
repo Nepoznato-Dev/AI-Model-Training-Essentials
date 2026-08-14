@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Vật lý
 Vật lý đặt ra câu hỏi cơ bản nhất trong khoa học: vật chất và năng lượng hoạt động như thế nào? Mọi thứ khác - hóa học, sinh học, kỹ thuật - đều dựa trên câu trả lời. Vật lý trải dài từ quy mô hạ nguyên tử (cơ học lượng tử) đến quy mô vũ trụ (thuyết tương đối rộng) và các nguyên tắc của nó làm nền tảng cho tất cả các ngành khoa học tự nhiên khác.
 ---

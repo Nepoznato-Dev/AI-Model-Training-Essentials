@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tedarik Zinciri ve Operasyon Yönetimi
 Tedarik zinciri yönetimi, hammaddeden müşterinin elindeki bitmiş ürüne kadar kaynak bulma, satın alma, dönüştürme ve lojistikle ilgili tüm faaliyetlerin koordinasyonudur. Operasyon yönetimi, üretim sistemlerinin günlük işleyişidir. Birlikte bir şirketin doğru ürünü, doğru zamanda, doğru maliyetle, doğru kalitede teslim edip edemeyeceğini belirlerler. Pandemi, çip kıtlığı ve kanal tıkanıklıkları, tedarik zincirlerinin ne kadar kırılgan ve küresel olarak birbirine bağlı olduğunu gösterdi.
 ---

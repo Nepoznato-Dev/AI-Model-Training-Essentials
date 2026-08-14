@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Marketing e strategia digitale
 Il marketing è il modo in cui le aziende creano, comunicano e forniscono valore ai clienti. Comprende l’intero sistema di comprensione delle esigenze dei clienti, posizionamento di un prodotto per soddisfare tali esigenze e costruzione di relazioni che convertono gli acquirenti in sostenitori. La rivoluzione digitale ha trasformato gli strumenti, i canali e la velocità del marketing, pur mantenendo i fondamentali invariati.
 ---

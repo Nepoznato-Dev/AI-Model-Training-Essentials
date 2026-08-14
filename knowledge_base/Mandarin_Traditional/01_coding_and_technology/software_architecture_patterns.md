@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 軟體架構模式
 架構是關於系統如何組織的一組結構決策——它有哪些元件、它們如何溝通以及職責所在。良好的架構使系統易於理解、修改和擴展。糟糕的架構會讓每一次改變都變得困難。該文件涵蓋了主要模式、何時使用每種模式以及所涉及的權衡。
 ---

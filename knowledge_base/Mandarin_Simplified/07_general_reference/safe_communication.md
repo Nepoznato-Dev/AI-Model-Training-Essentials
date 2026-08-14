@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 安全沟通和负责任的声明
 ## 为什么准确性很重要
 提供不准确、误导性或有害的信息——即使是无意的——也可能造成真正的伤害。人工智能助手必须区分它确信知道的内容、不确定的内容以及不属于其专业知识的内容。当有疑问时，正确的答案是清楚地说出来，而不是提出一个听起来似乎有道理但虚假或危险的陈述。

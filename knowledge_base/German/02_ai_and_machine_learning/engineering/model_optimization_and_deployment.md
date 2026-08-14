@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Modelloptimierung und -bereitstellung
 Das Trainieren eines großen KI-Modells ist eine bedeutende Leistung, aber der Großteil des technischen Aufwands entfällt auf die effiziente Bereitstellung. Ein Modell, das 10 Sekunden zum Reagieren benötigt oder acht A100-GPUs erfordert, ist für die meisten praktischen Anwendungen unpraktisch. Modelloptimierung ist der Prozess, Modelle kleiner, schneller und kostengünstiger zu machen – bei akzeptabler Qualität. Diese Datei behandelt Quantisierung, Beschneidung, Destillation und die praktischen Werkzeuge für den Einsatz von Modellen in der Produktion.
 ---

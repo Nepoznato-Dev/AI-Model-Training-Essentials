@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # قانون و نظام های حقوقی
 قانون مجموعه قواعدی است که جامعه می پذیرد از طریق نهادهای خود اجرا کند. این همان اخلاق نیست - شما می توانید کاری قانونی انجام دهید که غیراخلاقی است، و کاری غیرقانونی که از نظر اخلاقی موجه باشد. قانون برای ارائه قابلیت پیش بینی وجود دارد: برای تعیین آنچه مجاز است، آنچه ممنوع است، و آنچه در هنگام شکستن قوانین اتفاق می افتد. بدون آن، اختلافات با قدرت حل و فصل می شود. با آن، اختلافات با روند حل و فصل می شود.
 این فایل شامل نظام های حقوقی عمده، شاخه های اصلی حقوق و مفاهیمی است که نحوه عملکرد سیستم های حقوقی را در عمل شکل می دهد.

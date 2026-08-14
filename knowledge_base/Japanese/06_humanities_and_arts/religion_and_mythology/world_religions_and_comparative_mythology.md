@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 世界の宗教と比較神話
 世界の宗教は、何千年にもわたって人類の文明を形作ってきた信仰、実践、共同体の主要な体系です。比較神話学では、創造、英雄、神、存在の意味についてさまざまな文化が語る物語と、何千マイル、何千年も離れた伝統に繰り返し現れる印象的なパターンを研究します。両方を理解することは、人々が自分たちが信じていることをなぜ信じるのか、文化がどのように異なるのか、何が人間の経験を統一しているのかを理解するために不可欠です。
 ---

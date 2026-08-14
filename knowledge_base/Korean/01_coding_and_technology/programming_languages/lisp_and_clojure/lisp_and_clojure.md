@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 리스프와 클로저
 Lisp는 1958년 John McCarthy가 만든 Fortran 다음으로 여전히 사용되는 두 번째로 오래된 고급 프로그래밍 언어입니다. Lisp는 가비지 수집, 재귀, 트리 데이터 구조, 동적 타이핑, 데이터로서의 프로그램 아이디어(동질성) 등 현재 당연하게 여겨지는 많은 개념을 개척했습니다. Lisp의 독특한 특징은 구문입니다. 코드는 중첩된 괄호(S-표현식)로 작성되어 언어를 쉽게 구문 분석할 수 있게 만들고 **매크로**를 통해 강력한 메타프로그래밍을 가능하게 합니다.
 Clojure는 Rich Hickey가 2007년에 디자인한 최신 Lisp 방언입니다. Clojure는 JVM(JavaScript용 ClojureScript이기도 함)에서 실행되고 기능적 프로그래밍, 불변성 및 동시성을 수용하며 원활한 Java 상호 운용성을 제공합니다. Clojure는 웹 개발, 데이터 처리, 금융 시스템에 사용됩니다.

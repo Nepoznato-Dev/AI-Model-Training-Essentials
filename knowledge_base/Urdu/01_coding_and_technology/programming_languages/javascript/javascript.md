@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جاوا اسکرپٹ
 JavaScript ایک متحرک، تشریح شدہ پروگرامنگ زبان ہے جسے Brendan Eich نے 1995 میں صرف 10 دنوں میں تخلیق کیا تھا۔ اصل میں ویب صفحات میں انٹرایکٹیویٹی کو شامل کرنے کے لیے ڈیزائن کیا گیا تھا، یہ دنیا میں سب سے زیادہ استعمال ہونے والی پروگرامنگ زبان بن گئی ہے۔ JavaScript ہر ویب براؤزر میں، سرورز پر Node.js کے ذریعے، ڈیسک ٹاپ ایپس (الیکٹران)، موبائل ایپس (رییکٹ مقامی)، اور یہاں تک کہ ایمبیڈڈ سسٹمز میں چلتا ہے۔
 زبان اس لحاظ سے منفرد ہے کہ یہ کلائنٹ سائڈ ویب ڈویلپمنٹ کے لیے بنیادی طور پر واحد آپشن ہے — ہر براؤزر اسے مقامی طور پر سپورٹ کرتا ہے۔ یہ اجارہ داری، فل اسٹیک جاوا اسکرپٹ (Node.js، Deno، Bun) کے عروج کے ساتھ مل کر اسے ناگزیر بناتی ہے۔

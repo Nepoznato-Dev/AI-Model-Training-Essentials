@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ٹائپ اسکرپٹ
 TypeScript جاوا اسکرپٹ کا ایک جامد ٹائپ شدہ سپر سیٹ ہے جسے Microsoft (Anders Hejlsberg کی قیادت میں) نے تیار کیا تھا اور اسے پہلی بار 2012 میں ریلیز کیا گیا تھا۔ یہ جاوا اسکرپٹ میں اختیاری قسم کی تشریحات، انٹرفیس، جنرکس، اور جدید قسم کے نظام کی خصوصیات کو شامل کرتا ہے — پھر سادہ جاوا اسکرپٹ کو مرتب کرتا ہے جہاں جاوا اسکرپٹ چلتا ہے۔ TypeScript ایک الگ زبان یا رن ٹائم نہیں ہے۔ یہ جاوا اسکرپٹ ہے جس میں ٹائپ چیکر ہے۔
 TypeScript بڑے پیمانے پر JavaScript کی ترقی کا معیار بن گیا ہے۔ ری ایکٹ، انگولر، وی ایس کوڈ، ڈینو، اور سب سے بڑے اوپن سورس جاوا اسکرپٹ پروجیکٹس ٹائپ اسکرپٹ میں لکھے گئے ہیں۔ اگر آپ کسی اہم سائز کا نیا JavaScript پروجیکٹ شروع کر رہے ہیں تو TypeScript تجویز کردہ ڈیفالٹ ہے۔

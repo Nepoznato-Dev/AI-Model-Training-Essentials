@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp et Clojure
 Lisp est le deuxième plus ancien langage de programmation de haut niveau encore utilisé (après Fortran), créé par John McCarthy en 1958. Il a été le pionnier de nombreux concepts désormais considérés comme acquis : le garbage collection, la récursivité, les structures de données arborescentes, le typage dynamique et l'idée de programmes en tant que données (homoïconicité). La particularité de Lisp est sa syntaxe : le code est écrit sous forme de parenthèses imbriquées (expressions S), ce qui rend le langage trivialement analysable et permet une métaprogrammation puissante via des **macros**.
 Clojure est un dialecte Lisp moderne conçu par Rich Hickey en 2007. Il fonctionne sur JVM (également ClojureScript pour JavaScript), englobe la programmation fonctionnelle, l'immuabilité et la concurrence, et offre une interopérabilité Java transparente. Clojure est utilisé dans le développement Web, le traitement des données et les systèmes financiers.

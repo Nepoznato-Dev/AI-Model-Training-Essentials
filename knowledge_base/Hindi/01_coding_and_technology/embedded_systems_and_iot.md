@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # एंबेडेड सिस्टम और IoT
 एंबेडेड सिस्टम अन्य उपकरणों के अंदर छिपे हुए कंप्यूटर हैं - आपकी कार की इंजन नियंत्रण इकाई, आपकी वॉशिंग मशीन का नियंत्रक, स्मार्ट थर्मोस्टेट में माइक्रोकंट्रोलर। सामान्य प्रयोजन के कंप्यूटरों के विपरीत, वे विशिष्ट कार्यों के लिए डिज़ाइन किए जाते हैं, अक्सर बिजली, मेमोरी और प्रसंस्करण गति पर सख्त बाधाओं के साथ। इंटरनेट ऑफ थिंग्स (IoT) एम्बेडेड सिस्टम को नेटवर्क से जोड़कर, दूरस्थ निगरानी, ​​​​नियंत्रण और डेटा संग्रह को सक्षम करके विस्तारित करता है। साथ में, वे अरबों कंप्यूटिंग उपकरणों का प्रतिनिधित्व करते हैं जो भौतिक दुनिया के साथ बातचीत करते हैं।
 ---

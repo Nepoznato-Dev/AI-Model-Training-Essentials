@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเรียนรู้แบบสหพันธ์และความเป็นส่วนตัว
 การเรียนรู้แบบสมาพันธ์เป็นเทคนิคในการฝึกโมเดลการเรียนรู้ของเครื่องบนอุปกรณ์หรือองค์กรต่างๆ โดยไม่ต้องแชร์ข้อมูลดิบ แทนที่จะส่งข้อมูลไปยังเซิร์ฟเวอร์กลาง แต่ละอุปกรณ์จะฝึกโมเดลในเครื่องและแชร์เฉพาะการอัปเดตโมเดลเท่านั้น (การไล่ระดับสีหรือน้ำหนัก) เซิร์ฟเวอร์กลางรวมการอัปเดตเหล่านี้เพื่อสร้างแบบจำลองสากล ได้รับการออกแบบโดย Google เพื่อฝึกโมเดลภาษาแป้นพิมพ์บนโทรศัพท์ Android และตั้งแต่นั้นมาก็กลายเป็นเทคนิคสำคัญสำหรับ AI ในการรักษาความเป็นส่วนตัว
 ---

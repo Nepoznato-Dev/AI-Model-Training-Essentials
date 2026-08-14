@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Котлин
 Kotlin — это статически типизированный компилируемый язык программирования, разработанный JetBrains и впервые выпущенный в 2011 году (версия 1.0 — в 2016 году). Он работает на виртуальной машине Java (JVM) и полностью совместим с Java — это означает, что вы можете использовать любую библиотеку Java из Kotlin и вызывать код Kotlin из Java без каких-либо оболочек. В 2017 году Google объявил Kotlin предпочтительным языком разработки для Android, и с тех пор он стал доминирующим языком Android.
 Kotlin был разработан для устранения болевых точек Java: многословия, исключений нулевых указателей и отсутствия современных функций. В результате получается язык, который выглядит как модернизированный Java — лаконичный, безопасный и выразительный, сохраняя при этом полную совместимость с огромной экосистемой Java.

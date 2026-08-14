@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การวางแผนสถานการณ์
 ## ภาพรวม
 ไม่มีใครสามารถทำนายอนาคตได้ แต่คุณสามารถเตรียมตัวให้พร้อมสำหรับอนาคตที่เป็นไปได้หลายประการ การวางแผนสถานการณ์ซึ่งถือกำเนิดขึ้นในคลังสมองในช่วงสงครามเย็นและได้รับการปรับปรุงให้สมบูรณ์แบบโดยเชลล์ในช่วงวิกฤตการณ์น้ำมันในทศวรรษปี 1970 เป็นวิธีคิดอย่างเป็นระบบเกี่ยวกับความไม่แน่นอน แทนที่จะเดิมพันกับการคาดการณ์เดียว คุณสร้างเรื่องราวที่สอดคล้องกันเกี่ยวกับสิ่งที่จะเกิดขึ้น จากนั้นทดสอบความเครียดในการตัดสินใจของคุณกับสิ่งเหล่านั้นทั้งหมด ต่อไปนี้คือวิธีการทำงานของวิธีการดังกล่าว รวมถึงสถานการณ์ต่างๆ ในโดเมนหลักๆ

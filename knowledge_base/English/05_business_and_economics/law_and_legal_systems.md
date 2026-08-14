@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Law and Legal Systems
 
 Law is the set of rules that a society agrees to enforce through its institutions. It is not the same as morality — you can do something legal that is immoral, and something illegal that is morally justified. Law exists to provide predictability: to establish what is allowed, what is forbidden, and what happens when the rules are broken. Without it, disputes are settled by power. With it, disputes are settled by process.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কোড হিসাবে টেরাফর্ম এবং অবকাঠামো
 Terraform হল কোড (IaC) টুল হিসাবে সর্বাধিক ব্যবহৃত পরিকাঠামো — এটি আপনাকে ঘোষণামূলক কনফিগারেশন ফাইলগুলিতে ক্লাউড অবকাঠামো (সার্ভার, ডাটাবেস, নেটওয়ার্ক, অনুমতি) সংজ্ঞায়িত করতে দেয় যা সংস্করণ, পর্যালোচনা, পরীক্ষিত এবং স্বয়ংক্রিয় হতে পারে। একটি ক্লাউড কনসোলের মাধ্যমে ক্লিক করার পরিবর্তে, আপনি কোড লিখুন যা আপনার অবকাঠামোর পছন্দসই অবস্থা বর্ণনা করে এবং Terraform কী পরিবর্তন করতে হবে তা নির্ধারণ করে।
 ---

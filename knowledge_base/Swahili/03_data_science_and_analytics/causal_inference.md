@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Maoni ya Sababu
 Uelekezaji wa sababu ni sayansi ya kuamua ikiwa jambo moja husababisha lingine - sio tu ikiwa zinahusiana. Uunganisho unakuambia kuwa vijiti viwili vinasogea pamoja. Sababu inakuambia kuwa kubadilisha moja kutabadilisha nyingine. Tofauti hii ni muhimu sana katika dawa (je, dawa hii inafanya kazi?), sera (je, hatua hii inapunguza umaskini?), biashara (je, kampeni hii ya tangazo huongeza mauzo?), na sayansi (je, utaratibu huu unafafanua jambo hili?).
 ---

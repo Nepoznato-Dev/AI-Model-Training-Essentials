@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI w życiu codziennym
 Sztuczna inteligencja nie jest już koncepcją futurystyczną – jest osadzona w życiu codziennym. Od chwili, gdy się obudzisz i sprawdzisz telefon (algorytmy rekomendacji decydują, jakie powiadomienia zobaczysz) do momentu zaśnięcia (Twój inteligentny głośnik przetwarza Twoje ostatnie polecenie), systemy AI podejmują decyzje w Twoim imieniu, dla Ciebie, a czasem i o Tobie. Zrozumienie, gdzie pojawia się sztuczna inteligencja, jak działa na podstawowym poziomie i jakie są jej konsekwencje, nie jest już opcjonalne – jest wymogiem świadomego obywatelstwa XXI wieku.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Khoa học và Tự nhiên
 Khoa học là cách chúng ta tìm ra những gì vũ trụ thực sự đang làm - không phải những gì chúng ta cho rằng nó đang làm, không phải những gì các văn bản cổ nói về nó, mà là những quan sát và thử nghiệm cẩn thận tiết lộ. Phương pháp khoa học về nguyên tắc rất đơn giản: quan sát điều gì đó, hình thành giả thuyết, kiểm tra nó và điều chỉnh lại sự hiểu biết của bạn dựa trên kết quả. Điều làm cho khoa học có sức mạnh là nó có khả năng tự điều chỉnh. Mọi khiếu nại đều là tạm thời - chỉ được chấp nhận cho đến khi có bằng chứng tốt hơn.
 Tập tin này bao gồm các nhánh chính của khoa học tự nhiên: vật lý, hóa học, sinh học, trái đất và khoa học vũ trụ. Hãy coi nó như một bản đồ của thế giới vật chất.

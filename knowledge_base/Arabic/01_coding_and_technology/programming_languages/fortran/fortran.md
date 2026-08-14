@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فورتران
 فورتران (ترجمة الصيغ) هي أقدم لغة برمجة عالية المستوى لا تزال تستخدم على نطاق واسع، وقد طورتها شركة IBM لأول مرة في عام 1957 للحسابات العلمية والهندسية. على الرغم من عمرها، تعتبر لغة فورتران الحديثة (Fortran 2008/2018/2023) لغة قادرة وعالية الأداء تستخدم على نطاق واسع في التنبؤ العددي بالطقس، وديناميكيات الموائع الحسابية، والمحاكاة الفيزيائية، والنمذجة المالية، والحوسبة عالية الأداء (HPC). العديد من أسرع أجهزة الكمبيوتر العملاقة في العالم تستخدم كود فورتران.
 تطورت اللغة بشكل ملحوظ منذ أيامها الأولى. تحتوي لغة Fortran الحديثة على وحدات نمطية وأنواع مشتقة وإجراءات عامة ومصفوفات (برمجة متوازية) وإمكانية التشغيل البيني مع لغة C. وتظل اللغة المفضلة للعديد من تطبيقات الحوسبة العلمية حيث يكون الأداء أمرًا بالغ الأهمية.

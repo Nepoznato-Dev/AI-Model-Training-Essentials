@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # चिकित्सा एवं स्वास्थ्य सेवा
 चिकित्सा रोग का निदान, उपचार और रोकथाम करने का विज्ञान और अभ्यास है। यह सबसे पुराने मानव प्रयासों में से एक है - हिप्पोक्रेटिक शपथ प्राचीन ग्रीस में चली आ रही है - और सबसे तेजी से बदलने वाले प्रयासों में से एक है। केवल पिछली शताब्दी में, हम एंटीबायोटिक दवाओं के अभाव से लेकर ऐसी जीन थेरेपी तक पहुंचे जो मरीज के डीएनए को फिर से लिख सकती है।
 यह फ़ाइल कवर करती है कि दवा कैसे काम करती है: प्रमुख विशेषताएँ, बीमारियों का निदान और उपचार कैसे किया जाता है, स्वास्थ्य देखभाल प्रणालियाँ कैसे व्यवस्थित की जाती हैं, और मानव जीवन दांव पर लगने पर उठने वाले नैतिक प्रश्न।

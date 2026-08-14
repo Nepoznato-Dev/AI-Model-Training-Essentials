@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Algèbre abstraite
 L'algèbre abstraite étudie les structures algébriques – des ensembles équipés d'opérations qui suivent des règles spécifiques. Au lieu de travailler avec des nombres, l’algèbre abstraite fonctionne avec tous les objets qui satisfont aux axiomes. Cette généralité est puissante : un théorème prouvé pour les « groupes » s’applique simultanément aux entiers, aux symétries, aux matrices, aux permutations et aux états quantiques. L'algèbre abstraite sous-tend la cryptographie, les codes correcteurs d'erreurs, l'informatique quantique et l'analyse de symétrie utilisée dans toute la physique.
 ---

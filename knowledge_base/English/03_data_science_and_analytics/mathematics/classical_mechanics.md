@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Classical Mechanics
 
 Classical mechanics describes the motion of objects under the influence of forces. From falling apples to orbiting planets, from vibrating strings to colliding particles, its principles govern the macroscopic world. Beyond its physical applications, classical mechanics gave birth to the calculus of variations, symplectic geometry, and the Hamiltonian framework that underpins quantum mechanics and modern optimization.

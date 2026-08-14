@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা ভিজ্যুয়ালাইজেশন
 একটি ভাল-পরিকল্পিত চার্ট এমন নিদর্শন প্রকাশ করতে পারে যা সংখ্যার সারণী লুকিয়ে রাখে। একটি খারাপভাবে ডিজাইন করা একটি বিভ্রান্ত করতে পারে, বিভ্রান্ত করতে পারে বা বিরক্ত করতে পারে। ডেটা ভিজ্যুয়ালাইজেশন হল ডেটাকে ভিজ্যুয়াল গল্পে পরিণত করার নৈপুণ্য যা সিদ্ধান্ত জানায়। এই ফাইলটি চার্ট নির্বাচন, ডিজাইনের নীতি, সাধারণ ভুল এবং সরঞ্জামগুলিকে কভার করে যা এটিকে সম্ভব করে তোলে।
 ---

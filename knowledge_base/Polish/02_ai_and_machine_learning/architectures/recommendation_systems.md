@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Systemy rekomendacji
 Systemy rekomendacji przewidują, co użytkownik będzie chciał w następnej kolejności zobaczyć, kupić lub z czym wejść w interakcję. Zasilają kanały treści w mediach społecznościowych, sugestie produktów w witrynach e-commerce, wybór filmów na platformach streamingowych i wyniki wyszukiwania. Mimo że są niewidoczne dla większości użytkowników, należą do systemów sztucznej inteligencji o największym wpływie komercyjnym na świecie — Netflix szacuje, że jego silnik rekomendacji pozwala zaoszczędzić ponad 1 miliard dolarów rocznie, zmniejszając odpływ abonentów.
 ---

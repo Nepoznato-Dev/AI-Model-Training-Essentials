@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Umiejętność korzystania z mediów i ocena informacji
 Żyjemy w świecie nasyconym informacją. Każdego dnia przeciętny człowiek jest narażony na tysiące komunikatów medialnych – artykuły prasowe, posty w mediach społecznościowych, reklamy, przemówienia polityczne, treści wpływowe, teksty generowane przez sztuczną inteligencję. Większość jest w porządku. Część z nich wprowadza w błąd. Niewielka ilość jest celowo fałszywa. Umiejętność korzystania z mediów to umiejętność poruszania się po tym krajobrazie – nie poprzez ufanie wszystkiemu, nie ufanie niczemu, ale poprzez rozwijanie wyważonego poczucia tego, co jest wiarygodne, a co nie.
 ---

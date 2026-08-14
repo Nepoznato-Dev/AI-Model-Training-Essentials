@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # एनएलपी बुनियादी बातें
 प्राकृतिक भाषा प्रसंस्करण (एनएलपी) मानव भाषा को समझने, उत्पन्न करने और उसके साथ काम करने के लिए शिक्षण मशीनों का क्षेत्र है। यह खोज इंजन, चैटबॉट, अनुवाद प्रणाली, भावना विश्लेषण और बड़े भाषा मॉडल (एलएलएम) को शक्ति प्रदान करता है, जिन्होंने 2020 से एआई को बदल दिया है। यह फ़ाइल शास्त्रीय तकनीकों से लेकर आधुनिक ट्रांसफार्मर-आधारित आर्किटेक्चर तक के विकास को कवर करती है।
 ---

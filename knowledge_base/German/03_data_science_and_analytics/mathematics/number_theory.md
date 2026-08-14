@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Zahlentheorie
 Die Zahlentheorie ist das Studium der ganzen Zahlen – ganze Zahlen und ihrer Eigenschaften. Gauß nannte es „die Königin der Mathematik“. Trotz der Untersuchung der einfachsten Objekte (1, 2, 3, ...) wirft die Zahlentheorie einige der tiefgreifendsten und schwierigsten Probleme der gesamten Mathematik auf. Heute ist es die Grundlage für moderne Kryptographie, Hashing-Algorithmen, Fehlerkorrekturcodes und die Generierung von Zufallszahlen.
 ---

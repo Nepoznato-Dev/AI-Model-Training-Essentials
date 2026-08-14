@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # TypeScript — 生态系统和工具指南
 本指南涵盖了 TypeScript 生态系统中的基本工具、框架和基础设施。 TypeScript 与 JavaScript 共享其大部分生态系统，但有自己的专用工具。
 ---

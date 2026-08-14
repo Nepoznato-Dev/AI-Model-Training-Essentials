@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # रसायन विज्ञान
 यदि भौतिकी खेल का नियम है, तो रसायन विज्ञान वह है जो तब होता है जब टुकड़े परस्पर क्रिया करते हैं। रसायन विज्ञान अध्ययन करता है कि परमाणु कैसे जुड़ते हैं, टूटते हैं और पुनर्व्यवस्थित होते हैं - जिसका अर्थ है कि सभी सामग्रियां कैसे व्यवहार करती हैं। यह मौलिक भौतिकी और जीव विज्ञान, भूविज्ञान और इंजीनियरिंग की जटिलता के बीच की खाई को पाटता है।
 ---

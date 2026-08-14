@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # آموزش فدرال و حریم خصوصی
 یادگیری فدرال تکنیکی برای آموزش مدل های یادگیری ماشینی در چندین دستگاه یا سازمان بدون به اشتراک گذاری داده های خام است. به جای ارسال داده ها به سرور مرکزی، هر دستگاه یک مدل محلی را آموزش می دهد و فقط به روز رسانی های مدل (شیب یا وزن) را به اشتراک می گذارد. سرور مرکزی این به روز رسانی ها را جمع آوری می کند تا یک مدل جهانی تولید کند. این توسط گوگل برای آموزش مدل‌های زبان صفحه‌کلید در گوشی‌های اندرویدی طراحی شده است – و از آن زمان به یک تکنیک کلیدی برای حفظ حریم‌محصول هوش مصنوعی تبدیل شده است.
 ---

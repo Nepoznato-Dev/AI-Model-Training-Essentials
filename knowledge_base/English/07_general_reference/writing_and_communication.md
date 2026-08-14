@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Writing and Communication Fundamentals
 
 Writing and communication are the skills of conveying ideas effectively — whether through emails, reports, documentation, presentations, or conversations. Most knowledge work is fundamentally communication work: professionals need to explain their thinking, persuade others, document decisions, write specifications, present findings, and collaborate across teams. The gap between what is meant and what is understood is where most problems originate, and better communication narrows that gap.

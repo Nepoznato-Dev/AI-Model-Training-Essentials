@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ekonomi dan Perdagangan Global
 Perekonomian global adalah sistem terbesar dan paling kompleks yang pernah dibangun manusia. Pada tahun 2025, PDB global melebihi $110 triliun. Lebih dari 8 miliar orang memproduksi, memperdagangkan, dan mengonsumsi barang dan jasa lintas negara setiap hari. Memahami cara kerja sistem ini – siapa yang memperdagangkan apa, mengapa suatu negara kaya dan negara lain miskin, bagaimana uang berpindah melintasi batas negara, dan apa yang terjadi ketika sistem tersebut rusak – sangat penting untuk menavigasi dunia modern.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 地球科学
 地球科学研究我们所居住的星球——它的结构、过程、历史以及使它适合居住的系统。它涵盖地质学（固体地球）、海洋学（海洋）、气象学（大气和天气）和气候学（长期气候模式）。将这些领域统一起来的是对地球是一个动态系统的理解：它的内部不断移动，它的表面正在重塑，它的大气层和海洋以复杂的方式相互作用。
 ---

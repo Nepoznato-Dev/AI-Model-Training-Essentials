@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Công nghệ mới nổi
 ## Tổng quan
 Một số công nghệ nhất định tạo ra các loại khả năng hoàn toàn mới thay vì cải thiện từng bước những khả năng hiện có. Điện toán lượng tử nhằm mục đích giải quyết các vấn đề mà máy móc cổ điển có thể phải mất hàng thiên niên kỷ. Năng lượng nhiệt hạch mang lại khả năng tạo ra năng lượng sạch gần như vô hạn. Giao diện não-máy tính là cầu nối giữa trí óc và máy móc. Sinh học tổng hợp cho phép viết lại mã sinh học. Các phần sau đây mô tả vị trí của mỗi ranh giới này ngày nay và xu hướng hiện tại cho thấy nó đang hướng tới đâu.

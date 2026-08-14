@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Stochastic na Proseso
 Ang **stochastic process** ay isang koleksyon ng mga random na variable na na-index ng oras (o espasyo). Habang pinag-aaralan ng probability theory ang mga indibidwal na random na kaganapan, ang mga proseso ng stochastic ay nag-aaral kung paano nagbabago ang randomness sa paglipas ng panahon. Nagmomodelo sila ng mga presyo ng stock, haba ng pila, pagkalat ng sakit, pagbuo ng wika, at dynamics ng pagsasanay ng mga modelo ng machine learning.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 持続可能な未来
 ＃＃ 概要
 問題はもはや、世界が持続可能な経済に移行する必要があるかどうか*ではなく、*どれだけ早く*、そして*誰が主導するか*です。再生可能エネルギーは現在、ほとんどの市場で最も安価な電源です。循環経済の原則は、ニッチな概念から企業戦略へと移行しつつあります。都市は輸送から廃棄物に至るまであらゆるものを再考しています。そして、ネットゼロへの競争により、エネルギーから金融に至るまで業界が再構築されています。 4 つの主要な側面における持続可能な未来がどのようなものかを次に示します。

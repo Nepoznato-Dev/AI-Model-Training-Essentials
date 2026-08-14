@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Graph Mga Neural Network
 Ang Graph Neural Networks (GNNs) ay mga neural network na idinisenyo upang gumana sa graph-structured data — mga network ng mga node na konektado sa pamamagitan ng mga gilid. Habang gumagana ang mga tradisyunal na neural network sa mga grid (mga larawan) o mga pagkakasunud-sunod (teksto), pinangangasiwaan ng mga GNN ang mga arbitraryong istruktura ng relasyon: mga social network, mga molecular graph, mga graph ng kaalaman, mga network ng kalsada, mga graph ng rekomendasyon, at higit pa. Naging mahalaga ang mga ito para sa pagtuklas ng droga, pagtuklas ng panloloko, mga sistema ng rekomendasyon, at anumang domain kung saan mahalaga ang mga ugnayan sa pagitan ng mga entity.
 ---

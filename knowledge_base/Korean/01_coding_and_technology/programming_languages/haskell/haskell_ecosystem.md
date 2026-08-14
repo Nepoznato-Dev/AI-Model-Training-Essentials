@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Haskell — 생태계 및 도구 가이드
 이 가이드는 Haskell 생태계의 필수 도구, 프레임워크 및 인프라를 다룹니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP (المعالج المسبق للنص التشعبي) هي لغة برمجة نصية من جانب الخادم أنشأها راسموس ليردورف في عام 1994 وتم إصدارها لأول مرة في عام 1995. تم تصميم PHP في الأصل لإنشاء صفحات ويب ديناميكية، وقد تطورت إلى لغة كاملة الميزات للأغراض العامة. إنه يشغل ما يقرب من 75% من جميع مواقع الويب ذات لغة الخادم المعروفة، بما في ذلك WordPress وFacebook (في الأصل) وWikipedia وSlack وملايين المواقع الأخرى.
 تعد PHP الحديثة (8.x) لغة مختلفة تمامًا عن PHP في أوائل العقد الأول من القرن الحادي والعشرين. أصبح لديه الآن خصائص مكتوبة، وتعبيرات مطابقة، وتعدادات، وألياف، وفئات للقراءة فقط، ونظام كتابة قوي. على الرغم من سمعتها بين المطورين (غالبًا ما يتم انتقادها بسبب التناقضات)، إلا أن لغة PHP عملية ومنتشرة على نطاق واسع وتستمر في التحسن.

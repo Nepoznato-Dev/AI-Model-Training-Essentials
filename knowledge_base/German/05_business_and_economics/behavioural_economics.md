@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Verhaltensökonomie und Entscheidungswissenschaft
 Die Verhaltensökonomie untersucht, wie Menschen tatsächlich Entscheidungen treffen – und nicht, wie rationale Akteure sie treffen würden. Die traditionelle Wirtschaftslehre geht davon aus, dass Menschen rational und eigennützig sind und Informationen gut verarbeiten können. Jahrzehntelange Forschungen von Kahneman, Tversky, Thaler und anderen haben gezeigt, dass dies völlig ungenau ist. Menschen nutzen mentale Abkürzungen, lassen sich von irrelevanten Kontexten beeinflussen, überbewerten aktuelle Informationen und machen systematisch vorhersehbare Fehler. Das Verständnis dieser Muster ist für die Gestaltung besserer Produkte, Richtlinien, Organisationen und persönlicher Entscheidungen von entscheidender Bedeutung.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — Referência de sintaxe
 Este documento fornece uma referência de sintaxe estruturada e abrangente para C (C11/C17 com notas C23). Ele complementa a referência principal do C, concentrando-se em padrões de sintaxe exaustivos, tabelas de operadores, mecânica de ponteiros e gerenciamento de memória.
 ---

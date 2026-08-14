@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # موسمیاتی ٹیکنالوجی اور سبز اختراع
 موسمیاتی ٹیکنالوجی میں گرین ہاؤس گیسوں کے اخراج کو کم کرنے، موسمیاتی تبدیلیوں کے مطابق ڈھالنے، اور عالمی معیشت کو پائیدار بنیادوں پر منتقل کرنے کے لیے بنائے گئے آلات، نظام اور اختراعات شامل ہیں۔ یہ 21ویں صدی کا سب سے اہم ٹیکنالوجی ڈومین ہے - قابل انتظام 1.5°C درجہ حرارت اور تباہ کن 3°C+ کے درمیان فرق زیادہ تر اس بات پر منحصر ہے کہ ان ٹیکنالوجیز کو پیمانے پر کتنی تیزی سے تعینات کیا جا سکتا ہے۔ چیلنج صرف سائنسی نہیں بلکہ معاشی، سیاسی اور سماجی ہے۔
 ---

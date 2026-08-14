@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Matematika
 Ang matematika ay hindi lamang isang asignaturang pinag-aaralan sa paaralan — pinapatibay nito ang halos lahat ng larangang teknikal. Ginagamit ito ng pisika upang ilarawan ang uniberso. Ginagamit ito ng computer science upang magdisenyo ng mga algorithm. Ginagamit ito ng machine learning para i-optimize ang mga timbang. Ginagamit ito ng pananalapi sa panganib sa presyo. Hindi kailangan ang mastery ng bawat branch, ngunit ang pag-unawa sa landscape — at pag-alam kung saan nalalapat ang bawat branch — ay ginagawang mas madaling maunawaan ang iba pang mga paksa.
 ---

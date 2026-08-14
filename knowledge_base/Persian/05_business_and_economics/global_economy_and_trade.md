@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اقتصاد جهانی و تجارت
 اقتصاد جهانی بزرگترین و پیچیده ترین سیستمی است که بشر تاکنون ساخته است. در سال 2025، تولید ناخالص داخلی جهانی از 110 تریلیون دلار فراتر رفت. بیش از 8 میلیارد نفر روزانه کالاها و خدمات را در سراسر مرزها تولید، تجارت و مصرف می کنند. درک اینکه این سیستم چگونه کار می کند - چه کسی چه چیزی را تجارت می کند، چرا برخی از کشورها ثروتمند و برخی دیگر فقیر هستند، چگونه پول از مرزها عبور می کند، و وقتی سیستم خراب می شود چه اتفاقی می افتد - برای حرکت در دنیای مدرن ضروری است.
 ---

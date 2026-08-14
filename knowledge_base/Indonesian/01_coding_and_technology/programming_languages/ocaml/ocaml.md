@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #OCaml
 OCaml (Objective Caml) adalah bahasa pemrograman fungsional yang dikembangkan di INRIA di Perancis, pertama kali dirilis pada tahun 1996. Ini menggabungkan ekspresi pemrograman fungsional dengan fitur-fitur praktis: sistem tipe yang kuat dengan inferensi tipe (Hindley-Milner), pencocokan pola, tipe data aljabar, dan pemrograman berorientasi objek opsional. OCaml mengkompilasi ke kode asli yang cepat dan juga mendukung bytecode.
 Aplikasi OCaml yang paling terkenal di dunia nyata adalah perusahaan perdagangan **Jane Street**, yang menggunakan OCaml untuk seluruh infrastruktur perdagangannya. Ini juga digunakan dalam pengembangan kompiler (kompiler Rust awalnya ditulis dalam OCaml), verifikasi formal, sistem keuangan, dan pembuktian teorema.

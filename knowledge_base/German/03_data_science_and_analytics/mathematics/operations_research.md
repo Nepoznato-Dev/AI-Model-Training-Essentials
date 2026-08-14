@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Operationsforschung
 Unter Operations Research (OR) versteht man die Anwendung mathematischer Methoden zur Entscheidungsfindung. Das im Zweiten Weltkrieg für die Militärlogistik gegründete Unternehmen optimiert heute Lieferketten, plant Fluggesellschaften, leitet Lieferflotten, verwaltet Bestände und verteilt Ressourcen in allen Branchen. OR bietet das mathematische Werkzeug, um unter Randbedingungen die bestmöglichen Entscheidungen zu treffen.
 ---

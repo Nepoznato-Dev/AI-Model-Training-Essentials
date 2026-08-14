@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang & Elixir
 Ang Erlang ay itinayo ng Ericsson noong 1986 upang paandarin ang mga switch ng telepono — na nagpapaliwanag kung bakit mas mahusay nitong pinangangasiwaan ang concurrency, fault tolerance, at mga distributed system kaysa sa halos anumang bagay. Ang mga proseso ng Erlang ay magaan, nakahiwalay, at nakikipag-usap lamang sa pamamagitan ng pagpasa ng mensahe. Kapag nag-crash ang isang proseso, ire-restart ito ng isang superbisor. Ang pilosopiyang "hayaan itong mag-crash" ay gumagawa ng mga system na tumatakbo nang maraming taon nang walang downtime.
 Ang Elixir ay isang modernong wika na binuo sa ibabaw ng Erlang's VM (BEAM) ni Jose Valim noong 2012. Pinapanatili nito ang lahat ng inaalok ng Erlang — concurrency, fault tolerance, distribution — ngunit nagdadagdag ng friendly syntax, metaprogramming, at mahusay na tooling (Mix package manager, Hex package registry). Ang Elixir ay malawakang ginagamit para sa mga web application (sa pamamagitan ng Phoenix framework), real-time system, at mga naka-embed na device (sa pamamagitan ng Nerves).

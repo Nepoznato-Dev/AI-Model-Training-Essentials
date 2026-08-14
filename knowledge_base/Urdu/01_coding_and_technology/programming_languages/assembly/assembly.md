@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اسمبلی کی زبان
 اسمبلی لینگویج سب سے نچلی سطح کی انسانی پڑھنے کے قابل پروگرامنگ زبان ہے۔ یہ خام بائنری کی بجائے یادداشت کوڈز (جیسے `MOV`، `ADD`،`JMP`) کا استعمال کرتے ہوئے کمپیوٹر کے مشین کوڈ کی ہدایات کی براہ راست نمائندگی فراہم کرتا ہے۔ ہر اسمبلی کی زبان ایک خاص پروسیسر فن تعمیر کے لیے مخصوص ہے (x86, ARM, MIPS, RISC-V) — ایک فن تعمیر کے لیے لکھا گیا کوڈ دوسرے پر نہیں چلے گا۔
 اسمبلی کی زبان ایپلی کیشنز کی تعمیر کے لیے استعمال نہیں کی جاتی ہے۔ اس کا استعمال اس وقت ہوتا ہے جب آپ کو ہارڈ ویئر پر مکمل کنٹرول کی ضرورت ہوتی ہے: آپریٹنگ سسٹم کے کرنل لکھنا، ڈیوائس ڈرائیورز، بوٹ لوڈرز، ایمبیڈڈ فرم ویئر، کارکردگی کے اہم کوڈ سیکشن، ریورس انجینئرنگ، اور یہ سمجھنا کہ کمپیوٹر دراصل ہدایات پر عمل کیسے کرتے ہیں۔

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fundamentos de segurança cibernética
 A segurança é uma disciplina que deve ser integrada em todas as camadas de um sistema desde o início, em vez de ser adicionada posteriormente. Seja construindo um aplicativo Web, gerenciando infraestrutura ou enviando uma API, é essencial compreender o cenário de ameaças e os fundamentos da defesa.
 ---

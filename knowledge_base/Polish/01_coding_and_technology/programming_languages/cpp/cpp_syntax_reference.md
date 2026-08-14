@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++ — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++ — Odniesienie do składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni współczesnego języka C++ (C++ 17/20/23). Uzupełnia główne odniesienia do C++, koncentrując się na wyczerpujących wzorcach składni, tabelach operatorów, mechanice szablonów i nowoczesnych funkcjach.
 ---

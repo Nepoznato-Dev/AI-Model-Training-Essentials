@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #متلب
 متلب (آزمایشگاه ماتریس) یک زبان برنامه نویسی تفسیر شده سطح بالا و محیطی است که برای محاسبات عددی، عملیات ماتریس و کاربردهای مهندسی/علمی طراحی شده است. MATLAB که توسط MathWorks توسعه یافت و برای اولین بار در سال 1984 منتشر شد، ابزار استاندارد در بسیاری از رشته های مهندسی - مهندسی برق، سیستم های کنترل، پردازش سیگنال، پردازش تصویر و ارتباطات است.
 MATLAB یک زبان قدرتمند ماتریس گرا را با جعبه ابزارهای گسترده (بسته های الحاقی) و محیط شبیه سازی بصری Simulink ترکیب می کند. این به طور گسترده در دانشگاه و صنعت برای نمونه سازی الگوریتم ها قبل از پیاده سازی آنها در کد تولید استفاده می شود.

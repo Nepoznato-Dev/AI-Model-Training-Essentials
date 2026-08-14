@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "NLP Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # NLP মৌলিক
 ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং (এনএলপি) হল মানুষের ভাষা বোঝার, তৈরি করা এবং কাজ করার জন্য মেশিনের শিক্ষাদানের ক্ষেত্র। এটি সার্চ ইঞ্জিন, চ্যাটবট, ট্রান্সলেশন সিস্টেম, সেন্টিমেন্ট অ্যানালাইসিস এবং 2020 সাল থেকে AI-কে রূপান্তরিত করা বৃহৎ ভাষার মডেল (LLMs) কে ক্ষমতা দেয়। এই ফাইলটি ক্লাসিক্যাল কৌশল থেকে আধুনিক ট্রান্সফরমার-ভিত্তিক আর্কিটেকচারে বিবর্তনকে কভার করে।
 ---

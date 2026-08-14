@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #未来のヘルスケア
 ＃＃ 概要
 医学は、症状が現れてから治療するという事後対応モデルから、予測的で個別化された、ますます予防的なモデルに移行しつつあります。ゲノミクスは、30 億ドルのプロジェクトから 1,000 ドル未満の日常テストにまで成長しました。 AI は、医師よりも早くスキャンで病気を発見できるようになりました。そして、再生医療は SF を臨床試験に変えています。個別化医療、長寿研究、再生医療という 3 つの最大のフロンティアで何が起こっているかをご紹介します。

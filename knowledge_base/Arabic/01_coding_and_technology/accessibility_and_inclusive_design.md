@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # إمكانية الوصول والتصميم الشامل
 إمكانية الوصول (غالبًا ما يتم اختصارها بـ a11y) هي ممارسة جعل البرامج قابلة للاستخدام من قبل الجميع - بما في ذلك الأشخاص ذوي الإعاقات البصرية والسمعية والحركية والمعرفية والعصبية. إنه مطلب قانوني في العديد من الولايات القضائية وممارسة هندسية قياسية. إن البرامج التي يمكن الوصول إليها هي برامج أفضل للجميع، لأن قرارات التصميم التي تدعم المستخدمين ذوي الاحتياجات الخاصة - البنية الواضحة، والتنقل عبر لوحة المفاتيح، والتباين الكافي، والنص القابل للقراءة - تعمل على تحسين تجربة جميع المستخدمين.
 ---

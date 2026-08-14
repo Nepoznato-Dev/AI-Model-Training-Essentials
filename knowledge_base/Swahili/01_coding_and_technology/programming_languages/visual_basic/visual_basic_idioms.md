@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Msingi wa Kuonekana - Miundo ya Idiomatic & Mazoezi Bora
 Mwongozo huu unashughulikia ruwaza za nahau za kuandika msimbo safi wa Visual Basic (.NET).
 ---

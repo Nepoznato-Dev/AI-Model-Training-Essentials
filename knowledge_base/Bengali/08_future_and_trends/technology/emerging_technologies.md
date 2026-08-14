@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # উদীয়মান প্রযুক্তি
 ## ওভারভিউ
 কিছু কিছু প্রযুক্তি বিদ্যমান প্রযুক্তিকে ক্রমবর্ধমানভাবে উন্নত করার পরিবর্তে সক্ষমতার সম্পূর্ণ নতুন বিভাগ তৈরি করে। কোয়ান্টাম কম্পিউটিং এর লক্ষ্য হল এমন সমস্যাগুলি সমাধান করা যা ক্লাসিক্যাল মেশিনগুলিকে সহস্রাব্দ নিতে পারে। ফিউশন শক্তি কার্যত সীমাহীন পরিচ্ছন্ন শক্তির সম্ভাবনা প্রদান করে। ব্রেন-কম্পিউটার ইন্টারফেস মন এবং মেশিনের সেতুবন্ধন। সিন্থেটিক বায়োলজি জৈবিক কোডের পুনর্লিখনকে সক্ষম করে। নিম্নলিখিত বিভাগগুলি বর্ণনা করে যে এই প্রতিটি সীমানা আজ কোথায় দাঁড়িয়ে আছে এবং বর্তমান প্রবণতাগুলি নির্দেশ করে যে এটি কোথায় যাচ্ছে৷

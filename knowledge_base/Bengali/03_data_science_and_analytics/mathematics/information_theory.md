@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # তথ্য তত্ত্ব
 তথ্য তত্ত্ব, 1948 সালে ক্লড শ্যানন দ্বারা প্রতিষ্ঠিত, তথ্য নিজেই পরিমাপ করে। একটি বার্তা আপনাকে কতটা বলে? আপনি কতটা ডেটা সংকুচিত করতে পারেন? একটি কোলাহলপূর্ণ চ্যানেলের মাধ্যমে আপনি কত দ্রুত যোগাযোগ করতে পারেন? এই প্রশ্নগুলোর সুনির্দিষ্ট গাণিতিক উত্তর আছে। যোগাযোগের বাইরে, তথ্য তত্ত্ব মেশিন লার্নিং-এর ভিত্তি হয়ে উঠেছে — ক্রস-এনট্রপি হল শ্রেণিবিন্যাসের জন্য ডিফল্ট লস ফাংশন, কেএল ডাইভারজেন্স ডিস্ট্রিবিউশন সাদৃশ্য পরিমাপ করে এবং পারস্পরিক তথ্য ড্রাইভ বৈশিষ্ট্য নির্বাচন।
 ---

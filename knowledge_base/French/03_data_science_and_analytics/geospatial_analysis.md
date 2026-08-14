@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Analyse géospatiale
 L'analyse géospatiale est le processus d'examen des données comportant une composante géographique : coordonnées, adresses, limites ou toute donnée liée à un emplacement sur Terre. Il répond à des questions telles que « où sont nos clients ? », « quel est l'itinéraire optimal ? » et « comment l'utilisation des terres évolue-t-elle au fil du temps ? ». Chaque ensemble de données a une dimension spatiale, et sa compréhension permet d’obtenir des informations qui manquent à l’analyse statistique pure.
 ---

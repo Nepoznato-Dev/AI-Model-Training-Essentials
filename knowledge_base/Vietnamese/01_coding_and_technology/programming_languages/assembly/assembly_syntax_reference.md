@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hợp ngữ — Tham khảo cú pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho x86-64 Assembly (cú pháp NASM). Nó bổ sung cho tham chiếu Assembly chính bằng cách tập trung vào các danh mục lệnh đầy đủ, các chế độ đánh địa chỉ, quy ước khung ngăn xếp và các mẫu lập trình hệ thống.
 ---

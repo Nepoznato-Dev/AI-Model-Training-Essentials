@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Metodologie testowania
 Testowanie pozwala zyskać pewność, że Twój kod działa — a co ważniejsze, że zmiany w nim nie psują tego, co już działa. Dobre testowanie wychwytuje błędy, zanim zrobią to użytkownicy, dokumentuje oczekiwane zachowanie i umożliwia nieustraszoną refaktoryzację. Ten plik obejmuje pełne spektrum strategii testowania, od testów jednostkowych po testy typu end-to-end, a także zasady, które sprawiają, że testowanie jest skuteczne.
 ---

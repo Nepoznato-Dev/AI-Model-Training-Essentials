@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ইলেক্ট্রোম্যাগনেটিজম
 ইলেক্ট্রোম্যাগনেটিজম হল বৈদ্যুতিক এবং চৌম্বক ক্ষেত্র এবং তাদের মিথস্ক্রিয়াগুলির অধ্যয়ন। 1860-এর দশকে ম্যাক্সওয়েল দ্বারা একীভূত, ইলেক্ট্রোম্যাগনেটিজম আলো, বিদ্যুৎ, চুম্বকত্ব, রেডিও তরঙ্গ এবং পরমাণুর গঠন ব্যাখ্যা করে। এটি ছিল প্রথম মৌলিক শক্তি যা গাণিতিকভাবে সম্পূর্ণরূপে বোঝা যায় এবং এর সমীকরণগুলি আইনস্টাইনের বিশেষ আপেক্ষিকতা এবং আধুনিক ক্ষেত্র তত্ত্বকে অনুপ্রাণিত করেছিল।
 ---

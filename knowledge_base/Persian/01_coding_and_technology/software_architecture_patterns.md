@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الگوهای معماری نرم افزار
 معماری مجموعه ای از تصمیمات ساختاری در مورد چگونگی سازماندهی یک سیستم است - چه اجزایی دارد، چگونه ارتباط برقرار می کنند و مسئولیت ها در کجا قرار دارند. معماری خوب باعث می شود که یک سیستم به راحتی قابل درک، تغییر و مقیاس باشد. معماری بد هر تغییری را تبدیل به یک مبارزه می کند. این فایل الگوهای اصلی، زمان استفاده از هر کدام و مبادلات مربوط را پوشش می دهد.
 ---

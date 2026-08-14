@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #अंतरिक्ष अन्वेषण रोडमैप
 ## अवलोकन
 हम अंतरिक्ष अन्वेषण के एक नए स्वर्ण युग से गुजर रहे हैं। नासा का आर्टेमिस कार्यक्रम मनुष्यों को चंद्रमा पर लौटा रहा है। स्पेसएक्स मंगल ग्रह के लिए डिज़ाइन किया गया एक पूरी तरह से पुन: प्रयोज्य रॉकेट बना रहा है। चीन की अपनी महत्वाकांक्षी चंद्र और मंगल ग्रह की योजनाएँ हैं। और निजी कंपनियों का एक बढ़ता समूह वाणिज्य के लिए जगह खोल रहा है - सैटेलाइट इंटरनेट से लेकर अंतरिक्ष पर्यटन तक। यहां चंद्रमा से लेकर मंगल ग्रह और उससे आगे तक का रोडमैप है।

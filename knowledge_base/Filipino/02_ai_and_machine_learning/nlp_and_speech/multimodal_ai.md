@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Multimodal AI
 Pinoproseso at pinagsasama-sama ng mga multimodal AI system ang impormasyon mula sa maraming uri ng data — teksto, mga larawan, audio, video, at higit pa — nang sabay-sabay. Habang ang mga naunang AI system ay karaniwang single-modality (text-only, image-only), ang pinaka-may kakayahang modernong system ay multimodal. Binabasa ng GPT-4V ang mga larawan at teksto nang magkasama; Pinoproseso ng Gemini ang text, mga larawan, audio, at video nang native; at ang mga system tulad ng Sora ay bumubuo ng video mula sa mga paglalarawan ng teksto. Sinasaklaw ng file na ito kung paano gumagana ang multimodal AI, ang mga arkitektura sa likod nito, at kung bakit napakalakas ng pagsasama-sama ng mga modalidad.
 ---

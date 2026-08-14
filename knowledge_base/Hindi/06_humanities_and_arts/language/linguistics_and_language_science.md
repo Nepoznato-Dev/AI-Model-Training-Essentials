@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भाषा विज्ञान एवं भाषा विज्ञान
 भाषाविज्ञान भाषा का वैज्ञानिक अध्ययन है - इसकी संरचना, अर्थ, उपयोग, अधिग्रहण और विकास। भाषा मानव संचार की एक परिभाषित विशेषता है: यह असीम रूप से उत्पादक है (वक्ता उन वाक्यों को बना और समझ सकते हैं जिनका उन्होंने पहले कभी सामना नहीं किया है), यह सांस्कृतिक रूप से प्रसारित होता है (यह पूरी तरह से जन्मजात होने के बजाय सीखा जाता है), और यह लगातार विकसित हो रहा है। यह समझना कि भाषा कैसे काम करती है, भाषा प्रौद्योगिकियों का निर्माण करने, शिक्षण, अनुवाद करने या अधिक प्रभावी ढंग से संवाद करने के लिए काम करने वाले किसी भी व्यक्ति के लिए प्रासंगिक है।
 ---

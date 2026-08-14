@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fikri Mülkiyet ve Yenilik
 Fikri mülkiyet (IP), kanunun yetkisiz kullanıma karşı koruduğu, akıl ürünü buluşlar, sanatsal çalışmalar, marka adları, tasarımlar, ticari sırlar anlamına gelir. İnovasyon, fikirleri değere dönüştürme sürecidir. Fikri mülkiyet kanunu, birbiriyle çatışan iki çıkarı dengelemek için mevcuttur: yaratıcıları ödüllendirmek (onlara geçici tekeller vererek) ve topluma fayda sağlamak (bilginin sonunda serbestçe erişilebilir olmasını sağlayarak). Fikri mülkiyeti anlamak, ürün geliştiren, içerik oluşturan, iş yürüten veya araştırmada çalışan herkes için çok önemlidir.
 ---

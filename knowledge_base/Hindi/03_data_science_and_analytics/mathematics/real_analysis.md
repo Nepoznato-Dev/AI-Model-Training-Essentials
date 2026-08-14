@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # वास्तविक विश्लेषण
 वास्तविक विश्लेषण कैलकुलस का कठोर आधार है। जबकि परिचयात्मक कैलकुलस आपको डेरिवेटिव और इंटीग्रल की गणना करना सिखाता है, वास्तविक विश्लेषण पूछता है कि ये तकनीकें *क्यों* काम करती हैं - और जब वे विफल हो जाती हैं। यह सीमा, निरंतरता, अभिसरण और एकीकरण की सटीक परिभाषा प्रदान करता है जो संभाव्यता सिद्धांत, कार्यात्मक विश्लेषण, अनुकूलन और मशीन लर्निंग एल्गोरिदम के पीछे सैद्धांतिक गारंटी को रेखांकित करता है।
 ---

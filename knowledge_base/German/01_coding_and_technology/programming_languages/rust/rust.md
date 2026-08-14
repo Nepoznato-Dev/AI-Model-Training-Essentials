@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Rost
 Rust ist eine statisch typisierte, kompilierte Programmiersprache, die erstmals 2015 veröffentlicht wurde und ursprünglich von Graydon Hoare bei Mozilla entwickelt wurde. Das entscheidende Versprechen von Rust ist **Speichersicherheit ohne Garbage Collection**. Dies wird durch sein Eigentumssystem erreicht – eine Reihe von Regeln, die zur Kompilierungszeit durchgesetzt werden und ganze Kategorien von Fehlern beseitigen (Nullzeiger-Dereferenzierungen, Datenrennen, Pufferüberläufe, Use-After-Free) und gleichzeitig Code so schnell wie C oder C++ produzieren.
 Rust wurde in der Stack Overflow Developer Survey mehrere Jahre in Folge zur „beliebtesten“ Programmiersprache gewählt. Es wird zunehmend in der Systemprogrammierung, WebAssembly, CLI-Tools, Cloud-Infrastruktur und als Ersatz für C/C++ in sicherheitskritischen Kontexten eingesetzt. Der Linux-Kernel akzeptiert jetzt Rust-Code.

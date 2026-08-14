@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #پرل
 پرل توسط لری وال در سال 1987 به عنوان یک ابزار کاربردی برای پردازش متن ایجاد شد. این به ستون فقرات اولیه توسعه وب (اسکریپت های CGI)، مدیریت سیستم، بیوانفورماتیک و برنامه نویسی شبکه تبدیل شد. فلسفه پرل «بیش از یک راه برای انجام آن وجود دارد» (TMTOWTDI) است - این زبان رویکردهای متعددی را برای هر مشکلی به شما ارائه می‌دهد و بیانگر بودن را به یکنواختی ترجیح می‌دهد.
 تأثیر پرل بر برنامه نویسی مدرن بسیار زیاد است، اما اغلب نامرئی است: عبارات منظم، تحت تأثیر تطبیق الگوی پرل، اکنون در پایتون، جاوا اسکریپت، جاوا و بسیاری از زبان های دیگر استاندارد هستند. CPAN (شبکه جامع بایگانی پرل) یکی از اولین مخازن بسته نرم افزاری بود و از سیستم های بعدی مانند PyPI پایتون و npm نود الهام گرفت.

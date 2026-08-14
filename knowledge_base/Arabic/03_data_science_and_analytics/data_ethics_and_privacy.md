@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # أخلاقيات البيانات والخصوصية
 أخلاقيات البيانات هي دراسة كيفية تأثير جمع البيانات وتحليلها ونشرها على حقوق الأشخاص واستقلاليتهم ورفاهيتهم. الخصوصية هي الاهتمام المحدد بشأن من يتحكم في المعلومات الشخصية وكيفية مشاركتها. لقد انتقلت هذه المواضيع من المناقشات الأكاديمية إلى الأخبار التي تتصدر الصفحات الأولى - تطبيق اللائحة العامة لحماية البيانات، وخروقات البيانات التي تؤثر على مليارات المستخدمين، وزيادة الوعي العام بأن ممارسات البيانات التي تتبعها شركات التكنولوجيا لها عواقب حقيقية على الديمقراطية والمساواة والحرية الفردية.
 ---

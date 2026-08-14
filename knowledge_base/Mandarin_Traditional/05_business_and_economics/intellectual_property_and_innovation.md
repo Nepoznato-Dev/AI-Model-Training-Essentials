@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 智慧財產權與創新
 智慧財產權 (IP) 指受法律保護免於未經授權使用的智力創造－發明、藝術作品、品牌名稱、設計、商業機密。創新是將想法轉化為價值的過程。智慧財產權法的存在是為了平衡兩種相互競爭的利益：獎勵創造者（透過給予他們暫時的壟斷權）和造福社會（透過確保知識最終免費獲得）。了解知識產權對於任何建立產品、創建內容、經營業務或從事研究工作的人都至關重要。
 ---

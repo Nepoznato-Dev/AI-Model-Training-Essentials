@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ระบบการแนะนำ
 ระบบการแนะนำจะคาดเดาสิ่งที่ผู้ใช้ต้องการดู ซื้อ หรือโต้ตอบด้วยต่อไป พวกเขาขับเคลื่อนฟีดเนื้อหาบนโซเชียลมีเดีย คำแนะนำผลิตภัณฑ์บนเว็บไซต์อีคอมเมิร์ซ ภาพยนตร์ที่เลือกสรรบนแพลตฟอร์มสตรีมมิ่ง และผลการค้นหา แม้ว่าผู้ใช้ส่วนใหญ่จะมองไม่เห็น แต่ก็เป็นหนึ่งในระบบ AI ที่มีผลกระทบเชิงพาณิชย์มากที่สุดในโลก - Netflix ประมาณการว่ากลไกการแนะนำจะช่วยประหยัดเงินได้มากกว่า 1 พันล้านดอลลาร์ต่อปีโดยลดการเลิกใช้งานของสมาชิก
 ---

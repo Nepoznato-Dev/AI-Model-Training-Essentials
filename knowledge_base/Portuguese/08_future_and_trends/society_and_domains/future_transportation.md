@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Transporte Futuro
 ## Visão geral
 Ir de A a B está prestes a parecer muito diferente. Os carros autônomos já estão nas vias públicas. Aeronaves elétricas estão concluindo voos de teste. Os conceitos do Hyperloop prometem viagens na velocidade de um trem em tubos de vácuo. E os táxis voadores – que já foram transformados em desenhos animados – estão entrando na certificação. Aqui está a situação das tecnologias que estão remodelando a forma como nos movemos.

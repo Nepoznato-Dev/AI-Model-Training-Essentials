@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # অপ্টিমাইজেশান
 অপ্টিমাইজেশান হল সম্ভাব্য সমাধানের একটি সেট থেকে সেরা সমাধান খোঁজার গণিত। এটি জিজ্ঞাসা করে: একটি ফাংশন এবং সীমাবদ্ধতা দেওয়া হলে, কোন ইনপুট আউটপুটকে ছোট করে (বা সর্বাধিক করে)? অপ্টিমাইজেশান হল মেশিন লার্নিংয়ের ইঞ্জিন — একটি মডেলকে প্রশিক্ষণ দেওয়া মানে ক্ষতির কার্যকারিতা কমিয়ে আনা। এটি অপারেশন গবেষণা, অর্থনীতি, প্রকৌশল নকশা এবং কার্যত প্রতিটি পরিমাণগত ক্ষেত্রে প্রদর্শিত হয়।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optimasi
 Optimasi adalah ilmu matematika untuk menemukan solusi terbaik dari serangkaian solusi yang layak. Pertanyaannya: dengan adanya fungsi dan batasan, masukan apa yang meminimalkan (atau memaksimalkan) keluaran? Pengoptimalan adalah mesin pembelajaran mesin — melatih model berarti meminimalkan fungsi kerugian. Ini muncul dalam riset operasi, ekonomi, desain teknik, dan hampir semua bidang kuantitatif.
 ---

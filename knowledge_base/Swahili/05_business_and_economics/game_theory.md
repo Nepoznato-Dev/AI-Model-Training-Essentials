@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nadharia ya Mchezo na Fikra za Kimkakati
 Nadharia ya mchezo ni utafiti wa hisabati wa mwingiliano wa kimkakati - hali ambapo matokeo yako hayategemei tu kile unachofanya, lakini kile ambacho wengine hufanya. Inatumika kila mahali: ushindani wa biashara, mahusiano ya kimataifa, minada, mazungumzo, biolojia ya mabadiliko, na maamuzi ya kila siku kama vile kuchagua njia kupitia trafiki. Maarifa ya msingi ni kwamba watendaji wenye busara katika hali za kimkakati sio tu kuboresha mkakati wao wenyewe - wanatarajia kile ambacho wengine watafanya, na wengine wanafanya vivyo hivyo.
 ---

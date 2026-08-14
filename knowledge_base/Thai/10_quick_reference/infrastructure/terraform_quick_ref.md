@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Terraform และโครงสร้างพื้นฐานเป็นโค้ด
 Terraform เป็นเครื่องมือ Infrastructure as Code (IaC) ที่ใช้กันอย่างแพร่หลาย โดยช่วยให้คุณกำหนดโครงสร้างพื้นฐานคลาวด์ (เซิร์ฟเวอร์ ฐานข้อมูล เครือข่าย การอนุญาต) ในไฟล์การกำหนดค่าที่เปิดเผยซึ่งสามารถกำหนดเวอร์ชัน ตรวจสอบ ทดสอบ และทำงานอัตโนมัติได้ แทนที่จะคลิกผ่านคอนโซลคลาวด์ คุณจะเขียนโค้ดที่อธิบายสถานะโครงสร้างพื้นฐานที่คุณต้องการ จากนั้น Terraform จะคำนวณว่าจะต้องเปลี่ยนแปลงอะไรบ้าง
 ---

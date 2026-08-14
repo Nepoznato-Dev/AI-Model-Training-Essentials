@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জীববিজ্ঞানের মৌলিক বিষয়
 জীববিজ্ঞান হল জীবনের বিজ্ঞান। সমস্ত জীবন্ত কিছু নির্দিষ্ট বৈশিষ্ট্য ভাগ করে: তারা কোষ দিয়ে তৈরি, তারা শক্তি ব্যবহার করে, তারা বৃদ্ধি পায়, তারা তাদের পরিবেশে প্রতিক্রিয়া জানায়, তারা পুনরুত্পাদন করে এবং তারা বিকশিত হয়। জীববিজ্ঞান একটি একক কোষের অভ্যন্তরে আণবিক যন্ত্রপাতি থেকে সমগ্র বাস্তুতন্ত্রের মিথস্ক্রিয়া পর্যন্ত বিস্তৃত এবং এটি ওষুধ, কৃষি, জৈবপ্রযুক্তি এবং সংরক্ষণের ভিত্তি।
 ---

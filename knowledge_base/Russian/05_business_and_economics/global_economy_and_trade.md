@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Глобальная экономика и торговля
 Глобальная экономика — это самая крупная и сложная система, которую когда-либо создавало человечество. В 2025 году мировой ВВП превысил 110 триллионов долларов. Более 8 миллиардов человек ежедневно производят, торгуют и потребляют товары и услуги через границы. Понимание того, как работает эта система – кто чем торгует, почему одни страны богаты, а другие бедны, как деньги перемещаются через границы и что происходит, когда система ломается – имеет важное значение для навигации в современном мире.
 ---

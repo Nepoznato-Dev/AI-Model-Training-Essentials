@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #إدارة سلسلة التوريد والعمليات
 إدارة سلسلة التوريد هي تنسيق جميع الأنشطة المتعلقة بالمصادر والمشتريات والتحويل والخدمات اللوجستية - من المواد الخام إلى المنتج النهائي في أيدي العميل. إدارة العمليات هي التشغيل اليومي لأنظمة الإنتاج. وهي تحدد معًا ما إذا كانت الشركة قادرة على تقديم المنتج المناسب، في الوقت المناسب، وبالتكلفة المناسبة، وبالجودة المناسبة. لقد أظهر الوباء، ونقص الرقائق، وانسداد القنوات مدى هشاشة سلاسل التوريد وترابطها عالميًا.
 ---

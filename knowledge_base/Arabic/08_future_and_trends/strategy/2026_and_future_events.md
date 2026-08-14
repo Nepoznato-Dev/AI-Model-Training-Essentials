@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #2026 والأحداث المستقبلية
 2026 هو العام الذي تتلاقى فيه الكثير من الخطط طويلة المدى. إنها الذكرى السنوية الـ 250 لإعلان استقلال الولايات المتحدة، الذي يمثل نقطة منتصف الطريق لتحقيق أهداف الأمم المتحدة للتنمية المستدامة (2020-2030)، وعامًا تاريخيًا لخرائط طريق الشركات في الذكاء الاصطناعي، واستكشاف الفضاء، والمركبات الكهربائية، والطاقة المتجددة. وسواء تحققت تنبؤات محددة أم لا، فإن الاتجاهات التي تشكل عام 2026 تعطي صورة مفيدة عن الاتجاه الذي تتجه إليه الأمور.
 ---

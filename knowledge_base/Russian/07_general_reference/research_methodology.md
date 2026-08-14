@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Методология исследования
 Методология исследования — это систематический подход к исследованию вопросов, проверке гипотез и получению надежных знаний. Независимо от того, проводите ли вы научные эксперименты, социологические опросы, бизнес-анализ или академические исследования, выбранная вами методология определяет, будут ли ваши выводы достоверными, воспроизводимыми и полезными. Хорошо спланированное исследование дает заслуживающие доверия результаты; плохо спроектированный производит шум или, что еще хуже, уверенные неправильные ответы.
 ---

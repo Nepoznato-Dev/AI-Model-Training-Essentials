@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 打字稿
 TypeScript 是 JavaScript 的静态类型超集，由 Microsoft（由 Anders Hejlsberg 领导）开发，于 2012 年首次发布。它向 JavaScript 添加了可选的类型注释、接口、泛型和高级类型系统功能，然后编译为可在 JavaScript 运行的任何地方运行的纯 JavaScript。 TypeScript 不是一种单独的语言或运行时；它是带有类型检查器的 JavaScript。
 TypeScript 已经成为大规模 JavaScript 开发的标准。 React、Angular、VS Code、Deno 和大多数主要的开源 JavaScript 项目都是用 TypeScript 编写的。如果您要启动一个任何规模的新 JavaScript 项目，建议默认使用 TypeScript。

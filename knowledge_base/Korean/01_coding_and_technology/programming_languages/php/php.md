@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP(Hypertext Preprocessor)는 Rasmus Lerdorf가 1994년에 개발하여 1995년에 처음 출시된 서버측 스크립팅 언어입니다. 원래 동적 웹 페이지 생성용으로 설계된 PHP는 모든 기능을 갖춘 범용 언어로 발전했습니다. WordPress, Facebook(원래), Wikipedia, Slack 및 기타 수백만 사이트를 포함하여 알려진 서버측 언어를 사용하는 모든 웹사이트의 약 75%를 지원합니다.
 최신 PHP(8.x)는 2000년대 초반의 PHP와는 매우 다른 언어입니다. 이제 유형이 지정된 속성, 일치 표현식, 열거형, 파이버, 읽기 전용 클래스 및 강력한 유형 시스템이 있습니다. 개발자들 사이에서 명성이 높음에도 불구하고(종종 불일치로 인해 비판을 받음) PHP는 실용적이고 널리 배포되며 지속적으로 개선되고 있습니다.

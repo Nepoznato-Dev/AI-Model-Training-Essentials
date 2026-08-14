@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Inferensi Kausal
 Inferensi kausal adalah ilmu yang menentukan apakah suatu hal benar-benar menyebabkan hal lain — bukan hanya apakah hal-hal tersebut berkorelasi. Korelasi memberitahu Anda bahwa dua variabel bergerak bersama. Sebab-akibat memberitahu Anda bahwa mengubah yang satu akan mengubah yang lain. Perbedaan ini sangat penting dalam bidang kedokteran (apakah obat ini manjur?), kebijakan (apakah intervensi ini mengurangi kemiskinan?), dunia usaha (apakah kampanye iklan ini meningkatkan penjualan?), dan ilmu pengetahuan (apakah mekanisme ini menjelaskan fenomena tersebut?).
 ---

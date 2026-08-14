@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # منظر نامے کی منصوبہ بندی
 ## جائزہ
 کوئی بھی مستقبل کی پیشین گوئی نہیں کر سکتا - لیکن آپ بہت سے قابل فہم لوگوں کے لیے تیاری کر سکتے ہیں۔ منظر نامے کی منصوبہ بندی، سرد جنگ کے تھنک ٹینکس میں پیدا ہوئی اور 1970 کی دہائی کے تیل کے بحران کے دوران شیل نے مکمل کی، غیر یقینی صورتحال کے بارے میں منظم طریقے سے سوچنے کا ایک طریقہ ہے۔ ایک پیشن گوئی پر شرط لگانے کے بجائے، آپ اس بارے میں مربوط کہانیاں بناتے ہیں کہ چیزیں کیسے سامنے آسکتی ہیں، پھر ان سب کے خلاف اپنے فیصلوں کی جانچ کریں۔ کلیدی ڈومینز کے منظرناموں کے ساتھ یہ طریقہ کار کیسے کام کرتا ہے۔

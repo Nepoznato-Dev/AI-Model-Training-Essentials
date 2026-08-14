@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # समय श्रृंखला और पूर्वानुमान
 समय श्रृंखला डेटा समय के साथ एकत्र किया गया कोई भी डेटा है: स्टॉक की कीमतें, तापमान रीडिंग, वेबसाइट ट्रैफ़िक, बिक्री के आंकड़े, हृदय गति मॉनिटर, ऊर्जा खपत। पूर्वानुमान का अर्थ है पिछले पैटर्न के आधार पर भविष्य के मूल्यों की भविष्यवाणी करना। यह डेटा विज्ञान के सबसे व्यावहारिक रूप से मूल्यवान अनुप्रयोगों में से एक है - और सबसे कठिन में से एक, क्योंकि भविष्य वास्तव में अनिश्चित है और वास्तविक दुनिया की समय श्रृंखला शोर, मौसमी और संरचनात्मक टूटने से भरी हुई है।
 ---

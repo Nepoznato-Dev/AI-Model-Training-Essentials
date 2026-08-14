@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Quantenmechanik
 Quantenmechanik ist die Theorie der Physik auf den kleinsten Skalen – Atome, Elektronen, Photonen und die Grundteilchen der Natur. Es ersetzt die deterministische Welt der klassischen Mechanik durch Wahrscheinlichkeiten, Überlagerungen und Verschränkung. Trotz ihres kontraintuitiven Charakters ist die Quantenmechanik die am genauesten geprüfte Theorie in der gesamten Wissenschaft. Heutzutage werden seine Prinzipien durch Quantencomputer, die versprechen, bestimmte Probleme exponentiell schneller zu lösen als klassische Maschinen, direkt für die Datenverarbeitung relevant.
 ---

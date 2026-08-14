@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ciência dos Materiais
 A ciência dos materiais é o estudo de como a estrutura de um material (em escalas atômica, microscópica e macroscópica) determina suas propriedades e como os métodos de processamento podem ser usados ​​para controlar essa estrutura para alcançar o desempenho desejado. É a área que responde a perguntas como: por que o aço é forte, mas pesado? Por que o vidro é transparente, mas quebradiço? Como podemos fabricar baterias que carreguem mais rápido? Que materiais sobreviverão às condições de Marte? Cada peça de tecnologia que você já usou é feita de materiais, e os avanços na tecnologia quase sempre exigem avanços nos materiais.
 ---

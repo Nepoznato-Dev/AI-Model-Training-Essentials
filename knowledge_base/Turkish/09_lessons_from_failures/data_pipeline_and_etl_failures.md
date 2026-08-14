@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Veri Hattı ve ETL Arızaları
 Veri hatları, modern kuruluşların tesisatıdır; verileri kaynak sistemlerden dönüşümler yoluyla veritabanlarına, depolara ve analiz, makine öğrenimi ve karar alma için kullanıldığı göllere taşırlar. Çalışırken kimse fark etmiyor. Başarısız olduklarında kararlar eski verilerle alınır, modeller çöplerle eğitilir, raporlar imkansız rakamları gösterir ve tüm veri platformuna olan güven erozyona uğrar. Veri hattı arızaları, teknoloji kuruluşlarındaki en yaygın ve en maliyetli arızalar arasındadır.
 ---

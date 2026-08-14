@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Ada
 Ada ni lugha ya programu iliyoandikwa kwa takwimu, iliyokusanywa iliyoundwa kwa ajili ya mifumo muhimu zaidi ya usalama na uadilifu wa hali ya juu. Iliyoundwa awali katika miaka ya 1980 chini ya mkataba na Idara ya Ulinzi ya Marekani (iliyopewa jina la Ada Lovelace, anayechukuliwa kuwa mtayarishaji programu wa kwanza wa kompyuta), Ada inasisitiza kutegemewa, kudumisha, na usahihi. Iliundwa kuchukua nafasi ya mamia ya lugha za upangaji zilizotumiwa na DoD kwa lugha moja iliyoainishwa vyema.
 Ada hutumiwa katika usafiri wa anga (mifumo ya kuruka kwa waya), anga (ESA na NASA), ulinzi (uelekezi wa kombora, rada), usafiri wa reli na vifaa vya matibabu - popote ambapo programu kushindwa kunaweza kugharimu maisha.

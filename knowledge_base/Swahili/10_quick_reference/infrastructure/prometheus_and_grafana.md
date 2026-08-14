@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Prometheus na Grafana
 Prometheus ni zana huria ya ufuatiliaji na arifa iliyoundwa kwa ajili ya kutegemewa na kubadilika. Grafana ndio jukwaa linaloongoza la chanzo-wazi la kuibua data ya mfululizo wa saa. Kwa pamoja, huunda safu maarufu ya ufuatiliaji kwa miundombinu ya kisasa na programu. Prometheus hukusanya na kuhifadhi metrics; Grafana anazionyesha kwenye dashibodi.
 ---

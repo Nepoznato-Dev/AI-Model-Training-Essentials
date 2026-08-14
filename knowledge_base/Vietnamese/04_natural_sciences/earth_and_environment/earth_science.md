@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Khoa học Trái đất
 Khoa học trái đất nghiên cứu hành tinh chúng ta đang sống - cấu trúc, quá trình, lịch sử và các hệ thống giúp hành tinh này có thể sinh sống được. Nó bao gồm địa chất (Trái đất rắn), hải dương học (đại dương), khí tượng học (khí quyển và thời tiết) và khí hậu học (các kiểu khí hậu dài hạn). Điều thống nhất các trường này là sự hiểu biết rằng Trái đất là một hệ thống động lực: phần bên trong của nó liên tục chuyển động, bề mặt của nó đang được định hình lại, bầu khí quyển và đại dương của nó tương tác theo những cách phức tạp.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ Python
 Python 是一种高级解释型通用编程语言，由 Guido van Rossum 创建，于 1991 年首次发布。它通过显着的缩进和读起来接近简单英语的干净语法来优先考虑代码的可读性。 Python 是动态类型的、垃圾收集的，并且支持多种编程范式，包括过程式编程、面向对象编程和函数式编程。
 如今，Python 是人工智能/机器学习、数据科学、科学计算和自动化领域的主导语言，同时仍然是初学者的最佳语言之一。这种双重身份（对于第一个脚本来说足够简单，对于训练大型语言模型来说足够强大）是它的与众不同之处。

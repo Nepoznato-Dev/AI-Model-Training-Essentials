@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Blockchain e sistemi distribuiti
 Blockchain è un tipo specifico di sistema distribuito: un registro decentralizzato di sola aggiunta in cui i record (blocchi) sono collegati da hash crittografici. I sistemi distribuiti rappresentano il campo più ampio in cui più computer funzionano insieme come se fossero uno solo. Entrambi i concetti sono importanti per comprendere le infrastrutture moderne, dalla criptovaluta ai database distribuiti agli algoritmi di consenso che alimentano i servizi globali.
 ---

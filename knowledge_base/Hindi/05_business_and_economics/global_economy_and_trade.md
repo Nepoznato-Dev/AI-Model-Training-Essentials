@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # वैश्विक अर्थव्यवस्था और व्यापार
 वैश्विक अर्थव्यवस्था मानव द्वारा अब तक बनाई गई सबसे बड़ी और सबसे जटिल प्रणाली है। 2025 में, वैश्विक सकल घरेलू उत्पाद 110 ट्रिलियन डॉलर से अधिक हो गया। 8 अरब से अधिक लोग प्रतिदिन सीमाओं के पार वस्तुओं और सेवाओं का उत्पादन, व्यापार और उपभोग करते हैं। यह समझना कि यह प्रणाली कैसे काम करती है - कौन क्या व्यापार करता है, क्यों कुछ देश अमीर हैं और अन्य गरीब हैं, पैसा कैसे सीमाओं के पार जाता है, और जब सिस्टम टूट जाता है तो क्या होता है - आधुनिक दुनिया में नेविगेट करने के लिए आवश्यक है।
 ---

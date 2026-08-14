@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Biyolojinin Temelleri
 Biyoloji yaşam bilimidir. Tüm canlıların ortak özellikleri vardır: Hücrelerden oluşurlar, enerji kullanırlar, büyürler, çevrelerine tepki verirler, çoğalırlar ve evrimleşirler. Biyoloji, tek bir hücrenin içindeki moleküler makinelerden tüm ekosistemlerin etkileşimlerine kadar uzanır ve tıbbın, tarımın, biyoteknolojinin ve korumanın temelini oluşturur.
 ---

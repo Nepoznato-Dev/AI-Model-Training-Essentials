@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সাংগঠনিক নকশা এবং সংস্কৃতি
 সাংগঠনিক নকশা হল কাঠামো, প্রক্রিয়া, ভূমিকা এবং কৌশল কার্যকরভাবে কার্যকর করার জন্য সিদ্ধান্তের অধিকারের ইচ্ছাকৃত বিন্যাস। সংস্কৃতি হ'ল ভাগ করা মূল্যবোধ, বিশ্বাস, নিয়ম এবং আচরণ যা মানুষ কীভাবে একসাথে কাজ করে তা গঠন করে। কাঠামো কাঠামো প্রদান করে; সংস্কৃতির আকৃতির আচরণ। একটি কাঠামো কাগজে পুনরায় ডিজাইন করা যেতে পারে, কিন্তু সংস্কৃতি যদি পরিবর্তনকে সমর্থন না করে, তাহলে বাস্তবায়ন ব্যর্থ হবে। একইভাবে, একটি অকার্যকর কাঠামোর সাথে যুক্ত একটি শক্তিশালী সংস্কৃতি ধীরে ধীরে সাংগঠনিক কর্মক্ষমতাকে দুর্বল করে দেবে। সবচেয়ে কার্যকরী সংস্থাগুলি উভয়কেই সম্বোধন করে — এবং স্বীকার করে যে তারা গভীরভাবে আন্তঃসংযুক্ত।
 ---

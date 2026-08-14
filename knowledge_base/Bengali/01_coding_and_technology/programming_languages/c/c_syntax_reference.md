@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সি — সিনট্যাক্স রেফারেন্স
 এই নথিটি C (C23 নোট সহ C11/C17) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স সরবরাহ করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, অপারেটর টেবিল, পয়েন্টার মেকানিক্স এবং মেমরি ম্যানেজমেন্টের উপর ফোকাস করে প্রধান সি রেফারেন্সের পরিপূরক।
 ---

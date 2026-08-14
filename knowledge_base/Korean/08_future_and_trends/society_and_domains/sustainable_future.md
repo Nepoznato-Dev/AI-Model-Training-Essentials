@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 지속가능한 미래
 ## 개요
 문제는 더 이상 세계가 지속 가능한 경제로 전환해야 하는지 *여부*가 아니라 *얼마나 빨리* 그리고 *누가 주도*하는가입니다. 재생에너지는 이제 대부분의 시장에서 가장 저렴한 전력원이다. 순환 경제 원칙은 틈새 개념에서 기업 전략으로 이동하고 있습니다. 도시들은 운송부터 폐기물까지 모든 것을 재고하고 있습니다. 순 제로를 향한 경쟁은 산업을 에너지에서 금융으로 재편하고 있습니다. 다음은 네 가지 주요 차원에 걸쳐 지속 가능한 미래의 모습입니다.

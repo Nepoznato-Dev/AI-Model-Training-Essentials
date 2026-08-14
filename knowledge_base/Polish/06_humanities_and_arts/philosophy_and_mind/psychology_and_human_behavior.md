@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Psychologia i ludzkie zachowanie
 Psychologia to nauka o tym, jak i dlaczego ludzie myślą, czują i zachowują się w określony sposób. Nie jest to czytanie w myślach ani zdrowy rozsądek – chociaż czasami potwierdza to, co sugeruje zdrowy rozsądek, a czasami całkowicie mu zaprzecza. Psychologia używa tej samej metody naukowej, co każda inna nauka: obserwuje, stawia hipotezy, testuje, koryguje. Wyzwaniem jest to, że jego podmiot – ludzki umysł – jest najbardziej złożonym obiektem, jaki znamy.
 Ten plik obejmuje główne obszary psychologii: sposób, w jaki myślimy, jak się rozwijamy, jaki wpływ mają na nas inni, co idzie nie tak i co można z tym zrobić.

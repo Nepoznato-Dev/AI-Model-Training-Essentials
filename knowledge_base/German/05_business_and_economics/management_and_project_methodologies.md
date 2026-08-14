@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Management- und Projektmethoden
 Die Leitung von Menschen und Projekten gehört zu den anspruchsvollsten Aufgaben in jeder Organisation. Technische Fähigkeiten ermöglichen den Einstieg, aber die Fähigkeit, Teams zu leiten, Entscheidungen zu treffen, effektiv zu kommunizieren und Ergebnisse zu liefern, entscheidet darüber, ob Ziele erreicht werden. In dieser Datei werden die Rahmenbedingungen, Methoden und praktischen Fähigkeiten behandelt, die effektive Manager und Projektleiter anwenden.
 ---

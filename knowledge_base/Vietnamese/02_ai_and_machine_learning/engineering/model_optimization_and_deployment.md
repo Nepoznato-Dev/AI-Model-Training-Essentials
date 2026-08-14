@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tối ưu hóa và triển khai mô hình
 Việc đào tạo một mô hình AI lớn là một thành tựu đáng kể, nhưng việc triển khai nó một cách hiệu quả lại đòi hỏi hầu hết nỗ lực kỹ thuật. Một mô hình mất 10 giây để phản hồi hoặc yêu cầu 8 GPU A100 là không thực tế đối với hầu hết các ứng dụng trong thế giới thực. Tối ưu hóa mô hình là quá trình làm cho mô hình nhỏ hơn, nhanh hơn và tiết kiệm chi phí hơn — trong khi vẫn duy trì chất lượng ở mức chấp nhận được. Tệp này bao gồm lượng tử hóa, cắt tỉa, chưng cất và các công cụ thực tế để triển khai các mô hình trong sản xuất.
 ---

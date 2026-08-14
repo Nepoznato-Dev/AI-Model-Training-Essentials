@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الأعمال والاقتصاد
 كل منظمة تبيع منتجًا أو خدمة هي شركة، وكل مجتمع ينتج ويوزع السلع هو اقتصاد. تنطبق المفاهيم الواردة في هذا الملف سواء كنت تدير عملية مستقلة، أو تعمل في شركة، أو تحاول فهم الأخبار، أو تكتشف فقط كيفية تحرك الأموال عبر العالم.
 ---

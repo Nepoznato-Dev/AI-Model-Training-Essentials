@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Optimización del rendimiento
 La optimización del rendimiento es la práctica de hacer que el software sea más rápido: reducir los tiempos de respuesta, aumentar el rendimiento, reducir el uso de memoria y eliminar cuellos de botella. Es una de las habilidades más impactantes que puede tener un desarrollador, porque el software lento pierde usuarios, desperdicia recursos y frustra a todos. Pero también es uno de los errores más comunes: los desarrolladores optimizan las cosas incorrectas basándose en la intuición en lugar de en la evidencia.
 ---

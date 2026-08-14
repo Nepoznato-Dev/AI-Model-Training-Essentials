@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # আর
 R হল একটি প্রোগ্রামিং ভাষা এবং পরিবেশ যা পরিসংখ্যানগত কম্পিউটিং এবং ডেটা বিশ্লেষণের জন্য বিশেষভাবে ডিজাইন করা হয়েছে। 1993 সালে অকল্যান্ড বিশ্ববিদ্যালয়ে রস ইহাকা এবং রবার্ট জেন্টলম্যান দ্বারা তৈরি করা হয়েছে (অতএব "R"), এটি উল্লেখযোগ্য এক্সটেনশন সহ এস ভাষার একটি বাস্তবায়ন। R হল ওপেন সোর্স এবং R কোর টিম দ্বারা রক্ষণাবেক্ষণ করা হয়। এটি পরিসংখ্যানবিদ, ডেটা বিশ্লেষক এবং একাডেমিয়া, স্বাস্থ্যসেবা, অর্থ এবং সরকারের গবেষকদের জন্য আদর্শ হাতিয়ার।
 R ডেটা ম্যানিপুলেশন, পরিসংখ্যানগত মডেলিং, ভিজ্যুয়ালাইজেশন এবং রিপোর্টিং-এ পারদর্শী। এর প্যাকেজ ইকোসিস্টেম (CRAN) এর 20,000 টিরও বেশি প্যাকেজ রয়েছে যা এখন পর্যন্ত তৈরি করা প্রতিটি পরিসংখ্যান পদ্ধতিকে কভার করে।

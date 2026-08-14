@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #آدا
 Ada یک زبان برنامه نویسی تایپ شده و کامپایل شده است که برای سیستم های ایمنی حیاتی و با یکپارچگی بالا طراحی شده است. آدا که در ابتدا در دهه 1980 و با قرارداد با وزارت دفاع ایالات متحده (به نام آدا لاولیس، اولین برنامه نویس کامپیوتری به حساب می آید) توسعه یافت، بر قابلیت اطمینان، نگهداری و صحت تأکید دارد. این برنامه برای جایگزینی صدها زبان برنامه نویسی که توسط وزارت دفاع آمریکا استفاده می شد با یک زبان واحد و کاملا مشخص طراحی شده بود.
 Ada در هوانوردی (سیستم‌های fly-by-wire)، فضا (ESA و NASA)، دفاع (هدایت موشکی، رادار)، حمل‌ونقل ریلی و تجهیزات پزشکی - در هر جایی که خرابی نرم‌افزار ممکن است به قیمت جان انسان‌ها تمام شود، استفاده می‌شود.

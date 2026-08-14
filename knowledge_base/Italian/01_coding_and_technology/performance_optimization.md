@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ottimizzazione delle prestazioni
 L'ottimizzazione delle prestazioni è la pratica di rendere il software più veloce, riducendo i tempi di risposta, aumentando il throughput, riducendo l'utilizzo della memoria ed eliminando i colli di bottiglia. È una delle competenze di maggiore impatto che uno sviluppatore può avere, perché il software lento perde utenti, spreca risorse e frustra tutti. Ma è anche uno degli errori più comunemente commessi, con gli sviluppatori che ottimizzano le cose sbagliate basandosi sull'intuizione piuttosto che sull'evidenza.
 ---

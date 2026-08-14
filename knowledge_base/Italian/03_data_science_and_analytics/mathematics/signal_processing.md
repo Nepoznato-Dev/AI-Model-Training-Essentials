@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Elaborazione del segnale
 L'elaborazione del segnale è la scienza che analizza, modifica e sintetizza i segnali, rappresentazioni di quantità fisiche che variano nel tempo, nello spazio o nella frequenza. Audio, immagini, video, dati dei sensori, onde cerebrali, prezzi delle azioni: sono tutti segnali. Gli strumenti matematici di elaborazione del segnale (trasformate di Fourier, filtri, teoria del campionamento) sono fondamentali per l'apprendimento automatico, le comunicazioni, l'imaging medico e praticamente ogni campo che funziona con i dati.
 ---

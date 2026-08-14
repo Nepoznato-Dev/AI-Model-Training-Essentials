@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 地政学的な未来
 ＃＃ 概要
 冷戦後の米国優位の時代は、より厄介なものへと移りつつある。権力が拡散し、技術や資源をめぐる競争が激化し、気候変動やパンデミックなどの課題が国境を尊重しない多極化した世界だ。 1945年以降に構築されたルールに基づく国際秩序はあらゆる方向から試されている。何が変化し、誰が台頭し、摩擦点がどこにあるのかがわかります。

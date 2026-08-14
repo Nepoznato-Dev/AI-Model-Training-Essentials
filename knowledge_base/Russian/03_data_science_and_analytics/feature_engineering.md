@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Разработка функций
 Разработка функций — это процесс преобразования необработанных данных в представления, которые делают модели машинного обучения более эффективными. Его часто называют самым важным шагом в конвейере машинного обучения: функции, которые вы предоставляете модели, имеют большее значение, чем выбранный вами алгоритм. Простая модель с хорошо продуманными функциями обычно превосходит сложную модель с необработанными, необработанными входными данными. Искусство заключается в том, чтобы достаточно хорошо понимать как предметную область, так и данные, чтобы создавать сигналы, на которых модель может учиться.
 ---

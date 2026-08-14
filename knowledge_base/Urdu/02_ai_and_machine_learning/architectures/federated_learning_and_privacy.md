@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فیڈریٹڈ لرننگ اور پرائیویسی
 فیڈریٹڈ لرننگ مشین لرننگ ماڈلز کو ایک سے زیادہ آلات یا تنظیموں میں خام ڈیٹا کا اشتراک کیے بغیر تربیت دینے کی تکنیک ہے۔ مرکزی سرور کو ڈیٹا بھیجنے کے بجائے، ہر آلہ مقامی ماڈل کو تربیت دیتا ہے اور صرف ماڈل اپ ڈیٹس (گریڈینٹ یا وزن) کا اشتراک کرتا ہے۔ مرکزی سرور عالمی ماڈل تیار کرنے کے لیے ان اپڈیٹس کو جمع کرتا ہے۔ اسے گوگل نے اینڈرائیڈ فونز پر کی بورڈ لینگویج ماڈلز کی تربیت کے لیے ڈیزائن کیا تھا - اور اس کے بعد سے یہ رازداری کو محفوظ رکھنے والی AI کے لیے ایک اہم تکنیک بن گئی ہے۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aljabar Abstrak
 Aljabar abstrak mempelajari struktur aljabar — himpunan yang dilengkapi dengan operasi yang mengikuti aturan tertentu. Daripada bekerja dengan angka, aljabar abstrak bekerja dengan objek apa pun yang memenuhi aksioma. Sifat umum ini sangat kuat: teorema yang terbukti untuk "grup" berlaku pada bilangan bulat, simetri, matriks, permutasi, dan keadaan kuantum secara bersamaan. Aljabar abstrak mendasari kriptografi, kode koreksi kesalahan, komputasi kuantum, dan analisis simetri yang digunakan dalam fisika.
 ---

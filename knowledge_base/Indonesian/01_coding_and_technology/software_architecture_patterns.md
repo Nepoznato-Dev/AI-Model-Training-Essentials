@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pola Arsitektur Perangkat Lunak
 Arsitektur adalah serangkaian keputusan struktural tentang bagaimana suatu sistem diorganisasikan — komponen apa yang dimilikinya, bagaimana mereka berkomunikasi, dan di mana letak tanggung jawabnya. Arsitektur yang baik membuat sistem mudah dipahami, dimodifikasi, dan diskalakan. Arsitektur yang buruk membuat setiap perubahan menjadi sebuah perjuangan. File ini mencakup pola-pola utama, kapan menggunakan masing-masing pola, dan trade-off yang terlibat.
 ---

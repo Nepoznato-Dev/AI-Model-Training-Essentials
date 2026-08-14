@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #การดูแลสุขภาพแห่งอนาคต
 ## ภาพรวม
 การแพทย์กำลังเปลี่ยนจากแบบจำลองเชิงรับ — รักษาอาการหลังจากที่ปรากฏ — เป็นแบบที่สามารถคาดการณ์ได้ ปรับเปลี่ยนได้เฉพาะบุคคล และป้องกันได้มากขึ้น จีโนมิกส์ได้เปลี่ยนจากโครงการที่มีมูลค่า 3 พันล้านดอลลาร์ไปเป็นการทดสอบตามปกติที่มีมูลค่าต่ำกว่า 1,000 ดอลลาร์ AI กำลังเรียนรู้ที่จะระบุโรคจากการสแกนก่อนที่แพทย์จะสามารถทำได้ และเวชศาสตร์ฟื้นฟูกำลังเปลี่ยนนิยายวิทยาศาสตร์ให้กลายเป็นการทดลองทางคลินิก ต่อไปนี้คือสิ่งที่เกิดขึ้นในสามขอบเขตที่ใหญ่ที่สุด ได้แก่ การแพทย์เฉพาะบุคคล การวิจัยเรื่องอายุยืนยาว และเวชศาสตร์ฟื้นฟู

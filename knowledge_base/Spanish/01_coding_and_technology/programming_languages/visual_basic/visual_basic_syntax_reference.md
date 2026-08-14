@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Visual Basic: referencia de sintaxis
 Este documento proporciona una referencia de sintaxis completa y estructurada para Visual Basic (VB.NET). Complementa la referencia principal de Visual Basic centrándose en patrones de sintaxis exhaustivos, funciones de programación orientada a objetos, LINQ, async/await y lenguajes de integración .NET.
 ---

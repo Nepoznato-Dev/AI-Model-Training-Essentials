@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scienze dell'Apprendimento e Pedagogia
 La scienza dell’apprendimento è lo studio interdisciplinare di come le persone apprendono, attingendo alla psicologia, alle neuroscienze, all’educazione e alle scienze cognitive. La pedagogia è la pratica e la metodologia dell’insegnamento. Insieme, rispondono a domande rilevanti per chiunque insegni, formi, faccia da mentore o progetta contenuti educativi: quali metodi aiutano le persone ad apprendere in modo efficace? Quali tecniche di studio comuni sono inefficienti? Come dovrebbe essere strutturata l'istruzione per una ritenzione e un trasferimento ottimali?
 ---

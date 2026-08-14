@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # অপটিক্স এবং তরঙ্গ
 তরঙ্গ সর্বত্র রয়েছে: শব্দ, আলো, জল, রেডিও সংকেত, কোয়ান্টাম সম্ভাব্যতা প্রশস্ততা, স্টক মার্কেটের ওঠানামা, এবং নিউরাল নেটওয়ার্ক সক্রিয়করণের কম্পন। আলোকবিদ্যা - আলোর অধ্যয়ন - হল সবচেয়ে উন্নত তরঙ্গ বিজ্ঞান, এবং এর গাণিতিক সরঞ্জামগুলি (ফুরিয়ার বিশ্লেষণ, হস্তক্ষেপ, বিচ্ছুরণ) প্রতিটি তরঙ্গের ঘটনাতে প্রযোজ্য। সংকেত প্রক্রিয়াকরণ, চিত্র বিশ্লেষণ, যোগাযোগ এবং সমস্ত আধুনিক প্রযুক্তির শারীরিক স্তরের জন্য তরঙ্গ বোঝা অপরিহার্য।
 ---

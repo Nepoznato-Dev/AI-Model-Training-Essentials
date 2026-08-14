@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # بيرل
 تم إنشاء لغة Perl بواسطة Larry Wall في عام 1987 كأداة عملية لمعالجة النصوص. لقد أصبح العمود الفقري لتطوير الويب المبكر (نصوص CGI)، وإدارة النظام، والمعلوماتية الحيوية، وبرمجة الشبكات. فلسفة بيرل هي "هناك أكثر من طريقة واحدة للقيام بذلك" (TMTOWTDI) - تمنحك اللغة أساليب متعددة لكل مشكلة، وتفضل التعبير عن التوحيد.
 تأثير بيرل على البرمجة الحديثة هائل ولكنه غالبًا ما يكون غير مرئي: التعبيرات العادية، المتأثرة بمطابقة أنماط بيرل، أصبحت الآن قياسية في بايثون، وجافا سكريبت، وجافا، ومعظم اللغات الأخرى. كانت CPAN (شبكة أرشيف Perl الشاملة) واحدة من أولى مستودعات حزم البرامج وألهمت أنظمة لاحقة مثل Python's PyPI وNode's npm.

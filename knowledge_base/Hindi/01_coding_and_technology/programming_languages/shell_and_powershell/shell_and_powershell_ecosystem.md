@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # शेल और पावरशेल - इकोसिस्टम और टूलींग गाइड
 यह मार्गदर्शिका शेल स्क्रिप्टिंग (बैश/ज़ेडएसएच) और पावरशेल के लिए आवश्यक टूल, फ्रेमवर्क और बुनियादी ढांचे को कवर करती है।
 ---

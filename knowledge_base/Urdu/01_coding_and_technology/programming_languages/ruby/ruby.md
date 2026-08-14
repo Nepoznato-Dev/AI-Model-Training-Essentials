@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #روبی
 روبی ایک متحرک، تشریح شدہ، آبجیکٹ پر مبنی پروگرامنگ زبان ہے جسے Yukihiro "Matz" Matsumoto نے تخلیق کیا تھا اور پہلی بار 1995 میں جاپان میں جاری کیا گیا تھا۔ روبی کو پروگرامر کی خوشی پر فوکس کرتے ہوئے ڈیزائن کیا گیا تھا — اس کا نحو خوبصورت اور قدرتی ہے، تقریباً انگریزی کی طرح پڑھنا۔ روبی میں ہر چیز ایک آبجیکٹ ہے، بشمول انٹیجرز اور بولین جیسی قدیم اقسام۔ روبی کو روبی آن ریلز ویب فریم ورک کے لیے سب سے زیادہ جانا جاتا ہے، جس نے کنفیگریشن اور تیز رفتار پروٹو ٹائپنگ پر کنونشن کو مقبول بنا کر ویب ڈویلپمنٹ میں انقلاب برپا کیا۔
 ریلوں سے آگے، روبی کو اسکرپٹنگ، آٹومیشن، ڈی او اوپس ٹولنگ (شیف، پپیٹ) اور عام مقصد کی زبان کے طور پر استعمال کیا جاتا ہے۔ اس کی تاثراتی ترکیب اور طاقتور میٹاپروگرامنگ کی صلاحیتیں اسے لکھنے میں خوشی کا باعث بنتی ہیں۔

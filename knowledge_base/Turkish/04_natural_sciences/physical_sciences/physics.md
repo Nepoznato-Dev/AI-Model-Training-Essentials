@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fizik
 Fizik, bilimdeki en temel soruyu sorar: Madde ve enerji nasıl davranır? Geriye kalan her şey - kimya, biyoloji, mühendislik - yanıtlar üzerine kuruludur. Fizik, atom altı ölçekten (kuantum mekaniği) kozmik ölçeğe (genel görelilik) kadar uzanır ve ilkeleri diğer tüm doğa bilimlerinin temelini oluşturur.
 ---

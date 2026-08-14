@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 日常生活中的人工智慧
 人工智能不再是一个未来概念——它已融入日常生活。從您醒來並檢查手機的那一刻（推薦演算法決定您看到的通知）到您入睡的那一刻（您的智慧揚聲器處理您的最後一個命令），人工智慧系統正在代表您、為您做出決定，有時甚至是關於您的決定。了解人工智慧出現在哪裡、它在基本層面上如何運作以及它的影響不再是可選的，而是 21 世紀知情公民的要求。
 ---

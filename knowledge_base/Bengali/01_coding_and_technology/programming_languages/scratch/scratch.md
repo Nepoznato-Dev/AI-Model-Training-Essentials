@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # আঁচড়
 স্ক্র্যাচ হল একটি ভিজ্যুয়াল, ব্লক-ভিত্তিক প্রোগ্রামিং ভাষা যা MIT মিডিয়া ল্যাব দ্বারা তৈরি করা হয়েছে এবং 2007 সালে প্রথম প্রকাশিত হয়েছিল। পাঠ্য-ভিত্তিক কোড লেখার পরিবর্তে, ব্যবহারকারীরা প্রোগ্রাম তৈরি করতে রঙিন ব্লকগুলি একত্রিত করে। স্ক্র্যাচ বিশেষভাবে 8-16 বছর বয়সী শিশুদের জন্য ডিজাইন করা হয়েছে (যদিও সব বয়সের শিক্ষার্থীরা এটি ব্যবহার করে) মৌলিক প্রোগ্রামিং ধারণাগুলি শেখানোর জন্য — লুপ, কন্ডিশনাল, ভেরিয়েবল, ইভেন্ট এবং ফাংশন — সিনট্যাক্স ত্রুটির বাধা ছাড়াই।
 স্ক্র্যাচ হল বিশ্বের সর্বাধিক ব্যবহৃত পরিচিতিমূলক প্রোগ্রামিং ভাষা, যেখানে 100 মিলিয়নেরও বেশি নিবন্ধিত ব্যবহারকারী এবং 70+ ভাষায় উপলব্ধতা রয়েছে। এটি একটি ওয়েব ব্রাউজারে চলে এবং বিনামূল্যে।

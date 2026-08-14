@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Echte Analyse
 Die reale Analyse ist die strenge Grundlage der Infinitesimalrechnung. Während Sie in der einführenden Analysis lernen, wie man Ableitungen und Integrale berechnet, stellt sich in der Realanalyse die Frage, *warum* diese Techniken funktionieren – und wann sie versagen. Es bietet die präzisen Definitionen von Grenzen, Kontinuität, Konvergenz und Integration, die der Wahrscheinlichkeitstheorie, Funktionsanalyse, Optimierung und den theoretischen Garantien hinter Algorithmen für maschinelles Lernen zugrunde liegen.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Traitement de la parole et de l'audio
 Le traitement de la parole et de l'audio couvre les technologies qui permettent aux machines d'entendre, de comprendre, de générer et de manipuler le son. Cela comprend la reconnaissance vocale (transformation de mots prononcés en texte), la synthèse vocale (transformation de texte en mots prononcés), l'identification du locuteur, la génération de musique et la compréhension des sons environnementaux. Le domaine a été transformé par l’apprentissage en profondeur : les systèmes modernes se rapprochent d’une précision de niveau humain pour la reconnaissance vocale et produisent des voix synthétiques étrangement naturelles.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # پرومیتھیس اور گرافانا
 Prometheus ایک اوپن سورس مانیٹرنگ اور الرٹنگ ٹول کٹ ہے جو قابل اعتماد اور اسکیل ایبلٹی کے لیے ڈیزائن کی گئی ہے۔ گرافانا ٹائم سیریز کے ڈیٹا کو دیکھنے کے لیے ایک سرکردہ اوپن سورس پلیٹ فارم ہے۔ یہ مل کر جدید انفراسٹرکچر اور ایپلی کیشنز کے لیے سب سے زیادہ مقبول مانیٹرنگ اسٹیک بناتے ہیں۔ Prometheus میٹرکس جمع اور ذخیرہ کرتا ہے؛ گرافانا انہیں ڈیش بورڈز میں دکھاتا ہے۔
 ---

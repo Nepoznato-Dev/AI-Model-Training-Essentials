@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #الكهرومغناطيسية
 الكهرومغناطيسية هي دراسة المجالات الكهربائية والمغناطيسية وتفاعلاتها. تم توحيدها من قبل ماكسويل في ستينيات القرن التاسع عشر، حيث تشرح الكهرومغناطيسية الضوء والكهرباء والمغناطيسية وموجات الراديو وبنية الذرات. وكانت أول قوة أساسية يتم فهمها بالكامل رياضيًا، وألهمت معادلاتها النسبية الخاصة ونظرية المجال الحديثة لأينشتاين.
 ---

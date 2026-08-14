@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nauka o materiałach
 Nauka o materiałach to nauka o tym, jak struktura materiału (w skali atomowej, mikroskopowej i makroskopowej) determinuje jego właściwości oraz w jaki sposób można zastosować metody przetwarzania, aby kontrolować tę strukturę w celu osiągnięcia pożądanej wydajności. Jest to dziedzina, która odpowiada na pytania takie jak: dlaczego stal jest mocna, ale ciężka? Dlaczego szkło jest przezroczyste, ale kruche? Jak możemy sprawić, by baterie ładowały się szybciej? Jakie materiały przetrwają warunki panujące na Marsie? Każda technologia, z której kiedykolwiek korzystałeś, jest wykonana z materiałów, a postęp technologiczny prawie zawsze wymaga postępu w materiałach.
 ---

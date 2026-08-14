@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ميكانيكا الكم
 ميكانيكا الكم هي نظرية الفيزياء على أصغر المقاييس – الذرات والإلكترونات والفوتونات والجسيمات الأساسية في الطبيعة. إنه يستبدل العالم الحتمي للميكانيكا الكلاسيكية بالاحتمالات والتراكبات والتشابك. على الرغم من طبيعتها غير البديهية، فإن ميكانيكا الكم هي النظرية الأكثر اختبارًا بدقة في كل العلوم. واليوم، أصبحت مبادئها ذات صلة مباشرة بالحوسبة من خلال أجهزة الكمبيوتر الكمومية، والتي تعد بحل بعض المشكلات بشكل أسرع بشكل كبير من الآلات الكلاسيكية.
 ---

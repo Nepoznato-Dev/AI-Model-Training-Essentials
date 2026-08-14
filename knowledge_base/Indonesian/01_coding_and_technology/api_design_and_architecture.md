@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Desain dan Arsitektur API
 API (Application Programming Interface) adalah bagaimana komponen perangkat lunak berkomunikasi satu sama lain. API yang dirancang dengan baik bersifat intuitif, konsisten, dan menyenangkan untuk digunakan. Desain yang buruk menyebabkan kebingungan, bug, dan frustrasi. File ini mencakup prinsip, pola, dan praktik pembuatan API yang sebenarnya ingin digunakan oleh pengembang.
 ---

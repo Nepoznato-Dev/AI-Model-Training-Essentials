@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #エイダ
 Ada は、安全性が重要で整合性の高いシステム向けに設計された、静的に型指定され、コンパイルされたプログラミング言語です。 Ada はもともと米国国防総省との契約に基づいて 1980 年代に開発されました (最初のコンピューター プログラマーと考えられているエイダ ラブレスにちなんで命名されました) は、信頼性、保守性、正確性を重視しています。これは、当時国防総省によって使用されていた何百ものプログラミング言語を、明確に指定された単一の言語に置き換えることを目的として設計されました。
 Ada は、航空 (フライバイワイヤー システム)、宇宙 (ESA および NASA)、防衛 (ミサイル誘導、レーダー)、鉄道輸送、医療機器など、ソフトウェアの障害が命を落とす可能性のあるあらゆる分野で使用されています。

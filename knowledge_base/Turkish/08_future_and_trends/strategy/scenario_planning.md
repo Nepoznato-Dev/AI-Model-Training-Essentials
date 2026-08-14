@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Senaryo Planlama
 ## Genel Bakış
 Hiç kimse geleceği tahmin edemez; ancak birkaç makul geleceğe hazırlanabilirsiniz. Soğuk Savaş düşünce kuruluşlarında doğan ve 1970'lerdeki petrol krizleri sırasında Shell tarafından mükemmelleştirilen senaryo planlaması, belirsizlik hakkında sistematik olarak düşünmenin bir yoludur. Tek bir tahmin üzerine bahse girmek yerine, işlerin nasıl gelişebileceğine dair tutarlı hikayeler oluşturursunuz, ardından kararlarınızı hepsine karşı stres testine tabi tutarsınız. Temel alanlardaki senaryolarla birlikte metodolojinin nasıl çalıştığını burada bulabilirsiniz.

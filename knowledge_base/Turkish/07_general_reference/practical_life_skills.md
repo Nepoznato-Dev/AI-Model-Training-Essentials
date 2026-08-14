@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pratik Yaşam Becerileri
 Okul size matematik öğretir ancak nadiren vergi beyanında bulunmayı, dengeli bir yemek pişirmeyi veya bir evin bakımını yapmayı öğretir. Bunlar günlük yaşam kalitenizi etkileyen pratik yeterliliklerdir; sizi kendi kendine yeterli ve mali açıdan dayanıklı kılan türden bilgilerdir. Bu dosya esaslar için yoğun bir referanstır.
 ---

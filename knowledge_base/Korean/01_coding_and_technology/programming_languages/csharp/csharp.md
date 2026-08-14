@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C#
 C#("C-sharp"로 발음)은 Microsoft가 Anders Hejlsberg의 주도 하에 개발하고 2002년에 처음 출시된 현대적인 개체 지향 형식 안전 프로그래밍 언어입니다. 이 언어는 .NET 플랫폼에서 실행되며 C++의 강력한 기능과 Visual Basic의 생산성을 결합하도록 설계되었습니다. 오늘날 C#은 웹 애플리케이션(ASP.NET), 데스크톱 소프트웨어(Windows), 게임 개발(Unity), 모바일 앱(MAUI), 클라우드 서비스(Azure) 등에 사용되는 다목적 크로스 플랫폼 언어입니다.
 C#은 LINQ, async/await, 레코드, 패턴 일치 등 다른 언어의 최고의 아이디어를 꾸준히 흡수하여 기능이 가장 풍부하고 개발자 친화적인 언어 중 하나가 되었습니다.

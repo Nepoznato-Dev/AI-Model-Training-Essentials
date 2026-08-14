@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Материаловедение
 Материаловедение — это исследование того, как структура материала (в атомном, микроскопическом и макроскопическом масштабах) определяет его свойства и как методы обработки могут использоваться для управления этой структурой для достижения желаемых характеристик. Это область, которая отвечает на такие вопросы, как: почему сталь прочная, но тяжелая? Почему стекло прозрачное, но хрупкое? Как мы можем сделать батареи, которые заряжаются быстрее? Какие материалы выживут в условиях Марса? Каждая технология, которую вы когда-либо использовали, сделана из материалов, а технологический прогресс почти всегда требует улучшения материалов.
 ---

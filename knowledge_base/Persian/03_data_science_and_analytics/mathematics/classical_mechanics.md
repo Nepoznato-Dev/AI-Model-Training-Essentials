@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مکانیک کلاسیک
 مکانیک کلاسیک حرکت اجسام تحت تأثیر نیروها را توصیف می کند. از سقوط سیب گرفته تا سیارات در حال چرخش، از رشته های ارتعاشی گرفته تا ذرات در حال برخورد، اصول آن بر جهان ماکروسکوپی حاکم است. مکانیک کلاسیک فراتر از کاربردهای فیزیکی خود، محاسبات تغییرات، هندسه ساده و چارچوب همیلتونی را که مبنای مکانیک کوانتومی و بهینه‌سازی مدرن است، به وجود آورد.
 ---

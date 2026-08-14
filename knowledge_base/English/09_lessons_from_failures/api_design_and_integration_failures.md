@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API Design and Integration Failures
 
 APIs (Application Programming Interfaces) are the connective tissue of modern software — they let services communicate, let third parties integrate, and let teams work independently. When API design goes wrong, the consequences ripple across every system that depends on it: broken integrations, security vulnerabilities, developer frustration, and costly rewrites. Integration failures — where systems can't communicate reliably — are among the most common sources of production incidents.

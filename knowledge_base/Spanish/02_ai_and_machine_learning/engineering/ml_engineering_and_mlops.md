@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ingeniería ML y MLOps
 Construir un modelo de aprendizaje automático es sólo la mitad de la batalla. Ponerlo en producción, mantenerlo funcionando de manera confiable, monitorear la desviación e iterarlo: ahí es donde entran en juego la ingeniería de aprendizaje automático y MLOps. Este archivo cubre el ciclo de vida completo desde el experimento hasta el sistema de producción.
 ---

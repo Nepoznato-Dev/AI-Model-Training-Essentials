@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ম্যাটল্যাব
 MATLAB (ম্যাট্রিক্স ল্যাবরেটরি) হল একটি উচ্চ-স্তরের, ব্যাখ্যা করা প্রোগ্রামিং ভাষা এবং পরিবেশ যা সংখ্যাসূচক কম্পিউটিং, ম্যাট্রিক্স অপারেশন এবং প্রকৌশল/বৈজ্ঞানিক অ্যাপ্লিকেশনের জন্য ডিজাইন করা হয়েছে। ম্যাথওয়ার্কস দ্বারা বিকশিত এবং 1984 সালে প্রথম প্রকাশিত, ম্যাটল্যাব হল অনেক প্রকৌশল শাখার মানক হাতিয়ার — ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং, কন্ট্রোল সিস্টেম, সিগন্যাল প্রসেসিং, ইমেজ প্রসেসিং এবং যোগাযোগ।
 MATLAB ব্যাপক টুলবক্স (অ্যাড-অন প্যাকেজ) এবং সিমুলিঙ্ক ভিজ্যুয়াল সিমুলেশন পরিবেশের সাথে একটি শক্তিশালী ম্যাট্রিক্স-ভিত্তিক ভাষাকে একত্রিত করে। প্রোটোটাইপিং অ্যালগরিদম উৎপাদন কোডে প্রয়োগ করার আগে এটি একাডেমিয়া এবং শিল্পে ব্যাপকভাবে ব্যবহৃত হয়।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جنرل نالج
 یہ فائل حقائق اور تصورات کا مجموعہ ہے جو بات چیت، خبروں، تعلیم اور روزمرہ کی زندگی میں باقاعدگی سے سامنے آتے ہیں۔ اسے پس منظر کے علم کے طور پر سوچیں - اس قسم کی چیز جو آپ کو یہ سمجھنے میں مدد کرتی ہے کہ آپ کیا پڑھ رہے ہیں، سن رہے ہیں یا تجربہ کر رہے ہیں۔
 ---

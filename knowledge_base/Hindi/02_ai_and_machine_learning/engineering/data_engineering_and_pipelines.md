@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # डेटा इंजीनियरिंग और पाइपलाइन
 डेटा इंजीनियरिंग उन प्रणालियों के निर्माण का अनुशासन है जो बड़े पैमाने पर डेटा को स्थानांतरित, परिवर्तित और संग्रहीत करती है। विश्वसनीय डेटा पाइपलाइनों के बिना, मशीन लर्निंग मॉडल को प्रशिक्षित नहीं किया जा सकता है, डैशबोर्ड पुराने नंबर दिखाते हैं, और व्यावसायिक निर्णय अनुमान पर आधारित होते हैं। यह फ़ाइल काम करने वाले डेटा इंफ्रास्ट्रक्चर के निर्माण के लिए आर्किटेक्चर, टूल और प्रथाओं को कवर करती है।
 ---

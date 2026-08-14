@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kotlin — Riferimento alla sintassi
 Questo documento fornisce un riferimento alla sintassi completo e strutturato per Kotlin (2.0+). Completa il riferimento principale di Kotlin concentrandosi su modelli di sintassi esaustivi, sicurezza nulla, coroutine e idiomi di Kotlin.
 ---

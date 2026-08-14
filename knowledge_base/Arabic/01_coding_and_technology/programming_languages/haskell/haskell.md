@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #هاسكل
 هاسكل هي لغة برمجة وظيفية بحتة، مكتوبة بشكل ثابت، ويتم تقييمها بتكاسل. تم توحيدها لأول مرة في عام 1990 (هاسكل 90) وتم تحسينها من خلال إصدارات متعددة (هاسكل 2010 هو المعيار الحالي)، وتشتهر هاسكل بدقتها الرياضية ونظام الكتابة القوي (مع فئات الكتابة والأحادية وأنواع البيانات الجبرية)، والتركيز على الصحة من خلال الأنواع.
 هاسكل ليست لغة سائدة، لكن تأثيرها هائل. لقد أثرت مفاهيم مثل المونادات والتقييم البطيء وفئات الكتابة على Rust وSwift وKotlin وScala وTypeScript. يتم استخدام هاسكل في التمويل (ستاندرد تشارترد، باركليز)، والمجمعين (GHC)، والتحقق الرسمي.

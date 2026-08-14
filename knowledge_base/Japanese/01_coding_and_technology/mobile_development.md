@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # モバイル開発
 モバイル開発は、主に iOS (Apple) と Android (Google) 用のスマートフォンやタブレット用のアプリケーションを構築する実践です。これには、小さな画面用の UI デザインから、バッテリー寿命の管理、ネットワークの不安定性の処理、ストアを通じたアプリの配布まで、あらゆるものが含まれます。この分野は大幅に成熟し、クロスプラットフォーム フレームワークはほとんどのユースケースでネイティブ開発と競合するようになりました。
 ---

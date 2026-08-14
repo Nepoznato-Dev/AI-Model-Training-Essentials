@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Praktyczne umiejętności życiowe
 Szkoła uczy rachunku różniczkowego, ale rzadko uczy, jak płacić podatki, gotować zbilansowany posiłek lub prowadzić dom. Są to kompetencje praktyczne, które wpływają na jakość Twojego codziennego życia – rodzaj wiedzy, która czyni Cię samowystarczalnym i odpornym finansowo. Ten plik jest gęstym odniesieniem do najważniejszych rzeczy.
 ---

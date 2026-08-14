@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # एमएल इंजीनियरिंग और एमएलओपीएस
 मशीन लर्निंग मॉडल बनाना केवल आधी लड़ाई है। इसे उत्पादन में लाना, इसे विश्वसनीय रूप से चालू रखना, बहाव की निगरानी करना और इस पर पुनरावृत्ति करना - यही वह जगह है जहां एमएल इंजीनियरिंग और एमएलओपीएस आते हैं। यह फ़ाइल प्रयोग से उत्पादन प्रणाली तक पूरे जीवनचक्र को कवर करती है।
 ---

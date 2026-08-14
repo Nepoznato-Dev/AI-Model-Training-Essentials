@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # এআই এথিক্স এবং গভর্নেন্স
 এআই সিস্টেম নিরপেক্ষ নয়। তারা যে ডেটাতে প্রশিক্ষিত হয়েছিল তা প্রতিফলিত করে, তাদের স্রষ্টাদের মূল্যবোধ এবং তাদের মোতায়েনকারী সংস্থাগুলির প্রণোদনা। নৈতিকতা কেবল জিজ্ঞাসা করা নয় "আমরা কি এটি তৈরি করতে পারি?" কিন্তু "আমাদের উচিত?" শাসন ​​হল কাঠামো তৈরি করা — আইন, মান, তদারকি সংস্থা — যা নিশ্চিত করে যে AI বিকশিত এবং দায়িত্বশীলভাবে ব্যবহার করা হয়েছে। এই ফাইলটি AI এর মূল নৈতিক মাত্রাগুলি এবং সেগুলিকে মোকাবেলা করার জন্য গভর্নেন্স ফ্রেমওয়ার্কগুলিকে কভার করে৷
 ---

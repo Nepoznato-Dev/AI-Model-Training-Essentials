@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Haskell — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured syntax reference para sa Haskell (GHC 9.x). Kinukumpleto nito ang pangunahing sanggunian ng Haskell sa pamamagitan ng pagtutuon sa mga kumpletong pattern ng syntax, ang uri ng sistema, monad, tamad na pagsusuri, at functional na mga idyoma ng programming.
 ---

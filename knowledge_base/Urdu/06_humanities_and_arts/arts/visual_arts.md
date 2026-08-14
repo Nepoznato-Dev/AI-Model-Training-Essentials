@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # بصری فنون
 بصری فن مواصلات کی انسانیت کی قدیم ترین شکل ہے — لاسکاکس کی غار کی پینٹنگز سے لے کر آج کی ڈیجیٹل تنصیبات تک۔ فن کی نقل و حرکت، ذرائع اور تخلیقی کاموں کو محفوظ رکھنے والے اداروں کو سمجھنا آپ کو اس بات کی گہری تعریف کرتا ہے کہ کس طرح معاشروں نے ہزاروں سالوں میں خوبصورتی، طاقت، روحانیت اور اختلاف رائے کا اظہار کیا ہے۔
 ---

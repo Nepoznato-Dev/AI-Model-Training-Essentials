@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # डेटा संरचनाएं और एल्गोरिदम
 डेटा संरचनाएं वे तरीके हैं जिनसे हम डेटा को मेमोरी में व्यवस्थित करते हैं ताकि उस पर संचालन कुशल हो। एल्गोरिदम समस्याओं को हल करने के लिए चरण-दर-चरण प्रक्रियाएँ हैं। साथ में, वे कंप्यूटर विज्ञान की नींव बनाते हैं - आपके द्वारा उपयोग किया गया प्रत्येक प्रोग्राम उन पर निर्भर करता है। सही डेटा संरचना का चयन एक असंभव रूप से धीमे प्रोग्राम को तेज़ प्रोग्राम में बदल सकता है, और सही एल्गोरिदम को जानने से एक न सुलझने वाली समस्या को मामूली समस्या में बदल सकता है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # লো-কোড এবং প্ল্যাটফর্ম ইঞ্জিনিয়ারিং
 লো-কোড প্ল্যাটফর্মগুলি মানুষকে ন্যূনতম হাতে লেখা কোড দিয়ে অ্যাপ্লিকেশন তৈরি করতে দেয় — সাধারণত ড্র্যাগ-এন্ড-ড্রপ ইন্টারফেস, ভিজ্যুয়াল ওয়ার্কফ্লো এবং পূর্ব-নির্মিত সংযোগকারীর মাধ্যমে। প্ল্যাটফর্ম ইঞ্জিনিয়ারিং হল অভ্যন্তরীণ বিকাশকারী প্ল্যাটফর্ম (IDPs) তৈরি করার শৃঙ্খলা যা পণ্য দলগুলির জন্য স্ব-পরিষেবা পরিকাঠামো, CI/CD এবং অপারেশনাল টুলিংকে সহজ করে তোলে। উভয় প্রবণতা একই সমস্যার প্রতিক্রিয়া: সফ্টওয়্যারের চাহিদা এবং এটি তৈরি করতে পারে এমন বিকাশকারীদের সরবরাহের মধ্যে ব্যবধান।
 ---

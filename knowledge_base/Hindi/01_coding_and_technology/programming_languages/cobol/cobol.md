@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #कोबोल
 COBOL (कॉमन बिजनेस-ओरिएंटेड लैंग्वेज) अभी भी उपयोग में आने वाली सबसे पुरानी प्रोग्रामिंग भाषाओं में से एक है, जिसे पहली बार 1959 में विकसित किया गया था। इसे बिजनेस डेटा प्रोसेसिंग - वित्तीय प्रणाली, पेरोल, बैंकिंग, बीमा और सरकारी अनुप्रयोगों के लिए डिज़ाइन किया गया था। COBOL के अंग्रेजी जैसे सिंटैक्स का उद्देश्य केवल प्रोग्रामर ही नहीं, बल्कि व्यवसाय प्रबंधकों द्वारा भी पढ़ने योग्य होना था।
 अपनी उम्र के बावजूद, COBOL वैश्विक स्तर पर सभी व्यावसायिक लेनदेन का अनुमानित 30% संसाधित करता है। प्रमुख बैंक, सरकारी एजेंसियां ​​(अमेरिकी सामाजिक सुरक्षा प्रशासन सहित) और बीमा कंपनियां अभी भी COBOL मेनफ्रेम सिस्टम पर निर्भर हैं। 1999 में Y2K बग के डर ने COBOL को सार्वजनिक जागरूकता में वापस ला दिया, और यह भाषा दुनिया भर में महत्वपूर्ण बुनियादी ढांचे को चला रही है।

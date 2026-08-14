@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #เอด้า
 Ada เป็นภาษาโปรแกรมคอมไพล์ที่พิมพ์คงที่ ซึ่งออกแบบมาสำหรับระบบที่มีความสำคัญด้านความปลอดภัยและมีความสมบูรณ์สูง พัฒนาขึ้นครั้งแรกในช่วงทศวรรษ 1980 ภายใต้สัญญากับกระทรวงกลาโหมสหรัฐอเมริกา (ตั้งชื่อตาม Ada Lovelace ซึ่งถือเป็นโปรแกรมเมอร์คอมพิวเตอร์คนแรก) Ada เน้นย้ำถึงความน่าเชื่อถือ การบำรุงรักษา และความถูกต้อง ได้รับการออกแบบมาเพื่อแทนที่ภาษาการเขียนโปรแกรมหลายร้อยภาษาที่กระทรวงกลาโหมใช้อยู่ด้วยภาษาเดียวที่มีการระบุอย่างดี
 Ada ใช้ในการบิน (ระบบบินด้วยสายไฟ) อวกาศ (ESA และ NASA) การป้องกัน (การนำทางด้วยขีปนาวุธ เรดาร์) การขนส่งทางรถไฟ และอุปกรณ์ทางการแพทย์ ทุกที่ที่ซอฟต์แวร์ขัดข้องอาจทำให้เสียชีวิตได้

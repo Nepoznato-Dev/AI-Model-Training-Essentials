@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مراقبت های بهداشتی آینده
 ## بررسی اجمالی
 پزشکی در حال تغییر از یک مدل واکنشی - درمان علائم پس از ظهور - به مدلی است که پیش‌بینی‌کننده، شخصی‌سازی شده و به طور فزاینده‌ای پیشگیرانه است. ژنومیکس از یک پروژه 3 میلیارد دلاری به یک آزمایش معمولی زیر 1000 دلار تبدیل شده است. هوش مصنوعی در حال یادگیری تشخیص بیماری‌ها در اسکن‌ها قبل از تشخیص پزشکان است. و پزشکی احیا کننده در حال تبدیل داستان های علمی تخیلی به آزمایش های بالینی است. این چیزی است که در سه مرز بزرگ اتفاق می افتد: پزشکی شخصی، تحقیقات طول عمر، و پزشکی احیا کننده.

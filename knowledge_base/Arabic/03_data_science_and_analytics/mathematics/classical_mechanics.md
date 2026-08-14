@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #الميكانيكا الكلاسيكية
 تصف الميكانيكا الكلاسيكية حركة الأجسام تحت تأثير القوى. من التفاح المتساقط إلى الكواكب التي تدور حولها، ومن الأوتار المهتزة إلى اصطدام الجزيئات، فإن مبادئها تحكم العالم المجهري. وبعيدًا عن تطبيقاتها الفيزيائية، فقد ولدت الميكانيكا الكلاسيكية حساب التفاضل والتكامل للتغيرات، والهندسة التناظرية، والإطار الهاملتوني الذي يدعم ميكانيكا الكم والتحسين الحديث.
 ---

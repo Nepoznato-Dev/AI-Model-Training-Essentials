@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp ve Clojure
 Lisp, 1958'de John McCarthy tarafından oluşturulan (Fortran'dan sonra) halen kullanımda olan ikinci en eski üst düzey programlama dilidir. Artık veri olarak kabul edilen birçok kavrama öncülük etmiştir: çöp toplama, özyineleme, ağaç veri yapıları, dinamik yazma ve programların veri olduğu fikri (homoikoniklik). Lisp'in ayırt edici özelliği sözdizimidir; kod iç içe parantezler (S ifadeleri) olarak yazılır; bu, dili önemsiz bir şekilde ayrıştırılabilir hale getirir ve **makrolar** yoluyla güçlü metaprogramlamaya olanak tanır.
 Clojure, Rich Hickey tarafından 2007 yılında tasarlanan modern bir Lisp lehçesidir. JVM (aynı zamanda JavaScript için ClojureScript) üzerinde çalışır, işlevsel programlamayı, değişmezliği ve eşzamanlılığı kapsar ve kesintisiz Java birlikte çalışabilirliği sağlar. Clojure web geliştirme, veri işleme ve finansal sistemlerde kullanılır.

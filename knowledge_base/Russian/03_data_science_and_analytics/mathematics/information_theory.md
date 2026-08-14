@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Теория информации
 Теория информации, основанная Клодом Шенноном в 1948 году, количественно определяет саму информацию. О чем вам говорит сообщение? Насколько можно сжимать данные? Как быстро вы можете общаться по зашумленному каналу? Эти вопросы имеют точные математические ответы. Помимо коммуникации, теория информации стала основой машинного обучения: кросс-энтропия является функцией потерь по умолчанию для классификации, расхождение KL измеряет сходство распределения, а взаимная информация определяет выбор функций.
 ---

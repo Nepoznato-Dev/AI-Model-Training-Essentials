@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # आर
 आर एक प्रोग्रामिंग भाषा और वातावरण है जिसे विशेष रूप से सांख्यिकीय कंप्यूटिंग और डेटा विश्लेषण के लिए डिज़ाइन किया गया है। 1993 में ऑकलैंड विश्वविद्यालय में रॉस इहाका और रॉबर्ट जेंटलमैन द्वारा बनाया गया (इसलिए "आर"), यह महत्वपूर्ण विस्तार के साथ एस भाषा का कार्यान्वयन है। R खुला स्रोत है और इसका रखरखाव R कोर टीम द्वारा किया जाता है। यह शिक्षा, स्वास्थ्य सेवा, वित्त और सरकार में सांख्यिकीविदों, डेटा विश्लेषकों और शोधकर्ताओं के लिए मानक उपकरण है।
 आर डेटा हेरफेर, सांख्यिकीय मॉडलिंग, विज़ुअलाइज़ेशन और रिपोर्टिंग में उत्कृष्टता प्राप्त करता है। इसके पैकेज इकोसिस्टम (CRAN) में 20,000 से अधिक पैकेज हैं जो अब तक तैयार की गई लगभग हर सांख्यिकीय पद्धति को कवर करते हैं।

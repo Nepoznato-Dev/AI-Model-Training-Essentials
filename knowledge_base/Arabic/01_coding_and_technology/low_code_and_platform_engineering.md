@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # هندسة الكود المنخفض والمنصة
 تسمح الأنظمة الأساسية منخفضة التعليمات البرمجية للأشخاص بإنشاء تطبيقات باستخدام الحد الأدنى من التعليمات البرمجية المكتوبة بخط اليد — عادةً من خلال واجهات السحب والإفلات، وسير العمل المرئي، والموصلات المعدة مسبقًا. هندسة الأنظمة الأساسية هي مجال بناء منصات المطورين الداخليين (IDPs) التي تسهل على فرق المنتج خدمة البنية التحتية الذاتية، وCI/CD، والأدوات التشغيلية. كلا الاتجاهين عبارة عن استجابات لنفس المشكلة: الفجوة بين الطلب على البرمجيات والمعروض من المطورين القادرين على بنائها.
 ---

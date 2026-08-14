@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ビジュアルアーツ
 ビジュアル アートは、ラスコーの洞窟壁画から今日のデジタル インスタレーションに至るまで、人類最古のコミュニケーション形式です。芸術運動、媒体、創造的な作品を保存する機関を理解すると、何千年にもわたって社会が美、力、精神性、反対意見をどのように表現してきたかについて、より深く理解できるようになります。
 ---

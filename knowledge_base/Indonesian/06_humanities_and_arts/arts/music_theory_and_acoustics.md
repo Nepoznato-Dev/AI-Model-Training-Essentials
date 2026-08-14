@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teori Musik dan Akustik
 Teori musik adalah studi tentang cara kerja musik - pola, struktur, dan prinsip yang membuat beberapa kombinasi suara menyenangkan atau bermakna dan yang lainnya sumbang atau kacau. Akustik adalah ilmu fisika suara — bagaimana getaran merambat di udara, bagaimana getaran itu dihasilkan dan dirasakan. Bersama-sama, mereka menjelaskan mengapa akord C mayor terdengar bahagia, mengapa kunci minor terasa sedih, bagaimana ruang konser dirancang, dan mengapa lagu favorit Anda membuat Anda merinding.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++
 C++ ist eine universelle, kompilierte Programmiersprache, die von Bjarne Stroustrup entwickelt und erstmals 1985 veröffentlicht wurde. Sie erweitert C um objektorientierte Funktionen, Generika und – in modernen Versionen (C++ 11 und höher) – Abstraktionen auf hoher Ebene wie Lambdas, Smart Pointer und die Standard Template Library (STL). C++ folgt dem Prinzip der „Zero-Overhead-Abstraktion“: Sie sollten nicht für Funktionen bezahlen, die Sie nicht nutzen.
 C++ ist die Sprache der Wahl, wenn Sie sowohl hohe Leistung als auch Ausdruckskraft benötigen. Es unterstützt Spiele-Engines (Unreal Engine), Browser (Chrome, Firefox), Datenbanken (MongoDB), Betriebssysteme (Teile von Windows und macOS), Finanzhandelssysteme und Echtzeitsimulationen.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #کیمسٹری
 اگر فزکس کھیل کے اصول ہیں، تو کیمسٹری وہی ہوتی ہے جب ٹکڑے آپس میں ملتے ہیں۔ کیمسٹری اس بات کا مطالعہ کرتی ہے کہ ایٹم کیسے جوڑتے ہیں، الگ ہوتے ہیں، اور دوبارہ ترتیب دیتے ہیں - جس کا مطلب یہ ہے کہ تمام مواد کیسے برتاؤ کرتے ہیں۔ یہ بنیادی طبیعیات اور حیاتیات، ارضیات، اور انجینئرنگ کی پیچیدگی کے درمیان فرق کو ختم کرتا ہے۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سي ++
 C++ هي لغة برمجة مجمعة للأغراض العامة أنشأها Bjarne Stroustrup، وتم إصدارها لأول مرة في عام 1985. وهي توسع لغة C بميزات موجهة للكائنات، وأسماء عامة، و- في الإصدارات الحديثة (C++ 11 والإصدارات الأحدث) - تجريدات عالية المستوى مثل lambdas، والمؤشرات الذكية، ومكتبة النماذج القياسية (STL). تتبع لغة C++ مبدأ "صفر النفقات العامة": يجب ألا تدفع مقابل الميزات التي لا تستخدمها.
 C++ هي اللغة المفضلة عندما تحتاج إلى الأداء العالي والقوة التعبيرية. إنه يشغل محركات الألعاب (Unreal Engine)، والمتصفحات (Chrome، Firefox)، وقواعد البيانات (MongoDB)، وأنظمة التشغيل (أجزاء من Windows وmacOS)، وأنظمة التداول المالي، وعمليات المحاكاة في الوقت الفعلي.

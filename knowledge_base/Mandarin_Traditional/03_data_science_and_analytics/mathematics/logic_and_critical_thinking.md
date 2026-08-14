@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 邏輯與批判性思維
 邏輯是對有效推理的研究——如何建構合理的論證並識別有缺陷的論點。批判性思考是質疑假設、評估證據和仔細推理的紀律習慣。這些技能不僅在數學和電腦科學中至關重要，而且在日常決策、科學研究和駕馭資訊豐富的世界中也至關重要。
 ---

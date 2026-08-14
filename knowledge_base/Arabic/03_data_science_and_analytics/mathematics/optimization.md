@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحسين
 التحسين هو رياضيات إيجاد أفضل حل من مجموعة من الحلول الممكنة. فهو يسأل: بالنظر إلى الوظيفة والقيود، ما المدخلات التي تقلل (أو تزيد) المخرجات؟ التحسين هو محرك التعلم الآلي - تدريب النموذج يعني تقليل وظيفة الخسارة. ويظهر في بحوث العمليات، والاقتصاد، والتصميم الهندسي، وفي كل المجالات الكمية تقريبًا.
 ---

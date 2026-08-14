@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # آزمایش و آزمایش آماری
 آمار دستور زبان علم است. این ابزارها را در اختیار شما قرار می دهد تا الگوهای واقعی را از نویز تصادفی تشخیص دهید، اندازه گیری کنید که آیا یک تغییر واقعاً باعث بهبود اوضاع شده است یا خیر، و تصمیم گیری در شرایط عدم اطمینان. این فایل مفاهیم اصلی آزمون فرضیه، طراحی آزمایشی، و مشکلات رایجی که افراد را به چالش می‌کشد را پوشش می‌دهد.
 ---

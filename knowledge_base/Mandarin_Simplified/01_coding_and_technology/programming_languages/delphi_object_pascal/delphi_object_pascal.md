@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / 对象 Pascal
 Delphi 是一种基于 Pascal 的面向对象编程语言，最初由 Borland（后来的 Embarcadero，现在的 Idera）开发。它于 1995 年首次发布，名为“Delphi 1”，专为 Windows 桌面应用程序的快速应用程序开发 (RAD) 而设计。该语言的正式名称为 Object Pascal，Delphi IDE 提供了可视化表单设计器、集成数据库工具和强大的编译器。
 Delphi 是 20 世纪 90 年代末和 2000 年代初最流行的 Windows 开发工具之一。尽管其受欢迎程度已大幅下降，但它仍保持着专门的用户群，特别是在企业桌面应用程序、数据库前端和遗留系统维护方面。现代 Delphi (11/12) 通过 FireMonkey (FMX) 框架支持 Windows、macOS、iOS 和 Android 的跨平台开发。

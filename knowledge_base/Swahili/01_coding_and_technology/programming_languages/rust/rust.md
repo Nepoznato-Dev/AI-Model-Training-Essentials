@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Kutu
 Rust ni lugha ya programu iliyoandikwa kwa kitakwimu, iliyokusanywa kwa mara ya kwanza mnamo 2015, iliyotayarishwa asili na Graydon Hoare huko Mozilla. Ahadi ya kufafanua ya kutu ni **usalama wa kumbukumbu bila mkusanyiko wa takataka**. Inafanikisha hili kupitia mfumo wake wa umiliki - seti ya sheria zinazotekelezwa wakati wa kukusanya ambayo huondoa kategoria zote za hitilafu (kuacha marejeleo ya vielekezi visivyofaa, jamii za data, kufurika kwa bafa, matumizi baada ya bila malipo) huku ikitoa msimbo haraka kama C au C++.
 Rust imepigiwa kura kuwa lugha ya programu "inayopendwa zaidi" katika Utafiti wa Wasanidi Programu wa Stack Overflow kwa miaka mingi mfululizo. Inazidi kutumika katika upangaji wa mifumo, WebAssembly, zana za CLI, miundombinu ya wingu, na kama badala ya C/C++ katika miktadha muhimu ya usalama. Kiini cha Linux sasa kinakubali msimbo wa kutu.

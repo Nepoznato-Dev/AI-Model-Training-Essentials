@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetik ve Genomik
 Genetik, kalıtımın incelenmesidir - özelliklerin ebeveynlerden yavrulara DNA yoluyla nasıl aktarıldığı. Genomik, genomun tamamının incelenmesidir: tüm genler, kodlamayan bölgeler, bunların nasıl etkileşime girdiği ve bireyler ve popülasyonlar arasında nasıl değiştiği. Genetikten genomiğe geçiş, dizileme teknolojisi tarafından yönlendirildi; tek seferde bir gen çalışmaktan saatler içinde tüm genomu okumaya, tıp, tarım, adli tıp ve evrim anlayışımızı dönüştüren veriler üretmeye geçtik.
 ---

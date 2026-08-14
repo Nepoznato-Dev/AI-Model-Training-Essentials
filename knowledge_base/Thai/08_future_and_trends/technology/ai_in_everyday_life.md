@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #AI ในชีวิตประจำวัน
 ปัญญาประดิษฐ์ไม่ใช่แนวคิดแห่งอนาคตอีกต่อไป แต่ฝังอยู่ในชีวิตประจำวัน ตั้งแต่วินาทีที่คุณตื่นขึ้นและตรวจสอบโทรศัพท์ของคุณ (อัลกอริธึมการแนะนำจะกำหนดการแจ้งเตือนที่คุณเห็น) จนถึงช่วงเวลาที่คุณหลับ (ลำโพงอัจฉริยะจะประมวลผลคำสั่งสุดท้ายของคุณ) ระบบ AI จะทำการตัดสินใจในนามของคุณ เพื่อคุณ และบางครั้งก็เกี่ยวกับคุณด้วย การทำความเข้าใจว่า AI ปรากฏขึ้นที่ใด ทำงานอย่างไรในระดับพื้นฐาน และผลกระทบที่ตามมานั้นไม่ได้เป็นทางเลือกอีกต่อไป แต่เป็นข้อกำหนดสำหรับการได้รับสัญชาติโดยรู้แจ้งในศตวรรษที่ 21
 ---

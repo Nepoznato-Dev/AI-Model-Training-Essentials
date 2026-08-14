@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سكالا
 Scala (لغة قابلة للتطوير) هي لغة برمجة مكتوبة ومترجمة بشكل ثابت تجمع بين نماذج البرمجة الموجهة للكائنات والوظيفية. تم إنشاء Scala بواسطة Martin Odersky وتم إصداره لأول مرة في عام 2004، ويعمل على JVM (أيضًا Scala.js لـ JavaScript وScala Native). لقد تم تصميمه لمعالجة إسهاب Java مع الحفاظ على إمكانية التشغيل التفاعلي الكامل لـ Java.
 Scala هي اللغة المستخدمة وراء Apache Spark (إطار عمل معالجة البيانات الضخمة)، ويتم استخدامها على نطاق واسع في هندسة البيانات والأنظمة الموزعة والخدمات الخلفية. شركات مثل Twitter (الآن X)، وLinkedIn، وNetflix، وThe Guardian تستخدم Scala.

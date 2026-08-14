@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # এআই এবং এলএলএম ব্যর্থতা
 এই নথিটি AI এবং বড় ভাষা মডেল সিস্টেমে সাধারণ ব্যর্থতার মোডগুলিকে একীভূত করে, যার মধ্যে হ্যালুসিনেশন, ভুল তথ্য, যুক্তির ত্রুটি এবং প্রম্পট-সম্পর্কিত সমস্যা রয়েছে।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chemie
 Wenn die Physik die Spielregeln ist, dann ist die Chemie das, was passiert, wenn die Teile interagieren. Die Chemie untersucht, wie sich Atome verbinden, auseinanderbrechen und neu anordnen – also wie sich alle Materialien verhalten. Es schließt die Lücke zwischen der Grundlagenphysik und der Komplexität von Biologie, Geologie und Ingenieurwesen.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Datentechnik und Pipelines
 Data Engineering ist die Disziplin des Aufbaus von Systemen, die Daten in großem Maßstab bewegen, transformieren und speichern. Ohne zuverlässige Datenpipelines können Modelle für maschinelles Lernen nicht trainiert werden, Dashboards zeigen veraltete Zahlen an und Geschäftsentscheidungen basieren auf Vermutungen. Diese Datei behandelt die Architektur, Tools und Praktiken zum Aufbau einer funktionierenden Dateninfrastruktur.
 ---

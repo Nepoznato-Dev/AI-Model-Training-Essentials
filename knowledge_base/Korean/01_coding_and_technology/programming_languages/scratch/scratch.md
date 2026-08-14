@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 스크래치
 스크래치(Scratch)는 MIT 미디어 랩에서 개발되어 2007년에 처음 출시된 시각적 블록 기반 프로그래밍 언어입니다. 사용자는 텍스트 기반 코드를 작성하는 대신 색상 블록을 연결하여 프로그램을 만듭니다. 스크래치는 구문 오류의 장벽 없이 기본적인 프로그래밍 개념(루프, 조건부, 변수, 이벤트 및 함수)을 가르치기 위해 8~16세 어린이(모든 연령대의 학습자가 사용하지만)를 위해 특별히 설계되었습니다.
 스크래치는 전 세계에서 가장 널리 사용되는 입문 프로그래밍 언어로, 1억 명 이상의 등록 사용자가 있고 70개 이상의 언어로 제공됩니다. 웹 브라우저에서 실행되며 무료입니다.

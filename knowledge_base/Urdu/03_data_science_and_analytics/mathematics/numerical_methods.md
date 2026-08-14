@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # عددی طریقے
 عددی طریقے ریاضیاتی تھیوری اور پریکٹیکل کمپیوٹیشن کے درمیان پل ہیں۔ جبکہ خالص ریاضی یہ ثابت کرتی ہے کہ حل موجود ہیں، عددی طریقے دراصل محدود درستگی کے تخمینی جوابات کی گنتی کرتے ہیں۔ ہر مشین لرننگ ماڈل، فزکس سمولیشن، اور ڈیٹا اینالیسس پائپ لائن بالآخر عددی کمپیوٹیشن پر انحصار کرتی ہے۔ ان طریقوں کو سمجھنا — ان کی درستگی، استحکام اور حدود — قابل اعتماد سافٹ ویئر بنانے کے لیے ضروری ہے۔
 ---

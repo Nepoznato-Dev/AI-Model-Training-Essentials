@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Thất bại của dự án Machine Learning
 Các dự án học máy thất bại ở mức đáng báo động - ước tính của ngành cho thấy 60-85% dự án ML không bao giờ đi vào sản xuất. Những thất bại thường không nằm ở thuật toán; chúng đang ở trong quá trình, dữ liệu, kỳ vọng và bối cảnh tổ chức. Hiểu lý do tại sao các dự án ML thất bại là điều cần thiết đối với bất kỳ ai xây dựng hệ thống ML, bởi vì các chế độ lỗi có thể dự đoán được và phần lớn có thể tránh được.
 ---

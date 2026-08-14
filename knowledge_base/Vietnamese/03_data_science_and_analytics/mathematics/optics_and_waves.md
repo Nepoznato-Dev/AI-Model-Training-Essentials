@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Quang học và Sóng
 Sóng có ở khắp mọi nơi: âm thanh, ánh sáng, nước, tín hiệu vô tuyến, biên độ xác suất lượng tử, biến động của thị trường chứng khoán và sự rung động khi kích hoạt mạng lưới thần kinh. Quang học - nghiên cứu về ánh sáng - là ngành khoa học sóng phát triển nhất và các công cụ toán học của nó (phân tích Fourier, giao thoa, nhiễu xạ) áp dụng cho mọi hiện tượng sóng. Hiểu biết về sóng là điều cần thiết để xử lý tín hiệu, phân tích hình ảnh, truyền thông và lớp vật lý của mọi công nghệ hiện đại.
 ---

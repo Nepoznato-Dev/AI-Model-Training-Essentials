@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भाषण और ऑडियो प्रोसेसिंग
 भाषण और ऑडियो प्रसंस्करण उन तकनीकों को शामिल करता है जो मशीनों को ध्वनि सुनने, समझने, उत्पन्न करने और हेरफेर करने देती हैं। इसमें वाक् पहचान (बोले गए शब्दों को पाठ में बदलना), वाक् संश्लेषण (पाठ को बोले गए शब्दों में बदलना), वक्ता की पहचान, संगीत निर्माण और पर्यावरणीय ध्वनि समझ शामिल है। इस क्षेत्र को गहन शिक्षण द्वारा बदल दिया गया है - आधुनिक प्रणालियाँ भाषण पहचान के लिए मानव-स्तर की सटीकता तक पहुँचती हैं और भयानक प्राकृतिक सिंथेटिक आवाज़ें उत्पन्न करती हैं।
 ---

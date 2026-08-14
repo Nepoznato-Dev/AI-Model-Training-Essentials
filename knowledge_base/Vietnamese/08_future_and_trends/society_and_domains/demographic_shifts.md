@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thay đổi nhân khẩu học
 ## Tổng quan
 Nhân khẩu học là số phận - hoặc ít nhất là chúng có vần điệu mạnh mẽ với nó. Dân số thế giới đang già đi nhanh chóng, di cư theo những mô hình mới, tập trung vào các thành phố với tốc độ chưa từng có và phân chia theo các dòng thế hệ định hình mọi thứ, từ hành vi bầu cử đến thói quen tiêu dùng. Những thay đổi này sẽ diễn ra trong nhiều thập kỷ nhưng tác động của chúng đã rõ ràng. Dưới đây là bốn xu hướng lớn và ý nghĩa của chúng.

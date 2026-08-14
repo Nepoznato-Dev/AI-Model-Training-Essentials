@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # শেল এবং পাওয়ারশেল
 শেল স্ক্রিপ্টিং কমান্ড-লাইন ইন্টারপ্রেটারদের জন্য স্ক্রিপ্ট লেখাকে বোঝায়। দুটি সবচেয়ে গুরুত্বপূর্ণ শেল হল **ব্যাশ** (বোর্ন অ্যাগেইন শেল) — লিনাক্স এবং ম্যাকওএস-এ ডিফল্ট — এবং **পাওয়ারশেল** — মাইক্রোসফটের আধুনিক ক্রস-প্ল্যাটফর্ম শেল এবং স্ক্রিপ্টিং ভাষা। শেল স্ক্রিপ্টগুলি সিস্টেম প্রশাসনের কাজগুলিকে স্বয়ংক্রিয় করে, পাইপলাইন তৈরি করে, ফাইল প্রক্রিয়াকরণ, এবং স্থাপনার কর্মপ্রবাহ।
 প্রত্যেক ডেভেলপার, DevOps ইঞ্জিনিয়ার এবং সিস্টেম অ্যাডমিনিস্ট্রেটরের শেল স্ক্রিপ্টিং দক্ষতা প্রয়োজন। আপনি একটি ওয়েব সার্ভার স্থাপন করছেন, লগ ফাইল প্রসেস করছেন, সিআই/সিডি পাইপলাইন সেট আপ করছেন বা ব্যাকআপ স্বয়ংক্রিয় করছেন, শেল স্ক্রিপ্টিং হল কাজের হাতিয়ার।

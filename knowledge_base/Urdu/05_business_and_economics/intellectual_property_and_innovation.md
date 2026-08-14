@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # دانشورانہ املاک اور اختراع
 انٹلیکچوئل پراپرٹی (IP) سے مراد ذہن کی تخلیقات ہیں — ایجادات، فنکارانہ کام، برانڈ کے نام، ڈیزائن، تجارتی راز — جنہیں قانون غیر مجاز استعمال سے بچاتا ہے۔ جدت طرازی خیالات کو قدر میں بدلنے کا عمل ہے۔ IP قانون دو مسابقتی مفادات کو متوازن کرنے کے لیے موجود ہے: تخلیق کاروں کو انعام دینا (انہیں عارضی اجارہ داری دے کر) اور معاشرے کو فائدہ پہنچانا (اس بات کو یقینی بنا کر کہ علم آخرکار آزادانہ طور پر دستیاب ہو جائے)۔ IP کو سمجھنا پروڈکٹس بنانے، مواد بنانے، کاروبار چلانے، یا تحقیق میں کام کرنے والے ہر فرد کے لیے ضروری ہے۔
 ---

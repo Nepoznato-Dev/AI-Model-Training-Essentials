@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 재료과학
 재료 과학은 재료의 구조(원자, 현미경 및 거시적 규모)가 재료의 특성을 결정하는 방법과 원하는 성능을 달성하기 위해 해당 구조를 제어하기 위해 처리 방법을 사용할 수 있는 방법에 대한 연구입니다. 다음과 같은 질문에 대답하는 분야입니다. 왜 강철은 강하지만 무거울까요? 유리는 왜 투명하지만 깨지기 쉬운가요? 어떻게 하면 더 빠르게 충전되는 배터리를 만들 수 있나요? 화성의 조건에서 살아남을 물질은 무엇입니까? 지금까지 사용했던 모든 기술은 재료로 만들어졌으며 기술의 발전에는 거의 항상 재료의 발전이 필요합니다.
 ---

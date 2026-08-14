@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التثقيف الإعلامي وتقييم المعلومات
 نحن نعيش في عالم مشبع بالمعلومات. يتعرض الشخص العادي يوميًا لآلاف الرسائل الإعلامية، مثل المقالات الإخبارية ومنشورات وسائل التواصل الاجتماعي والإعلانات والخطب السياسية والمحتوى المؤثر والنصوص التي ينشئها الذكاء الاصطناعي. معظمها على ما يرام. وبعضها مضلل. كمية صغيرة كاذبة عمدا. إن محو الأمية الإعلامية هو مهارة الإبحار في هذا المشهد - ليس من خلال الثقة في كل شيء، وليس من خلال الثقة في أي شيء، ولكن من خلال تطوير إحساس محسوب بما يمكن الاعتماد عليه وما لا يمكن الاعتماد عليه.
 ---

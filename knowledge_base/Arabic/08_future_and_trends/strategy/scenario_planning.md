@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #تخطيط السيناريو
 ## ملخص
 لا أحد يستطيع التنبؤ بالمستقبل، ولكن يمكنك الاستعداد للعديد من المستقبلات المعقولة. إن تخطيط السيناريوهات، الذي ولد في مؤسسات الفكر والرأي أثناء الحرب الباردة، وأتقنته شركة شل خلال أزمات النفط في السبعينيات، هو وسيلة للتفكير بشكل منهجي بشأن عدم اليقين. فبدلاً من المراهنة على توقعات واحدة، يمكنك بناء قصص متماسكة حول الكيفية التي يمكن أن تتكشف بها الأمور، ثم اختبار قراراتك ضدها جميعًا. وإليك كيفية عمل المنهجية، إلى جانب السيناريوهات عبر المجالات الرئيسية.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #শিক্ষার রূপান্তর
 ## ওভারভিউ
 শিক্ষার গতানুগতিক মডেল—বারো বছর শ্রেণীকক্ষে বসেন, হয়তো বিশ্ববিদ্যালয়ে যান, তারপর চাকরি— ভেঙে যাচ্ছে। এআই টিউটররা এখন স্কেলে ব্যক্তিগতকৃত নির্দেশনা প্রদান করতে পারে। প্রযুক্তিগত পরিবর্তনের গতি মানে জীবনব্যাপী শিক্ষা আর ঐচ্ছিক নয়। এবং নিয়োগকর্তারা ক্রমবর্ধমানভাবে আপনি কী *করতে পারেন* তা নিয়ে চিন্তা করেন, শুধু আপনার কাছে কী প্রমাণপত্র রয়েছে তা নয়। এখানে কিভাবে শিক্ষা পুনর্কল্পনা করা হচ্ছে.

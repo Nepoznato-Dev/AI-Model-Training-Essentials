@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সফটওয়্যার আর্কিটেকচার প্যাটার্নস
 স্থাপত্য হল একটি সিস্টেম কীভাবে সংগঠিত হয় সে সম্পর্কে কাঠামোগত সিদ্ধান্তের সেট — এর কী উপাদান রয়েছে, তারা কীভাবে যোগাযোগ করে এবং দায়িত্বগুলি কোথায় থাকে। ভাল আর্কিটেকচার একটি সিস্টেমকে বোঝা, পরিবর্তন করা এবং স্কেল করা সহজ করে তোলে। খারাপ স্থাপত্য প্রতিটি পরিবর্তন একটি সংগ্রাম করে তোলে. এই ফাইলে প্রধান প্যাটার্ন, কখন প্রতিটি ব্যবহার করতে হবে এবং ট্রেড-অফ জড়িত রয়েছে।
 ---

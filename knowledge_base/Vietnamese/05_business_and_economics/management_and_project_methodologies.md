@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Phương pháp quản lý và dự án
 Quản lý con người và dự án là một trong những trách nhiệm đòi hỏi khắt khe nhất trong bất kỳ tổ chức nào. Kỹ năng kỹ thuật cung cấp cơ hội đầu vào, nhưng khả năng lãnh đạo nhóm, đưa ra quyết định, giao tiếp hiệu quả và đưa ra kết quả sẽ quyết định liệu mục tiêu có đạt được hay không. Tệp này bao gồm các khuôn khổ, phương pháp và kỹ năng thực tế mà các nhà quản lý và lãnh đạo dự án hiệu quả áp dụng.
 ---

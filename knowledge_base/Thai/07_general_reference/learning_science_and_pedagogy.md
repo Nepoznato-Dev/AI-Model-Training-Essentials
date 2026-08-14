@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเรียนรู้วิทยาศาสตร์และการสอน
 การเรียนรู้วิทยาศาสตร์เป็นการศึกษาแบบสหวิทยาการเกี่ยวกับวิธีการเรียนรู้ของผู้คน โดยดึงมาจากจิตวิทยา ประสาทวิทยาศาสตร์ การศึกษา และวิทยาศาสตร์เกี่ยวกับความรู้ความเข้าใจ การเรียนการสอนคือการปฏิบัติและวิธีการสอน พวกเขาร่วมกันตอบคำถามที่เกี่ยวข้องกับใครก็ตามที่สอน ฝึกอบรม พี่เลี้ยง หรือออกแบบเนื้อหาด้านการศึกษา: วิธีใดที่ช่วยให้ผู้คนเรียนรู้ได้อย่างมีประสิทธิภาพ เทคนิคการเรียนทั่วไปอะไรบ้างที่ไม่มีประสิทธิภาพ? การสอนควรมีโครงสร้างอย่างไรเพื่อการเก็บรักษาและการถ่ายโอนที่เหมาะสมที่สุด?
 ---

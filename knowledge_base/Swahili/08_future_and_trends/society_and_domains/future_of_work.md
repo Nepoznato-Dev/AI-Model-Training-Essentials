@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Mustakabali wa Kazi
 ## Muhtasari
 Njia tunayofanya kazi inabadilika haraka kuliko wakati wowote tangu Mapinduzi ya Viwanda. Kazi ya mbali ilitoka kwa manufaa adimu hadi chaguomsingi mara moja. AI inahama kutoka kwa mambo mapya hadi kwa mshirika. Uchumi wa gig unabadilisha maana ya "ajira" hata. Na otomatiki haiji kwa kazi zote - lakini inakuja kwa kazi nyingi ndani ya kazi nyingi. Hapa kuna mwonekano wa nguvu zinazounda upya mahali pa kazi na kile kinachofuata.

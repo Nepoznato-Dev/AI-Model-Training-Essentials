@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 藝術與文學
 人類的創意表達——無論是書籍、繪畫、音樂或電影——是最持久的文明記錄之一。了解主要流派、運動和人物為我們當今生活的世界提供了背景。每部小說、每一部交響樂、每一部電影都與之前的事物對話。
 ---

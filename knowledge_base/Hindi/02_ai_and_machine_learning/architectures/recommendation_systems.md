@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सिफ़ारिश प्रणाली
 अनुशंसा प्रणालियाँ यह अनुमान लगाती हैं कि उपयोगकर्ता आगे क्या देखना, खरीदना या उसके साथ बातचीत करना चाहेगा। वे सोशल मीडिया पर सामग्री फ़ीड, ई-कॉमर्स साइटों पर उत्पाद सुझाव, स्ट्रीमिंग प्लेटफ़ॉर्म पर मूवी चयन और खोज परिणामों को शक्ति प्रदान करते हैं। अधिकांश उपयोगकर्ताओं के लिए अदृश्य होने के बावजूद, वे दुनिया में सबसे व्यावसायिक रूप से प्रभावशाली एआई सिस्टम में से एक हैं - नेटफ्लिक्स का अनुमान है कि इसका अनुशंसा इंजन ग्राहक मंथन को कम करके प्रति वर्ष $ 1 बिलियन से अधिक बचाता है।
 ---

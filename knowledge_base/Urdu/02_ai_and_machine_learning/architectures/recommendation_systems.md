@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سفارشی نظام
 سفارشی نظام پیش گوئی کرتے ہیں کہ صارف اگلا کیا دیکھنا، خریدنا، یا اس کے ساتھ تعامل کرنا چاہے گا۔ وہ سوشل میڈیا پر مواد کی فیڈز، ای کامرس سائٹس پر پروڈکٹ کی تجاویز، اسٹریمنگ پلیٹ فارمز پر مووی پکس، اور تلاش کے نتائج کو طاقت دیتے ہیں۔ زیادہ تر صارفین کے لیے پوشیدہ ہونے کے باوجود، وہ دنیا میں سب سے زیادہ تجارتی اعتبار سے اثر انگیز AI سسٹمز میں سے ہیں — Netflix کا تخمینہ ہے کہ اس کا تجویز کردہ انجن سبسکرائبرز کی کمی کو کم کر کے ہر سال $1 بلین سے زیادہ بچاتا ہے۔
 ---

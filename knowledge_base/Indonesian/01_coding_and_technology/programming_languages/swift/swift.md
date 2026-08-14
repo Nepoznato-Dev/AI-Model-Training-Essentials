@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #cepat
 Swift adalah bahasa pemrograman terkompilasi modern yang dikembangkan oleh Apple (dipimpin oleh Chris Lattner) dan pertama kali dirilis pada tahun 2014. Swift dirancang untuk menggantikan Objective-C sebagai bahasa utama untuk pengembangan platform Apple (iOS, macOS, watchOS, tvOS, visionOS). Swift menggabungkan kinerja bahasa yang dikompilasi dengan ekspresi bahasa skrip, dan menekankan keamanan -- khususnya seputar nilai null, manajemen memori, dan kesalahan ketik.
 Di luar platform Apple, Swift semakin banyak digunakan untuk pengembangan sisi server (Vapor, Hummingbird), aplikasi lintas platform, dan bahkan pembelajaran mesin (Apple's Create ML). Dengan diperkenalkannya Swift di Server dan dukungan lintas platform, Swift menjadi lebih dari sekedar "bahasa Apple".

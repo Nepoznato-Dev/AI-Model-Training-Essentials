@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Haskell
 Haskell tamamen işlevsel, statik olarak yazılan, tembelce değerlendirilen bir programlama dilidir. İlk olarak 1990'da standartlaştırılan (Haskell 90) ve birden fazla versiyonla (Haskell 2010 mevcut standarttır) iyileştirilen Haskell, matematiksel titizliği, güçlü tip sistemi (tip sınıfları, monadlar ve cebirsel veri türleriyle) ve türler aracılığıyla doğruluğa verdiği önemle tanınır.
 Haskell yaygın bir dil olmasa da etkisi çok büyüktür. Monadlar, tembel değerlendirme ve tip sınıfları gibi kavramlar Rust, Swift, Kotlin, Scala ve TypeScript'i etkilemiştir. Haskell finansta (Standard Chartered, Barclays), derleyicilerde (GHC) ve resmi doğrulamada kullanılır.

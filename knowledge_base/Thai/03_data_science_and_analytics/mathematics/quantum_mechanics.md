@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #กลศาสตร์ควอนตัม
 กลศาสตร์ควอนตัมเป็นทฤษฎีฟิสิกส์ในระดับที่เล็กที่สุด ได้แก่ อะตอม อิเล็กตรอน โฟตอน และอนุภาคพื้นฐานของธรรมชาติ มันมาแทนที่โลกที่กำหนดขึ้นของกลศาสตร์คลาสสิกด้วยความน่าจะเป็น การซ้อนทับ และการพัวพัน แม้จะมีธรรมชาติที่ขัดกับสัญชาตญาณ แต่กลศาสตร์ควอนตัมก็เป็นทฤษฎีที่ได้รับการทดสอบอย่างแม่นยำที่สุดในวิทยาศาสตร์ทั้งหมด ในปัจจุบัน หลักการของโปรแกรมนี้มีความเกี่ยวข้องโดยตรงกับการคำนวณผ่านคอมพิวเตอร์ควอนตัม ซึ่งสัญญาว่าจะแก้ไขปัญหาบางอย่างได้เร็วกว่าเครื่องจักรแบบดั้งเดิมแบบทวีคูณ
 ---

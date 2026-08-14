@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mkwaruzo
 Scratch ni lugha inayoonekana, yenye msingi wa programu iliyotengenezwa na MIT Media Lab na ilitolewa kwa mara ya kwanza mwaka wa 2007. Badala ya kuandika msimbo unaotegemea maandishi, watumiaji hupiga pamoja vitalu vya rangi ili kuunda programu. Scratch imeundwa mahususi kwa watoto wa miaka 8-16 (ingawa wanafunzi wa umri wote huitumia) kufundisha dhana za kimsingi za upangaji - vitanzi, masharti, vigeu, matukio na vitendakazi - bila kizuizi cha makosa ya sintaksia.
 Scratch ndiyo lugha ya utangulizi inayotumika zaidi duniani, ikiwa na watumiaji zaidi ya milioni 100 waliosajiliwa na inapatikana katika lugha 70+. Inatumika katika kivinjari cha wavuti na ni bure.

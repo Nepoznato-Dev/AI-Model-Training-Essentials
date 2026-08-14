@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #لوا
 Lua یک زبان برنامه نویسی سبک و قابل جاسازی است که برای توسعه برنامه ها طراحی شده است. Lua که در سال 1993 در دانشگاه کاتولیک پاپی ریودوژانیرو در برزیل ایجاد شد، یکی از سریع ترین زبان های برنامه نویسی موجود است. ردپای کوچک آن (مفسر ~ 120 کیلوبایت است) و سادگی آن را به گزینه ای برای برنامه نویسی توسعه بازی، سیستم های تعبیه شده و پیکربندی تبدیل کرده است.
 Lua بیشتر به عنوان زبان برنامه نویسی پشت Roblox (پلتفرم بازی با بیش از 200 میلیون کاربر ماهانه)، افزونه های World of Warcraft و موتورهای بازی متعدد (Love2D، Defold، Corona SDK) شناخته می شود. همچنین در Nginx (OpenResty)، Redis و Wireshark استفاده می شود.

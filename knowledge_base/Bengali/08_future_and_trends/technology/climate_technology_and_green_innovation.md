@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জলবায়ু প্রযুক্তি এবং সবুজ উদ্ভাবন
 জলবায়ু প্রযুক্তি গ্রিনহাউস গ্যাস নির্গমন কমাতে, জলবায়ু পরিবর্তনের সাথে খাপ খাইয়ে নিতে এবং বিশ্ব অর্থনীতিকে একটি টেকসই অবস্থানে রূপান্তর করার জন্য ডিজাইন করা সরঞ্জাম, সিস্টেম এবং উদ্ভাবনগুলিকে অন্তর্ভুক্ত করে। এটি তর্কাতীতভাবে 21 শতকের সবচেয়ে গুরুত্বপূর্ণ প্রযুক্তির ডোমেন - একটি পরিচালনাযোগ্য 1.5 ডিগ্রি সেলসিয়াস উষ্ণায়ন এবং একটি বিপর্যয়কর 3 ডিগ্রি সেলসিয়াসের মধ্যে পার্থক্য মূলত এই প্রযুক্তিগুলি কত দ্রুত স্কেলে স্থাপন করা যেতে পারে তার উপর নির্ভর করে। চ্যালেঞ্জ শুধু বৈজ্ঞানিক নয়, অর্থনৈতিক, রাজনৈতিক ও সামাজিক।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # कंप्यूटिंग का भविष्य
 कंप्यूटिंग का भविष्य उन ताकतों द्वारा आकार लिया जा रहा है जो पिछले 60 वर्षों की मूलभूत धारणाओं को चुनौती देती हैं। मूर का नियम - यह अवलोकन कि कंप्यूटिंग शक्ति लगभग हर दो साल में दोगुनी हो जाती है - धीमी हो रही है। वॉन न्यूमैन आर्किटेक्चर - अलग सीपीयू और मेमोरी - एक "मेमोरी वॉल" से टकरा रहा है। क्वांटम कंप्यूटिंग उन समस्याओं को हल करने का वादा करती है जो शास्त्रीय कंप्यूटर नहीं कर सकते। न्यूरोमोर्फिक चिप्स मस्तिष्क की वास्तुकला की नकल करते हैं। एज कंप्यूटिंग प्रसंस्करण को केंद्रीकृत डेटा केंद्रों से दूर ले जाती है। और एआई बदल रहा है कि कंप्यूटर किस लिए हैं - निर्देशों को निष्पादित करने वाले उपकरणों से लेकर सीखने, उत्पन्न करने और तर्क करने वाले सिस्टम तक। निर्माण करने, खरीदने या प्रौद्योगिकी पर निर्भर रहने वाले किसी भी व्यक्ति के लिए इन बदलावों को समझना मायने रखता है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ilmu Data dan Analisis
 Ilmu data adalah disiplin mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti. Hal ini merupakan titik temu antara statistik, ilmu komputer, dan keahlian domain — dan hal ini menjadi hal yang penting di setiap sektor, mulai dari keuangan hingga layanan kesehatan. File ini menjelaskan konsep inti, alat, dan alur kerja yang harus diketahui oleh setiap praktisi.
 ---

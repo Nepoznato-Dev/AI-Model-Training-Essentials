@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مستقبل کی صحت کی دیکھ بھال
 ## جائزہ
 دوائی ایک رد عمل والے ماڈل سے منتقل ہو رہی ہے — علامات ظاہر ہونے کے بعد ان کا علاج کریں — جو پیش گوئی کرنے والا، ذاتی نوعیت کا، اور تیزی سے روک تھام کرنے والا ہو۔ جینومکس 3 بلین ڈالر کے پروجیکٹ سے ذیلی $ 1,000 روٹین ٹیسٹ میں چلا گیا ہے۔ AI ڈاکٹروں کے کرنے سے پہلے اسکین میں بیماریوں کی نشاندہی کرنا سیکھ رہا ہے۔ اور دوبارہ پیدا کرنے والی دوا سائنس فکشن کو کلینیکل ٹرائلز میں بدل رہی ہے۔ یہاں تین سب سے بڑی سرحدوں پر کیا ہو رہا ہے: ذاتی دوا، لمبی عمر کی تحقیق، اور دوبارہ پیدا کرنے والی دوا۔

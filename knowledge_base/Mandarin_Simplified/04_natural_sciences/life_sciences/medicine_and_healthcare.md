@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 医药与保健
 医学是诊断、治疗和预防疾病的科学和实践。这是人类最古老的事业之一——希波克拉底誓言可以追溯到古希腊——也是变化最快的事业之一。仅在上个世纪，我们就从没有抗生素发展到拥有可以重写患者 DNA 的基因疗法。
 该文件涵盖了医学的运作方式：主要专业、疾病如何诊断和治疗、医疗保健系统如何组织，以及当人类生命受到威胁时出现的道德问题。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भविष्य का परिवहन
 ## अवलोकन
 ए से बी तक पहुंचना बहुत अलग दिखने वाला है। स्व-चालित कारें पहले से ही सार्वजनिक सड़कों पर हैं। इलेक्ट्रिक विमान परीक्षण उड़ानें पूरी कर रहे हैं। हाइपरलूप अवधारणाएं वैक्यूम ट्यूबों में ट्रेन-स्पीड यात्रा का वादा करती हैं। और उड़ने वाली टैक्सियाँ - जो कभी कार्टून का सामान हुआ करती थीं - प्रमाणन में प्रवेश कर रही हैं। हम कैसे आगे बढ़ते हैं, इसे नया आकार देने वाली प्रौद्योगिकियों में खेल की स्थिति यहां दी गई है।

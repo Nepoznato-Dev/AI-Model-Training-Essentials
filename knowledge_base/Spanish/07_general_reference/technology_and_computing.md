@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Tecnología y Computación
 La informática está en todas partes: en su teléfono, su automóvil, su refrigerador, sus dispositivos médicos y la infraestructura que rige la sociedad moderna. No es necesario ser programador para comprender cómo funciona todo. Este archivo cubre los fundamentos: qué es una computadora, cómo funciona Internet, cómo se construye el software y los conceptos que dan forma al mundo digital.
 > **¿Quieres profundizar más?** Este archivo es una descripción general amplia. Para obtener una cobertura detallada de cualquier tema, consulte los archivos dedicados en [`01_coding_and_technology/`](../01_coding_and_technology/), incluidos [database systems](../01_coding_and_technology/database_systems.md), [cloud architecture](../01_coding_and_technology/cloud_architecture.md),[networking](../01_coding_and_technology/networking_basics.md)y.

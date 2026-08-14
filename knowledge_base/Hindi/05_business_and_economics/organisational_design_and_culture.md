@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #संगठनात्मक डिजाइन और संस्कृति
 संगठनात्मक डिज़ाइन रणनीति को प्रभावी ढंग से निष्पादित करने के लिए संरचना, प्रक्रियाओं, भूमिकाओं और निर्णय अधिकारों की जानबूझकर की गई व्यवस्था है। संस्कृति साझा मूल्य, विश्वास, मानदंड और व्यवहार है जो आकार देते हैं कि लोग वास्तव में एक साथ कैसे काम करते हैं। संरचना रूपरेखा प्रदान करती है; संस्कृति व्यवहार को आकार देती है। एक संरचना को कागज पर फिर से डिजाइन किया जा सकता है, लेकिन अगर संस्कृति परिवर्तन का समर्थन नहीं करती है, तो कार्यान्वयन विफल हो जाएगा। इसी तरह, एक अप्रभावी संरचना के साथ जोड़ी गई एक मजबूत संस्कृति धीरे-धीरे संगठनात्मक प्रदर्शन को कमजोर कर देगी। सबसे प्रभावी संगठन दोनों को संबोधित करते हैं - और मानते हैं कि वे गहराई से जुड़े हुए हैं।
 ---

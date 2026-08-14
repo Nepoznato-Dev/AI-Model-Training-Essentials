@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # JavaScript
 JavaScript — это динамический интерпретируемый язык программирования, созданный Бренданом Эйхом всего за 10 дней в 1995 году. Первоначально созданный для добавления интерактивности веб-страницам, он превратился в наиболее широко используемый язык программирования в мире. JavaScript работает в каждом веб-браузере, на серверах через Node.js, в настольных приложениях (Electron), мобильных приложениях (React Native) и даже во встроенных системах.
 Этот язык уникален тем, что это, по сути, единственный вариант веб-разработки на стороне клиента — каждый браузер поддерживает его изначально. Эта монополия в сочетании с развитием полнофункционального JavaScript (Node.js, Deno, Bun) делает его незаменимым.

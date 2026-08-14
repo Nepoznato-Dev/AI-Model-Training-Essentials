@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neue Technologien
 ## Übersicht
 Bestimmte Technologien schaffen völlig neue Leistungskategorien, anstatt bestehende schrittweise zu verbessern. Quantencomputing zielt darauf ab, Probleme zu lösen, für die klassische Maschinen Jahrtausende brauchen würden. Fusionsenergie bietet die Möglichkeit praktisch unbegrenzter sauberer Energie. Gehirn-Computer-Schnittstellen verbinden Geist und Maschine. Die synthetische Biologie ermöglicht das Umschreiben biologischen Codes. In den folgenden Abschnitten wird beschrieben, wo jede dieser Grenzen heute steht und wohin sie sich aufgrund aktueller Trends entwickeln wird.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Bahasa Majelis
 Bahasa assembly adalah bahasa pemrograman tingkat terendah yang dapat dibaca manusia. Ini memberikan representasi langsung dari instruksi kode mesin komputer menggunakan kode mnemonik (seperti`MOV`,`ADD`,`JMP`) dan bukan biner mentah. Setiap bahasa rakitan khusus untuk arsitektur prosesor tertentu (x86, ARM, MIPS, RISC-V) — kode yang ditulis untuk satu arsitektur tidak akan berjalan di arsitektur lain.
 Bahasa assembly tidak digunakan untuk membangun aplikasi. Ini digunakan ketika Anda memerlukan kendali mutlak atas perangkat keras: menulis kernel sistem operasi, driver perangkat, bootloader, firmware tertanam, bagian kode yang kritis terhadap kinerja, rekayasa balik, dan memahami bagaimana komputer sebenarnya menjalankan instruksi.

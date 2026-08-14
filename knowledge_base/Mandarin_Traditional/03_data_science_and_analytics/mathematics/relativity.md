@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 相對論
 愛因斯坦的相對論徹底改變了我們對空間、時間和重力的理解。 **狹義相對論**（1905）表明，空間和時間不是分開的，而是編織成一個稱為時空的單一結構，並且光速對於所有觀察者來說都是相同的。 **廣義相對論**（1915）將重力重新想像為由質量和能量引起的時空彎曲，而不是一種力。這些理論支撐著 GPS 導航、粒子加速器以及我們對黑洞和宇宙演化的理解。
 ---

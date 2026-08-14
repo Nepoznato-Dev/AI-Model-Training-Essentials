@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # روش های تست
 آزمایش به این معنی است که چگونه می‌توانید اطمینان حاصل کنید که کدتان کار می‌کند - و مهمتر از آن، اینکه تغییرات در آن چیزی که قبلاً کار می‌کرد را خراب نمی‌کند. آزمایش خوب قبل از اینکه کاربران انجام دهند، اشکالات را شناسایی می کند، رفتار مورد انتظار را مستند می کند و بازسازی بی باک را امکان پذیر می کند. این فایل طیف کاملی از استراتژی‌های تست، از تست‌های واحد گرفته تا تست‌های انتها به انتها، و اصولی که تست را موثر می‌سازد را پوشش می‌دهد.
 ---

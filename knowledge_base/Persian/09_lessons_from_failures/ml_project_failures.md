@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # شکست پروژه یادگیری ماشین
 پروژه‌های یادگیری ماشینی با سرعت هشداردهنده‌ای شکست می‌خورند – برآوردهای صنعت نشان می‌دهد که 60 تا 85 درصد پروژه‌های ML هرگز به تولید نمی‌رسند. خرابی ها معمولاً در الگوریتم ها نیستند. آنها در فرآیند، داده ها، انتظارات و زمینه سازمانی هستند. درک اینکه چرا پروژه های ML شکست می خورند برای هر کسی که سیستم های ML را می سازد ضروری است، زیرا حالت های شکست قابل پیش بینی و تا حد زیادی قابل اجتناب هستند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # グラフ理論
 **グラフ** は、エッジ (リンク) で接続された頂点 (ノード) で構成される数学的構造です。グラフは、ソーシャル ネットワーク、ロードマップ、ニューラル ネットワーク、依存関係、通信チャネルなどの関係をモデル化します。グラフ理論 (これらの構造の研究) は、コンピューター サイエンス、オペレーション リサーチ、データ サイエンスの中心となるアルゴリズムと定理を提供します。
 ---

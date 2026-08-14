@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Javascript
 JavaScript là ngôn ngữ lập trình động, được diễn giải do Brendan Eich tạo ra chỉ trong 10 ngày vào năm 1995. Ban đầu được thiết kế để thêm tính tương tác vào các trang web, nó đã phát triển thành ngôn ngữ lập trình được sử dụng rộng rãi nhất trên thế giới. JavaScript chạy trong mọi trình duyệt web, trên máy chủ thông qua Node.js, trong ứng dụng máy tính để bàn (Electron), ứng dụng di động (React Native) và thậm chí cả các hệ thống nhúng.
 Ngôn ngữ này độc đáo ở chỗ về cơ bản nó là lựa chọn duy nhất để phát triển web phía máy khách - mọi trình duyệt đều hỗ trợ ngôn ngữ này. Sự độc quyền này, kết hợp với sự gia tăng của JavaScript full-stack (Node.js, Deno, Bun), khiến nó trở nên không thể thiếu.

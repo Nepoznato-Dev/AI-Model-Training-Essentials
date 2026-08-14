@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গেম থিওরি
 গেম থিওরি হল কৌশলগত মিথস্ক্রিয়া - এমন পরিস্থিতিতে যেখানে আপনার ফলাফল শুধুমাত্র আপনার নিজের পছন্দের উপর নয়, অন্যদের পছন্দের উপর নির্ভর করে। কোম্পানির মধ্যে মূল্য নির্ধারণের যুদ্ধ থেকে শুরু করে পারমাণবিক অস্ত্রের প্রতিযোগিতা, অনলাইন নিলাম থেকে বিবর্তনীয় জীববিজ্ঞান পর্যন্ত, গেম থিওরি দ্বন্দ্ব এবং সহযোগিতা বিশ্লেষণের জন্য সরঞ্জাম সরবরাহ করে। এটি মাল্টি-এজেন্ট রিইনফোর্সমেন্ট লার্নিং, জেনারেটিভ অ্যাডভারসারিয়াল নেটওয়ার্ক (GAN) এবং অনলাইন প্ল্যাটফর্মের জন্য মেকানিজম ডিজাইনের মাধ্যমে মেশিন লার্নিংয়ের সাথে ক্রমশ প্রাসঙ্গিক হয়ে উঠেছে।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ciência e Natureza
 A ciência é a forma como descobrimos o que o universo está realmente fazendo – não o que presumimos que ele esteja fazendo, não o que os textos antigos dizem que ele faz, mas o que a observação cuidadosa e a experimentação revelam. O método científico é em princípio simples: observe algo, forme uma hipótese, teste-a e revise seu entendimento com base nos resultados. O que torna a ciência poderosa é que ela é autocorretiva. Cada reivindicação é provisória – aceita apenas até que surjam melhores evidências.
 Este arquivo cobre os principais ramos das ciências naturais: física, química, biologia e ciências da Terra e do espaço. Pense nisso como um mapa do mundo físico.

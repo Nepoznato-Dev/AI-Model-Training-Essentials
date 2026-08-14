@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp と Clojure
 Lisp は、1958 年に John McCarthy によって作成され、現在でも使用されている (Fortran に次ぐ) 2 番目に古い高級プログラミング言語です。Lisp は、ガベージ コレクション、再帰、ツリー データ構造、動的型付け、データとしてのプログラムの考え方 (ホモイコニシティ) など、現在では当然のことと考えられている多くの概念の先駆けとなりました。 Lisp の特徴はその構文です。コードは入れ子の括弧 (S 式) として記述されます。これにより言語が簡単に解析可能になり、**マクロ** による強力なメタプログラミングが可能になります。
 Clojure は、2007 年に Rich Hickey によって設計された最新の Lisp 言語です。JVM (JavaScript 用の ClojureScript とも) 上で実行され、関数型プログラミング、不変性、同時実行性を採用し、シームレスな Java 相互運用性を提供します。 Clojure は、Web 開発、データ処理、金融システムで使用されています。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Teoria gier
 Teoria gier to matematyka interakcji strategicznej — sytuacji, w których wynik zależy nie tylko od twoich własnych wyborów, ale od wyborów innych. Od wojen cenowych między firmami po wyścigi zbrojeń nuklearnych, od aukcji internetowych po biologię ewolucyjną – teoria gier dostarcza narzędzi do analizy konfliktów i współpracy. Staje się coraz bardziej istotna w uczeniu maszynowym poprzez wieloagentowe uczenie się przez wzmacnianie, generatywne sieci kontradyktoryjne (GAN) i projektowanie mechanizmów dla platform internetowych.
 ---

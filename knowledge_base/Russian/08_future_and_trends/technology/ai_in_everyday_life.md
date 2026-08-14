@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ИИ в повседневной жизни
 Искусственный интеллект больше не является футуристической концепцией — он встроен в повседневную жизнь. С того момента, как вы просыпаетесь и проверяете свой телефон (алгоритмы рекомендаций решают, какие уведомления вы видите) до момента, когда вы засыпаете (ваш умный динамик обрабатывает вашу последнюю команду), системы искусственного интеллекта принимают решения от вашего имени, за вас, а иногда и за вас. Понимание того, где появляется ИИ, как он работает на базовом уровне и каковы его последствия, больше не является обязательным — это требование для информированного гражданства в 21 веке.
 ---

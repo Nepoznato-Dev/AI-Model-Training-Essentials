@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # میوزک تھیوری اور صوتی
 موسیقی کا نظریہ اس بات کا مطالعہ ہے کہ موسیقی کیسے کام کرتی ہے - وہ نمونے، ڈھانچے، اور اصول جو آوازوں کے کچھ مجموعے کو خوش کن یا معنی خیز بناتے ہیں اور دوسروں کو متضاد یا انتشار کا شکار بناتے ہیں۔ صوتیات آواز کی طبیعیات ہے — کس طرح کمپن ہوا کے ذریعے سفر کرتی ہے، وہ کیسے پیدا ہوتی ہیں اور سمجھی جاتی ہیں۔ ایک ساتھ، وہ بتاتے ہیں کہ C میجر راگ کیوں خوش لگتا ہے، کیوں ایک چھوٹی کلید اداس محسوس ہوتی ہے، کنسرٹ ہال کیسے ڈیزائن کیے گئے ہیں، اور آپ کا پسندیدہ گانا آپ کو ٹھنڈا کیوں دیتا ہے۔
 ---

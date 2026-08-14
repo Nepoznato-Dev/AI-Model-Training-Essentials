@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Sviluppo mobile
 Lo sviluppo mobile è la pratica di creare applicazioni per smartphone e tablet, principalmente per iOS (Apple) e Android (Google). Comprende tutto, dalla progettazione dell'interfaccia utente per schermi di piccole dimensioni alla gestione della durata della batteria, alla gestione dell'instabilità della rete e alla distribuzione delle app attraverso gli store. Il campo è maturato in modo significativo, con framework multipiattaforma che ora competono con lo sviluppo nativo per la maggior parte dei casi d’uso.
 ---

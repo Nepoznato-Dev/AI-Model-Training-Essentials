@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C#
 C#（发音为“C-sharp”）是一种现代的、面向对象的、类型安全的编程语言，由 Microsoft 在 Anders Hejlsberg 的领导下开发，并于 2002 年首次发布。它运行在 .NET 平台上，旨在将 C++ 的强大功能与 Visual Basic 的生产力结合起来。如今，C# 是一种多功能、跨平台语言，用于 Web 应用程序 (ASP.NET)、桌面软件 (Windows)、游戏开发 (Unity)、移动应用程序 (MAUI)、云服务 (Azure) 等。
 C# 不断吸收其他语言的最佳思想——LINQ、异步/等待、记录、模式匹配——使其成为功能最丰富、对开发人员最友好的语言之一。

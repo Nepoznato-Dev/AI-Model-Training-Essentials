@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Xử lý giọng nói và âm thanh
 Xử lý giọng nói và âm thanh bao gồm các công nghệ cho phép máy nghe, hiểu, tạo và xử lý âm thanh. Điều này bao gồm nhận dạng giọng nói (chuyển lời nói thành văn bản), tổng hợp giọng nói (chuyển văn bản thành lời nói), nhận dạng người nói, tạo nhạc và hiểu âm thanh môi trường. Lĩnh vực này đã được chuyển đổi nhờ học sâu - các hệ thống hiện đại tiếp cận độ chính xác ở cấp độ con người để nhận dạng giọng nói và tạo ra giọng nói tổng hợp tự nhiên kỳ lạ.
 ---

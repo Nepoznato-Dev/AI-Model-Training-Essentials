@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 천문학과 우주론
 천문학은 별, 행성, 은하 및 지구 대기권 너머의 모든 천체를 연구하는 학문입니다. 우주론은 우주 전체, 즉 기원, 구조, 진화, 최종 운명에 대한 연구입니다. 그들은 함께 인간이 물어본 가장 근본적인 질문 중 일부인 우주는 어떻게 시작되었는가를 다룹니다. 얼마나 크나요? 우리는 혼자입니까? 결국에는 어떻게 될까요?
 ---

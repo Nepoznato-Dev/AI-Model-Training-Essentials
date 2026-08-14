@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ریاضیات گسسته
 ریاضیات گسسته مطالعه ساختارهای ریاضی است که اساساً قابل شمارش یا جدا هستند - برخلاف ریاضیات پیوسته (حساب حساب، تجزیه و تحلیل واقعی) که با کمیت های صاف و ناگسستنی سروکار دارد. ریاضیات گسسته زیربنای علوم کامپیوتر، رمزنگاری، طراحی الگوریتم و ساختارهای داده است. اگر ریاضیات پیوسته دنیای فیزیکی را توصیف می کند، ریاضیات گسسته دنیای محاسباتی را توصیف می کند.
 ---

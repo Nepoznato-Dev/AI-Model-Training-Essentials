@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # मतलब
 MATLAB (मैट्रिक्स प्रयोगशाला) एक उच्च-स्तरीय, व्याख्या की गई प्रोग्रामिंग भाषा और वातावरण है जिसे संख्यात्मक कंप्यूटिंग, मैट्रिक्स संचालन और इंजीनियरिंग/वैज्ञानिक अनुप्रयोगों के लिए डिज़ाइन किया गया है। मैथवर्क्स द्वारा विकसित और पहली बार 1984 में जारी किया गया, MATLAB कई इंजीनियरिंग विषयों - इलेक्ट्रिकल इंजीनियरिंग, नियंत्रण प्रणाली, सिग्नल प्रोसेसिंग, इमेज प्रोसेसिंग और संचार में मानक उपकरण है।
 MATLAB व्यापक टूलबॉक्स (ऐड-ऑन पैकेज) और सिमुलिंक विज़ुअल सिमुलेशन वातावरण के साथ एक शक्तिशाली मैट्रिक्स-उन्मुख भाषा को जोड़ती है। उत्पादन कोड में लागू करने से पहले प्रोटोटाइप एल्गोरिदम के लिए अकादमिक और उद्योग में इसका व्यापक रूप से उपयोग किया जाता है।

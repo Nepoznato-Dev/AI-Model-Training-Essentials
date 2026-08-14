@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বিশ্ব ধর্ম এবং তুলনামূলক পুরাণ
 বিশ্ব ধর্ম হল বিশ্বাস, অনুশীলন এবং সম্প্রদায়ের প্রধান ব্যবস্থা যা হাজার হাজার বছর ধরে মানব সভ্যতাকে রূপ দিয়েছে। তুলনামূলক পৌরাণিক কাহিনী অধ্যয়ন করে যে গল্পগুলি বিভিন্ন সংস্কৃতির সৃষ্টি, নায়ক, দেবতা এবং অস্তিত্বের অর্থ সম্পর্কে বলে — এবং আকর্ষণীয় নিদর্শন যা হাজার হাজার মাইল এবং সহস্রাব্দ দ্বারা বিভক্ত ঐতিহ্য জুড়ে পুনরাবৃত্তি হয়। লোকেরা কেন তারা কী বিশ্বাস করে, সংস্কৃতিগুলি কীভাবে আলাদা এবং কী মানব অভিজ্ঞতাকে একত্রিত করে তা বোঝার জন্য উভয়টি বোঝা অপরিহার্য।
 ---

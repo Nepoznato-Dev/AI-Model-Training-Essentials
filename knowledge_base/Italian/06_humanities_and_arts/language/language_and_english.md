@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lingua e inglese
 Oggi nel mondo si parlano circa 7.000 lingue. L'inglese è la seconda lingua più parlata e funge da lingua predefinita per gli affari internazionali, la scienza, l'aviazione e Internet. Che si tratti di scrivere documentazione sul codice, leggere documenti di ricerca o comunicare oltre confine, una solida padronanza dell'inglese (grammatica, vocabolario e retorica) è una delle abilità più pratiche che si possano sviluppare.
 Questo file copre gli elementi essenziali: grammatica, punteggiatura, trappole comuni, tecnica di scrittura e comunicazione chiara.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #سوئیفت
 سوئیفت یک زبان برنامه نویسی مدرن و کامپایل شده است که توسط اپل (به رهبری کریس لاتنر) توسعه یافته و اولین بار در سال 2014 منتشر شد. این زبان برای جایگزینی Objective-C به عنوان زبان اصلی برای توسعه پلتفرم اپل (iOS، macOS، watchOS، tvOS، visionOS) طراحی شده است. سوئیفت عملکرد زبان‌های کامپایل شده را با بیان زبان‌های برنامه‌نویسی ترکیب می‌کند و بر ایمنی تأکید می‌کند - به ویژه در مورد مقادیر تهی، مدیریت حافظه و خطاهای نوع.
 فراتر از پلتفرم های اپل، سوئیفت به طور فزاینده ای برای توسعه سمت سرور (Vapor، Hummingbird)، برنامه های کاربردی بین پلتفرمی و حتی یادگیری ماشینی (Apple's Create ML) استفاده می شود. با معرفی سوئیفت روی سرور و پشتیبانی از پلتفرم های مختلف، سوئیفت به چیزی بیش از یک «زبان اپل» تبدیل شده است.

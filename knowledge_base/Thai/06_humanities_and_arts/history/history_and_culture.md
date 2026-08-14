@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ประวัติศาสตร์และวัฒนธรรม
 ประวัติศาสตร์คือเรื่องราวของสิ่งที่มนุษย์ทำ ความสำเร็จ ความหายนะ สิ่งประดิษฐ์ และแนวคิดที่หล่อหลอมโลกที่เราอาศัยอยู่ในทุกวันนี้ ไม่ใช่แค่รายการวันที่และชื่อเท่านั้น การทำความเข้าใจประวัติศาสตร์ช่วยให้คุณเข้าใจว่าทำไมพรมแดนถึงอยู่ตรงนั้น ทำไมผู้คนจึงพูดภาษาที่พวกเขาพูด ทำไมบางประเทศจึงร่ำรวยแต่บางประเทศไม่มี และเหตุใดความขัดแย้งที่ดูเหมือนจะมีมาแต่โบราณจึงยังคงลุกลาม
 ไฟล์นี้ครอบคลุมช่วงเวลาและประเด็นหลักๆ ในประวัติศาสตร์โลก ตั้งแต่อารยธรรมแรกเริ่มจนถึงปัจจุบัน

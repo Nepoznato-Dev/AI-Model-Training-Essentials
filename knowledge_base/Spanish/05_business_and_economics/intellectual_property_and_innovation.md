@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Propiedad Intelectual e Innovación
 La propiedad intelectual (PI) se refiere a creaciones de la mente (invenciones, obras artísticas, marcas, diseños, secretos comerciales) que la ley protege del uso no autorizado. La innovación es el proceso de convertir ideas en valor. La legislación sobre propiedad intelectual existe para equilibrar dos intereses contrapuestos: recompensar a los creadores (otorgándoles monopolios temporales) y beneficiar a la sociedad (garantizando que el conocimiento eventualmente esté disponible gratuitamente). Comprender la propiedad intelectual es esencial para cualquiera que cree productos, cree contenidos, dirija una empresa o trabaje en investigación.
 ---

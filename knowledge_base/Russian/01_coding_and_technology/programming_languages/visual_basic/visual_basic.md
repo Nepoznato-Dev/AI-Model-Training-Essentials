@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Визуальный Бейсик
 Visual Basic (VB) — язык программирования, разработанный Microsoft. Он развивался через несколько поколений: исходный Visual Basic (1991 г.), Visual Basic 6.0 (1998 г.), VB.NET (2002 г., часть .NET Framework) и Visual Basic ..NET (нынешний, теперь называемый просто «Visual Basic» как часть .NET). VB был разработан, чтобы быть доступным для новичков и специалистов по быстрой разработке приложений (RAD), с упором на графические пользовательские интерфейсы и программирование, управляемое событиями.
 Сегодня VB.NET продолжает оставаться частью экосистемы .NET наряду с C#, хотя Microsoft указала, что C# является основным языком в будущем. VB по-прежнему широко используется в корпоративных средах, особенно для устаревших приложений Windows, автоматизации Office (VBA) и внутренних бизнес-инструментов.

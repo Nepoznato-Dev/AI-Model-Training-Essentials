@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pag-optimize
 Ang pag-optimize ay ang matematika ng paghahanap ng pinakamahusay na solusyon mula sa isang hanay ng mga magagawang solusyon. Nagtatanong ito: binigyan ng isang function at mga hadlang, anong input ang nagpapaliit (o nag-maximize) sa output? Ang pag-optimize ay ang makina ng machine learning — ang pagsasanay sa isang modelo ay nangangahulugan ng pagliit ng isang function ng pagkawala. Lumilitaw ito sa pananaliksik sa pagpapatakbo, ekonomiya, disenyo ng inhinyero, at halos lahat ng larangan ng dami.
 ---

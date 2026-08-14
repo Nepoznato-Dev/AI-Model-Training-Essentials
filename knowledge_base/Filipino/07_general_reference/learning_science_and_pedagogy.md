@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Learning Science at Pedagogy
 Ang pag-aaral ng agham ay ang interdisciplinary na pag-aaral kung paano natututo ang mga tao — pagguhit mula sa sikolohiya, neuroscience, edukasyon, at cognitive science. Ang pedagogy ay ang kasanayan at pamamaraan ng pagtuturo. Sama-sama, tinutugunan nila ang mga tanong na may kaugnayan sa sinumang nagtuturo, nagsasanay, nagtuturo, o nagdidisenyo ng nilalamang pang-edukasyon: Anong mga pamamaraan ang tumutulong sa mga tao na matuto nang epektibo? Anong mga karaniwang pamamaraan ng pag-aaral ang hindi epektibo? Paano dapat ayusin ang pagtuturo para sa pinakamainam na pagpapanatili at paglipat?
 ---

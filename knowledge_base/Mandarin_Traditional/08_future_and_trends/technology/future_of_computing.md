@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 計算的未來
 挑戰過去 60 年基本假設的力量正在塑造計算的未來。摩爾定律——計算能力大約每兩年翻一番——正在放緩。馮·諾依曼架構——獨立的 CPU 和記憶體——正在撞上「記憶體牆」。量子計算有望解決經典計算機無法解決的問題。神經形態晶片模仿大腦的結構。邊緣運算使處理遠離集中式資料中心。人工智慧正在改變電腦的用途——從執行指令的工具到學習、生成和推理的系統。了解這些轉變對於任何建造、購買或依賴技術的人都很重要。
 ---

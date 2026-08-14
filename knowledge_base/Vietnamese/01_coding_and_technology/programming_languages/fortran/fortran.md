@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Fortran
 Fortran (Dịch công thức) là ngôn ngữ lập trình cấp cao lâu đời nhất vẫn được sử dụng rộng rãi, được IBM phát triển lần đầu tiên vào năm 1957 để tính toán khoa học và kỹ thuật. Bất chấp tuổi đời của nó, Fortran hiện đại (Fortran 2008/2018/2023) là một ngôn ngữ hiệu suất cao, có khả năng được sử dụng rộng rãi trong dự đoán thời tiết bằng số, động lực học chất lỏng tính toán, mô phỏng vật lý, mô hình tài chính và điện toán hiệu năng cao (HPC). Nhiều siêu máy tính nhanh nhất thế giới chạy mã Fortran.
 Ngôn ngữ đã phát triển đáng kể từ những ngày đầu của nó. Fortran hiện đại có các mô-đun, loại dẫn xuất, quy trình chung, coarrays (lập trình song song) và khả năng tương tác với C. Nó vẫn là ngôn ngữ được lựa chọn cho nhiều ứng dụng điện toán khoa học trong đó hiệu suất là điều tối quan trọng.

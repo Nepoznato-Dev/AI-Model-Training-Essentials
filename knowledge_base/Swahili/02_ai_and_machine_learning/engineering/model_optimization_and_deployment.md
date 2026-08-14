@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uboreshaji wa Mfano na Usambazaji
 Kufunza muundo mkubwa wa AI ni mafanikio makubwa, lakini kuusambaza kwa ufanisi ndipo juhudi nyingi za uhandisi zinahitajika. Muundo unaochukua sekunde 10 kujibu au unaohitaji GPU nane za A100 hauwezi kutumika kwa programu nyingi za ulimwengu halisi. Uboreshaji wa miundo ni mchakato wa kufanya miundo kuwa ndogo, haraka, na ya gharama nafuu zaidi - huku ikidumisha ubora unaokubalika. Faili hii inashughulikia ukadiriaji, upogoaji, kunereka, na zana za vitendo za kupeleka miundo katika uzalishaji.
 ---

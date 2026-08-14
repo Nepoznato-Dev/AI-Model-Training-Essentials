@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Transformacja edukacji
 ## Przegląd
 Tradycyjny model edukacji – siedzieć w klasie przez dwanaście lat, może pójść na uniwersytet, a potem pracować – załamuje się. Nauczyciele AI mogą teraz zapewniać spersonalizowane instrukcje na dużą skalę. Tempo zmian technologicznych oznacza, że ​​uczenie się przez całe życie nie jest już opcjonalne. A pracodawców coraz bardziej interesuje to, co potrafisz *zrobić*, a nie tylko to, jakie posiadasz kwalifikacje. Oto jak na nowo postrzega się edukację.

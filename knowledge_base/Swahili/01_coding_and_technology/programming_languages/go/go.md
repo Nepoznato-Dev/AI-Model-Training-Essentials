@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Nenda
 Go (mara nyingi huitwa "Golang" baada ya jina lake la asili la kikoa) ni lugha ya programu iliyoandikwa kwa kitakwimu, iliyokusanywa katika Google na Robert Griesemer, Rob Pike na Ken Thompson. Ilitolewa kwa mara ya kwanza mwaka wa 2012 kwa lengo bayana la kuwa lugha bora kwa utayarishaji wa mifumo -- ambayo inachanganya utendaji wa C na tija ya lugha zinazobadilika kama Python. Go inajulikana kwa urahisi wake, mkusanyo wa haraka, upatanifu uliojengewa ndani (goroutines na chaneli), na utumiaji bora wa zana.
 Go hutawala sehemu kubwa ya mfumo wa miundombinu ya wingu: Docker, Kubernetes, Terraform, Prometheus, etcd, na seva ya HTTP ya maktaba ya Go zote zimeandikwa katika Go. Imekuwa lugha chaguo-msingi kwa ukuzaji wa asili wa wingu, huduma ndogo, na zana za CLI.

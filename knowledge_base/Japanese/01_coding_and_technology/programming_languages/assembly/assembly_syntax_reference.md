@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # アセンブリ言語 — 構文リファレンス
 このドキュメントは、x86-64 アセンブリ (NASM 構文) の包括的で構造化された構文リファレンスを提供します。これは、網羅的な命令カテゴリ、アドレス指定モード、スタック フレーム規則、およびシステム プログラミング パターンに焦点を当て、メインのアセンブリ リファレンスを補完します。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Go — 構文リファレンス
 このドキュメントは、Go の包括的で構造化された構文リファレンスを提供します。網羅的な構文パターン、演算子テーブル、ゴルーチン、チャネル、インターフェイスの内部機構に焦点を当て、メインの Go リファレンスを補完します。
 ---

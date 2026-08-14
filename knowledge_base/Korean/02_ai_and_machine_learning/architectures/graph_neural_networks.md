@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 그래프 신경망
 그래프 신경망(GNN)은 그래프 구조 데이터(에지로 연결된 노드 네트워크)에서 작동하도록 설계된 신경망입니다. 기존 신경망은 그리드(이미지) 또는 시퀀스(텍스트)에서 작동하지만 GNN은 소셜 네트워크, 분자 그래프, 지식 그래프, 도로 네트워크, 추천 그래프 등 임의의 관계 구조를 처리합니다. 이는 약물 발견, 사기 탐지, 추천 시스템 및 엔터티 간의 관계가 중요한 모든 영역에 필수적입니다.
 ---

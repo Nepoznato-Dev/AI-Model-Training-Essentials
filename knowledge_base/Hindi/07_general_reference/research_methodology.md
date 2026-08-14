@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # अनुसंधान क्रियाविधि
 अनुसंधान पद्धति प्रश्नों की जांच करने, परिकल्पनाओं का परीक्षण करने और विश्वसनीय ज्ञान उत्पन्न करने का व्यवस्थित दृष्टिकोण है। चाहे आप वैज्ञानिक प्रयोग, सामाजिक विज्ञान सर्वेक्षण, व्यवसाय विश्लेषण, या अकादमिक अनुसंधान कर रहे हों, आपके द्वारा चुनी गई पद्धति यह निर्धारित करती है कि आपके निष्कर्ष विश्वसनीय, प्रतिलिपि प्रस्तुत करने योग्य और उपयोगी हैं या नहीं। एक अच्छी तरह से डिज़ाइन किया गया अध्ययन भरोसेमंद परिणाम देता है; खराब तरीके से डिज़ाइन किया गया शोर पैदा करता है - या इससे भी बदतर, आत्मविश्वास से भरे गलत उत्तर।
 ---

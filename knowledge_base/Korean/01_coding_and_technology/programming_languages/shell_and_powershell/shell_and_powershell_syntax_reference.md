@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 셸 및 PowerShell - 구문 참조
 이 문서는 Bash 및 PowerShell에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 두 셸 모두에 대한 철저한 스크립팅 패턴, 파이프라인, 프로세스 관리 및 자동화 관용어에 중점을 두어 기본 셸 참조를 보완합니다.
 ---

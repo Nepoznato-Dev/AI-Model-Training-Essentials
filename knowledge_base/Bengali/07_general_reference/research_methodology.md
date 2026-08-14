@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গবেষণা পদ্ধতি
 গবেষণা পদ্ধতি হল প্রশ্ন অনুসন্ধান, অনুমান পরীক্ষা এবং নির্ভরযোগ্য জ্ঞান তৈরি করার পদ্ধতিগত পদ্ধতি। আপনি বৈজ্ঞানিক পরীক্ষা-নিরীক্ষা, সামাজিক বিজ্ঞান সমীক্ষা, ব্যবসায়িক বিশ্লেষণ বা একাডেমিক গবেষণা পরিচালনা করছেন না কেন, আপনি যে পদ্ধতিটি বেছে নিয়েছেন তা নির্ধারণ করে আপনার ফলাফলগুলি বিশ্বাসযোগ্য, পুনরুত্পাদনযোগ্য এবং দরকারী কিনা। একটি ভাল-পরিকল্পিত অধ্যয়ন বিশ্বস্ত ফলাফল তৈরি করে; একটি খারাপভাবে ডিজাইন করা একটি শব্দ তৈরি করে - বা আরও খারাপ, আত্মবিশ্বাসী ভুল উত্তর।
 ---

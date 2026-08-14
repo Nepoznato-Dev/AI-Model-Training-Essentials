@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lingüística e Ciência da Linguagem
 Lingüística é o estudo científico da linguagem – sua estrutura, significado, uso, aquisição e evolução. A linguagem é uma característica definidora da comunicação humana: é infinitamente produtiva (os falantes podem criar e compreender frases que nunca encontraram antes), é transmitida culturalmente (é aprendida e não puramente inata) e está em constante evolução. Compreender como a linguagem funciona é relevante para qualquer pessoa que desenvolva tecnologias linguísticas, ensine, traduza ou trabalhe para se comunicar de forma mais eficaz.
 ---

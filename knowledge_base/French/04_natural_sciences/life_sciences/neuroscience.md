@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neurosciences
 Les neurosciences étudient le système nerveux : le cerveau, la moelle épinière et tous les nerfs qui les relient au corps. Il s’étend sur plusieurs niveaux : des molécules et des gènes aux neurones et synapses individuels, en passant par les circuits et les régions du cerveau, jusqu’au comportement, à la cognition et à la conscience. Le cerveau est la structure la plus complexe de l’univers connu, contenant environ 86 milliards de neurones reliés par des milliards de synapses, et comprendre son fonctionnement constitue l’un des grands défis de la science.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mifumo Inayobadilika
 **mfumo unaobadilika** unaeleza jinsi hali inavyobadilika baada ya muda kulingana na kanuni maalum. Kutoka kwa mizunguko ya sayari hadi mienendo ya idadi ya watu, kutoka kwa mifumo ya hali ya hewa hadi mafunzo ya mitandao ya neva, nadharia ya mifumo inayobadilika hutoa lugha na zana za kuelewa jinsi mambo yanavyobadilika. Faili hii inashughulikia milinganyo ya kawaida ya utofautishaji (ODE), milinganyo ya sehemu tofauti (PDE), uchanganuzi wa uthabiti, machafuko na migawanyiko miwili.
 ---

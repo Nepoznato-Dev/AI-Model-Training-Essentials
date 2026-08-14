@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # مالکیت فکری و نوآوری
 مالکیت فکری (IP) به خلاقیت های ذهن - اختراعات، آثار هنری، نام های تجاری، طرح ها، اسرار تجاری - اشاره دارد که قانون از استفاده غیرمجاز محافظت می کند. نوآوری فرآیند تبدیل ایده ها به ارزش است. قانون IP برای ایجاد تعادل بین دو منافع متضاد وجود دارد: پاداش دادن به پدیدآورندگان (با دادن انحصارات موقت به آنها) و سود رساندن به جامعه (با حصول اطمینان از اینکه دانش در نهایت آزادانه در دسترس قرار می گیرد). درک IP برای هر کسی که محصولات تولید می کند، تولید محتوا، راه اندازی یک تجارت یا کار در تحقیقات ضروری است.
 ---

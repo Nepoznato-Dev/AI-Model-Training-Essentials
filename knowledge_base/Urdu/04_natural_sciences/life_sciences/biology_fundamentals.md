@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # حیاتیات کے بنیادی اصول
 حیاتیات زندگی کی سائنس ہے۔ تمام جاندار کچھ خاص خصوصیات کا اشتراک کرتے ہیں: وہ خلیات سے بنی ہیں، وہ توانائی کا استعمال کرتے ہیں، وہ بڑھتے ہیں، وہ اپنے ماحول کا جواب دیتے ہیں، وہ دوبارہ پیدا کرتے ہیں، اور وہ ارتقاء پذیر ہوتے ہیں۔ حیاتیات ایک خلیے کے اندر موجود مالیکیولر مشینری سے لے کر پورے ماحولیاتی نظام کے تعامل تک پھیلی ہوئی ہے، اور یہ طب، زراعت، بائیو ٹیکنالوجی اور تحفظ کی بنیاد ہے۔
 ---

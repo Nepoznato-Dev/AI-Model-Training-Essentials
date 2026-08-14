@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # يخدش
 سكراتش هي لغة برمجة مرئية تعتمد على الكتل، تم تطويرها بواسطة مختبر الوسائط في معهد ماساتشوستس للتكنولوجيا وتم إصدارها لأول مرة في عام 2007. وبدلاً من كتابة التعليمات البرمجية المستندة إلى النص، يقوم المستخدمون بتجميع الكتل الملونة معًا لإنشاء البرامج. تم تصميم Scratch خصيصًا للأطفال الذين تتراوح أعمارهم بين 8 و16 عامًا (على الرغم من أن المتعلمين من جميع الأعمار يستخدمونه) لتعليم مفاهيم البرمجة الأساسية - الحلقات والشروط والمتغيرات والأحداث والوظائف - دون حاجز الأخطاء النحوية.
 Scratch هي لغة البرمجة التمهيدية الأكثر استخدامًا في العالم، مع أكثر من 100 مليون مستخدم مسجل ومتوفرة بأكثر من 70 لغة. يتم تشغيله في متصفح الويب وهو مجاني.

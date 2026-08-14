@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # अनुकूलन
 अनुकूलन व्यवहार्य समाधानों के एक सेट से सर्वोत्तम समाधान खोजने का गणित है। यह पूछता है: एक फ़ंक्शन और बाधाओं को देखते हुए, कौन सा इनपुट आउटपुट को न्यूनतम (या अधिकतम) करता है? अनुकूलन मशीन लर्निंग का इंजन है - एक मॉडल को प्रशिक्षित करने का अर्थ है हानि फ़ंक्शन को कम करना। यह संचालन अनुसंधान, अर्थशास्त्र, इंजीनियरिंग डिजाइन और वस्तुतः हर मात्रात्मक क्षेत्र में दिखाई देता है।
 ---

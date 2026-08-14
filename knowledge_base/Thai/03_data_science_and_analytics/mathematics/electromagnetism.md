@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #แม่เหล็กไฟฟ้า
 แม่เหล็กไฟฟ้าคือการศึกษาสนามไฟฟ้าและสนามแม่เหล็กและปฏิกิริยาระหว่างกัน แม่เหล็กไฟฟ้าเป็นอันหนึ่งอันเดียวกันโดยแมกซ์เวลล์ในคริสต์ทศวรรษ 1860 อธิบายแสง ไฟฟ้า แม่เหล็ก คลื่นวิทยุ และโครงสร้างของอะตอม มันเป็นพลังพื้นฐานประการแรกที่ต้องเข้าใจอย่างถ่องแท้ทางคณิตศาสตร์ และสมการของมันเป็นแรงบันดาลใจให้เกิดทฤษฎีสัมพัทธภาพพิเศษและทฤษฎีสนามสมัยใหม่ของไอน์สไตน์
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 코틀린
 Kotlin은 JetBrains에서 개발하고 2011년에 처음 출시된(2016년 1.0) 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. JVM(Java Virtual Machine)에서 실행되며 Java와 완벽하게 상호 운용 가능합니다. 즉, Kotlin의 모든 Java 라이브러리를 사용할 수 있고 래퍼 없이 Java에서 Kotlin 코드를 호출할 수 있습니다. 2017년 Google은 Kotlin을 Android 개발의 기본 언어로 발표했으며 이후 Android의 지배적인 언어가 되었습니다.
 Kotlin은 Java의 문제점(자세함, 널 포인터 예외, 최신 기능 누락)을 해결하도록 설계되었습니다. 그 결과, 대규모 Java 생태계와 완전한 호환성을 유지하면서 현대화된 Java(간결하고 안전하며 표현력이 풍부함)를 느낄 수 있는 언어가 탄생했습니다.

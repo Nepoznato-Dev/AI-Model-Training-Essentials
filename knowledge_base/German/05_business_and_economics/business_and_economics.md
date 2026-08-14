@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wirtschaftswissenschaften
 Jede Organisation, die ein Produkt oder eine Dienstleistung verkauft, ist ein Unternehmen, und jede Gesellschaft, die Waren produziert und vertreibt, ist eine Volkswirtschaft. Die Konzepte in dieser Datei gelten unabhängig davon, ob Sie ein freiberufliches Unternehmen leiten, in einem Unternehmen arbeiten, versuchen, die Nachrichten zu verstehen oder einfach nur herauszufinden, wie sich Geld in der Welt bewegt.
 ---

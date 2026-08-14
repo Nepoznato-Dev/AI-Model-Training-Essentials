@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মিডিয়া লিটারেসি এবং তথ্য মূল্যায়ন
 আমরা একটি তথ্য-স্যাচুরেটেড বিশ্বে বাস করি। প্রতিদিন, গড় ব্যক্তি হাজার হাজার মিডিয়া বার্তাগুলির সংস্পর্শে আসে — সংবাদ নিবন্ধ, সোশ্যাল মিডিয়া পোস্ট, বিজ্ঞাপন, রাজনৈতিক বক্তৃতা, প্রভাবক বিষয়বস্তু, এআই-উত্পন্ন পাঠ্য। এর বেশিরভাগই ঠিক আছে। এর কিছু কিছু বিভ্রান্তিকর। একটি ছোট পরিমাণ ইচ্ছাকৃতভাবে মিথ্যা. মিডিয়া সাক্ষরতা হল এই ল্যান্ডস্কেপটি নেভিগেট করার দক্ষতা — সবকিছুকে বিশ্বাস করে নয়, কিছুই বিশ্বাস করে নয়, কোনটি নির্ভরযোগ্য এবং কোনটি নয় সে সম্পর্কে একটি ক্যালিব্রেটেড ধারণা বিকাশের মাধ্যমে।
 ---

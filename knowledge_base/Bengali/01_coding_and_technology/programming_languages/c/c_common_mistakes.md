@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — সাধারণ ভুল এবং অ্যান্টি-প্যাটার্ন
 এই নথিটি সি-তে সবচেয়ে সাধারণ ভুল, ফাঁদ, এবং অ্যান্টি-প্যাটার্নগুলি ক্যাটালগ করে। প্রতিটি এন্ট্রি ভুল পদ্ধতি দেখায়, কেন এটি ব্যর্থ হয় তা ব্যাখ্যা করে এবং সঠিক সমাধান প্রদান করে। C আপনাকে সম্পূর্ণ নিয়ন্ত্রণ দেয় — যার অর্থ মেমরি নিরাপত্তা, সীমানা পরীক্ষা এবং অনির্ধারিত আচরণের জন্য সম্পূর্ণ দায়িত্ব।
 ---

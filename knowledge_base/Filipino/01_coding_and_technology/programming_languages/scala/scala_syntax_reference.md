@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala — Syntax Reference
 Ang dokumentong ito ay nagbibigay ng komprehensibo, structured na syntax na reference para sa Scala (3.x na may mga tala sa 2.x na pagkakaiba). Kinukumpleto nito ang pangunahing sanggunian ng Scala sa pamamagitan ng pagtuon sa mga kumpletong pattern ng syntax, ang uri ng system, mga functional programming construct, at mga idyoma ng Scala.
 ---

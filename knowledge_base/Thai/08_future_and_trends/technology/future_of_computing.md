@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # อนาคตของคอมพิวเตอร์
 อนาคตของการประมวลผลกำลังถูกกำหนดโดยพลังที่ท้าทายสมมติฐานพื้นฐานในช่วง 60 ปีที่ผ่านมา กฎของมัวร์ — การสังเกตว่าพลังการประมวลผลเพิ่มขึ้นสองเท่าทุกๆ สองปี — กำลังช้าลง สถาปัตยกรรม von Neumann — แยก CPU และหน่วยความจำ — กำลังชน “กำแพงหน่วยความจำ” คอมพิวเตอร์ควอนตัมสัญญาว่าจะแก้ปัญหาที่คอมพิวเตอร์คลาสสิกไม่สามารถทำได้ ชิป Neuromorphic เลียนแบบสถาปัตยกรรมของสมอง Edge Computing ย้ายการประมวลผลออกจากศูนย์ข้อมูลแบบรวมศูนย์ และ AI กำลังเปลี่ยนแปลงสิ่งที่คอมพิวเตอร์มีไว้ ตั้งแต่เครื่องมือที่ดำเนินการตามคำสั่งไปจนถึงระบบที่เรียนรู้ สร้าง และให้เหตุผล การทำความเข้าใจการเปลี่ยนแปลงเหล่านี้มีความสำคัญสำหรับทุกคนที่สร้าง ซื้อ หรือพึ่งพาเทคโนโลยี
 ---

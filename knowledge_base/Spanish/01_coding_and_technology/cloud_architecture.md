@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Arquitectura de la nube
 La computación en la nube ha cambiado fundamentalmente la forma en que las organizaciones crean, implementan y escalan software. En lugar de comprar y mantener servidores físicos, puede aprovisionar recursos informáticos según demanda, pagar por lo que utiliza y escalar globalmente en minutos. Este archivo cubre los conceptos básicos, patrones de arquitectura, servicios y mejores prácticas que necesita conocer.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Panitikan
 Ang panitikan ay ang pinakamatagal na talaan ng pag-iisip, damdamin, at karanasan ng sangkatauhan. Mula sa mga oral na epiko ng mga sinaunang sibilisasyon hanggang sa mga digital-age na nobela sa ngayon, ang bawat akda ay nakikipag-usap sa kung ano ang nauna. Ang pag-unawa sa mga pampanitikang genre, galaw, at diskarte ay nagbibigay sa iyo ng mas mahusay na lente para sa pagbabasa — at para sa pag-unawa sa mga kulturang gumawa ng mga gawang ito.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Manajemen Kemungkinan dan Konfigurasi
 Ansible adalah alat otomatisasi dan manajemen konfigurasi tanpa agen. Ia menggunakan SSH (atau WinRM untuk Windows) untuk terhubung ke server dan menjalankan tugas yang ditentukan dalam buku pedoman YAML. Tidak seperti alat yang memerlukan agen diinstal pada setiap mesin, Ansible berbasis push — Anda menjalankan perintah dari node kontrol. Ini digunakan untuk penyediaan server, penerapan aplikasi, manajemen konfigurasi, dan eksekusi tugas ad-hoc.
 ---

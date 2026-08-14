@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Struktur Data dan Algoritma
 Struktur data adalah cara kita mengatur data dalam memori sehingga pengoperasiannya menjadi efisien. Algoritma adalah prosedur langkah demi langkah untuk memecahkan masalah. Bersama-sama, keduanya membentuk landasan ilmu komputer — setiap program yang pernah Anda gunakan bergantung pada keduanya. Memilih struktur data yang tepat dapat mengubah program yang sangat lambat menjadi program yang cepat, dan mengetahui algoritma yang tepat dapat mengubah masalah yang tidak terpecahkan menjadi masalah yang sepele.
 ---

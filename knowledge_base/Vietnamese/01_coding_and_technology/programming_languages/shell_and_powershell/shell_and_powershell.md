@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Shell & PowerShell
 Tập lệnh Shell đề cập đến việc viết tập lệnh cho trình thông dịch dòng lệnh. Hai shell quan trọng nhất là **Bash** (Bourne Again Shell) — mặc định trên Linux và macOS — và **PowerShell** — shell và ngôn ngữ kịch bản đa nền tảng hiện đại của Microsoft. Các tập lệnh Shell tự động hóa các tác vụ quản trị hệ thống, xây dựng quy trình, xử lý tệp và quy trình triển khai.
 Mọi nhà phát triển, kỹ sư DevOps và quản trị viên hệ thống đều cần có kỹ năng viết kịch bản shell. Cho dù bạn đang triển khai máy chủ web, xử lý tệp nhật ký, thiết lập đường dẫn CI/CD hay tự động sao lưu, tập lệnh shell là công cụ dành cho công việc đó.

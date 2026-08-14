@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Java
 Java est un langage de programmation orienté objet à typage statique créé par James Gosling chez Sun Microsystems et publié en 1995. Sa philosophie de conception — « écrire une fois, exécuter n'importe où » (WORA) — est réalisée grâce à la machine virtuelle Java (JVM), qui permet au code Java compilé de s'exécuter sur n'importe quelle plate-forme dotée d'une implémentation JVM. Java est l'un des langages de programmation les plus utilisés de l'histoire, alimentant les backends d'entreprise, les applications Android, les systèmes Big Data et les services financiers.
 Bien qu'il ait près de 30 ans, Java continue d'évoluer. Java moderne (versions 17+) comprend des enregistrements, des classes scellées, une correspondance de modèles, des threads virtuels et un écosystème croissant qui rivalise avec les langages plus récents.

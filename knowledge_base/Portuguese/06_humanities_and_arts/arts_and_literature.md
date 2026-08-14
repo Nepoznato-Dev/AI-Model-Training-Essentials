@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Artes e Literatura
 A expressão criativa humana — seja em livros, pinturas, música ou filmes — é um dos registos mais duradouros da civilização. Compreender os principais gêneros, movimentos e figuras contextualiza o mundo em que vivemos hoje. Cada romance, cada sinfonia, cada filme dialoga com o que veio antes.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা বিজ্ঞান এবং বিশ্লেষণ
 ডেটা সায়েন্স হল কাঁচা ডেটাকে কার্যকরী অন্তর্দৃষ্টিতে পরিণত করার শৃঙ্খলা। এটি পরিসংখ্যান, কম্পিউটার বিজ্ঞান এবং ডোমেন দক্ষতার সংযোগস্থলে বসে - এবং এটি অর্থ থেকে স্বাস্থ্যসেবা পর্যন্ত প্রতিটি সেক্টরে অপরিহার্য হয়ে উঠেছে। এই ফাইলটি মূল ধারণা, সরঞ্জাম এবং কর্মপ্রবাহের মধ্য দিয়ে চলে যা প্রতিটি অনুশীলনকারীর জানা উচিত।
 ---

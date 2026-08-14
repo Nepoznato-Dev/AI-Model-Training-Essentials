@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Gıda, Tarım ve Beslenme
 Gıda insanın en temel ihtiyacıdır ve tarım medeniyetin temelidir. Avcılık ve toplayıcılıktan çiftçiliğe geçiş (yaklaşık 10.000 yıl önceki Neolitik Devrim), insanların şehirler kurmasına, yazıyı geliştirmesine ve "uygarlık" dediğimiz diğer her şeyi yaratmasına olanak sağladı. Bugün tarım, küresel işgücünün yaklaşık %27'sini istihdam ediyor ve günde yaklaşık 10 trilyon kalori üretiyor. Ancak yaklaşık 800 milyon insan hâlâ aç, 2 milyardan fazlası ise aşırı kilolu veya obez. Sorun üretim değil; dağıtım, erişim ve seçimlerdir.
 ---

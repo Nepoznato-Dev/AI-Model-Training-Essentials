@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Rust — 관용적 패턴 및 모범 사례
 이 가이드는 깨끗하고 안전한 Rust 코드를 작성하기 위한 관용적 패턴과 모범 사례를 다룹니다.
 ---

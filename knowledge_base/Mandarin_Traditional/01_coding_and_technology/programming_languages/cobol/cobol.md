@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 科博爾
 COBOL（通用以業務為導向的語言）是仍在使用的最古老的程式語言之一，首次開發於 1959 年。它專為業務資料處理而設計，包括金融系統、薪資、銀行、保險和政府應用程式。 COBOL 類似英語的語法旨在供業務經理閱讀，而不僅僅是程式設計師。
 儘管歷史悠久，COBOL 仍處理全球約 30% 的業務交易。主要銀行、政府機構（包括美國社會安全管理局）和保險公司仍然依賴 COBOL 大型主機系統。 1999 年的 Y2K bug 恐慌使 COBOL 重新進入公眾視野，並且該語言繼續在全球範圍內運行關鍵基礎設施。

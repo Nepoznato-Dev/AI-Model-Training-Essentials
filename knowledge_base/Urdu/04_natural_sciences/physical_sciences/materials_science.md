@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # میٹریلز سائنس
 میٹریل سائنس اس بات کا مطالعہ ہے کہ کس طرح کسی مواد کی ساخت (ایٹمی، خوردبین اور میکروسکوپک پیمانے پر) اس کی خصوصیات کا تعین کرتی ہے، اور مطلوبہ کارکردگی کو حاصل کرنے کے لیے اس ڈھانچے کو کنٹرول کرنے کے لیے پروسیسنگ کے طریقے کیسے استعمال کیے جا سکتے ہیں۔ یہ وہ میدان ہے جو سوالات کے جوابات دیتا ہے جیسے: سٹیل مضبوط لیکن بھاری کیوں ہے؟ شیشہ شفاف لیکن ٹوٹنے والا کیوں ہے؟ ہم ایسی بیٹریاں کیسے بنا سکتے ہیں جو تیزی سے چارج ہو؟ کون سا مواد مریخ کے حالات میں زندہ رہے گا؟ ٹکنالوجی کا ہر ٹکڑا جو آپ نے کبھی استعمال کیا ہے وہ مواد سے بنا ہے، اور ٹیکنالوجی میں ترقی کے لیے تقریباً ہمیشہ مواد میں ترقی کی ضرورت ہوتی ہے۔
 ---

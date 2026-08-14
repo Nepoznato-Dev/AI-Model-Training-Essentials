@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Теория игр и стратегическое мышление
 Теория игр — это математическое исследование стратегических взаимодействий — ситуаций, в которых ваш результат зависит не только от того, что вы делаете, но и от того, что делают другие. Это применимо повсюду: деловая конкуренция, международные отношения, аукционы, переговоры, эволюционная биология и повседневные решения, такие как выбор маршрута в пробках. Основная идея заключается в том, что рациональные игроки в стратегических ситуациях не просто оптимизируют свою собственную стратегию — они предвидят, что будут делать другие, и другие делают то же самое.
 ---

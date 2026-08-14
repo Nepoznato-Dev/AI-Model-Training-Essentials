@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Materials Science
 
 Materials science is the study of how the structure of a material (at atomic, microscopic, and macroscopic scales) determines its properties, and how processing methods can be used to control that structure to achieve desired performance. It's the field that answers questions like: why is steel strong but heavy? Why is glass transparent but brittle? How can we make batteries that charge faster? What materials will survive the conditions on Mars? Every piece of technology you've ever used is made of materials, and advances in technology almost always require advances in materials.

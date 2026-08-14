@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کوڈ کے معیار کے مسائل
 یہ دستاویز عام کوڈ کے معیار کے مسائل کو یکجا کرتی ہے جس میں خراب متغیر نام، ناقص دستاویزات، اسپگیٹی کوڈ، سرکلر انحصار، اور برقرار رکھنے کے دیگر مسائل شامل ہیں۔
 ---

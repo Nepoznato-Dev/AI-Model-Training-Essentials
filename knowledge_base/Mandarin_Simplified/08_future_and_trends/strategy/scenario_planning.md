@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 场景规划
 ＃＃ 概述
 没有人能预测未来——但你可以为几个可能的未来做好准备。情景规划诞生于冷战时期的智库，并在 20 世纪 70 年代石油危机期间由壳牌公司完善，是一种系统思考不确定性的方法。您不必押注于一种预测，而是构建有关事情可能如何发展的连贯故事，然后根据所有这些预测对您的决策进行压力测试。以下是该方法的工作原理以及跨关键领域的场景。

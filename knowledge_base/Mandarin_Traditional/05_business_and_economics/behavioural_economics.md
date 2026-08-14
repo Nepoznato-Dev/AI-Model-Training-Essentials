@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 行為經濟學與決策科學
 行為經濟學研究人們實際上如何做出決策，而不是理性主體如何做決策。傳統經濟學假設人是理性的、自利的、善於處理資訊的。卡尼曼、特沃斯基、泰勒和其他人數十年的研究表明，這種說法非常不準確。人們使用思考捷徑，受到不相關背景的影響，過度重視最近的訊息，並犯下系統性的可預測的錯誤。了解這些模式對於設計更好的產品、政策、組織和個人決策至關重要。
 ---

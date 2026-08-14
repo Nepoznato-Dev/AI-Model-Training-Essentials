@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سائبر سیکیورٹی کے بنیادی اصول
 سیکورٹی ایک ایسا نظم و ضبط ہے جسے شروع سے ہی سسٹم کی ہر پرت میں ضم کیا جانا چاہیے، بجائے اس کے کہ بعد میں سوچا جائے۔ چاہے ویب ایپلیکیشن بنانا ہو، انفراسٹرکچر کا انتظام کرنا ہو، یا API بھیجنا ہو، خطرے کے منظر نامے اور دفاع کے بنیادی اصولوں کو سمجھنا ضروری ہے۔
 ---

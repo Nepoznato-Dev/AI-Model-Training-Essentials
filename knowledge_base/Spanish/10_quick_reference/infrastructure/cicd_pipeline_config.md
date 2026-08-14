@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Configuración de canalización CI/CD
 Los canales de integración continua (CI) e implementación continua (CD) automatizan el proceso de creación, prueba e implementación de software. Esta referencia cubre los patrones de configuración para las plataformas CI/CD más populares: GitHub Actions, GitLab CI y principios generales de diseño de canalizaciones.
 ---

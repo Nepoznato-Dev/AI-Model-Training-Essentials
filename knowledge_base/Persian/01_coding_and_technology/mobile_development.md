@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # توسعه موبایل
 توسعه موبایل، تمرین ساخت برنامه های کاربردی برای گوشی های هوشمند و تبلت ها است – در درجه اول برای iOS (اپل) و اندروید (گوگل). این شامل همه چیز است، از طراحی UI برای نمایشگرهای کوچک گرفته تا مدیریت عمر باتری، مدیریت ناپایداری شبکه، و توزیع برنامه‌ها در فروشگاه‌ها. این زمینه به طور قابل توجهی به بلوغ رسیده است، به طوری که چارچوب های چند پلتفرمی در حال حاضر با توسعه بومی برای بیشتر موارد استفاده رقابت می کنند.
 ---

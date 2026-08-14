@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Kiến trúc đám mây
 Điện toán đám mây đã thay đổi căn bản cách các tổ chức xây dựng, triển khai và mở rộng quy mô phần mềm. Thay vì mua và bảo trì máy chủ vật lý, bạn có thể cung cấp tài nguyên máy tính theo yêu cầu, thanh toán cho những gì bạn sử dụng và mở rộng quy mô trên toàn cầu chỉ trong vài phút. Tệp này bao gồm các khái niệm cốt lõi, mẫu kiến ​​trúc, dịch vụ và các phương pháp hay nhất mà bạn cần biết.
 ---

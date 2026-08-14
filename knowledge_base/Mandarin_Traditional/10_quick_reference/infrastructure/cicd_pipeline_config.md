@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # CI/CD 管道配置
 持續整合 (CI) 和持續部署 (CD) 管道可自動化建置、測試和部署軟體的流程。本參考涵蓋了最受歡迎的 CI/CD 平台的配置模式：GitHub Actions、GitLab CI 和一般管道設計原則。
 ---

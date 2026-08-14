@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Falhas de IA e LLM
 Este documento consolida modos de falha comuns em sistemas de IA e modelos de linguagem grande, incluindo alucinações, desinformação, erros de raciocínio e problemas relacionados a prompts.
 ---

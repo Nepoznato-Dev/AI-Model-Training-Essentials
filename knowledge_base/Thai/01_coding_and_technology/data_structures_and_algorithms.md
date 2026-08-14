@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # โครงสร้างข้อมูลและอัลกอริทึม
 โครงสร้างข้อมูลเป็นวิธีที่เราจัดระเบียบข้อมูลในหน่วยความจำเพื่อให้การดำเนินการกับข้อมูลนั้นมีประสิทธิภาพ อัลกอริทึมเป็นขั้นตอนในการแก้ปัญหาแบบทีละขั้นตอน เมื่อรวมกันแล้วจะก่อให้เกิดรากฐานของวิทยาการคอมพิวเตอร์ ทุกโปรแกรมที่คุณเคยใช้ล้วนอาศัยสิ่งเหล่านี้ การเลือกโครงสร้างข้อมูลที่เหมาะสมสามารถเปลี่ยนโปรแกรมที่ช้าจนเป็นไปไม่ได้ให้กลายเป็นโปรแกรมที่รวดเร็วได้ และการรู้อัลกอริธึมที่ถูกต้องสามารถเปลี่ยนปัญหาที่แก้ไขไม่ได้ให้กลายเป็นปัญหาที่ไม่สำคัญได้
 ---

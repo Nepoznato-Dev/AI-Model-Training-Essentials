@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کلاؤڈ آرکیٹیکچر
 کلاؤڈ کمپیوٹنگ نے بنیادی طور پر تبدیل کر دیا ہے کہ تنظیمیں کس طرح سافٹ ویئر کی تعمیر، تعیناتی اور اسکیل کرتی ہیں۔ فزیکل سرورز کو خریدنے اور برقرار رکھنے کے بجائے، آپ کمپیوٹنگ کے وسائل طلب کرنے پر فراہم کر سکتے ہیں، جو کچھ آپ استعمال کرتے ہیں اس کی ادائیگی کر سکتے ہیں، اور منٹوں میں عالمی سطح پر اسکیل کر سکتے ہیں۔ اس فائل میں بنیادی تصورات، فن تعمیر کے نمونوں، خدمات اور بہترین طریقوں کا احاطہ کیا گیا ہے جن کے بارے میں آپ کو جاننے کی ضرورت ہے۔
 ---

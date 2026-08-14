@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Économie comportementale et science de la décision
 L’économie comportementale étudie la manière dont les individus prennent réellement leurs décisions, et non la façon dont des agents rationnels les prendraient. L’économie traditionnelle suppose que les gens sont rationnels, intéressés et capables de traiter l’information. Des décennies de recherches menées par Kahneman, Tversky, Thaler et d’autres ont montré que cela est totalement inexact. Les gens utilisent des raccourcis mentaux, sont influencés par un contexte non pertinent, surestiment les informations récentes et commettent systématiquement des erreurs prévisibles. Comprendre ces modèles est essentiel pour concevoir de meilleurs produits, politiques, organisations et décisions personnelles.
 ---

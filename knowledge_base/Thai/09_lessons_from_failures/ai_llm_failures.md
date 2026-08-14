@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI and LLM Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI และ LLM ล้มเหลว
 เอกสารนี้รวมโหมดความล้มเหลวทั่วไปในระบบ AI และโมเดลภาษาขนาดใหญ่ ซึ่งรวมถึงภาพหลอน ข้อมูลที่ผิด ข้อผิดพลาดในการให้เหตุผล และปัญหาที่เกี่ยวข้องกับการแจ้งเตือน
 ---

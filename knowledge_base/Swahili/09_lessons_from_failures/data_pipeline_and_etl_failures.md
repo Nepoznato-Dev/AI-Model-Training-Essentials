@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bomba la data na Kushindwa kwa ETL
 Mabomba ya data ni mabomba ya mashirika ya kisasa - huhamisha data kutoka kwa mifumo ya chanzo kupitia mabadiliko hadi hifadhidata, maghala na maziwa ambako hutumika kwa uchanganuzi, kujifunza kwa mashine na kufanya maamuzi. Wanapofanya kazi, hakuna mtu anayegundua. Zinaposhindwa, maamuzi hufanywa kuhusu data ya zamani, miundo ya mafunzo kwenye takataka, ripoti zinaonyesha nambari zisizowezekana, na imani katika mfumo mzima wa data hupotea. Kushindwa kwa bomba la data ni kati ya kushindwa kwa kawaida na kwa gharama kubwa zaidi katika mashirika ya teknolojia.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usalama wa AI na Upatanishi
 Usalama wa AI ni utafiti wa jinsi ya kuunda mifumo ya AI ambayo hufanya kile tunachotaka ifanye - na kutofanya mambo ambayo hatutaki, hata kama haya hayakukataliwa wazi. Upatanishi ni changamoto mahususi ya kufanya malengo na tabia za mifumo ya AI zilingane na nia ya mwanadamu. Mifumo ya AI inavyokuwa na uwezo zaidi, maswali haya hubadilika kutoka kwa udadisi wa kitaaluma hadi mahitaji ya uhandisi wa vitendo.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # دارت
 Dart هي لغة برمجة مُحسّنة للعملاء تم تطويرها بواسطة Google، وتم إصدارها لأول مرة في عام 2013. بينما تم وضع Dart في البداية كبديل محتمل لجافا سكريبت لمتصفحات الويب، فقد وجدت غرضها الأساسي كلغة وراء **Flutter** - مجموعة أدوات واجهة المستخدم عبر الأنظمة الأساسية من Google لإنشاء تطبيقات الهاتف المحمول والويب وسطح المكتب والتطبيقات المدمجة من قاعدة تعليمات برمجية واحدة.
 يجمع Dart بين أفضل ميزات اللغات الحديثة: فهو موجه للكائنات، ولديه كتابة اختيارية (سلامة خالية من الصوت منذ Dart 3)، ويدعم البرمجة غير المتزامنة مع`async`/ `await`، ويجمع إلى كل من كود الجهاز الأصلي (للجوال/سطح المكتب) وJavaScript (للويب).

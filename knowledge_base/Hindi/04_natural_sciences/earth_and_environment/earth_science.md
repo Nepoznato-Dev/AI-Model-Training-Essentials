@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भू - विज्ञान
 पृथ्वी विज्ञान उस ग्रह का अध्ययन करता है जिस पर हम रहते हैं - इसकी संरचना, प्रक्रियाएं, इतिहास और सिस्टम जो इसे रहने योग्य बनाते हैं। इसमें भूविज्ञान (ठोस पृथ्वी), समुद्र विज्ञान (महासागर), मौसम विज्ञान (वायुमंडल और मौसम), और जलवायु विज्ञान (दीर्घकालिक जलवायु पैटर्न) शामिल हैं। इन क्षेत्रों को जो एकजुट करता है वह यह समझ है कि पृथ्वी एक गतिशील प्रणाली है: इसका आंतरिक भाग लगातार घूम रहा है, इसकी सतह को नया आकार दिया जा रहा है, और इसका वायुमंडल और महासागर जटिल तरीकों से परस्पर क्रिया करते हैं।
 ---

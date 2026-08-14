@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # أنماط هندسة البرمجيات
 الهندسة المعمارية هي مجموعة من القرارات الهيكلية حول كيفية تنظيم النظام - ما هي مكوناته، وكيفية تواصلها، وأين تقع المسؤوليات. الهندسة المعمارية الجيدة تجعل النظام سهل الفهم والتعديل والقياس. الهندسة المعمارية السيئة تجعل كل تغيير بمثابة صراع. يغطي هذا الملف الأنماط الرئيسية، ومتى يتم استخدام كل منها، والمقايضات المعنية.
 ---

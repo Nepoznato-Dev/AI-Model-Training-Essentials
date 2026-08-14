@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # काम का भविष्य
 ## अवलोकन
 हमारे काम करने का तरीका औद्योगिक क्रांति के बाद किसी भी समय की तुलना में तेजी से बदल रहा है। दूरस्थ कार्य रातोरात दुर्लभ लाभ से डिफ़ॉल्ट में चला गया। एआई नवीनता से सहयोगी की ओर बढ़ रहा है। गिग अर्थव्यवस्था "रोज़गार" के अर्थ को भी नया आकार दे रही है। और स्वचालन सभी नौकरियों के लिए नहीं आ रहा है - लेकिन यह अधिकांश नौकरियों के कई कार्यों के लिए आ रहा है। यहां कार्यस्थल को नया आकार देने वाली ताकतों और आगे क्या होता है, इस पर एक नजर है।

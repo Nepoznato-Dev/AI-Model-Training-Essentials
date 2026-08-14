@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (زبان پرس و جو ساختاریافته) یک زبان دامنه خاص است که برای مدیریت و جستجوی داده ها در پایگاه های داده رابطه ای طراحی شده است. SQL اولین بار در IBM در دهه 1970 توسعه یافت و در سال 1987 استاندارد شد، SQL رابط اصلی بین برنامه‌ها و داده‌های آنها باقی می‌ماند. هر سیستم اصلی مدیریت پایگاه داده رابطه ای (RDBMS) - PostgreSQL، MySQL، SQL Server، Oracle، SQLite - از SQL به عنوان زبان پرس و جو استفاده می کند.
 SQL یک زبان برنامه نویسی همه منظوره نیست. شما نمی توانید یک برنامه وب در SQL بنویسید. اما اگر برنامه شما داده ها را ذخیره می کند - و تقریباً همه برنامه ها این کار را انجام می دهند - SQL زبانی است که برای بازیابی، تبدیل و مدیریت آن داده ها استفاده می کنید. مسلماً این مهارت فنی پس از برنامه نویسی عمومی مفیدترین مهارت فنی است.

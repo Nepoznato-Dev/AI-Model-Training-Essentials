@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # R
 R ist eine Programmiersprache und -umgebung, die speziell für statistische Berechnungen und Datenanalysen entwickelt wurde. Es wurde 1993 von Ross Ihaka und Robert Gentleman an der University of Auckland entwickelt (daher „R“) und ist eine Implementierung der S-Sprache mit erheblichen Erweiterungen. R ist Open Source und wird vom R Core Team gepflegt. Es ist das Standardtool für Statistiker, Datenanalysten und Forscher in Wissenschaft, Gesundheitswesen, Finanzwesen und Regierung.
 R zeichnet sich durch Datenmanipulation, statistische Modellierung, Visualisierung und Berichterstellung aus. Sein Paket-Ökosystem (CRAN) umfasst über 20.000 Pakete, die praktisch jede statistische Methode abdecken, die jemals entwickelt wurde.

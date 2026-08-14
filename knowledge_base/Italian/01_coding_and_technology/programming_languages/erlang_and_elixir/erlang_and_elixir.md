@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang ed elisir
 Erlang è stato costruito da Ericsson nel 1986 per alimentare gli interruttori telefonici, il che spiega perché gestisce la concorrenza, la tolleranza agli errori e i sistemi distribuiti meglio di quasi qualsiasi altra cosa. I processi Erlang sono leggeri, isolati e comunicano solo tramite lo scambio di messaggi. Quando un processo si blocca, un supervisore lo riavvia. Questa filosofia "lascia che si blocchi" produce sistemi che funzionano per anni senza tempi di inattività.
 Elixir è un linguaggio moderno costruito sulla VM di Erlang (BEAM) da Jose Valim nel 2012. Mantiene tutto ciò che Erlang offre - concorrenza, tolleranza agli errori, distribuzione - ma aggiunge una sintassi amichevole, metaprogrammazione e strumenti eccellenti (gestore di pacchetti Mix, registro di pacchetti Hex). Elixir è ampiamente utilizzato per applicazioni web (tramite il framework Phoenix), sistemi in tempo reale e dispositivi embedded (tramite Nerves).

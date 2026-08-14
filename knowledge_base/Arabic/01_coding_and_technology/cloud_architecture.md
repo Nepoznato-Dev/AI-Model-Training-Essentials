@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #العمارة السحابية
 لقد غيرت الحوسبة السحابية بشكل أساسي كيفية إنشاء المؤسسات للبرامج ونشرها وتوسيع نطاقها. بدلاً من شراء وصيانة الخوادم الفعلية، يمكنك توفير موارد الحوسبة عند الطلب، والدفع مقابل ما تستخدمه، والتوسع عالميًا في دقائق. يغطي هذا الملف المفاهيم الأساسية وأنماط الهندسة المعمارية والخدمات وأفضل الممارسات التي تحتاج إلى معرفتها.
 ---

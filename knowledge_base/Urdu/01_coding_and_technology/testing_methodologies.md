@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جانچ کے طریقے
 جانچ یہ ہے کہ آپ کو یہ اعتماد کیسے حاصل ہوتا ہے کہ آپ کا کوڈ کام کرتا ہے — اور اس سے بھی اہم بات یہ ہے کہ اس میں ہونے والی تبدیلیاں پہلے سے کام کرنے والی چیزوں کو نہیں توڑتی ہیں۔ اچھی جانچ صارفین کے کرنے سے پہلے کیڑے پکڑتی ہے، دستاویزات کی توقع کی جاتی ہے، اور بے خوف ری فیکٹرنگ کو قابل بناتی ہے۔ یہ فائل جانچ کی حکمت عملیوں کے مکمل اسپیکٹرم کا احاطہ کرتی ہے، یونٹ ٹیسٹ سے لے کر آخر تک کے ٹیسٹ تک، اور ان اصولوں کو جو جانچ کو مؤثر بناتے ہیں۔
 ---

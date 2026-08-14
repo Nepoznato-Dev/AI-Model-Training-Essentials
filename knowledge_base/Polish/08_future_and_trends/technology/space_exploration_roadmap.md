@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mapa drogowa eksploracji kosmosu
 ## Przegląd
 Żyjemy w nowym złotym wieku eksploracji kosmosu. Program NASA Artemis przywraca ludzi na Księżyc. SpaceX buduje rakietę w pełni wielokrotnego użytku przeznaczoną na Marsa. Chiny mają własne ambitne plany księżycowe i marsjańskie. Rosnąca konstelacja prywatnych firm otwiera przestrzeń dla handlu – od Internetu satelitarnego po turystykę kosmiczną. Oto plan działania, od Księżyca po Marsa i dalej.

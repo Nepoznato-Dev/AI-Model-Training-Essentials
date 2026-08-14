@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Langue et anglais
 Aujourd’hui, environ 7 000 langues sont parlées dans le monde. L'anglais est la langue seconde la plus parlée et sert de langue par défaut pour les affaires internationales, la science, l'aviation et Internet. Qu'il s'agisse de rédiger de la documentation sur le code, de lire des articles de recherche ou de communiquer au-delà des frontières, une solide maîtrise de l'anglais (grammaire, vocabulaire et rhétorique) est l'une des compétences les plus pratiques que l'on puisse développer.
 Ce dossier couvre l'essentiel : la grammaire, la ponctuation, les pièges courants, la technique d'écriture et une communication claire.

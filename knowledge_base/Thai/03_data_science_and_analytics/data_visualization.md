@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การแสดงข้อมูล
 แผนภูมิที่ออกแบบมาอย่างดีสามารถเปิดเผยรูปแบบที่ตารางตัวเลขซ่อนอยู่ การออกแบบที่ไม่ดีอาจทำให้เข้าใจผิด สับสน หรือน่าเบื่อได้ การสร้างภาพข้อมูลเป็นงานฝีมือในการเปลี่ยนข้อมูลให้เป็นเรื่องราวแบบภาพเพื่อประกอบการตัดสินใจ ไฟล์นี้ครอบคลุมถึงการเลือกแผนภูมิ หลักการออกแบบ ข้อผิดพลาดทั่วไป และเครื่องมือที่ทำให้ทุกอย่างเป็นไปได้
 ---

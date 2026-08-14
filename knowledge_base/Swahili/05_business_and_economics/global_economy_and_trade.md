@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uchumi wa Kimataifa na Biashara
 Uchumi wa kimataifa ndio mfumo mkubwa na mgumu zaidi ambao wanadamu wamewahi kuujenga. Mnamo 2025, Pato la Taifa lilizidi $110 trilioni. Zaidi ya watu bilioni 8 huzalisha, kufanya biashara na kutumia bidhaa na huduma kuvuka mipaka kila siku. Kuelewa jinsi mfumo huu unavyofanya kazi - ni nani anafanya biashara ya nini, kwa nini baadhi ya nchi ni tajiri na nyingine maskini, jinsi pesa zinavyovuka mipaka, na kile kinachotokea wakati mfumo unapoharibika - ni muhimu kwa kuzunguka ulimwengu wa kisasa.
 ---

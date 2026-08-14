@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # 조립 - 생태계 및 툴링 가이드
 이 가이드에서는 어셈블리 생태계의 필수 도구, 어셈블러 및 인프라를 다룹니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # दृश्य कला
 दृश्य कला मानवता के संचार का सबसे पुराना रूप है - लास्कॉक्स की गुफा चित्रों से लेकर आज के डिजिटल इंस्टॉलेशन तक। कला आंदोलनों, माध्यमों और रचनात्मक कार्यों को संरक्षित करने वाली संस्थाओं को समझने से आपको इस बात की गहरी सराहना मिलती है कि कैसे समाज ने सदियों से सुंदरता, शक्ति, आध्यात्मिकता और असहमति व्यक्त की है।
 ---

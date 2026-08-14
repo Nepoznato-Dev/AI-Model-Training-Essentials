@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # পৃথিবী বিজ্ঞান
 আমরা যে গ্রহে বাস করি তা পৃথিবী বিজ্ঞান অধ্যয়ন করে — এর গঠন, প্রক্রিয়া, ইতিহাস এবং সিস্টেম যা এটিকে বাসযোগ্য করে তোলে। এটি ভূতত্ত্ব (কঠিন পৃথিবী), সমুদ্রবিদ্যা (মহাসাগর), আবহাওয়া (বায়ুমন্ডল এবং আবহাওয়া) এবং জলবায়ুবিদ্যা (দীর্ঘমেয়াদী জলবায়ু নিদর্শন) বিস্তৃত করে। এই ক্ষেত্রগুলিকে যা একত্রিত করে তা হল পৃথিবী একটি গতিশীল সিস্টেম: এর অভ্যন্তর ক্রমাগত চলমান, এর পৃষ্ঠটি পুনরায় আকার দেওয়া হচ্ছে এবং এর বায়ুমণ্ডল এবং মহাসাগরগুলি জটিল উপায়ে যোগাযোগ করে।
 ---

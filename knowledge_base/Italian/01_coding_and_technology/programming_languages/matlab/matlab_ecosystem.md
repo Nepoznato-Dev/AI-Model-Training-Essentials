@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # MATLAB: Guida agli ecosistemi e agli strumenti
 Questa guida copre gli strumenti, i toolbox e l'infrastruttura essenziali nell'ecosistema MATLAB.
 ---

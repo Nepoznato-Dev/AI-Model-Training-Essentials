@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # پردازش سیگنال
 پردازش سیگنال علم تجزیه و تحلیل، اصلاح و سنتز سیگنال ها است - نمایش مقادیر فیزیکی که در طول زمان، مکان یا فرکانس متفاوت است. صدا، تصاویر، ویدئو، داده های حسگر، امواج مغزی، قیمت سهام - همه سیگنال هستند. ابزارهای ریاضی پردازش سیگنال (تبدیل فوریه، فیلترها، تئوری نمونه‌برداری) برای یادگیری ماشین، ارتباطات، تصویربرداری پزشکی و تقریباً هر زمینه‌ای که با داده‌ها کار می‌کند، اساسی هستند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Diseño y cultura organizacional
 El diseño organizacional es la disposición deliberada de estructura, procesos, roles y derechos de decisión para ejecutar la estrategia de manera efectiva. La cultura son los valores, creencias, normas y comportamientos compartidos que dan forma a la forma en que las personas realmente trabajan juntas. La estructura proporciona el marco; La cultura moldea el comportamiento. Una estructura puede rediseñarse sobre el papel, pero si la cultura no respalda el cambio, la implementación fracasará. De manera similar, una cultura fuerte combinada con una estructura ineficaz socavará gradualmente el desempeño organizacional. Las organizaciones más eficaces abordan ambas cosas y reconocen que están profundamente interconectadas.
 ---

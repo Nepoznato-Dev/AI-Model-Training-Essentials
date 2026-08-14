@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 지정학적 미래
 ## 개요
 냉전 이후 미국이 지배하던 시대는 더 복잡한 상황으로 바뀌고 있습니다. 권력이 분산되고, 기술과 자원에 대한 경쟁이 심화되고, 기후 변화와 전염병과 같은 문제가 국경을 존중하지 않는 다극 세계입니다. 1945년 이후 구축된 규칙 기반 국제 질서는 모든 방향에서 시험을 받고 있습니다. 무엇이 변화하고 있는지, 누가 상승하고 있는지, 마찰 지점이 어디인지는 다음과 같습니다.

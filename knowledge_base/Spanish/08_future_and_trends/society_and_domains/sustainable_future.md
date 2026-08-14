@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Futuro Sostenible
 ## Descripción general
 La pregunta ya no es *si* el mundo necesita hacer la transición hacia una economía sostenible, sino *con qué rapidez* y *quién lidera*. La energía renovable es ahora la fuente de energía más barata en la mayoría de los mercados. Los principios de la economía circular están pasando del concepto de nicho a la estrategia corporativa. Las ciudades están repensando todo, desde el transporte hasta los residuos. Y la carrera hacia el cero neto está remodelando industrias desde la energía hasta las finanzas. Así es como se ve el futuro sostenible en cuatro dimensiones clave.

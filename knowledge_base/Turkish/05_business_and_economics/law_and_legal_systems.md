@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hukuk ve Hukuk Sistemleri
 Hukuk, bir toplumun kurumları aracılığıyla uygulamayı kabul ettiği kurallar dizisidir. Bu ahlakla aynı şey değildir; yasal olan ama ahlaka aykırı olan, yasa dışı olan ama ahlaki açıdan haklı olan bir şey yapabilirsiniz. Kanun öngörülebilirlik sağlamak için vardır: Neye izin verildiğini, neyin yasak olduğunu ve kurallar çiğnendiğinde ne olacağını belirlemek. Bu olmadan anlaşmazlıklar iktidar tarafından çözülür. Bununla birlikte, anlaşmazlıklar süreç yoluyla çözülür.
 Bu dosya başlıca hukuk sistemlerini, hukukun ana dallarını ve hukuk sistemlerinin pratikte işleyişini şekillendiren kavramları kapsamaktadır.

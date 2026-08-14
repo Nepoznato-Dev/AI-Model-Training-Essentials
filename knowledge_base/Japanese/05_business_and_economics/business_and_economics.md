@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ビジネスと経済
 製品やサービスを販売するすべての組織はビジネスであり、商品を生産および流通させるすべての社会は経済です。このファイルの概念は、フリーランスで事業を運営している場合でも、企業で働いている場合でも、ニュースを理解しようとしている場合でも、単にお金が世界でどのように動いているかを理解しようとしている場合でも当てはまります。
 ---

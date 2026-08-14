@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اسکالا
 اسکالا (زبان مقیاس پذیر) یک زبان برنامه نویسی تایپ شده و کامپایل شده است که پارادایم های برنامه نویسی شی گرا و تابعی را ترکیب می کند. Scala که توسط Martin Odersky ایجاد شد و اولین بار در سال 2004 منتشر شد، بر روی JVM اجرا می شود (همچنین Scala.js برای JavaScript و Scala Native). این برنامه برای پرداختن به پرحرفی جاوا و در عین حال حفظ قابلیت همکاری کامل جاوا طراحی شده است.
 اسکالا زبان پشت آپاچی اسپارک (چارچوب پردازش کلان داده) است و به طور گسترده در مهندسی داده، سیستم های توزیع شده و خدمات باطنی استفاده می شود. شرکت هایی مانند توییتر (اکنون X)، لینکدین، نتفلیکس و گاردین از اسکالا استفاده می کنند.

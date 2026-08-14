@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala
 Ang Scala (Scalable Language) ay isang statically typed, compiled programming language na pinagsasama ang object-oriented at functional programming paradigms. Nilikha ni Martin Odersky at unang inilabas noong 2004, tumatakbo ang Scala sa JVM (din ang Scala.js para sa JavaScript at Scala Native). Ito ay idinisenyo upang tugunan ang verbosity ng Java habang pinapanatili ang ganap na interoperability ng Java.
 Ang Scala ay ang wika sa likod ng Apache Spark (ang malaking balangkas sa pagpoproseso ng data), at ito ay malawakang ginagamit sa data engineering, distributed system, at backend na serbisyo. Ang mga kumpanya tulad ng Twitter (ngayon ay X), LinkedIn, Netflix, at The Guardian ay gumagamit ng Scala.

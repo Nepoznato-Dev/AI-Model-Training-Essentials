@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Java
 Java là ngôn ngữ lập trình hướng đối tượng, được gõ tĩnh do James Gosling tại Sun Microsystems tạo ra và phát hành vào năm 1995. Triết lý thiết kế của nó — "viết một lần, chạy mọi nơi" (WORA) — đạt được thông qua Máy ảo Java (JVM), cho phép mã Java được biên dịch để chạy trên bất kỳ nền tảng nào có triển khai JVM. Java là một trong những ngôn ngữ lập trình được sử dụng rộng rãi nhất trong lịch sử, hỗ trợ các chương trình phụ trợ doanh nghiệp, ứng dụng Android, hệ thống dữ liệu lớn và dịch vụ tài chính.
 Dù đã gần 30 tuổi nhưng Java vẫn tiếp tục phát triển. Java hiện đại (phiên bản 17+) bao gồm các bản ghi, lớp kín, khớp mẫu, luồng ảo và hệ sinh thái đang phát triển cạnh tranh với các ngôn ngữ mới hơn.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #จาวาสคริปต์
 JavaScript เป็นภาษาโปรแกรมที่มีการตีความแบบไดนามิก สร้างขึ้นโดย Brendan Eich ภายในเวลาเพียง 10 วันในปี 1995 เดิมทีออกแบบมาเพื่อเพิ่มการโต้ตอบให้กับหน้าเว็บ และได้เติบโตขึ้นเป็นภาษาโปรแกรมที่ใช้กันอย่างแพร่หลายมากที่สุดในโลก JavaScript ทำงานในทุกเว็บเบราว์เซอร์ บนเซิร์ฟเวอร์ผ่าน Node.js ในแอปเดสก์ท็อป (Electron) แอปมือถือ (React Native) และแม้แต่ระบบฝังตัว
 ภาษานี้มีเอกลักษณ์เฉพาะตรงที่เป็นตัวเลือกเดียวสำหรับการพัฒนาเว็บฝั่งไคลเอ็นต์ — ทุกเบราว์เซอร์รองรับภาษานี้โดยกำเนิด การผูกขาดนี้เมื่อรวมกับการเพิ่มขึ้นของ JavaScript แบบเต็มสแต็ก (Node.js, Deno, Bun) ทำให้เป็นสิ่งที่ขาดไม่ได้

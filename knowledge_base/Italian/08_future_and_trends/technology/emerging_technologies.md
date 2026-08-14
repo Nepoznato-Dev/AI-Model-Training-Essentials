@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tecnologie emergenti
 ## Panoramica
 Alcune tecnologie creano categorie di capacità completamente nuove invece di migliorare progressivamente quelle esistenti. L’informatica quantistica mira a risolvere problemi che richiederebbero millenni alle macchine classiche. L’energia da fusione offre la possibilità di energia pulita praticamente illimitata. Le interfacce cervello-computer collegano mente e macchina. La biologia sintetica consente la riscrittura del codice biologico. Le sezioni seguenti descrivono dove si trova oggi ciascuna di queste frontiere e dove le tendenze attuali indicano che si sta dirigendo.

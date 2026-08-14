@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI dalam Kehidupan Sehari-hari
 Kecerdasan buatan bukan lagi sebuah konsep futuristik – melainkan sudah tertanam dalam kehidupan sehari-hari. Dari saat Anda bangun dan memeriksa ponsel Anda (algoritme rekomendasi menentukan notifikasi apa yang Anda lihat) hingga saat Anda tertidur (speaker pintar memproses perintah terakhir Anda), sistem AI mengambil keputusan atas nama Anda, untuk Anda, dan terkadang tentang Anda. Memahami di mana AI muncul, cara kerjanya pada tingkat dasar, dan apa implikasinya bukan lagi sebuah pilihan – hal ini merupakan persyaratan untuk mendapatkan kewarganegaraan yang terinformasi di abad ke-21.
 ---

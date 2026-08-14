@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 動力系統
 **動態系統**描述了狀態如何根據固定規則隨時間演變。從行星軌道到人口動態，從天氣模式到訓練神經網絡，動力系統理論提供了理解事物如何變化的語言和工具。此文件涵蓋常微分方程 (ODE)、偏微分方程 (PDE)、穩定性分析、混沌和分岔。
 ---

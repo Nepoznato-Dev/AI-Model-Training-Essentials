@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lộ trình khám phá không gian
 ## Tổng quan
 Chúng ta đang sống qua một thời kỳ hoàng kim mới của việc khám phá không gian. Chương trình Artemis của NASA đang đưa con người trở lại Mặt trăng. SpaceX đang chế tạo một tên lửa có thể tái sử dụng hoàn toàn được thiết kế cho sao Hỏa. Trung Quốc có kế hoạch về mặt trăng và sao Hỏa đầy tham vọng của riêng mình. Và ngày càng có nhiều công ty tư nhân mở ra không gian cho thương mại - từ internet vệ tinh đến du lịch vũ trụ. Đây là lộ trình, từ Mặt trăng đến Sao Hỏa và xa hơn nữa.

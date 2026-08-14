@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Assemblersprache
 Die Assemblersprache ist die niedrigste für den Menschen lesbare Programmiersprache. Es bietet eine direkte Darstellung der Maschinencodeanweisungen eines Computers mithilfe von mnemonischen Codes (wie `MOV`, `ADD`, `JMP`) anstelle von Rohbinärcodes. Jede Assemblersprache ist spezifisch für eine bestimmte Prozessorarchitektur (x86, ARM, MIPS, RISC-V) – Code, der für eine Architektur geschrieben wurde, läuft nicht auf einer anderen.
 Für die Erstellung von Anwendungen wird keine Assemblersprache verwendet. Es wird verwendet, wenn Sie absolute Kontrolle über die Hardware benötigen: Schreiben von Betriebssystemkernen, Gerätetreibern, Bootloadern, eingebetteter Firmware, leistungskritischen Codeabschnitten, Reverse Engineering und Verständnis dafür, wie Computer Anweisungen tatsächlich ausführen.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اشکالات طراحی و یکپارچه سازی API
 API ها (رابط برنامه نویسی کاربردی) بافت همبند نرم افزار مدرن هستند - آنها به سرویس ها اجازه می دهند با هم ارتباط برقرار کنند، به اشخاص ثالث اجازه می دهند یکپارچه شوند و به تیم ها اجازه می دهند مستقل کار کنند. وقتی طراحی API اشتباه می‌شود، پیامدهای آن در هر سیستمی که به آن وابسته است موج می‌زند: ادغام‌های خراب، آسیب‌پذیری‌های امنیتی، ناامیدی توسعه‌دهندگان و بازنویسی‌های پرهزینه. خرابی های یکپارچه سازی - جایی که سیستم ها نمی توانند به طور قابل اعتماد ارتباط برقرار کنند - یکی از رایج ترین منابع حوادث تولید هستند.
 ---

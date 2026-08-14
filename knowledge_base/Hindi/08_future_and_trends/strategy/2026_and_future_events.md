@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #2026 और भविष्य की घटनाएँ
 2026 एक ऐसा वर्ष है जब बहुत सारी दीर्घकालिक योजनाएँ एक साथ आती हैं। यह अमेरिकी स्वतंत्रता की घोषणा की 250वीं वर्षगांठ है, जो संयुक्त राष्ट्र के सतत विकास लक्ष्यों (2020-2030) के लिए एक मध्य बिंदु चेकपॉइंट है, और एआई, अंतरिक्ष अन्वेषण, इलेक्ट्रिक वाहनों और नवीकरणीय ऊर्जा में कॉर्पोरेट रोडमैप के लिए एक मील का पत्थर वर्ष है। चाहे विशिष्ट भविष्यवाणियाँ सफल हों या न हों, 2026 को आकार देने वाले रुझान इस बात की एक उपयोगी तस्वीर देते हैं कि चीज़ें कहाँ जा रही हैं।
 ---

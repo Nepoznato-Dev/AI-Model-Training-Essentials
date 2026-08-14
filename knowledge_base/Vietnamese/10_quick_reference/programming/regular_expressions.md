@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to programming/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bảng cheat biểu thức chính quy
 Biểu thức chính quy (regex) là các mẫu để khớp văn bản. Chúng được sử dụng ở mọi nơi — tìm kiếm và thay thế, xác thực đầu vào, phân tích cú pháp nhật ký, trích xuất dữ liệu, v.v. Đây là tài liệu tham khảo thực tế chứ không phải sách giáo khoa.
 ---

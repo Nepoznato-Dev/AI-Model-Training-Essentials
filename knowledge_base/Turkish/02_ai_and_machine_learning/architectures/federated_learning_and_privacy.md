@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Birleşik Öğrenim ve Gizlilik
 Birleşik öğrenme, ham verileri paylaşmadan birden fazla cihaz veya kuruluşta makine öğrenimi modellerini eğitmeye yönelik bir tekniktir. Verileri merkezi bir sunucuya göndermek yerine, her cihaz yerel bir modeli eğitir ve yalnızca model güncellemelerini (gradyanlar veya ağırlıklar) paylaşır. Merkezi sunucu, global bir model oluşturmak için bu güncellemeleri bir araya getirir. Google tarafından Android telefonlarda klavye dili modellerini eğitmek için tasarlandı ve o zamandan beri gizliliği koruyan yapay zeka için önemli bir teknik haline geldi.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ภาษาและภาษาอังกฤษ
 ปัจจุบันมีภาษาพูดประมาณ 7,000 ภาษาทั่วโลก ภาษาอังกฤษเป็นภาษาที่พูดกันอย่างแพร่หลายที่สุดในฐานะภาษาที่สอง และเป็นภาษาเริ่มต้นสำหรับธุรกิจระหว่างประเทศ วิทยาศาสตร์ การบิน และอินเทอร์เน็ต ไม่ว่าจะเป็นการเขียนเอกสารโค้ด การอ่านงานวิจัย หรือการสื่อสารข้ามพรมแดน ความสามารถในการใช้ภาษาอังกฤษ ทั้งไวยากรณ์ คำศัพท์ และวาทศาสตร์ที่แข็งแกร่ง เป็นหนึ่งในทักษะเชิงปฏิบัติมากที่สุดที่สามารถพัฒนาได้
 ไฟล์นี้ครอบคลุมสิ่งสำคัญ: ไวยากรณ์ เครื่องหมายวรรคตอน ข้อผิดพลาดทั่วไป เทคนิคการเขียน และการสื่อสารที่ชัดเจน

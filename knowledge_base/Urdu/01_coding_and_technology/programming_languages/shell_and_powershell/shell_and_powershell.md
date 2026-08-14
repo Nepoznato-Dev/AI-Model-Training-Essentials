@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شیل اور پاور شیل
 شیل اسکرپٹنگ سے مراد کمانڈ لائن ترجمانوں کے لیے اسکرپٹ لکھنا ہے۔ دو اہم ترین شیل ہیں **باش** (بورن اگین شیل) — لینکس اور میک او ایس پر ڈیفالٹ — اور ** پاور شیل** — مائیکروسافٹ کا جدید کراس پلیٹ فارم شیل اور اسکرپٹنگ لینگویج۔ شیل اسکرپٹس سسٹم ایڈمنسٹریشن کے کاموں کو خودکار بناتی ہیں، پائپ لائنیں بناتی ہیں، فائل پروسیسنگ، اور تعیناتی ورک فلو کرتی ہیں۔
 ہر ڈویلپر، DevOps انجینئر، اور سسٹم ایڈمنسٹریٹر کو شیل اسکرپٹنگ کی مہارتوں کی ضرورت ہوتی ہے۔ چاہے آپ ویب سرور تعینات کر رہے ہوں، لاگ فائلوں پر کارروائی کر رہے ہوں، CI/CD پائپ لائنیں ترتیب دے رہے ہوں، یا بیک اپ کو خودکار کر رہے ہوں، شیل اسکرپٹنگ اس کام کا ٹول ہے۔

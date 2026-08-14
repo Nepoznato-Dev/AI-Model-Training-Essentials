@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ارلنگ و اکسیر
 Erlang توسط اریکسون در سال 1986 برای تامین برق سوئیچ های تلفن ساخته شد - که توضیح می دهد که چرا همزمان، تحمل خطا و سیستم های توزیع شده را تقریباً بهتر از هر چیز دیگری مدیریت می کند. فرآیندهای Erlang سبک وزن هستند، ایزوله هستند و فقط از طریق ارسال پیام ارتباط برقرار می کنند. هنگامی که یک فرآیند از کار می افتد، یک سرپرست آن را دوباره راه اندازی می کند. این فلسفه "بگذار خراب شود" سیستم هایی را تولید می کند که سال ها بدون توقف کار می کنند.
 Elixir یک زبان مدرن است که بر روی ماشین مجازی Erlang (BEAM) توسط Jose Valim در سال 2012 ساخته شده است. این زبان همه چیزهایی را که Erlang ارائه می دهد حفظ می کند - همزمانی، تحمل خطا، توزیع - اما یک نحو دوستانه، فرابرنامه نویسی و ابزار عالی (Mix package manager، Hex Registry Package) را اضافه می کند. Elixir به طور گسترده برای برنامه های کاربردی وب (از طریق چارچوب Phoenix)، سیستم های بلادرنگ و دستگاه های تعبیه شده (از طریق Nerves) استفاده می شود.

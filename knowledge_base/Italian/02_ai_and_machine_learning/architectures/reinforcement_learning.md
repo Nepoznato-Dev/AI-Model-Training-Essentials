@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Apprendimento per rinforzo
 L'apprendimento per rinforzo (RL) è il modo in cui le macchine imparano a prendere sequenze di decisioni attraverso tentativi ed errori. A differenza dell’apprendimento supervisionato, in cui viene fornita la risposta corretta per ogni esempio, RL fornisce all’agente solo un segnale di ricompensa e l’agente deve capire quali azioni portano ai migliori risultati nel tempo. È l'approccio alla base di AlphaGo, del controllo robotico, dell'intelligenza artificiale di gioco e, in modo critico, dell'RLHF, la tecnica utilizzata per allineare i moderni modelli linguistici di grandi dimensioni con le preferenze umane.
 ---

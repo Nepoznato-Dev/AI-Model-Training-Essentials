@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเข้าถึงและการออกแบบที่ครอบคลุม
 การเข้าถึง (มักเรียกโดยย่อว่า a11y) คือแนวทางปฏิบัติในการทำให้ทุกคนสามารถใช้ซอฟต์แวร์ได้ รวมถึงผู้ที่มีความบกพร่องทางการมองเห็น การได้ยิน การเคลื่อนไหว การรับรู้ และระบบประสาท เป็นข้อกำหนดทางกฎหมายในเขตอำนาจศาลหลายแห่งและเป็นมาตรฐานการปฏิบัติงานด้านวิศวกรรม ซอฟต์แวร์ที่สามารถเข้าถึงได้เป็นซอฟต์แวร์ที่ดีกว่าสำหรับทุกคน เนื่องจากการตัดสินใจในการออกแบบที่สนับสนุนผู้ใช้ที่พิการ — โครงสร้างที่ชัดเจน การนำทางด้วยแป้นพิมพ์ คอนทราสต์ที่เพียงพอ ข้อความที่อ่านได้ — ปรับปรุงประสบการณ์สำหรับผู้ใช้ทุกคน
 ---

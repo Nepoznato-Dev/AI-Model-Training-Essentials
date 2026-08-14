@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Giriş
 Prolog (Mantıkta Programlama), 1972 yılında Alain Colmerauer ve Philippe Roussel tarafından oluşturulan bir mantıksal programlama dilidir. Bu listedeki diğer tüm dillerden farklı olarak Prolog, bilgisayara bir sorunu *nasıl* çözeceğini söylemez; siz *neyin* doğru olduğunu bildirirsiniz (gerçekler ve kurallar) ve Prolog'un çıkarım motoru, mantıksal çıkarım yoluyla cevabı bulur.
 Prolog, 1980'lerde uzman sistemler, doğal dil işleme ve yapay zeka araştırmaları için tercih edilen dildi. Japonya'nın Beşinci Nesil Bilgisayar Sistemi projesine güç verdi ve doğal dilin anlaşılması için IBM'in Watson'ında kullanıldı. Günümüzde Prolog, kısıtlama çözme, zamanlama, tür çıkarımı, yasal akıl yürütme ve sorunların doğal olarak mantıksal ilişkiler olarak ifade edildiği her yerde kullanılmaktadır.

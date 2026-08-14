@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Исследование операций
 Исследование операций (ИЛИ) — это применение математических методов для принятия решений. Созданная во время Второй мировой войны для военной логистики, она теперь оптимизирует цепочки поставок, составляет расписание авиакомпаний, маршруты доставки, управляет запасами и распределяет ресурсы в каждой отрасли. OR предоставляет математический инструментарий для принятия наилучших решений в условиях ограничений.
 ---

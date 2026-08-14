@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ingeniería de plataforma y código bajo
 Las plataformas de código bajo permiten a las personas crear aplicaciones con un mínimo de código escrito a mano, generalmente a través de interfaces de arrastrar y soltar, flujos de trabajo visuales y conectores prediseñados. La ingeniería de plataformas es la disciplina de crear plataformas de desarrollo internas (IDP) que faciliten a los equipos de productos el autoservicio de infraestructura, CI/CD y herramientas operativas. Ambas tendencias son respuestas al mismo problema: la brecha entre la demanda de software y la oferta de desarrolladores que pueden construirlo.
 ---

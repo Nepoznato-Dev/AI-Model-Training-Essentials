@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # संख्यात्मक तरीके
 संख्यात्मक विधियाँ गणितीय सिद्धांत और व्यावहारिक गणना के बीच का सेतु हैं। जबकि शुद्ध गणित साबित करता है कि समाधान मौजूद हैं, संख्यात्मक विधियाँ वास्तव में सीमित परिशुद्धता के लिए अनुमानित उत्तरों की गणना करती हैं। प्रत्येक मशीन लर्निंग मॉडल, भौतिकी सिमुलेशन और डेटा विश्लेषण पाइपलाइन अंततः संख्यात्मक गणना पर निर्भर करती है। इन तरीकों को समझना - उनकी सटीकता, स्थिरता और सीमाएं - विश्वसनीय सॉफ़्टवेयर बनाने के लिए आवश्यक है।
 ---

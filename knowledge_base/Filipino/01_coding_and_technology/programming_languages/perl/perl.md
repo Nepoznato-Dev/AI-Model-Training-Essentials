@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perl
 Ang Perl ay nilikha ni Larry Wall noong 1987 bilang isang praktikal na tool sa pagproseso ng teksto. Ito ang naging backbone ng maagang web development (CGI scripts), system administration, bioinformatics, at network programming. Ang pilosopiya ni Perl ay "There's More than One Way To Do It" (TMTOWTDI) — ang wika ay nagbibigay sa iyo ng maraming diskarte sa bawat problema, na pinapaboran ang pagpapahayag kaysa pagkakapareho.
 Ang impluwensya ni Perl sa modernong programming ay napakalaki ngunit kadalasang hindi nakikita: ang mga regular na expression, na naiimpluwensyahan ng pagtutugma ng pattern ng Perl, ay pamantayan na ngayon sa Python, JavaScript, Java, at karamihan sa iba pang mga wika. Ang CPAN (Comprehensive Perl Archive Network) ay isa sa mga unang software package repository at nagbigay inspirasyon sa mga susunod na sistema tulad ng Python's PyPI at Node's npm.

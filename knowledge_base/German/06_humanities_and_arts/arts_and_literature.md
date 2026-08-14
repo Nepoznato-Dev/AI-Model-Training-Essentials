@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kunst und Literatur
 Der kreative Ausdruck des Menschen – ob in Büchern, Gemälden, Musik oder Filmen – ist eines der beständigsten Zeugnisse der Zivilisation. Das Verständnis der wichtigsten Genres, Bewegungen und Figuren vermittelt einen Kontext für die Welt, in der wir heute leben. Jeder Roman, jede Symphonie, jeder Film steht im Dialog mit dem, was vorher war.
 ---

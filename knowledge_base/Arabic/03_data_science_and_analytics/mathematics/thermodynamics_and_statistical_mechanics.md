@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الديناميكا الحرارية والميكانيكا الإحصائية
 تصف الديناميكا الحرارية السلوك العياني للأنظمة من حيث درجة الحرارة والضغط والإنتروبيا، دون معرفة شكل الذرات. تشرح الميكانيكا الإحصائية الديناميكا الحرارية من الأسفل إلى الأعلى: فهي تستمد الخصائص العيانية من السلوك المجهري لأعداد كبيرة من الجسيمات. معًا، يقدمون فهمًا أعمق للطاقة، والإنتروبيا، والتوازن - وهي المفاهيم التي انتقلت إلى نظرية المعلومات، والتعلم الآلي، وما بعدها.
 ---

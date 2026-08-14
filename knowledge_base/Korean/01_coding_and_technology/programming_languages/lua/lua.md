@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 루아
 Lua는 애플리케이션 확장을 위해 설계된 가볍고 내장 가능한 스크립팅 언어입니다. 1993년 브라질 리우데자네이루의 교황청 가톨릭 대학교에서 만들어진 Lua는 가장 빠른 스크립팅 언어 중 하나입니다. 작은 설치 공간(인터프리터는 ~120KB)과 단순성으로 인해 게임 개발 스크립팅, 임베디드 시스템 및 구성에 적합한 선택입니다.
 Lua는 Roblox(2억 명 이상의 월간 사용자를 보유한 게임 플랫폼), World of Warcraft 애드온 및 수많은 게임 엔진(Love2D, Defold, Corona SDK)을 뒷받침하는 스크립팅 언어로 가장 잘 알려져 있습니다. Nginx(OpenResty), Redis 및 Wireshark에서도 사용됩니다.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Физика
 Физика задает самый фундаментальный вопрос в науке: как ведут себя материя и энергия? Все остальное — химия, биология, инженерия — основано на ответах. Физика варьируется от субатомного масштаба (квантовая механика) до космического масштаба (общая теория относительности), и ее принципы лежат в основе всех других естественных наук.
 ---

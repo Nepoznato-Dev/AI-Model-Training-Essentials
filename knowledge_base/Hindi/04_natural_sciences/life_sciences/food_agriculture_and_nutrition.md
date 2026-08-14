@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # भोजन, कृषि और पोषण
 भोजन मानव की सबसे बुनियादी जरूरत है, और कृषि सभ्यता की नींव है। शिकार और संग्रहण से खेती की ओर बदलाव - लगभग 10,000 साल पहले नवपाषाण क्रांति - ने मनुष्यों को शहर बनाने, लेखन विकसित करने और वह सब कुछ बनाने की अनुमति दी जिसे हम "सभ्यता" कहते हैं। आज, कृषि वैश्विक कार्यबल के लगभग 27% को रोजगार देती है और प्रतिदिन लगभग 10 ट्रिलियन कैलोरी का उत्पादन करती है। फिर भी लगभग 800 मिलियन लोग अभी भी भूखे हैं, जबकि 2 बिलियन से अधिक लोग अधिक वजन वाले या मोटापे से ग्रस्त हैं। समस्या उत्पादन नहीं है - यह वितरण, पहुंच और विकल्प है।
 ---

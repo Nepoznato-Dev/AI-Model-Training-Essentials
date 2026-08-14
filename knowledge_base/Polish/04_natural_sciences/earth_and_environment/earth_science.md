@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nauka o Ziemi
 Nauka o Ziemi bada planetę, na której żyjemy – jej strukturę, procesy, historię i systemy, które sprawiają, że nadaje się do zamieszkania. Obejmuje geologię (stała Ziemia), oceanografię (ocean), meteorologię (atmosferę i pogodę) oraz klimatologię (długoterminowe wzorce klimatyczne). Tym, co jednoczy te pola, jest zrozumienie, że Ziemia jest systemem dynamicznym: jej wnętrze nieustannie się porusza, jej powierzchnia ulega przekształceniom, a jej atmosfera i oceany oddziałują na siebie w złożony sposób.
 ---

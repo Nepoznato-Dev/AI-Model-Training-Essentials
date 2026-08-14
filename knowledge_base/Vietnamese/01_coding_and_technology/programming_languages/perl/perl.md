@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perl
 Perl được Larry Wall tạo ra vào năm 1987 như một công cụ xử lý văn bản thực tế. Nó trở thành xương sống của quá trình phát triển web thời kỳ đầu (tập lệnh CGI), quản trị hệ thống, tin sinh học và lập trình mạng. Triết lý của Perl là "Có nhiều cách để làm" (TMTOWTDI) - ngôn ngữ cung cấp cho bạn nhiều cách tiếp cận cho mọi vấn đề, thiên về tính biểu đạt hơn là tính đồng nhất.
 Ảnh hưởng của Perl đối với lập trình hiện đại là rất lớn nhưng thường vô hình: các biểu thức chính quy, bị ảnh hưởng bởi tính năng khớp mẫu của Perl, hiện đã trở thành tiêu chuẩn trong Python, JavaScript, Java và hầu hết các ngôn ngữ khác. CPAN (Mạng lưu trữ Perl toàn diện) là một trong những kho lưu trữ gói phần mềm đầu tiên và truyền cảm hứng cho các hệ thống sau này như PyPI của Python và npm của Node.

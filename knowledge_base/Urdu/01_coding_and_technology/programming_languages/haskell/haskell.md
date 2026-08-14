@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ہاسکل
 ہاسکل ایک مکمل طور پر فعال، مستحکم طور پر ٹائپ کی گئی، سستی سے تشخیص شدہ پروگرامنگ زبان ہے۔ سب سے پہلے 1990 میں معیاری بنایا گیا (Haskell 90) اور متعدد ورژنز کے ذریعے بہتر کیا گیا (Haskell 2010 موجودہ معیار ہے)، Haskell اپنی ریاضی کی سختی، طاقتور قسم کے نظام (ٹائپ کلاسز، مونڈز، اور الجبری ڈیٹا کی اقسام کے ساتھ)، اور اقسام کے ذریعے درستگی پر زور دینے کے لیے جانا جاتا ہے۔
 ہاسکل مرکزی دھارے کی زبان نہیں ہے، لیکن اس کا اثر بہت زیادہ ہے۔ مونڈز، سست تشخیص، اور قسم کی کلاسوں جیسے تصورات نے Rust، Swift، Kotlin، Scala، اور TypeScript کو متاثر کیا ہے۔ ہاسکل فنانس (اسٹینڈرڈ چارٹرڈ، بارکلیز)، کمپائلرز (GHC) اور رسمی تصدیق میں استعمال ہوتا ہے۔

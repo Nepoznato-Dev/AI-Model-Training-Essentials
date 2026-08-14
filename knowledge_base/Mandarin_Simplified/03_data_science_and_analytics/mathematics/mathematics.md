@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 数学
 数学不仅是学校学习的一门学科，它几乎是每个技术领域的基础。物理学用它来描述宇宙。计算机科学用它来设计算法。机器学习用它来优化权重。金融用它来定价风险。掌握每个分支并不是必要的，但了解情况——并知道每个分支的应用场景——可以让其他主题更容易掌握。
 ---

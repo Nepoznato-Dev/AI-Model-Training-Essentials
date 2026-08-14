@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Desain dan Budaya Organisasi
 Desain organisasi adalah pengaturan struktur, proses, peran, dan hak keputusan yang disengaja untuk melaksanakan strategi secara efektif. Budaya adalah nilai, keyakinan, norma, dan perilaku bersama yang membentuk cara orang bekerja sama. Struktur memberikan kerangka; budaya membentuk perilaku. Sebuah struktur dapat didesain ulang di atas kertas, namun jika budaya tidak mendukung perubahan tersebut, implementasinya akan gagal. Demikian pula, budaya yang kuat ditambah dengan struktur yang tidak efektif secara bertahap akan melemahkan kinerja organisasi. Organisasi yang paling efektif menangani keduanya – dan menyadari bahwa keduanya saling berhubungan.
 ---

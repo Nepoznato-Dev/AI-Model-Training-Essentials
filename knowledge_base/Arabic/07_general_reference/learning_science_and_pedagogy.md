@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تعلم العلوم والتربية
 تعلم العلوم هو دراسة متعددة التخصصات لكيفية تعلم الناس - مستمدة من علم النفس وعلم الأعصاب والتعليم والعلوم المعرفية. علم أصول التدريس هو ممارسة ومنهجية التدريس. إنهم يتناولون معًا الأسئلة ذات الصلة بأي شخص يقوم بالتدريس أو التدريب أو التوجيه أو تصميم محتوى تعليمي: ما هي الأساليب التي تساعد الأشخاص على التعلم بفعالية؟ ما هي تقنيات الدراسة الشائعة غير الفعالة؟ كيف ينبغي هيكلة التدريس للاحتفاظ والنقل الأمثل؟
 ---

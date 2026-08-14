@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ٹائم سیریز اور پیشن گوئی
 ٹائم سیریز کا ڈیٹا وقت کے ساتھ جمع کیا جانے والا کوئی بھی ڈیٹا ہوتا ہے: اسٹاک کی قیمتیں، درجہ حرارت کی ریڈنگ، ویب سائٹ ٹریفک، سیلز کے اعداد و شمار، دل کی شرح مانیٹر، توانائی کی کھپت۔ پیشن گوئی کا مطلب ہے ماضی کے نمونوں کی بنیاد پر مستقبل کی اقدار کی پیش گوئی کرنا۔ یہ ڈیٹا سائنس کی عملی طور پر قابل قدر ایپلی کیشنز میں سے ایک ہے — اور ایک مشکل ترین، کیونکہ مستقبل حقیقی طور پر غیر یقینی ہے اور حقیقی دنیا کے وقت کی سیریز شور، موسمی اور ساختی وقفوں سے بھری ہوئی ہے۔
 ---

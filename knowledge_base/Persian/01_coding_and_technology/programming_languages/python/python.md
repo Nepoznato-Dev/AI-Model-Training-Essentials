@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #پایتون
 پایتون یک زبان برنامه نویسی سطح بالا، تفسیر شده و همه منظوره است که توسط Guido van Rossum ایجاد شد و اولین بار در سال 1991 منتشر شد. این زبان خوانایی کد را از طریق تورفتگی قابل توجه و یک نحو تمیز که نزدیک به انگلیسی ساده می خواند، اولویت بندی می کند. پایتون به صورت پویا تایپ می شود، زباله جمع آوری می شود و از الگوهای برنامه نویسی متعدد از جمله برنامه نویسی رویه ای، شی گرا و تابعی پشتیبانی می کند.
 امروزه، پایتون زبان غالب در AI/ML، علم داده، محاسبات علمی و اتوماسیون است – در حالی که همچنان یکی از بهترین زبان ها برای مبتدیان است. این هویت دوگانه (به اندازه کافی ساده برای اولین اسکریپت، به اندازه کافی قدرتمند برای آموزش مدل های زبان بزرگ) چیزی است که آن را متمایز می کند.

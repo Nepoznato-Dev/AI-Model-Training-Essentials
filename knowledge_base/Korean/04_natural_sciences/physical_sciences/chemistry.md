@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 화학
 물리학이 게임의 규칙이라면, 화학은 조각들이 상호 작용할 때 일어나는 일입니다. 화학은 원자가 어떻게 결합하고, 분해하고, 재배열하는지, 즉 모든 물질이 어떻게 행동하는지를 연구합니다. 이는 기초 물리학과 생물학, 지질학, 공학의 복잡성 사이의 격차를 해소합니다.
 ---

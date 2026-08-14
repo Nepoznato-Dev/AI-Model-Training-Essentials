@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مشین لرننگ پروجیکٹ کی ناکامیاں
 مشین لرننگ پراجیکٹس خطرناک حد تک ناکام ہو جاتے ہیں — انڈسٹری کے اندازے بتاتے ہیں کہ 60-85% ML پروجیکٹ کبھی بھی پیداوار تک نہیں پہنچ پاتے۔ ناکامیاں عام طور پر الگورتھم میں نہیں ہوتیں۔ وہ اس عمل میں ہیں، ڈیٹا، توقعات، اور تنظیمی سیاق و سباق۔ یہ سمجھنا کہ ایم ایل پراجیکٹس کیوں ناکام ہوتے ہیں، ML سسٹم بنانے والے ہر شخص کے لیے ضروری ہے، کیونکہ ناکامی کے طریقوں کا اندازہ لگایا جا سکتا ہے اور بڑی حد تک گریز کیا جا سکتا ہے۔
 ---

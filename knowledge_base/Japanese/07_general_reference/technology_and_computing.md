@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Technology and Computing"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # テクノロジーとコンピューティング
 携帯電話、車、冷蔵庫、医療機器、現代社会を運営するインフラストラクチャなど、コンピューティングはあらゆる場所に存在します。プログラマーでなくても、すべての仕組みを理解することができます。このファイルには、コンピューターとは何か、インターネットがどのように機能するか、ソフトウェアがどのように構築されるか、デジタル世界を形作る概念などの基本事項が含まれています。
 > **さらに詳しく知りたいですか?** このファイルには大まかな概要が記載されています。トピックの詳細については、[`01_coding_and_technology/`](../01_coding_and_technology/)の専用ファイル (、[database systems](../01_coding_and_technology/database_systems.md)、[cloud architecture](../01_coding_and_technology/cloud_architecture.md)、[networking](../01_coding_and_technology/networking_basics.md)、およびを含む) を参照してください。

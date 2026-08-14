@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Matematica
 La matematica non è solo una materia studiata a scuola, ma è alla base di quasi tutti i campi tecnici. La fisica lo usa per descrivere l'universo. L'informatica lo usa per progettare algoritmi. L’apprendimento automatico lo utilizza per ottimizzare i pesi. La finanza lo usa per valutare il rischio. La padronanza di ogni ramo non è necessaria, ma comprendere il panorama – e sapere dove si applica ogni ramo – rende più facile comprendere altri argomenti.
 ---

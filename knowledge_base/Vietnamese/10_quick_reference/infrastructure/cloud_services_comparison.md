@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # So sánh dịch vụ đám mây
 Bảng so sánh song song của ba nhà cung cấp đám mây lớn — AWS, Azure và Google Cloud — trên các lĩnh vực điện toán, lưu trữ, cơ sở dữ liệu, AI/ML, kết nối mạng, giám sát và cơ sở hạ tầng dưới dạng mã. Hữu ích cho các kiến ​​trúc sư quyết định nên sử dụng nền tảng nào hoặc ánh xạ các dịch vụ từ đám mây này sang đám mây khác.
 ---

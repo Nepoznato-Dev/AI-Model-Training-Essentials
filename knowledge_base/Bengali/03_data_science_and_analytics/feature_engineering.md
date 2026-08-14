@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ফিচার ইঞ্জিনিয়ারিং
 ফিচার ইঞ্জিনিয়ারিং হল কাঁচা ডেটাকে উপস্থাপনায় রূপান্তরিত করার প্রক্রিয়া যা মেশিন লার্নিং মডেলগুলিকে আরও কার্যকর করে তোলে। এটিকে প্রায়শই ML পাইপলাইনের সবচেয়ে গুরুত্বপূর্ণ পদক্ষেপ হিসাবে বর্ণনা করা হয় — যে বৈশিষ্ট্যগুলি আপনি একটি মডেলকে আপনার বেছে নেওয়া অ্যালগরিদমের চেয়ে বেশি দেন৷ ভাল-কারুকৃত বৈশিষ্ট্য সহ একটি সাধারণ মডেল সাধারণত কাঁচা, অপ্রক্রিয়াজাত ইনপুট সহ একটি জটিল মডেলকে ছাড়িয়ে যায়। শিল্পটি ডোমেন এবং ডেটা উভয়কেই ভালভাবে বোঝার মধ্যে রয়েছে যাতে মডেলটি শিখতে পারে এমন সংকেত তৈরি করতে পারে।
 ---

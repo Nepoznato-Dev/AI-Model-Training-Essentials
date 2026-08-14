@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # İşletme ve Ekonomi
 Bir ürün veya hizmet satan her kuruluş bir işletmedir ve mal üreten ve dağıtan her toplum bir ekonomidir. Bu dosyadaki kavramlar, ister serbest bir operasyon yürütüyor olun, ister bir şirkette çalışıyor olun, ister haberleri anlamaya çalışıyor olun, ya da sadece paranın dünyada nasıl hareket ettiğini anlamaya çalışıyor olun, geçerlidir.
 ---

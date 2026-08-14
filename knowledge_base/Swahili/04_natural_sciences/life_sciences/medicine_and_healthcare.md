@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dawa na Afya
 Dawa ni sayansi na mazoezi ya kugundua, kutibu, na kuzuia magonjwa. Ni mojawapo ya jitihada za kale zaidi za kibinadamu - Kiapo cha Hippocratic kilianzia Ugiriki ya kale - na mojawapo ya mabadiliko ya haraka zaidi. Katika karne iliyopita pekee, tulitoka kutokuwa na viuavijasumu hadi kuwa na matibabu ya jeni ambayo yanaweza kuandika upya DNA ya mgonjwa.
 Faili hii inashughulikia jinsi dawa inavyofanya kazi: taaluma kuu, jinsi magonjwa yanavyotambuliwa na kutibiwa, jinsi mifumo ya afya inavyopangwa, na maswali ya maadili ambayo hutokea wakati maisha ya binadamu yako hatarini.

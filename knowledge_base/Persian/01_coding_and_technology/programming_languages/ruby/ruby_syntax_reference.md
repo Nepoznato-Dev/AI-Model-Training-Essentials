@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # روبی - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای Ruby (3.x) ارائه می دهد. با تمرکز بر الگوهای نحوی جامع، بلوک‌ها و بسته‌ها، فرابرنامه‌نویسی و اصطلاحات روبی، مرجع اصلی روبی را تکمیل می‌کند.
 ---

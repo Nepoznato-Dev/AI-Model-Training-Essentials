@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فشل مشروع التعلم الآلي
 تفشل مشاريع التعلم الآلي بمعدل ينذر بالخطر - تشير تقديرات الصناعة إلى أن 60-85% من مشاريع تعلم الآلة لا تصل إلى مرحلة الإنتاج أبدًا. لا تكون حالات الفشل عادة في الخوارزميات؛ إنهم في هذه العملية، والبيانات، والتوقعات، والسياق التنظيمي. يعد فهم سبب فشل مشاريع تعلم الآلة أمرًا ضروريًا لأي شخص يقوم ببناء أنظمة تعلم الآلة، لأن أوضاع الفشل يمكن التنبؤ بها ويمكن تجنبها إلى حد كبير.
 ---

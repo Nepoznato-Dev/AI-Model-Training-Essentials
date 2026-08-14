@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #سائنس اور پیڈاگوجی سیکھنا
 سائنس سیکھنا اس بات کا بین الضابطہ مطالعہ ہے کہ لوگ کیسے سیکھتے ہیں — نفسیات، نیورو سائنس، تعلیم، اور علمی سائنس سے ڈرائنگ۔ پیڈاگوجی تدریس کا عمل اور طریقہ کار ہے۔ ایک ساتھ، وہ ہر اس شخص سے متعلقہ سوالات کا جواب دیتے ہیں جو تعلیم دیتا ہے، تربیت دیتا ہے، سرپرست، یا تعلیمی مواد ڈیزائن کرتا ہے: کون سے طریقے لوگوں کو مؤثر طریقے سے سیکھنے میں مدد کرتے ہیں؟ مطالعہ کی کونسی عام تکنیکیں غیر موثر ہیں؟ زیادہ سے زیادہ برقرار رکھنے اور منتقلی کے لیے ہدایات کو کیسے ترتیب دیا جانا چاہیے؟
 ---

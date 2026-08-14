@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kinabukasan ng Trabaho
 ## Pangkalahatang-ideya
 Ang paraan ng paggawa namin ay nagbabago nang mas mabilis kaysa sa anumang punto mula noong Industrial Revolution. Mula sa bihirang perk, naging default sa magdamag ang malayuang trabaho. Lumilipat ang AI mula sa pagiging bago tungo sa collaborator. Binabago ng ekonomiya ng gig kung ano ang ibig sabihin ng "trabaho". At hindi dumarating ang automation para sa lahat ng trabaho — ngunit darating ito para sa maraming gawain sa karamihan ng mga trabaho. Narito ang isang pagtingin sa mga puwersa na muling hinuhubog ang lugar ng trabaho at kung ano ang susunod.

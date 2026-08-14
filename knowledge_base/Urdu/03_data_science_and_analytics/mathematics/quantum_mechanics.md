@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کوانٹم میکینکس
 کوانٹم میکانکس سب سے چھوٹے پیمانے پر طبیعیات کا نظریہ ہے — ایٹم، الیکٹران، فوٹون، اور فطرت کے بنیادی ذرات۔ یہ کلاسیکی میکانکس کی تعییناتی دنیا کو احتمالات، سپرپوزیشنز اور الجھنوں سے بدل دیتا ہے۔ اپنی متضاد نوعیت کے باوجود، کوانٹم میکانکس تمام سائنس میں سب سے زیادہ درست طریقے سے آزمایا گیا نظریہ ہے۔ آج، اس کے اصول کوانٹم کمپیوٹرز کے ذریعے کمپیوٹنگ کے لیے براہ راست متعلقہ ہوتے جا رہے ہیں، جو کلاسیکل مشینوں کے مقابلے میں کچھ مسائل کو تیزی سے حل کرنے کا وعدہ کرتے ہیں۔
 ---

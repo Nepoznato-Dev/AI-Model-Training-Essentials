@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Terraform و Infrastructure به عنوان کد
 Terraform پرکاربردترین ابزار زیرساخت به‌عنوان کد (IaC) است - به شما امکان می‌دهد زیرساخت ابری (سرورها، پایگاه‌های داده، شبکه‌ها، مجوزها) را در فایل‌های پیکربندی اعلامی تعریف کنید که می‌توانند نسخه‌سازی، بررسی، آزمایش و خودکار شوند. به جای کلیک کردن روی یک کنسول ابری، کدی می نویسید که وضعیت مطلوب زیرساخت شما را توصیف می کند و Terraform متوجه می شود که چه تغییراتی باید ایجاد کند.
 ---

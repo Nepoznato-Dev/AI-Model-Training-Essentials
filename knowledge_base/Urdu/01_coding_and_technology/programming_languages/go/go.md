@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جاؤ
 گو (جسے اکثر اس کے اصل ڈومین نام کے بعد "گولانگ" کہا جاتا ہے) ایک مستحکم طور پر ٹائپ شدہ، مرتب کردہ پروگرامنگ لینگویج ہے جو گوگل پر رابرٹ گریزیمر، روب پائیک اور کین تھامسن نے ڈیزائن کی ہے۔ یہ پہلی بار 2012 میں سسٹم پروگرامنگ کے لیے ایک بہتر زبان ہونے کے واضح ہدف کے ساتھ جاری کیا گیا تھا -- ایک جو C کی کارکردگی کو Python جیسی متحرک زبانوں کی پیداواری صلاحیت کے ساتھ جوڑتی ہے۔ گو اپنی سادگی، تیز تالیف، بلٹ ان کنکرنسی (گوروٹینز اور چینلز) اور بہترین ٹولنگ کے لیے جانا جاتا ہے۔
 گو کلاؤڈ انفراسٹرکچر ایکو سسٹم کے زیادہ تر حصے کو طاقت دیتا ہے: Docker، Kubernetes، Terraform، Prometheus، etcd، اور Go اسٹینڈرڈ لائبریری کے HTTP سرور سبھی Go میں لکھے گئے ہیں۔ یہ کلاؤڈ-آبائی ترقی، مائیکرو سروسز، اور CLI ٹولز کے لیے پہلے سے طے شدہ زبان بن گئی ہے۔

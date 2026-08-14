@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mifumo ya Mapendekezo
 Mifumo ya mapendekezo hutabiri kile ambacho mtumiaji atataka kuona, kununua au kuingiliana nacho. Wanawezesha milisho ya maudhui kwenye mitandao ya kijamii, mapendekezo ya bidhaa kwenye tovuti za biashara ya mtandaoni, chaguo za filamu kwenye majukwaa ya utiririshaji, na matokeo ya utafutaji. Licha ya kutoonekana kwa watumiaji wengi, ni miongoni mwa mifumo ya AI yenye athari kubwa kibiashara duniani - Netflix inakadiria injini yake ya mapendekezo huokoa zaidi ya dola bilioni 1 kwa mwaka kwa kupunguza mvutano wa watumiaji.
 ---

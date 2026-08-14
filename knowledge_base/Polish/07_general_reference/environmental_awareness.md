@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Świadomość ekologiczna
 Środowisko nie jest odrębną rzeczą „tam” – jest to system, dzięki któremu wszystko inne jest możliwe. Każdy oddech, każda wypita szklanka wody, każdy spożywany posiłek zależą od składu atmosfery, cykli wodnych, stanu gleby i sieci zapylaczy. Zrozumienie, jak te systemy działają – i jak się zmieniają – nie jest opcjonalne dla świadomej osoby. W tym pliku omówiono podstawy nauk o środowisku, wyzwania, przed którymi stoimy, oraz znaczenie zrównoważonego rozwoju w praktyce.
 ---

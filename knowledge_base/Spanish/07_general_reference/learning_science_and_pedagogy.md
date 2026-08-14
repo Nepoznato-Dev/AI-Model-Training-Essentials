@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aprendizaje de Ciencias y Pedagogía
 El aprendizaje de la ciencia es el estudio interdisciplinario de cómo aprenden las personas, basándose en la psicología, la neurociencia, la educación y la ciencia cognitiva. La pedagogía es la práctica y metodología de la enseñanza. Juntos, abordan preguntas relevantes para cualquiera que enseñe, capacite, oriente o diseñe contenido educativo: ¿Qué métodos ayudan a las personas a aprender de manera efectiva? ¿Qué técnicas de estudio comunes son ineficientes? ¿Cómo debería estructurarse la instrucción para una retención y transferencia óptimas?
 ---

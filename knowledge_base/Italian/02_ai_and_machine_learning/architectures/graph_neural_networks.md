@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Grafico delle reti neurali
 Le reti neurali a grafo (GNN) sono reti neurali progettate per operare su dati strutturati a grafo: reti di nodi collegati da bordi. Mentre le reti neurali tradizionali funzionano su griglie (immagini) o sequenze (testo), le GNN gestiscono strutture relazionali arbitrarie: social network, grafici molecolari, grafici della conoscenza, reti stradali, grafici delle raccomandazioni e altro ancora. Sono diventati essenziali per la scoperta di farmaci, il rilevamento di frodi, i sistemi di raccomandazione e qualsiasi ambito in cui le relazioni tra entità contano.
 ---

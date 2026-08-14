@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # غذا، کشاورزی و تغذیه
 غذا اساسی ترین نیاز بشر است و کشاورزی پایه تمدن است. تغییر از شکار و گردآوری به کشاورزی - انقلاب نوسنگی، حدود 10000 سال پیش - چیزی است که به انسان اجازه داد تا شهرها را بسازد، نوشتن را توسعه دهد، و هر چیز دیگری را که ما آن را "تمدن" می نامیم ایجاد کنند. امروزه، کشاورزی حدود 27 درصد از نیروی کار جهان را استخدام می کند و تقریباً 10 تریلیون کالری در روز تولید می کند. با این حال حدود 800 میلیون نفر هنوز گرسنه هستند، در حالی که بیش از 2 میلیارد نفر اضافه وزن یا چاق هستند. مشکل تولید نیست - توزیع، دسترسی و انتخاب است.
 ---

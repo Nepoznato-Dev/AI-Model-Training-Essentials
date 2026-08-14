@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জাভা
 জাভা হল একটি স্ট্যাটিকলি টাইপ করা, অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং ভাষা যা জেমস গসলিং দ্বারা সান মাইক্রোসিস্টেমে তৈরি করা হয়েছিল এবং 1995 সালে প্রকাশিত হয়েছিল৷ এর নকশা দর্শন — "একবার লিখুন, কোথাও চালান" (WORA) — জাভা ভার্চুয়াল মেশিন (JVM) এর মাধ্যমে অর্জন করা হয়েছে, যা JVM বাস্তবায়নের যে কোনও প্ল্যাটফর্মে কম্পাইল করা জাভা কোড চালানোর অনুমতি দেয়৷ জাভা ইতিহাসে সর্বাধিক ব্যবহৃত প্রোগ্রামিং ভাষাগুলির মধ্যে একটি, এন্টারপ্রাইজ ব্যাকএন্ড, অ্যান্ড্রয়েড অ্যাপস, বড় ডেটা সিস্টেম এবং আর্থিক পরিষেবাগুলিকে শক্তিশালী করে৷
 প্রায় 30 বছর বয়সী হওয়া সত্ত্বেও, জাভা বিকশিত হতে থাকে। আধুনিক জাভা (সংস্করণ 17+) এর মধ্যে রয়েছে রেকর্ড, সিল করা ক্লাস, প্যাটার্ন ম্যাচিং, ভার্চুয়াল থ্রেড এবং একটি ক্রমবর্ধমান ইকোসিস্টেম যা নতুন ভাষার সাথে প্রতিযোগিতা করে।

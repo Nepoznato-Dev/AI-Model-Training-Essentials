@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Biznes i ekonomia
 Każda organizacja sprzedająca produkt lub usługę to biznes, a każde społeczeństwo, które produkuje i dystrybuuje towary, to gospodarka. Pojęcia zawarte w tym pliku mają zastosowanie niezależnie od tego, czy prowadzisz niezależną działalność, pracujesz w korporacji, próbujesz zrozumieć wiadomości, czy po prostu zastanawiasz się, w jaki sposób pieniądze przepływają przez świat.
 ---

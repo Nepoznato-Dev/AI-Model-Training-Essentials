@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP (препроцессор гипертекста) — это серверный язык сценариев, созданный Расмусом Лердорфом в 1994 году и впервые выпущенный в 1995 году. Первоначально предназначенный для создания динамических веб-страниц, PHP превратился в полнофункциональный язык общего назначения. Он поддерживает примерно 75% всех веб-сайтов с известным серверным языком, включая WordPress, Facebook (изначально), Wikipedia, Slack и миллионы других сайтов.
 Современный PHP (8.x) сильно отличается от PHP начала 2000-х годов. Теперь в нем есть типизированные свойства, выражения соответствия, перечисления, волокна, классы только для чтения и надежная система типов. Несмотря на свою репутацию среди разработчиков (часто критикуемую за непоследовательность), PHP практичен, широко распространен и продолжает совершенствоваться.

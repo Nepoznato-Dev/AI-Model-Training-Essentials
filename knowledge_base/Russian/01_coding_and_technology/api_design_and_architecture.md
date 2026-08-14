@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Дизайн и архитектура API
 API (интерфейс прикладного программирования) — это то, как компоненты программного обеспечения взаимодействуют друг с другом. Хорошо спроектированный API интуитивно понятен, последователен, и с ним приятно работать. Плохо спроектированный вариант вызывает путаницу, ошибки и разочарование. В этом файле описаны принципы, шаблоны и методы создания API, которые разработчики действительно хотят использовать.
 ---

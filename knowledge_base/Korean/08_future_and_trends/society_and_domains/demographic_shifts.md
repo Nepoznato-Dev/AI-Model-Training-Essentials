@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 인구통계학적 변화
 ## 개요
 인구통계는 운명입니다. 아니면 적어도 운명과 잘 맞습니다. 세계 인구는 빠르게 노령화되고 있으며, 새로운 패턴으로 이주하고 있으며, 전례 없는 속도로 도시로 밀집되어 있으며, 투표 행동부터 소비자 습관까지 모든 것을 형성하는 세대별로 나누어지고 있습니다. 이러한 변화는 수십 년에 걸쳐 나타날 것이지만 그 효과는 이미 가시화되고 있습니다. 다음은 4가지 주요 트렌드와 그 의미입니다.

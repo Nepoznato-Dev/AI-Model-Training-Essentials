@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Haskell
 Ang Haskell ay isang purong functional, statically typed, tamad na sinusuri na programming language. Unang na-standardize noong 1990 (Haskell 90) at pino sa maraming bersyon (Haskell 2010 ang kasalukuyang pamantayan), kilala ang Haskell para sa kanyang mathematical rigour, malakas na sistema ng uri (na may mga uri ng klase, monad, at algebraic na uri ng data), at diin sa kawastuhan sa pamamagitan ng mga uri.
 Ang Haskell ay hindi isang pangunahing wika, ngunit ang impluwensya nito ay napakalaki. Ang mga konsepto tulad ng monads, lazy evaluation, at type classes ay nakaimpluwensya sa Rust, Swift, Kotlin, Scala, at TypeScript. Ang Haskell ay ginagamit sa pananalapi (Standard Chartered, Barclays), compiler (GHC), at pormal na pag-verify.

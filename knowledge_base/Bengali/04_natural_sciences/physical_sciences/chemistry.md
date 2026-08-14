@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # রসায়ন
 যদি পদার্থবিদ্যা খেলার নিয়ম হয়, রসায়ন হল যখন টুকরোগুলি ইন্টারঅ্যাক্ট করে তখন যা ঘটে। রসায়ন অধ্যয়ন করে যে কীভাবে পরমাণুগুলি বন্ধন, বিচ্ছিন্ন এবং পুনর্বিন্যাস করে — যার অর্থ হল, সমস্ত পদার্থ কীভাবে আচরণ করে। এটি মৌলিক পদার্থবিদ্যা এবং জীববিদ্যা, ভূতত্ত্ব এবং প্রকৌশলের জটিলতার মধ্যে ব্যবধান দূর করে।
 ---

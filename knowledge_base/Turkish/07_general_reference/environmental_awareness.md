@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Çevre Bilinci
 Çevre "dışarıda" ayrı bir şey değildir; diğer her şeyi mümkün kılan sistemdir. Aldığınız her nefes, içtiğiniz her bardak su, yediğiniz her yemek atmosferik bileşime, su döngülerine, toprağın sağlığına ve polen taşıyıcı ağlara bağlıdır. Bu sistemlerin nasıl çalıştığını ve nasıl değiştiğini anlamak, bilgili bir kişi için isteğe bağlı değildir. Bu dosya çevre biliminin temellerini, karşılaştığımız zorlukları ve sürdürülebilirliğin pratikte gerçekte ne anlama geldiğini kapsamaktadır.
 ---

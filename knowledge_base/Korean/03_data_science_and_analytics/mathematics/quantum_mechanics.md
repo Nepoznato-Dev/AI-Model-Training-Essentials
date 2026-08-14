@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 양자역학
 양자 역학은 원자, 전자, 광자 및 자연의 기본 입자와 같은 가장 작은 규모의 물리학 이론입니다. 이는 고전역학의 결정론적 세계를 확률, 중첩, 얽힘으로 대체합니다. 반직관적인 성격에도 불구하고 양자역학은 모든 과학 분야에서 가장 정확하게 검증된 이론입니다. 오늘날 그 원리는 양자 컴퓨터를 통한 컴퓨팅과 직접적인 관련이 있으며, 이는 기존 기계보다 기하급수적으로 빠르게 특정 문제를 해결할 것을 약속합니다.
 ---

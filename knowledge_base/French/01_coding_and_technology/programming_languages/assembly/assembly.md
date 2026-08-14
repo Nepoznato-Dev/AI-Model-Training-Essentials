@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Langage d'assemblage
 Le langage assembleur est le langage de programmation lisible par l’homme de niveau le plus bas. Il fournit une représentation directe des instructions du code machine d'un ordinateur à l'aide de codes mnémoniques (comme`MOV`,`ADD`,`JMP`) au lieu de binaires bruts. Chaque langage assembleur est spécifique à une architecture de processeur particulière (x86, ARM, MIPS, RISC-V) : le code écrit pour une architecture ne s'exécutera pas sur une autre.
 Le langage assembleur n’est pas utilisé pour créer des applications. Il est utilisé lorsque vous avez besoin d'un contrôle absolu sur le matériel : écriture des noyaux du système d'exploitation, des pilotes de périphériques, des chargeurs de démarrage, du micrologiciel intégré, des sections de code critiques pour les performances, de l'ingénierie inverse et de la compréhension de la manière dont les ordinateurs exécutent réellement les instructions.

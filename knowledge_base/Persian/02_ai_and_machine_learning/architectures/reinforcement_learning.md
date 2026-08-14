@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # یادگیری تقویتی
 یادگیری تقویتی (RL) این است که چگونه ماشین‌ها یاد می‌گیرند که توالی تصمیم‌ها را با آزمون و خطا بگیرند. بر خلاف یادگیری تحت نظارت، که در آن پاسخ صحیح برای هر مثال ارائه می‌شود، RL به یک عامل فقط یک سیگنال پاداش می‌دهد - و عامل باید بفهمد که کدام اقدامات در طول زمان به بهترین نتایج منجر می‌شوند. این رویکرد پشت AlphaGo، کنترل رباتیک، هوش مصنوعی بازی، و - به طور بحرانی - RLHF، تکنیکی است که برای همسو کردن مدل‌های زبان بزرگ مدرن با ترجیحات انسانی استفاده می‌شود.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mbinu ya Utafiti
 Mbinu ya utafiti ni mbinu ya kimfumo ya kuchunguza maswali, kupima hypotheses, na kutoa maarifa ya kuaminika. Iwe unafanya majaribio ya kisayansi, tafiti za sayansi ya jamii, uchanganuzi wa biashara au utafiti wa kitaaluma, mbinu unayochagua huamua kama matokeo yako yanaaminika, yanaweza kupatikana tena na yanafaa. Utafiti ulioundwa vizuri hutoa matokeo ya kuaminika; iliyotengenezwa vibaya hutoa kelele - au mbaya zaidi, majibu ya makosa ya kujiamini.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বিমূর্ত বীজগণিত
 বিমূর্ত বীজগণিত বীজগণিতীয় কাঠামো অধ্যয়ন করে — নির্দিষ্ট নিয়ম অনুসরণ করে এমন ক্রিয়াকলাপ দিয়ে সজ্জিত সেট। সংখ্যার সাথে কাজ করার পরিবর্তে, বিমূর্ত বীজগণিত যে কোনো বস্তুর সাথে কাজ করে যা স্বতঃসিদ্ধ হয়। এই সাধারণতা শক্তিশালী: "গ্রুপ"-এর জন্য প্রমাণিত একটি উপপাদ্য পূর্ণসংখ্যা, প্রতিসাম্য, ম্যাট্রিস, পারমুটেশন এবং কোয়ান্টাম অবস্থার জন্য একই সাথে প্রযোজ্য। বিমূর্ত বীজগণিত ক্রিপ্টোগ্রাফি, ত্রুটি-সংশোধনকারী কোড, কোয়ান্টাম কম্পিউটিং, এবং পদার্থবিদ্যা জুড়ে ব্যবহৃত প্রতিসাম্য বিশ্লেষণকে আন্ডারপিন করে।
 ---

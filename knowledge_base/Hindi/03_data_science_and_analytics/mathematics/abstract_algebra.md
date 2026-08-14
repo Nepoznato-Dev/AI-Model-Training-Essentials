@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #सार बीजगणित
 सार बीजगणित बीजगणितीय संरचनाओं का अध्ययन करता है - विशिष्ट नियमों का पालन करने वाले संचालन से सुसज्जित सेट। संख्याओं के साथ काम करने के बजाय, अमूर्त बीजगणित किसी भी वस्तु के साथ काम करता है जो स्वयंसिद्धों को संतुष्ट करता है। यह व्यापकता शक्तिशाली है: "समूहों" के लिए सिद्ध किया गया एक प्रमेय पूर्णांक, समरूपता, आव्यूह, क्रमपरिवर्तन और क्वांटम अवस्थाओं पर एक साथ लागू होता है। सार बीजगणित क्रिप्टोग्राफी, त्रुटि-सुधार कोड, क्वांटम कंप्यूटिंग और पूरे भौतिकी में उपयोग किए जाने वाले समरूपता विश्लेषण को रेखांकित करता है।
 ---

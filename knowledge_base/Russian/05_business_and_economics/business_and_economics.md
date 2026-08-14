@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Бизнес и экономика
 Каждая организация, продающая товар или услугу, представляет собой бизнес, а каждое общество, производящее и распространяющее товары, — это экономика. Понятия, изложенные в этом файле, применимы независимо от того, работаете ли вы внештатным сотрудником, работаете в корпорации, пытаетесь разобраться в новостях или просто выясняете, как деньги движутся по миру.
 ---

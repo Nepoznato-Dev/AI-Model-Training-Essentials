@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mbinu za Usimamizi na Mradi
 Kusimamia watu na miradi ni miongoni mwa majukumu yanayodai sana katika shirika lolote. Ujuzi wa kiufundi hutoa kuingia, lakini uwezo wa kuongoza timu, kufanya maamuzi, kuwasiliana kwa ufanisi, na kutoa matokeo huamua kama malengo yamefikiwa. Faili hii inashughulikia mifumo, mbinu, na ujuzi wa vitendo ambao wasimamizi bora na viongozi wa mradi hutumika.
 ---

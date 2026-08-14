@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # বিজ্ঞান এবং শিক্ষাবিদ্যা শেখা
 বিজ্ঞান শেখা হল মানুষ কীভাবে শেখে তার আন্তঃবিভাগীয় অধ্যয়ন — মনোবিজ্ঞান, স্নায়ুবিজ্ঞান, শিক্ষা এবং জ্ঞানীয় বিজ্ঞান থেকে অঙ্কন। শিক্ষাবিদ্যা হল শিক্ষাদানের অনুশীলন ও পদ্ধতি। একত্রে, তারা যে কাউকে শেখায়, প্রশিক্ষণ দেয়, পরামর্শদাতা দেয় বা শিক্ষামূলক বিষয়বস্তু ডিজাইন করে তাদের জন্য প্রাসঙ্গিক প্রশ্নগুলি সম্বোধন করে: কোন পদ্ধতিগুলি মানুষকে কার্যকরভাবে শিখতে সাহায্য করে? কোন সাধারণ অধ্যয়ন কৌশল অদক্ষ? সর্বোত্তম ধারণ এবং স্থানান্তরের জন্য নির্দেশ কীভাবে গঠন করা উচিত?
 ---

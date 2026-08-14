@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کارکردگی کی اصلاح
 پرفارمنس آپٹیمائزیشن سافٹ ویئر کو تیز تر بنانے کا عمل ہے — ردعمل کے اوقات کو کم کرنا، تھرو پٹ بڑھانا، میموری کے استعمال کو کم کرنا، اور رکاوٹوں کو ختم کرنا۔ یہ ایک ڈویلپر کے پاس سب سے زیادہ مؤثر مہارتوں میں سے ایک ہے، کیونکہ سست سافٹ ویئر صارفین کو کھو دیتا ہے، وسائل کو ضائع کرتا ہے، اور سب کو مایوس کر دیتا ہے۔ لیکن یہ سب سے عام غلط کاموں میں سے ایک ہے، جس میں ڈویلپرز ثبوت کے بجائے وجدان کی بنیاد پر غلط چیزوں کو بہتر بناتے ہیں۔
 ---

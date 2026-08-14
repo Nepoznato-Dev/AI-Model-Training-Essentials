@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Pagkabigo sa Disenyo ng API at Pagsasama
 Ang mga API (Application Programming Interfaces) ay ang connective tissue ng modernong software — hinahayaan nila ang mga serbisyo na makipag-usap, hinahayaan ang mga third party na magsama, at hinahayaan ang mga team na magtrabaho nang nakapag-iisa. Kapag nagkamali ang disenyo ng API, ang mga kahihinatnan ay lilitaw sa bawat system na nakasalalay dito: mga sirang integrasyon, mga kahinaan sa seguridad, pagkadismaya ng developer, at magastos na muling pagsulat. Ang mga pagkabigo sa pagsasama — kung saan ang mga system ay hindi maaaring makipag-usap nang maaasahan — ay kabilang sa mga pinakakaraniwang pinagmumulan ng mga insidente ng produksyon.
 ---

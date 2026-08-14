@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #พีพีพี
 PHP (Hypertext Preprocessor) เป็นภาษาสคริปต์ฝั่งเซิร์ฟเวอร์ที่สร้างขึ้นโดย Rasmus Lerdorf ในปี 1994 และเปิดตัวครั้งแรกในปี 1995 เดิมทีออกแบบมาเพื่อสร้างหน้าเว็บแบบไดนามิก PHP ได้พัฒนาเป็นภาษาอเนกประสงค์ที่มีคุณสมบัติครบถ้วน ขับเคลื่อนประมาณ 75% ของเว็บไซต์ทั้งหมดที่มีภาษาฝั่งเซิร์ฟเวอร์ที่รู้จัก รวมถึง WordPress, Facebook (เดิม), Wikipedia, Slack และเว็บไซต์อื่น ๆ นับล้าน
 Modern PHP (8.x) เป็นภาษาที่แตกต่างจาก PHP ในช่วงต้นทศวรรษ 2000 มาก ขณะนี้มีคุณสมบัติการพิมพ์ นิพจน์การจับคู่ การแจงนับ ไฟเบอร์ คลาสแบบอ่านอย่างเดียว และระบบประเภทที่แข็งแกร่ง แม้จะมีชื่อเสียงในหมู่นักพัฒนา (มักถูกวิพากษ์วิจารณ์ถึงความไม่สอดคล้องกัน) แต่ PHP นั้นใช้งานได้จริง มีการนำไปใช้งานอย่างกว้างขวาง และปรับปรุงอย่างต่อเนื่อง

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کنٹرول تھیوری
 کنٹرول تھیوری نظاموں کو اس طرح سے برتاؤ کرنے کی ریاضی ہے جس طرح آپ چاہتے ہیں۔ تھرموسٹیٹ سے لے کر آٹو پائلٹس تک، روبوٹک ہتھیاروں سے لے کر کیمیائی ری ایکٹر تک، کنٹرول سسٹم مطلوبہ رویے کو برقرار رکھنے کے لیے احساس، فیصلہ اور عمل کرتے ہیں۔ یہ فیلڈ استحکام، کارکردگی، اور مضبوطی کا تجزیہ کرنے کے لیے سخت ٹولز فراہم کرتا ہے — ایسے تصورات جو کمک سیکھنے، ہائپر پیرامیٹر ٹیوننگ، اور انکولی نظام میں منتقل ہو چکے ہیں۔
 ---

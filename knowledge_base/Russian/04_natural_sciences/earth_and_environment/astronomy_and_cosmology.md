@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Астрономия и космология
 Астрономия — это изучение небесных объектов — звезд, планет, галактик и всего, что находится за пределами земной атмосферы. Космология — это изучение Вселенной в целом: ее происхождения, структуры, эволюции и окончательной судьбы. Вместе они отвечают на некоторые из самых фундаментальных вопросов, которые когда-либо задавали люди: как возникла Вселенная? Насколько он велик? Мы одни? Что с ним будет в итоге?
 ---

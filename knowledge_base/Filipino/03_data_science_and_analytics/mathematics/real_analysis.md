@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tunay na Pagsusuri
 Ang tunay na pagsusuri ay ang mahigpit na pundasyon ng calculus. Bagama't itinuturo sa iyo ng panimulang calculus kung paano mag-compute ng mga derivatives at integral, ang tunay na pagsusuri ay nagtatanong *bakit* gumagana ang mga diskarteng ito — at kapag nabigo ang mga ito. Nagbibigay ito ng tumpak na mga kahulugan ng mga limitasyon, pagpapatuloy, convergence, at integration na sumasailalim sa probability theory, functional analysis, optimization, at ang mga theoretical na garantiya sa likod ng machine learning algorithm.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps và CI/CD
 DevOps là sự kết hợp giữa triết lý văn hóa, thực tiễn và công cụ cho phép các nhóm cung cấp phần mềm nhanh hơn và đáng tin cậy hơn. Nó phá vỡ bức tường giữa các nhà phát triển (những người muốn thực hiện các thay đổi) và các hoạt động (những người muốn sự ổn định). CI/CD — Tích hợp liên tục và Phân phối liên tục — là xương sống tự động hóa giúp điều này trở nên khả thi.
 ---

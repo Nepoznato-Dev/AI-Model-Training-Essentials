@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ngôn ngữ học và Khoa học ngôn ngữ
 Ngôn ngữ học là nghiên cứu khoa học về ngôn ngữ - cấu trúc, ý nghĩa, cách sử dụng, tiếp thu và tiến hóa của nó. Ngôn ngữ là một đặc điểm nổi bật trong giao tiếp của con người: nó có tính năng suất vô hạn (người nói có thể tạo và hiểu những câu mà họ chưa từng gặp trước đây), nó được truyền tải về mặt văn hóa (nó được học chứ không phải thuần túy bẩm sinh) và nó liên tục phát triển. Hiểu cách hoạt động của ngôn ngữ có liên quan đến bất kỳ ai xây dựng công nghệ ngôn ngữ, giảng dạy, dịch thuật hoặc làm việc để giao tiếp hiệu quả hơn.
 ---

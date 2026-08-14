@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 外壳和 PowerShell
 Shell 脚本是指为命令行解释器编写脚本。两个最重要的 shell 是 **Bash** (Bourne Again Shell)（Linux 和 macOS 上的默认设置）和 **PowerShell**（Microsoft 的现代跨平台 shell 和脚本语言）。 Shell 脚本自动执行系统管理任务、构建管道、文件处理和部署工作流程。
 每个开发人员、DevOps 工程师和系统管理员都需要 shell 脚本编写技能。无论您是部署 Web 服务器、处理日志文件、设置 CI/CD 管道还是自动备份，shell 脚本编写都是适合该工作的工具。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Методики тестирования
 Тестирование — это способ обрести уверенность в том, что ваш код работает — и, что более важно, что изменения в нем не нарушат то, что уже работает. Хорошее тестирование выявляет ошибки раньше, чем это сделают пользователи, документирует ожидаемое поведение и позволяет бесстрашно проводить рефакторинг. Этот файл охватывает весь спектр стратегий тестирования, от модульных тестов до сквозных тестов, а также принципы, которые делают тестирование эффективным.
 ---

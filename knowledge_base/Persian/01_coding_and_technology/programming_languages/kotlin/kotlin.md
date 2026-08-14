@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کاتلین
 Kotlin یک زبان برنامه نویسی تایپ شده و کامپایل شده است که توسط JetBrains توسعه یافته و اولین بار در سال 2011 منتشر شد (1.0 در سال 2016). این برنامه بر روی ماشین مجازی جاوا (JVM) اجرا می شود و به طور کامل با جاوا سازگار است - به این معنی که شما می توانید از هر کتابخانه جاوا از Kotlin استفاده کنید و کد Kotlin را از جاوا بدون هیچ پوششی فراخوانی کنید. در سال 2017، گوگل کاتلین را به عنوان زبان ترجیحی برای توسعه اندروید معرفی کرد و از آن زمان به زبان غالب اندروید تبدیل شده است.
 Kotlin برای رفع نقاط درد جاوا طراحی شده است: پرحرفی، استثناهای اشاره گر تهی، و ویژگی های مدرن از دست رفته. نتیجه زبانی است که شبیه یک جاوا مدرن شده است - مختصر، ایمن و رسا - در حالی که سازگاری کامل با اکوسیستم عظیم جاوا را حفظ می کند.

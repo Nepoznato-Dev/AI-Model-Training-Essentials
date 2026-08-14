@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जूलिया
 जूलिया एक उच्च स्तरीय, उच्च प्रदर्शन वाली प्रोग्रामिंग भाषा है जिसे तकनीकी और वैज्ञानिक कंप्यूटिंग के लिए डिज़ाइन किया गया है। पहली बार 2012 में जारी किया गया (2018 में 1.0), जूलिया को "दो-भाषा समस्या" को हल करने के लिए बनाया गया था - जहां वैज्ञानिक पायथन/आर में प्रोटोटाइप करते हैं लेकिन उत्पादन प्रदर्शन के लिए सी/सी++/फोरट्रान में फिर से लिखते हैं। जूलिया का लक्ष्य पाइथॉन जितना आसान लेकिन सी जितना तेज़ होना है।
 जूलिया एक इंटरैक्टिव, गतिशील अनुभव को बनाए रखते हुए निकट-सी प्रदर्शन प्राप्त करने के लिए एलएलवीएम के माध्यम से जस्ट-इन-टाइम (जेआईटी) संकलन का उपयोग करती है। इसमें समानांतर कंप्यूटिंग, वितरित प्रसंस्करण और एकाधिक प्रेषण के साथ एक परिष्कृत प्रकार की प्रणाली के लिए प्रथम श्रेणी का समर्थन है।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optimisation et déploiement du modèle
 La formation d’un grand modèle d’IA est une réussite importante, mais son déploiement efficace est l’endroit où la plupart des efforts d’ingénierie sont nécessaires. Un modèle qui met 10 secondes à répondre ou qui nécessite huit GPU A100 n'est pas pratique pour la plupart des applications réelles. L'optimisation des modèles consiste à créer des modèles plus petits, plus rapides et plus rentables, tout en maintenant une qualité acceptable. Ce dossier couvre la quantification, l'élagage, la distillation et les outils pratiques de déploiement des modèles en production.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # คณิตศาสตร์
 คณิตศาสตร์ไม่ได้เป็นเพียงวิชาที่เรียนในโรงเรียนเท่านั้น แต่ยังเป็นรากฐานของเกือบทุกสาขาวิชาเทคนิคอีกด้วย ฟิสิกส์ใช้เพื่ออธิบายจักรวาล วิทยาการคอมพิวเตอร์ใช้เพื่อออกแบบอัลกอริธึม การเรียนรู้ของเครื่องใช้เพื่อเพิ่มประสิทธิภาพน้ำหนัก การเงินใช้เพื่อความเสี่ยงด้านราคา ไม่จำเป็นต้องเชี่ยวชาญทุกสาขา แต่การทำความเข้าใจภูมิทัศน์ — และการรู้ว่าแต่ละสาขานำไปใช้ที่ใด — จะทำให้เข้าใจหัวข้ออื่นๆ ได้ง่ายขึ้น
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # স্ক্র্যাচ — ইডিওম্যাটিক প্যাটার্ন এবং সর্বোত্তম অনুশীলন
 এই নির্দেশিকাটি পরিষ্কার, সুসংগঠিত স্ক্র্যাচ প্রকল্পগুলি লেখার জন্য বাহাদুরি নিদর্শনগুলিকে কভার করে৷
 ---

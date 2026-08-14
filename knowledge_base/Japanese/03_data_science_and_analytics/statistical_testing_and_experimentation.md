@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 統計的なテストと実験
 統計は科学の文法です。これは、実際のパターンをランダムなノイズから区別し、変更によって実際に状況が改善されたかどうかを測定し、不確実性の下で意思決定を行うためのツールを提供します。このファイルでは、仮説検証、実験計画、そして人々をつまずかせるよくある落とし穴の中核となる概念を取り上げています。
 ---

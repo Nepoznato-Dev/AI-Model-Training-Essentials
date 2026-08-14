@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Scienza e Natura
 La scienza è il modo in cui capiamo cosa sta effettivamente facendo l’universo: non cosa presumiamo che stia facendo, non cosa dicono i testi antichi, ma cosa rivelano un’attenta osservazione e sperimentazione. Il metodo scientifico è semplice in linea di principio: osservare qualcosa, formulare un'ipotesi, verificarla e rivedere la propria comprensione in base ai risultati. Ciò che rende la scienza potente è il fatto che si autocorregge. Ogni affermazione è provvisoria e viene accettata solo fino a quando non verranno presentate prove migliori.
 Questo file copre i principali rami delle scienze naturali: fisica, chimica, biologia e scienze della Terra e dello spazio. Consideratela come una mappa del mondo fisico.

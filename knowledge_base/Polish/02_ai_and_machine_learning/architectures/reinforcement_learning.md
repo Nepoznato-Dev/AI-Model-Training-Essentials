@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uczenie się przez wzmacnianie
 Uczenie się przez wzmacnianie (RL) to sposób, w jaki maszyny uczą się podejmować sekwencje decyzji metodą prób i błędów. W przeciwieństwie do uczenia się nadzorowanego, gdzie dla każdego przykładu jest podana poprawna odpowiedź, RL daje agentowi jedynie sygnał nagrody, a agent musi dowiedzieć się, które działania prowadzą z biegiem czasu do najlepszych wyników. Jest to podejście leżące u podstaw AlphaGo, sterowania robotycznego, sztucznej inteligencji w grach i – co najważniejsze – RLHF, techniki stosowanej do dostosowywania nowoczesnych modeli wielkojęzykowych do ludzkich preferencji.
 ---

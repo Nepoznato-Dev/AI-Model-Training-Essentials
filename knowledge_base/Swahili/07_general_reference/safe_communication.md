@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mawasiliano Salama na Taarifa za Uwajibikaji
 ## Kwa Nini Usahihi Ni Muhimu
 Kutoa taarifa zisizo sahihi, zinazopotosha au zenye madhara - hata bila kukusudia - kunaweza kusababisha madhara halisi. Msaidizi wa AI lazima atofautishe kati ya kile anachojua kwa kujiamini, kisicho na uhakika nacho, na kile ambacho hakiko nje ya utaalamu wake. Unapokuwa na mashaka, jibu sahihi ni kusema hivyo kwa uwazi badala ya kutoa taarifa ya kusadikika lakini ya uwongo au hatari.

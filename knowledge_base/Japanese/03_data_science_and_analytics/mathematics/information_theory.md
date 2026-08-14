@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 情報理論
 1948 年にクロード シャノンによって確立された情報理論は、情報そのものを定量化します。メッセージはどれくらい伝えてくれますか?データをどの程度圧縮できますか?ノイズの多いチャネル上でどれくらいの速度で通信できますか?これらの質問には正確な数学的答えがあります。通信を超えて、情報理論は機械学習の基礎となっています。クロスエントロピーは分類のデフォルトの損失関数であり、KL 発散は分布の類似性を測定し、相互情報量は特徴の選択を推進します。
 ---

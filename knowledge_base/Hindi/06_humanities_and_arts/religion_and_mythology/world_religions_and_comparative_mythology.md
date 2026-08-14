@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # विश्व धर्म और तुलनात्मक पौराणिक कथाएँ
 विश्व धर्म विश्वास, अभ्यास और समुदाय की प्रमुख प्रणालियाँ हैं जिन्होंने हजारों वर्षों से मानव सभ्यता को आकार दिया है। तुलनात्मक पौराणिक कथाएँ उन कहानियों का अध्ययन करती हैं जो विभिन्न संस्कृतियाँ सृजन, नायकों, देवताओं और अस्तित्व के अर्थ के बारे में बताती हैं - और उन हड़ताली पैटर्नों का अध्ययन करती हैं जो हजारों मील और सहस्राब्दियों से अलग परंपराओं में दोहराए जाते हैं। लोग जिस पर विश्वास करते हैं उस पर विश्वास क्यों करते हैं, संस्कृतियाँ कैसे भिन्न होती हैं, और मानव अनुभव को क्या एकजुट करता है, यह समझने के लिए दोनों को समझना आवश्यक है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิศวกรรมข้อมูลและท่อส่ง
 วิศวกรรมข้อมูลเป็นสาขาวิชาในการสร้างระบบที่เคลื่อนย้าย เปลี่ยนแปลง และจัดเก็บข้อมูลตามขนาดที่ต้องการ หากไม่มีไปป์ไลน์ข้อมูลที่เชื่อถือได้ โมเดลแมชชีนเลิร์นนิงจะไม่สามารถฝึกได้ แดชบอร์ดจะแสดงตัวเลขเก่า และการตัดสินใจทางธุรกิจจะขึ้นอยู่กับการคาดเดา ไฟล์นี้ครอบคลุมถึงสถาปัตยกรรม เครื่องมือ และแนวทางปฏิบัติในการสร้างโครงสร้างพื้นฐานข้อมูลที่ใช้งานได้
 ---

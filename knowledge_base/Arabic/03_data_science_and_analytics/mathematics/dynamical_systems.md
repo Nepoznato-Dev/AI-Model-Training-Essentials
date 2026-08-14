@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الأنظمة الديناميكية
 يصف **النظام الديناميكي** كيفية تطور الحالة بمرور الوقت وفقًا لقاعدة ثابتة. من مدارات الكواكب إلى الديناميكيات السكانية، ومن أنماط الطقس إلى تدريب الشبكات العصبية، توفر نظرية الأنظمة الديناميكية اللغة والأدوات اللازمة لفهم كيفية تغير الأشياء. يغطي هذا الملف المعادلات التفاضلية العادية (ODEs)، والمعادلات التفاضلية الجزئية (PDEs)، وتحليل الاستقرار، والفوضى، والتشعبات.
 ---

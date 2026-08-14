@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 代码质量问题
 本文档整合了常见的代码质量问题，包括错误的变量名称、糟糕的文档、意大利面条式代码、循环依赖和其他可维护性问题。
 ---

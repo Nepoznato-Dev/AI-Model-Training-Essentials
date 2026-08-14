@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # فشل خط أنابيب البيانات وETL
 تعتبر خطوط أنابيب البيانات بمثابة السباكة للمؤسسات الحديثة - فهي تنقل البيانات من أنظمة المصدر من خلال التحويلات إلى قواعد البيانات والمستودعات والبحيرات حيث يتم استخدامها للتحليلات والتعلم الآلي واتخاذ القرار. عندما يعملون، لا أحد يلاحظ. وعندما تفشل، يتم اتخاذ القرارات بناءً على بيانات قديمة، وتتدرب النماذج على القمامة، وتظهر التقارير أرقامًا مستحيلة، وتتآكل الثقة في منصة البيانات بأكملها. تعد حالات فشل خطوط نقل البيانات من بين حالات الفشل الأكثر شيوعًا والأكثر تكلفة في مؤسسات التكنولوجيا.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #कोटलिन
 कोटलिन एक स्थिर रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जिसे JetBrains द्वारा विकसित किया गया है और पहली बार 2011 में जारी किया गया था (2016 में 1.0)। यह जावा वर्चुअल मशीन (जेवीएम) पर चलता है और जावा के साथ पूरी तरह से इंटरऑपरेबल है - जिसका अर्थ है कि आप कोटलिन से किसी भी जावा लाइब्रेरी का उपयोग कर सकते हैं और बिना किसी रैपर के जावा से कोटलिन कोड को कॉल कर सकते हैं। 2017 में, Google ने एंड्रॉइड विकास के लिए कोटलिन को पसंदीदा भाषा के रूप में घोषित किया, और तब से यह प्रमुख एंड्रॉइड भाषा बन गई है।
 कोटलिन को जावा के समस्या बिंदुओं को ठीक करने के लिए डिज़ाइन किया गया था: शब्दाडंबर, अशक्त सूचक अपवाद, और अनुपलब्ध आधुनिक सुविधाएँ। परिणाम एक ऐसी भाषा है जो आधुनिक जावा की तरह महसूस होती है - संक्षिप्त, सुरक्षित और अभिव्यंजक - विशाल जावा पारिस्थितिकी तंत्र के साथ पूर्ण अनुकूलता बनाए रखते हुए।

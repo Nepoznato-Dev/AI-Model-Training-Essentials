@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Blockchain at Ibinahagi na Sistema
 Ang Blockchain ay isang partikular na uri ng distributed system — isang desentralisado, append-only ledger kung saan ang mga talaan (mga bloke) ay iniuugnay ng mga cryptographic na hash. Ang mga distributed system ay ang mas malawak na larangan ng paggawa ng maramihang mga computer na gumagana nang magkasama bilang isa. Ang parehong mga konsepto ay mahalaga para sa pag-unawa sa modernong imprastraktura, mula sa cryptocurrency hanggang sa mga distributed database hanggang sa mga consensus algorithm na nagpapagana ng mga pandaigdigang serbisyo.
 ---

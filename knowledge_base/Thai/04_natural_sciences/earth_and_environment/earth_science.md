@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #วิทยาศาสตร์โลก
 วิทยาศาสตร์โลกศึกษาดาวเคราะห์ที่เราอาศัยอยู่ โครงสร้าง กระบวนการ ประวัติศาสตร์ และระบบที่ทำให้สามารถอยู่อาศัยได้ ครอบคลุมครอบคลุมธรณีวิทยา (โลกแข็ง) สมุทรศาสตร์ (มหาสมุทร) อุตุนิยมวิทยา (บรรยากาศและสภาพอากาศ) และภูมิอากาศวิทยา (รูปแบบภูมิอากาศระยะยาว) สิ่งที่รวมเขตข้อมูลเหล่านี้เข้าด้วยกันคือการเข้าใจว่าโลกเป็นระบบไดนามิก ภายในโลกมีการเคลื่อนไหวตลอดเวลา พื้นผิวถูกเปลี่ยนรูปร่าง และชั้นบรรยากาศและมหาสมุทรมีปฏิสัมพันธ์กันในรูปแบบที่ซับซ้อน
 ---

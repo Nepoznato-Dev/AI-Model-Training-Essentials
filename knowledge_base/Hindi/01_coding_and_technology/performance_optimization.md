@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # प्रदर्शन अनुकूलन
 प्रदर्शन अनुकूलन सॉफ़्टवेयर को तेज़ बनाने का अभ्यास है - प्रतिक्रिया समय कम करना, थ्रूपुट बढ़ाना, मेमोरी उपयोग कम करना और बाधाओं को दूर करना। यह एक डेवलपर के सबसे प्रभावशाली कौशलों में से एक है, क्योंकि धीमा सॉफ़्टवेयर उपयोगकर्ताओं को खो देता है, संसाधनों को बर्बाद करता है और सभी को निराश करता है। लेकिन यह सबसे आम तौर पर की जाने वाली गलतियों में से एक है, जिसमें डेवलपर्स सबूत के बजाय अंतर्ज्ञान के आधार पर गलत चीजों को अनुकूलित करते हैं।
 ---

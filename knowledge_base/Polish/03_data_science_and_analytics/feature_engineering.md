@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Inżynieria funkcji
 Inżynieria cech to proces przekształcania surowych danych w reprezentacje, które zwiększają efektywność modeli uczenia maszynowego. Często określa się go jako najważniejszy krok w procesie uczenia maszynowego — funkcje, które nadajesz modelowi, mają większe znaczenie niż wybrany algorytm. Prosty model z dobrze przygotowanymi funkcjami zazwyczaj będzie przewyższał złożony model z surowymi, nieprzetworzonymi danymi wejściowymi. Sztuka polega na wystarczająco dobrym zrozumieniu zarówno dziedziny, jak i danych, aby stworzyć sygnały, z których model będzie mógł się uczyć.
 ---

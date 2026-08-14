@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Analyse approfondie de l'IA générative
 L'IA générative fait référence à des modèles qui créent du nouveau contenu (images, texte, audio, vidéo, code) plutôt que de simplement classer ou prédire les données existantes. Alors que les grands modèles de langage retiennent l’essentiel de l’attention, le paysage de l’IA générative est bien plus vaste. Ce fichier couvre les architectures, les techniques et les compromis derrière les systèmes génératifs modernes, des modèles de diffusion aux auto-encodeurs variationnels en passant par les modèles de flux.
 ---

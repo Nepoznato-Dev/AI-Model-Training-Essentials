@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أساسيات الكتابة والتواصل
 الكتابة والتواصل هما مهارات نقل الأفكار بشكل فعال - سواء من خلال رسائل البريد الإلكتروني أو التقارير أو الوثائق أو العروض التقديمية أو المحادثات. معظم العمل المعرفي هو في الأساس عمل تواصلي: يحتاج المحترفون إلى شرح تفكيرهم، وإقناع الآخرين، وتوثيق القرارات، وكتابة المواصفات، وتقديم النتائج، والتعاون بين الفرق. إن الفجوة بين ما هو مقصود وما هو مفهوم هي مصدر معظم المشاكل، والتواصل الأفضل يضيق هذه الفجوة.
 ---

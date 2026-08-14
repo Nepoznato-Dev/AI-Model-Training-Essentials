@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা স্ট্রাকচার এবং অ্যালগরিদম
 ডেটা স্ট্রাকচার হল সেই উপায়গুলি যা আমরা মেমরিতে ডেটা সংগঠিত করি যাতে এটির অপারেশনগুলি কার্যকর হয়। অ্যালগরিদম হল সমস্যা সমাধানের জন্য ধাপে ধাপে পদ্ধতি। একসাথে, তারা কম্পিউটার বিজ্ঞানের ভিত্তি তৈরি করে — আপনি যে সমস্ত প্রোগ্রাম ব্যবহার করেছেন তা তাদের উপর নির্ভর করে। সঠিক ডেটা স্ট্রাকচার বাছাই করা একটি অসম্ভব ধীর প্রোগ্রামকে দ্রুত একটিতে পরিণত করতে পারে এবং সঠিক অ্যালগরিদম জানা একটি অমীমাংসিত সমস্যাকে তুচ্ছ সমস্যায় পরিণত করতে পারে।
 ---

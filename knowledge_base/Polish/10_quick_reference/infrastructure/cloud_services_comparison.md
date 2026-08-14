@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Porównanie usług w chmurze
 Bezpośrednie porównanie trzech głównych dostawców usług w chmurze — AWS, Azure i Google Cloud — w zakresie obliczeń, pamięci masowej, baz danych, sztucznej inteligencji/ML, sieci, monitorowania i infrastruktury jako kodu. Przydatne dla architektów decydujących, której platformy użyć lub mapujących usługi z jednej chmury na drugą.
 ---

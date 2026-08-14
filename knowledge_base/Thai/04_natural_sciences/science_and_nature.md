@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #วิทยาศาสตร์และธรรมชาติ
 วิทยาศาสตร์เป็นวิธีที่เราค้นหาว่าจักรวาลกำลังทำอะไรอยู่ ไม่ใช่สิ่งที่เราคิดว่ากำลังทำอยู่ ไม่ใช่สิ่งที่ตำราโบราณบอกว่ามันทำ แต่เป็นการสังเกตและการทดลองอย่างรอบคอบเผยให้เห็นอะไร วิธีการทางวิทยาศาสตร์นั้นมีหลักการง่ายๆ คือ สังเกตบางสิ่ง ตั้งสมมติฐาน ทดสอบ และแก้ไขความเข้าใจของคุณตามผลลัพธ์ สิ่งที่ทำให้วิทยาศาสตร์มีพลังคือสามารถแก้ไขตัวเองได้ การเรียกร้องทั้งหมดถือเป็นการชั่วคราว — ยอมรับจนกว่าจะมีหลักฐานที่ดีกว่ามาถึงเท่านั้น
 ไฟล์นี้ครอบคลุมสาขาหลักของวิทยาศาสตร์ธรรมชาติ: ฟิสิกส์ เคมี ชีววิทยา และวิทยาศาสตร์โลกและอวกาศ คิดว่ามันเป็นแผนที่ของโลกทางกายภาพ

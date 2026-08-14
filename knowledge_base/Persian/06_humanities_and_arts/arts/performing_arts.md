@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # هنرهای نمایشی
 هنرهای نمایشی - تئاتر، فیلم، رقص و اجرای موسیقی - جایی است که هنر با حضور زنده مخاطبان روبرو می شود. برخلاف نقاشی روی دیوار یا کتاب روی قفسه، اجرا در زمان واقعی آشکار می‌شود و تجربه‌ای مشترک بین هنرمند و تماشاگر ایجاد می‌کند که برای هزاران سال مرکز فرهنگ بشری بوده است.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++
 
 C++ is a general-purpose, compiled programming language created by Bjarne Stroustrup, first released in 1985. It extends C with object-oriented features, generics, and -- in modern versions (C++11 and later) -- high-level abstractions like lambdas, smart pointers, and the Standard Template Library (STL). C++ follows the "zero-overhead abstraction" principle: you should not pay for features you do not use.

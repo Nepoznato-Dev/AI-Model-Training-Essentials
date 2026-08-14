@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ภาษาศาสตร์และวิทยาศาสตร์ภาษา
 ภาษาศาสตร์คือการศึกษาทางวิทยาศาสตร์เกี่ยวกับภาษา ทั้งโครงสร้าง ความหมาย การใช้ การได้มา และวิวัฒนาการ ภาษาเป็นคุณลักษณะที่กำหนดในการสื่อสารของมนุษย์: มีประสิทธิภาพอย่างไม่มีที่สิ้นสุด (ผู้พูดสามารถสร้างและเข้าใจประโยคที่พวกเขาไม่เคยพบมาก่อน) มีการถ่ายทอดทางวัฒนธรรม (เป็นการเรียนรู้มากกว่าโดยกำเนิดล้วนๆ) และมีการพัฒนาอย่างต่อเนื่อง การทำความเข้าใจวิธีการทำงานของภาษามีความเกี่ยวข้องกับใครก็ตามที่สร้างเทคโนโลยีภาษา การสอน การแปล หรือการทำงานเพื่อสื่อสารอย่างมีประสิทธิภาพมากขึ้น
 ---

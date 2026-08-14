@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Szenarioplanung
 ## Übersicht
 Niemand kann die Zukunft vorhersagen – aber Sie können sich auf mehrere plausible Zukunftsaussichten vorbereiten. Die Szenarioplanung, die in Denkfabriken des Kalten Krieges entstand und von Shell während der Ölkrisen der 1970er Jahre perfektioniert wurde, ist eine Methode, systematisch über Unsicherheit nachzudenken. Anstatt auf eine Prognose zu setzen, erstellen Sie zusammenhängende Geschichten darüber, wie sich die Dinge entwickeln könnten, und testen Ihre Entscheidungen dann anhand aller Prognosen. Hier erfahren Sie, wie die Methodik funktioniert, zusammen mit Szenarien in Schlüsseldomänen.

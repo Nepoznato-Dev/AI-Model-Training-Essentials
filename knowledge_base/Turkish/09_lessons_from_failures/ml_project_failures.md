@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Makine Öğrenimi Projesi Başarısızlıkları
 Makine öğrenimi projeleri endişe verici bir oranda başarısız oluyor; sektör tahminleri makine öğrenimi projelerinin %60-85'inin hiçbir zaman üretime ulaşmadığını gösteriyor. Başarısızlıklar genellikle algoritmalarda değildir; sürecin, verilerin, beklentilerin ve organizasyonel bağlamın içindedirler. ML projelerinin neden başarısız olduğunu anlamak, ML sistemleri oluşturan herkes için çok önemlidir çünkü başarısızlık modları öngörülebilir ve büyük ölçüde önlenebilir.
 ---

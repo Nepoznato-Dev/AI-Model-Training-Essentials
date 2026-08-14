@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #برو
 Go (اغلب به نام دامنه اصلی آن "Golang" نامیده می شود) یک زبان برنامه نویسی تایپ شده و کامپایل شده است که در گوگل توسط رابرت گریزمر، راب پایک و کن تامپسون طراحی شده است. این اولین بار در سال 2012 با هدف صریح این که زبانی بهتر برای برنامه نویسی سیستم باشد منتشر شد -- زبانی که عملکرد زبان C را با بهره وری زبان های پویا مانند پایتون ترکیب می کند. Go به دلیل سادگی، کامپایل سریع، همزمانی داخلی (گوروتین ها و کانال ها) و ابزار عالی شناخته شده است.
 Go بخش عمده ای از اکوسیستم زیرساخت ابری را تامین می کند: Docker، Kubernetes، Terraform، Prometheus، etcd، و سرور HTTP کتابخانه استاندارد Go همگی در Go نوشته شده اند. این زبان به زبان پیش‌فرض برای توسعه ابری، میکروسرویس‌ها و ابزارهای CLI تبدیل شده است.

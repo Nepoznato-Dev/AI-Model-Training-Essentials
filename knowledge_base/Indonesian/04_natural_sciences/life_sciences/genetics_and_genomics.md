@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetika dan Genomik
 Genetika adalah studi tentang keturunan - bagaimana sifat-sifat diturunkan dari orang tua ke keturunannya melalui DNA. Genomik adalah studi tentang keseluruhan genom: semua gen, wilayah non-pengkode, cara interaksinya, dan variasinya antar individu dan populasi. Transisi dari genetika ke genomik didorong oleh teknologi pengurutan — kami beralih dari mempelajari satu gen pada satu waktu hingga membaca seluruh genom dalam hitungan jam, menghasilkan data yang mengubah bidang kedokteran, pertanian, forensik, dan pemahaman kita tentang evolusi.
 ---

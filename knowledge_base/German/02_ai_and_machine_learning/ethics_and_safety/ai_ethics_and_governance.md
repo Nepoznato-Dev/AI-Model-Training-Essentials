@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # KI-Ethik und Governance
 KI-Systeme sind nicht neutral. Sie spiegeln die Daten wider, anhand derer sie geschult wurden, die Werte ihrer Ersteller und die Anreize der Organisationen, die sie einsetzen. Bei der Ethik geht es nicht nur um die Frage: „Können wir das bauen?“ aber „sollten wir?“ Bei Governance geht es um die Schaffung von Strukturen – Gesetze, Standards, Aufsichtsbehörden –, die sicherstellen, dass KI verantwortungsvoll entwickelt und genutzt wird. Diese Datei behandelt die wichtigsten ethischen Dimensionen der KI und die zu ihrer Bewältigung entstehenden Governance-Rahmenwerke.
 ---

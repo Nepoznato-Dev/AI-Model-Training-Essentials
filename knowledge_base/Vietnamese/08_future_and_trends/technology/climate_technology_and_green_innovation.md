@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Công nghệ Khí hậu và Đổi mới Xanh
 Công nghệ khí hậu bao gồm các công cụ, hệ thống và cải tiến được thiết kế để giảm phát thải khí nhà kính, thích ứng với biến đổi khí hậu và chuyển đổi nền kinh tế toàn cầu sang nền tảng bền vững. Đây được cho là lĩnh vực công nghệ quan trọng nhất của thế kỷ 21 - sự khác biệt giữa mức nóng lên 1,5°C có thể quản lý được và mức 3°C+ thảm khốc phụ thuộc phần lớn vào tốc độ triển khai các công nghệ này trên quy mô lớn. Thách thức không chỉ là khoa học mà còn là kinh tế, chính trị và xã hội.
 ---

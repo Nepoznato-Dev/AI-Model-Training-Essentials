@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # عالمی معیشت اور تجارت
 عالمی معیشت انسانوں کا بنایا ہوا سب سے بڑا اور پیچیدہ نظام ہے۔ 2025 میں عالمی جی ڈی پی 110 ٹریلین ڈالر سے تجاوز کر گئی۔ 8 بلین سے زیادہ لوگ روزانہ سرحدوں کے پار سامان اور خدمات کی پیداوار، تجارت اور استعمال کرتے ہیں۔ یہ سمجھنا کہ یہ نظام کیسے کام کرتا ہے — کون کس چیز کی تجارت کرتا ہے، کیوں کچھ ممالک امیر اور دوسرے غریب ہیں، پیسہ سرحدوں کے پار کیسے جاتا ہے، اور جب نظام ٹوٹ جاتا ہے تو کیا ہوتا ہے — جدید دنیا کو نیویگیٹ کرنے کے لیے ضروری ہے۔
 ---

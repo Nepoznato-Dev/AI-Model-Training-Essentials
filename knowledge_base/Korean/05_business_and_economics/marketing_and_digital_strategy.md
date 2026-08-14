@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 마케팅과 디지털 전략
 마케팅은 기업이 고객에게 가치를 창출하고, 전달하고, 전달하는 방법입니다. 이는 고객 요구 사항을 이해하고, 이러한 요구 사항을 충족하는 제품을 포지셔닝하고, 구매자를 지지자로 전환하는 관계를 구축하는 전체 시스템을 포괄합니다. 디지털 혁명은 마케팅 도구, 채널, 속도를 변화시켰으며 기본은 일관되게 유지되었습니다.
 ---

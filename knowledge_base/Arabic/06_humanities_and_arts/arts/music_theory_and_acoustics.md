@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # نظرية الموسيقى والصوتيات
 نظرية الموسيقى هي دراسة كيفية عمل الموسيقى - الأنماط والهياكل والمبادئ التي تجعل بعض مجموعات الأصوات ممتعة أو ذات معنى والبعض الآخر متنافرة أو فوضوية. الصوتيات هي فيزياء الصوت - كيف تنتقل الاهتزازات عبر الهواء، وكيف يتم إنتاجها وإدراكها. يشرحون معًا لماذا يبدو وتر C الرئيسي سعيدًا، ولماذا يشعر المفتاح الصغير بالحزن، وكيف تم تصميم قاعات الحفلات الموسيقية، ولماذا تشعرك أغنيتك المفضلة بالقشعريرة.
 ---

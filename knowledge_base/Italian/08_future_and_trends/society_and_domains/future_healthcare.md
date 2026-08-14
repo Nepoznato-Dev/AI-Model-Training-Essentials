@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # La sanità del futuro
 ## Panoramica
 La medicina si sta spostando da un modello reattivo (trattare i sintomi dopo che si sono manifestati) a uno predittivo, personalizzato e sempre più preventivo. La genomica è passata da un progetto da 3 miliardi di dollari a un test di routine da meno di 1.000 dollari. L’intelligenza artificiale sta imparando a individuare le malattie nelle scansioni prima che possano farlo i medici. E la medicina rigenerativa sta trasformando la fantascienza in sperimentazioni cliniche. Ecco cosa sta accadendo nelle tre frontiere più grandi: medicina personalizzata, ricerca sulla longevità e medicina rigenerativa.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #AI ต่อเนื่องหลายรูปแบบ
 ระบบ AI ต่อเนื่องหลายรูปแบบประมวลผลและรวมข้อมูลจากข้อมูลหลายประเภท เช่น ข้อความ รูปภาพ เสียง วิดีโอ และอื่นๆ พร้อมกัน แม้ว่าระบบ AI ก่อนหน้านี้มักเป็นแบบรูปแบบเดียว (เฉพาะข้อความ รูปภาพเท่านั้น) แต่ระบบสมัยใหม่ที่มีความสามารถมากที่สุดคือแบบหลายรูปแบบ GPT-4V อ่านภาพและข้อความพร้อมกัน Gemini ประมวลผลข้อความ รูปภาพ เสียง และวิดีโอโดยกำเนิด และระบบอย่าง Sora จะสร้างวิดีโอจากคำอธิบายข้อความ ไฟล์นี้ครอบคลุมถึงวิธีการทำงานของ AI ต่อเนื่องหลายรูปแบบ สถาปัตยกรรมที่อยู่เบื้องหลัง และเหตุใดการรวมรูปแบบต่างๆ จึงมีประสิทธิภาพมาก
 ---

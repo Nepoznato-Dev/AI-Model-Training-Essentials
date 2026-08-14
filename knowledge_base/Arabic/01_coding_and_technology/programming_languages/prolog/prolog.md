@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # برولوج
 برولوج (البرمجة في المنطق) هي لغة برمجة منطقية تم إنشاؤها في عام 1972 من قبل آلان كولميراور وفيليب روسيل. على عكس كل اللغات الأخرى في هذه القائمة، لا يخبر Prolog الكمبيوتر *كيفية* حل مشكلة ما - فأنت تعلن *ما هو* الصحيح (الحقائق والقواعد)، ويكتشف محرك الاستدلال الخاص بـ Prolog الإجابة من خلال الاستنتاج المنطقي.
 كانت Prolog هي اللغة المفضلة للأنظمة المتخصصة ومعالجة اللغات الطبيعية وأبحاث الذكاء الاصطناعي في الثمانينيات. لقد دعم مشروع نظام الكمبيوتر للجيل الخامس في اليابان وتم استخدامه في نظام Watson التابع لشركة IBM لفهم اللغة الطبيعية. اليوم، يتم استخدام Prolog في حل القيود، والجدولة، واستدلال النوع، والتفكير القانوني، وفي أي مكان يتم التعبير عن المشاكل بشكل طبيعي كعلاقات منطقية.

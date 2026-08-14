@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dart
 Dart to zoptymalizowany pod kątem klienta język programowania opracowany przez firmę Google i wydany po raz pierwszy w 2013 roku. Chociaż początkowo Dart był postrzegany jako potencjalny zamiennik JavaScriptu dla przeglądarek internetowych, jego głównym celem stał się język stojący za **Flutter** — wieloplatformowym zestawem narzędzi interfejsu użytkownika firmy Google do tworzenia aplikacji mobilnych, internetowych, stacjonarnych i osadzonych z jednej bazy kodu.
 Dart łączy w sobie najlepsze cechy współczesnych języków: jest zorientowany obiektowo, ma opcjonalne pisanie (dźwięk zerowy od Dart 3), obsługuje programowanie asynchroniczne za pomocą`async`/`await`i kompiluje zarówno do natywnego kodu maszynowego (dla urządzeń mobilnych/komputerów stacjonarnych), jak i JavaScript (dla Internetu).

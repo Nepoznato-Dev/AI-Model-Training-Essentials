@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #فلسفہ اور تنقیدی سوچ
 فلسفہ علم، حقیقت اور وجود کے بارے میں بنیادی سوالات کا منظم مطالعہ ہے۔ یہ اس بات کا جائزہ لینے کے لیے فریم ورک فراہم کرتا ہے کہ علم کے طور پر کیا شمار ہوتا ہے، کیا کرنا قابل قدر ہے، اور کس طرح معقول دلائل کو کمزور دلائل سے ممتاز کیا جائے۔ تنقیدی سوچ اس فریم ورک کا عملی اطلاق ہے: دعووں کا تجزیہ کرنے، ناقص استدلال کی نشاندہی کرنے، اور بہتر باخبر فیصلے کرنے کی مہارت۔ اس فائل میں اہم خیالات، ان کا جائزہ لینے کے آلات، اور علمی تعصبات کا احاطہ کیا گیا ہے جو ہر کسی کو متاثر کرتے ہیں۔
 ---

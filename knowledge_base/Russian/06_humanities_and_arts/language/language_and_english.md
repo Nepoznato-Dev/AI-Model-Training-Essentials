@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Язык и английский
 Сегодня в мире говорят примерно на 7000 языках. Английский является наиболее распространенным вторым языком и используется по умолчанию в международном бизнесе, науке, авиации и Интернете. Независимо от того, пишете ли вы документацию по коду, читаете научные статьи или общаетесь за границей, хорошее владение английским языком — грамматикой, словарным запасом и риторикой — является одним из наиболее практических навыков, которые можно развить.
 В этом файле описывается самое необходимое: грамматика, пунктуация, типичные ошибки, техника письма и четкое общение.

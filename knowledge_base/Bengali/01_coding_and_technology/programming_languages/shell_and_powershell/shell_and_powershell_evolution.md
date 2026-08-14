@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell — Version History & Evolution"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # শেল এবং পাওয়ারশেল — সংস্করণ ইতিহাস এবং বিবর্তন
 ## ইউনিক্স শেল টাইমলাইন
 | সংস্করণ | বছর | মূল থিম |

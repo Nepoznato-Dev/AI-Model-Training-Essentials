@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Học tăng cường
 Học tăng cường (RL) là cách máy học cách đưa ra các chuỗi quyết định bằng cách thử và sai. Không giống như học có giám sát, trong đó câu trả lời đúng được cung cấp cho mọi ví dụ, RL chỉ cung cấp cho tác nhân một tín hiệu khen thưởng — và tác nhân phải tìm ra hành động nào dẫn đến kết quả tốt nhất theo thời gian. Đó là cách tiếp cận đằng sau AlphaGo, điều khiển bằng robot, AI chơi trò chơi và – quan trọng – RLHF, kỹ thuật được sử dụng để điều chỉnh các mô hình ngôn ngữ lớn hiện đại phù hợp với sở thích của con người.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Visual Basic
 Visual Basic (VB) to język programowania opracowany przez firmę Microsoft. Ewoluował przez kilka pokoleń: oryginalny Visual Basic (1991), Visual Basic 6.0 (1998), VB.NET (2002, część .NET Framework) i Visual Basic ..NET (obecny, obecnie nazywany po prostu „Visual Basic” jako część .NET). VB został zaprojektowany tak, aby był przystępny dla początkujących i umożliwiał szybkie tworzenie aplikacji (RAD), ze szczególnym uwzględnieniem graficznych interfejsów użytkownika i programowania sterowanego zdarzeniami.
 Obecnie VB.NET w dalszym ciągu stanowi część ekosystemu .NET obok C#, chociaż Microsoft wskazał, że C# będzie w przyszłości głównym językiem. VB jest nadal szeroko stosowany w środowiskach korporacyjnych, szczególnie w starszych aplikacjach Windows, automatyzacji pakietu Office (VBA) i wewnętrznych narzędziach biznesowych.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Terraform dan Infrastruktur sebagai Kode
 Terraform adalah alat Infrastruktur sebagai Kode (IaC) yang paling banyak digunakan — alat ini memungkinkan Anda menentukan infrastruktur cloud (server, database, jaringan, izin) dalam file konfigurasi deklaratif yang dapat dibuat versinya, ditinjau, diuji, dan diotomatisasi. Daripada mengklik melalui konsol cloud, Anda menulis kode yang menjelaskan kondisi infrastruktur yang Anda inginkan, dan Terraform mengetahui perubahan apa yang harus dilakukan.
 ---

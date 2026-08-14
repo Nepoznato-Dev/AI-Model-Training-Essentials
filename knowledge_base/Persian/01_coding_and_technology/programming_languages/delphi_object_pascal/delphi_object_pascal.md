@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # دلفی / آبجکت پاسکال
 دلفی یک زبان برنامه نویسی شی گرا بر اساس پاسکال است که در ابتدا توسط Borland (بعدها Embarcadero، اکنون Idera) توسعه یافت. اولین بار در سال 1995 با نام "Delphi 1" منتشر شد و برای توسعه سریع برنامه های کاربردی (RAD) برنامه های دسکتاپ ویندوز طراحی شد. این زبان به طور رسمی به عنوان Object Pascal شناخته می شود و Delphi IDE یک طراح فرم بصری، ابزارهای پایگاه داده یکپارچه و یک کامپایلر قدرتمند را ارائه می دهد.
 دلفی یکی از محبوب ترین ابزارهای توسعه ویندوز در اواخر دهه 1990 و اوایل دهه 2000 بود. در حالی که محبوبیت آن به طور قابل توجهی کاهش یافته است، یک پایگاه کاربری اختصاصی را حفظ می کند، به ویژه در برنامه های کاربردی دسکتاپ سازمانی، قسمت های جلویی پایگاه داده و نگهداری سیستم قدیمی. مدرن دلفی (11/12) از توسعه کراس پلتفرم برای Windows، macOS، iOS و Android از طریق چارچوب FireMonkey (FMX) پشتیبانی می کند.

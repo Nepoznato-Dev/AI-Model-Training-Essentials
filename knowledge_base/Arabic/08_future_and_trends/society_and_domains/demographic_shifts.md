@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التحولات الديموغرافية
 ## ملخص
 إن التركيبة السكانية هي القدر - أو على الأقل فهي تتناغم معه بقوة. إن سكان العالم يشيخون بسرعة، ويهاجرون في أنماط جديدة، ويتجمعون في المدن بمعدلات غير مسبوقة، وينقسمون على طول خطوط الأجيال التي تشكل كل شيء من سلوك التصويت إلى عادات المستهلك. سوف تستمر هذه التحولات على مدى عقود من الزمن، ولكن آثارها أصبحت واضحة بالفعل. فيما يلي الاتجاهات الأربعة الكبرى وما تعنيه.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Çevre Bilimi ve Sürdürülebilirlik
 Çevre bilimi fizik, kimya, biyoloji, jeoloji ve ekonomi yöntemlerini şu soruya uygular: "Gezegenimize neler oluyor ve bu konuda ne yapılabilir?" Hem analitik derinliğine hem de politika uygunluğuna katkıda bulunan disiplinlerarası bir alandır (birden fazla disiplinin birleşimi).
 Çevre bilimindeki temel gerilim şudur: İnsan uygarlığı çevreden kaynak çıkarmaya dayanır, ancak bu kaynakların çıkarılması çevreyi, bağımlı olduğumuz sistemleri baltalayabilecek şekilde değiştirir. Geri bildirim döngüsünü anlamak özetle alanın tamamıdır.

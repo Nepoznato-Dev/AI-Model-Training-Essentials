@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # शैल और पॉवरशेल
 शेल स्क्रिप्टिंग से तात्पर्य कमांड-लाइन दुभाषियों के लिए स्क्रिप्ट लिखने से है। दो सबसे महत्वपूर्ण शेल हैं **बैश** (बॉर्न अगेन शेल) - लिनक्स और मैकओएस पर डिफ़ॉल्ट - और **पॉवरशेल** - माइक्रोसॉफ्ट का आधुनिक क्रॉस-प्लेटफ़ॉर्म शेल और स्क्रिप्टिंग भाषा। शेल स्क्रिप्ट सिस्टम प्रशासन कार्यों को स्वचालित करती है, पाइपलाइनों का निर्माण करती है, फ़ाइल प्रोसेसिंग और परिनियोजन वर्कफ़्लोज़ का निर्माण करती है।
 प्रत्येक डेवलपर, DevOps इंजीनियर और सिस्टम प्रशासक को शेल स्क्रिप्टिंग कौशल की आवश्यकता होती है। चाहे आप एक वेब सर्वर तैनात कर रहे हों, लॉग फ़ाइलों को संसाधित कर रहे हों, सीआई/सीडी पाइपलाइन स्थापित कर रहे हों, या बैकअप स्वचालित कर रहे हों, शेल स्क्रिप्टिंग इस काम के लिए उपकरण है।

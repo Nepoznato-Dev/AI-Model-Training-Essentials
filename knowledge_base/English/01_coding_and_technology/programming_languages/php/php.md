@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 
 PHP (Hypertext Preprocessor) is a server-side scripting language created by Rasmus Lerdorf in 1994 and first released in 1995. Originally designed for generating dynamic web pages, PHP has evolved into a full-featured general-purpose language. It powers approximately 75% of all websites with a known server-side language, including WordPress, Facebook (originally), Wikipedia, Slack, and millions of other sites.

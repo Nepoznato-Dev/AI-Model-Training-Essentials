@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # তাপগতিবিদ্যা এবং পরিসংখ্যানগত বলবিদ্যা
 তাপগতিবিদ্যা তাপমাত্রা, চাপ এবং এনট্রপির পরিপ্রেক্ষিতে সিস্টেমের ম্যাক্রোস্কোপিক আচরণকে বর্ণনা করে — পরমাণুগুলি কেমন দেখায় তা না জেনে। পরিসংখ্যানগত বলবিদ্যা নিচ থেকে তাপগতিবিদ্যা ব্যাখ্যা করে: এটি বিশাল সংখ্যক কণার মাইক্রোস্কোপিক আচরণ থেকে ম্যাক্রোস্কোপিক বৈশিষ্ট্যগুলি অর্জন করে। একসাথে, তারা শক্তি, এনট্রপি এবং ভারসাম্য সম্পর্কে গভীরতম উপলব্ধি প্রদান করে — ধারণাগুলি যা তথ্য তত্ত্ব, মেশিন লার্নিং এবং এর বাইরে স্থানান্তরিত হয়েছে।
 ---

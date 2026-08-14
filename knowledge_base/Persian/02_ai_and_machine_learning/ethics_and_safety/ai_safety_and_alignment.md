@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ایمنی و تراز هوش مصنوعی
 ایمنی هوش مصنوعی مطالعه چگونگی ساخت سیستم‌های هوش مصنوعی است که آنچه را که ما واقعاً می‌خواهیم انجام دهند - و کارهایی را که ما نمی‌خواهیم انجام ندهند، حتی اگر به صراحت رد نشده باشند. هم ترازی چالش خاصی برای مطابقت دادن اهداف و رفتارهای سیستم های هوش مصنوعی با نیات انسان است. همانطور که سیستم های هوش مصنوعی توانمندتر می شوند، این سوالات از کنجکاوی های دانشگاهی به الزامات مهندسی عملی تغییر می کنند.
 ---

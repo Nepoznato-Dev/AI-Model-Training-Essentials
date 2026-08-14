@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Трансформация образования
 ## Обзор
 Традиционная модель образования — двенадцать лет сидеть в классе, может быть, поступить в университет, а потом работать — рушится. Репетиторы по искусственному интеллекту теперь могут предоставлять персонализированные инструкции в любом масштабе. Темпы технологических изменений означают, что обучение на протяжении всей жизни больше не является обязательным. И работодателей все больше заботит то, что вы можете *сделать*, а не только то, какие у вас полномочия. Вот как переосмысливается образование.

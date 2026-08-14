@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Physics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الفيزياء
 تطرح الفيزياء السؤال الأكثر أهمية في العلم: كيف تتصرف المادة والطاقة؟ كل شيء آخر - الكيمياء والأحياء والهندسة - يعتمد على الإجابات. تتراوح الفيزياء من المقياس دون الذري (ميكانيكا الكم) إلى المقياس الكوني (النسبية العامة)، ومبادئها تدعم جميع العلوم الطبيعية الأخرى.
 ---

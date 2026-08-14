@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (язык структурированных запросов) — это предметно-ориентированный язык, предназначенный для управления данными и запроса данных в реляционных базах данных. SQL, впервые разработанный в IBM в 1970-х годах и стандартизированный в 1987 году, остается основным интерфейсом между приложениями и их данными. Каждая крупная система управления реляционными базами данных (СУБД) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — использует SQL в качестве языка запросов.
 SQL не является языком программирования общего назначения. Вы бы не стали писать веб-приложение на SQL. Но если ваше приложение хранит данные (а это почти все приложения), то SQL — это язык, который вы используете для извлечения, преобразования и управления этими данными. Это, пожалуй, самый универсальный технический навык после общего программирования.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "RAG and Vector Search Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # RAG এবং ভেক্টর অনুসন্ধান ব্যর্থতা
 এই নথিটি পুনরুদ্ধার-অগমেন্টেড জেনারেশন (RAG) সিস্টেম, এম্বেডিং ব্যবহার এবং ভেক্টর অনুসন্ধান বাস্তবায়নে সাধারণ ব্যর্থতাগুলিকে একত্রিত করে।
 ---

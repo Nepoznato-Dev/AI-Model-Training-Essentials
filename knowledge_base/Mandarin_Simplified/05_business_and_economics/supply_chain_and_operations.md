@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 供应​​链和运营管理
 供应链管理是对涉及寻源、采购、转换和物流的所有活动的协调——从原材料到客户手中的成品。运营管理是生产系统的日常运行。它们共同决定了公司是否能够在正确的时间、以正确的成本、以正确的质量交付正确的产品。疫情、芯片短缺和运河堵塞表明，全球供应链是多么脆弱且相互关联。
 ---

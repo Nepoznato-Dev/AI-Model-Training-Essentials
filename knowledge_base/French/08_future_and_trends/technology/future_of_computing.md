@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # L'avenir de l'informatique
 L’avenir de l’informatique est façonné par des forces qui remettent en question les hypothèses fondamentales des 60 dernières années. La loi de Moore – l'observation selon laquelle la puissance de calcul double environ tous les deux ans – ralentit. L'architecture von Neumann – processeur et mémoire séparés – se heurte à un « mur de mémoire ». L’informatique quantique promet de résoudre des problèmes que les ordinateurs classiques ne peuvent pas résoudre. Les puces neuromorphiques imitent l'architecture du cerveau. L’Edge Computing éloigne le traitement des centres de données centralisés. Et l’IA change la vocation des ordinateurs : des outils qui exécutent des instructions aux systèmes qui apprennent, génèrent et raisonnent. Comprendre ces changements est important pour quiconque construit, achète ou s’appuie sur la technologie.
 ---

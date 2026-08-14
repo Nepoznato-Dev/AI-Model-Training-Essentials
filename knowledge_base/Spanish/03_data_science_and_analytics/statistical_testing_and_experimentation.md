@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Pruebas estadísticas y experimentación
 La estadística es la gramática de la ciencia. Le brinda las herramientas para distinguir patrones reales del ruido aleatorio, medir si un cambio realmente mejoró las cosas y tomar decisiones en condiciones de incertidumbre. Este archivo cubre los conceptos centrales de la prueba de hipótesis, el diseño experimental y los errores comunes que hacen tropezar a las personas.
 ---

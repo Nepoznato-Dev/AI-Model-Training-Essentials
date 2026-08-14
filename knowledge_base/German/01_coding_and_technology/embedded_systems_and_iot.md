@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Eingebettete Systeme und IoT
 Eingebettete Systeme sind Computer, die in anderen Geräten versteckt sind – dem Motorsteuergerät Ihres Autos, dem Controller Ihrer Waschmaschine, dem Mikrocontroller in einem intelligenten Thermostat. Im Gegensatz zu Allzweckcomputern sind sie für bestimmte Aufgaben konzipiert, oft mit strengen Einschränkungen hinsichtlich Leistung, Speicher und Verarbeitungsgeschwindigkeit. Das Internet der Dinge (IoT) erweitert eingebettete Systeme, indem es sie mit Netzwerken verbindet und so Fernüberwachung, Steuerung und Datenerfassung ermöglicht. Zusammen stellen sie Milliarden von Computergeräten dar, die mit der physischen Welt interagieren.
 ---

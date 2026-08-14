@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # स्क्रैच - सिंटैक्स संदर्भ
 यह दस्तावेज़ स्क्रैच 3.0 के लिए एक व्यापक, संरचित सिंटैक्स संदर्भ प्रदान करता है। यह संपूर्ण ब्लॉक श्रेणियों, इवेंट-संचालित पैटर्न, स्प्राइट प्रबंधन, क्लोनिंग और रचनात्मक कोडिंग तकनीकों पर ध्यान केंद्रित करके मुख्य स्क्रैच संदर्भ को पूरक करता है।
 ---

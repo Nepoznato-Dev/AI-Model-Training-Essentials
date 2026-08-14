@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ماتلاب
 MATLAB (مختبر المصفوفات) هي لغة برمجة عالية المستوى ومفسرة وبيئة مصممة للحوسبة العددية وعمليات المصفوفة والتطبيقات الهندسية/العلمية. تم تطوير MATLAB بواسطة MathWorks وتم إصداره لأول مرة في عام 1984، وهو الأداة القياسية في العديد من التخصصات الهندسية - الهندسة الكهربائية وأنظمة التحكم ومعالجة الإشارات ومعالجة الصور والاتصالات.
 يجمع MATLAB بين لغة قوية موجهة نحو المصفوفة وصناديق أدوات واسعة النطاق (حزم إضافية) وبيئة المحاكاة المرئية Simulink. يتم استخدامه على نطاق واسع في الأوساط الأكاديمية والصناعة لنماذج الخوارزميات قبل تنفيذها في كود الإنتاج.

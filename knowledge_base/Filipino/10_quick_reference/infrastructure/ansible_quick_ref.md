@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pamamahala ng Ansible at Configuration
 Ang Ansible ay isang walang ahente na pamamahala sa pagsasaayos at tool sa automation. Gumagamit ito ng SSH (o WinRM para sa Windows) upang kumonekta sa mga server at magsagawa ng mga gawain na tinukoy sa mga playbook ng YAML. Hindi tulad ng mga tool na nangangailangan ng mga ahente na naka-install sa bawat makina, ang Ansible ay nakabatay sa push — nagpapatakbo ka ng mga command mula sa isang control node. Ginagamit ito para sa provisioning ng server, deployment ng application, pamamahala ng configuration, at ad-hoc task execution.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ansible और कॉन्फ़िगरेशन प्रबंधन
 Ansible एक एजेंट रहित कॉन्फ़िगरेशन प्रबंधन और स्वचालन उपकरण है। यह सर्वर से कनेक्ट करने और YAML प्लेबुक में परिभाषित कार्यों को निष्पादित करने के लिए SSH (या Windows के लिए WinRM) का उपयोग करता है। उन उपकरणों के विपरीत, जिनके लिए प्रत्येक मशीन पर एजेंट स्थापित करने की आवश्यकता होती है, Ansible पुश-आधारित है - आप एक नियंत्रण नोड से कमांड चलाते हैं। इसका उपयोग सर्वर प्रोविजनिंग, एप्लिकेशन परिनियोजन, कॉन्फ़िगरेशन प्रबंधन और तदर्थ कार्य निष्पादन के लिए किया जाता है।
 ---

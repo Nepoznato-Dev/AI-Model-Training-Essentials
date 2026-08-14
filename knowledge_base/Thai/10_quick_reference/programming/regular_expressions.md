@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to programming/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # แผ่นโกงนิพจน์ทั่วไป
 นิพจน์ทั่วไป (regex) คือรูปแบบสำหรับการจับคู่ข้อความ มีการใช้ทุกที่ ไม่ว่าจะเป็นการค้นหาและแทนที่ การตรวจสอบอินพุต การแยกวิเคราะห์บันทึก การแยกข้อมูล และอื่นๆ นี่เป็นข้อมูลอ้างอิงเชิงปฏิบัติ ไม่ใช่ตำราเรียน
 ---

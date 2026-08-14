@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Consapevolezza ambientale
 L’ambiente non è una cosa separata “là fuori”: è il sistema che rende possibile tutto il resto. Ogni respiro che fai, ogni bicchiere d’acqua che bevi, ogni pasto che mangi dipende dalla composizione atmosferica, dai cicli dell’acqua, dalla salute del suolo e dalle reti di impollinatori. Capire come funzionano questi sistemi – e come stanno cambiando – non è un optional per una persona informata. Questo file copre i fondamenti della scienza ambientale, le sfide che affrontiamo e cosa significa effettivamente sostenibilità nella pratica.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Изобразительное искусство
 Визуальное искусство — древнейшая форма общения человечества — от наскальных рисунков Ласко до современных цифровых инсталляций. Понимание художественных движений, сред и институтов, которые сохраняют творческие произведения, дает вам более глубокое понимание того, как общества выражали красоту, силу, духовность и инакомыслие на протяжении тысячелетий.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # กระบวนการสุ่ม
 **กระบวนการสุ่ม** คือชุดของตัวแปรสุ่มที่จัดทำดัชนีตามเวลา (หรือปริภูมิ) ในขณะที่ทฤษฎีความน่าจะเป็นจะศึกษาเหตุการณ์สุ่มแต่ละเหตุการณ์ กระบวนการสุ่มจะศึกษาว่าการสุ่มพัฒนาไปตามเวลาอย่างไร พวกเขาจำลองราคาหุ้น ความยาวคิว การแพร่กระจายของโรค การสร้างภาษา และไดนามิกการฝึกอบรมของโมเดลการเรียนรู้ของเครื่อง
 ---

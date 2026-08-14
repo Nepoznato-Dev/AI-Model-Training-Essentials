@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Praktische Lebenskompetenzen
 In der Schule lernt man Rechnen, aber selten lernt man, wie man Steuern einreicht, eine ausgewogene Mahlzeit kocht oder den Haushalt führt. Dies sind die praktischen Kompetenzen, die Ihre tägliche Lebensqualität beeinflussen – die Art von Wissen, die Sie autark und finanziell belastbar macht. Diese Datei ist eine dichte Referenz für das Wesentliche.
 ---

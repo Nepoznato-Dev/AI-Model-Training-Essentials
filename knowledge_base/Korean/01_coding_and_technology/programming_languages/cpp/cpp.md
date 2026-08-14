@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C++
 C++는 Bjarne Stroustrup이 만든 범용 컴파일 프로그래밍 언어로, 1985년에 처음 출시되었습니다. 이는 객체 지향 기능, 제네릭 및 최신 버전(C++11 이상)에서는 람다, 스마트 포인터 및 STL(표준 템플릿 라이브러리)과 같은 고급 추상화를 통해 C를 확장합니다. C++는 "제로 오버헤드 추상화" 원칙을 따릅니다. 즉, 사용하지 않는 기능에 대해 비용을 지불해서는 안 됩니다.
 C++는 고성능과 표현력이 모두 필요할 때 선택하는 언어입니다. 게임 엔진(Unreal Engine), 브라우저(Chrome, Firefox), 데이터베이스(MongoDB), 운영 체제(Windows 및 macOS의 일부), 금융 거래 시스템 및 실시간 시뮬레이션을 지원합니다.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ایمبیڈڈ سسٹمز اور آئی او ٹی
 ایمبیڈڈ سسٹم دوسرے آلات کے اندر چھپے ہوئے کمپیوٹرز ہیں — آپ کی کار کا انجن کنٹرول یونٹ، آپ کی واشنگ مشین کا کنٹرولر، ایک سمارٹ تھرموسٹیٹ میں مائیکرو کنٹرولر۔ عام مقصد والے کمپیوٹرز کے برعکس، وہ مخصوص کاموں کے لیے ڈیزائن کیے گئے ہیں، اکثر پاور، میموری اور پروسیسنگ کی رفتار پر سخت رکاوٹوں کے ساتھ۔ انٹرنیٹ آف تھنگز (IoT) ایمبیڈڈ سسٹمز کو نیٹ ورکس سے جوڑ کر، ریموٹ مانیٹرنگ، کنٹرول اور ڈیٹا اکٹھا کرنے کے قابل بنا کر توسیع کرتا ہے۔ ایک ساتھ، وہ اربوں کمپیوٹنگ آلات کی نمائندگی کرتے ہیں جو جسمانی دنیا کے ساتھ تعامل کرتے ہیں۔
 ---

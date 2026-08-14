@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml (Objective Caml) یک زبان برنامه نویسی تابعی است که در INRIA در فرانسه توسعه یافته و اولین بار در سال 1996 منتشر شد. این زبان بیانی بودن برنامه نویسی تابعی را با ویژگی های عملی ترکیب می کند: یک سیستم نوع قدرتمند با استنتاج نوع (Hindley-Milner)، تطبیق الگو، انواع داده های جبری، و برنامه نویسی شی گرا اختیاری. OCaml به کد بومی سریع کامپایل می شود و همچنین از بایت کد پشتیبانی می کند.
 معروف ترین برنامه واقعی OCaml شرکت تجاری **Jane Street** است که از OCaml برای کل زیرساخت تجاری خود استفاده می کند. همچنین در توسعه کامپایلر (کامپایلر Rust در اصل در OCaml نوشته شده بود)، تأیید رسمی، سیستم های مالی و اثبات قضیه استفاده می شود.

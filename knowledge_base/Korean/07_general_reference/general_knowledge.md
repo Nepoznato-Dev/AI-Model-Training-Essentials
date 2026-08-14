@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 일반 지식
 이 파일은 대화, 뉴스, 교육, 일상생활에서 정기적으로 등장하는 사실과 개념을 모아 놓은 것입니다. 그것을 배경 지식, 즉 당신이 읽고, 듣고, 경험하고 있는 것을 이해하는 데 도움이 되는 종류의 지식이라고 생각하십시오.
 ---

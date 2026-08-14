@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গ্রাফ নিউরাল নেটওয়ার্ক
 গ্রাফ নিউরাল নেটওয়ার্ক (GNNs) হল নিউরাল নেটওয়ার্ক যা গ্রাফ-স্ট্রাকচারড ডেটার উপর কাজ করার জন্য ডিজাইন করা হয়েছে — প্রান্ত দ্বারা সংযুক্ত নোডের নেটওয়ার্ক। প্রথাগত নিউরাল নেটওয়ার্ক গ্রিড (ছবি) বা সিকোয়েন্সে (টেক্সট) কাজ করলেও, GNN গুলি স্বেচ্ছাচারী রিলেশনাল স্ট্রাকচার পরিচালনা করে: সোশ্যাল নেটওয়ার্ক, আণবিক গ্রাফ, নলেজ গ্রাফ, রোড নেটওয়ার্ক, সুপারিশ গ্রাফ এবং আরও অনেক কিছু। তারা ড্রাগ আবিষ্কার, জালিয়াতি সনাক্তকরণ, সুপারিশ সিস্টেম, এবং সত্তার মধ্যে সম্পর্ক গুরুত্বপূর্ণ যে কোনো ডোমেনের জন্য অপরিহার্য হয়ে উঠেছে।
 ---

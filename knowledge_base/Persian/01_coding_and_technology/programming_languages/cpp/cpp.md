@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C++
 C++ یک زبان برنامه نویسی همه منظوره و کامپایل شده است که توسط Bjarne Stroustrup ایجاد شد و اولین بار در سال 1985 منتشر شد. این زبان C را با ویژگی های شی گرا، ژنریک و -- در نسخه های مدرن (C++11 و جدیدتر) -- انتزاعات سطح بالا مانند لامبدا، اشاره گرهای هوشمند و کتابخانه قالب استاندارد (STL) گسترش می دهد. C++ از اصل "انتزاع سربار صفر" پیروی می کند: نباید برای ویژگی هایی که استفاده نمی کنید هزینه ای پرداخت کنید.
 C++ زمانی که به عملکرد بالا و قدرت بیان نیاز دارید، زبان انتخابی است. موتورهای بازی (Unreal Engine)، مرورگرها (Chrome، Firefox)، پایگاه‌های داده (MongoDB)، سیستم‌های عامل (بخش‌هایی از Windows و macOS)، سیستم‌های معاملات مالی و شبیه‌سازی‌های بلادرنگ را نیرو می‌دهد.

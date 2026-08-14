@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sfederowane uczenie się i prywatność
 Uczenie federacyjne to technika uczenia modeli uczenia maszynowego na wielu urządzeniach lub w wielu organizacjach bez udostępniania surowych danych. Zamiast wysyłać dane do centralnego serwera, każde urządzenie trenuje model lokalny i udostępnia jedynie aktualizacje modelu (gradienty lub wagi). Serwer centralny agreguje te aktualizacje w celu utworzenia modelu globalnego. Został zaprojektowany przez Google do uczenia modeli języków klawiatury na telefonach z Androidem i od tego czasu stał się kluczową techniką sztucznej inteligencji chroniącej prywatność.
 ---

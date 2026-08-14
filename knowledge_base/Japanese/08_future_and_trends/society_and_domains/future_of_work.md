@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 仕事の未来
 ＃＃ 概要
 私たちの働き方は、産業革命以降のどの時点よりも急速に変化しています。リモートワークは稀な特典から一夜にしてデフォルトになりました。 AI は新しいものから協力者へと移行しています。ギグエコノミーは「雇用」の意味すら変えつつあります。また、自動化はすべての仕事に導入されるわけではありませんが、ほとんどの仕事の多くのタスクに導入されます。ここでは、職場を再構築する力と次に何が起こるかを見てみましょう。

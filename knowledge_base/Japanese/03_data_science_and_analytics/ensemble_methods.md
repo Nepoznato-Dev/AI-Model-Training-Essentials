@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # アンサンブルメソッド
 アンサンブル手法は、複数の機械学習モデルを組み合わせて、単一モデルが単独で達成できるよりも優れた予測を生成します。直感は簡単です。それぞれがある程度正確であるものの、異なるエラーを起こす複数のモデルがある場合、それらの予測を組み合わせることで、個々のエラーが相殺され、より堅牢な結果が得られます。アンサンブルは、ほとんどの競争力のある機械学習ソリューションの背後にあり、実稼働システムでは依然として最も信頼性の高い技術の一部です。
 ---

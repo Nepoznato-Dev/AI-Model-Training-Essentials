@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Learning Science and Pedagogy
 
 Learning science is the interdisciplinary study of how people learn — drawing from psychology, neuroscience, education, and cognitive science. Pedagogy is the practice and methodology of teaching. Together, they address questions relevant to anyone who teaches, trains, mentors, or designs educational content: What methods help people learn effectively? What common study techniques are inefficient? How should instruction be structured for optimal retention and transfer?

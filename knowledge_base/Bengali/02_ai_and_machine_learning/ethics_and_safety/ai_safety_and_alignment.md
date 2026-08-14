@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # এআই নিরাপত্তা এবং প্রান্তিককরণ
 AI সুরক্ষা হল AI সিস্টেমগুলি কীভাবে তৈরি করা যায় তা নিয়ে অধ্যয়ন যা আমরা আসলে তাদের যা করতে চাই — এবং আমরা যা চাই না তা করবেন না, এমনকি যদি সেগুলি স্পষ্টভাবে বাতিল না করা হয়। সারিবদ্ধকরণ হল AI সিস্টেমের লক্ষ্য এবং আচরণগুলি মানুষের উদ্দেশ্যের সাথে মেলে এমন একটি নির্দিষ্ট চ্যালেঞ্জ। এআই সিস্টেমগুলি আরও সক্ষম হওয়ার সাথে সাথে এই প্রশ্নগুলি একাডেমিক কৌতূহল থেকে ব্যবহারিক প্রকৌশলের প্রয়োজনীয়তায় স্থানান্তরিত হয়।
 ---

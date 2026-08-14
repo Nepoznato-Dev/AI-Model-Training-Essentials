@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #2026 và các sự kiện trong tương lai
 Năm 2026 là năm hội tụ rất nhiều kế hoạch dài hạn. Đây là kỷ niệm 250 năm Tuyên ngôn Độc lập của Hoa Kỳ, điểm kiểm tra trung điểm cho các Mục tiêu Phát triển Bền vững của Liên hợp quốc (2020-2030) và là một năm quan trọng đối với lộ trình của các công ty về AI, thám hiểm không gian, xe điện và năng lượng tái tạo. Cho dù những dự đoán cụ thể có thành công hay không thì xu hướng hình thành năm 2026 vẫn đưa ra một bức tranh hữu ích về hướng mọi thứ đang hướng tới.
 ---

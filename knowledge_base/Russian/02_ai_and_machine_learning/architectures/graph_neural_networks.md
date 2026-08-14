@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Графовые нейронные сети
 Графовые нейронные сети (GNN) — это нейронные сети, предназначенные для работы с графоструктурированными данными — сетями узлов, соединенных ребрами. В то время как традиционные нейронные сети работают с сетками (изображениями) или последовательностями (текстом), GNN обрабатывают произвольные реляционные структуры: социальные сети, молекулярные графы, графы знаний, дорожные сети, графы рекомендаций и многое другое. Они стали необходимы для открытия лекарств, обнаружения мошенничества, систем рекомендаций и любой области, где отношения между объектами имеют значение.
 ---

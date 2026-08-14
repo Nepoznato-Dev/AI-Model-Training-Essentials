@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ไป
 Go (มักเรียกว่า "Golang" ตามชื่อโดเมนเดิม) เป็นภาษาโปรแกรมคอมไพล์ที่พิมพ์คงที่ ออกแบบโดย Google โดย Robert Griesemer, Rob Pike และ Ken Thompson เปิดตัวครั้งแรกในปี 2555 โดยมีเป้าหมายที่ชัดเจนในการเป็นภาษาที่ดีกว่าสำหรับการเขียนโปรแกรมระบบ ซึ่งเป็นการผสมผสานประสิทธิภาพของภาษา C เข้ากับประสิทธิภาพของภาษาไดนามิกเช่น Python Go ขึ้นชื่อเรื่องความเรียบง่าย การคอมไพล์ที่รวดเร็ว การทำงานพร้อมกันในตัว (กอร์รูทีนและแชนเนล) และเครื่องมือที่ยอดเยี่ยม
 Go ขับเคลื่อนระบบนิเวศโครงสร้างพื้นฐานคลาวด์ส่วนใหญ่: Docker, Kubernetes, Terraform, Prometheus ฯลฯ และเซิร์ฟเวอร์ HTTP ของไลบรารีมาตรฐาน Go ล้วนเขียนด้วยภาษา Go โดยได้กลายเป็นภาษาเริ่มต้นสำหรับการพัฒนาบนคลาวด์ ไมโครเซอร์วิส และเครื่องมือ CLI

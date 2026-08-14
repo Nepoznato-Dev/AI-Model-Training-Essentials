@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 스크래치 — 구문 참조
 이 문서는 스크래치 3.0에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 이는 철저한 블록 카테고리, 이벤트 중심 패턴, 스프라이트 관리, 복제 및 창의적인 코딩 기술에 중점을 두어 기본 스크래치 참조를 보완합니다.
 ---

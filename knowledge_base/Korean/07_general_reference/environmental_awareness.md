@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 환경 인식
 환경은 "저 바깥"에 있는 별개의 것이 아닙니다. 환경은 다른 모든 것을 가능하게 만드는 시스템입니다. 당신이 마시는 모든 호흡, 마시는 물 한 잔, 먹는 모든 식사는 대기 구성, 물 순환, 토양 건강 및 수분 매개자 네트워크에 따라 달라집니다. 이러한 시스템이 어떻게 작동하고 어떻게 변화하는지 이해하는 것은 정보를 아는 사람에게는 선택 사항이 아닙니다. 이 파일은 환경 과학의 기초, 우리가 직면한 과제, 실제로 지속 가능성이 실제로 의미하는 바를 다루고 있습니다.
 ---

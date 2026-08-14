@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # उभरती प्रौद्योगिकियाँ
 ## अवलोकन
 कुछ प्रौद्योगिकियां मौजूदा क्षमताओं में क्रमिक सुधार करने के बजाय क्षमता की पूरी तरह से नई श्रेणियां बनाती हैं। क्वांटम कंप्यूटिंग का लक्ष्य उन समस्याओं को हल करना है जिनमें शास्त्रीय मशीनों को सहस्राब्दियों का समय लगेगा। फ़्यूज़न ऊर्जा वस्तुतः असीमित स्वच्छ ऊर्जा की संभावना प्रदान करती है। ब्रेन-कंप्यूटर इंटरफेस दिमाग और मशीन को जोड़ता है। सिंथेटिक जीव विज्ञान जैविक कोड को फिर से लिखने में सक्षम बनाता है। निम्नलिखित अनुभाग वर्णन करते हैं कि इनमें से प्रत्येक सीमा आज कहां खड़ी है और वर्तमान रुझान यह संकेत देते हैं कि यह किस ओर जा रही है।

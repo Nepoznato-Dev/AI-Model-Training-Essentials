@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مبانی زیست شناسی
 زیست شناسی علم زندگی است. همه موجودات زنده ویژگی های خاصی دارند: آنها از سلول ساخته شده اند، از انرژی استفاده می کنند، رشد می کنند، به محیط خود پاسخ می دهند، تولید مثل می کنند و تکامل می یابند. زیست‌شناسی از ماشین‌های مولکولی درون یک سلول گرفته تا تعاملات کل اکوسیستم‌ها را در بر می‌گیرد و پایه و اساس پزشکی، کشاورزی، بیوتکنولوژی و حفاظت است.
 ---

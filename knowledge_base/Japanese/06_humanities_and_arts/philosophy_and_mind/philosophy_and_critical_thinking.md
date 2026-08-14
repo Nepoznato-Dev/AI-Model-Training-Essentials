@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 哲学と批判的思考
 哲学は、知識、現実、存在に関する根本的な問いを体系的に探求する学問です。それは、何が知識として認められるか、何を行う価値があるか、よく根拠づけられた議論と弱い議論をどのように区別するかを評価するための枠組みを提供します。クリティカルシンキングはこの枠組みの実践的適用であり、主張を分析し、欠陥のある推論を特定し、よりよく情報に基づいた意思決定を行うスキルです。このファイルには、主要なアイデア、それを評価するためのツール、そして誰もが影響を受ける認知バイアスがまとめられています。
 ---

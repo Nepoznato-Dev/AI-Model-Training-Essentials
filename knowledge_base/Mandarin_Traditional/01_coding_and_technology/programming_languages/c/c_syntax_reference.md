@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — 語法參考
 本文檔提供了全面、結構化的 C 語法參考（C11/C17 和 C23 註釋）。它透過關注詳盡的語法模式、運算符表、指標機制和記憶體管理來補充主要的 C 參考。
 ---

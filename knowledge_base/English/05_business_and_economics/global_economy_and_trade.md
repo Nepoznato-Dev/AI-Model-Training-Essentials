@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Global Economy and Trade
 
 The global economy is the largest and most complex system humans have ever built. In 2025, global GDP exceeded $110 trillion. Over 8 billion people produce, trade, and consume goods and services across borders every day. Understanding how this system works — who trades what, why some countries are rich and others poor, how money moves across borders, and what happens when the system breaks — is essential for navigating the modern world.

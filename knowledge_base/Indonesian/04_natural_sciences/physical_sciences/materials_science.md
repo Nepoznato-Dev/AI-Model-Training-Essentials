@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Ilmu Material
 Ilmu material adalah studi tentang bagaimana struktur suatu material (pada skala atom, mikroskopis, dan makroskopis) menentukan sifat-sifatnya, dan bagaimana metode pemrosesan dapat digunakan untuk mengontrol struktur tersebut guna mencapai kinerja yang diinginkan. Bidang inilah yang menjawab pertanyaan seperti: mengapa baja kuat namun berat? Mengapa kaca transparan tetapi rapuh? Bagaimana kita bisa membuat baterai terisi lebih cepat? Bahan apa yang bisa bertahan dalam kondisi di Mars? Setiap teknologi yang pernah Anda gunakan terbuat dari material, dan kemajuan teknologi hampir selalu membutuhkan kemajuan material.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #विद्युतचुम्बकत्व
 विद्युत चुंबकत्व विद्युत और चुंबकीय क्षेत्र और उनकी परस्पर क्रिया का अध्ययन है। 1860 के दशक में मैक्सवेल द्वारा एकीकृत, विद्युत चुंबकत्व प्रकाश, बिजली, चुंबकत्व, रेडियो तरंगों और परमाणुओं की संरचना की व्याख्या करता है। यह गणितीय रूप से पूरी तरह समझी जाने वाली पहली मूलभूत शक्ति थी और इसके समीकरणों ने आइंस्टीन के विशेष सापेक्षता और आधुनिक क्षेत्र सिद्धांत को प्रेरित किया।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #الکترومغناطیس
 الکترومغناطیس مطالعه میدان های الکتریکی و مغناطیسی و برهمکنش های آنهاست. الکترومغناطیس که توسط ماکسول در دهه 1860 متحد شد، نور، الکتریسیته، مغناطیس، امواج رادیویی و ساختار اتم ها را توضیح می دهد. این اولین نیروی بنیادی بود که به طور کامل از نظر ریاضی درک شد و معادلات آن الهام بخش نسبیت خاص و نظریه میدان مدرن اینشتین بود.
 ---

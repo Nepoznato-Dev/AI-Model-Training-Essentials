@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #भविष्य की स्वास्थ्य सेवा
 ## अवलोकन
 चिकित्सा एक प्रतिक्रियाशील मॉडल - लक्षणों के प्रकट होने के बाद उनका इलाज करने - से एक ऐसे मॉडल की ओर स्थानांतरित हो रही है जो पूर्वानुमानित, वैयक्तिकृत और तेजी से निवारक है। जीनोमिक्स 3 अरब डॉलर की परियोजना से 1,000 डॉलर से कम के नियमित परीक्षण तक पहुंच गया है। एआई डॉक्टरों से पहले स्कैन में बीमारियों का पता लगाना सीख रहा है। और पुनर्योजी चिकित्सा विज्ञान कथा को नैदानिक ​​​​परीक्षणों में बदल रही है। यहां तीन सबसे बड़े क्षेत्रों में क्या हो रहा है: वैयक्तिकृत चिकित्सा, दीर्घायु अनुसंधान और पुनर्योजी चिकित्सा।

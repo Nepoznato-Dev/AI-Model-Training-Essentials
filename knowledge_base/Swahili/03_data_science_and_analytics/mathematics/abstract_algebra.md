@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Muhtasari wa Aljebra
 Muhtasari wa aljebra hutafiti miundo ya aljebra - seti zilizo na utendakazi unaofuata sheria mahususi. Badala ya kufanya kazi na nambari, algebra ya kufikirika hufanya kazi na vitu vyovyote vinavyokidhi axioms. Ujumla huu una nguvu: nadharia iliyothibitishwa ya "vikundi" inatumika kwa nambari kamili, ulinganifu, matrices, vibali, na hali za quantum kwa wakati mmoja. Aljebra ya Kikemikali inashikilia usimbaji fiche, misimbo ya kusahihisha makosa, kompyuta ya kiasi na uchanganuzi wa ulinganifu unaotumika kote katika fizikia.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تقریر اور آڈیو پروسیسنگ
 اسپیچ اور آڈیو پروسیسنگ ان ٹیکنالوجیز کا احاطہ کرتی ہے جو مشینوں کو آواز سننے، سمجھنے، پیدا کرنے اور اس میں ہیرا پھیری کرنے دیتی ہیں۔ اس میں تقریر کی شناخت (بولے ہوئے الفاظ کو متن میں تبدیل کرنا)، تقریر کی ترکیب (متن کو بولے جانے والے الفاظ میں تبدیل کرنا)، اسپیکر کی شناخت، موسیقی کی تخلیق، اور ماحولیاتی آواز کو سمجھنا شامل ہے۔ فیلڈ کو گہری سیکھنے کے ذریعے تبدیل کر دیا گیا ہے - جدید نظام تقریر کی شناخت کے لیے انسانی سطح کی درستگی سے رجوع کرتے ہیں اور قدرتی مصنوعی آوازیں پیدا کرتے ہیں۔
 ---

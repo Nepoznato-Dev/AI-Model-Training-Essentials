@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cấu hình đường ống CI/CD
 Các quy trình Tích hợp liên tục (CI) và Triển khai liên tục (CD) tự động hóa quá trình xây dựng, thử nghiệm và triển khai phần mềm. Tài liệu tham khảo này bao gồm các mẫu cấu hình cho các nền tảng CI/CD phổ biến nhất: GitHub Actions, GitLab CI và các nguyên tắc thiết kế quy trình chung.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mathematics
 
 Mathematics is not only a subject studied in school — it underpins nearly every technical field. Physics uses it to describe the universe. Computer science uses it to design algorithms. Machine learning uses it to optimise weights. Finance uses it to price risk. Mastery of every branch is not necessary, but understanding the landscape — and knowing where each branch applies — makes other topics easier to grasp.

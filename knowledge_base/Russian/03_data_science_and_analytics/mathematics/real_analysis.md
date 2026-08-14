@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Реальный анализ
 Реальный анализ является строгой основой исчисления. В то время как вводное исчисление учит вас, как вычислять производные и интегралы, реальный анализ задается вопросом, почему* эти методы работают — и когда они терпят неудачу. Он дает точные определения пределов, непрерывности, сходимости и интеграции, которые лежат в основе теории вероятностей, функционального анализа, оптимизации и теоретических гарантий, лежащих в основе алгоритмов машинного обучения.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Oyun Teorisi
 Oyun teorisi, stratejik etkileşimin matematiğidir; sonucunuzun yalnızca kendi seçimlerinize değil, başkalarının seçimlerine de bağlı olduğu durumlar. Şirketler arasındaki fiyat savaşlarından nükleer silah yarışlarına, çevrimiçi müzayedelerden evrimsel biyolojiye kadar oyun teorisi, çatışma ve işbirliğini analiz etmek için araçlar sağlar. Çok aracılı takviyeli öğrenme, üretken çekişmeli ağlar (GAN'ler) ve çevrimiçi platformlar için mekanizma tasarımı yoluyla makine öğrenimiyle giderek daha alakalı hale geldi.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chuỗi thời gian và dự báo
 Dữ liệu chuỗi thời gian là bất kỳ dữ liệu nào được thu thập theo thời gian: giá cổ phiếu, chỉ số nhiệt độ, lưu lượng truy cập trang web, số liệu bán hàng, máy đo nhịp tim, mức tiêu thụ năng lượng. Dự báo có nghĩa là dự đoán các giá trị trong tương lai dựa trên các mẫu trong quá khứ. Đây là một trong những ứng dụng có giá trị thực tế nhất của khoa học dữ liệu — và là một trong những ứng dụng khó nhất, bởi vì tương lai thực sự không chắc chắn và chuỗi thời gian trong thế giới thực đầy rẫy những nhiễu loạn, tính thời vụ và sự phá vỡ cấu trúc.
 ---

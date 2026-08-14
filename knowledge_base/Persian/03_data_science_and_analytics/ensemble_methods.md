@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # روش های گروه
 روش‌های مجموعه چندین مدل یادگیری ماشین را ترکیب می‌کنند تا پیش‌بینی‌های بهتری نسبت به هر مدلی به تنهایی ایجاد کنند. شهود ساده است: اگر چندین مدل دارید که هر کدام تا حدودی دقیق هستند اما خطاهای متفاوتی دارند، ترکیب پیش‌بینی‌های آنها اشتباهات فردی را از بین می‌برد و نتیجه قوی‌تری ایجاد می‌کند. گروه ها پشت اکثر راه حل های رقابتی یادگیری ماشین هستند و برخی از قابل اعتمادترین تکنیک ها در سیستم های تولید باقی می مانند.
 ---

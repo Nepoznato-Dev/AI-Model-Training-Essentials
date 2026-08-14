@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সংযোজন পদ্ধতি
 এনসেম্বল পদ্ধতিগুলি একাধিক মেশিন লার্নিং মডেলকে একত্রিত করে যে কোনও একক মডেল একা অর্জন করতে পারে তার চেয়ে ভাল ভবিষ্যদ্বাণী তৈরি করে। অন্তর্দৃষ্টি সহজবোধ্য: যদি আপনার কাছে বেশ কয়েকটি মডেল থাকে যা প্রতিটি কিছুটা নির্ভুল কিন্তু বিভিন্ন ত্রুটি করে, তাদের ভবিষ্যদ্বাণীগুলিকে একত্রিত করা স্বতন্ত্র ভুলগুলি বাতিল করবে এবং আরও শক্তিশালী ফলাফল দেবে৷ এনসেম্বলগুলি বেশিরভাগ প্রতিযোগিতামূলক মেশিন লার্নিং সমাধানগুলির পিছনে রয়েছে এবং উত্পাদন ব্যবস্থার সবচেয়ে নির্ভরযোগ্য কৌশলগুলির মধ্যে রয়েছে।
 ---

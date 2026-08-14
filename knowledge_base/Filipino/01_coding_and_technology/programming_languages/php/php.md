@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 Ang PHP (Hypertext Preprocessor) ay isang server-side scripting language na nilikha ni Rasmus Lerdorf noong 1994 at unang inilabas noong 1995. Orihinal na idinisenyo para sa pagbuo ng mga dynamic na web page, ang PHP ay umunlad sa isang ganap na tampok na pangkalahatang layunin na wika. Pinapatakbo nito ang humigit-kumulang 75% ng lahat ng mga website na may kilalang wika sa panig ng server, kabilang ang WordPress, Facebook (orihinal), Wikipedia, Slack, at milyon-milyong iba pang mga site.
 Ang modernong PHP (8.x) ay isang ibang wika mula sa PHP noong unang bahagi ng 2000s. Mayroon na itong mga uri ng pag-aari, pagtutugma ng mga expression, enum, fibers, readonly na mga klase, at isang matatag na uri ng sistema. Sa kabila ng reputasyon nito sa mga developer (kadalasang pinupuna dahil sa hindi pagkakapare-pareho), praktikal ang PHP, malawak na naka-deploy, at patuloy na umuunlad.

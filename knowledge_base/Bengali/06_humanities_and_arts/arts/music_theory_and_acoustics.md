@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সঙ্গীত তত্ত্ব এবং ধ্বনিবিদ্যা
 সঙ্গীত তত্ত্ব হল সঙ্গীত কীভাবে কাজ করে তার অধ্যয়ন - যে নিদর্শন, কাঠামো এবং নীতিগুলি কিছু সংমিশ্রণকে আনন্দদায়ক বা অর্থপূর্ণ করে তোলে এবং অন্যগুলি অসংলগ্ন বা বিশৃঙ্খল। ধ্বনিবিদ্যা হল শব্দের পদার্থবিদ্যা — কীভাবে কম্পনগুলি বাতাসের মধ্য দিয়ে ভ্রমণ করে, কীভাবে সেগুলি উৎপন্ন হয় এবং অনুভূত হয়। একসাথে, তারা ব্যাখ্যা করে যে কেন একটি C মেজর কর্ড খুশি শোনায়, কেন একটি ছোট কী দুঃখ বোধ করে, কনসার্ট হলগুলি কীভাবে ডিজাইন করা হয় এবং কেন আপনার প্রিয় গান আপনাকে শীতল করে।
 ---

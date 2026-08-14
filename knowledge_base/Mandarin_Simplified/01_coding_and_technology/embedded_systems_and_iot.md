@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 嵌入式系统和物联网
 嵌入式系统是隐藏在其他设备中的计算机——汽车的发动机控制单元、洗衣机的控制器、智能恒温器中的微控制器。与通用计算机不同，它们是为特定任务而设计的，通常对功耗、内存和处理速度有严格的限制。物联网 (IoT) 通过将嵌入式系统连接到网络来扩展嵌入式系统，从而实现远程监控、控制和数据收集。它们共同代表了与物理世界交互的数十亿计算设备。
 ---

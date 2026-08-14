@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Przyszłość geostrategiczna
 ## Przegląd
 Era amerykańskiej dominacji po zakończeniu zimnej wojny ustępuje miejsca czemuś bardziej chaotycznemu: wielobiegunowy świat, w którym władza jest rozproszona, nasila się konkurencja o technologię i zasoby, a wyzwania takie jak zmiany klimatyczne i pandemie nie respektują granic. Zbudowany po 1945 r. oparty na zasadach ład międzynarodowy jest poddawany próbie ze wszystkich stron. Oto, co się zmienia, kto rośnie i gdzie znajdują się punkty tarcia.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hệ thống khuyến nghị
 Hệ thống đề xuất dự đoán những gì người dùng sẽ muốn xem, mua hoặc tương tác tiếp theo. Chúng cung cấp nguồn cấp dữ liệu nội dung trên mạng xã hội, đề xuất sản phẩm trên các trang thương mại điện tử, lựa chọn phim trên nền tảng phát trực tuyến và kết quả tìm kiếm. Mặc dù vô hình đối với hầu hết người dùng, nhưng chúng nằm trong số những hệ thống AI có tác động thương mại nhất trên thế giới - Netflix ước tính công cụ đề xuất của họ tiết kiệm hơn 1 tỷ USD mỗi năm bằng cách giảm tỷ lệ người đăng ký rời bỏ.
 ---

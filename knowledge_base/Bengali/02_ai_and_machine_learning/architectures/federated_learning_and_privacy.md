@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ফেডারেটেড লার্নিং এবং গোপনীয়তা
 ফেডারেটেড লার্নিং হল কাঁচা ডেটা ভাগ না করেই একাধিক ডিভাইস বা সংস্থা জুড়ে মেশিন লার্নিং মডেল প্রশিক্ষণের একটি কৌশল। একটি কেন্দ্রীয় সার্ভারে ডেটা পাঠানোর পরিবর্তে, প্রতিটি ডিভাইস একটি স্থানীয় মডেলকে প্রশিক্ষণ দেয় এবং শুধুমাত্র মডেল আপডেটগুলি (গ্রেডিয়েন্ট বা ওজন) ভাগ করে। কেন্দ্রীয় সার্ভার একটি বিশ্বব্যাপী মডেল তৈরি করতে এই আপডেটগুলিকে একত্রিত করে। এটি অ্যান্ড্রয়েড ফোনে কীবোর্ড ভাষার মডেল প্রশিক্ষণের জন্য Google দ্বারা ডিজাইন করা হয়েছিল - এবং এটি তখন থেকে গোপনীয়তা-সংরক্ষণকারী AI-এর জন্য একটি মূল কৌশল হয়ে উঠেছে।
 ---

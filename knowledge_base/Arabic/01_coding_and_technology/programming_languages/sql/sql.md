@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (لغة الاستعلام الهيكلية) هي لغة خاصة بالمجال مصممة لإدارة البيانات والاستعلام عنها في قواعد البيانات العلائقية. تم تطوير SQL لأول مرة في IBM في السبعينيات وتم توحيده في عام 1987، ويظل SQL هو الواجهة الأساسية بين التطبيقات وبياناتها. كل نظام رئيسي لإدارة قواعد البيانات العلائقية (RDBMS) - PostgreSQL، وMySQL، وSQL Server، وOracle، وSQLite - يستخدم SQL كلغة استعلام خاصة به.
 SQL ليست لغة برمجة للأغراض العامة. لن تكتب تطبيق ويب في SQL. ولكن إذا كان تطبيقك يقوم بتخزين البيانات - وجميع التطبيقات تقريبًا تقوم بذلك - فإن لغة SQL هي اللغة التي تستخدمها لاسترداد تلك البيانات وتحويلها وإدارتها. يمكن القول إنها المهارة التقنية الأكثر فائدة عالميًا بعد البرمجة العامة.

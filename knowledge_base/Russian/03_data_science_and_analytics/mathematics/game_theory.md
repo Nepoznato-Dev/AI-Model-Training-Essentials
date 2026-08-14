@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Теория игр
 Теория игр — это математика стратегического взаимодействия — ситуаций, в которых ваш результат зависит не только от вашего собственного выбора, но и от выбора других. От ценовых войн между компаниями до гонки ядерных вооружений, от онлайн-аукционов до эволюционной биологии — теория игр предоставляет инструменты для анализа конфликтов и сотрудничества. Оно становится все более актуальным для машинного обучения благодаря многоагентному обучению с подкреплением, генеративно-состязательным сетям (GAN) и проектированию механизмов для онлайн-платформ.
 ---

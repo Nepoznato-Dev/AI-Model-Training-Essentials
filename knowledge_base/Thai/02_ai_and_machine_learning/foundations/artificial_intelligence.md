@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ปัญญาประดิษฐ์
 ปัญญาประดิษฐ์คือความพยายามในการสร้างเครื่องจักรที่สามารถทำสิ่งต่างๆ ที่ต้องใช้สติปัญญาหากมนุษย์ทำได้ เช่น จดจำใบหน้า เข้าใจคำพูด ตัดสินใจ เขียนข้อความ เล่นเกม ขับรถ วินิจฉัยโรค วงการนี้เก่าแก่พอ ๆ กับการประมวลผล - Alan Turing ถามว่า "เครื่องจักรคิดได้ไหม" ในปี 1950 แต่ความสามารถที่เพิ่มขึ้นอย่างรวดเร็ว (ปี 2020) ทำให้ AI เป็นหนึ่งในเทคโนโลยีที่สำคัญและมีการโต้แย้งมากที่สุดในประวัติศาสตร์ของมนุษย์
 ---

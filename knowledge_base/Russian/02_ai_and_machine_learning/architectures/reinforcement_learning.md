@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Обучение с подкреплением
 Обучение с подкреплением (RL) — это то, как машины учатся принимать последовательности решений методом проб и ошибок. В отличие от обучения с учителем, где правильный ответ предоставляется для каждого примера, RL дает агенту только сигнал вознаграждения — и агент должен выяснить, какие действия со временем приводят к лучшим результатам. Этот подход лежит в основе AlphaGo, роботизированного управления, игрового ИИ и, что особенно важно, RLHF, метода, используемого для согласования современных больших языковых моделей с человеческими предпочтениями.
 ---

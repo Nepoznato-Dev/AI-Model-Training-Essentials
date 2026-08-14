@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Kotlin"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kotlin
 Ang Kotlin ay isang statically typed, compiled programming language na binuo ng JetBrains at unang inilabas noong 2011 (1.0 noong 2016). Gumagana ito sa Java Virtual Machine (JVM) at ganap na interoperable sa Java — ibig sabihin ay maaari kang gumamit ng anumang Java library mula sa Kotlin at tumawag sa Kotlin code mula sa Java nang walang anumang mga wrapper. Noong 2017, inanunsyo ng Google ang Kotlin bilang ang ginustong wika para sa pagbuo ng Android, at mula noon ito ay naging nangingibabaw na wika ng Android.
 Idinisenyo ang Kotlin para ayusin ang mga pain point ng Java: verbosity, null pointer exception, at nawawalang modernong feature. Ang resulta ay isang wika na parang isang modernized na Java — maigsi, ligtas, at nagpapahayag — habang pinapanatili ang ganap na pagkakatugma sa napakalaking Java ecosystem.

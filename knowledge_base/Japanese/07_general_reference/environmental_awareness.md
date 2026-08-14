@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 環境意識
 環境は「そこにある」別個のものではなく、他のすべてを可能にするシステムです。あなたが吸うすべての呼吸、あなたが飲むすべてのコップの水、あなたが食べるすべての食事は、大気の組成、水の循環、土壌の健康状態、および花粉媒介者のネットワークに依存します。これらのシステムがどのように機能するのか、そしてどのように変化しているのかを理解することは、知識のある人にとっては必須ではありません。このファイルでは、環境科学の基礎、私たちが直面する課題、持続可能性が実際に何を意味するのかについて説明します。
 ---

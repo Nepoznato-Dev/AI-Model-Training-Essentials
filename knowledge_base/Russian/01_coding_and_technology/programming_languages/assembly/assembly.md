@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Язык ассемблера
 Язык ассемблера — это язык программирования самого низкого уровня, читаемый человеком. Он обеспечивает прямое представление инструкций машинного кода компьютера с использованием мнемонических кодов (например, `MOV`, `ADD`, `JMP`) вместо необработанного двоичного кода. Каждый язык ассемблера специфичен для конкретной архитектуры процессора (x86, ARM, MIPS, RISC-V) — код, написанный для одной архитектуры, не будет работать на другой.
 Язык ассемблера не используется для создания приложений. Он используется, когда вам нужен абсолютный контроль над оборудованием: написание ядер операционной системы, драйверов устройств, загрузчиков, встроенного ПО, критически важных для производительности разделов кода, реверс-инжиниринг и понимание того, как компьютеры на самом деле выполняют инструкции.

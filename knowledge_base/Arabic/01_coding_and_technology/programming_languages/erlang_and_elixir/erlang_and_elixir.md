@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # إرلانج وإكسير
 تم إنشاء Erlang بواسطة شركة Ericsson في عام 1986 لتشغيل مفاتيح الهاتف - وهو ما يفسر سبب تعاملها مع التزامن والتسامح مع الأخطاء والأنظمة الموزعة بشكل أفضل من أي شيء آخر تقريبًا. عمليات Erlang خفيفة الوزن ومعزولة ولا تتواصل إلا من خلال تمرير الرسائل. عندما تتعطل العملية، يقوم المشرف بإعادة تشغيلها. إن فلسفة "دعها تتعطل" تنتج أنظمة تعمل لسنوات دون توقف.
 Elixir هي لغة حديثة تم إنشاؤها على رأس Erlang's VM (BEAM) بواسطة Jose Valim في عام 2012. وهي تحافظ على كل ما تقدمه Erlang - التزامن والتسامح مع الأخطاء والتوزيع - ولكنها تضيف بناء جملة سهلاً وبرمجة فوقية وأدوات ممتازة (مدير حزم Mix وسجل حزم Hex). يُستخدم Elixir على نطاق واسع لتطبيقات الويب (عبر إطار عمل Phoenix)، وأنظمة الوقت الفعلي، والأجهزة المدمجة (عبر Nerves).

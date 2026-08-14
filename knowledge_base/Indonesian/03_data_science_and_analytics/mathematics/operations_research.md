@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Riset Operasi
 Riset operasi (OR) adalah penerapan metode matematika untuk pengambilan keputusan. Lahir pada masa Perang Dunia II untuk logistik militer, perusahaan ini kini mengoptimalkan rantai pasokan, menjadwalkan maskapai penerbangan, mengarahkan armada pengiriman, mengelola inventaris, dan mengalokasikan sumber daya di setiap industri. OR menyediakan perangkat matematika untuk membuat keputusan terbaik dalam batasan.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ทฤษฎีสารสนเทศ
 ทฤษฎีสารสนเทศก่อตั้งโดย Claude Shannon ในปี 1948 เพื่อวัดปริมาณของข้อมูล ข้อความบอกคุณได้มากแค่ไหน? คุณสามารถบีบอัดข้อมูลได้มากแค่ไหน? คุณสามารถสื่อสารผ่านช่องทางที่มีเสียงดังได้เร็วแค่ไหน? คำถามเหล่านี้มีคำตอบทางคณิตศาสตร์ที่แม่นยำ นอกเหนือจากการสื่อสารแล้ว ทฤษฎีสารสนเทศยังกลายเป็นรากฐานของการเรียนรู้ของเครื่องอีกด้วย เอนโทรปีข้ามเป็นฟังก์ชันการสูญเสียเริ่มต้นสำหรับการจำแนกประเภท ความแตกต่างของ KL จะวัดความคล้ายคลึงกันในการกระจาย และการเลือกคุณสมบัติขับเคลื่อนข้อมูลร่วมกัน
 ---

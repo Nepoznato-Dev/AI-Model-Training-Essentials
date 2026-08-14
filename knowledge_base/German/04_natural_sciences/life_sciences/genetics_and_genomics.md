@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetik und Genomik
 Genetik ist das Studium der Vererbung – wie Merkmale durch die DNA von den Eltern an die Nachkommen weitergegeben werden. Genomik ist die Untersuchung des gesamten Genoms: aller Gene, der nichtkodierenden Regionen, wie sie interagieren und wie sie sich zwischen Individuen und Populationen unterscheiden. Der Übergang von der Genetik zur Genomik wurde durch die Sequenzierungstechnologie vorangetrieben – wir gingen von der Untersuchung eines Gens nach dem anderen zum Lesen ganzer Genome in Stunden über und generierten Daten, die Medizin, Landwirtschaft, Forensik und unser Verständnis der Evolution verändern.
 ---

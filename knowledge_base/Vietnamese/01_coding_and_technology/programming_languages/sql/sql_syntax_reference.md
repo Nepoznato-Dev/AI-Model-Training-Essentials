@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL — Tham chiếu cú ​​pháp
 Tài liệu này cung cấp tham chiếu cú ​​pháp có cấu trúc, toàn diện cho SQL (ANSI SQL với các ghi chú về sự khác biệt giữa phương ngữ PostgreSQL/MySQL/SQLite). Nó bổ sung cho tham chiếu SQL chính bằng cách tập trung vào các mẫu truy vấn đầy đủ, các hàm cửa sổ, CTE và thiết kế cơ sở dữ liệu.
 ---

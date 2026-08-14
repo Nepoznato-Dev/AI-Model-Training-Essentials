@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Intelligence artificielle
 L'intelligence artificielle est la tentative de construire des machines capables de faire des choses qui nécessiteraient de l'intelligence si un humain les faisait : reconnaître des visages, comprendre la parole, prendre des décisions, écrire des textes, jouer à des jeux, conduire des voitures, diagnostiquer des maladies. Ce domaine est aussi vieux que l'informatique elle-même. Alan Turing se demandait : « Les machines peuvent-elles penser ? » en 1950 – mais la récente explosion des capacités (années 2020) a fait de l’IA l’une des technologies les plus importantes et les plus contestées de l’histoire de l’humanité.
 ---

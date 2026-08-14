@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Планирование сценариев
 ## Обзор
 Никто не может предсказать будущее, но вы можете подготовиться к нескольким вероятным вариантам. Планирование сценариев, зародившееся в аналитических центрах времен Холодной войны и доведенное до совершенства компанией Shell во время нефтяного кризиса 1970-х годов, представляет собой способ систематического размышления о неопределенности. Вместо того, чтобы делать ставку на один прогноз, вы строите последовательные истории о том, как могут развиваться события, а затем подвергаете свои решения стресс-тестированию всех этих прогнозов. Вот как работает эта методология, а также сценарии в ключевых областях.

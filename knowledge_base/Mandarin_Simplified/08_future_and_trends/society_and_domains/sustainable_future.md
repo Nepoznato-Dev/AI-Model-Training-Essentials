@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 可持续的未来
 ＃＃ 概述
 问题不再是“世界是否”需要向可持续经济转型，而是“多快”和“谁来领导”。可再生能源现在是大多数市场上最便宜的能源。循环经济原则正在从利基概念转向企业战略。城市正在重新思考从交通到废物处理的一切。净零排放竞赛正在重塑从能源到金融的各个行业。以下是可持续未来在四个关键维度上的样子。

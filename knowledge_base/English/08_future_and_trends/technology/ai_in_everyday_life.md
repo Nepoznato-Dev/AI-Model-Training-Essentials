@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI in Everyday Life
 
 Artificial intelligence is no longer a futuristic concept — it's embedded in daily life. From the moment you wake up and check your phone (recommendation algorithms decide what notifications you see) to the moment you fall asleep (your smart speaker processes your last command), AI systems are making decisions on your behalf, for you, and sometimes about you. Understanding where AI appears, how it works at a basic level, and what its implications are is no longer optional — it's a requirement for informed citizenship in the 21st century.

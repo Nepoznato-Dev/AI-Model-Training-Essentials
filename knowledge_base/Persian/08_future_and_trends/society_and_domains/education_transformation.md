@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Education Transformation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحول آموزش و پرورش
 ## بررسی اجمالی
 مدل سنتی آموزش - دوازده سال در کلاس درس بنشینید، شاید به دانشگاه بروید، سپس کار کنید - در حال از بین رفتن است. مربیان هوش مصنوعی اکنون می توانند آموزش های شخصی سازی شده را در مقیاس ارائه دهند. سرعت تغییرات تکنولوژیکی به این معنی است که یادگیری مادام العمر دیگر اختیاری نیست. و کارفرمایان به طور فزاینده‌ای به کارهایی که می‌توانید *انجام دهید* اهمیت می‌دهند، نه فقط به اعتباراتی که دارید. در اینجا نحوه طراحی مجدد آموزش است.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sikolohiya at Pag-uugali ng Tao
 Ang sikolohiya ay ang agham kung paano at bakit ang mga tao ay nag-iisip, nakadarama, at kumikilos sa paraang ginagawa nila. Ito ay hindi pagbabasa ng isip, at hindi ito sentido komun — bagama't minsan ay nagpapatunay kung ano ang iminumungkahi ng sentido komun at kung minsan ay sumasalungat dito nang buo. Ang sikolohiya ay gumagamit ng parehong siyentipikong pamamaraan tulad ng bawat iba pang agham: pagmasdan, hypothesize, pagsubok, rebisahin. Ang nagpapahirap dito ay ang paksa nito — ang isip ng tao — ay ang pinaka kumplikadong bagay na alam natin.
 Sinasaklaw ng file na ito ang mga pangunahing bahagi ng sikolohiya: kung paano tayo nag-iisip, kung paano tayo umuunlad, kung paano tayo naiimpluwensyahan ng iba, kung ano ang mali, at kung ano ang maaaring gawin tungkol dito.

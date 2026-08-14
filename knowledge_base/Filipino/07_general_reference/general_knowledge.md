@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "General Knowledge"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pangkalahatang Kaalaman
 Ang file na ito ay isang koleksyon ng mga katotohanan at konsepto na regular na lumalabas sa pag-uusap, balita, edukasyon, at pang-araw-araw na buhay. Isipin ito bilang background na kaalaman — ang uri ng bagay na tumutulong sa iyong maunawaan kung ano ang iyong binabasa, naririnig, o nararanasan.
 ---

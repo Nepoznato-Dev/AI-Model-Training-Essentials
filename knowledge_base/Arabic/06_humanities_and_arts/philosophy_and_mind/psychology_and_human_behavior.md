@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # علم النفس والسلوك البشري
 علم النفس هو علم كيف ولماذا يفكر الناس ويشعرون ويتصرفون بالطريقة التي يتصرفون بها. إنها ليست قراءة للأفكار، وليست من المنطق السليم - على الرغم من أنها تؤكد في بعض الأحيان ما يوحي به المنطق السليم وفي أحيان أخرى تناقضه تمامًا. يستخدم علم النفس نفس المنهج العلمي الذي يستخدمه أي علم آخر: الملاحظة، الافتراض، الاختبار، المراجعة. ما يجعل الأمر صعبًا هو أن موضوعه - العقل البشري - هو أكثر الأشياء التي نعرفها تعقيدًا.
 يغطي هذا الملف المجالات الرئيسية لعلم النفس: كيف نفكر، وكيف نتطور، وكيف نتأثر بالآخرين، وما هي الأخطاء التي تحدث، وما الذي يمكن فعله حيال ذلك.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الذكاء الاصطناعي المتعدد الوسائط
 تقوم أنظمة الذكاء الاصطناعي متعددة الوسائط بمعالجة ودمج المعلومات من أنواع متعددة من البيانات - النصوص والصور والصوت والفيديو والمزيد - في وقت واحد. في حين أن أنظمة الذكاء الاصطناعي السابقة كانت عادةً أحادية النمط (نص فقط، صورة فقط)، فإن الأنظمة الحديثة الأكثر قدرة هي متعددة الوسائط. يقرأ GPT-4V الصور والنصوص معًا؛ يقوم Gemini بمعالجة النصوص والصور والصوت والفيديو محليًا؛ وتقوم أنظمة مثل Sora بإنشاء فيديو من الأوصاف النصية. يغطي هذا الملف كيفية عمل الذكاء الاصطناعي متعدد الوسائط، والبنيات التي تقف وراءه، وسبب قوة الجمع بين الوسائط.
 ---

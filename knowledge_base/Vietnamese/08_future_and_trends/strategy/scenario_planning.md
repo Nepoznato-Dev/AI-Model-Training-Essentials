@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lập kế hoạch kịch bản
 ## Tổng quan
 Không ai có thể đoán trước được tương lai - nhưng bạn có thể chuẩn bị cho một số điều có thể xảy ra. Lập kế hoạch theo kịch bản, ra đời từ các tổ chức tư vấn Chiến tranh Lạnh và được Shell hoàn thiện trong cuộc khủng hoảng dầu mỏ những năm 1970, là một cách suy nghĩ có hệ thống về sự không chắc chắn. Thay vì đặt cược vào một dự báo, bạn xây dựng những câu chuyện mạch lạc về cách mọi thứ có thể diễn ra, sau đó kiểm tra căng thẳng các quyết định của bạn đối với tất cả chúng. Đây là cách phương pháp này hoạt động, cùng với các kịch bản trên các lĩnh vực chính.

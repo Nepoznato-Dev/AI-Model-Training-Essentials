@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Historia i kultura
 Historia to historia tego, czego dokonał człowiek – sukcesów, katastrof, wynalazków i idei, które ukształtowały świat, w którym dzisiaj żyjemy. To nie tylko lista dat i nazwisk. Zrozumienie historii pomaga zrozumieć, dlaczego granice są tam, gdzie są, dlaczego ludzie posługują się językami, którymi mówią, dlaczego niektóre kraje są bogate, a inne nie, i dlaczego konflikty, które wydają się stare, wciąż płoną.
 Ten plik obejmuje główne okresy i tematy w historii świata, od pierwszych cywilizacji po dzień dzisiejszy.

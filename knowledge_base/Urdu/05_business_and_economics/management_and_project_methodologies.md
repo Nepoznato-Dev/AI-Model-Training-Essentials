@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مینجمنٹ اور پروجیکٹ کے طریقے
 لوگوں اور منصوبوں کا انتظام کسی بھی تنظیم میں سب سے زیادہ ضروری ذمہ داریوں میں سے ہے۔ تکنیکی مہارتیں داخلہ فراہم کرتی ہیں، لیکن ٹیموں کی قیادت کرنے، فیصلے کرنے، مؤثر طریقے سے بات چیت کرنے اور نتائج فراہم کرنے کی صلاحیت اس بات کا تعین کرتی ہے کہ مقاصد حاصل کیے گئے ہیں یا نہیں۔ یہ فائل فریم ورک، طریقہ کار، اور عملی مہارتوں کا احاطہ کرتی ہے جن کا اطلاق مؤثر مینیجرز اور پروجیکٹ لیڈر کرتے ہیں۔
 ---

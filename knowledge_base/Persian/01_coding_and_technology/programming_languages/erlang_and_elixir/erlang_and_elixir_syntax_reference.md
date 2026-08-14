@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang & Elixir - مرجع نحو
 این سند یک مرجع نحوی جامع و ساختار یافته برای Erlang و Elixir ارائه می دهد. این مرجع اصلی را با تمرکز بر تطبیق الگو، مدیریت فرآیند، رفتارهای OTP و الگوهای سیستم مقاوم به خطا تکمیل می کند.
 ---

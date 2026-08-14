@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Phát triển di động
 Phát triển thiết bị di động là hoạt động xây dựng ứng dụng cho điện thoại thông minh và máy tính bảng - chủ yếu dành cho iOS (Apple) và Android (Google). Nó bao gồm mọi thứ, từ thiết kế giao diện người dùng cho màn hình nhỏ đến quản lý thời lượng pin, xử lý tình trạng mất ổn định của mạng và phân phối ứng dụng qua các cửa hàng. Lĩnh vực này đã phát triển đáng kể, với các khung đa nền tảng hiện đang cạnh tranh với sự phát triển gốc trong hầu hết các trường hợp sử dụng.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yapay Zeka
 Yapay zeka, bir insanın yapması durumunda zeka gerektirecek şeyleri yapabilen makineler üretme girişimidir: yüzleri tanımak, konuşmayı anlamak, karar vermek, metin yazmak, oyun oynamak, araba kullanmak, hastalıkları teşhis etmek. Bu alan hesaplamanın kendisi kadar eskidir - Alan Turing "Makineler düşünebilir mi?" diye soruyordu. 1950'de - ancak yeteneklerdeki son patlama (2020'ler), yapay zekayı insanlık tarihindeki en önemli ve tartışmalı teknolojilerden biri haline getirdi.
 ---

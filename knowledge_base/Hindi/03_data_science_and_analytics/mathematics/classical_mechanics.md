@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # शास्त्रीय यांत्रिकी
 शास्त्रीय यांत्रिकी बलों के प्रभाव में वस्तुओं की गति का वर्णन करती है। गिरते सेब से लेकर ग्रहों की परिक्रमा तक, तार के हिलने से लेकर टकराते कणों तक, इसके सिद्धांत स्थूल दुनिया को नियंत्रित करते हैं। अपने भौतिक अनुप्रयोगों से परे, शास्त्रीय यांत्रिकी ने विविधताओं की गणना, सहानुभूति ज्यामिति और हैमिल्टनियन ढांचे को जन्म दिया जो क्वांटम यांत्रिकी और आधुनिक अनुकूलन को रेखांकित करता है।
 ---

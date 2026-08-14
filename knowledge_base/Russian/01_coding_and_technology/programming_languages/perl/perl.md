@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Перл
 Perl был создан Ларри Уоллом в 1987 году как практичный инструмент для обработки текста. Он стал основой ранней веб-разработки (CGI-скрипты), системного администрирования, биоинформатики и сетевого программирования. Философия Perl — «Есть больше, чем один способ сделать это» (TMTOWTDI) — язык предлагает множество подходов к каждой проблеме, отдавая предпочтение выразительности единообразию.
 Влияние Perl на современное программирование огромно, но зачастую незаметно: регулярные выражения, созданные под влиянием сопоставления шаблонов Perl, теперь являются стандартными в Python, JavaScript, Java и большинстве других языков. CPAN (Comprehensive Perl Archive Network) был одним из первых репозиториев пакетов программного обеспечения и вдохновил более поздние системы, такие как PyPI Python и npm Node.

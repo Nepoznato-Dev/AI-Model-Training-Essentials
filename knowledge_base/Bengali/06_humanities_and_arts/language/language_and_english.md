@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভাষা এবং ইংরেজি
 বর্তমানে বিশ্বে প্রায় 7,000টি ভাষায় কথা বলা হয়। ইংরেজি দ্বিতীয় ভাষা হিসেবে সবচেয়ে বেশি কথ্য এবং আন্তর্জাতিক ব্যবসা, বিজ্ঞান, বিমান চলাচল এবং ইন্টারনেটের জন্য ডিফল্ট হিসেবে কাজ করে। কোড ডকুমেন্টেশন লেখা, গবেষণাপত্র পড়া, বা সীমানা জুড়ে যোগাযোগ করা হোক না কেন, ইংরেজির একটি শক্ত কমান্ড — ব্যাকরণ, শব্দভাণ্ডার এবং অলঙ্কারশাস্ত্র — একজন ব্যক্তি বিকাশ করতে পারে এমন সবচেয়ে ব্যবহারিক দক্ষতাগুলির মধ্যে একটি।
 এই ফাইলটি প্রয়োজনীয় বিষয়গুলি কভার করে: ব্যাকরণ, বিরাম চিহ্ন, সাধারণ ত্রুটি, লেখার কৌশল এবং স্পষ্ট যোগাযোগ।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # क्वांटम यांत्रिकी
 क्वांटम यांत्रिकी सबसे छोटे पैमाने पर भौतिकी का सिद्धांत है - परमाणु, इलेक्ट्रॉन, फोटॉन और प्रकृति के मूलभूत कण। यह शास्त्रीय यांत्रिकी की नियतिवादी दुनिया को संभावनाओं, सुपरपोजिशन और उलझाव से बदल देता है। अपनी विपरीत प्रकृति के बावजूद, क्वांटम यांत्रिकी पूरे विज्ञान में सबसे सटीक रूप से परीक्षण किया गया सिद्धांत है। आज, इसके सिद्धांत क्वांटम कंप्यूटर के माध्यम से कंप्यूटिंग के लिए सीधे प्रासंगिक होते जा रहे हैं, जो शास्त्रीय मशीनों की तुलना में कुछ समस्याओं को तेजी से हल करने का वादा करते हैं।
 ---

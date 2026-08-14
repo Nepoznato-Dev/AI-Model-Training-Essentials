@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mustakabali wa Kompyuta
 Mustakabali wa kompyuta unachangiwa na nguvu zinazopinga mawazo ya kimsingi ya miaka 60 iliyopita. Sheria ya Moore - uchunguzi kwamba nguvu ya kompyuta inaongezeka maradufu takriban kila baada ya miaka miwili - inapungua. Usanifu wa von Neumann - CPU tofauti na kumbukumbu - unagonga "ukuta wa kumbukumbu." Quantum computing ahadi ya kutatua matatizo ya kompyuta classical hawezi. Chips za neuromorphic huiga usanifu wa ubongo. Kompyuta ya pembeni husogeza usindikaji mbali na vituo vya data vya kati. Na AI inabadilisha kompyuta ni za nini - kutoka kwa zana zinazotekeleza maagizo hadi mifumo inayojifunza, kutengeneza, na sababu. Kuelewa mabadiliko haya ni muhimu kwa mtu yeyote anayejenga, kununua au kutegemea teknolojia.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mathématiques
 Les mathématiques ne sont pas seulement une matière étudiée à l’école : elles sous-tendent presque tous les domaines techniques. La physique l'utilise pour décrire l'univers. L'informatique l'utilise pour concevoir des algorithmes. L'apprentissage automatique l'utilise pour optimiser les poids. La finance l’utilise pour évaluer le risque. La maîtrise de chaque branche n’est pas nécessaire, mais comprendre le paysage – et savoir où chaque branche s’applique – facilite la compréhension d’autres sujets.
 ---

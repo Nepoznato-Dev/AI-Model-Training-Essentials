@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Stochastic Processes"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into stochastic processes"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Случайные процессы
 **Стохастический процесс** — это совокупность случайных величин, индексированных во времени (или пространстве). В то время как теория вероятностей изучает отдельные случайные события, стохастические процессы изучают, как случайность развивается с течением времени. Они моделируют цены на акции, длину очередей, распространение болезней, генерацию языка и динамику обучения моделей машинного обучения.
 ---

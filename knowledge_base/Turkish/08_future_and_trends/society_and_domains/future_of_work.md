@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # İşin Geleceği
 ## Genel Bakış
 Çalışma şeklimiz Sanayi Devrimi'nden bu yana hiç olmadığı kadar hızlı değişiyor. Uzaktan çalışma, nadir bir ayrıcalıktan bir gecede varsayılana dönüştü. Yapay zeka yenilikten işbirlikçiliğe doğru ilerliyor. Esnek ekonomi, "istihdamın" ne anlama geldiğini bile yeniden şekillendiriyor. Otomasyon her iş için gelmiyor ancak çoğu işteki birçok görev için geliyor. İşte işyerini yeniden şekillendiren güçlere ve bundan sonra ne olacağına bir bakış.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Управление цепочками поставок и операциями
 Управление цепочкой поставок — это координация всех действий, связанных с поиском, закупками, переработкой и логистикой — от сырья до готовой продукции в руках клиента. Управление операциями — это повседневное управление производственными системами. Вместе они определяют, сможет ли компания поставить нужный продукт в нужное время, по правильной цене и с нужным качеством. Пандемия, нехватка чипов и закупорка каналов показали, насколько хрупкими и глобально взаимосвязанными являются цепочки поставок.
 ---

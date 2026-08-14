@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 공연예술
 연극, 영화, 무용, 음악 공연 등 공연 예술은 예술이 관객의 살아있는 존재와 만나는 곳입니다. 벽에 걸린 그림이나 선반 위의 책과는 달리, 퍼포먼스는 실시간으로 펼쳐지며 수천 년 동안 인류 문화의 중심이었던 예술가와 관객 사이의 공유 경험을 만들어냅니다.
 ---

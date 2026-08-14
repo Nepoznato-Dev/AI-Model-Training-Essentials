@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # برنامه ریزی سناریو
 ## بررسی اجمالی
 هیچ کس نمی تواند آینده را پیش بینی کند - اما می توانید برای چندین مورد قابل قبول آماده شوید. برنامه‌ریزی سناریو، که در اتاق‌های فکر جنگ سرد متولد شد و توسط شل در طول بحران‌های نفتی دهه 1970 به کمال رسید، روشی برای تفکر سیستماتیک در مورد عدم اطمینان است. به‌جای شرط‌بندی روی یک پیش‌بینی، داستان‌های منسجمی در مورد اینکه چگونه ممکن است اتفاق بیفتد می‌سازید، سپس تصمیم‌های خود را در برابر همه آنها آزمایش کنید. در اینجا نحوه کار روش، همراه با سناریوها در دامنه های کلیدی آمده است.

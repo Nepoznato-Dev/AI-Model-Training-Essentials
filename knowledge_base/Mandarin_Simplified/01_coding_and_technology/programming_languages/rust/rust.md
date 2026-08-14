@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 铁锈
 Rust 是一种静态类型、编译型编程语言，于 2015 年首次发布，最初由 Mozilla 的 Graydon Hoare 开发。 Rust 的定义承诺是**内存安全，无需垃圾回收**。它通过其所有权系统实现了这一目标——一组在编译时强制执行的规则，消除了所有类型的错误（空指针取消引用、数据竞争、缓冲区溢出、释放后使用），同时生成代码的速度与 C 或 C++ 一样快。
 Rust 连续多年被 Stack Overflow 开发者调查评为“最受欢迎”的编程语言。它越来越多地用于系统编程、WebAssembly、CLI 工具、云基础设施，并在安全关键环境中作为 C/C++ 的替代品。 Linux 内核现在接受 Rust 代码。

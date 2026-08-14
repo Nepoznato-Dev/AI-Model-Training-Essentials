@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ดาราศาสตร์และจักรวาลวิทยา
 ดาราศาสตร์คือการศึกษาวัตถุท้องฟ้า เช่น ดวงดาว ดาวเคราะห์ กาแล็กซี และทุกสิ่งที่อยู่นอกชั้นบรรยากาศของโลก จักรวาลวิทยาคือการศึกษาจักรวาลโดยรวม: ต้นกำเนิด โครงสร้าง วิวัฒนาการ และชะตากรรมขั้นสุดท้าย พวกเขาร่วมกันตอบคำถามพื้นฐานที่สุดบางข้อที่มนุษย์เคยถาม: จักรวาลเริ่มต้นอย่างไร มันใหญ่แค่ไหน? เราอยู่คนเดียวเหรอ? จะเกิดอะไรขึ้นกับมันในที่สุด?
 ---

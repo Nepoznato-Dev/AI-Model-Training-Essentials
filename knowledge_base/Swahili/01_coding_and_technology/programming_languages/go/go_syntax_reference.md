@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nenda - Rejeleo la Sintaksia
 Hati hii inatoa marejeleo ya kina, yaliyopangwa ya kisintaksia ya Go. Inakamilisha marejeleo kuu ya Go kwa kuangazia mifumo kamili ya sintaksia, majedwali ya waendeshaji, na ufundi wa ndani wa goroutines, idhaa na violesura.
 ---

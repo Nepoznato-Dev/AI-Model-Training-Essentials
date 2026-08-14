@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Etika dan Tata Kelola AI
 Sistem AI tidak netral. Mereka mencerminkan data yang menjadi dasar pelatihan mereka, nilai-nilai penciptanya, dan insentif dari organisasi yang menerapkannya. Etika bukan sekedar menanyakan "dapatkah kita membangun ini?" tapi "haruskah kita melakukannya?" Tata kelola adalah tentang menciptakan struktur – undang-undang, standar, badan pengawas – yang memastikan AI dikembangkan dan digunakan secara bertanggung jawab. File ini mencakup dimensi etika utama AI dan kerangka tata kelola yang muncul untuk mengatasinya.
 ---

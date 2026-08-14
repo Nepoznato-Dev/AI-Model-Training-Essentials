@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Inferencia causal
 La inferencia causal es la ciencia que determina si una cosa realmente causa otra, no sólo si están correlacionadas. La correlación te dice que dos variables se mueven juntas. La causalidad te dice que cambiar uno cambiará el otro. Esta distinción es de enorme importancia en medicina (¿este medicamento funciona?), políticas (¿esta intervención reduce la pobreza?), negocios (¿esta campaña publicitaria aumenta las ventas?) y ciencia (¿este mecanismo explica el fenómeno?).
 ---

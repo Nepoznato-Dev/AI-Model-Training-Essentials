@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 데이터 구조 및 알고리즘
 데이터 구조는 데이터를 효율적으로 작업할 수 있도록 메모리에 데이터를 구성하는 방식입니다. 알고리즘은 문제를 해결하기 위한 단계별 절차입니다. 이 둘은 함께 컴퓨터 과학의 기초를 형성합니다. 여러분이 사용해 본 모든 프로그램은 여기에 의존합니다. 올바른 데이터 구조를 선택하면 엄청나게 느린 프로그램을 빠른 프로그램으로 바꿀 수 있고, 올바른 알고리즘을 알면 해결 불가능한 문제를 사소한 문제로 바꿀 수 있습니다.
 ---

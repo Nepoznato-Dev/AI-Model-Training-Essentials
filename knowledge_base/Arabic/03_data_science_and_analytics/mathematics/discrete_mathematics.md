@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الرياضيات المنفصلة
 الرياضيات المنفصلة هي دراسة الهياكل الرياضية التي يمكن عدها أو فصلها بشكل أساسي - على عكس الرياضيات المستمرة (حساب التفاضل والتكامل، التحليل الحقيقي)، التي تتعامل مع كميات سلسة وغير منقطعة. تدعم الرياضيات المنفصلة علوم الكمبيوتر والتشفير وتصميم الخوارزمية وهياكل البيانات. إذا كانت الرياضيات المستمرة تصف العالم المادي، فإن الرياضيات المنفصلة تصف العالم الحسابي.
 ---

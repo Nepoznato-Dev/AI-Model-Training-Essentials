@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 포트란
 Fortran(Formula Translation)은 1957년 IBM이 과학 및 엔지니어링 계산을 위해 처음 개발한, 여전히 널리 사용되는 가장 오래된 고급 프로그래밍 언어입니다. 오랜 세월이 지났음에도 불구하고 최신 Fortran(Fortran 2008/2018/2023)은 수치 기상 예측, 전산 유체 역학, 물리 시뮬레이션, 재무 모델링 및 고성능 컴퓨팅(HPC)에 광범위하게 사용되는 유능한 고성능 언어입니다. 세계에서 가장 빠른 슈퍼컴퓨터 중 상당수는 Fortran 코드를 실행합니다.
 언어는 초기부터 크게 발전했습니다. 최신 Fortran에는 모듈, 파생 유형, 일반 프로시저, 동일 배열(병렬 프로그래밍) 및 C와의 상호 운용성이 있습니다. 성능이 가장 중요한 많은 과학 컴퓨팅 응용 프로그램에서 선택되는 언어로 남아 있습니다.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "System Reliability Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 시스템 안정성 문제
 이 문서에는 메모리 누수, 경쟁 조건, 동시 프로그래밍 오류 및 시스템 설계 오류를 포함한 안정성 문제가 통합되어 있습니다.
 ---

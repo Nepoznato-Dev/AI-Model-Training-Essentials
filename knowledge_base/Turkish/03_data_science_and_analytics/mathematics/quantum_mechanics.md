@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kuantum Mekaniği
 Kuantum mekaniği, atomlar, elektronlar, fotonlar ve doğanın temel parçacıkları gibi en küçük ölçeklerdeki fiziğin teorisidir. Klasik mekaniğin deterministik dünyasının yerine olasılıkları, süperpozisyonları ve dolaşıklığı koyuyor. Mantık dışı doğasına rağmen kuantum mekaniği bilimin tamamında en kesin şekilde test edilmiş teoridir. Günümüzde ilkeleri, belirli sorunları klasik makinelerden katlanarak daha hızlı çözmeyi vaat eden kuantum bilgisayarlar aracılığıyla bilgi işlemle doğrudan ilgili hale geliyor.
 ---

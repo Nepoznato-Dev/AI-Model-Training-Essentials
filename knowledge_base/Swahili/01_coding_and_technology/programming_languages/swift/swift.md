@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mwepesi
 Swift ni lugha ya kisasa, iliyokusanywa ya programu iliyotengenezwa na Apple (inayoongozwa na Chris Lattner) na ilitolewa kwa mara ya kwanza mnamo 2014. Iliundwa kuchukua nafasi ya Objective-C kama lugha ya msingi ya ukuzaji wa jukwaa la Apple (iOS, macOS, watchOS, tvOS, visionOS). Swift inachanganya utendakazi wa lugha zilizokusanywa na uwazi wa lugha za uandishi, na inasisitiza usalama -- hasa kuhusu thamani batili, udhibiti wa kumbukumbu na makosa ya aina.
 Zaidi ya majukwaa ya Apple, Swift inazidi kutumika kwa ukuzaji wa upande wa seva (Mvuke, Hummingbird), utumizi wa majukwaa mtambuka, na hata kujifunza kwa mashine (Apple's Create ML). Kwa kuanzishwa kwa Swift kwenye Seva na usaidizi wa jukwaa-msingi, Swift inakuwa zaidi ya "lugha ya Apple."

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pitone
 Python è un linguaggio di programmazione di alto livello, interpretato e di uso generale creato da Guido van Rossum e rilasciato per la prima volta nel 1991. Dà priorità alla leggibilità del codice attraverso un rientro significativo e una sintassi pulita che si avvicina all'inglese semplice. Python è tipizzato dinamicamente, sottoposto a garbage collection e supporta molteplici paradigmi di programmazione tra cui la programmazione procedurale, orientata agli oggetti e funzionale.
 Oggi Python è il linguaggio dominante nell'intelligenza artificiale/ML, nella scienza dei dati, nell'informatica scientifica e nell'automazione, pur rimanendo uno dei migliori linguaggi per i principianti. Questa doppia identità (abbastanza semplice per un primo script, abbastanza potente per addestrare modelli linguistici di grandi dimensioni) è ciò che lo distingue.

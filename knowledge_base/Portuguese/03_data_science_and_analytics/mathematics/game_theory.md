@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoria dos Jogos
 A teoria dos jogos é a matemática da interação estratégica – situações em que o seu resultado depende não apenas das suas próprias escolhas, mas das escolhas dos outros. Das guerras de preços entre empresas às corridas ao armamento nuclear, dos leilões online à biologia evolutiva, a teoria dos jogos fornece as ferramentas para analisar o conflito e a cooperação. Tornou-se cada vez mais relevante para o aprendizado de máquina por meio do aprendizado por reforço multiagente, redes adversárias generativas (GANs) e design de mecanismos para plataformas online.
 ---

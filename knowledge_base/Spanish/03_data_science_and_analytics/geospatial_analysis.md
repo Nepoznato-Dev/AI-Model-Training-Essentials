@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Análisis geoespacial
 El análisis geoespacial es el proceso de examinar datos que tienen un componente geográfico: coordenadas, direcciones, límites o cualquier dato vinculado a una ubicación en la Tierra. Responde a preguntas como "¿dónde están nuestros clientes?", "¿cuál es la ruta óptima?" y "¿cómo está cambiando el uso del suelo con el tiempo?". Cada conjunto de datos tiene una dimensión espacial y comprenderlo permite obtener conocimientos que el análisis estadístico puro pasa por alto.
 ---

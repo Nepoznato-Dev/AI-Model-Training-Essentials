@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cross-Language Comparison — Concurrency & Parallelism"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # ক্রস-ল্যাঙ্গুয়েজ তুলনা — কনকারেন্সি এবং প্যারালেলিজম
 ## কনকারেন্সি মডেল ওভারভিউ
 | ভাষা | মডেল | কী মেকানিজম | ভাগ করা মেমরি? |

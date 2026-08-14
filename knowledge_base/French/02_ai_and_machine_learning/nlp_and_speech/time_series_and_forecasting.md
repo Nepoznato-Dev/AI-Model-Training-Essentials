@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Séries chronologiques et prévisions
 Les données de séries chronologiques sont toutes les données collectées au fil du temps : cours des actions, relevés de température, trafic sur un site Web, chiffres de ventes, moniteurs de fréquence cardiaque, consommation d'énergie. La prévision signifie prédire les valeurs futures sur la base de modèles passés. Il s’agit de l’une des applications pratiques les plus précieuses de la science des données – et l’une des plus difficiles, car l’avenir est véritablement incertain et les séries chronologiques du monde réel sont pleines de bruit, de saisonnalité et de ruptures structurelles.
 ---

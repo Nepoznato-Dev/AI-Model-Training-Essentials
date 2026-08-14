@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ansible и управление конфигурациями
 Ansible — это безагентный инструмент управления и автоматизации конфигурации. Он использует SSH (или WinRM для Windows) для подключения к серверам и выполнения задач, определенных в сборниках сценариев YAML. В отличие от инструментов, требующих установки агентов на каждом компьютере, Ansible основан на принудительной отправке — вы запускаете команды с узла управления. Он используется для подготовки серверов, развертывания приложений, управления конфигурацией и выполнения специальных задач.
 ---

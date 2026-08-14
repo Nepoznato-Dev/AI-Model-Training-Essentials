@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 시계열 및 예측
 시계열 데이터는 주가, 온도 측정값, 웹사이트 트래픽, 판매 수치, 심박수 모니터, 에너지 소비량 등 시간이 지남에 따라 수집되는 모든 데이터입니다. 예측이란 과거 패턴을 기반으로 미래 가치를 예측하는 것을 의미합니다. 이는 데이터 과학의 가장 실용적으로 가치 있는 응용 프로그램 중 하나이자 가장 어려운 응용 프로그램 중 하나입니다. 미래는 정말 불확실하고 실제 시계열은 노이즈, 계절성 및 구조적 중단으로 가득 차 있기 때문입니다.
 ---

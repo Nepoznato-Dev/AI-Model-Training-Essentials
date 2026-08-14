@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Визуализация данных
 Хорошо спроектированная диаграмма может выявить закономерности, скрытые таблицами чисел. Плохо спроектированный вариант может ввести в заблуждение, запутать или утомить. Визуализация данных — это искусство превращения данных в визуальные истории, которые помогают принимать решения. В этом файле рассказывается о выборе диаграмм, принципах проектирования, типичных ошибках и инструментах, которые делают все это возможным.
 ---

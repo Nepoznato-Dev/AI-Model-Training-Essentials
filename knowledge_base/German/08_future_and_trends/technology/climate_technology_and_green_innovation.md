@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Klimatechnologie und grüne Innovation
 Klimatechnologie umfasst Werkzeuge, Systeme und Innovationen, die darauf abzielen, Treibhausgasemissionen zu reduzieren, sich an den Klimawandel anzupassen und die Weltwirtschaft auf eine nachhaltige Grundlage zu stellen. Es handelt sich wohl um den wichtigsten Technologiebereich des 21. Jahrhunderts – der Unterschied zwischen einer beherrschbaren Erwärmung um 1,5 °C und einer katastrophalen Erwärmung um 3 °C+ hängt weitgehend davon ab, wie schnell diese Technologien in großem Maßstab eingesetzt werden können. Die Herausforderung ist nicht nur wissenschaftlicher, sondern auch wirtschaftlicher, politischer und sozialer Natur.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cloud Architecture
 Ang cloud computing ay pangunahing nagbago kung paano bumuo, mag-deploy, at mag-scale ng software ang mga organisasyon. Sa halip na bumili at magpanatili ng mga pisikal na server, maaari kang magbigay ng mga mapagkukunan ng computing kapag hinihiling, magbayad para sa iyong ginagamit, at mag-scale sa buong mundo sa ilang minuto. Sinasaklaw ng file na ito ang mga pangunahing konsepto, pattern ng arkitektura, serbisyo, at pinakamahuhusay na kagawian na kailangan mong malaman.
 ---

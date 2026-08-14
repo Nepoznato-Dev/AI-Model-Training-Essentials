@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # データ構造とアルゴリズム
 データ構造は、データに対する操作が効率的に行われるようにメモリ内でデータを編成する方法です。アルゴリズムは、問題を解決するための段階的な手順です。これらは一緒になってコンピューター サイエンスの基礎を形成します。これまでに使用したすべてのプログラムはそれらに依存しています。適切なデータ構造を選択すると、信じられないほど遅いプログラムを高速なプログラムに変えることができ、適切なアルゴリズムを知ることで、解決不可能な問題を些細な問題に変えることができます。
 ---

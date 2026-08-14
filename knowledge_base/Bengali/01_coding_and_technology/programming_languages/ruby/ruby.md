@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #রুবি
 রুবি হল একটি গতিশীল, ব্যাখ্যা করা, অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং ভাষা ইউকিহিরো "ম্যাটজ" মাতসুমোটো দ্বারা তৈরি এবং প্রথমবার 1995 সালে জাপানে প্রকাশিত হয়েছিল। রুবি প্রোগ্রামার সুখের উপর ফোকাস দিয়ে ডিজাইন করা হয়েছিল — এর সিনট্যাক্স মার্জিত এবং স্বাভাবিক, প্রায় ইংরেজির মতো পড়া। পূর্ণসংখ্যা এবং বুলিয়ানের মতো আদিম প্রকারগুলি সহ রুবিতে সবকিছুই একটি বস্তু। রুবি রুবি অন রেল ওয়েব ফ্রেমওয়ার্কের জন্য সবচেয়ে বেশি পরিচিত, যা কনফিগারেশন এবং দ্রুত প্রোটোটাইপিংয়ের মাধ্যমে কনভেনশন জনপ্রিয় করে ওয়েব ডেভেলপমেন্টে বিপ্লব ঘটিয়েছে।
 রেলের বাইরে, রুবি স্ক্রিপ্টিং, অটোমেশন, DevOps টুলিং (শেফ, পাপেট) এবং একটি সাধারণ-উদ্দেশ্য ভাষা হিসাবে ব্যবহৃত হয়। এর অভিব্যক্তিপূর্ণ সিনট্যাক্স এবং শক্তিশালী মেটাপ্রোগ্রামিং ক্ষমতা এটি লিখতে আনন্দ দেয়।

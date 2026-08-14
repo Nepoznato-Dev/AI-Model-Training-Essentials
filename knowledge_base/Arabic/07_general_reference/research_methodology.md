@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #منهجية البحث
 منهجية البحث هي المنهج المنهجي لدراسة الأسئلة واختبار الفرضيات وتوليد معرفة موثوقة. سواء كنت تجري تجارب علمية، أو مسوحات للعلوم الاجتماعية، أو تحليل أعمال، أو بحثًا أكاديميًا، فإن المنهجية التي تختارها تحدد ما إذا كانت نتائجك موثوقة وقابلة للتكرار ومفيدة. إن الدراسة المصممة جيدًا تنتج نتائج جديرة بالثقة؛ فالإجابة سيئة التصميم تنتج ضجيجًا - أو ما هو أسوأ من ذلك، إجابات خاطئة واثقة.
 ---

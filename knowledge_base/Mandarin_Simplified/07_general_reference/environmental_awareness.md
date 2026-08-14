@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 环保意识
 环境并不是“外面”的一个单独的东西——它是使其他一切成为可能的系统。你的每一次呼吸、你喝的每一杯水、你吃的每一顿饭都取决于大气成分、水循环、土壤健康和传粉媒介网络。对于知情者来说，了解这些系统如何工作以及它们如何变化并不是可选的。该文件涵盖了环境科学的基础知识、我们面临的挑战以及可持续性在实践中的实际含义。
 ---

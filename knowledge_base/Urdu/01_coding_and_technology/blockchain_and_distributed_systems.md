@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # بلاکچین اور تقسیم شدہ نظام
 بلاکچین ایک مخصوص قسم کا تقسیم شدہ نظام ہے — ایک وکندریقرت، صرف ضمیمہ لیجر جہاں ریکارڈ (بلاکس) کو کرپٹوگرافک ہیش کے ذریعے منسلک کیا جاتا ہے۔ تقسیم شدہ نظام ایک سے زیادہ کمپیوٹرز کو ایک ساتھ کام کرنے کا وسیع میدان ہے۔ دونوں تصورات جدید انفراسٹرکچر کو سمجھنے کے لیے اہم ہیں، کریپٹو کرنسی سے لے کر تقسیم شدہ ڈیٹا بیس تک متفقہ الگورتھم تک جو عالمی خدمات کو تقویت دیتے ہیں۔
 ---

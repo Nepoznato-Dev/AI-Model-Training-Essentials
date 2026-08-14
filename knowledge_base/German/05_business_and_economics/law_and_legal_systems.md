@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Recht und Rechtssysteme
 Recht ist das Regelwerk, das eine Gesellschaft durch ihre Institutionen durchsetzen will. Es ist nicht dasselbe wie Moral – man kann etwas Legales tun, das unmoralisch ist, und etwas Illegales, das moralisch gerechtfertigt ist. Gesetze existieren, um Vorhersehbarkeit zu gewährleisten: um festzulegen, was erlaubt und verboten ist und was passiert, wenn gegen die Regeln verstoßen wird. Ohne sie werden Streitigkeiten durch Macht beigelegt. Damit werden Streitigkeiten prozessual beigelegt.
 Diese Datei behandelt die wichtigsten Rechtssysteme, die wichtigsten Rechtsgebiete und die Konzepte, die die Funktionsweise von Rechtssystemen in der Praxis prägen.

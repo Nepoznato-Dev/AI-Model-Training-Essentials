@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sheria na Mifumo ya Kisheria
 Sheria ni kanuni ambazo jamii inakubali kuzitekeleza kupitia taasisi zake. Sio sawa na maadili - unaweza kufanya kitu halali ambacho ni cha uasherati, na kitu kisicho halali ambacho kinahesabiwa haki. Sheria ipo ili kutoa utabiri: kubainisha kile kinachoruhusiwa, kilichokatazwa, na kile kinachotokea wakati sheria zinavunjwa. Bila hivyo, migogoro inatatuliwa kwa nguvu. Pamoja nayo, migogoro hutatuliwa kwa mchakato.
 Faili hii inashughulikia mifumo mikuu ya kisheria, matawi makuu ya sheria, na dhana zinazounda jinsi mifumo ya kisheria inavyofanya kazi.

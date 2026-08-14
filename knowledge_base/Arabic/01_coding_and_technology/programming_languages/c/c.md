@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ج
 لغة C هي لغة برمجة إجرائية ذات أغراض عامة أنشأها دينيس ريتشي في مختبرات بيل بين عامي 1969 و1973. وقد تم تصميمها لتنفيذ نظام التشغيل يونكس، ولا تزال واحدة من لغات البرمجة الأكثر استخدامًا على نطاق واسع بعد أكثر من 50 عامًا. توفر لغة C وصولاً منخفض المستوى إلى الذاكرة، ومكتبة قياسية بسيطة، وتخطيطًا نظيفًا لتعليمات الآلة - مما يجعلها الأساس الذي بنيت عليه معظم الحوسبة الحديثة.
 C هي اللغة وراء أنظمة التشغيل (Linux وWindows kernel وmacOS)، والأنظمة المدمجة، ومحركات قواعد البيانات (SQLite، وPostgreSQL)، والمترجمين (Python's CPython، وRuby's MRI)، وكل لغات البرمجة الأخرى تقريبًا. إن فهم لغة C هو فهم كيفية عمل أجهزة الكمبيوتر فعليًا.

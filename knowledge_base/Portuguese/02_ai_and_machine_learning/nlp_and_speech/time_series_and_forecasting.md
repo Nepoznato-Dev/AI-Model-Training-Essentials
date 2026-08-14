@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Séries Temporais e Previsão
 Os dados de série temporal são quaisquer dados coletados ao longo do tempo: preços de ações, leituras de temperatura, tráfego do site, números de vendas, monitores de frequência cardíaca, consumo de energia. Previsão significa prever valores futuros com base em padrões passados. É uma das aplicações mais valiosas em termos práticos da ciência de dados — e uma das mais difíceis, porque o futuro é genuinamente incerto e as séries temporais do mundo real estão cheias de ruído, sazonalidade e quebras estruturais.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การเรียนรู้แบบเสริมกำลัง
 การเรียนรู้แบบเสริมกำลัง (RL) เป็นวิธีที่เครื่องจักรเรียนรู้เพื่อสร้างลำดับการตัดสินใจโดยการลองผิดลองถูก ต่างจากการเรียนรู้แบบมีผู้สอนซึ่งมีคำตอบที่ถูกต้องให้กับทุกตัวอย่าง RL ให้สัญญาณรางวัลแก่ตัวแทนเท่านั้น และตัวแทนจะต้องพิจารณาว่าการกระทำใดนำไปสู่ผลลัพธ์ที่ดีที่สุดเมื่อเวลาผ่านไป เป็นแนวทางที่อยู่เบื้องหลัง AlphaGo การควบคุมด้วยหุ่นยนต์ AI ในการเล่นเกม และ RLHF ซึ่งเป็นเทคนิคที่ใช้ในการจัดวางโมเดลภาษาขนาดใหญ่สมัยใหม่ให้สอดคล้องกับความชอบของมนุษย์
 ---

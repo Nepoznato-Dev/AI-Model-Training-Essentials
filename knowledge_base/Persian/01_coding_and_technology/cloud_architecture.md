@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # معماری ابر
 رایانش ابری نحوه ساخت، استقرار و مقیاس‌بندی نرم‌افزار را به طور اساسی تغییر داده است. به جای خرید و نگهداری سرورهای فیزیکی، می‌توانید منابع محاسباتی را در صورت تقاضا تهیه کنید، برای آنچه استفاده می‌کنید بپردازید و در عرض چند دقیقه مقیاس جهانی را انجام دهید. این فایل مفاهیم اصلی، الگوهای معماری، خدمات و بهترین شیوه هایی را که باید بدانید را پوشش می دهد.
 ---

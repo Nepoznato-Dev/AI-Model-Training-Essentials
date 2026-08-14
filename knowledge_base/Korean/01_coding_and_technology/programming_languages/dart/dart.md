@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 다트
 Dart는 Google이 개발한 클라이언트 최적화 프로그래밍 언어로, 2013년에 처음 출시되었습니다. Dart는 처음에는 웹 브라우저의 잠재적인 JavaScript 대체품으로 자리매김했지만 기본 목적은 단일 코드베이스에서 모바일, 웹, 데스크톱 및 임베디드 애플리케이션을 구축하기 위한 Google의 크로스 플랫폼 UI 도구 키트인 **Flutter**의 언어로 나타났습니다.
 Dart는 현대 언어의 최고의 기능을 결합합니다. 객체 지향적이고 선택적인 입력 기능(Dart 3 이후 사운드 null 안전성)이 있으며`async`/ `await`를 사용한 비동기 프로그래밍을 지원하고 네이티브 기계어 코드(모바일/데스크톱용)와 JavaScript(웹용)로 컴파일됩니다.

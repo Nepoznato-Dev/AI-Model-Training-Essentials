@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Blockchain dan Sistem Terdistribusi
 Blockchain adalah jenis sistem terdistribusi yang spesifik — buku besar yang terdesentralisasi dan hanya ditambahkan di mana catatan (blok) dihubungkan dengan hash kriptografi. Sistem terdistribusi adalah bidang yang lebih luas yang membuat banyak komputer bekerja sama menjadi satu. Kedua konsep tersebut penting untuk memahami infrastruktur modern, mulai dari mata uang kripto hingga database terdistribusi hingga algoritma konsensus yang mendukung layanan global.
 ---

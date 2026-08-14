@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pag-optimize at Deployment ng Modelo
 Ang pagsasanay sa isang malaking modelo ng AI ay isang makabuluhang tagumpay, ngunit ang pag-deploy nito nang mahusay ay kung saan ang karamihan sa pagsisikap sa engineering ay kinakailangan. Ang isang modelo na tumatagal ng 10 segundo upang tumugon o nangangailangan ng walong A100 GPU ay hindi praktikal para sa karamihan ng mga real-world na application. Ang pag-optimize ng modelo ay ang proseso ng paggawa ng mga modelo na mas maliit, mas mabilis, at mas cost-effective — habang pinapanatili ang katanggap-tanggap na kalidad. Sinasaklaw ng file na ito ang quantization, pruning, distillation, at ang mga praktikal na tool para sa pag-deploy ng mga modelo sa produksyon.
 ---

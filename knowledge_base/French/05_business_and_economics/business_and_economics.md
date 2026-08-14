@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Affaires et économie
 Toute organisation qui vend un produit ou un service est une entreprise, et toute société qui produit et distribue des biens est une économie. Les concepts de ce fichier s'appliquent que vous dirigiez une entreprise indépendante, que vous travailliez dans une entreprise, que vous essayiez de comprendre l'actualité ou que vous cherchiez simplement à comprendre comment l'argent circule dans le monde.
 ---

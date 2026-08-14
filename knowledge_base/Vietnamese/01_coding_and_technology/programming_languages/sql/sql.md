@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (Ngôn ngữ truy vấn có cấu trúc) là ngôn ngữ dành riêng cho miền được thiết kế để quản lý và truy vấn dữ liệu trong cơ sở dữ liệu quan hệ. Được phát triển lần đầu tiên tại IBM vào những năm 1970 và được tiêu chuẩn hóa vào năm 1987, SQL vẫn là giao diện chính giữa các ứng dụng và dữ liệu của chúng. Mọi Hệ thống quản lý cơ sở dữ liệu quan hệ chính (RDBMS) - PostgreSQL, MySQL, SQL Server, Oracle, SQLite - đều sử dụng SQL làm ngôn ngữ truy vấn.
 SQL không phải là ngôn ngữ lập trình có mục đích chung. Bạn sẽ không viết một ứng dụng web bằng SQL. Nhưng nếu ứng dụng của bạn lưu trữ dữ liệu — và gần như tất cả các ứng dụng đều lưu trữ — thì SQL là ngôn ngữ bạn sử dụng để truy xuất, chuyển đổi và quản lý dữ liệu đó. Nó được cho là kỹ năng kỹ thuật hữu ích nhất sau lập trình chung.

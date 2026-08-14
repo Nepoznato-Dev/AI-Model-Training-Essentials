@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Genetics at Genomics
 Ang genetika ay ang pag-aaral ng pagmamana — kung paano naipapasa ang mga katangian mula sa mga magulang patungo sa mga supling sa pamamagitan ng DNA. Ang genomics ay ang pag-aaral ng buong genome: lahat ng gene, ang mga non-coding na rehiyon, kung paano sila nakikipag-ugnayan, at kung paano sila nag-iiba-iba sa mga indibidwal at populasyon. Ang paglipat mula sa genetics patungo sa genomics ay hinimok ng sequencing technology — nagpunta kami mula sa pag-aaral ng isang gene sa isang pagkakataon sa pagbabasa ng buong genome sa mga oras, pagbuo ng data na nagbabago ng medisina, agrikultura, forensics, at ang aming pag-unawa sa ebolusyon.
 ---

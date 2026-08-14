@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #真實分析
 實分析是微積分的嚴格基礎。雖然入門微積分教您如何計算導數和積分，但真正的分析會問「為什麼」這些技術有效 - 以及它們何時失敗。它提供了極限、連續性、收斂性和積分的精確定義，這些定義支撐著機率論、泛函分析、最佳化以及機器學習演算法背後的理論保證。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL - সিনট্যাক্স রেফারেন্স
 এই নথিটি SQL (PostgreSQL/MySQL/SQLite উপভাষা পার্থক্যের নোট সহ ANSI SQL) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ ক্যোয়ারী প্যাটার্ন, উইন্ডো ফাংশন, CTE, এবং ডাটাবেস ডিজাইনের উপর ফোকাস করে মূল এসকিউএল রেফারেন্সের পরিপূরক।
 ---

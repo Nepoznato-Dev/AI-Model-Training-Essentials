@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lý thuyết âm nhạc và âm học
 Lý thuyết âm nhạc là nghiên cứu về cách hoạt động của âm nhạc - các mô hình, cấu trúc và nguyên tắc tạo nên một số sự kết hợp giữa âm thanh dễ chịu hoặc có ý nghĩa và những âm thanh khác thì bất hòa hoặc hỗn loạn. Âm học là tính chất vật lý của âm thanh - cách các rung động di chuyển trong không khí, cách chúng được tạo ra và cảm nhận. Cùng nhau, họ giải thích lý do tại sao hợp âm C trưởng nghe có vẻ vui vẻ, tại sao phím thứ lại tạo cảm giác buồn, phòng hòa nhạc được thiết kế như thế nào và tại sao bài hát yêu thích lại khiến bạn ớn lạnh.
 ---

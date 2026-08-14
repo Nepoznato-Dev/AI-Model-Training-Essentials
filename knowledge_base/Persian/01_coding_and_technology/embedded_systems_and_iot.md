@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # سیستم های جاسازی شده و اینترنت اشیا
 سیستم‌های تعبیه‌شده رایانه‌هایی هستند که در دستگاه‌های دیگر پنهان شده‌اند - واحد کنترل موتور خودرو، کنترل‌کننده ماشین لباسشویی، میکروکنترلر در یک ترموستات هوشمند. بر خلاف کامپیوترهای همه منظوره، آنها برای کارهای خاصی طراحی شده اند که اغلب با محدودیت های شدید در قدرت، حافظه و سرعت پردازش همراه هستند. اینترنت اشیا (IoT) سیستم های تعبیه شده را با اتصال آنها به شبکه ها گسترش می دهد و امکان نظارت از راه دور، کنترل و جمع آوری داده ها را فراهم می کند. آنها با هم نشان دهنده میلیاردها دستگاه محاسباتی هستند که با دنیای فیزیکی تعامل دارند.
 ---

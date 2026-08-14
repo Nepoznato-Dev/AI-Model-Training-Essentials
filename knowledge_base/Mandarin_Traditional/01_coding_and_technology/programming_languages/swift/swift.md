@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 史威夫特
 Swift 是一種現代編譯型程式語言，由 Apple（由 Chris Lattner 領導）開發，於 2014 年首次發布。它旨在取代 Objective-C，成為 Apple 平台開發（iOS、macOS、watchOS、tvOS、visionOS）的主要語言。 Swift 將編譯語言的效能與腳本語言的表達能力結合在一起，並且強調安全性——特別是在空值、記憶體管理和類型錯誤方面。
 除了 Apple 平台之外，Swift 越來越多地用於伺服器端開發（Vapor、Hummingbird）、跨平台應用程序，甚至是機器學習（Apple 的 Create ML）。隨著 Swift on Server 和跨平台支援的推出，Swift 不再只是一種「Apple 語言」。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Music Theory and Acoustics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to arts/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nadharia ya Muziki na Acoustics
 Nadharia ya muziki ni utafiti wa jinsi muziki unavyofanya kazi - mifumo, miundo, na kanuni zinazofanya baadhi ya michanganyiko ya sauti kufurahisha au kuleta maana na nyingine zisiwe na migogoro au fujo. Acoustics ni fizikia ya sauti - jinsi mitetemo inavyosafiri angani, jinsi inavyotengenezwa na kutambulika. Kwa pamoja, wanaeleza kwa nini chord kuu ya C inasikika ya kufurahisha, kwa nini ufunguo mdogo unahisi huzuni, jinsi kumbi za tamasha zimeundwa, na kwa nini wimbo unaoupenda zaidi hukupa baridi.
 ---

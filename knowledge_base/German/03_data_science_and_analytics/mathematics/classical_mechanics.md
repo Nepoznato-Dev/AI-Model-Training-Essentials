@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Klassische Mechanik
 Die klassische Mechanik beschreibt die Bewegung von Objekten unter dem Einfluss von Kräften. Von fallenden Äpfeln bis hin zu umkreisenden Planeten, von vibrierenden Saiten bis hin zu kollidierenden Teilchen – seine Prinzipien bestimmen die makroskopische Welt. Über ihre physikalischen Anwendungen hinaus brachte die klassische Mechanik die Variationsrechnung, die symplektische Geometrie und das Hamilton-System hervor, das der Quantenmechanik und der modernen Optimierung zugrunde liegt.
 ---

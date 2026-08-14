@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / Object Pascal
 Delphi ist eine objektorientierte Programmiersprache auf Pascal-Basis, die ursprünglich von Borland (später Embarcadero, jetzt Idera) entwickelt wurde. Es wurde erstmals 1995 als „Delphi 1“ veröffentlicht und war für die schnelle Anwendungsentwicklung (RAD) von Windows-Desktopanwendungen konzipiert. Die Sprache ist offiziell als Object Pascal bekannt und die Delphi-IDE bietet einen visuellen Formulardesigner, integrierte Datenbanktools und einen leistungsstarken Compiler.
 Delphi war in den späten 1990er und frühen 2000er Jahren eines der beliebtesten Windows-Entwicklungstools. Obwohl seine Beliebtheit erheblich zurückgegangen ist, verfügt es über eine dedizierte Benutzerbasis, insbesondere in Unternehmens-Desktopanwendungen, Datenbank-Frontends und der Wartung älterer Systeme. Modern Delphi (11/12) unterstützt die plattformübergreifende Entwicklung für Windows, macOS, iOS und Android über das FireMonkey (FMX)-Framework.

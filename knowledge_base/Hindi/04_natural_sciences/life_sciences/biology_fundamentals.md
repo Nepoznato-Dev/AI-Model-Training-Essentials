@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जीवविज्ञान बुनियादी बातें
 जीव विज्ञान जीवन का विज्ञान है। सभी जीवित चीजों में कुछ विशेषताएं होती हैं: वे कोशिकाओं से बनी होती हैं, वे ऊर्जा का उपयोग करती हैं, वे बढ़ती हैं, वे अपने पर्यावरण के प्रति प्रतिक्रिया करती हैं, वे प्रजनन करती हैं और वे विकसित होती हैं। जीवविज्ञान एक कोशिका के अंदर आणविक मशीनरी से लेकर संपूर्ण पारिस्थितिक तंत्र की अंतःक्रिया तक फैला हुआ है, और यह चिकित्सा, कृषि, जैव प्रौद्योगिकी और संरक्षण की नींव है।
 ---

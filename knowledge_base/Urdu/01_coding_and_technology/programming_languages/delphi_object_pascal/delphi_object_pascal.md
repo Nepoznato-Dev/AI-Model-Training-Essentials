@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ڈیلفی / آبجیکٹ پاسکل
 ڈیلفی پاسکل پر مبنی ایک آبجیکٹ پر مبنی پروگرامنگ زبان ہے، جو اصل میں بورلینڈ (بعد میں ایمبارکیڈرو، اب آئیڈیرا) نے تیار کی تھی۔ پہلی بار 1995 میں "Delphi 1" کے نام سے جاری کیا گیا، اسے ونڈوز ڈیسک ٹاپ ایپلی کیشنز کی تیز رفتار ایپلی کیشن ڈویلپمنٹ (RAD) کے لیے ڈیزائن کیا گیا تھا۔ زبان کو رسمی طور پر آبجیکٹ پاسکل کے نام سے جانا جاتا ہے، اور Delphi IDE ایک بصری شکل ڈیزائنر، مربوط ڈیٹا بیس ٹولز، اور ایک طاقتور مرتب فراہم کرتا ہے۔
 ڈیلفی 1990 کی دہائی کے آخر اور 2000 کی دہائی کے اوائل میں ونڈوز کے سب سے مشہور ڈویلپمنٹ ٹولز میں سے ایک تھا۔ اگرچہ اس کی مقبولیت میں نمایاں کمی آئی ہے، یہ ایک وقف صارف بنیاد کو برقرار رکھتا ہے، خاص طور پر انٹرپرائز ڈیسک ٹاپ ایپلی کیشنز، ڈیٹا بیس فرنٹ اینڈز، اور لیگیسی سسٹم مینٹیننس میں۔ Modern Delphi (11/12) FireMonkey (FMX) فریم ورک کے ذریعے Windows، macOS، iOS، اور Android کے لیے کراس پلیٹ فارم کی ترقی کی حمایت کرتا ہے۔

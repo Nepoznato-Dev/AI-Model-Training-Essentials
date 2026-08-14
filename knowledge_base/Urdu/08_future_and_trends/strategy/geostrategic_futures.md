@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جیوسٹریٹیجک فیوچرز
 ## جائزہ
 امریکی تسلط کا سرد جنگ کے بعد کا دور کچھ گڑبڑ کو راستہ دے رہا ہے: ایک کثیر قطبی دنیا جہاں طاقت پھیلی ہوئی ہے، ٹیکنالوجی اور وسائل پر مسابقت تیز ہو رہی ہے، اور موسمیاتی تبدیلی اور وبائی امراض جیسے چیلنجز سرحدوں کا احترام نہیں کرتے۔ 1945 کے بعد بنائے گئے قوانین پر مبنی بین الاقوامی آرڈر کو ہر سمت سے جانچا جا رہا ہے۔ یہ ہے کیا بدل رہا ہے، کون بڑھ رہا ہے، اور رگڑ پوائنٹس کہاں ہیں۔

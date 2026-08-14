@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Médecine et soins de santé
 La médecine est la science et la pratique du diagnostic, du traitement et de la prévention des maladies. Il s’agit de l’une des entreprises humaines les plus anciennes – le serment d’Hippocrate remonte à la Grèce antique – et l’une de celles qui évoluent le plus rapidement. Au cours du siècle dernier seulement, nous sommes passés de l'absence d'antibiotiques à des thérapies géniques capables de réécrire l'ADN d'un patient.
 Ce dossier couvre le fonctionnement de la médecine : les grandes spécialités, la manière dont les maladies sont diagnostiquées et traitées, l'organisation des systèmes de santé et les questions éthiques qui se posent lorsque des vies humaines sont en jeu.

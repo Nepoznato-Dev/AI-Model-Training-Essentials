@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Misingi ya Uandishi na Mawasiliano
 Kuandika na mawasiliano ni ujuzi wa kuwasilisha mawazo kwa ufanisi - iwe kupitia barua pepe, ripoti, nyaraka, mawasilisho, au mazungumzo. Kazi nyingi za maarifa kimsingi ni kazi ya mawasiliano: wataalamu wanahitaji kueleza mawazo yao, kuwashawishi wengine, maamuzi ya hati, kuandika vipimo, matokeo ya sasa, na kushirikiana katika timu zote. Pengo kati ya kile kinachokusudiwa na kinachoeleweka ndipo matatizo mengi yanapoanzia, na mawasiliano bora yanapunguza pengo hilo.
 ---

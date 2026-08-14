@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 음성 및 오디오 처리
 음성 및 오디오 처리에는 기계가 소리를 듣고, 이해하고, 생성하고, 조작할 수 있도록 하는 기술이 포함됩니다. 여기에는 음성 인식(말을 텍스트로 변환), 음성 합성(텍스트를 음성으로 변환), 화자 식별, 음악 생성 및 환경 소리 이해가 포함됩니다. 이 분야는 딥 러닝을 통해 변화되었습니다. 현대 시스템은 음성 인식에 있어 인간 수준의 정확도에 접근하고 이상할 정도로 자연스러운 합성 음성을 생성합니다.
 ---

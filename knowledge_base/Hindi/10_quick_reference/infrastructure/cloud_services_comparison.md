@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # क्लाउड सेवाओं की तुलना
 कंप्यूट, स्टोरेज, डेटाबेस, एआई/एमएल, नेटवर्किंग, मॉनिटरिंग और इंफ्रास्ट्रक्चर-ए-कोड में तीन प्रमुख क्लाउड प्रदाताओं - एडब्ल्यूएस, एज़्योर और गूगल क्लाउड - की एक साथ-साथ तुलना। आर्किटेक्ट्स के लिए यह तय करने के लिए उपयोगी है कि किस प्लेटफ़ॉर्म का उपयोग करना है, या एक क्लाउड से दूसरे क्लाउड पर सेवाओं की मैपिंग करना है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Bisnis dan Ekonomi
 Setiap organisasi yang menjual produk atau jasa adalah bisnis, dan setiap masyarakat yang memproduksi dan mendistribusikan barang adalah perekonomian. Konsep dalam file ini berlaku baik Anda menjalankan operasi lepas, bekerja di perusahaan, mencoba memahami berita, atau sekadar mencari tahu bagaimana uang bergerak di seluruh dunia.
 ---

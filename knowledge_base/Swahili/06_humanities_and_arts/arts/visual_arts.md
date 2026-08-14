@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Sanaa za Visual
 Sanaa inayoonekana ndiyo njia kongwe zaidi ya mawasiliano ya wanadamu - kutoka kwa michoro ya pango la Lascaux hadi usakinishaji dijitali wa leo. Kuelewa vuguvugu za sanaa, wawasiliani na taasisi zinazohifadhi kazi za ubunifu hukupa shukrani ya kina kwa jinsi jamii zimeonyesha uzuri, nguvu, hali ya kiroho na upinzani kwa milenia nzima.
 ---

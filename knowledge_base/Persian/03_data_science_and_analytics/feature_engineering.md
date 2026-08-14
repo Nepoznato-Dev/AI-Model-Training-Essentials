@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # مهندسی ویژگی
 مهندسی ویژگی فرآیند تبدیل داده های خام به نمایش هایی است که مدل های یادگیری ماشین را موثرتر می کند. اغلب به عنوان مهمترین مرحله در خط لوله ML توصیف می شود - ویژگی هایی که به یک مدل می دهید بیشتر از الگوریتمی که انتخاب می کنید اهمیت دارد. یک مدل ساده با ویژگی های خوش ساخت معمولاً از مدل پیچیده با ورودی های خام و پردازش نشده بهتر عمل می کند. هنر در درک هر دو حوزه و داده ها به اندازه کافی برای ایجاد سیگنال هایی است که مدل می تواند از آنها بیاموزد.
 ---

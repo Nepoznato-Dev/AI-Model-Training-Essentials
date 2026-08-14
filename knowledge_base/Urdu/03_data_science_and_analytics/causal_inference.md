@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # وجہ کا اندازہ
 Causal inference اس بات کا تعین کرنے کی سائنس ہے کہ آیا ایک چیز حقیقت میں دوسری چیز کا سبب بنتی ہے - نہ صرف یہ کہ آیا وہ باہم مربوط ہیں۔ ارتباط آپ کو بتاتا ہے کہ دو متغیر ایک ساتھ چلتے ہیں۔ وجہ آپ کو بتاتی ہے کہ ایک کو تبدیل کرنے سے دوسرا بدل جائے گا۔ یہ فرق طب میں بہت اہمیت رکھتا ہے (کیا یہ دوا کام کرتی ہے؟)، پالیسی (کیا یہ مداخلت غربت کو کم کرتی ہے؟)، کاروبار (کیا یہ اشتہاری مہم فروخت میں اضافہ کرتی ہے؟)، اور سائنس (کیا یہ طریقہ کار اس رجحان کی وضاحت کرتا ہے؟)۔
 ---

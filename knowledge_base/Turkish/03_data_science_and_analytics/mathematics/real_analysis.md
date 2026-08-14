@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Gerçek Analiz
 Gerçek analiz, hesabın sağlam temelidir. Giriş seviyesi matematik size türevleri ve integralleri nasıl hesaplayacağınızı öğretirken, gerçek analiz bu tekniklerin *neden* işe yaradığını ve ne zaman başarısız olduklarını sorar. Olasılık teorisini, fonksiyonel analizi, optimizasyonu ve makine öğrenimi algoritmalarının arkasındaki teorik garantileri destekleyen limitlerin, sürekliliğin, yakınsamanın ve entegrasyonun kesin tanımlarını sağlar.
 ---

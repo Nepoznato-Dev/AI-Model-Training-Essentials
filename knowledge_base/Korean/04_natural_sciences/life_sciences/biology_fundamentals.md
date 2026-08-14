@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 생물학 기초
 생물학은 생명의 과학이다. 모든 생명체는 특정한 특징을 공유합니다. 세포로 구성되어 있고, 에너지를 사용하고, 성장하고, 환경에 반응하고, 번식하고, 진화합니다. 생물학은 단일 세포 내부의 분자 기계부터 전체 생태계의 상호 작용까지 포괄하며 의학, 농업, 생명 공학 및 보존의 기초입니다.
 ---

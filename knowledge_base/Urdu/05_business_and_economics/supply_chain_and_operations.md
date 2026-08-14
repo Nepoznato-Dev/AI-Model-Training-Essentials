@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Supply Chain and Operations Management"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سپلائی چین اور آپریشنز مینجمنٹ
 سپلائی چین مینجمنٹ ان تمام سرگرمیوں کا کوآرڈینیشن ہے جو سورسنگ، پروکیورمنٹ، کنورژن، اور لاجسٹکس میں شامل ہیں — خام مال سے لے کر تیار مصنوعات تک گاہک کے ہاتھ میں۔ آپریشنز مینجمنٹ پروڈکشن سسٹم کا روزانہ چل رہا ہے۔ ایک ساتھ، وہ یہ طے کرتے ہیں کہ آیا کوئی کمپنی صحیح پروڈکٹ، صحیح وقت، صحیح قیمت پر، صحیح معیار کے ساتھ فراہم کر سکتی ہے۔ وبائی بیماری، چپس کی قلت، اور نہروں کی رکاوٹوں نے یہ ظاہر کیا ہے کہ سپلائی چینز کتنی نازک اور عالمی سطح پر ایک دوسرے سے جڑی ہوئی ہیں۔
 ---

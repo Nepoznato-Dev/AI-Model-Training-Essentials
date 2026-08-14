@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #プロメテウスとグラファナ
 Prometheus は、信頼性と拡張性を考慮して設計されたオープンソースの監視および警告ツールキットです。 Grafana は、時系列データを視覚化するための主要なオープンソース プラットフォームです。これらは一緒になって、最新のインフラストラクチャとアプリケーション用の最も一般的な監視スタックを形成します。 Prometheus はメトリクスを収集して保存します。 Grafana はそれらをダッシュ​​ボードに表示します。
 ---

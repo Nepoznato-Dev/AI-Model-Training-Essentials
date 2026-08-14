@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # گیم تھیوری اور اسٹریٹجک سوچ
 گیم تھیوری اسٹریٹجک تعاملات کا ریاضیاتی مطالعہ ہے — ایسی صورتحال جہاں آپ کا نتیجہ نہ صرف اس بات پر منحصر ہوتا ہے کہ آپ کیا کرتے ہیں بلکہ دوسرے کیا کرتے ہیں۔ یہ ہر جگہ لاگو ہوتا ہے: کاروباری مقابلہ، بین الاقوامی تعلقات، نیلامی، مذاکرات، ارتقائی حیاتیات، اور روزمرہ کے فیصلے جیسے ٹریفک کے ذریعے راستے کا انتخاب کرنا۔ بنیادی بصیرت یہ ہے کہ اسٹریٹجک حالات میں عقلی اداکار صرف اپنی حکمت عملی کو بہتر نہیں بناتے ہیں - وہ اندازہ لگاتے ہیں کہ دوسرے کیا کریں گے، اور دوسرے وہی کر رہے ہیں۔
 ---

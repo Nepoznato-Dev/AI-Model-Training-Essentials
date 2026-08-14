@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thống kê và xác suất
 Xác suất và thống kê là nền tảng toán học của khoa học dữ liệu, học máy và nghiên cứu khoa học. Xác suất cho bạn biết các sự kiện có thể xảy ra như thế nào; số liệu thống kê cho bạn biết cách rút ra kết luận từ dữ liệu. Cùng nhau, họ biến sự không chắc chắn thành kiến ​​thức có thể định lượng và quản lý được.
 ---

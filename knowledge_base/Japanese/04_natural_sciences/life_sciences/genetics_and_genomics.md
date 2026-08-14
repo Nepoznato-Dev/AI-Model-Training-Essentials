@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 遺伝学とゲノミクス
 遺伝学は遺伝、つまり DNA を通じて形質が親から子にどのように受け継がれるのかを研究するものです。ゲノミクスは、ゲノム全体、つまりすべての遺伝子、非コード領域、それらがどのように相互作用するか、そしてそれらが個人や集団間でどのように変化するかを研究することです。遺伝学からゲノミクスへの移行は、配列決定技術によって推進されました。私たちは、一度に 1 つの遺伝子を研究することから、数時間でゲノム全体を読み取るようになり、医学、農業、法医学、そして進化の理解を変えるデータを生成しました。
 ---

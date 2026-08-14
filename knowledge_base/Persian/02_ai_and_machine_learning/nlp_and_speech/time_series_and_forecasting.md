@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سری زمانی و پیش بینی
 داده های سری زمانی هر داده ای است که در طول زمان جمع آوری می شود: قیمت سهام، خوانش دما، ترافیک وب سایت، ارقام فروش، نمایشگر ضربان قلب، مصرف انرژی. پیش بینی به معنای پیش بینی ارزش های آینده بر اساس الگوهای گذشته است. این یکی از کاربردی‌ترین کاربردهای علم داده و یکی از سخت‌ترین کاربردها است، زیرا آینده واقعاً نامشخص است و سری‌های زمانی دنیای واقعی پر از نویز، فصلی و شکست‌های ساختاری است.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # मल्टीमॉडल एआई
 मल्टीमॉडल एआई सिस्टम कई प्रकार के डेटा - टेक्स्ट, इमेज, ऑडियो, वीडियो और बहुत कुछ - से जानकारी को एक साथ संसाधित और संयोजित करता है। जबकि पहले एआई सिस्टम आम तौर पर सिंगल-मोडेलिटी (केवल टेक्स्ट, केवल छवि) थे, सबसे सक्षम आधुनिक सिस्टम मल्टीमॉडल हैं। GPT-4V छवियों और पाठ को एक साथ पढ़ता है; जेमिनी पाठ, चित्र, ऑडियो और वीडियो को मूल रूप से संसाधित करता है; और सोरा जैसी प्रणालियाँ पाठ विवरण से वीडियो उत्पन्न करती हैं। यह फ़ाइल बताती है कि मल्टीमॉडल एआई कैसे काम करता है, इसके पीछे की वास्तुकला क्या है, और संयोजन के तौर-तरीके इतने शक्तिशाली क्यों हैं।
 ---

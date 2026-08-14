@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 얼랭 & 엘릭서
 Erlang은 1986년 Ericsson이 전화 스위치에 전원을 공급하기 위해 제작했습니다. 이는 Erlang이 다른 어떤 것보다 동시성, 내결함성 및 분산 시스템을 더 잘 처리하는 이유를 설명합니다. Erlang 프로세스는 가볍고 격리되어 있으며 메시지 전달을 통해서만 통신합니다. 프로세스가 충돌하면 감독자가 프로세스를 다시 시작합니다. 이러한 "충돌하자"라는 철학은 다운타임 없이 수년 동안 실행되는 시스템을 생산합니다.
 Elixir는 2012년 Jose Valim이 Erlang의 VM(BEAM)을 기반으로 구축한 최신 언어입니다. 동시성, 내결함성, 배포 등 Erlang이 제공하는 모든 기능을 유지하면서도 친숙한 구문, 메타프로그래밍 및 뛰어난 도구(혼합 패키지 관리자, Hex 패키지 레지스트리)를 추가합니다. Elixir는 웹 애플리케이션(Phoenix 프레임워크를 통해), 실시간 시스템 및 임베디드 장치(Nerves를 통해)에 널리 사용됩니다.

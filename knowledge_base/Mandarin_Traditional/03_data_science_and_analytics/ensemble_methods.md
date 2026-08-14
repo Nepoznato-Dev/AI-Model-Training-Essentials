@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 整合方法
 整合方法結合了多個機器學習模型，可以產生比任何單一模型單獨實現的更好的預測。直覺很簡單：如果您有多個模型，每個模型都有些準確，但會產生不同的錯誤，那麼將它們的預測結合起來將消除單一錯誤並產生更穩健的結果。整合是最具競爭力的機器學習解決方案的背後，並且仍然是生產系統中最可靠的技術之一。
 ---

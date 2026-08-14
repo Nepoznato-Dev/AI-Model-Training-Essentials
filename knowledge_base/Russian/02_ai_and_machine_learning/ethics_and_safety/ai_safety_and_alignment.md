@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Безопасность и выравнивание ИИ
 Безопасность ИИ — это исследование того, как создавать системы ИИ, которые делают то, что мы на самом деле от них хотим, — и не делают того, чего мы не хотим, даже если это не было явно исключено. Согласование — это особая задача, заключающаяся в том, чтобы привести цели и поведение систем ИИ в соответствие с человеческими намерениями. По мере того, как системы искусственного интеллекта становятся более функциональными, эти вопросы переходят от академических курьезов к практическим инженерным требованиям.
 ---

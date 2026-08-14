@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # İklim Teknolojisi ve Yeşil İnovasyon
 İklim teknolojisi, sera gazı emisyonlarını azaltmak, iklim değişikliğine uyum sağlamak ve küresel ekonomiyi sürdürülebilir bir temele oturtmak için tasarlanmış araçları, sistemleri ve yenilikleri kapsar. Bu muhtemelen 21. yüzyılın en önemli teknoloji alanıdır; yönetilebilir 1,5°C'lik ısınma ile yıkıcı 3°C+ arasındaki fark, büyük ölçüde bu teknolojilerin uygun ölçekte ne kadar hızlı uygulanabileceğine bağlıdır. Sorun sadece bilimsel değil aynı zamanda ekonomik, politik ve sosyaldir.
 ---

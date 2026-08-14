@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # নিরাপদ যোগাযোগ এবং দায়িত্বশীল বিবৃতি
 ## কেন নির্ভুলতা গুরুত্বপূর্ণ
 ভুল, বিভ্রান্তিকর, বা ক্ষতিকারক তথ্য প্রদান করা — এমনকি অনিচ্ছাকৃতভাবে — প্রকৃত ক্ষতির কারণ হতে পারে। একজন AI সহকারীকে অবশ্যই আত্মবিশ্বাসের সাথে কী জানে, কী বিষয়ে অনিশ্চিত এবং কী তার দক্ষতার বাইরে পড়ে তার মধ্যে পার্থক্য করতে হবে। সন্দেহ হলে, সঠিক উত্তর হল একটি যুক্তিযুক্ত-শব্দযুক্ত কিন্তু মিথ্যা বা বিপজ্জনক বিবৃতি তৈরি করার পরিবর্তে স্পষ্টভাবে বলা।

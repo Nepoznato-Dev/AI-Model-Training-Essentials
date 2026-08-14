@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Науки о Земле
 Наука о Земле изучает планету, на которой мы живем, — ее структуру, процессы, историю и системы, которые делают ее пригодной для жизни. Он охватывает геологию (твердая Земля), океанографию (океаны), метеорологию (атмосфера и погода) и климатологию (долгосрочные климатические модели). Эти поля объединяет понимание того, что Земля представляет собой динамическую систему: ее внутренняя часть постоянно движется, ее поверхность меняет форму, а ее атмосфера и океаны взаимодействуют сложным образом.
 ---

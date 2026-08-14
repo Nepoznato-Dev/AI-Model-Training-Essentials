@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Kekayaan Intelektual dan Inovasi
 Kekayaan intelektual (KI) mengacu pada kreasi pikiran — penemuan, karya seni, nama merek, desain, rahasia dagang — yang dilindungi undang-undang dari penggunaan yang tidak sah. Inovasi adalah proses mengubah ide menjadi nilai. Undang-undang Kekayaan Intelektual hadir untuk menyeimbangkan dua kepentingan yang saling bersaing: memberi penghargaan kepada pencipta (dengan memberi mereka monopoli sementara) dan memberi manfaat kepada masyarakat (dengan memastikan bahwa pengetahuan pada akhirnya tersedia secara bebas). Memahami IP sangat penting bagi siapa pun yang membuat produk, membuat konten, menjalankan bisnis, atau bekerja dalam penelitian.
 ---

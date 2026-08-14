@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml(Objective Caml)은 프랑스 INRIA에서 개발된 함수형 프로그래밍 언어로, 1996년 처음 출시되었습니다. 함수형 프로그래밍의 표현력과 실용적인 기능을 결합한 것입니다. 즉, 유형 추론(Hindley-Milner)을 갖춘 강력한 유형 시스템, 패턴 일치, 대수 데이터 유형 및 선택적 객체 지향 프로그래밍이 있습니다. OCaml은 빠른 네이티브 코드로 컴파일되며 바이트코드도 지원합니다.
 OCaml의 가장 유명한 실제 애플리케이션은 전체 거래 인프라에 OCaml을 사용하는 **Jane Street** 무역 회사입니다. 또한 컴파일러 개발(Rust 컴파일러는 원래 OCaml로 작성됨), 공식 검증, 금융 시스템 및 정리 증명에도 사용됩니다.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 因果推論
 因果推論は、あることが実際に別のことを引き起こすかどうかを判断する科学であり、単に相関関係があるかどうかだけではありません。相関関係は、2 つの変数が一緒に動くことを示します。因果関係は、一方を変更すると他方も変更されることを示しています。この区別は、医学 (この薬は効果があるか?)、政策 (この介入は貧困を削減するか?)、ビジネス (この広告キャンペーンは売上を増加させるか?)、科学 (このメカニズムは現象を説明できるか?) において非常に重要です。
 ---

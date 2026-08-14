@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Blockchain and Distributed Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ব্লকচেইন এবং ডিস্ট্রিবিউটেড সিস্টেম
 ব্লকচেইন হল একটি নির্দিষ্ট ধরনের বিতরণ করা সিস্টেম — একটি বিকেন্দ্রীকৃত, শুধুমাত্র যোগ করার জন্য খাতা যেখানে রেকর্ড (ব্লক) ক্রিপ্টোগ্রাফিক হ্যাশ দ্বারা লিঙ্ক করা হয়। ডিস্ট্রিবিউটেড সিস্টেম হল একাধিক কম্পিউটারকে একসাথে কাজ করার বিস্তৃত ক্ষেত্র। উভয় ধারণাই আধুনিক অবকাঠামো বোঝার জন্য গুরুত্বপূর্ণ, ক্রিপ্টোকারেন্সি থেকে বিতরণ ডাটাবেস থেকে সর্বসম্মত অ্যালগরিদম যা বিশ্বব্যাপী পরিষেবাগুলিকে শক্তিশালী করে।
 ---

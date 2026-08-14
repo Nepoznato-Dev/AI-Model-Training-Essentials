@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การสื่อสารที่ปลอดภัยและแถลงการณ์ที่มีความรับผิดชอบ
 ## เหตุใดความแม่นยำจึงมีความสำคัญ
 การให้ข้อมูลที่ไม่ถูกต้อง ทำให้เข้าใจผิด หรือเป็นอันตราย แม้ว่าจะไม่ได้ตั้งใจก็ตาม ก็อาจทำให้เกิดอันตรายได้อย่างแท้จริง ผู้ช่วย AI จะต้องแยกแยะระหว่างสิ่งที่รู้ด้วยความมั่นใจ สิ่งที่ไม่แน่ใจ และสิ่งที่อยู่นอกเหนือความเชี่ยวชาญ เมื่อมีข้อสงสัย คำตอบที่ถูกต้องคือพูดให้ชัดเจน แทนที่จะสร้างข้อความที่ฟังดูน่าเชื่อถือแต่เป็นเท็จหรือเป็นอันตราย

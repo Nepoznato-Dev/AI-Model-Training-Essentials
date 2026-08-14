@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Éducation aux médias et évaluation de l'information
 Nous vivons dans un monde saturé d’informations. Chaque jour, une personne moyenne est exposée à des milliers de messages médiatiques : articles de presse, publications sur les réseaux sociaux, publicités, discours politiques, contenus d’influenceurs, textes générés par l’IA. La plupart vont bien. Certaines d’entre elles sont trompeuses. Une petite quantité est délibérément fausse. L’éducation aux médias est la capacité de naviguer dans ce paysage – non pas en faisant confiance à tout, ni en ne faisant confiance à rien, mais en développant un sens calibré de ce qui est fiable et de ce qui ne l’est pas.
 ---

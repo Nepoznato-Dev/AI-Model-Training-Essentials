@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uboreshaji
 Uboreshaji ni hisabati ya kupata suluhisho bora kutoka kwa seti ya masuluhisho yanayowezekana. Inauliza: ikipewa kazi na vizuizi, ni pembejeo gani hupunguza (au kuongeza) pato? Uboreshaji ni injini ya kujifunza kwa mashine - kufunza modeli kunamaanisha kupunguza utendaji wa upotezaji. Inaonekana katika utafiti wa uendeshaji, uchumi, muundo wa uhandisi, na karibu kila nyanja ya kiasi.
 ---

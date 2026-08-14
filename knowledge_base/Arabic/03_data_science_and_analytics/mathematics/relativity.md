@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # النسبية
 لقد أحدثت نظريات أينشتاين النسبية ثورة في فهمنا للمكان والزمان والجاذبية. أظهرت **النسبية الخاصة** (1905) أن المكان والزمان ليسا منفصلين ولكنهما منسوجان في نسيج واحد يسمى الزمكان، وأن سرعة الضوء هي نفسها بالنسبة لجميع المراقبين. **النسبية العامة** (1915) أعادت تصور الجاذبية ليس كقوة ولكن كانحناء الزمكان الناجم عن الكتلة والطاقة. تدعم هذه النظريات الملاحة عبر نظام تحديد المواقع العالمي (GPS)، ومسرعات الجسيمات، وفهمنا للثقوب السوداء وتطور الكون.
 ---

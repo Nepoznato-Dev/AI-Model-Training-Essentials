@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Etyka danych i prywatność
 Etyka danych to nauka o tym, jak gromadzenie, analiza i wdrażanie danych wpływa na prawa, autonomię i dobrostan ludzi. Prywatność to specyficzna kwestia dotycząca tego, kto kontroluje dane osobowe i sposób ich udostępniania. Tematy te przeniosły się z debat akademickich na wiadomości na pierwszych stronach gazet – egzekwowanie RODO, naruszenia danych dotykające miliardy użytkowników oraz rosnąca świadomość społeczna, że ​​praktyki firm technologicznych w zakresie danych mają realne konsekwencje dla demokracji, równości i wolności jednostki.
 ---

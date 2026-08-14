@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP (Hypertext Preprocessor) ni lugha ya uandishi ya upande wa seva iliyoundwa na Rasmus Lerdorf mwaka wa 1994 na iliyotolewa kwa mara ya kwanza mwaka wa 1995. Hapo awali iliundwa kwa ajili ya kuzalisha kurasa zinazobadilika za wavuti, PHP imebadilika na kuwa lugha kamili ya madhumuni ya jumla. Inasimamia takriban 75% ya tovuti zote zilizo na lugha inayojulikana ya upande wa seva, ikijumuisha WordPress, Facebook (asili), Wikipedia, Slack, na mamilioni ya tovuti zingine.
 PHP ya kisasa (8.x) ni lugha tofauti sana na PHP ya miaka ya mapema ya 2000. Sasa ina sifa za kuchapisha, misemo ya kulinganisha, enum, nyuzi, madarasa ya kusoma pekee, na mfumo thabiti wa aina. Licha ya sifa yake kati ya watengenezaji (mara nyingi hukosolewa kwa kutofautiana), PHP ni ya vitendo, inatumiwa sana, na inaendelea kuboresha.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ঔষধ এবং স্বাস্থ্যসেবা
 মেডিসিন হল রোগ নির্ণয়, চিকিত্সা এবং প্রতিরোধের বিজ্ঞান এবং অনুশীলন। এটি প্রাচীনতম মানব প্রচেষ্টার মধ্যে একটি - হিপোক্র্যাটিক শপথ প্রাচীন গ্রীসে ফিরে এসেছে - এবং সবচেয়ে দ্রুত পরিবর্তনশীলগুলির মধ্যে একটি৷ শুধুমাত্র গত শতাব্দীতে, আমরা কোনো অ্যান্টিবায়োটিক না থাকা থেকে জিন থেরাপিতে গিয়েছিলাম যা রোগীর ডিএনএ পুনর্লিখন করতে পারে।
 এই ফাইলটি কীভাবে ওষুধ কাজ করে তা কভার করে: প্রধান বিশেষত্ব, কীভাবে রোগ নির্ণয় এবং চিকিত্সা করা হয়, কীভাবে স্বাস্থ্যসেবা ব্যবস্থা সংগঠিত হয় এবং মানুষের জীবন ঝুঁকির মধ্যে থাকলে যে নৈতিক প্রশ্নগুলি উদ্ভূত হয়।

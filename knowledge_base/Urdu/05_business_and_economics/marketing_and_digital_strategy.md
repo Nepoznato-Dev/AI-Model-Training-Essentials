@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مارکیٹنگ اور ڈیجیٹل حکمت عملی
 مارکیٹنگ یہ ہے کہ کس طرح کاروبار تخلیق کرتے ہیں، بات چیت کرتے ہیں اور گاہکوں کو قدر فراہم کرتے ہیں۔ اس میں گاہک کی ضروریات کو سمجھنے، ان ضروریات کو پورا کرنے کے لیے ایک پروڈکٹ کی پوزیشننگ، اور ایسے تعلقات استوار کرنے کا پورا نظام شامل ہے جو خریداروں کو وکالت میں تبدیل کرتے ہیں۔ ڈیجیٹل انقلاب نے ٹولز، چینلز اور مارکیٹنگ کی رفتار کو تبدیل کر دیا ہے، جبکہ بنیادی باتیں مستقل رہتی ہیں۔
 ---

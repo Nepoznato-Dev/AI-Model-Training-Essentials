@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Квантовая механика
 Квантовая механика — это теория физики в мельчайших масштабах — атомах, электронах, фотонах и фундаментальных частицах природы. Он заменяет детерминированный мир классической механики вероятностями, суперпозициями и запутанностью. Несмотря на свою противоречивую природу, квантовая механика является наиболее точно проверенной теорией во всей науке. Сегодня его принципы становятся непосредственно актуальными для вычислений с помощью квантовых компьютеров, которые обещают решать определенные проблемы экспоненциально быстрее, чем классические машины.
 ---

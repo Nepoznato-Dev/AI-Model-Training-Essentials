@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Prometeo e Grafana
 Prometheus è un toolkit di monitoraggio e avviso open source progettato per affidabilità e scalabilità. Grafana è la principale piattaforma open source per la visualizzazione di dati di serie temporali. Insieme, costituiscono lo stack di monitoraggio più popolare per infrastrutture e applicazioni moderne. Prometheus raccoglie e archivia le metriche; Grafana li visualizza nelle dashboard.
 ---

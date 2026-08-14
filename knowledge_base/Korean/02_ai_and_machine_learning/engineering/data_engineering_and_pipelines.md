@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 데이터 엔지니어링 및 파이프라인
 데이터 엔지니어링은 대규모로 데이터를 이동, 변환, 저장하는 시스템을 구축하는 분야입니다. 신뢰할 수 있는 데이터 파이프라인이 없으면 기계 학습 모델을 훈련할 수 없고 대시보드에 오래된 숫자가 표시되며 비즈니스 결정은 추측에 기반합니다. 이 파일은 작동하는 데이터 인프라를 구축하기 위한 아키텍처, 도구 및 사례를 다루고 있습니다.
 ---

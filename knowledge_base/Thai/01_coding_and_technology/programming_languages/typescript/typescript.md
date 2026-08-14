@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #พิมพ์สคริปต์
 TypeScript เป็นชุด JavaScript ที่พิมพ์แบบคงที่ซึ่งพัฒนาโดย Microsoft (นำโดย Anders Hejlsberg) และเปิดตัวครั้งแรกในปี 2012 โดยจะเพิ่มคำอธิบายประกอบประเภทเพิ่มเติม อินเทอร์เฟซ ข้อมูลทั่วไป และคุณสมบัติระบบประเภทขั้นสูงให้กับ JavaScript จากนั้นคอมไพล์ลงไปเป็น JavaScript ธรรมดาที่ทำงานได้ทุกที่ที่ JavaScript รัน TypeScript ไม่ใช่ภาษาหรือรันไทม์แยกต่างหาก มันเป็น JavaScript พร้อมตัวตรวจสอบประเภท
 TypeScript ได้กลายเป็นมาตรฐานสำหรับการพัฒนา JavaScript ขนาดใหญ่ React, Angular, VS Code, Deno และโปรเจ็กต์ JavaScript โอเพ่นซอร์สหลักๆ ส่วนใหญ่เขียนด้วย TypeScript หากคุณกำลังเริ่มโปรเจ็กต์ JavaScript ใหม่ที่มีขนาดสำคัญใดๆ TypeScript จะเป็นค่าเริ่มต้นที่แนะนำ

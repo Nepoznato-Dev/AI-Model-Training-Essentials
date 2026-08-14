@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # دسترسی و طراحی فراگیر
 دسترس‌پذیری (اغلب به اختصار a11y) عملی است که نرم‌افزار را برای همه قابل استفاده می‌کند - از جمله افراد دارای ناتوانی‌های بینایی، شنوایی، حرکتی، شناختی و عصبی. این یک الزام قانونی در بسیاری از حوزه های قضایی و یک روش استاندارد مهندسی است. نرم افزار در دسترس نرم افزار بهتری برای همه است، زیرا تصمیمات طراحی که از کاربران ناتوان پشتیبانی می کند - ساختار واضح، پیمایش صفحه کلید، کنتراست کافی، متن خوانا - تجربه را برای همه کاربران بهبود می بخشد.
 ---

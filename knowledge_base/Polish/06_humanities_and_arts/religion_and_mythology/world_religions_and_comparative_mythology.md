@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Religie świata i mitologia porównawcza
 Religie świata to główne systemy wierzeń, praktyk i społeczności, które od tysięcy lat kształtują cywilizację ludzką. Mitologia porównawcza bada historie opowiadane przez różne kultury na temat stworzenia, bohaterów, bogów i sensu istnienia – a także uderzające wzorce, które powtarzają się w tradycjach oddzielonych tysiącami mil i tysiącleciami. Zrozumienie obu jest niezbędne do zrozumienia, dlaczego ludzie wierzą w to, w co wierzą, czym różnią się kultury i co łączy ludzkie doświadczenia.
 ---

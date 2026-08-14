@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ডেটা নৈতিকতা এবং গোপনীয়তা
 ডেটা নৈতিকতা হল কীভাবে ডেটা সংগ্রহ, বিশ্লেষণ এবং স্থাপনা মানুষের অধিকার, স্বায়ত্তশাসন এবং সুস্থতাকে প্রভাবিত করে তার অধ্যয়ন। ব্যক্তিগত তথ্য কে নিয়ন্ত্রণ করে এবং কীভাবে এটি ভাগ করা হয় সে সম্পর্কে গোপনীয়তা হল নির্দিষ্ট উদ্বেগ। এই বিষয়গুলি একাডেমিক বিতর্ক থেকে প্রথম পৃষ্ঠার খবরে চলে গেছে — জিডিপিআর প্রয়োগ, কোটি কোটি ব্যবহারকারীকে প্রভাবিত করে ডেটা লঙ্ঘন, এবং ক্রমবর্ধমান জনসচেতনতা যে প্রযুক্তি সংস্থাগুলির ডেটা অনুশীলন গণতন্ত্র, সমতা এবং ব্যক্তি স্বাধীনতার জন্য সত্যিকারের পরিণতি করে৷
 ---

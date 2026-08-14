@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # روش های مدیریت و پروژه
 مدیریت افراد و پروژه ها از جمله مسئولیت های مهم در هر سازمانی است. مهارت های فنی ورود را فراهم می کند، اما توانایی رهبری تیم ها، تصمیم گیری، برقراری ارتباط موثر و ارائه نتایج تعیین می کند که آیا اهداف به دست می آیند یا خیر. این فایل چارچوب ها، متدولوژی ها و مهارت های عملی را پوشش می دهد که مدیران موثر و رهبران پروژه از آنها استفاده می کنند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Visual Basic — Những lỗi thường gặp & mẫu phản đối
 Tài liệu này liệt kê các lỗi, bẫy và phản mẫu phổ biến nhất trong Visual Basic (VB.NET) kèm theo các bản sửa lỗi.
 ---

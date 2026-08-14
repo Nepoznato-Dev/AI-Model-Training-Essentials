@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optics and Waves
 
 Waves are everywhere: sound, light, water, radio signals, quantum probability amplitudes, stock market fluctuations, and the vibrations of neural network activations. Optics — the study of light — is the most well-developed wave science, and its mathematical tools (Fourier analysis, interference, diffraction) apply to every wave phenomenon. Understanding waves is essential for signal processing, image analysis, communications, and the physical layer of all modern technology.

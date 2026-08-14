@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #روانشناسی و رفتار انسانی
 روانشناسی علم این است که چگونه و چرا مردم به شیوه ای که انجام می دهند فکر می کنند، احساس می کنند و عمل می کنند. ذهن خوانی نیست، و عقل سلیم نیست - هرچند گاهی آنچه را عقل سلیم پیشنهاد می کند تأیید می کند و گاهی کاملاً با آن در تضاد است. روانشناسی از روش علمی مشابه هر علم دیگری استفاده می کند: مشاهده، فرضیه، آزمایش، تجدید نظر. چیزی که آن را چالش برانگیز می کند این است که موضوع آن – ذهن انسان – پیچیده ترین شیئی است که ما می شناسیم.
 این فایل حوزه‌های اصلی روان‌شناسی را پوشش می‌دهد: چگونه فکر می‌کنیم، چگونه رشد می‌کنیم، چگونه تحت تأثیر دیگران قرار می‌گیریم، چه چیزی اشتباه می‌کند، و چه کاری می‌توان در مورد آن انجام داد.

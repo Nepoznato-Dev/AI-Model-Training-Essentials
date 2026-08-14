@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #เอสแอลแอล
 SQL (Structured Query Language) เป็นภาษาเฉพาะโดเมนที่ออกแบบมาเพื่อการจัดการและการสืบค้นข้อมูลในฐานข้อมูลเชิงสัมพันธ์ พัฒนาขึ้นครั้งแรกที่ IBM ในปี 1970 และได้รับมาตรฐานในปี 1987 SQL ยังคงเป็นอินเทอร์เฟซหลักระหว่างแอปพลิเคชันและข้อมูล ระบบจัดการฐานข้อมูลเชิงสัมพันธ์หลักทุกระบบ (RDBMS) — PostgreSQL, MySQL, SQL Server, Oracle, SQLite — ใช้ SQL เป็นภาษาในการสืบค้น
 SQL ไม่ใช่ภาษาโปรแกรมทั่วไป คุณจะไม่เขียนเว็บแอปพลิเคชันใน SQL แต่ถ้าแอปพลิเคชันของคุณจัดเก็บข้อมูล และแอปพลิเคชันเกือบทั้งหมดเก็บข้อมูลไว้ SQL ก็เป็นภาษาที่คุณใช้เพื่อดึงข้อมูล แปลง และจัดการข้อมูลนั้น ถือเป็นทักษะทางเทคนิคที่มีประโยชน์ในระดับสากลมากที่สุดหลังจากการเขียนโปรแกรมทั่วไป

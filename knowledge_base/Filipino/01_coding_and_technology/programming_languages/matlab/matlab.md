@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB
 Ang MATLAB (Matrix Laboratory) ay isang mataas na antas, binibigyang kahulugan na programming language at environment na idinisenyo para sa numerical computing, matrix operations, at engineering/scientific applications. Binuo ng MathWorks at unang inilabas noong 1984, ang MATLAB ay ang karaniwang tool sa maraming disiplina sa engineering — electrical engineering, control system, signal processing, image processing, at komunikasyon.
 Pinagsasama ng MATLAB ang isang malakas na matrix-oriented na wika na may malawak na mga toolbox (mga add-on na pakete) at ang Simulink visual simulation environment. Ito ay malawakang ginagamit sa akademya at industriya para sa prototyping algorithm bago ipatupad ang mga ito sa production code.

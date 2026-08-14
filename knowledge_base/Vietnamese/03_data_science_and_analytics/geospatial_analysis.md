@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Phân tích không gian địa lý
 Phân tích không gian địa lý là quá trình kiểm tra dữ liệu có thành phần địa lý - tọa độ, địa chỉ, ranh giới hoặc bất kỳ dữ liệu nào gắn liền với một vị trí trên Trái đất. Nó trả lời các câu hỏi như "khách hàng của chúng tôi ở đâu?", "lộ trình tối ưu là gì?" và "việc sử dụng đất thay đổi như thế nào theo thời gian?". Mỗi tập dữ liệu đều có một chiều không gian và việc hiểu nó sẽ mở ra những hiểu biết sâu sắc mà phân tích thống kê thuần túy bỏ lỡ.
 ---

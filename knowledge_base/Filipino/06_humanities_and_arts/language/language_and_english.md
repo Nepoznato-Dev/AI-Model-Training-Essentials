@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wika at Ingles
 May humigit-kumulang 7,000 wika ang ginagamit sa mundo ngayon. Ang Ingles ang pinakamalawak na sinasalita bilang pangalawang wika at nagsisilbing default para sa internasyonal na negosyo, agham, abyasyon, at internet. Kung ang pagsusulat ng dokumentasyon ng code, pagbabasa ng mga papeles sa pananaliksik, o pakikipag-usap sa iba't ibang hangganan, ang isang matatag na utos ng Ingles — grammar, bokabularyo, at retorika — ay isa sa mga pinakapraktikal na kasanayang mapapaunlad ng isang tao.
 Sinasaklaw ng file na ito ang mga mahahalaga: grammar, bantas, karaniwang mga pitfalls, diskarte sa pagsulat, at malinaw na komunikasyon.

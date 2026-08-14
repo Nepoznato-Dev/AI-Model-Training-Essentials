@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API ডিজাইন এবং ইন্টিগ্রেশন ব্যর্থতা
 APIs (অ্যাপ্লিকেশন প্রোগ্রামিং ইন্টারফেস) হল আধুনিক সফ্টওয়্যারের সংযোগকারী টিস্যু — তারা পরিষেবাগুলিকে যোগাযোগ করতে দেয়, তৃতীয় পক্ষকে একীভূত করতে দেয় এবং দলগুলিকে স্বাধীনভাবে কাজ করতে দেয়। যখন এপিআই ডিজাইন ভুল হয়ে যায়, তখন এর উপর নির্ভরশীল প্রতিটি সিস্টেম জুড়ে এর পরিণতি ছড়িয়ে পড়ে: ভাঙা ইন্টিগ্রেশন, নিরাপত্তা দুর্বলতা, বিকাশকারীর হতাশা এবং ব্যয়বহুল পুনর্লিখন। ইন্টিগ্রেশন ব্যর্থতা - যেখানে সিস্টেমগুলি নির্ভরযোগ্যভাবে যোগাযোগ করতে পারে না - উত্পাদন ঘটনার সবচেয়ে সাধারণ উত্সগুলির মধ্যে একটি।
 ---

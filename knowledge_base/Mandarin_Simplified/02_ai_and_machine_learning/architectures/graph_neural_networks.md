@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 图神经网络
 图神经网络 (GNN) 是设计用于操作图结构数据的神经网络，即通过边连接的节点网络。传统神经网络在网格（图像）或序列（文本）上工作，而 GNN 可以处理任意关系结构：社交网络、分子图、知识图、道路网络、推荐图等。它们对于药物发现、欺诈检测、推荐系统以及实体之间的关系很重要的任何领域都至关重要。
 ---

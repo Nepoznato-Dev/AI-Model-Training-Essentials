@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ансамблевые методы
 Ансамблевые методы объединяют несколько моделей машинного обучения для получения более точных прогнозов, чем любая отдельная модель. Интуиция проста: если у вас есть несколько моделей, каждая из которых в некоторой степени точна, но допускает разные ошибки, объединение их прогнозов компенсирует отдельные ошибки и дает более надежный результат. Ансамбли лежат в основе большинства конкурентоспособных решений машинного обучения и остаются одними из самых надежных методов в производственных системах.
 ---

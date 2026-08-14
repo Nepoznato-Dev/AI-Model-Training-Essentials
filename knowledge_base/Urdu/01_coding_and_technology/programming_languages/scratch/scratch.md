@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سکریچ
 سکریچ ایک بصری، بلاک پر مبنی پروگرامنگ لینگویج ہے جسے MIT میڈیا لیب نے تیار کیا تھا اور اسے پہلی بار 2007 میں ریلیز کیا گیا تھا۔ متن پر مبنی کوڈ لکھنے کے بجائے، صارف پروگرام بنانے کے لیے رنگین بلاکس کو اکٹھا کرتے ہیں۔ سکریچ خاص طور پر 8-16 سال کی عمر کے بچوں کے لیے ڈیزائن کیا گیا ہے (حالانکہ ہر عمر کے سیکھنے والے اسے استعمال کرتے ہیں) بنیادی پروگرامنگ کے تصورات — لوپس، کنڈیشنلز، متغیرات، ایونٹس اور فنکشنز — بغیر نحوی غلطیوں کی رکاوٹ کے۔
 سکریچ دنیا میں سب سے زیادہ استعمال ہونے والی تعارفی پروگرامنگ زبان ہے، جس میں 100 ملین سے زیادہ رجسٹرڈ صارفین اور 70+ زبانوں میں دستیابی ہے۔ یہ ایک ویب براؤزر میں چلتا ہے اور مفت ہے۔

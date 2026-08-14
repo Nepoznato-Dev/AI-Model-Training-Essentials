@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ماحولیاتی سائنس اور پائیداری
 ماحولیاتی سائنس طبیعیات، کیمسٹری، حیاتیات، ارضیات اور معاشیات کے طریقوں کو اس سوال پر لاگو کرتی ہے: "ہمارے سیارے پر کیا ہو رہا ہے، اور اس کے بارے میں کیا کیا جا سکتا ہے؟" یہ ایک بین الضابطہ میدان ہے — متعدد شعبوں کا ہم آہنگ — جو اس کی تجزیاتی گہرائی اور اس کی پالیسی کی مطابقت دونوں میں حصہ ڈالتا ہے۔
 ماحولیاتی سائنس میں بنیادی تناؤ یہ ہے: انسانی تہذیب کا انحصار ماحول سے وسائل نکالنے پر ہے، لیکن ان وسائل کو نکالنا ماحول کو اس طرح تبدیل کرتا ہے جو ان نظاموں کو کمزور کر سکتا ہے جن پر ہم انحصار کرتے ہیں۔ اس فیڈ بیک لوپ کو سمجھنا مختصر طور پر پورا فیلڈ ہے۔

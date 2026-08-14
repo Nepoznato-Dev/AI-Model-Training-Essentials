@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 刮痕
 Scratch 是一種基於區塊的視覺化程式語言，由麻省理工學院媒體實驗室開發，於 2007 年首次發布。使用者無需編寫基於文字的程式碼，而是將彩色區塊組合在一起來創建程式。 Scratch 專為 8-16 歲的兒童設計（儘管所有年齡層的學習者都使用它），用於教授基本程式設計概念（循環、條件、變數、事件和函數），而不會出現語法錯誤。
 Scratch 是世界上使用最廣泛的入門程式語言，擁有超過 1 億註冊用戶，並提供 70 多種語言版本。它在網絡瀏覽器中運行並且免費。

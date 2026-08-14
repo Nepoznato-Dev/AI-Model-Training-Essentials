@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "MATLAB"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # MATLAB
 MATLAB（矩阵实验室）是一种高级解释性编程语言和环境，专为数值计算、矩阵运算和工程/科学应用而设计。 MATLAB 由 MathWorks 开发并于 1984 年首次发布，是许多工程学科（电气工程、控制系统、信号处理、图像处理和通信）的标准工具。
 MATLAB 将强大的面向矩阵的语言与丰富的工具箱（附加包）和 Simulink 可视化仿真环境相结合。它在学术界和工业界广泛用于在生产代码中实现算法之前对算法进行原型设计。

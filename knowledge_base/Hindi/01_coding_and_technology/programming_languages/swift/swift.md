@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # स्विफ्ट
 स्विफ्ट एक आधुनिक, संकलित प्रोग्रामिंग भाषा है जिसे Apple द्वारा विकसित किया गया है (क्रिस लैटनर के नेतृत्व में) और पहली बार 2014 में जारी किया गया था। इसे Apple प्लेटफ़ॉर्म डेवलपमेंट (iOS, macOS, watchOS, tvOS, VisionOS) के लिए प्राथमिक भाषा के रूप में ऑब्जेक्टिव-सी को बदलने के लिए डिज़ाइन किया गया था। स्विफ्ट संकलित भाषाओं के प्रदर्शन को स्क्रिप्टिंग भाषाओं की अभिव्यक्ति के साथ जोड़ती है, और यह सुरक्षा पर जोर देती है - विशेष रूप से शून्य मानों, मेमोरी प्रबंधन और प्रकार की त्रुटियों के आसपास।
 Apple प्लेटफ़ॉर्म से परे, स्विफ्ट का उपयोग सर्वर-साइड डेवलपमेंट (वेपर, हमिंगबर्ड), क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन और यहां तक ​​कि मशीन लर्निंग (Apple's Create ML) के लिए भी तेजी से किया जा रहा है। सर्वर पर स्विफ्ट की शुरूआत और क्रॉस-प्लेटफॉर्म समर्थन के साथ, स्विफ्ट सिर्फ एक "एप्पल भाषा" से कहीं अधिक बनती जा रही है।

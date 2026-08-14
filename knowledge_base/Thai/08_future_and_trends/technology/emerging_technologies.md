@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #เทคโนโลยีเกิดใหม่
 ## ภาพรวม
 เทคโนโลยีบางอย่างสร้างความสามารถประเภทใหม่ทั้งหมด แทนที่จะปรับปรุงความสามารถที่มีอยู่ทีละน้อย การประมวลผลแบบควอนตัมมีจุดมุ่งหมายเพื่อแก้ไขปัญหาที่อาจต้องใช้เวลานับพันปีสำหรับเครื่องจักรแบบคลาสสิก พลังงานฟิวชั่นนำเสนอความเป็นไปได้ของพลังงานสะอาดที่ไร้ขีดจำกัด ส่วนต่อประสานระหว่างสมองและคอมพิวเตอร์เชื่อมโยงจิตใจและเครื่องจักร ชีววิทยาสังเคราะห์ช่วยให้สามารถเขียนรหัสทางชีววิทยาใหม่ได้ ส่วนต่อไปนี้จะอธิบายว่าแต่ละพรมแดนเหล่านี้ยืนอยู่ ณ จุดใดในปัจจุบัน และแนวโน้มปัจจุบันบ่งชี้ว่าพรมแดนกำลังมุ่งหน้าไปที่ใด

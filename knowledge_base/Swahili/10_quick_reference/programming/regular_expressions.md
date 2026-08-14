@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to programming/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Maneno ya Kawaida Karatasi ya Kudanganya
 Semi za kawaida (regex) ni muundo wa maandishi yanayolingana. Zinatumika kila mahali - tafuta na ubadilishe, uthibitishaji wa ingizo, uchanganuzi wa kumbukumbu, uchimbaji wa data, na zaidi. Hii ni kumbukumbu ya vitendo, sio kitabu cha kiada.
 ---

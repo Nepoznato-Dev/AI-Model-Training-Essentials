@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Science des données et analyse
 La science des données est la discipline qui consiste à transformer des données brutes en informations exploitables. Il se situe à l’intersection des statistiques, de l’informatique et de l’expertise du domaine – et il est devenu essentiel dans tous les secteurs, de la finance à la santé. Ce fichier présente les concepts, outils et flux de travail de base que tout praticien devrait connaître.
 ---

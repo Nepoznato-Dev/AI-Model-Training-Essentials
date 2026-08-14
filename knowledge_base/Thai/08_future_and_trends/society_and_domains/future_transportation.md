@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #การขนส่งแห่งอนาคต
 ## ภาพรวม
 การเดินทางจาก A ไป B กำลังจะดูแตกต่างออกไปมาก รถยนต์ที่ขับเคลื่อนด้วยตนเองมีอยู่แล้วบนถนนสาธารณะ เครื่องบินไฟฟ้ากำลังเสร็จสิ้นการบินทดสอบ แนวคิดของ Hyperloop รับประกันการเดินทางด้วยความเร็วของรถไฟในหลอดสุญญากาศ และแท็กซี่บินได้ ซึ่งครั้งหนึ่งเคยเป็นการ์ตูน กำลังเข้าสู่การรับรอง นี่คือสถานะของเทคโนโลยีที่ปรับเปลี่ยนวิธีการเคลื่อนไหวของเรา

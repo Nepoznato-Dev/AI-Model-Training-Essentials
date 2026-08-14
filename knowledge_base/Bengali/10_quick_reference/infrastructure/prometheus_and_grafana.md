@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # প্রমিথিউস এবং গ্রাফানা
 প্রমিথিউস হল একটি ওপেন সোর্স মনিটরিং এবং সতর্ককারী টুলকিট যা নির্ভরযোগ্যতা এবং মাপযোগ্যতার জন্য ডিজাইন করা হয়েছে। গ্রাফানা হল টাইম-সিরিজ ডেটা ভিজ্যুয়ালাইজ করার জন্য নেতৃস্থানীয় ওপেন সোর্স প্ল্যাটফর্ম। একসাথে, তারা আধুনিক অবকাঠামো এবং অ্যাপ্লিকেশনগুলির জন্য সবচেয়ে জনপ্রিয় পর্যবেক্ষণ স্ট্যাক গঠন করে। প্রমিথিউস মেট্রিক্স সংগ্রহ ও সঞ্চয় করে; Grafana তাদের ড্যাশবোর্ডে প্রদর্শন করে।
 ---

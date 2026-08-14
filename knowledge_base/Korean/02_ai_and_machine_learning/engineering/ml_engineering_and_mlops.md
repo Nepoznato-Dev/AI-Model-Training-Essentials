@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ML 엔지니어링 및 MLOps
 기계 학습 모델을 구축하는 것은 전투의 절반에 불과합니다. 프로덕션에 투입하고 안정적인 실행을 유지하며 드리프트를 모니터링하고 반복하는 것이 ML 엔지니어링과 MLOps가 필요한 부분입니다. 이 파일은 실험부터 프로덕션 시스템까지 전체 수명주기를 다룹니다.
 ---

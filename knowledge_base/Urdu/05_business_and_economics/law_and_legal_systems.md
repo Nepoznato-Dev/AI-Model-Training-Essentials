@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # قانون اور قانونی نظام
 قانون قوانین کا مجموعہ ہے جسے معاشرہ اپنے اداروں کے ذریعے نافذ کرنے پر راضی ہوتا ہے۔ یہ اخلاقیات کے مترادف نہیں ہے - آپ کچھ قانونی کر سکتے ہیں جو غیر اخلاقی ہے، اور کچھ غیر قانونی ہے جو اخلاقی طور پر جائز ہے۔ پیشین گوئی فراہم کرنے کے لیے قانون موجود ہے: اس بات کو قائم کرنے کے لیے کہ کیا اجازت ہے، کیا منع ہے، اور جب قوانین ٹوٹ جاتے ہیں تو کیا ہوتا ہے۔ اس کے بغیر تنازعات کو طاقت سے طے کیا جاتا ہے۔ اس کے ساتھ، تنازعات کو عمل سے طے کیا جاتا ہے.
 یہ فائل بڑے قانونی نظاموں، قانون کی اہم شاخوں، اور ان تصورات کا احاطہ کرتی ہے جو عملی طور پر قانونی نظام کے کام کرنے کے طریقے کو تشکیل دیتے ہیں۔

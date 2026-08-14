@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Shell & PowerShell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شل وباورشيل
 تشير البرمجة النصية لـ Shell إلى كتابة البرامج النصية لمترجمي سطر الأوامر. أهم صدفتين هما **Bash** (Bourne Again Shell) — الافتراضي في Linux وmacOS — و**PowerShell** — الصدفة الحديثة متعددة المنصات ولغة البرمجة النصية من Microsoft. تعمل برامج Shell النصية على أتمتة مهام إدارة النظام، وبناء خطوط الأنابيب، ومعالجة الملفات، وسير عمل النشر.
 يحتاج كل مطور ومهندس DevOps ومسؤول النظام إلى مهارات البرمجة النصية لـ Shell. سواء كنت تقوم بنشر خادم ويب، أو معالجة ملفات السجل، أو إعداد خطوط أنابيب CI/CD، أو أتمتة النسخ الاحتياطية، فإن البرمجة النصية لـ Shell هي الأداة المناسبة لهذه المهمة.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Upangaji wa Mazingira
 ## Muhtasari
 Hakuna mtu anayeweza kutabiri siku zijazo - lakini unaweza kujiandaa kwa kadhaa zinazokubalika. Upangaji wa mazingira, uliozaliwa katika tanki za fikra za Vita Baridi na kukamilishwa na Shell wakati wa migogoro ya mafuta ya miaka ya 1970, ni njia ya kufikiria kwa utaratibu kuhusu kutokuwa na uhakika. Badala ya kuweka kamari kwenye utabiri mmoja, unaunda hadithi dhabiti kuhusu jinsi mambo yanavyoweza kutokea, kisha jaribu maamuzi yako dhidi ya yote. Hivi ndivyo mbinu inavyofanya kazi, pamoja na hali katika vikoa muhimu.

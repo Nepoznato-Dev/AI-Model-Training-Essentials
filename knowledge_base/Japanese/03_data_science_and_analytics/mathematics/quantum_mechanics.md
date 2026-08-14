@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 量子力学
 量子力学は、原子、電子、光子、自然界の基本粒子といった最小スケールの物理学の理論です。これは、古典力学の決定論的な世界を確率、重ね合わせ、もつれに置き換えます。直観に反する性質にもかかわらず、量子力学は科学全体の中で最も正確にテストされた理論です。今日、その原理は量子コンピューターを介したコンピューティングに直接関連しており、古典的なマシンよりも指数関数的に速く特定の問題を解決できることが期待されています。
 ---

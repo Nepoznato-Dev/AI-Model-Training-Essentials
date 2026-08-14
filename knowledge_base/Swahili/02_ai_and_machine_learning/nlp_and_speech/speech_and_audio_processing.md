@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usindikaji wa Hotuba na Sauti
 Uchakataji wa matamshi na sauti hujumuisha teknolojia zinazoruhusu mashine kusikia, kuelewa, kuzalisha na kudhibiti sauti. Hii ni pamoja na utambuzi wa usemi (kugeuza maneno yanayozungumzwa kuwa maandishi), usanisi wa usemi (kugeuza maandishi kuwa maneno ya kusemwa), kitambulisho cha mzungumzaji, kuunda muziki, na uelewa wa sauti wa mazingira. Uga umebadilishwa na kujifunza kwa kina - mifumo ya kisasa inakaribia usahihi wa kiwango cha binadamu kwa utambuzi wa usemi na kutoa sauti za asili za kutisha.
 ---

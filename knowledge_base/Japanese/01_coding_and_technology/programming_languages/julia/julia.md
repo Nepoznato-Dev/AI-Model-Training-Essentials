@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ジュリア
 Julia は、技術的および科学的コンピューティング用に設計された高レベル、高性能プログラミング言語です。 2012 年に初めてリリースされた Julia (2018 年には 1.0) は、科学者が Python/R でプロトタイプを作成するものの、本番環境のパフォーマンスのために C/C++/Fortran で書き直すという「2 言語問題」を解決するために作成されました。 Julia は、Python と同じくらい簡単で、C と同じくらい高速であることを目指しています。
 Julia は、LLVM 経由のジャストインタイム (JIT) コンパイルを使用して、インタラクティブでダイナミックな操作感を維持しながら、C に近いパフォーマンスを実現します。並列コンピューティング、分散処理、および複数のディスパッチを備えた高度な型システムに対する一流のサポートを備えています。

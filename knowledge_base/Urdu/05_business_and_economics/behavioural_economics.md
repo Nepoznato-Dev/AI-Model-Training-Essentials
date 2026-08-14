@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # رویے کی معاشیات اور فیصلہ سائنس
 طرز عمل کی معاشیات اس بات کا مطالعہ کرتی ہے کہ لوگ حقیقت میں کیسے فیصلے کرتے ہیں - یہ نہیں کہ عقلی ایجنٹ انہیں کیسے بنائیں گے۔ روایتی معاشیات یہ فرض کرتی ہے کہ لوگ عقلی، خود غرض اور معلومات کی پروسیسنگ میں اچھے ہیں۔ Kahneman، Tversky، Thaler، اور دوسروں کی دہائیوں کی تحقیق نے دکھایا ہے کہ یہ انتہائی غلط ہے۔ لوگ ذہنی شارٹ کٹ استعمال کرتے ہیں، غیر متعلقہ سیاق و سباق سے متاثر ہوتے ہیں، حالیہ معلومات سے زیادہ وزن رکھتے ہیں، اور منظم انداز میں پیش گوئی کی جانے والی غلطیاں کرتے ہیں۔ بہتر مصنوعات، پالیسیوں، تنظیموں اور ذاتی فیصلوں کو ڈیزائن کرنے کے لیے ان نمونوں کو سمجھنا ضروری ہے۔
 ---

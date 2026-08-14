@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # クラウドアーキテクチャ
 クラウド コンピューティングは、組織がソフトウェアを構築、展開、拡張する方法を根本的に変えました。物理サーバーを購入して維持する代わりに、オンデマンドでコンピューティング リソースをプロビジョニングし、使用した分だけ支払い、数分でグローバルに拡張できます。このファイルには、知っておくべき中心的な概念、アーキテクチャ パターン、サービス、ベスト プラクティスが含まれています。
 ---

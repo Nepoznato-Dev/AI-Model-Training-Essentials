@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Pagkabigo sa Machine Learning Project
 Ang mga proyekto sa pag-aaral ng makina ay nabigo sa isang nakakaalarmang rate — iminumungkahi ng mga pagtatantya ng industriya na 60-85% ng mga proyekto ng ML ay hindi na umabot sa produksyon. Ang mga pagkabigo ay hindi karaniwan sa mga algorithm; nasa proseso sila, ang data, ang mga inaasahan, at ang konteksto ng organisasyon. Ang pag-unawa kung bakit nabigo ang mga proyekto ng ML ay mahalaga para sa sinumang gumagawa ng mga ML system, dahil ang mga mode ng pagkabigo ay mahuhulaan at higit na maiiwasan.
 ---

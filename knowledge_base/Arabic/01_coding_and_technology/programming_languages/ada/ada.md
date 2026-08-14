@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أدا
 Ada هي لغة برمجة مجمعة ومكتوبة بشكل ثابت مصممة للأنظمة ذات السلامة الحرجة والتكامل العالي. تم تطوير Ada في الأصل في الثمانينيات بموجب عقد مع وزارة الدفاع الأمريكية (سميت على اسم Ada Lovelace، التي تعتبر أول مبرمج كمبيوتر)، وتؤكد Ada على الموثوقية وقابلية الصيانة والصحة. لقد تم تصميمه ليحل محل مئات لغات البرمجة التي استخدمتها وزارة الدفاع بعد ذلك بلغة واحدة محددة جيدًا.
 يتم استخدام Ada في الطيران (أنظمة الطيران عبر الأسلاك)، والفضاء (وكالة الفضاء الأوروبية ووكالة ناسا)، والدفاع (توجيه الصواريخ، والرادار)، والنقل بالسكك الحديدية، والأجهزة الطبية - في أي مكان يمكن أن يؤدي فيه فشل البرامج إلى فقدان الأرواح.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # С
 C — процедурный язык программирования общего назначения, созданный Деннисом Ритчи в Bell Labs в период с 1969 по 1973 год. Он был разработан для реализации операционной системы Unix и остается одним из наиболее широко используемых языков программирования более 50 лет спустя. C обеспечивает низкоуровневый доступ к памяти, минимальную стандартную библиотеку и четкое отображение машинных инструкций, что делает его основой, на которой построено большинство современных вычислений.
 C — это язык, лежащий в основе операционных систем (Linux, ядро ​​Windows, macOS), встроенных систем, механизмов баз данных (SQLite, PostgreSQL), компиляторов (CPython Python, MRI Ruby) и практически всех других языков программирования. Понимание C означает понимание того, как на самом деле работают компьютеры.

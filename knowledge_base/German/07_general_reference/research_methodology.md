@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Forschungsmethodik
 Forschungsmethodik ist der systematische Ansatz zur Untersuchung von Fragen, zum Testen von Hypothesen und zur Generierung verlässlichen Wissens. Ob Sie wissenschaftliche Experimente, sozialwissenschaftliche Umfragen, Unternehmensanalysen oder akademische Forschung durchführen: Die von Ihnen gewählte Methodik bestimmt, ob Ihre Ergebnisse glaubwürdig, reproduzierbar und nützlich sind. Eine gut konzipierte Studie liefert vertrauenswürdige Ergebnisse; Eine schlecht gestaltete Antwort erzeugt Lärm – oder schlimmer noch, selbstbewusste falsche Antworten.
 ---

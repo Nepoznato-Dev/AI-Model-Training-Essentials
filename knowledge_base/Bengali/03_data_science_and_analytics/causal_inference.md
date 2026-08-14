@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # কার্যকারণ অনুমান
 কার্যকারণ অনুমান হল একটি জিনিস প্রকৃতপক্ষে অন্যটির কারণ কিনা তা নির্ধারণ করার বিজ্ঞান - শুধু তারা সম্পর্কযুক্ত কিনা তা নয়। পারস্পরিক সম্পর্ক আপনাকে বলে যে দুটি ভেরিয়েবল একসাথে চলে। কার্যকারণ আপনাকে বলে যে একটি পরিবর্তন করলে অন্যটি পরিবর্তন হবে। এই পার্থক্যটি ওষুধের ক্ষেত্রে অত্যন্ত গুরুত্বপূর্ণ (এই ওষুধটি কি কাজ করে?), নীতি (এই হস্তক্ষেপটি কি দারিদ্র্য হ্রাস করে?), ব্যবসা (এই বিজ্ঞাপন প্রচারাভিযানটি কি বিক্রয় বাড়ায়?), এবং বিজ্ঞান (এই প্রক্রিয়াটি কি ঘটনাটি ব্যাখ্যা করে?)।
 ---

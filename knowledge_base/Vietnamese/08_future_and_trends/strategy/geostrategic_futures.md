@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Tương lai địa chiến lược
 ## Tổng quan
 Kỷ nguyên thống trị của Mỹ thời hậu Chiến tranh Lạnh đang nhường chỗ cho một thứ gì đó hỗn loạn hơn: một thế giới đa cực nơi quyền lực bị phân tán, cạnh tranh ngày càng gay gắt về công nghệ và tài nguyên, đồng thời những thách thức như biến đổi khí hậu và đại dịch không phân biệt biên giới. Trật tự quốc tế dựa trên luật lệ được xây dựng sau năm 1945 đang bị thử thách từ mọi hướng. Đây là những gì đang thay đổi, ai đang nổi lên và những điểm xung đột ở đâu.

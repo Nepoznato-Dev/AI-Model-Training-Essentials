@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ویژوال بیسیک - مرجع نحو
 این سند یک مرجع جامع و ساختار یافته برای ویژوال بیسیک (VB.NET) ارائه می دهد. این مرجع اصلی ویژوال بیسیک را با تمرکز بر الگوهای نحوی جامع، ویژگی‌های OOP، LINQ، async/await و اصطلاحات یکپارچه‌سازی دات‌نت تکمیل می‌کند.
 ---

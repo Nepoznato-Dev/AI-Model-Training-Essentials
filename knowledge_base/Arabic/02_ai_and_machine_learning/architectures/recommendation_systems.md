@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أنظمة التوصية
 تتنبأ أنظمة التوصية بما يريد المستخدم رؤيته أو شرائه أو التفاعل معه بعد ذلك. فهي تعمل على تشغيل خلاصات المحتوى على وسائل التواصل الاجتماعي، واقتراحات المنتجات على مواقع التجارة الإلكترونية، واختيارات الأفلام على منصات البث المباشر، ونتائج البحث. على الرغم من كونها غير مرئية لمعظم المستخدمين، إلا أنها من بين أنظمة الذكاء الاصطناعي الأكثر تأثيرًا تجاريًا في العالم - تقدر Netflix أن محرك التوصيات الخاص بها يوفر ما يزيد عن مليار دولار سنويًا من خلال تقليل تراجع عدد المشتركين.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # پرومتئوس و گرافانا
 Prometheus یک جعبه ابزار نظارت و هشدار منبع باز است که برای قابلیت اطمینان و مقیاس پذیری طراحی شده است. Grafana پلت فرم منبع باز پیشرو برای تجسم داده های سری زمانی است. آنها با هم، محبوب ترین پشته نظارت را برای زیرساخت ها و برنامه های کاربردی مدرن تشکیل می دهند. پرومتئوس معیارها را جمع آوری و ذخیره می کند. Grafana آنها را در داشبورد نمایش می دهد.
 ---

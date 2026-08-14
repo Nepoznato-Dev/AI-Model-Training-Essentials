@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اپتیک و امواج
 امواج همه جا هستند: صدا، نور، آب، سیگنال های رادیویی، دامنه احتمالات کوانتومی، نوسانات بازار سهام و ارتعاشات فعال سازی شبکه های عصبی. اپتیک - مطالعه نور - توسعه یافته ترین علم امواج است و ابزارهای ریاضی آن (تحلیل فوریه، تداخل، پراش) برای هر پدیده موجی کاربرد دارد. درک امواج برای پردازش سیگنال، تجزیه و تحلیل تصویر، ارتباطات و لایه فیزیکی تمام فناوری های مدرن ضروری است.
 ---

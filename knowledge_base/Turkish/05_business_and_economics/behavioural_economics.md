@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Davranışsal Ekonomi ve Karar Bilimi
 Davranışsal ekonomi, rasyonel aktörlerin bu kararları nasıl vereceğini değil, insanların gerçekte nasıl karar verdiklerini inceler. Geleneksel ekonomi, insanların rasyonel, çıkarcı ve bilgiyi işlemede iyi olduğunu varsayar. Kahneman, Tversky, Thaler ve diğerlerinin onlarca yıldır yürüttüğü araştırmalar bunun tamamen yanlış olduğunu gösterdi. İnsanlar zihinsel kısayollar kullanır, ilgisiz bağlamdan etkilenir, güncel bilgilere aşırı ağırlık verir ve sistematik olarak öngörülebilir hatalar yaparlar. Bu kalıpları anlamak, daha iyi ürünler, politikalar, organizasyonlar ve kişisel kararlar tasarlamak için çok önemlidir.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิทยาศาสตร์ข้อมูลและการวิเคราะห์
 วิทยาศาสตร์ข้อมูลเป็นวินัยในการเปลี่ยนข้อมูลดิบให้เป็นข้อมูลเชิงลึกที่นำไปปฏิบัติได้ โดยเป็นจุดบรรจบกันของสถิติ วิทยาการคอมพิวเตอร์ และความเชี่ยวชาญในสาขาต่างๆ และกลายเป็นสิ่งจำเป็นในทุกภาคส่วนตั้งแต่การเงินไปจนถึงการดูแลสุขภาพ ไฟล์นี้จะอธิบายแนวคิดหลัก เครื่องมือ และขั้นตอนการทำงานที่ผู้ปฏิบัติงานทุกคนควรรู้
 ---

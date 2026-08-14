@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الملكية الفكرية والابتكار
 تشير الملكية الفكرية (IP) إلى إبداعات العقل - الاختراعات، والأعمال الفنية، والأسماء التجارية، والتصميمات، والأسرار التجارية - التي يحميها القانون من الاستخدام غير المصرح به. الابتكار هو عملية تحويل الأفكار إلى قيمة. وُضع قانون الملكية الفكرية لتحقيق التوازن بين مصلحتين متنافستين: مكافأة المبدعين (من خلال منحهم احتكارات مؤقتة) وإفادة المجتمع (من خلال ضمان أن تصبح المعرفة متاحة مجانًا في نهاية المطاف). يعد فهم الملكية الفكرية أمرًا ضروريًا لأي شخص يقوم ببناء المنتجات، أو إنشاء المحتوى، أو إدارة الأعمال، أو العمل في مجال البحث.
 ---

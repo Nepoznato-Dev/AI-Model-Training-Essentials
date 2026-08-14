@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سگنل پروسیسنگ
 سگنل پروسیسنگ سگنلز کا تجزیہ، ترمیم، اور ترکیب کرنے کی سائنس ہے - وقت، جگہ، یا فریکوئنسی کے ساتھ مختلف جسمانی مقداروں کی نمائندگی۔ آڈیو، تصاویر، ویڈیو، سینسر ڈیٹا، دماغی لہریں، اسٹاک کی قیمتیں — یہ سب سگنلز ہیں۔ سگنل پروسیسنگ کے ریاضیاتی ٹولز (فورئیر ٹرانسفارمز، فلٹرز، سیمپلنگ تھیوری) مشین لرننگ، کمیونیکیشنز، میڈیکل امیجنگ اور ڈیٹا کے ساتھ کام کرنے والے عملی طور پر ہر شعبے کی بنیاد ہیں۔
 ---

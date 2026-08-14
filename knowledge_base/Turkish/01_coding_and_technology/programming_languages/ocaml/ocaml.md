@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "OCaml"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # OCaml
 OCaml (Objective Caml), Fransa'daki INRIA'da geliştirilen ve ilk kez 1996'da piyasaya sürülen işlevsel bir programlama dilidir. İşlevsel programlamanın etkileyiciliğini pratik özelliklerle birleştirir: tür çıkarımlı güçlü bir tür sistemi (Hindley-Milner), desen eşleştirme, cebirsel veri türleri ve isteğe bağlı nesne yönelimli programlama. OCaml, hızlı yerel koda derlenir ve ayrıca bayt kodunu destekler.
 OCaml'in en ünlü gerçek dünya uygulaması, tüm ticaret altyapısı için OCaml'ı kullanan **Jane Street** ticaret firmasıdır. Aynı zamanda derleyici geliştirmede (Rust derleyicisi orijinal olarak OCaml'de yazılmıştır), resmi doğrulamada, finansal sistemlerde ve teorem kanıtlamada da kullanılır.

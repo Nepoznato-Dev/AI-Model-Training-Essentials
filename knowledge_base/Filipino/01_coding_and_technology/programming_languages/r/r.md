@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # R
 Ang R ay isang programming language at environment na partikular na idinisenyo para sa statistical computing at data analysis. Created by Ross Ihaka and Robert Gentleman at the University of Auckland in 1993 (hence "R"), it is an implementation of the S language with significant extensions. Ang R ay open source at pinananatili ng R Core Team. Ito ang karaniwang tool para sa mga istatistika, data analyst, at mananaliksik sa akademya, pangangalagang pangkalusugan, pananalapi, at pamahalaan.
 Ang R ay mahusay sa pagmamanipula ng data, pagmomodelo ng istatistika, paggunita, at pag-uulat. Ang package ecosystem (CRAN) nito ay mayroong mahigit 20,000 packages na sumasaklaw sa halos lahat ng istatistikal na paraan na ginawa kailanman.

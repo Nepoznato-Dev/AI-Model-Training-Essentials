@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Ingeniería de funciones
 La ingeniería de características es el proceso de transformar datos sin procesar en representaciones que hacen que los modelos de aprendizaje automático sean más efectivos. A menudo se describe como el paso más importante en el proceso de aprendizaje automático: las características que le brinda a un modelo importan más que el algoritmo que elija. Un modelo simple con características bien diseñadas normalmente superará a un modelo complejo con entradas sin procesar y sin procesar. El arte radica en comprender tanto el dominio como los datos lo suficientemente bien como para crear señales de las que el modelo pueda aprender.
 ---

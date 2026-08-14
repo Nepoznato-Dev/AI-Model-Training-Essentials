@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 数値的手法
 数値的手法は、数学理論と実際の計算の間の架け橋です。純粋な数学は解が存在することを証明しますが、数値的手法は実際には有限の精度で近似的な答えを計算します。すべての機械学習モデル、物理シミュレーション、データ分析パイプラインは最終的に数値計算に依存します。信頼性の高いソフトウェアを構築するには、これらの方法 (精度、安定性、制限) を理解することが不可欠です。
 ---

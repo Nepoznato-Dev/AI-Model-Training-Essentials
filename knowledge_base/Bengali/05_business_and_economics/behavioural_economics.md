@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # আচরণগত অর্থনীতি এবং সিদ্ধান্ত বিজ্ঞান
 আচরণগত অর্থনীতি অধ্যয়ন করে যে লোকেরা কীভাবে সিদ্ধান্ত নেয় - যুক্তিবাদী এজেন্টরা কীভাবে তাদের সিদ্ধান্ত নেয় তা নয়। প্রথাগত অর্থনীতি অনুমান করে যে লোকেরা যুক্তিবাদী, স্ব-আগ্রহী এবং তথ্য প্রক্রিয়াকরণে ভাল। কাহনেম্যান, টোভারস্কি, থ্যালার এবং অন্যান্যদের কয়েক দশকের গবেষণায় দেখানো হয়েছে যে এটি অত্যন্ত ভুল। লোকেরা মানসিক শর্টকাট ব্যবহার করে, অপ্রাসঙ্গিক প্রসঙ্গ, অতিরিক্ত ওজন সাম্প্রতিক তথ্য দ্বারা প্রভাবিত হয় এবং পদ্ধতিগতভাবে অনুমানযোগ্য ত্রুটি করে। ভাল পণ্য, নীতি, সংস্থা এবং ব্যক্তিগত সিদ্ধান্তগুলি ডিজাইন করার জন্য এই প্যাটার্নগুলি বোঝা অপরিহার্য।
 ---

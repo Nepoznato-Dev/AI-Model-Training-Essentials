@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کوبول
 COBOL (Common Business-Oriented Language) سب سے قدیم پروگرامنگ زبانوں میں سے ایک ہے جو اب بھی استعمال میں ہے، جو پہلی بار 1959 میں تیار کی گئی تھی۔ اسے کاروباری ڈیٹا پروسیسنگ — مالیاتی نظام، پے رول، بینکنگ، انشورنس، اور سرکاری ایپلی کیشنز کے لیے ڈیزائن کیا گیا تھا۔ COBOL کا انگریزی جیسا نحو صرف پروگرامرز ہی نہیں بلکہ بزنس مینیجرز کے پڑھنے کے قابل تھا۔
 اپنی عمر کے باوجود، COBOL عالمی سطح پر تمام کاروباری لین دین کا تخمینہ 30% عمل کرتا ہے۔ بڑے بینک، سرکاری ایجنسیاں (بشمول یو ایس سوشل سیکیورٹی ایڈمنسٹریشن)، اور انشورنس کمپنیاں اب بھی COBOL مین فریم سسٹم پر انحصار کرتی ہیں۔ 1999 میں Y2K بگ ڈراؤ نے COBOL کو عوامی بیداری میں واپس لایا، اور یہ زبان دنیا بھر میں اہم بنیادی ڈھانچے کو چلا رہی ہے۔

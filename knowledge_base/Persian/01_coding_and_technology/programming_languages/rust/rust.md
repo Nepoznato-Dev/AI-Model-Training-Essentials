@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # زنگ زدگی
 Rust یک زبان برنامه نویسی تایپ شده و کامپایل شده است که برای اولین بار در سال 2015 منتشر شد و در ابتدا توسط Graydon Hoare در موزیلا توسعه یافت. وعده تعیین کننده Rust **ایمنی حافظه بدون جمع آوری زباله** است. این سیستم از طریق سیستم مالکیت خود به این امر دست می یابد - مجموعه قوانینی که در زمان کامپایل اجرا می شوند که کل دسته باگ ها را حذف می کند (اشکال اشاره گر تهی، مسابقه داده، سرریز بافر، استفاده پس از رایگان) در حالی که کد را با سرعت C یا C++ تولید می کند.
 Rust برای چندین سال متوالی به عنوان "دوست داشتنی ترین" زبان برنامه نویسی در نظرسنجی توسعه دهندگان Stack Overflow انتخاب شده است. این به طور فزاینده ای در برنامه نویسی سیستم ها، WebAssembly، ابزارهای CLI، زیرساخت های ابری و به عنوان جایگزینی برای C/C++ در زمینه های امنیتی حیاتی استفاده می شود. اکنون هسته لینوکس کد Rust را می پذیرد.

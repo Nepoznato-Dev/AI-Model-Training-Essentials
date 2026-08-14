@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Scala
 Scala (Scalable Language) ist eine statisch typisierte, kompilierte Programmiersprache, die objektorientierte und funktionale Programmierparadigmen kombiniert. Scala wurde von Martin Odersky entwickelt und erstmals 2004 veröffentlicht. Es läuft auf der JVM (auch Scala.js für JavaScript und Scala Native). Es wurde entwickelt, um die Ausführlichkeit von Java zu reduzieren und gleichzeitig die vollständige Java-Interoperabilität aufrechtzuerhalten.
 Scala ist die Sprache hinter Apache Spark (dem Big-Data-Verarbeitungs-Framework) und wird häufig in der Datentechnik, verteilten Systemen und Backend-Diensten verwendet. Unternehmen wie Twitter (jetzt X), LinkedIn, Netflix und The Guardian nutzen Scala.

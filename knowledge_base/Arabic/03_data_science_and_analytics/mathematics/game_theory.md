@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #نظرية اللعبة
 نظرية اللعبة هي رياضيات التفاعل الاستراتيجي - المواقف التي لا تعتمد فيها نتيجتك على اختياراتك فقط، بل على اختيارات الآخرين. فمن حروب التسعير بين الشركات إلى سباقات التسلح النووي، ومن المزادات عبر الإنترنت إلى علم الأحياء التطوري، توفر نظرية الألعاب الأدوات اللازمة لتحليل الصراع والتعاون. لقد أصبحت ذات صلة متزايدة بالتعلم الآلي من خلال التعلم المعزز متعدد الوكلاء، وشبكات الخصومة التوليدية (GANs)، وتصميم الآليات للمنصات عبر الإنترنت.
 ---

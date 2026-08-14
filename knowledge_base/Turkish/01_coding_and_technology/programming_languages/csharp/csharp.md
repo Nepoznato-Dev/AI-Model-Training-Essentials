@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C#
 C# ("C-sharp" olarak telaffuz edilir), Anders Hejlsberg liderliğinde Microsoft tarafından geliştirilen ve ilk kez 2002'de piyasaya sürülen modern, nesne yönelimli, tür açısından güvenli bir programlama dilidir. .NET platformunda çalışır ve C++'ın gücünü Visual Basic'in üretkenliğiyle birleştirmek için tasarlanmıştır. Günümüzde C#, web uygulamaları (ASP.NET), masaüstü yazılımı (Windows), oyun geliştirme (Unity), mobil uygulamalar (MAUI), bulut hizmetleri (Azure) ve daha fazlası için kullanılan çok yönlü, platformlar arası bir dildir.
 C#, diğer dillerden (LINQ, eşzamansız/beklemede, kayıtlar, kalıp eşleştirme) en iyi fikirleri sürekli olarak benimsemiştir ve bu da onu mevcut en zengin özelliklere sahip ve geliştirici dostu dillerden biri haline getirmiştir.

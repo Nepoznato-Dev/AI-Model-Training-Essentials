@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Astronomía y Cosmología
 La astronomía es el estudio de los objetos celestes: estrellas, planetas, galaxias y todo lo que se encuentra más allá de la atmósfera de la Tierra. La cosmología es el estudio del universo en su conjunto: su origen, estructura, evolución y destino final. Juntos, abordan algunas de las preguntas más fundamentales que los humanos alguna vez se hayan hecho: ¿Cómo comenzó el universo? ¿Qué tan grande es? ¿Estamos solos? ¿Qué pasará con él al final?
 ---

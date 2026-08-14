@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Métodos numéricos
 Los métodos numéricos son el puente entre la teoría matemática y la computación práctica. Si bien las matemáticas puras demuestran que existen soluciones, los métodos numéricos en realidad calculan respuestas aproximadas con precisión finita. Cada modelo de aprendizaje automático, simulación física y proceso de análisis de datos se basa en última instancia en la computación numérica. Comprender estos métodos (su precisión, estabilidad y limitaciones) es esencial para crear software confiable.
 ---

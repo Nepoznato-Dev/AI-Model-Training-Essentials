@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 艺术与文学
 人类的创造性表达——无论是书籍、绘画、音乐还是电影——是最持久的文明记录之一。了解主要流派、运动和人物为我们当今生活的世界提供了背景。每部小说、每一部交响乐、每一部电影都与之前的事物进行对话。
 ---

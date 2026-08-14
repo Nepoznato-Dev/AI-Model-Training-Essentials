@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เคมี
 หากฟิสิกส์เป็นกฎของเกม เคมีคือสิ่งที่เกิดขึ้นเมื่อชิ้นส่วนมีปฏิสัมพันธ์กัน เคมีศึกษาว่าอะตอมพันธะ แตกตัว และจัดเรียงใหม่ได้อย่างไร กล่าวคือ วัสดุทั้งหมดมีพฤติกรรมอย่างไร เป็นสะพานเชื่อมช่องว่างระหว่างฟิสิกส์พื้นฐานกับความซับซ้อนของชีววิทยา ธรณีวิทยา และวิศวกรรมศาสตร์
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Computer Vision Fundamentals"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 计算机视觉基础知识
 计算机视觉使机器能够解释和理解来自世界的视觉信息——图像、视频和 3D 数据。它为从手机上的人脸识别到自动驾驶汽车、医学图像分析和工业质量控制的一切提供支持。该文件涵盖了核心概念、架构和技术。
 ---

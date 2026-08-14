@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "R"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #R
 R は、統計コンピューティングとデータ分析のために特別に設計されたプログラミング言語および環境です。 1993 年にオークランド大学の Ross Ihaka と Robert Gentleman によって作成された (したがって「R」)、大幅な拡張を加えた S 言語の実装です。 R はオープンソースであり、R コア チームによって保守されています。これは、学界、医療、金融、政府の統計学者、データ アナリスト、研究者にとっての標準ツールです。
 R は、データ操作、統計モデリング、視覚化、レポート作成に優れています。そのパッケージ エコシステム (CRAN) には、これまでに考案されたほぼすべての統計手法をカバーする 20,000 を超えるパッケージがあります。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nhận thức về môi trường
 Môi trường không phải là một thứ riêng biệt “ngoài kia” - chính hệ thống sẽ làm cho mọi thứ khác đều có thể thực hiện được. Mỗi hơi thở bạn hít vào, mỗi ly nước bạn uống, mỗi bữa ăn bạn ăn đều phụ thuộc vào thành phần khí quyển, chu trình nước, sức khỏe của đất và mạng lưới thụ phấn. Việc hiểu cách các hệ thống này hoạt động - và cách chúng thay đổi - không phải là điều bắt buộc đối với một người có hiểu biết. Tập tin này bao gồm các nguyên tắc cơ bản của khoa học môi trường, những thách thức chúng ta gặp phải và ý nghĩa thực sự của tính bền vững trong thực tế.
 ---

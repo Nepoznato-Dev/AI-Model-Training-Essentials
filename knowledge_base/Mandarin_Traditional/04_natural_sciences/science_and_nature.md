@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 科學與自然
 科學是我們如何弄清楚宇宙實際上在做什麼——不是我們假設它在做什麼，也不是古代文獻所說的，而是仔細觀察和實驗揭示的。科學方法原則上很簡單：觀察某件事，形成假設，測試它，並根據結果修改你的理解。科學之所以強大，是因為它有自我修正的能力。每項主張都是臨時的－只有在出現更好的證據之前才會被接受。
 該文件涵蓋了自然科學的主要分支：物理學、化學、生物學以及地球和太空科學。將其視為物理世界的地圖。

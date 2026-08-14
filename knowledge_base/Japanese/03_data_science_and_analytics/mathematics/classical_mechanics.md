@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Classical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into classical mechanics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 古典力学
 古典力学では、力の影響下での物体の運動を説明します。落ちるリンゴから軌道を周回する惑星に至るまで、振動する糸から粒子の衝突に至るまで、その原理は巨視的な世界を支配しています。古典力学は、その物理的応用を超えて、変分法、シンプレクティック幾何学、量子力学と現代の最適化を支えるハミルトニアンの枠組みを生み出しました。
 ---

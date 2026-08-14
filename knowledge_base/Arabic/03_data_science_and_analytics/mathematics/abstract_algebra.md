@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Abstract Algebra"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into abstract algebra"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الجبر المجرد
 يدرس الجبر التجريدي الهياكل الجبرية – مجموعات مجهزة بعمليات تتبع قواعد محددة. بدلاً من العمل مع الأرقام، يعمل الجبر المجرد مع أي كائنات تلبي البديهيات. هذه العمومية قوية: فالنظرية المثبتة لـ "المجموعات" تنطبق على الأعداد الصحيحة، والتماثلات، والمصفوفات، والتباديل، والحالات الكمومية في وقت واحد. يدعم الجبر المجرد التشفير، ورموز تصحيح الأخطاء، والحوسبة الكمومية، وتحليل التماثل المستخدم في جميع أنحاء الفيزياء.
 ---

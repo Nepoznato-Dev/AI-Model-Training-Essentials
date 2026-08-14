@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Negocios y Economía
 Toda organización que vende un producto o servicio es un negocio, y toda sociedad que produce y distribuye bienes es una economía. Los conceptos de este archivo se aplican ya sea que usted esté dirigiendo una operación independiente, trabajando en una corporación, tratando de entender las noticias o simplemente descubriendo cómo se mueve el dinero en el mundo.
 ---

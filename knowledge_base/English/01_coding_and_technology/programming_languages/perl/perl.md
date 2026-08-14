@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perl
 
 Perl was created by Larry Wall in 1987 as a practical text-processing tool. It became the backbone of early web development (CGI scripts), system administration, bioinformatics, and network programming. Perl's philosophy is "There's More Than One Way To Do It" (TMTOWTDI) — the language gives you multiple approaches to every problem, favoring expressiveness over uniformity.

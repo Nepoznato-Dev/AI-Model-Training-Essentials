@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Мировые культуры и общества
 Культура — это основа общества — общие убеждения, ценности, обычаи, поведение и артефакты, которые члены используют, чтобы справляться со своим миром и друг с другом. Понимание культурного разнообразия заключается не в запоминании мелочей; Речь идет о признании того, что один способ видения мира существует среди тысяч, и что другие системы внутренне последовательны, исторически обоснованы и заслуживают понимания на их собственных условиях.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pangangalaga sa Kalusugan sa Hinaharap
 ## Pangkalahatang-ideya
 Ang gamot ay lumilipat mula sa isang reaktibong modelo — gamutin ang mga sintomas pagkatapos na lumitaw ang mga ito — sa isa na predictive, personalized, at lalong nakakapigil. Ang Genomics ay napunta mula sa isang $3 bilyong proyekto sa isang sub-$1,000 na karaniwang pagsubok. Natututo ang AI na makita ang mga sakit sa mga pag-scan bago magawa ng mga doktor. At ang regenerative na gamot ay ginagawang mga klinikal na pagsubok ang science fiction. Narito kung ano ang nangyayari sa tatlong pinakamalaking hangganan: isinapersonal na gamot, pananaliksik sa mahabang buhay, at regenerative na gamot.

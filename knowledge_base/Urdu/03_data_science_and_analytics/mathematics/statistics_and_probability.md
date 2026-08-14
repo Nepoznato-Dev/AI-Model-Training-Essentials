@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # شماریات اور امکان
 امکان اور اعدادوشمار ڈیٹا سائنس، مشین لرننگ اور سائنسی تحقیق کی ریاضیاتی بنیادیں ہیں۔ امکان آپ کو بتاتا ہے کہ واقعات کے کتنے امکانات ہیں۔ اعداد و شمار آپ کو بتاتے ہیں کہ ڈیٹا سے نتیجہ کیسے نکالا جائے۔ ایک ساتھ مل کر، وہ غیر یقینی کو قابل مقدار، قابل انتظام علم میں بدل دیتے ہیں۔
 ---

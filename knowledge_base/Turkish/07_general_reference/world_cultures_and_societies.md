@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dünya Kültürleri ve Toplulukları
 Kültür bir toplumun çerçevesidir; yani üyelerinin kendi dünyalarıyla ve birbirleriyle başa çıkmak için kullandıkları ortak inançlar, değerler, gelenekler, davranışlar ve eserler. Kültürel çeşitliliği anlamak önemsiz şeyleri ezberlemekle ilgili değildir; dünyayı görmenin bir yolunun binlercesi arasında olduğunu ve diğer sistemlerin kendi içinde tutarlı, tarihsel olarak temellendirilmiş ve kendi koşullarıyla anlaşılmaya değer olduğunu kabul etmekle ilgilidir.
 ---

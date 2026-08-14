@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # हास्केल
 हास्केल एक पूरी तरह कार्यात्मक, स्थिर रूप से टाइप की गई, आलसी मूल्यांकन वाली प्रोग्रामिंग भाषा है। पहली बार 1990 में मानकीकृत (हास्केल 90) और कई संस्करणों के माध्यम से परिष्कृत (हास्केल 2010 वर्तमान मानक है), हास्केल अपनी गणितीय कठोरता, शक्तिशाली प्रकार प्रणाली (प्रकार वर्गों, मोनैड और बीजगणितीय डेटा प्रकारों के साथ) और प्रकारों के माध्यम से शुद्धता पर जोर देने के लिए जाना जाता है।
 हास्केल मुख्यधारा की भाषा नहीं है, लेकिन इसका प्रभाव बहुत बड़ा है। सन्यासी, आलसी मूल्यांकन और टाइप क्लास जैसी अवधारणाओं ने रस्ट, स्विफ्ट, कोटलिन, स्काला और टाइपस्क्रिप्ट को प्रभावित किया है। हास्केल का उपयोग वित्त (स्टैंडर्ड चार्टर्ड, बार्कलेज), कंपाइलर्स (जीएचसी), और औपचारिक सत्यापन में किया जाता है।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জাভাস্ক্রিপ্ট
 জাভাস্ক্রিপ্ট হল একটি গতিশীল, ব্যাখ্যা করা প্রোগ্রামিং ভাষা যা ব্রেন্ডন ইচ 1995 সালে মাত্র 10 দিনের মধ্যে তৈরি করেছিলেন। মূলত ওয়েব পৃষ্ঠাগুলিতে ইন্টারঅ্যাকটিভিটি যোগ করার জন্য ডিজাইন করা হয়েছিল, এটি বিশ্বের সবচেয়ে ব্যাপকভাবে ব্যবহৃত প্রোগ্রামিং ভাষাতে পরিণত হয়েছে। জাভাস্ক্রিপ্ট প্রতিটি ওয়েব ব্রাউজারে, Node.js এর মাধ্যমে সার্ভারে, ডেস্কটপ অ্যাপে (ইলেক্ট্রন), মোবাইল অ্যাপস (প্রতিক্রিয়া নেটিভ), এমনকি এমবেডেড সিস্টেমেও চলে।
 ভাষাটি অনন্য যে এটি মূলত ক্লায়েন্ট-সাইড ওয়েব ডেভেলপমেন্টের একমাত্র বিকল্প - প্রতিটি ব্রাউজার এটি স্থানীয়ভাবে সমর্থন করে। এই একচেটিয়া, ফুল-স্ট্যাক জাভাস্ক্রিপ্টের (Node.js, Deno, Bun) উত্থানের সাথে মিলিত, এটিকে অপরিহার্য করে তোলে।

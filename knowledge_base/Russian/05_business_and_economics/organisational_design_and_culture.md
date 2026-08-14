@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Организационный дизайн и культура
 Организационный дизайн — это продуманная организация структуры, процессов, ролей и прав принятия решений для эффективной реализации стратегии. Культура – ​​это общие ценности, убеждения, нормы и модели поведения, которые формируют то, как люди на самом деле работают вместе. Структура обеспечивает основу; культура формирует поведение. Структуру можно перепроектировать на бумаге, но если культура не поддерживает изменения, реализация потерпит неудачу. Аналогично, сильная культура в сочетании с неэффективной структурой постепенно подрывает эффективность организации. Наиболее эффективные организации решают обе проблемы и признают, что они глубоко взаимосвязаны.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 環境科學與永續發展
 環境科學應用物理、化學、生物學、地質學和經濟學的方法來解決這個問題：「我們的星球正在發生什麼，我們可以採取什麼措施？」這是一個跨學科領域——多個學科的融合——這有助於提高其分析深度和政策相關性。
 環境科學的核心張力是：人類文明依賴從環境中提取資源，但提取這些資源會改變環境，從而破壞我們所依賴的系統。簡而言之，回饋循環就是整個領域。

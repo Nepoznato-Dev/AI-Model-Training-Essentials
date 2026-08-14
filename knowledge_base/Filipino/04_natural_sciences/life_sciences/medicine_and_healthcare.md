@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Medisina at Pangangalaga sa Kalusugan
 Ang medisina ay ang agham at kasanayan sa pag-diagnose, paggamot, at pag-iwas sa sakit. Ito ay isa sa mga pinakalumang pagsisikap ng tao — ang Hippocratic Oath ay nagmula sa sinaunang Greece — at isa sa pinakamabilis na pagbabago. Noong nakaraang siglo lamang, napunta tayo mula sa walang antibiotics sa pagkakaroon ng mga gene therapies na maaaring muling isulat ang DNA ng isang pasyente.
 Sinasaklaw ng file na ito kung paano gumagana ang gamot: ang mga pangunahing specialty, kung paano nasuri at ginagamot ang mga sakit, kung paano inaayos ang mga sistema ng pangangalagang pangkalusugan, at ang mga tanong na etikal na lumalabas kapag buhay ng tao ang nakataya.

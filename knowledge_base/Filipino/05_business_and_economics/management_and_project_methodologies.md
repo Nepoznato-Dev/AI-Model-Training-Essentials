@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Management and Project Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pamamahala at Pamamaraan ng Proyekto
 Ang pamamahala sa mga tao at proyekto ay kabilang sa mga pinaka-hinihingi na responsibilidad sa anumang organisasyon. Ang mga teknikal na kasanayan ay nagbibigay ng pagpasok, ngunit ang kakayahang manguna sa mga koponan, gumawa ng mga desisyon, makipag-usap nang epektibo, at maghatid ng mga resulta ay tumutukoy kung ang mga layunin ay nakakamit. Sinasaklaw ng file na ito ang mga balangkas, pamamaraan, at praktikal na kasanayan na inilalapat ng mga epektibong tagapamahala at pinuno ng proyekto.
 ---

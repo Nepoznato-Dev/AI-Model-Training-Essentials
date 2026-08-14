@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 스칼라
 Scala(Scalable Language)는 객체 지향 프로그래밍 패러다임과 함수형 프로그래밍 패러다임을 결합한 정적으로 유형이 지정되고 컴파일된 프로그래밍 언어입니다. Martin Odersky가 만들고 2004년에 처음 출시된 Scala는 JVM(JavaScript 및 Scala Native의 경우 Scala.js라고도 함)에서 실행됩니다. 이는 완전한 Java 상호 운용성을 유지하면서 Java의 장황함을 해결하도록 설계되었습니다.
 Scala는 Apache Spark(빅 데이터 처리 프레임워크)의 언어이며 데이터 엔지니어링, 분산 시스템 및 백엔드 서비스에서 광범위하게 사용됩니다. Twitter(현재 X), LinkedIn, Netflix, The Guardian과 같은 회사에서는 Scala를 사용합니다.

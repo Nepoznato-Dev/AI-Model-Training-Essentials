@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Linguistics and Language Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to language/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # لسانیات اور زبان کی سائنس
 لسانیات زبان کا سائنسی مطالعہ ہے — اس کی ساخت، معنی، استعمال، حصول، اور ارتقا۔ زبان انسانی رابطے کی ایک متعین خصوصیت ہے: یہ لامحدود طور پر نتیجہ خیز ہے (مقررین ایسے جملے بنا اور سمجھ سکتے ہیں جن کا سامنا انہیں پہلے کبھی نہیں ہوا ہو گا)، یہ ثقافتی طور پر منتقل ہوتی ہے (یہ خالص پیدائشی کے بجائے سیکھی جاتی ہے)، اور یہ مسلسل ترقی کر رہی ہے۔ یہ سمجھنا کہ زبان کیسے کام کرتی ہے، زبان کی ٹیکنالوجیز بنانے، پڑھانے، ترجمہ کرنے، یا زیادہ مؤثر طریقے سے بات چیت کرنے کے لیے کام کرنے والے ہر شخص کے لیے متعلقہ ہے۔
 ---

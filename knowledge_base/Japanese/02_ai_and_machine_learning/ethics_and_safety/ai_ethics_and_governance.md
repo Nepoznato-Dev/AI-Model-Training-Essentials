@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI の倫理とガバナンス
 AI システムは中立ではありません。これらは、トレーニングに使用されたデータ、作成者の価値観、およびそれらを導入する組織のインセンティブを反映しています。倫理とは、単に「これを構築できるか？」を問うことではありません。でも「そうすべきでしょうか？」ガバナンスとは、AI が責任を持って開発および使用されることを保証する構造 (法律、基準、監督機関) を構築することです。このファイルでは、AI の主要な倫理的側面と、それに対処するために出現しているガバナンスのフレームワークについて説明します。
 ---

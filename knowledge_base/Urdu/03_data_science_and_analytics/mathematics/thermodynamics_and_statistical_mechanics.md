@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تھرموڈینامکس اور شماریاتی میکانکس
 تھرموڈینامکس درجہ حرارت، دباؤ اور اینٹروپی کے لحاظ سے سسٹمز کے میکروسکوپک رویے کو بیان کرتی ہے - یہ جانے بغیر کہ ایٹم کس طرح کے نظر آتے ہیں۔ شماریاتی میکانکس نیچے سے اوپر سے تھرموڈینامکس کی وضاحت کرتا ہے: یہ بڑی تعداد میں ذرات کے خوردبینی رویے سے میکروسکوپک خصوصیات حاصل کرتا ہے۔ ایک ساتھ مل کر، وہ توانائی، اینٹروپی، اور توازن کی گہری سمجھ فراہم کرتے ہیں — ایسے تصورات جو انفارمیشن تھیوری، مشین لرننگ اور اس سے آگے منتقل ہو چکے ہیں۔
 ---

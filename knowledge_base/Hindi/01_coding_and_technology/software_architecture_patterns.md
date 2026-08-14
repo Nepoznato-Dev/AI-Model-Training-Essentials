@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # सॉफ्टवेयर आर्किटेक्चर पैटर्न
 आर्किटेक्चर संरचनात्मक निर्णयों का एक सेट है कि एक प्रणाली कैसे व्यवस्थित की जाती है - इसमें कौन से घटक हैं, वे कैसे संचार करते हैं, और जिम्मेदारियां कहां हैं। अच्छा आर्किटेक्चर किसी सिस्टम को समझना, संशोधित करना और स्केल करना आसान बनाता है। ख़राब वास्तुकला हर परिवर्तन को संघर्षपूर्ण बना देती है। यह फ़ाइल प्रमुख पैटर्न, प्रत्येक का उपयोग कब करना है और इसमें शामिल ट्रेड-ऑफ़ को कवर करती है।
 ---

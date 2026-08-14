@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Геопространственный анализ
 Геопространственный анализ — это процесс изучения данных, имеющих географический компонент — координаты, адреса, границы или любые данные, привязанные к местоположению на Земле. Он отвечает на такие вопросы, как «где находятся наши клиенты?», «какой оптимальный маршрут?» и «как меняется землепользование с течением времени?». Каждый набор данных имеет пространственное измерение, и его понимание открывает возможность понять, чего не хватает чистому статистическому анализу.
 ---

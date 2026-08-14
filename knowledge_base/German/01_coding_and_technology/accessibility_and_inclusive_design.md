@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Barrierefreiheit und integratives Design
 Barrierefreiheit (oft als a11y abgekürzt) ist die Praxis, Software für jedermann nutzbar zu machen – auch für Menschen mit Seh-, Hör-, motorischen, kognitiven und neurologischen Behinderungen. In vielen Ländern ist dies gesetzlich vorgeschrieben und eine gängige technische Praxis. Barrierefreie Software ist eine bessere Software für alle, da die Designentscheidungen, die behinderte Benutzer unterstützen – klare Struktur, Tastaturnavigation, ausreichender Kontrast, lesbarer Text – das Erlebnis für alle Benutzer verbessern.
 ---

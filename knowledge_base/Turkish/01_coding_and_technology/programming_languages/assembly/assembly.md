@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Montaj Dili
 Assembly dili, insan tarafından okunabilen en düşük seviyeli programlama dilidir. Ham ikili kod yerine anımsatıcı kodları (`MOV`, `ADD`,`JMP`gibi) kullanarak bir bilgisayarın makine kodu talimatlarının doğrudan temsilini sağlar. Her derleme dili belirli bir işlemci mimarisine (x86, ARM, MIPS, RISC-V) özeldir; bir mimari için yazılan kod diğerinde çalışmaz.
 Montaj dili uygulamalar oluşturmak için kullanılmaz. Donanım üzerinde mutlak kontrole ihtiyaç duyduğunuzda kullanılır: işletim sistemi çekirdekleri, aygıt sürücüleri, önyükleyiciler, yerleşik donanım yazılımı, performans açısından kritik kod bölümleri yazma, tersine mühendislik ve bilgisayarların talimatları gerçekte nasıl yürüttüğünü anlama.

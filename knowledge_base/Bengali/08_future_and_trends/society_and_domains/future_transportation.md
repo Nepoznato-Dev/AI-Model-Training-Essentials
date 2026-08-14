@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভবিষ্যৎ পরিবহন
 ## ওভারভিউ
 A থেকে B তে পাওয়া খুব আলাদা দেখতে হবে। স্ব-চালিত গাড়ি ইতিমধ্যেই পাবলিক রাস্তায়। বৈদ্যুতিক বিমান পরীক্ষামূলক ফ্লাইট সম্পন্ন করছে। হাইপারলুপ ধারণা ভ্যাকুয়াম টিউবে ট্রেন-গতির ভ্রমণের প্রতিশ্রুতি দেয়। এবং উড়ন্ত ট্যাক্সি - একবার কার্টুনের জিনিস - শংসাপত্রে প্রবেশ করছে। আমরা কীভাবে চলছি তা পুনর্নির্মাণকারী প্রযুক্তি জুড়ে খেলার অবস্থা এখানে।

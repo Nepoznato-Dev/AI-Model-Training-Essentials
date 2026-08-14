@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sining Biswal
 Ang visual art ay ang pinakalumang paraan ng komunikasyon ng sangkatauhan — mula sa mga kweba na painting ng Lascaux hanggang sa mga digital installation sa ngayon. Ang pag-unawa sa mga paggalaw ng sining, medium, at mga institusyong nagpapanatili ng mga malikhaing gawa ay nagbibigay sa iyo ng mas malalim na pagpapahalaga sa kung paano nagpahayag ang mga lipunan ng kagandahan, kapangyarihan, espirituwalidad, at hindi pagsang-ayon sa buong milenyo.
 ---

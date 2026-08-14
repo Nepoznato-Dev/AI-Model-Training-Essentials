@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #دارت
 دارت یک زبان برنامه نویسی بهینه شده برای مشتری است که توسط Google توسعه یافته است و اولین بار در سال 2013 منتشر شد. در حالی که دارت در ابتدا به عنوان یک جایگزین بالقوه جاوا اسکریپت برای مرورگرهای وب قرار گرفت، اما هدف اصلی خود را به عنوان زبان پشت **Flutter** پیدا کرد - جعبه ابزار UI چند پلتفرمی گوگل برای ساخت برنامه های موبایل، وب، دسکتاپ و جاسازی شده از یک پایگاه کد واحد.
 دارت بهترین ویژگی‌های زبان‌های مدرن را ترکیب می‌کند: شی گرا است، تایپ اختیاری دارد (ایمنی تهی صدا از Dart 3)، از برنامه‌نویسی ناهمزمان با`async`/`await`پشتیبانی می‌کند، و به کد ماشین بومی (برای موبایل/دسک‌تاپ) و جاوا اسکریپت (برای وب) کامپایل می‌شود.

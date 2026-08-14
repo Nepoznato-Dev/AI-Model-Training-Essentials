@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Earth Science"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ارتھ سائنس
 زمین سائنس اس سیارے کا مطالعہ کرتی ہے جس پر ہم رہتے ہیں - اس کی ساخت، عمل، تاریخ، اور نظام جو اسے قابل رہائش بناتے ہیں۔ یہ ارضیات (ٹھوس زمین)، بحر علم (سمندر)، موسمیات (ماحول اور موسم) اور موسمیات (طویل مدتی آب و ہوا کے نمونوں) پر محیط ہے۔ جو چیز ان شعبوں کو متحد کرتی ہے وہ یہ سمجھنا ہے کہ زمین ایک متحرک نظام ہے: اس کا اندرونی حصہ مسلسل حرکت کر رہا ہے، اس کی سطح کو نئی شکل دی جا رہی ہے، اور اس کا ماحول اور سمندر پیچیدہ طریقوں سے تعامل کرتے ہیں۔
 ---

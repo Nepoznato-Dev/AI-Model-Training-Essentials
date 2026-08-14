@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Time Series and Forecasting"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Szeregi czasowe i prognozowanie
 Dane szeregów czasowych to wszelkie dane gromadzone w czasie: ceny akcji, odczyty temperatury, ruch na stronie internetowej, dane dotyczące sprzedaży, monitory tętna, zużycie energii. Prognozowanie oznacza przewidywanie przyszłych wartości w oparciu o wzorce z przeszłości. Jest to jedno z najcenniejszych zastosowań analityki danych w praktyce i jedno z najtrudniejszych, ponieważ przyszłość jest naprawdę niepewna, a szeregi czasowe w świecie rzeczywistym są pełne szumów, sezonowości i pęknięć strukturalnych.
 ---

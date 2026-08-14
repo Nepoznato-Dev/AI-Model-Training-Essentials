@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ada - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای Ada (2012/2022) ارائه می دهد. این مرجع اصلی Ada را با تمرکز بر الگوهای نحوی جامع، وظایف، اشیاء محافظت شده، ژنریک ها و برنامه نویسی حیاتی ایمنی تکمیل می کند.
 ---

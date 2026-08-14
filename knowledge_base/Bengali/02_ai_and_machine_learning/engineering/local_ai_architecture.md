@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Local AI Architecture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্থানীয় এআই আর্কিটেকচার
 বৃহৎ ভাষার মডেলগুলি সম্পূর্ণরূপে অন-ডিভাইস চালানোর জন্য একটি ব্যবহারিক নির্দেশিকা — হার্ডওয়্যার বিবেচনা, অনুমান ইঞ্জিন, মেমরি অপ্টিমাইজেশন, এবং প্রান্ত স্থাপনের জন্য সিস্টেম ডিজাইন।
 ---

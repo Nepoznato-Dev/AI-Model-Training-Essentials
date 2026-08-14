@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #جولیا
 جولیا یک زبان برنامه نویسی سطح بالا و با کارایی بالا است که برای محاسبات فنی و علمی طراحی شده است. جولیا برای اولین بار در سال 2012 منتشر شد (1.0 در سال 2018)، جولیا برای حل "مشکل دو زبانه" ایجاد شد - جایی که دانشمندان در Python/R نمونه اولیه را انجام می دهند اما برای عملکرد تولید در C/C++/Fortran بازنویسی می کنند. جولیا قصد دارد به آسانی پایتون اما به سرعت سی باشد.
 جولیا از تلفیقی به‌موقع (JIT) از طریق LLVM برای دستیابی به عملکرد نزدیک به C و در عین حال حفظ یک احساس تعاملی و پویا استفاده می‌کند. دارای پشتیبانی درجه یک برای محاسبات موازی، پردازش توزیع شده و یک سیستم نوع پیچیده با ارسال چندگانه است.

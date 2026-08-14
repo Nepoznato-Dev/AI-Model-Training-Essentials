@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সংখ্যাগত পদ্ধতি
 সংখ্যাসূচক পদ্ধতি হল গাণিতিক তত্ত্ব এবং ব্যবহারিক গণনার মধ্যে সেতু। যদিও বিশুদ্ধ গণিত প্রমাণ করে যে সমাধানগুলি বিদ্যমান, সংখ্যাগত পদ্ধতিগুলি আসলে সসীম নির্ভুলতার আনুমানিক উত্তরগুলি গণনা করে। প্রতিটি মেশিন লার্নিং মডেল, পদার্থবিদ্যা সিমুলেশন, এবং ডেটা বিশ্লেষণ পাইপলাইন শেষ পর্যন্ত সংখ্যাসূচক গণনার উপর নির্ভর করে। নির্ভরযোগ্য সফ্টওয়্যার তৈরির জন্য এই পদ্ধতিগুলি বোঝা — তাদের নির্ভুলতা, স্থিতিশীলতা এবং সীমাবদ্ধতাগুলি — অপরিহার্য৷
 ---

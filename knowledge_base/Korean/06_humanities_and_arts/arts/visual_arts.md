@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 시각 예술
 시각 예술은 라스코의 동굴 벽화부터 오늘날의 디지털 설치물에 이르기까지 인류의 가장 오래된 의사소통 형태입니다. 예술 운동, 매체, 창작 작품을 보존하는 기관을 이해하면 사회가 수천 년에 걸쳐 아름다움, 힘, 영성 및 반대 의견을 어떻게 표현했는지 더 깊이 이해할 수 있습니다.
 ---

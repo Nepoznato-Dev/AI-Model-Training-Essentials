@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Причинно-следственный вывод
 Причинный вывод — это наука, позволяющая определить, действительно ли одна вещь вызывает другую, а не только то, связаны ли они между собой. Корреляция говорит вам, что две переменные движутся вместе. Причинно-следственная связь говорит вам, что изменение одного приведет к изменению другого. Это различие имеет огромное значение в медицине (работает ли этот препарат?), политике (сокращает ли это вмешательство бедность?), бизнесе (увеличивает ли эта рекламная кампания продажи?) и науке (объясняет ли этот механизм это явление?).
 ---

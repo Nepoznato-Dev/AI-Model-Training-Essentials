@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Feature Engineering
 Ang feature engineering ay ang proseso ng pagbabago ng raw data sa mga representasyon na ginagawang mas epektibo ang mga modelo ng machine learning. Madalas itong inilalarawan bilang pinakamahalagang hakbang sa pipeline ng ML — ang mga feature na ibinibigay mo sa isang modelo ay mas mahalaga kaysa sa algorithm na pipiliin mo. Ang isang simpleng modelo na may mahusay na pagkakagawa ng mga tampok ay karaniwang hihigit sa isang kumplikadong modelo na may hilaw, hindi naprosesong mga input. Ang sining ay nakasalalay sa pag-unawa sa parehong domain at sa data nang sapat upang lumikha ng mga senyales na matututuhan ng modelo.
 ---

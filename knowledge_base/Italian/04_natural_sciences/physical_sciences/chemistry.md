@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Chimica
 Se la fisica è la regola del gioco, la chimica è ciò che accade quando i pezzi interagiscono. La chimica studia come gli atomi si legano, si dividono e si riorganizzano, vale a dire come si comportano tutti i materiali. Colma il divario tra la fisica fondamentale e la complessità della biologia, della geologia e dell’ingegneria.
 ---

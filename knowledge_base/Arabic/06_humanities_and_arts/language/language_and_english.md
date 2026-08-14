@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اللغة والانجليزية
 هناك ما يقرب من 7000 لغة يتم التحدث بها في العالم اليوم. اللغة الإنجليزية هي اللغة الأكثر انتشارًا كلغة ثانية وهي بمثابة اللغة الافتراضية للأعمال التجارية الدولية والعلوم والطيران والإنترنت. سواء كانت كتابة وثائق التعليمات البرمجية، أو قراءة الأوراق البحثية، أو التواصل عبر الحدود، فإن إجادة اللغة الإنجليزية - القواعد والمفردات والبلاغة - هي واحدة من أكثر المهارات العملية التي يمكن للمرء تطويرها.
 يغطي هذا الملف الأساسيات: القواعد النحوية، وعلامات الترقيم، والمزالق الشائعة، وتقنية الكتابة، والتواصل الواضح.

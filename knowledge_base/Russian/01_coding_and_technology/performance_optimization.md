@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Оптимизация производительности
 Оптимизация производительности — это практика ускорения работы программного обеспечения: сокращение времени отклика, увеличение пропускной способности, снижение использования памяти и устранение узких мест. Это один из самых важных навыков, которыми может обладать разработчик, потому что медленное программное обеспечение теряет пользователей, тратит ресурсы и всех расстраивает. Но это также одна из самых распространенных ошибок: разработчики оптимизируют неправильные вещи, основываясь на интуиции, а не на фактах.
 ---

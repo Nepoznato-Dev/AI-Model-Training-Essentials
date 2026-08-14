@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # التقنيات الناشئة
 ## ملخص
 تعمل بعض التقنيات على إنشاء فئات جديدة تمامًا من القدرات بدلاً من تحسين الفئات الموجودة بشكل تدريجي. تهدف الحوسبة الكمومية إلى حل المشكلات التي قد تستغرق الآلات الكلاسيكية آلاف السنين. توفر طاقة الاندماج إمكانية الحصول على طاقة نظيفة لا حدود لها تقريبًا. واجهات الدماغ والحاسوب هي جسر بين العقل والآلة. تمكن البيولوجيا التركيبية من إعادة كتابة الكود البيولوجي. تصف الأقسام التالية موقع كل من هذه الحدود اليوم وأين تشير الاتجاهات الحالية إلى أنها تتجه.

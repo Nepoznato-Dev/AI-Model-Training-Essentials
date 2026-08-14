@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Chemistry"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Hoá học
 Nếu vật lý là quy luật của trò chơi thì hóa học là điều xảy ra khi các mảnh tương tác với nhau. Hóa học nghiên cứu cách các nguyên tử liên kết, tách rời và sắp xếp lại - nghĩa là cách thức hoạt động của tất cả các vật liệu. Nó thu hẹp khoảng cách giữa vật lý cơ bản và sự phức tạp của sinh học, địa chất và kỹ thuật.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erişilebilirlik ve Kapsayıcı Tasarım
 Erişilebilirlik (genellikle a11y olarak kısaltılır), yazılımın görsel, işitsel, motor, bilişsel ve nörolojik engelli kişiler de dahil olmak üzere herkes tarafından kullanılabilir hale getirilmesi uygulamasıdır. Birçok yargı alanında yasal bir zorunluluktur ve standart bir mühendislik uygulamasıdır. Erişilebilir yazılım herkes için daha iyi bir yazılımdır çünkü engelli kullanıcıları destekleyen tasarım kararları (açık yapı, klavyede gezinme, yeterli kontrast, okunabilir metin) tüm kullanıcılar için deneyimi geliştirir.
 ---

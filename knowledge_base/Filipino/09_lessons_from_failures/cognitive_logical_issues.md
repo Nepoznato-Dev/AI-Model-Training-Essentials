@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mga Cognitive Biases at Logical Fallacies
 Pinagsasama-sama ng dokumentong ito ang mga cognitive bias, lohikal na kamalian, at mga error sa pangangatwiran na nakakaapekto sa paggawa ng desisyon ng tao at mga output ng AI system.
 ---

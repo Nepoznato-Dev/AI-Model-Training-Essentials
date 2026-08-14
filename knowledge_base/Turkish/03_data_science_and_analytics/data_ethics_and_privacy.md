@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Ethics and Privacy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Veri Etiği ve Gizlilik
 Veri etiği, veri toplama, analiz ve dağıtımının insanların haklarını, özerkliğini ve refahını nasıl etkilediğinin incelenmesidir. Gizlilik, kişisel bilgileri kimin kontrol ettiği ve nasıl paylaşıldığıyla ilgili özel bir konudur. Bu konular akademik tartışmalardan ön sayfa haberlerine taşındı: GDPR'nin uygulanması, milyarlarca kullanıcıyı etkileyen veri ihlalleri ve teknoloji şirketlerinin veri uygulamalarının demokrasi, eşitlik ve bireysel özgürlük açısından gerçek sonuçlar doğurduğuna dair artan kamuoyu farkındalığı.
 ---

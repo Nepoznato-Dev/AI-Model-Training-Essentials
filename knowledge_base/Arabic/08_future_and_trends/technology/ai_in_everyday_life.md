@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الذكاء الاصطناعي في الحياة اليومية
 لم يعد الذكاء الاصطناعي مفهومًا مستقبليًا، بل أصبح جزءًا لا يتجزأ من الحياة اليومية. فمنذ اللحظة التي تستيقظ فيها وتفحص هاتفك (تحدد خوارزميات التوصية الإشعارات التي تراها) إلى اللحظة التي تغفو فيها (يقوم مكبر الصوت الذكي الخاص بك بمعالجة أمرك الأخير)، تتخذ أنظمة الذكاء الاصطناعي قرارات نيابة عنك، ومن أجلك، وأحيانًا عنك. إن فهم مكان ظهور الذكاء الاصطناعي، وكيفية عمله على المستوى الأساسي، وما هي آثاره لم يعد أمرًا اختياريًا، بل أصبح أحد متطلبات المواطنة المستنيرة في القرن الحادي والعشرين.
 ---

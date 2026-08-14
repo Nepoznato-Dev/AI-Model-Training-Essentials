@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yöneylem Araştırması
 Yöneylem araştırması (OR), matematiksel yöntemlerin karar verme sürecine uygulanmasıdır. İkinci Dünya Savaşı sırasında askeri lojistik için doğmuş olan bu şirket, artık tedarik zincirlerini optimize ediyor, havayollarını programlıyor, teslimat filolarını yönlendiriyor, envanterleri yönetiyor ve kaynakları her sektöre tahsis ediyor. VEYA, kısıtlamalar altında mümkün olan en iyi kararları vermek için matematiksel araç seti sağlar.
 ---

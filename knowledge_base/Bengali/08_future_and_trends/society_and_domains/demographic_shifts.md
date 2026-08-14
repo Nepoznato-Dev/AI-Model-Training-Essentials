@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # জনসংখ্যাগত পরিবর্তন
 ## ওভারভিউ
 জনসংখ্যাই নিয়তি - বা অন্তত তারা এর সাথে দৃঢ়ভাবে ছন্দবদ্ধ। বিশ্বের জনসংখ্যা দ্রুত বার্ধক্য পাচ্ছে, নতুন প্যাটার্নে স্থানান্তরিত হচ্ছে, নজিরবিহীন হারে শহরগুলিতে ক্লাস্টার হচ্ছে এবং প্রজন্মগত লাইনে বিভক্ত হচ্ছে যা ভোটদানের আচরণ থেকে ভোক্তাদের অভ্যাস পর্যন্ত সবকিছুকে রূপ দেয়। এই পরিবর্তনগুলি কয়েক দশক ধরে চলবে, কিন্তু তাদের প্রভাব ইতিমধ্যেই দৃশ্যমান। এখানে চারটি বড় প্রবণতা এবং তাদের অর্থ কী।

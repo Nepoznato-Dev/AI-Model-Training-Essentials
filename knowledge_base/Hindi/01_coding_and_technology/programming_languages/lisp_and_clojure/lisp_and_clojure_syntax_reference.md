@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # लिस्प और क्लोजर - सिंटेक्स संदर्भ
 यह दस्तावेज़ कॉमन लिस्प और क्लोजर के लिए एक व्यापक, संरचित वाक्यविन्यास संदर्भ प्रदान करता है। यह एस-एक्सप्रेशन, मैक्रोज़, लगातार डेटा संरचनाओं और कार्यात्मक प्रोग्रामिंग पैटर्न पर ध्यान केंद्रित करके मुख्य लिस्प/क्लोजर संदर्भ को पूरक करता है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Technologie climatique et innovation verte
 La technologie climatique englobe les outils, systèmes et innovations conçus pour réduire les émissions de gaz à effet de serre, s'adapter au changement climatique et assurer la transition de l'économie mondiale vers une base durable. Il s’agit sans doute du domaine technologique le plus important du 21e siècle : la différence entre un réchauffement gérable de 1,5°C et un réchauffement catastrophique de 3°C+ dépend en grande partie de la rapidité avec laquelle ces technologies peuvent être déployées à grande échelle. Le défi n’est pas seulement scientifique mais aussi économique, politique et social.
 ---

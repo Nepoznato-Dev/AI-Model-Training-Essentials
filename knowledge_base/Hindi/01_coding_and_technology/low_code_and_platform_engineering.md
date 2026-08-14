@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # लो-कोड और प्लेटफ़ॉर्म इंजीनियरिंग
 लो-कोड प्लेटफ़ॉर्म लोगों को न्यूनतम हस्त-लिखित कोड के साथ एप्लिकेशन बनाने देते हैं - आमतौर पर ड्रैग-एंड-ड्रॉप इंटरफेस, विज़ुअल वर्कफ़्लो और पूर्व-निर्मित कनेक्टर के माध्यम से। प्लेटफ़ॉर्म इंजीनियरिंग आंतरिक डेवलपर प्लेटफ़ॉर्म (आईडीपी) बनाने का अनुशासन है जो उत्पाद टीमों के लिए स्वयं-सेवा बुनियादी ढांचे, सीआई/सीडी और परिचालन टूलींग को आसान बनाता है। दोनों प्रवृत्तियाँ एक ही समस्या की प्रतिक्रियाएँ हैं: सॉफ़्टवेयर की माँग और इसे बनाने वाले डेवलपर्स की आपूर्ति के बीच का अंतर।
 ---

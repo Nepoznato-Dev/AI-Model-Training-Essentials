@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #JavaScript
 JavaScript, Brendan Eich tarafından 1995 yılında yalnızca 10 günde oluşturulan dinamik, yorumlanan bir programlama dilidir. Başlangıçta web sayfalarına etkileşim eklemek için tasarlanan bu dil, bugün dünyada en yaygın kullanılan programlama dili haline geldi. JavaScript her web tarayıcısında, Node.js aracılığıyla sunucularda, masaüstü uygulamalarında (Electron), mobil uygulamalarda (React Native) ve hatta gömülü sistemlerde çalışır.
 Dil, istemci tarafı web geliştirme için esasen tek seçenek olması açısından benzersizdir; her tarayıcı onu yerel olarak destekler. Bu tekel, tam yığın JavaScript'in (Node.js, Deno, Bun) yükselişiyle birleştiğinde onu vazgeçilmez kılıyor.

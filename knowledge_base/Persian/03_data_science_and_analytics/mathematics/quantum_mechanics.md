@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #مکانیک کوانتومی
 مکانیک کوانتومی نظریه فیزیک در کوچکترین مقیاس ها - اتم ها، الکترون ها، فوتون ها و ذرات بنیادی طبیعت است. جهان قطعی مکانیک کلاسیک را با احتمالات، برهم نهی ها و درهم تنیدگی جایگزین می کند. مکانیک کوانتومی علیرغم ماهیت ضد شهودی آن، دقیق ترین نظریه آزمایش شده در تمام علوم است. امروزه، اصول آن مستقیماً به محاسبات از طریق رایانه‌های کوانتومی مرتبط می‌شوند، که نوید حل مشکلات خاص را به صورت تصاعدی سریع‌تر از ماشین‌های کلاسیک می‌دهند.
 ---

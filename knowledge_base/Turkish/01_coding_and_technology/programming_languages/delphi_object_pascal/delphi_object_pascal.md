@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / Nesne Pascal'ı
 Delphi, orijinal olarak Borland (daha sonra Embarcadero, şimdi Idera) tarafından geliştirilen, Pascal tabanlı nesne yönelimli bir programlama dilidir. İlk olarak 1995 yılında "Delphi 1" olarak piyasaya sürülen bu yazılım, Windows masaüstü uygulamalarının hızlı uygulama geliştirmesi (RAD) için tasarlanmıştır. Dil resmi olarak Object Pascal olarak bilinir ve Delphi IDE görsel bir form tasarımcısı, entegre veritabanı araçları ve güçlü bir derleyici sağlar.
 Delphi, 1990'ların sonu ve 2000'lerin başında en popüler Windows geliştirme araçlarından biriydi. Popülaritesi önemli ölçüde azalmış olsa da, özellikle kurumsal masaüstü uygulamalarında, veritabanı ön uçlarında ve eski sistem bakımında özel bir kullanıcı tabanını koruyor. Modern Delphi (11/12), FireMonkey (FMX) çerçevesi aracılığıyla Windows, macOS, iOS ve Android için platformlar arası geliştirmeyi destekler.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lisp & Clojure"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lisp & Clojure
 Lisp ni lugha ya pili ya kongwe ya programu ya kiwango cha juu ambayo bado inatumika (baada ya Fortran), iliyoundwa na John McCarthy mnamo 1958. Ilianzisha dhana nyingi zinazochukuliwa kuwa za kawaida: ukusanyaji wa takataka, urejeshaji, miundo ya data ya miti, kuandika kwa nguvu, na wazo la programu kama data (homoiconicity). Kipengele tofauti cha Lisp ni sintaksia yake — msimbo umeandikwa kama mabano yaliyowekwa kwenye kiota (S-maneno), ambayo hufanya lugha iweze kutambulishwa kidogo na kuwezesha uratibu wa nguvu kupitia **makro**.
 Clojure ni lahaja ya kisasa ya Lisp iliyoundwa na Rich Hickey mwaka wa 2007. Inatumika kwenye JVM (pia ClojureScript ya JavaScript), inakumbatia utendakazi wa programu, kutobadilika, na upatanifu, na hutoa mwingiliano wa Java bila mshono. Clojure hutumiwa katika ukuzaji wa wavuti, usindikaji wa data na mifumo ya kifedha.

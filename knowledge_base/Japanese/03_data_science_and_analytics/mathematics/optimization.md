@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 最適化
 最適化は、一連の実行可能なソリューションから最適なソリューションを見つける数学です。それは、関数と制約が与えられたときに、どの入力が出力を最小化 (または最大化) するのかを尋ねます。最適化は機械学習のエンジンです。モデルをトレーニングするということは、損失関数を最小化することを意味します。これは、オペレーションズ リサーチ、経済学、エンジニアリング設計、および事実上あらゆる定量的分野に現れます。
 ---

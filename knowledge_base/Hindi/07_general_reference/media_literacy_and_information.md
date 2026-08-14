@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # मीडिया साक्षरता और सूचना मूल्यांकन
 हम सूचना-संतृप्त दुनिया में रहते हैं। हर दिन, औसत व्यक्ति हजारों मीडिया संदेशों के संपर्क में आता है - समाचार लेख, सोशल मीडिया पोस्ट, विज्ञापन, राजनीतिक भाषण, प्रभावशाली सामग्री, एआई-जनित पाठ। इसमें से अधिकांश ठीक है. इसमें से कुछ भ्रामक है. एक छोटी राशि जानबूझकर झूठी है। मीडिया साक्षरता इस परिदृश्य को समझने का कौशल है - हर चीज़ पर भरोसा करके नहीं, किसी चीज़ पर भरोसा करके नहीं, बल्कि क्या विश्वसनीय है और क्या नहीं, इसकी एक संतुलित समझ विकसित करके।
 ---

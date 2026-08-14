@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Safety and Alignment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # एआई सुरक्षा और संरेखण
 एआई सुरक्षा इस बात का अध्ययन है कि एआई सिस्टम कैसे बनाया जाए जो वही करें जो हम वास्तव में उनसे कराना चाहते हैं - और वे चीजें न करें जो हम नहीं चाहते हैं, भले ही उन्हें स्पष्ट रूप से खारिज नहीं किया गया हो। संरेखण एआई सिस्टम के लक्ष्यों और व्यवहारों को मानवीय इरादों से मेल कराने की विशिष्ट चुनौती है। जैसे-जैसे एआई सिस्टम अधिक सक्षम होते जाते हैं, ये प्रश्न अकादमिक जिज्ञासाओं से व्यावहारिक इंजीनियरिंग आवश्यकताओं की ओर स्थानांतरित हो जाते हैं।
 ---

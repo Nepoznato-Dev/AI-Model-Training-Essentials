@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Искусство и литература
 Творческое самовыражение человека — будь то в книгах, картинах, музыке или кино — является одним из самых устойчивых свидетельств цивилизации. Понимание основных жанров, движений и фигур дает контекст миру, в котором мы живем сегодня. Каждый роман, каждая симфония, каждый фильм говорят о том, что было раньше.
 ---

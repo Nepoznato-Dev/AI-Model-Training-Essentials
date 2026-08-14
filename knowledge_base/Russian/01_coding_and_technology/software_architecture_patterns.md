@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Software Architecture Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Шаблоны архитектуры программного обеспечения
 Архитектура — это набор структурных решений о том, как организована система: какие компоненты она имеет, как они взаимодействуют и где лежат обязанности. Хорошая архитектура упрощает понимание, модификацию и масштабирование системы. Плохая архитектура делает каждое изменение трудным. В этом файле описаны основные шаблоны, случаи использования каждого из них и возможные компромиссы.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভিজ্যুয়াল বেসিক
 ভিজ্যুয়াল বেসিক (ভিবি) মাইক্রোসফ্ট দ্বারা বিকাশিত একটি প্রোগ্রামিং ভাষা। এটি বেশ কয়েকটি প্রজন্মের মধ্য দিয়ে বিকশিত হয়েছে: মূল ভিজ্যুয়াল বেসিক (1991), ভিজ্যুয়াল বেসিক 6.0 (1998), VB.NET (2002, .NET ফ্রেমওয়ার্কের অংশ), এবং ভিজ্যুয়াল বেসিক ..NET (বর্তমানে, এখন .NET-এর অংশ হিসাবে কেবল "ভিজুয়াল বেসিক" বলা হয়)। গ্রাফিকাল ইউজার ইন্টারফেস এবং ইভেন্ট-চালিত প্রোগ্রামিং-এর উপর ফোকাস সহ, VB নতুনদের এবং দ্রুত অ্যাপ্লিকেশন ডেভেলপমেন্ট (RAD) এর কাছে পৌঁছানোর জন্য ডিজাইন করা হয়েছিল।
 আজ, VB.NET C# এর পাশাপাশি .NET ইকোসিস্টেমের অংশ হিসাবে চালিয়ে যাচ্ছে, যদিও মাইক্রোসফ্ট ইঙ্গিত দিয়েছে যে C# এগিয়ে যাচ্ছে প্রাথমিক ভাষা। ভিবি এন্টারপ্রাইজ পরিবেশে ব্যাপকভাবে ব্যবহৃত হয়, বিশেষ করে লিগ্যাসি উইন্ডোজ অ্যাপ্লিকেশন, অফিস অটোমেশন (ভিবিএ) এবং অভ্যন্তরীণ ব্যবসায়িক সরঞ্জামগুলির জন্য।

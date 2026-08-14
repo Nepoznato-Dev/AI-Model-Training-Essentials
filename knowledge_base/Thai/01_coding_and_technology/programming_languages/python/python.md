@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #หลาม
 Python เป็นภาษาโปรแกรมระดับสูงที่มีการตีความและมีวัตถุประสงค์ทั่วไป สร้างขึ้นโดย Guido van Rossum และเปิดตัวครั้งแรกในปี 1991 โดยจัดลำดับความสำคัญของความสามารถในการอ่านโค้ดผ่านการเยื้องที่สำคัญและไวยากรณ์ที่สะอาดตาที่อ่านได้ใกล้เคียงกับภาษาอังกฤษธรรมดา Python มีการพิมพ์แบบไดนามิก รวบรวมขยะ และรองรับกระบวนทัศน์การเขียนโปรแกรมหลายรูปแบบ รวมถึงการเขียนโปรแกรมเชิงขั้นตอน เชิงวัตถุ และเชิงฟังก์ชัน
 ปัจจุบัน Python เป็นภาษาที่โดดเด่นในด้าน AI/ML วิทยาศาสตร์ข้อมูล การประมวลผลเชิงวิทยาศาสตร์ และระบบอัตโนมัติ ในขณะที่ยังคงเป็นหนึ่งในภาษาที่ดีที่สุดสำหรับผู้เริ่มต้น เอกลักษณ์คู่นั้น (ง่ายพอสำหรับสคริปต์แรก ทรงพลังพอที่จะฝึกฝนโมเดลภาษาขนาดใหญ่) คือสิ่งที่ทำให้มันแตกต่าง

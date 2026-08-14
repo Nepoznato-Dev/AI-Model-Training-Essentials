@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Low-Code и платформенная инженерия
 Платформы с низким кодом позволяют людям создавать приложения с минимальным написанием вручную кода — обычно с помощью интерфейсов перетаскивания, визуальных рабочих процессов и готовых коннекторов. Проектирование платформ — это дисциплина создания внутренних платформ разработчиков (IDP), которые упрощают командам разработчиков самообслуживание инфраструктуры, CI/CD и операционных инструментов. Обе тенденции являются ответом на одну и ту же проблему: разрыв между спросом на программное обеспечение и предложением разработчиков, которые могут его создать.
 ---

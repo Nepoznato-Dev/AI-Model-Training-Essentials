@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #สนิม
 Rust เป็นภาษาโปรแกรมคอมไพล์แบบคงที่ซึ่งเปิดตัวครั้งแรกในปี 2558 พัฒนาโดย Graydon Hoare ที่ Mozilla คำมั่นสัญญาที่กำหนดของ Rust คือ **ความปลอดภัยของหน่วยความจำโดยไม่ต้องเก็บขยะ** บรรลุสิ่งนี้ได้ผ่านระบบความเป็นเจ้าของ — ชุดของกฎที่บังคับใช้ ณ เวลาคอมไพล์ที่กำจัดข้อบกพร่องทุกประเภท (การยกเลิกตัวชี้แบบ null การแข่งขันของข้อมูล บัฟเฟอร์ล้น ใช้งานหลังเลิกใช้งาน) ในขณะที่สร้างโค้ดให้เร็วเท่ากับ C หรือ C++
 Rust ได้รับการโหวตให้เป็นภาษาโปรแกรมที่ "ชื่นชอบมากที่สุด" ในการสำรวจนักพัฒนา Stack Overflow เป็นเวลาหลายปีติดต่อกัน มีการใช้กันมากขึ้นในการเขียนโปรแกรมระบบ, WebAssembly, เครื่องมือ CLI, โครงสร้างพื้นฐานคลาวด์ และแทนที่ C/C++ ในบริบทที่มีความสำคัญต่อความปลอดภัย ตอนนี้เคอร์เนล Linux ยอมรับรหัสสนิมแล้ว

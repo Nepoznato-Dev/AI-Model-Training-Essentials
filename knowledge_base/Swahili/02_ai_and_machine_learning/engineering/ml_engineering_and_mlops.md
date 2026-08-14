@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "ML Engineering and MLOps"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Uhandisi wa ML na MLOps
 Kuunda modeli ya kujifunza mashine ni nusu tu ya vita. Kuiingiza katika toleo la umma, kuifanya ifanye kazi kwa uhakika, ufuatiliaji wa kuteleza, na kuirudia - hapo ndipo uhandisi wa ML na MLOps huingia. Faili hii inashughulikia mzunguko kamili wa maisha kutoka kwa majaribio hadi mfumo wa uzalishaji.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Alimentation, agriculture et nutrition
 La nourriture est le besoin humain le plus fondamental et l’agriculture est le fondement de la civilisation. Le passage de la chasse et de la cueillette à l'agriculture – la révolution néolithique, il y a environ 10 000 ans – est ce qui a permis aux humains de construire des villes, de développer l'écriture et de créer tout ce que nous appelons « civilisation ». Aujourd’hui, l’agriculture emploie environ 27 % de la main-d’œuvre mondiale et produit environ 10 000 milliards de calories par jour. Pourtant, environ 800 millions de personnes souffrent encore de la faim, tandis que plus de 2 milliards sont en surpoids ou obèses. Le problème n’est pas la production, c’est la distribution, l’accès et les choix.
 ---

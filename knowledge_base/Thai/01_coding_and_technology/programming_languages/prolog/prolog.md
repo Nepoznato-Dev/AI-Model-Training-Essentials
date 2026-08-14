@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #โปรล็อก
 Prolog (การเขียนโปรแกรมในลอจิก) เป็นภาษาโปรแกรมลอจิกที่สร้างขึ้นในปี 1972 โดย Alain Colmerauer และ Philippe Roussel ไม่เหมือนกับภาษาอื่นๆ ทุกภาษาในรายการนี้ Prolog ไม่ได้บอกคอมพิวเตอร์ *วิธี* ในการแก้ปัญหา — คุณประกาศว่า *อะไร* เป็นจริง (ข้อเท็จจริงและกฎเกณฑ์) และระบบอนุมานของ Prolog จะระบุคำตอบผ่านการอนุมานเชิงตรรกะ
 Prolog เป็นภาษาทางเลือกสำหรับระบบผู้เชี่ยวชาญ การประมวลผลภาษาธรรมชาติ และการวิจัย AI ในทศวรรษ 1980 มันขับเคลื่อนโครงการระบบคอมพิวเตอร์รุ่นที่ห้าของญี่ปุ่นและใช้ในวัตสันของไอบีเอ็มเพื่อความเข้าใจภาษาธรรมชาติ ปัจจุบัน Prolog ใช้ในการแก้ไขข้อจำกัด การกำหนดเวลา การอนุมานประเภท การใช้เหตุผลทางกฎหมาย และปัญหาใดๆ ก็ตามที่แสดงออกมาเป็นความสัมพันธ์เชิงตรรกะโดยธรรมชาติ

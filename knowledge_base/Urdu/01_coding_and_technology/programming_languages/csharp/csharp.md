@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C#
 C# (تلفظ "C-sharp") ایک جدید، آبجیکٹ پر مبنی، ٹائپ سیف پروگرامنگ زبان ہے جسے مائیکرو سافٹ نے اینڈرس ہیجلسبرگ کی قیادت میں تیار کیا اور پہلی بار 2002 میں ریلیز کیا گیا۔ یہ .NET پلیٹ فارم پر چلتا ہے اور اسے C++ کی طاقت کو Visual Basic کی پیداواری صلاحیت کے ساتھ ملانے کے لیے ڈیزائن کیا گیا تھا۔ آج، C# ایک ورسٹائل، کراس پلیٹ فارم زبان ہے جو ویب ایپلیکیشنز (ASP.NET)، ڈیسک ٹاپ سافٹ ویئر (ونڈوز)، گیم ڈویلپمنٹ (یونٹی)، موبائل ایپس (MAUI)، کلاؤڈ سروسز (Azure) اور مزید کے لیے استعمال ہوتی ہے۔
 C# نے مستقل طور پر دوسری زبانوں کے بہترین خیالات کو جذب کیا ہے — LINQ, async/await, ریکارڈز، پیٹرن میچنگ — اسے سب سے زیادہ فیچر سے بھرپور اور ڈویلپر کے لیے موزوں زبانوں میں سے ایک بنا دیا ہے۔

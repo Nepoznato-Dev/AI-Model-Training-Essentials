@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Accessibilità e progettazione inclusiva
 L'accessibilità (spesso abbreviata in a11y) è la pratica di rendere il software utilizzabile da tutti, comprese le persone con disabilità visive, uditive, motorie, cognitive e neurologiche. Si tratta di un requisito legale in molte giurisdizioni e di una pratica ingegneristica standard. Il software accessibile è un software migliore per tutti, perché le decisioni di progettazione che supportano gli utenti disabili (struttura chiara, navigazione tramite tastiera, contrasto sufficiente, testo leggibile) migliorano l'esperienza per tutti gli utenti.
 ---

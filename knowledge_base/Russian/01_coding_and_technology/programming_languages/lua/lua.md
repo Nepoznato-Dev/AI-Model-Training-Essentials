@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Луа
 Lua — это легкий встраиваемый язык сценариев, предназначенный для расширения приложений. Lua, созданный в 1993 году в Папском католическом университете Рио-де-Жанейро в Бразилии, является одним из самых быстрых доступных языков сценариев. Его небольшой размер (интерпретатор занимает около 120 КБ) и простота делают его идеальным выбором для разработки сценариев разработки игр, встроенных систем и настройки.
 Lua наиболее известен как язык сценариев, лежащий в основе Roblox (игровая платформа с более чем 200 миллионами пользователей в месяц), дополнений World of Warcraft и многочисленных игровых движков (Love2D, Defold, Corona SDK). Он также используется в Nginx (OpenResty), Redis и Wireshark.

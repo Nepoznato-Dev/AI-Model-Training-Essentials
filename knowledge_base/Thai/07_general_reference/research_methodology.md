@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ระเบียบวิธีวิจัย
 ระเบียบวิธีวิจัยเป็นแนวทางที่เป็นระบบในการสืบสวนคำถาม ทดสอบสมมติฐาน และสร้างความรู้ที่เชื่อถือได้ ไม่ว่าคุณจะทำการทดลองทางวิทยาศาสตร์ แบบสำรวจทางสังคมศาสตร์ การวิเคราะห์ทางธุรกิจ หรือการวิจัยเชิงวิชาการ วิธีการที่คุณเลือกจะเป็นตัวกำหนดว่าสิ่งที่คุณค้นพบนั้นน่าเชื่อถือ ทำซ้ำได้ และมีประโยชน์หรือไม่ การศึกษาที่ออกแบบมาอย่างดีให้ผลลัพธ์ที่น่าเชื่อถือ การออกแบบที่ไม่ดีทำให้เกิดเสียงรบกวน - หรือแย่กว่านั้นคือคำตอบที่ผิดอย่างมั่นใจ
 ---

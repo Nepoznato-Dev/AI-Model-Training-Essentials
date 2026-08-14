@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Закон и правовые системы
 Закон – это набор правил, которые общество соглашается обеспечивать посредством своих институтов. Это не то же самое, что мораль: вы можете делать что-то законное, но аморальное, и что-то незаконное, но морально оправданное. Закон существует для того, чтобы обеспечивать предсказуемость: устанавливать, что разрешено, что запрещено и что происходит, когда правила нарушаются. Без этого споры решаются властью. При нем споры разрешаются в судебном порядке.
 Этот файл охватывает основные правовые системы, основные отрасли права и концепции, которые определяют, как правовые системы работают на практике.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิธีการเชิงตัวเลข
 วิธีการเชิงตัวเลขเป็นสะพานเชื่อมระหว่างทฤษฎีทางคณิตศาสตร์และการคำนวณเชิงปฏิบัติ แม้ว่าคณิตศาสตร์บริสุทธิ์จะพิสูจน์ว่ามีวิธีแก้ปัญหาอยู่ แต่จริงๆ แล้ววิธีการเชิงตัวเลขจะคำนวณคำตอบโดยประมาณเพื่อให้ได้ความแม่นยำอันจำกัด โมเดลแมชชีนเลิร์นนิง การจำลองทางฟิสิกส์ และไปป์ไลน์การวิเคราะห์ข้อมูลทุกรูปแบบต้องอาศัยการคำนวณเชิงตัวเลขในท้ายที่สุด การทำความเข้าใจวิธีการเหล่านี้ — ความแม่นยำ ความเสถียร และข้อจำกัด — เป็นสิ่งจำเป็นสำหรับการสร้างซอฟต์แวร์ที่เชื่อถือได้
 ---

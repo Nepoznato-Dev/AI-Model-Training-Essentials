@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Matemáticas
 Las matemáticas no son sólo una materia que se estudia en la escuela: sustentan casi todos los campos técnicos. La física lo utiliza para describir el universo. La informática lo utiliza para diseñar algoritmos. El aprendizaje automático lo utiliza para optimizar los pesos. Las finanzas lo utilizan para valorar el riesgo. No es necesario dominar cada rama, pero comprender el panorama (y saber dónde se aplica cada rama) hace que otros temas sean más fáciles de comprender.
 ---

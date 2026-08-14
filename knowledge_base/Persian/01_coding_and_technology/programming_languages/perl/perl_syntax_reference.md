@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Perl - مرجع نحو
 این سند یک مرجع جامع و ساختارمند برای Perl (5.38+) ارائه می دهد. این مرجع اصلی پرل را با تمرکز بر الگوهای نحوی جامع، عبارات منظم، مراجع و قدرت پردازش متن پرل تکمیل می کند.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Gores — Referensi Sintaks
 Dokumen ini menyediakan referensi sintaksis yang komprehensif dan terstruktur untuk Scratch 3.0. Ini melengkapi referensi Scratch utama dengan berfokus pada kategori blok yang lengkap, pola berbasis peristiwa, manajemen sprite, kloning, dan teknik pengkodean kreatif.
 ---

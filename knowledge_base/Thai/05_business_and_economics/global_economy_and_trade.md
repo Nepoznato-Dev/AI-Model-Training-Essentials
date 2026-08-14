@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เศรษฐกิจโลกและการค้า
 เศรษฐกิจโลกเป็นระบบที่ใหญ่ที่สุดและซับซ้อนที่สุดเท่าที่มนุษย์เคยสร้างมา ในปี 2568 GDP โลกมีมูลค่าเกิน 110 ล้านล้านดอลลาร์ ผู้คนมากกว่า 8 พันล้านคนผลิต ค้าขาย และบริโภคสินค้าและบริการข้ามพรมแดนทุกวัน การทำความเข้าใจว่าระบบนี้ทำงานอย่างไร — ใครซื้อขายอะไร ทำไมบางประเทศรวยและบางประเทศยากจน เงินเคลื่อนย้ายข้ามพรมแดนอย่างไร และเกิดอะไรขึ้นเมื่อระบบล่ม — เป็นสิ่งสำคัญสำหรับการนำทางในโลกสมัยใหม่
 ---

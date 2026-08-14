@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Visual Basic — Informacje o składni
 Ten dokument zawiera kompleksowe, uporządkowane informacje o składni języka Visual Basic (VB.NET). Uzupełnia główne odniesienia do języka Visual Basic, koncentrując się na wyczerpujących wzorcach składni, funkcjach OOP, LINQ, async/await i idiomach integracji .NET.
 ---

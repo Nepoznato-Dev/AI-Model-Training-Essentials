@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # 스크래치 — 일반적인 실수 및 안티 패턴
 이 문서는 수정 사항을 통해 스크래치에서 가장 흔히 발생하는 실수와 함정을 나열합니다.
 ---

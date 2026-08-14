@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 學習科學和教育學
 學習科學是對人們如何學習的跨領域研究—借鏡心理學、神經科學、教育和認知科學。教育學是教學的實踐和方法。他們共同解決了與任何教學、培訓、指導或設計教育內容的人相關的問題：什麼方法可以幫助人們有效學習？哪些常見的學習方法效率低？應如何建構教學以實現最佳保留和轉移？
 ---

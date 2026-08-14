@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Логика и критическое мышление
 Логика — это изучение обоснованных рассуждений: как построить обоснованные аргументы и выявить ошибочные. Критическое мышление — это дисциплинированная привычка подвергать сомнению предположения, оценивать доказательства и тщательно рассуждать. Эти навыки необходимы не только в математике и информатике, но и в повседневном принятии решений, научных исследованиях и навигации в богатом информацией мире.
 ---

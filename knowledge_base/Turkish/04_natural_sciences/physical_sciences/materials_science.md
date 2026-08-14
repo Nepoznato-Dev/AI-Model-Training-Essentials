@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Materials Science"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to physical_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Malzeme Bilimi
 Malzeme bilimi, bir malzemenin yapısının (atom, mikroskobik ve makroskobik ölçeklerde) özelliklerini nasıl belirlediğini ve istenen performansı elde etmek için bu yapıyı kontrol etmek için işleme yöntemlerinin nasıl kullanılabileceğini inceleyen çalışmadır. Şu tür soruların yanıtını veren alandır: Çelik neden güçlü ama ağırdır? Cam neden şeffaf ama kırılgandır? Daha hızlı şarj olan pilleri nasıl yapabiliriz? Mars koşullarında hangi malzemeler hayatta kalacak? Kullandığınız her teknoloji, malzemelerden yapılmıştır ve teknolojideki ilerlemeler neredeyse her zaman malzemelerde ilerlemeyi gerektirir.
 ---

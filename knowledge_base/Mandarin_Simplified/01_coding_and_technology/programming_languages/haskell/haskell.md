@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 哈斯克尔
 Haskell 是一种纯函数式、静态类型、延迟计算的编程语言。 Haskell 于 1990 年首次标准化（Haskell 90），并通过多个版本进行完善（Haskell 2010 是当前标准），Haskell 以其数学严谨性、强大的类型系统（具有类型类、单子和代数数据类型）以及对类型正确性的强调而闻名。
 Haskell 不是主流语言，但其影响力却是巨大的。诸如 monad、惰性求值和类型类之类的概念影响了 Rust、Swift、Kotlin、Scala 和 TypeScript。 Haskell 用于金融（渣打银行、巴克莱银行）、编译器（GHC）和形式验证。

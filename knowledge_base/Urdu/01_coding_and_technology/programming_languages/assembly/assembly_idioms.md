@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly — Idiomatic Patterns & Best Practices"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # اسمبلی - محاوراتی نمونے اور بہترین طرز عمل
 یہ گائیڈ صاف، برقرار رکھنے کے قابل اسمبلی کوڈ (NASM نحو کے ساتھ x86/x64 فوکس) لکھنے کے لیے محاوراتی نمونوں کا احاطہ کرتا ہے۔
 ---

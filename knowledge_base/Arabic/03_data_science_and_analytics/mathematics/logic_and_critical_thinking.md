@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # المنطق والتفكير النقدي
 المنطق هو دراسة الاستدلال الصحيح – كيفية بناء الحجج السليمة وتحديد الحجج المعيبة. التفكير النقدي هو العادة المنضبطة المتمثلة في التشكيك في الافتراضات وتقييم الأدلة والتفكير بعناية. هذه المهارات ضرورية ليس فقط في الرياضيات وعلوم الكمبيوتر، ولكن في عملية صنع القرار اليومية والبحث العلمي والتنقل في عالم غني بالمعلومات.
 ---

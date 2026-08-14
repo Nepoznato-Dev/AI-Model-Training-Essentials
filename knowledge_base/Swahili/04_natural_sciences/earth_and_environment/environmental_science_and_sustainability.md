@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sayansi ya Mazingira na Uendelevu
 Sayansi ya mazingira hutumia mbinu za fizikia, kemia, biolojia, jiolojia, na uchumi kwa swali: "Ni nini kinatokea kwa sayari yetu, na nini kinaweza kufanywa kuhusu hilo?" Ni nyanja ya taaluma mbalimbali - muunganiko wa taaluma nyingi - ambayo huchangia kwa kina chake cha uchanganuzi na umuhimu wake wa sera.
 Mvutano wa kimsingi katika sayansi ya mazingira ni huu: ustaarabu wa binadamu unategemea kuchimba rasilimali kutoka kwa mazingira, lakini kuchimba rasilimali hizo hubadilisha mazingira kwa njia ambazo zinaweza kudhoofisha mifumo tunayoitegemea. Kuelewa kwamba kitanzi cha maoni ni sehemu nzima kwa ufupi.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Real Analysis"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into real analysis"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Phân tích thực tế
 Phân tích thực tế là nền tảng chặt chẽ của phép tính. Trong khi phép tính cơ bản dạy bạn cách tính đạo hàm và tích phân, thì phép phân tích thực tế sẽ hỏi *tại sao* những kỹ thuật này hoạt động — và khi nào chúng thất bại. Nó cung cấp các định nghĩa chính xác về giới hạn, tính liên tục, sự hội tụ và tích hợp làm nền tảng cho lý thuyết xác suất, phân tích chức năng, tối ưu hóa và đảm bảo lý thuyết đằng sau các thuật toán học máy.
 ---

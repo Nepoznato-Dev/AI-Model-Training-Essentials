@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Space Exploration Roadmap"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 宇宙探査ロードマップ
 ＃＃ 概要
 私たちは宇宙探査の新たな黄金時代を生きています。 NASAのアルテミス計画は人類を月に帰還させようとしている。 SpaceX は、火星向けに設計された完全に再利用可能なロケットを構築しています。中国には独自の月と火星の野心的な計画がある。そして、衛星インターネットから宇宙旅行に至るまで、民間企業のグループが成長し、宇宙を商業に開放しつつあります。月から火星、そしてその先へのロードマップは次のとおりです。

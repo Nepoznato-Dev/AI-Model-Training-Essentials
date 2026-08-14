@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kiến thức truyền thông và đánh giá thông tin
 Chúng ta đang sống trong một thế giới bão hòa thông tin. Mỗi ngày, một người bình thường tiếp xúc với hàng nghìn thông điệp truyền thông - tin tức, bài đăng trên mạng xã hội, quảng cáo, bài phát biểu chính trị, nội dung có ảnh hưởng, văn bản do AI tạo ra. Hầu hết đều ổn. Một số trong đó là sai lệch. Một lượng nhỏ là cố ý sai. Hiểu biết về truyền thông là kỹ năng điều hướng bối cảnh này - không phải bằng cách tin tưởng vào mọi thứ, không phải bằng cách không tin tưởng gì cả, mà bằng cách phát triển ý thức đã được điều chỉnh về điều gì đáng tin cậy và điều gì không.
 ---

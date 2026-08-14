@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #بحوث العمليات
 بحوث العمليات (OR) هي تطبيق الأساليب الرياضية في اتخاذ القرار. نشأت خلال الحرب العالمية الثانية من أجل الخدمات اللوجستية العسكرية، وهي الآن تعمل على تحسين سلاسل التوريد، وجدولة شركات الطيران، وتوجيه أساطيل التسليم، وإدارة المخزونات، وتخصيص الموارد في كل صناعة. يوفر OR مجموعة الأدوات الرياضية لاتخاذ أفضل القرارات الممكنة في ظل القيود.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Organisational Design and Culture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تنظیمی ڈیزائن اور ثقافت
 تنظیمی ڈیزائن حکمت عملی کو مؤثر طریقے سے انجام دینے کے لیے ساخت، عمل، کردار اور فیصلے کے حقوق کا دانستہ انتظام ہے۔ ثقافت مشترکہ اقدار، عقائد، اصول، اور طرز عمل ہے جو لوگوں کے ساتھ مل کر کام کرنے کے طریقے کو تشکیل دیتے ہیں۔ ڈھانچہ فریم ورک فراہم کرتا ہے؛ ثقافت کی شکلیں رویے. کسی ڈھانچے کو کاغذ پر دوبارہ ڈیزائن کیا جا سکتا ہے، لیکن اگر ثقافت تبدیلی کی حمایت نہیں کرتی ہے، تو عمل درآمد ناکام ہو جائے گا۔ اسی طرح، غیر موثر ڈھانچے کے ساتھ جوڑا مضبوط ثقافت تنظیمی کارکردگی کو بتدریج کمزور کر دے گی۔ سب سے زیادہ مؤثر تنظیمیں دونوں کو مخاطب کرتی ہیں - اور تسلیم کرتی ہیں کہ وہ گہرے طور پر ایک دوسرے سے جڑے ہوئے ہیں۔
 ---

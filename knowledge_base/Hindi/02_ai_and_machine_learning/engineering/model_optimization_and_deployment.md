@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # मॉडल अनुकूलन और परिनियोजन
 एक बड़े एआई मॉडल को प्रशिक्षित करना एक महत्वपूर्ण उपलब्धि है, लेकिन इसे कुशलतापूर्वक तैनात करने के लिए सबसे अधिक इंजीनियरिंग प्रयास की आवश्यकता होती है। एक मॉडल जिसे प्रतिक्रिया देने में 10 सेकंड लगते हैं या आठ ए100 जीपीयू की आवश्यकता होती है, अधिकांश वास्तविक दुनिया के अनुप्रयोगों के लिए अव्यावहारिक है। मॉडल अनुकूलन स्वीकार्य गुणवत्ता बनाए रखते हुए मॉडल को छोटा, तेज और अधिक लागत प्रभावी बनाने की प्रक्रिया है। यह फ़ाइल उत्पादन में मॉडलों को तैनात करने के लिए परिमाणीकरण, छंटाई, आसवन और व्यावहारिक उपकरणों को शामिल करती है।
 ---

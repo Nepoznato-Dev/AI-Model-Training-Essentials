@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ازگر - عام غلطیاں اور اینٹی پیٹرن
 یہ دستاویز ازگر میں سب سے عام غلطیوں، ٹریپس، اور اینٹی پیٹرن کی فہرست بناتی ہے۔ ہر اندراج غلط نقطہ نظر کو ظاہر کرتا ہے، یہ بتاتا ہے کہ یہ کیوں ناکام ہوتا ہے، اور صحیح حل فراہم کرتا ہے۔ ان خرابیوں کو سمجھنے سے آپ کو زیادہ مضبوط، Pythonic کوڈ لکھنے میں مدد ملے گی۔
 ---

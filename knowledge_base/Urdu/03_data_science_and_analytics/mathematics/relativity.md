@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # رشتہ داری
 آئن اسٹائن کے نظریہ اضافیت نے خلا، وقت اور کشش ثقل کے بارے میں ہماری سمجھ میں انقلاب برپا کردیا۔ **خصوصی اضافیت** (1905) نے دکھایا کہ جگہ اور وقت الگ الگ نہیں ہیں بلکہ ایک ہی کپڑے میں بنے ہوئے ہیں جسے اسپیس ٹائم کہتے ہیں، اور یہ کہ روشنی کی رفتار تمام مبصرین کے لیے یکساں ہے۔ **عمومی اضافیت** (1915) نے کشش ثقل کو ایک قوت کے طور پر نہیں بلکہ ماس اور توانائی کی وجہ سے خلائی وقت کے گھماؤ کے طور پر دوبارہ تصور کیا۔ یہ نظریات GPS نیویگیشن، پارٹیکل ایکسلریٹر، اور بلیک ہولز اور کائنات کے ارتقاء کے بارے میں ہماری سمجھ کو مضبوط بناتے ہیں۔
 ---

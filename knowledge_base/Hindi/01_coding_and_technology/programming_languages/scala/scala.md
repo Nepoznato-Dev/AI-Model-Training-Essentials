@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # स्काला
 स्काला (स्केलेबल लैंग्वेज) एक सांख्यिकीय रूप से टाइप की गई, संकलित प्रोग्रामिंग भाषा है जो ऑब्जेक्ट-ओरिएंटेड और कार्यात्मक प्रोग्रामिंग प्रतिमानों को जोड़ती है। मार्टिन ओडरस्की द्वारा निर्मित और पहली बार 2004 में रिलीज़ किया गया, स्काला JVM (जावास्क्रिप्ट और स्काला नेटिव के लिए Scala.js भी) पर चलता है। इसे पूर्ण जावा इंटरऑपरेबिलिटी को बनाए रखते हुए जावा की वर्बोसिटी को संबोधित करने के लिए डिज़ाइन किया गया था।
 स्काला अपाचे स्पार्क (बड़ा डेटा प्रोसेसिंग ढांचा) के पीछे की भाषा है, और इसका उपयोग डेटा इंजीनियरिंग, वितरित सिस्टम और बैकएंड सेवाओं में बड़े पैमाने पर किया जाता है। ट्विटर (अब एक्स), लिंक्डइन, नेटफ्लिक्स और द गार्जियन जैसी कंपनियां स्काला का उपयोग करती हैं।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ایرلنگ اور ایلیکسیر
 ایرلنگ کو 1986 میں ایرکسن نے ٹیلی فون سوئچز کو پاور کرنے کے لیے بنایا تھا - جو بتاتا ہے کہ یہ ہم آہنگی، فالٹ ٹولرنس، اور تقسیم شدہ نظام کو تقریباً کسی بھی چیز سے بہتر کیوں سنبھالتا ہے۔ ایرلانگ کے عمل ہلکے، الگ تھلگ، اور صرف پیغام کے ذریعے بات چیت کرتے ہیں۔ جب کوئی عمل کریش ہو جاتا ہے تو ایک سپروائزر اسے دوبارہ شروع کر دیتا ہے۔ یہ "کریش ہونے دو" فلسفہ ایسے سسٹمز تیار کرتا ہے جو بغیر ٹائم ٹائم کے سالوں تک چلتے ہیں۔
 ایلیکسیر ایک جدید زبان ہے جو 2012 میں Jose Valim کی طرف سے Erlang کے VM (BEAM) کے اوپر بنائی گئی ہے۔ یہ ایرلنگ کی پیش کردہ ہر چیز کو برقرار رکھتی ہے — کنکرنسی، فالٹ ٹولرنس، ڈسٹری بیوشن — لیکن ایک دوستانہ نحو، میٹا پروگرامنگ، اور بہترین ٹولنگ (مکس پیکیج مینیجر، ہیکس پیکیج رجسٹری) کا اضافہ کرتی ہے۔ ایلیکسیر بڑے پیمانے پر ویب ایپلیکیشنز (فینکس فریم ورک کے ذریعے)، ریئل ٹائم سسٹمز، اور ایمبیڈڈ ڈیوائسز (بذریعہ اعصاب) کے لیے استعمال ہوتا ہے۔

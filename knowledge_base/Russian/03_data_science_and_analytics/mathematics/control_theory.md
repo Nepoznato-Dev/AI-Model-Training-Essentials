@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Теория управления
 Теория управления — это математика, позволяющая заставить системы вести себя так, как вы хотите. От термостатов до автопилотов, от роботизированного оружия до химических реакторов — системы управления чувствуют, принимают решения и действуют для поддержания желаемого поведения. Эта область предоставляет точные инструменты для анализа стабильности, производительности и надежности — концепций, которые перекочевали в обучение с подкреплением, настройку гиперпараметров и адаптивные системы.
 ---

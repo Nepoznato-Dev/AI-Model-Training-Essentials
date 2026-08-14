@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Aprendizagem por Reforço
 O aprendizado por reforço (RL) é como as máquinas aprendem a tomar sequências de decisões por tentativa e erro. Ao contrário da aprendizagem supervisionada, onde a resposta correta é fornecida para cada exemplo, a RL dá ao agente apenas um sinal de recompensa – e o agente deve descobrir quais ações levam aos melhores resultados ao longo do tempo. É a abordagem por trás do AlphaGo, do controle robótico, da IA ​​de jogos e - principalmente - do RLHF, a técnica usada para alinhar grandes modelos modernos de linguagem com as preferências humanas.
 ---

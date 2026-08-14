@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teori Informasi
 Teori informasi, yang didirikan oleh Claude Shannon pada tahun 1948, mengkuantifikasi informasi itu sendiri. Berapa banyak pesan yang disampaikan kepada Anda? Berapa banyak Anda dapat mengompresi data? Seberapa cepat Anda dapat berkomunikasi melalui saluran yang bising? Pertanyaan-pertanyaan ini memiliki jawaban matematis yang tepat. Selain komunikasi, teori informasi telah menjadi dasar pembelajaran mesin — entropi silang adalah fungsi kerugian default untuk klasifikasi, divergensi KL mengukur kesamaan distribusi, dan informasi timbal balik mendorong pemilihan fitur.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # علم الأعصاب
 علم الأعصاب هو دراسة الجهاز العصبي - الدماغ والحبل الشوكي وجميع الأعصاب التي تربطهم بالجسم. فهو يمتد على مستويات متعددة: من الجزيئات والجينات، إلى الخلايا العصبية الفردية والمشابك العصبية، إلى الدوائر ومناطق الدماغ، إلى السلوك والإدراك والوعي. الدماغ هو البناء الأكثر تعقيدًا في الكون المعروف، حيث يحتوي على ما يقرب من 86 مليار خلية عصبية متصلة بواسطة تريليونات من المشابك العصبية، وفهم كيفية عمله هو أحد التحديات العظيمة التي يواجهها العلم.
 ---

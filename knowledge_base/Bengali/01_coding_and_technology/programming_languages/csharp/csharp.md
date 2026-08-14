@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C#"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সি#
 C# (উচ্চারিত "C-sharp") একটি আধুনিক, অবজেক্ট-ওরিয়েন্টেড, টাইপ-নিরাপদ প্রোগ্রামিং ভাষা অ্যান্ডার্স হেজলসবার্গের নেতৃত্বে মাইক্রোসফ্ট দ্বারা বিকাশ করা হয়েছে এবং 2002 সালে প্রথম প্রকাশিত হয়েছে। এটি .NET প্ল্যাটফর্মে চলে এবং ভিজ্যুয়াল বেসিকের উত্পাদনশীলতার সাথে C++ এর শক্তিকে একত্রিত করার জন্য ডিজাইন করা হয়েছিল। আজ, C# হল একটি বহুমুখী, ক্রস-প্ল্যাটফর্ম ভাষা যা ওয়েব অ্যাপ্লিকেশন (ASP.NET), ডেস্কটপ সফ্টওয়্যার (উইন্ডোজ), গেম ডেভেলপমেন্ট (ইউনিটি), মোবাইল অ্যাপস (MAUI), ক্লাউড পরিষেবা (Azure) এবং আরও অনেক কিছুর জন্য ব্যবহৃত হয়।
 C# অবিচ্ছিন্নভাবে অন্যান্য ভাষার সেরা ধারণাগুলিকে শোষণ করেছে — LINQ, async/await, রেকর্ড, প্যাটার্ন ম্যাচিং — এটিকে উপলব্ধ সবচেয়ে বৈশিষ্ট্য সমৃদ্ধ এবং বিকাশকারী-বান্ধব ভাষাগুলির মধ্যে একটি করে তুলেছে।

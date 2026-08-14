@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # परिदृश्य योजना
 ## अवलोकन
 कोई भी भविष्य की भविष्यवाणी नहीं कर सकता - लेकिन आप कई संभावित भविष्यों के लिए तैयारी कर सकते हैं। परिदृश्य नियोजन, शीत युद्ध के थिंक टैंक में पैदा हुआ और 1970 के दशक के तेल संकट के दौरान शेल द्वारा परिपूर्ण, अनिश्चितता के बारे में व्यवस्थित रूप से सोचने का एक तरीका है। एक पूर्वानुमान पर दांव लगाने के बजाय, आप सुसंगत कहानियां बनाते हैं कि चीजें कैसे सामने आ सकती हैं, फिर उन सभी के खिलाफ अपने निर्णयों का तनाव-परीक्षण करें। यहां बताया गया है कि प्रमुख डोमेन के परिदृश्यों के साथ-साथ कार्यप्रणाली कैसे काम करती है।

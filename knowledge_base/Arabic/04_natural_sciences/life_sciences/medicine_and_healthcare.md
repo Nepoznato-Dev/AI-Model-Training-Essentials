@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الطب والرعاية الصحية
 الطب هو علم وممارسة تشخيص الأمراض وعلاجها والوقاية منها. إنها واحدة من أقدم المساعي البشرية - يعود قسم أبقراط إلى اليونان القديمة - وواحدة من أسرع المساعي تغيرًا. في القرن الماضي وحده، انتقلنا من عدم وجود مضادات حيوية إلى وجود علاجات جينية يمكنها إعادة كتابة الحمض النووي للمريض.
 يغطي هذا الملف كيفية عمل الطب: التخصصات الرئيسية، وكيفية تشخيص الأمراض وعلاجها، وكيفية تنظيم أنظمة الرعاية الصحية، والمسائل الأخلاقية التي تنشأ عندما تكون حياة البشر على المحك.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 ＃ 人工智能
 人工智能是试图构建机器，使其能够完成人类需要智能才能完成的事情：识别面孔、理解语音、做出决定、编写文本、玩游戏、驾驶汽车、诊断疾病。这个领域和计算本身一样古老——艾伦·图灵问“机器能思考吗？” 1950 年，但最近（2020 年代）能力的爆炸性增长使人工智能成为人类历史上最重要和最具争议的技术之一。
 ---

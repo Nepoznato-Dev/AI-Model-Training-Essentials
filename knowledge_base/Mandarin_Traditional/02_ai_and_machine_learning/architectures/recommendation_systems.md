@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 推薦系統
 推薦系​​統預測使用者接下來想要看到、購買或互動的內容。它們為社交媒體上的內容提要、電子商務網站上的產品建議、串流平台上的電影精選以及搜尋結果提供支援。儘管大多數用戶看不見，但它們是世界上最具商業影響力的人工智慧系統之一——Netflix 估計，其推薦引擎透過減少用戶流失，每年節省超過 10 億美元。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Język i angielski
 Obecnie na świecie mówi się około 7 000 języków. Angielski jest najczęściej używanym językiem drugim i służy jako domyślny w międzynarodowym biznesie, nauce, lotnictwie i Internecie. Niezależnie od tego, czy piszesz dokumentację kodu, czytasz artykuły naukowe, czy komunikujesz się ponad granicami, solidna znajomość języka angielskiego — gramatyki, słownictwa i retoryki — jest jedną z najbardziej praktycznych umiejętności, jakie można rozwinąć.
 Ten plik obejmuje najważniejsze informacje: gramatykę, interpunkcję, typowe pułapki, technikę pisania i przejrzystą komunikację.

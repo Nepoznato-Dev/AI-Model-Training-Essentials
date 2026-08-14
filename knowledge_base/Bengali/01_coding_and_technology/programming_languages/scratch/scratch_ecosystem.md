@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # স্ক্র্যাচ — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকাটি স্ক্র্যাচ ইকোসিস্টেমের প্রয়োজনীয় সরঞ্জাম, এক্সটেনশন এবং সংস্থানগুলিকে কভার করে৷
 ---

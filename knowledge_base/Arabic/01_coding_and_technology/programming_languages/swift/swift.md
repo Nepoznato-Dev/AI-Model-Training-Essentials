@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #سويفت
 Swift هي لغة برمجة حديثة ومجمعة طورتها شركة Apple (بقيادة كريس لاتنر) وتم إصدارها لأول مرة في عام 2014. وقد تم تصميمها لتحل محل لغة Objective-C باعتبارها اللغة الأساسية لتطوير منصة Apple (iOS، وmacOS، وwatchOS، وtvOS، وvisionOS). يجمع Swift بين أداء اللغات المجمعة وتعبير لغات البرمجة النصية، ويؤكد على السلامة - خاصة فيما يتعلق بالقيم الخالية وإدارة الذاكرة وأخطاء الكتابة.
 بعيدًا عن منصات Apple، يتم استخدام Swift بشكل متزايد للتطوير من جانب الخادم (Vapor، Hummingbird)، والتطبيقات عبر الأنظمة الأساسية، وحتى التعلم الآلي (Apple’s Create ML). مع تقديم Swift على الخادم والدعم عبر الأنظمة الأساسية، أصبحت Swift أكثر من مجرد "لغة Apple".

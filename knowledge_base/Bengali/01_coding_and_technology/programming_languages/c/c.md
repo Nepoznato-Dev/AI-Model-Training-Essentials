@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গ
 C হল একটি সাধারণ-উদ্দেশ্যমূলক, পদ্ধতিগত প্রোগ্রামিং ভাষা যা ডেনিস রিচি বেল ল্যাবসে 1969 এবং 1973 সালের মধ্যে তৈরি করেছিলেন। এটি ইউনিক্স অপারেটিং সিস্টেম বাস্তবায়নের জন্য ডিজাইন করা হয়েছিল, এবং এটি 50 বছর পরেও সর্বাধিক ব্যবহৃত প্রোগ্রামিং ভাষাগুলির মধ্যে একটি রয়ে গেছে। C নিম্ন-স্তরের মেমরি অ্যাক্সেস, একটি ন্যূনতম স্ট্যান্ডার্ড লাইব্রেরি, এবং মেশিনের নির্দেশাবলীতে একটি পরিষ্কার ম্যাপিং প্রদান করে -- এটি এমন ভিত্তি তৈরি করে যার উপর সবচেয়ে আধুনিক কম্পিউটিং নির্মিত হয়।
 সি হল অপারেটিং সিস্টেম (লিনাক্স, উইন্ডোজ কার্নেল, ম্যাকোস), এমবেডেড সিস্টেম, ডাটাবেস ইঞ্জিন (SQLite, PostgreSQL), কম্পাইলার (Python's CPython, Ruby's MRI), এবং কার্যত অন্য প্রতিটি প্রোগ্রামিং ল্যাঙ্গুয়েজ রানটাইমের পেছনের ভাষা। সি বোঝা হচ্ছে কম্পিউটার আসলে কিভাবে কাজ করে তা বোঝা।

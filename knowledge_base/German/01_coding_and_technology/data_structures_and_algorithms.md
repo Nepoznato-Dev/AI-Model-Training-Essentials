@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Datenstrukturen und Algorithmen
 Datenstrukturen sind die Art und Weise, wie wir Daten im Speicher organisieren, damit Operationen darauf effizient sind. Algorithmen sind die schrittweisen Vorgehensweisen zur Lösung von Problemen. Zusammen bilden sie die Grundlage der Informatik – jedes Programm, das Sie jemals verwendet haben, basiert auf ihnen. Die Wahl der richtigen Datenstruktur kann ein unglaublich langsames Programm in ein schnelles verwandeln, und die Kenntnis des richtigen Algorithmus kann ein unlösbares Problem in ein triviales Problem verwandeln.
 ---

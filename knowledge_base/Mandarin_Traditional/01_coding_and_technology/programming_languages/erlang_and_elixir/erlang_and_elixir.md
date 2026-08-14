@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Erlang & Elixir"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Erlang 和 Elixir
 Erlang 由愛立信於 1986 年構建，用於為電話交換機提供支援——這解釋了為什麼它比其他任何東西都能更好地處理並發、容錯和分散式系統。 Erlang 進程是輕量級的、隔離的，並且僅透過訊息傳遞進行通訊。當進程崩潰時，主管會重新啟動它。這種“讓它崩潰”的理念使系統能夠運行多年而不會停機。
 Elixir 是由 Jose Valim 於 2012 年在 Erlang 的 VM (BEAM) 之上建構的一種現代語言。它保留了 Erlang 提供的所有功能——並發性、容錯性、分散性——但添加了友善的語法、元程式設計和優秀的工具（Mix 套件管理器、Hex 套件註冊表）。 Elixir 廣泛用於 Web 應用程式（透過 Phoenix 框架）、即時系統和嵌入式設備（透過 Nerves）。

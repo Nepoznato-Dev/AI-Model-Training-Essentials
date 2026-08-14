@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Künstliche Intelligenz
 Künstliche Intelligenz ist der Versuch, Maschinen zu bauen, die Dinge tun können, die Intelligenz erfordern würden, wenn ein Mensch sie tun würde: Gesichter erkennen, Sprache verstehen, Entscheidungen treffen, Texte schreiben, Spiele spielen, Autos fahren, Krankheiten diagnostizieren. Das Gebiet ist so alt wie die Informatik selbst – Alan Turing fragte: „Können Maschinen denken?“ im Jahr 1950 – aber die jüngste Explosion der Fähigkeiten (2020er Jahre) hat KI zu einer der wichtigsten und umstrittensten Technologien in der Geschichte der Menschheit gemacht.
 ---

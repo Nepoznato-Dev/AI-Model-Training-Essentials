@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sensibilisation à l'environnement
 L’environnement n’est pas une chose distincte « là-bas » : c’est le système qui rend tout le reste possible. Chaque respiration que vous prenez, chaque verre d'eau que vous buvez, chaque repas que vous mangez dépend de la composition atmosphérique, des cycles de l'eau, de la santé des sols et des réseaux de pollinisateurs. Comprendre comment ces systèmes fonctionnent – ​​et comment ils évoluent – ​​n’est pas une option pour une personne informée. Ce dossier couvre les principes fondamentaux des sciences de l'environnement, les défis auxquels nous sommes confrontés et ce que la durabilité signifie réellement dans la pratique.
 ---

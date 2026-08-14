@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Code Quality Issues"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 코드 품질 문제
 이 문서는 잘못된 변수 이름, 잘못된 문서화, 스파게티 코드, 순환 종속성 및 기타 유지 관리 문제를 포함한 일반적인 코드 품질 문제를 통합합니다.
 ---

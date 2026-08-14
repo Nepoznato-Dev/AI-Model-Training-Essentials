@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # प्रकाशिकी और तरंगें
 तरंगें हर जगह हैं: ध्वनि, प्रकाश, पानी, रेडियो सिग्नल, क्वांटम संभाव्यता आयाम, शेयर बाजार में उतार-चढ़ाव, और तंत्रिका नेटवर्क सक्रियण के कंपन। प्रकाशिकी - प्रकाश का अध्ययन - सबसे अच्छी तरह से विकसित तरंग विज्ञान है, और इसके गणितीय उपकरण (फूरियर विश्लेषण, हस्तक्षेप, विवर्तन) प्रत्येक तरंग घटना पर लागू होते हैं। सिग्नल प्रोसेसिंग, छवि विश्लेषण, संचार और सभी आधुनिक प्रौद्योगिकी की भौतिक परत के लिए तरंगों को समझना आवश्यक है।
 ---

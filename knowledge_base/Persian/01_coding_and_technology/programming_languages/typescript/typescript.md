@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "TypeScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # TypeScript
 TypeScript یک ابرمجموعه جاوا اسکریپت تایپ شده است که توسط مایکروسافت (به رهبری آندرس هیلسبرگ) توسعه یافته و اولین بار در سال 2012 منتشر شد. این نوع حاشیه نویسی اختیاری، رابط ها، ژنریک ها و ویژگی های سیستم نوع پیشرفته را به جاوا اسکریپت اضافه می کند - سپس به جاوا اسکریپت ساده که در هر جایی که جاوا اسکریپت اجرا می شود، کامپایل می شود. TypeScript یک زبان یا زمان اجرا جداگانه نیست. این جاوا اسکریپت با جستجوگر نوع است.
 TypeScript به استانداردی برای توسعه جاوا اسکریپت در مقیاس بزرگ تبدیل شده است. React، Angular، VS Code، Deno و اکثر پروژه های اصلی جاوا اسکریپت منبع باز با TypeScript نوشته شده اند. اگر یک پروژه جاوا اسکریپت جدید با هر اندازه قابل توجهی را شروع می کنید، TypeScript پیش فرض توصیه شده است.

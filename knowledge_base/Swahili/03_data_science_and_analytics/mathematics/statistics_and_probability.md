@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistics and Probability"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -41,6 +42,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Takwimu na Uwezekano
 Uwezekano na takwimu ni misingi ya hisabati ya sayansi ya data, kujifunza kwa mashine na utafiti wa kisayansi. Uwezekano hukuambia jinsi uwezekano wa matukio; takwimu inakuambia jinsi ya kupata hitimisho kutoka kwa data. Kwa pamoja, wanageuza kutokuwa na uhakika kuwa maarifa yanayoweza kupimika, yanayoweza kudhibitiwa.
 ---

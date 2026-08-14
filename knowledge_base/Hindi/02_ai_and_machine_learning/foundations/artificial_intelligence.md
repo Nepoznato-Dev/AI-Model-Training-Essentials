@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Artificial Intelligence"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to foundations/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # कृत्रिम होशियारी
 आर्टिफिशियल इंटेलिजेंस ऐसी मशीनें बनाने का प्रयास है जो ऐसे काम कर सकती हैं जिन्हें अगर इंसान करता तो बुद्धि की आवश्यकता होती: चेहरे पहचानना, भाषण समझना, निर्णय लेना, पाठ लिखना, गेम खेलना, कार चलाना, बीमारियों का निदान करना। यह क्षेत्र कंप्यूटिंग जितना ही पुराना है - एलन ट्यूरिंग पूछ रहे थे "क्या मशीनें सोच सकती हैं?" 1950 में - लेकिन क्षमता में हालिया विस्फोट (2020) ने एआई को मानव इतिहास में सबसे महत्वपूर्ण और विवादित प्रौद्योगिकियों में से एक बना दिया है।
 ---

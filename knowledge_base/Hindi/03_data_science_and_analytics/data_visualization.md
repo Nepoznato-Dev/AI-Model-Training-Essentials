@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Visualization"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # डेटा विज़ुअलाइज़ेशन
 एक अच्छी तरह से डिज़ाइन किया गया चार्ट उन पैटर्न को प्रकट कर सकता है जो संख्याओं की तालिकाएँ छिपाती हैं। एक ख़राब ढंग से डिज़ाइन किया गया व्यक्ति गुमराह कर सकता है, भ्रमित कर सकता है या बोर कर सकता है। डेटा विज़ुअलाइज़ेशन डेटा को विज़ुअल कहानियों में बदलने की कला है जो निर्णयों को सूचित करती है। इस फ़ाइल में चार्ट चयन, डिज़ाइन सिद्धांत, सामान्य गलतियाँ और वे उपकरण शामिल हैं जो इसे संभव बनाते हैं।
 ---

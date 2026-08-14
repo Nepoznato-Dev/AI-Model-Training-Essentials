@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ява
 Java — это статически типизированный объектно-ориентированный язык программирования, созданный Джеймсом Гослингом из Sun Microsystems и выпущенный в 1995 году. Его философия проектирования — «напиши один раз, запускай где угодно» (WORA) — достигается с помощью виртуальной машины Java (JVM), которая позволяет скомпилированному коду Java работать на любой платформе, имеющей реализацию JVM. Java — один из наиболее широко используемых языков программирования в истории, на котором базируются корпоративные серверные части, приложения Android, системы больших данных и финансовые услуги.
 Несмотря на то, что Java уже почти 30 лет, она продолжает развиваться. Современная Java (версии 17+) включает в себя записи, запечатанные классы, сопоставление с образцом, виртуальные потоки и растущую экосистему, конкурирующую с новыми языками.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Python — 구문 참조
 이 문서는 Python에 대한 포괄적이고 구조화된 구문 참조를 제공합니다. 철저한 구문 패턴, 연산자 테이블 및 내부 메커니즘에 중점을 두어 주요 Python 참조를 보완합니다.
 ---

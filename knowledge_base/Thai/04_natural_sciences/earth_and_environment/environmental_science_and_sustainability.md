@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # วิทยาศาสตร์สิ่งแวดล้อมและความยั่งยืน
 วิทยาศาสตร์สิ่งแวดล้อมใช้วิธีการทางฟิสิกส์ เคมี ชีววิทยา ธรณีวิทยา และเศรษฐศาสตร์ กับคำถามที่ว่า "เกิดอะไรขึ้นกับโลกของเรา และสิ่งที่สามารถทำได้เกี่ยวกับโลกนี้" เป็นสาขาสหวิทยาการ - การบรรจบกันของหลายสาขาวิชา - ซึ่งมีส่วนช่วยทั้งในด้านการวิเคราะห์เชิงลึกและความเกี่ยวข้องของนโยบาย
 ความตึงเครียดหลักในวิทยาศาสตร์สิ่งแวดล้อมคือ: อารยธรรมของมนุษย์ขึ้นอยู่กับการแยกทรัพยากรออกจากสิ่งแวดล้อม แต่การแยกทรัพยากรเหล่านั้นจะเปลี่ยนสภาพแวดล้อมในลักษณะที่อาจบ่อนทำลายระบบที่เราพึ่งพา การทำความเข้าใจว่าฟีดแบ็กลูปนั้นเป็นเพียงข้อมูลสรุปเท่านั้น

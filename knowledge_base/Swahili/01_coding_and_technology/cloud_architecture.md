@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usanifu wa Wingu
 Kompyuta ya wingu imebadilisha kimsingi jinsi mashirika yanavyounda, kupeleka, na kuongeza programu. Badala ya kununua na kudumisha seva halisi, unaweza kutoa rasilimali za kompyuta unapohitaji, kulipia unachotumia, na kuongeza kimataifa kwa dakika. Faili hii inashughulikia dhana za msingi, mifumo ya usanifu, huduma, na mbinu bora unazohitaji kujua.
 ---

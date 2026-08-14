@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #Architecture cloud
 Le cloud computing a fondamentalement changé la façon dont les organisations créent, déploient et font évoluer leurs logiciels. Au lieu d'acheter et d'entretenir des serveurs physiques, vous pouvez provisionner des ressources informatiques à la demande, payer pour ce que vous utilisez et évoluer à l'échelle mondiale en quelques minutes. Ce fichier couvre les concepts de base, les modèles d'architecture, les services et les meilleures pratiques que vous devez connaître.
 ---

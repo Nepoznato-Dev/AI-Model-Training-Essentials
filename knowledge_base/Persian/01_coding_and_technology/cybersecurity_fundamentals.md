@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مبانی امنیت سایبری
 امنیت رشته‌ای است که باید از ابتدا در هر لایه‌ای از یک سیستم ادغام شود، نه اینکه به عنوان یک فکر بعدی اضافه شود. چه ساختن یک برنامه وب، مدیریت زیرساخت، یا ارسال یک API، درک چشم انداز تهدید و اصول اساسی دفاع ضروری است.
 ---

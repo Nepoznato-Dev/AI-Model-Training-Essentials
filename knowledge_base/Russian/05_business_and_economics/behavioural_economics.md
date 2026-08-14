@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Поведенческая экономика и наука о принятии решений
 Поведенческая экономика изучает то, как люди на самом деле принимают решения, а не то, как их принимали бы рациональные агенты. Традиционная экономика предполагает, что люди рациональны, корыстны и хорошо обрабатывают информацию. Десятилетия исследований Канемана, Тверски, Талера и других показали, что это совершенно неверно. Люди используют умственные ярлыки, находятся под влиянием несущественного контекста, переоценивают свежую информацию и совершают систематически предсказуемые ошибки. Понимание этих закономерностей необходимо для разработки лучших продуктов, политик, организаций и личных решений.
 ---

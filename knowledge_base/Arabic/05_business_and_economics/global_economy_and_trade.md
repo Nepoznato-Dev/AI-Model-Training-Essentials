@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الاقتصاد العالمي والتجارة
 الاقتصاد العالمي هو النظام الأكبر والأكثر تعقيدًا الذي بناه البشر على الإطلاق. وفي عام 2025، تجاوز الناتج المحلي الإجمالي العالمي 110 تريليون دولار. أكثر من 8 مليارات شخص ينتجون ويتاجرون ويستهلكون السلع والخدمات عبر الحدود كل يوم. إن فهم كيفية عمل هذا النظام ــ من يتاجر بماذا، ولماذا تكون بعض البلدان غنية وبعضها الآخر فقيرة، وكيف تتحرك الأموال عبر الحدود، وماذا يحدث عندما ينهار النظام ــ أمر ضروري للإبحار في العالم الحديث.
 ---

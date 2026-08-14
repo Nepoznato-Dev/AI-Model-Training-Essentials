@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Embedded Systems and IoT"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Sistemas integrados e IoT
 Los sistemas integrados son computadoras ocultas dentro de otros dispositivos: la unidad de control del motor de su automóvil, el controlador de su lavadora, el microcontrolador de un termostato inteligente. A diferencia de las computadoras de uso general, están diseñadas para tareas específicas, a menudo con estrictas limitaciones de energía, memoria y velocidad de procesamiento. El Internet de las cosas (IoT) amplía los sistemas integrados conectándolos a redes, lo que permite la supervisión, el control y la recopilación de datos remotos. Juntos, representan miles de millones de dispositivos informáticos que interactúan con el mundo físico.
 ---

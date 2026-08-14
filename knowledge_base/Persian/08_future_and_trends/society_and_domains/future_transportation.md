@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # حمل و نقل آینده
 ## بررسی اجمالی
 رسیدن از A به B بسیار متفاوت به نظر می رسد. خودروهای خودران در حال حاضر در جاده های عمومی هستند. هواپیماهای برقی در حال تکمیل پروازهای آزمایشی هستند. مفاهیم Hyperloop وعده سفر با سرعت قطار در لوله های خلاء را می دهد. و تاکسی های پرنده - که زمانی کارتون ها بود - در حال ورود به گواهینامه هستند. در اینجا وضعیت بازی در سراسر فن آوری است که نحوه حرکت ما را تغییر می دهد.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Model Optimisation and Deployment"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحسين النموذج ونشره
 يعد تدريب نموذج كبير للذكاء الاصطناعي إنجازًا كبيرًا، ولكن نشره بكفاءة هو الأمر الذي يتطلب معظم الجهد الهندسي. النموذج الذي يستغرق 10 ثوانٍ للاستجابة أو يتطلب ثماني وحدات معالجة رسوميات A100 يعد غير عملي بالنسبة لمعظم تطبيقات العالم الحقيقي. تحسين النماذج هو عملية جعل النماذج أصغر حجمًا، وأسرع، وأكثر فعالية من حيث التكلفة - مع الحفاظ على الجودة المقبولة. يغطي هذا الملف القياس الكمي والتشذيب والتقطير والأدوات العملية لنشر النماذج في الإنتاج.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Kontrol Teorisi
 Kontrol teorisi, sistemlerin sizin istediğiniz şekilde davranmasını sağlamanın matematiğidir. Termostatlardan otopilotlara, robot kollardan kimyasal reaktörlere kadar kontrol sistemleri istenen davranışı algılar, karar verir ve harekete geçer. Bu alan; takviyeli öğrenmeye, hiper parametre ayarlamaya ve uyarlanabilir sistemlere taşınan kavramlar olan kararlılığı, performansı ve sağlamlığı analiz etmek için titiz araçlar sağlar.
 ---

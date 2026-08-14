@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ゲーム理論
 ゲーム理論は、戦略的相互作用、つまり、結果が自分の選択だけでなく他人の選択に依存する状況の数学です。企業間の価格戦争から核軍拡競争、オンラインオークションから進化生物学に至るまで、ゲーム理論は対立と協力を分析するツールを提供します。マルチエージェント強化学習、敵対的生成ネットワーク (GAN)、オンライン プラットフォームのメカニズム設計などを通じて、機械学習との関連性が高まっています。
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Föderiertes Lernen und Datenschutz
 Federated Learning ist eine Technik zum Trainieren von Modellen für maschinelles Lernen über mehrere Geräte oder Organisationen hinweg, ohne die Rohdaten zu teilen. Anstatt Daten an einen zentralen Server zu senden, trainiert jedes Gerät ein lokales Modell und teilt nur die Modellaktualisierungen (Verläufe oder Gewichte). Der zentrale Server aggregiert diese Aktualisierungen, um ein globales Modell zu erstellen. Es wurde von Google zum Trainieren von Tastatursprachenmodellen auf Android-Telefonen entwickelt – und hat sich seitdem zu einer Schlüsseltechnik für die Wahrung der Privatsphäre durch KI entwickelt.
 ---

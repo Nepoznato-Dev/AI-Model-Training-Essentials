@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 视觉基础
 Visual Basic (VB) 是 Microsoft 开发的一种编程语言。它已经发展了几代：最初的 Visual Basic (1991)、Visual Basic 6.0 (1998)、VB.NET（2002，.NET Framework 的一部分）和 Visual Basic ..NET（当前，现在简称为“Visual Basic”，作为 .NET 的一部分）。 VB 旨在方便初学者和快速应用程序开发 (RAD)，重点关注图形用户界面和事件驱动编程。
 如今，VB.NET 继续与 C# 一起成为 .NET 生态系统的一部分，尽管 Microsoft 已表示 C# 是未来的主要语言。 VB 在企业环境中仍然广泛使用，特别是旧版 Windows 应用程序、办公自动化 (VBA) 和内部业务工具。

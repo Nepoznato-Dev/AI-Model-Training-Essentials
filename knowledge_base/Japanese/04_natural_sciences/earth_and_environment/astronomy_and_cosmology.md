@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 天文学と宇宙論
 天文学は、星、惑星、銀河、そして地球の大気圏外のすべてのものなどの天体に関する研究です。宇宙論は、宇宙全体、つまりその起源、構造、進化、そして最終的な運命についての研究です。これらは共に、人類がこれまでに抱いてきた最も基本的な質問のいくつかに対処します。宇宙はどのように始まったのでしょうか?どれくらいの大きさですか?私たちは一人ですか？結局それはどうなるのでしょうか？
 ---

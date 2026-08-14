@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Accessibility and Inclusive Design"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 접근성과 포용적 디자인
 접근성(흔히 a11y로 축약됨)은 시각, 청각, 운동, 인지 및 신경 장애가 있는 사람을 포함하여 모든 사람이 소프트웨어를 사용할 수 있도록 만드는 방식입니다. 이는 많은 관할권 및 표준 엔지니어링 관행에서 법적 요구 사항입니다. 접근성이 뛰어난 소프트웨어는 모든 사람을 위한 더 나은 소프트웨어입니다. 명확한 구조, 키보드 탐색, 충분한 대비, 읽기 쉬운 텍스트 등 장애가 있는 사용자를 지원하는 디자인 결정이 모든 사용자의 경험을 향상시키기 때문입니다.
 ---

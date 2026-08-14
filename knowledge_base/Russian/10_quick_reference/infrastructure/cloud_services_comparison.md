@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Сравнение облачных сервисов
 Параллельное сравнение трех основных поставщиков облачных услуг — AWS, Azure и Google Cloud — по вычислительным ресурсам, хранилищам, базам данных, искусственному интеллекту и машинному обучению, сетям, мониторингу и инфраструктуре как код. Полезно для архитекторов, решающих, какую платформу использовать, или переноса сервисов из одного облака в другое.
 ---

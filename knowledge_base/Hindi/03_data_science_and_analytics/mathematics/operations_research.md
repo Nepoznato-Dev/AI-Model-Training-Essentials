@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # गतिविधि अनुसंधान
 संचालन अनुसंधान (ओआर) निर्णय लेने के लिए गणितीय तरीकों का अनुप्रयोग है। सैन्य रसद के लिए द्वितीय विश्व युद्ध के दौरान पैदा हुआ, अब यह आपूर्ति श्रृंखलाओं का अनुकूलन करता है, एयरलाइनों को शेड्यूल करता है, डिलीवरी बेड़े को रूट करता है, इन्वेंट्री का प्रबंधन करता है और हर उद्योग में संसाधनों का आवंटन करता है। या बाधाओं के तहत सर्वोत्तम संभव निर्णय लेने के लिए गणितीय टूलकिट प्रदान करता है।
 ---

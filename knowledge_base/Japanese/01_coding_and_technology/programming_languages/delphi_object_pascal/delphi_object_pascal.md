@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / オブジェクト パスカル
 Delphi は、Pascal をベースにしたオブジェクト指向プログラミング言語で、元々は Borland (後の Embarcadero、現在は Idera) によって開発されました。 1995 年に「Delphi 1」として初めてリリースされ、Windows デスクトップ アプリケーションの高速アプリケーション開発 (RAD) のために設計されました。この言語は正式には Object Pascal として知られており、Delphi IDE はビジュアル フォーム デザイナー、統合データベース ツール、および強力なコンパイラを提供します。
 Delphi は、1990 年代後半から 2000 年代前半に最も人気のある Windows 開発ツールの 1 つでした。その人気は大幅に低下しましたが、特にエンタープライズ デスクトップ アプリケーション、データベース フロントエンド、レガシー システムのメンテナンスにおいて、専用のユーザー ベースを維持しています。 Modern Delphi (11/12) は、FireMonkey (FMX) フレームワークを通じて、Windows、macOS、iOS、Android のクロスプラットフォーム開発をサポートします。

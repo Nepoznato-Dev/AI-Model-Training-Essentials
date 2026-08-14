@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 汇编语言
 汇编语言是最低级的人类可读的编程语言。它使用助记符代码（如`MOV`、`ADD`、`JMP`）而不是原始二进制文件来直接表示计算机的机器代码指令。每种汇编语言都特定于特定的处理器架构（x86、ARM、MIPS、RISC-V）——为一种架构编写的代码无法在另一种架构上运行。
 汇编语言不用于构建应用程序。当您需要对硬件进行绝对控制时，可以使用它：编写操作系统内核、设备驱动程序、引导加载程序、嵌入式固件、性能关键代码部分、逆向工程以及了解计算机实际如何执行指令。

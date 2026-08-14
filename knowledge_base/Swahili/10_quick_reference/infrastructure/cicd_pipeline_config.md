@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usanidi wa Bomba la CI/CD
 Ujumuishaji Unaoendelea (CI) na Usambazaji Unaoendelea (CD) hurekebisha mchakato wa kujenga, kupima na kupeleka programu kiotomatiki. Rejeleo hili linajumuisha mifumo ya usanidi ya majukwaa maarufu zaidi ya CI/CD: Vitendo vya GitHub, GitLab CI, na kanuni za jumla za muundo wa bomba.
 ---

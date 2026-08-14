@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # क़ानून और क़ानूनी प्रणालियाँ
 कानून नियमों का वह समूह है जिसे कोई समाज अपनी संस्थाओं के माध्यम से लागू करने के लिए सहमत होता है। यह नैतिकता के समान नहीं है - आप कुछ कानूनी कर सकते हैं जो अनैतिक है, और कुछ अवैध है जो नैतिक रूप से उचित है। कानून पूर्वानुमेयता प्रदान करने के लिए मौजूद है: यह स्थापित करने के लिए कि क्या अनुमति है, क्या निषिद्ध है, और नियम तोड़ने पर क्या होता है। इसके बिना, विवादों का निपटारा शक्ति द्वारा किया जाता है। इससे विवादों का निपटारा प्रक्रिया द्वारा किया जाता है।
 यह फ़ाइल प्रमुख कानूनी प्रणालियों, कानून की मुख्य शाखाओं और उन अवधारणाओं को शामिल करती है जो व्यवहार में कानूनी प्रणालियों के काम करने के तरीके को आकार देती हैं।

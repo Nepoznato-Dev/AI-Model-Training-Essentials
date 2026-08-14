@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Arts and Literature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ศิลปะและวรรณกรรม
 การแสดงออกอย่างสร้างสรรค์ของมนุษย์ ไม่ว่าจะในหนังสือ ภาพวาด ดนตรี หรือภาพยนตร์ เป็นหนึ่งในบันทึกอารยธรรมที่ยั่งยืนที่สุดชิ้นหนึ่ง การทำความเข้าใจประเภท การเคลื่อนไหว และตัวเลขหลักๆ จะให้บริบทแก่โลกที่เราอาศัยอยู่ในปัจจุบัน นิยายทุกเรื่อง ทุกซิมโฟนี หนังทุกเรื่องอยู่ในบทสนทนากับสิ่งที่เกิดขึ้นก่อนหน้านี้
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #C
 C 是一种通用的过程式编程语言，由丹尼斯·里奇 (Dennis Ritchie) 在 1969 年至 1973 年间在贝尔实验室创建。它旨在实现 Unix 操作系统，并且在 50 多年后仍然是使用最广泛的编程语言之一。 C 提供低级内存访问、最小标准库以及到机器指令的清晰映射——使其成为构建大多数现代计算的基础。
 C 是操作系统（Linux、Windows 内核、macOS）、嵌入式系统、数据库引擎（SQLite、PostgreSQL）、编译器（Python 的 CPython、Ruby 的 MRI）以及几乎所有其他编程语言运行时背后的语言。理解 C 就是理解计算机实际上是如何工作的。

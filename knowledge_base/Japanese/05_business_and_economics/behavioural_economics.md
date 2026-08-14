@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Behavioural Economics and Decision Science"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 行動経済学と意思決定科学
 行動経済学は、人間が実際にどのように意思決定を行うのかを研究するものであり、合理的なエージェントがどのように意思決定を行うのかを研究するものではありません。伝統的な経済学では、人々は合理的で利己的であり、情報処理が得意であると想定されています。カーネマン、トベルスキー、セイラーらによる数十年にわたる研究では、これが非常に不正確であることが示されています。人々は頭の中でショートカットを使用し、無関係な文脈に影響され、最近の情報を過大評価し、体系的に予測可能な間違いを犯します。これらのパターンを理解することは、より良い製品、ポリシー、組織、個人の意思決定を設計するために不可欠です。
 ---

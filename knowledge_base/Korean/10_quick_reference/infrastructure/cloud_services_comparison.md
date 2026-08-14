@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Services Comparison"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 클라우드 서비스 비교
 컴퓨팅, 스토리지, 데이터베이스, AI/ML, 네트워킹, 모니터링, 코드형 인프라 등 세 가지 주요 클라우드 제공업체(AWS, Azure, Google Cloud)를 나란히 비교합니다. 사용할 플랫폼을 결정하거나 한 클라우드에서 다른 클라우드로 서비스를 매핑하는 설계자에게 유용합니다.
 ---

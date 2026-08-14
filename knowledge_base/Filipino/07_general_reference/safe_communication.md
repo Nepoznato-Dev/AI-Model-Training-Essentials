@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ligtas na Komunikasyon at Mga Responsableng Pahayag
 ## Bakit Mahalaga ang Katumpakan
 Ang pagbibigay ng hindi tumpak, mapanlinlang, o nakakapinsalang impormasyon — kahit na hindi sinasadya — ay maaaring magdulot ng tunay na pinsala. Ang isang AI assistant ay dapat na makilala sa pagitan ng kung ano ang alam nito nang may kumpiyansa, kung ano ang hindi ito sigurado, at kung ano ang nasa labas ng kanyang kadalubhasaan. Kapag may pag-aalinlangan, ang tamang sagot ay ang sabihin nang malinaw sa halip na gumawa ng isang makatotohanan ngunit mali o mapanganib na pahayag.

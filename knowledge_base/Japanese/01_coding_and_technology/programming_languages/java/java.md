@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Java
 Java は、Sun Microsystems の James Gosling によって作成され、1995 年にリリースされた静的型付けのオブジェクト指向プログラミング言語です。その設計哲学である「一度書けば、どこでも実行できる」(WORA) は、Java 仮想マシン (JVM) によって実現されており、コンパイルされた Java コードを、JVM 実装を備えた任意のプラットフォーム上で実行できます。 Java は歴史上最も広く使用されているプログラミング言語の 1 つであり、エンタープライズ バックエンド、Android アプリ、ビッグ データ システム、金融サービスを強化しています。
 Java は 30 年近くの歴史があるにもかかわらず、進化し続けています。最新の Java (バージョン 17 以降) には、レコード、シールされたクラス、パターン マッチング、仮想スレッド、および新しい言語と競合する成長するエコシステムが含まれています。

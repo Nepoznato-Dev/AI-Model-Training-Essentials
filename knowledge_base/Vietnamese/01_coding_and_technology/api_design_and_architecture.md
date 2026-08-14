@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Thiết kế và kiến ​​trúc API
 API (Giao diện lập trình ứng dụng) là cách các thành phần phần mềm giao tiếp với nhau. API được thiết kế tốt sẽ trực quan, nhất quán và mang lại niềm vui khi làm việc. Một thiết kế kém sẽ gây ra sự nhầm lẫn, lỗi và sự thất vọng. Tệp này bao gồm các nguyên tắc, mẫu và phương pháp xây dựng API mà nhà phát triển thực sự muốn sử dụng.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optics and Waves"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optics and waves"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Optik und Wellen
 Wellen sind überall: Schall, Licht, Wasser, Funksignale, Quantenwahrscheinlichkeitsamplituden, Börsenschwankungen und die Vibrationen neuronaler Netzwerkaktivierungen. Die Optik – das Studium des Lichts – ist die am weitesten entwickelte Wellenwissenschaft und ihre mathematischen Werkzeuge (Fourier-Analyse, Interferenz, Beugung) gelten für jedes Wellenphänomen. Das Verständnis von Wellen ist für die Signalverarbeitung, Bildanalyse, Kommunikation und die physikalische Ebene aller modernen Technologien von entscheidender Bedeutung.
 ---

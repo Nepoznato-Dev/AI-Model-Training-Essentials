@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Психология и поведение человека
 Психология – это наука о том, как и почему люди думают, чувствуют и действуют именно так, как они поступают. Это не чтение мыслей и не здравый смысл, хотя иногда оно подтверждает то, что подсказывает здравый смысл, а иногда полностью противоречит ему. Психология использует тот же научный метод, что и любая другая наука: наблюдать, выдвигать гипотезы, проверять, пересматривать. Сложность заключается в том, что ее предмет — человеческий разум — является самым сложным объектом, который мы знаем.
 Этот файл охватывает основные области психологии: как мы думаем, как мы развиваемся, как на нас влияют другие, что идет не так и что с этим можно сделать.

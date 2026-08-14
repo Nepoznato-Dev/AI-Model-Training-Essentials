@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cloud Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # สถาปัตยกรรมคลาวด์
 การประมวลผลแบบคลาวด์ได้เปลี่ยนวิธีที่องค์กรสร้าง ปรับใช้ และปรับขนาดซอฟต์แวร์โดยพื้นฐาน แทนที่จะซื้อและบำรุงรักษาเซิร์ฟเวอร์จริง คุณสามารถจัดเตรียมทรัพยากรการประมวลผลตามความต้องการ ชำระค่าบริการที่คุณใช้ และปรับขนาดได้ทั่วโลกภายในไม่กี่นาที ไฟล์นี้ครอบคลุมแนวคิดหลัก รูปแบบสถาปัตยกรรม บริการ และแนวทางปฏิบัติที่ดีที่สุดที่คุณจำเป็นต้องทราบ
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Science and Analytics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nauka o danych i analityka
 Nauka o danych to dyscyplina polegająca na przekształcaniu surowych danych w przydatne informacje. Znajduje się na skrzyżowaniu statystyki, informatyki i wiedzy dziedzinowej – i stało się niezbędne w każdym sektorze, od finansów po opiekę zdrowotną. W tym pliku omówiono podstawowe koncepcje, narzędzia i przepływy pracy, które powinien znać każdy specjalista.
 ---

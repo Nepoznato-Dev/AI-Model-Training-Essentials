@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Law and Legal Systems"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Diritto e ordinamenti giuridici
 La legge è l’insieme delle regole che una società si impegna a far rispettare attraverso le sue istituzioni. Non è la stessa cosa della moralità: puoi fare qualcosa di legale che è immorale e qualcosa di illegale che è moralmente giustificato. La legge esiste per garantire prevedibilità: per stabilire cosa è permesso, cosa è proibito e cosa succede quando le regole vengono infrante. Senza di esso, le controversie vengono risolte dal potere. Con esso, le controversie vengono risolte tramite processo.
 Questo file copre i principali sistemi giuridici, i principali rami del diritto e i concetti che modellano il modo in cui i sistemi legali funzionano nella pratica.

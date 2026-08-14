@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 认知偏差和逻辑谬误
 该文件整合了影响人类决策和人工智能系统输出的认知偏差、逻辑谬误和推理错误。
 ---

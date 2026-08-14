@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Optimisation des performances
 L'optimisation des performances consiste à rendre les logiciels plus rapides, en réduisant les temps de réponse, en augmentant le débit, en réduisant l'utilisation de la mémoire et en éliminant les goulots d'étranglement. C'est l'une des compétences les plus importantes qu'un développeur puisse posséder, car un logiciel lent perd des utilisateurs, gaspille des ressources et frustre tout le monde. Mais c’est aussi l’une des erreurs les plus courantes, les développeurs optimisant les mauvaises choses en se basant sur leur intuition plutôt que sur des preuves.
 ---

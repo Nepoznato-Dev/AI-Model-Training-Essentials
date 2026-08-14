@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Numerical Methods"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into numerical methods"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Numerische Methoden
 Numerische Methoden sind die Brücke zwischen mathematischer Theorie und praktischer Berechnung. Während die reine Mathematik beweist, dass es Lösungen gibt, berechnen numerische Methoden tatsächlich Näherungslösungen mit endlicher Genauigkeit. Jedes maschinelle Lernmodell, jede physikalische Simulation und jede Datenanalyse-Pipeline basiert letztendlich auf numerischen Berechnungen. Das Verständnis dieser Methoden – ihrer Genauigkeit, Stabilität und Einschränkungen – ist für die Entwicklung zuverlässiger Software von entscheidender Bedeutung.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # অপারেশন গবেষণা
 অপারেশন রিসার্চ (OR) হল সিদ্ধান্ত গ্রহণে গাণিতিক পদ্ধতির প্রয়োগ। সামরিক সরবরাহের জন্য দ্বিতীয় বিশ্বযুদ্ধের সময় জন্ম নেওয়া, এটি এখন সরবরাহ চেইন, সময়সূচী এয়ারলাইন, রুট ডেলিভারি ফ্লিট, ইনভেন্টরি পরিচালনা করে এবং প্রতিটি শিল্পে সম্পদ বরাদ্দ করে। অথবা সীমাবদ্ধতার মধ্যে সর্বোত্তম সম্ভাব্য সিদ্ধান্ত নেওয়ার জন্য গাণিতিক টুলকিট প্রদান করে।
 ---

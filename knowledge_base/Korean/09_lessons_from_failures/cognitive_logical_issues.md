@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cognitive Biases and Logical Fallacies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 인지적 편견과 논리적 오류
 이 문서는 인간의 의사 결정과 AI 시스템 출력 모두에 영향을 미치는 인지 편향, 논리적 오류 및 추론 오류를 통합합니다.
 ---

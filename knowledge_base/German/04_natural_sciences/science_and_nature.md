@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Wissenschaft und Natur
 Wissenschaft ist die Art und Weise, wie wir herausfinden, was das Universum tatsächlich tut – nicht, was wir annehmen, dass es tut, nicht, was alte Texte sagen, sondern was sorgfältige Beobachtung und Experimente offenbaren. Die wissenschaftliche Methode ist im Prinzip einfach: Beobachten Sie etwas, stellen Sie eine Hypothese auf, testen Sie sie und überarbeiten Sie Ihr Verständnis anhand der Ergebnisse. Was die Wissenschaft so leistungsstark macht, ist ihre Selbstkorrektur. Jede Behauptung ist vorläufig – sie wird nur akzeptiert, bis bessere Beweise vorliegen.
 Diese Datei deckt die wichtigsten Zweige der Naturwissenschaften ab: Physik, Chemie, Biologie sowie Erd- und Weltraumwissenschaften. Betrachten Sie es als eine Karte der physischen Welt.

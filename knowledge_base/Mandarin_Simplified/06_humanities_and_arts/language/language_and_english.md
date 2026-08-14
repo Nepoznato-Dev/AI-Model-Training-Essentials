@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Language and English"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 语言和英语
 当今世界大约有 7,000 种语言。英语是使用最广泛的第二语言，是国际商业、科学、航空和互联网的默认语言。无论是编写代码文档、阅读研究论文还是跨境交流，扎实的英语能力（语法、词汇和修辞）都是人们可以培养的最实用的技能之一。
 该文件涵盖了要点：语法、标点符号、常见陷阱、写作技巧和清晰的沟通。

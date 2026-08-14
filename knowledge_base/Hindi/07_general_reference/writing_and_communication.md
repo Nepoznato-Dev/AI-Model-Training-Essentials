@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # लेखन और संचार की बुनियादी बातें
 लेखन और संचार विचारों को प्रभावी ढंग से व्यक्त करने के कौशल हैं - चाहे ईमेल, रिपोर्ट, दस्तावेज़ीकरण, प्रस्तुतियाँ या बातचीत के माध्यम से। अधिकांश ज्ञान कार्य मूल रूप से संचार कार्य है: पेशेवरों को अपनी सोच को समझाने, दूसरों को मनाने, निर्णयों का दस्तावेजीकरण करने, विशिष्टताओं को लिखने, निष्कर्षों को प्रस्तुत करने और टीमों में सहयोग करने की आवश्यकता होती है। क्या मतलब है और क्या समझा जाता है के बीच का अंतर वह है जहां अधिकांश समस्याएं उत्पन्न होती हैं, और बेहतर संचार उस अंतर को कम करता है।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Neurociência
 A neurociência é o estudo do sistema nervoso – o cérebro, a medula espinhal e todos os nervos que os conectam ao corpo. Abrange vários níveis: desde moléculas e genes, até neurônios e sinapses individuais, até circuitos e regiões cerebrais, até comportamento, cognição e consciência. O cérebro é a estrutura mais complexa do universo conhecido, contendo cerca de 86 mil milhões de neurónios ligados por biliões de sinapses, e compreender como funciona é um dos grandes desafios da ciência.
 ---

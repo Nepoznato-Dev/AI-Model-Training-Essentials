@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # كوبول
 تعد لغة COBOL (اللغة الشائعة الموجهة للأعمال) واحدة من أقدم لغات البرمجة التي لا تزال قيد الاستخدام، وقد تم تطويرها لأول مرة في عام 1959. وقد تم تصميمها لمعالجة بيانات الأعمال - الأنظمة المالية وكشوف المرتبات والخدمات المصرفية والتأمين والتطبيقات الحكومية. كان المقصود من لغة COBOL الشبيهة باللغة الإنجليزية أن تكون قابلة للقراءة من قبل مديري الأعمال، وليس فقط المبرمجين.
 على الرغم من عمرها، تقوم COBOL بمعالجة ما يقدر بنحو 30٪ من جميع المعاملات التجارية على مستوى العالم. لا تزال البنوك الكبرى والوكالات الحكومية (بما في ذلك إدارة الضمان الاجتماعي الأمريكية) وشركات التأمين تعتمد على أنظمة الحاسب المركزي COBOL. أدى الذعر من خلل Y2K في عام 1999 إلى عودة لغة COBOL إلى الوعي العام، وتستمر اللغة في تشغيل البنية التحتية الحيوية في جميع أنحاء العالم.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # JavaScript
 Ang JavaScript ay isang pabago-bago, binibigyang kahulugan na programming language na nilikha ni Brendan Eich sa loob lamang ng 10 araw noong 1995. Orihinal na idinisenyo upang magdagdag ng interaktibidad sa mga web page, ito ay lumago sa pinakamalawak na ginagamit na programming language sa mundo. Gumagana ang JavaScript sa bawat web browser, sa mga server sa pamamagitan ng Node.js, sa mga desktop app (Electron), mga mobile app (React Native), at maging sa mga naka-embed na system.
 Ang wika ay natatangi dahil ito ay mahalagang ang tanging opsyon para sa client-side web development — bawat browser ay sumusuporta dito sa katutubong. Ang monopolyong ito, na sinamahan ng pagtaas ng full-stack na JavaScript (Node.js, Deno, Bun), ay ginagawa itong kailangang-kailangan.

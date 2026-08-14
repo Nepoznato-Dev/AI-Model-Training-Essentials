@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scala"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # اسکیلا
 اسکالا (اسکیل ایبل لینگویج) ایک مستحکم طور پر ٹائپ شدہ، مرتب کردہ پروگرامنگ لینگویج ہے جو آبجیکٹ اورینٹڈ اور فنکشنل پروگرامنگ پیراڈائمز کو یکجا کرتی ہے۔ مارٹن اوڈرسکی کے ذریعہ تخلیق کیا گیا اور پہلی بار 2004 میں ریلیز ہوا، اسکالا JVM پر چلتا ہے (جاوا اسکرپٹ اور اسکالا مقامی کے لیے بھی Scala.js)۔ یہ جاوا کی مکمل مداخلت کو برقرار رکھتے ہوئے جاوا کی فعلیت کو حل کرنے کے لیے ڈیزائن کیا گیا تھا۔
 اسکالا Apache Spark (بڑے ڈیٹا پروسیسنگ فریم ورک) کے پیچھے کی زبان ہے، اور یہ ڈیٹا انجینئرنگ، تقسیم شدہ نظام، اور بیک اینڈ سروسز میں بڑے پیمانے پر استعمال ہوتی ہے۔ ٹویٹر (اب X)، LinkedIn، Netflix، اور The Guardian جیسی کمپنیاں Scala استعمال کرتی ہیں۔

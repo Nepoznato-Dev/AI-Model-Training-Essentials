@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Rust"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 鐵鏽
 Rust 是一種靜態類型、編譯型程式語言，於 2015 年首次發布，最初由 Mozilla 的 Graydon Hoare 開發。 Rust 的定義承諾是**記憶體安全，無需垃圾回收**。它透過其所有權系統實現了這一目標——一組在編譯時強制執行的規則，消除了所有類型的錯誤（空指標取消引用、資料競爭、緩衝區溢位、釋放後使用），同時產生程式碼的速度與 C 或 C++ 一樣快。
 Rust 連續多年被 Stack Overflow 開發者調查評為「最受歡迎」的程式語言。它越來越多地用於系統程式設計、WebAssembly、CLI 工具、雲端基礎設施，並在安全關鍵環境中作為 C/C++ 的替代品。 Linux 核心現在接受 Rust 程式碼。

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ग्राफ सिद्धांत
 एक **ग्राफ** एक गणितीय संरचना है जिसमें किनारों (लिंक) से जुड़े शीर्ष (नोड्स) होते हैं। ग्राफ़ मॉडल संबंध: सामाजिक नेटवर्क, रोड मैप, तंत्रिका नेटवर्क, निर्भरता, संचार चैनल। ग्राफ़ सिद्धांत - इन संरचनाओं का अध्ययन - एल्गोरिदम और प्रमेय प्रदान करता है जो कंप्यूटर विज्ञान, संचालन अनुसंधान और डेटा विज्ञान के लिए केंद्रीय हैं।
 ---

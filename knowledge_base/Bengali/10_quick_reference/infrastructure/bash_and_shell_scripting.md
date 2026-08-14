@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Bash and Shell Scripting Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ব্যাশ এবং শেল স্ক্রিপ্টিং চিট শীট
 Bash-এ শেল স্ক্রিপ্ট লেখার জন্য একটি ব্যবহারিক রেফারেন্স — বেশিরভাগ Linux এবং macOS সিস্টেমে ডিফল্ট শেল। সিনট্যাক্স, সাধারণ নিদর্শন, পাঠ্য প্রক্রিয়াকরণ এবং দরকারী ওয়ান-লাইনার কভার করে।
 ---

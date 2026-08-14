@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ruby
 Ruby adalah bahasa pemrograman dinamis, ditafsirkan, berorientasi objek yang dibuat oleh Yukihiro "Matz" Matsumoto dan pertama kali dirilis pada tahun 1995 di Jepang. Ruby dirancang dengan fokus pada kebahagiaan programmer — sintaksisnya elegan dan alami, bacaannya hampir seperti bahasa Inggris. Segala sesuatu di Ruby adalah sebuah objek, termasuk tipe primitif seperti integer dan boolean. Ruby terkenal dengan kerangka web Ruby on Rails, yang merevolusi pengembangan web dengan mempopulerkan konvensi atas konfigurasi dan pembuatan prototipe cepat.
 Selain Rails, Ruby digunakan untuk pembuatan skrip, otomatisasi, perkakas DevOps (Chef, Puppet), dan sebagai bahasa tujuan umum. Sintaksnya yang ekspresif dan kemampuan metaprogramming yang kuat membuatnya menyenangkan untuk menulis.

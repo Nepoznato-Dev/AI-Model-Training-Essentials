@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Terraform and Infrastructure as Code"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Terraform und Infrastruktur als Code
 Terraform ist das am weitesten verbreitete IaC-Tool (Infrastructure as Code) – Sie können damit Cloud-Infrastruktur (Server, Datenbanken, Netzwerke, Berechtigungen) in deklarativen Konfigurationsdateien definieren, die versioniert, überprüft, getestet und automatisiert werden können. Anstatt sich durch eine Cloud-Konsole zu klicken, schreiben Sie Code, der den gewünschten Zustand Ihrer Infrastruktur beschreibt, und Terraform ermittelt, welche Änderungen vorgenommen werden müssen.
 ---

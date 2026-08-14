@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Causal Inference
 
 Causal inference is the science of determining whether one thing actually causes another — not just whether they're correlated. Correlation tells you that two variables move together. Causation tells you that changing one will change the other. This distinction matters enormously in medicine (does this drug work?), policy (does this intervention reduce poverty?), business (does this ad campaign increase sales?), and science (does this mechanism explain the phenomenon?).

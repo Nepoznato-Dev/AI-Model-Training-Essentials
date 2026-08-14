@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lohika at Kritikal na Pag-iisip
 Ang lohika ay ang pag-aaral ng wastong pangangatwiran — kung paano bumuo ng mga tamang argumento at tukuyin ang mga may depekto. Ang kritikal na pag-iisip ay ang disiplinadong ugali ng pagtatanong ng mga pagpapalagay, pagsusuri ng ebidensya, at pangangatuwirang mabuti. Ang mga kasanayang ito ay mahalaga hindi lamang sa matematika at computer science, ngunit sa araw-araw na paggawa ng desisyon, siyentipikong pananaliksik, at pag-navigate sa isang mundong mayaman sa impormasyon.
 ---

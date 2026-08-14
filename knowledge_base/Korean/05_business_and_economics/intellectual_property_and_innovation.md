@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Intellectual Property and Innovation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 지적재산권과 혁신
 지적 재산(IP)은 법에 의해 무단 사용으로부터 보호되는 발명품, 예술 작품, 브랜드 이름, 디자인, 영업 비밀 등 정신의 창작물을 의미합니다. 혁신은 아이디어를 가치로 바꾸는 과정이다. IP법은 창작자에게 보상(임시 독점 제공)과 사회에 혜택(지식을 궁극적으로 무료로 제공)이라는 두 가지 상충되는 이익의 균형을 맞추기 위해 존재합니다. IP를 이해하는 것은 제품 구축, 콘텐츠 제작, 비즈니스 운영 또는 연구에 종사하는 모든 사람에게 필수적입니다.
 ---

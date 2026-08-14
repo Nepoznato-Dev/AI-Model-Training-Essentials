@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geospatial Analysis"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # تجزیه و تحلیل جغرافیایی
 تجزیه و تحلیل جغرافیایی فرآیند بررسی داده هایی است که دارای یک جزء جغرافیایی است - مختصات، آدرس ها، مرزها یا هر داده ای که به یک مکان روی زمین مرتبط است. به سؤالاتی مانند «مشتریان ما کجا هستند؟»، «مسیر بهینه کدام است؟» و «کاربری زمین در طول زمان چگونه تغییر می‌کند؟» پاسخ می‌دهد. هر مجموعه داده دارای یک بعد فضایی است و درک آن بینش هایی را باز می کند که تجزیه و تحلیل آماری محض از دست می دهد.
 ---

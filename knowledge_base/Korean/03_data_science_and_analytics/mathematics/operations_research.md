@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 운영 연구
 운영 연구(OR)는 의사 결정에 수학적 방법을 적용하는 것입니다. 제2차 세계대전 중에 군사 물류를 위해 탄생한 이 회사는 이제 공급망을 최적화하고, 항공사 일정을 계획하고, 배송 차량의 경로를 지정하고, 재고를 관리하고, 모든 산업 전반에 걸쳐 자원을 할당합니다. OR은 제약 조건 하에서 최선의 결정을 내릴 수 있는 수학적 툴킷을 제공합니다.
 ---

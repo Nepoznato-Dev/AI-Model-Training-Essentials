@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Assembly Language
 Ang Assembly language ay ang pinakamababang antas na nababasa ng tao na programming language. Nagbibigay ito ng direktang representasyon ng mga tagubilin ng machine code ng computer gamit ang mga mnemonic code (tulad ng`MOV`,`ADD`,`JMP`) sa halip na raw binary. Ang bawat wika ng pagpupulong ay partikular sa isang partikular na arkitektura ng processor (x86, ARM, MIPS, RISC-V) — ang code na isinulat para sa isang arkitektura ay hindi gagana sa isa pa.
 Ang wika ng pagpupulong ay hindi ginagamit para sa pagbuo ng mga aplikasyon. Ginagamit ito kapag kailangan mo ng ganap na kontrol sa hardware: pagsulat ng mga kernel ng operating system, mga driver ng device, bootloader, naka-embed na firmware, mga seksyon ng code na kritikal sa pagganap, reverse engineering, at pag-unawa kung paano aktwal na nagpapatupad ng mga tagubilin ang mga computer.

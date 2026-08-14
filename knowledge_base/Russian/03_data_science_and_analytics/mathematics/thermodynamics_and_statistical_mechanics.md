@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Термодинамика и статистическая механика
 Термодинамика описывает макроскопическое поведение систем с точки зрения температуры, давления и энтропии, не зная, как выглядят атомы. Статистическая механика объясняет термодинамику снизу вверх: она выводит макроскопические свойства из микроскопического поведения огромного числа частиц. Вместе они обеспечивают глубочайшее понимание энергии, энтропии и равновесия — концепций, которые перекочевали в теорию информации, машинное обучение и не только.
 ---

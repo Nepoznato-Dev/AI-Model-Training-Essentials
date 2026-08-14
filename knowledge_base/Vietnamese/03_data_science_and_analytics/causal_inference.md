@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 #Suy luận nhân quả
 Suy luận nhân quả là khoa học xác định liệu một điều có thực sự gây ra một điều khác hay không - chứ không chỉ liệu chúng có tương quan với nhau hay không. Tương quan cho bạn biết rằng hai biến di chuyển cùng nhau. Nhân quả cho bạn biết rằng thay đổi cái này sẽ thay đổi cái kia. Sự khác biệt này có ý nghĩa rất lớn trong y học (loại thuốc này có tác dụng không?), chính sách (sự can thiệp này có làm giảm nghèo không?), kinh doanh (chiến dịch quảng cáo này có làm tăng doanh số bán hàng không?) và khoa học (cơ chế này có giải thích được hiện tượng này không?).
 ---

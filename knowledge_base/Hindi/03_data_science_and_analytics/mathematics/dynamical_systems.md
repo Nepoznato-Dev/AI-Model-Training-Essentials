@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # डायनामिकल सिस्टम
 एक **गतिशील प्रणाली** बताती है कि एक राज्य एक निश्चित नियम के अनुसार समय के साथ कैसे विकसित होता है। ग्रहों की कक्षाओं से लेकर जनसंख्या की गतिशीलता तक, मौसम के पैटर्न से लेकर तंत्रिका नेटवर्क के प्रशिक्षण तक, गतिशील प्रणाली सिद्धांत यह समझने के लिए भाषा और उपकरण प्रदान करता है कि चीजें कैसे बदलती हैं। यह फ़ाइल सामान्य अंतर समीकरण (ओडीई), आंशिक अंतर समीकरण (पीडीई), स्थिरता विश्लेषण, अराजकता और द्विभाजन को कवर करती है।
 ---

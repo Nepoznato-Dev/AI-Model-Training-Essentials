@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # جنریٹو اے آئی ڈیپ ڈائیو
 جنریٹو AI سے مراد ایسے ماڈلز ہیں جو نئے مواد تخلیق کرتے ہیں — تصاویر، متن، آڈیو، ویڈیو، کوڈ — صرف موجودہ ڈیٹا کی درجہ بندی یا پیشین گوئی کرنے کے بجائے۔ اگرچہ بڑے زبان کے ماڈل زیادہ تر توجہ حاصل کرتے ہیں، تخلیقی AI لینڈ سکیپ بہت وسیع ہے۔ اس فائل میں جدید جنریٹو سسٹمز کے پیچھے آرکیٹیکچرز، تکنیکوں اور ٹریڈ آف کا احاطہ کیا گیا ہے۔
 ---

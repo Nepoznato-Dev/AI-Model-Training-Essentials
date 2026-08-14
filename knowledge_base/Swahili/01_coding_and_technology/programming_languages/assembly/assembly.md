@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lugha ya Mkutano
 Lugha ya mkusanyiko ndiyo lugha ya kiwango cha chini zaidi ya programu inayoweza kusomeka na binadamu. Inatoa uwakilishi wa moja kwa moja wa maagizo ya msimbo wa mashine ya kompyuta kwa kutumia misimbo ya mnemonic (kama`MOV`,`ADD`,`JMP`) badala ya mfumo wa jozi mbichi. Kila lugha ya kusanyiko ni maalum kwa usanifu fulani wa kichakataji (x86, ARM, MIPs, RISC-V) - msimbo ulioandikwa kwa usanifu mmoja hautatumika kwa mwingine.
 Lugha ya kusanyiko haitumiki kwa matumizi ya ujenzi. Inatumika unapohitaji udhibiti kamili wa maunzi: kuandika viini vya mfumo wa uendeshaji, viendesha kifaa, vipakiaji viendeshaji, programu dhibiti iliyopachikwa, sehemu za msimbo muhimu wa utendaji, uhandisi wa kubadilisha nyuma, na kuelewa jinsi kompyuta inavyotekeleza maagizo.

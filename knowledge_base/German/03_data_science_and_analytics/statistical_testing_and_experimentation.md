@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Statistische Tests und Experimente
 Statistik ist die Grammatik der Wissenschaft. Es gibt Ihnen die Werkzeuge an die Hand, um reale Muster von zufälligem Rauschen zu unterscheiden, um zu messen, ob eine Änderung tatsächlich zu Verbesserungen geführt hat, und um Entscheidungen unter Unsicherheit zu treffen. Diese Datei behandelt die Kernkonzepte des Hypothesentests, des experimentellen Designs und der häufigsten Fallstricke, die Menschen zum Stolpern bringen.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C++"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C++
 C++ ایک عام مقصد کی، مرتب کردہ پروگرامنگ لینگویج ہے جسے Bjarne Stroustrup نے پہلی بار 1985 میں ریلیز کیا تھا۔ یہ C کو آبجیکٹ اورینٹڈ خصوصیات، جنرک، اور -- جدید ورژن (C++11 اور بعد میں) کے ساتھ پھیلاتا ہے -- اعلی سطحی تجریدات جیسے لیمبڈاس، سمارٹ پوائنٹرز، اور معیاری ٹیمپلیٹ (LSTbr)۔ C++ "zero-overhead abstraction" کے اصول کی پیروی کرتا ہے: آپ کو ان خصوصیات کے لیے ادائیگی نہیں کرنی چاہیے جو آپ استعمال نہیں کرتے ہیں۔
 جب آپ کو اعلی کارکردگی اور اظہار کی طاقت دونوں کی ضرورت ہوتی ہے تو C++ انتخاب کی زبان ہوتی ہے۔ یہ گیم انجنز (غیر حقیقی انجن)، براؤزرز (کروم، فائر فاکس)، ڈیٹا بیسز (MongoDB)، آپریٹنگ سسٹمز (ونڈوز اور میک او ایس کے حصے)، مالیاتی تجارتی نظام، اور ریئل ٹائم سمولیشنز کو طاقت دیتا ہے۔

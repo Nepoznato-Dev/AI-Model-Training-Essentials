@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Science and Nature"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 과학과 자연
 과학은 우주가 실제로 무엇을 하고 있는지 알아내는 방법입니다. 우리가 우주가 무엇을 하고 있다고 가정하는 것이 아니라 고대 문헌에서 말하는 것이 아니라 주의 깊은 관찰과 실험을 통해 밝혀지는 것입니다. 과학적 방법은 원칙적으로 간단합니다. 무언가를 관찰하고, 가설을 세우고, 테스트하고, 결과에 따라 이해를 수정하는 것입니다. 과학을 강력하게 만드는 것은 그것이 스스로 교정된다는 점입니다. 모든 주장은 잠정적입니다. 더 나은 증거가 나올 때까지만 받아들여집니다.
 이 파일은 물리학, 화학, 생물학, 지구 및 우주과학 등 자연과학의 주요 분야를 다루고 있습니다. 물리적 세계의 지도라고 생각해보세요.

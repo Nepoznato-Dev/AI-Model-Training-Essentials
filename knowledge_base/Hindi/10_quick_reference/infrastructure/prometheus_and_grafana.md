@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # प्रोमेथियस और ग्राफाना
 प्रोमेथियस एक ओपन-सोर्स मॉनिटरिंग और अलर्टिंग टूलकिट है जिसे विश्वसनीयता और स्केलेबिलिटी के लिए डिज़ाइन किया गया है। ग्राफाना समय-श्रृंखला डेटा को विज़ुअलाइज़ करने के लिए अग्रणी ओपन-सोर्स प्लेटफ़ॉर्म है। साथ में, वे आधुनिक बुनियादी ढांचे और अनुप्रयोगों के लिए सबसे लोकप्रिय निगरानी स्टैक बनाते हैं। प्रोमेथियस मेट्रिक्स एकत्र और संग्रहीत करता है; ग्राफाना उन्हें डैशबोर्ड में प्रदर्शित करता है।
 ---

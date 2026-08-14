@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # নিয়ন্ত্রণ তত্ত্ব
 নিয়ন্ত্রণ তত্ত্ব হল সিস্টেমগুলিকে আপনি যেভাবে চান সেভাবে আচরণ করার গণিত। থার্মোস্ট্যাট থেকে অটোপাইলট, রোবটিক অস্ত্র থেকে রাসায়নিক চুল্লী, নিয়ন্ত্রণ ব্যবস্থা উপলব্ধি করে, সিদ্ধান্ত নেয় এবং পছন্দসই আচরণ বজায় রাখতে কাজ করে। ক্ষেত্রটি স্থিতিশীলতা, কর্মক্ষমতা এবং দৃঢ়তা বিশ্লেষণের জন্য কঠোর সরঞ্জাম সরবরাহ করে — ধারণাগুলি যা শক্তিবৃদ্ধি শিক্ষা, হাইপারপ্যারামিটার টিউনিং এবং অভিযোজিত সিস্টেমগুলিতে স্থানান্তরিত হয়েছে।
 ---

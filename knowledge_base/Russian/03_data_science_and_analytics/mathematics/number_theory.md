@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Теория чисел
 Теория чисел — это изучение целых чисел — целых чисел и их свойств. Гаусс называл ее «королевой математики». Несмотря на изучение простейших объектов (1, 2, 3, ...), теория чисел порождает одни из самых глубоких и сложных проблем во всей математике. Сегодня он лежит в основе современной криптографии, алгоритмов хеширования, кодов, исправляющих ошибки, и генерации случайных чисел.
 ---

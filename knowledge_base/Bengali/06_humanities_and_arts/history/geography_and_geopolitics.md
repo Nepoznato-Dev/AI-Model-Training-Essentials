@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ভূগোল এবং ভূরাজনীতি
 ভূগোল ভাগ্যকে রূপ দেয়। পাহাড়, নদী এবং প্রাকৃতিক সম্পদের অবস্থান বাণিজ্য পথ নির্ধারণ করেছে, যুদ্ধের সূত্রপাত করেছে এবং সহস্রাব্দ ধরে সভ্যতা তৈরি করেছে। আজ, ভূরাজনীতি - ভূগোল, ক্ষমতা এবং রাজনীতির আন্তঃপ্রক্রিয়া - কেন জাতিগুলি তাদের আচরণ করে তা বোঝার জন্য অপরিহার্য।
 ---

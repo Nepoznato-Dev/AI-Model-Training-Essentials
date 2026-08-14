@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্নায়ুবিজ্ঞান
 স্নায়ুবিজ্ঞান হল স্নায়ুতন্ত্রের অধ্যয়ন — মস্তিষ্ক, মেরুদন্ড, এবং সমস্ত স্নায়ু যা তাদের শরীরের সাথে সংযুক্ত করে। এটি একাধিক স্তর বিস্তৃত করে: অণু এবং জিন থেকে, পৃথক নিউরন এবং সিন্যাপ্স, সার্কিট এবং মস্তিষ্কের অঞ্চল, আচরণ, জ্ঞান এবং চেতনা পর্যন্ত। মস্তিষ্ক হল পরিচিত মহাবিশ্বের সবচেয়ে জটিল গঠন, যার মধ্যে প্রায় 86 বিলিয়ন নিউরন ট্রিলিয়ন ট্রিলিয়ন সিন্যাপ্স দ্বারা সংযুক্ত, এবং এটি কীভাবে কাজ করে তা বোঝা বিজ্ঞানের অন্যতম বড় চ্যালেঞ্জ।
 ---

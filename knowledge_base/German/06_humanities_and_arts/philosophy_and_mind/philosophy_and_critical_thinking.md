@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Philosophie und kritisches Denken
 Philosophie ist die systematische Untersuchung grundlegender Fragen über Wissen, Realität und Existenz. Sie bietet den Rahmen zur Bewertung dessen, was als Wissen gilt, was es wert ist, getan zu werden, und wie man gut begründete Argumente von schwachen unterscheidet. Kritisches Denken ist die praktische Anwendung dieses Rahmens: die Fähigkeit, Behauptungen zu analysieren, fehlerhafte Argumente zu erkennen und besser informierte Entscheidungen zu treffen. In dieser Datei werden die wichtigsten Ideen, die Werkzeuge zu ihrer Bewertung und die kognitiven Verzerrungen behandelt, die jeden betreffen.
 ---

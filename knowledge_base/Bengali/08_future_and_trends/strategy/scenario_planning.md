@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # দৃশ্যকল্প পরিকল্পনা
 ## ওভারভিউ
 কেউ ভবিষ্যতের ভবিষ্যদ্বাণী করতে পারে না - তবে আপনি বেশ কয়েকটি প্রশংসনীয়ের জন্য প্রস্তুত করতে পারেন। দৃশ্যকল্প পরিকল্পনা, কোল্ড ওয়ার থিঙ্ক ট্যাঙ্কের জন্ম এবং 1970-এর দশকের তেল সংকটের সময় শেল দ্বারা নিখুঁত, অনিশ্চয়তা সম্পর্কে পদ্ধতিগতভাবে চিন্তা করার একটি উপায়। একটি পূর্বাভাসের উপর বাজি ধরার পরিবর্তে, আপনি কীভাবে জিনিসগুলি উন্মোচিত হতে পারে সে সম্পর্কে সুসংগত গল্প তৈরি করুন, তারপরে তাদের সকলের বিরুদ্ধে আপনার সিদ্ধান্তগুলিকে চাপ দিয়ে পরীক্ষা করুন। মূল ডোমেন জুড়ে পরিস্থিতি সহ পদ্ধতিটি কীভাবে কাজ করে তা এখানে।

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "JavaScript"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # JavaScript
 JavaScript は、1995 年にブレンダン・アイヒによってわずか 10 日間で作成された動的インタープリタ型プログラミング言語です。元々は Web ページにインタラクティブ性を追加するために設計されましたが、世界で最も広く使用されているプログラミング言語に成長しました。 JavaScript は、あらゆる Web ブラウザー、Node.js 経由のサーバー、デスクトップ アプリ (Electron)、モバイル アプリ (React Native)、さらには組み込みシステムでも実行されます。
 この言語は、基本的にクライアント側 Web 開発の唯一のオプションであるという点で独特です。すべてのブラウザーがこの言語をネイティブにサポートしています。この独占は、フルスタック JavaScript (Node.js、Deno、Bun) の台頭と相まって、不可欠なものとなっています。

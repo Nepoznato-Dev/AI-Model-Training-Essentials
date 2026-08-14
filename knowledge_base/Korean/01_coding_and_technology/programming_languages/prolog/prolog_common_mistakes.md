@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # 프롤로그 — 일반적인 실수 및 안티 패턴
 이 문서에는 Prolog의 가장 일반적인 실수, 함정 및 방지 패턴이 수정되어 목록화되어 있습니다.
 ---

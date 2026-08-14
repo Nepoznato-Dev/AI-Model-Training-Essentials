@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গেম থিওরি এবং কৌশলগত চিন্তা
 গেম থিওরি হল কৌশলগত মিথস্ক্রিয়াগুলির গাণিতিক অধ্যয়ন — এমন পরিস্থিতিতে যেখানে আপনার ফলাফল শুধুমাত্র আপনি যা করেন তার উপর নয়, অন্যরা যা করে তার উপর নির্ভর করে। এটি সর্বত্র প্রযোজ্য: ব্যবসায়িক প্রতিযোগিতা, আন্তর্জাতিক সম্পর্ক, নিলাম, আলোচনা, বিবর্তনীয় জীববিজ্ঞান এবং ট্রাফিকের মাধ্যমে একটি রুট বেছে নেওয়ার মতো দৈনন্দিন সিদ্ধান্ত। মূল অন্তর্দৃষ্টি হল যে কৌশলগত পরিস্থিতিতে যুক্তিবাদী অভিনেতারা কেবল তাদের নিজস্ব কৌশল অপ্টিমাইজ করে না - তারা অনুমান করে যে অন্যরা কী করবে এবং অন্যরা একই কাজ করছে।
 ---

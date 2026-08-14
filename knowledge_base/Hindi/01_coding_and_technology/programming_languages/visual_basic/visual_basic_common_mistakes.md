@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic — Common Mistakes & Anti-Patterns"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # विज़ुअल बेसिक - सामान्य गलतियाँ और विरोधी पैटर्न
 यह दस्तावेज़ विज़ुअल बेसिक (VB.NET) में सबसे आम गलतियों, जाल और एंटी-पैटर्न को सुधार के साथ सूचीबद्ध करता है।
 ---

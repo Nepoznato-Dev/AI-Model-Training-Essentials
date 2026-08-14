@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Demographic Shifts"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Zmiany demograficzne
 ## Przegląd
 Demografia jest przeznaczeniem — a przynajmniej mocno się z nim rymuje. Ludność świata szybko się starzeje, migruje według nowych wzorców, gromadzi się w miastach w niespotykanym dotąd tempie i dzieli się według linii pokoleniowych, które kształtują wszystko, od zachowań wyborczych po nawyki konsumentów. Zmiany te będą trwały przez dziesięciolecia, ale ich skutki są już widoczne. Oto cztery główne trendy i ich znaczenie.

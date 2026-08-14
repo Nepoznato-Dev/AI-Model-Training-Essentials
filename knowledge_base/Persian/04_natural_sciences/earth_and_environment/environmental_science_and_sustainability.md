@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # علوم زیست محیطی و پایداری
 علم محیط زیست از روش های فیزیک، شیمی، زیست شناسی، زمین شناسی و اقتصاد برای این سوال استفاده می کند: "چه اتفاقی برای سیاره ما می افتد و چه کاری می توان در مورد آن انجام داد؟" این یک زمینه بین رشته ای است - همگرایی رشته های متعدد - که هم به عمق تحلیلی و هم به ارتباط خط مشی آن کمک می کند.
 تنش اصلی در علم محیط زیست این است: تمدن بشری به استخراج منابع از محیط زیست بستگی دارد، اما استخراج این منابع محیط را به گونه‌ای تغییر می‌دهد که می‌تواند سیستم‌هایی را که ما به آنها وابسته هستیم تضعیف کند. درک اینکه حلقه بازخورد به طور خلاصه کل میدان است.

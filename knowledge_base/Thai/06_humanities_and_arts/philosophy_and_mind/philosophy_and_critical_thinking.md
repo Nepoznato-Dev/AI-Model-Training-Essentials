@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ปรัชญาและการคิดเชิงวิพากษ์
 ปรัชญาคือการศึกษาคำถามพื้นฐานเกี่ยวกับความรู้ ความเป็นจริง และการดำรงอยู่อย่างเป็นระบบ โดยเป็นกรอบในการประเมินสิ่งที่ถือเป็นความรู้ สิ่งที่ควรค่าแก่การทำ และวิธีการแยกแยะข้อโต้แย้งที่มีเหตุมีผลดีจากข้อโต้แย้งที่อ่อนแอ การคิดอย่างมีวิจารณญาณคือการประยุกต์ใช้กรอบการทำงานนี้ในทางปฏิบัติ ได้แก่ ทักษะในการวิเคราะห์ข้อกล่าวอ้าง การระบุเหตุผลที่บกพร่อง และการตัดสินใจโดยใช้ข้อมูลที่ดีกว่า ไฟล์นี้ครอบคลุมแนวคิดหลัก เครื่องมือสำหรับการประเมิน และอคติทางการรับรู้ที่ส่งผลกระทบต่อทุกคน
 ---

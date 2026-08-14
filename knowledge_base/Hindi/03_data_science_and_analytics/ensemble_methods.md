@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # संयोजन के तरीके
 किसी एकल मॉडल द्वारा अकेले हासिल की जा सकने वाली तुलना में बेहतर भविष्यवाणियाँ उत्पन्न करने के लिए एन्सेम्बल विधियाँ कई मशीन लर्निंग मॉडल को जोड़ती हैं। अंतर्ज्ञान सीधा है: यदि आपके पास कई मॉडल हैं जो कुछ हद तक सटीक हैं लेकिन अलग-अलग त्रुटियां करते हैं, तो उनकी भविष्यवाणियों को संयोजित करने से व्यक्तिगत गलतियां रद्द हो जाएंगी और अधिक मजबूत परिणाम प्राप्त होंगे। अधिकांश प्रतिस्पर्धी मशीन लर्निंग समाधानों के पीछे एन्सेम्बल्स का हाथ है और यह उत्पादन प्रणालियों में सबसे विश्वसनीय तकनीकों में से कुछ बनी हुई है।
 ---

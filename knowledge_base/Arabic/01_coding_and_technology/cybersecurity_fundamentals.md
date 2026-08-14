@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Cybersecurity Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #أساسيات الأمن السيبراني
 الأمن هو نظام يجب دمجه في كل طبقة من طبقات النظام منذ البداية، بدلاً من إضافته كفكرة لاحقة. سواء كنت تقوم ببناء تطبيق ويب، أو إدارة البنية التحتية، أو شحن واجهة برمجة التطبيقات (API)، فإن فهم مشهد التهديد وأساسيات الدفاع أمر ضروري.
 ---

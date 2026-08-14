@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "PHP"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # PHP
 PHP（超文本預處理器）是一種伺服器端腳本語言，由Rasmus Lerdorf於1994年創建，並於1995年首次發布。 PHP最初設計用於產生動態網頁，現已發展成為一種功能齊全的通用語言。它為大約 75% 的使用已知伺服器端語言的網站提供支持，包括 WordPress、Facebook（最初）、維基百科、Slack 和數百萬個其他網站。
 現代 PHP (8.x) 是一種與 2000 年代初期的 PHP 非常不同的語言。現在它具有類型化屬性、匹配表達式、枚舉、纖程、只讀類別和強大的類型系統。儘管 PHP 在開發人員中享有盛譽（經常因不一致而受到批評），但它很實用，部署廣泛，並且不斷改進。

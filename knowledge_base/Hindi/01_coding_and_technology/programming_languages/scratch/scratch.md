@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # खरोंचना
 स्क्रैच एमआईटी मीडिया लैब द्वारा विकसित एक दृश्य, ब्लॉक-आधारित प्रोग्रामिंग भाषा है और पहली बार 2007 में जारी की गई थी। टेक्स्ट-आधारित कोड लिखने के बजाय, उपयोगकर्ता प्रोग्राम बनाने के लिए रंगीन ब्लॉकों को एक साथ स्नैप करते हैं। स्क्रैच को विशेष रूप से 8-16 वर्ष की आयु के बच्चों के लिए डिज़ाइन किया गया है (हालाँकि सभी उम्र के शिक्षार्थी इसका उपयोग करते हैं) ताकि सिंटैक्स त्रुटियों की बाधा के बिना मौलिक प्रोग्रामिंग अवधारणाओं - लूप, सशर्त, चर, घटनाओं और कार्यों को सिखाया जा सके।
 स्क्रैच दुनिया में सबसे व्यापक रूप से उपयोग की जाने वाली परिचयात्मक प्रोग्रामिंग भाषा है, जिसके 100 मिलियन से अधिक पंजीकृत उपयोगकर्ता हैं और 70 से अधिक भाषाओं में उपलब्धता है। यह वेब ब्राउज़र में चलता है और मुफ़्त है।

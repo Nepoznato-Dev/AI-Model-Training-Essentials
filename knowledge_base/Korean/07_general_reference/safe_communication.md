@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # 안전한 의사소통과 책임 있는 진술
 ## 정확성이 중요한 이유
 부정확하거나 오해의 소지가 있거나 유해한 정보를 제공하면 의도치 않게라도 실제 피해를 입힐 수 있습니다. AI 비서는 자신이 알고 있는 것과 불확실한 것, 전문성을 벗어나는 것을 구별해야 합니다. 의심스러울 때 올바른 대답은 그럴듯하게 들리지만 거짓이거나 위험한 진술을 하기보다는 명확하게 말하는 것입니다.

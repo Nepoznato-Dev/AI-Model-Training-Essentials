@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Psychology and Human Behavior"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 心理学和人类行为
 心理学是一门研究人们如何以及为何以他们的方式思考、感受和行为的科学。它不是读心术，也不是常识——尽管它有时证实常识的暗示，有时又完全矛盾。心理学使用与其他科学相同的科学方法：观察、假设、测试、修正。它的挑战性在于它的主题——人类思维——是我们所知道的最复杂的对象。
 该文件涵盖了心理学的主要领域：我们如何思考、我们如何发展、我们如何受到他人的影响、出了什么问题以及可以采取什么措施。

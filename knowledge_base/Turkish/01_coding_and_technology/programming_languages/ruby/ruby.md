@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Yakut
 Ruby, Yukihiro "Matz" Matsumoto tarafından oluşturulan ve ilk olarak 1995 yılında Japonya'da piyasaya sürülen dinamik, yorumlanan, nesne yönelimli bir programlama dilidir. Ruby, programcının mutluluğuna odaklanılarak tasarlandı; sözdizimi zarif ve doğaldır, neredeyse İngilizce gibi okunur. Tamsayılar ve boolean'lar gibi ilkel türler de dahil olmak üzere Ruby'deki her şey bir nesnedir. Ruby, yapılandırma ve hızlı prototipleme yerine gelenekselliği yaygınlaştırarak web geliştirmede devrim yaratan Ruby on Rails web çerçevesiyle tanınır.
 Ruby, Rails'in ötesinde komut dosyası oluşturma, otomasyon, DevOps araçları (Chef, Puppet) ve genel amaçlı bir dil olarak kullanılır. Etkileyici sözdizimi ve güçlü metaprogramlama yetenekleri, yazmayı keyifli hale getiriyor.

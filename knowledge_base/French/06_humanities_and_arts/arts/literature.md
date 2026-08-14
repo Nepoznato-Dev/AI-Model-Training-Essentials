@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Littérature
 La littérature est le témoignage le plus durable de la pensée, de l’émotion et de l’expérience de l’humanité. Des épopées orales des civilisations anciennes aux romans de l’ère numérique d’aujourd’hui, chaque œuvre est en conversation avec ce qui l’a précédé. Comprendre les genres, les mouvements et les techniques littéraires vous offre une perspective plus riche pour la lecture et pour comprendre les cultures qui ont produit ces œuvres.
 ---

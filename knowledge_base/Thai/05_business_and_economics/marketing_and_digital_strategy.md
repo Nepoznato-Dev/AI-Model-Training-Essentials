@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การตลาดและกลยุทธ์ดิจิทัล
 การตลาดเป็นวิธีที่ธุรกิจสร้าง สื่อสาร และส่งมอบคุณค่าให้กับลูกค้า โดยครอบคลุมทั้งระบบในการทำความเข้าใจความต้องการของลูกค้า การวางตำแหน่งผลิตภัณฑ์ให้ตรงกับความต้องการเหล่านั้น และสร้างความสัมพันธ์ที่เปลี่ยนผู้ซื้อให้เป็นผู้สนับสนุน การปฏิวัติทางดิจิทัลได้เปลี่ยนแปลงเครื่องมือ ช่องทาง และความรวดเร็วของการตลาด ในขณะที่ปัจจัยพื้นฐานยังคงมีความสอดคล้องกัน
 ---

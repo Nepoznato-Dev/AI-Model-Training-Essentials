@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # C — 常見錯誤與反模式
 本文檔列出了 C 語言中最常見的錯誤、陷阱和反模式。每個條目都顯示了不正確的方法，解釋了失敗的原因，並提供了正確的解決方案。 C 給你完全的控制權——這意味著對記憶體安全、邊界檢查和未定義的行為負全部責任。
 ---

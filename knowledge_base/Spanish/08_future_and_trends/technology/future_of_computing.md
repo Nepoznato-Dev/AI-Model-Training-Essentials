@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # El futuro de la informática
 El futuro de la informática está siendo moldeado por fuerzas que desafían los supuestos fundamentales de los últimos 60 años. La Ley de Moore (la observación de que la potencia informática se duplica aproximadamente cada dos años) se está desacelerando. La arquitectura von Neumann (CPU y memoria separadas) está chocando contra un "muro de memoria". La computación cuántica promete resolver problemas que las computadoras clásicas no pueden resolver. Los chips neuromórficos imitan la arquitectura del cerebro. La computación perimetral aleja el procesamiento de los centros de datos centralizados. Y la IA está cambiando el propósito de las computadoras: de herramientas que ejecutan instrucciones a sistemas que aprenden, generan y razonan. Comprender estos cambios es importante para cualquiera que construya, compre o dependa de la tecnología.
 ---

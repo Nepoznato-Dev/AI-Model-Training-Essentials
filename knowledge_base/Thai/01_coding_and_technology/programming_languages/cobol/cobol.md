@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ภาษาโคบอล
 COBOL (Common Business-Oriented Language) เป็นหนึ่งในภาษาการเขียนโปรแกรมที่เก่าแก่ที่สุดที่ยังคงใช้อยู่ พัฒนาขึ้นครั้งแรกในปี 1959 มันถูกออกแบบมาสำหรับการประมวลผลข้อมูลทางธุรกิจ เช่น ระบบการเงิน บัญชีเงินเดือน การธนาคาร การประกันภัย และแอปพลิเคชันของรัฐบาล ไวยากรณ์ที่คล้ายกับภาษาอังกฤษของ COBOL ตั้งใจให้ผู้จัดการธุรกิจสามารถอ่านได้ ไม่ใช่แค่โปรแกรมเมอร์เท่านั้น
 แม้จะมีอายุมาก แต่ COBOL ก็ประมวลผลประมาณ 30% ของธุรกรรมทางธุรกิจทั้งหมดทั่วโลก ธนาคารรายใหญ่ หน่วยงานรัฐบาล (รวมถึงสำนักงานประกันสังคมของสหรัฐอเมริกา) และบริษัทประกันภัยยังคงใช้ระบบเมนเฟรมของ COBOL ความหวาดกลัวข้อผิดพลาดของ Y2K ในปี 1999 ทำให้ภาษาโคบอลกลับมาเป็นที่รู้จักของสาธารณชนอีกครั้ง และภาษานี้ยังคงใช้งานโครงสร้างพื้นฐานที่สำคัญทั่วโลก

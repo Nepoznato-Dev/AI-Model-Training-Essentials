@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Медиаграмотность и оценка информации
 Мы живем в информационно насыщенном мире. Каждый день среднестатистический человек подвергается воздействию тысяч сообщений средств массовой информации — новостных статей, сообщений в социальных сетях, рекламы, политических выступлений, контента влиятельных лиц, текста, созданного искусственным интеллектом. Большая часть из них в порядке. Некоторые из них вводят в заблуждение. Небольшая сумма является заведомо ложной. Медиаграмотность — это умение ориентироваться в этом ландшафте — не доверяя всему и не доверяя ничему, а развивая выверенное понимание того, что надежно, а что нет.
 ---

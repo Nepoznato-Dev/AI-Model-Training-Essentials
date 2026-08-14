@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 세계 문화와 사회
 문화는 사회의 틀, 즉 구성원들이 자신의 세계와 서로 대처하기 위해 사용하는 공유된 신념, 가치, 관습, 행동 및 인공물입니다. 문화적 다양성을 이해하는 것은 퀴즈를 암기하는 것이 아닙니다. 그것은 세상을 보는 한 가지 방식이 수천 가지에 속하며, 다른 시스템은 내부적으로 일관성이 있고, 역사적으로 기반을 두고 있으며, 그 자체로 이해할 가치가 있다는 것을 인식하는 것입니다.
 ---

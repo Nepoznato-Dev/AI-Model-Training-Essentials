@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Literatura
 La literatura es el registro más perdurable de pensamiento, emoción y experiencia de la humanidad. Desde las epopeyas orales de las civilizaciones antiguas hasta las novelas de la era digital actual, cada obra conversa con lo que vino antes. Comprender los géneros, movimientos y técnicas literarias le brinda una perspectiva más rica para la lectura y para comprender las culturas que produjeron estas obras.
 ---

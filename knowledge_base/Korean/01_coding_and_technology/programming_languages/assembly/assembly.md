@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 어셈블리 언어
 어셈블리 언어는 사람이 읽을 수 있는 가장 낮은 수준의 프로그래밍 언어입니다. 원시 바이너리 대신 니모닉 코드(예:`MOV`,`ADD`,`JMP`)를 사용하여 컴퓨터의 기계어 명령어를 직접 표현합니다. 각 어셈블리 언어는 특정 프로세서 아키텍처(x86, ARM, MIPS, RISC-V)에 따라 다릅니다. 한 아키텍처용으로 작성된 코드는 다른 아키텍처에서 실행되지 않습니다.
 어셈블리 언어는 애플리케이션 구축에 사용되지 않습니다. 운영 체제 커널, 장치 드라이버, 부트로더, 임베디드 펌웨어 작성, 성능에 중요한 코드 섹션, 리버스 엔지니어링, 컴퓨터가 실제로 명령을 실행하는 방법 이해 등 하드웨어에 대한 절대적인 제어가 필요할 때 사용됩니다.

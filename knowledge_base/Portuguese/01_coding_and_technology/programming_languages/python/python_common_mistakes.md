@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python — Common Mistakes & Anti-Patterns"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial common mistakes document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Python — Erros Comuns e Antipadrões
 Este documento cataloga os erros, armadilhas e antipadrões mais comuns em Python. Cada entrada mostra a abordagem incorreta, explica por que ela falha e fornece a solução correta. Compreender essas armadilhas o ajudará a escrever um código Pythonic mais robusto.
 ---

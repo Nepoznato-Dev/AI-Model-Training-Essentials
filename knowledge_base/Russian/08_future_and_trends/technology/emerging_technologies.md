@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Emerging Technologies"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Новые технологии
 ## Обзор
 Некоторые технологии создают совершенно новые категории возможностей, а не постепенно совершенствуют существующие. Квантовые вычисления направлены на решение проблем, на решение которых у классических машин ушли бы тысячелетия. Энергия термоядерного синтеза открывает возможность получения практически безграничной чистой энергии. Интерфейсы «мозг-компьютер» соединяют разум и машину. Синтетическая биология позволяет переписать биологический код. В следующих разделах описывается, где находится каждая из этих границ сегодня и куда указывают текущие тенденции.

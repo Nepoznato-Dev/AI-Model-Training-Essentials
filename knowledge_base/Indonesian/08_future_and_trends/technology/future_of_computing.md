@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "The Future of Computing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Masa Depan Komputasi
 Masa depan komputasi sedang dibentuk oleh kekuatan yang menantang asumsi mendasar selama 60 tahun terakhir. Hukum Moore – pengamatan bahwa daya komputasi meningkat dua kali lipat setiap dua tahun – melambat. Arsitektur von Neumann — CPU dan memori yang terpisah — mengalami "dinding memori". Komputasi kuantum menjanjikan penyelesaian masalah yang tidak dapat diselesaikan oleh komputer klasik. Chip neuromorfik meniru arsitektur otak. Komputasi tepi memindahkan pemrosesan dari pusat data terpusat. Dan AI mengubah kegunaan komputer — dari alat yang menjalankan instruksi menjadi sistem yang belajar, menghasilkan, dan bernalar. Memahami perubahan ini penting bagi siapa pun yang membangun, membeli, atau mengandalkan teknologi.
 ---

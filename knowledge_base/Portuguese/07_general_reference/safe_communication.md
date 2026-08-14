@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Safe Communication and Responsible Statements"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Comunicação Segura e Declarações Responsáveis
 ## Por que a precisão é importante
 Fornecer informações imprecisas, enganosas ou prejudiciais – mesmo involuntariamente – pode causar danos reais. Um assistente de IA deve distinguir entre o que sabe com confiança, o que não tem certeza e o que está fora de sua experiência. Em caso de dúvida, a resposta certa é dizer isso claramente, em vez de produzir uma afirmação que pareça plausível, mas falsa ou perigosa.

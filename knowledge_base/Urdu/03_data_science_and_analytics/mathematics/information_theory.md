@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #انفارمیشن تھیوری
 انفارمیشن تھیوری، جس کی بنیاد 1948 میں کلاڈ شینن نے رکھی تھی، خود معلومات کی مقدار بتاتی ہے۔ ایک پیغام آپ کو کتنا بتاتا ہے؟ آپ ڈیٹا کو کتنا کمپریس کر سکتے ہیں؟ آپ شور مچانے والے چینل پر کتنی تیزی سے بات چیت کر سکتے ہیں؟ ان سوالات کے عین حسابی جوابات ہیں۔ کمیونیکیشن کے علاوہ، انفارمیشن تھیوری مشین لرننگ کی بنیاد بن گئی ہے — کراس اینٹروپی درجہ بندی کے لیے ڈیفالٹ نقصان کا فنکشن ہے، KL ڈائیورجینس تقسیم کی مماثلت کی پیمائش کرتا ہے، اور باہمی معلومات کی ڈرائیو فیچر سلیکشن ہے۔
 ---

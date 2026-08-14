@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Logic and Critical Thinking
 
 Logic is the study of valid reasoning — how to construct sound arguments and identify flawed ones. Critical thinking is the disciplined habit of questioning assumptions, evaluating evidence, and reasoning carefully. These skills are essential not just in mathematics and computer science, but in everyday decision-making, scientific research, and navigating an information-rich world.

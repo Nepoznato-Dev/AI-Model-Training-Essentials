@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # एआई नैतिकता और शासन
 एआई सिस्टम तटस्थ नहीं हैं। वे उस डेटा को प्रतिबिंबित करते हैं जिस पर उन्हें प्रशिक्षित किया गया था, उनके रचनाकारों के मूल्य और उन्हें तैनात करने वाले संगठनों के प्रोत्साहन। नैतिकता सिर्फ यह पूछने के बारे में नहीं है कि "क्या हम इसे बना सकते हैं?" लेकिन "क्या हमें करना चाहिए?" शासन ऐसी संरचनाएँ बनाने के बारे में है - कानून, मानक, निरीक्षण निकाय - जो सुनिश्चित करते हैं कि एआई का विकास और उपयोग जिम्मेदारी से किया जाए। यह फ़ाइल एआई के प्रमुख नैतिक आयामों और उन्हें संबोधित करने के लिए उभर रहे शासन ढांचे को कवर करती है।
 ---

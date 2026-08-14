@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Java"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #จาวา
 Java เป็นภาษาโปรแกรมเชิงวัตถุที่พิมพ์แบบสแตติก สร้างขึ้นโดย James Gosling ที่ Sun Microsystems และเปิดตัวในปี 1995 ปรัชญาการออกแบบของมัน — "เขียนครั้งเดียวทำงานได้ทุกที่" (WORA) สามารถทำได้ผ่าน Java Virtual Machine (JVM) ซึ่งอนุญาตให้โค้ด Java ที่คอมไพล์แล้วทำงานบนแพลตฟอร์มใด ๆ ที่มีการใช้งาน JVM Java เป็นหนึ่งในภาษาการเขียนโปรแกรมที่ใช้กันอย่างแพร่หลายมากที่สุดในประวัติศาสตร์ โดยขับเคลื่อนแบ็คเอนด์ขององค์กร แอพ Android ระบบข้อมูลขนาดใหญ่ และบริการทางการเงิน
 แม้จะอายุเกือบ 30 ปีแล้ว แต่ Java ก็ยังคงพัฒนาต่อไป Java สมัยใหม่ (เวอร์ชัน 17+) ประกอบด้วยบันทึก คลาสที่ปิดผนึก การจับคู่รูปแบบ เธรดเสมือน และระบบนิเวศที่กำลังเติบโตซึ่งแข่งขันกับภาษาใหม่ ๆ

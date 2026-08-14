@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Delphi / Object Pascal"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Delphi / Kitu Pascal
 Delphi ni lugha ya programu inayolengwa na kitu kulingana na Pascal, iliyoanzishwa awali na Borland (baadaye Embarcadero, sasa Idera). Ilitolewa kwa mara ya kwanza mnamo 1995 kama "Delphi 1", iliundwa kwa maendeleo ya haraka ya programu (RAD) ya programu za kompyuta za Windows. Lugha inajulikana rasmi kama Object Pascal, na Delphi IDE hutoa mbuni wa fomu inayoonekana, zana zilizojumuishwa za hifadhidata, na kikusanyaji chenye nguvu.
 Delphi ilikuwa mojawapo ya zana maarufu zaidi za ukuzaji wa Windows mwishoni mwa miaka ya 1990 na mapema miaka ya 2000. Ingawa umaarufu wake umepungua kwa kiasi kikubwa, inadumisha msingi wa watumiaji waliojitolea, haswa katika programu za kompyuta za mezani, ncha za mbele za hifadhidata, na matengenezo ya mfumo wa urithi. Delphi ya kisasa (11/12) inasaidia uundaji wa majukwaa mtambuka kwa Windows, macOS, iOS, na Android kupitia mfumo wa FireMonkey (FMX).

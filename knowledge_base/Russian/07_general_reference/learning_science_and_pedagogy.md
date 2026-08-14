@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Learning Science and Pedagogy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Обучение науке и педагогике
 Наука об обучении — это междисциплинарное исследование того, как люди учатся, опирающееся на знания психологии, нейробиологии, образования и когнитивной науки. Педагогика – это практика и методология преподавания. Вместе они решают вопросы, актуальные для всех, кто преподает, обучает, наставляет или разрабатывает образовательный контент: какие методы помогают людям эффективно учиться? Какие распространенные методы обучения неэффективны? Как должно быть структурировано обучение для оптимального сохранения и передачи?
 ---

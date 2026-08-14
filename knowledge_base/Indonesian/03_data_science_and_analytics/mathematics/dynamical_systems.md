@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dynamical Systems"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into dynamical systems"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Sistem Dinamis
 **sistem dinamis** menggambarkan bagaimana suatu negara berkembang dari waktu ke waktu berdasarkan aturan yang tetap. Dari orbit planet hingga dinamika populasi, dari pola cuaca hingga pelatihan jaringan saraf, teori sistem dinamik menyediakan bahasa dan alat untuk memahami bagaimana segala sesuatunya berubah. File ini mencakup persamaan diferensial biasa (ODE), persamaan diferensial parsial (PDE), analisis stabilitas, chaos, dan bifurkasi.
 ---

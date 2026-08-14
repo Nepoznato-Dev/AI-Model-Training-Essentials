@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Mở đầu
 Prolog (Lập trình logic) là ngôn ngữ lập trình logic được tạo ra vào năm 1972 bởi Alain Colmerauer và Philippe Roussel. Không giống như mọi ngôn ngữ khác trong danh sách này, Prolog không cho máy tính biết *cách* giải quyết vấn đề — bạn khai báo *điều gì* là đúng (sự kiện và quy tắc) và công cụ suy luận của Prolog tìm ra câu trả lời thông qua suy luận logic.
 Prolog là ngôn ngữ được lựa chọn cho các hệ thống chuyên gia, xử lý ngôn ngữ tự nhiên và nghiên cứu AI vào những năm 1980. Nó hỗ trợ dự án Hệ thống máy tính thế hệ thứ năm của Nhật Bản và được sử dụng trong Watson của IBM để hiểu ngôn ngữ tự nhiên. Ngày nay, Prolog được sử dụng trong việc giải quyết ràng buộc, lập kế hoạch, suy luận kiểu, lý luận pháp lý và mọi vấn đề đều được thể hiện một cách tự nhiên dưới dạng các mối quan hệ logic.

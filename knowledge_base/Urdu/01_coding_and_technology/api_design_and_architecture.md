@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Architecture"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API ڈیزائن اور فن تعمیر
 ایک API (ایپلیکیشن پروگرامنگ انٹرفیس) یہ ہے کہ کس طرح سافٹ ویئر کے اجزاء ایک دوسرے سے بات کرتے ہیں۔ ایک اچھی طرح سے ڈیزائن کیا گیا API بدیہی، مستقل، اور اس کے ساتھ کام کرنے میں خوشی ہے۔ ایک ناقص ڈیزائن کنفیوژن، کیڑے اور مایوسی کا سبب بنتا ہے۔ یہ فائل APIs بنانے کے اصولوں، نمونوں اور طریقوں کا احاطہ کرتی ہے جنہیں ڈویلپر درحقیقت استعمال کرنا چاہتے ہیں۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lý thuyết điều khiển
 Lý thuyết điều khiển là toán học làm cho hệ thống hoạt động theo cách bạn muốn. Từ máy điều nhiệt đến máy lái tự động, từ cánh tay robot đến lò phản ứng hóa học, hệ thống điều khiển cảm nhận, quyết định và hành động để duy trì hành vi mong muốn. Lĩnh vực này cung cấp các công cụ nghiêm ngặt để phân tích độ ổn định, hiệu suất và độ bền — các khái niệm đã được chuyển sang học tăng cường, điều chỉnh siêu tham số và hệ thống thích ứng.
 ---

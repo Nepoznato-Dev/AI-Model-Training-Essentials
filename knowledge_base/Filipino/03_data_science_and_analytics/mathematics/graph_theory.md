@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoryang Graph
 Ang **graph** ay isang mathematical structure na binubuo ng mga vertices (node) na konektado ng mga gilid (links). Mga relasyon sa modelo ng mga graph: mga social network, mga mapa ng kalsada, mga neural network, mga dependency, mga channel ng komunikasyon. Graph theory — ang pag-aaral ng mga istrukturang ito — ay nagbibigay ng mga algorithm at theorems na sentro ng computer science, operations research, at data science.
 ---

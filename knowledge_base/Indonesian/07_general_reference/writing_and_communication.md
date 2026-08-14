@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Writing and Communication Fundamentals"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dasar-dasar Penulisan dan Komunikasi
 Menulis dan komunikasi adalah keterampilan menyampaikan ide secara efektif — baik melalui email, laporan, dokumentasi, presentasi, atau percakapan. Sebagian besar pekerjaan pengetahuan pada dasarnya adalah pekerjaan komunikasi: para profesional perlu menjelaskan pemikiran mereka, membujuk orang lain, mendokumentasikan keputusan, menulis spesifikasi, menyajikan temuan, dan berkolaborasi antar tim. Kesenjangan antara apa yang dimaksudkan dan apa yang dipahami adalah asal muasal sebagian besar masalah, dan komunikasi yang lebih baik akan mempersempit kesenjangan tersebut.
 ---

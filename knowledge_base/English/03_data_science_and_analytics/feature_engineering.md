@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Feature Engineering
 
 Feature engineering is the process of transforming raw data into representations that make machine learning models more effective. It's often described as the most important step in the ML pipeline — the features you give a model matter more than the algorithm you choose. A simple model with well-crafted features will typically outperform a complex model with raw, unprocessed inputs. The art lies in understanding both the domain and the data well enough to create signals the model can learn from.

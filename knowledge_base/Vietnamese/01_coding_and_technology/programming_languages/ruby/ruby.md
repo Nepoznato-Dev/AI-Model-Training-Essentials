@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ruby"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # hồng ngọc
 Ruby là ngôn ngữ lập trình hướng đối tượng năng động, thông dịch, được tạo ra bởi Yukihiro "Matz" Matsumoto và phát hành lần đầu tiên vào năm 1995 tại Nhật Bản. Ruby được thiết kế tập trung vào sự hài lòng của lập trình viên - cú pháp của nó thanh lịch và tự nhiên, đọc gần giống tiếng Anh. Mọi thứ trong Ruby đều là một đối tượng, bao gồm các kiểu nguyên thủy như số nguyên và boolean. Ruby được biết đến nhiều nhất với khung web Ruby on Rails, khung web này đã cách mạng hóa việc phát triển web bằng cách phổ biến quy ước về cấu hình và tạo nguyên mẫu nhanh.
 Ngoài Rails, Ruby được sử dụng để viết kịch bản, tự động hóa, công cụ DevOps (Chef, Puppet) và là ngôn ngữ có mục đích chung. Cú pháp biểu cảm và khả năng lập trình siêu dữ liệu mạnh mẽ của nó khiến việc viết trở nên thú vị.

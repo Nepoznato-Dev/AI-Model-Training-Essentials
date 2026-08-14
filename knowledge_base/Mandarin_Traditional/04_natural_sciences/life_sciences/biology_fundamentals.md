@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Biology Fundamentals"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from science_and_nature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 生物學基礎知識
 生物學是生命的科學。所有生物都有某些共同特徵：它們由細胞組成，它們使用能量，它們生長，它們對環境做出反應，它們繁殖，它們進化。生物學涵蓋從單一細胞內的分子機械到整個生態系統的相互作用，它是醫學、農業、生物技術和保護的基礎。
 ---

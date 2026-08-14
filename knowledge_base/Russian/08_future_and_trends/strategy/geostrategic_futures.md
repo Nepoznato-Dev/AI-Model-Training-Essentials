@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geostrategic Futures"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Геостратегическое будущее
 ## Обзор
 Эпоха американского доминирования после «холодной войны» уступает место чему-то более запутанному: многополярному миру, в котором власть рассредоточена, конкуренция за технологии и ресурсы усиливается, а такие проблемы, как изменение климата и пандемии, не признают границ. Основанный на правилах международный порядок, построенный после 1945 года, подвергается испытаниям со всех сторон. Вот что меняется, кто поднимается и где находятся точки трения.

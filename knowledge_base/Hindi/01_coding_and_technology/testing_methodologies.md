@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Testing Methodologies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # परीक्षण पद्धतियाँ
 परीक्षण यह है कि आप कैसे विश्वास हासिल करते हैं कि आपका कोड काम करता है - और इससे भी महत्वपूर्ण बात यह है कि इसमें परिवर्तन पहले से ही काम कर रहे कोड को नहीं तोड़ता है। अच्छा परीक्षण उपयोगकर्ताओं के बग को पकड़ने से पहले ही पकड़ लेता है, अपेक्षित व्यवहार का दस्तावेजीकरण करता है और निडर रिफैक्टरिंग को सक्षम बनाता है। यह फ़ाइल इकाई परीक्षणों से लेकर अंत-से-अंत परीक्षणों तक परीक्षण रणनीतियों के पूरे स्पेक्ट्रम और परीक्षण को प्रभावी बनाने वाले सिद्धांतों को कवर करती है।
 ---

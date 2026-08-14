@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Lỗi đường ống dữ liệu và ETL
 Đường ống dữ liệu là hệ thống ống nước của các tổ chức hiện đại — họ di chuyển dữ liệu từ hệ thống nguồn thông qua các quá trình chuyển đổi sang cơ sở dữ liệu, kho và hồ nơi dữ liệu được sử dụng để phân tích, học máy và ra quyết định. Khi họ làm việc, không ai để ý. Khi họ thất bại, các quyết định được đưa ra dựa trên dữ liệu cũ, các mô hình đào tạo dựa trên rác, các báo cáo hiển thị những con số không thể tin được và niềm tin vào toàn bộ nền tảng dữ liệu bị xói mòn. Lỗi đường truyền dữ liệu là một trong những lỗi phổ biến nhất và tốn kém nhất trong các tổ chức công nghệ.
 ---

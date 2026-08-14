@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Awareness"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — environmental awareness reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Conciencia Ambiental
 El medio ambiente no es algo separado que esté "ahí fuera": es el sistema que hace posible todo lo demás. Cada respiro que tomas, cada vaso de agua que bebes, cada comida que comes depende de la composición atmosférica, los ciclos del agua, la salud del suelo y las redes de polinizadores. Comprender cómo funcionan estos sistemas (y cómo están cambiando) no es opcional para una persona informada. Este archivo cubre los fundamentos de las ciencias ambientales, los desafíos que enfrentamos y lo que realmente significa la sostenibilidad en la práctica.
 ---

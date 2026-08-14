@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # dart
 Dart, Google tarafından geliştirilen, istemciler için optimize edilmiş bir programlama dilidir ve ilk olarak 2013'te piyasaya sürülmüştür. Dart başlangıçta web tarayıcıları için potansiyel bir JavaScript alternatifi olarak konumlandırılmış olsa da, asıl amacını Google'ın tek bir kod tabanından mobil, web, masaüstü ve gömülü uygulamalar oluşturmaya yönelik çapraz platform kullanıcı arayüzü araç seti olan **Flutter**'ın arkasındaki dil olarak buldu.
 Dart, modern dillerin en iyi özelliklerini birleştirir: nesne yönelimlidir, isteğe bağlı yazmaya sahiptir (Dart 3'ten bu yana ses sıfır güvenliği),`async`/`await`ile eşzamansız programlamayı destekler ve hem yerel makine koduna (mobil/masaüstü için) hem de JavaScript'e (web için) derlenir.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "History and Culture"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #التاريخ والثقافة
 التاريخ هو قصة ما فعله البشر - النجاحات والكوارث والاختراعات والأفكار التي شكلت العالم الذي نعيش فيه اليوم. إنها ليست مجرد قائمة بالتواريخ والأسماء. يساعدك فهم التاريخ على فهم سبب وجود الحدود في مكانها، ولماذا يتحدث الناس اللغات التي يتحدثونها، ولماذا تكون بعض البلدان غنية بينما لا تكون بلدان أخرى كذلك، ولماذا لا تزال الصراعات التي تبدو قديمة مشتعلة.
 يغطي هذا الملف الفترات والموضوعات الرئيسية في تاريخ العالم، منذ الحضارات الأولى وحتى يومنا هذا.

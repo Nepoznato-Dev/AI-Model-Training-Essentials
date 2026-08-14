@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prolog — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # Prolog — Ecosystem & Tooling Guide
 
 This guide covers the essential tools, implementations, and infrastructure in the Prolog ecosystem.

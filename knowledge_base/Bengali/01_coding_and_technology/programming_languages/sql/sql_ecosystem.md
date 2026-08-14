@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL — Ecosystem & Tooling Guide"
@@ -6,7 +7,7 @@ category: "Coding and Technology"
 version: "1.0.0"
 status: "active"
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
@@ -19,6 +20,7 @@ contribution:
   feedback_channel: "GitHub Issues"
 ---
 
+-->
 # SQL — ইকোসিস্টেম এবং টুলিং গাইড
 এই নির্দেশিকা এসকিউএল ইকোসিস্টেমের প্রয়োজনীয় ডাটাবেস, টুলস এবং অবকাঠামো কভার করে।
 ---

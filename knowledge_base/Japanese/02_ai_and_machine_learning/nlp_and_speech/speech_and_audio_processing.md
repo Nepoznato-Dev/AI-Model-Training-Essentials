@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Speech and Audio Processing"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 音声と音声の処理
 音声とオーディオの処理には、機械が音を聞き、理解し、生成し、操作できるようにするテクノロジーが含まれます。これには、音声認識 (話し言葉をテキストに変換)、音声合成 (テキストを話し言葉に変換)、話者識別、音楽生成、および環境音の理解が含まれます。この分野はディープラーニングによって変革されました。最新のシステムは音声認識の精度が人間レベルに近づき、不気味なほど自然な合成音声を生成します。
 ---

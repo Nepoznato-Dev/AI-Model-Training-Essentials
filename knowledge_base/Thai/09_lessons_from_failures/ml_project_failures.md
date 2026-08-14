@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Machine Learning Project Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ความล้มเหลวของโครงการการเรียนรู้ของเครื่อง
 โปรเจ็กต์แมชชีนเลิร์นนิงล้มเหลวในอัตราที่น่าตกใจ - ประมาณการทางอุตสาหกรรมแนะนำว่า 60-85% ของโปรเจ็กต์ ML ไม่เคยมีการผลิตจริง ความล้มเหลวมักจะไม่อยู่ในอัลกอริธึม พวกเขาอยู่ในกระบวนการ ข้อมูล ความคาดหวัง และบริบทขององค์กร การทำความเข้าใจว่าเหตุใดโปรเจ็กต์ ML จึงล้มเหลวถือเป็นสิ่งสำคัญสำหรับทุกคนที่สร้างระบบ ML เนื่องจากโหมดความล้มเหลวนั้นสามารถคาดเดาได้และหลีกเลี่ยงได้เป็นส่วนใหญ่
 ---

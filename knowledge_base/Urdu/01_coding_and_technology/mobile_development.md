@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mobile Development"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # موبائل ڈویلپمنٹ
 موبائل ڈویلپمنٹ اسمارٹ فونز اور ٹیبلٹس کے لیے ایپلی کیشنز بنانے کا عمل ہے — بنیادی طور پر iOS (Apple) اور Android (Google) کے لیے۔ اس میں چھوٹی اسکرینوں کے لیے UI ڈیزائن سے لے کر بیٹری کی زندگی کو منظم کرنے، نیٹ ورک کے عدم استحکام سے نمٹنے، اور اسٹورز کے ذریعے ایپس کی تقسیم تک ہر چیز شامل ہے۔ میدان نمایاں طور پر پختہ ہو چکا ہے، کراس پلیٹ فارم فریم ورک اب زیادہ تر استعمال کے معاملات میں مقامی ترقی کے ساتھ مقابلہ کر رہے ہیں۔
 ---

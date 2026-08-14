@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Assembly Language"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 組合語言
 組合語言是最低階的人類可讀的程式語言。它使用助記符代碼（如`MOV`、`ADD`、`JMP`）而不是原始二進位來直接表示計算機的機器代碼指令。每種組合語言都特定於特定的處理器架構（x86、ARM、MIPS、RISC-V）——為一種架構編寫的程式碼無法在另一種架構上運作。
 彙編語言不用於建立應用程式。當您需要對硬體進行絕對控制時，可以使用它：編寫作業系統核心、裝置驅動程式、引導程式、嵌入式韌體、效能關鍵程式碼部分、逆向工程以及了解電腦實際如何執行指令。

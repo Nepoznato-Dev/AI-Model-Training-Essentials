@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #اڈا
 Ada ایک مستحکم طور پر ٹائپ شدہ، مرتب کردہ پروگرامنگ لینگویج ہے جسے حفاظت کے لیے اہم اور اعلیٰ سالمیت کے نظام کے لیے ڈیزائن کیا گیا ہے۔ اصل میں 1980 کی دہائی میں امریکی محکمہ دفاع کے ساتھ معاہدے کے تحت تیار کیا گیا (Ada Lovelace کے نام پر رکھا گیا، جسے پہلا کمپیوٹر پروگرامر سمجھا جاتا ہے)، Ada نے بھروسے، برقرار رکھنے اور درستگی پر زور دیا۔ اسے سیکڑوں پروگرامنگ زبانوں کو تبدیل کرنے کے لیے ڈیزائن کیا گیا تھا جس کے بعد DoD نے ایک واحد، اچھی طرح سے مخصوص زبان کے ساتھ استعمال کیا تھا۔
 Ada کا استعمال ہوا بازی (فلائی بائی وائر سسٹمز)، اسپیس (ESA اور NASA)، دفاع (میزائل گائیڈنس، ریڈار)، ریل ٹرانسپورٹ، اور طبی آلات میں کیا جاتا ہے — جہاں کہیں بھی سافٹ ویئر کی ناکامی سے جانیں ضائع ہو سکتی ہیں۔

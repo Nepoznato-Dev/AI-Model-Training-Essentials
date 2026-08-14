@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # هوش مصنوعی در زندگی روزمره
 هوش مصنوعی دیگر مفهومی آینده نگر نیست - در زندگی روزمره جاسازی شده است. از لحظه‌ای که بیدار می‌شوید و گوشی خود را بررسی می‌کنید (الگوریتم‌های توصیه تصمیم می‌گیرند چه اعلان‌هایی را ببینید) تا لحظه‌ای که به خواب می‌روید (بلندگوی هوشمند آخرین دستور شما را پردازش می‌کند)، سیستم‌های هوش مصنوعی از طرف شما، برای شما و گاهی اوقات درباره شما تصمیم می‌گیرند. فهمیدن اینکه هوش مصنوعی در کجا ظاهر می شود، چگونه در سطح پایه کار می کند، و پیامدهای آن چیست، دیگر اختیاری نیست – این یک الزام برای شهروندی آگاهانه در قرن بیست و یکم است.
 ---

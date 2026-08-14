@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Approfondimento sull'intelligenza artificiale generativa
 L’intelligenza artificiale generativa si riferisce a modelli che creano nuovi contenuti – immagini, testo, audio, video, codice – anziché limitarsi a classificare o prevedere i dati esistenti. Mentre i modelli linguistici di grandi dimensioni ricevono la maggior parte dell’attenzione, il panorama dell’intelligenza artificiale generativa è molto più ampio. Questo file copre le architetture, le tecniche e i compromessi alla base dei moderni sistemi generativi, dai modelli di diffusione agli autocodificatori variazionali ai modelli di flusso.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Discrete Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into discrete mathematics"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مجرد ریاضی
 مجرد ریاضی ریاضی کے ڈھانچے کا مطالعہ ہے جو بنیادی طور پر قابل شمار یا الگ ہوتے ہیں - مسلسل ریاضی (کیلکولس، حقیقی تجزیہ) کے برخلاف، جو ہموار، غیر منقطع مقداروں سے متعلق ہے۔ مجرد ریاضی کمپیوٹر سائنس، خفیہ نگاری، الگورتھم ڈیزائن، اور ڈیٹا ڈھانچے کو زیر کرتا ہے۔ اگر مسلسل ریاضی طبعی دنیا کو بیان کرتا ہے تو مجرد ریاضی کمپیوٹیشنل دنیا کو بیان کرتا ہے۔
 ---

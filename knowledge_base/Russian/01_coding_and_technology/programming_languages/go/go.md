@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Go"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Идти
 Go (часто называемый «Golang» в честь оригинального доменного имени) — это статически типизированный компилируемый язык программирования, разработанный в Google Робертом Гриземером, Робом Пайком и Кеном Томпсоном. Впервые он был выпущен в 2012 году с явной целью стать лучшим языком для системного программирования, сочетающим в себе производительность C с производительностью динамических языков, таких как Python. Go известен своей простотой, быстрой компиляцией, встроенными возможностями параллелизма (горутины и каналы) и отличными инструментами.
 Go поддерживает большую часть экосистемы облачной инфраструктуры: Docker, Kubernetes, Terraform, Prometheus и т. д., а HTTP-сервер стандартной библиотеки Go написаны на Go. Он стал языком по умолчанию для облачной разработки, микросервисов и инструментов CLI.

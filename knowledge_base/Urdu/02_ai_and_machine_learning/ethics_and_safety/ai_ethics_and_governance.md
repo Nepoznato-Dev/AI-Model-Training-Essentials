@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI Ethics and Governance"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to ethics_and_safety/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI اخلاقیات اور گورننس
 اے آئی سسٹم غیر جانبدار نہیں ہیں۔ وہ اس ڈیٹا کی عکاسی کرتے ہیں جس پر انہیں تربیت دی گئی تھی، ان کے تخلیق کاروں کی اقدار، اور انہیں تعینات کرنے والی تنظیموں کی ترغیبات۔ اخلاقیات صرف یہ پوچھنے کے بارے میں نہیں ہے کہ "کیا ہم اسے بنا سکتے ہیں؟" لیکن "کیا ہمیں چاہئے؟" گورننس ڈھانچے بنانے کے بارے میں ہے - قوانین، معیارات، نگرانی کے ادارے - جو اس بات کو یقینی بناتے ہیں کہ AI تیار اور ذمہ داری کے ساتھ استعمال کیا جائے۔ یہ فائل AI کے کلیدی اخلاقی جہتوں اور ان سے نمٹنے کے لیے ابھرنے والے گورننس فریم ورک کا احاطہ کرتی ہے۔
 ---

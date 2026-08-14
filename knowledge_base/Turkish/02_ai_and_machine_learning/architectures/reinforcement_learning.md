@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Takviyeli Öğrenme
 Takviyeli öğrenme (RL), makinelerin deneme yanılma yoluyla bir dizi karar almayı öğrenmesidir. Her örnek için doğru cevabın sağlandığı denetimli öğrenmenin aksine, RL aracıya yalnızca bir ödül sinyali verir ve aracının zaman içinde hangi eylemlerin en iyi sonuçlara yol açtığını bulması gerekir. AlphaGo'nun, robotik kontrolün, oyun oynayan yapay zekanın ve modern büyük dil modellerini insan tercihleriyle uyumlu hale getirmek için kullanılan teknik olan RLHF'nin arkasındaki yaklaşım budur.
 ---

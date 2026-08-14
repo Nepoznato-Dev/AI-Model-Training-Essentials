@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "DevOps and CI/CD"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # DevOps ve CI/CD
 DevOps, ekiplerin yazılımı daha hızlı ve daha güvenilir bir şekilde sunmasını sağlayan kültürel felsefe, uygulamalar ve araçların birleşimidir. Geliştiriciler (değişiklikleri göndermek isteyen) ve operasyonlar (istikrar isteyen) arasındaki duvarı yıkar. CI/CD — Sürekli Entegrasyon ve Sürekli Teslimat — bunu mümkün kılan otomasyon omurgasıdır.
 ---

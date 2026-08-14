@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teknologi Iklim dan Inovasi Hijau
 Teknologi iklim mencakup alat, sistem, dan inovasi yang dirancang untuk mengurangi emisi gas rumah kaca, beradaptasi terhadap perubahan iklim, dan mentransisikan perekonomian global ke landasan yang berkelanjutan. Ini bisa dibilang merupakan bidang teknologi yang paling penting di abad ke-21 — perbedaan antara kenaikan suhu sebesar 1,5°C yang dapat dikelola dan kenaikan suhu sebesar 3°C+ sangat bergantung pada seberapa cepat teknologi ini dapat diterapkan dalam skala besar. Tantangannya bukan hanya ilmiah tetapi juga ekonomi, politik, dan sosial.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # গ্রাফ তত্ত্ব
 একটি **গ্রাফ** হল একটি গাণিতিক কাঠামো যা প্রান্ত (লিঙ্ক) দ্বারা সংযুক্ত শীর্ষবিন্দু (নোড) নিয়ে গঠিত। গ্রাফ মডেল সম্পর্ক: সামাজিক নেটওয়ার্ক, রাস্তা মানচিত্র, নিউরাল নেটওয়ার্ক, নির্ভরতা, যোগাযোগ চ্যানেল। গ্রাফ তত্ত্ব - এই কাঠামোগুলির অধ্যয়ন - অ্যালগরিদম এবং উপপাদ্যগুলি সরবরাহ করে যা কম্পিউটার বিজ্ঞান, অপারেশন গবেষণা এবং ডেটা বিজ্ঞানের কেন্দ্রবিন্দু।
 ---

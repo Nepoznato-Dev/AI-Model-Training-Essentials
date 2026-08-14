@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Basic"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 비주얼베이직
 VB(Visual Basic)는 Microsoft에서 개발한 프로그래밍 언어입니다. 이는 원래 Visual Basic(1991), Visual Basic 6.0(1998), VB.NET(2002, .NET Framework의 일부) 및 Visual Basic ..NET(현재는 .NET의 일부로 간단히 "Visual Basic"이라고 함) 등 여러 세대를 거쳐 발전해 왔습니다. VB는 그래픽 사용자 인터페이스와 이벤트 기반 프로그래밍에 중점을 두고 초보자와 신속한 응용 프로그램 개발(RAD)이 쉽게 접근할 수 있도록 설계되었습니다.
 현재 VB.NET은 C#과 함께 .NET 생태계의 일부로 계속 사용되고 있지만 Microsoft는 앞으로 C#이 기본 언어라고 밝혔습니다. VB는 엔터프라이즈 환경, 특히 레거시 Windows 응용 프로그램, Office 자동화(VBA) 및 내부 비즈니스 도구에서 널리 사용됩니다.

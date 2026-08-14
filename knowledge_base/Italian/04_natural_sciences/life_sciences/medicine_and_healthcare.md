@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Medicine and Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Medicina e Sanità
 La medicina è la scienza e la pratica della diagnosi, del trattamento e della prevenzione delle malattie. È una delle più antiche imprese umane – il giuramento di Ippocrate risale all’antica Grecia – e una delle più rapide trasformazioni. Solo nell’ultimo secolo siamo passati dall’assenza di antibiotici all’adozione di terapie geniche in grado di riscrivere il DNA di un paziente.
 Questo fascicolo illustra come funziona la medicina: le principali specialità, come le malattie vengono diagnosticate e curate, come sono organizzati i sistemi sanitari e le questioni etiche che sorgono quando sono in gioco le vite umane.

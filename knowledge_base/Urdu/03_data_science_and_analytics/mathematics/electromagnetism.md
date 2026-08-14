@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # برقی مقناطیسیت
 برقی مقناطیسیت برقی اور مقناطیسی شعبوں اور ان کے تعامل کا مطالعہ ہے۔ 1860 کی دہائی میں میکسویل کے ذریعہ متحد، برقی مقناطیسیت روشنی، بجلی، مقناطیسیت، ریڈیو لہروں، اور ایٹموں کی ساخت کی وضاحت کرتا ہے۔ یہ پہلی بنیادی قوت تھی جسے مکمل طور پر ریاضیاتی طور پر سمجھا جاتا تھا، اور اس کی مساوات نے آئن سٹائن کی خصوصی اضافیت اور جدید فیلڈ تھیوری کو متاثر کیا۔
 ---

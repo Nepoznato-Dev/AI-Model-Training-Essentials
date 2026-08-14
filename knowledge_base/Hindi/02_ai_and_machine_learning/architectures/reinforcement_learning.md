@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सुदृढीकरण सीखना
 सुदृढीकरण सीखना (आरएल) वह तरीका है जिससे मशीनें परीक्षण और त्रुटि द्वारा निर्णयों का क्रम बनाना सीखती हैं। पर्यवेक्षित शिक्षण के विपरीत, जहां प्रत्येक उदाहरण के लिए सही उत्तर प्रदान किया जाता है, आरएल एक एजेंट को केवल एक इनाम संकेत देता है - और एजेंट को यह पता लगाना होगा कि कौन से कार्य समय के साथ सर्वोत्तम परिणाम देते हैं। यह अल्फ़ागो, रोबोटिक नियंत्रण, गेम-प्लेइंग एआई और - गंभीर रूप से - आरएलएचएफ, आधुनिक बड़े भाषा मॉडल को मानवीय प्राथमिकताओं के साथ संरेखित करने के लिए उपयोग की जाने वाली तकनीक के पीछे का दृष्टिकोण है।
 ---

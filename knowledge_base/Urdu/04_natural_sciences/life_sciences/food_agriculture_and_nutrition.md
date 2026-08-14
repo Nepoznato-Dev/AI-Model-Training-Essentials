@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # خوراک، زراعت، اور غذائیت
 خوراک انسان کی سب سے بنیادی ضرورت ہے، اور زراعت تہذیب کی بنیاد ہے۔ شکار کرنے اور جمع کرنے سے کھیتی باڑی کی طرف تبدیلی - تقریباً 10,000 سال قبل نیو پاولتھک انقلاب - جس نے انسانوں کو شہر بنانے، تحریر کو ترقی دینے اور ہر وہ چیز تخلیق کرنے کی اجازت دی جسے ہم "تہذیب" کہتے ہیں۔ آج، زراعت عالمی افرادی قوت کا تقریباً 27% کام کرتی ہے اور روزانہ تقریباً 10 ٹریلین کیلوریز پیدا کرتی ہے۔ اس کے باوجود تقریباً 800 ملین لوگ اب بھی بھوکے ہیں، جب کہ 2 ارب سے زیادہ وزن یا موٹے ہیں۔ مسئلہ پیداوار کا نہیں ہے - یہ تقسیم، رسائی اور انتخاب کا ہے۔
 ---

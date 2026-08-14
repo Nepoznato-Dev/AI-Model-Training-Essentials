@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Perl
 Perl iliundwa na Larry Wall mnamo 1987 kama zana ya usindikaji ya maandishi. Ikawa uti wa mgongo wa ukuzaji wa wavuti mapema (hati za CGI), usimamizi wa mfumo, bioinformatics, na programu za mtandao. Falsafa ya Perl ni "Kuna Njia Zaidi ya Moja ya Kufanya" (TMTOWTDI) - lugha inakupa mbinu nyingi za kila tatizo, ikipendelea kujieleza kuliko usawa.
 Ushawishi wa Perl kwenye upangaji programu wa kisasa ni mkubwa lakini mara nyingi hauonekani: misemo ya kawaida, inayoathiriwa na ulinganishaji wa muundo wa Perl, sasa ni sanifu katika Python, JavaScript, Java, na lugha zingine nyingi. CPAN (Comprehensive Perl Archive Network) ilikuwa mojawapo ya hazina za kwanza za kifurushi cha programu na ilihamasisha mifumo ya baadaye kama Python's PyPI na Node's npm.

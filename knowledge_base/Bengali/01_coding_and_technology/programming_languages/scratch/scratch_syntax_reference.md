@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scratch — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # স্ক্র্যাচ — সিনট্যাক্স রেফারেন্স
 এই নথিটি স্ক্র্যাচ 3.0-এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ ব্লক বিভাগ, ইভেন্ট-চালিত নিদর্শন, স্প্রাইট ব্যবস্থাপনা, ক্লোনিং এবং সৃজনশীল কোডিং কৌশলগুলিতে ফোকাস করে মূল স্ক্র্যাচ রেফারেন্সের পরিপূরক।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # সুপারিশ সিস্টেম
 সুপারিশ সিস্টেম ভবিষ্যদ্বাণী করে যে একজন ব্যবহারকারী পরবর্তীতে কী দেখতে, কিনতে বা ইন্টারঅ্যাক্ট করতে চাইবে। তারা সোশ্যাল মিডিয়াতে কন্টেন্ট ফিড, ই-কমার্স সাইটে পণ্যের পরামর্শ, স্ট্রিমিং প্ল্যাটফর্মে মুভি বাছাই এবং অনুসন্ধান ফলাফলগুলিকে শক্তি দেয়। বেশিরভাগ ব্যবহারকারীর কাছে অদৃশ্য হওয়া সত্ত্বেও, তারা বিশ্বের সবচেয়ে বাণিজ্যিকভাবে প্রভাবশালী AI সিস্টেমগুলির মধ্যে রয়েছে — Netflix অনুমান করে যে এর সুপারিশ ইঞ্জিন গ্রাহকদের মন্থন হ্রাস করে প্রতি বছর $1 বিলিয়ন সাশ্রয় করে।
 ---

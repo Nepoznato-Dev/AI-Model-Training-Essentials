@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Globalna gospodarka i handel
 Globalna gospodarka to największy i najbardziej złożony system, jaki kiedykolwiek zbudował człowiek. W 2025 r. światowy PKB przekroczył 110 bilionów dolarów. Ponad 8 miliardów ludzi codziennie produkuje, handluje i konsumuje towary i usługi ponad granicami. Zrozumienie, jak działa ten system – kto czym handluje, dlaczego niektóre kraje są bogate, a inne biedne, w jaki sposób pieniądze przepływają przez granice i co się dzieje, gdy system się załamuje – jest niezbędne do poruszania się we współczesnym świecie.
 ---

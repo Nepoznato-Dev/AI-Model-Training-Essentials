@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تعزيز التعلم
 التعلم المعزز (RL) هو الطريقة التي تتعلم بها الآلات كيفية اتخاذ سلسلة من القرارات عن طريق التجربة والخطأ. على عكس التعلم الخاضع للإشراف، حيث يتم تقديم الإجابة الصحيحة لكل مثال، يعطي RL للوكيل إشارة مكافأة فقط - ويجب على الوكيل معرفة الإجراءات التي تؤدي إلى أفضل النتائج بمرور الوقت. إنه النهج الكامن وراء AlphaGo، والتحكم الآلي، والذكاء الاصطناعي في ممارسة الألعاب، والأهم من ذلك، RLHF، وهي التقنية المستخدمة لمواءمة نماذج اللغات الكبيرة الحديثة مع التفضيلات البشرية.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Perl"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #پرل
 پرل کو لیری وال نے 1987 میں ایک عملی ٹیکسٹ پروسیسنگ ٹول کے طور پر بنایا تھا۔ یہ ابتدائی ویب ڈویلپمنٹ (CGI اسکرپٹس)، سسٹم ایڈمنسٹریشن، بایو انفارمیٹکس، اور نیٹ ورک پروگرامنگ کی ریڑھ کی ہڈی بن گیا۔ پرل کا فلسفہ ہے "یہ کرنے کا ایک سے زیادہ راستہ ہے" (TMTOWTDI) - زبان آپ کو ہر مسئلے کے لیے متعدد نقطہ نظر فراہم کرتی ہے، یکسانیت پر اظہار خیال کی حمایت کرتی ہے۔
 جدید پروگرامنگ پر پرل کا اثر بہت زیادہ ہے لیکن اکثر پوشیدہ ہے: پرل کے پیٹرن میچنگ سے متاثر ہونے والے ریگولر ایکسپریشنز اب ازگر، جاوا اسکرپٹ، جاوا، اور بیشتر دیگر زبانوں میں معیاری ہیں۔ CPAN (Comprehensive Perl Archive Network) پہلے سافٹ ویئر پیکج ریپوزٹریوں میں سے ایک تھا اور بعد میں Python's PyPI اور Node's npm جیسے سسٹمز کو متاثر کرتا تھا۔

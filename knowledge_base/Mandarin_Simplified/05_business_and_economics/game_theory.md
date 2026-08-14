@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory and Strategic Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 博弈论与战略思维
 博弈论是对战略互动的数学研究——在这种情况下，你的结果不仅取决于你做什么，还取决于别人做什么。它适用于任何地方：商业竞争、国际关系、拍卖、谈判、进化生物学以及选择交通路线等日常决策。核心见解是，战略情境中的理性行为者不仅仅优化自己的策略——他们预测其他人会做什么，而其他人也在做同样的事情。
 ---

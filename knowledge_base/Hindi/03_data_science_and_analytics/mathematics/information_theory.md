@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Information Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into information theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सूचना सिद्धांत
 1948 में क्लाउड शैनन द्वारा स्थापित सूचना सिद्धांत, सूचना को स्वयं निर्धारित करता है। एक संदेश आपको कितना कुछ बताता है? आप डेटा को कितना संपीड़ित कर सकते हैं? आप शोरगुल वाले चैनल पर कितनी तेजी से संवाद कर सकते हैं? इन प्रश्नों के सटीक गणितीय उत्तर हैं। संचार से परे, सूचना सिद्धांत मशीन लर्निंग के लिए मूलभूत बन गया है - क्रॉस-एन्ट्रॉपी वर्गीकरण के लिए डिफ़ॉल्ट हानि फ़ंक्शन है, केएल विचलन वितरण समानता को मापता है, और पारस्परिक जानकारी फीचर चयन को संचालित करती है।
 ---

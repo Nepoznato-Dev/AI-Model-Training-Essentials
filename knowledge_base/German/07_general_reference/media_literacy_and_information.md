@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Medienkompetenz und Informationsbewertung
 Wir leben in einer informationsgesättigten Welt. Jeden Tag ist der durchschnittliche Mensch Tausenden von Mediennachrichten ausgesetzt – Nachrichtenartikeln, Social-Media-Beiträgen, Werbung, politischen Reden, Influencer-Inhalten und KI-generierten Texten. Das meiste davon ist in Ordnung. Manches davon ist irreführend. Eine kleine Menge ist absichtlich falsch. Medienkompetenz ist die Fähigkeit, sich in dieser Landschaft zurechtzufinden – nicht indem man allem vertraut, nicht indem man nichts vertraut, sondern indem man ein kalibriertes Gespür dafür entwickelt, was zuverlässig ist und was nicht.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -38,6 +39,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # Inférence causale
 L'inférence causale est la science qui consiste à déterminer si une chose en provoque réellement une autre, et pas seulement si elles sont corrélées. La corrélation vous indique que deux variables évoluent ensemble. La causalité vous dit que changer l’un changera l’autre. Cette distinction est extrêmement importante en médecine (ce médicament est-il efficace ?), en politique (cette intervention réduit-elle la pauvreté ?), en affaires (cette campagne publicitaire augmente-t-elle les ventes ?) et en science (ce mécanisme explique-t-il le phénomène ?).
 ---

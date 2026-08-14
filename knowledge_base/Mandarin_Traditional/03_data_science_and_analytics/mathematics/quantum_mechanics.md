@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 量子力學
 量子力學是最小尺度的物理理論－原子、電子、光子和自然界的基本粒子。它用機率、疊加和糾纏取代了經典力學的確定性世界。儘管量子力學具有違反直覺的性質，但它是所有科學中經過最精確檢驗的理論。如今，它的原理正與量子電腦的計算直接相關，量子電腦有望比傳統電腦以指數速度更快解決某些問題。
 ---

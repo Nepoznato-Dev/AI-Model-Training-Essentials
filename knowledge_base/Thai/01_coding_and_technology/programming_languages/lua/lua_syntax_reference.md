@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lua - การอ้างอิงไวยากรณ์
 เอกสารนี้ให้การอ้างอิงไวยากรณ์ที่มีโครงสร้างและครอบคลุมสำหรับ Lua (5.4) มันเสริมการอ้างอิง Lua หลักโดยมุ่งเน้นไปที่รูปแบบไวยากรณ์ตารางและเมตาเทเบิลที่ละเอียดถี่ถ้วน coroutines และปรัชญาการออกแบบที่เป็นเอกลักษณ์ของ Lua
 ---

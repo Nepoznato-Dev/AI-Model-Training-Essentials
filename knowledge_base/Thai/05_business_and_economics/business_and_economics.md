@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Business and Economics"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ธุรกิจและเศรษฐศาสตร์
 ทุกองค์กรที่ขายสินค้าหรือบริการคือธุรกิจ และทุกสังคมที่ผลิตและจัดจำหน่ายสินค้าก็คือเศรษฐกิจ แนวคิดในไฟล์นี้นำไปใช้ไม่ว่าคุณจะดำเนินธุรกิจอิสระ ทำงานที่บริษัท พยายามทำความเข้าใจข่าว หรือเพียงค้นหาว่าเงินหมุนเวียนไปทั่วโลกอย่างไร
 ---

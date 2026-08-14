@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Neural Networks"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # گراف نیورل نیٹ ورکس
 گراف نیورل نیٹ ورکس (GNNs) نیورل نیٹ ورکس ہیں جو گراف ساختہ ڈیٹا پر کام کرنے کے لیے ڈیزائن کیے گئے ہیں - کناروں سے جڑے ہوئے نوڈس کے نیٹ ورک۔ جب کہ روایتی اعصابی نیٹ ورک گرڈ (تصاویر) یا ترتیب (ٹیکسٹ) پر کام کرتے ہیں، جی این این صوابدیدی متعلقہ ڈھانچے کو ہینڈل کرتے ہیں: سوشل نیٹ ورکس، مالیکیولر گرافس، نالج گرافس، روڈ نیٹ ورکس، سفارشی گراف، اور بہت کچھ۔ وہ منشیات کی دریافت، دھوکہ دہی کا پتہ لگانے، سفارش کے نظام، اور کسی بھی ایسے ڈومین کے لیے ضروری ہو گئے ہیں جہاں اداروں کے درمیان تعلقات اہمیت رکھتے ہیں۔
 ---

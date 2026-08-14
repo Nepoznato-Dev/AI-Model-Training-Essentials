@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lebensmittel, Landwirtschaft und Ernährung
 Nahrung ist das grundlegendste menschliche Bedürfnis und die Landwirtschaft ist die Grundlage der Zivilisation. Der Übergang vom Jagen und Sammeln zur Landwirtschaft – die neolithische Revolution vor etwa 10.000 Jahren – ermöglichte es den Menschen, Städte zu bauen, die Schrift zu entwickeln und alles andere zu schaffen, was wir „Zivilisation“ nennen. Heute beschäftigt die Landwirtschaft etwa 27 % der weltweiten Arbeitskräfte und produziert etwa 10 Billionen Kalorien pro Tag. Dennoch hungern immer noch etwa 800 Millionen Menschen, während über 2 Milliarden übergewichtig oder fettleibig sind. Das Problem ist nicht die Produktion, sondern die Verteilung, der Zugang und die Wahlmöglichkeiten.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # दर्शन और आलोचनात्मक सोच
 दर्शनशास्त्र ज्ञान, वास्तविकता और अस्तित्व के बारे में मौलिक प्रश्नों का व्यवस्थित अध्ययन है। यह इस बात का मूल्यांकन करने के लिए रूपरेखा प्रदान करता है कि ज्ञान के रूप में क्या मायने रखता है, क्या करने योग्य है, और अच्छे तर्कों को कमजोर तर्कों से कैसे अलग किया जाए। आलोचनात्मक सोच इस ढांचे का व्यावहारिक अनुप्रयोग है: दावों का विश्लेषण करने, त्रुटिपूर्ण तर्क की पहचान करने और बेहतर जानकारी वाले निर्णय लेने का कौशल। यह फ़ाइल प्रमुख विचारों, उनके मूल्यांकन के उपकरणों और सभी को प्रभावित करने वाले संज्ञानात्मक पूर्वाग्रहों को शामिल करती है।
 ---

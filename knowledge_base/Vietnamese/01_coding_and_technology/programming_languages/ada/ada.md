@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ada"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Ada
 Ada là ngôn ngữ lập trình được biên dịch, gõ tĩnh được thiết kế cho các hệ thống có tính toàn vẹn cao và quan trọng về an toàn. Được phát triển lần đầu vào những năm 1980 theo hợp đồng với Bộ Quốc phòng Hoa Kỳ (được đặt theo tên của Ada Lovelace, được coi là lập trình viên máy tính đầu tiên), Ada nhấn mạnh đến độ tin cậy, khả năng bảo trì và tính chính xác. Nó được thiết kế để thay thế hàng trăm ngôn ngữ lập trình được DoD sử dụng sau đó bằng một ngôn ngữ duy nhất được xác định rõ ràng.
 Ada được sử dụng trong ngành hàng không (hệ thống bay bằng dây), không gian (ESA và NASA), quốc phòng (dẫn đường tên lửa, radar), vận tải đường sắt và thiết bị y tế - bất cứ nơi nào mà lỗi phần mềm có thể gây thiệt hại đến tính mạng.

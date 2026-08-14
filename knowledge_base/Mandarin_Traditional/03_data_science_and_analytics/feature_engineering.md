@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Feature Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 特徵工程
 特徵工程是將原始資料轉換為使機器學習模型更有效的表示的過程。它通常被描述為 ML 管道中最重要的步驟 - 您為模型提供的功能比您選擇的演算法更重要。具有精心設計的特徵的簡單模型通常會優於具有原始、未經處理的輸入的複雜模型。藝術在於充分理解領域和數據，以創建模型可以學習的訊號。
 ---

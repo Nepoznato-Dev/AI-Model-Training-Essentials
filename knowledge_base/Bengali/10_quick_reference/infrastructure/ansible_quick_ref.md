@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ansible and Configuration Management"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # উত্তরযোগ্য এবং কনফিগারেশন ব্যবস্থাপনা
 Ansible হল একটি এজেন্টহীন কনফিগারেশন ম্যানেজমেন্ট এবং অটোমেশন টুল। এটি সার্ভারের সাথে সংযোগ করতে এবং YAML প্লেবুকগুলিতে সংজ্ঞায়িত কাজগুলি সম্পাদন করতে SSH (বা উইন্ডোজের জন্য WinRM) ব্যবহার করে। প্রতিটি মেশিনে এজেন্ট ইনস্টল করা প্রয়োজন এমন সরঞ্জামগুলির বিপরীতে, Ansible হল পুশ-ভিত্তিক — আপনি একটি নিয়ন্ত্রণ নোড থেকে কমান্ড চালান। এটি সার্ভার প্রভিশনিং, অ্যাপ্লিকেশন স্থাপন, কনফিগারেশন ম্যানেজমেন্ট এবং অ্যাড-হক টাস্ক এক্সিকিউশনের জন্য ব্যবহৃত হয়।
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "C"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # सी
 सी एक सामान्य-प्रयोजन, प्रक्रियात्मक प्रोग्रामिंग भाषा है जिसे 1969 और 1973 के बीच बेल लैब्स में डेनिस रिची द्वारा बनाया गया था। इसे यूनिक्स ऑपरेटिंग सिस्टम को लागू करने के लिए डिज़ाइन किया गया था, और यह 50 वर्षों के बाद भी सबसे व्यापक रूप से उपयोग की जाने वाली प्रोग्रामिंग भाषाओं में से एक बनी हुई है। सी निम्न-स्तरीय मेमोरी एक्सेस, एक न्यूनतम मानक लाइब्रेरी और मशीन निर्देशों के लिए एक साफ मैपिंग प्रदान करता है - जिससे यह वह आधार बन जाता है जिस पर अधिकांश आधुनिक कंप्यूटिंग का निर्माण किया जाता है।
 C ऑपरेटिंग सिस्टम (लिनक्स, विंडोज कर्नेल, macOS), एम्बेडेड सिस्टम, डेटाबेस इंजन (SQLite, PostgreSQL), कंपाइलर (पायथन का CPython, रूबी का MRI), और वस्तुतः हर अन्य प्रोग्रामिंग भाषा रनटाइम के पीछे की भाषा है। सी को समझने का मतलब यह समझना है कि कंप्यूटर वास्तव में कैसे काम करते हैं।

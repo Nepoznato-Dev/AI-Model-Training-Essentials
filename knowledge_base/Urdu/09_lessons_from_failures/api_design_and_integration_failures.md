@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API ڈیزائن اور انضمام کی ناکامیاں
 APIs (ایپلی کیشن پروگرامنگ انٹرفیس) جدید سافٹ ویئر کے مربوط ٹشو ہیں — وہ خدمات کو بات چیت کرنے دیتے ہیں، فریق ثالث کو انضمام کرنے دیتے ہیں، اور ٹیموں کو آزادانہ طور پر کام کرنے دیتے ہیں۔ جب API ڈیزائن غلط ہو جاتا ہے، تو اس کے نتائج ہر اس سسٹم میں پھیل جاتے ہیں جو اس پر منحصر ہوتا ہے: ٹوٹا ہوا انضمام، حفاظتی کمزوریاں، ڈویلپر کی مایوسی، اور مہنگی دوبارہ لکھنا۔ انضمام کی ناکامیاں - جہاں سسٹم قابل اعتماد طریقے سے بات چیت نہیں کرسکتے ہیں - پیداوار کے واقعات کے سب سے عام ذرائع میں سے ہیں۔
 ---

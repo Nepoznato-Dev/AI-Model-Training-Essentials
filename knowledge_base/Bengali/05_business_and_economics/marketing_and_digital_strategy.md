@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Marketing and Digital Strategy"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # মার্কেটিং এবং ডিজিটাল কৌশল
 বিপণন হল কিভাবে ব্যবসা তৈরি করে, যোগাযোগ করে এবং গ্রাহকদের কাছে মূল্য প্রদান করে। এটি গ্রাহকের চাহিদা বোঝার পুরো সিস্টেমকে অন্তর্ভুক্ত করে, সেই চাহিদাগুলি পূরণ করার জন্য একটি পণ্যের অবস্থান নির্ধারণ করে এবং এমন সম্পর্ক তৈরি করে যা ক্রেতাদের অ্যাডভোকেটগুলিতে রূপান্তর করে। ডিজিটাল বিপ্লব বিপণনের সরঞ্জাম, চ্যানেল এবং গতিকে রূপান্তরিত করেছে, যদিও মৌলিক বিষয়গুলি সামঞ্জস্যপূর্ণ রয়েছে।
 ---

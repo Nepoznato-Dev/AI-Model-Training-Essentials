@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Statistical Testing and Experimentation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الاختبارات والتجريب الإحصائي
 الإحصاء هو قواعد العلوم. فهو يوفر لك الأدوات اللازمة للتمييز بين الأنماط الحقيقية والضوضاء العشوائية، وقياس ما إذا كان التغيير قد أدى بالفعل إلى تحسين الأمور، واتخاذ القرارات في ظل عدم اليقين. يغطي هذا الملف المفاهيم الأساسية لاختبار الفرضيات، والتصميم التجريبي، والمزالق الشائعة التي تعوق الأشخاص.
 ---

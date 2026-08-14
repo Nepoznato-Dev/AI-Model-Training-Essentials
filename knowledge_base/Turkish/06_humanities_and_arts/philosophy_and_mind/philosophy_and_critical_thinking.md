@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Philosophy and Critical Thinking"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Felsefe ve Eleştirel Düşünme
 Felsefe bilgi, gerçeklik ve varoluş hakkındaki temel soruların sistematik olarak incelenmesidir. Neyin bilgi olarak kabul edildiğini, neyin yapılmaya değer olduğunu ve iyi gerekçelendirilmiş argümanların zayıf olanlardan nasıl ayırt edileceğini değerlendirmek için bir çerçeve sağlar. Eleştirel düşünme bu çerçevenin pratik uygulamasıdır: İddiaları analiz etme, hatalı akıl yürütmeyi belirleme ve daha bilinçli kararlar verme becerisi. Bu dosya ana fikirleri, bunları değerlendirme araçlarını ve herkesi etkileyen bilişsel önyargıları kapsar.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Literature"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ادب
 ادب انسانی سوچ، جذبات اور تجربے کا سب سے زیادہ پائیدار ریکارڈ ہے۔ قدیم تہذیبوں کی زبانی مہاکاویوں سے لے کر آج کے ڈیجیٹل دور کے ناولوں تک، ہر کام اس سے بات چیت میں ہے جو پہلے آیا تھا۔ ادبی انواع، حرکات اور تکنیکوں کو سمجھنا آپ کو پڑھنے کے لیے اور ان ثقافتوں کو سمجھنے کے لیے ایک بھرپور لینس فراہم کرتا ہے جنہوں نے یہ کام تخلیق کیے ہیں۔
 ---

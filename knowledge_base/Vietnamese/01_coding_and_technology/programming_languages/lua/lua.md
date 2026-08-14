@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Lua
 Lua là một ngôn ngữ kịch bản nhẹ, có thể nhúng được thiết kế để mở rộng các ứng dụng. Được tạo ra vào năm 1993 tại Đại học Công giáo Giáo hoàng Rio de Janeiro ở Brazil, Lua là một trong những ngôn ngữ lập trình nhanh nhất hiện có. Dung lượng nhỏ của nó (trình thông dịch là ~ 120KB) và tính đơn giản khiến nó trở thành lựa chọn phù hợp cho việc viết kịch bản, hệ thống nhúng và cấu hình phát triển trò chơi.
 Lua được biết đến nhiều nhất là ngôn ngữ kịch bản đằng sau Roblox (nền tảng chơi game có hơn 200 triệu người dùng hàng tháng), tiện ích bổ sung World of Warcraft và nhiều công cụ trò chơi (Love2D, Defold, Corona SDK). Nó cũng được sử dụng trong Nginx (OpenResty), Redis và Wireshark.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जेनेटिक्स और जीनोमिक्स
 आनुवंशिकी आनुवंशिकता का अध्ययन है - डीएनए के माध्यम से माता-पिता से संतानों में लक्षण कैसे पारित होते हैं। जीनोमिक्स संपूर्ण जीनोम का अध्ययन है: सभी जीन, गैर-कोडिंग क्षेत्र, वे कैसे बातचीत करते हैं, और वे व्यक्तियों और आबादी में कैसे भिन्न होते हैं। आनुवंशिकी से जीनोमिक्स में संक्रमण अनुक्रमण तकनीक द्वारा प्रेरित था - हम एक समय में एक जीन का अध्ययन करने से लेकर घंटों में पूरे जीनोम को पढ़ने तक गए, डेटा तैयार किया जो चिकित्सा, कृषि, फोरेंसिक और विकास की हमारी समझ को बदल रहा है।
 ---

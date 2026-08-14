@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Game Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into game theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Lý thuyết trò chơi
 Lý thuyết trò chơi là toán học của sự tương tác chiến lược - những tình huống mà kết quả của bạn không chỉ phụ thuộc vào lựa chọn của chính bạn mà còn phụ thuộc vào lựa chọn của người khác. Từ cuộc chiến giá cả giữa các công ty đến cuộc chạy đua vũ khí hạt nhân, từ đấu giá trực tuyến đến sinh học tiến hóa, lý thuyết trò chơi cung cấp các công cụ để phân tích xung đột và hợp tác. Nó ngày càng trở nên phù hợp với học máy thông qua học tăng cường đa tác nhân, mạng đối thủ tổng quát (GAN) và thiết kế cơ chế cho các nền tảng trực tuyến.
 ---

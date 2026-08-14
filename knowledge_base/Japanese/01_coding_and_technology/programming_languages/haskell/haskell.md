@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Haskell"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ハスケル
 Haskell は純粋に関数型で、静的に型付けされ、遅延評価されるプログラミング言語です。 Haskell は、1990 年に初めて標準化され (Haskell 90)、複数のバージョンを経て洗練されてきました (Haskell 2010 が現在の標準です)。Haskell は、その数学的厳密さ、強力な型システム (型クラス、モナド、代数データ型を含む)、および型による正確性の重視で知られています。
 Haskell は主流の言語ではありませんが、その影響力は非常に大きいです。モナド、遅延評価、型クラスなどの概念は、Rust、Swift、Kotlin、Scala、TypeScript に影響を与えました。 Haskell は、金融 (Standard Chartered、Barclays)、コンパイラー (GHC)、および形式検証で使用されています。

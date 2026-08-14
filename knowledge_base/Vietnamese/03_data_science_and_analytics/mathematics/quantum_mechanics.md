@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Quantum Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into quantum mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Cơ học lượng tử
 Cơ học lượng tử là lý thuyết vật lý ở quy mô nhỏ nhất - nguyên tử, electron, photon và các hạt cơ bản của tự nhiên. Nó thay thế thế giới tất định của cơ học cổ điển bằng xác suất, sự chồng chất và sự vướng víu. Bất chấp bản chất phản trực giác của nó, cơ học lượng tử là lý thuyết được thử nghiệm chính xác nhất trong toàn bộ khoa học. Ngày nay, các nguyên tắc của nó đang trở nên phù hợp trực tiếp với việc tính toán thông qua máy tính lượng tử, hứa hẹn giải quyết một số vấn đề nhất định nhanh hơn theo cấp số nhân so với các máy cổ điển.
 ---

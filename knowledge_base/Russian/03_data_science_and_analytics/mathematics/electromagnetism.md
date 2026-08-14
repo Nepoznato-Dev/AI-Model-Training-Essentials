@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Electromagnetism"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into electromagnetism"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Электромагнетизм
 Электромагнетизм – это изучение электрических и магнитных полей и их взаимодействий. Электромагнетизм, объединенный Максвеллом в 1860-х годах, объясняет свет, электричество, магнетизм, радиоволны и структуру атомов. Это была первая фундаментальная сила, которая была полностью понята математически, и ее уравнения вдохновили Эйнштейна на создание специальной теории относительности и современной теории поля.
 ---

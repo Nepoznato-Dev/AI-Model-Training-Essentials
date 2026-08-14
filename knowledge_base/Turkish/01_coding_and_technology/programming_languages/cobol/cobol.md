@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #COBOL
 COBOL (Ortak İş Odaklı Dil), halen kullanımda olan en eski programlama dillerinden biridir ve ilk olarak 1959'da geliştirilmiştir. Finansal sistemler, bordro, bankacılık, sigorta ve hükümet uygulamaları gibi ticari veri işleme için tasarlanmıştır. COBOL'un İngilizce benzeri sözdiziminin yalnızca programcılar tarafından değil, işletme yöneticileri tarafından da okunabilmesi amaçlandı.
 COBOL, yaşına rağmen dünya genelindeki tüm ticari işlemlerin tahmini %30'unu gerçekleştiriyor. Büyük bankalar, devlet kurumları (ABD Sosyal Güvenlik İdaresi dahil) ve sigorta şirketleri hâlâ COBOL ana bilgisayar sistemlerine güveniyor. 1999'daki Y2K hata korkusu, COBOL'u kamuoyunun farkındalığına geri getirdi ve dil, dünya çapında kritik altyapıyı çalıştırmaya devam ediyor.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Low-Code and Platform Engineering"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # کم کوڈ اور پلیٹ فارم انجینئرنگ
 کم کوڈ والے پلیٹ فارم لوگوں کو کم سے کم ہاتھ سے لکھے ہوئے کوڈ کے ساتھ ایپلی کیشنز بنانے دیتے ہیں — عام طور پر ڈریگ اینڈ ڈراپ انٹرفیس، بصری ورک فلو، اور پہلے سے بنائے گئے کنیکٹرز کے ذریعے۔ پلیٹ فارم انجینئرنگ اندرونی ڈویلپر پلیٹ فارمز (IDPs) کی تعمیر کا نظم ہے جو پروڈکٹ ٹیموں کے لیے بنیادی ڈھانچے، CI/CD، اور آپریشنل ٹولنگ کو آسان بناتا ہے۔ دونوں رجحانات ایک ہی مسئلے کے جوابات ہیں: سافٹ ویئر کی طلب اور اسے بنانے والے ڈویلپرز کی فراہمی کے درمیان فرق۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "COBOL — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # COBOL - সিনট্যাক্স রেফারেন্স
 এই নথিটি COBOL (2014+) এর জন্য একটি ব্যাপক, কাঠামোগত সিনট্যাক্স রেফারেন্স প্রদান করে। এটি সম্পূর্ণ সিনট্যাক্স প্যাটার্ন, ডেটা বর্ণনা, ফাইল প্রসেসিং এবং ব্যবসায়িক যুক্তিতে ফোকাস করে প্রধান COBOL রেফারেন্সের পরিপূরক।
 ---

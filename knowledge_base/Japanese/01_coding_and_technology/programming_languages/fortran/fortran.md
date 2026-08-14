@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Fortran"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #フォートラン
 Fortran (数式変換) は、現在でも広く使用されている最古の高級プログラミング言語であり、1957 年に IBM によって科学技術計算用に初めて開発されました。古いものにもかかわらず、最新の Fortran (Fortran 2008/2018/2023) は、数値天気予報、数値流体力学、物理シミュレーション、財務モデリング、およびハイ パフォーマンス コンピューティング (HPC) で広く使用されている有能な高性能言語です。世界最速のスーパーコンピューターの多くは Fortran コードを実行します。
 この言語は初期の頃から大きく進化しました。最新の Fortran には、モジュール、派生型、ジェネリック プロシージャ、coarray (並列プログラミング)、および C との相互運用性が備わっています。Fortran は、パフォーマンスが最優先される多くの科学計算アプリケーションで選択される言語であり続けています。

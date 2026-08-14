@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Structures and Algorithms"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # هياكل البيانات والخوارزميات
 هياكل البيانات هي الطرق التي ننظم بها البيانات في الذاكرة حتى تكون العمليات عليها فعالة. الخوارزميات هي الإجراءات خطوة بخطوة لحل المشكلات. إنهما يشكلان معًا أساس علوم الكمبيوتر، فكل برنامج استخدمته يعتمد عليهما. إن اختيار بنية البيانات الصحيحة يمكن أن يحول برنامجًا بطيئًا بشكل مستحيل إلى برنامج سريع، ومعرفة الخوارزمية الصحيحة يمكن أن تحول مشكلة غير قابلة للحل إلى مشكلة تافهة.
 ---

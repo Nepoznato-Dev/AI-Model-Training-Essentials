@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # ملٹی موڈل AI
 ملٹی موڈل اے آئی سسٹم متعدد قسم کے ڈیٹا - ٹیکسٹ، امیجز، آڈیو، ویڈیو، اور بہت کچھ سے معلومات کو بیک وقت پراسیس اور اکٹھا کرتے ہیں۔ جبکہ پہلے کے AI سسٹمز عام طور پر سنگل موڈلٹی (صرف ٹیکسٹ، صرف تصویر) تھے، سب سے زیادہ قابل جدید نظام ملٹی موڈل ہیں۔ GPT-4V تصاویر اور متن کو ایک ساتھ پڑھتا ہے۔ جیمنی متن، تصاویر، آڈیو اور ویڈیو کو مقامی طور پر پروسیس کرتا ہے۔ اور سورا جیسے سسٹم ٹیکسٹ ڈسکرپشن سے ویڈیو تیار کرتے ہیں۔ یہ فائل اس بات کا احاطہ کرتی ہے کہ ملٹی موڈل AI کیسے کام کرتا ہے، اس کے پیچھے فن تعمیرات، اور طریقوں کو یکجا کرنا اتنا طاقتور کیوں ہے۔
 ---

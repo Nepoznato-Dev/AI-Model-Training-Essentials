@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Astronomy and Cosmology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #खगोल विज्ञान और ब्रह्मांड विज्ञान
 खगोल विज्ञान आकाशीय पिंडों का अध्ययन है - तारे, ग्रह, आकाशगंगाएँ और पृथ्वी के वायुमंडल से परे सब कुछ। ब्रह्माण्ड विज्ञान संपूर्ण ब्रह्मांड का अध्ययन है: इसकी उत्पत्ति, संरचना, विकास और अंतिम भाग्य। साथ में, वे मनुष्यों द्वारा अब तक पूछे गए कुछ सबसे बुनियादी प्रश्नों को संबोधित करते हैं: ब्रह्मांड की शुरुआत कैसे हुई? यह कितना बड़ा है? क्या हम अकेले हैं? आख़िर में इसका क्या होगा?
 ---

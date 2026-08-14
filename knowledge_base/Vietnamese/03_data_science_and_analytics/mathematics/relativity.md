@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thuyết tương đối
 Thuyết tương đối của Einstein đã cách mạng hóa sự hiểu biết của chúng ta về không gian, thời gian và lực hấp dẫn. **Thuyết tương đối đặc biệt** (1905) cho thấy rằng không gian và thời gian không tách rời mà được dệt thành một tấm vải duy nhất gọi là không thời gian, và tốc độ ánh sáng là như nhau đối với tất cả những người quan sát. **Thuyết tương đối rộng** (1915) đã mô phỏng lại lực hấp dẫn không phải là một lực mà là độ cong của không thời gian gây ra bởi khối lượng và năng lượng. Những lý thuyết này củng cố việc điều hướng GPS, máy gia tốc hạt và sự hiểu biết của chúng ta về lỗ đen và sự tiến hóa của vũ trụ.
 ---

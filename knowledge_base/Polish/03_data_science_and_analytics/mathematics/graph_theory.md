@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoria grafów
 **Wykres** to struktura matematyczna składająca się z wierzchołków (węzłów) połączonych krawędziami (ogniwami). Wykresy modelują relacje: sieci społecznościowe, mapy drogowe, sieci neuronowe, zależności, kanały komunikacji. Teoria grafów – badanie tych struktur – dostarcza algorytmów i twierdzeń, które mają kluczowe znaczenie w informatyce, badaniach operacyjnych i nauce o danych.
 ---

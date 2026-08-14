@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "2026 and Future Events"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #2026 и будущие события
 2026 год — год, когда сходится множество долгосрочных планов. Это 250-я годовщина Декларации независимости США, промежуточный этап достижения Целей ООН в области устойчивого развития (2020-2030 гг.) и знаковый год для корпоративных дорожных карт в области искусственного интеллекта, исследования космоса, электромобилей и возобновляемых источников энергии. Независимо от того, оправдаются ли конкретные прогнозы, тенденции, формирующие 2026 год, дают полезную картину того, куда идут дела.
 ---

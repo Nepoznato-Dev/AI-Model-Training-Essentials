@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Optimization"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into optimization"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 최적화
 최적화는 실행 가능한 솔루션 세트에서 최상의 솔루션을 찾는 수학입니다. 함수와 제약 조건이 주어지면 어떤 입력이 출력을 최소화(또는 최대화)합니까? 최적화는 기계 학습의 엔진입니다. 모델을 훈련한다는 것은 손실 함수를 최소화하는 것을 의미합니다. 이는 운영 연구, 경제학, 엔지니어링 설계 및 거의 모든 정량적 분야에 나타납니다.
 ---

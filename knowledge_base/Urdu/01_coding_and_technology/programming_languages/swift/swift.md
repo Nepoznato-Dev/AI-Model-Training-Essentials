@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Swift"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # سوئفٹ
 Swift ایک جدید، مرتب کردہ پروگرامنگ لینگویج ہے جسے Apple (کرس لیٹنر کی قیادت میں) نے تیار کیا تھا اور پہلی بار 2014 میں ریلیز کیا گیا تھا۔ اسے ایپل پلیٹ فارم کی ترقی (iOS, macOS, watchOS, tvOS, visionOS) کے لیے بنیادی زبان کے طور پر Objective-C کو تبدیل کرنے کے لیے ڈیزائن کیا گیا تھا۔ سوئفٹ مرتب شدہ زبانوں کی کارکردگی کو اسکرپٹنگ زبانوں کے اظہار کے ساتھ جوڑتا ہے، اور یہ حفاظت پر زور دیتا ہے -- خاص طور پر کالعدم اقدار، میموری مینجمنٹ، اور ٹائپ کی غلطیوں کے ارد گرد۔
 ایپل پلیٹ فارمز کے علاوہ، سوئفٹ تیزی سے سرور سائیڈ ڈویلپمنٹ (ویپر، ہمنگ برڈ)، کراس پلیٹ فارم ایپلی کیشنز، اور یہاں تک کہ مشین لرننگ (ایپل کی تخلیق ایم ایل) کے لیے استعمال ہوتا ہے۔ سوفٹ آن سرور اور کراس پلیٹ فارم سپورٹ کے متعارف ہونے کے ساتھ، سوئفٹ صرف ایک "ایپل لینگویج" سے زیادہ بنتا جا رہا ہے۔

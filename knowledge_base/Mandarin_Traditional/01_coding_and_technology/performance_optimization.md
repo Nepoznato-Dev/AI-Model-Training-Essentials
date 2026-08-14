@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performance Optimisation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 效能優化
 效能優化是使軟體更快的實踐——減少回應時間、提高吞吐量、降低記憶體使用量並消除瓶頸。這是開發人員可以擁有的最有影響力的技能之一，因為緩慢的軟體會失去用戶，浪費資源，並使每個人都感到沮喪。但這也是最常見的錯誤之一，開發人員根據直覺而不是證據來優化錯誤的事情。
 ---

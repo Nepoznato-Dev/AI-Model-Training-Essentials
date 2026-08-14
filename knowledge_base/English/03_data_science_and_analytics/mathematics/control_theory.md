@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Control Theory
 
 Control theory is the mathematics of making systems behave the way you want them to. From thermostats to autopilots, from robotic arms to chemical reactors, control systems sense, decide, and act to maintain desired behaviour. The field provides rigorous tools for analysing stability, performance, and robustness — concepts that have migrated into reinforcement learning, hyperparameter tuning, and adaptive systems.

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Genetics and Genomics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #พันธุศาสตร์และจีโนมิกส์
 พันธุศาสตร์เป็นการศึกษาเกี่ยวกับพันธุกรรม - ลักษณะต่างๆ ได้รับการถ่ายทอดจากพ่อแม่สู่ลูกหลานผ่านทาง DNA อย่างไร จีโนมิกส์คือการศึกษาจีโนมทั้งหมด ได้แก่ ยีนทั้งหมด บริเวณที่ไม่มีการเข้ารหัส วิธีโต้ตอบของพวกมัน และความแตกต่างระหว่างแต่ละบุคคลและประชากร การเปลี่ยนจากพันธุกรรมไปสู่จีโนมิกส์ขับเคลื่อนโดยเทคโนโลยีการหาลำดับ เราเปลี่ยนจากการศึกษายีนทีละยีนไปเป็นการอ่านจีโนมทั้งหมดภายในเวลาไม่กี่ชั่วโมง สร้างข้อมูลที่เปลี่ยนแปลงการแพทย์ เกษตรกรรม นิติเวช และความเข้าใจของเราเกี่ยวกับวิวัฒนาการ
 ---

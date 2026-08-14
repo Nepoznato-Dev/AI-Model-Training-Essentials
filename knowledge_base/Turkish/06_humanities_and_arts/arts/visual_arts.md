@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Visual Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Görsel Sanatlar
 Görsel sanat, Lascaux'nun mağara resimlerinden günümüzün dijital enstalasyonlarına kadar insanlığın en eski iletişim biçimidir. Sanat hareketlerini, ortamları ve yaratıcı çalışmaları koruyan kurumları anlamak, toplumların binlerce yıl boyunca güzelliği, gücü, maneviyatı ve muhalefeti nasıl ifade ettiğine dair size daha derin bir takdir kazandırır.
 ---

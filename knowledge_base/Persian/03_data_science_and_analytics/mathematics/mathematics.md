@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Mathematics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from math_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #ریاضی
 ریاضیات نه تنها موضوعی است که در مدرسه مورد مطالعه قرار می گیرد، بلکه تقریباً زیربنای هر زمینه فنی است. فیزیک از آن برای توصیف جهان استفاده می کند. علوم کامپیوتر از آن برای طراحی الگوریتم ها استفاده می کند. یادگیری ماشینی از آن برای بهینه سازی وزن ها استفاده می کند. فاینانس از آن برای ریسک قیمت استفاده می کند. تسلط بر هر شاخه ضروری نیست، اما درک چشم انداز - و دانستن اینکه هر شاخه در کجا کاربرد دارد - درک سایر موضوعات را آسان تر می کند.
 ---

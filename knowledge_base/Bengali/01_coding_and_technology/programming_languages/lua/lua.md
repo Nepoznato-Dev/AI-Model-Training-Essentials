@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Lua"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #লুয়া
 Lua হল একটি হালকা ওজনের, এম্বেডযোগ্য স্ক্রিপ্টিং ভাষা যা অ্যাপ্লিকেশন প্রসারিত করার জন্য ডিজাইন করা হয়েছে। ব্রাজিলের রিও ডি জেনিরোর পন্টিফিকাল ক্যাথলিক বিশ্ববিদ্যালয়ে 1993 সালে তৈরি, লুয়া হল দ্রুততম স্ক্রিপ্টিং ভাষাগুলির মধ্যে একটি। এর ছোট পদচিহ্ন (দোভাষী হল ~120KB) এবং সরলতা এটিকে গেম ডেভেলপমেন্ট স্ক্রিপ্টিং, এমবেডেড সিস্টেম এবং কনফিগারেশনের জন্য পছন্দের পছন্দ করে তোলে।
 লুয়া রবলক্স (200M+ মাসিক ব্যবহারকারীদের সাথে গেমিং প্ল্যাটফর্ম), ওয়ার্ল্ড অফ ওয়ারক্রাফ্ট অ্যাডঅন এবং অসংখ্য গেম ইঞ্জিন (লাভ2ডি, ডিফোল্ড, করোনা SDK) এর পিছনে স্ক্রিপ্টিং ভাষা হিসাবে পরিচিত। এটি Nginx (OpenResty), Redis এবং Wireshark-এও ব্যবহৃত হয়।

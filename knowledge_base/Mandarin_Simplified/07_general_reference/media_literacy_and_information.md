@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 媒介素养与信息评估
 我们生活在一个信息饱和的世界。每天，普通人都会接触到数以千计的媒体信息——新闻文章、社交媒体帖子、广告、政治演讲、影响者内容、人工智能生成的文本。大部分都很好。其中一些是误导性的。少量是故意造假的。媒体素养是驾驭这一局面的技能——不是相信一切，也不是什么都不相信，而是培养一种对什么是可靠的、什么是不可靠的校准感。
 ---

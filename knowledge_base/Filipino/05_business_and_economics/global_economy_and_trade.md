@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Global Economy and Trade"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — global economy and trade reference"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pandaigdigang Ekonomiya at Kalakalan
 Ang pandaigdigang ekonomiya ay ang pinakamalaki at pinakamasalimuot na sistemang nagawa ng mga tao. Noong 2025, ang pandaigdigang GDP ay lumampas sa $110 trilyon. Mahigit 8 bilyong tao ang gumagawa, nangangalakal, at kumokonsumo ng mga produkto at serbisyo sa mga hangganan araw-araw. Ang pag-unawa sa kung paano gumagana ang sistemang ito — sino ang nakikipagkalakalan sa kung ano, bakit ang ilang mga bansa ay mayaman at ang iba ay mahirap, kung paano gumagalaw ang pera sa mga hangganan, at kung ano ang mangyayari kapag nasira ang system — ay mahalaga para sa pag-navigate sa modernong mundo.
 ---

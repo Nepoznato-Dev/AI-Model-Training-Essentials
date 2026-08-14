@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nadharia ya Udhibiti
 Nadharia ya udhibiti ni hisabati ya kufanya mifumo itende jinsi unavyotaka iwe. Kuanzia vidhibiti vya halijoto hadi viendeshaji otomatiki, kutoka kwa mikono ya roboti hadi vinu vya kemikali, mifumo ya udhibiti huhisi, kuamua na kuchukua hatua ili kudumisha tabia inayotakikana. Sehemu hii hutoa zana dhabiti za kuchanganua uthabiti, utendakazi, na uthabiti - dhana ambazo zimehamia katika ujifunzaji wa uimarishaji, urekebishaji wa vigezo na mifumo ya kubadilika.
 ---

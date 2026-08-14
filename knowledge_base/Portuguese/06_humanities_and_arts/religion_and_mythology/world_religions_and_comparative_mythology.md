@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Religions and Comparative Mythology"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to religion_and_mythology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Religiões Mundiais e Mitologia Comparada
 As religiões mundiais são os principais sistemas de crenças, práticas e comunidades que moldaram a civilização humana durante milhares de anos. A mitologia comparada estuda as histórias que diferentes culturas contam sobre a criação, os heróis, os deuses e o significado da existência – e os padrões marcantes que se repetem em tradições separadas por milhares de quilômetros e milênios. Compreender ambos é essencial para compreender por que as pessoas acreditam no que acreditam, como as culturas diferem e o que une a experiência humana.
 ---

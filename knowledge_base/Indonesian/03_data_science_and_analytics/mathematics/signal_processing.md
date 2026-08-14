@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Signal Processing"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into signal processing"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pemrosesan Sinyal
 Pemrosesan sinyal adalah ilmu menganalisis, memodifikasi, dan mensintesis sinyal — representasi kuantitas fisik yang bervariasi seiring waktu, ruang, atau frekuensi. Audio, gambar, video, data sensor, gelombang otak, harga saham — semuanya adalah sinyal. Alat matematika pemrosesan sinyal (transformasi Fourier, filter, teori pengambilan sampel) merupakan dasar pembelajaran mesin, komunikasi, pencitraan medis, dan hampir semua bidang yang bekerja dengan data.
 ---

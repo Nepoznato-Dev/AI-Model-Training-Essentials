@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Pipeline and ETL Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # データ パイプラインと ETL の障害
 データ パイプラインは現代の組織の配管です。データ パイプラインは、変換を通じてソース システムからデータベース、ウェアハウス、レイクにデータを移動し、そこで分析、機械学習、意思決定に使用されます。彼らが働いているとき、誰も気づきません。失敗すると、古いデータに基づいて意思決定が行われ、モデルはガベージでトレーニングされ、レポートにはありえない数字が示され、データ プラットフォーム全体に対する信頼が失われます。データ パイプラインの障害は、テクノロジー組織において最も一般的で、最もコストがかかる障害の 1 つです。
 ---

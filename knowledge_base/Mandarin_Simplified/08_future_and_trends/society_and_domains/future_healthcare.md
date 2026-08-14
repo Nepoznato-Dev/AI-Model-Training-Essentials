@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 未来医疗保健
 ＃＃ 概述
 医学正在从反应性模式（症状出现后进行治疗）转变为预测性、个性化且越来越具有预防性的模式。基因组学已经从一个 30 亿美元的项目变成了一个不到 1,000 美元的常规测试。人工智能正在学会在医生之前通过扫描发现疾病。再生医学正在将科幻小说变成临床试验。以下是三个最大前沿领域正在发生的事情：个性化医学、长寿研究和再生医学。

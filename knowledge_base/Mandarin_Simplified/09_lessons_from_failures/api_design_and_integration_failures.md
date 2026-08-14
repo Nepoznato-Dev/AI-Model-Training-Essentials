@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "API Design and Integration Failures"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # API 设计和集成失败
 API（应用程序编程接口）是现代软件的结缔组织——它们让服务进行通信，让第三方集成，让团队独立工作。当 API 设计出错时，后果会波及到依赖它的每个系统：集成中断、安全漏洞、开发人员沮丧以及代价高昂的重写。集成故障（系统无法可靠地通信）是生产事件的最常见来源之一。
 ---

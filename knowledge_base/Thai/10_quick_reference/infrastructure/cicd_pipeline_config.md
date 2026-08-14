@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "CI/CD Pipeline Configuration"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # การกำหนดค่าไปป์ไลน์ CI/CD
 ไปป์ไลน์การบูรณาการอย่างต่อเนื่อง (CI) และการปรับใช้อย่างต่อเนื่อง (CD) ทำให้กระบวนการสร้าง การทดสอบ และการใช้งานซอฟต์แวร์เป็นแบบอัตโนมัติ ข้อมูลอ้างอิงนี้ครอบคลุมรูปแบบการกำหนดค่าสำหรับแพลตฟอร์ม CI/CD ที่ได้รับความนิยมสูงสุด: GitHub Actions, GitLab CI และหลักการออกแบบไปป์ไลน์ทั่วไป
 ---

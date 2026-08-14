@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "SQL"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # SQL
 SQL (Structured Query Language) は、リレーショナル データベース内のデータの管理とクエリを行うために設計されたドメイン固有の言語です。 1970 年代に IBM で最初に開発され、1987 年に標準化された SQL は、今でもアプリケーションとそのデータの間の主要なインターフェイスです。 PostgreSQL、MySQL、SQL Server、Oracle、SQLite などの主要なリレーショナル データベース管理システム (RDBMS) はすべて、クエリ言語として SQL を使用します。
 SQL は汎用プログラミング言語ではありません。 SQL で Web アプリケーションを作成することはありません。しかし、アプリケーションがデータを保存する場合 (ほとんどすべてのアプリケーションがそうします)、そのデータを取得、変換、管理するために使用する言語は SQL です。これはおそらく、一般的なプログラミングに次いで最も普遍的に役立つ技術スキルです。

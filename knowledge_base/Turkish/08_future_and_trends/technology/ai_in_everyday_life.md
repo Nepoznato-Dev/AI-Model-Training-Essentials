@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Günlük Yaşamda Yapay Zeka
 Yapay zeka artık fütüristik bir kavram değil; günlük yaşamın içine yerleşmiş durumda. Uyanıp telefonunuzu kontrol ettiğiniz andan (öneri algoritmaları hangi bildirimleri göreceğinize karar verir) uykuya daldığınız ana kadar (akıllı hoparlörünüz son komutunuzu işler), yapay zeka sistemleri sizin adınıza, sizin adınıza, bazen de sizin hakkınızda kararlar alıyor. Yapay zekanın nerede ortaya çıktığını, temel düzeyde nasıl çalıştığını ve sonuçlarının ne olduğunu anlamak artık isteğe bağlı değil; 21. yüzyılda bilinçli vatandaşlık için bir gereklilik.
 ---

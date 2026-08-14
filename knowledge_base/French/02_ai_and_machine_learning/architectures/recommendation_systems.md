@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Recommendation Systems"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Systèmes de recommandation
 Les systèmes de recommandation prédisent ce qu’un utilisateur voudra voir, acheter ou avec lequel interagir ensuite. Ils alimentent les flux de contenu sur les réseaux sociaux, les suggestions de produits sur les sites de commerce électronique, les sélections de films sur les plateformes de streaming et les résultats de recherche. Bien qu'ils soient invisibles pour la plupart des utilisateurs, ils comptent parmi les systèmes d'IA les plus impactants commercialement au monde : Netflix estime que son moteur de recommandation permet d'économiser plus d'un milliard de dollars par an en réduisant le taux de désabonnement des abonnés.
 ---

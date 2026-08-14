@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Practical Life Skills"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — practical life skills reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 実践的なライフスキル
 学校では微積分は教えますが、税金の申告方法、バランスの取れた食事の作り方、家の維持方法などはほとんど教えてくれません。これらは、日々の生活の質に影響を与える実践的な能力であり、あなたを自給自足し、経済的に立ち直る力を与える種類の知識です。このファイルには、要点がぎっしり詰まったリファレンスが含まれています。
 ---

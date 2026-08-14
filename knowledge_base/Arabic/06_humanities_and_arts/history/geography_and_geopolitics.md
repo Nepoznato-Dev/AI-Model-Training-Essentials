@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Geography and Geopolitics"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to history/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # الجغرافيا والجغرافيا السياسية
 الجغرافيا تشكل القدر لقد ساهم موقع الجبال والأنهار والموارد الطبيعية في تحديد طرق التجارة، وإشعال الحروب، وبناء الحضارات لآلاف السنين. واليوم، تظل الجغرافيا السياسية ــ التفاعل بين الجغرافيا والقوة والسياسة ــ تشكل ضرورة أساسية لفهم الأسباب التي تجعل الدول تتصرف على هذا النحو.
 ---

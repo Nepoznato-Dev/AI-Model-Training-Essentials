@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Healthcare"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Saúde do futuro
 ## Visão geral
 A medicina está mudando de um modelo reativo – tratar os sintomas depois que eles aparecem – para um modelo preditivo, personalizado e cada vez mais preventivo. A genômica passou de um projeto de US$ 3 bilhões para um teste de rotina inferior a US$ 1.000. A IA está aprendendo a detectar doenças em exames antes que os médicos o façam. E a medicina regenerativa está a transformar a ficção científica em ensaios clínicos. Aqui está o que está acontecendo nas três maiores fronteiras: medicina personalizada, pesquisa sobre longevidade e medicina regenerativa.

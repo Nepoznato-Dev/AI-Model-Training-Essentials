@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Prometheus and Grafana"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to infrastructure/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #بروميثيوس وجرافانا
 Prometheus عبارة عن مجموعة أدوات مراقبة وتنبيه مفتوحة المصدر مصممة لتحقيق الموثوقية وقابلية التوسع. Grafana هي المنصة الرائدة مفتوحة المصدر لتصور بيانات السلاسل الزمنية. وتشكل معًا مجموعة المراقبة الأكثر شيوعًا للبنية التحتية والتطبيقات الحديثة. يقوم بروميثيوس بجمع وتخزين المقاييس؛ يعرضها Grafana في لوحات المعلومات.
 ---

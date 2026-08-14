@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "AI in Everyday Life"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # AI trong cuộc sống hằng ngày
 Trí tuệ nhân tạo không còn là một khái niệm tương lai nữa - nó được đưa vào cuộc sống hàng ngày. Từ thời điểm bạn thức dậy và kiểm tra điện thoại của mình (thuật toán đề xuất quyết định những thông báo bạn nhìn thấy) cho đến thời điểm bạn chìm vào giấc ngủ (loa thông minh xử lý lệnh cuối cùng của bạn), hệ thống AI đang đưa ra quyết định thay mặt bạn, cho bạn và đôi khi là về bạn. Việc hiểu AI xuất hiện ở đâu, cách nó hoạt động ở mức cơ bản và ý nghĩa của nó không còn là điều bắt buộc nữa - đó là yêu cầu đối với những công dân có hiểu biết trong thế kỷ 21.
 ---

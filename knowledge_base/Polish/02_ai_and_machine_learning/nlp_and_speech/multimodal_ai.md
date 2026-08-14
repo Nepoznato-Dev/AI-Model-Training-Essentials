@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Multimodal AI"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to nlp_and_speech/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Multimodalna sztuczna inteligencja
 Multimodalne systemy AI przetwarzają i łączą informacje z wielu typów danych — tekstu, obrazów, dźwięku, wideo i innych — jednocześnie. Podczas gdy wcześniejsze systemy sztucznej inteligencji były zazwyczaj jednomodalne (tylko tekst, tylko obraz), nowoczesne systemy o największych możliwościach są wielomodalne. GPT-4V odczytuje razem obrazy i tekst; Gemini natywnie przetwarza tekst, obrazy, dźwięk i wideo; a systemy takie jak Sora generują wideo na podstawie opisów tekstowych. W tym pliku opisano, jak działa multimodalna sztuczna inteligencja, stojące za nią architektury i dlaczego łączenie modalności jest tak skuteczne.
 ---

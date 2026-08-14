@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 神經科學
 神經科學是對神經系統（大腦、脊髓以及將它們連接到身體的所有神經）的研究。它跨越多個層面：從分子和基因，到單一神經元和突觸，到電路和大腦區域，到行為、認知和意識。大腦是已知宇宙中最複雜的結構，包含約 860 億個神經元，透過數萬億個突觸連接，了解大腦的工作原理是科學面臨的巨大挑戰之一。
 ---

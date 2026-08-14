@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Number Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into number theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Teoria dos Números
 A teoria dos números é o estudo dos inteiros – números inteiros e suas propriedades. Gauss a chamou de "a rainha da matemática". Apesar de estudar os objetos mais simples (1, 2, 3, ...), a teoria dos números produz alguns dos problemas mais profundos e difíceis de toda a matemática. Hoje, ele sustenta a criptografia moderna, algoritmos de hash, códigos de correção de erros e geração de números aleatórios.
 ---

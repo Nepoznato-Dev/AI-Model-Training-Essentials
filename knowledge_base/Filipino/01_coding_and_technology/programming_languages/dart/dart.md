@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Dart"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Dart
 Ang Dart ay isang client-optimized programming language na binuo ng Google, na unang inilabas noong 2013. Bagama't ang Dart ay unang nakaposisyon bilang isang potensyal na kapalit ng JavaScript para sa mga web browser, natagpuan nito ang pangunahing layunin nito bilang wika sa likod ng **Flutter** — cross-platform UI toolkit ng Google para sa pagbuo ng mga mobile, web, desktop, at naka-embed na application mula sa isang codebase.
 Pinagsasama ng Dart ang pinakamagagandang feature ng mga modernong wika: ito ay object-oriented, may opsyonal na pag-type (sound null safety mula noong Dart 3), sumusuporta sa asynchronous programming na may`async`/`await`, at nag-compile sa parehong native machine code (para sa mobile/desktop) at JavaScript (para sa web).

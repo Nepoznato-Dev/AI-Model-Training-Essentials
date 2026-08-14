@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Logic and Critical Thinking"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from mathematics_and_logic.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Logika i krytyczne myślenie
 Logika to nauka o prawidłowym rozumowaniu — o tym, jak konstruować rozsądne argumenty i identyfikować błędne. Krytyczne myślenie to zdyscyplinowany nawyk kwestionowania założeń, oceniania dowodów i uważnego rozumowania. Umiejętności te są niezbędne nie tylko w matematyce i informatyce, ale także w codziennym podejmowaniu decyzji, badaniach naukowych i poruszaniu się po świecie bogatym w informacje.
 ---

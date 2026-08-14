@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Ensemble Methods"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #طرق الفرقة
 تجمع الأساليب المجمعة بين نماذج التعلم الآلي المتعددة لإنتاج تنبؤات أفضل مما يمكن أن يحققه أي نموذج منفرد بمفرده. الحدس واضح ومباشر: إذا كان لديك العديد من النماذج التي يتمتع كل منها بالدقة إلى حد ما ولكنها ترتكب أخطاء مختلفة، فإن الجمع بين توقعاتها سوف يلغي الأخطاء الفردية وينتج نتيجة أكثر قوة. تقف المجموعات وراء حلول التعلم الآلي الأكثر تنافسية وتظل من أكثر التقنيات موثوقية في أنظمة الإنتاج.
 ---

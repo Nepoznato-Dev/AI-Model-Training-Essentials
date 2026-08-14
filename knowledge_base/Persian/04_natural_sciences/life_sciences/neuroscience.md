@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Neuroscience"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #علوم اعصاب
 علوم اعصاب مطالعه سیستم عصبی - مغز، نخاع و تمام اعصابی است که آنها را به بدن متصل می کند. این سطوح چندگانه را در بر می گیرد: از مولکول ها و ژن ها، تا نورون ها و سیناپس ها، مدارها و نواحی مغز، تا رفتار، شناخت و آگاهی. مغز پیچیده ترین ساختار در جهان شناخته شده است که شامل تقریباً 86 میلیارد نورون است که توسط تریلیون ها سیناپس به هم متصل شده اند و درک نحوه عملکرد آن یکی از چالش های بزرگ علم است.
 ---

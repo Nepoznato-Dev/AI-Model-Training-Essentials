@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nghiên cứu hoạt động
 Nghiên cứu hoạt động (OR) là việc áp dụng các phương pháp toán học vào việc ra quyết định. Ra đời trong Thế chiến thứ hai dành cho lĩnh vực hậu cần quân sự, giờ đây nó tối ưu hóa chuỗi cung ứng, lên lịch cho các hãng hàng không, định tuyến đội tàu giao hàng, quản lý hàng tồn kho và phân bổ nguồn lực cho mọi ngành. HOẶC cung cấp bộ công cụ toán học để đưa ra quyết định tốt nhất có thể trong điều kiện ràng buộc.
 ---

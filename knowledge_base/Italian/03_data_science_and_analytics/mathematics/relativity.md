@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Relativity"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into relativity"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Relatività
 Le teorie della relatività di Einstein hanno rivoluzionato la nostra comprensione dello spazio, del tempo e della gravità. La **relatività speciale** (1905) ha dimostrato che lo spazio e il tempo non sono separati ma intrecciati in un unico tessuto chiamato spaziotempo, e che la velocità della luce è la stessa per tutti gli osservatori. La **relatività generale** (1915) ha reinventato la gravità non come una forza ma come la curvatura dello spaziotempo causata dalla massa e dall'energia. Queste teorie sono alla base della navigazione GPS, degli acceleratori di particelle e della nostra comprensione dei buchi neri e dell’evoluzione dell’universo.
 ---

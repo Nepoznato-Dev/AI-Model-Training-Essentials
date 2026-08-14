@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Causal Inference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Nedensel Çıkarım
 Nedensel çıkarım, yalnızca ilişkili olup olmadıklarını değil, bir şeyin aslında bir başka şeye neden olup olmadığını belirleme bilimidir. Korelasyon size iki değişkenin birlikte hareket ettiğini söyler. Nedensellik, birini değiştirmenin diğerini de değiştireceğini söyler. Bu ayrım tıpta (bu ilaç işe yarıyor mu?), politikada (bu müdahale yoksulluğu azaltıyor mu?), iş dünyasında (bu reklam kampanyası satışları artırıyor mu?) ve bilimde (bu mekanizma fenomeni açıklıyor mu?) son derece önemlidir.
 ---

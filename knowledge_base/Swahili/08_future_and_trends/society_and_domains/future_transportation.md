@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future Transportation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Usafiri wa Baadaye
 ## Muhtasari
 Kupata kutoka A hadi B kunakaribia kuonekana tofauti sana. Magari yanayojiendesha tayari yako kwenye barabara za umma. Ndege za umeme zinakamilisha safari za majaribio. Dhana za hyperloop huahidi usafiri wa kasi ya treni katika mirija ya utupu. Na teksi za kuruka - mara tu vitu vya katuni - zinaingia kwenye uthibitisho. Hii ndio hali ya uchezaji katika teknolojia zinazounda upya jinsi tunavyosonga.

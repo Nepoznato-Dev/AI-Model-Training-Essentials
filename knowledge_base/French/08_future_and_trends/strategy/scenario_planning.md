@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Scenario Planning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to strategy/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Planification de scénarios
 ## Aperçu
 Personne ne peut prédire l’avenir, mais vous pouvez vous préparer à plusieurs événements plausibles. La planification de scénarios, née dans les groupes de réflexion de la guerre froide et perfectionnée par Shell lors des crises pétrolières des années 1970, est une manière de penser systématiquement à l’incertitude. Au lieu de parier sur une seule prévision, vous construisez des histoires cohérentes sur la façon dont les choses pourraient se dérouler, puis vous testez vos décisions par rapport à toutes. Voici comment fonctionne la méthodologie, ainsi que des scénarios dans les domaines clés.

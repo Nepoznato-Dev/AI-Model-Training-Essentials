@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #Sanaa za Maonyesho
 Sanaa za uigizaji - ukumbi wa michezo, filamu, dansi na uigizaji wa muziki - ndipo sanaa hukutana na uwepo hai wa hadhira. Tofauti na mchoro ukutani au kitabu kwenye rafu, utendakazi hujitokeza kwa wakati halisi, na kutengeneza uzoefu wa pamoja kati ya msanii na mtazamaji ambao umekuwa kitovu cha utamaduni wa binadamu kwa maelfu ya miaka.
 ---

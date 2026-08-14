@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Climate Technology and Green Innovation"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to technology/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # เทคโนโลยีสภาพภูมิอากาศและนวัตกรรมสีเขียว
 เทคโนโลยีสภาพภูมิอากาศประกอบด้วยเครื่องมือ ระบบ และนวัตกรรมที่ออกแบบมาเพื่อลดการปล่อยก๊าซเรือนกระจก ปรับให้เข้ากับการเปลี่ยนแปลงสภาพภูมิอากาศ และเปลี่ยนแปลงเศรษฐกิจโลกไปสู่ความยั่งยืน อาจเป็นขอบเขตเทคโนโลยีที่สำคัญที่สุดแห่งศตวรรษที่ 21 ความแตกต่างระหว่างภาวะโลกร้อน 1.5°C ที่สามารถจัดการได้ และ 3°C+ ที่เป็นหายนะนั้น ขึ้นอยู่กับความเร็วของการนำเทคโนโลยีเหล่านี้ไปใช้งานในวงกว้างเป็นส่วนใหญ่ ความท้าทายไม่ใช่แค่ทางวิทยาศาสตร์เท่านั้น แต่ยังรวมถึงเศรษฐกิจ การเมือง และสังคมด้วย
 ---

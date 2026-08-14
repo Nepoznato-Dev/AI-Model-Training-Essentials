@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Federated Learning and Privacy"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Pembelajaran Federasi dan Privasi
 Pembelajaran gabungan adalah teknik untuk melatih model pembelajaran mesin di beberapa perangkat atau organisasi tanpa berbagi data mentah. Daripada mengirim data ke server pusat, setiap perangkat melatih model lokal dan hanya membagikan pembaruan model (gradien atau bobot). Server pusat mengumpulkan pembaruan ini untuk menghasilkan model global. Ini dirancang oleh Google untuk melatih model bahasa keyboard di ponsel Android — dan sejak itu menjadi teknik utama untuk AI yang menjaga privasi.
 ---

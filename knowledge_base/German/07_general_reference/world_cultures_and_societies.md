@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "World Cultures and Societies"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — world cultures and societies reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Weltkulturen und Gesellschaften
 Kultur ist der Rahmen einer Gesellschaft – die gemeinsamen Überzeugungen, Werte, Bräuche, Verhaltensweisen und Artefakte, die die Mitglieder nutzen, um mit ihrer Welt und untereinander zurechtzukommen. Um kulturelle Vielfalt zu verstehen, geht es nicht darum, Belanglosigkeiten auswendig zu lernen; Es geht darum anzuerkennen, dass eine Art, die Welt zu sehen, unter Tausenden liegt und dass andere Systeme in sich kohärent, historisch begründet und auf ihre eigene Weise verständlich sind.
 ---

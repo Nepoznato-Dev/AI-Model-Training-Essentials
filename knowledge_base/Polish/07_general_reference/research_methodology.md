@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Metodologia badań
 Metodologia badań to systematyczne podejście do badania pytań, testowania hipotez i generowania rzetelnej wiedzy. Niezależnie od tego, czy przeprowadzasz eksperymenty naukowe, ankiety z zakresu nauk społecznych, analizy biznesowe czy badania akademickie, wybrana metodologia określa, czy Twoje wyniki są wiarygodne, powtarzalne i przydatne. Dobrze zaprojektowane badanie daje wiarygodne wyniki; źle zaprojektowany generuje hałas — lub, co gorsza, pewne błędne odpowiedzi.
 ---

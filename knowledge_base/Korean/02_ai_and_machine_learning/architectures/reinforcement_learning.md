@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Reinforcement Learning"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # 강화학습
 강화 학습(RL)은 기계가 시행착오를 통해 일련의 결정을 내리는 방법을 학습하는 방법입니다. 모든 예시에 정답이 제공되는 지도 학습과 달리 RL은 에이전트에게 보상 신호만 제공하며 에이전트는 시간이 지남에 따라 어떤 작업이 최상의 결과로 이어지는지 파악해야 합니다. 이는 AlphaGo, 로봇 제어, 게임 플레이 AI 및 현대의 대규모 언어 모델을 인간 선호도에 맞추는 데 사용되는 기술인 RLHF의 이면에 있는 접근 방식입니다.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Thermodynamics and Statistical Mechanics"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into thermodynamics and statistical mechanics"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Thermodynamics and Statistical Mechanics
 
 Thermodynamics describes the macroscopic behaviour of systems in terms of temperature, pressure, and entropy — without knowing what atoms look like. Statistical mechanics explains thermodynamics from the bottom up: it derives macroscopic properties from the microscopic behaviour of vast numbers of particles. Together, they provide the deepest understanding of energy, entropy, and equilibrium — concepts that have migrated into information theory, machine learning, and beyond.

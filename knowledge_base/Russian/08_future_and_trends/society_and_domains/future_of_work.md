@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Future of Work"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Будущее работы
 ## Обзор
 То, как мы работаем, меняется быстрее, чем когда-либо со времен промышленной революции. Удаленная работа в одночасье превратилась из редкой привилегии в дефолтную. ИИ переходит от новинки к сотрудничеству. Гиг-экономика меняет само понятие «занятость». И автоматизация не коснется всех должностей, но она коснется многих задач в большинстве должностей. Вот взгляд на силы, меняющие рабочее место, и на то, что будет дальше.

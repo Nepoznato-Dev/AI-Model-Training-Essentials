@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Generative AI Deep Dive"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to architectures/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # जेनरेटिव एआई डीप डाइव
 जेनरेटिव एआई उन मॉडलों को संदर्भित करता है जो मौजूदा डेटा को वर्गीकृत करने या भविष्यवाणी करने के बजाय नई सामग्री - छवियां, टेक्स्ट, ऑडियो, वीडियो, कोड - बनाते हैं। जबकि बड़े भाषा मॉडल पर सबसे अधिक ध्यान दिया जाता है, जेनरेटिव एआई परिदृश्य कहीं अधिक व्यापक है। यह फ़ाइल आधुनिक जनरेटिव सिस्टम के पीछे के आर्किटेक्चर, तकनीक और ट्रेड-ऑफ को कवर करती है, जिसमें डिफ्यूजन मॉडल से लेकर वेरिएबल ऑटोएनकोडर से लेकर फ्लो मॉडल शामिल हैं।
 ---

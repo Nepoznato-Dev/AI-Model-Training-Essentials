@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Control Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into control theory"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تئوری کنترل
 تئوری کنترل، ریاضیاتی است که باعث می‌شود سیستم‌ها طوری رفتار کنند که شما می‌خواهید. از ترموستات تا خلبان خودکار، از بازوهای روباتیک تا راکتورهای شیمیایی، سیستم‌های کنترل برای حفظ رفتار دلخواه خود تصمیم می‌گیرند و عمل می‌کنند. این زمینه ابزارهای دقیقی را برای تجزیه و تحلیل پایداری، عملکرد و استحکام ارائه می دهد - مفاهیمی که به یادگیری تقویتی، تنظیم فراپارامتر و سیستم های تطبیقی ​​مهاجرت کرده اند.
 ---

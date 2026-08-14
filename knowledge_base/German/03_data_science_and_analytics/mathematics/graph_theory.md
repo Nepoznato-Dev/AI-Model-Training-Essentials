@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Graph Theory"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into graph theory"
 
 # Review
@@ -42,6 +43,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Graphentheorie
 Ein **Graph** ist eine mathematische Struktur, die aus Eckpunkten (Knoten) besteht, die durch Kanten (Links) verbunden sind. Diagramme modellieren Beziehungen: soziale Netzwerke, Straßenkarten, neuronale Netze, Abhängigkeiten, Kommunikationskanäle. Die Graphentheorie – die Untersuchung dieser Strukturen – liefert Algorithmen und Theoreme, die für die Informatik, das Operations Research und die Datenwissenschaft von zentraler Bedeutung sind.
 ---

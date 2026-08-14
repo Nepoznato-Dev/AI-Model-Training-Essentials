@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Sustainable Future"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to society_and_domains/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #المستقبل المستدام
 ## ملخص
 لم يعد السؤال هو *ما إذا كان العالم بحاجة إلى التحول إلى اقتصاد مستدام، بل *ما مدى السرعة* و *من يقود*. تعد الطاقة المتجددة الآن أرخص مصدر للطاقة في معظم الأسواق. تنتقل مبادئ الاقتصاد الدائري من المفهوم المتخصص إلى استراتيجية الشركة. تعيد المدن التفكير في كل شيء بدءًا من وسائل النقل وحتى النفايات. ويعمل السباق نحو صافي الصفر على إعادة تشكيل الصناعات من الطاقة إلى التمويل. إليك ما يبدو عليه المستقبل المستدام عبر أربعة أبعاد رئيسية.

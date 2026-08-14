@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Media Literacy and Information Evaluation"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial creation — media literacy and information evaluation reference"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # میڈیا خواندگی اور معلومات کی تشخیص
 ہم معلومات سے بھرپور دنیا میں رہتے ہیں۔ ہر روز، اوسط فرد کو ہزاروں میڈیا پیغامات — خبروں کے مضامین، سوشل میڈیا پوسٹس، اشتہارات، سیاسی تقاریر، اثر انگیز مواد، AI سے تیار کردہ متن سے واسطہ پڑتا ہے۔ اس میں سے زیادہ تر ٹھیک ہے۔ اس میں سے کچھ گمراہ کن ہے۔ ایک چھوٹی سی رقم جان بوجھ کر جھوٹی ہے۔ میڈیا کی خواندگی اس منظر نامے کو نیویگیٹ کرنے کا ہنر ہے — ہر چیز پر بھروسہ کرنے سے نہیں، کسی چیز پر بھروسہ نہیں کر کے، بلکہ اس بات کا کیلیبریٹڈ احساس پیدا کرنا ہے کہ کیا قابل اعتماد ہے اور کیا نہیں۔
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Julia"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Юля
 Julia — это высокоуровневый высокопроизводительный язык программирования, предназначенный для технических и научных вычислений. Впервые выпущенный в 2012 году (1.0 в 2018 году), Julia был создан для решения «проблемы двух языков» — когда ученые создают прототипы на Python/R, но переписывают на C/C++/Fortran для повышения производительности. Джулия стремится быть таким же простым, как Python, но таким же быстрым, как C.
 Джулия использует JIT-компиляцию через LLVM для достижения производительности, близкой к C, сохраняя при этом интерактивность и динамичность. Он имеет первоклассную поддержку параллельных вычислений, распределенной обработки и сложную систему типов с множественной диспетчеризацией.

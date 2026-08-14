@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Research Methodology"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # تحقیقی طریقہ کار
 تحقیقی طریقہ کار سوالات کی چھان بین، مفروضوں کی جانچ، اور قابل اعتماد علم پیدا کرنے کا منظم طریقہ ہے۔ چاہے آپ سائنسی تجربات، سماجی سائنس کے سروے، کاروباری تجزیہ، یا علمی تحقیق کر رہے ہوں، آپ کا انتخاب کردہ طریقہ کار اس بات کا تعین کرتا ہے کہ آیا آپ کے نتائج قابل اعتبار، دوبارہ پیدا کرنے کے قابل اور مفید ہیں۔ ایک اچھی طرح سے ڈیزائن کیا گیا مطالعہ قابل اعتماد نتائج پیدا کرتا ہے۔ ایک ناقص ڈیزائن شور پیدا کرتا ہے - یا اس سے بھی بدتر، پر اعتماد غلط جوابات۔
 ---

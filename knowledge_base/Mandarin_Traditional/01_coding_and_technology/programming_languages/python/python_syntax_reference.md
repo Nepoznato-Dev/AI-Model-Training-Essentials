@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Python — Syntax Reference"
@@ -8,14 +9,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial syntax reference document"
 
 # Review
@@ -39,6 +40,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Python — 語法參考
 本文檔提供了全面、結構化的 Python 語法參考。它透過關注詳盡的語法模式、運算符表和內部機制來補充主要的 Python 參考。
 ---

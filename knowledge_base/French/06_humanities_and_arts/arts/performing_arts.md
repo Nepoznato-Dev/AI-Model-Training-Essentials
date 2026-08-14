@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Performing Arts"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Split from arts_and_literature.md; expanded into standalone file"
 
 # Review
@@ -40,6 +41,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Arts du spectacle
 Les arts du spectacle – théâtre, cinéma, danse et musique – sont le lieu où l’art rencontre la présence vivante d’un public. Contrairement à une peinture sur un mur ou à un livre sur une étagère, la performance se déroule en temps réel, créant une expérience partagée entre artiste et spectateur qui est au cœur de la culture humaine depuis des milliers d'années.
 ---

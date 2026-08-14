@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Operations Research"
@@ -9,14 +10,14 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-10"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Initial deep-dive into operations research"
 
 # Review
@@ -43,6 +44,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 #วิจัยปฏิบัติการ
 การวิจัยเชิงปฏิบัติการ (OR) เป็นการประยุกต์วิธีการทางคณิตศาสตร์ในการตัดสินใจ ก่อตั้งขึ้นในช่วงสงครามโลกครั้งที่สองสำหรับโลจิสติกส์ทางทหาร ปัจจุบันเพิ่มประสิทธิภาพห่วงโซ่อุปทาน กำหนดเวลาสายการบิน กำหนดเส้นทางกองเรือขนส่ง จัดการสินค้าคงคลัง และจัดสรรทรัพยากรในทุกอุตสาหกรรม OR จัดเตรียมชุดเครื่องมือทางคณิตศาสตร์สำหรับการตัดสินใจที่ดีที่สุดเท่าที่จะเป็นไปได้ภายใต้ข้อจำกัด
 ---

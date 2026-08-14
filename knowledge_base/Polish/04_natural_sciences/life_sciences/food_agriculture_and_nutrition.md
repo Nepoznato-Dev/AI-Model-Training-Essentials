@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Żywność, rolnictwo i odżywianie
 Jedzenie jest najbardziej podstawową potrzebą człowieka, a rolnictwo jest podstawą cywilizacji. Przejście od łowiectwa i zbieractwa do rolnictwa – rewolucja neolityczna, która miała miejsce około 10 000 lat temu – umożliwiło ludziom budowanie miast, rozwój pisma i stworzenie wszystkiego, co nazywamy „cywilizacją”. Obecnie rolnictwo zatrudnia około 27% światowej siły roboczej i wytwarza około 10 bilionów kalorii dziennie. Jednak około 800 milionów ludzi nadal głoduje, a ponad 2 miliardy ma nadwagę lub otyłość. Problemem nie jest produkcja – lecz dystrybucja, dostęp i wybory.
 ---

@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Environmental Science and Sustainability"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to earth_and_environment/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # Khoa học Môi trường và Tính bền vững
 Khoa học môi trường áp dụng các phương pháp vật lý, hóa học, sinh học, địa chất và kinh tế cho câu hỏi: "Điều gì đang xảy ra với hành tinh của chúng ta và chúng ta có thể làm gì với nó?" Đây là một lĩnh vực liên ngành - sự hội tụ của nhiều ngành - góp phần tạo nên chiều sâu phân tích cũng như mức độ phù hợp về chính sách của nó.
 Điểm căng thẳng cốt lõi trong khoa học môi trường là: nền văn minh nhân loại phụ thuộc vào việc khai thác tài nguyên từ môi trường, nhưng việc khai thác những tài nguyên đó sẽ làm thay đổi môi trường theo những cách có thể làm suy yếu các hệ thống mà chúng ta phụ thuộc vào. Hiểu một cách ngắn gọn rằng vòng phản hồi là toàn bộ lĩnh vực.

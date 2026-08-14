@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Data Engineering and Pipelines"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to engineering/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # مهندسی داده و خطوط لوله
 مهندسی داده رشته ساختن سیستم هایی است که داده ها را در مقیاس جابجا، تبدیل و ذخیره می کند. بدون خطوط انتقال داده های قابل اعتماد، مدل های یادگیری ماشین را نمی توان آموزش داد، داشبوردها اعداد قدیمی را نشان می دهند و تصمیمات تجاری بر اساس حدس و گمان است. این فایل معماری، ابزارها و شیوه‌های ساخت زیرساخت داده را پوشش می‌دهد که کار می‌کند.
 ---

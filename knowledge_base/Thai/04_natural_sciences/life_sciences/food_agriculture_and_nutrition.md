@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Food, Agriculture, and Nutrition"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to life_sciences/ subfolder; added subcategory field"
 
 # Review
@@ -44,6 +45,7 @@ contribution:
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
 
+-->
 # อาหาร การเกษตร และโภชนาการ
 อาหารเป็นความต้องการขั้นพื้นฐานที่สุดของมนุษย์ และเกษตรกรรมเป็นรากฐานของอารยธรรม การเปลี่ยนจากการล่าสัตว์และการรวบรวมไปสู่การทำฟาร์ม - การปฏิวัติยุคหินใหม่เมื่อประมาณ 10,000 ปีที่แล้ว - เป็นสิ่งที่ทำให้มนุษย์สามารถสร้างเมือง พัฒนางานเขียน และสร้างทุกสิ่งทุกอย่างที่เราเรียกว่า "อารยธรรม" ปัจจุบัน เกษตรกรรมมีพนักงานประมาณ 27% ทั่วโลกและผลิตพลังงานได้ประมาณ 10 ล้านล้านแคลอรี่ต่อวัน แต่ผู้คนประมาณ 800 ล้านคนยังคงหิวโหย ในขณะที่อีกกว่า 2 พันล้านคนมีน้ำหนักเกินหรือเป็นโรคอ้วน ปัญหาไม่ใช่การผลิต แต่เป็นการกระจาย การเข้าถึง และทางเลือก
 ---

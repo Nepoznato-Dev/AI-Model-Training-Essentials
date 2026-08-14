@@ -1,3 +1,4 @@
+<!--
 ---
 # Metadata
 title: "Regular Expressions Cheat Sheet"
@@ -9,18 +10,18 @@ status: "active"
 
 # Contribution
 authors:
-  - name: "AI Model Training Team"
+  - name: "Nepoznato-Dev"
     email: ""
     role: "original_author"
 contributors: []
 changelog:
   - version: "1.0.1"
     date: "2026-08-09"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Moved to programming/ subfolder; added subcategory field"
   - version: "1.0.0"
     date: "2026-08-05"
-    author: "AI Model Training Team"
+    author: "Nepoznato-Dev"
     changes: "Added YAML frontmatter metadata for contributor tracking"
 
 # Review
@@ -43,6 +44,8 @@ contribution:
   how_to_contribute: "Submit a PR with changes and update the changelog"
   review_process: "Changes are reviewed by category maintainers before merge"
 ---
+
+-->
 # برگه تقلب عبارات منظم
 عبارات منظم (regex) الگوهایی برای مطابقت متن هستند. آنها در همه جا استفاده می شوند - جستجو و جایگزینی، اعتبار سنجی ورودی، تجزیه گزارش، استخراج داده ها، و موارد دیگر. این یک مرجع عملی است نه یک کتاب درسی.
 ---
